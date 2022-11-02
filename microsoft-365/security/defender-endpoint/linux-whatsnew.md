@@ -56,7 +56,22 @@ This article is updated frequently to let you know what's new in the latest rele
 	- Other fixes
 
 **Known issues**
-- No known issues in this release
+
+- When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.85.21. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
+
+This should prevent the issue from occurring.
+
+Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+
+```bash
+sudo apt remove mdatp
+sudo apt-get install mdatp
+```
+
+After executing the above, use your package manager to perform the upgrade.
+
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
 </details>
 
 <details>
