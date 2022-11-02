@@ -27,7 +27,7 @@ Microsoft makes commitments to store certain customer data at rest in the applic
 
 The following customer data will be stored at rest in the _Local Region Geography_:
 
-- Exchange Online mailbox content, (e-mail body, calendar entries, and the content of e-mail attachments stored in the related _Local Region Geography_.
+- Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments) stored in the related _Local Region Geography_.
 
 ## SharePoint Online/OneDrive for Business
 
