@@ -18,6 +18,7 @@ f1.keywords:
 - NOCSH
 description: "Data moves are back-end operations that occur when Microsoft moves services and associated data for your tenant to a new datacenter geo."
 ms.custom: seo-marvel-apr2020
+ROBOTS: NOINDEX
 ---
 
 # During and after your data move
