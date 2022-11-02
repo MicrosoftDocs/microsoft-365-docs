@@ -119,10 +119,10 @@ Currently, there are four error codes for DANE when sending emails with Exchange
 
 |NDR Code|Description|
 |---|---|
-|5.7.321|starttls-not-supported: Destination mail server must support TLS to receive mail.|
-|5.7.322|certificate-expired: Destination mail server's certificate is expired.|
-|5.7.323|tlsa-invalid: The domain failed DANE validation.|
-|5.7.324|dnssec-invalid: Destination domain returned invalid DNSSEC records.|
+|4/5.7.321|starttls-not-supported: Destination mail server must support TLS to receive mail.|
+|4/5.7.322|certificate-expired: Destination mail server's certificate is expired.|
+|4/5.7.323|tlsa-invalid: The domain failed DANE validation.|
+|4/5.7.324|dnssec-invalid: Destination domain returned invalid DNSSEC records.|
 
 > [!NOTE]
 > Currently, when a domain signals that it supports DNSSEC but fails DNSSEC checks, Exchange Online does not generate the 4/5.7.324 dnssec-invalid error. It generates a generic DNS error:
@@ -281,7 +281,16 @@ After receiving the message:
     2. RRSIG resource record for the domain isn't time valid, it has either expired or its validity period hasn't begun.
         - Resolve by generating new signatures for the domain using valid timespans.
 
-## Frequently Asked Questions
+> [!NOTE]
+> This error code is also generated if Exchange Online receives SERVFAIL response from DNS server on TLSA query for the destination domain.
+
+While sending an outbound email, if the receiving domain has DNSSEC enabled, we query for TLSA records that can be associated with certificates provided by the target server. If no TLSA record is published, we expect a response to the TLSA lookup which is accompanied by NOERROR (no records of requested type for this domain) or NXDOMAIN (there is no such domain) and the message is allowed to be sent using only DNSSEC. If there is no response to the TLSA lookup from the authoritative servers, then we report the lookup type as SERVFAIL and this behavior causes Exchange Online to defer messages with error: 450 4.7.324 dnssec-invalid: Destination domain returned invalid DNSSEC records.
+
+### If someone trying to send you email reports receiving the message
+
+If you're using a DNS provider, for example GoDaddy, alert your DNS provider of the error so that they can troubleshoot the DNS response. If you're managing your own DNSSEC infrastructure, it could be an issue with the DNS server itself or with the network.
+
+s## Frequently Asked Questions
 
 ### As an Exchange Online customer, can I opt out of using DNSSEC and/or DANE?
 
