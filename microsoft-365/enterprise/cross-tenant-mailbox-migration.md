@@ -99,7 +99,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 14. Next, select Application permissions
 
-15. Then, under Select permissions, expand Mailbox, check Mailbox.Migration, and Add permissions at the bottom on the screen.
+15. Then, under Select permissions, expand Mailbox, check Mailbox.Migration, and, at the bottom on the screen, select Add permissions.
 
     ![Set API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
 
