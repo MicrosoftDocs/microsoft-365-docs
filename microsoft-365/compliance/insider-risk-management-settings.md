@@ -33,7 +33,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Policy timeframes](#policy-timeframes)
 - [Intelligent detections](#intelligent-detections)
 - [Export alerts](#export-alerts)
-- [Priority user groups (preview)](#priority-user-groups-preview)
+- [Priority user groups](#priority-user-groups-preview)
 - [Priority physical assets (preview)](#priority-physical-assets-preview)
 - [Power Automate flows (preview)](#power-automate-flows-preview)
 - [Microsoft Teams (preview)](#microsoft-teams-preview)
@@ -384,7 +384,7 @@ The following fields and values are exported for insider risk management alerts 
 - UserType
 - UserKey
 
-## Priority user groups (preview)
+## Priority user groups
 
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. Prioritizing the examination and scoring of the activities of these users can help alert you to potential risks that may have higher consequences for your organization. Priority user groups in insider risk management help define the users in your organization that need closer inspection and more sensitive risk scoring. Coupled with the *Security policy violations by priority users* and *Data leaks by priority users* policy templates, users added to a priority user group have an increased likelihood of insider risk alerts and alerts with higher severity levels.
 
@@ -401,8 +401,8 @@ To create a new priority user group, use the setting controls in the **Insider r
 Complete the following steps to create a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
-3. On the **Priority user groups (preview)** page, select **Create priority user group** to start the group creation wizard.
+2. Select the **Priority user groups** page.
+3. On the **Priority user groups** page, select **Create priority user group** to start the group creation wizard.
 4. On the **Name and describe** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the priority user group. You can't change the name of the priority user group after you complete the wizard.
     - **Description (optional)**: Enter a description for the priority user group.
@@ -421,7 +421,7 @@ To update an existing priority user group, you'll use setting controls in the **
 Complete the following steps to edit a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
+2. Select the **Priority user groups** page.
 3. Select the priority user group you want to edit and select **Edit group**.
 4. On the **Name and describe** page, update the Description field if needed. You can't update the name of the priority user group. Select **Next** to continue.
 5. On the **Choose members** page, add new members to the group using the **Choose members** control. To remove a user from the group, select the 'X' next to the user you wish to remove. Select **Next** to continue.
@@ -440,7 +440,7 @@ To delete an existing priority user group, use setting controls in the **Insider
 Complete the following steps to delete a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
+2. Select the **Priority user groups** page.
 3. Select the priority user group you want to edit and select **Delete** from the dashboard menu.
 4. On the **Delete** dialog, select **Yes** to delete the priority user group or select **Cancel** to return to the dashboard.
 
