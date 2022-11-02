@@ -62,7 +62,7 @@ To review the templates available to your organization, go to your **Assessment 
 
 - **Customers at all subscription levels**: The [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) template is included for all organizations as part of their subscription.
 
-- **US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers**: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the Microsoft Data Protection Baseline template.
+- **US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers**: The Cybersecurity Maturity Model Certification (CMMC) template, levels 1 through 5, is included in addition to the Microsoft Data Protection Baseline template.
 
 ## Preview templates
 
