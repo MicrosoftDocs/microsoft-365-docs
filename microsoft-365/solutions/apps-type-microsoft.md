@@ -18,6 +18,9 @@ keywords:
 
 There are specific Microsoft app types that allow you to install and manage Microsoft 365 apps, Microsoft Edge, and Microsoft Defender for Endpoint. The app types can are specific to Windows 10 and later, and also macOS. Users must have an account and license to use these apps.
 
+> [!NOTE]
+> For licensing and plan information related to device and app management, see [Microsoft 365 enterprise plans](/microsoft-365/enterprise).
+
 ## Specific Microsoft apps
 
 | App type | Description |

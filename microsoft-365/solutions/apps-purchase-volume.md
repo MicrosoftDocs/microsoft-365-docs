@@ -16,3 +16,6 @@ keywords:
 
 # Purchase apps in volume for a managed environment
 
+## Types of volume purchased apps 
+
+## Volume purchased apps by platform

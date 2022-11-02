@@ -16,18 +16,11 @@ keywords:
 
 # Purchase apps for a managed environment
 
-Most apps that you use with Microsoft Intune can be added to Intune and and deployed to user's devices for free. Some apps are free for your workforce to use, while other apps require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook requires both a license and an account to use the app. 
+Most apps that you use with Microsoft Intune can be added to Intune and and deployed to user's devices for free. Some apps are free for your workforce to use, other apps require either a license for each user and/or an account to use the app. For instance Microsoft Outlook requires both a license and an account to use the app. 
 
+To use Microsoft Intune, your organization must purchase a license. Microsoft apps are included with specific Microsoft 365 licenses. 
 
-## Find apps to purchase
-
-## Types of app purchases
-
-## Purchase based on intent
-
-## Apps included Microsoft 365 E5 license
-
-To use Microsoft Intune, your organization must purchase a license. Microsoft apps are included with specific Microsoft 365 licenses. For instance, common areas of functionality included with an E5 enterprise license are displayed in the following table.
+For instance, common areas of functionality included with an E5 enterprise license are displayed in the following table.
 
 | **Capability / Feature** | **Details** |
 |:---:|:---:|

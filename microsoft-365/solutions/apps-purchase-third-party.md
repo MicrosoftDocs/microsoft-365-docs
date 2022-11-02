@@ -16,3 +16,4 @@ keywords:
 
 # Purchase third-party apps for a managed environment
 
+## Understand first-party and third-party apps

@@ -16,3 +16,8 @@ keywords:
 
 # Purchase store apps for a managed environment
 
+Before you can distribute apps to your workforce, you must add them to Intune. Intune makes it easy to find and add store apps. 
+
+
+
+## Purchase by platform 

@@ -1,11 +1,11 @@
 ---
-title: "In-app purchases for apps in a managed environment"
+title: "Understand app licenses used in a managed environment"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: In-app purchases for apps in a managed environment.
+description: Understand app licenses used in a managed environment.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,5 +14,6 @@ ms.custom:
 keywords:
 ---
 
-# In-app purchases for apps in a managed environment
+# Understand app licenses used in a managed environment
+
 

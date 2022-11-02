@@ -395,13 +395,37 @@
         - name: Purchase store apps
           href: apps-purchase-store.md
         - name: Purchases within an app
-          href: apps-purchase-inapp.md
+          href: apps-purchase-in-app.md
         - name: Purchase apps in volume
           href: apps-purchase-volume.md
         - name: Purchase third-party apps
           href: apps-purchase-third-party.md
         - name: Verify purchased apps
           href: apps-purchase-verify.md
+      - name: Understand app licenses
+        items:
+        - name: App licenses overview
+          href: apps-license-overview.md
+        - name: Select and acquire app licenses
+          href: apps-license-select.md
+        - name: Manage app licenses
+          href: apps-license-manage.md
+        - name: Confirm app licenses
+          href: apps-license-confirm.md
+        - name: Understand licenses terms
+          href: apps-license-terms.md
+        - name: Verify purchased apps
+          href: apps-license-verify.md
+      - name: Add apps to Intune
+        items:
+        - name: Add apps overview overview
+          href: apps-add-overview.md
+        - name: Understand supported app types
+          href: apps-add-supported.md
+        - name: Assess app requirements
+          href: apps-add-assess.md
+        - name: Add apps
+          href: apps-add-apps.md
 
 - name: Industry-specific guidance
   items: 
