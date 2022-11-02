@@ -16,8 +16,10 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- demo
 ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
 
 # SmartScreen app reputation demonstration
@@ -38,8 +40,6 @@ This program has a good reputation; the download should run uninterrupted:
 
 - [Known good program download](https://demo.smartscreen.msft.net/download/known/freevideo.exe)
 
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
-
   Launching this link should render a message similar to the following:
 
   :::image type="content" source="images/smartscreen-app-reputation-known-good.png" alt-text="Based on the target file's reputation, SmartScreen allows the download without interference.":::
@@ -49,8 +49,6 @@ This program has a good reputation; the download should run uninterrupted:
 Because the program download doesn't have sufficient reputation to ensure that it's trustworthy, SmartScreen will show a warning before running the program download.
 
 - [Unknown program](https://demo.smartscreen.msft.net/download/unknown/freevideo.exe)
-
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
   
   Launching this link should render a message similar to the following:
 
@@ -61,8 +59,6 @@ Because the program download doesn't have sufficient reputation to ensure that i
 This download is known malware; SmartScreen should block this program from running.
 
 - [Known malware](https://demo.smartscreen.msft.net/download/known/knownmalicious.exe)
-
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->  
 
   Launching this link should render a message similar to the following:
 

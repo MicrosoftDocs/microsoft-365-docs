@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 manager: dansimp
 ms.author: deniseb
-ms.topic: article
+ms.topic: conceptual
 ms.custom: nextgen
 ms.date: 10/13/2022
 ms.reviewer: mkaminska; pahuijbr

@@ -106,3 +106,4 @@ When you're ready to get started, you'll work with two main portals: the Microso
 - [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md).
 - [See the setup and configuration process for Defender for Business](mdb-setup-configuration.md).
 - [See how to get help and support for Defender for Business](mdb-get-help.md) (just in case you need help).
+- [Learn about Microsoft Defender for Business servers](get-defender-business-servers.md).

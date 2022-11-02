@@ -6,7 +6,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - o365_security_incident_response
 - m365-security

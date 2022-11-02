@@ -19,7 +19,7 @@ ms.collection: m365-security-compliance
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
-Having visual context is crucial for security teams during forensic investigations to get better insights into potentially risky security-related user activities. With customizable event triggers and built-in user privacy protection controls, Forensic evidence enables customizable visual activity capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data. You set the right policies for your organization, including what risky events are the highest priority for capturing forensic evidence, what data is most sensitive, and whether users are notified when forensic capturing is activated. Forensic evidence capturing is off by default and policy creation requires dual authorization.
+Having visual context is crucial for security teams during forensic investigations to get better insights into potentially risky security-related user activities. With customizable event triggers and built-in user privacy protection controls, forensic evidence enables customizable visual activity capturing across devices to help your organization better mitigate, understand, and respond to potential data risks like unauthorized data exfiltration of sensitive data. You set the right policies for your organization, including what risky events are the highest priority for capturing forensic evidence, what data is most sensitive, and whether users are notified when forensic capturing is activated. Forensic evidence capturing is off by default and policy creation requires dual authorization.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -31,6 +31,39 @@ Having visual context is crucial for security teams during forensic investigatio
 - **User-centric policy targeting** means that security and compliance teams can focus on activity by user, not device, for better contextual insights.
 - **Strong role-based access controls (RBAC)** mean that the ability to set up and review forensic clips is tightly controlled and only available to individuals in the organization with the right permissions.
 - **Deep integration with current insider risk management features**, making for easier onboarding and more familiar workflows for insider risk management administrators and a trusted single-platform approach.
+
+## Device and configuration requirements
+
+The following tables include the supported minimum requirements for utilizing insider risk management forensic evidence.
+
+### Supported platforms
+
+|**Operating system**|**SKU**|**Processor**|
+|:----------|:-------|:-------------------|
+| Windows 10 | Enterprise | 64-bit (Intel or AMD) |
+| Windows 11 | Enterprise | 64-bit (Intel or AMD) |
+
+### Physical devices
+
+|**Hardware**|**Minimum requirement**|
+|:----------|:-------------------------------|
+| RAM | Minimum of 8 GB (at least 2 GB should be available for client usage |
+| CPU processor | Intel i5 or above and AMD Ryzen 5 or above |
+| Graphics card | Compatible with DirectX 11 or later, with a WDDM 1.0 driver or later (currently only integrated graphics cards supported)|
+| Disk space | Minimum of 10 GB of disk storage |
+| Display | Minimum screen resolution of 1920 x 1080 | 
+
+### Hyper-V and virtual machines
+
+|**Hardware**|**Minimum requirement**|
+|:----------|:-------------------------------|
+| RAM | Minimum of 16 GB (at least 2 GB should be available for client usage) |
+| CPU processor | Minimum of two vCPU processors and at least four cores for each vCPU processor |
+| Disk space | Minimum of 10 GB of disk storage |
+| Display | Minimum screen resolution of 1920 x 1080 | 
+
+> [!IMPORTANT]
+> If the minimum requirements aren't met, users are likely to run into Microsoft Purview client issues and the quality of forensic recordings may not be reliable.
 
 ## Capturing options
 
