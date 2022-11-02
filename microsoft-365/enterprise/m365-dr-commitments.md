@@ -46,7 +46,7 @@ The following customer data will be stored at rest in the _Local Region Geograph
 The following customer data will be stored at rest in the _Local Region Geography_:
 
 - MDO P1 does not store any customer data within its service.
-- Exchange Online Protection (EOP). The following customer data will be stored at rest in the _Local Region Geography_: Service configuration data and policies, quarantined email and attachments, junk email, grading analysis, block lists (url, tenant, user), spam domains, reports, and alerts
+- Exchange Online Protection (EOP). The following customer data will be stored at rest in the _Local Region Geography_: Service configuration data and policies, quarantined email and attachments, junk email, grading analysis, block lists (url, tenant, user), spam domains, reports, and alerts.
 
 ## Office for the Web
 
