@@ -121,12 +121,16 @@
       href: ehr-admin-cerner.md
     - name: Virtual Appointments with Teams and Epic EHR 
       href: ehr-admin-epic.md
-    - name: EHR connector Virtual Appointments report
-      href: ehr-connector-report.md
-    - name: Virtual Appointments usage report
-      href: virtual-visits-usage-report.md
     - name: Manage the join experience on browsers
       href: browser-join.md
+    - name: Reports
+      items: 
+      - name: Virtual Appointments usage report
+        href: virtual-appointments-usage-report.md
+      - name: Virtual Appointments active user report
+        href: virtual-appointments-active-user-report.md
+      - name: EHR connector Virtual Appointments report
+        href: ehr-connector-report.md  
     - name: Help your clients and customers use virtual appointments
       href: virtual-appointments-toolkit.md
   - name: Industry-specific solutions
