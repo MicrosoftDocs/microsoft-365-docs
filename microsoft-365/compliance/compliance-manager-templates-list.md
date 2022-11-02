@@ -81,7 +81,7 @@ The templates listed below are currently available for preview. Creating assessm
 
 ## Premium templates
 
-The templates listed below may be purchased by your organization. Certain organizations can use three premium templates as part of their licensing agreement. Review [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+Organizations can purchase any of the templates listed below to meet their specific needs. Certain licensing agreements allow for the use of three premium templates for free. Review [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ### Global
 
