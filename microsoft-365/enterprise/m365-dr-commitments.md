@@ -85,7 +85,7 @@ The following customer data will be stored at rest in the _Local Region Geograph
 
 The following customer data will be stored at rest in the _Local Region Geography_:
 
-- Retention policy settings, retention label definitions
+- Retention policy settings and retention label definitions
 - Customer Data stored in original locations for the following services:
   - Exchange email
   - SharePoint site
