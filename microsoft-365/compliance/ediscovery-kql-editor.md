@@ -23,14 +23,12 @@ search.appverid:
 
 # Use the KQL editor to build search queries
 
-The new KQL query experience in Microsoft 365 eDiscovery tools search provides feedback and guidance when you build search queries in Content search, Microsoft Purview eDiscovery (Standard), and eDiscovery (Premium). When you type queries in the editor, it provides autocompletion for supported searchable properties and conditions and provides lists of supported values for standard properties and conditions. For example, if you specify the `kind` email property in your query, the editor will present a list of supported values that you can select. The KQL editor also displays potential query errors in real time that you can fix before you run the search. Best of all, you can paste complex queries directly into the editor without having to manually build queries using the keywords and conditions cards in the standard condition builder.
+The new Keyword Query Language (KQL) query experience in Microsoft Purview eDiscovery tools search provides feedback and guidance when you build search queries in Content search, Microsoft Purview eDiscovery (Standard), and eDiscovery (Premium). When you enter queries in the editor, it provides autocompletion for supported searchable properties and conditions and provides lists of supported values for standard properties and conditions. For example, if you specify the `kind` email property in your query, the editor will present a list of supported values that you can select. The KQL editor also displays potential query errors in real time that you can fix before you run the search. Best of all, you can paste complex queries directly into the editor without having to manually build queries using the keywords and conditions cards in the standard condition builder.
   
 Here are the key benefits to using the KQL editor:
 
 - Provides guidance and helps you build search queries from scratch.
-
 - Lets you quickly paste long, complex queries directly into the editor. For example, if you receive a complex query from opposing counsel, you can paste that into the KQL editor instead of having to use the condition builder.
-
 - Quickly identifies potential errors and displays hints about how to resolve issues.
 
 The KQL editor is also available when you create query-based holds in eDiscovery (Standard) and eDiscovery (Premium).
@@ -55,7 +53,7 @@ The following sections show examples of how the KQL editor provides suggestions 
 
 ### Autocompletion of search properties and operators
 
-When you start to type a search query in the KQL editor, the editor displays suggested autocompletion of supported search properties (also called *property restrictions*) that you can select. You have to type a minimum of two characters to display a list of supported properties that begin with those two characters. For example, the following screenshot shows the suggested search properties that begin with `Se`.
+When you start to enter a search query in the KQL editor, the editor displays suggested autocompletion of supported search properties (also called *property restrictions*) that you can select. You have to type a minimum of two characters to display a list of supported properties that begin with those two characters. For example, the following screenshot shows the suggested search properties that begin with `Se`.
 
 ![KQL editor suggests supported properties](../media/KQLEditorAutoCompleteProperties.png)
 

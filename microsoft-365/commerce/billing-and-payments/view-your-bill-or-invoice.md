@@ -12,6 +12,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
+- Tier1
 - scotvorg
 - highpri  
 - M365-subscription-management

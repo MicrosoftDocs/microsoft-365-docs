@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 ms.reviewer: aaglick
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
