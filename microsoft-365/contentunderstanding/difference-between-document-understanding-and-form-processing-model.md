@@ -22,6 +22,7 @@ Use the following table to see differences in custom models to help identify the
 | Feature | Unstructured document processing | Freeform document processing | Structured document processing |
 | ------- | ------- | ------- | ------- |
 | Use for this type of content | Unstructured or semi-structured file formats, for example Office documents where there are differences in the layout, but still similar information to be extracted. | Unstructured and free-form file formats, for example documents that have no set structure such as letters, contracts, and statements of work. | Structured and semi-structured file formats, for example PDFs for forms content such as invoices or purchase orders where the layout and formatting is similar. |
+| Training method | Teaching method | Freeform selection method | Layout method |
 | Model creation | Model created in SharePoint in a new site, the content center.  | Model created in [AI Builder](/ai-builder/overview) with seamless access from SharePoint document library.| Model created in [AI Builder](/ai-builder/overview) with seamless access from SharePoint document library. |
 | Classification type | Trainable classifier with optional extractors using machine teaching to assign document location on what data to extract. | Not applicable | Not applicable |
 | Locations | Can be applied to multiple libraries. | Can be applied to multiple libraries. | Can be applied to multiple libraries. |
