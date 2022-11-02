@@ -389,7 +389,7 @@ To troubleshoot high CPU utilization overhead caused by mdatp_audisp_plugin proc
 
 ## Download the Microsoft Defender for Endpoint on Linux onboarding package
 
-For more information, see [download the onboarding package from Microsoft 365 Defender portal](linux-install-with-ansible.md).
+For more information, see [download the onboarding package from Microsoft 365 Defender portal](linux-install-with-ansible.md#download-the-onboarding-package).
     
 > [!NOTE]
 > This download registers Microsoft Defender for Endpoint for Linux to send the data to your Microsoft Defender for Endpoint instance.
@@ -499,8 +499,8 @@ For more information, see [New device health reporting for Microsoft Defender an
 
 To ensure that the device is correctly onboarded and reported to the service, run the following detection test:
 
-- Anti-malware detections:
-  [Curl -o ~/Downloads/eicar.com.txt](https://www.eicar.org/download/eicar.com.txt ).
+- Anti-malware detections:`curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`
+
   If the detection doesn’t show up, it could be that you have set “allowedThreats” to allow in preferences via Ansible or Puppet.
 
 - Endpoint detection and response (EDR) detections:
