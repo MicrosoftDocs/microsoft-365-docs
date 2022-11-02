@@ -109,7 +109,7 @@ You can configure options such as whether attendees can [join from a a desktop o
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
-To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link and appointment details. They can opt out of receiving the messages by replying STOP, or resume receiving them by replying START.
+To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link and scheduled appointment details. They can opt out of receiving the messages by replying STOP, or resume receiving them by replying START.
 
 Keep in mind that schedulers can later choose to turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
 
@@ -117,7 +117,7 @@ To learn more, see [Send text message notifications](https://support.microsoft.c
 
 ##### Link forms
 
-If you're a Bookings admin, you can link up to four forms for attendees to fill out each time this appointment type is booked. For example, you may require attendees to complete a registration form before they join an appointment. To link a form, choose **Link a form**. Enter the URL of the form, and then choose **Link**. (If this is the first time that you're linking a form, you'll be prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.)
+If you're a Bookings admin, you can link up to four forms for attendees to fill out each time this scheduled appointment type is booked. For example, you may require attendees to complete a registration form before they join an appointment. To link a form, choose **Link a form**. Enter the URL of the form, and then choose **Link**. (If this is the first time that you're linking a form, you'll be prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.)
 
 When working with forms, keep in mind that:
 
