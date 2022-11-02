@@ -23,7 +23,7 @@
      - name: Try Defender for Office 365
        href: try-microsoft-defender-for-office-365.md
      - name: Trial User Guide for Defender for Office 365
-       href: trial-playbook-defender-for-office-365.md
+       href: trial-user-guide-defender-for-office-365.md
    - name: Deploy
      items:
      - name: Phase 1 - Email authentication
