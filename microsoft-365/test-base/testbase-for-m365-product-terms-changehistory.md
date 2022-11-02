@@ -1,6 +1,6 @@
 ---
-title: 'Test Base for Microsoft 365 Product Term Change History'
-description: How to Test Base for Microsoft 365 Product Term Change History
+title: 'Test Base for Microsoft 365 Product Terms Change History'
+description: How to Test Base for Microsoft 365 Product Terms Change History
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -16,7 +16,7 @@ ms.reviewer: Tinacyt
 f1.keywords: NOCSH
 ---
 
-# Test Base for Microsoft 365 Product Term Change History
+# Test Base for Microsoft 365 Product Terms Change History
 
 Version 1.0
 
