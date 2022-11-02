@@ -105,7 +105,7 @@ You can configure options such as whether attendees can [join from a a desktop o
 
 ##### Set up SMS text notifications
 
-![Information icon](media/info.png) This feature is moving to [Teams Premium](https://review.learn.microsoft.com/en-us/MicrosoftTeams/enhanced-teams-experience?branch=cmd-teams-premium-overview) (preview). Users can continue using this feature during the preview period. After the preview, users need a Teams Premium license.
+![Information icon](media/info.png) **This feature is moving to [Teams Premium](https://review.learn.microsoft.com/en-us/MicrosoftTeams/enhanced-teams-experience?branch=cmd-teams-premium-overview) (preview). Users can continue using this feature during the preview period. After the preview, users need a Teams Premium license.**
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
