@@ -77,4 +77,4 @@ Organizations without Defender for Office 365 Plan 2 can try the features in Mic
 
 3. Once you have identified wanted and unwanted senders, adjust the bulk threshold to your desired level. If there are bulk senders with BCL score that doesn't fit within your bulk threshold, [submit the messages to Microsoft for analysis](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), which adds the sender as an allow entry to the Tenant Allow/Block List.
 
-Admins can follow the [recommended bulk threshold values](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) bulk threshold values or choose a bulk threshold value that suits the needs of their organization.
+Admins can follow the [recommended bulk threshold values](recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) or choose a bulk threshold value that suits the needs of their organization.

@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.date: 01/29/2021
 ms.localizationpriority: medium
 search.appverid:

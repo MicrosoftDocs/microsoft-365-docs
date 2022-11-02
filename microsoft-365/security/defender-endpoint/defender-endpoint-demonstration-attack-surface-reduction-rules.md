@@ -13,13 +13,14 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
+- demo
 ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
 
 # Attack surface reduction rules demonstrations
 
@@ -27,7 +28,7 @@ Attack Surface Reduction (ASR) rules target specific behaviors that are typicall
 
 - Executable files and scripts used in Office apps or web mail that attempt to download or run files
 - Scripts that are obfuscated or otherwise suspicious
-- Behaviors that apps undertake that aren't inititated during normal day-to-day work
+- Behaviors that apps undertake that aren't initiated during normal day-to-day work
 
 ## Scenario requirements and setup
 
@@ -54,14 +55,21 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 01443614-CD74-433A-B99E-2ECDC0
 Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A1CE869 -AttackSurfaceReductionRules_Actions AuditMode
 Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions AuditMode
 ```
-### States
-- Enabled = Block mode (1)
-- AuditMode = Audit Mode (2)
-- Disabled = Off (0)
+
+### Rule states
+
+|State | Mode| Numeric value |
+|:---|:---|:---|
+| Disabled | = Off | 0 |
+| Enabled | = Block mode | 1 |
+| Audit | = Audit mode | 2 |
 
 ### Verify configuration
 
-- Get-MpPreference
+```powershell
+
+Get-MpPreference
+```
 
 ## Test files
 
@@ -86,12 +94,17 @@ Note - some test files have multiple exploits embedded and will trigger multiple
 
 ### Setup
 
-Download and run this [setup script](https://demo.wd.microsoft.com/Content/ASR_SetupScript.zip). Before running the script set execution policy to Unrestricted using this PowerShell command: Set-ExecutionPolicy Unrestricted
+Download and run this [setup script](https://demo.wd.microsoft.com/Content/ASR_SetupScript.zip). Before running the script set execution policy to Unrestricted using this PowerShell command:
+
+```powershell
+Set-ExecutionPolicy Unrestricted
+
+```
 
 You can perform these manual steps instead:
 
 1. Create a folder under c: named demo, "c:\demo"
-2. Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo (we need something to encrypt)
+2. Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo.
 3. Enable all rules using the powershell commands above.
 
 ### Scenario 1: ASR blocks a test file with multiple vulnerabilities
@@ -106,7 +119,7 @@ You should immediately see an "Action blocked" notification.
 ### Scenario 2: ASR rule blocks the test file with the corresponding vulnerability
 
 1. Configure the rule you want to test using the PowerShell command from above.
-2. Example: Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled
+2. Example: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
 3. Download and open the test file/document for the rule you want to test linked above, enable editing and content if prompted
 4. Example: [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 

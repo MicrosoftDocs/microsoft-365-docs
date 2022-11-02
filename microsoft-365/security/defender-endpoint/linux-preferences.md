@@ -99,8 +99,8 @@ Enables or disables file hash computation feature. When this feature is enabled,
 |Description|Value|
 |---|---|
 |**Key**|enableFileHashComputation|
-|**Data type**|String|
-|**Possible values**|disabled (default) <p> enabled|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
 |**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
   
 #### Run a scan after definitions are updated
@@ -414,6 +414,9 @@ The following configuration profile will:
 ## Full configuration profile example
 
 The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over the product.
+  
+> [!NOTE]
+> It is not possible to control all Microsoft Defender for Endpoint communication with only a proxy setting in this JSON.
 
 ### Full profile
 
@@ -533,6 +536,7 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 
 > [!NOTE]
 > For the mdatp_managed.json to take effect, no restart of the `mdatp` deamon is required.
+  
 
 ## Configuration profile deployment
 

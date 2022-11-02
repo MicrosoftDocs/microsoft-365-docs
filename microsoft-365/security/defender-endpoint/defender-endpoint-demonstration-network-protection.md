@@ -13,14 +13,14 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
+- demo
 ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
-
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
 
 # Network protection demonstrations
 
@@ -28,34 +28,48 @@ Network Protection helps reduce the attack surface of your devices from Internet
 
 ## Scenario requirements and setup
 
-- Windows 10 1709 build 16273
+- Windows 10 1709 build 16273, Windows 11
 - Microsoft Defender Antivirus
 
 ## PowerShell command
 
+```powershell
 Set-MpPreference -EnableNetworkProtection Enabled
+```
 
-### States
-- Enabled = Block mode (1)
-- AuditMode = Audit Mode (2)
-- Disabled = Off (0)
+## Rule states
+
+|State | Mode| Numeric value |
+|:---|:---|:---|
+| Disabled | = Off | 0 |
+| Enabled | = Block mode | 1 |
+| Audit | = Audit mode | 2 |
 
 ## Verify configuration
 
+```powershell
 Get-MpPreference
+```
 
 ## Scenario
 
-1. Turn on Network Protection using powershell command: Set-MpPreference -EnableNetworkProtection Enabled
-2. Using the browser of your choice (not Microsoft Edge*), navigate to the [Network Protection website test](https://smartscreentestratings2.net/) (Microsoft Edge has other security measures in place to protect from this vulnerability(SmartScreen)). 
+1. Turn on Network Protection using powershell command:
+
+   ```powershell
+   Set-MpPreference -EnableNetworkProtection Enabled
+   ```
+
+2. Using the browser of your choice (not Microsoft Edge*), navigate to the [Network Protection website test](https://smartscreentestratings2.net/). Microsoft Edge has other security measures in place to protect from this vulnerability (SmartScreen).
 
 ## Expected results
 
-Navigation to the website should be blocked and you should see a "Connection blocked" notification.
+Navigation to the website should be blocked and you should see a **Connection blocked** notification.
 
 ## Clean-up
 
+```powershell
 Set-MpPreference -EnableNetworkProtection Disabled
+```
 
 ## See also
 

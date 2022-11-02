@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
+- tier1
 search.appverid:
 - BCS160
 - MET150

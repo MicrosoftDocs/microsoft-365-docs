@@ -158,6 +158,8 @@
               items:
                 - name: Service advisories for Mailbox utilization
                   href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: Service advisories for eDiscovery throttling
+                  href: microsoft-365-ediscovery-throttling-service-advisory.md
                 - name: Service advisories for MRS source delays
                   href: microsoft-365-mrs-source-delays-service-alerts.md
             - name: Microsoft 365 Apps monitoring
@@ -175,72 +177,95 @@
         - name: Cross-tenant identity mapping
           href: cross-tenant-identity-mapping.md
         - name: Cross-tenant OneDrive migration
-          href: cross-tenant-onedrive-migration.md
+          items:
+            - name: Cross-tenant OneDrive migration overview
+              href: cross-tenant-onedrive-migration.md
+            - name: Step 1 Connect to tenants
+              href: cross-tenant-onedrive-migration-step1.md
+            - name: Step 2 Establish trust between the tenants
+              href: cross-tenant-onedrive-migration-step2.md
+            - name: Step 3 Verify trust between the tenants
+              href: cross-tenant-onedrive-migration-step3.md
+            - name: Step 4 Pre-create users & groups
+              href: cross-tenant-onedrive-migration-step4.md
+            - name: Step 5 Prepare the identity mapping file
+              href: cross-tenant-onedrive-migration-step5.md
+            - name: Step 6 Start a cross-tenant OneDrive migration
+              href: cross-tenant-onedrive-migration-step6.md
+            - name: Step 7 Post migration steps
+              href: cross-tenant-onedrive-migration-step7.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
-    - name: Multi-geo
+    - name: Data Residency
       items: 
-        - name: Microsoft 365 Multi-Geo
-          href: microsoft-365-multi-geo.md
-        - name: Teams multi-geo
-          href: multi-geo-capabilities-in-teams-in-microsoft-365.md
-        - name: OneDrive and SharePoint multi-geo
-          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md
-        - name: Exchange Multi-Geo
-          href: multi-geo-capabilities-in-exchange-online.md
-        - name: Plan
+        - Name: Overview and Definitions
+          href: m365-dr-overview.md
+        - name: Product Terms Data Residency
+          href: m365-dr-product-terms-dr.md
+        - name: Advanced Data Residency
           items: 
-            - name: Plan for multi-geo
-              href: plan-for-multi-geo.md
-            - name: Administration experience
-              href: administering-a-multi-geo-environment.md
-            - name: User experience
-              href: multi-geo-user-experience.md
-        - name: Deploy
+            - name: ADR Overview
+              href: advanced-data-residency.md
+            - name: ADR Commitments
+              href: m365-dr-commitments.md
+        - name: Multi-geo Data Residency
           items: 
-            - name: Configure multi-geo
-              href: multi-geo-tenant-configuration.md
-            - name: Configure preferred data location
-              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
-            - name: Configure search
-              href: configure-search-for-multi-geo.md
-        - name: Manage
-          items: 
-            - name: Administering a multi-geo environment
-              href: administering-a-multi-geo-environment.md
-            - name: Manage SharePoint quotas
-              href: sharepoint-multi-geo-storage-quota.md
-            - name: Move a OneDrive site
-              href: move-onedrive-between-geo-locations.md
-            - name: Move a SharePoint site
-              href: move-sharepoint-between-geo-locations.md
-            - name: Add or remove a geo administrator
-              href: add-a-sharepoint-geo-admin.md
-            - name: Restrict content to a geo location
-              href: restrict-content-to-geo-location.md
-            - name: Configure Microsoft 365 Multi-Geo eDiscovery
-              href: multi-geo-ediscovery-configuration.md
-            - name: Create a group with a specific PDL
-              href: multi-geo-add-group-with-pdl.md
-            - name: Delete a geo location
-              href: delete-a-geo-location.md
-            - name: Enabling SharePoint Multi-Geo in your satellite geo location
-              href: enabling-SP-multigeo-satellite-geolocation.md
-            - name: Administering Exchange Multi-Geo
-              href: administering-exchange-online-multi-geo.md
-    - name: Move to a new Microsoft 365 datacenter geo
-      href: moving-data-to-new-datacenter-geos.md
-      items: 
-        - name: How to request your data move
-          href: request-your-data-move.md
-        - name: During and after your data move
-          href: during-and-after-your-data-move.md
-        - name: Data move general FAQ
-          href: data-move-faq.md
-        - name: Where customer data is stored
+            - name: Microsoft 365 Multi-Geo
+              href: microsoft-365-multi-geo.md
+            - name: Plan
+              items: 
+                - name: Plan for multi-geo
+                  href: plan-for-multi-geo.md
+                - name: Administration experience
+                  href: administering-a-multi-geo-environment.md
+                - name: User experience
+                  href: multi-geo-user-experience.md
+            - name: Deploy
+              items: 
+                - name: Configure multi-geo
+                  href: multi-geo-tenant-configuration.md
+                - name: Configure preferred data location
+                  href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
+                - name: Configure search
+                  href: configure-search-for-multi-geo.md
+                - name: User Testing in Multi-Geo
+                  href: m365-multi-geo-user-testing.md
+            - name: Manage
+              items: 
+                - name: Add or remove a geo administrator
+                  href: add-a-sharepoint-geo-admin.md
+                - name: Restrict content to a geo location
+                  href: restrict-content-to-geo-location.md
+                - name: Configure Microsoft 365 Multi-Geo eDiscovery
+                  href: multi-geo-ediscovery-configuration.md
+                - name: Create a group with a specific PDL
+                  href: multi-geo-add-group-with-pdl.md
+                - name: Delete a geo location
+                  href: delete-a-geo-location.md
+        - name: Workload Data Residency Capabilities
+          items:
+            - name: Exchange Online
+              href: m365-dr-workload-exo.md
+            - name: SharePoint Online and OneDrive for Business
+              href: m365-dr-workload-spo.md
+            - name: Microsoft Teams
+              href: m365-dr-workload-teams.md
+            - name: Microsoft Defender for Office P1
+              href: m365-dr-workload-mdo-p1.md
+            - name: Office for the Web
+              href: m365-dr-workload-office-for-web.md
+            - name: Viva Connections
+              href: m365-dr-workload-viva-connections.md
+            - name: Viva Topics
+              href: m365-dr-workload-viva-topics.md
+            - name: Microsoft Purview
+              href: m365-dr-workload-purview.md
+            - name: Other Services
+              href: m365-dr-workload-other.md
+        - name: Legacy Move Program
+          href: m365-dr-legacy-move-program.md
+        - name: Where is my data stored? 
           href: o365-data-locations.md
-        - name: Data locations for the European Union
-          href: eu-data-storage-locations.md
 
 - name: Identity
   items: 
@@ -530,6 +555,8 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
+            - name: Manage Folders and Rules feature in Microsoft 365 Groups
+              href: manage-folders-and-rules-feature.md 
     - name: Manage SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items: 

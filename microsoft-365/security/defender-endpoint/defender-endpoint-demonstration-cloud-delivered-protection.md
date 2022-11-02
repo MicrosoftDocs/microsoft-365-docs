@@ -13,14 +13,14 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
+- demo
 ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
-
-<!--- v-jweston resumes authorship and ms.authorship appx April-May 2023 ---> 
 
 # Cloud-delivered protection demonstration
 
@@ -28,10 +28,10 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
 ## Scenario requirements and setup
 
-- Windows 7, Windows 8.1 & Windows 10
+- Windows 7, Windows 8.1, Windows 10, Windows 11
 - Microsoft Defender Real-time protection is enabled
 - Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies. For more information, see [Enable cloud-delivered protection in Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
-- You can also download and use the [PowerShell script](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others on Windows 10.
+- You can also download and use the [PowerShell script](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings/) to enable this setting and others on Windows 10 and Windows 11.
 
 ### Scenario
 
@@ -54,7 +54,6 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
    :::image type="content" source="images/cloud-delivered-protection-smartscreen-threat-found-notification.png" alt-text="Microsoft Defender Antivirus Threats found notification provides options to get details":::
 
 5. If the file executes, or if you see that it was blocked by Microsoft Defender SmartScreen,  cloud-delivered protection isn't working. For more information, see [Configure and validate network connections for Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
-
 
 ## See also
 

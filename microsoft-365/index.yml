@@ -228,12 +228,12 @@ additionalContent:
             - text: More >
               url: /DeployOffice
         # Card
-        - title: SharePoint
+        - title: SharePoint and OneDrive
           links:
             - text: SharePoint in Microsoft 365
               url: /sharepoint/sharepoint-online
             - text: SharePoint Syntex
-              url: contentunderstanding/index.md
+              url: /microsoft-365/contentunderstanding/
             - text: SharePoint Server
               url: /sharepoint/sharepoint-server
             - text: Hybrid
@@ -242,31 +242,6 @@ additionalContent:
               url: /powershell/sharepoint
             - text: More >
               url: /sharepoint
-        # Card
-        - title: OneDrive
-          links:
-            - text: Plan, deploy, and manage
-              url: /onedrive/onedrive
-            - text: More >
-              url: /onedrive              
-        # Card
-        - title: Outlook and Exchange
-          links:
-            - text: Outlook for iOS and Android
-              url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
-            - text: Exchange Online
-              url: /Exchange/exchange-online
-            - text: More > 
-              url: /Exchange
-        # Card
-        - title: Planner and Project
-          links:
-            - text: Planner admin help
-              url: /office365/planner
-            - text: Project for the web
-              url: /project-for-the-web/projectforweb-admin-home
-            - text: More Project >
-              url: /Project
         # Card
         - title: Microsoft Viva
           links:
@@ -280,6 +255,24 @@ additionalContent:
               url: /viva/learning/
             - text: More >
               url: /viva/
+        # Card
+        - title: Outlook and Exchange
+          links:
+            - text: Outlook for iOS and Android
+              url: https://adoption.microsoft.com/outlook-mobile/
+            - text: Exchange Online
+              url: /Exchange/exchange-online
+            - text: More > 
+              url: /Exchange
+        # Card
+        - title: Planner and Project
+          links:
+            - text: Planner admin help
+              url: /office365/planner
+            - text: Project for the web
+              url: /project-for-the-web/projectforweb-admin-home
+            - text: More Project >
+              url: /Project
         # Card
         - title: More apps and services
           links:

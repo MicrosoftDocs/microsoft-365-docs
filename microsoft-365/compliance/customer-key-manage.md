@@ -11,6 +11,7 @@ search.appverid:
 - MET150
 ms.collection:
 - purview-compliance
+- tier1
 description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, and managing permissions and creating and assigning data encryption policies."
 ---
 

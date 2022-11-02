@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,17 +24,12 @@ ms.custom: seo-marvel-apr2020
 
 Content Search and eDiscovery-related activities (for Microsoft Purview eDiscovery (Standard) and Microsoft Purview eDiscovery (Premium)) that are performed in Microsoft Purview compliance portal or by running the corresponding PowerShell cmdlets are logged in the audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and eDiscovery (Standard) tasks in the compliance portal:
   
-- Creating and managing eDiscovery (Standard) and eDiscovery (Premium) cases
-
-- Creating, starting, and editing Content searches
-
-- Performing search actions, such as previewing, exporting, and deleting search results
-
-- Managing custodians and review sets in eDiscovery (Premium)
-
-- Configuring permissions filtering for Content search
-
-- Managing the eDiscovery Administrator role
+- Creating and managing eDiscovery (Standard) and eDiscovery (Premium) cases.
+- Creating, starting, and editing Content searches.
+- Performing search actions, such as previewing, exporting, and deleting search results.
+- Managing custodians and review sets in eDiscovery (Premium).
+- Configuring permissions filtering for Content search.
+- Managing the eDiscovery Administrator role.
   
 For more information about searching the audit log, the permissions that are required, and exporting search results, see [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md).
   
@@ -45,11 +39,11 @@ For more information about searching the audit log, the permissions that are req
 
 Currently, you have to do a few specific things to view eDiscovery activities in the audit log. Here's how.
   
-1. Go to <https://compliance.microsoft.com> and sign in using your work or school account.
+1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) and sign in using your work or school account.
 
-2. In the left navigation pane of the compliance portal, click **Audit**.
+2. In the left navigation pane of the compliance portal, select **Audit**.
 
-3. In the **Activities** drop-down list, under **eDiscovery activities** or **eDiscovery (Premium) activities**, click one or more activities to search for.
+3. In the **Activities** drop-down list, under **eDiscovery activities** or **eDiscovery (Premium) activities**, select one or more activities to search for.
 
     > [!NOTE]
     > The **Activities** drop-down list also includes a group of activities named **eDiscovery cmdlet activities** that will return records from the cmdlet audit log.
@@ -58,13 +52,13 @@ Currently, you have to do a few specific things to view eDiscovery activities in
 
 5. In the **Users** box, select one or more users to display search results for. Leave this box blank to return entries for all users.
 
-6. Click **Search** to run the search using your search criteria.
+6. Select **Search** to run the search using your search criteria.
 
-7. After the search results are displayed, you can click **Filter results** to filter or sort the resulting activity records. Unfortunately, you can't use filtering to explicitly exclude certain activities. 
+7. After the search results are displayed, you can select **Filter results** to filter or sort the resulting activity records. Unfortunately, you can't use filtering to explicitly exclude certain activities. 
 
-8. To view details about an activity, click the activity record in the list of search results. 
+8. To view details about an activity, select the activity record in the list of search results. 
 
-    A **Details** fly out page is displayed that contains the detailed properties from the event record. To display additional details, click **More information**. For a description of these properties, see the [Detailed properties for eDiscovery activities](#detailed-properties-for-ediscovery-activities) section.
+    A **Details** fly out page is displayed that contains the detailed properties from the event record. To display additional details, select **More information**. For a description of these properties, see the [Detailed properties for eDiscovery activities](#detailed-properties-for-ediscovery-activities) section.
 
 9. If desired, you can export the audit log search results to a CSV file, and then use the Excel Power Query feature to format and filter these records. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
 
@@ -77,7 +71,7 @@ The following table describes the Content Search and eDiscovery (Standard) activ
   
 |**Friendly name**|**Operation**|**Corresponding cmdlet**|**Description**|
 |:-----|:-----|:-----|:-----|
-|Added member to eDiscovery case  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |A user was added as a member of an eDiscovery case. As a member of a case, a user can perform various case-related tasks depending on whether they have been assigned the necessary permissions.  <br/> |
+|Added member to eDiscovery case  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |A user was added as a member of an eDiscovery case. As a member of a case, a user can perform various case-related tasks depending on whether they've been assigned the necessary permissions.  <br/> |
 |Changed content search  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |An existing content search was changed. Changes can include adding or removing content locations or editing the search query.  <br/> |
 |Changed eDiscovery administrator membership  <br/> |CaseAdminUpdated  <br/> |Update-eDiscoveryCaseAdmin  <br/> |The list of eDiscovery Administrators in your organization was changed. This activity is logged when the list of eDiscovery Administrators is replaced with a group of new users. If a single user is added or removed, the CaseAdminAdded operation is logged.  <br/> |
 |Changed eDiscovery case  <br/> |CaseUpdated  <br/> |Set-ComplianceCase  <br/> |An eDiscovery case was changed. Changes include closing an open case or reopening a closed case.  <br/> |
@@ -111,10 +105,10 @@ The following table describes the Content Search and eDiscovery (Standard) activ
 |Started export of content search  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |A user exported the results of a content search.  <br/> |
 |Started export report  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |A user exported a content search report.  <br/> |
 |Stopped content search  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |A user stopped a content search.  <br/> |
-|(none)|CaseViewed|Get-ComplianceCase|A user viewed a eDiscovery (Standard) case in the compliance center. The audit record for this event includes the name of the case that was viewed. |
-|(none)|SearchViewed|Get-ComplianceSearch|A user viewed a Content search in the compliance center by accessing the search on the **Searches** tab in a eDiscovery (Standard) case or accessing it on the **Content search** page. The audit record for this event includes the identity of the search that was viewed.|
-|(none)|ViewedSearchExported|Get-ComplianceSearchAction -Export|A user viewed a Content search export in the compliance center by accessing the export on the **Exports** tab on the **Content search** page. This activity is also logged when a user views an export associated with a eDiscovery (Standard) case.|
-|(none)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|A user previewed the results of a Content search in the compliance center. This activity is also logged when a user previews the results of a search associated with a eDiscovery (Standard) case.|
+|(none)|CaseViewed|Get-ComplianceCase|A user viewed a eDiscovery (Standard) case in the compliance portal. The audit record for this event includes the name of the case that was viewed. |
+|(none)|SearchViewed|Get-ComplianceSearch|A user viewed a Content search in the compliance portal by accessing the search on the **Searches** tab in a eDiscovery (Standard) case or accessing it on the **Content search** page. The audit record for this event includes the identity of the search that was viewed.|
+|(none)|ViewedSearchExported|Get-ComplianceSearchAction -Export|A user viewed a Content search export in the compliance portal by accessing the export on the **Exports** tab on the **Content search** page. This activity is also logged when a user views an export associated with a eDiscovery (Standard) case.|
+|(none)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|A user previewed the results of a Content search in the compliance portal. This activity is also logged when a user previews the results of a search associated with a eDiscovery (Standard) case.|
 |||||
   
 ## eDiscovery (Premium) activities
@@ -150,7 +144,7 @@ The following table describes the eDiscovery (Premium) activities logged in the 
 
 ## eDiscovery cmdlet activities
 
-The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the compliance center or by running the corresponding cmdlet in Security & Compliance PowerShell. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section.
+The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the compliance portal or by running the corresponding cmdlet in Security & Compliance PowerShell. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section.
   
 As previously stated, it may take up to 24 hours for eDiscovery cmdlet activities to appear in the audit log search results.
   
@@ -168,13 +162,13 @@ As previously stated, it may take up to 24 hours for eDiscovery cmdlet activitie
 |Created eDiscovery case  <br/> |[New-ComplianceCase](/powershell/module/exchange/new-compliancecase) <br/> |An eDiscovery case was created. When a case is created, you only have to give it a name. Other case-related tasks such as adding members, creating holds, and creating content searches associated with the case result in additional events being logged.  <br/> |
 |Deleted eDiscovery case  <br/> |[Remove-ComplianceCase](/powershell/module/exchange/remove-compliancecase) <br/> |An eDiscovery case was deleted. Any hold associated with the case has to be removed before the case can be deleted.  <br/> |
 |Changed eDiscovery case  <br/> |[Set-ComplianceCase](/powershell/module/exchange/set-compliancecase) <br/> |An eDiscovery case was changed. Changes include closing an open case or reopening a closed case.  <br/> |
-|Added member to eDiscovery case  <br/> |[Add-ComplianceCaseMember](/powershell/module/exchange/add-compliancecasemember) <br/> |A user was added as a member of an eDiscovery case. As a member of a case, a user can perform various case-related tasks depending on whether they have been assigned the necessary permissions.  <br/> |
+|Added member to eDiscovery case  <br/> |[Add-ComplianceCaseMember](/powershell/module/exchange/add-compliancecasemember) <br/> |A user was added as a member of an eDiscovery case. As a member of a case, a user can perform various case-related tasks depending on whether they've been assigned the necessary permissions.  <br/> |
 |Removed member from eDiscovery case  <br/> |[Remove-ComplianceCaseMember](/powershell/module/exchange/remove-compliancecasemember) <br/> |A user was removed as a member of an eDiscovery case.  <br/> |
 |Changed eDiscovery case membership  <br/> |[Update-ComplianceCaseMember](/powershell/module/exchange/update-compliancecasemember) <br/> |The membership list of an eDiscovery case was changed. This activity is logged when all members are replaced with a group of new users. If a single member is added or removed, the **Add-ComplianceCaseMember** or **Remove-ComplianceCaseMember** operation is logged.  <br/> |
 |Created content search  <br/> |[New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch) <br/> |A new content search was created.  <br/> |
 |Deleted content search  <br/> |[Remove-ComplianceSearch](/powershell/module/exchange/remove-compliancesearch) <br/> |An existing content search was deleted.  <br/> |
 |Changed content search  <br/> |[Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch) <br/> |An existing content search was changed. Changes can include adding or removing content locations that are searched and editing the search query.  <br/> |
-|Started content search  <br/> |[Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch) <br/> |A content search was started. When you create or change a content search by using the compliance center GUI, the search is automatically started. If you create or change a search by using the **New-ComplianceSearch** or **Set-ComplianceSearch** cmdlet, you have to run the **Start-ComplianceSearch** cmdlet to start the search.  <br/> |
+|Started content search  <br/> |[Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch) <br/> |A content search was started. When you create or change a content search by using the compliance portal GUI, the search is automatically started. If you create or change a search by using the **New-ComplianceSearch** or **Set-ComplianceSearch** cmdlet, you have to run the **Start-ComplianceSearch** cmdlet to start the search.  <br/> |
 |Stopped content search  <br/> |[Stop-ComplianceSearch](/powershell/module/exchange/stop-compliancesearch) <br/> |A content search that was running was stopped.  <br/> |
 |Created content search action  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |A content search action was created. Content search actions include previewing search results, exporting search results, preparing search results for analysis in eDiscovery (Premium), and permanently deleting items that match the search criteria of a content search.  <br/> |
 |Deleted content search action  <br/> |[Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) <br/> |A content search action was deleted.  <br/> |
@@ -199,10 +193,10 @@ The following table describes the properties that are included on the flyout pag
 |**Property**|**Description**|
 |:-----|:-----|
 |Case  <br/> |The identity (GUID) of the eDiscovery case that was created, changed, or deleted.  <br/> |
-|ClientApplication  <br/> |eDiscovery cmdlet activities have a value of **EMC** for this property. This indicates the activity was performed by using the compliance center GUI or running the cmdlet in PowerShell.  <br/> |
+|ClientApplication  <br/> |eDiscovery cmdlet activities have a value of **EMC** for this property. This indicates the activity was performed by using the compliance portal GUI or running the cmdlet in PowerShell.  <br/> |
 |ClientIP  <br/> |The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.  <br/> |
 |ClientRequestId  <br/> | For eDiscovery activities, this property is typically blank.  <br/> |
-|CmdletVersion  <br/> |The build number for the version of the compliance center running in your organization.  <br/> |
+|CmdletVersion  <br/> |The build number for the version of the compliance portal running in your organization.  <br/> |
 |CreationTime  <br/> |The date and time in Coordinated Universal Time (UTC) when the eDiscovery activity was completed.  <br/> |
 |EffectiveOrganization  <br/> |The name of the Microsoft  365 organization.  <br/> |
 |ExchangeLocations  <br/> |The Exchange Online mailboxes that are included in a content search or placed on hold in an eDiscovery case.  <br/> |
@@ -219,7 +213,7 @@ The following table describes the properties that are included on the flyout pag
 |Query  <br/> |The search query associated with the activity, such as a content search or a query-based hold.  <br/> |
 |RecordType  <br/> |The type of operation indicated by the record. The value of **18** indicates an event related to an activity listed in the [eDiscovery cmdlet activities](#ediscovery-cmdlet-activities) section. A value of **24** indicates an event related to an activity listed in the [How to search for and view eDiscovery activities](#how-to-search-for-and-view-ediscovery-activities) section.  <br/> |
 |ResultStatus  <br/> |Indicates whether the action (specified in the Operation property) was successful or not.  <br/> |
-|SecurityComplianceCenterEventType  <br/> |Indicates that the activity was a compliance center event. All eDiscovery activities will have a value of **0** for this property.  <br/> |
+|SecurityComplianceCenterEventType  <br/> |Indicates that the activity was a compliance portal event. All eDiscovery activities will have a value of **0** for this property.  <br/> |
 |SharepointLocations  <br/> |The SharePoint Online sites that are included in a content search or placed on hold in an eDiscovery case.  <br/> |
 |StartTime  <br/> |The date and time in Coordinated Universal Time (UTC) when the eDiscovery activity was started.  <br/> |
 |UserId  <br/> |The user who performed the activity (specified in the Operation property) that resulted in the record being logged. Records for eDiscovery activity performed by system accounts (such as NT AUTHORITY\SYSTEM) are also included in the audit log.  <br/> |

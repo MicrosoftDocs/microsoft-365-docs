@@ -184,7 +184,7 @@ The following impersonation settings are only available in anti-phishing policie
 
   > [!NOTE]
   >
-  > - In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 350. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+  > - In each anti-phishing policy, you can specify a maximum of 301 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 301. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
   > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
 
   By default, no sender email addresses are configured for impersonation protection in **Users to protect**. Therefore, by default, no sender email addresses are covered by impersonation protection, either in the default policy or in custom policies.
@@ -238,7 +238,7 @@ The following impersonation settings are only available in anti-phishing policie
   > [!NOTE]
   >
   > - If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
-  >   - `⁠noreply@email.teams.microsoft.com`
+  >   - `noreply@email.teams.microsoft.com`
   >   - `noreply@emeaemail.teams.microsoft.com`
   >   - `no-reply@sharepointonline.com`
   >
