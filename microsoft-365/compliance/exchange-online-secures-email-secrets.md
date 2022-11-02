@@ -48,4 +48,4 @@ Microsoft uses [Distributed Key Manager](office-365-bitlocker-and-distributed-ke
   
 [Technical reference details about encryption](technical-reference-details-about-encryption.md)
   
-[Service assurance in the Security &amp; Compliance Center](./service-assurance.md)
+[Service assurance in the Microsoft Purview compliance portal](./service-assurance.md)
