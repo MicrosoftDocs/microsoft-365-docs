@@ -538,7 +538,7 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 - [Announcing live response for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-live-response-for-macos-and-linux/ba-p/2864397) 
    
 ## References
-- [Add a tag or group ID](linux-preferences.md##add-tag-or-group-id-to-the-configuration-profile)
+- [Add a tag or group ID](linux-preferences.md#add-tag-or-group-id-to-the-configuration-profile)
    
 - [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
 
