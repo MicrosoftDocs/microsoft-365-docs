@@ -30,16 +30,20 @@ This article lists new features in the latest release of Microsoft 365 Business 
 
 ## November 2022
 
-- **[Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md)**, a new add-on for Defender for Business, is now generally available.
+- **[Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md)**, a new add-on for Defender for Business, is now generally available. See [How to get Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md).
 
 ## July 2022
 
-- Microsoft Defender for Business servers (preview) is available to customers who have at least one paid license of Microsoft 365 Business Premium or Defender for Business. See [Tech Community blog: Server protection for small business is now in preview within Microsoft Defender for Business](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/server-protection-for-small-business-now-in-preview-within/ba-p/3571185).
+- **Microsoft Defender for Business servers (preview)** is available to customers who have at least one paid license of Microsoft 365 Business Premium or Defender for Business. See [Tech Community blog: Server protection for small business is now in preview within Microsoft Defender for Business](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/server-protection-for-small-business-now-in-preview-within/ba-p/3571185).
 
 ## May 2022
 
-- Defender for Business (standalone) is now generally available.
+- **Defender for Business** (standalone) is now generally available. See the following resources to learn more:
+
+   - [Tech Community blog: Introducing Microsoft Defender for Business](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701)
+   - [What is Microsoft Defender for Business?](../security/defender-business/mdb-overview.md)
+   - [Get Microsoft Defender for Business](../security/defender-business/get-defender-business.md)
 
 ## March 2022
 
-- Microsoft 365 Business Premium now includes Defender for Business. See [Tech Community blog: New security solutions to help secure small and medium businesses](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/new-security-solutions-to-help-secure-small-and-medium/ba-p/3207043).
+- **Microsoft 365 Business Premium now includes Defender for Business**. See [Tech Community blog: New security solutions to help secure small and medium businesses](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/new-security-solutions-to-help-secure-small-and-medium/ba-p/3207043).
