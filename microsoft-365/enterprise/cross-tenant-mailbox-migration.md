@@ -99,7 +99,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 14. Next, select Application permissions
 
-15. Then, under Select permissions, expand Mailbox, check Mailbox.Migration, and Add permissions at the bottom on the screen.
+15. Then, under Select permissions, expand Mailbox, check Mailbox.Migration, and, at the bottom on the screen, select Add permissions.
 
     ![Set API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
 
@@ -217,7 +217,7 @@ Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant 
 
 ### Move mailboxes back to the original source
 
-If a mailbox is required to move back to the original source tenant, the same set of steps and scripts will need to be run in both new source and new target tenants. The existing Organization Relationship object will be updated or appended, not recreated. The migration cannot happen both ways simultaneously.
+If a mailbox is required to move back to the original source tenant, the same set of steps and scripts will need to be run in both new source and new target tenants. The existing Organization Relationship object will be updated or appended, not recreated. The migration can't happen both ways simultaneously.
 
 ## Prepare target user objects for migration
 
@@ -375,7 +375,7 @@ Once the mailbox moves from source to target, you should ensure that the on-prem
 
 Use the Remove-MigrationEndpoint(/powershell/module/exchange/remove-migrationendpoint) cmdlet to remove existing migration endpoints for source or destination servers after the migration is complete.
 
-Use the Remove-OrganizationRelationship (/exchange/sharing/organization-relationships/remove-an-organization-relationship#use-exchange-online-powershell-to-remove-an-organization-relationship) cmdlet to remove existing oraganization relationships for source or destination servers after the migration is complete.
+Use the Remove-OrganizationRelationship (/exchange/sharing/organization-relationships/remove-an-organization-relationship#use-exchange-online-powershell-to-remove-an-organization-relationship) cmdlet to remove existing organization relationships for source or destination servers after the migration is complete.
 
 ## Frequently asked questions
 
