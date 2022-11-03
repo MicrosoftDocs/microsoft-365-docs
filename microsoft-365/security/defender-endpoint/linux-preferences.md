@@ -219,7 +219,7 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 - Unmuted (`unmute`): The default value, all mount points are scanned as part of RTP.
 - Muted (`mute`): Mount points marked as noexec are not scanned as part of RTP, these mount point can be created for:
   - Database files on Database servers for keeping data base files.
-  - File server can be keep data files mountpoints with noexec option.
+  - File server can keep data files mountpoints with noexec option.
   - Back up can be keep data files mountpoints with noexec option.
 
 |Description|Value|
