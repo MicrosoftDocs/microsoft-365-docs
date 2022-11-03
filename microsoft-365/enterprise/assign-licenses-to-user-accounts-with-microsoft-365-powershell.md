@@ -143,7 +143,7 @@ Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -Re
 This example updates a user with **SPE_E5** (Microsoft 365 E5) and turns off the Sway and Forms service plans while leaving the user's existing disabled plans in their current state:
   
 ```powershell
-$userLicense = Get-MgUserLicenseDetail -UserId "belinda@fdoau.onmicrosoft.com"
+$userLicense = Get-MgUserLicenseDetail -UserId "belinda@litwareinc.com"
 $userDisabledPlans = $userLicense.ServicePlans | `
     Where ProvisioningStatus -eq "Disabled" | `
     Select -ExpandProperty ServicePlanId
@@ -162,7 +162,7 @@ $addLicenses = @(
     }
 )
 
-Set-MgUserLicense -UserId "belinda@litwareinc.onmicrosoft.com" -AddLicenses $addLicenses -RemoveLicenses @()
+Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
 ### Assign licenses to a user by copying the license assignment from another user
