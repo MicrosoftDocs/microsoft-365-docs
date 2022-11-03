@@ -122,9 +122,9 @@
         - name: Generate documents using Power Automate 
           href: automate-document-generation.md
      
-    - name: Metadata search
+    - name: Content query
       items: 
-        - name: Search for metadata in document libraries 
+        - name: Query for metadata in document libraries 
           href: metadata-search.md
      
     - name: Taxonomy
