@@ -214,7 +214,7 @@ A priority user group is required when using the following policy templates:
 - Security policy violations by priority users
 - Data leaks by priority users
 
-See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups-preview) article for step-by-step guidance to create a priority user group. After you've configured a priority user group, return to these configuration steps.
+See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups) article for step-by-step guidance to create a priority user group. After you've configured a priority user group, return to these configuration steps.
 
 ### Configure Physical badging connector (optional)
 
