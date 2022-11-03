@@ -88,6 +88,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 |Sent to member of|condition: *SentToMemberOf* <br/><br/> exception: *ExceptIfSentToMemberOf*|Addresses|Messages that contain recipients who are members of the specified distribution group, mail-enabled security group, or Microsoft 365 group. The group can be in the **To**, **Cc**, or **Bcc** fields of the message.|
 |The recipient's specified properties include any of these words |*RecipientADAttributeContainsWords* <br/><br/> *ExceptIfRecipientADAttributeContainsWords*|First property: `ADAttribute` <br/><br/> Second property: `Words`|Messages where the specified Active Directory attribute of a recipient contains any of the specified words. <br/><br/> Note that the **Country** attribute requires the two-letter country code value (for example, DE for Germany).|
 |The recipient's specified properties match these text patterns |*RecipientADAttributeMatchesPatterns* <br/><br/> *ExceptIfRecipientADAttributeMatchesPatterns*|First property: `ADAttribute` <br/><br/> Second property: `Patterns`|Messages where the specified Active Directory attribute of a recipient contains text patterns that match the specified regular expressions.|
+|Recipient scope|condition: *AccessScope* <br/><br/> exception: *ExceptIfAccessScope*|UserScopeFrom|Messages that are received by either internal or external recipients.|
 
 ### Message subject or body
 
