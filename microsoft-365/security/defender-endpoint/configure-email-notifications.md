@@ -1,5 +1,5 @@
 ---
-title: Configure alert notifications in Microsoft Defender for Endpoint
+title: Configure incident and alert notifications in Microsoft 365 Defender Portal
 description: You can use Microsoft Defender for Endpoint to configure email notification settings for security alerts, based on severity and other criteria.
 keywords: email notifications, configure alert notifications, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint notifications, Microsoft Defender for Endpoint alerts, windows enterprise, windows education
 ms.service: microsoft-365-security
