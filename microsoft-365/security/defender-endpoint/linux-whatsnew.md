@@ -34,6 +34,32 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+  <summary>Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)</summary>
+
+&ensp;Released: **November 02, 2022**<br/>
+&ensp;Published: **November 02, 2022**<br/>
+&ensp;Build: **101.85.27**<br/>
+&ensp;Release version: **30.122092.18527.0**<br/>
+&ensp;Engine version: **1.1.19500.2**<br/>
+&ensp;Signature version: **1.371.1369.0**<br/>
+
+**What's new**
+
+- There are mutiple fixes and new changes in this release 
+	-V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
+		-Now you can set the temp path for scanning of archive files. Use oemTemporaryPath -  via managed config / wdavcfg if you don’t want engine to use 		    /tmp for scratch work. 
+	- V2 support configuration path for AV definitions. (mdatp definition set path)
+	- Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
+	- In case crash collection is disabled by configuration, crash monitoring process will not be launched.
+	- Performance fixes to optimally use system events for AV capabilities.
+	- Stability improvement in case of mdatp restart and loading of epsext issues.
+	- Other fixes
+
+**Known issues**
+- No known issues in this release
+</details>
+
+<details>
   <summary>Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)</summary>
 
 &ensp;Released: **September 14, 2022**<br/>
