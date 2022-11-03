@@ -241,7 +241,7 @@ If you want to provide feedback on the message, in the details pane, select eith
 
 If a Message Center post is not relevant for your organization, please provide us feedback using the options demonstrated in the image below. After you click thumbs up/down on the MC post, select "this change isn't relevant to my org."
 
-:::image type="content" source="../../media\message-center-feedbacksection.jpg" alt -text="Message center view of feedback section.":::
+:::image type="content" source="../../media/message-center-feedbacksection.jpg" alt -text="Message center view of feedback section.":::
 
 > [!NOTE]
 > If you're using Microsoft 365 for Government - GCC, Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.
