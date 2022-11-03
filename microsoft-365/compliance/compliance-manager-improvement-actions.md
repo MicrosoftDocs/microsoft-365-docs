@@ -49,9 +49,9 @@ Each improvement action details page has the following sections:
 
 - **Testing** tab: Contains testing status, date, notes, and a link to download a testing history report.
 
-- **Controls & certifications [TBD NAME]** tab: Lists the controls associated with the improvement action.
+- **Related controls** tab: Lists the controls associated with the improvement action. Select a control name to view its description.
 
-- **Documents [Evidence TBD NAME CHange]** tab: Location where you can upload and view files and links related to implementation and testing work
+- **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work
 
 > [!TIP]
 > Learn more about the different [types of improvement actions and how points are awarded](compliance-score-calculation.md#action-types-and-points) and factored into your compliance score.
