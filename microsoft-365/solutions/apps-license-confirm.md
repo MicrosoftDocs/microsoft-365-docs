@@ -17,3 +17,4 @@ keywords:
 # Understand app licenses used in a managed environment
 
 
+https://learn.microsoft.com/en-us/mem/intune/fundamentals/licenses#confirm-your-licenses

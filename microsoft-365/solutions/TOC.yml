@@ -394,12 +394,12 @@
           href: apps-purchase-overview.md
         - name: Purchase store apps
           href: apps-purchase-store.md
-        - name: Purchases within an app
-          href: apps-purchase-in-app.md
         - name: Purchase apps in volume
           href: apps-purchase-volume.md
         - name: Purchase third-party apps
           href: apps-purchase-third-party.md
+        - name: Purchases within an app
+          href: apps-purchase-in-app.md
         - name: Verify purchased apps
           href: apps-purchase-verify.md
       - name: Understand app licenses
@@ -418,13 +418,13 @@
           href: apps-license-verify.md
       - name: Add apps to Intune
         items:
-        - name: Add apps overview overview
+        - name: Add apps overview
           href: apps-add-overview.md
         - name: Understand supported app types
           href: apps-add-supported.md
         - name: Assess app requirements
           href: apps-add-assess.md
-        - name: Add apps
+        - name: Add apps to Intune
           href: apps-add-apps.md
 
 - name: Industry-specific guidance

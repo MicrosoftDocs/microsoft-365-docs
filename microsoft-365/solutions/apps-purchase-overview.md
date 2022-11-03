@@ -16,21 +16,47 @@ keywords:
 
 # Purchase apps for a managed environment
 
-Most apps that you use with Microsoft Intune can be added to Intune and and deployed to user's devices for free. Some apps are free for your workforce to use, while other apps require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook requires both a license and an account to use the app. 
+Many of the apps that you use with Microsoft Intune can be added to Intune and and deployed to user's devices for free. Some apps are free for your workforce to use, while other apps require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook requires both a license and an account to use the app. 
+
+## Apps available for purchase
+
+Common types of apps purchases:
+- Individual store apps
+- Volume purchased apps
+- Partner productivity apps
+- Partner UEM apps
+- In-app purchases
+
+### Individual store apps
 
 
-## Find apps to purchase
 
-## Types of app purchases
+### Volume purchased apps
 
-## Purchase based on intent
+Each device platform has a method to purchase apps for your organization in bulk:
+- Apple provides the Apple Business Manager
+- Google provides Managed Google Play
+- Microsoft provide the Microsoft Store for Business
 
-## Apps included Microsoft 365 E5 license
+> [!NOTE]
+> Custom apps
+
+### Partner productivity apps
+
+### Partner UEM apps
+
+### In-app purchases
+
+## Microsoft apps that support Intune
+
+
+
+## Apps included with Microsoft 365 E5 license
 
 To use Microsoft Intune, your organization must purchase a license. Microsoft apps are included with specific Microsoft 365 licenses. For instance, common areas of functionality included with an E5 enterprise license are displayed in the following table.
 
-| **Capability / Feature** | **Details** |
-|:---:|:---:|
+| Capability / Feature | Details |
+|---|---|
 | **Microsoft 365 apps** | Includes online apps, such as Microsoft Word, Excel, PowerPoint, OneNote, Outlook, and more |
 | **Email, calendar, and scheduling** | Includes Microsoft Exchange and Outlook desktop client |
 | **Meetings, calling, and chat** | Includes Microsoft Teams |
@@ -48,3 +74,4 @@ To use Microsoft Intune, your organization must purchase a license. Microsoft ap
 | **eDiscovery and auditing** | Content Search, eDiscovery, and more |
 | **Insider rick management** | Communication Compliance, Priviledged Access Management, and more |
 | **Windows** | Windows 11 Edition, Azure Virtual Desktop, and Universal Print |
+
