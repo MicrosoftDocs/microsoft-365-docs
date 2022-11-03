@@ -94,9 +94,9 @@ Security settings in Office 365 help protect email and content. To view or chang
 > [!TIP]
 > Need help? See [Turn on Microsoft 365 Defender](m365d-enable.md).
 
-## Configuration options
+## Need to make changes?
 
-You have several options to configure automated investigation and response capabilities in Microsoft 365 Defender. as described in the following table:
+You can choose from several options to change settings for your automated investigation and response capabilities. Some options are listed in the following table:
 
 | To do this  | Follow these steps  |
 |---------|---------|
