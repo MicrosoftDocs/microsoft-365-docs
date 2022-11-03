@@ -137,4 +137,4 @@ Keep the following things in mind after you enable auto-expanding archiving:
 
 ## Next steps
 
-Make sure you prepare end users for the changes they can expect after enabling their mailbox for auto-expanding archives.
+Make sure you prepare end users for the changes they can expect after enabling their mailbox for auto-expanding archives.  For a brief overview of the client experience, see the "What gets moved to the additional archive storage space?" section in [Learn about auto-expanding archiving](https://learn.microsoft.com/en-us/microsoft-365/compliance/autoexpanding-archiving?view=o365-worldwide#what-gets-moved-to-the-additional-archive-storage-space).
