@@ -10,7 +10,8 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -20,6 +21,8 @@ description: "This article presents a list of the filters that can be encoded in
 # Custom sensitive information type filters reference
 
 In Microsoft you can define filters or other checks while creating a custom sensitive information types (SIT).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## List of supported filters and use cases
 

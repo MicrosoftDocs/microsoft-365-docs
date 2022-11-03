@@ -3,8 +3,8 @@ title: Communication compliance
 description: Learn how to configure communication compliance in Microsoft Purview.
 keywords: Microsoft 365, insider risk, compliance
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
 ms.topic: article
+ms.service: O365-seccomp
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,15 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
+- highpri
 ---
 
 # Communication compliance
 
-Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. Microsoft Purview Communication Compliance helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
+> [!IMPORTANT]
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
+
+Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. Microsoft Purview Communication Compliance helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include potentially inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Configure communication compliance
 

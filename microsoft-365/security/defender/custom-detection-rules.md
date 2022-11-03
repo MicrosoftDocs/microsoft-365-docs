@@ -4,7 +4,8 @@ description: Learn how to create and manage custom detections rules based on adv
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, rules, schema, kusto, RBAC, permissions, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,10 +17,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
-ms.topic: article
-ms.technology: m365d
+  - tier2
+ms.topic: conceptual
 ---
 
 # Create and manage custom detections rules
@@ -122,9 +123,9 @@ With the query in the query editor, select **Create detection rule** and specify
 When you save a new rule, it runs and checks for matches from the past 30 days of data. The rule then runs again at fixed intervals, applying a lookback duration based on the frequency you choose:
 
 - **Every 24 hours**—runs every 24 hours, checking data from the past 30 days
-- **Every 12 hours**—runs every 12 hours, checking data from the past 24 hours
-- **Every 3 hours**—runs every 3 hours, checking data from the past 6 hours
-- **Every hour**—runs hourly, checking data from the past 2 hours
+- **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
+- **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
+- **Every hour**—runs hourly, checking data from the past 4 hours
 
 When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
 
@@ -141,7 +142,11 @@ Identify the columns in your query results where you expect to find the main aff
 You can select only one column for each entity type (mailbox, user, or device). Columns that are not returned by your query can't be selected.
 
 ### 4. Specify actions.
-Your custom detection rule can automatically take actions on devices, files, or users that are returned by the query.
+Your custom detection rule can automatically take actions on devices, files, users, or emails that are returned by the query.
+
+
+:::image type="content" source="../../media/ah-custom-actions.png" alt-text="Screenshot that shows actions for custom detections in the Microsoft 365 Defender portal." lightbox="../../media/ah-custom-actions.png":::
+
 
 #### Actions on devices
 These actions are applied to devices in the `DeviceId` column of the query results:
@@ -152,13 +157,23 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 - **Restrict app execution**—sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run. [Learn more about app restrictions with Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
 #### Actions on files
+
+When selected, you can choose to **Allow/Block** the file. Blocking files are only allowed if you have *Remediate* permissions for files and if the query results have identified a file ID, such as a SHA1. Once a file is blocked, other instances of the same file in all devices are also blocked. You can control which device group the blocking is applied to, but not specific devices. 
+
 When selected, you can choose to apply the **Quarantine file** action on files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results. This action deletes the file from its current location and places a copy in quarantine.
 
-#### Actions on users
-When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. This action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](/azure/active-directory/identity-protection/overview-identity-protection).
 
-> [!NOTE]
-> The allow or block action for custom detection rules is currently not supported on Microsoft 365 Defender.
+
+#### Actions on users
+When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. This action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](/azure/active-directory/identity-protection/overview-identity-protection). 
+
+Select **Disable user** to temporarily prevent a user from logging in, or **Force password reset** to prompt the user to change their password on the next sign in session. Both **Disable user** and **Force password reset** require the user SID, which are in the columns `AccountSid`, `InitiatingProcessAccountSid`, `RequestAccountSid`, and `OnPremSid`.    
+
+#### Actions on emails
+If the custom detection yields email messages, you can select **Move to mailbox folder** to move the email to  a selected folder (any of **Junk**, **Inbox**, or **Deleted items** folders).    
+
+Alternatively, you can select **Delete email** and then choose to either move the emails to Deleted Items (**Soft delete**) or delete the selected emails permanently (**Hard delete**).
+
 
 ### 5. Set the rule scope.
 Set the scope to specify which devices are covered by the rule. The scope influences rules that check devices and doesn't affect rules that check only mailboxes and user accounts or identities.

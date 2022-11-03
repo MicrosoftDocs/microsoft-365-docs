@@ -6,16 +6,18 @@ metadata:
   ms.author: krowley
   author: kccross
   manager: laurawi
-  ms.date: 04/01/2022
+  ms.date: 10/14/2022
   audience: ITPro
   ms.topic: faq
   ms.service: O365-seccomp
   ms.localizationpriority: medium
   search.appverid:
   - MET150
-  ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: "Have a question about how Microsoft Purview Message Encryption works? Check for an answer here."
   ms.custom: seo-marvel-apr2020
+  ms.collection: 
+  - tier1
+  - purview-compliance
 title: Message Encryption FAQ
 summary: |
 
@@ -201,8 +203,19 @@ sections:
       - question: |
           Can I automatically remove encryption on incoming and outgoing mail?
         answer: |
-          Admins can set up a mail flow rule to remove encryption for outgoing mail. You can only set up a rule to remove encryption for incoming mail that originates from your organization.
+          Admins can set up a mail flow rule to remove encryption for outgoing mail. You can only set up a rule to remove encryption for incoming mail that originates from your Exchange Online organization.
 
+      - question: |
+
+          Can I automatically remove encryption on journal mail?
+        answer: |
+          For an Exchange Online mailbox, admins must enable journal decryption and set up an Exchange Online journaling rule to generate a decrypted copy of the mail into the journaling mailbox. The journaling rule will take any mail or attachment that have encryption and send the original plus a decrypted copy into the journaling mailbox. You can only set up a journaling rule that can decrypt mail or attachments when the encrypted item originates from your organization.  
+          To enable Exchange Online journaling:
+          
+          ```powershell
+          Set-IRMConfiguration -JournalReportDecryptionEnabled $true
+          ```
+          
       - question: |
           Can I automatically encrypt messages by setting up policies in Data Loss Prevention (DLP) through the Microsoft Purview compliance portal?
         answer: |
@@ -221,17 +234,12 @@ sections:
       - question: |
           Are there any reporting capabilities or insights for encrypted emails?
         answer: |
-          There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Security & Compliance Center](../security/office-365-security/view-email-security-reports.md).
+          There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Microsoft Purview compliance portal](../security/office-365-security/view-email-security-reports.md).
             
       - question: |
           Can I use message encryption with compliance features such as eDiscovery?
         answer: |
           Yes, most messages protected by Microsoft Purview Message Encryption are discoverable. Microsoft Purview Message Encryption protected mail that you receive from another Microsoft 365 organization that has custom branding applied through a mail flow rule is undiscoverable by your eDiscovery service. In other words, if the mail isn't accessible through the user's mailbox, but rather, surfaced only through a link to the encrypted message portal, the mail isn't searchable. See [eDiscovery activities that support encrypted items](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) for details.
-
-      - question: |
-          Can I remove encryption from email?
-        answer: |
-          Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by another organization.
 
       - question: |
           Can I send as a shared mailbox and encrypt emails?
@@ -241,7 +249,7 @@ sections:
       - question: |
           Can I open encrypted messages sent to a shared mailbox?
         answer: |
-          Yes! You can open encrypted messages for a shared mailbox when you're logged into a supported Outlook client.
+          Yes! You can open encrypted messages for a shared mailbox. When the mail is sent from the same organization, you can open the mail when you're signed in to a supported Outlook client. If the mail is sent from an external organization, you'll need to use Outlook on the web.
           
           - Users can open protected mails in a shared mailbox where the shared mailbox received a protected mail as part of a distribution group.
           

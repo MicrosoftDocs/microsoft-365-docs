@@ -3,12 +3,13 @@ title: "External Domain Name System records for Office 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/10/2021
+ms.date: 10/14/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -75,20 +76,19 @@ Email customers who are using Exchange Federation will also need the additional 
 |**TXT** <br/> **(Exchange federation)**|Used for Exchange federation for hybrid deployment.|**TXT record 1:** For example, contoso.com and associated custom-generated, domain-proof hash text (for example, Y96nu89138789315669824) <br/> **TXT record 2:** For example, exchangedelegation.contoso.com and associated custom-generated, domain-proof hash text (for example, Y3259071352452626169)|
 |**CNAME** <br/> **(Exchange federation)**|Helps Outlook clients to easily connect to the Exchange Online service by using the Autodiscover service when your company is using Exchange federation. Autodiscover automatically finds the correct Exchange Server host and configures Outlook for your users.|**Alias:** For example, Autodiscover.service.contoso.com <br/> **Target:** autodiscover.outlook.com|
 
-## External DNS records required for Skype for Business Online
+## External DNS records required for Teams
 <a name="BKMK_ReqdCore"> </a>
 
-There are specific steps to take when you use [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) to make sure your network is configured correctly.
+There are specific steps to take when you use [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md) to make sure your network is configured correctly.
 
-> [!NOTE]
-> These DNS records also apply to Teams, especially in a hybrid Teams and Skype for Business scenario, where certain federation issues could arise.
+These DNS records apply to Teams, Skype for Business Online or both as indicated.
 
 |DNS record|Purpose|Value to use|
 |---|---|---|
-|**SRV** <br/> **(Skype for Business Online)**|Allows your Office 365 domain to share instant messaging (IM) features with external clients by enabling SIP federation. Read more about [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).|**Service:** sipfederationtls <br/> **Protocol:** TCP <br/> **Priority:** 100 <br/> **Weight:** 1 <br/> **Port:** 5061 <br/> **Target:** sipfed.online.lync.com <br/> **Note:** If the firewall or proxy server blocks SRV lookups on an external DNS, you should add this record to the internal DNS record. |
-|**SRV** <br/> **(Skype for Business Online)**|Used by Skype for Business to coordinate the flow of information between Lync clients.|**Service:** sip <br/> **Protocol:** TLS <br/> **Priority:** 100 <br/> **Weight:** 1 <br/> **Port:** 443 <br/> **Target:** sipdir.online.lync.com|
-|**CNAME** <br/> **(Skype for Business Online)**|Used by the Lync client to help find the Skype for Business Online service and sign in.|**Alias:** sip <br/> **Target:** sipdir.online.lync.com <br/> For more information, see [Office 365 URLs and IP address ranges](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO).|
-|**CNAME** <br/> **(Skype for Business Online)**|Used by the Lync mobile client to help find the Skype for Business Online service and sign in.|**Alias:** lyncdiscover <br/> **Target:** webdir.online.lync.com|
+|**SRV** <br/> **(Teams)**|Allows your Office 365 domain to share instant messaging (IM) features with external clients by enabling SIP federation.|**Service:** sipfederationtls <br/> **Protocol:** TCP <br/> **Priority:** 100 <br/> **Weight:** 1 <br/> **Port:** 5061 <br/> **Target:** sipfed.online.lync.com <br/> **Note:** If the firewall or proxy server blocks SRV lookups on an external DNS, you should add this record to the internal DNS record. |
+|**SRV** <br/> **(Teams)**| It may be needed by Teams-only tenants that use Skype for Business Online phones for Teams and must point to online edge servers (such as _sip.online.lync.com_). <br/>It is needed by hybrid tenants to support their Windows Desktop clients and phones that sign in to on-premises deployments (such as _sip.\<domain>_).|**Target:** _sip._tls.\<domain>|
+|**CNAME** <br/> **(Teams)**|Required for  PowerShell cmdlets that still use Skype for Business Online infrastructure for management. Therefore, it is also needed for Teams-only tenants.|**Target:**  lyncdiscover.\<domain>|
+
 
 ## External DNS records required for Office 365 Single Sign-On
 <a name="BKMK_ReqdCore"> </a>
@@ -130,7 +130,7 @@ For scenarios where you're not just using Exchange Online email for Office 365 (
 |1|All email systems (required)|All SPF records start with this value|v=spf1|
 |2|Exchange Online (common)|Use with just Exchange Online|include:spf.protection.outlook.com|
 |3|Third-party email system (less common)||include:\<email system like mail.contoso.com\>|
-|4|On-premises mail system (less common)|Use if you're using Exchange Online Protection or Exchange Online plus another mail system|ip4:\<0.0.0.0\> <br/> ip6:\< : : \> <br/> include:\<mail.contoso.com\> <br/> The value in brackets (\<\>) should be other mail systems that will send email for your domain.|
+|4|On-premises mail system (less common)|Use if you're using Exchange Online Protection or Exchange Online plus another mail system|`ip4:<0.0.0.0>` <br/> `ip6:< : : >` <br/> include:\<mail.contoso.com\> <br/> The value in brackets (\<\>) should be other mail systems that will send email for your domain.|
 |5|All email systems (required)||-all|
 
 ### Example: Adding to an existing SPF record

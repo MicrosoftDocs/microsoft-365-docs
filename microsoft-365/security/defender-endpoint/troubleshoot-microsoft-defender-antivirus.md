@@ -2,19 +2,22 @@
 title: Microsoft Defender Antivirus event IDs and error codes
 description: Look up the causes and solutions for Microsoft Defender Antivirus event IDs and errors
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 08/04/2022
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus

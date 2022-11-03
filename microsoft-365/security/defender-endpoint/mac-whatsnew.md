@@ -1,8 +1,8 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
-ms.prod: m365-security
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew, catalina, big sur, monterey, ventura, mde for mac
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Mac
@@ -32,6 +34,43 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
 
 <details>
+  <summary>Oct-2022 (Build: 101.86.81  | Release version: 20.122082.18681.0)</summary>
+
+&ensp;Build: **101.86.81**<br/>
+&ensp;Release version: **20.122082.18681.0**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Signature version: **1.377.636.0**<br/>
+
+**What's new**
+
+- Bug fix: Upgrade fails if \_mdatp user a member of \_lpadmin group
+
+<br/>
+</details>
+
+> [!IMPORTANT]
+> This is a minimal recommended MDE version for macOS Ventura.
+
+<details>
+  <summary>Oct-2022 (Build: 101.82.21  | Release version: 20.122082.18221.0)</summary>
+
+&ensp;Build: **101.82.21**<br/>
+&ensp;Release version: **20.122082.18221.0**<br/>
+&ensp;Engine version: **1.1.19400.3**<br/>
+&ensp;Signature version: **1.369.962.0**<br/>
+
+**What's new**
+
+- Bug fix - Mac TP in Block mode causing device hang on shutdown/crashes on reboot
+- Add a mdatp command-line switch to view the on-demand scan history
+- Improve Performance of Device Owner on MacOs
+- Ready for macOS Ventura (13.0)
+- Bug and performance fixes
+
+<br/>
+</details>
+
+<details>
   <summary>Aug-2022 (Build: 101.78.13  | Release version: 20.122072.17813.0)</summary>
 
 &ensp;Build: **101.78.13**<br/>
@@ -47,7 +86,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - Fix for UI crash on Ventura
 - Fix for definitions not getting downloaded right after install
 - Other bug fixes
-
+    
 <br/>
 </details>
 

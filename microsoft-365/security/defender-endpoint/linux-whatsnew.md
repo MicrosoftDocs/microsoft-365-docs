@@ -2,19 +2,22 @@
 title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 10/18/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier3
 ms.topic: reference
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # What's new in Microsoft Defender for Endpoint on Linux
@@ -29,6 +32,96 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+<details>
+  <summary>Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)</summary>
+
+&ensp;Released: **November 02, 2022**<br/>
+&ensp;Published: **November 02, 2022**<br/>
+&ensp;Build: **101.85.27**<br/>
+&ensp;Release version: **30.122092.18527.0**<br/>
+&ensp;Engine version: **1.1.19500.2**<br/>
+&ensp;Signature version: **1.371.1369.0**<br/>
+
+**What's new**
+
+- There are mutiple fixes and new changes in this release 
+	-V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
+		-Now you can set the temp path for scanning of archive files. Use oemTemporaryPath -  via managed config / wdavcfg if you don’t want engine to use 		    /tmp for scratch work. 
+	- V2 support configuration path for AV definitions. (mdatp definition set path)
+	- Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
+	- In case crash collection is disabled by configuration, crash monitoring process will not be launched.
+	- Performance fixes to optimally use system events for AV capabilities.
+	- Stability improvement in case of mdatp restart and loading of epsext issues.
+	- Other fixes
+
+**Known issues**
+
+- When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.85.21. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
+
+This should prevent the issue from occurring.
+
+Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+
+```bash
+sudo apt remove mdatp
+sudo apt-get install mdatp
+```
+
+After executing the above, use your package manager to perform the upgrade.
+
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+</details>
+
+<details>
+  <summary>Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)</summary>
+
+&ensp;Released: **September 14, 2022**<br/>
+&ensp;Published: **September 14, 2022**<br/>
+&ensp;Build: **101.80.97**<br/>
+&ensp;Release version: **30.122072.18097.0**<br/>
+&ensp;Engine version: **1.1.19300.3**<br/>
+&ensp;Signature version: **1.369.395.0**<br/>
+
+**What's new**
+
+- Fixes a kernel hang observed on select customer workloads running mdatp version 101.75.43. After RCA this was attributed to a race condition while releasing the ownership of a sensor file descriptor. The race condition was exposed due to a recent product change in the shutdown path. Customers on newer Kernel versions (5.1+) are not impacted by this issue. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+	
+**Known issues**
+
+- When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.80.97. This should prevent the issue from occurring.
+
+```
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+After executing the above, use your package manager to perform the upgrade. 
+	
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+</br>
+
+<br/><br/>
+</details>
+
+<details>
+   <summary>Aug-2022 (Build: 101.78.13, | Release version: 30.122072.17813.0)</summary>
+
+ &ensp;Released: **August 24, 2022**<br/>
+ &ensp;Published: **August 24, 2022**<br/>
+ &ensp;Build: **101.78.13**<br/>
+ &ensp;Release version: **30.122072.17813.0**<br/>
+ &ensp;Engine version: **1.1.19300.3**<br/>
+ &ensp;Signature version: **1.369.395.0**<br/>
+
+ **What's new**
+
+ - Rolled back due to reliability issues
+
+ </br>
+
+ <br/><br/>
+ </details>
 
 <details>
   <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>

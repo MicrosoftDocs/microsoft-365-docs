@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -98,4 +100,5 @@ After you remove a user, you have up to 30 days to restore their account.
 [Restore a user](restore-user.md) (article)\
 [Add a new employee to Microsoft 365](add-new-employee.md) (article)\
 [Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
+[Remove-CalendarEvents](/powershell/module/exchange/remove-calendarevents)\
 [Unassign licenses from users](../manage/remove-licenses-from-users.md) (article)

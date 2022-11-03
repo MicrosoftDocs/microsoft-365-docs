@@ -4,7 +4,8 @@ description: Learn how to configure Microsoft 365 Defender to stream Advanced Hu
 keywords: raw data export, streaming API, API, Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +14,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
-ms.technology: mde
+ms.topic: conceptual
 ---
 
 # Configure Microsoft 365 Defender to stream Advanced Hunting events to your Storage account
@@ -54,9 +56,11 @@ Once the Storage account is created you will need to:
 4. In the **Add new Streaming API settings** flyout that appears, configure the following settings:
    1. **Name**: Choose a name for your new settings.
    2. Select **Forward events to Azure Storage**.
-   3. In the **Storage Account Resource ID** box that appears, type your **Storage Account Resource ID**. To get your **Storage Account Resource ID**, open the Azure portal at <https://portal.azure.com>, click **Storage accounts** \> go to the properties tab \> copy the text under **Storage Account Resource ID**.
+4. To display the Azure Resource Manager resource ID for a storage account in the Azure portal, follow these steps:
 
-      :::image type="content" source="../defender-endpoint/images/storage-account-resource-id.png" alt-text="A Storage Account Resource ID" lightbox="../defender-endpoint/images/storage-account-resource-id.png":::
+   1. Navigate to your storage account in the Azure portal.
+   2. On the **Overview** page, in the **Essentials** section, select the **JSON View** link.
+   3. The resource ID for the storage account is displayed at the top of the page, copy the text under **Storage Account Resource ID**.
 
    4. Back on the **Add new Streaming API settings** flyout, choose the **Event types** that you want to stream.
 

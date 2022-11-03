@@ -6,10 +6,14 @@ ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
-ms.topic: landing-page
-ms.service: o365-administration
+ms.topic: article
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier3
+- ContentEngagementFY23
+- scotvorg
+- highpri
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC

@@ -7,17 +7,17 @@ author: msfttracyp
 manager: dansimp
 ms.date: 05/15/2020
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: medium
-search.appverid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft 365 Defender portal.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Views in Threat Explorer and real-time detections
@@ -110,7 +110,7 @@ Select an item in the list to view additional details.
 
 ## Email > All email
 
-To view this report, in Explorer, choose **View** \> **Email** \> **All mail**. This views shows an all-up view of email activity, including email identified as malicious due to phishing or malware, as well all non-malicious mail (normal email, spam, and bulk mail).
+To view this report, in Explorer, choose **View** \> **Email** \> **All mail**. This view shows an all-up view of email activity, including email identified as malicious due to phishing or malware, as well all non-malicious mail (normal email, spam, and bulk mail).
 
 > [!NOTE]
 > If you get an error that reads **Too much data to display**, add a filter and, if necessary, narrow the date range you're viewing.
@@ -133,11 +133,7 @@ Below the chart, view more details about specific files, such as attachment file
 
 ## Click-to-filter capabilities
 
-With Explorer (and real-time detections), you can apply a filter in a click. Click an item in the legend, and that item becomes a filter for the report. For example, suppose we are looking at the Malware view in Explorer:
-
-:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="The Explorer page in the Security & Compliance portal" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
-
-Clicking **ATP Detonation** in this chart results in a view like this:
+With Explorer (and real-time detections), you can apply a filter in a click. Click an item in the legend, and that item becomes a filter for the report. For example, clicking **ATP Detonation** in this chart results in a view like this:
 
 :::image type="content" source="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png" alt-text="The Explorer filtered to display only Defender for Office 365 Detonation results" lightbox="../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png":::
 

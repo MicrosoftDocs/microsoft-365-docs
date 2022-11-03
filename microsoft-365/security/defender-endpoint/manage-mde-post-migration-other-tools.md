@@ -2,8 +2,8 @@
 title: Manage Microsoft Defender for Endpoint using PowerShell, WMI, and MPCmdRun.exe
 description: Learn how to manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender for Endpoint, edr
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,12 +12,13 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-
-ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+- ms.custom: admindeeplinkDEFENDER
+ms.topic: conceptual
 ms.reviewer: chventou
+search.appverid: met150
 ---
 
 # Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
@@ -81,5 +82,4 @@ You can also configure whether and what features end users can see in the Micros
 ## Next steps
 
 - [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Visit the Microsoft Defender Security Center security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)

@@ -3,7 +3,7 @@ title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,12 @@ ms.localizationpriority: medium
 ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Set preferences for Microsoft Defender for Endpoint on Linux
@@ -77,7 +79,7 @@ Specifies the enforcement preference of antivirus engine. There are three values
 
 #### Enable/disable behavior-monitoring 
 
-Determines whether behavior monitoring and blocking capability is enabled on the device or not. To improve effectiveness of security protection, we recommend keeping this feature turned on.
+Determines whether behavior monitoring and blocking capability is enabled on the device or not. 
 
 <br>
 
@@ -97,8 +99,8 @@ Enables or disables file hash computation feature. When this feature is enabled,
 |Description|Value|
 |---|---|
 |**Key**|enableFileHashComputation|
-|**Data type**|String|
-|**Possible values**|disabled (default) <p> enabled|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
 |**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
   
 #### Run a scan after definitions are updated
@@ -382,7 +384,6 @@ The following configuration profile will:
 - Enable automatic security intelligence updates
 - Enable cloud-delivered protection
 - Enable automatic sample submission at `safe` level
-- Enable behavior-monitoring
 
 ### Sample profile
 
@@ -413,6 +414,9 @@ The following configuration profile will:
 ## Full configuration profile example
 
 The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over the product.
+  
+> [!NOTE]
+> It is not possible to control all Microsoft Defender for Endpoint communication with only a proxy setting in this JSON.
 
 ### Full profile
 
@@ -532,6 +536,7 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 
 > [!NOTE]
 > For the mdatp_managed.json to take effect, no restart of the `mdatp` deamon is required.
+  
 
 ## Configuration profile deployment
 

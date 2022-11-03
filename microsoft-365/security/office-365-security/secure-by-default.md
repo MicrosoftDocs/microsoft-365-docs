@@ -13,10 +13,10 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Learn more about the secure by default setting in Exchange Online Protection (EOP)
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Secure by default in Office 365

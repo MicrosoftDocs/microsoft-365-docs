@@ -4,12 +4,14 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -35,7 +37,7 @@ Several options are available if you need help. First, check to see if there are
     3. In the list of services, find **Microsoft 365 suite**, and then expand it to show all the services in the suite.
     4. Find **Microsoft 365 Lighthouse** and check the health.
 
-- See if the issue is listed in [Known issues with Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-known-issues?view=o365-worldwide).
+- See if the issue is listed in [Known issues with Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-known-issues).
 
 If you're experiencing an issue that isn't listed in any of these resources, then follow the instructions in this article to view self-help options or to create a service request.
 

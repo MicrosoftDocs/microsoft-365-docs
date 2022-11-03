@@ -5,21 +5,22 @@ manager: dansimp
 description: Turn tamper protection on or off using tenant attach with Configuration Manager.
 keywords: malware, defender, antivirus, tamper protection, Configuration Manager
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
-ms.technology: mde
+ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Manage tamper protection using tenant attach with Configuration Manager, version 2006

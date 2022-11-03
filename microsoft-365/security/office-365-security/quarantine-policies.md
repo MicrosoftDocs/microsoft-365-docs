@@ -13,11 +13,11 @@ search.appverid:
   - MET150
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Quarantine policies
@@ -28,7 +28,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Quarantine policies (formerly known as _quarantine tags_) in Exchange Online Protection (EOP) and Microsoft Defender for Office 365 allow admins to control what users are able to do to quarantined messages based on why the message was quarantined.
+Quarantine policies (formerly known as _quarantine tags_) in Exchange Online Protection (EOP) and Microsoft Defender for Office 365 allow admins to control what users are able to do to quarantined messages based on why the message was quarantined. This feature is available in all Microsoft 365 organizations with Exchange Online mailboxes.
 
 Traditionally, users have been allowed or denied levels of interactivity for quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined by anti-spam filtering as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
 
@@ -626,11 +626,7 @@ For detailed syntax and parameter information, see [Remove-QuarantinePolicy](/po
 
 ## System alerts for quarantine release requests
 
-By default, the default alert policy named **User requested to release a quarantined message** automatically generates an informational alert and sends notification messages to members of the following role groups whenever a user requests the release of a quarantined message:
-
-- Quarantine Administrator
-- Security Administrator
-- Organization Management (global administrator)
+By default, the default alert policy named **User requested to release a quarantined message** automatically generates an informational alert and sends notification to Organization Management (global administrator) whenever a user requests the release of a quarantined message:
 
 Admins can customize the email notification recipients or create a custom alert policy for more options.
 

@@ -11,9 +11,11 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -24,6 +26,8 @@ description: "Content explorer allows you to natively view labeled items."
 # Get started with content explorer
 
 Content explorer allows you to natively view the items that were summarized on the overview page.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites
 
@@ -69,14 +73,14 @@ A Global admin, can assign the necessary Content Explorer List Viewer, and Conte
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that are in preview. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that are in preview. To learn more, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
@@ -140,6 +144,10 @@ You can search on:
 |text at the beginning of file name| `RES`|
 |text after an underscore character ( _ ) in file name|`Resume` or `1234`| 
 |file extension|`txt`|
+
+## Provide match/not a match accuracy feedback in content explorer
+
+You can view the number of matches a SIT or trainable classifier has in **Content explorer**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your classifiers. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
 
 
 ## See also

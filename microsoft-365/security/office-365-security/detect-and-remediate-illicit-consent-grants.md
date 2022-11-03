@@ -6,10 +6,10 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
 - o365_security_incident_response
-- M365-security-compliance
+- m365-security
 ms.date: 07/28/2022
 ms.localizationpriority: medium
 search.appverid:
@@ -17,8 +17,8 @@ search.appverid:
 description: Learn how to recognize and remediate the illicit consent grants attack in Microsoft 365.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Detect and Remediate Illicit Consent Grants
 
@@ -154,14 +154,6 @@ After you have identified an application with illicit permissions, you have seve
 - You can also disable sign-in for the affected account altogether, which will in turn disable app access to data in that account. This isn't ideal for the end user's productivity, of course, but if you are working to limit impact quickly, it can be a viable short-term remediation.
 
 - You can turn integrated applications off for your tenancy. This is a drastic step that disables the ability for end users to grant consent on a tenant-wide basis. This prevents your users from inadvertently granting access to a malicious application. This isn't strongly recommended as it severely impairs your users' ability to be productive with third party applications. You can do this by following the steps in [Turning Integrated Apps on or off](../../admin/misc/user-consent.md).
-
-## Secure Microsoft 365 like a cybersecurity pro
-
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users. Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
-
-- Tasks to accomplish in the first 30 days. These have immediate effect and are low-impact to your users.
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
-- Beyond 90 days. These enhancements build in your first 90 days work.
 
 ## See also
 

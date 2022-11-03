@@ -6,14 +6,16 @@ author: alekyaj
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.prod: m365-security
+ms.topic: conceptual
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+- m365-security
+- tier2
 ms.custom: migrationguides
 ms.date: 07/19/2022
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Migrating servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud

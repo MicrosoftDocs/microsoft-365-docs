@@ -4,8 +4,8 @@ description: This article describes the prerequisites you need to meet to use Ze
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.prod: m365-security
-ms.topic: article
+ms.service: microsoft-365-security
+ms.topic: conceptual
 audience: Admin
 f1.keywords: 
   - NOCSH
@@ -15,11 +15,13 @@ ms.custom:
   - goldenconfig
 ms.collection: 
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
-ms.technology: mdo
+  - highpri
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Prerequisite work for implementing Zero Trust identity and device access policies

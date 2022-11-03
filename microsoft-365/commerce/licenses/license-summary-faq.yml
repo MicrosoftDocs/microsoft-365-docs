@@ -8,8 +8,11 @@ metadata:
   ms.date: 03/10/2021
   audience: Admin
   ms.topic: article
-  ms.service: o365-administration
+  ms.service: microsoft-365-business
   ms.custom: commerce_vl
+  ms.collection: 
+  - Tier2
+  - scotvorg
   ms.localizationpriority: medium
   description: "Frequently asked questions about Microsoft 365 admin center license contracts."
 
@@ -52,7 +55,7 @@ sections:
           - You're listed as a contact for the agreements in a legal Volume Licensing Program form. Contact types include Primary Contact, Notices Correspondent, Online Access Contact, Software Assurance Manager, Online Services Manager, or Subscriptions Manager.
           - You're Administrator with access to the agreements.
 
-          For more information about VL permission roles and their allowable actions, see the [Permissions FAQ](https://docs.microsoft.com/licensing/permissions-faq).
+          For more information about VL permission roles and their allowable actions, see the [Permissions FAQ](/licensing/permissions-faq).
 
       - question: |
           How long does it take for new license orders to appear in the contracts list?
@@ -163,5 +166,4 @@ sections:
       - question: |
           Contact Assisted Support
         answer: |
-         Customers can also [Contact Us](https://docs.microsoft.com/licensing/contact-us) by phone or by Web Form. Microsoft responds to Web Form submissions within 24 hours.
-
+         Customers can also [Contact Us](/licensing/contact-us) by phone or by Web Form. Microsoft responds to Web Form submissions within 24 hours.

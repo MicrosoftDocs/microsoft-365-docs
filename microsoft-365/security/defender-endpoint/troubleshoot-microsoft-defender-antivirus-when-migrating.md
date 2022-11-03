@@ -2,18 +2,21 @@
 title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
 description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
 keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration, microsoft defender antivirus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: martyav
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier1
+search.appverid: met150
 ---
 
 # Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution

@@ -4,12 +4,14 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -26,6 +28,32 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
+## October 2022
+
+### App protection policies
+
+Managed Service Providers (MSPs) can now deploy app protection policies for their managed tenants from within the default baseline in Microsoft 365 Lighthouse, which allows greater protection of the tenants' company data. These policies use Mobile Application Management (MAM) on iOS and Android devices to provide the most secure protection for company data.
+
+### Device health monitoring
+
+We've added a new deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, Endpoint analytics in Microsoft Endpoint Manager will be able to analyze device data and can recommend software, help improve startup performance, and fix common support issues.
+
+For more information, see [What is Endpoint analytics?](/mem/analytics/overview).
+
+## September 2022
+
+### Fully automated setup of Microsoft Defender for Business
+
+We've added a fully automated step to the default baseline that helps you set up your customer tenants with Microsoft Defender for Business. This step automatically provisions your tenant for Microsoft Defender for Business and automatically onboards Intune-enrolled devices to Microsoft Defender for Business.
+
+### Capability to filter the Multifactor Authentication (MFA) list to show relevant user accounts
+
+The Multifactor Authentication page now supports filtering the user account list by account type (such as by Admin, Member, or Guest). You can also exclude other accounts from the list, like service accounts or emergency access accounts. To access this functionality, go to **Users** > **Multifactor authentication**, select a tenant from the list to open the tenant details pane, and then select the **Users not registered for MFA** tab. These filtering and exclusion capabilities help you focus on relevant user accounts. 
+
+### Capability to act on security incidents and alerts
+
+You can now act on the incidents and alerts shown on the **Device security** > **Incidents and alerts** page. The actions currently supported include assigning the incident or alert to yourself or resolving the incident or alert. 
+
 ## August 2022
 
 ### View and manage inactive user accounts 
@@ -37,18 +65,6 @@ Microsoft 365 Lighthouse now provides a list of all the inactive user accounts i
 We've added a Microsoft Edge policy deployment task to the default baseline. This deployment task allows you to secure your customer tenant's browsers with Edge security settings, which include built-in protection against phishing and malware. Microsoft Edge has been proven to be more secure than Google Chromium for small- and medium-sized businesses with devices running Windows 10 or later.
 
 For more information, see [Microsoft Edge security for your business](/deployedge/ms-edge-security-for-business).
-
-### Deployment status reporting 
-
-Microsoft 365 Lighthouse now provides a deployment status for each deployment plan to help you optimize and prioritize your deployment efforts accordingly.
-
-### Enhanced deployment insights for licensing
-
-Microsoft 365 Lighthouse now provides insights around which deployment tasks can't be completed for which users due to insufficient licensing. These insights help you adjust the licensing or the deployment plan accordingly to complete your deployment plan.
-
-### Enhanced baseline deployment with direct links to existing configurations
-
-We've enhanced the baseline deployment experience to make it faster and easier to ensure your customer tenants are healthy and secure. We've added links to detected customer tenant configurations, so you can easily find, review, and modify these tenant configurations in the applicable management portal.
 
 ## July 2022
 

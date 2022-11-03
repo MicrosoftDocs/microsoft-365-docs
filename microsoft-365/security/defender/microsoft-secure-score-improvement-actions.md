@@ -2,26 +2,26 @@
 title: Assess your security posture through Microsoft Secure Score
 description: Describes how to take action to improve your Microsoft Secure Score in the Microsoft 365 Defender portal.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
-ms.topic: article
+- m365-security
+- tier2
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.technology: m365d
 ---
 
 # Assess your security posture with Microsoft Secure Score

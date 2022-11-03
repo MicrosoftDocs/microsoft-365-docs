@@ -7,9 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -78,6 +81,16 @@ If you found this video helpful, check out the [complete training series for sma
 
 We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. Less work for you! To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
 
+## Resend user password
+  
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+
+2. On the **Active users** page, select the user and then select **Reset password**.
+
+3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.  
+
+4. Enter an email address the user can get to, so they receive the new password, and follow up with them to make sure they got it.
+
 ## Reset my admin password
 
 Use these steps if you forgot your password but you're able to sign in to Microsoft 365 because, for example, your password is saved in your browser:
@@ -125,6 +138,24 @@ For overview information, see [Manage Microsoft 365 with PowerShell](../../enter
 ## Force a password change for all users in your business
 
 Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password change for all users in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
+
+## Set strong passwords
+
+1. [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+2. Using PowerShell, you can turn off strong password requirements for all users with the following command:
+
+    ```powershell
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+
+3. You can turn **OFF** strong password requirements for specific users with this command:
+
+    ```powershell
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    ```
+
+> [!NOTE]
+> The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: user@contoso.com.
   
 ## I don't have a Microsoft 365 for business subscription
 

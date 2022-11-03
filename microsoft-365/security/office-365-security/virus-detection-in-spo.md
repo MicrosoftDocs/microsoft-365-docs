@@ -16,11 +16,11 @@ search.appverid:
   - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Learn about how SharePoint Online detects viruses in files that users upload and prevents users from downloading or syncing the files.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams
@@ -34,11 +34,11 @@ ms.prod: m365-security
 Microsoft 365 uses a common virus detection engine for scanning files that users upload to SharePoint Online, OneDrive, and Microsoft Teams. This protection is included with all subscriptions that include SharePoint Online, OneDrive, and Microsoft Teams.
 
 > [!IMPORTANT]
-> The built-in anti-virus capabilities are a way to help contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to investigate and implement anti-malware protection at various layers and apply best practices for securing their enterprise infrastructure. For more information about strategies and best practices, see [Security roadmap](security-roadmap.md).
+> The built-in anti-virus capabilities are a way to help contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to investigate and implement anti-malware protection at various layers and apply best practices for securing their enterprise infrastructure. 
 
 ## What happens if an infected file is uploaded to SharePoint Online?
 
-The Microsoft 365 virus detection engine runs asynchronously (independent from file uploads) within SharePoint Online. **All files are not automatically scanned**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged. In April 2018, we removed the 25 MB limit for scanned files.
+The Microsoft 365 virus detection engine scans files asynchronously (at some time after upload). If a file has not yet been scanned by the asynchronous virus detection process, and a user tries to download the file from the browser or from Teams, a scan on download is triggered by SharePoint before the download is allowed. **All file types are not automatically scanned**. Heuristics determine the files to scan. When a file is found to contain a virus, the file is flagged. 
 
 Here's what happens:
 
@@ -54,7 +54,7 @@ By default, users can download infected files from SharePoint Online. Here's wha
 1. In a web browser, a user tries to download a file from SharePoint Online that happens to be infected.
 2. The user is shown a warning that a virus has been detected in the file. The user is given the option to proceed with the download and attempt to clean it using anti-virus software on their device.
 
-To change this behavior so users can't download infected files, even from the anti-virus warning window, admins can use the *DisallowInfectedFileDownload* parameter on the **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet in SharePoint Online PowerShell. The value $true for the *DisallowInfectedFileDownload* parameter completely blocks access to detected/bocked files for users.
+To change this behavior so users can't download infected files, even from the anti-virus warning window, admins can use the *DisallowInfectedFileDownload* parameter on the **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet in SharePoint Online PowerShell. The value $true for the *DisallowInfectedFileDownload* parameter completely blocks access to detected/blocked files for users.
 
 For instructions, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 

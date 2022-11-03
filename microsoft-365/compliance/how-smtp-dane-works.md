@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 description: "Learn how SMTP DNS-based Authentication of Named Entities (DANE) works to secure email communications between mail servers."
 ---
 
@@ -25,6 +25,8 @@ DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) uses the presence 
 Once the MX, A/AAAA and DNSSEC-related resource records for a domain are returned to the DNS recursive resolver as DNSSEC authentic, the sending mail server will ask for the TLSA record corresponding to the MX host entry or entries. If the TLSA record is present and proven authentic using another DNSSEC check, the DNS recursive resolver will return the TLSA record to the sending mail server.
 
 After receiving the authentic TLSA record, the sending mail server establishes an SMTP connection to the MX host associated with the authentic TLSA record. The sending mail server will try to set up TLS and compare the server's TLS certificate with the data in the TLSA record to validate that the destination mail server connected to the sender is the legitimate receiving mail server. The message will be transmitted (using TLS) if authentication succeeds. When authentication fails or if TLS isn't supported by the destination server, Exchange Online will retry the entire validation process beginning with a DNS query for the same destination domain again after 15 minutes, then 15 minutes after that, then every hour for the next 24 hours. If authentication continues to fail after 24 hours of retrying, the message will expire and an NDR with error details will be generated and sent to the sender.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What are the components of DANE?
 
@@ -103,9 +105,9 @@ There are only two scenarios where an SMTP DANE failure will result in the email
 |Technology|Additional Information|
 |---|---|
 |**Mail Transfer Agent - Strict Transport Security (MTA-STS)** helps thwart downgrade and Man-in-the-Middle attacks by providing a mechanism for setting domain policies that specify whether the destination email server supports TLS and what to do when TLS can't be negotiated, for example stop the transmission.|More information about Exchange Online's upcoming support for inbound and outbound MTA-STS will be published later this year. <br/><br/> [Exchange Online Transport News from Microsoft Ignite 2020 - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699) <br/><br/> [rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461)|
-|**Sender Policy Framework (SPF)** uses IP information to ensure that destination email systems trust messages sent from your custom domain.|[How Sender Policy Framework (SPF) prevents spoofing - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
-|**DomainKeys Identified Mail (DKIM)** uses X.509 certificate information to ensure that destination email systems trust messages sent outbound from your custom domain.|[How to use DKIM for email in your custom domain - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
-|**Domain-based Message Authentication, Reporting, and Conformance (DMARC)** works with Sender Policy Framework and DomainKeys Identified Mail to authenticate mail senders and ensure that destination email systems trust messages sent from your domain.|[Use DMARC to validate email, setup steps - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
+|**Sender Policy Framework (SPF)** uses IP information to ensure that destination email systems trust messages sent from your custom domain.|[How Sender Policy Framework (SPF) prevents spoofing](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
+|**DomainKeys Identified Mail (DKIM)** uses X.509 certificate information to ensure that destination email systems trust messages sent outbound from your custom domain.|[How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
+|**Domain-based Message Authentication, Reporting, and Conformance (DMARC)** works with Sender Policy Framework and DomainKeys Identified Mail to authenticate mail senders and ensure that destination email systems trust messages sent from your domain.|[Use DMARC to validate email, setup steps](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
 
 ## Troubleshooting Sending Emails with SMTP DANE
 

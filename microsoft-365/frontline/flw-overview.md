@@ -6,13 +6,15 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: admin
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
+  - highpri
   - m365solution-overview
   - m365solution-frontline
+  - highpri
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
@@ -86,8 +88,8 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 |Capability |License availability |
 |-----------|---------------------|
-|[Introduction to security in Microsoft 365](/learn/modules/security-in-m365/) |Enterprise, F1, F3 |
-|[Introduction to compliance tools in Microsoft 365](/learn/modules/compliance-in-m365/) |Enterprise, F1, F3 |
+|[Introduction to security in Microsoft 365](/training/modules/security-in-m365/) |Enterprise, F1, F3 |
+|[Introduction to compliance tools in Microsoft 365](/training/modules/compliance-in-m365/) |Enterprise, F1, F3 |
 |[Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks) |Enterprise, available as an add-on for F3 |
 
 ### Simplify deployment and management at scale
@@ -95,7 +97,7 @@ Safeguard your business with best-in-class security and compliance features. Mic
 |Capability |License availability |
 |-----------|---------------------|
 |[Frontline worker onboarding wizard](flw-onboarding-wizard.md) |Enterprise, F1, F3 |
-|[Deploy Teams at scale](deploy-teams-at-scale.md) |Enterprise, F1, F3 |
+|[Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md) |Enterprise, F1, F3 |
 |[Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) |Enterprise, F1, F3 |
 
 ### Secure endpoints and apps across device types and operating systems

@@ -3,7 +3,7 @@ title: Recommended Microsoft Defender for Cloud Apps policies for SaaS apps - Mi
 description: Describes recommended policies for integration with Microsoft Defender for Cloud Apps.
 author: BrendaCarter
 manager: laurawi
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 ms.author: bcarter
 ms.date: 03/22/2021
@@ -13,10 +13,11 @@ ms.custom:
 - goldenconfig
 ms.collection:
 - M365-identity-device-management
-- M365-security-compliance
+- m365-security
 - zerotrust-solution
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Recommended Microsoft Defender for Cloud Apps policies for SaaS apps

@@ -15,11 +15,11 @@ search.appverid:
   - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn about the types of email addresses that are accepted or rejected by Exchange Online Protection (EOP) and Outlook.com to help prevent phishing.
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # How EOP validates the From address to prevent phishing
@@ -53,7 +53,7 @@ The From address is defined in detail across several RFCs (for example, RFC 5322
 
 - **Display Name**: An optional phrase that describes the owner of the email address.
 
-  - We recommend that you always enclose the display name in double quotation marks (") as shown. If the display name contains a comma, you _must_ enclose the string in double quotation marks per RFC 5322.
+  - We recommend that you always enclose the display name in double quotation marks (") as shown. If the display name contains a comma, you *must* enclose the string in double quotation marks per RFC 5322.
   - If the From address includes a display name, the EmailAddress value must be enclosed in angle brackets (< >) as shown.
   - Microsoft strongly recommends that you insert a space between the display name and the email address.
 
@@ -85,6 +85,8 @@ The following From email addresses are valid:
 - `From: Microsoft 365 <sender@contoso.com>` (Not recommended because the display name is not enclosed in double quotation marks.)
 
 The following From email addresses are invalid:
+
+- `From: <firstname lastname@contoso.com>` (The email address contains a space.)
 
 - **No From address**: Some automated messages don't include a From address. In the past, when Microsoft 365 or Outlook.com received a message without a From address, the service added the following default From: address to make the message deliverable:
 

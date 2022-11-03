@@ -12,30 +12,40 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: 
-- m365-security-compliance
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
+- tier1
 ---
 
 # Learn about and configure insider risk management browser signal detection
 
-Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following activities are performed by in-scope policy users when using these browsers:
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
+Web browsers are often used by users to access both sensitive and non-sensitive files within an organization. Insider risk management allows your organization to detect and act on browser exfiltration signals for all non-executable files viewed in [Microsoft Edge](https://www.microsoft.com/edge) and [Google Chrome](https://www.google.com/chrome) browsers. With these signals, analysts and investigators can quickly act when any of the following risk activities are performed by in-scope policy users when using these browsers:
 
 - Files copied to personal cloud storage
 - Files printed to local or network devices
 - Files transferred or copied to a network share
 - Files copied to USB devices
+- Browsing risky websites
+- Browsing potentially risky websites
 
 Signals for these events are detected in Microsoft Edge using built-in browser capabilities and using the *Microsoft Compliance Extension* add-on. In Google Chrome, customers use the *Microsoft Compliance Extension* for signal detection.
 
-The following table summarizes detected activities and extension support for each browser:
+The following table summarizes identified risk activities and extension support for each browser:
 
-| **Detected activities**                        | **Microsoft Edge** | **Google Chrome** |
-| ---------------------------------------------- | ------------------ | ----------------- |
-| Files copied to personal cloud storage         | Native             | Extension         |
-| Files printed to local or network devices      | Native             | Extension         |
-| Files transferred or copied to a network share | Extension          | Extension         |
-| Files copied to USB devices                    | Extension          | Extension         |
+| **Detected activities** | **Microsoft Edge** | **Google Chrome** |
+| ----------------------- | ------------------ | ----------------- |
+| Files copied to personal cloud storage | Native  | Extension  |
+| Files printed to local or network devices | Native | Extension |
+| Files transferred or copied to a network share | Extension  | Extension  |
+| Files copied to USB devices | Extension   | Extension    |
+| Browsing risky websites     | Extension   | Extension    |
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Common requirements
 
@@ -47,18 +57,22 @@ Before installing the Microsoft Edge add-on or Google Chrome extension, customer
 
 For specific browser configuration requirements, see the Microsoft Edge and Google Chrome sections later in this article.
 
+## Additional requirements
+
+If you're using policies based on the *Risky browser usage* template, at least one *Browsing indicator* must be selected in **Insider risk management** > **Settings** > **Policy indicators**.
+
 ## Configure browser signal detection for Microsoft Edge
 
 ### Microsoft Edge browser requirements
 
 - Meet the common requirements
-- Microsoft Edge x64, 91.0.864.41 version or higher
-- *Microsoft Compliance Extension* add-on version 1.0.0.44 or higher
+- Latest Microsoft Edge x64, version (91.0.864.41 or higher)
+- Latest *Microsoft Compliance Extension* add-on (1.0.0.44 or higher)
 - Edge.exe is not configured as an unallowed browser
 
 ### Option 1: Basic setup (recommended for testing with Edge)
 
-Use this option to configure single machine selfhost for each device in your organization when testing browser signal detection.
+Use this option to configure a single machine self-host for each device in your organization when testing browser signal detection.
 
 For the basic setup option, complete the following steps:
 
@@ -99,7 +113,7 @@ Devices must be manageable using Group Policies and all [Microsoft Edge Administ
 Complete the following steps to add the extension:
 
 1. In the **Group Policy Management Editor**, navigate to your Organizational Unit (OU).
-2. Expand the following path **Computer/User configuration** \> **Policies** \> **Administrative templates** \> **Classic administrative templates** \> **Microsoft Edge** \> **Extensions**. This path may vary depending on the configuration for your organization.
+2. Expand the following path **Computer/User configuration** \> **Policies** \> **Administrative templates** \> **Classic administrative templates** \> **Microsoft Edge** \> **Extensions**. This path may vary depending on the configuration of your organization.
 3. Select **Configure which extensions are installed silently.**
 4. Right-click and select **Edit**.
 5. Check the **Enabled** radio button.
@@ -115,12 +129,12 @@ Insider risk management browser signal detection support for Google Chrome is en
 
 - Meet common requirements
 - Latest version of Google Chrome x64
-- *Microsoft Compliance Extension* version 2.0.0.183 or higher
+- Latest *Microsoft Compliance Extension* version (2.0.0.183 or higher)
 - Chrome.exe is not configured as an unallowed browser
 
 ### Option 1: Basic setup (recommended for testing with Chrome)
 
-Use this option to configure single machine selfhost for each device in your organization when testing browser signal detection.
+Use this option to configure single machine self-host for each device in your organization when testing browser signal detection.
 
 For the basic setup option, complete the following steps:
 
@@ -130,8 +144,8 @@ For the basic setup option, complete the following steps:
 Get-Item -path "HKLM:\\SOFTWARE\\Microsoft\\Windows Defender\\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
 ```
 
->[!Important]
->These registry keys are required to ensure proper functionality of the extension. You must enable these registry keys before testing any signals.*
+> [!Important]
+> These registry keys are required to ensure proper functionality of the extension. You must enable these registry keys before testing any signals.*
 
 **Step 2: Install the *Microsoft Compliance Extension***
 

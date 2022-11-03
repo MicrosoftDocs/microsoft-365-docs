@@ -10,7 +10,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.topic: article
 ms.custom: admindeeplinkMAC
 search.appverid:
@@ -73,11 +74,13 @@ There are two different methods for automatically applying a sensitivity label t
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email when the sender is from your own organization. When the sender is outside your organization, you can specify a Rights Management owner for incoming email that's labeled and encrypted by your policy.
     - If the label is configured to apply [dynamic markings](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), be aware that for incoming email, this configuration can result in displaying the names of people outside your organization.
 
-> [!TIP]
+> [!NOTE]
 > For some new customers, we're offering the automatic configuration of default auto-labeling settings for both client-side labeling and service-side labeling. Even if you're not eligible for this automatic configuration, you might find it useful to reference their configuration. For example, you can manually configure existing labels and create your own auto-labeling policies with the same settings to help accelerate your labeling deployment.
 > 
 > For more information, see [Default labels and policies for Microsoft Purview Information Protection](mip-easy-trials.md).
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Compare auto-labeling for Office apps with auto-labeling policies
 
@@ -87,7 +90,7 @@ Use the following table to help you identify the differences in behavior for the
 |:-----|:-----|:-----|
 |App dependency|Yes ([minimum versions](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No \* |
 |Restrict by location|No |Yes |
-|Conditions: Trainable classifiers|Yes |No |
+|Conditions: Trainable classifiers|Yes |In preview |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
@@ -103,7 +106,17 @@ Use the following table to help you identify the differences in behavior for the
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
-The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
+The labels are ordered for evaluation according to their position that you specify in the compliance portal: The label positioned first has the lowest position (least sensitive, so lowest priority) and the label positioned last has the highest position (most sensitive, so highest priority). The label with the highest order number is selected.
+
+This behavior is also true for service-side auto-labeling (auto-labeling policies) when sublabels share the same parent label: If, after evaluation and ordering, more than one sublabel from the same parent label meets the auto-labeling conditions, the sublabel with the highest order number is selected and applied.
+
+However, the behavior is a little different for client-side auto-labeling (auto-labeling settings in the label). If multiple sublabels from the same parent label match the conditions:
+
+- If a file is not already labeled, the highest order sublabel that's configured for automatic labeling is always selected, rather than the highest order sublabel that's configured for recommended labeling. If none of these sublabels are configured for automatic labeling but only recommended labeling, the highest order sublabel is selected and recommended.
+
+- If a file is already labeled with a sublabel from the same parent, no action is taken and the existing sublabel remains. This behavior applies even if the existing sublabel was a default label or automatically applied.
+
+For more information about label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
 ## Don't configure a parent label to be applied automatically or recommended
 
@@ -132,8 +145,10 @@ For email auto-labeling policies only, you can select a setting to always overri
 |Existing label |Override with label setting: Auto-labeling for files and emails  |Override with policy: Auto-labeling|
 |:-----|:-----|:-----|
 |Manually applied, any priority|Word, Excel, PowerPoint: No <br /><br> Outlook: No  |SharePoint and OneDrive: No <br /><br> Exchange: No by default, but configurable |
-|Automatically applied or default label from policy, lower priority |Word, Excel, PowerPoint: Yes <br /><br> Outlook: Yes | SharePoint and OneDrive: Yes <br /><br> Exchange: Yes |
+|Automatically applied or default label from policy, lower priority |Word, Excel, PowerPoint: Yes \* <br /><br> Outlook: Yes \* | SharePoint and OneDrive: Yes <br /><br> Exchange: Yes |
 |Automatically applied or default label from policy, higher priority |Word, Excel, PowerPoint: No <br /><br> Outlook: No |SharePoint and OneDrive: No <br /><br> Exchange: No by default, but configurable |
+
+\* There's an [exception for sublabels that share the same parent label](#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label)
 
 The configurable setting for email auto-labeling policies is on the **Additional settings for email** page. This page displays after you've selected a sensitivity label for an auto-labeling policy that includes the Exchange location.
 
@@ -157,7 +172,7 @@ When this sensitivity label is automatically applied, the user sees a notificati
 
 ### Configuring sensitive info types for a label
 
-When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personal information, such as credit card numbers, social security numbers, or passport numbers:
+When you select the **Sensitive info types** option, you see the same list of [sensitive information types](sensitive-information-type-learn-about.md) as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personal information, such as credit card numbers, social security numbers, or passport numbers:
 
 ![Sensitive info types for auto-labeling in Office apps.](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -330,9 +345,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
 
-    The rules use conditions that include sensitive information types and sharing options:
-    - For sensitive information types, you can select both built-in and custom sensitive information types.
-    - For the shared options, you can choose **only with people inside my organization** or **with people outside my organization**.
+    The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), and sharing options:
+    - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
+    - To select sharing options as a condition, under **Content is shared**, choose either **only with people inside my organization** or **with people outside my organization**.
 
     If your location is **Exchange** and you selected **Advanced rules**, there are other conditions that you can select:
     - Sender IP address is

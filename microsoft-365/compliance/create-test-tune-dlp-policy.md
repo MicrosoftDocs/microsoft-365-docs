@@ -11,8 +11,9 @@ f1_keywords:
 - 'ms.o365.cc.NewPolicyFromTemplate'
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- tier1 
+- purview-compliance
 search.appverid: 
 - MET150
 ms.custom:
@@ -30,6 +31,8 @@ DLP examines email messages and files for sensitive information, like a credit c
 - Log the event for auditing purposes
 - Display a warning to the end user who is sending the email or sharing the file
 - Actively block the email or file sharing from taking place
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Permissions
 
@@ -53,14 +56,14 @@ These permissions are required to create and apply a DLP policy not to enforce p
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that are in preview. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that are in preview. To learn more, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
