@@ -165,13 +165,14 @@ When selected, you can choose to apply the **Quarantine file** action on files i
 
 
 #### Actions on users
-When selected, the user action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. 
+When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. This action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](/azure/active-directory/identity-protection/overview-identity-protection). 
 
-The **Mark user as compromised**  action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](/azure/active-directory/identity-protection/overview-identity-protection).
-Select **Disable user** to temporarily prevent a user from logging in, or **Force password reset** to prompt the user to change their password on the next sign in session.
+Select **Disable user** to temporarily prevent a user from logging in, or **Force password reset** to prompt the user to change their password on the next sign in session. Both **Disable user** and **Force password reset** require the user SID, which are in the columns `AccountSid`, `InitiatingProcessAccountSid`, `RequestAccountSid`, and `OnPremSid`.    
 
 #### Actions on emails
-If the custom detection yields email messages, you can select either **Move to mailbox folder** to move the email to a specific folder, or **Delete email** to delete the email.
+If the custom detection yields email messages, you can select **Move to mailbox folder** to move the email to  a selected folder (any of **Junk**, **Inbox**, or **Deleted items** folders).    
+
+Alternatively, you can select **Delete email** and then choose to either move the emails to Deleted Items (**Soft delete**) or delete the selected emails permanently (**Hard delete**).
 
 
 ### 5. Set the rule scope.
