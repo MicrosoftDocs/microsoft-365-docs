@@ -40,7 +40,7 @@ A single tenant can have a maximum of 10,000 policies (any configuration). This 
 - Auto-labeling policies for SharePoint and OneDrive, unless they are for cloud attachments.
 - Published label policies for SharePoint and OneDrive that delete-only, rather than retain-only, or retain and then delete.
 - Exchange retention policies from [messaging records management (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management).
-- Litigation holds
+- Litigation holds.
 
 Within this 10,000 policies limit, there are also some limits on the maximum number of policies for retention per workload:
 
