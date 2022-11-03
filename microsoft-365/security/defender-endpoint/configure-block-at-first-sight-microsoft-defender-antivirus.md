@@ -59,7 +59,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 ## A few things to know about block at first sight
 
-- In Windows 10, version 1803 or later, block at first sight can block non-portable executable files (such as JS, VBS, or macros) and executable files.
+- Block at first sight can block non-portable executable files (such as JS, VBS, or macros) and executable files, running the latest Defender antimalware platform for Windows workstation or server.
 
 - Block at first sight only uses the cloud protection backend for executable files and non-portable executable files that are downloaded from the Internet, or that originate from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if the file is a previously undetected file.
 
