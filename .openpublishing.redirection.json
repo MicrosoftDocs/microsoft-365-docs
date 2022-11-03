@@ -9158,7 +9158,7 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/defender-endpoint-trial-playbook.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/defender-endpoint-trial-user-guide",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
