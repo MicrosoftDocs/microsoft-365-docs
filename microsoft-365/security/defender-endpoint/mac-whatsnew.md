@@ -39,9 +39,9 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 **Known issues**
 
 Apple has identified an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), and expected to be fixed in the next release.
-The issue impacts Microsoft for endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
+The issue impacts Microsoft Defender for endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
 
-> To mitigate the risk with this issue, make sure that [Microsoft for Endpoint has Full Disk Access Authorization](mac-install-manually.md).
+> To mitigate the risk with this issue, make sure that [Microsoft Defender for Endpoint has Full Disk Access Authorization](mac-install-manually.md).
 
 
 <details>
