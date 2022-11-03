@@ -33,7 +33,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Policy timeframes](#policy-timeframes)
 - [Intelligent detections](#intelligent-detections)
 - [Export alerts](#export-alerts)
-- [Priority user groups (preview)](#priority-user-groups-preview)
+- [Priority user groups](#priority-user-groups)
 - [Priority physical assets (preview)](#priority-physical-assets-preview)
 - [Power Automate flows (preview)](#power-automate-flows-preview)
 - [Microsoft Teams (preview)](#microsoft-teams-preview)
@@ -355,15 +355,15 @@ To use the APIs to review insider risk alert information:
 
 ![Insider risk management export alert settings.](../media/insider-risk-settings-export.png)
 
-Alert information contains information from the security and compliance alert schema and the Office 365 Management Activity API common schema.
+Alert information contains information from the Security and Compliance Alerts schema and the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema.md#security-and-compliance-alerts-schema) common schema.
 
-The following fields and values are exported for insider risk management alerts for the Security & Compliance alert schema:
+The following fields and values are exported for insider risk management alerts for the Security and Compliance Alerts schema:
 
 | **Alert parameter** | **Description** |
 |:------------------|:----------------|
 | AlertType | Type of the alert is *Custom*.  |
 | AlertId | The GUID of the alert. Insider risk management alerts are mutable. As alert status changes, a new log with the same AlertID is generated. This AlertID can be used to correlate updates for an alert. |
-| Category | The category of the alert is *InsiderRiskManagement*. This category can be used to distinguish from these alerts from other Security & Compliance alerts. |
+| Category | The category of the alert is *InsiderRiskManagement*. This category can be used to distinguish from these alerts from other security and compliance alerts. |
 | Comments | Default comments for the alert. Values are *New Alert* (logged when an alert is created) and *Alert Updated* (logged when there's an update to an alert). Use the AlertID to correlate updates for an alert. |
 | Data | The data for the alert, includes the unique user ID, user principal name, and date and time (UTC) when user was triggered into a policy. |
 | Name | Policy name for insider risk management policy that generated the alert. |
@@ -371,7 +371,7 @@ The following fields and values are exported for insider risk management alerts 
 | Severity | The severity of the alert. Values are *High*, *Medium*, or *Low*. |
 | Source | The source of the alert. The value is *Office 365 Security & Compliance*. |
 | Status | The status of the alert. Values are *Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), *Resolved* (*Resolved* in insider risk), *Dismissed* (*Dismissed* in insider risk). |
-| Version | The version of the security and compliance alert schema. |
+| Version | The version of the Security and Compliance Alerts schema. |
 
 The following fields and values are exported for insider risk management alerts for the [Office 365 Management Activity API common schema](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
 
@@ -384,7 +384,7 @@ The following fields and values are exported for insider risk management alerts 
 - UserType
 - UserKey
 
-## Priority user groups (preview)
+## Priority user groups
 
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. Prioritizing the examination and scoring of the activities of these users can help alert you to potential risks that may have higher consequences for your organization. Priority user groups in insider risk management help define the users in your organization that need closer inspection and more sensitive risk scoring. Coupled with the *Security policy violations by priority users* and *Data leaks by priority users* policy templates, users added to a priority user group have an increased likelihood of insider risk alerts and alerts with higher severity levels.
 
@@ -401,8 +401,8 @@ To create a new priority user group, use the setting controls in the **Insider r
 Complete the following steps to create a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
-3. On the **Priority user groups (preview)** page, select **Create priority user group** to start the group creation wizard.
+2. Select the **Priority user groups** page.
+3. On the **Priority user groups** page, select **Create priority user group** to start the group creation wizard.
 4. On the **Name and describe** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the priority user group. You can't change the name of the priority user group after you complete the wizard.
     - **Description (optional)**: Enter a description for the priority user group.
@@ -421,7 +421,7 @@ To update an existing priority user group, you'll use setting controls in the **
 Complete the following steps to edit a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
+2. Select the **Priority user groups** page.
 3. Select the priority user group you want to edit and select **Edit group**.
 4. On the **Name and describe** page, update the Description field if needed. You can't update the name of the priority user group. Select **Next** to continue.
 5. On the **Choose members** page, add new members to the group using the **Choose members** control. To remove a user from the group, select the 'X' next to the user you wish to remove. Select **Next** to continue.
@@ -440,7 +440,7 @@ To delete an existing priority user group, use setting controls in the **Insider
 Complete the following steps to delete a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
+2. Select the **Priority user groups** page.
 3. Select the priority user group you want to edit and select **Delete** from the dashboard menu.
 4. On the **Delete** dialog, select **Yes** to delete the priority user group or select **Cancel** to return to the dashboard.
 
