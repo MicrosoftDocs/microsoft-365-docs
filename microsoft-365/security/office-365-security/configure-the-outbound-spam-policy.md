@@ -508,4 +508,4 @@ For detailed syntax and parameter information, see [Remove-HostedOutboundSpamFil
 
 [Anti-spam protection FAQ](anti-spam-protection-faq.yml)
 
-[Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md)
+[Auto-forwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)
