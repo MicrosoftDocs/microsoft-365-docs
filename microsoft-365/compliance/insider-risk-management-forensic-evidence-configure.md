@@ -42,12 +42,7 @@ User devices eligible for forensic evidence capturing must be onboarded to the [
 >[!IMPORTANT]
 >The Microsoft Purview Client automatically collects general diagnostic data related to device configuration and performance metrics. This includes data on critical errors, RAM consumption, process failures, and other data. This data helps us assess the client's health and identify any issues. For more details about how diagnostic data may be used, see the Use of Software with Online Services on the [Microsoft Product Terms](https://www.microsoft.com/licensing/product-licensing/products).
 
-Visual captures in forensic evidence are supported for the following devices/configurations:
-
-- Latest Windows 10 or Windows 11 x64 build
-- A maximum of 4 monitors per device
-
-To onboard devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article.
+For a list of device and configuration requirements, see [Learn about forensic evidence (preview)](insider-risk-management-forensic-evidence.md#device-and-configuration-requirements). To onboard supported devices, complete the steps outlined in the [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview) article. 
 
 To install the Microsoft Purview Client, complete the following steps:
 

@@ -66,7 +66,7 @@ For configuration steps, see:
 
 - [Microsoft OneDrive LTI with Canvas](onedrive-lti.md).
 - [Microsoft OneDrive LTI with Blackboard](onedrive-lti-blackboard.md).
-- [Microsoft OneDrive LTI with Schoology](onedrive-lti-schoology.md).
+- [Microsoft OneDrive LTI with Schoology Learning](onedrive-lti-schoology.md).
 - [Microsoft OneDrive LTI with D2L Brightspace](onedrive-lti-brightspace.md)
 
 ## Teams LTI apps
@@ -81,7 +81,7 @@ For configuration steps, see:
 - [Microsoft Teams Meetings with Moodle](teams-classes-meetings-with-moodle.md).
 - [Microsoft Teams Meetings with Open LMS](open-lms-teams-classes-and-meetings.md).
 - [Microsoft Teams Meetings with Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).
-- [Microsoft Teams Meetings with Schoology](teams-classes-and-meetings-with-schoology.md).
+- [Microsoft Teams Meetings with Schoology Learning](teams-classes-and-meetings-with-schoology.md).
 - [Microsoft Teams Meetings LTI with any LTI 1.3 compliant LMS](integrate-with-other-lms.md).
 
 ### Teams Classes LTI
