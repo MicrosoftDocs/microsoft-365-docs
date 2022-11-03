@@ -214,7 +214,7 @@ Specifies a process for which all file activity is excluded from scanning. The p
 
 #### Muting Non Exec mounts 
  
-Specifies the behaviour of RTP on mount point marked as noexec. There are two values for setting are:
+Specifies the behavior of RTP on mount point marked as noexec. There are two values for setting are:
 
 - Unmuted (`unmute`): The default value, all mount points are scanned as part of RTP.
 - Muted (`mute`): Mount points marked as noexec are not scanned as part of RTP, these mount point can be created for:
