@@ -64,7 +64,7 @@ Customer data is processed and stored in the employee's Exchange Online mailbox.
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.
 
 ### Whiteboard
-Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](../whiteboard/manage-data-organizations).
+Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/microsoft-365/whiteboard/manage-data-organizations).
 
 ### Yammer
 Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-security-and-compliance/data-residency).
