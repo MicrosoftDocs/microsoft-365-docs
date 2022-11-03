@@ -105,7 +105,7 @@ You can help improve the accuracy of all custom trainable classifiers and by pro
 
 ## Provide match/not a match accuracy feedback in trainable classifiers
 
-You can view the number of matches a trainable classifier has in **Content explorer** and **Trainable lassifiers**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your classifiers. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
+You can view the number of matches a trainable classifier has in **Content explorer** and **Trainable classifiers**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your classifiers. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
 
 
 ## See also
