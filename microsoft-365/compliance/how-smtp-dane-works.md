@@ -134,7 +134,7 @@ navigate to the Microsoft Remote Connectivity Analyzer and perform the DANE vali
 the domain that generated the 4/5.4.312 error. The results will show if it is a DNSSEC issue
 or a different DNS issue.
 
-### Troubleshooting 5.7.321 starttls-not-supported
+### Troubleshooting 4/5.7.321 starttls-not-supported
 
 This usually indicates an issue with the destination mail server. After receiving the message:
 
@@ -142,14 +142,14 @@ This usually indicates an issue with the destination mail server. After receivin
 2. Alert the destination email administrator that you received this error code so they can determine if the destination server is configured correctly to receive messages using TLS.
 3. Retry sending the email and review the Message Trace Details for the message in the Exchange Admin Center portal.
 
-### Troubleshooting 5.7.322 certificate-expired
+### Troubleshooting 4/5.7.322 certificate-expired
 
 A valid X.509 certificate that hasn't expired must be presented to the sending email server. X.509 certificates must be renewed after their expiration, commonly annually. After receiving the message:
 
 1. Alert the destination email administrator that you received this error code and provide the error code string.
 2. Allow time for the destination server certificate to be renewed and the TLSA record to be updated to reference the new certificate. Then, retry sending the email and review the Message Trace Details for the message in the Exchange Admin Center portal.
 
-### Troubleshooting 5.7.323 tlsa-invalid
+### Troubleshooting 4/5.7.323 tlsa-invalid
 
 This error code is related to a TLSA record misconfiguration and can only be generated after a DNSSEC-authentic TLSA record has been returned. There are many scenarios during the DANE validation that occur after the record has been returned that can result in the code being generated. Microsoft is actively working on the scenarios that are covered by this error code, so that each scenario has a specific code. Currently, one or more of these scenarios could cause the generation of the error code:
 
@@ -163,7 +163,7 @@ After receiving the message:
 1. Alert the destination email administrator that you received this error code and provide them the error code string.
 2. Allow time for the destination email admin to review their DANE configuration and email server certificate validity. Then, retry sending the email and review the Message Trace Details for the message in the Exchange Admin Center portal.
 
-### Troubleshooting 5.7.324 dnssec-invalid
+### Troubleshooting 4/5.7.324 dnssec-invalid
 
 This error code is generated when the destination domain indicated it was DNSSEC-authentic but Exchange Online wasn't able to verify it as DNSSEC-authentic.
 
@@ -206,7 +206,7 @@ navigate to the Microsoft Remote Connectivity Analyzer and perform the DANE vali
 the domain that generated the 4/5.4.312 error. The results will show if it is a DNSSEC issue
 or a different DNS issue.
 
-### Troubleshooting 5.7.321 starttls-not-supported
+### Troubleshooting 4/5.7.321 starttls-not-supported
 
 > [!NOTE]
 > These steps are for email administrators troubleshooting receiving email from Exchange Online using SMTP DANE.
@@ -225,7 +225,7 @@ After receiving the message:
 5. If it still fails, then try removing the TLSA record and run the test with the Remote Connectivity Analyzer tool again.
 6. If there are no failures, this may indicate the mail server you're using to receive mail doesn't support STARTTLS and you may need to upgrade to one that does in order to use DANE.
 
-### Troubleshooting 5.7.322 certificate-expired
+### Troubleshooting 4/5.7.322 certificate-expired
 
 > [!NOTE]
 > These steps are for email administrators troubleshooting receiving email from Exchange Online using SMTP DANE.
@@ -240,7 +240,7 @@ A valid X.509 certificate that hasn't expired must be presented to the sending e
 6. Update the mail server's associated TLSA record with the new certificate's data.
 7. After waiting an appropriate amount of time, retry the test with the Remote Connectivity Analyzer tool.
 
-### Troubleshooting 5.7.323 tlsa-invalid
+### Troubleshooting 4/5.7.323 tlsa-invalid
 
 > [!NOTE]
 > These steps are for email administrators troubleshooting receiving email from Exchange Online using SMTP DANE.
@@ -265,7 +265,7 @@ After receiving the message:
     3. After your provider has verified the purchase, you may download a new certificate.
     4. Install the renewed certificate into its associated mail server.
 
-### Troubleshooting 5.7.324 dnssec-invalid
+### Troubleshooting 4/5.7.324 dnssec-invalid
 
 > [!NOTE]
 > These steps are for email administrators troubleshooting receiving email from Exchange Online using SMTP DANE.
@@ -284,13 +284,13 @@ After receiving the message:
 > [!NOTE]
 > This error code is also generated if Exchange Online receives SERVFAIL response from DNS server on TLSA query for the destination domain.
 
-While sending an outbound email, if the receiving domain has DNSSEC enabled, we query for TLSA records that can be associated with certificates provided by the target server. If no TLSA record is published, we expect a response to the TLSA lookup which is accompanied by NOERROR (no records of requested type for this domain) or NXDOMAIN (there is no such domain) and the message is allowed to be sent using only DNSSEC. If there is no response to the TLSA lookup from the authoritative servers, then we report the lookup type as SERVFAIL and this behavior causes Exchange Online to defer messages with error: 450 4.7.324 dnssec-invalid: Destination domain returned invalid DNSSEC records.
+While sending an outbound email, if the receiving domain has DNSSEC enabled, we query for TLSA records that can be associated with certificates provided by the target server. If no TLSA record is published, the response to the TLSA lookup must be NOERROR (no records of requested type for this domain) or NXDOMAIN (there's no such domain). DNSSEC requires this response if no TLSA is published; otherwise, the domain won't pass the DNSSEC validation and the email won't be sent to the destination domain. If there is no response to the TLSA lookup from the authoritative servers, then Exchange Online considers the lookup result as being SERVFAIL. As a result, the email to the destination domain isn't sent and is deferred with the error: 450 4.7.324 dnssec-invalid: Destination domain returned invalid DNSSEC records.
 
-### If someone trying to send you email reports receiving the message
+### If the email sender reports receipt of the message
 
 If you're using a DNS provider, for example GoDaddy, alert your DNS provider of the error so that they can troubleshoot the DNS response. If you're managing your own DNSSEC infrastructure, it could be an issue with the DNS server itself or with the network.
 
-s## Frequently Asked Questions
+## Frequently Asked Questions
 
 ### As an Exchange Online customer, can I opt out of using DNSSEC and/or DANE?
 
