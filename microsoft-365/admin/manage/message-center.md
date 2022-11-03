@@ -66,10 +66,13 @@ To unsubscribe from Message center emails, see [Unsubscribe from Message center 
 |How can I ensure data privacy notifications are received by the right contacts in my organization?|As a global admin you will receive data privacy messages for your organization. Additionally, you can assign the Message Center Privacy reader role to people who should see data privacy messages. Other admin roles with access to Message Center cannot view data privacy messages.   <br/><br/>For more info, see [Preferences](#preferences) in this article.|
 |Why can’t I see a message that was previously there?|To manage the number of messages within Message center, each message will expire and be removed after a period of time. Generally, messages expire 30 days post the time period outlined in the message body.|
 |
-## Relevance Recommendation 
+
+## Relevance Recommendation
+
 For each message Microsoft will provide a recommendation for how relevant the change is for your tenant. This recommendation is based on multiple factors such as usage of the service in your tenant, changes meant to prevent or fix issue for your tenant vs changes meant to help you plan ahead or stay informed), nature of impact such as data privacy, retirement etc. and whether Microsoft has specifically targeted your tenant for the message.  
 
 There will be three levels of relevance:
+
 - **High** - These are messages about chnages whihc you should act on with urgency to avoid service disruption and stay on top of feature releases with **high potential impact to your organization.** Examples are, significant feature changes, retirements for a service being heavily used by your tenant.
 
 - **Medium** - There are messages about changes which you can focus on next and plan for action at a later date, since these changes are about **services your organization moderately uses.**
@@ -78,22 +81,20 @@ Examples are: changes or new features for a service which is being used by your 
 
 - **Low** - These are messages about changes which you can choose to monitor to stay informed since these may not have any impact on your organization. Examples would be a change or a feature update for a service **which is not being actively used in your organization.**
 
-You will have the capability to provide feedback on it through the feedback experience. This feedback will be used by Microsoft to improve its recommendation in the future. 
+You will have the capability to provide feedback on it through the feedback experience. This feedback will be used by Microsoft to improve its recommendation in the future.
 
 Relevance is a best effort recommendation provided by Microsoft to help you prioritize the changes. It is suggested that you go through all the messages and make the final assessment for your organizational needs.
 
- 1.  Data Privacy messages will be defaulted to High Relevance 
+ 1. Data Privacy messages will be defaulted to High Relevance
 
- 2.  Messages where we don’t yet have usage data for services (eg: M365 suite) will be defaulted to medium relevance. 
-The scores will ONLY be available for the new MC posts. This means the MC posts you already received will not get a relevance recommendation.   
+ 2. Messages where we don’t yet have usage data for services (eg: M365 suite) will be defaulted to medium relevance.
+The scores will ONLY be available for the new MC posts. This means the MC posts you already received will not get a relevance recommendation.
 
-If you see no relevance recommendation (blank) for a post, it means the MC post was published prior to the feature being enabled. 
+If you see no relevance recommendation (blank) for a post, it means the MC post was published prior to the feature being enabled.
 
 If you see “Processing” for a MC post, it means that the score is being computed for this post and should be available soon. You should try to refresh after a few minutes.  
 
- 
 Once you start receiving this, please tell us if a MC post is **not relevant** to you through the **extended feedback.** This feedback is very important for us to improve the accuracy of the relevance recommendations.
-
 
 ## Filter messages
 
@@ -150,7 +151,7 @@ If administration is distributed across your organization, you may not want or n
 
 2. In the **Custom View** tab, make sure that the check box is selected for each service that you want to monitor. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**. 
+3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**.
 
    You can also enter up to two email addresses, separated by a semicolon.
 
@@ -240,7 +241,7 @@ If you want to provide feedback on the message, in the details pane, select eith
 
 If a Message Center post is not relevant for your organization, please provide us feedback using the options demonstrated in the image below. After you click thumbs up/down on the MC post, select "this change isn't relevant to my org."
 
-:::image type="content" source="../../media\message-center-feedbacksection.jpg" alt -text="Message ceneter view of feedback section.":::
+:::image type="content" source="../../media\message-center-feedbacksection.jpg" alt -text="Message center view of feedback section.":::
 
 > [!NOTE]
 > If you're using Microsoft 365 for Government - GCC, Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.
