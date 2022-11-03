@@ -46,9 +46,8 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 
 - There are mutiple fixes and new changes in this release 
-	-V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
-		-Now you can set the temp path for scanning of archive files. Use oemTemporaryPath -  via managed config / wdavcfg if you don’t want engine to use 		    /tmp for scratch work. 
-	- V2 support configuration path for AV definitions. (mdatp definition set path)
+	- V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
+	- V2 engine support configuration path for AV definitions. (mdatp definition set path)
 	- Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
 	- In case crash collection is disabled by configuration, crash monitoring process will not be launched.
 	- Performance fixes to optimally use system events for AV capabilities.
@@ -57,21 +56,27 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **Known issues**
 
-- When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.85.21. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.85.21. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
 
-This should prevent the issue from occurring.
+There are two ways to mitigate the problem in upgrading.
 
 Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
-
+Example:
 ```bash
-sudo apt remove mdatp
+sudo apt purge mdatp
 sudo apt-get install mdatp
 ```
-
-After executing the above, use your package manager to perform the upgrade.
-
+	
 As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
 
+In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade. 
+Caution: Some customers(<1%) are experiencing issues with this method. 
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+	
 </details>
 
 <details>
