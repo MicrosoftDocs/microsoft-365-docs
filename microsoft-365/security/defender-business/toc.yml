@@ -5,7 +5,7 @@
       items:
       - name: What is Microsoft Defender for Business?
         href: mdb-overview.md
-      - name: What's new?
+      - name: What's new in Defender for Business?
         href: ../../business-premium/m365bp-mdb-whats-new.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
       - name: Simplified configuration
         href: mdb-simplified-configuration.md
