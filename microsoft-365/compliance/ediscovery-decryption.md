@@ -65,7 +65,7 @@ eDiscovery doesn't support encrypted files in SharePoint and OneDrive when a sen
 
 For more information about these settings, see the "Configure encryption settings" section in [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md#configure-encryption-settings).
 
-Documents encrypted with the previous settings can still be returned by an eDiscovery search. This may happen when a document property (such as the title, author, or modified date) matches the search criteria. Although these documents might be included in search results, they can't be previewed or reviewed. These documents will also remain encrypted when they're exported in eDiscovery (Premium).
+Documents encrypted with the previous settings can still be returned by an eDiscovery search. This result may happen when a document property (such as the title, author, or modified date) matches the search criteria. Although these documents might be included in search results, they can't be previewed or reviewed. These documents will also remain encrypted when they're exported in eDiscovery (Premium).
 
 > [!IMPORTANT]
 > Decryption isn't supported for files that are locally encrypted and then uploaded to SharePoint or OneDrive. For example, local files that are encrypted by the Azure Information Protection (AIP) client and then uploaded to Microsoft 365 aren't supported. Only files that are encrypted in the SharePoint or OneDrive service are supported for decryption.
@@ -83,7 +83,7 @@ Any rights-protected (RMS-protected) email messages included in the results of a
 - As previously explained, if you enable decryption of RMS-protected messages when you export them, you have to export the search results as individual messages. If you export search results to a PST file, RMS-protected messages will be exported as individual email messages.
 - Messages that are decrypted are identified in the **ResultsLog** report. This report contains a column named **Decode Status**, and a value of **Decoded** identifies the messages that were decrypted.
 - In addition to decrypting file attachments when exporting search results, you can also preview the decrypted file when previewing search results. You can only view the rights-protected email message after you export it.
-- If you need to prevent someone from decrypting RMS-protect messages and encrypted file attachments, you have to create a custom role group (by copying the built-in eDiscovery Manager role group) and then remove the RMS Decrypt management role from the custom role group. Then add the person who you don't want to decrypt messages as a member of the custom role group.
+- If you need to prevent someone from decrypting RMS-protect messages and encrypted file attachments, you have to create a custom role group (by copying the built-in eDiscovery Manager role group), and then remove the RMS Decrypt management role from the custom role group. Then add the person who you don't want to decrypt messages as a member of the custom role group.
 
 ## Notes
 
@@ -97,4 +97,4 @@ Other documents aren't decrypted, including:
 - Documents encrypted with legacy RMS templates and not labeled.
 - Documents with user-defined permissions or with expiration settings (SMIME or other standards).
 
-<sup>3</sup> Only content encrypted with RMS keys hosted in Microsoft 365 is transparently decrypted by Advanced eDiscovery.  Double Key Encryption (DKE), Bring Your Own Key (BYOK), on-premises RMS, etc. aren't supported. For more information, see [Your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key#tenant-root-keys-generated-by-microsoft).
+<sup>3</sup> Only content encrypted with RMS keys hosted in Microsoft 365 is transparently decrypted by eDiscovery (Premium).  Double Key Encryption (DKE), Bring Your Own Key (BYOK), on-premises RMS, etc. aren't supported. For more information, see [Your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key#tenant-root-keys-generated-by-microsoft).
