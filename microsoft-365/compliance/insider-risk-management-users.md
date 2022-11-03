@@ -30,6 +30,7 @@ Learn more about how the Users dashboard displays users in the following scenari
 
 - Users with active insider risk policy alerts
 - Users with triggering events
+- Users identified as potential high impact users or in priority user groups
 - Users added temporarily to policies
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -41,6 +42,24 @@ The **Users dashboard** automatically displays all users with active insider ris
 ## Users with triggering events
 
 The **Users dashboard** automatically displays all users with triggering events, but that don't have an activity risk score that would create an insider risk alert. For example, a user with a reported resignation date is displayed because this activity is a triggering event but isn't an activity that has a risk score. Activities for these users are viewed by selecting the user in the **Users dashboard** and navigating to the **User activity** tab.
+
+## Users identified as potential high impact users
+
+The **Users dashboard** automatically displays all users identified as a potential high impact user. Insider risk management analyzes the following factors when determining whether a user is a potential high impact user:
+
+- **Frequency of accessing sensitive content compared to others in the organization**: This includes content with Microsoft Information Protection sensitive information types and labels, and content configured as priority content.
+
+- **User's level-from-top in organization hierarchy**: The total count of reports for a user based on your organizational hierarchy. Displays if you have organizational hierarchy configured in Azure Active Directory (Azure AD) and Microsoft Sentinel is available for your organization. To learn more about Microsoft Sentinel, see [Identify advanced threats with UEBA in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics).
+
+- **Cumulative reports**: Displays if you have organizational hierarchy configured in Azure AD and Microsoft Sentinel is available for your organization. To learn more about Microsoft Sentinel, see [Identify advanced threats with UEBA in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics).
+
+- **Azure AD out-of-box role memberships**: Displays if an Azure AD member is detected as a potential high impact user. To learn about Azure AD role memberships, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal). 
+
+- If an alert is generated for a user that has been identified as a potential high impact user, then the alert is displayed in the **Risk factors**”** column in the alert. You will then be able to filter for this risk factor. 
+
+- For an alert or case for a user that has been identified as a potential high impact user, then the alert is highlighted in the **User details** section in the alert. Displays additional details about the reasons the user has been identified as a potential high impact user. 
+
+- If a user receives a priority user group booster, the alert displays the actual names of the priority user groups that they are a member of. 
 
 ## Users added temporarily to policies
 
@@ -85,9 +104,9 @@ To view more details about risk activity for a user, open the user details pane 
 
 - **User profile** tab
   - **Name and title**: Name and position title for the user from Azure Active Directory. These user fields will be anonymized or empty if the global anonymization setting for insider risk management is enabled.
-  - **User email**: Email address for the user.
-  - **Alias**: Network alias for the user.
-  - **Organization or department**: Organization or department for the user.
+  - **User details**: Lists whether the user has been identified as a potential high impact user or if the user is in priority user groups. 
+  - **Alert and activity summary**: Lists active user alerts and open cases.
+  - **In scope**: Lists in-scope assignment of the user to policies.
 
 - **User activity** tab
   - **History of recent user activity**: Lists both triggering indicators and insider risk indicators for risk activities up to the last 90 days. All risk activities pertinent to insider risk indicators are also scored, though the activities may or may not have generated an insider risk alert. Triggering indicator examples may be a resignation date or the last scheduled date of work for the user. Insider risk indicators are activities determined to have an element of risk, which may potentially lead to a security incident, and are defined in policies that the user is included in. Event and risk activities are listed with the most recent item listed first.

@@ -213,7 +213,7 @@ To learn more about sequence detection management in the **User activity** view,
 
 With privacy on by default, insider risk indicators help identify unusual levels of risk activities when evaluated daily for users that are in-scope for insider risk policies. Cumulative exfiltration detection uses machine learning models to help you identify when exfiltration activities that a user performs over a certain time exceeds the normal amount performed by users in your organization for the past 30 days over multiple exfiltration activity types. For example, if a user shared more files than most users over the past month, this activity would be detected and classified as a cumulative exfiltration activity.
 
-Insider risk management analysts and investigators may use cumulative exfiltration detection insights to help identify exfiltration activities that may not typically generate alerts but are above what is typical for their organization. Some examples may be departing users slowly exfiltrate data across a range of days, or when users repeatedly share data across multiple channels more than usual for data sharing for your organization.  Higher risk scores are assigned to Cumulative exfiltration activities for SharePoint sites, sensitive information types, and content with [sensitivity labels](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) configured as priority content in a policy or for activity involving labels configured as high priority in Microsoft Purview Information Protection.
+Insider risk management analysts and investigators may use cumulative exfiltration detection insights to help identify exfiltration activities that may not typically generate [alerts](insider-risk-management-activities.md#alert-dashboard) but are above what is typical for their organization. Some examples may be departing users slowly exfiltrate data across a range of days, or when users repeatedly share data across multiple channels more than usual for data sharing for your organization.  Higher risk scores are assigned to Cumulative exfiltration activities for SharePoint sites, sensitive information types, and content with [sensitivity labels](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) configured as priority content in a policy or for activity involving labels configured as high priority in Microsoft Purview Information Protection.
 
 Cumulative exfiltration detection is enabled by default when using the following policy templates:
 
@@ -221,11 +221,21 @@ Cumulative exfiltration detection is enabled by default when using the following
 - Data leaks
 - Data leaks by priority users
 - Data leaks by risky users
+- 
+### Peer groups for cumulative exfiltration detection
+
+Insider risk management identifies three types of peer groups for analyzing exfiltration activity performed by users. Peer groups defined for users are based on the following criteria:
+
+**SharePoint sites**: If your organization does not have Azure Active Directory configured for organizational structure and job titles, then insider risk management identifies peer groups based on common SharePoint sites accessed by a user.
+
+**Similar organization**: Users with reports and team members based on organization hierarchy. If your organization does not use Azure Active Directory to maintain organization hierarchy, then the detection accuracy may be lower. 
+
+**Similar job title**: Users with a combination of organizational distance and similar job titles, and users with the same job title. If your organization does not use Azure Active Directory to maintain job titles, then the detection accuracy may be lower. 
 
 > [!NOTE]
 > Cumulative exfiltration detection uses exfiltration indicators that are enabled in the global settings for insider risk management and exfiltration indicators that are selected in a policy. As such, cumulative exfiltration detection is only evaluated for the necessary exfiltration indicators selected. Cumulative exfiltration activities for [sensitivity labels](sensitivity-labels.md) configured in priority content generate higher risk scores.
 
-When Cumulative exfiltration detection is enabled for data theft or data leak policies, insights from exfiltration activities are displayed on the **User activity** tab within an insider risk management case.
+When cumulative exfiltration detection is enabled for data theft or data leak policies, insights from exfiltration activities are displayed on the **User activity** tab within an insider risk management case.
 
 To learn more about the user activity management, see [Insider risk management cases: User activities](insider-risk-management-cases.md#user-activity). To learn about enabling cumulative exfiltration detection, see [Get started with insider risk management settings](insider-risk-management-settings.md#enable-cumulative-exfiltration-detection).
 

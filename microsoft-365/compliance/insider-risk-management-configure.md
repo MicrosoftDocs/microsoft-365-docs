@@ -205,65 +205,18 @@ A DLP policy is optional when using the following policy templates:
 
 See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
-### Configure priority user groups and potential high impact users
+### Configure priority user groups
 
-Insider risk management includes support for assigning potential high impact users and priority user groups to policies to help identity unique risk activities for user with critical positions, high levels of data and network access, or a past history of potentially risky behavior.
+Insider risk management includes support for assigning priority user groups to policies to help identity unique risk activities for user with critical positions, high levels of data and network access, or a past history of potentially risky behavior.
 
-See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups) article for step-by-step configuration guidance. 
-
-#### Priority user groups
-
-You can create a priority user group and assign users to the group to help you scope policies specific to the unique circumstances presented by these identified users.
+You can create a priority user group and assign users to the group to help you scope policies specific to the unique circumstances presented by these identified users. You can enable the priority user groups risk score booster in the **Policy indicators** section of the Insider risk management settings page. These identified users are more likely to receive [alerts](insider-risk-management-activities.md#alert-dashboard), so analysts and investigators can review and prioritize these users' risk activities.
 
 A priority user group is required when using the following policy templates:
 
 - Security policy violations by priority users
 - Data leaks by priority users
 
-#### Potential high impact users
-
-You can enable the potential high impact user score booster in Insider risk management settings. Once configured, users identified as having a potentially high impact receive a risk score booster. These identified users are more likely to receive [alerts](insider-risk-management-activities.md#alert-dashboard), so analysts and investigators can review and prioritize these users' risk activities.
-
-You can also decide to boost risk scores when a user is in a priority user group Consider the following factors when determining whether a user is a potential high impact user:
-
-- **Frequency of accessing sensitive content compared to others in the organization**: This includes content with Microsoft Information Protection sensitive information types and labels, and content configured as priority content.
-
-- **User's level-from-top in organization hierarchy**: The total count of reports for a user based on your organizational hierarchy. Use if you have organizational hierarchy configured in Azure Active Directory. [Investigate risky users](/defender-cloud-apps/tutorial-ueba).
-
-- **Cumulative reports**: Use if you have organizational hierarchy configured in Azure Active Directory and blast radius is available for your organization. To learn more about blast radius, see [Investigate risky users](/defender-cloud-apps/tutorial-ueba).
-
-- **Azure AD out-of-box role memberships**: Use if an Azure Active Directory (AD) member is detected as a potential high impact user. To learn about Azure AD role memberships, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
-- 
-When a user is identified as a potential high impact user, insider risk management assigns the following alerts in the [Alert dashboard](insider-risk-management-activities.md#alert-dashboard): 
-
-- If an alert is generated for a user that has been identified as a potential high impact user, then the alert is displayed in the **Risk factors**”** column in the alert. You will then be able to filter for this risk factor. 
-
-- For an alert or case for a user that has been identified as a potential high impact user, then the alert is highlighted in the **User details** section in the alert. Displays additional details about the reasons the user has been identified as a potential high impact user. 
-
-- If a user receives a priority user group booster, the alert displays the actual names of the priority user groups that they are a member of. 
-
-### Cumulative exfiltration detection (preview)
-
-Insider risk management's cumulative exfiltration detection analyzes peer group exfiltration activity performed by a user over the past 30 days and then compares that activity to the organization and peer group norms. Purview assigns a risk score if a user is anomalous compared to organization and peer group norms. 
-
-You enable cumulative exfiltration detection and select options to detect when a user’s exfiltration activities exceed peer group norms. The riskiest cumulative exfiltration categories will be highlighted in the risk factors alert. To learn about enabling cumulative exfiltration detection, see [Get started with insider risk management settings](insider-risk-management-settings.md#enable-cumulative-exfiltration-detection).
-
-#### Peer groups
-
-Insider risk management identifies three types of peer groups for analyzing exfiltration activity performed by users. These peer groups include:
-
-- Users who access similar SharePoint sites
-- Users with reports and team members (based on organization hierarchy)
-- Users with similar job titles
-
-> [!NOTE]
-> If you do not have Azure Active Directory configured for organizational structure and job titles, then insider risk management identifies peer groups based on common SharePoint sites accessed by a user.
-
-Peer groups defined for users are based on the following criteria:
-
-- **Similar organization**: A user's organizational hierarchy used to identify peer groups. If your organization does not use Azure Active Directory to maintain organizational hierarchy, then the detection accuracy may be lower. 
-
-- **Similar job title**: Users with a combination of organizational distance and similar job titles, and users with the same job title. 
+See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups) article for step-by-step configuration guidance. 
 
 ### Configure Physical badging connector (optional)
 
