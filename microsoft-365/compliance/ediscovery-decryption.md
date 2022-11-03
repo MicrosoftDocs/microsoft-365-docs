@@ -89,6 +89,12 @@ Any rights-protected (RMS-protected) email messages included in the results of a
 
 <sup>1</sup> Encrypted files located on a local computer and copied to an email message aren't decrypted and indexed for eDiscovery. For eDiscovery (Premium), encrypted email and attachments in recipient mailbox needs to be advanced indexed to be decrypted. For more information about advanced indexing, see [Advanced indexing of custodian data](indexing-custodian-data.md).
 
-<sup>2</sup> Only items labeled within SharePoint online service will be decrypted, everything else is unsupported including labeling or encrypting in the client before upload, legacy doc library RMS templates or settings, SMIME or any other standard etc. See [Enable sensitivity labels for Office files](sensitivity-labels-sharepoint-onedrive-files.md).
+<sup>2</sup> Only items labeled in SharePoint (or uploaded to SharePoint after integration with sensitivity labels are enabled) and that have labels with admin-defined permissions and no expiration are decrypted. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files).
 
-<sup>3</sup> The RMS keys need to be fully managed in M365/O365 cloud service - meaning DKE, BYOK, on-premises RMS, etc. aren't supported. See [Your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key#tenant-root-keys-generated-by-microsoft).
+Other documents aren't decrypted, including:
+
+- Files encrypted in the client and uploaded before sensitivity labels were integrated with SharePoint Online.
+- Documents encrypted with legacy RMS templates and not labeled.
+- Documents with user-defined permissions or with expiration settings (SMIME or other standards).
+
+<sup>3</sup> Only content encrypted with RMS keys hosted in Microsoft 365 is transparently decrypted by Advanced eDiscovery.  Double Key Encryption (DKE), Bring Your Own Key (BYOK), on-premises RMS, etc. aren't supported. For more information, see [Your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key#tenant-root-keys-generated-by-microsoft).
