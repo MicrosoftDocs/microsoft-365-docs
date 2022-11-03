@@ -28,3 +28,5 @@ f1.keywords: NOCSH
 
 This article lists new features in the latest release of Microsoft 365 Business Premium, which includes Microsoft Defender for Business. Features that are currently in preview are denoted with **(preview)**.
 
+## November 2022
+
