@@ -83,6 +83,8 @@
       items:
         - name: Admin center overview
           href: admin-overview/admin-center-overview.md
+        - name: Acessibility overview
+          href: admin-overview/admin-center-accessibility-overview.md
         - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
