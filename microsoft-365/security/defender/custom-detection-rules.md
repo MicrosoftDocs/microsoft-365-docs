@@ -145,7 +145,7 @@ You can select only one column for each entity type (mailbox, user, or device). 
 Your custom detection rule can automatically take actions on devices, files, users, or emails that are returned by the query.
 
 
-:::image type="content" source="../../media/ah-custom-actions.png" alt-text="Actions for custom detections in the Microsoft 365 Defender portal" lightbox="../../media/ah-custom-actions.png":::
+:::image type="content" source="../../media/ah-custom-actions.png" alt-text="Screenshot that shows actions for custom detections in the Microsoft 365 Defender portal." lightbox="../../media/ah-custom-actions.png":::
 
 
 #### Actions on devices
