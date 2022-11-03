@@ -23,9 +23,9 @@ ms.custom: seo-marvel-apr2020
 # Microsoft Teams Virtual Appointments usage report
 
 > [!NOTE]
-> This feature is temporarily available as preview for all customers. To get this feature after the preview, each user will need a [Teams Premium](https://review.learn.microsoft.com/en-us/MicrosoftTeams/enhanced-teams-experience?branch=cmd-teams-premium-overview) license.
+> This feature is temporarily available as preview for all customers. To get this feature after the preview, each user will need a [Teams Premium]() license.
 
-![Information icon](media/info.png) **This feature is moving to [Teams Premium](https://review.learn.microsoft.com/en-us/MicrosoftTeams/enhanced-teams-experience?branch=cmd-teams-premium-overview) (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required.**
+![Information icon](media/info.png) **This feature is moving to [Teams Premium]() (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required.**
 
 The Virtual Appointments usage report in the Microsoft Teams admin center gives you an overview of Teams Virtual Appointments activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](bookings-virtual-visits.md) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
 
@@ -41,7 +41,7 @@ The report contains the following tabs. The information you’ll see in the repo
 |**[EHR](#ehr)**     |Shows the number of Teams EHR-integrated appointments conducted from your EHR system.         |
 
 > [!NOTE]
-> Premium appointments are appointments that use at least one advanced Virtual Appointments capability available in [Teams Premium](https://review.learn.microsoft.com/MicrosoftTeams/enhanced-teams-experience?branch=danismith-t-pre-licensing). For more analytics on advanced Virtual Appointments usage, go to the [**Premium Virtual Appointments active users**](virtual-appointments-active-user-report.md#the-premium-virtual-appointments-active-users-card) card in the Teams admin center dashboard.
+> Premium appointments are appointments that use at least one advanced Virtual Appointments capability available in [Teams Premium]() (preview). For more analytics on advanced Virtual Appointments usage, go to the [**Premium Virtual Appointments active users**](virtual-appointments-active-user-report.md#the-premium-virtual-appointments-active-users-card) card in the Teams admin center dashboard.
 
 Use this report to gain insight into virtual appointment activity and trends in your organization. The information can help you optimize Virtual Appointments to deliver better business outcomes.
 

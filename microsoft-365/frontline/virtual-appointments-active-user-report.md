@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-The Virtual Appointments active user report provides active user information for advanced Virtual Appointments capabilities that are available with [Teams Premium](https://review.learn.microsoft.com/en-us/MicrosoftTeams/enhanced-teams-experience?branch=cmd-teams-premium-overview) (preview). You can see how many users are actively using advanced capabilities, which capabilities they're using, and a detailed usage breakdown for individual appointments.
+The Virtual Appointments active user report provides active user information for advanced Virtual Appointments capabilities that are available with [Teams Premium]() (preview). You can see how many users are actively using advanced capabilities, which capabilities they're using, and a detailed usage breakdown for individual appointments.
 
 To view the report, you must be a global admin or Teams admin, and your organization must be using advanced Virtual Appointments capabilities. The report shows active user information for the following features.
 
