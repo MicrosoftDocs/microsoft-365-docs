@@ -186,17 +186,17 @@ To set up a parent testing source, follow the steps below:
 
 You'll come back to your action's details page. Under **Testing Source** on the **Overview** section, the new action you designated as the parent is listed under **Parent action**.
 
-## Related controls and certifications
+## Related controls
 
-The **Controls & certifications [NAME TBD]** tab displays the controls associated with the improvement action. The table on this page lists each associated control, the control ID, and the certification related to the control. To view a description of the control, select the control's name and a flyout pane appears with the description.
+The **Related controls** tab displays the controls associated with the improvement action. The table on this page lists each associated control, the control ID, and the certification related to the control. To view a description of the control, select the control's name and a flyout pane appears with the description.
 
-## Perform work and store documentation
+## Perform work and store evidence
 
-You can upload evidence in the form of files and links related to implementation and testing work directly to the **Documents** section. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files.
+You can upload evidence related to implementation and testing work, in the form of files or links, directly to the **Evidence** tab. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files.
 
 #### Upload evidence
 
-- From the improvement action's details page, go to the **Documents** tab and select **Add evidence**.
+- From the improvement action's details page, go to the **Evidence** tab and select **Add evidence**.
 - On the **Add evidence** flyout pane, choose whether to add a **Document** or **Link**. The accepted file types for **Document** are:
   - Documents (.doc, .xls, .ppt, .txt, .pdf)
   - Images (.jpg, .png)
