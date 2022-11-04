@@ -31,6 +31,8 @@ To use Microsoft Syntex pay-as-you go, you need:
 - An Azure resource group
 - An Azure storage account
 
+If you already have these resources for other purposes, you can also use them with Microsoft Syntex.
+
 For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
 
 For information about how to create an Azure resource group, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
@@ -41,7 +43,10 @@ For information about how to create an Azure storage account, see [Create a stor
 
 When you set up Microsoft Syntex billing in Azure, events will be sent to the Azure meter in your account and you will be able to view the pages processed for unstructured and prebuilt document processing models.
 
-You must have contributor rights to the Azure resource group in order to use it to configure billing.
+The following permissions are required to set up Microsoft Syntex billing:
+
+- You must have Global Administrator or SharePoint Administrator permissions to be able to access the Microsoft 365 admin center and set up Syntex.
+- You must have contributor rights to the Azure resource group that you want to use for Microsoft Syntex billing.
 
 To configure Microsoft Syntex billing
 
@@ -60,15 +65,49 @@ If you have not previously configured Microsoft Syntex, read [Set up Microsoft S
 
 You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management.
 
-To run the report, the customer must have at least “read” access to the resource group and “contributor” access to the storage container.
+To run the report, the customer must have at least *read* access to the resource group and *contributor* access to the storage container.
 
 Pages processed are counted for every time the model runs against the document for all pages processed in the document regardless of whether there was a positive classification.  Model training does not count toward pages processed. 
 
+To create a report
+1. Sign in to [Azure Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview).
+1. Under **Settings**, select **Exports**.
+1. Select **Add**.
+1. Type a name for the export.
+1. Select a **Metric** and **Export type**.
+1. In **Start date**, select the date when you want to export to run.
+1. In the **Storage** section, choose the subscription that you're using for Microsoft Syntex billing.
+1. In the **Storage account** dropdown, choose a storage account to which you have contributor access.
+1. Type a name for the container where the report will be stored.
+1. Type the path within the container where you want to export the report.
+1. Select **Create**.
 
-1. Sign in to [Azure Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/exports/open/exports/openedBy/AzurePortal).
-1. Select Cost exports and the resource group.
-1. Run the export.
-1. View the export in the storage container location you chose.  This can sometimes take some time.
+Once the report has been created, it will run on the date you specified. You can also run it manually.
 
-There is also a Tags column in the usage report that shows the site and library where the usage occurred.  You can use this to see where the pages processed are coming from within your tenant.
+To run a report
+1. In the Azure Cost Management Exports list, select the report that you want to run.
+1. Select **Run now**.
 
+The report may take up to an hour to run.
+
+To access the report
+1. In the Azure Cost Management Exports list, select the report.
+1. Select the storage account.
+1. Under **Data storage**, select **Containers**.
+1. Select the container where you stored the report.
+1. Navigate to the csv file for the report that you want to view.
+1. Select the csv, and then select **Download**.
+
+Filter the csv on **consumedService** = *Microsoft.Syntex*. The following columns include Microsoft Syntex transaction information:
+
+- meterName
+- meterCategory
+- meterSubCategory
+- ProductName
+- tags
+
+## Related topics
+
+[Overview of Microsoft Syntex](syntex-overview.md)
+
+[Licensing for Microsoft Syntex](syntex-licensing.md)
