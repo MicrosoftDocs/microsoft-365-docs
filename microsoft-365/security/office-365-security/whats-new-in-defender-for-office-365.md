@@ -52,21 +52,22 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## September 2022
 
-**Automatic redirection from Office 365 Security and Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security and Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports. 
+**Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports. 
+
 - Redirection URLs:
-    - GCC Environment:
-        - From Office 365 Security & Compliance Center URL: protection.office.com
-        - To Microsoft 365 Defender URL: security.microsoft.com
-    - GCC-High Environment:
-        - From Office 365 Security & Compliance Center URL: scc.office365.us
-        - To Microsoft 365 Defender URL: security.microsoft.us
-    - DoD Environment:
-        - From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
-        - To Microsoft 365 Defender URL: security.apps.mil
-- Items in the Office 365 Security and Compliance Center that are not related to security aren't redirected to Microsoft 365 Defender. For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886. 
+  - GCC Environment:
+    - From Office 365 Security & Compliance Center URL: protection.office.com
+    - To Microsoft 365 Defender URL: security.microsoft.com
+  - GCC-High Environment:
+    - From Office 365 Security & Compliance Center URL: scc.office365.us
+    - To Microsoft 365 Defender URL: security.microsoft.us
+  - DoD Environment:
+    - From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
+    - To Microsoft 365 Defender URL: security.apps.mil
+- Items in the Office 365 Security & Compliance Center that are not related to security aren't redirected to Microsoft 365 Defender. For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886. 
 - This is a continuation of [Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), announced in March 2022.
 - This change enables users to view and manage additional Microsoft 365 Defender security solutions in one portal.
-- This change impacts all customers who use the Office 365 Security and Compliance Center (protection.office.com), including Microsoft Defender for Office (Plan 1 or Plan 2), Microsoft 365 E3 / E5, Office 365 E3/ E5, and Exchange Online Protection. For the full list, see [Security & Compliance Center - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+- This change impacts all customers who use the Office 365 Security & Compliance Center (protection.office.com), including Microsoft Defender for Office (Plan 1 or Plan 2), Microsoft 365 E3 / E5, Office 365 E3/ E5, and Exchange Online Protection. For the full list, see [Security & Compliance Center - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 - This change impacts all users who log in to the Office 365 Security and Compliance portal (protection.office.com), including security teams and end-users who access the Email Quarantine experience, at the **Microsoft Defender Portal** > **Review** > **Quarantine**.
 - Redirection is enabled by default and impacts all users of the Tenant.
 - Global Administrators and Security Administrators can turn on or off redirection in the Microsoft 365 Defender portal by navigating to **Settings** > **Email & collaboration** > **Portal redirection** and switch the redirection toggle.
