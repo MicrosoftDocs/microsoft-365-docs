@@ -75,7 +75,7 @@ Run a centralized performance monitoring to capture current resource utilization
 
 ## 3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk)
 
-Any filesystem could end-up getting corrupt, sp before installing a new software, it would be good to install it on a healthy file system.
+Any filesystem could end-up getting corrupt, so before installing any new software, it would be good to install it on a healthy file system.
 
 ## 4. (Optional) Update storage subsystem drivers 
 
@@ -106,7 +106,8 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 
 
 ## 7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus
-This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using.
+
+This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. You can choose from several methods to add your exclusions to Microsoft Defender Antivirus.
 
 > [!TIP]
 > To get help configuring exclusions, refer to your solution provider's documentation.
@@ -114,6 +115,7 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 
 
 - Depending on the non-Microsoft anti-malware running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the anti-malware runs FANotify, it needs to be uninstalled.
+
 - Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft anti-malware product depends on the implementation details of that product. If the other anti-malware product leverages fanotify, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents. 
 
 	
@@ -329,7 +331,9 @@ Set up your device groups, device collections, and organizational units Device g
     - Save the setting as `mdatp_managed.json` file.
     - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
 
+### 10a. Add your third-party antimalware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux antimalware settings).
 
+### 10b. Verify that you've added your current exclusions from your third-party antimalware to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
 
 ### Common Applications to Microsoft Defender for Endpoint can impact
 
@@ -421,6 +425,7 @@ Schedule an antivirus scan using Anacron in Microsoft Defender for Endpoint on L
 Schedule an update of the Microsoft Defender for Endpoint on Linux. For more information, see, [Schedule an update of the Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
 
 ## 13. Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
+
 Learn how to troubleshoot issues that might occur during installation in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install).
 
 
@@ -555,6 +560,50 @@ Then your next step is to uninstall your non-Microsoft antivirus, antimalware, a
 
 
 
+
+
+
+
+
+
+
+
+## Diagnostic and troubleshooting resources
+
+- [Troubleshoot Microsoft Defender for Endpoint on Linux installation issues](linux-support-install.md).
+- [Identify where to find detailed logs for installation issues](linux-resources.md#log-installation-issues).
+- [Troubleshooting steps for environments without proxy or with transparent proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy).  
+- [Troubleshooting steps for environments with static proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
+- [Collect diagnostic information](linux-resources.md#collect-diagnostic-information).
+- [Uninstall Defender for Endpoint on Linux](linux-resources.md#uninstall-defender-for-endpoint-on-linux).
+
+
+## Advanced Microsoft Defender for Endpoint capabilities
+
+- [Enhanced anti-malware engine capabilities on Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-anti-malware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
+
+- Boost protection of your Linux estate with behavior monitoring capabilities:
+    - [Boost protection of Linux estate with behavior monitoring](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)
+
+    >[!NOTE]
+    >The behavior monitoring functionality complements existing strong content-based capabilities, however you should carefully evaluate this feature in your environment before deploying it broadly since enabling behavioral monitoring consumes more resources and may cause performance issues. 
+
+
+- [Unified submissions in Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)
+
+- [Introducing the new alert suppression experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-the-new-alert-suppression-experience-now-in-public/ba-p/3562719)
+
+- [Announcing live response for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-live-response-for-macos-and-linux/ba-p/2864397) 
+   
+## References
+- [Add a tag or group ID](linux-preferences.md#add-tag-or-group-id-to-the-configuration-profile)
+   
+- [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
+
+- [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
+
+
+
 ---------------------------------------
 
 
@@ -613,50 +662,6 @@ To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses ce
 
 For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
 
-
-
-
-
-
-
-
-
-
-
-
-## Diagnostic and troubleshooting resources
-
-- [Troubleshoot Microsoft Defender for Endpoint on Linux installation issues](linux-support-install.md).
-- [Identify where to find detailed logs for installation issues](linux-resources.md#log-installation-issues).
-- [Troubleshooting steps for environments without proxy or with transparent proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy).  
-- [Troubleshooting steps for environments with static proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
-- [Collect diagnostic information](linux-resources.md#collect-diagnostic-information).
-- [Uninstall Defender for Endpoint on Linux](linux-resources.md#uninstall-defender-for-endpoint-on-linux).
-
-
-## Advanced Microsoft Defender for Endpoint capabilities
-
-- [Enhanced anti-malware engine capabilities on Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-anti-malware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
-
-- Boost protection of your Linux estate with behavior monitoring capabilities:
-    - [Boost protection of Linux estate with behavior monitoring](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)
-
-    >[!NOTE]
-    >The behavior monitoring functionality complements existing strong content-based capabilities, however you should carefully evaluate this feature in your environment before deploying it broadly since enabling behavioral monitoring consumes more resources and may cause performance issues. 
-
-
-- [Unified submissions in Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)
-
-- [Introducing the new alert suppression experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-the-new-alert-suppression-experience-now-in-public/ba-p/3562719)
-
-- [Announcing live response for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-live-response-for-macos-and-linux/ba-p/2864397) 
-   
-## References
-- [Add a tag or group ID](linux-preferences.md#add-tag-or-group-id-to-the-configuration-profile)
-   
-- [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
-
-- [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
 
 
 
