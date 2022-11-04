@@ -51,13 +51,13 @@ Each of the following process flows outline the architecture of privileged acces
 
 ### Step 1: Configure a privileged access policy
 
-When you configure a privileged access policy with the [Microsoft 365 admin center](https://admin.microsoft.com) or the Exchange Management PowerShell, you define the policy and the privileged access feature processes and the policy attributes in the Microsoft 365 substrate. The activities are logged in the Security &amp; Compliance Center. The policy is now enabled and ready to handle incoming requests for approvals.
+When you configure a privileged access policy with the [Microsoft 365 admin center](https://admin.microsoft.com) or the Exchange Management PowerShell, you define the policy and the privileged access feature processes and the policy attributes in the Microsoft 365 substrate. The activities are logged in the audit log. The policy is now enabled and ready to handle incoming requests for approvals.
 
 ![Step 1: Policy creation.](../media/pam-step1-policy-creation.jpg)
 
 ### Step 2: Access request
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com) or with the Exchange Management PowerShell, users can request access to elevated or privileged tasks. The privileged access feature sends the request to the Microsoft 365 substrate for processing against the configured privilege access policy and records the Activity in the Security &amp; Compliance Center logs.
+In the [Microsoft 365 admin center](https://admin.microsoft.com) or with the Exchange Management PowerShell, users can request access to elevated or privileged tasks. The privileged access feature sends the request to the Microsoft 365 substrate for processing against the configured privilege access policy and records the Activity in the audit logs.
 
 ![Step 2: Access request.](../media/pam-step2-access-request.jpg)
 
@@ -69,7 +69,7 @@ An approval request is generated and the pending request notification is emailed
 
 ### Step 4: Access processing
 
-For an approved request, the task is processed by the Exchange Management runspace. The approval is checked against the privileged access policy and processed by the Microsoft 365 substrate. All activity for the task is logged in the Security &amp; Compliance Center.
+For an approved request, the task is processed by the Exchange Management runspace. The approval is checked against the privileged access policy and processed by the Microsoft 365 substrate. All activity for the task is logged in the audit logs.
 
 ![Step 4: Access processing.](../media/pam-step4-access-processing.jpg)
 
