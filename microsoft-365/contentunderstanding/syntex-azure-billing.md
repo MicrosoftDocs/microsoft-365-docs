@@ -12,7 +12,7 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Learn about pay-as-you-go Azure billing configuration for Microsoft Syntex.
+description: Learn about how to set up pay-as-you-go Azure billing for Microsoft Syntex and how to monitor your usage.
 ---
 
 # Configure Microsoft Syntex for Azure pay-as-you-go billing (Preview)
@@ -28,8 +28,8 @@ This preview does not include structured document processing which uses AI Build
 To use Microsoft Syntex pay-as-you go, you need:
 
 - An Azure subscription
-- An Azure resource group
-- An Azure storage account
+- An Azure resource group in that subscription
+- An Azure storage account in that subscription
 
 If you already have these resources for other purposes, you can also use them with Microsoft Syntex.
 
@@ -61,7 +61,7 @@ To configure Microsoft Syntex billing
 
 If you have not previously configured Microsoft Syntex, read [Set up Microsoft Syntex](set-up-content-understanding.md) to learn how.
 
-## Monitor your usage
+## Monitor your Microsoft Syntex pay-as-you-go usage
 
 You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management.
 
@@ -74,8 +74,8 @@ To create a report
 1. Under **Settings**, select **Exports**.
 1. Select **Add**.
 1. Type a name for the export.
-1. Select a **Metric** and **Export type**.
-1. In **Start date**, select the date when you want to export to run.
+1. Select the **Metric** that you want to report on.
+1. Choose an **Export type** and the dates for the export.
 1. In the **Storage** section, choose the subscription that you're using for Microsoft Syntex billing.
 1. In the **Storage account** dropdown, choose a storage account to which you have contributor access.
 1. Type a name for the container where the report will be stored.
@@ -104,7 +104,8 @@ Filter the csv on **consumedService** = *Microsoft.Syntex*. The following column
 - meterCategory
 - meterSubCategory
 - ProductName
-- tags
+- quantity
+- tags (site and library information)
 
 ## Related topics
 
