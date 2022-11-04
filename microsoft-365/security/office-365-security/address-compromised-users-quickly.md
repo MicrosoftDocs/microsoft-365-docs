@@ -79,7 +79,7 @@ You have a few options for navigating to a list of restricted users. For example
 
 ### View details about automated investigations
 
-When an automated investigation has begun, you can see its details and results in the Security & Compliance Center. Go to **Threat management** \> **Investigations**, and then select an investigation to view its details.
+When an automated investigation has begun, you can see its details and results in the **Action center** in the Microsoft 365 Defender portal.
 
 To learn more, see [View details of an investigation](air-view-investigation-results.md).
 
