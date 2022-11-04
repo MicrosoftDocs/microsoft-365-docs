@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- highpri 
+- highpri
 - tier1
 - purview-compliance
 - m365solution-insiderrisk
@@ -28,8 +28,8 @@ search.appverid:
 
 # Get started with communication compliance
 
->[!IMPORTANT]
->Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
+> [!IMPORTANT]
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
 Use communication compliance policies to identify user communications for analysis by internal or external reviewers. For more information about how communication compliance policies can help you detect communications in your organization, see [communication compliance policies](/microsoft-365/compliance/communication-compliance-policies). If you'd like to review how Contoso quickly configured a communication compliance policy to detect potentially inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](/microsoft-365/compliance/communication-compliance-case-study).
 
@@ -126,19 +126,19 @@ Choose from these solution role group options when configuring and managing comm
 
 ### Option 1: Assign all compliance users to the Communication Compliance role group
 
-1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+Complete the following steps to add users to this role group:
 
-2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-3. Select the *Communication Compliance* role group, then select **Edit role group**.
+2. Select **Permissions** in the left nav, and select **Roles** under the **Microsoft Purview solutions** list.
 
-4. Select **Choose members** from the left navigation pane, then select **Edit**.
+3. Select the *Communication Compliance* role group and then select **Edit**.
 
-5. Select **Add** and then select the checkbox for all users you want to add to the *Communication Compliance* role group.
+4. Select the **Choose users** tab, then select the checkbox for all users you want to add to the role group.
 
-6. Select **Add**, then select **Done**.
+6. Choose **Select**, then **Next**.
 
-7. Select **Save** to add the users to the role group. Select **Close** to complete the steps
+7. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
 
 ### Option 2: Assign users to specific communication compliance role groups
 
@@ -232,11 +232,11 @@ For more information about configuring Yammer in Native Mode, see:
 
 ## Step 5 (required): Create a communication compliance policy
 
->[!IMPORTANT]
->Using PowerShell to create and manage communication compliance policies isn't supported. To create and manage these policies, you must use the policy management controls in the [communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
+> [!IMPORTANT]
+> Using PowerShell to create and manage communication compliance policies isn't supported. To create and manage these policies, you must use the policy management controls in the [communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
 
->[!TIP]  
->Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out [this 15-minute video](/microsoft-365/compliance/communication-compliance-plan#creating-a-communication-compliance-policy-walkthrough) to see a demonstration of how communication compliance policies can help you detect potentially inappropriate messages, investigate potential violations, and remediate compliance issues.
+> [!TIP]
+> Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out [this 15-minute video](/microsoft-365/compliance/communication-compliance-plan#creating-a-communication-compliance-policy-walkthrough) to see a demonstration of how communication compliance policies can help you detect potentially inappropriate messages, investigate potential violations, and remediate compliance issues.
 
 1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 

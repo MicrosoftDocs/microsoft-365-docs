@@ -267,7 +267,7 @@ Leverage end-to-end workflows to help you quickly identify, triage, and remediat
 
 There are four role groups used to configure permissions to manage Insider Risk Management features, which have different roles and level of access. Setting up permissions to Insider Risk Management is key before proceeding.
 
-[Add users to an insider risk management role group](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
+[Add users to the Insider Risk Management role group](insider-risk-management-configure.md#add-users-to-the-insider-risk-management-role-group)
 
 If you are not able to see permissions, please talk to your tenant admin to assign the correct roles.
 
@@ -412,7 +412,7 @@ Audit log retention policies are part of the new Advanced Audit capabilities in 
 1. Before you create an audit log retention policy – [key things to know](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) before creating your policy.
 1. [Create an audit log retention policy](audit-log-retention-policies.md#create-an-audit-log-retention-policy).
 1. [Manage audit log retention policies in the Microsoft Purview compliance portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
-1. [Create and manage audit log retention policies on PowerShell](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) - You can also use Security & Compliance Center PowerShell to create and manage audit log retention policies. One reason to use PowerShell is to create a policy for a record type or activity that isn’t available in the UI.
+1. [Create and manage audit log retention policies on PowerShell](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) - You can also use Security & Compliance PowerShell to create and manage audit log retention policies. One reason to use PowerShell is to create a policy for a record type or activity that isn’t available in the UI.
 
 ## Additional trials and add-ons
 

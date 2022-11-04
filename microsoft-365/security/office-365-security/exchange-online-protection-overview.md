@@ -106,8 +106,8 @@ For information about requirements, important limits, and feature availability a
 |**Monitoring**||
 |Message trace|[Message trace](message-trace-scc.md) <p> [Message trace in the Exchange admin center](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
 |Email & collaboration reports|[View email security reports](view-email-security-reports.md)|
-|Mail flow reports|[View mail flow reports](view-mail-flow-reports.md) <p> [Mail flow reports in the Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|Mail flow insights|[Mail flow insights](mail-flow-insights-v2.md) <p> [Mail flow insights in the Exchange admin center](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
+|Mail flow reports|[Mail flow reports in the Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|Mail flow insights|[Mail flow insights in the Exchange admin center](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
 |Auditing reports|[Auditing reports in the Exchange admin center](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
 |Alert policies|[Alert policies](../../compliance/alert-policies.md)|
 |**Service Level Agreements (SLAs) and support**||
