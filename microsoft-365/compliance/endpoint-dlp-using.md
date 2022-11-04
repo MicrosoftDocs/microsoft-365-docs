@@ -158,7 +158,7 @@ There are three procedures.
 
 7. Enter the path to the folder on local machines where you want the original sensitive files to be moved to. For example:
    
-    **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah langer* will place the moved items in a folder named:  
+    **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah Langer* will place the moved items in a folder named:  
 
     *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive*
 
@@ -315,7 +315,7 @@ In this scenario, we'll define a group of printers that the legal department use
 ### Create and use printer groups
 
 1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Printer groups**.
-1. Select **Create printer group** and give the group a name. In this scenarion, we'll use `Legal printers`.
+1. Select **Create printer group** and give the group a name. In this scenario, we'll use `Legal printers`.
 1. Select **Add printer** and provide a name. You can define printers by:
     1. Friendly printer name 
     1. USB product ID
