@@ -284,11 +284,13 @@ After receiving the message:
 > [!NOTE]
 > This error code is also generated if Exchange Online receives SERVFAIL response from DNS server on TLSA query for the destination domain.
 
-When an outbound email is being sent, if the receiving domain has DNSSEC enabled, we query for TLSA records associated with MX entries in the domain. If no TLSA record is published, the response to the TLSA lookup must be NOERROR (no records of requested type for this domain) or NXDOMAIN (there's no such domain). DNSSEC requires this response if no TLSA record is published; otherwise, Exchange Online interprets the lack of response as a SERVFAIL error. As per RFC 7672, a SERVFAIL response is untrustworthy; so, the destination domain fails DNSSEC validation. This email is then deferred with the error: 450 4.7.324 dnssec-invalid: Destination domain returned invalid DNSSEC records.
+When an outbound email is being sent, if the receiving domain has DNSSEC enabled, we query for TLSA records associated with MX entries in the domain. If no TLSA record is published, the response to the TLSA lookup must be NOERROR (no records of requested type for this domain) or NXDOMAIN (there's no such domain). DNSSEC requires this response if no TLSA record is published; otherwise, Exchange Online interprets the lack of response as a SERVFAIL error. As per RFC 7672, a SERVFAIL response is untrustworthy; so, the destination domain fails DNSSEC validation. This email is then deferred with the following error: 
+
+`450 4.7.324 dnssec-invalid: Destination domain returned invalid DNSSEC records`
 
 ### If the email sender reports receipt of the message
 
-If you're using a DNS provider, for example GoDaddy, alert your DNS provider of the error so that they can troubleshoot the DNS response. If you're managing your own DNSSEC infrastructure, it could be an issue with the DNS server itself or with the network.
+If you're using a DNS provider, for example, GoDaddy, alert your DNS provider of the error so that they can troubleshoot the DNS response. If you're managing your own DNSSEC infrastructure, it could be an issue with the DNS server itself or with the network.
 
 ## Frequently Asked Questions
 
