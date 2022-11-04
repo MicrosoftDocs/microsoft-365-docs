@@ -27,7 +27,7 @@ search.appverid: met150
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
+The **Mail flow map** in the [Security & Compliance Center](https://protection.office.com) gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
 
 :::image type="content" source="../../media/mfi-mail-flow-map-widget.png" alt-text="The Mail flow map widget in the Mail flow dashboard in the Security & Compliance Center" lightbox="../../media/mfi-mail-flow-map-widget.png":::
 

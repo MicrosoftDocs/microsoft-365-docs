@@ -54,9 +54,9 @@ The investigation status indicates the progress of the analysis and actions. As 
 ## View details of an investigation
 
 1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
-2. In the navigation pane, select **Action center**.
+2. In the navigation pane, select **Actions & submissions** \> **Action center**.
 3. On either the **Pending** or **History** tabs, select an action. Its flyout pane opens.
-4. In the flyout pane, select **Open investigation page**. 
+4. In the flyout pane, select **Open investigation page**.
 5. Use the various tabs to learn more about the investigation.
 
 ## View details about an alert related to an investigation
