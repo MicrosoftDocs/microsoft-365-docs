@@ -101,7 +101,7 @@ Table 2. Indicators and exclusions.
 | | Automation folder exclusions (for automated investigation and remediation) | Defender for Endpoint <br/>Plan 2 |
 | | Attack surface reduction exclusions | Defender for Endpoint <br/>Plan 1 or Plan 2 |
 | | Controlled folder access exclusions | Defender for Endpoint <br/>Plan 1 or Plan 2 |
-| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)| Automatic exclusions (for Windows Server 2016 and later) | Defender for Endpoint <br/>Plan 1 or Plan 2 <br/> > [!NOTE] <br/> > The standalone versions of Defender for Endpoint do not include server licenses. To onboard servers, you’ll need an additional license, such as [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). |
+| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)| Automatic exclusions (for Windows Server 2016 and later) | Defender for Endpoint <br/>Plan 1 or Plan 2 <br/> Note: The standalone versions of Defender for Endpoint do not include server licenses. To onboard servers, you’ll need an additional license, such as [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). |
 | | Custom exclusions:  <br/> - Process-based exclusions <br/> - Folder location-based exclusions <br/> - File extension exclusions <br/> - Contextual file and folder exclusions | Defender for Endpoint <br/> Plan 1 or Plan 2 |
 | | Custom remediation actions based on threat severity or for specific threats | Defender for Endpoint <br/> Plan 1 or Plan 2 |
 
