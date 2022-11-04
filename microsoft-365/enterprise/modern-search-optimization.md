@@ -39,7 +39,7 @@ The Page Diagnostics for SharePoint tool is a browser extension for the new Micr
 >[!NOTE]
 > The Page Diagnostics tool only works for SharePoint Online, and cannot be used on a SharePoint system page.
 
-When you analyze a SharePoint site page with the Page Diagnostics for SharePoint tool, you can see information about search requests in the **Number of search requests on a page** result in the Diagnostic tests pane. The line will appear in green if the site page contains fewer than the baseline number of search requests, red if the page exceeds the baseline number, or yellow if there improvement opportunities. 
+When you analyze a SharePoint site page with the Page Diagnostics for SharePoint tool, you can see information about search requests in the **Number of search requests on a page** result in the Diagnostic tests pane. The line will appear in green if the site page contains fewer than the baseline number of search requests, red if the page exceeds the baseline number, or yellow if there are improvement opportunities. 
 
 - Modern site pages should contain no more than **5** search requests
 
