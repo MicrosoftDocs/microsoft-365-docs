@@ -242,7 +242,7 @@ You can control whether sensitive files that are protected by your policies can 
 
 When the **Service domains** list is set to **Allow**, DLP policies won't be applied when a user attempts to upload a sensitive file to any of the domains on the list.
 
-If the list mode is set to **Allow**, any user activity involving a sensitive item and a domain that's on the list will be audited. The activity is allowed. When a user attempts an activity involving a sensitive item and a domain that *isn't* on the list then DLP policies, and the actions defined in the polices, are applied.
+If the list mode is set to **Allow**, any user activity involving a sensitive item and a domain that's on the list will be audited. The activity is allowed. When a user attempts an activity involving a sensitive item and a domain that *isn't* on the list then DLP policies, and the actions defined in the policies, are applied.
 
 For example, with this configuration:
 
@@ -376,7 +376,7 @@ File activity will always be audited for onboarded devices, regardless of whethe
 
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
 
-This feature is available for devices running any of the following Windows versions :  
+This feature is available for devices running any of the following Windows versions:  
 
 - Windows 10 and later (20H2, 21H1, 21H2) 
 - Win 11 21H2, 22H2
@@ -422,7 +422,7 @@ The most common use case is to use printers groups as an allowlist as in the abo
 
 Use this setting to define groups of removable storage devices, like USB thumb drives, that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block copying of items with engineering specifications to all removeable storage devices, except for USB connected hard drives that are used to back up data and are then sent offsite.
 
-This feature is available for devices running any of the following Windows versions :  
+This feature is available for devices running any of the following Windows versions:  
 
 - Windows 10 and later (20H2, 21H1, 21H2) 
 - Win 11 21H2, 22H2
