@@ -24,7 +24,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.reviewer: acolonna
-description: Learn how a user with Away status or Do Not Disturb status can explicitly set another user as a delegate in their status message.
+description: Learn how a user with Away status or Do Not Disturb status can explicitly set another user as a delegate in their Microsoft Teams status message.
 ms.custom: seo-marvel-mar2020
 ---
 
@@ -44,7 +44,7 @@ Users can initiate the process themselves, and no admin involvement is required 
 > [!NOTE]
 > Status notes and delegation mention behaviors are also available in Skype for Business, but their availability depends on the user's co-existence mode. Skype for Business doesn't enforce a character limit on status notes. However, Microsoft Teams will only display the first 280 characters of a note set from Skype for Business. An ellipses (...) at the end of a note indicates that it's been truncated. Skype for Business doesn't support expiry times for notes. <br>Skype for Business Online was retired on July 31, 2021. [Learn how to upgrade to Microsoft Teams](/microsoftteams/upgrade-start-here).
 
-## Delegation use scenario in Healthcare
+## Teams status message delegation use scenario in Healthcare
 
 **Usage example without setting delegates**
 
