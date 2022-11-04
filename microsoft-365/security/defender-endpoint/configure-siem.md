@@ -75,7 +75,9 @@ If you are pulling Defender for Endpoint alerts into an external system, there a
 
 Additional integrations are listed in [Technological partners of Microsoft 365 Defender](technological-partners.md), or contact your SIEM / SOAR provider to learn about integrations they may provide.
 
-### Calling the API directly – migrate to the new Microsoft 365 Defender alerts API
+### Calling the Microsoft 365 Defender alerts API directly
+
+#### Migrate to the new Microsoft 365 Defender alerts API
 
 The below table provides a mapping between the SIEM API to the Microsoft 365 Defender alerts API:
 
