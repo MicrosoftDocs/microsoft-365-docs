@@ -76,7 +76,6 @@ There will be three levels of relevance:
 - **High** - These are messages about chnages whihc you should act on with urgency to avoid service disruption and stay on top of feature releases with **high potential impact to your organization.** Examples are, significant feature changes, retirements for a service being heavily used by your tenant.
 
 - **Medium** - There are messages about changes which you can focus on next and plan for action at a later date, since these changes are about **services your organization moderately uses.**
-
 Examples are: changes or new features for a service which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement etc.
 
 - **Low** - These are messages about changes which you can choose to monitor to stay informed since these may not have any impact on your organization. Examples would be a change or a feature update for a service **which is not being actively used in your organization.**
@@ -240,8 +239,8 @@ In the Message center, you can select a message to see details.
 If you want to provide feedback on the message, in the details pane, select either the **Like** or **Dislike** icon on the bottom of the message details pane, and provide optional feedback in the text box that appears. Do not provide any personal information. You can optionally select **It's OK to contact me about this feedback** and then select **Send**.
 
 If a Message Center post is not relevant for your organization, please provide us feedback using the options demonstrated in the image below. After you click thumbs up/down on the MC post, select "this change isn't relevant to my org."
-
 :::image type="content" source="../../media/message-center-feedbacksection.jpg" alt-text="Message center view of feedback section.":::
+
 > [!NOTE]
 > If you're using Microsoft 365 for Government - GCC, Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.
 
