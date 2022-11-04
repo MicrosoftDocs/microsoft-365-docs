@@ -1,6 +1,6 @@
 ---
 title: 'Understanding CPU Regression Analysis'
-description: How to Understanding CPU Regression Analysis
+description: How to Understand CPU Regression Analysis
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen

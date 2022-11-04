@@ -18,9 +18,9 @@ f1.keywords: NOCSH
 
 # Determining Relevant Processes for Regression Detection
 
-To identify regressed processes in each application, different types of performance counters for every process running on a virtual machine during a test run should be tracked. Analyzing a performance regression involves assessing variables for many processes during application testing . However, not all processes are associated with a run or application.  In addition, it is likely that some processes are naturally going to be relevant while others are not, thus making the case for determining which are relevant for monitoring. Lastly, analyzing all processes is costly and should be considered carefully as an extra expense.
+To identify regressed processes in each application, different types of performance counters for every process running on a virtual machine during a test run should be tracked. Analyzing a performance regression involves assessing variables for many processes during application testing. Thus making the case for determining which are relevant for monitoring. Lastly, analyzing all processes is costly and should be considered carefully as an extra expense.
 
-To decide which processes are most relevant for a given application, Test Base uses a mutual information ranking algorithm. The application and process can both be considered a type of discrete random variable. The association of the two random variables is measured using conditional probabilities for relevance. The processes are then displayed in the order of their relevance for each application.
+To decide which processes are relevant for a given application, Test Base uses a mutual information ranking algorithm. The application and process can both be considered a type of discrete random variable. The association of the two random variables is measured using conditional probabilities for relevance. Processes are currently not displayed based on relevance.
 
 To learn more about mutual information ranking and how it is used in the **Test Base** service, see: [Infinite Segmentation: Scalable Mutual Information Ranking on Real World Graphs](//medium.com/microsoftazure/infinite-segmentation-scalable-mutual-information-ranking-on-real-world-graphs-f4983ba81be3).
 

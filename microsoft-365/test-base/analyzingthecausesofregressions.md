@@ -26,7 +26,7 @@ Note that these .etl files are available in the log files that are downloadable 
 
 **To learn more** about Windows Performance Recorder, see the [Windows Performance Recorder](/windows-hardware/test/wpt/windows-performance-recorder) documentation on [learn.Microsoft.com](/).
 
-**To learn more** about debugging Memory and CPU utilization regressions with Windows Performance Analyzer (WPA), see the [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) documentation on [learn.Microsoft.com](/).
+**To learn more** about debugging Memory and CPU utilization regressions with Windows Performance Analyzer (WPA), see the [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) documentation on [learn.Microsoft.com](/). It is an example on how to debug a type of regressions. More info on how to use WPA and our zip is not covered on this page.
 
 **To learn more** about CPU regression analysis, see [Intelligent CPU regression analysis with Test Base for Microsoft 365](https://techcommunity.microsoft.com/t5/test-base-blog/intelligent-cpu-regression-analysis-with-test-base-for-microsoft/ba-p/2112977).
 

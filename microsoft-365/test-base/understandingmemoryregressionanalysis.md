@@ -1,6 +1,6 @@
 ---
 title: 'Understanding Memory Regression Analysis'
-description: How to Understanding Memory Regression Analysis
+description: How to Understand Memory Regression Analysis
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen

@@ -21,7 +21,7 @@ f1.keywords: NOCSH
 To display the Test Results for script execution, perform the steps that follow.
 1. Select the **Security update results** under the **Insights** menu category.
 2. In the **Security update results** display, select the values for your package in the following drop-downs: **Package name, Package version, Operating system, Release**, and **Release build version**.
-3. Under a test node such as **Functional test** or **Out of box test**, click **See details** in the **Script execution** row to view detailed script test results in the **Script execution** tab **Summary**. 
+3. Under a test type such as **Functional test** or **Out of box test**, click **See details** in the **Script execution** row to view detailed script test results in the **Script execution** tab **Summary**. 
 
 Detailed results appear, such as a script **Pass** or **Fail** indication in the test **Result** column; an **Exit Code, Start datetime, End datetime, Failed** %, and so on; versus the original security or feature update release dates from the Service team; for example, **5B** or **6B** (release dates for the second Tuesday of specified month, May (10) or June (7). See Figure 1 that follows for more details in the **Script execution** tab **Summary**.
 
