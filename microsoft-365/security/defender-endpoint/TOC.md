@@ -116,7 +116,7 @@
 ##### [Device control overview](mac-device-control-overview.md)
 ##### [JAMF examples](mac-device-control-jamf.md)
 ##### [Intune examples](mac-device-control-intune.md)
-##### [Schedule scans](mac-schedule-scan.md)
+#### [Schedule scans](mac-schedule-scan.md)
 
 ### [Configure Microsoft Defender for Endpoint on Linux]()
 #### [Configure and validate exclusions](linux-exclusions.md)
