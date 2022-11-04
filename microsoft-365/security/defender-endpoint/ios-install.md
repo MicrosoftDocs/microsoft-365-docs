@@ -54,7 +54,7 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
 
 1. On the **Add app** page, click on **Search the App Store** and type **Microsoft Defender** in the search bar. In the search results section, click on *Microsoft Defender* and click **Select**.
 
-1. Select **iOS 11.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
+1. Select **iOS 12.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
 
 1. In the **Assignments** section, go to the **Required** section and select **Add group**. You can then choose the user group(s) that you would like to target Defender for Endpoint on iOS app. Click **Select** and then **Next**.
 
