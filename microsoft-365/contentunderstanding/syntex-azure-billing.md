@@ -1,5 +1,5 @@
 ---
-title: Configure Microsoft Syntex for Azure pay-as-you-go billing (Preview)
+title: Configure Microsoft Syntex for pay-as-you-go billing in Azure (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: kkamath
@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 description: Learn about how to set up pay-as-you-go Azure billing for Microsoft Syntex and how to monitor your usage.
 ---
 
-# Configure Microsoft Syntex for Azure pay-as-you-go billing (Preview)
+# Configure Microsoft Syntex for pay-as-you-go billing in Azure (Preview)
 
 Microsoft Syntex features are billed through an Azure subscription. In this limited-time preview, you can use unstructured and prebuilt document processing (formerly document understanding) at no cost and see activity reports in Azure.
 
