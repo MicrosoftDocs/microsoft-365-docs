@@ -36,6 +36,7 @@ With browser join, when an attendee joins an appointment, they aren't prompted t
 
 Currently, browser join is available for appointments that are scheduled through the following:
 
+- [The Virtual Appointments app](https://review.learn.microsoft.com/microsoftteams/manage-virtual-appointments-app?branch=v-lanachin-va-app) (preview)
 - [The Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
 - Microsoft Teams Electronic Health Record (EHR) connector
 
@@ -44,23 +45,28 @@ Currently, browser join is available for appointments that are scheduled through
 
 ## Set up browser join
 
-### Appointments scheduled through the Bookings app
+### Appointments scheduled through the Virtual Appointments app or the Bookings app
 
-Schedulers in your organization can turn on this feature for specific appointment types and for individual appointments in the Bookings app.
+Schedulers in your organization can turn on this feature for specific appointment types and for individual appointments.
 
 After this feature is turned on, the confirmation email or SMS text that’s sent to attendees will contain a meeting join link that opens Teams in a desktop or mobile browser. For a list of supported browsers, see [Supported browsers](#supported-browsers).
 
 #### Turn on browser join for an appointment type
 
-In Bookings, go to **Settings** > **Appointment types**, select an [appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887), and then turn on **Allow attendees to join from a browser**. Doing this enables browser join for all appointments of this type.
+1. Do one of the following:
+    1. In the Virtual Appointments app, go to the **Manage** tab, and then select an appointment type.
+    1. In the Bookings app, go to **Settings** > **Appointment types**, and then select an appointment type.
+1. Turn on **Have attendees join from a web browser**.
 
-:::image type="content" source="media/browser-join-bookings-appointment-type.png" alt-text="Screenshot of the Allow attendees to join from a browser setting for appointment types in the Bookings app":::
+Doing this enables browser join for all appointments of this type.
+
+:::image type="content" source="media/browser-join-bookings-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types":::
 
 #### Turn on browser join for an individual appointment
 
-In Bookings, select **New booking**, and then turn on **Allow attendees to join from a browser**.
+On the **Bookings schedule** tab of the Virtual Appointments app or in the Bookings app, select **New booking**, and then turn on **Have attendees join from a browser**.
 
-:::image type="content" source="media/browser-join-bookings-form.png" alt-text="Screenshot of the Allow attendees to join from a browser setting on the new booking form in the Bookings app":::
+:::image type="content" source="media/browser-join-bookings-form.png" alt-text="Screenshot of the Have attendees join from a browser setting on the new booking form":::
 
 ### Appointments scheduled through the Teams EHR connector
 
@@ -69,6 +75,12 @@ No setup is needed by you or your staff!
 **Integration with Cerner EHR**: The Teams EHR connector supports patients joining virtual appointments through a link in the SMS text message. At the time of the appointment, patients can join by tapping the link in the SMS text message, and Teams opens in a browser.
 
 **Integration with Epic EHR**: The Teams EHR connector supports patients joining virtual appointments through MyChart web and mobile. At the time of the appointment, patients can start the appointment from MyChart by using the **Begin virtual visit** button, and Teams opens in a browser.
+
+## Admin settings
+
+### 
+
+To learn more, see [Custom organization branding for Teams meetings](https://review.learn.microsoft.com/en-us/MicrosoftTeams/custom-branding-meetings?branch=heidip-branded-meetings-2022).
 
 ## Supported browsers
 
@@ -89,10 +101,6 @@ Here are the browsers that are currently supported. We support the latest versio
 ## User experience
 
 Here are some things about the user experience to know about with browser join.
-
-### Before the appointment
-
-### During the appointment
 
 #### Screen sharing
 
