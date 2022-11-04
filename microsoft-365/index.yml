@@ -233,7 +233,7 @@ additionalContent:
             - text: SharePoint in Microsoft 365
               url: /sharepoint/sharepoint-online
             - text: SharePoint Syntex
-              url: contentunderstanding/index.md
+              url: /microsoft-365/contentunderstanding/
             - text: SharePoint Server
               url: /sharepoint/sharepoint-server
             - text: Hybrid
@@ -259,7 +259,7 @@ additionalContent:
         - title: Outlook and Exchange
           links:
             - text: Outlook for iOS and Android
-              url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
+              url: https://adoption.microsoft.com/outlook-mobile/
             - text: Exchange Online
               url: /Exchange/exchange-online
             - text: More > 

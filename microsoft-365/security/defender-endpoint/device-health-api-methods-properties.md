@@ -9,14 +9,14 @@ ms.pagetype: security
 ms.author: dansimp 
 author: dansimp
 ms.localizationpriority: medium 
-ms.date: 09/01/2022
+ms.date: 11/03/2022
 manager: dansimp 
 audience: ITPro 
 ms.collection:
  - m365-security
  - ContentEngagementFY23
  - tier3
-ms.topic: article 
+ms.topic: conceptual 
 ms.subservice: mde 
 ms.custom: api 
 search.appverid: met150
@@ -63,10 +63,15 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 Method|Data type|Description
 :---|:---|:---
-**(JSON response)**|Microsoft Defender Antivirus health per device collection. See: [1.2 Export device antivirus health details API properties (JSON response)](#12-export-device-antivirus-health-details-api-properties-json-response)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. | The API pulls all data in your organization as JSON responses. This method is best for small organizations with less than 100-K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
-**(via files)**|Microsoft Defender Antivirus health per device collection. See: [1.3 Export device antivirus health details API properties \(via files\)](#13-export-device-antivirus-health-details-api-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. |This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with all your organization data.</li><li>Download all the files using the download URLs and process the data as you like.</li></ol>
+**(JSON response)**|Microsoft Defender Antivirus health per device collection. See: [1.2 Export device antivirus health details API properties (JSON response)](#13-export-device-antivirus-health-details-api-properties-json-response)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. | The API pulls all data in your organization as JSON responses. This method is best for small organizations with less than 100-K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
+**(via files)**|Microsoft Defender Antivirus health per device collection. See: [1.3 Export device antivirus health details API properties \(via files\)](#14-export-device-antivirus-health-details-api-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. |This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with all your organization data.</li><li>Download all the files using the download URLs and process the data as you like.</li></ol>
 
-### 1.2 Export device antivirus health details API properties (JSON response)
+### 1.2 Limitations
+
+- Maximum page size: 200,000
+- Rate limitations for this API: 30 calls per minute and 1,000 calls per hour
+
+### 1.3 Export device antivirus health details API properties (JSON response)
 
 > [!NOTE]
 >
@@ -103,7 +108,7 @@ Method|Data type|Description
 | rbacGroupId | Long | Device group ID that this machine belongs to | 712 |
 | rbacGroupName | String | Name of device group that this machine belongs to | "SampleGroup" |
 
-### 1.3 Export device antivirus health details API properties (via files)
+### 1.4 Export device antivirus health details API properties (via files)
 
 > [!IMPORTANT]
 > Information in this section relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.

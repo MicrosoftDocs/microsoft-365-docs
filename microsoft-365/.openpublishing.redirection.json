@@ -1,0 +1,34 @@
+{
+    "redirections": [
+        {
+            "source_path": "enterprise/EU-data-storage-locations.md",
+            "redirect_url": "https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "enterprise/m365-dr-placeholder.md",
+            "redirect_url": "https://learn.microsoft.com/microsoft-365/enterprise/advanced-data-residency",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "enterprise/data-move-faq.md",
+            "redirect_url": "https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-legacy-move-program#data-move-general-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "enterprise/during-and-after-your-data-move.md",
+            "redirect_url": "https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-legacy-move-program",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "enterprise/moving-data-to-new-datacenter-geos.md",
+            "redirect_url": "https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview#migrationsmoves",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "enterprise/request-your-data-move.md",
+            "redirect_url": "https://learn.microsoft.com/microsoft-365/enterprise/plan-for-multi-geo",
+            "redirect_document_id": false
+        }
+    ]
+}

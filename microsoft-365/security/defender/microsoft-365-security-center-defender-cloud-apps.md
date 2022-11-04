@@ -13,7 +13,7 @@ author: dcurwin
 manager: dansimp
 ms.date: 08/04/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150
@@ -94,20 +94,19 @@ The images and the tables below list the changes in navigation between Microsoft
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
 | Settings | Settings -> Cloud apps |
-| System  settings | Settings -> Cloud apps |
 | Settings/Governance log | Cloud apps -> Governance log |
-| Security  extensions | Settings -> Cloud apps |
-| Playbooks | Settings -> Cloud apps |
-| SIEM  agents | Settings -> Cloud apps |
-| External  DLP | Settings -> Cloud apps |
-| API  tokens | Settings -> Cloud apps |
-| Manage  admin access | Permissions-> Cloud apps-> Roles |
-| Exported  reports | Reports -> Cloud apps -> Exported reports |
-| Scoped  deployment and privacy | Permissions -> Cloud apps -> Activity Privacy permissions |
-| Connected Apps/App connectors | Settings -> Cloud Apps -> Connected Apps |
-| Conditional Access App Control | Settings -> Cloud apps -> Conditional Access App Control apps |
-| IP  address ranges              | Settings -> Cloud apps                                      |
-| User  groups                    | Settings -> Cloud apps                                      |
+| Security extensions -> Playbooks | Settings -> Cloud apps |
+| Security extensions -> SIEM  agents | Settings -> Cloud apps |
+| Security extensions -> External  DLP | Settings -> Cloud apps |
+| Security extensions -> API  tokens | Settings -> Cloud apps |
+| Manage admin access -> Admin roles | Permissions-> Cloud apps-> Roles |
+| Manage admin access -> Activity privacy permissions | Permissions-> Cloud apps-> Activity privacy permissions |
+| Exported reports | Reports -> Cloud apps -> Exported reports |
+| Scoped deployment and privacy | Settings -> Cloud Apps -> Scoped deployment and privacy |
+| Connected Apps / App connectors | Settings -> Cloud Apps -> Connected apps -> App Connectors |
+| Conditional Access App Control | Settings -> Cloud apps -> Connected apps -> Conditional Access App Control apps |
+| IP address ranges              | Settings -> Cloud apps                                      |
+| User groups                    | Settings -> Cloud apps                                      |
 
 ## Limitations
 

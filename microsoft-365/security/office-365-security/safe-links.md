@@ -60,6 +60,8 @@ Safe Links protection is available in the following locations:
   > Safe Links does not work on mail-enabled public folders.
   >
   > Safe Links supports only HTTP(S) and FTP formats.
+  >
+  > Using another service to wrap links before Defender for Office 365 might invalidate the ability of Safe Links to process links, including wrapping, detonating, or otherwise validating the "maliciousness" of the link.
 
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is controlled by Safe Links policies.
 
@@ -251,11 +253,9 @@ These settings apply to Safe Links in email, Teams, and Office apps:
 
   In Safe Links for Office apps, this setting applies to the desktop versions Word, Excel, PowerPoint, and Visio.
 
-  URL click tracking for links in email messages sent between internal senders and internal recipients is currently not supported.
-
   If you select this setting, the following settings are available:
 
-  - **Let users click through to the original URL**: Controls whether users can clicking through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is not selected (off).
+  - **Let users click through to the original URL**: Controls whether users can click through the [warning page](#warning-pages-from-safe-links) to the original URL. The recommend value is not selected (off).
 
     In Safe Links for Office apps, this setting applies to the original URL in the desktop versions Word, Excel, PowerPoint, and Visio.
 

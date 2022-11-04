@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/18/2022
+ms.date: 11/03/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -32,6 +32,52 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+<details>
+  <summary>Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)</summary>
+
+&ensp;Released: **November 02, 2022**<br/>
+&ensp;Published: **November 02, 2022**<br/>
+&ensp;Build: **101.85.27**<br/>
+&ensp;Release version: **30.122092.18527.0**<br/>
+&ensp;Engine version: **1.1.19500.2**<br/>
+&ensp;Signature version: **1.371.1369.0**<br/>
+
+**What's new**
+
+- There are mutiple fixes and new changes in this release 
+	- V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
+	- V2 engine support configuration path for AV definitions. (mdatp definition set path)
+	- Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
+	- In case crash collection is disabled by configuration, crash monitoring process will not be launched.
+	- Performance fixes to optimally use system events for AV capabilities.
+	- Stability improvement in case of mdatp restart and loading of epsext issues.
+	- Other fixes
+
+**Known issues**
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.85.21. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
+
+There are two ways to mitigate the problem in upgrading.
+
+Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+	
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade. 
+Caution: Some customers(<1%) are experiencing issues with this method. 
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+	
+</details>
 
 <details>
   <summary>Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)</summary>

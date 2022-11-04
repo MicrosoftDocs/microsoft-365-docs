@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
 audience: ITPro
-ms.topic: article 
+ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 
 search.appverid: 
 searchScope:
@@ -20,13 +20,13 @@ ms.collection:
   - m365-frontline
   - highpri
 ms.reviewer: 
-description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments with your organization. 
+description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments that have been scheduled in Bookings with your organization. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ---
 
-# Help your clients and customers use virtual appointments
+# Help your clients and customers use virtual appointments scheduled with Bookings
 
 Now that your organization has begun using Microsoft Teams and the Bookings app for virtual appointments, you'll need to make sure that your clients and customers understand how to book and join these appointments.
 
@@ -99,7 +99,7 @@ Make the most of virtual appointments by making sure your staff members know how
 - [Learn how to use the Bookings app in Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
 - [Learn how to join a Bookings appointment](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0).
 - [Conduct an appointment](bookings-virtual-visits.md#conduct-an-appointment).
-- [Watch a video about virtual appointments](#help-your-clients-and-customers-use-virtual-appointments).
+- [Watch a video about virtual appointments](#help-your-clients-and-customers-use-virtual-appointments-scheduled-with-bookings).
 - [Watch a video about how to manage the queue in virtual appointments](https://go.microsoft.com/fwlink/?linkid=2202615).
 - [Watch a video about waiting room features in virtual appointments](https://go.microsoft.com/fwlink/?linkid=2202614).
 
@@ -112,10 +112,10 @@ Download and [customize](#customize-your-infographic) one of these infographics 
 
 | Graphic                | Description and links              |
 | :------------------- | -------------------: |
-| [![Image of the financial services infographic](media/vv-finserv-thumbnail.png)](//download.microsoft.com/download/8/5/7/85784cd8-6945-4fcc-a3c3-972bd88d3fef/VirtualVisit_Financial_Infographic.pdf) | Customizable infographic for your financial services organization <br> [Download as a PDF](//download.microsoft.com/download/8/5/7/85784cd8-6945-4fcc-a3c3-972bd88d3fef/VirtualVisit_Financial_Infographic.pdf) <br> [Download as a PowerPoint](//download.microsoft.com/download/8/5/7/85784cd8-6945-4fcc-a3c3-972bd88d3fef/VirtualVisit_Financial_Infographic.pptx)
-| [![Image of the retail infographic](media/vv-retail-thumbnail.png)](//download.microsoft.com/download/a/b/5/ab5c07d9-cf7a-47b3-ba54-05a8a0a2a1bd/VirtualVisit_Retail_Infographic.pdf) | Customizable infographic for your retail organization <br> [Download as a PDF](//download.microsoft.com/download/a/b/5/ab5c07d9-cf7a-47b3-ba54-05a8a0a2a1bd/VirtualVisit_Retail_Infographic.pdf) <br> [Download as a PowerPoint](//download.microsoft.com/download/a/b/5/ab5c07d9-cf7a-47b3-ba54-05a8a0a2a1bd/VirtualVisit_Retail_Infographic.pptx) |
-| [![Image of the healthcare infographic](media/vv-healthcare-thumbnail.png)](//download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pdf) | Customizable infographic for your healthcare organization <br> [Download as a PDF](//download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pdf) <br> [Download as a PowerPoint](//download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pptx) |
-| [![Image of the non-industry-specific infographic.](media/va-generic-thumb.png)](//download.microsoft.com/download/c/6/9/c69d3f29-a8f5-462b-a645-79119beab406/VirtualVisit_Generic_Infographic.pdf) | Customizable infographic not specific to a particular industry <br> [Download as a PDF](//download.microsoft.com/download/c/6/9/c69d3f29-a8f5-462b-a645-79119beab406/VirtualVisit_Generic_Infographic.pdf) <br> [Download as a PowerPoint](//download.microsoft.com/download/c/6/9/c69d3f29-a8f5-462b-a645-79119beab406/VirtualVisit_Generic_Infographic.pptx) |
+|![Image of the financial services infographic](media/vv-finserv-thumbnail.png)| Customizable infographic for your financial services organization <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214189) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214285)
+|![Image of the retail infographic](media/vv-retail-thumbnail.png)| Customizable infographic for your retail organization <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214355) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214283) |
+|![Image of the healthcare infographic](media/vv-healthcare-thumbnail.png)| Customizable infographic for your healthcare organization <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214356) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214357) |
+|![Image of the non-industry-specific infographic.](media/va-generic-thumb.png)| Customizable infographic not specific to a particular industry <br> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2214284) <br> [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2214282) |
 
 ### Customize your infographic
 
@@ -123,7 +123,7 @@ Download and [customize](#customize-your-infographic) one of these infographics 
     1. Healthcare
     2. Financial services
     3. Retail
-    1. Any industry
+    4. Any industry
 
 2. Customize the infographic in PowerPoint.
     1. Use your organization's colors and preferred fonts.
