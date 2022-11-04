@@ -81,7 +81,7 @@ The **Case overview** tab summarizes the case details for risk analysts and inve
 
 - **Status**: The current status of the case, either Active or Closed.
 - **Case created on**: The date and time the case was created.
-- **User's risk score**: The current calculated risk level of the user for the case. This score is calculated every 24 hours and uses alert risk scores from all active alerts associated to the user.
+- **User's risk score**: The current calculated risk level of the user for the case. This score is calculated every 24 hours and uses alert risk scores from all active alerts associated to the user. When **Risk score boosters** is enabled in the **Policy indicators** section of the Insider risk management settings page, the User details page includes information about users identified as a potential high impact user or a member of a priority user group. These identified users are more likely to receive [alerts](insider-risk-management-activities.md#alert-dashboard), so analysts and investigators can review and prioritize these users' risk activities.
 - **Email**: The email alias of the user for the case.
 - **Organization or department**: The organization or department that the user is assigned to.
 - **Manager name**: The name of the user's manager.
