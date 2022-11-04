@@ -37,11 +37,8 @@ To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, se
 
 The following list captures the actions you'll take to deploy Microsoft Defender for Endpoint on Linux:
 
-1. Work with your Firewall, Proxy, and Networking admin to add the Microsoft Defender for Endpoint URLs to the allowed list, and prevent it from being SSL inspected.
-
-    For more information, see, [Troubleshoot cloud connectivity issues](#troubleshoot-cloud-connectivity-issues).
-
-2. Run a centralized performance monitoring to capture current resource utilization across the environment, such as, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
+1. Work with your Firewall, Proxy, and Networking admin.
+2. Run a centralized performance monitoring to capture current resource utilization. 
 3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk).
 4. (Optional) Update storage subsystem drivers (optional).
 5. (Optional) Update nic drivers.
@@ -53,20 +50,41 @@ The following list captures the actions you'll take to deploy Microsoft Defender
     10a. Add your third-party antimalware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux anti-malware settings).
     10b. Verify that you've added your current exclusions from your third-party antimalware to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
 11. Download the Microsoft Defender for Endpoint on Linux onboarding package from the [Microsoft 365 Defender portal](https://security.microsoft.com).
-12) Use Ansible to manage Microsoft Defender for Endpoint on Linux.
-13) Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.
-14) Rerun resource utilization statistics and report on pre-deployment utilization compared to post-deployment.
-15) Verify communication with Microsoft Defender for Endpoint backend.
-16) Investigate agent health issues.
-17) Verify that you're able to get "Platform Updates" (agent updates).
-18) Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates).
-19) Test detections.
-20) Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux.
-21) Troubleshooting High CPU utilization by ISVs, Linux apps, or scripts.
-22) Uninstall your non-Microsoft solution.
+12. Use Ansible to manage Microsoft Defender for Endpoint on Linux.
+13. Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.
+14. Rerun resource utilization statistics and report on pre-deployment utilization compared to post-deployment.
+15. Verify communication with Microsoft Defender for Endpoint backend.
+16. Investigate agent health issues.
+17. Verify that you're able to get "Platform Updates" (agent updates).
+18. Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates).
+19. Test detections.
+20. Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux.
+21. Troubleshooting High CPU utilization by ISVs, Linux apps, or scripts.
+22. Uninstall your non-Microsoft solution.
 
 
-Steps 1-5 are general guidelines. 
+## 1. Work with your Firewall, Proxy, and Networking admin
+
+Work with your Firewall, Proxy, and Networking admin to add the Microsoft Defender for Endpoint URLs to the allowed list, and prevent it from being SSL inspected.
+
+For more information, see, [Troubleshoot cloud connectivity issues](#troubleshoot-cloud-connectivity-issues).
+
+## 2. Run a centralized performance monitoring 
+
+Run a centralized performance monitoring to capture current resource utilization across the environment, such as, check available disk space in all mounted partitions, capture memory usage, capture a process listing that includes availability, and used CPU percentages.
+
+## 3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk)
+
+Any filesystem could end-up getting corrupt, sp before installing a new software, it would be good to install it on a healthy file system.
+
+## 4. (Optional) Update storage subsystem drivers 
+
+ Newer driver or firmware on a storage subsystem could help with performance and/or reliability.
+
+## 5. (Optional) Update nic drivers
+
+Newer driver/firmware on a NIC’s or NIC teaming software could help w/ performance and/or reliability.
+
 
 ## 6. System requirements and resource recommendations
 
