@@ -55,9 +55,9 @@ The new Microsoft 365 Defender alerts API enables customers to work with alerts 
 
 The new central API provides customers with the best possible experience across Microsoft Defender products. The Microsoft Defender for Endpoint SIEM API will be deprecated over time, but Microsoft will provide organizations ample time to plan and prepare their migration to the new Microsoft 365 Defender APIs.
 
-You can find more information on the timeline **here** and additional details about the new API in the blog post [The new Microsoft 365 Defender APIs in Microsoft Graph are now available in public preview!](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099).
+You can find more information on the timeline and additional details about the new API in the blog post [The new Microsoft 365 Defender APIs in Microsoft Graph are now available in public preview!](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099).
 
-Read about the new Microsoft 365 Defender [alerts and incidents API](/graph/api/resources/security-api-overview.md#graph-rest-beta#alerts-and-incidents-preview)
+Read about the new Microsoft 365 Defender [alerts and incidents API](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099#:~:text=Incidents%3A%20Contain%20incident%20metadata%20and%20a%20collection%20of,richer%20and%20actionable%20information%20for%20your%20automation%20flows.)
 
 If you are currently using the SIEM API, we recommend starting to plan for your migration. The following sections provide details about the different options that are available and how to get started today.
 
