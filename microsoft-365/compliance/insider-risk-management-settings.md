@@ -39,6 +39,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Microsoft Teams (preview)](#microsoft-teams-preview)
 - [Analytics](#analytics)
 - [Admin notifications](#admin-notifications)
+- [Inline alert customization](#inline-alert-customization)
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
 
@@ -157,7 +158,7 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 
 macOS devices (Catalina 10.15 or later) can be onboarded into Microsoft 365 to support insider risk management policies using either Intune or JAMF Pro. For more information and configuration guidance, see [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md).
 
-### Indicator level settings (preview)
+### Indicator level settings
 
 When creating a policy using the policy wizard, you can configure how the daily number of risk events should influence the risk score for insider risk alerts. These indicator settings help you control how the number of occurrences of risk events in your organization should affect the risk score, and so the associated alert severity, for these events. If you prefer, you can also choose to keep the default event threshold levels recommended by Microsoft for all enabled indicators.
 
@@ -342,7 +343,7 @@ To delete a standalone keyword to exclude, complete the following steps:
 
 Insider risk management alert information is exportable to security information and event management (SIEM) and security orchestration automated response (SOAR) solutions by using the [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema). You can use the Office 365 Management Activity APIs to export alert information to other applications your organization may use to manage or aggregate insider risk information. Alert information is exported and available every 60 minutes via the Office 365 Management Activity APIs.
 
-If your organization uses Microsoft Sentinel, you can also use the out-of-the-box insider risk management data connector to import insider risk alert information to Sentinel. For more information, see [Insider Risk Management (IRM) (Preview)](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview) in the Microsoft Sentinel article.
+If your organization uses Microsoft Sentinel, you can also use the out-of-the-box insider risk management data connector to import insider risk alert information to Sentinel. For more information, see [Insider Risk Management (IRM) (preview)](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview) in the Microsoft Sentinel article.
 
 > [!IMPORTANT]
 > To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts. Exported alerts will display usernames for each alert.
@@ -699,8 +700,10 @@ If you prefer to disable admin and analytics notifications, complete the followi
     - **Send an email notification when Analytics is turned off**
 
 4. Select **Save** to configure and exit.
+ 
+![Insider risk management priority admin notifications.](../media/insider-risk-settings-admin-notifications.png)
 
-## Inline alert customization (preview)
+## Inline alert customization
 
 Inline alert customization allows you to quickly tune an insider risk management policy directly from the **Alert dashboard** while reviewing the alert. Alerts are generated when a risk management activity meets the thresholds configured in the related policy. To reduce the number of alerts you get from this type of activity, you can change the thresholds or remove the risk management activity from the policy altogether.
 
@@ -709,7 +712,7 @@ You can enable inline alert customization to allow users assigned to the *Inside
 Complete the following steps to enable inline alert customization:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
-2. Select the **Inline alert customization (preview)** page.
+2. Select the **Inline alert customization** page.
 3. Enable inline alert customization for insider risk management.
 4. Select **Save** to configure and exit.
 
@@ -728,3 +731,5 @@ After choosing an option, analysts and investigators can choose two options to u
 
 - **Save and dismiss alert**: Saves the changes to the policy and updates the alert status to *Resolved*.
 - **Save only**: Saves the changes to the policy, but the alert status remains the same.
+
+![Insider risk management priority inline alerts.](../media/insider-risk-settings-inline-alerts.png)
