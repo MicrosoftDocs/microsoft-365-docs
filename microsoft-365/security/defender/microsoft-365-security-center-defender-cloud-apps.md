@@ -134,7 +134,9 @@ As part of the creation of a dedicated **Assets** section that spans the entire 
 
 ## Related videos
 
-- [Protecting cloud apps in Microsoft 365 Defender](https://www.microsoft.com/videoplayer/embed/RE59yVU)
+Learn how to protect your cloud apps in Microsoft 365 Defender:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU]
 
 ## Related information
 
