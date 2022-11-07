@@ -183,21 +183,9 @@ These are the known gaps:
 ****
 
 |Feature name|GCC|GCC High|DoD|
-|----|:---:|:---:|:---:|
+|---|:---:|:---:|:---:|
 |Reports: Web content filtering|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Reports: Device health|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Microsoft Secure Score|![Yes](images/svg/check-yes.svg) <sup>1</sup>|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
-|Microsoft Threat Experts|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|  
-
-**Footnote**
-
-<sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
-
-
-These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
-
-|Feature name|GCC|GCC High|DoD|
-|---|:---:|:---:|:---:|
 |Web Protection (Anti-Phishing and custom indicators)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Malware Protection (Android-Only)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Jailbreak Detection (iOS-Only)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
@@ -205,3 +193,10 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 |Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Microsoft Defender Vulnerability Management (MDVM))|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
+
+**Footnote**
+
+<sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
+
+
+These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
