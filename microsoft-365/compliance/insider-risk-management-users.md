@@ -53,14 +53,6 @@ The **Users dashboard** automatically displays all users identified as a potenti
 
 - **Cumulative reports**: Displays if you have organizational hierarchy configured in Azure AD and Microsoft Sentinel is available for your organization. To learn more about Microsoft Sentinel, see [Identify advanced threats with UEBA in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics).
 
-- **Azure AD out-of-box role memberships**: Displays if an Azure AD member is detected as a potential high impact user. To learn about Azure AD role memberships, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal). 
-
-- If an alert is generated for a user that has been identified as a potential high impact user, then the alert is displayed in the **Risk factors**”** column in the alert. You will then be able to filter for this risk factor. 
-
-- For an alert or case for a user that has been identified as a potential high impact user, then the alert is highlighted in the **User details** section in the alert. Displays additional details about the reasons the user has been identified as a potential high impact user. 
-
-- If a user receives a priority user group booster, the alert displays the actual names of the priority user groups that they are a member of. 
-
 ## Users added temporarily to policies
 
 The **Users dashboard** includes users added to insider risk management policies after an unusual event outside of the insider risk management workflow. Temporarily adding users (from the Policies dashboard) is also a way to start scoring user activity for an insider risk management policy for testing the policy, even if a required connector isn't configured.
