@@ -53,8 +53,6 @@ This article explains how these actions work, describes the various types of exc
 
 When you’re dealing with false positives, or known entities that are generating alerts, you might or might not need an exclusion. Sometimes classifying and suppressing an alert is enough. We recommend submitting false positives (and false negatives) to Microsoft for analysis as well. The following table describes some scenarios and what steps to take with respect to file submissions, alert suppressions, and exclusions.
 
-Table 1. Scenarios for submissions, suppressions, and exclusions
-
 | Scenario | Actions you can take |
 |:---|:----|
 | [False positive](defender-endpoint-false-positives-negatives.md): An entity, such as a file or a process, was detected and identified as malicious, even though the entity isn't a threat. | 1. [Review and classify alerts](defender-endpoint-false-positives-negatives.md#part-1-review-and-classify-alerts) that were generated as a result of the detected entity. <br/>2. [Suppress an alert](defender-endpoint-false-positives-negatives.md#suppress-an-alert) for a known entity. <br/>3. [Review remediation actions](defender-endpoint-false-positives-negatives.md#part-2-review-remediation-actions) that were taken for the detected entity. <br/>4. [Submit the false positive to Microsoft](/microsoft-365/security/intelligence/submission-guide.md) for analysis. <br/>5. [Define an exclusion](defender-endpoint-false-positives-negatives.md#part-3-review-or-define-exclusions) for the entity (only if necessary). |
@@ -93,8 +91,6 @@ The following table summarizes exclusion types that can be defined for Defender 
 
 > [!TIP]
 > [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) is available as a standalone plan, and is now included in Microsoft 365 E3. [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) is available as a standalone plan, and is included in Microsoft 365 E5. If you have Microsoft 365 E3 or E5, make sure you have [set up your Defender for Endpoint capabilities](deployment-strategy.md).
-
-Table 2. Indicators and exclusions.
 
 | Product/service | Exclusion types | License requirements |
 |:---|:---|:---|
