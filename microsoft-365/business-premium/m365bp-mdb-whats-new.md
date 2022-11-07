@@ -9,7 +9,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/03/2022 
+ms.date: 11/04/2022 
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -26,7 +26,7 @@ f1.keywords: NOCSH
 - [Microsoft 365 Business Premium](index.md)
 - [Microsoft Defender for Business](../security/defender-business/mdb-overview.md)
 
-This article lists new features in the latest release of Microsoft 365 Business Premium, which includes Microsoft Defender for Business. Features that are currently in preview are denoted with **(preview)**.
+This article lists new features in the latest release of [Microsoft 365 Business Premium](index.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
 
 ## November 2022
 
@@ -47,3 +47,7 @@ This article lists new features in the latest release of Microsoft 365 Business 
 ## March 2022
 
 - **Microsoft 365 Business Premium now includes Defender for Business**. See [Tech Community blog: New security solutions to help secure small and medium businesses](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/new-security-solutions-to-help-secure-small-and-medium/ba-p/3207043).
+
+## See also
+
+[What's new in Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-whats-new.md)
