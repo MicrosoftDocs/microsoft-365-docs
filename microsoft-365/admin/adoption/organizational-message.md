@@ -28,7 +28,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Adoption Score Organizational Message
 
-Organizational messages enable IT admins to deliver clear, actionable messages in-product and in a targeted way, while maintaining user-level privacy. Organizational messages in Adoption Score use targeted in-product notifications to advise on Microsoft 365 recommended practices based on Adoption Score insights. Users can be reminded to use products that have recently been deployed, encouraged to try a product on a different surface, or to recommend new ways of working, such as using @mentions to improve response rates in communications. Templatized messages are delivered to users in their flow of work through surfaces including Outlook, Excel, PowerPoint, and Word. Authorized professionals can use the organizational messages wizard in Adoption Score to choose from up to three templatized message types, define when and how often a message can be displayed, and exclude groups or priority accounts from receiving the message.
+Organizational messages enable IT admins to deliver clear, actionable messages in-product and in a targeted way, while maintaining user-level privacy. Organizational messages in Adoption Score use targeted in-product notifications to advise on Microsoft 365 recommended practices based on Adoption Score insights. Users can be reminded to use products that have recently been deployed, encouraged to try a product on a different surface, or to recommend new ways of working, such as using @mentions to improve response rates in communications. Templated messages are delivered to users in their flow of work through surfaces including Outlook, Excel, PowerPoint, and Word. Authorized professionals can use the organizational messages wizard in Adoption Score to choose from up to three templated message types, define when and how often a message can be displayed, and exclude groups or priority accounts from receiving the message.
 
 Organizational messages for Adoption Score will initially roll out to Communication, Content Collaboration, Mobility, and more to follow to support all People Experience categories. Check out the [2022 Ignite session](https://ignite.microsoft.com/en-US/sessions/ff17a80f-2fa6-4e52-b92c-745f0ca8d574?source=sessions) for a detailed demonstration and feature description.
 
@@ -55,11 +55,11 @@ The organizational message writer role is the new built-in role that allows assi
 
 ## Where will the messages appear?
 
-In this preview, we support the teaching callout and business bars in Word, Excel, PowerPoint, and Outlook Desktop Apps.
+In this preview, we support the teaching call-out and business bars in Word, Excel, PowerPoint, and Outlook Desktop Apps.
 
 Business bars are supported by Microsoft 365 Consumer subscribers, Office 2019, Office 2016, Office 2013, and Office 2010.
 
-The desktop teaching callout is supported by Microsoft 365 Consumer and Commercial Office 2019, and Office 2016 Consumer.
+The desktop teaching call-out is supported by Microsoft 365 Consumer and Commercial Office 2019, and Office 2016 Consumer.
 
 ## How to enable Adoption Score Organizational Message
 
@@ -67,14 +67,14 @@ To enable Adoption Score Organizational Message, the global administrator needs 
 
 1. Log in to the [admin center](https://admin.microsoft.com/) as a global administrator and go to **Reports** > **Adoption Score**
 
-2. Select **Enable Adoption Score**. It can take up to 24 hours for insights to become available.
+1. Select **Enable Adoption Score**. It can take up to 24 hours for insights to become available.
+
+1. Under the **Organizational Messages** tab, select **Allow approved admins to send in-product recommendations to specified users**
 
 > [!NOTE]
 > Only a global administrator can enable Adoption Score. The organizational message writer role can only opt-in for Adoption Score Organizational Messages.
 
 After Adoption Score is enabled, the global administrator and organizational message writer role can opt-in for Adoption Score Organizational Message.
-
-3. Under the **Organizational Messages** tab, select **Allow approved admins to send in-product recommendations to specified users**
 
 Visit [privacy controls for Adoption Score](privacy.md) to understand how to enable Adoption Score.
 
@@ -90,11 +90,11 @@ To see all available organizational messages, go to the **Action (Preview)** tab
 
 As global administrator or organizational message writer role, you can do any the following:
 
-- Choose a message from a set of templatized content for business bars or teaching callouts
+- Choose a message from a set of templated content for business bars or teaching call-outs
 
 - Select the recipients based on user activities, Azure AD user groups, and group level aggregates
 
-- Schedule a timeframe and frequency for delivery of the messages
+- Schedule a time frame and frequency for delivery of the messages
 
 - Save drafts anytime during the message creation process
 
@@ -102,11 +102,11 @@ As global administrator or organizational message writer role, you can do any th
 
 - Manage scheduled or active organizational messages
 
-## Choose a message for business bars or teaching callout
+## Choose a message for business bars or teaching call-out
 
 1. Under the **Messages** tab, view where the messages will appear.
 
-2. Choose a message from a set of templatized content.
+2. Choose a message from a set of templated content.
 
 3. Select **Preview this message** to see an example of what recipients will see during the date range you choose.
 
@@ -144,7 +144,7 @@ As global administrator or organizational message writer role, you can do any th
 4) Select **Next** to proceed to the **Finish** tab.
 
 > [!NOTE]
-> If the frequency of the message is set as once a week, the message will only show on one of the surfaces per week. After the user clicks or dismisses the message, it won’t show up again. Teaching callout messages only appear twice in their lifetime even if the user doesn’t click on it.
+> If the frequency of the message is set as once a week, the message will only show on one of the surfaces per week. After the user clicks or dismisses the message, it won’t show up again. Teaching call-out messages only appear twice in their lifetime even if the user doesn’t click on it.
 
 ## Finish or Save Draft
 
@@ -196,9 +196,9 @@ Once messages have been created, you will see the reporting in the table under t
 
 A: For any given message, not every user **in its selected audience** (selected as message recipients) will receive the message. This is expected behavior because message delivery depends on additional factors that impact a message’s reach, including:
 
-- **User behavior**: some delivery channels require the user to go to a specific location/app to have a chance to see the message (e.g., an Office desktop app callout message can only be delivered to a user who opens the Office desktop app).
+- **User behavior**: some delivery channels require the user to go to a specific location/app to have a chance to see the message (e.g., an Office desktop app call-out message can only be delivered to a user who opens the Office desktop app).
 
-- **System protections to prevent over-messaging and user dissatisfaction**: some communication channels have message frequency limits if too many messages are live at a given time (e.g., an Teaching callout won't appear more than twice to each user).
+- **System protections to prevent over-messaging and user dissatisfaction**: some communication channels have message frequency limits if too many messages are live at a given time (e.g., an Teaching call-out won't appear more than twice to each user).
 
 ### Q: How can I test the messages before sending them to users of my entire company?
 
