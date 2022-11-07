@@ -76,11 +76,11 @@ No setup is needed by you or your staff!
 
 **Integration with Epic EHR**: The Teams EHR connector supports patients joining virtual appointments through MyChart web and mobile. At the time of the appointment, patients can start the appointment from MyChart by using the **Begin virtual visit** button, and Teams opens in a browser.
 
-## Customize the waiting room experience with your company branding
+## Customize the waiting room with your company branding
 
 ![Information icon](media/info.png) **This feature is part of [Teams Premium]() (preview). To use this feature during the preview period, admins and users in your organization who schedule appointments need a Teams Premium trial license.**
 
-You can configure a custom waiting room experience for attendees with your company branding and content. As an admin, you use Teams meeting customization policies in the Teams admin center to define your branding by creating a meeting theme. A meeting theme can include your company's logo, a custom image, and more.
+You can configure a custom waiting room experience for attendees by adding your company branding and content. As an admin, you use Teams meeting customization policies in the Teams admin center to define your branding by creating a meeting theme. A meeting theme can include your company's logo, a custom image, and more.
 
 After you create the policy, assign it to the users in your organization who schedule appointments. Users who are assigned the policy can create branding-enabled virtual appointments. The appointments are branded by default, and anyone who joins gets a custom-branded waiting room experience.
 
@@ -106,11 +106,11 @@ Here are the browsers that are currently supported. We support the latest versio
 
 Here are some things about the user experience to know about with browser join.
 
-#### Screen sharing
+### Screen sharing
 
 The staff member who conducts the appointment can share their screen from their Teams desktop, mobile, or web client with an attendee who joins from a desktop or mobile browser. However, attendees can't share their screen from a desktop or mobile browser.
 
-#### Live captions
+### Live captions
 
 Teams can detect what's said during an appointment and display real-time captions.
 
@@ -120,7 +120,7 @@ To turn on live captions, in the meeting controls in Teams, go to **More** (**..
 
 Staff members can also change the language of the captions. The default language is English (US). The language that's set applies to everyone who has captions turned on in the appointment.
 
-#### Protected meetings
+### Protected meetings
 
 Currently, browser join doesn't support protected meeting capabilities, such as watermarks and sensitivity labels, that are part of [Teams Premium]() (preview).
 
