@@ -44,6 +44,9 @@ These articles contain procedures in the Microsoft 365 Defender Portal and in Po
 
 ## Block entries in the Tenant Allow/Block List
 
+> [!NOTE]
+> In the Tenant Allow/Block List, block entries take precedence over allow entries.
+
 Use the Submissions portal (also known as *admin submission*) at <https://security.microsoft.com/reportsubmission> to create block entries for the following types of items as you report them as false positives to Microsoft:
 
 - **Domains and email addresses**:
