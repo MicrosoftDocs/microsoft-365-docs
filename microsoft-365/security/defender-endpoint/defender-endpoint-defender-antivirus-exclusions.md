@@ -38,7 +38,7 @@ search.appverid: met150
 
 ## Introduction
 
-[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. As with any endpoint protection or antivirus solution, sometimes files, folders, or processes that are not a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they’re not actually a threat. You can take certain actions to prevent false positives and similar issues from occurring. These actions include:
+[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. As with any endpoint protection or antivirus solution, sometimes files, folders, or processes that aren't a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they’re not actually a threat. You can take certain actions to prevent false positives and similar issues from occurring. These actions include:
 
 - [Submitting a file to Microsoft for analysis](#submitting-files-for-analysis)
 - [Suppressing an alert](#suppressing-alerts)
@@ -75,7 +75,7 @@ Submitting files for analysis helps reduce false positives and false negatives f
 
 ### Suppressing alerts
 
-If you’re getting alerts in the Microsoft 365 Defender portal for tools or processes that you know are not actually a threat, you can suppress those alerts. To suppress an alert, you create a suppression rule, and specify what actions to take for that on other, identical alerts. You can create suppression rules for a specific alert on a single device, or for all alerts that have the same title across your organization.  
+If you’re getting alerts in the Microsoft 365 Defender portal for tools or processes that you know aren't actually a threat, you can suppress those alerts. To suppress an alert, you create a suppression rule, and specify what actions to take for that on other, identical alerts. You can create suppression rules for a specific alert on a single device, or for all alerts that have the same title across your organization.  
 
 To learn more, see the following articles:  
 
@@ -102,7 +102,7 @@ Table 2. Indicators and exclusions.
 | | Automation folder exclusions (for automated investigation and remediation) | Defender for Endpoint <br/>Plan 2 |
 | | Attack surface reduction exclusions | Defender for Endpoint <br/>Plan 1 or Plan 2 |
 | | Controlled folder access exclusions | Defender for Endpoint <br/>Plan 1 or Plan 2 |
-| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)| Automatic exclusions (for Windows Server 2016 and later) | Defender for Endpoint <br/>Plan 1 or Plan 2 <br/> Note: The standalone versions of Defender for Endpoint do not include server licenses. To onboard servers, you’ll need an additional license, such as [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). |
+| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)| Automatic exclusions (for Windows Server 2016 and later) | Defender for Endpoint <br/>Plan 1 or Plan 2 <br/> Note: The standalone versions of Defender for Endpoint don't include server licenses. To onboard servers, you’ll need an another license, such as [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). |
 | | Custom exclusions:  <br/> - Process-based exclusions <br/> - Folder location-based exclusions <br/> - File extension exclusions <br/> - Contextual file and folder exclusions | Defender for Endpoint <br/> Plan 1 or Plan 2 |
 | | Custom remediation actions based on threat severity or for specific threats | Defender for Endpoint <br/> Plan 1 or Plan 2 |
 
@@ -145,13 +145,13 @@ When Microsoft Defender Antivirus detects a potential threat while running a sca
 
 You can define [indicators](manage-indicators.md) with specific actions for entities, such as files, IP addresses, URLs/domains, and certificates. In Defender for Endpoint, indicators are referred to as Indicators of Compromise (IoCs), and less often, as custom indicators. When you define your indicators, you can specify one of the following actions:
 
-- **Allow** –Defender for Endpoint will not block files, IP addresses, URLs/domains, or certificates that have Allow indicators. (Use this action with caution.)
+- **Allow** –Defender for Endpoint won't block files, IP addresses, URLs/domains, or certificates that have Allow indicators. (Use this action with caution.)
 
 - **Audit** – Files, IP addresses, and URLs/domains with Audit indicators are monitored, and when they’re accessed by users, informational alerts are generated in the Microsoft 365 Defender portal.
 
 - **Block and Remediate** – Files or certificates with Block and Remediate indicators are blocked and quarantined when detected.
 
-- **Block Execution** –IP addresses and URLs/domains with Block Execution indicators are completely blocked. Users cannot access those locations.
+- **Block Execution** –IP addresses and URLs/domains with Block Execution indicators are completely blocked. Users can't access those locations.
 
 - **Warn** – IP addresses and URLs/domains with Warn indicators cause a warning message to be displayed when a user attempts to access those locations. Users can choose to bypass the warning and proceed to the IP address or URL/domain.  
 
