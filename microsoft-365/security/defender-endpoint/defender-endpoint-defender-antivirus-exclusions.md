@@ -10,7 +10,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 11/11/2022
-ms.reviewer:
+ms.reviewer: pahuijbr, yongrhee
 manager: dansimp
 ms.subservice: mde
 ms.collection: 
@@ -33,13 +33,14 @@ search.appverid: met150
 
 - Windows
 
-As a Microsoft MVP, [Fabian Bader](https://cloudbrothers.info) contributed to and provided material feedback for this article.
+> [!NOTE]
+> As a Microsoft MVP, [Fabian Bader](https://cloudbrothers.info) contributed to and provided material feedback for this article.
 
 ## Introduction
 
 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. As with any endpoint protection or antivirus solution, sometimes files, folders, or processes that are not a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they’re not actually a threat. You can take certain actions to prevent false positives and similar issues from occurring. These actions include:
 
-- [Submitting a file to Microsoft for analysi](#submitting-files-for-analysis)
+- [Submitting a file to Microsoft for analysis](#submitting-files-for-analysis)
 - [Suppressing an alert](#suppressing-alerts)
 - [Adding an exclusion or indicator](#exclusions-and-indicators)
 
@@ -130,7 +131,7 @@ Table 4. Automatic exclusions
 | Automatic exclusion type  | Examples | Resources to learn more |
 |:---|:---|:---|
 | Operating system files | %windir%\SoftwareDistribution\Datastore\*\Datastore.edb <br/> %allusersprofile%\NTUser.pol <br/> Windows Update files <br/> Windows Security files <br/> … and more | [Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions) |
-| Server roles and features  | File Replication Service (FRS) <br/> Hyper-V <br/> SYSVOL <br/> Active Directory <br/> DNS Server <br/> Print Server <br/> Web Server <br/>  Windows Server Update Services | Default exclusions for roles](configure-server-exclusions-microsoft-defender-antivirus.md# \l "default-exclusions-for-all-roles) |
+| Server roles and features  | File Replication Service (FRS) <br/> Hyper-V <br/> SYSVOL <br/> Active Directory <br/> DNS Server <br/> Print Server <br/> Web Server <br/>  Windows Server Update Services | [Default exclusions for roles](configure-server-exclusions-microsoft-defender-antivirus.md#default-exclusions-for-all-roles) |
 
 ##### Custom exclusions
 
