@@ -101,6 +101,12 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 4. Add the email address of the user in the **Up to 5 email addresses...** text box. This will make sure the new user gets the information they need to sign into Microsoft 365 services.
 5. Select **Add user** and **Download sign-in info** if you want to save this info.
 
+## Watch: Add multiple user
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198205).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aOTI?autoplay=false]
+
 ## Add multiple users at the same time in dashboard view
 
 1. Go to **Users** > **Active users**, and select **Add multiple users**.
