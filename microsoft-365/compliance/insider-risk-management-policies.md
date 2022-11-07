@@ -222,15 +222,17 @@ Cumulative exfiltration detection is enabled by default when using the following
 - Data leaks by priority users
 - Data leaks by risky users
 - 
+By default, cumulative exfiltration detection generates risk scores based on a user's cumulative exfiltration activity compared to their organization norms. You can also compare a user's exfiltration activity compared to their peer group norms by enabling this option in policy settings.
+
 ### Peer groups for cumulative exfiltration detection
 
 Insider risk management identifies three types of peer groups for analyzing exfiltration activity performed by users. Peer groups defined for users are based on the following criteria:
 
 **SharePoint sites**: insider risk management identifies peer groups based on users who access similar SharePoint sites as the user.
 
-**Similar organization**: Users with reports and team members based on organization hierarchy. Note: This requires that your organization uses Azure Active Directory to maintain organization hierarchy, 
+**Similar organization**: Users with reports and team members based on organization hierarchy.This option requires that your organization uses Azure Active Directory to maintain organization hierarchy. 
 
-**Similar job title**: Users with a combination of organizational distance and similar job titles, and users with the same job title. If your organization does not use Azure Active Directory to maintain job titles, then the detection accuracy may be lower. 
+**Similar job title**: Users with a combination of organizational distance and similar job titles. For example, a user with an account manager title with a similar role designation as a sales manager in the same organization would be identified as similar job title. This option requires that your organization uses Azure Active Directory to maintain organization hierarchy, role designations, and job titles. 
 
 > [!NOTE]
 > Cumulative exfiltration detection uses exfiltration indicators that are enabled in the global settings for insider risk management and exfiltration indicators that are selected in a policy. As such, cumulative exfiltration detection is only evaluated for the necessary exfiltration indicators selected. Cumulative exfiltration activities for [sensitivity labels](sensitivity-labels.md) configured in priority content generate higher risk scores.

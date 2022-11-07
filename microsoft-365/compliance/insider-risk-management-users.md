@@ -43,16 +43,6 @@ The **Users dashboard** automatically displays all users with active insider ris
 
 The **Users dashboard** automatically displays all users with triggering events, but that don't have an activity risk score that would create an insider risk alert. For example, a user with a reported resignation date is displayed because this activity is a triggering event but isn't an activity that has a risk score. Activities for these users are viewed by selecting the user in the **Users dashboard** and navigating to the **User activity** tab.
 
-## Users identified as potential high impact users
-
-The **Users dashboard** automatically displays all users identified as a potential high impact user. Insider risk management analyzes the following factors when determining whether a user is a potential high impact user:
-
-- **Frequency of accessing sensitive content compared to others in the organization**: This includes content with Microsoft Information Protection sensitive information types and labels, and content configured as priority content.
-
-- **User's level-from-top in organization hierarchy**: The total count of reports for a user based on your organizational hierarchy. Displays if you have organizational hierarchy configured in Azure Active Directory (Azure AD) and Microsoft Sentinel is available for your organization. To learn more about Microsoft Sentinel, see [Identify advanced threats with UEBA in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics).
-
-- **Cumulative reports**: Displays if you have organizational hierarchy configured in Azure AD and Microsoft Sentinel is available for your organization. To learn more about Microsoft Sentinel, see [Identify advanced threats with UEBA in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics).
-
 ## Users added temporarily to policies
 
 The **Users dashboard** includes users added to insider risk management policies after an unusual event outside of the insider risk management workflow. Temporarily adding users (from the Policies dashboard) is also a way to start scoring user activity for an insider risk management policy for testing the policy, even if a required connector isn't configured.

@@ -60,7 +60,7 @@ Recommended actions can help your organization quickly get with insider risk man
 The following recommendations are available to help you get started with or maximize your insider risk management configuration:
 
 - **Turn on auditing**: When turned on, user and admin activity in your organization is recorded to the Microsoft 365 audit log. Insider risk policies and analytics scans use this log to detect risk activities.
-- **Get permissions to user risk management**: The level of access you have to insider risk management features depends on which role group you were assigned. To access and configure recommended actions, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Admins* role groups.
+- **Get permissions to user risk management**: The level of access you have to insider risk management features depends on which role group you were assigned. To access and configure recommended actions, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Admin* role groups.
 - **Choose policy indicators**: Indicators are essentially the risk management activities you want to detect and investigate. You can choose indicators to track activity across several Microsoft 365 locations and services.
 - **Scan for potential insider risks**: Run an analytics scan to discover potential insider risks occurring in your org. After evaluating results, review recommended policies to set up.
 - **Assign permissions to others**: If there are additional team members who will be responsible for managing insider risk features, you'll need to assign them to the appropriate role groups.
@@ -89,7 +89,7 @@ There are six role groups used to configure insider risk management features. To
 - *Insider Risk Management* role group
 - *Insider Risk Management Admin* role group
 
-Depending on how you wish to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the Insider Risk Management role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
+Depending on how you wish to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the *Insider Risk Management* role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
 
 You'll choose from these role group options and solution actions when working with insider risk management:
 
