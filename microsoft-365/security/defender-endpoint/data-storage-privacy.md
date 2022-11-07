@@ -91,7 +91,7 @@ No. Customer data is isolated from other customers and is not shared. However, i
 
 ### At service onboarding
 
-Data from Microsoft Defender for Endpoint retained for 180 days, Visible across the portal. However, in the advanced hunting investigation experience it is accessiblt by query for a period of 30 days. 
+Data from Microsoft Defender for Endpoint is retained for 180 days, visible across the portal. However, in the advanced hunting investigation experience, it is accessible via a query for a period of 30 days. 
 
 ### At contract termination or expiration
 
