@@ -33,7 +33,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Policy timeframes](#policy-timeframes)
 - [Intelligent detections](#intelligent-detections)
 - [Export alerts](#export-alerts)
-- [Priority user groups (preview)](#priority-user-groups-preview)
+- [Priority user groups](#priority-user-groups)
 - [Priority physical assets (preview)](#priority-physical-assets-preview)
 - [Power Automate flows (preview)](#power-automate-flows-preview)
 - [Microsoft Teams (preview)](#microsoft-teams-preview)
@@ -79,7 +79,7 @@ Policy indicators are segmented into the following areas. You can choose the ind
 - **Microsoft Defender for Cloud Apps indicators (preview)**: These include policy indicators from shared alerts from Defender for Cloud Apps. Automatically enabled anomaly detection in Defender for Cloud Apps immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these risk management activities in policy alerts, select one or more indicators in this section. To learn more about Defender for Cloud Apps analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
 - **Risk score boosters**: These include raising the risk score for potentially risky activity that is above what is typical or for users with previous cases resolved as a policy violation. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. For risk management activity that is above what is typical, scores are boosted if the detected potentially risky activity deviates from activities that are considered compliant. For users with previous cases resolved as a policy violation, scores are boosted if a user had more than one case previously resolved as a confirmed policy violation. Risk score boosters can only be selected if one or more indicators are selected.
 
-In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies in global settings. Triggering events can only be modified for policies created from the *General data leaks* or *Data leaks by priority users* templates. Policies created from all other templates don't have customizable triggering indicators or events.
+In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies in global settings. Triggering events can only be modified for policies created from the *Data leaks* or *Data leaks by priority users* templates. Policies created from all other templates don't have customizable triggering indicators or events.
 
 To define the insider risk policy indicators that are enabled in all insider risk policies, navigate to **Insider risk settings** > **Indicators** and select one or more policy indicators. The indicators selected on the **Indicators** settings page can't be individually configured when creating or editing an insider risk policy in the policy wizard.
 
@@ -236,16 +236,16 @@ For each of the following domain settings, you can enter up to 500 domains:
 
 - **Third party domains:** If your organization uses third-party domains for business purposes (such as cloud storage), include them here so you can receive alerts for potentially risky activity related to the device indicator *Use a browser to download content from a third-party site*.
  
-### Sensitive info types exclusion
+### Sensitive info types exclusion (preview)
 
-Sensitive info types excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. These types will be treated as non-sensitive info types. For those files that contain any sensitive info types identified here, they will be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+[Sensitive info types](sensitive-information-type-learn-about.md) excluded in settings map to indicators and triggers involving file-related activities for Endpoint, SharePoint, Teams, OneDrive, and Exchange. These excluded types will be treated as non-sensitive info types. For those files that contain any sensitive info types identified here, they will be risk scored but not shown as activities involving content related to sensitive info types. For a complete list, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
-You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes several sensitive info types by default, such as ABA Routing Number. You can choose up to 500 sensitive info types to be excluded.
+You can select the sensitive info types to be excluded from the list of all available (out-of-box and custom) types available in the tenant. You can choose up to 500 sensitive info types to be excluded.
 
 > [!NOTE]
 > The exclusion list of sensitive info types takes precedence over the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
 
-To add sensitive info types to exclude, complete the following steps:
+To exclude sensitive info types, complete the following steps:
 
 1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
 2. In the **Sensitive info types** section, select **Add sensitive info types to exclude**.
@@ -253,6 +253,24 @@ To add sensitive info types to exclude, complete the following steps:
 4. Select **Add** accept the changes or **Cancel** to discard the changes. 
 
 To delete a sensitive info type exclusion, select the exclusion and **Delete**.
+
+### Trainable classifier exclusion (preview)
+
+[Trainable classifiers](classifier-get-started-with.md) excluded in settings map to indicators and triggers involving file-related activities for SharePoint, Teams, OneDrive, and Exchange. For those files that contain any trainable classifiers identified here, they will be risk scored but not shown as activities involving content related to trainable classifiers. To learn more, see [Trainable classifiers definitions](classifier-tc-definitions.md#trainable-classifiers-definitions) for a complete list of all pre-trained classifiers.
+
+You can select the trainable classifiers to be excluded from the list of all available (out-of-box and custom) types available in the tenant. Insider risk management excludes some trainable classifiers by default, including Threat, Profanity, Targeted harassment, Offensive language, and Discrimination. You can choose up to 500 trainable classifiers to be excluded.
+
+> [!NOTE]
+> Optionally, you can choose trainable classifiers to be included in the [priority content](insider-risk-management-policies.md#prioritize-content-in-policies) list.
+
+To exclude trainable classifiers, complete the following steps:
+
+1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
+2. In the **Trainable classifiers** section, select **Add trainable classifiers to exclude**.
+3. On the **Add or edit trainable classifiers** pane, select the classifiers that you want to exclude.
+4. Select **Add** accept the changes or **Cancel** to discard the changes. 
+
+To delete a trainable classifiers exclusion, select the exclusion and **Delete**.
 
 ### File path exclusions
 
@@ -337,15 +355,15 @@ To use the APIs to review insider risk alert information:
 
 ![Insider risk management export alert settings.](../media/insider-risk-settings-export.png)
 
-Alert information contains information from the security and compliance alert schema and the Office 365 Management Activity API common schema.
+Alert information contains information from the Security and Compliance Alerts schema and the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-schema.md#security-and-compliance-alerts-schema) common schema.
 
-The following fields and values are exported for insider risk management alerts for the Security & Compliance alert schema:
+The following fields and values are exported for insider risk management alerts for the Security and Compliance Alerts schema:
 
 | **Alert parameter** | **Description** |
 |:------------------|:----------------|
 | AlertType | Type of the alert is *Custom*.  |
 | AlertId | The GUID of the alert. Insider risk management alerts are mutable. As alert status changes, a new log with the same AlertID is generated. This AlertID can be used to correlate updates for an alert. |
-| Category | The category of the alert is *InsiderRiskManagement*. This category can be used to distinguish from these alerts from other Security & Compliance alerts. |
+| Category | The category of the alert is *InsiderRiskManagement*. This category can be used to distinguish from these alerts from other security and compliance alerts. |
 | Comments | Default comments for the alert. Values are *New Alert* (logged when an alert is created) and *Alert Updated* (logged when there's an update to an alert). Use the AlertID to correlate updates for an alert. |
 | Data | The data for the alert, includes the unique user ID, user principal name, and date and time (UTC) when user was triggered into a policy. |
 | Name | Policy name for insider risk management policy that generated the alert. |
@@ -353,7 +371,7 @@ The following fields and values are exported for insider risk management alerts 
 | Severity | The severity of the alert. Values are *High*, *Medium*, or *Low*. |
 | Source | The source of the alert. The value is *Office 365 Security & Compliance*. |
 | Status | The status of the alert. Values are *Active* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), *Resolved* (*Resolved* in insider risk), *Dismissed* (*Dismissed* in insider risk). |
-| Version | The version of the security and compliance alert schema. |
+| Version | The version of the Security and Compliance Alerts schema. |
 
 The following fields and values are exported for insider risk management alerts for the [Office 365 Management Activity API common schema](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema).
 
@@ -366,7 +384,7 @@ The following fields and values are exported for insider risk management alerts 
 - UserType
 - UserKey
 
-## Priority user groups (preview)
+## Priority user groups
 
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. Prioritizing the examination and scoring of the activities of these users can help alert you to potential risks that may have higher consequences for your organization. Priority user groups in insider risk management help define the users in your organization that need closer inspection and more sensitive risk scoring. Coupled with the *Security policy violations by priority users* and *Data leaks by priority users* policy templates, users added to a priority user group have an increased likelihood of insider risk alerts and alerts with higher severity levels.
 
@@ -383,8 +401,8 @@ To create a new priority user group, use the setting controls in the **Insider r
 Complete the following steps to create a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
-3. On the **Priority user groups (preview)** page, select **Create priority user group** to start the group creation wizard.
+2. Select the **Priority user groups** page.
+3. On the **Priority user groups** page, select **Create priority user group** to start the group creation wizard.
 4. On the **Name and describe** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the priority user group. You can't change the name of the priority user group after you complete the wizard.
     - **Description (optional)**: Enter a description for the priority user group.
@@ -403,7 +421,7 @@ To update an existing priority user group, you'll use setting controls in the **
 Complete the following steps to edit a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
+2. Select the **Priority user groups** page.
 3. Select the priority user group you want to edit and select **Edit group**.
 4. On the **Name and describe** page, update the Description field if needed. You can't update the name of the priority user group. Select **Next** to continue.
 5. On the **Choose members** page, add new members to the group using the **Choose members** control. To remove a user from the group, select the 'X' next to the user you wish to remove. Select **Next** to continue.
@@ -422,7 +440,7 @@ To delete an existing priority user group, use setting controls in the **Insider
 Complete the following steps to delete a priority user group:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups (preview)** page.
+2. Select the **Priority user groups** page.
 3. Select the priority user group you want to edit and select **Delete** from the dashboard menu.
 4. On the **Delete** dialog, select **Yes** to delete the priority user group or select **Cancel** to return to the dashboard.
 
@@ -647,7 +665,7 @@ For completed analyses, you'll see the potential risks discovered in your organi
 
 ![Insider risk management analytics overview report.](../media/insider-risk-analytics-overview.png)
 
-To display more information for an insight, select **View details** to display the details pane for the insight. The details pane includes the complete insight results, an insider risk policy recommendation, and the **Create policy** button to quickly help you create the recommended policy. Selecting Create policy takes you to the policy wizard and automatically selects the recommended policy template related to the insight. For example, if the analytics insight is for *Data leak* activity, the *General data leaks* policy template will be pre-selected in the policy wizard for you.
+To display more information for an insight, select **View details** to display the details pane for the insight. The details pane includes the complete insight results, an insider risk policy recommendation, and the **Create policy** button to quickly help you create the recommended policy. Selecting Create policy takes you to the policy wizard and automatically selects the recommended policy template related to the insight. For example, if the analytics insight is for *Data leak* activity, the *Data leaks* policy template will be pre-selected in the policy wizard for you.
 
 ![Insider risk management analytics details report.](../media/insider-risk-analytics-details.png)
 

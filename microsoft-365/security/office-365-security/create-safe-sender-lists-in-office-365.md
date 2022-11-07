@@ -35,7 +35,7 @@ The available safe sender lists are described in the following list in order fro
 
 1. Allow entries for domains and email addresses (including spoofed senders) in the Tenant Allow/Block List.
 2. Mail flow rules (also known as transport rules).
-3. Outlook Safe Senders (the Safe Senders list that's stored in each mailbox).
+3. Outlook Safe Senders (the Safe Senders list that's stored in each mailbox that affects only that mailbox).
 4. IP Allow List (connection filtering)
 5. Allowed sender lists or allowed domain lists (anti-spam policies)
 
@@ -106,7 +106,7 @@ The following example assumes you need email from contoso.com to skip spam filte
 > [!CAUTION]
 > This method creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, if a message from an entry in the user's Safe Senders or Safe Domains lists is determined to be malware or high confidence phishing, the message will be filtered.
 
-Instead of an organizational setting, users or admins can add the sender email addresses to the Safe Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+Instead of an organizational setting, users or admins can add the sender email addresses to the Safe Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Safe Senders list entries in the mailbox affect that mailbox only.
 
 This method is not desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender can still be compromised and send malicious content. You should let our filters check every message and then [report the false positive/negative to Microsoft](report-junk-email-messages-to-microsoft.md) if we got it wrong. Bypassing the filtering stack also interferes with [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).
 

@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/01/2022
+ms.date: 11/03/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -80,7 +80,7 @@ This API retrieves a list of Microsoft Defender Antivirus device antivirus healt
 #### 1.1.1 Limitations
 
 - maximum page size is 200,000
-- Rate limitations for this API are (**_example_** 30 calls per minute and 1000 calls per hour._)
+- Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
 
 #### OData supported operators
 
@@ -124,7 +124,7 @@ If successful, this method returns 200 OK with a list of device health details.
 
 ### 1.5 Properties
 
-See: [1.2 Export device antivirus health details API properties (JSON response)](device-health-api-methods-properties.md#12-export-device-antivirus-health-details-api-properties-json-response)
+See: [1.3 Export device antivirus health details API properties (JSON response)](device-health-api-methods-properties.md#13-export-device-antivirus-health-details-api-properties-json-response)
 
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
@@ -255,7 +255,7 @@ GET /api/machines/InfoGatheringExport
 
 ### 2.5 Properties
 
-See: [1.3 Export device antivirus health details API properties \(via files\)](device-health-api-methods-properties.md#13-export-device-antivirus-health-details-api-properties-via-files).
+See: [1.4 Export device antivirus health details API properties \(via files\)](device-health-api-methods-properties.md#14-export-device-antivirus-health-details-api-properties-via-files).
 
 ### 2.6 Examples
 
