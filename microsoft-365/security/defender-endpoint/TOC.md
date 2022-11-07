@@ -2,7 +2,7 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
-### [Trial user guide: Get the most out of your trial](defender-endpoint-trial-user guide.md)
+### [Trial user guide: Microsoft Defender for Endpoint](defender-endpoint-trial-user-guide.md)
 ### [Compare Microsoft endpoint security plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
