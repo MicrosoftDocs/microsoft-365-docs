@@ -187,7 +187,7 @@ sections:
             
            **If you want to have your email look like *alan\@contoso.com*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Microsoft 365](add-domain.md) if you own it already. 
             
-          - **You can replace your onmicrosoft domain after sign-up.** While you can’t rename or remove an existing onmicrosoft.com domain, you can [create a new one and make it your default onmicrosoft.com domain (your “fallback domain”)](add-or-replace-your-onmicrosoftcom-domain.md). For example, if the initial domain you chose was *fourthcoffee.onmicrosoft.com*, if needed you can create a new onmicrosoft.com domain called *fourthcoffeecorp.onmicrsoft.com* and set it to be your fallback domain. 
+          - **You can replace your onmicrosoft domain after sign-up.** While you can’t rename or remove an existing onmicrosoft.com domain, you can [create a new one and make it your default onmicrosoft.com domain (your “fallback domain”)](add-or-replace-your-onmicrosoftcom-domain.md). For example, if the initial domain you chose was *fourthcoffee.onmicrosoft.com*, if needed you can create a new onmicrosoft.com domain called *fourthcoffeecorp.onmicrosoft.com* and set it to be your fallback domain. 
                             
           - **You might not be able to change your SharePoint domain name.** Your SharePoint domain name is based on your onmicrosoft.com domain name. The ability to [change the SharePoint domain name](/sharepoint/change-your-sharepoint-domain-name) is available in public preview for organizations whose total SharePoint sites and OneDrive accounts number fewer than 1000.
               
