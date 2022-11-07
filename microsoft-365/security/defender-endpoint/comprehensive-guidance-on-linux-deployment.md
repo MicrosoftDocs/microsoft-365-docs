@@ -46,8 +46,8 @@ The following list captures the actions you'll take to deploy Microsoft Defender
 7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus.
 8. Keep the following points about exclusions in mind.
 9. Create Device Groups.
-10. Configure Microsoft Defender for Endpoint on Linux anti-malware settings.
-    10a. Add your third-party antimalware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux anti-malware settings).
+10. Configure Microsoft Defender for Endpoint on Linux antimalware settings.
+    10a. Add your third-party antimalware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux antimalware settings).
     10b. Verify that you've added your current exclusions from your third-party antimalware to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
 11. Download the Microsoft Defender for Endpoint on Linux onboarding package from the [Microsoft 365 Defender portal](https://security.microsoft.com).
 12. Use Ansible to manage Microsoft Defender for Endpoint on Linux.
@@ -68,6 +68,62 @@ The following list captures the actions you'll take to deploy Microsoft Defender
 Work with your Firewall, Proxy, and Networking admin to add the Microsoft Defender for Endpoint URLs to the allowed list, and prevent it from being SSL inspected.
 
 For more information, see, [Troubleshoot cloud connectivity issues](#troubleshoot-cloud-connectivity-issues).
+
+
+
+### Network connectivity of Microsoft Defender for Endpoint
+
+
+Use the following steps to check the network connectivity of Microsoft Defender for Endpoint:
+
+1. See [Allow URLs for the Microsoft Defender for Endpoint traffic](#allow-urls-for-the-microsoft-defender-for-endpoint-traffic) that are allowed for the Microsoft Defender for Endpoint traffic.
+2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#set-up-proxy-settings).
+3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-isnt-being-performed-on-the-network-traffic).
+
+
+#### Allow URLs for the Microsoft Defender for Endpoint traffic
+
+1. Download [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) or [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) that lists the services and their associated URLs that your network must be able to connect.
+
+2. Under **Geography** column, ensure the following checkboxes are selected:
+    - EU, or UK, or US
+    - WW
+    - (Blanks)
+
+    >[!NOTE]
+    >You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an allow rule specifically for them. 
+
+3. Work with the Firewall/Proxy/Networking admins to allow the relevant URLs.
+
+#### Set up proxy settings
+
+If the Linux servers are behind a proxy, use the following settings guidance.
+
+The following table lists the supported proxy settings:
+
+|Supported|Not supported|
+|---|---|
+|Transparent proxy |Proxy autoconfig (PAC, a type of authenticated proxy)|
+|Manual static proxy configuration |Web proxy autodiscovery protocol (WPAD, a type of authenticated proxy)|
+ 
+- [Network connections](microsoft-defender-endpoint-linux.md#network-connections)
+- [Full configuration profile](../defender-endpoint/linux-preferences.md#full-configuration-profile-example)
+- [Static proxy configuration](/defender-endpoint/linux-static-proxy-configuration.md)
+- [Troubleshooting connectivity issues in static proxy scenario](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy)
+
+#### Verify SSL inspection isn't being performed on the network traffic
+
+To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
+
+##### Troubleshoot cloud connectivity issues
+
+For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
+
+
+
+
+
+
 
 ## 2. Run a centralized performance monitoring 
 
@@ -113,30 +169,27 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 > To get help configuring exclusions, refer to your solution provider's documentation.
 
 
-
-- Depending on the non-Microsoft anti-malware running on your Linux servers, you may still be able to run Microsoft Defender for Endpoint on Linux. If the anti-malware runs FANotify, it needs to be uninstalled.
-
-- Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft anti-malware product depends on the implementation details of that product. If the other anti-malware product leverages fanotify, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents. 
+- Your ability to run Microsoft Defender for Endpoint on Linux alongside a non-Microsoft antimalware product depends on the implementation details of that product. If the other antimalware product leverages fanotify, it has to be uninstalled to eliminate performance and stability side effects resulting from running two conflicting agents. 
 
 	
-- To check if there is a non-Microsoft anti-malware that is running FANotify, you can run `mdatp health`, then check the result:
+- To check if there is a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
 		
     :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result" :::
 		
-	Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft anti-malware. 
+	Under "conflicting_applications", if you see a result other than "unavailable", then you'll need to uninstall the non-Microsoft antimalware. 
 
-- If you don't uninstall the non-Microsoft anti-malware product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
+- If you don't uninstall the non-Microsoft antimalware product, you may encounter unexpected behaviors such as performance issues, stability issues such as systems hanging, or kernel panics.
 	
-- To identify the Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft anti-malware product, run `systemctl status -l mdatp`.
+- To identify the Microsoft Defender for Endpoint on Linux processes and paths that should be excluded in the non-Microsoft antimalware product, run `systemctl status -l mdatp`.
 
-    Exclude the following processes from the non-Microsoft anti-malware product:
+    Exclude the following processes from the non-Microsoft antimalware product:
 
     `wdavdaemon`<br>
     `crashpad_handler`<br>
     `mdatp_audis_plugin`<br>
     `telemetryd_v2`<br>
 
-    Exclude the following paths from the non-Microsoft anti-malware product:
+    Exclude the following paths from the non-Microsoft antimalware product:
 
     `/opt/microsoft/mdatp/`<br>
     `/var/opt/microsoft/mdatp/`<br>
@@ -173,17 +226,17 @@ Set up your device groups, device collections, and organizational units Device g
 |[Device collections](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) enable your security operations team to manage applications, deploy compliance settings, or install software updates on the devices in your organization. <br/><br/> Device collections are created by using [Configuration Manager](/mem/configmgr/).|Follow the steps in [Create a collection](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create).|
 |[Organizational units](/azure/active-directory-domain-services/create-ou) enable you to logically group objects such as user accounts, service accounts, or computer accounts. <br/><br/> You can then assign administrators to specific organizational units, and apply group policy to enforce targeted configuration settings. <br/><br/> Organizational units are defined in [Azure Active Directory Domain Services](/azure/active-directory-domain-services).|Follow the steps in [Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](/azure/active-directory-domain-services/create-ou).|
 
-## 10. Configure Microsoft Defender for Endpoint on Linux anti-malware settings
+## 10. Configure Microsoft Defender for Endpoint on Linux antimalware settings
 
 **Before you begin**
 
-- If you're already using a non-Microsoft anti-malware product for your Linux servers:
+- If you're already using a non-Microsoft antimalware product for your Linux servers:
    - Move the existing exclusions to Microsoft Defender for Endpoint on Linux.
 
-- If you're not using a non-Microsoft anti-malware product for your Linux servers:
+- If you're not using a non-Microsoft antimalware product for your Linux servers:
    - Get a list of all your Linux applications and check the vendors website for exclusions.  
    
-- If you're running a non-Microsoft anti-malware product, then add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, check the non-Microsoft anti-malware documentation or contact their support. 
+- If you're running a non-Microsoft antimalware product, then add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, check the non-Microsoft antimalware documentation or contact their support. 
  
 - If you're testing on one machine, you can use a command line to set up the exclusions:
   - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
@@ -330,6 +383,9 @@ Set up your device groups, device collections, and organizational units Device g
      |`threatTypeSettingsMergePolicy` being set to `admin_only`|Prevents the local admin from being able to add False Positives or True Positives that are benign to the threat types (via bash (the command prompt)).|
     - Save the setting as `mdatp_managed.json` file.
     - Copy the setting to this path `/etc/opt/microsoft/mdatp/managed/`. For more information, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
+    - Add your third-party antimalware processes and paths to the exclusion list from the prior step. 
+    - Verify that you've added your current exclusions from your third-party antimalware to the prior step. 
+
 
 ### 10a. Add your third-party antimalware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux antimalware settings).
 
@@ -412,17 +468,21 @@ To deploy Microsoft Defender for Endpoint on Linux using Ansible, see [Deploy Mi
           enablerepo: packages-microsoft-[channel]
     ```
 
-Additionally, for deploying the "settings preferences" using Ansible, go through adding the steps from the previous step "How to configure Microsoft Defender for Endpoint on Linux anti-malware (AV)", by copying your `mdatp_managed.json` to `/etc/opt/microsoft/mdatp/managed/`. 
 
-### 12a. Deliver the scheduled scans cronjob setting
+
+**Deliver the scheduled scans cronjob setting**
 
 Schedule an antivirus scan using Anacron in Microsoft Defender for Endpoint on Linux. For more information, see [Schedule an antivirus scan using Anacron in Microsoft Defender for Endpoint on Linux](schedule-antivirus-scan-in-mde.md).
 
 
 
-### 12b. Deliver the Microsoft Defender for Endpoint on Linux agent cronjob settings
+**Deliver the Microsoft Defender for Endpoint on Linux agent cronjob settings**
 
 Schedule an update of the Microsoft Defender for Endpoint on Linux. For more information, see, [Schedule an update of the Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
+
+
+Additionally, for deploying the "settings preferences" using Ansible, go through adding the steps from the previous step "How to configure Microsoft Defender for Endpoint on Linux antimalware (AV)", by copying your `mdatp_managed.json` to `/etc/opt/microsoft/mdatp/managed/`. 
+
 
 ## 13. Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 
@@ -457,7 +517,7 @@ To verify Microsoft Defender for Endpoint on Linux platform updates, run the fol
 
 `sudo yum update mdatp`
 
-For more information, see [Device health and Microsoft Defender anti-malware health report](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205#M1963).
+For more information, see [Device health and Microsoft Defender antimalware health report](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205#M1963).
 
 ### How to update Microsoft Defender for Endpoint on Linux
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender for Endpoint on Linux. For more information, see [Deploy updates for Microsoft Defender for Endpoint on Linux](linux-updates.md#rhel-and-variants-centos-and-oracle-linux).
@@ -475,7 +535,7 @@ To verify Microsoft Defender for Endpoint on  Linux signatures/definition update
 
 `mdatp definitions update`
 
-For more information, see [New device health reporting for Microsoft Defender anti-malware](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205).
+For more information, see [New device health reporting for Microsoft Defender antimalware](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205).
 
 
 ## 19. Test detections
@@ -580,7 +640,7 @@ Then your next step is to uninstall your non-Microsoft antivirus, antimalware, a
 
 ## Advanced Microsoft Defender for Endpoint capabilities
 
-- [Enhanced anti-malware engine capabilities on Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-anti-malware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
+- [Enhanced antimalware engine capabilities on Linux and macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)
 
 - Boost protection of your Linux estate with behavior monitoring capabilities:
     - [Boost protection of Linux estate with behavior monitoring](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/boost-protection-of-your-linux-estate-with-behavior-monitoring/ba-p/2909320)
@@ -601,69 +661,6 @@ Then your next step is to uninstall your non-Microsoft antivirus, antimalware, a
 - [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
 
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
-
-
-
----------------------------------------
-
-
-
-
-## Network connectivity of Microsoft Defender for Endpoint
-
-To complete this step, you may need to engage with following in your organization:
-
-- Firewall admin
-- Proxy admin
-- Network admin
-
-Here's how to check the network connectivity of Microsoft Defender for Endpoint:
-
-1. See [Allow URLs for the Microsoft Defender for Endpoint traffic](#allow-urls-for-the-microsoft-defender-for-endpoint-traffic) that are allowed for the Microsoft Defender for Endpoint traffic.
-2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#set-up-proxy-settings).
-3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-is-not-being-performed-on-the-network-traffic).
-
-
-### Allow URLs for the Microsoft Defender for Endpoint traffic
-
-1. Download [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) or [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) that lists the services and their associated URLs that your network must be able to connect.
-
-2. Under **Geography** column, ensure the following checkboxes are selected:
-    - EU, or UK, or US
-    - WW
-    - (Blanks)
-
-    >[!NOTE]
-    >You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an allow rule specifically for them. 
-
-3. Work with the Firewall/Proxy/Networking admins to allow the relevant URLs.
-
-### Set up proxy settings
-
-If the Linux servers are behind a proxy, use the following settings guidance.
-
-The following table lists the supported proxy settings:
-
-|Supported|Not supported|
-|---|---|
-|Transparent proxy |Proxy autoconfig (PAC, a type of authenticated proxy)|
-|Manual static proxy configuration |Web proxy autodiscovery protocol (WPAD, a type of authenticated proxy)|
- 
-- [Network connections](microsoft-defender-endpoint-linux.md#network-connections)
-- [Full configuration profile](../defender-endpoint/linux-preferences.md#full-configuration-profile-example)
-- [Static proxy configuration](/defender-endpoint/linux-static-proxy-configuration.md)
-- [Troubleshooting connectivity issues in static proxy scenario](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy)
-
-### Verify SSL inspection isn't being performed on the network traffic
-
-To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
-
-#### Troubleshoot cloud connectivity issues
-
-For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
-
-
-
 
 
 
