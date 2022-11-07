@@ -1,8 +1,7 @@
 ---
-title: Deployment of Microsoft Defender for Endpoint on Linux
-ms.reviewer:
-description: Describes how to deploy Microsoft Defender for Endpoint on Linux
-keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
+title: Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
+description: Learn how to deploy Defender for Endpoint on Linux and address issues such as high cpu utilization
+keywords: high cpu ulitization, microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,7 +19,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Deployment of Microsoft Defender for Endpoint on Linux
+# Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
 
 This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You'll get a brief summary of the deployment steps, learn about the system requirements,  then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
 
@@ -542,7 +541,7 @@ For more information, see [New device health reporting for Microsoft Defender an
 
 To ensure that the device is correctly onboarded and reported to the service, run the following detection test:
 
-- Anti-malware detections:
+- Antimalware detections:
  
   `curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`
 
