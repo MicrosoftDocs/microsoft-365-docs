@@ -69,24 +69,21 @@ To unsubscribe from Message center emails, see [Unsubscribe from Message center 
 
 ## Relevance Recommendation
 
-For each message Microsoft will provide a recommendation for how relevant the change is for your tenant. This recommendation is based on multiple factors such as usage of the service in your tenant, changes meant to prevent or fix issue for your tenant vs changes meant to help you plan ahead or stay informed), nature of impact such as data privacy, retirement etc. and whether Microsoft has specifically targeted your tenant for the message.  
+For each new Message center post, we will provide a recommendation for how relevant the change is for your organization. This recommendation is based on multiple factors such as: 
+- Apps and service usage 
+- Changes meant to prevent or fix issues for subscription. 
+- Changes meant to help you plan ahead or stay informed. 
+- Impact changes, such as data privacy and app and service retirements.  
 
-There will be three levels of relevance:
+There are three levels of relevance: 
 
-- **High** - These are messages about chnages whihc you should act on with urgency to avoid service disruption and stay on top of feature releases with **high potential impact to your organization.** Examples are, significant feature changes, retirements for a service being heavily used by your tenant.
+-   **High** These are posts about changes in your organization which need immediate action to avoid service disruption. These can also include feature releases with high potential impact to your organization, for example, an app or service being heavily used by people in your organization. 
 
-- **Medium** - There are messages about changes which you can focus on next and plan for action at a later date, since these changes are about **services your organization moderately uses.**
-Examples are: changes or new features for a service which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement etc.
+- **Medium** These are posts about changes in your organization which don't need immediate action. . Examples are non-breaking changes or new features for a service which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement 
 
-- **Low** - These are messages about changes which you can choose to monitor to stay informed since these may not have any impact on your organization. Examples would be a change or a feature update for a service **which is not being actively used in your organization.**
+- **Low** These are posts about changes which just need monitoring. They are related to low impact apps and services in your organization. Examples would be a feature update for an app or service which isn't actively used in your organization. 
 
-You will have the capability to provide feedback on it through the feedback experience. This feedback will be used by Microsoft to improve its recommendation in the future.
 
-Relevance is a best effort recommendation provided by Microsoft to help you prioritize the changes. It is suggested that you go through all the messages and make the final assessment for your organizational needs.
-
- 1. Data Privacy messages will be defaulted to High Relevance
-
- 2. Messages where we don’t yet have usage data for services (eg: M365 suite) will be defaulted to medium relevance.
 The scores will ONLY be available for the new MC posts. This means the MC posts you already received will not get a relevance recommendation.
 
 If you see no relevance recommendation (blank) for a post, it means the MC post was published prior to the feature being enabled.
