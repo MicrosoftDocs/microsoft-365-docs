@@ -86,6 +86,8 @@ Currently, browser join supports only the logo in the meeting theme. This means 
 
 After you create the policy, assign it to the users in your organization who schedule appointments. Users who are assigned the policy can create branding-enabled virtual appointments. Anyone who joins the appointments gets a custom-branded waiting room experience.
 
+:::image type="content" source="media/browser-join-waiting-room.png" alt-text="Screenshot of a custom waiting room in Teams when joining from a browser on a mobile device" lightbox="media/browser-join-waiting-room.png":::
+
 To learn more, see [Custom organization branding for Teams meetings](https://review.learn.microsoft.com/en-us/MicrosoftTeams/custom-branding-meetings?branch=heidip-branded-meetings-2022).
 
 ## Supported browsers
