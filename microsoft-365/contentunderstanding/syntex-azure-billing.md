@@ -17,11 +17,11 @@ description: Learn about how to set up pay-as-you-go Azure billing for Microsoft
 
 # Configure Microsoft Syntex for pay-as-you-go billing in Azure (Preview)
 
-Microsoft Syntex features are billed through an Azure subscription. In this limited-time preview, you can use unstructured and prebuilt document processing (formerly document understanding) at no cost and see activity reports in Azure.
+Microsoft Syntex features are billed through an Azure subscription. In this limited-time preview, you can use prebuilt and unstructured document processing (formerly document understanding) at no cost and see activity reports in Azure.
 
 After the preview ends, document processing will be charged on a pay-as-you-go basis. You will have the option to opt in at that time. For details about the preview, see [Microsoft Syntex pay-as-you-go preview](/legal/microsoft-365/microsoft-syntex-azure-billing-trial).
 
-This preview does not include structured document processing which uses AI Builder credits.
+This preview does not include structured or freeform document processing which use AI Builder credits.
 
 ## Prerequisites
 
