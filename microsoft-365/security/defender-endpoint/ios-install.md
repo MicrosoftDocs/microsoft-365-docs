@@ -162,7 +162,7 @@ This step simplifies the onboarding process by setting up the VPN profile. For a
    - To mandate that VPN cannot be disabled in users device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, it's not configured and users can disable VPN only in the Settings.
    - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users cannot change the toggle from within the app.
 
-1. Click Next and assign the profile to targeted users.
+1. Click **Next** and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
 
 ## Zero-touch onboarding of Microsoft Defender for Endpoint
