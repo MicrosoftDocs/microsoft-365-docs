@@ -233,7 +233,6 @@ Here's a quick overview of the information you'll see in each column.
 
 In the Message center, you can select a message to see details.
 
-If you want to provide feedback on the message, in the details pane, select either the **Like** or **Dislike** icon on the bottom of the message details pane, and provide optional feedback in the text box that appears. Do not provide any personal information. You can optionally select **It's OK to contact me about this feedback** and then select **Send**.
 
 If a Message Center post is not relevant for your organization, please provide us feedback using the options demonstrated in the image below. After you click thumbs up/down on the MC post, select "this change isn't relevant to my org."
 :::image type="content" source="../../media/message-center-feedbacksection.jpg" alt-text="Message center view of feedback section.":::
