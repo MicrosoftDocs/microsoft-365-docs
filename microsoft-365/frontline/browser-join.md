@@ -82,6 +82,8 @@ No setup is needed by you or your staff!
 
 You can configure a custom waiting room experience for attendees by adding your company branding and content. As an admin, you use Teams meeting customization policies in the Teams admin center to define your branding by creating a meeting theme. A meeting theme can include your company's logo, a custom image, and more.
 
+Currently, browser join supports only the logo in the meeting theme. This means that if your meeting theme includes your company logo and a custom image, attendees who join in a browser will only see the logo.
+
 After you create the policy, assign it to the users in your organization who schedule appointments. Users who are assigned the policy can create branding-enabled virtual appointments. The appointments are branded by default, and anyone who joins gets a custom-branded waiting room experience.
 
 To learn more, see [Custom organization branding for Teams meetings](https://review.learn.microsoft.com/en-us/MicrosoftTeams/custom-branding-meetings?branch=heidip-branded-meetings-2022).
