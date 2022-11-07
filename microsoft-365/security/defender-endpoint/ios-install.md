@@ -95,7 +95,7 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 
     :::image type="content" source="images/ios-deploy-5.png" alt-text="Image of Microsoft Endpoint Manager Admin Center5." lightbox="images/ios-deploy-5.png":::
 
-1. In the next screen, select **Use configuration designer** as the format. Specify the following property:
+1. In the next screen, select **Use configuration designer** as the format. Specify the following properties:
     - Configuration Key: `issupervised`
     - Value type: String
     - Configuration Value: `{{issupervised}}`
