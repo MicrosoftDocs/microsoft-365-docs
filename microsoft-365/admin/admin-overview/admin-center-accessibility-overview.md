@@ -28,7 +28,8 @@ We prioritize inclusive design and accessibility in products and services. Micro
 ## Conformance status
 
 The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA. The Microsoft 365 admin center is partially conformant with WCAG 2.1 level AA. Partially conformant means that some parts of the content don't fully conform to the accessibility standard.
-Compatibility with browsers and assistive technology
+
+## Compatibility with browsers and assistive technology
 
 The Microsoft 365 admin center is designed to be compatible with the latest versions of NVDA, Microsoft Edge, and Google Chrome. A Microsoft 365 Admin app is available for iOS and Android, and users can use Voiceover and Talkback screen readers on those devices.
 
