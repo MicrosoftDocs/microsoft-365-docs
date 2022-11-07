@@ -228,7 +228,7 @@ Insider risk management identifies three types of peer groups for analyzing exfi
 
 **SharePoint sites**: If your organization does not have Azure Active Directory configured for organizational structure and job titles, then insider risk management identifies peer groups based on common SharePoint sites accessed by a user.
 
-**Similar organization**: Users with reports and team members based on organization hierarchy. If your organization does not use Azure Active Directory to maintain organization hierarchy, then the detection accuracy may be lower. 
+**Similar organization**: Users with reports and team members based on organization hierarchy. Note: This requires that your organization uses Azure Active Directory to maintain organization hierarchy, 
 
 **Similar job title**: Users with a combination of organizational distance and similar job titles, and users with the same job title. If your organization does not use Azure Active Directory to maintain job titles, then the detection accuracy may be lower. 
 
