@@ -182,7 +182,7 @@ Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL https://m365x
 - If the tenants are incompatible, your tenants will need to be patched/updated to ensure compatibility.
 
 >[!Note]
->We recommend waiting a period of 24-hours. If your tenants are still reporting as *incompatible*, contact support. 
+>We recommend waiting a period of 48 hours. If your tenants are still reporting as *incompatible*, contact support. 
 
 >[!Note]
 >We recommend performing the compatibility status check on a frequent basis and prior to starting ANY instances of cross tenant migrations. If the tenants are not compatible, this can result in cross-tenant migrations failing.
