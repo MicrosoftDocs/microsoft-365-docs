@@ -230,10 +230,10 @@ Figure 2. Automated investigation and remediation and indicators.
 
 ## Additional server workloads and exclusions
 
-If your organization is using additional server workloads, such as Exchange Server, SharePoint Server, or SQL Server, server roles on Windows Server are excluded by default when using their default location. However, you’ll likely need to define antivirus exclusions for your other servers. Refer to the technical documentation for your server to identify and implement the exclusions you need. Here are some examples:
+If your organization is using additional server workloads, such as Exchange Server, SharePoint Server, or SQL Server, be aware that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by the Automatic Exclusions feature (and only when using their default installation location). You’ll likely need to define antivirus exclusions for these additional workloads, or for all workloads if you disable Automatic Exclusions. Refer to the technical documentation for your server to identify and implement the exclusions you need. Here are some examples:
 
 - [Running antivirus software on Exchange Server](/exchange/antispam-and-antimalware/windows-antivirus-software?view=exchserver-2019)
-- Folders to exclude from antivirus scans on SharePoint Server
+- [Folders to exclude from antivirus scans on SharePoint Server](https://support.microsoft.com/en-us/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
 - Choosing antivirus software for SQL Server
 
 ## See also
