@@ -77,18 +77,18 @@ For each new Message center post, we will provide a recommendation for how relev
 
 There are three levels of relevance: 
 
--   **High** These are posts about changes in your organization which need immediate action to avoid service disruption. These can also include feature releases with high potential impact to your organization, for example, an app or service being heavily used by people in your organization. 
+-   **High** - These are posts about changes in your organization which need immediate action to avoid service disruption. These can also include feature releases with high potential impact to your organization, for example, an app or service being heavily used by people in your organization. 
 
-- **Medium** These are posts about changes in your organization which don't need immediate action. . Examples are non-breaking changes or new features for a service which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement 
+- **Medium**  - These are posts about changes in your organization which don't need immediate action. . Examples are non-breaking changes or new features for a service which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement 
 
-- **Low** These are posts about changes which just need monitoring. They are related to low impact apps and services in your organization. Examples would be a feature update for an app or service which isn't actively used in your organization. 
+- **Low** -  These are posts about changes which just need monitoring. They are related to low impact apps and services in your organization. Examples would be a feature update for an app or service which isn't actively used in your organization. 
 
 
-The scores will ONLY be available for the new MC posts. This means the MC posts you already received will not get a relevance recommendation.
+The scores will **ONLY** be available for the new MC posts. This means the MC posts you already received will not get a relevance recommendation.
 
 If you see no relevance recommendation (blank) for a post, it means the MC post was published prior to the feature being enabled.
 
-If you see “Processing” for a MC post, it means that the score is being computed for this post and should be available soon. You should try to refresh after a few minutes.  
+If you see “**Processing**” for a MC post, it means that the score is being computed for this post and should be available soon. You should try to refresh after a few minutes.  
 
 Once you start receiving this, please tell us if a MC post is **not relevant** to you through the **extended feedback.** This feedback is very important for us to improve the accuracy of the relevance recommendations.
 
