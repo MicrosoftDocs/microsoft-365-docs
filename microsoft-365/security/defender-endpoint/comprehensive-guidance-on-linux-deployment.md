@@ -426,7 +426,7 @@ Schedule an update of the Microsoft Defender for Endpoint on Linux. For more inf
 
 ## 13. Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 
-Learn how to troubleshoot issues that might occur during installation in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install).
+Learn how to troubleshoot issues that might occur during installation in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
 
 
