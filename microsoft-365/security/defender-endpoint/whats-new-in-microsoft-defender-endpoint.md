@@ -72,8 +72,6 @@ The new Zeek integration is available in the latest version of the Microsoft Def
 > [!NOTE]
 > This integration doesn’t currently support the use of custom scripts to gain visibility into extra signals.
 
-- [Network protection C2 detection and remediation is now generally available](network-protection.md#block-command-and-control-attacks). <br/>Attackers often compromise existing internet-connected servers to become their command and control servers. Attackers can use the compromised servers to hide malicious traffic and deploy malicious bots that are used to infect endpoints. Network protection detection and remediation will help improve the time it takes security operations (SecOps) teams to pinpoint and respond to malicious network threats that are looking to compromise endpoints.
-
 
 ## October 2022
 
