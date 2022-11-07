@@ -82,7 +82,7 @@ Policy indicators are segmented into the following areas. You can choose the ind
    - > Peer groups are defined based on organizational hierarchy, access to shared SharePoint resources, and job titles in Azure AD. If you enable cumulative exfiltration detection, your organization is agreeing to sharing Azure AD data, including organizational hierarchy and job titles. If your organization does not use Azure AD to maintain this information, then detection accuracy may be limited. 
 - **Risk score boosters**: These include raising the risk score for activity that is above user's usual activity or for users with previous cases resolved as a policy violation. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. For activity that is above user's usual activity for a day, scores are boosted if the detected activity deviates from the user's typical behavior. For users with previous cases resolved as a policy violation, scores are boosted if a user had more than one case previously resolved as a confirmed policy violation. Risk score boosters are only available if one or more indicators are selected. Options available to select in this section:
    - Activity that is above the user's usual activity for that day - scores are boosted if the detected activity deviates from the user's typical behavior.
-   - User had a previous case resolved as a policy violation
+   - User had a previous case resolved as a policy violation - scores are boosted in the user has a previous case in Insider Risk Management that was resolved as a policy violation
    - User is a member of a priority user group 
    - User is detected as a potential high impact users
    - > [!NOTE] 
