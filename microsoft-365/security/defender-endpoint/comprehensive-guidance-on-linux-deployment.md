@@ -19,7 +19,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
+# Deployment of Microsoft Defender for Endpoint on Linux
 
 This article provides advanced deployment guidance for Microsoft Defender for Endpoint on Linux. You'll get a brief summary of the deployment steps, learn about the system requirements,  then be guided through the actual deployment steps. You'll also learn how to verify that the device has been correctly onboarded.
 
