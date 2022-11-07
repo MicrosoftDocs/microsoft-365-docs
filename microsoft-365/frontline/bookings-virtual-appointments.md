@@ -187,3 +187,4 @@ Admins can use the following reports in the Teams admin center to gain insight i
 
 - [Manage the join experience for Teams Virtual Appointments on browsers](browser-join.md)
 - [Bookings app in Teams help documentation](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
+- [Teams Premium]()

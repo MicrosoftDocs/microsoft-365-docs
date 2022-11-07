@@ -47,15 +47,15 @@ Currently, browser join is available for appointments that are scheduled through
 
 ### Appointments scheduled through the Virtual Appointments app or the Bookings app
 
-Schedulers in your organization can turn on this feature for specific appointment types and for individual appointments.
+Schedulers in your organization can turn on this feature for specific appointment types and for scheduled individual appointments.
 
 After this feature is turned on, the confirmation email or SMS text that’s sent to attendees will contain a meeting join link that opens Teams in a desktop or mobile browser. For a list of supported browsers, see [Supported browsers](#supported-browsers).
 
 #### Turn on browser join for an appointment type
 
 1. Do one of the following:
-    1. In the Virtual Appointments app, go to the **Manage** tab, and then select an appointment type.
-    1. In the Bookings app, go to **Settings** > **Appointment types**, and then select an appointment type.
+    1. In the Virtual Appointments app, go to the **Manage** tab > **Appointment types**, and then under **Scheduled**, select an appointment type.
+    1. In the Bookings app, go to **Settings** > **Appointment types**, and then under **Scheduled**, select an appointment type.
 1. Turn on **Have attendees join from a web browser**.
 
 Doing this enables browser join for all appointments of this type.
@@ -76,9 +76,13 @@ No setup is needed by you or your staff!
 
 **Integration with Epic EHR**: The Teams EHR connector supports patients joining virtual appointments through MyChart web and mobile. At the time of the appointment, patients can start the appointment from MyChart by using the **Begin virtual visit** button, and Teams opens in a browser.
 
-## Admin settings
+## Customize the waiting room experience with your company branding
 
-### 
+![Information icon](media/info.png) **This feature is part of [Teams Premium]() (preview). To use this feature during the preview period, admins and users in your organization who schedule appointments need a Teams Premium trial license.**
+
+You can configure a custom waiting room experience for attendees with your company branding and content. As an admin, you use Teams meeting customization policies in the Teams admin center to define your branding by creating a meeting theme. A meeting theme can include your company's logo, a custom image, and more.
+
+After you create the policy, assign it to the users in your organization who schedule appointments. Users who are assigned the policy can create branding-enabled virtual appointments. The appointments are branded by default, and anyone who joins gets a custom-branded waiting room experience.
 
 To learn more, see [Custom organization branding for Teams meetings](https://review.learn.microsoft.com/en-us/MicrosoftTeams/custom-branding-meetings?branch=heidip-branded-meetings-2022).
 
@@ -116,8 +120,12 @@ To turn on live captions, in the meeting controls in Teams, go to **More** (**..
 
 Staff members can also change the language of the captions. The default language is English (US). The language that's set applies to everyone who has captions turned on in the appointment.
 
+#### Protected meetings
+
 ## Related articles
 
 - [Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Create an Bookings appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887)
 - [Join a Bookings appointment as an attendee](https://support.microsoft.com/office/join-a-bookings-appointment-as-an-attendee-95cea12d-2220-421f-a663-6efb20913c7f)
+- [Teams Premium]()
+- [Teams Premium - Overview for administrators](https://review.learn.microsoft.com/en-us/MicrosoftTeams/enhanced-teams-experience?branch=cmd-teams-premium-overview)

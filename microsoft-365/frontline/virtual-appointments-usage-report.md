@@ -140,3 +140,4 @@ You'll see this tab if you have a license that includes the Teams EHR connector.
 - [Virtual Appointments with Teams and the Bookings app](bookings-virtual-visits.md)
 - [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
 - [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
+- [Teams Premium]()

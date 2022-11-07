@@ -79,3 +79,4 @@ Choose **View details** to view the report. To purchase more licenses, choose **
 ## Related articles
 
 - [Teams Virtual Appointments usage report](virtual-appointments-usage-report.md)
+- [Teams Premium]()
