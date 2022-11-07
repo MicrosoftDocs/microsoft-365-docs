@@ -266,17 +266,6 @@
           href: m365-dr-legacy-move-program.md
         - name: Where is my data stored? 
           href: o365-data-locations.md
-    - name: Move to a new Microsoft 365 datacenter geo
-      href: moving-data-to-new-datacenter-geos.md
-      items: 
-        - name: How to request your data move
-          href: request-your-data-move.md
-        - name: During and after your data move
-          href: during-and-after-your-data-move.md
-        - name: Data move general FAQ
-          href: data-move-faq.md
-        - name: Where customer data is stored
-          href: o365-data-locations.md
 
 - name: Identity
   items: 

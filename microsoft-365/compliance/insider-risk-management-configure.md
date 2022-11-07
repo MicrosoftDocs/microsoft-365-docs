@@ -120,23 +120,21 @@ Members of the following roles can assign users to insider risk management role 
 > [!NOTE]
 > These role groups are currently not supported on Privileged Identity Management (PIM). To learn more about PIM, see [Assign Azure AD roles in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
 
-### Add users to an insider risk management role group
+### Add users to the Insider Risk Management role group
 
-Complete the following steps to add users to an insider risk management role group:
+Complete the following steps to add users to this role group:
 
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+2. Select **Permissions** in the left nav, and select **Roles** under the **Microsoft Purview solutions** list.
 
-3. Select the insider risk management role group you want to add users to, then select **Edit role group**.
+3. Select the *Insider Risk Management* role group, then select **Edit**.
 
-4. Select **Choose members** from the left navigation pane, then select **Edit**.
+4. Select the **Choose users** tab, then select the checkbox for all users you want to add to the role group.
 
-5. Select **Add** and then select the checkbox for all users you want to add to the role group.
+6. Choose **Select**, then **Next**.
 
-6. Select **Add**, then select **Done**.
-
-7. Select **Save** to add the users to the role group. Select **Close** to complete the steps.
+7. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
 
 ## Step 2 (required): Enable the Microsoft 365 audit log
 
@@ -216,7 +214,7 @@ A priority user group is required when using the following policy templates:
 - Security policy violations by priority users
 - Data leaks by priority users
 
-See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups-preview) article for step-by-step guidance to create a priority user group. After you've configured a priority user group, return to these configuration steps.
+See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups) article for step-by-step guidance to create a priority user group. After you've configured a priority user group, return to these configuration steps.
 
 ### Configure Physical badging connector (optional)
 
