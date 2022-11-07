@@ -60,13 +60,13 @@ After this feature is turned on, the confirmation email or SMS text that’s sen
 
 Doing this enables browser join for all appointments of this type.
 
-:::image type="content" source="media/browser-join-bookings-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types":::
+:::image type="content" source="media/browser-join-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types" lightbox="media/browser-join-appointment-type.png":::
 
 #### Turn on browser join for an individual appointment
 
 On the **Bookings schedule** tab of the Virtual Appointments app or in the Bookings app, select **New booking**, and then turn on **Have attendees join from a browser**.
 
-:::image type="content" source="media/browser-join-bookings-form.png" alt-text="Screenshot of the Have attendees join from a browser setting on the new booking form":::
+:::image type="content" source="media/browser-join-bookings-form.png" alt-text="Screenshot of the Have attendees join from a browser setting on the new booking form" lightbox="media/browser-join-bookings-form.png":::
 
 ### Appointments scheduled through the Teams EHR connector
 
