@@ -17,7 +17,7 @@ description: Learn about how to set up pay-as-you-go Azure billing for Microsoft
 
 # Configure Microsoft Syntex for pay-as-you-go billing in Azure (Preview)
 
-Microsoft Syntex features are billed through an Azure subscription. In this limited-time preview, you can use prebuilt and unstructured document processing (formerly document understanding) at no cost and see activity reports in Azure.
+Some Microsoft Syntex features are billed through an Azure subscription. In this limited-time preview, you can use prebuilt and unstructured document processing (formerly document understanding) at no cost and see activity reports in Azure.
 
 After the preview ends, document processing will be charged on a pay-as-you-go basis. You will have the option to opt in at that time. For details about the preview, see [Microsoft Syntex pay-as-you-go preview](/legal/microsoft-365/microsoft-syntex-azure-billing-trial).
 
@@ -29,7 +29,7 @@ To use Microsoft Syntex pay-as-you go, you need:
 
 - An Azure subscription
 - An Azure resource group in that subscription
-- An Azure storage account in that subscription
+- An Azure storage account in that subscription if you want to create usage reports. (See [Azure Blob Storage pricing](https://azure.microsoft.com/pricing/details/storage) for pricing.)
 
 If you already have these resources for other purposes, you can also use them with Microsoft Syntex.
 
@@ -52,22 +52,26 @@ To configure Microsoft Syntex billing
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
 
-1. In the **Files and content** section, select **Configure Microsoft Syntex**.
+1. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
 
 1. On the **Microsoft Syntex** page, select **Configure billing** to walk through the setup process.
 1. On the **Enter your Azure subscription** panel, choose an Azure subscription from the **Azure subscription** dropdown.
 1. Choose a resource group and region.
 1. Select **Save**.
 
+If you need to change or disconnect your Azure subscription, you can select **Manage billing** on the **Use content AI with Microsoft Syntex**.
+
 If you have not previously configured Microsoft Syntex, read [Set up Microsoft Syntex](set-up-content-understanding.md) to learn how.
 
 ## Monitor your Microsoft Syntex pay-as-you-go usage
 
-You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management.
+You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management. (There's no charge for this usage during the preview.)
 
 To run the report, the customer must have at least *read* access to the resource group and *contributor* access to the storage container.
 
-Pages processed are counted for every time the model runs against the document for all pages processed in the document regardless of whether there was a positive classification.  Model training does not count toward pages processed. 
+Pages processed are counted for every time the model runs against the document for all pages processed in the document regardless of whether there was a positive classification. This includes when a document is processed after being updated.
+
+Model training does not count toward pages processed.
 
 To create a report
 1. Sign in to [Azure Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview).
@@ -112,3 +116,4 @@ Filter the csv on **consumedService** = *Microsoft.Syntex*. The following column
 [Overview of Microsoft Syntex](syntex-overview.md)
 
 [Licensing for Microsoft Syntex](syntex-licensing.md)
+
