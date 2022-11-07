@@ -124,7 +124,7 @@ Staff members can also change the language of the captions. The default language
 
 Currently, browser join doesn't support protected meeting capabilities, such as watermarks and sensitivity labels, that are part of [Teams Premium]() (preview).
 
-If you've configured any of these settings in your organization, attendees won't be able to join the appointment from a desktop or mobile browser. Instead, they're prompted to install Teams and the meeting link they receive opens Teams in the desktop, mobile, or web app.
+If you've configured any of these settings in your organization, attendees won't be able to join the appointment from a desktop or mobile browser. Instead, they're prompted to download Teams and the meeting link they receive opens Teams in the desktop, mobile, or web app.
 
 ## Related articles
 
