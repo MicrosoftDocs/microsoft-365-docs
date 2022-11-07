@@ -39,15 +39,13 @@ The following list captures the actions you'll take to deploy Microsoft Defender
 1. Work with your Firewall, Proxy, and Networking admin.
 2. Run a centralized performance monitoring to capture current resource utilization. 
 3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk).
-4. (Optional) Update storage subsystem drivers (optional).
+4. (Optional) Update storage subsystem drivers.
 5. (Optional) Update nic drivers.
 6. System requirements and resource recommendations.
 7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus.
 8. Keep the following points about exclusions in mind.
 9. Create Device Groups.
-10. Configure Microsoft Defender for Endpoint on Linux antimalware settings.
-    10a. Add your third-party antimalware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux antimalware settings).
-    10b. Verify that you've added your current exclusions from your third-party antimalware to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
+10. Configure Microsoft Defender for Endpoint on Linux antimalware settings.  
 11. Download the Microsoft Defender for Endpoint on Linux onboarding package from the [Microsoft 365 Defender portal](https://security.microsoft.com).
 12. Use Ansible to manage Microsoft Defender for Endpoint on Linux.
 13. Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.
@@ -117,11 +115,6 @@ To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses ce
 ##### Troubleshoot cloud connectivity issues
 
 For more information, see [Troubleshooting cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md).
-
-
-
-
-
 
 
 ## 2. Run a centralized performance monitoring 
@@ -385,10 +378,6 @@ Set up your device groups, device collections, and organizational units Device g
     - Add your third-party antimalware processes and paths to the exclusion list from the prior step. 
     - Verify that you've added your current exclusions from your third-party antimalware to the prior step. 
 
-
-### 10a. Add your third-party antimalware processes and paths to the exclusion list from the prior step (Setup the Microsoft Defender for Endpoint on Linux antimalware settings).
-
-### 10b. Verify that you've added your current exclusions from your third-party antimalware to the prior step (Set up the Microsoft Defender for Endpoint on Linux configuration settings).
 
 ### Common Applications to Microsoft Defender for Endpoint can impact
 
