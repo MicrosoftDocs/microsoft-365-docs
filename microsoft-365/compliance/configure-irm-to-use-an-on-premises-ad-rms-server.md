@@ -15,6 +15,7 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - purview-compliance
+- tier3
 description: Learn how to configure Information Rights Management (IRM) in Exchange Online to use an Active Directory Rights Management Service (AD RMS) server.
 ms.custom: seo-marvel-apr2020
 ---

@@ -18,7 +18,7 @@ metadata:
   - intro-hub-or-landing
   author: denisebmsft #Required; your GitHub user alias, with correct capitalization.
   ms.author: deniseb #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/05/2022
+  ms.date: 11/04/2022
 
 # productDirectory section (optional)
 productDirectory:
@@ -33,8 +33,8 @@ productDirectory:
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /office/media/icons/get-started-blue.svg
-      summary: Learn about new Defender for Business capabilities in Business Premium and Microsoft 365 Lighthouse.
-      url: https://aka.ms/SMBsecurityFebBlog
+      summary: See what's new in Microsoft 365 Business Premium and Defender for Business.
+      url: /microsoft-365/business-premium/m365bp-mdb-whats-new
     # Card
     - title: Get the free partner kit
       imageSrc: /office/media/icons/education-tutorial-blue.svg
@@ -197,6 +197,9 @@ conceptualContent:
   # Card
     - title: How do I...
       links:
+        - url: ../business-premium/m365bp-mdb-whats-new.md
+          itemType: overview
+          text: See what's new in Microsoft 365 Business Premium and Defender for Business
         - url: ../admin/security-and-compliance/secure-your-business-data.md
           itemType: how-to-guide
           text: See top 10 ways to secure my business

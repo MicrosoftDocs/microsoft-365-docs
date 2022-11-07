@@ -37,7 +37,7 @@ Setting up a connector for HR data that insider risk management policies can use
 
 - Determine how to retrieve or export the data from your organization's HR system (and regularly) and add it to the CSV files that you create in Step 1. The script that you run in Step 4 will upload the HR data in the CSV files to the Microsoft cloud.
 
-- The user who creates the HR connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates the HR connector in Step 3 must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the Defender and compliance portals" section in [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 - The sample script that you run in Step 4 will upload your HR data to the Microsoft cloud so that it can be used by the insider risk management solution. This sample script isn't supported under any Microsoft standard support program or service. The sample script is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample script and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
@@ -62,13 +62,13 @@ The type of HR data to import depends on the insider risk management policy and 
 |  Policy template |  HR data type |
 |:------------------------------|:--------------------------------|
 | Data theft by departing users | Employee resignations|
-| General data leaks                             | Not applicable|
+| Data leaks                             | Not applicable|
 | Data leaks by priority users                   | Not applicable |
-| Data leaks by disgruntled users                | Job level changes, Performance reviews, Performance improvement plans|
-| General security policy violations             | Not applicable |
+| Data leaks by risky users                | Job level changes, Performance reviews, Performance improvement plans|
+| Security policy violations             | Not applicable |
 | Security policy violations by departing users  | Employee resignations|
 | Security policy violations by priority users   | Not applicable|
-| Security policy violations by disgruntled users| Job level changes, Performance reviews, Performance improvement plans |
+| Security policy violations by risky users| Job level changes, Performance reviews, Performance improvement plans |
 | Offensive language in email                    | Not applicable |
 | Healthcare policy| Employee profile |
 |||

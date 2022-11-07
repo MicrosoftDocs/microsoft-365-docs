@@ -11,7 +11,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
@@ -97,7 +97,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     ```
 
     > [!NOTE]
-    > Using ```--output json``` (note the double dash) ensures that the output format is ready for parsing.
+    > Using `--output json` (note the double dash) ensures that the output format is ready for parsing.
 
     The output of this command will show all processes and their associated scan activity.
 
@@ -108,7 +108,6 @@ The following steps can be used to troubleshoot and mitigate these issues:
     ```
 
     The output of this command should be similar to the following:
-
 
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
@@ -131,7 +130,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     ```
 
       The output of the above is a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is the process name, and the last column is the number of scanned files, sorted by impact.
-    For example, the output of the command will be something like the below: 
+    For example, the output of the command will be something like the below:
 
     ```Output
     ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
@@ -158,20 +157,20 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
 ## Troubleshoot performance issues using Microsoft Defender for Endpoint Client Analyzer
 
-
 **Applies to:**
-- Performance issues of all available Defender for Endpoint components such as AV and EDR  
+- Performance issues of all available Defender for Endpoint components such as AV and EDR
 
 The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, logs, and diagnostic information in order to troubleshoot performance issues on [onboarded devices](/microsoft-365/security/defender-endpoint/onboard-configure) on macOS.
 
 > [!NOTE]
->- The Microsoft Defender for Endpoint Client Analyzer tool is regularly used by Microsoft Customer Support Services (CSS) to collect information such as (but not limited to) IP addresses, PC names that will help troubleshoot issues you may be experiencing with Microsoft Defender for Endpoint. For more information about our privacy statement, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
->- As a general best practice, it is recommended to update the [ Microsoft Defender for Endpoint agent to latest available version](mac-whatsnew.md)  and confirming that the issue still persists before investigating further. 
+>
+> - The Microsoft Defender for Endpoint Client Analyzer tool is regularly used by Microsoft Customer Support Services (CSS) to collect information such as (but not limited to) IP addresses, PC names that will help troubleshoot issues you may be experiencing with Microsoft Defender for Endpoint. For more information about our privacy statement, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
+> - As a general best practice, it is recommended to update the [Microsoft Defender for Endpoint agent to latest available version](mac-whatsnew.md) and confirming that the issue still persists before investigating further.
 
 To run the client analyzer for troubleshooting performance issues, see [Run the client analyzer on macOS and Linux](run-analyzer-macos-linux.md).
 
 >[!NOTE]
->In case after following the above steps, the performance problem persists, please contact customer support for further instructions and mitigation. 
+>In case after following the above steps, the performance problem persists, please contact customer support for further instructions and mitigation.
 
 ## See also
 

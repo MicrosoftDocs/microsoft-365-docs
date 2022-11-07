@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.date: 05/02/2022
 ms.collection: 
-- Strat_O365_IP
+- tier1
 - purview-compliance
 search.appverid:
 - MET150
@@ -85,15 +85,15 @@ Before you can revoke an encrypted mail, gather the Message ID of the mail. The 
 
 There are multiple ways to find the Message ID of the email that you want to revoke. This section describes a couple of options, but you can use any method that provides the ID.
 
-#### To identify the Message ID of the email you want to revoke by using Message Trace in the Security &amp; Compliance Center
+#### To identify the Message ID of the email you want to revoke by using Message Trace in the Microsoft Purview compliance portal
 
-1. Search for the email by sender or recipient using [New Message Trace in Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
+1. Search for the email by sender or recipient using [New Message Trace in Microsoft Purview compliance portal](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/).
 
 2. Once you've located the email, select it to bring up the **Message trace details** pane. Expand **More Information** to locate the Message ID.
 
-#### To identify the Message ID of the email you want to revoke by using Message Encryption reports in the Security &amp; Compliance Center
+#### To identify the Message ID of the email you want to revoke by using Message Encryption reports in the Microsoft Purview compliance portal
 
-1. In the Security &amp; Compliance Center, navigate to the **Message encryption report**. For information on this report, see [View email security reports in the Security &amp; Compliance Center](../security/office-365-security/view-email-security-reports.md).
+1. In the Microsoft Purview compliance portal, navigate to the **Message encryption report**. For information on this report, see [View email security reports in the Security &amp; Compliance Center](../security/office-365-security/view-email-security-reports.md).
 
 2. Choose the **View details** table and identify the message that you want to revoke.
 
@@ -101,7 +101,7 @@ There are multiple ways to find the Message ID of the email that you want to rev
 
 ### Step 2. Verify that the mail is revocable
 
-To verify whether you can revoke a message, check whether the Revocation Status field is visible in the Encryption report, in the **Details** table in the Security &amp; Compliance Center.
+To verify whether you can revoke a message, check whether the Revocation Status field is visible in the Encryption report, in the **Details** table in the Microsoft Purview compliance portal.
 
 To verify whether you can revoke a particular email message by using Windows PowerShell, complete these steps.
 
@@ -123,11 +123,11 @@ To verify whether you can revoke a particular email message by using Windows Pow
 
 ### Step 3. Revoke the mail
 
-Once you know the Message ID of the email you want to revoke, and you have verified that the message is revocable, you can revoke the email using the Security &amp; Compliance Center or Windows PowerShell.
+Once you know the Message ID of the email you want to revoke, and you have verified that the message is revocable, you can revoke the email using the Microsoft Purview compliance portal or Windows PowerShell.
 
-To revoke the message using the Security &amp; Compliance Center
+To revoke the message using the Microsoft Purview compliance portal
 
-1. Using a work or school account that has global administrator permissions in your organization, connect to the Security & Compliance Center.
+1. Using a work or school account that has global administrator permissions in your organization, connect to the Microsoft Purview compliance portal.
 
 2. In the **Encryption report**, in the **Details** table for the message, choose **Revoke message**.
 

@@ -32,7 +32,7 @@ search.appverid: met150
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> As of August 2022, the Experts on Demand option to **Consult a threat expert** has been rebranded to **Ask Defender Experts**. This documentation is still here to support the legacy Microsoft Threat Experts service, however, if you're interested to explore the service beyond your current license, refer to [Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/defender-experts-for-hunting). Microsoft Defender Experts for Hunting subscription includes [Experts on Demand](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting?view=o365-worldwide#collaborate-with-experts-on-demand).
+> As of August 2022, the Experts on Demand option to **Consult a threat expert** has been rebranded to **Ask Defender Experts**. This documentation is still here to support the legacy Microsoft Threat Experts service, however, if you're interested to explore the service beyond your current license, refer to [Microsoft Defender Experts for Hunting](/microsoft-365/security/defender/defender-experts-for-hunting). Microsoft Defender Experts for Hunting subscription includes [Experts on Demand](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting).
 
 Customers can engage our security experts directly from within Microsoft 365 Defender portal to get their response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised devices, root cause of a suspicious network connection, to more threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 
@@ -50,7 +50,7 @@ You can partner with Microsoft Defender Experts who can be engaged directly from
 > [!NOTE]
 >
 > - Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
-> - You need to have the **Manage security settings** permission in the Microsoft 365 Defender portal to be able to submit the **Ask Defender Experts** inquiry.
+> - You need to have the **[Manage security settings](../defender-endpoint/user-roles.md)** permission in the Microsoft 365 Defender portal to be able to submit the **Ask Defender Experts** inquiry.
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or device is in view before you send an investigation request.
 

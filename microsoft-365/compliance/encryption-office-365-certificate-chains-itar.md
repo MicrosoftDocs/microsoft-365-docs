@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 ms.collection:
 - purview-compliance
-- Strat_O365_IP
+- tier1
 description: "View a complete list of DOD and GCC High root certificates and certificate authorities (CAs) in Microsoft 365."
 ---
 

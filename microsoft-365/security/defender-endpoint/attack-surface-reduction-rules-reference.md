@@ -10,11 +10,11 @@ ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
-ms.author: v-jweston
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: reference
 ms.collection: 
 - m365-security
 - tier2

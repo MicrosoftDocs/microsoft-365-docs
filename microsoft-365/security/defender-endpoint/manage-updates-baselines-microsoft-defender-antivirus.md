@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/10/2022
+ms.date: 11/07/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -84,11 +84,41 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>September-2022 (Platform: 4.18.2209.x | Engine: 1.1.19700.3)</summary>
+<summary>October-2022 (Platform: 4.18.2210.4 | Engine: 1.1.19800.x)</summary>
+
+&ensp;Security intelligence update version: **x.x**<br/>
+&ensp;Release date: **October 31, 2022**<br/>
+&ensp;Platform: **4.18.2210.4**<br/>
+&ensp;Engine: **1.1.19800.x**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19800.x (*final version number coming soon*)<br/>
+Security intelligence update version: x.x (*coming soon*)<br/>
+
+### What's new
+
+- Improved hang detection in antivirus engine 
+- Added opt-in for defender updates during OOBE (out of box experience) process 
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
+- Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
+- Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
+- Added randomize scheduled task times configuration to Intune policy 
+- Added manageability for `DisableSMTPParsing` network protection 
+- Added improvement for behavior monitoring 
+- Normalized date format for event 1151 for Windows Defender 
+- Fixed a deadlock related to updating `\device\cdrom*` exclusions upon mounting a cdrom drive under certain conditions 
+- Improved PID information for threat detection 
+
+### Known Issues
+
+- None  
+<br/><br/>
+</details><details>
+<summary>September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)</summary>
 
 &ensp;Security intelligence update version: **1.377.8.0**<br/>
 &ensp;Release date: **October 10, 2022**<br/>
-&ensp;Platform: **4.18.2209.x**<br/>
+&ensp;Platform: **4.18.2209.7**<br/>
 &ensp;Engine: **1.1.19700.3**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
@@ -139,14 +169,21 @@ Security intelligence update version: 1.373.1647.0 <br/>
 - None
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary>July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)</summary>
 
 &ensp;Security intelligence update version: **1.373.219.0**<br/>
 &ensp;Release date: **August 15, 2022**<br/>
 &ensp;Platform: **4.18.2207.5**<br/>
 &ensp;Engine: **1.1.19500.2**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19300.2<br/>
 Security intelligence update version: 1.373.219.0 <br/>
@@ -177,14 +214,7 @@ Security intelligence update version: 1.373.219.0 <br/>
 - Customers deploying platform update 4.18.2207.5 might experience lagging network performance that could impact applications.
 
 <br/><br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary>May-2022 (Platform: 4.18.2205.7 | Engine: 1.1.19300.2)</summary>
 
 &ensp;Security intelligence update version: **1.369.88.0**<br/>
@@ -839,6 +869,36 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20221102.3</summary>
+
+&ensp;Defender package version: **20221102.3**<br/>
+&ensp;Security intelligence version: **1.377.1180.0**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Platform version: **4.18.2210.4**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
+<summary>20221014.1</summary>
+
+&ensp;Package version: **20221014.1**<br/>
+&ensp;Platform version: **4.18.2209.7**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Signature version: **1.373.208.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220929.1</summary>
 
 &ensp;Package version: **20220929.1**<br/>

@@ -190,7 +190,7 @@ For more information about this setting, see [Advanced phishing thresholds in an
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Phishing email threshold** <br><br> _PhishThresholdLevel_|**1 - Standard** <br><br> `1`|**3 - More aggressive** <br><br> `2`|**4 - Most aggressive** <br><br> `3`||
+|**Phishing email threshold** <br><br> _PhishThresholdLevel_|**1 - Standard** <br><br> `1`|**3 - More aggressive** <br><br> `3`|**4 - Most aggressive** <br><br> `4`||
 
 #### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 

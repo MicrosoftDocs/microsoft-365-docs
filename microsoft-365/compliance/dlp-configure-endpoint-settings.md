@@ -44,7 +44,7 @@ Before you get started, you should set up your DLP settings.
 
 ### Endpoint DLP Windows 10/11 and macOS settings
 
-|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later |Notes  |
+|Setting |Windows 10, 1809 and later, Windows 11  |macOS (three latest released versions) |Notes  |
 |---------|---------|---------|---------|
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Restricted apps     |Supported         |Supported         |         |
@@ -236,19 +236,67 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 > [!NOTE]
 > The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installed.
 
-You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
+You can control whether sensitive files that are protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
-If the list mode is set to **Block**, then user won't be able to upload sensitive items to those domains. When an upload action is blocked because an item matches a DLP policy, DLP will either generate a warning or block the upload of the sensitive item.
+##### Allow
 
-If the list mode is set to **Allow**, then users will be able to upload sensitive items ***only*** to those domains, and upload access to all other domains isn't allowed.
+When the **Service domains** list is set to **Allow**, DLP policies won't be applied when a user attempts to upload a sensitive file to any of the domains on the list.
+
+If the list mode is set to **Allow**, any user activity involving a sensitive item and a domain that's on the list will be audited. The activity is allowed. When a user attempts an activity involving a sensitive item and a domain that *isn't* on the list then DLP policies, and the actions defined in the policies, are applied.
+
+For example, with this configuration:
+
+- **Service domains** list mode is set to **Allow**.
+    - Contoso.com is on the list.
+    -  A DLP policy is set to **Block** upload of sensitive items that contain credit card numbers.
+ 
+User attempts to:
+
+- Upload a sensitive file with credit card numbers to contoso.com.
+    - The user activity is allowed, audited, an event is generated, but it won't list the policy name or the triggering rule name in the event details, and no alert is generated. 
+
+but if a user attempts to: 
+
+- Upload a sensitive file with credit card numbers to wingtiptoys.com (which is not on the list).
+    - The policy is applied and the user activity is blocked. An event is generated, and an alert is generated. 
+ 
+##### Block
+ 
+When the **Service domains** list is set to **Block**, DLP policies will be applied when a user attempts to upload a sensitive file to any of the domains on the list.
+
+If the list mode is set to **Block**, when a user attempts an activity involving a sensitive item and a domain that is on the list then DLP policies, and the actions defined in the polices, are applied. Any activity involving a sensitive item and a domain that is not on the list will be audited and the user activity is allowed.
+
+For example, with this configuration:
+
+- **Service domains** list mode is set to **Block**.
+    - Contoso.com is on the list.
+-  A DLP policy is set to **Block with override** for the upload of sensitive items that contain credit card numbers.
+ 
+User attempts to:
+
+- Upload a sensitive file with credit card numbers to contoso.com.
+    - The user activity is blocked, but the user can override the block, an event is generated and an alert is triggered.
+
+but if a user attempts to: 
+
+- Upload a sensitive file with credit card numbers to wingtiptoys.com (which is not on the list).
+    - The policy *isn't* applied and the user activity is audited. An event is generated, but it won't list the policy name or the triggering rule name in the event details, and no alert is generated. 
 
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
 
-Use the FQDN format of the service domain without the ending `.` 
+Summary table
+
+
+|Service domain list setting |Upload sensitive item to site on list  |Upload sensitive item to site not on list  |
+|---------|---------|---------|
+|Allow   |- No DLP policies are applied </br> - User activity is audited </br> - Event generated        | - DLP policies are applied </br> - Configured actions are taken </br>- Event is generated </br>- Alert is generated          |
+|Block    | - DLP policies are applied </br> - Configured actions are taken </br> - Event is generated </br> - Alert is generated         | - No DLP policies are applied </br> - User activity is audited </br>- Event is generated         |
+
+
+Use the FQDN format of the service domain without the ending `.` when you add a domain to the list.
 
 For example:
-
 
 | Input | URL matching behavior |
 |---|---|
@@ -266,6 +314,30 @@ When you list a website in Sensitive services domains you can audit, block with 
 - upload a sensitive file to an excluded website (this is configured in the policy)
 
 For the print, copy data and save actions, each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. For the upload action, the user can be using Microsoft Edge or Google Chrome with the Purview extension. Sensitive service domains is used in conjunction with a DLP policy for Devices. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+
+
+##### Supported syntax for designating websites in a website group
+
+You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+
+- use `*` as a wildcard to specify all domains or all subdomains
+- use `/` as a terminator at the end of a URL to scope to that specific site only.
+
+When you add a URL without a terminating `/`, that URL is scoped to that site and all subsites.
+
+This syntax applies to all http/https websites.
+
+Here are some examples:
+
+
+|URL that you add to the website group  |URL will match  | URL will not match|
+|---------|---------|---------|
+|contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2|        //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com.au    |
+|contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/au   |
+|*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
+|*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
+|*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
+
 
 
 ### Additional settings for endpoint DLP
@@ -304,7 +376,7 @@ File activity will always be audited for onboarded devices, regardless of whethe
 
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
 
-This feature is available for devices running any of the following Windows versions :  
+This feature is available for devices running any of the following Windows versions:  
 
 - Windows 10 and later (20H2, 21H1, 21H2) 
 - Win 11 21H2, 22H2
@@ -350,7 +422,7 @@ The most common use case is to use printers groups as an allowlist as in the abo
 
 Use this setting to define groups of removable storage devices, like USB thumb drives, that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block copying of items with engineering specifications to all removeable storage devices, except for USB connected hard drives that are used to back up data and are then sent offsite.
 
-This feature is available for devices running any of the following Windows versions :  
+This feature is available for devices running any of the following Windows versions:  
 
 - Windows 10 and later (20H2, 21H1, 21H2) 
 - Win 11 21H2, 22H2
@@ -359,8 +431,8 @@ This feature is available for devices running any of the following Windows versi
 You can define removeable storage devices by these parameters:
 
 - Storage device friendly name - Get the Friendly name value from the storage device property details in device manager.
-- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
-- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB product ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB vendor ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - Serial number ID - Get the serial number ID value from the storage device property details in device manager.
 - Device ID - Get the device ID value from the storage device property details in device manager.
 - Instance path ID - Get the device ID value from the storage device property details in device manager.

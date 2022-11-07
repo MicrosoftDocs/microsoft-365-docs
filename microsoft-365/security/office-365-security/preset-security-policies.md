@@ -201,7 +201,7 @@ You might want to apply the **Standard** or **Strict** preset security policies 
 
    Each entry consists of a display name and an email address. Enter each value in the boxes and then click **Add**. Repeat this step as many times as necessary.
 
-   You can specify a maximum of 350 users, and you can't specify the same user in the user impersonation protection settings in multiple policies.
+   You can specify a maximum of 301 users, and you can't specify the same user in the user impersonation protection settings in multiple policies.
 
    To remove an existing entry from the list, click ![Remove user from impersonation protection icon.](../../media/m365-cc-sc-remove.png).
 
