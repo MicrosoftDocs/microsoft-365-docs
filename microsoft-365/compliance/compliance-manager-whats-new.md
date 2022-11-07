@@ -26,6 +26,10 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## November 2022
+
+Improvement actions now provide greater visibility into related controls and assessments so you can better understand the impact of completing an action. Each improvement action details page has a new [**Related controls** tab](compliance-manager-improvement-actions.md#related-controls) that lists all the controls associated to the action, with a link to each control's description. The improvement action details page also has a **View all** link underneath **Assessments** which brings up a list of all the assessments related to the action.
+
 ## August 2022
 
 Compliance Manager has published the following new assessment template:

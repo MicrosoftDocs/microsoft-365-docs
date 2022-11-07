@@ -51,7 +51,7 @@ Each improvement action details page has the following sections:
 
 - **Related controls** tab: Lists the controls associated with the improvement action. Select a control name to view its description.
 
-- **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work
+- **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work.
 
 > [!TIP]
 > Learn more about the different [types of improvement actions and how points are awarded](compliance-score-calculation.md#action-types-and-points) and factored into your compliance score.
