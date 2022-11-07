@@ -1,6 +1,6 @@
 ---
 title: Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
-description: Businesses of all sizes can use this guide to *************************************
+description: Learn about exclusions for Defender for Endpoint and Microsoft Defender Antivirus. Suppress alerts, submit files for analysis, and define exclusions and indicators to reduce noise and risk for your organization.
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
