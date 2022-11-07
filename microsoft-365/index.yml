@@ -10,7 +10,9 @@ metadata:
   description: Find the solutions, scenarios, and resources you need to get started with Microsoft 365, including Office, for your business or organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-enterprise #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  ms.collection: m365-security-compliance
+  ms.collection: 
+    - m365-security-compliance
+    - EngageScoreNov2022
   ms.custom: intro-hub-or-landing
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
