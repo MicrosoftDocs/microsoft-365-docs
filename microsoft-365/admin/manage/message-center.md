@@ -90,7 +90,7 @@ If you see no relevance recommendation (blank) for a post, it means the MC post 
 
 If you see “**Processing**” for a MC post, it means that the score is being computed for this post and should be available soon. You should try to refresh after a few minutes.  
 
-Once you start receiving this, please tell us if a MC post is **not relevant** to you through the **extended feedback.** This feedback is very important for us to improve the accuracy of the relevance recommendations.
+Once you start receiving this, please tell us if a MC post is **not relevant** to you through the [**extended feedback.**](#give-feedback-on-a-post)  This feedback is very important for us to improve the accuracy of the relevance recommendations.
 
 ## Filter messages
 
