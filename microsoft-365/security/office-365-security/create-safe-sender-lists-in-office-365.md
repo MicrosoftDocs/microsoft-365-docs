@@ -135,11 +135,14 @@ The next best option is to add the source email server or servers to the IP Allo
 >
 > This method creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, if a message from an entry in the allowed senders or allowed domains lists is determined to be malware or high confidence phishing, the message will be filtered.
 >
-> Do not use domains you own (also known as accepted domains) or popular domains (for example, microsoft.com) in allowed domain lists.
+> Do not use popular domains (for example, microsoft.com) in allowed domain lists.
 
 The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option _if at all possible_ because senders bypass all spam, spoof, phishing protection (except high confidence phishing), and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md) topic.
 
 The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
+
+> [!NOTE]
+> As of September 2022, if an allowed sender, domain, or subdomain is in an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization, that sender, domain, or subdomain must pass [email authentication](email-validation-and-authentication.md) checks in order to skip anti-spam filtering.
 
 ## Considerations for bulk email
 
