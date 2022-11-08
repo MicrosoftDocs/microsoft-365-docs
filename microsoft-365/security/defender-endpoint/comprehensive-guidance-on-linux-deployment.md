@@ -36,28 +36,53 @@ To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, se
 
 Learn about the general guidance on a typical Microsoft Defender for Endpoint on Linux deployment. The applicability of some steps is determined by the requirements of your Linux environment. 
 
-1. Work with your Firewall, Proxy, and Networking admin.
-2. Run a centralized performance monitoring to capture current resource utilization. 
-3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk).
-4. (Optional) Update storage subsystem drivers.
-5. (Optional) Update nic drivers.
-6. Check system requirements and resource recommendations.
-7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus.
-8. Keep the following points about exclusions in mind.
-9. Create Device Groups.
-10. Configure Microsoft Defender for Endpoint on Linux antimalware settings.  
-11. Download the Microsoft Defender for Endpoint on Linux onboarding package from the [Microsoft 365 Defender portal](https://security.microsoft.com).
-12. Use Ansible to manage Microsoft Defender for Endpoint on Linux.
-13. Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.
-14. Rerun resource utilization statistics and report on pre-deployment utilization compared to post-deployment.
-15. Verify communication with Microsoft Defender for Endpoint backend.
-16. Investigate agent health issues.
-17. Verify that you're able to get "Platform Updates" (agent updates).
-18. Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates).
-19. Test detections.
-20. Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux.
-21. Troubleshooting High CPU utilization by ISVs, Linux apps, or scripts.
-22. Uninstall your non-Microsoft solution.
+[1. Work with your Firewall, Proxy, and Networking admin.](#1-work-with-your-firewall-proxy-and-networking-admin)
+
+[2. Run a centralized performance monitoring to capture current resource utilization.](#2-run-a-centralized-performance-monitoring)
+
+[3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk).](#3-optional-check-for-filesystem-errors-fsck-akin-to-chkdsk)
+
+[4. (Optional) Update storage subsystem drivers.](#4-optional-update-storage-subsystem-drivers)
+
+[5. (Optional) Update nic drivers.](#5-optional-update-nic-drivers)
+
+[6. Check system requirements and resource recommendations.](#6-system-requirements-and-resource-recommendations)
+
+[7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus.](#7-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus)
+
+[8. Keep the following points about exclusions in mind.](#8-keep-the-following-points-about-exclusions-in-mind)
+
+[9. Create Device Groups.](#9-create-device-groups)
+
+[10. Configure Microsoft Defender for Endpoint on Linux antimalware settings.](#10-configure-microsoft-defender-for-endpoint-on-linux-antimalware-settings)
+
+[11. Download the Microsoft Defender for Endpoint on Linux onboarding package from the Microsoft 365 Defender portal.](#11-download-the-microsoft-defender-for-endpoint-on-linux-onboarding-package)
+
+[12. Use Ansible to manage Microsoft Defender for Endpoint on Linux.](#12-use-ansible-to-manage-microsoft-defender-for-endpoint-on-linux)
+
+[13. Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.](#13-troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux)
+
+[14. Rerun resource utilization statistics and report on pre-deployment utilization compared to post-deployment.](#14-rerun-resource-utilization-statistics)
+
+[15. Verify communication with Microsoft Defender for Endpoint backend.](#15-verify-communication-with-microsoft-defender-for-endpoint-backend)
+
+[16. Investigate agent health issues.](#16-investigate-agent-health-issues)
+
+[17. Verify that you're able to get "Platform Updates" (agent updates).](#17-verify-that-youre-able-to-get-platform-updates-agent-updates)
+
+
+[18. Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates).](#18-verify-that-youre-able-to-get-security-intelligence-updates-signaturesdefinition-updates)
+
+[19. Test detections.](#19-test-detections)
+
+
+[20. Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux.](#20-troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux)
+
+
+[21. Troubleshooting High CPU utilization by ISVs, Linux apps, or scripts.](#21-troubleshoot-high-cpu-utilization-by-isvs-linux-apps-or-scripts)
+
+
+[22. Uninstall your non-Microsoft solution.](#22-uninstall-your-non-microsoft-solution)
 
 
 ## 1. Work with your Firewall, Proxy, and Networking admin
