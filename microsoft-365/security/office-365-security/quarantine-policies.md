@@ -531,7 +531,7 @@ The global settings for quarantine policies allow you to customize the quarantin
 
    :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="Quarantine notification settings flyout in the Microsoft 365 Defender portal." lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
 
-please note that we don't allow the same display name, the same subject, or the same disclaimer for different languages. so, the customer needs to provide different display name / subject / disclaimer for different languages selected
+Please note that we don't allow the same display name, the same subject, or the same disclaimer for different languages. You should provide a different display name, subject, and disclaimer for each language selected.
 
 ## View quarantine policies in the Microsoft 365 Defender portal
 
