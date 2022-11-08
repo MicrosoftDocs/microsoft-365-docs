@@ -96,9 +96,9 @@ The following table summarizes exclusion types that can be defined for Defender 
 
 | Product/service | Exclusion types  |
 |:---|:----|
-| [Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | <ul><li>Indicators for files, certificates, or IP addresses, URLs/domains</li><li>Attack surface reduction exclusions</li><li>Controlled folder access exclusions</li></ul>  |
+| [Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | <br/>- Indicators for files, certificates, or IP addresses, URLs/domains<br/>- Attack surface reduction exclusions<br/>- Controlled folder access exclusions  |
 | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) | Automation folder exclusions (for automated investigation and remediation)  |
-| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) <br/>[Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | <ul><li>Custom remediation actions based on threat severity or for specific threats </li><li>Custom exclusions, such as:  <br/> - Process-based exclusions <br/> - Folder location-based exclusions <br/> - File extension exclusions <br/> - Contextual file and folder exclusions</li><li>Automatic exclusions (for Windows Server 2016 and later) <br/> *The standalone versions of Defender for Endpoint don't include server licenses. To onboard servers, you’ll need an another license, such as [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction).*</li><li> |
+| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) <br/>[Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | <br/>- Custom remediation actions based on threat severity or for specific threats <br/>- Custom exclusions, such as process-based exclusions, folder location-based exclusions, file extension exclusions, or contextual file and folder exclusions<br/>- Automatic exclusions (for Windows Server 2016 and later) <br/><br/> *The standalone versions of Defender for Endpoint don't include server licenses. To onboard servers, you’ll need an another license, such as [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction).*</li><li> |
 
 The following sections describe these exclusions in more detail:
 
