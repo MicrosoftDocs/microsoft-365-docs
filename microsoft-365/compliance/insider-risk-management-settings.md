@@ -84,7 +84,7 @@ Policy indicators are segmented into the following areas. You can choose the ind
 - **Risk score boosters**: These include raising the risk score for activity for the following reasons:
    - *Activity that is above the user's usual activity for that day*: Scores are boosted if the detected activity deviates from the user's typical behavior.
    - *User had a previous case resolved as a policy violation*: Scores are boosted in the user has a previous case in Insider Risk Management that was resolved as a policy violation.
-   - *User is a member of a priority user group*: Scores are boosted if the user is a member of a priority user group.  Note: If a user is a member of a priority user group and has been  identified as a potential high impact user, then their score will only be boosted once.
+   - *User is a member of a priority user group*: Scores are boosted if the user is a member of a priority user group. If a user is a member of a priority user group and has been identified as a potential high impact user, then their score will only be boosted once.
    - *User is detected as a potential high impact user*: When this is enabled, users are automatically flagged as potential high impact users based on the following criteria:
       - User interacts with more sensitive content compared to others in the organization
       - The user's level in organization's Azure AD hierarchy
