@@ -31,7 +31,6 @@ This article lists new features in the latest release of [Microsoft 365 Business
 ## November 2022
 
 - **[Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md)**, a new add-on for Defender for Business, is now generally available. To learn more, see the following articles:
-   
    - [How to get Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md)
    - [Tech Community Blog: Server security made simple for small businesses](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/server-security-made-simple-for-small-businesses/ba-p/3648928)
 
