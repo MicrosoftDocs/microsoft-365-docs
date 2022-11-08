@@ -496,6 +496,9 @@ The global settings for quarantine policies allow you to customize the quarantin
 
 3. In the **Quarantine notification settings** flyout that opens, configure the following settings:
 
+   > [!NOTE]
+   > We don't allow the same display name, subject, or disclaimer text for different languages. You need to provide a different display name, subject, and disclaimer text for each language that you select.
+
    - Customize quarantine notifications based on the recipient's language:
 
      - The **Display name** of the sender that's used in quarantine notifications as shown in the following screenshot.
@@ -530,8 +533,6 @@ The global settings for quarantine policies allow you to customize the quarantin
 4. When you're finished, click **Save**.
 
    :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="Quarantine notification settings flyout in the Microsoft 365 Defender portal." lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
-
-Please note that we don't allow the same display name, the same subject, or the same disclaimer for different languages. You should provide a different display name, subject, and disclaimer for each language selected.
 
 ## View quarantine policies in the Microsoft 365 Defender portal
 
