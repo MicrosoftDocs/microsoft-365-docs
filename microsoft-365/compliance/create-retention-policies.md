@@ -74,7 +74,7 @@ When you've more than one retention policy, and when you also use retention labe
 > [!NOTE]
 > Retention policies support [shared channels](/MicrosoftTeams/shared-channels). When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
 > 
-> Retention policies also support newly created call data records, which are system-generated messages that contain [metadata for meetings and calls](/MicrosoftTeams/ediscovery-investigation#teams-metadata). However, call data records for private channel messages are included in the **Teams chats** location, instead of the **Teams private channel messages** location.
+> Retention policies also support newly created call data records, which are system-generated messages that contain [metadata for meetings and calls](/MicrosoftTeams/ediscovery-investigation#teams-metadata). All call data records are always included in the **Teams chats** location, even call data records for Teams channel messages and Teams proviate channel messages.
 
 1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
 
@@ -109,7 +109,7 @@ For technical details about how retention works for Teams, including what elemen
 
 - When you select **Edit** for the Teams chats location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
-- To include newly created call data records for Teams private channel messages, you must select the **Teams chats** location, instead of the **Teams private channel messages** location.
+- To include newly created call data records for Teams channel messages and Teams private channel messages, you must select the **Teams chats** location, instead of the **Teams channel messages** and **Teams private channel messages** locations.
 
 
 #### Additional retention policy needed to support Teams
