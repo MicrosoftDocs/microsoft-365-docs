@@ -213,7 +213,10 @@ To learn more about sequence detection management in the **User activity** view,
 
 With privacy on by default, insider risk indicators help identify unusual levels of risk activities when evaluated daily for users that are in-scope for insider risk policies. Cumulative exfiltration detection uses machine learning models to help you identify when exfiltration activities that a user performs over a certain time exceeds the normal amount performed by users in your organization for the past 30 days over multiple exfiltration activity types. For example, if a user shared more files than most users over the past month, this activity would be detected and classified as a cumulative exfiltration activity.
 
-Insider risk management analysts and investigators may use cumulative exfiltration detection insights to help identify exfiltration activities that may not typically generate [alerts](insider-risk-management-activities.md#alert-dashboard) but are above what is typical for their organization. Some examples may be departing users slowly exfiltrate data across a range of days, or when users repeatedly share data across multiple channels more than usual for data sharing for your organization, or compared to their peer groups.  Higher risk scores are assigned to cumulative exfiltration activities for SharePoint sites, sensitive information types, and content with [sensitivity labels](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) configured as priority content in a policy or for activity involving labels configured as high priority in Microsoft Purview Information Protection.
+Insider risk management analysts and investigators may use cumulative exfiltration detection insights to help identify exfiltration activities that may not typically generate [alerts](insider-risk-management-activities.md#alert-dashboard) but are above what is typical for their organization. Some examples may be departing users slowly exfiltrate data across a range of days, or when users repeatedly share data across multiple channels more than usual for data sharing for your organization, or compared to their peer groups.
+>[!NOTE]
+> By default, cumulative exfiltration detection generates risk scores based on a user's cumulative exfiltration activity compared to their organization norms. You can enable *Cumulative exfiltration detection* options in the **Policy indicators** section of the Insider risk management settings page.
+Higher risk scores are assigned to cumulative exfiltration activities for SharePoint sites, sensitive information types, and content with [sensitivity labels](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) configured as priority content in a policy or for activity involving labels configured as high priority in Microsoft Purview Information Protection.
 
 Cumulative exfiltration detection is enabled by default when using the following policy templates:
 
@@ -221,19 +224,18 @@ Cumulative exfiltration detection is enabled by default when using the following
 - Data leaks
 - Data leaks by priority users
 - Data leaks by risky users
-- 
-By default, cumulative exfiltration detection generates risk scores based on a user's cumulative exfiltration activity compared to their organization norms. You can also compare a user's exfiltration activity compared to their peer group norms by enabling this option in policy settings.
 
 ### Peer groups for cumulative exfiltration detection
 
 Insider risk management identifies three types of peer groups for analyzing exfiltration activity performed by users. Peer groups defined for users are based on the following criteria:
 
-**SharePoint sites**: Insider risk management identifies peer groups based on users who access similar SharePoint sites as the user.
+**SharePoint sites**: Insider risk management identifies peer groups based on users who access similar SharePoint sites as the user. 
 
-**Similar organization**: Users with reports and team members based on organization hierarchy.This option requires that your organization uses Azure Active Directory to maintain organization hierarchy. 
+**Similar organization**: Users with reports and team members based on organization hierarchy.This option requires that your organization uses Azure Active Directory (Azure AD) to maintain organization hierarchy. 
 
-**Similar job title**: Users with a combination of organizational distance and similar job titles. For example, a user with an account manager title with a similar role designation as a sales manager in the same organization would be identified as similar job title. This option requires that your organization uses Azure Active Directory to maintain organization hierarchy, role designations, and job titles. 
-
+**Similar job title**: Users with a combination of organizational distance and similar job titles. For example, a user with an account manager title with a similar role designation as a sales manager in the same organization would be identified as similar job title. This option requires that your organization uses Azure AD to maintain organization hierarchy, role designations, and job titles. If you do not have Azure AD configured for organization structure and job titles, then Insider risk management identifies peer groups based on common SharePoint sites.
+ 
+If you enable cumulative exfiltration detection, your organization is agreeing to sharing Azure AD data, including organizational hierarchy and job titles. If your organization does not use Azure AD to maintain this information, then detection accuracy may be limited.
 > [!NOTE]
 > Cumulative exfiltration detection uses exfiltration indicators that are enabled in the global settings for insider risk management and exfiltration indicators that are selected in a policy. As such, cumulative exfiltration detection is only evaluated for the necessary exfiltration indicators selected. Cumulative exfiltration activities for [sensitivity labels](sensitivity-labels.md) configured in priority content generate higher risk scores.
 
