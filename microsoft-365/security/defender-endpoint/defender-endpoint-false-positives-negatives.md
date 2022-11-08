@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 10/24/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -29,8 +30,6 @@ search.appverid: met150
 
 # Address false positives/negatives in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -39,7 +38,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-In endpoint protection solutions, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+In endpoint protection solutions, a false positive is an entity, such as a file or a process that was detected and identified as malicious even though the entity isn't actually a threat. A false negative is an entity that wasn't detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
 :::image type="content" source="images/false-positives-overview.png" alt-text="The definition of false positive and negatives in the Microsoft Defender for Endpoint portal" lightbox="images/false-positives-overview.png":::
 
@@ -60,7 +59,7 @@ You can get help if you still have issues with false positives/negatives after p
 
 ## Part 1: Review and classify alerts
 
-If you see an [alert](alerts.md) that was triggered because something was detected as malicious or suspicious that should not have been, you can suppress the alert for that entity. You can also suppress alerts that are not necessarily false positives, but are unimportant. We recommend that you classify alerts as well.
+If you see an [alert](alerts.md) that arose because something's detected as malicious or suspicious and it shouldn't be, you can suppress the alert for that entity. You can also suppress alerts that aren't necessarily false positives, but are unimportant. We recommend that you classify alerts as well.
 
 Managing your alerts and classifying true/false positives helps to train your threat protection solution and can reduce the number of false positives or false negatives over time. Taking these steps also helps reduce noise in your queue so that your security team can focus on higher priority work items.
 
@@ -70,9 +69,9 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, choose **Alerts queue**.
+2. In the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
 
-3. Select an alert to more details about the alert. (See [Review alerts in Microsoft Defender for Endpoint](review-alerts.md).)
+3. Select an alert to view more details about it. (See [Review alerts in Microsoft Defender for Endpoint](review-alerts.md).)
 
 4. Depending on the alert status, take the steps described in the following table:
 
@@ -88,11 +87,11 @@ Alerts can be classified as false positives or true positives in Microsoft 365 D
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Select **Alerts queue**, and then select an alert.
+2. In the navigation pane, choose **Incidents & alerts**, select **Alerts** and then select an alert.
 
-3. For the selected alert, select **Actions** \> **Manage alert**. A flyout pane opens.
+3. For the selected alert, select **Manage alert**. A flyout pane opens.
 
-4. In the **Manage alert** section, select either **True alert** or **False alert**. (Use **False alert** to classify a false positive.)
+4. In the **Manage alert** section, in the **Classification** field, classify the alert (True positive, Informational, expected activity, or False positive).
 
 > [!TIP]
 > For more information about suppressing alerts, see [Manage Microsoft Defender for Endpoint alerts](/microsoft-365/security/defender-endpoint/manage-alerts). And, if your organization is using a security information and event management (SIEM) server, make sure to define a suppression rule there, too.
@@ -103,11 +102,11 @@ If you have alerts that are either false positives or that are true positives bu
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, select **Alerts queue**.
+2. In the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
 
 3. Select an alert that you want to suppress to open its **Details** pane.
 
-4. In the **Details** pane, choose the ellipsis (**...**), and then **Create a suppression rule**.
+4. In the **Details** pane, choose the ellipsis (**...**), and then **Create suppression rule**.
 
 5. Specify all the settings for your suppression rule, and then choose **Save**.
 
@@ -125,9 +124,9 @@ If you have alerts that are either false positives or that are true positives bu
 - Disable a driver
 - Remove a scheduled task
 
-Other actions, such as starting an antivirus scan or collecting an investigation package, occur manually or through [Live Response](live-response.md). Actions taken through Live Response cannot be undone.
+Other actions, such as starting an antivirus scan or collecting an investigation package, occur manually or through [Live Response](live-response.md). Actions taken through Live Response can't be undone.
 
-After you have reviewed your alerts, your next step is to [review remediation actions](manage-auto-investigation.md). If any actions were taken as a result of false positives, you can undo most kinds of remediation actions. Specifically, you can:
+After you've reviewed your alerts, your next step is to [review remediation actions](manage-auto-investigation.md). If any actions were taken as a result of false positives, you can undo most kinds of remediation actions. Specifically, you can:
 
 - [Restore a quarantined file from the Action Center](#restore-a-quarantined-file-from-the-action-center)
 - [Undo multiple actions at one time](#undo-multiple-actions-at-one-time)
@@ -138,7 +137,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review completed actions
 
-1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, click **Action center**.
+1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Actions & submissions** and then select **Action center**.
 
 2. Select the **History** tab to view a list of actions that were taken.
 
@@ -146,30 +145,38 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Restore a quarantined file from the Action Center
 
-1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
+1. In the left navigation pane of the Microsoft 365 Defender portal, select **Actions & submissions** and then select **Action center**.
 
 2. On the **History** tab, select an action that you want to undo.
 
-3. In the flyout pane, select **Undo**. If the action cannot be undone with this method, you will not see an **Undo** button. (To learn more, see [Undo completed actions](manage-auto-investigation.md#undo-completed-actions).)
+3. In the flyout pane, select **Undo**. If the action can't be undone with this method, you won't see an **Undo** button. (To learn more, see [Undo completed actions](manage-auto-investigation.md#undo-completed-actions).)
 
 ### Undo multiple actions at one time
 
-1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, click **Action center**.
+1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Actions & submissions** and then select **Action center**.
 
 2. On the **History** tab, select the actions that you want to undo.
 
-3. In the pane on the right side of the screen, select **Undo**.
+3. In the flyout pane on the right side of the screen, select **Undo**.
 
 ### Remove a file from quarantine across multiple devices
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="The Quarantine file" lightbox="images/autoir-quarantine-file-1.png":::
 
-1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, click **Action center**.
+1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Actions & submissions** and then select **Action center**.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
 3. In the pane on the right side of the screen, select **Apply to X more instances of this file**, and then select **Undo**.
+
+### Review quarantined messages
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+
+2. In the navigation pane, under **Email & collaboration**, select **Exchange message trace**.
+
+3. Select a message to view details.
 
 ### Restore file from quarantine
 
@@ -209,7 +216,7 @@ The procedures in this section describe how to define exclusions and indicators.
 
 ### Exclusions for Microsoft Defender Antivirus
 
-In general, you should not need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to define or edit your antivirus exclusions; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
+In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to define or edit your antivirus exclusions; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
 
 > [!TIP]
 > Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
@@ -240,7 +247,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 6. On the **Configuration settings** tab, specify your antivirus exclusions, and then choose **Next**.
 
-7. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy you are creating. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
+7. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy you're creating. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
 
 8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
@@ -327,9 +334,9 @@ If something was detected as malware based on behavior, and you don't have a fil
 
 Your submission is immediately scanned by our systems to give you the latest determination even before an analyst starts handling your case. It's possible that a file might have already been submitted and processed by an analyst. In those cases, a determination is made quickly.
 
-For submissions that were not already processed, they are prioritized for analysis as follows:
+For submissions that weren't already processed, they're prioritized for analysis as follows:
 
-- Prevalent files with the potential to impact large numbers of computers are given a higher priority.
+- Prevalent files with the potential to affect a large number of computers are given a higher priority.
 - Authenticated customers, especially enterprise customers with valid [Software Assurance IDs (SAIDs)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx), are given a higher priority.
 - Submissions flagged as high priority by SAID holders are given immediate attention.
 
@@ -382,7 +389,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
    - Set **Turn on cloud-delivered protection** to **Yes**.
    - Set **Cloud-delivered protection level** to **Not configured**. (This level provides a strong level of protection by default while reducing the chances of getting false positives.)
 
-6. On the **Scope tags** tab, if you are using scope tags in your organization, specify scope tags for the policy. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
+6. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
 
 7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
@@ -390,7 +397,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 ### Remediation for potentially unwanted applications
 
-Potentially unwanted applications (PUA) are a category of software that can cause devices to run slowly, display unexpected ads, or install other software that might be unexpected or unwanted. Examples of PUA include advertising software, bundling software, and evasion software that behaves differently with security products. Although PUA is not considered malware, some kinds of software are PUA based on their behavior and reputation.
+Potentially unwanted applications (PUA) are a category of software that can cause devices to run slowly, display unexpected ads, or install other software that might be unexpected or unwanted. Examples of PUA include advertising software, bundling software, and evasion software that behaves differently with security products. Although PUA isn't considered malware, some kinds of software are PUA based on their behavior and reputation.
 
 > [!TIP]
 > To learn more about PUA, see [Detect and block potentially unwanted applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
@@ -409,7 +416,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 4. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
 
-5. Set **Detect potentially unwanted applications** to **Audit**. (You can turn it off, but by using audit mode, you will be able to see detections.)
+5. Set **Detect potentially unwanted applications** to **Audit**. (You can turn it off, but by using audit mode, you'll be able to see detections.)
 
 6. Choose **Review + save**, and then choose **Save**.
 
@@ -425,7 +432,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 5. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
 
-6. Set **Detect potentially unwanted applications** to **Audit**, and then choose **Next**. (You can turn off PUA protection, but by using audit mode, you will be able to see detections.)
+6. Set **Detect potentially unwanted applications** to **Audit**, and then choose **Next**. (You can turn off PUA protection, but by using audit mode, you'll be able to see detections.)
 
 7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
@@ -447,7 +454,7 @@ Depending on the [level of automation](/microsoft-365/security/defender-endpoint
 
 ## Still need help?
 
-If you have worked through all the steps in this article and still need help, contact technical support.
+If you've worked through all the steps in this article and still need help, contact technical support.
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and sign in.
 

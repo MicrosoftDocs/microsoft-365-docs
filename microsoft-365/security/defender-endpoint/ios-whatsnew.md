@@ -36,7 +36,7 @@ Vulnerability assessment of apps on Microsoft Defender for Endpoint for iOS is n
 
 ## Network protection
 
-Network Protection on Microsoft Defender for Endpoint is now in public preview. Network protection provides protection against rogue Wi-Fi related threats, rogue hardware like pineapple devices and notifies the user if a related threat is detected. Users will also see a guided experience to connect to secure networks and change networks when they are connected to an unsecure connection.
+Network Protection on Microsoft Defender for Endpoint is now available. Network protection provides protection against rogue Wi-Fi related threats, rogue hardware like pineapple devices and notifies the user if a related threat is detected. Users will also see a guided experience to connect to secure networks and change networks when they are connected to an unsecure connection.
 
 It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Endpoint Manager Admin center. Admins can also enable privacy controls to configure the data that is sent by Defender for Endpoint from iOS devices. For more information, read [Configure Network Protection](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
