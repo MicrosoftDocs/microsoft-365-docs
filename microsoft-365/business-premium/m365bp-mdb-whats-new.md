@@ -30,9 +30,12 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 ## November 2022
 
-- **[Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md)**, a new add-on for Defender for Business, is now generally available. See [How to get Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md).
+- **[Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md)**, a new add-on for Defender for Business, is now generally available. To learn more, see the following articles:
+   
+   - [How to get Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md)
+   - [Tech Community Blog: Server security made simple for small businesses](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/server-security-made-simple-for-small-businesses/ba-p/3648928)
 
-- **License reporting for Defender for Business is in preview**. See [Reports in Microsoft Defender for Business](../security/defender-business/mdb-reports.md).
+- **License reporting (preview) in Defender for Business**. A new report (rolling out in preview) enables you to view your Defender for Business license usage. To learn more, see [Reports in Microsoft Defender for Business](../security/defender-business/mdb-reports.md).
 
 ## July 2022
 
@@ -40,7 +43,7 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 ## May 2022
 
-- **Defender for Business** (standalone) is now generally available. See the following resources to learn more:
+- **Defender for Business** (standalone) is now generally available. To learn more, see the following resources:
 
    - [Tech Community blog: Introducing Microsoft Defender for Business](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701)
    - [What is Microsoft Defender for Business?](../security/defender-business/mdb-overview.md)
@@ -48,7 +51,7 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 ## March 2022
 
-- **Microsoft 365 Business Premium now includes Defender for Business**. See [Tech Community blog: New security solutions to help secure small and medium businesses](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/new-security-solutions-to-help-secure-small-and-medium/ba-p/3207043).
+- **Microsoft 365 Business Premium now includes Defender for Business**. To learn more, see [Tech Community blog: New security solutions to help secure small and medium businesses](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/new-security-solutions-to-help-secure-small-and-medium/ba-p/3207043).
 
 ## See also
 
