@@ -61,8 +61,8 @@ API documentation: [Use the Microsoft Graph security API - Microsoft Graph beta]
 
 If you are a customer using the SIEM API, we strongly recommend planning and executing the migration. Listed below is information about the options available to migrate to a supported capability:
 
-1.[Pulling MDE alerts into an external system](#pulling-defender-for-endpoint-alerts into-an-external-system) (SIEM/SOAR)
-1. [Calling the Microsoft 365 Defender alerts API directly](#calling-the-microsoft-365-defender-alerts-API-directly)
+1. [Pulling MDE alerts into an external system](#pulling-defender-for-endpoint-alerts into-an-external-system) (SIEM/SOAR)
+1. [Calling the Microsoft 365 Defender alerts API directly](#calling-the-microsoft-365-defender-alerts-api-directly)
 
 Read about the new Microsoft 365 Defender [alerts and incidents API](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099#:~:text=Incidents%3A%20Contain%20incident%20metadata%20and%20a%20collection%20of,richer%20and%20actionable%20information%20for%20your%20automation%20flows.)
 
