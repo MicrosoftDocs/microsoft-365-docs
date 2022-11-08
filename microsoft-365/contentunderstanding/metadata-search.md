@@ -1,5 +1,5 @@
 ---
-title: Query for metadata in document libraries in Microsoft Syntex
+title: Use metadata to find content in document libraries in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,14 +15,14 @@ ms.localizationpriority: high
 description: Learn how to use Syntex content query and search for custom site columns to find items in SharePoint document libraries using Microsoft Syntex.
 ---
 
-# Query for metadata in document libraries in Microsoft Syntex
+# Use metadata to find content in document libraries in Microsoft Syntex
 
 Microsoft Syntex gives you the ability to quickly search through your document's metadata with ease. The Syntex content query feature lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
 Syntex content query lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 > [!NOTE]
-> This feature is available only for users who are licensed for Syntex. 
+> This feature is available only for licensed Syntex users. 
 
 ## To use Syntex content query
 

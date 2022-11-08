@@ -124,7 +124,7 @@
      
     - name: Content query
       items: 
-        - name: Query for metadata in document libraries 
+        - name: Use metadata to find content in document libraries 
           href: metadata-search.md
      
     - name: Taxonomy
