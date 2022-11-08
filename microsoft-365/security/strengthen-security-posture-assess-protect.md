@@ -36,11 +36,11 @@ Central to understanding your security posture is having a comprehensive invento
 
 ## 1. Assess your devices
 
-Use the device inventory page in Microsoft Defender for Endpoint to get a comprehensive view of the assets discovered in your organization. For more information on how to explore the device inventor or how to use filters to get more detailed information, go to [Device inventory](../security/defender-endpoint/machine.md).
+Use the device inventory page in Microsoft Defender for Endpoint to get a comprehensive view of the assets discovered in your organization. For more information on how to explore the device inventor or how to use filters to get more detailed information, go to [Device inventory](../security/defender-endpoint/machines-view-overview.md).
 
 ## 2. Onboard newly discovered endpoints
 
-Once discovered, unmanaged endpoint and network devices connected to your networks can be onboarded to Defender for Endpoint. 
+Once discovered, unmanaged endpoint and network devices connected to your networks can be onboarded to Defender for Endpoint.
 
 
 ## 3. Assign device value

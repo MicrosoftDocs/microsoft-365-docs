@@ -54,7 +54,7 @@ For more information, see [Strengthen your security posture - Phase 1: Configure
 
 ## 2. Assess and protect
 
-Central to understanding your security posture is having a comprehensive inventory of all your assets. The Microsoft Defender for Endpoint [device inventory](../security/defender-endpoint/machine.md) provides you with accurate view into the assets in your network along with detailed information about those assets. The more information have about your assets the better you'll be able manage and assess the risks associated with them.
+Central to understanding your security posture is having a comprehensive inventory of all your assets. The Microsoft Defender for Endpoint [device inventory](../security/defender-endpoint/machine.md) provides you with an accurate view into the assets in your network along with detailed information about those assets. The more information you have about your assets the better you'll be able manage and assess the risks associated with them.
 
 For more information, see [Strengthen your security posture - Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md)
 
