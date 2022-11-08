@@ -154,6 +154,12 @@ Using dynamic group backed shared mailboxes based on attributes such as Location
 
 [SharePoint](/sharepoint/sharepoint-online) lets you share documents and create sites. Use the [SharePoint setup guide](https://aka.ms/spoguidance) in the Microsoft 365 admin center to set it up.
 
+### Set up Microsoft Teams
+
+For a pilot project, you can use the Frontline worker onboarding wizard to set up a single team, configured for your frontline workers. For step-by-step guidance, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](flw-onboarding-wizard.md).
+
+For full deployments, follow the guidance in [Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md).
+
 ### Set up employee experiences with Microsoft Viva
 
 [Microsoft Viva](/viva/microsoft-viva-overview) helps connect employees with an integrated employee experience that brings together communications, knowledge, learning, resources, and insights into the flow of work. Microsoft Viva has several modules that can be used with Microsoft Teams to create employee experiences.
@@ -182,25 +188,27 @@ You can use all of these apps within Microsoft Teams. For more information about
 - [Power Virtual Agents app in Microsoft Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)
 - [Power Apps](/microsoftteams/manage-power-platform-apps)
 
+## Step 6: Configure security
 
+After provisioning users, enrolling your devices, and configuring your applications, you’re now ready to create policies to secure your organization’s infrastructure resources.
 
+- **Conditional access:** Plan an [Azure Active Directory conditional access deployment](/azure/active-directory/conditional-access/plan-conditional-access).
+- **App protection policies:** [Learn about app management in Microsoft Intune](/mem/intune/apps/app-management).
+- **Multi-factor authentication:** Require [multi-factor authentication for Intune device enrollment](/mem/intune/enrollment/multi-factor-authentication).
 
+Once you’re done setting up security policies, it’s important for you to use a test user (non-admin) account to verify the policies work as expected and to ensure that the end-user experience is right for your frontline workforce’s needs. Some capabilities like multi-factor authentication and app protection policies can add additional steps to device enrollment or sign-on flows, which may not be acceptable for some frontline scenarios.
 
-
-
-## Step 3: Set up Microsoft Teams
-
-For a pilot project, you can use the Frontline worker onboarding wizard to set up a single team, configured for your frontline workers. For step-by-step guidance, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](flw-onboarding-wizard.md).
-
-For full deployments, follow the guidance in [Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md).
-
-## Step 4: Set up other services
-
-
-
-## Step 5: Configure apps for your scenario
+## Step 7: Configure apps for your scenario
 
 After everything is set up and configured in the admin center, you can follow the guidance for your scenarios to further configure the apps you need for each scenario.
+
+Follow these best practices to set up Microsoft Teams for your frontline workforce.
+
+**Policy packages** are a collection of predefined policies and policy settings that you can assign to users who have similar roles in your organization. Policy packages simplify, streamline, and help provide consistency when managing policies. Teams provides [predefined policy packages](/microsoftteams/policy-packages-flw) for frontline workers and managers. You can also create a custom policy package and assign them to your frontline workers at scale in the Teams admin center.
+
+Use **team templates** in the Teams admin center or by using PowerShell. You can use prebuilt templates or [create your own](/microsoftteams/get-started-with-teams-templates-in-the-admin-console#create-your-own-team-templates). You can also apply template policies to control which templates are available to your users in Teams. Learn more about [how to get started with team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console) and [how to set up and deploy teams](/microsoft-365/frontline/deploy-teams-at-scale?#set-up-and-deploy-your-teams). A prebuilt frontline template is accessible from the Teams admin center with the template ID "com.microsoft.teams.template.Frontline".
+
+The table below shows Teams applications commonly utilized in frontline solutions. Shifts, Approvals, and Walkie Talkie are present in the Teams mobile client out of the box. You can control which applications are available to all users in the Teams admin center.
 
 Scenarios and apps
 
@@ -215,3 +223,5 @@ Scenarios and apps
 | Ongoing training |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; | &#x2705; |
 | [Simplify business processes](simplify-business-processes.md) | &#x2705; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; | &#x2705; |
 | Manage sites, stores, and projects | &#x2705; |  &nbsp; | &#x2705; |  &nbsp; | &nbsp; | &#x2705; | &#x2705; |
+
+[Learn more about Microsoft Teams apps](/microsoftteams/deploy-apps-microsoft-teams-landing-page#core-apps).
