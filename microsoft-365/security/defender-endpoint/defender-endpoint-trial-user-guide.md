@@ -1,5 +1,5 @@
 ---
-title: Trial playbook - Microsoft Defender for Endpoint
+title: Trial user guide - Microsoft Defender for Endpoint
 description: Use this guide to get the most of your 90-day free trial. See how Defender for Endpoint can help prevent, detect, investigate, and respond to advanced threats.
 search.appverid: MET150 
 author: denisebmsft
@@ -18,9 +18,9 @@ ms.reviewer:
 f1.keywords: NOCSH
 ---
 
-# Trial playbook: Microsoft Defender for Endpoint
+# Trial user guide: Microsoft Defender for Endpoint
 
-Welcome to the Microsoft Defender for Endpoint Plan 2 trial playbook!
+Welcome to the Microsoft Defender for Endpoint Plan 2 trial user guide!
 
 This playbook is a simple guide to help you make the most of your free trial. Using the suggested steps in this article from the Microsoft Defender team, you'll learn how Defender for Endpoint can help you to prevent, detect, investigate, and respond to advanced threats.
 

@@ -9234,6 +9234,21 @@
       "source_path": "microsoft-365/contentunderstanding/prebuilt-models.md",
       "redirect_url": "/microsoft-365/contentunderstanding/prebuilt-overview",
       "redirect_document_id": true
-    }                        
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/defender-endpoint-trial-playbook.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/defender-endpoint-trial-user-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/trial-user-guide-defender-vulnerability-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/trial-playbook-defender-for-office-365.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/trial-user-guide-defender-for-office-365",
+      "redirect_document_id": true
+    }                      
    ]
   }
