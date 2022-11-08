@@ -86,12 +86,12 @@ Policy indicators are segmented into the following areas. You can choose the ind
    - *User had a previous case resolved as a policy violation*: Scores are boosted in the user has a previous case in Insider risk management that was resolved as a policy violation.
    - *User is a member of a priority user group*: Scores are boosted if the user is a member of a priority user group. If a user is a member of a priority user group and has been identified as a potential high impact user, then their score will only be boosted once.
    - *User is detected as a potential high impact user*: When this is enabled, users are automatically flagged as potential high impact users based on the following criteria:
-    - User interacts with more sensitive content compared to others in the organization
-    - The user's level in organization's Azure AD hierarchy
-    - The total number of users reporting to the user based on Azure AD hierarchy
-    - The user is a member of an Azure AD built-in role with elevated permissions
-    - > [!NOTE] 
-    - > If your organization doesn't use sensitivity labels or has not configured organization hierarchy in Azure AD, then this detection may be less accurate.
+     - User interacts with more sensitive content compared to others in the organization
+     - The user's level in organization's Azure AD hierarchy
+     - The total number of users reporting to the user based on Azure AD hierarchy
+     - The user is a member of an Azure AD built-in role with elevated permissions
+     - > [!NOTE] 
+     - > If your organization doesn't use sensitivity labels or has not configured organization hierarchy in Azure AD, then this detection may be less accurate.
 
    - Users are automatically flagged as potential high impact users based on the following criteria, such as the user interacts with more sensitive content compared to other users, level in your organization's Azure AD hierarchy, total number of direct reports, and member of an Azure AD admin role with elevated permissions. If your organization doesn’t use sensitivity labels or base its hierarchy on Azure AD, detecting potential high impact users might be less accurate. To set up priority user groups, see [Create a priority user group](#priority-user-groups).
 - [!NOTE] 
