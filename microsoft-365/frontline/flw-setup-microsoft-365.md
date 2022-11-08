@@ -81,7 +81,7 @@ Use this table to validate your HR-driven user provisioning.
 |New employee is created in the cloud HR app |The user account is provisioned in Azure AD and can access assigned cloud resources. <br> If Azure AD Connect sync is configured, the user account also gets created in Active Directory. <br> The user can sign into Active Directory domain apps and perform their desired actions.|
 |User is terminated in the cloud HR app |The user account is disabled in Azure AD, and, if applicable, Active Directory. <br>The user can’t sign into cloud or on-premises applications and resources assigned to them. |
 |Supervisor is updated in the cloud HR app |User remains active with the new mapping. |
-|HR rehires an employee into a new role. |The results depend on how the cloud HR app is configured to generate employee IDs. <br>If the old employee ID is re-used for a rehire, the connector enables the existing Active Directory account for the user. <br>If the rehire gets a new employee ID, the connector creates a new Active Directory account for the user. |
+|HR rehires an employee into a new role. |The results depend on how the cloud HR app is configured to generate employee IDs. <br>If the old employee ID is reused for a rehire, the connector enables the existing Active Directory account for the user. <br>If the rehire gets a new employee ID, the connector creates a new Active Directory account for the user. |
 |HR converts the employee to a contract worker or vice-versa |A new Active Directory account is created for the new persona and the old account is disabled on the effective date of the conversion. |
 
 [Learn more about Azure AD deployment](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2).
@@ -93,7 +93,7 @@ Configuring groups in Azure  AD allows you to create and manage policies and lic
 - **Assign a unique attribute to frontline workers:** The ability to identify all frontline workers is useful when applying groups to the frontline workforce or for validating that integrations between Azure AD and HR systems are functioning properly. Organizations frequently use the Job ID attribute for this purpose.
 - **Create Azure AD groups and assign frontline users:** With Azure AD groups, you can grant access and permissions to a group of users instead of for each individual user. Groups are used to manage users that all need the same access and permissions to resources, such as potentially restricted apps and services. Instead of adding special permissions to individual users, you create a group that applies the special permissions to every member of that group.
 
-The table below includes recommendations for applying groups in frontline implementations. For more information on group types, membership types, and assignment, refer to the [Azure AD documentation for groups and membership](/azure/active-directory/fundamentals/concept-learn-about-groups?context=%2Fazure%2Factive-directory%2Fenterprise-users%2Fcontext%2Fugr-context) and [managing groups](/azure/active-directory/fundamentals/how-to-manage-groups). For more information on security group limits and other Azure AD service limits, refer to [Azure Active Directory Service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).
+The table below includes recommendations for applying groups in frontline implementations. For more information on group types, membership types, and assignment, see the [Azure AD documentation for groups and membership](/azure/active-directory/fundamentals/concept-learn-about-groups?context=%2Fazure%2Factive-directory%2Fenterprise-users%2Fcontext%2Fugr-context) and [managing groups](/azure/active-directory/fundamentals/how-to-manage-groups). For more information on security group limits and other Azure AD service limits, see [Azure Active Directory Service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).
 
 |Use case |Group type |
 |---------|-----------|
@@ -134,7 +134,7 @@ Zero-touch provisioning of SDM isn’t currently supported by third-party mobile
 
 [Learn more about configuration with VMware Workspace ONE](https://docs.vmware.com/VMware-Workspace-ONE-UEM/2011/Android_Platform/GUID-AWT-SHAREDDEVICESOVERVIEW.html) and [SOTI](https://www.soti.net/mc/help/v15.0/console/configurations/advancedconfigurations/shareddevice/shareddevice.html).
 
-If you choose to manually configure devices in SDM, you’ll need to take additional steps to re-enroll Android devices in SDM when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
+If you choose to manually configure devices in SDM, you’ll need to take more steps to re-enroll Android devices in SDM when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
 
 To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Manage mobile devices for frontline workers](flw-devices.md).
 
@@ -144,7 +144,7 @@ To set up shared and personal devices to work with Microsoft 365 and Microsoft T
 
 If you want your frontline managers and workers to have access to email, you need to set up email in Microsoft 365. Users must have an F3 license to get access to email. Follow the [Email setup guide](https://aka.ms/office365setup) to set it up.
 
-Note that your users can also install the Outlook app to use for their email, so you'll want to make sure you share where to download the Outlook app with them.
+Your users can also install the Outlook app to use for their email, so you'll want to make sure you share where to download the Outlook app with them.
 
 #### Outlook
 
@@ -196,7 +196,7 @@ After provisioning users, enrolling your devices, and configuring your applicati
 - **App protection policies:** [Learn about app management in Microsoft Intune](/mem/intune/apps/app-management).
 - **Multi-factor authentication:** Require [multi-factor authentication for Intune device enrollment](/mem/intune/enrollment/multi-factor-authentication).
 
-Once you’re done setting up security policies, it’s important for you to use a test user (non-admin) account to verify the policies work as expected and to ensure that the end-user experience is right for your frontline workforce’s needs. Some capabilities like multi-factor authentication and app protection policies can add additional steps to device enrollment or sign-on flows, which may not be acceptable for some frontline scenarios.
+Once you’re done setting up security policies, it’s important for you to use a test user (non-admin) account to verify the policies work as expected, and to ensure that the end-user experience is right for your frontline workforce’s needs. Some capabilities like multi-factor authentication and app protection policies can add additional steps to device enrollment or sign-on flows, which may not be acceptable for some frontline scenarios.
 
 ## Step 7: Configure apps for your scenario
 
