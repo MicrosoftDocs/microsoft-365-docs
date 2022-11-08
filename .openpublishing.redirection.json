@@ -2316,6 +2316,76 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/view-mail-flow-reports.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-reports/mail-flow-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mail-flow-insights-v2.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-insights/mail-flow-insights",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-domain-mail-flow-status-insight.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-top-domain-mailflow-status-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-mail-loop-insight.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-insights/mfi-fix-possible-mail-loop-insight",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-new-domains-being-forwarded-email.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-insights/mfi-new-domains-being-forwarded-email-insight",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-new-users-forwarding-email.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-insights/mfi-new-users-forwarding-email-insight",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-non-accepted-domain-report.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-non-accepted-domain-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-non-delivery-report.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-non-delivery-details-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-outbound-and-inbound-mail-flow.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-queued-messages-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-slow-mail-flow-rules-insight.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-insights/mfi-fix-slow-mail-flow-rules-insight",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mfi-smtp-auth-clients-report.md",
+      "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-smtp-auth-clients-report",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md",
       "redirect_url": "/microsoft-365/solutions/team-security-isolation-dev-test",
       "redirect_document_id": true
@@ -9154,6 +9224,21 @@
       "source_path": "microsoft-365/contentunderstanding/prebuilt-models.md",
       "redirect_url": "/microsoft-365/contentunderstanding/prebuilt-overview",
       "redirect_document_id": true
-    }                        
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/defender-endpoint-trial-playbook.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/defender-endpoint-trial-user-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/trial-user-guide-defender-vulnerability-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/trial-playbook-defender-for-office-365.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/trial-user-guide-defender-for-office-365",
+      "redirect_document_id": true
+    }                      
    ]
   }
