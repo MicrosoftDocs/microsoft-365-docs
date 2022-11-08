@@ -41,7 +41,7 @@ Microsoft Defender for Office 365 safeguards your organization against malicious
 
 - **[Threat protection policies](#defender-for-office-365-policies)**: Define threat-protection policies to set the appropriate level of protection for your organization.
 
-- **[Reports](#view-microsoft-defender-for-office-365-reports)**: View real-time reports to monitor Defender for Office 365  performance in your organization.
+- **[Reports](#how-to-view-microsoft-defender-for-office-365-reports)**: View real-time reports to monitor Defender for Office 365  performance in your organization.
 
 - **[Threat investigation and response capabilities](#use-threat-investigation-and-response-capabilities)**: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
 
