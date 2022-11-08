@@ -90,17 +90,19 @@ Sometimes, the term exclusions is used to refer to exceptions that apply across 
 The following table summarizes exclusion types that can be defined for Defender for Endpoint and Microsoft Defender Antivirus.
 
 > [!TIP]
-> [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) is available as a standalone plan, and is now included in Microsoft 365 E3. [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) is available as a standalone plan, and is included in Microsoft 365 E5. If you have Microsoft 365 E3 or E5, make sure you have [set up your Defender for Endpoint capabilities](deployment-strategy.md).
+> - [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) is available as a standalone plan, and is included in Microsoft 365 E3. 
+> - [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) is available as a standalone plan, and is included in Microsoft 365 E5. 
+> - If you have Microsoft 365 E3 or E5, make sure to [set up your Defender for Endpoint capabilities](deployment-strategy.md).
 
-| Product/service | Exclusion types | License requirements |
-|:---|:---|:---|
-| [Defender for Endpoint](microsoft-defender-endpoint.md) | Indicators for: - Files <br> - Certificates <br> - IP addresses, URLs/domains | Defender for Endpoint <br/>Plan 1 or Plan 2 |
-| | Automation folder exclusions (for automated investigation and remediation) | Defender for Endpoint <br/>Plan 2 |
-| | Attack surface reduction exclusions | Defender for Endpoint <br/>Plan 1 or Plan 2 |
-| | Controlled folder access exclusions | Defender for Endpoint <br/>Plan 1 or Plan 2 |
-| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)| Automatic exclusions (for Windows Server 2016 and later) | Defender for Endpoint <br/>Plan 1 or Plan 2 <br/> Note: The standalone versions of Defender for Endpoint don't include server licenses. To onboard servers, you’ll need an another license, such as [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). |
-| | Custom exclusions:  <br/> - Process-based exclusions <br/> - Folder location-based exclusions <br/> - File extension exclusions <br/> - Contextual file and folder exclusions | Defender for Endpoint <br/> Plan 1 or Plan 2 |
-| | Custom remediation actions based on threat severity or for specific threats | Defender for Endpoint <br/> Plan 1 or Plan 2 |
+| Product/service | Exclusion types  |
+|:---|:----|
+| [Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | Indicators for:<br/>- Files <br> - Certificates <br> - IP addresses, URLs/domains  |
+| [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) | Automation folder exclusions (for automated investigation and remediation)  |
+| [Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | Attack surface reduction exclusions  |
+| [Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | Controlled folder access exclusions  |
+| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) <br/><br/>[Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | Automatic exclusions (for Windows Server 2016 and later) <br/><br/> *The standalone versions of Defender for Endpoint don't include server licenses. To onboard servers, you’ll need an another license, such as [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction).* |
+| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) <br/><br/>[Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | Custom exclusions:  <br/> - Process-based exclusions <br/> - Folder location-based exclusions <br/> - File extension exclusions <br/> - Contextual file and folder exclusions  |
+| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) <br/><br/>[Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | Custom remediation actions based on threat severity or for specific threats |
 
 The following sections describe these exclusions in more detail:
 
