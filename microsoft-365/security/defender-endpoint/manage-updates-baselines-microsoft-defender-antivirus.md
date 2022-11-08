@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/31/2022
+ms.date: 11/07/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -84,21 +84,21 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>October-2022 (Platform: 4.18.2210.4 | Engine: 1.1.19800.x)</summary>
+<summary>October-2022 (Platform: 4.18.2210.5 | Engine: 1.1.19800.4)</summary>
 
-&ensp;Security intelligence update version: **x.x**<br/>
-&ensp;Release date: **October 31, 2022**<br/>
-&ensp;Platform: **4.18.2210.4**<br/>
-&ensp;Engine: **1.1.19800.x**<br/>
+&ensp;Security intelligence update version: **1.379.4.0**<br/>
+&ensp;Release date: **November 7, 2022**<br/>
+&ensp;Platform: **4.18.2210.5**<br/>
+&ensp;Engine: **1.1.19800.4**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
-Engine version: 1.1.19800.x (*final version number coming soon*)<br/>
-Security intelligence update version: x.x (*coming soon*)<br/>
+Engine version: 1.1.19800.4<br/>
+Security intelligence update version: 1.379.4.0<br/>
 
 ### What's new
 
 - Improved hang detection in antivirus engine 
-- Added opt-in for defender updates during OOBE (out of box experience) process 
+- Added opt-in for Defender updates during OOBE (out of box experience) process 
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
 - Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
 - Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
@@ -869,6 +869,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20221102.3</summary>
+
+&ensp;Defender package version: **20221102.3**<br/>
+&ensp;Security intelligence version: **1.377.1180.0**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Platform version: **4.18.2210.4**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20221014.1</summary>
 
 &ensp;Package version: **20221014.1**<br/>
