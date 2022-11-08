@@ -122,7 +122,7 @@ To turn on live captions, in the meeting controls in Teams, go to **More** (**..
 
 Staff members can also change the language of the captions. The default language is English (US). The language that's set applies to everyone who has captions turned on in the appointment.
 
-### Joining appointments enforced with Teams Premium protected meetings features
+### Joining appointments configured with Teams Premium protected meetings features
 
 Currently, protected meeting capabilities that are part of [Teams Premium]() (preview), such as sensitivity labels and watermarks, aren't supported in browser join.
 
