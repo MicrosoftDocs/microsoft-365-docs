@@ -30,7 +30,7 @@ ms.service: microsoft-365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
-The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow for incoming messages form external senders (does not apply to intra-org messages) and at the time of user clicks.
+The Tenant Allow/Block List in the Microsoft 365 Defender portal gives you a way to manually override the Microsoft 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow for incoming messages from external senders (does not apply to intra-org messages) and at the time of user clicks.
 
 The Tenant Allow/Block list is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -43,6 +43,9 @@ For entry creation and configuration instructions, see the following topics:
 These articles contain procedures in the Microsoft 365 Defender Portal and in PowerShell.
 
 ## Block entries in the Tenant Allow/Block List
+
+> [!NOTE]
+> In the Tenant Allow/Block List, block entries take precedence over allow entries.
 
 Use the Submissions portal (also known as *admin submission*) at <https://security.microsoft.com/reportsubmission> to create block entries for the following types of items as you report them as false positives to Microsoft:
 
@@ -87,7 +90,7 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 
   - If the message was blocked for other reasons, an allow entry for the sender is created, and it appears on the **Domains & addresses** tab in the Tenant Allow Block List.
 
-  - If the message was not blocked, and an allow entry for the sender is not created, it won't on the **Spoofed senders** tab or the **Domains & addresses** tab.
+  - If the message was not blocked, and an allow entry for the sender is not created, it won't show on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
 By default, allow entries for **domains and email addresses**, **files** and **URLs** expire after 30 days, which is also the maximum. Allow entries for **spoofed senders** never expire.
 
@@ -106,6 +109,6 @@ After you add an allow entry through the Submissions portal or a block entry in 
 
 We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.
 
-With **allow expiry management** (currently in Private preview), if Microsoft has not learned from the allow entry, Microsoft will automatically extend the expiry time of allow entries that will soon expire soon by another 30 days. This extension helps to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from the date of the original creation of the allow entry, Microsoft will remove the allow entry.
+With **allow expiry management** (currently in Private preview), if Microsoft has not learned from the allow entry, Microsoft will automatically extend the expiry time of allow entries that will soon expire by another 30 days. This extension helps to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from the date of the original creation of the allow entry, Microsoft will remove the allow entry.
 
 If Microsoft has learned from the allow entry, the entry will be removed, and you'll get an alert informing you about it.
