@@ -9,7 +9,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/04/2022 
+ms.date: 11/08/2022 
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -31,6 +31,8 @@ This article lists new features in the latest release of [Microsoft 365 Business
 ## November 2022
 
 - **[Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md)**, a new add-on for Defender for Business, is now generally available. See [How to get Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md).
+
+- **License reporting for Defender for Business is in preview**. See [Reports in Microsoft Defender for Business](../security/defender-business/mdb-reports.md).
 
 ## July 2022
 
