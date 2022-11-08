@@ -207,7 +207,7 @@ See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) ar
 
 ### Configure priority user groups
 
-Insider risk management includes support for assigning priority user groups to policies to help identity unique risk activities for user with critical positions, high levels of data and network access, or a past history of potentially risky behavior.
+Insider risk management includes support for assigning priority user groups to policies to help identity unique risk activities for user with critical positions, high levels of data and network access, or a past history of risk behavior. Creating a priority user group and assigning users to the group help scope policies to the unique circumstances presented by these users.
 
 You can create a priority user group and assign users to the group to help you scope policies specific to the unique circumstances presented by these identified users. You can enable the *priority user groups* risk score booster in the **Policy indicators** section of the Insider risk management settings page. These identified users are more likely to receive [alerts](insider-risk-management-activities.md#alert-dashboard), so analysts and investigators can review and prioritize these users' risk activities.
 
