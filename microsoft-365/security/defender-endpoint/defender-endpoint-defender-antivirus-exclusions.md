@@ -156,7 +156,7 @@ The following table summarizes IoC types and available actions:
 | Indicator type | Available actions |
 |:---|:---|
 | [Files](indicator-file.md) | - Allow <br/> - Audit <br/> - Warn <br/> - Block execution <br/> - Block and remediate |
-| [IP addresses and URLs/domains](indicator-ip-domain.md) | - Allow <br/> - Audit <br/> - Warn <br/> - Block execution <br/> - = |
+| [IP addresses and URLs/domains](indicator-ip-domain.md) | - Allow <br/> - Audit <br/> - Warn <br/> - Block execution |
 | [Certificates](indicator-certificates.md) | - Allow <br/> - Block and remediate |
 
 > [!TIP]
