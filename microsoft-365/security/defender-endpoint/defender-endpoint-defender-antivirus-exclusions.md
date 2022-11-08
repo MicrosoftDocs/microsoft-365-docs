@@ -138,7 +138,7 @@ When Microsoft Defender Antivirus detects a potential threat while running a sca
 
 You can define [indicators](manage-indicators.md) with specific actions for entities, such as files, IP addresses, URLs/domains, and certificates. In Defender for Endpoint, indicators are referred to as Indicators of Compromise (IoCs), and less often, as custom indicators. When you define your indicators, you can specify one of the following actions:
 
-- **Allow** –Defender for Endpoint won't block files, IP addresses, URLs/domains, or certificates that have Allow indicators. (Use this action with caution.)
+- **Allow** –Defender for Endpoint won't block files, IP addresses, URLs/domains, or certificates that have Allow indicators. (*Use this action with caution.*)
 
 - **Audit** – Files, IP addresses, and URLs/domains with Audit indicators are monitored, and when they’re accessed by users, informational alerts are generated in the Microsoft 365 Defender portal.
 
