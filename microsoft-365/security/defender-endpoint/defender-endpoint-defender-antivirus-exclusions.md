@@ -105,9 +105,9 @@ The following sections describe these exclusions in more detail:
 
 - [Microsoft Defender Antivirus exclusions](#microsoft-defender-antivirus-exclusions)
 - [Defender for Endpoint indicators](#defender-for-endpoint-indicators)
-- [Automation folder exclusions](#automation-folder-exclusions) (for automated investigation and remediation)
 - [Attack surface reduction exclusions](#attack-surface-reduction-exclusions)
 - [Controlled folder access exclusions](#controlled-folder-access-exclusions)
+- [Automation folder exclusions](#automation-folder-exclusions) (for automated investigation and remediation)
 
 #### Microsoft Defender Antivirus exclusions
 
@@ -120,8 +120,6 @@ Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to r
 ##### Automatic exclusions
 
 [Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions) include operating system files and server roles and features. These exclusions won’t be scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan). The following table provides some examples and includes links to learn more.
-
-Table 4. Automatic exclusions
 
 | Automatic exclusion type  | Examples |
 |:---|:----|
@@ -154,7 +152,6 @@ You can define [indicators](manage-indicators.md) with specific actions for enti
 > You can have up to 15,000 indicators in your tenant.
 
 The following table summarizes IoC types and available actions:
-Table 5. Indicators and actions
 
 | Indicator type | Available actions |
 |:---|:---|
@@ -171,14 +168,6 @@ Table 5. Indicators and actions
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
 
-#### Automation folder exclusions
-
-For automated investigation and remediation.
-
-[Automated investigation and remediation](automated-investigations.md) in Defender for Endpoint is designed to examine alerts and take immediate action to resolve detected breaches. As alerts are triggered, and an automated investigation runs, a verdict (Malicious, Suspicious, or No threats found) is reached for each piece of evidence investigated. Depending on the [automation level](automation-levels.md) and other security settings, remediation actions can occur automatically or only upon approval by your security operations team.
-
-You can specify folders, file extensions in a specific directory, and file names to be excluded from automated investigation and remediation capabilities. Such automation folder exclusions will apply to all devices onboarded to Defender for Endpoint. Note that these exclusions are still subject to antivirus scans. See [Manage automation folder exclusions](manage-automation-folder-exclusions.md).  
-
 #### Attack surface reduction exclusions
 
 [Attack surface reduction rules](attack-surface-reduction.md) (also known as ASR rules) target certain software behaviors, such as:
@@ -192,6 +181,14 @@ Sometimes, legitimate applications exhibit software behaviors that could be bloc
 #### Controlled folder access exclusions
 
 [Controlled folder access](controlled-folders.md) monitors apps for activities that are detected as malicious and protects the contents of certain (protected) folders on Windows devices. Controlled folder access allows only trusted apps to access protected folders, such as common system folders (including boot sectors) and other folders that you specify. You can allow certain apps or signed executables to access protected folders by defining exclusions. See [Customize controlled folder access](customize-controlled-folders.md).
+
+#### Automation folder exclusions
+
+For automated investigation and remediation.
+
+[Automated investigation and remediation](automated-investigations.md) in Defender for Endpoint is designed to examine alerts and take immediate action to resolve detected breaches. As alerts are triggered, and an automated investigation runs, a verdict (Malicious, Suspicious, or No threats found) is reached for each piece of evidence investigated. Depending on the [automation level](automation-levels.md) and other security settings, remediation actions can occur automatically or only upon approval by your security operations team.
+
+You can specify folders, file extensions in a specific directory, and file names to be excluded from automated investigation and remediation capabilities. Such automation folder exclusions will apply to all devices onboarded to Defender for Endpoint. Note that these exclusions are still subject to antivirus scans. See [Manage automation folder exclusions](manage-automation-folder-exclusions.md).  
 
 ### How exclusions and indicators are evaluated
 
