@@ -96,6 +96,8 @@ Users and groups are included in the same file. Depending on whether it's a user
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-guests.png" alt-text="csv example when mapping a guest to a member":::
 
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-guests-to-guests.png" alt-text="csv example when mapping a guest to a guest":::
+
 *Example of multiple users in CSV file:* </br>
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-migration-csv-users-groups.png" alt-text="example of both users and groups in mapping file":::
