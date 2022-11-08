@@ -56,9 +56,7 @@ After this feature is turned on, the confirmation email or SMS text that’s sen
 1. Do one of the following:
     1. In the Virtual Appointments app, go to the **Manage** tab > **Appointment types**, and then under **Scheduled**, select an appointment type.
     1. In the Bookings app, go to **Settings** > **Appointment types**, and then under **Scheduled**, select an appointment type.
-1. Turn on **Have attendees join from a web browser**.
-
-Doing this enables browser join for all appointments of this type.
+1. Turn on **Have attendees join from a web browser**. Doing this enables browser join for all appointments of this type.
 
 :::image type="content" source="media/browser-join-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types" lightbox="media/browser-join-appointment-type.png":::
 
