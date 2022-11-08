@@ -26,11 +26,11 @@ To set up Microsoft 365 for frontline workers, follow this overall process:
 
 1. **[Identify your scenarios](#step-1-identify-your-scenarios)**: Which scenarios do you want to implement for your frontline workers? After you have determined which scenarios you want, use the table below to identify the required apps and services for each scenario that you want to implement.
 1. **[Set up your environment and core Microsoft 365](#step-2-set-up-your-environment-and-core-microsoft-365)**: Follow the Setup Guides in the Microsoft 365 admin center to set up Microsoft 365. Keep reading to learn how to access these guides.
-1. **[Provision users, configure groups, and assign licenses](#daisy)**: Learn how to provision users and create groups in Azure AD, then assign frontline licenses to your users.
-1. **[Configure device enrollment](#daisy)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
-1. **[Set up any other services needed for your scenario](#daisy)**: Set up services including Exchange, Outlook, SharePoint, and Microsoft Viva.
-1. **[Configure security](#daisy)**: Learn how to create security policies to keep your organization secure.
-1. **[Configure apps](#step-5-configure-apps-for-your-scenario)**: After everything is set up and configured in the admin center, you can follow the guidance for your scenarios to further configure the apps you need for each scenario.
+1. **[Provision users, configure groups, and assign licenses](#step-3-provision-users-configure-groups-and-assign-licenses)**: Learn how to provision users and create groups in Azure AD, then assign frontline licenses to your users.
+1. **[Configure device enrollment](#step-4-configure-device-enrollment)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
+1. **[Set up any other services needed for your scenario](#step-5-set-up-other-services)**: Set up services including Exchange, Outlook, SharePoint, and Microsoft Viva.
+1. **[Configure security](#step-6-configure-security)**: Learn how to create security policies to keep your organization secure.
+1. **[Configure apps](#step-7-configure-apps-for-your-scenario)**: After everything is set up and configured in the admin center, you can follow the guidance for your scenarios to further configure the apps you need for each scenario.
 
 :::image type="content" source="media/m365-frontline-setup-steps.png" alt-text="Steps to set up Microsoft 365 for frontline workers." lightbox="media/m365-frontline-setup-steps.png":::
 
