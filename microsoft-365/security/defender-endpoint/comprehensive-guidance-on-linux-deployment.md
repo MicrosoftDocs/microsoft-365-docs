@@ -396,13 +396,6 @@ For more information, see [download the onboarding package from Microsoft 365 De
 To deploy Microsoft Defender for Endpoint on Linux using Ansible, see [Deploy Microsoft Defender for Endpoint on Linux with Ansible | Microsoft Docs](../defender-endpoint/linux-install-with-ansible.md#download-the-onboarding-package)
 
 
-For more information on other deployment methods, see:
-
-- [Manual deployment](linux-install-manually.md)
-- [Puppet based deployment](linux-install-with-puppet.md)
-- [Ansible based deployment](linux-install-with-ansible.md)
-- [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
-
 
 
 
