@@ -138,7 +138,7 @@ This section contains general information about the user and alert. This informa
 - **User alert history**: Displays a list of alerts for the user for the last 30 days. Includes a link to view the complete alert history for the user.
 
 > [!NOTE]
-> When a user is detected as a potential high impact user, this information will be highlighted in the alert header in the **User details** page. The user profile also includes a summary with the reasons the user has been detected as such. To learn more about setting policy indicators for potential high impact users, see [Insider risk management settings](insider-risk-management-settings.md#indicators).
+> When a user is detected as a potential high impact user, this information is highlighted in the alert header in the **User details** page. The user profile also includes a summary with the reasons the user has been detected as such. To learn more about setting policy indicators for potential high impact users, see [Insider risk management settings](insider-risk-management-settings.md#indicators).
 
 Alerts generated from policies scoped to only activities that include [priority content](/microsoft-365/compliance/insider-risk-management-policies#prioritize-content-in-policies) include the *Only activity with priority content was scored for this alert* notification in this section.
 
