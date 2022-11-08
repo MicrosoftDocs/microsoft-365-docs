@@ -244,7 +244,7 @@ Set up your device groups, device collections, and organizational units Device g
           "enforcementLevel":"real_time",
           "scanAfterDefinitionUpdate":true,
           "scanArchives":true,
-          "maximumOnDemandScanThreads":2,
+          "maximumOnDemandScanThreads":1,
           "exclusionsMergePolicy":"merge",
           "exclusions":[
              {
@@ -302,7 +302,7 @@ Set up your device groups, device collections, and organizational units Device g
           "enforcementLevel":"real_time",
           "scanAfterDefinitionUpdate":true,
           "scanArchives":true,
-          "maximumOnDemandScanThreads":2,
+          "maximumOnDemandScanThreads":1,
           "exclusionsMergePolicy":"merge",
           "exclusions":[
              {
