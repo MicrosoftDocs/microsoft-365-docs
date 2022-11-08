@@ -40,7 +40,7 @@ A role group is a set of roles that enable users do their jobs across compliance
 
 ## Permissions needed to use features in the compliance portal
 
-To view all of the default role groups that are available in the compliance portal and the roles that are assigned to the role groups by default, see the [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+To view all of the default role groups that are available in the compliance portal and the roles that are assigned to the role groups by default, see [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
 Managing permissions in the compliance portal only gives users access to the compliance features that are available within the compliance portal. If you want to grant permissions to other features that aren't in the compliance portal, such as Exchange mail flow rules (also known as transport rules), you'll need to use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 

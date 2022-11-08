@@ -23,8 +23,8 @@ search.appverid:
 
 # Use communication compliance reports and audits
 
->[!IMPORTANT]
->Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy.
+> [!IMPORTANT]
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -36,14 +36,14 @@ Report widgets provide a quick view of insights most commonly needed for an over
 
 For the date range filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages for reports, the requesting user's local date/time determines the results based on the conversion of the user's local date/time to UTC. For example, if a user in U.S. Pacific Daylight Time (PDT) filters a report from 8/30/2021 to 8/31/2021 at 00:00, the report includes messages from 8/30/2021 07:00 UTC to 8/31/2021 07:00 UTC. If the same user was in U.S. Eastern Daylight Time (EDT) when filtering at 00:00, the report includes messages from 8/30/2021 04:00 UTC to 8/31/2021 04:00 UTC.
 
-![Communication compliance reports dashboard.](../media/communication-compliance-reports-dashboard.png)
+![Communication compliance reports dashboard](../media/communication-compliance-reports-dashboard.png)
 
 The **Reports dashboard** contains the following report widgets and detailed reports links:
 
 ### Report widgets
 
-- **Recent policy matches**: displays the number of matches by active policy over time.
-- **Resolved items by policy**: displays the number of policy match alerts resolved by policy over time.
+- **Recent policy matches**: displays the number of matches by active policies over time.
+- **Resolved items by policy**: displays the number of policy match alerts resolved by policies over time.
 - **Users with most policy match**: displays the users (or anonymized usernames) and number of policy matches for a given period.
 - **Policy with most matches**: displays the policies and the number of matches for a given period, ranked highest to lowest for matches.
 - **Escalations by policy**: displays the number of escalations per policy over a given time.
@@ -101,7 +101,7 @@ Use the *Export* option to create a .csv file containing the report details for 
 
 Create custom reports and review details for messages contained in specific policies on the **Policies** tab. These reports can be used for all-up reviews of messages and for creating a report snapshot for the status of messages for a customizable time period. After creating a report, you can view and download the details report as a .csv file on the **Message details reports** tab.
 
-![Communication compliance message detail report.](../media/communication-compliance-message-detail-report.png)
+![Communication compliance message detail report](../media/communication-compliance-message-detail-report.png)
 
 To create a new message details report, complete the following steps:
 
@@ -119,24 +119,24 @@ Depending on the number of items in the report, it can take a few minutes to hou
 
 Message details reports contain the following information for each message item in the policy:
 
-- **Match ID**: unique ID for the message in the policy.
-- **Sender**: the sender of the message.
-- **Recipients**: the recipients included for the message.
-- **Date Sent**: the date the message was sent.
-- **Match Date**: the date the message was a match for the policy conditions.
-- **Subject**: the subject of the message.
-- **Contains Attachments**: the status of any attachments for the message. Values are either Yes or No.
-- **Policy Name**: the name of the policy associated with the message. This value will be the same for all messages in the report.
-- **Item Status**: the status of the message item in the policy. Values are Pending or Resolved.
-- **Tags**: the tags assigned to the message. Values are Questionable, Compliant, or Non-compliant.
-- **Keyword Matches**: keyword matches for the message.
-- **Reviewers**: reviewers assigned to message.
-- **Pending for (days)**: the number of days the message has been in a pending state. For resolved messages, the value is 0.
-- **Comment for resolved**: the comments for the message entered when resolved.
-- **Resolved Date**: the date and time the message was resolved.
-- **Last Updated By**: the user name of the last updater.
-- **Last Updated On**: the date and time the message was last updated.
-- **History of comments**: list of all comments for the message alert, including comment author and date/time of the comment.
+- **Match ID**: Unique ID for the message in the policy.
+- **Sender**: Sender of the message.
+- **Recipients**: Recipients included for the message.
+- **Date Sent**: Date the message was sent.
+- **Match Date**: Date the message was a match for the policy conditions.
+- **Subject**: Subject of the message.
+- **Contains Attachments**: Status of any attachments for the message. Values are either *Yes* or *No*.
+- **Policy Name**: Name of the policy associated with the message. This value will be the same for all messages in the report.
+- **Item Status**: Status of the message item in the policy. Values are *Pending* or *Resolved*.
+- **Tags**: Tags assigned to the message. Values are *Questionable, Compliant*, or *Non-compliant*.
+- **Keyword Matches**: Keyword matches for the message.
+- **Reviewers**: Reviewers assigned to message.
+- **Pending for (days)**: Number of days the message has been in a pending state. For resolved messages, the value is 0.
+- **Comment for resolved**: Comments for the message entered when resolved.
+- **Resolved Date**: Date and time the message was resolved.
+- **Last Updated By**: User name of the last updater.
+- **Last Updated On**: Date and time the message was last updated.
+- **History of comments**: List of all comments for the message alert, including comment author and date/time of the comment.
 
 ## Audit
 
@@ -145,23 +145,23 @@ In some instances, you must provide information to regulatory or compliance audi
 > [!IMPORTANT]
 > Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 Audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
 
-To view communication compliance policy update activities, select the **Export policy updates** control on the main page for any policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export update activities. This action generates an audit file in the .csv format that contains the following information:
+To view communication compliance policy update activities, select the **Export policy updates** control on the main page for any policy. You must be assigned the *Global Admin* or *Communication Compliance Admins* roles to export update activities. This action generates an audit file in the .csv format that contains the following information:
 
 |Field|Details|
 |---|---|
-| **CreationDate** | The date the update activity was performed in a policy. |
-| **UserIds** | The user that performed the update activity in a policy. |
-| **Operations** | The update operations performed on the policy. |
-| **AuditData** | This field is the main data source for all policy update activities. All update activities are recorded and separated by comma delimiters. |
+| **CreationDate** | Date the update activity was performed in a policy. |
+| **UserIds** | User that performed the update activity in a policy. |
+| **Operations** | Update operations performed on the policy. |
+| **AuditData** | Main data source for all policy update activities. All update activities are recorded and separated by comma delimiters. |
 
-To view communication compliance review activities for a policy, select the **Export review activities** control on the **Overview** page for a specific policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export review activities. This action generates an audit file in the .csv format that contains the following information:
+To view communication compliance review activities for a policy, select the **Export review activities** control on the **Overview** page for a specific policy. You must be assigned the *Global Admin* or *Communication Compliance Admins* roles to export review activities. This action generates an audit file in the .csv format that contains the following information:
 
 |Field|Details|
 |---|---|
-| **CreationDate** | The date the review activity was performed in a policy. |
-| **UserIds** | The user that performed the review activity in a policy. |
-| **Operations** | The review operations performed on the policy. |
-| **AuditData** | This field is the main data source for all policy review activities. All review activities are recorded and separated by comma delimiters. |
+| **CreationDate** | Date the review activity was performed in a policy. |
+| **UserIds** | User that performed the review activity in a policy. |
+| **Operations** | Review operations performed on the policy. |
+| **AuditData** | Main data source for all policy review activities. All review activities are recorded and separated by comma delimiters. |
 
 You can also view audit activities in the unified audit log or with the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet. To learn more about audit log retention policies, see [Manage audit log retention policies](/microsoft-365/compliance/audit-log-retention-policies).
 

@@ -26,7 +26,7 @@ description: "Trainable classifiers can recognize various types of content for l
 
 # Learn about trainable classifiers
 
-Categorizaing and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft Purview has three ways to classify content.
+Categorizing and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft Purview has three ways to classify content.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -36,7 +36,7 @@ Manual categorizing requires human judgment and action. Users and admins categor
 
 ## Automated pattern-matching
 
-These categorization mechanisms includes finding content by:
+These categorization mechanisms include finding content by:
 
 - Keywords or metadata values (keyword query language).
 - Using previously identified patterns of sensitive information like social security, credit card, or bank account numbers [(Sensitive information type entity definitions)](sensitive-information-type-entity-definitions.md).
@@ -47,7 +47,7 @@ Sensitivity and retention labels can then be automatically applied to make the c
 
 ## Classifiers
 
-This categorization method is well suited to content that isn't easily identified by either the manual or automated pattern-matching methods. This method of categorization is more about using a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in indentifying.
+This categorization method is well suited to content that isn't easily identified by either the manual or automated pattern-matching methods. This method of categorization is more about using a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in identifying.
 
 > [!NOTE]
 > In Preview - You can view the trainable classifiers in content explorer by expanding **Trainable Classifiers** in the filters panel. The trainable classifiers will automatically display the number of incidents found in SharePoint, Teams, and OneDrive, without requiring any labeling.
@@ -55,9 +55,13 @@ This categorization method is well suited to content that isn't easily identifie
 
 ### Where you can use classifiers
 
-Classifiers are available to use as a condition for [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [communication compliance](communication-compliance.md).
+Classifiers are available to use as a condition for:
 
-Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+- [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md)
+- [Auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)
+- [Communication compliance](communication-compliance.md)
+- Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+- [Data loss prevention](dlp-learn-about-dlp.md)
 
 > [!IMPORTANT]
 > Classifiers only work with items that are not encrypted.
@@ -101,7 +105,7 @@ You can help improve the accuracy of all custom trainable classifiers and by pro
 
 ## Provide match/not a match accuracy feedback in trainable classifiers
 
-You can view the number of matches a trainable classifier has in **Content explorer** and **Trainable lassifiers**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your classifiers. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
+You can view the number of matches a trainable classifier has in **Content explorer** and **Trainable classifiers**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your classifiers. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
 
 
 ## See also

@@ -20,7 +20,7 @@ ms.collection:
   - m365solution-evalutatemtp
   - highpri
   - tier1
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Set up your Microsoft 365 Defender trial in a lab environment 
