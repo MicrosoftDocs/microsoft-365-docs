@@ -496,6 +496,9 @@ The global settings for quarantine policies allow you to customize the quarantin
 
 3. In the **Quarantine notification settings** flyout that opens, configure the following settings:
 
+   > [!NOTE]
+   > We don't allow the same display name, subject, or disclaimer text for different languages. You need to provide a different display name, subject, and disclaimer text for each language that you select.
+
    - Customize quarantine notifications based on the recipient's language:
 
      - The **Display name** of the sender that's used in quarantine notifications as shown in the following screenshot.
