@@ -123,8 +123,8 @@ Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to r
 
 | Automatic exclusion type  | Examples |
 |:---|:----|
-| Operating system files <br/>(See [Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions).) | %windir%\SoftwareDistribution\Datastore\*\Datastore.edb <br/> %allusersprofile%\NTUser.pol <br/> Windows Update files <br/> Windows Security files <br/> … and more |  |
-| Server roles and features <br/>(See [Default exclusions for roles](configure-server-exclusions-microsoft-defender-antivirus.md#default-exclusions-for-all-roles).)  | File Replication Service (FRS) <br/> Hyper-V <br/> SYSVOL <br/> Active Directory <br/> DNS Server <br/> Print Server <br/> Web Server <br/>  Windows Server Update Services |  |
+| Operating system files <br/>(See [Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions).) | `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb` <br/> `%allusersprofile%\NTUser.pol` <br/> Windows Update files <br/> Windows Security files <br/> … and more | 
+| Server roles and features <br/>(See [Default exclusions for roles](configure-server-exclusions-microsoft-defender-antivirus.md#default-exclusions-for-all-roles).)  | File Replication Service (FRS) <br/> Hyper-V <br/> SYSVOL <br/> Active Directory <br/> DNS Server <br/> Print Server <br/> Web Server <br/>  Windows Server Update Services |  
 
 ##### Custom exclusions
 
