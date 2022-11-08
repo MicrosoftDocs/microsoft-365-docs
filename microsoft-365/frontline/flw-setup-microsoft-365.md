@@ -29,7 +29,7 @@ To set up Microsoft 365 for frontline workers, follow this overall process:
 1. **[Provision users, configure groups, and assign licenses](#daisy)**: Learn how to provision users and create groups in Azure AD, then assign frontline licenses to your users.
 1. **[Configure device enrollment](#daisy)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
 1. **[Set up any other services needed for your scenario](#daisy)**: Set up services including Exchange, Outlook, SharePoint, and Microsoft Viva.
-1. **[Configure security](#daisy)**: Learn how to use security features to keep your organization secure.
+1. **[Configure security](#daisy)**: Learn how to create security policies to keep your organization secure.
 1. **[Configure apps](#step-5-configure-apps-for-your-scenario)**: After everything is set up and configured in the admin center, you can follow the guidance for your scenarios to further configure the apps you need for each scenario.
 
 :::image type="content" source="media/m365-frontline-setup-steps.png" alt-text="Steps to set up Microsoft 365 for frontline workers." lightbox="media/m365-frontline-setup-steps.png":::
@@ -57,6 +57,76 @@ The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterp
 
 1. Use the [Prepare your environment](https://aka.ms/prepareyourenvironment) guide to prepare your organization's environment for Microsoft 365 and Office 365 services.
 1. Use the [Microsoft 365 setup](https://aka.ms/microsoft365setupguide) guide to set up productivity tools, security policies, and device management capabilities. You can also use this advisor to set up and configure your organization's devices.
+
+## Step 3: Provision users, configure groups, and assign licenses
+
+### Provision users
+
+Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Azure AD](/azure/active-directory/roles/permissions-reference).
+
+In this step, you'll create user identities in Azure AD. You can import users in three ways:
+
+- **Integrate Azure AD with an existing Active Directory instance:** [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites) replicates Active Directory user accounts to Azure AD, allowing a user to have a single identity capable of accessing both local and cloud-based resources.
+- **Integrate Azure AD with a third-party identity solution:** Azure AD supports integration with some third-party providers through federation.
+    - [Learn how to use Okta for Hybrid Microsoft AAD Join](https://www.okta.com/resources/whitepaper/using-okta-for-hybrid-microsoft-aad-join/).
+    - [Learn how to configure PingFederate with Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom#configuring-federation-with-pingfederate).
+- **Import users from your organization's HR systems:** [Azure AD user provisioning service](/azure/active-directory/app-provisioning/plan-auto-user-provisioning) automates the creation, maintenance, and removal of user identities based on rules set by your organization.
+    - **On-premises HR systems:** You can use [Microsoft Identity Manager](/microsoft-identity-manager/microsoft-identity-manager-2016) to provision users from your on-premises HR systems to Active Directory or directly to Azure AD.
+    - **Cloud-based HR systems:** Learn how to connect [SAP SuccessFactors](/azure/active-directory/saas-apps/sap-successfactors-inbound-provisioning-tutorial) and [Workday](/azure/active-directory/saas-apps/workday-inbound-tutorial#planning-your-deployment) to Azure AD.
+
+Use this table to validate your HR-driven user provisioning.
+
+|Test scenario |Expected results |
+|--------------|-----------------|
+|New employee is created in the cloud HR app |The user account is provisioned in Azure AD and can access assigned cloud resources. <br> If Azure AD Connect sync is configured, the user account also gets created in Active Directory. <br> The user can sign into Active Directory domain apps and perform their desired actions.|
+|User is terminated in the cloud HR app |The user account is disabled in Azure AD, and, if applicable, Active Directory. <br>The user can’t sign into cloud or on-premises applications and resources assigned to them. |
+|Supervisor is updated in the cloud HR app |User remains active with the new mapping. |
+|HR rehires an employee into a new role. |The results depend on how the cloud HR app is configured to generate employee IDs. <br>If the old employee ID is re-used for a rehire, the connector enables the existing Active Directory account for the user. <br>If the rehire gets a new employee ID, the connector creates a new Active Directory account for the user. |
+|HR converts the employee to a contract worker or vice-versa |A new Active Directory account is created for the new persona and the old account is disabled on the effective date of the conversion. |
+
+[Learn more about Azure AD deployment](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2).
+
+### Configure Azure AD groups
+
+Configuring groups in Azure  AD allows you to create and manage policies and license assignments at scale.
+
+- **Assign a unique attribute to frontline workers:** The ability to identify all frontline workers is useful when applying groups to the frontline workforce or for validating that integrations between Azure AD and HR systems are functioning properly. Organizations frequently use the Job ID attribute for this purpose.
+- **Create Azure AD groups and assign frontline users:** With Azure AD groups, you can grant access and permissions to a group of users instead of for each individual user. Groups are used to manage users that all need the same access and permissions to resources, such as potentially restricted apps and services. Instead of adding special permissions to individual users, you create a group that applies the special permissions to every member of that group.
+
+The table below includes recommendations for applying groups in frontline implementations. For more information on group types, membership types, and assignment, refer to the [Azure AD documentation for groups and membership](/azure/active-directory/fundamentals/concept-learn-about-groups?context=%2Fazure%2Factive-directory%2Fenterprise-users%2Fcontext%2Fugr-context) and [managing groups](/azure/active-directory/fundamentals/how-to-manage-groups). For more information on security group limits and other Azure AD service limits, refer to [Azure Active Directory Service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).
+
+|Use case |Group type |
+|---------|-----------|
+|Assign licenses, policies, and permissions automatically. If a member’s attributes change, the system looks at dynamic group rules for the directory to see if the member meets the rule requirements (is added), or no longer meets the rule requirements (is removed). |Security group (limit 5,000 groups) <br> dynamic user |
+|Manage access for users without automatic assignment to groups. |Security groups or distribution list (no limit applies) |
+|Create an email alias to distribute groups messages to groups of users without automatic user management. |Distribution list or static Microsoft 365 group |
+|Create an email alias or team in Microsoft Teams and manage membership automatically. |Microsoft 365 groups, dynamic user |
+|Use [My Staff](/azure/active-directory/roles/my-staff-configure) to delegate permissions to frontline managers to view employee profiles, change phone numbers, and reset passwords. |[Administrative Unit](/azure/active-directory/roles/administrative-units) |
+
+### Assign frontline licenses
+
+You can add licenses to individual users or to groups of users in Azure AD. Group assignment is the most scalable way to assign licenses to your frontline workers. You can assign one or more product licenses to a group.
+
+[Learn more about group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) and [assigning licenses to groups](/azure/active-directory/enterprise-users/licensing-groups-assign).
+
+## Step 4: Configure device enrollment
+
+
+
+
+
+
+To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Manage mobile devices for frontline workers](flw-devices.md).
+
+
+
+
+
+
+
+
+
+
 
 ## Step 3: Set up Microsoft Teams
 
@@ -121,7 +191,3 @@ Scenarios and apps
 | Ongoing training |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; | &#x2705; |
 | [Simplify business processes](simplify-business-processes.md) | &#x2705; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; | &#x2705; |
 | Manage sites, stores, and projects | &#x2705; |  &nbsp; | &#x2705; |  &nbsp; | &nbsp; | &#x2705; | &#x2705; |
-
-## Step 6: Set up devices
-
-To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Manage mobile devices for frontline workers](flw-devices.md).
