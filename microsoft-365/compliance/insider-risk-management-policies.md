@@ -228,7 +228,7 @@ By default, cumulative exfiltration detection generates risk scores based on a u
 
 Insider risk management identifies three types of peer groups for analyzing exfiltration activity performed by users. Peer groups defined for users are based on the following criteria:
 
-**SharePoint sites**: insider risk management identifies peer groups based on users who access similar SharePoint sites as the user.
+**SharePoint sites**: Insider risk management identifies peer groups based on users who access similar SharePoint sites as the user.
 
 **Similar organization**: Users with reports and team members based on organization hierarchy.This option requires that your organization uses Azure Active Directory to maintain organization hierarchy. 
 
