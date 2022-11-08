@@ -34,14 +34,14 @@ To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, se
 
 ## Deployment summary
 
-The following list captures the actions you'll take to deploy Microsoft Defender for Endpoint on Linux:
+Learn about the general guidance on a typical Microsoft Defender for Endpoint on Linux deployment. The applicability of some steps is determined by the requirements of your Linux environment. 
 
 1. Work with your Firewall, Proxy, and Networking admin.
 2. Run a centralized performance monitoring to capture current resource utilization. 
 3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk).
 4. (Optional) Update storage subsystem drivers.
 5. (Optional) Update nic drivers.
-6. System requirements and resource recommendations.
+6. Check system requirements and resource recommendations.
 7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus.
 8. Keep the following points about exclusions in mind.
 9. Create Device Groups.
@@ -394,6 +394,17 @@ For more information, see [download the onboarding package from Microsoft 365 De
 ## 12. Use Ansible to manage Microsoft Defender for Endpoint on Linux
 
 To deploy Microsoft Defender for Endpoint on Linux using Ansible, see [Deploy Microsoft Defender for Endpoint on Linux with Ansible | Microsoft Docs](../defender-endpoint/linux-install-with-ansible.md#download-the-onboarding-package)
+
+
+For more information on other deployment methods, see:
+
+- [Manual deployment](linux-install-manually.md)
+- [Puppet based deployment](linux-install-with-puppet.md)
+- [Ansible based deployment](linux-install-with-ansible.md)
+- [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
+
+
 
 1. To deliver the downloaded onboarding package from Microsoft 365 Defender portal, see the following information:
 
