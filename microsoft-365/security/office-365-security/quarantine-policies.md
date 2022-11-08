@@ -531,6 +531,8 @@ The global settings for quarantine policies allow you to customize the quarantin
 
    :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="Quarantine notification settings flyout in the Microsoft 365 Defender portal." lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
 
+please note that we don't allow the same display name, the same subject, or the same disclaimer for different languages. so, the customer needs to provide different display name / subject / disclaimer for different languages selected
+
 ## View quarantine policies in the Microsoft 365 Defender portal
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
