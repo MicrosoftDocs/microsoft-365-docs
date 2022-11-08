@@ -111,16 +111,76 @@ You can add licenses to individual users or to groups of users in Azure AD. Grou
 
 ## Step 4: Configure device enrollment
 
+Registering devices in Azure AD creates a unique identity that can be used to secure and manage devices. [Learn more about Azure AD device identity](/azure/active-directory/devices/).
 
+### Shared device enrollment with Intune
 
+**Android:** Automatically enroll Android devices into shared device mode with [Microsoft Endpoint Manager](/mem/intune/fundamentals/whats-new#intune-support-for-provisioning-azure-active-directory-shared-devices). [Learn more about enrolling shared devices in Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/enroll-android-enterprise-dedicated-devices-into-azure-ad-shared/ba-p/1820093).
 
+**iOS:** Not currently available.
 
+### Bring-your-own device enrollment with Intune
+
+- [Windows](/mem/intune/enrollment/windows-enrollment-methods#user-self-enrollment-in-intune)
+- [Android](/mem/intune/enrollment/android-work-profile-enroll)
+- [iOS](/mem/intune/enrollment/ios-enroll#user-owned-iosipados-and-ipados-devices-byod)
+
+### Configuring devices for shared device mode (SDM) with third-party mobile device managers
+
+Zero-touch provisioning of SDM isn’t currently supported by third-party mobile device managers (MDMs). However, you can [manually configure SDM](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode) for Android and iOS devices managed in third-party MDMs.
+
+> [!NOTE]
+> While these steps register the device in Azure AD, they don't connect Azure AD to the MDM. Conditional access won't be available for these devices.
+
+[Learn more about configuration with VMware Workspace ONE](https://docs.vmware.com/VMware-Workspace-ONE-UEM/2011/Android_Platform/GUID-AWT-SHAREDDEVICESOVERVIEW.html) and [SOTI](https://www.soti.net/mc/help/v15.0/console/configurations/advancedconfigurations/shareddevice/shareddevice.html).
+
+If you choose to manually configure devices in SDM, you’ll need to take additional steps to re-enroll Android devices in SDM when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
 
 To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Manage mobile devices for frontline workers](flw-devices.md).
 
+## Step 5: Set up other services
 
+### Set up email with Exchange Online
 
+If you want your frontline managers and workers to have access to email, you need to set up email in Microsoft 365. Users must have an F3 license to get access to email. Follow the [Email setup guide](https://aka.ms/office365setup) to set it up.
 
+Note that your users can also install the Outlook app to use for their email, so you'll want to make sure you share where to download the Outlook app with them.
+
+#### Outlook
+
+Using dynamic group backed shared mailboxes based on attributes such as Location, Department, and Role enables your organization to send targeted communications to dynamic groups that don’t require administrator intervention.
+
+### Set up sites with SharePoint in Microsoft 365
+
+[SharePoint](/sharepoint/sharepoint-online) lets you share documents and create sites. Use the [SharePoint setup guide](https://aka.ms/spoguidance) in the Microsoft 365 admin center to set it up.
+
+### Set up employee experiences with Microsoft Viva
+
+[Microsoft Viva](/viva/microsoft-viva-overview) helps connect employees with an integrated employee experience that brings together communications, knowledge, learning, resources, and insights into the flow of work. Microsoft Viva has several modules that can be used with Microsoft Teams to create employee experiences.
+
+#### Set up Viva Connections
+
+Use [Viva Connections](/viva/connections/viva-connections-overview) to create a dashboard that helps engage and inform your frontline workers. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed. 
+
+Follow the [Build your employee experience setup guide](https://aka.ms/EmployeeExperienceDashboard) to set it up. Learn more about [setting up Viva Connections](/viva/connections/guide-to-setting-up-viva-connections).
+
+#### Set up Viva Learning
+
+[Viva Learning](/viva/learning/) is an app in Microsoft Teams that empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms they already use. See [Set up Microsoft Viva Learning in the Teams admin center](/viva/learning/set-up-viva-learning) to learn how to set up Viva Learning.
+
+#### Set up your organization's social network with Viva Engage
+
+[Viva Engage](/viva/engage/overview) helps connect your workforce across your company. Learn how to [Set up Viva Engage](/viva/engage/setup) to set it up.
+
+### Set up Power Apps, Power Automate, and Power BI
+
+You can use all of these apps within Microsoft Teams. For more information about how to set them up, see:
+
+- [Power Apps and Microsoft Teams integration](/powerapps/teams/overview)
+- [Power Automate - use flows in Microsoft Teams](/power-automate/teams/overview)
+- [Collaborate in Microsoft Teams with Power BI](/power-bi/collaborate-share/service-collaborate-microsoft-teams)
+- [Power Virtual Agents app in Microsoft Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)
+- [Power Apps](/microsoftteams/manage-power-platform-apps)
 
 
 
@@ -136,43 +196,7 @@ For full deployments, follow the guidance in [Deploy Teams at scale for frontlin
 
 ## Step 4: Set up other services
 
-### Set up email with Exchange Online
 
-If you want your frontline managers and workers to have access to email, you need to set up email in Microsoft 365. Users must have an F3 license to get access to email. Follow the [Email setup guide](https://aka.ms/office365setup) to set it up.
-
-Note that your users can also install the Outlook app to use for their email, so you'll want to make sure you share where to download the Outlook app with them.
-
-### Set up sites with SharePoint in Microsoft 365
-
-[SharePoint](/sharepoint/sharepoint-online) lets you share documents and create sites. Use the [SharePoint setup guide](https://aka.ms/spoguidance) in the Microsoft 365 admin center to set it up.
-
-### Set up employee experiences with Viva modules
-
-[Microsoft Viva](/viva/microsoft-viva-overview) helps connect employees with an integrated employee experience that brings together communications, knowledge, learning, resources, and insights into the flow of work. Microsoft Viva has several modules that can be used with Microsoft Teams to create employee experiences.
-
-#### Set up Viva Connections
-
-Use [Viva Connections](/viva/connections/viva-connections-overview) to create a dashboard that helps engage and inform your frontline workers. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed. 
-
-Follow the [Build your employee experience setup guide](https://aka.ms/EmployeeExperienceDashboard) to set it up. Learn more about [setting up Viva Connections](/viva/connections/guide-to-setting-up-viva-connections).
-
-#### Set up Viva Learning
-
-[Viva Learning](/viva/learning/) is an app in Microsoft Teams that empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms they already use. See [Set up Microsoft Viva Learning in the Teams admin center](/viva/learning/set-up-viva-learning) to learn how to set up Viva Learning.
-
-### Set up your organization's social network with Yammer
-
-[Yammer](/yammer) helps connect your workforce across your company. Use the [Yammer deployment advisor](https://aka.ms/yammerdeploymentguide) to set it up.
-
-### Set up Power Apps, Power Automate, and Power BI
-
-You can use all of these apps within Microsoft Teams. For more information about how to set them up, see:
-
-- [Power Apps and Microsoft Teams integration](/powerapps/teams/overview)
-- [Power Automate - use flows in Microsoft Teams](/power-automate/teams/overview)
-- [Collaborate in Microsoft Teams with Power BI](/power-bi/collaborate-share/service-collaborate-microsoft-teams)
-- [Power Virtual Agents app in Microsoft Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)
-- [Power Apps](/microsoftteams/manage-power-platform-apps)
 
 ## Step 5: Configure apps for your scenario
 
