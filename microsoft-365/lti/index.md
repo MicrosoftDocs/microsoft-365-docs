@@ -82,6 +82,7 @@ For configuration steps, see:
 - [Microsoft Teams Meetings with Open LMS](open-lms-teams-classes-and-meetings.md).
 - [Microsoft Teams Meetings with Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).
 - [Microsoft Teams Meetings with Schoology Learning](teams-classes-and-meetings-with-schoology.md).
+- [Microsoft Teams Meetings LTI with any LTI 1.3 compliant LMS](integrate-with-other-lms.md).
 
 ### Teams Classes LTI
 
@@ -97,4 +98,6 @@ For configuration steps, see:
 
 ### OneNote Class Notebook LTI
 
-OneNote Class Notebook LTI can be used with your Learning Management System (LMS) to create a shared notebook and link it to your course. Students enrolled in your LMS course can access the notebook automatically without you having to add their names. For configuration steps, see [Microsoft OneNote Class Notebook LTI](https://www.onenote.com/lti/integratelti).
+OneNote Class Notebook LTI can be used with your LMS to create a shared notebook and link it to educators' courses. Students enrolled in the LMS course can access the notebook automatically without having to add their names.
+
+For configuration steps, see [Microsoft OneNote Class Notebook LTI](https://www.onenote.com/lti/integratelti).
