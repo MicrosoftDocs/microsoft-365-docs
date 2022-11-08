@@ -107,7 +107,7 @@ Some examples of different searches include the following criteria. Explore thes
 - Information about the date, IP Address, User, Activity, and Item can be found in the search job results page for each item
 - Select an activity to see a fly-out window with more details about the activity
 - The filtering feature for search job results can help to parse through results.
-- Export is fully functional and exports all search job items to a .csv file. Export supports results up to 50KB.
+- Export is fully functional and exports all search job items to a .csv file. Export supports results up to  500 KB (500,000 rows).
 
 ## Frequently asked questions
 
