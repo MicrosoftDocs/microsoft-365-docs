@@ -12,14 +12,14 @@ ms.localizationpriority: normal
 ms.collection: 
 - purview-compliance
 - tier3
-description: Learn how the scanner from Microsoft Purview Information Protection  can discover, classify, and protect files on data stores.
+description: Learn how the on-premises scanner from Microsoft Purview Information Protection can discover, classify, and protect files on data stores.
 ---
 
 # Learn about the information protection scanner
 
-Use the information in this section to learn about the Microsoft Purview information protection scanner, and then how to successfully install, configure, run and if necessary, troubleshoot it.
+Use the information in this section to learn about the Microsoft Purview Information Protection scanner, and then how to successfully install, configure, run and if necessary, troubleshoot it.
 
-The scanner runs as a service on Windows Server and lets you discover, classify, and protect files on the following data stores:
+This scanner runs as a service on Windows Server and lets you discover, classify, and protect files on the following data stores:
 
 - **UNC paths** for network shares that use the SMB or NFS (Preview) protocols.
 
