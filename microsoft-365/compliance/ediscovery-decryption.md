@@ -97,4 +97,4 @@ Other documents aren't decrypted, including:
 - Documents encrypted with legacy RMS templates and not labeled.
 - Documents with user-defined permissions or with expiration settings (SMIME or other standards).
 
-<sup>3</sup> Only content encrypted with RMS keys hosted in Microsoft 365 is transparently decrypted by eDiscovery (Premium).  Double Key Encryption (DKE), Bring Your Own Key (BYOK), on-premises RMS, etc. aren't supported. For more information, see [Your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key#tenant-root-keys-generated-by-microsoft).
+<sup>3</sup> Only content encrypted with RMS keys hosted in Microsoft 365 is transparently decrypted by eDiscovery (Premium).  Double Key Encryption (DKE), Hold Your Own Key (HYOK), on-premises RMS, etc. aren't supported. For more information, see [Your Azure Information Protection tenant key](/azure/information-protection/plan-implement-tenant-key#tenant-root-keys-generated-by-microsoft).
