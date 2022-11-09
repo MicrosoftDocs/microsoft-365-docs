@@ -223,7 +223,7 @@ The following table lists and describes the system account environment variables
 |`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
 |`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
 |`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
-|`%LOCALAPPDATA%`|`C:\Users\USERNAME\AppData\Local`|
+|`%LOCALAPPDATA%`|`C:\WINDOWS\system32\config\systemprofile\AppData\Local`|
 |`%ProgramData%`|`C:\ProgramData`|
 |`%ProgramFiles%`|`C:\Program Files`|
 |`%ProgramFiles%\Common Files`|`C:\Program Files\Common Files`|
