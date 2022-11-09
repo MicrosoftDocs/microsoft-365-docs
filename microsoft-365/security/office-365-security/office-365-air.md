@@ -70,7 +70,7 @@ During and after each automated investigation, your security operations team can
 
 ## How to get AIR
 
-AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. Need some help? Follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
+AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. Need some help? Follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
 
 - [Audit logging](../../compliance/turn-audit-log-search-on-or-off.md) (should be turned on)
 - [Anti-malware protection](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
@@ -107,7 +107,7 @@ Permissions are granted through certain roles, such as those that are described 
 
 ## Required licenses
 
-[Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) licenses should be assigned to:
+[Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) licenses should be assigned to:
 
 - Security administrators (including global administrators)
 - Your organization's security operations team (including security readers and those with the **Search and Purge** role)
