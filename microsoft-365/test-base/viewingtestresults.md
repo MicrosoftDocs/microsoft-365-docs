@@ -25,7 +25,7 @@ Clicking your Test Base account name, and then clicking links under the Insights
 -	Security Update Results — overview and details of security update-related application test results
 -	Feature Update Results — overview and details of feature update-related application test results 
 
-From the latter two pages, you will have detailed views of test results that focus on the following areas: 
+From the latter two pages, you'll have detailed views of test results that focus on the following areas: 
 -	Script executions 
 -	Reliability data
 -	Memory utilization
