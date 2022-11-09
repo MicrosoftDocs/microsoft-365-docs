@@ -57,9 +57,8 @@ Download the sample CSV to know the supported column attributes.
 
 > [!NOTE]
 > Only 500 indicators can be uploaded for each batch. 
-
-> [!NOTE]
-> Attempting to import Indicators with specific categories requires the string to be written on Pascal Case convention and only accepts the category list available at the portal.
+>
+> Attempting to import indicators with specific categories requires the string to be written in Pascal case convention and only accepts the category list available at the portal.
 
 The following table shows the supported parameters.
 
