@@ -102,7 +102,7 @@ If you select this export option, the exported content is organized in the follo
   - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files can't be included with this option.
 
 > [!NOTE]
-> Whether ediscovery includes the parent email in the PST is is decided by the "Group" option in the review set.
+> The *Group* option selected in the review set determines which items are included in the content exported from the review set. If *None* is selected, the exported content only includes the selected or filtered items. If *Group by family* is selected, the exported content includes all items in the family.
 If you select to group the documents by family, the export will include all the docs in the family.
 If it is not grouped, the export will only export the selected or filtered documents.
 
