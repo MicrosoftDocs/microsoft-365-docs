@@ -1,4 +1,4 @@
-# [Microsoft Defender for Endpoint](index.yml)Integrate your SIEM tools
+# [Microsoft Defender for Endpoint](index.yml)
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
