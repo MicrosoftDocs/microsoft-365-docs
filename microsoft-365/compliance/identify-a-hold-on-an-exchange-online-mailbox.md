@@ -266,7 +266,7 @@ $ht.MailboxLog | Convertfrom-Json
 ```
    
 > [!NOTE]
-> There will not be any hold tracking logs if the user account has been disabled. 
+> Hold tracking logs aren't available if the user account has been disabled. 
 
 ### Review the results of the Mailbox Diagnostics logs
 
