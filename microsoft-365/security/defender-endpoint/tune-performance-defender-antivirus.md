@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.date: 08/13/2022
 manager: dansimp
 ms.collection: 
@@ -19,6 +19,8 @@ ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
+
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Performance analyzer for Microsoft Defender Antivirus
 
