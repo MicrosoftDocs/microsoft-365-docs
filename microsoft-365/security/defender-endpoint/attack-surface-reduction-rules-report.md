@@ -9,8 +9,8 @@ ms.subservice: mde
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
@@ -21,6 +21,8 @@ ms.collection:
 ms.date: 08/25/2022
 search.appverid: met150
 ---
+
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Attack surface reduction (ASR) rules report
 
