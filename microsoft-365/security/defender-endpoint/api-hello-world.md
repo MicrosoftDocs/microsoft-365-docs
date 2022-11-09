@@ -158,7 +158,7 @@ Done! You have successfully registered an application!
   $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
   # The URL contains the type of query and the time filter we create above
-  # Read more about other query options and filters at https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/get-alerts
+  # Read more about other query options and filters at https://learn.microsoft.com/microsoft-365/security/defender-endpoint/get-alerts
   $url = "https://api.securitycenter.microsoft.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
 
   # Set the WebRequest headers
