@@ -38,11 +38,13 @@ For more information about IB scenarios and features, see [Learn about informati
 
 Before you get started with IB, you should confirm your Microsoft 365 subscription and any add-ons. To access and use IB, your organization must have one of the following subscriptions or add-ons:
 
-- Microsoft 365 E5/A5 subscription (paid or trial version)
-- Office 365 E5/A5/A3/A1 subscription (paid or trial version)
+- Microsoft 365 E5/A5/G5 subscription (paid or trial version)
+- Office 365 E5/A5/G5/A3/A1 subscription (paid or trial version)
 - Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
 - Microsoft 365 E3/A3/A1 subscription + the Microsoft 365 E5/A5 Compliance add-on
 - Microsoft 365 E3/A3/A1 subscription + the Microsoft 365 E5/A5 Insider Risk Management add-on
+- Microsoft 365 E5/A5/F5/G5 Insider Risk Management
+- Microsoft 365 E5/A5/F5/G5 Compliance and Microsoft F5 Security & Compliance
 
 For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
