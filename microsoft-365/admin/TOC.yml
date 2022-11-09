@@ -352,8 +352,10 @@
            items:
            - name: Configuration overview
              href: manage/servicenow-overview.md
-           - name: Configure authentication
-             href: manage/servicenow-authentication.md
+           - name: Configure basic authentication
+             href: manage/servicenow-basic-authentication.md
+           - name: Configure with Azure AD Auth Token
+             href: manage/servicenow-aad-oauth-token.md
            - name: Testing the configuration
              href: manage/servicenow-testing-the-configuration.md
            - name: Troubleshooting
