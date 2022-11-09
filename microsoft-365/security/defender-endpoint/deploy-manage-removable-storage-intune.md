@@ -94,7 +94,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
      - **Data Type** as **String (XML file)**
        - **Custom XML** as selected XML file
 
-         Here is one group example XML file for any removable storage and CDROM and Windows portable devices: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
+         Take a look at the **Overview** -> **Removable storage group**, you can create different group types. Here is one group example XML file for any removable storage and CDROM and Windows portable devices: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
 
        :::image type="content" source="images/any-removable-storage-group.png" alt-text="Screenshot of creating any Removable Storage Group." lightbox="images/any-removable-storage-group.png":::
 
@@ -109,9 +109,9 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
      - **Name** as **Allow Read Activity**
      - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b**[PolicyRule Id]**%7d/RuleData`
      - **Data Type** as **String (XML file)**
-     - **Custom XML** as **Allow Read.xml**  file
+       - **Custom XML** as selected XML file
 
-       Here is one group example XML file for Allow Read access for each removable storage: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml>
+         Take a look at the **Overview** -> **Access policy rule**, you can use **Parameters** to set condition for sepcific Entry. Here is one group example XML file for Allow Read access for each removable storage: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml>
 
        :::image type="content" source="images/allow-read-activity.png" alt-text="Screenshot of Allow Read Activity policy" lightbox= "images/allow-read-activity.png":::
 
@@ -213,6 +213,39 @@ For this scenario, you need to create two groups - one group for any removable s
     - Execute: disk level 4 + file system level 32 = 36.
     
     Here is the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%202%20Audit%20Write%20and%20Execute%20access%20to%20others.xml). See step 4 from the [Deploy Removable Storage Access Control](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri) section to deploy the configuration.
+
+### Scenario 3: Block read and execute access to specific file extension
+
+For this scenario, you need to create two groups - one removable storage group for any removable storage and another group for unallowed file extensions. You also need to create one policy - deny read and execute access to any file under the allowed file extension group for defeined removable storage group.
+
+1. Create groups
+
+    1. Group 1: Any removable storage, CD/DVD, and Windows portable devices.
+
+        :::image type="content" source="media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png" alt-text="A screenshot of group 1" lightbox="media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png":::
+    
+    Here is the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml). See step 3 from the [Deploy Removable Storage Access Control](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri) section to deploy the configuration.
+
+    2. Group 2: Unallowed file extensions.
+
+        ![image](https://user-images.githubusercontent.com/81826151/200712762-d540b140-c53e-497b-99db-248f2b7a69bf.png)
+    
+    Here is the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Unauthorized%20File%20Group.xml). See step 3 from the [Deploy Removable Storage Access Control](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri) section to deploy the configuration.
+
+
+    > [!TIP]
+    > Explicily mark the Type attribute on the group as **File**
+
+    2. Policy 2: Deny read and execute access to any file under the allowed file extension group for defeined removable storage group.
+
+        ![image](https://user-images.githubusercontent.com/81826151/200713006-c0d39e2b-9acc-4522-9f88-e064eeb3a4ae.png)
+    
+    What does '40' mean in the policy? It's 8 + 32 = 40:
+
+    - only need to restrict file system level access
+    
+    Here is the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Deny%20Read%20and%20Write%20access%20to%20specific%20files.xml). See step 4 from the [Deploy Removable Storage Access Control](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri) section to deploy the configuration.
+
 
 ## Use Intune user interface
 
