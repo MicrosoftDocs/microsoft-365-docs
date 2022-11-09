@@ -35,9 +35,7 @@ search.appverid: met150
 
 ## View events in the Defender for Endpoint service event log
 
-You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual devices.
-
-For example, if devices aren't appearing in the **Devices list**, you can review event IDs on the devices. You can then use the table below to determine further troubleshooting steps using the event IDs.
+You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual devices. This can help when, for example, a device isn't appearing in the Devices list. In this scenario, you can look for event IDs on the device and then use this table to determine further troubleshooting steps based on the corresponding event ID.
 
 To open the Defender for Endpoint service event log:
 
@@ -215,7 +213,7 @@ To open the System event log:
 1. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter**  to open the Event Viewer.
 2. In the log list, under **Log Summary**, scroll until you see **System**. Double-click the item to open the log.
 
-You can use this table for more information on the Defender for Endpoint events and to determine further troubleshooting steps.
+You can use this table for more information on the Defender for Endpoint events in the System events log and to determine further troubleshooting steps.
 
    |Event ID|Message|Description|Action|
    |---|---|---|---|
