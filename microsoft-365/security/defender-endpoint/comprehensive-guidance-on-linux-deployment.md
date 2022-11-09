@@ -40,13 +40,16 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 
 [2. Run a centralized performance monitoring to capture current resource utilization.](#2-run-a-centralized-performance-monitoring)
 
+>[!NOTE]
+>Consider doing the following optional items, even though they are not Microsoft Defender for Endpoint specific, they tend to improve performance in Linux systems.
+
 [3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk).](#3-optional-check-for-filesystem-errors-fsck-akin-to-chkdsk)
 
 [4. (Optional) Update storage subsystem drivers.](#4-optional-update-storage-subsystem-drivers)
 
 [5. (Optional) Update nic drivers.](#5-optional-update-nic-drivers)
 
-[6. Check system requirements and resource recommendations.](#6-system-requirements-and-resource-recommendations)
+[6. Confirm system requirements and resource recommendations are met.](#6-confirm-system-requirements-and-resource-recommendations-are-met)
 
 [7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus.](#7-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus)
 
@@ -103,7 +106,7 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection is not being performed on the network traffic](#verify-ssl-inspection-isnt-being-performed-on-the-network-traffic).
 
 
-#### Allow URLs for the Microsoft Defender for Endpoint traffic
+#### Step 1. Allow URLs for the Microsoft Defender for Endpoint traffic
 
 1. Download [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) or [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) that lists the services and their associated URLs that your network must be able to connect.
 
@@ -117,7 +120,7 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 
 3. Work with the Firewall/Proxy/Networking admins to allow the relevant URLs.
 
-#### Set up proxy settings
+#### Step 2. Set up proxy settings
 
 If the Linux servers are behind a proxy, use the following settings guidance.
 
@@ -133,7 +136,7 @@ The following table lists the supported proxy settings:
 - [Static proxy configuration](/defender-endpoint/linux-static-proxy-configuration.md)
 - [Troubleshooting connectivity issues in static proxy scenario](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy)
 
-#### Verify SSL inspection isn't being performed on the network traffic
+#### Step 3. Verify SSL inspection isn't being performed on the network traffic
 
 To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You'll have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
 
@@ -159,7 +162,7 @@ Any filesystem could end-up getting corrupt, so before installing any new softwa
 Newer driver/firmware on a NIC’s or NIC teaming software could help w/ performance and/or reliability.
 
 
-## 6. System requirements and resource recommendations
+## 6. Confirm system requirements and resource recommendations are met
 
 The following section provides information on supported Linux versions and recommendations for resources.
 
@@ -536,6 +539,10 @@ To verify Microsoft Defender for Endpoint on Linux platform updates, run the fol
 
 For more information, see [Device health and Microsoft Defender antimalware health report](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205#M1963).
 
+
+To find the latest Broad channel release, visit [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md).
+
+
 ### How to update Microsoft Defender for Endpoint on Linux
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender for Endpoint on Linux. For more information, see [Deploy updates for Microsoft Defender for Endpoint on Linux](linux-updates.md#rhel-and-variants-centos-and-oracle-linux).
 
@@ -546,6 +553,24 @@ Microsoft regularly publishes software updates to improve performance, security,
 >[!TIP]
 > Automate the agent update on a monthly (Recommended) schedule by using a Cron job. For more information, see [schedule an update of the Microsoft Defender for Endpoint on Linux](linux-update-mde-linux.md).
 
+
+### Non-Windows endpoints
+
+With macOS and Linux, you could take a couple of systems and run in the Beta channel.
+
+> [!NOTE]
+> Ideally at least one security admin and one developer so that you are able to find compatibility, performance and reliability issues before the build makes it into the Current channel.
+
+The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in Beta are the first ones to receive updates and new features, followed later by Preview and lastly by Current.
+
+:::image type="content" source="images/insider-rings.png" alt-text="The insider rings." lightbox="images/insider-rings.png":::
+
+In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either Beta or Preview.
+
+> [!WARNING]
+> Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
+
+
 ## 18. Verify that you're able to get security intelligence updates (signatures/definition updates)
 
 To verify Microsoft Defender for Endpoint on  Linux signatures/definition updates, run the following command line:
@@ -553,6 +578,7 @@ To verify Microsoft Defender for Endpoint on  Linux signatures/definition update
 `mdatp definitions update`
 
 For more information, see [New device health reporting for Microsoft Defender antimalware](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-device-health-reporting-for-microsoft-defender-for-endpoint/bc-p/3616205).
+
 
 
 ## 19. Test detections
@@ -641,6 +667,8 @@ Then your next step is to uninstall your non-Microsoft antivirus, antimalware, a
 - [Troubleshooting steps for environments with static proxy](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy).
 - [Collect diagnostic information](linux-resources.md#collect-diagnostic-information).
 - [Uninstall Defender for Endpoint on Linux](linux-resources.md#uninstall-defender-for-endpoint-on-linux).
+- [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
+- [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux ](troubleshoot-auditd-performance-issues.md).
 
 
 ## Advanced Microsoft Defender for Endpoint capabilities
