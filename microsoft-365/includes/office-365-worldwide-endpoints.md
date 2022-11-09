@@ -15,6 +15,7 @@ ID | Category | ER | Addresses | Ports
 9 | Allow<BR>Required | Yes | `*.protection.outlook.com`<BR>`40.92.0.0/15, 40.107.0.0/16, 52.100.0.0/14, 52.238.78.88/32, 104.47.0.0/17, 2a01:111:f403::/48` | **TCP:** 443
 10 | Allow<BR>Required | Yes | `*.mail.protection.outlook.com`<BR>`40.92.0.0/15, 40.107.0.0/16, 52.100.0.0/14, 104.47.0.0/17, 2a01:111:f400::/48, 2a01:111:f403::/48` | **TCP:** 25
 154 | Default<BR>Required | No | `autodiscover.<tenant>.onmicrosoft.com` | **TCP:** 443, 80
+181 | Default<BR>Required | No | `js.monitor.azure.com` | **TCP:** 443
 
 ## SharePoint Online and OneDrive for Business
 
@@ -27,6 +28,7 @@ ID | Category | ER | Addresses | Ports
 36 | Default<BR>Required | No | `g.live.com, oneclient.sfx.ms` | **TCP:** 443, 80
 37 | Default<BR>Required | No | `*.sharepointonline.com, spoprod-a.akamaihd.net` | **TCP:** 443, 80
 39 | Default<BR>Required | No | `*.svc.ms` | **TCP:** 443, 80
+182 | Default<BR>Required | No | `js.monitor.azure.com` | **TCP:** 443
 
 ## Skype for Business Online and Microsoft Teams
 
@@ -105,3 +107,4 @@ ID | Category | ER | Addresses | Ports
 158 | Default<BR>Required | No | `*.cortana.ai` | **TCP:** 443
 159 | Default<BR>Required | No | `admin.microsoft.com` | **TCP:** 443, 80
 160 | Default<BR>Required | No | `cdn.odc.officeapps.live.com, cdn.uci.officeapps.live.com` | **TCP:** 443, 80
+183 | Default<BR>Required | No | `js.monitor.azure.com` | **TCP:** 443
