@@ -55,7 +55,7 @@ TLS version 1.3 (TLS 1.3) is supported by some of the services.
   
 ## Support for TLS 1.0 and 1.1 deprecation
 
-Office 365 stopped supporting TLS 1.0 and 1.1 on October 31, 2018. We have completed disabling TLS 1.0 and 1.1 in GCC High, Worldwide and DoD environments. For Microsoft 365 operated by 21 Vianet, TLS 1.0/1.1 will be disabled on June 30, 2023. 
+Office 365 stopped supporting TLS 1.0 and 1.1 on October 31, 2018. We have completed disabling TLS 1.0 and 1.1 in GCC High, Worldwide, and DoD environments. For Microsoft 365 operated by 21 Vianet, TLS 1.0 and 1.1 will be disabled on June 30, 2023. 
 
 To maintain a secure connection to Office 365 and Microsoft 365 services, all client-server and browser-server combinations use TLS 1.2 and modern cipher suites. You might have to update certain client-server and browser-server combinations. For information about how this change impacts you, see [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
   
