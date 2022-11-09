@@ -159,7 +159,7 @@ sections:
           
           ::: moniker-end
           
-          Typically, you can add up to 900 domains to your Microsoft 365 subscription.
+          Typically, you can add up to 5000 domains to your Microsoft 365 subscription.
             
           For example, you could add the domains contoso.com and contosomarketing.com, and then add the subdomains `www.contoso.com`, `www.partners.contoso.com`, `www.marketing.partners.contoso.com`, and so on.
             
