@@ -82,9 +82,10 @@ All our updates contain
 - Performance improvements
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
+
 <br/><br/>
 <details>
-<summary>October-2022 (Platform: 4.18.2210.5 | Engine: 1.1.19800.4)</summary>
+<summary>October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)</summary>
 
 &ensp;Security intelligence update version: **1.379.4.0**<br/>
 &ensp;Release date: **November 7, 2022**<br/>
@@ -97,6 +98,7 @@ Security intelligence update version: 1.379.4.0<br/>
 
 ### What's new
 
+- Addressed a quality issue that could result in poor responsiveness/usability
 - Improved hang detection in antivirus engine 
 - Added opt-in for Defender updates during OOBE (out of box experience) process 
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
