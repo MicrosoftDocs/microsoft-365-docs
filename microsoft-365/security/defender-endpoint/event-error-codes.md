@@ -207,9 +207,23 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |1838|  CSP: Failed to Set Device Tagging Criticality Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  Set DeviceTagging Criticality failed as value was not within expected range. | Contact support if problem persists. |
    |1839| CSP: Set Device Tagging Identification Method value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).  |  Set DeviceTagging Id Method in registry completed. | Normal operating notification; no action required. |
    |1840| CSP: Failed to Set Device Tagging Identification Method Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  Set DeviceTagging Id Method failed as value was not within expected range. | Contact support if problem persists. |
-   |
-   
+
+**Learn about Defender for Endpoint events in the system event log**: </br>
+
+To view the System event log:
+
+1. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter**.
+
+2. In the log list, under **Log Summary**, scroll until you see **System**. Double-click the item to open the log.
+
+You can use this table for more information on the Defender for Endpoint events and determine further troubleshooting steps.
+
+   |Event ID|Message|Description|Action|
+   |---|---|---|---|
+   |1|The backing-file for the real-time session "SenseNdrPktmon" has reached its maximum size. As a result, new events will not be logged to this session until space becomes available.).|This real-time session, between Pktmon - the built-in Windows service that captures network traffic, and our agent (SenseNDR) - that analyzes packets asynchroniously, is configured to limited to prevent potential performance issues. As a result, this alert may appear if too many packets are intercepted in a short time period, causing some packets to be skipped. This alert is more common with high network traffic.|Normal operating notification; no action required.|
+
 ## See also
+
 - [Onboard Windows client devices](configure-endpoints.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
