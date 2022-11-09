@@ -33,15 +33,16 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual devices.
-
-For example, if devices aren't appearing in the **Devices list**, you might need to look for event IDs on the devices. You can then use this table to determine further troubleshooting steps.
-
 ## View events in the Defender for Endpoint service event log
 
-1. Open Event Viewer
-2. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter**.
-3. In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
+You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual devices.
+
+For example, if devices aren't appearing in the **Devices list**, you can review event IDs on the devices. You can then use the table below to determine further troubleshooting steps using the event IDs.
+
+To open the Defender for Endpoint service event log:
+
+1. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter** to open the Event Viewer.
+2. In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
    open the log.
 
    You can also access the log by expanding **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **SENSE** and select **Operational**.
@@ -49,7 +50,7 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    > [!NOTE]
    > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint.
 
-4. Events recorded by the service will appear in the log.
+3. Events recorded by the service will appear in the log.
 
 See the following table for a list of events recorded by the service.
 
@@ -209,7 +210,12 @@ See the following table for a list of events recorded by the service.
 
 Microsoft Defender for Endpoint events also appear in the System event log.
 
-You can use this table for more information on the Defender for Endpoint events and determine further troubleshooting steps.
+To open the System event log:
+
+1. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter**  to open the Event Viewer.
+2. In the log list, under **Log Summary**, scroll until you see **System**. Double-click the item to open the log.
+
+You can use this table for more information on the Defender for Endpoint events and to determine further troubleshooting steps.
 
    |Event ID|Message|Description|Action|
    |---|---|---|---|
