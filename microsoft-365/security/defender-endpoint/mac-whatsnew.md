@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 11/03/2022
+ms.date: 11/07/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -39,10 +39,25 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 **Known issues**
 
 Apple has identified an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), and expected to be fixed in the next release.
-The issue impacts Microsoft for endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
+The issue impacts Microsoft Defender for endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
 
-> To mitigate the risk with this issue, make sure that [Microsoft for Endpoint has Full Disk Access Authorization](mac-install-manually.md).
+> To mitigate the risk with this issue, make sure that [Microsoft Defender for Endpoint has Full Disk Access Authorization](mac-install-manually.md).
 
+<details>
+  <summary>Nov-2022 (Build: 101.87.30  | Release version: 20.122082.18681.0)</summary>
+
+&ensp;Build: **101.87.30**<br/>
+&ensp;Release version: **20.122082.18681.0**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Signature version: **1.379.17.0**<br/>
+
+**What's new**
+
+- Fix for some users experiencing performance issues and temporary system hangs
+- Bug and performance fixes
+
+<br/>
+</details>
 
 <details>
   <summary>Oct-2022 (Build: 101.86.81  | Release version: 20.122082.18681.0)</summary>

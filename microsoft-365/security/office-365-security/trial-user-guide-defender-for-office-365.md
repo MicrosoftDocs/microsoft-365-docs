@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial user guide."
 ms.subservice: mdo
-ms.custom: trial-playbook
+ms.custom: trial-user guide
 ---
 
 # Trial user guide: Microsoft Defender for Office 365
