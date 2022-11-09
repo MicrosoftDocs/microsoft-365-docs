@@ -90,4 +90,10 @@ DeviceFileEvents
 4. Open **Details**, and select **Properties**.
 
    :::image type="content" alt-text="Screenshot of device property in Device Manager." source="https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png":::
-    
+ 
+ 
+## How do I find Sid or ComputerSid for AAD groud?
+Different from AD group, the Sid or ComputerSid is using Object Id for AAD group. You can find the Object Id from Azure portal.
+
+![image](https://user-images.githubusercontent.com/81826151/200895994-cc395452-472f-472e-8d56-351165d341a7.png)
+
