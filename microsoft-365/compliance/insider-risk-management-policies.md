@@ -235,7 +235,7 @@ Insider risk management identifies three types of peer groups for analyzing exfi
 
 **Similar job title**: Users with a combination of organizational distance and similar job titles. For example, a user with an account manager title with a similar role designation as a sales manager in the same organization would be identified as similar job title. This option requires that your organization uses Azure AD to maintain organization hierarchy, role designations, and job titles. If you do not have Azure AD configured for organization structure and job titles, then Insider risk management identifies peer groups based on common SharePoint sites.
  
-If you enable cumulative exfiltration detection, your organization is agreeing to sharing Azure AD data, including organization hierarchy and job titles. If your organization does not use Azure AD to maintain this information, then detection accuracy may be limited.
+If you enable cumulative exfiltration detection, your organization is agreeing to sharing Azure AD data, including organization hierarchy and job titles. If your organization does not use Azure AD to maintain this information, then detection may be less accurate.
 > [!NOTE]
 > Cumulative exfiltration detection uses exfiltration indicators that are enabled in the global settings for insider risk management and exfiltration indicators that are selected in a policy. As such, cumulative exfiltration detection is only evaluated for the necessary exfiltration indicators selected. Cumulative exfiltration activities for [sensitivity labels](sensitivity-labels.md) configured in priority content generate higher risk scores.
 
