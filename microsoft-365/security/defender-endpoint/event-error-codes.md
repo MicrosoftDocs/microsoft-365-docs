@@ -38,7 +38,7 @@ You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/librar
 
 For example, if devices aren't appearing in the **Devices list**, you might need to look for event IDs on the devices. You can then use this table to determine further troubleshooting steps.
 
-**Open Event Viewer and find the Microsoft Defender for Endpoint service event log:**
+## Open Event Viewer and find the Microsoft Defender for Endpoint service event log:
 
 1. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter**.
 
@@ -208,7 +208,7 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |1839| CSP: Set Device Tagging Identification Method value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).  |  Set DeviceTagging Id Method in registry completed. | Normal operating notification; no action required. |
    |1840| CSP: Failed to Set Device Tagging Identification Method Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  Set DeviceTagging Id Method failed as value was not within expected range. | Contact support if problem persists. |
 
-**Learn about Defender for Endpoint events in the system event log**: </br>
+## Learn about Defender for Endpoint events in the system event log
 
 To view the System event log:
 
@@ -217,6 +217,10 @@ To view the System event log:
 2. In the log list, under **Log Summary**, scroll until you see **System**. Double-click the item to open the log.
 
 You can use this table for more information on the Defender for Endpoint events and determine further troubleshooting steps.
+
+   <br>
+
+   ****
 
    |Event ID|Message|Description|Action|
    |---|---|---|---|
