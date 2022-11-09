@@ -152,7 +152,7 @@ The following table outlines the time to detection for supported content types:
 
 For existing policies created before July 31, 2022 it may take up to 24 hours to detect messages and review alerts that match these policies. To reduce the latency for these policies, [copy the existing policy](/microsoft-365/compliance/communication-compliance-policies#copy-a-policy) and create a new policy from the copy. If you don't need to retain any data from the older policy, it can be paused or deleted.
 
-To identify an older policy, review *Last policy scan* column on the **Policy** page. Older policies will display a full date for the scan while policies created after July 31, 2022 will display *1 hour ago* for the scan. Another option to reduce latency is to wait until December 31, 2022 for your existing policies to be automatically migrated to the new detection criteria.
+To identify an older policy, review *Last policy scan* column on the **Policy** page. Older policies will display a full date for the scan while policies created after July 31, 2022 will display *1 hour ago* for the scan. Another option to reduce latency is to wait until February 28, 2023 for your existing policies to be automatically migrated to the new detection criteria.
 
 ## Storage limit notification (preview)
 
