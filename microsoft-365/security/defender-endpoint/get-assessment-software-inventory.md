@@ -211,7 +211,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 ```
 
 > [!NOTE]
-> The information returned by this API, along with the information returned by the [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that doesn't have a CPE, gives you full visibility into the software installed across your organization and the devices it’s installed on.
+> The information returned by this API, along with the information returned by the [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that doesn't have a CPE, gives you full visibility into the software installed across your organization and the devices it's installed on.
 
 ## 2. Export software inventory assessment (via files)
 
