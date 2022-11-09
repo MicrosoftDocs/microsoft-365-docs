@@ -162,6 +162,8 @@
                   href: microsoft-365-ediscovery-throttling-service-advisory.md
                 - name: Service advisories for MRS source delays
                   href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: Service advisories for OAB size limits
+                  href: microsoft-365-oab-size-limit-service-advisory.md
             - name: Microsoft 365 Apps monitoring
               href: microsoft-365-apps-monitoring.md
             - name: Microsoft 365 Teams monitoring
