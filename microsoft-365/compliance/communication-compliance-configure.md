@@ -126,19 +126,19 @@ Choose from these solution role group options when configuring and managing comm
 
 ### Option 1: Assign all compliance users to the Communication Compliance role group
 
-1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+Complete the following steps to add users to this role group:
 
-2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-3. Select the *Communication Compliance* role group, then select **Edit role group**.
+2. Select **Permissions** in the left nav, and select **Roles** under the **Microsoft Purview solutions** list.
 
-4. Select **Choose members** from the left navigation pane, then select **Edit**.
+3. Select the *Communication Compliance* role group and then select **Edit**.
 
-5. Select **Add** and then select the checkbox for all users you want to add to the *Communication Compliance* role group.
+4. Select the **Choose users** tab, then select the checkbox for all users you want to add to the role group.
 
-6. Select **Add**, then select **Done**.
+6. Choose **Select**, then **Next**.
 
-7. Select **Save** to add the users to the role group. Select **Close** to complete the steps
+7. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
 
 ### Option 2: Assign users to specific communication compliance role groups
 

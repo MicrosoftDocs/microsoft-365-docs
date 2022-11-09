@@ -74,7 +74,7 @@ When you've more than one retention policy, and when you also use retention labe
 > [!NOTE]
 > Retention policies support [shared channels](/MicrosoftTeams/shared-channels). When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
 > 
-> Retention policies also support newly created call data records, which are system-generated messages. However, call data records for private channel messages are included in the **Teams chats** location, instead of the **Teams private channel messages** location.
+> Retention policies also support newly created call data records, which are system-generated messages that contain [metadata for meetings and calls](/MicrosoftTeams/ediscovery-investigation#teams-metadata). However, call data records for private channel messages are included in the **Teams chats** location, instead of the **Teams private channel messages** location.
 
 1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
 
