@@ -56,7 +56,7 @@ To configure Microsoft Syntex billing
 
 1. On the **Microsoft Syntex** page, select **Configure billing** to walk through the setup process.
 1. On the **Enter your Azure subscription** panel, choose an Azure subscription from the **Azure subscription** dropdown.
-1. Choose a resource group and region.
+1. Choose a resource group and region. (The region determines where your tenant ID and usage information such as site names will be stored.)
 1. Select **Save**.
 
 If you need to change or disconnect your Azure subscription, you can select **Manage billing** on the **Use content AI with Microsoft Syntex**.
