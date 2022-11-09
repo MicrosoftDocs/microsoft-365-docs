@@ -179,6 +179,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 ## See also
 
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Detect and Remediate Illicit Consent Grants](detect-and-remediate-illicit-consent-grants.md)
 - [Internet Crime Complaint Center](https://www.ic3.gov/Home/Ransomware)
 - [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
 - To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
