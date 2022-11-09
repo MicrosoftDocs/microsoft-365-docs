@@ -25,23 +25,21 @@ search.appverid: met150
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- Event Viewer
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual devices.
+## View events in the Defender for Endpoint service event log
 
-For example, if devices aren't appearing in the **Devices list**, you might need to look for event IDs on the devices. You can then use this table to determine further troubleshooting steps.
+You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual devices. This can help when, for example, a device isn't appearing in the Devices list. In this scenario, you can look for event IDs on the device and then use the table below to determine further troubleshooting steps based on the corresponding event ID.
 
-**Open Event Viewer and find the Microsoft Defender for Endpoint service event log:**
+To open the Defender for Endpoint service event log:
 
-1. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter**.
-
+1. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter** to open the Event Viewer.
 2. In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
    open the log.
 
@@ -50,11 +48,9 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    > [!NOTE]
    > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint.
 
-3. Events recorded by the service will appear in the log. See the following table for a list of events recorded by the service.
+3. Events recorded by the service will appear in the log.
 
-   <br>
-
-   ****
+See the following table for a list of events recorded by the service.
 
    |Event ID|Message|Description|Action|
    |---|---|---|---|
@@ -207,9 +203,24 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |1838|  CSP: Failed to Set Device Tagging Criticality Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  Set DeviceTagging Criticality failed as value was not within expected range. | Contact support if problem persists. |
    |1839| CSP: Set Device Tagging Identification Method value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).  |  Set DeviceTagging Id Method in registry completed. | Normal operating notification; no action required. |
    |1840| CSP: Failed to Set Device Tagging Identification Method Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  Set DeviceTagging Id Method failed as value was not within expected range. | Contact support if problem persists. |
-   |
-   
+
+## View Defender for Endpoint events in the System event log
+
+Microsoft Defender for Endpoint events also appear in the System event log.
+
+To open the System event log:
+
+1. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter**  to open the Event Viewer.
+2. In the log list, under **Log Summary**, scroll until you see **System**. Double-click the item to open the log.
+
+You can use this table for more information on the Defender for Endpoint events in the System events log and to determine further troubleshooting steps.
+
+   |Event ID|Message|Description|Action|
+   |---|---|---|---|
+   |1|The backing-file for the real-time session "SenseNdrPktmon" has reached its maximum size. As a result, new events will not be logged to this session until space becomes available.|This real-time session, between Pktmon - the built-in Windows service that captures network traffic, and our agent (SenseNDR) - that analyzes packets asynchroniously, is configured to limited to prevent potential performance issues. As a result, this alert may appear if too many packets are intercepted in a short time period, causing some packets to be skipped. This alert is more common with high network traffic.|Normal operating notification; no action required.|
+
 ## See also
+
 - [Onboard Windows client devices](configure-endpoints.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
