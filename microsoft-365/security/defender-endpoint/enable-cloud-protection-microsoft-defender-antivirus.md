@@ -51,15 +51,15 @@ For more information about the specific network-connectivity requirements to ens
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
-2. On the **Home** pane, select **Device configuration > Profiles**.
+2. On the **Home** pane, select **Devices**> **Configuration Profiles**.
 
 3. Select the **Device restrictions** profile type you want to configure. If you need to create a new **Device restrictions** profile type, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 
-4. Select **Properties** \> **Configuration settings: Edit** \> **Microsoft Defender Antivirus**.
+4. In the **Properties** section Click on **Edit** next to **Configuration settings** and click on **Microsoft Defender Antivirus**.
 
 5. On the **Cloud-delivered protection** switch, select **Enable**.
 
-6. In the **Prompt users before sample submission** dropdown, select **Send all data automatically**.
+6. In the **Prompt users before sample submission** dropdown, select **Send all samples automatically**.
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](/intune/device-profiles)
 
