@@ -36,7 +36,7 @@ The Potentially Unwanted Applications (PUA) protection feature in Microsoft Defe
 ## Scenario
 
 1. Go to [http://www.amtso.org/feature-settings-check-potentially-unwanted-applications/](http://www.amtso.org/feature-settings-check-potentially-unwanted-applications/)
-2. Click "Download the Potentially Unwanted Application ‘test’ file" link
+2. Click "Download the Potentially Unwanted Application 'test' file" link
 3. After downloading the file, it is automatically blocked and prevented from running.
 
 ## See also
