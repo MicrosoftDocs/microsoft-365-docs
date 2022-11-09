@@ -25,9 +25,8 @@ search.appverid: met150
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
-- Event Viewer
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -38,11 +37,11 @@ You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/librar
 
 For example, if devices aren't appearing in the **Devices list**, you might need to look for event IDs on the devices. You can then use this table to determine further troubleshooting steps.
 
-**Open Event Viewer and find the Microsoft Defender for Endpoint service event log:**
+## View events in the Defender for Endpoint service event log
 
-1. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter**.
-
-2. In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
+1. Open Event Viewer
+2. Select **Start** on the Windows menu, type **Event Viewer**, and press **Enter**.
+3. In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
    open the log.
 
    You can also access the log by expanding **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **SENSE** and select **Operational**.
@@ -50,11 +49,9 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    > [!NOTE]
    > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint.
 
-3. Events recorded by the service will appear in the log. See the following table for a list of events recorded by the service.
+4. Events recorded by the service will appear in the log.
 
-   <br>
-
-   ****
+See the following table for a list of events recorded by the service.
 
    |Event ID|Message|Description|Action|
    |---|---|---|---|
@@ -208,13 +205,11 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |1839| CSP: Set Device Tagging Identification Method value complete. Previous Value: (%1), IsDefault: (%2), New Value: (%3), Result: (%4).  |  Set DeviceTagging Id Method in registry completed. | Normal operating notification; no action required. |
    |1840| CSP: Failed to Set Device Tagging Identification Method Value. Requested Value: (%1), Allowed Values between (%2) and (%3). |  Set DeviceTagging Id Method failed as value was not within expected range. | Contact support if problem persists. |
 
-**Defender for Endpoint events in the System event log**</b>
+## View Defender for Endpoint events in the System event log
 
-Microsoft Defender for Endpoint events also appear in the System event log. To view the System event log. You can use this table for more information on the Defender for Endpoint events and determine further troubleshooting steps.
+Microsoft Defender for Endpoint events also appear in the System event log.
 
-   <br>
-
-   ****
+You can use this table for more information on the Defender for Endpoint events and determine further troubleshooting steps.
 
    |Event ID|Message|Description|Action|
    |---|---|---|---|
