@@ -28,15 +28,15 @@ This alert informs you when your Offline Address Book has reached the size limit
 Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#address-book-limits)
 within the [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#address-book-limits).
 
-These alerts are displayed in the Microsoft 365 admin center. To view these alerts, navigate to **Health** \> **Service Health** \> **Exchange Online** and finally, the **Active Issues** tab. You'll see this as "Offline Address Book."
+These alerts are displayed in the Microsoft 365 admin center. To view these alerts, navigate to **Health** \> **Service Health** \> **Exchange Online** and finally, the **Active Issues** tab. This alert will be listed as "Offline Address Book."
 
 ## What Do These Service Alerts Indicate?
 
-This service alert informs you that the maximum size of a single Offline Address Book within your tenant has exceeded 1GB. If you receive this alert, we ask that you review any recent changes made to the Offline Address Book(s) in your environment. If the size issue isn't corrected, your users may observe missing or incomplete data as a result.
+This service alert informs you that the maximum size of a single Offline Address Book within your tenant has exceeded 1 GB. If you receive this alert, we ask that you review any recent changes made to the Offline Address Book(s) in your environment. Your users may observe missing or incomplete data if the size issue isn't corrected.
 
 ## More information
 
-For more information about Offline Address Books by leveraging the below information:
+For more information about Offline Address Books, see the following articles:
 
 - [Offline address books in Exchange Online \| Microsoft Docs](/exchange/address-books/offline-address-books/offline-address-books)
 - [Exchange Online limits - Address Book Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#address-book-limits)
