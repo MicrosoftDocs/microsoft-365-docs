@@ -68,7 +68,7 @@ You can configure the global Safe Links settings in the Microsoft 365 Defender p
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
-- [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). As new features are added, you may need to make adjustments to your existing Safe Links policies.
+- [New features are continually being added to Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
 ## Configure the "Block the following URLs" list in the Microsoft 365 Defender portal
 

@@ -77,7 +77,7 @@ The following code shows the schema you need to use to schedule a quick scan.
     </plist>
      ```
 
-2. Save the file as *com.microsoft.wdav.schedquickscan.plist*.
+2. Save the file as *com.microsoft.wdav.schedquickscan.plist* to the /Library/LaunchDaemons directory.
 
 ### Schedule a full scan
 
@@ -116,7 +116,7 @@ The following code shows the schema you need to use to schedule a quick scan.
     </plist>
      ```
 
-2. Save the file as *com.microsoft.wdav.schedfullscan.plist*.
+2. Save the file as *com.microsoft.wdav.schedfullscan.plist* to the /Library/LaunchDaemons directory.
  
 ### Load your file
 
@@ -124,16 +124,18 @@ The following code shows the schema you need to use to schedule a quick scan.
 2. Enter the following commands to load your file:
 
     ```bash
-    launchctl load /Library/LaunchDaemons/<your file name.plist>
-    launchctl start <your file name>
+    chown root:wheel /Library/LaunchDaemons/com.microsoft.wdav.sched*
+    chmod 644 /Library/LaunchDaemons/com.microsoft.wdav.sched*
+    xattr -c /Library/LaunchDaemons/com.microsoft.wdav.sched*     
+    launchctl load -w /Library/LaunchDaemons/<your file name.plist>
     ```
 
 3. Your scheduled scan will run at the date, time, and frequency you defined in your p-list. In the previous examples, the scan runs at 2:50 AM every Friday. 
 
-    - The `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday. The range is between 0 and 7 with 7 representing Sunday.
+    - The `Weekday` value of `StartCalendarInterval` uses an integer to indicate the fifth day of the week, or Friday. The range is between 1 and 7 with 7 representing Sunday.
     - The `Day` value of `StartCalendarInterval` uses an integer to indicate the third day of the month. The range is between 1 and 31.
-    - The `Hour` value of `StartCalendarInterval` uses an integer to indicate the second hour of the day. The range is between 0 and 24.
-    The `Minute` value of `StartCalendarInterval` uses an integer to indicate fifty minutes of the hour. The range is between 0 and 59.
+    - The `Hour` value of `StartCalendarInterval` uses an integer to indicate the second hour of the day. The range is between 0 and 23.
+      The `Minute` value of `StartCalendarInterval` uses an integer to indicate fifty minutes of the hour. The range is between 0 and 59.
     
     
  > [!IMPORTANT]
