@@ -23,7 +23,10 @@ description: "Scoped Certified application installation and configuration guide 
 
 # Microsoft 365 support integration with ServiceNow configuration overview
 
-The following content applies to the Microsoft 365 support integration app with a minimum version of **1.0.7**.
+> [!IMPORTANT]
+> This article applies to the Microsoft 365 support integration app with a minimum version of 2.0.0.
+
+For version 1.0.11 and below, see [Microsoft 365 support integration v1](https://aka.ms/snowsetup/v1).
 
 **Microsoft 365 support integration** enables you to integrate Microsoft 365 help, support, and service health with your ServiceNow instances. You can research Microsoft known and reported issues, resolve incidents, complete tasks by using Microsoft recommended solutions, and, if necessary, escalate to Microsoft human-assisted support.
 
@@ -83,18 +86,15 @@ After the Microsoft 365 Support Integration app has been installed, two Applicat
 
 ## Set up the integration
 
-After you've downloaded the app, navigate to the Microsoft 365 setup wizard in your SNOW environment to complete the setup process.
+After you've downloaded the app, go to the Microsoft 365 setup wizard in your ServiceNow environment to complete the setup process.
 
-:::image type="content" source="../../media/ServiceNow-guide/Agree.png" lightbox="../../media/ServiceNow-guide/Agree.png" alt-text="Screenshot that shows the recommended solutions description field.":::
+To open the setup wizard, type **Microsoft 365** in the ServiceNow navigator.
 
-You can learn more about the steps by visiting the following pages:
-- If you would like to get started without setting up the Microsoft 365 support integration app, you can select the **Continue without any setup** option. This option will continue to provide basic recommended solutions.
+:::image type="content" source="../../media/ServiceNow-guide/servicenow-wizard-start-setup.png" lightbox="../../media/ServiceNow-guide/servicenow-wizard-start-setup.png" alt-text="Start setup option in the setup wizard.":::
 
-    :::image type="content" source="../../media/ServiceNow-guide/No_setup.png" lightbox="../../media/ServiceNow-guide/No_setup.png" alt-text="Recommended solutions description field.":::
-    
-- If your ServiceNow environment allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md).
-- If your ServiceNow environment does NOT allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token.md).
-  - This configuration will require an SSO tenant in order for the AAD Auth Token to work correctly.
+- To set up the application and enjoy full functionality, select **Start setup**, and then follow the instructions in [Set up Microsoft 365 support integration with ServiceNow](https://aka.ms/snowsetup/auth).
+
+- If you want to get started without setting up the Microsoft 365 support integration app, select the **Continue without setup** option, which continues to provide basic recommended solutions.
 
 To understand each feature, see [Microsoft 365 support integration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
