@@ -30,7 +30,7 @@ ms.date: 05/24/2022
 When you buy a subscription, you select a billing frequency. To change how often you are billed for a subscription, use the following steps.
 
 > [!NOTE]
-> If you have a billing profile, you con only change the billing frequency when you buy or upgrade a subscription. To find out if you have a billing profile, see [View my billing profiles](manage-billing-profiles.md#view-my-billing-profiles).
+> If you have a billing profile, you can only change the billing frequency when you buy or upgrade a subscription. To find out if you have a billing profile, see [View my billing profiles](manage-billing-profiles.md#view-my-billing-profiles).
 
 1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the subscription that you want to change.
