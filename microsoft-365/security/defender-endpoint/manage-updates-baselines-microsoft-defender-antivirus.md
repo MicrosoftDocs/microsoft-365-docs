@@ -100,7 +100,6 @@ Security intelligence update version: 1.379.4.0<br/>
 
 - Addressed a quality issue that could result in poor responsiveness/usability
 - Improved hang detection in antivirus engine 
-- Added opt-in for Defender updates during OOBE (out of box experience) process 
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
 - Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
 - Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
