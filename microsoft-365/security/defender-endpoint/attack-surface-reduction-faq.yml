@@ -75,7 +75,7 @@ sections:
 
           Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
 
-          - ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions.
+          - Most ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions. However, Microsoft Defender Antivirus exclusions do apply to some attack surface reduction (ASR) rules. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
           - Wildcards cannot be used to define a drive letter.
           - If you want to exclude more than one folder, in a path, use multiple instances of ```\*\``` to indicate multiple nested folders (for example, ```c:\Folder\*\*\Test```)
           - Microsoft Endpoint Configuration Manager supports wildcards (* or ?).

@@ -33,7 +33,7 @@ search.appverid: met150
 
 Microsoft 365 Defender supports third-party integrations to help secure users with effective threat protection, detection, investigation, and response, in various security fields of endpoints, vulnerability management, email, identities, cloud apps.
 
-The following are the solution’s categories:
+The following are the solution's categories:
 
 - Security information and event management (SIEM)
 - Security orchestration, automation, and response (SOAR)
@@ -76,7 +76,7 @@ The following are the solution’s categories:
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2201775)|SafeBreach|SafeBreach continuously executes attacks, correlates results to help visualize security gaps, and leverages contextual insights to highlight remediation efforts. With its Hacker’s Playbook™, the industry’s most extensive collection of attack data enabled by state-of-the-art threat intelligence research, SafeBreach empowers organizations to get proactive about security with a simple approach that replaces hope with data.|
+|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2201775)|SafeBreach|SafeBreach continuously executes attacks, correlates results to help visualize security gaps, and leverages contextual insights to highlight remediation efforts. With its Hacker's Playbook™, the industry's most extensive collection of attack data enabled by state-of-the-art threat intelligence research, SafeBreach empowers organizations to get proactive about security with a simple approach that replaces hope with data.|
 |[Extended Security Posture Management (XSPM)](https://go.microsoft.com/fwlink/?linkid=2201771)|Cymulate|Cymulate's Extended Security Posture Management enables companies to challenge, assess, and optimize their cybersecurity posture.|
 |[Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201967)|SkyBox|Develops a vulnerability program strategy that accurately analyzes exposure risk across hybrid attack surface and prioritize the remediation.|
 |[Attack Path Management](https://go.microsoft.com/fwlink/?linkid=2201774)|XM Cyber|Attack Path Management is a hybrid cloud security company providing attack path management changing the ways organizations approach cyber risk.|
@@ -163,7 +163,7 @@ The following are the solution’s categories:
 
 |Product name|Vendor|Description|
 |---|---|---|
-|[Zscaler Internet Access](https://go.microsoft.com/fwlink/?linkid=2201779)|Zscaler|Zscaler Internet Access is a cloud native security service edge (SSE) solution that builds on a decade of secure web gateway leadership. Offered as a scalable SaaS platform from the world’s largest security cloud, it replaces legacy network security solutions to stop advanced attacks and prevent data loss with a comprehensive zero trust approach.|
+|[Zscaler Internet Access](https://go.microsoft.com/fwlink/?linkid=2201779)|Zscaler|Zscaler Internet Access is a cloud native security service edge (SSE) solution that builds on a decade of secure web gateway leadership. Offered as a scalable SaaS platform from the world's largest security cloud, it replaces legacy network security solutions to stop advanced attacks and prevent data loss with a comprehensive zero trust approach.|
 
 ### Additional integrations
 
