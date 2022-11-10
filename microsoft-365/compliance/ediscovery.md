@@ -108,7 +108,7 @@ Here's a description of each eDiscovery capability.
 
 - **Conversation threading**. When chat messages from Teams and Yammer conversations are added to a review set, you can collect the entire conversation thread. This means that the entire chat conversation that contains items that match the collection criteria is added to the review set. This lets you review chat items in the context of the back-and-forth conversation.
 
-- **Collection statistics and reports**. After you create a draft collection or commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results.
+- **Collection statistics and reports**. After you create a collection estimate or commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results.
 
 - **Review set filtering**. After content is added to a review set, you can apply filters to display only the set of items that match your filtering criteria. Then you can save the filter sets as a query, which lets you quickly reapply the saved filters. Review set filtering and saved queries help you quickly select content items that are most relevant to your investigation.
 

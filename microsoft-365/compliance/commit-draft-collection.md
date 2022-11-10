@@ -1,6 +1,6 @@
 ---
-title: "Commit a draft collection to a review set"
-description: "After you create and iterate on a draft collection, you can commit it to a review set. When you commit a draft collection, the collected items are added to review set in the case. After the collected items are in the review set, you can analyze, review, and export them."
+title: "Commit a collection estimate to a review set"
+description: "After you create and iterate on a collection estimate, you can commit it to a review set. When you commit a collection estimate, the collected items are added to review set in the case. After the collected items are in the review set, you can analyze, review, and export them."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -21,22 +21,22 @@ search.appverid:
 - MET150
 ---
 
-# Commit a draft collection to a review set in eDiscovery (Premium)
+# Commit a collection estimate to a review set in eDiscovery (Premium)
 
-When you're satisfied with the items you've collected in a draft collection and are ready to analyze, tag, and review them, you can add a collection to a review set in the case. When you commit a draft collection to a review set, collected items are copied from their original content location in Microsoft 365 to a review set. A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud.
+When you're satisfied with the items you've collected in a collection estimate and are ready to analyze, tag, and review them, you can add a collection to a review set in the case. When you commit a collection estimate to a review set, collected items are copied from their original content location in Microsoft 365 to a review set. A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Commit a draft collection to a review set
+## Commit a collection estimate to a review set
 
 1. In the Microsoft Purview compliance portal, open the Microsoft Purview eDiscovery (Premium) case, and then select the **Collections** tab to display a list of the collections in the case.
 
    ![List of collections in a case.](../media/CommitDraftCollections1.png)
 
    > [!TIP]
-   > A value of `Estimated` in the **Status** column identifies the draft collections that can be added to a review set. A status of `Committed` indicates that a collection has already been added to a review set.
+   > A value of `Estimated` in the **Status** column identifies the collection estimates that can be added to a review set. A status of `Committed` indicates that a collection has already been added to a review set.
 
-2. On the **Collections** page, select the draft collection that you want to commit to a review set.
+2. On the **Collections** page, select the collection estimate that you want to commit to a review set.
 
 3. On the bottom of the flyout page, select **Actions** > **Edit collection**.
 
@@ -75,11 +75,11 @@ When you're satisfied with the items you've collected in a draft collection and 
 
 6. On the **Review your collection** page, you can review the collection settings that you configured on the previous page. Click **Edit** if you want to change them.
 
-7. Click **Submit** to create the draft collection. A page is displayed confirming that the collection was created.
+7. Click **Submit** to create the collection estimate. A page is displayed confirming that the collection was created.
 
-## What happens after you commit a draft collection
+## What happens after you commit a collection estimate
 
-When you commit a draft collection to a review set, the following things happen:
+When you commit a collection estimate to a review set, the following things happen:
 
 - If you created a new review set to commit the collection to, the review set is created and displayed on the **Review sets** tab in the case. The status of the new review set is **Ready**. This status value means the review set has been created; it doesn't mean that the collection has been added to the review set. The status of adding items in the collection to the review set is displayed on the **Collections** tab.
 
