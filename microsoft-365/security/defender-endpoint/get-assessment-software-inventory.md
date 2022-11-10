@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,6 +19,8 @@ ms.subservice: mde
 ms.custom: api
 search.appverid: met150
 ---
+
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Export software inventory assessment per device
 
