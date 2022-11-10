@@ -7,7 +7,6 @@ ms.author: robmazz
 author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -38,11 +37,9 @@ When you're satisfied with the items you've collected in a collection estimate a
 
 2. On the **Collections** page, select the collection estimate that you want to commit to a review set.
 
-3. On the bottom of the flyout page, select **Actions** > **Edit collection**.
+3. On the bottom of the flyout page, select **Actions** > **Commit collection**.
 
-4. In the edit collection wizard, click **Next** until the **Save draft or collect** page is displayed.
-
-5. Configure the following settings:
+4. Configure the following settings:
 
    1. Select **Collect items and add to review set**.
 
@@ -61,27 +58,27 @@ When you're satisfied with the items you've collected in a collection estimate a
 
        c. **Partially indexed items**: Select this option to add partially indexed items from additional data sources to the review set. If the collection searched additional data sources (as specified on the **Additional locations** page in the collections wizard), there may be partially indexed items from these locations that you want to add to the review set. Custodial and non-custodial data sources typically don't have partially indexed items. That's because the Advanced indexing process reindexes items when custodial and non-custodial data sources are added to a case. Also, Adding partially indexed items will increase the number of items added to the review set. <p> After partially indexed items are added to the review set, you can apply a filter to specifically view these items. For more information, see [Filter partially indexed items](review-set-search.md#filter-partially-indexed-items)
 
-      d. **SharePoint versions**: Select this option to enable the collection of all versions of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set. After document versions are added to the review set, 
+      d. **SharePoint versions**: Select this option to enable the collection of all versions of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set.
 
    4. Configure the settings to define the scale of the collection to add to the review set:
 
       - **Add all collection results**: Select this option to add all the items that match the search criteria of the collection to the review set.
 
-      - **Add a sample of the collection results**: Select this option to add a sample of the collection results to the review set instead of adding all results. If you select this option, click **Edit sample parameters** and choose one of the following options:
+      - **Add a sample of the collection results**: Select this option to add a sample of the collection results to the review set instead of adding all results. If you select this option, select **Edit sample parameters** and choose one of the following options:
 
          - **Sample based on confidence**: Items from the collection are added to the review set will be determined by the statistical parameters that you set. If you typically use a confidence level and interval when sampling results, specify them in the drop-down boxes. Otherwise, use the default settings.
 
          - **Randomly sample**: Items from the collection are added to the review set based on a random selection of the specified percentage of the total number of items returned by the search.
 
-6. On the **Review your collection** page, you can review the collection settings that you configured on the previous page. Click **Edit** if you want to change them.
+5. On the **Review your collection** page, you can review the collection settings that you configured on the previous page. Select **Edit** if you want to change them.
 
-7. Click **Submit** to create the collection estimate. A page is displayed confirming that the collection was created.
+6. Select **Submit** to commit the collection to the review set.
 
 ## What happens after you commit a collection estimate
 
 When you commit a collection estimate to a review set, the following things happen:
 
-- If you created a new review set to commit the collection to, the review set is created and displayed on the **Review sets** tab in the case. The status of the new review set is **Ready**. This status value means the review set has been created; it doesn't mean that the collection has been added to the review set. The status of adding items in the collection to the review set is displayed on the **Collections** tab.
+- If you created a new review set to commit the collection to, the review set is created and displayed on the **Review sets** tab in the case. This status value means the review set has been created; it doesn't mean that the collection has been added to the review set. The status of adding items in the collection to the review set is displayed on the **Collections** tab.
 
 - The collection search query is run again. This means the actual search results copied to the review set may be different than the estimated results that were returned when the collection search was last run.
 
