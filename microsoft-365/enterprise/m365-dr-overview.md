@@ -103,13 +103,13 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 |**Service Name**|**Product Terms**|**Multi-Geo**|**ADR**|
 |:-----|:-----|:-----|:-----|
 |Exchange Online <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>3</sup>  <br/> |
-| SharePoint Online / OneDrive for Business <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>2</sup>  <br/> |
-| Microsoft Teams <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>2</sup>  <br/> |
-| Microsoft Defender for Office P1 <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
-| Office for the Web <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
-| Viva Connections <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
-| Viva Topics <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
-| Microsoft Purview <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
+| SharePoint Online / OneDrive for Business <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>3</sup>  <br/> |
+| Microsoft Teams <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>3</sup>  <br/> |
+| Microsoft Defender for Office P1 <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
+| Office for the Web <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
+| Viva Connections <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
+| Viva Topics <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
+| Microsoft Purview <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
 
 1. Only available for _Local Region Geography_ countries, European Union and the United States.
 1. Available in _Local Region Geography_, _Expanded Local Region Geography_ and _Regional Geography countries/regions_
