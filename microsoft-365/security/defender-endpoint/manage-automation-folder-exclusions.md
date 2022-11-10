@@ -45,7 +45,9 @@ You can control the following attributes about the folder that you'd like to be 
 
 ## Add an automation folder exclusion
 
-1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Automation folder exclusions**.
+1. Log in to [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) using an account with the Security administrator or Global administrator role assigned.
+
+2. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Automation folder exclusions**.
 
 2. Click **New folder exclusion**.
 
