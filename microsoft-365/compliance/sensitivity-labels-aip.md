@@ -95,7 +95,7 @@ To keep informed when new labeling capabilities become available for built-in la
 
 For the latest Office apps, the AIP add-in is disabled by default, so there's nothing for you to configure:
 
-- **Build 16.0.15716.0+**: Currently in [Beta Channel](https://office.com/insider)
+- Currently rolling out to [Current Channel (Preview)](https://office.com/insider)
 - **Current Channel** and **Monthly Enterprise Channel**: Version 2211+ (not yet released)
 - **Semi-Annual Channel**: Version 2301+ (not yet released)
 
@@ -186,7 +186,6 @@ Use the following information to help you identify if the features you use with 
 |User-defined permissions <br> - Do Not Forward for Outlook <br> - User and group custom permissions for Word, Excel, PowerPoint| ![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)|
 |User-defined permissions <br> - Organization-wide custom permissions by specifying domains for Word, Excel, PowerPoint | [In preview](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) |
 |Co-authoring and AutoSave | ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-coauthoring.md) |
-| | |
 
 Remember to use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) to identify and track new features in development.
 
