@@ -89,7 +89,8 @@ Following is the properties you can use in **Group**:
 
 Every access policy rule called **PolicyRule** can be used to define access restriction for each group through multiple **Entry**.
 
-Following is the properties you can use in **PolicyRule**:
+The following table lists the properties you can use in **PolicyRule**:
+
 | Property Name | Description | Options |
 |---|---|---|
 | **PolicyRule Id** | GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting. | You can generate ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)|
