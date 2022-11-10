@@ -1926,12 +1926,12 @@ Message:
 Change to default behavior:
 </td>
 <td >
-Starting with platform version 4.18.2207.7, the default behavior of dynamic signature expiration reporting changes to reduce potential 2011 event notification flooding.
 <dl>
-<dt>**Change to dynamic signature event reporting default behavior.** When a dynamic signature is received by MDE, a 2010 event is reported. However, when the dynamic signature expires or is manually deleted, a 2011 event is reported. In some cases, when a new signature is delivered to MDE sometimes hundreds of dynamic signatures will expire at the same time; therefore hundreds of 2011 events are reported. The generation of so many 2011 events can cause a Security information and event management (SIEM) server to become flooded.</dt>
-<dt>To avoid the above situation - starting with platform version 4.18.2207.7 - by default, MDE will now _not_ report 2011 events:<ul>
-<li>This new default behavior is controlled by registry entry: `HKLM\SOFTWARE\Microsoft\Windows Defender\Reporting\EnableDynamicSignatureDroppedEventReporting`.</li>
-<li>The default value for **EnableDynamicSignatureDroppedEventReporting** is **false**, which means _2011 events are not reported_. If it's set to true, 2011 events are reported.</li>
+<dt><b>Change to dynamic signature event reporting default behavior.</b></dt>
+<dt>When a dynamic signature is received by MDE, a 2010 event is reported. However, when the dynamic signature expires or is manually deleted a 2011 event is reported. In some cases, when a new signature is delivered to MDE sometimes hundreds of dynamic signatures will expire at the same time; therefore hundreds of 2011 events are reported. The generation of so many 2011 events can cause a Security information and event management (SIEM) server to become flooded.</dt>
+<dt>To avoid the above situation - starting with platform version 4.18.2207.7 - by default, MDE will now <i>not</i> report 2011 events:<ul>
+<li>This new default behavior is controlled by registry entry: <b>HKLM\SOFTWARE\Microsoft\Windows Defender\Reporting\EnableDynamicSignatureDroppedEventReporting</b>.</li>
+<li>The default value for <b>EnableDynamicSignatureDroppedEventReporting</b> is <b>false</b>, which means <i>2011 events are not reported<i>. If it's set to true, 2011 events are reported.</li>
 </ul>
 </dt>
 <dt>Because 2010 signature events are timely distributed sporadically - and will not cause a spike - 2010 signature event behavior is unchanged.</dt>
