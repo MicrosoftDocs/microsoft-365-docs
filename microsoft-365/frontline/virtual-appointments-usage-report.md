@@ -56,7 +56,7 @@ There are two ways to access and view the report in the Teams admin center.
 
 In the dashboard of the Teams admin center, go to the **Virtual Appointments usage** card. Here, you get an at-a-glance view of Virtual Appointments usage across your organization, including Bookings and Teams EHR-integrated appointments.
 
-[placeholder for screenshot]
+:::image type="content" source="media/va-usage-report-dashboard.png" alt-text="Screenshot of the Virtual Appointments usage card in the Teams admin center dashboard":::
 
 Choose **View details** to view the report.
 
