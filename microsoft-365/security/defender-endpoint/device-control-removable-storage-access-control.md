@@ -31,7 +31,7 @@ search.appverid: met150
 
 ## Overview
 
-Microsoft Defender for Endpoint Device Control Removable Storage Access Control feature enables you to audit, allow or prevent the read, write or execute access to removable storage with or without exclusion.
+Microsoft Defender for Endpoint Device Control Removable Storage Access Control feature enables you to audit, allow, or prevent the read, write, or execute access to removable storage with or without exclusions.
 
 |Privilege|Permission|
 |---|---|
@@ -42,15 +42,13 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |User-based Support|Yes|
 |Machine-based Support|Yes|
 
-Microsoft Defender for Endpoint Device Control Removable Storage Access Control feature gives you the following capabilities:
-
 ### Prepare your endpoints
 
 Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices that have the anti-malware client version **4.18.2103.3 or later**.
 
 - **4.18.2104 or later**: Add `SerialNumberId`, `VID_PID`, filepath-based GPO support, and `ComputerSid`
 
-- **4.18.2105 or later**: Add Wildcard support for `HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId`, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
+- **4.18.2105 or later**: Add Wildcard support for `HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId`, the combination of specific user on specific machine, removable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
 
 - **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets); add `AccountName` into [advanced hunting](device-control-removable-storage-access-control.md#view-data-in-microsoft-defender-for-endpoint)
 
@@ -75,9 +73,9 @@ Here are the properties you can use when you create the group and policy XML fil
 
 ### Group
 Group includes following types:
-•	Device: if there's an explicit type setting, this setting is the default, including removable storage and Printer.
-•	Network
-•	VPN Connection
+- Device: if there's an explicit type setting, this setting is the default, including removable storage and Printer.
+- Network
+- VPN Connection
 
 Following is the properties you can use in **Group**:
 |Property Name|Description|Options|
