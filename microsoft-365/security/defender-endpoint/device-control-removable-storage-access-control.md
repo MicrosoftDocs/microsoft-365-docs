@@ -67,7 +67,7 @@ The Removable Storage Access Control includes Removable storage group creation a
 
 - Removable storage group allows you to create group. For example, authorized USB group or encrypted USB group.
 - Access policy rule allows you to create policy to restrict each removable storage group. For example, only allow authorized user to Write access-authorized USB group.
-- To block a specific removable storage class but allow specific media, you can use ‘`IncludedIdList` a group through `PrimaryId` and `ExcludedIDList` a group through `DeviceId`\/`HardwareId`/etc.`  For more information, see [Deploy Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri).
+- To block a specific removable storage class but allow specific media, you can use ‘`IncludedIdList` a group through `PrimaryId` and `ExcludedIDList` a group through `DeviceId`\/`HardwareId`/etc.`  For additional guidance, see [Deploy Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri).
 
 Here are the properties you can use when you create the group and policy XML files.
 
