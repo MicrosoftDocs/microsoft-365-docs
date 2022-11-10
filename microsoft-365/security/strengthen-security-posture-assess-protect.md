@@ -44,13 +44,11 @@ With the device inventory providing a clear view into newly discovered devices t
 
 At the top of each device inventory tab, you can see the total number of devices that are not onboarded:
 
-![Image of new discovered device count.](images/new-discovered-devices.png)
-
 :::image type="content" source="../media/content-understanding/onboard-discovered-devices.png" alt-text="number of discovered devices on the device inventory page" lightbox="../media/content-understanding/onboard-discovered-devices.png":::
 
 Once you're ready you can start onboarding these devices by choosing the **Onboard them now** card. This will bring you directly to the **Onboard devices to Microsoft Defender for Endpoint** security recommendation.
 
-To learn more about on how to onboard your devices using this security recommendation, see [explore security recommendation options](../security/defender-vulnerability-management#explore-security-recommendation-options). This provides details on the different options available to you in the security recommendation and how you can request remediation.
+To learn more about on how to onboard your devices using this security recommendation, see [explore security recommendation options](../security/defender-vulnerability-management/tvm-security-recommendation.md#explore-security-recommendation-options). This provides details on the different options available to you in the security recommendation and how you can request remediation.
 
 ## 3. Assign device value
 
