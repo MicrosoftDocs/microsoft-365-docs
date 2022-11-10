@@ -28,7 +28,7 @@ ms.collection:
 
 Welcome to **Phase 2: Assess and protect** in our **[Strengthen your security posture](/security-posture-solution-overview.md)** solution.
 
-Central to understanding your security posture is having a comprehensive inventory of all your assets. This article describe how to get an accurate view into the assets in your network and ways to manage the risks associated with them:
+Central to understanding your security posture is having a comprehensive inventory of all your assets. This article describes the following capabilities that you can use to an get an accurate view of the assets in your network and ways to help you protect them:
 
 1. [Assess your devices](#1-assess-your-devices)
 2. [Onboard newly discovered devices](#2-onboard-newly-discovered-devices)
