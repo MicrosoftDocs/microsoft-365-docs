@@ -78,6 +78,7 @@ Group includes following types:
 - VPN Connection
 
 The following table lists the properties you can use in **Group**:
+
 |Property Name|Description|Options|
 |---|---|---|
 |**GroupId**|GUID, a unique ID, represents the group and will be used in the policy.| You can generate ID through [PowerShell[(/powershell/module/microsoft.powershell.utility/new-guid)|
@@ -101,6 +102,7 @@ The following table lists the properties you can use in **PolicyRule**:
 
 
 The following table lists the properties you can use in **Entry**:
+
 | Property Name | Description | Options |
 |---|---|---|
 | **Entry Id** | GUID, a unique ID, represents the entry and will be used in the reporting and troubleshooting.| You can generate ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)|
@@ -112,6 +114,7 @@ The following table lists the properties you can use in **Entry**:
 |Parameters|Condition for this Entry, for example Network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See Parameters properties table below to get details.|
 
 The following table lists the properties you can use in **Parameters**:
+
 | Property Name | Description | Options |
 |---|---|---|
 |**MatchType**|When there are multiple device properties being used in the `DescriptorIDList`, MatchType defines the relationship.|**MatchAll**: Any attributes under the `DescriptorIdList` will be **And** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value. <p> **MatchExcludeAll**: The attributes under the DescriptorIdList will be And relationship, any items that do NOT meet will be covered. For example, if administrator puts DeviceID and InstancePathID and uses MatchExcludeAll, for every connected USB, system will do the enforcement as long as the USB doesn't have both identical DeviceID and InstanceID value. <p> **MatchExcludeAny**: The attributes under the DescriptorIdList will be Or relationship, any items that do NOT meet will be covered. For example, if administrator puts DeviceID and InstancePathID and uses MatchExcludeAny, for every connected USB, system will do the enforcement as long as the USB doesn't have either an identical DeviceID or InstanceID value.|
