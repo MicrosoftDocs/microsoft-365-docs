@@ -14,7 +14,9 @@ manager: dansimp
 ms.subservice: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 search.appverid: met150
 ---
 
@@ -54,6 +56,16 @@ Keep the following points in mind when you are defining exclusions:
 - Ideally, avoid defining exclusions in an effort to be proactive. For example, don't exclude something just because you think it might be a problem in the future. Use exclusions only for specific issues, such as those pertaining to performance or application compatibility that exclusions could mitigate.
 
 - Review and audit changes to your list of exclusions. Your security team should preserve context around why a certain exclusion was added to avoid confusion later on. Your security team should be able to provide specific answers to questions about why exclusions exist.
+
+## Audit Antivirus Exclusions
+
+Exchange has supported integration with the Antimalware Scan Interface (AMSI) since the June 2021 Quarterly Updates for Exchange. It is highly recommended to ensure these updates are installed and AMSI is working using the guidance provided by the Exchange Team as this integration will allow the best ability for Defender Antivirus to detect and block exploitation of Exchange.  
+
+Many organizations exclude the Exchange directories from antivirus scans for performance reasons. Microsoft recommendeds to audit AV exclusions on Exchange systems and assess if they can be removed without impacting performance in your environment to ensure the highest level of protection. Exclusions can managed by using Group Policy, PowerShell, or systems management tools like Microsoft Endpoint Configuration Manager.
+
+To audit AV exclusions on an Exchange Server running Defender Antivirus, run the **Get-MpPreference** command from an elevated PowerShell prompt.
+
+If exclusions cannot be removed for the Exchange processes and folders, running a Quick Scan in Defender Antivirus will scan the Exchange directories and files, regardless of exclusions.
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:

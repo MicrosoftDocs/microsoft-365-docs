@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -20,6 +20,7 @@ ms.collection:
   - m365solution-healthcare
   - m365solution-overview
   - m365-frontline
+  - highpri
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

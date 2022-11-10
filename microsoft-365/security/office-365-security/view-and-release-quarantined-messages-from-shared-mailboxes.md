@@ -13,7 +13,7 @@ search.appverid:
   - MET150
 ms.assetid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Users can learn how to view and act on quarantined messages that were sent to shared mailboxes that they have permissions to.
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -34,7 +34,13 @@ Previously, the ability for users to manage quarantined messages sent to a share
 
 Now, automapping is no longer required for users to manage quarantined messages that were sent to shared mailboxes. It just works. There are two different methods to access quarantined messages that were sent to a shared mailbox:
 
-- If the admin has configured [quarantine policies](quarantine-policies.md) to allow quarantine notifications (formerly known as end-user spam notifications), any user that has access to the quarantine notifications in the shared mailbox can click the **Review** button in the notification to go to quarantine in the Microsoft 365 Defender portal. Note that this method only allows users to manage quarantined messages that were sent to the shared mailbox. Users can't manage their own quarantine messages in this context.
+- If the following statements are all true:
+  - An admin has configured [quarantine policies](quarantine-policies.md) to allow quarantine notifications (formerly known as end-user spam notifications).
+  - The user has access to quarantine notifications of the shared mailbox.
+  - The user has Full Access permissions to the shared mailbox (directly or via a security group).
+
+  The user can click the **Review** button in the notification to go to quarantine in the Microsoft 365 Defender portal. This method only allows access to quarantined messages that were sent to the shared mailbox. Users can't manage their own quarantine messages in this context.
+
 - The user can [go to quarantine in the Microsoft 365 Defender portal](find-and-release-quarantined-messages-as-a-user.md) and click **Filter** to filter the results by **Recipient address** (the email address of the shared mailbox). On the main **Quarantine** page, you can click on the **Recipient** column to sort by messages that were sent to the shared mailbox.
 
 ## Things to keep in mind

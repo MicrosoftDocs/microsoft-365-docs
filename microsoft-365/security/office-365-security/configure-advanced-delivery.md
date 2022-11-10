@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to use the advanced delivery policy in Exchange Online Protection (EOP) to identify messages that should not be filtered in specific supported scenarios (third-party phishing simulations and messages delivered to security operations (SecOps) mailboxes.
 ms.subservice: mdo

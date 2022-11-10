@@ -1,49 +1,47 @@
 ---
 title: "Microsoft Purview eDiscovery solutions"
+description: "Microsoft Purview offers three eDiscovery tools that you can use to search for and export content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations. eDiscovery (Standard) and eDiscovery (Premium) provide many additional features to help you manage your investigations."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 08/25/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-ediscovery
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-description: "Microsoft Purview offers three eDiscovery tools that you can use to search for and export content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 Groups, Microsoft Teams, and Skype for Business conversations. eDiscovery (Standard) and eDiscovery (Premium) provide many additional features to help you manage your investigations."
+
 ---
 
 # Microsoft Purview eDiscovery solutions
 
-> [!TIP]
-> *Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?* Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs. Microsoft 365 E3 and Office 365 E3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Learn details about [who can sign up and trial terms](compliance-easy-trials.md).
-
 Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery tools in Microsoft Purview to search for content in Exchange Online, OneDrive for Business, SharePoint Online, Microsoft Teams, Microsoft 365 Groups, and Yammer teams. You can search mailboxes and sites in the same eDiscovery search, and then export the search results. You can use Microsoft Purview eDiscovery (Standard) cases to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 or Microsoft 365 E5 subscription (or related E5 add-on subscriptions), you can further manage custodians and analyze content by using the feature-rich Microsoft Purview eDiscovery (Premium) solution in Microsoft 365.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## eDiscovery solutions
 
 Microsoft Purview provides three eDiscovery solutions: Content search, eDiscovery (Standard), and eDiscovery (Premium).
 
-<!--
-![Key capabilities of Microsoft Purview eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
--->
-
 |Content Search|eDiscovery (Standard)|eDiscovery (Premium)|
-|---------|---------|---------|
-|Search for content </br> Keyword queries and search conditions </br> Export search results </br> Role-based permissions|Search and export </br> Case management </br>Legal hold|Custodian management </br> Legal hold notifications </br> Advanced indexing </br> Review set filtering </br> Tagging </br> Analytics </br> Predictive coding models </br> And more...|
+|:-------------|:--------------------|:-------------------|
+|- Search for content </br> - Keyword queries and search conditions </br> - Export search results </br> - Role-based permissions|- Search and export </br> - Case management </br> - Legal hold| - Custodian management </br> - Legal hold notifications </br> - Advanced indexing </br> - Review set filtering </br> - Tagging </br> - Analytics </br> - Predictive coding models </br> And more...|
 
 - **Content search**. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer.
 
-- **eDiscovery (Standard)**. eDiscovery (Standard) builds on the basic search and export functionality of Content search by enabling you to create eDiscovery cases and assign eDiscovery managers to specific cases. eDiscovery managers can only access the cases of which they are members. eDiscovery (Standard) also lets you associate searches and exports with a case and lets you place an eDiscovery hold on content locations relevant to the case.
+- **eDiscovery (Standard)**. eDiscovery (Standard) builds on the basic search and export functionality of Content search by enabling you to create eDiscovery cases and assign eDiscovery managers to specific cases. eDiscovery managers can only access the cases of which they're members. eDiscovery (Standard) also lets you associate searches and exports with a case and lets you place an eDiscovery hold on content locations relevant to the case.
 
 - **eDiscovery (Premium)**. The eDiscovery (Premium) tool builds on the existing case management, preservation, search, and export capabilities in eDiscovery (Standard). eDiscovery (Premium) provides an end-to-end workflow to identify, preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It lets legal teams manage custodians and the legal hold notification workflow to communicate with custodians involved in a case. It allows you to collect and copy data from the live service into review sets, when you can filter, search, and tag content to cull non-relevant content from further review so your workflow can identify and focus on content that's most relevant. eDiscovery (Premium) provides analytics and machine learning-based predictive coding models to further narrow to scope of your investigation to the most relevant content.
 
@@ -82,13 +80,13 @@ Here's a description of each eDiscovery capability.
 
 - **Search for content**. Search for content that's stored in Exchange mailboxes, OneDrive for Business accounts, SharePoint sites, Microsoft Teams, Microsoft 365 Groups, and Yammer Teams. This includes content generated by other Microsoft 365 apps that store data in mailboxes and sites.
 
-- **Keyword queries and search conditions**. Create KQL keyword search queries to search for content that match query criteria. You can also include conditions to narrow the scope of your search.
+- **Keyword queries and search conditions**. Create Keyword Query Language (KQL) search queries to search for content keywords that match query criteria. You can also include conditions to narrow the scope of your search.
 
 - **Search statistics**. After you run a search, you can view statistics of the estimated search results, such as the number and total size of items matching your search criteria. Other statistics include the top content locations that contain search results and the number of items that match different parts of the search query.
 
 - **Export search results**. Export search results to a local computer in your organization in a two-step process. When you export search results, items are copied from their original content location in Microsoft 365 to a Microsoft-provided Azure Storage location. Then you can download those items to a local computer.
 
-- **Role-based permissions**. Use role-based access (RBAC) permissions to control what eDiscovery-related tasks that different users can perform. You can use a built-in eDiscovery-related role group or create custom role groups that assign specific eDiscovery permissions.
+- **Role-based permissions**. Use role-based access control (RBAC) permissions to control what eDiscovery-related tasks that different users can perform. You can use a built-in eDiscovery-related role group or create custom role groups that assign specific eDiscovery permissions.
 
 - **Case management**. eDiscovery cases in eDiscovery (Standard) and eDiscovery (Premium) let you associate specific searches and exports with a specific investigation. You can also assign members to a case to control who can access the case and view the contents of the case.
 
@@ -98,7 +96,7 @@ Here's a description of each eDiscovery capability.
 
 - **Legal hold notifications**. Manage the process of communicating with case custodians. A legal hold notification instructs custodians to preserve content that's relevant to the case. You can track the notices that were received, read, and acknowledged by custodians. The communications workflow in eDiscovery (Premium) allows you to create and send initial notifications, reminders, and escalations if custodians fail to acknowledge a hold notification.
 
-- **Advanced indexing**. When you add custodial and non-custodian data sources to a case, the associated content locations are reindexed (in a process called *Advanced indexing*) so that any content deemed as partially indexed is reprocessed to make it fully searchable when you collect data for an investigation.
+- **Advanced indexing**. When you add custodial and non-custodian data sources to a case, the associated content locations are reindexed in a process called *Advanced indexing*. Advanced indexing ensures any content deemed as partially indexed is reprocessed to make it fully searchable when you collect data for an investigation.
 
 - **Error remediation**. Fix processing errors using a process called *error remediation*. Error remediation allows you to rectify data issues that prevent eDiscovery (Premium) from properly processing the content during Advanced indexing. For example, files that are password protected can't be processed since the files are locked or encrypted. Using error remediation, you can download files with errors, remove the password protection, and then upload the remediated files.
 
@@ -112,17 +110,17 @@ Here's a description of each eDiscovery capability.
 
 - **Collection statistics and reports**. After you create a draft collection or commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results.
 
-- **Review set filtering**. After content is added to a review set, you can apply filters to display only the set of items that match your filtering criteria. Then you can save the filter sets as a query, which lets you quickly reapply the saved filters. Review set filtering and saved queries help you quickly cull content to the items that are most relevant to your investigation.
+- **Review set filtering**. After content is added to a review set, you can apply filters to display only the set of items that match your filtering criteria. Then you can save the filter sets as a query, which lets you quickly reapply the saved filters. Review set filtering and saved queries help you quickly select content items that are most relevant to your investigation.
 
-- **Tagging**. Tags also help you cull non-relevant content and identify the most relevant content. When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags. For example, if the intent is to cull unnecessary content, a user can tag documents with a tag such as "non-responsive". After content has been reviewed and tagged, a review set query can be created to exclude any content tagged as "non-responsive". This process eliminates the non-responsive content from subsequent steps in the eDiscovery workflow.
+- **Tagging**. Tags also help you omit non-relevant content and identify the most relevant content. When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags. For example, if the intent is to exclude unnecessary content, a user can tag documents with a tag such as "non-responsive". After content has been reviewed and tagged, a review set query can be created to exclude any content tagged as "non-responsive". This process eliminates the non-responsive content from subsequent steps in the eDiscovery workflow.
 
 - **Analytics**. eDiscovery (Premium) provides tools to analyze review set documents to help you organize the documents in a coherent manner and reduce the volume of documents to be reviewed. *Near duplicate detection* groups textually similar documents together to help you make your review process more efficient. *Email threading* identifies specific email messages that  give a complete context of the conversation in an email thread. *Themes* functionality attempts to analyze themes in review set documents and assign a theme to documents so that you can review documents with related theme. These analytics capabilities help make your review process more efficient so that reviewers can review a fraction of collected documents.
 
-- **Predictive coding models**. Use predictive coding models to reduce and cull large volumes of case content to a relevant set of items that you can prioritize for review. This is accomplished by creating and training your own predictive coding models that help you prioritize the review of the most relevant items in a review set. The system uses the training to apply prediction scores to every item in the review set. This lets you filter items based on the prediction score, which  allows you to review the most relevant (or non-relevant) items first.
+- **Predictive coding models**. Use predictive coding models to reduce large volumes of case content to a relevant set of items that you can prioritize for review. This is accomplished by creating and training your own predictive coding models that help you prioritize the review of the most relevant items in a review set. The system uses the training to apply prediction scores to every item in the review set. This lets you filter items based on the prediction score, which  allows you to review the most relevant (or non-relevant) items first.
 
 - **Computed document metadata**. Many of the eDiscovery (Premium) features, such as Advanced indexing, conversation threading, analytics, and predictive coding add metadata properties to review set documents. This metadata contains information related to the function performed by a specific feature. When reviewing documents, you can filter on metadata properties to display documents that match your filter criteria. This metadata can be imported into third-party review applications after review set documents are exported.
 
-- **Transparency of long-running jobs**. Jobs in eDiscovery (Premium) are typically long-running processes that are triggered by user actions, such as the adding custodians to a case, adding content to a review set, running analytics, and training predictive coding models. You can track the status of these jobs and get support information if you need to escalate issues to MS Support.
+- **Transparency of long-running jobs**. Jobs in eDiscovery (Premium) are typically long-running processes that are triggered by user actions, such as the adding custodians to a case, adding content to a review set, running analytics, and training predictive coding models. You can track the status of these jobs and get support information if you need to escalate issues to Microsoft Support.
 
 - **Export to customer-owned Azure Storage location**. When you export documents from a review set, you have the option to export them to an Azure Storage account managed by your organization. Additionally, eDiscovery (Premium) lets you customize what data is exported. This includes exporting file metadata, native files, text files, tags, and redacted documents saved to a PDF file.
 
@@ -140,7 +138,6 @@ The following sections show the minimum subscription requirements for Content se
 - Microsoft 365 Business Basic subscription
 - Office 365 Education A1 subscription
 - Office 365 E1 subscription
-
 
 ### eDiscovery (Standard)
 
@@ -166,24 +163,21 @@ The following sections show the minimum subscription requirements for Content se
 
 ## Get started with eDiscovery
 
-See the following articles to help you learn more and get started using the eDiscovery solutions in Microsoft 365.
+See the following articles to help you learn more and get started using Microsoft Purview eDiscovery solutions.
 
-### Content search
+### Get started with Content search
 
 - [Search for content using Content search](search-for-content.md)
-
 - [Create a search](content-search.md)
 
-### eDiscovery (Standard)
+### Get started with eDiscovery (Standard)
 
 - [Get started with eDiscovery (Standard)](get-started-core-ediscovery.md)
 
-### eDiscovery (Premium)
+### Get started with eDiscovery (Premium)
 
 - [Overview of eDiscovery (Premium)](overview-ediscovery-20.md)
-
 - [Set up eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
-
 - [Create and manage an eDiscovery (Premium) case](create-and-manage-advanced-ediscoveryv2-case.md)
 
 ## eDiscovery roadmap
@@ -192,4 +186,4 @@ To see what eDiscovery features have been launched, are rolling out, or in devel
 
 ## Training
 
-Training your IT administrators, eDiscovery managers, and compliance investigation teams in the basics for Content search, eDiscovery (Standard), and eDiscovery (Premium) can help your organization get started more quickly using Microsoft 365 eDiscovery tools. Microsoft 365 provides the following resource to help these users in your organization getting started with eDiscovery: [Describe the eDiscovery and audit capabilities of Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Training your IT administrators, eDiscovery managers, and compliance investigation teams in the basics for Content search, eDiscovery (Standard), and eDiscovery (Premium) can help your organization get started more quickly using Microsoft Purview eDiscovery tools. To help these users in your organization getting started with eDiscovery, see [Describe the eDiscovery and audit capabilities of Microsoft Purview](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

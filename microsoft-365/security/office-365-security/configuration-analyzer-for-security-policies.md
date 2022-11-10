@@ -15,7 +15,7 @@ search.appverid:
   - MET150
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
 ms.subservice: mdo

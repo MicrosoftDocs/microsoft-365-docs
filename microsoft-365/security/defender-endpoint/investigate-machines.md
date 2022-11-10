@@ -11,8 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -37,7 +39,6 @@ You can click on affected devices whenever you see them in the portal to open a 
 
 - [Devices list](investigate-machines.md)
 - [Alerts queue](alerts-queue.md)
-- [Security operations dashboard](security-operations-dashboard.md)
 - Any individual alert
 - Any individual file details view
 - Any IP address or domain details view

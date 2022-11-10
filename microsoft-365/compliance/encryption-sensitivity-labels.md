@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -44,6 +45,8 @@ The encryption settings are available when you [create a sensitivity label](crea
 
 > [!NOTE]
 > Now rolling out in preview, a sensitivity label in Outlook can apply S/MIME protection rather than encryption and permissions from the Azure Rights Management service. For more information, see [Configure a label to apply S/MIME protection in Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Understand how the encryption works
 

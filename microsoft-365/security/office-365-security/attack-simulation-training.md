@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
@@ -81,7 +81,7 @@ The following details are shown for each payload:
 - **Payload name**
 - **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
 - **Click rate**: How many people have clicked on this payload.
-- **Predicted compromise rate**: Historical data for the payload across Microsoft 365 that predicts the percentage of people who will get compromised by this payload.
+- **Predicted compromise rate**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload).
 - **Simulations launched** counts the number of times this payload was used in other simulations.
 
 In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the payload name and press Enter to filter the results.
@@ -307,7 +307,7 @@ When you're finished, click **Next**.
 
 ### Landing page
 
-On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
+On the **Landing page** page, you configure the web page that users are taken to if they open the payload in the simulation.
 
 Microsoft-curated landing pages are available in 12 languages: Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish, and Dutch.
 
@@ -523,6 +523,7 @@ The following settings are available:
     - **Select launch time**
 - **Configure number of days to end simulation after**: The default value is 2.
 - **Enable region aware time zone delivery**: Deliver simulated attack messages to your employees during their working hours based on their region.
+- **Display the drive-by technique interstitial data gathered page**: You can show the overlay that appears for the drive-by URL technique attacks. To hide this overlay and directly go to the landing page, de-select this option.
 
 - **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the [select a technique page](#select-a-social-engineering-technique) page. You can show the overlay that comes up for drive-by URL technique attacks. To hide the overlay and go directly to the landing page, don't select this option.
 

@@ -3,8 +3,8 @@ title: Remediate malicious email that was delivered in Office 365
 author: msfttracyp
 ms.author: tracyp
 manager: dansimp
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.collection: m365-security
 audience: admin
 f1.keywords: 
   - NOCSH

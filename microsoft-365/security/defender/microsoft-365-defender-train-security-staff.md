@@ -16,8 +16,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -44,9 +44,9 @@ The content is structured into three different knowledge levels, with multiple m
 
 Use these learning paths and their modules to build an understanding of Microsoft 365 Defender and Microsoft Defender for Endpoint, one module and unit at a time.
 
- - [Detect and respond to cyber attacks with Microsoft 365 Defender](/learn/paths/defender-detect-respond/)
+ - [Detect and respond to cyber attacks with Microsoft 365 Defender](/training/paths/defender-detect-respond/)
 
- - [Secure your organization with Microsoft Defender for Endpoint](/learn/paths/defender-endpoint-fundamentals/)  
+ - [Secure your organization with Microsoft Defender for Endpoint](/training/paths/defender-endpoint-fundamentals/)  
 
 
 ## Learning paths in the Microsoft 365 Defender portal learning hub

@@ -9,9 +9,10 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/18/2022
 ms.localizationpriority: high
 ms.collection: 
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -49,11 +50,11 @@ Under **Manage how user access Office files in mobile devices**
 |Force users to save work files to OneDrive for Business  <br/> Note that only OneDrive for Business is allowed  |Select which storage services corporate data can be saved to  |
 |Encrypt work files  |Encrypt app data  |
 |Under **Manage how user access Office files in mobile devices** ||
-|Require a PIN or fingerprint to access Office apps  | Require PIN to access  <br/>  This also sets:  <br/> **Allow simple PIN** to **Yes** <br/> **Pin Length** to 4  <br/> **Allow fingerprint instead of PIN** to **Yes** <br/> **Disable app PIN when device PIN is managed** to **No** |
+|Require a PIN or fingerprint to access Microsoft 365 apps  | Require PIN to access  <br/>  This also sets:  <br/> **Allow simple PIN** to **Yes** <br/> **Pin Length** to 4  <br/> **Allow fingerprint instead of PIN** to **Yes** <br/> **Disable app PIN when device PIN is managed** to **No** |
 |Reset PIN when login fails this many times (this is disabled if PIN isn't required)  |Number of attempts before PIN reset  |
-|Require users to sign in again after Office apps have been idle for (this is disabled if PIN isn't required)  | Recheck the access requirements after (minutes)  <br/>  This also sets:  <br/> **Timeout** is set to minutes  <br/>  This is same number of minutes you set in Microsoft 365 Business.  <br/> **Offline grace period** is set to 720 minutes by default  |
+|Require users to sign in again after Microsoft 365 apps have been idle for (this is disabled if PIN isn't required)  | Recheck the access requirements after (minutes)  <br/>  This also sets:  <br/> **Timeout** is set to minutes  <br/>  This is same number of minutes you set in Microsoft 365 Business.  <br/> **Offline grace period** is set to 720 minutes by default  |
 |Deny access to work files on jailbroken or rooted devices  |Block managed apps from running on jailbroken or rooted devices  |
-|Allow users to copy content from Office apps into personal apps  | Restrict cut, copy, and paste with other apps  <br/>  If the Microsoft 365 Business Premium option is set to **On**, then these three options are also set to **All Apps** in Intune:  <br/> **Allow app to transfer data to other apps** <br/> **Allow app to receive data from other apps** <br/> **Restrict cut, copy, and paste with other apps** <br/>  If the Microsoft 365 Business option is set to **On**, then all the Intune options are set to:  <br/> **Allow app to transfer data to other apps** is set to **Policy managed apps** <br/> **Allow app to receive data from other apps** is set to **All Apps** <br/> **Restrict cut, copy, and paste with other apps** is set to **Policy Managed apps with Paste-In** |
+|Allow users to copy content from Microsoft 365 apps into personal apps  | Restrict cut, copy, and paste with other apps  <br/>  If the Microsoft 365 Business Premium option is set to **On**, then these three options are also set to **All Apps** in Intune:  <br/> **Allow app to transfer data to other apps** <br/> **Allow app to receive data from other apps** <br/> **Restrict cut, copy, and paste with other apps** <br/>  If the Microsoft 365 Business option is set to **On**, then all the Intune options are set to:  <br/> **Allow app to transfer data to other apps** is set to **Policy managed apps** <br/> **Allow app to receive data from other apps** is set to **All Apps** <br/> **Restrict cut, copy, and paste with other apps** is set to **Policy Managed apps with Paste-In** |
    
 ## Windows 10 app protection settings
 

@@ -16,8 +16,9 @@ search.appverid:
 ms.collection: 
 - m365solution-overview
 - m365solution-mip
-- m365initiative-compliance
+- tier1
 - zerotrust-solution
+- highpri
 description: "Prescriptive guidance to deploy Microsoft Purview Information Protection for your organization."
 ---
 
@@ -28,6 +29,8 @@ description: "Prescriptive guidance to deploy Microsoft Purview Information Prot
 Your information protection strategy is driven by your business needs. Many organizations must comply with regulations, laws, and business practices. Additionally, organizations need to protect proprietary information, such as data for specific projects.
 
 Microsoft Purview Information Protection (formerly Microsoft Information Protection) provides a framework, process, and capabilities you can use to accomplish your specific business objectives. 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft Purview Information Protection framework
 
@@ -96,10 +99,10 @@ Deploy Microsoft Purview Data Loss Prevention (DLP) policies to govern and preve
 
 Learning modules for consultants and admins:
 
-- [Introduction to information protection and data lifecycle management in Microsoft Purview](/learn/modules/m365-compliance-information-governance)
-- [Classify data for protection and governance](/learn/modules/m365-compliance-information-classify-data)
-- [Protect information in Microsoft Purview](/learn/modules/m365-compliance-information-protect-information)
-- [Prevent data loss in Microsoft Purview](/learn/modules/m365-compliance-information-prevent-data-loss)
+- [Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance)
+- [Classify data for protection and governance](/training/modules/m365-compliance-information-classify-data)
+- [Protect information in Microsoft Purview](/training/modules/m365-compliance-information-protect-information)
+- [Prevent data loss in Microsoft Purview](/training/modules/m365-compliance-information-prevent-data-loss)
 
 To help train your users to apply and use the sensitivity labels that you configure for them, see [End-user documentation for sensitivity labels](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 

@@ -13,8 +13,10 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-retail
   - m365-frontline
+  - highpri
   - m365solution-retail
   - m365solution-overview
+  - highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

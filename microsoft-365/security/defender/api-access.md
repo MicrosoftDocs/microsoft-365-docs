@@ -15,7 +15,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -86,5 +88,5 @@ For more information, see **[Create an app with partner access to Microsoft 365 
 
 - [Microsoft 365 Defender APIs overview](api-overview.md)
 - [OAuth 2.0 authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
-- [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [Create a 'Hello world' application that accesses the Microsoft 365 APIs](api-hello-world.md)

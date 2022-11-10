@@ -6,7 +6,7 @@ manager: serdars
 ms.reviewer: amitman 
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
@@ -16,7 +16,7 @@ description: Learn how to conduct key Microsoft LMS Gateway management tasks inc
 
 # Manage Microsoft LMS Gateway for any LMS
 
-Microsoft LMS Gateway integrates with several LMSs including Canvas, Blackboard, Moodle, and Brightspace.
+Microsoft LMS Gateway integrates with several LMSs including Canvas, Blackboard, Moodle, Brightspace, and Schoology Learning.
 
 In this article, IT admins will find instructions on key Microsoft LMS Gateway management tasks.
 
@@ -25,6 +25,9 @@ In this article, IT admins will find instructions on key Microsoft LMS Gateway m
 - [Edit an LTI registration](#edit-an-lti-registration).
 - [Troubleshoot issues with Microsoft LMS Gateway](#troubleshoot-issues-with-microsoft-lms-gateway).
 - [Report problems with Microsoft LMS Gateway](#report-problems-with-lti-registration-portal).
+
+> [!NOTE]
+> The Microsoft LMS Gateway is only available to public cloud tenants. DoD, GCC, and GCC High tenants can't access the Microsoft LMS Gateway.
 
 ## View an LTI registration
 
@@ -68,7 +71,7 @@ If so, here are some common issues and how to resolve them.
 
 - **Cookies can't be found**
   - Third-party cookies need to be allowed for the **LMS URL** in the browser settings.
-  - These cookies are needed to complete the LTI 1.3 handshake per the IMS specifications.
+  - These cookies are needed to complete the LTI 1.3 handshake per IMS specifications.
   - To learn how to update your browser's cookie settings, see [Allow cookies for LMS URLs in your browser](browser-cookies.md).
 
 - **Registration details not found**
@@ -78,6 +81,10 @@ If so, here are some common issues and how to resolve them.
 - **Some details from LMS aren't valid**
   - This issue happens when the details sent from the LMS in the app launch request aren't aligned with the IMS LTI 1.3 specification.
   - The IT admin will need to reach out to [Microsoft's education support team](https://edusupport.microsoft.com/support?product_id=lti_apps&platform_id=web) if the issue persists.
+
+- **Issues with the LMS public keyset URL**
+  - Ensure that the **public keyset URL** entered in the LTI registration is correct.
+  - Also, make sure that the **public keyset URL** isn't restricted by your network settings for requests originating from the [Microsoft LMS Gateway](https://lti.microsoft.com/).
 
 ### Issues with signing in to the Microsoft LMS Gateway
 

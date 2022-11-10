@@ -11,7 +11,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -127,9 +129,9 @@ Use the following steps to schedule scans:
    ```
     #!/bin/sh
     set	-e
-    echo	$(date)		“Time Scan Begins”	>>/logs/mdav_avacron_full_scan.log
+    echo	$(date)		"Time Scan Begins"	>>/logs/mdav_avacron_full_scan.log
     /bin/mdatp scan full >> /logs/mdav_avacron_full_scan.log
-    echo	$(date) “Time Scan Finished”		>>/logs/mdav_avacron_full_scan.log
+    echo	$(date) "Time Scan Finished"		>>/logs/mdav_avacron_full_scan.log
     exit	0
     ~
     ```

@@ -13,8 +13,10 @@ ms.localizationpriority: medium
 ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -74,6 +76,8 @@ This feature is designed to prevent suspected malware (or potentially malicious 
     - Indicator - Specify the entity details and define the expiration of the indicator.
     - Action - Specify the action to be taken and provide a description.
     - Scope - Define the scope of the device group (scoping isn't available in [Defender for Business](../defender-business/mdb-overview.md)).
+        > [!NOTE]
+        > Device Group creation is supported in both Defender for Endpoint Plan 1 and Plan 2
 
 5. Review the details in the Summary tab, then select **Save**.
 

@@ -9,7 +9,9 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
@@ -24,6 +26,8 @@ description: "Resources to help you meet regulatory requirements for data lifecy
 Use the resources on this page to help you meet specific regulatory requirements for data lifecycle management and records management in Microsoft 365. Each section of this document focuses on one or more related regulations and includes any existing guidance or third-party assessment of how to configure Microsoft 365 to help with the requirements outlined.
 
 These resources are available to download from the [Data Protection Resources, FAQ, and White Papers](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) page of the Service Trust Portal.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## New Zealand Public Records Act
 

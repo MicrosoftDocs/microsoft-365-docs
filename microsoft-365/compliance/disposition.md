@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
@@ -25,9 +26,11 @@ description: "Monitor and manage the disposal of content for when you use a disp
 
 Use the **Disposition** page from **Records Management** in the Microsoft Purview compliance portal to manage disposition reviews and view the metadata of [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Prerequisites for viewing content dispositions
 
-To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md#maximum-number-of-items-for-disposition) for disposition.
+To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md#maximum-numbers-for-disposition) for disposition.
 
 ### Permissions for disposition
 

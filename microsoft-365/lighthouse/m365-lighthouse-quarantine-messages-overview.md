@@ -4,12 +4,14 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: shcallaw
+ms.reviewer: shcallaw
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:

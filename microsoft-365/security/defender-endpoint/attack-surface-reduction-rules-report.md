@@ -4,20 +4,25 @@ description: Provides information about attack surface reduction (ASR) rules det
 keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
 ms.date: 08/25/2022
 search.appverid: met150
 ---
+
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Attack surface reduction (ASR) rules report
 
@@ -63,8 +68,8 @@ To access the **Attack surface reduction rules report** in the Microsoft 365 Sec
 
 | Permission type | Permission | Permission display name |
 |:---|:---|:---|
-| Application | Machine.Read.All | ‘Read all machine profiles’ |
-|Delegated (work or school account) | Machine.Read | ‘Read machine information’ |
+| Application | Machine.Read.All | 'Read all machine profiles' |
+|Delegated (work or school account) | Machine.Read | 'Read machine information' |
 
 To assign these permissions:
 
@@ -114,7 +119,7 @@ Clicking on the **ASR rules detections** link at the top of the card also opens 
 
 **The top section** focuses on three recommended rules, which protect against common attack techniques. This card shows current-state information about the computers in your organization that have the following [Three \(ASR\) standard protection rules](#simplified-standard-protection-option) set in **Block mode**, **Audit mode**, or **off** (not configured).The **Protect devices** button will show full configuration details for only the three rules; customers can quickly take action to enable these rules.
 
-**The bottom section** surfaces six rules based on the number of unprotected devices per rule. The “View configuration” button surfaces all configuration details for all ASR rules. The “Add exclusion” button shows the add exclusion page with all detected file/process names listed for Security Operation Center (SOC) to evaluate. The **Add exclusion** page is linked to Microsoft Endpoint Manager (MEM).
+**The bottom section** surfaces six rules based on the number of unprotected devices per rule. The "View configuration" button surfaces all configuration details for all ASR rules. The "Add exclusion" button shows the add exclusion page with all detected file/process names listed for Security Operation Center (SOC) to evaluate. The **Add exclusion** page is linked to Microsoft Endpoint Manager (MEM).
 
 Provides two 'action' buttons:
 
@@ -199,7 +204,7 @@ For more information about ASR rule audit and block modes, see [Attack surface r
 
 #### Actionable flyout
 
-The “Detection” main page has a list of all detections (files/processes) in the last 30 days. Select on any of the detections to open with drill-down capabilities.
+The "Detection" main page has a list of all detections (files/processes) in the last 30 days. Select on any of the detections to open with drill-down capabilities.
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout.png" alt-text="Shows the ASR rules report main detections tab flyout" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout.png":::
 
@@ -282,5 +287,10 @@ The Add exclusion page has two buttons for actions that can be used on any detec
 
 ## See also
 
-- [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)

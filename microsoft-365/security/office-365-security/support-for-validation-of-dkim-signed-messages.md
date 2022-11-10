@@ -6,14 +6,14 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Learn about the validation of DKIM signed messages in Exchange Online Protection and Exchange Online
 ms.subservice: mdo
 ms.service: microsoft-365-security

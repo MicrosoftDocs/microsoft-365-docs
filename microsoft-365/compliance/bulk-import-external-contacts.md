@@ -1,9 +1,10 @@
 ---
 title: "Bulk import external contacts to Exchange Online"
+description: "Learn how admins can use Exchange Online PowerShell and a CSV file to bulk import external contacts to the global address list."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 6/29/2018
 audience: End User
@@ -15,7 +16,10 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
-description: "Learn how admins can use Exchange Online PowerShell and a CSV file to bulk import external contacts to the global address list."
+ms.collection:
+- tier1
+- purview-compliance
+- import
 ---
 
 # Bulk import external contacts to Exchange Online
@@ -36,6 +40,8 @@ After you complete these steps to import contacts, you can perform these additio
   
 - [Hide external contacts from the shared address book](#hide-external-contacts-from-the-shared-address-book)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Create a CSV file that contains information about the external contacts
 
 The first step is to create a CSV file that contains information about each external contact that you want to import to Exchange Online. 

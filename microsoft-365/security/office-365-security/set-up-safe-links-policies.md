@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Microsoft Defender for Office 365.
 ms.subservice: mdo
@@ -81,7 +81,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - Allow up to 6 hours for a new or updated policy to be applied.
 
-- [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). As new features are added, you may need to make adjustments to your existing Safe Links policies.
+- [New features are continually being added to Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
 ## Use the Microsoft 365 Defender portal to create Safe Links policies
 

@@ -10,6 +10,7 @@ ms.localizationpriority: mediumn
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC
@@ -100,7 +101,7 @@ Microsoft's plan is to collect your feedback on the preview experience and then 
 
 ### 4. Is this a free (included) or paid (extra) feature?
 
-This is a free feature that is in preview and only available for customers that meet the requirements in question 1. There isn't a paid option to receive this content.
+Microsoft 365 Monitoring features are in preview for eligible customers. While in preview, this feature is available at no additional charge for customers that meet the eligibility requirements.
 
 ### 5. How do I provide feedback?
 

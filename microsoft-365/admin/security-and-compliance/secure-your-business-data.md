@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: other
 ms.date: 09/15/2022
@@ -15,6 +15,8 @@ ms.collection:
 - highpri
 - Adm_O365
 - Adm_TOC
+- m365-security
+- tier1
 ms.custom:
 - VSBFY23
 - MSStore_Link
@@ -30,10 +32,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Best practices to protect your business from ransomware, phishing, and malicious URLs or attachments."
+description: "Best practices to protect your small or medium sized business from ransomware, phishing, and malicious URLs or attachments."
 ---
 
-# Top 10 ways to secure your business - Best practices to follow
+# Top 10 ways to secure your data - Best practices for small and medium sized businesses
 
 **Applies to**
 
@@ -44,7 +46,7 @@ description: "Best practices to protect your business from ransomware, phishing,
 > [!NOTE]
 > This article is designed for small and medium-sized businesses with up to 300 users. If you're an enterprise organization, see [Deploy ransomware protection for your Microsoft 365 tenant](../../solutions/ransomware-protection-microsoft-365.md).
 
-Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes even more capabilities, such as device security, advanced threat protection, and information protection. This article describes how to secure your business, and [compares capabilities across Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans).
+Microsoft 365 for business plans include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes even more capabilities, such as device security, advanced threat protection, and information protection. This article describes how to secure your data with Microsoft 365 for business. This article also includes a section where you can [compare capabilities across Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans).
 
 :::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagram listing top 10 ways to secure business data.":::
 

@@ -6,11 +6,11 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/18/2019
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
   - Ent_Solutions
   - SIEM

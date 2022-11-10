@@ -6,13 +6,13 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
 ms.date: 01/29/2021

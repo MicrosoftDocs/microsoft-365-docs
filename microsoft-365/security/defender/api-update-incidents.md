@@ -15,7 +15,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid:
   - MOE150
@@ -78,13 +80,13 @@ Property|Type|Description
 ---|---|---
 status|Enum|Specifies the current status of the incident. Possible values are: `Active`, `Resolved`, and `Redirected`.
 assignedTo|string|Owner of the incident.
-classification|Enum|Specification of the incident. Possible values are: `Unknown`, `FalsePositive`, `TruePositive`.
-determination|Enum|Specifies the determination of the incident. Possible values are: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
-tags|string List|List of Incident tags.
+classification|Enum|Specification of the incident. Possible values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.
+determination|Enum|Specifies the determination of the incident. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).
+tags|string list|List of Incident tags.
 comment|string|Comment to be added to the incident.
 
 >[!NOTE]
->Around August 29th, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
+>Around August 29, 2022, previously supported alert determination values ('Apt' and 'SecurityPersonnel') will be deprecated and no longer available via the API.
 
 ## Response
 

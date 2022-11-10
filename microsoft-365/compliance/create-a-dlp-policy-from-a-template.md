@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 ms.custom:
@@ -31,6 +32,8 @@ Microsoft 365 includes over 40 ready-to-use templates that can help you meet a w
 You can fine tune a template by modifying any of its existing rules or adding new ones. For example, you can add new types of sensitive information to a rule, modify the counts in a rule to make it harder or easier to trigger, allow people to override the actions in a rule by providing a business justification, or change who notifications and incident reports are sent to. A DLP policy template is a flexible starting point for many common compliance scenarios.
 
 You can also choose the Custom template, which has no default rules, and configure your DLP policy from scratch, to meet the specific compliance requirements for your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Permissions
 

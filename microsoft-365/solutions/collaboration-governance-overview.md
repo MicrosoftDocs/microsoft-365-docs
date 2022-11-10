@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
 - highpri
@@ -172,7 +172,7 @@ These training modules from Microsoft Learn can help you learn the governance fe
 |![Information protection training icon.](../media/information-protection-governance.svg)|The amount of data being generated today is growing faster than ever, employees want to get work done everywhere, and the regulatory landscape is constantly changing. Microsoft's solutions for information protection and governance help organizations achieve the right balance between keeping their data protected and their people productive. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>5 hr 13 min - Learning Path - 7 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-compliance-information-governance/introduction/)
+> [Start >](/training/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -181,16 +181,16 @@ These training modules from Microsoft Learn can help you learn the governance fe
 |![Teams training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<br><br>1 hr - Learning Path - 5 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/m365-security-info-overview/introduction/)
+> [Start >](/training/modules/m365-security-info-overview/introduction/)
 
 #### Security and compliance
 
 |Training:|Demonstrate fundamental knowledge of Microsoft 365 security and compliance capabilities|
 |:---|:---|
-|![Security and compliance training icon.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Learn about the Microsoft 365 security and compliance solutions areas and the capabilities available to help enterprises secure their enterprise and meet regulatory requirements. If you're unfamiliar with basic cloud computing concepts, we recommend you take [Cloud Concepts - Principles of cloud computing](/learn/modules/principles-cloud-computing/index).<br><br>3 hr 11 min - Learning Path - 8 Modules|
+|![Security and compliance training icon.](../media/microsoft-365-security-and-compliance-capabilities.svg)|Learn about the Microsoft 365 security and compliance solutions areas and the capabilities available to help enterprises secure their enterprise and meet regulatory requirements. If you're unfamiliar with basic cloud computing concepts, we recommend you take [Cloud Concepts - Principles of cloud computing](/training/modules/principles-cloud-computing/index).<br><br>3 hr 11 min - Learning Path - 8 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/what-is-m365/1-introduction/)
+> [Start >](/training/modules/what-is-m365/1-introduction/)
 
 ## Illustrations
 

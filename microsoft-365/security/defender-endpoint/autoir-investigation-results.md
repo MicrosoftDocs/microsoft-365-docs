@@ -10,13 +10,14 @@ f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.custom: 
 - autoir
@@ -75,7 +76,9 @@ Use the investigation details view to see past, current, and pending activity pe
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
 > [!NOTE]
-> The specific tabs you see in an investigation details page depends on what your subscription includes. For example, if your subscription does not include Microsoft Defender for Office 365 Plan 2, you won't see a **Mailboxes** tab.
+> - The specific tabs you see in an investigation details page depends on what your subscription includes. For example, if your subscription does not include Microsoft Defender for Office 365 Plan 2, you won't see a **Mailboxes** tab.
+>
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 |Tab|Description|
 |---|---|

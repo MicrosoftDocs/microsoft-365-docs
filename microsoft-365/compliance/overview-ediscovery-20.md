@@ -1,9 +1,10 @@
 ---
 title: "Overview of the eDiscovery (Premium) solution in Microsoft Purview"
+description: "Learn about the eDiscovery (Premium) solution in Microsoft Purview. This article provides an overview of eDiscovery (Premium) in Microsoft Purview, a tool to help you manage internal and external investigations. It also frames the business reasons for using eDiscovery (Premium) to manage your legal investigations."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 07/08/2022
 audience: Admin
@@ -11,20 +12,23 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-aed
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: "Learn about the eDiscovery (Premium) solution in Microsoft Purview. This article provides an overview of eDiscovery (Premium) in Microsoft Purview, a tool to help you manage internal and external investigations. It also frames the business reasons for using eDiscovery (Premium) to manage your legal investigations."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Overview of Microsoft Purview eDiscovery (Premium)
 
 The Microsoft Purview eDiscovery (Premium) solution builds on the existing Microsoft eDiscovery and analytics capabilities. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## eDiscovery (Premium) capabilities
 
@@ -118,4 +122,4 @@ Here's an eDiscovery (Premium) architecture diagram that shows the end-to-end wo
 
 ## Training
 
-Training your IT administrators, eDiscovery managers, and compliance investigation teams in the basics for eDiscovery (Premium) can help your organization get started more quickly using Microsoft 365 eDiscovery tools. Microsoft 365 provides the following resource to help these users in your organization getting started with eDiscovery: [Describe the eDiscovery and audit capabilities of Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+Training your IT administrators, eDiscovery managers, and compliance investigation teams in the basics for eDiscovery (Premium) can help your organization get started more quickly using Microsoft 365 eDiscovery tools. Microsoft 365 provides the following resource to help these users in your organization getting started with eDiscovery: [Describe the eDiscovery and audit capabilities of Microsoft 365](/training/modules/describe-ediscovery-capabilities-of-microsoft-365).

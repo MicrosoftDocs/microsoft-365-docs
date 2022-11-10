@@ -5,17 +5,17 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/12/2022
+ms.date: 10/14/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- m365-security
 - m365initiative-defender-office365
 ms.custom: 
-description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can now get a 360-degree view of each email with email entity page.
+description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can see email details in Explorer (Threat Explorer) including the email headers for copy, Detection details, Threat detected, Latest and Original deliver locations, Delivery actions, and IDs like Network Message ID and more.
 search.appverid: met150
 ---
 
@@ -28,27 +28,32 @@ search.appverid: met150
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **In this article:**
-- [Reach the email entity page](#reach-the-email-entity-page)
-- [Read the email entity page](#read-the-email-entity-page)
-- [Use email entity page tabs](#use-email-entity-page-tabs)
-- [New to the email entity page](#new-to-the-email-entity-page)
+- [Reach the email entity page](#how-to-get-to-the-email-entity-page)
+- [Read the email entity page](#how-to-read-the-email-entity-page)
+- [Use email entity page tabs](#how-to-use-the-email-entity-page-tabs)
+- [New to the email entity page](#available-on-the-email-entity-page)
 
 Admins of Microsoft Defender for Office 365 E5, and Defender for Office P1 and P2 have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered on the [Threat Explorer 'email details' fly-out](threat-explorer-views.md).
 
-## Reach the email entity page
+See email details in Explorer / Threat Explorer including the email headers *with the option to copy*, Detection details, Threat detected, Latest and Original deliver locations, Delivery actions, and IDs like Network Message ID and more.
 
-The email entity page is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+## How to get to the email entity page
 
-In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
+Navigate to the Microsoft 365 Defender portal at <https://security.microsoft.com>, **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="The gold banner with the words *Try out our new email entity page with enriched data* to navigate to the new experience" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
+1. In **Explorer**, select the subject of an email you're investigating.
+1. The email fly-out for that mail will open.
+1. You'll see **Open email entity**.
+1. Select it for your email deep dive.
+
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="With the email selected, you'll get a fly out with details, and Open entity page for the email at the top." lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="The graphic of the email entity page that focuses on headings that you'll see" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
 > The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-## Read the email entity page
+## How to read the email entity page
 
 The structure is designed to be easy to read and navigate through at a glance. Various tabs along the top of the page allow you to investigate in more detail. Here's how the layout works:
 
@@ -64,7 +69,7 @@ The structure is designed to be easy to read and navigate through at a glance. V
 
     :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="The main panel of the page which includes the email header and authentication status" lightbox="../../media/email-entities-4-middle-panel.png":::
 
-### Use email entity page tabs
+### How to use the email entity page tabs
 
 The tabs along the top of the entity page will allow you to investigate email efficiently.
 
@@ -74,9 +79,9 @@ The tabs along the top of the entity page will allow you to investigate email ef
 4. **URLs**: This tab lists URLs found in the email with other details about the URLs. The number of URLs is limited to 10 right now, but these 10 are prioritized to show *malicious URLs first*. Prioritization saves you time and guess-work. The URLs that were found to be malicious and detonated will also be shown here.
 5. **Similar emails**: This tab lists all emails similar to the *network message id + recipient* combination specific to this email. Similarity is based on the *body of the message*, only. The determinations made on mails to categorize them as 'similar' don't include a consideration of *attachments*.
 
-## New to the email entity page
+## Available on the email entity page
 
-There are new capabilities that come with this email entity page. Here's the list.
+Here are some helpful specifics to get started.
 
 ### Email preview for Cloud mailboxes
 
@@ -105,7 +110,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="The detonation summary showing the chain, summary, detonation details, and screenshot under the heading *Deep Analysis*" lightbox="../../media/email-entities-6-detonation-page.png":::
 
-### Other innovations
+### Other features that make the Email entity page helpful
 
 *Tags*: These are tags applied to users. If the user is a recipient, admins will see a *recipient* tag. Likewise, if the user is a sender, a *sender* tag. This will appear in the left side of the email entities page (in the part that's described as *sticky* and, thus, anchored to the page).
 
@@ -162,7 +167,8 @@ Users will see enriched detonation details for known malicious attachments or UR
   - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
 
 *Composite Authentication*: This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
-## Actions into Email entity Page
+
+## Actions you can take on the Email entity Page
 
 Security teams can now take email actions like soft delete and hard delete, move to junk, move to inbox, trigger an investigation, submit to Microsoft for review in line, and et cetera. **Tenant level block** actions like file and URL or sender can also be triggered from the Email entity page.  
 
@@ -179,7 +185,7 @@ We are also bringing Tenant level block URL and attachment to the respective Ema
 See [permissions](permissions-microsoft-365-security-center.md) required to take these actions. 
 
  
-### Email summary panel
+### The Email summary panel
 
 The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (for example, detections), as well as context-specific information (for example, for Quarantine or Submissions metadata). The email summary panel replaces the traditional Real-time Detections, Threat Explorer, Submissions, and Reporting flyouts.
 

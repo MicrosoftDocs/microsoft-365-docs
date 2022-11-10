@@ -17,9 +17,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
-ms.topic: article
+  - tier1
+ms.topic: conceptual
 ---
 
 # Learn the advanced hunting query language

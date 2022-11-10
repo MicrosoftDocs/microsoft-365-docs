@@ -1,9 +1,10 @@
 ---
 title: "Commit a draft collection to a review set"
+description: "After you create and iterate on a draft collection, you can commit it to a review set. When you commit a draft collection, the collected items are added to review set in the case. After the collected items are in the review set, you can analyze, review, and export them."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 
@@ -11,16 +12,20 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "After you create and iterate on a draft collection, you can commit it to a review set. When you commit a draft collection, the collected items are added to review set in the case. After the collected items are in the review set, you can analyze, review, and export them."
 ---
 
 # Commit a draft collection to a review set in eDiscovery (Premium)
 
 When you're satisfied with the items you've collected in a draft collection and are ready to analyze, tag, and review them, you can add a collection to a review set in the case. When you commit a draft collection to a review set, collected items are copied from their original content location in Microsoft 365 to a review set. A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Commit a draft collection to a review set
 
