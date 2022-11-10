@@ -158,6 +158,7 @@ Security intelligence update version: 1.373.1647.0 <br/>
 
 ### What's new
 
+- Starting with platform version 4.18.2207.7, the default behavior of dynamic signature expiration reporting changes to reduce potential 2011 event notification flooding. See: **Event ID: 2011** in [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 - Fixed Unified agent installer issues on WS2012R2 Server and Windows Server 2016
 - Fixed remediation issue for custom detection
 - Fixed Race condition related to behavior monitoring
