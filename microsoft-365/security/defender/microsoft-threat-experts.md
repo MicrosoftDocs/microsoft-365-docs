@@ -51,7 +51,7 @@ Once your application is approved, you'll start receiving endpoint attack notifi
 ## Subscribe to Microsoft Defender Experts - Experts on Demand
 
 > [!NOTE]
-> Experts on Demand is not a security incident response service. It’s intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
+> Experts on Demand is not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 Contact your Microsoft representative to subscribe to Experts on Demand.  See [Configure Microsoft Defender Experts capabilities](./configure-microsoft-threat-experts.md) for full details.
 
