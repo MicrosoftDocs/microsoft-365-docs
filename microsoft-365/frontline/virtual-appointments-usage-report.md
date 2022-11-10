@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Microsoft Teams Virtual Appointments usage report
 
-![Information icon](media/info.png) This feature is temporarily available as preview for all customers. To get this feature after the preview, each user will need a [Teams Premium]() license or a Teams EHR connector license.
+![Information icon](media/info.png) **This feature is temporarily available as preview for all customers. To get this feature after the preview, each user will need a [Teams Premium]() license or a Teams EHR connector license.**
 
 [![Information icon](media/info.png) **This feature is moving to [Teams Premium]() (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required.**]
 
