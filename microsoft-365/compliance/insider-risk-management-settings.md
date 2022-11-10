@@ -39,6 +39,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Microsoft Teams (preview)](#microsoft-teams-preview)
 - [Analytics](#analytics)
 - [Admin notifications](#admin-notifications)
+- [Inline alert customization](#inline-alert-customization)
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
 
@@ -73,10 +74,11 @@ Policy indicators are segmented into the following areas. You can choose the ind
 
 - **Office indicators**: These include policy indicators for SharePoint sites, Microsoft Teams, and email messaging.
 - **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activities involving all file types, excluding executable (.exe) and dynamic link library (.dll) file activity. If you select *Device indicators*, activity is processed for devices with Windows 10 Build 1809 or higher and macOS (three latest released versions) devices. For both Windows and macOS devices, you must first onboard devices to the compliance portal. Device indicators also include browser signal detection to help your organization detect and act on exfiltration signals for non-executable files viewed, copied, shared, or printed in Microsoft Edge and Google Chrome. For more information on configuring Windows devices for integration with insider risk, see the following [Enable device indicators and onboard Windows devices](insider-risk-management-settings.md#OnboardDevices) section in this article. For more information on configuring macOS devices for integration with insider risk, see the following Enable device indicators and onboard macOS devices section in this article. For more information about browser signal detection, see [Learn about and configure insider risk management browser signal detection](insider-risk-management-browser-support.md).
-- **Security policy violation indicator (preview)**: These include indicators from Microsoft Defender for Endpoint related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Defender for Endpoint license and insider risk integration enabled. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
-- **Health record access indicators (preview)**: These include policy indicators for patient medical record access. For example, attempted access to patient medical records in your electronic medical records (EMR) system logs can be shared with insider risk management healthcare policies. To receive these types of alerts in insider risk management, you must have a healthcare-specific data connector and the HR data connector configured.
-- **Physical access indicators (preview)**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn more about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
+- **Microsoft Defender for Endpoint indicators (preview)**: These include indicators from Microsoft Defender for Endpoint related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Defender for Endpoint license and insider risk integration enabled. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
+- **Risky browsing indicators (preview)**: These include policy indicators for user browsing activity related to websites that are considered malicious or risky and pose potential insider risk that may lead to a security or compliance incident. Risky browsing activity refers to users who visit potentially risky websites, such as those associated with malware, pornography, violence, and other unallowed activities. To include these risk management activities in policy alerts, select one or more indicators in this section. To learn about configuring browser exfiltration signals, see [Insider risk management browser signal detection](insider-risk-management-browser-support.md).
+- **Physical access indicators (preview)**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
 - **Microsoft Defender for Cloud Apps indicators (preview)**: These include policy indicators from shared alerts from Defender for Cloud Apps. Automatically enabled anomaly detection in Defender for Cloud Apps immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these risk management activities in policy alerts, select one or more indicators in this section. To learn more about Defender for Cloud Apps analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
+- **Health record access indicators**: These include policy indicators for patient medical record access. For example, attempted access to patient medical records in your electronic medical records (EMR) system logs can be shared with insider risk management healthcare policies. To receive these types of alerts in insider risk management, you must have a healthcare-specific data connector and the HR data connector configured.
 - **Risk score boosters**: These include raising the risk score for potentially risky activity that is above what is typical or for users with previous cases resolved as a policy violation. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. For risk management activity that is above what is typical, scores are boosted if the detected potentially risky activity deviates from activities that are considered compliant. For users with previous cases resolved as a policy violation, scores are boosted if a user had more than one case previously resolved as a confirmed policy violation. Risk score boosters can only be selected if one or more indicators are selected.
 
 In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies in global settings. Triggering events can only be modified for policies created from the *Data leaks* or *Data leaks by priority users* templates. Policies created from all other templates don't have customizable triggering indicators or events.
@@ -157,7 +159,7 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 
 macOS devices (Catalina 10.15 or later) can be onboarded into Microsoft 365 to support insider risk management policies using either Intune or JAMF Pro. For more information and configuration guidance, see [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md).
 
-### Indicator level settings (preview)
+### Indicator level settings
 
 When creating a policy using the policy wizard, you can configure how the daily number of risk events should influence the risk score for insider risk alerts. These indicator settings help you control how the number of occurrences of risk events in your organization should affect the risk score, and so the associated alert severity, for these events. If you prefer, you can also choose to keep the default event threshold levels recommended by Microsoft for all enabled indicators.
 
@@ -342,7 +344,7 @@ To delete a standalone keyword to exclude, complete the following steps:
 
 Insider risk management alert information is exportable to security information and event management (SIEM) and security orchestration automated response (SOAR) solutions by using the [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema). You can use the Office 365 Management Activity APIs to export alert information to other applications your organization may use to manage or aggregate insider risk information. Alert information is exported and available every 60 minutes via the Office 365 Management Activity APIs.
 
-If your organization uses Microsoft Sentinel, you can also use the out-of-the-box insider risk management data connector to import insider risk alert information to Sentinel. For more information, see [Insider Risk Management (IRM) (Preview)](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview) in the Microsoft Sentinel article.
+If your organization uses Microsoft Sentinel, you can also use the out-of-the-box insider risk management data connector to import insider risk alert information to Sentinel. For more information, see [Insider Risk Management (IRM) (preview)](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview) in the Microsoft Sentinel article.
 
 > [!IMPORTANT]
 > To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts. Exported alerts will display usernames for each alert.
@@ -699,8 +701,10 @@ If you prefer to disable admin and analytics notifications, complete the followi
     - **Send an email notification when Analytics is turned off**
 
 4. Select **Save** to configure and exit.
+ 
+![Insider risk management priority admin notifications.](../media/insider-risk-settings-admin-notifications.png)
 
-## Inline alert customization (preview)
+## Inline alert customization
 
 Inline alert customization allows you to quickly tune an insider risk management policy directly from the **Alert dashboard** while reviewing the alert. Alerts are generated when a risk management activity meets the thresholds configured in the related policy. To reduce the number of alerts you get from this type of activity, you can change the thresholds or remove the risk management activity from the policy altogether.
 
@@ -709,7 +713,7 @@ You can enable inline alert customization to allow users assigned to the *Inside
 Complete the following steps to enable inline alert customization:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
-2. Select the **Inline alert customization (preview)** page.
+2. Select the **Inline alert customization** page.
 3. Enable inline alert customization for insider risk management.
 4. Select **Save** to configure and exit.
 
@@ -728,3 +732,5 @@ After choosing an option, analysts and investigators can choose two options to u
 
 - **Save and dismiss alert**: Saves the changes to the policy and updates the alert status to *Resolved*.
 - **Save only**: Saves the changes to the policy, but the alert status remains the same.
+
+![Insider risk management priority inline alerts.](../media/insider-risk-settings-inline-alerts.png)
