@@ -175,7 +175,7 @@ When an app is restricted, the following notification is displayed to inform the
 :::image type="content" source="images/atp-app-restriction.png" alt-text="The application restriction message" lightbox="images/atp-app-restriction.png":::
 
 >[!NOTE]
->The notification is not available on Windows Server 2016 and Windows Server 2012 R2, and non-Windows platforms.
+>The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
 
 ## Isolate devices from the network
 
@@ -216,6 +216,10 @@ Once you have selected **Isolate device** on the device page, type a comment and
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="images/atp-notification-isolate.png":::
+
+
+>[!NOTE]
+>The notification is not available on non-Windows platforms.
 
 ## Contain devices from the network
  
