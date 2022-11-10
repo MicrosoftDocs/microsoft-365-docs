@@ -174,8 +174,8 @@ When an app is restricted, the following notification is displayed to inform the
 
 :::image type="content" source="images/atp-app-restriction.png" alt-text="The application restriction message" lightbox="images/atp-app-restriction.png":::
 
-> [!NOTE]
-> The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
+>[!NOTE]
+>The notification is not available on Windows Server 2016 and Windows Server 2012 R2, and non-Windows platforms.
 
 ## Isolate devices from the network
 
