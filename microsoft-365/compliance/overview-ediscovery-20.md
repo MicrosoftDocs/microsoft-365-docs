@@ -108,6 +108,10 @@ There are two quick and easy steps to get started with eDiscovery (Premium).
 |[Create and manage cases](create-and-manage-advanced-ediscoveryv2-case.md) | Create cases to manage the eDiscovery (Premium) workflow for all legal and other types of investigations in your organization.|
 |||
 
+## Integration with Insider Risk Management
+
+Cases in [Microsoft Purview Insider Risk Management](/microsoft-365/compliance/insider-risk-management) can be quickly escalated to new cases in Microsoft Purview eDiscovery (Premium) when additional legal review is needed for potentially risky user activity. The tight integration between these solutions can help your risk and legal teams work more efficiently and can help provide a complete end-to-end view of user activities under review. Check out how to [get started with Insider Risk Management](/microsoft-365/compliance/insider-risk-management-configure) and how to easily [escalate an Insider Risk Management case](/microsoft-365/compliance/insider-risk-management-cases#escalate-for-investigation) to an eDiscovery (Premium) case.
+
 ## eDiscovery (Premium) architecture
 
 Here's an eDiscovery (Premium) architecture diagram that shows the end-to-end workflow in a single-geo environment and in a multi-geo environment, and the end-to-end data flow that's aligned with the [EDRM](#ediscovery-premium-alignment-with-the-electronic-discovery-reference-model).

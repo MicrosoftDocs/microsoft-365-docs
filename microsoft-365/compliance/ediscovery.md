@@ -88,7 +88,7 @@ Here's a description of each eDiscovery capability.
 
 - **Role-based permissions**. Use role-based access control (RBAC) permissions to control what eDiscovery-related tasks that different users can perform. You can use a built-in eDiscovery-related role group or create custom role groups that assign specific eDiscovery permissions.
 
-- **Case management**. eDiscovery cases in eDiscovery (Standard) and eDiscovery (Premium) let you associate specific searches and exports with a specific investigation. You can also assign members to a case to control who can access the case and view the contents of the case.
+- **Case management**. eDiscovery cases in eDiscovery (Standard) and eDiscovery (Premium) let you associate specific searches and exports with a specific investigation. You can also assign members to a case to control who can access the case and view the contents of the case. eDiscovery (Premium) also supports new case creation integration with [Microsoft Purview Insider Risk Management](/microsoft-365/compliance/insider-risk-management) cases.
 
 - **Place content locations on legal hold**. Preserve content relevant to your investigation by placing a legal hold on the content locations in a case. This lets you secure electronically stored information from inadvertent (or intentional) deletion during your investigation.
 
@@ -179,6 +179,10 @@ See the following articles to help you learn more and get started using Microsof
 - [Overview of eDiscovery (Premium)](overview-ediscovery-20.md)
 - [Set up eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
 - [Create and manage an eDiscovery (Premium) case](create-and-manage-advanced-ediscoveryv2-case.md)
+
+## Integration with Insider Risk Management
+
+Cases in [Microsoft Purview Insider Risk Management](/microsoft-365/compliance/insider-risk-management) can be quickly escalated to new cases in Microsoft Purview eDiscovery (Premium) when additional legal review is needed for potentially risky user activity. The tight integration between these solutions can help your risk and legal teams work more efficiently and can help provide a complete end-to-end view of user activities under review. Check out how to [get started with Insider Risk Management](/microsoft-365/compliance/insider-risk-management-configure) and how to easily [escalate an Insider Risk Management case](/microsoft-365/compliance/insider-risk-management-cases#escalate-for-investigation) to an eDiscovery (Premium) case.
 
 ## eDiscovery roadmap
 
