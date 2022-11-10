@@ -27,7 +27,7 @@ ms.custom: seo-marvel-apr2020
 
 [![Information icon](media/info.png) **This feature is moving to [Teams Premium]() (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required.**]
 
-The Virtual Appointments usage report in the Microsoft Teams admin center gives you an overview of Teams Virtual Appointments activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](bookings-virtual-visits.md) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
+The Virtual Appointments usage report in the Microsoft Teams admin center gives you an overview of Teams Virtual Appointments activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](bookings-virtual-appointments.md) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
 
 To view the report, you must be a global admin, Teams admin, Global reader, or Report reader.
 
@@ -79,7 +79,7 @@ Here's what you'll see on each tab of the report.
 The graphs you'll see here depend on the license you have. To learn more, see [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json), and [Integration into Cerner EHR](ehr-admin-cerner.md) or [Integration into Epic EHR](ehr-admin-epic.md).
 
 [NEED NEW SCREENSHOT]<br>
-:::image type="content" source="media/virtual-visits-usage-report-virtual-visits.png" alt-text="Screenshot of the Virtual Visits tab of the Virtual Visits usage report showing numbered callouts." lightbox="media/virtual-visits-usage-report-virtual-visits.png":::
+:::image type="content" source="media/va-usage-report-virtual-appointments.png" alt-text="Screenshot of the Virtual Appointments tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/va-usage-report-virtual-appointments.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -93,7 +93,7 @@ The graphs you'll see here depend on the license you have. To learn more, see [M
 ### Duration
 
 [NEED NEW SCREENSHOT]
-:::image type="content" source="media/virtual-visits-usage-report-duration.png" alt-text="Screenshot of the Duration tab of the Virtual Visits usage report showing numbered callouts." lightbox="media/virtual-visits-usage-report-duration.png":::
+:::image type="content" source="media/va-usage-report-duration.png" alt-text="Screenshot of the Duration tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/va-usage-report-duration.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -109,7 +109,7 @@ The graphs you'll see here depend on the license you have. To learn more, see [M
 You'll see this tab if you have a license that includes the Bookings app. To learn more, see [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 [NEED NEW SCREENSHOT]
-:::image type="content" source="media/virtual-visits-usage-report-bookings.png" alt-text="Screenshot of the Bookings tab of the Virtual Visits usage report showing numbered callouts." lightbox="media/virtual-visits-usage-report-bookings.png":::
+:::image type="content" source="media/va-usage-report-bookings.png" alt-text="Screenshot of the Bookings tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/va-usage-report-bookings.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -124,7 +124,7 @@ You'll see this tab if you have a license that includes the Bookings app. To lea
 You'll see this tab if you have a license that includes the Teams EHR connector. To learn more, see [Integration into Cerner EHR](ehr-admin-cerner.md) or [Integration into Epic EHR](ehr-admin-epic.md).
 
 [NEED NEW SCREENSHOT]
-:::image type="content" source="media/virtual-visits-usage-report-ehr.png" alt-text="Screenshot of the EHR tab of the Virtual Visits usage report showing numbered callouts." lightbox="media/virtual-visits-usage-report-ehr.png":::
+:::image type="content" source="media/va-usage-report-ehr.png" alt-text="Screenshot of the EHR tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/va-usage-report-ehr.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -137,7 +137,7 @@ You'll see this tab if you have a license that includes the Teams EHR connector.
 ## Related articles
 
 - [Teams Virtual Appointments active user report](virtual-appointments-active-user-report.md)
-- [Virtual Appointments with Teams and the Bookings app](bookings-virtual-visits.md)
+- [Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
 - [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
 - [Teams Premium]()
