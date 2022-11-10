@@ -40,7 +40,7 @@ Use the device inventory page in Microsoft Defender for Endpoint to get a compre
 
 ## 2. Onboard newly discovered devices
 
-With the device inventory providing a clear view into newly discovered devices that are not yet protected you can set about onboarding unmanaged devices in your network to Defender for Endpoint.
+With the device inventory providing a clear view into newly discovered devices that are not yet protected you can start onboarding unmanaged devices in your network to Defender for Endpoint.
 
 At the top of each device inventory tab, you can see the total number of devices that are not onboarded:
 
@@ -52,9 +52,9 @@ To learn more about on how to onboard your devices using this security recommend
 
 ## 3. Assign device value
 
-Every device can potentially pose a risk to your organization but the impact of some devices being compromised compared to others can vary.  You might have devices that belong to people who have access to sensitive, proprietary, or high priority information meaning the impact of these devices being compromised could be high. In contrast, devices that are only used for internet access with no data could be classified as having a lower risk.
+Every device can potentially pose a risk to your organization but the impact of some devices being compromised compared to others can vary.  You might have devices that belong to people who have access to sensitive, proprietary, or high priority information meaning the impact could be high if these devices are compromised. In contrast, devices that are only used for internet access with no data could be classified as having a lower risk.
 
-Identifying and assigning values to your devices can help identify how vulnerable your organization is to cyber security threats. How you see you how assets affect your vulnerability is in your exposure score in the Microsoft Defender 365 portal. Devices assigned as "high value" will receive more weight meaning your score will be higher.
+Identifying and assigning value to your devices can help identify how vulnerable your organization is to cyber security threats. How assets affect your vulnerability is in reflected in your exposure score in the Microsoft Defender 365 portal. Devices assigned as "high value" will receive more weight meaning your score will be higher.
 
 To learn more and get started with assigning values to your devices, see [Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md)
 
