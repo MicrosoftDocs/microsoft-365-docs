@@ -32,7 +32,7 @@ Microsoft 365 Defender provides many capabilities to discover and protect the de
 
 1. [Configure device discovery](#1-configure-device-discovery)
 2. [Configure ASR in audit mode](#2-configure-asr-in-audit-mode)
-3. [Check your mail routing configuration](#3-configure-microsoft-defender-for-identity)
+3. [Configure Microsoft Defender for Identity](#3-configure-microsoft-defender-for-identity)
 
 Each section contains links to more detailed information on how you can get started with these capabilities.
 
@@ -54,4 +54,4 @@ Use [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-
 
 ## Next step
 
-- Proceed to [Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md).
+- Proceed to [Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md)
