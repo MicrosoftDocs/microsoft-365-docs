@@ -62,9 +62,9 @@ The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterp
 
 ### Provision users
 
-Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Azure AD](/azure/active-directory/roles/permissions-reference).
+Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses. Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Azure AD](/azure/active-directory/roles/permissions-reference).
 
-In this step, you'll create user identities in Azure AD. You can import users in three ways:
+In this step, you'll create user identities for your frontline workers in Azure AD. You can import users in three ways:
 
 - **Integrate Azure AD with an existing Active Directory instance:** [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites) replicates Active Directory user accounts to Azure AD, allowing a user to have a single identity capable of accessing both local and cloud-based resources.
 - **Integrate Azure AD with a third-party identity solution:** Azure AD supports integration with some third-party providers through federation.
@@ -119,26 +119,28 @@ Registering devices in Azure AD creates a unique identity that can be used to se
 
 **iOS:** Not currently available.
 
-### Bring-your-own device enrollment with Intune
+### BYOD device enrollment with Intune
 
 - [Windows](/mem/intune/enrollment/windows-enrollment-methods#user-self-enrollment-in-intune)
 - [Android](/mem/intune/enrollment/android-work-profile-enroll)
 - [iOS](/mem/intune/enrollment/ios-enroll#user-owned-iosipados-and-ipados-devices-byod)
 
-### Configuring devices for shared device mode (SDM) with third-party mobile device managers
+### Configuring devices for shared device mode with third-party mobile device management
 
-Zero-touch provisioning of SDM isn’t currently supported by third-party mobile device managers (MDMs). However, you can [manually configure SDM](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode) for Android and iOS devices managed in third-party MDMs.
+Zero-touch provisioning of shared device mode isn’t currently supported by third-party mobile device management(MDM) solutions. However, you can [manually configure shared device mode](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode) for Android and iOS devices managed in third-party MDM solutions.
 
 > [!NOTE]
-> While these steps register the device in Azure AD, they don't connect Azure AD to the MDM. Conditional access won't be available for these devices.
+> While these steps register the device in Azure AD, they don't connect Azure AD to the MDM solution. Conditional access won't be available for these devices.
 
 [Learn more about configuration with VMware Workspace ONE](https://docs.vmware.com/VMware-Workspace-ONE-UEM/2011/Android_Platform/GUID-AWT-SHAREDDEVICESOVERVIEW.html) and [SOTI](https://www.soti.net/mc/help/v15.0/console/configurations/advancedconfigurations/shareddevice/shareddevice.html).
 
-If you choose to manually configure devices in SDM, you’ll need to take more steps to re-enroll Android devices in SDM when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
+If you choose to manually configure devices in shared device mode, you’ll need to take more steps to re-enroll Android devices in shared device mode when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
 
 To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Manage mobile devices for frontline workers](flw-devices.md).
 
 ## Step 5: Set up other services
+
+Depending on your scenarios, you'll need to configure additional Microsoft 365 services, such as Exchange and Outlook for email or Microsoft Viva to expand your employee experience. Read on for information about each service.
 
 ### Set up email with Exchange Online
 
