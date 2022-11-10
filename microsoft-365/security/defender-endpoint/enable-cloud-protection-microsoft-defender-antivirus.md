@@ -51,7 +51,7 @@ For more information about the specific network-connectivity requirements to ens
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
-2. On the **Home** pane, select **Devices**> **Configuration Profiles**.
+2. On the **Home** pane, select **Devices** > **Configuration Profiles**.
 
 3. Select the **Device restrictions** profile type you want to configure. If you need to create a new **Device restrictions** profile type, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 
