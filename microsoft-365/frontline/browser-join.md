@@ -120,7 +120,7 @@ To use captions, a staff member must first turn on live captions in Teams. Then,
 
 To turn on live captions, in the meeting controls in Teams, go to **More** (**...**) > **Turn on live captions**. Captions are only visible for attendees who turn them on and are permanently deleted when the appointment is over.
 
-Staff members can also change the language of the captions. The default language is English (US). The language that's set applies to everyone who has captions turned on in the appointment.
+Staff members can change the language of the captions. The default language is English (US). To the right of the captions, go to **Captions settings** (**...**) > **Change spoken language**, and then select the language spoken during the appointment.  The language that's set applies to everyone who has captions turned on in the appointment. Captions aren't translated.
 
 ### Joining appointments configured with Teams Premium protected meetings features
 
