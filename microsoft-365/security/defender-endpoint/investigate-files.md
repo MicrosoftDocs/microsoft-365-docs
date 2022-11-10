@@ -79,7 +79,7 @@ The file prevalence card shows where the file was seen in devices in the organiz
 
 ## Incidents and alerts
 
-The **Incidents and alerts** tab provides a list of incidents that are associated with the file, as well as the alerts  the file is linked to. This list covers much of the same information as the incidents queue. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
+The **Incidents and alerts** tab provides a list of incidents that are associated with the file, as well as the alerts the file is linked to. This list covers much of the same information as the incidents queue. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
 
 ![Screenshot showing incidents and alerts.](https://user-images.githubusercontent.com/96785904/200527005-1fd139dc-7483-4e4c-83ad-855cd198f153.png)
 
