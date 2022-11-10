@@ -55,7 +55,7 @@ For more information about the specific network-connectivity requirements to ens
 
 3. Select the **Device restrictions** profile type you want to configure. If you need to create a new **Device restrictions** profile type, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 
-4. In the **Properties** section Click on **Edit** next to **Configuration settings** and click on **Microsoft Defender Antivirus**.
+4. In the **Properties** section, select **Edit** next to **Configuration settings** and then select **Microsoft Defender Antivirus**.
 
 5. On the **Cloud-delivered protection** switch, select **Enable**.
 
