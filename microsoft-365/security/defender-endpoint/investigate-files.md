@@ -113,7 +113,6 @@ The **Action center** displays the action center filtered on a specific file, so
 
 ![Screenshot showing the action center](https://user-images.githubusercontent.com/96785904/200527287-0c09dd24-6192-4a7d-990a-824d35b97460.png)
 
-
 ## Related topics
 
 - [View and organize the Microsoft Defender for Endpoint queue](alerts-queue.md)
