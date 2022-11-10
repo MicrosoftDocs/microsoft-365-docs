@@ -28,11 +28,13 @@ ms.collection:
 
 Welcome to **Phase 1: Configure capabilities** in our **[Strengthen your security posture](/security-posture-solution-overview.md)** solution.
 
-Microsoft 365 Defender provides many capabilities to discover and protect the devices in your organization against threats. This article describe these capabilities and provide links to more information on how to get started with configuring these capabilities:
+Microsoft 365 Defender provides many capabilities to discover and protect the devices in your organization against threats. This article includes information on the following capabilities you can configure:
 
 1. [Configure device discovery](#1-configure-device-discovery)
 2. [Configure ASR in audit mode](#2-configure-asr-in-audit-mode)
 3. [Check your mail routing configuration](#3-configure-microsoft-defender-for-identity)
+
+Each section contains links to more detailed information on how you can get started with these capabilities.
 
 ## 1. Configure device discovery
 
