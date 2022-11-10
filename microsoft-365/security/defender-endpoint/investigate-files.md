@@ -74,14 +74,14 @@ The file prevalence card shows where the file was seen in devices in the organiz
 > Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the RBAC scope that a user has. Meaning, if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
 
 
-![image](https://user-images.githubusercontent.com/96785904/200525998-e11576f7-e495-4d16-98fb-940d8bd9a0d6.png)
+![Screenshot showing file prevalence.](https://user-images.githubusercontent.com/96785904/200525998-e11576f7-e495-4d16-98fb-940d8bd9a0d6.png)
 
 
 ## Incidents and alerts
 
 The **Incidents and alerts** tab provides a list of incidents that are associated with the file, as well as the alerts  the file is linked to. This list covers much of the same information as the incidents queue. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
 
-![image](https://user-images.githubusercontent.com/96785904/200527005-1fd139dc-7483-4e4c-83ad-855cd198f153.png)
+![Screenshot showing incidents and alerts.](https://user-images.githubusercontent.com/96785904/200527005-1fd139dc-7483-4e4c-83ad-855cd198f153.png)
 
 
 ## Observed in organization
@@ -111,7 +111,7 @@ The **File names** tab lists all names the file has been observed to use, within
 
 The **Action center** displays the action center filtered on a specific file, so you can see pending actions and the history of actions taken on the file.
 
-![image](https://user-images.githubusercontent.com/96785904/200527287-0c09dd24-6192-4a7d-990a-824d35b97460.png)
+![Screenshot showing the action center](https://user-images.githubusercontent.com/96785904/200527287-0c09dd24-6192-4a7d-990a-824d35b97460.png)
 
 
 ## Related topics
