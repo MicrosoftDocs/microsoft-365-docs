@@ -160,30 +160,10 @@ Use the [Set-PolicyConfig](/powershell/module/exchange/set-policyconfig) cmdlet 
 
 1. In a PowerShell session, [connect to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-2. Run the following set of commands:
+2. Run the following command:
     
     ```PowerShell
-    [CmdletBinding(SupportsShouldProcess = $True)]
-    Param(
-        [Parameter(Mandatory=$true)]
-        [switch] $EnableLabelCoauth,
-    )
-    $CurrentPolicyConfig = Get-PolicyConfig
-    if ($EnableLabelCoauth -ne $CurrentPolicyConfig.EnableLabelCoauth)
-    {
-        if ($CurrentPolicyConfig.EnableLabelCoauth)
-        {
-            if ($PSCmdlet.ShouldProcess("Are you sure you want to turn off co-authoring for your tenant, and understand that you might lose labeling information?"))
-            {
-                Set-PolicyConfig -EnableLabelCoauth:$false
-            }
-        }
-        else
-        {
-            Set-PolicyConfig -EnableLabelCoauth:$true -EnableSpoAipMigration:$true 
-        }
-    }
+    Set-PolicyConfig -EnableLabelCoauth:$false
     ```
 
-
-
+The command completes without a prompt or confirmation.
