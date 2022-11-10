@@ -237,7 +237,7 @@ Security intelligence update version: 1.369.88.0<br/>
 - Added AMSI disk usage limits for The History Store
 - Added fix for Defender service refusing to accept signature updates
 
-### Known Issues
+### Known issues
 
 No known issues
 
@@ -260,7 +260,7 @@ Security intelligence update version: 1.363.817.0<br/>
 
 - Resolves issues with high resource utilization (CPU and/or memory) related to the earlier March 2022 Microsoft Defender engine update (1.1.19100.5)
 
-### Known Issues
+### Known issues
 
 No known issues
 
@@ -285,7 +285,7 @@ Security intelligence update version: 1.361.1449.0<br/>
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities 
 - Added a fix for [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) getting disabled in some cases when using `SharedSignaturesPath` config. For more details about the `SharedSignaturesPath` parameter, see [Set-MpPreference](/powershell/module/defender/set-mppreference).
 
-### Known Issues
+### Known issues
 
 - Potential for high resource utilization (CPU and/or memory). See the Platform 4.18.2203.5 and Engine 1.1.19200.5 update for March 2022.
 
@@ -314,7 +314,7 @@ Security intelligence update version: 1.361.14.0 <br/>
 - Fixed VDI device update bug for network FileShares 
 - EDR in block mode now supports granular device targeting with new CSPs. See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).
 
-### Known Issues
+### Known issues
 
 No known issues
 
@@ -342,7 +342,7 @@ Security intelligence update version: 1.357.8.0 <br/>
 - Performance Analyzer v2 updates: Remote PowerShell and PowerShell 7.x support added. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 - Fixed potential duplicate packet bug in Microsoft Defender Antivirus network inspection system driver.
 
-### Known Issues
+### Known issues
 
 No known issues
 
@@ -371,7 +371,7 @@ Security intelligence update version: 1.355.2.0
    - Fixed performance recording session leak when using `New-MpPerformanceRecording` in PowerShell 7.x, remote sessions, and PowerShell ISE
 
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -394,7 +394,7 @@ Security intelligence update version: 1.353.3.0
 - Fix for alerts on blocked tampering attempts not appearing in Security Center
 - Improvements to tamper resilience in Microsoft Defender service
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -413,7 +413,7 @@ Security intelligence update version: 1.351.7.0
 - New delay ring for Microsoft Defender Antivirus engine and platform updates. Devices that opt into this ring will receive updates with a 48-hour delay. The new delay ring is suggested for critical environments only. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
 - Improvements to Microsoft Defender update gradual rollout process
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -432,7 +432,7 @@ No known issues
 - Microsoft Defender Antivirus hardened against the TrustedInstaller bypass
 - Extending file change notifications to include more data for Human-Operated Ransomware (HumOR)
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -450,7 +450,7 @@ No known issues
 - Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time
 - Improvements to the behavior monitoring engine
 
-### Known Issues
+### Known issues
 No known issues
 
 <br/>
@@ -469,7 +469,7 @@ No known issues
 - Improvements to the rollout of antimalware definitions
 - Extended Microsoft Edge network event inspections
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -485,7 +485,7 @@ No known issues
 - Improvements to [behavior monitoring](client-behavioral-blocking.md)
 - Fixed [network protection](network-protection.md) notification filtering feature
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -503,7 +503,7 @@ No known issues
 - Added new controls to manage the gradual rollout process for [Microsoft Defender updates](manage-gradual-rollout.md)
 
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -521,7 +521,7 @@ No known issues
 - Expanded network brute-force-attack mitigations
 - More failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
 
-### Known Issues
+### Known isues
 No known issues
 <br/>
 </details><details>
@@ -538,7 +538,7 @@ No known issues
 - Improved service recovery through [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 - Extend tamper protection scope
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -558,7 +558,7 @@ No known issues
 - Improved support for ARM x64 emulation
 - Fix: EDR Block notification remains in threat history after real-time protection performed initial detection
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -574,7 +574,7 @@ No known issues
 
 - Improved [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) status support logging
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -593,7 +593,7 @@ No known issues
 - Improved host address allow/block capabilities
 - New option in Defender CSP to Ignore merging of local user exclusions
 
-### Known Issues
+### Known issues
 
 No known issues
 <br/>
@@ -618,7 +618,7 @@ No known issues
 - Improved visibility into TPM measurements
 - Improved Office VBA module scanning
 
-### Known Issues
+### Known issues
 
 No known issues
 <br/>
@@ -642,7 +642,7 @@ No known issues
 - [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored. Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.
 
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -661,7 +661,7 @@ No known issues
 - Improved telemetry for BITS
 - Improved Authenticode code signing certificate validation
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -684,7 +684,7 @@ No known issues
 - Fixed registry query
 - Fixed scantime randomization in ADMX
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -707,7 +707,7 @@ No known issues
 - Fixed AMSI Cloud blocking
 - Fixed Security update install log
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -730,7 +730,7 @@ No known issues
 - UEFI scan capability
 - Extend logging for updates
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -752,7 +752,7 @@ No known issues
 - Extend AMSI engine internal log capability
 - Improve notification for process blocking
 
-### Known Issues
+### Known issues
 [**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.
 
 <br/>
@@ -772,7 +772,7 @@ No known issues
 ### What's new
 
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -795,7 +795,7 @@ Engine: **1.1.16700.2**<br/>
 - extend Emergency signature update to [passive mode](./microsoft-defender-antivirus-compatibility.md)
 - Fix 4.18.1911.3 hang
 
-### Known Issues
+### Known issues
 
 [**Fixed**] devices utilizing [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.
 <br/>
@@ -825,7 +825,7 @@ Support phase: **No support**<br/>
 - Improve notifications (PUA)
 - add MRT logs to support files
 
-### Known Issues
+### Known issues
 When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
 <br/>
 </details>
