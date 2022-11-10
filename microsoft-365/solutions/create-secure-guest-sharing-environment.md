@@ -147,9 +147,9 @@ It's important to note that for SharePoint and OneDrive locations, documents wil
 
 [Create an access review of groups or applications in Azure AD access reviews](/azure/active-directory/governance/create-access-review)
 
-## Set up web-only access for guests
+## Set up web-only access for guests with unmanaged devices
 
-You can require guests to access your teams, sites, and files by using a web browser only. This reduces the chance that they might download sensitive files and leave them on an unmanaged device. This is also useful when sharing with environments that use shared devices.
+If your guests use devices that are not managed by your organization or another organization that you have a trust relationship with, you can require them to access your teams, sites, and files by using a web browser only. This reduces the chance that they might download sensitive files and leave them on an unmanaged device. This is also useful when sharing with environments that use shared devices.
 
 For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
