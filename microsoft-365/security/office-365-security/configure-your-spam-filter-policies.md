@@ -158,7 +158,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
 
      |Action|Spam|High<br>confidence<br>spam|Phishing|High<br>confidence<br>phishing|Bulk|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.<sup>1</sup>|✔<sup>\*</sup>|✔<sup>\*</sup>|✔|✔|✔<sup>\*</sup>|
+     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.<sup>1</sup>|✔<sup>\*</sup>|✔<sup>\*</sup>|✔||✔<sup>\*</sup>|
      |**Add X-header**: Adds an X-header to the message header and delivers the message to the mailbox. <p> You enter the X-header field name (not the value) later in the **Add this X-header text** box. <p> For **Spam** and **High confidence spam** verdicts, the message is moved to the Junk Email folder.<sup>1,2</sup>|✔|✔|✔||✔|
      |**Prepend subject line with text**: Adds text to the beginning of the message's subject line. The message is delivered to the mailbox and moved to the Junk email folder.<sup>1,2</sup> <p> You enter the text later in the **Prefix subject line with this text** box.|✔|✔|✔||✔|
      |**Redirect message to email address**: Sends the message to other recipients instead of the intended recipients. <p> You specify the recipients later in the **Redirect to this email address** box.|✔|✔|✔|✔|✔|
@@ -217,7 +217,9 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
    >
    > Think very carefully before you add domains to the allowed domains list. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
    >
-   > Never add your own [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) or common domains (for example, microsoft.com or office.com) to the allowed domains list. If these domains are allowed to bypass spam filtering, attackers can easily send messages that spoof these trusted domains into your organization.
+   > As of September 2022, if an allowed sender, domain, or subdomain is in an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization, that sender, domain, or subdomain must pass [email authentication](email-validation-and-authentication.md) checks in order to skip anti-spam filtering.
+   >
+   > Never add common domains (for example, microsoft.com or office.com) to the allowed domains list. If these domains are allowed to bypass spam filtering, attackers can easily send messages that spoof these trusted domains into your organization.
    >
    > Manually blocking domains by adding the domains to the blocked domains list isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
    >

@@ -62,7 +62,7 @@ Need help updating your organization's devices? See the following resources:
 
 |OS|Resource|
 |---|---|
-|Windows|[Microsoft Update](https://www.update.microsoft.com)|
+|Windows|[Microsoft Update](/windows/deployment/update/how-windows-update-works)|
 |macOS|[How to update the software on your Mac](https://support.apple.com/HT201541)|
 |iOS|[Update your iPhone, iPad, or iPod touch](https://support.apple.com/HT204204)|
 |Android|[Check & update your Android version](https://support.google.com/android/answer/7680439)|

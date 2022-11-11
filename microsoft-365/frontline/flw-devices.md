@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 ms.reviewer: mabolan
 manager: samanro
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high

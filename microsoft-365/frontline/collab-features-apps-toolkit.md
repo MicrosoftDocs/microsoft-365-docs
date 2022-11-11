@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
 audience: ITPro
-ms.topic: article 
+ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 
 search.appverid: 
 searchScope:

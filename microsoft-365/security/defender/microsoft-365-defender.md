@@ -48,7 +48,7 @@ With the integrated Microsoft 365 Defender solution, security professionals can 
 </table>
 <br>
 
-Apart from these, Microsoft 365 Defender works closely with Azure Active Directory Identity Protection], App Governance, and Microsoft Data Loss Prevention to provide integrated protection against sophisticated attacks. 
+Apart from these, Microsoft 365 Defender works closely with Azure Active Directory Identity Protection, App Governance, and Microsoft Data Loss Prevention to provide integrated protection against sophisticated attacks. 
 
 ## Microsoft 365 Defender interactive guide
 

@@ -22,8 +22,8 @@
      items:
      - name: Try Defender for Office 365
        href: try-microsoft-defender-for-office-365.md
-     - name: Trial playbook for Defender for Office 365
-       href: trial-playbook-defender-for-office-365.md
+     - name: Trial User Guide for Defender for Office 365
+       href: trial-user-guide-defender-for-office-365.md
    - name: Deploy
      items:
      - name: Phase 1 - Email authentication
@@ -430,6 +430,8 @@
           href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
    - name: Reference
      items:
+     - name: Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals
+       href: permissions-in-the-security-and-compliance-center.md
      - name: Defender for Office 365 data retention
        href: mdo-data-retention.md
      - name: Policies and protections

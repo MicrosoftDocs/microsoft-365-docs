@@ -150,7 +150,7 @@ Follow the instructions in the blue teaching bubbles to construct your query. Se
 ## Try some queries
 
 ### Hunt for successful connections to specific IP
-To hunt for successful network communications to a specific IP address, start typing “ip” to get suggested filters:
+To hunt for successful network communications to a specific IP address, start typing "ip" to get suggested filters:
 
 ![Screenshot of guided mode query builder hunt for successful connections to specific IP first filter](../../media/guided-hunting/query-builder-hunt-ip.png)
 

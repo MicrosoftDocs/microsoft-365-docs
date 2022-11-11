@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 manager: samanro
 audience: ITPro
-ms.topic: article 
+ms.topic: how-to
 ms.service: microsoft-365-frontline 
 search.appverid: 
 searchScope:

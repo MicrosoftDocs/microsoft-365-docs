@@ -32,6 +32,39 @@ Having visual context is crucial for security teams during forensic investigatio
 - **Strong role-based access controls (RBAC)** mean that the ability to set up and review forensic clips is tightly controlled and only available to individuals in the organization with the right permissions.
 - **Deep integration with current insider risk management features**, making for easier onboarding and more familiar workflows for insider risk management administrators and a trusted single-platform approach.
 
+## Device and configuration requirements
+
+The following tables include the supported minimum requirements for utilizing insider risk management forensic evidence.
+
+### Supported platforms
+
+|**Operating system**|**SKU**|**Processor**|
+|:----------|:-------|:-------------------|
+| Windows 10 | Enterprise | 64-bit (Intel or AMD) |
+| Windows 11 | Enterprise | 64-bit (Intel or AMD) |
+
+### Physical devices
+
+|**Hardware**|**Minimum requirement**|
+|:----------|:-------------------------------|
+| RAM | Minimum of 8 GB (at least 2 GB should be available for client usage |
+| CPU processor | Intel i5 or above and AMD Ryzen 5 or above |
+| Graphics card | Compatible with DirectX 11 or later, with a WDDM 1.0 driver or later (currently only integrated graphics cards supported)|
+| Disk space | Minimum of 10 GB of disk storage |
+| Display | Minimum screen resolution of 1920 x 1080 | 
+
+### Hyper-V and virtual machines
+
+|**Hardware**|**Minimum requirement**|
+|:----------|:-------------------------------|
+| RAM | Minimum of 16 GB (at least 2 GB should be available for client usage) |
+| CPU processor | Minimum of two vCPU processors and at least four cores for each vCPU processor |
+| Disk space | Minimum of 10 GB of disk storage |
+| Display | Minimum screen resolution of 1920 x 1080 | 
+
+> [!IMPORTANT]
+> If the minimum requirements aren't met, users are likely to run into Microsoft Purview client issues and the quality of forensic recordings may not be reliable.
+
 ## Capturing options
 
 [Triggering events, global indicators, and policy indicators](/microsoft-365/compliance/insider-risk-management-settings#indicators) play an important role in all insider risk management policies, including forensic evidence policies. Triggering events are user actions that determine if users are brought into scope for evaluation in insider risk management policies. Global settings indicators are used to determine what activities are collected by insider risk management. Policy indicators are used to determine a risk score for an in-scope user.

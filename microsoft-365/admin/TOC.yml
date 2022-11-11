@@ -83,6 +83,8 @@
       items:
         - name: Admin center overview
           href: admin-overview/admin-center-overview.md
+        - name: Accessibility overview
+          href: admin-overview/admin-center-accessibility-overview.md
         - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
@@ -452,6 +454,8 @@
       href: /office/troubleshoot/  
     - name: Contact support
       href: get-help-support.md
+    - name: Find support phone numbers
+      href: support-contact-info.md
     - name: Navigation guide
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
       
