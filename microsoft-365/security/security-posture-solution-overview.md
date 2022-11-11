@@ -50,13 +50,13 @@ The 4 phases are described below and each section corresponds to a separate arti
 
 It's critical to have full visibility into your assets and to the attack surface of your organization. You can't protect what you can't see. Microsoft 365 Defender provides many capabilities to discover and protect the devices in your organization against threats. This can include, configuring device discovery to help you find unmanaged devices, taking advantage of available integrations to increase visibility into a complete OT/IOT asset inventory, and testing available attack surface reduction rules to see how they might impact your environment.
 
-For more information, see [Strengthen your security posture - Phase 1: Configure capabilities](strengthen-security-posture-configure-capabilities.md)
+For more information, see [Strengthen your security posture - Phase 1: Configure capabilities](strengthen-security-posture-configure-capabilities.md).
 
 ## 2. Assess and protect
 
 Central to understanding your security posture is having a comprehensive inventory of all your assets. The Microsoft Defender for Endpoint device inventory provides you with an accurate view into the assets in your network along with detailed information about those assets. The more information you have about your assets the better you'll be able manage and assess the risks associated with them.
 
-For more information, see [Strengthen your security posture - Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md)
+For more information, see [Strengthen your security posture - Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md).
 
 ## 3. Investigate and improve
 
@@ -70,7 +70,7 @@ For more information on how to start taking action to investigate and protect ag
 
 While using the capabilities we already discussed to maintain and keep improving your security posture, such as onboarding newly discovered devices and reviewing and prioritizing security recommendations, Microsoft Defender 365 also provides capabilities that you can use to keep up to date with new vulnerabilities and to proactively explore your network for threats.
 
-For more information, see [Strengthen your security posture - Phase 4: Track and maintain](strengthen-security-posture-track-maintain.md)
+For more information, see [Strengthen your security posture - Phase 4: Track and maintain](strengthen-security-posture-track-maintain.md).
 
 ## Next step
 
