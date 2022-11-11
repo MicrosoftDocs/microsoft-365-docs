@@ -56,7 +56,7 @@ Every device can potentially pose a risk to your organization but the impact of 
 
 Identifying and assigning value to your devices can help identify how vulnerable your organization is to cyber security threats. How assets affect your vulnerability is in reflected in your exposure score in the Microsoft Defender 365 portal. Devices assigned as "high value" will receive more weight meaning your score will be higher.
 
-To learn more and get started with assigning values to your devices, see [Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md)
+To learn more and get started with assigning values to your devices, see [Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md).
 
 ## Next step
 
