@@ -24,7 +24,6 @@ search.appverid:
 - MOE150
 description: "Use Group Level Aggregates in Microsoft Adoption score to get group-level insights for your organization in Microsoft 365."
 ---
-
 # Group Level Aggregates in Adoption Score
 
 Group Level Aggregates help admins and adoption strategists understand how different groups are performing on the people experiencing insights. Group Level Aggregates provide a higher level of insights and actions for your organization based on data from Azure Active Directory (Azure AD). You can get group-level insights for your organization in Microsoft 365 and use them to:
