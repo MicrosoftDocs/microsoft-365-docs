@@ -54,7 +54,7 @@ To learn more about on how to onboard your devices using this security recommend
 
 Every device can potentially pose a risk to your organization but the impact of some devices being compromised compared to others can vary.  You might have devices that belong to people who have access to sensitive, proprietary, or high priority information meaning the impact could be high if these devices are compromised. In contrast, devices that are only used for internet access with no data could be classified as having a lower risk.
 
-Identifying and assigning value to your devices can help identify how vulnerable your organization is to cybersecurity threats. How assets affect your vulnerability is reflected in your exposure score in the Microsoft Defender 365 portal. Devices assigned as "high value" will receive more weight meaning your score will be higher.
+Identifying and assigning value to your devices can help identify how vulnerable your organization is to cybersecurity threats. How assets affect your vulnerability is reflected in your exposure score in the Microsoft 365 Defender portal. Devices assigned as "high value" will receive more weight meaning your score will be higher.
 
 To learn more and get started with assigning values to your devices, see [Assign device value](../security/defender-vulnerability-management/tvm-assign-device-value.md).
 
