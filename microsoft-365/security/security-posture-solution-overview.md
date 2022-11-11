@@ -48,7 +48,7 @@ The 4 phases are described below and each section corresponds to a separate arti
 
 ## 1. Configure capabilities
 
-It's critical to have full visibility into your assets and to the attack surface of your organization. You can't protect what you can't see. Microsoft 365 Defender provides many capabilities to discover and protect the devices in your organization against threats. This can include, configuring device discovery to help you find unmanaged devices, taking advantage of available integrations to increase visibility into a complete OT/IOT asset inventory, and testing available attack surface reduction rules to see how they might impact your environment.
+It's critical to have full visibility into your assets and to the attack surface of your organization. You can't protect what you can't see. The Microsoft 365 Defender portal provides many capabilities to discover and protect the devices in your organization against threats. This can include, configuring device discovery to help you find unmanaged devices, taking advantage of available integrations to increase visibility into a complete OT/IOT asset inventory, and testing available attack surface reduction rules to see how they might impact your environment.
 
 For more information, see [Strengthen your security posture - Phase 1: Configure capabilities](strengthen-security-posture-configure-capabilities.md).
 
