@@ -84,9 +84,7 @@ There are three levels of relevance:
 - **Low** -  These are posts about changes which just need monitoring. They are related to low impact apps and services in your organization. Examples would be a feature update for an app or service which isn't actively used in your organization. 
 
 
-The scores will **ONLY** be available for the new MC posts. This means the MC posts you already received will not get a relevance recommendation.
-
-If you see no relevance recommendation (blank) for a post, it means the MC post was published prior to the feature being enabled.
+The relevance recommendations will **ONLY** be available for the newer MC posts. This means the MC posts you already received will see a "blank" for relevance recommendation.
 
 If you see “**Processing**” for a MC post, it means that the score is being computed for this post and should be available soon. You should try to refresh after a few minutes.  
 
