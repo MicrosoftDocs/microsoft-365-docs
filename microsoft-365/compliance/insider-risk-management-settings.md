@@ -85,15 +85,16 @@ Policy indicators are segmented into the following areas. You can choose the ind
 - **Risk score boosters**: These include raising the risk score for activity for the following reasons:
    - *Activity that is above the user's usual activity for that day*: Scores are boosted if the detected activity deviates from the user's typical behavior.
    - *User had a previous case resolved as a policy violation*: Scores are boosted in the user has a previous case in Insider risk management that was resolved as a policy violation.
-   - *User is a member of a priority user group*: Scores are boosted if the user is a member of a priority user group. If a user is a member of a priority user group and has been identified as a potential high impact user, then their score will only be boosted once.
+   - *User is a member of a priority user group*: Scores are boosted if the user is a member of a priority user group.
    - *User is detected as a potential high impact user*: When this is enabled, users are automatically flagged as potential high impact users based on the following criteria:
      - User interacts with more sensitive content compared to others in the organization
      - The user's level in organization's Azure AD hierarchy
      - The total number of users reporting to the user based on Azure AD hierarchy
      - The user is a member of an Azure AD built-in role with elevated permissions
      > [!NOTE] 
-     > If your organization doesn't use sensitivity labels or has not configured organization hierarchy in Azure AD, then this detection may be less accurate. To set up priority user groups, see [Create a priority user group](#priority-user-groups).
-   - When you enable the potential high impact user risk score booster, you're agreeing to share information from Azure AD. 
+     > When you enable the potential high impact user risk score booster, you're agreeing to share information from Azure AD. If your organization doesn't use sensitivity labels or has not configured organization hierarchy in Azure AD, then this detection may be less accurate.
+   > [!IMPORTANT] 
+   > If a user is a member of a priority user group and has been identified as a potential high impact user, then their score will only be boosted once. 
 
 In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies in global settings. Triggering events can only be modified for policies created from the *Data leaks* or *Data leaks by priority users* templates. Policies created from all other templates don't have customizable triggering indicators or events.
 
