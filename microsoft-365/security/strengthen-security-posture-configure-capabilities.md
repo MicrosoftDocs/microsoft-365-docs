@@ -26,7 +26,7 @@ ms.collection:
 
 # Strengthen your security posture - Phase 1: Configure capabilities
 
-Welcome to **Phase 1: Configure capabilities** in our **[Strengthen your security posture](/security-posture-solution-overview.md)** solution.
+Welcome to **Phase 1: Configure capabilities** in our **[Strengthen your security posture](security-posture-solution-overview.md)** solution.
 
 Microsoft 365 Defender provides many capabilities to discover and protect the devices in your organization against threats. This article includes information on the following capabilities you can configure:
 
