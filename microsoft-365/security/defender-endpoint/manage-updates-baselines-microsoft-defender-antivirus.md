@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/31/2022
+ms.date: 11/07/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -82,23 +82,24 @@ All our updates contain
 - Performance improvements
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
+
 <br/><br/>
 <details>
-<summary>October-2022 (Platform: 4.18.2210.4 | Engine: 1.1.19800.x)</summary>
+<summary>October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)</summary>
 
-&ensp;Security intelligence update version: **x.x**<br/>
-&ensp;Release date: **October 31, 2022**<br/>
-&ensp;Platform: **4.18.2210.4**<br/>
-&ensp;Engine: **1.1.19800.x**<br/>
+&ensp;Security intelligence update version: **1.379.4.0**<br/>
+&ensp;Release date: **November 10, 2022**<br/>
+&ensp;Platform: **4.18.2210.6**<br/>
+&ensp;Engine: **1.1.19800.4**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
-Engine version: 1.1.19800.x (*final version number coming soon*)<br/>
-Security intelligence update version: x.x (*coming soon*)<br/>
+Engine version: 1.1.19800.4<br/>
+Security intelligence update version: 1.379.4.0<br/>
 
 ### What's new
 
+- Addressed a quality issue that could result in poor responsiveness/usability
 - Improved hang detection in antivirus engine 
-- Added opt-in for defender updates during OOBE (out of box experience) process 
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capability 
 - Changed threat & vulnerability management (TVM)-warn and TVM-block action to block to resolve Intune's report 
 - Removed Clean Action from Intune policy for `ThreadSeverityDefaultAction` 
@@ -158,6 +159,7 @@ Security intelligence update version: 1.373.1647.0 <br/>
 
 ### What's new
 
+- Starting with platform version 4.18.2207.7, the default behavior of dynamic signature expiration reporting changes to reduce potential 2011 event notification flooding. See: **Event ID: 2011** in [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 - Fixed Unified agent installer issues on WS2012R2 Server and Windows Server 2016
 - Fixed remediation issue for custom detection
 - Fixed Race condition related to behavior monitoring
@@ -236,7 +238,7 @@ Security intelligence update version: 1.369.88.0<br/>
 - Added AMSI disk usage limits for The History Store
 - Added fix for Defender service refusing to accept signature updates
 
-### Known Issues
+### Known issues
 
 No known issues
 
@@ -259,7 +261,7 @@ Security intelligence update version: 1.363.817.0<br/>
 
 - Resolves issues with high resource utilization (CPU and/or memory) related to the earlier March 2022 Microsoft Defender engine update (1.1.19100.5)
 
-### Known Issues
+### Known issues
 
 No known issues
 
@@ -284,7 +286,7 @@ Security intelligence update version: 1.361.1449.0<br/>
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities 
 - Added a fix for [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) getting disabled in some cases when using `SharedSignaturesPath` config. For more details about the `SharedSignaturesPath` parameter, see [Set-MpPreference](/powershell/module/defender/set-mppreference).
 
-### Known Issues
+### Known issues
 
 - Potential for high resource utilization (CPU and/or memory). See the Platform 4.18.2203.5 and Engine 1.1.19200.5 update for March 2022.
 
@@ -313,7 +315,7 @@ Security intelligence update version: 1.361.14.0 <br/>
 - Fixed VDI device update bug for network FileShares 
 - EDR in block mode now supports granular device targeting with new CSPs. See [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md).
 
-### Known Issues
+### Known issues
 
 No known issues
 
@@ -337,11 +339,11 @@ Security intelligence update version: 1.357.8.0 <br/>
 - Tamper protection improvements
 - Replaced `ScanScheduleTime` with new `ScanScheduleOffest` cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the number of minutes after midnight to perform a scheduled scan.
 - Added the `-ServiceHealthReportInterval` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the time interval (in minutes) to perform a scheduled scan.
-- Added the `AllowSwitchToAsyncInspection` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy enables a performance optimization, that allows synchronously inspected network flows, to switch to async inspection once they've been checked and validated.
+- Added the `AllowSwitchToAsyncInspection` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy enables a performance optimization that allows synchronously inspected network flows to switch to async inspection once they've been checked and validated.
 - Performance Analyzer v2 updates: Remote PowerShell and PowerShell 7.x support added. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 - Fixed potential duplicate packet bug in Microsoft Defender Antivirus network inspection system driver.
 
-### Known Issues
+### Known issues
 
 No known issues
 
@@ -370,7 +372,7 @@ Security intelligence update version: 1.355.2.0
    - Fixed performance recording session leak when using `New-MpPerformanceRecording` in PowerShell 7.x, remote sessions, and PowerShell ISE
 
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -393,7 +395,7 @@ Security intelligence update version: 1.353.3.0
 - Fix for alerts on blocked tampering attempts not appearing in Security Center
 - Improvements to tamper resilience in Microsoft Defender service
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -412,7 +414,7 @@ Security intelligence update version: 1.351.7.0
 - New delay ring for Microsoft Defender Antivirus engine and platform updates. Devices that opt into this ring will receive updates with a 48-hour delay. The new delay ring is suggested for critical environments only. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
 - Improvements to Microsoft Defender update gradual rollout process
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -431,7 +433,7 @@ No known issues
 - Microsoft Defender Antivirus hardened against the TrustedInstaller bypass
 - Extending file change notifications to include more data for Human-Operated Ransomware (HumOR)
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -449,7 +451,7 @@ No known issues
 - Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time
 - Improvements to the behavior monitoring engine
 
-### Known Issues
+### Known issues
 No known issues
 
 <br/>
@@ -468,7 +470,7 @@ No known issues
 - Improvements to the rollout of antimalware definitions
 - Extended Microsoft Edge network event inspections
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -484,7 +486,7 @@ No known issues
 - Improvements to [behavior monitoring](client-behavioral-blocking.md)
 - Fixed [network protection](network-protection.md) notification filtering feature
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -502,7 +504,7 @@ No known issues
 - Added new controls to manage the gradual rollout process for [Microsoft Defender updates](manage-gradual-rollout.md)
 
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -520,7 +522,7 @@ No known issues
 - Expanded network brute-force-attack mitigations
 - More failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
 
-### Known Issues
+### Known isues
 No known issues
 <br/>
 </details><details>
@@ -537,7 +539,7 @@ No known issues
 - Improved service recovery through [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 - Extend tamper protection scope
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -557,7 +559,7 @@ No known issues
 - Improved support for ARM x64 emulation
 - Fix: EDR Block notification remains in threat history after real-time protection performed initial detection
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -573,7 +575,7 @@ No known issues
 
 - Improved [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) status support logging
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details><details>
@@ -592,7 +594,7 @@ No known issues
 - Improved host address allow/block capabilities
 - New option in Defender CSP to Ignore merging of local user exclusions
 
-### Known Issues
+### Known issues
 
 No known issues
 <br/>
@@ -617,7 +619,7 @@ No known issues
 - Improved visibility into TPM measurements
 - Improved Office VBA module scanning
 
-### Known Issues
+### Known issues
 
 No known issues
 <br/>
@@ -641,7 +643,7 @@ No known issues
 - [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) is ignored. Microsoft Defender Antivirus automatically turns itself off when it detects another antivirus program.
 
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -660,7 +662,7 @@ No known issues
 - Improved telemetry for BITS
 - Improved Authenticode code signing certificate validation
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -683,7 +685,7 @@ No known issues
 - Fixed registry query
 - Fixed scantime randomization in ADMX
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -706,7 +708,7 @@ No known issues
 - Fixed AMSI Cloud blocking
 - Fixed Security update install log
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -729,7 +731,7 @@ No known issues
 - UEFI scan capability
 - Extend logging for updates
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -751,7 +753,7 @@ No known issues
 - Extend AMSI engine internal log capability
 - Improve notification for process blocking
 
-### Known Issues
+### Known issues
 [**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.
 
 <br/>
@@ -771,7 +773,7 @@ No known issues
 ### What's new
 
 
-### Known Issues
+### Known issues
 No known issues
 <br/>
 </details>
@@ -794,7 +796,7 @@ Engine: **1.1.16700.2**<br/>
 - extend Emergency signature update to [passive mode](./microsoft-defender-antivirus-compatibility.md)
 - Fix 4.18.1911.3 hang
 
-### Known Issues
+### Known issues
 
 [**Fixed**] devices utilizing [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.
 <br/>
@@ -824,7 +826,7 @@ Support phase: **No support**<br/>
 - Improve notifications (PUA)
 - add MRT logs to support files
 
-### Known Issues
+### Known issues
 When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
 <br/>
 </details>
@@ -869,6 +871,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20221102.3</summary>
+
+&ensp;Defender package version: **20221102.3**<br/>
+&ensp;Security intelligence version: **1.377.1180.0**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Platform version: **4.18.2210.4**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20221014.1</summary>
 
 &ensp;Package version: **20221014.1**<br/>

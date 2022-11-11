@@ -101,6 +101,9 @@ If you select this export option, the exported content is organized in the follo
   
   - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files can't be included with this option.
 
+> [!NOTE]
+> The *Group* option selected in the review set determines which items are included in the content exported from the review set. If *None* is selected, the exported content only includes the selected or filtered items. If *Group by family* is selected, the exported content includes all items in the family.
+
 ### Condensed directory structure
 
 - Summary.csv: Includes a summary of the content exported from the review set
