@@ -54,7 +54,7 @@ For more information, see [Strengthen your security posture - Phase 1: Configure
 
 ## 2. Assess and protect
 
-Central to understanding your security posture is having a comprehensive inventory of all your assets. The Microsoft Defender for Endpoint [device inventory](../security/defender-endpoint/machine.md) provides you with an accurate view into the assets in your network along with detailed information about those assets. The more information you have about your assets the better you'll be able manage and assess the risks associated with them.
+Central to understanding your security posture is having a comprehensive inventory of all your assets. The Microsoft Defender for Endpoint device inventory provides you with an accurate view into the assets in your network along with detailed information about those assets. The more information you have about your assets the better you'll be able manage and assess the risks associated with them.
 
 For more information, see [Strengthen your security posture - Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md)
 
@@ -68,7 +68,7 @@ For more information on how to start taking action to investigate and protect ag
 
 ## 4. Track and maintain
 
-While using the capabilities we already discussed to maintain and keep improving your security posture, such as onboarding newly discovered devices and reviewing and prioritizing security recommendations, Microsoft Defender 365 also provides capabilities that you can use to keep up to date with new vulnerabilities and to proactively explore you network for threats.
+While using the capabilities we already discussed to maintain and keep improving your security posture, such as onboarding newly discovered devices and reviewing and prioritizing security recommendations, Microsoft Defender 365 also provides capabilities that you can use to keep up to date with new vulnerabilities and to proactively explore your network for threats.
 
 For more information, see [Strengthen your security posture - Phase 4: Track and maintain](strengthen-security-posture-track-maintain.md)
 
