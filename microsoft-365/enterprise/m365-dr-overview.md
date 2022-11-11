@@ -66,7 +66,7 @@ Microsoft 365 services are not deployed to all Microsoft data centers globally. 
 
 Over time, a particular service may deploy their software to additional _Geographies_, so the provisioning locations for new customers can change over time, and this does not necessarily cause customer data to be moved to a new _Geography_.
 
-In order to understand where your data, for a given service is stored, your primarily tool for understanding this is in the _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Currently the data location is available for Exchange Online, SharePoint Online and Microsoft Teams.  In addition to this resource, please see the [Data Maps page](o365-data-locations.md).
+In order to understand where your data, for a given service is stored, your primary tool for understanding this is in the _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Currently the data location is available for Exchange Online, SharePoint Online and Microsoft Teams.  In addition to this resource, please see the [Data Maps page](o365-data-locations.md).
 
 Some examples:
 
@@ -78,7 +78,7 @@ Some examples:
 
 **Example 4a:** For a _Tenant_ with the sign-up country as "Sweden" that has a new subscription that includes Microsoft Yammer, then the customer data for Yammer will be provisioned  into the _Macro Region Geography 1 - EMEA_.  Why?  Because Yammer is deployed in _Macro Region Geography 1 - EMEA_ and Swedish _Tenants_ are best served out of that _Geography_.
 
-**Example 4b:** For a _Tenant_ with the sign-up country as "Sweden" that has a subscription that includes Microsoft Yammer from before Yammer was deployed to _Macro Regional Geography 1 - EMEA_, then the customer data for Yammer will be located in _Macro Region Geography 3 - Americas_.  Why?  Because, at that time, Yammer only had a single deployment for all customers at that time in _Macro Region Geography 3 - Americas_.
+**Example 4b:** For a _Tenant_ with the sign-up country as "Sweden" that has a subscription that includes Microsoft Yammer from before Yammer was deployed to _Macro Regional Geography 1 - EMEA_, then the customer data for Yammer will be located in _Macro Region Geography 3 - Americas_.  Why?  Because, at that time, Yammer only had a single deployment for all customers in _Macro Region Geography 3 - Americas_.
 
 ### Migrations/Moves
 
@@ -103,13 +103,13 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 |**Service Name**|**Product Terms**|**Multi-Geo**|**ADR**|
 |:-----|:-----|:-----|:-----|
 |Exchange Online <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>3</sup>  <br/> |
-| SharePoint Online / OneDrive for Business <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>2</sup>  <br/> |
-| Microsoft Teams <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>2</sup>  <br/> |
-| Microsoft Defender for Office P1 <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
-| Office for the Web <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
-| Viva Connections <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
-| Viva Topics <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
-| Microsoft Purview <br/> |-  <br/> |-  <br/> |X<sup>2</sup>  <br/> |
+| SharePoint Online / OneDrive for Business <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>3</sup>  <br/> |
+| Microsoft Teams <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>3</sup>  <br/> |
+| Microsoft Defender for Office P1 <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
+| Office for the Web <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
+| Viva Connections <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
+| Viva Topics <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
+| Microsoft Purview <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
 
 1. Only available for _Local Region Geography_ countries, European Union and the United States.
 1. Available in _Local Region Geography_, _Expanded Local Region Geography_ and _Regional Geography countries/regions_
