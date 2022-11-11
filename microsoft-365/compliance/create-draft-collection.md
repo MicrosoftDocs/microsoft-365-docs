@@ -23,62 +23,70 @@ search.appverid:
 
 # Create a collection estimate in eDiscovery (Premium)
 
-After you've identified custodians and any non-custodian data sources for the case, you're ready to identify and locate a set of documents that are relevant. You do this by using the Collections tool to search data sources for relevant content. You do this by creating a collection that searches specified data sources for content that matches your search criteria. You have the option to create a *collection estimate*, which is an estimate of the items are found. When you create a collection estimate, you can views information about the estimated results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also review a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the collection estimate to narrow your results. Once you're satisfied with the collection results, you can commit the collection to a review set. When you commit a collection estimate, the items returned by the collection are added to a review set for review, analysis, and export.
+After you've identified custodians and any non-custodian data sources for the case, you're ready to identify and locate a set of documents that are relevant. You do this by using the Collections tool to search data sources for relevant content. You can create a collection that searches specified data sources for content that matches your search criteria. You must create a *collection estimate*, which is an estimate of the items are found. When you create a collection estimate, you can views information about the estimated results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also review a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the collection estimate to narrow your results. Once you're satisfied with the collection results, you can commit the collection to a review set. When you commit a collection estimate, the items returned by the collection are added to a review set for review, analysis, and export.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Before you create a collection estimate
+## Recommendations when creating collection estimates
 
-- Add custodians and non-custodial data sources to the case before you create a collection estimate. This is required so that you can select the data sources when you create a collection estimate. For more information, see:
+- Consider [adding custodians](add-custodians-to-case.md) and [non-custodial data sources](non-custodial-data-sources.md) to the case before you create a collection estimate.
 
-  - [Add custodians to a case](add-custodians-to-case.md)
-  - [Add non-custodial data sources to a case](non-custodial-data-sources.md)
+    This is recommended so that you can quickly select the data sources when you create a collection estimate in the wizard. If you choose to skip adding custodians or non-custodial data sources, you'll have the option to search for these and any additional data sources (ones that haven't been added to the case as custodial or non-custodial locations) in a collection estimate for content that may be relevant to the case. These data sources might include mailboxes, SharePoint sites, and Teams. If this situation is applicable to your case, use additional locations to add these sources to your collection.
 
-- You can search additional data sources (ones that haven't been added to the case as custodial or non-custodial locations) in a collection estimate for content that may be relevant to the case. These data sources might include mailboxes, SharePoint sites, and Teams. If this situation is applicable to your case, use additional locations to add these sources to your collection.
+- Verify that you have [permissions](/microsoft-365/compliance/assign-ediscovery-permissions) to create a collection estimate for a case.
 
 ## Create a collection estimate
 
-1. In the Microsoft Purview compliance portal, open the eDiscovery (Premium) case, and then select the **Collections** tab.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to **eDiscovery > Premium**.
 
-2. On the **Collections** page, select **New collection**.
+2. Select the **Cases** tab and open an eDiscovery (Premium) case, and then select the **Collections** tab.
 
-3. Type a name (required) and description (optional) for the collection. After the collection is created, you can't change the name, but you can modify the description.
+3. On the **Collections** page, select **New collection**.
 
-4. On the **Custodial data sources** page, do one of the following things to identify the custodial data sources to collect content from:
+4. On the **Name and description** page, enter a name (required) and description (optional) for the collection. After the collection is created, you can't change the name, but you can modify the description.
 
-   - Select **Select custodians** to search specific custodians that were added to the case. If you use this option, a list of the case custodians is displayed. Select one or more custodians. After you select and add the custodians, you can also select the specific data sources to search for each custodian. These data sources that are displayed were specified when the custodian was added to the case.
+5. On the **Custodial data sources** page, select one of the following options to identify the custodial data sources to collect content from:
+
+   - Select **Select custodians** to search specific custodians that were added to the case. If you use this option, a list of the case custodians is displayed. Select one or more custodians. After you select and add the custodians, you can also select the specific data sources to search for each custodian. Data sources that are displayed are specified when the custodian is added to the case.
 
    - Select the **Select all** toggle to search all custodians that were added to the case. When you select this option, all data sources for all custodians are searched.
 
-5. On the **Non-custodial data sources** page, do one of the following things to identify the non-custodial data sources to collect content from:
+6. On the **Non-custodial data sources** page, select one of the following options to identify the non-custodial data sources to collect content from:
 
    - Select **Select non-custodial data sources** to select specific non-custodial data sources that were added to the case. If you use this option, a list of data sources displayed. Select one or more of these data sources.
 
    - Select the **Select all** toggle to select all non-custodial data sources that were added to the case.
 
-6. On the **Additional data sources** page, you can select other mailboxes and sites to search as part of the collection. These types of data sources weren't added as custodial or non-custodial data locations in the case. You also have two options when searching additional data sources:
+7. On the **Additional locations** page, you can select other mailboxes and sites to search as part of the collection. These types of data sources weren't added as custodial or non-custodial data locations in the case. You also have two options when searching additional data sources:
 
    - To search all content locations for a specific service (Exchange mailboxes, SharePoint and OneDrive sites, or Exchange public folders), select the corresponding **Select all** toggle in the **Status** column. This option will search all content locations in the selected service.
 
    - To search specific content location for a service, select the corresponding **Select all** toggle in the **Status** column, and then select **Users, groups or teams** (for Exchange mailboxes) or **Choose sites** for (SharePoint and OneDrive sites) to search specific content locations.
 
-7. On the **Conditions** page, you can create the search query that is used to collect items from the data sources that you've identified in the previous wizard pages. You can search for keywords, property:value pairs, or use a keyword list. You can also add various search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](building-search-queries.md).
+8. On the **Conditions** page, you can create the search query that is used to collect items from the data sources that you've identified in the previous wizard pages. You can search for keywords, property:value pairs, or use a keyword list. You can also add various search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](building-search-queries.md).
 
-8. On the **Save as draft or add to review set** page, select **Save collection estimate**.
+9. On the **Review your collection and get estimates** page, you'll see a summary of the collection estimate process. Note that the collection estimate will be saved for further review and refinement, but the results won't be automatically committed to a review set. You'll need to decide to commit to a review set later.
 
-9. On the **Review your collection** page, you can review and update the collection settings that you configured on the previous pages.
+10. On the **Review your collection** page, you can review and update the collection selection, data sources, and conditions that you configured on the previous pages. Select **Edit** for any of the selections and update if needed.
 
-   - **Summary** tab:  Review and modify the name and description of the collection, the collection search criteria, additional data locations, and the collection type.
-
-   - **Sources** tab: Review and modify the custodial and non-custodial data sources for the collection.
-
-10. Select **Submit** to create the collection estimate. A page is displayed confirming that the collection was created.
+11. Select **Submit** to create the collection estimate. A page is displayed confirming that the collection was created.
 
 ## What happens after you create a collection estimate
 
-After you create a collection estimate, it listed on the **Collections** page in the case and the status shows that it's in progress. A job named **Preparing search preview and estimates** is also created and displayed on the **Jobs** page in the case.
+After you create a collection estimate, it listed on the **Collections** page in the case and the status shows that it's in progress. A job named **Preparing search preview and estimates** is also created and displayed on the **Jobs** page in the case. During the collection estimate process, eDiscovery (Premium) performs a search estimate using the search criteria and data sources that you specified in the collection. eDiscovery (Premium) also prepares a sampling of items that you can preview.
 
-During the collection estimate process, eDiscovery (Premium) performs a search estimate using the search criteria and data sources that you specified in the collection. eDiscovery (Premium) also prepares a sampling of items that you can preview. When the collection is complete, the following columns and corresponding values on the **Collection** page are updated:
+Additionally, you can now monitor the progress of the estimate that shows how many sources and items have been completed when building the estimate. As part of the estimate progress, you can see statistics for the following areas:
+
+- **Status**: The status of the estimate. Values are *In progress*, *Successful*, or *UNSUCCESSFUL VALUE?*
+- **Sources searched**: The number of sources searched in the estimate.
+    - **Sources with Hits**: Sources in the estimate that meet the conditions configured for the collection.
+    - **Sources with No Hits**: Sources in the estimate that do not have any items that meet the conditions configured for the collection.
+    - **Sources Unavailable**: Sources that were unavailable during the period that the estimate was in progress.
+- **Collection estimate items and size**: The number of items and size of the collection estimate.
+
+IN-PROGRESS SCREENSHOT
+
+When the collection is complete, the following columns and corresponding values on the **Collection** page are updated:
 
 ![Status states for a collection estimate.](../media/DraftCollectionStatus.png)
 
