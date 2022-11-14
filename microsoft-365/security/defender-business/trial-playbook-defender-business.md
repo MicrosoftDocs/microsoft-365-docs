@@ -118,7 +118,7 @@ Security policies to review and configure include:
 
 ## Start using Defender for Business
 
-For the next 30 days, here’s guidance from the product team on key features to try:
+For the next 30 days, here's guidance from the product team on key features to try:
 
 1. [Use your Microsoft Defender Vulnerability Management dashboard](#1-use-the-defender-vulnerability-management-dashboard). 
 
