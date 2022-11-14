@@ -56,7 +56,7 @@ Independently from labeling, you can continue to use the [AIPService](/powershel
 
 ## Benefits of using built-in labeling for Office apps vs. the AIP add-in
 
-The AIP add-in component from the AIP client is in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) and we don't recommend you use this add-in for Office apps for the following reasons:
+The AIP add-in component from the AIP client is in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and we don't recommend you use this add-in for Office apps for the following reasons:
 
 - No new labeling features will be supported.
 - Add-ins are less stable because they can conflict with other add-ins that can result in Office apps hanging, crashing, or automatically disabling the add-in.
