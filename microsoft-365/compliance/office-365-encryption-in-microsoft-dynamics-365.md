@@ -11,7 +11,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: null
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection: 
+- Strat_O365_Enterprise
+- purview-compliance
+- tier3
 description: Learn how Microsoft uses encryption technology to protect customer data in Microsoft Dynamics 365 while at rest in a Microsoft database and while in transit.
 ms.custom: seo-marvel-apr2020
 ---

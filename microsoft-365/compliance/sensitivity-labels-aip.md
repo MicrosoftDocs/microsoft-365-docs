@@ -76,7 +76,7 @@ Some features are only supported by built-in labeling for Office apps, and won't
 
 - For automatic and recommended labeling:
     - Access to intelligent classification services that include [trainable classifiers](classifier-learn-about.md), [exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md), and [named entities](named-entities-learn.md)
-    - Detection of sensitive information as users type
+    - Detection of sensitive information as users enter the text
     - In Word, users can review and remove the identified sensitive content
 - [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that is integrated into existing user workflows
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support)
@@ -95,14 +95,14 @@ To keep informed when new labeling capabilities become available for built-in la
 
 For the latest Office apps, the AIP add-in is disabled by default, so there's nothing for you to configure:
 
-- **Build 16.0.15716.0+**: Currently in [Beta Channel](https://office.com/insider)
-- **Current Channel** and **Monthly Enterprise Channel**: Version 2211+ (not yet released)
-- **Semi-Annual Channel**: Version 2301+ (not yet released)
+- Currently rolling out to [Current Channel (Preview)](https://office.com/insider)
+- **Current Channel** and **Monthly Enterprise Channel**: Not before version 2211+ (not yet released)
+- **Semi-Annual Channel**: Not before version 2301+ (not yet released)
 
-If you have one of these versions, and need to use the AIP add-in rather than built-in labeling, you have to [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
+If you have a version that disabled the AIP add-in by default, and you need to use the AIP add-in rather than built-in labeling, you must [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
 
 > [!IMPORTANT]
-> If you’ve previously used the AIP add-in as the default labeling client in Office apps and use Office versions listed in this section, the AIP add-in is automatically disabled and replaced by built-in labeling.
+> If you’ve previously used the AIP add-in as the default labeling client in Office apps and use Office versions identified in this section, the AIP add-in could be automatically disabled and replaced by built-in labeling.
 
 To disable the AIP add-in for older versions, see the next section.
 
@@ -122,7 +122,7 @@ For your Windows Office apps that support built-in labeling, use the configurati
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
+Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!IMPORTANT]
 > If you use the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **1**, there are some situations where the AIP add-in might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
@@ -142,7 +142,9 @@ In the [newer versions of Office](#how-to-disable-the-aip-add-in-to-use-built-in
 
 - **Use the Azure Information Protection add-in for sensitivity labeling**. Set the value to **1**.
 
-Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
+This new setting is still rolling out. If you don't see it yet, wait a few more days and try again.
+
+Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
 Additional Office settings you might need to configure:
 
@@ -184,7 +186,6 @@ Use the following information to help you identify if the features you use with 
 |User-defined permissions <br> - Do Not Forward for Outlook <br> - User and group custom permissions for Word, Excel, PowerPoint| ![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)|
 |User-defined permissions <br> - Organization-wide custom permissions by specifying domains for Word, Excel, PowerPoint | [In preview](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) |
 |Co-authoring and AutoSave | ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-coauthoring.md) |
-| | |
 
 Remember to use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) to identify and track new features in development.
 

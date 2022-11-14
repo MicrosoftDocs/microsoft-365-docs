@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 ms.reviewer: samanro
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -18,6 +18,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 11/14/2022
 ---
 
 # Set up Microsoft 365 for frontline workers

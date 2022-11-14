@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 manager: samanro
 audience: ITPro
-ms.topic: article 
+ms.topic: conceptual
 ms.service: microsoft-365-frontline 
 search.appverid: 
 searchScope:
@@ -27,6 +27,7 @@ description: Learn how to schedule, manage, and conduct virtual appointments usi
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Virtual appointments with Microsoft Teams and the Bookings app

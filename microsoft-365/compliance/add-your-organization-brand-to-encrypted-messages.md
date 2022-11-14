@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
-- Strat_O365_IP
+- tier1
 - purview-compliance
 ms.custom:
 - seo-marvel-apr2020

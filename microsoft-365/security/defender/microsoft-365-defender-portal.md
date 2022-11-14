@@ -142,7 +142,7 @@ Threat analytics is the Microsoft 365 Defender threat intelligence solution from
 > Along with the Product filter, current topics, types of resources (from videos to webinars), levels of familiarity or experience with security areas, security roles, and product features are listed.
 
 > [!TIP]
-> There are lots of other learning opportunities in [Microsoft Learn](/training/). You'll find certification training such as [Course MS-500T02-A: Implementing Microsoft 365 Threat Protection](/training/certifications/courses/ms-500t02).
+> There are lots of other learning opportunities in [Microsoft Learn](/training/). You'll find certification training such as [Course MS-500T00: Microsoft 365 Security Administration](/training/courses/ms-500t00).
 
 ## Send us your feedback
 

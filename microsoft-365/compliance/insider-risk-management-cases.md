@@ -26,10 +26,10 @@ Cases are the heart of insider risk management and allow you to deeply investiga
 
 After investigating the details of a case, you can take action by:
 
-- sending the user a notice
-- resolving the case as benign
-- sharing the case with your ServiceNow instance or with an email recipient
-- escalating the case for an eDiscovery (Premium) investigation
+- Sending the user a notice
+- Resolving the case as benign
+- Sharing the case with your ServiceNow instance or with an email recipient
+- Escalating the case for an eDiscovery (Premium) investigation
 
 Check out the [Insider Risk Management Investigation and Escalation video](https://www.youtube.com/watch?v=UONUSmkRC8s) for an overview of how cases are investigated and managed in insider risk management.
 
@@ -87,11 +87,11 @@ The **Case overview** tab summarizes the case details for risk analysts and inve
 - **Manager name**: The name of the user's manager.
 - **Manager email**: The email alias of the user's manager.
 
-![Insider risk management case details.](../media/insider-risk-case-details.png)
+![Insider risk management case details](../media/insider-risk-case-details.png)
 
 The **Case overview** tab also includes an **Alerts** section that includes the following information about policy match alerts associated with the case:
 
-- **Policy matches**: The name of the insider risk management policy associated with the match alerts for user activity.
+- **Policy matches**: The name of the insider risk management policy associated with the match alerts for potentially risky user activity that may lead to a security incident.
 - **Status**: Status of the alert.
 - **Severity**: Severity of the alert.
 - **Time detected**: The time that has passed since the alert was generated.
@@ -114,6 +114,7 @@ Use the search control to search alert names for specific text and use the alert
 
 Use the filter control to filter alerts by several attributes, including:
 
+
 - **Status**: Select one or more status values to filter the alert list. The options are *Confirmed*, *Dismissed*, *Needs review*, and *Resolved*.
 - **Severity**: Select one or more alert risk severity levels to filter the alert list. The options are *High*, *Medium*, and *Low*.
 - **Time detected**: Select the start and end dates for when the alert was created.
@@ -121,15 +122,15 @@ Use the filter control to filter alerts by several attributes, including:
 
 ### User activity
 
-The **User activity** tab allows risk analysts and investigators to review activity details and use a visual representation of all the activities associated with risk alerts and cases. For example, as part of the alert triage process, analysts may need to review all the risk activities associated with the case for more details. In cases, risk investigators can review user activity details and the bubble chart to help understand the overall scope of the activities associated with the case. For more information about the User activity chart, see the [Insider risk management activities](insider-risk-management-activities.md#user-activity) article.
+The **User activity** tab allows risk analysts and investigators to review user activity details and use a visual representation of all the potentially risky activities associated with risk alerts and cases to determine whether those risky activities may lead to a security incident. For example, as part of the alert triage process, analysts may need to review all the risk activities associated with the case for more details. In cases, risk investigators can review user activity details and the bubble chart to help understand the overall scope of the risk activities associated with the case. For more information about the User activity chart, see the [Insider risk management activities](insider-risk-management-activities.md#user-activity) article.
 
 ### Activity explorer (preview)
 
-The **Activity explorer** tab allows risk analysts and investigators to review activity details associated with risk alerts. For example, as part of the case management actions, investigators and analysts may need to review all the risk activities associated with the case for more details. With the **Activity explorer**, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts.
+The **Activity explorer** tab allows risk analysts and investigators to review case activity details associated with risk alerts. For example, as part of the case management actions, investigators and analysts may need to review all the risk activities associated with the case for more details. With the **Activity explorer**, reviewers can quickly examine a timeline of detected potentially risky activity and identify and filter all risk activities associated with alerts.
 
 For more information about the Activity explorer, see the [Insider risk management activities](insider-risk-management-activities.md#activity-explorer) article.
 
-### Forensic evidence (preview)
+## Forensic evidence (preview)
 
 The **Forensic evidence (preview)** tab allows risk investigators to review visual captures associated with risk activities included in cases. For example, as part of the case management actions, investigators may need to help clarify the context of the user activity under review. Viewing the actual clips of the activity can help the investigator determine if the user activity is potentially risky and may lead to a security incident.
 
@@ -210,20 +211,20 @@ After the insider risk management case has been escalated to a new user investig
 
 Using recommended Power Automate flows, risk investigators and analysts can quickly take action to:
 
-- Request information from HR or business about a user in an insider risk case
-- Notify manager when a user has an insider risk alert
-- Create a record for an insider risk management case in ServiceNow
-- Notify users when they're added to an insider risk policy
+- Request information from HR or business about a user in an insider risk case.
+- Notify manager when a user has an insider risk alert.
+- Create a record for an insider risk management case in ServiceNow.
+- Notify users when they're added to an insider risk policy.
 
 To run, manage, or create Power Automate flows for an insider risk management case:
 
-1. Select **Automate** on the case action toolbar. 
-2. Choose the Power Automate flow to run, then select **Run flow**. 
+1. Select **Automate** on the case action toolbar.
+2. Choose the Power Automate flow to run, then select **Run flow**.
 3. After the flow has completed, select **Done**.
 
 To learn more about Power Automate flows for insider risk management, see [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).
 
-### View or create a Microsoft Teams team for the case
+ ### View or create a Microsoft Teams team for the case
 
 When Microsoft Teams integration for insider risk management is enabled in settings, a Microsoft Teams team is automatically created every time an alert is confirmed and a case is created. Risk investigators and analysts can quickly open Microsoft Teams and navigate directly to the team for a case by selecting **View Microsoft Teams team** on the case action toolbar.
 

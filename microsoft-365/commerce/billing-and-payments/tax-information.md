@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -156,7 +157,7 @@ For example:
 
 If you qualify for tax-exempt status in your market, [start a service request](../../admin/get-help-support.md) to establish tax exempt status for your organization.
 
-|Country or locale | Documentation |
+|Country or region | Documentation |
 |------------------|----------------|
 | Canada | Certificate of Exemption (or equivalent letter of authorization) |
 | Chile | IVA status/RUT (Registro Unico Tributario) |

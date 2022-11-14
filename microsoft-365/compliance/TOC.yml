@@ -20,6 +20,8 @@
       href: microsoft-365-compliance-center.md
     - name: Permissions in the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-permissions.md
+    - name: Roles and role groups in the Microsoft Purview compliance portal
+      href: /microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Redirecting users to the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
@@ -470,7 +472,7 @@
                 href: sit-defn-azure-cognitive-service-key.md
               - name: Azure Container Registry access key
                 href: sit-defn-azure-container-registry-access-key.md
-              - name: Azure COSMOS DB account access key
+              - name: Azure Cosmos DB account access key
                 href: sit-defn-azure-cosmos-db-account-access-key.md
               - name: Azure Databricks personal access token 
                 href: sit-defn-azure-databricks-personal-access-token.md

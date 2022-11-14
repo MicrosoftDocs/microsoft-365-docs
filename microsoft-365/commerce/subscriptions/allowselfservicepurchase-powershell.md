@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: null
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -39,10 +40,10 @@ You can use the **MSCommerce** PowerShell module to:
 
 To use the **MSCommerce** PowerShell module, you need:
 
-- A Windows 10 device
+- A Windows 10 or later operating system.
 - PowerShell 5 or below. Currently, PowerShell 6.x/7.x isn't supported with this module.
-- Administrator permission for the device
-- Global or Billing Admin role for your tenant
+- The Global or Billing admin role for your tenant to change the **MSCommerce** product policies.
+- The Global reader role for your tenant to see a read-only list of **MSCommerce** product policies.
 
 ## Install the MSCommerce PowerShell module
 

@@ -6,7 +6,7 @@ ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: medium
 ms.collection: 

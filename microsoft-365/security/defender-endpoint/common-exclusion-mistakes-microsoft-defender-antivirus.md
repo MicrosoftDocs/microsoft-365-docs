@@ -13,7 +13,7 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 06/16/2022
 ms.collection: 
 - m365-security
