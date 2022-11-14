@@ -413,7 +413,7 @@ For example, you need to protect against data leaks for a highly confidential pr
 
 ### Create a priority user group
 
-To create a new priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. You must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group.
+To create a new priority user group, use the setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group.)
 
 Complete the following steps to create a priority user group:
 
@@ -433,7 +433,7 @@ Complete the following steps to create a priority user group:
 
 ### Update a priority user group
 
-To update an existing priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. You must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group.
+To update an existing priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group.)
 
 Complete the following steps to edit a priority user group:
 
@@ -527,7 +527,7 @@ The following Power Automate templates are provided to customers to support proc
 
 To create a Power Automate flow from a recommended  insider risk management template, you'll use the settings controls in the **Insider risk management** solution in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**.
 
-To create a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To create a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
+To create a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group. To create a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to create a Power Automate flow from a recommended insider risk management template:
 
@@ -565,7 +565,7 @@ Complete the following steps to create a custom Power Automate template for insi
 
 By default, Power Automate flows created by a user are only available to that user. For other insider risk management users to have access and use a flow, the flow must be shared by the flow creator. To share a flow, you'll use the settings controls in the **Insider risk management solution** in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the Automate control when working directly in the **Cases** or **Users dashboard** pages. Once you've shared a flow, everyone who it has been shared with can access the flow in the **Automate** control dropdown in the **Case** and **User dashboards**.
 
-To share a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To share a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
+To share a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group. To share a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to share a Power Automate flow:
 
@@ -579,7 +579,7 @@ Complete the following steps to share a Power Automate flow:
 
 To edit a flow, you'll use the settings controls in the **Insider risk management** solution in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**.
 
-To edit a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To edit a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
+To edit a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group. To edit a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to edit a Power Automate flow:
 
@@ -592,7 +592,7 @@ Complete the following steps to edit a Power Automate flow:
 
 To delete a flow, you'll use the settings controls in the **Insider risk management** solution in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**. When a flow is deleted, it's removed as an option for all users.
 
-To delete a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To delete a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
+To delete a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group. To delete a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to delete a Power Automate flow:
 
@@ -657,7 +657,7 @@ Analytics insights from scans are based on the same risk management activity sig
 
 ### Enable analytics and start your scan
 
-To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admin*, or *Microsoft 365 Global admin* role group.
+To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or *Microsoft 365 Global admin* role group.
 Complete the following steps to enable insider risk analytics:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**.
@@ -668,7 +668,7 @@ Complete the following steps to enable insider risk analytics:
 
 ### Viewing analytics insights and creating new policies
 
-After the first analytics scan is complete for your organization, members of the *Insider Risk Management Admin* role group will automatically receive an email notification and can view the initial insights and recommendations for potentially risky activities by your users. Daily scans continue unless you turn off analytics for your organization. Email notifications to admins are provided for each of the three in-scope categories for analytics (data leaks, theft, and exfiltration) after the first instance of potentially risky activity in your organization. Email notifications aren't sent to admins for follow-up risk management activity detection resulting from the daily scans. If analytics in **Insider risk management** > **Settings** > **Analytics** are disabled and then re-enabled in your organization, automatic email notifications are reset and emails are sent to members of the *Insider Risk Management Admin* role group for new scanning insights.
+After the first analytics scan is complete for your organization, members of the *Insider Risk Management Admins* role group will automatically receive an email notification and can view the initial insights and recommendations for potentially risky activities by your users. Daily scans continue unless you turn off analytics for your organization. Email notifications to admins are provided for each of the three in-scope categories for analytics (data leaks, theft, and exfiltration) after the first instance of potentially risky activity in your organization. Email notifications aren't sent to admins for follow-up risk management activity detection resulting from the daily scans. If analytics in **Insider risk management** > **Settings** > **Analytics** are disabled and then re-enabled in your organization, automatic email notifications are reset and emails are sent to members of the *Insider Risk Management Admins* role group for new scanning insights.
 
 To view potential risks for your organization, go to the **Overview** tab and select **View results** on the **Insider risk analytics** card. If the scan for your organization isn't complete, you'll see a message that the scan is still active.
 
@@ -688,7 +688,7 @@ To display more information for an insight, select **View details** to display t
 
 ### Turn off analytics
 
-To turn off insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admin*, or Microsoft 365 *Global admin* role group. After you disable analytics, analytics insight reports will remain static and not be updated for new risks.
+To turn off insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group. After you disable analytics, analytics insight reports will remain static and not be updated for new risks.
 
 Complete the following steps to turn off insider risk analytics:
 
@@ -704,7 +704,7 @@ Admin notifications automatically send an email notification to selectable insid
 - Send a daily email when new high severity alerts are generated. Policies are checked every 24 hours for high severity alerts.
 - Send a weekly email summarizing policies that have unresolved warnings
 
-If you've enabled insider risk management analytics for your organization, members of the *Insider Risk Management Admin* role group automatically receive an email notification for initial analytics insights for data leaks, theft, and exfiltration activities.
+If you've enabled insider risk management analytics for your organization, members of the *Insider Risk Management Admins* role group automatically receive an email notification for initial analytics insights for data leaks, theft, and exfiltration activities.
 
 If you prefer to disable admin and analytics notifications, complete the following steps:
 
@@ -723,7 +723,7 @@ If you prefer to disable admin and analytics notifications, complete the followi
 
 Inline alert customization allows you to quickly tune an insider risk management policy directly from the **Alert dashboard** while reviewing the alert. Alerts are generated when a risk management activity meets the thresholds configured in the related policy. To reduce the number of alerts you get from this type of activity, you can change the thresholds or remove the risk management activity from the policy altogether.
 
-You can enable inline alert customization to allow users assigned to the *Insider Risk Management Analysts* and *Insider Risk Management Investigators* role groups to edit policy thresholds and to disable specific indicators. If inline alert customization isn't enabled, only users assigned to the *Insider Risk Management Admin* or *Insider Risk Management* role groups can edit these policy conditions. Inline alert customization is supported for alerts regardless of the current alert status, allowing analysts and investigators to update policies for *Dismissed* and *Resolved* alerts if needed.
+You can enable inline alert customization to allow users assigned to the *Insider Risk Management Analysts* and *Insider Risk Management Investigators* role groups to edit policy thresholds and to disable specific indicators. If inline alert customization isn't enabled, only users assigned to the *Insider Risk Management Admins* or *Insider Risk Management* role groups can edit these policy conditions. Inline alert customization is supported for alerts regardless of the current alert status, allowing analysts and investigators to update policies for *Dismissed* and *Resolved* alerts if needed.
 
 Complete the following steps to enable inline alert customization:
 

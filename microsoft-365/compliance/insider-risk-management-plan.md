@@ -58,7 +58,7 @@ Depending on how you want to manage insider risk management policies and alerts,
 
 Choose from the following role group options and solution actions when working with insider risk management:
 
-|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admins**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
 |---|---|---|---|---|---|---|
 |Configure policies and settings|Yes|Yes|No|No|No|No|
 |Access analytics insights|Yes|Yes|Yes|No|No|No|
@@ -73,9 +73,9 @@ Choose from the following role group options and solution actions when working w
 |View device health report|Yes|Yes|No|No|No|No|
 
 > [!IMPORTANT]
-> Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
+> Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admins* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
 
-Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admin* role group:
+Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admins* role group:
 
 - Azure Active Directory *Global Administrator*
 - Azure Active Directory *Compliance Administrator*

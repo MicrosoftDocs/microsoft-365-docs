@@ -93,7 +93,7 @@ Depending on how you wish to manage insider risk management policies and alerts,
 
 You'll choose from these role group options and solution actions when working with insider risk management:
 
-|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admins**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
 |---|---|---|---|---|---|---|
 |Configure policies and settings|Yes|Yes|No|No|No|No|
 |Access analytics insights|Yes|Yes|Yes|No|No|No|
@@ -108,9 +108,9 @@ You'll choose from these role group options and solution actions when working wi
 |View device health report|Yes|Yes|No|No|No|No|
 
 > [!IMPORTANT]
-> Make sure you always have at least one user in the built-in *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get into a 'zero administrator' scenario if specific users leave your organization.
+> Make sure you always have at least one user in the built-in *Insider Risk Management* or *Insider Risk Management Admins* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get into a 'zero administrator' scenario if specific users leave your organization.
 
-Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admin* role group:
+Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admins* role group:
 
 - Azure Active Directory *Global Administrator*
 - Azure Active Directory *Compliance Administrator*
@@ -148,7 +148,7 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 
 Insider risk management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
 
-To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admin*, or Microsoft 365 *Global admin* role group.
+To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group.
 
 Complete the following steps to enable insider risk analytics:
 
