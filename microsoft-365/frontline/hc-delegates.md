@@ -26,6 +26,7 @@ appliesto:
 ms.reviewer: acolonna
 description: Learn how a user with Away status or Do Not Disturb status can explicitly set another user as a delegate in their Microsoft Teams status message.
 ms.custom: seo-marvel-mar2020
+ms.date: 11/03/2022
 ---
 
 # Use a Teams status message to assign a delegate
