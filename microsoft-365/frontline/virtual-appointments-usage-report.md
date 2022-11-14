@@ -22,9 +22,9 @@ ms.custom: seo-marvel-apr2020
 ---
 # Microsoft Teams Virtual Appointments usage report
 
-![Information icon](media/info.png) **This feature is temporarily available as preview for all customers. To get this feature after the preview, each user will need a [Teams Premium]() license or a Teams EHR connector license.**
+![Information icon](media/info.png) **This feature is temporarily available as preview for all customers. To get this feature after the preview, each user will need a [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) license or a Teams EHR connector license.**
 
-[![Information icon](media/info.png) **This feature is moving to [Teams Premium]() (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required.**]
+[![Information icon](media/info.png) **This feature is moving to [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required.**]
 
 The Virtual Appointments usage report in the Microsoft Teams admin center gives you an overview of Teams Virtual Appointments activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](bookings-virtual-appointments.md) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
 
@@ -40,7 +40,7 @@ The report contains the following tabs. The information you’ll see in the repo
 |**[EHR](#ehr)**     |Shows the number of Teams EHR-integrated appointments conducted from your EHR system.         |
 
 > [!NOTE]
-> Premium appointments are appointments that use at least one advanced Virtual Appointments capability available in [Teams Premium]() (preview). For more analytics on advanced Virtual Appointments usage, see the [Virtual Appointments active user report](virtual-appointments-active-user-report.md).
+> Premium appointments are appointments that use at least one advanced Virtual Appointments capability available in [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). For more analytics on advanced Virtual Appointments usage, see the [Virtual Appointments active user report](virtual-appointments-active-user-report.md).
 
 Use this report to gain insight into virtual appointment activity and trends in your organization. The information can help you optimize Virtual Appointments to deliver better business outcomes.
 
@@ -136,4 +136,4 @@ You'll see this tab if you have a license that includes the Teams EHR connector.
 - [Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
 - [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
-- [Teams Premium]()
+- [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)

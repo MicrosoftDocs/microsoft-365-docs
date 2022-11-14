@@ -36,7 +36,7 @@ With browser join, when an attendee joins an appointment, they aren't prompted t
 
 Currently, browser join is available for appointments that are scheduled through the following:
 
-- [The Virtual Appointments app](https://review.learn.microsoft.com/microsoftteams/manage-virtual-appointments-app?branch=v-lanachin-va-app) (preview)
+- [The Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) (preview)
 - [The Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
 - Microsoft Teams Electronic Health Record (EHR) connector
 
@@ -76,7 +76,7 @@ No setup is needed by you or your staff!
 
 ## Customize the waiting room with your company logo
 
-![Information icon](media/info.png) **This feature is part of [Teams Premium]() (preview). To use this feature during the preview period, admins and users in your organization who schedule appointments need a Teams Premium trial license.**
+![Information icon](media/info.png) **This feature is part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). To use this feature during the preview period, admins and users in your organization who schedule appointments need a Teams Premium trial license.**
 
 You can configure a custom waiting room experience for attendees by adding your company logo. As an admin, you use Teams meeting customization policies in the Teams admin center to define your branding by creating a meeting theme. A meeting theme can include your company's logo, a custom image, and more.
 
@@ -86,7 +86,7 @@ After you create the policy, assign it to the users in your organization who sch
 
 :::image type="content" source="media/browser-join-waiting-room.png" alt-text="Screenshot of a custom waiting room in Teams when joining from a browser on a mobile device" lightbox="media/browser-join-waiting-room.png":::
 
-To learn more, see [Custom organization branding for Teams meetings](https://review.learn.microsoft.com/en-us/MicrosoftTeams/custom-branding-meetings?branch=heidip-branded-meetings-2022).
+To learn more, see [Custom organization branding for Teams meetings](/microsoftteams/custom-branding-meetings).
 
 ## Supported browsers
 
@@ -124,7 +124,7 @@ Staff members can change the language of the captions. The default language is E
 
 ### Joining appointments configured with Teams Premium protected meetings features
 
-Currently, protected meeting capabilities that are part of [Teams Premium]() (preview), such as sensitivity labels, watermarks, and end-to-end encryption, aren't supported in browser join.
+Currently, protected meeting capabilities that are part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview), such as sensitivity labels, watermarks, and end-to-end encryption, aren't supported in browser join.
 
 If you've configured any of these features in your organization, attendees won't be able to join appointments from a desktop or mobile browser. Instead, they're prompted to download Teams and the meeting link they receive opens Teams in the desktop, mobile, or web app.
 
@@ -133,4 +133,4 @@ If you've configured any of these features in your organization, attendees won't
 - [Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Create an Bookings appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887)
 - [Join a Bookings appointment as an attendee](https://support.microsoft.com/office/join-a-bookings-appointment-as-an-attendee-95cea12d-2220-421f-a663-6efb20913c7f)
-- [Teams Premium]()
+- [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)
