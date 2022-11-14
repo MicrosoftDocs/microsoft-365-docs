@@ -1,6 +1,6 @@
 ---
 title: Scheduling Dynamic Recurring Meetings
-ms.author: sarichardson
+ms.author: v-aiyengar
 author: sallyri
 manager: serdars
 audience: Admin
