@@ -96,8 +96,8 @@ To keep informed when new labeling capabilities become available for built-in la
 For the latest Office apps, the AIP add-in is disabled by default, so there's nothing for you to configure:
 
 - Currently rolling out to [Current Channel (Preview)](https://office.com/insider)
-- **Current Channel** and **Monthly Enterprise Channel**: Version 2211+ (not yet released)
-- **Semi-Annual Channel**: Version 2301+ (not yet released)
+- **Current Channel** and **Monthly Enterprise Channel**: Not before version 2211+ (not yet released)
+- **Semi-Annual Channel**: Not before version 2301+ (not yet released)
 
 If you have one of these versions, and need to use the AIP add-in rather than built-in labeling, you have to [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
 
