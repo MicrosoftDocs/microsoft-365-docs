@@ -92,9 +92,7 @@ Policy indicators are segmented into the following areas. You can choose the ind
      - The total number of users reporting to the user based on Azure AD hierarchy
      - The user is a member of an Azure AD built-in role with elevated permissions
      > [!NOTE] 
-     > When you enable the potential high impact user risk score booster, you're agreeing to share Azure AD data with the compliance portal. If your organization doesn't use sensitivity labels or has not configured organization hierarchy in Azure AD, then this detection may be less accurate.
-   > [!IMPORTANT] 
-   > If a user is a member of a priority user group and has been identified as a potential high impact user, then their score will only be boosted once. 
+     > When you enable the potential high impact user risk score booster, you're agreeing to share Azure AD data with the compliance portal. If your organization doesn't use sensitivity labels or has not configured organization hierarchy in Azure AD, then this detection may be less accurate. If a user is detected as both a member of a priority user group and also a potential high impact user, their risk score will only be boosted once. 
 
 In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies in global settings. Triggering events can only be modified for policies created from the *Data leaks* or *Data leaks by priority users* templates. Policies created from all other templates don't have customizable triggering indicators or events.
 
