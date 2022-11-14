@@ -69,7 +69,7 @@ Remember that only schedulers in your organization need to have the Bookings app
 
 In Teams, go to **Bookings** > **Get started**, and then select **New booking calendar**. Complete the form and be sure to choose the relevant business type for your organization.
 
-:::image type="content" source="media/bookings-virtual-visits-new-booking-calendar.png" alt-text="Screenshot of new booking calendar screen showing business types":::
+:::image type="content" source="media/bookings-virtual-appointments-new-booking-calendar.png" alt-text="Screenshot of a new booking calendar screen showing business types":::
 
 If you’re a larger organization, consider creating more than one booking calendar if you want attendees to receive a booking email from a specific department rather than your overall organization.
 To learn more, see [Create a Bookings calendar](https://support.microsoft.com//office/create-a-bookings-calendar-921cfd26-a24d-4aca-9004-561594112148).
@@ -153,8 +153,7 @@ In your Teams or Outlook calendar, go to the booking, and then select **Join** o
 
 The queue view provides your staff with a dashboard to monitor all scheduled and on-demand virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab.
 
-[NEED NEW SCREENSHOT]<br>
-:::image type="content" source="media/bookings-virtual-visits-queue.png" alt-text="Screenshot of the queue view in the Bookings app in Teams" lightbox="media/bookings-virtual-visits-queue.png":::
+:::image type="content" source="media/bookings-virtual-appointments-queue.png" alt-text="Screenshot of the queue view in the Bookings app in Teams" lightbox="media/bookings-virtual-appointments-queue.png":::
 
 From the queue, schedulers can add a new booking, view relevant appointment details, and see appointment statuses throughout the day. They can also send email reminders to assigned staff and attendees and send SMS notifications to attendees for scheduled appointments.
 
