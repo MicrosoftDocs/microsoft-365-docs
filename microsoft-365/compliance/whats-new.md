@@ -46,19 +46,19 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data loss prevention
 
-- **In preview** Multiple updates for authorization groups in [Configure endpoint DLP settings](/microsoft-365/compliance/dlp-configure-endpoint-settings.md) and [Using Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using.md).
-    - [Printer groups](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#printer-groups-preview)
-    - [Removable USB storage device groups](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#removable-storage-device-groups-preview)
-    - [Network share paths](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#network-share-groups-preview)
-    - [Website groups](/microsoft-365/compliance/endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)
-    - [VPN network location groups](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#vpn-settings-preview)
-    - [Sensitive service domains](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#sensitive-service-domains)
+- **In preview** Multiple updates for authorization groups in [Configure endpoint DLP settings](/microsoft-365/compliance/dlp-configure-endpoint-settings) and [Using Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using).
+    - [Printer groups](/microsoft-365/compliance/dlp-configure-endpoint-settings#printer-groups-preview)
+    - [Removable USB storage device groups](/microsoft-365/compliance/dlp-configure-endpoint-settings#removable-storage-device-groups-preview)
+    - [Network share paths](/microsoft-365/compliance/dlp-configure-endpoint-settings#network-share-groups-preview)
+    - [Website groups](/microsoft-365/compliance/endpoint-dlp-using#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)
+    - [VPN network location groups](/microsoft-365/compliance/dlp-configure-endpoint-settings#vpn-settings-preview)
+    - [Sensitive service domains](/microsoft-365/compliance/dlp-configure-endpoint-settings#sensitive-service-domains)
 - **In preview** Polices can use grouping of conditions, nesting of groups and the use of boolean operators (AND/OR/NOT) between them.
-    - [Complex rule design](/microsoft-365/compliance/dlp-policy-design.md#complex-rule-design-preview)
-    - [Use trainable classifiers as conditions in DLP policies](/microsoft-365/compliance/dlp-policy-reference.md#location-support-for-how-content-can-be-defined)
+    - [Complex rule design](/microsoft-365/compliance/dlp-policy-design#complex-rule-design-preview)
+    - [Use trainable classifiers as conditions in DLP policies](/microsoft-365/compliance/dlp-policy-reference#location-support-for-how-content-can-be-defined)
 -  **In preview** For endpoints, support for detecting sensitive items that are password protected or encrypted.
-    - [Conditions that devices support](/microsoft-365/compliance/dlp-policy-reference.md#conditions-devices-supports)
-- **Generally available** [100 new files types that can be scanned](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments.md#supported-file-types-for-mail-flow-rule-content-inspection)
+    - [Conditions that devices support](/microsoft-365/compliance/dlp-policy-reference#conditions-devices-supports)
+- **Generally available** [100 new files types that can be scanned](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)
 
 ### Insider risk management
 
@@ -90,7 +90,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Call to action: [Migration guidance](sensitivity-labels-aip.md) to help you move from the AIP add-in for Office apps, with a [migration playbook](https://microsoft.github.io/ComplianceCxE/playbooks/AIP2MIPPlaybook) from our Customer Experience Engineering (CxE) team
 - **General availability (GA)**: Authentication contexts for label [groups and site settings](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) that work with Azure AD Conditional Access policies to enforce more stringent access conditions to a site.
 - **General availability (GA)**: [Site sharing permissions by using PowerShell](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings).
-- **Rolling out**: [Preventing copy to clipboard is honored for labeled and encrypted files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations), with some exceptions for relabeling scenarios.
+- **General availability (GA)**: [Preventing copy to clipboard is honored for labeled and encrypted files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations), with some exceptions for relabeling scenarios.
 - **In preview**: The AIP add-in for Office apps is [disabled by default](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) and requires a new setting to override this default.
 - Support statement: [Files types supported for SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types), after enabling sensitivity labels for these services.
 - New [prerequisite for co-authoring](sensitivity-labels-coauthoring.md#prerequisites) and the Azure Information Protection unified labeling client and scanner: It's not supported to use Double Key Encryption in the same tenant as the co-authoring feature.

@@ -312,4 +312,4 @@ The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.m
 
 First, check the junk or spam folder in your email client. DKIM and DMARC settings for your organization may cause these emails to end up filtered as spam.
 
-Next, check quarantine in the Security & Compliance Center. Often, messages containing a one-time pass code, especially the first ones your organization receives, end up in quarantine.
+Next, check quarantine in the Microsoft Purview compliance portal. Often, messages containing a one-time pass code, especially the first ones your organization receives, end up in quarantine.

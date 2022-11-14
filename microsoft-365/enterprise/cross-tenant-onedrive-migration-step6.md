@@ -76,7 +76,7 @@ Before starting the migration, the users current source OneDrive status will be 
 
 ## Cancelling a OneDrive migration
 
-You can stop the cross-tenant migration of a user's OneDrive by using the following command, provided the migration isn't In Progress or Success status.
+You can stop the cross-tenant migration of a user's OneDrive by using the following command, provided the migration doesn't have a status of *In Progress*, *Rescheduled* or *Success*.
 
 ```powershell
 

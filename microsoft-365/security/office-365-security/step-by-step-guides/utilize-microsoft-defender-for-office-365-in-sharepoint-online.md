@@ -24,7 +24,7 @@ search.appverid: met150
 
 # Use Microsoft Defender for Office 365 with SharePoint Online
 
-Microsoft SharePoint Online is a widely used user collaboration and file storage tool. The following steps help reduce the attack surface area in SharePoint Online and that help keep this collaboration tool in your organization secure. However, it’s important to note there is a balance to strike between security and productivity, and not all these steps may be relevant for your organizational risk profile. Take a look, test, and maintain that balance.
+Microsoft SharePoint Online is a widely used user collaboration and file storage tool. The following steps help reduce the attack surface area in SharePoint Online and that help keep this collaboration tool in your organization secure. However, it's important to note there is a balance to strike between security and productivity, and not all these steps may be relevant for your organizational risk profile. Take a look, test, and maintain that balance.
 
 ## What you'll need
 
@@ -39,7 +39,7 @@ If licensed for Microsoft Defender for Office 365 **(free 90-day evaluation avai
 
 To learn more, read [Step 1: Use the Microsoft 365 Defender portal to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams#step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams).
 
-1. Sign in to the [security center’s safe attachments configuration page](https://security.microsoft.com/safeattachmentv2).
+1. Sign in to the [security center's safe attachments configuration page](https://security.microsoft.com/safeattachmentv2).
 1. Select **Global settings**.
 1. Ensure that **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** is set to **on**.
 1. Select **Save**.
