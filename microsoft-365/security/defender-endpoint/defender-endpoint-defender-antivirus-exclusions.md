@@ -9,7 +9,7 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/11/2022
+ms.date: 11/14/2022
 ms.reviewer: pahuijbr, yongrhee
 manager: dansimp
 ms.subservice: mde
@@ -44,7 +44,7 @@ search.appverid: met150
 - [Suppressing an alert](#suppressing-alerts)
 - [Adding an exclusion or indicator](#exclusions-and-indicators)
 
-This article explains how these actions work, describes the various types of exclusions that can be defined for Defender for Endpoint and Microsoft Defender Antivirus, and provides an overview of how exclusions work.
+This article explains how these actions work, and describes the various types of exclusions that can be defined for Defender for Endpoint and Microsoft Defender Antivirus.
 
 > [!CAUTION]
 > Defining exclusions reduces the level of protection offered by Defender for Endpoint and Microsoft Defender Antivirus. Use exclusions as a last resort, and make sure to define only the exclusions that are necessary. Make sure to review your exclusions periodically, and remove the ones you no longer need. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) and [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md).
