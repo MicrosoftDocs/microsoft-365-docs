@@ -20,6 +20,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
+ms.date: 10/28/2022
 ---
 # Microsoft Teams Virtual Visits usage report
 
