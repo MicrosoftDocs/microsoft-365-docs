@@ -39,39 +39,43 @@ Identifying all devices in the organization that communicated with a suspected o
 
 You can find information from the following sections in the IP address view:
 
-- IP worldwide
-- Reverse DNS names
+- IP Geo information
 - Alerts related to this IP
-- IP in organization
-- Prevalence
+- IP in organization obserbations
+- Prevalence in organization
 
-## IP Worldwide and Reverse DNS names
+## IP Geo information
 
-The IP address details section shows attributes of the IP address such as its ASN and its Reverse DNS names.
+In the left pane the page provides IP details, when exist. 
+- Organization (ISP)
+- ASN
+- Country
+- State
+- City
+- Carrier
+- Latitude
+- Longitude
+- Postal code
 
 ## Alerts related to this IP
 
 The **Alerts related to this IP** section provides a list of alerts that are associated with the IP.
 
-## IP in organization
+## IP observed in organization
 
-The **IP in organization** section provides details on the prevalence of the IP address in the organization.
+The **IP in organization** section provides list of devices who had connection with this IP, and the last event details for each device (the list is limited to 100 devices).
 
 ## Prevalence
 
 The **Prevalence** section displays how many devices have connected to this IP address, and when the IP was first and last seen. You can filter the results of this section by time period; the default period is 30 days.
 
-## Most recent observed devices with IP
-
-The **Most recent observed devices** with IP section provides a chronological view on the events and associated alerts that were observed on the IP address.
 
 **Investigate an external IP:**
 
-1. Select **IP** from the **Search bar** drop-down menu.
 2. Enter the IP address in the **Search** field.
-3. Click the search icon or press **Enter**.
+3. Click on the IP suggestion box and open the IP side panel **Enter**.
 
-Details about the IP address are displayed, including: registration details (if available), reverse IPs (for example, domains), prevalence of devices in the organization that communicated with this IP Address (during selectable time period), and the devices in the organization that were observed communicating with this IP address.
+Details about the IP address are displayed, including: registration details (if available), prevalence of devices in the organization that communicated with this IP Address (during selectable time period), and the devices in the organization that were observed communicating with this IP address.
 
 > [!NOTE]
 > Search results will only be returned for IP addresses observed in communication with devices in the organization.
