@@ -178,7 +178,7 @@ When **Microsoft Outlook Report Message button** is **Off** ![Toggle off.](../..
 
 - **Use Microsoft's integrated Outlook reporting experience** section:
 
-  **Use this custom mailbox to receive user reported messages**: Select this option and enter the email address of an existing Exchange Online mailbox to read end user reports made using the third-party message reporting tools. _This reports won't be submitted to Microsoft but will be shown on user reported page under Actions & Submissions with result - Not Submitted to Microsoft. The result means that the end user reports made from third party reporting tools were not made to Microsoft and thus there is no result available._
+  **Use this custom mailbox to receive user reported messages**: Select this option and enter the email address of an existing Exchange Online mailbox to read end-user reports made using the third-party message reporting tools. _These reports won't be submitted to Microsoft but will be shown on the user reported page under Actions & Submissions with the result - Not Submitted to Microsoft. The result means that the end-user reports made from third-party reporting tools were not made to Microsoft and thus there is no result available._
   
 The only requirement while Microsoft is reading from that mailbox is that the original messages are included as uncompressed .EML or .MSG attachments in messages that are sent to user submissions mailbox. In other words, don't just forward the original messages to the user submissions mailbox.
 
