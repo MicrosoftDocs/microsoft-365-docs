@@ -78,14 +78,14 @@ Microsoft Defender Antivirus exclusions apply to some Microsoft Defender for End
 
 Following is a list of ASR rules that honor Microsoft Defender Antivirus exclusions:
 
-|exclusion name | ASR rules name |
-|:---|:---|
-| BlockAdobeCreateProcessRule | [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) |
-| BlockKnownRemotingToolCreateProcessRule | [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |
-| BlockLsassCredentialTheft | [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |
-| BlockOfficeCreateProcessRule | [Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) |
-| BlockOfficeInjectionRule | [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) |
-| BlockOutlookCreateProcessRule | [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |
+| ASR rules name: |
+|:---|
+| [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) |
+| [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |
+| [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |
+| [Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) |
+| [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) |
+| [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |
 
 ## ASR rules supported operating systems
 
