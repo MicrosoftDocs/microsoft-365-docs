@@ -38,7 +38,6 @@ The DLP on-premises scanner relies on a full implementation of the Azure Informa
 - [What is Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Learn about the information protection scanner](deploy-scanner.md)
 - [Get started with the information protection scanner](deploy-scanner-prereqs.md)
-- [Tutorial: Installing the Azure Information Protection (AIP) unified labeling scanner](/azure/information-protection/tutorial-install-scanner)
 - [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md)
 - [Azure Information Protection unified labeling client - Version release history and support policy](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 

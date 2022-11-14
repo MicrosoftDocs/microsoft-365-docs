@@ -77,7 +77,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 ### DLP on-premises scanner prerequisites
 
 - The Azure Information Protection (AIP) scanner implements DLP policy matching and policy enforcement. The scanner is installed as part of the AIP client so your installation must meet all the prerequisites  for AIP, the AIP client, and the AIP unified labeling scanner.
-- Deploy the AIP  client and scanner. For more information see, [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) and [], see [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md).
+- Deploy the AIP  client and scanner. For more information see, [Install the AIP unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) and, [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md).
 - There must be at least one label and policy published in the tenant, even if all your detection rules are based on sensitive information types only.
 
 ## Deploy the DLP on-premises scanner
