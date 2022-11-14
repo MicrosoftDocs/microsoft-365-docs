@@ -99,10 +99,10 @@ For the latest Office apps, the AIP add-in is disabled by default, so there's no
 - **Current Channel** and **Monthly Enterprise Channel**: Not before version 2211+ (not yet released)
 - **Semi-Annual Channel**: Not before version 2301+ (not yet released)
 
-If you have one of these versions, and need to use the AIP add-in rather than built-in labeling, you have to [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
+If you have a version that disabled the AIP add-in by default, and you need to use the AIP add-in rather than built-in labeling, you must [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
 
 > [!IMPORTANT]
-> If you’ve previously used the AIP add-in as the default labeling client in Office apps and use Office versions listed in this section, the AIP add-in is automatically disabled and replaced by built-in labeling.
+> If you’ve previously used the AIP add-in as the default labeling client in Office apps and use Office versions identified in this section, the AIP add-in could be automatically disabled and replaced by built-in labeling.
 
 To disable the AIP add-in for older versions, see the next section.
 
