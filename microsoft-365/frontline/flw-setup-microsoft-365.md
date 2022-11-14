@@ -32,7 +32,7 @@ To set up Microsoft 365 for frontline workers, follow this overall process:
 1. **[Configure security](#step-6-configure-security)**: Learn how to create security policies to keep your organization secure.
 1. **[Configure apps](#step-7-configure-apps-for-your-scenario)**: After everything is set up and configured in the admin center, you can follow the guidance for your scenarios to further configure the apps you need for each scenario.
 
-![Steps to set up Microsoft 365 for frontline workers.](media/setup-steps.png)
+[![Steps to set up Microsoft 365 for frontline workers.](media/setup-steps.png)](media/setup-steps.png#lightbox)
 
 ## Step 1: Identify your scenarios
 
