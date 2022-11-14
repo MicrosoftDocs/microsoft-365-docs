@@ -413,7 +413,7 @@ For example, you need to protect against data leaks for a highly confidential pr
 
 ### Create a priority user group
 
-To create a new priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group).
+To create a new priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. You must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group.
 
 Complete the following steps to create a priority user group:
 
