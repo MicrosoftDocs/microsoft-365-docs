@@ -32,7 +32,7 @@ To set up Microsoft 365 for frontline workers, follow this overall process:
 1. **[Configure security](#step-6-configure-security)**: Learn how to create security policies to keep your organization secure.
 1. **[Configure apps](#step-7-configure-apps-for-your-scenario)**: After everything is set up and configured in the admin center, you can follow the guidance for your scenarios to further configure the apps you need for each scenario.
 
-:::image type="content" source="media/m365-frontline-setup-steps.png" alt-text="Steps to set up Microsoft 365 for frontline workers." lightbox="media/m365-frontline-setup-steps.png":::
+![Steps to set up Microsoft 365 for frontline workers.](media/setup-steps.png)
 
 ## Step 1: Identify your scenarios
 
@@ -62,7 +62,7 @@ The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterp
 
 ### Provision users
 
-Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses. Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Azure AD](/azure/active-directory/roles/permissions-reference).
+Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses. Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Azure AD](/azure/active-directory/roles/permissions-reference). [Learn more about what Azure AD admin roles you might need for Microsoft 365.](/microsoft-365/admin/add-users/about-admin-roles).
 
 In this step, you'll create user identities for your frontline workers in Azure AD. You can import users in three ways:
 
