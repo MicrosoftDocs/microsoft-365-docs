@@ -402,6 +402,8 @@
           items: 
             - name: Manage access
               href: m365d-permissions.md
+            - name: Manage role-based access control
+              href: manage-rbac.md
             - name: Custom roles in role-based access 
               href: custom-roles.md
             - name: Set time zone
