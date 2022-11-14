@@ -94,7 +94,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
      - **Data Type** as **String (XML file)**
        - **Custom XML** as selected XML file
 
-         Take a look at the **Overview** -> **Removable storage group**, you can create different group types. Here's one group example XML file for any removable storage and CDROM and Windows portable devices: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
+         Take a look at the **Overview** -> **Removable storage group**, you can create different group types. Here's [one group example XML file for any removable storage and CDROM and Windows portable devices](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml).
 
        :::image type="content" source="images/any-removable-storage-group.png" alt-text="Screenshot of creating any Removable Storage Group." lightbox="images/any-removable-storage-group.png":::
 
