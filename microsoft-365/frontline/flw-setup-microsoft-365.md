@@ -60,9 +60,11 @@ The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterp
 
 ## Step 3: Provision users, configure groups, and assign licenses
 
+Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses.
+
 ### Provision users
 
-Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses. Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Azure AD](/azure/active-directory/roles/permissions-reference). [Learn more about what Azure AD admin roles you might need for Microsoft 365.](/microsoft-365/admin/add-users/about-admin-roles).
+Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses. Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Azure AD](/azure/active-directory/roles/permissions-reference). [Learn more about what Azure AD admin roles you might need for Microsoft 365](/microsoft-365/admin/add-users/about-admin-roles).
 
 In this step, you'll create user identities for your frontline workers in Azure AD. You can import users in three ways:
 
@@ -120,6 +122,8 @@ Registering devices in Azure AD creates a unique identity that can be used to se
 **iOS:** Not currently available.
 
 ### BYOD device enrollment with Intune
+
+Use Microsoft Intune to keep your frontline workers' devices secure and protected. Learn more about how to enroll different types of BYOD devices in Intune:
 
 - [Windows](/mem/intune/enrollment/windows-enrollment-methods#user-self-enrollment-in-intune)
 - [Android](/mem/intune/enrollment/android-work-profile-enroll)
