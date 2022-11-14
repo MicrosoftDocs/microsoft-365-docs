@@ -78,14 +78,14 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
    - In the **Define device control policy groups** window, specify the network share file path containing the XML groups data.
 
-   Take a look at the **Overview** > **Removable storage group**. You can create different group types. Here is one group example XML file for any removable storage and CDROM and Windows portable devices and approved USBs group: [XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)
+   Take a look at the **Overview** > **Removable storage group**. You can create different group types. Here's one group example XML file for any removable storage and CDROM and Windows portable devices and approved USBs group: [XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)
          
 > [!NOTE]
 > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
 4. Create one XML file for access policy rule(s):
 
-   Use the properties in removable storage access policy rule(s) to create a XML for each group's removable storage access policy rule, save the XML file to network share, and devlier the setting setting as follows:
+   Use the properties in removable storage access policy rule(s) to create an XML for each group's removable storage access policy rule, save the XML file to network share, and deliver the setting as follows:
 
    - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Device Control** > **Define device control policy rules**.
 
@@ -93,7 +93,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
    - In the **Define device control policy rules** window, select **Enabled**, and enter the network share file path containing the XML rules data.
 
-   Take a look at the **Overview** -> **Access policy rule**, you can use **Parameters** to set condition for sepcific Entry. Here is one [example XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml).
+   Take a look at the **Overview** -> **Access policy rule**, you can use **Parameters** to set condition for specific Entry. Here's one [example XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml).
 
 > [!NOTE]
 > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
@@ -110,7 +110,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 ## Scenarios
 
-Here are some common scenarios to help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control. Note that in the following samples, 'Default Enforcement' hasn't been used because the 'Default Enforcement' will apply to both the removable storage and the printer.
+Here are some common scenarios to help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control. In the following samples, 'Default Enforcement' hasn't been used because the 'Default Enforcement' will apply to both the removable storage and the printer.
 
 ### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
 
@@ -187,7 +187,7 @@ For this scenario, you need to create two groups - one group for any removable s
 
 ### Scenario 3: Block read and execute access to specific file extension
 
-For this scenario, you need to create two groups - one removable storage group for any removable storage and another group for unallowed file extensions. You also need to create one policy - deny read and execute access to any file under the allowed file extension group for defeined removable storage group.
+For this scenario, you need to create two groups: one removable storage group for any removable storage and another group for unallowed file extensions. You also need to create one policy - deny read and execute access to any file under the allowed file extension group for defined removable storage group.
 
 1. Create groups
 
@@ -201,7 +201,7 @@ For this scenario, you need to create two groups - one removable storage group f
     > [!TIP]
     > Explicily mark the Type attribute on the group as **File**
 
-    2. Policy 2: Deny read and execute access to any file under the allowed file extension group for defeined removable storage group.
+    2. Policy 2: Deny read and execute access to any file under the allowed file extension group for defined removable storage group.
 
         ![image](https://user-images.githubusercontent.com/81826151/200713006-c0d39e2b-9acc-4522-9f88-e064eeb3a4ae.png)
     
