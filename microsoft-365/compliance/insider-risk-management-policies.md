@@ -216,7 +216,7 @@ With privacy on by default, insider risk indicators help identify unusual levels
 Insider risk management analysts and investigators may use cumulative exfiltration detection insights to help identify exfiltration activities that may not typically generate [alerts](insider-risk-management-activities.md#alert-dashboard) but are above what is typical for their organization. Some examples may be departing users slowly exfiltrate data across a range of days, or when users repeatedly share data across multiple channels more than usual for data sharing for your organization, or compared to their peer groups.
 >[!NOTE]
 > By default, cumulative exfiltration detection generates risk scores based on a user's cumulative exfiltration activity compared to their organization norms. You can enable *Cumulative exfiltration detection* options in the **Policy indicators** section of the Insider risk management settings page.
-Higher risk scores are assigned to cumulative exfiltration activities for SharePoint sites, sensitive information types, and content with [sensitivity labels](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) configured as priority content in a policy or for activity involving labels configured as high priority in Microsoft Purview Information Protection.
+Higher risk scores are assigned to cumulative exfiltration activities for SharePoint sites, sensitive information types, and content with [sensitivity labels](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) configured as priority content in a policy or for activity involving labels configured as high priority in [Microsoft Purview Information Protection](compliance/information-protection.md).
 
 Cumulative exfiltration detection is enabled by default when using the following policy templates:
 
@@ -229,7 +229,7 @@ Cumulative exfiltration detection is enabled by default when using the following
 
 Insider risk management identifies three types of peer groups for analyzing exfiltration activity performed by users. Peer groups defined for users are based on the following criteria:
 
-**SharePoint sites**: Insider risk management identifies peer groups based on users who access similar SharePoint sites as the user. 
+**SharePoint sites**: Insider risk management identifies peer groups based on users who access similar SharePoint sites. 
 
 **Similar organization**: Users with reports and team members based on organization hierarchy. This option requires that your organization uses Azure Active Directory (Azure AD) to maintain organization hierarchy. 
 
