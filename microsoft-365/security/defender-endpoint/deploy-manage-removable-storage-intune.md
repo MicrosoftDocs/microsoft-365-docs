@@ -236,8 +236,6 @@ For this scenario, you need to create two groups - one removable storage group f
     > Explicily mark the Type attribute on the group as **File**
 
     2. Policy 2: Deny read and execute access to any file under the allowed file extension group for defined removable storage group.
-
-        ![image](https://user-images.githubusercontent.com/81826151/200713006-c0d39e2b-9acc-4522-9f88-e064eeb3a4ae.png)
     
     What does '40' mean in the policy? It's 8 + 32 = 40:
 
