@@ -126,6 +126,8 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
 
 - If an admin changes settings for a published label that's already applied to files downloaded to users' sync client, users might be unable to save changes they make to the file in their OneDrive Sync folder. This scenario applies to files that are labeled with encryption, and also when the label change is from a label that didn't apply encryption to a label that does apply encryption. Users see a [red circle with a white cross icon error](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3), and they are asked to save new changes as a separate copy. Instead, they can close and reopen the file, or use Office for the web.
 
+- Sensitivity labels that are configured for [automatic labeling](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) are supported for Office on the web when the label settings for conditions are for sensitive information types only. Automatic labeling isn't supported for Office on the web when the conditions include trainable classifiers.
+
 - Users can experience save problems after going offline or into a sleep mode when instead of using Office for the web, they use the desktop and mobile apps for Word, Excel, or PowerPoint. For these users, when they resume their Office app session and try to save changes, they see an upload failure message with an option to save a copy instead of saving the original file.
 
 - Documents that have been encrypted in the following ways can't be opened in Office for the web:

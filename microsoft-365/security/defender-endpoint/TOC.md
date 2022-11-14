@@ -249,7 +249,6 @@
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
-#### [Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md)
 #### [Enable Corelight data integration](corelight-integration.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
@@ -501,6 +500,13 @@
 
 ### [Experts on Demand](experts-on-demand.md)
 
+## [Enterprise IoT security]()
+
+### [Securing IoT devices in the enterprise]()
+### [Onboard an Enterprise IoT plan on your Azure subscription]()
+### [Onboard Enterprise IoT sensors]()
+### [Manage Enterprise IoT plans]()
+
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
 ### [Configure integration with other Microsoft solutions]()
@@ -689,7 +695,7 @@
 ##### [Stream advanced hunting events to your storage account](raw-data-export-storage.md)
 
 #### [SIEM integration]()
-##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
+##### [Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API](configure-siem.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Partners & APIs]()
