@@ -88,6 +88,9 @@ To view more details about risk activity for a user, open the user details pane 
   - **Name and title**: Name and position title for the user from Azure Active Directory. These user fields will be anonymized or empty if the global anonymization setting for insider risk management is enabled.
   - **User details**: Lists whether the user has been identified as a potential high impact user or if the user is in priority user groups. 
   - **Alert and activity summary**: Lists active user alerts and open cases.
+  - **User email**: Email address for the user.
+  - **Alias**: Network alias for the user.
+  - **Organization or department**: Organization or department for the user.
   - **In scope**: Lists in-scope assignment of the user to policies.
 
 - **User activity** tab
