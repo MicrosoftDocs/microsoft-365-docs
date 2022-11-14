@@ -174,22 +174,22 @@ When you're finished on the **User submissions** page, click **Save**. To restor
 
 You can turn off the Microsoft integrated reporting experience to use third-party message reporting tools to send reported messages to the user submissions mailbox.
 
-The only requirement is that the original messages are included as uncompressed .EML or .MSG attachments in messages that are sent to user submissions mailbox. In other words, don't just forward the original messages to the user submissions mailbox.
-
-> [!NOTE]
-> If multiple email attachments exist in the message, then the submission will be discarded. We only support message with one email attachment.
-
-The message formatting requirements are described in the next section. The formatting is optional, but reported messages don't follow the prescribed format, the reported messages are always identified as phishing.
-
-When **Microsoft Outlook Report Message button** is **Off** ![Toggle off.](../../media/scc-toggle-off.png) the following settings are available on the **User submissions** page:
+When **Microsoft Outlook Report Message button** is **Off** ![Toggle off.](../../media/scc-toggle-off.png) the following settings are available on the **User reported settings** page:
 
 - **Use Microsoft's integrated Outlook reporting experience** section:
 
-  **Use this custom mailbox to receive user reported messages**: Select this option and enter the email address of an existing Exchange Online mailbox to use as the user submissions mailbox. Distribution groups are not allowed.
+  **Use this custom mailbox to receive user reported messages**: Select this option and enter the email address of an existing Exchange Online mailbox to hold user-reported messages from third-party message reporting tools. These messages are not submitted to Microsoft. They appear on the **User reported** tab of the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. The **Result** value for these entries is **Not Submitted to Microsoft**.
+  
+  A reported message that's sent to the user submissions mailbox must include the original message as an uncompressed .EML or .MSG attachment. Don't forward the original message to the user submissions mailbox.
+
+  > [!NOTE]
+  > Messages that contain multiple attached messages will be discarded. We support only one attached original message in a reported message.
+
+  The message formatting requirements are described in the next section. The formatting is optional, but if reported messages don't follow the prescribed format, they're always identified as phishing.
 
 - **Customize your organization's experience when reporting potential threats in quarantine** section:
 
-  **Quarantine report message button**: Verify this setting is **On** ![Toggle on.](../../media/scc-toggle-on.png) to let users report messages from quarantine. Otherwise, turn this setting **Off** ![Toggle off.](../../media/scc-toggle-off.png).
+  **Quarantine report message button**: Verify this setting is **On** ![Toggle on.](../../media/scc-toggle-on.png) to let users report messages from quarantine. Otherwise, turn this setting **Off** ![Toggle off.](../../media/scc-toggle-off.png). 
 
 When you're finished on the **User submissions** page, click **Save**. To restore the settings to their immediately previous values, click **Restore**.
 
