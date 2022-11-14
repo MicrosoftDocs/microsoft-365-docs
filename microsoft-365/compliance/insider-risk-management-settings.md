@@ -433,7 +433,7 @@ Complete the following steps to create a priority user group:
 
 ### Update a priority user group
 
-To update an existing priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group).
+To update an existing priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. You must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group.
 
 Complete the following steps to edit a priority user group:
 
