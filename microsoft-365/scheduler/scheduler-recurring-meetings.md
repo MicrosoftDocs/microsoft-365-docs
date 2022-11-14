@@ -13,6 +13,9 @@ description: "Users can learn more about scheduling dynamic recurring meetings."
 
 # Scheduling Dynamic Recurring Meetings
 
+> [!IMPORTANT]
+> Scheduler for Microsoft 365 will stop working in August 2023. After that date, Scheduler won't be able to create or modify any meeting requests.
+
 Scheduler's dynamic meetings work around the user's busy schedule. Recurring meetings managed by Scheduler behave differently than traditional recurring meetings in Outlook. To keep your future calendar open and minimize conflicts with attendees, Scheduler will schedule one instance of a recurring meeting at a time.
 
 As an example, asking Cortana to "Schedule 30 minutes of focus time every day" will initially create one 30 minute appointment for the next available date on your calendar.  Once that appointment time has passed, Scheduler will proceed to book another instance on the following date. If the original time slot is not currently available, then Scheduler will adjust the time based on your availability.
