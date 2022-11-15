@@ -136,7 +136,7 @@ Zero-touch provisioning of shared device mode isn’t currently supported by thi
 > [!NOTE]
 > While these steps register the device in Azure AD, they don't connect Azure AD to the MDM solution. Conditional access won't be available for these devices.
 
-[Learn more about configuration with VMware Workspace ONE](https://docs.vmware.com/VMware-Workspace-ONE-UEM/2011/Android_Platform/GUID-AWT-SHAREDDEVICESOVERVIEW.html) and [SOTI](https://www.soti.net/mc/help/v15.0/console/configurations/advancedconfigurations/shareddevice/shareddevice.html).
+[Learn more about configuration with VMware Workspace ONE](https://docs.vmware.com/en/VMware-Workspace-ONE-Access/21.08/ws1_access_connector_install/GUID-271C47F6-856C-40F0-97AB-A8AD95025F9C.html) and [SOTI](https://www.soti.net/mc/help/v15.0/en/console/configurations/advancedconfigurations/shareddevice/shareddevice.html).
 
 If you choose to manually configure devices in shared device mode, you’ll need to take more steps to re-enroll Android devices in shared device mode when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
 
