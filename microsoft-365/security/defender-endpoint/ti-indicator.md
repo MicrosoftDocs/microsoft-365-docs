@@ -109,3 +109,8 @@ For more information on the description of the response action types, see [Creat
     "rbacGroupNames": ["team1"]
 }
 ```
+
+## See also
+
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-defender-antivirus-exclusions.md)
+
