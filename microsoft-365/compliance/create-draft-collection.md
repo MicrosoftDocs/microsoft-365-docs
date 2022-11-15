@@ -84,7 +84,7 @@ Additionally, you can now monitor the progress of the estimate that shows how ma
     - **Sources Unavailable**: Sources that were unavailable during the period that the estimate was in progress.
 - **Collection estimate items and size**: The number of items and size of the collection estimate.
 
-IN-PROGRESS SCREENSHOT
+![In-progress information for a collection estimate.](../media/ediscovery-collection-estimate-in-progress.png)
 
 When the collection is complete, the following columns and corresponding values on the **Collection** page are updated:
 
@@ -94,17 +94,20 @@ When the collection is complete, the following columns and corresponding values 
 
 - **Estimate status**: Indicates the status of the estimated search results and whether or not the search estimates and statistics are ready for review. A value of **Successful** indicates the results of the collection estimate are ready for review. After you first submit a collection estimate, a value of **In progress** is displayed to indicate the collection is still running
 
-- **Preview status**: Indicates the status of the sample items that you can preview. A value of **Successful** indicates the items are ready for preview. After you first submit a collection estimate, a value of **In progress** is displayed to indicate that the collection is still running.
+- **Preview status**: Indicates the status of the sample items that you can preview. A value of **Successful** indicates the items are ready for preview. After you first submit a collection estimate, a value of **In progress** is displayed to indicate that the collection estimate is still running.
 
 ## Next steps after a collection estimate is complete
 
-After the collection estimate is successfully completed, you can perform various tasks. To perform most of these tasks, just go the **Collections** tab and select the name of the collection estimate to display the flyout page.
+After the collection estimate is successfully completed, you can perform various tasks. To perform most of these tasks, go the **Collections** tab and select the name of the collection estimate to display the flyout page.
 
-![Flyout page for a collection estimate.](../media/DraftCollectionFlyoutPage.png)
+![Flyout page for a collection estimate.](../media/ediscovery-collection-estimate-flyout-page.png)
 
 Here's a list of things you can do from the collection flyout page:
 
-- Select the **Summary** tab to view summary information about the collection and the estimated search results returned by the collection. This includes that total number of items and size of the estimated search results, the number of mailboxes and sites contained search results, and the search conditions (if used) used to scope the collection.
+- Select the **Summary** tab to view summary information about the collection and the estimated search results returned by the collection. This includes:
+
+    - **Collection overview (preview)** section: This section includes the **Locations with hits** sub-section that provides data on the total number of locations searched and the number of locations that contained items resulting in hits. For example, a collection scoped to Exchange Online mailboxes and SharePoint sites may summarize results by the number of mailboxes and sites searched, and the combined number of mailboxes and sites that had hits. This section also includes the **Pre-collection estimate** sub-section that displays the total number of items and size of the estimated search results. You have the option to add these items to the review set for inspection.
+    - **Collection parameters** section: This section includes information about additional locations, when the collection was created and modified, and a summary of the estimate items, size, and any unindexed items and size.
 
 - Select the **Data sources** tab to view a list of custodians and non-custodial data sources) that were searched in the collection. Any additional content locations that were search are listed under **Locations** on the **Summary** tab.
 
@@ -112,17 +115,18 @@ Here's a list of things you can do from the collection flyout page:
 
 - Select **Review sample** (located at the bottom of the flyout page) to preview a sample of the items returned by the collection.
 
-- Commit the collection estimate to a review set (by selecting **Actions** > **Commit collection**). This means that you rerun the collection (using the current settings) and add the items returned by the collection to a review set. As previously explained, you can also configure additional settings (such as conversation threading and cloud-based attachments) when you add the collection to a review set. For more information and step-by-step instructions, see [Commit a collection estimate to a review set](commit-draft-collection.md).
+- Take actions on the collection estimate by selecting choices in the **Actions** menu. See the following section for more information about the available management options.
 
 ## Manage a collection estimate
 
 You can use the options in the **Actions** menu on the flyout page of a collection estimate to perform various management tasks.
 
-![Options on Actions menu for collection estimate.](../media/DraftCollectionActionsMenu.png)
+![Options on Actions menu for collection estimate.](../media/ediscovery-collection-estimate-actions-menu.png)
 
 Here's the descriptions of the management options.
 
 - **Edit collection**: Change the settings of the collection estimate. After you make changes, you can rerun the collection and update the search estimates and statistics. As previously explained, you use this option to commit a collection estimate to a review set.  
+- **Commit collection**: Commit a collection to a review set. This means that you rerun the collection (using the current settings) and add the items returned by the collection to a review set. As previously explained, you can also configure additional settings (such as conversation threading and cloud-based attachments) when you add the collection to a review set. For more information and step-by-step instructions, see [Commit a collection estimate to a review set](commit-draft-collection.md).
 - **Delete collection**: Delete a collection estimate. After a collection estimate is committed to a review set, it can't be deleted.
 - **Refresh estimates**: Rerun the query (against the data sources) specified in the collection estimate to update the search estimates and statistics.
 - **Export as report**: Exports information about the collection estimate to a CSV file that you can download to your local computer. The export report contains the following information:
