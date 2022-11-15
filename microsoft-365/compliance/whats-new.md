@@ -38,6 +38,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## November 2022
+
+### On-premises scanner
+
+- **General availability (GA)**: Configuration for the Microsoft Purview Information Protection scanner (formerly named Azure Information Protection unified labeling scanner) in the Microsoft Purview compliance portal. For more information, see [Configure & install the information protection scanner](deploy-scanner-configure-install.md).
+
 ## October 2022
 
 ### Communication compliance
@@ -46,19 +52,19 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data loss prevention
 
-- **In preview** Multiple updates for authorization groups in [Configure endpoint DLP settings](/microsoft-365/compliance/dlp-configure-endpoint-settings.md) and [Using Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using.md).
-    - [Printer groups](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#printer-groups-preview)
-    - [Removable USB storage device groups](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#removable-storage-device-groups-preview)
-    - [Network share paths](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#network-share-groups-preview)
-    - [Website groups](/microsoft-365/compliance/endpoint-dlp-using.md#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)
-    - [VPN network location groups](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#vpn-settings-preview)
-    - [Sensitive service domains](/microsoft-365/compliance/dlp-configure-endpoint-settings.md#sensitive-service-domains)
+- **In preview** Multiple updates for authorization groups in [Configure endpoint DLP settings](/microsoft-365/compliance/dlp-configure-endpoint-settings) and [Using Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using).
+    - [Printer groups](/microsoft-365/compliance/dlp-configure-endpoint-settings#printer-groups-preview)
+    - [Removable USB storage device groups](/microsoft-365/compliance/dlp-configure-endpoint-settings#removable-storage-device-groups-preview)
+    - [Network share paths](/microsoft-365/compliance/dlp-configure-endpoint-settings#network-share-groups-preview)
+    - [Website groups](/microsoft-365/compliance/endpoint-dlp-using#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview)
+    - [VPN network location groups](/microsoft-365/compliance/dlp-configure-endpoint-settings#vpn-settings-preview)
+    - [Sensitive service domains](/microsoft-365/compliance/dlp-configure-endpoint-settings#sensitive-service-domains)
 - **In preview** Polices can use grouping of conditions, nesting of groups and the use of boolean operators (AND/OR/NOT) between them.
-    - [Complex rule design](/microsoft-365/compliance/dlp-policy-design.md#complex-rule-design-preview)
-    - [Use trainable classifiers as conditions in DLP policies](/microsoft-365/compliance/dlp-policy-reference.md#location-support-for-how-content-can-be-defined)
+    - [Complex rule design](/microsoft-365/compliance/dlp-policy-design#complex-rule-design-preview)
+    - [Use trainable classifiers as conditions in DLP policies](/microsoft-365/compliance/dlp-policy-reference#location-support-for-how-content-can-be-defined)
 -  **In preview** For endpoints, support for detecting sensitive items that are password protected or encrypted.
-    - [Conditions that devices support](/microsoft-365/compliance/dlp-policy-reference.md#conditions-devices-supports)
-- **Generally available** [100 new files types that can be scanned](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments.md#supported-file-types-for-mail-flow-rule-content-inspection)
+    - [Conditions that devices support](/microsoft-365/compliance/dlp-policy-reference#conditions-devices-supports)
+- **Generally available** [100 new files types that can be scanned](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)
 
 ### Insider risk management
 
