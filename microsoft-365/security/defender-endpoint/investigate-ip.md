@@ -41,7 +41,7 @@ You can find information from the following sections in the IP address view:
 
 - IP geo information
 - Alerts related to this IP
-- IP in organization obserbations
+- IP in organization observations
 - Prevalence in organization
 
 ## IP Geo information
