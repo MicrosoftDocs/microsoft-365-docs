@@ -20,7 +20,7 @@ ms.collection:
 
 Microsoft Privacy and Security product terms included with Microsoft's Cloud product terms provides data residency commitment with the following scope:
 
-1. Online Services: Exchange Online, SharePoint Online and Microsoft Teams as of [need date].
+1. Online Services: Exchange Online, SharePoint Online, and Microsoft Teams (as of Nov 1, 2022).
 2. Commitments period: The length of the customers contract with Microsoft. Typically, this is 1-3 years.
 3. Country/regions included: Local Geographies, United States and the European Union.
 
