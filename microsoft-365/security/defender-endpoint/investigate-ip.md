@@ -39,7 +39,7 @@ Identifying all devices in the organization that communicated with a suspected o
 
 You can find information from the following sections in the IP address view:
 
-- IP Geo information
+- IP geo information
 - Alerts related to this IP
 - IP in organization obserbations
 - Prevalence in organization
