@@ -16,6 +16,7 @@ ms.collection:
   - highpri
 appliesto: 
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 
 ---
 
