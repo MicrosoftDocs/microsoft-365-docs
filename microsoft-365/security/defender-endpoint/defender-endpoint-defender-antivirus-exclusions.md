@@ -9,7 +9,7 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/14/2022
+ms.date: 11/15/2022
 ms.reviewer: pahuijbr, yongrhee
 manager: dansimp
 ms.subservice: mde
@@ -49,7 +49,7 @@ This article explains how these actions work, and describes the various types of
 
 ## Submissions, suppressions, and exclusions
 
-When you’re dealing with false positives, or known entities that are generating alerts, you might or might not need an exclusion. Sometimes classifying and suppressing an alert is enough. We recommend submitting false positives (and false negatives) to Microsoft for analysis as well. The following table describes some scenarios and what steps to take with respect to file submissions, alert suppressions, and exclusions.
+When you’re dealing with false positives, or known entities that are generating alerts, you don't necessarily need to add an exclusion. Sometimes classifying and suppressing an alert is enough. We recommend submitting false positives (and false negatives) to Microsoft for analysis as well. The following table describes some scenarios and what steps to take with respect to file submissions, alert suppressions, and exclusions.
 
 | Scenario | Steps to consider |
 |:---|:----|
@@ -190,7 +190,13 @@ You can specify folders, file extensions in a specific directory, and file names
 
 ## How exclusions and indicators are evaluated
 
-Most organizations have several different types of exclusions and indicators to determine whether users should be able to access and use a file or process. Exclusions and indicators are processed in a particular order so that [policy conflicts are handled systematically](indicator-file.md#policy-conflict-handling). Figure 1 summarizes the following process of how exclusions and indicators are handled across Defender for Endpoint and Microsoft Defender Antivirus:
+Most organizations have several different types of exclusions and indicators to determine whether users should be able to access and use a file or process. Exclusions and indicators are processed in a particular order so that [policy conflicts are handled systematically](indicator-file.md#policy-conflict-handling). 
+
+The following image summarizes how exclusions and indicators are handled across Defender for Endpoint and Microsoft Defender Antivirus:
+
+:::image type="content" source="images/mdav-mde-flow.png" alt-text="Shows the order in which exclusions and indicators are evaluated." lightbox="images/mdav-mde-flow.png":::
+
+Here's how it works:
 
 1. If a detected file/process isn’t allowed by Windows Defender Application Control and AppLocker, it’s blocked. Otherwise, it proceeds to Microsoft Defender Antivirus.
 
@@ -201,8 +207,6 @@ Most organizations have several different types of exclusions and indicators to 
 4. If the detected file/process isn’t blocked by attack surface reduction rules, controlled folder access, or SmartScreen protection, it proceeds to Microsoft Defender Antivirus.  
 
 5. If the detected file/process isn’t allowed by Microsoft Defender Antivirus, it’s checked for an action based on its threat ID.
-
-:::image type="content" source="images/mdav-mde-flow.png" alt-text="Shows the order in which exclusions and indicators are evaluated." lightbox="images/mdav-mde-flow.png":::
 
 ## How policy conflicts are handled
 
@@ -216,17 +220,23 @@ In cases where indicators conflict, here’s what to expect:
 
 ## How automated investigation and remediation works with indicators
 
-[Automated investigation and remediation capabilities](automated-investigations.md) in Defender for Endpoint first determine a verdict for each piece of evidence, and then take an action depending on Defender for Endpoint indicators. Thus, a file/process could get a verdict of “good” (which means no threats were found) and still be blocked if there’s an indicator with that action. Similarly, an entity could get a verdict of “bad” (which means it’s determined to be malicious) and still be allowed if there’s an indicator with that action. The following diagram shows how [automated investigation and remediation works with indicators](manage-indicators.md#automated-investigation-and-remediation-engine):
+[Automated investigation and remediation capabilities](automated-investigations.md) in Defender for Endpoint first determine a verdict for each piece of evidence, and then take an action depending on Defender for Endpoint indicators. Thus, a file/process could get a verdict of “good” (which means no threats were found) and still be blocked if there’s an indicator with that action. Similarly, an entity could get a verdict of “bad” (which means it’s determined to be malicious) and still be allowed if there’s an indicator with that action. 
+
+The following diagram shows how [automated investigation and remediation works with indicators](manage-indicators.md#automated-investigation-and-remediation-engine):
 
 :::image type="content" source="images/air-exclusions.png" alt-text="Shows automated investigation and remediation and indicators" lightbox="images/air-exclusions.png":::
 
 ## Additional server workloads and exclusions
 
-If your organization is using additional server workloads, such as Exchange Server, SharePoint Server, or SQL Server, be aware that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by the Automatic Exclusions feature (and only when using their default installation location). You’ll likely need to define antivirus exclusions for these additional workloads, or for all workloads if you disable Automatic Exclusions. Refer to the technical documentation for your server to identify and implement the exclusions you need. Here are some examples:
+If your organization is using additional server workloads, such as Exchange Server, SharePoint Server, or SQL Server, be aware that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by the Automatic Exclusions feature (and only when using their default installation location). You’ll likely need to define antivirus exclusions for these additional workloads, or for all workloads if you disable Automatic Exclusions. 
+
+Here are some examples of technical documentation to identify and implement the exclusions you need: 
 
 - [Running antivirus software on Exchange Server](/exchange/antispam-and-antimalware/windows-antivirus-software?view=exchserver-2019&preserve-view=true)
 - [Folders to exclude from antivirus scans on SharePoint Server](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
 - [Choosing antivirus software for SQL Server](https://support.microsoft.com/topic/how-to-choose-antivirus-software-to-run-on-computers-that-are-running-sql-server-feda079b-3e24-186b-945a-3051f6f3a95b)
+
+Depending on what you're using, you might need to refer to additional documentation. 
 
 ## See also
 
