@@ -1,6 +1,6 @@
 ---
 title: Corporate communications with frontline workers
-description: Learn how you can use Viva Connections and Yammer to connect your frontline team to your broader organization.
+description: Learn how you can use Viva Connections and Viva Engage to connect your frontline team to your broader organization.
 ms.topic: conceptual
 author: daisyfeller
 ms.author: daisyfeller
@@ -28,7 +28,7 @@ ms.date: 09/27/2022
 
 # Corporate communications with frontline workers
 
-Keep your frontline team connected with your broader organization by using Yammer and Viva Connections.
+Keep your frontline team connected with your broader organization by using Viva Engage and Viva Connections.
 
 ## Connect information from across the organization with Viva Connections
 
@@ -48,18 +48,18 @@ With Microsoft Teams, Viva Connections, and SharePoint, you can enable these sce
 
 [Learn more about how to drive communication in your organization](/sharepoint/corporate-communications-overview).
 
-## Connect across your organization with Yammer and Teams
+## Connect across your organization with Viva Engage
 
-Engage with communities in Yammer. Communities in Yammer serve the needs of knowledge-sharing, employee experience, company-wide communications, and leadership engagement by providing a central place for your conversations, files, events, and updates. Associates can raise issues, provide feedback, and ask and answer questions in Yammer Communities. Hold live events and town halls to keep everyone in your organization in the loop.
+Engage with communities in Viva Engage, which brings the power of Yammer into Teams. Communities in Viva Engage serve the needs of knowledge-sharing, employee experience, company-wide communications, and leadership engagement by providing a central place for your conversations, files, events, and updates. Associates can raise issues, provide feedback, and ask and answer questions in Viva Engage Communities. Hold live events and town halls to keep everyone in your organization in the loop.
 
-You can create yammer communities for individual locations, identity or interest groups, or work groups such as nurses and financial advisors.
+You can create communities for individual locations, identity or interest groups, or work groups such as nurses and financial advisors.
 
-Learn how to [add a Yammer page to a Teams channel](https://support.microsoft.com/office/add-a-yammer-page-to-a-teams-channel-ca06ec83-f22d-4b76-83a5-c83aa2a33528) and [join and create a community in Yammer](https://support.microsoft.com/office/join-and-create-a-community-in-yammer-56aaf591-1fbc-4160-ba26-0c4723c23fd6).
+Learn more about [Viva Engage](/viva/engage/overview) and help your employees and associates [Get started with Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284).
 
-More information about Yammer:
+More information about Viva Engage:
 
-- For admins: [Manage Yammer](/yammer)
-- For users: [Use Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c)
+- [Set up Viva Engage for your organization.](/viva/engage/setup)
+- [Read the Viva Engage FAQ.](https://support.microsoft.com/topic/frequently-asked-questions-faq-about-microsoft-viva-engage-1209ec6f-b10d-4518-98fd-f33cca5212b8)
 
 ## Connect over email with Exchange Online and Outlook
 
