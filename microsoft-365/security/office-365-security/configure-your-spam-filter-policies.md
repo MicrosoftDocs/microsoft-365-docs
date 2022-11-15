@@ -174,7 +174,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      >
      > <sup>3</sup> A blank **Select a policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for the spam filter verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
      >
-     > <sup>4</sup> For **High confidence phishing**, the action **Move message to Junk Email folder** has effectively been deprecated. Although you might be able to select *Move message to Junk Email folder**, high confidence phishing messages are always quarantined (equivalent to selecting **Quarantine message**). 
+     > <sup>4</sup> For **High confidence phishing**, the action **Move message to Junk Email folder** has effectively been deprecated. Although you might be able to select **Move message to Junk Email folder**, high confidence phishing messages are always quarantined (equivalent to selecting **Quarantine message**).
      >
      > Users can't release their own messages that were quarantined as high confidence phishing. At best, admins can configure the quarantine policy so users can request the release of their quarantined high confidence phishing messages.
 
