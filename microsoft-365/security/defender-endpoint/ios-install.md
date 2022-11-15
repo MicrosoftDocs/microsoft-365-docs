@@ -213,45 +213,6 @@ Once the above configuration is done and synced with the device, the following a
 
    :::image type="content" source="images/device-inventory-screen.png" alt-text="The Device inventory page." lightbox="images/device-inventory-screen.png":::
 
-## Configure Microsoft Defender for Endpoint for Supervised Mode
-
-The Microsoft Defender for Endpoint on iOS app has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices. To take advantage of these capabilities, the Defender for Endpoint app needs to know if a device is in Supervised Mode.
-
-### Configure Supervised Mode via Intune
-
-Intune allows you to configure the Defender for iOS app through an App Configuration policy.
-
-> [!NOTE]
-> This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for all managed iOS devices as a best practice.
-
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** \> **App configuration policies** \> **Add**. Click on **Managed devices**.
-
-   :::image type="content" source="images/ios-deploy-4.png" alt-text="The Managed devices option." lightbox="images/ios-deploy-4.png":::
-
-1. In the *Create app configuration policy* page, provide the following information:
-   - Policy Name
-   - Platform: Select iOS/iPadOS
-   - Targeted app: Select **Microsoft Defender for Endpoint** from the list.
-
-   :::image type="content" source="images/ios-deploy-5.png" alt-text="The basic fields for the configuration policy for the application." lightbox="images/ios-deploy-5.png":::
-
-1. In the next screen, select **Use configuration designer** as the format. Specify the following properties:
-   - Configuration Key: `issupervised`
-   - Value type: String
-   - Configuration Value: `{{issupervised}}`
-
-   :::image type="content" source="images/ios-deploy-6.png" alt-text="The page from which to choose the format for the settings of the policy configuration." lightbox="images/ios-deploy-6.png":::
-
-1. Click **Next** to open the **Scope tags** page. Scope tags are optional. Click **Next** to continue.
-
-1. On the **Assignments** page, select the groups that will receive this profile. For this scenario, it is best practice to target **All Devices**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
-
-   When deploying to user groups, a user must sign in to a device before the policy applies.
-
-   Select **Next**.
-
-1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
-
 ## Next Steps
 
 - [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
