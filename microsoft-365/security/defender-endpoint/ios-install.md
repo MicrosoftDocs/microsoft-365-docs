@@ -194,6 +194,7 @@ Admins can configure Microsoft Defender for Endpoint to deploy and activate sile
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
 
 Once the above configuration is done and synced with the device, the following actions take place on the targeted iOS device(s):
+
 - Microsoft Defender for Endpoint will be deployed and silently onboarded and the device will be seen in the Defender for Endpoint portal.
 - A provisional notification will be sent to the user device.
 - Web Protection and other features will be activated.
