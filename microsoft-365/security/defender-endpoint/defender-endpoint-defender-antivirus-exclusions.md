@@ -107,7 +107,7 @@ The following sections describe these exclusions in more detail:
 - [Controlled folder access exclusions](#controlled-folder-access-exclusions)
 - [Automation folder exclusions](#automation-folder-exclusions) (for automated investigation and remediation)
 
-### Microsoft Defender Antivirus exclusions
+## Microsoft Defender Antivirus exclusions
 
 Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to real-time protection. These exclusions include:
 
@@ -115,7 +115,7 @@ Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to r
 - [Custom exclusions](#custom-exclusions)
 - [Custom remediation actions](#custom-remediation-actions)
 
-#### Automatic exclusions
+### Automatic exclusions
 
 [Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions) include operating system files and server roles and features. These exclusions won’t be scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan). The following table provides some examples and includes links to learn more.
 
@@ -124,15 +124,15 @@ Microsoft Defender Antivirus exclusions can apply to antivirus scans and/or to r
 | Operating system files <br/>(See [Automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions).) | `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb` <br/> `%allusersprofile%\NTUser.pol` <br/> Windows Update files <br/> Windows Security files <br/> … and more | 
 | Server roles and features <br/>(See [Default exclusions for roles](configure-server-exclusions-microsoft-defender-antivirus.md#default-exclusions-for-all-roles).)  | File Replication Service (FRS) <br/> Hyper-V <br/> SYSVOL <br/> Active Directory <br/> DNS Server <br/> Print Server <br/> Web Server <br/>  Windows Server Update Services |  
 
-#### Custom exclusions
+### Custom exclusions
 
 [Custom exclusions](configure-exclusions-microsoft-defender-antivirus.md), which include files and folders that you specify. Exclusions for files, folders, and processes will be skipped by scheduled scans, on-demand scans, and real-time protection. Exclusions for process-opened files won’t be scanned by [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) but are still subject to [quick, full, or on-demand antivirus scans](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 
-#### Custom remediation actions
+### Custom remediation actions
 
 When Microsoft Defender Antivirus detects a potential threat while running a scan, it attempts to remediate or remove the detected threat. You can define custom remediation actions to configure how Microsoft Defender Antivirus should address certain threats, whether a restore point should be created before remediating, and when threats should be removed. [Configure remediation actions for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md).
 
-### Defender for Endpoint indicators
+## Defender for Endpoint indicators
 
 You can define [indicators](manage-indicators.md) with specific actions for entities, such as files, IP addresses, URLs/domains, and certificates. In Defender for Endpoint, indicators are referred to as Indicators of Compromise (IoCs), and less often, as custom indicators. When you define your indicators, you can specify one of the following actions:
 
@@ -166,7 +166,7 @@ The following table summarizes IoC types and available actions:
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
 
-### Attack surface reduction exclusions
+## Attack surface reduction exclusions
 
 [Attack surface reduction rules](attack-surface-reduction.md) (also known as ASR rules) target certain software behaviors, such as:
 
@@ -178,11 +178,11 @@ Sometimes, legitimate applications exhibit software behaviors that could be bloc
 
 Also note that while most ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions, some ASR rules do honor some Microsoft Defender Antivirus exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
 
-### Controlled folder access exclusions
+## Controlled folder access exclusions
 
 [Controlled folder access](controlled-folders.md) monitors apps for activities that are detected as malicious and protects the contents of certain (protected) folders on Windows devices. Controlled folder access allows only trusted apps to access protected folders, such as common system folders (including boot sectors) and other folders that you specify. You can allow certain apps or signed executables to access protected folders by defining exclusions. See [Customize controlled folder access](customize-controlled-folders.md).
 
-### Automation folder exclusions
+## Automation folder exclusions
 
 Automation folder exclusions apply to [automated investigation and remediation](automated-investigations.md) in Defender for Endpoint, which is designed to examine alerts and take immediate action to resolve detected breaches. As alerts are triggered, and an automated investigation runs, a verdict (Malicious, Suspicious, or No threats found) is reached for each piece of evidence investigated. Depending on the [automation level](automation-levels.md) and other security settings, remediation actions can occur automatically or only upon approval by your security operations team.
 
