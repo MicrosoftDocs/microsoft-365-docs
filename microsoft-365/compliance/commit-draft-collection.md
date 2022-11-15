@@ -76,7 +76,7 @@ When you're satisfied with the items you've collected in a collection estimate a
 
 When you commit a collection estimate to a review set, the following things happen:
 
-- If you created a new review set to commit the collection to, the review set is created and displayed on the **Review sets** tab in the case. This status value means the review set has been created; it doesn't mean that the collection has been added to the review set. The status of adding items in the collection to the review set is displayed on the **Collections** tab.
+- If you created a new review set to commit the collection to, the review set is created and displayed on the **Review sets** tab in the case. This status value means the review set has been created; it doesn't mean that the collection has been added to the review set. The status of adding items in the collection to the review set is displayed on the **Collections** tab and in the **Summary** tab on the collection flyout page.
 
 - The collection search query is run again. This means the actual search results copied to the review set may be different than the estimated results that were returned when the collection search was last run.
 
@@ -90,7 +90,7 @@ When you commit a collection estimate to a review set, the following things happ
 
 - Optical character recognition (OCR) functionality extracts text from images, and includes the image text with the content that's added to a review set. For more information, see the [Optical character recognition](#optical-character-recognition) section in this article.
 
-- After the commit is successfully completed, the value of the status column of on the **Collections** tab is changed to *Committed*.
+- After the commit is successfully completed, the value of the status column of on the **Collections** tab is changed to *Committed* and the **Summary** tab on the collection flyout page is updated with the full results of the committed collection.
 
 ## Optical character recognition
 
