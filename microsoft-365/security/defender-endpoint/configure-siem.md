@@ -1,5 +1,5 @@
 ---
-title: Integrate your SIEM tools with Microsoft Defender for Endpoint
+title: Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API
 description: Learn how to ingest incidents and alerts, and integrate SIEM tools.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ---
 
-# Integrate your SIEM tools with Microsoft Defender for Endpoint
+# Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,9 +50,9 @@ For more information, see:
 
 > [!IMPORTANT]
 > In February we announced the [Deprecation of the Microsoft Defender for Endpoint (MDE) SIEM API would be postponed](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/deprecating-the-legacy-siem-api-postponed/ba-p/3139643).
-After gathering customer feedback, we have learned there are challenges with the timeline originally communicated. As a result, we are making changes to our timeline to improve our customers’ experience in migrating to the new API.
+After gathering customer feedback, we have learned there are challenges with the timeline originally communicated. As a result, we are making changes to our timeline to improve our customers' experience in migrating to the new API.
 The new Microsoft 365 Defender alerts API, released to public preview in MS Graph, is the official and recommended API for customers migrating from the SIEM API. This API will enable customers to work with alerts across all Microsoft 365 Defender products using a single integration. We expect the new API to reach general availability (GA) by Q1 CY 2023.
-To provide customers with more time to plan and prepare their migration to the new Microsoft 365 Defender APIs, we have pushed the SIEM API deprecation date to December 31, 2023. This will give customers one year from the expected GA release of Microsoft 365 Defender APIs to migrate from the SIEM API.  At the time of deprecation, the SIEM API will be declared “deprecated” but not “retired.” This means that until this date, the SIEM API will continue to function for existing customers. After the deprecation date, the SIEM API will continue to be available, however it will only be supported for security-related fixes.
+To provide customers with more time to plan and prepare their migration to the new Microsoft 365 Defender APIs, we have pushed the SIEM API deprecation date to December 31, 2023. This will give customers one year from the expected GA release of Microsoft 365 Defender APIs to migrate from the SIEM API.  At the time of deprecation, the SIEM API will be declared "deprecated" but not "retired." This means that until this date, the SIEM API will continue to function for existing customers. After the deprecation date, the SIEM API will continue to be available, however it will only be supported for security-related fixes.
 Effective December 31st, 2024, three years after the original deprecation announcement, we reserve the right to turn off the SIEM API, without additional notice.
 
 For additional information about the new APIs see the blog announcement: [The new Microsoft 365 Defender APIs in Microsoft Graph are now available in public preview!](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099)
@@ -61,7 +61,7 @@ API documentation: [Use the Microsoft Graph security API - Microsoft Graph beta]
 
 If you are a customer using the SIEM API, we strongly recommend planning and executing the migration. Listed below is information about the options available to migrate to a supported capability:
 
-1. [Pulling MDE alerts into an external system](#pulling-defender-for-endpoint-alerts into-an-external-system) (SIEM/SOAR)
+1. [Pulling MDE alerts into an external system](#pulling-defender-for-endpoint-alerts-into-an-external-system) (SIEM/SOAR)
 1. [Calling the Microsoft 365 Defender alerts API directly](#calling-the-microsoft-365-defender-alerts-api-directly)
 
 Read about the new Microsoft 365 Defender [alerts and incidents API](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/the-new-microsoft-365-defender-apis-in-microsoft-graph-are-now/ba-p/3603099#:~:text=Incidents%3A%20Contain%20incident%20metadata%20and%20a%20collection%20of,richer%20and%20actionable%20information%20for%20your%20automation%20flows.)
@@ -70,16 +70,13 @@ Read about the new Microsoft 365 Defender [alerts and incidents API](https://tec
 
 If you are pulling Defender for Endpoint alerts into an external system, there are various supported options to give organizations the flexibility to work with the solution of their choice:
 
-1. **Microsoft Sentinel** is a scalable, cloud-native, SIEM and Security orchestration, automation, and response (SOAR) solution. Delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for attack detection, threat visibility, proactive hunting, and threat response. The Microsoft 365 Defender connector allows customers to easily pull in all their incidents and alerts from all Microsoft 365
+1. **Microsoft Sentinel** is a scalable, cloud-native, SIEM and Security orchestration, automation, and response (SOAR) solution. Delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for attack detection, threat visibility, proactive hunting, and threat response. The Microsoft 365 Defender connector allows customers to easily pull in all their incidents and alerts from all Microsoft 365 Defender products. To learn more about the integration, see [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 1. **IBM Security QRadar** SIEM provides centralized visibility and intelligent security analytics to identify and prevent threats and vulnerabilities from disrupting business operations. [QRadar SIEM team has just announced the release of a new DSM](https://community.ibm.com/community/user/security/blogs/gaurav-sharma/2022/10/18/ibm-qradar-and-microsoft-defender) that is integrated with the new Microsoft 365 Defender alerts API to pull in Microsoft Defender for Endpoint alerts. New customers are welcome to take advantage of the new DSM upon release. Learn more about the new DSM and how to easily migrate to it at [Microsoft 365 Defender - IBM Documentation](https://www.ibm.com/docs/en/dsm?topic=microsoft-365-defender).
 1. **Splunk SOAR** helps customers orchestrate workflows and automate tasks in seconds to work smarter and respond faster. Spunk SOAR is integrated with the new Microsoft 365 Defender APIs, including the alerts API. For more information, see [Microsoft 365 Defender | Splunkbase](https://splunkbase.splunk.com/app/6563)
-1. **Defender products** To learn more about the integration, see [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 
 Additional integrations are listed in [Technological partners of Microsoft 365 Defender](technological-partners.md), or contact your SIEM / SOAR provider to learn about integrations they may provide.
 
 ### Calling the Microsoft 365 Defender alerts API directly
-
-#### Migrate to the new Microsoft 365 Defender alerts API
 
 The below table provides a mapping between the SIEM API to the Microsoft 365 Defender alerts API:
 
