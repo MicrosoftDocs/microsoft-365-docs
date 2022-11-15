@@ -56,7 +56,7 @@ Independently from labeling, you can continue to use the [AIPService](/powershel
 
 ## Benefits of using built-in labeling for Office apps vs. the AIP add-in
 
-The AIP client is in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) and we don't recommend you use the AIP add-in for Office apps for the following reasons:
+The AIP add-in component from the AIP client is in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-and-the-information-protection/ba-p/3671070) and we don't recommend you use this add-in for Office apps for the following reasons:
 
 - No new labeling features will be supported.
 - Add-ins are less stable because they can conflict with other add-ins that can result in Office apps hanging, crashing, or automatically disabling the add-in.
@@ -141,8 +141,6 @@ If after making these changes the **Sensitivity** button doesn't display on the 
 In the [newer versions of Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps), the AIP add-in is disabled by default. To enable it, you must configure a new Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**:
 
 - **Use the Azure Information Protection add-in for sensitivity labeling**. Set the value to **1**.
-
-This new setting is still rolling out. If you don't see it yet, wait a few more days and try again.
 
 Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
