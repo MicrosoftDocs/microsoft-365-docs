@@ -80,7 +80,7 @@ To learn more, see the following articles:
 
 ## Exclusions and indicators
 
-Sometimes, the term exclusions is used to refer to exceptions that apply across Defender for Endpoint and Microsoft Defender Antivirus. A more accurate way to describe these exceptions is as follows:
+Sometimes, the term *exclusions* is used to refer to exceptions that apply across Defender for Endpoint and Microsoft Defender Antivirus. A more accurate way to describe these exceptions is as follows:
 
 - [Indicators for Defender for Endpoint](manage-indicators.md); (which apply across Defender for Endpoint and Microsoft Defender Antivirus); and  
 - [Exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md).
