@@ -22,19 +22,19 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 **Question**: Can a OneDrive account have any content in the target tenant before migration?</br>
 Answer: No.  The tool does not support Merge functionality with existing content at present. The user being migrated must not have a pre-existing OneDrive on the target tenant.
 
-**Question**: Can users be pre-created on the Target tenant?</br>
-Answer: Yes, all Users/Groups that are identified for migration should be pre-created on the Target tenant and appropriate licenses assigned prior to staring any migrations.
+**Question**: Can users be pre-created on the target tenant?</br>
+Answer: Yes, all Users/Groups that are identified for migration should be pre-created on the target tenant and appropriate licenses assigned prior to staring any migrations. Also:
 
-- OneDrive site creation should be restricted in the Target tenant to prevent users creating OneDrive sites.
-- If a OneDrive site already exists for the user on the Target tenant the migration will fail.
+- OneDrive site creation should be restricted in the target tenant to prevent users creating OneDrive sites.
+- If a OneDrive site already exists for the user on the target tenant the migration will fail.
 - You cannot overwrite an existing site.
 - OneDrive sites should NOT be created Prior OR during a migration.
 
-**Question**: Can my OneDrive accounts be in Read Only mode prior to starting any cross-tenant migrations?</br>
+**Question**: Can my OneDrive accounts be in Read-only mode prior to starting any cross-tenant migrations?</br>
 Answer: No, Prior to starting any migrations, you need to ensure that your Source OneDrive accounts are NOT set to Read-Only, the migration will fail if they are. 
 
 **Question**: Can anyone access the OneDrive while the migration process is running?</br>
-Answer: During the migration, the user’s OneDrive is set to Read-Only in Source.
+Answer: During the migration, the user’s OneDrive is set to Read-only in Source.
 
 **Question**: Can my OneDrive accounts be in **Read-only** mode prior to starting any cross-tenant migrations?</br>
 Answer: No, before starting any migrations, ensure that your source OneDrive accounts are NOT set to Read-only. Otherwise, the migration will fail. 
