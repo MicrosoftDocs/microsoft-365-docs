@@ -136,13 +136,13 @@ When Microsoft Defender Antivirus detects a potential threat while running a sca
 
 You can define [indicators](manage-indicators.md) with specific actions for entities, such as files, IP addresses, URLs/domains, and certificates. In Defender for Endpoint, indicators are referred to as Indicators of Compromise (IoCs), and less often, as custom indicators. When you define your indicators, you can specify one of the following actions:
 
-- **Allow** –Defender for Endpoint won't block files, IP addresses, URLs/domains, or certificates that have Allow indicators. (*Use this action with caution.*)
+- **Allow** – Defender for Endpoint won't block files, IP addresses, URLs/domains, or certificates that have Allow indicators. (*Use this action with caution.*)
 
 - **Audit** – Files, IP addresses, and URLs/domains with Audit indicators are monitored, and when they’re accessed by users, informational alerts are generated in the Microsoft 365 Defender portal.
 
 - **Block and Remediate** – Files or certificates with Block and Remediate indicators are blocked and quarantined when detected.
 
-- **Block Execution** –IP addresses and URLs/domains with Block Execution indicators are completely blocked. Users can't access those locations.
+- **Block Execution** – IP addresses and URLs/domains with Block Execution indicators are completely blocked. Users can't access those locations.
 
 - **Warn** – IP addresses and URLs/domains with Warn indicators cause a warning message to be displayed when a user attempts to access those locations. Users can choose to bypass the warning and proceed to the IP address or URL/domain.  
 
@@ -228,7 +228,7 @@ The following diagram shows how [automated investigation and remediation works w
 
 ## Additional server workloads and exclusions
 
-If your organization is using additional server workloads, such as Exchange Server, SharePoint Server, or SQL Server, be aware that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by the Automatic Exclusions feature (and only when using their default installation location). You’ll likely need to define antivirus exclusions for these additional workloads, or for all workloads if you disable Automatic Exclusions. 
+If your organization is using additional server workloads, such as Exchange Server, SharePoint Server, or SQL Server, be aware that only built-in server roles (that could be prerequisites for software you install later) on Windows Server are excluded by [automatic exclusions](#automatic-exclusions) feature (and only when using their default installation location). You’ll likely need to define antivirus exclusions for these additional workloads, or for all workloads if you disable automatic exclusions. 
 
 Here are some examples of technical documentation to identify and implement the exclusions you need: 
 
