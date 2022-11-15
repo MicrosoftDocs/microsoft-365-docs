@@ -35,7 +35,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 > If users can't access the play store, the app can be updated through the company portal. 
 
 ## Microsoft Defender for Endpoint on Company-owned personally enabled devices
-MDE is now generally available on AE COPE devices. Enterprises can onboard devices on COPE mode and push MDE to user’s devices through the [Microsoft Endpoint Manager Admin center](https://endpoint.microsoft.com). With this support, Android Enterprise COPE devices will get the full capabilities of our offering on Android including phishing and web protection, malware scanning, Network protection (preview) and additional breach prevention through integration with Microsoft Endpoint Manager and Conditional Access. Read the announcement [here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
+MDE is now generally available on AE COPE devices. Enterprises can onboard devices on COPE mode and push MDE to user's devices through the [Microsoft Endpoint Manager Admin center](https://endpoint.microsoft.com). With this support, Android Enterprise COPE devices will get the full capabilities of our offering on Android including phishing and web protection, malware scanning, Network protection (preview) and additional breach prevention through integration with Microsoft Endpoint Manager and Conditional Access. Read the announcement [here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-is-now-available-on-android/ba-p/3626100).
 
 ## Privacy Controls
 

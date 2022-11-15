@@ -26,6 +26,7 @@ description: Learn about the join experience for Teams virtual appointments on b
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Manage the join experience for Teams virtual appointments on browsers

@@ -472,7 +472,7 @@
                 href: sit-defn-azure-cognitive-service-key.md
               - name: Azure Container Registry access key
                 href: sit-defn-azure-container-registry-access-key.md
-              - name: Azure COSMOS DB account access key
+              - name: Azure Cosmos DB account access key
                 href: sit-defn-azure-cosmos-db-account-access-key.md
               - name: Azure Databricks personal access token 
                 href: sit-defn-azure-databricks-personal-access-token.md

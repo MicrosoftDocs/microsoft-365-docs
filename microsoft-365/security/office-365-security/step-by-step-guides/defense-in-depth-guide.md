@@ -26,7 +26,7 @@ search.appverid: met150
 
 This guide is for you if:
 
-- You’re licensed for Microsoft Defender for Office 365 and host your mailboxes in Office 365
+- You're licensed for Microsoft Defender for Office 365 and host your mailboxes in Office 365
 - You're also using a third party for your email security
 
 The information below will detail how to get the most out of your investment, broken down into easy to follow steps.
@@ -71,7 +71,7 @@ The information below will detail how to get the most out of your investment, br
 
 **Read more here:** [Anti-phishing policies](../set-up-anti-phishing-policies.md)
 
-- If your current security provider is configured to modify messages *in any way*, it’s important to note that authentication signals can impact the ability for Defender for Office to protect you against attacks such as spoofing. If your third party supports Authenticated Received Chain (ARC), then enabling this is a highly recommended step in your journey to advanced dual filtering. Moving any message modification configuration to Defender for Office 365 is also an alternative.
+- If your current security provider is configured to modify messages *in any way*, it's important to note that authentication signals can impact the ability for Defender for Office to protect you against attacks such as spoofing. If your third party supports Authenticated Received Chain (ARC), then enabling this is a highly recommended step in your journey to advanced dual filtering. Moving any message modification configuration to Defender for Office 365 is also an alternative.
 
 **Read more here:** [Use Trusted ARC senders for legitimate devices and services between the sender and receiver](../use-arc-exceptions-to-mark-trusted-arc-senders.md)
 
@@ -99,7 +99,7 @@ The information below will detail how to get the most out of your investment, br
 
 ### Education features
 
-- Attack simulation training allows you to run realistic but benign cyber-attack scenarios in your organization. If you don't already have phishing simulation capabilities from your primary email security provider, Microsoft’s simulated attacks can help you identify and find vulnerable users, policies, and practices. This is important knowledge to have and correct *before* a real attack impacts your organization. Post simulation we assign in product or custom training to educate users about the threats they missed, ultimately reducing your organization's risk profile. With Attack simulation training we deliver messages directly into the inbox, so the user experience is rich. This also means no security changes such as overrides needed to get simulations delivered correctly.
+- Attack simulation training allows you to run realistic but benign cyber-attack scenarios in your organization. If you don't already have phishing simulation capabilities from your primary email security provider, Microsoft's simulated attacks can help you identify and find vulnerable users, policies, and practices. This is important knowledge to have and correct *before* a real attack impacts your organization. Post simulation we assign in product or custom training to educate users about the threats they missed, ultimately reducing your organization's risk profile. With Attack simulation training we deliver messages directly into the inbox, so the user experience is rich. This also means no security changes such as overrides needed to get simulations delivered correctly.
 
 **Get started here:** [Get started using Attack simulation](../attack-simulation-training-get-started.md)
 
