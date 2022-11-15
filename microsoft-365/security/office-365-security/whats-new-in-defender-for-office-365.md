@@ -169,7 +169,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## Microsoft Defender for Office 365 Plan 1 and Plan 2
 
-Did you know that Microsoft Defender for Office 365 is available in two plans? [Learn more about what each plan includes](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
+Did you know that Microsoft Defender for Office 365 is available in two plans? [Learn more about what each plan includes](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2).
 
 ## See also
 
