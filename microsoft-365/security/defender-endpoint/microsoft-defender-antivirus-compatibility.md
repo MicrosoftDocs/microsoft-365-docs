@@ -7,7 +7,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/20/2022
+ms.date: 10/31/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -147,7 +147,7 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No  | No | No | 
 | [Network protection](network-protection.md)  | Yes | No | No | No | 
 | [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  | No | 
-| [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | Yes | No | 
+| [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | Yes | No | No | 
 | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes <sup>[[5](#fn5)]</sup> | No | Yes | 
 | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See note <sup>[[6](#fn6)]</sup> | No | Yes | 
 | [Security intelligence updates](manage-updates-baselines-microsoft-defender-antivirus.md) | Yes | Yes <sup>[[7](#fn7)]</sup> | No | Yes <sup>[[7](#fn7)]</sup> | 

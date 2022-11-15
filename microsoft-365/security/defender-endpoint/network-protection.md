@@ -91,7 +91,7 @@ Network protection is a critical part of the Microsoft protection and response s
 > [!TIP]
 > For details about network protection for Windows Server, Linux, MacOS and Mobile Threat Defense (MTD), see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
-### Block Command and Control (C2) attacks
+### Block Command and Control attacks
 
 Command and Control (C2) server computers are used by malicious users to send commands to systems compromised by malware, and then exert some type of control over compromised systems. C2 attacks typically hide in cloud-based services such as file-sharing and webmail services, enabling the C2 servers to avoid detection by blending in with typical traffic.
 
@@ -103,6 +103,12 @@ C2 servers can be used to initiate commands that can:
 - Spread malware, such as ransomware
 
 The network protection component of Defender for Endpoint identifies and blocks connections to C2 infrastructures used in human-operated ransomware attacks, using techniques like machine learning and intelligent indicator-of-compromise (IoC) identification.
+
+#### Network protection: C2 detection and remediation
+
+In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human-driven, adaptive, and focused on larger scale and more widespread outcomes, like holding an entire organization's assets or data for ransom.
+
+Support for Command and Control servers (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure stops the progression of an attack to its next stage. For additional information about C2 detection and remediation, see [Detecting and remediating command and control attacks at the network layer](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/detecting-and-remediating-command-and-control-attacks-at-the/ba-p/3650607).
 
 #### Network protection: New toast notifications
 
@@ -154,14 +160,6 @@ A user visits a website:
 
     :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Shows a network protection known phishing content blocked notification." lightbox="images/network-protection-phishing-blocked.png":::
 
-### Network protection: C2 detection and remediation
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
-In its initial form, ransomware is a commodity threat, pre-programmed and focused on limited, specific outcomes (for example, encrypting a computer). However, ransomware has evolved into a sophisticated threat that is human-driven, adaptive, and focused on larger scale and more widespread outcomes; like holding an entire organization's assets or data for ransom.
-
-Support for Command and Control servers (C2) is a key part of this ransomware evolution and is what enables these attacks to adapt to the environment they target. Breaking the link to the command-and-control infrastructure stops the progression of an attack to its next stage.
-
 ## SmartScreen Unblock
 
 With indicators in Defender for Endpoint, administrators can allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
@@ -181,7 +179,7 @@ Network protection is enabled per device, which is typically done using your man
 > [!NOTE]
 > Microsoft Defender Antivirus must be active to enable network protection.
 
-You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection. Note that in order for indicators of compromise (IoC) or Web content filtering (WCF) to work, network protection must be in “Block mode”
+You can enable network protection in **Audit** mode or **Block** mode. If you want to evaluate the impact of enabling network protection before actually blocking IP addresses or URLs, you can enable network protection in Audit mode for time to gather data on what would be blocked. Audit mode logs when end users have connected to an address or site that would otherwise have been blocked by network protection. Note that in order for indicators of compromise (IoC) or Web content filtering (WCF) to work, network protection must be in "Block mode"
 
 For information about network protection for Linux and macOS see: [Network protection for Linux](network-protection-linux.md) and [Network protection for macOS](network-protection-macos.md).
 

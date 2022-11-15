@@ -72,6 +72,21 @@ For the easiest method to enable the standard protection rules, see: [Simplified
 | Block Win32 API calls from Office macros | | Yes |
 | Use advanced protection against ransomware | | Yes |
 
+## Microsoft Defender Antivirus exclusions and ASR rules
+
+Microsoft Defender Antivirus exclusions apply to some Microsoft Defender for Endpoint capabilities, such as some of the attack surface reduction (ASR) rules.
+
+Following is a list of ASR rules that honor Microsoft Defender Antivirus exclusions:
+
+| ASR rules name: |
+|:---|
+| [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) |
+| [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |
+| [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |
+| [Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) |
+| [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) |
+| [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |
+
 ## ASR rules supported operating systems
 
 The following table lists the supported operating systems for rules that are currently released to general availability. The rules are listed alphabetical order in this table.

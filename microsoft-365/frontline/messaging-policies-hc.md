@@ -4,7 +4,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 search.appverid: MET150
 searchScope:
@@ -25,6 +25,7 @@ appliesto:
 ms.reviewer: 
 description: Learn how to customize a Secure Messaging policy for Microsoft Teams that can include read receipts and priority notifications.
 ms.custom: seo-marvel-mar2020
+ms.date: 10/28/2022
 ---
 
 # Secure Messaging for healthcare organizations

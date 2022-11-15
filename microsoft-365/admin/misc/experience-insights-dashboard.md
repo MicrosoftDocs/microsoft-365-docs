@@ -30,7 +30,7 @@ If you’re a member of the reports reader role, once you sign into the admin ce
 
 :::image type="content" source="../../media/experience-insights-dashboard2.png" alt-text="Screenshot: Image showing an overview of the experience insights dashboard":::
 
-To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
+To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
 
 ## Apps and services data
 

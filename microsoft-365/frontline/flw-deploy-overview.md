@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 ms.reviewer: samanro
 manager: pamgreen
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -16,6 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Learn where to start with a frontline deployment

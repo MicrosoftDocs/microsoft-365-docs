@@ -134,9 +134,9 @@ Threat and vulnerability management's block vulnerable application features uses
 
 ## Policy precedence
 
-Microsoft Defender for Endpoint policy has precedence over Microsoft Defender Antivirus policy. In situations when Defender for Endpoint is set to **Allow**, but Microsoft Defender Antivirus is set to **Block**, the policy will default to **Allow**.
+Microsoft Defender for Endpoint policy has precedence over Microsoft Defender Antivirus policy. In situations when Defender for Endpoint is set to **Allow**, but Microsoft Defender Antivirus is set to **Block**, the policy will default to **Allow**.
 
-#### Precedence for multiple active policies
+### Precedence for multiple active policies
 
 Applying multiple different web content filtering policies to the same device will result in the more restrictive policy applying for each category. Consider the following scenario:
 

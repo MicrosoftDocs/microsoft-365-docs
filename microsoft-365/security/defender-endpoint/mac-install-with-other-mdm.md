@@ -1,7 +1,7 @@
 ---
 title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint on Mac
 description: Install Microsoft Defender for Endpoint on Mac on other management solutions.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, macos, catalina, big sur, monterey, ventura, mde or mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
