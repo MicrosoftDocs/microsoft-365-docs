@@ -1,5 +1,5 @@
 ---
-title: "Search for Teams chat data for on-premises users"
+title: "Search for and export Teams chat data for on-premises users"
 description: "Admins can use eDiscovery tools in Microsoft 365 to search for and export Teams chat data for on-premises users in an Exchange hybrid deployment."
 f1.keywords:
 - NOCSH
@@ -23,16 +23,18 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ---
 
-# Search for Teams chat data for on-premises users
+# Search for and export Teams chat data for on-premises users
 
-If your organization has an Exchange hybrid deployment (or your organization synchronizes an on-premises Exchange organization with Microsoft 365) and has enabled Microsoft Teams, on-premises users can use the Teams chat application for instant messaging. For a cloud-based user, Teams chat data (also called *1x1 or 1xN chats*) is saved to their primary cloud-based mailbox. When an on-premises user uses the Teams chat application, their chat messages can't be stored in their primary mailbox, which is located on-premises. To get around this limitation, Microsoft has released a new feature where a cloud-based storage area is created so that you use eDiscovery tools to search for and export Teams chat data for on-premises users.
+If your organization has an Exchange hybrid deployment, you can use eDiscovery tools to search for and export Teams chat data for on-premises users. This option is also available for organizations that synchronize on-premises Exchange organization with Microsoft 365.
+
+For a cloud-based users using Microsoft Teams enabled in your organization, chat data (also called *1x1 or 1xN chats*) is saved to their primary cloud-based mailbox. When an on-premises user uses the Teams chat application, their chat messages can't be stored in their primary mailbox, which is located on-premises. To get around this limitation, a feature where a cloud-based storage area is created so that you use eDiscovery tools to search for and export Teams chat data for on-premises users.
   
 Here are the requirements and limitations for enabling cloud-based storage for on-premises users:
   
 - The user accounts in your on-premises directory service (such as Active Directory) must be synchronized with Azure Active Directory, the directory service in Microsoft 365. This means that a mail user account is created in Microsoft 365 and is associated with a user whose primary mailbox is located in the on-premises organization.
 - The user whose primary mailbox is located in the on-premises organization must be assigned a Microsoft Teams license and a minimum of an Exchange Online Plan 1 license.
 - If your organization doesn't have an Exchange hybrid deployment, you must synchronize your on-premises Exchange schema to Azure Active Directory. If you don't do this, you might risk creating duplicate cloud-based mailboxes in Exchange Online for users that have a mailbox in your on-premises Exchange organization.
-- Only the Teams chat data associated with an on-premises user is stored in the cloud-based storage area. An on-premises user can't access this storage area in any way.
+- Only the Teams chat data associated with an on-premises user is stored in the cloud-based storage area. An on-premises user can't access this storage area.
 
 > [!NOTE]
 > Teams channel conversations are always stored in the cloud-based mailbox that's associated with the Team, which means you can search for channel conversations. For more information about searching Teams channel conversations, see [Searching Microsoft Teams and Microsoft 365 Groups](content-search-reference.md#searching-microsoft-teams-and-microsoft-365-groups).
@@ -49,7 +51,7 @@ The following graphic shows the workflow of how Teams chat data for on-premises 
   
 In addition to this capability, you can also use eDiscovery tools to search, preview, and export Teams content in the cloud-based SharePoint site and Exchange mailbox associated with each Microsoft Team and 1xN Teams chat data in the Exchange Online mailbox for cloud-based users.
 
-## Searching for Teams chat content for on-premises users
+## Searching for and exporting Teams chat content for on-premises users
 
 Here's how to use Content search in the Microsoft Purview compliance portal to search for Teams chat data for on-premises users. You can also use the search tool in eDiscovery (Standard) to search for chat data for on-premises users.
   
@@ -116,7 +118,7 @@ No. This feature is enabled by default for all organizations. At one point, you 
   
  **Can eDiscovery tools find older Teams chat data for on-premises users before the time that this feature was enabled by default for all organizations?**
   
-Microsoft started storing the Teams chat data for on-premises users on January 31, 2018. So, if the identity of an on-premises Teams user has been synched between you on-premises Active Directory and Azure Active Directory in Microsoft 365 since this date, then their Teams chat data is stored in the cloud and is searchable using eDiscovery tools.
+Microsoft started storing the Teams chat data for on-premises users on January 31, 2018. If the identity of an on-premises Teams user has been synched between your on-premises Active Directory and Azure Active Directory in Microsoft 365 since this date, then their Teams chat data is stored in the cloud and is searchable using eDiscovery tools.
 
  **Do on-premises users need a license to store their Teams chat data in the cloud?**
   
