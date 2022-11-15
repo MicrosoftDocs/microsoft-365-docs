@@ -13,6 +13,9 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
+ms.collection: 
+- tier1
+- purview-compliance
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: "With Office 365, some encryption capabilities are turned on by default; other capabilities can be configured to meet certain compliance or legal requirements."
 ---

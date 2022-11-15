@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 12/07/2021
 ms.subservice: mde
 search.appverid: met150

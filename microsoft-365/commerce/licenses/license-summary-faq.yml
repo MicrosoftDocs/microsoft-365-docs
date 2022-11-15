@@ -10,7 +10,9 @@ metadata:
   ms.topic: article
   ms.service: microsoft-365-business
   ms.custom: commerce_vl
-  ms.collection: scotvorg
+  ms.collection: 
+  - Tier2
+  - scotvorg
   ms.localizationpriority: medium
   description: "Frequently asked questions about Microsoft 365 admin center license contracts."
 

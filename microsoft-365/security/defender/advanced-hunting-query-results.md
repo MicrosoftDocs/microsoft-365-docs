@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Work with advanced hunting query results

@@ -16,6 +16,7 @@ ms.service: microsoft-365-security
 ms.collection: 
 - m365-security
 - tier2
+- ContentEngagementFY23
 search.appverid: met150
 ---
 
@@ -73,7 +74,7 @@ In Windows 10, version 1903, we introduced the shared security intelligence feat
 
 ### Use PowerShell to enable the shared security intelligence feature
 
-Use the following cmdlet to enable the feature. You'll then push this configuration as you normally would push PowerShell-based configuration policies onto the VMs:
+Use the following cmdlet to enable the feature. You'll need to then push the update as you normally would push PowerShell-based configuration policies onto the VMs:
 
 ```PowerShell
 Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update

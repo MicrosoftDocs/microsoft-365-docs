@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -17,7 +17,12 @@ description: Learn how to create a local model on a local SharePoint site with M
 
 # Create a model on a local SharePoint site with Microsoft Syntex
 
-Microsoft Syntex now provides an option to create and train models locally on your own SharePoint site. These models can be used only on the site where they're created. 
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All trained models</sup>
+
+Microsoft Syntex provides an option to create and train models locally on your own SharePoint site. These models can be used only on the site where they're created. 
+
+> [!NOTE]
+> If you want to make your model discoverable and available for other users, you need to create an *enterprise model*. An enterprise model is a model that is created and trained in the [content center](create-a-content-center.md).  
 
 By activating document classification and extraction on your SharePoint site, Syntex lets you classify files in document libraries, extract information from new files, and automate activities based on extracted information.
 
@@ -28,7 +33,9 @@ When you activate local model creation, the following lists and libraries will b
 - Explanation templates list
 - Model usage list
 
-This feature is available only for creating [document understanding models](apply-a-model.md) and [prebuilt models](prebuilt-models.md). 
+A model is automatically promoted to the current site only when the model first has been applied to any library in the site. This makes the model discoverable in the list of available site models and available for any other library in the site. Until the model is applied to a library in the site, it is unavailable. Similarly, when a model is removed from all the libraries in the site, it is also removed from the list of available site models. 
+
+This feature is available for all [model types](model-types-overview.md). 
 
 ## Create a model on a local site
 
@@ -53,7 +60,7 @@ This feature is available only for creating [document understanding models](appl
 
     ![Screenshot of the Create a model panel.](../media/content-understanding/local-model-create-a-model.png) 
 
-6. Proceed to [train your document understanding model](apply-a-model.md) or to [configure your prebuilt model](prebuilt-models.md) using the files that you selected.
+6. Proceed to [train your custom model](apply-a-model.md) or to [configure your trained model](prebuilt-overview.md) using the files that you selected.
 
 7. When done, the **Add to library** panel opens.
 
@@ -65,3 +72,5 @@ This feature is available only for creating [document understanding models](appl
 
     ![Screenshot of the model home page showing the Where the model is applied on the site section.](../media/content-understanding/local-model-home-page.png) 
 
+> [!NOTE]
+> When a local model is applied to a single library, it becomes available for discovery for application to other libraries in same site.

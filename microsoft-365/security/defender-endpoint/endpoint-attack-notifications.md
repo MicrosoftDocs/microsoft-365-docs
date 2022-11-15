@@ -50,7 +50,7 @@ If you're a Microsoft Defender for Endpoint customer, you can apply for Endpoint
 ![How to enable Endpoint Attack Notifications in 365 Defender Portal](../../media/defender-endpoint/enable-endpoint-attack-notifications.png)
 
 ## Receive Endpoint Attack notifications
-Endpoint Attack Notifications are alerts that have been hand crafted by Microsoft’s managed hunting service based on suspicious activity in your environment. They can be viewed through several mediums:
+Endpoint Attack Notifications are alerts that have been hand crafted by Microsoft's managed hunting service based on suspicious activity in your environment. They can be viewed through several mediums:
 - The alerts queue in the Microsoft 365 Defender portal
 - Using the [API](../../security/defender-endpoint/get-alerts.md)
 - [DeviceAlertEvents](../../security/defender-endpoint/advanced-hunting-devicealertevents-table.md) table in Advanced hunting

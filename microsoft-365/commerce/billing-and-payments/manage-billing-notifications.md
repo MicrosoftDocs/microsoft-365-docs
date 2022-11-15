@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
@@ -65,7 +66,7 @@ Your organization's billing notifications are sent to the primary and alternate 
 To change the primary and alternate email address of other admins in your organization, use the following steps.
 
 > [!NOTE]
-> Billing admins can change their own primary and alternate email addresses, but not for other admins.
+> Billing admins can only change their own alternate email address. They can't change email addresses for other admins.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 2. In the **Admins receiving billing notifications** section, select a name.

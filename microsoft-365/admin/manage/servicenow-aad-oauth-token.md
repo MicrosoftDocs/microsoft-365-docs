@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
@@ -78,7 +79,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     - Token URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - Redirect URL: `https://{service-now-instance-name``}.service-now.com/oauth_redirect.do`
+    - Redirect URL: `https://{your-servicenow-instance}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image6.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image6.png" alt-text="Graphical user interface, application Description automatically generated":::
 
@@ -90,7 +91,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
 1. Go to **System OAuth &gt; Application Registry**.
 
-1. Select **New**, and then select **Create new Open ID Connect Provider**.
+1. Select **New**, and then select **Configure and OIDC provider to verify ID tokens**.
 
 1. In **OAuth OIDC Provider Configuration**, select **Search** and create a new OIDC provider configuration under **oidc\_provider\_configuration.list** with these values:
 
@@ -104,7 +105,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image24.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image24.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
-1. Create a new application by selecting **Configure an OIDC provider to verify ID tokens** with these values:
+1. In this new application, fill the fields with these values:
 
     - Name: **{Tenant\_Name}\_application\_inbound\_api** (example: contoso\_applicaiton\_inbound\_api)
 
@@ -114,7 +115,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     - OAuth OIDC Provider Configuration: The OIDC provider created in the previous step
 
-    - Redirect URL: `https://{service-now-instance-name}.service-now.com/oauth\_redirect.do`
+    - Redirect URL: `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image25.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image25.png" alt-text="Graphical user interface, application Description automatically generated":::
 
@@ -193,7 +194,7 @@ These steps are required to set up the integration between your ServiceNow insta
     1. After completing the instructions in the prerequisites section, click Done to go to the next step. Otherwise, follow the instructions to create the AAD App Registration for inbound REST user (integration user).
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-8.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-8.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
     1. Configure the Integration User.
-    1. After completing the instructions in the prerequisites section, select the newly created entity and click Next. Otherwise follow the instructions to create the integration user in ServiceNow then select the entity.
+    1. After completing the instructions in the prerequisites section, select the newly created entity and click Next. Otherwise follow the instructions to create the integration user in ServiceNow, and then select the entity.
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-9.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-9.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[Microsoft 365 Tenant Admin\] Complete the integration.

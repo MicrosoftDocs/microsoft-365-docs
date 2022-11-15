@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 ms.reviewer: aaku
 manager: samanro
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -17,6 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Shifts connectors
@@ -115,7 +116,7 @@ The Teams Shifts connector for UKG Dimensions is a first-party offering that's h
 Frontline managers can:
 
 - Publish shifts and schedules in UKG Dimensions and view them in Shifts.
-- Create, manage, and assign open shifts in UKG Dimensions and view them in both UKG Dimensions and Shifts.
+- Create, view, manage, and assign open shifts in UKG Dimensions and Shifts on Teams desktop and Teams web app. (Currently, managers can't view or assign open shifts in Shifts on Teams mobile.)
 - Create, edit, and delete time off in UKG Dimensions and view in Shifts.
 - View and approve schedule requests from workers in both UKG Dimensions and Shifts.
 - Set and update worker availability in UKG Dimensions and view in Shifts.
@@ -126,7 +127,7 @@ Frontline workers can:
 - Request time off, view time off information, and view their team's open shifts in Shifts.
 - View and post timecard entries in Shifts.
 - Request open shifts and swap shifts in Shifts.
-- Set their availability in Shifts.
+- Set their availability in Shifts on Teams mobile.
 
 The following actions are currently not supported:
 

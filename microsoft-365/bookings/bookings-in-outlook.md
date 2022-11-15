@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
@@ -16,9 +17,6 @@ description: "Use Bookings with me to let others schedule meetings with you in O
 # Bookings with me
 
 **Bookings with me** in Outlook is a web-based personal scheduling page that integrates with the free/busy information from your Outlook calendar. Bookings with me lets people schedule a meeting or appointment with you. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings with me page.
-
-> [!NOTE]
-> Bookings with me is available worldwide in preview. Features included in preview might not be complete and could undergo changes before becoming available in the public release.
 
 Bookings with me has two different views:
 
@@ -134,8 +132,12 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
-    - To turn on Bookings with me for your organization, add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
+    - To turn on Bookings with me for your organization, you must set the **EwsApplicationAccessPolicy** to **EnforceAllowList** and add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
 
+   ```PowerShell
+   Set-OrganizationConfig -EwsApplicationAccessPolicy:EnforceAllowList
+   ```
+   
    ```PowerShell
    Set-OrganizationConfig -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```

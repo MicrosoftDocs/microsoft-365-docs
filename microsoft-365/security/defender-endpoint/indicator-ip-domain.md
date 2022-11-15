@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -134,9 +134,9 @@ Threat and vulnerability management's block vulnerable application features uses
 
 ## Policy precedence
 
-Microsoft Defender for Endpoint policy has precedence over Microsoft Defender Antivirus policy. In situations when Defender for Endpoint is set to **Allow**, but Microsoft Defender Antivirus is set to **Block**, the policy will default to **Allow**.
+Microsoft Defender for Endpoint policy has precedence over Microsoft Defender Antivirus policy. In situations when Defender for Endpoint is set to **Allow**, but Microsoft Defender Antivirus is set to **Block**, the policy will default to **Allow**.
 
-#### Precedence for multiple active policies
+### Precedence for multiple active policies
 
 Applying multiple different web content filtering policies to the same device will result in the more restrictive policy applying for each category. Consider the following scenario:
 
@@ -160,11 +160,12 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
    - Action - Specify the action to be taken and provide a description.
    - Scope - Define the scope of the machine group.
 
-5. Review the details in the Summary tab, then click **Save**.
+5. Review the details in the **Summary** tab, then select **Save**.
 
-## Related topics
+## Related articles
 
 - [Create indicators](manage-indicators.md)
 - [Create indicators for files](indicator-file.md)
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

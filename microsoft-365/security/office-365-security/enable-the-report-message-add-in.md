@@ -69,6 +69,8 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 - Organizations that have a URL filtering or security solution (such as a proxy and/or firewall) in place, must have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
 
+- Currently, reporting messages in shared mailboxes or other mailboxes by a delegate using the add-ins is not supported. Messages are not sent to the [custom mailbox](user-submission.md) or to Microsoft. Built-in reporting in Outlook on the web sends messages reported by a delegate to the custom mailbox and/or to Microsoft.
+
 > [!IMPORTANT]
 > To view messages reported to Microsoft on the **User reported messages** tab at <https://security.microsoft.com/reportsubmission>, don't turn off the built-in reporting experience.
 
