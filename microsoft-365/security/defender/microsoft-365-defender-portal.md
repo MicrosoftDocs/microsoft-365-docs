@@ -147,9 +147,9 @@ Threat analytics is the Microsoft 365 Defender threat intelligence solution from
 
 ## Partner catalog
 
-Microsoft 365 Defender supports 2 types of partners:
-1. Third-party integrations to help secure users with effective threat protection, detection, investigation, and response, in various security fields of endpoints, vulnerability management, email, identities, cloud apps.
-2. Professional services - where organizations can enhance the detection, investigation, and threat intelligence capabilities of the platform with these supported partner connections. 
+Microsoft 365 Defender supports two types of partners:
+1. Third-party integrations to help secure users with effective threat protection, detection, investigation, and response in various security fields of endpoints, vulnerability management, email, identities, and cloud apps.
+2. Professional services where organizations can enhance the detection, investigation, and threat intelligence capabilities of the platform. 
 
 
 ## Send us your feedback
