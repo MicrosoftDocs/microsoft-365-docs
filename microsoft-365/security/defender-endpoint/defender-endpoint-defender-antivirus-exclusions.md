@@ -236,7 +236,7 @@ Here are some examples of technical documentation to identify and implement the 
 - [Folders to exclude from antivirus scans on SharePoint Server](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
 - [Choosing antivirus software for SQL Server](https://support.microsoft.com/topic/how-to-choose-antivirus-software-to-run-on-computers-that-are-running-sql-server-feda079b-3e24-186b-945a-3051f6f3a95b)
 
-Depending on what you're using, you might need to refer to additional documentation. 
+Depending on what you're using, you might need to refer to the documentation for that server workload. 
 
 ## See also
 
