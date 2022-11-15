@@ -39,7 +39,12 @@ In a review set, there are five default filters that are pre-loaded in the revie
 
 ![Default filter types.](../media/DefaultFilterTypes.png)
 
-Click each filter to expand it and assign a value. Click outside the filter to automatically apply the filter to the review set. The following screenshot shows the Date filter configured to show documents within a date range.
+Select each filter to expand it and assign a value. Select outside the filter to automatically apply the filter to the review set.
+
+> [!NOTE]
+> A review set only displays a maximum of 10,000 items per page. Use default or custom filters to adjust the displayed items as needed.
+
+The following screenshot shows the Date filter configured to show documents within a date range.
 
 ![Default filter expanded.](../media/ExpandedFilter.png)
 
@@ -64,7 +69,7 @@ Expand each section and select or deselect filters to add or remove them in the 
 ![List of filter sections and properties in the filter panel.](../media/FilterPanel2.png)
 
 > [!NOTE]
-> When you expand a section in the filter panel, you'll notice that the default filter types are selected. You can keep these selected or deselect them and removed them from the filter set. 
+> When you expand a section in the filter panel, you'll notice that the default filter types are selected. You can keep these selected or deselect them and removed them from the filter set.
 
 ## Filter types
 
@@ -110,7 +115,7 @@ You can also build more advanced queries to search for documents in a review set
 
   ![Add a KQL filter.](../media/AddKQLFilter.png)
 
-2. Select the **KQL** filter and click **Open query builder**.
+2. Select the **KQL** filter and select **Open query builder**.
 
    In this panel, you can create complex KQL queries by using the query builder. You can add conditions or add condition groups that are made up of multiple conditions that are logically connected by **AND** or **OR** relationships.
 
@@ -132,6 +137,6 @@ At this time, there isn't a filter option in a review set to display partially i
 
 5. Copy or make note of the **Load Id** for the second collection (the one you created in step 2). The collection name is identified in the **Source info** column.
 
-6. Back in the review set, click **Filter**, expand the **IDs** section, and then select the **Load Id** checkbox.
+6. Back in the review set, select **Filter**, expand the **IDs** section, and then select the **Load Id** checkbox.
 
-7. Expand the **Load Id** filter, and then select the checkbox for the load Id that corresponds to the second collection to display the partially indexed items.
+7. Expand the **Load Id** filter, and then select the checkbox for the load ID that corresponds to the second collection to display the partially indexed items.
