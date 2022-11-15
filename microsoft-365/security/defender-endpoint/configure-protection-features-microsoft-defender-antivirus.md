@@ -63,4 +63,4 @@ See [Use next-gen Microsoft Defender Antivirus technologies through cloud protec
 
 ## See also
 
-- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-defender-antivirus-exclusions.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

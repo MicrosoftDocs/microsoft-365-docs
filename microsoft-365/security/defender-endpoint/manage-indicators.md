@@ -94,7 +94,7 @@ The IoC API schema and the threat ids in advance hunting have been updated to al
 
 ## Related articles
 
-- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-defender-antivirus-exclusions.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Create contextual IoC](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Use the Microsoft Defender for Endpoint indicators API](ti-indicator.md)
 - [Use partner integrated solutions](partner-applications.md)
