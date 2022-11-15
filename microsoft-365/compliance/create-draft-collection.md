@@ -37,7 +37,7 @@ After you've identified custodians and any non-custodian data sources for the ca
 
 ## Create a collection estimate
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to **eDiscovery > Premium**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to **eDiscovery** > **Premium**.
 
 2. Select the **Cases** tab and open an eDiscovery (Premium) case, and then select the **Collections** tab.
 
