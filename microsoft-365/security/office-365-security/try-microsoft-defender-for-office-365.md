@@ -107,7 +107,7 @@ What's the difference between an evaluation and a trial of Defender for Office 3
 
   - For organizations without Defender for Office 365 (for example, standalone EOP or Microsoft 365 E3) the features (in particular, the policies) of Defender for Office 365 are available to you during the trial period.
 
-  - Organizations with Defender for Office 365 Plan 1 (for example Microsoft 365 Business Premium or add-on subscriptions) have exactly the same policies as organizations with Defender for Office 365 Plan 2 (impersonation protection in anti-phishing policies, Safe Attachments policies, and Safe Links policies). The security policies from **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) don't expire or stop working after 90 days. What ends after 90 days for these organizations are the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) of Plan 2 that aren't present in Plan 1.
+  - Organizations with Defender for Office 365 Plan 1 (for example Microsoft 365 Business Premium or add-on subscriptions) have exactly the same policies as organizations with Defender for Office 365 Plan 2 (impersonation protection in anti-phishing policies, Safe Attachments policies, and Safe Links policies). The security policies from **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) don't expire or stop working after 90 days. What ends after 90 days for these organizations are the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) of Plan 2 that aren't present in Plan 1.
 
 - If you already have Defender for Office 365 Plan 2 (for example, as part of a Microsoft 365 E5 subscription), you'll never see **Defender for Office 365** on the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>. Instead, you start your evaluation of Defender for Office 365 Plan to on the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation> in **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies).
 
@@ -121,7 +121,7 @@ The information from the previous list is summarized in the following table:
 |Defender for Office 365 Plan 1 <br/><br/> Microsoft 365 Business Premium|Audit mode <br/> Blocking mode|Yes|Yes|Unlimited<sup>\*</sup>|
 |Microsoft 365 E5|Audit mode <br/> Blocking mode|Yes|No|Unlimited|
 
-<sup>\*</sup> The security policies from **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) don't expire or stop working after 90 days. Only the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) that are exclusive to Defender for Office 365 Plan 2 stop working after 90 days.
+<sup>\*</sup> The security policies from **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) don't expire or stop working after 90 days. Only the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) that are exclusive to Defender for Office 365 Plan 2 stop working after 90 days.
 
 ## Set up an evaluation or trial in audit mode
 

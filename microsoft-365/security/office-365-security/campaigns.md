@@ -1,5 +1,5 @@
 ---
-title: Campaign Views in Microsoft Defender for Office 365 Plan
+title: Campaigns in Microsoft Defender for Office 365 Plan
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -18,27 +18,27 @@ ms.collection:
   - m365-security
   - m365initiative-defender-office365
 ms.custom:
-description: Learn about Campaign Views in Microsoft Defender for Office 365.
+description: Learn about Campaigns in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
 
-# Campaign Views in Microsoft Defender for Office 365
+# Campaigns in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Campaign Views is a feature in Microsoft Defender for Office 365 Plan 2 (for example, Microsoft 365 E5 or organizations with a Defender for Office 365 Plan 2 add-on). Campaign Views in the Microsoft 365 Defender portal identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
+Campaigns in the Microsoft 365 Defender portal identifies and categorizes coordinated email attacks including phishing and malware. Campaigns can help you to:
 
-- Efficiently investigate and respond to phishing attacks.
-- Better understand the scope of the attack.
-- Show value to decision makers.
+- Efficiently investigate and respond to phishing and malware attacks, delivered via email.
+- Better understand the scope of the email attack targetting your organization.
+- Show value of Microsoft Defender for Office to decision makers in preventing email threats.
 
-Campaign Views lets you see the big picture of an attack faster and more complete than any human.
+Campaigns lets you see the big picture of an email attack faster and more complete than any human.
 
-Watch this short video on how campaign views in Microsoft Defender for Office 365 help you understand attack campaigns targeting your organization.  
+Watch this short video on how campaigns in Microsoft Defender for Office 365 help you understand coordinated email attacks targeting your organization.  
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGBL8]
 
 ## What is a campaign?
@@ -54,29 +54,32 @@ Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malwa
 
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
 
-## Campaign Views in the Microsoft 365 Defender portal
+## Campaigns in the Microsoft 365 Defender portal
 
-Campaign Views is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
+Campaigns is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
 
-:::image type="content" source="../../media/campaigns-overview.png" alt-text="The Campaigns overview in the Microsoft 365 Defender portal" lightbox="../../media/campaigns-overview.png":::
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="The Campaigns in the Microsoft 365 Defender portal" lightbox="../../media/campaigns-overview.png":::
 
-You can also get to Campaign Views from:
+You can also view Campaigns from:
 
 - **Email & collaboration** \> **Explorer** \> **View** \> **Campaigns**
 - **Email & collaboration** \> **Explorer** \> **View** \> **All email** \> **Campaign** tab
 - **Email & collaboration** \> **Explorer** \> **View** \> **Phish** \> **Campaign** tab
 - **Email & collaboration** \> **Explorer** \> **View** \> **Malware** \> **Campaign** tab
 
-To access Campaign Views, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+## Required licenses and permissions
+ 
+- ** You must have Defender for Office 365 Plan 2 to view Campaigns.
+- ** To access Campaigns, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 ## Campaigns overview
 
-The overview page shows information about all campaigns.
+The main Campaigns page is a threat report with all campaigns targetting your organizations.
 
 On the default **Campaign** tab, the **Campaign type** area shows a bar graph that shows the number of recipients per day. By default, the graph shows both **Phish** and **Malware** data.
 
 > [!TIP]
-> If you don't see any campaign data, try changing the date range or [filters](#filters-and-settings).
+> If you don't see any campaign data, or very limited data, try changing the date range or [filters](#filters-and-settings).
 
 The table below the graph on the overview page shows the following information on the **Campaign** tab:
 
@@ -295,9 +298,9 @@ The tabs in the campaign details view allow you to further investigate the campa
 
 <sup>\*</sup> Clicking on this value opens a new flyout that contains more details about the specified item (user, URL, etc.) on top of the campaign details view. To return to the campaign details view, click **Done** in the new flyout.
 
-### Buttons
+### Attitional Actions
 
-The buttons at the bottom the campaign details view allow you to investigate and record details about the campaign:
+The buttons at the bottom the campaign details view allows you to investigate and record details about the campaign:
 
 - **Explore messages**: Use the power of Threat Explorer to further investigate the campaign:
   - **All messages**: Opens a new Threat Explorer search tab using the **Campaign ID** value as the search filter.
