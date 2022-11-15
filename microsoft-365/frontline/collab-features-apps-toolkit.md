@@ -24,6 +24,7 @@ description: Resources to help you train your frontline workers on communication
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Help your frontline workers use collaboration apps and features
