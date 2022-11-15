@@ -159,12 +159,11 @@ The following table summarizes IoC types and available actions:
 
 > [!TIP]
 > See the following resources to learn more about indicators:
-
-- [Create indicators](manage-indicators.md)
-- [Create indicators for files](indicator-file.md)
-- [Create indicators for IP addresses and URLs/domains](indicator-ip-domain.md)
-- [Create indicators based on certificates](indicator-certificates.md)
-- [Manage indicators](indicator-manage.md)
+> - [Create indicators](manage-indicators.md)
+> - [Create indicators for files](indicator-file.md)
+> - [Create indicators for IP addresses and URLs/domains](indicator-ip-domain.md)
+> - [Create indicators based on certificates](indicator-certificates.md)
+> - [Manage indicators](indicator-manage.md)
 
 ## Attack surface reduction exclusions
 
