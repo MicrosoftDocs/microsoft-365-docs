@@ -28,7 +28,7 @@ When you've identified the set of documents you want to further examine, you can
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Statistics and reports for collection estimates
+## Search statistics for collection estimates
 
 This section describes the statistics that are available for collection estimates. These statistics are available on the **Search statistics** tab on the flyout page of a collection estimate.
 
@@ -36,11 +36,11 @@ This section describes the statistics that are available for collection estimate
 
 This section displays a graphical summary of the estimated items returned by the collection. This indicates the number of items that match the search criteria of the collection. This information gives you an idea about the estimated number of items returned by the collection.
 
-![Collection estimates for a collection estimate.](../media/AeDCollectionEstimates.png)
-
 - **Estimated items by locations**: The total number of estimated items returned by the collection. The specific number of items located in mailboxes and located in sites is also displayed.
 - **Estimated locations with hits**: The total number of content locations that contain items returned by the collection. The specific number of mailbox and site locations is also displayed.
 - **Data volume by location (in MB)**: The total size of all estimated items returned by the collection. The specific size of mailbox items and site items is also displayed.
+
+![Collection estimates section for a collection estimate.](../media/ediscovery-collection-estimates-section.png)
 
 ### Condition report
 
@@ -53,6 +53,8 @@ This section displays statistics about the collection search query and the numbe
 - **Items**: The number of items (from the specified content location) that match the query listed in the **Condition** column. As previously explained, if an item contains multiple instances of a keyword that is being searched for, it's only counted once in this column.
 - **Size (MB)**: The total size of all items that were found (in the specified content location) that match the search query in the **Condition** column.
 
+![Condition report section for a collection estimate.](../media/ediscovery-collection-report-section.png)
+
 ### Top locations
 
 This section displays statistics about the specific content locations with the most items returned by the collection.
@@ -62,17 +64,32 @@ This section displays statistics about the specific content locations with the m
 - Estimated number of items in the content location returned by the collection.
 - The total size of estimated items in each content location.
 
+![Top locations section for a collection estimate.](../media/ediscovery-collection-top-locations-section.png)
+
 ## Statistics and reports for committed collections
 
 This section describes the statistics that are available after you commit a collection to a review set, including the actual number of items added to the review set. These statistics (in addition to load set information) provide historical information about content added to a case.
 
 After you commit a collection to a review set, the following tabs are displayed on the flyout page of the committed connection. Each of these tabs contains different types of information about the collection.
 
-![Tabs on flyout page of committed collection.](../media/CommittedCollectionFlyoutPage.png)
+![Tabs on flyout page of committed collection.](../media/ediscovery-collection-committed-sections.png)
 
-### Collection contents
+### Summary tab for collections
 
-This section of the **Summary** tab contains statistics and other information about the items that were collected from the data sources in the collection and added to the review set.
+The **Summary** tab for committed collections contains several sections that provide information about the collection items, item estimates and locations, indexing, file types, and more.
+
+#### Collection overview (preview)
+
+The **Collection overview (preview)** section on the **Summary** tab of a committed review set contains...
+
+- **Locations with hits**:
+- **Pre-collection estimates**:
+- **Collection items**:
+- **Processing to review set**:
+
+#### Collection contents
+
+The **Collection contents** section on the **Summary** tab of a committed review set contains statistics and other information about the items that were collected from the data sources in the collection and added to the review set.
 
 - **Total extracted items**. The total number of items added to the review set. This number indicates the sum of parent items and child items added to the review set.
 
@@ -87,21 +104,33 @@ This section of the **Summary** tab contains statistics and other information ab
 - **Unique items**. The number of unique items added to the review set. Unique items are unique to the review set. All items are unique when the first collection is added to a new review set because there were no previous items in the review set.
 - **Identified duplicate items**. The number of items from the collection that weren't added to the review set because the same item already exists in the review set. Statistics about duplicate items can help explain the differences between the number of estimated items from a collection estimate and the actual number of items added to the review set.
 
-### Indexing
+#### Errors
+
+The **Errors** section on the **Summary** tab of a committed review set contains...
+
+#### Indexing
 
 The **Indexing** section on the **Summary** tab of a committed review set contains indexing information about the items added to the review set.
 
-**New indexed items**. The number of items that were newly indexed before they were added to the review set. Examples of a newly indexed item are child items extracted from a parent item and then indexed before they're added to the review set. Also, items that aren't located in custodial data sources and non-custodial content locations listed on the **Data sources** tab in the case are indexed before they're added to the review. For example, newly indexed items would include items collected from additional locations.
+- **New indexed items**. The number of items that were newly indexed before they were added to the review set. Examples of a newly indexed item are child items extracted from a parent item and then indexed before they're added to the review set. Also, items that aren't located in custodial data sources and non-custodial content locations listed on the **Data sources** tab in the case are indexed before they're added to the review. For example, newly indexed items would include items collected from additional locations.
 
-**Updated indexed items**. The number of partially indexed items that were successfully indexed and added to the review set. This statistic indicates the partially indexed items from custodial and non-custodial content locations **Data sources** tab that were successfully indexed when the collection was committed to the review set.
+- **Updated indexed items**. The number of partially indexed items that were successfully indexed and added to the review set. This statistic indicates the partially indexed items from custodial and non-custodial content locations **Data sources** tab that were successfully indexed when the collection was committed to the review set.
 
-**Indexing errors**. The number of partially indexed items that couldn't be indexed before they were added to the review set. These items might require error remediation.
+- **Indexing errors**. The number of partially indexed items that couldn't be indexed before they were added to the review set. These items might require error remediation.
 
-### Collection parameters
+#### Collection file types
 
-This section displays the collection information that was used to collect the items that were added to the review set. This tab displays information that is similar to the information on the **Search statistics** tab. This section provides a quick snap shot of the search query used by the collection, the content locations that were searched, and the estimated collection results. As previously explained, the number of estimated items in this section would be equal to the number of parent items shown in the **Collection contents** section.
+The **Collection file types** section on the **Summary** tab of a committed review set contains...
 
-### Search statistics tab
+#### Collection parameters
+
+The **Collection parameters** section on the **Summary** tab of a committed review set contains displays the collection information that was used to collect the items that were added to the review set. This tab displays information that is similar to the information on the **Search statistics** tab. This section provides a quick snap shot of the search query used by the collection, the content locations that were searched, and the estimated collection results. As previously explained, the number of estimated items in this section would be equal to the number of parent items shown in the **Collection contents** section.
+
+## Data sources tab for collections
+
+The **Data sources** tab contains...
+
+## Search statistics tab for collections
 
 The statistics displayed on the **Search statistics** tab are the same statistics from the last time that a collection estimate was run. This includes collection estimates, condition report, and top locations. This information is preserved from the collection estimate for historical reference, and can be compared to the actual collection that was committed to the review set.
 
