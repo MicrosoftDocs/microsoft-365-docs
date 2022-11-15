@@ -30,5 +30,5 @@ A web link (or web clip) is a URL that displays a web page within a protected br
 | iOS/iPadOS web clip | An iOS/iPadOS web clip is a shortcut that you assign to to iOS users or devices. The shortcut contains a URL that opens a browser. |
 | Windows web link | A Windows web link is a shortcut that you assign to to Windows users or devices. The shortcut contains a URL that opens a browser. |
 | Web link | A Web link is a shortcut that you assign to users or devices running iOS, Android, or Windows. This link is allows you to reach the same web location from multiple platforms (cross platform web app). |
-| 'Managed Google PLay web link' | A 'Managed Google PLay web link' is a shortcut that you assign to users or devices running Android. You create this web link from the Managed Google Play app store by selecting **Managed Google Play app** as the app type within Intune. This link is installable and manageable just like other Android apps. |
+| *Managed Google PLay web link* | A *Managed Google PLay web app* is a shortcut that you assign to users or devices running Android. You create this web app from the Managed Google Play app store by selecting **Managed Google Play app** as the app type within Intune. This link is installable and manageable just like other Android apps. |
 

@@ -1,11 +1,11 @@
 ---
-title: "Understand app licenses used in a managed environment"
+title: "Manage app licenses used in a managed environment"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Understand app licenses used in a managed environment.
+description: Manage app licenses used in a managed environment.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,6 +14,6 @@ ms.custom:
 keywords:
 ---
 
-# Understand app licenses used in a managed environment
+# Manage app licenses used in a managed environment
 
 
