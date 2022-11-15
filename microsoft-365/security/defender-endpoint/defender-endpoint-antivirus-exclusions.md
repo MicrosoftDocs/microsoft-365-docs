@@ -209,11 +209,11 @@ Here's how it works:
 
 ## How policy conflicts are handled
 
-In cases where indicators conflict, here’s what to expect:
+In cases where Defender for Endpoint indicators conflict, here’s what to expect:
 
 - If there are conflicting file indicators, the indicator that uses the most secure hash is applied. For example, SHA256 takes precedence over SHA-1, which takes precedence over MD5.
 
-- If there are conflicting URL indicators, the more strict indicator is used. For Windows Defender SmartScreen, an indicator that uses the longest URL path is applied. For example, `www.dom.ain/admin/` takes precedence over `www.dom.ain`. (Network protection applies to domains, rather than subpages within a domain.)
+- If there are conflicting URL indicators, the more strict indicator is used. For [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview), an indicator that uses the longest URL path is applied. For example, `www.dom.ain/admin/` takes precedence over `www.dom.ain`. ([Network protection](network-protection.md) applies to domains, rather than subpages within a domain.)
 
 - If there are similar indicators for a file or process that have different actions, the indicator that is scoped to a specific device group takes precedence over an indicator that targets all devices.  
 
