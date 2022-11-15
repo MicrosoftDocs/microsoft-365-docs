@@ -196,6 +196,8 @@
               href: cross-tenant-onedrive-migration-step6.md
             - name: Step 7 Post migration steps
               href: cross-tenant-onedrive-migration-step7.md
+            - name: FAQs
+              href: cross-tenant-onedrive-migration-faqs.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Data Residency
