@@ -1,5 +1,5 @@
 ---
-title: Cross-tenant OneDrive migration
+title: Cross-tenant OneDrive migration overview
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
@@ -50,7 +50,9 @@ Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A
 
 - Ensure all users and groups identified for migration have been pre-created on the target tenant.
 - Assign the appropriate licenses to each user on the target tenant.
-- We recommend that OneDrive site creation be restricted in the target tenant to prevent users from creating OneDrive sites. If a OneDrive site already exists for the user on the target tenant, the migration will fail.  You can't overwrite an existing site.
+
+>[!Important]
+>We recommend that OneDrive site creation be restricted in the target tenant to prevent users from creating OneDrive sites. If a OneDrive site already exists for the user on the target tenant, the migration will fail. You can't overwrite an existing site.
 
 >[!Note]
 >To learn more about restricting OneDrive site creation, see [Disable OneDrive creation for some users](/sharepoint/manage-user-profiles#disable-onedrive-creation-for-some-users)
