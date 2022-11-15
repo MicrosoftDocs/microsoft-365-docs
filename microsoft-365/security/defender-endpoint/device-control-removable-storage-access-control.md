@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 11/10/2022
+ms.date: 11/14/2022
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -175,6 +175,3 @@ DeviceEvents
 | project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, Policy, PolicyRuleId, FileInformationOperation, MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber, FileName, FolderPath, FileSize, FileEvidenceLocation, AdditionalFields
 | order by Timestamp desc
 ```
-
-:::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage.":::
-![image](https://user-images.githubusercontent.com/81826151/200893727-a3311c48-a008-456f-acb5-c2c0aaf0500e.png)
