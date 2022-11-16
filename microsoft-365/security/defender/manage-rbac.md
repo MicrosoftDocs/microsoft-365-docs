@@ -38,7 +38,7 @@ The Microsoft 365 Defender role-based access control (RBAC) model provides a sin
 
 ## What's supported by the Microsoft 365 Defender RBAC model
 
-The Microsoft 365 Defender role-based access control (RBAC) model provides centralized permissions management for the following solutions:
+Centralized permissions management is supported for the following solutions:
 
 | Solution| Description |
 |:-------|:-----|:-------|
