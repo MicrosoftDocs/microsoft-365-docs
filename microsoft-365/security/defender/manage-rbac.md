@@ -52,17 +52,13 @@ Centralized permissions management is supported for the following solutions:
 >[!Note]
 > This offering isn't currently for available for Microsoft Defender for CloudApps
 
-The Microsoft 365 Defender RBAC model provides easy migration of the existing permissions in the individual supported RBAC models to the new RBAC model.
+## Before you start
 
-All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions align, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md)
-
-It's important to understand the different permissions available in the Microsoft 365 Defender RBAC model and what their impact is when the model is activated. The new Microsoft 365 Defender RBAC gives you the flexibility to create more granular roles where appropriate, using a principle of least privilege and granting users only the privileges they need.
-
-## Pre-requisites
-
-This section provides details on the steps you should take before using Microsoft 365 Defender RBAC.
+This section provides useful information as well accounts information you should have before you start using Microsoft 365 Defender RBAC.
 
 ### Permissions
+
+It's important to understand the different permissions available in the Microsoft 365 Defender RBAC model and what their impact is when the model is activated. The new Microsoft 365 Defender RBAC gives you the flexibility to create more granular roles where appropriate, using a principle of least privilege and granting users only the privileges they need.
 
 You need to be a global administrator or security administrator in Azure Active Directory to gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
 
@@ -70,12 +66,28 @@ Once you have navigated to this page, you can add a custom role with the permiss
 
 The Microsoft 365 Defender security portal will continue to respect existing Azure Active Directory global roles when you activate the Microsoft 365 Defender RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
 
+## Migration of existing permissions
+
+The Microsoft 365 Defender RBAC model provides easy migration of the existing permissions in the individual supported RBAC models to the new RBAC model.
+
+All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions align, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md)
+
 ### Opt-in mode
 
 Microsoft 365 Defender RBAC is available in an “opt-in” mode. This means Microsoft 365 Defender will continue to respect the existing RBAC models until you activate the new RBAC model per workload. For more information about activating Microsoft 365 Defender RBAC, see [Active Microsoft 365 Defender RBAC](activate-defender-rbac.md).
 
-## Next steps
+## Start using Microsoft 365 Defender RBAC model
 
-- [Create custom roles](create-custom-rbac-roles.md)
-- [Compare existing RBAC roles to Microsoft 365 Defender RBAC roles](compare-rbac-roles.md)
-- [Import existing RBAC roles](import-rbac-roles.md)
+Use the following steps as a guide to start using the Microsoft 365 Defender RBAC model:
+
+1. **Get started with creating custom roles**
+    - [Create custom roles](create-custom-rbac-roles.md)
+    - [Learn about RBAC permissions](custom-permissions-details.md)
+
+2. **Learn about importing roles from existing RBAC role models**
+    - [Compare existing RBAC roles to Microsoft 365 Defender RBAC roles](compare-rbac-roles.md)
+    - [Import existing RBAC roles](import-rbac-roles.md)
+
+3. **Activate and manage your roles with the Microsoft 365 Defender RBAC model**
+   - [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+   - [View, edit and delete rbac roles](edit-delete-rbac-roles.md)
