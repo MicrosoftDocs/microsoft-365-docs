@@ -400,7 +400,7 @@
       items: 
       - name: Manage roles and permissions
         items: 
-            - name: Manage Microsoft 365 Defender access
+            - name: Manage access to Microsoft 365 Defender
               href: m365d-permissions.md
             - name: Custom roles in role-based access 
               href: custom-roles.md

@@ -50,11 +50,11 @@ The Microsoft 365 Defender role-based access control (RBAC) model provides a sin
 >[!Note]
 > This offering isn't currently for available for Microsoft Defender for CloudApps
 
-The Microsoft 365 Defender RBAC model enables easy migration of existing roles from the individual supported RBAC models listed above.
+The Microsoft 365 Defender RBAC model provides easy migration of the existing permissions in the individual supported RBAC models to the new RBAC model.
 
-All permissions listed within the Microsoft 365 Defender RBAC model align to each of the roles in the individual RBAC models to ensure backward compatibility. For more information on how the permissions in the Microsoft 365 Defender RBAC model align with individual RBAC permissions, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md)
+All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions in the Microsoft 365 Defender RBAC model align with individual RBAC permissions, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md)
 
-It's important that you become familiar with and understand the different permissions that are available and what the impact is of granting access to your users once you activate it.
+It's important that you become familiar with and understand the different permissions that are available in the Microsoft 365 Defender RBAC model and their impact when acces is granted to your users once you activate it.
 
 ## Pre-requisites
 
