@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-The Advanced Virtual Appointments activity report provides you with usage information on advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). You can see how many users are actively using advanced capabilities, which capabilities they're using, and a detailed usage breakdown for individual appointments.
+The Advanced Virtual Appointments activity report provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). You can see how many users are actively using advanced capabilities, which capabilities they're using, and a detailed usage breakdown for individual appointments.
 
 To view the report, you must be a global admin, Teams admin, Global reader, or Report reader, and your organization must be using advanced Virtual Appointments capabilities.
 
@@ -36,7 +36,7 @@ The report shows usage information for the following features.
 |Lobby chat|Communicate with external attendees in the waiting room before an appointment.|
 |On-demand appointments|Service and manage on-demand virtual appointments.|
 
-Use this report to gain insight into overall activity and usage per feature in your organization. This information can help you to analyze trends to drive business decisions.
+Use this report to gain insight into overall user activity and usage per feature in your organization. This information can help you analyze trends to drive business decisions.
 
 ## View the report
 
