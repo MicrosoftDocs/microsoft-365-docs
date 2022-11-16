@@ -28,7 +28,7 @@ description: "Understand how to use and manage templates for building assessment
 > [!IMPORTANT]
 > The assessment templates that are available to your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 > 
-> In mid-December 2022, licensing updates which will change how templates are included as part of your licensing agreement. [See details on these changes below](#template-availability-and-licensing).
+> In mid-December 2022, licensing updates which will change how templates are included as part of your licensing agreement. [Learn more about these changes below](#template-availability-and-licensing).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
