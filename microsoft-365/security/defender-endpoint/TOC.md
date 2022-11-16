@@ -201,6 +201,8 @@
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
+### [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Troubleshoot onboarding issues]()
@@ -687,7 +689,7 @@
 ##### [Stream advanced hunting events to your storage account](raw-data-export-storage.md)
 
 #### [SIEM integration]()
-##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
+##### [Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API](configure-siem.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Partners & APIs]()
