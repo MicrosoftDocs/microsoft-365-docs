@@ -20,6 +20,7 @@ search.appverid: MET150
 description: "Learn how to access and view non-Azure volume licensing invoices in the Microsoft 365 admin center."
 ms.date: 11/18/2022
 ---
+
 # Non-Azure Microsoft volume licensing invoices
 
 This article applies only to non-Azure volume licensing (VL) invoices and explains the format of a new invoice PDF and invoice recon file that
