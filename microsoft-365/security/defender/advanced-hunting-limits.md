@@ -92,7 +92,7 @@ The graph supports two modes:
 - Average use per day –  the average use of resources per day
 - Highest use per day – the highest actual use of resources per day
 
-:::image type="content" source="../../media/ah-query-resources/resource-usage-over-time.png" alt-text="Two view modes for query resources report" lightbox="../../media/ah-query-resources/resource-usage-over-time.png":::
+![Two view modes for query resources report](../../media/ah-query-resources/resource-usage-over-time.png)
 
 This means that, for instance, if on a specific day you ran two queries, one used 50% of your resources and one used 100%, the average daily use value will show 75%, while the top daily use will show 100%.
 
