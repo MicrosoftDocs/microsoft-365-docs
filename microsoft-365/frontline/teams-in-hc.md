@@ -53,7 +53,7 @@ To get the most benefit for your healthcare organization, you first choose which
 
 1. [Choose your scenarios](#scenarios-for-healthcare) you want to implement.
 2. [Set up Microsoft 365](flw-setup-microsoft-365.md) - Set up Microsoft 365's core elements, Microsoft Teams, and any other services you need.
-3. [Configure services and apps](flw-setup-microsoft-365.md#step-5-configure-apps-for-your-scenario) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
+3. [Configure services and apps](flw-setup-microsoft-365.md#step-7-configure-apps-for-your-scenario) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
 
 ## Scenarios for healthcare
 
