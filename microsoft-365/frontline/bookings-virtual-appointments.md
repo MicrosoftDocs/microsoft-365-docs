@@ -36,13 +36,11 @@ ms.date: 10/28/2022
 
 ## Overview
 
-The [Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) in Microsoft Teams gives organizations a simple way to schedule and manage virtual appointments for staff and attendees. Use it to schedule and manage appointments such as healthcare visits, financial consultations, interviews, customer support, virtual fittings and consultations, education office hours, and more.
+The [Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) in Microsoft Teams gives organizations a simple way to schedule and manage virtual appointments for staff and attendees. Use it to schedule and manage appointments such as healthcare visits, financial consultations, interviews, customer support, virtual fittings and consultations, education office hours, and more. You can also publish an online booking page for your clients, customers, and patients to book appointments with your staff.
 
 The Bookings app makes it easy to manage complex scheduling demands of any organization. Schedulers can manage multiple department and staff calendars, as well as communications with internal and external attendees, from a single experience.
 
 The virtual appointments are held through Microsoft Teams meetings, which offer robust video conferencing capabilities. For example, a doctor can share their screen and review test results with a patient. Or, a banking advisor can request electronic signatures on documents, allowing them to close transactions remotely.
-
-Each scheduled virtual appointment includes a Teams meeting link that’s sent to attendees in email where they can easily join from a web browser or in Teams on any device. Automated email reminders help reduce no-shows and enhance customer and client engagement.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
@@ -62,9 +60,9 @@ This article gives you an overview of how to schedule, manage, and conduct virtu
 
 If you’re an admin, see [Manage the Bookings app in Teams](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) to learn about the prerequisites for using the Bookings app in Teams, how to control access to Bookings in your organization, and recommended policy and admin settings.
 
-Remember that only schedulers in your organization need to have the Bookings app installed in Teams. Staff that conduct or participate in virtual appointments don't need the app. They join appointments from their Teams or Outlook calendar or by using the meeting link in their booking confirmation email.
-
 ## Set up a new booking calendar
+
+You must be a Bookings admin to set up and manage booking calendar settings.
 
 ### Create the booking calendar
 
@@ -72,8 +70,7 @@ In Teams, go to **Bookings** > **Get started**, and then select **New booking ca
 
 :::image type="content" source="media/bookings-virtual-appointments-new-booking-calendar.png" alt-text="Screenshot of a new booking calendar screen showing business types":::
 
-If you’re a larger organization, consider creating more than one booking calendar if you want attendees to receive a booking email from a specific department rather than your overall organization.
-To learn more, see [Create a Bookings calendar](https://support.microsoft.com//office/create-a-bookings-calendar-921cfd26-a24d-4aca-9004-561594112148).
+If you’re a larger organization, consider creating separate booking calendars for specific departments within your organization. To learn more, see [Create a Bookings calendar](https://support.microsoft.com//office/create-a-bookings-calendar-921cfd26-a24d-4aca-9004-561594112148).
 
 > [!NOTE]
 > If this isn't your first time in the Bookings app or if you want to work in an existing booking calendar, in Bookings, select the dropdown arrow next to your organization name, and then choose **Existing booking calendar**. From here, you can search for the one you want.
@@ -88,7 +85,7 @@ The Bookings app integrates with Outlook. After you add staff, you’ll be able 
 
 Create specific appointment types to represent the services offered by your organization and to tailor the booking experience. The appointment type can then be used to book appointments.
 
-In the booking calendar, go to **More options** (...) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Specify whether the service is for [**Scheduled**](#scheduled-appointment-type) or [**On-demand**](#on-demand-appointment-type) appointments.
+In the booking calendar, go to **More options** (**...**) > **Settings**, select **Appointment types**, and then select **Add appointment type**. Specify whether the service is for [Scheduled](#scheduled-appointment-type) or [On-demand](#on-demand-appointment-type) appointments.
 
 To learn more, see [Create an appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887).
 
@@ -114,7 +111,7 @@ To learn more, see [Send text message notifications](https://support.microsoft.c
 
 ##### Link forms
 
-If you're a Bookings admin, you can link up to four forms for attendees to fill out each time this scheduled appointment type is booked. For example, you may require attendees to complete a registration form before they join an appointment. To link a form, choose **Link a form**. Enter the URL of the form, and then choose **Link**. (If this is the first time that you're linking a form, you'll be prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.)
+You can link up to four forms for attendees to fill out each time this scheduled appointment type is booked. For example, you may require attendees to complete a registration form before they join an appointment. To link a form, choose **Link a form**. Enter the URL of the form, and then choose **Link**. (If this is the first time that you're linking a form, you'll be prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.)
 
 When working with forms, keep in mind that:
 
@@ -132,21 +129,48 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 
 Enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
-Your customers and clients can then choose the appointment type on your booking page to request an on-demand appointment with your staff.
+Your customers, clients, and patients can then choose the appointment type on your booking page to request an on-demand appointment with your staff.
 
-## Schedule an appointment
+## Publish a booking page
 
-In the booking calendar, select **New booking**. Select a scheduled appointment type, and then fill out the relevant information.
+![Information icon](media/info.png) **To access the on-demand scheduling feature during the preview period, users need a Teams Premium trial license.**
+
+Booking admins can publish a self-serve online booking page where people can book scheduled and on-demand appointments with your staff.
+
+1. In the booking calendar, go to **More options** (**...**) > **Settings**, and then select **Booking page**.
+2. Turn on **Publish booking page**.
+3. To enable people to request on-demand appointments on your booking page, turn on **Show option for On-demand scheduling**.
+
+You can customize and manage your booking page settings in the Bookings web app. To learn more, see [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page).
+
+## Book an appointment
+
+### Scheduled appointments
+
+Schedulers use scheduled appointment types to book appointments for your staff and attendees. In the booking calendar, select **New booking**. Choose a scheduled appointment type, and then fill out the relevant information.
 
 This includes attendee contact information, the staff member who will be providing the service, internal notes that only staff can see, whether the attendee can join from a browser, email reminders, and whether to send SMS notifications. If a form is linked to the appointment type, you can choose to include it, remove it, or add any other linked forms.
 
-The email confirmation sent to the attendee includes the meeting link and an attachment so that they can add the virtual appointment to their calendar. Staff also receive an email confirmation and meeting invite. If a form was included in the appointment, Bookings admins and schedulers can see whether the form was completed by the attendee before the appointment, and can view the attendee's response.
+Each scheduled appointment includes a Teams meeting link that’s sent to attendees in email where they can easily join from a web browser (if enabled for the appointment) or in Teams on any device. The email confirmation also includes an attachment so they can add the appointment to their calendar. Staff also receive an email confirmation and meeting invite. 
+
+If a form was included in the appointment, Bookings admins and schedulers can see whether the form was completed by the attendee before the appointment, and can view the attendee's response.
 
 To learn more, see [Schedule a booking in the Teams Bookings app](https://support.microsoft.com/office/schedule-a-booking-in-the-teams-bookings-app-e275049d-0d0f-4161-8526-461a9f29439f).
 
+### On-demand appointments
+
+Your customers, clients, and patients can go to your online booking page to request an appointment with your staff.
+
 ## Conduct an appointment
 
-In your Teams or Outlook calendar, go to the booking, and then select **Join** or the Teams meeting link. Check your audio and video settings, and then select **Join now**. To learn more, see [Conduct a Bookings appointment](https://support.microsoft.com/office/conduct-a-bookings-appointment-a86a4007-e26c-4909-9893-f7036e2747cd).
+For scheduled appointments, do one of the following:
+
+- In your Teams or Outlook calendar, go to the booking, and then select **Join** or the Teams meeting link.  
+- In Bookings, go to the **Queue** tab, and then under **Scheduled**, select **Join** next to the appointment.
+
+For on-demand appointments, in Bookings, go to the **Queue** tab, and then under **On-demand**, select **Join** next to the appointment.
+
+To learn more, see [Conduct a Bookings appointment](https://support.microsoft.com/office/conduct-a-bookings-appointment-a86a4007-e26c-4909-9893-f7036e2747cd).
 
 ## Monitor appointments and get real-time status updates in the queue view
 
@@ -167,12 +191,6 @@ To learn more, see [Queue view in Bookings](https://support.microsoft.com/office
 > [!NOTE]
 > Currently, the Bookings app supports adding up to 100 staff per booking calendar. If you used Graph APIs to set up and add staff to a booking calendar, this limit may not be enforced. In this scenario, the **Queue** tab won't be able to render content for calendars that have more than 100 staff. For an optimal experience, we recommend that you add no more than 100 staff to a booking calendar. We're working to resolve this limitation in future releases.
 
-## Additional capabilities with the Bookings web app
-
-The Bookings web app gives you additional capabilities. For example, you can publish a self-serve online booking page where people can book appointments with your staff. To access the Bookings web app, go to **More options** (...) > **Open Bookings web app**.
-
-To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
-
 ## Get insight into Virtual Appointments usage
 
 ![Information icon](media/info.png) **The Virtual Appointments usage report is moving to [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required. To access the Advanced Virtual Appointments activity report during the preview period, a Teams Premium trial license is required.**
@@ -181,7 +199,7 @@ Admins can use the following reports in the Teams admin center to gain insight i
 
 - The [Virtual Appointments usage report](virtual-appointments-usage-report.md) gives you an overview of Teams Virtual Appointments activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments. You can view key metrics such as lobby wait time and appointment duration.
 
-- The [Teams Advanced Virtual Appointments activity report](virtual-appointments-active-user-report.md) provides active user information for advanced Virtual Appointments capabilities that are available with Teams Premium (preview). You can see how many users are actively using advanced capabilities, which capabilities they're using, and a detailed breakdown for individual appointments.
+- The [Advanced Virtual Appointments activity report](virtual-appointments-active-user-report.md) provides usage information for advanced Virtual Appointments capabilities that are available with Teams Premium (preview).
 
 ## Related articles
 
