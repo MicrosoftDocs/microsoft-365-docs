@@ -175,13 +175,13 @@ To learn more, see [Microsoft Bookings](/microsoft-365/bookings/bookings-overvie
 
 ## Get insight into Virtual Appointments usage
 
-![Information icon](media/info.png) **The Virtual Appointments usage report is moving to [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required. To access the Virtual Appointments active user report during the preview period, a Teams Premium trial license is required.**
+![Information icon](media/info.png) **The Virtual Appointments usage report is moving to [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required. To access the Advanced Virtual Appointments activity report during the preview period, a Teams Premium trial license is required.**
 
 Admins can use the following reports in the Teams admin center to gain insight into usage activity and trends in your organization. Use this information to help optimize Virtual Appointments to deliver better business outcomes.
 
 - The [Virtual Appointments usage report](virtual-appointments-usage-report.md) gives you an overview of Teams Virtual Appointments activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments. You can view key metrics such as lobby wait time and appointment duration.
 
-- The [Teams Virtual Appointments active user report](virtual-appointments-active-user-report.md) provides active user information for advanced Virtual Appointments capabilities that are available with Teams Premium (preview). You can see how many users are actively using advanced capabilities, which capabilities they're using, and a detailed breakdown for individual appointments.
+- The [Teams Advanced Virtual Appointments activity report](virtual-appointments-active-user-report.md) provides active user information for advanced Virtual Appointments capabilities that are available with Teams Premium (preview). You can see how many users are actively using advanced capabilities, which capabilities they're using, and a detailed breakdown for individual appointments.
 
 ## Related articles
 

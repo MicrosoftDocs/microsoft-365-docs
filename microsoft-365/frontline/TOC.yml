@@ -127,7 +127,7 @@
       items: 
       - name: Virtual Appointments usage report
         href: virtual-appointments-usage-report.md
-      - name: Virtual Appointments active user report
+      - name: Advanced Virtual Appointments activity report
         href: virtual-appointments-active-user-report.md
       - name: EHR connector Virtual Appointments report
         href: ehr-connector-report.md  
