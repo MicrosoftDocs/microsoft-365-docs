@@ -32,11 +32,14 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Using the Microsoft 365 Defender Security portal role-based access control (RBAC), lets you manage user privileges within a single system, cross Defender products, that ensures higher productivity and efficient access control.
 
-## The Microsoft 365 Defender RBAC model, supports the following Defender workloads
+Microsoft 365 Defender provides integrated threat protection, detection, and response across endpoints, email, identities, applications, and data within a single portal. Managing a user's permission to view data and complete tasks is vital to keep your organization secure.
 
-| Workload name | Description | Status |
+The Microsoft 365 Defender role-based access control (RBAC) model provides a single permissions management experience that provides one central location for administrators to give users permission to view data and complete tasks across different security solutions.
+
+## Solutions supported in the Microsoft 365 Defender RBAC model
+
+| Solution| Description | Status |
 |:-------|:-----|:-------|
 |Microsoft Defender for Endpoint | Full support for all endpoint data and actions. All roles are compatible with the device group's scope as defined on the device groups page. | Public preview |
 | Microsoft Defender for Office 365 | Support for all scenarios that were controlled by <strong>Exchange Online Protection roles</strong> (EOP), configured in the Office 365 Security &amp; Compliance Center (protection.office.com)| Public preview|
@@ -44,7 +47,7 @@ Using the Microsoft 365 Defender Security portal role-based access control (RBAC
 | Microsoft for CloudApps |Not supported| On the roadmap |
 
 >[!Note]
-> Scenarios controlled by **Exchange Online** roles (EXO) are not changed and will still be managed in [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com/). Adding those scenarios to the Microsoft 365 Defender RBAC is part of the roadmap.
+> Scenarios controlled by **Exchange Online** roles (EXO) are not changed and will still be managed in [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com/).
 
 All permissions listed within the Microsoft 365 Defender RBAC model align with previous individual RBAC models and ensure backward compatibility. This product enables easy migration of existing roles from previous individual RBAC models.
 
