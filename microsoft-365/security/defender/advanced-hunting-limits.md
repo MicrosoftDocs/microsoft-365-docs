@@ -61,7 +61,7 @@ The report can be accessed in two ways:
 
 :::image type="content" source="../../media/ah-query-resources/Reports-general-query-resources.png" alt-text="view the query resources report in the Reports section" lightbox="../../media/ah-query-resources/Reports-general-query-resources.png":::
 
-All users can access the reports, however, only administrators (AAD global admin and AAD security admin) can see queries done by all users in all interfaces. Any other user can only see:
+All users can access the reports, however, only the AAD global admin, AAD security admin, and AAD security reader roles can see queries done by all users in all interfaces. Any other user can only see:
 - Queries they ran via the portal
 - Public API queries they ran themselves and not through the application
 - Custom detections they created
@@ -70,12 +70,13 @@ All users can access the reports, however, only administrators (AAD global admin
 By default, the report table displays queries from the last day, and is sorted by Resource usage, to help you easily identify which queries consumed the highest amount of CPU resources. 
 
 The query resources report contains all queries that ran, including detailed resource information per query:
-- Time – when the query was run
-- Interface – whether the query ran in the portal, in custom detections, or via API query
-- User/App – the user or app that ran the query 
-- Resource usage – an indicator of the amount of CPU resources a query consumed (can be Low, Medium, or High, where High means the query used a large amount of CPU resources and should be improved to be more efficient)
-- State – whether the query was completed, failed, or was cancelled
-- Query time – how long it took to run the query 
+- **Time** – when the query was run
+- **Interface** – whether the query ran in the portal, in custom detections, or via API query
+- **User/App** – the user or app that ran the query 
+- **Resource usage** – an indicator of the amount of CPU resources a query consumed (can be Low, Medium, or High, where High means the query used a large amount of CPU resources and should be improved to be more efficient)
+- **State** – whether the query was completed, failed, or was throttled
+- **Query time** – how long it took to run the query 
+- **Time range** – the time range used in the query
 
 :::image type="content" source="../../media/ah-query-resources/Excessive-usage-sample.png" alt-text="view inefficient queries" lightbox="../../media/ah-query-resources/Excessive-usage-sample.png":::
 
