@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-The Advanced Virtual Appointments activity report provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). You can see how many users are actively using advanced capabilities, which capabilities they're using, and a detailed usage breakdown for individual appointments.
+The Advanced Virtual Appointments activity report provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). You can see how many users are actively using advanced capabilities, with a breakdown of which capabilities each user is using.
 
 To view the report, you must be a global admin, Teams admin, Global reader, or Report reader, and your organization must be using advanced Virtual Appointments capabilities.
 
@@ -36,7 +36,7 @@ The report shows usage information for the following features.
 |Lobby chat|Communicate with external attendees in the waiting room before an appointment.|
 |On-demand appointments|Service and manage on-demand virtual appointments.|
 
-Use this report to gain insight into overall user activity and usage per feature in your organization. This information can help you analyze trends to drive business decisions.
+Use this report to gain insight into overall user activity and usage per feature in your organization. This information can help you analyze trends and measure business value  to drive business decisions.
 
 ## View the report
 
@@ -50,7 +50,9 @@ There are two ways to access and view the report in the Teams admin center.
 In the dashboard of the Teams admin center, go to the **Advanced Virtual Appointments usage** card. Here, you get an at-a-glance view of the aggregate number of active users across all features, by month???.
 
 [CONFIRM UI AND SCREENSHOT]<br>
-:::image type="content" source="media/virtual-appointments-active-user-report-card.png" alt-text="Screenshot of the Advanced Virtual Appointments usage card" lightbox="media/virtual-appointments-active-user-report-card.png":::
+:::image type="content" source="media/advanced-va-activity-report-card.png" alt-text="Screenshot of the Advanced Virtual Appointments usage card" lightbox="media/media/advanced-va-activity-report-card.png":::
+
+:::image type="content" source="media/advanced-va-activity-report-card-ui.png" alt-text="Screenshot of the Advanced Virtual Appointments usage card" lightbox="media/advanced-va-activity-report-card-ui.png":::
 
 Choose **View details** to view the report.
 
@@ -66,15 +68,15 @@ Choose **View details** to view the report.
 
 ## Interpret the report
 
-[CONFIRM UI AND SCREENSHOT]<br>
-:::image type="content" source="media/virtual-appointments-active-user-report.png" alt-text="Screenshot of the Advanced Virtual Appointments activity report" lightbox="media/virtual-appointments-active-user-report.png":::
+[NEED NEW SCREENSHOT]<br>
+:::image type="content" source="media/advanced-va-activity-report.png" alt-text="Screenshot of the Advanced Virtual Appointments activity report" lightbox="media/advanced-va-activity-report.png":::
 
 |Callout |Description  |
 |--------|-------------|
 |**1**   |Each report has a date for when the report was generated. The reports usually reflect a 24 to 48-hour latency from time of activity. |
 |**2**   |The X axis is the selected date range for the report. The Y axis is the number of active users per feature.<br>Hover over a dot on a given date to see the number of users using that feature on that date.|
 |**3**   |You can filter what you see on the chart by selecting an item. For example, select **Text message users** or **On-demand users** to see only the info related to each one. Changing this selection doesn’t change the information in the table.|
-|**4**   |The table gives you detailed information about each appointment that took place during the selected date range. <ul><li>**Primary** is the name of the appointment owner. </li> <li>**Primary’s email** is the email address of the appointment owner.</li><li>**???Total appointments** is the total number of appointments conducted by the user.</li><li>**SMS**</li><li>**Lobby chat**</li> <li>**On-demand**</li></ul> |
+|**4**   |The table gives you detailed information about each appointment that took place during the selected date range. <ul><li>**Primary** is the name of the appointment owner. </li> <li>**Primary’s email** is the email address of the appointment owner.</li><li>???**Total appointments** is the total number of appointments conducted by the user.</li><li>???**SMS**</li><li>**Lobby chat**</li> <li>**On-demand**</li></ul> |
 |**5**   |???Select **Settings** to open the **Virtual Appointments analytics** pane. From here, you can turn off or turn on Virtual Appointments analytics for your organization.|
 |**6**   |???You can export the report to a CSV file for offline analysis. Select **Export to Excel**, and then on the **Downloads** tab, choose **Download** to download the report when it's ready.|
 
