@@ -75,6 +75,8 @@ The query resources report contains all queries that ran, including detailed res
 - **User/App** – the user or app that ran the query 
 - **Resource usage** – an indicator of the amount of CPU resources a query consumed (can be Low, Medium, or High, where High means the query used a large amount of CPU resources and should be improved to be more efficient)
 - **State** – whether the query was completed, failed, or was throttled
+> [!TIP]
+> If the query state is failed, you can hover the field to view the reason for failure.
 - **Query time** – how long it took to run the query 
 - **Time range** – the time range used in the query
 
@@ -88,13 +90,13 @@ The graph displays resource usage over time per interface. You can easily identi
 You can identify the queries that used the most resources on that day and take action to improve them – by [applying query best practices](advanced-hunting-best-practices.md) or educating the user who ran the query or created the rule to take query efficiency and resources into consideration. For guided mode, the user needs to [switch to advanced mode](advanced-hunting-query-builder-details.md#switch-to-advanced-mode-after-building-a-query) to edit the query.
 
  
-The graph supports two modes: 
+The graph supports two views: 
 - Average use per day –  the average use of resources per day
 - Highest use per day – the highest actual use of resources per day
 
 ![Two view modes for query resources report](../../media/ah-query-resources/resource-usage-over-time.png)
 
-This means that, for instance, if on a specific day you ran two queries, one used 50% of your resources and one used 100%, the average daily use value will show 75%, while the top daily use will show 100%.
+This means that, for instance, if on a specific day you ran two queries, one used 50% of your resources and one used 100%, the average daily use value would show 75%, while the top daily use would show 100%.
 
 ## Related topics
 
