@@ -50,15 +50,16 @@ Note that US Government Community (GCC) Moderate, GCC High, and Department of De
 ## Template availability and licensing
 
 > [!NOTE]
-> Starting mid-December 2022, changes will start rolling out which impact the way in which included templates are treated in your Microsoft 365 subscription, along with other changes. Listed below is a summary of changes, which will be fully documented when the rollout begins:
+> Starting mid-December 2022, we're rolling out changes to included and premium templates. Listed below is a summary of changes, which will be fully documented when the rollout begins:
 > 
 > - Customers at all subscription levels will have the Microsoft Data Protection Baseline template included as part of their subscription.
 > - Customers at the A5/E5/G5 subscription levels will be able to choose three premium templates to use for free. The use of any additional premium templates will require purchase.
 > - US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers will have the Cybersecurity Maturity Model Certification (CMMC) template, levels 1 through 5, as an included template, in addition to the Microsoft Data Protection Baseline template.
 > - Templates that correspond to a regulation will now all be grouped together and treated as a single template. For example, CMMC - Level 1, and CMMC - Level 2 will now be counted as one template; you won't need to purchase multiple templates for the same regulation when that regulation has multiple levels or versions.
+> 
+> Get additional details on our [frequently asked questions](compliance-manager-faq.md) page.
 
-
-There are two categories of templates in Compliance Manager: included and premium.
+There are two categories of templates in Compliance Manager: **included** and **premium**.
 
 1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 2. **Premium templates** to cover additional needs and scenarios can be obtained by purchasing template licenses.
