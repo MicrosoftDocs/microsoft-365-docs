@@ -303,7 +303,7 @@ The improvement actions page shows the following data points for each improvemen
 - **Regulations**: The regulations or standards pertaining to the action
 - **Group**: The group to which you assigned the action
 - **Solutions**: The solution where you can go to perform the action
-- **Assessments**: The assessments that contain the action; select **View all** to see a list of all related assessments
+- **Assessments**: The number of assessments that contain the action. Select the number to see the list of related assessments; you'll see only the assessments you have access to.
 - **Categories**: The related data protection category (such as, protect information, manage devices, etc.)
 - **Test status**:
   - **None** – no status update recorded

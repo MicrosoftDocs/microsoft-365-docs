@@ -188,7 +188,7 @@ You'll come back to your action's details page. Under **Testing Source** on the 
 
 ## Related controls
 
-The **Related controls** tab displays the controls associated with the improvement action. The table on this page lists each associated control, the control ID, and the certification related to the control. To view a description of the control, select the control's name and a flyout pane appears with the description.
+The **Related controls** tab displays the controls associated with the improvement action. The table on this page lists each associated control, the control ID, and the regulation related to the control. To view a description of the control, select the control's name and a flyout pane appears with the description.
 
 ## Perform work and store evidence
 
@@ -202,9 +202,13 @@ You can upload evidence related to implementation and testing work, in the form 
   - Images (.jpg, .png)
   - Video (.mkv)
   - Compressed files (.zip, .rar)
-- Browse to select the file you want to upload. If uploading a link, enter a name for the link and its URL. When done, select **Add**. Your item will now display in the **Documents** tab.
+- Browse to select the file you want to upload. If uploading a link, enter a name for the link and its URL. When done, select **Add**. Your item will now display in the **Evidence** tab.
 
-To delete evidence files or links, select the action menu (the three dots) to the right of the item's name and select **Delete**. Confirm the deletion when prompted.
+#### Evidence deletion
+
+You can delete evidence when the improvement action hasn't yet reached a pass or fail status. To delete evidence files or links, select the action menu (the three dots) to the right of the item's name and select **Delete**. Confirm the deletion when prompted.
+
+When an improvement action has a test status of **Passed,** **Failed (low, medium, or high risk)**, or **Out of scope**, evidence files and links can no longer be deleted.
 
 ## Assign improvement action to assessor for completion
 
