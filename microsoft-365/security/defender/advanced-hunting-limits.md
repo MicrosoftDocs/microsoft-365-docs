@@ -75,10 +75,11 @@ The query resources report contains all queries that ran, including detailed res
 - **User/App** – the user or app that ran the query 
 - **Resource usage** – an indicator of the amount of CPU resources a query consumed (can be Low, Medium, or High, where High means the query used a large amount of CPU resources and should be improved to be more efficient)
 - **State** – whether the query was completed, failed, or was throttled
-> [!TIP]
-> If the query state is failed, you can hover the field to view the reason for failure.
 - **Query time** – how long it took to run the query 
 - **Time range** – the time range used in the query
+
+> [!TIP]
+> If the query state is **Failed**, you can hover the field to view the reason for the query failure.
 
 :::image type="content" source="../../media/ah-query-resources/Excessive-usage-sample.png" alt-text="view inefficient queries" lightbox="../../media/ah-query-resources/Excessive-usage-sample.png":::
 
