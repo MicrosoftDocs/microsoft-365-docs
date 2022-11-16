@@ -22,9 +22,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Microsoft Teams Virtual Appointments usage report
 
-![Information icon](media/info.png) **This feature is temporarily available as preview for all customers. To get this feature after the preview, each user will need a [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) license or a Teams EHR connector license.**
-
-[![Information icon](media/info.png) **This feature is moving to [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license is required.**]
+[![Information icon](media/info.png) **This feature is moving to [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). The report will continue to be available during the preview period. After the preview, a Teams Premium license or Teams EHR connector license is required.**]
 
 The Virtual Appointments usage report in the Microsoft Teams admin center gives you an overview of Teams Virtual Appointments activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](bookings-virtual-appointments.md) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
 
@@ -55,7 +53,6 @@ There are two ways to access and view the report in the Teams admin center.
 
 In the dashboard of the Teams admin center, go to the **Virtual Appointments usage** card. Here, you get an at-a-glance view of Virtual Appointments usage across your organization, including Bookings and Teams EHR-integrated appointments.
 
-[??? CHECK SCREENSHOT. Looks different in the UI]<br>
 :::image type="content" source="media/va-usage-report-dashboard.png" lightbox="media/va-usage-report-dashboard.png" alt-text="Screenshot of the Virtual Appointments usage card in the Teams admin center dashboard":::
 
 Select **View details** to view the report.

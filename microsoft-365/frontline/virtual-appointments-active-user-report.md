@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Microsoft Teams Advanced Virtual Appointments activity report
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
+![Information icon](media/info.png) **This feature is part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). To access this feature during the preview period, a Teams Premium trial license is required.**
 
 The Advanced Virtual Appointments activity report provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (preview). You can see how many users are actively using advanced capabilities, with a breakdown of which capabilities each user is using.
 
@@ -50,7 +50,7 @@ There are two ways to access and view the report in the Teams admin center.
 In the dashboard of the Teams admin center, go to the **Advanced Virtual Appointments usage** card. Here, you get an at-a-glance view of the aggregate number of active users across all features, by month???.
 
 [CONFIRM UI AND SCREENSHOT]<br>
-:::image type="content" source="media/advanced-va-activity-report-card.png" alt-text="Screenshot of the Advanced Virtual Appointments usage card" lightbox="media/media/advanced-va-activity-report-card.png":::
+:::image type="content" source="media/advanced-va-activity-report-card.png" alt-text="Screenshot of the Advanced Virtual Appointments usage card" lightbox="media/advanced-va-activity-report-card.png":::
 
 :::image type="content" source="media/advanced-va-activity-report-card-ui.png" alt-text="Screenshot of the Advanced Virtual Appointments usage card" lightbox="media/advanced-va-activity-report-card-ui.png":::
 
