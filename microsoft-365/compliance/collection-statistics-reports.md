@@ -59,10 +59,10 @@ This section displays statistics about the collection search query and the numbe
 
 This section displays statistics about the specific content locations with the most items returned by the collection.
 
-- The name of the location name (the email address of mailboxes and the URL for sites).
-- Location type (a mailbox or site).
-- Estimated number of items in the content location returned by the collection.
-- The total size of estimated items in each content location.
+- **Location**: The name of the location (the email address of mailboxes and the URL for sites).
+- **Location type**: A mailbox will have an *Exchange* type and SharePoint sites will have a *SharePoint* type.
+- **Items**: Estimated number of items in the content location returned by the collection.
+- **Size**: The total size of estimated items in each content location.
 
 ![Top locations section for a collection estimate.](../media/ediscovery-collection-top-locations-section.png)
 
@@ -106,7 +106,7 @@ The **Collection contents** section on the **Summary** tab of a committed review
 
 #### Errors
 
-The **Errors** section on the **Summary** tab of a committed review set contains...
+The **Errors** section on the **Summary** tab of a committed review set displays the number of errors contained...
 
 #### Indexing
 
@@ -120,15 +120,15 @@ The **Indexing** section on the **Summary** tab of a committed review set contai
 
 #### Collection file types
 
-The **Collection file types** section on the **Summary** tab of a committed review set contains...
+The **Collection file types** section on the **Summary** tab of a committed review set displays the item count for each file type included in the collection. File types include email, image, document, audio, video file types and more. For a complete list of the supported file types, see [Supported file types in eDiscovery (Premium)](supported-filetypes-ediscovery20.md).
 
 #### Collection parameters
 
-The **Collection parameters** section on the **Summary** tab of a committed review set contains displays the collection information that was used to collect the items that were added to the review set. This tab displays information that is similar to the information on the **Search statistics** tab. This section provides a quick snap shot of the search query used by the collection, the content locations that were searched, and the estimated collection results. As previously explained, the number of estimated items in this section would be equal to the number of parent items shown in the **Collection contents** section.
+The **Collection parameters** section on the **Summary** tab of a committed review set displays the collection information that was used to collect the items that were added to the review set. This tab displays information that is similar to the information on the **Search statistics** tab. This section provides a quick snap shot of the search query used by the collection, the content locations that were searched, and the estimated collection results. As previously explained, the number of estimated items in this section would be equal to the number of parent items shown in the **Collection contents** section.
 
 ## Data sources tab for collections
 
-The **Data sources** tab contains...
+The **Data sources** tab contains information about custodial and non-custodial data sources. The **Custodial data sources** section displays the all custodial data sources for each custodian included in the collection. The **Non-custodial data sources** section displays the all non-custodial data sources for the collection. The data source information displayed here is also available on the main **Data sources** tab for each case.
 
 ## Search statistics tab for collections
 
