@@ -31,7 +31,7 @@ ms.service: microsoft-365-security
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Access to Microsoft Defender for Office 365 capabilities in the Microsoft 365 Defender portal can be managed collectively by using Global roles in Azure Active Directory (AAD). If you need greater flexibility and control over access to specific Microsoft Defender for Office 365 product data, access can also be managed with the creation of Custom roles.
+Access to Microsoft Defender for Office 365 capabilities in the Microsoft 365 Defender portal can be managed collectively by using global roles in Azure Active Directory (Azure AD). If you need greater flexibility and control over access to specific Microsoft Defender for Office 365 product data, access can also be managed with the creation of custom roles.
 
 
 To manage permissions in the Microsoft 365 Defender portal, go to **Permissions & roles** > ** Email & collaboration roles** or <https://security.microsoft.com/securitypermissions>. You need to be a **global administrator** or a member of the **Organization Management** role group in the Microsoft 365 Defender portal. Specifically, the **Role Management** role allows users to view, create, and modify role groups in the Microsoft 365 Defender portal, and by default, that role is assigned only to the **Organization Management** role group.
