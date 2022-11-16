@@ -27,7 +27,7 @@ description: "Microsoft Purview Compliance Manager provides templates for buildi
 > [!IMPORTANT]
 > The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 > 
-> Starting in mid-December 2022, licensing updates will change how templates are included as part of icensing agreements. [Learn more about these changes below](#template-availability-and-licensing).
+> Starting in mid-December 2022, licensing updates will affect how templates are included as part of licensing agreements. [Learn more about these changes below](#template-availability-and-licensing).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
