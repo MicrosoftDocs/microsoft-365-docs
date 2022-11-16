@@ -52,7 +52,7 @@ The Microsoft 365 Defender portal> includes default role groups for the most com
 
 :::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="The relationship of a role group to its roles and members" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
-## Roles and role groups in the Microsoft 365 Defender portal to Access Microsoft Defender for Office 365 Data and Experiences
+## Roles and role groups in the Microsoft 365 Defender portal to access Microsoft Defender for Office 365 data and experiences
 
 The following types of roles and role groups are available in on the **Permissions & roles** page at <https://security.microsoft.com/securitypermissions> in the Microsoft 365 Defender portal:
 
