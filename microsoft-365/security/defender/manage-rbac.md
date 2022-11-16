@@ -36,7 +36,9 @@ Microsoft 365 Defender provides integrated threat protection, detection, and res
 
 The Microsoft 365 Defender role-based access control (RBAC) model provides a single permissions management experience that provides one central location for administrators to give users permission to view data and complete tasks across different security solutions.
 
-## Solutions supported in the Microsoft 365 Defender RBAC model
+## What's supported by the Microsoft 365 Defender RBAC model
+
+The Microsoft 365 Defender role-based access control (RBAC) model provides centralized permissions management for the following solutions:
 
 | Solution| Description |
 |:-------|:-----|:-------|
@@ -52,26 +54,28 @@ The Microsoft 365 Defender role-based access control (RBAC) model provides a sin
 
 The Microsoft 365 Defender RBAC model provides easy migration of the existing permissions in the individual supported RBAC models to the new RBAC model.
 
-All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions in the Microsoft 365 Defender RBAC model align with individual RBAC permissions, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md)
+All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions align, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md)
 
-It's important that you become familiar with and understand the different permissions that are available in the Microsoft 365 Defender RBAC model and their impact when acces is granted to your users once you activate it.
+It's important to understand the different permissions available in the Microsoft 365 Defender RBAC model and what their impact is when the model is activated. The new Microsoft 365 Defender RBAC gives you the flexibility to create more granular roles where appropriate, using a principle of least privilege and granting users only the privileges they need.
 
 ## Pre-requisites
 
-This section provides details on the steps you should take  before using Microsoft 365 Defender RBAC.
+This section provides details on the steps you should take before using Microsoft 365 Defender RBAC.
 
 ### Permissions
 
-For initial access to the permissions and roles area in Microsoft 365 Defender portal you need to be a global administrator or security administrator in Azure Active Directory. Once you are on the permissions page you can add a custom role that will grant access to create and manage roles and permissions without the need of Azure Active Directory global roles.  
+You need to be a global administrator or security administrator in Azure Active Directory to gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
 
-The Microsoft 365 Defender RBAC model enables creating flexible and granular roles, granting as narrow privileges as needed. It enables replacing the use, for most experiences, of Azure Active Directory global roles (i.e. Global Admin, Security Admin). However, Microsoft 365 Defender security portal will continue to respect Azure Active Directory global roles side by side while activating Microsoft 365 Defender RBAC model with some or all of your workloads.
+Once you have navigated to this page, you can add a custom role with the permissions needed to grant access to create and manage roles and permissions. This will remove the need of Azure Active Directory global roles to manage permissions.
+
+The Microsoft 365 Defender security portal will continue to respect existing Azure Active Directory global roles when you activate the Microsoft 365 Defender RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
 
 ### Opt-in mode
 
-Microsoft 365 Defender RBAC is available in an “opt-in” mode. This means Microsoft 365 Defender will continue to respect the existing RBAC models until you activate the new RBAC model per workload. For more information about activating Microsoft 365 Defender RBAC, see [Active Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+Microsoft 365 Defender RBAC is available in an “opt-in” mode. This means Microsoft 365 Defender will continue to respect the existing RBAC models until you activate the new RBAC model per workload. For more information about activating Microsoft 365 Defender RBAC, see [Active Microsoft 365 Defender RBAC](activate-defender-rbac.md).
 
 ## Next steps
 
-- Create custom roles
-- Map existing RBAC roles to Microsoft 365 Defender RBAC roles
-- Import existing RBAC roles
+- [Create custom roles](create-custom-rbac-roles.md)
+- [Compare existing RBAC roles to Microsoft 365 Defender RBAC roles](compare-rbac-roles.md)
+- [Import existing RBAC roles](import-rbac-roles.md)
