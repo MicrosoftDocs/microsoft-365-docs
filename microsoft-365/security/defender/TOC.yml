@@ -398,14 +398,30 @@
          href: integrate-microsoft-365-defender-secops-tasks.md
     - name: Reference
       items: 
-        - name: Permissions & settings
-          items: 
-            - name: Manage access
+      - name: Manage roles and permissions
+        items: 
+            - name: Manage Microsoft 365 Defender access
               href: m365d-permissions.md
-            - name: Manage role-based access control
-              href: manage-rbac.md
             - name: Custom roles in role-based access 
               href: custom-roles.md
+            - name: Manage permissions with Microsoft 365 Defender RBAC
+              items: 
+              - name: What is Microsoft 365 Defender RBAC
+                href: manage-rbac.md
+              - name: Create custom roles 
+                href: create-custom-rbac-roles.md
+              - name: Compare roles
+                href: compare-rbac-roles.md
+              - name: Import roles
+                href: Import-rbac-roles.md
+              - name: Edit and delete roles
+                href: edit-delete-rbac-roles.md
+              - name: Activate Microsoft Microsoft 365 Defender RBAC 
+                href: activate-defender-rbac.md
+              - name: Reference
+                href: custom-permissions-details.md
+      - name: Portal settings
+        items: 
             - name: Set time zone
               href: m365d-time-zone.md
             - name: View device profiles
