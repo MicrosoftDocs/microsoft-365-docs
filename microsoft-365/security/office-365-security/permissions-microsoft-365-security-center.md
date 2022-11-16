@@ -37,7 +37,7 @@ Access to Microsoft Defender for Office 365 capabilities in the Microsoft 365 De
 To manage permissions in the Microsoft 365 Defender portal, go to **Permissions & roles** > ** Email & collaboration roles** or <https://security.microsoft.com/securitypermissions>. You need to be a **global administrator** or a member of the **Organization Management** role group in the Microsoft 365 Defender portal. Specifically, the **Role Management** role allows users to view, create, and modify role groups in the Microsoft 365 Defender portal, and by default, that role is assigned only to the **Organization Management** role group.
 
 > [!NOTE]
-> Some capabilities of Microsoft Defender for Office requrie additional permissions in the Exchange Admin Center, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
+> Some capabilities of Microsoft Defender for Office require additional permissions in the Exchange admin center. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 > For information about permissions in the Microsoft Purview compliance portal, see [Permissions in the Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center-permissions.md).
 
 ## Relationship of members, roles, and role groups
