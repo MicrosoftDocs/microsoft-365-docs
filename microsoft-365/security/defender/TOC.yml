@@ -410,15 +410,15 @@
                 href: manage-rbac.md
               - name: Create custom roles 
                 href: create-custom-rbac-roles.md
-              - name: Compare roles
-                href: compare-rbac-roles.md
               - name: Import roles
                 href: Import-rbac-roles.md
               - name: Activate Microsoft 365 Defender RBAC 
                 href: activate-defender-rbac.md
               - name: Edit and delete roles
                 href: edit-delete-rbac-roles.md
-              - name: Custom permission details
+              - name: Compare roles
+                href: compare-rbac-roles.md
+              - name: About rbac custom permission
                 href: custom-permissions-details.md
       - name: Portal settings
         items: 

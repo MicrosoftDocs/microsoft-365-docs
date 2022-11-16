@@ -54,11 +54,9 @@ Centralized permissions management is supported for the following solutions:
 
 ## Before you start
 
-This section provides useful information as well accounts information you should have before you start using Microsoft 365 Defender RBAC.
+This section provides useful information as well as details on accounts you need before you start using Microsoft 365 Defender RBAC.
 
-### Permissions
-
-It's important to understand the different permissions available in the Microsoft 365 Defender RBAC model and what their impact is when the model is activated. The new Microsoft 365 Defender RBAC gives you the flexibility to create more granular roles where appropriate, using a principle of least privilege and granting users only the privileges they need.
+### Permissions pre-requisites
 
 You need to be a global administrator or security administrator in Azure Active Directory to gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
 
@@ -73,6 +71,8 @@ The Microsoft 365 Defender RBAC model provides easy migration of the existing pe
 All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions align, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md)
 
 ### Opt-in mode
+
+The new Microsoft 365 Defender RBAC model gives you the flexibility to create more granular roles where appropriate, using a principle of least privilege and granting users only the privileges they need. It's important to understand the different permissions available in the Microsoft 365 Defender RBAC model and what their impact is when the model is activated.
 
 Microsoft 365 Defender RBAC is available in an “opt-in” mode. This means Microsoft 365 Defender will continue to respect the existing RBAC models until you activate the new RBAC model per workload. For more information about activating Microsoft 365 Defender RBAC, see [Active Microsoft 365 Defender RBAC](activate-defender-rbac.md).
 
