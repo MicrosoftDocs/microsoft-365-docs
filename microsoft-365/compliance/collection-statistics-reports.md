@@ -80,12 +80,25 @@ The **Summary** tab for committed collections contains several sections that pro
 
 #### Collection overview (preview)
 
-The **Collection overview (preview)** section on the **Summary** tab of a committed review set contains...
+The **Collection overview (preview)** section on the **Summary** tab of a committed review set contains information about how items were found, retrieved, and processed as part of the collection. The information in this section is a summary of the information gathered and displayed during the initial collection estimate and includes information gathered and processed during the collection committal to the the review set. You can use the information in this section to help improve understanding on how the final collection data evolves from the estimate data during collection committal and processing.
 
-- **Locations with hits**:
-- **Pre-collection estimates**:
-- **Collection items**:
-- **Processing to review set**:
+This information is segmented and displayed in the following sub-sections:
+
+- **Locations with hits**: This section summarizes the number of locations searched and the number of location with hits based on the conditions defined in the collection estimate. It also displays the number and type of locations searched.
+
+    ![Locations with hits.](../media/ediscovery-collection-commit-locations-with-hits.png)
+
+- **Pre-collection estimates**: This section summarizes number of items and size of the total items calculated for the collection estimate (before the collection is committed). A count of any items that were [partially indexed](/microsoft-365/compliance/partially-indexed-items-in-content-search) is also displayed.
+
+    ![Pre-collection estimates.](../media/ediscovery-collection-commit-pre-collection-estimates.png)
+
+- **Collection items**: This section displays the type, count, and a description of all items retrieved from locations with hits during the committal of the collection to the review set. During this process, there may be some addition and consolidation of items during processing.
+
+    ![Collected items.](../media/ediscovery-collection-commit-collected-items.png)
+
+- **Processing to review set**: This section displays the type, count, and description of the items that were added to the review set from the collection estimate. Items are decompressed, scanned for text, reindexed, and processed in preparation for the review.
+
+    ![Processing to review set.](../media/ediscovery-collection-commit-processing-to-review-set.png)
 
 #### Collection contents
 
@@ -104,10 +117,6 @@ The **Collection contents** section on the **Summary** tab of a committed review
 - **Unique items**. The number of unique items added to the review set. Unique items are unique to the review set. All items are unique when the first collection is added to a new review set because there were no previous items in the review set.
 - **Identified duplicate items**. The number of items from the collection that weren't added to the review set because the same item already exists in the review set. Statistics about duplicate items can help explain the differences between the number of estimated items from a collection estimate and the actual number of items added to the review set.
 
-#### Errors
-
-The **Errors** section on the **Summary** tab of a committed review set displays the number of errors contained...
-
 #### Indexing
 
 The **Indexing** section on the **Summary** tab of a committed review set contains indexing information about the items added to the review set.
@@ -121,6 +130,10 @@ The **Indexing** section on the **Summary** tab of a committed review set contai
 #### Collection file types
 
 The **Collection file types** section on the **Summary** tab of a committed review set displays the item count for each file type included in the collection. File types include email, image, document, audio, video file types and more. For a complete list of the supported file types, see [Supported file types in eDiscovery (Premium)](supported-filetypes-ediscovery20.md).
+
+#### Errors
+
+The **Errors** section on the **Summary** tab of a committed review set displays the type and number of errors encountered during the collection committal. Errors may include files with a zero size, protected files, malformed files, internal errors, and more. An error report in .csv format can be downloaded by selecting **Download your errors report** in this section.
 
 #### Collection parameters
 
