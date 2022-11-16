@@ -436,8 +436,8 @@
               items: 
                - name: ServiceNow integration overview
                  href: ./tickets.md
-        - name: Microsoft 365 Defender APIs
-          items: 
+      - name: Microsoft 365 Defender APIs
+        items: 
             - name: Overview of Microsoft 365 Defender APIs
               href: api-overview.md
             - name: Supported Microsoft 365 Defender APIs
