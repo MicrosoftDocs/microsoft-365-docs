@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -24,6 +24,8 @@ ms.custom: seo-marvel-mar2020
 # Close or delete an eDiscovery (Premium) case
 
 When the legal case or investigation supported by a Microsoft Purview eDiscovery (Premium) case is completed, you can close or delete a case. You can also reopen a closed case.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Close a case
 

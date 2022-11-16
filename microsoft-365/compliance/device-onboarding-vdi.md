@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to the Endpoint data loss prevention service.
@@ -30,6 +30,8 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 
 > [!WARNING]
 > Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios. Multi-session scenarios on Windows Virtual Desktop are currently not supported.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Onboard VDI devices
 

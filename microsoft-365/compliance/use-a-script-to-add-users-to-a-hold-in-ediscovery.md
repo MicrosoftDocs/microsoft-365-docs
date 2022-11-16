@@ -12,7 +12,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ms.localizationpriority: medium
 search.appverid:
@@ -38,6 +38,8 @@ Here are the steps to make this happen:
 [Step 2: Generate a list of users](#step-2-generate-a-list-of-users)
 
 [Step 3: Run the script to create a hold and add users](#step-3-run-the-script-to-create-a-hold-and-add-users)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you add users to a hold
 

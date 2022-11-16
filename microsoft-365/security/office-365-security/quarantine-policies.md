@@ -13,7 +13,7 @@ search.appverid:
   - MET150
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.subservice: mdo
@@ -495,6 +495,9 @@ The global settings for quarantine policies allow you to customize the quarantin
 2. On the **Quarantine policies** page, select **Global settings**.
 
 3. In the **Quarantine notification settings** flyout that opens, configure the following settings:
+
+   > [!NOTE]
+   > We don't allow the same display name, subject, or disclaimer text for different languages. You need to provide a different display name, subject, and disclaimer text for each language that you select.
 
    - Customize quarantine notifications based on the recipient's language:
 

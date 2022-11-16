@@ -17,8 +17,8 @@ ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom: 
 - autoir
@@ -61,7 +61,7 @@ It's important to approve (or reject) pending actions as soon as possible so tha
    - Select **Open investigation page** to view more details about the investigation.
    - Select **Approve** to initiate a pending action.
    - Select **Reject** to prevent a pending action from being taken.
-   - Select **Go hunt** to go into [Advanced hunting](advanced-hunting-overview.md). 
+   - Select **Go hunt** to go into [Advanced hunting](advanced-hunting-overview.md).
 
 ## Undo completed actions
 

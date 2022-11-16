@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - MOE150
@@ -28,6 +28,8 @@ eDiscovery (Premium) displays content via several viewers each with different pu
 - Native view
 - Text view
 - Annotate view
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## File metadata
 

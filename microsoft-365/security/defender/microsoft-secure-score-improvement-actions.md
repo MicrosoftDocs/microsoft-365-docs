@@ -13,9 +13,9 @@ author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
-ms.topic: article
+- m365-security
+- tier2
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150

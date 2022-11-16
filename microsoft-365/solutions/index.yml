@@ -168,6 +168,8 @@ landingContent:
             url: financial-services-secure-collaboration.md
           - text: Security and compliance for energy and utility services
             url: energy-secure-collaboration.md
+          - text: Microsoft 365 for frontline workers
+            url: ../frontline/flw-overview.md??bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Microsoft 365 for Healthcare
             url: ../frontline/teams-in-hc.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Microsoft 365 for Retail

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.localizationpriority: medium
 search.appverid: 
   - MET150s
@@ -26,22 +26,22 @@ ms.service: microsoft-365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP offers multiple ways of blocking email from unwanted senders. These options include Outlook Blocked Senders, blocked sender lists or blocked domain lists in anti-spam policies, Exchange mail flow rules (also known as transport rules), and the IP Block List (connection filtering). Collectively, you can think of these options as _blocked sender lists_.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP offers multiple ways of blocking email from unwanted senders. Collectively, you can think of these options as _blocked sender lists_.
 
-The best method to block senders varies on the scope of impact. For a single user, the right solution could be Outlook Blocked Senders. For many users, one of the other options would be more appropriate. The following options are ranked by both impact scope and breadth. The list goes from narrow to broad, but _read the specifics_ for full recommendations.
+The available blocked sender lists are described in the following list in order from most recommended to least recommended:
 
-1. Outlook Blocked Senders (the Blocked Senders list that's stored in each mailbox)
+1. Block entries for domains and email addresses (including spoofed senders) in the Tenant Allow/Block List.
+2. Outlook Blocked Senders (the Blocked Senders list that's stored in each mailbox).
+3. Blocked sender lists or blocked domain lists (anti-spam policies).
+4. Mail flow rules (also known as transport rules).
+5. The IP Block List (connection filtering).
 
-2. Blocked sender lists or blocked domain lists (anti-spam policies)
-
-3. Mail flow rules
-
-4. The IP Block List (connection filtering)
+The rest of this article contains specifics about each method.
 
 > [!NOTE]
-> While you can use organization-wide block settings to address false negatives (missed spam), you should also submit those messages to Microsoft for analysis. Managing false negatives by using block lists significantly increases your administrative overhead. If you use block lists to deflect missed spam, you need to keep the topic [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) at the ready.
-
-In contrast, you also have several options to always allow email from specific sources using _safe sender lists_. For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
+> Always submit messages in your blocked sender lists to Microsoft for analysis. For instructions, see [Report questionable email to Microsoft](admin-submission.md#report-questionable-email-to-microsoft). If the messages or message sources are determined to be harmful, Microsoft can automatically block the messages, and you won't need to manually maintain the entry in blocked sender lists.
+>
+> Instead of blocking email, you also have several options to allow email from specific sources using _safe sender lists_. For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
 ## Email message basics
 
@@ -53,7 +53,17 @@ A standard SMTP email message consists of a _message envelope_ and message conte
 
 Frequently, the `5321.MailFrom` and `5322.From` addresses are the same (person-to-person communication). However, when email is sent on behalf of someone else, the addresses can be different.
 
-Blocked sender lists and blocked domain lists in anti-spam policies in EOP inspect both the `5321.MailFrom` and `5322.From` addresses. Outlook Blocked Senders only uses the `5322.From` address.
+Blocked sender lists and blocked domain lists in anti-spam policies in EOP inspect only the `5322.From` addresses. This behavior is similar to Outlook Blocked Senders that use the `5322.From` address.
+
+## Use block entries in the Tenant Allow/Block List
+
+Our number one recommended option for blocking mail from specific senders or domains is the Tenant Allow/Block List. For instructions, see [Allow or block email using the Tenant Allow/Block List](allow-block-email-spoof.md).
+
+Email messages from these senders are marked as _high confidence spam_ (SCL = 9). What happens to the messages is determined by the [anti-spam policy](configure-your-spam-filter-policies.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
+
+As an added benefit, users in the organization can't send email to these blocked domains and addresses. They'll receive the following non-delivery report (also known as an NDR or bounce message): `5.7.1  Your message can't be delivered because one or more recipients are blocked by your organization's tenant allow/block list policy.` The entire message is blocked to all recipients if email is sent to any of the entries in the list.
+
+Only if you can't use the Tenant Allow/Block List for some reason should you consider using a different method to block senders.
 
 ## Use Outlook Blocked Senders
 
@@ -66,18 +76,18 @@ When messages are successfully blocked due to a user's Blocked Senders list, the
 
 ## Use blocked sender lists or blocked domain lists
 
-When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **Spam** (not **High confidence spam**), and the action that you've configured for the **Spam** filter verdict is taken on the message. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **High confidence spam**, and the action that you've configured for the **High Confidence Spam** filter verdict is taken on the messages. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
 The maximum limit for these lists is approximately 1000 entries.
 
 ## Use mail flow rules
 
-If you need to block messages that are sent to specific users or across the entire organization, you can use mail flow rules. Mail flow rules are more flexible than block sender lists or blocked sender domain lists because they can also look for keywords or other properties in the unwanted messages.
+Mail flow rules can also look for keywords or other properties in the unwanted messages.
 
 Regardless of the conditions or exceptions that you use to identify the messages, you configure the action to set the spam confidence level (SCL) of the message to 9, which marks the message as **High confidence spam**. For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 > [!IMPORTANT]
-> It's easy to create rules that are _overly_ aggressive, so it's important that you identify only the messages you want to block using very specific criteria. Also, be sure to enable auditing on the rule and test the results of the rule to ensure everything works as expected.
+> It's easy to create rules that are _overly_ aggressive, so it's important that you identify only the messages you want to block using very specific criteria. Also, be sure to [monitor the usage of the rule](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#monitor-rule-usage) to ensure everything works as expected.
 
 ## Use the IP Block List
 

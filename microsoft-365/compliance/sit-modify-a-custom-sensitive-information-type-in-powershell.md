@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -29,6 +29,8 @@ In Security & Compliance PowerShell, modifying a custom sensitive information ty
 3. Import the updated XML file back into the existing rule package.
 
 To connect to Security & Compliance PowerShell, see [Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Export the existing rule package to an XML file
 

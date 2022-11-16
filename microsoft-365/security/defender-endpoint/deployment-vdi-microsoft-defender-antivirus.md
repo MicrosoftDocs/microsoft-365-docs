@@ -1,8 +1,7 @@
 ---
 title: Microsoft Defender Antivirus Virtual Desktop Infrastructure deployment guide
-description: Learn how to deploy Microsoft Defender Antivirus in a virtual desktop environment for the best balance between protection and performance.
+description: Learn how to deploy Microsoft Defender Antivirus in a remote desktop or non-persistent virtual desktop environment.
 keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
-ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,7 +12,11 @@ ms.custom: nextgen
 ms.reviewer: jesquive
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.service: microsoft-365-security
+ms.collection: 
+- m365-security
+- tier2
+- ContentEngagementFY23
 search.appverid: met150
 ---
 
@@ -27,7 +30,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-In addition to standard on-premises or hardware configurations, you can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. With the ability to easily deploy updates to VMs running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
+In addition to standard on-premises or hardware configurations, you can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. With the ability to easily deploy updates to virtual machines (VMs) running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and are then downloaded directly to each VM when it's turned on.
 
 This guide describes how to configure your VMs for optimal protection and performance, including how to:
 
@@ -53,11 +56,11 @@ In Windows 10, version 1903, we introduced the shared security intelligence feat
 
 ### Use Group Policy to enable the shared security intelligence feature:
 
-1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then click **Edit**.
+1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
+2. In the Group Policy Management Editor, go to **Computer configuration**.
 
-3. Click **Administrative templates**.
+3. Select **Administrative templates**.
 
 4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
@@ -65,13 +68,13 @@ In Windows 10, version 1903, we introduced the shared security intelligence feat
 
 6. Enter `\\<sharedlocation\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
 
-7. Click **OK**.
+7. Select **OK**.
 
 8. Deploy the GPO to the VMs you want to test.
 
 ### Use PowerShell to enable the shared security intelligence feature
 
-Use the following cmdlet to enable the feature. You'll need to then push this as you normally would push PowerShell-based configuration policies onto the VMs:
+Use the following cmdlet to enable the feature. You'll need to then push the update as you normally would push PowerShell-based configuration policies onto the VMs:
 
 ```PowerShell
 Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
@@ -131,7 +134,7 @@ This is possible when the devices have the share and NTFS permissions for the re
 
 3. Go to the **Actions** tab. Select **New...** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Select **OK**.
 
-4. You can choose to configure additional settings if you wish.
+4. You can choose to configure more settings if you wish.
 
 5. Select **OK** to save the scheduled task.
 
@@ -167,7 +170,7 @@ See [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) f
 
 ## Use quick scans
 
-You can specify the type of scan that should be performed during a scheduled scan. Quick scans are the preferred approach as they are designed to look in all places where malware needs to reside to be active. The following procedure describes how to set up quick scans using Group Policy.
+You can specify the type of scan that should be performed during a scheduled scan. Quick scans are the preferred approach as they're designed to look in all places where malware needs to reside to be active. The following procedure describes how to set up quick scans using Group Policy.
 
 1. In your Group Policy Editor, go to **Administrative templates** \> **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
 
@@ -191,7 +194,7 @@ Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist 
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan while the attack was detected and stopped; alerts, such as an "initial access alert," are triggered and appear in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan while the attack was detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
 > [!TIP]
 > To open the Action Center on Windows 10 or Windows 11, take one of the following steps:
@@ -252,7 +255,7 @@ This policy forces a scan if the VM has missed two or more consecutive scheduled
 
 3. Set the policy to **Enabled**.
 
-4. Click **OK**.
+4. Select **OK**.
 
 5. Deploy your Group Policy Object as you usually do.
 

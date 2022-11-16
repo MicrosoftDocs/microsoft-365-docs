@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -24,6 +24,8 @@ ROBOTS: NOINDEX, NOFOLLOW
 # Set up smart tags in eDiscovery (Premium)
 
 Machine learning (ML) capabilities in Microsoft Purview eDiscovery (Premium) can help you make the decision process more efficient when reviewing case documents in a review set. Smart tags are a way to bring the ML capabilities to where the decisions are recorded: when tagging documents during review. When you create a smart tag group, then the decisions that are the result of the ML model that you've associated with the smart tag group are displayed in-line with the tags in the tag group. This helps see the ML results information in-line when you're reviewing specific documents.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How to set up a smart tag group
 

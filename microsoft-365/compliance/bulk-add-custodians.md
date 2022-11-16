@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery 
 search.appverid: 
 - MOE150
@@ -22,6 +22,8 @@ search.appverid:
 # Import custodians to an eDiscovery (Premium) case
 
 For Microsoft Purview eDiscovery (Premium) cases that involve many custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case. The import custodians tool will also validate the CSV file before the import job is created. This means you can fix any errors in the CSV file instead of having to wait until the import job is complete before learning there are errors that prevent a custodian from being added to the case.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you import custodians
 

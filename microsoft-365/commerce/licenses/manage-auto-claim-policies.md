@@ -8,9 +8,11 @@ manager: scotv
 ms.reviewer: yinggiy, pablom
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -30,7 +32,7 @@ An auto-claim policy lets users automatically claim a license for a product the 
 
 ## Before you begin
 
-You must be a Global, User, or License admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Turn the auto-claim policy feature on or off
 

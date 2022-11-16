@@ -15,6 +15,8 @@ search.appverid:
 - MET150
 ms.collection:
 - m365solution-mip
+- m365initiative-compliance
+- highpri
 - tier1
 recommendations: false
 description: "Implement Microsoft Purview Information Protection capabilities to help you protect sensitive information wherever it lives or travels."
@@ -23,9 +25,6 @@ description: "Implement Microsoft Purview Information Protection capabilities to
 # Protect your sensitive data with Microsoft Purview
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
-
-> [!TIP]
-> *Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?* Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs. Microsoft 365 E3 and Office 365 E3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Learn details about [who can sign up and trial terms](compliance-easy-trials.md).
 
 Implement capabilities from **Microsoft Purview Information Protection** (formerly Microsoft Information Protection) to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
@@ -36,6 +35,8 @@ These information protection capabilities give you the tools to [know your data]
 Use the following sections to learn more about the available capabilities and how to get started with each one. However, if you're looking for a guided deployment, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
 
 For information about governing your data for compliance or regulatory requirements, see [Govern your data with Microsoft Purview](manage-data-governance.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Know your data
 
@@ -60,9 +61,9 @@ To apply flexible protection actions that include encryption, access restriction
 |[Service encryption with Customer Key](customer-key-overview.md) | Protects against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters. | [Set up Customer Key for Office 365](customer-key-set-up.md)|
 |[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protects SharePoint lists and libraries so that when a user checks out a document, the downloaded file is protected so that only authorized people can view and use the file according to policies that you specify. | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
 [Rights Management connector](/azure/information-protection/deploy-rms-connector) |Protection-only for existing on-premises deployments that use Exchange or SharePoint Server, or file servers that run Windows Server and File Classification Infrastructure (FCI). | [Steps to deploy the RMS connector](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
-|[Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner)| Discovers, labels, and protects sensitive information that resides in data stores that are on premises. | [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install)|
+|[Information protection scanner](deploy-scanner.md)| Discovers, labels, and protects sensitive information that resides in data stores that are on premises. | [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud. | [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|[Microsoft Purview Data Map](/azure/purview/overview) |Identifies sensitive data and applies automatic labeling to content in Microsoft Purview Data Map assets. These include files in storage such as Azure Data Lake and Azure Files, and schematized data such as columns in Azure SQL DB, and Cosmos DB. |[Labeling in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label) |
+|[Microsoft Purview Data Map](/azure/purview/overview) |Identifies sensitive data and applies automatic labeling to content in Microsoft Purview Data Map assets. These include files in storage such as Azure Data Lake and Azure Files, and schematized data such as columns in Azure SQL DB and Azure Cosmos DB. |[Labeling in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label) |
 |[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|Extends sensitivity labels to third-party apps and services. <br /><br />  Example scenario: [Set and get a sensitivity label (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK setup and configuration](/information-protection/develop/setup-configure-mip)|
 
 

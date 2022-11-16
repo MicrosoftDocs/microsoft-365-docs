@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -67,6 +67,8 @@ To create a eDiscovery (Standard) search:
 8. Review the search settings (and edit if necessary), and then submit the search to start it.
 
 After the search is completed, you can preview the search results. If necessary, click **Refresh** on the **Searches** page to display the search you created.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## More information about searching content locations
 

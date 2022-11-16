@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
@@ -23,6 +23,8 @@ Are you looking for a way to quickly get started with compliance tasks in Micros
 Risk and compliance solutions in Microsoft Purview are collections of integrated capabilities you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
 
 Read this article to get acquainted with the solution catalog in the Microsoft Purview compliance portal, [how to access](#how-do-i-access) and your [next steps](#next-steps).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Catalog organization
 

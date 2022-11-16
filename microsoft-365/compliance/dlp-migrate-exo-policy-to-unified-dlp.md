@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 search.appverid:
 - MET150
@@ -34,6 +34,8 @@ The migration wizard works by reading the configuration of your DLP policies in 
 > If you do not delete or deactivate the source policy in the EAC before you set the Compliance center version to **Enforce** both sets of policies will be attempting to enforce actions and you will receive duplicate events. ***This is an unsupported configuration.***
 
 The migration wizard only migrates EXO policies and associated mail flow rules. Standalone Exchange mail flow rules aren't migrated.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Migration workflow
 

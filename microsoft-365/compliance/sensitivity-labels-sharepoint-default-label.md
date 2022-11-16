@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - tier1
 - SPO_Content
 search.appverid:
@@ -41,6 +41,8 @@ When you use Office on the web to create or edit a file, the default sensitivity
 
 - File upload: it can take a few minutes for the label to be applied.
 - Microsoft 365 Apps: the label is applied after the app is closed.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Will an existing label be overridden?
 
@@ -108,7 +110,7 @@ To audit the configuration setting for this feature, use the **Updated list** au
 
 To map sensitivity label GUIDs to label names, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet:
 
-1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. First, [connect to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Then run the following command, where you specify the GUID:
 

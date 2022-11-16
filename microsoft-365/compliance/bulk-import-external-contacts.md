@@ -18,7 +18,7 @@ ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - import
 ---
 
@@ -40,6 +40,8 @@ After you complete these steps to import contacts, you can perform these additio
   
 - [Hide external contacts from the shared address book](#hide-external-contacts-from-the-shared-address-book)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Create a CSV file that contains information about the external contacts
 
 The first step is to create a CSV file that contains information about each external contact that you want to import to Exchange Online. 

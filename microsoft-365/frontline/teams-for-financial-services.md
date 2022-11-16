@@ -13,8 +13,10 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-financial-services
   - m365-frontline
+  - highpri
   - m365solution-financialservices
   - m365solution-overview
+  - highpri
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -23,6 +25,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 09/27/2022
 ---
 
 # Get started with Microsoft 365 for Financial Services

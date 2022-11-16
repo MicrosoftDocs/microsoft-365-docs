@@ -13,8 +13,8 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: intro-overview
 ---
 
@@ -200,3 +200,4 @@ Most organizations use various devices and operating systems. Currently, Defende
 - [Set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
 - [Get started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
 - [Manage Defender for Endpoint Plan 1](mde-p1-maintenance-operations.md)
+- [Learn about exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

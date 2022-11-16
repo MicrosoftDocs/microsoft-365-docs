@@ -11,6 +11,8 @@ ms.service: O365-seccomp
 ms.collection: 
 - m365solution-overview
 - m365solution-mig
+- m365initiative-compliance
+- highpri
 - tier1
 ms.localizationpriority: high
 search.appverid: 
@@ -30,6 +32,8 @@ Use **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Informat
 For data governance that maps and manages data across your data estate, including multi-cloud, and software-as-a-service (SaaS), use [Microsoft Purview Data Map, Microsoft Purview Data Catalog, and Microsoft Purview Data Estate Insights](/azure/purview/overview).
 
 For a data protection solution, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Licensing
 

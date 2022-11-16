@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ROBOTS: NOINDEX, NOFOLLOW
 ---
@@ -27,6 +27,8 @@ The Test tab in Microsoft Purview eDiscovery (Premium) enables you to test, comp
   
 In single and multiple-issue scenarios, tests are typically performed per issue. Results can be viewed after each test, and test results can be reworked with specified sample test files.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Testing the rest
 
 The "Test the Rest" test is used to validate culling decisions, for example, to review only files above a specific Relevance cutoff score based on the final eDiscovery (Premium) results. The expert reviews a sample of files under a selected cutoff score to evaluate the number of relevant files within that set.

@@ -15,11 +15,12 @@ ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
-ms.topic: article
+ms.topic: conceptual
 ms.collection: 
- - M365-security-compliance
+ - m365-security
  - m365solution-asr-rules
  - highpri
+ - tier1
 ms.date: 09/18/2022
 search.appverid: met150
 ---

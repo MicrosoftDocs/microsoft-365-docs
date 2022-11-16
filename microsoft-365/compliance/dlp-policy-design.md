@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: "Learn how to design a data loss prevention (DLP) policy"
@@ -35,6 +35,8 @@ If you are new to Microsoft Purview DLP, it's helpful to work through these arti
   - [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
   - [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
 - [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article introduces all the components of a DLP policy and how each one influences the behavior of a policy
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Policy design overview
 

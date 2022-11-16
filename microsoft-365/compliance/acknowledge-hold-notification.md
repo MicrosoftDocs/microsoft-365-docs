@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -28,6 +28,8 @@ ms.custom:
 When responding to a regulatory request or investigation, you may be required to inform custodians of their obligation to preserve electronically stored information (ESI) and any material that may be relevant to an active or imminent legal matter. Once sent, legal teams must know that each custodian has received, read, understood, and agreed to follow the given instructions.
 
 To help reduce the time, cost, and effort of following up with your custodians,  eDiscovery (Premium) allows you to send and follow up on legal hold notifications through email. In addition to email notices, each custodian will have access to an individualized Compliance Portal, allowing custodians to be kept informed of changes to their obligation status.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Email notifications
 

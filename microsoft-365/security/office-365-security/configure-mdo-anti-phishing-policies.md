@@ -12,7 +12,7 @@ ms.date:
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Microsoft Defender for Office 365.
 ms.subservice: mdo
@@ -189,7 +189,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
      > [!NOTE]
      >
      > - If Microsoft 365 system messages from the following senders are identified as impersonation attempts, you can add the senders to the trusted senders list:
-     >   - `⁠noreply@email.teams.microsoft.com`
+     >   - `noreply@email.teams.microsoft.com`
      >   - `noreply@emeaemail.teams.microsoft.com`
      >   - `no-reply@sharepointonline.com`
      >

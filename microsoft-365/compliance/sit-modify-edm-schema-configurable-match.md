@@ -12,7 +12,7 @@ ms.date:
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -20,6 +20,8 @@ description: Learn how to modify an edm schema to use configurable match.
 ms.custom: seo-marvel-apr2020
 ---
 # Modify Exact Data Match schema to use configurable match
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to
 

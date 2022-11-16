@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery 
 search.appverid: 
 - MOE150
@@ -26,6 +26,8 @@ ms.custom:
 # View custodian audit activity
 
 Need to find if a user viewed a specific document or purged an item from their mailbox? Microsoft Purview eDiscovery (Premium) is now integrated with the existing audit log search tool in the Microsoft Purview compliance portal. Using this embedded experience, you can use the eDiscovery (Premium) Custodian Management tool to facilitate your investigation by easily accessing and searching the activity for custodians within your case.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Get permissions
 

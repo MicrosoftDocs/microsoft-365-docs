@@ -13,7 +13,7 @@ search.appverid:
   - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Learn about how to define Safe Attachments policies to protect your organization from malicious files in email.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo

@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery 
 search.appverid: 
 - MOE150
@@ -35,6 +35,8 @@ You can add and manage custodians in eDiscovery (Premium) cases in four steps:
 3. Configure hold settings.
 
 4. Review the custodians and complete the process.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Make sure you have the necessary permissions
 

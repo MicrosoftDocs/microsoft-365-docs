@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -24,6 +24,8 @@ search.appverid:
 # Commit a draft collection to a review set in eDiscovery (Premium)
 
 When you're satisfied with the items you've collected in a draft collection and are ready to analyze, tag, and review them, you can add a collection to a review set in the case. When you commit a draft collection to a review set, collected items are copied from their original content location in Microsoft 365 to a review set. A review set is a secure, Microsoft-provided Azure Storage location in the Microsoft cloud.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Commit a draft collection to a review set
 

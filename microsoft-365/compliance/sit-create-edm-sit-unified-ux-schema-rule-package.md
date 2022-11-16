@@ -12,7 +12,7 @@ ms.date:
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -23,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 # Create EDM SIT using the new experience
 
 You can create the EDM schema and sensitive information type (or rule package) using the new experience in the compliance portal.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to
 

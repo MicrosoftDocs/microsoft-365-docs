@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 ms.localizationpriority: medium
 search.appverid:
@@ -26,6 +26,8 @@ Users often store sensitive data, such as credit card numbers, social security n
 
 > [!NOTE]
 > Electronic discovery, or eDiscovery, and DLP are premium features that require [SharePoint Online Plan 2](https://go.microsoft.com/fwlink/?LinkId=510080).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Forming a basic DLP query
 

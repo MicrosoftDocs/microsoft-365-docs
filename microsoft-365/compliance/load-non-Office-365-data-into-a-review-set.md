@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -24,6 +24,8 @@ ms.custom: seo-marvel-apr2020
 # Load non-Microsoft 365 data into a review set
 
 Not all documents that you need to analyze in Microsoft Purview eDiscovery (Premium) are located in Microsoft 365. With the non-Microsoft 365 data import feature in eDiscovery (Premium), you can upload documents that aren't located in Microsoft 365 to a review set. This article shows you how to bring your non-Microsoft 365 documents into eDiscovery (Premium) for analysis.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Requirements to upload non-Office 365 content
 

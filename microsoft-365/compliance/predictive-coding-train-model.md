@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ---
 
@@ -24,6 +24,8 @@ ms.collection:
 After you create a predictive coding model in Microsoft Purview eDiscovery (Premium), the next step is to performing the first training round to train the model on what is relevant and non-relevant content in your review set. After you complete the first round of training, you can perform subsequent training rounds to improve the model's ability to predict relevant and non-relevant content.
 
 To review the predictive coding workflow, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you train a model
 

@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - MOE150
@@ -22,6 +22,8 @@ search.appverid:
 # Search and purge chat messages in Teams (Preview)
 
 You can use eDiscovery (Premium) and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft Teams. This can help you find and remove sensitive information or inappropriate content. This search and purge workflow will also help you respond to a data spillage incident, when content containing confidential or malicious information is released through Teams chat messages.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you search and purge chat messages
 
@@ -105,9 +107,9 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Graph Explorer with an account that's assigned the **Search And Purge** role in the Microsoft Purview compliance portal.
 
-2. Run the following GET request to retrieve the Id for the eDiscovery (Premium) case. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
+2. Run the following GET request to retrieve the Id for the eDiscovery (Premium) case. Use the value `https://graph.microsoft.com/beta/security/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
 
-   ![GET request for case Id.](..\media\GraphGetRequestForCaseId.png)
+   ![GET request for case Id.](..\media\ediscovery-GraphGetRequestForCaseId.png)
 
    This request returns information about all cases in your organization on the **Response preview** tab.
 
@@ -122,9 +124,9 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Get the collection Id
 
-1. In Graph Explorer, run the following GET request to retrieve the Id for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections` in the address bar of the request query, where CaseId is the Id that you obtained in the previous procedure. Be sure to surround the case Id with parentheses and single quotation marks.
+1. In Graph Explorer, run the following GET request to retrieve the Id for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/beta/security/ediscovery/cases('caseId')/sourceCollections` in the address bar of the request query, where CaseId is the Id that you obtained in the previous procedure. Be sure to surround the case Id with parentheses and single quotation marks.
 
-   ![GET request for collection Id.](..\media\GraphGetRequestForCollectionId.png)
+   ![GET request for collection Id.](..\media\ediscovery-GraphGetRequestForCollectionId.png)
 
    This request returns information about all collections in the case on the **Response preview** tab.
 
@@ -141,13 +143,13 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Purge the chat messages
 
-1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` in the address bar of the request query, where caseId and collectionId are the Ids that you obtained in the previous procedures. Be sure to surround the Id values with parentheses and single quotation marks.
+1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/beta/security/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` in the address bar of the request query, where caseId and collectionId are the Ids that you obtained in the previous procedures. Be sure to surround the Id values with parentheses and single quotation marks.
 
-      ![POST request to delete items returned by the collection.](..\media\GraphPOSTRequestToPurgeItems.png)
+      ![POST request to delete items returned by the collection.](..\media\ediscovery-GraphPOSTRequestToPurgeItems.png)
 
    If the POST request is successful, an HTTP response code is displayed in a green banner stating that the request was accepted.
 
-   ![Response for the purge request.](..\media\GraphResponseForPurge.png)
+   ![Response for the purge request.](..\media\ediscovery-GraphResponseForPurge.png)
 
   For more information on purgeData, see [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 

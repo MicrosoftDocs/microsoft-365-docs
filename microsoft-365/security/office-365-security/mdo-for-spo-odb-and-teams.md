@@ -15,7 +15,7 @@ search.appverid:
   - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - SPO_Content
   - m365initiative-defender-office365
 ms.custom: 

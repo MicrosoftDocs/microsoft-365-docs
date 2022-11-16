@@ -13,10 +13,10 @@ author: siosulli
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
 - Adm_TOC
-ms.topic: article
+- tier2
+ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
@@ -81,7 +81,7 @@ Currently there are recommendations for the following products:
 - Azure Active Directory
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
-- Defender for Cloud Apps
+- Microsoft Defender for Cloud Apps
 - Microsoft Teams
 
 Recommendations for other security products are coming soon. The recommendations won't cover all the attack surfaces associated with each product, but they're a good baseline. You can also mark the improvement actions as covered by a third party or alternate mitigation.

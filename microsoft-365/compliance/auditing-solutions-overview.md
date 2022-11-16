@@ -12,9 +12,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- m365-security-compliance
+- purview-compliance
 - m365solution-audit
 - m365solution-overview
+- highpri
 - audit
 search.appverid:
 - MOE150
@@ -28,6 +29,8 @@ Microsoft Purview auditing solutions provide an integrated solution to help orga
 
 > [!NOTE]
 > Microsoft Purview auditing is the new name for the unified audit log.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Microsoft Purview auditing solutions
 

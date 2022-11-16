@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -35,6 +35,8 @@ After the collection is defined, eDiscovery managers can save the collection as 
 When the manager is satisfied with the scope of the collection and the estimated amount of content that's likely to be responsive, the manager can add or *commit* the content to a review set. When committing a collection to a review set, that manager also has the options to include chat conversations, cloud attachments, and document versions. The content in the collection also goes through another level of processing during ingestion into the review set. and the collection will be updated with the final collection summary. After content is added to the review set, eDiscovery managers can continue to query, group, and refine the content in to help with minimization and review. Additionally, the collection is updated with information and statistics about the content committed to the review set. This provides a historical reference about the content in the collection.
 
 With the release of collections in an eDiscovery (Premium), the **Searches** tab has been renamed to **Collections** in an eDiscovery (Premium) case in the Microsoft Purview compliance portal. The steps to define the scope and size of the collection follow the same process as search to define locations and conditions. Save as draft and get preview estimates enables quick validation of targeted scope of collections prior to committing a full search and collection into the review set. This enables improved job management, and targeted iterations for starting to minimize content during the search and collection process.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Collections workflow
 

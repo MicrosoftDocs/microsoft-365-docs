@@ -16,9 +16,9 @@ manager: dansimp
 localization_priority: Normal
 audience: ITPro
 ms.topic: how-to
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: FPFN
 ---
 
@@ -99,6 +99,7 @@ You can also submit a file or file hash directly from the list of alerts on the 
 
 ## Related information
 
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
 - [View and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md)

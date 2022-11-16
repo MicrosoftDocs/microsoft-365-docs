@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery 
 search.appverid: 
 - MOE150
@@ -29,6 +29,8 @@ When you or others create a hold notification or other type of communication tha
 - Any user who is added to a list of organization-wide issuing officers. Users from this list can be added an issuing officer to any case in your organization.
 
 This article explains how to add and remove users to the list of organization-wide issuing officers.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you add an issuing officer
 

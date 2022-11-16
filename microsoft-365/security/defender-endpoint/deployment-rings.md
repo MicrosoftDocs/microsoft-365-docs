@@ -12,9 +12,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-endpointprotect
   - highpri
+  - tier1
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150

@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -28,6 +28,8 @@ Cloud attachments are links to documents that are typically stored in SharePoint
 - Collecting the live version of a document that is linked to in a cloud attachment.
 
 - Collecting the version of the document at the time it was shared in a cloud attachment.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Collecting cloud attachments
 

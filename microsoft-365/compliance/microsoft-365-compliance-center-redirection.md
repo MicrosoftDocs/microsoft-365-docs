@@ -12,13 +12,15 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Redirection of users from the Office 365 Security and Compliance Center to the Microsoft Purview compliance portal
 
 This article explains how automatic redirection works for users accessing compliance solutions from the Office 365 Security and Compliance Center (protection.office.com) to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What to expect
 

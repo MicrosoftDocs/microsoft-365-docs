@@ -12,7 +12,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ms.localizationpriority: medium
 search.appverid:
@@ -54,6 +54,8 @@ The remainder of this topic describes the step-by-step procedures to create a cu
 [Step 3: Apply the new Exchange retention policy to mailboxes on hold](#step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold)
 
 [(Optional) Step 4: Run the Managed Folder Assistant to apply the new retention settings](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Create a custom retention tag for the Recoverable Items folder
 

@@ -13,7 +13,7 @@ search.appverid:
   - MET150
 ms.assetid:
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - Strat_O365_IP
 ms.custom: TopSMBIssues
 ms.localizationpriority: high

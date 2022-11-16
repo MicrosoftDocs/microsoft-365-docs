@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 recommendations: false
 description: "Learn how to add a policy tip to a data loss prevention (DLP) policy notify a user that they are working with content that conflicts with a DLP policy."
@@ -56,6 +56,8 @@ DLP policy tips in Outlook Web Access is supported for all the conditions, excep
 - Add HTML disclaimer
 - Prepend email subject
 - Remove O365 Message Encryption and rights protection
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Outlook 2013 and later supports showing policy tips for only some conditions and exceptions
 

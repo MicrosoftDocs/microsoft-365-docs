@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- m365-security-compliance
+- m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # UrlClickEvents

@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
@@ -28,6 +28,8 @@ To help customers take advantage of the new and improved functionality, this art
 
 > [!NOTE]
 > Because there are many different scenarios, this article provides general guidance to transition searches and holds to a eDiscovery (Standard) case in the compliance portal. Using eDiscovery cases aren't always required, but they add an extra layer of security by letting you assign permissions to control who has access to the eDiscovery cases in your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

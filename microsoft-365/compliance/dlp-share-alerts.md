@@ -14,7 +14,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - tier1
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -29,6 +29,8 @@ description: Learn how to share data loss prevention alerts to users with minima
 Users with the [appropriate permissions](dlp-configure-view-alerts-policies.md#roles) can view Microsoft Purview Data Loss Prevention (DLP) alerts in the DLP Alerts console. But, as alerts are triaged and investigated, you may need to share them with other users who don't, and shouldn't, have full permissions to DLP and the alerts console.
 
 You can share an alert with users that you give limited permissions to using the procedures in this article.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

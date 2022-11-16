@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery 
 search.appverid: 
 - MOE150
@@ -29,6 +29,8 @@ When the number of collected documents is large, it can be difficult to review t
 - [Email threading](email-threading-in-advanced-ediscovery.md)
 
 - [Themes](themes-in-advanced-ediscovery.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Run analytics for a review set
 

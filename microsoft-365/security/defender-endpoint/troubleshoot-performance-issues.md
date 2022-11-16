@@ -15,7 +15,9 @@ ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ---
 
 # Troubleshoot performance issues related to real-time protection

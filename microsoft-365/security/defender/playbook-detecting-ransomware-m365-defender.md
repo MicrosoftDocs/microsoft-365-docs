@@ -11,7 +11,9 @@ ms.date:                   05/30/2022
 ms.service:                microsoft-365-security
 ms.subservice:             m365d
 ms.localizationpriority:   medium
-ms.collection:             M365-security-compliance.
+ms.collection: 
+- m365-security
+- tier1
 f1.keywords:               NOCSH
 ---
 

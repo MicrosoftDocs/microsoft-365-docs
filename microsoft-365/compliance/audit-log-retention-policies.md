@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - audit
 search.appverid:
 - MOE150
@@ -26,6 +26,8 @@ You can create and manage audit log retention policies in the Microsoft Purview 
 - All activities in one or more Microsoft 365 services
 - Specific activities (in a Microsoft 365 service) performed by all users or by specific users
 - A priority level that specifies which policy takes precedence in you have multiple policies in your organization
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Default audit log retention policy
 

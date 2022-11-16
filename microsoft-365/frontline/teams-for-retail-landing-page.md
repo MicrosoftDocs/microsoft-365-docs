@@ -13,6 +13,7 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-retail
   - m365-frontline
+  - highpri
   - m365solution-retail
   - m365solution-overview
   - highpri
@@ -24,6 +25,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 09/27/2022
 ---
 
 # Get started with Microsoft 365 for retail organizations

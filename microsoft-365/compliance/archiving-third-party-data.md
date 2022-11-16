@@ -12,8 +12,8 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier1
-- M365-security-compliance
+- tier3
+- purview-compliance
 - data-connectors
 search.appverid:
 - MOE150
@@ -30,6 +30,8 @@ Microsoft 365 lets administrators use data connectors to import and archive non-
 Watch this interactive guide that demonstrates how to create data connectors to import and archive third-party data and examples of applying compliance solutions to data after it's imported to Microsoft 365.
 
 > [!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Third-party data connectors
 

@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
 description: How to configure Azure AD cross-tenant access settings and Conditional Access policies for content encrypted by Microsoft Purview Information Protection.
 ---
@@ -31,6 +31,8 @@ For example:
 - Users can successfully open an encrypted document when they are in the office, but can't when they try to access this document remotely and they're prompted for multi-factor authentication (MFA).
 
 To ensure access to the encryption service isn't inadvertently blocked, use the following sections to help configure your organization's Azure AD, or relay the information to an Azure AD administrator in another organization. Without access to this service, users can't be authenticated and authorized to open encrypted content.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Cross-tenant access settings and encrypted content
 

@@ -8,7 +8,6 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
-
 ms.localizationpriority: medium
 ms.collection: 
 - highpri

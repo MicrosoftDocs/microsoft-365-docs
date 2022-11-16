@@ -12,7 +12,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - content-search
 ms.localizationpriority: medium
 search.appverid:
@@ -27,6 +27,8 @@ The Content search tool in the Microsoft Purview compliance portal doesn't provi
 
 > [!NOTE]
 > To return content located in a folder in a SharePoint or OneDrive for Business site, the script in this topic uses the DocumentLink managed property instead of the Path property. The DocumentLink property is more robust than the Path property because it will return all content in a folder, whereas the Path property won't return some media files.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you run a targeted collection
 

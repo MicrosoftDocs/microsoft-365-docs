@@ -13,7 +13,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid:
 - MOE150
@@ -35,6 +35,8 @@ With conversation reconstruction, you can use built-in capabilities to reconstru
 - Review, annotate, and redact threaded conversations.
 
 - Export individual messages or threaded conversations
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Terminology
 

@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - ediscovery
 search.appverid: 
 - MOE150
@@ -30,6 +30,8 @@ Microsoft Purview eDiscovery (Premium) supports double-byte character set langua
 - When you [tag documents in a review set](tagging-documents.md).
 
 - When you [analyze case data in a review set](analyzing-data-in-review-set.md) by using near duplicate detection, email threading, and themes analytics.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Frequently asked questions
 

@@ -11,8 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -70,7 +72,8 @@ You can control the following attributes about the folder that you'd like to be 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Automation folder exclusions**.
 2. Click **Remove exclusion**.
 
-## Related topics
+## Related articles
 
 - [Manage automation allowed/blocked lists](manage-indicators.md)
 - [Manage automation file uploads](manage-automation-file-uploads.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

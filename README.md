@@ -2,17 +2,17 @@
 
 ## Learn how to contribute
 
-Anyone who is interested can contribute to the topics. When you contribute, your work will go directly into the content set after being merged. It will then show up on Microsoft Docs and you will be listed as a contributor at: <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors>.
+Anyone who is interested can contribute to the topics. When you contribute, your work will go directly into the content set after being merged. It will then show up on Microsoft Learn and you will be listed as a contributor at: <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors>.
 
 ### Quickly update an article using GitHub.com
 
 Contributors who only make infrequent or small updates can edit the file directly on GitHub.com without having to install any additional software. This article shows you how. [This two-minute video](https://www.microsoft.com/videoplayer/embed/RE1XQTG) also covers how to contribute.
 
 1. Make sure you're signed in to GitHub.com with your GitHub account.
-2. Go to the page you want to edit on Microsoft Docs.
+2. Go to the page you want to edit on Microsoft Learn.
 3. On the right-hand side of the page, click **Edit** (pencil icon).
 
-   ![Edit button on Microsoft Docs.](microsoft-365/media/quick-update-edit.png)
+   ![Edit button on Microsoft Learn.](microsoft-365/media/quick-update-edit.png)
 
 4. The corresponding topic file on GitHub opens, where you need to click the **Edit this file** pencil icon.
 
@@ -40,7 +40,7 @@ Contributors who only make infrequent or small updates can edit the file directl
 > [!NOTE]
 > Your permissions in the repo determine what you see in the last several steps. People with no special privileges will see the **Propose file change** section and subsequent confirmation pages as described. People with permissions to create and approve their own pull requests will see a similar **Commit changes** section with extra options for creating a new branch and fewer confirmation pages.<br/><br/>The point is: click any green buttons that are presented to you until there are no more.
 
-The writer identified in the metadata of the topic will be notified and will eventually review and approve your changes so the topic will be updated on Microsoft Docs. If there are questions or issues with the updates, the writer will contact you.
+The writer identified in the metadata of the topic will be notified and will eventually review and approve your changes so the topic will be updated on Microsoft Learn. If there are questions or issues with the updates, the writer will contact you.
 
 ## Microsoft Open Source Code of Conduct
 

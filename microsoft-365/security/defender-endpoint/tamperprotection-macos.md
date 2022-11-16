@@ -12,8 +12,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-ms.topic: article
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -72,7 +73,7 @@ You can configure the tamper protection mode by providing the mode name as enfor
 
 ## Before you begin
 
-- Supported macOS versions: Monterey (12), Big Sur (11), Catalina (10.15+).
+- Supported macOS versions: Big Sur (11), or later.
 - Minimum required version for Defender for Endpoint: 101.70.19.
 
 **Highly recommended settings:**

@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -28,6 +28,8 @@ After you've created a well-formed XML file, you can upload it to Microsoft 365 
 
 > [!NOTE]
 > If you don't need the fine-grained control that PowerShell provides, you can create custom sensitive information types in the Microsoft Purview compliance portal. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Important disclaimer
 
