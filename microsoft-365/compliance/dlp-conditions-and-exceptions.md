@@ -68,7 +68,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 |condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Sender is|condition: *From* <br/><br/> exception: *ExceptIfFrom*|Addresses|Messages that are sent by the specified mailboxes, mail users, mail contacts, or Microsoft 365 groups in the organization.|
-|The sender is a member of |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|Addresses|Messages that are sent by a member of the specified distribution group, mail-enabled security group, or Microsoft 365 group.|
+|The sender is a member of |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|Addresses|Messages that are sent by a member of the specified distribution group, mail-enabled security group.|
 |Sender IP address is|condition: *SenderIPRanges*<br/><br/> exception: *ExceptIfSenderIPRanges*|IPAddressRanges|Messages where the sender's IP address matches the specified IP address, or falls within the specified IP address range.|
 |Sender address contains words|condition: *FromAddressContainsWords* <br/><br/> exception: *ExceptIfFromAddressContainsWords*|Words|Messages that contain the specified words in the sender's email address.|
 |Sender address matches patterns|condition: *FromAddressMatchesPatterns* <br/><br/> exception: *ExceptFromAddressMatchesPatterns*|Patterns|Messages where the sender's email address contains text patterns that match the specified regular expressions.|
