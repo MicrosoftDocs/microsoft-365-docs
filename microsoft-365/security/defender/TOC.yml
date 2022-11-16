@@ -502,8 +502,8 @@
                  href: ../defender-endpoint/professional-services.md           
             - name: Understand threat intelligence concepts
               href: ../defender-endpoint/threat-indicator-concepts.md 
-        - name: Security intelligence
-          items: 
+      - name: Security intelligence
+        items: 
           - name: Safety Scanner download
             href: ../intelligence/safety-scanner-download.md
           - name: Understand malware & other threats
