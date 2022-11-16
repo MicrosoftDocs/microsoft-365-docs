@@ -157,7 +157,7 @@ When you run a collection estimate, an estimate of the number of items (and thei
 
     For example, multiple versions of SharePoint documents aren't included in the estimate for the collection estimate. But if you select the option to include all document versions when you commit a collection estimate, the actual number (and total size) of items added to the review set will increase.
 
-    For more information about these options, see [Commit a collection estimate to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-ediscovery-premium).
+    For more information about these options, see [Commit a collection estimate to a review set](commit-draft-collection.md#commit-a-collection-estimate-to-a-review-set-in-ediscovery-premium).
 
 Here are other reasons why the estimated results from a collection estimate can be different that the actual committed results.
 

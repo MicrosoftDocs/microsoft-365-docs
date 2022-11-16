@@ -385,7 +385,7 @@ Set up compliance boundaries for eDiscovery investigations:
 
 ### Step 5 (optional): eDiscovery Premium’s collection tool
 
-Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-draft-collection) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
+Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-collection-estimate) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
 
 [Learn more about collection queries and estimates.](building-search-queries.md)
 

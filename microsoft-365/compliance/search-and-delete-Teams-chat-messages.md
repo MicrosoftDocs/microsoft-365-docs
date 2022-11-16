@@ -73,7 +73,7 @@ For more information, see [Build search queries for collections](building-search
 
 ## Step 3: Review and verify chat messages to purge
 
-As previously mentioned, the purge process in Step 5 will delete the items returned by the collection. So it's important that you review the collection estimate results to ensure that the collection only returns the items that you want to purge. To review a sample of items in a collection estimate, see the "Next steps after a collection estimate is complete" section in [Create a collection estimate](create-draft-collection.md#next-steps-after-a-draft-collection-is-complete).
+As previously mentioned, the purge process in Step 5 will delete the items returned by the collection. So it's important that you review the collection estimate results to ensure that the collection only returns the items that you want to purge. To review a sample of items in a collection estimate, see the "Next steps after a collection estimate is complete" section in [Create a collection estimate](create-draft-collection.md#next-steps-after-a-collection-estimate-is-complete).
 
 Additionally, you can use the collection statistics (specifically the Top Locations statistics) to generate a list of the data sources that contain items returned by the collection. Use this list in the next step to remove hold and retention policies from the data sources that contain search results. For more information, see [Collection statistics and reports](collection-statistics-reports.md).
 

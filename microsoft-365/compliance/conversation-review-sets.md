@@ -68,7 +68,7 @@ When you add items from conversations to a review set, you can use the threaded 
 
 3. After the items have been added to the review set, you can review all the individual messages from *CRC1*.
 
-To enable the threaded conversations option, see [Commit a collection estimate to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set).
+To enable the threaded conversations option, see [Commit a collection estimate to a review set](commit-draft-collection.md#commit-a-collection-estimate-to-a-review-set).
 
 ## Step 3: Review and export threaded conversations
 
