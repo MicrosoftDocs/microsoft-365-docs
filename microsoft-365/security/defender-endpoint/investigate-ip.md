@@ -72,7 +72,7 @@ The **Prevalence** section displays how many devices have connected to this IP a
 
 **Investigate an external IP:**
 
-2. Enter the IP address in the **Search** field.
+1. Enter the IP address in the **Search** field.
 2. Select the IP suggestion box and open the IP side panel.
 3. Select **Enter**.
 
