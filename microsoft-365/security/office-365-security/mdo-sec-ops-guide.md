@@ -100,7 +100,7 @@ False positive and false negative management and the responsible personas are de
 
 In Defender for Office 365, you can use the following reports to review email detection trends in your organization:
 
-- The [Mailflow status report](view-mail-flow-reports.md#mailflow-status-report)
+- The [Mailflow status report](view-email-security-reports.md#mailflow-status-report)
 - The [Threat Protection status report](view-email-security-reports.md#threat-protection-status-report)
 
 |Activity|Cadence|Description|Persona|

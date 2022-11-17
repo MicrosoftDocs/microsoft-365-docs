@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 11/03/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -212,6 +212,33 @@ Specifies a process for which all file activity is excluded from scanning. The p
 |**Possible values**|any string|
 |**Comments**|Applicable only if *$type* is *excludedFileName*|
 
+#### Muting Non Exec mounts 
+ 
+Specifies the behavior of RTP on mount point marked as noexec. There are two values for setting are:
+
+- Unmuted (`unmute`): The default value, all mount points are scanned as part of RTP.
+- Muted (`mute`): Mount points marked as noexec are not scanned as part of RTP, these mount point can be created for:
+  - Database files on Database servers for keeping data base files.
+  - File server can keep data files mountpoints with noexec option.
+  - Back up can keep data files mountpoints with noexec option.
+
+|Description|Value|
+|---|---|
+|**Key**|nonExecMountPolicy|
+|**Data type**|String|
+|**Possible values**|unmute (default) <p> mute|
+|**Comments**|Available in Defender for Endpoint version 101.85.27 or higher.|
+
+#### Configure file hash computation feature
+
+Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
+
+|Description|Value|
+|---|---|
+|**Key**|enableFileHashComputation|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
 #### Allowed threats
 
 List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.
@@ -460,6 +487,7 @@ The following configuration profile contains entries for all settings described 
          "allow",
          "restore"
       ],
+      "nonExecMountPolicy":"unmute",
       "threatTypeSettingsMergePolicy":"merge",
       "threatTypeSettings":[
          {

@@ -472,7 +472,7 @@
                 href: sit-defn-azure-cognitive-service-key.md
               - name: Azure Container Registry access key
                 href: sit-defn-azure-container-registry-access-key.md
-              - name: Azure COSMOS DB account access key
+              - name: Azure Cosmos DB account access key
                 href: sit-defn-azure-cosmos-db-account-access-key.md
               - name: Azure Databricks personal access token 
                 href: sit-defn-azure-databricks-personal-access-token.md
@@ -1149,6 +1149,16 @@
           href: prepare-tls-1.2-in-office-365.md
         - name: Office TLS Certificate Changes
           href: encryption-office-365-tls-certificates-changes.md 
+    - name: On-premises scanner
+      items: 
+        - name: Learn about the scanner
+          href: deploy-scanner.md
+        - name: Get started with the scanner
+          href: deploy-scanner-prereqs.md
+        - name: Configure & install the scanner
+          href: deploy-scanner-configure-install.md
+        - name: Run the scanner
+          href: deploy-scanner-manage.md  
     - name: Data loss prevention (DLP)
       items: 
         - name: Learn about DLP

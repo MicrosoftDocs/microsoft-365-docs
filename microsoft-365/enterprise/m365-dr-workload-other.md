@@ -27,7 +27,7 @@ Use the following guidance to determine where your data is located. Please refer
 Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
 
 ### Forms
-Tenants in EU member Countries maintain data in _Macro Region Geography 1 – EMEA_. All other tenants have customer data stored in the United States.
+Tenants in EU member Countries maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
 
 ### Intune
 Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune.
@@ -64,7 +64,7 @@ Customer data is processed and stored in the employee's Exchange Online mailbox.
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.
 
 ### Whiteboard
-Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/whiteboard/manage-data-organizations).
+Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/microsoft-365/whiteboard/manage-data-organizations).
 
 ### Yammer
 Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-security-and-compliance/data-residency).

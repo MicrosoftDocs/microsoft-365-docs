@@ -41,8 +41,6 @@ The following table lists the default role groups that are available in the Micr
 
 Managing permissions in the portals only gives users access to the security and compliance features that are available within the portals. If you want to grant permissions to other security and compliance features that aren't in the portals, such as Exchange mail flow rules (also known as transport rules), you need to use the Exchange admin center (EAC). For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-To see how to grant access to the portals, check out [Give users access to Microsoft Purview admin center](grant-access-to-the-security-and-compliance-center.md).
-
 > [!NOTE]
 > To view the **Permissions** tab in the portals, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
 
