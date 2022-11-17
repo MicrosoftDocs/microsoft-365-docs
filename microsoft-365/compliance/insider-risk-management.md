@@ -94,6 +94,8 @@ You can select from the following policy templates to quickly get started with i
 - [Data theft by departing users](insider-risk-management-policies.md#data-theft-by-departing-users)
 - [Data leaks](insider-risk-management-policies.md#data-leaks)
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [Security policy violations (preview)](insider-risk-management-policies.md#security-policy-violations-preview)
+- [Patient data misuse (preview)](insider-risk-management-policies.md#patient-data-misuse-preview)
 - [Data leaks by risky users (preview)](insider-risk-management-policies.md#data-leaks-by-risky-users-preview)
 - [Security policy violations (preview)](insider-risk-management-policies.md#security-policy-violations-preview)
 - [Patient data misuse (preview)](insider-risk-management-policies.md#patient-data-misuse-preview)

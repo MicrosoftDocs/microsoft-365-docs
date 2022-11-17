@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial user guide."
 ms.subservice: mdo
-ms.custom: trial-playbook
+ms.custom: trial-user guide
 ---
 
 # Trial user guide: Microsoft Defender for Office 365
@@ -142,7 +142,7 @@ Defender for Office 365 enables you to investigate activities that put people in
 See the bigger picture with Campaign Views in Defender for Office 365, which gives you a view of the attack campaigns targeting your organization and the impact they have on your users.
 
 - [Identify campaigns](campaigns.md#what-is-a-campaign) targeting your users.
-- [Visualize the scope](campaigns.md#campaign-views-in-the-microsoft-365-defender-portal) of the attack.
+- [Visualize the scope](campaigns.md#campaigns-in-the-microsoft-365-defender-portal) of the attack.
 - [Track user interaction](campaigns.md#campaign-details) with these messages.
 
   :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="The Campaign details in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-campaign-details.png":::

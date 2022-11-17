@@ -26,6 +26,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-mar2020
+ms.date: 10/28/2022
 ---
 
 # Schedule Owner for shift management
