@@ -26,6 +26,8 @@ description: "Microsoft Purview Compliance Manager provides templates for buildi
 
 > [!IMPORTANT]
 > The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> 
+> Starting in mid-December 2022, licensing updates will affect which templates are included as part of licensing agreements. [Learn more about these changes below](#included-templates).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -60,6 +62,16 @@ To review the templates available to your organization, go to your **Assessment 
 
 ## Included templates
 
+> [!NOTE]
+> Starting mid-December 2022, we're rolling out changes to included and premium templates. Listed below is a summary of changes, which will be fully documented when the rollout begins:
+> 
+> - Customers at all subscription levels will have the Microsoft Data Protection Baseline template included as part of their subscription.
+> - Customers at the A5/E5/G5 subscription levels will be able to choose any three premium templates to use for free. The use of any premium templates beyond those three will require purchase.
+> - The included templates for US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers are the Cybersecurity Maturity Model Certification (CMMC) template (levels 1 through 5) in addition to the Microsoft Data Protection Baseline template.
+> - Templates that correspond to a regulation will now all be grouped together and treated as a single template. For example, CMMC - Level 1, and CMMC - Level 2 will now be counted as one template; you won't need to purchase multiple templates for the same regulation when that regulation has multiple levels or versions.
+> 
+> Get additional details on our [frequently asked questions](compliance-manager-faq.yml) page.
+
 One or more of the templates listed below are included as part of your licensing agreement. The Microsoft Data Protection Baseline template is included for all organizations.
 
 - [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
@@ -70,9 +82,11 @@ One or more of the templates listed below are included as part of your licensing
 > [!NOTE]
 > For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
 
-## Preview templates
+## Premium templates
 
-The templates listed below are currently available for preview. Creating assessments using these templates will not count toward your total of licensed templates used.
+The templates listed by industry and region below may be purchased by your organization.
+
+In addition, the templates listed immediately below are available in preview. Creating assessments from these templates won't count toward your total of licensed templates used.
 
 - ISO 27001:2013 for Azure (Preview)
 - ISO 27001:2013 for Dynamics 365 (Preview)
@@ -84,10 +98,6 @@ The templates listed below are currently available for preview. Creating assessm
 - SOC 2 for Dynamics 365 (Preview)
 - ISO 27018:2019 for Azure (Preview)
 - ISO 27018:2019 for Dynamics 365 (Preview)
-
-## Premium templates
-
-The templates listed below may be purchased by your organization.
 
 ### Global
 
@@ -305,7 +315,7 @@ The templates listed below may be purchased by your organization.
 - Japan - Act on Prohibition of Unauthorized Computer Access  
 - Japan - Common Model of Information Security Measures for Government Agencies and Related Agencies  
 - Japan - Common Standards for Information Security Measures for Government Agencies and Related Agencies  
-- Japan Privacy Mark - JIS Q 15001 : 2017  
+- Japan Privacy Mark - JIS Q 15001: 2017  
 - Japanese Act on the Protection of Personal Information (Law No. 57 of 2003)  
 - Korea - Credit Information Use And Protection Act  
 - Korea - The Act on Promotion of Information and Communications Network Utilization and Data Protection  
