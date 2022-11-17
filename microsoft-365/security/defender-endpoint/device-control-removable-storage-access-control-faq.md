@@ -46,6 +46,9 @@ For example, if you need two blocks of entries per user SID to "Allow" / "Audit 
 
 3. If you're deploying and managing the policy by using Group Policy, make sure to combine all PolicyRule into one XML file within a parent node called PolicyRules. Also combine all Group into one XML file within a parent node called Groups. If you manage through Intune, keep one PolicyRule one XML file, and one Group one XML file.
 
+5. The machine should have valid certificate, run this command on the machine to check:Get-AuthenticodeSignature C:\Windows\System32\wbem\WmiPrvSE.exe
+   ![image](https://user-images.githubusercontent.com/81826151/202582101-5470dd54-ef32-4448-80c9-ba23a721dc70.png)
+
 If it still doesn't work, contact support, and share your support cab. To get that file, use Command Prompt as an administrator: 
 
 `"%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles`
