@@ -46,7 +46,7 @@ You can find information from the following sections in the IP address view:
 
 ## IP geo information
 
-In the left pane the page provides IP details, when exist. 
+In the left pane, the page provides IP details (if available). 
 - Organization (ISP)
 - ASN
 - Country
