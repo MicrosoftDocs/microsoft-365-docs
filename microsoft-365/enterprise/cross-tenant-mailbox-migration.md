@@ -297,7 +297,7 @@ Ensure the following objects and attributes are set in the target organization.
 
    Note this will not work for tenants in hybrid.
 
-4. Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization. You must also apply a Cross Tenant User Data Migration licenses or you may see a transient error saying needs approval which will report a warning in the move report that a license is not applied to the target user.
+4. Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization. You must also apply a Cross Tenant User Data Migration license or you may see a transient error saying needs approval which will report a warning in the move report that a license is not applied to the target user.
 
    > [!NOTE]
    > When you apply a license on a Mailbox or MailUser object, all SMTP type proxyAddresses are scrubbed to ensure only verified domains are included in the Exchange EmailAddresses array.
