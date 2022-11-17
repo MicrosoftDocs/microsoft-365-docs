@@ -68,11 +68,11 @@ By default, global administrators for your tenant have access to this admin cent
 - **Information Protection Investigators**
 - **Information Protection Readers**
 
-For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Defender and compliance portals](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-defender-and-compliance-portals)
+For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Defender and compliance portals](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-defender-and-compliance-portals).
 
 Alternatively to using the default roles, you can create a new role group and add the **Sensitivity Label Administrator** role to this group. For a read-only role, use **Sensitivity Label Reader**. 
 
-Another option is to add users to the **Compliance Data Administrator**, **Compliance Administrator**, or **Security Administrator** role group. 
+Another option is to add users to the **Compliance Data Administrator**, **Compliance Administrator**, or **Security Administrator** role group.
 
 For instructions to add users to the default role group, roles, or create your own role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
