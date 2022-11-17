@@ -61,19 +61,18 @@ To see the options for licensing your users to benefit from Microsoft Purview fe
 
 Members of your compliance team who will create sensitivity labels need permissions to the Microsoft Purview compliance portal.
 
-By default, global administrators for your tenant have access to this admin center and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. For this delegated limited admin access, add users to the **Compliance Data Administrator**, **Compliance Administrator**, or **Security Administrator** role group. 
+By default, global administrators for your tenant have access to this admin center and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. For this limited admin access, you can use the following role groups:
+- **Information Protection**
+- **Information Protection Admins**
+- **Information Protection Analysts**
+- **Information Protection Investigators**
+- **Information Protection Readers**
 
-Alternatively to using the default roles, you can create a new role group and add either **Sensitivity Label Administrator** or **Organization Configuration** roles to this group. For a read-only role, use **Sensitivity Label Reader**. 
+For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Defender and compliance portals](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-defender-and-compliance-portals)
 
-> [!NOTE]
-> Now in preview, you can use the following role groups:
-> - **Information Protection**
-> - **Information Protection Admins**
-> - **Information Protection Analysts**
-> - **Information Protection Investigators**
-> - **Information Protection Readers**
->
-> For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-defender-and-compliance-portals).
+Alternatively to using the default roles, you can create a new role group and add the **Sensitivity Label Administrator** role to this group. For a read-only role, use **Sensitivity Label Reader**. 
+
+Another option is to add users to the **Compliance Data Administrator**, **Compliance Administrator**, or **Security Administrator** role group. 
 
 For instructions to add users to the default role group, roles, or create your own role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
