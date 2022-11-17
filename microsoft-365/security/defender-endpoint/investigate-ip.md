@@ -69,7 +69,6 @@ The **IP observed in organization** section provides a list of devices that have
 
 The **Prevalence** section displays how many devices have connected to this IP address, and when the IP was first and last seen. You can filter the results of this section by time period; the default period is 30 days.
 
-
 **Investigate an external IP:**
 
 1. Enter the IP address in the **Search** field.
