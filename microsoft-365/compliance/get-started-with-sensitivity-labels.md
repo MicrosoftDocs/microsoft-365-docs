@@ -61,19 +61,18 @@ To see the options for licensing your users to benefit from Microsoft Purview fe
 
 Members of your compliance team who will create sensitivity labels need permissions to the Microsoft Purview compliance portal.
 
-By default, global administrators for your tenant have access to this admin center and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. For this delegated limited admin access, add users to the **Compliance Data Administrator**, **Compliance Administrator**, or **Security Administrator** role group. 
+By default, global administrators for your tenant have access to this admin center and can give compliance officers and other people access, without giving them all of the permissions of a tenant admin. For this limited admin access, you can use the following role groups:
+- **Information Protection**
+- **Information Protection Admins**
+- **Information Protection Analysts**
+- **Information Protection Investigators**
+- **Information Protection Readers**
 
-Alternatively to using the default roles, you can create a new role group and add either **Sensitivity Label Administrator** or **Organization Configuration** roles to this group. For a read-only role, use **Sensitivity Label Reader**. 
+For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Defender and compliance portals](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-defender-and-compliance-portals)
 
-> [!NOTE]
-> Now in preview, you can use the following role groups:
-> - **Information Protection**
-> - **Information Protection Admins**
-> - **Information Protection Analysts**
-> - **Information Protection Investigators**
-> - **Information Protection Readers**
->
-> For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center).
+Alternatively to using the default roles, you can create a new role group and add the **Sensitivity Label Administrator** role to this group. For a read-only role, use **Sensitivity Label Reader**. 
+
+Another option is to add users to the **Compliance Data Administrator**, **Compliance Administrator**, or **Security Administrator** role group. 
 
 For instructions to add users to the default role group, roles, or create your own role groups, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
@@ -103,7 +102,7 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Prevent or warn users about sharing files or emails with a specific sensitivity label |[Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md) |
 |Apply a sensitivity label to a file when I receive an alert that content containing personal data is being shared and needs protection| [Investigate and remediate alerts in Privacy Risk Management](/privacy/priva/risk-management-alerts)|
 |Apply a retention label to retain or delete files or emails that have a specific sensitivity label|[Automatically apply a retention label to retain or delete content](apply-retention-labels-automatically.md) |
-|Discover, label, and protect files stored in data stores that are on premises |[Deploying the Azure Information Protection scanner to automatically classify and protect files](/azure/information-protection/deploy-aip-scanner)|
+|Discover, label, and protect files stored in data stores that are on premises |[Deploying the information protection scanner to automatically classify and protect files](deploy-scanner.md)|
 |Discover, label, and protect files stored in data stores that are in the cloud|[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Label SQL database columns by using the same sensitivity labels as those used for files and emails so that the organization has a unified labeling solution that can continue to protect this structured data when it's exported |[Data Discovery & Classification for Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics](/azure/azure-sql/database/data-discovery-and-classification-overview) <br /><br /> [SQL Data Discovery and Classification for SQL Server on-premises](/sql/relational-databases/security/sql-data-discovery-and-classification)|
 |Apply and view labels in Power BI, and protect data when it's saved outside the service|[Sensitivity labels in Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|

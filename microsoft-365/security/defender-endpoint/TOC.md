@@ -2,7 +2,7 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
-### [Trial playbook: Get the most out of your trial](defender-endpoint-trial-playbook.md)
+### [Trial user guide: Microsoft Defender for Endpoint](defender-endpoint-trial-user-guide.md)
 ### [Compare Microsoft endpoint security plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
@@ -201,6 +201,8 @@
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
+### [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Troubleshoot onboarding issues]()
@@ -254,7 +256,7 @@
 ### [Device inventory]()
 #### [Device inventory](machines-view-overview.md)
 #### [Exclude devices](exclude-devices.md)
-#### [Device timeline event flags](device-timeline-event-flag.md)
+#### [Device timeline](device-timeline-event-flag.md)
 #### [Manage device group and tags](machine-tags.md)
 
 ### [Network devices](network-devices.md)
@@ -687,7 +689,7 @@
 ##### [Stream advanced hunting events to your storage account](raw-data-export-storage.md)
 
 #### [SIEM integration]()
-##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
+##### [Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API](configure-siem.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Partners & APIs]()

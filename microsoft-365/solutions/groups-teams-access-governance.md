@@ -28,7 +28,6 @@ The following table provides a quick reference for the access controls available
 |Category|Description|Reference|
 |:-------|:----------|:--------|
 |Membership|||
-||Discovery of private teams|[Manage discovery of private teams in Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)|
 ||Dynamic group membership based on rules|[Create or update a dynamic group in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Control who can share files, folders, and sites.|[Set up and manage access requests](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Conditional access|||

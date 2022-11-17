@@ -126,19 +126,19 @@ Choose from these solution role group options when configuring and managing comm
 
 ### Option 1: Assign all compliance users to the Communication Compliance role group
 
-1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+Complete the following steps to add users to this role group:
 
-2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
-3. Select the *Communication Compliance* role group, then select **Edit role group**.
+2. Select **Permissions** in the left nav, and select **Roles** under the **Microsoft Purview solutions** list.
 
-4. Select **Choose members** from the left navigation pane, then select **Edit**.
+3. Select the *Communication Compliance* role group and then select **Edit**.
 
-5. Select **Add** and then select the checkbox for all users you want to add to the *Communication Compliance* role group.
+4. Select the **Choose users** tab, then select the checkbox for all users you want to add to the role group.
 
-6. Select **Add**, then select **Done**.
+6. Choose **Select**, then **Next**.
 
-7. Select **Save** to add the users to the role group. Select **Close** to complete the steps
+7. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
 
 ### Option 2: Assign users to specific communication compliance role groups
 
@@ -180,7 +180,7 @@ Use the following chart to help you configure groups in your organization for co
 
 | **Policy Member** | **Supported Groups** | **Unsupported Groups** |
 |:-----|:-----|:-----|
-|Supervised users <br> Excluded users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups <br> Microsoft 365 groups with dynamic membership |
+|Supervised users <br> Excluded users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups <br> Shared mailbox <br> Nested distribution groups <br> Mail-enabled security groups <br> Microsoft 365 groups with dynamic membership |
 | Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Nested distribution groups <br> Mail-enabled security groups |
 
 When you assign a *distribution group* in the policy, the policy detects all emails and Teams chats from each user in the *distribution group*. When you assign a *Microsoft 365 group* in the policy, the policy detects all emails and Teams chats sent to the *Microsoft 365 group*,* not the individual emails and chats received by each group member. Using distribution groups in communication compliance policies are recommended so that individual emails and Teams chats from each user are automatically detected.
