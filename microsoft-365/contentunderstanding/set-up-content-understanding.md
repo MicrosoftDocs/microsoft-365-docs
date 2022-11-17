@@ -96,7 +96,7 @@ For details about Syntex licensing, see [Microsoft Syntex licensing](syntex-lice
 
     Click **Next**.
 
-5. On the **Create Content Center** page, you can create a SharePoint content center site where your users can create and manage unstructured document processing models. If you previously created a content center from the SharePoint admin center, that information will display here and you can just select **Next**.
+5. On the **Create Content Center** page, you can create a SharePoint content center site where your users can create and manage document processing models. If you previously created a content center from the SharePoint admin center, that information will display here and you can just select **Next**.
 
     1. For **Site name**, type the name you want to give your content center site.
     
