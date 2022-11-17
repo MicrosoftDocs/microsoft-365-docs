@@ -21,7 +21,7 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# What is Microsoft 365 Defender role-based access control (RBAC)
+# Microsoft 365 Defender role-based access control (RBAC)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,9 +32,9 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Microsoft 365 Defender provides integrated threat protection, detection, and response across endpoints, email, identities, applications, and data within a single portal. Managing a user's permission to view data and complete tasks is vital to keep your organization secure.
+Microsoft 365 Defender provides integrated threat protection, detection, and response across endpoints, email, identities, applications, and data within a single portal. Controlling a user's permissions around their access to view data or complete tasks is essential for organizations to minimize the risks associated with unauthorized access.
 
-The Microsoft 365 Defender role-based access control (RBAC) model provides a single permissions management experience that provides one central location for administrators to give users permission to view data and complete tasks across different security solutions.
+The Microsoft 365 Defender role-based access control (RBAC) model provides a single permissions management experience that provides one central location for administrators to control user permissions across different security solutions.
 
 ## What's supported by the Microsoft 365 Defender RBAC model
 
