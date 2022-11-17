@@ -46,7 +46,7 @@ When you set up Microsoft Syntex billing in Azure, events will be sent to the Az
 The following permissions are required to set up Microsoft Syntex billing:
 
 - You must have Global Administrator or SharePoint Administrator permissions to be able to access the Microsoft 365 admin center and set up Syntex.
-- You must have contributor rights to the Azure resource group that you want to use for Microsoft Syntex billing.
+- You must have owner or contributor rights to the Azure subscription that you want to use for Microsoft Syntex billing.
 
 To configure Microsoft Syntex billing
 
