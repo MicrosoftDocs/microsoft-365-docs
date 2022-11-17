@@ -32,7 +32,7 @@ A records management system, also known as records and information management, i
 
 Use the following capabilities to support your records management solution for Microsoft 365 data:
 
-- **Label content as a record**. Create and configure retention labels to mark content as a [record](#records) that can then be applied by users or automatically applied by identifying sensitive information, keywords, or content types.
+- **Label items as a record**. Create and configure retention labels to mark items as a [record](#records) that can then be applied by users or automatically applied by identifying sensitive information, keywords, or content types.
 
 - **Migrate and manage your retention requirements with file plan**. By using a [file plan](file-plan-manager.md), you can bring in an existing retention plan to Microsoft 365, or build a new one for enhanced management capabilities.
 
@@ -54,23 +54,23 @@ In addition to the online documentation, you might find it useful to download a 
 
 ## Records
 
-When content is declared a record:
+When an item is declared a record:
 
-- Restrictions are placed on the items in terms of what [actions are allowed or blocked](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+- Restrictions are placed on the item in terms of what [actions are allowed or blocked](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 - Additional activities about the item are logged.
 
-- You have proof of disposition when the items are deleted at the end of their retention period.
+- You have proof of disposition when the item is deleted at the end of their retention period.
 
-You use [retention labels](retention.md#retention-labels) to mark content as a **record**, or a **regulatory record**. The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to content, or for labels that mark items as a record, you can auto-apply those labels.
+You use [retention labels](retention.md#retention-labels) to mark items as a **record**, or a **regulatory record**. The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to items, or for labels that mark items as a record, you can auto-apply those labels.
 
 By using retention labels to declare records, you can implement a single and consistent strategy for managing records across your Microsoft 365 environment.
 
 ### Compare restrictions for what actions are allowed or blocked
 
-Use the following table to identify what restrictions are placed on content as a result of applying a standard retention label, and retention labels that mark content as a record or regulatory record.
+Use the following table to identify what restrictions are placed on items as a result of applying a standard retention label, and retention labels that mark items as a record or regulatory record.
 
-A standard retention label has retention settings and actions but doesn't mark content as a record or a regulatory record.
+A standard retention label has retention settings and actions but doesn't mark items as a record or a regulatory record.
 
 > [!NOTE]
 > For completeness, the table includes columns for a locked and unlocked record, which is applicable to SharePoint and OneDrive, but not Exchange. The ability to lock and unlock a record uses [record versioning](record-versioning.md) that isn't supported for Exchange items. So for all Exchange items that are marked as a record, the behavior maps to the **Record - locked** column, and the **Record - unlocked column** is not relevant.
