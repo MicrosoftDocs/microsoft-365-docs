@@ -49,10 +49,15 @@ Custom models include:
 To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
 When you create a custom model, you'll select the training method associated with the model type. For example, if you want to create an unstructured document processing model, on the **Options for model creation** page where you create a model, you will choose the **Teaching method** option. The following table shows the training method associated with each custom model type.
-
+<!---
 |Custom model type  |Unstructured document processing  |Freeform document processing  |Structured document processing  |
 |---------|---------|---------|---------|
 |**Training method in UI**  | ![Tile for teaching method.](../media/content-understanding/teaching-method-tile.png) | ![Tile for freeform seletion method.](../media/content-understanding/freeform-selection-method-tile.png) | ![Tile for layout method.](../media/content-understanding/layout-method-tile.png) |
+--->
+
+|Unstructured document processing  |Freeform document processing  |Structured document processing  |
+|---------|---------|---------|
+|| ![Tile for teaching method.](../media/content-understanding/teaching-method-tile.png) | ![Tile for freeform seletion method.](../media/content-understanding/freeform-selection-method-tile.png) | ![Tile for layout method.](../media/content-understanding/layout-method-tile.png) |
 
 
 ### Unstructured document processing
