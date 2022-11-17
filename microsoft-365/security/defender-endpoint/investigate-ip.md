@@ -44,7 +44,7 @@ You can find information from the following sections in the IP address view:
 - IP in organization observations
 - Prevalence in organization
 
-## IP Geo information
+## IP geo information
 
 In the left pane the page provides IP details, when exist. 
 - Organization (ISP)
