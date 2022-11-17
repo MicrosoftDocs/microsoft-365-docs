@@ -50,9 +50,10 @@ You can also provide our experts the following additional permissions to investi
 [Learn more about Azure AD roles and permissions](https://learn.microsoft.com/azure/active-directory/roles/permissions-reference)
 
 Follow these steps to grant our experts additional permissions:
-1.	In the same Defender Experts setting page mentioned earlier, select Manage permissions
-2.	Under **Additional permissions**, select the additional role(s) you want to grant
-3.	Select **Give access**
+
+1. In the same Defender Experts setting page mentioned earlier, select **Manage permissions**
+2. Under **Additional permissions**, select the additional role(s) you want to grant
+3. Select **Give access**
 
 > [!IMPORTANT]
 > If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your network.
