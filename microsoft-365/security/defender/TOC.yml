@@ -372,7 +372,7 @@
                 href: onboarding-defender-experts-for-hunting.md
               - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
-        - name: Expanded Microsoft Defender Experts for XDR preview
+       - name: Expanded Microsoft Defender Experts for XDR preview
          items:
               - name: Overview
                 href: dex-xdr-overview.md
