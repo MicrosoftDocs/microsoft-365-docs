@@ -57,7 +57,7 @@ When you create a custom model, you'll select the training method associated wit
 
 |Unstructured document processing  |Freeform document processing  |Structured document processing  |
 |---------|---------|---------|
-|| ![Tile for teaching method.](../media/content-understanding/teaching-method-tile.png) | ![Tile for freeform seletion method.](../media/content-understanding/freeform-selection-method-tile.png) | ![Tile for layout method.](../media/content-understanding/layout-method-tile.png) |
+| ![Tile for teaching method.](../media/content-understanding/teaching-method-tile.png) | ![Tile for freeform seletion method.](../media/content-understanding/freeform-selection-method-tile.png) | ![Tile for layout method.](../media/content-understanding/layout-method-tile.png) |
 
 
 ### Unstructured document processing
