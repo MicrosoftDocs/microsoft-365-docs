@@ -65,7 +65,7 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 
 [13. Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.](#13-troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux)
 
-[14. Rerun resource utilization statistics and report on pre-deployment utilization compared to post-deployment.](#14-rerun-resource-utilization-statistics)
+[14. Check resource utilization statistics and report on pre-deployment utilization compared to post-deployment.](#14-check-resource-utilization-statistics)
 
 [15. Verify communication with Microsoft Defender for Endpoint backend.](#15-verify-communication-with-microsoft-defender-for-endpoint-backend)
 
