@@ -21,7 +21,7 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Create custom roles in Microsoft 365 Defender role-based access control (RBAC)
+# Create Microsoft 365 Defender RBAC custom roles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,11 +32,12 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Create Microsoft 365 Defender RBAC custom roles
+## Pre-requisite
 
-For the first role creation, user must be granted with Global Administrator or Security Administrator in Azure Active Directory. Any user which will be granted in Microsoft 365 Defender RBAC with the “Authorization” manage permission will have access to create and manage roles and permissions. For more information on Authorization permission learn here.
+You need to be a global administrator or security administrator in Azure Active Directory to gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
 
-Use the new custom role creation wizard to create each role.
+## Create a custom role to grant user permissions
+
 
 1. Sign into the Microsoft 365 Defender portal at <u>security.microsoft.com
 2. In the navigation pane, scroll down and select **Permissions**
@@ -97,3 +98,18 @@ Use the new custom role creation wizard to create each role.
 > Review the settings for the role. If you need to make more changes, you can do it from this page. Once completed, then click **Submit**.
 
 <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image9.png" style="width:6.5in;height:4.98194in" />
+
+
+## Create a role that can manage custom and built in roles
+
+To create a role  with **Authorization** permissions that can manage custom and built in roles:
+
+1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as global administrator or security administrator.
+2. Go to **Permissions**
+3. Select **Roles** under Microsoft 365 Defender
+4. Select **Create custom role**
+5. Enter a name and description and select **Next**
+6. Select **Configuration** > **Select custom permissions** and under **Authorization** choose **Select all permissions**
+7. Select **Apply** > **Next**
+8. Assign this role to users and user group in your organization
+9. Select **Next** > **Submit**.

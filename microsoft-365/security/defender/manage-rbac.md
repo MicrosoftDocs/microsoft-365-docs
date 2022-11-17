@@ -60,7 +60,7 @@ This section provides useful information as well as details on accounts you need
 
 You need to be a global administrator or security administrator in Azure Active Directory to gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
 
-Once you have navigated to this page, you can add a custom role with the permissions needed to grant access to create and manage roles and permissions. This will remove the need of Azure Active Directory global roles to manage permissions.
+Once you have navigated to this page, you can create a custom role that can manage custom and built in roles. This will remove the need of Azure Active Directory global roles to manage permissions.
 
 The Microsoft 365 Defender security portal will continue to respect existing Azure Active Directory global roles when you activate the Microsoft 365 Defender RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
 
@@ -68,7 +68,7 @@ The Microsoft 365 Defender security portal will continue to respect existing Azu
 
 The Microsoft 365 Defender RBAC model provides easy migration of the existing permissions in the individual supported RBAC models to the new RBAC model.
 
-All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions align, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md)
+All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions align, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md).
 
 ### Opt-in mode
 
