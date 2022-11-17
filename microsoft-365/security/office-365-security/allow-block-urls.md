@@ -410,11 +410,16 @@ Valid URL entries and their results are described in the following sections.
   - www.contoso.com
   - www.contoso.com/b
   - xyz.abc.contoso.com
+  - abc.xyz.contoso.com/a/b/c
+  - contoso.com/b/a/c
+  - test.com/contoso.com
+
 
 - **Allow not matched** and **Block not matched**:
 
   - 123contoso.com
   - contoso.org
+  - test.com/q=contoso.com
 
 #### Scenario: IP address
 
