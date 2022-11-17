@@ -68,7 +68,7 @@ Ranking is based on the number of points left to achieve, implementation difficu
 
 When you select a specific recommended action, a full page flyout appears.  
 
-:::image type="content" source="../../media/secure-score/secure-score-recommended-action-details.png" alt-text="The flyout of an recommended action in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="The flyout of an recommended action in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 To complete the action, you have a few options:
 

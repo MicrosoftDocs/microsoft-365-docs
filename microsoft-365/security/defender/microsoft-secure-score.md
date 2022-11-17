@@ -65,7 +65,7 @@ Your score is updated in real time to reflect the information presented in the v
 - [Check your current score](microsoft-secure-score-improvement-actions.md#check-your-current-score)
 - [Compare your score to organizations like yours](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
 - [View recommended actions and decide an action plan](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
-- [Initiate work flows to investigate or implement](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
+- [Initiate work flows to investigate or implement](microsoft-secure-score-improvement-actions.md#view-recommended-action-details)
 
 ### How recommended actions are scored
 
