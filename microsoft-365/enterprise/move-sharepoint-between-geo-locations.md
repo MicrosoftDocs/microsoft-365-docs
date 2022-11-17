@@ -220,7 +220,7 @@ In most cases, Flows will continue to work after a SharePoint site geo move. We 
 
 ### Power Apps
 
-Power Apps need to be recreated in the destination location.
+Power Apps needs to be recreated in the destination location.
 
 ### Data movement between geo locations
 
