@@ -158,7 +158,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
 
      |Action|Spam|High<br>confidence<br>spam|Phishing|High<br>confidence<br>phishing|Bulk|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.<sup>1</sup>|✔<sup>\*</sup>|✔<sup>\*</sup>|✔|✔|✔<sup>\*</sup>|
+     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.<sup>1,4</sup>|✔<sup>\*</sup>|✔<sup>\*</sup>|✔||✔<sup>\*</sup>|
      |**Add X-header**: Adds an X-header to the message header and delivers the message to the mailbox. <p> You enter the X-header field name (not the value) later in the **Add this X-header text** box. <p> For **Spam** and **High confidence spam** verdicts, the message is moved to the Junk Email folder.<sup>1,2</sup>|✔|✔|✔||✔|
      |**Prepend subject line with text**: Adds text to the beginning of the message's subject line. The message is delivered to the mailbox and moved to the Junk email folder.<sup>1,2</sup> <p> You enter the text later in the **Prefix subject line with this text** box.|✔|✔|✔||✔|
      |**Redirect message to email address**: Sends the message to other recipients instead of the intended recipients. <p> You specify the recipients later in the **Redirect to this email address** box.|✔|✔|✔|✔|✔|
@@ -173,6 +173,8 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      > <sup>2</sup> You can this use value as a condition in mail flow rules to filter or route the message.
      >
      > <sup>3</sup> A blank **Select a policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for the spam filter verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
+     >
+     > <sup>4</sup> For **High confidence phishing**, the action **Move message to Junk Email folder** has effectively been deprecated. Although you might be able to select **Move message to Junk Email folder**, high confidence phishing messages are always quarantined (equivalent to selecting **Quarantine message**).
      >
      > Users can't release their own messages that were quarantined as high confidence phishing. At best, admins can configure the quarantine policy so users can request the release of their quarantined high confidence phishing messages.
 

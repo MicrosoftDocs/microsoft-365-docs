@@ -201,6 +201,8 @@
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
+### [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Troubleshoot onboarding issues]()
@@ -254,7 +256,7 @@
 ### [Device inventory]()
 #### [Device inventory](machines-view-overview.md)
 #### [Exclude devices](exclude-devices.md)
-#### [Device timeline event flags](device-timeline-event-flag.md)
+#### [Device timeline](device-timeline-event-flag.md)
 #### [Manage device group and tags](machine-tags.md)
 
 ### [Network devices](network-devices.md)
