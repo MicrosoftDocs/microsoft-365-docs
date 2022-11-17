@@ -84,7 +84,7 @@ One or more of the templates listed below are included as part of your licensing
 
 ## Premium templates
 
-The templates listed by industry and region below may be purchased by your organization.
+The templates listed by industry and region below may be purchased by your organization. See the [note above](#included-templates) about upcoming changes in December 2022.
 
 In addition, the templates listed immediately below are available in preview. Creating assessments from these templates won't count toward your total of licensed templates used.
 
