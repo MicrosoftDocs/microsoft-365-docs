@@ -63,7 +63,7 @@ The **Alerts related to this IP** section provides a list of alerts that are ass
 
 ## IP observed in organization
 
-The **IP in organization** section provides list of devices who had connection with this IP, and the last event details for each device (the list is limited to 100 devices).
+The **IP observed in organization** section provides a list of devices that have a connection with this IP and the last event details for each device (the list is limited to 100 devices).
 
 ## Prevalence
 
