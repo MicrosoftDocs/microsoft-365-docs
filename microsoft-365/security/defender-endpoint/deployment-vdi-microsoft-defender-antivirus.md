@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Antivirus Virtual Desktop Infrastructure deployment guide
-description: Learn how to deploy Microsoft Defender Antivirus in a virtual desktop environment for the best balance between protection and performance.
+description: Learn how to deploy Microsoft Defender Antivirus in a remote desktop or non-persistent virtual desktop environment.
 keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -30,7 +30,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-In addition to standard on-premises or hardware configurations, you can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. With the ability to easily deploy updates to VMs running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
+In addition to standard on-premises or hardware configurations, you can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. With the ability to easily deploy updates to virtual machines (VMs) running in VDIs, you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and are then downloaded directly to each VM when it's turned on.
 
 This guide describes how to configure your VMs for optimal protection and performance, including how to:
 
@@ -58,7 +58,7 @@ In Windows 10, version 1903, we introduced the shared security intelligence feat
 
 1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-2. In the **Group Policy Management Editor**, go to **Computer configuration**.
+2. In the Group Policy Management Editor, go to **Computer configuration**.
 
 3. Select **Administrative templates**.
 
@@ -194,7 +194,7 @@ Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist 
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan while the attack was detected and stopped; alerts, such as an "initial access alert," are triggered and appear in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan while the attack was detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
 > [!TIP]
 > To open the Action Center on Windows 10 or Windows 11, take one of the following steps:
