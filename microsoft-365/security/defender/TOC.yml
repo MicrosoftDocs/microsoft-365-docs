@@ -194,8 +194,6 @@
                       href: alert-grading-password-spray.md                      
                     - name: Malicious exchange connectors
                       href: alert-grading-for-malicious-exchange-connectors.md
-                    - name: Session cookie theft alert
-                      href: session-cookie-theft-alert.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
@@ -374,6 +372,18 @@
                 href: onboarding-defender-experts-for-hunting.md
               - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
+        - name: Expanded Microsoft Defender Experts for XDR preview
+         items:
+              - name: Overview
+                href: dex-xdr-overview.md
+              - name: Get started
+                href: get-started-xdr.md
+              - name: Start using Microsoft Defender Experts for XDR preview service
+                href: start-using-mdex-xdr.md
+              - name: Opt out of preview
+                href: opt-out-of-preview.md
+              - name: Frequently asked questions
+                href: frequently-asked-questions.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
