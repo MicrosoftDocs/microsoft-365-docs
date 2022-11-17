@@ -28,7 +28,6 @@ ms.topic: conceptual
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 

@@ -15,6 +15,7 @@ ms.collection:
   - m365solution-frontline
   - m365solution-scenario
   - EngageScoreOct2022
+  - contentengagementFY23
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
