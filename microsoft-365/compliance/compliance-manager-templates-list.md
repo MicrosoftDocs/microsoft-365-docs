@@ -82,21 +82,6 @@ One or more of the templates listed below are included as part of your licensing
 > [!NOTE]
 > For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
 
-## Preview templates
-
-The templates listed below are currently available for preview. Creating assessments using these templates will not count toward your total of licensed templates used.
-
-- ISO 27001:2013 for Azure (Preview)
-- ISO 27001:2013 for Dynamics 365 (Preview)
-- FedRAMP Moderate for Dynamics 365 (Preview)
-- FedRAMP Moderate for Azure (Preview)
-- FedRAMP High for Azure (Preview)
-- FedRAMP High for Dynamics 365 (Preview)
-- SOC 2 for Azure (Preview)
-- SOC 2 for Dynamics 365 (Preview)
-- ISO 27018:2019 for Azure (Preview)
-- ISO 27018:2019 for Dynamics 365 (Preview)
-
 ## Premium templates
 
 The templates listed by industry and region below may be purchased by your organization.
