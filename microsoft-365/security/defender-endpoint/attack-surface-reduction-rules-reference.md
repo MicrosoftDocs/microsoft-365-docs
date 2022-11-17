@@ -78,14 +78,14 @@ Microsoft Defender Antivirus exclusions apply to some Microsoft Defender for End
 
 Following is a list of ASR rules that honor Microsoft Defender Antivirus exclusions:
 
-|exclusion name | ASR rules name |
-|:---|:---|
-| BlockAdobeCreateProcessRule | [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) |
-| BlockKnownRemotingToolCreateProcessRule | [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |
-| BlockLsassCredentialTheft | [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |
-| BlockOfficeCreateProcessRule | [Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) |
-| BlockOfficeInjectionRule | [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) |
-| BlockOutlookCreateProcessRule | [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |
+| ASR rules name: |
+|:---|
+| [Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) |
+| [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |
+| [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |
+| [Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) |
+| [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) |
+| [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |
 
 ## ASR rules supported operating systems
 
@@ -216,7 +216,7 @@ When the allow button is clicked, the block will be suppressed for 24 hours. Aft
 You can also set a rule in warn mode via PowerShell by specifying the AttackSurfaceReductionRules_Actions as "Warn". For example:
 
 ```powershell
--command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
+Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn
 ```
 
 ## Per rule descriptions
@@ -598,3 +598,4 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 - [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 - [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

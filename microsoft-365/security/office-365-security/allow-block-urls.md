@@ -308,8 +308,8 @@ Valid URL entries and their results are described in the following sections.
   - payroll.contoso.com
   - test.com/contoso.com
   - test.com/q=contoso.com
-  - contoso.com
-  - contoso.com/q=a@contoso.com
+  - www.contoso.com
+  - www.contoso.com/q=a@contoso.com
 
 - **Block match**:
   - contoso.com
@@ -317,8 +317,8 @@ Valid URL entries and their results are described in the following sections.
   - payroll.contoso.com
   - test.com/contoso.com
   - test.com/q=contoso.com
-  - contoso.com
-  - contoso.com/q=a@contoso.com
+  - www.contoso.com
+  - www.contoso.com/q=a@contoso.com
 
 - **Block not matched**: abc-contoso.com
 
@@ -330,13 +330,14 @@ Valid URL entries and their results are described in the following sections.
 **Entry**: `*.contoso.com`
 
 - **Block match**:
+  - www.contoso.com
   - xyz.abc.contoso.com
 
 - **Block not matched**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
-  - contoso.com/abc
+  - www.contoso.com/abc
 
 #### Scenario: Right wildcard at top of path
 
@@ -350,8 +351,8 @@ Valid URL entries and their results are described in the following sections.
 - **Allow not matched** and **Block not matched**:
   - contoso.com
   - contoso.com/a
-  - contoso.com
-  - contoso.com/q=a@contoso.com
+  - www.contoso.com
+  - www.contoso.com/q=a@contoso.com
 
 #### Scenario: Left tilde
 
@@ -359,13 +360,13 @@ Valid URL entries and their results are described in the following sections.
 
 - **Allow match** and **Block match**:
   - contoso.com
-  - contoso.com
+  - www.contoso.com
   - xyz.abc.contoso.com
 
 - **Allow not matched** and **Block not matched**:
   - 123contoso.com
   - contoso.com/abc
-  - contoso.com/abc
+  - www.contoso.com/abc
 
 #### Scenario: Right wildcard suffix
 
@@ -392,8 +393,8 @@ Valid URL entries and their results are described in the following sections.
 - **Block match**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
-  - contoso.com/a
-  - contoso.com/b/a/c
+  - www.contoso.com/a
+  - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
 - **Block not matched**: contoso.com/b
@@ -406,8 +407,8 @@ Valid URL entries and their results are described in the following sections.
 
   - contoso.com
   - contoso.com/a
-  - contoso.com
-  - contoso.com/b
+  - www.contoso.com
+  - www.contoso.com/b
   - xyz.abc.contoso.com
 
 - **Allow not matched** and **Block not matched**:
