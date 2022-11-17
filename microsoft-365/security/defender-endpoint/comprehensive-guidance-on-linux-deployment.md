@@ -61,7 +61,7 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 
 [11. Download the Microsoft Defender for Endpoint on Linux onboarding package from the Microsoft 365 Defender portal.](#11-download-the-microsoft-defender-for-endpoint-on-linux-onboarding-package)
 
-[12. Use Ansible to manage Microsoft Defender for Endpoint on Linux.](#12-use-ansible-to-manage-microsoft-defender-for-endpoint-on-linux)
+[12. Use Ansible, Puppet, or Chef to manage Microsoft Defender for Endpoint on Linux](#12-ansible-puppet-and-chef-examples-to-manage-microsoft-defender-for-endpoint-on-linux)
 
 [13. Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux.](#13-troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux)
 
