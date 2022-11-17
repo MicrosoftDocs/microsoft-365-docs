@@ -57,8 +57,7 @@ When you create a custom model, you'll select the training method associated wit
 
 |Unstructured document processing  |Freeform document processing  |Structured document processing  |
 |---------|---------|---------|
-| ![Tile for teaching method.](../media/content-understanding/teaching-method-tile.png) | ![Tile for freeform seletion method.](../media/content-understanding/freeform-selection-method-tile.png) | ![Tile for layout method.](../media/content-understanding/layout-method-tile.png) |
-
+| ![Tile for teaching method.](../media/content-understanding/teaching-method-tile-2.png) | ![Tile for freeform seletion method.](../media/content-understanding/freeform-selection-method-tile-2.png) | ![Tile for layout method.](../media/content-understanding/layout-method-tile-2.png) |
 
 ### Unstructured document processing
 
@@ -68,7 +67,7 @@ For example, an unstructured document could be a contract renewal letter that ca
 
 This model type supports the widest range of file types and only works on files using the Latin alphabet (English characters).
 
-When you create an unstructured document processing model, use the **Teaching method** option on the **Options for model creation** page.
+When you create an unstructured document processing model, use the **Teaching method** option.
 
 For more information, see [Overview of unstructured document processing](document-understanding-overview.md).
 
@@ -85,7 +84,7 @@ Because your organization receives letters and documents in large quantities fro
 
 This model type is the best option for English documents in PDF or image files when you don't require automatic classification of the type of document.
 
-When you create a freeform document processing model, use the **Freeform selection method** option on the **Options for model creation** page.
+When you create a freeform document processing model, use the **Freeform selection method** option.
 
 For more information, see [Overview of freeform document processing](freeform-document-processing-overview.md).
 
@@ -97,7 +96,7 @@ Structured document processing models use Microsoft Power Apps [AI Builder](/ai-
 
 This model type supports the widest range of languages and is trained to understand the layout of your form from example documents, and then learns to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number on a tax form).
 
-When you create a structured document processing model, use the **Layout method** option on the **Options for model creation** page.
+When you create a structured document processing model, use the **Layout method** option.
 
 For more information, see [Overview of structured document processing](form-processing-overview.md).
 
