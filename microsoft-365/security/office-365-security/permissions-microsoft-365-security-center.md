@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 permissions in the Microsoft 365 Defender portal
+title: Permissions in the Microsoft 365 Defender portal
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -31,13 +31,13 @@ ms.service: microsoft-365-security
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Access to Microsoft Defender for Office 365 capabilities in the Microsoft 365 Defender portal can be managed collectively by using global roles in Azure Active Directory (Azure AD). If you need greater flexibility and control over access to specific Microsoft Defender for Office 365 product data, access can also be managed with the creation of custom roles.
-
+Global roles in Azure Active Directory (Azure AD) allow you to manage permissions and access to capabilities in Microsoft 365, which also includes Microsoft Defender for Office 365. But, if you need to limit permissions and capabilities to security features in Defender for Office 365 only, you can assign permissions in the Microsoft 365 Defender portal.
 
 To manage permissions in the Microsoft 365 Defender portal, go to **Permissions & roles** > **Email & collaboration roles** or <https://security.microsoft.com/securitypermissions>. You need to be a **Global administrator** or a member of the **Organization Management** role group in the Microsoft 365 Defender portal. Specifically, the **Role Management** role allows users to view, create, and modify role groups in the Microsoft 365 Defender portal, and by default, that role is assigned only to the **Organization Management** role group.
 
 > [!NOTE]
 > Some capabilities of Microsoft Defender for Office require additional permissions in the Exchange admin center. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+>
 > For information about permissions in the Microsoft Purview compliance portal, see [Permissions in the Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center-permissions.md).
 
 ## Relationship of members, roles, and role groups
@@ -52,7 +52,7 @@ The Microsoft 365 Defender portal> includes default role groups for the most com
 
 :::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="The relationship of a role group to its roles and members" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
-## Roles and role groups in the Microsoft 365 Defender portal to access Microsoft Defender for Office 365 data and experiences
+## Roles and role groups in the Microsoft 365 Defender portal
 
 The following types of roles and role groups are available in on the **Permissions & roles** page at <https://security.microsoft.com/securitypermissions> in the Microsoft 365 Defender portal:
 
@@ -74,7 +74,7 @@ For more information, see [View and assign administrator roles in Azure Active D
 
 |Role|Description|
 |---|---|
-|**Global administrator**|Access to all administrative features in all Microsoft 365 services. Only global administrators can assign other administrator roles. For more information, see [Global Administrator / Company Administrator](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).
+|**Global administrator**|Access to all administrative features in all Microsoft 365 services. Only global administrators can assign other administrator roles. For more information, see [Global Administrator / Company Administrator](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
 |**Compliance data administrator**|Keep track of your organization's data across Microsoft 365, make sure it's protected, and get insights into any issues to help mitigate risks. For more information, see [Compliance Data Administrator](/azure/active-directory/roles/permissions-reference#compliance-data-administrator).|
 |**Compliance administrator**|Help your organization stay compliant with any regulatory requirements, manage eDiscovery cases, and maintain data governance policies across Microsoft 365 locations, identities, and apps. For more information, see [Compliance Administrator](/azure/active-directory/roles/permissions-reference#compliance-administrator).|
 |**Security operator**|View, investigate, and respond to active threats to your Microsoft 365 users, devices, and content. For more information, see [Security Operator](/azure/active-directory/roles/permissions-reference#security-operator).|
