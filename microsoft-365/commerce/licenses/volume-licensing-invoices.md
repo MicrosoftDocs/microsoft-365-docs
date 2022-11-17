@@ -17,6 +17,7 @@ ms.custom:
 - commerce_vl
 - AdminTemplateSet
 search.appverid: MET150
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to access and view non-Azure volume licensing invoices in the Microsoft 365 admin center."
 ms.date: 11/18/2022
 ---
@@ -26,7 +27,7 @@ ms.date: 11/18/2022
 This article applies only to non-Azure volume licensing (VL) invoices and explains the format of a new invoice PDF and invoice recon file that
 are available to volume licensing (VL) customers.
 
-Starting on November 18, 2022, VL customers with non-Azure products purchased under a direct VL agreement can access the new invoice format
+Starting on November 18, 2022, VL customers with non-Azure products purchased **under a direct VL agreement** can access the new invoice format
 in the Microsoft 365 admin center. This invoice applies to all types of VL programs except Microsoft Products & Services Agreements (MPSA),
 Federal Government, Special agreements, and Select Plus agreements.
 
@@ -91,7 +92,7 @@ The following table explains the terms for the addresses section of your invoice
 |**Term** |**Description**  |
 |---------|---------|
 |Sold To        |The name and address of the organization that bought the subscription. |
-|Bill TO        |The address of your billing department. |
+|Bill To        |The address of your billing department. |
 |Ship To        |Contains details of the location where the products are shipped or used for tax exemption, if applicable. |
 |End Customer   |The address where the service is used. |
 
