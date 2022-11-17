@@ -48,6 +48,13 @@ Custom models include:
 
 To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
+When you create a model, you'll select the training method associated with the model type. For example, if you want to create an unstructured document processing model, on the **Options for model creation page** where you create a model, you will choose the **Teaching method** option. The following table shows the training method associated with each custom model type.
+
+|Custom model type  |Unstructured document processing  |Freeform document processing  |Structured document processing  |
+|---------|---------|---------|---------|
+|Training method in UI  | ![Tile for teaching method.](../media/content-understanding/teaching-method-tile.png) | ![Tile for freeform seletion method.](../media/content-understanding/freeform-selection-method-tile.png) | ![Tile for layout method.](../media/content-understanding/layout-method-tile.png) |
+
+
 ### Unstructured document processing
 
 Use the unstructured document processing model to automatically classify documents and extract information from them. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
