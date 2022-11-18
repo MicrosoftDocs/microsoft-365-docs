@@ -99,7 +99,7 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
     
     - **Configure encryption settings**: Turns on encryption and makes the encryption settings visible:
         
-        :::image type="content" source="../media/encrytion-options-sensitivity-label.png" alt-text="Sensitivity label options for encryption. "lightbox="../media/encrytion-options-sensitivity-label.png":::
+        :::image type="content" source="./media/encrytion-options-sensitivity-label.png" alt-text="Sensitivity label options for encryption. "lightbox="./media/encrytion-options-sensitivity-label.png":::
         
         Instructions for these settings are in the following [Configure encryption settings](#configure-encryption-settings) section.
 
