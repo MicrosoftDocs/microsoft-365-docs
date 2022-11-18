@@ -57,3 +57,8 @@ Follow these steps to grant our experts additional permissions:
 
 > [!IMPORTANT]
 > If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your network.
+
+## Go to the next step
+
+[Start using Microsoft Defender Experts for XDR preview service](start-using-mdex-xdr.md)
+
