@@ -103,6 +103,17 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
         
         Instructions for these settings are in the following [Configure encryption settings](#configure-encryption-settings) section.
 
+### Editing labels to newly apply encryption or change existing encryption settings
+
+It's a common deployment strategy to initially configure sensitivity labels without encryption, and later edit some of the existing labels to apply encryption. The labels that you edit will apply that encryption for newly labeled items. Items that are already labeled remain unencrypted, unless you remove the label and reapply it.
+
+For items that are already labeled with encryption with the assign permissions now option, and you change the users or permissions, the new settings will be applied to newly labeled items and also for existing items when users authenticate with the encryption service. In most cases, there's no need to remove and reapply the label. However, if users have already opened the encrypted document or email, they won't get the new settings until their use license has expired and they must reauthenticate. For more information about this scenario, see the related [frequently asked question](/azure/information-protection/faqs-rms#ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document) for how the encryption works.
+
+Whenever you change the encryption options for letting users assign permissions, that change only applies to newly labeled or relabeled items. For example:
+
+- You change the label from assigning permissions now to let users assign permissions, or the other way around
+- You change the label from Do Not Forward to Encrypt-Only, or the other way around
+
 ### What happens to existing encryption when a label's applied
 
 If a sensitivity label is applied to unencrypted content, the outcome of the encryption options you can select is self-explanatory. For example, if you didn't select **Encrypt files and emails**, the content remains unencrypted.
@@ -129,17 +140,6 @@ In the cases where the new label encryption is applied or the original encryptio
 If the user doesn't have one of these rights or roles, the label can't be applied and so the original encryption is preserved. The user sees the following message: **You don't have permission to make this change to the sensitivity label. Please contact the content owner.**
 
 For example, the person who applies Do Not Forward to an email message can relabel the thread to replace the encryption or remove it, because they're the Rights Management owner for the email. But except for super users, recipients of this email can't relabel it because they don't have the required usage rights.
-
-#### Editing labels to newly apply encryption or change existing encryption settings
-
-It's a common deployment strategy to initially configure sensitivity labels without encryption, and later edit some of the existing labels to apply encryption. The labels that you edit will apply that encryption for newly labeled items. Items that are already labeled remain unencrypted, unless you remove the label and reapply it.
-
-For items that are already labeled with encryption with the assign permissions now option, and you change the users or permissions, the new settings will be applied to newly labeled items and for existing items when users authenticate with the encryption service. In most cases, there's no need to remove and reapply the label. However, if users have already opened the encrypted document or email, they won't get the new settings until their use license has expired. For more information about this scenario, see the related [frequently asked question](/azure/information-protection/faqs-rms#ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document) for how the encryption works.
-
-Whenever you change the encryption options for letting users assign permissions, that change only applies to newly labeled or relabeled items. For example:
-
-- You change the label from assigning permissions now to let users assign permissions, or the other way around
-- You change the label from Do Not Forward to Encrypt-Only, or the other way around
 
 #### Email attachments for encrypted email messages
 
