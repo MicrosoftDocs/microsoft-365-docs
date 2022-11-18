@@ -94,7 +94,7 @@ The **Settings** tab in an eDiscovery (Premium) case lets you quickly copy the d
 
 After reviewing the file and redacting sensitive information, send it to the Microsoft Support engineer working on your case.
 
-Collect Job  Information:
+### Collect job information
 
 1. While in the Case, click the **Jobs** Tab. 
 2. Scroll down to the Job that faied and click on it to open the Job Information screen.
