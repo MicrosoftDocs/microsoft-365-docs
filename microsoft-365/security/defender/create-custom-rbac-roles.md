@@ -57,7 +57,7 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
 
    :::image type="content" source="../../media/defender/m365-defender-rbac-permissions-flyout.png" alt-text="Screenshot of the permissions flyout screen" lightbox="../../media/defender/m365-defender-rbac-permissions-flyout.png":::
 
-For more information on the RBAC custom permissions, see [About RBAC custom permissions](custom-permissions-details.md)
+    For more information on the RBAC custom permissions, see [About RBAC custom permissions](custom-permissions-details.md)
 
     >[!Note]
     > If all read-only or all read and manage permissions are assigned, any new permissions added to this group in the future will be automatically assigned the same permissions.
@@ -90,7 +90,7 @@ To create a role  with **Authorization** permissions that can manage custom and 
 4. Select **Create custom role**.
 5. Enter the Role name and description.
 6. Select **Next** and choose the **Configuration** option.
-7. On the Configuration flyout, **Select custom permissions** and under **Authorization** choose **Select all permissions**.
+7. On the Configuration flyout, choose **Select custom permissions** and under **Authorization** choose **Select all permissions**.
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-authorization-role.png" alt-text="Screenshot of the Permissions and roles page" lightbox="../../media/defender/m365-defender-rbac-authorization-role.png":::
 
@@ -99,6 +99,9 @@ To create a role  with **Authorization** permissions that can manage custom and 
 10. Under **data sources**, choose the data sources the assigned users will have Authorization permission for.
 11. In **Assigned users and groups** – choose the Azure Active Directory user groups or individual users to assign the role to, and select **Add**.
 12. Select **Next** to review and finish creating the role and then select **Submit**.
+
+>[!Note]
+>For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new or imported roles, you’ll need to activate the new Microsoft 365 Defender RBAC model.
 
 ## Next steps
 

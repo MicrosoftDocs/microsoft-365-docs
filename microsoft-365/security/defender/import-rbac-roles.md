@@ -32,38 +32,39 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Import roles (migrate) to Microsoft 365 Defender RBAC from individual RBAC models
+## Import roles to Microsoft 365 Defender RBAC from individual RBAC models
 
 You can import existing roles that are maintained as part of the individual products (for example, Microsoft Defender for Endpoint) to the Microsoft 365 Defender RBAC model.
 
 Importing roles will migrate existing data (permissions, assignments) and will maintain full parity with the Microsoft 365 Defender RBAC model.
 
-*Note: the Microsoft 365 Defender RBAC model is more granular than the individual RBAC models. Once roles migrated, you will be able modifying imported roles and change level of permissions as needed.*
+>[!Note]
+> The Microsoft 365 Defender RBAC model is more granular than the individual RBAC models. Once roles migrated, you will be able modifying imported roles and change level of permissions as needed.
 
-1.  In **Permissions and roles,** click **Import roles.**
+The following steps guide you on how to import roles into Microsoft 365 Defender RBAC.
 
-<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image10.png" style="width:6.5in;height:1.4375in" />
+1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as global administrator or security administrator.
+2. In the navigation pane, select **Permissions**.
+3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
+4. Select **Import role**.
 
-2.  Choose the individual products from where you want to import your roles and click **Next**.  
+    :::image type="content" source="../../media/defender/m365-defender-import-workloads.png.png" alt-text="Screenshot of the import workloads page page" lightbox="../../media/defender/m365-defender-import-workloads.png":::
 
-> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image11.png" style="width:6.5in;height:1.66042in" />
+5. Select the products you want to import roles from.
+6. Select **Next**. to choose the roles to import. You can choose all roles or select a few roles from the list. You can always repeat the import action and to import other roles at a later date.
+7. Review the roles you want to import and select **Submit**.
+8. A confirmation message appears and at this point you select **Done**.  
 
-3.  You can choose all roles or select a few roles from the list. You can always repeat the import action and choose other roles that were not selected. 
+Now that you have imported your roles you will be able to [View and edit roles](edit-delete-rbac-roles.md) and Activate the workloads.
 
-<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image12.png" style="width:6.5in;height:1.57639in" />
+For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new or imported roles, you’ll need to activate the new Microsoft 365 Defender RBAC model. For more information, see [Activate the workloads](activate-defender-rbac.md).
 
-4.  Review the roles to make sure you have selected all the roles you want to import and then click Submit.
+Imported roles appear in the **Permissions and roles** list together with any custom roles you might have created. All imported roles will be marked as **Imported** in the description. Once you edit a imported role it will no longer be marked as **Imported**.
 
->  
+>[!Note]
+> You can import roles as frequently as required. After you edit an imported role, the changes will not affect the original role where it was imported from. This means you have the option to delete an imported role and re-import the original role, if required. If you import the same role twice you will create a duplicate role.
 
-5.  A confirmation message is displayed. Click **Done**.  
+## Next steps
 
-> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image13.png" style="width:6.5in;height:1.4125in" />
-
- 
-
-Imported roles appear in the **Permissions and roles** list together with any custom roles you might have created. All imported roles will be marked as **Imported** until they are edited. 
-
-<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image14.png" style="width:6.78989in;height:1.92308in" /> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image13.png" style="width:6.5in;height:1.4125in" />
-
-*Note: You can import roles as frequently as required. After you edit an imported role, that changes will not affect the original role where it was imported from. You can always delete the role which was imported to Microsoft 365 Defender RBAC and re-import it if needed. By importing the same role twice, if not deleted first, you will create a duplicate role.*
+- [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+- [Edit or delete roles](edit-delete-rbac-roles.md)
