@@ -66,7 +66,7 @@ which correspond with the amounts shown in the **Summary** section on page 1.
 
 At the top of page one of your invoice is the **Summary** section.
 
-:::image type="content" source="../../media/volume-licensing-invoices/VLInvoice-InvoiceSummary.png" alt-text="The Summary section on page one of the invoice.":::
+:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-invoicesummary.png" alt-text="The Summary section on page one of the invoice.":::
 
 The following table explains the terms in the **Summary** section of your invoice.
 
@@ -85,7 +85,7 @@ The following table explains the terms in the **Summary** section of your invoic
 
 The addresses shown on your invoice might be different, depending on the size and configuration of your organization.
 
-:::image type="content" source="../../media/volume-licensing-invoices/VLInvoice-Addresses.png" alt-text="he Addresses section of the invoice.":::
+:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-addresses.png" alt-text="he Addresses section of the invoice.":::
 
 The following table explains the terms for the addresses section of your invoice.
 
@@ -102,7 +102,7 @@ The **Billing Summary** section gives the breakdown of the total amount due.
 
 Total=Charges\-Commitment Usage (if applicable)+Sales Tax
 
-:::image type="content" source="../../media/volume-licensing-invoices/VLInvoice-BillingSummary.png" alt-text="The Billing Summary section of the invoice that explains how the total amount due is calculated.":::
+:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-billingsummary.png" alt-text="The Billing Summary section of the invoice that explains how the total amount due is calculated.":::
 
 ### Payment Instructions
 
@@ -111,14 +111,14 @@ The **PAYMENT INSTRUCTIONS** section contains the account information you need t
 > [!IMPORTANT]
 > Don't mail a physical check to the Microsoft address shown on your invoice.
 
-:::image type="content" source="../../media/volume-licensing-invoices/VLInvoice-PaymentInstructions.png" alt-text="The Payment Instructions section of the invoice that contains account information for where to send your wire transfer or ACH payment.":::
+:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-paymentinstructions.png" alt-text="The Payment Instructions section of the invoice that contains account information for where to send your wire transfer or ACH payment.":::
 
 ### Billing Details By Product
 
 Page two lists billing details by product, including unit price, quantity, commitment usage (if applicable), net charge, tax rate, tax
 amount, and total corresponding to each usage charge.
 
-:::image type="content" source="../../media/volume-licensing-invoices/VLInvoice-BillingDetailsByProduct.png" alt-text="The Billing Details By Product section on page 2 of the invoice.":::
+:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-billingdetailsbyproduct.png" alt-text="The Billing Details By Product section on page 2 of the invoice.":::
 
 ## Overview of the invoice recon file
 
