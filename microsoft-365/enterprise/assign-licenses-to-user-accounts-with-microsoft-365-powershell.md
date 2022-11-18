@@ -165,7 +165,7 @@ $addLicenses = @(
 Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
-This example updates a user with **SPE_E5** (Microsoft 365 E5) and turns off the Sway and Forms service plans, while leaving the user's existing disabled plans in all other subscriptions in their current state:
+This example updates a user with **SPE_E5** (Microsoft 365 E5) and turns off the Sway and Forms service plans while leaving the user's existing disabled plans in all other subscriptions in their current state:
 
 ```powershell
 $userLicense = Get-MgUserLicenseDetail -UserId belinda@litwareinc.com
