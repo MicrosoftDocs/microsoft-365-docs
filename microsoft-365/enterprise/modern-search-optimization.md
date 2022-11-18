@@ -54,10 +54,6 @@ Possible results include:
 
 If the **Search Requests to SharePoint** result appears in the **Attention required or Improvement Opportunities** sections, you can click the result for details, including the total number of search requests on the page and a list of the originators of these search requests.
 
-|**Attention required**|**Improvement opportunities**|
-|:-----|:-----|
-|![Page Diagnostics attention required notification.](../media/modern-portal-optimization/pagediag-attention-required.png)|![Page Diagnostics improvement opportunities notification.](../media/modern-portal-optimization/pagediag-improvement-opportunities.png)
-
 ## Remediate performance issues related to too many search requests on a page
 
 If a page contains too many search requests, you can use the list of URLs in the **Search Requests to SharePoint** results to determine whether there are any repeated search calls and what web parts the search requests are coming from.
@@ -70,18 +66,18 @@ You can enable group-level caching of search requests on certain web parts, such
 
 1. Go to the site page that contains an Events or Highlighted Content web part and select **Edit**.
 
-2. Select the Events or Highlighted Content web part and then select **Edit web part** ![Edit web part icon](../media/modern-portal-optimization/edit-web-part-icon.png). 
+2. Select the Events or Highlighted Content web part and then select **Edit web part** ![Screenshot of the edit web part icon.](../media/modern-portal-optimization/edit-web-part-icon.png). 
 
 3. In the web part settings pane, select the **Enable caching for group** setting. 
 
 4. Specify the security group(s) by entering a group name or email. The search results will be cached for all users who belong to the same security group(s).
 
-![Preview of the enable caching for group option](../media/modern-portal-optimization/enable-caching-for-group.png)
+![Screenshot that shows the enable caching for group option.](../media/modern-portal-optimization/enable-caching-for-group.png)
 
 5. Republish your SharePoint site page.
 
->![NOTE]
->Please see the articles on [Events](https://support.microsoft.com/office/5fe4da93-5fa9-4695-b1ee-b0ae4c981909) and [Highlighted Content](https://support.microsoft.com/office/e34199b0-ff1a-47fb-8f4d-dbcaed329efd) web parts for more information. 
+>[!NOTE]
+>Please see the articles on [Events](https://support.microsoft.com/office/5fe4da93-5fa9-4695-b1ee-b0ae4c981909) and [Highlighted Content](https://support.microsoft.com/office/e34199b0-ff1a-47fb-8f4d-dbcaed329efd) web parts for more information.
 
 When you have configured the web part to use caching, it will first look in the cache for existing search results that match the query and the security group(s). If it doesn't find any search results in the cache, it will look in the search index.
 
