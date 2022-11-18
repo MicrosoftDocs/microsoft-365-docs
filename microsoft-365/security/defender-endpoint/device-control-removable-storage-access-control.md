@@ -54,7 +54,7 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 
 - **4.18.2205 or later**: Expand the default enforcement to **Printer**. If you set it to **Deny**, it will block Printer as well, so if you only want to manage storage, make sure to create a custom policy to allow Printer
 
-- **4.18.2207 or later**: Add **File** support, the common use case can be: block people from Read/Write/Execute access specific file on removable storage; add **Network** and **VPN Connection** support, the common use case can be: block people from access removable storage when the machine isn't connecting corporate network. 
+- **4.18.2207 or later**: Add **File** support, the common use case can be: block people from Read/Write/Execute access specific file on removable storage; add **Network** and **VPN Connection** support, the common use case can be: block people from access removable storage when the machine isn't connecting corporate network.
 
 :::image type="content" source="images/powershell.png" alt-text="Screenshot of the PowerShell interface" lightbox="images/powershell.png":::
 
@@ -67,12 +67,14 @@ The Removable Storage Access Control includes Removable storage group creation a
 
 - Removable storage group allows you to create group. For example, authorized USB group or encrypted USB group.
 - Access policy rule allows you to create policy to restrict each removable storage group. For example, only allow authorized user to Write access-authorized USB group.
-- To block a specific removable storage class but allow specific media, you can use ‘`IncludedIdList` a group through `PrimaryId` and `ExcludedIDList` a group through `DeviceId`\/`HardwareId`/etc.`  For more information, see [Deploy Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri).
+- To block a specific removable storage class but allow specific media, you can use `IncludedIdList` a group through `PrimaryId` and `ExcludedIDList` a group through `DeviceId/HardwareId/etc.` For more information, see [Deploy Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri).
 
 Here are the properties you can use when you create the group and policy XML files.
 
 ### Group
+
 Group includes following types:
+
 - Device: if there's an explicit type setting, this setting is the default, including removable storage and Printer.
 - Network
 - VPN Connection
