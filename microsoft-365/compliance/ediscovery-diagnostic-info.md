@@ -88,7 +88,7 @@ The **Settings** tab in an eDiscovery (Premium) case lets you quickly copy the d
 
 4. On the flyout page, click **Actions** > **Copy support information** to copy the information to the clipboard.
 
-5. Open a text file (in Notepad) and then paste the information in the text file.
+5. Open a text file (in Notepad) and then paste the information into the text file.
 
 6. Save the text file and name it something like `eDP Diagnostic Info YYYY.MM.DD` (for example, `eDP Diagnostic Info 2020.11.03`).
 
