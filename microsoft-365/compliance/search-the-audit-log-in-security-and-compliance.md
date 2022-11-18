@@ -87,9 +87,9 @@ Be sure to read the following items before you start searching the audit log.
 
   The value of `True` for the *UnifiedAuditLogIngestionEnabled* property indicates that audit log search is turned on. For more information, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
-- You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
+- You have to be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online to search or export the audit log. By default, these roles are assigned to the *Compliance Management* and *Organization Management* role groups on the **Permissions** page in the Exchange admin center. Global administrators in Microsoft 365 are automatically added as members of the *Organization Management* role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the *View-Only Audit Logs* or *Audit Logs* role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
-  > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the compliance portal, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
+  > If you assign a user the *View-Only Audit Logs* or *Audit Logs* role on the **Permissions** page in the compliance portal, they won't be able to search or export the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
 
 - When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. The length of time that an audit record is retained (and searchable in the audit log) depends on your Office 365 or Microsoft 365 Enterprise subscription, and specifically the type of the license that is assigned to specific users.
 
@@ -224,7 +224,7 @@ You can view more details about an event by clicking the event record in the lis
 
 ### Step 3: Export the search results to a file
 
-You can export the results of an audit log search to a comma-separated value (CSV) file on your local computer. You can open this file in Microsoft Excel and use features such as search, sorting, filtering, and splitting a single column (that contains multiple properties) into multiple columns.
+You can export the results of an audit log search to a comma-separated value (CSV) file on your local computer. Admins and members of investigation teams must be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online to export the audit log. You can open this file in Microsoft Excel and use features such as search, sorting, filtering, and splitting a single column (that contains multiple properties) into multiple columns.
 
 1. Run an audit log search, and then revise the search criteria until you have the desired results.
 
@@ -1047,7 +1047,7 @@ The following table lists the activities a disposition reviewer took when an ite
 
 ### Communication compliance activities
 
-The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about communication compliance in Microsoft 365](communication-compliance.md).
+The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about communication compliance](communication-compliance.md).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
