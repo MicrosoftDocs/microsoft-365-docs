@@ -55,7 +55,7 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
     - Select all read and manage permissions – assigns all permissions included in this group as read-only and manage.
     - Choose custom permissions – assign the role with specific permissions.
 
-   :::image type="content" source="../../media/defender/m365-defender-rbac-permissions.png" alt-text="Screenshot of the permissions screen" lightbox="../../media/defender/m365-defender-rbac-permissions.png":::
+   :::image type="content" source="../../media/defender/m365-defender-rbac-permissions-flyout.png" alt-text="Screenshot of the permissions flyout screen" lightbox="../../media/defender/m365-defender-rbac-permissions-flyout.png":::
 
     >[!Note]
     > If all read-only or all read and manage permissions are assigned, any new permissions added to this group in the future will be automatically assigned the same permissions.
