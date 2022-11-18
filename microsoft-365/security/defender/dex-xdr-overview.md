@@ -29,6 +29,8 @@ search.appverid: met150
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
+
 The Microsoft Defender Experts for XDR (Defender Experts for XDR) preview is a managed detection and response service that can help your security operations centers (SOCs) focus and accurately respond to incidents that matter. It provides extended detection and response for customers who use Defender workloads such as Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Azure Active Directory (Azure AD).
 
 Defender Experts for XDR augments your SOC with a combination of automation and human expertise to improve your security posture. With deep product expertise powered by threat intelligence, we’re uniquely positioned to help you:
