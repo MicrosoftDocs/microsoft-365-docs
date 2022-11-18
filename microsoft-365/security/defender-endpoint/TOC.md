@@ -249,13 +249,14 @@
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
+#### [Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md)
 #### [Enable Corelight data integration](corelight-integration.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
 ### [Device inventory]()
 #### [Device inventory](machines-view-overview.md)
 #### [Exclude devices](exclude-devices.md)
-#### [Device timeline event flags](device-timeline-event-flag.md)
+#### [Device timeline](device-timeline-event-flag.md)
 #### [Manage device group and tags](machine-tags.md)
 
 ### [Network devices](network-devices.md)
@@ -499,13 +500,6 @@
 ## [Endpoint Attack Notifications](endpoint-attack-notifications.md)
 
 ### [Experts on Demand](experts-on-demand.md)
-
-## [Enterprise IoT security]()
-
-### [Securing IoT devices in the enterprise]()
-### [Onboard an Enterprise IoT plan on your Azure subscription]()
-### [Onboard Enterprise IoT sensors]()
-### [Manage Enterprise IoT plans]()
 
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
