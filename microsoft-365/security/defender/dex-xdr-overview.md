@@ -64,3 +64,7 @@ To use Defender Experts for XDR services for the following eligible products, yo
 This service is available worldwide for our customers in our commercial public clouds. It's currently not available to customers in government and sovereign clouds.
 
 Participation in Defender Experts for XDR preview is currently not available to everyone. If you're interested to learn more, please reach out to your Microsoft account team.
+
+## Go to the next step
+
+[Get started](get-started-xdr.md)
