@@ -53,9 +53,11 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
 7. Select a permission group (for example, Security posture), and then review the permissions available. You can choose to assign the following different levels of permissions:
     - Select all read-only permissions – assigns all permissions included in this group as read-only.
     - Select all read and manage permissions – assigns all permissions included in this group as read-only and manage.
-    - Choose custom permissions – assign the role with specific permissions.
+    - Select custom permissions – assign the role with specific permissions.
 
    :::image type="content" source="../../media/defender/m365-defender-rbac-permissions-flyout.png" alt-text="Screenshot of the permissions flyout screen" lightbox="../../media/defender/m365-defender-rbac-permissions-flyout.png":::
+
+For more information on the RBAC custom permissions, see [About RBAC custom permissions](custom-permissions-details.md)
 
     >[!Note]
     > If all read-only or all read and manage permissions are assigned, any new permissions added to this group in the future will be automatically assigned the same permissions.
@@ -64,7 +66,7 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
 
 8. Once you have selected your permissions, select **Apply** > **Next** to assign users and data sources.
 9. Select **Add assignments** and Enter the Assignment name.
-10. Under **data sources**, choose if the assigned users will have the selected permissions across all the available products, or only to specific products:
+10. Under **data sources**, choose if the assigned users will have the selected permissions across all the available products, or only for specific products:
 
      :::image type="content" source="../../media/defender/m365-defender-rbac-assignments.png" alt-text="Screenshot of the assignments screen" lightbox="../../media/defender/m365-defender-rbac-assignments.png":::
 
@@ -94,7 +96,7 @@ To create a role  with **Authorization** permissions that can manage custom and 
 
 8. select **Apply** > **Next** to assign users and data sources.
 9. Select **Add assignments** and Enter the Assignment name.
-10. Under **data sources**, choose the data sources the assigned users will have Authorization permissions for.
+10. Under **data sources**, choose the data sources the assigned users will have Authorization permission for.
 11. In **Assigned users and groups** – choose the Azure Active Directory user groups or individual users to assign the role to, and select **Add**.
 12. Select **Next** to review and finish creating the role and then select **Submit**.
 

@@ -418,7 +418,7 @@
                 href: edit-delete-rbac-roles.md
               - name: Compare roles
                 href: compare-rbac-roles.md
-              - name: About rbac custom permission
+              - name: About RBAC custom permission
                 href: custom-permissions-details.md
       - name: Portal settings
         items: 
