@@ -406,7 +406,7 @@
               href: custom-roles.md
             - name: Manage permissions with Microsoft 365 Defender RBAC
               items: 
-              - name: What is Microsoft 365 Defender RBAC
+              - name: Microsoft 365 Defender RBAC
                 href: manage-rbac.md
               - name: Create custom roles 
                 href: create-custom-rbac-roles.md

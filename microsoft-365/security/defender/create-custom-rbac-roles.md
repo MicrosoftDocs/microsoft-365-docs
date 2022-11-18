@@ -100,7 +100,7 @@ To create a role  with **Authorization** permissions that can manage custom and 
 5. Enter the Role name and description
 6. Select **Next** and choose the **Configuration** option
 
-    :::image type="content" source="../../media/defender/m365-defender-rbac-authorization-role.png" alt-text="Screenshot of the Permissions and roles page" lightbox="../../media/defender/ m365-defender-rbac-authorization-role.png":::
+    :::image type="content" source="../../media/defender/m365-defender-rbac-authorization-role.png" alt-text="Screenshot of the Permissions and roles page" lightbox="../../media/defender/m365-defender-rbac-authorization-role.png":::
 
 7. On the Configuration flyout, **Select custom permissions** and under **Authorization** choose **Select all permissions**
 8. Select **Apply** > **Next** to assign this role to users and user group in your organization
