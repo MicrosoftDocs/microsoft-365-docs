@@ -81,7 +81,7 @@ You may want to add a person to your staff list in Bookings without making them 
     Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
     ```
     
-    By default, the mailbox gets automatically mapped to outlook. If you donot want the booking mailbox to show in users outlook, assign full access with the following commands:
+    By default, the mailbox gets automatically mapped to Outlook. If you do not want the booking mailbox to appear in the user's Outlook, assign full access with the following commands:
     
      ```powershell 
     Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false -AutoMapping:$false
