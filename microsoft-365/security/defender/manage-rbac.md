@@ -44,10 +44,10 @@ Centralized permissions management is supported for the following solutions:
 |:-------|:-----|:-------|
 |Microsoft Defender for Endpoint | Full support for all endpoint data and actions. All roles are compatible with the device group's scope as defined on the device groups page. |
 | Microsoft Defender for Office 365 | Support for all scenarios that were controlled by <strong>Exchange Online Protection roles</strong> (EOP), configured in the Office 365 Security &amp; Compliance Center (protection.office.com)|
-| Microsoft for Identity | Full support for all identity data and actions. Note that Defender for Identity experiences will also adhere to permissions granted from portal.cloudapsecurity.com. [Learn more](https://go.microsoft.com/fwlink/?linkid=2202729)|
+| Microsoft for Identity | Full support for all identity data and actions.
 
 >[!Note]
-> Scenarios controlled by **Exchange Online** roles (EXO) are not changed and will still be managed in [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com/).
+> Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses.
 
 >[!Note]
 > This offering isn't currently for available for Microsoft Defender for CloudApps
@@ -60,13 +60,13 @@ This section provides useful information as well as details on accounts you need
 
 You need to be a global administrator or security administrator in Azure Active Directory to gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
 
-Once you have navigated to this page, you can create a custom role that can manage custom and built in roles. This will remove the need of Azure Active Directory global roles to manage permissions.
+Once you have navigated to this page, you can create a custom role that can manage custom and built in roles. This will remove the need for Azure Active Directory global roles to manage permissions.
 
 The Microsoft 365 Defender security portal will continue to respect existing Azure Active Directory global roles when you activate the Microsoft 365 Defender RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
 
-## Migration of existing permissions
+### Migration of existing permissions
 
-The Microsoft 365 Defender RBAC model provides easy migration of the existing permissions in the individual supported RBAC models to the new RBAC model.
+The new Microsoft 365 Defender RBAC model provides easy migration of the existing permissions in the individual supported RBAC models to the new RBAC model.
 
 All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions align, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md).
 

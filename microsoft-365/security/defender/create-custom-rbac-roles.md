@@ -86,7 +86,7 @@ For example, if you created a role with ‘Security operations - read only permi
 
 12. Select **Next** to review and finish creating the role and then select **Submit**.
 
-## Create a role that can manage custom and built in roles
+## Create a role to manage custom and built in roles
 
 To create a role  with **Authorization** permissions that can manage custom and built in roles:
 
