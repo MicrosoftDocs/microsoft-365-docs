@@ -21,6 +21,10 @@ ms.topic: conceptual
 search.appverid: met150
 ---
 
+
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
+
+
 # Frequently asked questions
 
 1. **How is Defender Experts for XDR different from Defender Experts for Hunting?** Defender Experts for Hunting provides threat hunting service to proactively find threats. This service is meant for customers with a robust security operations center and wants that deep expertise in hunting to expose advanced threats. 
