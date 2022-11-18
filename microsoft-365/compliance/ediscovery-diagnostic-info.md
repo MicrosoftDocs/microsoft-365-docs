@@ -76,7 +76,7 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 ## Collect diagnostic information for eDiscovery (Premium)
 
-Collect Case Information:
+### Collect case information
 
 The **Settings** tab in an eDiscovery (Premium) case lets you quickly copy the diagnostic information for the case. The diagnostic information is saved to the clipboard so you can paste it to a text file and send to Microsoft Support.
 
