@@ -128,7 +128,7 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Continuous**—runs continuously, checking data from events as they are collected and processed in near real-time
 
 >[!NOTE]
->If you choose the continuous frequency, make sure that the query references one table only and uses an operator from the [list of supported KQL operators](~/azure/azure-monitor/essentials/data-collection-transformations-structure.md#supported-kql-features). You cannot use unions or joins. The `externaldata` operator is not supported.
+>If you choose the continuous frequency, make sure that the query references one table only and uses an operator from the [list of supported KQL operators](/azure/azure-monitor/essentials/data-collection-transformations-structure.md#supported-kql-features). You cannot use unions or joins. The `externaldata` operator is not supported.
 
 When you edit a rule, it will run with the applied changes in the next run time scheduled according to the frequency you set. The rule frequency is based on the event timestamp and not the ingestion time.
 
