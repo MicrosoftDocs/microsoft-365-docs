@@ -30,9 +30,7 @@ search.appverid: met150
 
 | Questions | Answers |
 |---------|---------|
-| **How is Defender Experts for XDR different from Defender Experts for Hunting?** | Defender Experts for Hunting provides threat hunting service to proactively find threats. This service is meant for customers with a robust security operations center and wants that deep expertise in hunting to expose advanced threats. 
-
-Defender Experts for XDR provide end-to-end security operations capabilities to monitor, investigate and respond to security alerts. This service is meant for customers with constrained security operations centers that are overburdened with alert volume, in need of skilled experts or both. Defender Experts for XDR also includes the proactive threat hunting offered by Defender Experts for Hunting. |
+| **How is Defender Experts for XDR different from Defender Experts for Hunting?** | Defender Experts for Hunting provides threat hunting service to proactively find threats. This service is meant for customers with a robust security operations center and wants that deep expertise in hunting to expose advanced threats. Defender Experts for XDR provide end-to-end security operations capabilities to monitor, investigate and respond to security alerts. This service is meant for customers with constrained security operations centers that are overburdened with alert volume, in need of skilled experts or both. Defender Experts for XDR also includes the proactive threat hunting offered by Defender Experts for Hunting. |
 | **What products does Defender Experts for XDR operate on?** | See the Prerequisites section for details. |
 | **Is there a minimum criteria or size requirements to get Defender Experts for XDR?** | Not in preview. We'll evaluate and provide these requirements as part of our general availability. |
 | **Does Defender Experts for XDR replace by Security Operations Center (SOC) team?** | No. Defender Experts for XDR are meant to augment your SOC team reducing their workload and collaborating with them to protect your organization from threat actors. But we don't replace your SOC team or their processes. |
