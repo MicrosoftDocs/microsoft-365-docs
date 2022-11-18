@@ -20,10 +20,11 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ---
+**Applies to:**
 
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
-
 
 # Frequently asked questions
 
