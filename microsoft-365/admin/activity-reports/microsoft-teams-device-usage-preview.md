@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 admin center Teams app usage reports"
+title: "Microsoft 365 admin center Teams device usage reports"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
@@ -16,13 +16,12 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
-description: "Gain insights into the Microsoft Teams apps used in your organization by getting the Microsoft Teams app usage report from Microsoft 365 Reports."
+description: "Gain insights into the devices on which Microsoft Teams apps are being used in your organization by getting the Microsoft Teams device usage report from Microsoft 365 Reports."
 ---
 
 # Microsoft 365 Reports in the admin center - Microsoft Teams device usage
