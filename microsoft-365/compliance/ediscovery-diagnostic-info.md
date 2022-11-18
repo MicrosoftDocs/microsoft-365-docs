@@ -97,9 +97,9 @@ After reviewing the file and redacting sensitive information, send it to the Mic
 ### Collect job information
 
 1. While in the case, select the **Jobs** tab. 
-2. Scroll down to the Job that faied and click on it to open the Job Information screen.
-3. Click the button **Copy Support Information** to copy the Job diagnostics information to the clipboard.
-4. Open a text file (in Notepad) and then paste the information in the text file.
+2. Scroll down to the Job that failed and select it to open the **Job Information** screen.
+3. Select **Copy Support Information** to copy the Job diagnostics information to the clipboard.
+4. Open a text file (in Notepad) and then paste the information into the text file.
 5. Save the text file and name it something like `eDP Job Diagnostic Info YYYY.MM.DD` (for example, `eDP Diagnostic Info 2020.11.03`).
 6. After reviewing the file and redacting sensitive information, send it to the Microsoft Support engineer working on your case.
 
