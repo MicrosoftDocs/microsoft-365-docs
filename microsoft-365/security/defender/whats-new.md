@@ -41,7 +41,7 @@ For more information on what's new with other Microsoft Defender security produc
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
 
-##November 2022
+## November 2022
 - (Preview) [Continuous frequency](custom-detection-rules.md) is now available for public preview in advanced hunting custom detections. Continuous frequency checks data from events as they are collected and processed in near real-time.
 
 ## August 2022
