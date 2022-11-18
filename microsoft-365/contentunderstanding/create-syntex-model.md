@@ -50,7 +50,7 @@ On the **Options for model creation** page, there are two sections:
 
 The **Train a custom model** section shows the types of custom models you can create.
 
-![Screenshot of the Build a custom model section on the Options for model creation page.](../media/content-understanding/build-a-custom-model-section.png) 
+![Screenshot of the Train a custom model section on the Options for model creation page.](../media/content-understanding/build-a-custom-model-section.png) 
 
 - **Teaching method** – Creates an [unstructured document processing model](document-understanding-overview.md).
 
