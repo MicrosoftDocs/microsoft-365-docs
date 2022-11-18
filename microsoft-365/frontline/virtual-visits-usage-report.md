@@ -15,6 +15,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
+  - tier2
 description: Learn how to use the Virtual Visits usage report in the Microsoft Teams admin center to get an overview of virtual appointment activity in your organization.
 appliesto: 
   - Microsoft Teams
