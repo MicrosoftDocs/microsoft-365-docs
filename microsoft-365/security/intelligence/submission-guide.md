@@ -94,3 +94,7 @@ Processing submissions take dedicated analyst resource. Because we regularly rec
 * Submissions flagged as high priority by SAID holders are given immediate attention.
 
 Your submission is immediately scanned by our systems to give you the latest determination even before an analyst starts handling your case. Note that the same file may have already been processed by an analyst. To check for updates to the determination, select rescan on the submission details page.
+
+## See also
+
+[Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](../defender-endpoint/defender-endpoint-antivirus-exclusions.md)
