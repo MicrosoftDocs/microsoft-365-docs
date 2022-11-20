@@ -32,31 +32,28 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+In Microsoft 365 Defender role-based access control (RBAC), you can edit and delete roles that were created as custom roles or roles that were imported from Defender for Endpoint, Defender for Identity, or Defender for Office 365.
 
-## Edit and Delete roles
+## Edit roles
 
-You can edit and delete roles that were created as custom roles or roles that were imported from different workloads. 
+To edit roles in Microsoft 365 Defender RBAC:
 
-#### Edit Roles 
+1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as global administrator or security administrator.
+2. In the navigation pane, select **Permissions**.
+3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
+4. Select the role you want to edit. You can only edit one role at a time.
+5. Select the **Edit** button or select **Edit** from the action menu next to the role name. This opens a flyout pane where you can edit the role:
 
-1.  Select the role you want to edit and click **Edit** or click the Action menu next to the role name and select **Edit.**
+    :::image type="content" source="../../media/defender/m365-defender-rbac-edit-roles.png" alt-text="Screenshot of the activate workloads page" lightbox="../../media/defender/m365-defender-rbac-edit-roles.png":::
 
-<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image15.png" style="width:6.5in;height:1.82361in" />
+>[!Note]
+>After editing an imported role, the changes made in Microsoft 365 Defender RBAC will not be reflected back in the individual product RBAC model.
 
-2.  After editing an imported role, data and the changes made in Microsoft 365 Defender RBAC will not be reflected to the individual RBAC model. You will be able seeing the original role definition only there.
+## Delete Roles
 
-#### Delete Roles 
+To delete roles in Microsoft 365 Defender RBAC, select the role you want to delete and select **Delete roles** or click the action menu and select **Delete role**. Review the selected roles to be deleted and then click **Delete**.
 
-1.  Select the role you want to delete and then click **Delete** **roles** or click the Action menu and select **Delete role**.
+If the workload is active, by removing the role all assigned user permission will be deleted.
 
-<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image16.png" style="width:6.5in;height:1.82361in" />
-
-2.  Review the selected roles to be deleted and then click **Delete**.
-
-<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image17.png" style="width:2.34722in;height:1.54167in" /> 
-
- 
-
-3.  After deleting an imported role, that role will not be deleted from the individual RBAC model. If needed, you can import it again to the Microsoft 365 Defender RBAC list of roles.
-
-4.  If the workload is active, by removing the role all assigned permission to users will be deleted. 
+>[!Note]
+>After deleting an imported role, the role won't be deleted from the individual product RBAC model. If needed, you can re-import it to the Microsoft 365 Defender RBAC list of roles.
