@@ -44,7 +44,7 @@ To active the Microsoft 365 Defender RBAC model:
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as global administrator or security administrator.
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
-4. Select **Workload settings**. This brings you to the Microsoft 365 Defender settings page which can also be accessed by navigation to **Settings** > **Microsoft 365 Defender** > **Permissions and roles**.
+4. Select **Workload settings**. This brings you to the Microsoft 365 Defender settings page which can also be accessed by navigating to **Settings** > **Microsoft 365 Defender** > **Permissions and roles**.
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-activate-workloads.png" alt-text="Screenshot of the activate workloads page" lightbox="../../media/defender/m365-defender-rbac-activate-workloads.png":::
 
@@ -59,8 +59,6 @@ To active the Microsoft 365 Defender RBAC model:
 If needed, you can deactivate Microsoft 365 Defender RBAC and revert to the individual RBAC roles from Defender for Endpoint, Defender for Identity, and Defender for Office 365 (Exchange Online Protection).
 
 To Deactivate the workload, repeat the steps above and select the workloads you want to deactivate. The status will be set to **Not Active**.
-
-If you revert to the previous model, all roles that were created and edited within Microsoft 365 Defender RBAC will not be effective, and the status will change to inactive until you activate Microsoft 365 Defender RBAC again.
 
 If you deactivate this workload, the roles created and edited within Microsoft 365 Defender RBAC won't be effective and you'll return to using the previous permissions model. This will remove any access that users assigned these roles have. You can reactivate by coming back to Workload settings.
 
