@@ -21,7 +21,7 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Import roles (migrate) to Microsoft 365 Defender RBAC
+# Import roles to Microsoft 365 Defender RBAC
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -48,7 +48,7 @@ The following steps guide you on how to import roles into Microsoft 365 Defender
 3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 4. Select **Import role**.
 
-    :::image type="content" source="../../media/defender/m365-defender-import-workloads.png.png" alt-text="Screenshot of the import workloads page page" lightbox="../../media/defender/m365-defender-import-workloads.png":::
+    :::image type="content" source="../../media/defender/m365-defender-import-workloads.png" alt-text="Screenshot of the import workloads page" lightbox="../../media/defender/m365-defender-import-workloads.png":::
 
 5. Select the products you want to import roles from.
 6. Select **Next**. to choose the roles to import. You can choose all roles or select a few roles from the list. You can always repeat the import action and to import other roles at a later date.
