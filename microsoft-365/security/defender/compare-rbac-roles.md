@@ -74,10 +74,8 @@ To assist you in verifying parity between individual RBAC role definitions and y
 
 | Defender for Identity permission| Unified RBAC permission|
 |:-------|:-----|:-------|
-|MDI Admin|<p>Configuration\ security setting \read</p><p>Configuration\ security setting \manage</p><p>Configuration\ system setting \read</p><p>Configuration\ system setting \manage</p>
-<p>Security operations\security data\alerts\manage </p><p>Security operations\security data\read only </p><p>Configuration\authorization\manage Configuration\authorization\read</p>
-|MDI User|<p>Security operations\security data\read only </p><p>Configuration\ system setting \read</p><p>Configuration\ security setting \read</p><p>Security operations\security data\alerts\manage </p><p>Configuration\ security setting \manage</p><p>MDI Viewer</p><p>Security operations\security data\read only</p>
-<p>Configuration\ system setting \read</p><p>Configuration\ security setting \read</p>
+|MDI Admin|<p> - Configuration\security setting \read</p><p> - Configuration\ security setting \manage</p><p>Configuration\ system setting \read</p><p>Configuration\ system setting \manage</p><p>Security operations\security data\alerts\manage </p><p>Security operations\security data\read only </p><p>Configuration\authorization\manage Configuration\authorization\read</p>
+|MDI User|<p>Security operations\security data\read only </p><p>Configuration\ system setting \read</p><p>Configuration\ security setting \read</p><p>Security operations\security data\alerts\manage </p><p>Configuration\ security setting \manage</p><p>MDI Viewer</p><p>Security operations\security data\read only</p><p>Configuration\ system setting \read</p><p>Configuration\ security setting \read</p>
 
 >[!NOTE]
 > Defender for Identity experiences will also adhere to permissions granted from portal.cloudapsecurity.com. Learn more [here](https://go.microsoft.com/fwlink/?linkid=2202729)*
