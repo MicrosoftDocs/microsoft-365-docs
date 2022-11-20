@@ -51,7 +51,7 @@ The following steps guide you on how to import roles into Microsoft 365 Defender
 
     :::image type="content" source="../../media/defender/m365-defender-import-workloads.png" alt-text="Screenshot of the import workloads page" lightbox="../../media/defender/m365-defender-import-workloads.png":::
 
-6. Select **Next** to choose the roles to import. You can choose all roles or select a few roles from the list. You can always repeat the import action and to import other roles at a later date.
+6. Select **Next** to choose the roles to import. You can choose all roles or select specific roles from the list. You can always repeat the import action and import other roles at a later date.
 7. Review the roles you want to import and select **Submit**.
 8. A confirmation message appears and at this point you select **Done**.  
 
