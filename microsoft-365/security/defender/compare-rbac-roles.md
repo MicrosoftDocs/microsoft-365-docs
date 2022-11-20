@@ -747,3 +747,8 @@ Use this table to learn about the permissions assigned by default to each global
 </table>
 
 By activating the Microsoft 365 Defender RBAC model, users with Security Reader and Global Reader roles will have access to Defender for Endpoint data. 
+
+## Next steps
+
+- [Import existing RBAC roles](import-rbac-roles.md)
+- [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)

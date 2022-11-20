@@ -58,3 +58,8 @@ If the workload is active, by removing the role all assigned user permission wil
 
 >[!Note]
 >After deleting an imported role, the role won't be deleted from the individual product RBAC model. If needed, you can re-import it to the Microsoft 365 Defender RBAC list of roles.
+
+## Next steps
+
+- [Learn about RBAC permissions](custom-permissions-details.md)
+- [Compare existing RBAC roles to Microsoft 365 Defender RBAC roles](compare-rbac-roles.md)

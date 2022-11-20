@@ -21,7 +21,9 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Details of custom permissions in Microsoft 365 Defender role-based access control (RBAC)
+# Permissions in Microsoft 365 Defender role-based access control (RBAC)
+
+In Microsoft 365 Defender role-based access control (RBAC) you can select permissions from each permission group to customize a role.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +36,9 @@ search.appverid: met150
 
 ## Microsoft 365 Defender RBAC – custom permissions detailing
 
-## <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image20.png" style="width:2.46087in;height:3.40286in" />Security operations – Security data
+The following table lists the available permissions you can configure for your users based on the tasks they need to do:
+
+### Security operations – Security data
 
 | **Permission name**    | **Description**                                                                                                                         | **Level** |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------|
@@ -46,29 +50,32 @@ search.appverid: met150
 | Email quarantine       | View and release email from quarantine.                                                                                                 | Manage    |
 | Email advanced actions | Move or Delete email to the junk email folder, deleted items or inbox, including soft and hard delete of email.                         | Manage    |
 
-## 
-
-## Security operations – Raw data (Email & collaboration)
+### Security operations – Raw data (Email & collaboration)
 
 | **Permission name**   | **Description**                                                                                                                     | **Level** |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | Email message headers | View email and collaboration data in a hunting scenarios, including advanced hunting, threat explorer, campaigns, and email entity. | Read      |
 | Email content         | View and download email content and attachments.                                                                                    | Read      |
 
-## <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image21.png" style="width:2.46042in;height:3.402in" />Security posture – Posture management
+### Security posture – Posture management
 
-| **Permission name**          | **Description**                                                                                                                                                                          | **Level** |
-|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| **Permission name**   | **Description**                                                                                                                     | **Level** |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | Vulnerability management     | View threat and vulnerability management data for the following: software and software inventory, weaknesses, missing KBs, advanced hunting, security baselines assessment, and devices. | Read      |
 | Exception handling           | Create security recommendation exceptions and manage active exceptions in threat and vulnerability management.                                                                           | Manage    |
 | Remediation handling         | Create remediation tickets, submit new requests, and manage remediation activities in threat and vulnerability management.                                                               | Manage    |
 | Application handling         | Manage vulnerable applications and software, including blocking and unblocking them in threat and vulnerability management.                                                              | Manage    |
 | Security baseline assessment | Create and manage profiles so you can assess if your devices comply to security industry baselines.                                                                                      | Manage    |
 
-## <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender\media\image22.png" style="width:2.46035in;height:3.40191in" />Configuration
+### Configuration
 
 | **Permission name** | **Description**                                                                 | **Level**     |
 |---------------------|---------------------------------------------------------------------------------|---------------|
 | Authorization       | View or manage device groups, and custom and built-in roles.                    | Read / Manage |
 | Security settings   | View or manage general security settings for the Microsoft 365 Defender portal. | Read / Manage |
 | System settings     | View or manage general systems settings for the Microsoft 365 Defender portal.  | Read / Manage |
+
+## Next steps
+
+- [Create custom roles](create-custom-rbac-roles.md)
+- [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
