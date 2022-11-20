@@ -23,6 +23,8 @@ search.appverid: met150
 
 # Compare permissions with Microsoft 365 Defender role-based access control (RBAC)
 
+To assist you in verifying parity between individual RBAC role definitions and your new Microsoft 365 Defender RBAC roles, we’ve created a mapping table for each product.
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
@@ -31,8 +33,6 @@ search.appverid: met150
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
-
-To assist you in verifying parity between individual RBAC role definitions and your new Microsoft 365 Defender RBAC roles, we’ve created a mapping table for each product.
 
 ## Map Defender for Endpoint permissions to the Microsoft 365 Defender RBAC permissions
 
@@ -64,60 +64,11 @@ To assist you in verifying parity between individual RBAC role definitions and y
 |Preview|<p>Security operations\ Email &amp; collaboration raw data\ User email content\ read </p>|
 |Search and Purge|<p>Security operations\ security data\ Email advanced actions\ manage </p>|
 |View-Only Manage Alerts|Security operations\ security data basics\ read only|
-
-<p>Manage Alerts </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ alerts\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>View-only Audit Logs </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Audit Logs </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Quarantine </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data\ Email quarantine\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Role Management </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Configuration\ Authorization\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+|Manage Alerts|<p>Security operations\ security data basics\ read only</p><p>Security operations\ security data\ alerts\ manage </p>|
+|View-only Audit Logs|<p>Security operations\ security data basics\ read only</p>|
+|Audit Logs|<p>Security operations\ security data basics\ read only</p>|
+|Quarantine|<p>Security operations\ security data\ Email quarantine\ manage|
+|Role Management|Configuration\ Authorization\ manage|
 
 ## Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender RBAC permissions
 
