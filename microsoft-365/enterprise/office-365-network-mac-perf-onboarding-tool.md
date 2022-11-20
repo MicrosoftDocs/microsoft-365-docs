@@ -320,7 +320,7 @@ To view the information about the test results and telemetry, double-click and o
 Microsoft Support and Recovery Assistant creates 2 files:
 
 1. Network Connectivity Report (CSV)
-This report runs the raw JSON file against a rule engine to make sure defined thresholds are being met and if they are not met a &#8220;warning&#8221; or &#8220;error&#8221; is displayed in the output column of the CSV file. You can view the NetworkConnectivityReport.csv file to be informed about any detected issues or defects. Please see [What happens at each test step](https://learn.microsoft.com/Microsoft-365/Enterprise/office-365-network-mac-perf-onboarding-tool?view=o365-worldwide#what-happens-at-each-test-step) for details on each test and the thresholds for warnings.
+This report runs the raw JSON file against a rule engine to make sure defined thresholds are being met and if they are not met a &#8220;warning&#8221; or &#8220;error&#8221; is displayed in the output column of the CSV file. You can view the NetworkConnectivityReport.csv file to be informed about any detected issues or defects. Please see [What happens at each test step](office-365-network-mac-perf-onboarding-tool.md#what-happens-at-each-test-step) for details on each test and the thresholds for warnings.
 
 1. Network Connectivity Scan Report (JSON)
 This file provides the raw output test results from the command-line version of the Microsoft 365 network connectivity test tool (MicrosoftConnectivityTest.exe).
