@@ -56,19 +56,19 @@ To assist you in verifying parity between individual RBAC role definitions and y
 
 | Defender for Office (EOP) role group| Microsoft 365 Defender RBAC permission|
 |:-------|:-----|:-------|
-|Security Reader| Security operations\ security data basics\ read only<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read<p>Security operations\ security data\response\ manage<p>Configuration\System settings\ read only <p> Configuration\Security setting\ read only|
-|Global Reader|Security operations\ security data basics\ read only</p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read<p>Security operations\ security data\response\ manage</p>Configuration\System settings\ read only</p><p>Configuration\Security setting\ read only</p>
-|Security Admin| Security operations\ security data basics\ read only</p><p>Security operations\ security data\ alerts\ manage</p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p><p>Security operations\ security data\response\ manage </p><p>Security operations\ security data\ Email quarantine\ manage </p><p>Configuration\ Authorization\ read only </p><p>Configuration\System settings\ manage </p><p>Configuration\Security setting\ manage </p>
-|Organization Management|<p>Security operations\ security data basics\ read only</p><p>Security operations\ security data\ alerts\ manage </p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p><p>Security operations\ security data\response\ manage </p><p>Security operations\ security data\ Email advanced actions\ manage </p><p>Security operations\ security data\ Email quarantine\ manage </p><p>Configuration\ Authorization\ manage </p><p>Configuration\System settings\ manage </p><p>Configuration\Security setting\ manage </p>|
-|View-Only Recipients|<p>Security operations\ security data basics\ read only</p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>|
-|Preview|<p>Security operations\ Email &amp; collaboration raw data\ User email content\ read </p>|
-|Search and Purge|<p>Security operations\ security data\ Email advanced actions\ manage </p>|
-|View-Only Manage Alerts|Security operations\ security data basics\ read only|
-|Manage Alerts|<p>Security operations\ security data basics\ read only</p><p>Security operations\ security data\ alerts\ manage </p>|
-|View-only Audit Logs|<p>Security operations\ security data basics\ read only</p>|
-|Audit Logs|<p>Security operations\ security data basics\ read only</p>|
-|Quarantine|<p>Security operations\ security data\ Email quarantine\ manage|
-|Role Management|Configuration\ Authorization\ manage|
+|Security Reader|- Security operations\ security data basics\ read only<p> - Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read<p> - Security operations\ security data\response\ manage<p> - Configuration\System settings\ read only <p> - Configuration\Security setting\ read only|
+|Global Reader|- Security operations\ security data basics\ read only</p><p>- Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read<p> - Security operations\ security data\response\ manage</p> - Configuration\System settings\ read only</p><p>- Configuration\Security setting\ read only</p>
+|Security Admin| - Security operations\ security data basics\ read only</p><p> - Security operations\ security data\ alerts\ manage</p><p> - Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p><p> - Security operations\ security data\response\ manage </p><p> - Security operations\ security data\ Email quarantine\ manage </p><p> - Configuration\ Authorization\ read only </p><p> - Configuration\System settings\ manage </p><p> - Configuration\Security setting\ manage </p>
+|Organization Management|<p> - Security operations\ security data basics\ read only</p><p> - Security operations\ security data\ alerts\ manage </p><p> - Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p><p> - Security operations\ security data\response\ manage </p><p> - Security operations\ security data\ Email advanced actions\ manage </p><p> - Security operations\ security data\ Email quarantine\ manage </p><p> - Configuration\ Authorization\ manage </p><p> - Configuration\System settings\ manage </p><p> - Configuration\Security setting\ manage </p>|
+|View-Only Recipients|<p> - Security operations\ security data basics\ read only</p><p> - Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>|
+|Preview|<p> - Security operations\ Email &amp; collaboration raw data\ User email content\ read </p>|
+|Search and Purge|<p> - Security operations\ security data\ Email advanced actions\ manage </p>|
+|View-Only Manage Alerts| - Security operations\ security data basics\ read only|
+|Manage Alerts|<p> - Security operations\ security data basics\ read only</p><p>Security operations\ security data\ alerts\ manage </p>|
+|View-only Audit Logs|<p> - Security operations\ security data basics\ read only</p>|
+|Audit Logs|<p> - Security operations\ security data basics\ read only</p>|
+|Quarantine|<p> - Security operations\ security data\ Email quarantine\ manage|
+|Role Management| - Configuration\ Authorization\ manage|
 
 ## Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender RBAC permissions
 
