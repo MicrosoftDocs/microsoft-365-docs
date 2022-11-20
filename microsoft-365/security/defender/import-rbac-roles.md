@@ -1,5 +1,5 @@
 ---
-title: Import roles (migrate) to Microsoft 365 Defender RBAC 
+title: Import roles to Microsoft 365 Defender RBAC 
 description: Create custom Microsoft 365 Defender Security portal role-based access control (RBAC)
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Import roles (migrate) to Microsoft 365 Defender RBAC 
+# Import roles (migrate) to Microsoft 365 Defender RBAC
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,9 +34,9 @@ search.appverid: met150
 
 ## Import roles to Microsoft 365 Defender RBAC from individual RBAC models
 
-You can import existing roles that are maintained as part of the individual products (for example, Microsoft Defender for Endpoint) to the Microsoft 365 Defender RBAC model.
+You can import existing roles that are maintained as part of an individual products RBAC (for example, Microsoft Defender for Endpoint) to the Microsoft 365 Defender RBAC model.
 
-Importing roles will migrate existing data (permissions, assignments) and will maintain full parity with the Microsoft 365 Defender RBAC model.
+Importing roles will migrate and maintain the data for the roles in relation to their permissions and user assignments in the Microsoft 365 Defender RBAC model.
 
 >[!Note]
 > The Microsoft 365 Defender RBAC model is more granular than the individual RBAC models. Once roles migrated, you will be able modifying imported roles and change level of permissions as needed.
