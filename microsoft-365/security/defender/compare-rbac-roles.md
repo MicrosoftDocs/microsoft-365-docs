@@ -32,34 +32,31 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Map permissions to the Microsoft 365 Defender RBAC permissions
-
-To assist you in verifying parity between individual RBAC role definitions and your new Microsoft 365 Defender RBAC roles, we’ve created a mapping table for each product. 
+To assist you in verifying parity between individual RBAC role definitions and your new Microsoft 365 Defender RBAC roles, we’ve created a mapping table for each product.
 
 ## Map Defender for Endpoint permissions to the Microsoft 365 Defender RBAC permissions
 
 | Defender for Endpoint permission| Microsoft 365 Defender RBAC permission|
 |:-------|:-----|:-------|
 |View data - Security operations | Security operations\security data basics\read only |
-|View data - Threat and vulnerability management|Security posture\threat and vulnerability management\vulnerability management |
-|Alerts investigation | Security operations\security data\alerts\manage | Security operations\ security data\response\ manage |
+|View data - Threat and vulnerability management|Security posture\threat and vulnerability management\vulnerability management\read only |
+|Alerts investigation | Security operations\security data\alerts\manage|
+|Active remediation actions - Security operations | Security operations\ security data\response\manage |
 |Active remediation actions - Threat and vulnerability management - Exception handling |Security posture\threat and vulnerability management\exception handling\manage|
 |Active remediation actions - Threat and vulnerability management - Remediation handling | Security posture\threat and vulnerability management\remediation handling\manage |
 |Active remediation actions - Threat and vulnerability management - Application handling| Security posture\threat and vulnerability management\application handling\manage|
 |Vulnerability management – Manage security baselines assessment profiles| Security posture\threat and vulnerability management\Security baselines assessment\manage|
-|Live response capabilities|Security operations\basic live response\manage|Live response capabilities - advanced|Security operations\advanced live response\manage|
+|Live response capabilities|Security operations\basic live response\manage|
+|Live response capabilities - advanced|Security operations\advanced live response\manage|
 |Manage security settings in the Security Center |Configuration\security setting\manage |
 |Manage portal system settings |Configuration\system setting\manage |
-|Manage endpoint security settings in Microsoft Endpoint Manager* |Not supported - this permission is managed in the Microsoft Endpoint Management portal |
+|Manage endpoint security settings in Microsoft Endpoint Manager* |Not supported - this permission is managed in the Microsoft Endpoint Management portal|
 
 ## Map Defender for Office 365 (Exchange Online Protection) roles to the Microsoft 365 Defender RBAC permissions
 
 | Defender for Office (EOP) role group| Microsoft 365 Defender RBAC permission|
 |:-------|:-----|:-------|
-
-|Security Reader|</blockquote></td><td><ul><li><blockquote><p>Security operations\ security data basics\ read only</p></blockquote></li><li><blockquote><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p></blockquote></li><li><blockquote><p>Security operations\ security data\response\ manage </p></blockquote></li><li><blockquote>
-<p>Configuration\System settings\ read only  </p></blockquote></li>
-<li><blockquote><p>Configuration\Security setting\ read only </p></blockquote></li></ul></td></tr><tr class="even"><td><blockquote>
+|Security Reader|<p> Security operations\ security data basics\ read only<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read<p>Security operations\ security data\response\ manage<p>Configuration\System settings\ read only <p> Configuration\Security setting\ read only|
 |Global Reader|
 </blockquote></td>
 <td><ul>
@@ -246,8 +243,6 @@ To assist you in verifying parity between individual RBAC role definitions and y
 
 ## Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender RBAC permissions
 
-## 
-
 <table>
 <thead>
 <tr class="header">
@@ -327,9 +322,9 @@ To assist you in verifying parity between individual RBAC role definitions and y
 
 *Note: Defender for Identity experiences will also adhere to permissions granted from portal.cloudapsecurity.com. Learn more [here](https://go.microsoft.com/fwlink/?linkid=2202729)*
 
-## Azure Active Directory Global roles access 
+## Azure Active Directory Global roles access
 
-Users assigned with Azure AD global roles might also have access to the Microsoft 365 Defender portal. 
+Users assigned with Azure AD global roles might also have access to the Microsoft 365 Defender portal.
 
 Use this table to learn about the permissions assigned by default to each global Azure AD role. Only the Azure AD roles listed below grant access to any Defender for Endpoint, Defender for Office 365, Defender for Identity and Microsoft 365 Defender data or experiences.
 

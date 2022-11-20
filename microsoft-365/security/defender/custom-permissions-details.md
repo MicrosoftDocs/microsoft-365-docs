@@ -34,11 +34,13 @@ In Microsoft 365 Defender role-based access control (RBAC) you can select permis
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Microsoft 365 Defender RBAC – custom permissions detailing
+## Microsoft 365 Defender RBAC permission details
 
-The following table lists the available permissions you can configure for your users based on the tasks they need to do:
+The following table lists the permissions available to configure for your users based on the tasks they need to do:
 
 ### Security operations – Security data
+
+Permissions for managing day-to-day operations and responding to incidents and advisories.
 
 | **Permission name**    | **Description**                                                                                                                         | **Level** |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------|
@@ -59,6 +61,8 @@ The following table lists the available permissions you can configure for your u
 
 ### Security posture – Posture management
 
+Permissions for managing the organization's security posture and performing threat and vulnerability management.
+
 | **Permission name**   | **Description**                                                                                                                     | **Level** |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | Vulnerability management     | View threat and vulnerability management data for the following: software and software inventory, weaknesses, missing KBs, advanced hunting, security baselines assessment, and devices. | Read      |
@@ -68,6 +72,8 @@ The following table lists the available permissions you can configure for your u
 | Security baseline assessment | Create and manage profiles so you can assess if your devices comply to security industry baselines.                                                                                      | Manage    |
 
 ### Configuration
+
+Permissions to manages the security and system settings and to create and assign roles.
 
 | **Permission name** | **Description**                                                                 | **Level**     |
 |---------------------|---------------------------------------------------------------------------------|---------------|
