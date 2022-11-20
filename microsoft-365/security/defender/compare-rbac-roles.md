@@ -56,137 +56,15 @@ To assist you in verifying parity between individual RBAC role definitions and y
 
 | Defender for Office (EOP) role group| Microsoft 365 Defender RBAC permission|
 |:-------|:-----|:-------|
-|Security Reader|<p> Security operations\ security data basics\ read only<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read<p>Security operations\ security data\response\ manage<p>Configuration\System settings\ read only <p> Configuration\Security setting\ read only|
-|Global Reader|
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\System settings\ read only </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\Security setting\ read only </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Security Admin </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ alerts\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ Email quarantine\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ Authorization\ read only </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\System settings\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\Security setting\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Organization Management </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ alerts\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ Email advanced actions\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ Email quarantine\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ Authorization\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\System settings\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\Security setting\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>View-Only Recipients </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Preview </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ User email content\ read </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Search and Purge </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data\ Email advanced actions\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>View-Only Manage Alerts </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
+|Security Reader| Security operations\ security data basics\ read only<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read<p>Security operations\ security data\response\ manage<p>Configuration\System settings\ read only <p> Configuration\Security setting\ read only|
+|Global Reader|Security operations\ security data basics\ read only</p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read<p>Security operations\ security data\response\ manage</p>Configuration\System settings\ read only</p><p>Configuration\Security setting\ read only</p>
+|Security Admin| Security operations\ security data basics\ read only</p><p>Security operations\ security data\ alerts\ manage</p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p><p>Security operations\ security data\response\ manage </p><p>Security operations\ security data\ Email quarantine\ manage </p><p>Configuration\ Authorization\ read only </p><p>Configuration\System settings\ manage </p><p>Configuration\Security setting\ manage </p>
+|Organization Management|<p>Security operations\ security data basics\ read only</p><p>Security operations\ security data\ alerts\ manage </p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p><p>Security operations\ security data\response\ manage </p><p>Security operations\ security data\ Email advanced actions\ manage </p><p>Security operations\ security data\ Email quarantine\ manage </p><p>Configuration\ Authorization\ manage </p><p>Configuration\System settings\ manage </p><p>Configuration\Security setting\ manage </p>|
+|View-Only Recipients|<p>Security operations\ security data basics\ read only</p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>|
+|Preview|<p>Security operations\ Email &amp; collaboration raw data\ User email content\ read </p>|
+|Search and Purge|<p>Security operations\ security data\ Email advanced actions\ manage </p>|
+|View-Only Manage Alerts|Security operations\ security data basics\ read only|
+
 <p>Manage Alerts </p>
 </blockquote></td>
 <td><ul>
