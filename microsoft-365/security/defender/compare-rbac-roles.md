@@ -38,182 +38,29 @@ To assist you in verifying parity between individual RBAC role definitions and y
 
 ## Map Defender for Endpoint permissions to the Microsoft 365 Defender RBAC permissions
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Defender for Endpoint permission</strong> </th>
-<th><strong>Microsoft 365 Defender RBAC permission</strong> </th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><blockquote>
-<p>View data - Security operations </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\security data basics\read only</p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>View data - Threat and vulnerability management </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\vulnerability management\read only</p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Alerts investigation </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\security data\alerts\manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Active remediation actions - Security operations </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Active remediation actions - Threat and vulnerability management - Exception handling </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\exception handling\manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Active remediation actions - Threat and vulnerability management - Remediation handling </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\remediation handling\manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Active remediation actions - Threat and vulnerability management - Application handling </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\application handling\manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Threat and vulnerability management – Manage security baselines assessment profiles</p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\Security baselines assessment\manage</p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Live response capabilities - basic </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\basic live response\manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Live response capabilities - advanced </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\advanced live response\manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Manage security settings in the Security Center </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Configuration\security setting\manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Manage portal system settings </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Configuration\system setting\manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Manage endpoint security settings in Microsoft Endpoint Manager* </p>
-</blockquote></td>
-<td><blockquote>
-<p>Not supported</p>
-</blockquote></td>
-</tr>
-</tbody>
-</table>
-
-\* <u>Note</u>: for granting this permission, please access the Microsoft endpoint management portal
+| Defender for Endpoint permission| Microsoft 365 Defender RBAC permission|
+|:-------|:-----|:-------|
+|View data - Security operations | Security operations\security data basics\read only |
+|View data - Threat and vulnerability management|Security posture\threat and vulnerability management\vulnerability management |
+|Alerts investigation | Security operations\security data\alerts\manage | Security operations\ security data\response\ manage |
+|Active remediation actions - Threat and vulnerability management - Exception handling |Security posture\threat and vulnerability management\exception handling\manage|
+|Active remediation actions - Threat and vulnerability management - Remediation handling | Security posture\threat and vulnerability management\remediation handling\manage |
+|Active remediation actions - Threat and vulnerability management - Application handling| Security posture\threat and vulnerability management\application handling\manage|
+|Vulnerability management – Manage security baselines assessment profiles| Security posture\threat and vulnerability management\Security baselines assessment\manage|
+|Live response capabilities|Security operations\basic live response\manage|Live response capabilities - advanced|Security operations\advanced live response\manage|
+|Manage security settings in the Security Center |Configuration\security setting\manage |
+|Manage portal system settings |Configuration\system setting\manage |
+|Manage endpoint security settings in Microsoft Endpoint Manager* |Not supported - this permission is managed in the Microsoft Endpoint Management portal |
 
 ## Map Defender for Office 365 (Exchange Online Protection) roles to the Microsoft 365 Defender RBAC permissions
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Defender for Office (EOP) role group</strong> </th>
-<th><strong>Microsoft 365 Defender RBAC permissions</strong> </th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><blockquote>
-<p>Security Reader </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\System settings\ read only  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\Security setting\ read only </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Global Reader </p>
+| Defender for Office (EOP) role group| Microsoft 365 Defender RBAC permission|
+|:-------|:-----|:-------|
+
+|Security Reader|</blockquote></td><td><ul><li><blockquote><p>Security operations\ security data basics\ read only</p></blockquote></li><li><blockquote><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p></blockquote></li><li><blockquote><p>Security operations\ security data\response\ manage </p></blockquote></li><li><blockquote>
+<p>Configuration\System settings\ read only  </p></blockquote></li>
+<li><blockquote><p>Configuration\Security setting\ read only </p></blockquote></li></ul></td></tr><tr class="even"><td><blockquote>
+|Global Reader|
 </blockquote></td>
 <td><ul>
 <li><blockquote>
