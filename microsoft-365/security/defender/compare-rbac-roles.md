@@ -72,84 +72,15 @@ To assist you in verifying parity between individual RBAC role definitions and y
 
 ## Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender RBAC permissions
 
-<table>
-<thead>
-<tr class="header">
-<th> <strong>Defender for Identity permission</strong>  </th>
-<th><strong>Unified RBAC permission</strong>  </th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><blockquote>
-<p>MDI Admin</p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Configuration\ security setting \read</p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ security setting \manage</p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ system setting \read</p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ system setting \manage</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\security data\alerts\manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\security data\read only  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\authorization\manage Configuration\authorization\read</p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>MDI User</p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\security data\read only  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ system setting \read</p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ security setting \read</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\security data\alerts\manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ security setting \manage</p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>MDI Viewer</p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\security data\read only  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ system setting \read</p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ security setting \read</p>
-</blockquote></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Defender for Identity permission| Unified RBAC permission|
+|:-------|:-----|:-------|
+|MDI Admin|<p>Configuration\ security setting \read</p><p>Configuration\ security setting \manage</p><p>Configuration\ system setting \read</p><p>Configuration\ system setting \manage</p>
+<p>Security operations\security data\alerts\manage </p><p>Security operations\security data\read only </p><p>Configuration\authorization\manage Configuration\authorization\read</p>
+|MDI User|<p>Security operations\security data\read only </p><p>Configuration\ system setting \read</p><p>Configuration\ security setting \read</p><p>Security operations\security data\alerts\manage </p><p>Configuration\ security setting \manage</p><p>MDI Viewer</p><p>Security operations\security data\read only</p>
+<p>Configuration\ system setting \read</p><p>Configuration\ security setting \read</p>
 
-*Note: Defender for Identity experiences will also adhere to permissions granted from portal.cloudapsecurity.com. Learn more [here](https://go.microsoft.com/fwlink/?linkid=2202729)*
+>[!NOTE]
+> Defender for Identity experiences will also adhere to permissions granted from portal.cloudapsecurity.com. Learn more [here](https://go.microsoft.com/fwlink/?linkid=2202729)*
 
 ## Azure Active Directory Global roles access
 
@@ -157,267 +88,22 @@ Users assigned with Azure AD global roles might also have access to the Microsof
 
 Use this table to learn about the permissions assigned by default to each global Azure AD role. Only the Azure AD roles listed below grant access to any Defender for Endpoint, Defender for Office 365, Defender for Identity and Microsoft 365 Defender data or experiences.
 
-<table>
-<tbody>
-<tr class="odd">
-<td><strong>AAD role</strong> </td>
-<td><p><strong>Microsoft 365 Defender RBAC permissions </strong> </p>
-<p><strong>Defender for Endpoint scope </strong> </p></td>
-<td><strong>Microsoft 365 Defender RBAC permissions – Defender for Office 365 scope</strong> </td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Global Administrator </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\security data basics\read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\vulnerability management\read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\security data\alerts\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\exception handling\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\remediation handling\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\application handling\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\basic live response\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\advanced live response\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\security setting\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\system setting\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\manage security settings in Endpoint manager </p>
-</blockquote></li>
-</ul></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ alerts\ manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ Email quarantine\ manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ Email advanced actions\ manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ Authorization\ manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\System settings\ manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\Security settings\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Security Administrator </p>
-</blockquote></td>
-<td><blockquote>
-<p>Same permissions as for the Global administrator  </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ alerts\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ Email quarantine\ manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ Authorization\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\System settings\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\Security settings\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Global Reader </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\security data basics\read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\vulnerability management\read only</p>
-</blockquote></li>
-</ul></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\ Authorization\ read only Configuration\System settings\ read only  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\Security setting\ read only </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Security Reader </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\security data basics\read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\vulnerability management\read only</p>
-</blockquote></li>
-</ul></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read  </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\System settings\ read only </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\Security setting\ read only </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Security Operator </p>
-</blockquote></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\security data basics\read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\vulnerability management\read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\security data\alerts\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\exception handling\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security posture\threat and vulnerability management\remediation handling\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\basic live response\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\advanced live response\manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\security setting\manage </p>
-</blockquote></li>
-</ul></td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ alerts\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\response\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\System settings\ manage </p>
-</blockquote></li>
-<li><blockquote>
-<p>Configuration\Security settings\ manage </p>
-</blockquote></li>
-</ul>
-<p> </p></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Compliance Administrator </p>
-</blockquote></td>
-<td>- </td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ alerts\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Compliance Data Administrator </p>
-</blockquote></td>
-<td>- </td>
-<td><ul>
-<li><blockquote>
-<p>Security operations\ security data basics\ read only</p>
-</blockquote></li>
-<li><blockquote>
-<p>Security operations\ security data\ alerts\ manage </p>
-</blockquote></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| AAD role| Microsoft 365 Defender RBAC permissions - Defender for Endpoint scope | Microsoft 365 Defender RBAC permissions – Defender for Office 365 scope|
+|:-------|:-----|:-------|:-------|
+|Global Administrator|<p>Security operations\security data basics\read only</p><p>Security posture\threat and vulnerability management\vulnerability management\read only</p><p>Security operations\security data\alerts\manage </p><p>Security operations\ security data\response\ manage </p><p>Security posture\threat and vulnerability management\exception handling\manage </p><p>Security posture\threat and vulnerability management\remediation handling\manage </p><p>Security posture\threat and vulnerability management\application handling\manage </p><p>Security operations\basic live response\manage </p><p>Security operations\advanced live response\manage </p><p>Configuration\security setting\manage </p><p>Configuration\system setting\manage </p><p>Configuration\manage security settings in Endpoint manager </p>|<p>Security operations\ security data basics\ read only</p><p>Security operations\ security data\ alerts\ manage  </p><p>Security operations\ security data\response\ manage  </p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read  </p><p>Security operations\ security data\ Email quarantine\ manage  </p><p>Security operations\ security data\ Email advanced actions\ manage /p><p>Configuration\ Authorization\ manage </p><p>Configuration\System settings\ manage  </p>
+<p>Configuration\Security settings\ manage </p>|
+|Security Administrator|<p>Same permissions as for the Global administrator </p>|<p>Security operations\ security data basics\ read only  </p><p>Security operations\ security data\ alerts\ manage </p><p>Security operations\ security data\response\ manage  </p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p><p>Security operations\ security data\ Email quarantine\ manage  </p><p>Configuration\ Authorization\ manage </p><p>Configuration\System settings\ manage </p><p>Configuration\Security settings\ manage </p>
+|Global Reader|<p>Security operations\security data basics\read only</p><p>Security posture\threat and vulnerability management\vulnerability management\read only</p>|
+<p>Security operations\ security data basics\ read only </p><p>Security operations\ security data\response\ manage  </p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p><p>Configuration\ Authorization\ read only Configuration\System settings\ read only  </p><p>Configuration\Security setting\ read only </p>
+|Security Reader|Security operations\security data basics\read only</p><p>Security posture\threat and vulnerability management\vulnerability management\read only</p>|<p>Security operations\ security data basics\ read only</p><p>Security operations\ security data\response\ manage </p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read  </p>
+<p>Configuration\System settings\ read only </p>Configuration\Security setting\ read only </p>|
+|Security Operator|<p>Security operations\security data basics\read only</p><p>Security posture\threat and vulnerability management\vulnerability management\read only</p><p>Security operations\security data\alerts\manage </p><p>Security operations\ security data\response\ manage </p><p>Security posture\threat and vulnerability management\exception handling\manage </p><p>Security posture\threat and vulnerability management\remediation handling\manage </p><p>Security operations\basic live response\manage </p><p>Security operations\advanced live response\manage </p><p>Configuration\security setting\manage </p>|<p>Security operations\ security data basics\ read only</p><p>Security operations\ security data\ alerts\ manage </p>
+<p>Security operations\ security data\response\ manage </p><p>Security operations\ Email &amp; collaboration raw data\ Email messages headers\ read </p><p>Configuration\System settings\ manage </
+<p>Configuration\Security settings\ manage </p>|
+|Compliance Administrator||<p>Security operations\ security data basics\ read only</p>|<p>Security operations\ security data\ alerts\ manage </p>|
+|Compliance Data Administrator||<p>Security operations\ security data basics\ read only</p><p>Security operations\ security data\ alerts\ manage </p>|
 
-By activating the Microsoft 365 Defender RBAC model, users with Security Reader and Global Reader roles will have access to Defender for Endpoint data. 
+By activating the Microsoft 365 Defender RBAC model, users with Security Reader and Global Reader roles will have access to Defender for Endpoint data.
 
 ## Next steps
 
