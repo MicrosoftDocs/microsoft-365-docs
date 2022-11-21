@@ -1,5 +1,5 @@
 ---
-title: Opt out of Microsoft Defender Experts for XDR preview
+title: How to opt out of Microsoft Defender Experts for XDR preview
 ms.reviewer:
 description: Consult your Service Delivery Manager (SDM) to opt out of the preview.
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts, threat hunting and analysis
@@ -21,6 +21,6 @@ ms.topic: conceptual
 search.appverid: met150
 ---
 
-# Opt out of preview
+# Opt out of Microsoft Defender Experts for XDR preview
 
 Consult your service delivery manager (SDM) to opt out of the preview.

@@ -1,5 +1,5 @@
 ---
-title: Start using Microsoft Defender Experts for XDR
+title: How to use the Microsoft Defender Experts for XDR preview service
 ms.reviewer:
 description: Defender Experts for XDR will help prioritizing and customizing recommendations to fit your environment
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts, threat hunting and analysis
