@@ -322,13 +322,13 @@ You will need to create separate retention policies if you want to retain or del
 
 To consider when auto-applying retention labels to cloud attachments:
 
-- Only newly shared cloud attachments and documents from URL text links will be auto-labeled for retention.
+- Only newly shared cloud attachments and documents from URL text links will be auto-labeled for retention. If the cloud attachments and links are edited afterwards, the edited versions aren't supported.
 
 - When a user is added to a Teams conversation and given access to the full history of the conversation, that history can include cloud attachments and URL text links. If these attachments were shared within 48 hours of the user added to the conversation, current copies of the attachments are auto-labeled for retention. Attachments shared before this time period aren't supported for newly added users.
 
-- Attachments shared outside Teams and Outlook aren't supported.
+- Attachments and links shared outside Teams and Outlook aren't supported, and the attachments and links must be content stored in SharePoint or OneDrive.
 
-- Cloud attachments in encrypted emails aren't supported.
+- Cloud attachments and links in encrypted emails aren't supported.
 
 - Specific to shared documents from URL text links:
     - Supported in the message body but not in the email subject or Teams channel subject, announcement, or subheadings
