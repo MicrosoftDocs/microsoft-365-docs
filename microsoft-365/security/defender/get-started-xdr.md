@@ -21,7 +21,7 @@ ms.topic: conceptual
 search.appverid: met150
 ---
 
-# Get started
+# Get started with Microsoft Defender Experts for XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
