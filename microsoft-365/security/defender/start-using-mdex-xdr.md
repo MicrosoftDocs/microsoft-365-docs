@@ -20,6 +20,12 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ---
+**Applies to:**
+
+- Microsoft 365 Defender
+
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
+
 
 # Start using Microsoft Defender Experts for XDR preview service
 
@@ -72,11 +78,7 @@ Select **Ask Defender Experts** directly inside the Microsoft 365 security porta
 > [!NOTE]
 > Ask Defender Experts is not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
-The option to **Ask Defender Experts** is available in several places throughout the portal:
-
-- ***Device page actions menu***
-
-![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/device-page-actions-menu.png)
+The option to **Ask Defender Experts** is available in the incidents and alerts pages for you to ask contextual questions about a specific incident or alert:
 
 - ***Device inventory page flyout menu***
 
@@ -89,3 +91,11 @@ The option to **Ask Defender Experts** is available in several places throughout
 - ***Incidents page actions menu***
 
 ![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
+
+# Opt out of preview
+
+Consult your Service Delivery Manager (SDM) to opt out of the preview.
+
+## Go to the next step
+
+[Read though frequently asked questions and answers](frequently-asked-questions.md)

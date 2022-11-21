@@ -380,8 +380,6 @@
                 href: get-started-xdr.md
               - name: Start using Microsoft Defender Experts for XDR preview service
                 href: start-using-mdex-xdr.md
-              - name: Opt out of preview
-                href: opt-out-of-preview.md
               - name: Frequently asked questions
                 href: frequently-asked-questions.md
        - name: Ransomware playbooks

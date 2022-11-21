@@ -29,6 +29,8 @@ search.appverid: met150
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+[!INCLUDE [Prerelease](../includes/prerelease.md)]
+
 ## Activate your trial license
 
 1. Select the link in the welcome email to go directly to the Defender Experts settings page in the Microsoft 365 Defender portal. You can also open this page by going to **Settings** > **Defender Experts**.
@@ -57,3 +59,8 @@ Follow these steps to grant our experts additional permissions:
 
 > [!IMPORTANT]
 > If you skip providing additional permissions, our experts won't be able to take certain response actions to secure your network.
+
+## Go to the next step
+
+[Start using Microsoft Defender Experts for XDR preview service](start-using-mdex-xdr.md)
+
