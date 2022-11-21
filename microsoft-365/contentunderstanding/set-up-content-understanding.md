@@ -92,7 +92,7 @@ For details about Syntex licensing, see [Microsoft Syntex licensing](syntex-lice
 
     For **Power Platform environment**, you can select:
     - **Use the default environment** to use your default Power Platform environment.
-    - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. ([See the requirements for a custom environment](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements)).
+    - **Use a custom environment** to use a custom environment. Choose the environment that you want to use from the list. ([See the requirements for a custom environment](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements).)
 
     Click **Next**.
 
