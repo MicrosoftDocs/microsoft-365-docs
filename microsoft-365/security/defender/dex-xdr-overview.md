@@ -33,7 +33,7 @@ search.appverid: met150
 
 The Microsoft Defender Experts for XDR (Defender Experts for XDR) preview is a managed detection and response service that can help your security operations centers (SOCs) focus and accurately respond to incidents that matter. It provides extended detection and response for customers who use Defender workloads such as Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Azure Active Directory (Azure AD).
 
-Defender Experts for XDR augments your SOC with a combination of automation and human expertise to improve your security posture. With deep product expertise powered by threat intelligence, we’re uniquely positioned to help you:
+Defender Experts for XDR augments your SOC with a combination of automation and human expertise to improve your security posture. With deep product expertise powered by threat intelligence, we're uniquely positioned to help you:
 
 - **Focus on incidents that matter** - Our experts prioritize incidents and alerts that matter, alleviate alert fatigue, and drive SOC efficiency for your team.
 - **Manage response your way** - Our experts provide detailed, step-by-step, actionable guidance to respond to incidents with the option to act on your behalf as needed.
@@ -43,7 +43,7 @@ Defender Experts for XDR augments your SOC with a combination of automation and 
 In addition to the constantly updated research and intelligence tailored for the threats currently seen across the various Microsoft 365 Defender signals, as part of the preview, you'll receive guided response from our security analysts and support from Microsoft's security-focused service delivery managers (SDMs). In this preview, you can try the service for free and enjoy the following capabilities:
 
 - **Managed detection and response** - Expert analysts manage your Microsoft Defender incident queue or handle triage and investigation on your behalf; expert analysts partner with you and your team to take action or guide you to respond to incidents.
-- **Proactive threat hunting** - Defender Experts for Hunting is built-in to extend your team’s threat hunting capabilities and prioritize significant threats
+- **Proactive threat hunting** - [Defender Experts for Hunting](../defender/defender-experts-for-hunting.md) is built-in to extend your team's threat hunting capabilities and prioritize significant threats
 - **Live dashboards and reports** - Transparent view of our operations on your behalf and noise free, actionable view into what matters for you coupled with detailed analytics
 - **Proactive check-ins for continuous security improvements** - Remote, periodic check-ins with your named service delivery team to guide your Defender Experts for XDR experience and improve your security posture
 
@@ -54,7 +54,7 @@ In addition to the constantly updated research and intelligence tailored for the
 
 To use the managed service, you need to meet the following mandatory product prerequisites:
 
-- Microsoft Defender for Endpoint P2 must be licensed for all users and enabled in active mode
+- Microsoft Defender for Endpoint P2 must be licensed for all users and Defender Antivirus must be enabled in active mode
 - Azure Active Directory Premium P1 must be licensed for all users and enabled
 
 To use Defender Experts for XDR services for the following eligible products, you must have their appropriate product licenses:
