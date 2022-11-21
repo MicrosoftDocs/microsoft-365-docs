@@ -93,6 +93,6 @@ The option to **Ask Defender Experts** is available in the incidents and alerts 
 
 Consult your service delivery manager (SDM) to opt out of the preview.
 
-## Go to the next step
+## See also
 
 [Read through frequently asked questions and answers](frequently-asked-questions.md)
