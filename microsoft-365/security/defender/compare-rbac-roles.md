@@ -1,5 +1,5 @@
 ---
-title: Compare permissions with Microsoft 365 Defender role-based access control (RBAC)
+title: Compare Microsoft 365 Defender role-based access control (RBAC) 
 description: Compare permissions and access to Microsoft 365 Defender Security portal experiences using role-based access control (RBAC)
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -21,11 +21,9 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Compare permissions with Microsoft 365 Defender role-based access control (RBAC)
+# Compare Microsoft 365 Defender role-based access control (RBAC)
 
 [!INCLUDE[Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-To assist you in verifying parity between individual RBAC role definitions and your new Microsoft 365 Defender RBAC roles, we’ve created a mapping table for each product.
 
 **Applies to:**
 
@@ -34,7 +32,16 @@ To assist you in verifying parity between individual RBAC role definitions and y
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Map Defender for Endpoint permissions to the Microsoft 365 Defender RBAC permissions
+## Map Microsoft 365 Defender RBAC permissions with existing permissions
+
+Use the tables below to understand how existing individual RBAC role definitions map to your new Microsoft 365 Defender RBAC roles:
+
+1. [Map Defender for Endpoint permissions](#map-defender-for-endpoint-permissions-to-the-microsoft-365-defender-rbac-permissions)
+2. [Map Defender for Office 365 (Exchange Online Protection) roles](#map-defender-for-office-365-exchange-online-protection-roles-to-the-microsoft-365-defender-rbac-permissions)
+3. [Map Microsoft Defender for Identity permissions](#map-microsoft-defender-for-identity-permissions-to-the-microsoft-365-defender-rbac-permissions)
+4. [Azure Active Directory Global roles access](#azure-active-directory-global-roles-access)
+
+### Map Defender for Endpoint permissions to the Microsoft 365 Defender RBAC permissions
 
 | Defender for Endpoint permission| Microsoft 365 Defender RBAC permission|
 |:-------|:-----|:-------|
@@ -75,7 +82,8 @@ To assist you in verifying parity between individual RBAC role definitions and y
 | Defender for Identity permission| Unified RBAC permission|
 |:-------|:-----|:-------|
 |MDI Admin|<ul><li>Configuration\security setting \read</li><li> Configuration\ security setting \manage</li><li>Configuration\ system setting \read</li><li>Configuration\ system setting \manage</li><li>Security operations\security data\alerts\manage </li><li>Security operations\security data\read only </li><li>Configuration\authorization\manage Configuration\authorization\read</li></ul>|
-|MDI User|<ul><li>Security operations\security data\read only </li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li><li>Security operations\security data\alerts\manage </li><li>Configuration\ security setting \manage</li><li>MDI Viewer</li><li>Security operations\security data\read only</li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li></ul>|
+|MDI User|<ul><li>Security operations\security data\read only </li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li><li>Security operations\security data\alerts\manage </li><li>Configuration\ security setting \manage</li></ul|
+|<ul><li>MDI Viewer</li><li>Security operations\security data\read only</li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li></ul>|
 
 >[!NOTE]
 > Defender for Identity experiences will also adhere to permissions granted from portal.cloudapsecurity.com. Learn more [here](https://go.microsoft.com/fwlink/?linkid=2202729)*
