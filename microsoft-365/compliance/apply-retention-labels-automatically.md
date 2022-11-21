@@ -329,8 +329,8 @@ To consider when auto-applying retention labels to cloud attachments:
 - Attachments shared outside Teams and Outlook aren't supported.
 
 - Specific to shared documents from URL text links:
-    - Supported in the message body but not in the email subject or Teams channel subject
-    - Not supported for previous responses in the same thread, only the current message with a limit of 5,000 characters
+    - Supported in the message body but not in the email subject or Teams channel subject, announcement, or subheadings
+    - Not supported for previous responses in the same thread, only the current message
     - Total limit of x attachments in a single message, where this maximum can be any combination of cloud attachments and shared documents from URL text links
 
 - The following items aren't supported as attachments that can be retained:
