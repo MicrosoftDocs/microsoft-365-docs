@@ -23,9 +23,9 @@ search.appverid: met150
 
 # Compare permissions with Microsoft 365 Defender role-based access control (RBAC)
 
-To assist you in verifying parity between individual RBAC role definitions and your new Microsoft 365 Defender RBAC roles, we’ve created a mapping table for each product.
+[!INCLUDE[Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+To assist you in verifying parity between individual RBAC role definitions and your new Microsoft 365 Defender RBAC roles, we’ve created a mapping table for each product.
 
 **Applies to:**
 
