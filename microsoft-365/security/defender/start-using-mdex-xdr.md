@@ -90,9 +90,9 @@ The option to **Ask Defender Experts** is available in the incidents and alerts 
 
 ![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
 
-# Opt out of preview
+## Opt out of preview
 
-Consult your Service Delivery Manager (SDM) to opt out of the preview.
+Consult your service delivery manager (SDM) to opt out of the preview.
 
 ## Go to the next step
 
