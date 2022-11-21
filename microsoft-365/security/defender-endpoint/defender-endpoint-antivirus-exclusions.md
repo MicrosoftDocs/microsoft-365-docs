@@ -1,5 +1,5 @@
 ---
-title: Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
+title: Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 description: Learn about exclusions for Defender for Endpoint and Microsoft Defender Antivirus. Suppress alerts, submit files for analysis, and define exclusions and indicators to reduce noise and risk for your organization.
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -19,7 +19,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
+# Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,9 @@ search.appverid: met150
 > [!NOTE]
 > As a Microsoft MVP, [Fabian Bader](https://cloudbrothers.info) contributed to and provided material feedback for this article.
 
-[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. As with any endpoint protection or antivirus solution, sometimes files, folders, or processes that aren't a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not actually a threat. You can take certain actions to prevent false positives and similar issues from occurring. These actions include:
+[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) includes a wide range of capabilities to prevent, detect, investigate, and respond to advanced cyberthreats. These capabilities include [Next-generation protection](next-generation-protection.md) (which includes Microsoft Defender Antivirus). As with any endpoint protection or antivirus solution, sometimes files, folders, or processes that aren't actually a threat can be detected as malicious by Defender for Endpoint or Microsoft Defender Antivirus. These entities can be blocked or sent to quarantine, even though they're not really a threat. 
+
+You can take certain actions to prevent false positives and similar issues from occurring. These actions include:
 
 - [Submitting a file to Microsoft for analysis](#submitting-files-for-analysis)
 - [Suppressing an alert](#suppressing-alerts)
