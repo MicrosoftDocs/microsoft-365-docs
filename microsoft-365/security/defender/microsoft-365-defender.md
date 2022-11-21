@@ -47,10 +47,9 @@ Here's a list of the different Microsoft 365 Defender products and solutions:
 - <a href="/microsoft-365/compliance/dlp-learn-about-dlp"><b>Microsoft Data Loss Prevention</b></a> 
 - <a href="/defender-cloud-apps/app-governance-manage-app-governance"><b>App Governance</b></a>
 
-With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
+Note that Azure Active Directory Identity Protection (AAD IP) is in public preview and may be substantially modified before it's commercially released. AAD IP is available to customers only if they already have Microsoft 365 Defender. 
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
 
 ## Microsoft 365 Defender interactive guide
 
