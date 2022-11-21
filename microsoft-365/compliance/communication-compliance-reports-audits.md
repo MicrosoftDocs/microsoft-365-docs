@@ -34,7 +34,7 @@ The **Reports** dashboard is the central location for viewing all communication 
 
 Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets isn't exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing.
 
-For the date range filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages for reports, the requesting user's local date/time determines the results based on the conversion of the user's local date/time to UTC. For example, if a user in U.S. Pacific Daylight Time (PDT) filters a report from 8/30/2021 to 8/31/2021 at 00:00, the report includes messages from 8/30/2021 07:00 UTC to 8/31/2021 07:00 UTC. If the same user was in U.S. Eastern Daylight Time (EDT) when filtering at 00:00, the report includes messages from 8/30/2021 04:00 UTC to 8/31/2021 04:00 UTC.
+For the date range filter, the date and time for events are listed in coordinated universal time (UTC). When filtering messages for reports, the requesting user's local date/time determines the results based on the conversion of the user's local date/time to UTC. For example, if a user in U.S. Pacific Daylight Time (PDT) filters a report from 8/30/2021 to 8/31/2021 at 00:00, the report includes messages from 8/30/2021 07:00 UTC to 8/31/2021 07:00 UTC. If the same user was in U.S. Eastern Daylight Time (EDT) when filtering at 00:00, the report includes messages from 8/30/2021 04:00 UTC to 8/31/2021 04:00 UTC.
 
 ![Communication compliance reports dashboard](../media/communication-compliance-reports-dashboard.png)
 
@@ -133,10 +133,10 @@ Message details reports contain the following information for each message item 
 - **Reviewers**: Reviewers assigned to message.
 - **Pending for (days)**: Number of days the message has been in a pending state. For resolved messages, the value is 0.
 - **Comment for resolved**: Comments for the message entered when resolved.
-- **Resolved Date**: Date and time the message was resolved.
+- **Resolved Date**: Date and coordinated universal time (UTC) the message was resolved.
 - **Last Updated By**: User name of the last updater.
-- **Last Updated On**: Date and time the message was last updated.
-- **History of comments**: List of all comments for the message alert, including comment author and date/time of the comment.
+- **Last Updated On**: Date and coordinated universal time (UTC) the message was last updated.
+- **History of comments**: List of all comments for the message alert, including comment author and date and coordinated universal time (UTC) of the comment.
 
 ## Audit
 

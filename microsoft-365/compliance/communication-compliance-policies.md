@@ -47,7 +47,7 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 | **Regulatory compliance** | Monitor for regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
 | **Conflict of interest** | Monitor for conflict of interest | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Internal <br> - Review Percentage: 100% <br> - Conditions: None |
 
-Communications are scanned every 24 hours from the time policies are created. For example, if you create an inappropriate content policy at 11:00 AM, the policy will gather communication compliance signals every 24 hours at 11:00 AM daily. Editing a policy doesn't change this time. To view the last scan date and time for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to 24 hours to view the first policy scan date and time. The date and time of the last scan are converted to the time zone of your local system.
+Communications are scanned every 24 hours from the time policies are created. For example, if you create an inappropriate content policy at 11:00 AM, the policy will gather communication compliance signals every 24 hours at 11:00 AM daily. Editing a policy doesn't change this time. To view the last scan date and coordinated universal time (UTC) for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to 24 hours to view the first policy scan date and time.
 
 ## User-reported messages policy
 
@@ -132,7 +132,7 @@ To copy a policy and create a new policy, complete the following steps:
 
 ## Policy activity detection
 
-Communications are scanned every hour from the time policies are created. For example, if you create an inappropriate content policy at 11:00 AM, the policy will gather communication compliance signals every hour starting from when the policy was created. Editing a policy doesn't change this time. To view the last scan date and time for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to an hour to view the first policy scan date and time. The date and time of the last scan are converted to the time zone of your local system.
+Communications are scanned every hour from the time policies are created. For example, if you create an inappropriate content policy at 11:00 AM, the policy will gather communication compliance signals every hour starting from when the policy was created. Editing a policy doesn't change this time. To view the last scan date and coordinated universal time (UTC) for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to an hour to view the first policy scan date and time.
 
 The following table outlines the time to detection for supported content types:
 
