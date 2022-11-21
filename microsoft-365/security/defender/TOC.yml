@@ -376,7 +376,7 @@
          items:
               - name: Overview
                 href: dex-xdr-overview.md
-              - name: Get started
+              - name: Get started with Microsoft Defender Experts for XDR preview service
                 href: get-started-xdr.md
               - name: Start using Microsoft Defender Experts for XDR preview service
                 href: start-using-mdex-xdr.md
