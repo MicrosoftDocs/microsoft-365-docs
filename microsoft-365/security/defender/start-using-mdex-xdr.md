@@ -96,4 +96,4 @@ Consult your Service Delivery Manager (SDM) to opt out of the preview.
 
 ## Go to the next step
 
-[Read though frequently asked questions and answers](frequently-asked-questions.md)
+[Read through frequently asked questions and answers](frequently-asked-questions.md)
