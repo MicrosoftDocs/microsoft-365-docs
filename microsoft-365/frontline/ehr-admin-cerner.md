@@ -93,7 +93,7 @@ Select **Next** to go to the next step.
 
 Complete this step if your organization wants Microsoft to manage SMS notifications for your patients. When you enable SMS notifications, your patients will receive confirmation and reminder messages for scheduled appointments.
 
-To enable SMS notifications, your Microsoft 365 admin does the following:
+To enable SMS notifications, your Microsoft 365 admin completes the following steps:
 
 1. On the SMS notifications page, select both consent checkboxes to:
 
@@ -114,7 +114,7 @@ To enable SMS notifications, your Microsoft 365 admin does the following:
 
     :::image type="content" source="media/ehr-admin-cerner-link-phone-number.png" alt-text="Screenshot showing how to link a phone number to a FHIR base URL." lightbox="media/ehr-admin-cerner-link-phone-number.png":::
 
-    If this is the first time you’re configuring the connector, you’ll see the FHIR base URL that was entered in the earlier step. The same phone number can be linked to multiple FHIR base URLs, which means that patients will receive SMS notifications from the same phone number for different organizations and/or departments.
+    If you’re configuring the connector for the first time, you’ll see the FHIR base URL that was entered in the earlier step. The same phone number can be linked to multiple FHIR base URLs, which means that patients will receive SMS notifications from the same phone number for different organizations and/or departments.
 
      Select **Next**.
 
@@ -164,9 +164,11 @@ Key features of the patient experience
 
 ## Get insight into Virtual Appointments usage
 
-The [Virtual Appointments usage report](virtual-appointments-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams Virtual Appointments activity in your organization. The report shows detailed analytics for virtual appointments including Teams EHR-integrated meetings conducted from your EHR system.
+You can use the following reports in the Teams admin center to gain insight into EHR-integrated virtual appointment usage in your organization.
 
-You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize Virtual Appointments to deliver better business outcomes.
+- The [EHR connector Virtual Appointments report](ehr-connector-report.md) gives you an overview of EHR-integrated virtual appointment activity in your organization. You can view a breakdown of data for each appointment that took place for a given date range. The data includes the staff member who conducted the appointment, duration, the number of attendees, and whether the appointment was within the allocation limit.
+
+- The [Virtual Appointments usage report](virtual-appointments-usage-report.md) provides detailed analytics for virtual appointments scheduled and conducted from multiple entry points, including Teams EHR-integrated meetings conducted from your EHR system. You can view key metrics such as lobby wait time, appointment duration, and no shows.
 
 ## Privacy and location of data
 
