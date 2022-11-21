@@ -4,7 +4,7 @@ description: Describes the policies for Microsoft recommendations about how to s
 author: MicrosoftHeidi
 manager: serdars
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords: 
   - NOCSH

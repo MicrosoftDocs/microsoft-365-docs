@@ -328,6 +328,8 @@ To consider when auto-applying retention labels to cloud attachments:
 
 - Attachments shared outside Teams and Outlook aren't supported.
 
+- Cloud attachments in encrypted emails aren't supported.
+
 - Specific to shared documents from URL text links:
     - Supported in the message body but not in the email subject or Teams channel subject, announcement, or subheadings
     - Not supported for previous responses in the same thread, only the current message

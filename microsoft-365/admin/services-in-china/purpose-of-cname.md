@@ -8,6 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.collection:
+- Tier2
 - scotvorg
 - Adm_O365
 - Adm_NonTOC

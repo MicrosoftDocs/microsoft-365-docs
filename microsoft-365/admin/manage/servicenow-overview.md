@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_TOC
@@ -31,6 +32,7 @@ For the **Microsoft 365 support integration** app from the ServiceNow store, go 
 ## Key features
 
 These are the key features you'll get with the Microsoft 365 support integration app in your ServiceNow instance:
+
 
 - Service Health Incidents: Information about known Microsoft service health incidents, including user impact, scope, current status, and next expected update. Using machine learning, ServiceNow incidents are matched to Microsoft service health incidents based on the short description field.
 

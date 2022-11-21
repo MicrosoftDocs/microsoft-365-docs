@@ -6,7 +6,7 @@ author: samanro
 ms.author: samanro
 manager: pamgreen
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 ms.collection: 
@@ -14,11 +14,12 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - highpri
+  - tier1
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 
 ---
 

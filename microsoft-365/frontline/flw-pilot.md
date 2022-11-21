@@ -5,7 +5,7 @@ author: samanro
 ms.author: samanro
 ms.reviewer: aaglick
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 ms.collection: 
   - m365-frontline
   - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-
+ms.date: 10/28/2022
 ---
 
 # Start with a pilot deployment of Microsoft 365 for frontline workers
@@ -49,7 +50,7 @@ We recommend that you prepare for deployment by completing this 30-minute learni
 >
 > * [Get your people together](#plan-your-pilot)
 > * [Plan your pilot](#plan-your-pilot)
-> * [Sset up Microsoft 365 and Teams](#set-up-microsoft-365-and-teams)
+> * [Set up Microsoft 365 and Teams](#set-up-microsoft-365-and-teams)
 > * [Communicate](#communicate)
 > * [Measure](#measure)
 > * [Iterate and expand](#iterate-and-expand)

@@ -17,7 +17,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.date: 04/15/2022
 ms.subservice: mde
 ---

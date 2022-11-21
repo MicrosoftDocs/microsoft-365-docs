@@ -17,7 +17,7 @@ audience: ITPro
 ms.collection: 
 - m65-security-compliance
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.custom: api
 ---
 

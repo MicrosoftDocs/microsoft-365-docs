@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: deniseb
 author: denisebmsft
 ms.reviewer: dansimp
-ms.topic: article
+ms.topic: conceptual
 manager: dansimp
 audience: ITPro
 ms.subservice: mde
@@ -76,4 +76,4 @@ To see the security of the device, select the **Open device page** button on the
 
 ## Reporting delays
 
-There might be a delay of up to 12 hours from the time a media connection occurs to the time the event is reflected in the card or in the domain list.
+There might be a delay of up to six hours from the time a media connection occurs to the time the event is reflected in the card or in the domain list.

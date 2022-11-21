@@ -5,9 +5,9 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/12/2022
+ms.date: 10/14/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdo
 ms.localizationpriority: medium
@@ -28,10 +28,10 @@ search.appverid: met150
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **In this article:**
-- [Reach the email entity page](#reach-the-email-entity-page)
-- [Read the email entity page](#read-the-email-entity-page)
-- [Use email entity page tabs](#use-email-entity-page-tabs)
-- [New to the email entity page](#new-to-the-email-entity-page)
+- [Reach the email entity page](#how-to-get-to-the-email-entity-page)
+- [Read the email entity page](#how-to-read-the-email-entity-page)
+- [Use email entity page tabs](#how-to-use-the-email-entity-page-tabs)
+- [New to the email entity page](#available-on-the-email-entity-page)
 
 Admins of Microsoft Defender for Office 365 E5, and Defender for Office P1 and P2 have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered on the [Threat Explorer 'email details' fly-out](threat-explorer-views.md).
 

@@ -11,6 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: high
 monikerRange: 'o365-worldwide'
 ms.collection: 
+- Tier2
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
@@ -24,7 +25,7 @@ search.appverid:
 description: "Learn how Microsoft Adoption Score reflects people and technology experience measurements and compare to organizations of similar size."
 ---
 
-# Microsoft Adoption Score 
+# Microsoft Adoption Score
 
 Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.
 
@@ -47,12 +48,12 @@ We provide metrics, insights, and recommendations in two areas:
 > [!NOTE]
 > All insights are calculated using data at the organizational level, not the individual level.
 
-## How to turn on Adoption Score
+## How to enable Adoption Score
 
 To enable Adoption Score:
 
 1. Login to the Microsoft 365 admin center as a Global Administrator and go to **Reports** > **Adoption Score**
-2. Select **Enable Adoption Score**. It can take up to 24 hours for insights to become available.
+2. Select **enable Adoption Score**. It can take up to 24 hours for insights to become available.
 
 > [!NOTE]
 > Only an IT professional with the Global Administrator role can opt-in for Adoption Score.
@@ -83,6 +84,9 @@ The role-based access control model for Adoption Score helps organizations furth
 Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft.
 
 You can access the experience from Microsoft 365 Admin home under **Reports** > **Adoption Score**.
+
+> [!NOTE]
+> This feature is not available in GCC High, GCC, and DOD tenants.
   
 ## How the score is calculated
 
