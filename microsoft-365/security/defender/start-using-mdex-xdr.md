@@ -62,7 +62,7 @@ The SDM provides the following services:
 - Service readiness support
 
   - Educate customers about the end-to-end service experience, from signup to regular operations and escalation process
-  - Support customer environment discovery (Microsoft and third-party products and services) 
+  - Support customer environment discovery (Microsoft and third-party products and services)
   - Help establish a service-ready security posture, including guidance on required controls and policy updates
 
 - Service operations support
@@ -81,10 +81,6 @@ Select **Ask Defender Experts** directly inside the Microsoft 365 security porta
 > Ask Defender Experts is not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 The option to **Ask Defender Experts** is available in the incidents and alerts pages for you to ask contextual questions about a specific incident or alert:
-
-- ***Device inventory page flyout menu***
-
-![Screenshot of the Ask Defender Experts menu option in the Device inventory page flyout menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/device-inventory-flyout-menu.png)
 
 - ***Alerts page flyout menu***
 
