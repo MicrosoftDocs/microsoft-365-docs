@@ -41,7 +41,7 @@ search.appverid: met150
 
 By default, Defender Experts for XDR require the following permissions to investigate incidents and notify you when you need to take action:
 
-- **Service provider access** - this permission lets our experts sign in to your tenant and deliver services based on assigned security roles; learn more about cross-tenant access.
+- **Service provider access** - this permission lets our experts sign in to your tenant and deliver services based on assigned security roles; [learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview).
 - **Security reader** - this built-in Azure AD role lets our experts investigate incidents and provide guidance on necessary response actions.
 
 You can also provide our experts the following additional permissions to investigate incidents on your behalf:
