@@ -27,9 +27,6 @@ search.appverid: met150
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-
-# Start using Microsoft Defender Experts for XDR preview service
-
 Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to run an initial readiness engagement to help you get the most out of your Microsoft security products. This engagement will be based on your [Microsoft Secure Score](microsoft-secure-score.md) and Defender Experts policy recommendations. Defender Experts for XDR won't implement any of the proactive configurations, but will help prioritizing and customizing our recommendations to fit your environment.
 
 ## Receive guided response within Microsoft 365 Defender portal
@@ -95,6 +92,6 @@ The option to **Ask Defender Experts** is available in the incidents and alerts 
 
 Consult your service delivery manager (SDM) to opt out of the preview.
 
-## Go to the next step
+## See also
 
 [Read through frequently asked questions and answers](frequently-asked-questions.md)
