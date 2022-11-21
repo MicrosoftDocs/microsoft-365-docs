@@ -1,7 +1,6 @@
 ---
 title: "Optimize search requests in SharePoint Online modern site pages"
 ms.reviewer: andreye
-ms.date: 11/18/2022
 ms.author: evanatkin
 author: AtkinE
 manager: pamgreen
