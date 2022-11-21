@@ -31,7 +31,7 @@ search.appverid: met150
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Once the Defender Experts for XDR team is ready to onboard you, defenderexpertscomms@microsoft.com will send you a welcome email that provides you with the steps needed to activate the service. Ask your global administrator to follow these steps.
+Once the Defender Experts for XDR team is ready to onboard you, _defenderexpertscomms@microsoft.com_ will send you a **welcome email** that provides you with the steps needed to activate the service. Ask your global administrator to follow these steps.
 
 ## Activate your trial license
 
