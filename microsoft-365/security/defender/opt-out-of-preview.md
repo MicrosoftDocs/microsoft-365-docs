@@ -23,4 +23,4 @@ search.appverid: met150
 
 # Opt out of preview
 
-Consult your Service Delivery Manager (SDM) to opt out of the preview.
+Consult your service delivery manager (SDM) to opt out of the preview.
