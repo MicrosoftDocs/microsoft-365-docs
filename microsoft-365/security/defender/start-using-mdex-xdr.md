@@ -20,7 +20,6 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ---
-
 # Start using Microsoft Defender Experts for XDR preview service
 
 **Applies to:**
