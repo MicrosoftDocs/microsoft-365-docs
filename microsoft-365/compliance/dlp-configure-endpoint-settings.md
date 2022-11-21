@@ -369,8 +369,6 @@ By default, when devices are onboarded, activity for Office, PDF, and CSV files 
 
 File activity will always be audited for onboarded devices, regardless of whether they're included in an active policy.
 
-> [!IMPORTANT]
-> Before you can use [Printer groups (preview)](#printer-groups-preview), [Removable storage device groups](#removable-storage-device-groups-preview), [Network share groups](#network-share-groups-preview), and [VPN settings](#vpn-settings-preview) you must register [here](https://forms.office.com/r/GNVTFvxuZv).
 
 ### Printer groups (preview)
 
@@ -378,9 +376,9 @@ Use this setting to define groups of printers that you want to assign policy act
 
 This feature is available for devices running any of the following Windows versions:  
 
-- Windows 10 and later (20H2, 21H1, 21H2) 
-- Win 11 21H2, 22H2
-- Windows Server 2022
+- Windows 10 and later (20H2, 21H1, 21H2) with KB 5020030
+- Win 11 21H2, 22H2 with KB KB5019157
+- Windows Server 2022 with KB KB5020032
 
 You define a printer by these parameters:
 
@@ -424,8 +422,8 @@ Use this setting to define groups of removable storage devices, like USB thumb d
 
 This feature is available for devices running any of the following Windows versions:  
 
-- Windows 10 and later (20H2, 21H1, 21H2) 
-- Win 11 21H2, 22H2
+- Windows 10 and later (20H2, 21H1, 21H2) with KB 5018482
+- Win 11 21H2, 22H2 with KB 5018483
 - Windows 10 RS5 (KB 5006744) and Windows Server 2022 
 
 You can define removeable storage devices by these parameters:
@@ -470,8 +468,8 @@ Use this setting to define groups of network share paths that you want to assign
 
 This feature is available for devices running any of the following Windows versions:  
 
-- Windows 10 and later (20H2, 21H1, 21H2) 
-- Win 11 21H2, 22H2
+- Windows 10 and later (20H2, 21H1, 21H2) with KB 5018482 
+- Win 11 21H2, 22H2 with KB 5018483
 - Windows 10 RS5 (KB 5006744)  and Windows Server 2022 
 
 
@@ -514,8 +512,8 @@ Use the VPN list to control only those actions that are being carried out over t
 
 This feature is available for devices running any of these versions of Windows:  
 	
-- Windows 10 and later (20H2, 21H1, 21H2) 
-- Windows 11 21H2, 22H2
+- Windows 10 and later (20H2, 21H1, 21H2) with KB 5018482
+- Windows 11 21H2, 22H2 with KB 5018483
 - Windows 10 RS5 (KB 5006744)
 
 When you list a VPN in **VPN Settings** you can assign these policy actions to them:
