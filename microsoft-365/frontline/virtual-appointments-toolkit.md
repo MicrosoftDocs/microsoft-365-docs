@@ -1,5 +1,5 @@
 ---
-title: Help your clients and customers use virtual appointments
+title: Help your clients and customers use virtual appointments scheduled with the Bookings app in Teams
 author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
@@ -29,9 +29,9 @@ ms.date: 11/02/2022
 
 # Help your clients and customers use virtual appointments scheduled with Bookings
 
-Now that your organization has begun using Microsoft Teams and the Bookings app for virtual appointments, you'll need to make sure that your clients and customers understand how to book and join these appointments.
+Now that your organization has begun using Microsoft Teams and the Bookings app for Virtual Appointments, you'll need to make sure that your clients and customers understand how to book and join these appointments.
 
-Watch this video for a quick overview of what virtual appointments can do for your organization.
+Watch this video for a quick overview of what Virtual Appointments can do for your organization.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
@@ -51,7 +51,7 @@ Infographics that you can customize for your organization.
 
 Let your customers know what to expect with virtual appointments by answering common questions. All you need to do is edit this Q&A to align with your virtual appointment policies, and paste it on your website.
 
-### Virtual appointments basics
+### Virtual Appointments basics
 
 **What is a virtual appointment?**
 
@@ -87,16 +87,17 @@ You can link to your organization’s cancellation and rescheduling policy here,
 
 **What equipment do I need for a virtual appointment?**
 
-Customers can join a virtual appointment from any web browser or through the Microsoft Teams app. List here if your organization has additional specifications, such as a high-quality webcam or microphone. If your healthcare organization has EHR integrated into teams, patients can join visits from your healthcare portal.
+Customers can join a virtual appointment from any web browser or through the Microsoft Teams app. List here if your organization has additional specifications, such as a high-quality webcam or microphone. If your healthcare organization has integrated your Electronic Health Record (EHR) system with Teams, patients can join visits from your healthcare portal.
 
 **How do I join a virtual appointment?**
 
-You can link your customers here Join a Bookings appointment as an attendee (microsoft.com) to show them a detailed video and step-by-step process of how to join an appointment.
+You can link your customers to [Join a Bookings appointment as an attendee](https://support.microsoft.com/en-us/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0) to show them a detailed video and step-by-step process of how to join an appointment.
 
 ## Resources for your team
 
-Make the most of virtual appointments by making sure your staff members know how to conduct them. You can share these articles and videos with your team members to help them better understand virtual appointments.
+Make the most of virtual appointments in your organization by making sure your staff members know how to conduct them. You can share these articles and videos with your team members to help them better understand virtual appointments.
 
+- [Learn about Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Learn how to use the Bookings app in Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
 - [Learn how to join a Bookings appointment](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0).
 - [Conduct an appointment](bookings-virtual-visits.md#conduct-an-appointment).

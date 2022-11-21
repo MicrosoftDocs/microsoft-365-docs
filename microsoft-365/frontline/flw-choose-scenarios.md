@@ -96,7 +96,6 @@ Watch the following video to see an example of how you can simplify business pro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
 
-
 | Scenario | Description | Services | Teams apps |
 | --- | --- | --- | --- |
 | [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. | Microsoft Teams<br>Power Platform | Tasks<br>Lists<br>Approvals |
@@ -106,13 +105,13 @@ Watch the following video to see an example of how you can simplify business pro
 
 :::image type="icon" source="media/virtual-appointment-teams.png":::
 
-Use Microsoft Bookings and Microsoft Teams to schedule and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments experience to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
+Use the Virtual Appointments app (Preview) or the Bookings app and Microsoft Teams to schedule, manage, and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
-Watch the following video to see an example of Virtual Appointments in healthcare organizations:
+Watch the following video for an overview of the virtual appointments experience with the Bookings app and Teams:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
-More information: [Virtual Appointments with Microsoft Teams and the Bookings app](bookings-virtual-appointments.md)
+More information: [Virtual Appointments with Microsoft Teams](virtual-appointments.md)
 
 ## Help your team, clients, and customers
 
@@ -152,4 +151,4 @@ With code from scratch or leveraging templated and sample code, you can build cu
 
 ### Viva platform extensibility
 
-Developers can [extend Microsoft Viva Connections](/sharepoint/dev/spfx/viva/overview-viva-connections) for building engaging experiences with the widely adopted [SharePoint Framework (SPFx)](/sharepoint/dev/spfx/build-for-teams-overview). Viva Connections is your gateway to a modern employee experience where you can build and integrate apps that shape culture and foster connections to help employees thrive. With SPFx, you have multiple ways to extend – using the same out-of-the-box or custom SPFx web parts, SPFx extensions (e.g. header, footer), and specific components for optimized mobile experiences.
+Developers can [extend Microsoft Viva Connections](/sharepoint/dev/spfx/viva/overview-viva-connections) for building engaging experiences with the widely adopted [SharePoint Framework (SPFx)](/sharepoint/dev/spfx/build-for-teams-overview). Viva Connections is your gateway to a modern employee experience where you can build and integrate apps that shape culture and foster connections to help employees thrive. With SPFx, you have multiple ways to extend – using the same out-of-the-box or custom SPFx web parts, SPFx extensions (for example, header, footer), and specific components for optimized mobile experiences.
