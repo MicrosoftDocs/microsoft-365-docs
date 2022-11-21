@@ -48,7 +48,6 @@ In the dashboard of the Microsoft Teams admin center, go to the **EHR connector 
 
 Here, you get an at-a-glance view of Teams EHR-integrated virtual appointment activity by month, including completed appointments, remaining allocation, and whether you've exceeded the monthly limit (depending on the license you have).
 
-[NEED NEW SCREENSHOT]<br>
 :::image type="content" source="media/ehr-connector-report-card.png" alt-text="Screenshot of the EHR connector usage card in the Teams admin center dashboard." lightbox="media/ehr-connector-report-card.png":::
 
 Choose **View details** to view the report. To purchase more licenses, choose **Buy more**.
@@ -58,7 +57,6 @@ Choose **View details** to view the report. To purchase more licenses, choose **
 1. In the left navigation of the Teams admin center, go to **Analytics & reports** > **Usage reports**.
 1. On the **View reports** tab, choose **EHR connector Virtual Appointments** and a date range. Then, select **Run report**.
 
-    [NEED LARGER SCREENSHOT?]<br>
     :::image type="content" source="media/ehr-connector-report.png" alt-text="Screenshot of the Teams EHR connector Virtual Appointments report in the Teams admin center." lightbox="media/ehr-connector-report.png":::
 
 ## Interpret the report
