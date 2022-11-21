@@ -55,7 +55,7 @@ When you create a custom model, you'll select the training method associated wit
 | ![Tile for teaching method.](../media/content-understanding/teaching-method-tile-2.png) | ![Tile for freeform seletion method.](../media/content-understanding/freeform-selection-method-tile-2.png) | ![Tile for layout method.](../media/content-understanding/layout-method-tile-2.png) |
 
 > [!NOTE]
-> To make the **Freeform selection method** option and the **Layout method** option available, they first must be configured in the Microsoft 365 admin center.
+> To make the **Freeform selection method** and the **Layout method** options available to users, they first must be configured in the Microsoft 365 admin center.
 
 ### Unstructured document processing
 
