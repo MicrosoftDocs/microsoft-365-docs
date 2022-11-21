@@ -32,7 +32,7 @@ To assist you in verifying parity between individual RBAC role definitions and y
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includesprerelease.md)]
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Map Defender for Endpoint permissions to the Microsoft 365 Defender RBAC permissions
 
