@@ -1,7 +1,7 @@
 ---
 title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
-description: Once the Defender Experts for XDR team are ready to onboard you, defenderexpertscomms@microsoft.com will send you a welcome email
+description: Once the Defender Experts for XDR team are ready to onboard you, we’ll reach out to get you started.
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis
 search.product: Windows 10
 ms.service: microsoft-365-security
@@ -31,7 +31,7 @@ search.appverid: met150
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Once the Defender Experts for XDR team is ready to onboard you, _defenderexpertscomms@microsoft.com_ will send you a **welcome email** that provides you with the steps needed to activate the service. Ask your global administrator to follow these steps.
+Once the Defender Experts for XDR team is ready to onboard you, we’ll reach out to get you started.
 
 ## Activate your trial license
 
@@ -43,8 +43,8 @@ Once the Defender Experts for XDR team is ready to onboard you, _defenderexperts
 
 By default, Defender Experts for XDR require the following permissions to investigate incidents and notify you when you need to take action:
 
-- **Service provider access** - this permission lets our experts sign in to your tenant and deliver services based on assigned security roles; [learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview).
-- **Security reader** - this built-in Azure AD role lets our experts investigate incidents and provide guidance on necessary response actions.
+- **Service provider access** - This permission lets our experts sign in to your tenant and deliver services based on assigned security roles. For details [learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview).
+- **Security reader** - This built-in Azure AD role lets our experts investigate incidents and provide guidance on necessary response actions.
 
 You can also provide our experts the following additional permissions to investigate incidents on your behalf:
 
