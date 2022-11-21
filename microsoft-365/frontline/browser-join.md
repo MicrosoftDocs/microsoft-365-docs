@@ -87,7 +87,7 @@ After you create the policy, assign it to the users in your organization who sch
 
 :::image type="content" source="media/browser-join-waiting-room.png" alt-text="Screenshot of a custom waiting room in Teams when joining from a browser on a mobile device" lightbox="media/browser-join-waiting-room.png":::
 
-To learn more, see [Custom organization branding for Teams meetings](/microsoftteams/meeting-themes).
+To learn more, see [Meeting themes for Teams meetings](/microsoftteams/meeting-themes).
 
 ## Supported browsers
 
