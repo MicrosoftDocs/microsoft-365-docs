@@ -87,7 +87,7 @@ Use the tables in the following sections to learn more about how your existing i
 |:-------|:-----|:-------|
 |MDI Admin|<ul><li>Configuration\security setting \read</li><li> Configuration\ security setting \manage</li><li>Configuration\ system setting \read</li><li>Configuration\ system setting \manage</li><li>Security operations\security data\alerts\manage </li><li>Security operations\security data\read only </li><li>Configuration\authorization\manage Configuration\authorization\read</li></ul>|
 |MDI User|<ul><li>Security operations\security data\read only </li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li><li>Security operations\security data\alerts\manage </li><li>Configuration\ security setting \manage</li></ul>|
-|>MDI Viewer|<ul><li>Security operations\security data\read only</li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li></ul>|
+|MDI Viewer|<ul><li>Security operations\security data\read only</li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li></ul>|
 
 >[!NOTE]
 > Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://portal.cloudappsecurity.com). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).
@@ -108,7 +108,8 @@ Use this table to learn about the permissions assigned by default in the Microso
 |Compliance Administrator||<ul><li>Security operations\ security data basics\ read only</li><li>Security operations\ security data\ alerts\ manage </li></ul>|
 |Compliance Data Administrator||<ul><li>Security operations\ security data basics\ read only</li><li>Security operations\ security data\ alerts\ manage </li></ul>|
 
-By activating the Microsoft 365 Defender RBAC model, users with Security Reader and Global Reader roles will have access to Defender for Endpoint data.
+>[!NOTE]
+>By activating the Microsoft 365 Defender RBAC model, users with Security Reader and Global Reader roles will have access to Defender for Endpoint data.
 
 ## Next steps
 
