@@ -29,6 +29,8 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
+- [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -42,7 +44,7 @@ Centralized permissions management is supported for the following solutions:
 
 | Solution| Description |
 |:-------|:-----|:-------|
-|Microsoft 365 Defender |  |
+|Microsoft 365 Defender | Centralized permissions management for Microsoft 365 Defender experiences.|
 |Microsoft Defender for Endpoint | Full support for all endpoint data and actions. All roles are compatible with the device group's scope as defined on the device groups page.|
 | Microsoft Defender for Office 365 | Support for all scenarios that were controlled by <strong>Exchange Online Protection roles</strong> (EOP), configured in the Microsoft 365 Defender portal under **Permissions** > **Email & collaboration roles**.|
 | Microsoft for Identity | Full support for all identity data and actions.|
