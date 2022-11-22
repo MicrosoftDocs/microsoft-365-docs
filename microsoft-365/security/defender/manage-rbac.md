@@ -53,7 +53,7 @@ Centralized permissions management is supported for the following solutions:
 > Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses.
 
 >[!Note]
-> This offering isn't currently available for Microsoft Defender for CloudApps
+> This offering isn't currently available for Microsoft Defender for CloudApps.
 
 ## Before you start
 

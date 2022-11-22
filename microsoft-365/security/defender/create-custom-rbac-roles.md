@@ -70,14 +70,14 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
     >
     > If you have assigned custom permissions and new permissions are added to this category, you will need to re-assign your roles with the new permissions if needed.
 
-8. Once you have selected your permissions, select **Apply** > **Next** to assign users and data sources.
+8. Once you have selected your permissions, select **Apply** and then **Next** to assign users and data sources.
 9. Select **Add assignments** and Enter the Assignment name.
 10. Under **data sources**, choose if the assigned users will have the selected permissions across all the available products, or only for specific data sources:
 
      :::image type="content" source="../../media/defender/m365-defender-rbac-assignments.png" alt-text="Screenshot of the assignments screen" lightbox="../../media/defender/m365-defender-rbac-assignments.png":::
 
     >[!Note]
-    > By selecting **Choose all data sources** all supported data sources within Microsoft 365 Defender RBAC and any future data sources that will be added will be automatically assigned to this role.
+    > By selecting **Choose all data sources** all supported data sources within Microsoft 365 Defender RBAC and any future data sources that are added will be automatically assigned to this role.
 
 11. In **Assigned users and groups** choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
 

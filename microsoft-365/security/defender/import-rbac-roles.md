@@ -34,18 +34,27 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## Pre-requisites
+
+- You need to be a Global Administrator or Security Administrator in Azure Active Directory to:
+
+  - gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
+  - manage roles and permissions in Microsoft 365 Defender RBAC.
+
+- To access and manage roles and permissions, without being a Global Administrator or Security Administrator in Azure Active Directory, you need to have the **Authorization** permission granted in Microsoft 365 Defender RBAC. For details on how to assign the Authorization permission, see [Create a role to access and manage roles and permissions](../defender/create-custom-rbac-roles.md#create-a-role-to-access-and-manage-roles-and-permissions).
+
 ## Import roles to Microsoft 365 Defender RBAC from individual RBAC models
 
 You can import existing roles that are maintained as part of individual supported products (for example, Microsoft Defender for Endpoint) to the Microsoft 365 Defender RBAC model.
 
-Importing roles will migrate and maintain the data for the roles in relation to their permissions and user assignments in the Microsoft 365 Defender RBAC model.
+Importing roles will migrate and maintain the roles with full parity in relation to their permissions and user assignments in the Microsoft 365 Defender RBAC model.
 
 >[!Note]
-> The Microsoft 365 Defender RBAC model is more granular than the individual RBAC models. Once roles are migrated, you can modify the imported roles and change the level of permissions as needed.
+> Once roles are migrated, you can modify the imported roles and change the level of permissions as needed.
 
 The following steps guide you on how to import roles into Microsoft 365 Defender RBAC.
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as global administrator or security administrator.
+1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 4. Select **Import role**.
@@ -57,7 +66,7 @@ The following steps guide you on how to import roles into Microsoft 365 Defender
 7. Review the roles you want to import and select **Submit**.
 8. A confirmation message appears and at this point you select **Done**.  
 
-Now that you have imported your roles you will be able to [View and edit roles](edit-delete-rbac-roles.md) and Activate the workloads.
+Now that you have imported your roles you will be able to [View and edit roles](edit-delete-rbac-roles.md) and activate the workloads.
 
 For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new or imported roles, you’ll need to activate the new Microsoft 365 Defender RBAC model. For more information, see [Activate the workloads](activate-defender-rbac.md).
 
