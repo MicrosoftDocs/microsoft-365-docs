@@ -84,7 +84,7 @@ mdatp health --field release_ring
 If your device isn't already in the External(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
 
 ```bash
-defaults write com.microsoft.autoupdate2 ChannelName -string External
+defaults write com.microsoft.autoupdate2 ChannelName -string Preview
 ```
 
 Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the device group remotely. For more information, see [Set preferences for Microsoft 365 Defender for Endpoint on macOS](mac-preferences.md).
