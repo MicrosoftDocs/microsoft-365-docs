@@ -31,6 +31,8 @@ In Microsoft 365 Defender role-based access control (RBAC) you can select permis
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
+- [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
