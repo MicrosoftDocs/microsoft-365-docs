@@ -192,7 +192,7 @@ On the **Target users** page, select who will receive the simulation. Configure 
   - ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users**: In the **Add users** flyout that appears, you can find users and groups based on the following criteria:
 
 > [!NOTE]
-> Dynamic Distribution Groups cannot be used to target users.
+> Dynamic distribution groups cannot be used to target users.
 
     - **Search for users or groups**: In box, you can type part of the **Name** or **Email address** of the user or group and then press Enter. You can select some or all of the results. When you're finished, click **Add x users**.
 
