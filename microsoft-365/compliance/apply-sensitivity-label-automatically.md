@@ -90,7 +90,6 @@ Use the following table to help you identify the differences in behavior for the
 |:-----|:-----|:-----|
 |App dependency|Yes ([minimum versions](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No \* |
 |Restrict by location|No |Yes |
-|Conditions: Trainable classifiers|Yes |In preview |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
@@ -417,7 +416,7 @@ When you first turn on your policy, you initially see a value of 0 for files to 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
 
 - **Content Explorer List Viewer** role group lets you see a file's label but not the file's contents.
-- **Content Explorer Content Viewer** role group, and **Information Protection** and **Information Protection Investigators** role groups (currently in preview) let you see the file's contents.
+- **Content Explorer Content Viewer** role group, and **Information Protection** and **Information Protection Investigators** role groups let you see the file's contents.
 
 > [!TIP]
 > You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
