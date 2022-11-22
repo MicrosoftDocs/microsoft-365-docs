@@ -151,7 +151,7 @@ For more information about holds, see:
 
 ### Manage review set tags
 
-This role lets users create, edit, and delete review set tags for cases they can access. Users will need at least have the *Review* role and this role to [manage tags](/microsoft-365/compliance/tagging-documents#creating-and-applying-tags) during reviews.
+This role lets users create, edit, and delete review set tags for cases they can access. Users will need to at least have the *Review* role and this role to [manage tags](/microsoft-365/compliance/tagging-documents#creating-and-applying-tags) during reviews.
 
 ### Preview
 
