@@ -17,12 +17,9 @@ description: Learn how to use universal annotations to mark and collaborate on i
 
 # Use annotations to comment and collaborate in Microsoft Syntex
 
-You can use the annotations feature in Microsoft Syntex to add notes and comments to your content in document libraries — without modifying the original files, so the original records are preserved.
+You can use the annotations feature in Microsoft Syntex to add notes and comments to your content in document libraries — either for yourself or for collaborating with others. YOu can use annotations without modifying the original files, so the original records are preserved.
 
-you can preserve original records for critical business processes.  
-including pen and highlighterps, and comme
-on any content — not just Office documents — without modifying the original files, so the original 
-records are preserved
+Annotation tools currently include pen and highlighter, where can choose the colors you want to use, and an eraser for removing ink strokes and previous annotations. The feature is currently available for .pdf and .tiff file types. More annotation tools and file types will be added in future releases.
 
 > [!NOTE]
 > This feature is available only for users who are licensed for Syntex. 
