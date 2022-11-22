@@ -38,14 +38,14 @@ Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suit
 
 Here's a list of the different Microsoft 365 Defender products and solutions:
 
-- <a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Microsoft Defender for Endpoint</b></a>
-- <a href="/microsoft-365/security/office-365-security/overview"><b>Microsoft Defender for Office 365</b></a>
-- <a href="/defender-for-identity/"><b>Microsoft Defender for Identity</b></a>
-- <a href="/cloud-app-security/"><b>Microsoft Defender for Cloud Apps</b></a>
-- <a href="/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management"><b>Microsoft Defender Vulnerability Management</b></a>
-- <a href="/azure/active-directory/identity-protection/overview-identity-protection"><b>Azure Active Directory Identity Protection</b></a>
-- <a href="/microsoft-365/compliance/dlp-learn-about-dlp"><b>Microsoft Data Loss Prevention</b></a> 
-- <a href="/defender-cloud-apps/app-governance-manage-app-governance"><b>App Governance</b></a>
+- [**Microsoft Defender for Endpoint**](../defender-endpoint/microsoft-defender-endpoint.md)
+- [**Microsoft Defender for Office 365**](../office-365-security/microsoft-defender-for-office-365-product-overview.md)
+- [**Microsoft Defender for Identity**](../defender-for-identity/what-is.md)
+- [**Microsoft Defender for Cloud Apps**](/defender-cloud-apps/what-is-defender-for-cloud-apps)
+- [**Microsoft Defender Vulnerability Management**](../defender-vulnerability-management/defender-vulnerability-management.md)
+- [**Azure Active Directory Identity Protection**](/azure/active-directory/identity-protection/overview-identity-protection)
+- [**Microsoft Data Loss Prevention**](/microsoft-365/compliance/dlp-learn-about-dlp)
+- [**App Governance**](/defender-cloud-apps/app-governance-manage-app-governance)
 
 Note that Azure Active Directory Identity Protection (AAD IP) is in public preview and may be substantially modified before it's commercially released. AAD IP is available to customers only if they already have Microsoft 365 Defender. 
 
@@ -106,6 +106,4 @@ Microsoft 365 Defender licensing requirements must be met before you can enable 
 - [Licensing requirements](prerequisites.md#licensing-requirements)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
 
-## See also
 
-- [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
