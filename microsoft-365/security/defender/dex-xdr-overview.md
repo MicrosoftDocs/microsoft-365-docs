@@ -1,3 +1,4 @@
+---
 title: What is Microsoft Defender Experts for XDR offering
 ms.reviewer:
 description: Defender Experts for XDR augments your SOC with a combination of automation and human expertise
