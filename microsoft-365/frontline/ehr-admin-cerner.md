@@ -165,11 +165,7 @@ Key features of the patient experience
 
 ## Get insight into Virtual Appointments usage
 
-You can use the following reports in the Teams admin center to gain insight into EHR-integrated virtual appointment usage in your organization.
-
-- The [EHR connector Virtual Appointments report](ehr-connector-report.md) gives you an overview of EHR-integrated virtual appointment activity in your organization. You can view a breakdown of data for each appointment that took place for a given date range. The data includes the staff member who conducted the appointment, duration, the number of attendees, and whether the appointment was within the allocation limit.
-
-- The [Virtual Appointments usage report](virtual-appointments-usage-report.md) provides detailed analytics for virtual appointments scheduled and conducted from multiple entry points, including Teams EHR-integrated meetings conducted from your EHR system. You can view key metrics such as lobby wait time, appointment duration, and no shows.
+The [EHR connector Virtual Appointments report](ehr-connector-report.md) in the Teams admin center gives you an overview of EHR-integrated virtual appointment activity in your organization. You can view a breakdown of data for each appointment that took place for a given date range. The data includes the staff member who conducted the appointment, duration, the number of attendees, department, and whether the appointment was within the allocation limit.
 
 ## Privacy and location of data
 

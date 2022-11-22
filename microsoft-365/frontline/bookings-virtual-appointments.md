@@ -198,8 +198,7 @@ To learn more, see [Queue view in Bookings](https://support.microsoft.com/office
 Admins can use the following reports in the Teams admin center to gain insight into usage activity and trends in your organization. Use this information to help optimize Virtual Appointments to deliver better business outcomes.
 
 - The [Virtual Appointments usage report](virtual-appointments-usage-report.md) gives you an overview of Teams Virtual Appointments activity in your organization. The report shows detailed analytics for virtual appointments including Bookings appointments. You can view key metrics such as total number of appointments, appointment duration, lobby wait time, and no shows.
-
-- The [Advanced Virtual Appointments activity report](virtual-appointments-active-user-report.md) provides usage information for advanced Virtual Appointments capabilities that are available with Teams Premium (Preview).
+- The [Advanced Virtual Appointments activity report](advanced-virtual-appointments-activity-report.md) provides usage information for advanced Virtual Appointments capabilities that are available with Teams Premium (Preview).
 
 ## Related articles
 

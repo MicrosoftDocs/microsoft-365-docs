@@ -60,7 +60,6 @@ Review the following information to get an understanding of the overall integrat
 | **Action**| You [request access to the Teams app](#request-access-to-the-teams-app).  | We create a public and private key certificate and upload them to Epic. | You complete configuration steps in the EHR connector configuration portal.  | You work with your Epic technical specialist to configure FDI records in Epic.| You complete testing in your test environment. |
 | **Outcome**| We authorize your organization for testing. | Epic syncs the public key certificate. | You receive FDI records for Epic configuration. | Configuration completed. Ready to test. | Full validation of flows and decision to move to production. |
 
-
 ### Request access to the Teams app
 
 You'll need to request access to the Teams app.
@@ -138,7 +137,7 @@ To enable SMS notifications, your Microsoft 365 admin completes the following st
 
     - Allow Microsoft to send SMS notifications to patients on behalf of your organization.
     - Acknowledge that you'll ensure attendees have consented to send and receive SMS messages.
-    
+
     :::image type="content" source="media/ehr-connector-epic-sms-notifications.png" alt-text="Screenshot of the SMS notifications page, showing consent check boxes and the option to generate a phone number." lightbox="media/ehr-connector-epic-sms-notifications.png":::
 
 1. Under **Your phone numbers**, select **Generate a new phone number** to generate a phone number for your organization. Doing this starts the process to request and generate a new phone number. This process might take up to 2 minutes to complete.
@@ -199,12 +198,12 @@ When the configuration information is approved by the Epic administrator, you'll
 
 The context token for device test can be found in the patient integration record. The Epic customer analyst must provide these records to Epic to complete the virtual appointments configuration in Epic. For more information, see the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.epic.com/Search/GetFile?Url=1!68!100!100100357).
 
-> [!Note]  
+> [!NOTE]  
 > At any time the Microsoft 365 or Epic customer analyst can sign in to the configuration portal to view integration records and change organization configuration, as needed.
 
 :::image type="content" source="media/ehr-connector-epic-finish.png" alt-text="Screenshot of the Review and Finish page, showing integration information." lightbox="media/ehr-connector-epic-finish.png":::
 
-> [!Note]
+> [!NOTE]
 > The Epic customer analyst must complete the approval process for each FHIR base URL that's configured by the Microsoft 365 admin.
 
 ## Launch Teams Virtual Appointments
@@ -263,16 +262,12 @@ Key features of the patient experience:
 
 - Patients can test their video and microphone in the lobby before they join the appointment.
 
-> [!Note]
+> [!NOTE]
 > Epic, MyChart, Haiku, and Canto are trademarks of Epic Systems Corporation.
 
 ## Get insight into Virtual Appointments usage
 
-You can use the following reports in the Teams admin center to gain insight into EHR-integrated virtual appointment usage in your organization.
-
-- The [EHR connector Virtual Appointments report](ehr-connector-report.md) gives you an overview of EHR-integrated virtual appointment activity in your organization. You can view a breakdown of data for each appointment that took place for a given date range. The data includes the staff member who conducted the appointment, duration, the number of attendees, and whether the appointment was within the allocation limit.
-
-- The [Virtual Appointments usage report](virtual-appointments-usage-report.md) provides detailed analytics for virtual appointments scheduled and conducted from multiple entry points, including Teams EHR-integrated meetings conducted from your EHR system. You can view key metrics such as lobby wait time, appointment duration, and no shows.
+The [EHR connector Virtual Appointments report](ehr-connector-report.md) in the Teams admin center gives you an overview of EHR-integrated virtual appointment activity in your organization. You can view a breakdown of data for each appointment that took place for a given date range. The data includes the staff member who conducted the appointment, duration, the number of attendees, department, and whether the appointment was within the allocation limit.
 
 ### Privacy and location of data
 

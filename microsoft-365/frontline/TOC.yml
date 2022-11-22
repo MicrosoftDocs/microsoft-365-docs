@@ -128,7 +128,7 @@
       - name: Virtual Appointments usage report
         href: virtual-appointments-usage-report.md
       - name: Advanced Virtual Appointments activity report
-        href: virtual-appointments-active-user-report.md
+        href: advanced-virtual-appointments-activity-report.md
       - name: EHR connector Virtual Appointments report
         href: ehr-connector-report.md  
     - name: Help your clients and customers use virtual appointments
