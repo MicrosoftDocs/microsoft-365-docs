@@ -24,7 +24,7 @@ description: "Learn about the new Microsoft 365 subscription names."
 
 # Office 365 is now Microsoft 365
 
-We've changed some of our Office 365 and Microsoft 365 subscription names. You don't need to do a thing. Your services, apps and features are staying the same, along with the price of your subscription. Your subscription name will automatically update in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a> and your billing statements will update on or after April 21, 2020.
+We've changed some of our Office 365 and Microsoft 365 subscription names. You don't need to do a thing. Your services, apps and features are staying the same, along with the price of your subscription. Your subscription name will automatically update in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a> and your billing statements will update on or after April 21, 2023.
 
 - **Office 365 Business Essentials** is now **Microsoft 365 Business Basic**
 - **Office 365 Business Premium** is now **Microsoft 365 Business Standard**
