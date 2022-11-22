@@ -249,11 +249,11 @@ Specific to the Azure Information Protection unified labeling client:
 
 If the label includes sensitive info types for the configured conditions, you'll see an option at the end of the label creation or editing process to automatically create an auto-labeling policy that's based on the same auto-labeling settings.
 
-Because auto-labeling policies don't support trainable classifiers:
+However, if the label contains trainable classifiers as a label condition:
 
-- If the label conditions contain just trainable classifiers, you won't see the option to automatically create an auto-labeling policy.
+- When the label conditions contain just trainable classifiers, you won't see the option to automatically create an auto-labeling policy.
 
-- If the label conditions contain trainable classifiers and sensitivity info types, an auto-labeling policy will be created for just the sensitive info types. 
+- When the label conditions contain trainable classifiers and sensitivity info types, an auto-labeling policy will be created for just the sensitive info types.
 
 Although an auto-labeling policy is automatically created for you by auto-populating the values that you would have to select manually if you created the policy from scratch, you can still view and edit the values before they are saved.
 
