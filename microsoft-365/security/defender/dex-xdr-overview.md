@@ -54,8 +54,8 @@ In addition to the constantly updated research and intelligence tailored for the
 
 To enable us to get started with this managed service, we require the following prerequisites:
 
-- Microsoft Defender for Endpoint P2 must be licensed for devices and users in scope for the preview and Microsoft Defender Antivirus-enabled in active mode and devices onboarded to Defender for Endpoint. (required for endpoint detection and response capabilities)
-- Azure Active Directory Premium P1 must be licensed for all users and enabled. (required for enabling secure service provider access)
+- Microsoft Defender for Endpoint P2 must be licensed for devices and users in scope for the preview and Microsoft Defender Antivirus-enabled in active mode and devices onboarded to Defender for Endpoint (required for endpoint detection and response capabilities).
+- Azure Active Directory Premium P1 must be licensed for all users and enabled (required for enabling secure service provider access).
 
 Aside from the requirements stated above, to get Defender Experts for XDR coverage for the following eligible products, you must have their appropriate product licenses:
 
