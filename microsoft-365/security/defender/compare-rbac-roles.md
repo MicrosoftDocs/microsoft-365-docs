@@ -86,15 +86,15 @@ Use the tables in the following sections to learn more about how your existing i
 | Defender for Identity permission| Unified RBAC permission|
 |:-------|:-----|:-------|
 |MDI Admin|<ul><li>Configuration\security setting \read</li><li> Configuration\ security setting \manage</li><li>Configuration\ system setting \read</li><li>Configuration\ system setting \manage</li><li>Security operations\security data\alerts\manage </li><li>Security operations\security data\read only </li><li>Configuration\authorization\manage Configuration\authorization\read</li></ul>|
-|MDI User|<ul><li>Security operations\security data\read only </li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li><li>Security operations\security data\alerts\manage </li><li>Configuration\ security setting \manage</li></ul|
-|<ul><li>MDI Viewer</li><li>Security operations\security data\read only</li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li></ul>|
+|MDI User|<ul><li>Security operations\security data\read only </li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li><li>Security operations\security data\alerts\manage </li><li>Configuration\ security setting \manage</li></ul>|
+|>MDI Viewer|<ul><li>Security operations\security data\read only</li><li>Configuration\ system setting \read</li><li>Configuration\ security setting \read</li></ul>|
 
 >[!NOTE]
-> Defender for Identity experiences will also adhere to permissions granted from portal.cloudapsecurity.com. Learn more [here](https://go.microsoft.com/fwlink/?linkid=2202729)*
+> Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://portal.cloudappsecurity.com). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).
 
 ### Azure Active Directory Global roles access
 
-Users assigned with Azure AD global roles may also have access to the Microsoft 365 Defender portal.
+Users assigned with Azure Active Directory global roles may also have access to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
 Use this table to learn about the permissions assigned by default in the Microsoft 365 Defender RBAC to each global Azure Active Directory role.
 
