@@ -383,6 +383,8 @@ The actions that are available in a rule are dependent on the locations that hav
 
 > [!IMPORTANT]
 > For SharePoint Online and OneDrive for Business locations documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all external users, while internal users will continue to have access to the document.
+> 
+> To configure encryption of email messages, the administrator must have the Information Rights Management role in Exchange.
 
 #### Exchange location actions
 
