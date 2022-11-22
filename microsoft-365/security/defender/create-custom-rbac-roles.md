@@ -34,7 +34,7 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Pre-requisite
+## Pre-requisites
 
 - You need to be a Global Administrator or Security Administrator in Azure Active Directory to:
 
@@ -45,25 +45,25 @@ search.appverid: met150
 
 ## Create a custom role
 
-The following steps guide you on how to create custom roles in Microsoft 365 Defender RBAC. It assumes that you are a global administrator or security administrator in Azure Active Directory or have the **Authorization** manage permission assigned in Microsoft 365 Defender RBAC.
+The following steps guide you on how to create custom roles in Microsoft 365 Defender RBAC. It assumes that you are Global Administrator or Security Administrator in Azure Active Directory or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC.
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 4. Select **Create custom role**.
 5. Enter the Role name and description.
-6. Select **Next** to choose the permissions you want to assign. Permissions are organized in three different groups:
+6. Select **Next** to choose the permissions you want to assign. Permissions are organized in three different categories:
 
    :::image type="content" source="../../media/defender/m365-defender-rbac-permissions.png" alt-text="Screenshot of the permissions screen" lightbox="../../media/defender/m365-defender-rbac-permissions.png":::
 
-7. Select a permission group (for example, Security configuration), and then review the permissions available. You can choose to assign the following different levels of permissions:
+7. Select a permission category (for example, Security configuration), and then review the permissions available. You can choose to assign the following different levels of permissions:
     - Select all read-only permissions – Users will be assigned all read-only permissions in this category.
     - Select all read and manage permissions – Users will be assigned all permissions in this category (read and manage permissions).
     - Select custom permissions – Users will be assigned the custom permissions selected.
 
    :::image type="content" source="../../media/defender/m365-defender-rbac-permissions-configuration-flyout.png" alt-text="Screenshot of the permissions flyout screen" lightbox="../../media/defender/m365-defender-rbac-permissions-configuration-flyout.png":::
 
-    For more information on the RBAC custom permissions, see [About RBAC custom permissions](custom-permissions-details.md)
+    For more information on the RBAC custom permissions, see [About RBAC custom permissions](custom-permissions-details.md).
 
     >[!Note]
     > If all read-only or all read and manage permissions are assigned, any new permissions added to this category in the future will be automatically assigned under this role.
@@ -77,9 +77,9 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
      :::image type="content" source="../../media/defender/m365-defender-rbac-assignments.png" alt-text="Screenshot of the assignments screen" lightbox="../../media/defender/m365-defender-rbac-assignments.png":::
 
     >[!Note]
-    > By selecting **Choose all data sources** , all supported data sources within Microsoft 365 Defender RBAC and any future data sources that will be added will be automatically assigned to this role.
+    > By selecting **Choose all data sources** all supported data sources within Microsoft 365 Defender RBAC and any future data sources that will be added will be automatically assigned to this role.
 
-11. In **Assigned users and groups** – choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
+11. In **Assigned users and groups** choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
 
     >[!Note]
     > In Microsoft 365 Defender RBAC, you can create as many assignments as needed under the same role with same permissions. For example, you can have an assignment within a role that has access to all data sources and then a separate assignment for a team that only needs access to Endpoint alerts from the Defender for Endpoint data source. This enables maintaining the minimum number of roles.
@@ -90,26 +90,26 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
 
 To access and manage roles and permissions, without being a Global Administrator or Security Administrator in Azure Active Directory, you need to create a role with **Authorization** permissions. To create this role:
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as global administrator or security administrator.
+1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as Global Administrator or Security Administrator.
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender.
 4. Select **Create custom role**.
 5. Enter the Role name and description.
 6. Select **Next** and choose the **Configuration** option.
-7. On the Configuration category flyout, choose **Select custom permissions** and under **Authorization** choose
+7. On the Configuration category flyout, choose **Select custom permissions** and under **Authorization** select either:
     - Select all permissions - users will be able to create and manage roles and permissions.
     - Read-only - uses will be able to access and view roles and permissions in a read-only mode.
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-authorization-role.png" alt-text="Screenshot of the Permissions and roles page" lightbox="../../media/defender/m365-defender-rbac-authorization-role.png":::
 
-8. select **Apply** > **Next** to assign users and data sources.
-9. Select **Add assignments** and Enter the Assignment name.
-10. Under **data sources**, choose if the assigned users will have the selected permissions across all the available products, or only for specific data sources.
+8. select **Apply** and then **Next** to assign users and data sources.
+9. Select **Add assignments** and enter the Assignment name.
+10. Under **data sources** choose if the assigned users will have the selected permissions across all the available products, or only for specific data sources.
 11. In **Assigned users and groups** – choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
 12. Select **Next** to review and finish creating the role and then select **Submit**.
 
 >[!Note]
->For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new or imported roles, you’ll need to activate the new Microsoft 365 Defender RBAC model.
+>For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new or imported roles, you’ll need to activate the new Microsoft 365 Defender RBAC model. For more information, see [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md).
 
 ## Next steps
 
