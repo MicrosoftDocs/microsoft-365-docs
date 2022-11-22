@@ -1,5 +1,5 @@
 ---
-title: Use annotations in document libraries in Microsoft Syntex
+title: Use annotations to comment and collaborate in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,13 +11,18 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-ms.localizationpriority: high
+ms.localizationpriority: medium
 description: Learn how to use universal annotations to mark and collaborate on items in SharePoint document libraries using Microsoft Syntex.
 ---
 
-# Use annotations in document libraries in Microsoft Syntex
+# Use annotations to comment and collaborate in Microsoft Syntex
 
-Intro
+You can use the annotations feature in Microsoft Syntex to add notes and comments to your content in document libraries — without modifying the original files, so the original records are preserved.
+
+you can preserve original records for critical business processes.  
+including pen and highlighterps, and comme
+on any content — not just Office documents — without modifying the original files, so the original 
+records are preserved
 
 > [!NOTE]
 > This feature is available only for users who are licensed for Syntex. 
