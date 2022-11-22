@@ -8,7 +8,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 01/29/2021
+ms.date: 11/22/2022
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -52,8 +52,11 @@ An alert is triggered, and a security playbook starts an automated investigation
    - Either [an alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins; or
    - A security analyst [starts an automated investigation](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Explorer](threat-explorer.md).
 2. While an automated investigation runs, it gathers data about the email in question and entities related to that email. Such entities can include files, URLs, and recipients. The investigation's scope can increase as new and related alerts are triggered.
-3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results may include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any existing threats that were found.
+
+3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results might include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any existing threats that were found.
+
 4. Your security operations team reviews the [investigation results and recommendations](air-view-investigation-results.md), and [approves or rejects remediation actions](air-review-approve-pending-completed-actions.md).
+
 5. As pending remediation actions are approved (or rejected), the automated investigation completes.
 
 Note: If the investigation does not result in recommended actions the automated investigation will close and the details of what was reviewed as part of the automated investigation will still be available on the investigation page.
@@ -124,4 +127,3 @@ Permissions are granted through certain roles, such as those that are described 
 - [See details and results of an automated investigation](air-view-investigation-results.md#view-details-of-an-investigation)
 - [Review and approve pending actions](air-remediation-actions.md)
 - [View pending or completed remediation actions](air-review-approve-pending-completed-actions.md)
-

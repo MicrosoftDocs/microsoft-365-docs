@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/manage/servicenow-aad-oauth-token.md",
+      "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/servicenow-basic-authentication.md",
+      "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/manage/servicenow-support-integration.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-virtual-agent-integration",
       "redirect_document_id": true
