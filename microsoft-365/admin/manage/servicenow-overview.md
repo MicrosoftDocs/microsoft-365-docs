@@ -89,7 +89,7 @@ After you've downloaded the app, go to the Microsoft 365 setup wizard in your Se
 
 To open the setup wizard, type **Microsoft 365** in the ServiceNow navigator and select **Setup**. 
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-wizard-start-setup.png" alt-text="Start setup wizard.":::
+:::image type="content" source="../../media/ServiceNow-guide/servicenow-wizard-start-setup.png" alt-text="Start setup wizard.":::
 
 - If you want to get started without setting up the Microsoft 365 support integration app, you can select the option to **Continue without any setup**. This option continues to provide basic recommended solutions.
 - To set up the application with full functionality, select **Start setup**, and then follow the instructions in [Integrate Microsoft 365 with ServiceNow Virtual Agent](../manage/servicenow-virtual-agent-integration.md).
