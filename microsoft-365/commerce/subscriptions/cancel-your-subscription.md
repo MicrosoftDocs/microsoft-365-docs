@@ -34,22 +34,17 @@ This article only applies to canceling **Dynamics 365**, **Intune**, **Power Pla
 > [!WARNING]
 > Before you cancel a subscription, make sure your users [save their data](#save-your-data).
 
-In this article:
+**In this article:**
 
-- [Cancel your Microsoft business subscription](#cancel-your-microsoft-business-subscription)
-  - [Before you begin](#before-you-begin)
-  - [What's the easiest way to cancel?](#whats-the-easiest-way-to-cancel)
-  - [How do I cancel my free trial?](#how-do-i-cancel-my-free-trial)
-  - [What if I bought my subscription through a partner?](#what-if-i-bought-my-subscription-through-a-partner)
-  - [Determine your cancellation options](#determine-your-cancellation-options)
-    - [If you have a billing profile](#if-you-have-a-billing-profile)
-    - [If you don't have a billing profile](#if-you-dont-have-a-billing-profile)
-  - [Steps to cancel your subscription](#steps-to-cancel-your-subscription)
-  - [Save your data](#save-your-data)
-  - [Next steps](#next-steps)
-    - [Uninstall Office (optional)](#uninstall-office-optional)
-    - [Close your account (optional)](#close-your-account-optional)
-  - [Related content](#related-content)
+[Before you begin](#before-you-begin)\
+[What's the easiest way to cancel?](#whats-the-easiest-way-to-cancel)\
+[How do I cancel my free trial?](#how-do-i-cancel-my-free-trial)\
+[What if I bought my subscription through a partner?](#what-if-i-bought-my-subscription-through-a-partner)\
+[Determine your cancellation options](#determine-your-cancellation-options)\
+[Steps to cancel your subscription](#steps-to-cancel-your-subscription)\
+[Save your data](#save-your-data)\
+[Next steps](#next-steps)\
+[Related content](#related-content)
 
 ## Before you begin
 
