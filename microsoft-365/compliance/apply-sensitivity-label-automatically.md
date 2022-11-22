@@ -244,9 +244,6 @@ Specific to the Azure Information Protection unified labeling client:
 
 ### Convert your label settings into an auto-labeling policy
 
-> [!NOTE]
-> This option is gradually rolling out.
-
 If the label includes sensitive info types for the configured conditions, you'll see an option at the end of the label creation or editing process to automatically create an auto-labeling policy that's based on the same auto-labeling settings.
 
 However, if the label contains trainable classifiers as a label condition:
