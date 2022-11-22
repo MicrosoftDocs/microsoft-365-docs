@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 11/22/2022
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -18,7 +19,6 @@ ms.topic: overview
 ms.collection:
 - m365-security
 - tier2
-ms.date:
 search.appverid: met150
 ---
 
