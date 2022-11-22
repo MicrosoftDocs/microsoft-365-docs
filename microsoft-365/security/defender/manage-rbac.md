@@ -74,7 +74,7 @@ All permissions listed within the Microsoft 365 Defender RBAC model align to per
 
 The new Microsoft 365 Defender RBAC model gives you the flexibility to create more granular roles where appropriate, using a principle of least privilege and granting users only the privileges they need. It's important to understand the different permissions available in the Microsoft 365 Defender RBAC model and what their impact is when the model is activated.
 
-Microsoft 365 Defender RBAC is available in an “opt-in” mode. This means Microsoft 365 Defender will continue to respect the existing RBAC models until you activate the new RBAC model per workload. For more information about activating Microsoft 365 Defender RBAC, see [Active Microsoft 365 Defender RBAC](activate-defender-rbac.md).
+Microsoft 365 Defender RBAC is available in an “opt-in” mode. This means Microsoft 365 Defender will continue to respect the existing RBAC models until you activate the new RBAC model per workload. For more information about activating Microsoft 365 Defender RBAC, see [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md).
 
 ## Start using Microsoft 365 Defender RBAC model
 

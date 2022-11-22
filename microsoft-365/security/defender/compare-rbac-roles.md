@@ -21,7 +21,11 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Compare Microsoft 365 Defender role-based access control (RBAC)
+# Compare Microsoft 365 Defender role-based access control (RBAC) permissions
+
+All permissions listed within the Microsoft 365 Defender RBAC model align to existing permissions in the individual RBAC models. Once you activate the Microsoft 365 Defender RBAC model the permissions and assignments configured in your imported roles and will replace the existing roles in the individual RBAC models.
+
+This article describes how existing roles and permissions in Microsoft Defender for Endpoint, Microsoft Defender for Office, Microsoft Defender for Identity, and Azure Active Directory roles map to the roles and permission in the Microsoft 365 Defender RBAC model.
 
 [!INCLUDE[Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,9 +36,9 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Map Microsoft 365 Defender RBAC permissions with existing permissions
+## Map Microsoft 365 Defender RBAC permissions to existing RBAC permissions
 
-Use the tables below to understand how existing individual RBAC role definitions map to your new Microsoft 365 Defender RBAC roles:
+Use the tables in the following sections to learn more about how your existing individual RBAC role definitions map to your new Microsoft 365 Defender RBAC roles:
 
 1. [Map Defender for Endpoint permissions](#map-defender-for-endpoint-permissions-to-the-microsoft-365-defender-rbac-permissions)
 2. [Map Defender for Office 365 (Exchange Online Protection) roles](#map-defender-for-office-365-exchange-online-protection-roles-to-the-microsoft-365-defender-rbac-permissions)
@@ -59,7 +63,7 @@ Use the tables below to understand how existing individual RBAC role definitions
 |Manage portal system settings |Configuration\system setting\manage |
 |Manage endpoint security settings in Microsoft Endpoint Manager* |Not supported - this permission is managed in the Microsoft Endpoint Management portal|
 
-## Map Defender for Office 365 (Exchange Online Protection) roles to the Microsoft 365 Defender RBAC permissions
+### Map Defender for Office 365 (Exchange Online Protection) roles to the Microsoft 365 Defender RBAC permissions
 
 | Defender for Office (EOP) role group| Microsoft 365 Defender RBAC permission|
 |:-------|:-----|:-------|
@@ -77,7 +81,7 @@ Use the tables below to understand how existing individual RBAC role definitions
 |Quarantine|<ul><li>Security operations\ security data\ Email quarantine\ manage|
 |Role Management|<ul><li>Configuration\ Authorization\ manage</li></ul>|
 
-## Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender RBAC permissions
+### Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender RBAC permissions
 
 | Defender for Identity permission| Unified RBAC permission|
 |:-------|:-----|:-------|
@@ -88,11 +92,11 @@ Use the tables below to understand how existing individual RBAC role definitions
 >[!NOTE]
 > Defender for Identity experiences will also adhere to permissions granted from portal.cloudapsecurity.com. Learn more [here](https://go.microsoft.com/fwlink/?linkid=2202729)*
 
-## Azure Active Directory Global roles access
+### Azure Active Directory Global roles access
 
-Users assigned with Azure AD global roles might also have access to the Microsoft 365 Defender portal.
+Users assigned with Azure AD global roles may also have access to the Microsoft 365 Defender portal.
 
-Use this table to learn about the permissions assigned by default to each global Azure AD role. Only the Azure AD roles listed below grant access to any Defender for Endpoint, Defender for Office 365, Defender for Identity and Microsoft 365 Defender data or experiences.
+Use this table to learn about the permissions assigned by default in the Microsoft 365 Defender RBAC to each global Azure Active Directory role.
 
 | AAD role| Microsoft 365 Defender RBAC permissions - Defender for Endpoint scope | Microsoft 365 Defender RBAC permissions – Defender for Office 365 scope|
 |:-------|:-----|:-------|
