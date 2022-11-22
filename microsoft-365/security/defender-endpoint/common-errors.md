@@ -20,14 +20,16 @@ ms.custom: api
 search.appverid: met150
 ---
 
-# Common REST API error codes
-
+# Handling REST API Errors 
 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+HTTP error responses are divided to 2 categories:
+* Client error (400-code level) – client sent an invalid request or not according to defeintions.
+* Server error (500-level) – server failed temporarly to fulfill the request or server error occured. reseding the HTTP reqeust might help
 
-* The error codes listed in the following table may be returned by an operation on any of Microsoft Defender for Endpoint APIs.
+The error codes listed in the following table may be returned by an operation on any of Microsoft Defender for Endpoint APIs.
 * In addition to the error code, every error response contains an error message, which can help resolve the problem.
 * The message is a free text that can be changed.
 * At the bottom of the page, you can find response examples.
@@ -59,8 +61,16 @@ DisabledFeature|Forbidden (403)|Tenant feature is not enabled.
 DisallowedOperation|Forbidden (403)|{the disallowed operation and the reason}.
 NotFound|Not Found (404)|General Not Found error message.
 ResourceNotFound|Not Found (404)|Resource {the requested resource} was not found.
-InternalServerError|Internal Server Error (500)|(No error message, retry the operation)
 TooManyRequests|Too Many Requests (429)|Response will represent reaching quota limit either by number of requests or by CPU.
+InternalServerError|Internal Server Error (500)|(No error message, retry the operation)
+
+
+## Throttling   
+Clients may receive 'Too Many Requests error (429)' when the number of HTTP requests in a given time frame exceed the allowed number of calls per API
+
+The client should delay resubmitting farther HTTPS requests in a way that comply with the rate limitations. 
+
+Ignoring 429 response or trying to resubmit HTTP reqeusts in a shorter time frame will cause the the calculated requests rate to stay high for longer time frame in which the server will keep responding with 429 error code
 
 ## Body parameters are case-sensitive
 
