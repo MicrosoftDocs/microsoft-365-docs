@@ -38,7 +38,7 @@ DDefender Experts for XDR augments your SOC with a combination of automation and
 - **Focus on incidents that matter** - Our experts prioritize incidents and alerts that matter, alleviate alert fatigue, and drive SOC efficiency for your team.
 - **Manage response your way** - Our experts provide detailed, step-by-step, actionable guidance to respond to incidents with the option to act on your behalf as needed.
 - **Access expertise when you need it** - Extend your team’s capacity with access to Defender Experts for assistance on an investigation.
-- **Stay ahead of emerging threats** - OOur experts proactively hunt for emerging threats in your environment, informed by unparalleled threat intelligence and visibility.
+- **Stay ahead of emerging threats** - Our experts proactively hunt for emerging threats in your environment, informed by unparalleled threat intelligence and visibility.
 
 In addition to the constantly updated research and intelligence tailored for the threats currently seen across the various Microsoft 365 Defender signals, as part of the preview, you’ll receive guided response from our security analysts and support from Microsoft’s security-focused service delivery managers (SDMs). In this preview, you can try the service for free and enjoy the following capabilities:
 
@@ -54,8 +54,8 @@ In addition to the constantly updated research and intelligence tailored for the
 
 To enable us to get started with this managed service, we require the following prerequisites:
 
-- Microsoft Defender for Endpoint P2 must be licensed for devices and users in scope for the preview and Microsoft Defender Antivirus-enabled in active mode and devices onboarded to MDE. (Required for EDR capabilities)
-- Azure Active Directory Premium P1 must be licensed for all users and enabled. (Required for enabling secure service provider access)
+- Microsoft Defender for Endpoint P2 must be licensed for devices and users in scope for the preview and Microsoft Defender Antivirus-enabled in active mode and devices onboarded to MDE. (required for endpoint detection and response capabilities)
+- Azure Active Directory Premium P1 must be licensed and enabled for all users (required for enabling secure service provider access)
 
 Aside from the requirements stated above, to get Defender Experts for XDR coverage for the following eligible products, you must have their appropriate product licenses:
 
