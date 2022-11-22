@@ -8,7 +8,7 @@ ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 01/29/2021
+ms.date: 11/22/2022
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -41,7 +41,6 @@ This article describes:
 - The [overall flow of AIR](#the-overall-flow-of-air);
 - [How to get AIR](#how-to-get-air); and
 - The [required permissions](#required-permissions-to-use-air-capabilities) to configure or use AIR capabilities.
-- Changes that are coming soon to your Microsoft 365 Defender portal
 
 This article also includes [next steps](#next-steps), and resources to learn more.
 
@@ -53,9 +52,11 @@ An alert is triggered, and a security playbook starts an automated investigation
    - Either [an alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins; or
    - A security analyst [starts an automated investigation](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Explorer](threat-explorer.md).
 2. While an automated investigation runs, it gathers data about the email in question and entities related to that email. Such entities can include files, URLs, and recipients. The investigation's scope can increase as new and related alerts are triggered.
-3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any threats that were found.
+3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results might include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any existing threats that were found.
 4. Your security operations team reviews the [investigation results and recommendations](air-view-investigation-results.md), and [approves or rejects remediation actions](air-review-approve-pending-completed-actions.md).
 5. As pending remediation actions are approved (or rejected), the automated investigation completes.
+
+Note: If the investigation does not result in recommended actions the automated investigation will close and the details of what was reviewed as part of the automated investigation will still be available on the investigation page.
 
 In Microsoft Defender for Office 365, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team. AIR capabilities save your security operations team time by identifying remediation actions and providing the details needed to make an informed decision.
 
@@ -88,10 +89,14 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 |---|---|---|
 |A potentially malicious URL click was detected|**High**|This alert is generated when any of the following occurs: <ul><li>A user protected by [Safe Links](safe-links.md) in your organization clicks a malicious link</li><li>Verdict changes for URLs are identified by Microsoft Defender for Office 365</li><li>Users override Safe Links warning pages (based on your organization's [Safe Links policy](set-up-safe-links-policies.md).</li></ul> <p> For more information on events that trigger this alert, see [Set up Safe Links policies](set-up-safe-links-policies.md).|
 |An email message is reported by a user as malware or phish|**Informational**|This alert is generated when users in your organization report messages as phishing email using the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md).|
+|Email messages containing malicious file removed after delivery|**Informational**|This alert is generated when any messages containing a malicious file are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).|
 |Email messages containing malware are removed after delivery|**Informational**|This alert is generated when any email messages containing malware are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).|
+|Email messages containing malicious URL removed after delivery|**Informational**|This alert is generated when any messages containing a malicious URL are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).|
 |Email messages containing phish URLs are removed after delivery|**Informational**|This alert is generated when any messages containing phish are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [ZAP](zero-hour-auto-purge.md).|
 |Suspicious email sending patterns are detected|**Medium**|This alert is generated when someone in your organization has sent suspicious email and is at risk of being restricted from sending email. The alert is an early warning for behavior that might indicate that the account is compromised, but not severe enough to restrict the user. <p> Although it's rare, an alert generated by this policy may be an anomaly. However, it's a good idea to [check whether the user account is compromised](responding-to-a-compromised-email-account.md).|
 |A user is restricted from sending email|**High**|This alert is generated when someone in your organization is restricted from sending outbound mail. This alert typically results when an [email account is compromised](responding-to-a-compromised-email-account.md). <p> For more information about restricted users, see [Remove blocked users from the Restricted Users portal in Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
+|Admin triggered manual investigation of email|**Informational**|This alert is generated when an admin triggers the manual investigation of an email from Threat Explorer. This alert notifies your organization that the investigation was started.|
+|Admin triggered user compromise investigation|**Medium**|This alert is generated when an admin triggers the manual user compromise investigation of either an email sender or recipient from Threat Explorer.  This alert notifies your organization that the user compromise investigation was started.|
 
 > [!TIP]
 > To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft Purview compliance portal](../../compliance/alert-policies.md).
@@ -113,38 +118,9 @@ Permissions are granted through certain roles, such as those that are described 
 - Your organization's security operations team (including security readers and those with the **Search and Purge** role)
 - End users
 
-## Changes are coming soon in your Microsoft 365 Defender portal
-
-If you're already using AIR capabilities in Microsoft Defender for Office 365, you're about to see some changes in the [improved Microsoft 365 Defender portal](../defender/microsoft-365-defender-portal.md).
-
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="The Unified Action center" lightbox="../../media/m3d-action-center-unified.png":::
-
-The new and improved Microsoft 365 Defender portal <https://security.microsoft.com> brings together AIR capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) and in [Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
-
-> [!TIP]
-> The new Microsoft 365 Defender portal replaces the following admin centers:
->
-> - Security & Compliance Center (<https://protection.office.com>)
-> - Microsoft 365 Defender (<https://security.microsoft.com>)
->
-> In addition to the URL changing, there's a new look and feel, designed to give your security team a more streamlined experience, with visibility to more threat detections in one place.
-
-### What to expect
-
-The following table lists changes and improvements coming to AIR in Microsoft Defender for Office 365.
-
-|Item|What's changing?|
-|---|---|
-|**Investigations** page|The updated **Investigations** page is more consistent with what you see in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). You'll see some general format and styling changes that align with the new, unified **Investigations** view. For example, the investigation graph has a more unified format.|
-|**Users** tab|The **Users** tab is now the **Mailboxes** tab. Details about users are listed on the **Mailbox** tab.|
-|**Email** tab|The **Email** tab has been removed; visit the **Entities** tab to see a list of email and email cluster items.|
-|**Entities** tab|The **Entities** tab has a tab-in-tab style that includes an all-summary view, and the ability to filter by entity type. The **Entities** tab now includes a **Go hunting** option in addition to the **Open in Explorer** option. You can now use either [Explorer](threat-explorer.md) or [advanced hunting](../defender-endpoint/advanced-hunting-overview.md) to find entities and threats, and filter on results.|
-|**Actions** tab|The updated **Actions** tab now includes a **Pending actions** tab and an **Actions history** tab. Actions can be approved (or rejected) in a side pane that opens when you select a pending action.|
-|**Evidence** tab|A new **Evidence** tab shows the key entity findings related to actions. Actions related to each piece of evidence can be approved (or rejected) in a side pane that opens when you select a pending action.|
-|**Action center**|The updated **Action center** (<https://security.microsoft.com/action-center>) brings together pending and completed actions across email, devices, and identities. To learn more, see Action center. (To learn more, see [The Action center](../defender/m365d-action-center.md).)|
-|**Incidents** page|The **Incidents** page now correlates multiple investigations together to provide a better consolidated view of investigations. ([Learn more about Incidents](../defender/incidents-overview.md).)|
-
 ## Next steps
 
+- [Get started using AIR](office-365-air.md)
 - [See details and results of an automated investigation](air-view-investigation-results.md#view-details-of-an-investigation)
 - [Review and approve pending actions](air-remediation-actions.md)
+- [View pending or completed remediation actions](air-review-approve-pending-completed-actions.md)

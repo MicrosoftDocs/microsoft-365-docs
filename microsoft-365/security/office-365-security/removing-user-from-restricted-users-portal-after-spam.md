@@ -91,7 +91,7 @@ There are 2 types of restricted entities:
 6. Click **Yes** to confirm the change.
 
    > [!NOTE]
-   > It might take up to 1 hour for all restrictions to be removed from the user.
+   > It might take up to 24 hours for all restrictions to be removed from the user.
 
 ## Verify the alert settings for restricted users
 
