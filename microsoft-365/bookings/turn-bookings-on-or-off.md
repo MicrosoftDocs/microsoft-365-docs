@@ -45,13 +45,13 @@ To turn Bookings on or off for your organization using the PowerShell cmdlet [Se
 
 ### Granular controls
 
-Use the settings below to control who can use Bookings, decide on what Bookings information is shared and whether staff need approval before they can be added to a Booking calendar.
+Use the settings below to control who can use Bookings, decide on what Bookings information is shared, whether staff need approval before they can be added to a Booking calendar, and enforce naming policy.
 
-:::image type="content" source="../media/control-access-sharing-bookings.png" alt-text="Screenshot: Settings that allow you to control who can use Bookings, decide what Bookings info is shared and staff approval":::
+:::image type="content" source="../media/bookings-granular-controls.png" alt-text="Screenshot: Settings that allow you to control who can use Bookings, decide what Bookings info is shared, staff approval, and naming policy":::
 
 ### Block bookings from outside your organization
 
-You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed in and are authenticated can book appointments.
+You can set up Bookings so only people in your organization can book appointments. Only users in your organization who have signed in and are authenticated can book appointments.
 
 ### Block social sharing options
 
@@ -66,6 +66,23 @@ Staff details, such as contact information, will never be sent to customers via 
 You can require employees in your organization to opt-in before their availability information is shared through Bookings and before they can be bookable through a booking page.
 
 When this setting is enabled, people added as staff in booking calendars will get an email with a link to **Approve/Reject** the request.
+
+### Enforce naming policy for Bookings calendar alias
+
+You can enforce a naming policy in your organization for all calendars. When this setting is enabled, administrators can define Prefix and Suffix. If selected, these rules will be enforced across all calendars.
+
+:::image type="content" source="../media/bookings-enforce-naming.png" alt-text="Screenshot: Enable the naming policy to define a Prefix and Suffix for all calendars in your organization":::
+
+- Add Custom Prefix: When this setting is enabled, all new calendars will have the string you defined added as a prefix (for example: "Prfx_ContosoCalendar").
+- Add Custom Suffix: When this setting is enabled, all new calendars will have the strings you defined added as a suffix (for example: "ContosoCalendar_Sufx").
+
+The screenshot below suggests how the Prefix/Suffix will be enforced while creating a new calendar.
+
+:::image type="content" source="../media/bookings-naming-prefix.png" alt-text="Screenshot: Prefix naming policy enabled for all calendars in Bookings":::
+
+> [!NOTE]
+> The enforcement will not impact Bookings calendars that have already been created unless the business information of these calendars is modified.
+> These policies will not impact SMTP addresses of existing calendars. SMTP addresses will not be updated or changed once created.
 
 ## Restrict collection of customer data
 
