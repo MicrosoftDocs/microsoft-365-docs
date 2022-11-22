@@ -15,7 +15,7 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - highpri
+  - tier1
 f1.keywords:
 - NOCSH
 appliesto: 
