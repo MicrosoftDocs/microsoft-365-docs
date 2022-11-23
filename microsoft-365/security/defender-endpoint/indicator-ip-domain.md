@@ -127,14 +127,14 @@ In the case were multiple different action types are set on the same indicator (
 
 _Allow_ overrides _warn_ which overrides _block_: Allow > Warn > Block. Therefore, in the above example, Microsoft.com would be allowed.
 
-### Policy conflict handling follows the below order
+### Policy conflict handling follows the order below
 
 - MDCA creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
-- If the IP, URL/Domain is allowed
+1. If the IP, URL/Domain is allowed
 - If the IP, URL/Domain is not allowed
 - If the IP, URL/Domain is allowed
-- If the IP, URL/Domain is not allowed
-- If the IP, URL/Domain is allowed
+1. If the IP, URL/Domain is not allowed
+1. If the IP, URL/Domain is allowed
 
 Threat and vulnerability management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
 
