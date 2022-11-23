@@ -72,7 +72,7 @@ Operating system exclusions and server role exclusions do not appear in the stan
 
 > [!NOTE]
 > Automatic exclusions apply only to Windows Server 2016 and later. These exclusions are not visible in the Windows Security app and in PowerShell.
-> Automatic exclusions can apply if your servers running Windows Server 2012 R2 are onboarded to Defender for Endpoint. (See [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
+> Automatic exclusions can apply if your servers running Windows Server 2012 R2 are onboarded to Defender for Endpoint. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
 > Automatic exclusions for server roles and operating system files do not apply to Windows Server 2012.
 
 
