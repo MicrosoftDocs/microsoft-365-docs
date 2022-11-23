@@ -40,6 +40,9 @@ In Microsoft 365 Defender role-based access control (RBAC) you can select permis
 
 The following table lists the permissions available to configure for your users based on the tasks they need to do:
 
+>[!Note]
+> Unless otherwise stated, all permissions are applicable to all supported workloads and will be applied to the data scope selected during the data source and assignment stage.
+
 ### Security operations – Security data
 
 Permissions for managing day-to-day operations and responding to incidents and advisories.
@@ -82,6 +85,10 @@ Permissions to manages the security and system settings and to create and assign
 | Authorization       | View or manage device groups, and custom and built-in roles.                    | Read / Manage |
 | Security settings   | View or manage general security settings for the Microsoft 365 Defender portal. | Read / Manage |
 | System settings     | View or manage general systems settings for the Microsoft 365 Defender portal.  | Read / Manage |
+
+
+>[!Note]
+> Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses.
 
 ## Next steps
 
