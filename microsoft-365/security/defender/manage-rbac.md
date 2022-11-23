@@ -79,9 +79,9 @@ All permissions listed within the Microsoft 365 Defender RBAC model align to per
 
 ### Activation of the Microsoft 365 Defender RBAC model
 
-You must activate the workloads in Microsoft 365 Defender to use the Microsoft 365 Defender RBAC model. Until activated, Microsoft 365 Defender will continue to respect the existing RBAC models.For more information, see [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md).
+You must activate the workloads in Microsoft 365 Defender to use the Microsoft 365 Defender RBAC model. Until activated, Microsoft 365 Defender will continue to respect the existing RBAC models. For more information, see [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md).
 
-When you activate some or all of your workloads to use the new permission model, the roles and permissions for these workloads, in the Microsoft 365 Defender portal, will be fully controlled by the Microsoft 365 Defender RBAC model.
+When you activate some or all of your workloads to use the new permission model, the roles and permissions for these workloads will be fully controlled by the Microsoft 365 Defender RBAC model in the Microsoft 365 Defender portal.
 
 ## Start using Microsoft 365 Defender RBAC model
 
