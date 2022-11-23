@@ -20,7 +20,7 @@ With Microsoft Bookings, you can set up SMS text notifications to be sent to the
 The SMS notifications will include the Teams meeting link for virtual booking appointments.
 
 > [!Note]
-> We'll be providing unlimited SMS notifications through January 31, 2023 (previously November 30th 2022), for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
+> We'll be providing unlimited SMS notifications through January 31, 2023 (previously November 30th 2022) for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
 
 ## Before you begin
 
