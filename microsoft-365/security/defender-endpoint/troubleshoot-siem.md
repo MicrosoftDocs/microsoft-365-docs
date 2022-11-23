@@ -42,7 +42,7 @@ This page provides detailed steps to troubleshoot issues you might encounter.
 
 If your client secret expires or if you've misplaced the copy provided when you were enabling the SIEM tool application,  you'll need to get a new secret.
 
-1. Login to the [Azure management portal](https://portal.azure.com).
+1. Log in to the [Azure management portal](https://portal.azure.com).
 
 2. Select **Azure Active Directory**.
 
@@ -60,7 +60,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 If you encounter an error when trying to get a refresh token when using the threat intelligence API or SIEM tools, you'll need to add reply URL for relevant application in Azure Active Directory.
 
-1. Login to the [Azure management portal](https://ms.portal.azure.com).
+1. Log in to the [Azure management portal](https://ms.portal.azure.com).
 
 2. Select **Azure Active Directory**.
 
