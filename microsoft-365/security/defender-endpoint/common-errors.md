@@ -66,7 +66,7 @@ InternalServerError|Internal Server Error (500)|(No error message, retry the ope
 ## Throttling   
 You may receive a 'Too Many Requests error (429)' when the number of HTTP requests in a given time frame exceeds the allowed number of calls per API.
 
-The client should delay resubmitting farther HTTPS requests in a way that comply with the rate limitations. 
+You should delay resubmitting further HTTPS requests and then submit them in a way that complies with the rate limitations. 
 
 Ignoring the 429 response or trying to resubmit HTTP requests in a shorter time frame will cause the calculated request rate to stay high for a longer time, during which the server will keep responding with a 429 error code.
 
