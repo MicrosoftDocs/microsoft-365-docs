@@ -47,6 +47,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - [Conduct an eDiscovery investigation of content in Microsoft Teams](/microsoftteams/ediscovery-investigation) - expanded reactions in Microsoft Teams chats are now supported in eDiscovery (Premium).
 - [Create an eDiscovery hold](/microsoft-365/compliance/create-ediscovery-holds) - clarified how eDiscovery holds are handled when a user's OneDrive URL changes.
 
+### Sensitivity labels
+
+- **General availability (GA)**: Trainable classifiers for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange). Trainable classifiers are now available for both auto-labeling for Office apps that use label settings (known as client-side auto-labeling) and auto-labeling policies (known as service-side auto-labeling). As a result, trainable classifiers are removed from the [comparison table](apply-sensitivity-label-automatically.md#compare-auto-labeling-for-office-apps-with-auto-labeling-policies) that lists only the differences between the two auto-labeling methods.
+
+- If you need to, you can now [disable co-authoring for your tenant by using PowerShell](sensitivity-labels-coauthoring.md#if-you-need-to-disable-this-feature).
+
 ## October 2022
 
 ### Audit
