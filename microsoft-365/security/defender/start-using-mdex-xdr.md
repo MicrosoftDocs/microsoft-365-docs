@@ -34,15 +34,15 @@ search.appverid: met150
 
 ## Run initial Defender readiness checks
 
-Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to run an initial readiness engagement to help you get the most out of your Microsoft security products. This engagement will be based on your [Microsoft Secure Score](microsoft-secure-score.md) and Defender Experts’ policy recommendations. Our Experts will assist in prioritizing and customizing our recommendations to fit your environment. They will request your engagement to get those configurations implemented.
+Apart from , our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to run an initial readiness engagement to help you get the most out of your Microsoft security products. This engagement will be based on your [Microsoft Secure Score](microsoft-secure-score.md) and Defender Experts’ policy recommendations. Our Experts will help prioritizing and customizing our recommendations to fit your environment. They'll request your engagement to get those configurations implemented.
 
 ## Managed detection and response
 
-Through a combination of automation and human expertise, our service triages Microsoft 365 Defender incidents, prioritize them on your behalf, filters out the noise, carries out detailed investigations, and provides detailed guided response to your security operations center (SOC) teams. Alternatively, our analysts can also take a response step on your behalf.
+Through a combination of automation and human expertise, our service triages Microsoft 365 Defender incidents, prioritize them on your behalf, filters out the noise, carries out detailed investigations, and provides detailed guided response to your security operations center (SOC) teams. Alternatively, our analysts can take a response step on your behalf.
 
-You'll receive detailed response playbooks via emails. You'll also be able to filter Microsoft 365 Defender portal incident view using _Defender Experts_ tags to see the current state of incidents that Defender Experts are actively investigating, or incidents that require customer action. Our analysts will also add relevant comments in Microsoft 365 Defender portal’s **Comments & history** section so you and your SOC analysts can track the investigation progress.
+You'll receive detailed response playbooks via emails. You'll also be able to filter the Microsoft 365 Defender portal incident view using the _Defender Experts_ tag to see the current state of the incidents Defender Experts are actively investigating, or the incidents that require your action. Our analysts will also add relevant comments in Microsoft 365 Defender portal’s **Comments & history** section so you and your SOC analysts can track the investigation progress.
 
-Response recommendations include, but are not limited to:
+Response recommendations include, but aren't limited to:
 
 - Collect investigation package
 - Run antivirus scan
@@ -51,11 +51,11 @@ Response recommendations include, but are not limited to:
 - Delete email
 - Block designated OAuth cloud apps
 
-These recommendations also appear in the **Comments & History** section of each related incident in the Microsoft 365 Defender portal so you can view them at your convenience.
+These recommendations also appear in the **Comments & history** section of each related incident in the Microsoft 365 Defender portal so you can view them at your convenience.
 
 ## Get real-time visibility with Defender Experts for XDR reports
 
-Defender Experts for XDR will include an interactive, on-demand report that provides a clear summary of the work our expert analysts are doing on your behalf, aggregate information about your incident landscape, and granular details about specific incidents. Your service delivery manager (SDM) will also use the report to provide you with additional context regarding your XDR Experts service during a monthly business review.
+Defender Experts for XDR will include an interactive, on-demand report that provides a clear summary of the work our expert analysts are doing on your behalf, aggregate information about your incident landscape, and granular details about specific incidents. Your service delivery manager (SDM) will also use the report to provide you with more context regarding your XDR Experts service during a monthly business review.
 
 ## Collaborate with a trusted advisor
 
@@ -73,7 +73,7 @@ The SDM provides the following services:
   - Serve as a single point of contact for feedback and escalations related to Defender Experts Service.
 
 ## Proactive managed hunting
-Defender Experts for XDR also includes proactive threat hunting offered by [Defender Experts for Hunting](defender-experts-for-hunting.md). Defender Experts for hunting was created for customers who have a robust security operations center but want Microsoft to help them proactively hunt threats using Microsoft Defender data. This proactive threat hunting service goes beyond the endpoint to hunt across endpoints, Office 365, cloud applications, and identity. Our experts will investigate anything they find, then hand off the contextual alert information along with remediation instructions, so you can quickly respond.
+Defender Experts for XDR also includes proactive threat hunting offered by [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md). Defender Experts for Hunting was created for customers who have a robust security operations center but want Microsoft to help them proactively hunt threats using Microsoft Defender data. This proactive threat hunting service goes beyond the endpoint to hunt across endpoints, Office 365, cloud applications, and identity. Our experts investigate anything they find, then hand off the contextual alert information along with remediation instructions, so you can quickly respond.
 
 ## Request advanced threat expertise on demand
 Select **Ask Defender Experts** directly inside the Microsoft 365 security portal to get swift and accurate responses to all your threat questions. Experts can provide insights to better understand the complex threats your organization may face. Consult an expert to:
