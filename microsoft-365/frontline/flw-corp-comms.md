@@ -34,9 +34,9 @@ Keep your frontline team connected with your broader organization by using Viva 
 
 Engage and inform workers with Viva Connections. Viva Connections creates a hub in Teams where your frontline team can view a tailored news feed from your organization and a personalized dashboard with resources they need. When employees use Viva Connections, they’re able to get important information faster, meaning that managers don’t have to spend valuable time relaying updates. Surface key information, personalized news, tasks, announcements, and other resources on the Viva Connections Dashboard. For example, a retailer could share new product and promotion announcements with their store associates, or a fundraising coordinator for a nonprofit could share quarterly goals with volunteers.
 
-| View for a retail worker  |View for a retail manager                  | 
+| View for a retail worker  |View for a retail manager                  |
 | :------------------- | :------------------- |
-| ![Screenshot of the Viva Connections Dashboard on a mobile device displaying information for a retail worker.](media/frontline-worker-1.png)  | ![Screenshot of the Viva Connections Dashboard on a mobile device displaying information for a retail manager.](media/frontline-worker-2.png) | 
+| ![Screenshot of the Viva Connections Dashboard on a mobile device displaying information for a retail worker.](media/frontline-worker-1.png)  | ![Screenshot of the Viva Connections Dashboard on a mobile device displaying information for a retail manager.](media/frontline-worker-2.png) |
 
 Learn more about [Viva Connections](/sharepoint/viva-connections-overview) and help your employees and associates get started with [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b).
 

@@ -103,7 +103,7 @@ Empowering frontline workers with the right technology makes their jobs easier a
 
 Review Viva Connections capabilities, technical requirements, and customization options. Then, work with stakeholders (such as representatives from HR and operations and process owners) who can accurately represent the needs of your frontline workforce. Take inventory of the highest priority needs and align them to Viva Connections capabilities to build a custom experience in Teams. [Get started planning, building, and launching Viva Connections for your organization](/viva/connections/plan-viva-connections).
 
-## Create communities with Viva Engage
+## Create communities with Yammer
 
 Yammer is an internal social network that gives members of your organization opportunities to connect with each other. You can create communities where members of your organization can post messages and communicate. Having a variety of communities that span both frontline and non-frontline teams helps your on-the-ground workforce connect to each other and the broader organization. Communities can be based on:
 
