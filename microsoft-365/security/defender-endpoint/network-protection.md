@@ -230,7 +230,7 @@ The Response category tells you what caused the event, for example:
 
 For more information, see [Troubleshoot endpoint blocks](web-protection-overview.md#troubleshoot-endpoint-blocks).
 
-Note that SmartScreen events for the Microsoft Edge browser specifically, need a different query:
+Note that Microsoft Defender SmartScreen events for the Microsoft Edge browser specifically, needs a different query:
 
 ```kusto
 
