@@ -71,15 +71,17 @@ This section provides useful information on what you need to know before you sta
 
 - The Microsoft 365 Defender security portal will continue to respect existing Azure Active Directory global roles when you activate the Microsoft 365 Defender RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
 
-### Migration of existing permissions
+### Migration of existing roles and permissions
 
 The new Microsoft 365 Defender RBAC model provides easy migration of the existing permissions in the individual supported RBAC models to the new RBAC model.
 
 All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions align, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md).
 
-### Opt-in mode
+### Activation of the Microsoft 365 Defender RBAC model
 
-Microsoft 365 Defender RBAC is available in an “opt-in” mode. This means Microsoft 365 Defender will continue to respect the existing RBAC models until you activate the new RBAC model per workload. For more information about activating Microsoft 365 Defender RBAC, see [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md).
+You must activate the workloads in Microsoft 365 Defender to use the Microsoft 365 Defender RBAC model. Until activated, Microsoft 365 Defender will continue to respect the existing RBAC models.For more information, see [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md).
+
+When you activate some or all of your workloads to use the new permission model, the roles and permissions for these workloads, in the Microsoft 365 Defender portal, will be fully controlled by the Microsoft 365 Defender RBAC model.
 
 ## Start using Microsoft 365 Defender RBAC model
 

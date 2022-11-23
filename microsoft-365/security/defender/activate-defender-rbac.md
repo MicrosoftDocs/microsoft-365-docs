@@ -40,7 +40,10 @@ For the Microsoft 365 Defender security portal to start enforcing the permission
 
 The following steps guide you on how to activate the Microsoft 365 Defender RBAC model:
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as a Global Administrator or Security Administrator in Azure Active Directory, or a user with the **Authorization** permissions assigned.
+>[!Note]
+>It assumes that you are Global Administrator or Security Administrator in Azure Active Directory or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+
+1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 4. Select **Workload settings**. This brings you to the Microsoft 365 Defender settings page which can also be accessed by navigating to **Settings** > **Microsoft 365 Defender** > **Permissions and roles**.
