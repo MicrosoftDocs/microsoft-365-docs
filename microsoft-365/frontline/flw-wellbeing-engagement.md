@@ -37,7 +37,7 @@ Survey's like Microsoft’s [Work Trend Index Pulse Report](https://www.microsof
 - Say leadership does not prioritize building culture
 - Believe that work stress will either stay the same or worsen in the coming year
 
-You can help your frontline team overcome these challenges and feel supported in your organization by using [Viva Connections](#connect-frontline-workers-to-your-broader-organization-with-viva-connections), [Viva Engage](#create-communities-with-viva-engage), [Praise](#boost-morale-with-praise), [SharePoint, and Microsoft Stream](#support-engagement-with-sharepoint-and-microsoft-stream).
+You can help your frontline team overcome these challenges and feel supported in your organization by using [Viva Connections](#connect-frontline-workers-to-your-broader-organization-with-viva-connections), [Yammer](#create-communities-with-yammer), [Praise](#boost-morale-with-praise), [SharePoint, and Microsoft Stream](#support-engagement-with-sharepoint-and-microsoft-stream).
 
 ## Connect frontline workers to your broader organization with Viva Connections
 
