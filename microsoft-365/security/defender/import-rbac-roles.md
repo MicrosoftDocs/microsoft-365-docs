@@ -45,7 +45,7 @@ search.appverid: met150
 
 ## Import roles to Microsoft 365 Defender RBAC from individual RBAC models
 
-You can import existing roles that are maintained as part of individual supported products (for example, Microsoft Defender for Endpoint) to the Microsoft 365 Defender RBAC model.
+You can import existing roles that are maintained as part of individual supported products in Microsoft 365 Defender (for example, Microsoft Defender for Endpoint) to the Microsoft 365 Defender RBAC model.
 
 Importing roles will migrate and maintain the roles with full parity in relation to their permissions and user assignments in the Microsoft 365 Defender RBAC model.
 

@@ -34,18 +34,9 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Pre-requisites
-
-- You need to be a Global Administrator or Security Administrator in Azure Active Directory to:
-
-  - gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
-  - manage roles and permissions in Microsoft 365 Defender RBAC.
-
-- To access and manage roles and permissions, without being a Global Administrator or Security Administrator in Azure Active Directory, you need to have the **Authorization** permission granted in Microsoft 365 Defender RBAC. For details on how to assign the Authorization permission, see [Create a role to access and manage roles and permissions](#create-a-role-to-access-and-manage-roles-and-permissions).
-
 ## Create a custom role
 
-The following steps guide you on how to create custom roles in Microsoft 365 Defender RBAC. It assumes that you are Global Administrator or Security Administrator in Azure Active Directory or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC.
+The following steps guide you on how to create custom roles in Microsoft 365 Defender RBAC. It assumes that you are Global Administrator or Security Administrator in Azure Active Directory or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.
