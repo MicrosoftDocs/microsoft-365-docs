@@ -117,7 +117,7 @@ For more information, see [Govern apps discovered by Microsoft Defender for Endp
 
 ## IoC IP URL and domain policy conflict handling order
 
-Policy conflict handling for domains/URLs/IP addresses differ from policy conflict handling for Certs.
+Policy conflict handling for domains/URLs/IP addresses differ from policy conflict handling for certs.
 
 In the case were multiple different action types are set on the same indicator (for example, **block**,  **warn**, and **allow**,  action types set for Microsoft.com), the order those action types would take effect is:
 
