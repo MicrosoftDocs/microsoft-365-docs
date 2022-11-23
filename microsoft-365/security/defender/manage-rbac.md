@@ -61,7 +61,7 @@ This section provides useful information on what you need to know before you sta
 
 ### Permissions pre-requisites
 
-- You need to be a Global Administrator or Security Administrator in Azure Active Directory to:
+- You must be a Global Administrator or Security Administrator in Azure Active Directory to:
 
   - gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
   
