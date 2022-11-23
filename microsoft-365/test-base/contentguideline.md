@@ -76,19 +76,21 @@ Other times, your zip file may have your files or content right underneath it (f
 - Error return code
 - Validate success
 - Logging to script specific log folder
+- Autologon credentials if intending to run packages that interact with the Windows UI
 
 Each script needs to run unattended (no user prompts) to successfully execute in the test pipeline.
 
-> [!NOTE]
+> 
 > Scripts should return "0" on successful completion and a non-zero error code if any error occurs during execution.
 
 Each script should validate that it ran successfully. For example, the install script should check for the existence of certain binaries and/or registry keys on the system after the installer binary finishes executing. This check helps to ensure with a reasonable degree of confidence that the installation was successful.
 
 Validation is necessary to properly diagnose where errors occur during a test run. For example, if the script is unable to install the application successfully versus being unable to launch it.
 
-> [!IMPORTANT]
+> 
 > **Avoid the following:**
 > Scripts should not reboot the machine, if a reboot is necessary please specify this during the upload of your scripts.
+> Scripts that intend to interact with the Windows UI should not erase the autologon credentials. Erasing these credentials will prevent the scripts from executing correctly.
 
 ## 3. Log collection
 
