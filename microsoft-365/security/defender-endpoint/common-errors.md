@@ -61,8 +61,7 @@ DisallowedOperation|Forbidden (403)|{the disallowed operation and the reason}.
 NotFound|Not Found (404)|General Not Found error message.
 ResourceNotFound|Not Found (404)|Resource {the requested resource} was not found.
 TooManyRequests|Too Many Requests (429)|Response will represent reaching quota limit either by number of requests or by CPU.
-InternalServerError|Internal Server Error (500)|(No error message, retry the operation)
-
+InternalServerError|Internal Server Error (500)|(No error message, retry the operation.)
 
 ## Throttling   
 Clients may receive 'Too Many Requests error (429)' when the number of HTTP requests in a given time frame exceed the allowed number of calls per API
