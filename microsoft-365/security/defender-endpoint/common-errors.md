@@ -24,9 +24,9 @@ search.appverid: met150
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-HTTP error responses are divided to 2 categories:
-* Client error (400-code level) – client sent an invalid request or not according to defeintions.
-* Server error (500-level) – server failed temporarly to fulfill the request or server error occured. reseding the HTTP reqeust might help
+HTTP error responses are divided into two categories:
+* Client error (400-code level) – the client sent an invalid request or the request is not in accordance with definitions.
+* Server error (500-level) – the server temporarily failed to fulfill the request or a server error occurred. Try sending the HTTP request again.
 
 The error codes listed in the following table may be returned by an operation on any of Microsoft Defender for Endpoint APIs.
 * In addition to the error code, every error response contains an error message, which can help resolve the problem.
