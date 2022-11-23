@@ -40,8 +40,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 ### Desktop licensing
 
-<br />
-
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5 for GCC High|Microsoft 365 G5 for DOD|
@@ -50,8 +48,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 |Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 for GCC High|Windows 10 Enterprise E5 for DOD|
 
 ### Server licensing
-
-<br />
 
 |GCC|GCC High|DoD|
 |---|---|---|
@@ -63,8 +59,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
 
 <br />
-
-****
 
 |Customer type|Portal URL|
 |---|---|
@@ -113,12 +107,12 @@ iOS|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <
 
 **Footnotes**
 
-<sup>1</sup> The patch must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
+   <sup>1</sup> The patch must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
 
-<sup>2</sup> Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
+   <sup>2</sup> Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 
-<sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1. \ 
-   The minimum MMA supported version is 10.20.18029 (March 2020).
+   <sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1. </br>
+    The minimum MMA supported version is 10.20.18029 (March 2020).
 
 ### OS versions when using Microsoft Defender for servers
 
@@ -176,7 +170,7 @@ These are the known gaps:
 
 **Footnote**
 
-<sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
+   <sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
 
 
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
