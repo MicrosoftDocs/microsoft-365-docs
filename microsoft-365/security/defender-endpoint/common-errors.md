@@ -68,7 +68,7 @@ Clients may receive 'Too Many Requests error (429)' when the number of HTTP requ
 
 The client should delay resubmitting farther HTTPS requests in a way that comply with the rate limitations. 
 
-Ignoring 429 response or trying to resubmit HTTP reqeusts in a shorter time frame will cause the the calculated requests rate to stay high for longer time frame in which the server will keep responding with 429 error code
+Ignoring the 429 response or trying to resubmit HTTP requests in a shorter time frame will cause the calculated request rate to stay high for a longer time, during which the server will keep responding with a 429 error code.
 
 ## Body parameters are case-sensitive
 
