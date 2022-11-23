@@ -42,8 +42,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 <br />
 
-****
-
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5 for GCC High|Microsoft 365 G5 for DOD|
@@ -54,8 +52,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 ### Server licensing
 
 <br />
-
-****
 
 |GCC|GCC High|DoD|
 |---|---|---|
@@ -86,8 +82,6 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 The following OS versions are supported:
 
 <br />
-
-****
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -123,15 +117,14 @@ iOS|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <
 
 <sup>2</sup> Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 
-<sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1. <br /> The minimum MMA supported version is 10.20.18029 (March 2020).
+<sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1. 
+   The minimum MMA supported version is 10.20.18029 (March 2020).
 
 ### OS versions when using Microsoft Defender for servers
 
 The following OS versions are supported when using [Microsoft Defender for servers](/azure/security-center/security-center-wdatp):
 
 <br />
-
-****
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -165,8 +158,6 @@ Instead of the public URIs listed in our [API documentation](apis-intro.md), you
 
 <br />
 
-****
-
 |Endpoint type|GCC|GCC High & DoD|
 |---|---|---|
 |Login|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
@@ -191,8 +182,6 @@ These are the known gaps:
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
 
 <br />
-
-****
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
