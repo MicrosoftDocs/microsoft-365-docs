@@ -75,7 +75,6 @@ Here's what you'll see on each tab of the report.
 
 The graphs you'll see here depend on the license you have.
 
-[??? CHECK SCREENSHOT, EHR missing, dates not aligned]<br>
 :::image type="content" source="media/va-usage-report-virtual-appointments.png" alt-text="Screenshot of the Virtual Appointments tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/va-usage-report-virtual-appointments.png":::
 
 |Callout |Description  |
