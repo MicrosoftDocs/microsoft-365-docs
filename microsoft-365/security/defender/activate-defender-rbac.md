@@ -36,20 +36,11 @@ search.appverid: met150
 
 For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new [custom roles](create-custom-rbac-roles.md) or [imported roles](import-rbac-roles.md) you must activate the Microsoft 365 Defender RBAC model for some or all of your workloads.
 
-## Pre-requisites
-
-- You need to be a Global Administrator or Security Administrator in Azure Active Directory to:
-
-  - gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
-  - manage roles and permissions in Microsoft 365 Defender RBAC.
-
-- To access and manage roles and permissions, without being a Global Administrator or Security Administrator in Azure Active Directory, you need to have the **Authorization** permission granted in Microsoft 365 Defender RBAC. For details on how to assign the Authorization permission, see [Create a role to access and manage roles and permissions](../defender/create-custom-rbac-roles.md#create-a-role-to-access-and-manage-roles-and-permissions).
-
 ## Activate Microsoft 365 Defender RBAC
 
-To active the Microsoft 365 Defender RBAC model:
+The following steps guide you on how to activate the Microsoft 365 Defender RBAC model:
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as a Global Administrator or Security Administrator in Azure Active Directory, or a user with the **Authorization** permissions assigned.
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 4. Select **Workload settings**. This brings you to the Microsoft 365 Defender settings page which can also be accessed by navigating to **Settings** > **Microsoft 365 Defender** > **Permissions and roles**.

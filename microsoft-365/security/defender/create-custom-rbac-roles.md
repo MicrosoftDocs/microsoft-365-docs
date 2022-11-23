@@ -36,7 +36,10 @@ search.appverid: met150
 
 ## Create a custom role
 
-The following steps guide you on how to create custom roles in Microsoft 365 Defender RBAC. It assumes that you are Global Administrator or Security Administrator in Azure Active Directory or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+The following steps guide you on how to create custom roles in Microsoft 365 Defender RBAC.
+
+>[!Note]
+>It assumes that you are Global Administrator or Security Administrator in Azure Active Directory or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.

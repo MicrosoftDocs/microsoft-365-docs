@@ -69,7 +69,7 @@ This section provides useful information on what you need to know before you sta
 
   - Create a custom role that can grant access to security groups or individual users to manage roles and permissions in Microsoft 365 Defender RBAC. This will remove the need for Azure Active Directory global roles to manage permissions. To do this you need assign the **Authorization** permission in Microsoft 365 Defender RBAC. For details on how to assign the Authorization permission, see [Create a role to access and manage roles and permissions](../defender/create-custom-rbac-roles.md#create-a-role-to-access-and-manage-roles-and-permissions).
 
-The Microsoft 365 Defender security portal will continue to respect existing Azure Active Directory global roles when you activate the Microsoft 365 Defender RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
+- The Microsoft 365 Defender security portal will continue to respect existing Azure Active Directory global roles when you activate the Microsoft 365 Defender RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
 
 ### Migration of existing permissions
 
