@@ -20,8 +20,7 @@ ms.custom: api
 search.appverid: met150
 ---
 
-# Handling REST API Errors 
-
+# Handling REST API errors 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
