@@ -64,7 +64,7 @@ TooManyRequests|Too Many Requests (429)|Response will represent reaching quota l
 InternalServerError|Internal Server Error (500)|(No error message, retry the operation.)
 
 ## Throttling   
-Clients may receive 'Too Many Requests error (429)' when the number of HTTP requests in a given time frame exceed the allowed number of calls per API
+You may receive a 'Too Many Requests error (429)' when the number of HTTP requests in a given time frame exceeds the allowed number of calls per API.
 
 The client should delay resubmitting farther HTTPS requests in a way that comply with the rate limitations. 
 
