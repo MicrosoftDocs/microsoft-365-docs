@@ -49,7 +49,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
 1. Enable or Disable Device control as follows:
 
-   - Under **Custom** > Enter the **Name**, **Description** and click on **Next**
+   - Under **Custom**, enter the **Name** and **Description** and select **Next**.
    - In the **Configuration settings**, select **Add**.
    - In the **Add Row** pane, specify the following settings:
      - **Name** as **Enable Device Control**
