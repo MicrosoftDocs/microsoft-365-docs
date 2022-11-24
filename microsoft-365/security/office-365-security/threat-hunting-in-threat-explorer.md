@@ -64,11 +64,9 @@ In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 
 
 Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of the *Threat Explorer* (also called *Explorer*) hunting tool in Plan 2. In this series of articles, most of the examples were created using the full Threat Explorer. Admins should test any steps in Real-time detections to see where they apply.
 
-After you go to **Explorer**, by default, you'll arrive on the **Malware** page, but use the **View** drop down to get familiar with your options. If you're hunting Phish, or digging into a threat campaign, choose those views.
+After you go to **Explorer**, by default, you'll arrive on the **All email** page, but use the **tabs** to navigate to the available views. If you're hunting Phish, or digging into a threat campaign, choose those views.
 
-:::image type="content" source="../../media/view-drop-down.png" alt-text="The View dropdown in Threat Explorer" lightbox="../../media/view-drop-down.png":::
-
-Once a security operations (Sec Ops) person selects the data they want to see, whether the scope is narrow view like user **Submissions**, or a wider view, like **All email**, they can use the **Sender** button to further filter. Remember to select Refresh to complete your filtering actions.
+Once a security operations (Sec Ops) person selects the data they want to see, they can further narrow down the data by applying filters like Sender, Recipient, Subject etc. or select appropriate date range to get the desired results. Remember to select Refresh to complete your filtering actions.
 
 :::image type="content" source="../../media/sender-drop-down.png" alt-text="The Sender button in Threat Explorer" lightbox="../../media/sender-drop-down.png":::
 
@@ -77,13 +75,12 @@ Refining focus in Explorer or Real-time detection can be thought of in layers. T
 > [!TIP]
 > If Sec Ops uses **Tags** to mark accounts they consider high valued targets, they can make selections like *Phish View with a Tags filter focus (include a date range if used)*. This will show them any phishing attempts directed at their high value user targets during a time-range (like dates when certain phishing attacks are happening a lot for their industry).
 
-Refinements can be made on date ranges by using the date range controls. Here you can see Explorer in **Malware** view, with a **Detection Technology** filter focus. But it's the **Advanced filter** button that lets Sec Ops teams dig deep.
-
-:::image type="content" source="../../media/advanced-filter.png" alt-text="The Advanced filter in Threat Explorer" lightbox="../../media/advanced-filter.png":::
-
-Clicking the **Advanced filter** pops a panel that will let Sec Ops hunters build queries themselves, letting them include or exclude the information they need to see. Both the chart and table on the Explorer page will reflect their results.
-
-:::image type="content" source="../../media/threat-explorer-chart-table.png" alt-text="The Results from a query" lightbox="../../media/threat-explorer-chart-table.png":::
+With the new version of Threat Explorer, users can use new dropdown options with four new operators on the filters-
+  - Equals any of – returns values matching the exact user input
+  - Equals none of - returns values not matching the exact user input
+  - Contains any of - returns values partially matching user input
+  - Contains none of - returns values not partially matching user input
+Note: The above filter conditions are availble based on filter types and input types.
 
 Use the **Column options** button to get the kind of information on the table that would be most helpful:
 
