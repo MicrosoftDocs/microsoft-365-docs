@@ -52,7 +52,7 @@ Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).I
 
 You can activate your workloads in two ways from the Permissions and roles page:
 
-    :::image type="content" source="../../media/defender/m365-defender-rbac-activate-workloads1.png" alt-text="Screenshot of the activate workloads page" lightbox="../../media/defender/m365-defender-rbac-activate-workloads1.png":::
+    :::image type="content" source="../../media/defender/m365-defender-rbac-activate-workloads1" alt-text="Screenshot of the activate workloads page" lightbox="../../media/defender/m365-defender-rbac-activate-workloads1.png":::
 
 1. **Activate workloads**
     - Select **Activate workloads** on the banner above the list of roles.
