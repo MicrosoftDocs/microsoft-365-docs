@@ -73,7 +73,6 @@ Learn about the general guidance on a typical Microsoft Defender for Endpoint on
 
 [17. Verify that you're able to get "Platform Updates" (agent updates).](#17-verify-that-youre-able-to-get-platform-updates-agent-updates)
 
-
 [18. Verify that you're able to get "Security Intelligence Updates" (signatures/definition updates).](#18-verify-that-youre-able-to-get-security-intelligence-updates-signaturesdefinition-updates)
 
 [19. Test detections.](#19-test-detections)
@@ -149,6 +148,7 @@ For more information, see [Troubleshooting cloud connectivity issues for Microso
 
 Capture performance data from the endpoints that will have Defender for Endpoint installed.  This includes disk space availability on all mounted partitions, memory usage, process list, and CPU usage (aggregate across all cores).
 
+
 ## 3. (Optional) Check for filesystem errors 'fsck' (akin to chkdsk)
 
 Any filesystem could end-up getting corrupt, so before installing any new software, it would be good to install it on a healthy file system.
@@ -160,7 +160,6 @@ Any filesystem could end-up getting corrupt, so before installing any new softwa
 ## 5. (Optional) Update nic drivers
 
 Newer driver/firmware on a NIC’s or NIC teaming software could help w/ performance and/or reliability.
-
 
 ## 6. Confirm system requirements and resource recommendations are met
 
@@ -178,7 +177,6 @@ For a detailed list of supported Linux distros, see [System requirements](micros
 |---|---|---|
 |RHEL 7.x, RHEL 8.x, and RHEL 9.x |No kernel filter driver, the fanotify kernel option must be enabled|akin to Filter Manager (fltmgr, accessible via `fltmc.exe`) in Windows| 
 |RHEL 6.x|TALPA kernel driver|
-
 
 
 ## 7. Add your existing solution to the exclusion list for Microsoft Defender Antivirus
@@ -230,8 +228,6 @@ Keep the following points in mind:
 - List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
 - If you list each executable as both a path exclusion and a process exclusion, the process and whatever it touches are excluded.
 
- 
-
 >[!TIP]
 >Review "Common mistakes to avoid when defining exclusions", specifically [Folder locations and Processes the sections for Linux and macOS Platforms](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus#folder-locations).
 
@@ -257,7 +253,7 @@ Set up your device groups, device collections, and organizational units Device g
    - Get a list of all your Linux applications and check the vendors website for exclusions.  
    
 - If you're running a non-Microsoft antimalware product, add the processes/paths to the Microsoft Defender for Endpoint's AV exclusion list. For more information, check the non-Microsoft antimalware documentation or contact their support. 
- 
+
 - If you're testing on one machine, you can use a command line to set up the exclusions:
   - [Configure from the command line](linux-resources.md#configure-from-the-command-line).
   - [Configure and validate exclusions for Microsoft Defender for Endpoint on  Linux](linux-exclusions.md).
@@ -586,10 +582,6 @@ Use the following table to troubleshoot high CPU utilization:
 |wdavdaemon edr| N/A |EDR engine|The following diagram shows the workflow and steps to troubleshoot wdavedaemon_edr process issues. <br/><br/> :::image type="content" source="images/wdavdaemon_edr_engine.png" alt-text="Image of troubleshooting wdavdaemon edr process" lightbox="images/wdavdaemon_edr_engine.png"::: <br/><br/>**General troubleshooting guidance**<br/>- If you have in-house apps/scripts or a legitimate third-party app/script getting flagged, Microsoft security researchers analyze suspicious files to determine if they're threats, unwanted applications, or normal files. Submit files you think are malware or files that you believe have been incorrectly classified as malware by using the unified submissions experience (for more information, see [Unified submissions experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)) or [File submissions](https://www.microsoft.com/en-us/wdsi/filesubmission). <br/><br/> - See [troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).<br/><br/> - Download and run Microsoft Defender for Endpoint Client Analyzer. For more information, see [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md). <br/><br/> - Collect diagnostic data using the [Client analyzer tool](https://aka.ms/xMDEClientAnalyzerBinary).<br/><br/> - Open a CSS support case with Microsoft. For more information, see [CSS security support case](/mem/get-support).
 |mdatp_audisp_plugin|Audit framework|Audit log ingestion| See [Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux](troubleshoot-auditd-performance-issues.md).
 
-
-
-
-
 ## 22. Uninstall your non-Microsoft solution
 
 If at this point you have:
@@ -597,7 +589,6 @@ If at this point you have:
 - Microsoft Defender Antivirus is installed and enabled,
 
 Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, make sure to update your configuration to switch from Passive Mode to Active if you set Defender for Endpoint to Passive mode during the installation or configuration.
-
 
 ## Diagnostic and troubleshooting resources
 
