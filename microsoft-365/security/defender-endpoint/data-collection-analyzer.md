@@ -46,7 +46,7 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 
 **-b** - Same as '-c' but the process monitor trace will be initiated during next boot and stopped only when the -b is used again.
 
-**-e** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect tracing for Defender AV Client (AM-Engine and AM-Service) for analysis of Antivirus cloud connectivity issues.
+**-e** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect Defender AV Client tracing (AM-Engine and AM-Service) for analysis of Antivirus cloud connectivity issues.
 
 **-a** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect a verbose performance trace specific to analysis of high CPU issues related to the antivirus process (MsMpEng.exe).
 
