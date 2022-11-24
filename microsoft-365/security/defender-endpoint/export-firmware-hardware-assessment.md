@@ -114,7 +114,7 @@ See a description of the table columns below.
 <th><strong>Column Name</strong></th>
 <th><strong>Type</strong></th>
 <th><strong>Data example</strong></th>
-<th><strong>Customer Facing Description</strong></th>
+<th><strong> Description</strong></th>
 </tr>
 </thead>
 <tbody>
