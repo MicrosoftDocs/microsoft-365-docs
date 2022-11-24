@@ -48,14 +48,14 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
 5. Enter the Role name and description.
 6. Select **Next** to choose the permissions you want to assign. Permissions are organized in three different categories:
 
-   :::image type="content" source="../../media/defender/m365-defender-rbac-permissions.png" alt-text="Screenshot of the permissions screen" lightbox="../../media/defender/m365-defender-rbac-permissions.png":::
+   :::image type="content" source="../../media/defender/m365-defender-rbac-permissions1.png" alt-text="Screenshot of the permissions screen" lightbox="../../media/defender/m365-defender-rbac-permissions1.png":::
 
-7. Select a permission category (for example, Security configuration), and then review the permissions available. You can choose to assign the following different levels of permissions:
-    - Select all read-only permissions – Users will be assigned all read-only permissions in this category.
+7. Select a permission category (for example, Security operations), and then review the permissions available. You can choose to assign the following different levels of permissions:
+    - Select all read-only permissions – Users will be assigned with all the read-only permissions in this category.
     - Select all read and manage permissions – Users will be assigned all permissions in this category (read and manage permissions).
     - Select custom permissions – Users will be assigned the custom permissions selected.
 
-   :::image type="content" source="../../media/defender/m365-defender-rbac-permissions-configuration-flyout.png" alt-text="Screenshot of the permissions flyout screen" lightbox="../../media/defender/m365-defender-rbac-permissions-configuration-flyout.png":::
+   :::image type="content" source="../../media/defender/m365-defender-rbac-permissions-secops-flyout.png" alt-text="Screenshot of the permissions flyout screen" lightbox="../../media/defender/m365-defender-rbac-permissions-secops-flyout.png":::
 
     For more information on the RBAC custom permissions, see [About RBAC custom permissions](custom-permissions-details.md).
 
@@ -71,7 +71,7 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
      :::image type="content" source="../../media/defender/m365-defender-rbac-assignments.png" alt-text="Screenshot of the assignments screen" lightbox="../../media/defender/m365-defender-rbac-assignments.png":::
 
     >[!Note]
-    > By selecting **Choose all data sources** all supported data sources within Microsoft 365 Defender RBAC and any future data sources that are added will be automatically assigned to this role.
+    > By selecting **Choose all data sources** all supported data sources within Microsoft 365 Defender RBAC and any future data sources that are added will be automatically assigned to this assignment.
 
 11. In **Assigned users and groups** choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
 
@@ -98,7 +98,7 @@ To access and manage roles and permissions, without being a Global Administrator
 
 8. select **Apply** and then **Next** to assign users and data sources.
 9. Select **Add assignments** and enter the Assignment name.
-10. Under **data sources** choose if the assigned users will have the selected permissions across all the available products, or only for specific data sources.
+10. Under **data sources** select **Choose all data sources**.
 11. In **Assigned users and groups** – choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
 12. Select **Next** to review and finish creating the role and then select **Submit**.
 
