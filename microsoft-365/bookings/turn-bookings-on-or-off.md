@@ -73,8 +73,8 @@ You can enforce a naming policy in your organization for all calendars. When thi
 
 :::image type="content" source="../media/bookings-enforce-naming.png" alt-text="Screenshot: Enable the naming policy to define a Prefix and Suffix for all calendars in your organization":::
 
-- Add Custom Prefix: When this setting is enabled, all new calendars will have the string you defined added as a prefix (for example: "Prfx_ContosoCalendar").
-- Add Custom Suffix: When this setting is enabled, all new calendars will have the strings you defined added as a suffix (for example: "ContosoCalendar_Sufx").
+- **Add Custom Prefix**: When this setting is enabled, all new calendars will have the string you defined added as a prefix (for example: "Prfx_ContosoCalendar").
+- **Add Custom Suffix**: When this setting is enabled, all new calendars will have the strings you defined added as a suffix (for example: "ContosoCalendar_Sufx").
 
 The screenshot below suggests how the Prefix/Suffix will be enforced while creating a new calendar.
 
@@ -135,7 +135,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
 
 For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
 
-For more information on OWA mailbox policies, check out the following topics:
+For more information on OWA mailbox policies, check out the following articles:
 
 - [Create an Outlook on the web mailbox policy in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 

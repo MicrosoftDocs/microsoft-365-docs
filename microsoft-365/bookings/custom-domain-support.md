@@ -17,13 +17,13 @@ description: "Learn how to configure custom domain support in Microsoft Bookings
 
 # Custom domain support in Bookings
 
-Microsoft 365 allows organizations to own more than one domain. The default domain is onmicrosoft.com. You can read more about domains and how to create them at [Add a domain to Microsoft 365](/admin/setup/add-domain.md).
+Microsoft allows organizations to own more than one domain. The default domain is onmicrosoft.com. You can read more about domains and how to create them at [Add a domain to Microsoft 365](/admin/setup/add-domain.md).
 
 You can specify which domain will be used from the domain list for Bookings using [OWA mailbox policy](/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps). Once the default domain policy is configured and deployed, any new booking calendars created will have the configured domain in the SMTP address.
 
 For example: Booking pages can be created with a domain “contoso.com” instead of “contoso.onmicrosoft.com”
 
-You are also allowed to configure a domain for specific users. When users with the custom OWA policy create a Booking calendar, it will be created with the custom domain, and not the default domain.
+You're also allowed to configure a domain for specific users. When users with the custom OWA policy create a Booking calendar, it will be created with the custom domain, and not the default domain.
 
 To use these features, you'll need to run commands using Exchange Online PowerShell with Global admin access. For more information on running Exchange Online cmdlets, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
 
@@ -51,18 +51,18 @@ You'll need to run the following commands using Exchange Online PowerShell.
 
 5. Change current default domain to new domain.
 
-This would change the default policy of all users and allow them to create a booking calendar with the new domain.
-
 ```PowerShell
    Set-OwaMailboxPolicy -Identity < OwaMailboxPolicy-Default > -BookingsMailboxDomain "<newdomain>"
 ```
+
+This would change the default policy of all users and allow them to create a booking calendar with the new domain.
 
 >[!NOTE]
 > The OWA Mailbox policy can only be assigned by an admin account.
 
 ## Configure custom domain for specific users
 
-To configure a custom domain for a specific user, follow the steps below after joining into remote Powershell.
+To configure a custom domain for a specific user, follow the steps below after joining into remote PowerShell.
 
 1. Create a new OWA mailbox policy.
 
