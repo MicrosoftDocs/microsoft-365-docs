@@ -48,7 +48,7 @@ The following steps guide you on how to activate the Microsoft 365 Defender RBAC
 
 ### Activate from the Permissions and roles page
 
-Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).In the navigation pane, select **Permissions** and select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
+Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com). In the navigation pane, select **Permissions** and select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 
 You can activate your workloads in two ways from the Permissions and roles page:
 
@@ -58,6 +58,9 @@ You can activate your workloads in two ways from the Permissions and roles page:
     - Select **Activate workloads** on the banner above the list of roles.
     - This will bring you directly to the **Activate workloads** screen.
     - Select the workloads you want to activate.
+
+    :::image type="content" source="../../media/defender/m365-defender-rbac-activate-workload-selection.png" alt-text="Screenshot of the choose workloads to activate screen" lightbox="../../media/defender/m365-defender-rbac-activate-workload-selection.png":::
+
     - Select **Activate** on the confirmation message.
 
     >[!Note]
