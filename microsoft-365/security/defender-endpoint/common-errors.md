@@ -64,11 +64,11 @@ TooManyRequests|Too Many Requests (429)|Response will represent reaching quota l
 InternalServerError|Internal Server Error (500)|(No error message, retry the operation.)
 
 ## Throttling   
-You may receive a 'Too Many Requests error (429)' when the number of HTTP requests in a given time frame exceeds the allowed number of calls per API.
+The HTTP cleint may receive a 'Too Many Requests error (429)' when the number of HTTP requests in a given time frame exceeds the allowed number of calls per API.
 
-You should delay resubmitting further HTTPS requests and then submit them in a way that complies with the rate limitations. 
+The HTTP client should delay resubmitting further HTTPS requests and then submit them in a way that complies with the rate limitations. A Retry-After in the response header indicating how long to wait before making a new request
 
-Ignoring the 429 response or trying to resubmit HTTP requests in a shorter time frame will cause the calculated request rate to stay high for a longer time, during which the server will keep responding with a 429 error code.
+Ignoring the 429 response or trying to resubmit HTTP requests in a shorter time frame will cause return of 429 error code.
 
 ## Body parameters are case-sensitive
 
