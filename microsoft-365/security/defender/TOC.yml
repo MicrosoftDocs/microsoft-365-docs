@@ -144,6 +144,8 @@
       items: 
        - name: Overview
          href: incident-response-overview.md
+       - name: Investigate domains and URLs associated with Microsoft 365 Defender
+         href: ../defender-endpoint/investigate-domain.md
        - name: Respond to incidents
          items: 
               - name: Overview
