@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 ![Information icon](media/info.png) **This feature is part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview). To access this feature during the preview period, a Teams Premium trial license is required.**
 
-The Advanced Virtual Appointments activity report provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview). 
+The Advanced Virtual Appointments activity report in the Microsoft Teams admin center provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview).
 
 To view the report, you must be a global admin, Teams admin, Global reader, or Report reader, and your organization must be using advanced Virtual Appointments capabilities.
 
@@ -55,7 +55,7 @@ Select **View details** to view the report.
 
 ### The Advanced Virtual Appointments activity report
 
-1. In the left navigation of the Microsoft Teams admin center, choose **Analytics & reports** > **Usage reports**. On the **View reports** tab, under **Report**, select **Advanced Virtual Appointments activity**.
+1. In the left navigation of the Teams admin center, choose **Analytics & reports** > **Usage reports**. On the **View reports** tab, under **Report**, select **Advanced Virtual Appointments activity**.
 2. Under **Date range**, select a date range of 7 days, 30 days, or 90 days. Then, choose **Run report**.
 
 ## Interpret the report

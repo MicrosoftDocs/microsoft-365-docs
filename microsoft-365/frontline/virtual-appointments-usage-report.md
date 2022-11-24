@@ -59,7 +59,7 @@ Select **View details** to view the report.
 
 ### The Virtual Appointments usage report
 
-1. In the left navigation of the Microsoft Teams admin center, choose **Analytics & reports** > **Usage reports**. On the **View reports** tab, under **Report**, select **Virtual Appointments usage**.
+1. In the left navigation of the Teams admin center, choose **Analytics & reports** > **Usage reports**. On the **View reports** tab, under **Report**, select **Virtual Appointments usage**.
 2. Under **Date range**, select a date range of 7 days, 30 days, or 90 days. Then, choose **Run report**.
 
 > [!NOTE]
