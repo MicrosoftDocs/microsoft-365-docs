@@ -31,7 +31,7 @@ When collaborating with Microsoft support professionals, you may be asked to use
 
 Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and their description:
 
-:::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="The parameters for MDEClientAnalyzer.cmd" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
+:::image type="content" source="images/MDEClientAnalyzerHelp.png" alt-text="The parameters for MDEClientAnalyzer.cmd" lightbox="images/MDEClientAnalyzerHelp.png":::
 
 > [!NOTE]
 > When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) to collect Microsoft Defender Antivirus related support logs.
@@ -45,6 +45,8 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 **-i** - Calls into built-in [netsh.exe](/windows/win32/winsock/netsh-exe) command to start a network and windows firewall trace that is useful when troubleshooting various network-related issues.
 
 **-b** - Same as '-c' but the process monitor trace will be initiated during next boot and stopped only when the -b is used again.
+
+**-e** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect tracing for Defender AV Client (AM-Engine and AM-Service) for analysis of Antivirus cloud connectivity issues.
 
 **-a** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect a verbose performance trace specific to analysis of high CPU issues related to the antivirus process (MsMpEng.exe).
 
