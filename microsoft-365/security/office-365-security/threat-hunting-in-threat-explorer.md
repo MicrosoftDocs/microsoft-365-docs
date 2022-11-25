@@ -75,12 +75,13 @@ Refining focus in Explorer or Real-time detection can be thought of in layers. T
 > [!TIP]
 > If Sec Ops uses **Tags** to mark accounts they consider high valued targets, they can make selections like *Phish View with a Tags filter focus (include a date range if used)*. This will show them any phishing attempts directed at their high value user targets during a time-range (like dates when certain phishing attacks are happening a lot for their industry).
 
-With the new version of Threat Explorer, users can use new dropdown options with four new operators on the filters-
-  - Equals any of – returns values matching the exact user input
-  - Equals none of - returns values not matching the exact user input
-  - Contains any of - returns values partially matching user input
-  - Contains none of - returns values not partially matching user input
-Note: The above filter conditions are availble based on filter types and input types.
+With the new version of Threat Explorer, users can use the following new dropdown options with four new operators on the filters:
+  - Equals any of – returns values matching the exact user input.
+  - Equals none of – returns values not matching the exact user input.
+  - Contains any of – returns values partially matching user input.
+  - Contains none of – returns values not partially matching user input.
+
+Note that these filter conditions are available based on filter types and input types.
 
 Use the **Column options** button to get the kind of information on the table that would be most helpful:
 
