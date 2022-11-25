@@ -1,5 +1,5 @@
 ---
-title: Firmware and Hardware assessment methods and properties per device
+title: Firmware and hardware assessment methods and properties per device
 description: Provides information about the Firmware and Hardware APIs that pull "Microsoft Defender Vulnerability Management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine, firmware and hardware assessment 
 ms.service: microsoft-365-security
@@ -20,7 +20,7 @@ ms.custom: api
 search.appverid: met150
 ---
 
-# Export Firmware and Hardware assessment inventory per device
+# Export Firmware and hardware assessment inventory per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,11 +45,11 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 > [!NOTE]
 > Unless indicated otherwise, all export security baseline assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**)
 
-## 1. Export certificate assessment (JSON response)
+## 1. Export firmware and hardware assessment (JSON response)
 
 ### 1.1 API method description
 
-Returns all certificate assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, Thumbprint and Path.
+Returns all firmware and hardware assessments for all devices, on a per-device basis. 
 
 #### 1.1.1 Limitations
 
@@ -68,7 +68,7 @@ Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability 
 ### 1.3 URL
 
 ```http
-GET /api/machines/certificateAssessmentByMachine
+GET api/machines/HardwareFirmwareInventoryProductCodeByMachine
 ```
 
 ### 1.4 Parameters
@@ -89,148 +89,43 @@ GET /api/machines/certificateAssessmentByMachine
 Property (ID)|Data type|Description
 :---|:---|:---
 |DeviceId|String|Unique identifier for the device in the service.
+|rbacGroupId|Int|The role-based access control (RBAC) group Id. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+|rbacGroupName|String|The role-based access control (RBAC) group. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 |DeviceName|String|Fully qualified domain name (FQDN) of the device.
-|Thumbprint|Boolean|Unique identifier for the certificate.
-|Path|String|The location of the certificate.
-|SignatureAlgorithm|String|Hashing algorithm and encryption algorithm used.
-|KeySize|String|Size of the key used in the signature algorithm.
-|ExpirationDate|String|The date and time beyond which the certificate is no longer valid.
-|IssueDate|String|The earliest date and time when the certificate became valid.
-|SubjectType|String|Indicates if the holder of the certificate is a CA or end entity.
-|SerialNumber|String|Unique identifier for the certificate within a certificate authority's systems.
-|IssuedTo|Object|Entity that a certificate belongs to; can be a device, an individual, or an organization.
-|IssuedBy|Object|Entity that verified the information and signed the certificate.
-|KeyUsage|String|The valid cryptographic uses of the certificate's public key.
-|ExtendedKeyUsage|String|Other valid uses for the certificate.
-|RbacGroupId|String|The role-based access control (RBAC) group id.
-|RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC groups, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
-
-
-See a description of the table columns below.
-
-<table>
-<thead>
-<tr class="header">
-<th><strong>Column Name</strong></th>
-<th><strong>Type</strong></th>
-<th><strong>Data example</strong></th>
-<th><strong> Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>DeviceId</td>
-<td>string</td>
-<td> </td>
-<td>Unique identifier for the device in the service</td>
-</tr>
-<tr class="even">
-<td>DeviceName</td>
-<td>string</td>
-<td> </td>
-<td>Fully qualified domain name (FQDN) of the device</td>
-</tr>
-<tr class="odd">
-<td>ComponentType</td>
-<td>string</td>
-<td>“Hardware”, “Processor”, “Bios”</td>
-<td>Type of hardware or firmware component</td>
-</tr>
-<tr class="even">
-<td>Manufacturer</td>
-<td>string</td>
-<td><p>System: “lenovo”, “dell”, “hp”.</p>
-<p>Processor: “intel”, “amd”</p>
-<p>BIOS: “lenovo”, “ami”, “intel”</p></td>
-<td>Manufacturer of hardware or firmware component</td>
-</tr>
-<tr class="odd">
-<td>ComponentName</td>
-<td>string</td>
-<td><p>System: “ThinkPad T470s (20HGS00P1C)”</p>
-<p>Processor: “Intel(R) Core(TM) i7-7600U CPU @ 2.80GHz”</p>
-<p>BIOS: “ThinkPad T470s (20HGS00P1C)”</p></td>
-<td>Name of hardware or firmware component</td>
-</tr>
-<tr class="even">
-<td>ComponentVersion</td>
-<td>string</td>
-<td><p>System: “”</p>
-<p>Processor: “”</p>
-<p>BIOS: “N1WET61W”</p></td>
-<td>Component version (for example, BIOS version)</td>
-</tr>
-<tr class="odd">
-<td>AdditionalFields</td>
-<td>string</td>
-<td><p>System:</p>
-<p>{</p>
-<p>     “Family”: “Lenovo ThinkPad”,</p>
-<p>      “SerialNumber”: “PC0P30G9”</p>
-<p> }</p>
-<p> </p>
-<p>Processor:</p>
-<p>{ “Family”: “7th Generation Intel® Core™ Processor Family” }</p>
-<p> </p>
-<p>BIOS:</p>
-<p>{</p>
-<p>     “FirmwareReleaseDate”: “2020/10/19”</p>
-<p>}</p></td>
-<td><p>Additional information about the components in JSON array format</p>
-<p>Key-value pairs:</p>
-<p>System:</p>
-<ul>
-<li><p>Family - system model family</p></li>
-<li><p>SerialNumber - system model serial number</p></li>
-</ul>
-<p>Processor:</p>
-<ul>
-<li><p>Family - processor family</p></li>
-</ul>
-<p>BIOS:</p>
-<ul>
-<li><p>FirmwareReleaseDate - BIOS release date</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
+|ComponentType|String|Type of hardware or firmware component.
+|Manufacturer|String|Manufacturer of hardware or firmware component.
+|ComponentName|String|Name of hardware or firmware component.
+|ComponentVersion|String|Name of hardware or firmware component.
+|Additional fields|String|Name of the system.
 
 ## 1.6 Example
 
 ### 1.6.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAssessmentByMachine
+GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryProductCodeByMachine
 ```
 
 ### 1.6.2 Response example
 
 ```json
-
-  {
-     "@odata.context":"https://127.0.0.1/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetCertificateAssessment)",
-      "value":[
+      {
+        "@odata.context": "https://api-df.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.AssetHardwareFirmware)",
+        "value":[
         {
-        "deviceId":"49126b9e4a5473b5229c73799e9e55c48668101b",
-        "deviceName":"testmachine5",
-        "thumbprint":"A4B37F4F6DE956922273D5CB8E7E0AAFB7033B90",
-        "path":"LocalMachine\\TestSignRoot\\A4B37F4F6DE956922273D5CB8E7E0AAFB7033B90",
-        "signatureAlgorithm":"sha384ECDSA",
-        "keyLength":0,"notAfter":"0001-01-01T00:00:00Z",
-        "notBefore":"0001-01-01T00:00:00Z",
-        "subjectType":"CA",
-        "serialNumber":"6086A185EAFA2B9943B4671603F40323",
-        "subjectObject":null,
-        "issuerObject":null,
-        "keyUsageArray":null,
-        "extendedKeyUsageArray":null,
-        "isSelfSigned":false,
-        "rbacGroupId":4226,
-        "rbacGroupName":"testO6343398Gq31"}],
-        "@odata.nextLink":"https://127.0.0.1/api/machines/CertificateAssessmentByMachine?pagesize=1&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMi0wMy0yMS8wNTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjF9"
-  }
+            "deviceId": "49126b9e4a5473b5229c73799e9e55c48668101b",
+            "rbacGroupId": 39,
+            "rbacGroupName": "testO6343398Gq31",
+            "deviceName": "testmachine5",
+            "componentType": "Hardware",
+            "manufacturer": "razer",
+            "componentName": "blade_15_advanced_model_(mid_2021)_-_rz09-0409",
+            "componentVersion": "7.04",
+            "additionalFields": "{\"SystemSKU\":\"RZ09-0409CE53\",\"BaseBoardManufacturer\":\"Razer\",\"BaseBoardProduct\":\"CH570\",\"BaseBoardVersion\":\"4\",\"DeviceFamily\":\"Workstation\"}"
+          }  
+        ]  
+      },
+    
 ```
 
 ## 2. Export certificate assessment (via files)
@@ -255,7 +150,7 @@ Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability 
 ### 2.3 URL
 
 ```http
-GET /api/machines/certificateAssessmentExport
+GET /api/machines/HardwareFirmwareInventoryExport
 ```
 
 ### 2.4 Parameters
@@ -286,15 +181,20 @@ Property (ID)|Data type|Description
 ### 2.6.1 Request example
 
 ```http
-GET https://api.securitycenter.contoso.com/api/machines/certificateAssessmentExport
+GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryExport
 ```
 
 ### 2.6.2 Response example
 
 ```json
     {
-        "@odata.context":"https://127.0.0.1/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
-        "exportFiles":["https://tvmexportexternalstgeus.blob.core.windows.net/temp-5c080622-f613-42bb-9fee-e17ccdff90d3/2022-03-20/1318/CertificateAssessmentExport/json/OrgId=47d41a0c-188d-46d3-bbea-a93dbc0bfcaa/_RbacGroupId=4226/part-00000-65a62a9d-7a01-4d78-bbdb-6d3e07b34cc9.c000.json.gz?sv=2020-02-10&st=2022-03-20T13%3A35%3A37Z&se=2022-03-20T16%3A35%3A37Z&sr=b&sp=r&sig=IMmwTOYmGvU0ei5AHLNAxnFCmZkE2jvBHzRmuAu9xaA%3D","https://tvmexportexternalstgeus.blob.core.windows.net/temp-5c080622-f613-42bb-9fee-e17ccdff90d3/2022-03-20/1318/CertificateAssessmentExport/json/OrgId=47d41a0c-188d-46d3-bbea-a93dbc0bfcaa/_RbacGroupId=4414/part-00000-65a62a9d-7a01-4d78-bbdb-6d3e07b34cc9.c000.json.gz?sv=2020-02-10&st=2022-03-20T13%3A35%3A37Z&se=2022-03-20T16%3A35%3A37Z&sr=b&sp=r&sig=2r0y74WZsATa0DjQTwfBxNqL5vN2Wl0AZKHMNrxuJ30%3D","https://tvmexportexternalstgeus.blob.core.windows.net/temp-5c080622-f613-42bb-9fee-e17ccdff90d3/2022-03-20/1318/CertificateAssessmentExport/json/OrgId=47d41a0c-188d-46d3-bbea-a93dbc0bfcaa/_RbacGroupId=75/part-00000-65a62a9d-7a01-4d78-bbdb-6d3e07b34cc9.c000.json.gz?sv=2020-02-10&st=2022-03-20T13%3A35%3A37Z&se=2022-03-20T16%3A35%3A37Z&sr=b&sp=r&sig=uVdY4%2BBpMdPMwaD3G0RJTZkS4R9J8oN8I3tu%2FOcG35c%3D"],
-        "generatedTime":"2022-03-20T13:18:00Z"
+        "@odata.context":"https://api-df.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
+    "exportFiles": [
+        "https://tvmexportstrprdcane.blob.core.windows.net/tvm-firmware-export/2022-07-11/1101/FirmwareHardwareExport/json/OrgId=d7c7c745-195f-4223-9c7a-99fb420fd000/_RbacGroupId=39/part-00999-71eea973-1bb1-4d0a-829d-80cb07aff5d8.c000.json.gz?sv=2020-08-04&st=2022-07-11T13%3A10%3A06Z&se=2022-07-11T16%3A10%3A06Z&sr=b&sp=r&sig=muN8Sq6rVN6bFMtR0u3S5Wzh3D9qNPgN5vpU7lWvULg%3D",
+        "https://tvmexportstrprdcane.blob.core.windows.net/tvm-firmware-export/2022-07-11/1101/FirmwareHardwareExport/json/OrgId=d7c7c745-195f-4223-9c7a-99fb420fd000/_RbacGroupId=9/part-00968-71eea973-1bb1-4d0a-829d-80cb07aff5d8.c000.json.gz?sv=2020-08-04&st=2022-07-11T13%3A10%3A06Z&se=2022-07-11T16%3A10%3A06Z&sr=b&sp=r&sig=%2BA0%2B4qOOBCS5E4UenJPbMdLM%2FkbXHnz%2F1pvfSOCq%2F2s%3D",
+        "https://tvmexportstrprdcane.blob.core.windows.net/tvm-firmware-export/2022-07-11/1101/FirmwareHardwareExport/json/OrgId=d7c7c745-195f-4223-9c7a-99fb420fd000/_RbacGroupId=9/part-00969-71eea973-1bb1-4d0a-829d-80cb07aff5d8.c000.json.gz?sv=2020-08-04&st=2022-07-11T13%3A10%3A06Z&se=2022-07-11T16%3A10%3A06Z&sr=b&sp=r&sig=sZUgYMwSr5zk6BZvS%2BoYIWlHJWk2oJ7YjiC8R26S1X4%3D"
+    ],
+    "generatedTime": "2022-07-11T11:01:00Z"
+
    }
 ```
