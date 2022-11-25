@@ -49,7 +49,7 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 ### 1.1 API method description
 
-Returns all hardware and firmware assessment  assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, ComponentType and  ComponentName.
+Returns all hardware and firmware assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, ComponentType and  ComponentName.
 
 #### 1.1.1 Limitations
 
@@ -131,7 +131,7 @@ GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryPro
 
 ### 2.1 API method description
 
-Returns all hardware and firmware assessment  assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, ComponentType and  ComponentName.
+Returns all hardware and firmware assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, ComponentType and  ComponentName.
 
 #### 2.1.1 Limitations
 
