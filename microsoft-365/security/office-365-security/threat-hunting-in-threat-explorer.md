@@ -64,7 +64,7 @@ In Microsoft Defender for Office 365, there are two subscription plans—Plan 1 
 
 Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of the *Threat Explorer* (also called *Explorer*) hunting tool in Plan 2. In this series of articles, most of the examples were created using the full Threat Explorer. Admins should test any steps in Real-time detections to see where they apply.
 
-After you go to **Explorer**, by default, you'll arrive on the **All email** page, but use the **tabs** to navigate to the available views. If you're hunting Phish, or digging into a threat campaign, choose those views.
+After you go to **Explorer**, by default, you'll arrive on the **All email** page, but use the tabs to navigate to the available views. If you're hunting phish or digging into a threat campaign, choose those views.
 
 Once a security operations (Sec Ops) person selects the data they want to see, they can further narrow down the data by applying filters like Sender, Recipient, Subject etc. or select appropriate date range to get the desired results. Remember to select Refresh to complete your filtering actions.
 
