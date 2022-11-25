@@ -1,6 +1,6 @@
 ---
 title: Create custom roles with Microsoft 365 Defender role-based access control (RBAC)
-description: Create custom Microsoft 365 Defender Security portal role-based access control (RBAC)
+description: Create custom roles in Microsoft 365 Defender Security portal role-based access control (RBAC)
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,7 +14,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.custom: 
-ms.topic:
+ms.topic: how-to
 ms.subservice: mde
 ms.date: 11/10/2022
 ms.reviewer: 
