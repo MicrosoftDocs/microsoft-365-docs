@@ -1,5 +1,5 @@
 ---
-title: Firmware and hardware assessment methods and properties per device
+title: Hardware and firmware assessment methods and properties per device
 description: Provides information about the Firmware and Hardware APIs that pull "Microsoft Defender Vulnerability Management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine, firmware and hardware assessment 
 ms.service: microsoft-365-security
@@ -20,7 +20,7 @@ ms.custom: api
 search.appverid: met150
 ---
 
-# Export Firmware and hardware assessment inventory per device
+# Export Hardware and firmware assessment inventory per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,13 +43,13 @@ There are different API calls to get different types of data. In general, each A
 Data that is collected using either '_JSON response_ or _via files_' is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages.
 
 > [!NOTE]
-> Unless indicated otherwise, all export security baseline assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**)
+> Unless indicated otherwise, all export hardware and firmware assessment assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**)
 
-## 1. Export firmware and hardware assessment (JSON response)
+## 1. Export hardware and firmware assessment (JSON response)
 
 ### 1.1 API method description
 
-Returns all firmware and hardware assessments for all devices, on a per-device basis. 
+Returns all hardware and firmware assessment  assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, ComponentType and  ComponentName.
 
 #### 1.1.1 Limitations
 
@@ -93,10 +93,9 @@ Property (ID)|Data type|Description
 |rbacGroupName|String|The role-based access control (RBAC) group. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 |DeviceName|String|Fully qualified domain name (FQDN) of the device.
 |ComponentType|String|Type of hardware or firmware component.
-|Manufacturer|String|Manufacturer of hardware or firmware component.
-|ComponentName|String|Name of hardware or firmware component.
-|ComponentVersion|String|Name of hardware or firmware component.
-|Additional fields|String|Name of the system.
+|Manufacturer|String|Manufacturer of a specific hardware or firmware component.
+|ComponentName|String|Name of a specific hardware or firmware component.
+|ComponentVersion|String|Version of a specific hardware or firmware component.
 
 ## 1.6 Example
 
@@ -132,7 +131,7 @@ GET https://api.security.microsoft.com/api/machines/HardwareFirmwareInventoryPro
 
 ### 2.1 API method description
 
-Returns all certificate assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, Thumbprint and Path.
+Returns all hardware and firmware assessment  assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, ComponentType and  ComponentName.
 
 #### 2.1.1 Limitations
 
