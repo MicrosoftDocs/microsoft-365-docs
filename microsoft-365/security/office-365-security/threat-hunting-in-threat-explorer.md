@@ -66,7 +66,7 @@ Defender for Office 365 Plan 1 uses *Real-time detections*, which is a subset of
 
 After you go to **Explorer**, by default, you'll arrive on the **All email** page, but use the tabs to navigate to the available views. If you're hunting phish or digging into a threat campaign, choose those views.
 
-Once a security operations (Sec Ops) person selects the data they want to see, they can further narrow down the data by applying filters like Sender, Recipient, Subject etc. or select appropriate date range to get the desired results. Remember to select Refresh to complete your filtering actions.
+Once a security operations (Sec Ops) person selects the data they want to see, they can further narrow down the data by applying filters such as Sender, Recipient, and Subject,  or select an appropriate date range to get the desired results. Remember to select Refresh to complete your filtering actions.
 
 :::image type="content" source="../../media/sender-drop-down.png" alt-text="The Sender button in Threat Explorer" lightbox="../../media/sender-drop-down.png":::
 
