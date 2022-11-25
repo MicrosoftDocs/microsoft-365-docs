@@ -1,0 +1,182 @@
+---
+title: "Learn about Migration Assistant for Microsoft Purview DLP"
+f1.keywords:
+- CSH
+ms.author: v-aljupudi
+author: alekyaj
+manager: chrfox
+ms.date: 
+audience: ITPro
+ms.topic: conceptual
+ms.service: O365-seccomp
+ms.localizationpriority: high
+ms.collection: 
+- purview-compliance
+- m365solution-mip
+- m365initiative-compliance
+- highpri
+search.appverid: 
+- MET150
+description: "Migration Assistant tool is a Windows based desktop application that will migrate your DLP policies from other DLP platforms to Microsoft DLP platform."
+---
+
+# Learn about Migration Assistant for Microsoft Purview DLP
+
+This article will guide you to learn about the Migration Assistant for Microsoft Purview DLP.
+
+The Migration Assistant tool is a Windows-based desktop application that will migrate your DLP policies from other DLP platforms to our DLP platform. This tool takes you through a simple five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can safely use the Migration Assistant tool to create DLP policies in test mode, which does not affect your live data or interact with current environment.
+
+## Tasks that Migration Assistant can perform
+
+Migration Assistant takes over many of the difficult or tedious tasks involved in a DLP migration project:
+
+- In traditional migration scenario, you need to perform feasibility analysis between source & target DLP platforms, map features, migrate policies manually, and test and tweak DLP policies. Your migrated DLP policies can be up and running within minutes of starting the Migration Assistant process.
+- With Migration Assistant, you can scale up your migration project quickly from moving a single policy manually to multiple policies at the same time.
+- Migration Assistant automatically identifies Sensitive InforMigration Types (SITs) or Data Identifiers in source policies and creates Custom SITs in your Microsoft tenant moving over all your custom regular expressions and keywords in a few clicks.
+- Migration Assistant detects which conditions, exclusions & actions are currently being used in source policies and automatically creates new rules with the same conditions, exclusions & actions.
+- Migration Assistant provides you with a detailed migration report with policy wise migration status and recommendations.
+- Migration Assistant ensures that your DLP policy migration project is completely private and takes place within the boundaries of your organization.
+- Migration Assistant supports policy migration from Symantec Data Loss Prevention 15.7 or earlier.
+
+## How does the Migration Assistant for Microsoft Purview DLP work?
+
+The following diagram illustrates the Migration Assistant migration process:
+
+:::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of Migration Assistant for DLP":::
+
+The Migration Assistant for Microsoft Purview DLP works in five phases during any instance of migration:
+
+- **Input:** Migration Assistant ingests one or more Symantec DLP policy XML files.
+- **Analyze:** Migration Assistant interprets the files & identifies Symantec DLP policy constructs.
+- **Rationalize:** Migration Assistant maps the identified Symantec DLP policy constructs to Microsoft DLP capabilities. It performs validations for Microsoft DLP platform limitations.
+- **Migrate:** Migration Assistant executes PowerShell scripts for the DLP scenarios identified & supported by the UDLP platform.
+**Report:** Migration Assistant provides the user with a detailed migration report about which policies were migrated successfully, partially and/or not migrated. It also provides recommendations to improve migration fidelity further.
+
+## Understanding mapping of Symantec DLP elements to M365 DLP elements
+
+The following section describes how Migration Assistant translates different policy elements from Symantec DLP to M365 DLP:
+
+### Symantec DLP supported versions
+
+Migration Assistant supports migration of policies from Symantec DLP 15 and higher.
+
+> [!NOTE]
+> Some DLP policy exports from earlier versions of Symantec DLP may still work with the tool.
+
+### Supported Workloads
+
+Migration Assistant migrates policies into Microsoft DLP only for the workloads listed in the following table:
+
+| **Workload**  | **Migration Assistant Support** |
+| ------------------------------- | ------------------------------- |
+| Exchange (EXO)| Yes           |
+| Share Point Online (SPO)        | Yes           |
+| One Drive for Business (ODB)    | Yes           |
+| Teams Chat and Channel messages | Yes           |
+| Devices       | Yes           |
+
+> [!TIP]
+> For workloads other than the workloads detected in input policy, Migration Assistant provides the ability to extend the policy to other workloads.
+
+### Classification Elements
+
+The following table details the mapping of classification elements that Migration Assistant uses while translating Symantec DLP policies:
+
+| **Symantec Classification Element** | **M365 DLP Classification Element**           |
+| ---------------------- | ------------------------- |
+| Regular Expression| Create new custom SIT with regular expression.|
+| Keyword           | Create new custom SIT with a keyword list or keyword dictionary.|
+| Keyword Pair      | Create new custom SIT with first keyword list as primary element & second keyword list as a supporting element with 300 char proximity. |
+| Data Identifier   | Map to OOB SIT if equivalent available else, create new custom SIT.   |
+
+The following table details the mapping of optional validators for Sensitive Information Types (also known as Data Identifiers in Symantec DLP) that Migration Assistant uses while translating Symantec DLP policies:
+
+| **Symantec Optional Validators**  | **M365 DLP Optional Validators**|
+| -------------------- | ------------------ |
+| Exclude exact match               | Exclude specific matches      |
+| Exact Match Data Identifier Check | NA          |
+| Exclude beginning characters      | Starts or does not start with characters        |
+| Exclude ending characters         | Ends or does not end with characters            |
+| Exclude prefix  | Include or Exclude prefixes   |
+| Exclude suffix  | Include or Exclude prefixes   |
+| Number Delimiter| NA          |
+| Require beginning characters      | Starts or does not start with characters        |
+| Exact Match     | NA          |
+| Duplicate digits| Exclude duplicate characters  |
+| Require ending characters         | Ends or does not end with characters            |
+| Find keywords   | Available as both primary & supporting elements |
+
+### Regular Expressions – Potential validation issues to be aware of
+
+When you upload your rule package XML file, the system validates the XML and checks for known bad patterns and obvious performance issues. Here are known issues that the validation checks for — a regular expression:
+
+- Cannot begin or end with alternator "|", which matches everything because it's considered an empty match.
+     - For example, "|a" or "b|" will not pass validation.-
+- Cannot begin or end with a ".{0,m}" pattern, which has no functional purpose and only impairs performance.
+     - For example, ".{0,50}ASDF" or "ASDF.{0,50}" will not pass validation.-
+- Cannot have ".{0,m}" or ".{1,m}" in groups, and cannot have ".*" or ".+" in groups.
+     - For example, "(.{0,50000})" will not pass validation.-
+- Cannot have any character with "{0,m}" or "{1,m}" repeaters in groups.
+     - For example, "(a*)" will not pass validation.-
+- Cannot begin or end with ".{1,m}"; instead, use just "."
+     - For example, ".{1,m}asdf" will not pass validation; instead, use just ".asdf".-
+- Cannot have an unbounded repeater (such as "*" or "+") on a group.
+     - For example, "(xx)*" and "(xx)+" will not pass validation.
+
+### Condition and Exception Mapping
+
+The following tables detail the mapping of condition and exception elements for Exchange (EXO) workload, Endpoint Devices, SharePoint Online, OneDrive & Other Workloads that Migration Assistant uses while translating Symantec DLP policies:
+
+#### Exchange Workload
+
+| **Condition/Exception in Symantec**   | **Condition/Exception in M365 DLP**       |
+| ------------------ | -------------------------------------- |
+| Content Matches Regular Expression    | Content contains SIT    |
+| Content Matches Keyword               | Content contains SIT    |
+| Content Matches Data Identifier       | Content contains SIT    |
+| Content Matches Classification        | Not supported           |
+| File Properties<br><li>File name<li>File type | One or more of the following:<li>Document name is<li>File extension is            |
+| Message Attachment or File Type Match | One or more of the following:<li>Attachment is password protected<li>Attachment's file extension is |
+| Message Attachment or File Size Match | Document size equals or is greater than   |
+| Message Attachment or File Name Match | One or more of the following:<li>Document name contains words or phrases<li>Document name matches patterns            |
+| Message/Email Properties and Attributes | One or more of the following:<li>Email subject contains|
+| Sender/User Matches Pattern           | One or more of the following:<li>Sender is<li>Sender is a member of<li>Sender domain is<li>Sender address contains words<li>Sender address matches patterns<li>Sender IP address is |
+| Recipient Matches Pattern             | One or more of the following:<li>Recipient is a member of<li>Recipient domain is<li>Recipient is<li>Recipient address contains words<li>Recipient address matches patterns |
+| Sender/User based on a Directory Server Group           | Not supported           |
+| Recipient based on a Directory Server Group             | Not supported           |
+| Content Matches Exact Data from an Exact Data Profile (EDM)               | Not supported           |
+| Content Matches Document Signature from an Indexed Document Profile (IDM) | Not supported           |
+| Detect using Vector Machine Learning profile (VML)      | Not supported           |
+| Protocol Monitoring<li>SMTP protocol             | Exchange (EXO) DLP policy |
+
+#### Endpoint Devices, SharePoint Online, OneDrive & Other Workloads
+
+| **Condition/Exception in Symantec**   | **Condition/Exception in M365 DLP**   |
+| ----------- | ------------------- |
+| Content Matches Regular Expression    | Content contains SIT |
+| Content Matches Keyword               | Content contains SIT |
+| Content Matches Data Identifier       | Content contains SIT |
+| Message Attachment or File Type Match | Document’s file extension is   |
+| Protocol Monitoring<li>HTTP<li>HTTPS<li>FTP | Cross-workload DLP policy(s)   |
+| Protocol Monitoring: Endpoint Device Type<li>CD/DVD<li>Removable storage<li>Copy to network share<li>Printer/Fax<li>Clipboard<li>Cloud storage<li>Application File Access<li>SEP Intensive Protection | One or more of the following (Devices):<li>Copy to USB removable media<li>Copy to network share<li>Copy to clipboard<li>Print<li>Upload to cloud service domains or access by unallowed browsers |
+
+### Response Rules
+
+The following table details the mapping of Symantec response rules to M365 DLP actions that Migration Assistant uses while translating Symantec DLP policies:
+
+| **Symantec Response Rule** | **M365 DLP Action**|
+| ----------------- | ----------------- |
+| Generate DLP Incident      | Generate Alert     |
+| Logging (Syslog)           | Audit logs         |
+| Network Prevent: Modify SMTP Message<li>Modify email subject<li>Modify header  | One or more of the following:<li>Prepend subject<li>Set headers        |
+| Network Prevent: Block SMTP Message<li>Bounce message to sender<li>Redirect message to this address | One or more of the following:<li>Block / Restrict access<li>Send user notification<li>Redirect message to |
+| Send Email Notification    | Send User Notification  |
+| Endpoint Prevent<li>Notify<li>Notify with Cancel<li>Block               | One or more of the following (Endpoint Devices)<li>Notify<li>Block<li>Audit          |
+| User Cancel| One or more of the following:<li>Block / Restrict access<li>User Overrides  |
+
+## Next steps
+
+Now that you've learned about the Migration Assistant tool for Microsoft Purview DLP, your next steps are:
+
+1. [Get started with the Migration Assistant for Microsoft Purview DLP](migration-assistant-for-dlp-get-started.md)
+2. [Use the Migration Assistant for Microsoft Purview DLP](migration-assistant-for-dlp-use.md)
