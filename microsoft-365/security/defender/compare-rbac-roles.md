@@ -14,7 +14,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.custom: 
-ms.topic:
+ms.topic: reference
 ms.subservice: mde
 ms.date: 11/10/2022
 ms.reviewer: 

@@ -1,6 +1,6 @@
 ---
 title: Details of custom permissions in Microsoft 365 Defender role-based access control (RBAC) 
-description: Manage permissions and access to Microsoft 365 Defender Security portal experiences using role-based access control (RBAC)
+description: Learn about the custom permissions available in Microsoft 365 Defender Security role-based access control (RBAC)
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
