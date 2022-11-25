@@ -24,7 +24,7 @@ description: "Migration Assistant tool is a Windows based desktop application th
 
 This article will guide you to learn about the Migration Assistant for Microsoft Purview DLP.
 
-The Migration Assistant tool is a Windows-based desktop application that will migrate your DLP policies from other DLP platforms to our DLP platform. This tool takes you through a simple five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can safely use the Migration Assistant tool to create DLP policies in test mode, which does not affect your live data or interact with current environment.
+The Migration Assistant tool is a Windows-based desktop application that will migrate your DLP policies from other DLP platforms to our DLP platform. This tool takes you through a simple five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can safely use the Migration Assistant tool to create DLP policies in test mode, which doesn't affect your live data or interact with current environment.
 
 ## Tasks that Migration Assistant can perform
 
@@ -35,7 +35,7 @@ Migration Assistant takes over many of the difficult or tedious tasks involved i
 - Migration Assistant automatically identifies Sensitive InforMigration Types (SITs) or Data Identifiers in source policies and creates Custom SITs in your Microsoft tenant moving over all your custom regular expressions and keywords in a few clicks.
 - Migration Assistant detects which conditions, exclusions & actions are currently being used in source policies and automatically creates new rules with the same conditions, exclusions & actions.
 - Migration Assistant provides you with a detailed migration report with policy wise migration status and recommendations.
-- Migration Assistant ensures that your DLP policy migration project is completely private and takes place within the boundaries of your organization.
+- Migration Assistant ensures that your DLP policy migration project is private and takes place within the boundaries of your organization.
 - Migration Assistant supports policy migration from Symantec Data Loss Prevention 15.7 or earlier.
 
 ## How does the Migration Assistant for Microsoft Purview DLP work?
@@ -52,9 +52,9 @@ The Migration Assistant for Microsoft Purview DLP works in five phases during an
 - **Migrate:** Migration Assistant executes PowerShell scripts for the DLP scenarios identified & supported by the UDLP platform.
 **Report:** Migration Assistant provides the user with a detailed migration report about which policies were migrated successfully, partially and/or not migrated. It also provides recommendations to improve migration fidelity further.
 
-## Understanding mapping of Symantec DLP elements to M365 DLP elements
+## Understanding mapping of Symantec DLP elements to Microsoft 365 DLP elements
 
-The following section describes how Migration Assistant translates different policy elements from Symantec DLP to M365 DLP:
+The following section describes how Migration Assistant translates different policy elements from Symantec DLP to Microsoft 365 DLP:
 
 ### Symantec DLP supported versions
 
@@ -95,33 +95,33 @@ The following table details the mapping of optional validators for Sensitive Inf
 | -------------------- | ------------------ |
 | Exclude exact match               | Exclude specific matches      |
 | Exact Match Data Identifier Check | NA          |
-| Exclude beginning characters      | Starts or does not start with characters        |
-| Exclude ending characters         | Ends or does not end with characters            |
+| Exclude beginning characters      | Starts or doesn't start with characters        |
+| Exclude ending characters         | Ends or doesn't end with characters            |
 | Exclude prefix  | Include or Exclude prefixes   |
 | Exclude suffix  | Include or Exclude prefixes   |
 | Number Delimiter| NA          |
-| Require beginning characters      | Starts or does not start with characters        |
+| Require beginning characters      | Starts or doesn't start with characters        |
 | Exact Match     | NA          |
 | Duplicate digits| Exclude duplicate characters  |
-| Require ending characters         | Ends or does not end with characters            |
+| Require ending characters         | Ends or doesn't end with characters            |
 | Find keywords   | Available as both primary & supporting elements |
 
 ### Regular Expressions – Potential validation issues to be aware of
 
-When you upload your rule package XML file, the system validates the XML and checks for known bad patterns and obvious performance issues. Here are known issues that the validation checks for — a regular expression:
+When you upload your rule package XML file, the system validates the XML and checks for known bad patterns and obvious performance issues. Here are known issues that the validation checks for—a regular expression:
 
-- Cannot begin or end with alternator "|", which matches everything because it's considered an empty match.
-     - For example, "|a" or "b|" will not pass validation.-
-- Cannot begin or end with a ".{0,m}" pattern, which has no functional purpose and only impairs performance.
-     - For example, ".{0,50}ASDF" or "ASDF.{0,50}" will not pass validation.-
-- Cannot have ".{0,m}" or ".{1,m}" in groups, and cannot have ".*" or ".+" in groups.
-     - For example, "(.{0,50000})" will not pass validation.-
-- Cannot have any character with "{0,m}" or "{1,m}" repeaters in groups.
-     - For example, "(a*)" will not pass validation.-
-- Cannot begin or end with ".{1,m}"; instead, use just "."
-     - For example, ".{1,m}asdf" will not pass validation; instead, use just ".asdf".-
-- Cannot have an unbounded repeater (such as "*" or "+") on a group.
-     - For example, "(xx)*" and "(xx)+" will not pass validation.
+- Can't begin or end with alternator "|", which matches everything because it's considered an empty match.
+     - For example, "|a" or "b|" won't pass validation.-
+- Can't begin or end with a ".{0,m}" pattern, which has no functional purpose and only impairs performance.
+     - For example, ".{0,50}ASDF" or "ASDF.{0,50}" won't pass validation.-
+- Can't have ".{0,m}" or ".{1,m}" in groups, and can't have ".*" or ".+" in groups.
+     - For example, "(.{0,50000})" won't pass validation.-
+- Can't have any character with "{0,m}" or "{1,m}" repeaters in groups.
+     - For example, "(a*)" won't pass validation.-
+- Can't begin or end with ".{1,m}"; instead, use just "."
+     - For example, ".{1,m}asdf" won't pass validation; instead, use just ".asdf".-
+- Can't have an unbounded repeater (such as "*" or "+") on a group.
+     - For example, "(xx)*" and "(xx)+" won't pass validation.
 
 ### Condition and Exception Mapping
 
@@ -162,7 +162,7 @@ The following tables detail the mapping of condition and exception elements for 
 
 ### Response Rules
 
-The following table details the mapping of Symantec response rules to M365 DLP actions that Migration Assistant uses while translating Symantec DLP policies:
+The following table details the mapping of Symantec response rules to Microsoft 365 DLP actions that Migration Assistant uses while translating Symantec DLP policies:
 
 | **Symantec Response Rule** | **M365 DLP Action**|
 | ----------------- | ----------------- |

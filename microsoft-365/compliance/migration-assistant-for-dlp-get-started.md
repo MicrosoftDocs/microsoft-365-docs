@@ -31,9 +31,9 @@ If you're using Migration Assistant for Microsoft Purview DLP for the first time
 > [!TIP]
 > In case you are facing issues with launching the application after completing all the steps in this article, refer to the [Troubleshooting](migration-assistant-for-dlp-use.md#troubleshooting).
 
-### 1. Have Appropriate M365 Subscription
+### 1. Have Appropriate Microsoft 365 Subscription
 
-To migrate your DLP policies with highest fidelity across all Microsoft workloads (Exchange, SharePoint Online, OneDrive for Business, Teams, Endpoint Devices) as well as third party cloud apps (like Box, Google Drive, etc.), your organization should have one of the following subscriptions:
+To migrate your DLP policies with highest fidelity across all Microsoft workloads (Exchange, SharePoint Online, OneDrive for Business, Teams, Endpoint Devices) and third party cloud apps (like Box, Google Drive, etc.), your organization should have one of the following subscriptions:
 
 - Microsoft 365 E5 or Office 365 E5 subscription
 - Microsoft 365 E3 subscription with E5 Compliance add-on
@@ -44,7 +44,7 @@ You need to have a *Global Administrator or Compliance Administrator* role to be
 
 ### 3. Check your Operating System
 
-You will need to download, install, and run the Migration Assistant on one of the following operating systems:
+You'll need to download, install, and run the Migration Assistant on one of the following operating systems:
 
 - Windows 11,10,8.1,7
 - Windows Vista
@@ -59,11 +59,11 @@ You need to have the PowerShell 7 (v7.2.6) installed on the same machine where M
 
 You must have .NET 6 core SDK (v6.0.41) installed on the same machine where Migration Assistant will be installed to be able to successfully run Migration Assistant. [Click here to download .NET 6 core SDK on your machine](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-6.0.401-windows-x64-installer).
 
-### Export Symatec DLP Policies
+### Export Symantec DLP Policies
 
-Before you begin the migration process with Migration Assistant, you will also need your Symantec DLP policies.
+Before you begin the migration process with Migration Assistant, you'll also need your Symantec DLP policies.
 
-You will need to export these policies as XMLs from Symantec DLP. You can export these as explained [here](https://help.symantec.com/cs/DLP15.1/DLP/v28354460_v125428396/Policy-template-import-and-export).
+You'll need to export these policies as XMLs from Symantec DLP. You can export these as explained [here](https://help.symantec.com/cs/DLP15.1/DLP/v28354460_v125428396/Policy-template-import-and-export).
 
 ## Installation steps
 
@@ -80,14 +80,14 @@ Follow the steps given below to install Migration Assistant for Microsoft Purvie
      :::image type="content" source="../media/migration-assistant-for-dlp-installation-path.png" alt-text="Screenshot of folder path for Migration Assistant installation":::
 6. Once installer is ready, click ‘Install’ to begin installation.
      :::image type="content" source="../media/migration-assistant-for-dlp-install-dialog-box.png" alt-text="Screenshot of Migration Assistant installation dialog box ":::
-7. Please wait while Migration Assistant is being installed.
+7. Wait while Migration Assistant is being installed.
      :::image type="content" source="../media/migration-assistant-for-dlp-installation-status.png" alt-text="Screenshot of Migration Assistant installation status":::
 8. Once Migration Assistant is installed, you click on ‘Finish’ and close the dialog box.
     :::image type="content" source="../media/migration-assistant-for-dlp-finish-installation.png" alt-text="Screenshot of Migration Assistant installation completion":::
 
 ## Next steps
 
-Now that you have installed Migration Assistant for Microsoft Purview DLP (Preview), you are ready to move on to your next step where you use the migration tool.
+Now that you have installed Migration Assistant for Microsoft Purview DLP (Preview), you're ready to move on to your next step where you use the migration tool.
 
 - [Using Migration Assistant for Microsoft Purview DLP](migration-assistant-for-dlp-use.md)
 
