@@ -129,17 +129,13 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
     - To turn off Bookings with me for your organization, remove **MicrosoftOWSPersonalBookings**, if present, from **EwsAllowList** by running the following command:  
 
    ```PowerShell
-   Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceAllowList -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
     - To turn on Bookings with me for your organization, you must set the **EwsApplicationAccessPolicy** to **EnforceAllowList** and add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
 
    ```PowerShell
-   Set-OrganizationConfig -EwsApplicationAccessPolicy:EnforceAllowList
-   ```
-   
-   ```PowerShell
-   Set-OrganizationConfig -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceAllowList -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     **B**. If the value of **EwsApplicationAccessPolicy** is **EnforceBlockList**, all applications are allowed to access EWS and REST, except those specified in **EwsBlockList**.
@@ -147,13 +143,13 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
     - To turn off Bookings with me for your organization, add **MicrosoftOWSPersonalBookings** by running the following command:
 
    ```PowerShell
-   Set-OrganizationConfig -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     - To turn on Bookings with me if blocked, remove **MicrosoftOWSPersonalBookings** by running the following command:
 
    ```PowerShell
-   Set-OrganizationConfig -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
     **C**. If the value of **EwsApplicationAccessPolicy** is empty, all applications are allowed to access EWS and REST.
@@ -164,6 +160,12 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
    
+    - If you want to revert the value of **EwsApplicationAccessPolicy** to empty, to allow all applications to access EWS and REST, run the following command:
+
+   ```PowerShell
+   Set-OrganizationConfig -EwsApplicationAccessPolicy $null
+   ```
+      
   > [!NOTE]
   > The EwsApplicationAccessPolicy parameter defines which applications other than Entourage, Outlook, and Outlook for Mac can access EWS.
 
