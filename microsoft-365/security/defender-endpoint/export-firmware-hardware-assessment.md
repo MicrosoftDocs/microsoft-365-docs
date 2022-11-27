@@ -49,7 +49,7 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 ### 1.1 API method description
 
-Returns all hardware and firmware assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, ComponentType and  ComponentName.
+Returns all hardware and firmware assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of deviceId and componentType.
 
 #### 1.1.1 Limitations
 
@@ -88,14 +88,15 @@ GET api/machines/HardwareFirmwareInventoryProductCodeByMachine
 
 Property (ID)|Data type|Description
 :---|:---|:---
-|DeviceId|String|Unique identifier for the device in the service.
+deviceId|String|Unique identifier for the device in the service.
 |rbacGroupId|Int|The role-based access control (RBAC) group Id. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 |rbacGroupName|String|The role-based access control (RBAC) group. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
-|DeviceName|String|Fully qualified domain name (FQDN) of the device.
-|ComponentType|String|Type of hardware or firmware component.
-|Manufacturer|String|Manufacturer of a specific hardware or firmware component.
-|ComponentName|String|Name of a specific hardware or firmware component.
-|ComponentVersion|String|Version of a specific hardware or firmware component.
+|deviceName|String|Fully qualified domain name (FQDN) of the device.
+|componentType|String|Type of hardware or firmware component.
+|manufacturer|String|Manufacturer of a specific hardware or firmware component.
+|componentName|String|Name of a specific hardware or firmware component.
+|componentVersion|String|Version of a specific hardware or firmware component.
+|additionalFields|String|Additional information about the components in JSON array format.
 
 ## 1.6 Example
 
