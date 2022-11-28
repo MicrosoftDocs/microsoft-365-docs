@@ -30,16 +30,20 @@ Annotation tools currently include pen and highlighter, where can choose the col
 
     ![Screenshot of a document library showing a file selected to open.](../media/content-understanding/annotation-select-file.png)
 
-2. On the right side of the document page, select the annotation icon (![Screenshot of the annotation icon.](../media/content-understanding/annotation-icon.png)) to begin using the annotations feature.
+2. On the upper-right side of the document pane, select the annotation icon (![Screenshot of the annotation icon.](../media/content-understanding/annotation-icon.png)) to begin using the annotations feature.
 
-    ![Screenshot of a document page showing the annotation icon highlighted.](../media/content-understanding/annotation-icon-document-page.png)
+    ![Screenshot of a document pane showing the annotation icon highlighted.](../media/content-understanding/annotation-icon-document-page.png)
 
-3. On the left side of the document page, select the annotation tool you want to use.
+3. On the left side of the document pane, select the annotation tool you want to use.
 
-    ![Screenshot of a document page showing the annotation tools highlighted.](../media/content-understanding/annotation-tools-document-page.png)
+    ![Screenshot of a document pane showing the annotation tools highlighted.](../media/content-understanding/annotation-tools-document-page.png)
 
 4. To change the color or thickness or the pen or highlighter, double-tap the tool to show the color palette options.
 
     ![Screenshot of the color options for the annotation tools.](../media/content-understanding/annotation-tools-color-options.png)
 
-5. After you annotate a page, you can hide or display the notations by selecting the annotations icon (![Screenshot of the annotation icon.](../media/content-understanding/annotation-icon.png)). Other users can also see any notations that have been added by anyone by selecting the annotations icon. Annotations that have been added to a page do not change the original document.
+5. After you annotate a page, you can hide or display the notations by selecting the annotations icon. Other users can also see any notations that have been added to a page by selecting the annotations icon. Annotations are added as an overlay to a page. They do not modify the original document.
+
+6. You can also use the zoom and rotate page options to view annotations.
+
+    ![Screenshot of the zoom and rotate page options for the annotation tools.](../media/content-understanding/annotation-zoom-rotate-options.png)
