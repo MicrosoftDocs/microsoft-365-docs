@@ -224,7 +224,7 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 
 > [!NOTE]
 > 
-> When passing parameters to a live response script, make sure that you are not including the following forbidden characters: **';'**, **'&'**, **'|'**, **'!'**, **'$'**
+> When passing parameters to a live response script, do not include the following forbidden characters: **';'**, **'&'**, **'|'**, **'!'**, and **'$'**.
 
 ## `scheduledtask`
 
