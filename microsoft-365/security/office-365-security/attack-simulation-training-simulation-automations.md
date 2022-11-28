@@ -566,28 +566,38 @@ When you're finished, click **Submit**.
 
 ## Frequently asked questions (FAQ)
 
-Here are some of the most common questions about Simulation Automation
+This section contains some of the most common questions about Simulation automations.
 
-- **Why is the status under automation showing completed and In progress under simulation?**
-Completed in on simulation automation page means that job of simulation automation is completed and no more simulations will by created by it. Simulation is a separate entity that will complete after 30 days of simulation launch time. 
+### Why is the Status value under Automation showing Completed, but the Status value under Simulaton showing In progress?
 
-- **Why is the simulation end date after 30 days after being created, even though we selected a end date after 1 week? for the automation**
-Selected 1 week end date is for the simulation automation, which means that no new simulation will be created by it after 1 week. For simulation created by a simulation automation, the default end date is set to 30 days after simulation creation.
+**Completed** on the **Simulation automation** page means the job of simulation automation is complete, and no more simulations will by created by it. Simulation is a separate entity that will complete after 30 days of simulation launch time. 
 
-- **If we have multiple payload techniques i.e. Credential harvest, Link to Malware and Drive by URL and targeting 300 users, how are the payload techniques being sent to users. Is it all payload techniques will go to all users or its random?**
-If 'Target All Selected Users In Every Run' option is not checked all targeted users will be distributed over maximum number of simulations to be created by that simulation automation. Otherwise, if 'Target All Selected Users In Every Run' is checked, all targeted users will be part of every simulation created by the simulation automation.
+### Why is the simulation end date 30 days after creation, even though I selected an automation end date of one week?
 
-- **How does Randomize option in Simulation schedule page work?**
-Randomize launch option will optimally select a day within the start and end date to launch simulations.
+A one week end date for the simulation automation means no new simulations will be created by it after one week. For simulations created by a simulation automation, the default end date is 30 days after the creation of the simulation.
 
-- **How does Randomize option in select payloads page work?**
-For every run, a technique out the selected ones will be selected and then a random payload from both tenant and global will be chosen. It is to make sure that the selected payload wasn't part of any previous run for this particular automation.
+### If we have multiple payload techniques (for example, Credential harvest, Link to Malware, and Drive by URL) targeting 300 users, how are the techniques sent to users? Do all payload techniques go to all users, or is the selection random?
 
-- **Scheduling - with a 'randomized' schedule, there is a maximum number of simulations between 1 & 10; how does this work?**
-This number is the maximum number of runs that can be created by this automation, i.e. maximum number of simulations that will be created by this automation is 10. Number of simulations can be fewer depending on number of targeted users and availability of payloads.
+If you don't select the **Target All Selected Users In Every Run** option, all targeted users will be distributed over the maximum number of simulations that are created by the simulation automation.
+  
+If you select **Target All Selected Users In Every Run**, all targeted users will be part of every simulation that's created by the simulation automation.
 
-- **If We have only 1 specfic day (say Wednesday is chosen) between 2 days, how many simulations will I see under Simulation tab?**
-If we have only 1 Wednesday between the start and end date, then automation will have only one valid day to send out simulation. Even even if you had selected a highervalue for 'Max number of simulations', this value will get overwritten to one.
+### How does the Randomize option on the Simulation schedule page work?
 
-- **How does randomize send times currently work?**
-Randomize send time works in batches of 1000 users and is meant to be used with large number of targets. If simulations created by automations are fewwer than 1000 users, randomize send time will not trigger.
+The **Randomize launch&& option optimally selects a day within the start date and end date range to launch simulations.
+
+### How does the Randomize option on the Select payloads page work?
+
+For every run, a technique from the list of selected techniques is chosen, and then a random payload from both Tenant and Global payloads will be chosen. This behavior helps to ensure that the selected payload wasn't part of any previous run for this particular automation.
+
+### With a randomized schedule, the maximum number of simulations is between 1 and 10. How does this work?
+
+This number is the maximum number of runs that can be created by this automation. For example, if you select 10, the maximum number of simulations that will be created by this automation is 10. The number of simulations can be fewer depending on the number of targeted users and the availability of payloads.
+
+### If I select only one specfic day between two days (for example, Wednesday), how many simulations will I see on the Simulation tab?
+
+If thre's only one Wednesday between the start date and end date, the automation will have only one valid day to send out the simulation. Even if you selected a higher value for **Max number of simulations**, this value will get overwritten to one.
+
+### How does randomize send times currently work?
+
+Randomize send time works in batches of 1000 users and is meant to be used with a large number of targeted users. If less than 1000 users are involved in simulations created by automations, a randomize send time will not trigger.
