@@ -505,24 +505,27 @@ The global settings for quarantine policies allow you to customize the quarantin
 
        :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="A customized sender display name in a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
 
+     - The **Subject** field of the quarantine notification messages.
+
      - The **Disclaimer** text that's added to the bottom of quarantine notifications. The localized text, **A disclaimer from your organization:** is always included first, followed by the text you specify as show in the following screenshot:
 
        :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="A custom disclaimer at the bottom of a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
-     - The language identifier for the **Display name** and **Disclaimer** values. Quarantine notifications are already localized based on the recipient's language settings. The **Display name** and **Disclaimer** values are used in quarantine notifications that apply to the recipient's language.
+     - The language identifier for the **Display name**, **Subject**, and **Disclaimer** values. Quarantine notifications are already localized based on the recipient's language settings. The **Display name**, **Subject**, and **Disclaimer** values are used in quarantine notifications that apply to the recipient's language.
 
-       Select the language in the **Choose language** box _before_ you enter values in the **Display name** and **Disclaimer** boxes. When you change the value in the **Choose language** box, the values in the **Display name** and **Disclaimer** boxes are emptied.
+       Select the language in the **Choose language** box _before_ you enter values in the **Display name**, **Subject** and **Disclaimer** boxes. When you change the value in the **Choose language** box, the values in the **Display name**, **Subject**, and **Disclaimer** boxes are emptied.
 
      Follow these steps to customize quarantine notifications based on the recipient's language:
 
      1. Select the language from the **Choose language** box. The default value is **Default**, which means the default language for the Microsoft 365 organization. For more information, see [How to set language and region settings for Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
-     2. Enter values for **Display name** and **Disclaimer**. The values must be unique for each language. If you try to reuse a **Display name** or **Disclaimer** value for multiple languages, you'll get an error when you click **Save**.
-     3. Click the **Add** button.
-     4. Repeat the previous steps to create a maximum of three customized quarantine notifications based on the recipient's language. An unlabeled box shows the languages that you've configured:
+     2. Enter values for **Display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a **Display name**, **Subject**, or **Disclaimer** value for multiple languages, you'll get an error when you click **Save**.
+     3. Use **Specify sender address** to select an existing recipient to use as the sender of the quarantine notification. This sender email address does not need to be unique for each language.
+     4. Click the **Add** button.
+     5. Repeat the previous steps to create a maximum of three customized quarantine notifications based on the recipient's language. An unlabeled box shows the languages that you've configured:
 
         :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="The selected languages in the global quarantine notification settings of quarantine policies." lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
-   - **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo. This option is not supported if your organization has custom logo pointing to a URL instead of an uploaded custom logo file. 
+   - **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo. This option is not supported if your organization has a custom logo pointing to a URL instead of an uploaded image file.
 
      The following screenshot shows a custom logo in a quarantine notification:
 
