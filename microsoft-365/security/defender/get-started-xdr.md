@@ -41,12 +41,12 @@ Once the Defender Experts for XDR team is ready to onboard you, we’ll reach ou
 
 ## Grant permissions to our experts
 
-By default, Defender Experts for XDR require the following permissions to investigate incidents and notify you when you need to take action:
+By default, Defender Experts for XDR requires the following permissions to investigate incidents and notify you when you need to take action:
 
-- **Service provider access** - This permission lets our experts sign in to your tenant and deliver services based on assigned security roles. For details [learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview).
-- **Security reader** - This built-in Azure AD role lets our experts investigate incidents and provide guidance on necessary response actions.
+- **Service provider access** - This permission lets our experts sign in to your tenant and deliver services based on assigned security roles. For details, [learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview).
+- **Security reader** - This built-in Azure Active Directory (Azure AD) role lets our experts investigate incidents and provide guidance on necessary response actions.
 
-You can also provide our experts the following additional permissions to investigate incidents on your behalf:
+You can also provide our experts the following permissions to investigate incidents on your behalf:
 
 - **Security operator** (recommended) - In addition to the permissions provided to a security reader, this built-in Azure AD role lets our experts take necessary actions to remediate active threats.
 - **Security administrator** (optimal) - In addition to the permissions provided to a security operator, this built-in Azure AD role lets our experts configure security settings and deploy preventive measures.
@@ -55,8 +55,8 @@ You can also provide our experts the following additional permissions to investi
 
 Follow these steps to grant our experts additional permissions:
 
-1. In the same Defender Experts setting page mentioned earlier, select **Manage permissions**.
-2. Under **Additional permissions**, select the additional role(s) you want to grant.
+1. In the same Defender Experts settings page mentioned earlier, select **Manage permissions**.
+2. Under **Additional permissions**, select the other role(s) you want to grant.
 3. Select **Give access**.
 
 > [!IMPORTANT]

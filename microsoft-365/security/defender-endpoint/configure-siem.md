@@ -28,24 +28,6 @@ ms.subservice: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-## Ingest alerts using security information and events management (SIEM) tools
-
-> [!NOTE]
->
-> [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more suspicious or malicious events that occurred on the device and their related details. The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contains a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
-
-Microsoft Defender for Endpoint supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment.
-
-For more information, see:
-
-- [Microsoft Defender for Endpoint APIs license and terms of use](api-terms-of-use.md)
-- [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
-- [Hello World example (describes how to register an application in Azure Active Directory)](api-hello-world.md)
-- [Get access with application context](exposed-apis-create-app-webapp.md)
-
 ## Use the new Microsoft 365 Defender API for all your alerts
 
 > [!IMPORTANT]
@@ -133,4 +115,18 @@ The below table provides a mapping between the SIEM API to the Microsoft 365 Def
 | ExternalId | X | Obsolete |
 | IocUniqueId | X | IoC fields not supported |
 
-For more information, see [Microsoft 365 Defender SIEM integration](../defender/configure-siem-defender.md).
+## Ingest alerts using security information and events management (SIEM) tools
+
+> [!NOTE]
+>
+> [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more suspicious or malicious events that occurred on the device and their related details. The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contains a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
+
+Microsoft Defender for Endpoint supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment.
+
+For more information, see:
+
+- [Microsoft Defender for Endpoint APIs license and terms of use](api-terms-of-use.md)
+- [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
+- [Hello World example (describes how to register an application in Azure Active Directory)](api-hello-world.md)
+- [Get access with application context](exposed-apis-create-app-webapp.md)
+- [Microsoft 365 Defender SIEM integration](../defender/configure-siem-defender.md)

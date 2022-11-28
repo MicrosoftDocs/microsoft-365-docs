@@ -117,20 +117,28 @@ For more information, see [Govern apps discovered by Microsoft Defender for Endp
 
 ## IoC IP URL and domain policy conflict handling order
 
-Policy conflict handling follows the below order:
+Policy conflict handling for domains/URLs/IP addresses differ from policy conflict handling for certs.
+
+In the case were multiple different action types are set on the same indicator (for example, **block**,  **warn**, and **allow**,  action types set for Microsoft.com), the order those action types would take effect is:
+
+1. Allow
+2. Warn
+3. Block
+
+_Allow_ overrides _warn_ which overrides _block_: Allow > Warn > Block. Therefore, in the above example, Microsoft.com would be allowed.
+
+### Policy conflict handling follows the order below
 
 - MDCA creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
-- If the IP, URL/Domain is allowed
+1. If the IP, URL/Domain is allowed
 - If the IP, URL/Domain is not allowed
 - If the IP, URL/Domain is allowed
-- If the IP, URL/Domain is not allowed
-- If the IP, URL/Domain is allowed
-
-If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure will be applied.
-
-Policy conflict handling for domains/URLs/IP addresses differ from policy conflict handling for Certs.
+1. If the IP, URL/Domain is not allowed
+1. If the IP, URL/Domain is allowed
 
 Threat and vulnerability management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
+
+If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure will be applied.
 
 ## Policy precedence
 
