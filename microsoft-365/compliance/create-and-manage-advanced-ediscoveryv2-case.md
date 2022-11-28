@@ -33,31 +33,36 @@ This article also provides a high-level overview of using cases to manage the eD
 
 ## Create a case
 
-Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member. Members of the case can access the case in the Microsoft Purview compliance portal and perform eDiscovery (Premium) tasks.
+Complete the following steps to create a case and configure case settings. The user who creates the case is automatically added as a member. Members of the case can access the case in the Microsoft Purview compliance portal and perform eDiscovery (Premium) tasks.
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> and sign in using the credentials for user account that has been assigned eDiscovery permissions. Members of the *Organization Management* role group can also create eDiscovery (Premium) cases.
 
-2. In the left navigation pane of the compliance portal, select **Show all**, and then select **eDiscovery** > **Advanced**, and then select the  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases** tab</a>.
+2. In the left navigation pane of the compliance portal, select **Show all**, and then select **eDiscovery** > **Premium**, and then select the  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases** tab</a>.
 
 3. Select **Create a case**.
 
-4. On the **New eDiscovery case** flyout page, give the case a name (required), and then type an optional case number and description. The case name must be unique in your organization.
+4. On the **Name and description** page, complete the following fields:
+ 
+   - **Name**: give the case a name (required).The case name must be unique in your organization
+   - **Description**: Add an optional description to help others understand this case.
+   - **Number**: Enter an optional docket number or other numeric identifier.
+   - **Case format**: The **New (recommended)** option is automatically selected.
 
-5. Select **Save** to create the case.
+    >[!NOTE]
+    >The legacy **Classic** format is no longer available when creating new cases. This format is now retired for all new cases.
 
-   The new case is created and the **Settings** tab in the new case is displayed.
+5. Select **Next**.
 
-6. In the **Access & permissions** tile on the **Settings** tab, select **Select**.
+6. On the **Members and settings** page, complete the following fields as applicable:
 
-7. On the **Manage this case** flyout page, under **Manage members**, select **Add** to add members to the case.
+    - **Team members**: Select users and groups that should be assigned to the case. Make sure that users and groups assigned here have been [assigned the appropriate eDiscovery permissions](/microsoft-365/compliance/assign-ediscovery-permissions#assign-ediscovery-permissions).
+    - **Search and analytics**: Select the options to configure the case. You can skip this section and configure these settings after the case is created if needed.
+    - **Text to ignore**: Add text or regex expressions to define text to ignore in the case. You can apply this to *Near-duplicates*, *Email threads*, or *Themes* modules.
+    - **Optical character recognition (OCR)**: Configure the option and settings for finding text contained in images during advanced indexing.
 
-8. In the list of people, select the check box next to the names of the people that you want to add to the case. As previously explained, be sure that the people you add to the case have been assigned the appropriate eDiscovery permissions.
+7. Select **Next**.
 
-9. After you've selected the people to add as members of the case, select **Add**.
-
-10. In the **Manage this case** flyout page, select **Save** to save the new list of case members.
-
-11. Select the **Home** tab to go to the case home page.
+8. On the **Summary** page, review the settings for the case and edit the settings if needed. Select **Submit** to create the new case and start your investigation.
 
 ## Mark a case as a favorite
 
