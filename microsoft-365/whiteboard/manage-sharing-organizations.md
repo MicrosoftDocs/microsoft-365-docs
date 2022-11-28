@@ -54,6 +54,9 @@ This setting applies only to whiteboards and replaces the previously shared sett
 > [!NOTE]
 > If you would like shared device accounts to have access to Whiteboard in Teams meetings but not anonymous users, you can disable **Anonymous users can interact with apps in meetings** while having **AllowAnonymousMeetingParticipantsToAccessWhiteboards** enabled
 
+> [!NOTE]
+> Even when AllowAnonymousMeetingParticipantsToAccessWhiteboards enabled, Teams Channel meetings have a limitation that anonymous users **cannot** see the whiteboard share.
+
 These changes should take approximately 60 minutes to apply across your tenancy.
 
 |Scenario|Storage and ownership|Sharing settings|Sharing experience|
