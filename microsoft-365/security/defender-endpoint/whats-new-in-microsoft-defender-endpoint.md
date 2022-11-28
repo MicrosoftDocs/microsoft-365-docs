@@ -63,7 +63,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## November 2022
 
-- [Built-in protection](built-in-protection.md) is now generally available. <br/>Built-in protection helps protect your organization from ransomware and other threats with default settings that help ensure your devices are protected. 
+- [Built-in protection](built-in-protection.md) is now generally available. Built-in protection helps protect your organization from ransomware and other threats with default settings that help ensure your devices are protected. 
 
 - **Zeek is now generally available as a component of Microsoft Defender for Endpoint.**
 
