@@ -160,7 +160,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
    
-    - If you want to revert the value of **EwsApplicationAccessPolicy** to empty, to allow all applications to access EWS and REST, run the following command:
+    - If you want to revert the value of **EwsApplicationAccessPolicy** to empty to allow all applications to access EWS and REST, run the following command:
 
    ```PowerShell
    Set-OrganizationConfig -EwsApplicationAccessPolicy $null
