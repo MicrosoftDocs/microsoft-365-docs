@@ -50,6 +50,7 @@ Advanced hunting supports queries that check a broader data set coming from:
 
 To use advanced hunting, [turn on Microsoft 365 Defender](m365d-enable.md).
 
+
 For more information on advanced hunting in Microsoft Defender for Cloud Apps data, see the [video](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa). 
 
 
