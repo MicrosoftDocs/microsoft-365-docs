@@ -98,13 +98,13 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
 Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to configure MAM support for Network protection in iOS devices. (Authenticator device registration is required for MAM configuration) in iOS devices. Network Protection initialization will require the end user to open the app once. 
 
-1. In Microsoft Endpoint Manager Admin, navigate to Apps > App configuration policies. Create a new App configuration policy.
+1. In Microsoft Endpoint Manager Admin, navigate to **Apps** > **App configuration policies** > **Add** > **Managed apps**. Create a new App configuration policy.
    :::image type="content" source="images/addiosconfig.png" alt-text="Add configuration policy." lightbox="images/addiosconfig.png":::
 
 2. Provide a name and description to uniquely identify the policy. Then click on 'Select Public apps' and choose 'Microsoft Defender' for Platform iOS/IPadOS
    :::image type="content" source="images/nameiosconfig.png" alt-text="Name the configuration." lightbox="images/nameiosconfig.png":::
 
-3. In the Settings page, add 'DefenderNetworkProtectionEnable' as the key and the value as 'true' to enable Network Protection. (Network protection is disabled by default.)
+3. In the Settings page, add '**DefenderNetworkProtectionEnable**' as the key and the value as '**true**' to enable Network Protection. (Network protection is disabled by default.)
 
    :::image type="content" source="images/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="images/addiosconfigvalue.png":::
 
