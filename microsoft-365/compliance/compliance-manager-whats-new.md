@@ -28,7 +28,7 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 ## December 2022
 
-Assessment templates that belong to the same regulation family now count as one template. This change means that when you purchase a premium template license for a regulation, the license will apply for all levels and versions of that regulation. Review the [list of templates](compliance-manager-templates-list.md) and the FAQ item about [template licensing changes starting December 2022](compliance-manager-faq.md).
+Assessment templates that belong to the same regulation family now count as one template. This change means that when you purchase a premium template license for a regulation, the license will apply for all levels and versions of that regulation. Review the [list of templates](compliance-manager-templates-list.md) and a summary of [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
 
 ## November 2022
 
