@@ -29,7 +29,7 @@ ms.topic: conceptual
 **Applies to:**
 
 - Microsoft 365 Defender
-- Microsoft Defender for Office 365
+
 
 The `EmailEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving the processing of emails on Microsoft Defender for Office 365. Use this reference to construct queries that return information from this table.
 
