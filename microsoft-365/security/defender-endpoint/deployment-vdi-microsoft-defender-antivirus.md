@@ -35,7 +35,7 @@ search.appverid: met150
 
 You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in. 
 
-This guide describes how to configure your VMs for optimal protection and performance, including how to:
+This guide describes how to configure Microsoft Defender Antivirus on your VMs for optimal protection and performance, including how to:
 
 - [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share-for-security-intelligence)
 - [Randomize scheduled scans](#randomize-scheduled-scans)
@@ -81,7 +81,7 @@ We suggest starting with once a day, but you should experiment with increasing o
 Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advised because it will increase the network overhead on your management machine for no benefit.
 
 You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
-This is possible when the devices have the share and NTFS permissions for the read access to the share so they can grab the updates. To do this:
+This configuration is possible when the devices have the share and read access (NTFS permissions) to the share so they can grab the updates. To set this configuration up, follow these steps:
 
  1. Create an SMB/CIFS file share. 
  
@@ -110,11 +110,11 @@ This is possible when the devices have the share and NTFS permissions for the re
 
 3. Go to the **Actions** tab. Select **New...** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Select **OK**.
 
-4. You can choose to configure more settings if you wish.
+4. Configure any oher settings as appropriate.
 
 5. Select **OK** to save the scheduled task.
 
-You can initiate the update manually by right-clicking on the task and clicking **Run**.
+You can initiate the update manually by right-clicking on the task and then selecting **Run**.
 
 ### Download and unpackage manually
 
