@@ -222,6 +222,10 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 > For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.
 > This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).
 
+> [!NOTE]
+> 
+> When passing parameters to a live response script, make sure that you are not including the following forbidden characters: **';'**, **'&'**, **'|'**, **'!'**, **'$'**
+
 ## `scheduledtask`
 
 ```console
