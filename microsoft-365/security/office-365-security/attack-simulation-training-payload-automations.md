@@ -51,9 +51,8 @@ To create a payload automation, do the following steps:
 
    > [!NOTE]
    > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the payload automation later. You can pick up where you left off by selecting the payload automation in **Payload automations**, and then clicking ![Edit automation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit automation**. The partially-completed payload automation will have the **Status** value **Draft**.
-
-   > [!NOTE]
-   > Payload harvesting is not currently enabled for GCC environments, due to data gathering restrictions.
+   >
+   > Currently, payload harvesting is enabled in GCC environments due to data gathering restrictions.
 
 2. On the **Automation name** page, configure the following settings:
 
