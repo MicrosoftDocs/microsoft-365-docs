@@ -239,7 +239,7 @@ This policy hides the entire Microsoft Defender Antivirus user interface from en
 
 ## Exclusions
 
-You might or might not need to add exclusions. For a detailed overview, see [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
+If you think you need to add exclusions, see [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
 ## See also
 
