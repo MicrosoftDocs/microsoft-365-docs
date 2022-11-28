@@ -192,6 +192,7 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 >- The feature supports VPN connection.
 >- You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
 >- You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
+>-Exclusion for Linux isolation is not supported.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
