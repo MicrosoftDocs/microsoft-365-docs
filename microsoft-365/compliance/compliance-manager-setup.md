@@ -45,7 +45,7 @@ The direct link to access Compliance Manager is [https://compliance.microsoft.co
 
 ## Set user permissions and assign roles
 
-Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types).
+Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types). Our RBAC model also allows you to grant user access to individual assessments. See [role-based access to assessments](#role-based-access-to-assessments) below to learn more.
 
 ### Where to set permissions
 
@@ -82,12 +82,26 @@ Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscr
 
 The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](/azure/active-directory/roles/permissions-reference) maps to Compliance Manager roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
 
+A user can only hold one role at a time. Any change in a user's role will override their previous role.
+
 | User can: | Compliance Manager role | Azure AD role | 
 | :------------- | :-------------: | :------------: |
 | **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
-| **Edit data**| Compliance Manager Contribution | Compliance Administrator |
-| **Edit test results**| Compliance Manager Assessor | Compliance Administrator |
+| **Edit data - for example, can create an assessment and edit improvement action data**| Compliance Manager Contribution | Compliance Administrator |
+| **Edit improvement action testing notes**| Compliance Manager Assessor | Compliance Administrator |
 | **Manage assessments, templates, and tenant data; assign improvement actions**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
+
+### Role-based access to assessments
+
+You can assign roles to users in order to grant access to specific assessments. Granting access to individual assessments is useful when you need to ensure that only the people working on certain regulatory requirements have access to that data. You can grant access to individual assessments to users outside of your organization, which helps when you have external auditors. For users outside your organization, you'll need to assign them an Azure AD role. For instructions, see [More about Azure AD](#more-about-azure-ad).
+
+The four roles listed in table above provide access to assessments: Compliance Manager Reader, Compliance Manager Contribution, Compliance Manager Assessor, and Compliance Manager Administration. What you can do with each assessment remains restricted based on which activities the role allows.
+
+To grant users access to an assessment, open the assessment's details page and select **Manage users access** to add users by role.
+
+If a user has a role assigned to them in the Microsoft Purview compliance portal for overall access to Compliance Manager, any role you assign them for a specific assessment will apply only to that assessment.
+
+See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed information and instructions.
 
 ## Start a premium assessments trial
 
@@ -110,14 +124,20 @@ You can start your trial directly from Compliance Manager and set up recommended
 
 Learn more about getting started with assessments by visiting the [Assessments page](#assessments-page) section below.
 
-## Settings for automated testing and user history
+## Compliance Manager settings
 
-The Compliance Manager settings in the Microsoft Purview compliance portal allow you to enable and disable automatic testing of improvement actions. The settings also allow you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user.  Only people with a global administrator or Compliance Manager Administrator role can access the Compliance Manager settings.
+You can find settings for specific Compliance Manager functions by selecting **Compliance Manager settings** in the upper-right of the screen. The types of settings include:
+
+- [Testing source](#testing-source-for-automated-testing): allows you to turn off or on the automatic testing of improvement actions
+- [Manage user history](#manage-user-history): allows you to manage the data of users associated to improvement actions, including the ability to reassign improvement actions to a different user
+- [User access](#user-access): allows you to view and manage user roles for access to assessments or assessment templates
+
+Compliance Manager settings can only be accessed by users who hold a global administrator or Compliance Manager Administrator role.
 
 > [!NOTE]
 > The automated testing feature is not available to customers in GCC High and DoD environments because Secure Score isn't available in these environments. GCC High and DoD customers will need to manually implement and test their improvement actions.
 
-### Set up automated testing
+### Testing source for automated testing
 
 Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
@@ -223,19 +243,39 @@ Deleting a user’s history will remove them as an owner of improvement actions,
 
 To delete a user’s history, follow the steps below:
 
-1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview compliance portal.
+1. In **Compliance Manager settings,** select **Manage user history**.
 
-2. On the settings page, select **Compliance Manager**.
+1. Find a user by searching the list email addresses on the page, or by selecting **Search** and entering that user’s email address.
 
-3. Select **Manage user history** from the navigation at left.
+1. From the **Select** drop-down menu, choose **Delete history**.
 
-4. Find a user by searching the list email addresses, or by selecting **Search** and entering that user’s email address.
+1. A window appears asking you to confirm the permanent deletion of the user’s history. To continue with deletion, select **Delete history**. To leave without deleting the history, select **Cancel**.
 
-5. From the **Select** drop-down menu, choose **Delete history**.
+1. You’ll arrive back at the **Manage user history** page with a confirmation message at the top that the history for the user was deleted.
 
-6. A window appears asking you to confirm the permanent deletion of the user’s history. To continue with deletion, select **Delete history**. To leave without deleting the history, select **Cancel**.
+### User access
 
-7. You’ll arrive back at the **Manage user history** page with a confirmation message at the top that the history for the user was deleted.
+The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. This section is also where you can revoke access to an assessment by removing their assessment-specific role.
+
+[Visit these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for assigning user roles from an assessment's details page.
+
+To remove a user's access to an assessment:
+
+1. In **Compliance Manager settings,** select **User access**.
+
+1. Select the checkbox next to the name of the user whose role you want to edit. Only one user can be selected at a time.
+
+1. Select **Manage assessments**. An **Edit assessment permissions** flyout pane will appear.
+
+1. Go to the tab that corresponds to the role you want to remove: Reader, Assessor, or Contributor.
+
+1. Select the button next to the assessment for which you want to remove access, and select **Remove assessment**.
+
+1. A **Remove access?** confirmation box appears. Select **Confirm** to remove the user's role for that assessment, or select **Cancel** to cancel. The name of the assessment will now be removed from the role tab.
+
+1. Select **Save** on the flyout pane. The role removal won't be completed until you select the Save button. Selecting **Close** will cancel out of the process without saving the role removal.
+
+The user list on the **User access** page will now reflect the changes you made.
 
 ## Understand the Compliance Manager dashboard
 
