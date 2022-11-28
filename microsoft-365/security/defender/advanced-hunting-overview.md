@@ -42,7 +42,7 @@ Advanced hunting supports two modes, guided and advanced. Use [guided mode](adva
 
 You can use the same threat hunting queries to build custom detection rules. These rules run automatically to check for and then respond to suspected breach activity, misconfigured machines, and other findings.
 
-This capability is similar to [advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) and supports queries that check a broader data set coming from:
+Advanced hunting supports queries that check a broader data set coming from:
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
