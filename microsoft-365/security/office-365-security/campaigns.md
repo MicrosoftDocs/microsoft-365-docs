@@ -58,7 +58,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 Campaigns is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
 
-:::image type="content" source="../../media/campaigns-overview.png" alt-text="The Campaigns in the Microsoft 365 Defender portal" lightbox="../../media/campaigns-overview.png":::
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="Screenshot that shows the Campaigns in the Microsoft 365 Defender portal." lightbox="../../media/campaigns-overview.png":::
 
 You can also view Campaigns from:
 
