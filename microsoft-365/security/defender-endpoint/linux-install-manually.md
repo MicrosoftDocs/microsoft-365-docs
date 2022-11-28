@@ -53,6 +53,9 @@ Before you get started, see [Microsoft Defender for Endpoint on Linux](microsoft
 > [!WARNING]
 > Upgrading your operating system to a new major version after the product installation requires the product to be reinstalled. You need to [Uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux) the existing Defender for Endpoint on Linux, upgrade the operating system, and then reconfigure Defender for Endpoint on Linux following the below steps.
 
+
+
+
 ## Configure the Linux software repository
 
 Defender for Endpoint on Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
@@ -288,6 +291,11 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo apt -t bionic install mdatp
     ```
+
+>[!NOTE]
+>Reboots are NOT required after installing or updating Microsoft Defender for Endpoint on Linux except when you're running auditD in immutable mode. 
+
+
 
 ## Download the onboarding package
 

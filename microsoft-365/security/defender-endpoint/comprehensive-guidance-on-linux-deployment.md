@@ -36,6 +36,7 @@ To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, se
 
 Learn about the general guidance on a typical Microsoft Defender for Endpoint on Linux deployment. The applicability of some steps is determined by the requirements of your Linux environment. 
 
+
 [1. Work with your Firewall, Proxy, and Networking admin.](#1-work-with-your-firewall-proxy-and-networking-admin)
 
 [2. Capture performance data from the endpoint.](#2-capture-performance-data-from-the-endpoint)
@@ -428,7 +429,13 @@ Defender for Endpoint on Linux is designed to allow almost any management soluti
 
 [Deploy Microsoft Defender for Endpoint on Linux with Ansible](linux-install-with-ansible.md)
 
+
 [Deploy Microsoft Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
+
+>[!NOTE]
+>Reboots are NOT required after installing or updating Microsoft Defender for Endpoint on Linux except when you're running auditD in immutable mode. 
+
 
 **Deliver the scheduled scans cronjob setting**
 
