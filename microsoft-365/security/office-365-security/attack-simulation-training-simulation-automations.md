@@ -55,7 +55,7 @@ On the **Select social engineering techniques** page, select one or more of the 
 - **Credential harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
 - **Malware attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
 - **Link in attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
-- **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file and help the attacker compromise the target's device.
+- **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file, opening the file and helping the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 - **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
 
@@ -568,7 +568,7 @@ When you're finished, click **Submit**.
 
 This section contains some of the most common questions about Simulation automations.
 
-### Why is the Status value under Automation showing Completed, but the Status value under Simulaton showing In progress?
+### Why is the Status value under Automation showing Completed, but the Status value under Simulation showing In progress?
 
 **Completed** on the **Simulation automation** page means the job of simulation automation is complete, and no more simulations will be created by it. Simulation is a separate entity that will complete after 30 days of simulation launch time. 
 
