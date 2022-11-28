@@ -26,8 +26,11 @@ Annotation tools currently include pen and highlighter, where can choose the col
 
 ## To use annotations
 
-1. From a SharePoint document library, open a file to annotate.
-2. 
-3. in the **Search this library** box, select the metadata search icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)).
+1. From a SharePoint document library, open the file you want to annotate.
+
+    ![Screenshot of a document library showing a file selected to open.](../media/content-understanding/annotation-select-file.png)
+
+
+1. in the **Search this library** box, select the metadata search icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)).
 
     ![Screenshot of a document library page showing the search box with the metadata search icon highlighted.](../media/content-understanding/metadata-search-box.png)
