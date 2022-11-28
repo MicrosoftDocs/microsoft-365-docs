@@ -16,7 +16,7 @@ ms.collection:
   - highpri
   - m365solution-financialservices
   - m365solution-overview
-  - highpri
+  - tier1
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -79,15 +79,15 @@ Financial services organizations have unique needs due to the high knowledge bas
 
 **Key features and apps:** Lists, meetings
 
-**Additional services:** Viva Learning, Viva Connections, SharePoint, Yammer
+**Additional services:** Viva Learning, Viva Connections, SharePoint, Viva Engage
 
 More information: [Training and onboarding](flw-onboarding-training.md)
 
 ### Strengthen corporate communications
 
-Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer, Stream, and Viva Connections.
+Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Viva Engage, Stream, and Viva Connections.
 
-**Additional services:** Viva Connections, SharePoint, Stream, Yammer
+**Additional services:** Viva Connections, SharePoint, Stream, Viva Engage
 
 More information: [Corporate communications with frontline workers](flw-corp-comms.md)
 
@@ -130,6 +130,6 @@ For financial services environments, the following apps and services can help yo
 | SharePoint | A new, connected SharePoint site is created whenever you create a new team. You can use SharePoint to store files, post news, and make sure your workers have access to important information. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Add a SharePoint page, list, or document library as a tab in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
 | Viva Connections | Viva Connections creates a hub in Teams where your frontline team can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Manage Viva Learning](/microsoft-365/learning/) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
-| Yammer | Connect your entire organization and enable communication across departments and regions. | [Manage Yammer](/yammer) | [Use Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c) |
+| Viva Engage | Connect your entire organization and enable communication across departments and regions. | [Overview of Viva Engage](/viva/engage/overview) | [Use Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284) |
 
 For more about successfully implementing and adopting Teams, see [Adopt Microsoft Teams](/microsoftteams/adopt-microsoft-teams-landing-page).

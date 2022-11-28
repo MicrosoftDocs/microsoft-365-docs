@@ -148,7 +148,7 @@ When a document with versions is subject to retention settings to retain that co
 
 If the retention settings are configured to delete at the end of the retention period:
 
-- If the retention period is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
+- If the retention period is based on when the content was created, when labeled, or when an event starts, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
 
 - If the retention period is based on when the content was last modified:
     - **After the change where all versions of the file are retained in a single file in the Preservation Hold library**: Each version has the same expiration date as the last version of the document. The last version of the document and its versions all expire at the same time.
