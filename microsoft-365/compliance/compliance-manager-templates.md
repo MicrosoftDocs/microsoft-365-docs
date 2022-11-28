@@ -26,7 +26,7 @@ description: "Understand how to use and manage templates for building assessment
 **In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **extending** and **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]
-> The assessment templates that are provided by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -46,16 +46,6 @@ Assessments from universal templates are more generalized but offer expanded ver
 Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers cannot currently use universal templates.
 
 ## Template availability and licensing
-
-> [!NOTE]
-> Starting mid-December 2022, we're rolling out changes to included and premium templates. Listed below is a summary of changes, which will be fully documented when the rollout begins:
-> 
-> - Customers at all subscription levels will have the Microsoft Data Protection Baseline template included as part of their subscription.
-> - Customers at the A5/E5/G5 subscription levels will be able to choose any three premium templates to use for free. The use of any premium templates beyond those three will require purchase.
-> - The included templates for US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers are the Cybersecurity Maturity Model Certification (CMMC) template (levels 1 through 5) in addition to the Microsoft Data Protection Baseline template.
-> - Templates that correspond to a regulation will now all be grouped together and treated as a single template. For example, CMMC - Level 1, and CMMC - Level 2 will now be counted as one template; you won't need to purchase multiple templates for the same regulation when that regulation has multiple levels or versions.
-> 
-> Get additional details on our [frequently asked questions](compliance-manager-faq.yml) page.
 
 There are two categories of templates in Compliance Manager: **included** and **premium**.
 
