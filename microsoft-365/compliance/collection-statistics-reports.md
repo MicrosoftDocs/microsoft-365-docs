@@ -92,9 +92,21 @@ This information is segmented and displayed in the following sub-sections:
 
     ![Pre-collection estimates.](../media/ediscovery-collection-commit-pre-collection-estimates.png)
 
-- **Collection items**: This section displays the type, count, and a description of all items retrieved from locations with hits during the committal of the collection to the review set. During this process, there may be some addition and consolidation of items during processing.
+- **Collection items**: This section displays the type, count, and a description of all items retrieved from locations with hits during the committal of the collection to the review set. During this process, there may be some addition and consolidation of items during processing. Additions and consolidations may include types included in the following table:
 
-    ![Collected items.](../media/ediscovery-collection-commit-collected-items.png)
+    |**Item type**|**Item type description**|
+    |:------------|:------------------------|
+    | Items with hits | Estimated number of items found by search. |
+    | Review set duplicates | Items that are already in the same review set are not collected. |
+    | Search duplicates | Duplicate instances of the same items are not collected. |
+    | All versions | All versions of items in SharePoint are collected. |
+    | Historical versions | Historical versions maintained by SharePoint are collected. |
+    | Cloud attachments | Cloud attachments are identified and collected from SharePoint links. |
+    | Version as shared | The shared versions of items are collected in addition to their latest versions. |
+    | Contextual Teams conversations | Additional chat messages that might be relevant are collected. |
+    | Consolidated chat transcripts | Collected chat messages are consolidated into fewer HTML transcripts. |
+    | Retrieval exceptions | Access time outs, empty files, and other exceptions. |
+    | Total items collected | Total number of items collected from various locations. |
 
 - **Processing to review set**: This section displays the type, count, and description of the items that were added to the review set from the collection estimate. Items are decompressed, scanned for text, reindexed, and processed in preparation for the review.
 
