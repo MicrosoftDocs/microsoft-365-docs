@@ -67,7 +67,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - **Zeek is now generally available as a component of Microsoft Defender for Endpoint.**
 
-   Microsoft has partnered with [Corelight](https://corelight.com/company/zeek-now-component-of-microsoft-windows), a leader in open source Network Detection and Response (NDR), to provide a new open-source integration with [Zeek](https://corelight.com/about-zeek/how-zeek-works) for Defender for Endpoint. With this integration organizations can super-charge their investigation efforts with rich network signals and reduce the time it takes to detect network-based threats by having unprecedented visibility into network traffic from the endpoints' perspective.
+   Microsoft has partnered with [Corelight](https://corelight.com/company/zeek-now-component-of-microsoft-windows), a leader in open source Network Detection and Response (NDR), to provide a new open-source integration with [Zeek](https://corelight.com/about-zeek/how-zeek-works) for Defender for Endpoint. With this integration, organizations can super-charge their investigation efforts with rich network signals and reduce the time it takes to detect network-based threats by having unprecedented visibility into network traffic from the endpoints' perspective.
 
    The new Zeek integration is available in the latest version of the Defender for Endpoint agent via the following knowledge base articles:
       - [KB5016691](https://support.microsoft.com/topic/august-25-2022-kb5016691-os-build-22000-918-preview-59097044-915a-49a0-8870-49823236adbd)
