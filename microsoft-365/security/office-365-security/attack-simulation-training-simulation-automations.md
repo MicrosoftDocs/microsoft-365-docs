@@ -219,7 +219,7 @@ On the **Target users** page, select who will receive the simulation. Configure 
 
 - ![Import icon.](../../media/m365-cc-sc-create-icon.png) **Import**: In the dialog that opens, specify a CSV file that contains one email address per line.
 
-  After you find an select the CSV file, the list of users are imported and shown on the **Targeted users** page. You can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** to remove specific users.
+  After you find and select the CSV file, the list of users are imported and shown on the **Targeted users** page. You can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** to remove specific users.
 
 When you're finished, click **Next**.
 
@@ -292,7 +292,7 @@ When you're finished, click **Next**.
 
 ### Landing page
 
-On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
+On the **Landing page** page, you configure the web page that users are taken to if they open the payload in the simulation.
 
 - **Select landing page preference**: The available values depend on your previous payload selections on the [Select a payload and login page](#select-a-payload-and-login-page) page as described in the following table:
 
@@ -570,7 +570,7 @@ This section contains some of the most common questions about Simulation automat
 
 ### Why is the Status value under Automation showing Completed, but the Status value under Simulaton showing In progress?
 
-**Completed** on the **Simulation automation** page means the job of simulation automation is complete, and no more simulations will by created by it. Simulation is a separate entity that will complete after 30 days of simulation launch time. 
+**Completed** on the **Simulation automation** page means the job of simulation automation is complete, and no more simulations will be created by it. Simulation is a separate entity that will complete after 30 days of simulation launch time. 
 
 ### Why is the simulation end date 30 days after creation, even though I selected an automation end date of one week?
 
@@ -594,9 +594,9 @@ For every run, a technique from the list of selected techniques is chosen, and t
 
 This number is the maximum number of runs that can be created by this automation. For example, if you select 10, the maximum number of simulations that will be created by this automation is 10. The number of simulations can be fewer depending on the number of targeted users and the availability of payloads.
 
-### If I select only one specfic day between two days (for example, Wednesday), how many simulations will I see on the Simulation tab?
+### If I select only one specific day between two days (for example, Wednesday), how many simulations will I see on the Simulation tab?
 
-If thre's only one Wednesday between the start date and end date, the automation will have only one valid day to send out the simulation. Even if you selected a higher value for **Max number of simulations**, this value will get overwritten to one.
+If there's only one Wednesday between the start date and end date, the automation will have only one valid day to send out the simulation. Even if you selected a higher value for **Max number of simulations**, this value will get overwritten to one.
 
 ### How does randomize send times currently work?
 
