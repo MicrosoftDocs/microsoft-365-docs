@@ -65,7 +65,7 @@ Your trial will be effective immediately for 90 days. It can take up to two hour
 
 You can start using Purview solutions as soon as you see them in the Microsoft Purview compliance portal. Nothing is created automatically and users won't be affected. When you navigate to each solution, you may be guided to make extra setup configurations to start using features.
 
-Use our [trial playbook](compliance-easy-trials-compliance-playbook.md) to help you get started.
+Use our [trial user guide](compliance-easy-trials-compliance-playbook.md) to help you get started.
 
 #### Finding support
 

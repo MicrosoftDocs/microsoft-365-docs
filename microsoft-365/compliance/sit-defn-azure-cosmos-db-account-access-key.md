@@ -1,5 +1,5 @@
 ---
-title: "Azure COSMOS DB account access key entity definition (preview)"
+title: "Azure Cosmos DB account access key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,16 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "Azure COSMOS DB account access key sensitive information type entity definition."
+description: "Azure Cosmos DB account access key sensitive information type entity definition."
 ---
 
-# Azure COSMOS DB account access key (preview)
+# Azure Cosmos DB account access key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Format
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 A combination of 88 characters consisting of letters, digits, and special characters.
 
@@ -44,13 +46,19 @@ for example:
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
+## Credential example 
+
+`AccountEndpoint=https://account.documents.azure.com;AccountKey=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
+
 ## Checksum
 
 No
 
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
+
 ## Definition
 
-This SIT is designed to match the security information that's used to provide access to administrative resources for [Azure COSMOS Database](/azure/cosmos-db/secure-access-to-data) accounts.
+This SIT is designed to match the security information that's used to provide access to administrative resources for [Azure Cosmos DB](/azure/cosmos-db/secure-access-to-data) accounts.
 
 It uses several primary resources:
 

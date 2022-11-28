@@ -12,6 +12,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection:
+- Tier1
 - scotvorg
 - highpri  
 - M365-subscription-management
@@ -68,8 +69,8 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 ::: moniker-end
 
-2. On the **Invoices** tab, select a date range from the drop-down list, and then choose the order that you want to view.
-3. On the summary page, you can see the items, quantity, price, discount, and total for all items in the invoice.
+2. On the **Invoices** tab, choose the invoice that you want to view. If you don't see an invoice, use the date filter and select **Past 3 months**, **Past 6 months**, or **Specify date range**.
+3. On the **Invoice summary** page, you see invoice details including the list of items, the price for each item, and the total cost for all items in the invoice.
 4. To print or save a PDF copy of the invoice, select **Download PDF**.
 
 If you want to receive a copy of your billing statement in email, see [Manage billing notifications and invoice attachments](manage-billing-notifications.md).

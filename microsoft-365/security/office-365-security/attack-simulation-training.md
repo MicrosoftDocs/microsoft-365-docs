@@ -191,6 +191,9 @@ On the **Target users** page, select who will receive the simulation. Configure 
 - **Include only specific users and groups**: Choose one of the following options:
   - ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users**: In the **Add users** flyout that appears, you can find users and groups based on the following criteria:
 
+  > [!NOTE]
+  > You can't use dynamic distribution groups to target users.
+
     - **Search for users or groups**: In box, you can type part of the **Name** or **Email address** of the user or group and then press Enter. You can select some or all of the results. When you're finished, click **Add x users**.
 
       > [!NOTE]
@@ -307,7 +310,7 @@ When you're finished, click **Next**.
 
 ### Landing page
 
-On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
+On the **Landing page** page, you configure the web page that users are taken to if they open the payload in the simulation.
 
 Microsoft-curated landing pages are available in 12 languages: Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish, and Dutch.
 
@@ -523,6 +526,7 @@ The following settings are available:
     - **Select launch time**
 - **Configure number of days to end simulation after**: The default value is 2.
 - **Enable region aware time zone delivery**: Deliver simulated attack messages to your employees during their working hours based on their region.
+- **Display the drive-by technique interstitial data gathered page**: You can show the overlay that appears for the drive-by URL technique attacks. To hide this overlay and directly go to the landing page, de-select this option.
 
 - **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the [select a technique page](#select-a-social-engineering-technique) page. You can show the overlay that comes up for drive-by URL technique attacks. To hide the overlay and go directly to the landing page, don't select this option.
 

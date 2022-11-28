@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.date: 04/27/2022
 ms.subservice: mde
 ms.custom: api
