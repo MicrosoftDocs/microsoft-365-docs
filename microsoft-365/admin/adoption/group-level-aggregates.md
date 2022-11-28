@@ -49,7 +49,7 @@ To enable Group Level Aggregates:
 
 Once enabled, it can be accessed by all roles on the people experiences pages.
 
-:::image type="content" source="../../media/enable-group-level-insights-adoption-score.png" alt-text="Screenshot: Turn on group level insights in Adoption Score" lightbox="../../media/prodscore-landing.png":::
+:::image type="content" source="../../media/enable-group-level-insights-adoption-score.png" alt-text="Screenshot: Turn on group-level insights in Adoption Score" lightbox="../../media/prodscore-landing.png":::
 
 ## Data accuracy evaluation
 
