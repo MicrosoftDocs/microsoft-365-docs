@@ -37,9 +37,9 @@ Templates are added to Compliance Manager as new laws and regulations are enacte
 
 ## List of templates and where to find them
 
-Below is the complete list of templates in Compliance Manager. Template names match the associated regulation or certification. Where available, links in the template names below take you to related documentation about that standard, regulation, or law. Select a template in Compliance Manager to view a description of the regulation and properties of the template.
+Below is the complete list of templates in Compliance Manager. Template names match the associated regulation or certification. Find all templates in Compliance Manager on the **Assessment templates** tab. Select a template name to view the template's description, properties, controls, and associated improvement actions.
 
-Each template (except for the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template) is available in at least one version designed for use with a specific product, such as Microsoft 365, along with a universal version that you can use to assess other products of your choice. To learn more about template options, see [Learn about assessment templates](compliance-manager-templates.md). Templates that correspond to a regulation are treated as a single template, even when the regulation has multiple levels or versions.
+Each template (except for the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template) is available in at least one version designed for use with a specific product, such as Microsoft 365, along with a universal version that you can use to assess other products of your choice. Templates that correspond to a regulation which has multiple levels or versions are treated as a single template.
 
 Jump to a section below to view templates by area or industry:
 - [Global](#global)
@@ -51,10 +51,6 @@ Jump to a section below to view templates by area or industry:
 - [Latin America](#latin-america)
 - [North America](#north-america)
 - [South America](#south-america)
-
-### Where to find your templates in Compliance Manager
-
-To review the templates available to your organization, go to your **Assessment templates** page. Learn more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
 
 ## Included templates
 
