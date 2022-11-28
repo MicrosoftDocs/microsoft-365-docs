@@ -17,7 +17,7 @@ description: Learn how to use universal annotations to mark and collaborate on i
 
 # Comment and collaborate using annotations in Microsoft Syntex
 
-Use the annotations feature in Microsoft Syntex to add notes and comments to your content in document libraries — either for yourself or for collaborating with others. You can use annotations without modifying the original files, so the original records are preserved.
+Use the annotations feature in Microsoft Syntex to add notes and comments to your content in document libraries—either for yourself or for collaborating with others. You can use the annotations feature without modifying the original files, so the original records are preserved.
 
 Annotation tools currently include pen and highlighter, where can choose the colors you want to use, and an eraser for removing ink strokes and previous annotations. The feature is currently available for .pdf and .tiff file types. More annotation tools and file types will be added in future releases.
 
@@ -30,7 +30,7 @@ Annotation tools currently include pen and highlighter, where can choose the col
 
     ![Screenshot of a document library showing a file selected to open.](../media/content-understanding/annotation-select-file.png)
 
-2. On the upper-right side of the document viewer, select the annotation icon (![Screenshot of the annotation icon.](../media/content-understanding/annotation-icon.png)) to begin using the annotations feature.
+2. On the upper-right side of the document viewer, select the annotation icon (![Screenshot of the annotation icon.](../media/content-understanding/annotation-icon.png)).
 
     ![Screenshot of a document viewer showing the annotation icon highlighted.](../media/content-understanding/annotation-icon-document-page.png)
 
@@ -42,7 +42,7 @@ Annotation tools currently include pen and highlighter, where can choose the col
 
     ![Screenshot of the color options for the annotation tools.](../media/content-understanding/annotation-tools-color-options.png)
 
-5. After you annotate a page, you can hide or display the notations by selecting the annotations icon. Other users can also see any notations that have been added to a page by selecting the annotations icon.
+5. After you annotate a page, you can hide or display the notations by selecting the annotations icon. Other users can also add to, hide, or display any notations that have been added by selecting the annotations icon.
 
     > [!NOTE]
     >  Annotations do not alter or modify the original document. They are added only as an overlay to the page.
