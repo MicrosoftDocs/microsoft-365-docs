@@ -44,6 +44,9 @@ Annotation tools currently include pen and highlighter, where can choose the col
 
 5. After you annotate a page, you can hide or display the notations by selecting the annotations icon. Other users can also see any notations that have been added to a page by selecting the annotations icon. Annotations are added as an overlay to a page. They do not modify the original document.
 
+> [!NOTE]
+>  Annotations do not alter or modify the original document. They are added only as an overlay to the page.
+
 6. You can also use the zoom and rotate page options to view annotations.
 
     ![Screenshot of the zoom and rotate page options for the annotation tools.](../media/content-understanding/annotation-zoom-rotate-options.png)
