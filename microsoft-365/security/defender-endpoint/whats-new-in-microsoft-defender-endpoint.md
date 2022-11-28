@@ -65,7 +65,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [Built-in protection](built-in-protection.md) is now generally available. Built-in protection helps protect your organization from ransomware and other threats with default settings that help ensure your devices are protected. 
 
-- **Zeek is now generally available as a component of Microsoft Defender for Endpoint.**
+- Zeek is now generally available as a component of Microsoft Defender for Endpoint.
 
    Microsoft has partnered with [Corelight](https://corelight.com/company/zeek-now-component-of-microsoft-windows), a leader in open source Network Detection and Response (NDR), to provide a new open-source integration with [Zeek](https://corelight.com/about-zeek/how-zeek-works) for Defender for Endpoint. With this integration, organizations can super-charge their investigation efforts with rich network signals and reduce the time it takes to detect network-based threats by having unprecedented visibility into network traffic from the endpoints' perspective.
 
