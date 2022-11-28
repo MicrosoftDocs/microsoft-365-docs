@@ -37,14 +37,14 @@ Thereafter, you test your DLP policies and make any further changes to your DLP 
 
 You can follow the following steps to perform a DLP policy migration:
 
-- Step 1: Log in to your account
-- Step 2: Upload your Symantec policy
-- Step 3: Edit policy settings
-- Step 4: Review pre-migration feasibility report
-- Step 5: Test or turn on your policies
-- Step 6: Migration Progress
-- Step 7: View your migration report!
-- Next Steps: After policy import
+- [Step 1: Log in to your account](#step-1-log-in-to-your-account)
+- [Step 2: Upload your Symantec policy](#step-2-upload-your-symantec-policy)
+- [Step 3: Edit policy settings](#step-3-edit-policy-settings)
+- [Step 4: Review pre-migration feasibility report](#step-4-review-pre-migration-feasibility-report)
+- [Step 5: Test or turn on your policies](#step-5-test-or-turn-on-your-policies)
+- [Step 6: Migration Progress](#step-6-migration-progress)
+- [Step 7: View your migration report](#step-7-view-your-migration-report)
+- [Next Steps: After policy import](#next-steps-after-policy-import)
 
 ### Step 1: Log in to your account
 
@@ -58,22 +58,22 @@ For all subsequent launches you may launch the Migration Assistant normally and 
 
 1. You'll be greeted with a welcome screen.
 
-     a.	Click the **Get Started** button and Migration Assistant will check if your environment is set up correctly.
+     a. Click the **Get Started** button and Migration Assistant will check if your environment is set up correctly.
 
      :::image type="content" source="../media/migration-assistant-get-started-screen.png" alt-text="Screenshot of MAMPD Get Started screen":::
-      b.	Click Next.
+     b. Click Next.
      :::image type="content" source="../media/migration-assistant-environment-setup.png" alt-text="Screenshot of MAMPD setup":::
 2. You'll be navigated to Log in screen.
-     a.	Enter your username and click Login.
+     a. Enter your username and click Login.
      :::image type="content" source="../media/migration-assistant-username-entry.png" alt-text="Screenshot of the MAMPD username input":::
-     b.	Enter your password in the browser window that opens.
+     b. Enter your password in the browser window that opens.
      :::image type="content" source="../media/migration-assistant-login-complete.png" alt-text="Screenshot of entering MAMPD password":::
 3. You need to wait until your login is validated. Simultaneously, Migration Assistant fetches information that will be required in later stages of the migration process.
      :::image type="content" source="../media/login-fetching-details.png" alt-text="Screenshot of teh screen fetching details":::
 4. Finally, once your login is validated, click anywhere on the tool window. The Next button should now be enabled.
 
-You can click on the Next button and move to the next step in the migration process.
- :::image type="content" source="../media/login-next-page-mampd.png" alt-text="Screenshot of completion of fetching MAMPD login details":::
+     You can click on the Next button and move to the next step in the migration process.
+     :::image type="content" source="../media/login-next-page-mampd.png" alt-text="Screenshot of completion of fetching MAMPD login details":::
 
 ### Step 2: Upload your Symantec policy
 
@@ -81,7 +81,7 @@ Next, you need to upload your Symantec DLP policy exports, which will act as an 
 
 1. To upload the files, you need to click on ‘Browse files’ button.
 
- :::image type="content" source="../media/upload-dlp-files.png" alt-text="Screenshot of uploading DLP files by clicking Browse":::
+     :::image type="content" source="../media/upload-dlp-files.png" alt-text="Screenshot of uploading DLP files by clicking Browse":::
 
 2. Select the required policy files in the File Explorer pop-up window and click ‘Open’.
      a. You can select more than one XML file to migrate multiple policies at a time. Based on our initial engagement with some customers, we've learned that it's best to migrate anywhere from one to three policies at a time to avoid confusion during later stages of the migration process.
@@ -89,11 +89,11 @@ Next, you need to upload your Symantec DLP policy exports, which will act as an 
      > [!NOTE]
      > Ensure that the XML files you upload are Symantec DLP policy exports only and no other kind of XML.
 
- :::image type="content" source="../media/save-as-xml.png" alt-text="Screenshot of saving DLP as XML":::
+     :::image type="content" source="../media/save-as-xml.png" alt-text="Screenshot of saving DLP as XML":::
 
 3. The tool will show you a list of your selected input policy files.
      a. If you wish to deselect a previously selected policy file, you can click the delete icon corresponding to that policy.
-:::image type="content" source="../media/upload-dlp-policies.png" alt-text="Screenshot of uploading DLP Policies to migrate":::
+     :::image type="content" source="../media/upload-dlp-policies.png" alt-text="Screenshot of uploading DLP Policies to migrate":::
 4. Once you have completed selection of the policy files you wish to migrate, you can click ‘Next’ and move to the next step.
 
 ### Step 3: Edit policy settings
@@ -146,7 +146,7 @@ All other response rules in Symantec are currently not supported by Migration As
 
      - By default, tool will display all items that Need Review. You can toggle to see all items in a given policy by choosing the **Show All Items** button at the top of the Details section.
 
-    :::image type="content" source="../media/edit-policy-settings-mampd.png" alt-text="Screenshot of Show All Items":::
+     :::image type="content" source="../media/edit-policy-settings-mampd.png" alt-text="Screenshot of Show All Items":::
 
 2. Policy Details
 
@@ -198,12 +198,12 @@ All other response rules in Symantec are currently not supported by Migration As
 
         Alternatively, you can also choose the option ‘New SIT’ from the drop-down and Migration Assistant will bring over the Source SIT as a new Custom SIT.
 
-> **Recommendation**
->
-> We highly recommend using existing SITs to replace current SITs wherever possible as it will help reduce duplicate SIT creation and also allow you reduce effort on optimizing multiple custom SITs of the same kind. Learn more about [sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+     > **Recommendation**
+     >
+     > We highly recommend using existing SITs to replace current SITs wherever possible as it will help reduce duplicate SIT creation and also allow you reduce effort on optimizing multiple custom SITs of the same kind. Learn more about [sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
->[!WARNING]
-> Microsoft DLP platform has a threshold for up to 10 rule packages per tenant. This limit is enough for most customers, but the creation of many duplicate Custom SITs may quickly lead you to hitting this threshold without the ability to create any new Custom SITs.
+     >[!WARNING]
+     > Microsoft DLP platform has a threshold for up to 10 rule packages per tenant. This limit is enough for most customers, but the creation of many duplicate Custom SITs may quickly lead you to hitting this threshold without the ability to create any new Custom SITs.
 
 4. After you've reviewed all the policies and the rules within them, click **Next**.
 
@@ -279,7 +279,7 @@ In this step, Migration Assistant will work on creating policies in Microsoft DL
 3. Once the policies are migrated, click Next to view the migration report.
  :::image type="content" source="../media/all-set-migration.png" alt-text="Screenshot of Migration process complete":::
 
-### Step 7: View your migration report!
+### Step 7: View your migration report
 
 Once your policies are imported and the migration process is complete, then you can view the migration report.
 
@@ -290,6 +290,7 @@ For each session, a separate report is generated. We define a session from when 
 #### Technical Report
 
 You can use the Save Technical Report button to save a more detailed excel-based report that is divided into three different sheets:
+
 - Overview
 - Policy Details
 - SIT Details
