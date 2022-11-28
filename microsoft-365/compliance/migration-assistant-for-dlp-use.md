@@ -182,16 +182,22 @@ All other response rules in Symantec are currently not supported by Migration As
 3. Editing a row element
 
      :::image type="content" source="../media/edit-row-edit-policy-settings-dlp.png" alt-text="Screenshot of editing a row in Edit Policy Settings":::
+
      a. When you click Edit button for one or more row elements, you'll be navigated to an Edit screen with more details about that row element.
+
      :::image type="content" source="../media/save-sensitive-information.png" alt-text="Screenshot of editing Sensitive Information Type":::
+
      b. If there’s any issue, it will be reported by a yellow banner at the top of the screen.
 
      c. You may make changes to the content in the editable sections, and these will be incorporated at the time of migration.
       - Once you resolve the issues in the content, the yellow banner will go away.
 
      d. Use existing SITs from tenant to auto replace current SIT
+
       - You may choose to replace the current SIT (which is being edited) with another SIT from your tenant.
+
          :::image type="content" source="../media/sit-content.png" alt-text="Screenshot of editing SIT content":::
+
       - You can manually change any of the mappings if you wish to by clicking on the corresponding row in the ‘Target’ column. 
 
         This will open a drop-down list with all the out-of-box SITs (OOB SITs) and all the custom SITs (if any) that you may have previously created. You can choose the option to which you wish to map to the ‘Source’ row item.
@@ -233,6 +239,7 @@ Next, the Migration Assistant will provide you with a pre-migration feasibility 
 ### Step 5: Test or turn on your policies
 
 Finally, after you've completed all the previous steps, your Symantec DLP policy is ready to be imported to Microsoft DLP platform.
+ 
  :::image type="content" source="../media/start-migration.png" alt-text="Screenshot of DLP Policy migration":::
 
 1. The last thing that you need to do before the policies are imported is to choose whether to turn on or off the imported policies.
