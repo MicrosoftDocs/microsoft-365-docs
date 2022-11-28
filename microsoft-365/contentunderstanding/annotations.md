@@ -37,3 +37,5 @@ Annotation tools currently include pen and highlighter, where can choose the col
 3. On the left side of the document page, select the annotation tool you want to use.
 
     ![Screenshot of a document page showing the annotation tools highlighted.](../media/content-understanding/annotation-tools-document-page.png)
+
+4. After you annotate a page, you can hide or display the notations by selecting the annotations icon (![Screenshot of the annotation icon.](../media/content-understanding/annotation-icon.png)). Other users can also see any notations that have been added by anyone by selecting the annotations icon. Annotations that have been added to a page do not change the original document.
