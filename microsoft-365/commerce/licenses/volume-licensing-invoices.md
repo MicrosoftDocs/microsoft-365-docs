@@ -85,7 +85,7 @@ The following table explains the terms in the **Summary** section of your invoic
 
 The addresses shown on your invoice might be different, depending on the size and configuration of your organization.
 
-:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-addresses.png" alt-text="he Addresses section of the invoice.":::
+:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-addresses.png" alt-text="The Addresses section of the invoice.":::
 
 The following table explains the terms for the addresses section of your invoice.
 
