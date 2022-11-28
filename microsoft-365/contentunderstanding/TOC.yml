@@ -129,7 +129,7 @@
      
     - name: Annotations
       items: 
-        - name: Use annotations to comment and collaborate 
+        - name: Use annotations to collaborate 
           href: annotations.md
 
     - name: Taxonomy
