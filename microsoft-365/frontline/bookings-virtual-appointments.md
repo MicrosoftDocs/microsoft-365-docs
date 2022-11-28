@@ -135,10 +135,11 @@ Your customers, clients, and patients can then choose the appointment type on yo
 
 ![Information icon](media/info.png) **To access the on-demand scheduling feature during the preview period, users need a Teams Premium trial license.**
 
-Booking admins can publish a self-serve online booking page where people can book scheduled and on-demand appointments with your staff.
+Booking admins can publish an online booking page where people can book scheduled and on-demand appointments with your staff.
 
 1. In the booking calendar, go to **More options** (**...**) > **Settings**, and then select **Booking page**.
 2. Turn on **Publish booking page**.
+    :::image type="content" source="media/bookings-virtual-appointments-booking-page.png" alt-text="Screenshot of booking page settings":::
 3. To enable people to request on-demand appointments on your booking page, turn on **Show option for On-demand scheduling**.
 
 You can customize and manage your booking page settings in the Bookings web app. To learn more, see [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page).
