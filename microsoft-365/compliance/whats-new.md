@@ -53,6 +53,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - If you need to, you can now [disable co-authoring for your tenant by using PowerShell](sensitivity-labels-coauthoring.md#if-you-need-to-disable-this-feature).
 
+### On-premises scanner
+
+- **General availability (GA)**: Configuration for the Microsoft Purview Information Protection scanner (formerly named Azure Information Protection unified labeling scanner) in the Microsoft Purview compliance portal. For more information, see [Configure & install the information protection scanner](deploy-scanner-configure-install.md).
+
 ## October 2022
 
 ### Audit
