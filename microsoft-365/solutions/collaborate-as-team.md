@@ -13,7 +13,8 @@ ms.collection:
 - m365solution-3tiersprotection
 - m365solution-securecollab
 - m365initiative-externalcollab
-ms.custom: 
+ms.custom:
+- chat-teams-channels-revamp 
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkTEAMS
