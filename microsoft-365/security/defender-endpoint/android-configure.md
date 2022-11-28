@@ -64,7 +64,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 1. Provide a name and description to uniquely identify the policy. Select **'Android Enterprise'** as the platform and **'Personally-owned work profile only'** as the profile type and **'Microsoft Defender'** as the Targeted app.
     > [!div class="mx-imgBorder"]
     > ![Image of policy details.](images/appconfigdetails.png)
-1. In Settings page, select **'Use configuration designer'** and add **'Enable Network Protection in Microsoft Defender'** as the key and value as **'1'** to enable Network Protection. (Network protection is enabled by default)
+1. In Settings page, select **'Use configuration designer'** and add **'Enable Network Protection in Microsoft Defender'** as the key and value as **'1'** to enable Network Protection. (Network protection is disabled by default)
     > [!div class="mx-imgBorder"]
     > ![Image of how to select enable network protection policy](images/selectnp.png)
     

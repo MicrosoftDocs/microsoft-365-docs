@@ -56,8 +56,10 @@ The following table only includes the list of the tables supported in the stream
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |GA |GA |GA |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |GA |GA |GA |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |GA |GA |GA |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)**|GA|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|![No](../defender-endpoint/images/svg/check-no.svg)|
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)**|GA|Public preview |Public preview |Public preview |
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)**|GA|Public preview |Public preview |Public preview |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)**|GA|Public preview |Public preview |Public preview |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)**|GA|Public preview |Public preview |Public preview |
 | **[UrlClickEvents](advanced-hunting-urlclickevents-table.md)**|GA |GA |GA |GA |
+
+

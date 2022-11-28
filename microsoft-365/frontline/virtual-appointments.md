@@ -15,12 +15,13 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - highpri
+  - tier1
 f1.keywords:
 - NOCSH
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Virtual appointments with Microsoft Teams
