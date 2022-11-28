@@ -127,6 +127,11 @@
         - name: Search for metadata in document libraries 
           href: metadata-search.md
      
+    - name: Annotations
+      items: 
+        - name: Comment and collaborate using annotations 
+          href: annotations.md
+
     - name: Taxonomy
       items:
         - name: Import using SKOS
