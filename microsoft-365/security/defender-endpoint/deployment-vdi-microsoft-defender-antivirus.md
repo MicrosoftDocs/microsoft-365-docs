@@ -38,7 +38,7 @@ You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persis
 
 This guide describes how to configure your VMs for optimal protection and performance, including how to:
 
-- [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share)
+- [Set up a dedicated VDI file share for security intelligence updates](#set-up-a-dedicated-vdi-file-share-for-security-intelligence)
 - [Randomize scheduled scans](#randomize-scheduled-scans)
 - [Use quick scans](#use-quick-scans)
 - [Prevent notifications](#prevent-notifications)
@@ -48,39 +48,16 @@ This guide describes how to configure your VMs for optimal protection and perfor
 
 
 > [!IMPORTANT]
-> Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, version 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows. 
+> Although a VDI can be hosted on Windows Server 2012 or Windows Server 2016, virtual machines (VMs) should be running Windows 10, version 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows. 
 
-## Set up a dedicated VDI file share
+## Set up a dedicated VDI file share for security intelligence
 
-In Windows 10, version 1903, we introduced the shared security intelligence feature, which offloads the unpackaging of downloaded security intelligence updates onto a host machine, thus saving previous CPU, disk, and memory resources on individual machines. This feature has been backported and now works in Windows 10 version 1703 and above. You can set this feature with a Group Policy, or PowerShell.
+In Windows 10, version 1903, Microsoft introduced the shared security intelligence feature, which offloads the unpackaging of downloaded security intelligence updates onto a host machine. This method reduces the usage of CPU, disk, and memory resources on individual machines. Shared security intelligence now works on Windows 10, version 1703 and later. You can set up this capability by using Group Policy or PowerShell, as described in the following table:
 
-### Use Group Policy to enable the shared security intelligence feature
-
-1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then select **Edit**.
-
-2. In the Group Policy Management Editor, go to **Computer configuration**.
-
-3. Select **Administrative templates**.
-
-4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
-
-5. Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.
-
-6. Enter `\\<sharedlocation\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).
-
-7. Select **OK**.
-
-8. Deploy the GPO to the VMs you want to test.
-
-### Use PowerShell to enable the shared security intelligence feature
-
-Use the following cmdlet to enable the feature. You'll need to then push the update as you normally would push PowerShell-based configuration policies onto the VMs:
-
-```PowerShell
-Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
-```
-
-See the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what the \<shared location\> will be.
+|Method  | Procedure  |
+|---------|---------|
+| Group Policy | <ol><li>On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then select **Edit**.</li><li>In the Group Policy Management Editor, go to **Computer configuration**.</li><li>Select **Administrative templates**.</li><li>Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.</li><li>Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.</li><li>Enter `\\<sharedlocation\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).</li><li>Select **OK**.</li><li>Deploy the GPO to the VMs you want to test.</li></ol> |
+| PowerShell | <ol><li>On the device, use the following cmdlet to enable the feature: `Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update`. </li><li>Push the update as you normally would push PowerShell-based configuration policies onto VMs. See the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what the \<shared location\> will be. </li></ol> |
 
 ## Download and unpackage the latest updates
 
