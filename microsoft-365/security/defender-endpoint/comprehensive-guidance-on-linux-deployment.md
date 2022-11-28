@@ -36,6 +36,9 @@ To learn about other ways to deploy Microsoft Defender for Endpoint on Linux, se
 
 Learn about the general guidance on a typical Microsoft Defender for Endpoint on Linux deployment. The applicability of some steps is determined by the requirements of your Linux environment. 
 
+>[!NOTE]
+>Reboots are NOT required after installing or updating Microsoft Defender for Endpoint on Linux except when you're running auditD in immutable mode. 
+
 [1. Work with your Firewall, Proxy, and Networking admin.](#1-work-with-your-firewall-proxy-and-networking-admin)
 
 [2. Run a centralized performance monitoring to capture current resource utilization.](#2-run-a-centralized-performance-monitoring)
