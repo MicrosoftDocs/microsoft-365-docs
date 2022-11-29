@@ -94,7 +94,7 @@ Here are some helpful specifics to get started.
 
 ### Email preview and download for Cloud mailboxes
 
-Admins can preview and download emails in Cloud mailboxes, ***if*** the mails are still accessible to Microsoft in an Exchange Online mailbox. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), the emails are no longer present in the Exchange Online mailbox. In that case, admins won't be able to preview nor download those specific emails. Emails that were dropped, or where delivery failed, never made it into the mailbox and as a result, admins won't be able to preview or download those emails either.
+Admins can preview and download emails in Cloud mailboxes, ***if*** the mails are still accessible to Microsoft in an Exchange Online mailbox. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), the emails are no longer present in the Exchange Online mailbox. In that case, admins won't be able to preview or download those specific emails. Emails that were dropped, or where delivery failed, never made it into the mailbox and as a result, admins won't be able to preview or download those emails either.
 
 > [!WARNING]
 > Previewing and downloading emails requires a special role called **Preview**. You can add this role in the Microsoft 365 Defender portal as described in [Email & collaboration roles in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). You might need to create a new **Email & collaboration** role group there and add the **Preview** role to that new role group or add the **Preview** role to a role group that allows admins in your organization to work in **Explorer**.
