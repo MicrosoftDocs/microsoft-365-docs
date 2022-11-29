@@ -54,6 +54,7 @@ Whether automated investigations run, and whether remediation actions are taken 
 2. Go to **Settings** > **Endpoints** > **Device groups** under **Permissions**.
 
 3. Review your device group policies. In particular, look at the **Automation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want. To get help with this task, see the following articles:
+
    - [How threats are remediated](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    - [Create and manage device groups](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
 
@@ -68,6 +69,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Policies & Rules** \> **Threat policies**.
 
 2. Make sure all of the following policies are configured. To get help and recommendations, see [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).
+
    - [Anti-malware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
    - [Anti-phishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
    - [Anti-spam](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
