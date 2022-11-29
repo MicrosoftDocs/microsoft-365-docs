@@ -1,6 +1,6 @@
 ---
 title: Manage sharing for Microsoft Whiteboard
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer:
