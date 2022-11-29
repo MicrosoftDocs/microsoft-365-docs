@@ -66,7 +66,7 @@ You can activate your workloads in two ways from the Permissions and roles page:
     >[!Note]
     > The **Activate workloads** button is only available when there are existing roles in the roles list.
 
-2. **Workload settings**.
+2. **Workload settings**
     - Select **Workload settings**.
     - This brings you to the Microsoft 365 Defender **Permission and roles** page.
     - Select the workload you want to activate. Once you select the toggle, you'll activate (or deactivate) that workload.
