@@ -26,3 +26,10 @@ You'll choose a condition that triggers the rule and the action that the rule wi
 1. In the document library, select **Automate** > **Rules** > **Create a rule**.
 
    ![Screenshot of the document library showing the Automate > Rules > Create a rule option.](../media/content-understanding/content-processing-create-rule.png)
+
+2. On the **Create a rule** page, select a condition that triggers the rule and the action that the rule will take.
+
+   ![Screenshot of the Create a rule page showing the rule and actions.](../media/content-understanding/content-processing-create-a-rule-page.png)
+
+
+3. 
