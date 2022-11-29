@@ -300,9 +300,9 @@ To add file paths to exclude, complete the following steps:
 
 > [!NOTE]
 > Examples of formatting for excluding file paths include:
-> - **\\ms.temp\LocalFolder\ or C:\temp** <br>
+> - **\\ms.temp\LocalFolder or C:\temp** <br>
 >   Exclude files directly under the folder and all sub-folders for every file path starting with the entered prefix.
-> - **\public\local\** <br> 
+> - **\public\local** <br> 
 >   Exclude files from every file path containing entered value. Matches with 'C:\Users\Public\local\', 'C:\Users\User1\Public\local\', and '\\ms.temp\Public\local'
 > - **C:\\Users\*\Desktop** <br>
 >   C:\Users\*\Desktop: Wildcards are supported. Matches with 'C:\Users\userDesktop' and 'C:\Users\user2\Desktop'
