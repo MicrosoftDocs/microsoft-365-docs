@@ -498,6 +498,8 @@ The global settings for quarantine policies allow you to customize the quarantin
 
    > [!NOTE]
    > We don't allow the same display name, subject, or disclaimer text for different languages. You need to provide a different display name, subject, and disclaimer text for each language that you select.
+   >
+   > The same sender address is used for all languages. Although you can select a different sender email address for each language, the last sender you specify is used for all languages.
 
    - Customize quarantine notifications based on the recipient's language:
 
@@ -519,7 +521,7 @@ The global settings for quarantine policies allow you to customize the quarantin
 
      1. Select the language from the **Choose language** box. The default value is **Default**, which means the default language for the Microsoft 365 organization. For more information, see [How to set language and region settings for Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
      2. Enter values for **Display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a **Display name**, **Subject**, or **Disclaimer** value for multiple languages, you'll get an error when you click **Save**.
-     3. Use **Specify sender address** to select an existing recipient to use as the sender of quarantine notifications. This sender email address does not need to be unique for each language.
+     3. Use **Specify sender address** to select an existing recipient to use as the sender of quarantine notifications. If you've already specified a sender for a different language, the sender you specify will overwrite your previous selection (the same sender email address is used for all languages).
      4. Click the **Add** button.
      5. Repeat the previous steps to create a maximum of three customized quarantine notifications based on the recipient's language. An unlabeled box shows the languages that you've configured:
 
