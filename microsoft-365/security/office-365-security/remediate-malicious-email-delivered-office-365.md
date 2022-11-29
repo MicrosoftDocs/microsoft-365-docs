@@ -46,7 +46,7 @@ Security teams can use Explorer to select emails in several ways:
 
 - Query selection: Select an entire query by using the top **select all** button. The same query is also shown in action center mail submission details. Customers can submit maximum 200,000 emails from threat explorer.  
 
-- Query selection with exclusion: Sometimes security operations teams may want to remediate emails by selecting an entire query and excluding certain emails from the query manually. To do so, an admin can use the **Select all** check box and scroll down to exclude emails manually. The query can hold a maximum of 1,000 emails. The maximum number of exclusions is 100.
+- Query selection with exclusion: Sometimes security operations teams may want to remediate emails by selecting an entire query and excluding certain emails from the query manually. To do so, an admin can use the **Select all** check box and scroll down to exclude emails manually. The query can hold a maximum of 200,000 emails. 
 
 Once emails are selected through Explorer, you can start remediation by taking direct action or by queuing up emails for an action:
 
@@ -63,9 +63,7 @@ Once emails are selected through Explorer, you can start remediation by taking d
 
 All remediation (direct approvals ) created in Explorer, Advanced hunting, or through Automated investigation are displayed in the Action Center. Access these via the left navigation panel under **Actions & Submissions** \> **Action center**  -> **History tab**.
 
-All remediations (direct approvals ) that were created in Explorer or  Advanced hunting or through Automated investigation  are displayed in the Action Center. Access these via the left navigation panel under **Actions & Submissions** \> **Action center**  -> **History tab**. 
-
-Manual actions pending approval using the two-step approval process (1. add to remediation by one security operation team member, 2. reviewed and approved by another security operation team member) are only visible in the legacy Defender for Office 365 action center **Review** \> **Action center** and not in incidents/investigations and the Unified Action center.
+Manual actions pending approval using the two-step approval process (1. add to remediation by one security operation team member, 2. reviewed and approved by another security operation team member) are  visible in the **Actions & Submissions** \> **Action center**  -> **Pending tab** and upon approval can be seen in **Actions & Submissions** \> **Action center**  -> **History tab** .
 
 > [!NOTE]
 > Two-step approval: actions only available in the office action center  **Review** \> **Action center**
