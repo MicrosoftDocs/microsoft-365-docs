@@ -22,6 +22,9 @@ From a document library, you can use Microsoft Syntex to create rules to automat
 You'll choose a condition that triggers the rule and the action that the rule will take. 
 For example, you can create a rule to move files tagged with a specific customer to a specific library or folder. This helps you structure your content architecture with the power of AI-driven processing.
 
+> [!NOTE]
+> This feature is available only for users who are licensed for Syntex.
+
 ## Move or copy a file
 
 To move or copy a file from one document library to another, follow these steps.
@@ -85,12 +88,26 @@ To copy a file from one document libary to another, follow these steps.
 
    ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
 
+    > [!NOTE]
+    > You can't set up a rule to move or copy a file to a library that already has a move  or copy rule applied. If you try, you'll receive a message saying that you need to disable all move or copy rules on the destination library. To disable a rule, see [Manage a rule](#manage-a-rule).
+       ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-disable-rules.png)
+
 4. Select **Create**.
 
+## Manage a rule
+
+1. In the document library, select **Automate** > **Rules** > **Manage rules**.
+
+   ![Screenshot of the document library showing the Automate > Rules > Manage rules option.](../media/content-understanding/content-processing-manage-rule.png)
+
+2. On the **Manage rules** page, turn on or off a rule or create a new rule to automate actions on the document library.
+
+   ![Screenshot of the Manage rules page showing the rule and actions.](../media/content-understanding/content-processing-manage-rules-page.png)
 
 
 ## View the activity feed of a document library
 
+1. In a document library, in the upper-right corner of the page, select the Details pane ().
 
 
 <!---
