@@ -217,7 +217,7 @@ Use **team templates** in the Teams admin center or by using PowerShell. You can
 
 The table below shows Teams applications commonly utilized in frontline solutions. Shifts, Approvals, and Walkie Talkie are present in the Teams mobile client out of the box. You can control which applications are available to all users in the Teams admin center.
 
-Scenarios and apps
+**Scenarios and apps**
 
 | Scenario | Approvals | Virtual Appointments (Preview) or Bookings | Lists | Praise | Shifts | Tasks | Updates |
 | :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
