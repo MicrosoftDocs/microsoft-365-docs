@@ -9269,6 +9269,16 @@
       "source_path": "microsoft-365/security/office-365-security/virus-ditection-in-spo.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-malware-protection-for-spo-odfb-and-teams-about",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/automated-investigation-response-office.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/air-about-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/office-365-air.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/air-about",
+      "redirect_document_id": true
     },                      
    ]
   }
