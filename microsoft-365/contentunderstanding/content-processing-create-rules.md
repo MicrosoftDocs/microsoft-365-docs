@@ -37,37 +37,58 @@ To move a file from one document libary to another, follow these steps.
     Your selection here creates a rule statement that you'll complete in the next step.
 
 3. To complete the rule statement, under **When a new file is added**:
+
     1. Select **choose action**, and then select **Move file to**.
 
    ![Screenshot of the rule statement page showing the Move file to option highlighted.](../media/content-understanding/content-rule-move-file-to.png)
 
     2. Select **choose a site**, and then select the site that contains the document library you want the file moved to.
 
-   ![Screenshot of the rule statement page showing the choose a site option highlighted.](../media/content-understanding/content-processing-create-a-rule-page.png)
+   ![Screenshot of the rule statement page showing the choose a site option highlighted.](../media/content-understanding/content-rule-choose-a-site.png)
 
     3. Select **choose a library**, and the select the document library you want the file moved to.
 
-   ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-processing-create-a-rule-page.png)
-
+   ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
 
 4. Select **Create**.
-5. 
+
 ## Copy a file to another document library
 
-1. In the document library, select **Automate** > **Rules** > **Create a rule**.
+To copy a file from one document libary to another, follow these steps.
+
+1. In the document library of the file you want move, select **Automate** > **Rules** > **Create a rule**.
 
    ![Screenshot of the document library showing the Automate > Rules > Create a rule option.](../media/content-understanding/content-processing-create-rule.png)
 
-2. On the **Create a rule** page, select a condition that triggers the rule and the action that the rule will take.
+2. On the **Create a rule** page, select a condition that triggers the rule and the action that the rule will take. In this case, select **A new file is added**.
 
-   ![Screenshot of the Create a rule page showing the rule and actions.](../media/content-understanding/content-processing-create-a-rule-page.png)
+   ![Screenshot of the Create a rule page showing the A new file is added option highlighted.](../media/content-understanding/content-processing-create-a-rule-page.png)
+
+    Your selection here creates a rule statement that you'll complete in the next step.
+
+3. To complete the rule statement, under **When a new file is added**:
+
+    1. Select **choose action**, and then select **Move file to**.
+
+   ![Screenshot of the rule statement page showing the Move file to option highlighted.](../media/content-understanding/content-rule-move-file-to.png)
+
+    2. Select **choose a site**, and then select the site that contains the document library you want the file moved to.
+
+   ![Screenshot of the rule statement page showing the choose a site option highlighted.](../media/content-understanding/content-rule-choose-a-site.png)
+
+    3. Select **choose a library**, and the select the document library you want the file moved to.
+
+   ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
+
+4. Select **Create**.
+
 
 
 ## View the activity feed of a document library
 
 
 
-
+<!---
 1. In the document library, select **Automate** > **Rules** > **Create a rule**.
 
    ![Screenshot of the document library showing the Automate > Rules > Create a rule option.](../media/content-understanding/content-processing-create-rule.png)
@@ -89,3 +110,4 @@ To move a file from one document libary to another, follow these steps.
 
    ![Screenshot of the Manage rules page showing the rule and actions.](../media/content-understanding/content-processing-manage-rules-page.png)
 
+--->
