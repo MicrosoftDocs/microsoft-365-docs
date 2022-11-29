@@ -22,11 +22,14 @@ ms.collection:
   - m365-frontline
   - highpri
   - EngageScoreSep2022
+  - contentengagementFY23
+  - tier2
 ms.reviewer: 
 description: Learn how to schedule, manage, and conduct virtual appointments using the Bookings app in Teams.
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Virtual appointments with Microsoft Teams and the Bookings app

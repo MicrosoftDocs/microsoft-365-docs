@@ -19,11 +19,13 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
+  - tier1
 ms.reviewer: 
 description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments that have been scheduled in Bookings with your organization. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 11/02/2022
 ---
 
 # Help your clients and customers use virtual appointments scheduled with Bookings
