@@ -162,6 +162,8 @@
                   href: microsoft-365-ediscovery-throttling-service-advisory.md
                 - name: Service advisories for MRS source delays
                   href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: Service advisories for OAB size limits
+                  href: microsoft-365-oab-size-limit-service-advisory.md
             - name: Microsoft 365 Apps monitoring
               href: microsoft-365-apps-monitoring.md
             - name: Microsoft 365 Teams monitoring
@@ -194,6 +196,8 @@
               href: cross-tenant-onedrive-migration-step6.md
             - name: Step 7 Post migration steps
               href: cross-tenant-onedrive-migration-step7.md
+            - name: FAQs
+              href: cross-tenant-onedrive-migration-faqs.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Data Residency
@@ -265,17 +269,6 @@
         - name: Legacy Move Program
           href: m365-dr-legacy-move-program.md
         - name: Where is my data stored? 
-          href: o365-data-locations.md
-    - name: Move to a new Microsoft 365 datacenter geo
-      href: moving-data-to-new-datacenter-geos.md
-      items: 
-        - name: How to request your data move
-          href: request-your-data-move.md
-        - name: During and after your data move
-          href: during-and-after-your-data-move.md
-        - name: Data move general FAQ
-          href: data-move-faq.md
-        - name: Where customer data is stored
           href: o365-data-locations.md
 
 - name: Identity

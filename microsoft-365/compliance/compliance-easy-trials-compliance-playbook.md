@@ -90,7 +90,7 @@ Custom assessments are helpful for:
   1. [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates-extend.md)
   1. [Create your own custom template](compliance-manager-templates-create.md)
   1. [Modify an existing template to add or remove controls and actions](compliance-manager-templates-modify.md)
-  1. [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)
+  1. [Set up automated testing of improvement actions](compliance-manager-setup.md#testing-source-for-automated-testing)
   1. [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
 
 **Organizational Concerns**
@@ -267,7 +267,7 @@ Leverage end-to-end workflows to help you quickly identify, triage, and remediat
 
 There are four role groups used to configure permissions to manage Insider Risk Management features, which have different roles and level of access. Setting up permissions to Insider Risk Management is key before proceeding.
 
-[Add users to an insider risk management role group](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
+[Add users to the Insider Risk Management role group](insider-risk-management-configure.md#add-users-to-the-insider-risk-management-role-group)
 
 If you are not able to see permissions, please talk to your tenant admin to assign the correct roles.
 
@@ -385,7 +385,7 @@ Set up compliance boundaries for eDiscovery investigations:
 
 ### Step 5 (optional): eDiscovery Premium’s collection tool
 
-Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-draft-collection) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
+Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-collection-estimate) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
 
 [Learn more about collection queries and estimates.](building-search-queries.md)
 

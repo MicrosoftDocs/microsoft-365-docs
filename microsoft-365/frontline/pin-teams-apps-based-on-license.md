@@ -14,16 +14,18 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Tailor Teams apps for your frontline workers
 
 ## Overview
 
-Teams pins apps based on license to give your frontline workers an out-of-the-box experience in Teams that's tailored to their needs. 
+Teams pins apps based on license to give your frontline workers an out-of-the-box experience in Teams that's tailored to their needs.
 
 With the tailored frontline app experience, your frontline workers get the most relevant apps in Teams without any action needed from the admin.
 

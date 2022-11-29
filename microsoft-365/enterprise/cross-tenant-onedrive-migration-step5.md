@@ -1,5 +1,5 @@
 ---
-title: OneDrive Cross-Tenant User Data Migration Step 5
+title: OneDrive Cross-tenant OneDrive migration Step 5
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
@@ -23,7 +23,7 @@ This is Step 5 in a solution designed to complete a Cross-tenant OneDrive migrat
 - Step 1: [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md)
 - Step 2: [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md) 
 - Step 3: [Verify trust has been established](cross-tenant-onedrive-migration-step3.md) 
-- Step 4: [Manage permissions](cross-tenant-onedrive-migration-step4.md)  
+- Step 4: [Pre-create users and groups](cross-tenant-onedrive-migration-step4.md)  
 - **Step 5: [Prepare identity mapping](cross-tenant-onedrive-migration-step5.md)**
 - Step 6: [Start a Cross-tenant OneDrive migration](cross-tenant-onedrive-migration-step6.md)
 - Step 7: [Post migration steps](cross-tenant-onedrive-migration-step7.md)
@@ -96,7 +96,11 @@ Users and groups are included in the same file. Depending on whether it's a user
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-guests.png" alt-text="csv example when mapping a guest to a member":::
 
-*Example of multiple users in CSV file:* </br>
+:::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-identity-mapping-example-guest-to-guest.png" alt-text="csv example when mapping a guest to a guest":::
+
+**Multiple users and groups in a CSV file:** </br>
+
+*Example:*
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-migration-csv-users-groups.png" alt-text="example of both users and groups in mapping file":::
 
@@ -182,7 +186,7 @@ Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL https://m365x
 - If the tenants are incompatible, your tenants will need to be patched/updated to ensure compatibility.
 
 >[!Note]
->We recommend waiting a period of 24-hours. If your tenants are still reporting as *incompatible*, contact support. 
+>We recommend waiting a period of 48 hours. If your tenants are still reporting as *incompatible*, contact support. 
 
 >[!Note]
 >We recommend performing the compatibility status check on a frequent basis and prior to starting ANY instances of cross tenant migrations. If the tenants are not compatible, this can result in cross-tenant migrations failing.
