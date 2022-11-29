@@ -87,6 +87,7 @@ For each deployment step, you can take the following actions:
 
 ## Related content
 
-[Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)\
+[Review a deployment plan](m365-lighthouse-review-deployment-plan.md) (article)\
+[Overview of deployment tasks](m365-lighthouse-overview-deployment-task.md) (article)\
 [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
