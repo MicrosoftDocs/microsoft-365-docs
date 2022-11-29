@@ -198,6 +198,8 @@
                    href: investigate-users.md                  
               - name: Incident response playbooks
                 href: /security/compass/incident-response-playbooks
+              - name: Investigate domains and URLs associated with Microsoft 365 Defender
+                href: ../defender-endpoint/investigate-domain.md
        - name: Manage automated investigation and response
          items: 
               - name: Overview

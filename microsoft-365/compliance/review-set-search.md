@@ -123,7 +123,7 @@ You can also build more advanced queries to search for documents in a review set
 
 ## Filter partially indexed items
 
-If you selected the option to add partially indexed items from additional data sources when you committed the draft collection to a review set. You'll probably want to identify and view those items to determine if an item might be relevant to your investigation and whether you need to remediate the error that resulted in the item being partially indexed.
+If you selected the option to add partially indexed items from additional data sources when you committed the collection estimate to a review set. You'll probably want to identify and view those items to determine if an item might be relevant to your investigation and whether you need to remediate the error that resulted in the item being partially indexed.
 
 At this time, there isn't a filter option in a review set to display partially indexed items. But we're working on it. Until then, here's a way you can filter and display the partially indexed items that you added to a review set.
 

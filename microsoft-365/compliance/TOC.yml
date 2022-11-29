@@ -1536,9 +1536,9 @@
           items: 
             - name: Learn about collections
               href: collections-overview.md
-            - name: Create a draft collection
+            - name: Create a collection estimate
               href: create-draft-collection.md
-            - name: Commit a draft collection to a review set
+            - name: Commit a collection estimate to a review set
               href: commit-draft-collection.md
             - name: Collection statistics and reports
               href: collection-statistics-reports.md        
