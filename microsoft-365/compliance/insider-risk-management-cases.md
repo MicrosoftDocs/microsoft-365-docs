@@ -179,6 +179,8 @@ To add a contributor to a case:
 
 Risk investigators can take action on a case in one of several methods, depending on the severity of the case, the history of risk of the user, and the risk guidelines of your organization. In some situations, you may need to escalate a case to a user or data investigation to collaborate with other areas of your organization and to dive deeper into risk activities. Insider risk management is tightly integrated with other Microsoft Purview solutions to help you with end-to-end resolution management.
 
+Built with privacy by design, users are pseudonymized by default. However, IRM investigators can manage pseudonymize by turning it off for the case, if the option  is enabled at the tenant level.
+
 ### Send email notice
 
 In most cases, user actions that create insider risk alerts are inadvertent or accidental. Sending a reminder notice to the user via email is an effective method for documenting case review and action, and is a method to remind users of corporate policies or point them to refresher training. Notices are generated from [notice templates that you create](insider-risk-management-notices.md) for your insider risk management infrastructure.
