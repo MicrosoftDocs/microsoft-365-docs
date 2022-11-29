@@ -162,7 +162,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
         When you're finished, click **Done**.
 
-   - **Actions for potentially malicious URLs in Microsoft Teams(Time of Click)** section:
+   - **Actions for potentially malicious URLs in Microsoft Teams (Time of Click)** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams**: Select this option to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect.
 
      > [!NOTE]
