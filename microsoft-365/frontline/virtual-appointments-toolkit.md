@@ -30,7 +30,7 @@ ms.date: 11/02/2022
 
 # Help your clients and customers use virtual appointments scheduled with Bookings
 
-Now that your organization has begun using Microsoft Teams and the Bookings app for Virtual Appointments, you'll need to make sure that your clients and customers understand how to book and join these appointments.
+Now that your organization has begun using Microsoft Teams and the Bookings app for virtual appointments, you'll need to make sure that your clients and customers understand how to join these appointments.
 
 Watch this video for a quick overview of what Virtual Appointments can do for your organization.
 
@@ -38,7 +38,7 @@ Watch this video for a quick overview of what Virtual Appointments can do for yo
 
 ## What's included in this toolkit
 
-This toolkit is intended to help you help your customers and clients successfully join a virtual appointment. You can customize the resources we provide and include links to them in your communications about virtual appointments. This toolkit includes:
+This toolkit is intended to help you help your customers and clients successfully join a virtual appointment that's scheduled using Bookings. You can customize the resources we provide and include links to them in your communications about virtual appointments. This toolkit includes:
 
 [Guidance for your website](#guidance-for-your-website): <br> An FAQ about virtual appointments that you can customize and then host on your website. Make sure to add your own links, and any additional information that your customers need to know about your policies.
 
@@ -92,11 +92,11 @@ Customers can join a virtual appointment from any web browser or through the Mic
 
 **How do I join a virtual appointment?**
 
-You can link your customers to [Join a Bookings appointment as an attendee](https://support.microsoft.com/en-us/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0) to show them a detailed video and step-by-step process of how to join an appointment.
+Share the [Join a Bookings appointment as an attendee](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0) link with your customers for a detailed video and step-by-step process of how to join an appointment.
 
 ## Resources for your team
 
-Make the most of virtual appointments in your organization by making sure your staff members know how to conduct them. You can share these articles and videos with your team members to help them better understand virtual appointments.
+Make the most of Virtual Appointments in your organization by making sure your staff members know how to conduct them. You can share these articles and videos with your team members to help them better understand virtual appointments.
 
 - [Learn about Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Learn how to use the Bookings app in Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
