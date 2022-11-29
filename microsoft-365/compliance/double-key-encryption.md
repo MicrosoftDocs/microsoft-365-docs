@@ -90,7 +90,7 @@ There are several ways you can complete some of the steps to deploy Double Key E
 
 ## Deploy DKE
 
-This article and the deployment video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
+This article and the [deployment video](https://www.youtube.com/watch?v=vDWfHN_kygg) use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
 
 
 You'll follow these general steps to set up Double Key Encryption for your organization.
