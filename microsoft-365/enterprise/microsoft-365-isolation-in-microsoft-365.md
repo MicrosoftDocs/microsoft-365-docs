@@ -1,15 +1,16 @@
 ---
 title: "Isolation and Access Control in Microsoft 365"
-ms.author: robmazz
-author: robmazz
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content

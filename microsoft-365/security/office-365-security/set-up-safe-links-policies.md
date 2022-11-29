@@ -15,11 +15,11 @@ search.appverid:
   - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Microsoft Defender for Office 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Set up Safe Links policies in Microsoft Defender for Office 365
@@ -35,7 +35,7 @@ ms.prod: m365-security
 
 Safe Links in [Microsoft Defender for Office 365](defender-for-office-365.md) provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links.md).
 
-Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in custom Safe Links  or Standard or Strict preset security policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
+Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
 You can also use the procedures in this article to create Safe Links policies that apply to specific users, group, or domains.
 
@@ -81,7 +81,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - Allow up to 6 hours for a new or updated policy to be applied.
 
-- [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). As new features are added, you may need to make adjustments to your existing Safe Links policies.
+- [New features are continually being added to Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
 ## Use the Microsoft 365 Defender portal to create Safe Links policies
 
@@ -101,7 +101,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 4. On the **Users and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups or mail-enabled security groups.
+     - Members of the specified distribution groups (including non-mail-enabled security groups within distribution groups) or mail-enabled security groups.
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
@@ -114,10 +114,10 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
    - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
    > [!IMPORTANT]
-   > Multiple different conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
+   > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
    >
-   > - The recipient is: romain@contoso.com
-   > - The recipient is a member of: Executives
+   > - Users: romain@contoso.com
+   > - Groups: Executives
    >
    > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
    >
@@ -127,17 +127,17 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
 5. On the **URL & click protection settings** page that appears, configure the following settings:
 
-   - **Action on potentially malicious URLs within Emails** section:
+   - **Action on potentially malicious URLs within Emails (Email & Time of Click)** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in email**: Select this option to turn on Safe Links protection for links in email messages. If you select this option, the following settings are available:
-       - **Apply Safe Links to email messages sent within the organization**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients.
-       - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this option to turn on real-time scanning of links in email messages. If you select this option, the following setting is available:
-         - **Wait for URL scanning to complete before delivering the message**: Select this option to wait for real-time URL scanning to complete before delivering the message.
-       - **Do not rewrite URLs, do checks via SafeLinks API only**: Select this option to prevent URL wrapping. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it.
+       - **Apply Safe Links to email messages sent within the organization (Email – Intraorg & Time of Click)**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients. Turning this on will enable link wrapping for all intraorg messages.
+       - **Apply real-time URL scanning for suspicious links and links that point to files (Email)**: Select this option to turn on real-time scanning of links in email messages from external senders. If you select this option, the following setting is available:
+         - **Wait for URL scanning to complete before delivering the message (Email)**: Select this option to wait for real-time URL scanning to complete before delivering the message from external senders. The recommended setting is **On**.
+       - **Do not rewrite URLs, do checks via SafeLinks API only (Time of Click)**: Select this option to prevent URL wrapping and skip reputation check during mail flow. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it.
 
        - **Do not rewrite the following URLs in email** section: Click **Manage (nn) URLs** to allow access to specific URLs that would otherwise be blocked by Safe Links.
 
          > [!NOTE]
-         > Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#create-allow-url-entries) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.
+         > Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [URL allow entries in the Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) to override the Safe Links URL verdict.
 
      1. In the **Manage URLs to not rewrite** flyout that appears, click ![Add URLs icon.](../../media/m365-cc-sc-create-icon.png) **Add URLs**.
      2. In the **Add URLs** flyout that appears, type the URL or value that you want, select the entry that appears below the box, and then click **Save**. Repeat this step as many times as necessary.
@@ -162,13 +162,13 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
         When you're finished, click **Done**.
 
-   - **Actions for potentially malicious URLs in Microsoft Teams** section:
+   - **Actions for potentially malicious URLs in Microsoft Teams (Time of Click)** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams**: Select this option to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect.
 
      > [!NOTE]
      > Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
 
-   - **Actions for potentially malicious URLs in Microsoft Office apps** section:
+   - **Actions for potentially malicious URLs in Microsoft Office apps (Time of Click)** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps**: Select this option to enable Safe Links protection for links in files in supported Office desktop, mobile, and web apps.
 
    - **Click protection settings** section:

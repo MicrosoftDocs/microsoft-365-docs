@@ -2,7 +2,7 @@
 title: Review the results of Microsoft Defender Antivirus scans
 description: Review the results of scans using Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Windows Security app
 keywords: scan results, remediation, full scan, quick scan
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,12 @@ ms.custom: nextgen
 ms.date: 10/18/2021
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Review Microsoft Defender Antivirus scan results

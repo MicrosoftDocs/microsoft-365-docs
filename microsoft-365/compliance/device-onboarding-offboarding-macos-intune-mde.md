@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 search.appverid:
 - MET150 
 description: Learn how to onboard and offboard macOS devices into Microsoft Purview solutions using Microsoft Intune for MDE customers
@@ -29,11 +30,13 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 - [Insider risk management](insider-risk-management.md)
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 - Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home)
-- This supports macOS version Catalina 10.15 and higher
+- This supports the three latest released macOS versions.
 - Install the v95+ Edge browser on your macOS devices 
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune
@@ -82,22 +85,28 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
-### Update configuration profiles
+### Update existing system configuration profiles
 
-1. Update the existing full disk access profile with the **fulldisk.mobileconfig** file.
 
-1. Update exisiting MDE preferences profile with these values
-   
+1. A Full Disk Access configuration profile should have been previously created and deployed for MDE.  See, [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access). Endpoint DLP requires an additional Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`. 
+    1. Update the existing Fullfull Disk Access configuration profile with the fulldisk.mobileconfig file. 
+
+
+1. Find the existing MDE Preferences configuration profile. See, [Set preferences for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-preferences#intune-full-profile)
+    1. Add a new key to the profile using these values:
+
 ```xml
-<key>features</key>
-<dict>
-    <key>systemExtensions</key>
-    <string>enabled</string>
-    <key>dataLossPrevention</key>
-    <string>enabled</string>
-</dict>
-```
+<key>features</key> 
+<dict> 
+    <key>systemExtensions</key> 
+    <string>enabled</string> 
+    <key>dataLossPrevention</key> 
+    <string>enabled</string> 
+</dict> 
+``` 
 
+Here's an [example mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)
+ 
 ## Offboard macOS devices using Intune
 
 > [!IMPORTANT]

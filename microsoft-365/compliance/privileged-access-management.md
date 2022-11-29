@@ -14,10 +14,12 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- Strat_O365_IP
-- m365-security-compliance
+- highpri
+- tier3
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- highpri
 ms.custom: 
  - Ent_Solutions
  - seo-marvel-apr2020
@@ -28,6 +30,8 @@ ms.custom:
 Microsoft Purview Privileged Access Management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. Privileged access management requires users to request just-in-time access to complete elevated and privileged tasks through a highly scoped and time-bounded approval workflow. This configuration gives users just-enough-access to perform the task at hand, without risking exposure of sensitive data or critical configuration settings. Enabling privileged access management allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
 For a quick overview of the integrated Customer Lockbox and privileged access management workflow, see this [Customer Lockbox and privileged access management video](https://go.microsoft.com/fwlink/?linkid=2066800).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Layers of protection
 
@@ -47,13 +51,13 @@ Each of the following process flows outline the architecture of privileged acces
 
 ### Step 1: Configure a privileged access policy
 
-When you configure a privileged access policy with the [Microsoft 365 admin center](https://admin.microsoft.com) or the Exchange Management PowerShell, you define the policy and the privileged access feature processes and the policy attributes in the Microsoft 365 substrate. The activities are logged in the Security &amp; Compliance Center. The policy is now enabled and ready to handle incoming requests for approvals.
+When you configure a privileged access policy with the [Microsoft 365 admin center](https://admin.microsoft.com) or the Exchange Management PowerShell, you define the policy and the privileged access feature processes and the policy attributes in the Microsoft 365 substrate. The activities are logged in the audit log. The policy is now enabled and ready to handle incoming requests for approvals.
 
 ![Step 1: Policy creation.](../media/pam-step1-policy-creation.jpg)
 
 ### Step 2: Access request
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com) or with the Exchange Management PowerShell, users can request access to elevated or privileged tasks. The privileged access feature sends the request to the Microsoft 365 substrate for processing against the configured privilege access policy and records the Activity in the Security &amp; Compliance Center logs.
+In the [Microsoft 365 admin center](https://admin.microsoft.com) or with the Exchange Management PowerShell, users can request access to elevated or privileged tasks. The privileged access feature sends the request to the Microsoft 365 substrate for processing against the configured privilege access policy and records the Activity in the audit logs.
 
 ![Step 2: Access request.](../media/pam-step2-access-request.jpg)
 
@@ -65,7 +69,7 @@ An approval request is generated and the pending request notification is emailed
 
 ### Step 4: Access processing
 
-For an approved request, the task is processed by the Exchange Management runspace. The approval is checked against the privileged access policy and processed by the Microsoft 365 substrate. All activity for the task is logged in the Security &amp; Compliance Center.
+For an approved request, the task is processed by the Exchange Management runspace. The approval is checked against the privileged access policy and processed by the Microsoft 365 substrate. All activity for the task is logged in the audit logs.
 
 ![Step 4: Access processing.](../media/pam-step4-access-processing.jpg)
 

@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint on iOS
 ms.reviewer: 
 description: Describes how to install and use Microsoft Defender for Endpoint on iOS
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, overview, installation, deploy, uninstallation, intune
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint on iOS
@@ -70,7 +71,7 @@ ms.technology: mde
 
 **System Requirements**
 
-- iOS device running iOS 12.0 and above. iPads are also supported. *Note that starting 31-March-2022, the minimum supported iOS version by Microsoft Defender for Endpoint will be iOS 13.0.*
+- iOS device running iOS 14.0 and above. iPads are also supported. 
 
 - The device is either enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358) or is registered with Azure Active Directory through [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) with the same account.
 

@@ -2,8 +2,7 @@
 title: How to configure quarantine permissions and policies
 description: The steps to configure quarantine policies and permissions across different groups, including AdminOnlyPolicy, limited access, full access, and providing security admins and users with a simple way to manage false positive folders. 
 search.product: 
-search.appverid: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +13,13 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # How to configure quarantine permissions and policies
@@ -35,7 +38,7 @@ Providing security admins and users with a very simple way to manage false posit
 Our custom policies give admins the ability to decide what items their users can triage in the ***False positive*** folder with an extended ability of allowing the user to request the *release* of those items from the folder.
 
 1. Decide what verdicts category (bulk, spam, phish, high confidence phish, or malware) of items you want your user to triage and not triage.
-1. For those categories that you don’t want the users to triage, assign the items to the **AdminOnlyPolicy**. As for the category you want users to triage with limited access, you can *create a custom policy* with a request release access and assign users to that category.
+1. For those categories that you don't want the users to triage, assign the items to the **AdminOnlyPolicy**. As for the category you want users to triage with limited access, you can *create a custom policy* with a request release access and assign users to that category.
 1. It's **strongly recommended** that malware and high confidence phish items be assigned to **AdminOnlyPolicy**, regular confidence phish items be assigned *limited access with request release*, while bulk and spam can be left as full access for users.
 
 > [!IMPORTANT]

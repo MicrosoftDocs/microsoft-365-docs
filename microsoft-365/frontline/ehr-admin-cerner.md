@@ -20,11 +20,14 @@ ms.collection:
   - m365solution-healthcare
   - m365solution-scenario
   - m365-frontline
+  - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.reviewer: ansantam 
-description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Cerner EHR system. 
+description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Cerner EHR system.
+ms.date: 09/27/2022
 ---
 
 # Virtual appointments with Teams - Integration into Cerner EHR
@@ -48,9 +51,10 @@ This article describes how to set up and configure the Teams EHR connector to in
 
 Before you integrate the Teams EHR connector in your healthcare organization, you must have the following:
 
-- An active subscription⁠ to Microsoft Cloud for Healthcare or a subscription to Microsoft Teams EHR connector standalone offer.
+- An active subscription to Microsoft Cloud for Healthcare or a subscription to Microsoft Teams EHR connector standalone offer.
 - Users have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings.
 - Teams is adopted and used in your healthcare organization.
+- Identified a person in your organization who is a Microsoft 365 global admin with access to the [Teams admin center](https://admin.teams.microsoft.com).
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 - Cerner version November 2018 or later
 

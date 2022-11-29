@@ -15,8 +15,8 @@ metadata:
   ms.custom: 
     - seo-marvel-apr2020
   description: Get answers to the most common general questions about the Exchange Online Protection (EOP) cloud-hosted email filtering service.
-  ms.technology: mdo
-  ms.prod: m365-security
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
 title: EOP general FAQ
 summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]

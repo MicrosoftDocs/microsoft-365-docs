@@ -6,7 +6,7 @@ manager: serdars
 ms.reviewer: amitman 
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
@@ -24,7 +24,7 @@ For details on managing all LTI apps for any LMS, see [Manage Microsoft LMS Gate
 
 For the integration between Open LMS and Teams to function correctly, Open LMS and Teams must be set up to communicate with one another.
 
-Follow the [instructions for installing and configuring the Moodle plugin](open-lms-plugin-configuration.md).
+Follow the [instructions for installing and configuring the Moodle LMS plugins](open-lms-plugin-configuration.md).
 
 ## Register Microsoft Teams LTI for use in Open LMS
 

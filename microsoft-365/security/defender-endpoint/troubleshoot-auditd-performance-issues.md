@@ -3,7 +3,7 @@ title: Troubleshoot AuditD performance issues with Microsoft Defender for Endpoi
 ms.reviewer:
 description: Describes how to troubleshoot AuditD related performance issues that you might encounter with Microsoft Defender for Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, troubleshoot, AuditD, XMDEClientAnalyzer, installation, deploy, uninstallation
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,11 +12,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot AuditD performance issues with Microsoft Defender for Endpoint on Linux 
@@ -48,10 +49,14 @@ To troubleshoot such issues, begin by [collecting MDEClientAnalyzer logs](run-an
 > [!NOTE]
 > As a general best practice, it is recommended to update the [Microsoft Defender for Endpoint agent to latest available version](linux-whatsnew.md) and confirming issue still persists before investigating further.
 
+> [!NOTE]
+> That there are additional configurations that can affect AuditD subsystem CPU strain. <BR>
+> Specifically, in [auditd.conf](https://linux.die.net/man/8/auditd.conf), the value for **disp_qos** can be set to "lossy" to reduce the high CPU consumption. <BR>
+> However, this means that some events may be dropped during peak CPU consumption. <BR>
 
 ## XMDEClientAnalyzer 
 
-When you use XMDEClientAnalyzer, the following files will display output that provide insights to help you troubleshoot issues.
+When you use [XMDEClientAnalyzer](run-analyzer-macos-linux.md), the following files will display output that provides insights to help you troubleshoot issues.
 - auditd_info.txt
 - auditd_log_analysis.txt
 
@@ -68,7 +73,7 @@ Contains general AuditD configuration and will display:
 
 - **Auditctl -l** output  
 
-    - Will show what rules are currently loaded into the kernel (which may be different that what exists on disk in “/etc/auditd/rules.d/mdatp.rules”). 
+    - Will show what rules are currently loaded into the kernel (which may be different that what exists on disk in "/etc/auditd/rules.d/mdatp.rules"). 
     
     - Will show which rules are related to Microsoft Defender for Endpoint. 
     
@@ -110,7 +115,7 @@ AuditD exclusion – support tool syntax help:
 
 Examples: 
 
-If “`/opt/app/bin/app`” writes to “`/opt/app/cfg/logs/1234.log`”, then you can use the support tool to exclude with various options: 
+If "`/opt/app/bin/app`" writes to "`/opt/app/cfg/logs/1234.log`", then you can use the support tool to exclude with various options: 
 
 `-e /opt/app/bin/app`
 

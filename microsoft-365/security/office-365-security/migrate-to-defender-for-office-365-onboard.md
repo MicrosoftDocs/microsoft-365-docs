@@ -13,12 +13,13 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-mdo-migration
+  - highpri
 ms.custom: migrationguides
 description: "Complete the steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 3: Onboard
@@ -74,7 +75,7 @@ If your organization does not have a security response team or existing process 
 Permissions in Defender for Office 365 is based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). These are the important points to keep in mind:
 
 - Azure AD roles give permissions to **all** workloads in Microsoft 365. For example, if you add a user to the Security Administrator in the Azure portal, they have Security Administrator permissions everywhere.
-- Email & collaboration roles in the Microsoft 365 Defender portal give permissions to the Microsoft 365 Defender Portal, the Microsoft Purview compliance portal, and the older Security & Compliance Center. For example, if you add a user to Security Administrator in the Microsoft 365 Defender portal, they have Security Administrator access **only** in the Microsoft 365 Defender Portal, the Microsoft Purview compliance portal, and the Security & Compliance Center.
+- Email & collaboration roles in the Microsoft 365 Defender portal give permissions to the Microsoft 365 Defender Portal and the Microsoft Purview compliance portal. For example, if you add a user to Security Administrator in the Microsoft 365 Defender portal, they have Security Administrator access **only** in the Microsoft 365 Defender Portal and the Microsoft Purview compliance portal.
 - Many features in the Microsoft 365 Defender portal are based on Exchange Online PowerShell cmdlets and therefore require role group membership in the corresponding roles (technically, role groups) in Exchange Online (in particular, for access to the corresponding Exchange Online PowerShell cmdlets).
 - There are Email & collaboration roles in the Microsoft 365 Defender portal that have no equivalent to Azure AD roles, and are important for security operations (for example the Preview role and the Search and Purge role).
 
@@ -170,7 +171,7 @@ As you find and fix issues, you can add more users to the pilot groups (and corr
   - Filter in Threat Explorer to identify the messages.
   - Filter in Advanced Hunting to identify the messages.
 
-  Report any false positives to Microsoft as early as possible through admin submissions, use the [Tenant Allow/Block List](tenant-allow-block-list.md) feature to configure safe overrides for those false positives.
+  Report any false positives to Microsoft as early as possible through admin submissions, use the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) feature to configure safe overrides for those false positives.
 
 - It's also a good idea to examine unnecessary overrides. In other words, look at the verdicts that Microsoft 365 would have provided on the messages. If Microsoft365  rendered the correct verdict, then the need for override is greatly diminished or eliminated.
 

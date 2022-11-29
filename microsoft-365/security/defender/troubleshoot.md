@@ -3,7 +3,8 @@ title: Troubleshoot Microsoft 365 Defender service issues
 description: Find solutions and workarounds to known Microsoft 365 Defender issues
 keywords: troubleshoot Microsoft 365 Defender, troubleshoot, Microsoft Defender for Identity, issues, add-on, settings page
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- tier3
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 
 # Troubleshoot Microsoft 365 Defender service issues

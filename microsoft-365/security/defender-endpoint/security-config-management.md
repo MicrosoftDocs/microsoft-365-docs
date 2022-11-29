@@ -4,7 +4,7 @@ description: Learn how to enable security settings in Microsoft Endpoint Manager
 keywords: device management, configure Microsoft Defender for Endpoint devices, Microsoft Endpoint Manager
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
 ---
 
 
@@ -69,7 +71,7 @@ Use the following steps to validate that your endpoints have successfully comple
 To offboard devices that have been onboarded via Security Management for Microsoft Defender for Endpoint, see [Offboard devices from the Microsoft Defender for Endpoint service](offboard-machines.md).
 
 >[!NOTE]
->Offboarding will [disable Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) if it is enabled.
+>Offboarding will [disable Tamper Protection](manage-tamper-protection-microsoft-365-defender.md) if it is enabled.
 
 ## Troubleshooting Security Management 
 To troubleshoot Security Management for Microsoft Defender for Endpoint enrollment issues, see [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](troubleshoot-security-config-mgt.md).

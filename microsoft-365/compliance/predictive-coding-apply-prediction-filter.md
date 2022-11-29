@@ -1,9 +1,10 @@
 ---
 title: "Apply the prediction score filter to a review set"
+description: "Use a prediction score filter to displays items that a predictive coding model as predicted as relevant or not relevant."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Use a prediction score filter to displays items that a predictive coding model as predicted as relevant or not relevant."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Apply a prediction score filter to a review set (preview)
@@ -25,6 +28,8 @@ Here are two ways you can use the prediction score filter:
 - Prioritize the review of items in a review set that the model has predicted are relevant.
 
 - Cull items from the review set that the model has predicted are not relevant. Alternative, you can use the prediction score filter to de-prioritize the review of non-relevant items.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you apply a prediction score filter
 

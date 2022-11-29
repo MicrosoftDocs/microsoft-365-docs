@@ -1,22 +1,23 @@
 ---
 title: Delete items in the Recoverable Items folder
+description: Learn how admins can delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: Learn how admins can delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold.
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
@@ -43,6 +44,8 @@ This article explains how admins can delete items from the Recoverable Items fol
 > [!CAUTION]
 > The procedures outlined in this article will result in data being permanently deleted (purged) from an Exchange Online mailbox. That means messages that you delete from the Recoverable Items folder can't be recovered and won't be available for legal discovery or other compliance purposes. If you want to delete messages from a mailbox that's placed on hold as part of a Litigation Hold, In-Place Hold, eDiscovery hold, or retention policy created in the Microsoft Purview compliance portal, check with your records management or legal departments before removing the hold. Your organization might have a policy that defines whether a mailbox on hold or a data spillage incident takes priority.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you delete items
 
 - To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).
@@ -207,7 +210,7 @@ Run the following command in [Security & Compliance PowerShell](/powershell/exch
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the retention policy, go to the **Data lifecycle management** > **Retention** page in the compliance portal, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy.
+After you identify the retention policy, go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance portal, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy.
   
 ### Organization-wide retention policies
   
@@ -217,7 +220,7 @@ Organization-wide, Exchange-wide, and Teams-wide retention policies are applied 
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the organization-wide retention policies, go to the **Data lifecycle management** > **Retention** page in the compliance portal, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
+After you identify the organization-wide retention policies, go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance portal, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
 
 > [!IMPORTANT]
 > After you exclude a mailbox from an organization-wide retention policy, it may take up to 24 hours to synchronize this change and remove the mailbox from the policy.
@@ -392,11 +395,11 @@ Perform the following steps (in the specified sequence) in Exchange Online Power
 
     **Retention policies applied to specific mailboxes**
 
-    Use the compliance portal to add the mailbox back to the retention policy. Go to the **Data lifecycle management** > **Retention** page in the compliance center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
+    Use the compliance portal to add the mailbox back to the retention policy. Go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
 
     **Organization-wide retention policies**
 
-    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the compliance portal to remove the mailbox from the list of excluded users. Go to the **Data lifecycle management** > **Retention** page in the compliance center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
+    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the compliance portal to remove the mailbox from the list of excluded users. Go to the **Data lifecycle management** > **Microsoft 365** > **Retention** page in the compliance center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
 
     **eDiscovery case holds**
 

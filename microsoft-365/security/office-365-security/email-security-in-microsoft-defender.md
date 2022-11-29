@@ -6,17 +6,18 @@ ms.author: dansimp
 author: MSFTTracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: View and investigate malware phishing attempts.
 ms.custom: 
 - seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Email security with Threat Explorer in Microsoft Defender for Office 365

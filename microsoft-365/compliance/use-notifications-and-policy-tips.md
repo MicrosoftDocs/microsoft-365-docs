@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid:
 - MOE150
@@ -41,6 +42,8 @@ When you create a DLP policy, you can configure the user notifications to:
   - For documents in a OneDrive for Business account or SharePoint Online site, the policy tip is indicated by a warning icon that appears on the item. To view more information, you can select an item and then choose **Information** ![Information pane icon.](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in the upper-right corner of the page to open the details pane.
 
   - For Excel, PowerPoint, and Word documents that are stored on a OneDrive for Business site or SharePoint Online site that's included in the DLP policy, the policy tip appears on the Message Bar and the Backstage view (**File** menu \> **Info**).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Add user notifications to a DLP policy
 
@@ -91,7 +94,7 @@ For each rule in a DLP policy, you can:
 >
 > - Email notifications can be sent only to individual recipients, not groups or distribution lists.
 > - Only new content will trigger an email notification. Editing existing content will trigger policy tips, but not email notifications.
-> - External senders don't receive notifications. Notifications go only to internal users.
+> - External senders receive only a templatized notification without full details to prevent any unintended loss of information about the policy configuration.
 
 ![Email notification options.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
@@ -156,7 +159,7 @@ Here are some fine points to understand about using a policy tip to override a r
 
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
 
-- If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FlasePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
+- If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FalsePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
 
 #### Availability of Override
 

@@ -7,15 +7,17 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # View or edit policies in Microsoft Defender for Business
@@ -29,6 +31,8 @@ In Defender for Business, security settings are configured through policies that
 - [Edit an existing policy](#edit-an-existing-policy)
 - [Create a new policy](#create-a-new-policy)
 
+> [!NOTE]
+> The procedures in this article describe how to view, edit, and create security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). If you're using Microsoft Intune, see [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
 
 ## Default policies in Defender for Business
 
@@ -36,7 +40,6 @@ In Defender for Business, there are two main types of policies to protect your c
 
 - **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your company's devices
-
 
 ## View your existing policies
 

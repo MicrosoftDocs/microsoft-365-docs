@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 ms.reviewer: samanro
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -12,10 +12,13 @@ description: Learn how frontline managers can get their teams up and running wit
 ms.localizationpriority: high
 ms.collection: 
   - Teams_ITAdmin_FLW
-  -  m365-frontline
+  - m365-frontline
+  - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Managers - Get your team started with Microsoft 365 for frontline workers
@@ -69,7 +72,7 @@ To create a schedule in Shifts:
 
 1. Go into the app and select **Create a new schedule**.
 2. Then select **Add group** to organize the schedule based on job type or location. You can have multiple groups on one schedule. For example, a healthcare organization could have a group for receptionists and a group for nurses.
-3. Select the ellipses (**…**) and then **Rename** to name the group.
+3. Select the ellipses (**...**) and then **Rename** to name the group.
 4. To create a shift for a team member, select their row and then select **More options > add shift**.
 
 Watch [this video](https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) to learn more about creating schedules in shifts.

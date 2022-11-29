@@ -7,9 +7,12 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: Adm_TOC
+ms.collection: 
+- Tier2
+- scotvorg
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
@@ -24,7 +27,7 @@ For additional information about purchasing and licensing Microsoft 365 apps fro
 
 For more info on how partners create these apps, see [How to plan a SaaS offer for the commercial marketplace](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-The Integrated apps portal is only accessible to global admins and available to world-wide customers only. This feature is not available in sovereign and government clouds.
+The Integrated apps portal is available to world-wide customers only and can be accessed by global admins, global readers, and Exchange admins. This feature is not available in sovereign and government clouds.
 
 The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office Add-ins, and Teams apps are listed. For web apps, you can see two kinds of apps.
 
@@ -50,6 +53,10 @@ You can manage testing and deployment of purchased and licensed Microsoft 365 Ap
 7. Select **Done** on the Deployment completed page and review the details of the test or full deployment on the **Overview** tab.
 
 8. If the app has a status of **Update pending**, you can click on the app to open the Manage pane and update the app.
+
+
+> [!NOTE]
+> _Is this a test deployment_ is an administrative tag to determine if the app is still in testing phase. It has no technical impact.
 
 ## Find published apps for testing and full deployment
 
@@ -265,6 +272,9 @@ Post deployment, admins can also manage user access to add-ins.
 9. If the app has a status of **Update pending**, you can click on the app to open the **Manage** pane and update the app. 
 10. To just update users, select the **Users** tab and make the appropriate change. Select **Update** after making your changes.  
 
+> [!NOTE]
+> Only the admin who deployed the add-in or a global admin can manage that add-in.
+
 ## Delete an add-in
 
 You can also delete an add-in that was deployed.
@@ -280,6 +290,7 @@ You can also delete an add-in that was deployed.
 ## Scenarios where Exchange admin cannot deploy an add-in 
 
 There are two cases in which an Exchange Admin won't be able to deploy an add-in:
+
 - If an add-in needs permission to MS Graph APIs and needs consent from a global admin.
 - If an add-in is linked to two or more add-ins and webapps, and at least one of these add-ins is deployed by another admin (exchange/global) and the user assignment is not uniform. We only allow deployment of add-ins when the user assignment is the same for all the already deployed apps.  
 
@@ -288,7 +299,7 @@ There are two cases in which an Exchange Admin won't be able to deploy an add-in
 
 ### Which administrator role do I need to access Integrated apps?
 
-Only global administrators can access Integrated Apps. Integrated apps won't show up in the left nav for other administrators.
+Only global admins and Exchange admins can access Integrated Apps. Integrated apps won't show up in the left nav for other administrators.
 
 ### Why do I see Add-in in the left nav under Setting but not Integrated apps?
 
@@ -303,7 +314,7 @@ Integrated apps allow deployment of Web Apps, Teams app, Excel, PowerPoint, Word
 
 ### Can administrators delete or remove apps?
 
-Yes. Global administrators can delete or remove apps.
+Only the admin who deployed the app or add-in or a global admin can delete or remove it.
 
 - Select an app from the list view. On the **Configuration** tab, select which apps to remove.  
 

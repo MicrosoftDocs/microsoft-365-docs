@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 05/31/2022
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
@@ -69,8 +70,10 @@ If your organization has recently created or changed mail flow connectors in you
 
 - [Mail flow best practices](/exchange/mail-flow-best-practices/mail-flow-best-practices)
 
-- [Mail flow insights in the Security & Compliance Center](/microsoft-365/security/office-365-security/mail-flow-insights-v2)
+- [Mail flow reports in the EAC](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
-- [Queues insight in the Mail flow dashboard](/microsoft-365/security/office-365-security/mfi-queue-alerts-and-queues#queues-insight-in-the-mail-flow-dashboard)
+- [Mail flow insights in the EAC](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
+
+- [Queued messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-queued-messages-report)
 
 - [Trace an email message in Exchange Online](/exchange/monitoring/trace-an-email-message/trace-an-email-message)

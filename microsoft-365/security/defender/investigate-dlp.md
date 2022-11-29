@@ -4,19 +4,22 @@ description: Investigate data loss in Microsoft 365 Defender.
 keywords: Data Loss Prevention, incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 f1.keywords: 
   - NOCSH
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-ms.technology: m365d
+  - met150
 ---
+
 # Investigate data loss incidents with Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -65,7 +68,7 @@ Before you start, [turn on alerts for all your DLP policies](/microsoft-365/comp
 
 6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">here</a>).
 
-7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like Sharepoint, OneDrive, Exchange and Devices.
+7. You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like SharePoint, OneDrive, Exchange and Devices.
 
 8. You can also download the email by selecting **Actions** \> **Download email**. 
 
@@ -84,7 +87,7 @@ Before you start, [turn on alerts for all your DLP policies](/microsoft-365/comp
 
 ## DLP investigation experience in Microsoft Sentinel
 
-You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import all DLP incidents into Sentinel to extend your correlation, detection, and investigation across other data sources and extend your automated orchestration flows using Sentinel’s native SOAR capabilities. 
+You can use the Microsoft 365 Defender connector in Microsoft Sentinel to import all DLP incidents into Sentinel to extend your correlation, detection, and investigation across other data sources and extend your automated orchestration flows using Sentinel's native SOAR capabilities. 
 
 1. Follow instructions on Connect data from Microsoft 365 Defender to Microsoft Sentinel to import all incidents including DLP incidents and alerts into Sentinel. Enable `CloudAppEvents` event connector to pull all O365 audit logs into Sentinel.
 

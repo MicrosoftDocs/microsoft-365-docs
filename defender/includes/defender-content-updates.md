@@ -2,17 +2,19 @@
 
 
 
-## Week of July 18, 2022
+## Week of September 12, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 7/18/2022 | [Defender Threat Intelligence](/defender/threat-intelligence/index) | added |
+| 9/14/2022 | [Microsoft Defender Threat Intelligence (Defender TI) Data Sets](/defender/threat-intelligence/data-sets) | modified |
+| 9/14/2022 | [Searching &amp; pivoting with Microsoft Defender Threat Intelligence (Defender TI)](/defender/threat-intelligence/searching-and-pivoting) | modified |
+| 9/14/2022 | [Sorting, filtering, and downloading data using Microsoft Defender Threat Intelligence (Defender TI)](/defender/threat-intelligence/sorting-filtering-and-downloading-data) | modified |
 
 
-## Week of June 20, 2022
+## Week of August 29, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 6/23/2022 | [Defender Threat Intelligence](/defender-threat-intelligence/index) | modified |
+| 9/2/2022 | [Tutorial: Gathering vulnerability intelligence](/defender/threat-intelligence/gathering-vulnerability-intelligence) | modified |

@@ -22,6 +22,8 @@ ms.custom: seo-marvel-apr2020
 
 Protecting access to your Microsoft 365 data and services is crucial to defending against cyberattacks and guarding against data loss. The same protections can be applied to other SaaS applications in your environment and even to on-premises applications published with Azure Active Directory Application Proxy.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Review recommendations
 
 Recommended capabilities for protecting identities and devices that access Office 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.

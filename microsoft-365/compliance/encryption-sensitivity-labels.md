@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -45,6 +46,8 @@ The encryption settings are available when you [create a sensitivity label](crea
 > [!NOTE]
 > Now rolling out in preview, a sensitivity label in Outlook can apply S/MIME protection rather than encryption and permissions from the Azure Rights Management service. For more information, see [Configure a label to apply S/MIME protection in Outlook](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Understand how the encryption works
 
 Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
@@ -62,6 +65,10 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 - Check for network requirements
     
     You might need to make some changes on your network devices such as firewalls. For details, see [Firewalls and network infrastructure](/azure/information-protection/requirements#firewalls-and-network-infrastructure) from the Azure Information Protection documentation.
+
+- Check your Azure AD configuration
+    
+    There are some Azure Active Directory (Azure AD) configurations that can prevent authorized access to encrypted content. For example, cross-tenant access settings and Conditional Access policies. For more information, see [Azure AD configuration for encrypted content](encryption-azure-ad-configuration.md).
 
 - Configure Exchange for Azure Information Protection
     
@@ -86,15 +93,26 @@ Before you can use encryption, you might need to do some configuration tasks. Wh
 
 4.  On the **Encryption** page, select one of the following options:
     
-    - **Remove encryption if the file is encrypted**: This option is supported by the Azure Information Protection unified labeling client only. When you select this option and use built-in labeling, the label might not display in apps, or display and not make any encryption changes.
+    - **Remove encryption if the file or email is encrypted**: When you select this option, applying the label will remove existing encryption, even if it was applied independently from a sensitivity label.
         
-        For more information about this scenario, see the [What happens to existing encryption when a label's applied](#what-happens-to-existing-encryption-when-a-labels-applied) section. It's important to understand that this setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions.
+        It's important to understand that this setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions to remove the existing encryption. For more information about this scenario, see the [What happens to existing encryption when a label's applied](#what-happens-to-existing-encryption-when-a-labels-applied) section.
     
     - **Configure encryption settings**: Turns on encryption and makes the encryption settings visible:
         
         :::image type="content" source="../media/encrytion-options-sensitivity-label.png" alt-text="Sensitivity label options for encryption. "lightbox="../media/encrytion-options-sensitivity-label.png":::
         
         Instructions for these settings are in the following [Configure encryption settings](#configure-encryption-settings) section.
+
+### Editing labels to newly apply encryption or change existing encryption settings
+
+It's a common deployment strategy to initially configure sensitivity labels without encryption, and later edit some of the existing labels to apply encryption. The labels that you edit will apply that encryption for newly labeled items. Items that are already labeled remain unencrypted, unless you remove the label and reapply it.
+
+For items that are already labeled with encryption using the assign permissions now option, and you change the users or permissions, the new settings will also be applied for existing items when users authenticate with the encryption service. In most cases, there's no need to remove and reapply the label. However, if users have already opened an encrypted document or email, they won't get the new settings until their use license has expired and they must reauthenticate. For more information about this scenario, see the related [frequently asked question](/azure/information-protection/faqs-rms#ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document) for how the encryption works.
+
+Whenever you change the encryption options for letting users assign permissions, that change only applies to newly labeled or relabeled items. For example:
+
+- You change the label from assigning permissions now to let users assign permissions, or the other way around
+- You change the label from Do Not Forward to Encrypt-Only, or the other way around
 
 ### What happens to existing encryption when a label's applied
 
@@ -108,16 +126,11 @@ However, the content might be already encrypted. For example, another user might
 
 The following table identifies what happens to existing encryption when a sensitivity label is applied to that content:
 
-| | Encryption: Not selected | Encryption: Configured | Encryption: Remove <sup>\*</sup> |
+| | Encryption: Not selected | Encryption: Configured | Encryption: Remove |
 |:-----|:-----|:-----|:-----|
 |**Permissions specified by a user**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Protection template**|Original encryption is preserved|New label encryption is applied|Original encryption is removed|
 |**Label with administator-defined permissions**|Original encryption is removed|New label encryption is applied|Original encryption is removed|
-
-**Footnote:**
-
-<sup>\*</sup>
-Supported by the Azure Information Protection unified labeling client only
 
 In the cases where the new label encryption is applied or the original encryption is removed, this happens only if the user who applies the label has a usage right or role that supports this action:
 

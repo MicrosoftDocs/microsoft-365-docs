@@ -10,9 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -22,6 +23,8 @@ description: "Learn how to implement and test controls by working with improveme
 # Working with improvement actions in Compliance Manager
 
 **In this article:** This article explains how to **manage your compliance workflow** with improvement actions. Learn how to **assign improvement actions** for implementation and testing, **manage updates**, and export **reports**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Manage compliance workflows with improvement actions
 
@@ -149,7 +152,7 @@ Compliance Manager provides you options for how to test improvement actions. In 
 Improvement actions set for manual testing are actions which you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab. For some actions, this is the only available method for testing improvement actions.
 
 #### Automatic testing source
-Certain improvement actions can be automatically tested by Compliance Manager. [Get details](compliance-manager-improvement-actions.md#update-testing-source) on which improvement actions can and can't be tested automatically.
+Certain improvement actions can be automatically tested by Compliance Manager. [Get details](compliance-manager-setup.md#testing-source-for-automated-testing) on which improvement actions can and can't be tested automatically.
 
 For those improvement actions that can be automatically tested, you'll see the **Automatic** option for testing source. Compliance Manager will detect signals from other compliance solutions you've set up in your Microsoft 365 environment, as well as any complementary actions that Microsoft Secure Score also monitors. The **Testing logic** field on the **Testing** tab will show what kind of policy or configuration is required in another solution in order for the action to pass and earn points toward your compliance score.
 
@@ -179,26 +182,29 @@ The **standards and regulations** section provides a searchable and filterable l
 
 ## Perform work and store documentation
 
-You can upload files and notes related to implementation and testing work directly to the **Documents** section. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files.
+You can upload evidence in the form of files and links related to implementation and testing work directly to the **Documents** section. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files.
 
-#### Uploaded documents
+#### Upload evidence
 
-- Select **Manage documents** to upload any relevant files.
-- When the manage documents flyout pane opens, select **Add document**, then select your file from your system. Accepted file types:
+- From the improvement action's details page, go to the **Documents** tab and select **Add evidence**.
+- On the **Add evidence** flyout pane, choose whether to add a **Document** or **Link**. The accepted file types for **Document** are:
   - Documents (.doc, .xls, .ppt, .txt, .pdf)
   - Images (.jpg, .png)
   - Video (.mkv)
   - Compressed files (.zip, .rar)
-- Once your file resolves in the pane select **Close**, which automatically saves the file attachment. You'll then see the file listed underneath **Uploaded documents**.
-- To download or delete the document, select **Manage documents** from underneath the list of documents. On the flyout pane, select the document row to highlight it, then select **Download** or **Delete**.
+- Browse to select the file you want to upload. If uploading a link, enter a name for the link and its URL. When done, select **Add**. Your item will now display in the **Documents** tab.
+
+To delete evidence files or links, select the action menu (the three dots) to the right of the item's name and select **Delete**. Confirm the deletion when prompted.
 
 ## Assign improvement action to assessor for completion
 
 After you complete the work, conduct testing, and upload evidence, the next step is to assign the improvement action to an assessor for validation. The assessor validates the work and examines the documentation, and selects the appropriate test status.
 
-**If test status is set to “Passed”**: the action is complete and the points achieved shows the maximum points achieved. The points are then counted toward your overall compliance score.
+- **If test status is set to “Passed”**: the action is complete and the points achieved shows the maximum points achieved. The points are then counted toward your overall compliance score.
 
-**If test status is  set to “Failed”**: the action doesn't meet the requirements, and the assessor can assign it back to the appropriate user for additional work.
+- **If test status is  set to “Failed”**: the action doesn't meet the requirements, and the assessor can assign it back to the appropriate user for additional work.
+
+Users will need a **Compliance Manager Assessor** role in order to edit improvement action testing notes. You may also want to grant users access only to certain assessments. Learn [how to set permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles) and [how to grant role-based assess to assessments](compliance-manager-setup.md#role-based-access-to-assessments).
 
 ## Accepting updates to improvement actions
 
@@ -245,4 +251,6 @@ You can set up alerts to notify you immediately when certain changes to improvem
 
 ## Export a report
 
-Select **Export** in the upper-left corner of your screen to download an Excel worksheet containing all your improvement actions and the filter categories shown on the improvement actions page.
+Select **Export** in the upper left corner of your screen to download an Excel worksheet containing all your improvement actions and the filter categories shown on the improvement actions page.
+
+The exported Excel file is also what you use to update multiple improvement actions at once. Get details about how to edit the export file to [update multiple improvement actions](compliance-manager-update-actions.md).

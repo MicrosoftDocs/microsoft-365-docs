@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -23,13 +24,7 @@ description: "Spain DNI sensitive information type entity definition."
 
 # Spain DNI
 
-This sensitive information type is only available for use in:
-
-- data loss prevention policies
-- communication compliance policies
-- data lifecycle management
-- records management
-- Microsoft Defender for Cloud Apps
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

@@ -7,10 +7,9 @@ metadata:
   title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about Microsoft Defender for Endpoint - how it protects endpoints from cyber threats and provides security operation teams with capabilities to remediate threats. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
-  ms.prod: m365-security
-  ms.technology: m365d
+  ms.service: microsoft-365-security
   ms.topic: landing-page # Required
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
   ms.date: 02/05/2021 #Required; mm/dd/yyyy format.

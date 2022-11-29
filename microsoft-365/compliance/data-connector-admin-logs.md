@@ -1,9 +1,10 @@
 ---
 title: "Use the admin log for data connectors to view status about importing data"
+description: "Learn how to access and view admin logs for data connectors to get status information for the data imported by the connector."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
@@ -11,13 +12,14 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
+- data-connectors
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to access and view admin logs for data connectors to get status information for the data imported by the connector."
 ---
 
 # View admin logs for data connectors
@@ -26,6 +28,8 @@ After you create a data connector to import non-Microsoft data to Microsoft Purv
 
 > [!IMPORTANT]
 > Audit logging must be enabled for your organization to view admin log. It is enabled by default for Microsoft 365 and Office 365 organizations, but we strongly recommend that you verify auditing status of your organization. For instructions to check auditing status, please click here. For instructions to turn on auditing manually, please click here. Once auditing is turned on, it could take up to 48 hours to log import events. We strongly recommend enabling auditing before a connector is configured. Once a connector is configured, it could take up to 72 hours to generate logs that contains import status summary.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you view admin logs
 

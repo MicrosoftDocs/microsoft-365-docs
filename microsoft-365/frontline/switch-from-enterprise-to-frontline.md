@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: 
 manager: samanro
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -14,9 +14,12 @@ ms.collection:
   - M365-collaboration
   - Teams_ITAdmin_FLW
   - m365-frontline
+  - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
@@ -204,7 +207,7 @@ Identify and back up or prepare data that users want to keep. Follow the guidanc
 - Teams
 - OneDrive
 
-For more information, see [Back up data before switching plans](/microsoft-365/commerce/subscriptions/back-up-data-before-switching-plans).
+For more information, see [Back up data before switching plans](/microsoft-365/commerce/subscriptions/move-users-different-subscription).
 
 ## Switch users to a Microsoft 365 F plan
 

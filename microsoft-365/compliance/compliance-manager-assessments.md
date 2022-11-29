@@ -10,9 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 search.appverid:
 - MOE150
 - MET150
@@ -22,6 +23,8 @@ description: "Build assessments in Microsoft Purview Compliance Manager to help 
 # Build and manage assessments in Compliance Manager
 
 **In this article:** Learn how to customize Compliance Manager for your organization by creating and managing **assessments**. This article walks you through how to create assessments, how to organize them into **groups**, working with **controls**, accepting **updates**, and exporting assessment **reports**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Introduction to assessments
 
@@ -172,6 +175,56 @@ The Microsoft actions tab appears for assessments based on templates that suppor
 
 Learn more about [how controls and improvement actions are tracked and scored.](compliance-score-calculation.md)
 
+## Grant user access to individual assessments
+
+When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment or assessment template. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties.
+
+External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#more-about-azure-ad).
+
+#### Steps for granting access
+
+Follow the steps to grant user access to an assessment.
+
+1. From your **Assessments** page, find the assessment you want to grant access to. Select it to open its details page.
+
+1. In the upper-right corner, select **Manage user access**.
+
+1. A **Manage user access** flyout pane appears. It has three tabs, one for each role of Readers, Assessors, and Contributors. Navigate to the tab for the role you want your user to hold for this assessment.  Users who currently have access to the assessment will have a blue box with a check mark to the left of their name.
+
+1. Select the **+ Add** command for the role tab you're on: **Add reader**, or **Add assessor** or **Add contributor**.
+
+1. Another flyout pane appears which lists all the users in your organization. You can select the checkbox next to the username you want to add, or you can enter their name in the search bar adn select the user from there. You can select multiple users at once.
+
+1. After making all your selections, select **Add**.
+    > [!NOTE]
+    > If you assign a role to someone who already has an existing role, the new role assignment you choose will override their existing role. In this case, you'll see a confirmation box asking you to confirm the change in role.
+
+1. The flyout pane will close and you'll arrive back at your assessment details page. A confirmation message at the top will confirm the new role assignment for that assessment.
+
+#### Steps for removing access
+
+You can remove a user's access to individual assessments by following the steps below:
+
+1. On the assessment's details page, select **Manage user access**.
+1. On the **Manage user access** flyout pane, go the tab corresponding to the user's role you want to remove.
+
+1. Find the user whose role you want to remove. Check the circle to the left of their name, then select the **Remove** command just below the role tab. To remove all users at once, simply select the **Remove all** command without checking the circle next to every user's name.
+
+1. A **Remove access?** dialog appears, asking you to confirm the removal. Select **Remove access** to confirm the role removal.
+
+1. Select **Save** on the flyout pane. The users' roles will now be removed from the assessment.
+
+Learn how to get a broad [view of all users with access to assessments](compliance-manager-setup.md#user-access).
+
+##### Note about multiple roles
+
+- A user can have one role that applies to an assessment, while also holding another role that applies broadly to overall Compliance Manager access.
+    - For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific assessment. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role.
+    - Removing an assessment-based role won't remove the user's overall Compliance Manager role if they have one.
+
+- For an individual assessment, one user can only hold one assessment-based role at a time.
+    - For example, if a user holds a reader role for a GDPR assessment and you want to change them to a contributor role, you'll first need to remove their reader role, and then re-assign them the reader role.
+
 ## Accept updates to assessments
 
 When an update is available for an assessment, you'll see a notification and have the option to accept the update or defer it for a later time.
@@ -207,7 +260,7 @@ After selecting **Review update** from the assessment details page, a flyout pan
 - An overview explaining the update
 - Specific details about the changes, including the impact to your compliance score, the amount of progress toward completion of the assessment, and the specific number of changes to improvement actions and controls.
 
-Selecting the **Updated template** link will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** link downloads a file of the existing template without the changes.
+Selecting the **Updated template** command will download an Excel file containing control data for the version of the template with the pending updates. Selecting the **Current template** command downloads a file of the existing template without the updates.
 
 To accept the update and make the changes to your assessment, select **Accept update**. Accepted changes are permanent.
 

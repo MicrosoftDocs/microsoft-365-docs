@@ -2,19 +2,22 @@
 title: Microsoft Defender Antivirus event IDs and error codes
 description: Look up the causes and solutions for Microsoft Defender Antivirus event IDs and errors
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/02/2022
+ms.date: 08/04/2022
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
@@ -1920,6 +1923,23 @@ Message:
 </tr>
 <tr>
 <td>
+Change to default behavior:
+</td>
+<td >
+<dl>
+<dt><b>Change to dynamic signature event reporting default behavior</b></dt>
+<dt>When a dynamic signature is received by MDE, a 2010 event is reported. However, when the dynamic signature expires or is manually deleted a 2011 event is reported. In some cases, when a new signature is delivered to MDE sometimes hundreds of dynamic signatures will expire at the same time; therefore hundreds of 2011 events are reported. The generation of so many 2011 events can cause a Security information and event management (SIEM) server to become flooded.</dt>
+<dt>To avoid the above situation - starting with platform version 4.18.2207.7 - by default, MDE will now <i>not</i> report 2011 events:<ul>
+<li>This new default behavior is controlled by registry entry: <b>HKLM\SOFTWARE\Microsoft\Windows&nbsp;Defender\Reporting\EnableDynamicSignatureDroppedEventReporting</b>.</li>
+<li>The default value for <b>EnableDynamicSignatureDroppedEventReporting</b> is <b>false</b>, which means <i>2011 events are not reported</i>. If it's set to true, 2011 events <i>are reported</i>.</li>
+</ul>
+</dt>
+<dt>Because 2010 signature events are timely distributed sporadically - and will not cause a spike - 2010 signature event behavior is unchanged.</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
 Description:
 </td>
 <td >
@@ -2712,7 +2732,7 @@ Message:
 Description:
 </td>
 <td >
-If Tamper protection is enabled then, any attempt to change any of Defender's settings if blocked and Event ID 5013 is generated that states which setting change was blocked.
+If Tamper protection is enabled then, any attempt to change any of Defender's settings is blocked. Event ID 5013 is generated and states which setting change was blocked.
 </td>
 </tr>
 <tr>
@@ -2787,8 +2807,7 @@ Description of the error. </dt>
 
 <a id="error-codes"></a>
 ## Microsoft Defender Antivirus client error codes
-If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
-This section provides the following information about Microsoft Defender Antivirus client errors.
+If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update. This section provides the following information about Microsoft Defender Antivirus client errors.
 - The error code
 - The possible reason for the error
 - Advice on what to do now

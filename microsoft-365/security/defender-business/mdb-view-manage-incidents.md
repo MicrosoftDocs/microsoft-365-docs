@@ -7,15 +7,17 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # View and manage incidents in Microsoft Defender for Business
@@ -50,10 +52,10 @@ When Microsoft Defender Antivirus assigns an alert severity based on the absolut
 
 | Scenario | Alert severity and reason |
 |:---|:---|
-| Microsoft Defender Antivirus detects and stops a threat before it does any damage. | Informational <br/><br/>The threat was stopped before any damage was done. |
-| Microsoft Defender Antivirus detects malware that was executing within your company. The malware is stopped and remediated. | Low <br/><br/>Although some damage might have been done to an individual endpoint, the malware now poses no threat to your company. |
-| Malware that is executing is detected by Defender for Business. The malware is blocked almost immediately. | Medium or High <br/><br/>The malware poses a threat to individual endpoints and to your company. |
-| Suspicious behavior is detected but no remediation actions are taken yet. | Low, Medium, or High <br/><br/>The severity depends on the degree to which the behavior poses a threat to your company. |
+| Microsoft Defender Antivirus detects and stops a threat before it does any damage. | **Informational**. The threat was stopped before any damage was done. |
+| Microsoft Defender Antivirus detects malware that was executing within your company. The malware is stopped and remediated. | **Low**. Although some damage might have been done to an individual endpoint, the malware now poses no threat to your company. |
+| Malware that is executing is detected by Defender for Business. The malware is blocked almost immediately. | **Medium** or **High**. The malware poses a threat to individual endpoints and to your company. |
+| Suspicious behavior is detected but no remediation actions are taken yet. | **Low**, **Medium**, or **High**. The severity depends on the degree to which the behavior poses a threat to your company. |
 
 ## Next steps
 

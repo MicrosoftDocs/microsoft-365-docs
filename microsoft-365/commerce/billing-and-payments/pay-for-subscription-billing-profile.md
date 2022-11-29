@@ -7,10 +7,12 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -26,7 +28,7 @@ ms.date: 05/26/2022
 
 When you buy a subscription, you pay for it with a billing profile. The billing profile is linked to a specific payment method and can be a credit or debit card, or an invoice, but not a bank account.
 
-If you’re not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md). If you don’t have a billing profile, see [How to pay for your subscription](pay-for-your-subscription.md).
+If you're not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md). If you don't have a billing profile, see [How to pay for your subscription](pay-for-your-subscription.md).
 
 ## Paying with recurring billing turned on or off
 
@@ -36,7 +38,7 @@ If recurring billing is turned off for a billing profile, you can use the **Pay 
 
 ## New regulations from the Reserve Bank of India
 
-As of 1 October 2021, automatic payments in India might block some credit card transactions, especially transactions exceeding 5,000 INR. Because of this regulation, you might have to make payments manually in the Microsoft 365 admin center. These regulations won't affect the total amount you’re charged for your usage.
+As of 1 October 2021, automatic payments in India might block some credit card transactions, especially transactions exceeding 5,000 INR. Because of this regulation, you might have to make payments manually in the Microsoft 365 admin center. These regulations won't affect the total amount you're charged for your usage.
 
 [Learn more about the Reserve Bank of India regulation for recurring payments](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
@@ -54,9 +56,9 @@ To be eligible to pay by invoice, you must:
 - Have a subscription cost that exceeds a certain amount (this amount varies by service location)
 - Pass a credit check
 
-If a credit check is required, you’re notified when you buy your subscription. If you agree to be contacted, you get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.
+If a credit check is required, you're notified when you buy your subscription. If you agree to be contacted, you get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.
 
-If your billing profile is backed by an invoice, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number in your billing profile, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
+If your billing profile is backed by an invoice, you get an email when your billing statement is ready to view. This email doesn't contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number in your billing profile, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ## Where do I send my check or EFT payment?
 
@@ -71,11 +73,11 @@ If recurring billing is turned off for your billing profile, you can use a credi
 
 ## Can I change from my current payment method to paying by invoice?
 
-If your billing profile is backed by credit or debit card, you can only change the payment method to another credit or debit card. You can’t change to paying by invoice.
+If your billing profile is backed by credit or debit card, you can only change the payment method to another credit or debit card. You can't change to paying by invoice.
 
 ## Can I change from paying by invoice to using a different payment method?
 
-If your billing profile is backed by invoice payments, you can’t change the payment method. You can use the **Pay now** button on your invoice to pay with a credit or debit card, or by check or EFT.
+If your billing profile is backed by invoice payments, you can't change the payment method. You can use the **Pay now** button on your invoice to pay with a credit or debit card, or by check or EFT.
 
 ## Related content
 

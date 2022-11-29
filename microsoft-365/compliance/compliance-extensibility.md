@@ -1,25 +1,25 @@
 ---
 title: "Microsoft Purview extensibility"
+description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 search.appverid: 
 - MOE150
-- MET150
-ms.assetid: 
+- MET150 
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 ---
 
 # Microsoft Purview and Microsoft Priva extensibility
@@ -32,11 +32,13 @@ There are two key building blocks for compliance extensibility:
 
 - **APIs**. Enables programmatic access to Microsoft Purview capabilities.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Data connectors
 
 Microsoft provides third-party data connectors that can be configured in the Microsoft Purview compliance portal. For a list of data connectors provided by Microsoft, see the [Third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) table. The table of third-party data connectors also summarizes the compliance solutions that you can apply to third-party data after you import and archive data in Microsoft 365, and links to the step-by-step instructions for each connector.
 
-To learn more about Microsoft 365 data connectors, see [Archiving third-party data](archiving-third-party-data.md). If a third-party data type isn't supported by the data connectors available in the compliance portal, you can work with a partner who can provide you with a custom connector. For a list of partners you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data](work-with-partner-to-archive-third-party-data.md).
+To learn more about Microsoft Purview Data Connectors, see [Archiving third-party data](archiving-third-party-data.md). If a third-party data type isn't supported by the data connectors available in the compliance portal, you can work with a partner who can provide you with a custom connector. For a list of partners you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data](work-with-partner-to-archive-third-party-data.md).
 
 ### Prerequisites for data connectors
 
@@ -124,4 +126,4 @@ Now rolling out, the first release of Graph APIs for records management support 
 
 For more information about the Graph APIs for records management, see [Use the Microsoft Graph Records Management API](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true).
 
-For licensing requirements to use these APIs, see the records management section from [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+For licensing requirements to use these APIs, see the records management information from the Microsoft 365 guidance for security & compliance, [Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) section.

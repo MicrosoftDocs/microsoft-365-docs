@@ -2,8 +2,7 @@
 title: Search for emails and remediate threats using Threat Explorer in Microsoft 365 Defender
 description: The steps to do manual remediation in Threat Explorer in Microsoft 365 Defender, including how to get the best performance and scenarios that call for remediation.
 search.product: 
-search.appverid: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,16 +13,20 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Steps to use manual email remediation in Threat Explorer
 
 Email remediation is an already existing feature that helps admins act on emails that are threats.
 
-## What you’ll need
+## What you'll need
 - Microsoft Defender for Office 365 Plan 2 (Included in E5 plans)
 - Sufficient permissions (be sure to grant the account [Search and Purge](https://sip.security.microsoft.com/securitypermissions) role)
 
@@ -33,8 +36,8 @@ Email remediation is an already existing feature that helps admins act on emails
 1. The side pane will open and ask for details like a name for the remediation, severity, and description. Once the information is reviewed, press **Submit**.
 1. As soon as the admin approves this action, they will see the Approval ID and a link to the Microsoft 365 Defender Action Center [here](https://security.microsoft.com/action-center/history). This page is where **actions can be tracked**.
 
-    1. **Admin action alert** - A system alert shows up in the alert queue with the name ‘Administrative action submitted by an Administrator’. This indicates that an admin took the action of remediating an entity. It gives details such as the name of the admin who took the action, and the investigation link and time. This makes admins aware of each important action, like remediation, taken on entities.
-    1. **Admin action investigation** - Since the analysis on entities was already done by the admin and that’s what led to the action taken, no additional analysis is done by the system. It shows details such as related alert, entity selected for remediation, action taken, remediation status, entity count, and approver of the action. This allows admins to keep track of the investigation and actions carried out *manually*--an admin action investigation.
+    1. **Admin action alert** - A system alert shows up in the alert queue with the name 'Administrative action submitted by an Administrator'. This indicates that an admin took the action of remediating an entity. It gives details such as the name of the admin who took the action, and the investigation link and time. This makes admins aware of each important action, like remediation, taken on entities.
+    1. **Admin action investigation** - Since the analysis on entities was already done by the admin and that's what led to the action taken, no additional analysis is done by the system. It shows details such as related alert, entity selected for remediation, action taken, remediation status, entity count, and approver of the action. This allows admins to keep track of the investigation and actions carried out *manually*--an admin action investigation.
 1. **Action logs in unified action center** - History and action logs for email actions like soft delete and move to deleted items folder, are *all available in a centralized view* under the unified **Action Center** > **History tab**. 
 1. **Filters in unified action center** - There are multiple filters such as remediation name, approval ID, Investigation ID, status, action source, and action type. These are useful for finding and tracking email actions in unified Action center.
 
@@ -46,7 +49,7 @@ Email remediation is an already existing feature that helps admins act on emails
 
 Here are scenarios of email remediation:
 
-1. As part of an investigation SecOps identifies a threat in an end-user’s mailbox and wants to clear out the problem email(s).
+1. As part of an investigation SecOps identifies a threat in an end-user's mailbox and wants to clear out the problem email(s).
 1. When suggested email actions in Automated Investigation and Response (AIR) are approved by SecOps, remediation action triggers automatically for the given email or email cluster.
 
 Two manual email remediation scenarios:
