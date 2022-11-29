@@ -2,15 +2,16 @@
 title: "Use Migration Assistant for Microsoft Purview DLP"
 f1.keywords:
 - CSH
-ms.author: v-aljupudi
-author: alekyaj
-manager: chrfox
+ms.author: chrfox
+author: chrfox
+manager: laurawi
 ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
+- tier1
 - purview-compliance
 - m365solution-mip
 - m365initiative-compliance
@@ -22,7 +23,7 @@ description: "Learn how to use the Migration Assistant for Microsoft Purview DLP
 
 # Use Migration Assistant for Microsoft Purview DLP
 
-This article will step-by-step guide you on how to use the [Migration Assistant tool for Microsoft Purview DLP](migration-assistant-for-dlp-learn.md). 
+This article takes you through an instance of migration using the [Migration Assistant tool for Microsoft Purview DLP](migration-assistant-for-dlp-learn.md). 
 
 Before you start with migration, ensure you've met the prerequisites mentioned below:
 
@@ -31,11 +32,11 @@ Before you start with migration, ensure you've met the prerequisites mentioned b
 - You review and edit your DLP policy.
 - You create a new DLP policy in your Microsoft 365 tenant equivalent to your input policy.
 
-Thereafter, you test your DLP policies and make any further changes to your DLP policies through the Microsoft DLP platform.
+Once a policy is migrated, you'll test and tune it in Microsoft Purview DLP.
 
 ## Start Migration
 
-You can follow the following steps to perform a DLP policy migration:
+Use these steps to perform a DLP policy migration:
 
 - [Step 1: Log in to your account](#step-1-log-in-to-your-account)
 - [Step 2: Upload your Symantec policy](#step-2-upload-your-symantec-policy)
@@ -51,7 +52,7 @@ You can follow the following steps to perform a DLP policy migration:
 After you've installed and launched the Migration Assistant for Microsoft Purview DLP, the first thing that you need to do is to log in.
 
 > [!IMPORTANT]
-> The first time you launch the Migration Assistant, please choose ‘Run as administrator’ option. This is required as the Migration Assistant may need to install additional dependencies if they are not already available on your machine. 
+> The first time you launch the Migration Assistant, please choose **Run as administrator** option. This is required as the Migration Assistant may need to install additional dependencies if they are not already available on your machine. 
 For all subsequent launches you may launch the Migration Assistant normally and do not need to run as administrator.
 
 :::image type="content" source="../media/migration-assistant-run-as-admin.png" alt-text="Screenshot of Migration Assistant Run as administrator dialog box":::
@@ -61,23 +62,23 @@ For all subsequent launches you may launch the Migration Assistant normally and 
      a. Click the **Get Started** button and Migration Assistant will check if your environment is set up correctly.
 
      :::image type="content" source="../media/migration-assistant-get-started-screen.png" alt-text="Screenshot of MAMPD Get Started screen":::
-     b. Click Next.
+     b. Click **Next**.
      :::image type="content" source="../media/migration-assistant-environment-setup.png" alt-text="Screenshot of MAMPD setup":::
-2. You'll be navigated to Log in screen.
-     a. Enter your username and click Login.
+2. You'll be taken to the Login screen.
+     a. Enter your username and click **Login**.
      :::image type="content" source="../media/migration-assistant-username-entry.png" alt-text="Screenshot of the MAMPD username input":::
      b. Enter your password in the browser window that opens.
      :::image type="content" source="../media/migration-assistant-login-complete.png" alt-text="Screenshot of entering MAMPD password":::
 3. You need to wait until your login is validated. Simultaneously, Migration Assistant fetches information that will be required in later stages of the migration process.
      :::image type="content" source="../media/login-fetching-details.png" alt-text="Screenshot of teh screen fetching details":::
-4. Finally, once your login is validated, click anywhere on the tool window. The Next button should now be enabled.
+4. Once you'er logged in, click anywhere on the tool window. The **Next** button should now be enabled.
 
      You can click on the Next button and move to the next step in the migration process.
      :::image type="content" source="../media/login-next-page-mampd.png" alt-text="Screenshot of completion of fetching MAMPD login details":::
 
 ### Step 2: Upload your Symantec policy
 
-Next, you need to upload your Symantec DLP policy exports, which will act as an input for Migration Assistant. The policies you upload will be the ones that will be migrated to the Microsoft DLP platform.
+Next, you need to upload your Symantec DLP policy exports. These are the input for Migration Assistant. The policies you upload will be the ones that will be migrated to the Microsoft DLP platform.
 
 1. To upload the files, you need to click on ‘Browse files’ button.
 
@@ -108,7 +109,7 @@ There may be some items that may need your review and will be marked with 'warni
 
 Symantec DLP and Microsoft DLP differ in how they allow users to define sensitive information that needs to be protected.
 
-Microsoft DLP allows users to define sensitive information that needs to be protected as Sensitive Information Types (SIT). Microsoft ships many commonly used SITs like Credit Card Number out-of-box, often called out-of-box SITs or OOB SITs. Alternatively, it allows users to also create their own custom SITs.
+Microsoft DLP allows users to define sensitive information that needs to be protected as sensitive information types (SIT). Microsoft provides many commonly used SITs like Credit Card Number that are preconfigured. If these don't meet your needs, you can create your own custom SITs.
 
 The most common ways in which Symantec users specify what kind of sensitive information needs to be protected are:
 
@@ -118,21 +119,14 @@ The most common ways in which Symantec users specify what kind of sensitive info
 
 Migration Assistant takes care of each of the above scenarios in one of two ways:
 
-- **Map to an existing OOB SIT:** For all sensitive data types for which there exists an equivalent SIT in Microsoft DLP, Migration Assistant will try to map it the same.
-     It automatically maps OOB Symantec Data Identifiers to OOB Sensitive Information Type (SITs) if an equivalent SIT is available. 
+- **Map to an existing OOB SIT:** For all sensitive data types for which there exists an equivalent SIT in Microsoft DLP, Migration Assistant will try to map to do a 1:1 mapping. It automatically maps OOB Symantec Data Identifiers to preconfigured Microsoft SITs if an equivalent exists. If you want to bring the Symantec Data Identifier over as-is, then you can create a new SIT as described in the next step.
 
-     We do the same for customized OOB Symantec Data Identifiers because we believe strongly in the effectiveness of our OOB SITs. If you wish to still bring it over ‘as-is’, then you can choose to create a new SIT as described in the next step.
-
-- **Migrate as a new Custom SIT** For all sensitive data types for which there isn't an equivalent SIT available in Microsoft DLP, Migration Assistant will automatically opt to create a new SIT.
-
-     It will automatically opt to create a new SIT for all OOB Symantec Data Identifiers for which no equivalent SIT in Microsoft DLP is available.
-
-     Similarly, any regular expression(s) or keyword(s) defined directly in rules will be brought over as a new Custom SIT.
+- **Migrate as a new custom SIT** For all sensitive data types for which there isn't an equivalent SIT available in Microsoft DLP, Migration Assistant will automatically opt to create a new SIT. It will automatically create a new SIT for all OOB Symantec Data Identifiers for which no equivalent SIT in Microsoft DLP is available. Similarly, any regular expression(s) or keyword(s) defined directly in rules will be brought over as a new Custom SIT.
 
 > [!NOTE]
-> Regular expressions and/or keywords defined directly at the rule-level in Symantec policies will take up names of the rule itself and show in the Source column. In case of multiple such regular expressions and/or keywords, it will take up the name of the rule name followed by roman numerals.
+> Regular expressions and/or keywords defined directly at the rule-level in Symantec policies will take on the name of the rule itself and show in the Source column. In case of multiple regular expressions and/or keywords, it will take the name of the rule name followed by roman numerals.
 >
->Each of these will be migrated separately as a Custom SIT. Understandably, this may lead to confusion later and we recommend you review and rename these SITs at the earliest.
+>Each of these will be migrated separately as a Custom SIT. This may lead to confusion and we recommend you review and rename these SITs as soon as possible.
 >
 >You cannot edit the name of these SITs within Migration Assistant. You can edit the names of these Custom SITs from Compliance Center or via PowerShell after the policy migration has been completed.
 
@@ -144,7 +138,7 @@ All other response rules in Symantec are currently not supported by Migration As
 
 1. You'll be able to see a list of all your policies and rules within them along with a status for the same. You can select different policies from the left column to see Details for each policy.
 
-     - By default, tool will display all items that Need Review. You can toggle to see all items in a given policy by choosing the **Show All Items** button at the top of the Details section.
+     - By default, the tool will display all items that Need Review. You can toggle to see all items in a given policy by choosing the **Show All Items** button at the top of the Details section.
 
      :::image type="content" source="../media/edit-policy-settings-mampd.png" alt-text="Screenshot of Show All Items":::
 
@@ -162,7 +156,7 @@ All other response rules in Symantec are currently not supported by Migration As
      - Potential issues that may affect migration
      - Type of rule as detected from the input policy
      - Status:
-        - Blank / empty status: This row element will be migrated without issues.
+          - Blank / empty status: This row element will be migrated without issues.
         - Needs Review: This row element may have one or more issues and may need some input from you.
         - Informational: This row element may have one or more changes needed for migration but will be auto-resolved.
         - Unsupported: This row element isn't supported for migration by the tool and may need to be migrated manually after tool exits.
