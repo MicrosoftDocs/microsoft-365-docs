@@ -122,6 +122,11 @@
         - name: Generate documents using Power Automate 
           href: automate-document-generation.md
      
+    - name: Content processing
+      items: 
+        - name: Create a rule to automate content processing 
+          href: content-processing-create-rule.md
+     
     - name: Metadata search
       items: 
         - name: Search for metadata in document libraries 
