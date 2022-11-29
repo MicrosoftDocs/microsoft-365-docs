@@ -61,12 +61,9 @@ Once emails are selected through Explorer, you can start remediation by taking d
 > [!div class="mx-imgBorder"]
 > [![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-All remediation (direct approvals ) created in Explorer, Advanced hunting, or through Automated investigation are displayed in the Action Center. Access these via the left navigation panel under **Actions & Submissions** \> **Action center**  -> **History tab**.
+All remediation (direct approvals) created in Explorer, Advanced hunting, or through Automated investigation are displayed in the Action center at **Actions & Submissions** \> **Action center** \> **History** tab (<https://security.microsoft.com/action-center/history>).
 
-Manual actions pending approval using the two-step approval process (1. add to remediation by one security operation team member, 2. reviewed and approved by another security operation team member) are  visible in the **Actions & Submissions** \> **Action center**  -> **Pending tab** and upon approval can be seen in **Actions & Submissions** \> **Action center**  -> **History tab** .
-
-> [!NOTE]
-> Two-step approval: actions only available in the office action center  **Review** \> **Action center**
+Manual actions pending approval using the two-step approval process (1. Add to remediation by one security operation team member, 2. Reviewed and approved by another security operation team member) are visible at **Actions & Submissions** \> **Action center** \> **Pending** tab (<https://security.microsoft.com/action-center/pending>). After approval, they're visible at **Actions & Submissions** \> **Action center** \> **History** tab (<https://security.microsoft.com/action-center/history>).
 
 :::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="The unified Action Center shows you 30 days of remediation actions.":::
 
