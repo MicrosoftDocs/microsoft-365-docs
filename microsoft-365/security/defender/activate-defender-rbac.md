@@ -57,11 +57,9 @@ You can activate your workloads in two ways from the Permissions and roles page:
 1. **Activate workloads**
     - Select **Activate workloads** on the banner above the list of roles.
     - This will bring you directly to the **Activate workloads** screen.
-    - Select the workload you want to activate. Once you select the toggle, you'll activate (or deactivate) that workload.
+    - You must activate each workload one by one. Once you select the individual toggle, you'll activate (or deactivate) that workload.
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-activate-workload-selection.png" alt-text="Screenshot of the choose workloads to activate screen" lightbox="../../media/defender/m365-defender-rbac-activate-workload-selection.png":::
-
-    - Select **Activate** on the confirmation message.
 
     >[!Note]
     > The **Activate workloads** button is only available when there are existing roles in the roles list.
