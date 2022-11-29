@@ -83,6 +83,12 @@ The primary eDiscovery-related role group in compliance portal is called **eDisc
   
 On the **Permissions** page in the compliance portal, you can also assign users eDiscovery-related permissions by adding them to the *Compliance Administrator*, *Organization Management*, and *Reviewer* role groups. For a description of the eDiscovery-related role-based access control roles assigned to each of these role groups, see [Role-based access control roles related to eDiscovery](#rbac-roles-related-to-ediscovery).
 
+## Viewing permissions
+
+Permissions assigned for eDiscovery users are displayed on the **Your permissions** card on the eDiscovery **Overview** tab when each user signs into Discovery in the compliance portal. This card outlines the access and roles for the user, including any limitations to eDiscovery cases.
+
+![eDiscovery (Premium) Your permissions card.](../media/ediscovery-your-permissions.png)
+
 ## RBAC roles related to eDiscovery
 
 The following table lists the eDiscovery-related role-based access control roles in the compliance portal, and indicates the built-in role groups that each role is assigned to by default.
@@ -174,7 +180,6 @@ This role lets users perform bulk removal of data matching the criteria of a con
 You can add role groups as members of eDiscovery (Standard) and eDiscovery (Premium) cases so that members of the role groups can access and perform tasks in the assigned cases. The roles assigned to the role group define what members of the role group can do. Then adding a role group as a member of the case lets members access and perform those tasks in a specific case. For more information about adding role groups as members of cases, see:
 
 - [Get started with eDiscovery (Standard)](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
-
 - [Add or remove members from an eDiscovery (Premium) case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 With this requirement in mind, it's important to know that if a role is added or removed from a role group, then that role group will be automatically removed as a member of any case the role group is a member of. The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of.
@@ -195,9 +200,9 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
 ## More information
 
-- **Why create an eDiscovery Administrator?** As previously explained, an eDiscovery Administrator is member of the eDiscovery Manager role group who can view and access all eDiscovery cases in your organization. This ability to access all the eDiscovery cases has two important purposes:
+- **Why create an eDiscovery Administrator?** As previously explained, an eDiscovery Administrator is member of the *eDiscovery Manager* role group who can view and access all eDiscovery cases in your organization. This ability to access all the eDiscovery cases has two important purposes:
 
-  - If a person who is the only member of an eDiscovery case leaves your organization, no one (including members of the Organization Management role group or another member of the eDiscovery Manager role group) can access that eDiscovery case because they aren't a member of a case. In this situation, there would be no way to access the data in the case. But because an eDiscovery Administrator can access all eDiscovery cases in the organization, they can view the case and add themselves or another eDiscovery manager as a member of the case.
+  - If a person who is the only member of an eDiscovery case leaves your organization, no one (including members of the *Organization Management* role group or another member of the *eDiscovery Manager* role group) can access that eDiscovery case because they aren't a member of a case. In this situation, there would be no way to access the data in the case. But because an eDiscovery Administrator can access all eDiscovery cases in the organization, they can view the case and add themselves or another eDiscovery manager as a member of the case.
   - Because an eDiscovery Administrator can view and access all eDiscovery (Standard) and eDiscovery (Premium) cases, they can audit and oversee all cases and associated compliance searches. This functionality can help to prevent any misuse of compliance searches or eDiscovery cases. And because eDiscovery Administrators can access potentially sensitive information in the results of a compliance search, you should limit the number of people who are eDiscovery Administrators.
 
 - **Can I add a group as a member of the eDiscovery Manager role group?** As previously explained, you can add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the *eDiscovery Manager* role group by using the **Add-RoleGroupMember** cmdlet in Security & Compliance PowerShell. For example, you can run the following command to add a mail-enabled security group to the *eDiscovery Manager* role group.
