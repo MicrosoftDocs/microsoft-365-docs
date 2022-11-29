@@ -127,7 +127,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
 5. On the **URL & click protection settings** page that appears, configure the following settings:
 
-   - **Action on potentially malicious URLs within Emails(Email & Time of Click)** section:
+   - **Action on potentially malicious URLs within Emails (Email & Time of Click)** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in email**: Select this option to turn on Safe Links protection for links in email messages. If you select this option, the following settings are available:
        - **Apply Safe Links to email messages sent within the organization(Email – Intraorg & Time of Click)**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients. Turning this on will enable link wrapping for all intraorg messages.
        - **Apply real-time URL scanning for suspicious links and links that point to files(Email)**: Select this option to turn on real-time scanning of links in email messages from external senders. If you select this option, the following setting is available:
