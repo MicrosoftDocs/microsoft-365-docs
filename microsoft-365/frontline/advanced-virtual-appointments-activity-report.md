@@ -49,7 +49,7 @@ There are two ways to access and view the report in the Teams admin center.
 
 In the dashboard of the Teams admin center, go to the **Advanced Virtual Appointments usage** card. Here, you get an at-a-glance view of the aggregate number of active users across all features, by month.
 
-:::image type="content" source="media/advanced-va-activity-report-dashboard.png" alt-text="Screenshot of the Advanced Virtual Appointments usage card in the Teams admin center dashboard" lightbox="media/advanced-va-activity-report-dashboard.png":::
+:::image type="content" source="media/advanced-va-activity-report-dashboard.png" alt-text="Screenshot of the Advanced Virtual Appointments usage card in the Teams admin center dashboard." lightbox="media/advanced-va-activity-report-dashboard.png":::
 
 Select **View details** to view the report.
 
@@ -60,7 +60,7 @@ Select **View details** to view the report.
 
 ## Interpret the report
 
-:::image type="content" source="media/advanced-va-activity-report.png" alt-text="Screenshot of the Advanced Virtual Appointments activity report" lightbox="media/advanced-va-activity-report.png":::
+:::image type="content" source="media/advanced-va-activity-report.png" alt-text="Screenshot of the Advanced Virtual Appointments activity report." lightbox="media/advanced-va-activity-report.png":::
 
 |Callout |Description  |
 |--------|-------------|

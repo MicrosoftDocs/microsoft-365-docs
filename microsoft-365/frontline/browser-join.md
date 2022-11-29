@@ -60,13 +60,13 @@ After this feature is turned on, the confirmation email or SMS text that’s sen
     1. In the Bookings app, go to **Settings** > **Appointment types**, and then under **Scheduled**, select an appointment type.
 1. Turn on **Have attendees join from a web browser**. Doing this enables browser join for all appointments of this type.
 
-:::image type="content" source="media/browser-join-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types" lightbox="media/browser-join-appointment-type.png":::
+:::image type="content" source="media/browser-join-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types." lightbox="media/browser-join-appointment-type.png":::
 
 #### Turn on browser join for an individual appointment
 
 On the **Bookings schedule** tab of the Virtual Appointments app or in the Bookings app, select **New booking**, and then turn on **Have attendees join from a browser**.
 
-:::image type="content" source="media/browser-join-bookings-form.png" alt-text="Screenshot of the Have attendees join from a browser setting on the new booking form" lightbox="media/browser-join-bookings-form.png":::
+:::image type="content" source="media/browser-join-bookings-form.png" alt-text="Screenshot of the Have attendees join from a browser setting on the new booking form." lightbox="media/browser-join-bookings-form.png":::
 
 ### Appointments scheduled through the Teams EHR connector
 
@@ -86,7 +86,7 @@ Currently, browser join supports only the logo in the meeting theme. This means 
 
 After you create the policy, assign it to the users in your organization who schedule appointments. Users who are assigned the policy can create branding-enabled virtual appointments. Anyone who joins the appointments gets a custom-branded waiting room experience.
 
-:::image type="content" source="media/browser-join-waiting-room.png" alt-text="Screenshot of a custom waiting room in Teams when joining from a browser on a mobile device" lightbox="media/browser-join-waiting-room.png":::
+:::image type="content" source="media/browser-join-waiting-room.png" alt-text="Screenshot of a custom waiting room in Teams when joining from a browser on a mobile device." lightbox="media/browser-join-waiting-room.png":::
 
 To learn more, see [Meeting themes for Teams meetings](/microsoftteams/meeting-themes).
 

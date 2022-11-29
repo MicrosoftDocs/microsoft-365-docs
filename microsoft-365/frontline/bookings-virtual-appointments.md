@@ -68,7 +68,7 @@ You must be a Bookings admin to set up and manage booking calendar settings.
 
 In Teams, go to **Bookings** > **Get started**, and then select **New booking calendar**. Complete the form and be sure to choose the relevant business type for your organization.
 
-:::image type="content" source="media/bookings-virtual-appointments-new-booking-calendar.png" alt-text="Screenshot of a new booking calendar screen showing business types" lightbox="media/bookings-virtual-appointments-new-booking-calendar.png":::
+:::image type="content" source="media/bookings-virtual-appointments-new-booking-calendar.png" alt-text="Screenshot of a new booking calendar screen showing business types." lightbox="media/bookings-virtual-appointments-new-booking-calendar.png":::
 
 If you’re a larger organization, consider creating separate booking calendars for specific departments within your organization. To learn more, see [Create a Bookings calendar](https://support.microsoft.com//office/create-a-bookings-calendar-921cfd26-a24d-4aca-9004-561594112148).
 
@@ -139,7 +139,7 @@ Booking admins can publish an online booking page where people can book schedule
 
 1. In the booking calendar, go to **More options** (**...**) > **Settings**, and then select **Booking page**.
 2. Turn on **Publish booking page**.
-    :::image type="content" source="media/bookings-virtual-appointments-booking-page-settings.png" alt-text="Screenshot of booking page settings" lightbox="media/bookings-virtual-appointments-booking-page-settings.png":::
+    :::image type="content" source="media/bookings-virtual-appointments-booking-page-settings.png" alt-text="Screenshot of booking page settings." lightbox="media/bookings-virtual-appointments-booking-page-settings.png":::
 3. To enable people to request on-demand appointments on your booking page, turn on **Show option for On-demand scheduling**.
 
 You can customize and manage your booking page settings in the Bookings web app. To learn more, see [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page).
@@ -179,7 +179,7 @@ To learn more, see [Conduct a Bookings appointment](https://support.microsoft.co
 
 The queue view provides your staff with a dashboard to monitor all scheduled and on-demand virtual appointments for the day, with updates in real time. To see the queue, go to the **Queue** tab.
 
-:::image type="content" source="media/bookings-virtual-appointments-queue.png" alt-text="Screenshot of the queue view in the Bookings app in Teams" lightbox="media/bookings-virtual-appointments-queue.png":::
+:::image type="content" source="media/bookings-virtual-appointments-queue.png" alt-text="Screenshot of the queue view in the Bookings app in Teams." lightbox="media/bookings-virtual-appointments-queue.png":::
 
 From the queue, schedulers can add a new booking, view relevant appointment details, and see appointment statuses throughout the day. They can also send email reminders to assigned staff and attendees and send SMS notifications to attendees for scheduled appointments.
 
