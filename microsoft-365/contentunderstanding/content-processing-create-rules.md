@@ -22,11 +22,11 @@ From a document library, you can use Microsoft Syntex to create rules to automat
 You'll choose a condition that triggers the rule and the action that the rule will take. 
 For example, you can create a rule to move files tagged with a specific customer to a specific library or folder. This helps you structure your content architecture with the power of AI-driven processing.
 
-## Move a file
+## Move or copy a file
 
-To move a file from one document libary to another, follow these steps.
+To move or copy a file from one document library to another, follow these steps.
 
-1. In the document library of the file you want move, select **Automate** > **Rules** > **Create a rule**.
+1. In the document library, select **Automate** > **Rules** > **Create a rule**.
 
    ![Screenshot of the document library showing the Automate > Rules > Create a rule option.](../media/content-understanding/content-processing-create-rule.png)
 
@@ -38,21 +38,25 @@ To move a file from one document libary to another, follow these steps.
 
 3. To complete the rule statement, under **When a new file is added**:
 
-    1. Select **choose action**, and then select **Move file to**.
+    1. Select **choose action**, and then:
+        - To move a file, select **Move file to**.
+        - To copy a file, select **Copy file to**.
 
-   ![Screenshot of the rule statement page showing the Move file to option highlighted.](../media/content-understanding/content-rule-move-file-to.png)
+      ![Screenshot of the rule statement page showing the choose action option highlighted.](../media/content-understanding/content-rule-move-file-to.png)
 
-    2. Select **choose a site**, and then select the site that contains the document library you want the file moved to.
+    2. Select **choose a site**, and then select the site that contains the document library you want the file moved or copied to.
 
-   ![Screenshot of the rule statement page showing the choose a site option highlighted.](../media/content-understanding/content-rule-choose-a-site.png)
+       ![Screenshot of the rule statement page showing the choose a site option highlighted.](../media/content-understanding/content-rule-choose-a-site.png)
 
-    3. Select **choose a library**, and the select the document library you want the file moved to.
+    3. Select **choose a library**, and the select the document library you want the file moved or copied to.
 
-   ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
+       ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
 
 4. Select **Create**.
 
-## Copy a file to another document library
+
+
+## Copy a file
 
 To copy a file from one document libary to another, follow these steps.
 
