@@ -68,7 +68,7 @@ You must be a Bookings admin to set up and manage booking calendar settings.
 
 In Teams, go to **Bookings** > **Get started**, and then select **New booking calendar**. Complete the form and be sure to choose the relevant business type for your organization.
 
-:::image type="content" source="media/bookings-virtual-appointments-new-booking-calendar.png" alt-text="Screenshot of a new booking calendar screen showing business types":::
+:::image type="content" source="media/bookings-virtual-appointments-new-booking-calendar.png" alt-text="Screenshot of a new booking calendar screen showing business types" lightbox="media/bookings-virtual-appointments-new-booking-calendar.png":::
 
 If you’re a larger organization, consider creating separate booking calendars for specific departments within your organization. To learn more, see [Create a Bookings calendar](https://support.microsoft.com//office/create-a-bookings-calendar-921cfd26-a24d-4aca-9004-561594112148).
 
@@ -139,7 +139,7 @@ Booking admins can publish an online booking page where people can book schedule
 
 1. In the booking calendar, go to **More options** (**...**) > **Settings**, and then select **Booking page**.
 2. Turn on **Publish booking page**.
-    :::image type="content" source="media/bookings-virtual-appointments-booking-page-settings.png" alt-text="Screenshot of booking page settings":::
+    :::image type="content" source="media/bookings-virtual-appointments-booking-page-settings.png" alt-text="Screenshot of booking page settings" "media/bookings-virtual-appointments-booking-page-settings.png":::
 3. To enable people to request on-demand appointments on your booking page, turn on **Show option for On-demand scheduling**.
 
 You can customize and manage your booking page settings in the Bookings web app. To learn more, see [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page).
