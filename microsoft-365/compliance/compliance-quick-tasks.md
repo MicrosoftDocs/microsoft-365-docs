@@ -10,8 +10,8 @@ ms.service: O365-seccomp
 f1.keywords:
 - NOCSH
 ms.collection:
-- m365-security-compliance
-- m365initiative-compliance
+- tier1
+- purview-compliance
 ms.custom: 
 - admindeeplinkDEFENDER
 - intro-get-started
@@ -25,6 +25,8 @@ If you're new to Microsoft Purview and wondering where to start, this article pr
 This article is also helpful if you're figuring out how best to manage risks, protect your data, and remain compliant with regulations and standards with a newly remote workforce. Employees are now collaborating and connecting with each other in new ways, and this change means your existing compliance processes and controls may need to adapt. Identifying and managing these new compliance risks within your organization is critical to safeguarding your data and minimizing threats and risks.
 
 After you've completed these basic compliance tasks, consider expanding compliance coverage in your organization by implementing additional Microsoft Purview solutions.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Task 1: Configure compliance permissions
 
@@ -64,7 +66,7 @@ Microsoft provides several built-in alert policies that help identify admin perm
 
 Use alert policy and alert dashboard tools to create custom alert policies and view the alerts generated when users perform activities that match the policy conditions. Some examples could be to use alert policies to track user and admin activities affecting compliance requirements, permissions, and data loss incidents in your organization.
 
-For step-by-step guidance to create custom alert policies, see [Alert policies in the security and compliance center](/microsoft-365/compliance/alert-policies).
+For step-by-step guidance to create custom alert policies, see [Alert policies in Microsoft 365](/microsoft-365/compliance/alert-policies).
 
 ## Task 5: Classify and protect sensitive data
 
@@ -88,9 +90,9 @@ For step-by-step guidance to configure retention policies, see [Create and confi
 
 Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Communication compliance](/microsoft-365/compliance/communication-compliance) in Microsoft Purview helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
-A pre-defined *Detect inappropriate text* policy template allows you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's standards.
+A pre-defined *Detect inappropriate text* policy template allows you to check internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's standards.
 
-The pre-defined *Detect sensitive info* policy template helps you quickly create a policy to scan email and Microsoft Teams communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access. These activities could include unauthorized communication about confidential projects or industry-specific rules on insider trading or other collusion activities.
+The pre-defined *Detect sensitive info* policy template helps you quickly create a policy to check email and Microsoft Teams communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access. These activities could include unauthorized communication about confidential projects or industry-specific rules on insider trading or other collusion activities.
 
 For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](/microsoft-365/compliance/communication-compliance-plan) and [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure). For communication compliance licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 

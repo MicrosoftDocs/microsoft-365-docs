@@ -11,12 +11,12 @@ ms.topic: how-to
 ms.localizationpriority: medium
 search.appverid: 
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
   - MET150
 description: Admins can learn to identify the reasons why and how a phishing message got through in Microsoft 365, and what to do to prevent more phishing messages in the future.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Tune anti-phishing protection

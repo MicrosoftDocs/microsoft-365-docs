@@ -1,0 +1,140 @@
+### YamlMime:Landing
+
+title: Microsoft Syntex documentation # < 60 chars
+summary: Microsoft Syntex is a Microsoft 365 service that uses advanced content artificial intelligence (AI) and machine learning to provide an end-to-end intelligent document processing solution for your organization.
+metadata:
+  title: Microsoft Syntex documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This page contains links to some important topics related to Microsoft Syntex features. Start here to learn about compliance for Syntex. # Required; article description that is displayed in search results. < 160 chars.
+  services: 
+  ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: enabler-strategic, m365initiative-syntex
+  ms.custom: intro-hub-or-landing
+  author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
+  ms.author: chucked #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/01/2022 #Required; mm/dd/yyyy format
+  ms.localizationpriority: medium
+  titleSuffix: Microsoft Syntex
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 1
+  - title: About Syntex
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Syntex?
+            url: syntex-overview.md
+          - text: Syntex models
+            url: model-types-overview.md
+      - linkListType: learn
+        links:
+          - text: Syntex on LinkedIn Learning
+            url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
+
+# Card 2
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Licensing
+            url: syntex-licensing.md
+      - linkListType: how-to-guide
+        links:
+          - text: Set up Syntex
+            url: set-up-content-understanding.md
+          - text: Create a content center
+            url: create-a-content-center.md
+
+# Card 3
+  - title: Build Syntex models
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Unstructured document processing
+            url: document-understanding-overview.md
+          - text: Freeform document processing
+            url: create-a-form-processing-model.md
+          - text: Structured document processing
+            url: create-a-form-processing-model.md
+          - text: Prebuilt models
+            url: prebuilt-overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create an enterprise model
+            url: create-syntex-model.md
+          - text: Create a local model
+            url: create-local-model.md
+
+    # Card 4
+  - title: Manage Syntex models
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Apply a model
+            url: apply-a-model.md
+          - text: Share an enterprise model
+            url: model-discovery.md
+          - text: Discover other trained models
+            url: discover-other-trained-models.md
+          - text: Add a retention label
+            url: apply-a-retention-label-to-a-model.md
+          - text: Add a sensitivity label
+            url: apply-a-sensitivity-label-to-a-model.md
+          - text: Analyze model usage
+            url: model-usage-analytics.md
+
+    # Card 5
+  - title: Content assembly
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Learn about content assembly
+            url: content-assembly.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create modern templates
+            url: content-assembly-modern-template.md
+          - text: Use with Power Automate
+            url: automate-document-generation.md
+
+    # Card 6
+  - title: Adoption
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Drive adoption
+            url: adoption-getstarted.md
+          - text: Scenarios and use cases
+            url: adoption-scenarios.md
+      - linkListType: how-to-guide
+        links:
+          - text: Assessment tool
+            url: adoption-assessment-tool.md
+          - text: Run a trial
+            url: trial-syntex.md
+
+    # Card 7
+  - title: Get support
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Tech Community blog
+            url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
+          - text: FAQ
+            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab
+
+    # Card 8
+  - title: Extensibility
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: PowerShell for Syntex
+            url: powershell-syntex-intro.md
+          - text: Syntex Model REST API
+            url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+

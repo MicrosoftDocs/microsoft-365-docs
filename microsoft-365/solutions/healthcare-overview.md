@@ -6,9 +6,10 @@ author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- highpri 
 - M365-subscription-management
 - M365solutions
 ms.custom: seo-marvel-jun2020
@@ -32,10 +33,10 @@ Learn how you can use Microsoft 365, Dynamics 365, and Azure to digitize, modern
 |Resource |Description  |
 |---------|---------|
 |[Virtual visits with Microsoft Teams and the Bookings app](/microsoftteams/expand-teams-across-your-org/bookings-virtual-visits)  |      The Bookings app in Microsoft Teams gives organizations a simple way to schedule and manage virtual appointments for staff and attendees. Use it to schedule virtual appointments such as healthcare visits, financial consultations, interviews, customer support, virtual shopping experiences, education office hours, and more.   |
-|[Teams for Healthcare ](/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc)    |  Microsoft Teams offers a number of telemedicine features useful for hospitals and other Healthcare organizations. <br>- Virtual visits and Electronic Healthcare Record (EHR) integration<br>- Teams policy packages<br>- Secure messaging<br>- Teams templates<br>- Care coordination and collaboration      |
+|[Microsoft 365 for Healthcare](/microsoft-365/frontline/teams-in-hc)    |  Microsoft Teams offers a number of telemedicine features useful for hospitals and other Healthcare organizations. <br>- Virtual visits and Electronic Healthcare Record (EHR) integration<br>- Teams policy packages<br>- Secure messaging<br>- Teams templates<br>- Care coordination and collaboration      |
 |[Microsoft Cloud for Healthcare](/industry/healthcare/overview)  | Learn about Microsoft Cloud for Healthcare and how it brings together trusted capabilities to customers and partners that enhance patient engagement, empowers health team collaboration, and improves clinical and operational data insights to improve decision-making and operational efficiencies.     |
-| [Azure architecture and solutions for healthcare](/azure/architecture/industries/healthcare)| Learn how you can use Microsoft Azure services to digitize, modernize, and enhance your healthcare solution at Azure for healthcare|
-| | |
+|[Microsoft Cloud for Healthcare reference architectures](/industry/healthcare/architecture/overview) | Find reference architectures to help healthcare organizations project managers, enterprise architects, and IT managers collaborate and communicate effectively about implementing Microsoft Cloud for Healthcare. |
+|[Azure architecture and solutions for healthcare](/azure/architecture/industries/healthcare)| Learn how you can use Microsoft Azure services to digitize, modernize, and enhance your healthcare solution at Azure for healthcare|
 
 ## Videos you can share with your team
 

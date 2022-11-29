@@ -15,11 +15,11 @@ metadata:
     - MET150
   ms.assetid: 
   ms.collection: 
-    - M365-security-compliance
+    - m365-security
     - m365initiative-defender-office365
   description: Admins can view frequently asked questions and answers about anti-spoofing protection in Exchange Online Protection (EOP).
-  ms.technology: mdo
-  ms.prod: m365-security
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
 title: Anti-spoofing protection FAQ
 summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]

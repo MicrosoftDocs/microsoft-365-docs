@@ -4,12 +4,14 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -48,7 +50,7 @@ In Azure AD Identity Protection, risk detections include any identified suspicio
 
 1. In the left navigation pane in Lighthouse, select **Users** > **Risky users**.
 
-2. On the **Risky Users** tab, review the users in the list with a risk state of **At risk**.
+2. On the **Risky Users** page, review the users in the list with a risk state of **At risk**.
 
 3. Select **View risk detections** to get detailed information about the risks detected for each user. For more information about risk types and detection, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
@@ -68,7 +70,7 @@ To take action on multiple affected users at once:
 
 1. In the left navigation pane in Lighthouse, select **Users** > **Risky users**.
 
-2. On the **Risky Users** tab, select the set of users you want to take action on.
+2. On the **Risky Users** page, select the set of users you want to take action on.
 
 3. Choose one of the following actions to perform:
 

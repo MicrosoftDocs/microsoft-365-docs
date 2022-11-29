@@ -8,9 +8,11 @@ metadata:
   manager: scotv
   audience: Admin
   ms.topic: faq
-  ms.service: o365-administration
+  ms.service: microsoft-365-business
   ms.localizationpriority: medium
   ms.collection: 
+  - Tier3
+  - scotvorg
   - M365-subscription-management
   - Adm_O365
   - Adm_TOC
@@ -55,6 +57,59 @@ sections:
           It may take some time to get the service ready for you. When provisioning is complete, you'll see the Basic Mobility and Security page. If you've waited 24 hours and the status is still provisioning, please contact Support and we'll help figure out what the issue is.
 
       - question: |
+          I’m running into issues when I try to enroll a device in Basic Mobility and Security. What can I do?
+        answer: |
+          To start, check the following:
+
+          - Make sure that the device isn't already enrolled with another mobile device management provider, such as Intune.
+
+          - Make sure that the device is set to the correct date and time.
+
+          - Switch to a different WIFI or cellular network on the device.
+
+          - For Android or iOS devices, uninstall and reinstall the Intune Company Portal app on the device.
+
+      - question: |
+          I’m having issues setting up Basic Mobility and Security on my iOS phone or tablet. What can I do?
+        answer: |
+          - Make sure that you've set up an APNs certificate. For more info, see [Create an APNs Certificate for iOS devices](create-an-apns-certificate-for-ios-devices.md).
+
+          - In **Settings** > **General** > **Profile (or Device Management)**, make sure that a Management Profile is not already installed. If it is, remove it.
+
+          - If you see the error message, "Device failed to enroll," sign in to Microsoft 365 and make sure that a license that includes Exchange Online has been assigned to the user who is signed in to the device.
+
+          - If you see the error message, "Profile failed to install," try one of the following:
+
+            - Make sure that Safari is the default browser on the device, and that cookies aren't disabled.
+
+            - Reboot the device, and then navigate to portal.manage.microsoft.com. Sign in with your Microsoft 365 user ID and password, and attempt to install the profile manually.
+
+      - question: |
+          I’m having issues setting up Basic Mobility and Security on Windows RT. What can I do?
+        answer: |
+          - Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
+    
+          - Make sure that the user is choosing **Turn On** rather than choosing **Join**.
+
+      - question: |
+          I’m having issues setting up Basic Mobility and Security on Windows 10 PC. What can I do?
+        answer: |
+          - Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
+    
+          - Unless you have Azure Active Directory Premium, make sure that the user is choosing **Enroll in Device Management only** rather than choosing **Connect**.
+
+      - question: |
+          I’m having issues setting up Basic Mobility and Security on Android phone or tablet. What can I do?
+        answer: |
+          - Make sure the device is running Android.
+
+          - Make sure that Chrome is up to date and is set as the default browser.
+
+          - If you see the error message, "We couldn't enroll this device," sign in to Microsoft 365 and make sure that a license that includes Exchange Online has been assigned to the user who is signed in to the device.
+
+          - Check the Notification Area on the device to see if any required end-user actions are pending, and if they are, complete the actions.
+
+      - question: |
           What can I do if device enrollment fails?
         answer: |
           If you're having trouble getting a device enrolled, first check the following:
@@ -66,8 +121,6 @@ sections:
           - Switch to a different WIFI or cellular network on the device.
           
           - For Android or iOS devices, uninstall and reinstall the Intune Company Portal app on the device.
-              
-          If enrollment still isn't working, see [Troubleshoot Basic Mobility and Security](troubleshoot.md).
           
       - question: |
           What's the difference between Intune and Basic Mobility and Security?

@@ -12,6 +12,8 @@ ms.collection:
 - m365solution-overview
 - m365solution-mig
 - m365initiative-compliance
+- highpri
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
@@ -30,6 +32,8 @@ Use **Microsoft Purview Data Lifecycle Management** (formerly Microsoft Informat
 For data governance that maps and manages data across your data estate, including multi-cloud, and software-as-a-service (SaaS), use [Microsoft Purview Data Map, Microsoft Purview Data Catalog, and Microsoft Purview Data Estate Insights](/azure/purview/overview).
 
 For a data protection solution, see [Deploy an information protection solution with Microsoft Purview](information-protection-solution.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Licensing
 
@@ -72,8 +76,8 @@ To learn more about the capabilities from this solution, see [Learn about record
 
 Learning modules for consultants and admins:
 
-- [Introduction to information protection and data lifecycle management in Microsoft Purview](/learn/modules/m365-compliance-information-governance)
-- [Manage the data lifecycle in Microsoft Purview](/learn/modules/m365-compliance-information-govern-information/)
-- [Manage records in Microsoft Purview](/learn/modules/m365-compliance-information-manage-records/)
+- [Introduction to information protection and data lifecycle management in Microsoft Purview](/training/modules/m365-compliance-information-governance)
+- [Manage the data lifecycle in Microsoft Purview](/training/modules/m365-compliance-information-govern-information/)
+- [Manage records in Microsoft Purview](/training/modules/m365-compliance-information-manage-records/)
 
 For documentation to support users when these solutions are deployed, see the end user documentation sections for [data lifecycle management](get-started-with-information-governance.md#end-user-documentation) and [records management](get-started-with-records-management.md#end-user-documentation).

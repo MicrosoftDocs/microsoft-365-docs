@@ -2,7 +2,7 @@
 title: Offboard machine API
 description: Learn how to use an API to offboard a device from Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, collect investigation package
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Offboard machine API
@@ -43,9 +46,8 @@ Offboard device from Defender for Endpoint.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> This API is supported on Windows 11, Windows 10, version 1703 and later, or Windows Server 2019 and later.
->
-> This API is not supported on MacOS or Linux devices.
+> This API is supported on Windows 11, Windows 10, version 1703 and later; on Windows Server 2019 and later; and on Windows Server 2012 R2 and Windows Server 2016 when using the [new, unified agent for Defender for Endpoint](update-agent-mma-windows.md#upgrade-to-the-new-unified-agent-for-defender-for-endpoint).
+> This API is not supported on macOS or Linux devices.
 
 ## Permissions
 
@@ -61,6 +63,8 @@ Delegated (work or school account)|Machine.Offboard|'Offboard machine'
 >
 > - The user needs to 'Global Admin' AD role
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 ## HTTP request
 

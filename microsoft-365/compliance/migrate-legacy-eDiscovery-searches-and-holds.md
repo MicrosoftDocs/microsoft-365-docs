@@ -1,9 +1,10 @@
 ---
 title: "Migrate legacy eDiscovery searches and holds to the Microsoft Purview compliance portal"
+description: learn about migrating legacy eDiscovery searches and holds to the compliance portal.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -11,10 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
-description:
 ---
 
 # Migrate legacy eDiscovery searches and holds to the compliance portal
@@ -26,9 +29,11 @@ To help customers take advantage of the new and improved functionality, this art
 > [!NOTE]
 > Because there are many different scenarios, this article provides general guidance to transition searches and holds to a eDiscovery (Standard) case in the compliance portal. Using eDiscovery cases aren't always required, but they add an extra layer of security by letting you assign permissions to control who has access to the eDiscovery cases in your organization.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
-- You need to install the Exchange Online V2 module. For instructions, see [Install and maintain the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+- You need to install the Exchange Online PowerShell module. For instructions, see [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 - You have to be a member of the eDiscovery Manager role group in the compliance portal to run the PowerShell commands described in this article. You also have to be a member of the Discovery Management role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 

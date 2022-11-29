@@ -1,9 +1,10 @@
 ---
 title: "Predictive coding in eDiscovery (Premium) - Quick start"
+description: "Learn how to get started using the predictive coding module in eDiscovery (Premium). This article walks you through the end-to-end process of using predictive coding to identify content in a review set that's most relevant to your investigation."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn how to get started using the predictive coding module in eDiscovery (Premium). This article walks you through the end-to-end process of using predictive coding to identify content in a review set that's most relevant to your investigation."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Quick start: Predictive coding in eDiscovery (Premium) (preview)
@@ -27,6 +30,8 @@ Here's an a quick overview of the predictive coding process:
 To get started, you create a model, label as few as 50 items as relevant or not relevant. The system then uses this training to apply prediction scores to every item in the review set. This lets you filter items based on the prediction score, which  allows you to review the most relevant (or non-relevant) items first. If you want to train models with higher accuracies and recall rates, you can continue labeling items in subsequent training rounds until the model stabilizes. Once the model is stabilized, you can apply the final prediction filter to prioritize items to review.
 
 For a detailed overview of predictive coding, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Create a new predictive coding model
 

@@ -1,12 +1,12 @@
 ---
-title: Use Microsoft Teams meetings with Blackboard Learn
+title: Integrate Microsoft Teams meetings with Blackboard Learn
 ms.author: danismith
 author: cichur
 manager: serdars
 ms.reviewer: amitman 
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 description: Learn how to set up Microsoft Teams meetings with Blackboard Learn.
 ---
 
-# Use Microsoft Teams meetings with Blackboard Learn
+# Integrate Microsoft Teams meetings with Blackboard Learn
 
 This guide provides the IT admin steps for registering the Teams Meetings LTI app on Blackboard Learn.
 

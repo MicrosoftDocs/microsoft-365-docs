@@ -1,24 +1,24 @@
 ---
 title: "Use drive shipping to import PST files"
+description: Admin can learn how to bulk-import PST files to Microsoft 365 mailboxes by copying PST files to a hard drive and then shipping it to Microsoft.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- import
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
-description: Admin can learn how to bulk-import PST files to Microsoft 365 mailboxes by copying PST files to a hard drive and then shipping it to Microsoft.
 ---
 
 # Use drive shipping to import your organization's PST files
@@ -46,6 +46,8 @@ Here are the steps required to use drive shipping to import PST files to Microso
   
 For frequently asked questions about using drive shipping to import PST files to Office 365, see [FAQs for using drive shipping to import PST files](./faqimporting-pst-files-to-office-365.yml#using-drive-shipping-to-import-pst-files). 
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you import PST files
 
 - You have to be assigned the Mailbox Import Export role in Exchange Online to create import jobs in the Microsoft Purview compliance portal and import PST files to user mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).

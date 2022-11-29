@@ -14,10 +14,10 @@ search.appverid:
   - MET150
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn about bulk complaint level (BCL) values that are used in Exchange Online Protection (EOP).
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Bulk complaint level (BCL) in EOP

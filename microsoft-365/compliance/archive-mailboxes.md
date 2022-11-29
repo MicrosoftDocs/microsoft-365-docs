@@ -12,8 +12,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 description: "Learn about archive mailboxes to provide extra mailbox storage."
 ---
 
@@ -24,6 +24,8 @@ description: "Learn about archive mailboxes to provide extra mailbox storage."
 Mailbox archiving in Microsoft Purview is sometimes also called *In-Place Archiving* and provides users with extra mailbox storage space. After you turn on archive mailboxes, a user's current mailbox becomes their *primary mailbox* and an additional mailbox is created, called the *archive mailbox*. Both mailboxes are considered a user's mailbox for compliance features such as Content search from the Microsoft Purview compliance portal, Microsoft 365 retention, and Litigation Hold.
 
 Users can access and store messages in their archive mailboxes by using Outlook and Outlook on the web. Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Managing archive mailboxes with messaging records management (MRM)
 
@@ -44,4 +46,4 @@ After a user's archive mailbox is enabled, up to 100 GB of additional storage is
 
 ## Next steps
 
-See [Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md).
+See [Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md).

@@ -1,9 +1,10 @@
 ---
 title: "Collect cloud attachments in eDiscovery (Premium)"
+description: "Use collections in Microsoft Purview eDiscovery (Premium) to collect cloud attachments for review in an investigation or case." 
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 06/03/2022
@@ -11,11 +12,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Use collections in Microsoft Purview eDiscovery (Premium) to collect cloud attachments for review in an investigation or case." 
 ---
 
 # Collect cloud attachments in Microsoft Purview eDiscovery (Premium)
@@ -26,9 +29,11 @@ Cloud attachments are links to documents that are typically stored in SharePoint
 
 - Collecting the version of the document at the time it was shared in a cloud attachment.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Collecting cloud attachments
 
-When you create a draft collection and the search results contain items that include cloud attachments, you have to the option of collecting the target of the cloud attachment when you commit the draft collection to a review set. When you select this option, eDiscovery (Premium) adds the documents that are linked to in the cloud attachment to the review set. This allows you to review the target documents and determine if the document is relevant to your case or investigation.
+When you create a collection estimate and the search results contain items that include cloud attachments, you have to the option of collecting the target of the cloud attachment when you commit the collection estimate to a review set. When you select this option, eDiscovery (Premium) adds the documents that are linked to in the cloud attachment to the review set. This allows you to review the target documents and determine if the document is relevant to your case or investigation.
 
 The following screenshot shows the option to include the targets of cloud attachments when you commit a collection to a review set.
 
@@ -37,7 +42,7 @@ The following screenshot shows the option to include the targets of cloud attach
 > [!NOTE]
 >- If you use the [new case format](advanced-ediscovery-new-case-format.md) in eDiscovery (Premium), the option to include cloud attachments in the review set is selected by default and can't be unselected.<br/>
 >- You also have the option to include all versions (in addition to the version that was shared) of cloud attachments in the review set.  
-For instructions committing a collection to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
+For instructions committing a collection to a review set, see [Commit a collection estimate to a review set](commit-draft-collection.md).
 
 ## Collecting the version shared in a cloud attachment (preview)
 
@@ -55,4 +60,4 @@ The following screenshot shows a cloud attachment document, named *XYZ Research.
 
 Additionally, the current live version and the version that was shared have the same **FamilyId** property value, which is the same as the **FamilyId** for the parent object (such as an email message or a Teams chat conversation). This lets you group cloud attachments with the item in which they were shared.
 
-After you've implemented the retention label and auto-apply the label to SharePoint documents, you still select the option to collect cloud attachments when committing a draft collection to a review set. When the cloud attachments are collected, both the current live version and the version that was originally shared are added to the review set.
+After you've implemented the retention label and auto-apply the label to SharePoint documents, you still select the option to collect cloud attachments when committing a collection estimate to a review set. When the cloud attachments are collected, both the current live version and the version that was originally shared are added to the review set.

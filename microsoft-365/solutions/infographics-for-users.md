@@ -6,10 +6,11 @@ author: samanro
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.date: 02/11/2022
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365solutions
 f1.keywords: NOCSH
 ---

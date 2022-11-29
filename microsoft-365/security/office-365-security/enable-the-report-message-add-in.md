@@ -14,10 +14,10 @@ search.appverid:
   - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: Learn how to enable the Report Message or the Report Phishing add-ins for Outlook and Outlook on the web, for individual users, or for your entire organization.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Enable the Report Message or the Report Phishing add-ins
@@ -68,6 +68,8 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 - For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
 
 - Organizations that have a URL filtering or security solution (such as a proxy and/or firewall) in place, must have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
+
+- Currently, reporting messages in shared mailboxes or other mailboxes by a delegate using the add-ins is not supported. Messages are not sent to the [custom mailbox](user-submission.md) or to Microsoft. Built-in reporting in Outlook on the web sends messages reported by a delegate to the custom mailbox and/or to Microsoft.
 
 > [!IMPORTANT]
 > To view messages reported to Microsoft on the **User reported messages** tab at <https://security.microsoft.com/reportsubmission>, don't turn off the built-in reporting experience.

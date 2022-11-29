@@ -7,6 +7,9 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection:
+- Tier1
+- scotvorg
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: "Change your language and time zone settings in Microsoft Bookings. If bookings are created at the wrong time, Bookings might be set for the wrong time zone."
 ---

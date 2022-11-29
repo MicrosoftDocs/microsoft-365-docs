@@ -7,15 +7,16 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- m365-security-compliance
+- m365-security
+- tier1
 ---
 
 # Get Microsoft Defender for Business
@@ -40,7 +41,7 @@ If you have signed up for a trial, after you receive your acceptance email, you 
 3. Proceed to [Add users and assign licenses](mdb-add-users.md).
 
 > [!TIP]
-> See the [Trial playbook for Defender for Business](trial-playbook-defender-business.md).
+> See the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
 
 ## Get Microsoft 365 Business Premium
 
@@ -101,7 +102,8 @@ When you're ready to get started, you'll work with two main portals: the Microso
 
 ## Next steps
 
-- [See the trial playbook: Microsoft Defender for Business](trial-playbook-defender-business.md).
+- [See the trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md).
 - [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md).
 - [See the setup and configuration process for Defender for Business](mdb-setup-configuration.md).
 - [See how to get help and support for Defender for Business](mdb-get-help.md) (just in case you need help).
+- [Learn about Microsoft Defender for Business servers](get-defender-business-servers.md).

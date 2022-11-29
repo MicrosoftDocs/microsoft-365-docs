@@ -13,16 +13,18 @@ search.appverid:
   - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - Strat_O365_IP
   - m365initiative-defender-office365
+  - EngageScoreSep2022
+  - ContentEngagementFY23
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
 ms.localizationpriority: high
 description: Admins can learn about the anti-spoofing features that are available in Exchange Online Protection (EOP), which can help mitigate against phishing attacks from spoofed senders and domains.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Anti-spoofing protection in EOP

@@ -2,7 +2,7 @@
 title: Prepare Microsoft Defender for Endpoint deployment
 description: Prepare stakeholder approval, timelines, environment considerations, and adoption order for deploying Microsoft Defender for Endpoint
 keywords: deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,11 +12,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-endpointprotect
   - m365solution-scenario
-ms.topic: article
-ms.technology: mde
+  - highpri
+  - tier1
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Prepare Microsoft Defender for Endpoint deployment

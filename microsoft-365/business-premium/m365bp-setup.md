@@ -7,13 +7,15 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 11/10/2022
 ms.localizationpriority: high
-ms.date: 08/05/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
-- M365-security-compliance
+- m365-security
+- tier1
 ms.custom: intro-get-started
 ---
 
@@ -34,7 +36,7 @@ Make sure that you meet the following requirements before you begin your setup p
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | Operating systems (client) | **Windows**:  Windows 11, Windows 10, Windows 8.1<br/>**macOS**: One of the three most recent versions of macOS 
-| Operating systems (servers) | Windows Server or Linux Server <br/>- Requires Microsoft Defender for Business servers (currently in preview)<br/>- See [How to get Microsoft Defender for Business servers (preview)](../security/defender-business/get-defender-business-servers.md).  |
+| Operating systems (servers) | Windows Server or Linux Server <br/>(Requires [Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md).)  |
 
 > [!NOTE]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
@@ -48,7 +50,7 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 As soon as you've completed the guided setup process, make sure to proceed to [bump up security](m365bp-security-overview.md).
 
 > [!TIP]
-> - After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Office apps, and saving, copying, and sharing files.
+> After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Microsoft 365 apps, and saving, copying, and sharing files.
 
 
 ## Work with a Microsoft partner
