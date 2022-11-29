@@ -43,7 +43,7 @@ All communication compliance policy matches are captured in Microsoft 365 Audit.
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
 RecordType: ComplianceSupervisionExchange
-CreationDate: 7/7/2022 5:30:11 AM (UTC)
+CreationDate: 7/7/2022 5:30:11 AM
 UserIds: user1@contoso.onmicrosoft.com
 Operations: SupervisionRuleMatch
 AuditData: {"CreationTime":"2022-07-07T05:30:11","Id":"44e98a7e-57fd-4f89-79b8-08d941084a35","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<HE1P190MB04600526C0524C75E5750C5AC61A9@HE1P190MB0460.EURP190.PROD.OUTLOOK.COM\>","UserId":"user1@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"53be0bf4-75ee-4315-b65d-17d63bdd53ae","SRPolicyName":"Adult images","SRRuleMatchDetails":\[\]}}
