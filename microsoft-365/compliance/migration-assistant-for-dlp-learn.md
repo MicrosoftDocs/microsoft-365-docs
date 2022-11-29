@@ -2,9 +2,9 @@
 title: "Learn about Migration Assistant for Microsoft Purview DLP"
 f1.keywords:
 - CSH
-ms.author: v-aljupudi
-author: alekyaj
-manager: chrfox
+ms.author: chrfox
+author: chrfox
+manager: laurwi
 ms.date: 
 audience: ITPro
 ms.topic: conceptual
@@ -17,55 +17,55 @@ ms.collection:
 - highpri
 search.appverid: 
 - MET150
-description: "Migration Assistant tool is a Windows based desktop application that will migrate your DLP policies from other DLP platforms to Microsoft DLP platform."
+description: "The migration assistant tool is a Windows based desktop application that will migrate your DLP policies from other DLP platforms to Microsoft DLP platform."
 ---
 
-# Learn about Migration Assistant for Microsoft Purview DLP
+# Learn about migration assistant for Microsoft Purview DLP
 
-This article will guide you to learn about the Migration Assistant for Microsoft Purview DLP.
+This article helps you learn about the migration assistant for Microsoft Purview DLP.
 
-The Migration Assistant tool is a Windows-based desktop application that will migrate your DLP policies from other DLP platforms to our DLP platform. This tool takes you through a simple five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can safely use the Migration Assistant tool to create DLP policies in test mode, which doesn't affect your live data or interact with current environment.
+The migration assistant tool is a Windows-based desktop application that will migrate your DLP policies from other DLP platforms to our DLP platform. This tool takes you through a simple five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can safely use the migration assistant tool to create DLP policies in test mode, which doesn't affect your live data or interact with current environment.
 
-## Tasks that Migration Assistant can perform
+## Tasks that migration assistant can perform
 
-Migration Assistant takes over many of the difficult or tedious tasks involved in a DLP migration project:
+The migration assistant helps with some of the tasks involved in a DLP migration project:
 
-- In traditional migration scenario, you need to perform feasibility analysis between source & target DLP platforms, map features, migrate policies manually, and test and tweak DLP policies. Your migrated DLP policies can be up and running within minutes of starting the Migration Assistant process.
-- With Migration Assistant, you can scale up your migration project quickly from moving a single policy manually to multiple policies at the same time.
-- Migration Assistant automatically identifies Sensitive InforMigration Types (SITs) or Data Identifiers in source policies and creates Custom SITs in your Microsoft tenant moving over all your custom regular expressions and keywords in a few clicks.
-- Migration Assistant detects which conditions, exclusions & actions are currently being used in source policies and automatically creates new rules with the same conditions, exclusions & actions.
-- Migration Assistant provides you with a detailed migration report with policy wise migration status and recommendations.
-- Migration Assistant ensures that your DLP policy migration project is private and takes place within the boundaries of your organization.
-- Migration Assistant supports policy migration from Symantec Data Loss Prevention 15.7 or earlier.
+- In traditional migration scenario, you need to perform a feasibility analysis between source and target DLP platforms, map features, migrate policies manually, and test and tweak DLP policies. With the migration assistant, your migrated DLP policies can be up and running within minutes of starting the migration assistant process.
+- With migration assistant, you can scale up your migration project quickly from moving a single policy manually to multiple policies at the same time.
+- The migration assistant automatically identifies sensitive information types (SITs) or Data Identifiers in source policies and creates custom SITs in your Microsoft tenant. It also moves all of your custom regular expressions and keywords in a few clicks.
+- The migration assistant detects which conditions, exclusions & actions are currently being used in source policies and automatically creates new rules with the same conditions, and actions.
+- The migration assistant provides you with a detailed migration report that includes the migration status and recommendations at the policy level.
+- The migration assistant ensures that your DLP policy migration project is private and takes place within the boundaries of your organization.
+- The migration assistant supports policy migration from Symantec Data Loss Prevention 15.7 or earlier.
 
-## How does the Migration Assistant for Microsoft Purview DLP work?
+## How does the migration assistant for Microsoft Purview DLP work?
 
-The following diagram illustrates the Migration Assistant migration process:
+The following diagram illustrates the migration process:
 
 :::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of Migration Assistant for DLP":::
 
-The Migration Assistant for Microsoft Purview DLP works in five phases during any instance of migration:
+Each time the migration assistant runs it follows these five phases:
 
-- **Input:** Migration Assistant ingests one or more Symantec DLP policy XML files.
-- **Analyze:** Migration Assistant interprets the files & identifies Symantec DLP policy constructs.
-- **Rationalize:** Migration Assistant maps the identified Symantec DLP policy constructs to Microsoft DLP capabilities. It performs validations for Microsoft DLP platform limitations.
-- **Migrate:** Migration Assistant executes PowerShell scripts for the DLP scenarios identified & supported by the UDLP platform.
-**Report:** Migration Assistant provides the user with a detailed migration report about which policies were migrated successfully, partially and/or not migrated. It also provides recommendations to improve migration fidelity further.
+- **Input:** The migration assistant ingests one or more Symantec DLP policy XML files.
+- **Analyze:** The migration assistant interprets the files and identifies Symantec DLP policy constructs.
+- **Rationalize:** The migration assistant maps the identified Symantec DLP policy constructs to Microsoft DLP capabilities. It performs validations for Microsoft DLP platform limitations.
+- **Migrate:** The migration assistant executes PowerShell scripts for the DLP scenarios identified and supported by the UDLP platform.
+**Report:** The migration assistant provides the user with a detailed migration report about which policies were migrated successfully, partially and/or not migrated. It also provides recommendations to imrove future migrations.
 
 ## Understanding mapping of Symantec DLP elements to Microsoft 365 DLP elements
 
-The following section describes how Migration Assistant translates different policy elements from Symantec DLP to Microsoft 365 DLP:
+The following section describes how the migration assistant translates different policy elements from Symantec DLP to Microsoft 365 DLP:
 
 ### Symantec DLP supported versions
 
-Migration Assistant supports migration of policies from Symantec DLP 15 and higher.
+The migration assistant supports migration of policies from Symantec DLP 15 and higher.
 
 > [!NOTE]
 > Some DLP policy exports from earlier versions of Symantec DLP may still work with the tool.
 
 ### Supported Workloads
 
-Migration Assistant migrates policies into Microsoft DLP only for the workloads listed in the following table:
+The migration assistant migrates policies into Microsoft DLP only for the workloads listed in the following table:
 
 | **Workload**  | **Migration Assistant Support** |
 | ------------------------------- | ------------------------------- |
@@ -76,11 +76,11 @@ Migration Assistant migrates policies into Microsoft DLP only for the workloads 
 | Devices       | Yes           |
 
 > [!TIP]
-> For workloads other than the workloads detected in input policy, Migration Assistant provides the ability to extend the policy to other workloads.
+> For workloads other than the workloads detected in input policy, the migration assistant provides the ability to extend the policy to other workloads.
 
 ### Classification Elements
 
-The following table details the mapping of classification elements that Migration Assistant uses while translating Symantec DLP policies:
+The following table details the mapping of classification elements that the migration assistant uses while translating Symantec DLP policies:
 
 | **Symantec Classification Element** | **M365 DLP Classification Element**           |
 | ---------------------- | ------------------------- |
@@ -89,7 +89,7 @@ The following table details the mapping of classification elements that Migratio
 | Keyword Pair      | Create new custom SIT with first keyword list as primary element & second keyword list as a supporting element with 300 char proximity. |
 | Data Identifier   | Map to OOB SIT if equivalent available else, create new custom SIT.   |
 
-The following table details the mapping of optional validators for Sensitive Information Types (also known as Data Identifiers in Symantec DLP) that Migration Assistant uses while translating Symantec DLP policies:
+The following table details the mapping of optional validators for Sensitive Information Types (also known as Data Identifiers in Symantec DLP) that the migration assistant uses while translating Symantec DLP policies:
 
 | **Symantec Optional Validators**  | **M365 DLP Optional Validators**|
 | -------------------- | ------------------ |
@@ -125,7 +125,7 @@ When you upload your rule package XML file, the system validates the XML and che
 
 ### Condition and Exception Mapping
 
-The following tables detail the mapping of condition and exception elements for Exchange (EXO) workload, Endpoint Devices, SharePoint Online, OneDrive & Other Workloads that Migration Assistant uses while translating Symantec DLP policies:
+The following tables detail the mapping of condition and exception elements for Exchange (EXO) workload, Endpoint Devices, SharePoint Online, OneDrive and Other Workloads that the migration assistant uses while translating Symantec DLP policies:
 
 #### Exchange Workload
 
@@ -162,7 +162,7 @@ The following tables detail the mapping of condition and exception elements for 
 
 ### Response Rules
 
-The following table details the mapping of Symantec response rules to Microsoft 365 DLP actions that Migration Assistant uses while translating Symantec DLP policies:
+The following table details the mapping of Symantec response rules to Microsoft 365 DLP actions that the migration assistant uses while translating Symantec DLP policies:
 
 | **Symantec Response Rule** | **M365 DLP Action**|
 | ----------------- | ----------------- |
@@ -176,7 +176,7 @@ The following table details the mapping of Symantec response rules to Microsoft 
 
 ## Next steps
 
-Now that you've learned about the Migration Assistant tool for Microsoft Purview DLP, your next steps are:
+Now that you've learned about the migration assistant tool for Microsoft Purview DLP, your next steps are:
 
-1. [Get started with the Migration Assistant for Microsoft Purview DLP](migration-assistant-for-dlp-get-started.md)
-2. [Use the Migration Assistant for Microsoft Purview DLP](migration-assistant-for-dlp-use.md)
+1. [Get started with the migration assistant for Microsoft Purview DLP](migration-assistant-for-dlp-get-started.md)
+2. [Use the migration assistant for Microsoft Purview DLP](migration-assistant-for-dlp-use.md)
