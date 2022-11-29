@@ -202,7 +202,7 @@ As with the desktop version of Outlook on the web, you can also apply retention 
 
 #### Applying retention labels in OneDrive and SharePoint
 
-Manually applying retention labels is supported in the new SharePoint experience only, and not the classic experience.
+Manually applying retention labels is supported in the new experience only, and not the classic experience.
 
 To label a document (including OneNote files) in OneDrive or SharePoint, select the item \> in the upper-right corner, choose **Open the details pane**![Information pane icon.](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Apply retention label** \> choose the retention label. 
 

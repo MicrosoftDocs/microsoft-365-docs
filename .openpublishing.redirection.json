@@ -9259,6 +9259,16 @@
       "source_path": "microsoft-365/security/office-365-security/trial-playbook-defender-for-office-365.md",
       "redirect_url": "/microsoft-365/security/office-365-security/trial-user-guide-defender-for-office-365",
       "redirect_document_id": true
-    }                      
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/automated-investigation-response-office.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/air-about-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/office-365-air.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/air-about",
+      "redirect_document_id": true
+    },                      
    ]
   }
