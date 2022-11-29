@@ -39,6 +39,7 @@ To move or copy a file from one document library to another, follow these steps.
 3. To complete the rule statement, under **When a new file is added**:
 
     1. Select **choose action**, and then:
+
         - To move a file, select **Move file to**.
         - To copy a file, select **Copy file to**.
 
@@ -48,7 +49,7 @@ To move or copy a file from one document library to another, follow these steps.
 
        ![Screenshot of the rule statement page showing the choose a site option highlighted.](../media/content-understanding/content-rule-choose-a-site.png)
 
-    3. Select **choose a library**, and the select the document library you want the file moved or copied to.
+    3. Select **choose a library**, and then select the document library you want the file moved or copied to.
 
        ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
 
