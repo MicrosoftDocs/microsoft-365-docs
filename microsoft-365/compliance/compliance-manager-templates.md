@@ -98,13 +98,13 @@ If you link any assessments to a purchased premium template, that template will 
 
 #### Activated templates counter
 
-Your assessment page and assessment templates page have an **activated templates** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement. Template use is counted at the certification level.
+Your assessment page and assessment templates page have an **activated templates** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement.
 
-For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use.
-
-If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
+For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use. If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
 
 Templates for a pre-defined product, such as Microsoft 365, have joint licensing with the universal versions of the same template. This enables you to use the same underlying certification across more than one product. Using either or both versions of the same template will only count as one activated template.
+
+Similarly, templates that belong to the same regulation family are also counted as one template. When you purchase a template license for a regulation, the license applies for all levels and versions of that regulation.
 
 For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 
