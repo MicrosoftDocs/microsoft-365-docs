@@ -36,13 +36,13 @@ It’s important to set a secure, compliant baseline to manage devices for your 
 
 ## Device types
 
-Shared, BYOD, and kiosk devices are the most common device types used by frontline workers.
+Shared, bring-your-own, and kiosk devices are the most common device types used by frontline workers.
 
 |Device type|Description|Why to use|Deployment considerations|
 |-----------|-----------|----------|--------------------------|
-|Shared devices |Devices are owned and managed by your organization. Employees access devices while at work. |Worker productivity and customer experience are a top priority. <br> Workers can't access organization resources while not at work. <br> Local laws may prevent personal devices from being used for business purposes. |Sign in/out can add friction to worker experience. <br> Potential for inadvertent sharing of sensitive data. <br> |
-|Bring-your-own devices (BYOD) |Personal devices are owned by the user and managed by your organization. |Your existing MDM solution prevents your organization from adopting a shared devices model. <br> Shared devices or dedicated devices may be impractical from a cost or business-readiness perspective. |Support complexity may not be feasible in field locations. <br> Personal devices vary in OS, storage, and connectivity. <br> Some workers may not have reliable access to a personal mobile device. <br> You could incur potential liability for wages if workers access resources while not clocked in. <br> Personal device use may be against union rules or government regulations. |
-|Kiosk devices |Devices are owned and managed by your organization. Users don't need to sign in or out. |Device has a dedicated purpose. <br> Use case doesn't require user authentication. <br> |Collaboration, communication, task, and workflow applications need a user identity to function. <br> Not possible to audit user activity. <br> Unable to use some security capabilities including multifactor authentication. |
+|Shared devices |Devices are owned and managed by your organization. Employees access devices while at work. |Worker productivity and customer experience are a top priority. <br><br> Workers can't access organization resources while not at work. <br><br> Local laws may prevent personal devices from being used for business purposes. |Sign in/out can add friction to worker experience. <br><br> Potential for inadvertent sharing of sensitive data. |
+|Bring-your-own devices (BYOD) |Personal devices are owned by the user and managed by your organization. |Your existing mobile device management (MDM) solution prevents your organization from adopting a shared devices model. <br><br>Shared devices or dedicated devices may be impractical from a cost or business-readiness perspective. |Support complexity may not be feasible in field locations. <br><br> Personal devices vary in OS, storage, and connectivity. <br><br> Some workers may not have reliable access to a personal mobile device. <br><br> You could incur potential liability for wages if workers access resources while not clocked in. <br><br> Personal device use may be against union rules or government regulations. |
+|Kiosk devices |Devices are owned and managed by your organization. Users don't need to sign in or out. |Device has a dedicated purpose. <br><br> Use case doesn't require user authentication.|Collaboration, communication, task, and workflow applications need a user identity to function. <br><br> Not possible to audit user activity. <br><br> Unable to use some security capabilities including multifactor authentication. |
 
 Shared devices and BYOD are commonly adopted in frontline deployments. You can use capabilities discussed in subsequent sections of this article may resolve or mitigate your organization’s concerns over user experience, unauthorized worker access to data, and resources and ability to deploy and manage devices at scale.
 
@@ -67,25 +67,17 @@ The deployment model you select will partly determine the device operating syste
 
 |Device OS|Considerations|
 |---------|--------------|
-|Windows |Native support for storing multiple user profiles on the device <br> Supports Windows Hello for passwordless authentication <br> Simplified deployment and management capabilities when used with Microsoft Intune |
-|Android |[Limited native capabilities](https://source.android.com/docs/devices/admin/multi-user) for storing multiple user profiles on devices <br> Android devices can be enrolled in shared device mode to automate single sign-on and sign out. <br> Robust management of controls and APIs <br> Existing ecosystem of devices built for frontline use |
+|Windows |Native support for storing multiple user profiles on the device. <br> Supports Windows Hello for passwordless authentication. <br> Simplified deployment and management capabilities when used with Microsoft Intune. |
+|Android |[Limited native capabilities](https://source.android.com/docs/devices/admin/multi-user) for storing multiple user profiles on devices. <br> Android devices can be enrolled in shared device mode to automate single sign-on and sign out. <br> Robust management of controls and APIs. <br> Existing ecosystem of devices built for frontline use. |
 |iOS and iPadOS |iOS devices can be enrolled in shared device mode to automate single sign-on and sign out. <br> Storing multiple user profiles on iPadOS devices is possible with Shared iPad for Business. Conditional access isn't available with Shared iPad for Business because of the way Apple partitions user profiles. |
 
 In a shared devices deployment, the ability to store multiple user profiles on a device to simplify user sign on and the ability to clear app data from the previous user (single sign out) are practical requirements for frontline deployments. These capabilities are native on Windows devices and iPads using Shared iPad for Business.
-
-### Enroll Android and iOS personal devices
-
-In addition to your company-owned devices, you can [enroll](/mem/intune/enrollment/device-enrollment) users' personally owned devices into management in Intune. For BYOD enrollment, you add device users in the Microsoft Endpoint Manager admin center, configure their enrollment experience, and set up Intune policies. Users complete enrollment themselves in the Intune Company Portal app that's installed on their device.
-
-In some cases, users may be reluctant to enroll their personal devices into management. If device enrollment isn't an option, you can choose a mobile application management (MAM) approach and use [app protection policies](/mem/intune/apps/app-protection-policies) to manage apps that contain corporate data. For example, you can apply app protection policies to Teams and Office mobile apps to prevent company data from being copied to personal apps on the device.
-
-To learn more, see ["Personal devices vs Organization-owned devices" in the Intune planning guide](/mem/intune/fundamentals/intune-planning-guide#personal-devices-vs-organization-owned-devices) and [Deployment guidance: Enroll devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ## User identity
 
 Microsoft 365 for frontline workers uses Azure AD as the underlying identity service for delivering and securing all applications and resources. Users must have an identity that exists in Azure AD to access Microsoft 365 cloud applications.
 
-If you choose to manage frontline user identities with Active Directory Domain Services (AD DS) or a third-party identity provider, you’ll need to federate these identities to Azure AD. [Learn how to integrate your third-party service with Azure AD](flw setup doc).
+If you choose to manage frontline user identities with Active Directory Domain Services (AD DS) or a third-party identity provider, you’ll need to federate these identities to Azure AD. [Learn how to integrate your third-party service with Azure AD](flw-setup-microsoft-365.md#provision-users).
 
 The possible implementation patterns for managing frontline identities include:
 
@@ -115,7 +107,7 @@ Mobile device management (MDM) solutions can simplify deployment, management and
 
 If you’re using a third-party MDM solution for your shared devices deployment, such as VMware’s Workspace ONE or SOTI MobiControl, it’s important to understand the associated capabilities, limitations and available workarounds.
 
-Some third-party MDMs can clear app data when a global sign out occurs on an Android device. However, app data clearing can miss data that is stored in a shared location, delete app settings, or cause first-run experiences to reappear. Android devices enrolled in shared device mode can selectively clear the necessary application data during device check-in or when the new user logs in to the device. [Learn more about authentication in shared device mode](bookmark authentication).
+Some third-party MDMs can clear app data when a global sign out occurs on an Android device. However, app data clearing can miss data that is stored in a shared location, delete app settings, or cause first-run experiences to reappear. Android devices enrolled in shared device mode can selectively clear the necessary application data during device check-in or when the new user logs in to the device. [Learn more about authentication in shared device mode](#authentication).
 
 You can manually configure shared device mode in third-party MDM solutions for iOS and Android devices, however, manual configuration steps don’t mark the device compliant in Azure AD, which means conditional access isn’t supported in this scenario. If you choose to manually configure devices in shared device mode, you’ll need to take additional steps to re-enroll Android devices in shared device mode with zero-touch provisioning to get conditional access support when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
 
@@ -130,6 +122,14 @@ A device can only be enrolled in one MDM solution, but you can use multiple MDM 
 Windows devices enrolled in Intune support single sign out, zero touch provisioning, and Azure AD conditional access. You don’t need to configure shared device mode on Windows devices.
 
 Intune is recommended for BYOD scenarios because it provides the best support and functionality out-of-the-box across device types.
+
+### Enroll Android and iOS personal devices
+
+In addition to your company-owned devices, you can [enroll](/mem/intune/enrollment/device-enrollment) users' personally owned devices into management in Intune. For BYOD enrollment, you add device users in the Microsoft Endpoint Manager admin center, configure their enrollment experience, and set up Intune policies. Users complete enrollment themselves in the Intune Company Portal app that's installed on their device.
+
+In some cases, users may be reluctant to enroll their personal devices into management. If device enrollment isn't an option, you can choose a mobile application management (MAM) approach and use [app protection policies](/mem/intune/apps/app-protection-policies) to manage apps that contain corporate data. For example, you can apply app protection policies to Teams and Office mobile apps to prevent company data from being copied to personal apps on the device.
+
+To learn more, see ["Personal devices vs Organization-owned devices" in the Intune planning guide](/mem/intune/fundamentals/intune-planning-guide#personal-devices-vs-organization-owned-devices) and [Deployment guidance: Enroll devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ## Authentication
 
@@ -165,7 +165,7 @@ You’ll need to meet the following prerequisites to use shared device mode.
 
 MAM policies are required to prevent data from moving from shared device mode enabled applications to non-shared device mode enabled applications.
 
-Currently, zero-touch provisioning of shared device mode is only available with Intune. If you’re using a third-party MDM solution, devices must be enrolled in shared device mode using the manual configuration steps(/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
+Currently, zero-touch provisioning of shared device mode is only available with Intune. If you’re using a third-party MDM solution, devices must be enrolled in shared device mode using the [manual configuration steps](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
 
 > [!NOTE]
 > Conditional access isn’t fully supported for devices that are configured manually. Support for zero touch provisioning of shared device mode with VMware and SOTI MDMs is coming soon. When this capability is available, you’ll need to re-enroll your existing manually configured devices by uninstalling and reinstall authenticator so that you can get the benefit of conditional access.
@@ -193,7 +193,7 @@ If you're a developer, see the following resources for more information about ho
 - [Shared device mode for Android devices](/azure/active-directory/develop/msal-android-shared-devices)
 - [Shared device mode for iOS devices](/azure/active-directory/develop/msal-ios-shared-devices)
 
-### multifactor authentication
+### Multifactor authentication
 
 Azure AD supports several forms of multifactor authentication with the Authenticator app, FIDO2 keys, SMS, voice calls, and more.
 
@@ -243,9 +243,16 @@ Conditional access policies can be used to block access when a user is on a non-
 
 For BYOD scenarios where it makes sense to access data outside of work, such as HR-related information or non-business-related applications, you may choose to implement more permissive conditional access policies alongside strong authentication methods like multifactor authentication.
 
-|Conditional access supported |Conditional access not supported |
-|-----------------------------|---------------------------------|
-|Shared Windows devices managed in Intune <br> Shared Android and iOS devices enrolled in shared device mode with zero-touch provisioning <br> BYOD for Windows, Android, and iOS managed with Intune or third-party MDM solutions |Devices manually configured with shared device mode, including Android and iOS devices managed with third-party MDM solutions <br> iPad devices that use Shared iPad for Business |
+Conditional access is supported for:
+
+- Shared Windows devices managed in Intune.
+- Shared Android and iOS devices enrolled in shared device mode with zero-touch provisioning.
+- BYOD for Windows, Android, and iOS managed with Intune or third-party MDM solutions.
+
+Conditional access **not** supported for:
+
+- Devices manually configured with shared device mode, including Android and iOS devices managed with third-party MDM solutions.
+- iPad devices that use Shared iPad for Business.
 
 > [!NOTE]
 > Conditional access for Android devices managed with select third-party MDM solutions is coming soon.
