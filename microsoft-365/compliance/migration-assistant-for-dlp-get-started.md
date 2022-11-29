@@ -2,9 +2,9 @@
 title: "Get started with Migration Assistant for Microsoft Purview DLP"
 f1.keywords:
 - CSH
-ms.author: v-aljupudi
-author: alekyaj
-manager: chrfox
+ms.author: chrfox
+author: chrfox
+manager: laurawi
 ms.date:
 audience: ITPro
 ms.topic: how-to
@@ -29,11 +29,11 @@ This article walks you through the prerequisites and installation of [Migration 
 If you're using Migration Assistant for Microsoft Purview DLP for the first time, ensure the following prerequisites are met:
 
 > [!TIP]
-> In case you are facing issues with launching the application after completing all the steps in this article, refer to the [Troubleshooting](migration-assistant-for-dlp-use.md#troubleshooting).
+> In case you are facing issues with launching the application after completing all the steps in this article, refer to [Troubleshooting](migration-assistant-for-dlp-use.md#troubleshooting).
 
 ### 1. Have Appropriate Microsoft 365 Subscription
 
-To migrate your DLP policies with highest fidelity across all Microsoft workloads (Exchange, SharePoint Online, OneDrive for Business, Teams, Endpoint Devices) and third party cloud apps (like Box, Google Drive, etc.), your organization should have one of the following subscriptions:
+To migrate your DLP policies and apply them to Exchange, SharePoint Online, OneDrive for Business, Teams and, Endpoint Devices as well as third party cloud apps, like Box, and Google Drive, your organization must have one of these subscriptions:
 
 - Microsoft 365 E5 or Office 365 E5 subscription
 - Microsoft 365 E3 subscription with E5 Compliance add-on
@@ -53,11 +53,11 @@ You'll need to download, install, and run the Migration Assistant on one of the 
 
 ### 4. Install PowerShell 7
 
-You need to have the PowerShell 7 (v7.2.6) installed on the same machine where Migration Assistant will be installed to be able to successfully run Migration Assistant. [Click here to download Powershell-7.2.6-win-x64.msi core on your machine](https://github.com/PowerShell/PowerShell/releases/download/v7.2.6/PowerShell-7.2.6-win-x64.msi).
+You need to have PowerShell 7 (v7.2.6) installed on the same machine where Migration Assistant will be installed to be able to run the Migration Assistant. [Click here to download Powershell-7.2.6-win-x64.msi core on your machine](https://github.com/PowerShell/PowerShell/releases/download/v7.2.6/PowerShell-7.2.6-win-x64.msi).
 
 ### 5. Install .NET 6
 
-You must have .NET 6 core SDK (v6.0.41) installed on the same machine where Migration Assistant will be installed to be able to successfully run Migration Assistant. [Click here to download .NET 6 core SDK on your machine](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-6.0.401-windows-x64-installer).
+You must have .NET 6 core SDK (v6.0.41) installed on the same machine where Migration Assistant will be installed to be able to run the Migration Assistant. [Click here to download .NET 6 core SDK on your machine](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-6.0.401-windows-x64-installer).
 
 ### Export Symantec DLP Policies
 
@@ -67,27 +67,27 @@ You'll need to export these policies as XMLs from Symantec DLP. You can export t
 
 ## Installation steps
 
-Follow the steps given below to install Migration Assistant for Microsoft Purview DLP (Migration Assistant):
+Follow these steps to install the Migration Assistant for Microsoft Purview DLP:
 
-1. Download and launch **MigrationAssistantforMicrosoftPurviewDLP.msi** file.
-2. The following dialog box will open. Click ‘Next’.
+1. Download and launch **MigrationAssistantforMicrosoftPurviewDLP.msi** file. <!--FROM WHERE?-->
+2. The following dialog box will open. Click **Next**.
      :::image type="content" source="../media/migration-assistant-for-dlp-dialog-box.png" alt-text="Screenshot of the dialog box for Migration Assistant tool":::
 3. Review the End-User License Agreement.
      :::image type="content" source="../media/migration-assistant-for-dlp-license-agreement.png" alt-text="Screenshot of End user license agreement of Migration Assistant tool":::
 4. After reviewing, accept the License Agreement.
      :::image type="content" source="../media/migration-assistant-for-dlp-license-agreement-accept.png" alt-text="Screenshot of ticking the acceptance box of Migration tool agreement":::
-5. Select the location where you want to install Migration Assistant and click ‘Next’.
+5. Select the location where you want to install Migration Assistant and click **Next**.
      :::image type="content" source="../media/migration-assistant-for-dlp-installation-path.png" alt-text="Screenshot of folder path for Migration Assistant installation":::
-6. Once installer is ready, click ‘Install’ to begin installation.
+6. Once installer is ready, click **Install** to begin installation.
      :::image type="content" source="../media/migration-assistant-for-dlp-install-dialog-box.png" alt-text="Screenshot of Migration Assistant installation dialog box ":::
 7. Wait while Migration Assistant is being installed.
      :::image type="content" source="../media/migration-assistant-for-dlp-installation-status.png" alt-text="Screenshot of Migration Assistant installation status":::
-8. Once Migration Assistant is installed, you click on ‘Finish’ and close the dialog box.
+8. Once Migration Assistant is installed, you click on **Finish** and close the dialog box.
     :::image type="content" source="../media/migration-assistant-for-dlp-finish-installation.png" alt-text="Screenshot of Migration Assistant installation completion":::
 
 ## Next steps
 
-Now that you have installed Migration Assistant for Microsoft Purview DLP (Preview), you're ready to move on to your next step where you use the migration tool.
+Now that you have installed Migration Assistant for Microsoft Purview DLP (preview), you're ready to move on to your next step where you use the migration tool.
 
 - [Using Migration Assistant for Microsoft Purview DLP](migration-assistant-for-dlp-use.md)
 
