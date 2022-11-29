@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.localizationpriority: medium
-ms.date: 11/03/2022
+ms.date: 11/29/2022
 ms.collection:
 - m365-security
 - tier2
@@ -32,7 +32,6 @@ This article describes how to configure automated investigation and response in 
 1. [Review the prerequisites](#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 2. [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
 3. [Review your security and alert policies in Office 365](#review-your-security-and-alert-policies-in-office-365).
-4. [Make sure Microsoft 365 Defender is turned on](#make-sure-microsoft-365-defender-is-turned-on).
 
 Then, after you're all set up, you can [view and manage remediation actions in the Action center](m365d-autoir-actions.md). And, if necessary, you can [make changes to your automated investigation settings](#need-to-make-changes).
 
@@ -43,7 +42,7 @@ Then, after you're all set up, you can [view and manage remediation actions in t
 |Subscription requirements|One of these subscriptions: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 with the Microsoft 365 E5 Security add-on</li><li>Microsoft 365 A3 with the Microsoft 365 A5 Security add-on</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> See [Microsoft 365 Defender licensing requirements](./prerequisites.md#licensing-requirements).|
 |Network requirements|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) enabled</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) configured</li><li>[Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration)</li></ul>|
 |Windows device requirements|<ul><li>Windows 11</li><li>Windows 10, version 1709 or later installed (See [Windows release information](/windows/release-information/))</li><li>The following threat protection services are configured:<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
-|Protection for email content and Office files|<ul><li>[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configured</li><li>[Automated investigation and remediation capabilities in Microsoft Defender for Endpoint are configured](../defender-endpoint/configure-automated-investigations-remediation.md) (required for manual response actions, such as deleting email messages to work)</li></ul>|
+|Protection for email content and Office files|<ul><li>[Microsoft Defender for Office 365 is configured](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies)</li><li>[Automated investigation and remediation capabilities in Defender for Endpoint are configured](../defender-endpoint/configure-automated-investigations-remediation.md) (required for manual response actions, such as deleting email messages to work)</li></ul>|
 |Permissions|To configure automated investigation and response capabilities, you must have the Global Administrator or Security Administrator role assigned in either Azure Active Directory (<https://portal.azure.com>) or in the Microsoft 365 admin center (<https://admin.microsoft.com>). <p> To get the permissions needed to work with automated investigation and response capabilities, such as reviewing, approving, or rejecting pending actions, see [Required permissions for Action center tasks](m365d-action-center.md#required-permissions-for-action-center-tasks).|
 
 ## Review or change the automation level for device groups
