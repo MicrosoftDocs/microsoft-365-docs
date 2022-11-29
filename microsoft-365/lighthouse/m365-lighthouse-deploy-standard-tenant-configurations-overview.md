@@ -24,10 +24,11 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse baselines provide a repeatable and scalable way for you to manage Microsoft 365 security settings across multiple customer tenants. Baselines provide standard tenant configurations that deploy core security policies and compliance standards that keep your tenants' users, devices, and data secure. To view the Microsoft 365 Lighthouse default baseline that applies to all tenants, select **Baselines** from the left navigation pane.
 
-
 ## Microsoft 365 Lighthouse default baseline
 
 The Microsoft 365 Lighthouse default baseline is designed to ensure all managed tenants are healthy and secure. To view the tasks included in the default baseline, select **View baseline** to open the **Default baseline** page. Select any of the tasks to view additional details about the task and the associated user impact.
+
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Lighthouse default baseline":::
 
 ### Default Lighthouse configurations
 
@@ -47,7 +48,6 @@ The Microsoft 365 Lighthouse default baseline is designed to ensure all managed 
 
 ## Related content
 
-[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
