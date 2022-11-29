@@ -44,7 +44,7 @@ This video shows the configuration steps described in this document.</br>
 
 Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
-Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
+Check the B2B external collaboration settings to ensure that sharing with guests isn't blocked.
 
 ![Screenshot of Azure Active Directory Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
