@@ -168,7 +168,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
      > [!NOTE]
      > Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
 
-   - **Actions for potentially malicious URLs in Microsoft Office apps(Time of Click)** section:
+   - **Actions for potentially malicious URLs in Microsoft Office apps (Time of Click)** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps**: Select this option to enable Safe Links protection for links in files in supported Office desktop, mobile, and web apps.
 
    - **Click protection settings** section:
