@@ -107,7 +107,9 @@ To copy a file from one document libary to another, follow these steps.
 
 ## View the activity feed of a document library
 
-1. In a document library, in the upper-right corner of the page, select the Details pane ().
+1. In a document library, in the upper-right corner of the page, select the **Details** pane to view the history and activity of the library.
+
+   ![Screenshot of a document library showing the details pane highlighted.](../media/content-understanding/content-processing-details-pane.png)
 
 
 <!---
