@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: sgautam, jmueller
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
