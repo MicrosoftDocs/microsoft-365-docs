@@ -124,8 +124,8 @@
      
     - name: Content processing
       items: 
-        - name: Create a rule to automate content processing 
-          href: content-processing-create-rule.md
+        - name: Create and manage rules 
+          href: content-processing-create-rules.md
      
     - name: Metadata search
       items: 
