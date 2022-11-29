@@ -52,7 +52,7 @@ Users creating models in a [content center site](/microsoft-365/contentunderstan
 
 ### Licensing
 
-To use Syntex, your organization must have a subscription to Syntex, and each user must have a licenses assigned. Syntex licenses include the following apps, which must all be assigned:
+To use Syntex, your organization must have a subscription to Syntex, and each user must have a license assigned. Syntex licenses include the following apps, which must all be assigned:
 
 - Syntex
 - Syntex - SPO type
