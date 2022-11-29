@@ -101,7 +101,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 4. On the **Users and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups (will support non-mail-enabled security groups within distribution groups) or mail-enabled security groups.
+     - Members of the specified distribution groups (including non-mail-enabled security groups within distribution groups) or mail-enabled security groups.
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
