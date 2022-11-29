@@ -33,7 +33,7 @@ This article describes how to configure automated investigation and response in 
 2. [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
 3. [Review your security and alert policies in Office 365](#review-your-security-and-alert-policies-in-office-365).
 
-Then, after you're all set up, you can [view and manage remediation actions in the Action center](m365d-autoir-actions.md). And, if necessary, you can [make changes to your automated investigation settings](#need-to-make-changes).
+Then, after you're all set up, you can [view and manage remediation actions in the Action center](m365d-autoir-actions.md). And, if necessary, you can [make changes to automated investigation settings](#need-to-make-changes-to-automated-investigation-settings).
 
 ## Prerequisites for automated investigation and response in Microsoft 365 Defender
 
