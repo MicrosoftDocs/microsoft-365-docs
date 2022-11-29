@@ -47,44 +47,44 @@ The following table lists the permissions available to configure for your users 
 
 Permissions for managing day-to-day operations and responding to incidents and advisories.
 
-| **Permission name**    | **Description**                                                                                                                         | **Level** |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Security data basic    | View info about incidents, alerts, investigations, advanced hunting (MDE), devices, submissions, evaluation lab, and reports.           | Read      |
-| Alerts                 | Manage alerts, start automated investigations, run scans, collect investigation packages, and manage device tags.                       | Manage    |
-| Response               | Take response actions on a device, approve or dismiss pending remediation actions, and manage blocked and allowed lists for automation. | Manage    |
-| Basic live response    | Initiate a live response session, download files, and perform read-only actions on devices remotely.                                    | Manage    |
-| Advanced live response | Create live response sessions and perform advanced actions, including uploading files and running scripts on devices remotely.          | Manage    |
-| Email quarantine       | View and release email from quarantine.                                                                                                 | Manage    |
-| Email advanced actions | Move or Delete email to the junk email folder, deleted items or inbox, including soft and hard delete of email.                         | Manage    |
+| **Permission name**    | **Level** | **Description**                                                                                                                         |
+|------------------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------
+| Security data basic    | Read      | View info about incidents, alerts, investigations, advanced hunting (MDE), devices, submissions, evaluation lab, and reports.           |
+| Alerts                 | Manage    | Manage alerts, start automated investigations, run scans, collect investigation packages, and manage device tags.                       |
+| Response               | Manage    | Take response actions on a device, approve or dismiss pending remediation actions, and manage blocked and allowed lists for automation. |
+| Basic live response    | Manage    | Initiate a live response session, download files, and perform read-only actions on devices remotely.                                    |
+| Advanced live response | Manage    | Create live response sessions and perform advanced actions, including uploading files and running scripts on devices remotely.          |
+| Email quarantine       | Manage    | View and release email from quarantine.                                                                                                 |
+| Email advanced actions | Manage    | Move or Delete email to the junk email folder, deleted items or inbox, including soft and hard delete of email.                         |
 
 ### Security operations – Raw data (Email & collaboration)
 
-| **Permission name**   | **Description**                                                                                                                     | **Level** |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Email message headers | View email and collaboration data in a hunting scenarios, including advanced hunting, threat explorer, campaigns, and email entity. | Read      |
-| Email content         | View and download email content and attachments.                                                                                    | Read      |
+| **Permission name**   | **Level** | **Description**                                                                                                                    |
+|-----------------------|-----------|------------------------------------------------------------------------------------------------------------------------------------|
+| Email message headers | Read      |View email and collaboration data in a hunting scenarios, including advanced hunting, threat explorer, campaigns, and email entity. |
+| Email content         | Read      |View and download email content and attachments.                                                                                    |
 
 ### Security posture – Posture management
 
 Permissions for managing the organization's security posture and performing threat and vulnerability management.
 
-| **Permission name**   | **Description**                                                                                                                     | **Level** |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Vulnerability management     | View threat and vulnerability management data for the following: software and software inventory, weaknesses, missing KBs, advanced hunting, security baselines assessment, and devices. | Read      |
-| Exception handling           | Create security recommendation exceptions and manage active exceptions in threat and vulnerability management.                                                                           | Manage    |
-| Remediation handling         | Create remediation tickets, submit new requests, and manage remediation activities in threat and vulnerability management.                                                               | Manage    |
-| Application handling         | Manage vulnerable applications and software, including blocking and unblocking them in threat and vulnerability management.                                                              | Manage    |
-| Security baseline assessment | Create and manage profiles so you can assess if your devices comply to security industry baselines.                                                                                      | Manage    |
+| **Permission name**          | **Level** | **Description**                                                                                                                                                                         |
+|------------------------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Vulnerability management     | Read      | View threat and vulnerability management data for the following: software and software inventory, weaknesses, missing KBs, advanced hunting, security baselines assessment, and devices.|
+| Exception handling           | Manage    | Create security recommendation exceptions and manage active exceptions in threat and vulnerability management.                                                                          |
+| Remediation handling         | Manage    | Create remediation tickets, submit new requests, and manage remediation activities in threat and vulnerability management.                                                              |
+| Application handling         | Manage    | Manage vulnerable applications and software, including blocking and unblocking them in threat and vulnerability management.                                                             |
+| Security baseline assessment | Manage    | Create and manage profiles so you can assess if your devices comply to security industry baselines.                                                                                     |
 
 ### Configuration
 
 Permissions to manages the security and system settings and to create and assign roles.
 
-| **Permission name** | **Description**                                                                 | **Level**     |
-|---------------------|---------------------------------------------------------------------------------|---------------|
-| Authorization       | View or manage device groups, and custom and built-in roles.                    | Read / Manage |
-| Security settings   | View or manage general security settings for the Microsoft 365 Defender portal. | Read / Manage |
-| System settings     | View or manage general systems settings for the Microsoft 365 Defender portal.  | Read / Manage |
+| **Permission name** | **Level**     |**Description**                                                                 |
+|---------------------|---------------|--------------------------------------------------------------------------------|
+| Authorization       | Read / Manage | View or manage device groups, and custom and built-in roles.                   |
+| Security settings   | Read / Manage | View or manage general security settings for the Microsoft 365 Defender portal.|
+| System settings     | Read / Manage | View or manage general systems settings for the Microsoft 365 Defender portal. |
 
 
 >[!Note]
