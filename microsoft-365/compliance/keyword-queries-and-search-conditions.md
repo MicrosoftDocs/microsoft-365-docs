@@ -39,7 +39,7 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 
 - [Content search](content-search.md)
 - [Search for content in eDiscovery (Standard)](search-for-content-in-core-ediscovery.md)
-- [Create a draft collection in eDiscovery (Premium)](create-draft-collection.md)
+- [Create a collection estimate in eDiscovery (Premium)](create-draft-collection.md)
 
 > [!NOTE]
 > eDiscovery searches in the compliance portal and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
