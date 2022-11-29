@@ -104,7 +104,7 @@ For example, if your counter shows 2/5, this means your organization has activat
 
 Templates for a pre-defined product, such as Microsoft 365, have joint licensing with the universal versions of the same template. This enables you to use the same underlying certification across more than one product. Using either or both versions of the same template will only count as one activated template.
 
-Similarly, templates that belong to the same regulation family are also counted as one template. When you purchase a template license for a regulation and activate the template, it counts as one activated template even if you create assessments for different levels or versions of that regulation. For example, if you use a template for the CMMC Level 1 and a template for CMMC Level 2, your activated templates counter increases by only one.
+Similarly, templates that belong to the same regulation family are also counted as one template. When you purchase a template license for a regulation and activate the template, it counts as one activated template even if you create assessments for different levels or versions of that regulation. For example, if you use a template for CMMC Level 1 and a template for CMMC Level 2, your activated templates counter increases by only one.
 
 For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 
