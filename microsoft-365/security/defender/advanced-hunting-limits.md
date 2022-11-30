@@ -59,10 +59,10 @@ This report is useful in identifying the most resource-intensive queries and und
 The report can be accessed in two ways:
 - In the advanced hunting page, select **Query resources report**:
 
-:::image type="content" source="../../media/ah-query-resources/View-query-resources report.png" alt-text="view the query resources report button in the AH portal" lightbox="../../media/ah-query-resources/View-query-resources report.png":::
+:::image type="content" source="../../media/ah-query-resources/view-query-resources report.png" alt-text="view the query resources report button in the AH portal" lightbox="../../media/ah-query-resources/view-query-resources report.png":::
 - Within the **Reports** page, find the new report entry in the **General** section
 
-:::image type="content" source="../../media/ah-query-resources/Reports-general-query-resources.png" alt-text="view the query resources report in the Reports section" lightbox="../../media/ah-query-resources/Reports-general-query-resources.png":::
+:::image type="content" source="../../media/ah-query-resources/reports-general-query-resources.png" alt-text="view the query resources report in the Reports section" lightbox="../../media/ah-query-resources/reports-general-query-resources.png":::
 
 All users can access the reports, however, only the AAD global admin, AAD security admin, and AAD security reader roles can see queries done by all users in all interfaces. Any other user can only see:
 - Queries they ran via the portal
@@ -84,7 +84,7 @@ The query resources report contains all queries that ran, including detailed res
 > [!TIP]
 > If the query state is **Failed**, you can hover the field to view the reason for the query failure.
 
-:::image type="content" source="../../media/ah-query-resources/Excessive-usage-sample.png" alt-text="view inefficient queries" lightbox="../../media/ah-query-resources/Excessive-usage-sample.png":::
+:::image type="content" source="../../media/ah-query-resources/excessive-usage-sample.png" alt-text="view inefficient queries" lightbox="../../media/ah-query-resources/excessive-usage-sample.png":::
 
 ### Find resource-heavy queries
 Queries with high resource usage or a long query time can probably be optimized to prevent throttling via this interface. 
