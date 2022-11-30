@@ -42,17 +42,17 @@ This topic describes deploying Defender for Endpoint on iOS on Intune Company Po
 > [!NOTE]
 > Microsoft Defender for Endpoint on iOS is available in the [Apple App Store](https://aka.ms/mdatpiosappstore).
 
-This  section will cover:
+This section covers:
 
-1. Deployment Steps (applicable for both Supervised and Unsupervised devices)- Admins can deploy Defender on iOS via Intune Company Portal. This step is not needed for VPP apps.
+1. **Deployment steps** (applicable for both **Supervised** and **Unsupervised** devices)- Admins can deploy Defender for Endpoint on iOS via Intune Company Portal. This step is not needed for VPP (volume purchase) apps.
 
-1. Complete Deployment (only for Supervised devices)- Admins can select to deploy any one of the given profile.
-    1. Zero touch(Silent) Control Filter - It provides Web Protection without the local loopback VPN and also enables silent onboarding for users. App is automatically installed  and activated without the need for user to open the app.
-    1. Control Filter - It provides Web Protection without the local loopback VPN.
+1. **Complete deployment** (only for Supervised devices)- Admins can select to deploy any one of the given profiles.
+    1. **Zero touch (Silent) Control Filter** - Provides Web Protection without the local loopback VPN and also enables silent onboarding for users. App is automatically installed  and activated without the need for user to open the app.
+    1. **Control Filter** - Provides Web Protection without the local loopback VPN.
   
-1. Automated Onboarding setup (only for Unsupervised devices) - Admins can configure to automate the Defender onboarding for users in two different ways:
-    1. Zero touch(Silent) Onboarding - App is automatically installed  and activated without the need for user to open the app.
-    1. Auto Onboarding of VPN - Defender VPN Profile is automatically setup without having the user to do so during onboarding. This step is not recommended if Zero touch is setup.
+1. **Automated Onboarding setup** (only for **Unsupervised** devices) - Admins can automate the Defender for Endpoint onboarding for users in two different ways:
+    1. **Zero touch (Silent) Onboarding** - App is automatically installed and activated without the need for users to open the app.
+    1. **Auto Onboarding of VPN** - Defender for Endpoint VPN profile is automatically setup without having the user to do so during onboarding. This step is not recommended in Zero touch configurations.
 
 ## Deployment steps (applicable for both Supervised and Unsupervised devices)
 
@@ -129,9 +129,9 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 > [!NOTE]
 > For devices that run iOS/iPadOS (in Supervised Mode), there is  custom **.mobileconfig** profile, called the **ControlFilter** profile available. This profile enables Web Protection **without setting up the local loopback VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks.
 
-Admins can select to deploy any one of the given profile.
+Admins deploy any one of the given profiles.
 
-1. **Zero touch(Silent) Control Filter** - This profile enables silent onboarding for users. Download the config profile from [ControlFilterZeroTouch](https://aka.ms/mdeiosprofilesupervisedzerotouch)
+1. **Zero touch (Silent) Control Filter** - This profile enables silent onboarding for users. Download the config profile from [ControlFilterZeroTouch](https://aka.ms/mdeiosprofilesupervisedzerotouch)
 
 2. **Control Filter** - Download the config profile from [ControlFilter](https://aka.ms/mdeiosprofilesupervised).
 
@@ -190,14 +190,14 @@ Once the above configuration is done and synced with the device, the following a
 
 > [!NOTE]
 > For supervised devices, admins can setup Zero touch onboarding with the new [ZeroTouch Control Filter Profile](#device-configuration-profile-control-filter).
-Defender VPN Profile will not be installed on the device and Web protection will be provided by the Control Filter Profile.
+Defender for Endpoint VPN Profile will not be installed on the device and Web protection will be provided by the Control Filter Profile.
 
 ### Auto-Onboarding of VPN profile (Simplified Onboarding)
 
 > [!NOTE]
-> This step simplifies the onboarding process by setting up the VPN profile. Its not recommended if Zero touch is setup previously.
+> This step simplifies the onboarding process by setting up the VPN profile. If you are using Zero touch, you do not need to perform this step. 
 
-For unsupervised devices, a VPN is used in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
+For unsupervised devices, a VPN is used to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 
 Admins can configure auto-setup of VPN profile. This will automatically set up the Defender for Endpoint VPN profile without having the user to do so while onboarding.
 
@@ -216,7 +216,7 @@ Admins can configure auto-setup of VPN profile. This will automatically set up t
 
       :::image type="content" source="images/ios-deploy-8.png" alt-text="The VPN profile Configuration settings tab." lightbox="images/ios-deploy-8.png":::
 
-   - To mandate that VPN cannot be disabled in users device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, it's not configured and users can disable VPN only in the Settings.
+   - To require that VPN cannot be disabled on a users' device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, this setting not configured and users can disable VPN only in the Settings.
    - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users cannot change the toggle from within the app.
 
 1. Click **Next** and assign the profile to targeted users.
