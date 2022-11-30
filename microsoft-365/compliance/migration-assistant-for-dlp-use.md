@@ -327,7 +327,7 @@ You should go to the Compliance Center and validate that the policies were migra
 #### Check Sensitive Information Types
 
 1. Validate that the SITs were created.
-    1. Choose ‘Data Classification’ from left panel and navigate to ‘Sensitive Information Type’ tab and check if new SITs are created. To make this easier, you can sort the list on ‘Publisher’ and check for SITs with publisher name as “DLP Migration Tool”.
+    1. Choose **Data Classification** from left panel and navigate to **Sensitive Information Type** tab and check if new SITs are created. To make this easier, you can sort the list on ‘Publisher’ and check for SITs with publisher name as “DLP Migration Tool”.
 
 1. Rename SITs as needed.
     1. For many SITs, you may notice there are similar names often followed by roman numerals. To avoid confusion and duplication post-migration, we recommend you rename these SITs now. This is especially true in cases where your regular expressions and keywords are defined directly in rules within your input Symantec DLP policies.
