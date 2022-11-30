@@ -9239,6 +9239,11 @@
       "source_path": "microsoft-365/security/office-365-security/trial-playbook-defender-for-office-365.md",
       "redirect_url": "/microsoft-365/security/office-365-security/trial-user-guide-defender-for-office-365",
       "redirect_document_id": true
-    }                      
+    }, 
+    {
+      "source_path": "microsoft-365/admin/adoption/organizational-message.md",
+      "redirect_url": "/microsoft-365/admin/adoption/organizational-messages.md",
+      "redirect_document_id": true
+    }                        
    ]
   }

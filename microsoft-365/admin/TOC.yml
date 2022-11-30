@@ -292,14 +292,14 @@
               href: adoption/teamwork.md
             - name: Meetings
               href: adoption/meetings.md
-            - name: Microsoft 365 Apps health
-              href: adoption/apps-health.md
-            - name: Endpoint Analytics
-              href: /mem/analytics/productivity-score
             - name: Organizational Messages
               href: adoption/organizational-messages.md
             - name: Group Level Aggregates
               href: adoption/group-level-aggregates.md
+            - name: Microsoft 365 Apps health
+              href: adoption/apps-health.md
+            - name: Endpoint Analytics
+              href: /mem/analytics/productivity-score
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
