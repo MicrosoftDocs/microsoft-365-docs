@@ -9259,6 +9259,11 @@
       "source_path": "microsoft-365/security/office-365-security/office-365-air.md",
       "redirect_url": "/microsoft-365/security/office-365-security/air-about",
       "redirect_document_id": true
-    },                      
+    },
+    {
+      "source_path": "microsoft-365/lighthouse/m365-lighthouse-deploy-baselines.md",
+      "redirect_url": "/microsoft-365/lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview",
+      "redirect_document_id": true
+    },       
    ]
   }
