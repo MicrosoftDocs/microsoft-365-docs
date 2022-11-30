@@ -22,6 +22,7 @@ search.appverid: met150
 # Device control report
 
 **Applies to:** 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint device control protects against data loss by monitoring and controlling media use by devices in your organization, such as using removable storage devices and USB drives.
@@ -76,4 +77,4 @@ To see the security of the device, select the **Open device page** button on the
 
 ## Reporting delays
 
-There might be a delay of up to 12 hours from the time a media connection occurs to the time the event is reflected in the card or in the domain list.
+There might be a delay of up to six hours from the time a media connection occurs to the time the event is reflected in the card or in the domain list.

@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/manage/servicenow-aad-oauth-token.md",
+      "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/servicenow-basic-authentication.md",
+      "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/manage/servicenow-support-integration.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-virtual-agent-integration",
       "redirect_document_id": true
@@ -9243,7 +9253,42 @@
     {
       "source_path": "microsoft-365/admin/adoption/organizational-message.md",
       "redirect_url": "/microsoft-365/admin/adoption/organizational-messages.md",
+      "redirect_document_id": true                       
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-anti-malware-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-malware-policies-configure",
       "redirect_document_id": true
-    }                        
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-malware-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-malware-protection-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-malware-protection-faq-eop.yml",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-malware-protection-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/automated-investigation-response-office.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/air-about-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/office-365-air.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/air-about",
+      "redirect_document_id": true
+    }, 
+    {
+      "source_path": "microsoft-365/security/office-365-security/virus-detection-in-spo.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-malware-protection-for-spo-odfb-teams-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/lighthouse/m365-lighthouse-deploy-baselines.md",
+      "redirect_url": "/microsoft-365/lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview",
+      "redirect_document_id": true
+    }
    ]
   }
