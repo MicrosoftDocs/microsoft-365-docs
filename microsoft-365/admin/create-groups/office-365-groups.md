@@ -77,9 +77,9 @@ The following limits apply to Microsoft 365 Groups:
 |Owners per group|100|
 |Groups a user can create|250|
 |Groups an admin can create|There are no Microsoft 365 group specific limits. There's an overall Azure AD object limit specific to each organization. An Azure AD admin who can manage groups in the organization can create an unlimited number of Microsoft 365 groups up to the Azure AD object limit. See [AAD service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).|
-|Number of members|More than 1,000, though only 1,000 can access the Group conversations concurrently. <br>Users might notice delays when accessing the calendar and conversations in large groups in Outlook.|
-|Number of Groups a user can be a owner of|7,000|
-|Number of Groups a user can be a member of|7,000|
+|Number of members|More than 1,000, though only 1,000 can access the group conversations concurrently. <br>Users might notice delays when accessing the calendar and conversations in large groups in Outlook.|
+|Number of groups a user can be a owner of|7,000|
+|Number of groups a user can be a member of|7,000|
 |File storage|1 Terabyte + 10 GB per subscribed user + any other storage purchased. You can purchase an unlimited amount of extra storage.|
 |Group Mailbox size|50 GB|
 
