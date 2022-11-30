@@ -62,17 +62,17 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
 
 ## Sign in with your Microsoft account
 
-![Sign in with your Microsoft account toi get started](images/mac-consumer-login.png)
+![Sign in with your Microsoft account to get started](images/mac-consumer-login.png)
 
 ### Message:
 
-Sign in with your Microsoft account toi get started.
+Sign in with your Microsoft account to get started.
 
 Create new account or Switch to enterprise app
 
 ### Cause:
 
-You downloaded and installed [Microsoft Defender for individuals on macOS](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) on top of perviously installed Microsoft Defender for Endpoint.
+You downloaded and installed [Microsoft Defender for individuals on macOS](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) on top of previously installed Microsoft Defender for Endpoint.
 
 ### Solution:
 
