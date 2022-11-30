@@ -82,7 +82,7 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
 6. If you added your domain in step 4, you can now connect your domain to Microsoft 365. To get help with this task, see [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
-When you're finished with the basic setup process, you'll see **Setup is complete**, where you can tell us how setup went and then go to your Microsoft 365 admin center. At this point, basic setup is complete, but you still need to set up and configure your security settings. See [Bump up security](m365bp-security-overview.md).
+When you're finished with the basic setup process, you'll see **Setup is complete**, where you can tell us how setup went and then go to your Microsoft 365 admin center. At this point, basic setup is complete, but you still need to [set up and configure your security settings](m365bp-security-overview.md).
 
 :::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."::: 
 
