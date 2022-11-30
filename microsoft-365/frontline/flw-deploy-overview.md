@@ -22,7 +22,7 @@ ms.date: 10/28/2022
 
 # Learn where to start with a frontline deployment
 
-Thanks for choosing Microsoft 365 for frontline workers. Whether you're an independent business or a large multi-national chain, Microsoft 365 and Teams for frontline workers can help bring your organization together with tools for communication, collaboration, and productivity. And no matter whether you're just getting into collaboration tools for the first time, or you've already been using Microsoft 365 and Teams for your non-frontline workers, we can help you get up and running.
+Thanks for choosing Microsoft 365 for frontline workers. Whether you're an independent business or a large multi-national enterprise, Microsoft 365 and Teams for frontline workers can help bring your organization together with tools for communication, collaboration, and productivity. And no matter whether you're just getting into collaboration tools for the first time, or you've already been using Microsoft 365 and Teams for your non-frontline workers, we can help you get up and running.
 
 |Article   |Description   |
 |----------|----------|
