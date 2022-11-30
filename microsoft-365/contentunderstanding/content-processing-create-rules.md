@@ -17,10 +17,12 @@ description: Learn how to create a rule to move or copy a file to another ShareP
 
 # Create a rule to move or copy a file from one document library to another in Microsoft Syntex
 
-From a document library, you can use Microsoft Syntex to create rules to automate tasks such as sending someone a notification when metadata changes in a file or when a new file is created in the library. In this article, you'll learn how to create a rule to move a copy a file from one document library to another.
+From a document library, you can use Microsoft Syntex to create rules to automate tasks such as sending someone a notification when metadata changes in a file or when a new file is created in the library. You can now move and copy files based on metadata extracted by Syntex models. 
 
 You'll choose a condition that triggers the rule and the action that the rule will take. 
 For example, you can create a rule to move files tagged with a specific customer to a specific library or folder. This helps you structure your content architecture with the power of AI-driven processing.
+
+Document libraries can have multiple move and copy rules to support moving and copying files to different destination libraries based on metadata criteria. 
 
 > [!NOTE]
 > This feature is available only for users who are licensed for Syntex.
