@@ -70,6 +70,8 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
 
      :::image type="content" source="../../media/defender/m365-defender-rbac-assignments.png" alt-text="Screenshot of the assignments screen" lightbox="../../media/defender/m365-defender-rbac-assignments.png":::
 
+    If a user selects all read-only permissions for a single data source, for example, Microsoft Defender for Endpoint, they will not be able to read alerts for Defender for Office 365 or Defender for Identity.
+
     >[!Note]
     > By selecting **Choose all data sources** all supported data sources within Microsoft 365 Defender RBAC and any future data sources that are added will be automatically assigned to this assignment.
 
@@ -96,9 +98,13 @@ To access and manage roles and permissions, without being a Global Administrator
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-authorization-role.png" alt-text="Screenshot of the Permissions and roles page" lightbox="../../media/defender/m365-defender-rbac-authorization-role.png":::
 
-8. select **Apply** and then **Next** to assign users and data sources.
+8. Select **Apply** and then **Next** to assign users and data sources.
 9. Select **Add assignments** and enter the Assignment name.
-10. Under **data sources** select **Choose all data sources**.
+10. To choose the **data sources** users assigned the Authorization permission will have access to:
+
+    - Select **Choose all data sources** to grant users permissions to create new roles and manage roles for all supported workloads.
+    - Select **Select specific data sources** to grant users permissions to create new roles and manage roles for a specific workload. For example, select Microsoft Defender for Endpoint from the dropdown to grant users permissions to create new roles and manage roles for the Microsoft Defender for Endpoint workload only.
+
 11. In **Assigned users and groups** – choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
 12. Select **Next** to review and finish creating the role and then select **Submit**.
 

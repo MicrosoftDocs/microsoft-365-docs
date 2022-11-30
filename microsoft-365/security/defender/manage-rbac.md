@@ -50,7 +50,7 @@ Centralized permissions management is supported for the following solutions:
 | Microsoft for Identity | Full support for all identity data and actions.|
 
 >[!Note]
->Permissions for users who perform compliance tasks in Microsoft 365 are not affected. Compliance permissions are still managed in the Microsoft Purview compliance portal.
+> Scenarios and experiences controlled by Compliance permissions are still managed in the Microsoft Purview compliance portal.
 
 >[!Note]
 > This offering isn't currently available for Microsoft Defender for CloudApps.
