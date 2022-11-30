@@ -1239,7 +1239,7 @@
               href: dlp-policy-tips-reference.md
             - name: Share DLP Alerts (preview)
               href: dlp-share-alerts.md
-        - name: Migration assistant for DLP policies
+        - name: Migration assistant for DLP
           items:
             - name: Learn about migration assistant for DLP
               href: migration-assistant-for-dlp-learn.md
