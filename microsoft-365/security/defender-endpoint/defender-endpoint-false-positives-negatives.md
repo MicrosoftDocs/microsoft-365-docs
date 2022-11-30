@@ -42,7 +42,7 @@ In endpoint protection solutions, a false positive is an entity, such as a file 
 
 :::image type="content" source="images/false-positives-overview.png" alt-text="The definition of false positive and negatives in the Microsoft 365 Defender portal" lightbox="images/false-positives-overview.png":::
 
-Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives occuring with Defender for Endpoint, your security operations can take steps to address them by using the following process:
+Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives occurring with Defender for Endpoint, your security operations can take steps to address them by using the following process:
 
 1. [Review and classify alerts](#part-1-review-and-classify-alerts)
 2. [Review remediation actions that were taken](#part-2-review-remediation-actions)
