@@ -50,6 +50,9 @@ The Microsoft 365 Lighthouse default baseline is designed to ensure all managed 
 
 ## Related content
 
+[Review a deployment plan](m365-lighthouse-review-deployment-plan.md) (article)\
+[Overview of deployment tasks](m365-lighthouse-overview-deployment-task.md) (article)\
+[Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) (article)\
 [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
