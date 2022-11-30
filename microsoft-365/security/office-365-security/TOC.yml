@@ -171,7 +171,7 @@
          - name: Anti-spoofing protection FAQ
            href: anti-spoofing-protection-faq.yml
          - name: How EOP validates the From address
-           href: how-office-365-validates-the-from-address.md
+           href: anti-phishing-from-email-address-validation.md
        - name: Safe Attachments in Defender for Office 365
          items:
          - name: Safe Attachments in Defender for Office 365
@@ -299,7 +299,7 @@
            - name: Threat Explorer views
              href: threat-explorer-views.md
          - name: Impersonation insight
-           href: impersonation-insight.md
+           href: anti-phishing-mdo-impersonation-insight.md
          - name: Spoof intelligence insight
            href: learn-about-spoof-intelligence.md
          - name: Spoof intelligence insight walkthrough
