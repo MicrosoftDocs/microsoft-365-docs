@@ -34,7 +34,7 @@ The **Reports** dashboard is the central location for viewing all communication 
 
 Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets isn't exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing.
 
-For the date range filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages, all filters for the report are made applicable from the start date of 00:00:00 UTC to the end date of 23:59:59 UTC.
+For the date range filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages, all filters for the report are made applicable at the 00:00:00 UTC start date to the 23:59:59 UTC end date.
 
 ![Communication compliance reports dashboard](../media/communication-compliance-reports-dashboard.png)
 
