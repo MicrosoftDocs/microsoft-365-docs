@@ -1,5 +1,5 @@
 ---
-title: "Learn about Migration Assistant for Microsoft Purview DLP"
+title: "Learn about migration assistant for Microsoft Purview DLP"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -42,7 +42,7 @@ The migration assistant helps with some of the tasks involved in a DLP migration
 
 The following diagram illustrates the migration process:
 
-:::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of Migration Assistant for DLP":::
+:::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of migration assistant for DLP":::
 
 Each time the migration assistant runs it follows these five phases:
 
@@ -67,7 +67,7 @@ The migration assistant supports migration of policies from Symantec DLP 15 and 
 
 The migration assistant migrates policies into Microsoft DLP only for the workloads listed in the following table:
 
-| **Workload**  | **Migration Assistant Support** |
+| **Workload**  | **migration assistant Support** |
 | ------------------------------- | ------------------------------- |
 | Exchange (EXO)| Yes           |
 | Share Point Online (SPO)        | Yes           |
