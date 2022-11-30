@@ -12,12 +12,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a rule to move or copy a file to another SharePoint document library in Microsoft Syntex .
+description: Learn how to create a rule to move or copy a file to another SharePoint document library in Microsoft Syntex.
 ---
 
 # Create a rule to move or copy a file from one document library to another in Microsoft Syntex
 
-From a document library, you can use Microsoft Syntex to create rules to automate tasks such as sending someone a notification when metadata changes in a file or when a new file is created in the library.
+From a document library, you can use Microsoft Syntex to create rules to automate tasks such as sending someone a notification when metadata changes in a file or when a new file is created in the library. In this article, you'll learn how to create a rule to move a copy a file from one document library to another.
 
 You'll choose a condition that triggers the rule and the action that the rule will take. 
 For example, you can create a rule to move files tagged with a specific customer to a specific library or folder. This helps you structure your content architecture with the power of AI-driven processing.
@@ -56,40 +56,8 @@ To move or copy a file from one document library to another, follow these steps.
 
        ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
 
-4. Select **Create**.
+       You can't set up a rule to move or copy a file to a library that already has a move  or copy rule applied. If you try, you'll receive a message saying that you need to disable all move or copy rules on the destination library. To disable a rule, see [Manage a rule](#manage-a-rule).
 
-
-
-## Copy a file
-
-To copy a file from one document libary to another, follow these steps.
-
-1. In the document library of the file you want move, select **Automate** > **Rules** > **Create a rule**.
-
-   ![Screenshot of the document library showing the Automate > Rules > Create a rule option.](../media/content-understanding/content-processing-create-rule.png)
-
-2. On the **Create a rule** page, select a condition that triggers the rule and the action that the rule will take. In this case, select **A new file is added**.
-
-   ![Screenshot of the Create a rule page showing the A new file is added option highlighted.](../media/content-understanding/content-processing-create-a-rule-page.png)
-
-    Your selection here creates a rule statement that you'll complete in the next step.
-
-3. To complete the rule statement, under **When a new file is added**:
-
-    1. Select **choose action**, and then select **Move file to**.
-
-   ![Screenshot of the rule statement page showing the Move file to option highlighted.](../media/content-understanding/content-rule-move-file-to.png)
-
-    2. Select **choose a site**, and then select the site that contains the document library you want the file moved to.
-
-   ![Screenshot of the rule statement page showing the choose a site option highlighted.](../media/content-understanding/content-rule-choose-a-site.png)
-
-    3. Select **choose a library**, and the select the document library you want the file moved to.
-
-   ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
-
-    > [!NOTE]
-    > You can't set up a rule to move or copy a file to a library that already has a move  or copy rule applied. If you try, you'll receive a message saying that you need to disable all move or copy rules on the destination library. To disable a rule, see [Manage a rule](#manage-a-rule).
        ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-disable-rules.png)
 
 4. Select **Create**.
@@ -107,7 +75,7 @@ To copy a file from one document libary to another, follow these steps.
 
 ## View the activity feed of a document library
 
-1. In a document library, in the upper-right corner of the page, select the **Details** pane to view the history and activity of the library.
+In a document library, in the upper-right corner of the page, select the **Details** pane to view the history, activity, and rules applied to the library.
 
    ![Screenshot of a document library showing the details pane highlighted.](../media/content-understanding/content-processing-details-pane.png)
 
