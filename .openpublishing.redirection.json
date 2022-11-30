@@ -9259,6 +9259,31 @@
       "source_path": "microsoft-365/security/office-365-security/office-365-air.md",
       "redirect_url": "/microsoft-365/security/office-365-security/air-about",
       "redirect_document_id": true
-    },                      
+    }, 
+    {
+      "source_path": "microsoft-365/security/office-365-security/how-office-365-validates-the-from-address.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-from-email-address-validation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/impersonation-insight.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-mdo-impersonation-insight",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-anti-phishing-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-policies-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-policies-eop-configure",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-mdo-anti-phishing-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-policies-mdo-configure",
+      "redirect_document_id": true 
+    }                     
    ]
   }
