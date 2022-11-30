@@ -33,7 +33,7 @@ ms.service: microsoft-365-security
 
 Global roles in Azure Active Directory (Azure AD) allow you to manage permissions and access to capabilities in Microsoft 365, which also includes Microsoft Defender for Office 365. But, if you need to limit permissions and capabilities to security features in Defender for Office 365 only, you can assign permissions in the Microsoft 365 Defender portal.
 
-To manage Email & collaboration permissions in the Microsoft 365 Defender portal, go to **Permissions & roles** > **Email & collaboration roles** or <https://security.microsoft.com/securitypermissions>. You need to be a **Global administrator** or a member of the **Organization Management** role group in the Microsoft 365 Defender portal. Specifically, the **Role Management** role allows users to view, create, and modify role groups in the Microsoft 365 Defender portal, and by default, that role is assigned only to the **Organization Management** role group.
+To manage email and collaboration permissions in the Microsoft 365 Defender portal, go to **Permissions & roles** > **Email & collaboration roles** or <https://security.microsoft.com/securitypermissions>. You need to be a **Global administrator** or a member of the **Organization Management** role group in the Microsoft 365 Defender portal. Specifically, the **Role Management** role allows users to view, create, and modify role groups in the Microsoft 365 Defender portal, and by default, that role is assigned only to the **Organization Management** role group.
 
 > [!NOTE]
 > Some capabilities of Microsoft Defender for Office require additional permissions in the Exchange admin center. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
