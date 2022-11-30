@@ -43,7 +43,7 @@ To manage email and collaboration permissions in the Microsoft 365 Defender port
 ## Relationship of members, roles, and role groups
 
 
-are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the Microsoft 365 Defender portal will be very familiar.
+Permissions in the Microsoft 365 Defender portal are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the Microsoft 365 Defender portal will be very familiar.
 
 A **role** grants the permissions to do a set of tasks.
 
