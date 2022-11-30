@@ -87,7 +87,7 @@
          - name: Configure anti-malware policies
            href: configure-anti-malware-policies.md
          - name: Virus detection in SharePoint Online
-           href: virus-detection-in-spo.md
+           href: anti-malware-protection-for-spo-odfb-teams-about.md
          - name: Anti-malware protection FAQ
            href: anti-malware-protection-faq-eop.yml
        - name: Anti-spam protection
