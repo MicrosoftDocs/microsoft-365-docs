@@ -52,6 +52,9 @@ The steps in this article won't prevent members of certain roles from creating G
 
 If you're a member of one of these roles, you can create Microsoft 365 Groups for restricted users, and then assign the user as the owner of the group.
 
+> [!NOTE]
+> The Exchange Administrator cannot create from Exchange Admin center unless the user is present as part of the whitelisted users allowed to create group, PFA for more details. [Manage who can create Microsoft 365 Groups](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fmicrosoft-365%2Fsolutions%2Fmanage-creation-of-groups%3Fview%3Do365-worldwide&data=05%7C01%7Canirudhyadav%40microsoft.com%7C26627c6317ca444a550908dad1ea8622%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638053102486118691%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=1nckP3%2FcXJcAUWVGoLhaIVVsHC%2FqLB4VIuDhuOEx7Tk%3D&reserved=0)
+
 ## Licensing requirements
 
 To manage who creates groups, the following people need Azure AD Premium licenses or Azure AD Basic EDU licenses assigned to them:
