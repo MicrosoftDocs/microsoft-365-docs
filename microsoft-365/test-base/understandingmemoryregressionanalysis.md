@@ -23,7 +23,7 @@ As a performance metric, memory usage can be an indication of overall applicatio
 For all test runs in the **Test Base** service, memory signals are captured in the **Memory utilization** tab.  The example that follows shows a recent test run against a February 2022 OS security update, with an onboarded application named “USL AppCrash” (a test application written to illustrate regressions). 
 
  > [!div class="mx-imgBorder"]  
- > ![Screenshot shows Memory Regression](Media/understandingmemoryregressionanalysis01.png)  
+ > ![Screenshot shows Memory Regression.](Media/understandingmemoryregressionanalysis01.png)  
  > **Figure 4. Memory utilization data graph**
 
 &nbsp;&nbsp;&nbsp;**Note:**

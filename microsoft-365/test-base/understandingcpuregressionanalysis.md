@@ -28,5 +28,5 @@ In the figure that follows, there are two OS release versions against which CPU 
 - Memory or CPU utilization might also improve as a result of an operating system update, rather than simply deteriorate.
 
  > [!div class="mx-imgBorder"]  
- > ![Screenshot shows CPU Regression](Media/understandingcpuregressionanalysis01.png)  
+ > ![Screenshot shows CPU Regression.](Media/understandingcpuregressionanalysis01.png)  
  >  **Figure 5. CPU utilization data graph**

@@ -26,13 +26,13 @@ To display the **Reliability** tab, perform the steps of the procedure that foll
 
 > The drop-downs are populated with data followed by Test results for the **Functional** and **Out of box** tests.  
 > [!div class="mx-imgBorder"]  
-> ![Screenshot shows Security update results](Media/applicationreliability01.png)  
+> ![Screenshot shows Security update results.](Media/applicationreliability01.png)  
 > **Figure 2. Populating security update results**
 
 3. Click **See details** in the **Reliability** row to display the **Reliability** data, providing that the status is **Completed**, as shown in the figure that follows.
 
 > [!div class="mx-imgBorder"]  
-> ![Screenshot shows Reliability data](Media/applicationreliability02.png)  
+> ![Screenshot shows Reliability data.](Media/applicationreliability02.png)  
 > **Figure 3. Reliability tab**
 
 From the **Reliability** tab you can also sort the **Crash** and **Unresponding** data to ensure quick visibility into prominent information of interest. For example, you could sort processes by the highest failure rate, by the number of crashes, or by the number of times a process became unresponsive.
