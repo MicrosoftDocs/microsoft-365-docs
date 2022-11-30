@@ -207,7 +207,7 @@ Communication compliance uses specific built-in trainable and global classifiers
 
 #### Images
 
-Communication compliance inspects only images between 100 kilobytes (KB) and 4 megabytes (MB) in size and dimensions greater than 50 x 50 pixels in height x width. For information about applying content flags that can detect adult, gory, and racy material in images, see [Adult content detection](/azure/cognitive-services/computer-vision/concept-detecting-adult-content).
+Communication compliance inspects only images between 100 kilobytes (KB) and 4 megabytes (MB) in size and dimensions greater than 50 x 50 pixels in height x width. For information about applying content flags that can detect adult, gory, and racy material in images, see [Adult content detection](azure/cognitive-services/computer-vision/concept-detecting-adult-content).
 
 |**Classifier**|**Description**|**File types**|
 |:-------------|:--------------|:--------------|
@@ -234,7 +234,7 @@ Communication compliance policies using classifiers inspect and evaluate English
 | **Unauthorized disclosure (preview)** | Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |Content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files |
 
 > [!NOTE]
-> "*" Policies using Harassment, Profanity, and Threat classifiers in the English language inspect and evaluate messages with a word count of three or greater. For a complete list of supported languages for these classifiers, see [Trainable classifier definitions](/microsoft-365/compliance/classifier-tc-definitions).
+> Policies using *Harassment, Profanity, and Threat classifiers in the English language inspect and evaluate messages with a word count of three or greater. For a complete list of supported languages for these classifiers, see [Trainable classifier definitions](/microsoft-365/compliance/classifier-tc-definitions).
 
 > [!IMPORTANT]
 > Classifiers in (preview) may detect a large volume of bulk sender/newsletter content due to a known issue. While these classifiers are in preview, you can mitigate the detection of large volumes of bulk sender/newsletter content by adding the [*Message is not sent to any of these domains* condition](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) to your polices with a list of domains to exclude.
