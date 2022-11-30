@@ -37,8 +37,8 @@ Once configured, you cannot change the location where your data is stored. This 
 
 ### At service onboarding
 
-By default, data is retained for 180 days based on your active licenses.
+By default, data is retained for 90 days based on your active licenses.
 
 ### At contract termination or expiration
 
-Your data will be kept and will be available to you while the license is under grace period or suspended mode. At the end of this period, data which is associated to expired or terminated license will be erased from Microsoft's systems to make it unrecoverable, no later than 180 days from the associated contract termination or expiration.
+Your data will be kept and will be available to you while the license is under grace period or suspended mode. At the end of this period, data which is associated to expired or terminated license will be erased from Microsoft's systems to make it unrecoverable, no later than 90 days from the associated contract termination or expiration.
