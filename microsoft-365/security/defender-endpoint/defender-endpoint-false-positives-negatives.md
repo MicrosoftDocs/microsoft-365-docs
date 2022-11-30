@@ -217,7 +217,7 @@ In general, you shouldn't need to define exclusions for Microsoft Defender Antiv
 
 #### Use Intune to manage antivirus exclusions (for existing policies)
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
+1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)).
 
 2. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
