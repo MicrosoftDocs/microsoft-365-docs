@@ -91,36 +91,28 @@ conceptualContent:
         # Card
       - title: Enable safe email messages
         links:
-         - url: /microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365
+         - url: /microsoft-365/security/office-365-security/protect-against-threats
            itemType: overview
-           text: Create blocked sender lists
-         - url: /microsoft-365/security/office-365-security/responding-to-a-compromised-email-account
+           text: Get Started with Defender for Office 365
+         - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
            itemType: how-to-guide
-           text: Respond to a Compromised Email Account
-         - url: /microsoft-365/security/office-365-security/impersonation-insight
-           itemType: overview
-           text: Identify impersonation
-         - url: /microsoft-365/security/office-365-security/manage-quarantined-messages-and-files
+           text: Operationalize Defender for Office 365
+         - url: /microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered
            itemType: how-to-guide
-           text: Manage quarantined messages
-         - url: /microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user
-           itemType: how-to-guide
-           text: Find and release quarantined messages
-         - url: /microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams
-           itemType: how-to-guide
-           text: Turn on safe attachments
-         - url: /microsoft-365/security/office-365-security/admin-submission
-           itemType: how-to-guide
-           text: Submit suspected spam
+           text: Investigate malicious emails
+
 # Card
       - title: Protect your endpoints
         links:
+         - url: /microsoft-365/security/defender-endpoint/onboard-configure
+           itemType: how-to-guide
+           text: Onboard devices to Defender for Endpoint
          - url: /microsoft-365/security/defender-endpoint/attack-surface-reduction
            itemType: how-to-guide
-           text: Attack surface reduction rules
+           text: Implement attack surface reduction rules
          - url: /microsoft-365/security/defender-endpoint/next-generation-protection
            itemType: overview
-           text: Next generation protection
+           text: Configure Next generation protection
 # Card
       - title: Detect and remediate vulnerabilities
         links:
