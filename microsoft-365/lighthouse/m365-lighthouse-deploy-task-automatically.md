@@ -59,13 +59,14 @@ Additionally, each partner tenant user must meet the following requirements:
         1. Include or exclude specific users.
 
         2. Include or exclude security groups.
-        > **NOTE**: Tasks implemented by a conditional access policy deployment include a drop-down menu to select the deployment state. Tasks are set to the deployment state of **Enabled** by default but can be manually adjusted to **Report Only** via the drop-down menu. Tasks deployed as **Enabled** will immediately impact user experience. Settings from configurations deployed in a **Report only** state will continue to be reported as **Not compliant** in Lighthouse until the deployment state of the applicable configuration is updated to **Enabled**.
+        > [!NOTE]
+        > Tasks implemented by a conditional access policy deployment include a drop-down menu to select the deployment state. Tasks are set to the deployment state of **Enabled** by default but can be manually adjusted to **Report Only** via the drop-down menu. Tasks deployed as **Enabled** will immediately impact user experience. Settings from configurations deployed in a **Report only** state will continue to be reported as **Not compliant** in Lighthouse until the deployment state of the applicable configuration is updated to **Enabled**.
 
 7. Select **Next**.
 
 8. In the **Review detected configurations** page, review detected configurations.
 
-    > **NOTE**: The **Review detected configurations** page is provided for eligible tasks and lists any existing configurations detected within the tenant. From this page, you may either edit the existing configurations or deploy a new configuration through Lighthouse to fulfill the task's requirements.
+    The **Review detected configurations** page is provided for eligible tasks and lists any existing configurations detected within the tenant. From this page, you may either edit the existing configurations or deploy a new configuration through Lighthouse to fulfill the task's requirements.
 
     If existing configurations are detected, they’ll be displayed in the detected configuration in the deployment plan comparison table. For each detected configuration, Lighthouse will determine whether the setting is **Compliant**, **Not compliant**, **Missing**, or **Extra**.
 
@@ -85,8 +86,8 @@ Additionally, each partner tenant user must meet the following requirements:
 
     5. In Lighthouse, select **Refresh detected configurations** to refresh the results of the detected configuration.
 
-    > **NOTE**: When editing existing configurations, the presence of **Extra** settings has no impact on the deployment status of the task. You may retain, edit, or discard, **Extra** settings at your discretion.
-    
+    When editing existing configurations, the presence of **Extra** settings has no impact on the deployment status of the task. You may retain, edit, or discard, **Extra** settings at your discretion.
+
     Once Lighthouse sees no settings from the task that are missing for or not compliant for any of the users to whom the task is targeted, Lighthouse will update the task status to **Compliant**, and you'll be prompted to exit the wizard.
 
 10. Select **Next**.
