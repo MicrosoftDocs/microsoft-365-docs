@@ -213,7 +213,7 @@ For more information, see [Back up data before switching plans](/microsoft-365/c
 
 You can use the Microsoft 365 admin center to manually change plans or a scripted approach through PowerShell cmdlets. Whichever method you choose, it's important to complete the license change assignment in one operation. In other words, remove an existing E license and replace it by assigning an F license in the same operation.
 
-Avoid removing an existing license for a user and then reassigning a new one at a later point in time. Doing this can impact a user's data. To learn more, see [What happens to a user's data when you remove their license?](/microsoft-365/admin/manage/remove-licenses-from-users?view=o365-worldwide#what-happens-to-a-users-data-when-you-remove-their-license).
+Avoid removing an existing license for a user and then reassigning a new one at a later point in time. Doing this can impact a user's data. To learn more, see [What happens to a user's data when you remove their license?](/microsoft-365/admin/manage/remove-licenses-from-users#what-happens-to-a-users-data-when-you-remove-their-license).
 
 For step-by-step guidance on how to change plans in the Microsoft admin center, see [Manually change Microsoft plans](/microsoft-365/commerce/subscriptions/change-plans-manually).
 
