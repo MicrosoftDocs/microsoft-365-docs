@@ -67,7 +67,7 @@ The migration assistant supports migration of policies from Symantec DLP 15 and 
 
 The migration assistant migrates policies into Microsoft DLP only for the workloads listed in the following table:
 
-| **Workload**  | **migration assistant Support** |
+| **Workload**  | **Migration assistant support** |
 | ------------------------------- | ------------------------------- |
 | Exchange (EXO)| Yes           |
 | Share Point Online (SPO)        | Yes           |

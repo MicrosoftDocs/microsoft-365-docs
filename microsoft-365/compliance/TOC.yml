@@ -1239,6 +1239,14 @@
               href: dlp-policy-tips-reference.md
             - name: Share DLP Alerts (preview)
               href: dlp-share-alerts.md
+        - name: Migration Assistant for DLP policies
+          items:
+            - name: Learn how to use migration assistant for DLP policies
+              href: migration-assistant-for-dlp-learn.md
+            - name: Get started with migration assistant for DLP 
+              href: migration-assistant-for-dlp-get-started.md
+            - name: Use migration assistant for DLP 
+              href: migration-assistant-for-dlp-use.md       
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data

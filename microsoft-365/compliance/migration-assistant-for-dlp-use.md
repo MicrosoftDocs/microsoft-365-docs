@@ -117,9 +117,9 @@ The most common ways in which Symantec users specify what kind of sensitive info
 - Customize OOB Data Identifiers
 - Define regular expressions and/or keywords in DLP rules
 
-migration assistant takes care of each of the above scenarios in one of two ways:
+Migration assistant takes care of each of the above scenarios in one of two ways:
 
-- **Map to an existing OOB SIT:** For all sensitive data types for which there exists an equivalent SIT in Microsoft DLP, migration assistant will try to map to do a 1:1 mapping. It automatically maps OOB Symantec Data Identifiers to preconfigured Microsoft SITs if an equivalent exists. If you want to bring the Symantec Data Identifier over as-is, then you can create a new SIT as described in the next step.
+- **Map to an existing OOB SIT:** For all sensitive data types for which there exists an equivalent SIT in Microsoft DLP, migration assistant will try to map to do a 1:1 mapping. It automatically maps OOB Symantec Data Identifiers to pre-configured Microsoft SITs if an equivalent exists. If you want to bring the Symantec Data Identifier over as-is, then you can create a new SIT as described in the next step.
 
 - **Migrate as a new custom SIT** For all sensitive data types for which there isn't an equivalent SIT available in Microsoft DLP, migration assistant will automatically opt to create a new SIT. It will automatically create a new SIT for all OOB Symantec Data Identifiers for which no equivalent SIT in Microsoft DLP is available. Similarly, any regular expression(s) or keyword(s) defined directly in rules will be brought over as a new Custom SIT.
 
@@ -164,7 +164,7 @@ Extend policy coverage to other Microsoft locations
 
          For example: An email (Exchange) DLP policy can be extended to SharePoint, OneDrive, Teams, and Endpoint Devices.
 
-migration assistant will auto-create a new policy based on the original policy with all supported rules for that given workload. One or more rules may be dropped if not supported for a given workload.
+Migration assistant will auto-create a new policy based on the original policy with all supported rules for that given workload. One or more rules may be dropped if not supported for a given workload.
 
          For example: Email subject is condition may be dropped while extending an email (Exchange) DLP policy to OneDrive.
 
@@ -333,7 +333,7 @@ You should go to the Compliance Center and validate that the policies were migra
     1. For many SITs, you may notice there are similar names often followed by roman numerals. To avoid confusion and duplication post-migration, we recommend you rename these SITs now. This is especially true in cases where your regular expressions and keywords are defined directly in rules within your input Symantec DLP policies.
 
 1. Test and fine-tune SITs as needed.
-    1. We should test and fine tune the migrated SITs. migration assistant creates new SITs with a few standard settings, which may not or may not be optimal for your tenant. Here are few things to look at:
+    1. We should test and fine tune the migrated SITs. Migration assistant creates new SITs with a few standard settings, which may not or may not be optimal for your tenant. Here are few things to look at:
         1. Regular expressions
         1. Unsupported or deleted regexes (during migration)
         1. Keywords
