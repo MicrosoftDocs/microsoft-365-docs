@@ -189,7 +189,7 @@ Once the above configuration is done and synced with the device, the following a
 - Web Protection and other features will be activated.
 
 > [!NOTE]
-> For supervised devices, admins can setup Zero touch onboarding with the new [ZeroTouch Control Filter Profile](#device-configuration-profile-(control-filter)).
+> For supervised devices, admins can setup Zero touch onboarding with the new [ZeroTouch Control Filter Profile](#device-configuration-profile-control-filter).
 Defender VPN Profile will not be installed on the device and Web protection will be provided by the Control Filter Profile.
 
 ### Auto-Onboarding of VPN profile (Simplified Onboarding)
