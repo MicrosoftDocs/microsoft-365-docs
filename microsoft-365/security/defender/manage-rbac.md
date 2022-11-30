@@ -46,7 +46,7 @@ Centralized permissions management is supported for the following solutions:
 |:-------|:-----|:-------|
 |Microsoft 365 Defender | Centralized permissions management for Microsoft 365 Defender experiences.|
 |Microsoft Defender for Endpoint | Full support for all endpoint data and actions. All roles are compatible with the device group's scope as defined on the device groups page.|
-| Microsoft Defender for Office 365 | Support for all scenarios that were controlled by <strong>Exchange Online Protection roles</strong> (EOP), configured in the Microsoft 365 Defender portal under **Permissions** > **Email & collaboration roles**. </br></br> **Note:** Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses. |
+| Microsoft Defender for Office 365 | Support for all scenarios that were controlled by <strong>Exchange Online Protection roles</strong> (EOP), configured in the Microsoft 365 Defender portal under **Permissions** > **Email & collaboration roles**. </br></br> **Note:** Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses only. It's not supported for Microsoft Defender for Office 365 trial licenses, therefore, this capability is not available to users on a trial license.|
 | Microsoft for Identity | Full support for all identity data and actions.|
 
 >[!Note]
