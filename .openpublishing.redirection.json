@@ -9252,7 +9252,7 @@
     }, 
     {
       "source_path": "microsoft-365/admin/adoption/organizational-message.md",
-      "redirect_url": "/microsoft-365/admin/adoption/organizational-messages.md",
+      "redirect_url": "/microsoft-365/admin/adoption/organizational-messages",
       "redirect_document_id": true                       
     },
     {
