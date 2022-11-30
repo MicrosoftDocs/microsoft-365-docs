@@ -143,15 +143,24 @@ Compliance Manager detects signals from other Microsoft Purview solutions that y
 
 Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
-**Automatic testing is turned on by default for organizations new to Compliance Manager.** When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration. See [Manage automated testing settings](#manage-automated-testing-settings) below to edit or turn off this setting.
+**Automatic testing is turned on by default for organizations new to Compliance Manager.** This means that all improvement actions which are eligible for automatic testing will be automatically tested. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor that data into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
+
+**You can turn off automatic testing for all improvement actions at once, or turn it off or on for individual actions.** See [Manage automated testing settings](#manage-automated-testing-settings) for details.
 
 #### How to tell which actions are tested automatically
 
-On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager.  If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#update-testing-source).
+On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager. If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#update-testing-source).
 
 #### Which actions can't be tested automatically
 
-Improvement actions in templates not scoped to Microsoft 365 are currently not eligible for automatic testing. For example, universal templates, or a template for Microsoft Azure or Microsoft Dynamics, won't have actions that can be tested automatically. Learn more about [assessment templates](compliance-manager-templates.md).
+Improvement actions in templates that aren't scoped to Microsoft 365 are not currently eligible for automatic testing. For example, universal templates, or a template for Microsoft Azure or Microsoft Dynamics, won't have actions that can be tested automatically. Learn more about [assessment templates](compliance-manager-templates.md).
+
+#### Important points to keep in mind
+
+- If you've [added data to an existing improvement action](compliance-manager-update-actions.md), that action will have automatic testing turned off, even if it was previously turned on. To turn automatic testing back on for that action, follow the instructions at [Manage automated testing settings](#manage-automated-testing-settings).
+- If new improvement actions are added by Compliance Manager that can be automatically tested, those actions will have automatic testing turned on by default.
+- 
+
 
 #### Manage automated testing settings
 
