@@ -95,7 +95,7 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 2. In the **Filters** pane, specify search criteria, such as:
 
    - Your location
-   - Your organization's size
+   - Your organization's size (**Microsoft Customer Size**)
    - **Focus areas**, such as **Security** and/or **Threat Protection** 
    - **Services**, such as **Licensing** or **Managed Services (MSP)**
 
