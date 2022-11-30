@@ -15,7 +15,7 @@ ms.collection:
 search.appverid: 
   - MOE150
   - MET150
-description: Admins can learn how to manage Microsoft Defender for Office 365 (Email & collaboration) permissions in the Microsoft 365 Defender portal for all tasks related to Defender for Offie 365 security features.
+description: Admins can learn how to manage Microsoft Defender for Office 365 (Email & collaboration) permissions in the Microsoft 365 Defender portal for all tasks related to Defender for Office 365 security features.
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
