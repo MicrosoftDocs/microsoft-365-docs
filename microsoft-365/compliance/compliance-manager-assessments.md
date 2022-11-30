@@ -191,7 +191,7 @@ Follow the steps to grant user access to an assessment.
 
 1. Select the **+ Add** command for the role tab you're on: **Add reader**, or **Add assessor** or **Add contributor**.
 
-1. Another flyout pane appears which lists all the users in your organization. You can select the checkbox next to the username you want to add, or you can enter their name in the search bar adn select the user from there. You can select multiple users at once.
+1. Another flyout pane appears which lists all the users in your organization. You can select the checkbox next to the username you want to add, or you can enter their name in the search bar and select the user from there. You can select multiple users at once.
 
 1. After making all your selections, select **Add**.
     > [!NOTE]

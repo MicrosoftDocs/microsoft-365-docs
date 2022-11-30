@@ -141,7 +141,7 @@ Compliance Manager settings can only be accessed by users who hold a global admi
 
 Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
-Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full number of points, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
 **Automatic testing is turned on by default for organizations new to Compliance Manager.** When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration. See [Manage automated testing settings](#manage-automated-testing-settings) below to edit or turn off this setting.
 
@@ -226,7 +226,7 @@ You can reassign improvement actions from one user to another. When you reassign
 
 5. From the **Select** drop-down menu, choose **Reassign improvement actions**. The **Reassign improvement actions** flyout pane will appear.
 
-6. In the **Search users** field, enter the name or email address of the user you want assign the improvement actions *to*.
+6. In the **Search users** field, enter the name or email address of the user to whom you're assigning the improvement actions.
 
 7. When you see the name of your intended user under **Improvement actions will be assigned to**, select the user, then select **Assign actions**.
 
@@ -400,7 +400,7 @@ The assessments page summarizes key information about each assessment:
 - **Status**:
   - **Complete** - all controls have a status of “passed,” or at least one is passed and the rest are “out of scope”
   - **Incomplete** – at least one control has a status of “failed"
-  - **None** - all controls have have not been tested
+  - **None** - all controls haven't been tested
   - **In progress** - improvement actions have any other status, including “in progress,” “partial credit,” or “undetected
 - **Assessment progress**: the percentage of the work done toward completion, as measured by the number of controls successfully tested
 - **Your improvement actions**: the number of completed actions to satisfy implementation of your controls
