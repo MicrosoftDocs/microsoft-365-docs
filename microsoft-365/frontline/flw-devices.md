@@ -168,7 +168,7 @@ MAM policies are required to prevent data from moving from shared device mode en
 Currently, zero-touch provisioning of shared device mode is only available with Intune. If you’re using a third-party MDM solution, devices must be enrolled in shared device mode using the [manual configuration steps](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
 
 > [!NOTE]
-> Conditional access isn’t fully supported for devices that are configured manually. Support for zero touch provisioning of shared device mode with VMware and SOTI MDMs is coming soon. When this capability is available, you’ll need to re-enroll your existing manually configured devices by uninstalling and reinstall authenticator so that you can get the benefit of conditional access.
+> Conditional access isn’t fully supported for devices that are configured manually.
 
 Some Microsoft 365 applications don’t currently support shared device mode. The table below summarizes what is available. If the application you need lacks shared device mode integration, it’s recommended that you run a web-based version of your application in either Microsoft Teams or Microsoft Edge to get the benefits of shared device mode.
 
