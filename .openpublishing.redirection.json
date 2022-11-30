@@ -9251,6 +9251,21 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/configure-anti-malware-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-malware-policies-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-malware-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-malware-protection-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-malware-protection-faq-eop.yml",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-malware-protection-faq",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/automated-investigation-response-office.md",
       "redirect_url": "/microsoft-365/security/office-365-security/air-about-office",
       "redirect_document_id": true
