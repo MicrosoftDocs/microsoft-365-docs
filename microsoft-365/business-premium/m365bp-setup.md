@@ -62,11 +62,9 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
    :::image type="content" source="media/m365bp-dashboardview.png" alt-text="Screenshot of the dashboard view of the Microsoft 365 admin center.":::
 
-3. To install your Microsoft 365 apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later.
+3. To install your Microsoft 365 apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later. Then select **Continue**.
 
    :::image type="content" source="media/m365bp-installoffice.png" alt-text="Screenshot of the Install Office download button.":::
-
-   Then select **Continue**.
 
 4. To add your organization's domain (*recommended*) or to use your default `.onmicrosoft.com` domain, select an option and then follow the prompts. 
 
