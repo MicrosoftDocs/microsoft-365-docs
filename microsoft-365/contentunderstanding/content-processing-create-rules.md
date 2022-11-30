@@ -70,7 +70,7 @@ To move or copy a file from one document library to another, follow these steps.
 
    ![Screenshot of the document library showing the Automate > Rules > Manage rules option.](../media/content-understanding/content-processing-manage-rule.png)
 
-2. On the **Manage rules** page, turn on or off a rule or create a new rule to automate actions on the document library.
+2. On the **Manage rules** page, turn on or off a rule or [create a new rule](#move-or-copy-a-file) to automate actions on the document library.
 
    ![Screenshot of the Manage rules page showing the rule and actions.](../media/content-understanding/content-processing-manage-rules-page.png)
 
