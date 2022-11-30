@@ -59,7 +59,7 @@ ObjectState: Unchanged
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
 RecordType: ComplianceSupervisionExchange
-CreationDate: 7/6/2022 9:50:12 PM (UTC)
+CreationDate: 7/6/2022 9:50:12 PM
 UserIds: user2@contoso.onmicrosoft.com
 Operations: SupervisionRuleMatch
 AuditData: {"CreationTime":"2022-07-06T21:50:12","Id":"5c61aae5-26fc-4c8e-0791-08d940c8086f","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"public\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<20210706174831.24375086.807067@sailthru.com\>","UserId":"user2@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"a97cf128-c0fc-42a1-88e3-fd3b88af9941","SRPolicyName":"Insiders","SRRuleMatchDetails":\[{"SRCategoryName":"New insiders lexicon"}\]}}
