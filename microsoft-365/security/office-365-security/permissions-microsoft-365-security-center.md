@@ -22,7 +22,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
 
-# Email & collaboration Permissions in the Microsoft 365 Defender portal
+# Email and collaboration permissions in the Microsoft 365 Defender portal
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
