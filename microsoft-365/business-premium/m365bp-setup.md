@@ -56,26 +56,26 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
 1. As a global administrator, go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in. By default, you'll see the simplified view, as shown in the following image:
 
-   :::image type="content" source="media/m365bp-simplifiedview.png" alt-text="Screenshot showing the simplified view of the Microsoft 365 admin center.":::
+   :::image type="content" source="media/m365bp-simplifiedview.png" alt-text="Screenshot showing the simplified view of the Microsoft 365 admin center."lightbox="media/m365bp-simplifiedview.png":::
 
 2. In the upper right corner, select **Dashboard view** so that your admin center resembles the following image. Then select **Go to guided setup**. 
 
-   :::image type="content" source="media/m365bp-dashboardview.png" alt-text="Screenshot of the dashboard view of the Microsoft 365 admin center.":::
+   :::image type="content" source="media/m365bp-dashboardview.png" alt-text="Screenshot of the dashboard view of the Microsoft 365 admin center."lightbox="media/m365bp-dashboardview.png":::
 
 3. To install your Microsoft 365 apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later. Then select **Continue**.
 
-   :::image type="content" source="media/m365bp-installoffice.png" alt-text="Screenshot of the Install Office download button.":::
+   :::image type="content" source="media/m365bp-installoffice.png" alt-text="Screenshot of the Install Office download button."lightbox="media/m365bp-installoffice.png":::
 
 4. To add your organization's domain (*recommended*) or to use your default `.onmicrosoft.com` domain, select an option and then follow the prompts. Then select **Use this domain**.
 
-   :::image type="content" source="media/m365bp-adddomain.png" alt-text="Screenshot showing the option to add a domain.":::
+   :::image type="content" source="media/m365bp-adddomain.png" alt-text="Screenshot showing the option to add a domain."lightbox="media/m365bp-adddomain.png":::
 
    > [!TIP]
    > To get help with this task, see [Add a domain to Microsoft 365](../admin/setup/add-domain.md).
 
 5. To add a user, fill in the user's first name, last name, and user name, and then select **Add users and assign licenses**. Alternately, you can select **View all users** to go to your active users page, where you can view, add, and manage users. 
 
-   :::image type="content" source="media/m365bp-addusers.png" alt-text="Screenshot showing the Add Users and Assign Licenses page.":::
+   :::image type="content" source="media/m365bp-addusers.png" alt-text="Screenshot showing the Add Users and Assign Licenses page."lightbox="media/m365bp-addusers.png":::
 
    > [!TIP]
    > We recommend adding your administrators and members of your security team now. To get help with this task, see [Add users and assign licenses at the same time](../admin/add-users/add-users.md).
@@ -84,7 +84,7 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
 When you're finished with the basic setup process, you'll see **Setup is complete**, where you can tell us how setup went and then go to your Microsoft 365 admin center. At this point, basic setup is complete, but you still need to [set up and configure your security settings](m365bp-security-overview.md).
 
-:::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."::: 
+:::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen.""lightbox="media/m365bp-setupcomplete.png"::: 
 
 ## Work with a Microsoft partner
 
