@@ -70,9 +70,9 @@ Microsoft Syntex is offering a limited-time free preview for pay-as-you-go docum
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
 
-1. In the **Files and content** section, select **Set up Microsoft Syntex**.
+1. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
 
-1. On the **Microsoft Syntex** page, select **Set up Microsoft Syntex** to walk through the setup process. <br/>
+1. On the **Use content AI with Microsoft Syntex** page, select **Set up Microsoft Syntex** to walk through the setup process. <br/>
 
 1. On the **Configure AI Builder model creation** page, you can choose if you want to let end users create and train models that use AI Builder and apply them to document libraries. A menu option will be available in the document library ribbon in SharePoint document libraries in which it is enabled.
  
@@ -106,7 +106,7 @@ Microsoft Syntex is offering a limited-time free preview for pay-as-you-go docum
 
 1. On the confirmation page, select **Done**.
 
-1. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
+1. You'll be returned to your **Use content AI with Microsoft Syntex** page. From this page, you can select **Manage Microsoft Syntex** to make any changes to your configuration settings. 
 
 If you plan to use the pay-as-you-go preview, see [Configure Microsoft Syntex for Azure pay-as-you-go billing](syntex-azure-billing.md).
 
