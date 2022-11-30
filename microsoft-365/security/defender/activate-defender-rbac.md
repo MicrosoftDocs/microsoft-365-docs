@@ -86,7 +86,7 @@ Follow these steps to activate your workloads directly in Microsoft 365 Defender
 You have now successfully activated (or deactivated) that workload.
 
 >[!Note]
-> The Microsoft 365 Defender RBAC model only impacts the Microsoft 365 Defender security portal. It does not impact the [Office 365 Security & Compliance center]( https://security.microsoft.com/emailandcollabpermissions), or the [Microsoft Compliance center](https://compliance.microsoft.com/homepage).
+> The Microsoft 365 Defender RBAC model only impacts the Microsoft 365 Defender security portal. It does not impact the [Microsoft Purview Compliance center](https://compliance.microsoft.com) or the [Exchange Admin Center](https://admin.exchange.microsoft.com).
 
 ## Deactivate Microsoft 365 Defender RBAC
 
