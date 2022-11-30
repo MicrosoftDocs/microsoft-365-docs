@@ -43,15 +43,34 @@ Make sure that you meet the following requirements before you begin your setup p
 
 ## Guided setup process
 
-Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium. <br/><br/>
+Microsoft 365 Business Premium includes a guided process. The following video shows the guided setup process for Microsoft 365 Business Standard, which also applies to Microsoft 365 Business Premium. (Microsoft 365 Business Premium includes [advanced security settings that you'll configure](m365bp-security-overview.md) after your basic setup process is complete.)<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
-As soon as you've completed the guided setup process, make sure to proceed to [bump up security](m365bp-security-overview.md).
+**As soon as you've completed the guided setup process, proceed to [bump up security](m365bp-security-overview.md)**.
 
 > [!TIP]
 > After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Microsoft 365 apps, and saving, copying, and sharing files.
 
+### The guided setup process, step by step
+
+1. As a global administrator, go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in. By default, you'll see the simplified view, as shown in the following image:
+
+   :::image type="content" source="media/m365bp-simplifiedview.png" alt-text="Screenshot showing the simplified view of the Microsoft 365 admin center.":::
+
+2. In the upper right corner, select **Dashboard view** so that your admin center resembles the following image:
+
+   :::image type="content" source="media/m365bp-dashboardview.png" alt-text="Screenshot of the dashboard view of the Microsoft 365 admin center.":::
+
+3. Select **Go to guided setup**. 
+
+4. To install your Microsoft 365 apps (Office), select the download button.
+
+   :::image type="content" source="media/m365bp-installoffice.png" alt-text="Screenshot of the Install Office download button.":::
+
+   Then select **Continue**.
+
+5. 
 
 ## Work with a Microsoft partner
 
