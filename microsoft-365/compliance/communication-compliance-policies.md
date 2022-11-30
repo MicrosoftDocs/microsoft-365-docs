@@ -207,7 +207,7 @@ Communication compliance uses specific built-in trainable and global classifiers
 
 #### Images
 
-Communication compliance inspects only images between 100 kilobytes (KB) and 4 megabytes (MB) in size and dimensions greater than 50 x 50 pixels in height x width. For information about applying content flags that can detect adult, gory, and racy material in images, see [Adult content detection](../azure/cognitive-services/computer-vision/concept-detecting-adult-content).
+Communication compliance inspects only images between 100 kilobytes (KB) and 4 megabytes (MB) in size and dimensions greater than 50 x 50 pixels in height x width. For information about applying content flags that can detect adult, gory, and racy material in images, see [Adult content detection](/azure/cognitive-services/computer-vision/concept-detecting-adult-content).
 
 |**Classifier**|**Description**|**File types**|
 |:-------------|:--------------|:--------------|
