@@ -1,5 +1,5 @@
 ---
-title: Email & collaboration Permissions in the Microsoft 365 Defender portal
+title: Email and collaboration permissions in the Microsoft 365 Defender portal
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
