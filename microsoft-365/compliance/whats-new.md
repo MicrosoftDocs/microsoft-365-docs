@@ -47,9 +47,15 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - [Conduct an eDiscovery investigation of content in Microsoft Teams](/microsoftteams/ediscovery-investigation) - expanded reactions in Microsoft Teams chats are now supported in eDiscovery (Premium).
 - [Create an eDiscovery hold](/microsoft-365/compliance/create-ediscovery-holds) - clarified how eDiscovery holds are handled when a user's OneDrive URL changes.
 
+### On-premises scanner
+
+- **General availability (GA)**: Configuration for the Microsoft Purview Information Protection scanner (formerly named Azure Information Protection unified labeling scanner) in the Microsoft Purview compliance portal. For more information, see [Configure & install the information protection scanner](deploy-scanner-configure-install.md).
+
 ### Sensitivity labels
 
 - **General availability (GA)**: Trainable classifiers for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange). Trainable classifiers are now available for both auto-labeling for Office apps that use label settings (known as client-side auto-labeling) and auto-labeling policies (known as service-side auto-labeling). As a result, trainable classifiers are removed from the [comparison table](apply-sensitivity-label-automatically.md#compare-auto-labeling-for-office-apps-with-auto-labeling-policies) that lists only the differences between the two auto-labeling methods.
+
+- The automated email that has the subject **Incompatible sensitivity label detected** for when there's a [labeling mismatch for a site](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities) now contains a link to an internal troubleshooting guide that you must specify as a URL with the *LabelMismatchEmailHelpLink* parameter from Set-SPOTenant.
 
 - If you need to, you can now [disable co-authoring for your tenant by using PowerShell](sensitivity-labels-coauthoring.md#if-you-need-to-disable-this-feature).
 
