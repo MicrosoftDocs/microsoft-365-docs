@@ -66,14 +66,12 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
    :::image type="content" source="media/m365bp-installoffice.png" alt-text="Screenshot of the Install Office download button.":::
 
-4. To add your organization's domain (*recommended*) or to use your default `.onmicrosoft.com` domain, select an option and then follow the prompts. 
+4. To add your organization's domain (*recommended*) or to use your default `.onmicrosoft.com` domain, select an option and then follow the prompts. Then select **Use this domain**.
 
    :::image type="content" source="media/m365bp-adddomain.png" alt-text="Screenshot showing the option to add a domain.":::
 
    > [!TIP]
    > To get help with this task, see [Add a domain to Microsoft 365](../admin/setup/add-domain.md).
-
-   Then select **Use this domain**.
 
 5. To add a user, fill in the user's first name, last name, and user name, and then select **Add users and assign licenses**. Alternately, you can select **View all users** to go to your active users page, where you can view, add, and manage users. 
 
