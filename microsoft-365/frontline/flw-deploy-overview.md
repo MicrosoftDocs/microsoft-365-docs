@@ -22,9 +22,9 @@ ms.date: 10/28/2022
 
 # Learn where to start with a frontline deployment
 
-Thanks for choosing Microsoft 365 for frontline workers. Whether you're a small business or a large multi-national chain, Teams for frontline workers can help bring your organization together with chats, helpful apps, and more. And no matter whether you're just getting into collaboration tools for the first time, or you've already been using Teams for your non-frontline workers, we can help you get up and running.
+Thanks for choosing Microsoft 365 for frontline workers. Whether you're an independent business or a large multi-national chain, Microsoft 365 and Teams for frontline workers can help bring your organization together with tools for communication, collaboration, and productivity. And no matter whether you're just getting into collaboration tools for the first time, or you've already been using Microsoft 365 and Teams for your non-frontline workers, we can help you get up and running.
 
-|Path   |Description   |
+|Article   |Description   |
 |----------|----------|
 |[Trial setup for frontline managers](get-up-and-running.md)|If you're a manager of a frontline worker team, you can set up a trial for your frontline workforce from within Microsoft Teams. Admins can learn more about the manager-led setup at: [Manage the Frontline Trial in Teams](flw-trial.md). |
 |[Start with a pilot deployment of Microsoft 365 for frontline workers](flw-pilot.md)|Before you commit to a full rollout of Microsoft 365 for frontline workers across your organization, it's a good idea to try it out first with a small set of real people in your organization. |
