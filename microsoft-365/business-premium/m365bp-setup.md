@@ -64,7 +64,7 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
 3. Select **Go to guided setup**. 
 
-4. To install your Microsoft 365 apps (Office), select the download button, and then follow the prompts.
+4. To install your Microsoft 365 apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later.
 
    :::image type="content" source="media/m365bp-installoffice.png" alt-text="Screenshot of the Install Office download button.":::
 
