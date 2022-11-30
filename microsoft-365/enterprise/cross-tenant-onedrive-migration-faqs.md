@@ -19,7 +19,7 @@ description: "OneDrive Cross-tenant migration feature FAQs"
 
 # Cross-tenant OneDrive migration FAQs
 
-## Pre-migration
+## Pre-migration FAQs
 
 **Question**: Can a OneDrive account have any content in the **target tenant** before migration?</br>
 **Answer:** No. The tool doesn't support Merge functionality with existing content. The user being migrated must not have a pre-existing OneDrive on the target tenant.
