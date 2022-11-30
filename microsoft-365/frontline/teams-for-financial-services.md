@@ -107,8 +107,6 @@ More information: [Admin documentation for Collaboration Manager for Loans](/ind
 
 :::image type="content" source="media/financial-teams-apps.png" alt-text="Diagram of teams, team templates and apps that can be included.":::
 
-<!--- Update financial-teams-app.png to reflect the Bookings app and the Virtual Appointments app in Teams. --->
-
 ### Apps and services for financial services
 
 Ensure that your workers can communicate, collaborate, and deliver great customer service with apps like Shifts, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by including them in a team template. More information about [managing Teams apps](/microsoftteams/manage-apps).

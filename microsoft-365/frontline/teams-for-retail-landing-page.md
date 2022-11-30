@@ -38,8 +38,6 @@ Retail environments, with their rotating schedules and on-the-go staff, have ver
 3. [Configure services and apps](#configure-services-and-apps) - Use team templates to set up the teams you need quickly, including the channels and apps you need for your business. Add in other apps from Microsoft as needed to support your scenarios.
 :::image type="content" source="media/retail-teams-apps.png" alt-text="Diagram showing teams, team templates and apps that can be included." lightbox="media/retail-teams-apps.png":::
 
-<!--- Update the retail-teams-app.png to reflect the Bookings app and the Virtual Appointments app in Teams. --->
-
 ## Choose your scenarios
 
 Microsoft 365 and Microsoft Teams offer several capabilities that can help retail organizations with their daily operations and digital transformation. We recommend the following scenarios for retail organizations:
@@ -134,8 +132,6 @@ More information: [Onboard new employees](flw-onboarding-training.md)
 ## Configure services and apps
 
 :::image type="content" source="media/retail-teams-apps.png" alt-text="Diagram of teams, team templates and apps that can be included.":::
-
-<!--- Update retail-teams-app.png to reflect the Bookings app and the Virtual Appointments app in Teams. --->
 
 ### Apps and services for retail
 
