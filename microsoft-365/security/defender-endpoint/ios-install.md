@@ -54,7 +54,7 @@ This  section will cover:
     1. Zero touch(Silent) Onboarding - App is automatically installed  and activated without the need for user to open the app.
     1. Auto Onboarding of VPN - Defender VPN Profile is automatically setup without having the user to do so during onboarding. This step is not recommended if Zero touch is setup.
 
-## 1. Deployment steps (applicable for both Supervised and Unsupervised devices)
+## Deployment steps (applicable for both Supervised and Unsupervised devices)
 
 Deploy Defender for Endpoint on iOS via Intune Company Portal.
 
@@ -81,7 +81,7 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
 
    :::image type="content" source="images/ios-deploy-3.png" alt-text="The Device install status page" lightbox="images/ios-deploy-3.png":::
 
-## 2. Complete deployment for supervised devices
+## Complete deployment for supervised devices
 
 The Microsoft Defender for Endpoint on iOS app has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices. It can also provide Web Protection **without setting up a local VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks.
 
@@ -150,7 +150,7 @@ Once the profile has been downloaded, deploy the custom profile. Follow the step
 
 1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
-## 3. Automated Onboarding setup (only for Unsupervised devices)
+## Automated Onboarding setup (only for Unsupervised devices)
 
 Admins can automate the Defender onboarding for users in two different ways with Zero touch(Silent) Onboarding or Auto Onboarding of VPN.
 
