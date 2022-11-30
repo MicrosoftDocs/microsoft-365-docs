@@ -67,13 +67,11 @@ Managing your alerts and classifying true/false positives helps to train your th
 
 Before you classify or suppress an alert, determine whether the alert is accurate, a false positive, or benign.
 
-1. Go to the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in.
+1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
 
-2. In the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
+2. Select an alert to view more details about it. (To get help with this task, see [Review alerts in Defender for Endpoint](review-alerts.md).)
 
-3. Select an alert to view more details about it. (To get help with this task, see [Review alerts in Defender for Endpoint](review-alerts.md).)
-
-4. Depending on the alert status, take the steps described in the following table:
+3. Depending on the alert status, take the steps described in the following table:
 
    |Alert status|What to do|
    |---|---|
@@ -85,13 +83,11 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 Alerts can be classified as false positives or true positives in the Microsoft 365 Defender portal. Classifying alerts helps train Defender for Endpoint so that over time, you'll see more true alerts and fewer false alerts.
 
-1. Go to the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in.
+1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, choose **Incidents & alerts**, select **Alerts** and then select an alert.
 
-2. In the navigation pane, choose **Incidents & alerts**, select **Alerts** and then select an alert.
+2. For the selected alert, select **Manage alert**. A flyout pane opens.
 
-3. For the selected alert, select **Manage alert**. A flyout pane opens.
-
-4. In the **Manage alert** section, in the **Classification** field, classify the alert (True positive, Informational, expected activity, or False positive).
+3. In the **Manage alert** section, in the **Classification** field, classify the alert (True positive, Informational, expected activity, or False positive).
 
 > [!TIP]
 > For more information about suppressing alerts, see [Manage Defender for Endpoint alerts](/microsoft-365/security/defender-endpoint/manage-alerts). And, if your organization is using a security information and event management (SIEM) server, make sure to define a suppression rule there, too.
@@ -100,15 +96,13 @@ Alerts can be classified as false positives or true positives in the Microsoft 3
 
 If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft 365 Defender. Suppressing alerts helps reduce noise in your queue.
 
-1. Go to the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in.
+1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
 
-2. In the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
+2. Select an alert that you want to suppress to open its **Details** pane.
 
-3. Select an alert that you want to suppress to open its **Details** pane.
+3. In the **Details** pane, choose the ellipsis (**...**), and then **Create suppression rule**.
 
-4. In the **Details** pane, choose the ellipsis (**...**), and then **Create suppression rule**.
-
-5. Specify all the settings for your suppression rule, and then choose **Save**.
+4. Specify all the settings for your suppression rule, and then choose **Save**.
 
 > [!TIP]
 > Need help with suppression rules? See [Suppress an alert and create a new suppression rule](/microsoft-365/security/defender-endpoint/manage-alerts#suppress-an-alert-and-create-a-new-suppression-rule).
@@ -164,7 +158,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="The Quarantine file" lightbox="images/autoir-quarantine-file-1.png":::
 
-1. [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
+1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
@@ -172,11 +166,9 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review quarantined messages
 
-1. Go to the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in.
+1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, under **Email & collaboration**, select **Exchange message trace**.
 
-2. In the navigation pane, under **Email & collaboration**, select **Exchange message trace**.
-
-3. Select a message to view details.
+2. Select a message to view details.
 
 ### Restore file from quarantine
 
@@ -187,7 +179,7 @@ You can roll back and remove a file from quarantine if you've determined that it
    1. Go to **Start** and type _cmd_.
    2. Right-click **Command prompt** and select **Run as administrator**.
 
-2. Enter the following command, and press **Enter**:
+2. Type the following command, and press **Enter**:
 
     ```console
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
@@ -215,42 +207,38 @@ The procedures in this section describe how to define exclusions and indicators.
 
 ### Exclusions for Microsoft Defender Antivirus
 
-In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to define or edit your antivirus exclusions; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
+In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using [Microsoft Intune](/mem/endpoint-manager-overview) to define or edit your antivirus exclusions; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
 
 > [!TIP]
 > Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
 
 #### Use Intune to manage antivirus exclusions (for existing policies)
 
-1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
+1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
 
-2. Choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
+2. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
-3. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
+3. Expand **Microsoft Defender Antivirus Exclusions** and then specify your exclusions.
 
-4. Expand **Microsoft Defender Antivirus Exclusions** and then specify your exclusions.
-
-5. Choose **Review + save**, and then choose **Save**.
+4. Choose **Review + save**, and then choose **Save**.
 
 #### Use Intune to create a new antivirus policy with exclusions
 
-1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
+1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
-2. Choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
+2. Select a platform (such as **Windows 10 and later**, **macOS**, or **Windows 10 and Windows Server**).
 
-3. Select a platform (such as **Windows 10 and later**, **macOS**, or **Windows 10 and Windows Server**).
+3. For **Profile**, select **Microsoft Defender Antivirus exclusions**, and then choose **Create**.
 
-4. For **Profile**, select **Microsoft Defender Antivirus exclusions**, and then choose **Create**.
+4. Specify a name and description for the profile, and then choose **Next**.
 
-5. Specify a name and description for the profile, and then choose **Next**.
+5. On the **Configuration settings** tab, specify your antivirus exclusions, and then choose **Next**.
 
-6. On the **Configuration settings** tab, specify your antivirus exclusions, and then choose **Next**.
+6. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy you're creating. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
 
-7. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy you're creating. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
+7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
-8. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
-
-9. On the **Review + create** tab, review the settings, and then choose **Create**.
+8. On the **Review + create** tab, review the settings, and then choose **Create**.
 
 ### Indicators for Defender for Endpoint
 
@@ -319,7 +307,7 @@ If you have a file that was either wrongly detected as malicious or was missed, 
 
 If something was detected as malware based on behavior, and you don't have a file, you can submit your `Mpsupport.cab` file for analysis. You can get the *.cab* file by using the Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) tool on Windows 10 or Windows 11.
 
-1. Go to ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, and then run `MpCmdRun.exe` as an administrator.
+1. Go to `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, and then run `MpCmdRun.exe` as an administrator.
 
 2. Type `mpcmdrun.exe -GetFiles`, and then press **Enter**.
 
@@ -363,36 +351,32 @@ We recommend using [Intune](/mem/endpoint-manager-overview) to edit or set your 
 
 #### Use Intune to review and edit cloud-delivered protection settings (for existing policies)
 
-1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
+1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 
-2. Choose **Endpoint security** \> **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
+2. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 
-3. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
+3. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting cloud-delivered protection to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
 
-4. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting cloud-delivered protection to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
-
-5. Choose **Review + save**, and then **Save**.
+4. Choose **Review + save**, and then **Save**.
 
 #### Use Intune to set cloud-delivered protection settings (for a new policy)
 
-1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
+1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create policy**.
 
-2. Choose **Endpoint security** \> **Antivirus** \> **+ Create policy**.
+2. For **Platform**, select an option, and then for **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) Then choose **Create**.
 
-3. For **Platform**, select an option, and then for **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) Then choose **Create**.
+3. On the **Basics** tab, specify a name and description for the policy. Then choose **Next**.
 
-4. On the **Basics** tab, specify a name and description for the policy. Then choose **Next**.
-
-5. On the **Configuration settings** tab, expand **Cloud protection**, and specify the following settings:
+4. On the **Configuration settings** tab, expand **Cloud protection**, and specify the following settings:
 
    - Set **Turn on cloud-delivered protection** to **Yes**.
    - Set **Cloud-delivered protection level** to **Not configured**. (This level provides a strong level of protection by default while reducing the chances of getting false positives.)
 
-6. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
+5. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
 
-7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+6. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
-8. On the **Review + create** tab, review the settings, and then choose **Create**.
+7. On the **Review + create** tab, review the settings, and then choose **Create**.
 
 ### Remediation for potentially unwanted applications
 
@@ -407,37 +391,33 @@ We recommend using [Intune](/mem/endpoint-manager-overview) to edit or set PUA p
 
 #### Use Intune to edit PUA protection (for existing configuration profiles)
 
-1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
+1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
 
-2. Choose **Devices** \> **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
+2. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
 
-3. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
+3. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
 
-4. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
+4. Set **Detect potentially unwanted applications** to **Audit**. (You can turn it off, but by using audit mode, you'll be able to see detections.)
 
-5. Set **Detect potentially unwanted applications** to **Audit**. (You can turn it off, but by using audit mode, you'll be able to see detections.)
-
-6. Choose **Review + save**, and then choose **Save**.
+5. Choose **Review + save**, and then choose **Save**.
 
 #### Use Intune to set PUA protection (for a new configuration profile)
 
-1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
+1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles** \> **+ Create profile**.
 
-2. Choose **Devices** \> **Configuration profiles** \> **+ Create profile**.
+2. For the **Platform**, choose **Windows 10 and later**, and for **Profile**, select **Device restrictions**.
 
-3. For the **Platform**, choose **Windows 10 and later**, and for **Profile**, select **Device restrictions**.
+3. On the **Basics** tab, specify a name and description for your policy. Then choose **Next**.
 
-4. On the **Basics** tab, specify a name and description for your policy. Then choose **Next**.
+4. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
 
-5. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
+5. Set **Detect potentially unwanted applications** to **Audit**, and then choose **Next**. (You can turn off PUA protection, but by using audit mode, you'll be able to see detections.)
 
-6. Set **Detect potentially unwanted applications** to **Audit**, and then choose **Next**. (You can turn off PUA protection, but by using audit mode, you'll be able to see detections.)
+6. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
-7. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+7. On the **Applicability Rules** tab, specify the OS editions or versions to include or exclude from the policy. For example, you can set the policy to be applied to all devices certain editions of Windows 10. Then choose **Next**.
 
-8. On the **Applicability Rules** tab, specify the OS editions or versions to include or exclude from the policy. For example, you can set the policy to be applied to all devices certain editions of Windows 10. Then choose **Next**.
-
-9. On the **Review + create** tab, review your settings, and, and then choose **Create**.
+8. On the **Review + create** tab, review your settings, and, and then choose **Create**.
 
 ### Automated investigation and remediation
 
@@ -455,11 +435,9 @@ Depending on the [level of automation](/microsoft-365/security/defender-endpoint
 
 If you've worked through all the steps in this article and still need help, contact technical support.
 
-1. Go to the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in.
+1. In the [Microsoft 365 Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
 
-2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
-
-3. In the **Support Assistant** window, describe your issue, and then send your message. From there, you can open a service request.
+2. In the **Support Assistant** window, describe your issue, and then send your message. From there, you can open a service request.
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
@@ -473,6 +451,6 @@ If you've worked through all the steps in this article and still need help, cont
 
 ## See also
 
-[Manage Defender for Endpoint](manage-mde-post-migration.md)
-
-[Overview of Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use)
+- [Manage Defender for Endpoint](manage-mde-post-migration.md)
+- [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+- [Overview of Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use)
