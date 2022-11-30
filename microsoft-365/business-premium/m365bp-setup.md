@@ -114,9 +114,9 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 ## See also
 
+- [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md)
+- [Business subscriptions and billing documentation](../commerce/index.yml)
 - [Find a Microsoft partner or reseller](../admin/manage/find-your-partner-or-reseller.md)
-- [Set up self-service passwords](../admin/add-users/let-users-reset-passwords.md)
-- [Set up self-service group management](/azure/active-directory/enterprise-users/groups-self-service-management)
 
 ## Next objective
 
