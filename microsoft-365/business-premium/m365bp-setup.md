@@ -86,12 +86,11 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
    > [!TIP]
    > We recommend adding your administrators and members of your security team now. To get help with this task, see [Add users and assign licenses at the same time](../admin/add-users/add-users.md).
 
-
 7. If you added your domain in step 5, you can now connect your domain to Microsoft 365. To get help with this task, see [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
-8. When you're finished with the basic setup process, you'll see **Setup is complete**, where you can tell us how setup went and then go to your Microsoft 365 admin center.
+When you're finished with the basic setup process, you'll see **Setup is complete**, where you can tell us how setup went and then go to your Microsoft 365 admin center.
 
-   :::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."::: 
+:::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."::: 
 
 > [!IMPORTANT]
 > Basic setup is complete, but you still need to set up and configure your security settings. See [Bump up security](m365bp-security-overview.md).
