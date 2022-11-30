@@ -92,7 +92,6 @@ There are several ways you can configure tamper protection:
 ### Before you begin
 
 Verify that "tamper_protection" is set to "disabled" or "audit" to observe the state change.
-Also, make sure that "release_ring" does not report "Production".
 
 ```bash
 mdatp health
