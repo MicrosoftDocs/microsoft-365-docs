@@ -203,8 +203,8 @@ Customers can now enable privacy control for the phish report sent by Microsoft 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
 
 > [!NOTE]
->  On Supervised devices with the configuration profile, Defender can access the entire URL and if it is found to be phishing,  it will be blocked.
->  On an Unsupervised device, Defender has access to only the domain name, and if the domain is not a phishing URL it won't be blocked.
+> On Supervised devices with the configuration profile, Microsoft Defender for Endpoint can access the entire URL and if it is found to be phishing,  it will be blocked.
+> On an Unsupervised device, Microsoft Defender for Endpoint has access to only the domain name, and if the domain is not a phishing URL, it won't be blocked.
 
 ## Optional Permissions
 
