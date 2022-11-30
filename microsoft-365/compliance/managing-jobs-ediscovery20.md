@@ -22,7 +22,7 @@ search.appverid:
 
 # Manage jobs in eDiscovery (Premium)
 
-Long-running processes are associated with specific jobs that support cases, collections, and reporting in in Microsoft Purview eDiscovery (Premium). These jobs are triggered by user actions when using and managing cases.
+Long-running processes are associated with specific jobs that support cases, collections, and reporting in in Microsoft Purview eDiscovery (Premium). These jobs are triggered by user actions when using and managing cases and collections.
 
 Each type of job is displayed on the **Jobs report (preview)** tab and on the **Jobs** tab of a case in Microsoft Purview eDiscovery (Premium).
 
