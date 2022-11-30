@@ -116,8 +116,8 @@ A device can only be enrolled in one MDM solution, but you can use multiple MDM 
 |MDM solution |Single sign out|Zero touch provisioning|Azure AD conditional access|
 |-------------|---------------|-----------------------|---------------------------|
 |Intune (Microsoft) |Supported for Android and iOS devices enrolled in shared device mode |Supported for Android and iOS devices enrolled in shared device mode |Supported for Android and iOS devices enrolled in shared device mode |
-|Workspace ONE (VMware) |Supported with [Clear Android app data](https://docs.vmware.com/VMware-Workspace-ONE-UEM/services/iOS_Platform/GUID-SharedDevicesOverview.html) capabilities. Unavailable for iOS |Currently unavailable for Android and iOS. |Currently unavailable for Android and iOS. |
-|MobiControl (SOTI) |Supported with [Wipe program data](https://www.soti.net/mc/help/v14.4/console/applications/wipe_app_data.html) capabilities. Unavailable for iOS. |Currently unavailable for Android and iOS. |Currently unavailable for Android and iOS. |
+|Workspace ONE (VMware) |Supported with [Clear Android app data](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/iOS_Platform/GUID-SharedDevicesOverview.html) capabilities. Unavailable for iOS |Currently unavailable for Android and iOS. |Currently unavailable for Android and iOS. |
+|MobiControl (SOTI) |Supported with [Wipe program data](https://www.soti.net/mc/help/v14.4/en/console/applications/wipe_app_data.html) capabilities. Unavailable for iOS. |Currently unavailable for Android and iOS. |Currently unavailable for Android and iOS. |
 
 Windows devices enrolled in Intune support single sign out, zero touch provisioning, and Azure AD conditional access. You don’t need to configure shared device mode on Windows devices.
 
