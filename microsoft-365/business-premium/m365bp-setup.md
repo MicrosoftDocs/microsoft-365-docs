@@ -88,7 +88,7 @@ When you're finished with the basic setup process, you'll see **Setup is complet
 
 ## Work with a Microsoft partner
 
-If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
+If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365 Business Premium, follow these steps:
 
 1. Go to the [Browse Partners](https://appsource.microsoft.com/marketplace/partner-dir) page.
 
