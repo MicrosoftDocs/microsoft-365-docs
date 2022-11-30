@@ -84,7 +84,7 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
 When you're finished with the basic setup process, you'll see **Setup is complete**, where you can tell us how setup went and then go to your Microsoft 365 admin center. At this point, basic setup is complete, but you still need to [set up and configure your security settings](m365bp-security-overview.md).
 
-:::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen.""lightbox="media/m365bp-setupcomplete.png"::: 
+:::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."lightbox="media/m365bp-setupcomplete.png"::: 
 
 ## Work with a Microsoft partner
 
