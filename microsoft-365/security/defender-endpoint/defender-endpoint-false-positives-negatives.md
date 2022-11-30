@@ -257,7 +257,7 @@ In general, you shouldn't need to define exclusions for Microsoft Defender Antiv
 
 [Indicators](/microsoft-365/security/defender-endpoint/manage-indicators) (specifically, indicators of compromise, or IoCs) enable your security operations team to define the detection, prevention, and exclusion of entities. For example, you can specify certain files to be omitted from scans and remediation actions in Microsoft Defender for Endpoint. Or, indicators can be used to generate alerts for certain files, IP addresses, or URLs.
 
-To specify entities as exclusions for Microsoft Defender for Endpoint, create "allow" indicators for those entities. Such "allow" indicators in Microsoft Defender for Endpoint apply to next-generation protection, and [automated investigation & remediation](/microsoft-365/security/defender-endpoint/automated-investigations).
+To specify entities as exclusions for Defender for Endpoint, create "allow" indicators for those entities. Such "allow" indicators apply to [next-generation protection](microsoft-defender-antivirus-in-windows-10.md) and [automated investigation & remediation](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 "Allow" indicators can be created for:
 
