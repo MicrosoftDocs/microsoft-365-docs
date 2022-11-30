@@ -44,7 +44,7 @@ The following steps guide you on how to activate the Microsoft 365 Defender RBAC
 2. [Activate in Microsoft 365 Defender settings](#activate-in-microsoft-365-defender-settings)
 
 >[!Important]
->You must be a Global Administrator or Security Administrator in Azure Active Directory or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+>You must be a Global Administrator or Security Administrator in Azure Active Directory to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
 ### Activate from the Permissions and roles page
 
@@ -86,11 +86,11 @@ Follow these steps to activate your workloads directly in Microsoft 365 Defender
 You have now successfully activated (or deactivated) that workload.
 
 >[!Note]
-> The Microsoft 365 Defender RBAC model only impacts the Microsoft 365 Defender security portal. It does not impact the [Office 365 Security & Compliance center](https://protection.office.com/homepage), or the [Microsoft Compliance center](https://compliance.microsoft.com/homepage).
+> The Microsoft 365 Defender RBAC model only impacts the Microsoft 365 Defender security portal. It does not impact the [Office 365 Security & Compliance center]( https://security.microsoft.com/emailandcollabpermissions), or the [Microsoft Compliance center](https://compliance.microsoft.com/homepage).
 
 ## Deactivate Microsoft 365 Defender RBAC
 
-You can deactivate Microsoft 365 Defender RBAC and revert to the individual RBAC models from Defender for Endpoint, Defender for Identity, and Defender for Office 365 (Exchange Online Protection).
+You can deactivate Microsoft 365 Defender RBAC and revert to the individual RBAC models from Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Office 365 (Exchange Online Protection).
 
 To Deactivate the workloads, repeat the steps above and select the workloads you want to deactivate. The status will be set to **Not Active**.
 
