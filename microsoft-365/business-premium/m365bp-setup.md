@@ -79,14 +79,13 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
    Then select **Use this domain**.
 
-6. To add a user, fill in the user's first name, last name, and user name, and then select **Add users and assign licenses**. 
+6. To add a user, fill in the user's first name, last name, and user name, and then select **Add users and assign licenses**. Alternately, you can select **View all users** to go to your active users page, where you can view, add, and manage users. 
 
    :::image type="content" source="media/m365bp-addusers.png" alt-text="Screenshot showing the Add Users and Assign Licenses page.":::
 
    > [!TIP]
    > We recommend adding your administrators and members of your security team now. To get help with this task, see [Add users and assign licenses at the same time](../admin/add-users/add-users.md).
 
-   Alternately, you can select **View all users** to go to your active users page, where you can view, add, and manage users. 
 
 7. If you added your domain in step 5, you can now connect your domain to Microsoft 365. To get help with this task, see [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
