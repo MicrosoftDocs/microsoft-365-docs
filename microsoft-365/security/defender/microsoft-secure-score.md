@@ -46,6 +46,10 @@ Organizations gain access to robust visualizations of metrics and trends, integr
 
 :::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Microsoft Secure Score homepage in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
+>[!Note]
+> Currently, the Azure Active Directory related Microsoft Secure Score recommendations are not available for customer tenants registered in the following Azure Active Directory regions: 
+Japan, Australia, New Zealand, Fiji, Canada, United Kingdom, South Korea, France, United Arab Emirates, South America, Switzerland, Lichtenstein, Norway, Germany, Brazil, Sweden and Qatar.
+
 ## How it works
 
 You're given points for the following actions:
@@ -63,9 +67,6 @@ Your score is updated in real time to reflect the information presented in the v
 >[!Note]
 > For Microsoft Teams related recommendations, the recommendation state will get updated when changes occur in the configuration state. In addition, the recommendation state is refreshed once a month.
 
->[!Note]
-> Currently, the Azure Active Directory related Microsoft Secure Score recommendations are not available for customer tenants registered in the following Azure Active Directory regions: 
-Japan, Australia, New Zealand, Fiji, Canada, United Kingdom, South Korea, France, United Arab Emirates, South America, Switzerland, Lichtenstein, Norway, Germany, Brazil, Sweden and Qatar.
 
 ### Key scenarios
 
