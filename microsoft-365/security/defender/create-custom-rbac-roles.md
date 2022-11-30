@@ -102,8 +102,8 @@ To access and manage roles and permissions, without being a Global Administrator
 9. Select **Add assignments** and enter the Assignment name.
 10. To choose the **data sources** users assigned the Authorization permission will have access to:
 
-    - Select **Choose all data sources** to grant users permissions to create new roles and manage roles for all supported workloads.
-    - Select **Select specific data sources** to grant users permissions to create new roles and manage roles for a specific workload. For example, select Microsoft Defender for Endpoint from the dropdown to grant users the Authorization permission for the Microsoft Defender for Endpoint workload only.
+    - Select **Choose all data sources** to grant users permissions to create new roles and manage roles for all data sources.
+    - Select **Select specific data sources** to grant users permissions to create new roles and manage roles for a specific data source. For example, select Microsoft Defender for Endpoint from the dropdown to grant users the Authorization permission for the Microsoft Defender for Endpoint data source only.
 
 11. In **Assigned users and groups** – choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
 12. Select **Next** to review and finish creating the role and then select **Submit**.
