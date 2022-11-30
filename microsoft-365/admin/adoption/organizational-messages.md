@@ -60,7 +60,7 @@ Business bars are supported by Microsoft 365 Consumer subscribers, Office 2019, 
 
 The desktop teaching call-out is supported by Microsoft 365 Consumer and Commercial Office 2019, and Office 2016 Consumer.
 
-## How to enable Adoption Score Organizational Message
+## How to enable Adoption Score Organizational Messages
 
 To enable Adoption Score Organizational Message, the global administrator needs to enable Adoption Score first:
 
