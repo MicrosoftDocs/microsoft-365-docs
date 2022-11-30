@@ -9279,6 +9279,11 @@
       "source_path": "microsoft-365/security/office-365-security/virus-detection-in-spo.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-malware-protection-for-spo-odfb-teams-about",
       "redirect_document_id": true
-    },                     
+    },
+    {
+      "source_path": "microsoft-365/lighthouse/m365-lighthouse-deploy-baselines.md",
+      "redirect_url": "/microsoft-365/lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview",
+      "redirect_document_id": true
+    }
    ]
   }
