@@ -83,7 +83,7 @@ sections:
       - question: |
           Is bulk email filtering automatically enabled?
         answer: |
-          Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](.md)
+          Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](anti-spam-spam-vs-bulk-about.md)
           
       - question: |
           Does the service provide URL filtering?

@@ -93,15 +93,15 @@
        - name: Anti-spam protection
          items:
          - name: Anti-spam protection
-           href: .md
+           href: anti-spam-protection-about.md
          - name: Configure anti-spam policies
            href: anti-spam-policies-configure.md
          - name: Advanced Spam Filter (ASF) settings
            href: anti-spam-policies-asf-settings-about.md
          - name: What's the difference between junk email and bulk email?
-           href: .md
+           href: anti-spam-spam-vs-bulk-about.md
          - name: Spam confidence level (SCL)
-           href: .md
+           href: anti-spam-spam-confidence-level-scl-about.md
          - name: Bulk complaint level (BCL)
            href: anti-spam-bulk-complaint-level-bcl-about.md
          - name: Backscatter in EOP

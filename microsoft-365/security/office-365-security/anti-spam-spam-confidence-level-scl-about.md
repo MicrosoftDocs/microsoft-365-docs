@@ -44,7 +44,7 @@ You'll notice that SCL 2, 3, 4, and 7 aren't used by spam filtering.
 
 You can use mail flow rules (also known as transport rules) to stamp the SCL on messages. If you use a mail flow rule to set the SCL, the values 5 or 6 trigger the spam filtering action for **Spam**, and the values 7, 8, or 9 trigger the spam filtering action for **High confidence spam**. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
-Similar to the SCL, the bulk complaint level (BCL) identifies bad bulk email (also known as _gray mail_). A higher BCL indicates a bulk mail message is more likely to generate complaints (and is therefore more likely to be spam). You configure the BCL threshold in anti-spam policies. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md), [Bulk complaint level (BCL) in EOP)](anti-spam-bulk-complaint-level-bcl-about.md), and [What's the difference between junk email and bulk email?](.md).
+Similar to the SCL, the bulk complaint level (BCL) identifies bad bulk email (also known as _gray mail_). A higher BCL indicates a bulk mail message is more likely to generate complaints (and is therefore more likely to be spam). You configure the BCL threshold in anti-spam policies. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md), [Bulk complaint level (BCL) in EOP)](anti-spam-bulk-complaint-level-bcl-about.md), and [What's the difference between junk email and bulk email?](anti-spam-spam-vs-bulk-about.md).
 
 ****
 

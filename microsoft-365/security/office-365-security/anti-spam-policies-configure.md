@@ -123,7 +123,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
 
 5. On the **Bulk email threshold & spam properties** page that appears, configure the following settings:
 
-   - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that triggers the specified action for the **Bulk** spam filtering verdict that you configure on the next page. A higher value indicates the message is less desirable (more likely to resemble spam). The default value is 7. For more information, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md) and [What's the difference between junk email and bulk email?](.md).
+   - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that triggers the specified action for the **Bulk** spam filtering verdict that you configure on the next page. A higher value indicates the message is less desirable (more likely to resemble spam). The default value is 7. For more information, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md) and [What's the difference between junk email and bulk email?](anti-spam-spam-vs-bulk-about.md).
 
      By default, the PowerShell only setting _MarkAsSpamBulkMail_ is `On` in anti-spam policies. This setting dramatically affects the results of a **Bulk** filtering verdict:
 
