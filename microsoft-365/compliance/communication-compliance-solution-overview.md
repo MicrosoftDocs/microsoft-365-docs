@@ -95,7 +95,7 @@ Use the following steps to configure communication compliance for your organizat
 4. Create and configure [communication compliance policies](/microsoft-365/compliance/communication-compliance-configure#step-5-required-create-a-communication-compliance-policy)
 
 > [!IMPORTANT]
-> Microsoft Purview Communication Compliance provides built-in machine learning tools for detecting messages that may violate regulatory, code of conduct, or organizational requirements. Users may choose built-in classifiers during policy configuration to evaluate organization communications and admin are able to edit policy settings at any time according to organizational needs. Built with privacy by design, no customer data/evaluations are shared with Microsoft unless explicitly consented to by your organization’s investigators via the Report as Misclassified action.
+> Microsoft Purview Communication Compliance provides built-in machine learning tools for detecting messages that may violate regulatory, code of conduct, or organizational requirements. Users may choose built-in classifiers during policy configuration to evaluate organization communications and admin are able to edit policy settings at any time according to organizational needs. Built with privacy by design, no customer data/evaluations are shared with Microsoft unless explicitly consented to by your organization’s investigators via the *Report as Misclassified* action.
 
 ## More information about communication compliance
 
