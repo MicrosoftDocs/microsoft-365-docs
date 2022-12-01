@@ -220,7 +220,7 @@ First, identify the content you would like to manage and the location of the con
 
 Many customers want to target a retention policy to specific users or mailboxes. For example, they may want to apply a longer retention period to the mailboxes of people in leadership roles or apply shorter retention to shared mailboxes. Adaptive policy scopes allow you to do this by using their AD attributes to target the policy. If one of the attribute values changes then the retention policy will automatically update its membership.
 
-First, [decide what attributes you will use to target](retention-settings.md#configuration-information-for-adaptive-scopes) the users or mailboxes that you want to include or exclude from your policy. Next, [Create an Adaptive Policy Scope and use it with a retention policy](retention.md#adaptive-or-static-policy-scopes-for-retention).
+First, [decide what attributes you will use to target](microsoft-365-adaptive-scopes.md#configuration-information-for-adaptive-scopes) the users or mailboxes that you want to include or exclude from your policy. Next, [Create an Adaptive Policy Scope and use it with a retention policy](microsoft-365-adaptive-scopes.md#adaptive-or-static-policy-scopes).
 
 ## Microsoft Purview Records Management
 

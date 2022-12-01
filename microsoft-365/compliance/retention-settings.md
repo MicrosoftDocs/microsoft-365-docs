@@ -40,177 +40,14 @@ For overview information about policies for retention and how retention works in
 
 ## Scopes - adaptive and static
 
-If you're unfamiliar with adaptive and static scopes, and to help you choose which one to use when you configure a policy for retention, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). 
+If you're unfamiliar with adaptive and static scopes, and to help you choose which one to use when you configure a policy for retention, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#adaptive-or-static-policy-scopes). 
 
 When you've decided whether to use an adaptive or static scope, use the following information to help you configure it:
-- [Configuration information for adaptive scopes](#configuration-information-for-adaptive-scopes)
+- [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configuration-information-for-adaptive-scopes)
 - [Configuration information for static scopes](#configuration-information-for-static-scopes)
 
 > [!TIP]
 > If you have policies that use static scopes and you want to convert them to adaptive scopes, leave your existing policies in place while you create new policies that use adaptive scopes with the same retention settings. Validate these new policies are targeting the correct users, sites, and groups before you disable or delete the old policies with static scopes.
-
-### Configuration information for adaptive scopes
-
-When you choose to use adaptive scopes, you're prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes or properties:
-
-| Adaptive scope type | Attributes or properties supported include |
-|:-----|:-----|
-|**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
-|**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
-|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
-
-The property names for sites are based on SharePoint site managed properties. For information about the custom attributes, see [Using Custom SharePoint Site Properties to Apply Microsoft 365 Retention with Adaptive Policy Scopes](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
-
-The attribute names for users and groups are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
-
-- **Alias** maps to the LDAP name **mailNickname** that displays as **Email** in the Azure AD admin center.
-- **Email addresses** maps to the LDAP name **proxyAddresses** that displays as **Proxy address** in the Azure AD admin center.
-
-The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
-
-> [!TIP]
-> For more information about using the advanced query builder, see the following webinars: 
-> - [Building Advanced Queries for Users and Groups with Adaptive Policy Scopes](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
-> - [Building Advanced Queries for SharePoint Sites with Adaptive Policy Scopes](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
-
-A single policy for retention can have one or many adaptive scopes.
-
-#### To configure an adaptive scope
-
-Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you'll use. You might need to work with other administrators to confirm this information. 
-
-Specifically for SharePoint sites, there might be additional SharePoint configuration needed if you plan to use [custom site properties](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
-
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), navigate to one of the following locations:
-    
-    - If you're using the records management solution:
-        - **Solutions** \> **Records management** \> **Adaptive scopes** tab \> + **Create scope**
-        
-    - If you're using the data lifecycle management solution:
-       - **Solutions** \> **Data lifecycle management** \> **Microsoft 365** \> **Adaptive scopes** tab \> + **Create scope**
-    
-    Don't immediately see your solution in the navigation pane? First select **Show all**. 
-
-2. Follow the prompts in the configuration to first select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
-    
-    For example, to configure an adaptive scope that will be used to identify users in Europe, first select **Users** as the scope type, and then select the **Country or region** attribute, and type in **Europe**:
-    
-    ![Example adaptive scope configuration.](../media/example-adaptive-scope.png)
-    
-    Once a day, this query will run against Azure AD and identify all users who have the value **Europe** specified for in their account for the **Country or region** attribute.
-    
-    > [!IMPORTANT]
-    > Because the query doesn't run immediately, there's no validation that you typed in the value correctly.
-    
-    Select **Add attribute** (for users and groups) or **Add property** (for sites) to use any combination of attributes or properties that are supported for their scope type, together with logical operators to build queries. The operators supported are **is equal to**, **is not equal to**, **starts with** and **not starts with**, and you can group selected attributes or properties. For example:
-    
-    ![Example adaptive scope configuration with groupings of attributes.](../media/example-adaptive-scope-grouping.png)
-    
-    Alternatively, you can select **Advanced query builder** to specify your own queries:
-    
-    - For **User** and **Microsoft 365 Group** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state:
-    
-        ![Example adaptive scope with advanced query.](../media/example-adaptive-scope-advanced-query.png)
-        
-        One of the advantages of using the advanced query builder for these scopes is a wider choice of query operators:
-        - **and**
-        - **or**
-        - **not**
-        - **eq** (equals)
-        - **ne** (not equals)
-        - **lt** (less than)
-        - **gt** (greater than)
-        - **like** (string comparison)
-        - **notlike** (string comparison)
-    
-    - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
-        
-        For example, because SharePoint site scopes automatically include all SharePoint site types, which include Microsoft 365 group-connected and OneDrive sites, you can use the indexed site property **SiteTemplate** to include or exclude specific site types. The templates you can specify:
-        - `SITEPAGEPUBLISHING` for modern communication sites
-        - `GROUP` for Microsoft 365 group-connected sites
-        - `TEAMCHANNEL` for Microsoft Teams private channel sites
-        - `STS` for a classic SharePoint team site
-        - `SPSPERS` for OneDrive sites
-        
-        So to create an adaptive scope that includes only modern communication sites and excludes Microsoft 365 goup-connected and OneDrive sites, specify the following KQL query:
-        ````console
-        SiteTemplate=SITEPAGEPUBLISHING
-        ````
-    
-    You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
-    
-    > [!TIP]
-    > You must use the advanced query builder if you want to exclude inactive mailboxes. Or conversely, target just inactive mailboxes. For this configuration, use the OPATH property *IsInactiveMailbox*:
-    > 
-    > - To exclude inactive mailboxes, make sure the query includes: `(IsInactiveMailbox -eq "False")`
-    > - To target just inactive mailboxes, specify: `(IsInactiveMailbox -eq "True")`
-
-3. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy for retention.
-
-> [!NOTE]
-> It can take up to five days for the queries to fully populate and changes will not be immediate. Factor in this delay by waiting a few days before you add a newly created scope to a policy for retention.
-
-To confirm the current membership and membership changes for an adaptive scope:
-
-1. Double-click (or select and press Enter) the scope on the **Adaptive scopes** page
-
-2. From the flyout **Details** pane, select **Scope details**. 
-    
-    Review the information that identifies all the users, sites, or groups currently in the scope, if they were automatically added or removed, and the date and time of that membership change.
-
-> [!TIP]
-> Use the [policy lookup](retention.md#policy-lookup) option to help you identify the policies that are currently assigned to specific users, sites, and Microsoft 365 groups.
-
-#### Validating advanced queries
-
-You can manually validate advanced queries by using PowerShell and SharePoint search:
-- Use PowerShell for the scope types **Users** and **Microsoft 365 Groups**
-- Use SharePoint search for the scope type **SharePoint sites**
-
-To run a query using PowerShell:
-
-1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) using an account with [appropriate Exchange Online Administrator permissions](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet).
-
-2. Use either [Get-Recipient](/powershell/module/exchange/get-recipient), [Get-Mailbox](/powershell/module/exchange/get-mailbox), or [Get-User](/powershell/module/exchange/get-user) with the *-Filter* parameter and your [OPATH query](/powershell/exchange/filter-properties) for the adaptive scope enclosed in curly brackets (`{`,`}`). If your attribute values are strings, enclose these values in double or single quotes.
-
-    You can determine whether to use Get-Mailbox, Get-Recipient, or Get-User for validation by identifying which cmdlet is supported by the [OPATH property](/powershell/exchange/filter-properties) that you choose for your query.
-
-    > [!IMPORTANT]
-    > Get-Mailbox does not support the *MailUser* recipient type, so Get-Recipient or Get-User must be used to validate queries that include on-premises mailboxes in a hybrid environment.
-
-    To validate a **User** scope, use the appropriate command:
-    - `Get-Mailbox` with *-RecipientTypeDetails UserMailbox,SharedMailbox,RoomMailbox,EquipmentMailbox*
-    - `Get-Recipient` with *-RecipientTypeDetails UserMailbox,MailUser,SharedMailbox,RoomMailbox,EquipmentMailbox*
-    
-    To validate a **Microsoft 365 Group** scope, use:
-    - `Get-Mailbox` with *-GroupMailbox* or `Get-Recipient` with *-RecipientTypeDetails GroupMailbox*
-
-    For example, to validate a **User** scope, you could use:
-    
-    ````PowerShell
-    Get-Recipient -RecipientTypeDetails UserMailbox,MailUser -Filter {Department -eq "Marketing"} -ResultSize Unlimited
-    ````
-    
-    To validate a **Microsoft 365 Group** scope, you could use:
-    
-    ```PowerShell
-    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
-    ```
-    
-    > [!TIP]
-    > When you use these commands to validate a user scope, if the number of recipients returned is higher than expected, it might be because it includes users who don't have a valid license for adaptive scopes. These users won't have the retention settings applied to them.
-    > 
-    > For example, in a hybrid environment, you might have unlicensed synchronized user accounts without an Exchange mailbox on-premises or in Exchange Online. You can identify these users by running the following command: `Get-User -RecipientTypeDetails User`
-
-3. Verify that the output matches the expected users or groups for your adaptive scope. If it doesn't, check your query and the values with the relevant administrator for Azure AD or Exchange.
- 
-To run a query using SharePoint search:
-
-1. Using a global admin account or an account that has the SharePoint admin role, go to `https://<your_tenant>.sharepoint.com/search`.
-
-2. Use the search bar to specify your KQL query.
-
-3. Verify that the search results match the expected site URLs for your adaptive scope. If they don't, check your query and the URLs with the relevant administrator for SharePoint.
 
 ### Configuration information for static scopes
 
@@ -287,7 +124,7 @@ To specify individual OneDrive accounts, see [Get a list of all user OneDrive UR
 >
 > Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage, or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify for retention settings.
 >
-> Because of the challenges of reliably specifying URLs for individual users to include or exclude for static scopes, [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) with the **User** scope type are better suited for this purpose.
+> Because of the challenges of reliably specifying URLs for individual users to include or exclude for static scopes, [adaptive scopes](microsoft-365-adaptive-scopes.md#adaptive-or-static-policy-scopes) with the **User** scope type are better suited for this purpose.
 
 #### Exceptions for adaptive policy scopes
 

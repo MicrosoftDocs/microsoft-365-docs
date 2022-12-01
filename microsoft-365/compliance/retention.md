@@ -358,7 +358,7 @@ Advantages of using static scopes:
 
 - The **Skype for Business** and **Exchange public folders** locations don't support adaptive scopes. For those locations, you must use a static scope.
 
-For configuration information, see [Configuring adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
+For configuration information, see [Configuring adaptive scopes](microsoft-365-adaptive-scopes.md#configuration-information-for-adaptive-scopes).
 
 To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
 
