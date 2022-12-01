@@ -49,13 +49,13 @@ To enable Group Level Aggregates:
 
 Once enabled, it can be accessed by all roles on the people experiences pages.
 
-:::image type="content" source="../../media/enable-group-level-insights-adoption-score.png" alt-text="Screenshot: Turn on group-level insights in Adoption Score":::
+:::image type="content" source="../../media/enable-group-level-insights-adoption-score.png" alt-text="Screenshot: Turn on group-level insights in Adoption Score.":::
 
 ## Data accuracy evaluation
 
 Before group-level insights can be enabled, you need to run a data accuracy evaluation to determine if group data is accurate. The evaluation helps you make an informed decision about which segments to use that will best reflect your organization’s composition.
 
-:::image type="content" source="../../media/group-level-insights-data-accuracy.jpg" alt-text="Screenshot: Warning to run a data accuracy evaluation before enabling group-level insights":::
+:::image type="content" source="../../media/group-level-insights-data-accuracy.jpg" alt-text="Screenshot: Warning to run a data accuracy evaluation before enabling group-level insights.":::
 
 The data accuracy evaluation check is a report that reflects the organization’s composition based on key attributes in Azure AD.
 
@@ -71,7 +71,7 @@ Currently, we provide capabilities for five attributes in Azure AD:
 
 - City, State, and Country
 
-:::image type="content" source="../../media/group-level-aggregates-data-evaluation.png" alt-text="Screenshot: Group-level data evaluation report":::
+:::image type="content" source="../../media/group-level-aggregates-data-evaluation.png" alt-text="Screenshot: Group-level data evaluation report.":::
 
 The report displays the number of people who are included for all the different organizational attributes out of the total number of employees in Azure AD. This is included based on an entry in the Azure AD fields for those five selected attributes. You can download the report for these five attributes and check for data accuracy. This report is only run and approved once while setting up Group Level Aggregates.
 
@@ -85,4 +85,4 @@ Group-level insights on people experience insights help filter the overall score
 
 In some cases, you may not see an entire group in the filters despite all data being accurate in Azure AD. This happens when the group has fewer than 10 individuals for that unique group. We do this to protect user privacy so that no insights can be directly correlated to individual users.
 
-:::image type="content" source="../../media/group-level-aggregates-filters.png" alt-text="Screenshot: Filters for group-level insights in Adoption Score":::
+:::image type="content" source="../../media/group-level-aggregates-filters.png" alt-text="Screenshot: Filters for group-level insights in Adoption Score.":::
