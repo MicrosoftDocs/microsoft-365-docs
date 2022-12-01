@@ -295,19 +295,21 @@ To add file paths to exclude, complete the following steps:
 
 1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
 2. In the **File path exclusion** section, select **Add file paths to exclude**.
-3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific and wildcard folders and sub-folders to be excluded. For more information, see examples in the note below.
+3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific and wildcard folders and sub-folders to be excluded. For more information, see the examples below.
 4. Select **Add file paths** to exclude to configure the file path exclusions or **Close** to discard the changes. 
 
-> [!NOTE]
-> Examples of formatting for excluding file paths include:
-> - **\\\\ms.temp\LocalFolder or C:\temp** <br>
->   Exclude files directly under the folder and all sub-folders for every file path starting with the entered prefix.
-> - **\public\local\\** <br> 
->   Exclude files from every file path containing entered value. Matches with 'C:\Users\Public\local\', 'C:\Users\User1\Public\local\', and '\\ms.temp\Public\local'
-> - **C:\Users\\\*\Desktop** <br>
->   C:\Users\\\*\Desktop: Wildcards are supported. Matches with 'C:\Users\user1\Desktop' and 'C:\Users\user2\Desktop'
-> - **C:\Users\\\*(2)\Desktop** <br>
->   Wildcards with numbers are supported. Matches with 'C:\Users\user1\Desktop' and 'C:\Users\user2\Shared\Desktop'
+#### Examples
+
+Examples of formatting for excluding file paths include:
+
+- **\\\\ms.temp\LocalFolder\ or C:\temp** <br>
+  Exclude files directly under the folder and all sub-folders for every file path starting with the entered prefix.
+- **\public\local\\** <br> 
+  Exclude files from every file path containing entered value. Matches with 'C:\Users\Public\local\\', 'C:\Users\User1\Public\local\', and '\\\\ms.temp\Public\local'.
+- **C:\Users\\\*\Desktop** <br>
+  C:\Users\\\*\Desktop: Wildcards are supported. Matches with 'C:\Users\user1\user1\Desktop' and 'C:\Users\user2\Desktop'.
+- **C:\Users\\\*(2)\Desktop** <br>
+  Wildcards with numbers are supported. Matches with 'C:\Users\user1\Desktop' and 'C:\Users\user2\Shared\Desktop'.
 
 To delete a file path exclusion, select the file path exclusion and select **Delete**.
 
