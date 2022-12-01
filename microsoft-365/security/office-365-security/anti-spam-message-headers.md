@@ -80,7 +80,7 @@ The individual fields and values are described in the following table.
 |`SFV:SKS`|The message was marked as spam prior to being processed by spam filtering. For example, the message was marked as SCL 5 to 9 by a mail flow rule.|
 |`SFV:SPM`|The message was marked as spam by spam filtering.|
 |`SRV:BULK`|The message was identified as bulk email by spam filtering and the bulk complaint level (BCL) threshold. When the _MarkAsSpamBulkMail_ parameter is `On` (it's on by default), a bulk email message is marked as spam (SCL 6). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
-|`X-CustomSpam: [ASFOption]`|The message matched an Advanced Spam Filter (ASF) setting. To see the X-header value for each ASF setting, see [Advanced Spam Filter (ASF) settings](advanced-spam-filtering-asf-options.md).|
+|`X-CustomSpam: [ASFOption]`|The message matched an Advanced Spam Filter (ASF) setting. To see the X-header value for each ASF setting, see [Advanced Spam Filter (ASF) settings](anti-spam-policies-asf-settings-about.md).|
 
 ## X-Microsoft-Antispam message header fields
 
@@ -88,7 +88,7 @@ The following table describes useful fields in the **X-Microsoft-Antispam** mess
 
 |Field|Description|
 |---|---|
-|`BCL`|The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (and is therefore more likely to be spam). For more information, see [Bulk complaint level (BCL)](bulk-complaint-level-values.md).|
+|`BCL`|The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (and is therefore more likely to be spam). For more information, see [Bulk complaint level (BCL)](anti-spam-bulk-complaint-level-bcl-about.md).|
 
 ## Authentication-results message header
 
