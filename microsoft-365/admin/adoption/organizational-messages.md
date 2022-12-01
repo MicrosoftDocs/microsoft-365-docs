@@ -85,7 +85,7 @@ After Adoption Score is enabled, the global administrator and organizational mes
 
 Visit [privacy controls for Adoption Score](privacy.md) to understand how to enable Adoption Score.
 
-:::image type="content" source="../../media/org-message-adoption-score-expanded.jpg" alt-text="Screenshot: How to enable Organizational Messages in Adoption Score." lightbox="../../media/org-message-adoption-score-expanded.jpg":::
+:::image type="content" source="../../media/org-message-adoption-score.png" alt-text="Screenshot: How to enable Organizational Messages in Adoption Score." lightbox="../../media/org-message-adoption-score-expanded.jpg":::
 
 ## Getting Started
 
@@ -144,7 +144,7 @@ As global administrator or organizational message writer role, you can do any of
 > [!NOTE]
 > The recipient list is refreshed daily. The users who adopted the recommended practices will be removed from the recipient lists.
 
-:::image type="content" source="../../media/org-message-select-recipients-expanded.jpg" alt-text="Screenshot: Select recipients for Organizational Messages in Adoption Score." lightbox="../../media/org-message-select-recipients-expanded.jpg":::
+:::image type="content" source="../../media/org-message-select-recipients.png" alt-text="Screenshot: Select recipients for Organizational Messages in Adoption Score." lightbox="../../media/org-message-select-recipients-expanded.jpg":::
 
 ### Step 3: Schedule a time window and frequency for delivery of the messages
 
@@ -159,7 +159,7 @@ As global administrator or organizational message writer role, you can do any of
 > [!NOTE]
 > If the frequency of the message is set as once a week, the message will only show on one of the surfaces per week. After the user selects or dismisses the message, it won’t show up again. Teaching call-out messages only appear twice in their lifetime even if the user doesn’t select it.
 
-:::image type="content" source="../../media/org-message-schedule-time-expanded.jpg" alt-text="Screenshot: Schedule your message for Organizational Messages in Adoption Score." lightbox="../../media/org-message-schedule-time-expanded.jpg":::
+:::image type="content" source="../../media/org-message-schedule-message.png" alt-text="Screenshot: Schedule your message for Organizational Messages in Adoption Score." lightbox="../../media/org-message-schedule-time-expanded.jpg":::
 
 ### Step 4: Finish or Save Draft
 
@@ -194,7 +194,7 @@ Once messages have been created, you'll see the reporting in the table under the
 > [!NOTE]
 > This capability is only available to Product admins, report reader roles, and user success specialists who have reader permissions.
 
-:::image type="content" source="../../media/org-message-track-status-expanded.jpg" alt-text="Screenshot: Track the status of your message for Organizational Messages in Adoption Score." lightbox="../../media/org-message-track-status-expanded.jpg":::
+:::image type="content" source="../../media/org-message-track-status.png" alt-text="Screenshot: Track the status of your message for Organizational Messages in Adoption Score." lightbox="../../media/org-message-track-status-expanded.jpg":::
 
 ### Step 6: Cancel or clone messages
 
