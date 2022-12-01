@@ -61,7 +61,7 @@ To implement role-based access, you'll need to define admin roles, assign corres
 ### Before you begin
 
 >[!Note]
-> If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
+> If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](../defender/manage-rbac.md).
 
 Before using RBAC, it's important that you understand the roles that can grant permissions and the consequences of turning on RBAC.
 
