@@ -554,7 +554,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 In the **View data by Email \> Spam** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
 - **Advanced filter**: Phishing signals based on machine learning.
-- **Bulk**: The [bulk complaint level (BCL)](bulk-complaint-level-values.md) of the message exceeds the defined threshold for spam.
+- **Bulk**: The [bulk complaint level (BCL)](anti-spam-bulk-complaint-level-bcl-about.md) of the message exceeds the defined threshold for spam.
 - **Domain reputation**: The message was from a domain that was previously identified as sending spam in other Microsoft 365 organizations.
 - **Fingerprint matching**: The message closely resembles a previous detected malicious message.
 - **IP reputation**: The message was from a source that was previously identified as sending spam in other Microsoft 365 organizations.
@@ -767,7 +767,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 
 In the **View data by Content \> Malware** view, the following information is shown in the chart for Microsoft Defender for Office 365 organizations:
 
-- **Anti-malware engine**: Malicious files detected in SharePoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](virus-detection-in-spo.md).
+- **Anti-malware engine**: Malicious files detected in SharePoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](anti-malware-protection-for-spo-odfb-teams-about.md).
 - **MDO detonation**: Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 - **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
 
