@@ -58,6 +58,12 @@ For more information for determining the root cause for these service alerts, se
 
 If your organization has recently created or changed mail flow connectors in your on-premises or Exchange Online organization, see the following articles for more information.
 
+- [Queued messages report in the new EAC in Exchange Online](/exchange/monitoring/mail-flow-reports/mfr-queued-messages-report#queues)
+
+- [Mail flow insights in the EAC](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
+
+- [Trace an email message in Exchange Online](/exchange/monitoring/trace-an-email-message/trace-an-email-message)
+
 - [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 
 - [Set up connectors to route mail](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)
@@ -66,8 +72,4 @@ If your organization has recently created or changed mail flow connectors in you
 
 - [Mail flow reports in the EAC](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
-- [Mail flow insights in the EAC](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
-
 - [Queued messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-queued-messages-report)
-
-- [Trace an email message in Exchange Online](/exchange/monitoring/trace-an-email-message/trace-an-email-message)
