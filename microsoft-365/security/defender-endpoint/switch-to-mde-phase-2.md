@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 12/01/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
