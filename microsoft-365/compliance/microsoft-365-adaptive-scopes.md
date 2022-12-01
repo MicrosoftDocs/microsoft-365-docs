@@ -50,7 +50,7 @@ To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptiv
 
 ### Maximums for adaptive policy scopes
 
-There's no limit to the number of adaptive policy scopes that you can add to a communications compliance policy, but there are some maximum limits for the query that defines each adaptive scope:
+There's no limit to the number of adaptive policy scopes that you can add to a compliance policy, but there are some maximum limits for the query that defines each adaptive scope:
 
 - String length for attribute or property values: 200
 - Number of attributes or properties without a group, or within a group: 10
