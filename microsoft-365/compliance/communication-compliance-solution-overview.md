@@ -29,8 +29,6 @@ Protecting sensitive information and detecting and acting on workplace harassmen
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## What is communication compliance? 
-
 Microsoft Purview Communication Compliance is an insider risk solution that helps you detect, capture, and act on inappropriate messages that can lead to potential data security or compliance incidents within your organization. Communication compliance evaluates text and image-based messages in Microsoft and third-party apps (Teams, Yammer, Outlook, WhatsApp, etc.) for potential business policy violations including inappropriate sharing of sensitive information, threatening or harassing language as well as potential regulatory violations (stock manipulation or money laundering).  
 
 Communication compliance’s mission is to foster safe and compliant communications across customers’ enterprise communication channels. With role-based access controls, human investigators can take remediation actions such as removing a message from Teams or notifying senders of inappropriate conduct. 
@@ -38,7 +36,7 @@ Communication compliance’s mission is to foster safe and compliant communicati
 > [!IMPORTANT]
 > Microsoft is committed to making sure artificial intelligence (AI) systems are developed responsibly and in ways that warrant people’s trust. As part of this commitment, Microsoft Purview engineering teams are operationalizing the six core principles of [Microsoft’s Responsible AI](https://www.microsoft.com/ai/our-approach) strategy to design, build, and manage AI solutions. As part of our effort to responsibly deploy AI, we provide documentation, role-based access, scenario attestation, and more to help organizations use AI systems responsibly. 
 
-## What are the system’s capabilities?  
+## System capabilities 
 
 Communication compliance uses machine learning models and keyword matching to identify messages containing potential business conduct or regulatory policy violations that are then reviewed by an investigator. Communication Compliance cultivates user privacy with pseudonymization and responsible use of the product by providing role-based access controls. Users are given permissions that allow them to perform the tasks in their role, such as:  
 
@@ -48,7 +46,7 @@ Communication compliance uses machine learning models and keyword matching to id
 
 - *Communication compliance role*: Communication compliance role can create policies for the organization and review policy matches for every policy.  
 
-## What are the system’s intended uses? 
+## Intended uses of communication compliance 
 
 Communication compliance empowers organizations to detect, triage, and remediate communications with potential business conduct and/or regulatory compliance violations. Communication compliance provides the following policy templates that leverage machine learning classifiers for users:  
 
@@ -56,17 +54,17 @@ Communication compliance empowers organizations to detect, triage, and remediate
 
 - *Regulatory compliance*: Customer complaints, gifts & entertainment (preview), money laundering (preview), regulatory collusion (preview), stock manipulation (preview), unauthorized disclosure (preview) classifiers 
 
-## How is communication compliance evaluated? What metrics are used to measure performance? 
+## Metrics used to evaluate and measure performance
 
 Communication compliance considers many metrics to holistically evaluate system accuracy and performance. False Positive Rate and True Positive Rate (aka Recall) from test data sets are two of the most important metrics that inform the classifier’s performance. Quantitative metrics (e.g., the number of hits) and qualitative feedback from customers are also used to evaluate performance and help improve the classifiers.  
 
-## What operational factors and settings allow for effective and responsible use of the system? 
+## Operational factors and settings 
 
-The operational factors and setting are detailed in the table below. 
+The operational factors and settings allow for effective and responsible use of the system. These are detailed in the table below. 
 
 |**Operational factor**|**Benefits**|
 |:-------------|:--------------|
-|Role-based access control |No individual has too much power to influence usage of communication compliance in the organization: <br> - Investigators can only view policies they have permission to view <br> - Admin can only create/edit policies <br> - Communication compliance role has the most widespread permissions to view and edit policies. |
+|Role-based access control |No individual has too much power to influence usage of communication compliance in the organization: <br> Investigators can only view policies they have permission to view <br> Admin can only create/edit policies <br> Communication compliance role has the most widespread permissions to view and edit policies. |
 |Leveraging multiple conditions in a policy |The value from machine learning classifiers can be fine-tuned with other capabilities such as key phrase matching, detection of sensitive information, or scoping to specific domains. |
 |End user reporting of inappropriate content in Teams |Message recipients can report messages they find inappropriate or deem a data security incident as a proactive approach to identifying communication risks. |
 |Keyword highlighting of messages caught by built-in classifiers |Investigators gain clarity on which key phrases trigger which classifiers. |
@@ -74,9 +72,9 @@ The operational factors and setting are detailed in the table below.
 |Users choose which communication channels to detect for patterns in |Users can choose which channels to detect potentially risky communication in. |
 |Feedback loop to report misclassified items |Items misclassified by machine learning classifiers can be reported to Microsoft to improve future performance of classifiers. User privacy is honored as per the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). |
 
-## What are the limitations of communication compliance? How can users minimize the impact of the limitations when using the system? 
+## Limitations of communication compliance 
 
-There are limitations to any AI solution. The limitations are detailed in the table below. 
+There are limitations to any AI solution. Users of communication compliance can minimize the impact of the limitations when using the system.  These are detailed in the table below. 
 
 |**Limitations**|**Impacted users**|**Ways to minimize impact**|
 |:-------------|:--------------|:--------------|
