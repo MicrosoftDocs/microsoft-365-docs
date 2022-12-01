@@ -56,7 +56,7 @@ Communication compliance empowers organizations to detect, triage, and remediate
 
 ## Metrics used to evaluate and measure performance
 
-Communication compliance considers many metrics to holistically evaluate system accuracy and performance. False Positive Rate and True Positive Rate (aka Recall) from test data sets are two of the most important metrics that inform the classifier’s performance. Quantitative metrics (e.g., the number of hits) and qualitative feedback from customers are also used to evaluate performance and help improve the classifiers.  
+Communication compliance considers many metrics to holistically evaluate system accuracy and performance. False positive rates and true positive rates (also known as recall rates) from test data sets are two of the most important metrics that inform the classifier’s performance. Quantitative metrics (e.g., the number of hits) and qualitative feedback from customers are also used to evaluate performance and help improve the classifiers.  
 
 ## Operational factors and settings 
 
