@@ -47,6 +47,6 @@ Annotation tools currently include pen and highlighter, where can choose the col
     > [!NOTE]
     >  Annotations do not alter or modify the original document. They are added only as an overlay to the page.
 
-6. You can also use the zoom and rotate page options to view annotations if needed.
+6. If needed, you can also use the zoom and rotate page options when you view annotations.
 
     ![Screenshot of the zoom and rotate page options for the annotation tools.](../media/content-understanding/annotation-zoom-rotate-options.png)
