@@ -65,7 +65,7 @@ Audit (Premium) in Microsoft Purview provides a default audit log retention poli
       - If you select a single record type, the **Activities** field is dynamically displayed. You can use the drop-down list to select activities from the selected record type to apply the policy to. If you don't choose specific activities, the policy will apply to all activities of the selected record type.
       - If you select multiple record types, you don't have the ability to select activities. The policy will apply to all activities of the selected record types.
 
-   5. **Duration:** The amount of time to retain the audit logs that meet the criteria of the policy. The available values are *7 Days*, *30 Days*, *1 Year*, *3 Years*, *5 Years*, *7 Years*, and *10 Years*.
+   5. **Duration:** The amount of time to retain the audit logs that meet the criteria of the policy. The available options are *7 Days*, *30 Days*, *1 Year*, *3 Years*, *5 Years*, *7 Years*, and *10 Years*.
 
    6. **Priority:** This value determines the order in which audit log retention policies in your organization are processed. A lower value indicates a higher priority. Valid priorities are numerical values between **1** and **10000**. A value of **1** is the highest priority, and a value of **10000** is the lowest priority. For example, a policy with a value of **5** takes priority over a policy with a value of **10**. Any custom audit log retention policy takes priority over the default policy for your organization.
 
