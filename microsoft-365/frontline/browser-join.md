@@ -60,7 +60,7 @@ After this feature is turned on, the confirmation email or SMS text that’s sen
     1. In the Bookings app, go to **Settings** > **Appointment types**, and then under **Scheduled**, select an appointment type.
 1. Turn on **Have attendees join from a web browser**. Doing this enables browser join for all appointments of this type.
 
-:::image type="content" source="media/browser-join-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types." lightbox="media/browser-join-appointment-type.png":::
+    :::image type="content" source="media/browser-join-appointment-type.png" alt-text="Screenshot of the Have attendees join from a browser setting for appointment types." lightbox="media/browser-join-appointment-type.png":::
 
 #### Turn on browser join for an individual appointment
 
@@ -135,4 +135,4 @@ If you've configured any of these features in your organization, attendees won't
 - [Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Create an Bookings appointment type](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887)
 - [Join a Bookings appointment as an attendee](https://support.microsoft.com/office/join-a-bookings-appointment-as-an-attendee-95cea12d-2220-421f-a663-6efb20913c7f)
-- [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)
+- [Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)
