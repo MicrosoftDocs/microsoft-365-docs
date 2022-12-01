@@ -29,16 +29,16 @@ Protecting sensitive information and detecting and acting on workplace harassmen
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-Microsoft Purview Communication Compliance is an insider risk solution that helps you detect, capture, and act on inappropriate messages that can lead to potential data security or compliance incidents within your organization. Communication compliance evaluates text and image-based messages in Microsoft and third-party apps (Teams, Yammer, Outlook, WhatsApp, etc.) for potential business policy violations including inappropriate sharing of sensitive information, threatening or harassing language as well as potential regulatory violations (stock manipulation or money laundering).  
+Microsoft Purview Communication Compliance is an insider risk solution that helps you detect, capture, and act on inappropriate messages that can lead to potential data security or compliance incidents within your organization. Communication compliance evaluates text and image-based messages in Microsoft and third-party apps (Teams, Yammer, Outlook, WhatsApp, etc.) for potential business policy violations including inappropriate sharing of sensitive information, threatening or harassing language as well as potential regulatory violations (such as stock and capital manipulations).  
 
-Communication compliance’s mission is to foster safe and compliant communications across customers’ enterprise communication channels. With role-based access controls, human investigators can take remediation actions such as removing a message from Teams or notifying senders of inappropriate conduct. 
+Communication compliance’s mission is to foster safe and compliant communications across customers’ enterprise communication channels. With role-based access controls, human investigators can take remediation actions such as removing a message from Teams or notifying senders of potentially inappropriate conduct. 
 
 > [!IMPORTANT]
 > Microsoft is committed to making sure artificial intelligence (AI) systems are developed responsibly and in ways that warrant people’s trust. As part of this commitment, Microsoft Purview engineering teams are operationalizing the six core principles of [Microsoft’s Responsible AI](https://www.microsoft.com/ai/our-approach) strategy to design, build, and manage AI solutions. As part of our effort to responsibly deploy AI, we provide documentation, role-based access, scenario attestation, and more to help organizations use AI systems responsibly. 
 
 ## System capabilities 
 
-Communication compliance uses machine learning models and keyword matching to identify messages containing potential business conduct or regulatory policy violations that are then reviewed by an investigator. Communication Compliance cultivates user privacy with pseudonymization and responsible use of the product by providing role-based access controls. Users are given permissions that allow them to perform the tasks in their role, such as:  
+Communication compliance uses machine learning models and keyword matching to identify messages containing potential business conduct or regulatory policy violations that are then reviewed by an investigator. Communication compliance cultivates user privacy with pseudonymization and responsible use of the product by providing role-based access controls. Users are given permissions that allow them to perform the tasks in their role, such as:  
 
 - *Administrator role*: Administrators configure policies to detect specific patterns in an organization. Admins choose which machine learning classifiers to include in policies and can leverage the value of machine learning classifiers alongside keyword/phrase matching to meet organizational needs.  
 
@@ -60,7 +60,7 @@ Communication compliance considers many metrics to holistically evaluate system 
 
 ## Operational factors and settings 
 
-The operational factors and settings allow for effective and responsible use of the system. These are detailed in the table below. 
+Operational factors and settings allow for effective and responsible use of the system. These are detailed in the table below. 
 
 |**Operational factor**|**Benefits**|
 |:-------------|:--------------|
@@ -74,7 +74,7 @@ The operational factors and settings allow for effective and responsible use of 
 
 ## Limitations of communication compliance 
 
-There are limitations to any AI solution. Users of communication compliance can minimize the impact of the limitations when using the system.  These are detailed in the table below. 
+There are limitations to any artificial intelligence solution. Users of communication compliance can minimize the impact of the limitations when using the system.  These are detailed in the table below. 
 
 |**Limitations**|**Impacted users**|**Ways to minimize impact**|
 |:-------------|:--------------|:--------------|
