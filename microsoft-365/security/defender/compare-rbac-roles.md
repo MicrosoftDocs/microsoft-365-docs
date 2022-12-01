@@ -92,7 +92,7 @@ Use the tables in the following sections to learn more about how your existing i
 |MDI viewer|Security operations \ Security data \ Security data basics (read)</br>Configuration \ Security setting (read) </br>Configuration \ System setting (read) </br>|
 
 >[!NOTE]
-> Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://portal.cloudappsecurity.com). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).
+> Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://security.microsoft.com/cloudapps/permissions/roles). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).
 
 ### Azure Active Directory Global roles access
 
