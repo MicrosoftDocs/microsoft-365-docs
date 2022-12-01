@@ -69,4 +69,4 @@ Microsoft Defender for Office 365 contains additional and more advanced anti-phi
 
 - For end users: [Protect yourself from phishing schemes and other forms of online fraud](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593).
 
-- [How Microsoft 365 validates the From address to prevent phishing](how-office-365-validates-the-from-address.md).
+- [How Microsoft 365 validates the From address to prevent phishing](anti-phishing-from-email-address-validation.md).
