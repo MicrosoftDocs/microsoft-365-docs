@@ -43,7 +43,7 @@ For overview information about policies for retention and how retention works in
 If you're unfamiliar with adaptive and static scopes, and to help you choose which one to use when you configure a policy for retention, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). 
 
 When you've decided whether to use an adaptive or static scope, use the following information to help you configure it:
-- [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configuration-information-for-adaptive-scopes)
+- [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes)
 - [Configuration information for static scopes](#configuration-information-for-static-scopes)
 
 > [!TIP]

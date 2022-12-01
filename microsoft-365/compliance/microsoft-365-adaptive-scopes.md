@@ -44,7 +44,7 @@ These advantages include:
 > [!IMPORTANT]
 > Adaptive scopes don't currently support public Teams channels. Also, the Skype for Business and Exchange public folder locations don't support adaptive scopes. For those locations, you must [TBD].
 
-For configuration information, see [Configuring adaptive scopes](#configuration-information-for-adaptive-scopes).
+For configuration information, see [Configuring adaptive scopes](#configure-adaptive-scopes).
 
 To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
 
