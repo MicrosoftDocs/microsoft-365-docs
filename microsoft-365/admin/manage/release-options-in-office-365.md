@@ -59,7 +59,7 @@ A good practice is to leave the majority of users in **Standard release** and IT
 With this option, you and your users can be the first to see the latest updates and help shape the product by providing early feedback. You can choose to have individuals or the entire organization receive updates early.
   
 > [!IMPORTANT]
-> Large or complex updates may take longer than others so that no users are adversely affected. There is no guarantee on the exact timeline of a release. Targeted release is not currently available for customers with either the Office 365 GCC plan or the Office 365 GCC High and DoD plan.
+> Large or complex updates may take longer than others so that no users are adversely affected. There is no guarantee on the exact timeline of a release. Targeted release is now available for customers with either the Office 365 GCC plan or the Office 365 GCC High plan and DoD plan.
   
 ### Targeted release for entire organization
 
