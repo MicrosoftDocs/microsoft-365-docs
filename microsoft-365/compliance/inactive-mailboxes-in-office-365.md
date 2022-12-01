@@ -88,7 +88,7 @@ With [adaptive policy scopes](microsoft-365-adaptive-scopes.md#advantages-of-usi
 
 - You can quickly identify the policy for retention that's assigned to inactive mailboxes in your organization, which makes it easier to change the retention settings if necessary. 
 
-- It's easier to permanently delete an inactive mailbox because you can remove it from the policy by [configuring the adaptive scope](retention-settings.md#configure-adaptive-scopes) to exclude it, based on attributes or properties of the inactive mailbox. Otherwise, you must use [Exchange Online PowerShell](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) before [deleting the mailbox](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox).
+- It's easier to permanently delete an inactive mailbox because you can remove it from the policy by [configuring the adaptive scope](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes) to exclude it, based on attributes or properties of the inactive mailbox. Otherwise, you must use [Exchange Online PowerShell](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) before [deleting the mailbox](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox).
 
 > [!NOTE]
 > Depending on the configuration of your adaptive policy scope, inactive mailboxes might or might not be included.  To specifically target or to exclude inactive mailboxes from an adaptive policy scope, see [configuration information for Exchange email and Exchange public folders](retention-settings.md#locations).
