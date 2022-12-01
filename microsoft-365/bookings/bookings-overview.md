@@ -9,6 +9,7 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 ms.collection: 
+- Tier1
 - scotvorg
 - highpri
 ms.custom: VSBFY23

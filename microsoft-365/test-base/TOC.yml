@@ -30,6 +30,8 @@
       href: ondemandrun.md
     - name: Application/Test rules
       href: rules.md
+    - name: Test your application with latest Microsoft 365 apps
+      href: test-with-m365-app.md
 - name: How-to guides
   items:
   - name: Server application testing
@@ -48,6 +50,10 @@
     href: sdkapi.md
 - name: Reference
   items:
+  - name: Test Base for Microsoft 365 Product Terms
+    href: testbase-for-m365-product-terms.md
+  - name: Test Base for Microsoft 365 Product Terms Change History
+    href: testbase-for-m365-product-terms-changehistory.md
   - name: Frequently Asked Questions
     href: faq.md
 

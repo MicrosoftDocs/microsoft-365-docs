@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
@@ -57,10 +57,10 @@ Microsoft Defender for Office 365 includes remediation actions to address variou
 |Email|No threats found <br> (The system did not find any threats based on files, URLs, or analysis of email cluster verdicts.)|Automated investigation does not result in a specific pending action. <p>Threats found and [zapped](zero-hour-auto-purge.md) after an investigation is complete are not reflected in an investigation's numerical findings, but such threats are viewable in [Threat Explorer](threat-explorer.md).|
 |User|A user clicked a malicious URL <br> (A user navigated to a page that was later found to be malicious, or a user bypassed a [Safe Links warning page](safe-links.md#warning-pages-from-safe-links) to get to a malicious page.)|Automated investigation does not result in a specific pending action. <p> Block URL (time-of-click) <p> Use Threat Explorer to [view data about URLs and click verdicts](threat-explorer.md#view-phishing-url-and-click-verdict-data). <p> If your organization is using [Microsoft Defender for Endpoint](/windows/security/threat-protection/), consider [investigating the user](/microsoft-365/security/defender-endpoint/investigate-user) to determine if their account is compromised.|
 |User|A user is sending malware/phish|Automated investigation does not result in a specific pending action. <p> The user might be reporting malware/phish, or someone could be [spoofing the user](anti-spoofing-protection.md) as part of an attack. Use [Threat Explorer](threat-explorer.md) to view and handle email containing [malware](threat-explorer-views.md#email--malware) or [phish](threat-explorer-views.md#email--phish).|
-|User|Email forwarding <br> (Mailbox forwarding rules are configured, chch could be used for data exfiltration.)|Remove forwarding rule <p> Use [mail flow insights](mail-flow-insights-v2.md), including the [Autofowarded messages report](mfi-auto-forwarded-messages-report.md), to view more specific details about forwarded email.|
+|User|Email forwarding <br> (Mailbox forwarding rules are configured, chch could be used for data exfiltration.)|Remove forwarding rule <p> Use the [Autofowarded messages report](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) to view specific details about forwarded email.|
 |User|Email delegation rules <br> (A user's account has delegations set up.)|Remove delegation rule <p> If your organization is using [Microsoft Defender for Endpoint](/windows/security/threat-protection/), consider [investigating the user](/microsoft-365/security/defender-endpoint/investigate-user) who's getting the delegation permission.|
 |User|Data exfiltration <br> (A user violated email or file-sharing [DLP policies](../../compliance/dlp-learn-about-dlp.md) |Automated investigation does not result in a specific pending action. <p> [View DLP reports and take action](../../compliance/view-the-dlp-reports.md).|
-|User|Anomalous email sending <br> (A user recently sent more email than during the previous 7-10 days.)|Automated investigation does not result in a specific pending action. <p> Sending a large volume of email isn't malicious by itself; the user might just have sent email to a large group of recipients for an event. To investigate, use [mail flow insights](mail-flow-insights-v2.md), including the [mail flow map report](mfi-mail-flow-map-report.md) to determine what's going on and take action.|
+|User|Anomalous email sending <br> (A user recently sent more email than during the previous 7-10 days.)|Automated investigation does not result in a specific pending action. <p> Sending a large volume of email isn't malicious by itself; the user might just have sent email to a large group of recipients for an event. To investigate, use the [New users forwarding email insight in the EAC](/exchange/monitoring/mail-flow-insights/mfi-new-users-forwarding-email-insight) and [Outbound message report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) to determine what's going on and take action.|
 
 ## Next steps
 

@@ -198,6 +198,8 @@
                    href: investigate-users.md                  
               - name: Incident response playbooks
                 href: /security/compass/incident-response-playbooks
+              - name: Investigate domains and URLs associated with Microsoft 365 Defender
+                href: ../defender-endpoint/investigate-domain.md
        - name: Manage automated investigation and response
          items: 
               - name: Overview
@@ -302,6 +304,8 @@
                   href: advanced-hunting-deviceprocessevents-table.md
                 - name: DeviceRegistryEvents
                   href: advanced-hunting-deviceregistryevents-table.md
+                - name: DeviceTvmHardwareFirmware
+                  href: advanced-hunting-devicetvmhardwarefirmware-table.md
                 - name: DeviceTvmInfoGathering
                   href: advanced-hunting-devicetvminfogathering-table.md
                 - name: DeviceTvmInfoGatheringKB
@@ -346,7 +350,7 @@
                href: advanced-hunting-take-action.md
              - name: Link query results to an incident
                href: advanced-hunting-link-to-incident.md
-             - name: Quotas and usage parameters
+             - name: Find resource-heavy queries
                href: advanced-hunting-limits.md
              - name: Extend data coverage
                href: advanced-hunting-extend-data.md                                                    
@@ -356,12 +360,12 @@
                 href: threat-analytics.md
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
-       - name: Collaborate with Microsoft Threat Experts
+       - name: Endpoint Attack Notifications
          items:
-              - name: Overview
-                href: microsoft-threat-experts.md
-              - name: Configure and manage Microsoft Threat Experts capabilities
-                href: configure-microsoft-threat-experts.md
+              - name: Endpoint Attack Notifications
+                href: ../defender-endpoint/endpoint-attack-notifications.md
+              - name: Experts on Demand
+                href: ../defender-endpoint/experts-on-demand.md
        - name: Collaborate with Microsoft Defender Experts for Hunting
          items:
               - name: Overview
@@ -372,6 +376,16 @@
                 href: onboarding-defender-experts-for-hunting.md
               - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
+       - name: Expanded Microsoft Defender Experts for XDR preview
+         items:
+              - name: Overview
+                href: dex-xdr-overview.md
+              - name: Get started with Microsoft Defender Experts for XDR preview service
+                href: get-started-xdr.md
+              - name: Start using Microsoft Defender Experts for XDR preview service
+                href: start-using-mdex-xdr.md
+              - name: Frequently asked questions
+                href: frequently-asked-questions.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
@@ -474,6 +488,12 @@
                  href: configure-siem-defender.md
                - name: Troubleshoot issues with integrating SIEM tools
                  href: ../defender-endpoint/troubleshoot-siem.md
+            - name: Partner catalog
+              items:
+               - name: Technological partners of Microsoft 365 Defender
+                 href: ../defender-endpoint/technological-partners.md 
+               - name: Professional services supported by Microsoft 365 Defender
+                 href: ../defender-endpoint/professional-services.md           
             - name: Understand threat intelligence concepts
               href: ../defender-endpoint/threat-indicator-concepts.md 
         - name: Security intelligence
