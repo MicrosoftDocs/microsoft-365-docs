@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Adoption Score Organizational Message"
+title: "Microsoft Adoption Score Organizational Messages"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
@@ -23,10 +23,9 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn how to send messages to your organization in Microsoft 365 using organizational messages in Adoption Score."
-ROBOTS: NOINDEX, NOFOLLOW 
 ---
 
-# Adoption Score Organizational Message
+# Adoption Score Organizational Messages
 
 Organizational messages enable IT admins to deliver clear, actionable messages in-product and in a targeted way, while maintaining user-level privacy. Organizational messages in Adoption Score use targeted in-product notifications to advise on Microsoft 365 recommended practices based on Adoption Score insights. Users can be reminded to use products that have recently been deployed, encouraged to try a product on a different surface, or to recommend new ways of working, such as using @mentions to improve response rates in communications. Templated messages are delivered to users in their flow of work through surfaces including Outlook, Excel, PowerPoint, and Word. Authorized professionals can use the organizational messages wizard in Adoption Score to choose from up to three templated message types, define when and how often a message can be displayed, and exclude groups or priority accounts from receiving the message.
 
@@ -59,9 +58,17 @@ In this preview, we support the teaching call-out and business bars in Word, Exc
 
 Business bars are supported by Microsoft 365 Consumer subscribers, Office 2019, Office 2016, Office 2013, and Office 2010.
 
+:::image type="content" source="../../media/org-message-location-bar-expanded.jpg" alt-text="In-product notification recommending to use Teams messages" lightbox="../../media/org-message-location-bar-expanded.jpg":::
+
+*The user sees an in-product notification recommending they use Teams messages more.*
+
 The desktop teaching call-out is supported by Microsoft 365 Consumer and Commercial Office 2019, and Office 2016 Consumer.
 
-## How to enable Adoption Score Organizational Message
+:::image type="content" source="../../media/org-message-location.png" alt-text="In-product notification recommending to save to OneDrive":::
+
+*The user sees an in-product notification recommending they save to OneDrive more.*
+
+## How to enable Adoption Score Organizational Messages
 
 To enable Adoption Score Organizational Message, the global administrator needs to enable Adoption Score first:
 
@@ -77,6 +84,8 @@ To enable Adoption Score Organizational Message, the global administrator needs 
 After Adoption Score is enabled, the global administrator and organizational message writer role can opt in for Adoption Score Organizational Message.
 
 Visit [privacy controls for Adoption Score](privacy.md) to understand how to enable Adoption Score.
+
+:::image type="content" source="../../media/org-message-adoption-score.png" alt-text="Screenshot: How to enable Organizational Messages in Adoption Score." lightbox="../../media/org-message-adoption-score-expanded.jpg":::
 
 ## Getting Started
 
@@ -102,7 +111,9 @@ As global administrator or organizational message writer role, you can do any of
 
 - Manage scheduled or active organizational messages
 
-## Choose a message for business bars or teaching call-out
+## Take action on insights
+
+### Step 1: Choose a message to take action
 
 1. Under the **Messages** tab, view where the messages will appear.
 
@@ -116,7 +127,7 @@ As global administrator or organizational message writer role, you can do any of
 
 6. If you want to exit the message creation process for now and save a draft, select **Save and close**. The drafts are stored in the **Your org’s messages** tab under **Actions**.
 
-## Select the recipients
+### Step 2: Select the recipients
 
 1) Under the **Recipients** tab, the recipients are by default selected based on their activities. For example, targeted users who aren't actively using OneDrive or SharePoint with the apps enabled for the past 28 days.
 
@@ -124,7 +135,7 @@ As global administrator or organizational message writer role, you can do any of
 
     - **Groups**: In addition to the default recipients, you can send messages to specific Azure AD user groups
 
-    - **Companies, Country (State) – City, Departments**: Using group-level aggregates, you can apply attributes filter such as attributes like location, departments, and companies to target specific groups of audiences.
+    - **Companies, Country (State) – City, Departments**: Using group-level aggregates, you can apply attributes filter such as attributes like location, departments, and companies to target specific groups of audiences. [Learn more about how to open Group Level Aggregates and validate data accuracy](group-level-aggregates.md).
 
 3) You can also omit users with priority accounts or in certain Microsoft 365 groups.
 
@@ -133,7 +144,9 @@ As global administrator or organizational message writer role, you can do any of
 > [!NOTE]
 > The recipient list is refreshed daily. The users who adopted the recommended practices will be removed from the recipient lists.
 
-## Schedule a time window and frequency for delivery of the messages
+:::image type="content" source="../../media/org-message-select-recipients.png" alt-text="Screenshot: Select recipients for Organizational Messages in Adoption Score." lightbox="../../media/org-message-select-recipients-expanded.jpg":::
+
+### Step 3: Schedule a time window and frequency for delivery of the messages
 
 1) Under the **Schedule** tab, select **Start date**.
 
@@ -144,15 +157,17 @@ As global administrator or organizational message writer role, you can do any of
 4) Select **Next** to proceed to the **Finish** tab.
 
 > [!NOTE]
-> If the frequency of the message is set as once a week, the message will only show on one of the surfaces per week. After the user clicks or dismisses the message, it won’t show up again. Teaching call-out messages only appear twice in their lifetime even if the user doesn’t click on it.
+> If the frequency of the message is set as once a week, the message will only show on one of the surfaces per week. After the user selects or dismisses the message, it won’t show up again. Teaching call-out messages only appear twice in their lifetime even if the user doesn’t select it.
 
-## Finish or Save Draft
+:::image type="content" source="../../media/org-message-schedule-message.png" alt-text="Screenshot: Schedule your message for Organizational Messages in Adoption Score." lightbox="../../media/org-message-schedule-time-expanded.jpg":::
+
+### Step 4: Finish or Save Draft
 
 1) Under the **Finish** tab, confirm the message details and then select **Schedule**.
 
 2) If you want to exit the message creation process for now and save a draft, select **Save and close.** The drafts are stored in the **Your org’s messages** tab under **Actions**.
 
-## Track the status of the messages and user engagement
+### Step 5: Track the status of the messages and user engagement
 
 Once messages have been created, you'll see the reporting in the table under the **Your org’s messages** tab under **Actions**. The following information is available:
 
@@ -179,11 +194,13 @@ Once messages have been created, you'll see the reporting in the table under the
 > [!NOTE]
 > This capability is only available to Product admins, report reader roles, and user success specialists who have reader permissions.
 
-## Cancel or clone messages
+:::image type="content" source="../../media/org-message-track-status.png" alt-text="Screenshot: Track the status of your message for Organizational Messages in Adoption Score." lightbox="../../media/org-message-track-status-expanded.jpg":::
+
+### Step 6: Cancel or clone messages
 
 Once messages have been created, you'll see the reporting in the table under the **Your org’s messages** tab under **Actions**.
 
-- Select three dots to the right of **Message name** to see a dropdown of actions
+- Select three dots to the right of **Message name** to see a dropdown of actions.
 
 - Select **cancel** or **clone**.
 
@@ -202,7 +219,7 @@ A: For any given message, not every user **in its selected audience** (selected 
 
 ### Q: How can I test the messages before sending them to users of my entire company?
 
-A: You can send messages to specific Azure AD groups, such as your IT department. See [Select the recipients](#select-the-recipients) for details.
+A: You can send messages to specific Azure AD groups, such as your IT department. See [Select the recipients](#step-2-select-the-recipients) for details.
 
 ### Q: What is the recommended time frame window for the messages?
 
@@ -210,11 +227,11 @@ A: As the frequency of the messages is at most once a week, the recommended mini
 
 ### Q: Will I be able to customize the text in the messages?
 
-A: Not currently.
+A: Not currently, but additional customization options will be enabled in future releases.
 
-## Organizational Messages in Windows Endpoint Manager
+## Organizational Messages in Microsoft Intune (Windows Endpoint Manager)
 
-Organizational messages in Windows Endpoint Manager enable organizations to deliver branded personalized messages to their employees via native Windows 11 surfaces, such as Notification Center and the Get started app. These messages are intended to help people ramp up in new roles quicker, learn more about their organization, and stay informed of new updates and trainings. [Learn more about Organizational messages in Windows Endpoint Manager](/mem/intune/remote-actions/custom-notifications).
+Organizational messages in Windows Endpoint Manager enable organizations to deliver branded personalized messages to their employees via native Windows 11 surfaces, such as Notification Center and the Get started app. These messages are intended to help people ramp up in new roles quicker, learn more about their organization, and stay informed of new updates and trainings. [Learn more about Organizational messages in Windows Endpoint Manager](/mem/intune/remote-actions/organizational-messages-prerequisites).
 
 ## Appendix
 
