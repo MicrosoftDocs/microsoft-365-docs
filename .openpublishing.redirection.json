@@ -9329,6 +9329,26 @@
       "source_path": "microsoft-365/security/office-365-security/tuning-anti-phishing.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-tuning",
       "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/backscatter-messages-and-eop.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-backscatter-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/bulk-complaint-level-values.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-bulk-complaint-level-bcl-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/advanced-spam-filtering-asf-options.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-asf-settings-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-your-spam-filter-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
+      "redirect_document_id": true
     }                     
    ]
   }
