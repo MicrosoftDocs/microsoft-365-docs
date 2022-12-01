@@ -93,15 +93,15 @@
        - name: Anti-spam protection
          items:
          - name: Anti-spam protection
-           href: anti-spam-protection.md
+           href: anti-spam-protection-about.md
          - name: Configure anti-spam policies
            href: anti-spam-policies-configure.md
          - name: Advanced Spam Filter (ASF) settings
            href: anti-spam-policies-asf-settings-about.md
          - name: What's the difference between junk email and bulk email?
-           href: what-s-the-difference-between-junk-email-and-bulk-email.md
+           href: anti-spam-spam-vs-bulk-about.md
          - name: Spam confidence level (SCL)
-           href: spam-confidence-levels.md
+           href: anti-spam-spam-confidence-level-scl-about.md
          - name: Bulk complaint level (BCL)
            href: anti-spam-bulk-complaint-level-bcl-about.md
          - name: Backscatter in EOP
@@ -143,7 +143,7 @@
        - name: Connection filtering
          items:
          - name: Configure the connection filtering policy
-           href: configure-the-connection-filter-policy.md
+           href: connection-filter-policies-configure.md
        - name: Outbound spam protection
          items:
          - name: Outbound spam protection
@@ -353,13 +353,13 @@
      - name: Tune and update
        items: 
         - name: Respond to a compromised connector
-          href: respond-compromised-connector.md
+          href: connectors-detect-respond-to-compromise.md
         - name: Remove blocked entities
           items:
            - name: Remove blocked users
              href: removing-user-from-restricted-users-portal-after-spam.md
            - name: Remove blocked connectors
-             href: remove-blocked-connectors.md
+             href: connectors-remove-blocked.md
         - name: Tune anti-phishing protection
           href: tuning-anti-phishing.md
         - name: Quarantine

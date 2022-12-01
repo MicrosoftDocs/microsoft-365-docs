@@ -65,7 +65,7 @@ There are 2 types of restricted entities:
   >
   > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
-- Before you remove the connector from the Restricted entities portal, be sure to follow the required steps to regain control of the connector. For more information, see [Respond to a compromised connector](respond-compromised-connector.md).
+- Before you remove the connector from the Restricted entities portal, be sure to follow the required steps to regain control of the connector. For more information, see [Respond to a compromised connector](connectors-detect-respond-to-compromise.md).
 
 ## Use the Microsoft 365 Defender portal to remove a connector from the Restricted entities list
 
@@ -126,5 +126,5 @@ Remove-BlockedConnector -ConnectorId <connectorId>
 
 ## More information
 
-- [Respond to a compromised connector](respond-compromised-connector.md)
+- [Respond to a compromised connector](connectors-detect-respond-to-compromise.md)
 - [Remove blocked users](removing-user-from-restricted-users-portal-after-spam.md)

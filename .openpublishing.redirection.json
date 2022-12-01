@@ -9249,6 +9249,11 @@
       "source_path": "microsoft-365/security/office-365-security/trial-playbook-defender-for-office-365.md",
       "redirect_url": "/microsoft-365/security/office-365-security/trial-user-guide-defender-for-office-365",
       "redirect_document_id": true
+    }, 
+    {
+      "source_path": "microsoft-365/admin/adoption/organizational-message.md",
+      "redirect_url": "/microsoft-365/admin/adoption/organizational-messages",
+      "redirect_document_id": true                       
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-anti-malware-policies.md",
@@ -9349,6 +9354,51 @@
       "source_path": "microsoft-365/security/office-365-security/configure-your-spam-filter-policies.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
       "redirect_document_id": true
-    }                     
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-spam-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/spam-confidence-levels.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-spam-confidence-level-scl-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-spam-vs-bulk-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/learn-about-spoof-intelligence.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/connectors-mail-flow-intelligence",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/attack-simulation-training.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/attack-simulation-training-simulations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-the-connection-filter-policy.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/connection-filter-policies-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/respond-compromised-connector.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/connectors-detect-respond-to-compromise",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/remove-blocked-connectors.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/connectors-remove-blocked",
+      "redirect_document_id": true
+    }
    ]
   }
