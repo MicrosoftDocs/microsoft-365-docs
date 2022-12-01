@@ -58,7 +58,7 @@ There's no limit to the number of adaptive policy scopes that you can add to a c
 - Number of characters in an advanced query: 10,000
 - Grouping attributes or properties within a group isn't supported. This means that the maximum number of properties or attributes supported within a single adaptive scope is 100.
 
-## Configuration information for adaptive scopes
+## Configure adaptive scopes
 
 When you choose to use adaptive scopes, you're prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes or properties:
 
@@ -80,7 +80,7 @@ The attributes and properties listed in the table can be easily specified when y
 > - [Building Advanced Queries for Users and Groups with Adaptive Policy Scopes](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
 > - [Building Advanced Queries for SharePoint Sites with Adaptive Policy Scopes](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
-### To configure an adaptive scope
+To configure an adaptive scope:
 
 Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you'll use. You might need to work with other administrators to confirm this information. 
 
@@ -133,7 +133,7 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
         ````console
         SiteTemplate=SITEPAGEPUBLISHING
         ````
-    
+
     You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
     
     > [!TIP]
@@ -158,7 +158,7 @@ To confirm the current membership and membership changes for an adaptive scope:
 > [!TIP]
 > Use the policy lookup option to help you identify the policies that are currently assigned to specific users, sites, and Microsoft 365 groups.
 
-#### Validating advanced queries
+### Validate advanced queries
 
 You can manually validate advanced queries by using PowerShell and SharePoint search:
 - Use PowerShell for the scope types **Users** and **Microsoft 365 Groups**

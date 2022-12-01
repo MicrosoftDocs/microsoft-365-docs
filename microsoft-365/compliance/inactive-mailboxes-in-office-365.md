@@ -80,7 +80,7 @@ If Microsoft 365 retention is used to create an inactive mailbox, the retention 
 
 ### Using adaptive policy scopes to manage retention of inactive mailboxes
 
-With [adaptive policy scopes](microsoft-365-adaptive-scopes.md#adaptive-or-static-policy-scopes), you can apply retention settings specifically to inactive mailboxes. Benefits of this configuration include:
+With [adaptive policy scopes](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes), you can apply retention settings specifically to inactive mailboxes. Benefits of this configuration include:
 
 - You can meet your organization's regulations or policies that require different retention periods for active employees and former employees.
 
@@ -88,14 +88,14 @@ With [adaptive policy scopes](microsoft-365-adaptive-scopes.md#adaptive-or-stati
 
 - You can quickly identify the policy for retention that's assigned to inactive mailboxes in your organization, which makes it easier to change the retention settings if necessary. 
 
-- It's easier to permanently delete an inactive mailbox because you can remove it from the policy by [configuring the adaptive scope](retention-settings.md#to-configure-an-adaptive-scope) to exclude it, based on attributes or properties of the inactive mailbox. Otherwise, you must use [Exchange Online PowerShell](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) before [deleting the mailbox](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox).
+- It's easier to permanently delete an inactive mailbox because you can remove it from the policy by [configuring the adaptive scope](retention-settings.md#configure-adaptive-scopes) to exclude it, based on attributes or properties of the inactive mailbox. Otherwise, you must use [Exchange Online PowerShell](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) before [deleting the mailbox](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox).
 
 > [!NOTE]
 > Depending on the configuration of your adaptive policy scope, inactive mailboxes might or might not be included.  To specifically target or to exclude inactive mailboxes from an adaptive policy scope, see [configuration information for Exchange email and Exchange public folders](retention-settings.md#locations).
 
 ### Using static policy scopes and inactive mailboxes
 
-If you don't use [adaptive policy scopes](microsoft-365-adaptive-scopes.md#adaptive-or-static-policy-scopes) with Microsoft 365 retention, and instead use a [static scope](microsoft-365-adaptive-scopes.md#adaptive-or-static-policy-scopes), consider the following:
+If you don't use [adaptive policy scopes](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes) with Microsoft 365 retention, and instead use a [static scope](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes), consider the following:
 
 - Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded. In this scenario, [specific inclusion and exclusion limits](retention-limits.md) still apply.
     

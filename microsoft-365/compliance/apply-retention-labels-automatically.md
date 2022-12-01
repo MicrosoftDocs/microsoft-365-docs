@@ -65,7 +65,7 @@ Make sure you have [created the retention labels](file-plan-manager.md#create-re
 
 ## How to create an auto-apply retention label policy
 
-Decide before you create your retention label policy whether it will be **adaptive** or **static**. For more information, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#adaptive-or-static-policy-scopes). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention label policy, and then select them during the create retention label policy process. For instructions, see [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configuration-information-for-adaptive-scopes).
+Decide before you create your retention label policy whether it will be **adaptive** or **static**. For more information, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention label policy, and then select them during the create retention label policy process. For instructions, see [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configuration-information-for-adaptive-scopes).
 
 When you create an auto-apply policy, you select a retention label to automatically apply to content, based on the conditions that you specify.
 
@@ -268,7 +268,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 #### Auto-apply labels to content by using trainable classifiers
 
 > [!IMPORTANT]
-> Currently, trainable classifiers for auto-labeling can't be used with [adaptive scopes](microsoft-365-adaptive-scopes.md#adaptive-or-static-policy-scopes). Use a static scope instead.
+> Currently, trainable classifiers for auto-labeling can't be used with [adaptive scopes](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). Use a static scope instead.
 
 When you choose the option for a trainable classifier, you can select one or more of the pre-trained or custom trainable classifiers:
 

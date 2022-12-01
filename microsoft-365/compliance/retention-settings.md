@@ -40,7 +40,7 @@ For overview information about policies for retention and how retention works in
 
 ## Scopes - adaptive and static
 
-If you're unfamiliar with adaptive and static scopes, and to help you choose which one to use when you configure a policy for retention, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#adaptive-or-static-policy-scopes). 
+If you're unfamiliar with adaptive and static scopes, and to help you choose which one to use when you configure a policy for retention, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). 
 
 When you've decided whether to use an adaptive or static scope, use the following information to help you configure it:
 - [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configuration-information-for-adaptive-scopes)
@@ -124,7 +124,7 @@ To specify individual OneDrive accounts, see [Get a list of all user OneDrive UR
 >
 > Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage, or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify for retention settings.
 >
-> Because of the challenges of reliably specifying URLs for individual users to include or exclude for static scopes, [adaptive scopes](microsoft-365-adaptive-scopes.md#adaptive-or-static-policy-scopes) with the **User** scope type are better suited for this purpose.
+> Because of the challenges of reliably specifying URLs for individual users to include or exclude for static scopes, [adaptive scopes](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes) with the **User** scope type are better suited for this purpose.
 
 #### Exceptions for adaptive policy scopes
 
