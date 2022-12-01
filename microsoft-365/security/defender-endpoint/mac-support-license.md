@@ -33,11 +33,13 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## No license found
+
 While you are going through [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) and [Manual deployment](mac-install-manually.md) testing or a Proof Of Concept (PoC), you might get the following error:
 
 :::image type="content" source="images/no-license-found.png" alt-text="License error" lightbox="images/no-license-found.png":::
 
-**Message:**
+### Message:
 
 No license found
 
@@ -45,15 +47,43 @@ Looks like your organization does not have a license for Microsoft 365 Enterpris
 
 Contact your administrator for help.
 
-**Cause:**
+### Cause:
 
 You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package"), but you might not have run the configuration script ("Download onboarding package"), or you have not assigned a license to the user.
 
 You can also encounter this error when the Microsoft Defender for Endpoint on macOS agent isn't up to date. 
 
-**Solution:**
+### Solution:
 
 Follow the MicrosoftDefenderATPOnboardingMacOs.py instructions documented here:
 [Client configuration](mac-install-manually.md#client-configuration).
 
 For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to update the agent.
+
+## Sign in with your Microsoft account
+
+![Sign in with your Microsoft account to get started](images/mac-consumer-login.png)
+
+### Message:
+
+Sign in with your Microsoft account to get started.
+
+Create new account or Switch to enterprise app
+
+### Cause:
+
+You downloaded and installed [Microsoft Defender for individuals on macOS](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) on top of previously installed Microsoft Defender for Endpoint.
+
+### Solution:
+
+Click **Switch to enterprise app** to switch to Enterprise experience.
+
+You can also suppress switching to experience for Individuals on MDM enrolled machines by including **userInterface**/**consumerExperience** into Defender's settings:
+
+```json
+<key>userInterface</key>
+<dict>
+    <key>consumerExperience</key>
+    <string>disabled</string>
+</dict>
+```
