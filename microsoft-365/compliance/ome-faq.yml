@@ -90,7 +90,7 @@ sections:
       - question: |
           Will Office 365 Message Encryption (OME) be deprecated?
         answer: |
-          You can still use the previous version of message encryption called Office 365 Message Encryption (OME).  It will be deprecated on July 1, 2023.  Office Message Encrpytion will be automatically replaced and updated to Microsoft Purview Message Encryption. 
+          You can still use the previous version of message encryption called Office 365 Message Encryption (OME). It will be deprecated on July 1, 2023. Office Message Encryption will be automatically replaced and updated to Microsoft Purview Message Encryption. 
 
       - question: |
           My organization uses Active Directory Rights Management, can I use this functionality?
