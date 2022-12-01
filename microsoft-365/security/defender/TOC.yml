@@ -428,7 +428,7 @@
                 href: activate-defender-rbac.md
               - name: Edit and delete roles
                 href: edit-delete-rbac-roles.md
-              - name: Compare roles
+              - name: Map RBAC permission
                 href: compare-rbac-roles.md
               - name: About RBAC custom permission
                 href: custom-permissions-details.md
