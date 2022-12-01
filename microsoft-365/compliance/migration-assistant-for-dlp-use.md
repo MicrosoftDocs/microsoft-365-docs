@@ -23,7 +23,7 @@ description: "Learn how to use the migration assistant for Microsoft Purview DLP
 
 # Use migration assistant for Microsoft Purview DLP
 
-This article guides you through an instance of migration using the [migration assistant tool for Microsoft Purview DLP](migration-assistant-for-dlp-learn.md).
+This article takes you through an instance of migration using the [migration assistant tool for Microsoft Purview DLP](migration-assistant-for-dlp-learn.md).
 
 Before you start with migration, ensure you've met the prerequisites mentioned below:
 
