@@ -26,6 +26,10 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## December 2022
+
+Assessment templates that belong to the same regulation family now count as one template. This change means that when you purchase a premium template license for a regulation, the license will apply for all levels and versions of that regulation. Review the [list of templates](compliance-manager-templates-list.md) and a summary of [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
+
 ## November 2022
 
 Improvement actions now provide greater visibility into related controls and assessments so you can better understand the impact of completing an action. Each improvement action details page has a new [**Related controls** tab](compliance-manager-improvement-actions.md#related-controls) that lists all the controls associated to the action, with a link to each control's description. In the **Summary** section, the number underneath **Assessments** is now linked. When you select the number, you'll see a flyout pane listing all the assessments related to that action.
@@ -83,7 +87,7 @@ View our [full list of assessment templates](compliance-manager-templates-list.m
 
 ### Continuous compliance assessment of improvement actions
 
-We're adding automated testing and evidence generation for over 35 improvement actions in Compliance Manager that were not previously covered by Secure Score. With continuous compliance assessment, you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. Continuous compliance assessment also gives users visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is. Learn more about [automated testing settings](compliance-manager-setup.md#testing-source-for-automated-testing).
+We're adding automated testing and evidence generation for over 35 improvement actions in Compliance Manager that weren't previously covered by Secure Score. With continuous compliance assessment, you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. Continuous compliance assessment also gives users visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is. Learn more about [automated testing settings](compliance-manager-setup.md#testing-source-for-automated-testing).
 
 ## February 2022
 

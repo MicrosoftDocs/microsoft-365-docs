@@ -88,7 +88,7 @@ sections:
         answer: |
           No. This ASF setting is no longer required. Anti-spoofing protection considers both SPF hard fails and a much wider set of criteria. If you have anti-spoofing enabled and the **SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_) turned on, you will probably get more false positives.
           
-          We recommend that you disable this feature as it provides almost no additional benefit for detecting spam or phishing message, and would instead generate mostly false positives. For more information, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
+          We recommend that you disable this feature as it provides almost no additional benefit for detecting spam or phishing message, and would instead generate mostly false positives. For more information, see [Advanced Spam Filter (ASF) settings in EOP](anti-spam-policies-asf-settings-about.md).
           
       - question: |
           Does Sender Rewriting Scheme help fix forwarded email?
