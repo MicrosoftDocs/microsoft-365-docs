@@ -6,7 +6,7 @@ manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
     - enabler-strategic
@@ -146,27 +146,6 @@ When you have completed adding all relevant fields to the template and you want 
 
 2. To view, edit, or unpublish *published* templates from the **Published templates** dropdown menu in the **Modern templates** section, select **New** > **Edit New menu** from the document library. 
 
-## Edit a modern template
+## See also
 
-If you need to edit an existing template or to delete or unpublish a template, follow these steps.
-
-1. From a SharePoint document library, select **New** > **Edit New menu**.
-
-   ![Screenshot of document library with the Edit New menu option highlighted.](../media/content-understanding/content-assembly-edit-template-1.png)
-
-2. On the **Edit New menu** panel, in the **Modern templates** section, select the published or draft template you want to edit.
-
-   ![Screenshot of the Edit New menu panel showing the Modern templates section.](../media/content-understanding/content-assembly-edit-template-2.png)
-
-3. To edit a published template or a draft template:
-
-   - For **Published templates**, select **Edit** to open the template studio where you can edit the published template. You can also choose to delete or unpublish the template.
-
-      ![Screenshot of the Modern templates section showing the published templates.](../media/content-understanding/content-assembly-edit-published.png)
-
-   - For **Draft templates**, select **Edit** to open the template studio where you can edit the draft template. You can also choose to delete or publish the template.
-
-      ![Screenshot of the Modern templates section showing the draft templates.](../media/content-understanding/content-assembly-edit-draft.png)
-
-> [!div class="nextstepaction"]
-> [Next step > Create a document from a modern template](content-assembly-create-document.md)
+[Edit a modern template](content-assembly-edit-template.md)

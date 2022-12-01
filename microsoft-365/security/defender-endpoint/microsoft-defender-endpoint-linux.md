@@ -108,8 +108,8 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 - List of supported kernel versions
   > [!NOTE]
-  > Microsoft Defender for Endpoint on RHEL/CentOS - 6.7 to 6.10 is a Kernel based solution. You must verify that the kernel is the supported before updating to the newer kernel version. See the list below for the list of supported kernels.
-  > Microsoft Defender for Endpoint implementation for all other supported distributions and versions is kernel-version-agnostic. With minimal requirement for the kernel version to be on or above 3.10.0-327.
+  > Microsoft Defender for Endpoint on Red Hat Enterprise Linux and CentOS - 6.7 to 6.10 is a Kernel based solution. You must verify that the kernel version is supported before updating to a newer kernel version. See the list below for the list of supported kernels.
+  > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version-agnostic. With a minimal requirement for the kernel version to be at or above 3.10.0-327.
 
   - The `fanotify` kernel option must be enabled
   - Red Hat Enterprise Linux 6 and CentOS 6:
@@ -148,7 +148,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
        - 2.6.32-754.9.1.el6.x86_64
 
  > [!NOTE]
- > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
+ > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that which are listed in this section are provided for technical upgrade support only.
 
 
   > [!CAUTION]

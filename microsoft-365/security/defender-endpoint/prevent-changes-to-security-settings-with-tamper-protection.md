@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 09/23/2022
+ms.date: 10/20/2022
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -151,6 +151,7 @@ To learn more about Microsoft Defender Vulnerability Management, see [Dashboard 
 
 ## See also
 
+- [Built-in protection helps guard against ransomware](built-in-protection.md)
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Get an overview of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
 - [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)

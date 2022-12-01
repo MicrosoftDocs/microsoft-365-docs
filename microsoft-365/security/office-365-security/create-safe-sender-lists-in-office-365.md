@@ -35,7 +35,7 @@ The available safe sender lists are described in the following list in order fro
 
 1. Allow entries for domains and email addresses (including spoofed senders) in the Tenant Allow/Block List.
 2. Mail flow rules (also known as transport rules).
-3. Outlook Safe Senders (the Safe Senders list that's stored in each mailbox).
+3. Outlook Safe Senders (the Safe Senders list that's stored in each mailbox that affects only that mailbox).
 4. IP Allow List (connection filtering)
 5. Allowed sender lists or allowed domain lists (anti-spam policies)
 
@@ -106,15 +106,20 @@ The following example assumes you need email from contoso.com to skip spam filte
 > [!CAUTION]
 > This method creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, if a message from an entry in the user's Safe Senders or Safe Domains lists is determined to be malware or high confidence phishing, the message will be filtered.
 
-Instead of an organizational setting, users or admins can add the sender email addresses to the Safe Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+Instead of an organizational setting, users or admins can add the sender email addresses to the Safe Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Safe Senders list entries in the mailbox affect that mailbox only.
 
 This method is not desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender can still be compromised and send malicious content. You should let our filters check every message and then [report the false positive/negative to Microsoft](report-junk-email-messages-to-microsoft.md) if we got it wrong. Bypassing the filtering stack also interferes with [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).
 
-By design and for increased security of Exchange Online mailboxes, only the junk email settings for safe senders, blocked senders, and blocked domains are recognized. Safe mailing list settings are ignored.
+When messages skip spam filtering due to entries in a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that filtering for spam, spoof, and phishing (not high confidence phishing) was bypassed.
 
-**Note**: In Exchange Online, domain entries in the Outlook Safe Senders list or TrustedSendersAndDomains parameter aren't recognized, so only use email addresses.
+**Notes**:
 
-When messages skip spam filtering due to a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that filtering for spam, spoof, and phishing were bypassed.
+- In Exchange Online, whether entries in the Safe Senders list work or don't work depends on the verdict and action in the policy that identified the message:
+  - **Move messages to Junk Email folder**: Domain entries and sender email address entries are honored. Messages from those senders are not moved to the Junk Email folder.
+  - **Quarantine**: Domain entries are not honored (messages from those senders are quarantined). Email address entries are honored (messages from those senders are not quarantined) if either of the following statements are true:
+    - The message is not identified as malware or high confidence phishing (malware and high confidence phishing messages are quarantined).
+    - The email address is not also in a block entry in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) (messages from those senders will be quarantined).
+- Entries for blocked senders and blocked domains are honored (messages from those senders are moved to the Junk Email folder). Safe mailing list settings are ignored.
 
 ## Use the IP Allow List
 
@@ -135,11 +140,14 @@ The next best option is to add the source email server or servers to the IP Allo
 >
 > This method creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, if a message from an entry in the allowed senders or allowed domains lists is determined to be malware or high confidence phishing, the message will be filtered.
 >
-> Do not use domains you own (also known as accepted domains) or popular domains (for example, microsoft.com) in allowed domain lists.
+> Do not use popular domains (for example, microsoft.com) in allowed domain lists.
 
 The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option _if at all possible_ because senders bypass all spam, spoof, phishing protection (except high confidence phishing), and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md) topic.
 
 The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
+
+> [!NOTE]
+> As of September 2022, if an allowed sender, domain, or subdomain is in an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization, that sender, domain, or subdomain must pass [email authentication](email-validation-and-authentication.md) checks in order to skip anti-spam filtering.
 
 ## Considerations for bulk email
 

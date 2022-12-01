@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -97,7 +97,7 @@ You can filter your incidents and alerts if you want to only see the Endpoint At
 
 This is available as a subscription service. If you're already a Defender for Endpoint customer, you can contact your Microsoft representative to subscribe to Microsoft Defender Experts - Experts on Demand.
 > [!NOTE]
-> Experts on Demand is not a security incident response service. It’s intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
+> Experts on Demand is not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
 ## Ask Defender Experts about suspicious cybersecurity activities in your organization
 
@@ -127,7 +127,7 @@ The **Inquiry topic** field is pre-populated with the link to the relevant page 
 
 Watch this video for a quick overview of the Microsoft Services Hub.
 
-> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4pk9f>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
 ## Sample investigation topics that you can consult with Microsoft Defender Experts - Experts on Demand
 
