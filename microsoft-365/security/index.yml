@@ -144,8 +144,6 @@ additionalContent:
          text: Overview
        - url: /microsoft-365/security/office-365-security/preset-security-policies
          text: Get Started
-       - url: /microsoft-365/security/defender/eval-defender-office-365-overview
-         text: Set up an evaluation 
     # Card
     - title: Microsoft Defender Endpoint
       links:
@@ -153,8 +151,6 @@ additionalContent:
         text: Overview  
       - url: /microsoft-365/security/defender-endpoint/deployment-strategy
         text: Get Started
-      - url: /microsoft-365/security/defender/eval-defender-endpoint-overview
-        text: Set up an evaluation   
     # Card
     - title: Microsoft Defender Vulnerability Management
       links:
@@ -169,8 +165,6 @@ additionalContent:
          text: Overview
        - url: /defender-for-identity/deploy-defender-identity
          text: Get Started
-       - url: /microsoft-365/security/defender/eval-defender-identity-overview
-         text: Set up an evaluation
      # Card
     - title: Microsoft Defender for Cloud apps
       links:
@@ -178,8 +172,6 @@ additionalContent:
         text: Overview
       - url: /defender-cloud-apps/get-started
         text: Get Started
-      - url: /microsoft-365/security/defender/eval-defender-mcas-overview
-        text: Set up an evaluation
 
 # additionalContent section (optional)
 # Card with summary style
