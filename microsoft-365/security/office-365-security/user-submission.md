@@ -15,7 +15,7 @@ ms.collection:
   - m365-security
   - m365initiative-defender-office365
 ms.custom:
-description: Admins can configure spam and phishing messages that are reported by users to go to a reporting mailbox, to Microsoft, or both. Other settings complete the reporting experience for users when they report good or bad messages.
+description: "Admins can configure where user reported messages go for analysis: to an internal reporting mailbox, to Microsoft, or to both. Other settings complete the reporting experience for users when they report good or bad messages."
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
@@ -29,7 +29,7 @@ ms.service: microsoft-365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with Exchange Online mailboxes, you can direct mail to a _reporting mailbox_ (formerly known as a _custom mailbox_) to receive messages that users report as malicious or not malicious using supported reporting tools in Outlook. For Microsoft reporting tools, you can decide whether to intercept user-reported messages (send messages to the reporting mailbox only), save copies of reported messages in the reporting mailbox as messages are also sent to Microsoft, or send reported messages to Microsoft only. These settings were formerly known as the _User submissions policy_ or _User submissions_.
+In Microsoft 365 organizations with Exchange Online mailboxes, you can identify a _reporting mailbox_ (formerly known as a _custom mailbox_ or _submissions mailbox_) to hold messages that users report as malicious or not malicious using supported reporting tools in Outlook. For Microsoft reporting tools, you can decide whether to send user reported messages to the reporting mailbox, to Microsoft, or to the reporting mailbox and Microsoft. These selections were formerly part of the _User submissions policy_ or _User submissions_.
 
 User reported message settings and the reporting mailbox work with the following message reporting options:
 
