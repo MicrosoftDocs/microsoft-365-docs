@@ -87,7 +87,7 @@
          - name: Configure anti-malware policies
            href: configure-anti-malware-policies.md
          - name: Virus detection in SharePoint Online
-           href: virus-detection-in-spo.md
+           href: anti-malware-protection-for-spo-odfb-teams-about.md
          - name: Anti-malware protection FAQ
            href: anti-malware-protection-faq-eop.yml
        - name: Anti-spam protection
@@ -157,7 +157,7 @@
        - name: Anti-phishing protection
          items:
          - name: Anti-phishing protection
-           href: anti-phishing-protection.md
+           href: anti-phishing-protection-about.md
          - name: Anti-phishing policies
            items:
            - name: Anti-phishing policies
@@ -171,7 +171,7 @@
          - name: Anti-spoofing protection FAQ
            href: anti-spoofing-protection-faq.yml
          - name: How EOP validates the From address
-           href: how-office-365-validates-the-from-address.md
+           href: anti-phishing-from-email-address-validation.md
        - name: Safe Attachments in Defender for Office 365
          items:
          - name: Safe Attachments in Defender for Office 365
@@ -299,7 +299,7 @@
            - name: Threat Explorer views
              href: threat-explorer-views.md
          - name: Impersonation insight
-           href: impersonation-insight.md
+           href: anti-phishing-mdo-impersonation-insight.md
          - name: Spoof intelligence insight
            href: learn-about-spoof-intelligence.md
          - name: Spoof intelligence insight walkthrough
