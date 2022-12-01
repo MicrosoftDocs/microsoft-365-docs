@@ -39,8 +39,6 @@ DLP policy templates are pre-sorted into four categories:
 
 This table lists all policy templates and the sensitive information types (SIT) that they cover.
 
-updated: 06/23/2021
-
 |Category|Template | SIT |
 |---------|---------|---------|
 |Financial| Australia Financial Data| - [SWIFT code](sit-defn-swift-code.md) </br> -  [Australia tax file number](sit-defn-australia-tax-file-number.md) </br> - [Australia bank account number](sit-defn-australia-bank-account-number.md) </br> - [Credit card number](sit-defn-credit-card-number.md)|
@@ -153,6 +151,8 @@ Rules are the business logic of DLP policies. They consist of:
 
 - [**Conditions**](#conditions) that when matched, trigger the policy
 - [**Exceptions**](#exceptions) to the conditions
+> [!IMPORTANT]
+> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.  
 - [**Actions**](#actions) to take when the policy is triggered
 - [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they're doing something that triggers a policy and help educate them on how your organization wants sensitive information treated
 - [**User Overrides**](#user-overrides) when configured by an admin, allow users to selectively override a blocking action
@@ -354,7 +354,10 @@ The first group contains the SITs that identify and individual and the second gr
 
 ### Exceptions
 
-In rules, exceptions define conditions that are used to exclude an item from the policy. Logically, exclusive conditions that are evaluated after the inclusive conditions and context. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* it's a match and the rest of the actions in the policy should be taken on it ***except if***... &#8212;
+> [!IMPORTANT]
+> The **Exceptions** UI is only available in Classic rule builder mode. When you toggle the UI to the **New DLP rule builder**, which enabled nested groups and the boolean operators AND, OR, and, NOT, exceptions are displayed as a nested group under conditions and joined to the conditions with a boolean NOT.
+
+In rules, exceptions define conditions that are used to exclude an item from the policy. Logically, exclusive conditions are evaluated after the inclusive conditions and context. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* it's a match and the rest of the actions in the policy should be taken on it ***except if***... &#8212;
 
 For example, keeping with the HIPPA policy, we could modify the rule to exclude any item that contains a Belgium drivers license number, like this:
 
