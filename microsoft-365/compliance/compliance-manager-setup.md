@@ -141,32 +141,31 @@ Compliance Manager settings can only be accessed by users who hold a global admi
 
 Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
-Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full number of points, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
 Here are important things to know about automatic testing:
 
-- **Automatic testing is turned on by default when you first use Compliance Manager.** This means that all improvement actions which are eligible for automatic testing will be automatically tested.
-    - When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor that data into your compliance score.
-- You can turn off automatic testing for all actions, which disables all automated action by Compliance Manager. See [Manage automated testing settings](#manage-automated-testing-settings) for details.
+- The first time you use Compliance Manager, automatic testing is turned on by default for all actions that can be automatically tested. It takes approximately seven days to fully collect data and factor that data into your compliance score.
+- You can turn off automatic testing for all actions, which disables all automated activity on improvement actions by Compliance Manager. See [Manage automated testing settings](#manage-automated-testing-settings) for instructions.
 
-- You can turn on automatic testing for individual improvement actions. See [Manage automated testing settings](#manage-automated-testing-settings) for details.
+- You can turn on automatic testing for individual improvement actions by following [these instructions](#manage-automated-testing-settings).
 
-- If Compliance Manager adds new improvement actions that can be automatically tested, those actions will have automatic testing turned on by default. You can turn off automatic testing for such actions by following the instructions at [Manage automated testing settings](#manage-automated-testing-settings).
+- If Compliance Manager adds new improvement actions that can be automatically tested, those actions will have automatic testing turned on by default. You can turn off automatic testing for such actions by following [these instructions](#manage-automated-testing-settings).
 
-- If you've [added data to an existing improvement action](compliance-manager-update-actions.md), that action will have automatic testing turned off, even if it was previously turned on. To turn automatic testing back on for that action, follow the instructions at [Manage automated testing settings](#manage-automated-testing-settings).
+- If you've [added data to an existing improvement action](compliance-manager-update-actions.md), that action will have automatic testing turned off, even if it was previously turned on. You can turn automatic testing back on for that action by following [these instructions](#manage-automated-testing-settings).
+
+- Improvement actions in templates that aren't scoped to Microsoft 365, such as templates for Microsoft Azure or Microsoft Dynamics, aren't currently eligible for automatic testing. 
 
 #### How to tell which actions are tested automatically
 
 On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager. If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#update-testing-source).
 
-#### Which actions can't be tested automatically
-
-Improvement actions in templates that aren't scoped to Microsoft 365 are not currently eligible for automatic testing. For example, universal templates, or a template for Microsoft Azure or Microsoft Dynamics, won't have actions that can be tested automatically. Learn more about [assessment templates](compliance-manager-templates.md).
-
-
 #### Manage automated testing settings
 
 The global administrator for your organization can change the settings for automated testing at any time. You can turn off automated testing for common improvement actions, or turn it on for individual actions. Follow the instructions below to change your automated testing settings.
+
+> [!NOTE]
+> Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager Administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
 1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft Purview compliance portal.
 
@@ -179,9 +178,6 @@ The global administrator for your organization can change the settings for autom
 5. If you select **Turn on per improvement action**, a list will show all the available improvement actions to choose from.  Check the box next to any action you want automatically tested.
 
 6. Select **Save** to save your settings. You’ll receive a confirmation message at the top of your screen that your selection was saved. If you receive a failure notice, try again.
-
-> [!NOTE]
-> Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager Administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
 ### Manage user history
 
