@@ -159,7 +159,7 @@ As global administrator or organizational message writer role, you can do any of
 > [!NOTE]
 > If the frequency of the message is set as once a week, the message will only show on one of the surfaces per week. After the user selects or dismisses the message, it won’t show up again. Teaching call-out messages only appear twice in their lifetime even if the user doesn’t select it.
 
-:::image type="content" source="../../media/org-message-schedule-message-expanded.jpg" alt-text="Screenshot: Schedule your message for Organizational Messages in Adoption Score." lightbox="../../media/org-message-schedule-time-expanded.jpg":::
+:::image type="content" source="../../media/org-message-schedule-time-expanded.jpg" alt-text="Screenshot: Schedule your message for Organizational Messages in Adoption Score." lightbox="../../media/org-message-schedule-time-expanded.jpg":::
 
 ### Step 4: Finish or Save Draft
 
