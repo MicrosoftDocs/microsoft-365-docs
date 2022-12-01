@@ -31,7 +31,7 @@ ms.service: microsoft-365-security
 
 In Microsoft 365 organizations with Exchange Online mailboxes, you can identify a _reporting mailbox_ (formerly known as a _custom mailbox_ or _submissions mailbox_) to hold messages that users report as malicious or not malicious using supported reporting tools in Outlook. For Microsoft reporting tools, you can decide whether to send user reported messages to the reporting mailbox, to Microsoft, or to the reporting mailbox and Microsoft. These selections were formerly part of the _User submissions policy_ or _User submissions_.
 
-User reported message settings and the reporting mailbox work with the following message reporting options:
+User reported message settings and the reporting mailbox work with the following message reporting tools:
 
 - [The built-in Report button in Outlook on the web](zzz-built-in-owa-report.md)
 - [The Microsoft Report Message or Report Phishing add-ins](enable-the-report-message-add-in.md)
