@@ -16,6 +16,7 @@ ms.collection:
   - m365solution-frontline
   - m365solution-scenario
   - tier1
+  - m365initiative-meetings
 f1.keywords:
 - NOCSH
 appliesto: 

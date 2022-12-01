@@ -22,6 +22,7 @@ ms.collection:
   - m365-frontline
   - highpri
   - tier2
+  - m365initiative-meetings
 ms.reviewer: hafarmer
 description: Learn about the join experience for Teams Virtual Appointments on browsers. 
 appliesto: 
