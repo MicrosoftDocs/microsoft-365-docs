@@ -9249,6 +9249,11 @@
       "source_path": "microsoft-365/security/office-365-security/trial-playbook-defender-for-office-365.md",
       "redirect_url": "/microsoft-365/security/office-365-security/trial-user-guide-defender-for-office-365",
       "redirect_document_id": true
+    }, 
+    {
+      "source_path": "microsoft-365/admin/adoption/organizational-message.md",
+      "redirect_url": "/microsoft-365/admin/adoption/organizational-messages",
+      "redirect_document_id": true                       
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-anti-malware-policies.md",
@@ -9276,6 +9281,31 @@
       "redirect_document_id": true
     }, 
     {
+      "source_path": "microsoft-365/security/office-365-security/how-office-365-validates-the-from-address.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-from-email-address-validation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/impersonation-insight.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-mdo-impersonation-insight",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-anti-phishing-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-policies-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-policies-eop-configure",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-mdo-anti-phishing-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-policies-mdo-configure",
+      "redirect_document_id": true 
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/virus-detection-in-spo.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-malware-protection-for-spo-odfb-teams-about",
       "redirect_document_id": true
@@ -9283,6 +9313,66 @@
     {
       "source_path": "microsoft-365/lighthouse/m365-lighthouse-deploy-baselines.md",
       "redirect_url": "/microsoft-365/lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-phishing-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-about",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-spoofing-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-spoofing-about",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-spoofing-protection-faq.yml",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-spoofing-faq",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/tuning-anti-phishing.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-tuning",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/backscatter-messages-and-eop.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-backscatter-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/bulk-complaint-level-values.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-bulk-complaint-level-bcl-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/advanced-spam-filtering-asf-options.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-asf-settings-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-your-spam-filter-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-spam-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/spam-confidence-levels.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-spam-confidence-level-scl-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-spam-vs-bulk-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/learn-about-spoof-intelligence.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence",
       "redirect_document_id": true
     }
    ]

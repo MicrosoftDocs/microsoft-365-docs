@@ -234,7 +234,7 @@ You can reassign improvement actions from one user to another. When you reassign
 
 5. From the **Select** drop-down menu, choose **Reassign improvement actions**. The **Reassign improvement actions** flyout pane will appear.
 
-6. In the **Search users** field, enter the name or email address of the user you want assign the improvement actions *to*.
+6. In the **Search users** field, enter the name or email address of the user to whom you're assigning the improvement actions.
 
 7. When you see the name of your intended user under **Improvement actions will be assigned to**, select the user, then select **Assign actions**.
 
@@ -408,7 +408,7 @@ The assessments page summarizes key information about each assessment:
 - **Status**:
   - **Complete** - all controls have a status of “passed,” or at least one is passed and the rest are “out of scope”
   - **Incomplete** – at least one control has a status of “failed"
-  - **None** - all controls have have not been tested
+  - **None** - all controls haven't been tested
   - **In progress** - improvement actions have any other status, including “in progress,” “partial credit,” or “undetected
 - **Assessment progress**: the percentage of the work done toward completion, as measured by the number of controls successfully tested
 - **Your improvement actions**: the number of completed actions to satisfy implementation of your controls
@@ -433,9 +433,9 @@ By default, you'll see the [Data Protection Baseline](compliance-manager-assessm
 
 ## Assessment templates page
 
-A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created. You can apply filters to find a template based on certification, product scope, country, industry, and who created it.
+A template is a framework for creating an assessment in Compliance Manager. The assessment templates page displays a list of templates and key details. The list includes templates provided by Compliance Manager as well as any templates your organization has modified or created.
 
-The **activated templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
+The **Activated/Licensed templates** counter near the top of the page shows the number of active assessment templates currently in use out of the total number of templates available for your organization to use. See [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information.
 
 Select a template from its row to bring up its details page, which contains a description of the template and further information about certification, scope, and controls details. From this page you can select the appropriate buttons to create an assessment, export the template data to Excel, or modify the template.
 
