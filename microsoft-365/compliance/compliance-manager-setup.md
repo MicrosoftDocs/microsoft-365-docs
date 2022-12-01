@@ -139,7 +139,7 @@ Compliance Manager settings can only be accessed by users who hold a global admi
 
 ### Testing source for automated testing
 
-Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide you with continuous control assessment. When an improvement action is successfully tested and implemented, you receive the full number of points, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide you with continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
 While automated testing helps maximize efficiency in your compliance activities, you have full control over whether to apply automated testing. Listed below are important things to know about automatic testing:
 
@@ -171,9 +171,12 @@ The global administrator for your organization can change the settings for autom
 
 3. Select **Testing source** from the left navigation.
 
-4. Select the applicable button to turn on automatic testing for all improvement actions, turn it off for all actions, or turn on by individual action.
+4. Select your desired option for testing improvement actions:
+    1. Turn on automatic testing for all actions
+    1. Turn off automatic testing for all actions
+    1. Turn on automatic testing per action
 
-5. If you select **Turn on per improvement action**, a list will show all the available improvement actions to choose from.  Check the box next to any action you want automatically tested.
+5. If you select **Turn on per improvement action**, a list will display showing all the improvement actions that are eligible for testing. All actions will be checked by default, so you'll need to uncheck the actions you **don't** want to be automatically tested.
 
 6. Select **Save** to save your settings. You’ll receive a confirmation message at the top of your screen that your selection was saved. If you receive a failure notice, try again.
 
