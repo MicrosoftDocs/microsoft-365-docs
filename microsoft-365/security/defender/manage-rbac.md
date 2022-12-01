@@ -75,7 +75,7 @@ This section provides useful information on what you need to know before you sta
 
 The new Microsoft 365 Defender RBAC model provides easy migration of the existing permissions in the individual supported RBAC models to the new RBAC model.
 
-All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions align, see [Compare permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md).
+All permissions listed within the Microsoft 365 Defender RBAC model align to permissions in the individual RBAC models to ensure backward compatibility. For more information on how the permissions align, see [Map permissions in Microsoft 365 Defender role-based access control (RBAC)](compare-rbac-roles.md).
 
 ### Activation of the Microsoft 365 Defender RBAC model
 
@@ -97,5 +97,5 @@ Use the following steps as a guide to start using the Microsoft 365 Defender RBA
 
 3. **Learn more about the Microsoft 365 Defender RBAC model**
    - [Microsoft 365 Defender RBAC permissions](custom-permissions-details.md)
-   - [Compare existing RBAC roles to Microsoft 365 Defender RBAC roles](compare-rbac-roles.md)
+   - [Map existing RBAC roles to Microsoft 365 Defender RBAC roles](compare-rbac-roles.md)
 
