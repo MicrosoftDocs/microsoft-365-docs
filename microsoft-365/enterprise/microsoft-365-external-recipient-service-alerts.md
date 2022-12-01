@@ -1,5 +1,5 @@
 ---
-title: "External recipients service advisories"
+title: "Service advisories for messages pending delivery to external recipients"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
