@@ -30,7 +30,7 @@ description: Learn about the telemedicine features in Microsoft 365 and Microsof
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.date: 10/28/2022
+ms.date: 12/05/2022
 ---
 
 # Get started with Microsoft 365 for healthcare organizations

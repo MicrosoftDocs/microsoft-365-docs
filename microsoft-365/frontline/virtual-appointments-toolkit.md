@@ -25,7 +25,7 @@ description: Customizable resources and infographics you can add to your website
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 11/02/2022
+ms.date: 12/05/2022
 ---
 
 # Help your clients and customers use virtual appointments scheduled with Bookings
