@@ -9309,6 +9309,26 @@
       "source_path": "microsoft-365/lighthouse/m365-lighthouse-deploy-baselines.md",
       "redirect_url": "/microsoft-365/lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-phishing-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-about",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-spoofing-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-spoofing-about",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-spoofing-protection-faq.yml",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-spoofing-faq",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/tuning-anti-phishing.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-tuning",
+      "redirect_document_id": true 
     }                     
    ]
   }
