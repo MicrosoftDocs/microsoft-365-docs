@@ -143,7 +143,7 @@
        - name: Connection filtering
          items:
          - name: Configure the connection filtering policy
-           href: configure-the-connection-filter-policy.md
+           href: connection-filter-policies-configure.md
        - name: Outbound spam protection
          items:
          - name: Outbound spam protection
@@ -353,13 +353,13 @@
      - name: Tune and update
        items: 
         - name: Respond to a compromised connector
-          href: respond-compromised-connector.md
+          href: connectors-detect-respond-to-compromise.md
         - name: Remove blocked entities
           items:
            - name: Remove blocked users
              href: removing-user-from-restricted-users-portal-after-spam.md
            - name: Remove blocked connectors
-             href: remove-blocked-connectors.md
+             href: connectors-remove-blocked.md
         - name: Tune anti-phishing protection
           href: tuning-anti-phishing.md
         - name: Quarantine
