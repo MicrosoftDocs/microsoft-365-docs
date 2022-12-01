@@ -307,9 +307,9 @@ Examples of formatting for excluding file paths include:
 - **\public\local\\** <br> 
   Exclude files from every file path containing entered value. Matches with 'C:\Users\Public\local\\', 'C:\Users\User1\Public\local\', and '\\\\ms.temp\Public\local'.
 - **C:\Users\\\*\Desktop** <br>
-  C:\Users\\\*\Desktop: Wildcards are supported. Matches with 'C:\Users\user1\user1\Desktop' and 'C:\Users\user2\Desktop'.
+  C:\Users\\\*\Desktop: Wildcards are supported. Matches with 'C:\Users\user1\Desktop' and 'C:\Users\user2\Desktop'.
 - **C:\Users\\\*(2)\Desktop** <br>
-  Wildcards with numbers are supported. Matches with 'C:\Users\user1\Desktop' and 'C:\Users\user2\Shared\Desktop'.
+  Wildcards with numbers are supported. Matches with 'C:\Users\user1\user1\Desktop' and 'C:\Users\user2\Shared\Desktop'.
 
 To delete a file path exclusion, select the file path exclusion and select **Delete**.
 
