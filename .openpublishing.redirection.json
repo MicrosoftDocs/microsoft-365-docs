@@ -9309,6 +9309,46 @@
       "source_path": "microsoft-365/lighthouse/m365-lighthouse-deploy-baselines.md",
       "redirect_url": "/microsoft-365/lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-phishing-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-about",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-spoofing-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-spoofing-about",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-spoofing-protection-faq.yml",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-spoofing-faq",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/tuning-anti-phishing.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-protection-tuning",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/backscatter-messages-and-eop.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-backscatter-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/bulk-complaint-level-values.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-bulk-complaint-level-bcl-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/advanced-spam-filtering-asf-options.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-asf-settings-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-your-spam-filter-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
+      "redirect_document_id": true
     }                     
    ]
   }

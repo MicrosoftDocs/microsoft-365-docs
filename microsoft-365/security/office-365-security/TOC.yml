@@ -95,17 +95,17 @@
          - name: Anti-spam protection
            href: anti-spam-protection.md
          - name: Configure anti-spam policies
-           href: configure-your-spam-filter-policies.md
+           href: anti-spam-policies-configure.md
          - name: Advanced Spam Filter (ASF) settings
-           href: advanced-spam-filtering-asf-options.md
+           href: anti-spam-policies-asf-settings-about.md
          - name: What's the difference between junk email and bulk email?
            href: what-s-the-difference-between-junk-email-and-bulk-email.md
          - name: Spam confidence level (SCL)
            href: spam-confidence-levels.md
          - name: Bulk complaint level (BCL)
-           href: bulk-complaint-level-values.md
+           href: anti-spam-bulk-complaint-level-bcl-about.md
          - name: Backscatter in EOP
-           href: backscatter-messages-and-eop.md
+           href: anti-spam-backscatter-about.md
          - name: Configure junk email settings on Exchange Online mailboxes
            href: configure-junk-email-settings-on-exo-mailboxes.md
          - name: Anti-spam protection FAQ
@@ -157,7 +157,7 @@
        - name: Anti-phishing protection
          items:
          - name: Anti-phishing protection
-           href: anti-phishing-protection.md
+           href: anti-phishing-protection-about.md
          - name: Anti-phishing policies
            items:
            - name: Anti-phishing policies
