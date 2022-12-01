@@ -49,7 +49,7 @@ Note that US Government Community (GCC) Moderate, GCC High, and Department of De
 
 There are two categories of templates in Compliance Manager: **included** and **premium**.
 
-1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 2. **Premium templates** to cover additional needs and scenarios can be obtained by purchasing template licenses.
 
 When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](compliance-manager-templates.md#active-and-inactive-templates).
@@ -106,7 +106,7 @@ Templates for a pre-defined product, such as Microsoft 365, have joint licensing
 
 Similarly, templates that belong to the same regulation family are also counted as one template. The regulation family is shown in the **Overarching regulation** column on the **Assessment templates** page. When you purchase a template license for a regulation and activate the template, it counts as one activated template even if you create assessments for different levels or versions of that regulation. For example, if you use a template for CMMC Level 1 and a template for CMMC Level 2, your activated templates counter increases by only one.
 
-For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## View and manage templates
 
