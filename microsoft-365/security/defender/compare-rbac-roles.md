@@ -56,7 +56,7 @@ Use the tables in the following sections to learn more about how your existing i
 |Alerts investigation | Security operations \ Security data \ Alerts (manage) |
 |Active remediation actions - Security operations | Security operations \ Security data \ Response (manage) |
 |Active remediation actions - Threat and vulnerability management - Exception handling |Security posture \ Posture management \ Exception handling (manage)|
-|Active remediation actions - Threat and vulnerability management - Security posture \ posture management \ Remediation handling (manage) |
+|Active remediation actions - Threat and vulnerability management - Remediation handling | Security posture \ posture management \ Remediation handling (manage) |
 |Active remediation actions - Threat and vulnerability management - Application handling| Security posture \ Posture management \ Application handling (manage)|
 |Vulnerability management – Manage security baselines assessment profiles| Security posture \ posture management \ Security baselines assessment (manage)|
 |Live response capabilities|Security operations \ Basic live response (manage)|
@@ -69,11 +69,10 @@ Use the tables in the following sections to learn more about how your existing i
 
 | Defender for Office (EOP) role group| Microsoft 365 Defender RBAC permission|
 |:-------|:-----|:-------|
-|Security reader| Security operations \ Security data \ Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Configuration \ Security setting (read) </br>Configuration \ System setting (read) </br>|
-|Global reader|Security operations \ Security data \ Security data basics (read)</br> Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Configuration \ Security setting (read) </br>Configuration \ System setting (read) </br>|
-|Security administrator| Security operations \ Security data \ Security data basics (read) </br> Security operations \ Security data \ Alerts (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Security operations \ Security data \ Email quarantine (manage)</br>
-Configuration \ Authorization (read) </br> Configuration \ Security setting (All permissions) </br>Configuration \ System setting (All permissions) </br>|
-|Organization Management|Security operations \ Security data \ Security data basics (read) </br> Security operations \ Security data \ Alerts (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read) </br>Security operations \ Security data \ Response (manage) </br>Security operations \ Security data \ Email advanced actions (manage)</br>Security operations \ Security data \ Email quarantine (manage)</br>Configuration \ Authorization (All permissions) </br> Configuration \ Security setting (All permissions) </br>Configuration \ System setting (All permissions) </br>|
+|Security reader| Security operations \ Security data \Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Configuration \ Security setting (read) </br>Configuration \ System setting (read)|
+|Global reader|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Configuration \ Security setting (read) </br>Configuration \ System setting (read)|
+|Security administrator| Security operations \ Security data \ Security data basics (read) </br>Security operations \ Security data \ Alerts (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Security operations \ Security data \ Email quarantine (manage)</br>Configuration \ Authorization (read) </br> Configuration \ Security setting (All permissions) </br>Configuration \ System setting (All permissions) </br>|
+|Organization Management|Security operations \ Security data \ Security data basics (read) </br>Security operations \ Security data \ Alerts (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read) </br>Security operations \ Security data \ Response (manage) </br>Security operations \ Security data \ Email advanced actions (manage)</br>Security operations \ Security data \ Email quarantine (manage)</br>Configuration \ Authorization (All permissions) </br> Configuration \ Security setting (All permissions) </br>Configuration \ System setting (All permissions) </br>|
 |View-Only Recipients| Security operations \ Security data \ Security data basics (read) </br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)|
 |Preview|Security operations\ Security operations \ Raw data (Email & collaboration) \ Email content (read)|
 |Search and Purge|Security operations \ Security data \ Email advanced actions  (manage)|
@@ -88,9 +87,9 @@ Configuration \ Authorization (read) </br> Configuration \ Security setting (
 
 | Defender for Identity permission| Unified RBAC permission|
 |:-------|:-----|:-------|
-|MDI admin|Security operations \ Security data \ Security data basics (read)</br> Security operations \ Security data \ Alerts (manage)</br>Configuration \ Authorization (All permissions) </br>Configuration \ Security setting (All permissions) </br>Configuration \ System setting (All permissions) </br> |
-|MDI user|Security operations \ Security data \ Security data basics (read) </br> Security operations \ Security data \ Alerts (manage)</br>Configuration \ Security setting (All permissions) </br>Configuration \ System setting (read) </br>|
-|MDI viewer|Security operations \ Security data \ Security data basics (read)</br> Configuration \ Security setting (read) </br>Configuration \ System setting (read) </br>|
+|MDI admin|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Security data \ Alerts (manage)</br>Configuration \ Authorization (All permissions) </br>Configuration \ Security setting (All permissions) </br>Configuration \ System setting (All permissions) </br> |
+|MDI user|Security operations \ Security data \ Security data basics (read) </br>Security operations \ Security data \ Alerts (manage)</br>Configuration \ Security setting (All permissions) </br>Configuration \ System setting (read) </br>|
+|MDI viewer|Security operations \ Security data \ Security data basics (read)</br>Configuration \ Security setting (read) </br>Configuration \ System setting (read) </br>|
 
 >[!NOTE]
 > Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://portal.cloudappsecurity.com). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).
