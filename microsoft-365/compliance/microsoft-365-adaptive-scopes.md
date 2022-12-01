@@ -134,7 +134,7 @@ Specifically for SharePoint sites, there might be additional SharePoint configur
         SiteTemplate=SITEPAGEPUBLISHING
         ````
 
-    You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
+    You can [validate these advanced queries](#validate-advanced-querie) independently from the scope configuration.
     
     > [!TIP]
     > You must use the advanced query builder if you want to exclude inactive mailboxes. Or conversely, target just inactive mailboxes. For this configuration, use the OPATH property *IsInactiveMailbox*:
