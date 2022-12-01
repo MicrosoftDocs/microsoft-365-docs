@@ -126,7 +126,7 @@ Staff members can change the language of the captions. The default language is E
 
 ### Joining appointments configured with Teams Premium protected meetings features
 
-Currently, protected meeting capabilities that are part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview), such as sensitivity labels, watermarks, and end-to-end encryption, aren't supported in browser join.
+Currently, protected meeting capabilities that are part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview), such as sensitivity labels, watermarks, and end-to-end encryption (E2EE), aren't supported in browser join.
 
 If you've configured any of these features in your organization, attendees won't be able to join appointments from a desktop or mobile browser. Instead, they're prompted to download Teams and the meeting link they receive opens Teams in the desktop, mobile, or web app.
 
