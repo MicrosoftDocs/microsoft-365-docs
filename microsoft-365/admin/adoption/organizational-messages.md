@@ -58,7 +58,15 @@ In this preview, we support the teaching call-out and business bars in Word, Exc
 
 Business bars are supported by Microsoft 365 Consumer subscribers, Office 2019, Office 2016, Office 2013, and Office 2010.
 
+:::image type="content" source="../../media/org-message-location-bar.png" alt-text="In-product notification recommending to use Teams messages":::
+
+*The user sees an in-product notification recommending they use Teams messages more.*
+
 The desktop teaching call-out is supported by Microsoft 365 Consumer and Commercial Office 2019, and Office 2016 Consumer.
+
+:::image type="content" source="../../media/org-message-location.png" alt-text="In-product notification recommending to save to OneDrive":::
+
+*The user sees an in-product notification recommending they save to OneDrive more.*
 
 ## How to enable Adoption Score Organizational Messages
 
@@ -77,7 +85,7 @@ After Adoption Score is enabled, the global administrator and organizational mes
 
 Visit [privacy controls for Adoption Score](privacy.md) to understand how to enable Adoption Score.
 
-:::image type="content" source="../../media/org-message-adoption-score.png" alt-text="Screenshot: How to enable Organizational Messages in Adoption Score." lightbox="../../media/prodscore-landing.png":::
+:::image type="content" source="../../media/org-message-adoption-score.png" alt-text="Screenshot: How to enable Organizational Messages in Adoption Score.":::
 
 ## Getting Started
 
@@ -136,7 +144,7 @@ As global administrator or organizational message writer role, you can do any of
 > [!NOTE]
 > The recipient list is refreshed daily. The users who adopted the recommended practices will be removed from the recipient lists.
 
-:::image type="content" source="../../media/org-message-select-recipients.png" alt-text="Screenshot: Select recipients for Organizational Messages in Adoption Score." lightbox="../../media/prodscore-landing.png":::
+:::image type="content" source="../../media/org-message-select-recipients.png" alt-text="Screenshot: Select recipients for Organizational Messages in Adoption Score.":::
 
 ### Step 3: Schedule a time window and frequency for delivery of the messages
 
@@ -149,9 +157,9 @@ As global administrator or organizational message writer role, you can do any of
 4) Select **Next** to proceed to the **Finish** tab.
 
 > [!NOTE]
-> If the frequency of the message is set as once a week, the message will only show on one of the surfaces per week. After the user clicks or dismisses the message, it won’t show up again. Teaching call-out messages only appear twice in their lifetime even if the user doesn’t click on it.
+> If the frequency of the message is set as once a week, the message will only show on one of the surfaces per week. After the user selects or dismisses the message, it won’t show up again. Teaching call-out messages only appear twice in their lifetime even if the user doesn’t select it.
 
-:::image type="content" source="../../media/org-message-schedule-message.png" alt-text="Screenshot: Schedule your message for Organizational Messages in Adoption Score." lightbox="../../media/prodscore-landing.png":::
+:::image type="content" source="../../media/org-message-schedule-message.png" alt-text="Screenshot: Schedule your message for Organizational Messages in Adoption Score.":::
 
 ### Step 4: Finish or Save Draft
 
@@ -186,13 +194,13 @@ Once messages have been created, you'll see the reporting in the table under the
 > [!NOTE]
 > This capability is only available to Product admins, report reader roles, and user success specialists who have reader permissions.
 
-:::image type="content" source="../../media/org-message-track-status.png" alt-text="Screenshot: Track the status of your message for Organizational Messages in Adoption Score." lightbox="../../media/prodscore-landing.png":::
+:::image type="content" source="../../media/org-message-track-status.png" alt-text="Screenshot: Track the status of your message for Organizational Messages in Adoption Score.":::
 
 ### Step 6: Cancel or clone messages
 
 Once messages have been created, you'll see the reporting in the table under the **Your org’s messages** tab under **Actions**.
 
-- Select three dots to the right of **Message name** to see a dropdown of actions
+- Select three dots to the right of **Message name** to see a dropdown of actions.
 
 - Select **cancel** or **clone**.
 
@@ -219,11 +227,11 @@ A: As the frequency of the messages is at most once a week, the recommended mini
 
 ### Q: Will I be able to customize the text in the messages?
 
-A: Not currently,  but additional customization options will be enabled in future releases.
+A: Not currently, but additional customization options will be enabled in future releases.
 
-## Organizational Messages in Windows Endpoint Manager
+## Organizational Messages in Microsoft Intune (Windows Endpoint Manager)
 
-Organizational messages in Windows Endpoint Manager enable organizations to deliver branded personalized messages to their employees via native Windows 11 surfaces, such as Notification Center and the Get started app. These messages are intended to help people ramp up in new roles quicker, learn more about their organization, and stay informed of new updates and trainings. [Learn more about Organizational messages in Windows Endpoint Manager](/mem/intune/remote-actions/custom-notifications).
+Organizational messages in Windows Endpoint Manager enable organizations to deliver branded personalized messages to their employees via native Windows 11 surfaces, such as Notification Center and the Get started app. These messages are intended to help people ramp up in new roles quicker, learn more about their organization, and stay informed of new updates and trainings. [Learn more about Organizational messages in Windows Endpoint Manager](/mem/intune/remote-actions/organizational-messages-prerequisites).
 
 ## Appendix
 
