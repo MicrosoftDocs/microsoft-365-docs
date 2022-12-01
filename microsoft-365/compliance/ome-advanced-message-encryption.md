@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.date: 05/12/2022
 ms.collection: 
-- Strat_O365_IP
+- tier1
 - purview-compliance
 search.appverid:
 - MET150

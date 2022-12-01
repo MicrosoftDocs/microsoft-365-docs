@@ -190,7 +190,7 @@ For more information about this setting, see [Advanced phishing thresholds in an
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
-|**Phishing email threshold** <br><br> _PhishThresholdLevel_|**1 - Standard** <br><br> `1`|**2 - Aggressive** <br><br> `2`|**3 - More aggressive** <br><br> `3`||
+|**Phishing email threshold** <br><br> _PhishThresholdLevel_|**1 - Standard** <br><br> `1`|**3 - More aggressive** <br><br> `3`|**4 - Most aggressive** <br><br> `4`||
 
 #### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 
@@ -306,7 +306,7 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 |**Action for potentially malicious URLs in Microsoft Office apps**||||||
 |**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps** <br><br> _EnableSafeLinksForOffice_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office apps](safe-links.md#safe-links-settings-for-office-apps).|
 |**Click protection settings**||||||
-|**Track user clicks** <br><br> _TrackUserClicks_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Track user clicks** <br><br> _TrackClicks_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Let users click through to the original URL** <br><br> _AllowClickThrough_|Selected <br><br> `$true`|Selected <br><br> `$true`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Turning off this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL.|
 |**Display the organization branding on notification and warning pages** <br><br> _EnableOrganizationBranding_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|We have no specific recommendation for this setting. <br><br> Before you turn on this setting, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.|
 |**Notification**||||||

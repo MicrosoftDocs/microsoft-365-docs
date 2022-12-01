@@ -767,7 +767,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 
 In the **View data by Content \> Malware** view, the following information is shown in the chart for Microsoft Defender for Office 365 organizations:
 
-- **Anti-malware engine**: Malicious files detected in SharePoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](virus-detection-in-spo.md).
+- **Anti-malware engine**: Malicious files detected in SharePoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](anti-malware-protection-for-spo-odfb-teams-about.md).
 - **MDO detonation**: Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 - **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
 
@@ -1140,6 +1140,6 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 [Anti-malware protection in EOP](anti-malware-protection.md)
 
-[View mail flow reports in the Microsoft 365 Defender portal](view-mail-flow-reports.md)
+[View mail flow reports in the EAC](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 [View reports for Defender for Office 365](view-reports-for-mdo.md)

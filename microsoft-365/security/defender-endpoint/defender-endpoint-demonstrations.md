@@ -8,14 +8,18 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- m365-security
+- tier2
+- demo
 ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
 
 # Microsoft Defender for Endpoint - demonstration scenarios
@@ -24,9 +28,9 @@ The following demonstration scenarios will help you learn about the capabilities
 
 :::image type="content" source="images/microsoft-defender-for-endpoint-cloud-protection.png" alt-text="Shows the areas of Microsoft Defender for Endpoint demonstration scenarios covered in this collection" lightbox="images/microsoft-defender-for-endpoint-cloud-protection.png":::
 
-- Attack surface protection (ASR)
-- Next Generation Protection (NGP)
-- Endpoint detection and response (EDR)
+- Attack surface protection (**ASR**)
+- Next Generation Protection (**NGP**)
+- Endpoint detection and response (**EDR**)
 
 > [!NOTE]
 > None of the sample files or _suspicious_ links provided in this collection are actually malicious; all links and demonstration files are harmless.
@@ -56,5 +60,5 @@ The following table lists the available demonstrations alphabetically, with thei
 [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
 [Next Generation Protection \(NGP\) overview](next-generation-protection.md)
 [Endpoint detection and response \(EDR\) overview](overview-endpoint-detection-response.md)
+[Microsoft Defender for Endpoint security blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog)
 
-[Microsoft Defender for Endpoint security blog](https://www.microsoft.com/security/blog/microsoft-defender-for-endpoint/)

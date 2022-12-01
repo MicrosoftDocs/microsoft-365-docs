@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: 
  - m365-security
  - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
 ---

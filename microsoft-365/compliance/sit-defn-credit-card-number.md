@@ -33,7 +33,7 @@ description: "Credit card number sensitive information type entity definition."
 
 ## Pattern
 
-Detects cards from all major brands worldwide, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, diner's cards, Rupay and China UnionPay.
+Detects cards from all major brands, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, diner's cards, Rupay and China UnionPay.
 
 ## Checksum
 

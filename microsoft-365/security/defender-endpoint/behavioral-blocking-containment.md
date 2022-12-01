@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium

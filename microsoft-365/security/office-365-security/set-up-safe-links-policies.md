@@ -81,7 +81,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - Allow up to 6 hours for a new or updated policy to be applied.
 
-- [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). As new features are added, you may need to make adjustments to your existing Safe Links policies.
+- [New features are continually being added to Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
 ## Use the Microsoft 365 Defender portal to create Safe Links policies
 
@@ -101,7 +101,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 4. On the **Users and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups or mail-enabled security groups.
+     - Members of the specified distribution groups (including non-mail-enabled security groups within distribution groups) or mail-enabled security groups.
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
@@ -127,12 +127,12 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
 5. On the **URL & click protection settings** page that appears, configure the following settings:
 
-   - **Action on potentially malicious URLs within Emails** section:
+   - **Action on potentially malicious URLs within Emails (Email & Time of Click)** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in email**: Select this option to turn on Safe Links protection for links in email messages. If you select this option, the following settings are available:
-       - **Apply Safe Links to email messages sent within the organization**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients.
-       - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this option to turn on real-time scanning of links in email messages. If you select this option, the following setting is available:
-         - **Wait for URL scanning to complete before delivering the message**: Select this option to wait for real-time URL scanning to complete before delivering the message.
-       - **Do not rewrite URLs, do checks via SafeLinks API only**: Select this option to prevent URL wrapping. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it.
+       - **Apply Safe Links to email messages sent within the organization (Email – Intraorg & Time of Click)**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients. Turning this on will enable link wrapping for all intraorg messages.
+       - **Apply real-time URL scanning for suspicious links and links that point to files (Email)**: Select this option to turn on real-time scanning of links in email messages from external senders. If you select this option, the following setting is available:
+         - **Wait for URL scanning to complete before delivering the message (Email)**: Select this option to wait for real-time URL scanning to complete before delivering the message from external senders. The recommended setting is **On**.
+       - **Do not rewrite URLs, do checks via SafeLinks API only (Time of Click)**: Select this option to prevent URL wrapping and skip reputation check during mail flow. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it.
 
        - **Do not rewrite the following URLs in email** section: Click **Manage (nn) URLs** to allow access to specific URLs that would otherwise be blocked by Safe Links.
 
@@ -162,13 +162,13 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
         When you're finished, click **Done**.
 
-   - **Actions for potentially malicious URLs in Microsoft Teams** section:
+   - **Actions for potentially malicious URLs in Microsoft Teams (Time of Click)** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams**: Select this option to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect.
 
      > [!NOTE]
      > Currently, Safe Links protection for Microsoft Teams is not available in Microsoft 365 GCC High or Microsoft 365 DoD.
 
-   - **Actions for potentially malicious URLs in Microsoft Office apps** section:
+   - **Actions for potentially malicious URLs in Microsoft Office apps (Time of Click)** section:
      - **On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps**: Select this option to enable Safe Links protection for links in files in supported Office desktop, mobile, and web apps.
 
    - **Click protection settings** section:

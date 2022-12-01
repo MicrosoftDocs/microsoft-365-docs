@@ -57,7 +57,7 @@ With Defender for Business, you can help protect the devices and data your busin
    - [Find out how to get Defender for Business](get-defender-business.md).
 
 - **Learn how to set up your threat protection capabilities**. 
-   - [Use the trial playbook: Defender for Business](trial-playbook-defender-business.md).
+   - [See the trial user guide: Defender for Business](trial-playbook-defender-business.md).
    - [Learn about the simplified configuration process](mdb-simplified-configuration.md).
    - [See how to set up and configure Defender for Business](mdb-setup-configuration.md).
 

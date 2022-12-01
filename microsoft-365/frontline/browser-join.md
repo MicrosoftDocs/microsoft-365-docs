@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 manager: samanro
 audience: ITPro
-ms.topic: article 
+ms.topic: how-to
 ms.service: microsoft-365-frontline 
 search.appverid: 
 searchScope:
@@ -21,11 +21,13 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
+  - tier2
 ms.reviewer: hafarmer
 description: Learn about the join experience for Teams virtual appointments on browsers. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Manage the join experience for Teams virtual appointments on browsers
