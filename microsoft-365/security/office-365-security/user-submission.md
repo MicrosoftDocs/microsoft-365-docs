@@ -223,28 +223,28 @@ To specify the reason why the original attached messages were reported, messages
 
   Messages that don't follow this format will not display properly on the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
 
-## Use Exchange Online PowerShell to configure the user submissions mailbox for email
+## Use Exchange Online PowerShell to configure the user reported message settings
 
-After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), you use the **\*-ReportSubmissionPolicy** and **\*-ReportSubmissionRule** cmdlets to manage and configure the user submissions mailbox and the related settings.
+After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), you use the **\*-ReportSubmissionPolicy** and **\*-ReportSubmissionRule** cmdlets to manage and configure the user reported message settings.
 
-In Exchange Online PowerShell, the basic elements of the user submissions mailbox settings are:
+In Exchange Online PowerShell, the basic elements of the user reported message settings are:
 
-- **The report submission policy**: Turns the Microsoft integrated reporting experience on or off, turns sending reported messages to Microsoft on or off, turns sending reported messages to the user submissions mailbox on or off, and most other settings.
-- **The report submission rule**: Specifies the email address of the user submissions mailbox or a blank value when the user submissions mailbox isn't used (report messages to Microsoft only).
+- **The report submission policy**: Turns the Microsoft integrated reporting experience on or off, turns sending reported messages to Microsoft on or off, turns sending reported messages to the reporting mailbox on or off, and most other settings.
+- **The report submission rule**: Specifies the email address of the reporting mailbox or a blank value when the reporting mailbox isn't used (report messages to Microsoft only).
 
-The difference between these two elements isn't obvious when you manage user submissions mailbox settings in the Microsoft 365 Defender portal:
+The difference between these two elements isn't obvious when you manage the user reported message settings in the Microsoft 365 Defender portal:
 
-- There's only report submission policy named DefaultReportSubmissionPolicy and one report submission rule that's named DefaultReportSubmissionRule by default.
+- There's only one report submission policy named DefaultReportSubmissionPolicy and one report submission rule named DefaultReportSubmissionRule by default.
 
-  If you've never gone to <https://security.microsoft.com/userSubmissionsReportMessage>, there's no report submission policy or report submission rule (the Get-ReportSubmissionPolicy and Get-ReportSubmissionRule cmdlets return nothing).
+  If you've never gone to <https://security.microsoft.com/securitysettings/userSubmission>, there's no report submission policy or report submission rule (the Get-ReportSubmissionPolicy and Get-ReportSubmissionRule cmdlets return nothing).
 
-  As soon as you visit <https://security.microsoft.com/userSubmissionsReportMessage> and even before you configure any settings, the report submission policy is created with the default values and is visible in PowerShell.
+  As soon as you visit <https://security.microsoft.com/securitysettings/userSubmission> and even before you configure any settings, the report submission policy is created with the default values and is visible in PowerShell.
 
-  As after you configure and save the settings at <https://security.microsoft.com/userSubmissionsReportMessage> to specify a user submissions mailbox (Microsoft integrated reporting experience or third-party tools), the report submission rule named DefaultReportSubmissionRule is automatically created. Note that it takes several seconds before the rule is visible in PowerShell.
+  As after you configure and save the settings at <https://security.microsoft.com/securitysettings/userSubmission> to specify a reporting mailbox (Microsoft or third-party reporting tools), the report submission rule named DefaultReportSubmissionRule is automatically created. Note that it takes several seconds before the rule is visible in PowerShell.
 
 - You can delete the report submission rule and recreate it with a different name, but the rule is always associated with the report submission policy whose name you can't change. So, we recommend that you name the rule DefaultReportSubmissionRule whenever you create or recreate the rule.
 
-- When you specify the email address of the user submissions mailbox in the Microsoft 365 Defender portal, that value is primarily set in the report submission rule, but the value is also copied into the related properties in the report submission policy. In PowerShell, when you set the email address in the rule, the value isn't copied into the related properties in the policy. For consistency with the Microsoft 365 Defender portal and for clarity, we recommend that you add or update the email address in the policy and the rule.
+- When you specify the email address of the reporting mailbox in the Microsoft 365 Defender portal, that value is primarily set in the report submission rule, but the value is also copied into the related properties in the report submission policy. In PowerShell, when you set the email address in the rule, the value isn't copied into the related properties in the policy. For consistency with the Microsoft 365 Defender portal and for clarity, we recommend that you add or update the email address in the policy and the rule.
 
 ### Use PowerShell to view the report submission policy and the report submission rule
 
@@ -263,10 +263,10 @@ Get-ReportSubmissionRule
 To view both the policy and the rule at the same time, run the following commands:
 
 ```powershell
-Write-Output -InputObject `r`n,"Report Submission Policy",("-"*79); Get-ReportSubmissionPolicy; Write-Output -InputObject `r`n,"Report Submission Rule","("-"*79)"; Get-ReportSubmissionRule
+Write-Output -InputObject `r`n,"Report Submission Policy",("-"*79); Get-ReportSubmissionPolicy; Write-Output -InputObject `r`n,"Report Submission Rule",("-"*79); Get-ReportSubmissionRule
 ```
 
-Remember, if you've never gone to <https://security.microsoft.com/userSubmissionsReportMessage> or manually created the report submission policy or the report submission rule in PowerShell, there is no report submission policy or report submission rule, so the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets return nothing.
+Remember, if you've never gone to <https://security.microsoft.com/securitysettings/userSubmission> or manually created the report submission policy or the report submission rule in PowerShell, there is no report submission policy or report submission rule, so the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets return nothing.
 
 For detailed syntax and parameter information, see [Get-ReportSubmissionPolicy](/powershell/module/exchange/get-reportsubmissionpolicy) and [Get-ReportSubmissionRule](/powershell/module/exchange/get-reportsubmissionrule).
 
@@ -280,9 +280,9 @@ For detailed syntax and parameter information, see [New-ReportSubmissionPolicy](
 
 #### Use PowerShell to enable the Microsoft integrated reporting experience with report to Microsoft only
 
-This example creates the report submission policy with the default settings (the same settings as when you first visit <https://security.microsoft.com/userSubmissionsReportMessage>, but before you configure or save any settings):
+This example creates the report submission policy with the default settings (the same settings as when you first visit <https://security.microsoft.com/securitysettings/userSubmission>, but before you configure or save any settings):
 
-- The Microsoft integrated reporting experience is turned on: **Microsoft Outlook Report Message button** toggle: **On** ![Toggle on.](../../media/scc-toggle-on.png).
+- The Microsoft integrated reporting experience is turned on (toggle **On** ![Toggle on.](../../media/scc-toggle-on.png)).
 
 - Send reported messages to Microsoft only: **Send the reported messages to** \> **Microsoft**.
 
