@@ -1175,7 +1175,7 @@
             href: dlp-chrome-learn-about.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
-          - name: Learn about migration assistant for DLP
+          - name: Learn about the migration assistant for DLP
             href: migration-assistant-for-dlp-learn.md
         - name: Plan for DLP
           items:
@@ -1207,7 +1207,7 @@
             href: dlp-alerts-dashboard-get-started.md
           - name: Get started with Data loss prevention policies for Power BI (preview)
             href: dlp-powerbi-get-started.md
-          - name: Get started with migration assistant for DLP 
+          - name: Get started with the migration assistant for DLP 
             href: migration-assistant-for-dlp-get-started.md
         - name: Use DLP
           items:
@@ -1243,7 +1243,7 @@
               href: dlp-policy-tips-reference.md
             - name: Share DLP Alerts (preview)
               href: dlp-share-alerts.md
-            - name: Use migration assistant for DLP 
+            - name: Use the migration assistant for DLP 
               href: migration-assistant-for-dlp-use.md       
 - name: Manage data lifecycle & records
   items: 

@@ -22,7 +22,7 @@ description: "The migration assistant tool is a Windows based desktop applicatio
 
 # Learn about migration assistant for Microsoft Purview DLP
 
-This article helps you learn about the migration assistant for Microsoft Purview DLP.
+This article helps you to learn about the migration assistant for Microsoft Purview DLP.
 
 The migration assistant tool is a Windows-based desktop application that will migrate your DLP policies from other DLP platforms to our DLP platform. This tool takes you through a simple five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can safely use the migration assistant tool to create DLP policies in test mode, which doesn't affect your live data or interact with current environment.
 
@@ -30,7 +30,7 @@ The migration assistant tool is a Windows-based desktop application that will mi
 
 The migration assistant helps with some of the tasks involved in a DLP migration project:
 
-- In traditional migration scenario, you need to perform a feasibility analysis between source and target DLP platforms, map features, migrate policies manually, and test and tweak DLP policies. With the migration assistant, your migrated DLP policies can be up and running within minutes of starting the migration assistant process.
+- In traditional migration scenario, you need to perform feasibility analysis between source and target DLP platforms, map the features, migrate policies manually, and test and tweak DLP policies. With the migration assistant, your migrated DLP policies can be up and running within minutes of starting the migration assistant process.
 - With migration assistant, you can scale up your migration project quickly from moving a single policy manually to multiple policies at the same time.
 - The migration assistant automatically identifies sensitive information types (SITs) or Data Identifiers in source policies and creates custom SITs in your Microsoft tenant. It also moves all of your custom regular expressions and keywords in a few clicks.
 - The migration assistant detects which conditions, exclusions & actions are currently being used in source policies and automatically creates new rules with the same conditions, and actions.
@@ -44,13 +44,13 @@ The following diagram illustrates the migration process:
 
 :::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of migration assistant for DLP":::
 
-Each time the migration assistant runs it follows these five phases:
+Each time the migration assistant runs, it follows these five phases:
 
 - **Input:** The migration assistant ingests one or more Symantec DLP policy XML files.
 - **Analyze:** The migration assistant interprets the files and identifies Symantec DLP policy constructs.
 - **Rationalize:** The migration assistant maps the identified Symantec DLP policy constructs to Microsoft DLP capabilities. It performs validations for Microsoft DLP platform limitations.
 - **Migrate:** The migration assistant executes PowerShell scripts for the DLP scenarios identified and supported by the UDLP platform.
-**Report:** The migration assistant provides the user with a detailed migration report about which policies were migrated successfully, partially and/or not migrated. It also provides recommendations to imrove future migrations.
+- **Report:** The migration assistant provides the user with a detailed migration report about which policies were migrated successfully, partially, and/or not migrated. It also provides recommendations to improve future migrations.
 
 ## Understanding mapping of Symantec DLP elements to Microsoft 365 DLP elements
 
@@ -89,7 +89,7 @@ The following table details the mapping of classification elements that the migr
 | Keyword Pair      | Create new custom SIT with first keyword list as primary element & second keyword list as a supporting element with 300 char proximity. |
 | Data Identifier   | Map to OOB SIT if equivalent available else, create new custom SIT.   |
 
-The following table details the mapping of optional validators for Sensitive Information Types (also known as Data Identifiers in Symantec DLP) that the migration assistant uses while translating Symantec DLP policies:
+The following table details the mapping of optional validators for sensitive information types (also known as Data Identifiers in Symantec DLP) that the migration assistant uses while translating Symantec DLP policies:
 
 | **Symantec Optional Validators**  | **M365 DLP Optional Validators**|
 | -------------------- | ------------------ |
@@ -111,21 +111,21 @@ The following table details the mapping of optional validators for Sensitive Inf
 When you upload your rule package XML file, the system validates the XML and checks for known bad patterns and obvious performance issues. Here are known issues that the validation checks for—a regular expression:
 
 - Can't begin or end with alternator "|", which matches everything because it's considered an empty match.
-     - For example, "|a" or "b|" won't pass validation.-
+     - For example, "|a" or "b|" won't pass validation.
 - Can't begin or end with a ".{0,m}" pattern, which has no functional purpose and only impairs performance.
-     - For example, ".{0,50}ASDF" or "ASDF.{0,50}" won't pass validation.-
+     - For example, ".{0,50}ASDF" or "ASDF.{0,50}" won't pass validation.
 - Can't have ".{0,m}" or ".{1,m}" in groups, and can't have ".*" or ".+" in groups.
-     - For example, "(.{0,50000})" won't pass validation.-
+     - For example, "(.{0,50000})" won't pass validation.
 - Can't have any character with "{0,m}" or "{1,m}" repeaters in groups.
-     - For example, "(a*)" won't pass validation.-
+     - For example, "(a*)" won't pass validation.
 - Can't begin or end with ".{1,m}"; instead, use just "."
-     - For example, ".{1,m}asdf" won't pass validation; instead, use just ".asdf".-
+     - For example, ".{1,m}asdf" won't pass validation; instead, use just ".asdf".
 - Can't have an unbounded repeater (such as "*" or "+") on a group.
      - For example, "(xx)*" and "(xx)+" won't pass validation.
 
 ### Condition and Exception Mapping
 
-The following tables detail the mapping of condition and exception elements for Exchange (EXO) workload, Endpoint Devices, SharePoint Online, OneDrive and Other Workloads that the migration assistant uses while translating Symantec DLP policies:
+The following table details the mapping of condition and exception elements for Exchange (EXO) workload, Endpoint Devices, SharePoint Online, OneDrive and Other Workloads that the migration assistant uses while translating Symantec DLP policies:
 
 #### Exchange Workload
 
@@ -158,7 +158,7 @@ The following tables detail the mapping of condition and exception elements for 
 | Content Matches Data Identifier       | Content contains SIT |
 | Message Attachment or File Type Match | Document’s file extension is   |
 | Protocol Monitoring<li>HTTP<li>HTTPS<li>FTP | Cross-workload DLP policy(s)   |
-| Protocol Monitoring: Endpoint Device Type<li>CD/DVD<li>Removable storage<li>Copy to network share<li>Printer/Fax<li>Clipboard<li>Cloud storage<li>Application File Access<li>SEP Intensive Protection | One or more of the following (Devices):<li>Copy to USB removable media<li>Copy to network share<li>Copy to clipboard<li>Print<li>Upload to cloud service domains or access by unallowed browsers |
+| Protocol Monitoring: Endpoint Device Type<li>CD/DVD<li>Removable storage<li>Copy to network share<li>Printer/Fax<li>Clipboard<li>Cloud storage<li>Application File Access<li>SEP Intensive Protection | One or more of the following (Devices):<li>Copy to USB removable media<li>Copy to network share<li>Copy to clipboard<li>Print<li>Upload to cloud service domains or access by browsers that aren't allowed |
 
 ### Response Rules
 
