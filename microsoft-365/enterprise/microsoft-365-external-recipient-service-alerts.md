@@ -49,7 +49,7 @@ This service advisory informs you of messages destined to recipients outside Exc
 
 Each service advisory contains high level recommendations for administrators in remediating the issue. We also provide the number of messages queued at the time of alert, the domain where the messages are queued to, and the SMTP error code associated with most messages.
 
-For more information for determining the root cause for these service alerts, see [Mail flow intelligence in Exchange Online](../security/office-365-security/mail-flow-intelligence-in-office-365.md). This article also includes suggested actions to fix the root cause.
+For more information for determining the root cause for these service alerts, see [Mail flow intelligence in Exchange Online](../security/office-365-security/connectors-mail-flow-intelligence.md). This article also includes suggested actions to fix the root cause.
 
 > [!NOTE]
 > As Microsoft cannot account for every SMTP error code provided by third-party vendors, administrators may be required to investigate these errors codes specific to their Message Transfer Agent (MTA) or journaling solutions.

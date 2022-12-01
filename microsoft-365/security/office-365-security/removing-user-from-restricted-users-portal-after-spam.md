@@ -50,7 +50,7 @@ There are 2 types of restricted entities:
 
 - **Restricted user**: Learn about why a user can be restricted and how to handle restricted users (this article).  
 
-- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](remove-blocked-connectors.md). 
+- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](connectors-remove-blocked.md). 
 
 ## What do you need to know before you begin?
 
