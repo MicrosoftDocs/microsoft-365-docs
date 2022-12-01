@@ -24,6 +24,7 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Azure Active Directory
@@ -31,7 +32,7 @@ search.appverid: met150
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
-Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the  portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do. 
+Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the  portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bJ2a]
 
@@ -58,6 +59,9 @@ Defender for Endpoint RBAC is designed to support your tier- or role-based model
 To implement role-based access, you'll need to define admin roles, assign corresponding permissions, and assign Azure AD user groups assigned to the roles.
 
 ### Before you begin
+
+>[!Note]
+> If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
 
 Before using RBAC, it's important that you understand the roles that can grant permissions and the consequences of turning on RBAC.
 

@@ -49,7 +49,7 @@ Users with existing Custom roles may access data in the Microsoft 365 Defender p
 ## Create and manage custom roles
 
 >[!Note]
-> If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md)
+> If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
 
 Custom roles and permissions can be created and individually managed through each of the following security portals:
 
