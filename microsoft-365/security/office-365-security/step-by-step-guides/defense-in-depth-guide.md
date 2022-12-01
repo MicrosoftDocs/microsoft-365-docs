@@ -87,7 +87,7 @@ The information below will detail how to get the most out of your investment, br
 
 **Read more here:** [Advanced delivery](../configure-advanced-delivery.md)
 
-- User-reported email settings can be configured to allow users to report messages, directly to Microsoft, or to your custom mailbox (to integrate with current security workflows) or both, the submissions portal can also be accessed to triage false positives and false negatives.
+- You can configure user reported message settings to allow users to report good or bad messages to Microsoft, to a designated reporting mailbox (to integrate with current security workflows) or both. Admins can use the **User reported** tab on the **Submissions** page to triage false positives and false negative user reported messages.
 
 **Read more here:** [Deploy and configure the report message add-in to users](deploy-and-configure-the-report-message-add-in.md)
 

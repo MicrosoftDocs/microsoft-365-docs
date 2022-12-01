@@ -95,7 +95,7 @@ For information about requirements, important limits, and feature availability a
 |Directory Based Edge Blocking (DBEB)|[Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|
 |**Quarantine and submissions**||
 |Admin submission|[Use Admin submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md)|
-|User submissions (custom mailbox)|[User submissions policy](user-submission.md)|
+|User reported message settings|[User reported message settings](user-submission.md)|
 |Quarantine - admins|[Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md) <p> [Quarantined messages FAQ](quarantine-faq.yml) <p> [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md) <p> You can analyze the message headers of quarantined messages using the [Message Header Analyzer at](https://mha.azurewebsites.net/).|
 |Quarantine - end-users|[Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md) <p> [Use quarantine notifications to release and report quarantined messages](use-spam-notifications-to-release-and-report-quarantined-messages.md) <p> [Quarantine policies](quarantine-policies.md)|
 |**Mail flow**||

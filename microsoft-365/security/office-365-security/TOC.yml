@@ -274,7 +274,7 @@
              href: report-junk-email-messages-to-microsoft.md
            - name: Admin submissions
              href: admin-submission.md
-           - name: Enable the Report Message and the Report Phishing add-ins
+           - name: Enable the Microsoft Report Message and Report Phishing add-ins
              href: enable-the-report-message-add-in.md
            - name: Report false positives and false negatives in Outlook
              href: report-false-positives-and-false-negatives.md
