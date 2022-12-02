@@ -329,7 +329,7 @@ The templates listed below may be purchased by your organization. Certain licens
 - Taiwan - Regulations Governing the Standards for Information System and Security Management of Electronic Payment Institutions  
 - Taiwan Personal Data Protection Act (PDPA)  
 - Thailand PDPA  
-- Trade Secrets Act of Taiwan  
+- Taiwan – Trade Secrets Act
 - Law of The Republic of Uzbekistan on Personal Data  
 - Vietnam - Consumer Rights Protection Law  
 - Vietnam - Law of Cybersecurity  
