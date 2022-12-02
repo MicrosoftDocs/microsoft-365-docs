@@ -330,7 +330,7 @@ The templates listed below may be purchased by your organization. Certain licens
 - Taiwan – Trade Secrets Act 
 - Taiwan Personal Data Protection Act (PDPA)
 - Thailand PDPA  
-- Law of The Republic of Uzbekistan on Personal Data  
+- Uzbekistan - Law of The Republic of Uzbekistan on Personal Data  
 - Vietnam - Consumer Rights Protection Law  
 - Vietnam - Law of Cybersecurity  
 - Vietnam - Law of Network Information Security
