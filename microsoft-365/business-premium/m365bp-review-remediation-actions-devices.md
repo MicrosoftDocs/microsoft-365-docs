@@ -9,9 +9,9 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 12/05/2022
 ms.localizationpriority: high
-ms.reviewer: shlomiakirav
+ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
