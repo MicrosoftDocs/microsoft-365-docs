@@ -35,6 +35,7 @@ To help you find the information you need more quickly, Microsoft recommended ac
 - Identity (Azure Active Directory accounts & roles)
 - Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 - Apps (email and cloud apps, including Office 365 and Microsoft Defender for Cloud Apps)
+- Data (through Microsoft Information Protection)
 
 In the Microsoft Secure Score overview page, view how points are split between these groups and what points are available. You can also get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized recommended actions that can be taken to improve your score.
 
