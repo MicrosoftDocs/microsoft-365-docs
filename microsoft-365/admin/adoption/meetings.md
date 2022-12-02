@@ -20,6 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Details of the Meetings - people experiences Adoption Score."
+ROBOTS: NOINDEX
 ---
 
 # Meetings insights score – People experiences
@@ -46,7 +47,7 @@ We provide a primary insight in the experience that contains the key metrics for
 
 ### Primary insight
 
-Microsoft Teams integrate with Outlook calendar and provides a host of capabilities to make your meetings more engaging and effective. The primary insight looks at all Microsoft Teams online meetings that were held in your organization. The Primary insight also tracks how many meetings follow at least one of the best practices for Teams meetings.
+Microsoft Teams integrates with Outlook calendar and provides a host of capabilities to make your meetings more engaging and effective. The primary insight looks at all Microsoft Teams online meetings that were held in your organization. The Primary insight also tracks how many meetings follow at least one of the best practices for Teams meetings.
 
 :::image type="content" source="../../media/primaryinsights-meetings.png" alt-text="PRimary insights for meetings with best practices.":::
 
@@ -73,14 +74,14 @@ The meetings score for your organization measures the degree to which online Mic
 
 ## Explore more about meetings in your organization
 
-We also provide you with supporting information to hep you understand how people in your organization, as an aggregate, conduct meetings. These additional metrics don't directly contribute to your Adoption Score, but can help you create an action plan as part of your digital transformation.
+We also provide you with supporting information to help you understand how people in your organization, as an aggregate, conduct meetings. These additional metrics don't directly contribute to your Adoption Score, but can help you create an action plan as part of your digital transformation.
 
 ### Breakdown of how many meetings follow best practices
 
 :::image type="content" source="../../media/videouse-meetings.png" alt-text="Chart showing primary insights for meetings - people experiences.":::
 
 1. **Header:**  Highlights the percentage of online Microsoft Teams meetings that use video best practices considered in the primary insight and scoring.
-2. **Body:** Hrovides information on the value of using these practices during meetings to make them more engaging. 
+2. **Body:** Provides information on the value of using these practices during meetings to make them more engaging. 
 3. **Visualization:** The breakdown in the visualization is meant to represent the extent to which online Microsoft Teams meetings are following each of the following best practices: 
     - **Video**: The colored portion and the fraction represent the percentage of online Microsoft Teams meetings that have video turned on. The fraction is constructed from: 
         - Numerator:  Online Microsoft Teams meetings held in the last 28 days that had video from at least one participant turned on. 
@@ -95,7 +96,7 @@ We also provide you with supporting information to hep you understand how people
 :::image type="content" source="../../media/percentageofpeopleusingteams.png" alt-text="Chart showing percentage of people who attend Teams meetings for over 20 hours of week.":::
 
 1. **Header:** Shows the percentage of people in your organization who attend online Microsoft Teams meetings for more than 20 hours per week on average, based on their activity in the last 28 days.
-2. **Body:** Provides details on the value of using meeting best practices to make meetings engaged and productive
+2. **Body:** Provides details on the value of using meeting best practices to make meetings engaging and productive
 3. **Visualization:** Provides a view of people in your organization based on their average time spent per week in meetings within the last 28 days. The following information is provided for each category:
       - **Total meeting attendees:** Shows the number of people in your organization who attended meetings, based on the average meeting duration range, in the last 28 days. For example, the 6-10 hours category indicates the number of people who attended meetings for an average of that many hours per week in the last 28 days.
       - **Attendees in meetings with video:** For each category, this shows how many people in your organization were in any meeting with video in the last 28 days.
