@@ -43,7 +43,7 @@ Microsoft Teams integrates with Outlook calendar and provides a host of capabili
 
 ## Overall score
 
-The overall meeting score is calculated by averaging out the scores across the three phases i.e., Set up, Meet up and Follow up. We take into account the number of attendees and the duration of the meeting when tallying the final averaged scores.
+The overall meeting score is calculated by averaging out the scores across the three phases: Set up, Meet up, and Follow up. We take into account the number of attendees and the duration of the meeting when tallying the final averaged scores.
 
 For each meeting:
 
