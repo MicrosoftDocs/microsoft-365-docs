@@ -283,7 +283,7 @@ The tabs in the campaign details view allow you to further investigate the campa
   - **Total count**
   - **Inboxed**
   - **Not Inboxed**
-  - **DKIM passed**: The sender was authenticated by [Domain Keys Identified Mail (DKIM)](support-for-validation-of-dkim-signed-messages.md). A sender that doesn't pass DKIM validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
+  - **DKIM passed**: The sender was authenticated by [Domain Keys Identified Mail (DKIM)](email-authentication-dkim-support-about.md). A sender that doesn't pass DKIM validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
   - **DMARC passed**: The sender was authenticated by [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](use-dmarc-to-validate-email.md). A sender that doesn't pass DMARC validation indicates an unauthenticated sender, or the message is spoofing a legitimate sender.
 
 - **Attachments**

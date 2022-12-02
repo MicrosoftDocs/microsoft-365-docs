@@ -9419,6 +9419,51 @@
       "source_path": "microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md",
       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-anti-spoofing",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dkim-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/support-for-validation-of-dkim-signed-messages.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dkim-support-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/use-dmarc-to-validate-email.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dmarc-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/exchange-online-protection-overview.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/eop-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/eop-general-faq.yml",
+      "redirect_url": "/microsoft-365/security/office-365-security/eop-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mail-flow-in-eop.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/mail-flow-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/eop-queued-deferred-and-bounced-messages-faq.yml",
+      "redirect_url": "/microsoft-365/security/office-365-security/mail-flow-delivery-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/mail-flow-inbound-ipv6-support-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/mail-flow-troubleshooting",
+      "redirect_document_id": true
     }
    ]
   }
