@@ -78,7 +78,7 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update.
 We suggest starting with once a day, but you should experiment with increasing or decreasing the frequency to understand the impact.
 
-Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advised because it will increase the network overhead on your management machine for no benefit.
+Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advisable because it will increase the network overhead on your management machine for no benefit.
 
 You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
 This configuration is possible when the devices have the share and read access (NTFS permissions) to the share so they can grab the updates. To set this configuration up, follow these steps:
@@ -170,7 +170,7 @@ Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist 
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan while the attack was detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done, or remediation actions are taken. However, your security operations team will see the results of the scan while the attack was detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
 > [!TIP]
 > To open the Action Center on Windows 10 or Windows 11, take one of the following steps:
@@ -205,7 +205,7 @@ Use the following cmdlet, to stop a quick or scheduled scan whenever the device 
 Set-MpPreference -ScanOnlyIfIdleEnabled $false
 ```
 
-You can also disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus by configuration via local or domain group policy. This prevents the significant CPU contention in high density environments.
+You can also disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus by configuration via local or domain group policy. This prevents significant CPU contention in high density environments.
 
 For more information, see [Start the scheduled scan only when computer is on but not in use](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 
