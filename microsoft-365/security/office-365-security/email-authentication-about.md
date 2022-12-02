@@ -210,4 +210,4 @@ Learn how Office 365 uses SPF and supports DKIM validation:
 
 - [More about SPF](email-authentication-anti-spoofing.md)
 
-- [More about DKIM](support-for-validation-of-dkim-signed-messages.md)
+- [More about DKIM](email-authentication-dkim-support-about.md)
