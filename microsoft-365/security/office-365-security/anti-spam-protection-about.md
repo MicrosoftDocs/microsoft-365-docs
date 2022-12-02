@@ -51,7 +51,7 @@ To help reduce junk email, EOP includes junk email protection that uses propriet
 
 The anti-spam settings in EOP are made of the following technologies:
 
-- **Connection filtering**: Identifies good and bad email source servers early in the inbound email connection via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). You configure these settings in the connection filter policy. Learn more at [Configure connection filtering](configure-the-connection-filter-policy.md).
+- **Connection filtering**: Identifies good and bad email source servers early in the inbound email connection via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). You configure these settings in the connection filter policy. Learn more at [Configure connection filtering](connection-filter-policies-configure.md).
 
 - **Spam filtering (content filtering)**: EOP uses the spam filtering verdicts **Spam**, **High confidence spam**, **Bulk email**, **Phishing email** and **High confidence phishing email** to classify messages. You can configure the actions to take based on these verdicts, and you can configure what users are allowed to do to quarantined messages and whether user receive quarantine notifications by using [quarantine policies](quarantine-policies.md). For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
@@ -78,7 +78,7 @@ Here are some best practices that apply to either scenario:
 
 - **Use email authentication**: If you own an email domain, you can use DNS to help insure that messages from senders in that domain are legitimate. To help prevent spam and unwanted spoofing in EOP, use all of the following email authentication methods:
 
-  - **SPF**: Sender Policy Framework verifies the source IP address of the message against the owner of the sending domain. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
+  - **SPF**: Sender Policy Framework verifies the source IP address of the message against the owner of the sending domain. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
 
   - **DKIM**: DomainKeys Identified Mail adds a digital signature to the message header of messages sent from your domain. For information, see [Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](use-dkim-to-validate-outbound-email.md).
 
