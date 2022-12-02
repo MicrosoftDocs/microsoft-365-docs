@@ -326,9 +326,9 @@ The templates listed below may be purchased by your organization. Certain licens
 - Taiwan - Implementation Rules for the Internal Audit and Internal Control System of Electronic Payment Institutions - 2015  
 - Taiwan - Implementation Rules of Internal Audit and Internal Control System of Financial Holding Companies and Banking
 - Taiwan - Regulations Governing Approval and Administration of Financial Information Service Enterprises Engaging in Interbank Funds Transfer and Settlement  
-- Taiwan - Regulations Governing the Standards for Information System and Security Management of Electronic Payment Institutions  
+- Taiwan - Regulations Governing the Standards for Information System and Security Management of Electronic Payment Institutions
+- Taiwan – Trade Secrets Act 
 - Taiwan Personal Data Protection Act (PDPA)
-- Taiwan – Trade Secrets Act
 - Thailand PDPA  
 - Law of The Republic of Uzbekistan on Personal Data  
 - Vietnam - Consumer Rights Protection Law  
