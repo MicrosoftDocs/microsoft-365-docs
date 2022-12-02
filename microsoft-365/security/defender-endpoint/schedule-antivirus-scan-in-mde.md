@@ -78,7 +78,7 @@ Use the following steps to schedule scans:
     :::image type="content" source="images/ls_lh_etc_cron.png" alt-text="anacron jobs":::
 
     ```
-    [root@enaredhat7 /] # 1s -1h /etc/cron*
+    [root@redhat7 /] # ls -lh /etc/cron*
     - rw - - - - - - -.	1	root	root	0	Nov	30	2021	/etc/cron.deny
     - rw - r - - r - -.	1	root	root	451	Dec	27	2013	/etc/crontab
 
@@ -114,7 +114,7 @@ Use the following steps to schedule scans:
     total 0
     ```
 
-1. Ignore the ```/etc/cron.d``` directory, you'll see ```/etc/corn.daily, hourly, monthly, and weekly```. 
+1. Ignore the ```/etc/cron.d``` directory, you will see ```/etc/corn.daily, hourly, monthly, and weekly```. 
 
 1. To schedule a weekly antivirus scan, you can create a file (Job) under the ```/etc/cron.weekly``` directory.
 
@@ -129,9 +129,9 @@ Use the following steps to schedule scans:
    ```
     #!/bin/sh
     set	-e
-    echo	$(date)		"Time Scan Begins"	>>/logs/mdav_avacron_full_scan.log
+    echo $(date) "Time Scan Begins" >>/logs/mdav_avacron_full_scan.log
     /bin/mdatp scan full >> /logs/mdav_avacron_full_scan.log
-    echo	$(date) "Time Scan Finished"		>>/logs/mdav_avacron_full_scan.log
+    echo $(date) "Time Scan Finished" >>/logs/mdav_avacron_full_scan.log
     exit	0
     ~
     ```
@@ -149,16 +149,16 @@ Use the following steps to schedule scans:
     :::image type="content" source="images/chmod-755-mdavfullscan.png" alt-text="7.	Change file permissions":::
 
     ```
-    [root@enaredhat7 	cron.weekly]# 1s -1a
+    [root@redhat7 cron.weekly]# ls -la
     total	16
     drwxr - xr – x.	2	root	root	26	Jun	14	19:19	.
     drwxr - xr – x.	85	root	root	8192	Jun	14	19:01	..
     - rw - r - - r - -.	1	root	root	128	Jun	14	19:19	mdavfullscan
-    [root@enaredhat7 cron.weekly] #	chmod 755 mdavfullscan
-    [root@enaredhat7 cron.weekly] # 1s	-1h
+    [root@redhat7 cron.weekly] # chmod 755 mdavfullscan
+    [root@redhat7 cron.weekly] # ls -lh
     total 4. 0k
     - rwxr - xr – x.	1	root	root	128	Jun	14	19:19	mdavfullscan
-    [root@enaredhat7 cron.weekly] #
+    [root@redhat7 cron.weekly] #
     ```
 
 1. Use the command to test the weekly anacron job.
@@ -172,11 +172,11 @@ Use the following steps to schedule scans:
     :::image type="content" source="images/mdav_avacron_full_scan_log.png" alt-text="verify the job ran":::
 
     ```
-    [root@enaredhat7 	cron.weekly] # cat	/ logs / mdav_avacron_full_scan.log
-    Tue Jun	14	20:20:44	UTC	2022 Time Scan Begins
+    [root@redhat7 cron.weekly] # cat /logs/mdav_avacron_full_scan.log
+    Tue Jun	14 20:20:44 UTC 2022 Time Scan Begins
     Scan has finished
-    	66547	file(s) scanned
-    0	threat(s) detected
-    Tue Jun	14	20:20:50	UTC 2022 Time Scan Finished
-    [root@enaredhat7 cron.weekly] #
+        66547 file(s) scanned
+        0 threat(s) detected
+    Tue Jun	14 20:20:50 UTC 2022 Time Scan Finished
+    [root@redhat7 cron.weekly] #
     ```
