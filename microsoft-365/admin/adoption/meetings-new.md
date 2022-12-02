@@ -16,11 +16,10 @@ ms.collection:
 - highpri
 ms.custom:
 search.appverid: MET150
-description: "Details of new Meetings insights score - people experiences Adoption Score."
-ROBOTS: NOINDEX, NOFOLLOW 
+description: "Details of new Meetings insights score - people experiences Adoption Score." 
 ---
 
-# Meetings insights score – People experiences (New)
+# Meetings insights score – People experiences
 
 Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The meetings category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
@@ -32,7 +31,7 @@ To get started with Meetings insights, people in your organization need to be li
 
 For more information, see [assign licenses to users](../manage/assign-licenses-to-users.md).
 
-After people have been active in Teams at least once in the last 28 days, you will start to see the insights.
+After people have been active in Teams at least once in the last 28 days, you'll start to see the insights.
 
 ## Why your organization's meetings score matters
 
@@ -108,9 +107,9 @@ This section helps understand two insights for the organization:
 
 This section consists of three sub-sections:
 
-1. **Additional insights**: Here we provide additional insights which help organizations identify trends and user behaviors across meetings.
+1. **Additional insights**: Here we provide more insights that help organizations identify trends and user behaviors across meetings.
 1. **Interesting findings**: Here we provide some interesting facts about meetings being conducted in the organization.
-1. **Microsoft Research**: Here we reference Microsoft blogs and public research which provide recommended practices and their impacts to have effective meetings.
+1. **Microsoft Research**: Here we reference Microsoft blogs and public research that provide recommended practices and their impacts to have effective meetings.
 
 > [!NOTE]
 > The 'Dig deeper into meetings' section does not contribute to the overall score of the Meetings Page in Adoption Score People Experiences, however some insights in this section may expand on a primary insight used to calculate a score.

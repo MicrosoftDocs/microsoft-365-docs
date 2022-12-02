@@ -20,6 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Details of the Meetings - people experiences Adoption Score."
+ROBOTS: NOINDEX
 ---
 
 # Meetings insights score – People experiences
