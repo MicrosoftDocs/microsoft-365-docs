@@ -62,16 +62,17 @@ To use structured document processing or freeform document processing models, yo
 
 For details about Syntex licensing, see [Microsoft Syntex licensing](syntex-licensing.md)
 
+### Pay-as-you-go preview
+
+Microsoft Syntex is offering a limited-time free preview for pay-as-you-go document processing charged through an Azure subscription. The preview allows you to track Microsoft Syntex processing events at no cost to assess usage and estimate costs for a future pay-as-you-go license. For details about the preview, see [Microsoft Syntex pay-as-you-go preview](/legal/microsoft-365/microsoft-syntex-azure-billing-trial). To set up the preview, see [Configure Microsoft Syntex for Azure pay-as-you-go billing](syntex-azure-billing.md).
+
 ## To set up Syntex
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
 
-1. In the **Files and content** section, select **Automate content understanding**. Note that your current AI Builder credit availability is shown in the **At a glance** section.<br/>
+1. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
 
-1. On the **Automate content understanding** page, click **Get started** to walk through the setup process. <br/>
-
-    > [!div class="mx-imgBorder"]
-    > ![Begin setup.](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+1. On the **Use content AI with Microsoft Syntex** page, select **Set up Microsoft Syntex** to walk through the setup process. <br/>
 
 1. On the **Configure AI Builder model creation** page, you can choose if you want to let end users create and train models that use AI Builder and apply them to document libraries. A menu option will be available in the document library ribbon in SharePoint document libraries in which it is enabled.
  
@@ -105,7 +106,9 @@ For details about Syntex licensing, see [Microsoft Syntex licensing](syntex-lice
 
 1. On the confirmation page, select **Done**.
 
-1. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
+1. You'll be returned to your **Use content AI with Microsoft Syntex** page. From this page, you can select **Manage Microsoft Syntex** to make any changes to your configuration settings. 
+
+If you plan to use the pay-as-you-go preview, see [Configure Microsoft Syntex for Azure pay-as-you-go billing](syntex-azure-billing.md).
 
 ## Assign licenses
 
@@ -115,16 +118,13 @@ To assign licenses:
 
 1. In the Microsoft 365 admin center, under **Users**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
-2. Select the users that you want to license, and choose **Manage product licenses**.
+1. Select the users that you want to license, and choose **Manage product licenses**.
 
-3. Choose **Apps** from the drop-down menu.
+1. Choose **Apps** from the drop-down menu.
 
-4. Select **Show apps for  Syntex**. Under **Apps**, make sure **Common Data Service for Syntex**, **Syntex**, and **Syntex - SPO type** are all selected.
+1. Select **Show apps for  Syntex**. Under **Apps**, make sure **Common Data Service for Syntex**, **Syntex**, and **Syntex - SPO type** are all selected.
 
-    > [!div class="mx-imgBorder"]
-    > ![Syntex licenses in the Microsoft 365 admin center.](../media/content-understanding/sharepoint-syntex-licenses.png)
-
-5. Click **Save changes**.
+1. Select **Save changes**.
 
 ## See also
 

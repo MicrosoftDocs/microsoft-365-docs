@@ -125,5 +125,5 @@ If a user with an unauthorized connector activity is identified, you can investi
 
 ## More information
 
-- [Remove blocked connectors](remove-blocked-connectors.md)
+- [Remove blocked connectors](connectors-remove-blocked.md)
 - [Remove blocked users](removing-user-from-restricted-users-portal-after-spam.md)

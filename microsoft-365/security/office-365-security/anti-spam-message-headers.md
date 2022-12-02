@@ -60,14 +60,14 @@ The individual fields and values are described in the following table.
 |---|---|
 |`ARC`|The `ARC` protocol has the following fields: <ul><li>`AAR`: Records the content of the **Authentication-results** header from DMARC.</li><li>`AMS`: Includes cryptographic signatures of the message.</li><li>`AS`: Includes cryptographic signatures of the message headers. This field contains a tag of a chain validation called `"cv="`, which includes the outcome of the chain validation as **none**, **pass**, or **fail**.</li></ul>|
 |`CAT:`|The category of protection policy, applied to the message: <ul><li>`BULK`: Bulk</li><li>`DIMP`: Domain Impersonation</li><li>`GIMP`: [Mailbox intelligence based impersonation](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` or `HPHISH`: High confidence phishing</li><li>`HSPM`: High confidence spam</li><li>`MALW`: Malware</li><li>`PHSH`: Phishing</li><li>`SPM`: Spam</li><li>`SPOOF`: Spoofing</li><li>`UIMP`: User Impersonation</li><li>`AMP`: Anti-malware</li><li>`SAP`: Safe attachments</li><li>`FTBP`: Anti-malware filetype policy</li><li>`OSPM`: Outbound spam</li></ul> <p> An inbound message may be flagged by multiple forms of protection and multiple detection scans. Policies have different priorities, and the policy with the highest priority is applied first. For more information, see [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md).|
-|`CIP:[IP address]`|The connecting IP address. You can use this IP address in the IP Allow List or the IP Block List. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).|
+|`CIP:[IP address]`|The connecting IP address. You can use this IP address in the IP Allow List or the IP Block List. For more information, see [Configure connection filtering](connection-filter-policies-configure.md).|
 |`CTRY`|The source country as determined by the connecting IP address, which may not be the same as the originating sending IP address.|
 |`H:[helostring]`|The HELO or EHLO string of the connecting email server.|
-|`IPV:CAL`|The message skipped spam filtering because the source IP address was in the IP Allow List. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).|
+|`IPV:CAL`|The message skipped spam filtering because the source IP address was in the IP Allow List. For more information, see [Configure connection filtering](connection-filter-policies-configure.md).|
 |`IPV:NLI`|The IP address was not found on any IP reputation list.|
 |`LANG`|The language in which the message was written, as specified by the country code (for example, ru_RU for Russian).|
 |`PTR:[ReverseDNS]`|The PTR record (also known as the reverse DNS lookup) of the source IP address.|
-|`SCL`|The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam. For more information, see [Spam confidence level (SCL)](spam-confidence-levels.md).|
+|`SCL`|The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam. For more information, see [Spam confidence level (SCL)](anti-spam-spam-confidence-level-scl-about.md).|
 |`SFTY`|The message was identified as phishing and will also be marked with one of the following values: <ul><li>9.19: Domain impersonation. The sending domain is attempting to [impersonate a protected domain](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). The safety tip for domain impersonation is added to the message (if it's enabled).</li><li>9.20: User impersonation. The sending user is attempting to impersonate a user in the recipient's organization, or [a protected user that's specified in an anti-phishing policy](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Microsoft Defender for Office 365. The safety tip for user impersonation is added to the message (if it's enabled).</li><li>9.25: First contact safety tip. This value _might_ be an indication of a suspicious or phishing message. For more information, see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).</li></ul>|
 |`SFV:BLK`|Filtering was skipped and the message was blocked because it was sent from an address in a user's Blocked Senders list. <p> For more information about how admins can manage a user's Blocked Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:NSPM`|Spam filtering marked the message as non-spam and the message was sent to the intended recipients.|
@@ -80,7 +80,7 @@ The individual fields and values are described in the following table.
 |`SFV:SKS`|The message was marked as spam prior to being processed by spam filtering. For example, the message was marked as SCL 5 to 9 by a mail flow rule.|
 |`SFV:SPM`|The message was marked as spam by spam filtering.|
 |`SRV:BULK`|The message was identified as bulk email by spam filtering and the bulk complaint level (BCL) threshold. When the _MarkAsSpamBulkMail_ parameter is `On` (it's on by default), a bulk email message is marked as spam (SCL 6). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
-|`X-CustomSpam: [ASFOption]`|The message matched an Advanced Spam Filter (ASF) setting. To see the X-header value for each ASF setting, see [Advanced Spam Filter (ASF) settings](advanced-spam-filtering-asf-options.md).|
+|`X-CustomSpam: [ASFOption]`|The message matched an Advanced Spam Filter (ASF) setting. To see the X-header value for each ASF setting, see [Advanced Spam Filter (ASF) settings](anti-spam-policies-asf-settings-about.md).|
 
 ## X-Microsoft-Antispam message header fields
 
@@ -88,7 +88,7 @@ The following table describes useful fields in the **X-Microsoft-Antispam** mess
 
 |Field|Description|
 |---|---|
-|`BCL`|The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (and is therefore more likely to be spam). For more information, see [Bulk complaint level (BCL)](bulk-complaint-level-values.md).|
+|`BCL`|The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (and is therefore more likely to be spam). For more information, see [Bulk complaint level (BCL)](anti-spam-bulk-complaint-level-bcl-about.md).|
 
 ## Authentication-results message header
 

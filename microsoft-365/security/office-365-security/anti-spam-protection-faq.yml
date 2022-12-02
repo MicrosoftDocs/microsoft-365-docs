@@ -69,7 +69,7 @@ sections:
           
           [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)
           
-          [Configure connection filtering in EOP](configure-the-connection-filter-policy.md)
+          [Configure connection filtering in EOP](connection-filter-policies-configure.md)
           
           [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)
           
@@ -83,7 +83,7 @@ sections:
       - question: |
           Is bulk email filtering automatically enabled?
         answer: |
-          Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+          Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](anti-spam-spam-vs-bulk-about.md)
           
       - question: |
           Does the service provide URL filtering?
