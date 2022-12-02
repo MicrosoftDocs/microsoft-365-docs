@@ -43,7 +43,7 @@ To understand how EOP works, it helps to see how it processes incoming email:
 
 :::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphic of email from the internet or Customer feedback passing into EOP and through the Connection, Anti-malware, Mailflow Rules-slash-Policy Filtering, and Content Filtering, before the verdict of either junk mail or quarantine, or end user mail delivery" lightbox="../../media/tp_emailprocessingineopt3.png":::
 
-1. When an incoming message enters EOP, it initially passes through connection filtering, which checks the sender's reputation. The majority of spam is stopped at this point and rejected by EOP. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).
+1. When an incoming message enters EOP, it initially passes through connection filtering, which checks the sender's reputation. The majority of spam is stopped at this point and rejected by EOP. For more information, see [Configure connection filtering](connection-filter-policies-configure.md).
 
 2. Then the message is inspected for malware. If malware is found in the message or the attachment(s) the message is delivered to quarantine. By default, only admins can view and interact with malware quarantined messages. But, admins can create and use [quarantine policies](quarantine-policies.md) to specify what users are allowed to do to quarantined messages. To learn more about malware protection, see [Anti-malware protection in EOP](anti-malware-protection.md).
 
@@ -84,7 +84,7 @@ For information about requirements, important limits, and feature availability a
 |Anti-malware|[Anti-malware protection in EOP](anti-malware-protection.md) <p> [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml) <p> [Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
 |Inbound anti-spam|[Anti-spam protection in EOP](anti-spam-protection.md) <p> [Anti-spam protection FAQ](anti-spam-protection-faq.yml) <p> [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
 |Outbound anti-spam|[Outbound spam protection in EOP](outbound-spam-controls.md) <p> [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md) <p> [Control automatic external email forwarding in Microsoft 365](external-email-forwarding.md)|
-|Connection filtering|[Configure connection filtering](configure-the-connection-filter-policy.md)|
+|Connection filtering|[Configure connection filtering](connection-filter-policies-configure.md)|
 |Anti-phishing|[Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)|
 |Anti-spoofing protection|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|
 |Zero-hour auto purge (ZAP) for delivered malware, spam, and phishing messages|[ZAP in Exchange Online](zero-hour-auto-purge.md)|

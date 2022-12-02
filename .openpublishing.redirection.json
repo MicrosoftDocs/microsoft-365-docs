@@ -9374,6 +9374,51 @@
       "source_path": "microsoft-365/security/office-365-security/learn-about-spoof-intelligence.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/connectors-mail-flow-intelligence",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/attack-simulation-training.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/attack-simulation-training-simulations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-the-connection-filter-policy.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/connection-filter-policies-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/respond-compromised-connector.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/connectors-detect-respond-to-compromise",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/remove-blocked-connectors.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/connectors-remove-blocked",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/whats-new-in-defender-for-office-365.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365-whats-new",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-spf-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/email-validation-and-authentication.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-anti-spoofing",
+      "redirect_document_id": true
     }
    ]
   }
