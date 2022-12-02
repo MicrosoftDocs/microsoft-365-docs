@@ -14,7 +14,7 @@ ms.collection:
   - m365-frontline
   - highpri
   - m365solution-frontline
-  - highpri
+  - tier1
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -173,7 +173,7 @@ For full deployments, follow the guidance in [Deploy Teams at scale for frontlin
 
 #### Set up Viva Connections
 
-Use [Viva Connections](/viva/connections/viva-connections-overview) to create a dashboard that helps engage and inform your frontline workers. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed. 
+Use [Viva Connections](/viva/connections/viva-connections-overview) to create a dashboard that helps engage and inform your frontline workers. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed.
 
 Follow the [Build your employee experience setup guide](https://aka.ms/EmployeeExperienceDashboard) to set it up. Learn more about [setting up Viva Connections](/viva/connections/guide-to-setting-up-viva-connections).
 

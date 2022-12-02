@@ -73,7 +73,7 @@ The following example assumes you need email from contoso.com to skip spam filte
 
      This condition checks the email authentication status of the sending email domain to ensure that the sending domain is not being spoofed. For more information about email authentication, see [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md).
 
-   - **IP Allow List**: Specify the source IP address or address range in the connection filter policy. For instructions, see [Configure connection filtering](configure-the-connection-filter-policy.md).
+   - **IP Allow List**: Specify the source IP address or address range in the connection filter policy. For instructions, see [Configure connection filtering](connection-filter-policies-configure.md).
 
      Use this setting if the sending domain does not use email authentication. Be as restrictive as possible when it comes to the source IP addresses in the IP Allow List. We recommend an IP address range of /24 or less (less is better). Do not use IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures.
 
@@ -110,18 +110,23 @@ Instead of an organizational setting, users or admins can add the sender email a
 
 This method is not desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender can still be compromised and send malicious content. You should let our filters check every message and then [report the false positive/negative to Microsoft](report-junk-email-messages-to-microsoft.md) if we got it wrong. Bypassing the filtering stack also interferes with [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).
 
-By design and for increased security of Exchange Online mailboxes, only the junk email settings for safe senders, blocked senders, and blocked domains are recognized. Safe mailing list settings are ignored.
+When messages skip spam filtering due to entries in a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that filtering for spam, spoof, and phishing (not high confidence phishing) was bypassed.
 
-**Note**: In Exchange Online, domain entries in the Outlook Safe Senders list or TrustedSendersAndDomains parameter aren't recognized, so only use email addresses.
+**Notes**:
 
-When messages skip spam filtering due to a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that filtering for spam, spoof, and phishing were bypassed.
+- In Exchange Online, whether entries in the Safe Senders list work or don't work depends on the verdict and action in the policy that identified the message:
+  - **Move messages to Junk Email folder**: Domain entries and sender email address entries are honored. Messages from those senders are not moved to the Junk Email folder.
+  - **Quarantine**: Domain entries are not honored (messages from those senders are quarantined). Email address entries are honored (messages from those senders are not quarantined) if either of the following statements are true:
+    - The message is not identified as malware or high confidence phishing (malware and high confidence phishing messages are quarantined).
+    - The email address is not also in a block entry in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) (messages from those senders will be quarantined).
+- Entries for blocked senders and blocked domains are honored (messages from those senders are moved to the Junk Email folder). Safe mailing list settings are ignored.
 
 ## Use the IP Allow List
 
 > [!CAUTION]
 > Without additional verification like mail flow rules, email from sources in the IP Allow List skips spam filtering and sender authentication (SPF, DKIM, DMARC) checks. This result creates a high risk of attackers successfully delivering email to the Inbox that would otherwise be filtered; however, if a message from an entry in the IP Allow List is determined to be malware or high confidence phishing, the message will be filtered.
 
-The next best option is to add the source email server or servers to the IP Allow List in the connection filter policy. For details, see [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).
+The next best option is to add the source email server or servers to the IP Allow List in the connection filter policy. For details, see [Configure connection filtering in EOP](connection-filter-policies-configure.md).
 
 **Notes**:
 
