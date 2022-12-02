@@ -87,9 +87,3 @@ For more information, see [New-OwaMailboxPolicy](/powershell/module/exchange/new
 For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox?view=exchange-ps&preserve-view=true).
 
 When users with the custom OWA policy create a Booking calendar, it will be created with the custom domain, and not the default domain.
-
-## Related content
-
-[Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md) (article)\
-[Microsoft Bookings Frequently Asked Questions](bookings-faq.yml) (article)\
-[Set Bookings language and time zones](set-language-time-zones.md) (article)
