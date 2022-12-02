@@ -141,21 +141,30 @@ Compliance Manager settings can only be accessed by users who hold a global admi
 
 Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide you with continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
-While automated testing helps maximize efficiency in your compliance activities, you have full control over whether to apply automated testing. Listed below are important things to know about automatic testing:
+#### Initial settings
+
+While automated testing helps maximize efficiency in your compliance activities, you have full control over whether to apply automated testing. Here's what's initially set up by Compliance Manager and how you can make changes:
 
 - The first time you use Compliance Manager, automatic testing is turned on by default for all actions that can be automatically tested. It takes approximately seven days to fully collect data and factor that data into your compliance score.
 
 - You can turn off automatic testing for all actions, which disables all automated activity on improvement actions by Compliance Manager. You can also select individual improvement actions for automatic testing. See [Manage automated testing settings](#manage-automated-testing-settings) for instructions.
 
-- Improvement actions in templates that aren't scoped to Microsoft 365, such as templates for Microsoft Azure or Microsoft Dynamics, aren't currently eligible for automatic testing.
+#### When actions are added or updated
 
-- When improvement actions that can be tested automatically are updated by you or added by Compliance Manager:
-    - Those actions will be automatically tested if you've turned on automatic testing for all or some actions.
-    - Those actions won't be automatically tested if you've turned off automatic testing. This ensures that any data you add to existing actions won't be overwritten by Compliance Manager.
+When automation becomes available for existing actions, or when new automated actions are added, the default behavior depends on whether or now you've already [brought data into an improvement action](compliance-manager-update-actions.md). When you add your own testing data or evidence into an improvement action, automatic testing is turned off for that action to ensure that Compliance Manager doesn't overwrite any of your data.
+
+If you've added data to the improvement action:
+- Automated testing remains off by default for the action. You can choose to turn it back on.
+
+If you haven't added data to the improvement action:
+- Automated testing is on if your setting is **on** for **all actions** or **per action**.
+- Automated testing is off if your setting is **off for all actions**.
 
 #### How to tell which actions are tested automatically
 
 On your **Improvement actions** page, find the **Testing source** column. If the value is listed as **Automatic**, then the action is automatically tested by Compliance Manager. If the value is **Manual**, then the action is tested by your organization. If the value is **Parent**, then the action inherits the testing status of another action to which it's linked. Get details about [improvement action testing source](compliance-manager-improvement-actions.md#update-testing-source).
+
+Note that improvement actions in templates that aren't scoped to Microsoft 365, such as templates for Microsoft Azure or Microsoft Dynamics, aren't currently eligible for automatic testing.
 
 #### Manage automated testing settings
 
