@@ -45,7 +45,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 
-- There are mutiple fixes and new changes in this release 
+- There are multiple fixes and new changes in this release 
 	- V2 engine is default with this release and V1 engine bits are completely removed for enhanced security.
 	- V2 engine support configuration path for AV definitions. (mdatp definition set path)
 	- Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
