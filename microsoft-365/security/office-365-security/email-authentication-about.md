@@ -208,6 +208,6 @@ For more information about service providers best practices, see [M3AAWG Mobile 
 
 Learn how Office 365 uses SPF and supports DKIM validation:
 
-- [More about SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
+- [More about SPF](email-authentication-anti-spoofing.md)
 
-- [More about DKIM](support-for-validation-of-dkim-signed-messages.md)
+- [More about DKIM](email-authentication-dkim-support-about.md)
