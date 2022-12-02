@@ -112,16 +112,14 @@
       items: 
       - name: Microsoft Secure Score
         items: 
-          - name: What's new
-            href: microsoft-secure-score-whats-new.md
           - name: Secure Score overview
             href: microsoft-secure-score.md
           - name: Assess your security posture
             href: microsoft-secure-score-improvement-actions.md
           - name: Track your score history and meet goals
             href: microsoft-secure-score-history-metrics-trends.md
-          - name: Secure Score data storage and privacy
-            href: secure-score-data-storage-privacy.md
+          - name: What's new
+            href: microsoft-secure-score-whats-new.md
       - name: Protect your endpoints 
         href: ../defender-endpoint/index.yml
       - name: Protect your identities
