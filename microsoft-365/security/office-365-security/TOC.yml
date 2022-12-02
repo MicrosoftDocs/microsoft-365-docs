@@ -365,17 +365,17 @@
         - name: Quarantine
           items:
           - name: Quarantine
-            href: quarantine-email-messages.md
+            href: quarantine-about.md
           - name: Admin quarantine
             href: manage-quarantined-messages-and-files.md
           - name: End-user quarantine
-            href: find-and-release-quarantined-messages-as-a-user.md
+            href: quarantine-end-user.md
           - name: Quarantine policies
             href: quarantine-policies.md
           - name: Release quarantined messages from shared mailboxes
-            href: view-and-release-quarantined-messages-from-shared-mailboxes.md
+            href: quarantine-shared-mailbox-messages.md
           - name: Quarantine notifications
-            href: use-spam-notifications-to-release-and-report-quarantined-messages.md
+            href: quarantine-quarantine-notifications.md
           - name: Quarantine FAQ
             href: quarantine-faq.yml
         - name: Use the delist portal to remove yourself from the blocked senders list

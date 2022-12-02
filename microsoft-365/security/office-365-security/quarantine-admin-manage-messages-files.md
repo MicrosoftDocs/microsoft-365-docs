@@ -31,7 +31,7 @@ ms.service: microsoft-365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantined email messages in EOP](quarantine-about.md).
 
 Admins can view, release, and delete all types of quarantined messages for all users. Admins can also report false positives to Microsoft.
 
@@ -62,7 +62,7 @@ Watch this short video to learn how to manage quarantined messages as an adminis
   - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
   - <sup>\*</sup> Members of the **Quarantine Administrator** role group in **Email & collaboration** roles in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) also need to be members of the **Hygiene Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) to do quarantine procedures in Exchange Online PowerShell.
 
-- Quarantined messages are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and are not recoverable. For more information, see [Quarantined email messages in EOP and Defender for Office 365](quarantine-email-messages.md).
+- Quarantined messages are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and are not recoverable. For more information, see [Quarantined email messages in EOP and Defender for Office 365](quarantine-about.md).
 
 ## Use the Microsoft 365 Defender portal to manage quarantined email messages
 
