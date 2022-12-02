@@ -43,7 +43,7 @@ To understand how EOP works, it helps to see how it processes incoming email:
 
 :::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Graphic of email from the internet or Customer feedback passing into EOP and through the Connection, Anti-malware, Mailflow Rules-slash-Policy Filtering, and Content Filtering, before the verdict of either junk mail or quarantine, or end user mail delivery" lightbox="../../media/tp_emailprocessingineopt3.png":::
 
-1. When an incoming message enters EOP, it initially passes through connection filtering, which checks the sender's reputation. The majority of spam is stopped at this point and rejected by EOP. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).
+1. When an incoming message enters EOP, it initially passes through connection filtering, which checks the sender's reputation. The majority of spam is stopped at this point and rejected by EOP. For more information, see [Configure connection filtering](connection-filter-policies-configure.md).
 
 2. Then the message is inspected for malware. If malware is found in the message or the attachment(s) the message is delivered to quarantine. By default, only admins can view and interact with malware quarantined messages. But, admins can create and use [quarantine policies](quarantine-policies.md) to specify what users are allowed to do to quarantined messages. To learn more about malware protection, see [Anti-malware protection in EOP](anti-malware-protection.md).
 
@@ -83,8 +83,8 @@ For information about requirements, important limits, and feature availability a
 |**Protection**||
 |Anti-malware|[Anti-malware protection in EOP](anti-malware-protection.md) <p> [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml) <p> [Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
 |Inbound anti-spam|[Anti-spam protection in EOP](anti-spam-protection.md) <p> [Anti-spam protection FAQ](anti-spam-protection-faq.yml) <p> [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
-|Outbound anti-spam|[Outbound spam protection in EOP](outbound-spam-controls.md) <p> [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md) <p> [Control automatic external email forwarding in Microsoft 365](external-email-forwarding.md)|
-|Connection filtering|[Configure connection filtering](configure-the-connection-filter-policy.md)|
+|Outbound anti-spam|[Outbound spam protection in EOP](outbound-spam-protection-about.md) <p> [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md) <p> [Control automatic external email forwarding in Microsoft 365](outbound-spam-policies-external-email-forwarding.md)|
+|Connection filtering|[Configure connection filtering](connection-filter-policies-configure.md)|
 |Anti-phishing|[Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)|
 |Anti-spoofing protection|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|
 |Zero-hour auto purge (ZAP) for delivered malware, spam, and phishing messages|[ZAP in Exchange Online](zero-hour-auto-purge.md)|
@@ -96,7 +96,7 @@ For information about requirements, important limits, and feature availability a
 |**Quarantine and submissions**||
 |Admin submission|[Use Admin submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md)|
 |User submissions (custom mailbox)|[User submissions policy](user-submission.md)|
-|Quarantine - admins|[Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md) <p> [Quarantined messages FAQ](quarantine-faq.yml) <p> [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md) <p> You can analyze the message headers of quarantined messages using the [Message Header Analyzer at](https://mha.azurewebsites.net/).|
+|Quarantine - admins|[Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md) <p> [Quarantined messages FAQ](quarantine-faq.yml) <p> [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Anti-spam message headers in Microsoft 365](message-headers-eop-mdo.md) <p> You can analyze the message headers of quarantined messages using the [Message Header Analyzer at](https://mha.azurewebsites.net/).|
 |Quarantine - end-users|[Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md) <p> [Use quarantine notifications to release and report quarantined messages](use-spam-notifications-to-release-and-report-quarantined-messages.md) <p> [Quarantine policies](quarantine-policies.md)|
 |**Mail flow**||
 |Mail flow rules|[Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Mail flow rule actions in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Manage mail flow rules in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Mail flow rule procedures in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
@@ -118,6 +118,6 @@ For information about requirements, important limits, and feature availability a
 |Phone and web technical support 24 hours a day, seven days a week|[Help and support for EOP](help-and-support-for-eop.md).|
 |**Other features**||
 |A geo-redundant global network of servers|EOP runs on a worldwide network of datacenters that are designed to help provide the best availability. For more information, see the [EOP datacenters](#eop-datacenters) section earlier in this article.|
-|Message queuing when the on-premises server cannot accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see [EOP queued, deferred, and bounced messages FAQ](eop-queued-deferred-and-bounced-messages-faq.yml).|
+|Message queuing when the on-premises server cannot accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see [EOP queued, deferred, and bounced messages FAQ](mail-flow-delivery-faq.yml).|
 |Office 365 Message Encryption available as an add-on|For more information, see [Encryption in Office 365](../../compliance/encryption.md).|
 |||

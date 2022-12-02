@@ -110,8 +110,8 @@ The table below provides references and more guidance for configuring and assign
 
 |Policy|Description|Included in preset<br>security policies?|Default policy<br>available?|Reference|
 |---|---|:---:|:---:|---|
-|Connection filter policies|Identify good or bad source email servers by IP address.|No|Yes|[Configure the default connection filter policy in EOP](../office-365-security/configure-the-connection-filter-policy.md)|
-|Outbound spam filter policies|Specify outbound message rate limits and control external email forwarding.|No|Yes|[Configure outbound spam filtering in EOP](../office-365-security/configure-the-outbound-spam-policy.md)|
+|Connection filter policies|Identify good or bad source email servers by IP address.|No|Yes|[Configure the default connection filter policy in EOP](../office-365-security/connection-filter-policies-configure.md)|
+|Outbound spam filter policies|Specify outbound message rate limits and control external email forwarding.|No|Yes|[Configure outbound spam filtering in EOP](../office-365-security/outbound-spam-policies-configure.md)|
 |Anti-malware policies|Protect users from email malware including what actions to take and who to notify if malware is detected.|Yes|Yes|[Configure anti-malware policies in EOP](../office-365-security/configure-anti-malware-policies.md)|
 |Anti-spam policies|Protect users from email spam including what actions to take if spam is detected.|Yes|Yes|[Configure anti-spam policies in Defender for Office 365](../office-365-security/anti-spam-policies-configure.md)|
 |Anti-spoofing protection|Protect users from spoofing attempts using spoof intelligence and spoof intelligence insights.|Yes|Yes|[Configure spoof intelligence in Defender for Office 365](../office-365-security/learn-about-spoof-intelligence.md) <br><br> [Configure anti-phishing policies in EOP](../office-365-security/configure-anti-phishing-policies-eop.md)|
