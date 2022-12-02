@@ -91,6 +91,6 @@ Regardless of the conditions or exceptions that you use to identify the messages
 
 ## Use the IP Block List
 
-When it's not possible to use one of the other options to block a sender, _only then_ should you use the IP Block List in the connection filter policy. For more information, see [Configure the connection filter policy](configure-the-connection-filter-policy.md). It's important to keep the number of blocked IPs to a minimum, so blocking entire IP address ranges is _not_ recommended.
+When it's not possible to use one of the other options to block a sender, _only then_ should you use the IP Block List in the connection filter policy. For more information, see [Configure the connection filter policy](connection-filter-policies-configure.md). It's important to keep the number of blocked IPs to a minimum, so blocking entire IP address ranges is _not_ recommended.
 
 You should _especially_ avoid adding IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures, and also ensure that you review the list of blocked IP addresses as part of regular maintenance.
