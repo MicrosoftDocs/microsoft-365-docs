@@ -9484,6 +9484,26 @@
       "source_path": "microsoft-365/security/office-365-security/configure-review-priority-account.md",
       "redirect_url": "/microsoft-365/security/office-365-security/priority-accounts-turn-on-priority-account-protection",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-high-risk-delivery-pool-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-the-outbound-spam-policy.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-policies-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/external-email-forwarding.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/outbound-spam-controls.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-protection-about",
+      "redirect_document_id": true
     }
    ]
   }
