@@ -209,8 +209,7 @@ Here's another example:
 
 ```kusto
 
-DeviceEvents:
-
+DeviceEvents
 |where ActionType contains "ExploitGuardNetworkProtection"
 |extend ParsedFields=parse_json(AdditionalFields)
 |project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
