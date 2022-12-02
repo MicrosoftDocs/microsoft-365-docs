@@ -554,7 +554,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 In the **View data by Email \> Spam** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
 - **Advanced filter**: Phishing signals based on machine learning.
-- **Bulk**: The [bulk complaint level (BCL)](bulk-complaint-level-values.md) of the message exceeds the defined threshold for spam.
+- **Bulk**: The [bulk complaint level (BCL)](anti-spam-bulk-complaint-level-bcl-about.md) of the message exceeds the defined threshold for spam.
 - **Domain reputation**: The message was from a domain that was previously identified as sending spam in other Microsoft 365 organizations.
 - **Fingerprint matching**: The message closely resembles a previous detected malicious message.
 - **IP reputation**: The message was from a source that was previously identified as sending spam in other Microsoft 365 organizations.

@@ -93,19 +93,19 @@
        - name: Anti-spam protection
          items:
          - name: Anti-spam protection
-           href: anti-spam-protection.md
+           href: anti-spam-protection-about.md
          - name: Configure anti-spam policies
-           href: configure-your-spam-filter-policies.md
+           href: anti-spam-policies-configure.md
          - name: Advanced Spam Filter (ASF) settings
-           href: advanced-spam-filtering-asf-options.md
+           href: anti-spam-policies-asf-settings-about.md
          - name: What's the difference between junk email and bulk email?
-           href: what-s-the-difference-between-junk-email-and-bulk-email.md
+           href: anti-spam-spam-vs-bulk-about.md
          - name: Spam confidence level (SCL)
-           href: spam-confidence-levels.md
+           href: anti-spam-spam-confidence-level-scl-about.md
          - name: Bulk complaint level (BCL)
-           href: bulk-complaint-level-values.md
+           href: anti-spam-bulk-complaint-level-bcl-about.md
          - name: Backscatter in EOP
-           href: backscatter-messages-and-eop.md
+           href: anti-spam-backscatter-about.md
          - name: Configure junk email settings on Exchange Online mailboxes
            href: configure-junk-email-settings-on-exo-mailboxes.md
          - name: Anti-spam protection FAQ
@@ -143,7 +143,7 @@
        - name: Connection filtering
          items:
          - name: Configure the connection filtering policy
-           href: configure-the-connection-filter-policy.md
+           href: connection-filter-policies-configure.md
        - name: Outbound spam protection
          items:
          - name: Outbound spam protection
@@ -157,7 +157,7 @@
        - name: Anti-phishing protection
          items:
          - name: Anti-phishing protection
-           href: anti-phishing-protection.md
+           href: anti-phishing-protection-about.md
          - name: Anti-phishing policies
            items:
            - name: Anti-phishing policies
@@ -353,13 +353,13 @@
      - name: Tune and update
        items: 
         - name: Respond to a compromised connector
-          href: respond-compromised-connector.md
+          href: connectors-detect-respond-to-compromise.md
         - name: Remove blocked entities
           items:
            - name: Remove blocked users
              href: removing-user-from-restricted-users-portal-after-spam.md
            - name: Remove blocked connectors
-             href: remove-blocked-connectors.md
+             href: connectors-remove-blocked.md
         - name: Tune anti-phishing protection
           href: tuning-anti-phishing.md
         - name: Quarantine
