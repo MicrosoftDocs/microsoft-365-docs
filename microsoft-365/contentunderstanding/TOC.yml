@@ -124,7 +124,7 @@
         - name: Generate documents using Power Automate 
           href: automate-document-generation.md
      
-    - name: Content rules
+    - name: Content processing
       items: 
         - name: Move or copy a file 
           href: content-processing-create-rules.md
