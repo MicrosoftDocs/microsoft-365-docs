@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/20/2022
+ms.date: 12/02/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
 search.appverid: met150
@@ -59,7 +59,7 @@ Certain exclusions for Defender for Endpoint must be defined in your existing no
 `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`
 
 
-**Windows Server 2012R2, 2016, 2019, and 2022**
+**Windows Server 2012 R2, 2016, 2019, and 2022**
 
 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe`
 
