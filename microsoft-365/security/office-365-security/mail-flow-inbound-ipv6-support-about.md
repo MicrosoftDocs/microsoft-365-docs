@@ -54,4 +54,4 @@ After anonymous inbound IPv6 message support is enabled in your organization, th
 
 ## Related topics
 
-[Support for validation of DKIM signed messages](support-for-validation-of-dkim-signed-messages.md)
+[Support for validation of DKIM signed messages](email-authentication-dkim-support-about.md)
