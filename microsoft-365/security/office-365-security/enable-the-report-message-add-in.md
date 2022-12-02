@@ -20,7 +20,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
 
-# Enable the Report Message or the Report Phishing add-ins
+# Enable the Microsoft Report Message or the Report Phishing add-ins
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -32,7 +32,7 @@ ms.service: microsoft-365-security
 > [!NOTE]
 > If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the **Submissions** page in the Microsoft 365 Defender portal. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-The Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App) makes it easy to report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
+The Microsoft Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App or OWA) makes it easy to report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
 
 Microsoft uses these submissions to improve the effectiveness of email protection technologies. For example, suppose that people are reporting many messages using the Report Phishing add-in. This information surfaces in the Security Dashboard and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
 
@@ -74,153 +74,194 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 > [!IMPORTANT]
 > To view messages reported to Microsoft on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>, leave the toggle **On** (![Toggle on.](../../media/scc-toggle-on.png)) at the top of the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>.
 
-## Get the Report Message add-in
+## Admin instructions
 
-### Get the Report Message add-in for yourself
-
-1. Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in. To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180>.
-
-2. Click **GET IT NOW**.
-
-   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="The Get It Now report message." lightbox="../../media/ReportMessageGETITNOW.png":::
-
-3. In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.
-
-4. Sign in using your work or school account (for business use) or your Microsoft account (for personal use).
-
-After the add-in is installed and enabled, you'll see the following icons:
-
-- In Outlook, the icon looks like this:
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="The Report Message add-in icon for Outlook." lightbox="../../media/OutlookReportMessageIcon.png":::
-
-- In Outlook on the web, the icon looks like this:
-
-    > [!div class="mx-imgBorder"]
-    > ![Outlook on the web Report Message add-in icon.](../../media/owa-report-message-icon.png)
-
-### Get the Report Message add-in for your organization
+Install and configure the Report Message or Report Phishing add-ins for the organization.
 
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home?#/homepage), go to **Settings** \> **Integrated apps**. Click **Get apps**.
+### Get the Report Message or Report Phishing add-in for your organization
+
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, expand **Show all** if necessary, and then go to **Settings** \> **Integrated apps**. Or, to directly to the **Integrated apps** page, use <https://admin.microsoft.com/Adminportal/Home#/Settings/IntegratedApps>.
+
+2. On the **Integrated apps** page, click ![Get apps icon.](../../media/m365-cc-sc-get-apps-icon.png)**Get apps**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="The Microsoft 365 admin center Integrated apps." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="The Integrated apps page in the Microsoft 365 admin center where you click Get apps." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. In the **Microsoft 365 Apps** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon.](../../media/search-icon.png). In the list of results, find and select **Report Message**.
+3. In the **Microsoft 365 Apps** page that opens, enter **Report Message** in the ![Search icon.](../../media/search-icon.png) **Search** box.
 
-3. The app details page opens. Select **Get It Now**.
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="The Report Message add-in." lightbox="../../media/microsoft-365-admin-center-report-message.png":::
-
-4. Complete the basic profile information, and then click **Continue**.
+   In the search results, click **Get it now** in the **Report Message** entry or the **Report Phishing** entry.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="The Report Message add-in profile setup." lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="Search results for Report Message showing the Report Message and Report Phishing add-ins, and the Get it now buttons on each." lightbox="../../media/microsoft-365-admin-center-report-message.png":::
 
-5. The **Deploy New App** flyout opens. Configure the following settings. Click **Next** to go to the next page to complete setup.
+   > [!NOTE]
+   > Although the screenshots in the remaining steps show the **Report Message** add-in, the steps are identical for the **Report Phishing** add-in.
 
-   - **Add users**: Select one of the following values:
+4. The **Deploy New App** wizard opens. On the **Add users** page, configure the following settings:
+
+   - **Is this a test deployment?**: Leave the toggle at ![Toggle off.](../../media/scc-toggle-off.png) **No**, or set the toggle to ![Toggle on.](../../media/scc-toggle-on.png) **Yes**.
+
+   - **Assign users**: Select one of the following values:
      - **Just me**
      - **Entire organization**
-     - **Specific users / groups**
+     - **Specific users/groups**: Find and select users and groups in the search box. After each selection, the user or group appears in the **To be added** section that appears below the search box. To remove a selection, click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) on the entry.
 
-   - **Deployment**:
-     - **Accept Permissions requests**: Read the app permissions and capabilities carefully before going to the next page.
+   - **Email notification**: By default the **Send email notification to assigned users** is selected. Click **View email sample** to open the Add-in deployment email alerts](/microsoft-365/admin/manage/add-in-deployment-email-alerts) article.
 
-        > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="The Accept permissions requests page." lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
+   > [!div class="mx-imgBorder"]
+   > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app-add-users.png" alt-text="The Add users page of Deploy New App." lightbox="../../media/microsoft-365-admin-center-deploy-new-app-add-users.png":::
 
-     - **Finish deployment**: Review and finish deploying the add-in.
-     - **Deployment completed**: Select **Done** to complete the setup.
+   When you're finished, click **Next**.
 
-        > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="The notification message of the deployment completed." lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
+5. On the **Accept permissions requests** page, read the app permissions and capabilities information carefully before you click **Next**.
 
-## Edit settings for the Report Message add-in
+   > [!div class="mx-imgBorder"]
+   > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app-accept-permissions-requests.png" alt-text="The Accept permissions requests page of Deploy New App." lightbox="../../media/microsoft-365-admin-center-deploy-new-app-accept-permissions-requests.png":::
 
-1. In the Microsoft 365 admin center, go to **Settings** \> **Integrated apps** \. Then find and select **Report Message** add-in.
+6. On the **Review and finish deployment** page, review your settings. Click **Back** to make changes.
 
-2. In the flyout that appears, select **Edit users** to edit user settings.
+   When you're finished, click **Finish deployment**.
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="The Report Message flyout." lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
+   > [!div class="mx-imgBorder"]
+   > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app-review-and-finish.png" alt-text="The Review and finish deployment page of Deploy New App." lightbox="../../media/microsoft-365-admin-center-deploy-new-app-review-and-finish.png":::
 
-3. To remove the add-in, select **Remove app** under **Actions** in the same flyout.
+7. A progress indicator appears on the **Review and finish deployment** page. If deployment of the add-in is successful, the page title changes to **Deployment completed**.
 
-## Get the Report Phishing add-in
+   > [!div class="mx-imgBorder"]
+   > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="The notification message of the deployment completed." lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
 
-### Get the Report Phishing add-in for yourself
+   When you're finished, click **Done**.
 
-1. Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Phishing add-in.
+   If you click **View this deployment**, the page closes and you're taken to the details of the add-in as described in the next section.
 
-2. Click **GET IT NOW**.
+### Get the Report Message or the Report Phishing add-ins for your Microsoft 365 GCC or GCC High organization
 
-3. In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.
+Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use the steps in this section to get the Report Message or Report Phishing add-ins for their organizations.
 
-4. Sign in using your work or school account (for business use) or your Microsoft account (for personal use).
+> [!NOTE]
+> It could take up to 24 hours for the add-in to appear in your organization.
+
+1. In the Microsoft 365 admin center at <https://admin.microsot.com>, go to **Settings** \> **Add-ins**, and select **Deploy Add-In**.
+
+2. In the **Deploy a new add-in** flyout that opens, click **Next**, and then select **Upload custom apps**.  
+
+3. Select **I have a URL for the manifest file**. Use the following URLs:
+
+   - **Report Message**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml>
+   - **Report Phishing**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml>
+
+4. Choose which users will have access to the add-in, select a deployment method, and then select **Deploy**.
+
+5. To fully configure the settings, see [User reported message settings](user-submission.md).
+
+### View and edit settings for the Report Message or Report Phishing add-ins
+
+1. In the Microsoft 365 admin center at <https://admin.microsoft.com>, expand **Show all** if necessary, and then go to **Settings** \> **Integrated apps**. Or, to directly to the **Integrated apps** page, use <https://admin.microsoft.com/Adminportal/Home#/Settings/IntegratedApps>.
+
+   > [!NOTE]
+   > Although the screenshots in the remaining steps show the **Report Message** add-in, the steps are identical for the **Report Phishing** add-in.
+
+2. On the **Integrated apps** page, select the **Report Message** add-in or the **Report Phishing** add-in by doing one of the following steps:
+
+   - In the **Name** column, click the icon or text for the add-in. This selection takes you to the **Overview** tab in the details flyout as described in the next steps.
+   - In the **Name** column, click **⋮** **Edit row**, and then select ![Edit users icon.](../../media/m365-cc-sc-remove-selected-users-icon.png) **Edit users**. This selection takes you to the **Users** tab in the details flyout as described in the next steps.
+   - In the **Name** column, click **⋮** **Edit row**, and then select ![Check usaged data icon.](../../media/m365-cc-sc-remove-selected-users-icon.png) **Check usage data**. This selection takes you to the **Usage** tab in the details flyout as described in the next steps.
+
+   > [!div class="mx-imgBorder"]
+   > :::image type="content" source="../../media/microsoft-365-admin-center-select-report-message-add-in.png" alt-text="Select the Report Message add-in on the Integrated apps page in the Microsoft 365 admin center." lightbox="../../media/microsoft-365-admin-center-select-report-message-add-in.png":::
+
+3. The details flyout that opens contains the following tabs:
+
+   - **Overview** tab:
+     - **Basic info** section:
+       - **Status**
+       - **Type**: Add-in
+       - **Test deployment**: **Yes** or **No**, depending on the option you selected when you [deployed the add-in](#get-the-report-message-or-report-phishing-add-in-for-your-organization) or the selection you change on the **Users** tab.
+       - **Description**
+       - **Host product**: Outlook
+     - **Actions** section: Click **Remove app** to remove the app.
+     - **Assigned users** section: Click **Edit users** to go to the **Users** tab.
+     - **Usage** section: Click **Check usage data** to got to the **Usage** tab.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-add-in-details-overview-tab.png" alt-text="The Overview tab on the details flyout of the Report Message add-in in the Microsoft 365 admin center." lightbox="../../media/microsoft-365-admin-center-report-message-add-in-details-overview-tab.png":::
+
+   - **Users** tab:
+     - **Is this a test deployment?**: Leave the toggle at ![Toggle off.](../../media/scc-toggle-off.png) **No**, or set the toggle to ![Toggle on.](../../media/scc-toggle-on.png) **Yes**.
+     - **Assign users** section: Select one of the following values:
+       - **Just me**
+       - **Entire organization**
+       - **Specific users/groups**: Find and select users and groups in the search box. After each selection, the user or group appears in the **Added users** section that appears below the search box. To remove a selection, click ![Remove icon.](../../media/m365-cc-sc-remove.png) on the entry.
+
+     - **Email notification** section: **Send email notification to assigned users** and **View email sample** are not selectable.
+
+     If you made any updates on this tab, click **Update** to save your changes.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-add-in-details-users-tab.png" alt-text="The Users tab on the details flyout of the Report Message add-in in the Microsoft 365 admin center." lightbox="../../media/microsoft-365-admin-center-report-message-add-in-details-users-tab.png":::
+
+   - **Usage** tab: The chart and details table shows the number of active users over time.
+     - Filter the **Date range** to **7 days**, **30 days** (default), or **90 days**.
+     - In the **Report** column, click ![Download icon.](../../media/m365-cc-sc-download-icon.png) **Download** to download the information filtered by **Date range** to the file named **UsageData.csv**.
+
+   When you're finished viewing the information on the tabs, click ![Close icon.](../../media/m365-cc-sc-close-icon.png) **Close** to close the details flyout.
+
+## User instructions
+
+### Get the Report Message or Report Phishing add-ins for yourself
+
+1. Do one of the following steps:
+
+   - Open the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps>. On the **AppSource** page, enter **Report message** in the ![Search icon.](../../media/search-icon.png) **Search** box, and then select the **Report Message** or **Report Phishing** in the results.
+
+   :::image type="content" source="../../media/microsoft-appsource-find-report-message-add-in.png" alt-text="Search results on the Microsoft AppSource page for the Report Message add-in." lightbox="../../media/microsoft-appsource-find-report-message-add-in.png":::
+
+   - Use one of the following URLs to go directly to the download page for the add-in:
+     - **Report Message**: <https://appsource.microsoft.com/product/office/WA104381180>
+     - **Report Phishing**: <https://appsource.microsoft.com/product/office/WA200002469>
+
+   > [!NOTE]
+   > Although the screenshots in the remaining steps show the **Report Message** add-in, the steps are identical for the **Report Phishing** add-in.
+
+2. On the details page of the add-in, click **Get it now**.
+
+   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="The details page of the Report Message add-in where you click Get it now." lightbox="../../media/ReportMessageGETITNOW.png":::
+
+3. In the dialog that opens, enter your Microsoft account and then click **Sign in**.
 
 After the add-in is installed and enabled, you'll see the following icons:
 
-- In Outlook, the icon looks like this:
+- **Outlook**:
 
-  ![Report Phishing add-in icon for Outlook.](../../media/Outlook-ReportPhishing.png)
-
-- In Outlook on the web, the icon looks like this:
+  - The Report Message add-in:
 
     > [!div class="mx-imgBorder"]
-    > ![Outlook on the web Report Phishing add-in icon.](../../media/OWA-ReportPhishing.png)
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="The Report Message add-in icon in Outlook." lightbox="../../media/OutlookReportMessageIcon.png":::
 
-### Get the Report Phishing add-in for your organization
-
-> [!NOTE]
-> It could take up to 12 hours for the add-in to appear in your organization.
-
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home?#/homepage), go to **Settings** \> **Integrated apps**. Click **Get apps**.
+  - The Report Phishing add-in:
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="The Microsoft 365 admin center Integrated apps." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/Outlook-ReportPhishing.png" alt-text="The Report Message add-in icon in Outlook." lightbox="../../media/Outlook-ReportPhishing.png":::
 
-2. In the **Microsoft 365 Apps** page that appears, click in the **Search** box, enter **Report Phishing**, and then click **Search** ![Search icon.](../../media/search-icon.png). In the list of results, find and select **Report Phishing**.
+- **Outlook on the web**:
 
-3. The app details page opens. Select **Get It Now**.
-
-4. Complete the basic profile information, and then click **Continue**.
-
-5. The **Deploy New App** flyout opens. Follow the steps [described above](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) to complete setup.
-
-## Edit settings for the Report Phishing add-in
-
-1. In the Microsoft 365 admin center, go to **Settings** \> **Integrated apps** \. Then find and select **Report Phishing** add-in.
-
-2. In the flyout that appears, select **Edit users** to edit user settings.
+  - The Report Message add-in:
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="The Report Phishing flyout." lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
+    > :::image type="content" source="../../media/owa-report-message-icon.png" alt-text="The Report Message add-in icon in Outlook on the web." lightbox="../../media/owa-report-message-icon.png":::
 
-3. To remove the add-in, select **Remove app** under **Actions** in the same flyout.
+  - The Report Phishing add-in:
 
-## Get the Report Message or the Report Phishing add-ins for the GCC and GCCH users
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../../media/OWA-ReportPhishing.png" alt-text="The Report Message add-in icon in Outlook on the web." lightbox="../../media/OWA-ReportPhishing.png":::
 
-If you're a Government Community Cloud High (GCCH) or a Government Community Cloud (GCC) admin, use the following steps to get the Report Message or the Report Phishing add-ins for your organization. Note that if you're an individual user, you can't get the add-in using Microsoft AppSource.
+### Get the Report Message or the Report Phishing add-ins for yourself in Microsoft 365 GCC or GCC High
 
-> [!NOTE]
-> It could take up to 24 hours for the add-in to appear in your organization. 
-
-1. In the Microsoft 365 admin center, go to **Settings** \> **Add-ins**, and select **Deploy Add-In**. 
-
-2. The **Deploy a new add-in** flyout opens. Click **Next**, and then select **Upload custom apps**.  
-
-3. Select **I have a URL for the manifest file**. Use the following URLs to get the [Report Message](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml) and the [Report Phishing](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml) add-ins. 
-
-4. Choose which users will have access to the add-in and select a deployment method, and then select **Deploy**. 
-
-5. To fully configure the settings, see [User reported message settings](user-submission.md). 
+Individual users in Microsoft 365 GCC or GCC High can't get the Report Message or Report Phishing add-ins using the Microsoft AppSource.
 
 ## Use the Report Message or the Report Phishing add-ins
 
-You can use the Report Message or the Report Phishing add-ins to submit false positives (good email that was blocked or sent to junk folder) and false negatives (unwanted email or phish that was delivered to the inbox) in Outlook. For more information, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
+You can use the Report Message or the Report Phishing add-ins to submit false positives (good email that was blocked or sent to the Junk Email folder) and false negatives (unwanted email or phishing that was delivered to the Inbox) in Outlook. For more information, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
