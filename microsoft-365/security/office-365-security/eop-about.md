@@ -83,7 +83,7 @@ For information about requirements, important limits, and feature availability a
 |**Protection**||
 |Anti-malware|[Anti-malware protection in EOP](anti-malware-protection.md) <p> [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml) <p> [Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
 |Inbound anti-spam|[Anti-spam protection in EOP](anti-spam-protection.md) <p> [Anti-spam protection FAQ](anti-spam-protection-faq.yml) <p> [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
-|Outbound anti-spam|[Outbound spam protection in EOP](outbound-spam-controls.md) <p> [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md) <p> [Control automatic external email forwarding in Microsoft 365](external-email-forwarding.md)|
+|Outbound anti-spam|[Outbound spam protection in EOP](outbound-spam-protection-about.md) <p> [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md) <p> [Control automatic external email forwarding in Microsoft 365](outbound-spam-policies-external-email-forwarding.md)|
 |Connection filtering|[Configure connection filtering](connection-filter-policies-configure.md)|
 |Anti-phishing|[Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md) <p> [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)|
 |Anti-spoofing protection|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|

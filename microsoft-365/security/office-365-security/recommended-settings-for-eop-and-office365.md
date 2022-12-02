@@ -108,7 +108,7 @@ For more information about Advanced Spam Filter (ASF) settings in anti-spam poli
 
 #### EOP outbound spam policy settings
 
-To create and configure outbound spam policies, see [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md).
+To create and configure outbound spam policies, see [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md).
 
 For more information about the default sending limits in the service, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
