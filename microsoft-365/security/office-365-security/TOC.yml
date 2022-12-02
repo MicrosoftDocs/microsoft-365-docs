@@ -61,7 +61,7 @@
            - name: Recommended settings for configuring EOP and Defender for Office 365 Security
              href: recommended-settings-for-eop-and-office365.md
        - name: Step 2 - Configure Permissions
-         href: permissions-microsoft-365-security-center.md
+         href: mdo-portal-permissions.md
    - name: Migrate
      items:
        - name: Migrate from a third-party protection service or device to Defender for Office 365
@@ -79,7 +79,7 @@
        - name: Configure your tenant for increased security
          href: tenant-wide-setup-for-increased-security.md
        - name: Security recommendations for priority accounts
-         href: security-recommendations-for-priority-accounts.md
+         href: priority accounts-security-recommendations.md
        - name: Anti-malware protection
          items:
          - name: Anti-malware protection
@@ -241,7 +241,7 @@
          - name: User tags in Defender for Office 365
            href: user-tags.md
          - name: Configure and review priority accounts
-           href: configure-review-priority-account.md
+           href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
          items:
          - name: The Email entity page
@@ -439,7 +439,7 @@
      - name: Troubleshooting mail sent to Microsoft 365
        href: mail-flow-troubleshooting.md
      - name: Anti-spam message headers
-       href: anti-spam-message-headers.md
+       href: message-headers-eop-mdo.md
      - name: Policies, practices, and guidelines
        href: reference-policies-practices-and-guidelines.md
      - name: Sending mail to Office 365

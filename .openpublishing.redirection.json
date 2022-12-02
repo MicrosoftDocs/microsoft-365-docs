@@ -9464,6 +9464,26 @@
       "source_path": "microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365.md",
       "redirect_url": "/microsoft-365/security/office-365-security/mail-flow-troubleshooting",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/permissions-microsoft-365-security-center.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/mdo-portal-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-spam-message-headers.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/message-headers-eop-mdo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/priority accounts-security-recommendations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-review-priority-account.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/priority-accounts-turn-on-priority-account-protection",
+      "redirect_document_id": true
     }
    ]
   }

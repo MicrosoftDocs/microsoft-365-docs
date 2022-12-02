@@ -68,7 +68,7 @@ Authentication-Results:
    compauth=<fail | pass | softpass | none> reason=<yyy>
 ```
 
-These values are explained at [Authentication-results message header](anti-spam-message-headers.md#authentication-results-message-header).
+These values are explained at [Authentication-results message header](message-headers-eop-mdo.md#authentication-results-message-header).
 
 By examining the message headers, admins or even end users can determine how Microsoft 365 determined that the sender is spoofed.
 

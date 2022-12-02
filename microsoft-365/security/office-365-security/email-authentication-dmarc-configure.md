@@ -263,7 +263,7 @@ All, or most, email will first be routed to mail.contoso.com since it's the prim
 
 Want more information about DMARC? These resources can help.
 
-- [Anti-spam message headers](anti-spam-message-headers.md) includes the syntax and header fields used by Microsoft 365 for DMARC checks.
+- [Anti-spam message headers](message-headers-eop-mdo.md) includes the syntax and header fields used by Microsoft 365 for DMARC checks.
 
 - Take the [DMARC Training Series](https://www.m3aawg.org/activities/training/dmarc-training-series) from M<sup>3</sup>AAWG (Messaging, Malware, Mobile Anti-Abuse Working Group).
 
