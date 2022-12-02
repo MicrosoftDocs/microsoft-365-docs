@@ -47,7 +47,7 @@ To turn Bookings on or off for your organization using the PowerShell cmdlet [Se
 
 Use the settings below to control who can use Bookings, decide on what Bookings information is shared, whether staff need approval before they can be added to a Booking calendar, and enforce naming policy.
 
-:::image type="content" source="../media/bookings-granular-controls.png" alt-text="Screenshot: Settings that allow you to control who can use Bookings, decide what Bookings info is shared, staff approval, and naming policy":::
+:::image type="content" source="../media/bookings-granular-controls.png" alt-text="Screenshot of settings that allow you to control who can use Bookings, decide what Bookings info is shared, staff approval, and naming policy.":::
 
 ### Block bookings from outside your organization
 
@@ -71,14 +71,14 @@ When this setting is enabled, people added as staff in booking calendars will ge
 
 You can enforce a naming policy in your organization for all calendars. When this setting is enabled, administrators can define Prefix and Suffix. If selected, these rules will be enforced across all calendars.
 
-:::image type="content" source="../media/bookings-enforce-naming.png" alt-text="Screenshot: Enable the naming policy to define a Prefix and Suffix for all calendars in your organization":::
+:::image type="content" source="../media/bookings-enforce-naming.png" alt-text="Screenshot that shows enabling the naming policy to define a Prefix and Suffix for all calendars in your organization.":::
 
 - **Add Custom Prefix**: When this setting is enabled, all new calendars will have the string you defined added as a prefix (for example: "Prfx_ContosoCalendar").
 - **Add Custom Suffix**: When this setting is enabled, all new calendars will have the strings you defined added as a suffix (for example: "ContosoCalendar_Sufx").
 
 The screenshot below suggests how the Prefix/Suffix will be enforced while creating a new calendar.
 
-:::image type="content" source="../media/bookings-naming-prefix.png" alt-text="Screenshot: Prefix naming policy enabled for all calendars in Bookings":::
+:::image type="content" source="../media/bookings-naming-prefix.png" alt-text="Screenshot of the prefix naming policy enabled for all calendars in Bookings.":::
 
 > [!NOTE]
 > The enforcement will not impact Bookings calendars that have already been created unless the business information of these calendars is modified.
