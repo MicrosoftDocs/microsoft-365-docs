@@ -26,7 +26,7 @@ description: "This is a list of all trainable classifiers, their definitions and
 
 Microsoft Purview comes with multiple pre-trained classifiers. They appear in the **Microsoft Purview compliance portal** \> **Data classification** \> **Trainable classifiers** view with the status of `Ready to use`.
 
-## Adult, racy, and gory
+### Adult, racy, and gory
  
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -35,38 +35,37 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 > [!NOTE]
 > Images must be between 100 kilobytes (KB) and 4 megabytes (MB) in size and be greater than 50 x 50 pixels in height x width dimensions.
 
-## Agreements
+### Agreements
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 |Detects content related to legal agreements such as non-disclosure agreements, statements of work, loan and lease agreements, employment and non-compete agreements. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. | English |
 
-## Bank statement
+### Bank statement
  
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects items that contain a financial transaction of a bank account including account information, deposits, withdrawals, account balance, interest accrued and bank charges within a given period. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English|
  
-## Budget
+### Budget
  
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Detects budget documents, budget forecasts and current budget statements including income and expenses of an organization.|  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
- | English |
+| Detects budget documents, budget forecasts and current budget statements including income and expenses of an organization.|  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
 
-## Business plan
+### Business plan
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects components of a business plan including business opportunity, plan of achieving the outcomes, market study and competitor analysis. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
 
-## Construction specifications
+### Construction specifications
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects construction specifications for commercial and industrial projects like factories, plants, commercial offices, airports, roads. | Captures guidelines on the quality, quantity, types of building material, processes etc. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
 
-## Corporate sabotage (preview)
+### Corporate sabotage (preview)
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -75,55 +74,55 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 > [!IMPORTANT] 
 > While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the **Message is not sent to any of these domains condition** with a list of domains to exclude. 
 
-## Customer complaints
+### Customer complaints
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | The customer complaints classifier detects feedback and complaints made about your organization's products or services. This classifier can help you meet regulatory requirements on the detection and triage of complaints, like the Consumer Financial Protection Bureau and Food and Drug Administration requirements. | For Communications Compliance, it detects content in .msg, and .eml files. For the rest of Microsoft Purview Information Protection services, it detects content in .docx, .pdf, .txt, .rtf, .jpg, .jpeg, .png, .gif, .bmp, .svg files. | English |
  
-## Discrimination
+### Discrimination
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects explicit discriminatory language and is sensitive to discriminatory language against the African American/Black communities when compared to other communities. | This applies to Communications Compliance, it's a text based classifier. | English |
  
-## Employee disciplinary action
+### Employee disciplinary action
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects files relating to disciplinary action including a reprimand or corrective action in response to employee misconduct, rule violation, or poor performance. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. |
  
-## Employee insurance
+### Employee insurance
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects documents pertaining to employee medical insurance and workplace disability insurance. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
  
-## Employment agreement
+### Employment agreement
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects employment agreement containing details like the starting date, salary, compensation, duties of employment. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
-## Finance
+### Finance
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects content in corporate finance, accounting, economy, banking, and investment categories. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
   
-## Financial audit
+### Financial audit
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects files, documents and reports pertaining to financial audit, both external or internal audit undertaken in an organization. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. | English |
 
-## Financial statement
+### Financial statement
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects financial statements like income statement, balance sheet, cash flow statement, statement of changes in equity. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
  
-## Gifts & entertainment (preview)
+### Gifts & entertainment (preview)
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -132,85 +131,85 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 > [!IMPORTANT] 
 > While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the **Message is not sent to any of these domains condition** with a list of domains to exclude. 
 
-## Harassment
+### Harassment
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability. |  Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | Arabic <br> Chinese (Simplified) <br> Chinese (Traditional) <br> Dutch <br> English <br> French <br> German <br> Italian <br> Korean <br> Japanese <br> Portuguese <br> Spanish |
 
-## Health/Medical forms
+### Health/Medical forms
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects various forms and files that are used for systematic documentation of a patient's admission details, medical history, patient information and prior authorization request and are typically used in medical/health services. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
  
-## Healthcare
+### Healthcare
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects content in medical and healthcare administration aspects such as medical services, diagnoses, treatment, claims, etc. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
 
-## Human resources
+### Human resources
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects content in human resources related categories of recruitment, interviewing, hiring, training, evaluating, warning, and termination. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
 
-## Invoice
+### Invoice
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects invoices containing an itemized summary of the purchase, the total balance owed, current payment due, and various payment methods. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
  
-## Intellectual property
+### Intellectual property
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects content in intellectual property related categories such as trade secrets and similar confidential information. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
  
-## Information technology
+### Information technology
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects content in information technology and cybersecurity categories such as network settings, information security, hardware, and software. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
 
-## Legal affairs
+### Legal affairs
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects content in legal affairs-related categories such as litigation, legal process, legal obligation, legal terminology, law, and legislation. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. | English |
 
-## License agreement
+### License agreement
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects license agreements, contains terms and conditions for use and compensation for the licensor. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
  
-## Loan agreements and offer letters
+### Loan agreements and offer letters
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects loan agreements, offer letters and terms and conditions contained within the document. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. | English |
 
-## Merger and acquisition files
+### Merger and acquisition files
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects documents including letter of intent, term sheets and related files. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. | English |
  
-## Manufacturing batch records
+### Manufacturing batch records
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects manufacturing batch documents that include details around the entire manufacturing process and the history of a product batch. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. | English |
  
-## Meeting notes
+### Meeting notes
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects documents and notes containing information specific to meetings. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
  
-## Money laundering (preview)
+### Money laundering (preview)
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -219,43 +218,43 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 > [!IMPORTANT] 
 > While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the **Message is not sent to any of these domains condition** with a list of domains to exclude. 
 
-## Network design files
+### Network design files
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects technical documentation about networks of computers including various components of network, how they're connected, their architecture, how they perform and where they troubleshoot. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
  
-## Non-disclosure agreement
+### Non-disclosure agreement
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects non-disclosure agreements (NDAs). | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files.| English |
 
-## Paystub
+### Paystub
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects paystub/salary statement files. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
  
-## Procurement
+### Procurement
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects content in categories of bidding, quoting, purchasing, and paying for supply of goods and services. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
 
-## Project documents
+### Project documents
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects project reports and documents, which include project planning documents, project charter documents and schedules. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
 
-## Profanity
+### Profanity
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects a specific category of offensive language text items that contain expressions that embarrass most people. | Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | Arabic <br> Chinese (Simplified) <br> Chinese (Traditional) <br> Dutch <br> English <br> French <br> German <br> Italian <br> Korean <br> Japanese <br> Portuguese <br> Spanish |
 
-## Regulatory collusion (preview)
+### Regulatory collusion (preview)
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -264,25 +263,25 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 > [!IMPORTANT] 
 > While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the **Message is not sent to any of these domains condition** with a list of domains to exclude. 
 
-## Resume
+### Resume
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects a resume document that a job applicant provides an employer, which has a detailed statement of the candidate's prior work experience, education, and accomplishments. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .txt files. | English |
  
-## Sales and revenue
+### Sales and revenue
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects sales reports, revenue/income statement and sales/demand forecasting reports for organizations. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
 
-## Software product development files
+### Software product development files
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects files used in software development including product requirements document, product testing and planning, files including test cases, and test reports. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. | English |
 
-## Source code
+### Source code
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -291,13 +290,13 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 > [!NOTE]
 > Source code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
 
-## Statement of work
+### Statement of work
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects statement of work (SOW) containing details like requirements, responsibilities, terms and conditions for both parties.  | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
  
-## Stock manipulation (preview)
+### Stock manipulation (preview)
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -306,19 +305,19 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 > [!IMPORTANT] 
 > While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the **Message is not sent to any of these domains condition** with a list of domains to exclude.
 
-## Tax documents
+### Tax documents
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects tax related content such as tax planning, tax forms, tax filing, tax regulations. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files. | English |
 
-## Threat
+### Threat
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. |  Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | Arabic <br> Chinese (Simplified) <br> Chinese (Traditional) <br> Dutch <br> English <br> French <br> German <br> Italian <br> Korean <br> Japanese <br> Portuguese <br> Spanish |
 
-## Unauthorized disclosure (preview)
+### Unauthorized disclosure (preview)
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
@@ -327,7 +326,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
  > [!IMPORTANT] 
 > While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the **Message is not sent to any of these domains condition** with a list of domains to exclude. 
 
-### Word count requirements
+## Word count requirements
 
 Some classifiers have minimum word count requirements for messages. To identify and take action on messages containing inappropriate language content that don't meet the word count requirements listed in the table below, you can create a [custom keyword dictionary](communication-compliance-policies.md#custom-keyword-dictionaries) for communication compliance policies detecting this type of content.
 
