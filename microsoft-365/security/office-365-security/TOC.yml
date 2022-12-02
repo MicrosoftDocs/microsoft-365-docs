@@ -437,7 +437,7 @@
      - name: Policies and protections
        href: how-policies-and-protections-are-combined.md
      - name: Troubleshooting mail sent to Microsoft 365
-       href: troubleshooting-mail-sent-to-office-365.md
+       href: mail-flow-troubleshooting.md
      - name: Anti-spam message headers
        href: anti-spam-message-headers.md
      - name: Policies, practices, and guidelines
@@ -459,7 +459,7 @@
      - name: Privileged identity management in Defender for Office 365
        href: use-privileged-identity-management-in-defender-for-office-365.md
      - name: Anonymous inbound email messages over IPv6
-       href: support-for-anonymous-inbound-email-messages-over-ipv6.md
+       href: mail-flow-inbound-ipv6-support-about.md
      - name: Support for DKIM-signed messages
        href: email-authentication-dkim-support-about.md
      - name: Install Application Guard for Office
@@ -471,7 +471,7 @@
        - name: EOP general FAQ
          href: eop-faq.yml
        - name: EOP queued, deferred, and bounced messages FAQ
-         href: eop-queued-deferred-and-bounced-messages-faq.yml
+         href: mail-flow-delivery-faq.yml
    - name: Microsoft 365 Defender docs
      items:
        - name: Microsoft 365 Defender
