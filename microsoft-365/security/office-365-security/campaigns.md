@@ -211,7 +211,7 @@ The diagram contains the following information:
 
 - **Sender IPs**
 - **Sender domains**
-- **Filter verdicts**: Verdict values are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
+- **Filter verdicts**: Verdict values are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](message-headers-eop-mdo.md). The available values are described in the following table:
 
   |Value|Spam filter verdict|Description|
   |---|---|---|
