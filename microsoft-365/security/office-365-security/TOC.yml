@@ -147,13 +147,13 @@
        - name: Outbound spam protection
          items:
          - name: Outbound spam protection
-           href: outbound-spam-controls.md
+           href: outbound-spam-protection-about.md
          - name: Configure outbound spam filtering
-           href: configure-the-outbound-spam-policy.md
+           href: outbound-spam-policies-configure.md
          - name: Control automatic external email forwarding
-           href: external-email-forwarding.md
+           href: outbound-spam-policies-external-email-forwarding.md
          - name: Outbound delivery pools
-           href: high-risk-delivery-pool-for-outbound-messages.md
+           href: outbound-spam-high-risk-delivery-pool-about.md
        - name: Anti-phishing protection
          items:
          - name: Anti-phishing protection
