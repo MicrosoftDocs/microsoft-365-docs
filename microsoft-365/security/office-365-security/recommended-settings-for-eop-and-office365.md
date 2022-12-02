@@ -168,7 +168,7 @@ The spoof settings are inter-related, but the **Show first contact safety tip** 
 
 ## Microsoft Defender for Office 365 security
 
-Additional security benefits come with a Microsoft Defender for Office 365 subscription. For the latest news and information, you can see [What's new in Defender for Office 365](whats-new-in-defender-for-office-365.md).
+Additional security benefits come with a Microsoft Defender for Office 365 subscription. For the latest news and information, you can see [What's new in Defender for Office 365](defender-for-office-365-whats-new.md).
 
 > [!IMPORTANT]
 >
