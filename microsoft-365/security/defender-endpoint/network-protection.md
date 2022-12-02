@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 10/20/2022
+ms.date: 12/02/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -209,8 +209,7 @@ Here's another example:
 
 ```kusto
 
-DeviceEvents:
-
+DeviceEvents
 |where ActionType contains "ExploitGuardNetworkProtection"
 |extend ParsedFields=parse_json(AdditionalFields)
 |project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
