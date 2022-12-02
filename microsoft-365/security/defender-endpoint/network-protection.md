@@ -195,7 +195,7 @@ Here's an example query for viewing Network Protection events for third-party br
 
 ```kusto
 
-DeviceNetworkEvents
+DeviceEvents
 |where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
