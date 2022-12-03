@@ -9540,10 +9540,5 @@
       "redirect_url": "/microsoft-365/security/office-365-security/reports-email-security",
       "redirect_document_id": true
     },
-    {
-      "source_path": "microsoft-365/security/office-365-security/view-mail-flow-reports.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/reports-mail-flow",
-      "redirect_document_id": true
-    }
    ]
   }
