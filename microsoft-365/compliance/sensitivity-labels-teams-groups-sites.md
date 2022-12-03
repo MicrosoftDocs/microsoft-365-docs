@@ -470,7 +470,7 @@ The automatically generated email has the subject **Incompatible sensitivity lab
 
 ```PowerShell
 Set-SPOTenant –LabelMismatchEmailHelpLink "https://support.contoso.com"
-````
+```
 
 The email message also has a Microsoft documentation link that provides basic information for users to change the sensitivity label: [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 

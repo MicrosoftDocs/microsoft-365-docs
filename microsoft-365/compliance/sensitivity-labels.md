@@ -61,7 +61,7 @@ You can use sensitivity labels to:
 
 - **Protect containers** that include Teams, Microsoft 365 Groups, and SharePoint sites. For example, set privacy settings, external user access and external sharing, and access from unmanaged devices.
 
-- **Protect meetings** (in preview) by labeling (and optionally, encrypting) meeting invites and any responses, and enforce Teams-specific options for the meeting and related chat. 
+- **Protect meetings and chat** (in preview) by labeling (and optionally, encrypting) meeting invites and any responses, and enforce Teams-specific options for the meeting and chat. 
 
 - **Extend sensitivity labels to Power BI**: When you turn on this capability, you can apply and view labels in Power BI, and protect data when it's saved outside the service.
 
@@ -136,7 +136,7 @@ This scope configuration lets you have sensitivity labels that are just for item
 
 ![Scope options for sensitivity labels.](../media/sensitivity-labels-scopes.png)
 
-By default, the **Items** scope (previously named **Files & emails**) is always selected. Optionally, include meeting invites with this scope. The other scopes are selected by default when the features are enabled for your tenant:
+By default, the **Items** scope (previously named **Files & emails**) is always selected. Optionally, include meetings with this scope for calendar events, Teams meetings options, and Team chat. The other scopes are selected by default when the features are enabled for your tenant:
 
 - **Groups & sites**: See [Enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
