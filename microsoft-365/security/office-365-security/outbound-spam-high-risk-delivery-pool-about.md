@@ -41,7 +41,7 @@ The high risk delivery pool is a separate IP address pool for outbound email tha
 
 The very real possibility that IP addresses in the high-risk delivery pool will be placed on IP blocklists remains, but this is by design. Delivery to the intended recipients isn't guaranteed, because many email organizations won't accept messages from the high risk delivery pool.
 
-For more information, see [Control outbound spam](outbound-spam-controls.md).
+For more information, see [Control outbound spam](outbound-spam-protection-about.md).
 
 > [!NOTE]
 > Messages where the source email domain has no A record and no MX record defined in public DNS are always routed through the high-risk delivery pool, regardless of their spam or sending limit disposition.
@@ -49,7 +49,7 @@ For more information, see [Control outbound spam](outbound-spam-controls.md).
 > Messages that exceed the following limits are blocked, so they aren't sent through the high-risk delivery pool:
 >
 > - The [sending limits of the service](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
-> - [Outbound spam policies](configure-the-outbound-spam-policy.md) where the senders are restricted from sending mail.
+> - [Outbound spam policies](outbound-spam-policies-configure.md) where the senders are restricted from sending mail.
 
 ### Bounce messages
 
