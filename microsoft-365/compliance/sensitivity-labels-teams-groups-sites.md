@@ -34,6 +34,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to protect docu
 - Authentication contexts
 - Default sharing link for a SharePoint site (PowerShell-only configuration)
 - Site sharing settings (PowerShell-only configuration)
+- Default label for channel meetings - in preview
 
 > [!IMPORTANT]
 > The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.
@@ -93,6 +94,8 @@ After sensitivity labels are enabled for containers as described in the previous
     
     - **Privacy and external user access settings** to configure the **Privacy** and **External users access** settings. 
     - **External sharing and Conditional Access settings** to configure the **Control external sharing from labeled SharePoint sites** and **Use Azure AD Conditional Access to protect labeled SharePoint sites** setting.
+    
+    Additionally, if you are editing an existing label where the scope includes items and meetings, and you've configured [labels to protect meetings](sensitivity-labels-meetings.md), you can select a default label for channel meetings and all channel chats. For non-channel meetings, you can select a default label as a policy setting.
 
 3. If you selected **Privacy and external user access settings**, now configure the following settings:
     
@@ -463,15 +466,7 @@ It wouldn't be a security concern if the document has a lower priority sensitivi
 
 To search the audit log for this event, look for **Detected document sensitivity mismatch** from the **File and page activities** category.
 
-The automatically generated email has the subject **Incompatible sensitivity label detected** and the email message explains the labeling mismatch with a link to the uploaded document and site. It also contains a line for your own internal documentation: **HelpLink : Troubleshooting Guide**. You must configure the hyperlink for the troubleshooting guide by using the [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *LabelMismatchEmailHelpLink* parameter. For example:
-
-```PowerShell
-Set-SPOTenant –LabelMismatchEmailHelpLink "https://support.contoso.com"
-```
-
-The email message also has a Microsoft documentation link that provides basic information for users to change the sensitivity label: [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) 
-
-Except for the internal URL that you must specify, these automated emails cannot be customized. However, you can prevent them from being sent when you use the following PowerShell command from [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant):
+The automatically generated email has the subject **Incompatible sensitivity label detected** and the email message explains the labeling mismatch with a link to the uploaded document and site. It also contains a documentation link that explains how users can change the sensitivity label. These automated emails cannot be customized but you can prevent them from being sent when you use the following PowerShell command from [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant):
 
 ```PowerShell
 Set-SPOTenant -BlockSendLabelMismatchEmail $True
