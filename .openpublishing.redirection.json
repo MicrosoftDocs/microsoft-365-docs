@@ -9589,6 +9589,26 @@
       "source_path": "microsoft-365/security/office-365-security/configure-global-settings-for-safe-links.md",
       "redirect_url": "/microsoft-365/security/office-365-security/safe-links-policies-global-settings-configure",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/scc-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-advanced-delivery.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/skip-filtering-phising-simulations-sec-ops-mailboxes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/admin-submission.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-admin",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/report-false-positives-and-false-negatives.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-outlook-report-messages",
+      "redirect_document_id": true
     }
    ]
   }
