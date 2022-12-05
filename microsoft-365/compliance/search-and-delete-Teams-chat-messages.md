@@ -87,6 +87,9 @@ For instructions about how to identify and remove holds and retention policies, 
 
 ## Step 5: Purge chat messages from Teams
 
+> [!NOTE]
+> Because Microsoft Graph Explorer is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks. See the [Purge chat messages with PowerShell](#purge-chat-messages-with-powershell) for details.
+
 Now you're ready to actually purge chat messages from Teams. You'll use the Microsoft Graph Explorer to perform the following three tasks:
 
 1. Get the ID of the eDiscovery (Premium) case that you created in Step 1. This is the case that contains the collection created in Step 2.
@@ -146,8 +149,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
   For more information on purgeData, see [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 
-> [!NOTE]
-> Because Microsoft Graph Explorer is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
+### Purge chat messages with PowerShell
 
 You can also purge chat messages using PowerShell. For example, to purge messages in the US Government cloud you could use a command similar to:
 
