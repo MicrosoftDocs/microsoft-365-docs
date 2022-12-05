@@ -65,7 +65,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 - Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-- For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
+- For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
 
 - Organizations that have a URL filtering or security solution (such as a proxy and/or firewall) in place, must have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
 
@@ -223,4 +223,4 @@ If you're a Government Community Cloud High (GCCH) or a Government Community Clo
 
 ## Use the Report Message or the Report Phishing add-ins
 
-You can use the Report Message or the Report Phishing add-ins to submit false positives (good email that was blocked or sent to junk folder) and false negatives (unwanted email or phish that was delivered to the inbox) in Outlook. For more information, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
+You can use the Report Message or the Report Phishing add-ins to submit false positives (good email that was blocked or sent to junk folder) and false negatives (unwanted email or phish that was delivered to the inbox) in Outlook. For more information, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).

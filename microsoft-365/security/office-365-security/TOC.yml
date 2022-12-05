@@ -235,7 +235,7 @@
        - name: Advanced delivery policies
          items:
          - name: Configure advanced delivery policies
-           href: configure-advanced-delivery.md
+           href: skip-filtering-phising-simulations-sec-ops-mailboxes.md
        - name: User tags and priority accounts
          items:
          - name: User tags in Defender for Office 365
@@ -277,7 +277,7 @@
            - name: Enable the Report Message and the Report Phishing add-ins
              href: enable-the-report-message-add-in.md
            - name: Report false positives and false negatives in Outlook
-             href: report-false-positives-and-false-negatives.md
+             href: submissions-outlook-report-messages.md
            - name: User reported message settings
              href: user-submission.md
            - name: Submit malware and non-malware to Microsoft
