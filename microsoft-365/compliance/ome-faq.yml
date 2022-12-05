@@ -276,7 +276,7 @@ sections:
           
           **To assign a user to the shared mailbox**
           
-          1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150).aspx).
+          1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150).
           
           2. Run the Add-MailboxPermission cmdlet with the Automapping parameter. This example gives Ayla full access permissions to a support mailbox.
           
