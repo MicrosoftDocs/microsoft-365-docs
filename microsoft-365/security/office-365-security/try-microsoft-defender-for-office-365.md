@@ -325,7 +325,7 @@ In **blocking mode**, the following reports show detections by Defender for Offi
 
     **Show data for Top malware recipients (MDO)** and **Show data for Top phish recipients (MDO)**.
 
-  - The [URL protection report](view-reports-for-mdo.md#url-protection-report)
+  - The [URL protection report](reports-defender-for-office-365.md#url-protection-report)
 
 ### Reports for audit mode
 
