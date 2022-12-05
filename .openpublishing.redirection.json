@@ -9614,6 +9614,26 @@
       "source_path": "microsoft-365/security/office-365-security/report-false-positives-and-false-negatives.md",
       "redirect_url": "/microsoft-365/security/office-365-security/submissions-outlook-report-messages",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-submit-files-to-microsoft",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/user-submission.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-user-reported-messages-files-custom-mailbox",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/enable-the-report-message-add-in.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure",
+      "redirect_document_id": true
+    },
    ]
   }
