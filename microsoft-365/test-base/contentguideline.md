@@ -80,7 +80,7 @@ Other times, your zip file may have your files or content right underneath it (f
 
 Each script needs to run unattended (no user prompts) to successfully execute in the test pipeline.
 
-> 
+> [!NOTE]
 > Scripts should return "0" on successful completion and a non-zero error code if any error occurs during execution.
 
 Each script should validate that it ran successfully. For example, the install script should check for the existence of certain binaries and/or registry keys on the system after the installer binary finishes executing. This check helps to ensure with a reasonable degree of confidence that the installation was successful.
