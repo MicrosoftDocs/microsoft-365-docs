@@ -9550,5 +9550,25 @@
       "redirect_url": "/microsoft-365/security/office-365-security/reports-email-security",
       "redirect_document_id": true
     },
+    {
+      "source_path": "microsoft-365/security/office-365-security/safe-attachments.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mdo-for-spo-odb-and-teams.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-safe-attachments-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-policies-configure",
+      "redirect_document_id": true
+    }
    ]
   }

@@ -183,7 +183,7 @@ For detailed instructions for configuring anti-spam policies, see [Configure ant
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
-Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments.md) and [Safe Links](safe-links.md) policies.
+Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments-about.md) and [Safe Links](safe-links.md) policies.
 
 ### Safe Attachments policies in Microsoft Defender for Office 365
 
@@ -225,8 +225,8 @@ For more information about the recommended settings for Safe Attachments, see .[
 
 For detailed instructions for configuring Safe Attachments policies and global settings for Safe Attachments, see the following topics:
 
-- [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
-- [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)
+- [Set up Safe Attachments policies in Microsoft Defender for Office 365](safe-attachments-policies-configure.md)
+- [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-configure.md)
 - [Safe Documents in Microsoft 365 E5](safe-docs.md)
 
 ### Safe Links policies in Microsoft Defender for Office 365
