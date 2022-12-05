@@ -55,7 +55,16 @@ For example, if your actual data looks like this and uses tab delimited (.tsv) f
 
 Then your sample file must have the same column headers, but use synthetic values for the rows, like this
 
-![image showing a tab separated table with four columns and three rows of synthetic representative data](../media/sit-edm-tsv-sample-file.png)
+
+|FirstName |LastName  |PatientNumber  |CreditCardNumber  |
+|---------|---------|---------|---------|
+|Eric     |Solomon         |987-65-4321        |9000000000000000         |
+|Lisa  |Taylor         |123-45-6789         |500000000000000         |
+|Andre    |Lawson        |234-56-7890         | 200000000000000        |
+
+
+<!--
+![image showing a tab separated table with four columns and three rows of synthetic representative data](../media/sit-edm-tsv-sample-file.png)-->
 
 > [!TIP]
 > In the new experience, you choose between uploading the sample file or entering the sample file values manually. Either way, we recommend creating the sample file.

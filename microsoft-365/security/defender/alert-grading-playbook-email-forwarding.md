@@ -43,7 +43,7 @@ The results of using this playbook are:
 
 - You have identified the alerts associated with auto-forwarded emails as malicious (TP) or benign (FP) activities.
 
-  If malicious, you have [stopped email auto-forwarding](../office-365-security/external-email-forwarding.md) for the affected mailboxes.
+  If malicious, you have [stopped email auto-forwarding](../office-365-security/outbound-spam-policies-external-email-forwarding.md) for the affected mailboxes.
 
 - You have taken the necessary action if emails have been forwarded to a malicious email address.
 
