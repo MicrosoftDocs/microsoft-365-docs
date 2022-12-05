@@ -31,7 +31,7 @@ ms.service: microsoft-365-security
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365-whats-new.md). If you're a home user looking for information about attachment scanning in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Attachments is a feature in [Microsoft Defender for Office 365](defender-for-office-365-whats-new.md) that uses a virtual environment to check attachments in inbound email messages after they've been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md), but before delivery to recipients. For more information, see [Safe Attachments in Microsoft Defender for Office 365](safe-attachments.md).
+Safe Attachments is a feature in [Microsoft Defender for Office 365](defender-for-office-365-whats-new.md) that uses a virtual environment to check attachments in inbound email messages after they've been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md), but before delivery to recipients. For more information, see [Safe Attachments in Microsoft Defender for Office 365](safe-attachments-about.md).
 
 Although there's no default Safe Attachments policy, the **Built-in protection** preset security policy provides Safe Attachments protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or custom Safe Attachments policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also use the procedures in this article to create Safe Attachments policies that apply to specific users, group, or domains.
 
@@ -51,7 +51,7 @@ The difference between these two elements isn't obvious when you manage Safe Att
 In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately. For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) section later in this article.
 
 > [!NOTE]
-> In the global settings area of Safe Attachments settings, you configure features that are not dependent on Safe Attachments policies. For instructions see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) and [Safe Documents in Microsoft 365 E5](safe-docs.md).
+> In the global settings area of Safe Attachments settings, you configure features that are not dependent on Safe Attachments policies. For instructions see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-configure.md) and [Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md).
 
 ## What do you need to know before you begin?
 

@@ -175,23 +175,23 @@
        - name: Safe Attachments in Defender for Office 365
          items:
          - name: Safe Attachments in Defender for Office 365
-           href: safe-attachments.md
+           href: safe-attachments-about.md
          - name: Set up Safe Attachments policies in Defender for Office 365
-           href: set-up-safe-attachments-policies.md
+           href: safe-attachments-policies-configure.md
          - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
-           href: mdo-for-spo-odb-and-teams.md
+           href: safe-attachments-for-spo-odfb-teams-about.md
          - name: Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
-           href: turn-on-mdo-for-spo-odb-and-teams.md
+           href: safe-attachments-for-spo-odfb-teams-configure.md
          - name: Safe Documents in A5 or E5 Security
-           href: safe-docs.md
+           href: safe-documents-in-e5-plus-security-about.md
        - name: Safe Links in Defender for Office 365
          items:
          - name: Safe Links in Defender for Office 365
-           href: safe-links.md
+           href: safe-links-about.md
          - name: Set up Safe Links policies in Defender for Office 365
-           href: set-up-safe-links-policies.md
+           href: safe-links-policies-configure.md
          - name: Configure global settings for Safe Links in Defender for Office 365
-           href: configure-global-settings-for-safe-links.md
+           href: safe-links-policies-global-settings-configure.md
        - name: Zero-hour Auto Purge (ZAP)
          items:
          - name: Zero-hour auto purge - protection against spam and malware
