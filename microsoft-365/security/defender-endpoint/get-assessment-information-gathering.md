@@ -92,7 +92,6 @@ Property (ID)|Data type|Description
 :---|:---|:---
 |Export files|String[array]|A list of download URLs for files holding the current snapshot of the organization.
 |GeneratedTime|DateTime|The time the export was generated.
-|
 
 ### 1.6 Examples
 
