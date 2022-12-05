@@ -5955,12 +5955,17 @@
       "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint",
       "redirect_document_id": false
     },
-	{
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/data-retention-settings.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/mac-sysext-preview.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac",
       "redirect_document_id": false
     },
-		{
+	{
       "source_path": "microsoft-365/security/defender-endpoint/updates.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/manage-gradual-rollout",
       "redirect_document_id": false
