@@ -16,52 +16,54 @@ keywords:
 
 # Purchase apps for a managed environment
 
-There are a variety of apps that you can use with Microsoft Intune. Some apps are free for your workforce to use, while other apps require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook requires both a license and an account to use the app. Within the Intune console, you can select store apps and add them to Intune. Based on the supported integration with Intune, you can then configure these apps so that your workforce can easily set them up based on your unique company requirements and also set up app protection policies for the apps. 
+There are a variety of apps that you can use with Microsoft Intune. Some apps are free for your workforce to use, while other apps require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook requires both a license and an account to use the app. Within the Intune console, you can select store apps and freely add them to Intune. Based on the supported integration with Intune, you can then configure these apps so that your workforce can easily set them up based on your unique company requirements and also set up app protection policies for each app.
+
+> [!NOTE]
+> You can use Intune policies to block end-users from accessing the app store on their devices. You can also remove the limited purchases restriction by allowing end-users to add new accounts to their device. Doing so will enable end users to have the ability to purchase store apps.
 
 ## Apps available for purchase
 
 Common types of apps purchases:
-- Individual store apps
-- Volume purchased apps
-- Partner productivity apps
-- Partner UEM apps
-- In-app purchases
+- [Individual store apps](#individual-store-apps)
+- [Volume purchased apps](#volume-purchased-apps)
+- [Partner productivity apps](#partner-productivity-apps)
+- [Partner UEM apps](#partner-uem-apps)
+- [In-app purchases](#in-app-purchases)
 
 ### Individual store apps
 
-Intune integrates directly with the different supported platform stores. Within Intune, you can find and select free apps for Windows, iOS, and Android. Intune displays the available store apps directly in the Intune console. You can select each app by platform and choose the users that will receive the app.
+Intune integrates directly with the different supported platform stores. Within Intune, you can find and select free store apps for Windows, iOS, and Android. Intune displays the available store apps directly in the Intune console. When [adding an app to Intune](../apps-add-apps.md), you can select each app by platform and choose the users and devices that will receive the app.
+
+> [!NOTE]
+> Intune only shows free store apps. Apps that require a payment method will not be displayed as a store app from within Intune.
 
 ### Volume purchased apps
 
 Each device platform has a method to purchase apps for your organization in bulk:
-- Apple provides the Apple Business Manager
-- Google provides Managed Google Play
-- Microsoft provide the Microsoft Store for Business
-
-> [!NOTE]
-> Custom apps
+- Apple provides the [Apple Business Manager](../apps-purchase-volume.md#apple-business-manager)
+- Google provides[Managed Google Play](../apps-purchase-volume.md#managed-google-play)
+- Microsoft provide the [Microsoft Store for Business](../apps-purchase-volume.md#microsoft-store-for-business)
 
 ### Partner productivity apps
 
 There are several [Intune partner productivity apps](/mem/intune/apps/apps-supported-intune-apps.md#partner-productivity-apps) that support Intune configuration and protection. These apps are available from a variety of sources and often provide support for both iOS/iPadOS and Android devices.
 
 Areas of support include the following:
-- Core Intune app protection policy settings
-- Advanced Intune app protection policy settings
-- App configuration policy settings
+- [Core Intune app protection policy settings](/mem/intune/apps/apps-supported-intune-apps.md#core-app-settings)
+- [Advanced Intune app protection policy and app configuration policy settings](/mem/intune/apps/apps-supported-intune-apps.md#advanced-app-settings)
 
 ### Partner UEM apps
 
-You can enable coexistence between apps that support Intune App Protection Policies and partner unified endpoint management (UEM) solutions. These apps support the core Intune App Protection Policy settings. Apps are also capable of supporting advanced App Protection Policy and App Configuration Policy settings. For more information, contact the app vendor.
+In addition to standard store apps, you can add specific [partner UEM apps](/mem/intune/apps/apps-supported-intune-apps.md#partner-uem-apps) to Intune. These apps are also available in either the Google Play Store or the Apple App Store. However, these apps are  capable of supporting advanced app protection policy and app configuration policy settings.
 
 ### In-app purchases
 
-Many apps offer core functionality for free, however may provide additional capabilities that you can purchase from within the app. Purchase additional app functionality is called "in-app purchase". 
+Many apps offer core functionality for free, however there are those apps that provide additional capabilities that you can purchase from within the app. Purchase additional app functionality is called "in-app purchase". You can choose to block in-app purchases specifically for iOS devices using device restriction settings. On Android devices, you can allow access to all apps in Google Play store remove the limited purchases restriction by allowing users to add new accounts to the device. However, doing so will enable end users to have the ability to purchase apps from the Google Play store using personal accounts, as well as conduct in-app purchases. 
 
 ## Microsoft apps that support Intune
 
 You and your workforce may use Microsoft Office, OneDrive, Excel, and Outlook on a regular basis, which are all supported by Microsoft Intune. However, there are dozens of other Microsoft apps for Android and iOS/iPadOS that support a variety of app capabilities supported by Intune. These capabilities include the following:
-- Core App Protection Policy settings
+- Core app protection policy settings
 - App configuration
 - Org allowed accounts (iOS, Android)
 - Sync policy managed app data with native apps (iOS, Android)
