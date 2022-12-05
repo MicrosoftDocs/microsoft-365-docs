@@ -42,7 +42,7 @@ You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messa
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:
   - [Admin submissions](admin-submission.md) generates an automatic response saying that the message is part of a phishing simulation campaign and isn't a real threat. Alerts and AIR will not be triggered. The admin submissions experience will show these messages as a simulated threat.
-  - When a user reports a phishing simulation message using the [Report Message or the Report Phishing add-ins](enable-the-report-message-add-in.md), the system will not generate an alert, investigation, or incident. The links or files will not be detonated, but the message will appear on the **User reported messages** tab of the **Submissions** page.
+  - When a user reports a phishing simulation message using the [Report Message or the Report Phishing add-ins](submissions-users-report-message-add-in-configure.md), the system will not generate an alert, investigation, or incident. The links or files will not be detonated, but the message will appear on the **User reported messages** tab of the **Submissions** page.
   - [Safe Links in Defender for Office 365](safe-links.md) doesn't block or detonate the specifically identified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
   - [Safe Attachments in Defender for Office 365](safe-attachments.md) doesn't detonate attachments in these messages.
 

@@ -88,7 +88,7 @@ Watch this video to learn more: [Protect against malicious links with Safe Links
 
 Defender for Office 365 enables users to report messages to their security teams and allows admins to submit messages to Microsoft for analysis.
 
-- Deploy the [Report Message add-in or the Report Phishing add-in](enable-the-report-message-add-in.md).
+- Deploy the [Report Message add-in or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md).
 - Establish a workflow to [Report false positives and false negatives](submissions-outlook-report-messages.md).
 - Use the [Submissions portal](admin-submission.md).
 
@@ -194,7 +194,7 @@ Evaluation policies ensure no action is taken on email that's detected by Defend
 
 Defender for Office 365 enables users to report messages to their security teams and allows admins to submit messages to Microsoft for analysis.
 
-- Deploy the [Report Message add-in or the Report Phishing add-in](enable-the-report-message-add-in.md).
+- Deploy the [Report Message add-in or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md).
 - Establish a workflow to [Report false positives and false negatives](submissions-outlook-report-messages.md).
 - Use the [Submissions portal](admin-submission.md).
 

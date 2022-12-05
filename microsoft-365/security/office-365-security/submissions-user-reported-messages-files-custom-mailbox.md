@@ -33,7 +33,7 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can direct ma
 
 User reported message settings and the user submissions mailbox work with the following message reporting options:
 
-- [The Report Message add-in](enable-the-report-message-add-in.md)
+- [The Report Message add-in](submissions-users-report-message-add-in-configure.md)
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
 - [Third-party reporting tools](#third-party-reporting-tools-options)
 
