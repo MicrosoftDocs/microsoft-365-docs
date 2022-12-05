@@ -37,7 +37,7 @@ User reported message settings and the reporting mailbox work with the following
 - [The Microsoft Report Message or Report Phishing add-ins](enable-the-report-message-add-in.md)
 - [Third-party reporting tools](#options-for-third-party-reporting-tools)
 
-Delivering user reported messages to a reporting mailbox instead of directly to Microsoft allows admins to selectively and manually report messages to Microsoft from the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. For more information, see [Admin submission](admin-submission.md).
+Delivering user reported messages to a reporting mailbox instead of directly to Microsoft allows admins to selectively and manually report messages to Microsoft from the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. For more information, see [Admin submission](admin-submission.md).
 
 > [!NOTE]
 > The _ReportJunkEmailEnabled_ parameter on the [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) cmdlet no longer controls whether user message reporting is enabled or disabled. User reporting of messages is now controlled on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission> as described in this article.
@@ -95,16 +95,18 @@ After you've verified that the reporting mailbox meets all of these requirements
 
 2. On the **User reported** page, what you see and can configure is determined entirely by the toggle at the top of the page:
 
-   - **On** ![Toggle on.](../../media/scc-toggle-on.png): The Microsoft integrated reporting experience is turned on, so the following configurations are supported:
-     - Users in your organization use the the built-in **Report** button in Outlook on the web or the Microsoft Report Message or Report Phishing add-ins in virtually all Outlook platforms to report messages.
-     - You configure user reported messages to go to the reporting mailbox, to Microsoft, or to both.
-     - You decide whether users can report messages from quarantine.
+   - **On** ![Toggle on.](../../media/scc-toggle-on.png): The following configurations are supported:
+     - Users in your organization can see and use the the built-in **Report** button in Outlook on the web or the Microsoft Report Message or Report Phishing add-ins in virtually all Outlook platforms to report messages.
+     - You can configure user reported messages to go to the reporting mailbox, to Microsoft, or to both.
+     - You decide whether users can see pre and post reporting popups in outlook while reporting. 
+     - You decide how much to customize the feedback email sent to users from mark & notify.
+     - You decide whether users can report messages from quarantine or not. 
 
        You choose this configuration by selecting **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options** in the **Outlook report button configuration** section. The available configuration options from this selection are explained in the [Options for Microsoft reporting tools](#options-for-microsoft-reporting-tools) section in this article.
 
      - Users in your organization use a third-party, non-Microsoft add-in to report messages.
-     - You identify the reporting mailbox to receive user reported messages.
-     - You decide whether users can report messages from quarantine.
+     - You decide whether Microsoft can read end user report from the third-party reporting mailbox or not.
+     - You decide whether users can report messages from quarantine to third-party reporting mailbox or not.
 
        You choose this configuration by selecting **Use a non-Microsoft add-in button** in the **Outlook report button configuration** section. The available configuration options from this selection are explained in the [Options for third-party reporting tools](#options-for-third-party-reporting-tools) section in this article.
 
@@ -122,7 +124,7 @@ When the toggle is **On** ![Toggle on.](../../media/scc-toggle-on.png) and you'v
 
     In the **Add a mailbox to send reported messages to** box that appears, enter the email address of an existing Exchange Online mailbox to use as the reporting mailbox that holds user reported messages from Microsoft reporting tools. Distribution groups are not allowed. 
 
-    Messages don't go to Microsoft for analysis unless an admin manually submits the message from the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>.
+    Messages don't go to Microsoft for analysis unless an admin manually submits the message from the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>.
 
   - **Microsoft and my reporting mailbox**: User reported messages go to Microsoft for analysis and to the reporting mailbox for an admin or security operations team to analyze.
 
