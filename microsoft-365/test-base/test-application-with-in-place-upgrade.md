@@ -49,7 +49,7 @@ Click on the ellipse icon beside the test script should pop up function menu wit
 #### Step 4: Define test flow
 Click on the flow driven test panel to define test flow.
  > [!div class="mx-imgBorder"]  
- > ![Screenshot shows package scripts open flow driven](Media/testwithupgrade05.png)
+ > ![Screenshot shows package scripts open flow driven](Media/testwithupgrade05.png)  
  > Drag each row to reorder the scripts, opting in or out the check boxes to define if you’d like to have the script run before the upgrade, after the upgrade or both.
  > [!div class="mx-imgBorder"]  
  > ![Screenshot shows flow driven test](Media/testwithupgrade06.png)
@@ -57,7 +57,7 @@ Click on the flow driven test panel to define test flow.
 #### Step 5: Review the test plan
 Check the automatically generated In-place Upgrade Test Flow plan to see if the sequence of the test script execution match your expectation. 
  > [!div class="mx-imgBorder"]  
- > ![Screenshot shows test flow](Media/testwithupgrade07.png)
+ > ![Screenshot shows test flow](Media/testwithupgrade07.png)    
  > Take above flow definition as example, the app will be installed on base line OS before upgrade, followed by the regression test and stayed install for the upgrade to happen, once upgraded, the regression test will be executed as the 3rd step and finally verify the uninstall only after the upgrade on the Target OS as defined.
 
 #### Step 6: Define baseline and target OS
@@ -94,8 +94,8 @@ You should be able to review the test detail to get a comprehensive assessment o
 #### Step 1: Script execution tab
 Click on the Script execution tab, user should be able to see the script execution result side by side for the application’s test scripts before (on the baseline OS) and after the upgrade (on the target OS). 
  > [!div class="mx-imgBorder"]  
- > ![Screenshot shows test results script execution](Media/testwithupgrade13.png)
- > If a script is scheduled to be run both pre and post upgrade, the overall script status should be passed only if both pre and post upgrade script executions are successful.
+ > ![Screenshot shows test results script execution](Media/testwithupgrade13.png)  
+ > If a script is scheduled to be run both pre and post upgrade, the overall script status should be passed only if both pre and post upgrade script executions are successful.  
  > **Re-run test** button should be enabled to allow user to rerun the test as needed in case of infrastructure failure.
 
 #### Step 2: Memory utilization tab
