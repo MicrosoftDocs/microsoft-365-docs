@@ -81,7 +81,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - Allow up to 6 hours for a new or updated policy to be applied.
 
-- [New features are continually being added to Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md). As new features are added, you may need to make adjustments to your existing Safe Links policies.
+- [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365-whats-new.md). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
 ## Use the Microsoft 365 Defender portal to create Safe Links policies
 
@@ -545,7 +545,7 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 For detailed syntax and parameter information, see [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-To verify that Safe Links is scanning messages, check the available Microsoft Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](view-reports-for-mdo.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer.md).
+To verify that Safe Links is scanning messages, check the available Microsoft Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer.md).
 
 ## How do you know these procedures worked?
 
