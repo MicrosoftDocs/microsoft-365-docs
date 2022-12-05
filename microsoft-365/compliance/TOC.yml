@@ -1058,6 +1058,8 @@
           href: apply-sensitivity-label-automatically.md
         - name: Use sensitivity labels with teams, groups, and sites
           href: sensitivity-labels-teams-groups-sites.md
+        - name: Use sensitivity labels to protect meetings
+          href: sensitivity-labels-meetings.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Configure a default sensitivity label for SharePoint libraries
@@ -1536,9 +1538,9 @@
           items: 
             - name: Learn about collections
               href: collections-overview.md
-            - name: Create a draft collection
+            - name: Create a collection estimate
               href: create-draft-collection.md
-            - name: Commit a draft collection to a review set
+            - name: Commit a collection estimate to a review set
               href: commit-draft-collection.md
             - name: Collection statistics and reports
               href: collection-statistics-reports.md        

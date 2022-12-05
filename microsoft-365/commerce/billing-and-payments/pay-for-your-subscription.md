@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
@@ -27,7 +27,7 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 11/08/2022
+ms.date: 11/21/2022
 ---
 
 # Payment options for your Microsoft business subscription
@@ -68,15 +68,13 @@ The Microsoft 365 admin center supports two alternate payment options for custom
 - NetBanking (Internet Banking) provides customers with access to banking services on an online platform.
 
 > [!IMPORTANT]
-> UPI and NetBanking are only supported for one-time transactions.
+> UPI and NetBanking are only supported for one-time transactions for existing customers only.
 
 #### How do I make a payment with UPI or NetBanking?
 
-1. If you're a returning customer, when you make a payment, select **UPI / NetBanking** from the **Payment method** drop-down list, then select M**ake payment**. Continue to step 4.
-2. For new customers, when you make your first payment, select **Add payment method**.
-3. Select **UPI / NetBanking**, then select **Make payment**.
-4. You're redirected to the payment partner, BillDesk, where you choose UPI or NetBanking for your payment method.
-5. Follow the instructions in BillDesk to complete the transaction.
+1. If you're a returning customer, when you make a payment, select **UPI / NetBanking** from the **Payment method** drop-down list, then select **Make payment**.
+2. You're redirected to the payment partner, BillDesk, where you choose UPI or NetBanking for your payment method.
+3. Follow the instructions in BillDesk to complete the transaction.
 
 After you submit the payment, allow time for the payment to appear in the admin center.
 
