@@ -5,10 +5,20 @@
 ### [Trial user guide: Microsoft Defender for Endpoint](defender-endpoint-trial-user-guide.md)
 ### [Compare Microsoft endpoint security plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
+### [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
 ### [What's new in Microsoft Defender for Endpoint on Windows](windows-whatsnew.md)
+### [Preview features](preview.md)
+### [Data storage and privacy](data-storage-privacy.md)
+### [Overview of Microsoft Defender Security Center](use.md)
+### [Defender for Endpoint Plan 1]()
+#### [Overview](defender-endpoint-plan-1.md)
+#### [Setup and configuration](mde-p1-setup-configuration.md)
+#### [Get started](mde-plan1-getting-started.md)
+#### [Maintenance and operations](mde-p1-maintenance-operations.md)
+### [Microsoft Defender for Endpoint for US Government customers](gov.md)
 ### [Microsoft Defender for Endpoint on non-Windows platforms]()
-#### [Microsoft Defender for Endpoint on non-Windows platforms overview](non-windows.md)
+#### [Overview of Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
 #### [Microsoft Defender for Endpoint on macOS]()
 ##### [Overview of Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 ##### [What's New](mac-whatsnew.md)
@@ -23,6 +33,7 @@
 ##### [Microsoft Defender for Endpoint on Android]()
 ###### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 ###### [What's new](android-whatsnew.md)
+### [Antivirus solution compatibility with Defender for Endpoint](defender-compatibility.md)
 
 ## [Evaluate capabilities]()
 ### [Evaluate capabilities overview](evaluation-lab.md)
@@ -51,6 +62,26 @@
 #### [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
+## [Migration guides]()
+### [Migration guides overview](migration-guides.md)
+### [Migrate Defender for Endpoint servers to Defender for Cloud](migrating-mde-server-to-cloud.md)
+### [Move to Defender for Endpoint]()
+#### [Overview](switch-to-mde-overview.md)
+#### [Phase 1: Prepare](switch-to-mde-phase-1.md)
+#### [Phase 2: Setup](switch-to-mde-phase-2.md)
+#### [Phase 3: Onboard](switch-to-mde-phase-3.md)
+#### [Troubleshooting](switch-to-mde-troubleshooting.md)
+### [Manage Defender for Endpoint after migration]()
+#### [Overview](manage-mde-post-migration.md)
+#### [Use Intune (recommended)](manage-mde-post-migration-intune.md)
+#### [Use Configuration Manager](manage-mde-post-migration-configuration-manager.md)
+#### [Use Group Policy](manage-mde-post-migration-group-policy-objects.md)
+#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
+#### [Updating MMA on Windows devices](update-agent-mma-windows.md)
+#### [Server migration scenarios]()
+##### [Overview](server-migration.md)
+##### [Migrating servers from Microsoft Monitoring Agent to the unified solution](application-deployment-via-mecm.md)
+
 ## [Onboard and configure devices]()
 ### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
 ### [Onboarding Windows Client]()
@@ -65,11 +96,12 @@
 
 ### [Onboarding Windows Server]()
 #### [Onboarding Windows Server overview](onboard-windows-server.md)
+#### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
 #### [Onboard Windows devices using Configuration Manager](configure-endpoints-sccm.md)
 #### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 #### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-#### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
+
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
@@ -106,6 +138,8 @@
 ### [Run simulated attacks on devices](attack-simulations.md)
 ### [Onboard devices without Internet access](onboard-offline-machines.md)
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
+### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
+### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Configure Microsoft Defender for Endpoint on macOS]()
 #### [Configure and validate exclusions](mac-exclusions.md)
@@ -126,6 +160,12 @@
 #### [Detect and block Potentially Unwanted Applications](linux-pua.md)
 #### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md)
 #### [Schedule antivirus scan in Defender for Endpoint on Linux](schedule-antivirus-scan-in-mde.md)
+#### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
+
+### [Configure Mobile Threat Defense]()
+#### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
+#### [Configure Microsoft Defender for Endpoint risk signals using app protection policy](android-configure-mam.md)
+#### [Configure Microsoft Defender for Endpoint iOS features](ios-configure-features.md)
 
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
@@ -161,6 +201,8 @@
 ##### [Offboarding devices](offboard-machines.md)
 ##### [Ensure your devices are configured properly](configure-machines.md)
 ##### [Monitor and increase device onboarding](configure-machines-onboarding.md)
+
+#### [Configure Microsoft Defender Security Center time zone settings](time-settings.md)
 
 ## [Detect threats and protect endpoints]()
 ### [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
@@ -415,6 +457,10 @@
 ### [Next generation protection]()
 #### [Run and customize scheduled and on-demand scans](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
+## [Endpoint Attack Notifications]()
+### [Overview](endpoint-attack-notifications.md)
+### [Experts on Demand](experts-on-demand.md)
+
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
 ### [Configure integration with other Microsoft solutions]()
@@ -637,11 +683,14 @@
 ### [Access the Microsoft Defender for Endpoint Community Center](community.md)
 
 ### [Helpful resources](helpful-resources.md)
+### [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md)
+### [Resources for Microsoft Defender for Endpoint on Linux](linux-resources.md)
 
 ### [Privacy for Microsoft Defender for Endpoint on macOS](mac-privacy.md)
 ### [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
-### [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md)
-### [Resources for Microsoft Defender for Endpoint on Linux](linux-resources.md)
+### [Privacy for Microsoft Defender for Endpoint on Android](android-privacy.md)
+### [Privacy for Microsoft Defender for Endpoint on ios](ios-privacy.md)
+
 
 ## [Troubleshoot]()
 ### [Troubleshoot onboarding issues]()
@@ -671,6 +720,10 @@
 #### [Troubleshoot cloud connectivity](troubleshoot-cloud-connect-mdemac.md)
 #### [Troubleshoot kernel extension issues](mac-support-kext.md)
 #### [Troubleshoot license issues](mac-support-license.md)
+
+### [Troubleshoot Mobile Threat Defense]()
+#### [Troubleshoot Microsoft Defender for Endpoint on Android issues](android-support-signin.md)
+#### [Troubleshoot Microsoft Defender for Endpoint on iOS issues](ios-troubleshoot.md)
 
 ### [Troubleshoot sensor health issues using Client Analyzer]()
 #### [Client analyzer overview](overview-client-analyzer.md)
