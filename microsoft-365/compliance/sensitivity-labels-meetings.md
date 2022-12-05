@@ -162,9 +162,9 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
     
     For more information about the settings that you can configure for Teams meetings and chat:
     
-    - Explanation of the settings and how they interact with other configuration methods for Teams: See the Teams documentation, and [Use Teams meeting templates, sensitivity labels, and admin policies together for sensitive meetings](/microsoftteams/meeting-templates-sensitivity-labels-policies)
+    - Use the Teams documentation for an explanation of each setting. For information about how the settings interact with other configuration methods for Teams, see [Use Teams meeting templates, sensitivity labels, and admin policies together for sensitive meetings](/microsoftteams/meeting-templates-sensitivity-labels-policies).
     
-    - Important information about the setting that [prevents copying chat to the clipboard](#prevent-copying-chat-to-the-clipboard-label-setting)
+    - Specific to the option to prevent copy in chat, see the next section on this page, [Prevent copying chat to the clipboard label setting](#prevent-copying-chat-to-the-clipboard-label-setting).
 
 4. Complete the label configuration and then create or configure other sensitivity labels if you need different settings for other labels.
 
