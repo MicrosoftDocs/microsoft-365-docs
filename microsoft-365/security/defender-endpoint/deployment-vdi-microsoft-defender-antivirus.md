@@ -5,6 +5,7 @@ keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, vi
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 12/05/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
