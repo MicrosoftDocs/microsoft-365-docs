@@ -45,7 +45,7 @@ You can use outbound spam filter policies to control automatic forwarding to ext
 - **On**: Automatic external forwarding is allowed and not restricted.
 - **Off**: Automatic external forwarding is disabled and will result in a non-delivery report (also known as an NDR or bounce message) to the sender.
 
-For instructions on how to configure these settings, see [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md).
+For instructions on how to configure these settings, see [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md).
 
 > [!NOTE]
 >
@@ -90,6 +90,6 @@ The following information is required to create the mail flow rule in the Exchan
 
 ## Blocked email forwarding messages
 
-When a message is detected as automatically forwarded, and the [outbound spam filter](configure-the-outbound-spam-policy.md) policy *blocks* that activity, the message is returned to the sender in an NDR that contains the following information:
+When a message is detected as automatically forwarded, and the [outbound spam filter](outbound-spam-policies-configure.md) policy *blocks* that activity, the message is returned to the sender in an NDR that contains the following information:
 
 `5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`

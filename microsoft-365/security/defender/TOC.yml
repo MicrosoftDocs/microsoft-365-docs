@@ -410,12 +410,30 @@
          href: integrate-microsoft-365-defender-secops-tasks.md
     - name: Reference
       items: 
-        - name: Permissions & settings
-          items: 
-            - name: Manage access
+      - name: Manage roles and permissions
+        items: 
+            - name: Manage access to Microsoft 365 Defender
               href: m365d-permissions.md
             - name: Custom roles in role-based access 
               href: custom-roles.md
+            - name: Manage permissions with Microsoft 365 Defender RBAC
+              items: 
+              - name: Overview
+                href: manage-rbac.md
+              - name: Create custom roles 
+                href: create-custom-rbac-roles.md
+              - name: Import roles
+                href: Import-rbac-roles.md
+              - name: Activate Microsoft 365 Defender RBAC 
+                href: activate-defender-rbac.md
+              - name: Edit and delete roles
+                href: edit-delete-rbac-roles.md
+              - name: Map RBAC permission
+                href: compare-rbac-roles.md
+              - name: About RBAC custom permission
+                href: custom-permissions-details.md
+      - name: Portal settings
+        items: 
             - name: Set time zone
               href: m365d-time-zone.md
             - name: View device profiles
@@ -430,8 +448,8 @@
               items: 
                - name: ServiceNow integration overview
                  href: ./tickets.md
-        - name: Microsoft 365 Defender APIs
-          items: 
+      - name: Microsoft 365 Defender APIs
+        items: 
             - name: Overview of Microsoft 365 Defender APIs
               href: api-overview.md
             - name: Supported Microsoft 365 Defender APIs
@@ -496,8 +514,8 @@
                  href: ../defender-endpoint/professional-services.md           
             - name: Understand threat intelligence concepts
               href: ../defender-endpoint/threat-indicator-concepts.md 
-        - name: Security intelligence
-          items: 
+      - name: Security intelligence
+        items: 
           - name: Safety Scanner download
             href: ../intelligence/safety-scanner-download.md
           - name: Understand malware & other threats
