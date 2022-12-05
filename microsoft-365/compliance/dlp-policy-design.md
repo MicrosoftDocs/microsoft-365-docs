@@ -72,12 +72,12 @@ This example doesn't cover all the configuration points of a DLP policy, it woul
 
 ### Complex rule design
 
-The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP policy. The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. <!--If you want to build rules that use boolean logic and nested groups, you must enable the **New DLP rule builder** in **Microsoft Purview compliance console** > **Settings**.-->
+The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP policy. The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. 
 
 > [!IMPORTANT]
-<!-->> - Once the **New DLP rule builder** UI is enabled, **Exceptions** are replaced with a NOT condition in a nested group in the rule. All existing existing **Exceptions** will be displayed as NOT inside of the **Conditions**.-->
+> - All existing **Exceptions** are replaced with a NOT condition in a nested group inside of the **Conditions**.
 > - You need to create groups in order to use multiple operators as shown in the video.
-<!-->> - If you want to turn the **New DLP rule builder** off and revert to the classic rule builder experience, you must delete all policies that were *created* using the **New DLP rule builder** first.-->  
+ 
 
 > [!IMPORTANT]
 > When an action in Office desktop client apps, (Word, Outlook, Excel, and PowerPoint) matches a policy that uses complex conditions, the user will only see policy tips for rules that use the **Content contains sensitive information** condition.
