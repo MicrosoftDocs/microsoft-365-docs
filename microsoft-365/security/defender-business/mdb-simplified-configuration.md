@@ -7,16 +7,17 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # The simplified configuration process in Microsoft Defender for Business
@@ -32,7 +33,6 @@ To onboard devices and configure security settings for your company's devices, y
 
 1. [Review your setup and configuration options](#review-your-setup-and-configuration-options).
 2. [Proceed to your next steps](#next-steps).
-
 
 ## Review your setup and configuration options
 

@@ -5,8 +5,8 @@ keywords: antivirus, spam, phish, file, alert, Microsoft Defender for Endpoint, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.date: 06/15/2021
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,9 +16,9 @@ manager: dansimp
 localization_priority: Normal
 audience: ITPro
 ms.topic: how-to
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: FPFN
 ---
 
@@ -99,6 +99,7 @@ You can also submit a file or file hash directly from the list of alerts on the 
 
 ## Related information
 
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
 - [View and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md)

@@ -11,12 +11,13 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
 - MET150
-description: "Declare records by using retention labels."
+description: "To declare documents and emails as records, use Microsoft 365 retention labels that mark items as a record or a regulatory record."
 ---
 
 # Declare records by using retention labels
@@ -28,6 +29,8 @@ To declare documents and emails as [records](records-management.md#records), you
 If you're not sure whether to use a record or a regulatory record, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked). If you need to use regulatory records, you must first run a PowerShell command, as described in the next section.
 
 You can then either publish those labels in a retention label policy so that users and administrators can apply them to content, or for labels that mark items as records (but not regulatory records), auto-apply those labels to content that you want to declare a record.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How to display the option to mark content as a regulatory record
 
@@ -91,7 +94,7 @@ For SharePoint items:
 For Exchange items:
 - From **Exchange mailbox activities**, select **Labeled message as a record**. This audit event is for retention labels that mark items as records or regulatory records.
 
-For more information about searching for these events, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+For more information about searching for these events, see [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## Next steps
 

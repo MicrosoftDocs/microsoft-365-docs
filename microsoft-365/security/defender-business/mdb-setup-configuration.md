@@ -7,16 +7,18 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
- - SMB
- - M365-security-compliance
- - m365solution-mdb-setup
+- SMB
+- m365-security
+- m365solution-mdb-setup
+- highpri
+- tier1
 ---
 
 # Set up and configure Microsoft Defender for Business
@@ -27,7 +29,7 @@ Defender for Business provides a streamlined setup and configuration experience,
 > If you used the [setup wizard](mdb-use-wizard.md), then you've already completed several steps of your basic setup process. In this case, you can:
 > - [Onboard more devices](mdb-onboard-devices.md)
 > - [Configure your security policies and settings](mdb-configure-security-settings.md)
-> - [Visit your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
+> - [Visit your Microsoft Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md)
 
 
 ## The setup and configuration process

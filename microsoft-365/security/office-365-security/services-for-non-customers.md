@@ -14,10 +14,10 @@ search.appverid:
   - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 description: To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Services for non-customers sending mail to Microsoft 365
@@ -41,7 +41,7 @@ Microsoft offers several support options for people having trouble sending mail 
 
 - Follow the instructions in any non-delivery report you receive.
 
-- Check out the most common problems that non-customers encounter in [Troubleshooting mail sent to Office 365](troubleshooting-mail-sent-to-office-365.md).
+- Check out the most common problems that non-customers encounter in [Troubleshooting mail sent to Office 365](mail-flow-troubleshooting.md).
 
 - Use the [Microsoft 365 delist portal](https://sender.office.com) to submit a request to have your IP removed from the blocked sender's list.
 

@@ -4,7 +4,8 @@ ms.reviewer:
 description: This section outlines the key infrastructure requirements you must meet and important information on data access and compliance
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, defender experts notification, Targeted Attack Notification, Microsoft Defender Experts for hunting, threat hunting and analysis.
 search.product: Windows 10
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,10 +15,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+  - m365-security
   - m365initiative-defender-endpoint
+  - tier1
 ms.topic: conceptual
-ms.technology: mde
+search.appverid: met150
 ---
 
 # Before you begin using Defender Experts for Hunting

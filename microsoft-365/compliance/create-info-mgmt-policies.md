@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020
@@ -35,6 +35,8 @@ You can create an information management policy can at three different locations
 - Create a policy for a list or library.
 
 For more information, see [Introduction to information management policies](intro-to-info-mgmt-policies.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a policy for multiple content types within a site collection
 <a name="__toc261001590"> </a>

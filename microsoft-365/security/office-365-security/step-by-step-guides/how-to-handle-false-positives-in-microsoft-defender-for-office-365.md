@@ -2,8 +2,7 @@
 title: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
 description: The steps to handle legitimate email getting blocked(False Positive) by Microsoft Defender for Office 365 in order to prevent lose of business. 
 search.product: 
-search.appverid: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +13,13 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: jarogers
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # How to handle Legitimate emails getting blocked (False Positive), using Microsoft Defender for Office 365
@@ -40,7 +43,7 @@ Microsoft Defender for Office 365 helps deal with important legitimate business 
 
 ## Handling legitimate emails that are in quarantine folder of end users
 
-1. An end user receives an [email digest](/microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages?view=o365-worldwide&preserve-view=true) about quarantined messages as per the settings enabled by security admins.
+1. An end user receives an [email digest](/microsoft-365/security/office-365-security/quarantine-quarantine-notifications?view=o365-worldwide&preserve-view=true) about quarantined messages as per the settings enabled by security admins.
 2. End users can preview the messages in quarantine, block the sender, release the messages, submit those messages to Microsoft for analysis, and request release of those emails from admins.
 
 ## Handling legitimate emails in quarantine folder of an admin

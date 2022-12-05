@@ -13,12 +13,13 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-mdo-migration
+  - highpri
 ms.custom: migrationguides
 description: "Take the steps to begin migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 2: Setup
@@ -183,7 +184,7 @@ For impersonation detections, ignore the recommended Standard and Strict actions
 - **If message is detected as impersonated domain**
 - **If mailbox intelligence detects an impersonated user**
 
-Use the impersonation insight to observe the results. For more information, see [Impersonation insight in Defender for Office 365](impersonation-insight.md).
+Use the impersonation insight to observe the results. For more information, see [Impersonation insight in Defender for Office 365](anti-phishing-mdo-impersonation-insight.md).
 
 You'll tune spoofing protection (adjust allows and blocks) and turn on each impersonation protection action to quarantine or move the messages to the Junk Email folder (based on the Standard or Strict recommendations). You can observe the results and adjust their settings as necessary.
 

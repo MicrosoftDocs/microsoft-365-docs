@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
-description: Admins can learn how identify a custom mailbox (also known as a user submissions mailbox) to collect spam and phishing messages that are reported by users. Other settings complete the reporting experience for users when they report messages.
-ms.technology: mdo
-ms.prod: m365-security
+description: Admins can learn how to identify a custom mailbox (also known as a user submissions mailbox) to collect spam and phishing messages that are reported by users. Other settings complete the reporting experience for users when they report messages.
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # User reported message settings
@@ -52,7 +52,7 @@ Before you get started, you need to configure Exchange Online Protection and Def
 
   - Turn off Zero-hour auto purge (ZAP) for malware (**Protection settings** section \> **Enable zero-hour auto purge for malware** is not selected or `-ZapEnabled $false` in PowerShell).
 
-  - Turn off common attachments filtering (**Protection settings** section \> **Enable the common attachments filter** is not selected or `EnableFileFilter $false` in PowerShell).
+  - Turn off common attachments filtering (**Protection settings** section \> **Enable the common attachments filter** is not selected or `-EnableFileFilter $false` in PowerShell).
   
   For instructions, see [Create an anti-malware policy](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies).
 
@@ -62,9 +62,11 @@ Before you get started, you need to configure Exchange Online Protection and Def
 
   - Exclude the user submissions mailbox from the **Built-in protection** preset security policy. For instructions, see [Preset security policies](preset-security-policies.md).
 
-  - Create a Safe Attachments policy for the user submissions mailbox where Safe Attachments scanning, including Dynamic Delivery, is turned off  (**Settings** \> **Safe Attachments unknown malware response** section \> **Off** or `-Enable $false` in PowerShell). For instructions, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
+  - Create a Safe Attachments policy for the user submissions mailbox where Safe Attachments scanning, including Dynamic Delivery, is turned off (**Settings** \> **Safe Attachments unknown malware response** section \> **Off** or `-Enable $false` in PowerShell). For instructions, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
 
   - Create a Safe Links policy for the user submissions mailbox where Safe Links scanning in email is turned off (**URL & click protection settings** \> **On: Safe Links checks a list of known, malicious links when users click links in email** is not selected or `EnableSafeLinksForEmail $false` in PowerShell). For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
+
+- If you have data loss prevention (DLP), exclude the custom mailbox from it. For instructions, see [Creating exceptions in DLP](/microsoft-365/compliance/dlp-conditions-and-exceptions).
 
 After you've verified that the mailbox meets these requirements, use the rest of the instructions in this article to identify the user submissions mailbox and other user reported message settings.
 
@@ -105,60 +107,62 @@ The related configuration options are described in the following sections.
 
 When **Microsoft Outlook Report Message button** is **On** ![Toggle on.](../../media/scc-toggle-on.png), the following settings are available on the **User submissions** page:
 
-- **Send the reported messages to** section: Select one of the following options:
+- **Use Microsoft's integrated report experience** section:
 
-  - **Microsoft**: The user reports go directly to Microsoft for analysis. Only the metadata such as sender, recipient, reported by, and the message details from the user reports are provided to the tenant admin via the Microsoft 365 Defender portal.
+  - **Send the reported messages to** section: Select one of the following options:
 
-  - **Microsoft and my organization's mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox to use as the user submissions mailbox. Distribution groups are not allowed. User submissions go to Microsoft for analysis and to the user submissions mailbox for an admin or security operations team to analyze.
+    - **Microsoft (Recommended)**: The user reports go directly to Microsoft for analysis. Only the metadata such as sender, recipient, reported by, and the message details from the user reports are provided to the tenant admin via the Microsoft 365 Defender portal.
 
-  - **My organization's mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions go only to the user submissions mailbox for an admin or the security operations team to analyze. Messages don't go to Microsoft for analysis unless an admin manually submits the messages.
+    - **Microsoft and my organization's mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox to use as the user submissions mailbox. Distribution groups are not allowed. User submissions go to Microsoft for analysis and to the user submissions mailbox for an admin or security operations team to analyze.
 
-  > [!IMPORTANT]
-  > In U.S. Government organizations (GCC, GCC High, and DoD) organizations, the only available selection in the **Send the reported messages to** section is **My organization's mailbox**. The other two options are grayed out.
-  >
-  > If you used [Outlook on the web mailbox policies](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties) to disable junk email reporting in Outlook on the web, but you select **Microsoft** or **Microsoft and my organization's mailbox**, users will be able to report messages to Microsoft in Outlook on the web using the Report Message add-in or the Report Phishing add-in.
-  >
-  > If you select **My organization's mailbox**, reported messages appear on the **User reported messages** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission>. But the **Result** value of these messages will always be empty, because the messages were not rescanned.
-  >
-  > If you use [Attack simulation training](attack-simulation-training-get-started.md) or a third-party product to do phishing simulations, you must configure the user submissions mailbox as a SecOps mailbox as previously described in the [Configuration requirements for the user submissions mailbox](#configuration-requirements-for-the-user-submissions-mailbox) section earlier in this article. If you don't, a user reporting a message might trigger a training assignment in the phishing simulation product.
+    - **My organization's mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions go only to the user submissions mailbox for an admin or the security operations team to analyze. Messages don't go to Microsoft for analysis unless an admin manually submits the messages.
 
-  Regardless of your selection, the following settings are also available in the **Send the reported messages to** section:
+    > [!IMPORTANT]
+    > In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), the only available selection in the **Send the reported messages to** section is **My organization's mailbox**. The other two options are grayed out.
+    >
+    > If you used [Outlook on the web mailbox policies](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties) to disable junk email reporting in Outlook on the web, but you select **Microsoft** or **Microsoft and my organization's mailbox**, users will be able to report messages to Microsoft in Outlook on the web using the Report Message add-in or the Report Phishing add-in.
+    >
+    > If you select **My organization's mailbox**, reported messages appear on the **User reported messages** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission>. But the **Result** value of these messages will always be empty, because the messages were not rescanned.
+    >
+    > If you use [Attack simulation training](attack-simulation-training-get-started.md) or a third-party product to do phishing simulations, you must configure the user submissions mailbox as a SecOps mailbox as previously described in the [Configuration requirements for the user submissions mailbox](#configuration-requirements-for-the-user-submissions-mailbox) section earlier in this article. If you don't, a user reporting a message might trigger a training assignment in the phishing simulation product.
 
-  - **Let users choose if they want to report**: This setting controls the options that are available in the **Select reporting options that are available to users** section:
+    Regardless of your selection, the following settings are also available in the **Send the reported messages to** section:
 
-    - **Let users choose if they want to report** selected: You can select some, all or none of the settings in the **Select reporting options that are available to users** section.
-    - **Let users choose if they want to report** not selected: You can select only one setting in the **Select reporting options that are available to users** section.
+    - **Let users choose if they want to report**: This setting controls the options that are available in the **Select reporting options that are available to users** section:
 
-    - **Select reporting options that are available to users** section:
-      - **Ask me before sending the message**
-      - **Always report the message**
-      - **Never report the message**
+      - **Let users choose if they want to report** selected: You can select some, all or none of the settings in the **Select reporting options that are available to users** section.
+      - **Let users choose if they want to report** not selected: You can select only one setting in the **Select reporting options that are available to users** section.
 
-- **User reporting experience** section: The following settings are available:
+      - **Select reporting options that are available to users** section:
+        - **Ask me before sending the message**
+        - **Always report the message**
+        - **Never report the message**
 
-  As shown on the page, if you select an option that sends the reported messages to Microsoft, the following text is also added to the notification:
+  - **User reporting experience** section: The following settings are available:
 
-  > Your email will be submitted as-is to Microsoft for analysis. Some emails might contain personal or sensitive information.
+    As shown on the page, if you select an option that sends the reported messages to Microsoft, the following text is also added to the notification:
 
-  - **Before reporting** tab: In the **Title** and **Message body** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable `%type%` to include the submission type (junk, not junk, phishing, etc.).
-  - **After reporting** tab: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see after they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable `%type%` to include the submission type.
+    > Your email will be submitted as-is to Microsoft for analysis. Some emails might contain personal or sensitive information.
 
-  - **Only display when user reports phishing**: Select this option to display the **Before reporting** and **After reporting** notifications only when users report messages as phishing. Otherwise, the notifications are shown for all reported messages.
+    - **Before reporting** tab: In the **Title** and **Message body** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable `%type%` to include the submission type (junk, not junk, phishing, etc.).
+    - **After reporting** tab: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see after they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable `%type%` to include the submission type.
 
-- **Email notifications for admin review results** section: The following settings are available:
+    - **Only display when user reports phishing**: Select this option to display the **Before reporting** and **After reporting** notifications only when users report messages as phishing. Otherwise, the notifications are shown for all reported messages.
 
-  - **Specify Office 365 email address to use as sender**: Select this setting and enter the email address in the box that appears.
+  - **Email notifications for admin review results** section: The following settings are available:
+
+    - **Specify Office 365 email address to use as sender**: Select this setting and enter the email address in the box that appears.
   
-  - **Customize notifications**: Click this link to customize the email notification that's sent after an admin reviews and marks a reported messages.
+    - **Customize notifications**: Click this link to customize the email notification that's sent after an admin reviews and marks a reported message.
 
-    On the **Customize confirmation message** flyout that appears, configure the following settings:
+      On the **Customize confirmation message** flyout that appears, configure the following settings:
 
-    - **Phishing**, **Junk** and **No threats found** tabs: In the **Review result text** on some, none, or all of the tabs, enter the custom text to use.
-    - **Footer** tab: The following options are available:
+      - **Phishing**, **Junk** and **No threats found** tabs: In the **Review result text** on some, none, or all of the tabs, enter the custom text to use.
+      - **Footer** tab: The following options are available:
       - **Footer text**: Enter the custom message footer text to use.
-      - **Display company logo**: Before select this option, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
+      - **Display company logo**: Before you select this option, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
 
-  When you're finished on the **Customize confirmation message** flyout, click **Confirm**.
+    When you're finished on the **Customize confirmation message** flyout, click **Confirm**.
 
 - **Customize your organization's experience when reporting potential threats in quarantine** section:
 
@@ -170,20 +174,22 @@ When you're finished on the **User submissions** page, click **Save**. To restor
 
 You can turn off the Microsoft integrated reporting experience to use third-party message reporting tools to send reported messages to the user submissions mailbox.
 
-The only requirement is that the original messages are included as uncompressed .EML or .MSG attachments in messages that are sent to user submissions mailbox. In other words, don't just forward the original messages to the user submissions mailbox.
+When **Microsoft Outlook Report Message button** is **Off** ![Toggle off.](../../media/scc-toggle-off.png) the following settings are available on the **User reported settings** page:
 
-> [!NOTE]
-> If multiple email attachments exist in the message, then the submission will be discarded. We only support message with one email attachment.
+- **Use Microsoft's integrated Outlook reporting experience** section:
 
-The message formatting requirements are described in the next section. The formatting is optional, but reported messages don't follow the prescribed format, the reported messages are always identified as phishing.
+  **Use this custom mailbox to receive user reported messages**: Select this option and enter the email address of an existing Exchange Online mailbox to hold user-reported messages from third-party message reporting tools. These messages are not submitted to Microsoft. They appear on the **User reported** tab of the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. The **Result** value for these entries is **Not Submitted to Microsoft**.
+  
+  A reported message that's sent to the user submissions mailbox must include the original message as an uncompressed .EML or .MSG attachment. Don't forward the original message to the user submissions mailbox.
 
-When **Microsoft Outlook Report Message button** is **Off** ![Toggle off.](../../media/scc-toggle-off.png) the following settings are available on the **User submissions** page:
+  > [!NOTE]
+  > Messages that contain multiple attached messages will be discarded. We support only one attached original message in a reported message.
 
-- **Microsoft and my organization's mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox to use as the user submissions mailbox. Distribution groups are not allowed.
+  The message formatting requirements are described in the next section. The formatting is optional, but if reported messages don't follow the prescribed format, they're always identified as phishing.
 
 - **Customize your organization's experience when reporting potential threats in quarantine** section:
 
-  **Quarantine report message button**: Verify this setting is **On** ![Toggle on.](../../media/scc-toggle-on.png) to let users report messages from quarantine. Otherwise, turn this setting **Off** ![Toggle off.](../../media/scc-toggle-off.png).
+  **Quarantine report message button**: Verify this setting is **On** ![Toggle on.](../../media/scc-toggle-on.png) to let users report messages from quarantine. Otherwise, turn this setting **Off** ![Toggle off.](../../media/scc-toggle-off.png). 
 
 When you're finished on the **User submissions** page, click **Save**. To restore the settings to their immediately previous values, click **Restore**.
 
@@ -194,6 +200,17 @@ To correctly identify the original attached messages, messages sent to the custo
 To specify the reason why the original attached messages were reported, messages sent to the user submissions mailbox must meet the following criteria:
 
 - The original message attachment is unmodified.
+- The reported message should contain the following required headers:
+  - 1. X-Microsoft-Antispam-Message-Info
+  - 2. Message-Id
+  - 3. X-Ms-Exchange-Organization-Network-Message-Id
+  - 4. X-Ms-Exchange-Crosstenant-Id
+
+   > [!NOTE]
+   > TenantId in `X-Ms-Exchange-Crosstenant-Id` should be the same as the tenant.
+   >
+   > `X-Microsoft-Antispam-Message-Info` should be a valid xmi.
+
 - The Subject line (Envelope Title) of messages sent to the user submissions mailbox must start with one of the following prefix values:
   - `1|` or `Junk:`.
   - `2|` or `Not junk:`.

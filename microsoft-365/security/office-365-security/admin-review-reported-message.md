@@ -9,11 +9,12 @@ audience: Admin
 ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: Learn how to review messages that are reported and give feedback to your users.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Admin review for reported messages

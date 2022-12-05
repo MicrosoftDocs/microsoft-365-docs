@@ -7,10 +7,13 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
+- highpri 
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -31,6 +34,12 @@ Your bill or invoice provides a summary of charges for your subscription and inc
 
 > [!NOTE]
 > If you have other subscriptions instead of or in addition to Microsoft 365, see [Understand your bill or invoice](understand-your-invoice.md).
+
+## Watch: Understand your bill or invoice
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2209539).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53wxS?autoplay=false]
 
 ## How often and when am I billed?
 

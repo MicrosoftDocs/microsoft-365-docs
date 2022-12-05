@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
 description: Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # User tags in Microsoft Defender for Office 365
@@ -40,10 +40,10 @@ If your organization has Defender for Office 365 Plan 2 (included in your subscr
 After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:
 
 - [Alerts](alerts.md)
-- [Custom alert policies](../../compliance/alert-policies.md#viewing-alerts)
+- [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
 - [Threat Explorer and real-time detections](threat-explorer.md)
 - [Compromised user report](view-email-security-reports.md#compromised-users-report)
-- [Email entity page](mdo-email-entity-page.md#other-innovations)
+- [Email entity page](mdo-email-entity-page.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Attack simulation](attack-simulation-training.md#target-users)
@@ -54,7 +54,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 
 This article explains how to configure user tags in the Microsoft 365 Defender portal. There are no cmdlets in Microsoft 365 Defender portal to manage user tags.
 
-To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](security-recommendations-for-priority-accounts.md).
+To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](priority accounts-security-recommendations.md).
 
 ## What do you need to know before you begin?
 
@@ -149,4 +149,4 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 ## More information
 
-[Configure and review priority accounts in Microsoft Defender for Office 365](configure-review-priority-account.md)
+[Configure and review priority accounts in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md)

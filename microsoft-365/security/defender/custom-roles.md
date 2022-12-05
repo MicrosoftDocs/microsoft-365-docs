@@ -1,9 +1,10 @@
 ---
 title: Custom roles for role-based access control
 description: Learn how to manage custom roles in the Microsoft 365 Defender portal
-keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC, roles-based access, custom roles-based access, roles-based auth, RBAC in MDO, roles, rolegroups, permissions inheritance, fine-grained permissions
+keywords: access, permissions, Microsoft 365 Defender, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC, roles-based access, custom roles-based access, roles-based auth, RBAC in MDO, roles, rolegroups, permissions inheritance, fine-grained permissions
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,24 +15,26 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ---
 # Custom roles in role-based access control for Microsoft 365 Defender
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Applies to:**
 
 - Microsoft 365 Defender
- 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)] 
+
 There are two types of roles that can be used to access to Microsoft 365 Defender:
+
 - **Global Azure Active Directory (AD) roles**
 - **Custom roles**
 
@@ -44,7 +47,8 @@ For example, a Custom role created through Microsoft Defender for Endpoint would
 Users with existing Custom roles may access data in the Microsoft 365 Defender portal according to their existing workload permissions with no additional configuration required.
 
 ## Create and manage custom roles
-Custom roles and permissions can be created and individually managed through each of the following security portals: 
+
+Custom roles and permissions can be created and individually managed through each of the following security portals:
 
 - Microsoft Defender for Endpoint – [Edit roles in Microsoft Defender for Endpoint](../defender-endpoint/user-roles.md)
 - Microsoft Defender for Office 365 – [Permissions in the Security & Compliance Center](../office-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
@@ -59,6 +63,7 @@ Each custom role created through an individual portal allows access to the data 
 > Custom roles created in Microsoft Defender for Cloud Apps have access to Microsoft Defender for Identity data as well. Users with User group admin, or App/instance admin Microsoft Defender for Cloud Apps roles are not able to access Microsoft Defender for Cloud Apps data through the Microsoft 365 Defender portal.
 
 ## Manage permissions and roles in the Microsoft 365 Defender portal
+
 Permissions and roles can also be managed in the Microsoft 365 Defender portal:
 
 1. Sign in to the Microsoft 365 Defender portal at security.microsoft.com.
@@ -68,8 +73,8 @@ Permissions and roles can also be managed in the Microsoft 365 Defender portal:
 > [!NOTE]
 > This only applies to Defender for Office 365 and Defender for Endpoint. Access for other workloads must be done in their relevant portals.
 
-
 ## Required roles and permissions
+
 The following table outlines the roles and permissions required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.
 
 > [!NOTE]
@@ -82,7 +87,7 @@ The following table outlines the roles and permissions required to access each u
 | Managing alerts and incidents | Alerts investigation | <ul><li>Manage alerts</li> <li>Security admin</li> | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li></ul> |
 | Action center remediation | Active remediation actions – security operations | Search and purge | |
 | Setting custom detections | Manage security settings |<ul><li>Manage alerts</li> <li>Security admin</li></ul> | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul> |
-| Threat Analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>TVM mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only Manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | Not available for Defender for Cloud Apps or MDI users |
+| Threat Analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>Defender Vulnerability Management mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only Manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | Not available for Defender for Cloud Apps or MDI users |
 
 For example, to view hunting data from Microsoft Defender for Endpoint, View data security operations permissions are required.  
 
@@ -94,6 +99,7 @@ Similarly, to view hunting data from Microsoft Defender for Office 365, users wo
 - View-only recipients
 
 ## Related topics
+
 - [RBAC roles](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Manage access to Microsoft 365 Defender](m365d-permissions.md)
 - [Manage admin access for Defender for Cloud Apps](/cloud-app-security/manage-admins)
