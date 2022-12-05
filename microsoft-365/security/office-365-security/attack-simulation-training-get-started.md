@@ -40,7 +40,7 @@ Watch this short video to learn more about Attack simulation training.
 
 ## What do you need to know before you begin?
 
-- A Microsoft 365 E5 or [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
+- Attack simulation training requres a Microsoft 365 E5 or [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md) license.
 
 - To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, use <https://security.microsoft.com/attacksimulator>.
 
