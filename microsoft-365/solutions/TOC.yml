@@ -447,8 +447,6 @@
           href: apps-license-confirm.md
         - name: Understand licenses terms
           href: apps-license-terms.md
-        - name: Verify purchased apps
-          href: apps-license-verify.md
       - name: Add apps to Intune
         items:
         - name: Add apps overview

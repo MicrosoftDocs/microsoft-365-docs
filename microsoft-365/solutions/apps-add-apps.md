@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Add apps to Microsoft Intune
+# Add apps to Intune
 
 
 
