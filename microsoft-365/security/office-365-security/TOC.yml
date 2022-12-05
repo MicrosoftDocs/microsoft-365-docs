@@ -203,11 +203,11 @@
            - name: Manage the Tenant Allow/Block List
              href: manage-tenant-allow-block-list.md
            - name: Allow or block email using the Tenant Allow/Block List
-             href: allow-block-email-spoof.md
+             href: tenant-allow-block-list-email-spoof-configure.md
            - name: Allow or block files using the Tenant Allow/Block List
-             href: allow-block-files.md
+             href: tenant-allow-block-list-files-configure.md
            - name: Allow or block URLs using the Tenant Allow/Block List
-             href: allow-block-urls.md
+             href: tenant-allow-block-list-urls-configure.md
          - name: Create block sender lists
            href: Create-block-sender-lists-in-office-365.md
          - name: Create safe sender lists
