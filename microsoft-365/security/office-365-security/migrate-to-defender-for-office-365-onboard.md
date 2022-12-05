@@ -156,7 +156,7 @@ Use the following features to monitor and iterate on the protection settings in 
 - [Quarantine](manage-quarantined-messages-and-files.md)
 - [Threat Explorer](email-security-in-microsoft-defender.md)
 - [Email security reports](view-email-security-reports.md)
-- [Defender for Office 365 reports](view-reports-for-mdo.md)
+- [Defender for Office 365 reports](reports-defender-for-office-365.md)
 - [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [Mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 

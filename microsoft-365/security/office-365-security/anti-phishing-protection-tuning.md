@@ -50,7 +50,7 @@ Reporting phishing messages is helpful in tuning the filters that are used to pr
 
 You can examine the headers of the phishing message to see if there's anything that you can do yourself to prevent more phishing messages from coming through. In other words, examining the messages headers can help you identify any settings in your organization that were responsible for allowing the phishing messages in.
 
-Specifically, you should check the **X-Forefront-Antispam-Report** header field in the message headers for indications of skipped filtering for spam or phishing in the Spam Filtering Verdict (SFV) value. Messages that skip filtering will have an entry of `SCL:-1`, which means one of your settings allowed this message through by overriding the spam or phishing verdicts that were determined by the service. For more information on how to get message headers and the complete list of all available anti-spam and anti-phishing message headers, see [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md).
+Specifically, you should check the **X-Forefront-Antispam-Report** header field in the message headers for indications of skipped filtering for spam or phishing in the Spam Filtering Verdict (SFV) value. Messages that skip filtering will have an entry of `SCL:-1`, which means one of your settings allowed this message through by overriding the spam or phishing verdicts that were determined by the service. For more information on how to get message headers and the complete list of all available anti-spam and anti-phishing message headers, see [Anti-spam message headers in Microsoft 365](message-headers-eop-mdo.md).
 
 ## Best practices to stay protected
 
@@ -62,7 +62,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - You can repeat the above step for Impersonation (domain or user) in Microsoft Defender for Office 365. The Impersonation report is found under **Threat Management** \> **Dashboard** \> **Insights**.
 
-- Periodically review the [Threat Protection Status report](view-reports-for-mdo.md#threat-protection-status-report).
+- Periodically review the [Threat Protection Status report](reports-defender-for-office-365.md#threat-protection-status-report).
 
 - Some customers inadvertently allow phishing messages through by putting their own domains in the Allow sender or Allow domain list in anti-spam policies. Although this configuration will allow some legitimate messages through, it will also allow malicious messages that would normally be blocked by the spam and/or phishing filters. Instead of allowing the domain, you should correct the underlying problem.
 

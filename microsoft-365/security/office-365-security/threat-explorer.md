@@ -111,7 +111,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&
 
 We've focused on platform and data-quality improvements to increase data accuracy and consistency for email records. Improvements include consolidation of pre-delivery and post-delivery information, such as actions executed on an email as part of the ZAP process, into a single record. Additional details like spam verdict, entity-level threats (for example, which URL was malicious), and latest delivery locations are also included.
 
-After these updates, you'll see a single entry for each message, regardless of the different post-delivery events that affect the message. Actions can include ZAP, manual remediation (which means admin action), [Dynamic Delivery](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies), and so on.
+After these updates, you'll see a single entry for each message, regardless of the different post-delivery events that affect the message. Actions can include ZAP, manual remediation (which means admin action), [Dynamic Delivery](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies), and so on.
 
 In addition to showing malware and phishing threats, you see the spam verdict associated with an email. Within the email, see all the threats associated with the email along with the corresponding detection technologies. An email can have zero, one, or multiple threats. You'll see the current threats in the **Details** section of the email flyout. For multiple threats (such as malware and phishing), the **Detection tech** field shows the threat-detection mapping, which is the detection technology that identified the threat.
 

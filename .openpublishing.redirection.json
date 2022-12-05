@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/frontline/bookings-virtual-visits.md",
+      "redirect_url": "/microsoft-365/frontline/bookings-virtual-appointments",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/frontline/virtual-visits-usage-report.md",
+      "redirect_url": "/microsoft-365/frontline/virtual-appointments-usage-report",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/manage/servicenow-aad-oauth-token.md",
       "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
       "redirect_document_id": false
@@ -9418,6 +9428,166 @@
     {
       "source_path": "microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md",
       "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-anti-spoofing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dkim-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/support-for-validation-of-dkim-signed-messages.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dkim-support-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/use-dmarc-to-validate-email.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dmarc-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/exchange-online-protection-overview.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/eop-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/eop-general-faq.yml",
+      "redirect_url": "/microsoft-365/security/office-365-security/eop-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mail-flow-in-eop.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/mail-flow-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/eop-queued-deferred-and-bounced-messages-faq.yml",
+      "redirect_url": "/microsoft-365/security/office-365-security/mail-flow-delivery-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/mail-flow-inbound-ipv6-support-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/mail-flow-troubleshooting",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/permissions-microsoft-365-security-center.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/mdo-portal-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/anti-spam-message-headers.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/message-headers-eop-mdo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/priority accounts-security-recommendations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-review-priority-account.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/priority-accounts-turn-on-priority-account-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-high-risk-delivery-pool-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-the-outbound-spam-policy.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-policies-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/external-email-forwarding.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/outbound-spam-controls.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-protection-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/quarantine-email-messages.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/manage-quarantined-messages-and-files.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-end-user",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-quarantine-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/view-and-release-quarantined-messages-from-shared-mailboxes.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-shared-mailbox-messages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/view-reports-for-mdo.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/view-email-security-reports.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-email-security",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/safe-attachments.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/mdo-for-spo-odb-and-teams.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-safe-attachments-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-policies-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/safe-docs.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-documents-in-e5-plus-security-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/safe-links.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/set-up-safe-links-policies.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-policies-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-global-settings-for-safe-links.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-policies-global-settings-configure",
       "redirect_document_id": true
     }
    ]

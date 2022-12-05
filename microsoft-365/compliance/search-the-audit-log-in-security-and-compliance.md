@@ -884,7 +884,7 @@ The following table lists the activities in content explorer that are logged in 
 
 ### Quarantine activities
 
-The following table lists the quarantine activities that you can search for in the audit log. For more information about quarantine, see [Quarantine email messages](../security/office-365-security/quarantine-email-messages.md).
+The following table lists the quarantine activities that you can search for in the audit log. For more information about quarantine, see [Quarantine email messages](../security/office-365-security/quarantine-about.md).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|

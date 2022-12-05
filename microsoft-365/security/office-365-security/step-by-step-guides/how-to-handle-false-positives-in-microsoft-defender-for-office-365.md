@@ -43,7 +43,7 @@ Microsoft Defender for Office 365 helps deal with important legitimate business 
 
 ## Handling legitimate emails that are in quarantine folder of end users
 
-1. An end user receives an [email digest](/microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages) about quarantined messages as per the settings enabled by security admins.
+1. An end user receives an [email digest](quarantine-quarantine-notifications.md) about quarantined messages as per the settings enabled by security admins.
 2. End users can preview the messages in quarantine, block the sender, release the messages, submit those messages to Microsoft for analysis, and request release of those emails from admins.
 
 ## Handling legitimate emails in quarantine folder of an admin

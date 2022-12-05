@@ -33,7 +33,7 @@
        - name: Step 1 - Set up SPF to help prevent spoofing
          href: email-authentication-spf-configure.md
        - name: Step 2 - Use DKIM to validate outbound email
-         href: use-dkim-to-validate-outbound-email.md
+         href: email-authentication-dkim-configure.md
        - name: Step 3 - Use DMARC to validate email
          href: use-dmarc-to-validate-email.md
        - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
@@ -57,11 +57,11 @@
          - name: Option 3 - Custom EOP and Defender for Office 365 P1 and P2 environments installation path (manual)
            items:
            - name: Exchange Online Protection overview
-             href: exchange-online-protection-overview.md
+             href: eop-about.md
            - name: Recommended settings for configuring EOP and Defender for Office 365 Security
              href: recommended-settings-for-eop-and-office365.md
        - name: Step 2 - Configure Permissions
-         href: permissions-microsoft-365-security-center.md
+         href: mdo-portal-permissions.md
    - name: Migrate
      items:
        - name: Migrate from a third-party protection service or device to Defender for Office 365
@@ -79,7 +79,7 @@
        - name: Configure your tenant for increased security
          href: tenant-wide-setup-for-increased-security.md
        - name: Security recommendations for priority accounts
-         href: security-recommendations-for-priority-accounts.md
+         href: priority accounts-security-recommendations.md
        - name: Anti-malware protection
          items:
          - name: Anti-malware protection
@@ -147,13 +147,13 @@
        - name: Outbound spam protection
          items:
          - name: Outbound spam protection
-           href: outbound-spam-controls.md
+           href: outbound-spam-protection-about.md
          - name: Configure outbound spam filtering
-           href: configure-the-outbound-spam-policy.md
+           href: outbound-spam-policies-configure.md
          - name: Control automatic external email forwarding
-           href: external-email-forwarding.md
+           href: outbound-spam-policies-external-email-forwarding.md
          - name: Outbound delivery pools
-           href: high-risk-delivery-pool-for-outbound-messages.md
+           href: outbound-spam-high-risk-delivery-pool-about.md
        - name: Anti-phishing protection
          items:
          - name: Anti-phishing protection
@@ -175,23 +175,23 @@
        - name: Safe Attachments in Defender for Office 365
          items:
          - name: Safe Attachments in Defender for Office 365
-           href: safe-attachments.md
+           href: safe-attachments-about.md
          - name: Set up Safe Attachments policies in Defender for Office 365
-           href: set-up-safe-attachments-policies.md
+           href: safe-attachments-policies-configure.md
          - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
-           href: mdo-for-spo-odb-and-teams.md
+           href: safe-attachments-for-spo-odfb-teams-about.md
          - name: Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
-           href: turn-on-mdo-for-spo-odb-and-teams.md
+           href: safe-attachments-for-spo-odfb-teams-configure.md
          - name: Safe Documents in A5 or E5 Security
-           href: safe-docs.md
+           href: safe-documents-in-e5-plus-security-about.md
        - name: Safe Links in Defender for Office 365
          items:
          - name: Safe Links in Defender for Office 365
-           href: safe-links.md
+           href: safe-links-about.md
          - name: Set up Safe Links policies in Defender for Office 365
-           href: set-up-safe-links-policies.md
+           href: safe-links-policies-configure.md
          - name: Configure global settings for Safe Links in Defender for Office 365
-           href: configure-global-settings-for-safe-links.md
+           href: safe-links-policies-global-settings-configure.md
        - name: Zero-hour Auto Purge (ZAP)
          items:
          - name: Zero-hour auto purge - protection against spam and malware
@@ -241,7 +241,7 @@
          - name: User tags in Defender for Office 365
            href: user-tags.md
          - name: Configure and review priority accounts
-           href: configure-review-priority-account.md
+           href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
          items:
          - name: The Email entity page
@@ -309,7 +309,7 @@
          - name: View email security reports
            href: view-email-security-reports.md
          - name: View Defender for Office 365 reports
-           href: view-reports-for-mdo.md
+           href: reports-defender-for-office-365.md
          - name: Message trace
            href: message-trace-scc.md
      - name: Respond and remediate
@@ -365,17 +365,17 @@
         - name: Quarantine
           items:
           - name: Quarantine
-            href: quarantine-email-messages.md
+            href: quarantine-about.md
           - name: Admin quarantine
             href: manage-quarantined-messages-and-files.md
           - name: End-user quarantine
-            href: find-and-release-quarantined-messages-as-a-user.md
+            href: quarantine-end-user.md
           - name: Quarantine policies
             href: quarantine-policies.md
           - name: Release quarantined messages from shared mailboxes
-            href: view-and-release-quarantined-messages-from-shared-mailboxes.md
+            href: quarantine-shared-mailbox-messages.md
           - name: Quarantine notifications
-            href: use-spam-notifications-to-release-and-report-quarantined-messages.md
+            href: quarantine-quarantine-notifications.md
           - name: Quarantine FAQ
             href: quarantine-faq.yml
         - name: Use the delist portal to remove yourself from the blocked senders list
@@ -437,9 +437,9 @@
      - name: Policies and protections
        href: how-policies-and-protections-are-combined.md
      - name: Troubleshooting mail sent to Microsoft 365
-       href: troubleshooting-mail-sent-to-office-365.md
+       href: mail-flow-troubleshooting.md
      - name: Anti-spam message headers
-       href: anti-spam-message-headers.md
+       href: message-headers-eop-mdo.md
      - name: Policies, practices, and guidelines
        href: reference-policies-practices-and-guidelines.md
      - name: Sending mail to Office 365
@@ -459,9 +459,9 @@
      - name: Privileged identity management in Defender for Office 365
        href: use-privileged-identity-management-in-defender-for-office-365.md
      - name: Anonymous inbound email messages over IPv6
-       href: support-for-anonymous-inbound-email-messages-over-ipv6.md
+       href: mail-flow-inbound-ipv6-support-about.md
      - name: Support for DKIM-signed messages
-       href: support-for-validation-of-dkim-signed-messages.md
+       href: email-authentication-dkim-support-about.md
      - name: Install Application Guard for Office
        href: install-app-guard.md
      - name: FAQ
@@ -469,9 +469,9 @@
        - name: Delegated administration FAQ
          href: delegated-administration-faq.yml
        - name: EOP general FAQ
-         href: eop-general-faq.yml
+         href: eop-faq.yml
        - name: EOP queued, deferred, and bounced messages FAQ
-         href: eop-queued-deferred-and-bounced-messages-faq.yml
+         href: mail-flow-delivery-faq.yml
    - name: Microsoft 365 Defender docs
      items:
        - name: Microsoft 365 Defender
