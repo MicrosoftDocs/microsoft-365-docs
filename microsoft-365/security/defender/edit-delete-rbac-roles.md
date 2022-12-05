@@ -51,7 +51,6 @@ The following steps guide you on how to edit roles in Microsoft 365 Defender RBA
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-edit-roles.png" alt-text="Screenshot of the activate workloads page" lightbox="../../media/defender/m365-defender-rbac-edit-roles.png":::
 
-
 >[!Note]
 >After editing an imported role, the changes made in Microsoft 365 Defender RBAC will not be reflected back in the individual product RBAC model.
 

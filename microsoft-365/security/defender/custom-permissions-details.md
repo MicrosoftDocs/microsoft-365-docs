@@ -68,7 +68,7 @@ Permissions for managing day-to-day operations and responding to incidents and a
 
 Permissions for managing the organization's security posture and performing threat and vulnerability management.
 
-| **Permission name**          | **Level** | **Description**                                                                                                                                                                         |
+| **Permission name**          | **Level** |**Description**                                                                                                                                                                         |
 |------------------------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Vulnerability management     | Read      | View threat and vulnerability management data for the following: software and software inventory, weaknesses, missing KBs, advanced hunting, security baselines assessment, and devices.|
 | Exception handling           | Manage    | Create security recommendation exceptions and manage active exceptions in threat and vulnerability management.                                                                          |
