@@ -58,8 +58,8 @@
         - name: ExpressRoute for Microsoft 365
           href: azure-expressroute.md
           items: 
-            - name: Network planning with ExpressRoute for Microsoft 365
-              href: network-planning-with-expressroute.md
+            - name: Implementing ExpressRoute for Microsoft 365
+              href: implementing-expressroute.md
     - name: Manage
       items: 
         - name: Office 365 endpoints
