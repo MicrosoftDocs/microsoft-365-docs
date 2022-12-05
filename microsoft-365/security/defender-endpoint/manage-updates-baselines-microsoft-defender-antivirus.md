@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 11/10/2022
+ms.date: 12/05/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -145,14 +145,21 @@ Security intelligence update version: 1.377.8.0<br/>
 
 - Some customers might have received platform updates 4.18.2209.2 from preview. It can cause the service to get stuck at the start state after the update.  
 <br/><br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary>August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
 
 &ensp;Security intelligence update version: **1.373.1647.0**<br/>
 &ensp;Release date: **September 6, 2022**<br/>
 &ensp;Platform: **4.18.2207.7**<br/>
 &ensp;Engine: **1.1.19600.3**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19600.3<br/>
 Security intelligence update version: 1.373.1647.0 <br/>
@@ -171,14 +178,7 @@ Security intelligence update version: 1.373.1647.0 <br/>
 - None
 
 <br/><br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary>July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)</summary>
 
 &ensp;Security intelligence update version: **1.373.219.0**<br/>
