@@ -88,7 +88,6 @@ Each script should validate that it ran successfully. For example, the install s
 Validation is necessary to properly diagnose where errors occur during a test run. For example, if the script is unable to install the application successfully versus being unable to launch it.
 
 > [!IMPORTANT]
-> **Avoid the following:**
 > Scripts should not reboot the machine, if a reboot is necessary please specify this during the upload of your scripts.
 > Scripts that intend to interact with the Windows UI should not erase the autologon credentials. Erasing these credentials will prevent the scripts from executing correctly.
 
