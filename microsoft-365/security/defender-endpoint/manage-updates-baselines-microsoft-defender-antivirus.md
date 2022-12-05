@@ -105,7 +105,7 @@ Security intelligence update version: x.x (*final version number coming soon*)<b
 - Improved [controlled folder access](controlled-folders.md) notifications
 - Improved scanning of network shares
 - Enhanced processing of host file containing a wild card
-- Improved performance for scan events
+- Improved performance for [scan events](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 ### Known Issues
 
