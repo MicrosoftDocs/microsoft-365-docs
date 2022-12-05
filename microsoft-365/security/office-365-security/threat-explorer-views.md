@@ -35,7 +35,7 @@ search.appverid: met150
 - If you have [Microsoft Defender for Office 365](defender-for-office-365.md) Plan 2, then you have Explorer.
 - If you have Microsoft Defender for Office 365 Plan 1, then you have real-time detections.
 
-When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show Microsoft Defender for Office 365 detections, such as malicious URLs detected by [Safe Links](safe-links.md), and malicious files detected by [Safe Attachments](safe-attachments-about.md). This report can be modified to show data for the past 30 days (with a Microsoft Defender for Office 365 P2 paid subscription). Trial subscriptions will include data for the past seven days only.
+When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show Microsoft Defender for Office 365 detections, such as malicious URLs detected by [Safe Links](safe-links-about.md), and malicious files detected by [Safe Attachments](safe-attachments-about.md). This report can be modified to show data for the past 30 days (with a Microsoft Defender for Office 365 P2 paid subscription). Trial subscriptions will include data for the past seven days only.
 
 |Subscription|Utility|Days of Data|
 |---|---|---|
