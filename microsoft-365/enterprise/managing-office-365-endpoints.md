@@ -38,8 +38,8 @@ At each branch office location, you can provide an SD-WAN device that is configu
 
 Microsoft is working with SD-WAN providers to enable automated configuration. For more information, see [Microsoft 365 Networking Partner Program](microsoft-365-networking-partner-program.md).
 
-<a name="pacfiles"> </a>
 ## Use a PAC file for direct routing of vital Microsoft 365 traffic
+<a name="pacfiles"> </a>
 
 Use PAC or WPAD files to manage network requests that are associated with Microsoft 365 but don't have an IP address. Typical network requests that are sent through a proxy or perimeter device increase latency. While SSL Break and Inspect creates the largest latency, other services such as proxy authentication and reputation lookup can cause poor performance and a bad user experience. Additionally, these perimeter network devices need enough capacity to process all of the network connection requests. We recommend bypassing your proxy or inspection devices for direct Microsoft 365 network requests.
   
@@ -92,8 +92,8 @@ Where PAC files aren't used for direct outbound traffic, you still want to bypas
 
 If you're doing this manually, you'll need to get the Optimize and Allow endpoint category data from the Microsoft 365 IP Address and URL Web Service and configure your proxy server to bypass processing for these. It is important to avoid SSL Break and Inspect and Proxy Authentication for the Optimize and Allow category endpoints.
   
-<a name="bkmk_changes"> </a>
 ## Change management for Microsoft 365 IP addresses and URLs
+<a name="bkmk_changes"> </a>
 
 In addition to selecting appropriate configuration for your network perimeter, it's critical that you adopt a change management process for Microsoft 365 endpoints. These endpoints change regularly and if you don't manage the changes, you can end up with users blocked or with poor performance after a new IP address or URL is added.
 
@@ -116,9 +116,9 @@ The Microsoft 365 IP Address and URL Web Service provides an RSS feed that you c
 We understand that you might still require manual processing for network endpoint changes that come through each month. You can use Power Automate to create a flow that notifies you by email and optionally runs an approval process for changes when Microsoft 365 network endpoints have changes. Once review is completed, you can have the flow automatically email the changes to your firewall and proxy server management team.
 
 For information about a Power Automate sample and template, see [Use Power Automate to receive an email for changes to Microsoft 365 IP addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
-  
-<a name="FAQ"> </a>
+
 ## Microsoft 365 network endpoints FAQ
+<a name="FAQ"> </a>
 
 See these frequently asked questions about Microsoft 365 network connectivity.
   
@@ -135,9 +135,9 @@ Click the link at the bottom to indicate if the article was helpful or not and s
  **Peering locations** are described in more detail in [peering with Microsoft](https://www.microsoft.com/peering).
   
 With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](/archive/blogs/onthewire/__guidance) of good and not so good peering hand-offs to our network.
-  
-<a name="bkmk_MissingIP"> </a>
+
 ### I see network requests to IP addresses not on the published list, do I need to provide access to them?
+<a name="bkmk_MissingIP"> </a>
 
 We only provide IP addresses for the Microsoft 365 servers you should route directly to. This isn't a comprehensive list of all IP addresses you'll see network requests for. You'll see network requests to Microsoft and third-party owned, unpublished, IP addresses. These IP addresses are dynamically generated or managed in a way that prevents timely notice when they change. If your firewall can't allow access based on the FQDNs for these network requests, use a PAC or WPAD file to manage the requests.
   
@@ -148,8 +148,8 @@ See an IP associated with Microsoft 365 that you want more information on?
 3. The IP address may not be part of Microsoft 365 or a dependency. Microsoft 365 network endpoint publishing doesn't include all of Microsoft network endpoints.
 4. Check the certificate. With a browser, connect to the IP address using  *HTTPS://\<IP_ADDRESS\>* and check the domains listed on the certificate to understand what domains are associated with the IP address. If it's a Microsoft-owned IP address and not on the list of Microsoft 365 IP addresses, it's likely the IP address is associated with a Microsoft CDN such as  *MSOCDN.NET*  or another Microsoft domain without published IP information. If you do find the domain on the certificate is one where we claim to list the IP address, please let us know.
 
-<a name="bkmk_cname"> </a>
 ### Some Microsoft 365 URLs point to CNAME records instead of A records in the DNS. What do I have to do with the CNAME records?
+<a name="bkmk_cname"> </a>
 
 Client computers need a DNS A or AAAA record that includes one or more IP address(es) to connect to a cloud service. Some URLs included in Microsoft 365 show CNAME records instead of A or AAAA records. These CNAME records are intermediary and there may be several in a chain. They will always eventually resolve to an A or AAAA record for an IP Address. For example, consider the following series of DNS records, which ultimately resolves to the IP address _IP_1_:
 
@@ -163,8 +163,8 @@ A proxy server validates the initial URL, which in the above example is serviceA
 
 Hard-coded configurations or using an allowlist based on indirect Microsoft 365 FQDNs aren't recommended, not supported by Microsoft, and are known to cause customer connectivity issues. DNS solutions that block on CNAME redirection, or that otherwise incorrectly resolve Microsoft 365 DNS entries, can be solved via DNS forwarders with DNS recursion enabled or by using DNS root hints. Many third-party network perimeter products natively integrate recommended Microsoft 365 endpoint to include an allowlist in their configuration using the [Microsoft 365 IP Address and URL Web service](microsoft-365-ip-web-service.md).
 
-<a name="bkmk_akamai"> </a>
 ### Why do I see names such as nsatc.net or akadns.net in the Microsoft domain names?
+<a name="bkmk_akamai"> </a>
 
 Microsoft 365 and other Microsoft services use several third-party services such as Akamai and MarkMonitor to improve your Microsoft 365 experience. To keep giving you the best experience possible, we may change these services in the future. Third-party domains may host content, such as a CDN, or they may host a service, such as a geographical traffic management service. Some of the services currently in use include:
   
