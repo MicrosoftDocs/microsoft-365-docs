@@ -46,7 +46,7 @@ Both users and admins can work with quarantined messages:
 
 - Admins can work with all types of quarantined messages for all users. By default, only admins can work with messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
 
-- By default, users can work with quarantined messages where they are a recipient and the message was quarantined as spam, bulk email, or phishing (not high confidence phishing). For more information, see [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md).
+- By default, users can work with quarantined messages where they are a recipient and the message was quarantined as spam, bulk email, or phishing (not high confidence phishing). For more information, see [Find and release quarantined messages as a user in EOP](quarantine-end-user.md).
 
   To prevent users from managing their own quarantined phishing messages, admins can assign a quarantine policy that denies access to quarantined messages from the **Phishing email** filtering verdict in anti-spam policies. For more information, see [Assign quarantine policies in anti-spam policies](quarantine-policies.md#anti-spam-policies)[Quarantine policies](quarantine-policies.md).
 

@@ -73,7 +73,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Phishing** detection action <br><br> _PhishSpamAction_|**Move message to Junk Email folder**<sup>\*</sup> <br><br> `MoveToJmf`|**Quarantine message** <br><br> `Quarantine`|**Quarantine message** <br><br> `Quarantine`|<sup>\*</sup> The default value is **Move message to Junk Email folder** in the default anti-spam policy and in new anti-spam policies that you create in PowerShell. The default value is **Quarantine message** in new anti-spam policies that you create in the Microsoft 365 Defender portal.|
 |**High confidence phishing** detection action <br><br> _HighConfidencePhishAction_|**Quarantine message** <br><br> `Quarantine`|**Quarantine message** <br><br> `Quarantine`|**Quarantine message** <br><br> `Quarantine`||
 |**Bulk** detection action <br><br> _BulkSpamAction_|**Move message to Junk Email folder** <br><br> `MoveToJmf`|**Move message to Junk Email folder** <br><br> `MoveToJmf`|**Quarantine message** <br><br> `Quarantine`||
-|**Retain spam in quarantine for this many days** <br><br> _QuarantineRetentionPeriod_|15 days|30 days|30 days|  <br><br> This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).|
+|**Retain spam in quarantine for this many days** <br><br> _QuarantineRetentionPeriod_|15 days|30 days|30 days|  <br><br> This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-about.md).|
 |**Enable spam safety tips** <br><br> _InlineSafetyTipsEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |Enable zero-hour auto purge (ZAP) for phishing messages <br><br> _PhishZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |Enable ZAP for spam messages <br><br> _SpamZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
@@ -108,7 +108,7 @@ For more information about Advanced Spam Filter (ASF) settings in anti-spam poli
 
 #### EOP outbound spam policy settings
 
-To create and configure outbound spam policies, see [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md).
+To create and configure outbound spam policies, see [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md).
 
 For more information about the default sending limits in the service, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 

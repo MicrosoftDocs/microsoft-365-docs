@@ -37,7 +37,7 @@ Services that modify message content in transit before delivery to your organiza
 **Trusted ARC sealers lets admins add a list of *trusted* intermediaries into the Microsoft 365 Defender portal.** Trusted ARC sealers allows Microsoft to honor ARC signatures from these trusted intermediaries, preventing these legitimate messages from failing the authentication chain.
 
 > [!NOTE]
-> ***Trusted ARC sealers is an admin-created list of intermediary domains who have implemented ARC sealing.*** When an email is routed to Office 365 through and ARC trusted intermediary of the Office 365 tenant, Microsoft validates the ARC signature, and, based on the ARC results, can honor authentication details provided.
+> ***Trusted ARC sealers is an admin-created list of intermediary domains who have implemented ARC sealing.*** When an email is routed to Office 365 through an ARC trusted intermediary of the Office 365 tenant, Microsoft validates the ARC signature, and, based on the ARC results, can honor authentication details provided.
 
 ## When to use trusted ARC sealers?
 
