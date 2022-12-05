@@ -51,4 +51,4 @@ In addition to working on your OneDrive files locally, you can access them from 
 2. Choose  **OneDrive**. All of your files are listed, and you can work on them in the browser from any computer.
 
 > [!NOTE]  
-> When multiple users use shared computer and sync files via onedrive locally, the storage could get consumed very quickly.
+> When multiple users use a shared computer and sync files via OneDrive locally, the available storage might be consumed very quickly.
