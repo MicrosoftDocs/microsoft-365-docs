@@ -309,7 +309,7 @@
          - name: View email security reports
            href: view-email-security-reports.md
          - name: View Defender for Office 365 reports
-           href: view-reports-for-mdo.md
+           href: reports-defender-for-office-365.md
          - name: Message trace
            href: message-trace-scc.md
      - name: Respond and remediate

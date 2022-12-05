@@ -36,7 +36,7 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 
 > [!NOTE]
 >
-> Some of the reports on the **Email & collaboration reports** page require Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
+> Some of the reports on the **Email & collaboration reports** page require Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](reports-defender-for-office-365.md).
 >
 > Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
@@ -49,7 +49,7 @@ The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 repor
 
 |Deprecated report and cmdlets|New report and cmdlets|Message Center ID|Date|
 |---|---|:---:|:---:|
-|**URL trace** <br/><br/> Get-URLTrace|[URL protection report](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|June 2021|
+|**URL trace** <br/><br/> Get-URLTrace|[URL protection report](reports-defender-for-office-365.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|June 2021|
 |**Sent and received email report** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailReport|[Threat protection status report](#threat-protection-status-report) <br> [Mailflow status report](#mailflow-status-report) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|June 2021|
 |**Forwarding report** <br/><br/> no cmdlets|[Auto-forwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br/><br/> no cmdlets|MC250533|June 2021|
 |**Safe Attachments file types report** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|June 2021|
@@ -329,7 +329,7 @@ On the **Mailflow status report** page, the ![Export icon.](../../media/m365-cc-
 
 ## Mail latency report
 
-The **Mail latency report** in Defender for Office 365 contains information on the mail delivery and detonation latency experienced within your organization. For more information, see [Mail latency report](view-reports-for-mdo.md#mail-latency-report).
+The **Mail latency report** in Defender for Office 365 contains information on the mail delivery and detonation latency experienced within your organization. For more information, see [Mail latency report](reports-defender-for-office-365.md#mail-latency-report).
 
 ## Spam detections report
 
@@ -955,7 +955,7 @@ On the **Top senders and recipients** page, the ![Export icon.](../../media/m365
 
 ## URL protection report
 
-The **URL protection report** is available only in Microsoft Defender for Office 365. For more information, see [URL protection report](view-reports-for-mdo.md#url-protection-report).
+The **URL protection report** is available only in Microsoft Defender for Office 365. For more information, see [URL protection report](reports-defender-for-office-365.md#url-protection-report).
 
 ## User reported messages report
 
@@ -1142,4 +1142,4 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 [View mail flow reports in the EAC](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
-[View reports for Defender for Office 365](view-reports-for-mdo.md)
+[View reports for Defender for Office 365](reports-defender-for-office-365.md)

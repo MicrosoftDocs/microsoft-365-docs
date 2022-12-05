@@ -9529,6 +9529,16 @@
       "source_path": "microsoft-365/security/office-365-security/view-and-release-quarantined-messages-from-shared-mailboxes.md",
       "redirect_url": "/microsoft-365/security/office-365-security/quarantine-shared-mailbox-messages",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/view-reports-for-mdo.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/view-email-security-reports.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-email-security",
+      "redirect_document_id": true
+    },
    ]
   }
