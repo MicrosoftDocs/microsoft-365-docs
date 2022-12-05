@@ -138,8 +138,6 @@
 ### [Run simulated attacks on devices](attack-simulations.md)
 ### [Onboard devices without Internet access](onboard-offline-machines.md)
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
-### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
-### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Configure Microsoft Defender for Endpoint on macOS]()
 #### [Configure and validate exclusions](mac-exclusions.md)
@@ -682,15 +680,13 @@
 
 ### [Access the Microsoft Defender for Endpoint Community Center](community.md)
 
-### [Helpful resources](helpful-resources.md)
-### [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md)
-### [Resources for Microsoft Defender for Endpoint on Linux](linux-resources.md)
-
 ### [Privacy for Microsoft Defender for Endpoint on macOS](mac-privacy.md)
 ### [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
 ### [Privacy for Microsoft Defender for Endpoint on Android](android-privacy.md)
 ### [Privacy for Microsoft Defender for Endpoint on ios](ios-privacy.md)
-
+### [Helpful resources](helpful-resources.md)
+### [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md)
+### [Resources for Microsoft Defender for Endpoint on Linux](linux-resources.md)
 
 ## [Troubleshoot]()
 ### [Troubleshoot onboarding issues]()
