@@ -7,7 +7,7 @@ ms.reviewer: lauris; jaeccles
 ms.date:
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection:
 - enabler-strategic
 - m365initiative-syntex
@@ -63,8 +63,10 @@ A test or demo tenant can be used as a “dry run” to walk through the activat
 
 To maximize the value of a trial on a production tenant, planning and business engagement are essential. You should engage one or more business areas to identify three to six use cases that could potentially be addressed by Syntex. These use cases should:
 
-- Include scenarios that could be solved by either the form processing or document understanding model.
+- Include scenarios that could be solved by using either a custom model or a prebuilt model.
+
 - Have a clear understanding of the purpose for any extracted metadata; for example, view formatting or automation by using Power Automate. While Syntex is focused on classifying documents and extracting metadata, the value to quantify is what this metadata enables.
+
 - Be based on a defined set of data; for example, specific SharePoint sites or libraries. A common misconception of Syntex is that general purpose models can be applied across all organization content. A more accurate view is that models are built to help solve specific business problems in targeted locations.
 
 All of these use cases might not be a good fit for Syntex. The goal of a quality trial isn't to prove that Syntex will fit all the scenarios. Instead, the trial should help you better understand the value of the product.
@@ -93,17 +95,21 @@ Based on the outcome of the trial, you can decide whether to proceed to producti
 
 To ensure continuity of service, you need to purchase the required number of [licenses](syntex-licensing.md) and assign those licenses to users. Trial users who don't have a full license at the end of the trial period won't be able to fully use Syntex.
 
-You might have to estimate your projected use of form processing and plan for the expected number of AI Builder credits. For help, see [Estimate the AI Builder capacity that's right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
+You might have to estimate your projected use of Sstructured document processing or freeform document processing models, and plan for the expected number of AI Builder credits. For help, see [Estimate the AI Builder capacity that's right for you](https://powerapps.microsoft.com/ai-builder-calculator/).
 
 ### Don't proceed to production use
 
 If you don't purchase licenses following the trial:
 
 - You won't be able to create new models.
+
 - Libraries that were running models will no longer automatically classify files or extract models.
+
 - Any previously classified files or extracted metadata won't be affected.
-- Content centers and any document understanding models won't be automatically deleted. These will remain available for use if you decide to purchase licenses in the future.
-- Form processing models will be stored in the Dataverse (previously named Common Data Service (CDS)) instance of the default Power Platform environment. These could be used with future licensing for Syntex or with AI Builder capabilities in the Power Platform.
+
+- Content centers and any models in them won't be automatically deleted. These will remain available for use if you decide to purchase licenses in the future.
+
+- Structured document processing or freeform document processing models will be stored in the Dataverse (formerly named Common Data Service (CDS)) instance of the default Power Platform environment. These could be used with future licensing for Syntex or with AI Builder capabilities in the Power Platform.
 
 ## See also
 

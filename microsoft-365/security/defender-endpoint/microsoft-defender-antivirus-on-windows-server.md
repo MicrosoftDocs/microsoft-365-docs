@@ -11,7 +11,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/10/2022
 ms.collection: 
 - m365-security

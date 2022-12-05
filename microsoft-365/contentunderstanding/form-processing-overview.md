@@ -1,66 +1,60 @@
 ---
-title: Form processing overview in Microsoft Syntex
+title: Overview of structured document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to use AI Build to create form processing models in Microsoft Syntex.
+description: Learn how to use AI Builder to create structured document processing models in Microsoft Syntex.
 ---
 
-# Form processing overview in Microsoft Syntex
-
- ![AI Builder.](../media/content-understanding/ai-builder.png)</br>
-
-Microsoft Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/overview) form processing to create models within SharePoint document libraries.
-
-You can use AI Builder form processing to create AI models that use machine learning technology to identify and extract key-value pairs and table data from structured or semi-structured documents, such as forms and invoices.
-
-Organizations often receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key/value pairs, and tables from your documents, form processing automates this process. 
+# Overview of structured document processing in Microsoft Syntex
 
 > [!NOTE]
-> See the [Syntex adoption: Get started guide](./adoption-getstarted.md) for more information about form processing scenario examples.
+> *Structured document processing* was known as *form processing* in previous releases.
 
-For example, you can create a form processing model that identifies all purchase order documents that are uploaded to the document library. From each purchase order, you can then extract and display specific data that is important to you, such as *PO Number*, *Date*, or *Total Cost*.
+Use the structured document processing model ([layout method](create-syntex-model.md#train-a-custom-model)) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
 
-![Doc library view.](../media/content-understanding/doc-lib-done.png)</br>  
+Microsoft Syntex uses Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create structured document processing models within SharePoint document libraries.
+<!---
+ ![AI Builder.](../media/content-understanding/ai-builder.png)
+--->
+You can use AI Builder document processing to create structured document processing models that use machine learning technology to identify and extract key-value pairs and table data from structured or semi-structured documents, such as forms and invoices.
 
-You use example files to train your model and define the information to be extracted from your form. The layout of your document is learned by training your model. You only need five form documents to get started. AI Builder will analyze your example files for key-value pairs, and you can also manually identify ones that might not have been detected.  AI builder lets you test the accuracy of your model on your example files.
+Organizations often receive invoices in large quantities from various sources, such as mail, fax, and email. Processing these documents and manually entering them into a database can take a considerable amount of time. By using AI to extract the text, key-value pairs, and tables from your documents, Syntex automates this process. 
 
-After you train and publish your model, your model creates a [Power Automate flow](/power-automate/getting-started). The flow runs when a file is uploaded to the SharePoint document library and will extract data that has been identified in the model. The extracted data will display in columns in your model's document library view.
+> [!NOTE]
+> For more ideas about how to use these models in your organization, see [Get started driving adoption](adoption-getstarted.md) and [Scenarios and use cases](adoption-scenarios.md).
 
-An Office 365 admin needs to [enable form processing](./set-up-content-understanding.md) for the SharePoint document library for users to be able to [create a form processing model](create-a-form-processing-model.md) in it. You can select the sites during setup, or after setup in your management settings.
+For example, you can create a structured document processing model that identifies all documents that are uploaded to the document library. From each document, you can then extract and display specific data that is important to you.
 
-## File limitations
+![Screenshot showing the document library view.](../media/content-understanding/doc-lib-done.png)  
 
-When using form processing models, make sure to note the [requirements and limitations for file usage](/ai-builder/form-processing-model-requirements).
+You use example files to train your model and define the information to be extracted from your form. The layout of your document is learned by training your model. You only need five form documents to get started. Syntex will analyze your example files for key-value pairs, and you can also manually identify ones that might not have been detected.  AI builder lets you test the accuracy of your model on your example files.
 
-## Supported languages
+You can only create a structured document processing model in SharePoint document libraries for which it's enabled. If it has been enabled, you're able to see the **Classify and extract** option in your document library. 
 
-Form processing supports documents in more than 73 languages. For the list of languages, see [Form processing language support](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support).
+![Screenshot showing the AI Builder model.](../media/content-understanding/create-ai-builder-model2.png)
 
-## Multi-Geo environments
+If you need it enabled on your document library, contact your Microsoft 365 admin.
 
-When setting up Syntex in a [Microsoft 365 Multi-Geo environment](../enterprise/microsoft-365-multi-geo.md), you can only configure it to use form processing in the central location. If you want to use form processing in a satellite location, contact Microsoft support.
+## Requirements
 
-## Custom environments
-
-If you use a custom environment (rather than the default environment) for Power Platform processing, there are additional setup requirements. For more information, see [Custom Power Platform environments](set-up-content-understanding.md#requirements).
-
+For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#structured-document-processing).
 
 ## See also
-  
+
+[Compare custom models](difference-between-document-understanding-and-form-processing-model.md)
+
+[Train a structured document processing model](create-a-form-processing-model.md)
+
 [Power Automate documentation](/power-automate/)
-
-[Create a form processing model](create-a-form-processing-model.md)
-
-[Document understanding overview](document-understanding-overview.md)
 
 [Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)

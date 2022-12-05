@@ -5,7 +5,7 @@ author: samanro
 ms.author: samanro
 ms.reviewer: aaglick
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 ms.collection: 
   - m365-frontline
   - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-
+ms.date: 10/28/2022
 ---
 
 # Start with a pilot deployment of Microsoft 365 for frontline workers

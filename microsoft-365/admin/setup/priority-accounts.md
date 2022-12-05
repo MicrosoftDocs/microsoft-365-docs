@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - Adm_O365
 - Adm_TOC
@@ -34,7 +35,7 @@ To help your organization protect these accounts, you can now designate specific
 
 - **Premium Mail Flow Monitoring** - Healthy mail flow can be critical to business success, and delivery delays or failures can have a negative impact on the business. You can choose a threshold for failed or delayed emails, receive alerts when that threshold is exceeded, and view a report of email issues for priority accounts. For more information, check out [Email issues for priority accounts report in the modern EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-For security best practices for priority accounts, see [Security recommendations for priority accounts](../../security/office-365-security/security-recommendations-for-priority-accounts.md).
+For security best practices for priority accounts, see [Security recommendations for priority accounts](../../security/office-365-security/priority accounts-security-recommendations.md).
 
 ## Before you begin
 

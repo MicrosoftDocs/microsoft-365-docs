@@ -1,12 +1,12 @@
 ---
-title: Automate document generation with Microsoft Syntex and Power Automate (preview)
+title: Automate document generation with Microsoft Syntex and Power Automate (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
     - enabler-strategic
@@ -74,4 +74,4 @@ Follow these steps to automatically generate documents using a modern template a
 
 ## See also
 
- [Create documents using content assembly in Microsoft Syntex](content-assembly.md)
+ [Overview of content assembly in Microsoft Syntex](content-assembly.md)

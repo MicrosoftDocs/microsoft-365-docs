@@ -13,6 +13,7 @@ ms.collection:
   - m365-security
   - m365initiative-defender-office365
   - EngageScoreSep2022
+  - ContentEngagementFY23
 description: Security in Office 365, from EOP to Defender for Office 365 Plans 1 and 2, Standard vs. Strict security configurations, and more. Understand what you have, and how to secure your properties.
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -146,7 +147,7 @@ If you're a Security Admin, you may need to configure DKIM or DMARC for your mai
 
 [See the specific recommended 'golden' configs](recommended-settings-for-eop-and-office365.md) and [use their recommended presets to configure security policies quickly](preset-security-policies.md)
 
-Catch up on [what's new in Microsoft Defender for Office 365 (including EOP developments)](whats-new-in-defender-for-office-365.md)
+Catch up on [what's new in Microsoft Defender for Office 365 (including EOP developments)](defender-for-office-365-whats-new.md)
 
 [Use Threat Explorer or Real-time detections](threat-explorer.md)
 

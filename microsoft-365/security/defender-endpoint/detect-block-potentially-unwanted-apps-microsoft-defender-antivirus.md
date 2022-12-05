@@ -13,7 +13,7 @@ audience: ITPro
 ms.reviewer: mimilone, julih
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier2
