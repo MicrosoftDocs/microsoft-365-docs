@@ -1,5 +1,5 @@
 ---
-title: Help your clients and customers use virtual appointments
+title: Help your clients and customers use virtual appointments scheduled with the Bookings app in Teams
 author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
@@ -19,25 +19,26 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
+  - tier1
 ms.reviewer: 
 description: Customizable resources and infographics you can add to your website to help your clients understand how to use virtual appointments that have been scheduled in Bookings with your organization. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 11/02/2022
+ms.date: 12/05/2022
 ---
 
 # Help your clients and customers use virtual appointments scheduled with Bookings
 
-Now that your organization has begun using Microsoft Teams and the Bookings app for virtual appointments, you'll need to make sure that your clients and customers understand how to book and join these appointments.
+Now that your organization has begun using Microsoft Teams and the Bookings app for virtual appointments, you'll need to make sure that your clients and customers understand how to join these appointments.
 
-Watch this video for a quick overview of what virtual appointments can do for your organization.
+Watch this video for a quick overview of what Virtual Appointments can do for your organization.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
 ## What's included in this toolkit
 
-This toolkit is intended to help you help your customers and clients successfully join a virtual appointment. You can customize the resources we provide and include links to them in your communications about virtual appointments. This toolkit includes:
+This toolkit is intended to help you help your customers and clients successfully join a virtual appointment that's scheduled using Bookings. You can customize the resources we provide and include links to them in your communications about virtual appointments. This toolkit includes:
 
 [Guidance for your website](#guidance-for-your-website): <br> An FAQ about virtual appointments that you can customize and then host on your website. Make sure to add your own links, and any additional information that your customers need to know about your policies.
 
@@ -51,7 +52,7 @@ Infographics that you can customize for your organization.
 
 Let your customers know what to expect with virtual appointments by answering common questions. All you need to do is edit this Q&A to align with your virtual appointment policies, and paste it on your website.
 
-### Virtual appointments basics
+### Virtual Appointments basics
 
 **What is a virtual appointment?**
 
@@ -87,16 +88,17 @@ You can link to your organization’s cancellation and rescheduling policy here,
 
 **What equipment do I need for a virtual appointment?**
 
-Customers can join a virtual appointment from any web browser or through the Microsoft Teams app. List here if your organization has additional specifications, such as a high-quality webcam or microphone. If your healthcare organization has EHR integrated into teams, patients can join visits from your healthcare portal.
+Customers can join a virtual appointment from any web browser or through the Microsoft Teams app. List here if your organization has additional specifications, such as a high-quality webcam or microphone. If your healthcare organization has integrated your Electronic Health Record (EHR) system with Teams, patients can join visits from your healthcare portal.
 
 **How do I join a virtual appointment?**
 
-You can link your customers here Join a Bookings appointment as an attendee (microsoft.com) to show them a detailed video and step-by-step process of how to join an appointment.
+Share the [Join a Bookings appointment as an attendee](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0) link with your customers for a detailed video and step-by-step process of how to join an appointment.
 
 ## Resources for your team
 
-Make the most of virtual appointments by making sure your staff members know how to conduct them. You can share these articles and videos with your team members to help them better understand virtual appointments.
+Make the most of Virtual Appointments in your organization by making sure your staff members know how to conduct them. You can share these articles and videos with your team members to help them better understand virtual appointments.
 
+- [Learn about Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Learn how to use the Bookings app in Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
 - [Learn how to join a Bookings appointment](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0).
 - [Conduct an appointment](bookings-virtual-visits.md#conduct-an-appointment).

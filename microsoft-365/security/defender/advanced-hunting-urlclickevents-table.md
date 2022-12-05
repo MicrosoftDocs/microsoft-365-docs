@@ -29,7 +29,6 @@ ms.topic: conceptual
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Office 365
 
 
 The `UrlClickEvents` table in the advanced hunting schema contains information about [Safe Links](../office-365-security/safe-links.md) clicks from email messages, Microsoft Teams, and Office 365 apps in supported desktop, mobile, and web apps. 

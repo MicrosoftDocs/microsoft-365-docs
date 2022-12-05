@@ -9,8 +9,8 @@ ms.subservice: mde
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: 
@@ -22,6 +22,8 @@ ms.collection:
 - tier2
 search.appverid: met150
 ---
+
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Attack surface reduction rules overview
 
@@ -185,6 +187,8 @@ The "engine version" listed for attack surface reduction events in the event log
 - [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 - [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 - [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:

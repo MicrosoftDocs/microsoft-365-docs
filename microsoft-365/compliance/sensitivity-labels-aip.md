@@ -80,10 +80,12 @@ Some features are only supported by built-in labeling for Office apps, and won't
     - In Word, users can review and remove the identified sensitive content
 - [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that is integrated into existing user workflows
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support)
+- [Labeling meeting invites from Outlook](sensitivity-labels-meetings.md) (in preview)
 - For labels that let users assign permissions, different permissions (Read or Change) can be granted to users or groups
 - Encrypt-Only for emails
 - Support for account switching
 - Users can't disable labeling
+- [Protect meeting invites](sensitivity-labels-meetings.md) (in preview)
 
 Watch a short demo to see some of these features in action:
 
@@ -96,7 +98,7 @@ To keep informed when new labeling capabilities become available for built-in la
 For the latest Office apps, the AIP add-in is disabled by default, so there's nothing for you to configure:
 
 - Currently rolling out to [Current Channel (Preview)](https://office.com/insider)
-- **Current Channel** and **Monthly Enterprise Channel**: Not before version 2211+ (not yet released)
+- **Current Channel** and **Monthly Enterprise Channel**: Not before version 2212+ (not yet released)
 - **Semi-Annual Channel**: Not before version 2301+ (not yet released)
 
 If you have a version that disabled the AIP add-in by default, and you need to use the AIP add-in rather than built-in labeling, you must [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
@@ -141,8 +143,6 @@ If after making these changes the **Sensitivity** button doesn't display on the 
 In the [newer versions of Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps), the AIP add-in is disabled by default. To enable it, you must configure a new Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**:
 
 - **Use the Azure Information Protection add-in for sensitivity labeling**. Set the value to **1**.
-
-This new setting is still rolling out. If you don't see it yet, wait a few more days and try again.
 
 Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 

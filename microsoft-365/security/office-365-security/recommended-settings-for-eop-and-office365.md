@@ -60,7 +60,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Bulk email threshold & spam properties**|||||
-|**Bulk email threshold** <br><br> _BulkThreshold_|7|6|5|For details, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md).|
+|**Bulk email threshold** <br><br> _BulkThreshold_|7|6|5|For details, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|This setting is only available in PowerShell.|
 |**Increase spam score** settings|Off|Off|Off|All of these settings are part of the Advanced Spam Filter (ASF). For more information, see the [ASF settings in anti-spam policies](#asf-settings-in-anti-spam-policies) section in this article.|
 |**Mark as spam** settings|Off|Off|Off|Most of these settings are part of ASF. For more information, see the [ASF settings in anti-spam policies](#asf-settings-in-anti-spam-policies) section in this article.|
@@ -73,7 +73,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Phishing** detection action <br><br> _PhishSpamAction_|**Move message to Junk Email folder**<sup>\*</sup> <br><br> `MoveToJmf`|**Quarantine message** <br><br> `Quarantine`|**Quarantine message** <br><br> `Quarantine`|<sup>\*</sup> The default value is **Move message to Junk Email folder** in the default anti-spam policy and in new anti-spam policies that you create in PowerShell. The default value is **Quarantine message** in new anti-spam policies that you create in the Microsoft 365 Defender portal.|
 |**High confidence phishing** detection action <br><br> _HighConfidencePhishAction_|**Quarantine message** <br><br> `Quarantine`|**Quarantine message** <br><br> `Quarantine`|**Quarantine message** <br><br> `Quarantine`||
 |**Bulk** detection action <br><br> _BulkSpamAction_|**Move message to Junk Email folder** <br><br> `MoveToJmf`|**Move message to Junk Email folder** <br><br> `MoveToJmf`|**Quarantine message** <br><br> `Quarantine`||
-|**Retain spam in quarantine for this many days** <br><br> _QuarantineRetentionPeriod_|15 days|30 days|30 days|  <br><br> This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).|
+|**Retain spam in quarantine for this many days** <br><br> _QuarantineRetentionPeriod_|15 days|30 days|30 days|  <br><br> This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-about.md).|
 |**Enable spam safety tips** <br><br> _InlineSafetyTipsEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |Enable zero-hour auto purge (ZAP) for phishing messages <br><br> _PhishZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |Enable ZAP for spam messages <br><br> _SpamZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
@@ -85,7 +85,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 
 #### ASF settings in anti-spam policies
 
-For more information about Advanced Spam Filter (ASF) settings in anti-spam policies, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
+For more information about Advanced Spam Filter (ASF) settings in anti-spam policies, see [Advanced Spam Filter (ASF) settings in EOP](anti-spam-policies-asf-settings-about.md).
 
 |Security feature name|Default|Recommended<br/>Standard|Recommended<br/>Strict|Comment|
 |---|:---:|:---:|:---:|---|
@@ -104,11 +104,11 @@ For more information about Advanced Spam Filter (ASF) settings in anti-spam poli
 |**SPF record: hard fail** <br><br> _MarkAsSpamSpfRecordHardFail_|Off|Off|Off||
 |**Sender ID filtering hard fail** <br><br> _MarkAsSpamFromAddressAuthFail_|Off|Off|Off||
 |**Backscatter** <br><br> _MarkAsSpamNdrBackscatter_|Off|Off|Off||
-|**Test mode** <br><br> _TestModeAction_)|None|None|None|For ASF settings that support **Test** as an action, you can configure the test mode action to **None**, **Add default X-Header text**, or **Send Bcc message** (`None`, `AddXHeader`, or `BccMessage`). For more information, see [Enable, disable, or test ASF settings](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
+|**Test mode** <br><br> _TestModeAction_)|None|None|None|For ASF settings that support **Test** as an action, you can configure the test mode action to **None**, **Add default X-Header text**, or **Send Bcc message** (`None`, `AddXHeader`, or `BccMessage`). For more information, see [Enable, disable, or test ASF settings](anti-spam-policies-asf-settings-about.md#enable-disable-or-test-asf-settings).|
 
 #### EOP outbound spam policy settings
 
-To create and configure outbound spam policies, see [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md).
+To create and configure outbound spam policies, see [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md).
 
 For more information about the default sending limits in the service, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
@@ -168,7 +168,7 @@ The spoof settings are inter-related, but the **Show first contact safety tip** 
 
 ## Microsoft Defender for Office 365 security
 
-Additional security benefits come with a Microsoft Defender for Office 365 subscription. For the latest news and information, you can see [What's new in Defender for Office 365](whats-new-in-defender-for-office-365.md).
+Additional security benefits come with a Microsoft Defender for Office 365 subscription. For the latest news and information, you can see [What's new in Defender for Office 365](defender-for-office-365-whats-new.md).
 
 > [!IMPORTANT]
 >
@@ -306,7 +306,7 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 |**Action for potentially malicious URLs in Microsoft Office apps**||||||
 |**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps** <br><br> _EnableSafeLinksForOffice_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office apps](safe-links.md#safe-links-settings-for-office-apps).|
 |**Click protection settings**||||||
-|**Track user clicks** <br><br> _TrackUserClicks_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Track user clicks** <br><br> _TrackClicks_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Let users click through to the original URL** <br><br> _AllowClickThrough_|Selected <br><br> `$true`|Selected <br><br> `$true`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Turning off this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL.|
 |**Display the organization branding on notification and warning pages** <br><br> _EnableOrganizationBranding_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|We have no specific recommendation for this setting. <br><br> Before you turn on this setting, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your company logo.|
 |**Notification**||||||

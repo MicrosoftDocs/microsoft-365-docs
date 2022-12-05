@@ -56,7 +56,7 @@ This feature is available for all [model types](model-types-overview.md).
 
 4. Select **Create a model**.
 
-5. On the **Create a model** panel, type the name of the model, select the model type, and then select **Create**.
+5. On the **Create a model** panel, type the name of the model, add a description, and then select **Create**.
 
     ![Screenshot of the Create a model panel.](../media/content-understanding/local-model-create-a-model.png) 
 
