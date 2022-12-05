@@ -34,9 +34,6 @@ Learn how Azure ExpressRoute is used with Microsoft 365 and how to plan the netw
 > [!NOTE]
 > We **do not recommend** ExpressRoute for Microsoft 365 because it does not provide the best connectivity model for the service in most circumstances. As such, Microsoft authorization is required to use this connectivity model. We review every customer request and authorize ExpressRoute for Microsoft 365 only in the rare scenarios where it is necessary. Please read the [ExpressRoute for Microsoft 365 guide](https://aka.ms/erguide) for more information and following a comprehensive review of the document with your productivity, network, and security teams, work with your Microsoft account team to submit an exception if needed. Unauthorized subscriptions trying to create route filters for Microsoft 365 will receive an [error message](https://support.microsoft.com/kb/3181709).
 
-> [!NOTE]
-> Microsoft Defender for Endpoint does not provide integration with Azure ExpressRoute. While this does not stop customers from defining ExpressRoute rules that enable connectivity from a private network to Microsoft Defender for Endpoint cloud services, it is up to the customer to maintain rules as the service or cloud infrastructure evolves.
-
 ## Planning Azure ExpressRoute for Microsoft 365
 
 In addition to internet connectivity, you may choose to route a subset of your Microsoft 365 network traffic over Azure ExpressRoute.
@@ -66,6 +63,9 @@ The following table lists the Microsoft 365 services that are supported over Exp
 <sup>1</sup> Each of these applications has internet connectivity requirements not supported over ExpressRoute, see the [Microsoft 365 endpoints article](./urls-and-ip-address-ranges.md) for more information.
 
 The services that aren't included with ExpressRoute for Microsoft 365 are Microsoft 365 Apps for enterprise client downloads, On-premises Identity Provider Sign-In, and Microsoft 365 (operated by 21 Vianet) service in China.
+
+> [!NOTE]
+> Microsoft Defender for Endpoint does not provide integration with Azure ExpressRoute. While this does not stop customers from defining ExpressRoute rules that enable connectivity from a private network to Microsoft Defender for Endpoint cloud services, it is up to the customer to maintain rules as the service or cloud infrastructure evolves.
 
 ## Implementing ExpressRoute for Microsoft 365
 
