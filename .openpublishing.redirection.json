@@ -9635,5 +9635,25 @@
       "redirect_url": "/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure",
       "redirect_document_id": true
     },
+    {
+      "source_path": "microsoft-365/security/office-365-security/manage-tenant-allow-block-list.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/allow-block-files.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-files-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/allow-block-email-spoof.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-email-spoof-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/allow-block-urls.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure",
+      "redirect_document_id": true
+    },
    ]
   }
