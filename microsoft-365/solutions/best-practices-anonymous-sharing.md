@@ -135,7 +135,7 @@ When you allow anonymous users to upload files, you're at an increased risk of s
 
 For instructions, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/safe-attachments-for-spo-odfb-teams-configure.md).
 
-If you have Microsoft 365 A5 or E5 Security licenses, you can also turn on (and use) the *Safe Documents* feature. For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](../security/office-365-security/safe-docs.md).
+If you have Microsoft 365 A5 or E5 Security licenses, you can also turn on (and use) the *Safe Documents* feature. For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](../security/office-365-security/safe-documents-in-e5-plus-security-about.md).
 
 ## Add copyright information to your files
 
