@@ -96,16 +96,13 @@ Now you're ready to actually purge chat messages from Teams. You'll use the Micr
 For information about using Graph Explorer, see [Use Graph Explorer to try Microsoft Graph APIs](/graph/graph-explorer/graph-explorer-overview).
 
 > [!IMPORTANT]
-> APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the *Version* selector.
-
-> [!IMPORTANT]
 > To perform these three tasks in Graph Explorer, you may have to consent to the eDiscovery.Read.All and eDiscovery.ReadWrite.All permissions. For more information, see the "Consent to permissions" section in [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features#consent-to-permissions).
 
 ### Get the case ID
 
 1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Graph Explorer with an account that's assigned the *Search And Purge* role in the Microsoft Purview compliance portal.
 
-2. Run the following GET request to retrieve the ID for the eDiscovery (Premium) case. Use the value `https://graph.microsoft.com/beta/security/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
+2. Run the following GET request to retrieve the ID for the eDiscovery (Premium) case. Use the value `https://graph.microsoft.com/v1.0/security/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
 
    ![GET request for case Id.](..\media\ediscovery-GraphGetRequestForCaseId.png)
 
@@ -122,7 +119,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Get the collection ID
 
-1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/beta/security/ediscovery/cases('caseId')/sourceCollections` in the address bar of the request query, where CaseId is the ID that you obtained in the previous procedure. Be sure to surround the case ID with parentheses and single quotation marks.
+1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/ediscovery/cases('caseId')/sourceCollections` in the address bar of the request query, where *CaseId* is the ID that you obtained in the previous procedure. Be sure to surround the case ID with parentheses and single quotation marks.
 
    ![GET request for collection Id.](..\media\ediscovery-GraphGetRequestForCollectionId.png)
 
@@ -141,13 +138,11 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Purge the chat messages
 
-1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/beta/security/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` in the address bar of the request query, where *caseId* and *collectionId* are the IDs that you obtained in the previous procedures. Be sure to surround the ID values with parentheses and single quotation marks.
+1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/v1.0/security/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` in the address bar of the request query, where *caseId* and *collectionId* are the IDs that you obtained in the previous procedures. Be sure to surround the ID values with parentheses and single quotation marks.
 
       ![POST request to delete items returned by the collection.](..\media\ediscovery-GraphPOSTRequestToPurgeItems.png)
 
    If the POST request is successful, an HTTP response code is displayed in a green banner stating that the request was accepted.
-
-   ![Response for the purge request.](..\media\ediscovery-GraphResponseForPurge.png)
 
   For more information on purgeData, see [sourceCollection: purgeData](/graph/api/ediscovery-sourcecollection-purgedata).
 
@@ -160,7 +155,7 @@ You can also purge chat messages using PowerShell. For example, to purge message
 Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
 ``
 
-``Invoke-MgGraphRequest  -Method POST -Uri '/beta/security/cases/ediscoveryCases/<case ID>/searches/<collection ID>/purgeData'
+``Invoke-MgGraphRequest  -Method POST -Uri '/v1.0/security/cases/ediscoveryCases/<case ID>/searches/<collection ID>/purgeData'
 ``
 
 For more information on using PowerShell to purge chat messages, see [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata).
@@ -178,17 +173,14 @@ Purged chat messages are moved to the SubstrateHolds folder, which is a hidden m
 
 After you verify that chat messages are purged and removed from the Teams client, you can reapply the holds and retention policies that you removed in Step 4.
 
-<!--
 ## Deleting chat messages in federated environments
 
 Admins can use the procedures in this article to search and delete Teams chat messages in federated environments. However, you must adhere to the following guidelines. These guidelines are based on the organizational ownership of the conversation thread that contains the messages you want to delete. An organization is the owner of a conversation thread that is started by a user in that organization. In other words, when a user starts a chat, the user's organization becomes the owner of the conversation thread.
 
 - Admins can delete the compliance copy in conversation threads owned by their organization. That means compliance copies are purged when the admin who purges the chat messages in Step 5 is in the same organization as the user who initiated the conversation thread that contains the purged messages. If a conversation thread has users in two organizations, compliance copies for the other organization will be retained.
-
 - If a conversation thread has users in two organizations, purged chat messages are removed from the Teams client in both organizations.
-
 - The only way to purge chat messages from user mailboxes in your organization for chat messages in conversation threads owned by another organization is to use retention policies for Teams. For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
--->
+
 
 ## End-user experience
 
