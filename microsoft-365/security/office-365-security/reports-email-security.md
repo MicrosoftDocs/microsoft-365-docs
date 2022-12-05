@@ -804,7 +804,7 @@ In the **View data by System override** and **Chart breakdown by Reason** view, 
 - **ZAP not enabled**
 - **User Safe Sender**
 - **User Safe Domain**
-- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
 - **Third party filter**
 
 In the details table below the chart, the following information is available:
@@ -843,7 +843,7 @@ On the **Threat protection status** page, the ![Export icon.](../../media/m365-c
 In the **View data by System override** and **Chart breakdown by Delivery location** view, the following override reason information is shown in the chart:
 
 - **Junk Mail folder not enabled**
-- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
 
 In the details table below the chart, the following information is available:
 
@@ -867,7 +867,7 @@ If you click **Filter**, the following filters are available:
   - **ZAP not enabled**
   - **User Safe Sender**
   - **User Safe Domain**
-  - **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+  - **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
   - **Third party filter**
 - **Delivery Location**: **Junk Mail folder not enabled** or **SecOps mailbox**.
 - **Direction**:
