@@ -377,7 +377,7 @@
       - name: Switch from a non-Microsoft protection tool to Microsoft Defender for Office 365
         href: ../security/office-365-security/migrate-to-defender-for-office-365.md        
       - name: Security recommendations for priority accounts in Microsoft 365
-        href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+        href: ../security/office-365-security/priority accounts-security-recommendations.md
       - name: Remove a former employee and secure data
         href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
    
