@@ -15,8 +15,6 @@
           href: microsoft-365-network-connectivity-principles.md
         - name: Assessing Microsoft 365 network connectivity
           href: assessing-network-connectivity.md
-        - name: Network planning with ExpressRoute for Office 365
-          href: network-planning-with-expressroute.md
         - name: Plan for network devices that connect to Microsoft 365 services
           href: plan-for-network-devices.md
         - name: Network and migration planning for Microsoft 365
@@ -57,13 +55,11 @@
               href: microsoft-365-networking-china.md
             - name: Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client
               href: /windows/security/identity-protection/vpn/vpn-office-365-optimization
-        - name: ExpressRoute for Office 365
+        - name: ExpressRoute for Microsoft 365
           href: azure-expressroute.md
           items: 
-            - name: Implementing ExpressRoute
-              href: implementing-expressroute.md
-            - name: Routing with ExpressRoute for Office 365
-              href: routing-with-expressroute.md
+            - name: Network planning with ExpressRoute for Microsoft 365
+              href: network-planning-with-expressroute.md
     - name: Manage
       items: 
         - name: Office 365 endpoints
@@ -92,8 +88,6 @@
           href: network-planning-and-performance.md
         - name: Monitor connectivity
           href: monitor-connectivity.md
-        - name: Managing ExpressRoute
-          href: managing-expressroute-for-connectivity.md
     - name: Microsoft 365 Networking Partner Program
       href: microsoft-365-networking-partner-program.md
 
