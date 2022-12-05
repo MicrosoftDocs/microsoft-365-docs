@@ -52,7 +52,7 @@ Defender for Office 365 can help you understand why emails are getting delivered
 
 ## Handling malicious emails landing in the quarantine folder of end users
 
-1. End users receive an [email digest](quarantine-quarantine-notifications.md) about quarantined messages as per the settings enabled by admins.
+1. End users receive an [email digest](../quarantine-quarantine-notifications.md) about quarantined messages as per the settings enabled by admins.
 2. End users can preview the messages in quarantine, block the sender, and submit those messages to Microsoft for analysis.
 
 ## Handling malicious emails landing in the quarantine folder of admins
