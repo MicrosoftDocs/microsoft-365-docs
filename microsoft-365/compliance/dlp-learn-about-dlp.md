@@ -108,7 +108,7 @@ Evaluate the impact of the controls by implementing them with a DLP policy in te
 While in test mode, monitor the outcomes of the policy and fine-tune it so that it meets your control objectives while ensuring you aren't adversely or inadvertently impacting valid user workflows and productivity. Here are some examples of things to fine-tune:
 
 - adjusting the locations and people/places that are in or out of scope
-- tune the conditions and exceptions that are used to determine if an item and what is being done with it matches the policy
+- tune the conditions that are used to determine if an item and what is being done with it matches the policy
 - the sensitive information definition/s
 - the actions
 - the level of restrictions
@@ -126,8 +126,6 @@ Once the policy meets all your objectives, turn it on. Continue to monitor the o
 
 > [!NOTE]
 > In general, policies take effect about an hour after being turned on.
-
-<!--See, LINK TO topic for SLAs for location specific  details-->
 
 ## DLP policy configuration overview
 

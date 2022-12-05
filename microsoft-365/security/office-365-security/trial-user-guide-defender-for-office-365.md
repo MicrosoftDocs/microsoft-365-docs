@@ -100,7 +100,7 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 
 - Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 - See where threats are blocked with the [Mailflow status report](view-email-security-reports.md#mailflow-status-report).
-- [Review links](view-reports-for-mdo.md#url-protection-report) that were viewed by users or blocked by the system.
+- [Review links](reports-defender-for-office-365.md#url-protection-report) that were viewed by users or blocked by the system.
 
 :::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-reporting.png":::
 

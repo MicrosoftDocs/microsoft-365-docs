@@ -1058,6 +1058,8 @@
           href: apply-sensitivity-label-automatically.md
         - name: Use sensitivity labels with teams, groups, and sites
           href: sensitivity-labels-teams-groups-sites.md
+        - name: Use sensitivity labels to protect meetings
+          href: sensitivity-labels-meetings.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Configure a default sensitivity label for SharePoint libraries
