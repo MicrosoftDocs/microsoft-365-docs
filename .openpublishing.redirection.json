@@ -9484,6 +9484,51 @@
       "source_path": "microsoft-365/security/office-365-security/configure-review-priority-account.md",
       "redirect_url": "/microsoft-365/security/office-365-security/priority-accounts-turn-on-priority-account-protection",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-high-risk-delivery-pool-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-the-outbound-spam-policy.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-policies-configure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/external-email-forwarding.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/outbound-spam-controls.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-protection-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/quarantine-email-messages.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/manage-quarantined-messages-and-files.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-end-user",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-quarantine-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/view-and-release-quarantined-messages-from-shared-mailboxes.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-shared-mailbox-messages",
+      "redirect_document_id": true
     }
    ]
   }
