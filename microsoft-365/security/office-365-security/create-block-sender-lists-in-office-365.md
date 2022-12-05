@@ -57,7 +57,7 @@ Blocked sender lists and blocked domain lists in anti-spam policies in EOP inspe
 
 ## Use block entries in the Tenant Allow/Block List
 
-Our number one recommended option for blocking mail from specific senders or domains is the Tenant Allow/Block List. For instructions, see [Allow or block email using the Tenant Allow/Block List](allow-block-email-spoof.md).
+Our number one recommended option for blocking mail from specific senders or domains is the Tenant Allow/Block List. For instructions, see [Allow or block email using the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md).
 
 Email messages from these senders are marked as _high confidence spam_ (SCL = 9). What happens to the messages is determined by the [anti-spam policy](configure-your-spam-filter-policies.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
 

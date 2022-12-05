@@ -524,5 +524,5 @@ The instructions to report the message are identical to the steps in [Use the Mi
 - [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](admin-submission.md)
 - [Report false positives and false negatives](submissions-outlook-report-messages.md)
 - [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md)
-- [Allow or block files in the Tenant Allow/Block List](allow-block-files.md)
-- [Allow or block URLs in the Tenant Allow/Block List](allow-block-urls.md)
+- [Allow or block files in the Tenant Allow/Block List](tenant-allow-block-list-files-configure.md)
+- [Allow or block URLs in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md)
