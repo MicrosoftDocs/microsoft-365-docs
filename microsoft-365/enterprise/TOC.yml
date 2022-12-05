@@ -156,12 +156,16 @@
             - name: Exchange Online monitoring
               href: microsoft-365-exchange-monitoring.md
               items:
+                - name: Service advisories for messages pending delivery to external recipients
+                  href: microsoft-365-external-recipient-service-alerts.md
                 - name: Service advisories for Mailbox utilization
                   href: microsoft-365-mailbox-utilization-service-alerts.md
                 - name: Service advisories for eDiscovery throttling
                   href: microsoft-365-ediscovery-throttling-service-advisory.md
                 - name: Service advisories for MRS source delays
                   href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: Service advisories for OAB size limits
+                  href: microsoft-365-oab-size-limit-service-advisory.md
             - name: Microsoft 365 Apps monitoring
               href: microsoft-365-apps-monitoring.md
             - name: Microsoft 365 Teams monitoring
@@ -194,6 +198,8 @@
               href: cross-tenant-onedrive-migration-step6.md
             - name: Step 7 Post migration steps
               href: cross-tenant-onedrive-migration-step7.md
+            - name: FAQs
+              href: cross-tenant-onedrive-migration-faqs.md
         - name: Tenant-to-tenant migrations
           href: microsoft-365-tenant-to-tenant-migrations.md
     - name: Data Residency

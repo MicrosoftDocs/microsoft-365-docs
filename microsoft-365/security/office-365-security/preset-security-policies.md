@@ -92,7 +92,7 @@ Preset security policies use the corresponding policies from the various protect
   - [Anti-phishing policies (spoofing protection)](set-up-anti-phishing-policies.md#spoof-settings) named **Standard Preset Security Policy** and **Strict Preset Security Policy** (spoof settings).
 
   > [!NOTE]
-  > Outbound spam policies are not part of preset security policies. The default outbound spam policy automatically protects members of preset security policies. Or, you can create custom outbound spam policies to customize the protection for members of preset security policies. For more information, see [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md).
+  > Outbound spam policies are not part of preset security policies. The default outbound spam policy automatically protects members of preset security policies. Or, you can create custom outbound spam policies to customize the protection for members of preset security policies. For more information, see [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md).
 
 - **Microsoft Defender for Office 365 policies**: These policies are in organizations with Microsoft 365 E5 or Defender for Office 365 add-on subscriptions:
   - Anti-phishing policies in Defender for Office 365 named **Standard Preset Security Policy** and **Strict Preset Security Policy**, which include:
@@ -201,7 +201,7 @@ You might want to apply the **Standard** or **Strict** preset security policies 
 
    Each entry consists of a display name and an email address. Enter each value in the boxes and then click **Add**. Repeat this step as many times as necessary.
 
-   You can specify a maximum of 301 users, and you can't specify the same user in the user impersonation protection settings in multiple policies.
+   You can specify a maximum of 350 users, and you can't specify the same user in the user impersonation protection settings in multiple policies.
 
    To remove an existing entry from the list, click ![Remove user from impersonation protection icon.](../../media/m365-cc-sc-remove.png).
 
@@ -270,7 +270,7 @@ To verify that you've successfully assigned the **Standard protection** or **Str
 
 For example, for email that's detected as spam (not high confidence spam) verify that the message is delivered to the Junk Email folder for **Standard protection** users, and quarantined for **Strict protection** users.
 
-Or, for [bulk mail](bulk-complaint-level-values.md), verify that the BCL value 6 or higher delivers the message to the Junk Email folder for **Standard protection** users, and the BCL value 4 or higher quarantines the message for **Strict protection** users.
+Or, for [bulk mail](anti-spam-bulk-complaint-level-bcl-about.md), verify that the BCL value 6 or higher delivers the message to the Junk Email folder for **Standard protection** users, and the BCL value 4 or higher quarantines the message for **Strict protection** users.
 
 ## Preset security policies in Exchange Online PowerShell
 

@@ -39,6 +39,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - [Microsoft Teams (preview)](#microsoft-teams-preview)
 - [Analytics](#analytics)
 - [Admin notifications](#admin-notifications)
+- [Inline alert customization](#inline-alert-customization)
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
 
@@ -73,11 +74,25 @@ Policy indicators are segmented into the following areas. You can choose the ind
 
 - **Office indicators**: These include policy indicators for SharePoint sites, Microsoft Teams, and email messaging.
 - **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activities involving all file types, excluding executable (.exe) and dynamic link library (.dll) file activity. If you select *Device indicators*, activity is processed for devices with Windows 10 Build 1809 or higher and macOS (three latest released versions) devices. For both Windows and macOS devices, you must first onboard devices to the compliance portal. Device indicators also include browser signal detection to help your organization detect and act on exfiltration signals for non-executable files viewed, copied, shared, or printed in Microsoft Edge and Google Chrome. For more information on configuring Windows devices for integration with insider risk, see the following [Enable device indicators and onboard Windows devices](insider-risk-management-settings.md#OnboardDevices) section in this article. For more information on configuring macOS devices for integration with insider risk, see the following Enable device indicators and onboard macOS devices section in this article. For more information about browser signal detection, see [Learn about and configure insider risk management browser signal detection](insider-risk-management-browser-support.md).
-- **Security policy violation indicator (preview)**: These include indicators from Microsoft Defender for Endpoint related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Defender for Endpoint license and insider risk integration enabled. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
-- **Health record access indicators (preview)**: These include policy indicators for patient medical record access. For example, attempted access to patient medical records in your electronic medical records (EMR) system logs can be shared with insider risk management healthcare policies. To receive these types of alerts in insider risk management, you must have a healthcare-specific data connector and the HR data connector configured.
-- **Physical access indicators (preview)**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn more about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
-- **Microsoft Defender for Cloud Apps indicators (preview)**: These include policy indicators from shared alerts from Defender for Cloud Apps. Automatically enabled anomaly detection in Defender for Cloud Apps immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these risk management activities in policy alerts, select one or more indicators in this section. To learn more about Defender for Cloud Apps analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
-- **Risk score boosters**: These include raising the risk score for potentially risky activity that is above what is typical or for users with previous cases resolved as a policy violation. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. For risk management activity that is above what is typical, scores are boosted if the detected potentially risky activity deviates from activities that are considered compliant. For users with previous cases resolved as a policy violation, scores are boosted if a user had more than one case previously resolved as a confirmed policy violation. Risk score boosters can only be selected if one or more indicators are selected.
+- **Microsoft Defender for Endpoint indicators (preview)**: These include indicators from Microsoft Defender for Endpoint related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Defender for Endpoint license and insider risk integration enabled. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
+- **Health record access indicators**: These include policy indicators for patient medical record access. For example, attempted access to patient medical records in your electronic medical records (EMR) system logs can be shared with insider risk management healthcare policies. To receive these types of alerts in insider risk management, you must have a healthcare-specific data connector and the HR data connector configured.
+- **Physical access indicators**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn more about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
+- **Microsoft Defender for Cloud Apps indicators**: These include policy indicators from shared alerts from Defender for Cloud Apps. Automatically enabled anomaly detection in Defender for Cloud Apps immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these activities in insider risk management policy alerts, select one or more indicators in this section. To learn more about Defender for Cloud Apps analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
+- **Risky browsing indicators (preview)**: These include policy indicators for user browsing activity related to websites that are considered malicious or risky and pose potential insider risk that may lead to a security or compliance incident. Risky browsing activity refers to users who visit potentially risky websites, such as those associated with malware, pornography, violence, and other unallowed activities. To include these risk management activities in policy alerts, select one or more indicators in this section. To learn about configuring browser exfiltration signals, see [Insider risk management browser signal detection](insider-risk-management-browser-support.md).
+- **Cumulative exfiltration detection (preview)**: These include analyses for cumulative exfiltration detection when a user’s exfiltration activities exceed organization or peer group norms. When a user shares or emails data outside of the organization at a higher rate than the average user, insider risk management policies can be enabled to detect exfiltration anomalies as compared to organization norms and others in the user's peer groups. For example, if a user is in a sales role and communicates regularly with customers and partners outside of the organization, their external email activity will likely be much higher than the organization's average. However, the user's activity may not be unusual compared to the user's teammates, or others with similar job titles.  
+   > [!NOTE]
+   > Peer groups are defined based on organization hierarchy, access to shared SharePoint resources, and job titles in Azure AD. If you enable cumulative exfiltration detection, your organization is agreeing to sharing Azure AD data with the compliance portal, including organization hierarchy and job titles. If your organization does not use Azure AD to maintain this information, then detection may be less accurate. 
+- **Risk score boosters**: These include raising the risk score for activity for the following reasons:
+   - *Activity that is above the user's usual activity for that day*: Scores are boosted if the detected activity deviates from the user's typical behavior.
+   - *User had a previous case resolved as a policy violation*: Scores are boosted in the user has a previous case in Insider risk management that was resolved as a policy violation.
+   - *User is a member of a priority user group*: Scores are boosted if the user is a member of a priority user group.
+   - *User is detected as a potential high impact user*: When this is enabled, users are automatically flagged as potential high impact users based on the following criteria:
+     - User interacts with more sensitive content compared to others in the organization
+     - The user's level in organization's Azure AD hierarchy
+     - The total number of users reporting to the user based on Azure AD hierarchy
+     - The user is a member of an Azure AD built-in role with elevated permissions
+     > [!NOTE] 
+     > When you enable the potential high impact user risk score booster, you're agreeing to share Azure AD data with the compliance portal. If your organization doesn't use sensitivity labels or has not configured organization hierarchy in Azure AD, then this detection may be less accurate. If a user is detected as both a member of a priority user group and also a potential high impact user, their risk score will only be boosted once. 
 
 In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies in global settings. Triggering events can only be modified for policies created from the *Data leaks* or *Data leaks by priority users* templates. Policies created from all other templates don't have customizable triggering indicators or events.
 
@@ -96,7 +111,7 @@ To enable the detection of risk activities on Windows devices and include policy
 Make sure that the Windows 10 devices that you plan on reporting in insider risk management meet these requirements.
 
 1. Must be running Windows 10 x64 build 1809 or later and must have installed the [Windows 10 update (OS Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) from February 20, 2020.
-2. The user account used to log into the Windows 10 device must be an active Azure Active Directory (AAD) account. The Windows 10 device may be [AAD](/azure/active-directory/devices/concept-azure-ad-join), hybrid AAD, or Active Directory joined, or AAD registered.
+2. The user account used to log into the Windows 10 device must be an active Azure AD account. The Windows 10 device may be [Azure AD](/azure/active-directory/devices/concept-azure-ad-join), Azure AD hybrid, joined, or registered.
 3. Install the Microsoft Edge browser on the endpoint device to detect actions for the cloud upload activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### Step 2: Onboarding devices
@@ -157,7 +172,7 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 
 macOS devices (Catalina 10.15 or later) can be onboarded into Microsoft 365 to support insider risk management policies using either Intune or JAMF Pro. For more information and configuration guidance, see [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md).
 
-### Indicator level settings (preview)
+### Indicator level settings
 
 When creating a policy using the policy wizard, you can configure how the daily number of risk events should influence the risk score for insider risk alerts. These indicator settings help you control how the number of occurrences of risk events in your organization should affect the risk score, and so the associated alert severity, for these events. If you prefer, you can also choose to keep the default event threshold levels recommended by Microsoft for all enabled indicators.
 
@@ -172,7 +187,7 @@ For the first daily event level, you set the threshold at *10 or more events per
 - If there are 20-29 SharePoint events that take place after a triggering, the risk score is inherently higher and alert severity levels would tend to be at a medium level.
 - If there are 30 or more SharePoint events that take place after a triggering, the risk score is inherently higher and alert severity levels would tend to be at a high level.
 
-Another option for policy thresholds is to assign the policy triggering event to risk management activity that is above the typical daily amount of users. Instead of being defined by specific threshold settings, each threshold is dynamically customized for anomalous activities detected for in-scope policy users. If threshold activity for anomalous activities is supported for an individual indicator, you can select **Activity is above user's usual activity for the day** in the policy wizard for that indicator. If this option isn't listed, anomalous activity triggering isn't available for the indicator. If the **Activity is above user's usual activity for the day** option is listed for an indicator, but not selectable, you need to enable this option in **Insider risk settings** > **Policy indicators**.
+Another option for policy thresholds is to assign the policy triggering event to risk management activity that is above the typical daily number of users. Instead of being defined by specific threshold settings, each threshold is dynamically customized for anomalous activities detected for in-scope policy users. If threshold activity for anomalous activities is supported for an individual indicator, you can select **Activity is above user's usual activity for the day** in the policy wizard for that indicator. If this option isn't listed, anomalous activity triggering isn't available for the indicator. If the **Activity is above user's usual activity for the day** option is listed for an indicator, but not selectable, you need to enable this option in **Insider risk settings** > **Policy indicators**.
 
 ## Policy timeframes
 
@@ -232,7 +247,7 @@ For each of the following domain settings, you can enter up to 500 domains:
     - Files, folders, sites shared with external domains
     - Files uploaded to external domains (using Microsoft Edge browser)
 
-    By specifying allowed domains in settings, the risk management  activity with these domains is treated similarly to how internal organizational activity is treated. For example, domains added here map to activities may involve sharing content with someone outside your organization (such as sending email to someone with a gmail.com address).
+    By specifying allowed domains in settings, the risk management  activity with these domains is treated similarly to how internal organization activity is treated. For example, domains added here map to activities may involve sharing content with someone outside your organization (such as sending email to someone with a gmail.com address).
 
 - **Third party domains:** If your organization uses third-party domains for business purposes (such as cloud storage), include them here so you can receive alerts for potentially risky activity related to the device indicator *Use a browser to download content from a third-party site*.
  
@@ -280,7 +295,12 @@ To add file paths to exclude, complete the following steps:
 
 1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
 2. In the **File path exclusion** section, select **Add file paths to exclude**.
-3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific folders and sub-folders to be excluded.
+3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific and wildcard folders and sub-folders to be excluded. For more information, see the following examples:
+    - **\\\\ms.temp\LocalFolder\ or C:\temp**: Excludes files directly under the folder and all sub-folders for every file path starting with the entered prefix.
+    - **\public\local\\**: Excludes files from every file path containing entered value. Matches with 'C:\Users\Public\local\\', 'C:\Users\User1\Public\local\', and '\\\\ms.temp\Public\local'.
+    - **C:\Users\\\*\Desktop**: C:\Users\\\*\Desktop: Wildcards are supported. Matches with 'C:\Users\user1\Desktop' and 'C:\Users\user2\Desktop'.
+    - **C:\Users\\\*(2)\Desktop**: Wildcards with numbers are supported. Matches with 'C:\Users\user1\user1\Desktop' and 'C:\Users\user2\Shared\Desktop'.
+
 4. Select **Add file paths** to exclude to configure the file path exclusions or **Close** to discard the changes. 
 
 To delete a file path exclusion, select the file path exclusion and select **Delete**.
@@ -342,7 +362,7 @@ To delete a standalone keyword to exclude, complete the following steps:
 
 Insider risk management alert information is exportable to security information and event management (SIEM) and security orchestration automated response (SOAR) solutions by using the [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema). You can use the Office 365 Management Activity APIs to export alert information to other applications your organization may use to manage or aggregate insider risk information. Alert information is exported and available every 60 minutes via the Office 365 Management Activity APIs.
 
-If your organization uses Microsoft Sentinel, you can also use the out-of-the-box insider risk management data connector to import insider risk alert information to Sentinel. For more information, see [Insider Risk Management (IRM) (Preview)](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview) in the Microsoft Sentinel article.
+If your organization uses Microsoft Sentinel, you can also use the out-of-the-box insider risk management data connector to import insider risk alert information to Sentinel. For more information, see [Insider Risk Management (IRM) (preview)](/azure/sentinel/data-connectors-reference#microsoft-365-insider-risk-management-irm-preview) in the Microsoft Sentinel article.
 
 > [!IMPORTANT]
 > To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts. Exported alerts will display usernames for each alert.
@@ -396,7 +416,7 @@ For example, you need to protect against data leaks for a highly confidential pr
 
 ### Create a priority user group
 
-To create a new priority user group, use the setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To create a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
+To create a new priority user group, use the setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group.)
 
 Complete the following steps to create a priority user group:
 
@@ -416,7 +436,7 @@ Complete the following steps to create a priority user group:
 
 ### Update a priority user group
 
-To update an existing priority user group, you'll use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To update a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
+To update an existing priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group.)
 
 Complete the following steps to edit a priority user group:
 
@@ -432,7 +452,7 @@ Complete the following steps to edit a priority user group:
 
 ### Delete a priority user group
 
-To delete an existing priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To delete a priority user group, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
+To delete an existing priority user group, use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. (You must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group).
 
 > [!IMPORTANT]
 > Deleting a priority user group will remove it from any active policy to which it is assigned. If you delete a priority user group that is assigned to an active policy, the policy will not contain any in-scope users and will effectively be idle and will not create alerts.
@@ -458,7 +478,7 @@ You choose to enable the Physical badging data connector in Microsoft 365 to imp
 
 ### Configure priority physical assets
 
-To configure priority physical assets, you'll configure the Physical badging connector and use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To configure priority physical assets, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin role group*.
+To configure priority physical assets, you'll configure the Physical badging connector and use setting controls in the **Insider risk management** solution in the Microsoft Purview compliance portal. To configure priority physical assets, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group.
 
 Complete the following steps to configure priority physical assets:
 
@@ -477,7 +497,7 @@ Complete the following steps to configure priority physical assets:
 
 ### Delete a priority physical asset
 
-To delete an existing priority physical asset, you'll use setting controls in the Insider risk management solution in the Microsoft Purview compliance portal. To delete a priority physical asset, you must be a member of the Insider Risk Management or Insider Risk Management Admin role group.
+To delete an existing priority physical asset, you'll use setting controls in the Insider risk management solution in the Microsoft Purview compliance portal. You must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group.
 
 > [!IMPORTANT]
 > Deleting a priority physical asset removes it from examination by any active policy to which it was previously included. Alerts generated by activities associated with the priority physical asset aren't deleted.
@@ -510,7 +530,7 @@ The following Power Automate templates are provided to customers to support proc
 
 To create a Power Automate flow from a recommended  insider risk management template, you'll use the settings controls in the **Insider risk management** solution in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**.
 
-To create a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To create a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
+To create a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group. To create a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to create a Power Automate flow from a recommended insider risk management template:
 
@@ -548,7 +568,7 @@ Complete the following steps to create a custom Power Automate template for insi
 
 By default, Power Automate flows created by a user are only available to that user. For other insider risk management users to have access and use a flow, the flow must be shared by the flow creator. To share a flow, you'll use the settings controls in the **Insider risk management solution** in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the Automate control when working directly in the **Cases** or **Users dashboard** pages. Once you've shared a flow, everyone who it has been shared with can access the flow in the **Automate** control dropdown in the **Case** and **User dashboards**.
 
-To share a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To share a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
+To share a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group. To share a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to share a Power Automate flow:
 
@@ -562,7 +582,7 @@ Complete the following steps to share a Power Automate flow:
 
 To edit a flow, you'll use the settings controls in the **Insider risk management** solution in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**.
 
-To edit a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To edit a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
+To edit a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group. To edit a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to edit a Power Automate flow:
 
@@ -575,7 +595,7 @@ Complete the following steps to edit a Power Automate flow:
 
 To delete a flow, you'll use the settings controls in the **Insider risk management** solution in the Microsoft Purview compliance portal or the **Manage Power Automate flows** option from the **Automate** control when working directly in the **Cases** or **Users dashboards**. When a flow is deleted, it's removed as an option for all users.
 
-To delete a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admin* role group. To delete a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
+To delete a Power Automate flow in the settings area, you must be a member of the *Insider Risk Management* or *Insider Risk Management Admins* role group. To delete a Power Automate flow with the **Manage Power Automate flows** option, you must be a member of at least one insider risk management role group.
 
 Complete the following steps to delete a Power Automate flow:
 
@@ -633,14 +653,14 @@ Analytics scans for risk management activity from several sources to help identi
 
 - **Microsoft 365 audit logs**: Included in all scans, this is the primary source for identifying most of the potentially risky activities.
 - **Exchange Online**: Included in all scans, Exchange Online activity helps identify activities where data in attachments are emailed to external contacts or services.
-- **Azure Active Directory**: Included in all scans, Azure Active Directory history helps identify risky activities associated with users with deleted user accounts.
+- **Azure Active Directory**: Included in all scans, Azure AD history helps identify risky activities associated with users with deleted user accounts.
 - **Microsoft 365 HR data connector**: If configured, HR connector events help identify risky activities associated with users that have resignation or upcoming termination dates.
 
 Analytics insights from scans are based on the same risk management activity signals used by insider risk management policies and report results based on both single and sequence user activities. However, the risk scoring for analytics is based on up to 10 days of activity while insider risk policies use daily activity for insights. When you first enable and run analytics in your organization, you'll see the scan results for one day. If you leave analytics enabled, you'll see the results of each daily scan added to the insight reports for a maximum range of the previous 10 days of activity.
 
 ### Enable analytics and start your scan
 
-To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admin*, or *Microsoft 365 Global admin* role group.
+To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or *Microsoft 365 Global admin* role group.
 Complete the following steps to enable insider risk analytics:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management**.
@@ -651,7 +671,7 @@ Complete the following steps to enable insider risk analytics:
 
 ### Viewing analytics insights and creating new policies
 
-After the first analytics scan is complete for your organization, members of the *Insider Risk Management Admin* role group will automatically receive an email notification and can view the initial insights and recommendations for potentially risky activities by your users. Daily scans continue unless you turn off analytics for your organization. Email notifications to admins are provided for each of the three in-scope categories for analytics (data leaks, theft, and exfiltration) after the first instance of potentially risky activity in your organization. Email notifications aren't sent to admins for follow-up risk management activity detection resulting from the daily scans. If analytics in **Insider risk management** > **Settings** > **Analytics** are disabled and then re-enabled in your organization, automatic email notifications are reset and emails are sent to members of the *Insider Risk Management Admin* role group for new scanning insights.
+After the first analytics scan is complete for your organization, members of the *Insider Risk Management Admins* role group will automatically receive an email notification and can view the initial insights and recommendations for potentially risky activities by your users. Daily scans continue unless you turn off analytics for your organization. Email notifications to admins are provided for each of the three in-scope categories for analytics (data leaks, theft, and exfiltration) after the first instance of potentially risky activity in your organization. Email notifications aren't sent to admins for follow-up risk management activity detection resulting from the daily scans. If analytics in **Insider risk management** > **Settings** > **Analytics** are disabled and then re-enabled in your organization, automatic email notifications are reset and emails are sent to members of the *Insider Risk Management Admins* role group for new scanning insights.
 
 To view potential risks for your organization, go to the **Overview** tab and select **View results** on the **Insider risk analytics** card. If the scan for your organization isn't complete, you'll see a message that the scan is still active.
 
@@ -660,7 +680,7 @@ To view potential risks for your organization, go to the **Overview** tab and se
 For completed analyses, you'll see the potential risks discovered in your organization and insights and recommendations to address these risks. Identified risks and specific insights are included in reports grouped by area, the total number of users with identified risks, the percentage of these users with potentially risky activities, and a recommended insider risk policy to help mitigate these risks. The reports include:
 
 - **Data leaks insights**: For all users that may include accidental oversharing of information outside your organization or data leaks by users with malicious intent.
-- **Data theft insights**: For departing users or users with deleted Azure Active Directory accounts that may include risky sharing of information outside your organization or data theft by users with malicious intent.
+- **Data theft insights**: For departing users or users with deleted Azure AD accounts that may include risky sharing of information outside your organization or data theft by users with malicious intent.
 - **Top exfiltration insights**: For all users that may include sharing data outside of your organization.
 
 ![Insider risk management analytics overview report.](../media/insider-risk-analytics-overview.png)
@@ -671,7 +691,7 @@ To display more information for an insight, select **View details** to display t
 
 ### Turn off analytics
 
-To turn off insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admin*, or Microsoft 365 *Global admin* role group. After you disable analytics, analytics insight reports will remain static and not be updated for new risks.
+To turn off insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group. After you disable analytics, analytics insight reports will remain static and not be updated for new risks.
 
 Complete the following steps to turn off insider risk analytics:
 
@@ -687,7 +707,7 @@ Admin notifications automatically send an email notification to selectable insid
 - Send a daily email when new high severity alerts are generated. Policies are checked every 24 hours for high severity alerts.
 - Send a weekly email summarizing policies that have unresolved warnings
 
-If you've enabled insider risk management analytics for your organization, members of the *Insider Risk Management Admin* role group automatically receive an email notification for initial analytics insights for data leaks, theft, and exfiltration activities.
+If you've enabled insider risk management analytics for your organization, members of the *Insider Risk Management Admins* role group automatically receive an email notification for initial analytics insights for data leaks, theft, and exfiltration activities.
 
 If you prefer to disable admin and analytics notifications, complete the following steps:
 
@@ -699,17 +719,19 @@ If you prefer to disable admin and analytics notifications, complete the followi
     - **Send an email notification when Analytics is turned off**
 
 4. Select **Save** to configure and exit.
+ 
+![Insider risk management priority admin notifications.](../media/insider-risk-settings-admin-notifications.png)
 
-## Inline alert customization (preview)
+## Inline alert customization
 
 Inline alert customization allows you to quickly tune an insider risk management policy directly from the **Alert dashboard** while reviewing the alert. Alerts are generated when a risk management activity meets the thresholds configured in the related policy. To reduce the number of alerts you get from this type of activity, you can change the thresholds or remove the risk management activity from the policy altogether.
 
-You can enable inline alert customization to allow users assigned to the *Insider Risk Management Analysts* and *Insider Risk Management Investigators* role groups to edit policy thresholds and to disable specific indicators. If inline alert customization isn't enabled, only users assigned to the *Insider Risk Management Admin* or *Insider Risk Management* role groups can edit these policy conditions. Inline alert customization is supported for alerts regardless of the current alert status, allowing analysts and investigators to update policies for *Dismissed* and *Resolved* alerts if needed.
+You can enable inline alert customization to allow users assigned to the *Insider Risk Management Analysts* and *Insider Risk Management Investigators* role groups to edit policy thresholds and to disable specific indicators. If inline alert customization isn't enabled, only users assigned to the *Insider Risk Management Admins* or *Insider Risk Management* role groups can edit these policy conditions. Inline alert customization is supported for alerts regardless of the current alert status, allowing analysts and investigators to update policies for *Dismissed* and *Resolved* alerts if needed.
 
 Complete the following steps to enable inline alert customization:
 
 1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
-2. Select the **Inline alert customization (preview)** page.
+2. Select the **Inline alert customization** page.
 3. Enable inline alert customization for insider risk management.
 4. Select **Save** to configure and exit.
 
@@ -728,3 +750,5 @@ After choosing an option, analysts and investigators can choose two options to u
 
 - **Save and dismiss alert**: Saves the changes to the policy and updates the alert status to *Resolved*.
 - **Save only**: Saves the changes to the policy, but the alert status remains the same.
+
+![Insider risk management priority inline alerts.](../media/insider-risk-settings-inline-alerts.png)
