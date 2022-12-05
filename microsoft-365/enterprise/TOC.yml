@@ -111,8 +111,6 @@
               href: microsoft-365-integration.md
             - name: Azure integration
               href: azure-integration.md
-            - name: Azure ExpressRoute
-              href: azure-expressroute.md
         - name: Hybrid modern authentication
           items: 
             - name: Prerequisites for Skype for Business Server and Exchange Server
