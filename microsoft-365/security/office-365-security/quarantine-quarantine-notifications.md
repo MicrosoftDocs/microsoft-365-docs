@@ -33,7 +33,7 @@ ms.service: microsoft-365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantined messages in EOP](quarantine-email-messages.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantined messages in EOP](quarantine-about.md).
 
 _Quarantine policies_ define what users are allowed to do to quarantined messages based on why the message was quarantined (for supported features). For more information, see [Quarantine policies](quarantine-policies.md). Quarantine polices also control whether the affected recipients (including shared mailboxes) get periodic _quarantine notifications_ about their quarantined messages. Quarantine notifications are the replacement for end-user spam notifications for all supported protection features (not just anti-spam policy verdicts).
 
@@ -64,7 +64,7 @@ By default, the following actions are available in the quarantine notification f
 
 - **Block Sender**: Click this link to add the sender to the Blocked Senders list on _your_ mailbox. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 - **Release**: You can release the message here without going to **Quarantine** in the Microsoft 365 Defender portal.
-- **Review**: Click this link to go to **Quarantine** in the Microsoft 365 Defender portal, where you can (depending on why the message was quarantined) view, release, delete or report your quarantined messages. For more information, see [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md).
+- **Review**: Click this link to go to **Quarantine** in the Microsoft 365 Defender portal, where you can (depending on why the message was quarantined) view, release, delete or report your quarantined messages. For more information, see [Find and release quarantined messages as a user in EOP](quarantine-end-user.md).
 
 :::image type="content" source="../../media/end-user-spam-notification.png" alt-text="The example of a quarantine notification" lightbox="../../media/end-user-spam-notification.png":::
 
