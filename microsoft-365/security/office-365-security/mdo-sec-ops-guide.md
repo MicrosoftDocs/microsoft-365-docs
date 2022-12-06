@@ -73,7 +73,7 @@ Incident queue management and the responsible personas are described in the foll
 
 In Defender for Office 365, you manage false positives (good mail marked as bad) and false negatives (bad mail allowed) in the following locations:
 
-- The [Submissions portal (admin submissions)](admin-submission.md).
+- The [Submissions portal (admin submissions)](submissions-admin.md).
 - The [Tenant Allow/Block List](manage-tenant-allow-block-list.md)
 - [Threat Explorer](threat-explorer.md)
 
@@ -248,7 +248,7 @@ Organizations have multiple options for configuring user reported messages. Depe
   - **Send the reported messages to**: **Microsoft only**.
   - **Send the reported messages to**: **Microsoft and my reporting mailbox**.
 
-  Security teams members should do add-hoc [admin submissions](admin-submission.md) when false positives or false negatives that were not reported by users were discovered by the operations teams.
+  Security teams members should do add-hoc [admin submissions](submissions-admin.md) when false positives or false negatives that were not reported by users were discovered by the operations teams.
 
 - When user reported messages are configured to send messages only to the organization's mailbox, security teams should actively send user-reported false positives and false negatives to Microsoft via admin submissions.
 
@@ -264,7 +264,7 @@ For more information, see [Reporting an email in Defender for Office 365 - Micro
 
 Security team members can do submissions from multiple locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>:
 
-- [Admin submission](admin-submission.md): Use the Submissions portal to submit suspected spam, phishing, URLs, and files to Microsoft.
+- [Admin submission](submissions-admin.md): Use the Submissions portal to submit suspected spam, phishing, URLs, and files to Microsoft.
 - Directly from Threat Explorer using one of the following message actions:
   - Report clean
   - Report phishing
@@ -275,7 +275,7 @@ Security team members can do submissions from multiple locations in the Microsof
 
 For the short-term mitigation of false negatives, security teams can directly manage block entries for files, URLs, and domains or email addresses in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 
-For the short-term mitigation of false positives, security teams can't directly manage allow entries for domains and email addresses in the Tenant Allow/Block List. Instead, they need to use [admin submissions](admin-submission.md) to report the email message as a false positive. For instructions, see [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+For the short-term mitigation of false positives, security teams can't directly manage allow entries for domains and email addresses in the Tenant Allow/Block List. Instead, they need to use [admin submissions](submissions-admin.md) to report the email message as a false positive. For instructions, see [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 
 [Quarantine](manage-quarantined-messages-and-files.md) in Defender for Office 365 holds potentially dangerous or unwanted messages and files. Security teams can view, release, and delete all types of quarantined messages for all users. This capability enables security teams to respond effectively when a false positive message or file is quarantined.
 

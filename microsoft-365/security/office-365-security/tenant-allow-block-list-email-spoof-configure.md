@@ -77,7 +77,7 @@ To create block entries for spoofed senders, see the [Use the Microsoft 365 Defe
 
 When you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report email messages as **Should have been blocked (False negative)**, you can select **Block all emails from this recipient** to add a block entry for the sender on the **Domains & addresses** tab in the Tenant Allow/Block List.
 
-For instructions, see [Report questionable email to Microsoft](admin-submission.md#report-questionable-email-to-microsoft).
+For instructions, see [Report questionable email to Microsoft](submissions-admin.md#report-questionable-email-to-microsoft).
 
 #### Use the Microsoft 365 Defender portal to create block entries for domains and email addresses in the Tenant Allow/Block List
 
@@ -129,7 +129,7 @@ For detailed syntax and parameter information, see [New-TenantAllowBlockListItem
 
 You can't create allow entries for domains and email addresses directly in the Tenant Allow/Block List. Instead, you use the Submissions portal at <https://security.microsoft.com/reportsubmission> to report the message as a false positive, which also adds an allow entry for the sender on the **Domains & addresses** tab in the Tenant Allow/Block List.
 
-For instructions, see [Report good email to Microsoft](admin-submission.md#report-good-email-to-microsoft).
+For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 > [!NOTE]
 > Microsoft does not allow you to create allow entries directly as it leads to creation of allows that are not needed, thus exposing your organization to malicious email which might otherwise have been filtered by the system.
@@ -287,7 +287,7 @@ You have the following options to create block entries for spoofed senders:
 
 Submitting messages that were blocked by [spoof intelligence](learn-about-spoof-intelligence.md) to Microsoft in the **Submissions** portal at <https://security.microsoft.com/reportsubmission> adds the sender as an allow entry for the sender on the **Spoofed senders** tab in Tenant Allow/Block List.
 
-For instructions, see [Report good email to Microsoft](admin-submission.md#report-good-email-to-microsoft).
+For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 > [!NOTE]
 > When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List.
@@ -521,7 +521,7 @@ The instructions to report the message are identical to the steps in [Use the Mi
 
 ## Related articles
 
-- [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](admin-submission.md)
+- [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](submissions-admin.md)
 - [Report false positives and false negatives](submissions-outlook-report-messages.md)
 - [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md)
 - [Allow or block files in the Tenant Allow/Block List](tenant-allow-block-list-files-configure.md)

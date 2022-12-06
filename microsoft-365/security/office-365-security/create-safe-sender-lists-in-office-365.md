@@ -46,7 +46,7 @@ The rest of this article contains specifics about each method.
 >
 > Be careful to closely monitor _any_ exceptions that you make to spam filtering using safe sender lists.
 >
-> Always submit messages in your safe sender lists to Microsoft for analysis. For instructions, see [Report good email to Microsoft](admin-submission.md#report-good-email-to-microsoft). If the messages or message sources are determined to be benign, Microsoft can automatically allow the messages, and you won't need to manually maintain the entry in safe sender lists.
+> Always submit messages in your safe sender lists to Microsoft for analysis. For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft). If the messages or message sources are determined to be benign, Microsoft can automatically allow the messages, and you won't need to manually maintain the entry in safe sender lists.
 >
 > Instead of allowing email, you also have several options to block email from specific sources using _blocked sender lists_. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
