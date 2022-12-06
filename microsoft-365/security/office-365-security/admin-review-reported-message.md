@@ -27,7 +27,7 @@ search.appverid: met150
 
 In Microsoft 365 organizations with Exchange Online mailboxes and Microsoft Defender for Office 365, admins can send templated messages back to end users after they review reported messages. The templates can be customized for your organization and based on your admin's verdict as well.
 
-The feature is designed to give feedback to your users but doesn't change the verdicts of messages in the system. To help Microsoft update and improve its filters, you need to submit messages for analysis using [Admin submission](admin-submission.md).
+The feature is designed to give feedback to your users but doesn't change the verdicts of messages in the system. To help Microsoft update and improve its filters, you need to submit messages for analysis using [Admin submission](submissions-admin.md).
 
 You will only be able to mark and notify users of review results if the message was reported as a [false positives or false negatives](submissions-outlook-report-messages.md).
 

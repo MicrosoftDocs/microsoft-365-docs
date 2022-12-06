@@ -39,7 +39,7 @@ The available blocked sender lists are described in the following list in order 
 The rest of this article contains specifics about each method.
 
 > [!NOTE]
-> Always submit messages in your blocked sender lists to Microsoft for analysis. For instructions, see [Report questionable email to Microsoft](admin-submission.md#report-questionable-email-to-microsoft). If the messages or message sources are determined to be harmful, Microsoft can automatically block the messages, and you won't need to manually maintain the entry in blocked sender lists.
+> Always submit messages in your blocked sender lists to Microsoft for analysis. For instructions, see [Report questionable email to Microsoft](submissions-admin.md#report-questionable-email-to-microsoft). If the messages or message sources are determined to be harmful, Microsoft can automatically block the messages, and you won't need to manually maintain the entry in blocked sender lists.
 >
 > Instead of blocking email, you also have several options to allow email from specific sources using _safe sender lists_. For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 

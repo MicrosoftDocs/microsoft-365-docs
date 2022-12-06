@@ -37,7 +37,7 @@ User reported message settings and the reporting mailbox work with the following
 - [The Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md)
 - [Third-party reporting tools](#options-for-third-party-reporting-tools)
 
-Delivering user reported messages to a reporting mailbox instead of directly to Microsoft allows admins to selectively and manually report messages to Microsoft from the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. For more information, see [Admin submission](admin-submission.md).
+Delivering user reported messages to a reporting mailbox instead of directly to Microsoft allows admins to selectively and manually report messages to Microsoft from the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. For more information, see [Admin submission](submissions-admin.md).
 
 > [!NOTE]
 > The _ReportJunkEmailEnabled_ parameter on the [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy) cmdlet no longer controls whether user message reporting is enabled or disabled. User reporting of messages is now controlled on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission> as described in this article.

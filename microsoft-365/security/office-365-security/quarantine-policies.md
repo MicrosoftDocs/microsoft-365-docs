@@ -199,7 +199,7 @@ In _supported_ protection features that quarantine email messages, you can assig
 |Feature|Quarantine policies supported?|Default quarantine policies used|
 |---|:---:|---|
 |[Anti-spam policies](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**High confidence phishing** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>AdminOnlyAccessPolicy (No access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li></ul>|
-|Anti-phishing policies: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection in Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**If message is detected as an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If message is detected as an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**If mailbox intelligence detects and impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Yes|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>Impersonation protection:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li></ul></li></ul>|
+|Anti-phishing policies: <ul><li>[Spoof intelligence protection](anti-phishing-policies-about.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection in Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**If message is detected as an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If message is detected as an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**If mailbox intelligence detects and impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Yes|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>Impersonation protection:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li></ul></li></ul>|
 |[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|Yes|AdminOnlyAccessPolicy (No access)|
 |[Safe Attachments protection](safe-attachments.md): <ul><li>Email messages with attachments that are quarantined as malware by Safe Attachments policies (_Enable_ and _Action_)</li><li>Files quarantined as malware by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Yes</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (No access)</li><li>n/a</li></ul>|
 |[Mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
@@ -285,7 +285,7 @@ For detailed syntax and parameter information, see [Set-HostedContentFilterPolic
 
 ### Anti-phishing policies
 
-Spoof intelligence is available in EOP and Defender for Office 365. User impersonation protection, domain impersonation protection, and mailbox intelligence are available only in Defender for Office 365. For more information, see [Anti-phishing policies in Microsoft 365](set-up-anti-phishing-policies.md).
+Spoof intelligence is available in EOP and Defender for Office 365. User impersonation protection, domain impersonation protection, and mailbox intelligence are available only in Defender for Office 365. For more information, see [Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md).
 
 1. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
 
@@ -318,7 +318,7 @@ Spoof intelligence is available in EOP and Defender for Office 365. User imperso
 
 Full instructions for creating and modifying anti-phishing policies are available in the following topics:
 
-- [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
+- [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
 - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
 #### Anti-phishing policies in PowerShell
@@ -346,7 +346,7 @@ If you'd rather use PowerShell to assign quarantine policies in anti-phishing po
   You need to replace a default quarantine policy with a custom quarantine policy only if you want to change the default end-user capabilities on quarantined messages for that particular verdict.
 
 - A new anti-phishing policy in PowerShell requires an anti-phish policy (settings) using the **New-AntiPhishPolicy** cmdlet and an exclusive anti-phish rule (recipient filters) using the **New-AntiPhishRule** cmdlet. For instructions, see the following topics:
-  - [Use PowerShell to configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
+  - [Use PowerShell to configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
   - [Use Exchange Online PowerShell to configure anti-phishing policies](configure-mdo-anti-phishing-policies.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
 
 This example creates a new anti-phish policy named Research Department with the following settings:
