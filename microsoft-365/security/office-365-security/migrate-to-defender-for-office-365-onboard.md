@@ -149,7 +149,7 @@ Observe the results and make any adjustments as necessary.
 
 ## Step 5: Use data from user reported messages to measure and adjust
 
-As your pilot users report false positives and false negatives, the messages will appear on the **User reported** tab of the [Submissions page in the Microsoft 365 Defender portal](admin-submission.md). You can report the misidentified messages to Microsoft for analysis and use the information to adjust the settings and exceptions in your pilot polices as necessary.
+As your pilot users report false positives and false negatives, the messages will appear on the **User reported** tab of the [Submissions page in the Microsoft 365 Defender portal](submissions-admin.md). You can report the misidentified messages to Microsoft for analysis and use the information to adjust the settings and exceptions in your pilot polices as necessary.
 
 Use the following features to monitor and iterate on the protection settings in Defender for Office 365:
 

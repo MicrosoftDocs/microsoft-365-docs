@@ -30,11 +30,11 @@ ms.service: microsoft-365-security
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the **Submissions** page in the Microsoft 365 Defender portal. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the **Submissions** page in the Microsoft 365 Defender portal. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](submissions-admin.md).
 
 The Microsoft Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App or OWA) makes it easy to report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
 
-Microsoft uses these submissions to improve the effectiveness of email protection technologies. For example, suppose that people are reporting many messages using the Report Phishing add-in. This information surfaces in the Security Dashboard and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
+Microsoft uses these user reported messages to improve the effectiveness of email protection technologies. For example, suppose that people are reporting many messages using the Report Phishing add-in. This information surfaces in the Security Dashboard and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
 
 You can install either the Report Message or the Report Phishing add-in. If you want your users to report both spam and phishing messages, deploy the Report Message add-in in your organization.
 
@@ -89,7 +89,7 @@ After the add-in is installed and enabled, users will see the following icons:
   - Outlook 2013 SP1 or later
   - Outlook 2016 for Mac
   - Outlook included with Microsoft 365 apps for Enterprise
-  - Outlook app for iOS and Android
+  - Outlook for iOS and Android
 
 - The add-ins are not available for shared, group, or delegated mailboxes (**Report message** will be greyed out).
 

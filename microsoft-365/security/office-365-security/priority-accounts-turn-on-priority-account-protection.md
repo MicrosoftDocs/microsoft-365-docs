@@ -80,7 +80,7 @@ The affects of priority account protection are visible in the following features
 - [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Attack simulation](attack-simulation-training.md#target-users)
 - [Campaign Views](campaigns.md)
-- [Admin submissions and user reported messages](admin-submission.md)
+- [Admin submissions and user reported messages](submissions-admin.md)
 - [Quarantine](quarantine.md)
 
 ### Threat protection status report
