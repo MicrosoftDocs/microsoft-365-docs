@@ -58,7 +58,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 Campaigns is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
 
-:::image type="content" source="../../media/campaigns-overview.png" alt-text="The Campaigns in the Microsoft 365 Defender portal" lightbox="../../media/campaigns-overview.png":::
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="Screenshot that shows the Campaigns in the Microsoft 365 Defender portal." lightbox="../../media/campaigns-overview.png":::
 
 You can also view Campaigns from:
 
@@ -133,7 +133,7 @@ The filterable campaign properties that are available in the **Campaign type** b
   - **Subject**
   - **Attachment filename**
   - **Malware family**
-  - **Tags**: Users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+  - **Tags**: Users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags-about.md).
   - **Delivery action**
   - **Additional action**
   - **Directionality**

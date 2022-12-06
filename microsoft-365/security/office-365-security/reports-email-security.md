@@ -83,7 +83,7 @@ The details table below the graph shows the following information:
 - **Creation time**
 - **User ID**
 - **Action**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
 
@@ -463,7 +463,7 @@ If you click **Filter**, the following filters are available:
 - **Date (UTC)** **Start date** and **End date**.
 - **Detection**: The same values as in the chart.
 - **Protected by**: **MDO** (Defender for Office 365) and **EOP**.
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags-about.md).
 - **Direction**:
   - **All**
   - **Inbound**
@@ -519,7 +519,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -570,7 +570,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -626,7 +626,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**: The same detection technology values from the chart.
 - **Delivery Status**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -676,7 +676,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -731,7 +731,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -804,7 +804,7 @@ In the **View data by System override** and **Chart breakdown by Reason** view, 
 - **ZAP not enabled**
 - **User Safe Sender**
 - **User Safe Domain**
-- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
 - **Third party filter**
 
 In the details table below the chart, the following information is available:
@@ -815,7 +815,7 @@ In the details table below the chart, the following information is available:
 - **Recipients**
 - **System override**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -843,7 +843,7 @@ On the **Threat protection status** page, the ![Export icon.](../../media/m365-c
 In the **View data by System override** and **Chart breakdown by Delivery location** view, the following override reason information is shown in the chart:
 
 - **Junk Mail folder not enabled**
-- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
 
 In the details table below the chart, the following information is available:
 
@@ -853,7 +853,7 @@ In the details table below the chart, the following information is available:
 - **Recipients**
 - **System override**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -867,14 +867,14 @@ If you click **Filter**, the following filters are available:
   - **ZAP not enabled**
   - **User Safe Sender**
   - **User Safe Domain**
-  - **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+  - **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
   - **Third party filter**
 - **Delivery Location**: **Junk Mail folder not enabled** or **SecOps mailbox**.
 - **Direction**:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags-about.md).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -945,7 +945,7 @@ When you hover over a wedge in the pie chart, you can see the message count for 
 
 The details table below the graph shows the senders or recipients and message counts based on the view you selected.
 
-You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**. Users can also filter by user tags. 
+You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**. Users can also filter by user tags.
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
@@ -962,7 +962,7 @@ The **URL protection report** is available only in Microsoft Defender for Office
 > [!IMPORTANT]
 > In order for the **User reported messages** report to work correctly, **audit logging must be turned on** for your Microsoft 365 environment. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-The **User reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md).
+The **User reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web) or the [Microsoft Report Message or Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook).
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **User reported messages** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/userSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**.
 
@@ -1003,7 +1003,7 @@ The details table below the graph shows the following information:
 - **Sender**
 - **Reported reason**
 - **Rescan result**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop-down list:
 
