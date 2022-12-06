@@ -945,7 +945,7 @@ When you hover over a wedge in the pie chart, you can see the message count for 
 
 The details table below the graph shows the senders or recipients and message counts based on the view you selected.
 
-You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**. Users can also filter by user tags. 
+You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**. Users can also filter by user tags.
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
@@ -962,7 +962,7 @@ The **URL protection report** is available only in Microsoft Defender for Office
 > [!IMPORTANT]
 > In order for the **User reported messages** report to work correctly, **audit logging must be turned on** for your Microsoft 365 environment. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
-The **User reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](submissions-users-report-message-add-in-configure.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md).
+The **User reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web) or the [Microsoft Report Message or Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook).
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **User reported messages** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/userSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**.
 
