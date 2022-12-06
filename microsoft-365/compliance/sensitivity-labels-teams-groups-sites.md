@@ -482,7 +482,7 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 
 When somebody adds or removes a sensitivity label to or from a site or group, these activities are also audited but without automatically generating an email.
 
-All these auditing events can be found in the [Sensitivity label activities](audit-log-search.md#sensitivity-label-activities) category. For instructions to search the audit log, see [Search the audit log in the compliance portal](audit-log-search.md).
+All these auditing events can be found in the [Sensitivity label activities](audit-log-activities.md#sensitivity-label-activities) category. For instructions to search the audit log, see [Search the audit log in the compliance portal](audit-log-search.md).
 
 ## How to disable sensitivity labels for containers
 

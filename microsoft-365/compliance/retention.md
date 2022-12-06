@@ -525,7 +525,7 @@ When [auditing is enabled](audit-log-enable-disable.md), auditing events for ret
 
 Administrator configuration for retention policies and retention labels is logged as auditing events when a retention policy or label is created, reconfigured, or deleted.
 
-For the full list of auditing events, see [Retention policy and retention label activities](audit-log-search.md#retention-policy-and-retention-label-activities).
+For the full list of auditing events, see [Retention policy and retention label activities](audit-log-activities.md#retention-policy-and-retention-label-activities).
 
 ### Auditing retention actions
 

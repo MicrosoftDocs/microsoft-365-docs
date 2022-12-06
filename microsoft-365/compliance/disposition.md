@@ -198,7 +198,7 @@ As you can see from the example shown, the actions supported are:
     > [!NOTE]
     > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they can't participate in the disposition review.
 
-Each action taken has a corresponding audit event in the [Disposition review activities](audit-log-search.md#disposition-review-activities) auditing activities group.
+Each action taken has a corresponding audit event in the [Disposition review activities](audit-log-activities.md#disposition-review-activities) auditing activities group.
 
 During a disposition review, the content never moves from its original location, and it's not marked for permanent deletion until this action is selected by a reviewer for the final or only disposition stage.
 

@@ -103,7 +103,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
 
     ![Example of an email notification sent for an activity alert.](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 
-- Here are some common document and email activities that you can create activity alerts for. The tables describe the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **Activities** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log](audit-log-search.md#audited-activities).
+- Here are some common document and email activities that you can create activity alerts for. The tables describe the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **Activities** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log](audit-log-activities.md).
 
     > [!TIP]
     > You might want to create an activity alert for just one activity that's performed by any user. Or you might want to create an activity alert that tracks multiple activities performed by one or more users.
