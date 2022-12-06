@@ -49,13 +49,15 @@ Tamper protection is available for devices that are running one of the following
 - Windows Server 2012 R2
 
 > [!NOTE]
-> Tamper protection in Windows Server 2012 R2 is available for devices onboarded using the modern unified solution package. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+> Tamper protection in Windows Server 2012 R2 is available for devices that were onboarded using the modern, unified solution. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
 Tamper protection is available for devices that are running one of the following versions of macOS:
 
 - Monterey (12)
 - Big Sur (11)
 - Catalina (10.15+)
+
+See [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
 
 ## Overview
 
