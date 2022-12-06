@@ -62,7 +62,7 @@ To move or copy a file from one document library to another, follow these steps.
 
        ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-disable-rules.png)
 
-4. Select **Create**.
+4. When your rule statement is complete, select **Create**.
 
 ## Manage a rule
 
