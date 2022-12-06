@@ -68,7 +68,7 @@ As part of this update, the number of rows for Email records that can be exporte
 > [!NOTE]
 > The user tags feature is in *Preview*, isn't available to everyone, and is subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
 
-User tags identify specific groups of users in Microsoft Defender for Office 365. For more information about tags, including licensing and configuration, see [User tags](user-tags.md).
+User tags identify specific groups of users in Microsoft Defender for Office 365. For more information about tags, including licensing and configuration, see [User tags](user-tags-about.md).
 
 In Threat Explorer, you can see information about user tags in the following experiences.
 
@@ -218,7 +218,7 @@ To improve the hunting process, we've updated Threat Explorer and Real-time dete
 
 ### Filter by user tags
 
-You can now sort and filter on system or custom user tags to quickly grasp the scope of threats. To learn more, see [User tags](user-tags.md).
+You can now sort and filter on system or custom user tags to quickly grasp the scope of threats. To learn more, see [User tags](user-tags-about.md).
 
 > [!IMPORTANT]
 > Filtering and sorting by user tags is currently in public preview. This functionality may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided about it.
@@ -478,7 +478,7 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 
 ## Review email messages reported by users
 
-Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md). To see them, use the [**Email** > **Submissions**](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
+Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Report Message add-in](submissions-users-report-message-add-in-configure.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md). To see them, use the [**Email** > **Submissions**](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 

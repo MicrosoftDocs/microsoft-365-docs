@@ -350,7 +350,7 @@ After a few moments, an allow entry will appear on the **URL** tab on the **Tena
      - **Submitted by**
      - **Reason for submitting**: The values **Not junk**, **Phish**, **Malware**, and **Spam**.
      - **Status**: The values **Pending** and **Completed**.
-     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop-down list.
+     - **Tags**: The default value is **All** or select a [user tag](user-tags-about.md) from the drop-down list.
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
@@ -399,7 +399,7 @@ After a few moments, an allow entry will appear on the **URL** tab on the **Tena
      - **Submitted by**
      - **Reason for submitting**
      - **Status**
-     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop-down list.
+     - **Tags**: The default value is **All** or select a [user tag](user-tags-about.md) from the drop-down list.
 
      When you're finished, click **Apply**.
 
@@ -448,7 +448,7 @@ After a few moments, an allow entry will appear on the **URL** tab on the **Tena
      - **Submitted by**
      - **Reason for submitting**
      - **Status**
-     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop-down list.
+     - **Tags**: The default value is **All** or select a [user tag](user-tags-about.md) from the drop-down list.
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
@@ -476,7 +476,7 @@ If an override was found, the result should be available in several minutes. If 
 
 ## View user submissions to Microsoft
 
-If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User reported message** tab.
+If you've deployed the [Report Message add-in](submissions-users-report-message-add-in-configure.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User reported message** tab.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -513,7 +513,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Reported from**: The values **Microsoft add-in** or **Third party add-in**.
      - **Phish simulation**: The values **Yes** or **No**.
      - **Converted to admin submission**: The values **Yes** or **No**.
-     - **Tags**: The default value is **All** or select a [user tag](user-tags.md) from the drop-down list.
+     - **Tags**: The default value is **All** or select a [user tag](user-tags-about.md) from the drop-down list.
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
@@ -535,7 +535,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
    - To notify users, see [Admin Review for Reported messages](admin-review-reported-message.md)
 
 > [!NOTE]
-> If organizations are configured to send user reported messages to the [custom mailbox only](user-submission.md), reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
+> If organizations are configured to send user reported messages to the [custom mailbox only](submissions-user-reported-messages-files-custom-mailbox.md), reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
 
 ## Undo user submissions
 

@@ -154,7 +154,7 @@ When you select quarantined message from the list, the following information is 
 - **Policy name**
 - **Recipient count**
 - **Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.
-- **Recipient tag**: For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md).
+- **Recipient tag**: For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 - **Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.
 - **Released to**: All email addresses (if any) to which the message has been released.
 - **Not yet released to**: All email addresses (if any) to which the message has not yet been released.

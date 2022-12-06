@@ -65,7 +65,7 @@ If you want to use Exchange Online PowerShell to turn on priority account protec
 
 Microsoft Defender for Office 365 supports priority accounts as tags that can be used as filters in alerts, reports, incidents, and more.
 
-For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md).
+For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
 ## Review differentiated protection from priority account protection
 
@@ -123,5 +123,5 @@ The tabs along the top of the entity page will allow you to investigate email ef
 
 ## More information
 
-- [User tags in Microsoft Defender for Office 365](user-tags.md)
+- [User tags in Microsoft Defender for Office 365](user-tags-about.md)
 - [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)
