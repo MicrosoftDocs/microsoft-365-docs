@@ -83,7 +83,7 @@ The details table below the graph shows the following information:
 - **Creation time**
 - **User ID**
 - **Action**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
 
@@ -463,7 +463,7 @@ If you click **Filter**, the following filters are available:
 - **Date (UTC)** **Start date** and **End date**.
 - **Detection**: The same values as in the chart.
 - **Protected by**: **MDO** (Defender for Office 365) and **EOP**.
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags-about.md).
 - **Direction**:
   - **All**
   - **Inbound**
@@ -519,7 +519,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -570,7 +570,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -626,7 +626,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**: The same detection technology values from the chart.
 - **Delivery Status**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -676,7 +676,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -731,7 +731,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**: The same detection technology values from the chart.
 - **Delivery status**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -815,7 +815,7 @@ In the details table below the chart, the following information is available:
 - **Recipients**
 - **System override**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -853,7 +853,7 @@ In the details table below the chart, the following information is available:
 - **Recipients**
 - **System override**
 - **Sender IP**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -874,7 +874,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags-about.md).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -1003,7 +1003,7 @@ The details table below the graph shows the following information:
 - **Sender**
 - **Reported reason**
 - **Rescan result**
-- **Tags**: For more information about user tags, see [User tags](user-tags.md).
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop-down list:
 

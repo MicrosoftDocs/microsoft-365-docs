@@ -143,7 +143,7 @@ The number of Emails records that can be exported from Threat Explorer is now 20
 > [!NOTE]
 > The user tags feature is in Preview and may not be available to everyone. Also, Previews are subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
 
-User tags identify specific groups of users in Microsoft Defender for Office 365. For more information about tags, including licensing and configuration, see [User tags](user-tags.md).
+User tags identify specific groups of users in Microsoft Defender for Office 365. For more information about tags, including licensing and configuration, see [User tags](user-tags-about.md).
 
 In Threat Explorer, you can see information about user tags in the following experiences.
 

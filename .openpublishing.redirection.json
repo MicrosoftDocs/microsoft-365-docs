@@ -9655,5 +9655,20 @@
       "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure",
       "redirect_document_id": true
     },
+    {
+      "source_path": "microsoft-365/security/office-365-security/threat-explorer.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-about",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-threat-hunting",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/user-tags.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/user-tags-about",
+      "redirect_document_id": true
+    },
    ]
   }

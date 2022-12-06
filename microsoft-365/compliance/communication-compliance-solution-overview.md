@@ -33,12 +33,12 @@ Microsoft Purview Communication Compliance is an insider risk solution that help
 
 Communication compliance's mission is to foster safe and compliant communications across customers' enterprise communication channels. With role-based access controls, human investigators can take remediation actions such as removing a message from Teams or notifying senders of potentially inappropriate conduct.
 
-> [!IMPORTANT]
-> Microsoft is committed to making sure artificial intelligence (AI) systems are developed responsibly and in ways that warrant people's trust. As part of this commitment, Microsoft Purview engineering teams are operationalizing the six core principles of [Microsoft's Responsible AI](https://www.microsoft.com/ai/our-approach) strategy to design, build, and manage AI solutions. As part of our effort to responsibly deploy AI, we provide documentation, role-based access, scenario attestation, and more to help organizations use AI systems responsibly.
-
 ## System capabilities
 
-Communication compliance uses machine learning models and keyword matching to identify messages containing potential business conduct or regulatory policy violations that are then reviewed by an investigator. Communication compliance cultivates user privacy with pseudonymization and responsible use of the product by providing role-based access controls. 
+Communication compliance uses machine learning models and keyword matching to identify messages containing potential business conduct or regulatory policy violations that are then reviewed by an investigator. Communication compliance cultivates user privacy with pseudonymization and responsible use of the product by providing role-based access controls.
+
+> [!IMPORTANT]
+> Microsoft is committed to making sure artificial intelligence (AI) systems are developed responsibly and in ways that warrant people's trust. As part of this commitment, Microsoft Purview engineering teams are operationalizing the six core principles of [Microsoft's Responsible AI](https://www.microsoft.com/ai/our-approach) strategy to design, build, and manage AI solutions. As part of our effort to responsibly deploy AI, we provide documentation, role-based access, scenario attestation, and more to help organizations use AI systems responsibly.
 
 Users are given [permissions](/microsoft-365/compliance/communication-compliance-plan#configure-permissions) that allow them to perform the tasks in their role, such as:  
 
@@ -59,7 +59,7 @@ Communication compliance considers many metrics to holistically evaluate system 
 
 ## Operational factors and settings
 
-Operational factors and settings allow for effective and responsible use of the system. These are detailed in the table below. 
+Operational factors and settings allow for effective and responsible use of the system. These are detailed in the table below.
 
 |**Operational factor**|**Benefits**|
 |:---------------------|:-----------|
