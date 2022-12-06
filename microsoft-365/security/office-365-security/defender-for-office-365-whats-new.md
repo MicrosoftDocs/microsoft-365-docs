@@ -84,7 +84,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the Submissions page in Microsoft 365 Defender.
 
-- [View converted admin submission from user submission](admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission): Configure the custom mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
+- [View converted admin submission from user reported messages](admin-submission.md#convert-user-reported-messages-in-the-reporting-mailbox-into-admin-submissions): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
 
 - [View associated alert for user and admin submissions](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): View the corresponding alert for each user reported phish message and admin email submission.
 
