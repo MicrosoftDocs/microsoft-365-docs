@@ -60,11 +60,11 @@ ROBOTS: NOINDEX, NOFOLLOW
   - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
-- The options for spoof intelligence are described in [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
+- The options for spoof intelligence are described in [Spoof settings in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings).
 
 - You can enable, disable, and configure the spoof intelligence settings in anti-phishing policies. For instructions based on your subscription, see one of the following topics:
 
-  - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+  - [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
   - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 - For our recommended settings for spoof intelligence, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
