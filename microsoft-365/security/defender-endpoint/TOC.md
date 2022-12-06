@@ -71,7 +71,7 @@
 #### [Onboard Windows Client using Group Policy](configure-endpoints-gp.md)
 #### [Onboard Windows Client using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-#### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
+#### [Onboard Windows 10 multi-session devices in Azure Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
@@ -211,7 +211,6 @@
 ### [Configure portal settings]()
 #### [Configure general Defender for Endpoint settings](preferences-setup.md)
 #### [General]()
-##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
 ##### [Configure vulnerability email notifications](configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](advanced-features.md)

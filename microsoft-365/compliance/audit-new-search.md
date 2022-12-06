@@ -38,9 +38,9 @@ The Audit New Search builds upon the existing search functionalities and include
 
 View the available Microsoft Purview Audit documentation as the search job creation and export experiences have many parallels with the current search experience:
 
-- [Search the audit log in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md) (note that PowerShell isn't yet compatible with Audit Search V2)
-- [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md)
-- [Export, configure, and view audit log records](export-view-audit-log-records.md)
+- [Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md) (note that PowerShell isn't yet compatible with Audit Search V2)
+- [Detailed properties in the audit log](audit-log-detailed-properties.md)
+- [Export, configure, and view audit log records](audit-log-export-records.md)
 
 Additional information:
 

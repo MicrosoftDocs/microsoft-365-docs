@@ -75,13 +75,13 @@ When you're ready to begin testing, add these groups as exceptions to [the SCL=-
 
 The ability for users to identify false positives or false negatives from Defender for Office 365 is an important part of the migration.
 
-You can specify an Exchange Online mailbox to receive messages that users report as malicious or not malicious. For more instructions, see [User reported message settings](user-submission.md). This mailbox can receive copies of messages that your users submitted to Microsoft, or the mailbox can intercept messages without reporting them to Microsoft (you're security team can manually analyze and submit the messages). However, this interception approach does not allow the service to automatically tune and learn.
+You can specify an Exchange Online mailbox to receive messages that users report as malicious or not malicious. For more instructions, see [User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md). This mailbox can receive copies of messages that your users submitted to Microsoft, or the mailbox can intercept messages without reporting them to Microsoft (you're security team can manually analyze and submit the messages). However, this interception approach does not allow the service to automatically tune and learn.
 
 You should also confirm that all users in the pilot have a supported message reporting app installed in Outlook that's compatible with user submission. These apps include:
 
-- [The Report Message add-in](enable-the-report-message-add-in.md)
+- [The Report Message add-in](submissions-users-report-message-add-in-configure.md)
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
-- Supported third party reporting tools as described [here](user-submission.md#third-party-reporting-tools-options).
+- Supported third party reporting tools as described [here](submissions-user-reported-messages-files-custom-mailbox.md#third-party-reporting-tools-options).
 
 Don't underestimate the importance of this step. Data from user submissions will give you the feedback loop that you need to verify a good, consistent end-user experience before and after the migration. This feedback helps you to make informed policy configuration decisions, as well as provide data-backed reports to your management that the migration went smoothly.
 
