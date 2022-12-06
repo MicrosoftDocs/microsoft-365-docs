@@ -706,7 +706,6 @@
 #### [Troubleshoot cloud connectivity issues](linux-support-connectivity.md)
 #### [Troubleshoot RHEL 6 installation issues](linux-support-rhel.md)
 #### [Troubleshoot performance issues](linux-support-perf.md)
-#### [Troubleshoot AuditD performance issues](troubleshoot-auditd-performance-issues.md)
 #### [Troubleshoot missing events issues](linux-support-events.md)
 
 ### [Troubleshoot Microsoft Defender for Endpoint on macOS]()
