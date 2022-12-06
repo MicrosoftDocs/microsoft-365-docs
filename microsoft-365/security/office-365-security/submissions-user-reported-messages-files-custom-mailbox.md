@@ -34,7 +34,7 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can identify 
 User reported message settings and the reporting mailbox work with the following message reporting tools:
 
 - [The built-in Report button in Outlook on the web](zzz-built-in-owa-report.md)
-- [The Microsoft Report Message or Report Phishing add-ins](enable-the-report-message-add-in.md)
+- [The Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md)
 - [Third-party reporting tools](#options-for-third-party-reporting-tools)
 
 Delivering user reported messages to a reporting mailbox instead of directly to Microsoft allows admins to selectively and manually report messages to Microsoft from the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. For more information, see [Admin submission](admin-submission.md).
@@ -46,7 +46,7 @@ Delivering user reported messages to a reporting mailbox instead of directly to 
 
 Before you get started, you need to configure Exchange Online Protection and Defender for Office 365 so user reported messages are delivered to the reporting mailbox without being filtered as described in the following steps:
 
-- Identify the mailbox as a SecOps mailbox. For instructions, see [Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+- Identify the reporting mailbox as a SecOps mailbox. For instructions, see [Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phising-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
 - Create a custom anti-malware policy for the reporting mailbox with the following settings:
 

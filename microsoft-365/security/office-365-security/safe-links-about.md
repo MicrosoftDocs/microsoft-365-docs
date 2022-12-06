@@ -88,7 +88,7 @@ This article includes detailed descriptions of the following types of Safe Links
   - ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links)
 
   > [!NOTE]
-  > The **Global settings** menu and the **Block the following URLs** list for Safe Links are in the process of being deprecated. Use block entries for URLs in the [Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) instead.
+  > The **Global settings** menu and the **Block the following URLs** list for Safe Links are in the process of being deprecated. Use block entries for URLs in the [Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) instead.
 
 The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include Defender for Office 365 (note that lack of licensing is never an issue in the examples).
 
@@ -270,7 +270,7 @@ For more information about the order of precedence and how multiple policies are
 ## "Block the following URLs" list for Safe Links
 
 > [!NOTE]
-> The **Block the following URLs** list for Safe Links is in the process of being deprecated. Use block entries for URLs in the [Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) instead. Messages containing the blocked URL are quarantined.
+> The **Block the following URLs** list for Safe Links is in the process of being deprecated. Use block entries for URLs in the [Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) instead. Messages containing the blocked URL are quarantined.
 
 The **Block the following URLs** list defines the links that are always blocked by Safe Links scanning in the following locations:
 
@@ -308,7 +308,7 @@ Examples of the values that you can enter and their results are described in the
 ## "Do not rewrite the following URLs" lists in Safe Links policies
 
 > [!NOTE]
-> Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.
+> Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.
 
 Each Safe Links policy contains a **Do not rewrite the following URLs** list that you can use to specify URLs that are not rewritten by Safe Links scanning. In other words, the list allows users who are included in the policy to access the specified URLs that would otherwise be blocked by Safe Links. You can configure different lists in different Safe Links policies. Policy processing stops after the first (likely, the highest priority) policy is applied to the user. So, only one **Do not rewrite the following URLs** list is applied to a user who is included in multiple active Safe Links policies.
 

@@ -65,11 +65,11 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 - Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-- For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
+- For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
 
 - Organizations that have a URL filtering or security solution (such as a proxy and/or firewall) in place, must have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
 
-- Currently, reporting messages in shared mailboxes or other mailboxes by a delegate using the add-ins is not supported. Messages are not sent to the [reporting mailbox](user-submission.md) or to Microsoft. Built-in reporting in Outlook on the web sends messages reported by a delegate to the reporting mailbox and/or to Microsoft.
+- Currently, reporting messages in shared mailboxes or other mailboxes by a delegate using the add-ins is not supported. Messages are not sent to the [reporting mailbox](submissions-user-reported-messages-files-custom-mailbox.md) or to Microsoft. Built-in reporting in Outlook on the web sends messages reported by a delegate to the reporting mailbox and/or to Microsoft.
 
 > [!IMPORTANT]
 > To view messages reported to Microsoft on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>, leave the toggle **On** (![Toggle on.](../../media/scc-toggle-on.png)) at the top of the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>.

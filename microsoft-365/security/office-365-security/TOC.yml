@@ -203,11 +203,11 @@
            - name: Manage the Tenant Allow/Block List
              href: manage-tenant-allow-block-list.md
            - name: Allow or block email using the Tenant Allow/Block List
-             href: allow-block-email-spoof.md
+             href: tenant-allow-block-list-email-spoof-configure.md
            - name: Allow or block files using the Tenant Allow/Block List
-             href: allow-block-files.md
+             href: tenant-allow-block-list-files-configure.md
            - name: Allow or block URLs using the Tenant Allow/Block List
-             href: allow-block-urls.md
+             href: tenant-allow-block-list-urls-configure.md
          - name: Create block sender lists
            href: Create-block-sender-lists-in-office-365.md
          - name: Create safe sender lists
@@ -235,11 +235,11 @@
        - name: Advanced delivery policies
          items:
          - name: Configure advanced delivery policies
-           href: configure-advanced-delivery.md
+           href: skip-filtering-phising-simulations-sec-ops-mailboxes.md
        - name: User tags and priority accounts
          items:
          - name: User tags in Defender for Office 365
-           href: user-tags.md
+           href: user-tags-about.md
          - name: Configure and review priority accounts
            href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
@@ -275,13 +275,13 @@
            - name: Admin submissions
              href: admin-submission.md
            - name: Enable the Microsoft Report Message and Report Phishing add-ins
-             href: enable-the-report-message-add-in.md
+             href: submissions-users-report-message-add-in-configure.md
            - name: Report false positives and false negatives in Outlook
-             href: report-false-positives-and-false-negatives.md
+             href: submissions-outlook-report-messages.md
            - name: User reported message settings
-             href: user-submission.md
+             href: submissions-user-reported-messages-files-custom-mailbox.md
            - name: Submit malware and non-malware to Microsoft
-             href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+             href: submissions-submit-files-to-microsoft.md
            - name: Admin review for reported messages
              href: admin-review-reported-message.md
          - name: Campaign Views
@@ -291,7 +291,7 @@
            - name: Threat Explorer and real-time detections
              href: threat-explorer.md
            - name: Threat hunting in Threat Explorer
-             href: threat-hunting-in-threat-explorer.md
+             href: threat-explorer-threat-hunting.md
            - name: Email security with Threat Explorer
              href: email-security-in-microsoft-defender.md
            - name: Threat Explorer and Real-time detections basics
