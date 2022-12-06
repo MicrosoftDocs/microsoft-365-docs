@@ -87,14 +87,14 @@ All our updates contain
 <details>
 <summary>November-2022 (Platform: 4.18.2211.x | Engine: 1.1.19900.2)</summary>
 
-&ensp;Security intelligence update version: **x.x** <br/>
+&ensp;Security intelligence update version: **1.379.1493.0** <br/>
 &ensp;Release date: **December 5, 2022**<br/>
 &ensp;Platform: **4.18.2211.x** <br/>
 &ensp;Engine: **1.1.19900.2**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.19900.x <br/>
-Security intelligence update version: x.x <br/>
+Security intelligence update version: 1.379.1493.0 <br/>
 
 ### What's new
 
@@ -104,7 +104,7 @@ Security intelligence update version: x.x <br/>
 - Improved reporting for [cloud protection](cloud-protection-microsoft-defender-antivirus.md)
 - Improved [controlled folder access](controlled-folders.md) notifications
 - Improved scanning of network shares
-- Enhanced processing of host file containing a wild card
+- Enhanced processing of host files containing a wild card
 - Improved performance for [scan events](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 ### Known Issues
