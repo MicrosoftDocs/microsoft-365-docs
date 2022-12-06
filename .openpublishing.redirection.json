@@ -9258,7 +9258,7 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/troubleshoot-auditd-performance-issues.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/linux-support-perf",
-      "redirect_document_id": false
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
