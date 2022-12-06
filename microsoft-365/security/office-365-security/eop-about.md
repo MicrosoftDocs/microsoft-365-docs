@@ -51,7 +51,7 @@ To understand how EOP works, it helps to see how it processes incoming email:
 
    In on-premises organization with Exchange Enterprise CAL with Services licenses, [Microsoft Purview data loss prevention (DLP)](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) checks in EOP also happen at this point.
 
-4. The message passes through content filtering (anti-spam and anti-spoofing) where harmful messages are identified as spam, high confidence spam, phishing, high confidence phishing, or bulk (anti-spam policies) or spoofing (spoof settings in anti-phishing policies). You can configure the action to take on the message based on the filtering verdict (quarantine, move to the Junk Email folder, etc.), and what users can do to the quarantined messages using [quarantine policies](quarantine-policies.md). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+4. The message passes through content filtering (anti-spam and anti-spoofing) where harmful messages are identified as spam, high confidence spam, phishing, high confidence phishing, or bulk (anti-spam policies) or spoofing (spoof settings in anti-phishing policies). You can configure the action to take on the message based on the filtering verdict (quarantine, move to the Junk Email folder, etc.), and what users can do to the quarantined messages using [quarantine policies](quarantine-policies.md). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
 
 A message that successfully passes all of these protection layers is delivered to the recipients.
 
@@ -85,7 +85,7 @@ For information about requirements, important limits, and feature availability a
 |Inbound anti-spam|[Anti-spam protection in EOP](anti-spam-protection.md) <p> [Anti-spam protection FAQ](anti-spam-protection-faq.yml) <p> [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
 |Outbound anti-spam|[Outbound spam protection in EOP](outbound-spam-protection-about.md) <p> [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md) <p> [Control automatic external email forwarding in Microsoft 365](outbound-spam-policies-external-email-forwarding.md)|
 |Connection filtering|[Configure connection filtering](connection-filter-policies-configure.md)|
-|Anti-phishing|[Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md) <p> [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)|
+|Anti-phishing|[Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md) <p> [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)|
 |Anti-spoofing protection|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|
 |Zero-hour auto purge (ZAP) for delivered malware, spam, and phishing messages|[ZAP in Exchange Online](zero-hour-auto-purge.md)|
 |Preset security policies|[Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md) <p> [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)|
