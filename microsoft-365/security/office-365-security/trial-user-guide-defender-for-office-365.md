@@ -88,8 +88,8 @@ Watch this video to learn more: [Protect against malicious links with Safe Links
 
 Defender for Office 365 enables users to report messages to their security teams and allows admins to submit messages to Microsoft for analysis.
 
-- Deploy the [Report Message add-in or the Report Phishing add-in](enable-the-report-message-add-in.md).
-- Establish a workflow to [Report false positives and false negatives](report-false-positives-and-false-negatives.md).
+- Deploy the [Report Message add-in or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md).
+- Establish a workflow to [Report false positives and false negatives](submissions-outlook-report-messages.md).
 - Use the [Submissions portal](admin-submission.md).
 
 Watch this video to learn more: [Learn how to use the Submissions portal to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
@@ -100,7 +100,7 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 
 - Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 - See where threats are blocked with the [Mailflow status report](view-email-security-reports.md#mailflow-status-report).
-- [Review links](view-reports-for-mdo.md#url-protection-report) that were viewed by users or blocked by the system.
+- [Review links](reports-defender-for-office-365.md#url-protection-report) that were viewed by users or blocked by the system.
 
 :::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-reporting.png":::
 
@@ -194,8 +194,8 @@ Evaluation policies ensure no action is taken on email that's detected by Defend
 
 Defender for Office 365 enables users to report messages to their security teams and allows admins to submit messages to Microsoft for analysis.
 
-- Deploy the [Report Message add-in or the Report Phishing add-in](enable-the-report-message-add-in.md).
-- Establish a workflow to [Report false positives and false negatives](report-false-positives-and-false-negatives.md).
+- Deploy the [Report Message add-in or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md).
+- Establish a workflow to [Report false positives and false negatives](submissions-outlook-report-messages.md).
 - Use the [Submissions portal](admin-submission.md).
 
 Watch this video to learn more: [Learn how to use the Submissions portal to submit messages for analysis - YouTube](https://www.youtube.com/watch?v=ta5S09Yz6Ks&ab_channel=MicrosoftSecurit).
