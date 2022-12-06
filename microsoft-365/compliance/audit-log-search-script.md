@@ -28,7 +28,7 @@ Security, compliance, and auditing have become a top priority for IT administrat
 
 - [The Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference)
 
-- The [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview compliance portal
+- The [audit log search tool](audit-log-search.md) in the Microsoft Purview compliance portal
 
 - The [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell
 
@@ -48,7 +48,7 @@ When there are situations where you need to manually retrieve auditing data for 
 
   The value of `True` for the **UnifiedAuditLogIngestionEnabled** property indicates that audit log search is turned on.
 
-- You have to be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online to run successfully the script. By default, these roles are assigned to the *Compliance Management* and *Organization Management* role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information, see the "Requirements to search the audit log" section in [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log).
+- You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to run successfully the script. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the Permissions page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information, see the "Requirements to search the audit log" section in [Search the audit log in the compliance portal](audit-log-search.md#before-you-search-the-audit-log).
 
 - It may take a long time for the script to complete. How long it takes to run depends on the date range and the size of the interval that you configure the script to retrieve audit records for. Larger date ranges and smaller intervals will result in a long running time. See the table in Step 2 for more information about the date range and intervals.
 
@@ -172,4 +172,4 @@ The script displays progress messages while it's running. After the script is fi
 
 ## Step 3: Format and view the audit records
 
-After you've run the script and exported the audit records to a CSV file, you may want to format the CSV to make easier to review and analyze the audit records. One way to do this is to the Power Query JSON transform feature in Excel to split each property in the JSON object in the **AuditData** column into its own column. For step-by-step instructions, see "Step 2: Format the exported audit log using the Power Query Editor" in [Export, configure, and view audit log records](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
+After you've run the script and exported the audit records to a CSV file, you may want to format the CSV to make easier to review and analyze the audit records. One way to do this is to the Power Query JSON transform feature in Excel to split each property in the JSON object in the **AuditData** column into its own column. For step-by-step instructions, see "Step 2: Format the exported audit log using the Power Query Editor" in [Export, configure, and view audit log records](audit-log-export-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
