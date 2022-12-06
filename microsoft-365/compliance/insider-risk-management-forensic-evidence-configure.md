@@ -66,7 +66,7 @@ To configure forensic evidence settings, complete the following steps:
     >[!IMPORTANT]
     >The Microsoft Purview Client used to capture activity on users' devices is licensed under the Use of Software with the Online Services on the [Microsoft Product Terms](https://www.microsoft.com/licensing/product-licensing/products). Note that customers are solely responsible for using the insider risk management solution, including the Microsoft Purview Client, in compliance with all applicable laws.
  
-1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*.
+1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*. For capturing specific URLs of interest, options are based according to the tenant level specified, and for the time duration set for the active window. 
 1. In the **Upload bandwidth limit** section, define the amount of capture data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
 1. In the **Offline capturing** section, enable offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they're online.
 1. In the **Offline capturing cache limit** section, define the maximum cache size to store on users' devices when offline capturing is enabled. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
@@ -87,12 +87,20 @@ Forensic evidence policies define the scope of security-related user activity to
     - **Name (required)**: Enter a friendly name for the forensic evidence policy. This name can't be changed after the policy is created.
     - **Description (optional)**: Enter a description for the forensic evidence policy.
 6. Select **Next**.
-7. If you've selected the **All Activities** option in Step 3, the **Device activities** page directs you the final step in the policy wizard. There aren't any device activities to configure when the **All activities** option is selected.
+7. On the **Exclude applications/URLs** page, you can choose options to specify URLs for applications of relevance that you want to exclude from capturing. You can also select capturing only an app-specific portion of the user's screen instead of capturing the full screen. The limit is to enter a URL up to 100 characters, and you can add up to 25 desktop apps and 25 website apps.
+   - **Add desktop applications to exclude**: This option lets you specify the desktop applications you want to exclude from being captured. 
+   - **Add web applications to exclude**: This option lets you specify web desktop applications you want to exclude from being captured.
+8. If you've selected the **All Activities** option in Step 3, the **Device activities** page directs you the final step in the policy wizard. There aren't any device activities to configure when the **All activities** option is selected.
 
-    If you've selected the **Specific activities** option in Step 3, you'll select device activities to capture on the **Device activities** page. Only the activities selected will be captured by the policy. If the indicators aren't selectable, you'll need to turn on these indicators for your organization before you can select these indicators in the forensic evidence policy. 
+    If you've selected the **Specific activities** option in Step 3, you'll select device activities to capture on the **Device activities** page. Only the activities selected will be captured by the policy. If the indicators aren't selectable, you'll need to turn on these indicators for your organization before you can select these indicators in the forensic evidence policy.
 
     After you've selected indicators, select **Next**.
-8. On the **Finish** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
+
+9. If you've selected the **Using an application or URL of interest** indicator on the **Device activities** page, you must enable video recording for applications by defining the list of desktop and web apps that you want to capture using the following options on the **Applications/URLs to capture** page:
+    - **Add desktop application to capture**: Specify each desktop application that you want to include in this list.
+    - **Add web application/site URLs to capture**: Specify the URL of each web application or website that you want to include in this list. The limit is to enter a URL up to 100 characters, and you can add up to 25 desktop apps and 25 website apps.
+
+10. On the **Finish** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
 After you've completed the policy configuration steps, continue to Step 5.
 
