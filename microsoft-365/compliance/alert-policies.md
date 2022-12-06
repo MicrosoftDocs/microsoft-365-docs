@@ -85,7 +85,7 @@ An alert policy consists of the following settings and conditions.
 
 - **Activity conditions**. For most activities, you can define additional conditions that must be met to trigger an alert. Common conditions include IP addresses (so that an alert is triggered when the user performs the activity on a computer with a specific IP address or within an IP address range), whether an alert is triggered if a specific user or users perform that activity, and whether the activity is performed on a specific file name or URL. You can also configure a condition that triggers an alert when the activity is performed by any user in your organization. The available conditions are dependent on the selected activity.
 
-You can also define user tags as a condition of an alert policy. This results in the alerts triggered by the policy to include the context of the impacted user. You can use system user tags or custom user tags. For more information, see [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags).
+You can also define user tags as a condition of an alert policy. This results in the alerts triggered by the policy to include the context of the impacted user. You can use system user tags or custom user tags. For more information, see [User tags in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/user-tags-about).
 
 - **When the alert is triggered**. You can configure a setting that defines how often an activity can occur before an alert is triggered. This allows you to set up a policy to generate an alert every time an activity matches the policy conditions, when a certain threshold is exceeded, or when the occurrence of the activity the alert is tracking becomes unusual for your organization.
 
@@ -224,7 +224,7 @@ You can use the following filters to view a subset of all the alerts on the **Al
 - **Time range**: Show alerts that were generated within a specific date and time range.
 - **Severity**: Show alerts that are assigned a specific severity.
 - **Category**: Show alerts from one or more alert categories.
-- **Tags**:Show alerts from one or more user tags. Tags are reflected based on tagged mailboxes or users that appear in the alerts. See [User tags in Defender for Office 365](../security/office-365-security/user-tags.md) to learn more.
+- **Tags**:Show alerts from one or more user tags. Tags are reflected based on tagged mailboxes or users that appear in the alerts. See [User tags in Defender for Office 365](../security/office-365-security/user-tags-about.md) to learn more.
 - **Source**: Use this filter to show alerts triggered by alert policies in the Microsoft Purview portal or alerts triggered by Microsoft Defender for Cloud Apps policies, or both. For more information about Defender for Cloud Apps alerts, see the [View Defender for Cloud Apps alerts](#view-defender-for-cloud-apps-alerts) section in this article.
 
 > [!IMPORTANT]
