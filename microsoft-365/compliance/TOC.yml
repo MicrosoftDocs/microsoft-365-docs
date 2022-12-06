@@ -1705,6 +1705,8 @@
           href: audit-log-retention-policies.md
         - name: Use Audit (Premium) to investigate compromised accounts
           href: audit-log-investigate-accounts.md
+    - name: Audit log activities
+      href: audit-log-activities.md
     - name: Mailbox auditing
       href: audit-mailboxes.md
     - name: Alert policies
