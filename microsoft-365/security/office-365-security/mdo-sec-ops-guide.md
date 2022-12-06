@@ -240,21 +240,21 @@ For more information about SIEM tool integration, see [Integrate your SIEM tools
 
 ## Address false positives and false negatives in Defender for Office 365
 
-User submission and admin submissions of email messages are critical positive reinforcement signals for our machine learning detection systems. Submissions help us review, triage, rapidly learn, and mitigate attacks. Actively reporting false positives and false negatives is an important activity that provides feedback to Defender for Office 365 when mistakes are made during detection.
+User reported messages and admin submissions of email messages are critical positive reinforcement signals for our machine learning detection systems. Submissions help us review, triage, rapidly learn, and mitigate attacks. Actively reporting false positives and false negatives is an important activity that provides feedback to Defender for Office 365 when mistakes are made during detection.
 
-Organizations have multiple options for configuring user submissions. Depending on the configuration, security teams might have more active involvement when users submit false positives or false negatives to Microsoft:
+Organizations have multiple options for configuring user reported messages. Depending on the configuration, security teams might have more active involvement when users submit false positives or false negatives to Microsoft:
 
-- User submissions are sent to Microsoft for analysis when the [user reported message settings](user-submission.md) are configured with either of the following settings:
-  - Send the reported messages to: Microsoft.
-  - Send the reported messages to: Microsoft and my organization's mailbox.
+- User user reported messages are sent to Microsoft for analysis when the [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) are configured with either of the following settings:
+  - **Send the reported messages to**: **Microsoft only**.
+  - **Send the reported messages to**: **Microsoft and my reporting mailbox**.
 
   Security teams members should do add-hoc [admin submissions](admin-submission.md) when false positives or false negatives that were not reported by users were discovered by the operations teams.
 
 - When user reported messages are configured to send messages only to the organization's mailbox, security teams should actively send user-reported false positives and false negatives to Microsoft via admin submissions.
 
-Whenever a user reports a message as phishing, Defender for Office 365 generates an alert and the alert will trigger an AIR playbook. Incident logic will correlate this information to other alerts and events where possible. This consolidation of information helps security teams triage, investigate, and respond to user reported email.
+Whenever a user reports a message as phishing, Defender for Office 365 generates an alert and the alert will trigger an AIR playbook. Incident logic will correlate this information to other alerts and events where possible. This consolidation of information helps security teams triage, investigate, and respond to user reported messages.
 
-User submissions and admin submissions are handled by the submission pipeline by Microsoft, which follows a tightly integrated process. This process includes:
+User reported messages and admin submissions are handled by the submission pipeline by Microsoft, which follows a tightly integrated process. This process includes:
 
 - Noise reduction.
 - Automated triage.
@@ -279,23 +279,23 @@ For the short-term mitigation of false positives, security teams can't directly 
 
 [Quarantine](manage-quarantined-messages-and-files.md) in Defender for Office 365 holds potentially dangerous or unwanted messages and files. Security teams can view, release, and delete all types of quarantined messages for all users. This capability enables security teams to respond effectively when a false positive message or file is quarantined.
 
-## Integrate third-party reporting tools with Defender for Office 365 user submission
+## Integrate third-party reporting tools with Defender for Office 365 user reported messages
 
-If your organization uses a third-party reporting tool that allows users to internally report suspicious email, you can integrate the tool with the user submissions capabilities of Defender for Office 365. This integration provides the following benefits to security teams:
+If your organization uses a third-party reporting tool that allows users to internally report suspicious email, you can integrate the tool with the user reported message capabilities of Defender for Office 365. This integration provides the following benefits to security teams:
 
 - Integration with the AIR capabilities of Defender for Office 365.
 - Simplified triage.
 - Reduced investigation and response time.
 
-Designate the custom mailbox where user reported messages are sent on the **User submissions** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/userSubmissionsReportMessage>. For more information, see [User reported message settings](user-submission.md).
+Designate the reporting mailbox where user reported messages are sent on the **User reported** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/securitysettings/userSubmission>. For more information, see [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md).
 
 > [!NOTE]
 >
-> - The custom mailbox is an Exchange Online mailbox.
-> - The third-party reporting tool must include the original reported message as an uncompressed .EML or .MSG attachment in the message that's sent to the custom mailbox (don't just forward the original message to the custom mailbox).
-> - The custom mailbox requires specific prerequisites to allow potentially bad messages to be delivered. For more information, see [Configuration requirements for the user submissions mailbox](user-submission.md#configuration-requirements-for-the-user-submissions-mailbox).
+> - The reporting mailbox must be an Exchange Online mailbox.
+> - The third-party reporting tool must include the original reported message as an uncompressed .EML or .MSG attachment in the message that's sent to the reporting mailbox (don't just forward the original message to the reporting mailbox).
+> - The reporting mailbox requires specific prerequisites to allow potentially bad messages to be delivered without being filtered or altered. For more information, see [Configuration requirements for the reporting mailbox](submissions-user-reported-messages-files-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox).
 
-When user reported email arrives in the custom mailbox, Defender for Office 365 automatically generates the alert named **Email reported by user as malware or phish**. This alert launches an [AIR playbook](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). The playbook performs a series of automated investigations steps:
+When a user reported message arrives in the reporting mailbox, Defender for Office 365 automatically generates the alert named **Email reported by user as malware or phish**. This alert launches an [AIR playbook](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). The playbook performs a series of automated investigations steps:
 
 - Gather data about the specified email.
 - Gather data about the threats and entities related to that email. Entities can include files, URLs, and recipients.
