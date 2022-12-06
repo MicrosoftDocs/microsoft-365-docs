@@ -32,7 +32,7 @@ Common types of apps purchases:
 
 ### Individual store apps
 
-Intune integrates directly with the different supported platform stores. Within Intune, you can find and select free store apps for Windows, iOS, and Android. Intune displays the available store apps directly in the Intune console. When [adding an app to Intune](../apps-add-apps.md), you can select each app by platform and choose the users and devices that will receive the app.
+Intune integrates directly with the different supported platform stores. Within Intune, you can find and select free store apps for Windows, iOS, and Android. Intune displays the available store apps directly in the Intune console. When [adding an app to Intune](apps-add-apps.md), you can select each app by platform and choose the users and devices that will receive the app.
 
 > [!NOTE]
 > Intune only shows free store apps. Apps that require a payment method will not be displayed as a store app from within Intune.
@@ -40,9 +40,9 @@ Intune integrates directly with the different supported platform stores. Within 
 ### Volume purchased apps
 
 Each device platform has a method to purchase apps for your organization in bulk:
-- Apple provides the [Apple Business Manager](../apps-purchase-volume.md#apple-business-manager)
-- Google provides[Managed Google Play](../apps-purchase-volume.md#managed-google-play)
-- Microsoft provide the [Microsoft Store for Business](../apps-purchase-volume.md#microsoft-store-for-business)
+- Apple provides the [Apple Business Manager](apps-purchase-volume.md#apple-business-manager)
+- Google provides[Managed Google Play](apps-purchase-volume.md#managed-google-play)
+- Microsoft provide the [Microsoft Store for Business](apps-purchase-volume.md#microsoft-store-for-business)
 
 ### Partner productivity apps
 

@@ -26,7 +26,7 @@ Before you can distribute managed apps to your workforce, you must add them to I
 
 ## Find apps to purchase
 
-The store apps that you add to Intune are freely available for you to add and deploy. When adding certain apps, you either have an existing license (such as M365 apps), or you must obtain a license for your end-user to use the app. Finding apps to add to Intune is part of the [Add apps](../apps-add-apps.md) process.
+The store apps that you add to Intune are freely available for you to add and deploy. When adding certain apps, you either have an existing license (such as M365 apps), or you must obtain a license for your end-user to use the app. Finding apps to add to Intune is part of the [Add apps](apps-add-apps.md) process.
 
 ## Types of app purchases
 
