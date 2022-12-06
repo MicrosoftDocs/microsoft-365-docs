@@ -239,7 +239,7 @@
        - name: User tags and priority accounts
          items:
          - name: User tags in Defender for Office 365
-           href: user-tags.md
+           href: user-tags-about.md
          - name: Configure and review priority accounts
            href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
@@ -291,7 +291,7 @@
            - name: Threat Explorer and real-time detections
              href: threat-explorer.md
            - name: Threat hunting in Threat Explorer
-             href: threat-hunting-in-threat-explorer.md
+             href: threat-explorer-threat-hunting.md
            - name: Email security with Threat Explorer
              href: email-security-in-microsoft-defender.md
            - name: Threat Explorer and Real-time detections basics
