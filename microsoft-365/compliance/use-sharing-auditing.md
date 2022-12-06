@@ -91,7 +91,7 @@ A common requirement for administrators is creating a list of all resources that
   
 ### Step 1: Search for sharing events and export the results to a CSV file
 
-The first step is to search the audit log for sharing events. For more information (including the required permissions) about searching the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+The first step is to search the audit log for sharing events. For more information (including the required permissions) about searching the audit log, see [Search the audit log](audit-log-search.md).
   
 1. Go to <https://compliance.microsoft.com>.
 
@@ -119,7 +119,7 @@ The first step is to search the audit log for sharing events. For more informati
 
 The next step is to use the JSON transform feature in the Power Query Editor in Excel to split each property in the **AuditData** column (which consists of a multi-property JSON object) into its own column. This lets you filter columns to view records related to sharing
 
-For step-by-step instructions, see "Step 2: Format the exported audit log using the Power Query Editor" in [Export, configure, and view audit log records](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
+For step-by-step instructions, see "Step 2: Format the exported audit log using the Power Query Editor" in [Export, configure, and view audit log records](audit-log-export-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
 
 ### Step 3: Filter the CSV file for resources shared with external users
 

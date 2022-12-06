@@ -35,7 +35,7 @@ This article discusses the following steps necessary to set up Audit (Standard).
 
 These steps include ensuring the proper organizational subscriptions and user licensing required to generate and preserve audit records and assigning permissions to team members of your security operations, IT, compliance, and legal teams so that can search the audit log.
 
-For more information, see [Audit (Standard) in Microsoft 365](auditing-solutions-overview.md#audit-standard).
+For more information, see [Audit (Standard) in Microsoft 365](audit-solutions-overview.md#audit-standard).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -45,7 +45,7 @@ Licensing for Audit (Standard) requires the appropriate organization subscriptio
 
 When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. In Audit (Standard), audit records are retained and searchable in the audit log for 90 days.
 
-For a list of subscription and licensing requirements for Audit (Standard), see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements).
+For a list of subscription and licensing requirements for Audit (Standard), see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements).
 
 ## Step 2: Assign permissions to search the audit log
 
@@ -69,7 +69,7 @@ Now you're ready to search the audit log in the Microsoft Purview compliance por
 
    1. **Date and time range**. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The last seven days are selected by default.
   
-   2. **Activities**. Select the activities to search for. Use the search box to search for activities to add to the list. For a partial list of audited activities, see [Audited activities](search-the-audit-log-in-security-and-compliance.md#audited-activities). Leave this box blank to return entries for all audited activities.
+   2. **Activities**. Select the activities to search for. Use the search box to search for activities to add to the list. For a partial list of audited activities, see [Audited activities](audit-log-search.md#audited-activities). Leave this box blank to return entries for all audited activities.
   
    3. **Users**.  Click in this box and start typing the name of users to display search results for. The audit log entries for the selected activities performed by the users you select in this box are displayed in the list of results. Leave this box blank to return entries for all users (and service accounts) in your organization.
   
@@ -79,4 +79,4 @@ Now you're ready to search the audit log in the Microsoft Purview compliance por
 
 A new page is display that shows the audit log search is running. When the search is completed, audit records are displayed on the page. Click a record to display a flyout page with detailed properties.
 
-For more detailed instructions, see [Search the audit log in the compliance center](search-the-audit-log-in-security-and-compliance.md).
+For more detailed instructions, see [Search the audit log in the compliance center](audit-log-search.md).

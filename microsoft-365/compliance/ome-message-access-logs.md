@@ -45,7 +45,7 @@ The access log contains entries for messages sent through the encrypted message 
 - Attachment download
 - mail replies and forward
 
-For more information on the message access log schema, see [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md#encrypted-message-portal-activities).
+For more information on the message access log schema, see [Search the audit log in the compliance portal](audit-log-search.md#encrypted-message-portal-activities).
 
 ## Search for events in the message access logs
 

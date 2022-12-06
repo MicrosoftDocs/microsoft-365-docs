@@ -30,7 +30,7 @@ After you search the audit log and download the search results to a CSV file, th
 
 The first step is to search the audit log and then export the results in a comma-separated value (CSV) file to your local computer.
   
-1. Run an [audit log search](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log) and revise the search criteria if necessary until you have the desired results.
+1. Run an [audit log search](audit-log-search.md#search-the-audit-log) and revise the search criteria if necessary until you have the desired results.
 
 2. On the search results page, click **Export** > **Download all results**.
 
@@ -129,4 +129,4 @@ Here are some tips and examples of exporting and viewing the audit log before an
 
 - Filter the **RecordType** column to display only the records from a specific service or functional area. For example, to show events related to SharePoint sharing, you would select **14** (the enum value for records triggered by SharePoint sharing activities). For a list of the services that correspond to the enum values displayed in the **RecordType** column, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
 
-- Filter the **Operations** column to display the records for specific activities. For a list of most operations that correspond to a searchable activity in the audit log search tool in the compliance portal, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities).
+- Filter the **Operations** column to display the records for specific activities. For a list of most operations that correspond to a searchable activity in the audit log search tool in the compliance portal, see the "Audited activities" section in [Search the audit log](audit-log-search.md#audited-activities).

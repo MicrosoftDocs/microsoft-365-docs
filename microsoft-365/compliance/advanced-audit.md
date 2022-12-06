@@ -24,10 +24,10 @@ search.appverid:
 
 # Microsoft Purview Audit (Premium)
 
-The [Audit functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft Purview provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Microsoft Purview Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events (by using Audit log search in the Microsoft Purview compliance portal and the Office 365 Management Activity API) that help determine scope of compromise, and faster access to Office 365 Management Activity API.
+The [Audit functionality](audit-log-search.md) in Microsoft Purview provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Microsoft Purview Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events (by using Audit log search in the Microsoft Purview compliance portal and the Office 365 Management Activity API) that help determine scope of compromise, and faster access to Office 365 Management Activity API.
 
 > [!NOTE]
-> Audit (Premium) is available for organizations with an Office 365 E5/A5/G5 or Microsoft 365 Enterprise E5/A5/G5 subscription. A Microsoft 365 E5/A5/G5 Compliance or E5/A5/G5 eDiscovery and Audit add-on license should be assigned to users for Audit (Premium) features such as long-term retention of audit logs and the generation of Audit (Premium) events for investigations. For more information about licensing, see:<br/>- [Audit (Premium) licensing requirements](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> Audit (Premium) is available for organizations with an Office 365 E5/A5/G5 or Microsoft 365 Enterprise E5/A5/G5 subscription. A Microsoft 365 E5/A5/G5 Compliance or E5/A5/G5 eDiscovery and Audit add-on license should be assigned to users for Audit (Premium) features such as long-term retention of audit logs and the generation of Audit (Premium) events for investigations. For more information about licensing, see:<br/>- [Audit (Premium) licensing requirements](audit-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
 This article provides an overview of Audit (Premium) capabilities and shows you how to set up users for Audit (Premium).
 
@@ -56,7 +56,7 @@ You can also specify how long to retain audit records that match the policy and 
 
 ## Audit (Premium) events
 
-Audit (Premium) helps organizations to conduct forensic and compliance investigations by providing access to important events such as when mail items were accessed, when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These events can help you investigate possible breaches and determine the scope of compromise. In addition to these events in Exchange and SharePoint, there are events in other Microsoft 365 services that are considered important events and require that users are assigned the [appropriate Audit (Premium) license](auditing-solutions-overview.md#licensing-requirements). Users must be assigned an Audit (Premium) license so that audit logs will be generated when users perform these events.
+Audit (Premium) helps organizations to conduct forensic and compliance investigations by providing access to important events such as when mail items were accessed, when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These events can help you investigate possible breaches and determine the scope of compromise. In addition to these events in Exchange and SharePoint, there are events in other Microsoft 365 services that are considered important events and require that users are assigned the [appropriate Audit (Premium) license](audit-solutions-overview.md#licensing-requirements). Users must be assigned an Audit (Premium) license so that audit logs will be generated when users perform these events.
 
 Audit (Premium) provides the following events:
 
@@ -82,9 +82,9 @@ The MailItemsAccessed event replaces MessageBind in mailbox auditing logging in 
 
 - MessageBind actions would trigger the creation of multiple audit records when the same email message was accessed, which resulted in auditing "noise". In contrast, MailItemsAccessed events are aggregated into fewer audit records.
 
-For information about audit records for MailItemsAccessed activities, see [Use Audit (Premium) to investigate compromised accounts](mailitemsaccessed-forensics-investigations.md).
+For information about audit records for MailItemsAccessed activities, see [Use Audit (Premium) to investigate compromised accounts](audit-log-investigate-accounts.md).
 
-To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance portal.
+To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](audit-log-search.md) in the compliance portal.
 
 ![Searching for MailItemsAccessed actions in the audit log search tool.](../media/AdvAudit_MailItemsAccessed.png)
 
@@ -102,7 +102,7 @@ The Send event is also a mailbox auditing action and is triggered when a user pe
 
 Investigators can use the Send event to identify email sent from a compromised account. The audit record for a Send event contains information about the message, such as when the message was sent, the InternetMessage ID, the subject line, and if the message contained attachments. This auditing information can help investigators identify information about email messages sent from a compromised account or sent by an attacker. Additionally, investigators can use a Microsoft 365 eDiscovery tool to search for the message (by using the subject line or message ID) to identify the recipients the message was sent to and the actual contents of the sent message.
 
-To search for Send audit records, you can search for the **Sent message** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance portal.
+To search for Send audit records, you can search for the **Sent message** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](audit-log-search.md) in the compliance portal.
 
 ![Searching for Sent message actions in the audit log search tool.](../media/AdvAudit_SentMessage.png)
 
@@ -124,14 +124,14 @@ The SearchQueryInitiatedExchange event is triggered when a person uses Outlook t
 
 Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker who may have compromised an account looked for or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual text of the search query. The audit record also indicates the Outlook environment the search was performed in. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent of the email data that was searched for.
 
-To search for SearchQueryInitiatedExchange audit records, you can search for the **Performed email search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
+To search for SearchQueryInitiatedExchange audit records, you can search for the **Performed email search** activity in the **Search activities** drop-down list in the [audit log search tool](audit-log-search.md) in the compliance center.
 
 ![Searching for Performed email search actions in the audit log search tool.](../media/AdvAudit_SearchExchange.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
 
 > [!NOTE]
-> You must enable SearchQueryInitiatedExchange to be logged so you can search for this event in the audit log. For instructions, see [Set up Audit (Premium)](set-up-advanced-audit.md#step-2-enable-audit-premium-events).
+> You must enable SearchQueryInitiatedExchange to be logged so you can search for this event in the audit log. For instructions, see [Set up Audit (Premium)](audit-premium-setup.md#step-2-enable-audit-premium-events).
 
 ### SearchQueryInitiatedSharePoint
 
@@ -147,26 +147,26 @@ Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event
 
 Investigators can use the SearchQueryInitiatedSharePoint event to determine if an attacker tried to find (and possibly accessed) sensitive information in SharePoint. The audit record for a SearchQueryInitiatedSharePoint event contains also contains the actual text of the search query. The audit record also indicates the type of SharePoint site that was searched. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent and scope of the file data being searched for.
 
-To search for SearchQueryInitiatedSharePoint audit records, you can search for the **Performed SharePoint search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
+To search for SearchQueryInitiatedSharePoint audit records, you can search for the **Performed SharePoint search** activity in the **Search activities** drop-down list in the [audit log search tool](audit-log-search.md) in the compliance center.
 
 ![Searching for Performed SharePoint search actions in the audit log search tool.](../media/AdvAudit_SearchSharePoint.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
 
 > [!NOTE]
-> You must enable SearchQueryInitiatedSharePoint to be logged so you can search for this event in the audit log. For instructions, see [Set up Audit (Premium)](set-up-advanced-audit.md#step-2-enable-audit-premium-events).
+> You must enable SearchQueryInitiatedSharePoint to be logged so you can search for this event in the audit log. For instructions, see [Set up Audit (Premium)](audit-premium-setup.md#step-2-enable-audit-premium-events).
 
 ### Other Audit (Premium) events in Microsoft 365
 
 In addition to the events in Exchange Online and SharePoint Online, there are events in other Microsoft 365 services that are logged when users are assigned the appropriate Audit (Premium) licensing. The following Microsoft 365 services provide Audit (Premium) events. Select the corresponding link to go to an article that identifies and describes these events.
 
-- [Microsoft Forms](search-the-audit-log-in-security-and-compliance.md#microsoft-forms-activities)
+- [Microsoft Forms](audit-log-search.md#microsoft-forms-activities)
 
 - [Microsoft Stream](/stream/audit-logs#actions-logged-in-stream)
 
 - [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities)
 
-- [Yammer](search-the-audit-log-in-security-and-compliance.md#yammer-activities)
+- [Yammer](audit-log-search.md#yammer-activities)
 
 ## High-bandwidth access to the Office 365 Management Activity API
 

@@ -35,7 +35,7 @@ You can then either publish those labels in a retention label policy so that use
 ## How to display the option to mark content as a regulatory record
 
 > [!NOTE]
-> The following procedure is an auditable action, logging **Enabled regulatory record option for retention labels** in the [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) section of the audit log.
+> The following procedure is an auditable action, logging **Enabled regulatory record option for retention labels** in the [Retention policy and retention label activities](audit-log-search.md#retention-policy-and-retention-label-activities) section of the audit log.
 
 By default, the retention label option to mark content as a regulatory record isn't displayed in the retention label wizard. To display this option, you must first run a PowerShell command:
 
@@ -94,7 +94,7 @@ For SharePoint items:
 For Exchange items:
 - From **Exchange mailbox activities**, select **Labeled message as a record**. This audit event is for retention labels that mark items as records or regulatory records.
 
-For more information about searching for these events, see [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+For more information about searching for these events, see [Search the audit log in the compliance portal](audit-log-search.md#file-and-page-activities).
 
 ## Next steps
 

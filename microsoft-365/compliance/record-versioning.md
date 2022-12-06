@@ -96,7 +96,7 @@ To view the version history, select a document in the document library and then 
 
 The actions of locking and unlocking records are logged in the audit log. From **File and page activities**, select **Changed record status to locked** and **Changed record status to unlocked**.
 
-For more information about searching for these events, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+For more information about searching for these events, see [Search the audit log](audit-log-search.md#file-and-page-activities).
 
 ## Next steps
 

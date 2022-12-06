@@ -46,7 +46,7 @@ You must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Onl
 
 ### Running audit log searches
 
-This section describes the basics for creating and running audit log searches. Use these instructions as a starting point for each troubleshooting scenario in this article. For more detailed step-by-step instructions, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
+This section describes the basics for creating and running audit log searches. Use these instructions as a starting point for each troubleshooting scenario in this article. For more detailed step-by-step instructions, see [Search the audit log](audit-log-search.md#step-1-run-an-audit-log-search).
 
 1. Go to <https://compliance.microsoft.com/auditlogsearch> and sign in using your work or school account.
   
@@ -70,9 +70,9 @@ This section describes the basics for creating and running audit log searches. U
 
     For more information about viewing and exporting audit log search results, see:
 
-    - [View search results](search-the-audit-log-in-security-and-compliance.md#step-2-view-the-search-results)
+    - [View search results](audit-log-search.md#step-2-view-the-search-results)
   
-    - [Export search results](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file)
+    - [Export search results](audit-log-search.md#step-3-export-the-search-results-to-a-file)
 
 ## Find the IP address of the computer used to access a compromised account
 
@@ -135,7 +135,7 @@ For more information about the parameters related to email forwarding, see the [
 
 Starting in January 2019, Microsoft is turning on mailbox audit logging by default for all Office 365 and Microsoft organizations. This means that certain actions performed by mailbox owners are automatically logged, and the corresponding mailbox audit records are available when you search for them in the mailbox audit log. Before mailbox auditing was turned on by default, you had to manually enable it for every user mailbox in your organization. 
 
-The mailbox actions logged by default include the SoftDelete and HardDelete mailbox actions performed by mailbox owners. This means you can use the following steps to search the audit log for events related to deleted email items. For more information about mailbox auditing on by default, see [Manage mailbox auditing](enable-mailbox-auditing.md).
+The mailbox actions logged by default include the SoftDelete and HardDelete mailbox actions performed by mailbox owners. This means you can use the following steps to search the audit log for events related to deleted email items. For more information about mailbox auditing on by default, see [Manage mailbox auditing](audit-mailboxes.md).
 
 Here's how to configure an audit log search query for this scenario:
 
@@ -242,13 +242,13 @@ Here are two examples scenarios that would result in a successful **User logged 
 
     In addition to the **User logged in** activities, other audit records may be returned, such ones that indicate a user in your organization shared resources with the external user and whether the external user accessed, modified, or downloaded a document that was shared with them.
 
-- Search for SharePoint sharing activities that would indicate a file was shared with the external user identified by a **User logged in** audit record. For more information, see [Use sharing auditing in the audit log](use-sharing-auditing.md).
+- Search for SharePoint sharing activities that would indicate a file was shared with the external user identified by a **User logged in** audit record. For more information, see [Use sharing auditing in the audit log](audit-log-sharing.md).
 
-- Export the audit log search results that contain records relevant to your investigation so that you can use Excel to search for other activities related to the external user. For more information, see  [Export, configure, and view audit log records](export-view-audit-log-records.md).
+- Export the audit log search results that contain records relevant to your investigation so that you can use Excel to search for other activities related to the external user. For more information, see  [Export, configure, and view audit log records](audit-log-export-records.md).
 
 ## Search for mailbox activities performed by users with non-E5 licenses
 
-Even when [mailbox auditing on by default](enable-mailbox-auditing.md) is turned on for your organization, you might notice that mailbox audit events for some users aren't found in audit log searches by using the compliance center, the **Search-UnifiedAuditLog** cmdlet, or the Office 365 Management Activity API. The reason for this is that mailbox audit events will be returned only for users with E5 licenses when you one of the previous methods to search the unified audit log.
+Even when [mailbox auditing on by default](audit-mailboxes.md) is turned on for your organization, you might notice that mailbox audit events for some users aren't found in audit log searches by using the compliance center, the **Search-UnifiedAuditLog** cmdlet, or the Office 365 Management Activity API. The reason for this is that mailbox audit events will be returned only for users with E5 licenses when you one of the previous methods to search the unified audit log.
 
 To retrieve mailbox audit log records for non-E5 users, you can perform one of the following workarounds:
 

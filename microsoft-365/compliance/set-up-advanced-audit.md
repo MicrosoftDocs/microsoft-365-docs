@@ -39,7 +39,7 @@ Audit (Premium) features such as the ability to log crucial events such as MailI
 
 2. On the user properties flyout page, click **Licenses and apps**.
 
-3. In the **Licenses** section, verify that the user is assigned an E5 license or is assigned an appropriate add-on license. For a list of licenses that support Audit (Premium), see [Audit (Premium) licensing requirements](auditing-solutions-overview.md#audit-premium-1).
+3. In the **Licenses** section, verify that the user is assigned an E5 license or is assigned an appropriate add-on license. For a list of licenses that support Audit (Premium), see [Audit (Premium) licensing requirements](audit-solutions-overview.md#audit-premium-1).
 
 4. Expand the **Apps** section, and verify that the **Microsoft 365 Advanced Auditing** checkbox is selected.
 
@@ -47,7 +47,7 @@ Audit (Premium) features such as the ability to log crucial events such as MailI
 
    The logging of audit records for MailItemsAccessed and Send will begin within 24 hours. You have to perform Step 3 to start logging of two other Audit (Premium) events: SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint.
 
-Also, if you've customized the mailbox actions that are logged on user mailboxes or shared mailboxes, any new Audit (Premium) events released by Microsoft won't be automatically audited on those mailboxes. For information about changing the mailbox actions that are audited for each logon type, see the "Change or restore mailbox actions logged by default" section in [Manage mailbox auditing](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
+Also, if you've customized the mailbox actions that are logged on user mailboxes or shared mailboxes, any new Audit (Premium) events released by Microsoft won't be automatically audited on those mailboxes. For information about changing the mailbox actions that are audited for each logon type, see the "Change or restore mailbox actions logged by default" section in [Manage mailbox auditing](audit-mailboxes.md#change-or-restore-mailbox-actions-logged-by-default).
 
 ## Step 2: Enable Audit (Premium) events
 
@@ -71,4 +71,4 @@ In additional to the default policy that retains Exchange, SharePoint, and Azure
 
 ## Step 4: Search for Audit (Premium) events
 
-Now that you have Audit (Premium) set up for your organization, you can search for crucial Audit (Premium) events and other activities when conducting forensic investigations. After completing Step 1 and Step 2, you can search the audit log for Audit (Premium) events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations. For more information about conducting a forensics investigation of compromised user accounts by using the MailItemsAccessed Audit (Premium) event, see [Use Audit (Premium) to investigate compromised accounts](mailitemsaccessed-forensics-investigations.md).
+Now that you have Audit (Premium) set up for your organization, you can search for crucial Audit (Premium) events and other activities when conducting forensic investigations. After completing Step 1 and Step 2, you can search the audit log for Audit (Premium) events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations. For more information about conducting a forensics investigation of compromised user accounts by using the MailItemsAccessed Audit (Premium) event, see [Use Audit (Premium) to investigate compromised accounts](audit-log-investigate-accounts.md).
