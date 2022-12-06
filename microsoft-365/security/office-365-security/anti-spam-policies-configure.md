@@ -78,7 +78,7 @@ To increase the effectiveness of spam filtering, you can create custom anti-spam
 
 - You can't completely turn off spam filtering, but you can use a mail flow rule (also known as a transport rule) to bypass most spam filtering on incoming message (for example, if you route email through a third-party protection service or device before delivery to Microsoft 365). For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
   - High confidence phishing messages are still filtered. Other features in EOP are not affected (for example, messages are always scanned for malware).
-  - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+  - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
 
 ## Use the Microsoft 365 Defender portal to create anti-spam policies
 
@@ -183,7 +183,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      > [!NOTE]
      > The default value is 15 days in the default anti-spam policy and in new anti-spam policies that you create in PowerShell. The default value is 30 days in new anti-spam policies that you create in the Microsoft 365 Defender portal.
      >
-     > This setting also controls how long messages that were quarantined by **anti-phishing** policies are retained. For more information, see [Quarantined messages in EOP and Defender for Office 365](quarantine-email-messages.md).
+     > This setting also controls how long messages that were quarantined by **anti-phishing** policies are retained. For more information, see [Quarantined messages in EOP and Defender for Office 365](quarantine-about.md).
 
    - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for a spam filtering verdict. The value you specify is the header field *name* that's added to the message header. The header field *value* is always `This message appears to be spam`.
 

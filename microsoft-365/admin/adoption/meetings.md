@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Adoption Score - Meetings"
+title: "Microsoft Adoption Score - Meetings (Previous Version)"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
@@ -23,7 +23,7 @@ description: "Details of the Meetings - people experiences Adoption Score."
 ROBOTS: NOINDEX
 ---
 
-# Meetings insights score – People experiences
+# Meetings insights score – People experiences (Previous Version)
 
 Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The meetings category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
