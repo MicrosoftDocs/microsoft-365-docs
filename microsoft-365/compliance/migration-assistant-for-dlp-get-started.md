@@ -69,7 +69,7 @@ You need to export these policies as XMLs from Symantec DLP. You can export the 
 
 Follow these steps to install the migration assistant for Microsoft Purview DLP:
 
-1. Download and launch **[MigrationAssistantforMicrosoftPurviewDLP.msi](https://aka.ms/MAMD)** file.
+1. Download and launch **[MigrationAssistantforMicrosoftPurviewDLP.msi](https://aka.ms/MAMPD)** file.
 2. The following dialog box will open. Click **Next**.
      :::image type="content" source="../media/migration-assistant-for-dlp-dialog-box.png" alt-text="Screenshot of the dialog box for migration assistant tool":::
 3. Review the End-User License Agreement.
