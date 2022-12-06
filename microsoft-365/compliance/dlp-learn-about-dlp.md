@@ -49,7 +49,7 @@ DLP policies are how you monitor the activities that users take on sensitive ite
 - for data at rest, sensitive items can be locked and moved to a secure quarantine location
 - for Teams chat, the sensitive information will not be displayed
 
-All DLP monitored activities are recorded to the [Microsoft 365 Audit log](search-the-audit-log-in-security-and-compliance.md) by default and routed to [Activity explorer](data-classification-activity-explorer.md). When a user performs an action that meets the criteria of a DLP policy, and you have alerts configured, DLP provides alerts in the [DLP alert management dashboard](dlp-configure-view-alerts-policies.md).
+All DLP monitored activities are recorded to the [Microsoft 365 Audit log](audit-log-search.md) by default and routed to [Activity explorer](data-classification-activity-explorer.md). When a user performs an action that meets the criteria of a DLP policy, and you have alerts configured, DLP provides alerts in the [DLP alert management dashboard](dlp-configure-view-alerts-policies.md).
 
 ## DLP lifecycle
 
@@ -179,7 +179,7 @@ After the policy's synced to the right locations, it starts to evaluate content 
 
 ## Viewing policy application results
 
-DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
+DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
 ### DLP Alerts Dashboard
 
