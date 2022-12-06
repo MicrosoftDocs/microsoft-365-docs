@@ -152,7 +152,7 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 ### EOP anti-phishing policy settings
 
-For more information about these settings, see [Spoof settings](anti-phishing-policies-about.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+For more information about these settings, see [Spoof settings](anti-phishing-policies-about.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
 
 The spoof settings are inter-related, but the **Show first contact safety tip** setting has no dependency on spoof settings.
 
