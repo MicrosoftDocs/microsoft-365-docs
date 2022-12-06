@@ -67,7 +67,7 @@ You can create an activity alert that will send you an email notification when u
 
     1. **Send this alert when** - Click **Send this alert when** and then configure these two fields:
 
-       - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the audit log. You can select one or more specific activities, or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log](audit-log-search.md#audited-activities). When a user performs any of the activities that you've added to the alert, an email notification is sent.
+       - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the audit log. You can select one or more specific activities, or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log](audit-log-activities.md). When a user performs any of the activities that you've added to the alert, an email notification is sent.
 
        - **Users** - Click this box and then select one or more users. If the users in this box perform the activities that you added to the **Activities** box, an alert will be sent. Leave the **Users** box blank to send an alert when any user in your organization performs the activities specified by the alert.
 

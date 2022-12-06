@@ -94,7 +94,7 @@ For SharePoint items:
 For Exchange items:
 - From **Exchange mailbox activities**, select **Labeled message as a record**. This audit event is for retention labels that mark items as records or regulatory records.
 
-For more information about searching for these events, see [Search the audit log in the compliance portal](audit-log-search.md#file-and-page-activities).
+For more information about searching for these events, see [Search the audit log in the compliance portal](audit-log-activities.md#file-and-page-activities).
 
 ## Next steps
 
