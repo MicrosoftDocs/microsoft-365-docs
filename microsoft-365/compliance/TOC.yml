@@ -1175,8 +1175,11 @@
             href: dlp-on-premises-scanner-learn.md
           - name: Learn about the Microsoft Purview Extension
             href: dlp-chrome-learn-about.md
+          - name: Learn about the Microsoft Purview Firefox Extension (preview)
+            href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
+
         - name: Plan for DLP
           items:
           - name: Plan for data loss prevention
@@ -1203,10 +1206,13 @@
             href: device-onboarding-configure-proxy.md
           - name: Get started with the Microsoft Purview Extension
             href: dlp-chrome-get-started.md
+          - name: Get started with the Microsoft Purview Firefox extension (preview)
+            href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
           - name: Get started with Data loss prevention policies for Power BI (preview)
             href: dlp-powerbi-get-started.md
+
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
