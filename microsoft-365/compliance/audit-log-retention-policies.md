@@ -39,22 +39,19 @@ Audit (Premium) in Microsoft 365 provides a default audit log retention policy f
 ## Before you create an audit log retention policy
 
 - You have to be assigned the Organization Configuration role in the compliance portal to create or modify an audit retention policy.
-
 - You can have a maximum of 50 audit log retention policies in your organization.
-
 - To retain an audit log for longer than 90 days (and up to 1 year), the user who generates the audit log (by performing an audited activity) must be assigned an Office 365 E5 or Microsoft 365 E5 license or have a Microsoft 365 E5 Compliance or E5 eDiscovery and Audit add-on license. To retain audit logs for 10 years, the user who generates the audit log must also be assigned a 10-year audit log retention add-on license in addition to an E5 license.
-
 - All custom audit log retention policies (created by your organization) take priority over the default retention policy. For example, if you create an audit log retention policy for Exchange mailbox activity that has a retention period that's shorter than one year, audit records for Exchange mailbox activities will be retained for the shorter duration specified by the custom policy.
 
 ## Create an audit log retention policy
 
 1. Go to <https://compliance.microsoft.com> and sign in with a user account that's assigned the Organization Configuration role on the Permissions page in the compliance portal.
 
-2. In the left pane of the compliance portal, click **Audit**.
+2. In the left pane of the compliance portal, select **Audit**.
 
-3. Click the **Audit retention policies** tab.
+3. Select the **Audit retention policies** tab.
 
-4. Click **Create audit retention policy**, and then complete the following fields on the flyout page:
+4. Select **Create audit retention policy**, and then complete the following fields on the flyout page:
 
    ![New audit retention policy flyout page.](../media/CreateAuditLogRetentionPolicy.png)
 
@@ -72,7 +69,7 @@ Audit (Premium) in Microsoft 365 provides a default audit log retention policy f
 
    6. **Priority:** This value determines the order in which audit log retention policies in your organization are processed. A lower value indicates a higher priority. Valid priorities are numerical values between **1** and **10000**. A value of **1** is the highest priority, and a value of **10000** is the lowest priority. For example, a policy with a value of **5** takes priority over a policy with a value of **10**. As previously explained, any custom audit log retention policy takes priority over the default policy for your organization.
 
-5. Click **Save** to create the new audit log retention policy.
+5. Select **Save** to create the new audit log retention policy.
 
 The new policy is displayed in the list on the **Audit retention policies** tab.
 
@@ -82,7 +79,7 @@ Audit log retention policies are listed on the **Audit retention policies** tab 
 
 ### View policies in the dashboard
 
-Audit log retention policies are listed in the dashboard. One advantage of viewing policies in the dashboard is that you can click the **Priority** column to list the policies in the priority in which they are applied. As previously explained, a lower value indicates a higher priority.
+Audit log retention policies are listed in the dashboard. One advantage of viewing policies in the dashboard is that you can select the **Priority** column to list the policies in the priority in which they're applied. As previously explained, a lower value indicates a higher priority.
 
 ![Priority column in the Audit retention policies dashboard.](../media/AuditLogRetentionDashboardPriority.png)
 
@@ -103,7 +100,7 @@ To edit a policy, select it to display the flyout page. You can modify one or mo
 
 ### Delete policies in the dashboard
 
-To delete a policy, click the **Delete** ![Delete icon.](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) icon and then confirm that you want to delete the policy. The policy is removed from the dashboard, but it might take up to 30 minutes for the policy to be removed from your organization.
+To delete a policy, select the **Delete** ![Delete icon.](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) icon and then confirm that you want to delete the policy. The policy is removed from the dashboard, but it might take up to 30 minutes for the policy to be removed from your organization.
 
 ## Create and manage audit log retention policies in PowerShell
 

@@ -183,7 +183,7 @@ For detailed instructions for configuring anti-spam policies, see [Configure ant
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
-Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments.md) and [Safe Links](safe-links.md) policies.
+Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments-about.md) and [Safe Links](safe-links.md) policies.
 
 ### Safe Attachments policies in Microsoft Defender for Office 365
 
@@ -197,7 +197,7 @@ For more information about the recommended settings for Safe Attachments, see .[
      > [!IMPORTANT]
      > **Before you turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, verify that audit logging is turned in your organization**. This action is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)!
 
-   - **Turn on Safe Documents for Office clients**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)). Note that this feature is available and meaningful only with the required types of licenses. For more information, see [Safe Documents in Microsoft 365 E5](safe-docs.md).
+   - **Turn on Safe Documents for Office clients**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)). Note that this feature is available and meaningful only with the required types of licenses. For more information, see [Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md).
    - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: Verify this setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)).
 
    When you're finished, click **Save**
@@ -225,9 +225,9 @@ For more information about the recommended settings for Safe Attachments, see .[
 
 For detailed instructions for configuring Safe Attachments policies and global settings for Safe Attachments, see the following topics:
 
-- [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
-- [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)
-- [Safe Documents in Microsoft 365 E5](safe-docs.md)
+- [Set up Safe Attachments policies in Microsoft Defender for Office 365](safe-attachments-policies-configure.md)
+- [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-configure.md)
+- [Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md)
 
 ### Safe Links policies in Microsoft Defender for Office 365
 
@@ -259,7 +259,7 @@ For more information about the recommended settings for Safe Links, see [Safe Li
 
 3. When you're finished, click **Submit**, and then click **Done**.
 
-For detailed instructions for configuring Safe Links policies and global settings for Safe Links, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
+For detailed instructions for configuring Safe Links policies and global settings for Safe Links, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
 
 ### Now set up alerts for detected files in SharePoint Online or OneDrive for Business
 
