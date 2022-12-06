@@ -127,7 +127,7 @@ landingContent:
           - text: Remediate Outlook Rules and Custom Forms Injections Attacks
             url: detect-and-remediate-outlook-rules-forms-attack.md
           - text: Submit False Positives/False Negatives
-            url: admin-submission.md
+            url: submissions-admin.md
         # Card
   - title: Automate
     linkLists:
