@@ -29,7 +29,7 @@ In Microsoft 365 organizations with Exchange Online mailboxes and Microsoft Defe
 
 The feature is designed to give feedback to your users but doesn't change the verdicts of messages in the system. To help Microsoft update and improve its filters, you need to submit messages for analysis using [Admin submission](admin-submission.md).
 
-You will only be able to mark and notify users of review results if the message was reported as a [false positives or false negatives](report-false-positives-and-false-negatives.md).
+You will only be able to mark and notify users of review results if the message was reported as a [false positives or false negatives](submissions-outlook-report-messages.md).
 
 ## What do you need to know before you begin?
 

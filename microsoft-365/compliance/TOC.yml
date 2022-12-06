@@ -1670,27 +1670,27 @@
 - name: Manage auditing and alert policies
   items: 
     - name: Microsoft Purview auditing solutions
-      href: auditing-solutions-overview.md
+      href: audit-solutions-overview.md
     - name: Audit (Standard)
       items:
         - name: Set up Audit (Standard)
-          href: set-up-basic-audit.md
+          href: audit-standard-setup.md
         - name: Search the audit log
-          href: search-the-audit-log-in-security-and-compliance.md
+          href: audit-log-search.md
         - name: Audit New Search
           href: audit-new-search.md
         - name: Export, configure, and view audit log records
-          href: export-view-audit-log-records.md
+          href: audit-log-export-records.md
         - name: Use a PowerShell script to search the audit log
           href: audit-log-search-script.md
         - name: Detailed properties in the audit log
-          href: detailed-properties-in-the-office-365-audit-log.md
+          href: audit-log-detailed-properties.md
         - name: Turn auditing on or off
-          href: turn-audit-log-search-on-or-off.md
+          href: audit-log-enable-disable.md
         - name: Use the audit log to investigate common issues
-          href: auditing-troubleshooting-scenarios.md
+          href: audit-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
-          href: use-sharing-auditing.md
+          href: audit-log-sharing.md
         - name: Office 365 Management Activity API
           items:
             - name: Office 365 Management Activity API reference
@@ -1702,15 +1702,15 @@
     - name: Audit (Premium)
       items:
         - name: Overview of Audit (Premium)
-          href: advanced-audit.md
+          href: audit-premium.md
         - name: Set up Audit (Premium)
-          href: set-up-advanced-audit.md
+          href: audit-premium-setup.md
         - name: Manage audit log retention policies
           href: audit-log-retention-policies.md
         - name: Use Audit (Premium) to investigate compromised accounts
-          href: mailitemsaccessed-forensics-investigations.md
+          href: audit-log-investigate-accounts.md
     - name: Mailbox auditing
-      href: enable-mailbox-auditing.md
+      href: audit-mailboxes.md
     - name: Alert policies
       href: alert-policies.md
 - name: Manage compliance risks

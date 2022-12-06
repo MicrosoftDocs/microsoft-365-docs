@@ -164,7 +164,7 @@ Campaign Views reveals malware and phishing attacks against your organization. F
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Review who's defined as a priority account at <https://security.microsoft.com/securitysettings/userTags>.|Ad-hoc|Keep the membership of [priority accounts](/microsoft-365/admin/setup/priority-accounts) current with organizational changes to get the following benefits for those users: <ul><li>Better visibility in reports.</li><li>Filtering in incidents and alerts.</li><li>Tailored heuristics for executive mail flow patterns (priority account protection).</li></ul> <br/> Use custom [user tags](user-tags.md) for other users to get: <ul><li>Better visibility in reports.</li><li>Filtering in incidents and alerts.</li></ul>|Security Operations Team|
+|Review who's defined as a priority account at <https://security.microsoft.com/securitysettings/userTags>.|Ad-hoc|Keep the membership of [priority accounts](/microsoft-365/admin/setup/priority-accounts) current with organizational changes to get the following benefits for those users: <ul><li>Better visibility in reports.</li><li>Filtering in incidents and alerts.</li><li>Tailored heuristics for executive mail flow patterns (priority account protection).</li></ul> <br/> Use custom [user tags](user-tags-about.md) for other users to get: <ul><li>Better visibility in reports.</li><li>Filtering in incidents and alerts.</li></ul>|Security Operations Team|
 
 ## Appendix
 
@@ -275,7 +275,7 @@ Security team members can do submissions from multiple locations in the Microsof
 
 For the short-term mitigation of false negatives, security teams can directly manage block entries for files, URLs, and domains or email addresses in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 
-For the short-term mitigation of false positives, security teams can't directly manage allow entries for domains and email addresses in the Tenant Allow/Block List. Instead, they need to use [admin submissions](admin-submission.md) to report the email message as a false positive. For instructions, see [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
+For the short-term mitigation of false positives, security teams can't directly manage allow entries for domains and email addresses in the Tenant Allow/Block List. Instead, they need to use [admin submissions](admin-submission.md) to report the email message as a false positive. For instructions, see [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 
 [Quarantine](manage-quarantined-messages-and-files.md) in Defender for Office 365 holds potentially dangerous or unwanted messages and files. Security teams can view, release, and delete all types of quarantined messages for all users. This capability enables security teams to respond effectively when a false positive message or file is quarantined.
 
