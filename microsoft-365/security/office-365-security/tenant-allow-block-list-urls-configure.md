@@ -484,7 +484,7 @@ The following entries are invalid:
 ## Related articles
 
 - [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](admin-submission.md)
-- [Report false positives and false negatives](report-false-positives-and-false-negatives.md)
+- [Report false positives and false negatives](submissions-outlook-report-messages.md)
 - [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md)
-- [Allow or block files in the Tenant Allow/Block List](allow-block-files.md)
-- [Allow or block emails in the Tenant Allow/Block List](allow-block-email-spoof.md)
+- [Allow or block files in the Tenant Allow/Block List](tenant-allow-block-list-files-configure.md)
+- [Allow or block emails in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md)

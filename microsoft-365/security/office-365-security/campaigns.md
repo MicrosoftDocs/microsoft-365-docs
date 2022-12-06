@@ -133,7 +133,7 @@ The filterable campaign properties that are available in the **Campaign type** b
   - **Subject**
   - **Attachment filename**
   - **Malware family**
-  - **Tags**: Users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+  - **Tags**: Users or groups that have had the specified user tag applied (including priority accounts). For more information about user tags, see [User tags](user-tags-about.md).
   - **Delivery action**
   - **Additional action**
   - **Directionality**

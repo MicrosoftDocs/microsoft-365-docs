@@ -3,7 +3,7 @@ title: "Office 365 IP Address and URL web service"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 12/05/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

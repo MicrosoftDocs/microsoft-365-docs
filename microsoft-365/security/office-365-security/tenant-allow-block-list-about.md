@@ -36,9 +36,9 @@ The Tenant Allow/Block list is available in the Microsoft 365 Defender portal at
 
 For entry creation and configuration instructions, see the following topics:
 
-- **Domains and email addresses** and **spoofed senders**: [Allow or block emails using the Tenant Allow/Block List](allow-block-email-spoof.md)
-- **Files**: [Allow or block files using the Tenant Allow/Block List](allow-block-files.md)
-- **URLs**: [Allow or block URLs using the Tenant Allow/Block List](allow-block-urls.md).
+- **Domains and email addresses** and **spoofed senders**: [Allow or block emails using the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md)
+- **Files**: [Allow or block files using the Tenant Allow/Block List](tenant-allow-block-list-files-configure.md)
+- **URLs**: [Allow or block URLs using the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md).
 
 These articles contain procedures in the Microsoft 365 Defender Portal and in PowerShell.
 
