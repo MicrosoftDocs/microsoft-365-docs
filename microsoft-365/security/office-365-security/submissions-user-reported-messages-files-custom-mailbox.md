@@ -33,7 +33,7 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can identify 
 
 User reported message settings and the reporting mailbox work with the following message reporting tools:
 
-- [The built-in Report button in Outlook on the web](zzz-built-in-owa-report.md)
+- [The built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web)
 - [The Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md)
 - [Third-party reporting tools](#options-for-third-party-reporting-tools)
 

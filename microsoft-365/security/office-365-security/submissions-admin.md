@@ -475,7 +475,7 @@ If an override was found, the result should be available in several minutes. If 
 
 ## View user reported messages to Microsoft
 
-If you've deployed the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md) or people use the [built-in Report button in Outlook on the web](zzz-built-in-owa-report.md), you can see what users are reporting on the **User reported** tab on the **Submissions** page.
+If you've deployed the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md) or if people use the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web), you can see what users are reporting on the **User reported** tab on the **Submissions** page.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions** \> **User reported** tab. To go directly to the **User reported** tab, use <https://security.microsoft.com/reportsubmission?viewid=user>.
 
