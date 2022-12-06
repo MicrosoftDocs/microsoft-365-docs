@@ -60,7 +60,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 3. Select the services you want to test with your domain, like email and instant messaging.
 
-4. On the **Verify** domain page, follow the step-by-step instructions, amd then select **Verify**.
+4. On the **Verify** domain page, follow the step-by-step instructions, and then select **Verify**.
 
     It takes between a few minutes and 72 hours for DNS changes to take effect.
 
