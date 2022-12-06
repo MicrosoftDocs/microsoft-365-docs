@@ -129,7 +129,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 2. On the **User tags** page, select the user tag from the list, and then click ![Edit tag icon.](../../media/m365-cc-sc-edit-icon.png) **Edit tag**.
 
-3. In the details flyout that appears, the same wizard and settings are available as described in the [Use the Microsoft 365 Defender portal to create user tags](#use-the-microsoft-365-defender-portal-to-create-user-tags-about) section earlier in this article.
+3. In the details flyout that appears, the same wizard and settings are available as described in the [Use the Microsoft 365 Defender portal to create user tags](#use-the-microsoft-365-defender-portal-to-create-user-tags) section earlier in this article.
 
    **Notes**:
 
