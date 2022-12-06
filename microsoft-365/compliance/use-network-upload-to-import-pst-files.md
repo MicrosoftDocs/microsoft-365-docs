@@ -337,7 +337,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - Using [Microsoft 365 retention policies](retention.md) to control how long the data that you imported will be retained, and what action to take after the retention period expires.
 
-  - Searching the [audit log](search-the-audit-log-in-security-and-compliance.md) for mailbox-related events that affect the data that you imported.
+  - Searching the [audit log](audit-log-search.md) for mailbox-related events that affect the data that you imported.
 
   - Importing data to [inactive mailboxes](inactive-mailboxes-in-office-365.md) to archive data for compliance purposes. 
 
