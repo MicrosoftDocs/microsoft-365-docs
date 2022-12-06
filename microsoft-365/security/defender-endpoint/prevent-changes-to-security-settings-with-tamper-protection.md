@@ -34,7 +34,7 @@ search.appverid: met150
 
 **Platforms**
 - Windows
-- macOS
+- [macOS](tamperprotection-macos.md)
 
 Tamper protection is available for devices that are running one of the following versions of Windows:
 
