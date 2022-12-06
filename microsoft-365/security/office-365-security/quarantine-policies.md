@@ -32,7 +32,7 @@ Quarantine policies (formerly known as _quarantine tags_) in Exchange Online Pro
 
 Traditionally, users have been allowed or denied levels of interactivity for quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined by anti-spam filtering as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
 
-For [supported protection features](#step-2-assign-a-quarantine-policy-to-supported-features), quarantine policies specify what users are allowed to do to their own messages (messages where they're a recipient) in quarantine and in _quarantine notifications_. [Quarantine notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md) are the replacement for end-user spam notifications. These notifications are now controlled by quarantine policies, and contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts).
+For [supported protection features](#step-2-assign-a-quarantine-policy-to-supported-features), quarantine policies specify what users are allowed to do to their own messages (messages where they're a recipient) in quarantine and in _quarantine notifications_. [Quarantine notifications](quarantine-quarantine-notifications.md) are the replacement for end-user spam notifications. These notifications are now controlled by quarantine policies, and contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts).
 
 Default quarantine policies that enforce the historical user capabilities are automatically assigned to actions in the supported protection features that quarantine messages. Or, you can create custom quarantine policies and assign them to the supported protection features to allow or prevent users from performing specific actions on those types of quarantined messages.
 
@@ -488,7 +488,7 @@ For detailed syntax and parameter information, see [Set-MalwareFilterPolicy](/po
 
 ## Configure global quarantine notification settings in the Microsoft 365 Defender portal
 
-The global settings for quarantine policies allow you to customize the quarantine notifications that are sent to recipients of quarantined messages if quarantine notifications are turned on in the quarantine policy. For more information about these notifications, see [Quarantine notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+The global settings for quarantine policies allow you to customize the quarantine notifications that are sent to recipients of quarantined messages if quarantine notifications are turned on in the quarantine policy. For more information about these notifications, see [Quarantine notifications](quarantine-quarantine-notifications.md).
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
@@ -498,6 +498,8 @@ The global settings for quarantine policies allow you to customize the quarantin
 
    > [!NOTE]
    > We don't allow the same display name, subject, or disclaimer text for different languages. You need to provide a different display name, subject, and disclaimer text for each language that you select.
+   >
+   > The same sender address is used for all languages. Although you can select a different sender email address for each language, the last sender you specify is used for all languages.
 
    - Customize quarantine notifications based on the recipient's language:
 
@@ -519,7 +521,7 @@ The global settings for quarantine policies allow you to customize the quarantin
 
      1. Select the language from the **Choose language** box. The default value is **Default**, which means the default language for the Microsoft 365 organization. For more information, see [How to set language and region settings for Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
      2. Enter values for **Display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a **Display name**, **Subject**, or **Disclaimer** value for multiple languages, you'll get an error when you click **Save**.
-     3. Use **Specify sender address** to select an existing recipient to use as the sender of quarantine notifications. This sender email address does not need to be unique for each language.
+     3. Use **Specify sender address** to select an existing recipient to use as the sender of quarantine notifications. If you've already specified a sender for a different language, the sender you specify will overwrite your previous selection (the same sender email address is used for all languages).
      4. Click the **Add** button.
      5. Repeat the previous steps to create a maximum of three customized quarantine notifications based on the recipient's language. An unlabeled box shows the languages that you've configured:
 

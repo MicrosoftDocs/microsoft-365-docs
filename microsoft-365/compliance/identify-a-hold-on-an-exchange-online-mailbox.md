@@ -115,6 +115,11 @@ The following table defines the three possible retention actions:
 | **2** | Indicates that the retention policy is configured to hold items. The policy doesn't delete items after the retention period expires.|
 | **3** | Indicates that the retention policy is configured to hold items and then delete them after the retention period expires.|
 
+> [!NOTE]
+> Because retention label policies publish or auto-apply labels that apply item-level actions, they will always show an action value of 1 within the InPlaceHolds property of the mailbox.
+> 
+> To identify whether a hold has been applied to a folder or item within the mailbox, refer to [Identifying mailboxes on hold because a retention label has been applied to a folder or item](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item).
+
 For more information about retention actions, see the [Retaining content for a specific period of time](retention-settings.md#retaining-content-for-a-specific-period-of-time) section.
 
 ## Step 2: Use the GUID to identify the hold

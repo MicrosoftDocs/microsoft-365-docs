@@ -57,7 +57,7 @@ If your organization has a security response team, now is the time to begin inte
 
 If your organization has purchased Microsoft Defender for Office 365 Plan 2, they should begin familiarizing themselves with and using features such as Threat Explorer, Advanced Hunting, and Incidents. For relevant trainings, see <https://aka.ms/mdoninja>.
 
-If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phising-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
 ### SIEM/SOAR
 
@@ -115,7 +115,7 @@ The longer you monitor the impersonation protection results without acting on th
 
 ### Tune mailbox intelligence
 
-Although mailbox intelligence has been configured to take no action on messages that were [determined to be impersonation attempts](impersonation-insight.md), it has been on and learning the email sending and receiving patterns of the pilot users. If an external user is in contact with one your pilot users, messages from that external user won't be identified as impersonation attempts by mailbox intelligence (thus reducing false positives).
+Although mailbox intelligence has been configured to take no action on messages that were [determined to be impersonation attempts](anti-phishing-mdo-impersonation-insight.md), it has been on and learning the email sending and receiving patterns of the pilot users. If an external user is in contact with one your pilot users, messages from that external user won't be identified as impersonation attempts by mailbox intelligence (thus reducing false positives).
 
 When you're ready, do the following steps to allow mailbox intelligence to act on messages that are detected as impersonation attempts:
 
@@ -131,7 +131,7 @@ After you've observed the results and made any adjustments, proceed to the next 
 
 In both of your anti-phishing policies based on Standard and Strict settings, change the value of **If message is detected as an impersonated user** to **Quarantine the message**.
 
-Check the [impersonation insight](impersonation-insight.md) to see what's being blocked as user impersonation attempts.
+Check the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) to see what's being blocked as user impersonation attempts.
 
 To modify the policies, see [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
@@ -141,7 +141,7 @@ After you've observed the results and made any adjustments, proceed to the next 
 
 In both of your anti-phishing policies based on Standard and Strict settings, change the value of **If message is detected as an impersonated domain** to **Quarantine the message**.
 
-Check the [impersonation insight](impersonation-insight.md) to see what's being blocked as domain impersonation attempts.
+Check the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) to see what's being blocked as domain impersonation attempts.
 
 To modify the policies, see [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
@@ -156,7 +156,7 @@ Use the following features to monitor and iterate on the protection settings in 
 - [Quarantine](manage-quarantined-messages-and-files.md)
 - [Threat Explorer](email-security-in-microsoft-defender.md)
 - [Email security reports](view-email-security-reports.md)
-- [Defender for Office 365 reports](view-reports-for-mdo.md)
+- [Defender for Office 365 reports](reports-defender-for-office-365.md)
 - [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [Mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
@@ -214,7 +214,7 @@ Feel free to pause and evaluate here at any point. But, remember: once you turn 
 
 Congratulations! You have completed your [migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! Because you followed the steps in this migration guide, the first few days where mail is delivered directly into Microsoft 365 should be much smoother.
 
-Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
+Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
 
 - Review user submissions, especially [user-reported phishing messages](automated-investigation-response-office.md)
 - Review overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
