@@ -1,6 +1,6 @@
 ---
 title: "Export, configure, and view audit log records"
-description: "In this article, you will learn how to export, configure, and view Microsoft 365 audit log records."
+description: "In this article, you'll learn how to export, configure, and view Microsoft 365 audit log records."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -32,7 +32,7 @@ The first step is to search the audit log and then export the results in a comma
   
 1. Run an [audit log search](audit-log-search.md#search-the-audit-log) and revise the search criteria if necessary until you have the desired results.
 
-2. On the search results page, click **Export** > **Download all results**.
+2. On the search results page, select **Export** > **Download all results**.
 
    ![Click Download all results.](../media/ExportAuditSearchResults.png)
 
@@ -49,29 +49,29 @@ The next step is to use the JSON transform feature in the Power Query Editor in 
 
 1. Open a blank workbook in Excel for Office 365, Excel 2019, or Excel 2016.
 
-2. On the **Data** tab, in the **Get & Transform Data** ribbon group, click **From Text/CSV**.
+2. On the **Data** tab, in the **Get & Transform Data** ribbon group, select **From Text/CSV**.
 
     ![On the Data tab, click From Text/CSV.](../media/JSONTransformOpenCSVFile.png)
 
 3. Open the CSV file that you downloaded in Step 1.
 
-4. In the window that's displayed, click **Transform Data**.
+4. In the window that's displayed, select **Transform Data**.
 
    ![Click Transform Data.](../media/JSONOpenPowerQuery.png)
 
    The CSV file is opened in the **Query Editor**. There are four columns: **CreationDate**, **UserIds**, **Operations**, and **AuditData**. The **AuditData** column is a JSON object that contains multiple properties. The next step is to create a column for each property in the JSON object.
 
-5. Right-click the title in the **AuditData** column, click **Transform**, and then click **JSON**. 
+5. Right-click the title in the **AuditData** column, select **Transform**, and then select **JSON**. 
 
    ![Right-click the AuditData column, click Transform, and then select JSON.](../media/JSONTransform.png)
 
-6. In the upper-right corner of the **AuditData** column, click the expand icon.
+6. In the upper-right corner of the **AuditData** column, select the expand icon.
 
    ![In the AuditData column, click the expand icon.](../media/JSONTransformExpandIcon.png)
 
    A partial list of the properties in the JSON objects in the **AuditData** column is displayed.
 
-7. Click **Load more** to display all properties in the JSON objects in the **AuditData** column.
+7. Select **Load more** to display all properties in the JSON objects in the **AuditData** column.
 
    ![Click Load more to display all properties in JSON object.](../media/JSONTransformLoadJSONProperties.png)
 
@@ -86,14 +86,13 @@ The next step is to use the JSON transform feature in the Power Query Editor in 
 8. Do one of the following things to format the title of the columns that are added for each JSON property that's selected.
 
     - Unselect the **Use original column name as prefix** checkbox to use the name of the JSON property as the column names; for example, **RecordType** or **SourceFileName**.
-
     - Leave the **Use original column name as prefix** checkbox selected to add the AuditData prefix to the column names; for example, **AuditData.RecordType** or **AuditData.SourceFileName**.
 
-9. Click **OK**.
+9. Select **OK**.
 
     The **AuditData** column is split into multiple columns. Each new column corresponds to a property in the AuditData JSON object. Each row in the column contains the value for the property. If the property doesn't contain a value, the *null* value is displayed. In Excel, cells with null values are empty.
   
-10. On the **Home** tab, click **Close & Load** to close the Power Query Editor and open the transformed CSV file in an Excel workbook.
+10. On the **Home** tab, select **Close & Load** to close the Power Query Editor and open the transformed CSV file in an Excel workbook.
 
 ## Use PowerShell to search and export audit log records
 
@@ -128,5 +127,4 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 Here are some tips and examples of exporting and viewing the audit log before and after you use the JSON transform feature to split the **AuditData** column into multiple columns.
 
 - Filter the **RecordType** column to display only the records from a specific service or functional area. For example, to show events related to SharePoint sharing, you would select **14** (the enum value for records triggered by SharePoint sharing activities). For a list of the services that correspond to the enum values displayed in the **RecordType** column, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
-
 - Filter the **Operations** column to display the records for specific activities. For a list of most operations that correspond to a searchable activity in the audit log search tool in the compliance portal, see the "Audited activities" section in [Search the audit log](audit-log-search.md#audited-activities).

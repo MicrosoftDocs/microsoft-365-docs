@@ -37,7 +37,7 @@ This article provides an overview of Audit (Premium) capabilities and shows you 
 
 Audit (Premium) retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This is accomplished by a default audit log retention policy that retains any audit record that contains the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which indicates the service in which the activity occurred) for one year. Retaining audit records for longer periods can help with on-going forensic or compliance investigations. For more information, see the "Default audit log retention policy" section in [Manage audit log retention policies](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
-In addition to the one-year retention capabilities of Audit (Premium), we have also released the capability to retain audit logs for 10 years. The 10-year retention of audit logs helps support long running investigations and respond to regulatory, legal, and internal obligations.
+In addition to the one-year retention capabilities of Audit (Premium), we've also released the capability to retain audit logs for 10 years. The 10-year retention of audit logs helps support long running investigations and respond to regulatory, legal, and internal obligations.
 
 > [!NOTE]
 > Retaining audit logs for 10 years will require an additional per-user add-on license. After this license is assigned to a user and an appropriate 10-year audit log retention policy is set for that user, audit logs covered by that policy will start to be retained for the 10-year period. This policy is not retroactive and can't retain audit logs that were generated before the 10-year audit log retention policy was created. For more information, see the [FAQs for Audit (Premium)](#faqs-for-audit-premium) section in this article.
@@ -47,9 +47,7 @@ In addition to the one-year retention capabilities of Audit (Premium), we have a
 All audit records generated in other services that aren't covered by the default audit log retention policy (described in the previous section) are retained for 90 days. But you can create customized audit log retention policies to retain other audit records for longer periods of time up to 10 years. You can create a policy to retain audit records based on one or more of the following criteria:
 
 - The Microsoft 365 service where the audited activities occur.
-
 - Specific audited activities.
-
 - The user who performs an audited activity.
 
 You can also specify how long to retain audit records that match the policy and a priority level so that specific policies will take priority over other policies. Also note that any custom audit log retention policy will take precedence over the default audit retention policy in case you need retain Exchange, SharePoint, or Azure Active Directory audit records for less than a year (or for 10 years) for some or all users in your organization. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
@@ -61,25 +59,19 @@ Audit (Premium) helps organizations to conduct forensic and compliance investiga
 Audit (Premium) provides the following events:
 
 - [MailItemsAccessed](#mailitemsaccessed)
-
 - [Send](#send)
-
 - [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
-
 - [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
-
 - [Other Audit (Premium) events in Microsoft 365](#other-audit-premium-events-in-microsoft-365)
 
 ### MailItemsAccessed
 
-The MailItemsAccessed event is a mailbox auditing action and is triggered when mail data is accessed by mail protocols and mail clients. This event can help investigators identify data breaches and determine the scope of messages that may have been compromised. If an attacker gained access to email messages, the MailItemsAccessed action will be triggered even if there is no explicit signal that messages were actually read (in other words, the type of access such as a bind or sync is recorded in the audit record).
+The MailItemsAccessed event is a mailbox auditing action and is triggered when mail data is accessed by mail protocols and mail clients. This event can help investigators identify data breaches and determine the scope of messages that may have been compromised. If an attacker gained access to email messages, the MailItemsAccessed action will be triggered even if there's no explicit signal that messages were actually read (in other words, the type of access such as a bind or sync is recorded in the audit record).
 
 The MailItemsAccessed event replaces MessageBind in mailbox auditing logging in Exchange Online and provides these improvements:
 
-- MessageBind was only configurable for AuditAdmin user logon type; it did not apply to delegate or owner actions. MailItemsAccessed applies to all logon types.
-
+- MessageBind was only configurable for AuditAdmin user logon type; it didn't apply to delegate or owner actions. MailItemsAccessed applies to all logon types.
 - MessageBind only covered access by a mail client. It didn't apply to sync activities. MailItemsAccessed events are triggered by both bind and sync access types.
-
 - MessageBind actions would trigger the creation of multiple audit records when the same email message was accessed, which resulted in auditing "noise". In contrast, MailItemsAccessed events are aggregated into fewer audit records.
 
 For information about audit records for MailItemsAccessed activities, see [Use Audit (Premium) to investigate compromised accounts](audit-log-investigate-accounts.md).
@@ -95,9 +87,7 @@ You can also run the [Search-UnifiedAuditLog -Operations MailItemsAccessed](/pow
 The Send event is also a mailbox auditing action and is triggered when a user performs one of the following actions:
 
 - Sends an email message
-
 - Replies to an email message
-
 - Forwards an email message
 
 Investigators can use the Send event to identify email sent from a compromised account. The audit record for a Send event contains information about the message, such as when the message was sent, the InternetMessage ID, the subject line, and if the message contained attachments. This auditing information can help investigators identify information about email messages sent from a compromised account or sent by an attacker. Additionally, investigators can use a Microsoft 365 eDiscovery tool to search for the message (by using the subject line or message ID) to identify the recipients the message was sent to and the actual contents of the sent message.
@@ -113,18 +103,14 @@ You can also run the [Search-UnifiedAuditLog -Operations Send](/powershell/modul
 The SearchQueryInitiatedExchange event is triggered when a person uses Outlook to search for items in a mailbox. Events are triggered when searches are performed in the following Outlook environments:
 
 - Outlook (desktop client)
-
 - Outlook on the web (OWA)
-
 - Outlook for iOS
-
 - Outlook for Android
-
 - Mail app for Windows 10
 
 Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker who may have compromised an account looked for or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual text of the search query. The audit record also indicates the Outlook environment the search was performed in. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent of the email data that was searched for.
 
-To search for SearchQueryInitiatedExchange audit records, you can search for the **Performed email search** activity in the **Search activities** drop-down list in the [audit log search tool](audit-log-search.md) in the compliance center.
+To search for SearchQueryInitiatedExchange audit records, you can search for the **Performed email search** activity in the **Search activities** drop-down list in the [audit log search tool](audit-log-search.md) in the compliance portal.
 
 ![Searching for Performed email search actions in the audit log search tool.](../media/AdvAudit_SearchExchange.png)
 
@@ -138,16 +124,13 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExc
 Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in SharePoint. Events are triggered when searches are performed on the root or default page of the following types of SharePoint sites:
 
 - Home sites
-
 - Communication sites
-
 - Hub sites
-
 - Sites associated with Microsoft Teams
 
 Investigators can use the SearchQueryInitiatedSharePoint event to determine if an attacker tried to find (and possibly accessed) sensitive information in SharePoint. The audit record for a SearchQueryInitiatedSharePoint event contains also contains the actual text of the search query. The audit record also indicates the type of SharePoint site that was searched. By looking at the search queries that an attacker may have performed, an investigator can better understand the intent and scope of the file data being searched for.
 
-To search for SearchQueryInitiatedSharePoint audit records, you can search for the **Performed SharePoint search** activity in the **Search activities** drop-down list in the [audit log search tool](audit-log-search.md) in the compliance center.
+To search for SearchQueryInitiatedSharePoint audit records, you can search for the **Performed SharePoint search** activity in the **Search activities** drop-down list in the [audit log search tool](audit-log-search.md) in the compliance portal.
 
 ![Searching for Performed SharePoint search actions in the audit log search tool.](../media/AdvAudit_SearchSharePoint.png)
 
@@ -161,18 +144,15 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSha
 In addition to the events in Exchange Online and SharePoint Online, there are events in other Microsoft 365 services that are logged when users are assigned the appropriate Audit (Premium) licensing. The following Microsoft 365 services provide Audit (Premium) events. Select the corresponding link to go to an article that identifies and describes these events.
 
 - [Microsoft Forms](audit-log-search.md#microsoft-forms-activities)
-
 - [Microsoft Stream](/stream/audit-logs#actions-logged-in-stream)
-
 - [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities)
-
 - [Yammer](audit-log-search.md#yammer-activities)
 
 ## High-bandwidth access to the Office 365 Management Activity API
 
 Organizations that access auditing logs through the Office 365 Management Activity API were restricted by throttling limits at the publisher level. This means that for a publisher pulling data on behalf of multiple customers, the limit was shared by all those customers.
 
-With the release of Audit (Premium), we're moving from a publisher-level limit to a tenant-level limit. The result is that each organization will get their own fully allocated bandwidth quota to access their auditing data. The bandwidth is not a static, predefined limit but is modeled on a combination of factors including the number of seats in the organization and that E5/A5/G5 organizations will get more bandwidth than non-E5/A5/G5 organizations.
+With the release of Audit (Premium), we're moving from a publisher-level limit to a tenant-level limit. The result is that each organization will get their own fully allocated bandwidth quota to access their auditing data. The bandwidth isn't a static, predefined limit but is modeled on a combination of factors including the number of seats in the organization and that E5/A5/G5 organizations will get more bandwidth than non-E5/A5/G5 organizations.
 
 All organizations are initially allocated a baseline of 2,000 requests per minute. This limit will dynamically increase depending on an organization's seat count and their licensing subscription. E5/A5/G5 organizations will get about twice as much bandwidth as non-E5/A5/G5 organizations. There will also be a cap on the maximum bandwidth to protect the health of the service.
 
@@ -186,7 +166,7 @@ To benefit from user-level Audit (Premium) capabilities, a user needs to be assi
 
 **My organization has an E5/A5/G5 subscription, do I need to do anything to get access to audit records for Audit (Premium) events?**
 
-For eligible customers and users assigned the appropriate E5/A5/G5 license, there is no action needed to get access to Audit (Premium) events, except for enabling the SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint events (as previously described in this article). Audit (Premium) events will only be generated for users with E5/A5/G5 licenses once those licenses have been assigned.
+For eligible customers and users assigned the appropriate E5/A5/G5 license, there's no action needed to get access to Audit (Premium) events, except for enabling the SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint events (as previously described in this article). Audit (Premium) events will only be generated for users with E5/A5/G5 licenses once those licenses have been assigned.
 
 **Are the new events in Audit (Premium) available in the Office 365 Management Activity API?**
 

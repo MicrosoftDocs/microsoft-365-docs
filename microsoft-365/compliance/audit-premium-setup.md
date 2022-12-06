@@ -37,13 +37,13 @@ Audit (Premium) features such as the ability to log crucial events such as MailI
 
 1. In the Microsoft 365 admin center, go to **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and select a user.
 
-2. On the user properties flyout page, click **Licenses and apps**.
+2. On the user properties flyout page, select **Licenses and apps**.
 
 3. In the **Licenses** section, verify that the user is assigned an E5 license or is assigned an appropriate add-on license. For a list of licenses that support Audit (Premium), see [Audit (Premium) licensing requirements](audit-solutions-overview.md#audit-premium-1).
 
 4. Expand the **Apps** section, and verify that the **Microsoft 365 Advanced Auditing** checkbox is selected.
 
-5. If the checkbox isn't selected, select it, and then click **Save changes.**
+5. If the checkbox isn't selected, select it, and then select **Save changes.**
 
    The logging of audit records for MailItemsAccessed and Send will begin within 24 hours. You have to perform Step 3 to start logging of two other Audit (Premium) events: SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint.
 

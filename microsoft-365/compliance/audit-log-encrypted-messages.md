@@ -52,6 +52,6 @@ For more information on the message access log schema, see [Search the audit log
 To view the events captured in the message access logs:
 
 1. In the Microsoft Purview compliance portal, under **Solutions**, select **Audit**.
-1. Under **Search**, click the drop down for **Activities** and type encrypted message portal activities.
+1. Under **Search**, select the drop-down for **Activities** and type encrypted message portal activities.
 1. Under encrypted message portal activities, select the event types to use in the search. Set the date range for the search (default is the previous week), you can also optionally add a particular user in your organization for the search. When ready, select **Search**.
 1. Select an event from the list to view the audit properties.
