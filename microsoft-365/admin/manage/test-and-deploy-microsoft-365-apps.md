@@ -58,6 +58,47 @@ You can manage testing and deployment of purchased and licensed Microsoft 365 Ap
 > [!NOTE]
 > _Is this a test deployment_ is an administrative tag to determine if the app is still in testing phase. It has no technical impact.
 
+## Allow or block Enhanced Teams Apps on Integrated Apps
+
+As a global admin, you can manage Enhanced Teams Apps on the Microsoft 365 App (formerly known as Office.com) via Integrated Apps on the Microsoft 365 Admin Center.
+
+Previously, for an app to work in Teams, Outlook, and Office, you needed to manage each app independently. With the Enhanced Teams apps, you only need to manage it once, and the app will enable a single, connected experience for end-users across Teams, Outlook, and Office.com.
+
+This feature is currently available to Global Admins only and only targets the Microsoft 365 App (formerly known as Office.com). By default, all Enhanced Teams Apps will be allowed to all users in your organization on the Microsoft 365 App.
+
+> [!NOTE]
+> Currently, any changes made to an Enhanced Teams App will only appear in the Microsoft 365 App. Outlook is not supported in this phase of the rollout, so changes made to the app will not reflect in the Outlook clients at this time. Once we’re ready to support Outlook, these apps will start to show up in Outlook clients based on your last saved settings.
+
+You can control how users install these apps from the store on Integrated Apps in the Microsoft 365 Admin Center via the Available Apps and Blocked Apps.
+
+### How to see Available Apps in your organization
+
+1. Sign in to M365 Admin Center as a Global Administrator.
+2. Select **Available Apps** to see the status of all Enhanced Teams apps in the catalog.
+3. Select an app to view more details.
+
+Since all Enhanced Teams Apps are allowed by default to all users on the Microsoft 365 App, all apps will show the status ‘All users in the organization can install’. This means that the app is available for all users in your organization to install and use on the Microsoft 365 App.  
+
+### How to block an app?
+
+You can block an app for all users in your organization to restrict them from downloading and using the app on the Microsoft 365 App.
+
+1. Select an app from the **Available Apps** list to launch the overview pane. 
+2. Select **Block app**.
+3. Consent to blocking the app by checking **Yes, I’m sure I want to block this app.**
+4. Select **Block**. You can now see this app in the Blocked Apps list.
+
+When you choose to block an app, it will be blocked for all users in your organization. Blocking an app overrides previous admin deployment or user installation on the Microsoft 365 App so that the app can no longer be used. 
+
+> [!NOTE]
+> Currently, the Enhanced Teams App will only be blocked in the Microsoft 365 App. For Teams and Outlook, we will honor the historic setting for apps in Teams Admin Center and Exchange Admin Center.
+
+### How to unblock an app
+
+
+
+
+
 ## Find published apps for testing and full deployment
 
 You can find, test, and fully deploy published apps that don't already appear in the list on the Integrated apps page. By purchasing and licensing the apps from the admin center, you can add Microsoft and Microsoft partner apps to your list from a single location.
