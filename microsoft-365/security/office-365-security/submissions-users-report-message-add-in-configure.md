@@ -80,7 +80,7 @@ After the add-in is installed and enabled, users will see the following icons:
   - The Report Phishing add-in:
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/OWA-ReportPhishing.png" alt-text="The Report Message add-in icon in Outlook on the web." lightbox="../../media/OWA-ReportPhishing.png":::
+    > :::image type="content" source="../../media/OWA-ReportPhishing.png" alt-text="The Report Phishing add-in icon in Outlook on the web." lightbox="../../media/OWA-ReportPhishing.png":::
 
 ## What do you need to know before you begin?
 
@@ -143,7 +143,7 @@ Install and configure the Report Message or Report Phishing add-ins for the orga
    - **Assign users**: Select one of the following values:
      - **Just me**
      - **Entire organization**
-     - **Specific users/groups**: Find and select users and groups in the search box. After each selection, the user or group appears in the **To be added** section that appears below the search box. To remove a selection, click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) on the entry.
+     - **Specific users/groups**: Find and select users and groups in the search box. After each selection, the user or group appears in the **To be added** section that appears below the search box. To remove a selection, click ![Remove entry icon.](../../media/m365-cc-sc-remove-selection-icon.png) on the entry.
 
    - **Email notification**: By default the **Send email notification to assigned users** is selected. Click **View email sample** to open the Add-in deployment email alerts](/microsoft-365/admin/manage/add-in-deployment-email-alerts) article.
 
@@ -230,7 +230,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
      - **Assign users** section: Select one of the following values:
        - **Just me**
        - **Entire organization**
-       - **Specific users/groups**: Find and select users and groups in the search box. After each selection, the user or group appears in the **Added users** section that appears below the search box. To remove a selection, click ![Remove icon.](../../media/m365-cc-sc-remove.png) on the entry.
+       - **Specific users/groups**: Find and select users and groups in the search box. After each selection, the user or group appears in the **Added users** section that appears below the search box. To remove a selection, click ![Remove selection icon.](../../media/m365-cc-sc-remove.png) on the entry.
 
      - **Email notification** section: **Send email notification to assigned users** and **View email sample** are not selectable.
 
