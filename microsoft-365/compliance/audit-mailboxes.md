@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - purview-compliance
+- audit
 search.appverid:
 - MOE150
 - MET150
