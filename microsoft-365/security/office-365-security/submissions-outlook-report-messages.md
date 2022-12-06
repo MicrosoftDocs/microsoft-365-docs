@@ -38,9 +38,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 - If you're an admin in an organization with Exchange Online mailboxes, use the Submissions portal in the Microsoft 365 Defender portal. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-- You can configure to send messages directly to Microsoft, a mailbox you specify, or both. For more information, see [User submissions policies](user-submission.md).
+- You can configure to send messages directly to Microsoft, a mailbox you specify, or both. For more information, see [User submissions policies](submissions-user-reported-messages-files-custom-mailbox.md).
 
-- For more information on how to get and enable the Report Message or the Report Phishing add-ins, see [Enable the Report Message or the Report Phishing add-ins](enable-the-report-message-add-in.md).
+- For more information on how to get and enable the Report Message or the Report Phishing add-ins, see [Enable the Report Message or the Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 

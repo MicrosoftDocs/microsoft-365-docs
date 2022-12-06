@@ -111,7 +111,7 @@ This configuration is possible when the devices have the share and read access (
 
 3. Go to the **Actions** tab. Select **New...** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Select **OK**.
 
-4. Configure any oher settings as appropriate.
+4. Configure any other settings as appropriate.
 
 5. Select **OK** to save the scheduled task.
 
