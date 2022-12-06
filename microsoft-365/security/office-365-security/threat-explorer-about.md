@@ -68,7 +68,7 @@ As part of this update, the number of rows for Email records that can be exporte
 > [!NOTE]
 > The user tags feature is in *Preview*, isn't available to everyone, and is subject to change. For information about the release schedule, check out the Microsoft 365 roadmap.
 
-User tags identify specific groups of users in Microsoft Defender for Office 365. For more information about tags, including licensing and configuration, see [User tags](user-tags.md).
+User tags identify specific groups of users in Microsoft Defender for Office 365. For more information about tags, including licensing and configuration, see [User tags](user-tags-about.md).
 
 In Threat Explorer, you can see information about user tags in the following experiences.
 
@@ -218,7 +218,7 @@ To improve the hunting process, we've updated Threat Explorer and Real-time dete
 
 ### Filter by user tags
 
-You can now sort and filter on system or custom user tags to quickly grasp the scope of threats. To learn more, see [User tags](user-tags.md).
+You can now sort and filter on system or custom user tags to quickly grasp the scope of threats. To learn more, see [User tags](user-tags-about.md).
 
 > [!IMPORTANT]
 > Filtering and sorting by user tags is currently in public preview. This functionality may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided about it.

@@ -26,7 +26,7 @@ In every Microsoft 365 organization, there are people that are essential, like e
 
 To help your organization protect these accounts, you can now designate specific users as priority accounts and leverage app-specific features that provide them with extra protection. In the future, more apps and features will support priority accounts, and to start with, we've announced two capabilities: **priority account protection** and **premium mail flow monitoring**.
 
-- **Priority account protection** - Microsoft Defender for Office 365 (formerly Office 365 Advanced Threat Protection) supports priority accounts as tags that can be used in filters in alerts, reports, and investigations. For more information, check out [User tags in Microsoft Defender for Office 365](../../security/office-365-security/user-tags.md).
+- **Priority account protection** - Microsoft Defender for Office 365 (formerly Office 365 Advanced Threat Protection) supports priority accounts as tags that can be used in filters in alerts, reports, and investigations. For more information, check out [User tags in Microsoft Defender for Office 365](../../security/office-365-security/user-tags-about.md).
 
   A natural question is, "Aren't all users a priority? Why not designate all users as priority accounts?" Yes, all users are a priority, but priority account protection offers the following additional benefits:
 
