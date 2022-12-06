@@ -577,6 +577,9 @@
 ####### [Import Indicator](import-ti-indicators.md)
 ####### [Delete Indicator](delete-ti-indicator-by-id.md)
 
+###### [Information gathering]()
+####### [Export information gathering assessment](get-assessment-information-gathering.md)
+
 ###### [IP]()
 ####### [Get IP related alerts](get-ip-related-alerts.md)
 ####### [Get IP statistics](get-ip-statistics.md)
