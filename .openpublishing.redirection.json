@@ -9670,5 +9670,70 @@
       "redirect_url": "/microsoft-365/security/office-365-security/user-tags-about",
       "redirect_document_id": true
     },
+    {
+      "source_path": "microsoft-365/compliance/advanced-audit.md",
+      "redirect_url": "/microsoft-365/compliance/audit-premium",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/auditing-solutions-overview.md",
+      "redirect_url": "/microsoft-365/compliance/audit-solutions-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/auditing-troubleshooting-scenarios.md",
+      "redirect_url": "/microsoft-365/compliance/audit-troubleshooting-scenarios",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log.md",
+      "redirect_url": "/microsoft-365/compliance/audit-log-detailed-properties",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/export-view-audit-log-records.md",
+      "redirect_url": "/microsoft-365/compliance/audit-log-export-records",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/mailitemsaccessed-forensics-investigations.md",
+      "redirect_url": "/microsoft-365/compliance/audit-log-investigate-accounts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/ome-message-access-logs.md",
+      "redirect_url": "/microsoft-365/compliance/audit-log-encrypted-messages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-the-audit-log-in-security-and-compliance.md",
+      "redirect_url": "/microsoft-365/compliance/audit-log-search",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/set-up-basic-audit.md",
+      "redirect_url": "/microsoft-365/compliance/audit-standard-setup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/turn-audit-log-search-on-or-off.md",
+      "redirect_url": "/microsoft-365/compliance/audit-log-enable-disable",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/use-sharing-auditing.md",
+      "redirect_url": "/microsoft-365/compliance/audit-log-sharing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/set-up-advanced-audit.md",
+      "redirect_url": "/microsoft-365/compliance/audit-premium-setup",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/enable-mailbox-auditing.md",
+      "redirect_url": "/microsoft-365/compliance/audit-mailboxes",
+      "redirect_document_id": true
+    }
    ]
   }
