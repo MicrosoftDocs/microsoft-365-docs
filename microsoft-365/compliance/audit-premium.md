@@ -143,10 +143,10 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSha
 
 In addition to the events in Exchange Online and SharePoint Online, there are events in other Microsoft 365 services that are logged when users are assigned the appropriate Audit (Premium) licensing. The following Microsoft 365 services provide Audit (Premium) events. Select the corresponding link to go to an article that identifies and describes these events.
 
-- [Microsoft Forms](audit-log-search.md#microsoft-forms-activities)
+- [Microsoft Forms](audit-log-activities.md#microsoft-forms-activities)
 - [Microsoft Stream](/stream/audit-logs#actions-logged-in-stream)
 - [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities)
-- [Yammer](audit-log-search.md#yammer-activities)
+- [Yammer](audit-log-activities.md#yammer-activities)
 
 ## High-bandwidth access to the Office 365 Management Activity API
 

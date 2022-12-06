@@ -69,7 +69,7 @@ Now you're ready to search the audit log in the Microsoft Purview compliance por
 
    1. **Date and time range**. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The last seven days are selected by default.
   
-   2. **Activities**. Select the activities to search for. Use the search box to search for activities to add to the list. For a partial list of audited activities, see [Audited activities](audit-log-search.md#audited-activities). Leave this box blank to return entries for all audited activities.
+   2. **Activities**. Select the activities to search for. Use the search box to search for activities to add to the list. For a partial list of audited activities, see [Audited activities](audit-log-activities.md). Leave this box blank to return entries for all audited activities.
   
    3. **Users**.  Select in this box and start typing the name of users to display search results for. The audit log entries for the selected activities performed by the users you select in this box are displayed in the list of results. Leave this box blank to return entries for all users (and service accounts) in your organization.
   

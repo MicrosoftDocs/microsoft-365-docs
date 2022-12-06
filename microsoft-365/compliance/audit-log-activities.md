@@ -23,7 +23,7 @@ search.appverid:
 
 The tables in this article describe the activities that are audited in Microsoft 365. You can search for these events by searching the audit log in the security and compliance portal.
 
-These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
+These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Detailed properties in the audit log](audit-log-detailed-properties.md).
 
 Select one of the following links to go to a specific table.
 
