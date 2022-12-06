@@ -92,11 +92,11 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 |To perform this task...|See this section...|
 |---|---|
 |Manage tamper protection across your tenant <p> Use the Microsoft 365 Defender portal to turn tamper protection on or off|[Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)|
-|Fine-tune tamper protection settings in your organization <p> Use Intune (Microsoft Endpoint Manager) to turn tamper protection on or off. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md)|
-|Turn tamper protection on (or off) for your organization with Configuration Manager|[Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
-|Turn tamper protection on (or off) for an individual device|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
-|View details about tampering attempts on devices|[View information about tampering attempts](#view-information-about-tampering-attempts)|
-|Review your security recommendations|[Review security recommendations](#review-your-security-recommendations)|
+|Fine-tune tamper protection settings in your organization <p> Use Microsoft Intune to turn tamper protection on or off. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Intune](manage-tamper-protection-microsoft-endpoint-manager.md)|
+|Turn tamper protection on (or off) for your organization by using Configuration Manager|[Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
+|Turn tamper protection on (or off) for an individual device (for home users or devices that are not managed by a security team)|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
+|View details about tampering attempts on devices|[View information about tampering attempts in Microsoft 365 Defender](#view-information-about-tampering-attempts)|
+|Review your security recommendations |[Review security recommendations](#review-your-security-recommendations)|
 |Review the list of frequently asked questions (FAQs)|[Browse the FAQs](faqs-tamper-protection.md)|
 
 ## Potential dependency on cloud protection  
@@ -142,10 +142,7 @@ To learn more about Microsoft Defender Vulnerability Management, see [Dashboard 
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
