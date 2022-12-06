@@ -319,7 +319,7 @@ Spoof intelligence is available in EOP and Defender for Office 365. User imperso
 Full instructions for creating and modifying anti-phishing policies are available in the following topics:
 
 - [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
-- [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
 
 #### Anti-phishing policies in PowerShell
 
@@ -347,7 +347,7 @@ If you'd rather use PowerShell to assign quarantine policies in anti-phishing po
 
 - A new anti-phishing policy in PowerShell requires an anti-phish policy (settings) using the **New-AntiPhishPolicy** cmdlet and an exclusive anti-phish rule (recipient filters) using the **New-AntiPhishRule** cmdlet. For instructions, see the following topics:
   - [Use PowerShell to configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
-  - [Use Exchange Online PowerShell to configure anti-phishing policies](configure-mdo-anti-phishing-policies.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
+  - [Use Exchange Online PowerShell to configure anti-phishing policies](anti-phishing-policies-mdo-configure.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
 
 This example creates a new anti-phish policy named Research Department with the following settings:
 
