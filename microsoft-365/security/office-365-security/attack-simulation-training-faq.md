@@ -132,7 +132,7 @@ If messages that users reported as phishing aren't captured in Attack simulation
 
 ### Users are assigned training after they report a simulated message
 
-If users are assigned training after they report a phishing simulation message, check to see if your organization uses a reporting mailbox to receive user reported messages at <https://security.microsoft.com/securitysettings/userSubmission>. The reporting mailbox needs to be configured to skip many security checks as described in the [reporting mailbox prerequisites](user-submission.md#configuration-requirements-for-the-reporting-mailbox).
+If users are assigned training after they report a phishing simulation message, check to see if your organization uses a reporting mailbox to receive user reported messages at <https://security.microsoft.com/securitysettings/userSubmission>. The reporting mailbox needs to be configured to skip many security checks as described in the [reporting mailbox prerequisites](submissions-user-reported-messages-files-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox).
 
 If you don't configure the required exclusions for the custom reporting mailbox, these messages might be detonated by Safe Links or Safe Attachments protection, which will cause training assignments.
 

@@ -97,16 +97,16 @@ After you've verified that the reporting mailbox meets all of these requirements
 
    - **On** ![Toggle on.](../../media/scc-toggle-on.png): The following configurations are supported:
      - Users in your organization can see and use the the built-in **Report** button in Outlook on the web or the Microsoft Report Message or Report Phishing add-ins in virtually all Outlook platforms to report messages.
-     - You can configure user reported messages to go to the reporting mailbox, to Microsoft, or to both.
-     - You decide whether users can see pre and post reporting popups in outlook while reporting. 
-     - You decide how much to customize the feedback email sent to users from mark & notify.
-     - You decide whether users can report messages from quarantine or not. 
+       - You can configure user reported messages to go to the reporting mailbox, to Microsoft, or both.
+       - You decide whether users receive **Before a message is reported** and **After a message is reported** pop-ups in Outlook.
+       - You decide how to customize the feedback email that's sent to users from **Mark and notify** on the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
+       - You decide whether users can report messages from quarantine.
 
        You choose this configuration by selecting **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options** in the **Outlook report button configuration** section. The available configuration options from this selection are explained in the [Options for Microsoft reporting tools](#options-for-microsoft-reporting-tools) section in this article.
 
      - Users in your organization use a third-party, non-Microsoft add-in to report messages.
-     - You decide whether Microsoft can read end user report from the third-party reporting mailbox or not.
-     - You decide whether users can report messages from quarantine to third-party reporting mailbox or not.
+       - You decide whether Microsoft can read end user report from the third-party reporting mailbox.
+       - You decide whether users can report messages from quarantine to third-party reporting mailbox.
 
        You choose this configuration by selecting **Use a non-Microsoft add-in button** in the **Outlook report button configuration** section. The available configuration options from this selection are explained in the [Options for third-party reporting tools](#options-for-third-party-reporting-tools) section in this article.
 

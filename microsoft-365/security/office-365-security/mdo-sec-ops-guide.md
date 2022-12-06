@@ -244,7 +244,7 @@ User reported messages and admin submissions of email messages are critical posi
 
 Organizations have multiple options for configuring user reported messages. Depending on the configuration, security teams might have more active involvement when users submit false positives or false negatives to Microsoft:
 
-- User user reported messages are sent to Microsoft for analysis when the [user reported message settings](user-submission.md) are configured with either of the following settings:
+- User user reported messages are sent to Microsoft for analysis when the [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) are configured with either of the following settings:
   - **Send the reported messages to**: **Microsoft only**.
   - **Send the reported messages to**: **Microsoft and my reporting mailbox**.
 
@@ -287,13 +287,13 @@ If your organization uses a third-party reporting tool that allows users to inte
 - Simplified triage.
 - Reduced investigation and response time.
 
-Designate the reporting mailbox where user reported messages are sent on the **User reported** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/securitysettings/userSubmission>. For more information, see [user reported message settings](user-submission.md).
+Designate the reporting mailbox where user reported messages are sent on the **User reported** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/securitysettings/userSubmission>. For more information, see [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md).
 
 > [!NOTE]
 >
 > - The reporting mailbox must be an Exchange Online mailbox.
 > - The third-party reporting tool must include the original reported message as an uncompressed .EML or .MSG attachment in the message that's sent to the reporting mailbox (don't just forward the original message to the reporting mailbox).
-> - The reporting mailbox requires specific prerequisites to allow potentially bad messages to be delivered without being filtered or altered. For more information, see [Configuration requirements for the reporting mailbox](user-submission.md#configuration-requirements-for-the-reporting-mailbox).
+> - The reporting mailbox requires specific prerequisites to allow potentially bad messages to be delivered without being filtered or altered. For more information, see [Configuration requirements for the reporting mailbox](submissions-user-reported-messages-files-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox).
 
 When a user reported message arrives in the reporting mailbox, Defender for Office 365 automatically generates the alert named **Email reported by user as malware or phish**. This alert launches an [AIR playbook](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). The playbook performs a series of automated investigations steps:
 

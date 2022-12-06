@@ -44,22 +44,58 @@ The Report Phishing add-in provides the option to report only phishing messages.
 
 If you're an individual user, you can enable both the add-ins for yourself.
 
-If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can enable the Report Message add-in and the Report Phishing add-in for your organization. Both add-ins are now available through [Centralized Deployment](../../admin/manage/centralized-deployment-of-add-ins.md).
+If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can enable the Report Message and Report Phishing add-ins for your organization. Both add-ins are now available through [Centralized Deployment](../../admin/manage/centralized-deployment-of-add-ins.md).
+
+After the add-in is installed and enabled, users will see the following icons:
+
+- **Outlook for Windows**:
+
+  - The **Report Message** icon in the Classic Ribbon:
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="The Report Message add-in using the Classic Ribbon in Outlook." lightbox="../../media/OutlookReportMessageIcon.png":::
+
+  - The **Report Message** icon in the Simplified Ribbon: Click ![More commands icon.](../../media/m365-cc-sc-more-actions-icon.png) **More commands** \> **Protection** section \> **Report Message**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/OutlookReportMessage-simplified.png" alt-text="The Report Message add-in using the Simplified Ribbon in Outlook." lightbox="../../media/OutlookReportMessage-simplified.png":::
+
+  - The **Report Phishing** icon in the Classic Ribbon:
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../../media/Outlook-ReportPhishing.png" alt-text="The Report Phishing add-in in Outlook." lightbox="../../media/Outlook-ReportPhishing.png":::
+
+  - The **Report Phishing** icon in the Simplified Ribbon: Click ![More commands icon.](../../media/m365-cc-sc-more-actions-icon.png) **More commands** \> **Protection** section \> **Report Phishing**.
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/Outlook-ReportPhishing-simplified.png" alt-text="The Report Phishing add-in using the Simplified Ribbon in Outlook." lightbox="../../media/Outlook-ReportPhishing-simplified.png":::
+
+- **Outlook on the web**:
+
+  - The Report Message add-in:
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../../media/owa-report-message-icon.png" alt-text="The Report Message add-in icon in Outlook on the web." lightbox="../../media/owa-report-message-icon.png":::
+
+  - The Report Phishing add-in:
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../../media/OWA-ReportPhishing.png" alt-text="The Report Message add-in icon in Outlook on the web." lightbox="../../media/OWA-ReportPhishing.png":::
 
 ## What do you need to know before you begin?
 
-- Both the Report Message add-in and the Report Phishing add-in work with most Microsoft 365 subscriptions and the following products:
+- The Report Message and Report Phishing add-ins work with most Microsoft 365 subscriptions and the following products:
   - Outlook on the web
   - Outlook 2013 SP1 or later
   - Outlook 2016 for Mac
   - Outlook included with Microsoft 365 apps for Enterprise
   - Outlook app for iOS and Android
 
-- Both add-ins are not available for shared, group, or delegated mailboxes (the add-ins will be greyed out).
+- The add-ins are not available for shared, group, or delegated mailboxes (**Report message** will be greyed out).
 
-- Both add-ins are not available for on-premises Exchange mailboxes.
+- The add-ins are not available for on-premises Exchange mailboxes.
 
-- Your existing web browser should work with both the Report Message and Report Phishing add-ins. But, if you notice the add-in isn't available or not working as expected, try a different browser.
+- Your existing web browser should work with the Report Message and Report Phishing add-ins. But, if you notice an add-in isn't available or not working as expected, try a different browser.
 
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
@@ -155,7 +191,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
 4. Choose which users will have access to the add-in, select a deployment method, and then select **Deploy**.
 
-5. To fully configure the settings, see [User reported message settings](user-submission.md).
+5. To fully configure the settings, see [User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md).
 
 ### View and edit settings for the Report Message or Report Phishing add-ins
 
@@ -230,33 +266,11 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
    :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="The details page of the Report Message add-in where you click Get it now." lightbox="../../media/ReportMessageGETITNOW.png":::
 
-3. In the dialog that opens, enter your Microsoft account and then click **Sign in**.
+3. If prompted, sign in with your Microsoft account credentials.
 
-After the add-in is installed and enabled, you'll see the following icons:
+4. When the installation is finished, you'll see the following **Launch** page:
 
-- **Outlook**:
-
-  - The Report Message add-in:
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="The Report Message add-in icon in Outlook." lightbox="../../media/OutlookReportMessageIcon.png":::
-
-  - The Report Phishing add-in:
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/Outlook-ReportPhishing.png" alt-text="The Report Message add-in icon in Outlook." lightbox="../../media/Outlook-ReportPhishing.png":::
-
-- **Outlook on the web**:
-
-  - The Report Message add-in:
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/owa-report-message-icon.png" alt-text="The Report Message add-in icon in Outlook on the web." lightbox="../../media/owa-report-message-icon.png":::
-
-  - The Report Phishing add-in:
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/OWA-ReportPhishing.png" alt-text="The Report Message add-in icon in Outlook on the web." lightbox="../../media/OWA-ReportPhishing.png":::
+   :::image type="content" source="../../media/report-message-add-in-launch-page.png" alt-text="The Launch page of the Report Message add-in." lightbox="../../media/report-message-add-in-launch-page.png":::
 
 ### Get the Report Message or the Report Phishing add-ins for yourself in Microsoft 365 GCC or GCC High
 
@@ -264,4 +278,4 @@ Individual users in Microsoft 365 GCC or GCC High can't get the Report Message o
 
 ## Use the Report Message or the Report Phishing add-ins
 
-You can use the Report Message or the Report Phishing add-ins to submit false positives (good email that was blocked or sent to the Junk Email folder) and false negatives (unwanted email or phishing that was delivered to the Inbox) in Outlook. For more information, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
+You can use the Report Message or the Report Phishing add-ins to submit false positives (good email that was blocked or sent to the Junk Email folder) and false negatives (unwanted email or phishing that was delivered to the Inbox) in Outlook. For more information, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
