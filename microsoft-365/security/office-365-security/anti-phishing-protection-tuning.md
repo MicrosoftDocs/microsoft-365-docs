@@ -50,7 +50,7 @@ Reporting phishing messages is helpful in tuning the filters that are used to pr
 
 You can examine the headers of the phishing message to see if there's anything that you can do yourself to prevent more phishing messages from coming through. In other words, examining the messages headers can help you identify any settings in your organization that were responsible for allowing the phishing messages in.
 
-Specifically, you should check the **X-Forefront-Antispam-Report** header field in the message headers for indications of skipped filtering for spam or phishing in the Spam Filtering Verdict (SFV) value. Messages that skip filtering will have an entry of `SCL:-1`, which means one of your settings allowed this message through by overriding the spam or phishing verdicts that were determined by the service. For more information on how to get message headers and the complete list of all available anti-spam and anti-phishing message headers, see [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md).
+Specifically, you should check the **X-Forefront-Antispam-Report** header field in the message headers for indications of skipped filtering for spam or phishing in the Spam Filtering Verdict (SFV) value. Messages that skip filtering will have an entry of `SCL:-1`, which means one of your settings allowed this message through by overriding the spam or phishing verdicts that were determined by the service. For more information on how to get message headers and the complete list of all available anti-spam and anti-phishing message headers, see [Anti-spam message headers in Microsoft 365](message-headers-eop-mdo.md).
 
 ## Best practices to stay protected
 
@@ -62,7 +62,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - You can repeat the above step for Impersonation (domain or user) in Microsoft Defender for Office 365. The Impersonation report is found under **Threat Management** \> **Dashboard** \> **Insights**.
 
-- Periodically review the [Threat Protection Status report](view-reports-for-mdo.md#threat-protection-status-report).
+- Periodically review the [Threat Protection Status report](reports-defender-for-office-365.md#threat-protection-status-report).
 
 - Some customers inadvertently allow phishing messages through by putting their own domains in the Allow sender or Allow domain list in anti-spam policies. Although this configuration will allow some legitimate messages through, it will also allow malicious messages that would normally be blocked by the spam and/or phishing filters. Instead of allowing the domain, you should correct the underlying problem.
 
@@ -82,7 +82,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - Whenever possible, we recommend that you deliver email for your domain directly to Microsoft 365. In other words, point your Microsoft 365 domain's MX record to Microsoft 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Microsoft 365. If you must use a third-party email hygiene system in front of EOP, use Enhanced Filtering for Connectors. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Users should use the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) to report messages to Microsoft, which can train our system. Admins should also take advantage of [Admin Submission](admin-submission.md) capabilities.
+- Users should use the [Report Message add-in](submissions-users-report-message-add-in-configure.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) to report messages to Microsoft, which can train our system. Admins should also take advantage of [Admin Submission](admin-submission.md) capabilities.
 
 - Multi factor authentication (MFA) is a good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 

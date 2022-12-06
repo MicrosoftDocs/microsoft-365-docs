@@ -57,7 +57,7 @@ Blocked sender lists and blocked domain lists in anti-spam policies in EOP inspe
 
 ## Use block entries in the Tenant Allow/Block List
 
-Our number one recommended option for blocking mail from specific senders or domains is the Tenant Allow/Block List. For instructions, see [Allow or block email using the Tenant Allow/Block List](allow-block-email-spoof.md).
+Our number one recommended option for blocking mail from specific senders or domains is the Tenant Allow/Block List. For instructions, see [Allow or block email using the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md).
 
 Email messages from these senders are marked as _high confidence spam_ (SCL = 9). What happens to the messages is determined by the [anti-spam policy](configure-your-spam-filter-policies.md) that detected the message for the recipient. In the default anti-spam policy and new custom policies, messages that are marked as high confidence spam are delivered to the Junk Email folder by default. In Standard and Strict [preset security policies](preset-security-policies.md), high confidence spam messages are quarantined.
 
@@ -91,6 +91,6 @@ Regardless of the conditions or exceptions that you use to identify the messages
 
 ## Use the IP Block List
 
-When it's not possible to use one of the other options to block a sender, _only then_ should you use the IP Block List in the connection filter policy. For more information, see [Configure the connection filter policy](configure-the-connection-filter-policy.md). It's important to keep the number of blocked IPs to a minimum, so blocking entire IP address ranges is _not_ recommended.
+When it's not possible to use one of the other options to block a sender, _only then_ should you use the IP Block List in the connection filter policy. For more information, see [Configure the connection filter policy](connection-filter-policies-configure.md). It's important to keep the number of blocked IPs to a minimum, so blocking entire IP address ranges is _not_ recommended.
 
 You should _especially_ avoid adding IP address ranges that belong to consumer services (for example, outlook.com) or shared infrastructures, and also ensure that you review the list of blocked IP addresses as part of regular maintenance.

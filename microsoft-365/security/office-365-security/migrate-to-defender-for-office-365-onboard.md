@@ -57,7 +57,7 @@ If your organization has a security response team, now is the time to begin inte
 
 If your organization has purchased Microsoft Defender for Office 365 Plan 2, they should begin familiarizing themselves with and using features such as Threat Explorer, Advanced Hunting, and Incidents. For relevant trainings, see <https://aka.ms/mdoninja>.
 
-If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phising-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
 ### SIEM/SOAR
 
@@ -156,7 +156,7 @@ Use the following features to monitor and iterate on the protection settings in 
 - [Quarantine](manage-quarantined-messages-and-files.md)
 - [Threat Explorer](email-security-in-microsoft-defender.md)
 - [Email security reports](view-email-security-reports.md)
-- [Defender for Office 365 reports](view-reports-for-mdo.md)
+- [Defender for Office 365 reports](reports-defender-for-office-365.md)
 - [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [Mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 

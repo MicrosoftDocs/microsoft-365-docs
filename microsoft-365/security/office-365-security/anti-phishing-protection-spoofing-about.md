@@ -132,7 +132,7 @@ Microsoft differentiates between two different types of spoofed messages:
   - `SFTY` is the safety level of the message. 9 indicates phishing, .22 indicates cross-domain spoofing.
 
 > [!NOTE]
-> If you've gotten a message like ***compauth=fail reason=###*** and need to know about composite authentication (compauth), and the values related to spoofing, see [*Anti-spam message headers in Microsoft 365*](anti-spam-message-headers.md). Or go directly to the [*reason*](anti-spam-message-headers.md) codes.
+> If you've gotten a message like ***compauth=fail reason=###*** and need to know about composite authentication (compauth), and the values related to spoofing, see [*Anti-spam message headers in Microsoft 365*](message-headers-eop-mdo.md). Or go directly to the [*reason*](message-headers-eop-mdo.md) codes.
 
 For more information about DMARC, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
 
@@ -166,7 +166,7 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
   - Create inbox rules in your email client to move messages to the Inbox. You can also ask your admins to configure overrides as described in [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) and [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 
-  - Use the Tenant Allow/Block List to create an override for the mailing list to treat it as legitimate. For more information, see [Create allow entries for spoofed senders](allow-block-email-spoof.md#create-allow-entries-for-spoofed-senders).
+  - Use the Tenant Allow/Block List to create an override for the mailing list to treat it as legitimate. For more information, see [Create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders).
 
 If all else fails, you can report the message as a false positive to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
