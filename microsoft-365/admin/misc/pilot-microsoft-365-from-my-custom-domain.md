@@ -103,7 +103,7 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
 5. Select **Create** > **Close**.
 
-### Step 6: **Configure mail to flow from Microsoft 365 or Office 365 to Email server
+### Step 6: Configure mail to flow from Microsoft 365 or Office 365 to Email server
 
 There are two steps for this:
 
