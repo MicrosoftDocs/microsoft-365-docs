@@ -57,7 +57,7 @@ You can schedule SharePoint site moves in advance (described later in this artic
 
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
-- The maximum size of a SharePoint site that can be moved is 1 terabyte (1 TB).
+- The maximum size of a SharePoint site that can be moved is 2 terabytes (2 TB).
 
 To schedule a SharePoint site geo move for a later time, include one of the following parameters when you start the move:
 
@@ -220,7 +220,7 @@ In most cases, Power Automate Flows will continue to work after a SharePoint sit
 
 ### Power Apps
 
-Power Apps need to be recreated in the destination location.
+Power Apps needs to be recreated in the destination location.
 
 ### Data movement between geo locations
 

@@ -182,8 +182,11 @@ Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenan
 Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL https://m365x12395529-my.sharepoint.com
 ```
 
-- If the tenants are compatible, you can then proceed with the next step of starting cross-tenant migrations.  
-- If the tenants are incompatible, your tenants will need to be patched/updated to ensure compatibility.
+|Status|Can proceed with migration
+|:-----|:-----|
+|Compatible|Yes|
+|Warning|Yes|
+|Incompatible|No||
 
 >[!Note]
 >We recommend waiting a period of 48 hours. If your tenants are still reporting as *incompatible*, contact support. 

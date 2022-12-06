@@ -130,7 +130,7 @@ This quick-reference will help you understand what capabilities come with each M
 
 - Microsoft Defender for Office 365 Plan 1 and Defender for Office 365 Plan 2 are each available as an add-on for certain subscriptions. To learn more, here's another link [Feature availability across Microsoft Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- The [Safe Documents](safe-docs.md) feature is only available to users with the Microsoft 365 A5 or Microsoft 365 E5 Security licenses (not included in Microsoft Defender for Office 365 plans).
+- The [Safe Documents](safe-documents-in-e5-plus-security-about.md) feature is only available to users with the Microsoft 365 A5 or Microsoft 365 E5 Security licenses (not included in Microsoft Defender for Office 365 plans).
 
 - If your current subscription doesn't include Microsoft Defender for Office 365 and you want it, [contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html), and find out how Microsoft Defender for Office 365 can work for in your organization.
 
@@ -147,7 +147,7 @@ If you're a Security Admin, you may need to configure DKIM or DMARC for your mai
 
 [See the specific recommended 'golden' configs](recommended-settings-for-eop-and-office365.md) and [use their recommended presets to configure security policies quickly](preset-security-policies.md)
 
-Catch up on [what's new in Microsoft Defender for Office 365 (including EOP developments)](whats-new-in-defender-for-office-365.md)
+Catch up on [what's new in Microsoft Defender for Office 365 (including EOP developments)](defender-for-office-365-whats-new.md)
 
 [Use Threat Explorer or Real-time detections](threat-explorer.md)
 
