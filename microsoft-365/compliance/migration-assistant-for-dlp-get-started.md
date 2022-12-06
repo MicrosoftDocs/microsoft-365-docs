@@ -1,5 +1,5 @@
 ---
-title: "Get started with migration assistant for Microsoft Purview DLP"
+title: "Get started with the migration assistant for Microsoft Purview DLP"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,7 +20,7 @@ search.appverid:
 description: "This article describes the prerequisites and configuration of the migration assistant tool for Microsoft Purview DLP."
 ---
 
-# Get started with migration assistant for Microsoft Purview DLP (preview)
+# Get started with the migration assistant for Microsoft Purview DLP (preview)
 
 This article walks you through the prerequisites and installation of the [migration assistant tool for Microsoft Purview DLP](migration-assistant-for-dlp-learn.md).
 

@@ -1,5 +1,5 @@
 ---
-title: "Use migration assistant for Microsoft Purview DLP"
+title: "Use the migration assistant for Microsoft Purview DLP"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn how to use the migration assistant for Microsoft Purview DLP to migrate your DLP policies from other DLP platforms to Microsoft's DLP platform."
 ---
 
-# Use migration assistant for Microsoft Purview DLP (preview)
+# Use the migration assistant for Microsoft Purview DLP (preview)
 
 This article takes you through an instance of migration using the [migration assistant tool for Microsoft Purview DLP](migration-assistant-for-dlp-learn.md).
 

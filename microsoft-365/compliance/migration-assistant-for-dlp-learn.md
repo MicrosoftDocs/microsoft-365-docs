@@ -1,5 +1,5 @@
 ---
-title: "Learn about migration assistant for Microsoft Purview DLP"
+title: "Learn about the migration assistant for Microsoft Purview DLP"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,7 +20,7 @@ search.appverid:
 description: "The migration assistant tool is a Windows based desktop application that will migrate your DLP policies from other DLP platforms to Microsoft DLP platform."
 ---
 
-# Learn about migration assistant for Microsoft Purview DLP (preview)
+# Learn about the migration assistant for Microsoft Purview DLP (preview)
 
 This article helps you to learn about the migration assistant for Microsoft Purview DLP.
 
