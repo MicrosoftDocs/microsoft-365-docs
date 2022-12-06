@@ -69,7 +69,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Consider enabling policies beyond the built-in Protection. Enabling time-of-click protection, or impersonation protection, for example, to add extra layers or fill gaps missing from your third party protection. Be aware that if you have a transport rule or connection filter that is overriding verdicts (this also can be known as SCL-1) you'll need to address this before turning on other protection features.
 
-**Read more here:** [Anti-phishing policies](../set-up-anti-phishing-policies.md)
+**Read more here:** [Anti-phishing policies](../anti-phishing-policies-about.md)
 
 - If your current security provider is configured to modify messages *in any way*, it's important to note that authentication signals can impact the ability for Defender for Office to protect you against attacks such as spoofing. If your third party supports Authenticated Received Chain (ARC), then enabling this is a highly recommended step in your journey to advanced dual filtering. Moving any message modification configuration to Defender for Office 365 is also an alternative.
 

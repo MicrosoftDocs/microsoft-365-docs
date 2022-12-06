@@ -191,7 +191,7 @@ You'll tune spoofing protection (adjust allows and blocks) and turn on each impe
 For more information, see the following topics:
 
 - [Anti-spoofing protection](anti-spoofing-protection.md)
-- [Impersonation settings in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+- [Impersonation settings in anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 - [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## Next step
