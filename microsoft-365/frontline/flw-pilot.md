@@ -61,14 +61,14 @@ Assemble a group of individuals from your business, IT, and frontline communitie
 
 Next, identify your phase 1 pilot community and make sure it includes actual frontline workers in the smallest logical grouping for your organization. For example, one restaurant, one division of a department store, one store, one clinical ward, one precinct, one plant, one distribution center, etc. The key is to optimize around the average frontline worker being part of one team only. Managers or specialists may be in more than one.
 
-![Best practices ribbon symbol.](/office/media/icons/best-practices-teams.png) **Best practice**  
+#### Best practice
 
 It's important to include all roles within that smallest logical grouping, from managers to part time or seasonal workers, to uncover valuable insights and enable modern communication scenarios. Your most junior staff will surprise you! Some key delightful and unintended valuable scenarios uncovered during pilots with sample customers include:
 
 - Standardized Expectations and Training: Taking a picture of a clean stove to illustrate to kitchen staff what clean means. “If it doesn’t look like this, then it isn’t clean!”
 - Reducing shrinkage: Taking a picture of a known shoplifter and notifying other employees immediately. Teams on future shifts will also see this picture to mitigate future risk.
 
-![Process/flow chart symbol.](/office/media/icons/process-flow-teams.png) **Decision points:**
+#### Decision points
 
 At the end of this phase, you should be able to answer these questions:
 
@@ -89,7 +89,7 @@ A successful pilot includes the following:
 
 For a successful pilot for frontline workers, simplicity is key! For most organizations, this community typically isn’t provided any company-supported communication or collaboration technology, but are likely already using unsupported consumer tools to accomplish some basic needs. A recommended best practice is to begin where your users are and mimic the capabilities they’re using in consumer tools today. As your pilot progresses and the iteration process begins, you can grow the experience.
 
-![Process/flow chart symbol.](/office/media/icons/process-flow-teams.png) **Decision points:**
+#### Decision points
 
 - Which capabilities will be in Phase 1 of your pilot for frontline workers?
 - Do your frontline workers need Shifts?
@@ -112,7 +112,7 @@ When you have set up and configured all of the other services you need, you can 
 
 Within Teams Chat on mobile, you can have the normal traditional chat layout for Teams OR a layout that includes favorite channels in Chat. This second, simplified UI works well for frontline workers who are only in one team, and is the recommended best practice. Configuring “Show favorite channels in chat” also creates an opportunity to remove the **Teams** button from the frontline worker app setup policy to further streamline and simplify the end user experience without a loss of functionality. For users who will be in multiple teams, this isn't recommended. You can configure this on a per-user basis and grow in sophistication as needed.
 
-![Best practices ribbon symbol.](/office/media/icons/best-practices-teams.png) **Best practice**  
+#### Best practice
 
 Configure Phase 1 of the frontline Teams experience to mimic the consumer tools these users are already using! We recommend starting your pilot for frontline workers with “Show favorite channels in Chat” for simplified communications and Shifts (optional).
 
@@ -134,12 +134,12 @@ The wizard is available to all organizations that have at least one [F license](
 
 For step-by-step guidance, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](flw-onboarding-wizard.md).
 
-![Process/flow chart symbol.](/office/media/icons/process-flow-teams.png) **Decision points:**
+#### Decision points
 
 - How many channels/conversation topics do you want for your pilot?
 - Which topics feel right for your scenarios?
 
-![Best practices ribbon symbol.](/office/media/icons/best-practices-teams.png) **Best practice**  
+#### Best practice
 
 **Keep the channels simple**. We recommend resisting the urge to create a channel for every possible topic of conversation and instead keep things simple. It’s ok if channels are created over time as needed.
 
@@ -155,7 +155,7 @@ After you have Teams set up and you have your teams and channels created, you ca
 
 Inform your frontline workers of their participation in the pilot, the pilot goals, and provide training, if necessary, on the basic functions. For most customers, this can be a simple instruction to these users to go to the Google Play or Apple Store on their personal mobile devices, download the Microsoft Teams application, and sign in with their company credentials. We’ve designed Microsoft Teams with a simple and easy to use interface that most frontline workers should find intuitive.
 
-![Best practices ribbon symbol.](/office/media/icons/best-practices-teams.png) **Best practice**  
+#### Best practice
 
 Don’t forget to train your managers on Shifts! If you’re going to include Shifts in your pilot, then make sure to conduct a separate training session with your managers on how to create, manage, and publish schedules to their team. If you would like additional training materials and communication templates, you can find them in your frontline Pilot in a Box.
 
@@ -163,7 +163,7 @@ Don’t forget to train your managers on Shifts! If you’re going to include Sh
 
 Empowering your frontline workers is more about people than technology. To understand the impact of Teams, stay focused on your frontline workers’ experience. Survey them before, during and after the pilot in order to understand their needs, pain points, and reactions. If you're iterating your pilot and adding new features over time, this feedback can help guide the order, pace, or even whether additional features are needed. In order to help you evaluate the success of your pilot, you can find them in your frontline Pilot in a Box.
 
-![Best practices ribbon symbol.](/office/media/icons/best-practices-teams.png) **Best practice**  
+#### Best practice
 
 **Nurture your champions and highlight your wins**. Reward your frontline workers for embracing these new tools and using them in innovative ways that relate to business outcomes for your company. This, above anything, will ensure continued adoption of Teams and value to your company.
 
