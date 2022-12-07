@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Purview auditing solutions"
-description: "Learn how to audit the activities of users and administrators in your Microsoft 365 organization." 
+title: "Auditing solutions in Microsoft Purview"
+description: "Learn how to audit the activities of users and administrators in Microsoft Purview." 
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -92,7 +92,7 @@ The following table compares the key capabilities available in Audit (Standard) 
 |High-value, crucial events||![Supported](../media/check-mark.png)|
 
 > [!NOTE]
-> <sup>1</sup> Audit (Premium) includes higher bandwidth access to the Office 365 Management Activity API, which provides faster access to audit data.<br/><sup>2</sup> In addition to the required licensing for Audit (Premium) (described in the next section), a user must be assigned a 10-Year Audit Log Retention add on license to retain their audit records for 10 years.
+> <sup>1</sup> Audit (Premium) includes higher bandwidth access to the Office 365 Management Activity API, which provides faster access to audit data.<br/><sup>2</sup> In addition to the required licensing for Audit (Premium) (described in the next section), a user must be assigned a 10-Year Audit Log Retention add-on license to retain their audit records for 10 years.
 
 ## Licensing requirements
 
