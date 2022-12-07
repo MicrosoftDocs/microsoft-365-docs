@@ -3,7 +3,6 @@ title: "Microsoft 365 Multi-Tenant Organization People Search"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/26/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -125,6 +124,6 @@ within the organization. It does this by synchronizing internal
 member users from a home tenant into a resource tenants as external
 B2B users.
 
-## How to provide feedback
+## Contact Us
 
-TBD
+You can contact the Cross Tenant People Search team via email at [MTOPeopleSearchPreview@service.microsoft.com](mailto:MTOPeopleSearchPreview@service.microsoft.com).
