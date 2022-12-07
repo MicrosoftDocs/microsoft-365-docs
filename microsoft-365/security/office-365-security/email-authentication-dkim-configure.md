@@ -288,8 +288,8 @@ Wait a few minutes before you follow these steps to confirm that you have proper
 
 > [!IMPORTANT]
 > The DKIM signature is **omitted** under any of these conditions:
-> - Both the sender and the recipient email address use the same domain.
-> - Both the sender and the recipient email address use different domains that are controlled by the same organization.
+> - Both the sender and the recipient email addresses use the same domain.
+> - Both the sender and the recipient email addresses use different domains that are controlled by the same organization.
 >
 > In both cases, the header will look similar to this:
 > ```console
