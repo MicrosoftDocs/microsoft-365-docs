@@ -501,7 +501,7 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 - **Impersonation user**<sup>\*</sup>: Impersonation of protected senders that you specified in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) or learned through mailbox intelligence.
 - **Mailbox intelligence impersonation**<sup>\*</sup>: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 - **Mixed analysis detection**: Multiple filters contributed to the message verdict.
-- **Spoof DMARC**: The message failed [DMARC authentication](use-dmarc-to-validate-email.md).
+- **Spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).
 - **Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.
 - **Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.
 - **URL detonation**<sup>\*</sup>: [Safe Links](safe-links.md) detected a malicious URL in the message during detonation analysis.
@@ -1136,7 +1136,7 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 ## Related topics
 
-[Anti-spam protection in EOP](anti-spam-protection.md)
+[Anti-spam protection in EOP](anti-spam-protection-about.md)
 
 [Anti-malware protection in EOP](anti-malware-protection.md)
 

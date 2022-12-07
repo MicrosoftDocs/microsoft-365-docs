@@ -140,7 +140,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
    - **Safety tips & indicators**:
      - **Show first contact safety tip**: For more information, see [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip).
-     - **Show (?) for unauthenticated senders for spoof**<sup>\*</sup>: Adds a question mark (?) to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication).
+     - **Show (?) for unauthenticated senders for spoof**<sup>\*</sup>: Adds a question mark (?) to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-authentication-about.md#composite-authentication).
      - **Show "via" tag**<sup>\*</sup>: Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address.
 
      To turn on a setting, select the check box. To turn it off, clear the check box.

@@ -174,8 +174,8 @@ Watch this video to learn more: [Threat hunting with Microsoft 365 Defender - Yo
 
 Equip your users with the right knowledge to identify threats and report suspicious messages with Attack simulation training in Defender for Office 365.
 
-- [Simulate realistic threats](attack-simulation-training.md) to identify vulnerable users.
-- [Assign training](attack-simulation-training.md#assign-training) to users based on simulation results.
+- [Simulate realistic threats](attack-simulation-training-simulations.md) to identify vulnerable users.
+- [Assign training](attack-simulation-training-simulations.md#assign-training) to users based on simulation results.
 - [Track progress](attack-simulation-training-insights.md) of your organization in simulations and training completion.
 
   :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="The attack simulation training insights in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
@@ -243,8 +243,8 @@ For more information, see [Migrate from a third-party protection service or devi
 
 Equip your users with the right knowledge to identify threats and report suspicious messages with Attack simulation training in Defender for Office 365.
 
-- [Simulate realistic threats](attack-simulation-training.md) to identify vulnerable users.
-- [Assign training](attack-simulation-training.md#assign-training) to users based on simulation results.
+- [Simulate realistic threats](attack-simulation-training-simulations.md) to identify vulnerable users.
+- [Assign training](attack-simulation-training-simulations.md#assign-training) to users based on simulation results.
 - [Track progress](attack-simulation-training-insights.md) of your organization in simulations and training completion.
 
   :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="The attack simulation training insights in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
