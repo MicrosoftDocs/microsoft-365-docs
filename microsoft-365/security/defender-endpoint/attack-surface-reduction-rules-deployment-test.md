@@ -99,18 +99,18 @@ The ASR rules reporting page is found in **Microsoft 365 Defender portal** > **R
 Provides a 30-day timeline of detected audit and blocked events.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Shows the ASR rules report summary detections card." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png":::
+> :::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Graph that shows the ASR rules report summary detections card." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png":::
 
 The Attack Surface reduction rules pane provides an overview of detected events on a per-rule basis.
 
 >[!Note]
 >There are some variations in ASR rules reports. Microsoft is in the process of updating the behavior of the ASR rules reports to provide a consistent experience.
 
-:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png" alt-text="Shows the ASR rules report summary configuration card." lightbox="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png":::
+:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png" alt-text="Graph that shows the ASR rules report summary configuration card." lightbox="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png":::
 
 Click **View detections** to open the **Detections** tab.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search.png" alt-text="Shows the ASR rules report search feature." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search.png" alt-text="Screenshot that shows the ASR rules report search feature." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search.png":::
 
 The **GroupBy** and **Filter** pane provide the following options:
 
@@ -128,7 +128,7 @@ The **GroupBy** returns results set to the following groups:
 > [!NOTE]
 > When filtering by rule, the number of individual _detected_ items listed in the lower half of the report is currently limited to 200 rules. You can use **Export** to save the full list of detections to Excel.
 
-:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Shows the ASR rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
+:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Screenshot that shows the ASR rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
 
 **Filter** opens the **Filter on rules** page, which enables you to scope the results to only the selected ASR rules:
 
@@ -142,11 +142,11 @@ The **GroupBy** returns results set to the following groups:
 
 Lists—on a per-computer basis—the aggregate state of ASR rules: Off, Audit, Block.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-configuration-tab.png" alt-text="Shows the ASR rules report main configuration tab" lightbox="images/attack-surface-reduction-rules-report-main-configuration-tab.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-configuration-tab.png" alt-text="Screenshot that shows the ASR rules report main configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-configuration-tab.png":::
 
 On the Configurations tab, you can check—on a per-device basis—which ASR rules are enabled, and in which mode, by selecting the device for which you want to review ASR rules.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Shows the ASR rules fly-out to add ASR rules to devices" lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Screenshot that shows the ASR rules fly-out to add ASR rules to devices." lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
 
 The **Get started** link opens the Microsoft Endpoint Manager admin center, where you can create or modify an endpoint protection policy for ASR:
 
@@ -192,7 +192,7 @@ To configure per-rule exclusions,
 1. In **ASR Only Per Rule Exclusion**, click the toggle to change from **Not configured** to **Configured.**
 1. Enter the names of the files or application that you want to exclude.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-per-rule-exclusion.png" alt-text="Shows the configuration settings for adding ASR per-rule exclusions" lightbox="images/attack-surface-reduction-rules-report-per-rule-exclusion.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-per-rule-exclusion.png" alt-text="Screenshot that shows the configuration settings for adding ASR per-rule exclusions." lightbox="images/attack-surface-reduction-rules-report-per-rule-exclusion.png":::
 
 ### Use PowerShell as an alternative method to enable ASR rules
 
