@@ -56,6 +56,8 @@
         href: mdb-review-remediation-actions.md
       - name: View and use reports
         href: mdb-reports.md
+      - name: Set up email notifications for your security team
+        href: mdb-email-notifications.md
     - name: View or edit security policies
       items:
       - name: View, edit, and create policies
