@@ -138,7 +138,7 @@ The following procedure describes how to configure the default anti-phishing pol
 
 4. Click **Save** and then click **Close**
 
-For detailed instructions for configuring anti-phishing policies, see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md) and [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+For detailed instructions for configuring anti-phishing policies, see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md) and [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 ## Part 3 - Anti-spam protection in EOP
 

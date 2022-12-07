@@ -56,7 +56,7 @@ The high-level differences between anti-phishing policies in EOP and anti-phishi
 To configure anti-phishing policies, see the following articles:
 
 - [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
-- [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
 
 The rest of this article describes the settings that are available in anti-phishing policies in EOP and Defender for Office 365.
 

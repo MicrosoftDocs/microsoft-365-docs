@@ -152,7 +152,7 @@ For more information on what's new with other Microsoft Defender security produc
 - New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or don't often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
   - [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip)
   - [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
-  - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+  - [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
 
 ## April/May 2021
 
