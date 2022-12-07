@@ -47,4 +47,4 @@ As soon as you have signed up for Defender for Business, your first step is to a
 
 ## Next steps
 
-- See [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
+- Proceed to [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
