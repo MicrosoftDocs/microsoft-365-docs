@@ -68,7 +68,7 @@ The following table identified key concepts that are important to understand whe
 |Anti-spoofing protection|EOP includes features to help protect your organization from spoofed (forged) senders.|[Anti-spoofing protection in EOP](../office-365-security/anti-spoofing-protection.md)|
 |Safe Attachments|Safe Attachments provides an extra layer of protection by using a virtual environment to check and "detonate" attachments in email messages before they're delivered.|[Safe Attachments in Microsoft Defender for Office 365](../office-365-security/safe-attachments-about.md)|
 |Safe Attachments for SharePoint, OneDrive, and Microsoft Teams|In addition, Safe Attachments for SharePoint, OneDrive, and Microsoft Teams offers an extra layer of protection for files that have been uploaded to cloud storage repositories.|[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../office-365-security/safe-attachments-for-spo-odfb-teams-about.md)|
-|Safe Links|Safe Links is a feature that provides URL scanning and rewriting within inbound email messages and offers verification of those links before they are delivered or clicked.|[Safe Links in Microsoft Defender for Office 365](../office-365-security/safe-links.md)|
+|Safe Links|Safe Links is a feature that provides URL scanning and rewriting within inbound email messages and offers verification of those links before they are delivered or clicked.|[Safe Links in Microsoft Defender for Office 365](../office-365-security/safe-links-about.md)|
 
 For more detailed information about the capabilities included with Microsoft Defender for Office, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
