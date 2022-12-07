@@ -84,7 +84,7 @@ Currently, configuring tamper protection in Intune is only available for custome
 
 ## I'm an enterprise customer. Can local admins change tamper protection on their devices?
 
-Tamper protection helps protect against users being able to change security settings directly on devices, even if they're local admins. However, tamper protection should be part of a security strategy that includes additional protection. To protect against abuse of exploited vulnerable signed drivers, we recommend enabling [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md). We also recommend configuring [driver block rules with Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules) to protect against malware running in kernel.
+Tamper protection helps protect against users being able to change security settings directly on devices. Tamper protection should be part of a security strategy that includes additional protection, such as [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md) and  [driver block rules with Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules).
 
 ## What happens if my device is onboarded with Microsoft Defender for Endpoint and then goes into an off-boarded state?
 
