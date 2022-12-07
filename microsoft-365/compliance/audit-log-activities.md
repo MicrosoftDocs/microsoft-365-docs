@@ -1,6 +1,6 @@
 ---
-title: "Search the audit log in the Microsoft Purview compliance portal"
-description: "Use the Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization."
+title: "Audit log activities"
+description: "Use the unified audit log to view user and administrator activity in your Microsoft 365 organization."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,7 +9,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - tier1
 - purview-compliance
@@ -17,241 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.custom: 
-- seo-marvel-apr2020
-- admindeeplinkMAC
 ---
 
-# Search the audit log in the compliance portal
+# Audit log activities
 
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft Purview compliance portal to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
+The tables in this article describe the activities that are audited in Microsoft 365. You can search for these events by searching the audit log in the compliance portal.
 
-[!INCLUDE [purview-preview](../includes/purview-preview.md)]
-
-## Microsoft 365 services that support auditing
-
-Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services and features (in alphabetical order) that are supported by the unified audit log.
-
-| Microsoft 365 service or feature | Record types|
-|:---------|:---------|
-| Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon |
-| Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
-| Communication compliance|ComplianceSuperVisionExchange|
-| Content explorer|LabelContentExplorer|
-| Data connectors|ComplianceConnector|
-| Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
-| Dynamics 365|CRM|
-| eDiscovery|Discovery, AeD|
-| Exact Data Match|MipExactDataMatch|
-| Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
-| Forms|MicrosoftForms|
-| Information barriers|InformationBarrierPolicyApplication|
-| Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
-| Microsoft Teams|MicrosoftTeams|
-| MyAnalytics|MyAnalyticsSettings|
-| OneDrive for Business|OneDrive|
-| Power Apps|PowerAppsApp, PowerAppsPlan|
-| Power Automate|MicrosoftFlow|
-| Power BI|PowerBIAudit|
-| Quarantine|Quarantine|
-| Microsoft Purview Information Protection (MIP) labels|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
-| Sensitive information types|DlpSensitiveInformationType|
-| Sensitivity labels|MIPLabel, SensitivityLabelAction, SensitivityLabeledFileAction, SensitivityLabelPolicyMatch|
-| Encrypted message portal|OMEPortal|
-| SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
-| Stream|MicrosoftStream|
-| Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
-| Workplace Analytics|WorkplaceAnalytics|
-| Yammer|Yammer|
-| SystemSync| DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData |
-
-For more information about the operations that are audited in each of the services listed in the previous table, see the [Audited activities](#audited-activities) section in this article.
-
-The previous table also identifies the record type value to use to search the audit log for activities in the corresponding service using the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell or by using a PowerShell script. Some services have multiple record types for different types of activities within the same service. For a more complete list of auditing record types, see [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
-
- For more information about using PowerShell to search the audit log, see:
-
-- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
-
-- [Use a PowerShell script to search the audit log](audit-log-search-script.md)
-
-## Before you search the audit log
-
-Be sure to read the following items before you start searching the audit log.
-
-- Audit log search is turned on by default for Microsoft 365 and Office 365 enterprise organizations. To verify that audit log search is turned on, you can run the following command in Exchange Online PowerShell:
-
-  ```powershell
-  Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
-  ```
-
-  The value of `True` for the *UnifiedAuditLogIngestionEnabled* property indicates that audit log search is turned on. For more information, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
-
-- You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
-
-  > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the compliance portal, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
-
-- When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. The length of time that an audit record is retained (and searchable in the audit log) depends on your Office 365 or Microsoft 365 Enterprise subscription, and specifically the type of the license that is assigned to specific users.
-
-  - For users assigned an Office 365 E5 or Microsoft 365 E5 license (or users with a Microsoft 365 E5 Compliance or Microsoft 365 E5 eDiscovery and Audit add-on license), audit records for Azure Active Directory, Exchange, and SharePoint activity are retained for one year by default. Organizations can also create audit log retention policies to retain audit records for activities in other services for up to one year. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
-
-    > [!NOTE]
-    > If your organization participated in the private preview program for the one-year retention of audit records, the retention duration for audit records that were generated before the general availability rollout date will not be reset.
-
-  - For users assigned any other (non-E5) Office 365 or Microsoft 365 license, audit records are retained for 90 days. For a list of Office 365 and Microsoft 365 subscriptions that support unified audit logging, see [the security and compliance portal service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
-
-    > [!NOTE]
-    > Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the compliance portal or via the Office 365 Management Activity API. For more information, see [More information about mailbox audit logging](enable-mailbox-auditing.md#more-information).
-
-- If you want to turn off audit log search for your organization, you can run the following command in Exchange Online PowerShell:
-
-  ```powershell
-  Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
-  ```
-
-    To turn on audit search again, you can run the following command in Exchange Online PowerShell:
-
-  ```powershell
-  Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
-  ```
-
-  For more information, see [Turn off audit log search](turn-audit-log-search-on-or-off.md).
-
-- As previously stated, the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, which is **Search-UnifiedAuditLog**. That means you can use this cmdlet to search the audit log instead of using the search tool on the **Audit** page in the compliance portal. You have to run this cmdlet in Exchange Online PowerShell. For more information, see [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
-
-  For information about exporting the search results returned by the **Search-UnifiedAuditLog** cmdlet to a CSV file, see the "Tips for exporting and viewing the audit log" section in [Export, configure, and view audit log records](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
-
-- If you want to programmatically download data from the audit log, we recommend that you use the Office 365 Management Activity API instead of using a PowerShell script. The Office 365 Management Activity API is a REST web service that you can use to develop operations, security, and compliance monitoring solutions for your organization. For more information, see [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference).
-
-- Azure Active Directory (Azure AD) is the directory service for Microsoft 365. The unified audit log contains user, group, application, domain, and directory activities performed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](/azure/active-directory/reports-monitoring/concept-audit-logs).
-
-- Microsoft doesn't guarantee a specific time after an event occurs for the corresponding audit record to be returned in the results of an audit log search. For core services (such as Exchange, SharePoint, OneDrive, and Teams), audit record availability is typically 60 to 90 minutes after an event occurs. For other services, audit record availability may be longer. However, some issues that are unavoidable (such as a server outage) may occur outside of the audit service that delays the availability of audit records. For this reason, Microsoft doesn't commit to a specific time.
-
-- Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](/power-bi/service-admin-portal#audit-logs).
-
-## Search the audit log
-
-Here's the process for searching the audit log in Microsoft 365.
-
-[Step 1: Run an audit log search](#step-1-run-an-audit-log-search)
-
-[Step 2: View the search results](#step-2-view-the-search-results)
-
-[Step 3: Export the search results to a file](#step-3-export-the-search-results-to-a-file)
-
-### Step 1: Run an audit log search
-
-1. Go to <https://compliance.microsoft.com> and sign in.
-
-    > [!TIP]
-    > Use a private browsing session (not a regular session) to access the compliance portal because this will prevent the credential that you are currently logged on with from being used. Press **CTRL+SHIFT+N** to open an InPrivate Browsing session in Microsoft Edge or a private browsing session in Google Chrome (called an incognito window).
-
-2. In the left pane of the compliance portal, select **Audit**.
-
-    The **Audit** page is displayed.
-
-    ![Configure criteria and then click Search to run report.](../media/AuditLogSearchPage1.png)
-
-    > [!NOTE]
-    > If the **Start recording user and admin activity** link is displayed, click it to turn on auditing. If you don't see this link, auditing is turned on for your organization.
-
-3. On the **Search** tab, configure the following search criteria:
-
-   1. **Start date** and **End date**: The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
-
-    > [!TIP]
-    > If you're using the maximum date range of 90 days, select the current time for the **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the maximum date range can't start before the date that auditing was turned on.
-
-   2. **Activities**: Select the drop-down list to display the activities that you can search for. User and admin activities are organized into groups of related activities. You can select specific activities or you can select the activity group name to select all activities in the group. You can also select a selected activity to clear the selection. After you run the search, only the audit log entries for the selected activities are displayed. Selecting **Show results for all activities** displays results for all activities performed by the selected user or group of users.<br/><br/>Over 100 user and admin activities are logged in the audit log. Select the **Audited activities** tab at the article of this article to see the descriptions of every activity in each of the different services.
-
-   3. **Users**: Select in this box and then select one or more users to display search results for. The audit log entries for the selected activity performed by the users you select in this box are displayed in the list of results. Leave this box blank to return entries for all users (and service accounts) in your organization.
-
-   4. **File, folder, or site**: Type some or all of a file or folder name to search for activity related to the file of folder that contains the specified keyword. You can also specify a URL of a file or folder. If you use a URL, be sure the type the full URL path or if you type a portion of the URL, don't include any special characters or spaces (however, using the wildcard character (\*) is supported).<br/><br/>Leave this box blank to return entries for all files and folders in your organization.
-
-    > [!TIP]
-    >
-    > - If you're looking for all activities related to a **site**, add the wildcard character (\*) after the URL to return all entries for that site; for example, `"https://contoso-my.sharepoint.com/personal*"`.
-    >
-    > - If you're looking for all activities related to a **file**, add the wildcard character (\*) before the file name to return all entries for that file; for example, `"*Customer_Profitability_Sample.csv"`.
-
-4. Select **Search** to run the search using your search criteria.
-
-   The search results are loaded, and after a few moments they're displayed on a new page. When the search is finished, the number of results found is displayed. A maximum of 50,000 events will be displayed in increments of 150 events. If more than 50,000 events meet the search criteria, only the 50,000 unsorted events returned will be displayed.
-
-   ![The number of results are displayed after the search is finished.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
-
-#### Tips for searching the audit log
-
-- You can select specific activities to search for by clicking the activity name. Or you can search for all activities in a group (such as **File and folder activities**) by clicking the group name. If an activity is selected, you can select it to cancel the selection. You can also use the search box to display the activities that contain the keyword that you type.
-
-  ![Click activity group name to select all activities.](../media/3cde97cb-6f35-47c0-8612-ecd9c6ac36a3.png)
-
-- You have to select **Show results for all activities** in the **Activities** list to display events from the Exchange admin audit log. Events from this audit log display a cmdlet name (for example, **Set-Mailbox**) in the **Activity** column in the results. For more information, select the **Audited activities** tab in this article and then select **Exchange admin activities**.
-
-  Similarly, there are some auditing activities that don't have a corresponding item in the **Activities** list. If you know the name of the operation for these activities, you can search for all activities, then filter the operations after you export the search results to a CSV file.
-
-- Select **Clear** to clear the current search criteria. The date range returns to the default of the last seven days. You can also select **Clear all to show results for all activities** to cancel all selected activities.
-
-- If 50,000 results are found, you can probably assume that there are more than 50,000 events that met the search criteria. You can either refine the search criteria and rerun the search to return fewer results, or you can export the 50,000 search results by selecting **Export results** \> **Download all results**.
-
-### Step 2: View the search results
-
-The results of an audit log search are displayed under **Results** on the **Audit log search** page. As previously stated, a maximum of 50,000 (newest) events are displayed in increments of 150 events. Use the scroll bar or press **Shift + End** to display the next 150 events.
-
-The results contain the following information about each event returned by the search:
-
-- **Date**: The date and time (in your local time) when the event occurred.
-
-- **IP address**: The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.
-
-   > [!NOTE]
-  > For some services, the value displayed in this field might be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by person who performed the activity. Also, for admin activity (or activity performed by a system account) for Azure Active Directory-related events, the IP address isn't logged and the value displayed in this field is `null`.
-
-- **User**: The user (or service account) who performed the action that triggered the event.
-
-- **Activity**: The activity performed by the user. This value corresponds to the activities that you selected in the **Activities** drop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet.
-
-- **Item**: The object that was created or modified as a result of the corresponding activity. For example, the file that was viewed or modified or the user account that was updated. Not all activities have a value in this column.
-
-- **Detail**: Additional information about an activity. Again, not all activities have a value.
-
-> [!TIP]
-> Click a column header under **Results** to sort the results. You can sort the results from A to Z or Z to A. Click the **Date** header to sort the results from oldest to newest or newest to oldest.
-
-#### View the details for a specific event
-
-You can view more details about an event by clicking the event record in the list of search results. A flyout page is displayed that contains the detailed properties from the event record. The properties that are displayed depend on the service in which the event occurs. 
-
-### Step 3: Export the search results to a file
-
-You can export the results of an audit log search to a comma-separated value (CSV) file on your local computer. You can open this file in Microsoft Excel and use features such as search, sorting, filtering, and splitting a single column (that contains multiple properties) into multiple columns.
-
-1. Run an audit log search, and then revise the search criteria until you have the desired results.
-
-2. On the search results page, select **Export** > **Download all results**.
-
-   All entries from the audit log that meet the search criteria are exported to a CSV file. The raw data from the audit log is saved to a CSV file. Additional information from the audit log entry is included in a column named **AuditData** in the CSV.
-
-     > [!IMPORTANT]
-     > You can download a maximum of 50,000 entries to a CSV file from a single audit log search. If 50,000 entries are downloaded to the CSV file, you can probably assume there are more than 50,000 events that met the search criteria. To export more than this limit, try using a date range to reduce the number of audit log entries. You might have to run multiple searches with smaller date ranges to export more than 50,000 entries.
-
-3. After the export process is complete, a message is displayed at the top of the window that prompts you to open the CSV file and save it to your local computer. You can also access the CSV file in the Downloads folder.
-
-#### More information about exporting and viewing audit log search results
-
-- When you download all search results, the CSV file contains the columns **CreationDate**, **UserIds**, **Operations**, and **AuditData**. The **AuditData** column contains additional information about each event (similar to the detailed information displayed on the flyout page when you view the search results in the compliance portal). The data in this column consists of a JSON object that contains multiple properties from the audit log record. Each *property:value* pair in the JSON object is separated by a comma. You can use the JSON transform tool in the Power Query Editor in Excel to split **AuditData** column into multiple columns so that each property in the JSON object has its own column. This lets you sort and filter on one or more of these properties. For step-by-step instructions using the Power Query Editor to transform the JSON object, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
-
-  After you split the **AuditData** column, you can filter on the **Operations** column to display the detailed properties for a specific type of activity.
-
-- When you download all results from a search query that contains events from different services, the **AuditData** column in the CSV file contains different properties depending on which service the action was performed in. For example, entries from Exchange and Azure AD audit logs include a property named **ResultStatus** that indicates if the action was successful or not. This property isn't included for events in SharePoint. Similarly, SharePoint events have a property that identifies the site URL for file and folder-related activities. To mitigate this behavior, consider using different searches to export the results for activities from a single service.
-
-  For a description of many of the properties that are listed in the **AuditData** column in the CSV file when you download all results, and the service each one applies to, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
-
-## Audited activities
-
-The tables in this section describe the activities that are audited in Microsoft 365. You can search for these events by searching the audit log in the security and compliance portal.
-
-These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
+These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
 
 Select one of the following links to go to a specific table.
 
@@ -411,11 +183,11 @@ Select one of the following links to go to a specific table.
     :::column-end:::
 :::row-end:::
 
-### File and page activities
+## File and page activities
 
 The following table describes the file and page activities in SharePoint Online and OneDrive for Business.
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Accessed file|FileAccessed|User or system account accesses a file. Once a user accesses a file, the FileAccessed event isn't logged again for the same user for same file for the next five minutes.|
 |(none)|FileAccessedExtended|This is related to the "Accessed file" (FileAccessed) activity. A FileAccessedExtended event is logged when the same person continually accesses a file for an extended period (up to 3 hours). <br/><br/> The purpose of logging FileAccessedExtended events is to reduce the number of FileAccessed events that are logged when a file is continually accessed. This helps reduce the noise of multiple FileAccessed records for what is essentially the same user activity, and lets you focus on the initial (and more important) FileAccessed event.|
@@ -451,11 +223,11 @@ The following table describes the file and page activities in SharePoint Online 
 |View signaled by client|ClientViewSignaled|A user's client (such as website or mobile app) has signaled that the indicated page has been viewed by the user. This activity is often logged following a PagePrefetched event for a page. <br/><br/>**NOTE**: Because ClientViewSignaled events are signaled by the client, rather than the server, it's possible the event may not be logged by the server and therefore may not appear in the audit log. It's also possible that information in the audit record may not be trustworthy. However, because the user's identity is validated by the token used to create the signal, the user's identity listed in the corresponding audit record is accurate. The system waits five minutes before it logs the same event when the same user's client signals that the page has been viewed again by the user.|
 |(none)|PagePrefetched|A user's client (such as website or mobile app) has requested the indicated page to help improve performance if the user browses to it. This event is logged to indicate that the page content has been served to the user's client. This event isn't a definitive indication that the user navigated to the page. <br/><br/> When the page content is rendered by the client (as per the user's request) a ClientViewSignaled event should be generated. Not all clients support indicating a pre-fetch, and therefore some pre-fetched activities might instead be logged as PageViewed events.|
 
-#### Frequently asked questions about FileAccessed and FilePreviewed events
+### Frequently asked questions about FileAccessed and FilePreviewed events
 
 **Could any non-user activities trigger FilePreviewed audit records that contain a user agent like "OneDriveMpc-Transform_Thumbnail"?**
 
-We aren't aware of scenarios where non-user actions generate events like these. User actions like opening a user profile card (by clicking their name or email address in a message in Outlook on the web) would generate similar events.
+We aren't aware of scenarios where non-user actions generate events like these. User actions like opening a user profile card (by selecting their name or email address in a message in Outlook on the web) would generate similar events.
 
 **Are calls to the OneDriveMpc-Transform_Thumbnail always intentionally being triggered by the user?**
 
@@ -469,7 +241,7 @@ No. The event might have been logged as a result of browser pre-fetch.
 
 Both the FilePreviewed and FileAccessed events indicate that a user's call led to a read of the file (or a read of a thumbnail rendering of the file). While these events are intended to align with preview vs. access intention, the event distinction isn't a guarantee of the user's intent.
 
-#### The app\@sharepoint user in audit records
+### The app\@sharepoint user in audit records
 
 In audit records for some file activities (and other SharePoint-related activities), you may notice the user who performed the activity (identified in the User and UserId fields) is app@sharepoint. This indicates that the "user" who performed the activity was an application. In this case, the application was granted permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. This process of giving permissions to an application is called *SharePoint App-Only* access. This indicates that the authentication presented to SharePoint to perform an action was made by an application, instead of a user. This is why the app@sharepoint user is identified in certain audit records. For more information, see [Grant access using SharePoint App-Only](/sharepoint/dev/solution-guidance/security-apponly-azureacs).
 
@@ -477,19 +249,17 @@ For example, app@sharepoint is often identified as the user for "Performed searc
 
 Here are a few other scenarios where app@sharepoint may be identified in an audit record as the user who performed an activity:
 
-- Microsoft 365 Groups. When a user or admin creates a new group, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group. These tasks are performed an application on behalf of the user who created the group.
-
-- Microsoft Teams. Similar to Microsoft 365 Groups, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group when a team is created.
-
-- Compliance features. When an admin implements compliance features, such as retention policies, eDiscovery holds, and auto-applying sensitivity labels.
+- **Microsoft 365 Groups**. When a user or admin creates a new group, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group. These tasks are performed an application on behalf of the user who created the group.
+- **Microsoft Teams**. Similar to Microsoft 365 Groups, audit records are generated for creating a site collection, updating lists, and adding members to a SharePoint group when a team is created.
+- **Compliance features**. When an admin implements compliance features, such as retention policies, eDiscovery holds, and auto-applying sensitivity labels.
 
 In these and other scenarios, you'll also notice that multiple audit records with app@sharepoint as the specified user were created within a short time frame, often within a few seconds of each other. This also indicates they were probably triggered by the same user-initiated task. Also, the ApplicationDisplayName and EventData fields in the audit record may help you identify the scenario or application that triggered the event.
 
-### Folder activities
+## Folder activities
 
 The following table describes the folder activities in SharePoint Online and OneDrive for Business. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Copied folder|FolderCopied|User copies a folder from a site to another location in SharePoint or OneDrive for Business.|
 |Created folder|FolderCreated|User creates a folder on a site.|
@@ -501,11 +271,11 @@ The following table describes the folder activities in SharePoint Online and One
 |Renamed folder|FolderRenamed|User renames a folder on a site.|
 |Restored folder|FolderRestored|User restores a deleted folder from the recycle bin on a site.|
 
-### SharePoint list activities
+## SharePoint list activities
 
 The following table describes activities related to when users interact with lists and list items in SharePoint Online. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Created list|ListCreated|A user created a SharePoint list.|
 |Created list column|ListColumnCreated|A user created a SharePoint list column. A list column is a column that's attached to one or more SharePoint lists.|
@@ -529,14 +299,14 @@ The following table describes activities related to when users interact with lis
 |Updated site column|SiteColumnUpdated|A user updated a SharePoint site column by modifying one or more properties.|
 |Updated site content type|SiteContentTypeUpdated|A user updated a site content type by modifying one or more properties.|
 
-### Sharing and access request activities
+## Sharing and access request activities
 
-The following table describes the user sharing and access request activities in SharePoint Online and OneDrive for Business. For sharing events, the **Detail** column under **Results** identifies the name of the user or group the item was shared with and whether that user or group is a member or guest in your organization. For more information, see [Use sharing auditing in the audit log](use-sharing-auditing.md).
+The following table describes the user sharing and access request activities in SharePoint Online and OneDrive for Business. For sharing events, the **Detail** column under **Results** identifies the name of the user or group the item was shared with and whether that user or group is a member or guest in your organization. For more information, see [Use sharing auditing in the audit log](audit-log-sharing.md).
 
 > [!NOTE]
 > Users can be either  *members*  or  *guests*  based on the UserType property of the user object. A member is usually an employee, and a guest is usually a collaborator outside of your organization. When a user accepts a sharing invitation (and isn't already part of your organization), a guest account is created for them in your organization's directory. Once the guest user has an account in your directory, resources may be shared directly with them (without requiring an invitation).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Added permission level to site collection|PermissionLevelAdded|A permission level was added to a site collection.|
 |Accepted access request|AccessRequestAccepted|An access request to a site, folder, or document was accepted and the requesting user has been granted access.|
@@ -563,11 +333,11 @@ The following table describes the user sharing and access request activities in 
 |User removed from secure link|RemovedFromSecureLink|A user was removed from the list of entities who can use a secure sharing link.|
 |Withdrew sharing invitation|SharingInvitationRevoked|User withdrew a sharing invitation to a resource.|
 
-### Synchronization activities
+## Synchronization activities
 
 The following table lists file synchronization activities in SharePoint Online and OneDrive for Business.
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Allowed computer to sync files|ManagedSyncClientAllowed|User successfully establishes a sync relationship with a site. The sync relationship is successful because the user's computer is a member of a domain that's been added to the list of domains (called the *safe recipients list*) that can access document libraries in your organization. <br/><br/> For more information about this feature, see [Use PowerShell cmdlets to enable OneDrive sync for domains that are on the safe recipients list](/powershell/module/sharepoint-online/).|
 |Blocked computer from syncing files|UnmanagedSyncClientBlocked|User tries to establish a sync relationship with a site from a computer that isn't a member of your organization's domain or is a member of a domain that hasn't been added to the list of domains (called the  *safe recipients list)*  that can access document libraries in your organization. The sync relationship isn't allowed, and the user's computer is blocked from syncing, downloading, or uploading files on a document library. <br/><br/> For information about this feature, see [Use PowerShell cmdlets to enable OneDrive sync for domains that are on the safe recipients list](/powershell/module/sharepoint-online/).|
@@ -576,11 +346,11 @@ The following table lists file synchronization activities in SharePoint Online a
 |Uploaded files to document library|FileSyncUploadedFull|User uploads a new file or changes to a file in SharePoint document library or OneDrive for Business using OneDrive sync app (OneDrive.exe).|
 |Uploaded file changes to document library|FileSyncUploadedPartial|This event has been deprecated along with the old OneDrive for Business sync app (Groove.exe).|
 
-### Site permissions activities
+## Site permissions activities
 
 The following table lists events related to assigning permissions in SharePoint and using groups to give (and revoke) access to sites. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Added site collection admin|SiteCollectionAdminAdded|Site collection administrator or owner adds a person as a site collection administrator for a site. Site collection administrators have full control permissions for the site collection and all subsites. This activity is also logged when an admin gives themselves access to a user's OneDrive account (by editing the user profile in the SharePoint admin center or by [using the Microsoft 365 admin center](/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)).|
 |Added user or group to SharePoint group|AddedToGroup|User added a member or guest to a SharePoint group. This might have been an intentional action or the result of another activity, such as a sharing event.|
@@ -599,11 +369,11 @@ The following table lists events related to assigning permissions in SharePoint 
 |Restored sharing inheritance|SharingInheritanceReset|A change was made so that an item inherits sharing permissions from its parent.|
 |Updated group|GroupUpdated|Site administrator or owner changes the settings of a group for a site. This can include changing the group's name, who can view or edit the group membership, and how membership requests are handled.|
 
-### Site administration activities
+## Site administration activities
 
 The following table lists events that result from site administration tasks in SharePoint Online. As previously explained, audit records for some SharePoint activities will indicate the app@sharepoint user performed the activity of behalf of the user or admin who initiated the action. For more information, see [The app\@sharepoint user in audit records](#the-appsharepoint-user-in-audit-records).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Added allowed data location|AllowedDataLocationAdded|A SharePoint or global administrator added an allowed data location in a multi-geo environment.|
 |Added exempt user agent|ExemptUserAgentSet|A SharePoint or global administrator added a user agent to the list of exempt user agents in the SharePoint admin center.|
@@ -637,15 +407,15 @@ The following table lists events that result from site administration tasks in S
 |Unjoined site from hub site|HubSiteUnjoined|A site owner disassociates their site from a hub site.|
 |Unregistered hub site|HubSiteUnregistered|A SharePoint or global administrator unregisters a site as a hub site. When a hub site is unregistered, it no longer functions as a hub site.|
 
-### Exchange mailbox activities
+## Exchange mailbox activities
 
-The following table lists the activities that can be logged by mailbox audit logging. Mailbox activities performed by the mailbox owner, a delegated user, or an administrator are automatically logged in the audit log for up to 90 days. It's possible for an admin to turn off mailbox audit logging for all users in your organization. In this case, no mailbox actions for any user are logged. For more information, see [Manage mailbox auditing](enable-mailbox-auditing.md).
+The following table lists the activities that can be logged by mailbox audit logging. Mailbox activities performed by the mailbox owner, a delegated user, or an administrator are automatically logged in the audit log for up to 90 days. It's possible for an admin to turn off mailbox audit logging for all users in your organization. In this case, no mailbox actions for any user are logged. For more information, see [Manage mailbox auditing](audit-mailboxes.md).
 
  You can also search for mailbox activities by using the [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Accessed mailbox items|MailItemsAccessed|Messages were read or accessed in mailbox. Audit records for this activity are triggered in one of two ways: when a mail client (such as Outlook) performs a bind operation on messages or when mail protocols (such as Exchange ActiveSync or IMAP) sync items in a mail folder. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. Analyzing audit records for this activity is useful when investigating compromised email account. For more information, see the "Audit (Premium) events" section in [Audit (Premium)](advanced-audit.md#audit-premium-events). |
+|Accessed mailbox items|MailItemsAccessed|Messages were read or accessed in mailbox. Audit records for this activity are triggered in one of two ways: when a mail client (such as Outlook) performs a bind operation on messages or when mail protocols (such as Exchange ActiveSync or IMAP) sync items in a mail folder. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. Analyzing audit records for this activity is useful when investigating compromised email account. For more information, see the "Audit (Premium) events" section in [Audit (Premium)](audit-premium.md#audit-premium-events). |
 |Added delegate mailbox permissions|Add-MailboxPermission|An administrator assigned the FullAccess mailbox permission to a user (known as a delegate) to another person's mailbox. The FullAccess permission allows the delegate to open the other person's mailbox, and read and manage the contents of the mailbox. The audit record for this activity is also generated when a system account in the Microsoft 365 service periodically performs maintenance tasks in behalf of your organization. A common task performed by a system account is updating the permissions for system mailboxes. For more information, see [System accounts in Exchange mailbox audit records](#system-accounts-in-exchange-mailbox-audit-records).|
 |Added or removed user with delegate access to calendar folder|UpdateCalendarDelegation|A user was added or removed as a delegate to the calendar of another user's mailbox. Calendar delegation gives someone else in the same organization permissions to manage the mailbox owner's calendar.|
 |Added permissions to folder|AddFolderPermissions|A folder permission was added. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|
@@ -661,7 +431,7 @@ The following table lists the activities that can be logged by mailbox audit log
 |Purged messages from the mailbox|HardDelete|A message was purged from the Recoverable Items folder (permanently deleted from the mailbox).|
 |Removed delegate mailbox permissions|Remove-MailboxPermission|An administrator removed the FullAccess permission (that was assigned to a delegate) from a person's mailbox. After the FullAccess permission is removed, the delegate can't open the other person's mailbox or access any content in it.|
 |Removed permissions from folder|RemoveFolderPermissions|A folder permission was removed. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|
-|Sent message|Send|A message was sent, replied to or forwarded. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. For more information, see the "Audit (Premium) events" section in [Audit (Premium)](advanced-audit.md#audit-premium-events).|
+|Sent message|Send|A message was sent, replied to or forwarded. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. For more information, see the "Audit (Premium) events" section in [Audit (Premium)](audit-premium.md#audit-premium-events).|
 |Sent message using Send As permissions|SendAs|A message was sent using the SendAs permission. This means that another user sent the message as though it came from the mailbox owner.|
 |Sent message using Send On Behalf permissions|SendOnBehalf|A message was sent using the SendOnBehalf permission. This means that another user sent the message on behalf of the mailbox owner. The message indicates to the recipient whom the message was sent on behalf of and who actually sent the message.|
 |Updated inbox rules from Outlook client|UpdateInboxRules|A mailbox owner or other user with access to the mailbox created, modified, or removed an inbox rule by using the Outlook client.|
@@ -669,20 +439,20 @@ The following table lists the activities that can be logged by mailbox audit log
 |User signed in to mailbox|MailboxLogin|The user signed in to their mailbox.|
 |Label message as a record||A user applied a retention label to an email message and that label is configured to mark the item as a record. |
 
-#### System accounts in Exchange mailbox audit records
+### System accounts in Exchange mailbox audit records
 
 In audit records for some mailbox activities (especially **Add-MailboxPermissions**), you may notice the user who performed the activity (and is identified in the User and UserId fields) is NT AUTHORITY\SYSTEM or NT AUTHORITY\SYSTEM(Microsoft.Exchange.Servicehost). This indicates that the "user" who performed the activity was a system account in Exchange service in the Microsoft cloud. This system account often performs scheduled maintenance tasks on behalf of your organization. For example, a common audited activity performed by the NT AUTHORITY\SYSTEM(Microsoft.Exchange.ServiceHost) account is to update the permissions on the DiscoverySearchMailbox, which is a system mailbox. The purpose of this update is to verify that the FullAccess permission (which is the default) is assigned to the Discovery Management role group for the DiscoverySearchMailbox. This ensures that eDiscovery administrators can perform necessary tasks in their organization.
 
 Another system user account that may be identified in an audit record for **Add-MailboxPermission** is Administrator@apcprd03.prod.outlook.com. This service account is also included in mailbox audit records related to verifying and updating the FullAccess permission is assigned to the Discovery Management role group for the DiscoverySearchMailbox system mailbox. Specifically, audit records that identify the Administrator@apcprd03.prod.outlook.com account are typically triggered when Microsoft support personnel run a role-based access control diagnostic tool on behalf of your organization.
 
-### User administration activities
+## User administration activities
 
 The following table lists user administration activities that are logged when an admin adds or changes a user account by using the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) or the Azure management portal.
 
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
 
-|Activity|Operation|Description|
+|**Activity**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Added user|Add user.|A user account was created.|
 |Changed user license|Change user license.|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
@@ -693,14 +463,14 @@ The following table lists user administration activities that are logged when an
 |Set license properties|Set license properties.|Administrator modifies the properties of a licensed assigned to a user.|
 |Updated user|Update user.|Administrator changes one or more properties of a user account. For a list of the user properties that can be updated, see the "Update user attributes" section in [Azure Active Directory Audit Report Events](/azure/active-directory/reports-monitoring/concept-audit-logs).|
 
-### Azure AD group administration activities
+## Azure AD group administration activities
 
 The following table lists group administration activities that are logged when an admin or a user creates or changes a Microsoft 365 Group or when an admin creates a security group by using the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) or the Azure management portal. For more information about groups in Microsoft 365, see [View, create, and delete Groups in the Microsoft 365 admin center](../admin/create-groups/create-groups.md).
 
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Added group|Add group.|A group was created.|
 |Added member to group|Add member to group.|A member was added to a group.|
@@ -708,14 +478,14 @@ The following table lists group administration activities that are logged when a
 |Removed member from group|Remove member from group.|A member was removed from a group.|
 |Updated group|Update group.|A property of a group was changed.|
 
-### Application administration activities
+## Application administration activities
 
 The following table lists application admin activities that are logged when an admin adds or changes an application that's registered in Azure AD. Any application that relies on Azure AD for authentication must be registered in the directory.
 
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Added delegation entry|Add delegation entry.|An authentication permission was created/granted to an application in Azure AD.|
 |Added service principal|Add service principal.|An application was registered in Azure AD. An application is represented by a service principal in the directory.|
@@ -725,27 +495,27 @@ The following table lists application admin activities that are logged when an a
 |Removed credentials from a service principal|Remove service principal credentials.|Credentials were removed from a service principal in Azure AD. A service principle represents an application in the directory.|
 |Set delegation entry|Set delegation entry.|An authentication permission was updated for an application in Azure AD.|
 
-### Role administration activities
+## Role administration activities
 
 The following table lists Azure AD role administration activities that are logged when an admin manages admin roles in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) or in the Azure management portal.
 
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
 
-|Friendly name|Operation|Description|
+|**Friendly name**|Operation**|**Description**|
 |:-----|:-----|:-----|
 |Add member to Role|Add member to role.|Added a user to an admin role in Microsoft 365.|
 |Removed a user from a directory role|Remove member from role.|Removed a user to from an admin role in Microsoft 365.|
 |Set company contact information|Set company contact information.|Updated the company-level contact preferences for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about services.|
 
-### Directory administration activities
+## Directory administration activities
 
 The following table lists Azure AD directory and domain-related activities that are logged when an administrator manages their organization in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) or in the Azure management portal.
 
 > [!NOTE]
 > The operation names listed in the **Operation** column in the following table contain a period ( `.` ). You must include the period in the operation name if you specify the operation in a PowerShell command when searching the audit log, creating audit retention policies, creating alert policies, or creating activity alerts. Also be sure to use double quotation marks (`" "`) to contain the operation name.
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Added domain to company|Add domain to company.|Added a domain to your organization.|
 |Added a partner to the directory|Add partner to company.|Added a partner (delegated administrator) to your organization.|
@@ -760,18 +530,14 @@ The following table lists Azure AD directory and domain-related activities that 
 |Verified domain|Verify domain.|Verified that your organization is the owner of a domain.|
 |Verified email verified domain|Verify email verified domain.|Used email verification to verify that your organization is the owner of a domain.|
 
-### eDiscovery activities
+## eDiscovery activities
 
 Content Search and eDiscovery-related activities that are performed in the security and compliance portal or by running the corresponding PowerShell cmdlets are logged in the audit log. This includes the following activities:
 
 - Creating and managing eDiscovery cases
-
 - Creating, starting, and editing Content Searches
-
 - Performing Content Search actions, such as previewing, exporting, and deleting search results
-
 - Configuring permissions filtering for Content Search
-
 - Managing the eDiscovery Administrator role
 
 For a list and detailed description of the eDiscovery activities that are logged, see [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md).
@@ -779,21 +545,21 @@ For a list and detailed description of the eDiscovery activities that are logged
 > [!NOTE]
 > It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** and **eDiscovery (Premium) activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results.
 
-### eDiscovery (Premium) activities
+## eDiscovery (Premium) activities
 
 You can also search the audit log for activities in Microsoft Purview eDiscovery (Premium). For a description of these activities, see the "eDiscovery (Premium) activities" section in [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
 
-### Power BI activities
+## Power BI activities
 
 You can search the audit log for activities in Power BI. For information about Power BI activities, see the "Activities audited by Power BI" section in [Using auditing within your organization](/power-bi/service-admin-auditing#activities-audited-by-power-bi).
 
 Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](/power-bi/service-admin-portal#audit-logs).
 
-### Workplace Analytics activities
+## Workplace Analytics activities
 
 Workplace Analytics provides insight into how groups collaborate across your organization. The following table lists activities performed by users that are assigned the Administrator role or the Analyst roles in Workplace Analytics. Users assigned the Analyst role have full access to all service features and use the product to do analysis. Users assigned the Administrator role can configure privacy settings and system defaults, and can prepare, upload, and verify organizational data in Workplace Analytics. For more information, see [Workplace Analytics](/workplace-analytics/index-orig).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Accessed OData link|AccessedOdataLink|Analyst accessed the OData link for a query.|
 |Canceled query|CanceledQuery|Analyst canceled a running query.|
@@ -811,11 +577,11 @@ Workplace Analytics provides insight into how groups collaborate across your org
 > [!NOTE]
 > <sup>*</sup>These are Azure Active Directory sign in and sign off activities. These activities are logged even if you don't have Workplace Analytics turned on in your organization. For more information about user sign in activities, see [Sign-in logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
-### Microsoft Teams activities
+## Microsoft Teams activities
 
 You can search the audit log for user and admin activities in Microsoft Teams. Teams is a chat-centered workspace in Microsoft 365. It brings a team's conversations, meetings, files, and notes together into a single place. For descriptions of the Teams activities that are audited, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events#teams-activities).
 
-### Microsoft Teams Healthcare activities
+## Microsoft Teams Healthcare activities
 
 If your organization is using the [Patients application](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview) in Microsoft Teams, you can search the audit log for activities related to the using the Patients app. If your environment is configured to support Patients app, an additional activity group for these activities is available in the **Activities** picker list.
 
@@ -823,20 +589,20 @@ If your organization is using the [Patients application](/MicrosoftTeams/expand-
 
 For a description of the Patients app activities, see [Audit logs for Patients app](/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit).
 
-### Microsoft Teams Shifts activities
+## Microsoft Teams Shifts activities
 
 If your organization is using the Shifts app in Microsoft Teams, you can search the audit log for activities related to the using the Shifts app. If your environment is configured to support Shifts apps, an additional activity group for these activities is available in the **Activities** picker list.
 
 For a description of Shifts app activities, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
-### Yammer activities
+## Yammer activities
 
 The following table lists the user and admin activities in Yammer that are logged in the audit log. To return Yammer-related activities from the audit log, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results.
 
 > [!NOTE]
-> Some Yammer audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](advanced-audit.md#audit-premium-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
+> Some Yammer audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](audit-premium.md#audit-premium-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Changed data retention policy|SoftDeleteSettingsUpdated|Verified admin updates the setting for the network data retention policy to either Hard Delete or Soft Delete. Only verified admins can perform this operation.|
 |Changed network configuration|NetworkConfigurationUpdated|Network or verified admin changes the Yammer network's configuration. This includes setting the interval for exporting data and enabling chat.|
@@ -862,31 +628,31 @@ The following table lists the user and admin activities in Yammer that are logge
 |Viewed file|FileVisited|User views a file.|
 |Viewed message<sup>*</sup>|MessageViewed|User views a message.|
 
-### Microsoft Power Automate activities
+## Microsoft Power Automate activities
 
 You can search the audit log for activities in Power Automate (formerly called Microsoft Flow). These activities include creating, editing, and deleting flows, and changing flow permissions. For information about auditing for Power Automate activities, see the blog  [Power Automate audit events now available in compliance portal](https://flow.microsoft.com/blog/security-and-compliance-center).
 
-### Microsoft Power Apps activities
+## Microsoft Power Apps activities
 
 You can search the audit log for app-related activities in Power Apps. These activities include creating, launching, and publishing an app. Assigning permissions to apps is also audited. For a description of all Power Apps activities, see [Activity logging for Power Apps](/power-platform/admin/logging-powerapps#what-events-are-audited).
 
-### Microsoft Stream activities
+## Microsoft Stream activities
 
 You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Actions logged in Stream" section in [Audit Logs in Microsoft Stream](/stream/audit-logs#actions-logged-in-stream).
 
-### Content explorer activities
+## Content explorer activities
 
 The following table lists the activities in content explorer that are logged in the audit log. Content explorer, which is accessed on the Data classifications tool in the compliance portal. For more information, see [Using data classification content explorer](data-classification-content-explorer.md).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Accessed item|LabelContentExplorerAccessedItem|An admin (or a user who's a member of the Content Explorer Content Viewer role group) uses content explorer to view an email message or SharePoint/OneDrive document.|
 
-### Quarantine activities
+## Quarantine activities
 
 The following table lists the quarantine activities that you can search for in the audit log. For more information about quarantine, see [Quarantine email messages](../security/office-365-security/quarantine-about.md).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Deleted quarantine message|QuarantineDelete|An Admin or user deleted an email message that was deemed to be harmful.|
 |Exported quarantine message|QuarantineExport|An Admin or  user exported an email message that was deemed to be harmful.|
@@ -895,16 +661,16 @@ The following table lists the quarantine activities that you can search for in t
 |Viewed quarantine message's header|QuarantineViewHeader|An Admin or user viewed the header an email message that was deemed to be harmful.|
 |Release request quarantine message|QuarantineReleaseRequest|A user requested the release of an email message that was deemed to be harmful.|
 
-### Microsoft Forms activities
+## Microsoft Forms activities
 
 The tables in this section the user and admin activities in Microsoft Forms that are logged in the audit log. Microsoft Forms is a forms/quiz/survey tool used to collect data for analysis. Where noted below in the descriptions, some operations contain additional activity parameters.
 
 If a Forms activity is performed by a coauthor or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by coauthors and anonymous responders](#forms-activities-performed-by-coauthors-and-anonymous-responders) section.
 
 > [!NOTE]
-> Some Forms audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](advanced-audit.md#audit-premium-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](auditing-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
+> Some Forms audit activities are only available in Audit (Premium). That means users must be assigned the appropriate license before these activities are logged in the audit log. For more information about activities only available in Audit (Premium), see [Audit (Premium) in Microsoft 365](advanced-audit.md#audit-premium-events). For Audit (Premium) licensing requirements, see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements). <br/><br/>In the following table, Audit (Premium) activities are highlighted with an asterisk (*).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Created comment|CreateComment|Form owner adds comment or score to a quiz.|
 |Created form|CreateForm|Form owner creates a new form. <br><br>Property DataMode:string indicates the current form is set to sync with a new or existing Excel workbook if the property value equals DataSync. Property ExcelWorkbookLink:string indicates the associated Excel workbook ID of the current form.|
@@ -953,13 +719,13 @@ If a Forms activity is performed by a coauthor or an anonymous responder, it wil
 |Moved a form into collection|MovedFormIntoCollection|Form owner moved a form into a collection.|
 |Moved a form out of collection|MovedFormOutofCollection|Form owner moved a form out of a collection.|
 
-#### Forms activities performed by coauthors and anonymous responders
+### Forms activities performed by coauthors and anonymous responders
 
 Forms supports collaboration when forms are designed and when analyzing responses. A form collaborator is known as a *coauthor*. Coauthors can do everything a form owner can do, except delete or move a form. Forms also allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form.
 
 The following table describes the auditing activities and information in the audit record for activities performed by coauthors and anonymous responders.
 
-|Activity type|Internal or external user|User ID that's logged|Organization logged in to|Forms user type|
+|**Activity type**|**Internal or external user**|**User ID that's logged**|**Organization logged in to**|**Forms user type**|
 |:-----|:-----|:-----|:-----|:-----|
 |Coauthoring activities|Internal|UPN|Form owner's org|Coauthor|
 |Coauthoring activities|External|UPN<br>|Coauthor's org<br>|Coauthor|
@@ -968,11 +734,11 @@ The following table describes the auditing activities and information in the aud
 |Response activities|External|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(The second part of the User ID is a hash, which will differ for different users)|Form owner's org|Responder|
 |Response activities|Anonymous|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(The second part of the User ID is a hash, which will differ for different users)|Form owner's org|Responder|
 
-### Sensitivity label activities
+## Sensitivity label activities
 
 The following table lists events that result from using [sensitivity labels](sensitivity-labels.md).
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Applied sensitivity label to site|SensitivityLabelApplied|A sensitivity label was applied to a SharePoint or Teams site.|
 |Removed sensitivity label from site|SensitivityLabelRemoved|A sensitivity label was removed from a SharePoint or Teams site.|
@@ -981,11 +747,11 @@ The following table lists events that result from using [sensitivity labels](sen
 |Changed sensitivity label on a site|SensitivityLabelChanged|A different sensitivity label was applied to a SharePoint or Teams site.|
 |Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Microsoft 365 apps, Office on the web, an auto-labeling policy, or the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet.|
 
-### Retention policy and retention label activities
+## Retention policy and retention label activities
 
 The following table describes the configuration activities for [retention policies and retention labels](retention.md) when they were created, reconfigured, or deleted.
 
-|Friendly name|Operation|Description|
+|**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 | Changed adaptive scope membership |ApplicableAdaptiveScopeChange |Users, sites, or groups were added to or removed from the adaptive scope. These changes are the results of running the scope's query. Because the changes are system-initiated, the reported user displays as a GUID rather than a user account.|
 | Configured settings for a retention policy |NewRetentionComplianceRule |Administrator configured the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) cmdlet.|
@@ -1002,12 +768,11 @@ The following table describes the configuration activities for [retention polici
 | Updated retention label |SetComplianceTag  | Administrator updated an existing retention label.|
 | Updated retention policy |SetRetentionCompliancePolicy |Administrator updated an existing a retention policy. Updates that trigger this event include adding or excluding content locations that the retention policy is applied to.|
 
-### Briefing email activities
+## Briefing email activities
 
 The following table lists the activities in Briefing email that are logged in the Microsoft 365 audit log. For more information about Briefing email, see:
 
 - [Overview of Briefing email](/Briefing/be-overview)
-
 - [Configure Briefing email](/Briefing/be-admin)
 
 |**Friendly name**|**Operation**|**Description**|
@@ -1015,7 +780,7 @@ The following table lists the activities in Briefing email that are logged in th
 |Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization privacy settings for Briefing email. |
 |Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email.
 
-### MyAnalytics activities
+## MyAnalytics activities
 
 The following table lists the activities in MyAnalytics that are logged in the Microsoft 365 audit log. For more information about MyAnalytics, see [MyAnalytics for admins](/workplace-analytics/myanalytics/overview/mya-for-admins).
 
@@ -1024,7 +789,7 @@ The following table lists the activities in MyAnalytics that are logged in the M
 |Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|Admin updates organization-level settings for MyAnalytics. |
 |Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|Admin updates user settings for MyAnalytics.|
 
-### Information barriers activities
+## Information barriers activities
 
 The following table lists the activities in information barriers that are logged in the Microsoft 365 audit log. For more information about information barriers, see [Learn about information barriers in Microsoft 365](information-barriers.md).
 
@@ -1034,7 +799,7 @@ The following table lists the activities in information barriers that are logged
 | Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
 | Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
 
-### Disposition review activities
+## Disposition review activities
 
 The following table lists the activities a disposition reviewer took when an item reached the end of its configured retention period. For more information, see [Viewing and disposing of content](disposition.md#viewing-and-disposing-of-content).
 
@@ -1045,9 +810,9 @@ The following table lists the activities a disposition reviewer took when an ite
 |Relabeled item|RelabelItem|A disposition reviewer relabeled the retention label.|
 |Added reviewers|AddReviewer|A disposition reviewer added one or more other users to the current disposition review stage.|
 
-### Communication compliance activities
+## Communication compliance activities
 
-The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about communication compliance in Microsoft 365](communication-compliance.md).
+The following table lists communication compliance activities that are logged in the Microsoft 365 audit log. For more information, see [Learn about Microsoft Purview Communication Compliance](communication-compliance.md).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -1055,7 +820,7 @@ The following table lists communication compliance activities that are logged in
 |Policy match|SupervisionRuleMatch|A user has sent a message that matches a policy's condition.|
 |Tag applied to message(s)|SupervisoryReviewTag|Tags are applied to messages or messages are resolved.|
 
-### Report activities
+## Report activities
 
 The following table lists the activities for usage reports that are logged in the Microsoft 365 audit log.
 
@@ -1063,7 +828,7 @@ The following table lists the activities for usage reports that are logged in th
 |:-----|:-----|:-----|
 |Updated usage report privacy settings|UpdateUsageReportsPrivacySetting|Admin updated privacy settings for usage reports. |
 
-### Exchange admin audit log
+## Exchange admin audit log
 
 Exchange administrator audit logging (which is enabled by default in Microsoft 365) logs an event in the audit log when an administrator (or a user who has been assigned administrative permissions) makes a change in your Exchange Online organization. Changes made by using the Exchange admin center or by running a cmdlet in Exchange Online PowerShell are logged in the Exchange admin audit log. Cmdlets that begin with the verbs **Get-**, **Search-**, or **Test-** aren't logged in the audit log. For more detailed information about admin audit logging in Exchange, see [Administrator audit logging](/exchange/administrator-audit-logging-exchange-2013-help).
 
@@ -1073,37 +838,32 @@ Exchange administrator audit logging (which is enabled by default in Microsoft 3
 Here are some tips for searching for Exchange admin activities when searching the audit log:
 
 - To return entries from the Exchange admin audit log, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results for cmdlets run by a specific Exchange administrator within a specific date range.
-
 - To display events from the Exchange admin audit log, select the **Activity** column to sort the cmdlet names in alphabetical order.
-
-- To get information about what cmdlet was run, which parameters and parameter values were used, and what objects were affected, you can export the search results by selecting the **Download all results** option. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
-
-- You can also use the `Search-UnifiedAuditLog -RecordType ExchangeAdmin` command in Exchange Online PowerShell to return only audit records from the Exchange admin audit log. It may take up to 30 minutes after an Exchange cmdlet is run for the corresponding audit log entry to be returned in the search results. For more information, see [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog). For information about exporting the search results returned by the **Search-UnifiedAuditLog** cmdlet to a CSV file, see the "Tips for exporting and viewing the audit log" section in [Export, configure, and view audit log records](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
-
+- To get information about what cmdlet was run, which parameters and parameter values were used, and what objects were affected, you can export the search results by selecting the **Download all results** option. For more information, see [Export, configure, and view audit log records](audit-log-export-records.md).
+- You can also use the `Search-UnifiedAuditLog -RecordType ExchangeAdmin` command in Exchange Online PowerShell to return only audit records from the Exchange admin audit log. It may take up to 30 minutes after an Exchange cmdlet is run for the corresponding audit log entry to be returned in the search results. For more information, see [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog). For information about exporting the search results returned by the **Search-UnifiedAuditLog** cmdlet to a CSV file, see the "Tips for exporting and viewing the audit log" section in [Export, configure, and view audit log records](audit-log-export-records.md#tips-for-exporting-and-viewing-the-audit-log).
 - You can also view events in the Exchange admin audit log by using the Exchange admin center or running the **Search-AdminAuditLog** in Exchange Online PowerShell. This is a good way to specifically search for activity performed by Exchange Online administrators. For instructions, see:
 
   - [View the administrator audit log](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)
-
   - [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)
 
    Keep in mind that the same Exchange admin activities are logged in both the Exchange admin audit log and audit log.
 
-### Encrypted message portal activities
+## Encrypted message portal activities
 
-Access logs are available for encrypted messages through the encrypted message portal that lets your organization determine when messages are read, and forwarded by your external recipients. For more information on enabling and using encrypted message portal activity logs, see [Encrypted message portal activity log](ome-message-access-logs.md).
+Access logs are available for encrypted messages through the encrypted message portal that lets your organization determine when messages are read, and forwarded by your external recipients. For more information on enabling and using encrypted message portal activity logs, see [Encrypted message portal activity log](audit-log-encrypted-messages.md).
 
 Each audit entry for a tracked message will contain the following fields:
 
-- MessageID - Contains the ID of the message being tracked. This is the key identifier used to follow a message through the system.
-- Recipient - List of all recipient email addresses.
-- Sender - The originating email address.
-- AuthenticationMethod - Describes the authenticating method for accessing the message, for example OTP, Yahoo, Gmail, or Microsoft.
-- AuthenticationStatus - Contains a value indicating that the authentication succeeded or failed.
-- OperationStatus - Indicates whether the indicated operation succeeded or failed.
-- AttachmentName - Name of the attachment.
-- OperationProperties - A list of optional properties. For example, the number of OTP passcodes sent, or the email subject.
+- **MessageID**: Contains the ID of the message being tracked. This is the key identifier used to follow a message through the system.
+- **Recipient**: List of all recipient email addresses.
+- **Sender**: The originating email address.
+- **AuthenticationMethod**: Describes the authenticating method for accessing the message, for example OTP, Yahoo, Gmail, or Microsoft.
+- **AuthenticationStatus**: Contains a value indicating that the authentication succeeded or failed.
+- **OperationStatus**: Indicates whether the indicated operation succeeded or failed.
+- **AttachmentName**: Name of the attachment.
+- **OperationProperties**: A list of optional properties. For example, the number of OTP passcodes sent, or the email subject.
 
-### SystemSync activities
+## SystemSync activities
 
 The following table lists the activities for SystemSync that are logged in the Microsoft 365 audit log.
 
@@ -1113,54 +873,3 @@ The following table lists the activities for SystemSync that are logged in the M
 |Data Share Deleted|DataShareDeleted|When the data export is deleted by the user.|
 |Generate Copy Of Lake Data|GenerateCopyOfLakeData|When the copy of Lake Data is generated.|
 |Download Copy Of Lake Data|DownloadCopyOfLakeData|When the copy of Lake Data is downloaded.|
-
-
-## Frequently asked questions
-
-**What are different Microsoft 365 services that are currently audited?**
-
-The most used services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Defender for Office 365, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
-
-**What activities are audited by auditing service in Microsoft 365?**
-
-See the [Audited activities](#audited-activities) section in this article for a list and description of the activities that are audited.
-
-**How long does it take for an auditing record to be available after an event has occurred?**
-
-Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Before you search the audit log](#before-you-search-the-audit-log) section of this article that shows the time it takes for events in the different services to be available.
-
-**How long are the audit records retained for?**
-
-As previously explained, audit records for activities performed by users assigned an Office 365 E5 or Microsoft E5 license (or users with a Microsoft 365 E5 add-on license) are retained for one year. For all other subscriptions that support unified audit logging, audit records are retained for 90 days.
-
-**Can I access the auditing data programmatically?**
-
-Yes. The Office 365 Management Activity API is used to fetch the audit logs programmatically.  To get started, see [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
-
-**Are there other ways to get auditing logs other than using the security and compliance portal or the Office 365 Management Activity API?**
-
-Yes, You can retrieve audit logs by using the following methods:
-
-- The [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference).
-
-- The [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview compliance portal.
-
-- The [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell.
-
-**Do I need to individually enable auditing in each service that I want to capture audit logs for?**
-
-In most services, auditing is enabled by default after you initially turn on auditing for your organization (as described in the [Before you search the audit log](#before-you-search-the-audit-log) section in this article).
-
-**Does the auditing service support de-duplication of records?**
-
-No. The auditing service pipeline is near real time, and therefore can't support de-duplication.
-
-**Where is auditing data stored?**
-
-We currently have auditing pipeline deployments in the NA (North America), EMEA (Europe, Middle East, and Africa) and APAC (Asia Pacific) regions. Tenants homed in these regions will have their auditing data stored in region. For multi-geo tenants, the audit data collected from all regions of the tenant will be stored only in tenant's home region. However, we may flow the data across these regions for load-balancing and only during live-site issues. When we do perform these activities, the data in transit is encrypted. 
-
-**Is auditing data encrypted?**
-
-Auditing data is stored in Exchange mailboxes (data at rest) in the same region where the unified auditing pipeline is deployed. Mailbox data at rest isn't encrypted by Exchange. However, service-level encryption encrypts all mailbox data because Exchange servers in Microsoft datacenters are encrypted via BitLocker. For more information, see [Microsoft 365 Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online](/compliance/assurance/assurance-encryption-for-microsoft-365-services).
-
-Mail data in transit is always encrypted.

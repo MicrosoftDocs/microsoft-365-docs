@@ -72,4 +72,4 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 
 Learn more about user reported message settings [User reported message settings - Office 365 | Microsoft Docs](../submissions-user-reported-messages-files-custom-mailbox.md)
 
-Enable the report message or report phishing add-in [Enable the Report Message or the Report Phishing add-ins - Office 365 | Microsoft Docs](../submissions-users-report-message-add-in-configure.md)
+Enable the report message or report phishing add-in [Enable the Microsoft Report Message or Report Phishing add-ins - Office 365 | Microsoft Docs](../submissions-users-report-message-add-in-configure.md)

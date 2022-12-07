@@ -40,7 +40,8 @@ When auditing in the Microsoft Purview compliance portal is turned on, user and 
     > [!NOTE]
     > Users have to be assigned permissions in Exchange Online to turn auditing on or off. If you assign users the Audit Logs role on the **Permissions** page in the compliance portal, they won't be able to turn auditing on or off. This is because the underlying cmdlet is an Exchange Online PowerShell cmdlet.
 
-- For step-by-step instructions on searching the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md). For more information about the Microsoft 365 Management Activity API, see [Get started with Microsoft 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
+- For step-by-step instructions on searching the audit log, see [Search the audit log](audit-log-search.md). 
+- For more information about the Microsoft 365 Management Activity API, see [Get started with Microsoft 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 ## Verify the auditing status for your organization
 
@@ -50,26 +51,26 @@ To verify that auditing is turned on for your organization, you can run the foll
 Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 ```
 
-A value of `True` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that auditing is turned on. A value of `False` indicates that auditing is not turned on.
+A value of `True` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that auditing is turned on. A value of `False` indicates that auditing isn't turned on.
 
 > [!NOTE]
 > Be sure to run the previous command in Exchange Online PowerShell. You can't use Security & Compliance PowerShell to run this command.
 
 ## Turn on auditing
 
-If auditing is not turned on for your organization, you can turn it on in the compliance portal or by using Exchange Online PowerShell. It may take several hours after you turn on auditing before you can return results when you search the audit log.
+If auditing isn't turned on for your organization, you can turn it on in the compliance portal or by using Exchange Online PowerShell. It may take several hours after you turn on auditing before you can return results when you search the audit log.
   
-### Use the compliance center to turn on auditing
+### Use the compliance portal to turn on auditing
 
 1. Go to <https://compliance.microsoft.com> and sign in.
 
-2. In the left navigation pane of the compliance portal, click **Audit**.
+2. In the left navigation pane of the compliance portal, select **Audit**.
 
-   If auditing is not turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
+   If auditing isn't turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
 
    ![Banner on Audit page.](../media/AuditingBanner.png)
 
-3. Click the **Start recording user and admin activity** banner.
+3. Select the **Start recording user and admin activity** banner.
 
    It may take up to 60 minutes for the change to take effect.
 
@@ -109,7 +110,7 @@ You have to use Exchange Online PowerShell to turn off auditing.
 
     - Go to the **Audit** page in the compliance portal.
 
-      If auditing is not turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
+      If auditing isn't turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
 
 ## Audit records when auditing status is changed
 
@@ -127,12 +128,12 @@ Audit records for these events contain information about when the auditing statu
 
 ![Audit record for turning on auditing](../media/AuditStatusAuditingEnabled.png)
 
-The value of `Confirm` in the *CmdletParameters* property indicates that unified audit logging was turned on in the compliance center or by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true** cmdlet.
+The value of `Confirm` in the *CmdletParameters* property indicates that unified audit logging was turned on in the compliance portal or by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true** cmdlet.
 
 ### Audit record for turning off auditing
 
 ![Audit record for turning off auditing](../media/AuditStatusAuditingDisabled.png)
 
-The value of `Confirm` is not included in the *CmdletParameters* property. This indicates that unified audit logging was turned off by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** command.
+The value of `Confirm` isn't included in the *CmdletParameters* property. This indicates that unified audit logging was turned off by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** command.
 
 For more information about searching the Exchange admin audit log, see [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).

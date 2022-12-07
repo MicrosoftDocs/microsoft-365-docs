@@ -9,7 +9,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - tier1
 - purview-compliance
@@ -43,8 +43,8 @@ Microsoft Purview provides two auditing solutions: Audit (Standard) and Audit (P
 Microsoft Purview Audit (Standard) provides with you with the ability to log and search for audited activities and power your forensic, IT, compliance, and legal investigations.
 
 - **Enabled by default**. Audit (Standard) is turned on by default for all organizations with the appropriate subscription. That means records for audited activities will be captured and searchable. The only setup that required is to assign the necessary permissions to access the audit log search tool (and the corresponding cmdlet) and make sure that user's are assigned the right license for Microsoft Purview Audit (Premium) features.
-- **Thousands of searchable audit events**. You can search for a wide-range of audited activities that occur is most of the Microsoft 365 services in your organization. For a partial list of the activities you can search for, see [Audited activities](search-the-audit-log-in-security-and-compliance.md#audited-activities). For a list of the services and features that support audited activities, see [Audit log record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
-- **Audit search tool in the Microsoft Purview compliance portal**. Use the Audit log search tool in the compliance portal to search for audit records. You can search for specific activities, for activities performed by specific users, and activities that occurred with a date range. Here's a screenshot of the Audit search tool in the compliance center.
+- **Thousands of searchable audit events**. You can search for a wide-range of audited activities that occur is most of the Microsoft 365 services in your organization. For a list of the activities you can search for, see [Audit log activities](audit-log-activities.md). For a list of the services and features that support audited activities, see [Audit log record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
+- **Audit search tool in the Microsoft Purview compliance portal**. Use the Audit log search tool in the compliance portal to search for audit records. You can search for specific activities, for activities performed by specific users, and activities that occurred with a date range. Here's a screenshot of the Audit search tool in the compliance portal.
 
    ![Audit log search tool in the compliance portal.](../media/AuditLogSearchToolMCC.png)
 
@@ -53,10 +53,8 @@ Microsoft Purview Audit (Standard) provides with you with the ability to log and
   - [Search-UnifiedAuditLog cmdlet reference](/powershell/module/exchange/search-unifiedauditlog)
   - [Use a PowerShell script to search the audit log](audit-log-search-script.md)
 
-- **Export audit records to a CSV file**. After running the Audit log search tool in the compliance portal, you can export the audit records returned by the search to a CSV file. This lets you use Microsoft Excel sort and filter on different audit record properties. You can also use Excel Power Query transform functionality to split each property in the AuditData JSON object into its own column. This lets you effectively view and compare similar data for different events. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
-
+- **Export audit records to a CSV file**. After running the Audit log search tool in the compliance portal, you can export the audit records returned by the search to a CSV file. This lets you use Microsoft Excel sort and filter on different audit record properties. You can also use Excel Power Query transform functionality to split each property in the AuditData JSON object into its own column. This lets you effectively view and compare similar data for different events. For more information, see [Export, configure, and view audit log records](audit-log-export-records.md).
 - **Access to audit logs via Office 365 Management Activity API**. A third method for accessing and retrieving audit records is to use the Office 365 Management Activity API. This lets organizations retain auditing data for longer periods than the default 90 days and lets them import their auditing data to a SIEM solution. For more information, see [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference).
-
 - **90-day audit log retention**. When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. In Audit (Standard), records are retained for 90 days, which means you can search for activities that occurred within the past three months.
 
 ### Audit (Premium)
@@ -64,14 +62,11 @@ Microsoft Purview Audit (Standard) provides with you with the ability to log and
 Audit (Premium) builds on the capabilities of Audit (Standard) by providing audit log retention policies, longer retention of audit records, high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
 
 - **Audit log retention policies**. You can create customized audit log retention policies to retain audit records for longer periods of time up to one year (and up to 10 years for users with required add-on license). You can create a policy to retain audit records based the service where the audited activities occur, specific audited activities, or the user who performs an audited activity.
-
 - **Longer retention of audit records**. Exchange, SharePoint, and Azure Active Directory audit records are retained for one year by default. Audit records for all other activities are retained for 90 days by default, or you can use audit log retention policies to configure longer retention periods.
-
 - **High-value, crucial Audit (Premium) events**. Audit records for crucial events can help your organization conduct forensic and compliance investigations by providing visibility to events such as when mail items were accessed, or when mail items were replied to and forwarded, or when and what a user searched for in Exchange Online and SharePoint Online. These crucial events can help you investigate possible breaches and determine the scope of compromise.
-
 - **Higher bandwidth to the Office 365 Management Activity API**. Audit (Premium) provides organizations with more bandwidth to access auditing logs through the Office 365 Management Activity API. Although all organizations (that have Audit (Standard) or Audit (Premium)) are initially allocated a baseline of 2,000 requests per minute, this limit will dynamically increase depending on an organization's seat count and their licensing subscription. This results in organizations with Audit (Premium) getting about twice the bandwidth as organizations with Audit (Standard).
 
-For more detailed information about Audit (Premium) features, see [Audit (Premium) in Microsoft 365](advanced-audit.md).
+For more detailed information about Audit (Premium) features, see [Audit (Premium) in Microsoft 365](audit-premium.md).
 
 ## Comparison of key capabilities
 
@@ -100,19 +95,15 @@ The following sections identify the licensing requirements for Audit (Standard) 
 
 ### Audit (Standard)
 
-- Microsoft Business Basic subscription
-- Microsoft Business Standard subscription
+- Microsoft Business Basic/Standard subscriptions
 - Microsoft 365 Apps for Business subscription
 - Microsoft 365 Enterprise E3 subscription
 - Microsoft 365 Business Premium
 - Microsoft 365 Education A3 subscription
-- Microsoft 365 Government G3 subscription
-- Microsoft 365 Government G1 subscription
+- Microsoft 365 Government G1/G3 subscriptions
 - Microsoft 365 Frontline F1 or F3 subscription, or F5 Security add-on
-- Office 365 Enterprise E3 subscription
-- Office 365 Enterprise E1 subscription
-- Office 365 Education A1 subscription
-- Office 365 Education A3 subscription
+- Office 365 Enterprise E1/E3 subscription
+- Office 365 Education A1/A3 subscriptions
 
 ### Audit (Premium)
 
@@ -126,8 +117,7 @@ The following sections identify the licensing requirements for Audit (Standard) 
 - Microsoft 365 Government G3 subscription + the Microsoft 365 G5 Compliance add-on
 - Microsoft 365 Government G3 subscription + the Microsoft 365 G5 eDiscovery and Audit add-on
 - Microsoft 365 Frontline F5 Compliance or F5 Security & Compliance add-on
-- Office 365 Enterprise E5 subscription
-- Office 365 Education A5 subscription
+- Office 365 Enterprise A5/E5 subscriptions
 
 ## Set up Microsoft Purview auditing solutions
 
@@ -145,7 +135,7 @@ The first step is to set up Audit (Standard) and then start running audit log se
 
 3. Search the audit log. After completing step 1 and step 2, users in your organization can use the audit log search tool (or corresponding cmdlet) to search for audited activities.
 
-For more detailed instructions, see [Set up Audit (Standard)](set-up-basic-audit.md).
+For more detailed instructions, see [Set up Audit (Standard)](audit-standard-setup.md).
 
 ### Set up Audit (Premium)
 
@@ -156,9 +146,7 @@ If your organization has a subscription that supports Audit (Premium), perform t
 1. Set up Audit (Premium) for users. This step consists of the following tasks:
 
    - Verifying that users are assigned the appropriate license or add-on license for Audit (Premium).
-  
    - Turning on the Audit (Premium) app/service plan must be for those users.
-  
    - Enabling the auditing of crucial events and then turning on the Audit (Premium) app/service plan for those users.
 
 2. Enable Audit (Premium) events to be logged when users perform searches in Exchange Online and SharePoint Online.
@@ -167,7 +155,7 @@ If your organization has a subscription that supports Audit (Premium), perform t
 
 4. Search for crucial Audit (Premium) events and other activities when conducting forensic investigations. After completing step 1 and step 2, you can search the audit log for Audit (Premium) events and other activities during forensic investigations of compromised accounts and other types of security or compliance investigations.
 
-For more detailed instructions, see [Set up Audit (Premium)](set-up-advanced-audit.md).
+For more detailed instructions, see [Set up Audit (Premium)](audit-premium-setup.md).
 
 <!--
 ## Encrypt audit records using Customer Key
