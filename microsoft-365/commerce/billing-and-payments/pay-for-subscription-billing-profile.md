@@ -1,5 +1,5 @@
 ---
-title: "Paying for your Microsoft business subscription with a billing profile"
+title: "Pay for your Microsoft business subscription with a billing profile"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -16,7 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: "Learn what payment options are available to pay for your Microsoft business subscription with a billing profile."
+description: "Learn how to pay for your Microsoft business subscription with a billing profile."
 ms.custom: 
 - commerce_billing
 - okr_SMB
