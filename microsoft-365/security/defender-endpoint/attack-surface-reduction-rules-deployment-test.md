@@ -11,7 +11,7 @@ ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
-ms.author: v-jweston
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
@@ -192,7 +192,7 @@ To configure per-rule exclusions,
 1. In **ASR Only Per Rule Exclusion**, click the toggle to change from **Not configured** to **Configured.**
 1. Enter the names of the files or application that you want to exclude.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-per-rule-exclusion.png" alt-text="Shows the ASR rules fly-out to add ASR rules to devices" lightbox="images/attack-surface-reduction-rules-report-per-rule-exclusion.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-per-rule-exclusion.png" alt-text="Shows the configuration settings for adding ASR per-rule exclusions" lightbox="images/attack-surface-reduction-rules-report-per-rule-exclusion.png":::
 
 ### Use PowerShell as an alternative method to enable ASR rules
 
