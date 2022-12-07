@@ -273,7 +273,7 @@ Want more information about DMARC? These resources can help.
 
 ## See also
 
-[How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing)
+[How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md)
 
 [**Set up SPF in Microsoft 365 to help prevent spoofing**](email-authentication-spf-configure.md)
 
