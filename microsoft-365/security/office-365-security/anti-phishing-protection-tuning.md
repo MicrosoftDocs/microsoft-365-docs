@@ -34,7 +34,7 @@ If a recipient's account was compromised as a result of the phishing message, fo
 
 If your subscription includes Microsoft Defender for Office 365, you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
-- [Safe Links in Microsoft Defender for Office 365](set-up-safe-links-policies.md)
+- [Safe Links in Microsoft Defender for Office 365](safe-links-policies-configure.md)
 
 - [Safe Attachments in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
 

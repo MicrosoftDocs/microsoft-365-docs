@@ -98,7 +98,7 @@ For an overview, including a summary of plans, see [Defender for Office 365](./o
 
 Your Global Administrator can configure these protections:
 
-- [Set up Safe Links policies](office-365-security/set-up-safe-links-policies.md)
+- [Set up Safe Links policies](office-365-security/safe-links-policies-configure.md)
 - [Configure global settings for Safe Links](office-365-security/configure-global-settings-for-safe-links.md)
 - [Set up Safe Attachments policies](office-365-security/set-up-safe-attachments-policies.md)
 
