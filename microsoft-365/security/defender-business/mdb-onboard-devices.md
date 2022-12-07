@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 11/01/2022
-ms.reviewer: shlomiakirav
+ms.date: 12/07/2022
+ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
  - SMB
@@ -352,4 +352,4 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 
 - If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
 - If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
-- See [Get started using Defender for Business](mdb-get-started.md).
+- Also consider [Setting up email notifications](mdb-email-notifications.md) for your security team.
