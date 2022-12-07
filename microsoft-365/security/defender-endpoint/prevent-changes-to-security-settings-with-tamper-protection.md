@@ -73,13 +73,12 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 - Suppressing notifications in the Windows Security app
 - Disabling scanning of archives and network files
 
+Tamper protection should be part of a security strategy that includes additional protection, such as [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md) and [Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/).
+
 > [!IMPORTANT]
 > Built-in protection includes turning tamper protection on by default. To learn more about built-in protection, see:
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
-> - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)   
-> 
-> Tamper protection should be part of a security strategy that includes additional protection, such as [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md) and [Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/).
-
+> - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
 
 ### How it works
 
