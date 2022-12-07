@@ -37,6 +37,9 @@ search.appverid: met150
 
 If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can turn tamper protection on (or off) for your organization in the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com). Use Intune when you want to fine-tune tamper protection settings. For example, if you want to enable tamper protection on some devices, but not all, use Intune.
 
+Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md) and [driver block rules with Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules).
+
+
 ## Requirements for managing tamper protection in Intune
 
 - You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access) assigned, such as global admin, security admin, or security operations.
@@ -46,7 +49,6 @@ If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-in
 - Your devices must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version `1.1.15500.X` (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
 - Your Intune and Defender for Endpoint tenants must share the same Microsoft Entra (Azure Active Directory) infrastructure.
 - Your devices must be onboarded to Defender for Endpoint.
-- Tamper protection should be part of a security strategy that includes additional protection, such as [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md) and [Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/).
 
 > [!NOTE]
 > If your devices are not enrolled in Microsoft Defender for Endpoint, tamper protection will show as **Not Applicable** until the onboarding process completes.
