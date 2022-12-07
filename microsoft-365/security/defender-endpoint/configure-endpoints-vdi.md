@@ -62,7 +62,7 @@ In a VDI environment, VDI instances can have short lifespans. VDI devices can ap
 - Multiple entries for each device - one for each VDI instance.
 
 > [!IMPORTANT]
-> If you're deploying non-persistent VDIs through cloning technology, make sure that your internal template VMs are not onboarded to Defender for Endpoint. This recommendation is to avoid cloned VMs from being onboarded with the same senseGuid as your template VMs, which could prevent them from showing up as new entries in the Devices list. 
+> If you're deploying non-persistent VDIs through cloning technology, make sure that your internal template VMs are not onboarded to Defender for Endpoint. This recommendation is to avoid cloned VMs from being onboarded with the same senseGuid as your template VMs, which could prevent VMs from showing up as new entries in the Devices list. 
 
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
