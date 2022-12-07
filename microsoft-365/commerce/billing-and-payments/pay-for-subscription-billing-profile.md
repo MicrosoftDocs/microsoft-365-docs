@@ -24,7 +24,7 @@ ms.custom:
 ms.date: 12/07/2022
 ---
 
-# How to pay for your subscription with a billing profile
+# How to pay for your Microsoft business subscription with a billing profile
 
 When you buy a subscription, you pay for it with a billing profile. The billing profile is linked to a specific payment method and can be a credit or debit card, or an invoice, but not a bank account.
 
@@ -42,7 +42,7 @@ Currently, some credit card transactions, especially transactions exceeding 5,00
 
 [Learn more about the Reserve Bank of India directive for recurring payments](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-As of September 30, 2022, Microsoft and other online merchants no longer store credit card information. Microsoft has removed all stored card details from the admin center. To avoid service interruption, you must add and verify a payment method for all subscriptions.
+As of September 30, 2022, Microsoft and other online merchants no longer store credit card information. Microsoft has removed all stored card details from the admin center. To avoid service interruption, you must add and verify a payment method for all subscriptions and billing profiles.
 
 [Learn about the Reserve Bank of India directive for card storage](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
@@ -73,7 +73,7 @@ Refunds are treated as a regular charge and are refunded to your bank account.
 
 ## Paying by invoice
 
-If you have a billing profile that is set up to be paid by invoice, you can pay for your subscription with a check or EFT. You can also use a credit card to make a one-time payment by using the **Pay now** button on your invoice.
+If you have a billing profile that is set up to be paid by invoice, you can pay for your subscription with a check or EFT. You can also use a credit or debit card to make a one-time payment by using the **Pay now** button on your invoice.
 
 To be eligible to pay by invoice, you must:
 
@@ -106,7 +106,7 @@ If your account is approved for payment by check or wire transfer, the instructi
 
 ## Can I pay my invoice online?
 
-If recurring billing is turned off for your billing profile, you can use a credit card to pay your invoice online. To make a payment, use the **Pay now** button on your invoice in the admin center. To find your invoice, see [View your bill or invoice](view-your-bill-or-invoice.md).
+If recurring billing is turned off for your billing profile, you can use a credit or debit card to pay your invoice online. To make a payment, use the **Pay now** button on your invoice in the admin center. To find your invoice, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ## Can I change from my current payment method to paying by invoice?
 
