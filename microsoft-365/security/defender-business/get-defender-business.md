@@ -1,5 +1,5 @@
 ---
-title: Get Microsoft Defender for Business
+title: Get and provision Microsoft Defender for Business
 description: Find out how to get Microsoft Defender for Business, endpoint protection for small and medium sized businesses.
 search.appverid: MET150
 author: denisebmsft
@@ -19,9 +19,9 @@ ms.collection:
 - tier1
 ---
 
-# Get Microsoft Defender for Business
+# Get and provision Microsoft Defender for Business
 
-Defender for Business is a new endpoint security solution designed especially for small and medium-sized businesses (up to 300 employees). This article describes how to get Defender for Business.
+Defender for Business is a new endpoint security solution designed especially for small and medium-sized businesses (up to 300 employees). This article describes how to get and provision Defender for Business.
 
 If you don't already have Microsoft Defender for Business, you can choose from several options:
 
@@ -66,6 +66,10 @@ Microsoft 365 Business Premium includes Defender for Business and Microsoft Defe
 2. Choose to try or buy your subscription. See [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
 
 3. After you've signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](../../business-premium/m365bp-setup.md).
+
+4. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), where you'll view and manage security settings and devices for your organization.
+
+5. In the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. 
 
 ## Work with a Microsoft partner
 
