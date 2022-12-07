@@ -55,7 +55,7 @@ The high-level differences between anti-phishing policies in EOP and anti-phishi
 
 To configure anti-phishing policies, see the following articles:
 
-- [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
+- [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
 - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
 
 The rest of this article describes the settings that are available in anti-phishing policies in EOP and Defender for Office 365.
@@ -116,9 +116,9 @@ The following spoof settings are available in anti-phishing policies in EOP and 
 - **Actions**: For messages from blocked spoofed senders (automatically blocked by spoof intelligence or manually blocked in the Tenant Allow/Block list), you can also specify the action to take on the messages:
   - **Move messages to the recipients' Junk Email folders**: This is the default value. The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
-    - [Quarantine in Microsoft 365](quarantine-email-messages.md)
+    - [Quarantine in Microsoft 365](quarantine-about.md)
     - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Find and release quarantined messages as a user in Microsoft 365](quarantine-end-user.md)
 
     If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 
@@ -162,7 +162,7 @@ The first contact safety tip also replaces the need to create mail flow rules (a
 This section describes the policy settings that are only available in anti-phishing policies in Defender for Office 365.
 
 > [!NOTE]
-> The default anti-phishing policy in Defender for Office 365 provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) and mailbox intelligence for all recipients. However, the other available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) features and [advanced settings](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are not configured or enabled in the default policy. To enable all protection features, modify the default anti-phishing policy or create additional anti-phishing policies.
+> The default anti-phishing policy in Defender for Office 365 provides [spoof protection](anti-phishing-policies-about.md#spoof-settings) and mailbox intelligence for all recipients. However, the other available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) features and [advanced settings](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are not configured or enabled in the default policy. To enable all protection features, modify the default anti-phishing policy or create additional anti-phishing policies.
 
 ### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 
@@ -205,9 +205,9 @@ The following impersonation settings are only available in anti-phishing policie
   - **Redirect message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
   - **Move messages to the recipients' Junk Email folders**: The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
-    - [Quarantine in Microsoft 365](quarantine-email-messages.md)
+    - [Quarantine in Microsoft 365](quarantine-about.md)
     - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
-    - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Find and release quarantined messages as a user in Microsoft 365](quarantine-end-user.md)
 
     If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by user impersonation or domain impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
 

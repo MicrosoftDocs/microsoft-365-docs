@@ -10,8 +10,8 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/26/2022
-ms.reviewer: shlomiakirav
+ms.date: 12/02/2022
+ms.reviewer: efratka
 ms.collection: 
 - SMB
 - m365-initiative-defender-business
@@ -79,7 +79,6 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 (<a id="fn3">3</a>) Endpoint detection and response (EDR) capabilities in Defender for Business include behavior-based detection and the following manual response actions: 
 - Run antivirus scan
 - Isolate device
-- Stop and quarantine a file
 - Add an indicator to block or allow a file
 
 (<a id="fn4">4</a>) In Defender for Business, automated investigation and response is turned on by default, tenant wide. Turning off automated investigation and response affects real-time protection. See [Review settings for advanced features](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
