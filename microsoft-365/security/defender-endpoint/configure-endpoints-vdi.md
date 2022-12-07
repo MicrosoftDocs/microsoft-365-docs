@@ -18,7 +18,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 04/15/2022
+ms.date: 12/07/2022
 ms.subservice: mde
 ---
 
@@ -52,15 +52,17 @@ There might be associated challenges when onboarding VDI instances. The followin
 - Instant early onboarding of a short-lived session, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-In a VDI environment, VDI instances can have short lifespans. VDI devices can appear in Defender for Endpoint portal as either:
+In a VDI environment, VDI instances can have short lifespans. VDI devices can appear in the Microsoft 365 Defender portal as either single entries for each VDI instance or multiple entries for each device. 
 
-
-- Single portal entry for each VDI instance. If the VDI instance was already onboarded to Microsoft Defender for Endpoint and at some point deleted then  recreated with the same host name, a new object representing this VDI instance will NOT be created in the portal. 
+- Single entry for each VDI instance. If the VDI instance was already onboarded to Microsoft Defender for Endpoint, and at some point deleted, and then recreated with the same host name, a new object representing this VDI instance will NOT be created in the portal. 
 
   > [!NOTE]
   > In this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
 
 - Multiple entries for each device - one for each VDI instance.
+
+> [!IMPORTANT]
+> If you're deploying non-persistent VDIs through a cloning technology, make sure that your internal template VMs and replica VMs are not onboarded to Defender for Endpoint. This recommendation is to avoid cloned VMs from being onboarded with the same senseGuid, which can prevent a new entry from showing up in the Devices list. 
 
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
