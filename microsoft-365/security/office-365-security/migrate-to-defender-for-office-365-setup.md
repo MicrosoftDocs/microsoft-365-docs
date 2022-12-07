@@ -135,7 +135,7 @@ By creating production policies, even if they aren't applied to all users, you c
 
 ### Create pilot Safe Attachments policies
 
-[Safe Attachments](safe-attachments.md) is the easiest Defender for Office 365 feature to enable and test before you switch your MX record. Safe Attachments has the following benefits:
+[Safe Attachments](safe-attachments-about.md) is the easiest Defender for Office 365 feature to enable and test before you switch your MX record. Safe Attachments has the following benefits:
 
 - Minimal configuration.
 - Extremely low chance of false positives.

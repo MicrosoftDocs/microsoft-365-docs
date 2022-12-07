@@ -104,7 +104,7 @@ Your Global Administrator can configure these protections:
 
 You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure Defender for Office 365 for these workloads:
 
-- [Microsoft Defender for Endpoint for SharePoint, OneDrive, and Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
+- [Microsoft Defender for Endpoint for SharePoint, OneDrive, and Microsoft Teams](office-365-security/safe-attachments-for-spo-odfb-teams-about.md)
 
 ## 4: Configure Microsoft Defender for Identity
 

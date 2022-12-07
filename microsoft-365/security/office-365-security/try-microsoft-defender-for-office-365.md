@@ -56,7 +56,7 @@ Defender for Office 365 includes the features of Exchange Online Protection (EOP
 The protection features of EOP and Defender for Office 365 are implemented using policies. **Policies that are exclusive to Defender for Office 365 are created for you as needed**:
 
 - [Impersonation protection in anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-- [Safe Attachments for email messages](safe-attachments.md)
+- [Safe Attachments for email messages](safe-attachments-about.md)
 - [Safe Links for email messages and Microsoft Teams](safe-links.md)
   - Safe Links detonates URLs during mail flow. To prevent specific URLs from being detonated, use allow entries for URLs in the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
   - Safe Links doesn't wrap URL links in email message bodies.
@@ -319,7 +319,7 @@ In **blocking mode**, the following reports show detections by Defender for Offi
 
   - [View data by Content \> Malware](view-email-security-reports.md#view-data-by-content--malware)
 
-    Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) appear in **MDO detonation**.
+    Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-safe-attachments-for-spo-odfb-teams-about.md) appear in **MDO detonation**.
 
   - The [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
 
