@@ -82,7 +82,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 
     1. Click **Download package** and save the .zip file.
 
-2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/master image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
+2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/primary image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
     1. If you are implementing multiple entries for each device - one for each session, copy WindowsDefenderATPOnboardingScript.cmd.
     2. If you're implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
 
@@ -146,7 +146,7 @@ With the ability to easily deploy updates to VMs running in VDIs, we've shortene
 For more information, follow the guidance in [Deployment guide for Microsoft Defender Antivirus in a Virtual Desktop Infrastructure (VDI) environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
 
    > [!NOTE]
-   > If you have onboarded the master image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
+   > If you have onboarded the primary image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
    > 1. Ensure the sensor is stopped by running the command below in a CMD window:
    >  ```console
    >  sc query sense
