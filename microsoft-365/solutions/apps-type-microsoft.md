@@ -21,6 +21,19 @@ There are specific Microsoft app types that allow you to install and manage Micr
 > [!NOTE]
 > For licensing and plan information related to device and app management, see [Microsoft 365 enterprise plans](/microsoft-365/enterprise).
 
+## Microsoft apps that support Intune
+
+You and your workforce may use Microsoft Office, OneDrive, Excel, and Outlook on a regular basis, which are all supported by Microsoft Intune. However, there are dozens of other Microsoft apps for Android and iOS/iPadOS that support a variety of app capabilities supported by Intune. These capabilities include the following:
+- Core app protection policy settings
+- App configuration
+- Org allowed accounts (iOS, Android)
+- Sync policy managed app data with native apps (iOS, Android)
+- Org data notifications (iOS, Android)
+- Open data into Org documents (iOS, Android)
+- Save copies of org data (iOS, Android)
+
+For complete list of supported Microsoft apps, see [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps).
+
 ## Specific Microsoft apps
 
 | App type | Description |

@@ -1,11 +1,11 @@
 ---
-title: "Purchase store apps for a managed environment"
+title: "Add standard store apps to Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Purchase store apps for a managed environment.
+description: Add standard store apps to Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,24 +14,25 @@ ms.custom:
 keywords:
 ---
 
-# Purchase store apps for a managed environment
+# Add store apps to Intune
 
-Before you can distribute managed apps to your workforce, you must add them to Intune. Many of the apps that you use with Microsoft Intune can be added to Intune and deployed to user's devices for free. However, some of those apps that you can deploy to your workforce may require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook, which can be purchased as part of your Intune license) requires both a license and an account to use the app.
+Many of the standard store apps displayed within the Intune console are freely available for you to add and deploy to members of your organization. You also have options to purchase store apps for each device platform.
+
+The following table provides the different categories avilable for store apps:
+
+| Store   app category | Description |
+|---|---|
+| Free   store apps | You can freely add these apps to   Intune and deploy them to the members of your organization. These apps do not   require any additional cost to use.  |
+| Purchased   apps | You must purchase licenses for   these apps before adding to Intune. Each device platform (Windows, iOS,   Android) offers a standard method to purchase licenses for these apps. Intune   provides methods to manage the app license for each end users. |
+| Apps   requiring an account, subscription, or license from the app developer | You can freely add and deploy   the app from Intune, but the app requires an account, subscription, or   license from the app developer to use. |
+| Apps   included with your Intune license | Based on your Microsoft Intune   license, you may already have Microsoft app licenses available to add and   deploy. |
 
 > [!NOTE]
-> Each device platform has a method to purchase apps for your organization in bulk:
-> - Apple provides the Apple Business Manager
-> - Google provides Managed Google Play
-> - Microsoft provide the Microsoft Store for Business
+> In addition to purchasing app licenses, you can create a Intune policies that allow end users to add personal accounts to their devices and purchase unmanaged apps.
 
-## Find apps to purchase
+## Add available apps based on platform
 
-The store apps that you add to Intune are freely available for you to add and deploy. When adding certain apps, you either have an existing license (such as M365 apps), or you must obtain a license for your end-user to use the app. Finding apps to add to Intune is part of the [Add apps](apps-add-apps.md) process.
-
-## Types of app purchases
-
-
-## Purchase apps based on intent
+Intune displays apps that are either freely available, or you own a licenses for the apps. 
 
 
 
