@@ -55,7 +55,7 @@ EOP (that is, Microsoft 365 organizations without Microsoft Defender for Office 
 
 - **Allow or block spoofed senders in the Tenant Allow/Block List**: When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoof senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](manage-tenant-allow-block-list.md).
 
-- **Implicit email authentication**: EOP enhances standard email authentication checks for inbound email ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md) with sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques to help identify forged senders. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
+- **Implicit email authentication**: EOP enhances standard email authentication checks for inbound email ([SPF](email-authentication-spf-configure.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md) with sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques to help identify forged senders. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
 
 ## Additional anti-phishing protection in Microsoft Defender for Office 365
 
@@ -63,7 +63,7 @@ Microsoft Defender for Office 365 contains additional and more advanced anti-phi
 
 - **Anti-phishing policies in Microsoft Defender for Office 365**: Configure impersonation protection settings for specific message senders and sender domains, mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md). For more information about the differences between anti-phishing policies in EOP and anti-phishing policies in Defender for Office 365, see [Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md).
 - **Campaign Views**: Machine learning and other heuristics identify and analyze messages that are involved in coordinated phishing attacks against the entire service and your organization. For more information, see [Campaign Views in Microsoft Defender for Office 365](campaigns.md).
-- **Attack simulation training**: Admins can create fake phishing messages and send them to internal users as an education tool. For more information, see [Simulate a phishing attack](attack-simulation-training.md).
+- **Attack simulation training**: Admins can create fake phishing messages and send them to internal users as an education tool. For more information, see [Simulate a phishing attack](attack-simulation-training-simulations.md).
 
 ## Other anti-phishing resources
 

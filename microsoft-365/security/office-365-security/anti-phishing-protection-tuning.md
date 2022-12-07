@@ -74,7 +74,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
   For configuration instructions, see:
 
-  - [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
 
   - [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md)
 

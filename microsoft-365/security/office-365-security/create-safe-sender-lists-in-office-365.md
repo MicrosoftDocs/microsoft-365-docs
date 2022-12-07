@@ -71,7 +71,7 @@ The following example assumes you need email from contoso.com to skip spam filte
 
    - **Mail flow rule condition**: **A message header** \> **includes any of these words** \> **Header name**: `Authentication-Results` \> **Header value**: `dmarc=pass` or `dmarc=bestguesspass`.
 
-     This condition checks the email authentication status of the sending email domain to ensure that the sending domain is not being spoofed. For more information about email authentication, see [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md).
+     This condition checks the email authentication status of the sending email domain to ensure that the sending domain is not being spoofed. For more information about email authentication, see [SPF](email-authentication-spf-configure.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md).
 
    - **IP Allow List**: Specify the source IP address or address range in the connection filter policy. For instructions, see [Configure connection filtering](connection-filter-policies-configure.md).
 
