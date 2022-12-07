@@ -67,7 +67,7 @@ If you don't like the default permissions in the preset permission groups, or if
 You create and assign quarantine policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with Exchange Online mailboxes; standalone EOP PowerShell in EOP organizations without Exchange Online mailboxes).
 
 > [!NOTE]
-> How long quarantined messages are held in quarantine before they expire is controlled by the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) in anti-spam policies. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+> How long quarantined messages are held in quarantine before they expire is controlled by the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) in anti-spam policies. For more information, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 >
 > If you change the quarantine policy that's assigned to a supported protection feature, the change affects messages that are quarantined _after_ you make the change. Messages that were previously quarantined by that protection feature are not affected by the settings of the new quarantine policy assignment.
 
@@ -76,7 +76,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 <sup>\*</sup> The quarantine policy named NotificationEnabledPolicy is not present in all environments. You'll have the NotificationEnabledPolicy quarantine policy if your organization meets both of the following requirements:
 
 - Your organization existed before the quarantine policy feature was turned on (late July/early August 2021).
-- You had one or more [anti-spam policies](configure-your-spam-filter-policies.md) (the default anti-spam policy or custom anti-spam policies) where the **Enable end-user spam notifications** setting was turned on.
+- You had one or more [anti-spam policies](anti-spam-policies-configure.md) (the default anti-spam policy or custom anti-spam policies) where the **Enable end-user spam notifications** setting was turned on.
 
 As described earlier, quarantine notifications in quarantine policies replace end-user spam notifications that you used to turn on or turn off in anti-spam policies. The built-in quarantine policy named DefaultFullAccessPolicy duplicates the historical _permissions_ for quarantined messages, but _quarantine notifications_ are not turned on in the quarantine policy. And, because you can't modify the built-in policy, you can't turn on quarantine notifications in DefaultFullAccessPolicy.
 
@@ -198,7 +198,7 @@ In _supported_ protection features that quarantine email messages, you can assig
 
 |Feature|Quarantine policies supported?|Default quarantine policies used|
 |---|:---:|---|
-|[Anti-spam policies](configure-your-spam-filter-policies.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**High confidence phishing** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>AdminOnlyAccessPolicy (No access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li></ul>|
+|[Anti-spam policies](anti-spam-policies-configure.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**High confidence phishing** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>AdminOnlyAccessPolicy (No access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li></ul>|
 |Anti-phishing policies: <ul><li>[Spoof intelligence protection](anti-phishing-policies-about.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection in Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**If message is detected as an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If message is detected as an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**If mailbox intelligence detects and impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Yes|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>Impersonation protection:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li></ul></li></ul>|
 |[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|Yes|AdminOnlyAccessPolicy (No access)|
 |[Safe Attachments protection](safe-attachments.md): <ul><li>Email messages with attachments that are quarantined as malware by Safe Attachments policies (_Enable_ and _Action_)</li><li>Files quarantined as malware by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Yes</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (No access)</li><li>n/a</li></ul>|
@@ -236,7 +236,7 @@ The default quarantine policies, preset permission groups, and permissions are d
 
    :::image type="content" source="../../media/quarantine-tags-in-anti-spam-policies.png" alt-text="The Quarantine policy selections in an anti-spam policy" lightbox="../../media/quarantine-tags-in-anti-spam-policies.png":::
 
-Full instructions for creating and modifying anti-spam policies are described in [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+Full instructions for creating and modifying anti-spam policies are described in [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
 #### Anti-spam policies in PowerShell
 
@@ -262,7 +262,7 @@ If you'd rather use PowerShell to assign quarantine policies in anti-spam polici
 
   You need to replace a default quarantine policy with a custom quarantine policy only if you want to change the default end-user capabilities on quarantined messages for that particular spam filtering verdict.
 
-- A new anti-spam policy in PowerShell requires a spam filter policy (settings) using the **New-HostedContentFilterPolicy** cmdlet and an exclusive spam filter rule (recipient filters) using the **New-HostedContentFilterRule** cmdlet. For instructions, see [Use PowerShell to create anti-spam policies](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies).
+- A new anti-spam policy in PowerShell requires a spam filter policy (settings) using the **New-HostedContentFilterPolicy** cmdlet and an exclusive spam filter rule (recipient filters) using the **New-HostedContentFilterRule** cmdlet. For instructions, see [Use PowerShell to create anti-spam policies](anti-spam-policies-configure.md#use-powershell-to-create-anti-spam-policies).
 
 This example creates a new spam filter policy named Research Department with the following settings:
 
@@ -319,7 +319,7 @@ Spoof intelligence is available in EOP and Defender for Office 365. User imperso
 Full instructions for creating and modifying anti-phishing policies are available in the following topics:
 
 - [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
-- [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
 
 #### Anti-phishing policies in PowerShell
 
@@ -347,7 +347,7 @@ If you'd rather use PowerShell to assign quarantine policies in anti-phishing po
 
 - A new anti-phishing policy in PowerShell requires an anti-phish policy (settings) using the **New-AntiPhishPolicy** cmdlet and an exclusive anti-phish rule (recipient filters) using the **New-AntiPhishRule** cmdlet. For instructions, see the following topics:
   - [Use PowerShell to configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
-  - [Use Exchange Online PowerShell to configure anti-phishing policies](configure-mdo-anti-phishing-policies.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
+  - [Use Exchange Online PowerShell to configure anti-phishing policies](anti-phishing-policies-mdo-configure.md#use-exchange-online-powershell-to-configure-anti-phishing-policies)
 
 This example creates a new anti-phish policy named Research Department with the following settings:
 

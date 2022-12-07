@@ -165,7 +165,7 @@
            - name: Configure anti-phishing policies in EOP
              href: anti-phishing-policies-eop-configure.md
            - name: Configure anti-phishing policies in Defender for Office 365
-             href: configure-mdo-anti-phishing-policies.md
+             href: anti-phishing-policies-mdo-configure.md
          - name: Anti-spoofing protection
            href: anti-phishing-protection-spoofing-about.md
          - name: Anti-spoofing protection FAQ
