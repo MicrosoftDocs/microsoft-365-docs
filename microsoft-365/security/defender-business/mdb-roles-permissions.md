@@ -70,5 +70,4 @@ If you haven't already added users to your subscription, see [Add users and assi
 
 ## Next steps
 
-Go to:
-
+- See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md). 
