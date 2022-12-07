@@ -160,7 +160,7 @@ Once you've gotten started with an SPF fallback policy of `?all`, you can gradua
 
 ### Configure permitted senders of unauthenticated email
 
-You can also use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
+You can also use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
 
 For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is one of the following values:
 
