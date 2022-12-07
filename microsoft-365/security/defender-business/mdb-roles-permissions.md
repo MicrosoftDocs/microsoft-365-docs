@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
-ms.reviewer: shlomiakirav
+ms.date: 12/07/2022
+ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -64,10 +64,6 @@ The following table describes the three roles that can be assigned in Defender f
    - To add a role, choose **+ Add assignments**.
    - To remove a role, choose **X Remove assignments**. 
 
-## Need to add users?
-
-If you haven't already added users to your subscription, see [Add users and assign licenses at the same time](mdb-add-users.md).
-
 ## Next steps
 
-- See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md). 
+- See [Step 4: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md). 
