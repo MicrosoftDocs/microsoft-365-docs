@@ -48,7 +48,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
 - [Attack simulation](attack-simulation-training.md#target-users)
 - [Campaign Views](campaigns.md)
-- [Admin and user submissions](admin-submission.md)
+- [Admin submissions and user reported messages](submissions-admin.md)
 - [Quarantine](quarantine.md)
 - For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
 
