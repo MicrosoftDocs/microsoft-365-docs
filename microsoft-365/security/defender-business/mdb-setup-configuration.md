@@ -41,7 +41,7 @@ The following diagram depicts the overall setup and configuration process for De
 | Step  | Article | Description  |
 |---------|---------|--------|
 | 1 | [Get Defender for Business](get-defender-business.md) | Start a trial or paid subscription today. See [Get Microsoft Defender for Business](get-defender-business.md). |
-| 2 | Ass users and assign licenses |  |
+| 2 | [Add users and assign licenses](mdb-add-users.md) | Assign a license for Defender for Business (or Microsoft 365 Business Premium) to each member of your organization. See [Add users and assign licenses in Microsoft Defender for Business](mdb-add-users.md). |
 | 3 | [Assign security roles](mdb-roles-permissions.md)     | People on your security team need permissions to perform tasks, such as reviewing detected threats & remediation actions, viewing & editing policies, onboarding devices, and using reports. You can grant these permissions through certain roles. See [Assign roles and permissions](mdb-roles-permissions.md).        |
 | 4 | [Onboard devices](mdb-onboard-devices.md)     | You can choose from several options to onboard your company's devices, such as using a downloadable script or enrolling devices in Microsoft Intune. See [Onboard devices to Defender for Business](mdb-onboard-devices.md).         |
 | 5 | [Review and edit your security settings and policies](mdb-configure-security-settings.md) | You can choose from several options to configure your security settings and policies, such as the [simplified configuration process](mdb-simplified-configuration.md) in Defender for Business or Microsoft Intune. See [Configure your security settings and policies](mdb-configure-security-settings.md). |

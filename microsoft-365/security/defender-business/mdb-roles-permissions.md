@@ -1,5 +1,5 @@
 ---
-title: Assign roles and permissions in Microsoft Defender for Business
+title: Assign security roles and permissions in Microsoft Defender for Business
 description: Assign roles to your cybersecurity team. Learn about these roles and permissions in Defender for Business.
 search.appverid: MET150
 author: denisebmsft
@@ -21,7 +21,7 @@ ms.collection:
 - tier1
 ---
 
-# Assign roles and permissions in Microsoft Defender for Business
+# Assign security roles and permissions in Microsoft Defender for Business
 
 To perform tasks in the Microsoft 365 Defender portal, such as configuring Defender for Business, viewing reports, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
