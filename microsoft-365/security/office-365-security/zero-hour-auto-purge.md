@@ -69,7 +69,7 @@ For **read or unread messages** that are identified as phishing after delivery, 
 
 By default, ZAP for phishing is enabled in anti-spam policies, and the default action for the **Phishing email** filtering verdict is **Quarantine message**, which means ZAP for phishing quarantines the message by default.
 
-For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](anti-spam-policies-configure.md).
 
 ### Zero-hour auto purge (ZAP) for high confidence phishing
 
@@ -89,7 +89,7 @@ For **unread messages** that are identified as spam after delivery, the ZAP outc
 
 By default, spam ZAP is enabled in anti-spam policies, and the default action for the **Spam** filtering verdict is **Move message to Junk Email folder**, which means spam ZAP moves **unread** messages to the Junk Email folder by default.
 
-For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+For more information about configuring spam filtering verdicts, see [Configure anti-spam policies in Microsoft 365](anti-spam-policies-configure.md).
 
 ### Zero-hour auto purge (ZAP) considerations for Microsoft Defender for Office 365
 

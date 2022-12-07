@@ -179,7 +179,7 @@ For more information about the recommended settings for anti-spam, see [EOP anti
 
 4. When you're finished, click **Close**.
 
-For detailed instructions for configuring anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+For detailed instructions for configuring anti-spam policies, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
