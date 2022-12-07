@@ -230,7 +230,7 @@ The difference between these two elements isn't obvious when you manage the user
 
   As soon as you visit <https://security.microsoft.com/securitysettings/userSubmission> and even before you configure any settings, the report submission policy is created with the default values and is visible in PowerShell.
 
-  As after you configure and save the settings at <https://security.microsoft.com/securitysettings/userSubmission> to specify a reporting mailbox (report messages using Microsoft or third-party reporting tools), the report submission rule named DefaultReportSubmissionRule is automatically created. Note that it takes several seconds before the rule is visible in PowerShell.
+  As after you configure and save the settings at <https://security.microsoft.com/securitysettings/userSubmission> to specify a reporting mailbox (used by Microsoft or third-party reporting tools), the report submission rule named DefaultReportSubmissionRule is automatically created. Note that it takes several seconds before the rule is visible in PowerShell.
 
 - You can delete the report submission rule and recreate it with a different name, but the rule is always associated with the report submission policy whose name you can't change. So, we recommend that you name the rule DefaultReportSubmissionRule whenever you create or recreate the rule.
 
