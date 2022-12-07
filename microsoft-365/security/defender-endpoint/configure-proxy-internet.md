@@ -291,3 +291,4 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 - [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Onboard Windows devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+- [Onboard devices without Internet access to Microsoft Defender for Endpoint](onboard-offline-machines.md)
