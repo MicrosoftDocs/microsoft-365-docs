@@ -210,6 +210,9 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
        We recommend that you turn this setting on by selecting the check box. To turn this setting off, clear the check box.
 
+       > [!NOTE]
+       > Mailbox intelligence protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt by mailbox intelligence.
+
    - **Spoof**: In this section, use the **Enable spoof intelligence** check box to turn spoof intelligence on or off. The default value is on (selected), and we recommend that you leave it on. You specify the action to take on messages from blocked spoofed senders in the **If message is detected as spoof** setting on the next page.
 
      To turn off spoof intelligence, clear the check box.
