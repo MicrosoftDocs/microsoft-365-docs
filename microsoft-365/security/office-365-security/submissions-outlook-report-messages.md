@@ -37,7 +37,7 @@ Microsoft provides the following tools for users to report good and bad messages
 For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 > [!NOTE]
-> Admins in Microsoft 365 organizations with Exchange Online mailboxes use the **Submissions** page in the Microsoft 365 Defender portal to submit messages to Microsoft. For instructions, see [Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Admins in Microsoft 365 organizations with Exchange Online mailboxes use the **Submissions** page in the Microsoft 365 Defender portal to submit messages to Microsoft. For instructions, see [Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft](submissions-admin.md).
 >
 > Admins can view reported messages on the **Submissions** page at <https://security.microsoft.com/reportsubmission> **only** if both of the following settings are configured on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>:
 >
@@ -152,7 +152,7 @@ You can report phishing messages from any email folder.
 
 To review messages that users have reported to Microsoft, admins have these options:
 
-- Use the **User reported** tab on the **Submissions** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/reportsubmission>. For more information, see [View user reported messages to Microsoft](admin-submission.md#view-user-reported-messages-to-microsoft).
+- Use the **User reported** tab on the **Submissions** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/reportsubmission>. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
 
 - Create a mail flow rule (also known as a transport rule) to send copies of reported messages to a recipient for review. For instructions, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
 

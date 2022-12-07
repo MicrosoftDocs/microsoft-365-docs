@@ -53,7 +53,7 @@ The anti-spam settings in EOP are made of the following technologies:
 
 - **Connection filtering**: Identifies good and bad email source servers early in the inbound email connection via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). You configure these settings in the connection filter policy. Learn more at [Configure connection filtering](connection-filter-policies-configure.md).
 
-- **Spam filtering (content filtering)**: EOP uses the spam filtering verdicts **Spam**, **High confidence spam**, **Bulk email**, **Phishing email** and **High confidence phishing email** to classify messages. You can configure the actions to take based on these verdicts, and you can configure what users are allowed to do to quarantined messages and whether user receive quarantine notifications by using [quarantine policies](quarantine-policies.md). For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+- **Spam filtering (content filtering)**: EOP uses the spam filtering verdicts **Spam**, **High confidence spam**, **Bulk email**, **Phishing email** and **High confidence phishing email** to classify messages. You can configure the actions to take based on these verdicts, and you can configure what users are allowed to do to quarantined messages and whether user receive quarantine notifications by using [quarantine policies](quarantine-policies.md). For more information, see [Configure anti-spam policies in Microsoft 365](anti-spam-policies-configure.md).
 
   > [!NOTE]
   > By default, spam filtering is configured to send messages that were marked as spam to the recipient's Junk Email folder. However, in hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure two mail flow rules (also known as transport rules) in your on-premises Exchange organization to recognize the EOP spam headers that are added to messages. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
@@ -84,7 +84,7 @@ Here are some best practices that apply to either scenario:
 
   - **DMARC**: Domain-based Message Authentication, Reporting, and Conformance helps destination email systems determine what to do with messages that fail SPF or DKIM checks and provides another level of trust for your email partners. For more information, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
 
-- **Verify your bulk email settings**: The bulk complaint level (BCL) threshold that you configure in anti-spam policies determines whether bulk email (also known as _gray mail_) is marked as spam. The PowerShell-only setting _MarkAsSpamBulkMail_ that's on by default also contributes to the results. For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+- **Verify your bulk email settings**: The bulk complaint level (BCL) threshold that you configure in anti-spam policies determines whether bulk email (also known as _gray mail_) is marked as spam. The PowerShell-only setting _MarkAsSpamBulkMail_ that's on by default also contributes to the results. For more information, see [Configure anti-spam policies in Microsoft 365](anti-spam-policies-configure.md).
 
 ### Prevent the delivery of spam to the Inbox
 

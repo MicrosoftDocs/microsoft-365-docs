@@ -84,9 +84,9 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the Submissions page in Microsoft 365 Defender.
 
-- [View converted admin submission from user reported messages](admin-submission.md#convert-user-reported-messages-in-the-reporting-mailbox-into-admin-submissions): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
+- [View converted admin submission from user reported messages](submissions-admin.md#convert-user-reported-messages-in-the-reporting-mailbox-into-admin-submissions): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
 
-- [View associated alert for user and admin submissions](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): View the corresponding alert for each user reported phish message and admin email submission.
+- [View associated alert for user and admin submissions](submissions-admin.md#view-associated-alert-for-user-and-admin-email-submissions): View the corresponding alert for each user reported phish message and admin email submission.
 
 - [Configurable impersonation protection custom users and domains and increased scope within Preset policies](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
   - (Choose to) Apply Preset Strict/Standard policies to entire organization and avoid the hassle of selecting specific recipient users, groups, or domains, thereby securing all recipient users of your organization.
@@ -150,9 +150,9 @@ For more information on what's new with other Microsoft Defender security produc
 ## June 2021
 
 - New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or don't often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
-  - [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-  - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
-  - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+  - [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip)
+  - [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
+  - [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
 
 ## April/May 2021
 
