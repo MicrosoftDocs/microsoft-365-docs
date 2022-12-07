@@ -152,9 +152,6 @@ Once the identity mapping file has been prepared, the SharePoint Administrator o
 Add-SPOTenantIdentityMap –IdentityMapPath <identitymap.csv>  
 
 ```
-
-
-
 >[!Important]
 >If you make or need to make any changes to your Identity Map during the lifecycle of the migration you must run the *Add-SPOTenantIdentityMap –IdentityMapPath <identitymap.csv>*  command **every time** a change is made to ensure those changes are applied to the migration.
 
@@ -182,7 +179,6 @@ Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenan
 Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL https://m365x12395529-my.sharepoint.com
 ```
 
-</br></br>
 - If the tenant status shows as **Compatible** or **Warning**, you can then proceed with the next step of starting cross-tenant migrations.
 
 - If the tenant status shows as **Incompatible**, your tenants will need to be patched/updated to ensure compatibility.
