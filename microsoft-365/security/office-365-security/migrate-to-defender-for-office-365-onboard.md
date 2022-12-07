@@ -123,7 +123,7 @@ When you're ready, do the following steps to allow mailbox intelligence to act o
 
 - In the anti-phishing policy with the Strict protection settings, change the value of **If mailbox intelligence detects and impersonated user** from to **Quarantine the message**.
 
-To modify the policies, see [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+To modify the policies, see [Configure anti-phishing policies in Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 After you've observed the results and made any adjustments, proceed to the next section to quarantine messages detected by user impersonation.
 
@@ -133,7 +133,7 @@ In both of your anti-phishing policies based on Standard and Strict settings, ch
 
 Check the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) to see what's being blocked as user impersonation attempts.
 
-To modify the policies, see [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+To modify the policies, see [Configure anti-phishing policies in Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 After you've observed the results and made any adjustments, proceed to the next section to quarantine messages detected by domain impersonation.
 
@@ -143,7 +143,7 @@ In both of your anti-phishing policies based on Standard and Strict settings, ch
 
 Check the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) to see what's being blocked as domain impersonation attempts.
 
-To modify the policies, see [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+To modify the policies, see [Configure anti-phishing policies in Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 Observe the results and make any adjustments as necessary.
 
