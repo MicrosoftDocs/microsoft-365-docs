@@ -351,5 +351,5 @@ To view the list of devices that are onboarded to Defender for Business, go to t
 ## Next steps
 
 - If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
+- If you're done onboarding devices, proceed to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
 - Also consider [Setting up email notifications](mdb-email-notifications.md) for your security team.
