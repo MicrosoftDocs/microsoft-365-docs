@@ -109,7 +109,7 @@ Provides two 'action' buttons:
 - View detections - opens the **Attack surface reduction rules** > main **Detections** tab
 - Add exclusions - Opens the **Attack surface reduction rules** > main **Exclusions** tab
 
-:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Shows the ASR rules report summary detections card." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png":::
+:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Shows the ASR rules report summary detections card." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png"::: 
 
 Clicking on the **ASR rules detections** link at the top of the card also opens the main [Attack surface reduction rules Detections tab](#attack-surface-reduction-rules-main-detections-tab).
 
@@ -163,8 +163,6 @@ While the ASR rules report summary cards are useful for getting quick summary of
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search.png" alt-text="Shows the ASR rules report search feature." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search.png":::
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Shows the ASR rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
-
 ### Filtering
 
 Filtering provides a way for you to specify what results are returned:
@@ -172,7 +170,13 @@ Filtering provides a way for you to specify what results are returned:
 - **Date**  enables you to specify a date range for data results.
 - **Filters**
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-filtering.png" alt-text="Shows the ASR rules report filtering feature" lightbox="images/attack-surface-reduction-rules-report-main-detections-filtering.png":::
+> [!NOTE]
+> When filtering by rule, the number of individual _detected_ items listed in the lower half of the report is currently limited to 200 rules. You can use **Export** to save the full list of detections to Excel.
+
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Shows the ASR rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="images/asr-defender365-filter.png" alt-text="The Attack surface reduction rules detections filter on rules" lightbox="images/asr-defender365-filter.png":::
 
 ### Attack surface reduction rules main detections tab
 
