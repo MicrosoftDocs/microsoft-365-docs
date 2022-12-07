@@ -9738,7 +9738,7 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/microsoft-threat-experts.md",
       "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
    ]
   }
