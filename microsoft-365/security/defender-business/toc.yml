@@ -5,14 +5,14 @@
       items:
       - name: What is Microsoft Defender for Business?
         href: mdb-overview.md
-      - name: What's new in Defender for Business?
-        href: ../../business-premium/m365bp-mdb-whats-new.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
-      - name: Simplified configuration
-        href: mdb-simplified-configuration.md
       - name: Trial user guide - Defender for Business
         href: trial-playbook-defender-business.md
+      - name: Simplified configuration
+        href: mdb-simplified-configuration.md
       - name: Compare plans for small and medium-sized businesses
         href: compare-mdb-m365-plans.md
+      - name: What's new in Defender for Business?
+        href: ../../business-premium/m365bp-mdb-whats-new.md?toc=/microsoft-365/security/defender-business/toc.json&bc=/microsoft-365/security/defender-business/breadcrumb/toc.json
       - name: Preview features
         href: mdb-preview.md
       - name: Resources for partners
