@@ -54,6 +54,9 @@ When you create a custom model, you'll select the training method associated wit
 |---------|---------|---------|
 | ![Tile for teaching method.](../media/content-understanding/teaching-method-tile-2.png) | ![Tile for freeform seletion method.](../media/content-understanding/freeform-selection-method-tile-2.png) | ![Tile for layout method.](../media/content-understanding/layout-method-tile-2.png) |
 
+> [!NOTE]
+> To make the **Freeform selection method** and the **Layout method** options available to users, they first must be configured in the Microsoft 365 admin center.
+
 ### Unstructured document processing
 
 Use the unstructured document processing model to automatically classify documents and extract information from them. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
