@@ -87,6 +87,11 @@ When you receive your acceptance email, here's how to activate your trial subscr
    | You're setting up a Microsoft 365 subscription for the first time. | Select **Go to guided setup** and complete the following steps:<ol><li>Either install your Office apps now, or choose **Continue** to skip this step. (You can install your Office apps later.)</li><li>If your company has a domain, you can add it now (this option is recommended). Alternately, you could choose to use your default `.onmicrosoft.com` domain for now.</li><li>Add users and assign licenses. Each user you list will be assigned a license automatically. See [Add users and assign licenses at the same time](mdb-add-users.md).</li></ol> |
    | You're adding a trial to an existing Microsoft 365 tenant. | <ol><li>Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in.</li><li>In the navigation pane, choose **Users** > **Active users**. Review the list of users. </li><li>To assign licenses, follow the guidance in [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
 
+5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and in the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. 
+
+> [!NOTE]
+> It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
+
 ## Two portals for setup
 
 When you're ready to get started, you'll work with two main portals: the Microsoft 365 admin center, and the Microsoft 365 Defender portal.
