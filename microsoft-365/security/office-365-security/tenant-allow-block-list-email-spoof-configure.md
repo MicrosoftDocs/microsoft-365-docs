@@ -279,13 +279,13 @@ You have the following options to create block entries for spoofed senders:
 >
 > Only the combination of the spoofed user *and* the sending infrastructure as defined in the [domain pair](#domain-pair-syntax-for-spoofed-sender-entries) is allowed to spoof.
 >
-> When you configure an allow entry for a domain pair, messages from that domain pair no longer appear in the [spoof intelligence insight](learn-about-spoof-intelligence.md).
+> When you configure an allow entry for a domain pair, messages from that domain pair no longer appear in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md).
 >
 > Allow entries for spoofed senders never expire.
 
 #### Use the Microsoft 365 Defender portal to create allow entries for spoofed senders in the Submissions portal
 
-Submitting messages that were blocked by [spoof intelligence](learn-about-spoof-intelligence.md) to Microsoft in the **Submissions** portal at <https://security.microsoft.com/reportsubmission> adds the sender as an allow entry for the sender on the **Spoofed senders** tab in Tenant Allow/Block List.
+Submitting messages that were blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md) to Microsoft in the **Submissions** portal at <https://security.microsoft.com/reportsubmission> adds the sender as an allow entry for the sender on the **Spoofed senders** tab in Tenant Allow/Block List.
 
 For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
@@ -296,7 +296,7 @@ For instructions, see [Report good email to Microsoft](submissions-admin.md#repo
 
 #### Use the Microsoft 365 Defender portal to create allow entries for spoofed senders in the Tenant Allow/Block List
 
-In the Tenant Allow/Block List, you can create allow entries for spoofed senders before they're detected and blocked by [spoof intelligence](learn-about-spoof-intelligence.md).
+In the Tenant Allow/Block List, you can create allow entries for spoofed senders before they're detected and blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md).
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -339,7 +339,7 @@ You create block entries for spoofed senders directly in the Tenant Allow/Block 
 >
 > Only the combination of the spoofed user *and* the sending infrastructure as defined in the [domain pair](#domain-pair-syntax-for-spoofed-sender-entries) is blocked from spoofing.
 >
-> When you configure a block entry for a domain pair, messages from that domain pair no longer appear in the [spoof intelligence insight](learn-about-spoof-intelligence.md).
+> When you configure a block entry for a domain pair, messages from that domain pair no longer appear in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md).
 >
 > Block entries for spoofed senders never expire.
 
