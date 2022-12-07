@@ -80,9 +80,9 @@ Here are some best practices that apply to either scenario:
 
   - **SPF**: Sender Policy Framework verifies the source IP address of the message against the owner of the sending domain. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
 
-  - **DKIM**: DomainKeys Identified Mail adds a digital signature to the message header of messages sent from your domain. For information, see [Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](use-dkim-to-validate-outbound-email.md).
+  - **DKIM**: DomainKeys Identified Mail adds a digital signature to the message header of messages sent from your domain. For information, see [Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](email-authentication-dkim-configure.md).
 
-  - **DMARC**: Domain-based Message Authentication, Reporting, and Conformance helps destination email systems determine what to do with messages that fail SPF or DKIM checks and provides another level of trust for your email partners. For more information, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
+  - **DMARC**: Domain-based Message Authentication, Reporting, and Conformance helps destination email systems determine what to do with messages that fail SPF or DKIM checks and provides another level of trust for your email partners. For more information, see [Use DMARC to validate email in Microsoft 365](email-authentication-dmarc-configure.md).
 
 - **Verify your bulk email settings**: The bulk complaint level (BCL) threshold that you configure in anti-spam policies determines whether bulk email (also known as _gray mail_) is marked as spam. The PowerShell-only setting _MarkAsSpamBulkMail_ that's on by default also contributes to the results. For more information, see [Configure anti-spam policies in Microsoft 365](anti-spam-policies-configure.md).
 

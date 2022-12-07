@@ -206,7 +206,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.ou
 
 Once you've formulated your SPF TXT record, follow the steps in [Set up SPF in Microsoft 365 to help prevent spoofing](email-authentication-spf-configure.md) to add it to your domain.
 
-Although SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF can't protect against. In order to protect against these, once you have set up SPF, you should also configure DKIM and DMARC for Microsoft 365. To get started, see [Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](use-dkim-to-validate-outbound-email.md). Next, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
+Although SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF can't protect against. In order to protect against these, once you have set up SPF, you should also configure DKIM and DMARC for Microsoft 365. To get started, see [Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](email-authentication-dkim-configure.md). Next, see [Use DMARC to validate email in Microsoft 365](email-authentication-dmarc-configure.md).
 
 ## Troubleshooting: Best practices for SPF in Microsoft 365
 <a name="SPFTroubleshoot"> </a>
