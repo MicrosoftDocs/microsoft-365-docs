@@ -42,7 +42,7 @@ When it comes to protecting its users, Microsoft takes the threat of phishing se
 
 The following anti-spoofing technologies are available in EOP:
 
-- **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by SPF, DKIM, and DMARC records in DNS. You can configure these records for your domains so destination email systems can check the validity of messages that claim to be from senders in your domains. For inbound messages, Microsoft 365 requires email authentication for sender domains. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
+- **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by SPF, DKIM, and DMARC records in DNS. You can configure these records for your domains so destination email systems can check the validity of messages that claim to be from senders in your domains. For inbound messages, Microsoft 365 requires email authentication for sender domains. For more information, see [Email authentication in Microsoft 365](email-authentication-about.md).
 
   EOP analyzes and blocks messages that can't be authenticated by the combination of standard email authentication methods and sender reputation techniques.
 
@@ -108,7 +108,7 @@ Microsoft differentiates between two different types of spoofed messages:
 
     Spaces are used in the email addresses to prevent spambot harvesting.
 
-  Messages that fail [composite authentication](email-validation-and-authentication.md#composite-authentication) due to intra-org spoofing contain the following header values:
+  Messages that fail [composite authentication](email-authentication-about.md#composite-authentication) due to intra-org spoofing contain the following header values:
 
   `Authentication-Results: ... compauth=fail reason=6xx`
 
@@ -121,7 +121,7 @@ Microsoft differentiates between two different types of spoofed messages:
 - **Cross-domain spoofing**: The sender and recipient domains are different, and have no relationship to each other (also known as external domains). For example:
     > From: chris@contoso.com <br> To: michelle@tailspintoys.com
 
-  Messages that fail [composite authentication](email-validation-and-authentication.md#composite-authentication) due to cross-domain spoofing contain the following headers values:
+  Messages that fail [composite authentication](email-authentication-about.md#composite-authentication) due to cross-domain spoofing contain the following headers values:
 
   `Authentication-Results: ... compauth=fail reason=000/001`
 
@@ -172,7 +172,7 @@ If all else fails, you can report the message as a false positive to Microsoft. 
 
 ## Considerations for anti-spoofing protection
 
-If you're an admin who currently sends messages to Microsoft 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phishing. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+If you're an admin who currently sends messages to Microsoft 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phishing. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-authentication-about.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
 
 Senders in an individual user's (or admin's) Safe Senders list will bypass parts of the filtering stack, including spoof protection. For more information, see [Outlook Safe Senders](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
 
