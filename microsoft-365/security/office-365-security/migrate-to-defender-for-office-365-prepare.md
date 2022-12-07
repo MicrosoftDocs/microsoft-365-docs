@@ -70,7 +70,7 @@ Review your existing protection features in Microsoft 365 and consider removing 
 - If you're using any sort of complex routing (for example [Centralized Mail Transport](/exchange/transport-options)), you should consider simplifying your routing and thoroughly documenting it. External hops, especially after Microsoft 365 has already received the message, can complicate configuration and troubleshooting.
 
 - Outbound and relay mail flow is out of the scope for this article. However, be aware that you might need to do one or more of the following steps:
-  - Verify that all of the domains that you use to send email have the proper SPF records. For more information, see [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+  - Verify that all of the domains that you use to send email have the proper SPF records. For more information, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
   - We strongly recommend that you setup DKIM signing in Microsoft 365. For more information, see [Use DKIM to validate outbound email](use-dkim-to-validate-outbound-email.md).
   - If you're not routing mail directly from Microsoft 365, you need to change that routing by removing or changing the outbound connector.
 

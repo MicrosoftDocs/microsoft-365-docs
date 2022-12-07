@@ -64,7 +64,7 @@ sections:
       - question: |
           I'm an admin and I don't know all of sources for messages in my email domain!
         answer: |
-          See [You don't know all sources for your email](email-validation-and-authentication.md#you-dont-know-all-sources-for-your-email).
+          See [You don't know all sources for your email](email-authentication-about.md#you-dont-know-all-sources-for-your-email).
           
       - question: |
           What happens if I disable anti-spoofing protection for my organization?

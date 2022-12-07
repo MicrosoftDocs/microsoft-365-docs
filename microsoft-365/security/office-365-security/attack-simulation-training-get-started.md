@@ -118,7 +118,7 @@ The URLs that are used by Attack simulation training are described in the follow
 
 ### Create a simulation
 
-For step by step instructions on how to create and send a new simulation, see [Simulate a phishing attack](attack-simulation-training.md).
+For step by step instructions on how to create and send a new simulation, see [Simulate a phishing attack](attack-simulation-training-simulations.md).
 
 ### Create a payload
 

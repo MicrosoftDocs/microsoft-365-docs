@@ -33,7 +33,7 @@ ms.service: microsoft-365-security
 
 Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In all Microsoft 365 organizations, EOP uses these standards to verify inbound email:
 
-- [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+- [SPF](email-authentication-spf-configure.md)
 - [DKIM](use-dkim-to-validate-outbound-email.md)
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -138,7 +138,7 @@ Microsoft 365 keeps track of who is sending unauthenticated email to your organi
 
 You can use this method to resolve intra-org spoofing and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Microsoft 365 or third parties that are hosted by other providers.
 
-- [Configure SPF records](set-up-spf-in-office-365-to-help-prevent-spoofing.md) for your domains.
+- [Configure SPF records](email-authentication-spf-configure.md) for your domains.
 - [Configure DKIM records](use-dkim-to-validate-outbound-email.md) for your primary domains.
 - [Consider setting up DMARC records](use-dmarc-to-validate-email.md) for your domain to determine your legitimate senders.
 
@@ -160,7 +160,7 @@ Once you've gotten started with an SPF fallback policy of `?all`, you can gradua
 
 ### Configure permitted senders of unauthenticated email
 
-You can also use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
+You can also use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
 
 For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is one of the following values:
 
