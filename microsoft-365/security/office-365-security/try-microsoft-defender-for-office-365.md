@@ -319,7 +319,7 @@ In **blocking mode**, the following reports show detections by Defender for Offi
 
   - [View data by Content \> Malware](view-email-security-reports.md#view-data-by-content--malware)
 
-    Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-safe-attachments-for-spo-odfb-teams-about.md) appear in **MDO detonation**.
+    Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) appear in **MDO detonation**.
 
   - The [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
 
