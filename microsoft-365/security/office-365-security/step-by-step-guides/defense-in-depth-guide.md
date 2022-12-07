@@ -47,7 +47,7 @@ The information below will detail how to get the most out of your investment, br
 
 **Read more & watch an overview video of Safe Links here :** [Complete Safe Links overview](../safe-links.md)
 
-**Read more about Safe Attachments here :**  [Safe Attachments](../safe-attachments.md) 
+**Read more about Safe Attachments here :**  [Safe Attachments](../safe-attachments-about.md) 
 
 ### Detection, investigation, response and hunting features
 

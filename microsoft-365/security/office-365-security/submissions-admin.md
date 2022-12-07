@@ -266,7 +266,7 @@ After a few moments, the allow entry will appear on the **Domains & addresses** 
 After a few moments, an allow entry will appear on the **Files** tab on the **Tenant Allow/Block List** page.
 
 > [!NOTE]
-> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered.
+> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered.
 
 ## Report good URLs to Microsoft
 
