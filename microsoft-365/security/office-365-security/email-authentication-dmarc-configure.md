@@ -120,7 +120,7 @@ If you have already set up SPF, then you've already gone through this exercise. 
 
 ### Step 2: Set up SPF for your domain
 
-Now that you have a list of all your valid senders you can follow the steps to [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+Now that you have a list of all your valid senders you can follow the steps to [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
 
 For example, assuming contoso.com sends mail from Exchange Online, an on-premises Exchange server whose IP address is 192.168.0.1, and a web application whose IP address is 192.168.100.100, the SPF TXT record would look like this:
 
@@ -275,7 +275,7 @@ Want more information about DMARC? These resources can help.
 
 [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)
 
-[**Set up SPF in Microsoft 365 to help prevent spoofing**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+[**Set up SPF in Microsoft 365 to help prevent spoofing**](email-authentication-spf-configure.md)
 
 [**Use DKIM to validate outbound email sent from your custom domain in Microsoft 365**](use-dkim-to-validate-outbound-email.md)
 
