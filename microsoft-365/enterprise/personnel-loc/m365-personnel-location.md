@@ -23,12 +23,12 @@ Do not edit or republish this article without express approval from CELA and the
 
 When you use Microsoft Online Services, personnel with specialized technical expertise operate, deliver, and maintain the Online Services. These personnel are part of our global workforce, which is made up of both employees of Microsoft and its subsidiaries and staff we obtain via contract with third party organizations to assist Microsoft employees. These third-party organizations are disclosed on our published Online Services subprocessor list at [https://aka.ms/subprocessor](https://aka.ms/subprocessor) and the staff augmentation resources they provide are referred to as "contract staff".
 
-The following tables include the locations of these Microsoft personnel and contract staff who may require limited remote access to Customer or Personal Data (consisting of pseudonymized personal identifiers). This data resides only on Microsoft systems and is subject to Microsoft policies and supervision. The location of the Customer and Personal Data is distinct from its remote access by personnel in other locations; this data remains within Microsoft datacenter infrastructure in the locations you select when deploying your Online Services (when regional selection is available). For more information on Microsoft datacenters, please see the [Azure global infrastructure site](https://azure.microsoft.com/en-us/global-infrastructure/).
+The following tables include the locations of these Microsoft personnel and contract staff who may require limited remote access to Customer or Personal Data (consisting of pseudonymized personal identifiers). This data resides only on Microsoft systems and is subject to Microsoft policies and supervision. The location of the Customer and Personal Data is distinct from its remote access by personnel in other locations; this data remains within Microsoft datacenter infrastructure in the locations you select when deploying your Online Services (when regional selection is available). For more information on Microsoft datacenters, please see the [Azure global infrastructure site](https://azure.microsoft.com/global-infrastructure/).
 
 Remote access to data by Microsoft personnel, including contract staff, is limited and controlled. Microsoft employs the least privileged access mechanisms to control access to Customer Data and Personal Data. Role-based access controls are employed to ensure that access to Customer Data and Personal Data required for service operations is for an appropriate purpose and approved with management oversight. There is no standing access by personnel to Customer Data and any required access is provided for a limited time. Personnel also undergo background checks and use multifactor authentication as part of Microsoft standard business requirements, and access to Customer and Personal Data is logged and monitored by Microsoft.
 
-| Microsoft Subsidiary Personnel Locations |               |                       |                      |
-|------------------------------------------|---------------|-----------------------|----------------------|
+| Microsoft Subsidiary Personnel Locations ||||
+|--|--|--|--|
 | Albania                                  | Egypt         | Latvia                | Qatar                |
 | Algeria                                  | El Salvador   | Lebanon               | Romania              |
 | Angola                                   | Estonia       | Lithuania             | Saudi Arabia         |
@@ -57,8 +57,8 @@ Remote access to data by Microsoft personnel, including contract staff, is limit
 | Dominican Republic                       | Kuwait        | Poland                |                      |
 | Ecuador                                  | Kyrgyzstan    | Portugal              |                      |
 
-| Contract Staff Personnel Locations |               |             |                     |
-|------------------------------------|---------------|-------------|---------------------|
+| Contract Staff Personnel Locations ||||
+|--|--|--|--|
 | Argentina                          | Egypt         | Jamaica     | Romania             |
 | Armenia                            | El Salvador   | Japan       | Serbia              |
 | Australia                          | Finland       | Korea       | Singapore           |
