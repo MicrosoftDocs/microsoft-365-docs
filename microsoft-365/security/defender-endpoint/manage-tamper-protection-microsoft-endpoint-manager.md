@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/14/2022
+ms.date: 12/07/2022
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -46,6 +46,7 @@ If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-in
 - Your devices must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version `1.1.15500.X` (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
 - Your Intune and Defender for Endpoint tenants must share the same Microsoft Entra (Azure Active Directory) infrastructure.
 - Your devices must be onboarded to Defender for Endpoint.
+- Tamper protection should be part of a security strategy that includes additional protection, such as [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md) and [Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/).
 
 > [!NOTE]
 > If your devices are not enrolled in Microsoft Defender for Endpoint, tamper protection will show as **Not Applicable** until the onboarding process completes.
