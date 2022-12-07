@@ -35,7 +35,7 @@ If you have signed up for a trial, after you receive your acceptance email, you 
 ## Try or buy Microsoft Defender for Business
 
 > [!IMPORTANT]
-> The person who signs your company up for Microsoft 365 is a global administrator. You should be a global administrator to complete the following task.
+> The person who signs your company up for Microsoft 365 is a global administrator. You should be a global administrator to complete the following task. [Learn more about admin roles in the Microsoft 365 admin center](../../admin/add-users/assign-admin-roles.md).
 
 1. Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select the option to try or buy Defender for Business.
 
