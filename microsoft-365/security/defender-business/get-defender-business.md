@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
-ms.reviewer: shlomiakirav
+ms.date: 12/07/2022
+ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
