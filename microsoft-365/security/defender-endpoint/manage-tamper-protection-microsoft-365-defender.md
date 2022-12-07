@@ -41,7 +41,7 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
 - When you use the Microsoft 365 Defender portal to manage tamper protection, you do not have to use Intune or the tenant attach method.
 - When you manage tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide, affecting all of your devices that are running Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 or Windows Server 2022. To fine-tune tamper protection (such as having tamper protection on for some devices but off for others), use either [Manage tamper protection for your organization using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md) or [Manage tamper protection using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md).
 - If you have a hybrid environment, tamper protection settings configured in Intune take precedence over settings configured in the Microsoft 365 Defender portal.
-- Tamper protection should be part of a security strategy that includes additional protection, such as [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md) and [Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/).
+- Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md).
 
 ## Requirements for managing tamper protection in the Microsoft 365 Defender portal
 
