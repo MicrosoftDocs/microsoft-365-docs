@@ -52,7 +52,7 @@ sections:
       - question: |
           How do I quarantine spam?
         answer: |
-          By default, messages that are classified as spam or bulk email by spam filtering are delivered to the user's mailbox, and are moved to the Junk Email folder. But you can configure anti-spam policies to quarantine spam or bulk email messages instead. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+          By default, messages that are classified as spam or bulk email by spam filtering are delivered to the user's mailbox, and are moved to the Junk Email folder. But you can configure anti-spam policies to quarantine spam or bulk email messages instead. For more information, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
       - question: |
           How do I give users access to the quarantine?

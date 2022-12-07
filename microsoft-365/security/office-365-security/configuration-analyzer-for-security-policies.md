@@ -36,7 +36,7 @@ Configuration analyzer in the Microsoft 365 Defender portal provides a central l
 The following types of policies are analyzed by the configuration analyzer:
 
 - **Exchange Online Protection (EOP) policies**: This includes Microsoft 365 organizations with Exchange Online mailboxes and standalone EOP organizations without Exchange Online mailboxes:
-  - [Anti-spam policies](configure-your-spam-filter-policies.md).
+  - [Anti-spam policies](anti-spam-policies-configure.md).
   - [Anti-malware policies](configure-anti-malware-policies.md).
   - [EOP anti-phishing policies](anti-phishing-policies-about.md#spoof-settings).
 
