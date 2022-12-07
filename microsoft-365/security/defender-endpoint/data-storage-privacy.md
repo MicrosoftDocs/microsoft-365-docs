@@ -24,6 +24,7 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -66,6 +67,12 @@ Defender for Endpoint operates in the Microsoft Azure datacenters in the Europea
 Customer data in pseudonymized form may also be stored in the central storage and processing systems in the United States.
 
 Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside.
+
+## Data sharing for Microsoft Defender for Endpoint
+
+Microsoft Defender for Endpoint shares data, including customer data, among the following Microsoft products also licensed by the customer.
+
+- Microsoft Sentinel
 
 ## Is my data isolated from other customer data?
 

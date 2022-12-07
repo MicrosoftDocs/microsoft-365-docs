@@ -28,6 +28,9 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+> [!NOTE]
+> For the full data streaming experience available, please visit [Stream Microsoft 365 Defender events | Microsoft Learn](/microsoft-365/security/defender/streaming-api).
+
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## Before you begin
@@ -100,6 +103,8 @@ In order to get the data types for our events properties do the following:
   :::image type="content" source="images/data-types-mapping-query.png" alt-text="The Event Hubs with resource ID3" lightbox="images/data-types-mapping-query.png":::
 
 ## Related topics
+
+- [Stream Microsoft 365 Defender events | Microsoft Learn](/microsoft-365/security/defender/streaming-api)
 
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft Defender for Endpoint Streaming API](raw-data-export.md)

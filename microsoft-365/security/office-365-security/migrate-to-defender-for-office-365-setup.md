@@ -36,7 +36,7 @@ ms.service: microsoft-365-security
 Welcome to **Phase 2: Setup** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! This migration phase includes the following steps:
 
 1. [Create distribution groups for pilot users](#step-1-create-distribution-groups-for-pilot-users)
-2. [Configure user submission for user message reporting](#step-2-configure-user-submission-for-user-message-reporting)
+2. [Configure user user reported message settings](#step-2-configure-user-reported-message-settings)
 3. [Maintain or create the SCL=-1 mail flow rule](#step-3-maintain-or-create-the-scl-1-mail-flow-rule)
 4. [Configure Enhanced Filtering for Connectors](#step-4-configure-enhanced-filtering-for-connectors)
 5. [Create pilot protection policies](#step-5-create-pilot-protection-policies)
@@ -71,19 +71,19 @@ When you're ready to begin testing, add these groups as exceptions to [the SCL=-
 
   If you use customized policies, just make sure that they're applied _before_ the policies that contain our recommended settings for the migration. If a user is identified in multiple policies of the same type (for example, anti-phishing), only one policy of that type is applied to the user (based on the priority value of the policy). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-## Step 2: Configure user submission for user message reporting
+## Step 2: Configure user reported message settings
 
-The ability for users to identify false positives or false negatives from Defender for Office 365 is an important part of the migration.
+The ability for users to report false positives or false negatives from Defender for Office 365 is an important part of the migration.
 
-You can specify an Exchange Online mailbox to receive messages that users report as malicious or not malicious. For more instructions, see [User reported message settings](user-submission.md). This mailbox can receive copies of messages that your users submitted to Microsoft, or the mailbox can intercept messages without reporting them to Microsoft (you're security team can manually analyze and submit the messages). However, this interception approach does not allow the service to automatically tune and learn.
+You can specify an Exchange Online mailbox to receive messages that users report as malicious or not malicious. For instructions, see [User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md). This mailbox can receive copies of messages that your users submitted to Microsoft, or the mailbox can intercept messages without reporting them to Microsoft (you're security team can manually analyze and submit the messages themselves). However, the interception approach does not allow the service to automatically tune and learn.
 
-You should also confirm that all users in the pilot have a supported message reporting app installed in Outlook that's compatible with user submission. These apps include:
+You should also confirm that all users in the pilot have a supported way to report messages that received an incorrect verdict from Defender for Office 365. These options include:
 
-- [The Report Message add-in](enable-the-report-message-add-in.md)
-- [The Report Phishing add-in](enable-the-report-phish-add-in.md)
-- Supported third party reporting tools as described [here](user-submission.md#third-party-reporting-tools-options).
+- [The built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web)
+- [The Report Message and Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook)
+- Supported third party reporting tools as described [here](submissions-user-reported-messages-files-custom-mailbox.md#message-submission-format).
 
-Don't underestimate the importance of this step. Data from user submissions will give you the feedback loop that you need to verify a good, consistent end-user experience before and after the migration. This feedback helps you to make informed policy configuration decisions, as well as provide data-backed reports to your management that the migration went smoothly.
+Don't underestimate the importance of this step. Data from user reported messages will give you the feedback loop that you need to verify a good, consistent end-user experience before and after the migration. This feedback helps you to make informed policy configuration decisions, as well as provide data-backed reports to management that the migration went smoothly.
 
 Instead of relying on data that's backed by the experience of the entire organization, more than one migration has resulted in emotional speculation based on a single negative user experience. Furthermore, if you've been running phishing simulations, you can use feedback from your users to inform you when they see something risky that might require investigation.
 
@@ -167,7 +167,7 @@ Create two anti-spam policies for pilot users:
 - A policy that uses the Standard settings. Use the group **MDOPilot\_SpamPhish\_Standard** as the condition of the policy (who the policy applies to).
 - A policy that uses the Strict settings. Use the group **MDOPilot\_SpamPhish\_Strict** as the condition of the policy (who the policy applies to). This policy should have a higher priority (lower number) than the policy with the Standard settings.
 
-For the recommended Standard and Strict settings, see [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings). To create the policies, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+For the recommended Standard and Strict settings, see [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings). To create the policies, see [Configure anti-spam policies](anti-spam-policies-configure.md).
 
 ### Create pilot anti-phishing policies
 
@@ -184,15 +184,15 @@ For impersonation detections, ignore the recommended Standard and Strict actions
 - **If message is detected as impersonated domain**
 - **If mailbox intelligence detects an impersonated user**
 
-Use the impersonation insight to observe the results. For more information, see [Impersonation insight in Defender for Office 365](impersonation-insight.md).
+Use the impersonation insight to observe the results. For more information, see [Impersonation insight in Defender for Office 365](anti-phishing-mdo-impersonation-insight.md).
 
 You'll tune spoofing protection (adjust allows and blocks) and turn on each impersonation protection action to quarantine or move the messages to the Junk Email folder (based on the Standard or Strict recommendations). You can observe the results and adjust their settings as necessary.
 
 For more information, see the following topics:
 
 - [Anti-spoofing protection](anti-spoofing-protection.md)
-- [Impersonation settings in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-- [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+- [Impersonation settings in anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+- [Configure anti-phishing policies in Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 ## Next step
 

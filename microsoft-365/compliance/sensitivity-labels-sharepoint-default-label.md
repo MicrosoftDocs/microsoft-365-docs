@@ -95,7 +95,7 @@ The permissions required to set and change a default sensitivity label for a Sha
 
 Use the SharePoint **Sensitivity** column to see the names of sensitivity labels applied to files. When the label has been applied by this features, the tooltip for the label name displays **This file has been automatically labeled**. However, this tooltip isn't exclusive to the default sensitivity label for a document library. It also displays when sensitivity labels are applied by using auto-labeling policies or as a result of a user's default label from sensitivity label policies.
 
-To specifically identify when the label was applied because of the library's default sensitivity label, use the [audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md) and the **Applied sensitivity label file** auditing event from the **Sensitivity label activities** group. Then:
+To specifically identify when the label was applied because of the library's default sensitivity label, use the [audit log in the compliance portal](audit-log-search.md) and the **Applied sensitivity label file** auditing event from the **Sensitivity label activities** group. Then:
 1. Select an entry to view the details in a flyout pane.
 
 2. From the details pane, scroll to the **SensitivityLabelEventData section**, and identify the value for **ActionScourceDetails**.

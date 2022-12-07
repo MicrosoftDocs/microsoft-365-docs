@@ -74,5 +74,5 @@ The Antivirus protection tab on the Threats management page shows the devices ac
 
 ## Related content
 
-[Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)\
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md)
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

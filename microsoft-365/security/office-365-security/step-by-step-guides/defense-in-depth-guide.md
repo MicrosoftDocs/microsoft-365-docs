@@ -69,7 +69,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Consider enabling policies beyond the built-in Protection. Enabling time-of-click protection, or impersonation protection, for example, to add extra layers or fill gaps missing from your third party protection. Be aware that if you have a transport rule or connection filter that is overriding verdicts (this also can be known as SCL-1) you'll need to address this before turning on other protection features.
 
-**Read more here:** [Anti-phishing policies](../set-up-anti-phishing-policies.md)
+**Read more here:** [Anti-phishing policies](../anti-phishing-policies-about.md)
 
 - If your current security provider is configured to modify messages *in any way*, it's important to note that authentication signals can impact the ability for Defender for Office to protect you against attacks such as spoofing. If your third party supports Authenticated Received Chain (ARC), then enabling this is a highly recommended step in your journey to advanced dual filtering. Moving any message modification configuration to Defender for Office 365 is also an alternative.
 
@@ -85,9 +85,9 @@ The information below will detail how to get the most out of your investment, br
 
 - Advanced Delivery should be configured to deliver any third party phish simulations correctly, and if you have a Security Operations mailbox, consider defining it as a SecOps mailbox to ensure emails *do not* get removed from the mailbox due to threats.
 
-**Read more here:** [Advanced delivery](../configure-advanced-delivery.md)
+**Read more here:** [Advanced delivery](../skip-filtering-phising-simulations-sec-ops-mailboxes.md)
 
-- User-reported email settings can be configured to allow users to report messages, directly to Microsoft, or to your custom mailbox (to integrate with current security workflows) or both, the submissions portal can also be accessed to triage false positives and false negatives.
+- You can configure user reported message settings to allow users to report good or bad messages to Microsoft, to a designated reporting mailbox (to integrate with current security workflows) or both. Admins can use the **User reported** tab on the **Submissions** page to triage false positives and false negative user reported messages.
 
 **Read more here:** [Deploy and configure the report message add-in to users](deploy-and-configure-the-report-message-add-in.md)
 
