@@ -287,11 +287,13 @@ Wait a few minutes before you follow these steps to confirm that you have proper
 - Look for the Authentication-Results header. While each receiving service uses a slightly different format to stamp the incoming mail, the result should include something like **DKIM=pass** or **DKIM=OK**.
 
 > [!IMPORTANT]
-> The DKIM signature is **omitted** under any of these conditions:
-> - Both the sender and the recipient email addresses use the same domain.
-> - Both the sender and the recipient email addresses use different domains that are controlled by the same organization.
+> The DKIM signature is **omitted** under any of the following conditions:
+>
+> - The sender and recipient email addresses are in the same domain.
+> - The sender and recipient email addresses are in different domains that are controlled by the same organization.
 >
 > In both cases, the header will look similar to this:
+>
 > ```console
 >   Authentication-Results: dkim=none (message not signed) header.d=none;
 >     dmarc=none action=none header.from=<sender_domain>;
