@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 12/06/2022
+ms.date: 12/07/2022
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -76,7 +76,10 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 > [!IMPORTANT]
 > Built-in protection includes turning tamper protection on by default. To learn more about built-in protection, see:
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
-> - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
+> - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)   
+> 
+> Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md).
+
 
 ### How it works
 

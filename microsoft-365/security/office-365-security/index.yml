@@ -57,7 +57,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Set up SPF to help prevent spoofing
-            url: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            url: email-authentication-spf-configure.md
           - text: Use DKIM to validate outbound email sent from your custom domain
             url: use-dkim-to-validate-outbound-email.md
           - text: Use DMARC to validate email
