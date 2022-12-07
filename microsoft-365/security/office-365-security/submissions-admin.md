@@ -302,7 +302,7 @@ After a few moments, an allow entry will appear on the **URL** tab on the **Tena
 
 > [!NOTE]
 >
-> - When the URL is detected again, it's not sent for [Safe Links](safe-links.md) detonation or URL reputation checks, and all other URL-based filters are skipped.
+> - When the URL is detected again, it's not sent for [Safe Links](safe-links-about.md) detonation or URL reputation checks, and all other URL-based filters are skipped.
 > - During mail flow, if messages containing the URL pass other non-URL checks in the filtering stack, the messages will be delivered.
 
 ## View email admin submissions to Microsoft

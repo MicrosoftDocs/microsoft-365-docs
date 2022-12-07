@@ -183,7 +183,7 @@ For detailed instructions for configuring anti-spam policies, see [Configure ant
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
-Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments-about.md) and [Safe Links](safe-links.md) policies.
+Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments-about.md) and [Safe Links](safe-links-about.md) policies.
 
 ### Safe Attachments policies in Microsoft Defender for Office 365
 
@@ -247,7 +247,7 @@ For more information about the recommended settings for Safe Links, see [Safe Li
        - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting (turn on).
          - **Wait for URL scanning to complete before delivering the message**: Select this setting (turn on).
        - **Do not rewrite URLs, do checks via Safe Links API only**: Verify this setting is not selected (turn off).
-     - **Do not rewrite the following URLs in email**: We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
+     - **Do not rewrite the following URLs in email**: We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links-about.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
      - **Action for potentially malicious URLs in Microsoft Teams** section:
        - ***On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams**: Select this setting (turn on).
      - **Click protection settings** section:
