@@ -206,7 +206,7 @@ On the **Target users** page, select who will receive the simulation. Configure 
         - **Users not targeted by a simulation in the last three months**
         - **Repeat offenders**
 
-      - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md).
+      - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
           Use the following options:
 
