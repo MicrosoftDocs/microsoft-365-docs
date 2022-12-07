@@ -60,7 +60,7 @@ Once it has been decided the categories of items users can triage or not-triage,
 1. Repeat these same steps for the other policies: **Anti-phishing policy**, **Anti-Malware policy**, and **Safe Attachment policy**.
 
 > [!TIP]
-> For more detailed information on what you've learned so far, see [Configure spam filter policies - Office 365 | Microsoft Docs ](../../office-365-security/configure-your-spam-filter-policies.md)| [Configure anti-phishing policies in EOP - Office 365 | Microsoft Docs](../../office-365-security/configure-anti-phishing-policies-eop.md) | [Configure anti-malware policies - Office 365 | Microsoft Docs](../../office-365-security/configure-anti-malware-policies.md)| [Set up Safe Attachments policies in Microsoft Defender for Office 365 - Office 365 | Microsoft Docs](../../office-365-security/set-up-safe-attachments-policies.md)
+> For more detailed information on what you've learned so far, see [Configure spam filter policies - Office 365 | Microsoft Docs ](../../office-365-security/configure-your-spam-filter-policies.md)| [Configure anti-phishing policies in EOP - Office 365 | Microsoft Docs](../../office-365-security/anti-phishing-policies-eop-configure.md) | [Configure anti-malware policies - Office 365 | Microsoft Docs](../../office-365-security/configure-anti-malware-policies.md)| [Set up Safe Attachments policies in Microsoft Defender for Office 365 - Office 365 | Microsoft Docs](../../office-365-security/set-up-safe-attachments-policies.md)
 
 ## Next Steps
 

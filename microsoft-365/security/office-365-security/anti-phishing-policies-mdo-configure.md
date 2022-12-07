@@ -34,7 +34,7 @@ Admins can view, edit, and configure (but not delete) the default anti-phishing 
 
 You can configure anti-phishing policies in Defender for Office 365 in the Microsoft 365 Defender portal or in Exchange Online PowerShell.
 
-For information about configuring the more limited in anti-phishing policies that are available in Exchange Online Protection (that is, organizations without Defender for Office 365), see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+For information about configuring the more limited in anti-phishing policies that are available in Exchange Online Protection (that is, organizations without Defender for Office 365), see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
 
 The basic elements of an anti-phishing policy are:
 

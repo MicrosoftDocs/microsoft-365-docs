@@ -145,7 +145,7 @@ Add-SPOTenantIdentityMap -IdentityMapPath <identitymap.csv>
 ```
 
 > [!IMPORTANT]
-> If you make or need to make any changes to your Identity Map during the lifecycle of the migration you must run the *Add-SPOTenantIdentityMap -IdentityMapPath <identitymap.csv>*  command **every time** a change is made to ensure those changes are applied to the migration.
+> If you make or need to make any changes to your Identity Map during the lifecycle of the migration you must run the `Add-SPOTenantIdentityMap -IdentityMapPath <identitymap.csv>` command **every time** a change is made to ensure those changes are applied to the migration.
 
 Uploading any new identity map will overwrite the current one. Make sure that any revision or addition includes ALL users and groups for the full migration. Your identity map should always include everyone you're wanting to migrate.
 

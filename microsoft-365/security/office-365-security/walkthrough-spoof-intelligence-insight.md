@@ -64,7 +64,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 - You can enable, disable, and configure the spoof intelligence settings in anti-phishing policies. For instructions based on your subscription, see one of the following topics:
 
-  - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+  - [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
   - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 - For our recommended settings for spoof intelligence, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
