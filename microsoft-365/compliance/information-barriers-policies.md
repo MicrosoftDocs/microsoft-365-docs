@@ -15,7 +15,7 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 - highpri
-ms.localizationpriority: null
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -60,7 +60,7 @@ To learn more about roles and permissions, see [Roles and role groups in the Mic
 When you configure IB, you'll work with several objects and concepts.
 
 - **User account attributes** are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. You'll assign users or groups to segments with these attributes.
-- **Segments** are sets of groups or users that are defined in the compliance portal or by using PowerShell that use selected group or user account attributes. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
+- **Segments** are sets of groups or users that are defined in the compliance portal or by using PowerShell that use selected group or user account attributes. Your organization can have up to 5,000 segments and users can be assigned to multiple segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
 - **IB policies** determine communication limits or restrictions. When you define IB policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
   - *Allow* policies allow one segment to communicate with only certain other segments.
@@ -99,7 +99,7 @@ In addition to the required subscriptions and permissions, make sure that the fo
 
 - **Remove existing Exchange Online address book policies**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
-- **Manage using PowerShell (optional)**: IB segments and policies can be defined and managed in Office 365 Security & Compliance PowerShell. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters if you choose to use PowerShell to configure and manage IB segments and policies. You'll also need the Azure Active Directory PowerShell module if you choose this configuration option.
+- **Manage using PowerShell (optional)**: IB segments and policies can be defined and managed in the compliance portal, bu you can also use the Office 365 Security & Compliance PowerShell if preferred or needed. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters if you choose to use PowerShell to configure and manage IB segments and policies. You'll also need the Azure Active Directory PowerShell module if you choose this configuration option.
   - [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
   - [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2)
 
@@ -144,10 +144,7 @@ When you have your initial list of needed groups and policies, proceed to identi
 
 ### Identify segments
 
-In addition to your initial list of policies, make a list of segments for your organization. Users who will be included in IB policies should belong to a segment. Plan your segments carefully as a user can only be in one segment. Each segment can have only one IB policy applied.
-
-> [!IMPORTANT]
-> A user can only be in one segment.
+In addition to your initial list of policies, make a list of segments for your organization. Users who will be included in IB policies should belong to at least one segment. Users can be assigned to multiple segments if needed. You can have up to 5,000 segments in your organization and each segment can have only one IB policy applied.
 
 Determine which attributes in your organization's directory data you'll use to define segments. You can use *Department*, *MemberOf*, or any of the supported IB attributes. Make sure that you have values in the attribute you select for users. For more information, see the [supported attributes for IB](information-barriers-attributes.md).
 
@@ -168,9 +165,6 @@ To define segments in the compliance portal, complete the following steps:
 8. Add additional attributes as needed on the **User group filter** page, then select **Next**.
 9. On the **Review your settings** page, review the settings you've chosen for the segment and any suggestions or warnings for your selections. Select **Edit** to change any of the segment attributes and conditions or select **Submit** to create the segment.
 
-    > [!IMPORTANT]
-    > **Make sure that your segments do not overlap**. Each user who will be affected by IB policies should belong to one (and only one) segment. No user should belong to two or more segments. See [Example: Contoso's defined segments](#contosos-defined-segments) in this article for an example scenario.
-
 ### Define segments using PowerShell
 
 To define segments with PowerShell, complete the following steps:
@@ -184,9 +178,6 @@ To define segments with PowerShell, complete the following steps:
     After you run each cmdlet, you should see a list of details about the new segment. Details include the segment's type, who created or last modified it, and so on. 
 
 2. Repeat this process for each segment you want to define.
-
-    > [!IMPORTANT]
-    > **Make sure that your segments do not overlap**. Each user who will be affected by IB policies should belong to one (and only one) segment. No user should belong to two or more segments. See [Example: Contoso's defined segments](#contosos-defined-segments) in this article for an example scenario.
 
 After you've defined your segments, proceed to [Step 3: Create IB policies](#step-3-create-ib-policies).
 
@@ -229,7 +220,7 @@ With your list of user segments and the IB policies you want to define, select a
 - [Scenario 2: Allow a segment to communicate only with one other segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
-> **Make sure that as you define policies, you do not assign more than one policy to a segment**. For example, if you define one policy for a segment called *Sales*, do not define an additional policy for the *Sales* segment.<br> In addition, as you define IB policies, make sure to set those policies to inactive status until you are ready to apply them. Defining (or editing) policies does not affect users until those policies are set to active status and then applied.
+> **Make sure that as you define policies, you do not assign more than one policy to a segment**. For example, if you define one policy for a segment called *Sales*, do not define an additional policy for the *Sales* segment.<br><br> In addition, as you define IB policies, make sure to set those policies to inactive status until you are ready to apply them. Defining (or editing) policies does not affect users until those policies are set to active status and then applied.
 
 ### Scenario 1: Block communications between segments
 
@@ -412,7 +403,7 @@ The following IB modes are supported on Microsoft 365 resources:
 
 | **Mode** | **Description** | **Example** |
 |:-----|:------------|:--------|
-| **Open** | There aren't any IB policies or segments associated with the Microsoft 365 resource. Anyone can be invited to be a member of the resource. | A team site created for picnic event for your organization. |
+| **Open** | There aren't any IB policies or segments associated with the Microsoft 365 resource. Anyone can be invited to be a member of the resource. | A team site created for a picnic event for your organization. |
 | **Owner Moderated (preview)** | The IB policy of the Microsoft 365 resource is determined from the resource owner's IB policy. The resource owners can invite any user to the resource based on their IB policies. This mode is useful when your company wants to allow collaboration among incompatible segment users that are moderated by the owner. Only the resource owner can add new members per their IB policy. | The VP of HR wants to collaborate with the VPs of Sales and Research. A new SharePoint site that is set with IB mode *Owner Moderated* to add both Sales and Research segment users to the same site. It's the responsibility of the owner to ensure appropriate members are added to the resource. |
 | **Implicit** | The IB policy or segments of the Microsoft 365 resource is inherited from the resource members IB policy. The owner can add members as long as they're compatible with the existing members of the resource. This mode is the default IB mode for Microsoft Teams. | The Sales segment user creates a Microsoft Teams team to collaborate with other compatible segments in the organization. |
 | **Explicit** | The IB policy of the Microsoft 365 resource is per the segments associated with the resource. The resource owner or SharePoint administrator has the ability to manage the segments on the resource. | A site created only for Sales segment members to collaborate by associating the Sales segment with the site. |

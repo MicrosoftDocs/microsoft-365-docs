@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 - highpri
-ms.localizationpriority: null
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -31,6 +31,7 @@ When IB policies are in place, users who shouldn't communicate or share files wi
 IB policies can allow or prevent communication and collaboration between groups and users for the following example scenarios:
 
 - Users in the *Day Trader* group shouldn't communicate or share files with the *Marketing Team*
+- Instructors in one school shouldn't be able to communicate or share files with students in another school in the same school district.
 - Finance personnel working on confidential company information shouldn't communicate or share files with certain groups within their organization
 - An internal team with trade secret material shouldn't call or chat online with people in certain groups within their organization
 - A research team should only call or chat online with a product development team

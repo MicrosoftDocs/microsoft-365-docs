@@ -26,10 +26,11 @@ Microsoft 365 enables communication and collaboration across groups and organiza
 
 Microsoft Purview Information Barriers (IB) is supported in Microsoft Teams, SharePoint Online, and OneDrive for Business. A compliance administrator or IB administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams. IB policies can be used for situations like these:
 
-- User in the day trader group should not communicate or share files with the marketing team
-- Finance personnel working on confidential company information should not communicate or share files with certain groups within their organization
-- An internal team with trade secret material should not call or chat online with people in certain groups within their organization
-- A research team should only call or chat online with a product development team
+- User in the day trader group should not communicate or share files with the marketing team.
+- Instructors in one school shouldn't be able to communicate or share files with students in another school in the same school district.
+- Finance personnel working on confidential company information should not communicate or share files with certain groups within their organization.
+- An internal team with trade secret material should not call or chat online with people in certain groups within their organization.
+- A research team should only call or chat online with a product development team.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

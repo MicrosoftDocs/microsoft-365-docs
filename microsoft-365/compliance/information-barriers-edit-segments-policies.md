@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.collection:
 - tier2
 - purview-compliance
-ms.localizationpriority: null
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ---
