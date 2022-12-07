@@ -130,6 +130,26 @@ To copy a policy and create a new policy, complete the following steps:
 3. In the **Copy policy** pane, you can accept the default name for the policy in the **Policy name** field or rename the policy. The policy name for the new policy can't be the same as an existing active or deactivated policy. Complete the **Description** field as needed.
 4. If you don't need further customization of the policy, select **Copy policy** to complete the process. If you need to update the configuration of the new policy, select **Customize policy**. This starts the policy wizard to help you update and customize the new policy.
 
+## Mark a policy as a favorite
+
+After you've created a communication compliance policy, you can mark the policy as a favorite. Once a policy has been identified as a favorite, you can filter favorite policies to appear at the top of the policies list. By marking a policy as a favorite, you can also easily sort policies by favorites. 
+
+To mark a policy as a favorite, you have the following options:
+
+- **Mark as favorite**: Enables you to mark selected policies as favorites, so you can easily find the policies that you're most interested in rather than having to search for them.
+
+- **Sort by favorites**: Sorts the policies by favorites, so your favorite policies appear at the top of the list. 
+
+- **Customize columns**: Choose to list the favorites that you want to see. You can also choose to sort favorite policies in ascending or descending order.
+
+To sort policies by groups: 
+
+- **All policies**: This is the default view, displaying all the policies in the list. 
+
+- **Show only favorites**: Groups policies by favorites at the top of the list. This option shows only those policies marked as favorites. 
+
+![Communication compliance sort policies by group](../media/communication-compliance-group-favorites.png)
+
 ## Policy activity detection
 
 Communications are scanned every hour from the time policies are created. For example, if you create an inappropriate content policy at 11:00 AM, the policy will gather communication compliance signals every hour starting from when the policy was created. Editing a policy doesn't change this time. To view the last scan date and time for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to an hour to view the first policy scan date and time. The date and time of the last scan are converted to the time zone of your local system.
