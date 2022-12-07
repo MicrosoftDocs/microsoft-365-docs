@@ -40,7 +40,7 @@ ms.service: microsoft-365-security
 
 This article describes how to update a Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF)  email authentication with your custom domain in Office 365.
 
-SPF helps *validate* outbound email sent from your custom domain (is coming from who it says it is). It's a first step in setting up the full recommended email authentication methods of SPF, [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md).
+SPF helps *validate* outbound email sent from your custom domain (is coming from who it says it is). It's a first step in setting up the full recommended email authentication methods of SPF, [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md).
 
 - [Prerequisites](#prerequisites)
 - [Create or update your SPF TXT record](#create-or-update-your-spf-txt-record)
@@ -143,9 +143,9 @@ For advanced examples, a more detailed discussion about supported SPF syntax, sp
 
  SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF can't protect against. To defend against these, once you've set up SPF, you should configure DKIM and DMARC for Office 365.
 
-[**DKIM**](use-dkim-to-validate-outbound-email.md) email authentication's goal is to prove the contents of the mail haven't been tampered with.
+[**DKIM**](email-authentication-dkim-configure.md) email authentication's goal is to prove the contents of the mail haven't been tampered with.
 
-[**DMARC**](use-dmarc-to-validate-email.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
+[**DMARC**](email-authentication-dmarc-configure.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
 
  For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](email-authentication-anti-spoofing.md#HowSPFWorks).
 
