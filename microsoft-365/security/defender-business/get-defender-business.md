@@ -36,12 +36,26 @@ If you have signed up for a trial, after you receive your acceptance email, you 
 
 1. Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select the option to try or buy Defender for Business.
 
-2. When you receive your email with your account and subscription information, sign in using the link in your email.
+   > [!TIP]
+   > If you're starting a trial, see the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
 
-3. Proceed to [Add users and assign licenses](mdb-add-users.md).
+2. If you already have a Microsoft 365 subscription, sign in using your account. If you don't already have a subscription, follow the prompts to create a new account. 
 
-> [!TIP]
-> See the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
+3. When you sign in for the first time, you'll go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). See [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
+
+4. Use one of the following procedures, depending on your scenario:<br/>
+
+   | Scenario | Procedure |
+   |:---|:---|
+   | You're setting up a Microsoft 365 subscription for the first time. | Select **Go to guided setup** and complete the following steps:<ol><li>Either install your Office apps now, or choose **Continue** to skip this step. (You can install your Office apps later.)</li><li>If your company has a domain, you can add it now (this option is recommended). Alternately, you could choose to use your default `.onmicrosoft.com` domain for now.</li><li>Add users and assign licenses. Each user you list will be assigned a license automatically. See [Add users and assign licenses at the same time](mdb-add-users.md).</li></ol> |
+   | You're adding a trial to an existing Microsoft 365 tenant. | <ol><li>Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in.</li><li>In the navigation pane, choose **Users** > **Active users**. Review the list of users. </li><li>To assign licenses, follow the guidance in [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
+
+5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and in the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. 
+
+> [!NOTE]
+> It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
+
+
 
 ## Get Microsoft 365 Business Premium
 
@@ -75,22 +89,6 @@ Microsoft has a list of solution providers who are authorized to sell offerings,
 When you receive your acceptance email, here's how to activate your trial subscription: 
 
 1. In your acceptance email, select the link that includes your promo code. 
-
-2. If you already have a Microsoft 365 subscription, sign in using your account. If you don't already have a subscription, follow the prompts to create a new account. 
-
-3. When you sign in for the first time, you'll go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). See [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
-
-4. Use one of the following procedures, depending on your scenario:<br/>
-
-   | Scenario | Procedure |
-   |:---|:---|
-   | You're setting up a Microsoft 365 subscription for the first time. | Select **Go to guided setup** and complete the following steps:<ol><li>Either install your Office apps now, or choose **Continue** to skip this step. (You can install your Office apps later.)</li><li>If your company has a domain, you can add it now (this option is recommended). Alternately, you could choose to use your default `.onmicrosoft.com` domain for now.</li><li>Add users and assign licenses. Each user you list will be assigned a license automatically. See [Add users and assign licenses at the same time](mdb-add-users.md).</li></ol> |
-   | You're adding a trial to an existing Microsoft 365 tenant. | <ol><li>Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in.</li><li>In the navigation pane, choose **Users** > **Active users**. Review the list of users. </li><li>To assign licenses, follow the guidance in [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
-
-5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and in the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. 
-
-> [!NOTE]
-> It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
 
 ## Two portals for setup
 
