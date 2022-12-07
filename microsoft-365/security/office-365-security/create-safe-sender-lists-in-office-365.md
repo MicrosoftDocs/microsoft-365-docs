@@ -46,7 +46,7 @@ The rest of this article contains specifics about each method.
 >
 > Be careful to closely monitor _any_ exceptions that you make to spam filtering using safe sender lists.
 >
-> Always submit messages in your safe sender lists to Microsoft for analysis. For instructions, see [Report good email to Microsoft](admin-submission.md#report-good-email-to-microsoft). If the messages or message sources are determined to be benign, Microsoft can automatically allow the messages, and you won't need to manually maintain the entry in safe sender lists.
+> Always submit messages in your safe sender lists to Microsoft for analysis. For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft). If the messages or message sources are determined to be benign, Microsoft can automatically allow the messages, and you won't need to manually maintain the entry in safe sender lists.
 >
 > Instead of allowing email, you also have several options to block email from specific sources using _blocked sender lists_. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
@@ -142,7 +142,7 @@ The next best option is to add the source email server or servers to the IP Allo
 >
 > Do not use popular domains (for example, microsoft.com) in allowed domain lists.
 
-The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option _if at all possible_ because senders bypass all spam, spoof, phishing protection (except high confidence phishing), and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md) topic.
+The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option _if at all possible_ because senders bypass all spam, spoof, phishing protection (except high confidence phishing), and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](anti-spam-policies-configure.md) topic.
 
 The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
 

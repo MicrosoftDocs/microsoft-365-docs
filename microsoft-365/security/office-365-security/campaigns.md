@@ -58,7 +58,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 Campaigns is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
 
-:::image type="content" source="../../media/campaigns-overview.png" alt-text="The Campaigns in the Microsoft 365 Defender portal" lightbox="../../media/campaigns-overview.png":::
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="Screenshot that shows the Campaigns in the Microsoft 365 Defender portal." lightbox="../../media/campaigns-overview.png":::
 
 You can also view Campaigns from:
 
@@ -224,7 +224,7 @@ The diagram contains the following information:
   |**Tenant Block**<sup>\*\*</sup>|`SFV:SKA`|The message was blocked by spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed sender list or allowed domain list.|
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list.|
   |**User Block**<sup>\*\*</sup>|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list.|
-  |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) moved the delivered message to the Junk Email folder or quarantine. You configure the action in [anti-spam policies](configure-your-spam-filter-policies.md).|
+  |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) moved the delivered message to the Junk Email folder or quarantine. You configure the action in [anti-spam policies](anti-spam-policies-configure.md).|
 
   <sup>\*</sup> Review your anti-spam policies, because the allowed message would have likely been blocked by the service.
 

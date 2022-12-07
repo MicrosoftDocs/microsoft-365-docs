@@ -460,6 +460,8 @@
 
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
+### [Advanced deployment guidance - Microsoft Defender for Endpoint on Linux](comprehensive-guidance-on-linux-deployment.md)
+
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
 #### [Configure Microsoft Defender for Cloud Apps integration](microsoft-cloud-app-security-config.md)
@@ -534,6 +536,9 @@
 ####### [Submit Indicator](post-ti-indicator.md)
 ####### [Import Indicator](import-ti-indicators.md)
 ####### [Delete Indicator](delete-ti-indicator-by-id.md)
+
+###### [Information gathering]()
+####### [Export information gathering assessment](get-assessment-information-gathering.md)
 
 ###### [IP]()
 ####### [Get IP related alerts](get-ip-related-alerts.md)

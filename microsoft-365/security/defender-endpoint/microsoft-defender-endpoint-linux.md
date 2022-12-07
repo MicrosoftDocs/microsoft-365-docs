@@ -154,7 +154,10 @@ If you experience any installation failures, refer to [Troubleshooting installat
   > [!CAUTION]
   > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
 
-- Disk space: 1 GB
+- Disk space: 2 GB
+  
+  >[!NOTE]
+  > An additional 2 GB disk space might be needed if cloud diagnostics are enabled for crash collections.
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon requires executable permission. For more information, see "Ensure that the daemon has executable permission" in [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
 
