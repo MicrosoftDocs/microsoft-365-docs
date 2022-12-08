@@ -187,7 +187,7 @@ For the first daily event level, you set the threshold at *10 or more events per
 - If there are 20-29 SharePoint events that take place after a triggering, the risk score is inherently higher and alert severity levels would tend to be at a medium level.
 - If there are 30 or more SharePoint events that take place after a triggering, the risk score is inherently higher and alert severity levels would tend to be at a high level.
 
-Another option for policy thresholds is to assign the policy triggering event to risk management activity that is above the typical daily amount of users. Instead of being defined by specific threshold settings, each threshold is dynamically customized for anomalous activities detected for in-scope policy users. If threshold activity for anomalous activities is supported for an individual indicator, you can select **Activity is above user's usual activity for the day** in the policy wizard for that indicator. If this option isn't listed, anomalous activity triggering isn't available for the indicator. If the **Activity is above user's usual activity for the day** option is listed for an indicator, but not selectable, you need to enable this option in **Insider risk settings** > **Policy indicators**.
+Another option for policy thresholds is to assign the policy triggering event to risk management activity that is above the typical daily number of users. Instead of being defined by specific threshold settings, each threshold is dynamically customized for anomalous activities detected for in-scope policy users. If threshold activity for anomalous activities is supported for an individual indicator, you can select **Activity is above user's usual activity for the day** in the policy wizard for that indicator. If this option isn't listed, anomalous activity triggering isn't available for the indicator. If the **Activity is above user's usual activity for the day** option is listed for an indicator, but not selectable, you need to enable this option in **Insider risk settings** > **Policy indicators**.
 
 ## Policy timeframes
 
@@ -295,7 +295,12 @@ To add file paths to exclude, complete the following steps:
 
 1. In the compliance portal, navigate to **Insider risk management** > **Settings** > **Intelligent detections**. 
 2. In the **File path exclusion** section, select **Add file paths to exclude**.
-3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific folders and sub-folders to be excluded.
+3. On the **Add a file path** pane, enter an exact network share or device path to exclude from risk scoring. You can also use * and *([0-9]) to denote specific and wildcard folders and sub-folders to be excluded. For more information, see the following examples:
+    - **\\\\ms.temp\LocalFolder\ or C:\temp**: Excludes files directly under the folder and all sub-folders for every file path starting with the entered prefix.
+    - **\public\local\\**: Excludes files from every file path containing entered value. Matches with 'C:\Users\Public\local\\', 'C:\Users\User1\Public\local\', and '\\\\ms.temp\Public\local'.
+    - **C:\Users\\\*\Desktop**: C:\Users\\\*\Desktop: Wildcards are supported. Matches with 'C:\Users\user1\Desktop' and 'C:\Users\user2\Desktop'.
+    - **C:\Users\\\*(2)\Desktop**: Wildcards with numbers are supported. Matches with 'C:\Users\user1\user1\Desktop' and 'C:\Users\user2\Shared\Desktop'.
+
 4. Select **Add file paths** to exclude to configure the file path exclusions or **Close** to discard the changes. 
 
 To delete a file path exclusion, select the file path exclusion and select **Delete**.
