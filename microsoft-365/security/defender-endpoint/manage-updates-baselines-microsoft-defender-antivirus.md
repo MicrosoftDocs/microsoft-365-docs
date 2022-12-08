@@ -93,7 +93,7 @@ All our updates contain
 &ensp;Engine: **1.1.19900.2**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
-Engine version: 1.1.19900.x <br/>
+Engine version: 1.1.19900.2 <br/>
 Security intelligence update version: 1.381.144.0 <br/>
 
 ### What's new
