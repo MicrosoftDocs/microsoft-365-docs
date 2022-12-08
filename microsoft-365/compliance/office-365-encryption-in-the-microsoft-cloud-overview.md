@@ -14,6 +14,7 @@ search.appverid:
 ms.collection:
 - Strat_O365_Enterprise
 - purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: In this article, read an overview of the various forms of encryption used to keep customer data safe in the Microsoft cloud.
 ms.custom: seo-marvel-apr2020

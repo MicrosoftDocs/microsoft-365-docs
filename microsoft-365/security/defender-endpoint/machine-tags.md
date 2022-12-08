@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -66,7 +66,7 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 Tags are added to the device view and will also be reflected on the **Devices inventory** view. You can then use the **Tags** filter to see the relevant list of devices.
 
 > [!NOTE]
-> Filtering might not work on tag names that contain parenthesis.
+> Filtering might not work on tag names that contain parenthesis or commas.
 >
 > When you create a new tag, a list of existing tags are displayed. The list only shows tags created through the portal. Existing tags created from client devices will not be displayed.
 

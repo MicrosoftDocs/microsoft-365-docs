@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management
@@ -259,7 +260,7 @@ To modify the default policy:
 |Use Safe Attachments to scan downloadable content|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Safe Links](../../security/office-365-security/safe-links.md).
+For more information, see [Safe Links](../../security/office-365-security/safe-links-about.md).
 
 ## Go to Intune admin center
 

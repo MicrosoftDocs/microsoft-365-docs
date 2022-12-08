@@ -15,6 +15,7 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - purview-compliance
+- tier2
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE

@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer:
 manager: samanro
-ms.topic: article
+ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -13,9 +13,11 @@ ms.localizationpriority: high
 ms.collection:
   - M365-collaboration
   - m365-frontline
+  - tier2
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Known issues: Teams Shifts connector for Blue Yonder
