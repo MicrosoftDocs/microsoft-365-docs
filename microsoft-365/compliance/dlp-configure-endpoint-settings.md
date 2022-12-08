@@ -242,13 +242,13 @@ You can control whether sensitive files that are protected by your policies can 
 
 When the **Service domains** list is set to **Allow**, DLP policies won't be applied when a user attempts to upload a sensitive file to any of the domains on the list.
 
-If the list mode is set to **Allow**, any user activity involving a sensitive item and a domain that's on the list will be audited. The activity is allowed. When a user attempts an activity involving a sensitive item and a domain that *isn't* on the list then DLP policies, and the actions defined in the polices, are applied.
+If the list mode is set to **Allow**, any user activity involving a sensitive item and a domain that's on the list will be audited. The activity is allowed. When a user attempts an activity involving a sensitive item and a domain that *isn't* on the list then DLP policies, and the actions defined in the policies, are applied.
 
 For example, with this configuration:
 
 - **Service domains** list mode is set to **Allow**.
     - Contoso.com is on the list.
--  A DLP policy is set to **Block** upload of sensitive items that contain credit card numbers.
+    -  A DLP policy is set to **Block** upload of sensitive items that contain credit card numbers.
  
 User attempts to:
 
@@ -285,6 +285,15 @@ but if a user attempts to:
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
 
+Summary table
+
+
+|Service domain list setting |Upload sensitive item to site on list  |Upload sensitive item to site not on list  |
+|---------|---------|---------|
+|Allow   |- No DLP policies are applied </br> - User activity is audited </br> - Event generated        | - DLP policies are applied </br> - Configured actions are taken </br>- Event is generated </br>- Alert is generated          |
+|Block    | - DLP policies are applied </br> - Configured actions are taken </br> - Event is generated </br> - Alert is generated         | - No DLP policies are applied </br> - User activity is audited </br>- Event is generated         |
+
+
 Use the FQDN format of the service domain without the ending `.` when you add a domain to the list.
 
 For example:
@@ -305,6 +314,30 @@ When you list a website in Sensitive services domains you can audit, block with 
 - upload a sensitive file to an excluded website (this is configured in the policy)
 
 For the print, copy data and save actions, each website must be listed in a website group and the user must be accessing the website through Microsoft Edge. For the upload action, the user can be using Microsoft Edge or Google Chrome with the Purview extension. Sensitive service domains is used in conjunction with a DLP policy for Devices. You can also define website groups that you want to assign policy actions to that are different from the global website group actions. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+
+
+##### Supported syntax for designating websites in a website group
+
+You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+
+- use `*` as a wildcard to specify all domains or all subdomains
+- use `/` as a terminator at the end of a URL to scope to that specific site only.
+
+When you add a URL without a terminating `/`, that URL is scoped to that site and all subsites.
+
+This syntax applies to all http/https websites.
+
+Here are some examples:
+
+
+|URL that you add to the website group  |URL will match  | URL will not match|
+|---------|---------|---------|
+|contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2|        //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com.au    |
+|contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/au   |
+|*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
+|*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
+|*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
+
 
 
 ### Additional settings for endpoint DLP
@@ -343,22 +376,23 @@ File activity will always be audited for onboarded devices, regardless of whethe
 
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
 
-This feature is available for devices running any of the following Windows versions :  
+This feature is available for devices running any of the following Windows versions:  
 
-- Windows 10 and later (20H2, 21H1, 21H2) 
-- Win 11 21H2, 22H2
-- Windows Server 2022
+- Windows 10 and later (20H2, 21H1, 21H2, and later) - [KB5020030](https://support.microsoft.com/en-us/topic/november-15-2022-kb5020030-os-builds-19042-2311-19043-2311-19044-2311-and-19045-2311-preview-237a9048-f853-4e29-a3a2-62efdbea95e2)
+- Win 11 21H2, 22H2 - [KB5019157](https://support.microsoft.com/en-us/topic/november-15-2022-kb5019157-os-build-22000-1281-preview-d64fb317-3435-49ff-b2c4-d0356a51a6b0)
+- Windows Server 2022 - [KB5020032](https://support.microsoft.com/en-us/topic/november-22-2022-kb5020032-os-build-20348-1311-preview-7ca1be57-3555-4377-9eb1-0e4d714d9c68)
 
 You define a printer by these parameters:
 
 - Friendly printer name - Get the Friendly printer name value from the printer device property details in device manager.
-- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
-- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB printer - A printer connected through USB port of a computer. You can select this if you want to enforce any USB printer and leave USB product ID and USB vendor ID unselected, you can also define specific USB printer through USB product ID and USB vendor ID.
+	- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+	- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - IP range
-- Print to file - For example Microsoft Print to PDF or Microsoft XPS Document Writer.
+- Print to file - Microsoft Print to PDF or Microsoft XPS Document Writer. If you only want to enforce Microsoft Print to PDF, you should use Friendly printer name with 'Microsoft Print to PDF'.
 - Universal print deployed on a printer - See, [Set up Universal Print](/universal-print/fundamentals/universal-print-getting-started.md) for more information on universal printers
 - Corporate printer - is a print queue shared through on-premises Windows print server in your domain. Its path might look like  \\print-server\contoso.com\legal_printer_001
-- Print to local
+- Print to local: Any printer connecting through Microsoft print port but not any of above type, for example print through remote desktop or redirect printer.
 
 You assign each printer in the group a **Display name**. The name only appears in the Purview console. So, continuing with the example, you would create a printer group named **Legal printers** and add individual printers (with an alias) by their friendly name, like `legal_printer_001`, `legal_printer_002` and `legal_color_printer`.
 
@@ -389,7 +423,7 @@ The most common use case is to use printers groups as an allowlist as in the abo
 
 Use this setting to define groups of removable storage devices, like USB thumb drives, that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block copying of items with engineering specifications to all removeable storage devices, except for USB connected hard drives that are used to back up data and are then sent offsite.
 
-This feature is available for devices running any of the following Windows versions :  
+This feature is available for devices running any of the following Windows versions:  
 
 - Windows 10 and later (20H2, 21H1, 21H2) 
 - Win 11 21H2, 22H2

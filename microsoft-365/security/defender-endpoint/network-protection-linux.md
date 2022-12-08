@@ -46,7 +46,7 @@ Network protection helps reduce the attack surface of your devices from Internet
 - exploits
 - other malicious content on the Internet
 
-Network protection expands the scope of Microsoft Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
+Network protection expands the scope of Microsoft Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
 
 ## Web content filtering for Linux
 
@@ -75,13 +75,13 @@ Deploy Linux manually, see [Deploy Microsoft Defender for Endpoint on Linux manu
 The following example shows the sequence of commands needed to the mdatp package on ubuntu 20.04 for insiders-Slow channel.
 
 ```bash
-curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-slow.list 
-sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-slow.list 
-sudo apt-get install gpg 
-curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add - 
-sudo apt-get install apt-transport-https 
-sudo apt-get update 
-sudo apt install -y mdatp 
+curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-slow.list
+sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-slow.list
+sudo apt-get install gpg
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo apt-get install apt-transport-https
+sudo apt-get update
+sudo apt install -y mdatp
 ```
 
 ### Device Onboarding
@@ -89,17 +89,18 @@ sudo apt install -y mdatp
 To onboard the device, you must download the Python onboarding package for Linux server from Microsoft 365 Defender -> Settings -> Device Management -> Onboarding and run:
 
 ```bash
-sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py 
+sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 ```
 
 ### Manually enable network protection
 
-1. Turn on the “networkProtection” feature, edit the “/etc/opt/microsoft/mdatp/wdavcfg” and set **networkProtection** to **enabled**.  
+1. Turn on the "networkProtection" feature, edit the "/etc/opt/microsoft/mdatp/wdavcfg" and set **networkProtection** to **enabled**.
 2. Restart the mdatp service by running the following command:
 
 ```bash
-sudo systemctl restart mdatp 
+sudo systemctl restart mdatp
 ```
+
 > :::image type="content" source="images/network-protection-linux-mdatp-restart.png" alt-text="Shows Linux mdatp restart." lightbox="images/network-protection-linux-mdatp-restart.png":::
 
 ### Configure the enforcement level
@@ -120,7 +121,7 @@ or
 sudo mdatp config network-protection enforcement-level --value audit
 ```
 
-To confirm Network Protection has successfully started, run the following command from the Terminal; verify that it prints “started”:
+To confirm Network Protection has successfully started, run the following command from the Terminal; verify that it prints "started":
 
 ```bash
 mdatp health --field network_protection_status
@@ -136,8 +137,8 @@ A. Check Network Protection has effect on always blocked sites:
 B. Inspect diagnostic logs
 
 ```bash
-$ sudo mdatp log level set --level debug 
-$ sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log 
+$ sudo mdatp log level set --level debug
+$ sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log
 ```
 
 #### To exit the validation mode
@@ -154,7 +155,7 @@ By default, Linux network protection is active on the default gateway; routing a
 To customize the network interfaces, change the **networkSetupMode** parameter from the **/opt/microsoft/mdatp/conf/**  configuration file and restart the service:
 
 ```bash
-sudo systemctl restart  mdatp 
+sudo systemctl restart  mdatp
 ```
 
 The configuration file also enables the user to customize:
@@ -169,10 +170,10 @@ The default values were tested for all distributions as described in [Microsoft 
 
 ### Microsoft Defender portal
 
-Also, make sure that in **Microsoft Defender** > **Settings** > **Endpoints** > **Advanced features** that **‘Custom network indicators’** toggle is set _enabled_.
+Also, make sure that in **Microsoft Defender** \> **Settings** \> **Endpoints** \> **Advanced features** that **'Custom network indicators'** toggle is set _enabled_.
 
 > [!IMPORTANT]
-> The above **‘Custom network indicators’** toggle controls **Custom Indicators** enablement **for ALL platforms with Network Protection support, including Windows. Reminder that - on Windows - for indicators to be enforced you also must have Network Protection explicitly enabled.
+> The above **'Custom network indicators'** toggle controls **Custom Indicators** enablement **for ALL platforms with Network Protection support, including Windows. Reminder that - on Windows - for indicators to be enforced you also must have Network Protection explicitly enabled.
 
 >:::image type="content" source="images/network-protection-linux-defender-security-center-advanced-features-settings.png" alt-text="MEM Create Profile" lightbox="images/network-protection-linux-defender-security-center-advanced-features-settings.png":::
 
@@ -182,13 +183,15 @@ Also, make sure that in **Microsoft Defender** > **Settings** > **Endpoints** > 
    - Web threat protection is part of web protection in Microsoft Defender for Endpoint. It uses network protection to secure your devices against web threats.
 2. Run through the [Custom Indicators of Compromise](indicator-ip-domain.md) flow to get blocks on the Custom Indicator type.
 3. Explore [Web content filtering](web-content-filtering.md).
+
    > [!NOTE]
    > If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
    > Pro tip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
    >
-   > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
+   > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
  
 4. [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](/defender-cloud-apps/mde-integration) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
+
    > [!NOTE]
    > Discovery and other features are currently not supported on these platforms.
 
