@@ -21,6 +21,7 @@ ms.collection:
   - highpri
   - EngageScoreSep2022
   - contentengagementFY23
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
