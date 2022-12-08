@@ -45,7 +45,7 @@ Threat investigation and response capabilities in the Microsoft 365 Defender por
 
 - [Explorer](#explorer)
 - [Incidents](#incidents)
-- [Attack simulation training](attack-simulation-training.md)
+- [Attack simulation training](attack-simulation-training-simulations.md)
 - [Automated investigation and response](automated-investigation-response-office.md)
 
 ### Explorer
@@ -78,7 +78,7 @@ To view the list of current incidents for your organization in the Microsoft 365
 
 ### Attack simulation training
 
-Use Attack simulation training to set up and run realistic cyberattacks in your organization, and identify vulnerable people before a real cyberattack affects your business. To learn more, see [Simulate a phishing attack](attack-simulation-training.md).
+Use Attack simulation training to set up and run realistic cyberattacks in your organization, and identify vulnerable people before a real cyberattack affects your business. To learn more, see [Simulate a phishing attack](attack-simulation-training-simulations.md).
 
 To view and use this feature in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** > **Attack simulation training**. Or, to go directly to the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
 
@@ -119,4 +119,4 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 - [Learn about Threat Trackers - New and Noteworthy](threat-trackers.md)
 - [Find and investigate malicious email that was delivered (Office 365 Threat Investigation and Response)](investigate-malicious-email-that-was-delivered.md)
 - [Integrate Office 365 Threat Investigation and Response with Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md)
-- [Simulate a phishing attack](attack-simulation-training.md)
+- [Simulate a phishing attack](attack-simulation-training-simulations.md)
