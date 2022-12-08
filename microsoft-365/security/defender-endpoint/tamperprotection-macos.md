@@ -84,7 +84,7 @@ You can configure the tamper protection mode by providing the mode name as enfor
 
 > [!NOTE]
 > 
-> Enabling **TCC** (Transparency, Consent & Control) through an MDM solution such as [Intune](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-install-with-intune?view=o365-worldwide#full-disk-access), will eliminate the risk of MDE loosing **Full Disk Access** Authorization to function properly 
+> Enabling **TCC** (Transparency, Consent & Control) through an MDM solution such as [Intune](mac-install-with-intune.md#full-disk-access), will eliminate the risk of MDE loosing **Full Disk Access** Authorization to function properly 
 .
 
 ## Configure tamper protection on macOS devices
