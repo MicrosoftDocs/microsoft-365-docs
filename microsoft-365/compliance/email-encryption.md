@@ -16,6 +16,7 @@ search.appverid:
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - purview-compliance
+- tier1
 - m365solution-mip
 - m365initiative-compliance
 - highpri

@@ -15,7 +15,7 @@ ms.date: 09/03/2018
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier2

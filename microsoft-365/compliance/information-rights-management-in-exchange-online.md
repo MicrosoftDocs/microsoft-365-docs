@@ -13,6 +13,8 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
+ms.collection: 
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 description: Learn how to configure Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS) to satisfy your organization requirements.

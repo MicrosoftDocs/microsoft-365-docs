@@ -1,5 +1,5 @@
 ---
-title: "ASP.NET machine key entity definition (preview)"
+title: "ASP.NET machine key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,11 +22,13 @@ recommendations: false
 description: "ASP.NET machine key sensitive information type entity definition."
 ---
 
-# ASP.NET machine key (preview)
+# ASP.NET machine key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Format
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 Symmetric keys in XML configuration.
 
@@ -38,9 +40,15 @@ Various symmetric key formats in XML, for example:
 <machineKey decryptionKey="******** </br> 
 <machineKey validationKey="********
 ```
+## Credential example 
+
+`<machineKey validationKey="ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789" decryptionKey="ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789"`
+
 ## Checksum
 
 No
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
 
 ## Definition
 

@@ -13,6 +13,7 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - purview-compliance
+- tier1
 
 ---
 
