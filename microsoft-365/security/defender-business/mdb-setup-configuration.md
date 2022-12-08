@@ -31,7 +31,6 @@ Defender for Business provides a streamlined setup and configuration experience,
 > - [Configure your security policies and settings](mdb-configure-security-settings.md)
 > - [Visit your Microsoft Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md)
 
-
 ## The setup and configuration process
 
 The following diagram depicts the overall setup and configuration process for Defender for Business. If you used the setup wizard, then you've likely already completed steps 1-3, and possibly step 4. 
@@ -48,4 +47,8 @@ The following diagram depicts the overall setup and configuration process for De
 
 ## Next steps
 
-Proceed to [Step 1: Get and provision Microsoft Defender for Business](get-defender-business.md).
+1. [Get and provision Defender for Business](get-defender-business.md).
+2. [Add users and assign licenses](mdb-add-users.md). 
+3. [Assign security roles and permissions for your security team](mdb-roles-permissions.md).
+4. [Onboard devices](mdb-onboard-devices.md).
+5. [View and edit your security policies and settings](mdb-configure-security-settings.md).
