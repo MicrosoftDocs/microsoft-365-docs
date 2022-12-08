@@ -21,7 +21,7 @@ ms.collection:
 
 # Microsoft Purview insider risk solutions
 
-Insider risks are one of the top concerns of security and compliance professionals in the modern workplace. Industry studies have shown that insider risks are often associated with specific user events or activities. Protecting your organization against these risks can be challenging to identify and difficult to mitigate. Insider risks include vulnerabilities in a variety of areas and can cause major problems for your organization, ranging from the loss of intellectual property to workplace harassment, and more. The following figure outlines common insider risks:
+Insider risks are one of the top concerns of security and compliance professionals in the modern workplace. Industry studies have shown that insider risks are often associated with risky activities. Protecting your organization against these risks can be challenging to identify and difficult to mitigate. Insider risks include vulnerabilities in a variety of areas and can cause major problems for your organization, ranging from the loss of intellectual property to confidential data, and more. The following figure outlines common insider risks:
 
 ![Insider risk threats.](../media/ir-solution-threats.png)
 
@@ -50,7 +50,7 @@ To help protect your organization against insider risks, use these Microsoft Pur
 
 ### Communication compliance
 
-[Microsoft Purview Communication Compliance](communication-compliance.md) helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization.
+[Microsoft Purview Communication Compliance](communication-compliance.md) helps minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization.
 
 Communication compliance is available in the following subscriptions:
 
@@ -63,7 +63,7 @@ Communication compliance is available in the following subscriptions:
 
 ### Insider risk management
 
-[Microsoft Purview Insider Risk Management](insider-risk-management.md) helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization.
+[Microsoft Purview Insider Risk Management](insider-risk-management.md) helps minimize internal risks by enabling you to detect, investigate, and act on potentially malicious and inadvertent activities in your organization.
 
 Insider risk management is available in the following subscriptions:
 

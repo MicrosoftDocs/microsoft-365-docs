@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection: 
   - m365-security
   - tier1
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Take action on advanced hunting query results
@@ -29,7 +29,6 @@ ms.topic: article
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 

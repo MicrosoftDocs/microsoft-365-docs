@@ -11,7 +11,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: null
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_Enterprise
+- purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-mar2020
 description: In this article, you'll learn about encryption technologies that you can manage and configure in Microsoft 365.

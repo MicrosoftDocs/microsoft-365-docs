@@ -1,5 +1,5 @@
 ---
-title: "Automatically apply a retention label"
+title: "Automatically apply a retention label to Microsoft 365 items"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -326,11 +326,13 @@ To consider when auto-applying retention labels to cloud attachments:
 
 - When a user is added to a Teams conversation and given access to the full history of the conversation, that history can include cloud attachments. If they were shared within 48 hours of the user added to the conversation, current copies of the cloud attachments are auto-labeled for retention. Cloud attachments shared before this time period aren't supported for newly added users.
 
+- Cloud attachments in encrypted emails aren't supported.
+
 - Cloud attachments shared outside Teams and Outlook aren't supported.
 
 - The following items aren't supported as cloud attachments that can be retained:
   - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
-  - Files shared by users who don't have access to those files.
+  - Files shared by users who don't have access to those files at the time of sharing.
   - Files that are deleted or moved before the cloud attachment is sent. For example, a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available. Or, somebody forwards an old message when the file is now deleted.
   - Files that are shared by guests or users outside your organization.
   - Files in draft emails and messages that aren't sent.

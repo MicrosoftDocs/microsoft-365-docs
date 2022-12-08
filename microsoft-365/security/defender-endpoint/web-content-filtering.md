@@ -9,13 +9,14 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 10/24/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -179,7 +180,7 @@ Policies can be deployed to block any of the following parent or child categorie
 
 To add a new policy, follow these steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, choose **Settings** > **Web content filtering** > **+ Add policy**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, choose **Settings** > **Endpoints** > **Web content filtering** > **+ Add policy**.
 
 2. Specify a name.
 
