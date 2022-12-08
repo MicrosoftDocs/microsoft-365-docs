@@ -14,11 +14,11 @@ ms.collection:
   - m365-frontline
   - highpri
   - m365solution-frontline
-  - highpri
+  - tier1
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 11/14/2022
+ms.date: 12/05/2022
 ---
 
 # Set up Microsoft 365 for frontline workers
@@ -43,7 +43,7 @@ The following table lists the scenarios for your frontline workers. You can read
 |  ------- | -------  |
 | [Team communication and collaboration](flw-team-collaboration.md) | [Microsoft Teams](#set-up-microsoft-teams) <br>[Email with Exchange Online](#set-up-email-with-exchange-online) |
 | [Corporate communications](flw-corp-comms.md) | [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Engage](#set-up-your-organizations-social-network-with-viva-engage) |
-| [Virtual appointments](virtual-appointments.md) | [Microsoft Teams](#set-up-microsoft-teams) |
+| [Virtual Appointments](virtual-appointments.md) | [Microsoft Teams](#set-up-microsoft-teams) |
 | [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md)| [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Engage](#set-up-your-organizations-social-network-with-viva-engage) |
 | [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | [Microsoft Teams](#set-up-microsoft-teams) |
 | [Onboard new employees](/sharepoint/onboard-employees)| [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Learning](#set-up-viva-learning)|
@@ -173,7 +173,7 @@ For full deployments, follow the guidance in [Deploy Teams at scale for frontlin
 
 #### Set up Viva Connections
 
-Use [Viva Connections](/viva/connections/viva-connections-overview) to create a dashboard that helps engage and inform your frontline workers. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed. 
+Use [Viva Connections](/viva/connections/viva-connections-overview) to create a dashboard that helps engage and inform your frontline workers. Viva Connections is a customizable app in Microsoft Teams that gives everyone a personalized destination to discover relevant news, conversations, and the tools they need to succeed.
 
 Follow the [Build your employee experience setup guide](https://aka.ms/EmployeeExperienceDashboard) to set it up. Learn more about [setting up Viva Connections](/viva/connections/guide-to-setting-up-viva-connections).
 
@@ -217,13 +217,13 @@ Use **team templates** in the Teams admin center or by using PowerShell. You can
 
 The table below shows Teams applications commonly utilized in frontline solutions. Shifts, Approvals, and Walkie Talkie are present in the Teams mobile client out of the box. You can control which applications are available to all users in the Teams admin center.
 
-Scenarios and apps
+**Scenarios and apps**
 
-| Scenario | Approvals | Bookings | Lists | Praise | Shifts | Tasks | Updates |
+| Scenario | Approvals | Virtual Appointments (Preview) or Bookings | Lists | Praise | Shifts | Tasks | Updates |
 | :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [Team communication and collaboration](flw-team-collaboration.md) | &#x2705; | &nbsp; | &#x2705; | &#x2705; | &nbsp; | &#x2705; | &#x2705; |
 | [Corporate communications](flw-corp-comms.md) |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |
-| [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md) |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp;|  &nbsp; |
+| [Virtual Appointments with Microsoft Teams](virtual-appointments.md) |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp;|  &nbsp; |
 | Wellbeing & engagement |  &nbsp; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |
 | [Schedule your team with Shifts](shifts-for-teams-landing-page.md) |  &nbsp; | &nbsp; | &#x2705; |  &nbsp; | &#x2705; | &#x2705; | &#x2705; |
 | [Training: Onboard new employees](/sharepoint/onboard-employees) |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; | &#x2705; |
