@@ -39,8 +39,6 @@ DLP policy templates are pre-sorted into four categories:
 
 This table lists all policy templates and the sensitive information types (SIT) that they cover.
 
-updated: 06/23/2021
-
 |Category|Template | SIT |
 |---------|---------|---------|
 |Financial| Australia Financial Data| - [SWIFT code](sit-defn-swift-code.md) </br> -  [Australia tax file number](sit-defn-australia-tax-file-number.md) </br> - [Australia bank account number](sit-defn-australia-bank-account-number.md) </br> - [Credit card number](sit-defn-credit-card-number.md)|
@@ -152,7 +150,9 @@ DLP supports using trainable classifiers as a condition to detect sensitive docu
 Rules are the business logic of DLP policies. They consist of:
 
 - [**Conditions**](#conditions) that when matched, trigger the policy
-- [**Exceptions**](#exceptions) to the conditions
+<!--- [**Exceptions**](#exceptions) to the conditions
+> [!IMPORTANT]
+> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->  
 - [**Actions**](#actions) to take when the policy is triggered
 - [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they're doing something that triggers a policy and help educate them on how your organization wants sensitive information treated
 - [**User Overrides**](#user-overrides) when configured by an admin, allow users to selectively override a blocking action
@@ -205,14 +205,14 @@ All the other rules are evaluated but their actions aren't enforced. Audit logs 
 
 ### Conditions
 
-Conditions are inclusive and are where you define what you want the rule to look for and context in which those items are being used. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* &#8212; it's a match and the rest of the actions in the policy should be taken on it. You can use conditions to assign different actions to different risk levels. For example, sensitive content shared internally might be lower risk and require fewer actions than sensitive content shared with people outside the organization.
+Conditions are where you define what you want the rule to look for and context in which those items are being used. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* &#8212; it's a match and the rest of the actions in the policy should be taken on it. You can use conditions to assign different actions to different risk levels. For example, sensitive content shared internally might be lower risk and require fewer actions than sensitive content shared with people outside the organization.
 
 > [!NOTE]
 > Users who have non-guest accounts in a host organization's Active Directory or Azure Active Directory tenant are considered as people inside the organization.
 
 #### Content contains
 
- All locations support the **Content contains** contains condition. You can select multiple instances of each content type and further refine the conditions by using the **Any of these** (logical OR) or **All of these** (logical AND) operators:
+ All locations support the **Content contains** condition. You can select multiple instances of each content type and further refine the conditions by using the **Any of these** (logical OR) or **All of these** (logical AND) operators:
 
 - [sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [sensitivity labels](sensitivity-labels.md)
@@ -350,11 +350,17 @@ For the **U.S. Health Insurance Act (HIPPA)**, conditions are grouped like this:
 
 ![HIPPA policy conditions](../media/dlp-rules-condition-groups-booleans.png)
 
-The first group contains the SITs that identify and individual and the second group contains the SITs that identify medical diagnosis.
+The first group contains the SITs that identify an individual and the second group contains the SITs that identify medical diagnosis.
 
-### Exceptions
+Conditions can be grouped and joined by boolean operators (AND, OR, NOT) so that you defining a rule by stating what should be included and then define exclusions in a different group joined to the first by a NOT.
+To learn more about how Purview DLP implements booleans and nested groups see, [Complex rule design](dlp-policy-design.md#complex-rule-design).
 
-In rules, exceptions define conditions that are used to exclude an item from the policy. Logically, exclusive conditions that are evaluated after the inclusive conditions and context. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* it's a match and the rest of the actions in the policy should be taken on it ***except if***... &#8212;
+<!--### Exceptions
+
+> [!IMPORTANT]
+> The **Exceptions** UI is only available in Classic rule builder mode. When you toggle the UI to the **New DLP rule builder**, which enabled nested groups and the boolean operators AND, OR, and, NOT, exceptions are displayed as a nested group under conditions and joined to the conditions with a boolean NOT. To learn more on how to use the **New DLP rule builder** to create exceptions see, [Complex rule design](dlp-policy-design.md#complex-rule-design)
+
+In rules, exceptions define conditions that are used to exclude an item from the policy. Logically, exclusive conditions are evaluated after the inclusive conditions and context. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* it's a match and the rest of the actions in the policy should be taken on it ***except if***... &#8212;
 
 For example, keeping with the HIPPA policy, we could modify the rule to exclude any item that contains a Belgium drivers license number, like this:
 
@@ -368,11 +374,11 @@ Just as all locations support the inclusive condition:
 
 the exception would be:
 
-- **Except if** content contains
+- **Except if** content contains-->
 
 ### Actions
 
-Any item that makes it through the inclusive ***conditions*** and exclusive ***exceptions*** filters will have any ***actions*** that are defined in the rule applied to it. You'll have to configure the required options to support the action. For example, if you select Exchange with the **Restrict access or encrypt the content in Microsoft 365 locations** action you need to choose from these options:
+Any item that makes it through the ***conditions*** <!--and exclusive ***exceptions***--> filter will have any ***actions*** that are defined in the rule applied to it. You'll have to configure the required options to support the action. For example, if you select Exchange with the **Restrict access or encrypt the content in Microsoft 365 locations** action you need to choose from these options:
 
 - Block users from accessing shared SharePoint, OneDrive, and Teams content
   - Block everyone. Only the content owner, last modifier, and site admin will continue to have access
@@ -524,7 +530,7 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-When a user attempts an action on a sensitive item in a context that meets the conditions and exceptions of a rule, you can let them know about it through user notification emails and in context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
+When a user attempts an action on a sensitive item in a context that meets the conditions of a rule, you can let them know about it through user notification emails and in context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
 
 For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with a guest.
 
