@@ -206,6 +206,6 @@ If the keywords in the search query that you created and used in Step 3 contains
 
 You can search the audit log for the eDiscovery activities that were performed during the investigation. You can also search the audit log to return the audit records for the **New-ComplianceSearchAction -Purge** command that you ran in Step 7 to delete the spilled data. For more information, see:
 
-- [Search the audit log](search-the-audit-log-in-security-and-compliance.md)
+- [Search the audit log](audit-log-search.md)
 
 - [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
