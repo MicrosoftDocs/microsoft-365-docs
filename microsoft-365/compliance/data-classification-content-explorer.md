@@ -69,18 +69,18 @@ You can also assign either or both of the roles to a custom role group to tailor
 
 A Global admin, can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
 
-#### Roles and Role Groups in preview
+#### Roles and Role Groups
 
-There are roles and role groups in preview that you can test out to fine tune your access controls.
+There are roles and role groups that you useto fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable role groups. To learn more, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins

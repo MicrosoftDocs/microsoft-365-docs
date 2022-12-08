@@ -148,8 +148,8 @@ Threat analytics is the Microsoft 365 Defender threat intelligence solution from
 ## Partner catalog
 
 Microsoft 365 Defender supports two types of partners:
-1. Third-party integrations to help secure users with effective threat protection, detection, investigation, and response in various security fields of endpoints, vulnerability management, email, identities, and cloud apps.
-2. Professional services where organizations can enhance the detection, investigation, and threat intelligence capabilities of the platform. 
+- Third-party integrations to help secure users with effective threat protection, detection, investigation, and response in various security fields of endpoints, vulnerability management, email, identities, and cloud apps.
+- Professional services where organizations can enhance the detection, investigation, and threat intelligence capabilities of the platform. 
 
 
 ## Send us your feedback
@@ -166,7 +166,7 @@ Keep exploring the features and capabilities in Microsoft 365 Defender:
 - [Hunt for threats across devices, emails, apps, and identities](./advanced-hunting-query-emails-devices.md)
 - [Custom detection rules](./custom-detection-rules.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
-- [Create a phishing attack simulation](../office-365-security/attack-simulation-training.md) and [create a payload for training your teams](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+- [Create a phishing attack simulation](../office-365-security/attack-simulation-training-simulations.md) and [create a payload for training your teams](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
 
 ## Training for security analysts
 
