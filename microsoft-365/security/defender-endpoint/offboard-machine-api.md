@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -46,9 +46,8 @@ Offboard device from Defender for Endpoint.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> This API is supported on Windows 11, Windows 10, version 1703 and later, or Windows Server 2019 and later.
->
-> This API is not supported on MacOS or Linux devices.
+> This API is supported on Windows 11, Windows 10, version 1703 and later; on Windows Server 2019 and later; and on Windows Server 2012 R2 and Windows Server 2016 when using the [new, unified agent for Defender for Endpoint](update-agent-mma-windows.md#upgrade-to-the-new-unified-agent-for-defender-for-endpoint).
+> This API is not supported on macOS or Linux devices.
 
 ## Permissions
 

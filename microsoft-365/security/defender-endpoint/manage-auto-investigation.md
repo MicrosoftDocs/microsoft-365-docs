@@ -76,6 +76,21 @@ Whether taken automatically or upon approval, an automated investigation can res
    - Select **Reject** to prevent a pending action from being taken.
    - Select **Go hunt** to go into [Advanced hunting](advanced-hunting-overview.md).
 
+### Approve or reject remediation actions
+
+For incidents with a remediation status of **Pending approval**, you can also approve or reject a remediation action from within the incident.
+
+1. In the navigation pane, go to **Incidents & alerts** \> **Incidents**.
+2. Filter on **Pending action** for the Automated investigation state (optional).
+3. Select an incident name to open its summary page.
+4. Select the **Evidence and Response** tab.
+5. Select an item in the list to open its flyout pane.
+6. Review the information, and then take one of the following steps:
+   - Select the Approve pending action option to initiate a pending action.
+   - Select the Reject pending action option to prevent a pending action from being taken.
+
+:::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/defender//m365-defender-approve-reject-action.png":::
+
 ## Review completed actions
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.

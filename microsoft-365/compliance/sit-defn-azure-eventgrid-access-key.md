@@ -1,5 +1,5 @@
 ---
-title: "Azure EventGrid access key entity definition (preview)"
+title: "Azure EventGrid access key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,11 +22,13 @@ recommendations: false
 description: "Azure EventGrid access key sensitive information type entity definition."
 ---
 
-# Azure EventGrid access key (preview)
+# Azure EventGrid access key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Format
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 A combination of 43 characters consisting of letters, digits, and special characters ending in an equals sign (=) that isn't part of the pattern.
 
@@ -43,9 +45,15 @@ for example:
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=`
 
+## Credential example 
+
+`host: account.eventgrid.azure.net; accesskey: abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=;`
+
 ## Checksum
 
 No
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
 
 ## Definition
 
