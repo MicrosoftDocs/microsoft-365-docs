@@ -83,7 +83,6 @@ Updates to feature release status will be provided on the original Message cente
 
 The release status will **ONLY** be available for new and updated features that are also announced on M365 Roadmap. If you do not see release status on a message, it means the release status is not available for that feature. 
 
-High fidelity image dispaying 
 
 ## Relevance Recommendation
 
