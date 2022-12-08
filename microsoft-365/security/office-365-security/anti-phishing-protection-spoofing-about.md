@@ -168,7 +168,7 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
   - Use the Tenant Allow/Block List to create an override for the mailing list to treat it as legitimate. For more information, see [Create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders).
 
-If all else fails, you can report the message as a false positive to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+If all else fails, you can report the message as a false positive to Microsoft. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Considerations for anti-spoofing protection
 
