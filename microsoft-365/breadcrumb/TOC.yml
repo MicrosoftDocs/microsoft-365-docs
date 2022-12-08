@@ -14,6 +14,9 @@
   - name: Microsoft 365 Business Premium
     tocHref: /microsoft-365/business-premium/index
     topicHref: /business-premium/index
+  - name: Microsoft Purview
+    tocHref: /microsoft-365/compliance/
+    topicHref: /microsoft-365/compliance/
   - name: Microsoft 365 for enterprise
     tocHref: /microsoft-365/Enterprise/index
     topicHref: /microsoft-365/Enterprise/index
