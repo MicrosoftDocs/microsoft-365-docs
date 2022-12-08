@@ -1058,6 +1058,8 @@
           href: apply-sensitivity-label-automatically.md
         - name: Use sensitivity labels with teams, groups, and sites
           href: sensitivity-labels-teams-groups-sites.md
+        - name: Use sensitivity labels to protect meetings
+          href: sensitivity-labels-meetings.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Configure a default sensitivity label for SharePoint libraries
@@ -1149,6 +1151,16 @@
           href: prepare-tls-1.2-in-office-365.md
         - name: Office TLS Certificate Changes
           href: encryption-office-365-tls-certificates-changes.md 
+    - name: On-premises scanner
+      items: 
+        - name: Learn about the scanner
+          href: deploy-scanner.md
+        - name: Get started with the scanner
+          href: deploy-scanner-prereqs.md
+        - name: Configure & install the scanner
+          href: deploy-scanner-configure-install.md
+        - name: Run the scanner
+          href: deploy-scanner-manage.md  
     - name: Data loss prevention (DLP)
       items: 
         - name: Learn about DLP
@@ -1526,9 +1538,9 @@
           items: 
             - name: Learn about collections
               href: collections-overview.md
-            - name: Create a draft collection
+            - name: Create a collection estimate
               href: create-draft-collection.md
-            - name: Commit a draft collection to a review set
+            - name: Commit a collection estimate to a review set
               href: commit-draft-collection.md
             - name: Collection statistics and reports
               href: collection-statistics-reports.md        
@@ -1654,47 +1666,49 @@
 - name: Manage auditing and alert policies
   items: 
     - name: Microsoft Purview auditing solutions
-      href: auditing-solutions-overview.md
+      href: audit-solutions-overview.md
     - name: Audit (Standard)
       items:
         - name: Set up Audit (Standard)
-          href: set-up-basic-audit.md
+          href: audit-standard-setup.md
         - name: Search the audit log
-          href: search-the-audit-log-in-security-and-compliance.md
+          href: audit-log-search.md
         - name: Audit New Search
           href: audit-new-search.md
         - name: Export, configure, and view audit log records
-          href: export-view-audit-log-records.md
+          href: audit-log-export-records.md
         - name: Use a PowerShell script to search the audit log
           href: audit-log-search-script.md
         - name: Detailed properties in the audit log
-          href: detailed-properties-in-the-office-365-audit-log.md
+          href: audit-log-detailed-properties.md
         - name: Turn auditing on or off
-          href: turn-audit-log-search-on-or-off.md
+          href: audit-log-enable-disable.md
         - name: Use the audit log to investigate common issues
-          href: auditing-troubleshooting-scenarios.md
+          href: audit-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
-          href: use-sharing-auditing.md
-        - name: Office 365 Management Activity API
-          items:
-            - name: Office 365 Management Activity API reference
-              href: /office/office-365-management-api/office-365-management-activity-api-reference
-            - name: Office 365 Management Activity API schema
-              href: /office/office-365-management-api/office-365-management-activity-api-schema
-            - name: Office 365 Management Activity API FAQs and troubleshooting
-              href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
+          href: audit-log-sharing.md
     - name: Audit (Premium)
       items:
         - name: Overview of Audit (Premium)
-          href: advanced-audit.md
+          href: audit-premium.md
         - name: Set up Audit (Premium)
-          href: set-up-advanced-audit.md
+          href: audit-premium-setup.md
         - name: Manage audit log retention policies
           href: audit-log-retention-policies.md
         - name: Use Audit (Premium) to investigate compromised accounts
-          href: mailitemsaccessed-forensics-investigations.md
+          href: audit-log-investigate-accounts.md
+    - name: Office 365 Management Activity API resources
+      items:
+        - name: Office 365 Management Activity API reference
+          href: /office/office-365-management-api/office-365-management-activity-api-reference?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+        - name: Office 365 Management Activity API schema
+          href: /office/office-365-management-api/office-365-management-activity-api-schema?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+        - name: Office 365 Management Activity API FAQs and troubleshooting
+          href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+    - name: Audit log activities
+      href: audit-log-activities.md
     - name: Mailbox auditing
-      href: enable-mailbox-auditing.md
+      href: audit-mailboxes.md
     - name: Alert policies
       href: alert-policies.md
 - name: Manage compliance risks
