@@ -429,7 +429,7 @@ The report refreshes to show the results that malware detected in email, using t
 
 ## View phishing URL and click verdict data
 
-Suppose that you want to see phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links.md) must be configured. Make sure that you set up [Safe Links policies](set-up-safe-links-policies.md) for time-of-click protection and logging of click verdicts by Safe Links.
+Suppose that you want to see phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links-about.md) must be configured. Make sure that you set up [Safe Links policies](safe-links-policies-configure.md) for time-of-click protection and logging of click verdicts by Safe Links.
 
 To review phish URLs in messages and clicks on URLs in phish messages, use the [**Email** > **Phish**](threat-explorer-views.md#email--phish) view of Explorer or Real-time detections.
 
@@ -478,7 +478,7 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 
 ## Review email messages reported by users
 
-Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Report Message add-in](submissions-users-report-message-add-in-configure.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md). To see them, use the [**Email** > **Submissions**](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
+Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md), use the [**Email** \> **Submissions**](threat-explorer-views.md#email--submissions) view of Explorer (or Real-time detections).
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
@@ -494,7 +494,7 @@ Suppose that you want to see email messages that users in your organization repo
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/EmailUserReportedReportType.png" alt-text="The user-reported phish" lightbox="../../media/EmailUserReportedReportType.png":::
 
-The report refreshes to show data about email messages that people in your organization reported as a phishing attempt. You can use this information to conduct further analysis, and, if necessary, adjust your [anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+The report refreshes to show data about email messages that people in your organization reported as a phishing attempt. You can use this information to conduct further analysis, and, if necessary, adjust your [anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 ## Start automated investigation and response
 
@@ -508,9 +508,9 @@ The report refreshes to show data about email messages that people in your organ
 In addition to the scenarios outlined in this article, you have many more reporting options available with Explorer (or Real-time detections). See the following articles:
 
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
-- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
+- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](./safe-attachments-for-spo-odfb-teams-about.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
-- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+- [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## Required licenses and permissions

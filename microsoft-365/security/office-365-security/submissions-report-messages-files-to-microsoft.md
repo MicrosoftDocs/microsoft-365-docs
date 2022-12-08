@@ -31,20 +31,29 @@ ms.service: microsoft-365-security
 
 Wondering what to do with suspicious emails or files? In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, *users* and *admins* have different ways to report a suspicious email message, URL, or email attachment to Microsoft.
 
-In addition, Microsoft 365 organizations with Microsoft Defender for Endpoint admins also have several methods for reporting files.
+In addition, admins in Microsoft 365 organizations with Microsoft Defender for Endpoint also have several methods for reporting files.
 
 Watch this video that shows more information about the unified submissions experience.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE50HhM]
 
-## Report a suspicious email to Microsoft
+## Report suspicious email messages to Microsoft
 
-|Method|Submission type|Description|
+|Method|Submission type|Comments|
 |---|---|---|
-|[Use the Submissions portal to submit suspected spam, phish, URLs, and email attachments to Microsoft](admin-submission.md)|Admin|The recommended reporting method for admins in organizations with Exchange Online mailboxes (not available in standalone EOP).|
-|[Enable the Report Message or the Report Phishing add-ins](submissions-users-report-message-add-in-configure.md)|User|Works with Outlook and Outlook on the web (formerly known as Outlook Web App). <br/><br/> Depending on your subscription, messages that users reported with the add-ins are available in [the Admin Submissions portal](admin-submission.md), [Automated investigation and response (AIR) results](air-view-investigation-results.md), the [User-reported messages report](view-email-security-reports.md#user-reported-messages-report), and [Explorer](threat-explorer-views.md#email--submissions). <br/><br/> You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](submissions-user-reported-messages-files-custom-mailbox.md).
-|[Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md)|User|Submit false positives (good email that was blocked or sent to junk folder) and false negatives (unwanted email or phish that was delivered to the inbox) to Exchange Online Protection (EOP) using the Report Message feature.|
-|[Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Admin|Learn how to create a mail flow rule (also known as a transport rule) that notifies you when users report messages to Microsoft for analysis.|
-|[Submit files for analysis](../intelligence/submission-guide.md)|Admin|Submit email attachments and other suspected files to Microsoft for analysis.|
+|[The built-in Report button](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web)|User|Currently, this method is available only in Outlook on the web (formerly known as Outlook Web App or OWA).|
+|[The Microsoft Report Message and Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook)|User|These free add-ins work in Outlook on all available platforms. For installation instructions, see [Enable the Report Message or the Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).|
+|[The Submissions page in the Microsoft 365 Defender portal](submissions-admin.md)|Admin|Admins use this method to report good (false positives) and bad (false negative) **Email**, **Email attachments**, and **URLs**, including user reported messages, to Microsoft for further analysis. Available in organizations with Exchange Online mailboxes (not available in standalone EOP).|
+
+[User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) allow admins to configure whether user reported messages go to a specified reporting mailbox, to Microsoft, or both. Depending on your subscription, user reported messages are available in the following locations in the Defender portal:
+
+- [The Submissions page](submissions-admin.md)
+- [Automated investigation and response (AIR) results](air-view-investigation-results.md)
+- [The User-reported messages report](reports-email-security.md#user-reported-messages-report)
+- [Threat Explorer](threat-explorer-views.md#email--submissions)
+
+Admins can use mail flow rules (also known as transport rules) to notify specified email address when users report messages to Microsoft for analysis. For more information, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
+
+Admins can also submit email attachments and other suspected files to Microsoft for analysis using the sample submission portal at <https://www.microsoft.com/wdsi/filesubmission>. For more information, see [Submit files for analysis](../intelligence/submission-guide.md).
 
 > [!NOTE]
 > When you report an email entity to Microsoft, we copy everything associated with the email to include it in our continual algorithm reviews. This copy includes the email content, email headers, and related data about email routing. Any message attachments are also included.

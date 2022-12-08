@@ -39,7 +39,7 @@ When you submit an email message for analysis, you will get:
 > [!IMPORTANT]
 > Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside the organization when data is not supposed to leave the tenant boundary for compliance purposes.
 
-For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
@@ -51,7 +51,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 - To submit messages and files to Microsoft, you need to have one of following roles:
   - **Security Administrator** or **Security Reader** in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-    Note that one of these roles is required to [View user submissions to the custom mailbox](#view-user-submissions-to-microsoft) as described later in this article.
+    Note that one of these roles is required to [View user reported messages](#view-user-reported-messages-to-microsoft) as described later in this article.
 
 - Admins can submit messages as old as 30 days if it is still available in the mailbox and not purged by the user or another admin.
 
@@ -60,7 +60,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
   - Same submissions in a 24 hour period: 3 submissions
   - Same submissions in a 15 minute period: 1 submission
 
-- For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Report questionable email to Microsoft
 
@@ -86,7 +86,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      - **The email should have been categorized as**: Select **Phish**, **Malware**, or **Spam**. If you're not sure, use your best judgment.
 
-     - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+     - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
        After you select this option, the following settings are available:
 
@@ -107,9 +107,9 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 :::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-block.png":::
 
 > [!NOTE]
-> For messages that were incorrectly blocked by [spoof intelligence](learn-about-spoof-intelligence.md), a block entry for the domain pair is not created in the Tenant Allow/Block List.
+> For messages that were incorrectly blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md), a block entry for the domain pair is not created in the Tenant Allow/Block List.
 >
-> For messages that were incorrectly blocked by [domain or user impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), a block entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](configure-mdo-anti-phishing-policies.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
+> For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), a block entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 
 ## Report questionable email attachments to Microsoft
 
@@ -129,7 +129,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgment.
 
-     - **Block this file**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+     - **Block this file**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
        After you select this option, the following settings are available:
 
@@ -165,7 +165,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgment.
 
-     - **Block this URL**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+     - **Block this URL**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
        After you select this option, the following settings are available:
 
@@ -231,7 +231,7 @@ After a few moments, the allow entry will appear on the **Domains & addresses** 
 > - If the sender has not already been blocked, submitting the email message to Microsoft won't create an allow entry in the Tenant Allow/Block List.
 > - Allows are added during mail flow, based on which filters determined the message to be malicious. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
 > - When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are skipped. For an email, all other entities are still evaluated by the filtering system before making a decision.
-> - During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-validation-and-authentication.md) passes, a message from a sender in the allow entry will be delivered.
+> - During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message from a sender in the allow entry will be delivered.
 
 ## Report good email attachments to Microsoft
 
@@ -266,7 +266,7 @@ After a few moments, the allow entry will appear on the **Domains & addresses** 
 After a few moments, an allow entry will appear on the **Files** tab on the **Tenant Allow/Block List** page.
 
 > [!NOTE]
-> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered.
+> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered.
 
 ## Report good URLs to Microsoft
 
@@ -281,7 +281,6 @@ After a few moments, an allow entry will appear on the **Files** tab on the **Te
    - **Select the submission type**: Verify the value **URL** is selected.
 
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can also provide a top level domain (for example, `https://www.fabrikam.com/*`), and then select it in the box that appears. 
-
 
    - **Select a reason for submitting to Microsoft**: Select **Should not have been blocked (False positive)**, and then configure the following settings:
 
@@ -299,11 +298,11 @@ After a few moments, an allow entry will appear on the **Files** tab on the **Te
 
    :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Submit a false positive (good) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-allow.png":::
 
-After a few moments, an allow entry will appear on the **URL** tab on the **Tenant Allow/Block List** page. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+After a few moments, an allow entry will appear on the **URL** tab on the **Tenant Allow/Block List** page. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 > [!NOTE]
 >
-> - When the URL is detected again, it's not sent for [Safe Links](safe-links.md) detonation or URL reputation checks, and all other URL-based filters are skipped.
+> - When the URL is detected again, it's not sent for [Safe Links](safe-links-about.md) detonation or URL reputation checks, and all other URL-based filters are skipped.
 > - During mail flow, if messages containing the URL pass other non-URL checks in the filtering stack, the messages will be delivered.
 
 ## View email admin submissions to Microsoft
@@ -474,13 +473,13 @@ Messages that are submitted in admin submissions are reviewed by Microsoft and r
 
 If an override was found, the result should be available in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override, then the feedback from graders could take up to a day.
 
-## View user submissions to Microsoft
+## View user reported messages to Microsoft
 
-If you've deployed the [Report Message add-in](submissions-users-report-message-add-in-configure.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User reported message** tab.
+If you've deployed the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md) or if people use the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web), you can see what users are reporting on the **User reported** tab on the **Submissions** page.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions** \> **User reported** tab. To go directly to the **User reported** tab, use <https://security.microsoft.com/reportsubmission?viewid=user>.
 
-2. On the **Submissions** page, select the **User reported messages** tab.
+2. On the **User reported** tab, the following settings are available:
 
    - Click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns** to select the columns that you want to view. The default values are marked with an asterisk (\*):
      - **Email subject**<sup>\*</sup>
@@ -488,6 +487,7 @@ If you've deployed the [Report Message add-in](submissions-users-report-message-
      - **Date reported**<sup>\*</sup>
      - **Sender**<sup>\*</sup>
      - **Reported reason**<sup>\*</sup>
+     - **Original verdict**<sup>\*</sup>
      - **Result**<sup>\*</sup>
      - **Message reported ID**
      - **Network Message ID**
@@ -517,13 +517,12 @@ If you've deployed the [Report Message add-in](submissions-users-report-message-
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
-     > :::image type="content" source="../../media/admin-submission-user-reported-filters.png" alt-text="Filter options for user submissions." lightbox="../../media/admin-submission-user-reported-filters.png":::
-
    - To group the entries, click ![Group icon.](../../media/m365-cc-sc-group-icon.png) **Group** and select one of the following values from the dropdown list:
      - **None**
      - **Reason**
      - **Sender**
      - **Reported by**
+     - **Original verdict**
      - **Result**
      - **Reported from**
      - **Phish simulation**
@@ -535,17 +534,17 @@ If you've deployed the [Report Message add-in](submissions-users-report-message-
    - To notify users, see [Admin Review for Reported messages](admin-review-reported-message.md)
 
 > [!NOTE]
-> If organizations are configured to send user reported messages to the [custom mailbox only](submissions-user-reported-messages-files-custom-mailbox.md), reported messages will appear in **User reported messages** but their results will always be empty (as they would not have been rescanned).
+> User reported messages that are sent only to the [reporting mailbox](submissions-user-reported-messages-files-custom-mailbox.md) (not to Microsoft) appear on the **User reported** tab on the **Submissions** page, but the **Result** value for those entries is always blank (because the messages aren't rescanned).
 
-## Undo user submissions
+## Undo user reported messages
 
-Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it's available for recovery in their Deleted Items or Junk Email folders.
+Once a user reports a suspicious message that's delivered to the reporting mailbox, the user and admins don't can't undo the reported message. The user can recover the messages from their Deleted Items or Junk Email folders.
 
-## Convert user reported messages from the custom mailbox into an admin submission
+## Convert user reported messages in the reporting mailbox into admin submissions
 
-If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
+If you've configured the reporting mailbox to intercept user reported messages without sending the messages to Microsoft, admins can find and manually send specific messages to Microsoft for analysis.
 
-On the **User reported messages** tab, select a message in the list, click ![Submit to Microsoft for analysis add icon.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Submit to Microsoft for analysis**, and then select one of the following values from the dropdown list:
+On the **User reported** tab at <https://security.microsoft.com/reportsubmission?viewid=user>, select a message from the list, click ![Submit to Microsoft for analysis add icon.](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **Submit to Microsoft for analysis**, and then select one of the following values from the dropdown list:
 
 - **Report clean**
 - **Report phishing**
@@ -555,7 +554,7 @@ On the **User reported messages** tab, select a message in the list, click ![Sub
 
   :::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The New options on the Action button" lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
 
-If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the overflow menu inside the submission flyout of the respective user reported message.
+If the message is reported to Microsoft, the **Converted to admin submission** value turns from **no** to **yes**. You can directly access the admin submission by clicking **View the converted admin submission** from the ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** menu on the submission flyout of the message.
 
 :::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="Option to view a created admin submission from a user reported message.":::
 
@@ -564,14 +563,14 @@ If the message is reported to Microsoft, the **Converted to admin submission** v
 > [!IMPORTANT]
 > The information in this section applies only to Defender for Office 365 Plan 2 or higher.
 >
-> Currently, user submissions generate alerts only for messages that are reported as phishing.
+> Currently, user reported messages generate alerts only for messages that are reported as phishing.
 
 For each user reported phishing message and admin email submission, a corresponding alert is generated.
 
-To view the corresponding alert for a user reported phishing message, select the **User reported messages** tab, and then double-click the message to open the submission flyout. Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** and then select  **View alert**.
+To view the corresponding alert for a user reported phishing message, go to the **User reported** tab at <https://security.microsoft.com/reportsubmission?viewid=user>, and then double-click the message to open the submission flyout. Click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** and then select **View alert**.
 
 :::image type="content" source="../../media/alert-from-user-submission.png" alt-text="Option to view the related alert from a user reported phishing message.":::
 
-To view the corresponding alert for admin email submissions, select the **Emails** tab, and then double-click the message to open the submission flyout. Select **View alert** on the **Open email entity** option.
+To view the corresponding alert for admin email submissions, go to the **Emails** tab at <https://security.microsoft.com/reportsubmission?viewid=email>, and then double-click the message to open the submission flyout. Select **View alert** on the **Open email entity** option.
 
 :::image type="content" source="../../media/alert-from-admin-submission.png" alt-text="Option to view the related alert from an admin submission.":::

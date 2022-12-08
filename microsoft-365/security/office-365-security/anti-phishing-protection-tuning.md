@@ -34,17 +34,17 @@ If a recipient's account was compromised as a result of the phishing message, fo
 
 If your subscription includes Microsoft Defender for Office 365, you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
-- [Safe Links in Microsoft Defender for Office 365](set-up-safe-links-policies.md)
+- [Safe Links in Microsoft Defender for Office 365](safe-links-policies-configure.md)
 
 - [Safe Attachments in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
 
-- [Anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
+- [Anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 
 Verify these Defender for Office 365 features are turned on.
 
 ## Report the phishing message to Microsoft
 
-Reporting phishing messages is helpful in tuning the filters that are used to protect all customers in Microsoft 365. For instructions, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+Reporting phishing messages is helpful in tuning the filters that are used to protect all customers in Microsoft 365. For instructions, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Inspect the message headers
 
@@ -58,7 +58,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - For messages that end up in quarantine by mistake, or for messages that are allowed through, we recommend that you search for those messages in [Threat Explorer and real-time detections](threat-explorer.md). You can search by sender, recipient, or message ID. After you locate the message, go to details by clicking on the subject. For a quarantined message, look to see what the "detection technology" was so that you can use the appropriate method to override. For an allowed message, look to see which policy allowed the message.
 
-- Email from spoofed senders (the From address of the message doesn't match the source of the message) is classified as phishing in Defender for Office 365. Sometimes spoofing is benign, and sometimes users don't want messages from specific spoofed sender to be quarantined. To minimize the impact to users, periodically review the [spoof intelligence insight](learn-about-spoof-intelligence.md), the **Spoofed senders** tab in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md), and the [Spoof detections report](view-email-security-reports.md#spoof-detections-report). Once you have reviewed allowed and blocked spoofed senders and made any necessary overrides, you can be confident to [configure spoof intelligence in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
+- Email from spoofed senders (the From address of the message doesn't match the source of the message) is classified as phishing in Defender for Office 365. Sometimes spoofing is benign, and sometimes users don't want messages from specific spoofed sender to be quarantined. To minimize the impact to users, periodically review the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md), the **Spoofed senders** tab in the [Tenant Allow/Block List](tenant-allow-block-list-about.md), and the [Spoof detections report](reports-email-security.md#spoof-detections-report). Once you have reviewed allowed and blocked spoofed senders and made any necessary overrides, you can be confident to [configure spoof intelligence in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
 
 - You can repeat the above step for Impersonation (domain or user) in Microsoft Defender for Office 365. The Impersonation report is found under **Threat Management** \> **Dashboard** \> **Insights**.
 
@@ -70,19 +70,19 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
   - Verify that your SPF record identifies _all_ sources of email for senders in your domain (don't forget third-party services!).
 
-  - Use hard fail (\-all) to ensure that unauthorized senders are rejected by email systems that are configured to do so. You can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) to help identify senders that are using your domain so that you can include authorized third-party senders in your SPF record.
+  - Use hard fail (\-all) to ensure that unauthorized senders are rejected by email systems that are configured to do so. You can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) to help identify senders that are using your domain so that you can include authorized third-party senders in your SPF record.
 
   For configuration instructions, see:
 
-  - [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
 
-  - [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md)
+  - [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md)
 
-  - [Use DMARC to validate email](use-dmarc-to-validate-email.md)
+  - [Use DMARC to validate email](email-authentication-dmarc-configure.md)
 
 - Whenever possible, we recommend that you deliver email for your domain directly to Microsoft 365. In other words, point your Microsoft 365 domain's MX record to Microsoft 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Microsoft 365. If you must use a third-party email hygiene system in front of EOP, use Enhanced Filtering for Connectors. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Users should use the [Report Message add-in](submissions-users-report-message-add-in-configure.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md) to report messages to Microsoft, which can train our system. Admins should also take advantage of [Admin Submission](admin-submission.md) capabilities.
+- Using the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web) or the [Microsoft Report Message or Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook) to report messages to Microsoft helps with the training of our detection systems. Admins should also take advantage of [admin submission](submissions-admin.md) capabilities to report messages to Microsoft.
 
 - Multi factor authentication (MFA) is a good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 

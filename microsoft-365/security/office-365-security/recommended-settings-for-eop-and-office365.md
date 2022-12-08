@@ -55,7 +55,7 @@ Anti-spam, anti-malware, and anti-phishing are EOP features that can be configur
 
 ### EOP anti-spam policy settings
 
-To create and configure anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+To create and configure anti-spam policies, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
@@ -79,7 +79,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |Enable ZAP for spam messages <br><br> _SpamZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Allow & block list**|||||
 |Allowed senders <br><br> _AllowedSenders_|None|None|None||
-|Allowed sender domains <br><br> _AllowedSenderDomains_|None|None|None|Adding domains to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <br><br> Use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
+|Allowed sender domains <br><br> _AllowedSenderDomains_|None|None|None|Adding domains to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <br><br> Use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list-about.md) to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
 |Blocked senders <br><br> _BlockedSenders_|None|None|None||
 |Blocked sender domains <br><br> _BlockedSenderDomains_|None|None|None||
 
@@ -152,7 +152,7 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 ### EOP anti-phishing policy settings
 
-For more information about these settings, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+For more information about these settings, see [Spoof settings](anti-phishing-policies-about.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md).
 
 The spoof settings are inter-related, but the **Show first contact safety tip** setting has no dependency on spoof settings.
 
@@ -161,10 +161,10 @@ The spoof settings are inter-related, but the **Show first contact safety tip** 
 |**Phishing threshold & protection**|||||
 |**Enable spoof intelligence** <br><br> _EnableSpoofIntelligence_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Actions**|||||
-|**If message is detected as spoof** <br><br> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md). <br><br> If you select **Quarantine the message**, an **Apply quarantine policy** box is available to select the quarantine policy that defines what users are allowed to do to messages that are quarantined as spoofing. When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as spoofing (DefaultFullAccessPolicy with no quarantine notifications). <br><br> Standard and Strict preset security policies use the default quarantine policy (DefaultFullAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Admins can create and select custom quarantine policies that define more restrictive or less restrictive capabilities for users in the default or custom anti-phishing policies. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**Show first contact safety tip** <br><br> _EnableFirstContactSafetyTips_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|For more information, see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
-|**Show (?) for unauthenticated senders for spoof** <br><br> _EnableUnauthenticatedSender_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Unauthenticated sender indicators](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
-|**Show "via" tag** <br><br> _EnableViaTag_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. <br><br> For more information, see [Unauthenticated sender indicators](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).|
+|**If message is detected as spoof** <br><br> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). <br><br> If you select **Quarantine the message**, an **Apply quarantine policy** box is available to select the quarantine policy that defines what users are allowed to do to messages that are quarantined as spoofing. When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as spoofing (DefaultFullAccessPolicy with no quarantine notifications). <br><br> Standard and Strict preset security policies use the default quarantine policy (DefaultFullAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Admins can create and select custom quarantine policies that define more restrictive or less restrictive capabilities for users in the default or custom anti-phishing policies. For more information, see [Quarantine policies](quarantine-policies.md).|
+|**Show first contact safety tip** <br><br> _EnableFirstContactSafetyTips_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|For more information, see [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip).|
+|**Show (?) for unauthenticated senders for spoof** <br><br> _EnableUnauthenticatedSender_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Unauthenticated sender indicators](anti-phishing-policies-about.md#unauthenticated-sender-indicators).|
+|**Show "via" tag** <br><br> _EnableViaTag_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. <br><br> For more information, see [Unauthenticated sender indicators](anti-phishing-policies-about.md#unauthenticated-sender-indicators).|
 
 ## Microsoft Defender for Office 365 security
 
@@ -172,7 +172,7 @@ Additional security benefits come with a Microsoft Defender for Office 365 subsc
 
 > [!IMPORTANT]
 >
-> - The default anti-phishing policy in Microsoft Defender for Office 365 provides [spoof protection](set-up-anti-phishing-policies.md#spoof-settings) and mailbox intelligence for all recipients. However, the other available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) features and [advanced settings](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are not configured or enabled in the default policy. To enable all protection features, modify the default anti-phishing policy or create additional anti-phishing policies.
+> - The default anti-phishing policy in Microsoft Defender for Office 365 provides [spoof protection](anti-phishing-policies-about.md#spoof-settings) and mailbox intelligence for all recipients. However, the other available [impersonation protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) features and [advanced settings](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are not configured or enabled in the default policy. To enable all protection features, modify the default anti-phishing policy or create additional anti-phishing policies.
 >
 > - Although there's no default Safe Attachments policy or Safe Links policy, the **Built-in protection** preset security policy provides Safe Attachments protection and Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Attachments policies or Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 >
@@ -182,11 +182,11 @@ If your subscription includes Microsoft Defender for Office 365 or if you've pur
 
 ### Anti-phishing policy settings in Microsoft Defender for Office 365
 
-EOP customers get basic anti-phishing as previously described, but Defender for Office 365 includes more features and control to help prevent, detect, and remediate against attacks. To create and configure these policies, see [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+EOP customers get basic anti-phishing as previously described, but Defender for Office 365 includes more features and control to help prevent, detect, and remediate against attacks. To create and configure these policies, see [Configure anti-phishing policies in Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 #### Advanced settings in anti-phishing policies in Microsoft Defender for Office 365
 
-For more information about this setting, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure this setting, see [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+For more information about this setting, see [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure this setting, see [Configure anti-phishing policies in Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
@@ -194,7 +194,7 @@ For more information about this setting, see [Advanced phishing thresholds in an
 
 #### Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365
 
-For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure these settings, see [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
+For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). To configure these settings, see [Configure anti-phishing policies in Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
@@ -261,7 +261,7 @@ In PowerShell, you use the [New-SafeAttachmentPolicy](/powershell/module/exchang
 
 ### Safe Links settings
 
-Safe Links in Defender for Office 365 includes global settings that apply to all users who are included in active Safe Links policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Links in Defender for Office 365](safe-links.md).
+Safe Links in Defender for Office 365 includes global settings that apply to all users who are included in active Safe Links policies, and settings that are specific to each Safe Links policy. For more information, see [Safe Links in Defender for Office 365](safe-links-about.md).
 
 Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
@@ -278,7 +278,7 @@ In PowerShell, you use the [Set-AtpPolicyForO365](/powershell/module/exchange/se
 
 |Security feature name|Default|Built-in protection|Comment|
 |---|:---:|:---:|---|
-|**Block the following URLs** <br><br> _ExcludedUrls_|Blank <br><br> `$null`|Blank <br><br> `$null`|We have no specific recommendation for this setting. <br><br> For more information, see ["Block the following URLs" list for Safe Links](safe-links.md#block-the-following-urls-list-for-safe-links). <br><br> **Note**: You can now manage block URL entries in the [Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.|
+|**Block the following URLs** <br><br> _ExcludedUrls_|Blank <br><br> `$null`|Blank <br><br> `$null`|We have no specific recommendation for this setting. <br><br> For more information, see ["Block the following URLs" list for Safe Links](safe-links-about.md#block-the-following-urls-list-for-safe-links). <br><br> **Note**: You can now manage block URL entries in the [Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list). The "Block the following URLs" list is in the process of being deprecated. We'll attempt to migrate existing entries from the "Block the following URLs" list to block URL entries in the Tenant Allow/Block List. Messages containing the blocked URL will be quarantined.|
 
 #### Safe Links policy settings
 
@@ -304,7 +304,7 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 |**Action for potentially malicious URLs in Microsoft Teams**||||||
 |**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams** <br><br> _EnableSafeLinksForTeams_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Action for potentially malicious URLs in Microsoft Office apps**||||||
-|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps** <br><br> _EnableSafeLinksForOffice_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office apps](safe-links.md#safe-links-settings-for-office-apps).|
+|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps** <br><br> _EnableSafeLinksForOffice_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office apps](safe-links-about.md#safe-links-settings-for-office-apps).|
 |**Click protection settings**||||||
 |**Track user clicks** <br><br> _TrackClicks_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Let users click through to the original URL** <br><br> _AllowClickThrough_|Selected <br><br> `$true`|Selected <br><br> `$true`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Turning off this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL.|
@@ -316,7 +316,7 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 
 - Are you looking for best practices for **Exchange mail flow rules (also known as transport rules**)? See [Best practices for configuring mail flow rules in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
-- Admins and users can submit false positives (good email marked as bad) and false negatives (bad email allowed) to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- Admins and users can submit false positives (good email marked as bad) and false negatives (bad email allowed) to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 - Use these links for info on how to **set up** your [EOP service](/exchange/standalone-eop/set-up-your-eop-service), and **configure** [Microsoft Defender for Office 365](defender-for-office-365.md). Don't forget the helpful directions in '[Protect Against Threats in Office 365](protect-against-threats.md)'.
 

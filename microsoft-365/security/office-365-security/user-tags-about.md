@@ -42,13 +42,13 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Alerts](alerts.md)
 - [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
 - [Threat Explorer and real-time detections](threat-explorer.md)
-- [Compromised user report](view-email-security-reports.md#compromised-users-report)
+- [Compromised user report](reports-email-security.md#compromised-users-report)
 - [Email entity page](mdo-email-entity-page.md)
-- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
-- [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
-- [Attack simulation](attack-simulation-training.md#target-users)
+- [Threat protection status report](reports-email-security.md#threat-protection-status-report)
+- [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report)
+- [Attack simulation](attack-simulation-training-simulations.md#target-users)
 - [Campaign Views](campaigns.md)
-- [Admin and user submissions](admin-submission.md)
+- [Admin submissions and user reported messages](submissions-admin.md)
 - [Quarantine](quarantine.md)
 - For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
 

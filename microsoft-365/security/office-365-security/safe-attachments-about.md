@@ -49,7 +49,7 @@ Safe Attachments scanning takes place in the same region where your Microsoft 36
 > [!NOTE]
 > The following features are located in the global settings of Safe Attachments policies in the Microsoft 365 Defender portal. But, these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
-> - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+> - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 > - [Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md)
 
 ## Safe Attachments policy settings
@@ -131,4 +131,4 @@ There are scenarios where Dynamic Delivery is unable to replace attachments in m
 ## Submitting files for malware analysis
 
 - If you receive a file that you want to send to Microsoft for analysis, see [Submit malware and non-malware to Microsoft for analysis](submissions-submit-files-to-microsoft.md).
-- If you receive an email message (with or without an attachment) that you want to submit to Microsoft for analysis, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- If you receive an email message (with or without an attachment) that you want to submit to Microsoft for analysis, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).

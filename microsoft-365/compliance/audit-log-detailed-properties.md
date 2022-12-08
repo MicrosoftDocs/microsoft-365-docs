@@ -30,7 +30,7 @@ When you export the results of an audit log search from the Microsoft Purview co
 The following table describes the properties that are included (depending on the service in which an event occurs) in the multi-property **AuditData** column. The **Office 365 service that has this property** column indicates the service and type of activity (user or admin) that includes the property. For more detailed information about these properties or about properties that may not be listed in this topic, see [Management Activity API Schema](/office/office-365-management-api/office-365-management-activity-api-schema).
   
 > [!TIP]
-> You can use the JSON transform feature in Power Query in Excel to split the **AuditData** column into multiple columns so that each property has its own column. This lets you sort and filter on one or more of these properties. To learn how to do this, see [Export, configure, and view audit log records](audit-log-export-records.md). 
+> You can use the JSON transform feature in Power Query in Excel to split the **AuditData** column into multiple columns so that each property has its own column. This lets you sort and filter on one or more of these properties. To learn how to do this, see [Export, configure, and view audit log records](audit-log-export-records.md).
   
 |**Property**|**Description**|**Microsoft 365 service that has this property**|
 |:-----|:-----|:-----|

@@ -52,9 +52,12 @@ Microsoft 365 Business Basic/Business Standard/Business Premium/F1/F3/E3/A3/E5/A
 - Assign the appropriate licenses to each user on the target tenant.
 
 >[!Important]
->OneDrive sites should **NOT** be created before  OR during a migration.
+>OneDrive sites should **NOT** be created before **OR** during a migration.
 >
->We recommend that OneDrive site creation be restricted in the target tenant to prevent users from creating OneDrive sites. If a OneDrive site already exists for the user on the target tenant, the migration will fail. You can't overwrite an existing site.
+>OneDrive site creation should be restricted in the target tenant to prevent users from creating OneDrive sites. If a OneDrive site already exists for the user on the target tenant, the migration will fail. You can't overwrite an existing site.
+>
+>If users continue to access resources in the source tenant, you should restrict OneDrive creation in the source tenant to prevent creating new OneDrive sites.
+
 
 >[!Note]
 >To learn more about restricting OneDrive site creation, see [Disable OneDrive creation for some users](/sharepoint/manage-user-profiles#disable-onedrive-creation-for-some-users)
