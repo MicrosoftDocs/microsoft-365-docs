@@ -115,7 +115,7 @@ Policy options are extremely flexible. For example, your organization's security
 
 - **[Safe Attachments](safe-attachments-about.md)**: Provides zero-day protection to safeguard your messaging system, by checking email attachments for malicious content. It routes all messages and attachments that do not have a virus/malware signature to a special environment, and then uses machine learning and analysis techniques to detect malicious intent. If no suspicious activity is found, the message is forwarded to the mailbox. To learn more, see [Set up Safe Attachments policies](safe-attachments-policies-configure.md).
 
-- **[Safe Links](safe-links.md)**: Provides time-of-click verification of URLs, for example, in emails messages and Office files. Protection is ongoing and applies across your messaging and Office environment. Links are scanned for each click: safe links remain accessible and malicious links are dynamically blocked. To learn more, see [Set up Safe Links policies](safe-links-policies-configure.md).
+- **[Safe Links](safe-links-about.md)**: Provides time-of-click verification of URLs, for example, in emails messages and Office files. Protection is ongoing and applies across your messaging and Office environment. Links are scanned for each click: safe links remain accessible and malicious links are dynamically blocked. To learn more, see [Set up Safe Links policies](safe-links-policies-configure.md).
 
 - **[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)**: Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries. To learn more, see [Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-configure.md).
 
@@ -139,7 +139,7 @@ Microsoft Defender for Office 365 Plan 2 includes best-of-class [threat investig
 
 - **[Threat Explorer in Plan 2 (or real-time detections in Plan 1)](threat-explorer.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
 
-- **[Attack simulation training](attack-simulation-training.md)** allows you to run realistic attack scenarios in your organization to identify vulnerabilities. Simulations of current types of attacks are available, including spear phishing credential harvest and attachment attacks, and password spray and brute force password attacks.
+- **[Attack simulation training](attack-simulation-training-simulations.md)** allows you to run realistic attack scenarios in your organization to identify vulnerabilities. Simulations of current types of attacks are available, including spear phishing credential harvest and attachment attacks, and password spray and brute force password attacks.
 
 ## Save time with automated investigation and response
 
