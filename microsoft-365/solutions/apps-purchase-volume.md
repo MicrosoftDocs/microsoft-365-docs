@@ -1,11 +1,11 @@
 ---
-title: "Purchase apps in volume for Intune"
+title: "Purchase apps in-volume for Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Purchase apps in volume for Intune.
+description: Purchase apps in-volume for Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Purchase apps in volume for Intune
+# Purchase apps in-volume for Intune
 
 <!--
 ## Types of volume purchased apps 
@@ -49,7 +49,7 @@ Using Apple Business Manager, you can purchase standard apps, custom apps, and u
 > [!IMPORTANT]
 > Before you can purchase app using Apple Business Manager, you must [add a payment method to Apple Business Manager](https://support.apple.com/guide/apple-business-manager/review-content-payment-billing-information-axm746a59fa2/web). You must have a payment method set up to purchase any app, including free apps.
 
-You can purchase app licenses from Apple Business Manager in volume. Before purchasing licenses, first determine the number of licenses you need. Once you have purchased the app licenses, you can then synchronize your volume purchase information with Intune and track your volume-purchased app use. Purchasing app licenses helps you efficiently manage apps within your company and retain ownership and control of purchased apps.
+You can purchase app licenses from Apple Business Manager in-volume. Before purchasing licenses, first determine the number of licenses you need. Once you have purchased the app licenses, you can then synchronize your volume purchase information with Intune and track your volume-purchased app use. Purchasing app licenses helps you efficiently manage apps within your company and retain ownership and control of purchased apps.
 
 For related information about purchasing apps, see [Select and purchase content in Apple Business Manager](https://support.apple.com/guide/apple-business-manager/select-and-purchase-content-axmc21817890/web).
 

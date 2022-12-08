@@ -18,18 +18,20 @@ keywords:
 
 Before you can distribute managed apps to members of your organization, you must add the apps to Intune. Many of the apps that you use with Intune can be added to Intune and deployed to user's devices for free. However, some apps that you can deploy to your workforce may require either a license, subscription, or account for each user to use the app. 
 
-The following table provides the primary ways to obtain app license that you can use with Intune:
+The following table provides the primary ways to obtain app licenses that you can use with Intune:
 
 | App   license type | Description |
 |---|---|
-| Standard   for-use app license | You can freely add these apps to   Intune and deploy them to the members of your organization. These apps do not   require any additional cost to use.  |
-| Purchased   app license  | You must purchase licenses for   these apps before adding them to Intune and deploying them to members of your   organization. Each device platform (Windows, iOS, Android) offers a standard   method to purchase licenses for these apps. Intune provides methods to manage   the app license for each member (end user) of your organization. |
-| License   for apps that requiring an account, subscription, or license from the app   developer | You can freely add and deploy   the app from Intune, but the app requires an account, subscription, or   license from the app developer to use. |
-| App   license of apps included with your Intune license | Based on your Microsoft Intune   license, you may already have Microsoft app licenses available, allowing you   to add and deploy apps to members of your organization. |
+| Standard license included with app | You can freely add these apps to Intune and deploy them to the members of your organization. These apps do not require any additional cost to use.  |
+| Purchased app license  | You must purchase licenses for these apps before adding them to Intune and deploying them to members of your   organization. Each device platform (Windows, iOS, Android) offers a standard method to purchase licenses for these apps. In addition, Intune provides methods to manage the app license for each member (end user) of your organization. |
+| License   for apps that requiring an account, subscription, or license from the app   developer | You can freely add and deploy the app from Intune, but the app requires an account, subscription, or   license from the app developer to use. |
+| App   license of apps included with your Intune license | Based on your Microsoft Intune license, you may already have Microsoft app licenses available, allowing you to add and deploy apps to members of your organization. |
 
-## Standard for-use app license
+## Standard license included with app
 
-As previously mentioned, many of the apps available within the Intune console are free to use. You can add these apps to Intune and assign them to the members of your organization without cost. The members of your organization can use the app without any additional license, subscription, or account. 
+As previously mentioned, many of the apps available within the Intune console are free. You can add these apps to Intune and assign them to the members of your organization without additional cost. The members of your organization can use the app without any additional license, subscription, or account. Each app may have a standard use-license.
+
+You can find these apps using the Intune console. 
 
 ## Purchased app license
 
@@ -39,8 +41,9 @@ You can purchase app licenses in-volume through a volume purchase program (VPP).
 
 ## App licenses included with Intune
 
-For instance, Microsoft Outlook, which can be purchased as part of your Intune license) requires both a license and an account to use the app.
+Intune includes a number of Microsoft apps based on the Microsoft license that you use for Intune. To learn more about the different Microsoft enterprise license available that include Intune, see [Microsoft Intune licensing](/mem/intune/fundamentals/licenses). To compare the different Microsoft apps that are available with Microsoft 365, see the [licensing options available with Microsoft 365](/microsoft-365/compare-microsoft-365-enterprise-plans). To see all the options for each plan (including the available Microsoft apps), download the full [Microsoft subscription comparison table](https://go.microsoft.com/fwlink/?linkid=2139145) and locate the plans that include Microsoft Intune.
 
+For instance, Microsoft Outlook, which can be purchased as part of your Intune license requires both a license and an account to use the app.
 
 ## App functionality included with Microsoft 365 E5 license
 
