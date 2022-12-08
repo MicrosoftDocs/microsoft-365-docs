@@ -6,13 +6,13 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual 
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management 
-- Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+- m365-security
+- tier1
 search.appverid: MET150
 description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows devices." 
 ---

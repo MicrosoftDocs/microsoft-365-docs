@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-ms.collection: M365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
@@ -22,8 +24,6 @@ description: File plan provides advanced management capabilities for retention l
 # Use file plan to create and manage retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Although you can create and manage retention labels from **Data lifecycle management** in the Microsoft Purview compliance portal, file plan from **Records management** has additional management capabilities:
 
@@ -38,6 +38,8 @@ Although you can create and manage retention labels from **Data lifecycle manage
 File plan can be used for all retention labels, even if they don't mark content as a record.
 
 For information about what retention labels are and how to use them, see [Learn about retention policies and retention labels](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Accessing file plan
 
@@ -77,11 +79,11 @@ All columns except the label **Name** can be displayed or hidden by selecting th
     - Yes
     - Yes(Regulatory)
 
-- **Is unlocked by default**—currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
+- **Is unlocked by default** identifies if the item marked as a record is unlocked when the label is applied. Valid values:
     - No
     - Yes
 
-- **Relabel to**—currently rolling out—identifies if the label is configured to apply another label at the end of the retention period. Valid values:
+- **Relabel to** identifies if the label is configured to apply another label at the end of the retention period. Valid values:
     - Blank or the selected label name
 
 - **Retention duration** identifies the retention period. Valid values:

@@ -1,26 +1,26 @@
 ---
 title: "Increase the Recoverable Items quota for mailboxes on hold"
+description: "Enable the archive mailbox and turn on auto-expanding archiving to increase the size of the Recoverable Items folder for a mailbox in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
-description: "Enable the archive mailbox and turn on auto-expanding archiving to increase the size of the Recoverable Items folder for a mailbox in Microsoft 365."
 ---
 
 # Increase the Recoverable Items quota for mailboxes on hold
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 The default Exchange retention policy—named *Default MRM Policy*—that is automatically applied to new mailboxes in Exchange Online contains a retention tag named Recoverable Items 14 days move to archive. This retention tag moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in the user's archive mailbox after the 14-day retention period expires for an item. Emails in Deletions folder will retain based on **RetainDeletedItemsFor** parameter and move to other folders in recoverable deleted items and then to archive mailbox. For this to happen, the user's archive mailbox must be enabled. If the archive mailbox isn't enabled, no action is taken, which means that items in the Recoverable Items folder for a mailbox on hold aren't moved to the archive mailbox after the 14-day retention period expires. Because nothing is deleted from a mailbox on hold, it's possible that the storage quota for the Recoverable Items folder might be exceeded, especially if the user's archive mailbox isn't enabled.
 
@@ -54,6 +54,8 @@ The remainder of this topic describes the step-by-step procedures to create a cu
 [Step 3: Apply the new Exchange retention policy to mailboxes on hold](#step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold)
 
 [(Optional) Step 4: Run the Managed Folder Assistant to apply the new retention settings](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Create a custom retention tag for the Recoverable Items folder
 

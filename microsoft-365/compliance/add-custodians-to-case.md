@@ -1,27 +1,28 @@
 ---
 title: Add custodians to an eDiscovery (Premium) case
+description: "Learn how to use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows and identify relevant data sources in a case."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows and identify relevant data sources in a case."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Add custodians to an eDiscovery (Premium) case
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows around managing custodians and identifying relevant, custodial data sources associated with a case. When you add a custodian, the system can automatically identify and place a hold on their Exchange mailbox and OneDrive for Business account. During the discovery process of your investigation, you might also identify other data sources (such as mailboxes, sites, or Teams) that a custodian accessed or contributed to. In this situation, you can use the custodian management tool to associate those data sources will a specific custodian. After you add custodians to a case and associate other data source with them, you can quickly preserve data and search the custodial data.
 
@@ -34,6 +35,8 @@ You can add and manage custodians in eDiscovery (Premium) cases in four steps:
 3. Configure hold settings.
 
 4. Review the custodians and complete the process.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Make sure you have the necessary permissions
 

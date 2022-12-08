@@ -1,20 +1,24 @@
 ---
-title: "Onboard Windows devices in Azure Virtual Desktop"
+title: Onboard Windows devices in Azure Virtual Desktop
 description: Learn bout onboarding Windows devices to Defender for Endpoint in Azure Virtual Desktop
 keywords: Azure Virtual Desktop, AVD, microsoft defender, endpoint, onboard
-ms.prod: w10
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Onboard Windows devices in Azure Virtual Desktop
@@ -65,7 +69,7 @@ Follow the instructions for a single entry for each device.
 
 This scenario uses a centrally located script and runs it using a domain-based group policy. You can also place the script in the golden image and run it in the same way.
 
-##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Windows 365 Defender portal
+##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Microsoft 365 Defender portal
 
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)
 
@@ -160,4 +164,4 @@ Only Microsoft Edge is supported for web filtering in Windows 10 multi-session.
 
 #### Related Links
 
-[Add exclusions for Defender for Endpoint via PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-by-using-powershell)
+[Add exclusions for Defender for Endpoint via PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-for-cloud-by-using-powershell)

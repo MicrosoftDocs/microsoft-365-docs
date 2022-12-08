@@ -2,7 +2,7 @@
 title: Export software vulnerabilities assessment per device
 description: The API response is per device and contains vulnerable software installed on your exposed devices and any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Export software vulnerabilities assessment per device
@@ -92,8 +95,6 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 <br>
 
-****
-
 Property (ID)|Data type|Description|Example of a returned value
 :---|:---|:---|:---
 CveId|String|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.|CVE-2020-15992
@@ -105,7 +106,7 @@ ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExp
 FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880
 Id|String|Unique identifier for the record.|123ABG55_573AG&mnp!
 LastSeenTimestamp|String|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880
-OSPlatform|String|Platform of the operating system running on the device. This property indicates specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.|Windows10 and Windows 11
+OSPlatform|String|Platform of the operating system running on the device. This property indicates specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See Microsoft Defender Vulnerability Management supported operating systems and platforms for details.|Windows10 and Windows 11
 RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
 RecommendationReference|String|A reference to the recommendation ID related to this software.|va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (optional)|String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates
@@ -115,7 +116,7 @@ SecurityUpdateAvailable|Boolean|Indicates whether a security update is available
 SoftwareName|String|Name of the software product.|Chrome
 SoftwareVendor|String|Name of the software vendor.|Google
 SoftwareVersion|String|Version number of the software product.|81.0.4044.138
-VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
+VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score.|Medium
 |
 
 ### 1.6 Examples
@@ -396,7 +397,7 @@ ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExp
 FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880  
 Id|String|Unique identifier for the record.|123ABG55_573AG&mnp!  
 LastSeenTimestamp|String|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880  
-OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.|Windows10 and Windows 11 
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See Microsoft Defender Vulnerability Management supported operating systems and platforms for details.|Windows10 and Windows 11 
 RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers  
 RecommendationReference|string|A reference to the recommendation ID related to this software.|va--microsoft--silverlight  
 RecommendedSecurityUpdate |String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates  
@@ -406,7 +407,7 @@ SoftwareName|String|Name of the software product.|Chrome
 SoftwareVendor|String|Name of the software vendor.|Google  
 SoftwareVersion|String|Version number of the software product.|81.0.4044.138  
 Status|String|**New** (for a new vulnerability introduced on a device)  (1) **Fixed** (if this vulnerability doesn't exist anymore on the device, which means it was remediated). (2) **Updated** (if a vulnerability on a device has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Fixed
-VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability. It's based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
+VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability. It's based on the CVSS score.|Medium
 |
 
 #### Clarifications
@@ -587,5 +588,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
 
 Other related
 
-- [Risk-based threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)

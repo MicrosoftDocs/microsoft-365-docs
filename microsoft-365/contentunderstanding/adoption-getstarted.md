@@ -1,50 +1,53 @@
 ---
-title: Get started driving adoption of Microsoft SharePoint Syntex
-description: Learn how to use and implement SharePoint Syntex in your organization to help you streamline your business processes.
+title: Get started driving adoption of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.date: 
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection: 
 - enabler-strategic
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: 
 ms.localizationpriority:  medium
+description: Learn how to use and implement Microsoft Syntex in your organization to help streamline your business processes.
 ---
 
-# Get started driving adoption of Microsoft SharePoint Syntex
+# Get started driving adoption of Microsoft Syntex
 
-Think of the intelligent content services available in SharePoint Syntex as having three parts:
+Think of the intelligent content services available in Microsoft Syntex as having three parts:
 
 - **Content understanding:** Create no-code AI models to classify and extract information from content to automatically apply metadata for knowledge discovery and reuse. Learn more about [content understanding](document-understanding-overview.md).
 - **Content processing:** Automate capture, ingestion, and categorization of content and streamline content-centric processes using Power Automate. Learn more about [content processing](form-processing-overview.md).
 - **Content compliance:** Control and manage content to improve security and governance with integration to Microsoft Purview Information Protection.
 
-With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using SharePoint Syntex. There are two different ways of understanding your content. The model type you use is based on file format and use case.
+With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using Syntex. For  custom model types, there are three different ways of understanding your content. The custom model type you use is based on file format and use case.
 
-| Form processing | Document understanding |
-|:-------|:-------|
-| Created from document library. | Created in the content center, part of SharePoint Syntex. |
-| Model created in AI builder. | Model created in native interface. |
-| Used for semi-structured file formats. | Used for unstructured file formats. |
-| Settable classifier. | Trainable classifier with optional extractors. |
-| Restricted to a single library. | Can be applied to multiple libraries. |
-| Train on PDF, JPG, PNG format, total 50 MB/500 pp. | Train on 5-10 PDF, Office, or email files, including negative examples. |
+| Unstructured document processing | Structured document processing | Freeform document processing |
+| ------- | ------- | ------- |
+| Created in the content center, part of Syntex. | Created from document library. | Created from document library. |
+| Model created in native interface. | Model created in AI builder. | Model created in AI builder. |
+| Used for semi-structured or unstructured file formats. | Used for structured or semi-structured file formats. | Used for unstructured or free-form file formats. |
+| Trainable classifier with optional extractors. | Settable classifier. | Settable classifier. |
+| Can be applied to multiple libraries. | Restricted to a single library. | Restricted to a single library. |
+| Train on 5-10 PDF, Office, or email files, including negative examples. | Train on PDF, JPG, PNG format, total 50 MB/500 pp. | Train on PDF, JPG, PNG format, total 50 MB/500 pp. |
 
-For a more complete comparison of the capabilities, see [Difference between document understanding and form processing models](difference-between-document-understanding-and-form-processing-model.md).
+For a more complete comparison of the custom capabilities, see [Compare custom models in Syntex](difference-between-document-understanding-and-form-processing-model.md).
+
+If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents.
 
 ## Identify pilot business scenarios to optimize
 
-To prepare for using SharePoint Syntex in your organization, you first need to understand the scenarios in which it will be useful. The "why" helps determine what model will be needed, and how to structure your org based on where the model will be applied. Here are a few scenarios where document understanding can help your organization:
+To prepare for using Syntex in your organization, you first need to understand the scenarios in which it will be useful. The "why" helps determine what model will be needed, and how to structure your organization based on where the model will be applied. Here are a few scenarios where custom models can help your organization:
 
-- **Content processing:** Process contracts, statements of work, and other form-like documents. Intake the forms, train the model to understand and map the fields, and then run your forms through to automatically collect the data. For more information, see [Form processing overview](form-processing-overview.md).
-- **Invoice analysis:** Pull out the relevant details from your invoices and make sure they're complying with policy or are being processed appropriately.
+- **Content processing**: Process contracts, statements of work, and other form-like documents. Intake the forms, train the model to understand and map the fields, and then run your forms through to automatically collect the data.
 
-Think about ways that SharePoint Syntex can help your organization:
+- **Invoice analysis**: Pull out the relevant details from your invoices and make sure they're complying with policy or are being processed appropriately.
+
+Think about ways that Syntex can help your organization:
 
 - Automate business processes
 - Improve search accuracy
@@ -59,29 +62,28 @@ When thinking about which business scenarios to consider, ask yourself the follo
 
 Prioritize scenarios based on impact and ease of implementation. Make your initial focus area higher impact scenarios that can also be easily implemented. De-prioritize lower impact scenarios that are hard to implement.
 
-Use the [example scenarios and use cases](adoption-scenarios.md) to prompt ideas about how you can use SharePoint Syntex in your organization.
+Use the [example scenarios and use cases](adoption-scenarios.md) to prompt ideas about how you can use Syntex in your organization.
 
-## Identify roles & responsibilities
+## Identify roles and responsibilities
 
 Determine who in your organization will build and manage the models. The following roles might be involved.
 
 | SharePoint/Knowledge admin | Power Platform admin | Knowledge manager | Model owner |
 |:-------|:-------|:-------|:-------|
 | AAD role| AAD role | AAD role | Champions |
-| Configure form processing | Configure Dataverse environment for form processing | Gather use cases | Gather business use cases |
+| Configure structured document processing and freeform document processing models | Configure Dataverse environment | Gather use cases | Gather business use cases |
 | Manage content centers and permissions| Purchase and allocate AIB credits | Establish best practices and review model analytics | Create and apply models |
 
-Knowledge manager, Business Process Owner, and Content model owner create sample models and champion adoption in the organization.
-Others who may be involved: Compliance admin, Taxonomy managers.
+Knowledge manager, business process owner, and content model owner create sample models and champion adoption in the organization. Others who might be involved the compliance admin and taxonomy managers.
 
 Where will they build and apply the models? Are there existing processes or repositories that could be enhanced?
 
-- Form processing: Decide which sites will get Form processing action.
-- Document understanding: You can create multiple content centers for different business areas.
+- Unstructured document processing: You can create multiple content centers for different business areas.
+- Structured document processing or freeform document processing: Decide which sites will get this action.
 
 ## Strategic positioning
 
-Work with stakeholders to make sure they are aligned on the strategy for using SharePoint Syntex. Research and provide the following resources to help with this positioning:
+Work with stakeholders to make sure they are aligned on the strategy for using Syntex. Research and provide the following resources to help with this positioning:
 
 - Business outcomes:
   - Potential fiscal outcomes
@@ -98,8 +100,8 @@ Identify the stakeholders for your project.
 
 |Role |Responsibilities |Department |
 |:-------|:-------|:--------|
-| Executive sponsor(s)   | Communicate high-level vision and values to the company   |  Executive leadership   |
-| Project lead(s) | Oversee the entire launch execution and rollout process | Project management |
+| Executive sponsor   | Communicate high-level vision and values to the company   |  Executive leadership   |
+| Project lead | Oversee the entire launch execution and rollout process | Project management |
 | Knowledge administrators| Create and manage the content centers | IT or other department|
 | Content managers and model owners| Gather use cases and create and apply models | Any department|
 | Champions | Help evangelize and manage objection handling | Any department (staff) |
@@ -107,16 +109,16 @@ Identify the stakeholders for your project.
 | Power Platform administrator| Configure Dataverse environment | IT department|
 
 > [!NOTE]
-> Though we recommend having each of these roles fulfilled throughout your rollout, you may find that you don't require them all to get started with your identified solution.
+> Though we recommend having each of these roles fulfilled throughout your rollout, you might find that you don't require them all to get started with your identified solution.
 
 ## Readiness checklist
 
-To get ready for implementing SharePoint Syntex, you need to:
+To get ready for implementing Syntex, you need to:
 
-![Readiness for Content Understanding.](../media/content-understanding/cu-adoption-readinesschecklist.png)
+![Readiness for content understanding.](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. Plan the end state
-    - Document understanding models are the means, not the end.
+    - Models are the means, not the end.
     - Plan for harnessing the value of extracted metadata with:
       - Search
       - Filtering and view formatting
@@ -127,20 +129,22 @@ To get ready for implementing SharePoint Syntex, you need to:
     - Are any existing content types good candidates for models?
     - What existing processes would be improved by metadata?
 3. Design
-    - Design your approach to information architecture, managed metadata and content types.
-    - Design the process for definition, creation, management.
+    - Design your approach to information architecture, managed metadata, and content types.
+    - Design the process for definition, creation, and management.
 
 ## Engage your organization
 
-1. Identify stake holders, confirm scenarios, and develop project plan.
-1. Configure settings and apply licenses.
-1. Begin awareness and training – Recruit Champions.
-1. Roll out in stages.  
-1. Gather feedback and iterate.
-1. As usage grows plan for any AI Builder credits as needed.
+1. Identify stake holders, confirm scenarios, and develop a project plan.
+2. Configure settings and apply licenses.
+3. Begin awareness and training – recruit champions.
+4. Roll out in stages.  
+5. Gather feedback and iterate.
+6. As usage grows plan for any AI Builder credits as needed.
 
 ## See also
 
-[Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md)
+[Microsoft Syntex adoption center](https://adoption.microsoft.com/sharepoint-syntex/adoption/)
 
-[Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft-365.md)
+[Scenarios and use cases for Microsoft Syntex](adoption-scenarios.md)
+
+[Overview of model types in Microsoft Syntex](syntex-overview.md)

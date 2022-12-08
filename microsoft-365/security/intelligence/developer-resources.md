@@ -4,7 +4,7 @@ ms.reviewer:
 description: This page provides information for developers such as detection criteria, developer questions, and how to check your software against Security intelligence.
 keywords: wdsi, software, developer, resources, detection, criteria, questions, scan, software, definitions, cloud, protection, security intelligence
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -13,9 +13,11 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: m365d
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+search.appverid: met150
 ---
 
 # Software developer resources

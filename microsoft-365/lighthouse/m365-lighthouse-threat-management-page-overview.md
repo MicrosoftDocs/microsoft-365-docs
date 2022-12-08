@@ -4,12 +4,14 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: algreer
+ms.reviewer: algreer
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-lighthouse
+ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -27,7 +29,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft Defender Antivirus protects tenants, users, and devices from software threats including viruses, malware, and spyware. It's robust, ongoing protection that's built into Windows.  
   
-To access the Threat management page in Microsoft 365 Lighthouse, select **Threat Management** in the left navigation pane to view your customer tenants' security posture against threats. You'll see tenants, users, and devices that require your attention and recommendations that will help you reduce risk.  
+To access the Threat management page in Microsoft 365 Lighthouse, select **Devices** > **Threat management** in the left navigation pane to view your customer tenants' security posture against threats. You'll see tenants, users, and devices that require your attention and recommendations that will help you reduce risk.  
   
 ## Overview tab  
   
@@ -72,5 +74,5 @@ The Antivirus protection tab on the Threats management page shows the devices ac
 
 ## Related content
 
-[Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)\
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md)
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

@@ -4,7 +4,8 @@ description: Learn how to use REST API and configure supported security informat
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +14,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ---
 
 # Integrate your SIEM tools with Microsoft 365 Defender
@@ -25,6 +27,9 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 ## Pull Microsoft 365 Defender incidents and streaming event data using security information and events management (SIEM) tools
 
@@ -104,3 +109,7 @@ For more information on the Splunk Add-on for Microsoft Cloud Services, see the 
 
 ### IBM QRadar
 >Use the new IBM QRadar Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products via Event Hubs or Azure Storage Account. For more information on supported event types, see [Supported event types](supported-event-types.md).
+
+## Related topics
+
+[Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)

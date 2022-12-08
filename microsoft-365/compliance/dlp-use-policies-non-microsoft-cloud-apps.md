@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -24,9 +25,9 @@ description: Learn how to use dlp policies for non-Microsoft cloud apps.
 
 # Use data loss prevention policies for non-Microsoft cloud apps
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 You can scope DLP policies to Microsoft Defender for Cloud Apps to monitor, detect and take actions when sensitive items are used and shared via non-Microsoft cloud apps.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 

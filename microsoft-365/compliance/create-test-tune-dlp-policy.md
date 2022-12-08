@@ -11,8 +11,9 @@ f1_keywords:
 - 'ms.o365.cc.NewPolicyFromTemplate'
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- tier1 
+- purview-compliance
 search.appverid: 
 - MET150
 ms.custom:
@@ -23,8 +24,6 @@ description: In this article, you'll learn how to create, test, and tune a DLP p
 
 # Create, test, and tune a DLP policy
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft Purview Data Loss Prevention (DLP) helps you prevent the unintentional or accidental sharing of sensitive information.
 
 DLP examines email messages and files for sensitive information, like a credit card number. Using DLP you can detect sensitive information, and take action such as:
@@ -33,36 +32,36 @@ DLP examines email messages and files for sensitive information, like a credit c
 - Display a warning to the end user who is sending the email or sharing the file
 - Actively block the email or file sharing from taking place
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Permissions
 
-Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:
+Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow the steps in [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group) to add your users to the **DLP Compliance Management** role group.
   
-1. Create a group in Microsoft 365 and add compliance officers to it.
-    
+<!--1. Create a group in Microsoft 365 and add compliance officers to it.
+
 2. Create a role group on the **Permissions** page of the Microsoft Purview compliance portal. 
 
 3. While creating the role group, use the **Choose Roles** section to add the following role to the role group: **DLP Compliance Management**.
-    
+
 4. Use the **Choose Members** section to add the Microsoft 365 group you created before to the role group.
 
 Use the **View-Only DLP Compliance Management** role to create role group with view-only privileges to the DLP policies and DLP reports.
 
-For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group).-->
   
-These permissions are required to create and apply a DLP policy not to enforce policies.
+### Roles and Role Groups
 
-### Roles and Role Groups in preview
+There are roles and role groups that you can use to fine tune your access controls.
 
-There are roles and role groups in preview that you can test out to fine tune your access controls.
-
-Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that you can use to fine tune your access controls. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that you can use. To learn more, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
@@ -222,7 +221,7 @@ Another option is to increase the instance count, so that a low volume of driver
 
 In addition to changing the instance count, you can also adjust the match accuracy (or confidence level). If your sensitive information type has multiple patterns, you can adjust the match accuracy in your rule, so that your rule matches only specific patterns. For example, to help reduce false positives, you can set the match accuracy of your rule so that it matches only the pattern with the highest confidence level. For more information on confidence levels, see [How to use confidence level to tune your rules](data-loss-prevention-policies.md#match-accuracy).
 
-Finally, if you want to get even a bit more advanced, you can customize any sensitive information type -- for example, you can remove "Sydney NSW" from the list of keywords for [Australia driver's license number](sensitive-information-type-entity-definitions.md#australia-drivers-license-number), to eliminate the false positive triggered above. To learn how to do this by using XML and PowerShell, see [customizing a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).
+Finally, if you want to get even a bit more advanced, you can customize any sensitive information type -- for example, you can remove "Sydney NSW" from the list of keywords for [Australia drivers license number](sit-defn-australia-drivers-license-number.md), to eliminate the false positive triggered above. To learn how to do this by using XML and PowerShell, see [customizing a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).
 
 ## Turn on a DLP policy
 

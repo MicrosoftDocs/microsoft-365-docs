@@ -1,26 +1,22 @@
 ---
-title: "About Intune admin roles in the Microsoft 365 admin center"
+title: "Admin roles for Intune in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
-- M365-subscription-management
-- Adm_O365
-
-ms.custom: 
-- AdminSurgePortfolio
-- AdminTemplateSet
-- admindeeplinkMAC
+- tier1
 description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
 ---
 
-# Intune admin roles in the Microsoft 365 admin center
+# Admin roles for Intune in the Microsoft 365 admin center
 
 Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to any users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. Given this, these roles are only a subset of all the roles available in the Intune admin center, which includes additional roles specific to Intune itself.
 
@@ -48,14 +44,14 @@ Here are the built-in roles that you can assign:
 
 |Admin role     |Who should be assigned this role?  |
 |---------|---------|
-|Application manager     |   Assign the Application manager role to users who manage the application lifecycle for mobile apps, configure policy-managed apps, and view device info and configuration profiles.  |
-|Help desk operator     |   Assign the help desk operator role to users who assign apps and policies to users and devices. |
-|Intune role administrator    |   Assign the Intune role administrator to users who can assign Intune permissions to other admins and can manage custom and built in Intune roles.   |
-|Policy and profile manager     |   Assign the policy and profile manager role to users manage compliance policy, configuration profiles and Apple enrollment.   |
-|Read only operator     |   Assign the read only operator role to users who can only view users, devices, enrollment details and configurations.   |
-|School administrator     |   Assign the school administrator role to users for full access to manage Windows 10 and iOS devices, apps and configurations in Intune for Education.   |
-|Cloud PC Administrator     |   A Cloud PC Administrator has read and write access to all Cloud PC features located within the Cloud PC blade.   |
-|Cloud PC Reader     |   A Cloud PC Reader has read access to all Cloud PC features located within the Cloud PC blade.   |
+|**Application manager**     |   Assign the Application manager role to users who manage the application lifecycle for mobile apps, configure policy-managed apps, and view device info and configuration profiles.  |
+|**Help desk operator**     |   Assign the help desk operator role to users who assign apps and policies to users and devices. |
+|**Intune role administrator**    |   Assign the Intune role administrator to users who can assign Intune permissions to other admins and can manage custom and built in Intune roles.   |
+|**Policy and profile manager**     |   Assign the policy and profile manager role to users manage compliance policy, configuration profiles and Apple enrollment.   |
+|**Read only operator**     |   Assign the read only operator role to users who can only view users, devices, enrollment details and configurations.   |
+|**School administrator**     |   Assign the school administrator role to users for full access to manage Windows 10-11 and iOS devices, apps, and configurations in Intune for Education.   |
+|**Cloud PC Administrator**     |   A Cloud PC Administrator has read and write access to all Cloud PC features located within the Cloud PC blade.   |
+|**Cloud PC Reader**     |   A Cloud PC Reader has read access to all Cloud PC features located within the Cloud PC blade.   |
 
 ## Microsoft Intune custom roles
 

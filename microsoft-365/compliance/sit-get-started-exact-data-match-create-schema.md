@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -21,7 +22,11 @@ ms.custom: seo-marvel-apr2020
 
 # Create the schema for exact data match based sensitive information types
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## Applies to
+
+- Classic experience
 
 You can create the schema and EDM SIT by using the [Use the exact data match schema and sensitive information type pattern wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) or [manually](#create-exact-data-match-schema-manually-and-upload). You can also combine both by using one method to create the schema and later edit it using the other method.
 
@@ -32,7 +37,6 @@ If you are not familiar with EDM-based SITS or their implementation, you should 
 - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
 A single EDM schema can be used in multiple sensitive information types that use the same sensitive data table. You can create up to 10 different EDM schemas in a Microsoft 365 tenant.
-
 
 
 ## Use the Exact Data Match Schema and Sensitive Information Type Wizard
@@ -64,7 +68,7 @@ You can use this wizard to help simplify the schema file creation process.
     1. **Enter custom delimiters and punctuation for this field**
 
    > [!IMPORTANT]
-   > At least one, but no more than five of your schema fields must be designated as searchable.
+   > At least one, but no more than ten of your schema fields must be designated as searchable.
 
 7. Choose **Save**. Your schema will now be listed and available for use.
 
@@ -140,6 +144,28 @@ The `ignoredDelimiters` flag doesn't support:
 > When defining your EDM sensitive information type, *ignoreDelimiters* will not affect how the Classification sensitive information type associated with the primary element in an EDM pattern identifies content in an item. So if you configure *ignoreDelimiters* for a searchable field you need to make sure the sensitive information type used for a primary element based on that field will pick strings both with and without those characters present.
 >
 > The number of columns in your sensitive information source table and the number of fields in your schema must match, order doesn't matter.
+
+The characters that are used as *token separators* behave differently than the other delimiters. Here are some examples:
+- \ (space)
+- \\t
+- \,
+- \.
+- \;
+- \?
+- \!
+- \\r
+- \\n  
+
+When you include a *token separator*, EDM will break the token where the separator is. For example, EDM will see the value **Middle-Last Name** into **Middle-Last** and **Name** for the `LastName` field. If the *ignoredDelimiters* is included for the `LastName` field with the character '-', that action only happens after the value is broken. In the end, EDM would see the following values **MiddleLast** and **Name**.
+
+To use the following characters as *ignoredDelimiters* and not *token separators*, a SIT that matches the corresponding format needs to be associated with the field. For example, a SIT that detects a multi-word string with dashes in it needs to be associated with the `LastName` field.
+- \.
+- \;
+- \!
+- \?
+- \\
+
+It is possible to associate SITs to secondary elements using PowerShell.
 
 1. Define the schema in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the sensitive information source table, there is a line that uses the syntax:
 

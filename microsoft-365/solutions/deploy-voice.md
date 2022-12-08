@@ -7,7 +7,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: msteams
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- highpri 
 - M365-collaboration
 - m365solution-overview
 - m365solution-voice

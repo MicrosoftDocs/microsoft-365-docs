@@ -2,17 +2,18 @@
 title: "Reset passwords"
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
+ms.collection:
+- m365-security
+- tier1
 ms.localizationpriority: medium
-ms.collection: 
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
 search.appverid:
 - BCS160
 - MET150

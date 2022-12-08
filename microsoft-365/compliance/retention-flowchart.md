@@ -11,19 +11,18 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid: 
 - MOE150
 - MET150
-description: "Use a flowchart to determine the outcome when an item has multiple retention policies or a retention label and retention policies"
+description: "Use a flowchart to determine the outcome when an item in Microsoft 365 has multiple retention policies or a retention label and retention policies"
 ---
 
 # Flowchart to determine when an item will be retained or permanently deleted
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the following flowchart to apply the [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) to an item to determine if the system will retain it or permanently delete it as a result of a retention label or retention policy.
 

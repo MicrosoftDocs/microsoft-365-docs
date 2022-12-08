@@ -9,7 +9,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -17,8 +18,6 @@ description: "Release notes for support for double byte character sets."
 ---
 
 # Support for double byte character set release notes
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  Microsoft 365 Information Protection now supports double byte character set languages for:
 
@@ -28,6 +27,8 @@ description: "Release notes for support for double byte character sets."
 - Japanese
 
 This support is available for sensitive information types and keyword dictionaries and will be reflected in Microsoft Purview Data Loss Prevention (for Exchange Online, SharePoint Online, OneDrive for Business, and Teams), Communications Compliance, Auto Labelling in office apps and Microsoft Defender for Cloud Apps.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Known issues
 
@@ -43,7 +44,7 @@ This support is available for sensitive information types and keyword dictionari
   - “Attachment contains any of these words”
   - “Attachment contains any of these words”
 
-- Data loss prevention policies are enforceable on macOS devices (preview) running Catalina 10.15 and higher, except for the below mentioned conditions for East 
+- Data loss prevention policies are enforceable on macOS devices (preview) running three latest released versions, except for the below mentioned conditions for East 
   Asian languages including Japanese.
   - Full-width numbers aren’t detected such as using built-in template such as Japan bank account number
   - Numbers without delimiters aren’t detected

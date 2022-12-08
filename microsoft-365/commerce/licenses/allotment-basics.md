@@ -7,15 +7,17 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: shegu, nicholak
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: microsoft-365-business
 ms.localizationpriority: null
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - commerce_licensing
+- empty
 search.appverid: MET150
 description: "Learn about the new allotments feature."
 ms.date: 05/12/2022

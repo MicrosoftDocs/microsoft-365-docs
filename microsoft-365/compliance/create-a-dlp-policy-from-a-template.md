@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
 ms.custom:
@@ -24,8 +25,6 @@ description: In this article, you'll learn about how to create DLP policies usin
 
 # Create a DLP policy from a template
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft Purview compliance portal. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
 
 Microsoft 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. See; [Policy templates](dlp-policy-reference.md#policy-templates) for a complete list. 
@@ -33,6 +32,8 @@ Microsoft 365 includes over 40 ready-to-use templates that can help you meet a w
 You can fine tune a template by modifying any of its existing rules or adding new ones. For example, you can add new types of sensitive information to a rule, modify the counts in a rule to make it harder or easier to trigger, allow people to override the actions in a rule by providing a business justification, or change who notifications and incident reports are sent to. A DLP policy template is a flexible starting point for many common compliance scenarios.
 
 You can also choose the Custom template, which has no default rules, and configure your DLP policy from scratch, to meet the specific compliance requirements for your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Permissions
 
@@ -52,9 +53,9 @@ For more information, see [Permissions in the Microsoft Purview compliance porta
   
 These permissions are required to create and apply a DLP policy not to enforce policies.
 
-### Roles and Role Groups in preview
+### Roles and Role Groups
 
-There are roles and role groups in preview that you can test out to fine tune your access controls.
+There are roles and role groups that you can use to fine tune your access controls.
 
 Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
 

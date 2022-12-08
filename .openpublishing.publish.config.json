@@ -2,7 +2,7 @@
   "docsets_to_publish": [
     {
       "docset_name": "Defender-Threat-Intelligence",
-      "build_source_folder": "defender-threat-intelligence",
+      "build_source_folder": "defender",
       "build_output_subfolder": "Defender-Threat-Intelligence",
       "locale": "en-us",
       "monikers": [],
@@ -70,13 +70,13 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
   },
   "docs_build_engine": {},
+  "need_generate_pdf_url_template": true,
   "contribution_branch_mappings": {},
   "need_generate_intellisense": false
 }

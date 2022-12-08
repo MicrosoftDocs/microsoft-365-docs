@@ -6,13 +6,12 @@ manager: serdars
 ms.reviewer: amitman 
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Use Microsoft Teams classes with Blackboard Learn Ultra"
+description: Use Microsoft Teams classes with Blackboard Learn Ultra.
 ---
 
 # Use Microsoft Teams classes with Blackboard Learn Ultra

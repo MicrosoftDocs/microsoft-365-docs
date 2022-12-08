@@ -1,31 +1,31 @@
 ---
 title: "Export and download content from a eDiscovery (Standard) case"
+description: "Describes how to export and download content from a eDiscovery (Standard) case in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
-description: "Describes how to export and download content from a eDiscovery (Standard) case in Microsoft 365."
 ---
 
 # Export content from a eDiscovery (Standard) case
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 After a search associated with a Microsoft Purview eDiscovery (Standard) case is successfully run, you can export the search results. When you export search results, mailbox items are downloaded in PST files or as individual messages. When you export content from SharePoint and OneDrive for Business sites, copies of native Office documents and other documents are exported. A Results.csv file that contains information about every item that's exported and a manifest file (in XML format) that contains information about every search result is also exported.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Export search results
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
