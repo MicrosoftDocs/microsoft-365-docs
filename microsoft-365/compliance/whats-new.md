@@ -38,6 +38,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## December 2022
+
+### Sensitivity labels
+
+- **Rolling out in preview**: [Use sensitivity labels to protect calendar items, Teams meetings, and chat](sensitivity-labels-meetings.md)
+
 ## November 2022
 
 ### Compliance Manager
