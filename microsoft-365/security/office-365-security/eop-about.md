@@ -86,10 +86,10 @@ For information about requirements, important limits, and feature availability a
 |Outbound anti-spam|[Outbound spam protection in EOP](outbound-spam-protection-about.md) <p> [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md) <p> [Control automatic external email forwarding in Microsoft 365](outbound-spam-policies-external-email-forwarding.md)|
 |Connection filtering|[Configure connection filtering](connection-filter-policies-configure.md)|
 |Anti-phishing|[Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md) <p> [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)|
-|Anti-spoofing protection|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|
+|Anti-spoofing protection|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md)|
 |Zero-hour auto purge (ZAP) for delivered malware, spam, and phishing messages|[ZAP in Exchange Online](zero-hour-auto-purge.md)|
 |Preset security policies|[Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md) <p> [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)|
-|Tenant Allow/Block List|[Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|
+|Tenant Allow/Block List|[Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md)|
 |Block lists for message senders|[Create blocked sender lists in EOP](create-block-sender-lists-in-office-365.md)|
 |Allow lists for message senders|[Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)|
 |Directory Based Edge Blocking (DBEB)|[Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|

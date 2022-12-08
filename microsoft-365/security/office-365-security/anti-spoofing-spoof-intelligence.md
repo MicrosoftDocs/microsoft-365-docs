@@ -56,7 +56,7 @@ The rest of this article explains how to use the spoof intelligence insight in t
 
 > [!NOTE]
 >
-> - Only spoofed senders that were detected by spoof intelligence appear in the spoof intelligence insight. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](manage-tenant-allow-block-list.md).
+> - Only spoofed senders that were detected by spoof intelligence appear in the spoof intelligence insight. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list-about.md).
 >
 > - The spoof intelligence insight and the **Spoofed senders** tab in the Tenant Allow/Block list replace the functionality of the spoof intelligence policy that was available on the anti-spam policy page in the Security & Compliance Center.
 >
@@ -157,7 +157,7 @@ Only email from that domain/sending infrastructure pair will be allowed to spoof
 
 ## Use the spoof intelligence insight in Exchange Online PowerShell or standalone EOP PowerShell
 
-In PowerShell, you use the **Get-SpoofIntelligenceInsight** cmdlet to **view** allowed and blocked spoofed senders that were detected by spoof intelligence. To manually allow or block the spoofed senders, you need to use the **New-TenantAllowBlockListSpoofItems** cmdlet. For more information, see [Use PowerShell to manage spoofed sender entries to the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+In PowerShell, you use the **Get-SpoofIntelligenceInsight** cmdlet to **view** allowed and blocked spoofed senders that were detected by spoof intelligence. To manually allow or block the spoofed senders, you need to use the **New-TenantAllowBlockListSpoofItems** cmdlet. For more information, see [Use PowerShell to manage spoofed sender entries to the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 To view the information in the spoof intelligence insight, run the following command:
 
