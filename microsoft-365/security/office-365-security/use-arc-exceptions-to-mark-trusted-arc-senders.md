@@ -6,18 +6,18 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
 description: Authenticated Received Chain (ARC) is email authentication that tries to preserve authentication results across devices and any indirect mailflows that come between the sender and recipient. Here's how to make exceptions for your trusted ARC Senders.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Make a list of trusted ARC Senders to trust *legitimate* indirect mailflows
@@ -28,16 +28,16 @@ ms.prod: m365-security
 - Microsoft Defender for Office 365 plan 1 and plan 2
 - Microsoft 365 Defender
 
-Email authentication mechanisms like [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md) are used to verify the senders of emails for the *safety* of email recipients, but some legitimate services may make changes to the email between the sender and recipient. **In Microsoft 365 Defender, ARC will help reduce SPF, DKIM, and DMARC delivery failures that happen due to *legitimate* indirect mailflows.**
+Email authentication mechanisms like [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), [DMARC](email-authentication-dmarc-configure.md) are used to verify the senders of emails for the *safety* of email recipients, but some legitimate services may make changes to the email between the sender and recipient. **In Microsoft 365 Defender, ARC will help reduce SPF, DKIM, and DMARC delivery failures that happen due to *legitimate* indirect mailflows.**
 
 ## Authenticated Received Chain (ARC) in Microsoft 365 Defender for Office
 
-Services that modify content during transport of the message before delivery to your organization, can invalidate the DKIM email signature and affect the authentication of the message. When these intermediary services, perform such actions, they can use ARC can be used to provide details of the original authentication before the modifications occurred, which your organization can then trust to help with authenticating the message.  
+Services that modify message content in transit before delivery to your organization can invalidate DKIM email signatures and affect authentication of the message. When these intermediary services perform such actions, they can use ARC to provide details of the original authentication before the modifications occurred. Your organization can then trust these details to help with authenticating the message.  
 
 **Trusted ARC sealers lets admins add a list of *trusted* intermediaries into the Microsoft 365 Defender portal.** Trusted ARC sealers allows Microsoft to honor ARC signatures from these trusted intermediaries, preventing these legitimate messages from failing the authentication chain.
 
 > [!NOTE]
-> ***Trusted ARC sealers is an admin-created list of intermediary domains who have implemented ARC sealing.*** When an email is routed to Office 365 through and ARC trusted intermediary of the Office 365 tenant, Microsoft validates the ARC signature, and, based on the ARC results, can honor authentication details provided.
+> ***Trusted ARC sealers is an admin-created list of intermediary domains who have implemented ARC sealing.*** When an email is routed to Office 365 through an ARC trusted intermediary of the Office 365 tenant, Microsoft validates the ARC signature, and, based on the ARC results, can honor authentication details provided.
 
 ## When to use trusted ARC sealers?
 
@@ -140,4 +140,4 @@ Here, you see the same organization **after leveraging the ability to create a t
 
 After setup, check your ARC Headers with [Message Header Analyzer](https://mha.azurewebsites.net).
 
-Review [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md), configuration steps.
+Review [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), [DMARC](email-authentication-dmarc-configure.md), configuration steps.

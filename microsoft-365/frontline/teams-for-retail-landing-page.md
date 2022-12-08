@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for Retail
+title: Microsoft 365 for retail organizations
 description: Learn about the admin resources available to manage and get the most out of Teams for your retail stores and workforce.
 ms.topic: conceptual
 author: samanro
@@ -13,8 +13,10 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-retail
   - m365-frontline
+  - highpri
   - m365solution-retail
   - m365solution-overview
+  - tier1
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -23,9 +25,10 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 12/05/2022
 ---
 
-# Get started with Microsoft 365 for Retail
+# Get started with Microsoft 365 for retail organizations
 
 Retail environments, with their rotating schedules and on-the-go staff, have very different needs than other organizations. To get the most benefit for your retail organization, you first choose which scenarios Microsoft 365 and Microsoft Teams can help you with in your day-to-day business operations, and then make sure that you prepare your Teams environment with the right fundamentals, teams, and apps to support those scenarios.
 
@@ -44,13 +47,32 @@ Microsoft 365 and Microsoft Teams offer several capabilities that can help retai
 > [!NOTE]
 > These scenarios are also part of the Microsoft Cloud for Retail. You can do more with these scenarios when you also use other capabilities from the Microsoft Cloud for Retail, such as Microsoft Dynamics 365. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Retail](/industry/retail).
 
+### Download a poster with scenario overviews
+
+Use the following poster to start envisioning what your organization can do with Microsoft 365 for frontline workers.
+
+| Item | Description |
+|:-----|:-----|
+|[![Microsoft 365 for frontline workers: Retail scenarios.](media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.|
+
+### Video overviews
+
+Watch the following video to see how you can help your store associates connect and collaborate:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
+Watch the following video to see how you can simplify business processes in retail environments:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
+
 ### In-store communication and collaboration
 
 Bring in-store associates and management together to collaborate and streamline operations with Teams and Teams apps.
 
 **Key apps:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
 
-**Additional services:** Viva Connections, SharePoint, Power Platform and Power Apps
+**Additional services:** Outlook, Viva Connections, SharePoint, Power Platform and Power Apps
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
@@ -60,17 +82,17 @@ Staff members can communicate and collaboration across multiple stores in a regi
 
 **Key apps:** Shifts, Walkie Talkie, Tasks, Approvals, Chat, Praise, Lists, Files, Updates
 
-**Additional services:** Viva Connections, Yammer, SharePoint, Power Platform and Power Apps
+**Additional services:** Outlook, Viva Connections, Viva Engage, SharePoint, Power Platform and Power Apps
 
 More information: [Frontline team collaboration](flw-team-collaboration.md)
 
 ### Virtual fittings and consultations
 
-The Bookings app in Microsoft Teams gives organizations a simple way to schedule and manage virtual appointments for associates and customers. Use it to schedule virtual appointments such as virtual shopping experiences.
+Use the Virtual Appointments app (Preview) or the Bookings app in Microsoft Teams to schedule and manage virtual appointments such as virtual shopping experiences for associates and customers.
 
-**Key features and apps:** meetings, Bookings
+**Key features and apps:** meetings, Virtual Appointments (Preview), Bookings
 
-More information: [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md)
+More information: [Virtual Appointments with Microsoft Teams](virtual-appointments.md)
 
 ### Simplify business processes
 
@@ -88,9 +110,9 @@ More information: [Simplify business processes](simplify-business-processes.md)
 
 ### Corporate communications
 
-Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer, Stream, and Viva Connections.
+Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Viva Engage, Stream, and Viva Connections.
 
-**Additional services:** Viva Connections, SharePoint, Stream, Yammer
+**Additional services:** Viva Connections, SharePoint, Stream, Viva Engage
 
 More information: [Corporate communications with frontline workers](flw-corp-comms.md)
 
@@ -100,7 +122,7 @@ Make new employee onboarding a great experience by fostering an all-in-one hybri
 
 **Key apps:** Lists, Live Meetings
 
-**Additional services:** Viva Learning, SharePoint, Yammer
+**Additional services:** Viva Learning, SharePoint, Viva Engage
 
 More information: [Onboard new employees](flw-onboarding-training.md)
 
@@ -128,15 +150,16 @@ For retail environments, the following apps and services can help you transform 
 | Tasks | Help employees know what they should focus on when not with customers by assigning tasks. Operations can use [task publishing](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
 | Updates | Check in on recurring or one-off priorities such as daily cleaning. Managers can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 | Walkie Talkie | Push to talk quick communication that's not constrained by geography like standard 2-way radios.| [Manage the Walkie Talkie app](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
+| Virtual Appointments (Preview) | A central hub for all your virtual appointment needs. Schedule and manage virtual fittings and consultations, view analytics, and configure options, all in one place.| [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | - |
+| Bookings |  Schedule and manage virtual fittings and consultations.| [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md) |
 
 | More apps and services from Microsoft | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
-| Bookings | Enable virtual fittings and consultations. | [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md) | [Use Bookings](https://support.microsoft.com/en-us/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) |
 | Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as store inventory, sales numbers, incident reports, and more. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
 | SharePoint | When you create a new team, a new SharePoint site is created and connected to the team. Many of the scenarios above rely on SharePoint features already embedded in Teams, such as sharing documents for team collaboration. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Add a SharePoint page, list, or document library as a tab in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
 | Viva Connections | Viva Connections creates a hub in Teams where your retail associates can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Provide training when needed, right in the flow of their work. | [Manage Viva Learning](/microsoft-365/learning/) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
-| Yammer | Connect your organization and allow communication across departments and regions with Yammer. | [Manage Yammer](/yammer) | [Use Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c) |
+| Viva Engage | Connect your organization and allow communication across departments and regions with Viva Engage. | [Overview of Viva Engage](/viva/engage/overview) | [Use Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284) |
 
 ### Retail templates for teams
 

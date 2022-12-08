@@ -3,8 +3,8 @@ title: Remediate malicious email that was delivered in Office 365
 author: msfttracyp
 ms.author: tracyp
 manager: dansimp
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.collection: m365-security
 audience: admin
 f1.keywords: 
   - NOCSH
@@ -12,8 +12,8 @@ ms.localizationpriority: medium
 MS.collection: 
 search.appverid: MET150
 description: Threat remediation
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 
 # Remediate malicious email delivered in Office 365
@@ -46,7 +46,7 @@ Security teams can use Explorer to select emails in several ways:
 
 - Query selection: Select an entire query by using the top **select all** button. The same query is also shown in action center mail submission details. Customers can submit maximum 200,000 emails from threat explorer.  
 
-- Query selection with exclusion: Sometimes security operations teams may want to remediate emails by selecting an entire query and excluding certain emails from the query manually. To do so, an admin can use the **Select all** check box and scroll down to exclude emails manually. The query can hold a maximum of 1,000 emails. The maximum number of exclusions is 100.
+- Query selection with exclusion: Sometimes security operations teams may want to remediate emails by selecting an entire query and excluding certain emails from the query manually. To do so, an admin can use the **Select all** check box and scroll down to exclude emails manually. The query can hold a maximum of 200,000 emails. 
 
 Once emails are selected through Explorer, you can start remediation by taking direct action or by queuing up emails for an action:
 
@@ -61,14 +61,9 @@ Once emails are selected through Explorer, you can start remediation by taking d
 > [!div class="mx-imgBorder"]
 > [![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-All remediation (direct approvals ) created in Explorer, Advanced hunting, or through Automated investigation are displayed in the Action Center. Access these via the left navigation panel under **Actions & Submissions** \> **Action center**  -> **History tab**.
+All remediation (direct approvals) created in Explorer, Advanced hunting, or through Automated investigation are displayed in the Action center at **Actions & Submissions** \> **Action center** \> **History** tab (<https://security.microsoft.com/action-center/history>).
 
-All remediations (direct approvals ) that were created in Explorer or  Advanced hunting or through Automated investigation  are displayed in the Action Center. Access these via the left navigation panel under **Actions & Submissions** \> **Action center**  -> **History tab**. 
-
-Manual actions pending approval using the two-step approval process (1. add to remediation by one security operation team member, 2. reviewed and approved by another security operation team member) are only visible in the legacy Defender for Office 365 action center **Review** \> **Action center** and not in incidents/investigations and the Unified Action center.
-
-> [!NOTE]
-> Two-step approval: actions only available in the office action center  **Review** \> **Action center**
+Manual actions pending approval using the two-step approval process (1. Add to remediation by one security operation team member, 2. Reviewed and approved by another security operation team member) are visible at **Actions & Submissions** \> **Action center** \> **Pending** tab (<https://security.microsoft.com/action-center/pending>). After approval, they're visible at **Actions & Submissions** \> **Action center** \> **History** tab (<https://security.microsoft.com/action-center/history>).
 
 :::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="The unified Action Center shows you 30 days of remediation actions.":::
 

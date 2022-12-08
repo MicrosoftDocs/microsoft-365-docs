@@ -1,9 +1,10 @@
 ---
 title: "Create a predictive coding model in eDiscovery (Premium)"
+description: "Learn how to create a predictive coding model in eDiscovery (Premium). This is the first step in using the machine learning capabilities in eDiscovery (Premium) to help you identify relevant and non-relevant content in a review set."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn how to create a predictive coding model in eDiscovery (Premium). This is the first step in using the machine learning capabilities in eDiscovery (Premium) to help you identify relevant and non-relevant content in a review set."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Create a predictive coding model (preview)
@@ -21,6 +24,8 @@ description: "Learn how to create a predictive coding model in eDiscovery (Premi
 The first step in using the machine learning capabilities of predictive coding in eDiscovery (Premium) is to create a predictive coding model. After you create a model, you can train it identify the relevant and non-relevant content in a review set.
 
 To review the predictive coding workflow, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you create a model
 

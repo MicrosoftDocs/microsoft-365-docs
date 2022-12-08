@@ -4,19 +4,22 @@ description: Investigate data loss in Microsoft 365 Defender.
 keywords: Data Loss Prevention, incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 f1.keywords: 
   - NOCSH
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-ms.technology: m365d
+  - met150
 ---
+
 # Investigate data loss incidents with Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

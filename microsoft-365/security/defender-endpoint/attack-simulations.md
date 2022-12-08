@@ -4,19 +4,20 @@ description: Run the provided attack scenario simulations to experience how Micr
 keywords: test, scenario, attack, simulation, simulated, diy, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.pagetype: security
 ms.author: maccruz
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 11/20/2018
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ---
 
 # Experience Microsoft Defender for Endpoint through simulated attacks 

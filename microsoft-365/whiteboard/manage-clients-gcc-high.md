@@ -7,7 +7,7 @@ ms.reviewer:
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
@@ -20,7 +20,7 @@ description: Learn which clients are currently supported for Whiteboard.
 > [!NOTE]
 > This guidance applies to US Government Community Cloud (GCC) High environments.
 
-Whiteboard clients are currently being updated to support OneDrive for Business.
+Whiteboard clients are currently being updated to support OneDrive for Business. 
 
 ## Clients supported
 
