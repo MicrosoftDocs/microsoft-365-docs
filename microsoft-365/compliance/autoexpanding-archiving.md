@@ -108,15 +108,13 @@ Here are some things to consider before you enable a mailbox for auto-expanding 
 
 ## Auto-expanding archiving and other compliance features
 
-This section explains the functionality between auto-expanding archiving and other compliance and data governance features.
+This section explains the functionality between auto-expanding archiving and other compliance features.
 
-- **eDiscovery:** When you use an eDiscovery tool, such as Content Search or In-Place eDiscovery, the additional storage areas in an auto-expanded archive are also searched.
+- **eDiscovery:** When you use an eDiscovery tool, such as Content Search, the additional storage areas in an auto-expanded archive are also searched.
 
-- **Retention:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery case holds and retention policies in the Microsoft Purview compliance portal, content located in an auto-expanded archive is also placed on hold.
+- **Retention:** When you put a mailbox on hold by using methods such as Microsoft 365 retention, eDiscovery case holds, and Litigation Hold in Exchange Online, content located in an auto-expanded archive is also placed on hold.
 
 - **Messaging records management (MRM):** If you use MRM deletion policies in Exchange Online to permanently delete expired mailbox items, expired items located in the auto-expanded archive will also be deleted.
-
-- **Import service:** You can use the Office 365 Import service to import PST files to a user's auto-expanded archive. You can import up to 100 GB of data from PST files to the user's archive mailbox.
 
 ## Next steps
 
