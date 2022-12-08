@@ -114,7 +114,7 @@ Security teams can take wide variety of response actions on email using Defender
 
 - You can start an AIR playbook manually on any email message using the **Trigger investigation** action in Threat Explorer.
 
-- You can report false positive or false negative detections directly to Microsoft using [Threat Explorer](threat-explorer.md) or [admin submissions](admin-submission.md).
+- You can report false positive or false negative detections directly to Microsoft using [Threat Explorer](threat-explorer.md) or [admin submissions](submissions-admin.md).
 
 - You can block undetected malicious files, URLs, or senders using the [Tenant Allow/Block List](manage-tenant-allow-block-list.md).
 
