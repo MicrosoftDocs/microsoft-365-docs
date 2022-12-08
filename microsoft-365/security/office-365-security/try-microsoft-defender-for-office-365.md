@@ -55,17 +55,17 @@ Defender for Office 365 includes the features of Exchange Online Protection (EOP
 
 The protection features of EOP and Defender for Office 365 are implemented using policies. **Policies that are exclusive to Defender for Office 365 are created for you as needed**:
 
-- [Impersonation protection in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-- [Safe Attachments for email messages](safe-attachments.md)
-- [Safe Links for email messages and Microsoft Teams](safe-links.md)
+- [Impersonation protection in anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+- [Safe Attachments for email messages](safe-attachments-about.md)
+- [Safe Links for email messages and Microsoft Teams](safe-links-about.md)
   - Safe Links detonates URLs during mail flow. To prevent specific URLs from being detonated, use allow entries for URLs in the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
   - Safe Links doesn't wrap URL links in email message bodies.
 
 Your eligibility for an evaluation or trial means you already have EOP. **No new or special EOP policies are created for your evaluation or trial of Defender for Office 365 Plan 2**. Existing EOP policies in your Microsoft 365 organization are able to act on messages (for example, send messages to the Junk Email folder or to quarantine):
 
 - [Anti-malware policies](anti-malware-protection.md)
-- [Inbound anti-spam protection](anti-spam-protection.md)
-- [Anti-spoofing protection in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings)
+- [Inbound anti-spam protection](anti-spam-protection-about.md)
+- [Anti-spoofing protection in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings)
 
 The default policies for these EOP features are always on, apply to all recipients, and are always applied last after any custom policies.
 
@@ -325,7 +325,7 @@ In **blocking mode**, the following reports show detections by Defender for Offi
 
     **Show data for Top malware recipients (MDO)** and **Show data for Top phish recipients (MDO)**.
 
-  - The [URL protection report](view-reports-for-mdo.md#url-protection-report)
+  - The [URL protection report](reports-defender-for-office-365.md#url-protection-report)
 
 ### Reports for audit mode
 
@@ -386,7 +386,7 @@ A: A maximum of 2 times. If your first trial expires, you need to wait at least 
 
 A: Yes. No one in any program or SKU can turn off or bypass taking action on messages that are classified as malware or high confidence phishing by the service.
 
-In audit mode, [anti-spoofing protection in EOP](set-up-anti-phishing-policies.md#spoof-settings) also takes action on messages. To prevent anti-spoofing protection from acting on messages, create an Exchange mail flow rule (also known as a transport rule) where inbound email bypasses all types of filtering that can be bypassed (including anti-spoofing protection). For instructions, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+In audit mode, [anti-spoofing protection in EOP](anti-phishing-policies-about.md#spoof-settings) also takes action on messages. To prevent anti-spoofing protection from acting on messages, create an Exchange mail flow rule (also known as a transport rule) where inbound email bypasses all types of filtering that can be bypassed (including anti-spoofing protection). For instructions, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 ### Q: In what order are policies evaluated?
 

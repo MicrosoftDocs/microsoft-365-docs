@@ -11,6 +11,9 @@ description: "Using Scheduler for Microsoft 365."
 ---
 # How to use Scheduler for Microsoft 365
 
+> [!IMPORTANT]
+> Scheduler for Microsoft 365 will stop working in August 2023. After that date, Scheduler won't be able to create or modify any meeting requests.
+
 Cortana understands natural language. Include cortana@yourdomain.com in an email with other attendees, and Cortana will take over from there. Cortana will send email notifications confirming meeting times and keep you up to date on progress.
 
 To use Scheduler, add Cortana’s email address to your email in addition to the people you want to meeting with. In your email to Cortana and the other attendees, tell Cortana to schedule a meeting using natural language.  
