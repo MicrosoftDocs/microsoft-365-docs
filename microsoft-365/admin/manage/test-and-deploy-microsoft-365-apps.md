@@ -29,7 +29,7 @@ For more info on how partners create these apps, see [How to plan a SaaS offer f
 
 The Integrated apps portal is available to world-wide customers only and can be accessed by global admins, global readers, and Exchange admins. This feature is not available in sovereign and government clouds.
 
-The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office Add-ins, and Teams apps are listed. For web apps, you can see two kinds of apps.
+The Integrated apps portal displays a list of apps, which includes single apps and Microsoft 365 apps from partners which are deployed your organization. Only web apps, SPFx apps, Office Add-ins, Teams apps, and Enhanced Teams apps are listed. For web apps, you can see two kinds of apps.
 
 - SaaS apps that are available in appsource.microsoft.com, and can be deployed by admins giving consent on behalf of the organization.
 - SAML gallery apps that are linked with Office add-ins.
@@ -69,7 +69,7 @@ The management of Enhanced Teams Apps is currently only available to global admi
 
 ### Block or Unblock Enhanced Teams Apps in the Integrated Apps portal
 
-As a global admin, you can manage Enhanced Teams Apps on the Microsoft 365 App via Integrated Apps on the Microsoft 365 Admin Center.
+As a global admin, you can manage Enhanced Teams Apps on the Microsoft 365 App (formerly known as Office.com) via Integrated Apps on the Microsoft 365 Admin Center.
 
 This feature is currently available to global admins only and only targets the Microsoft 365 App. By default, all Enhanced Teams Apps will be allowed to all users in your organization on the Microsoft 365 App.
 
@@ -82,6 +82,11 @@ You can control how users install these apps from the store on Integrated Apps i
 1. Sign in to Microsoft 365 Admin Center as a Global Administrator.
 2. Select **Settings**, then select **Integrated Apps**.
 3. Select the **Available Apps** or **Blocked Apps** list. Here you can view the status of all Enhanced Teams Apps in the catalog.
+
+    :::image type="content" alt-text="Available apps list." source="../../media/apps-status.png" lightbox="../../media/apps-status.png":::
+
+    :::image type="content" alt-text="Blocked apps list." source="../../media/blocked-apps.png" lightbox="../../media/blocked-apps.png":::
+
 4. Select an Enhanced Teams App to view more details about the app, applicable host products, and availability status within your organization.
 
 Since all Enhanced Teams Apps are allowed by default to all users on the Microsoft 365 App, all apps will show the status **All users in the organization can install**. This means that the app is available for all users in your organization to install and use on the Microsoft 365 App.
@@ -100,6 +105,8 @@ You can block an app for all users in your organization to restrict them from do
 
 When you choose to block an app, it will be blocked for all users in your organization. Blocking an app overrides any previous admin deployment or user installation on the Microsoft 365 App so that the app can no longer be used.
 
+:::image type="content" alt-text="How to block an app." source="../../media/to-block-app.png" lightbox="../../media/to-block-app.png":::
+
 > [!NOTE]
 > Currently, the Enhanced Teams App will only be blocked in the Microsoft 365 App. Teams and Outlook will continue to honor the current setting for Teams Apps made in the Teams Admin Center and for Outlook add-ins made in the Exchange Admin Center.
 
@@ -115,11 +122,14 @@ You can unblock an Enhanced Teams App so that it can start showing up in the Mic
 6. Read the availability and deployment status that the app will revert to after unblocking. These are the last saved statuses of the app before it was blocked.
 7. Select **Unblock**. You can now see this app in the **Available Apps** list and/or the **Deployed Apps** list.
 
+    :::image type="content" alt-text="How to unblock an app." source="../../media/to-unblock-app.png" lightbox="../../media/to-unblock-app.png":::
+
+
 ### What happens to your existing settings for Teams and Outlook?
 
 Any existing settings made from the Teams Admin Center will continue to be honored on the Teams client.
 
-For example, the Foo Teams app that recently upgraded to an Enhanced Teams app that is now available for Teams, Outlook, and the Microsoft 365 App.
+For example, the Foo Teams app that recently upgraded to an Enhanced Teams app that is now available for Teams, Outlook, and the Microsoft 365 App (formerly known as Office.com).
 
 ||Impact of Teams client|Impact on the Microsoft 365 App|Impact on Outlook client|
 |:-----|:-----|:-----|:-----|
@@ -144,7 +154,7 @@ You can continue to [deploy Office Add-ins via Integrated Apps](/admin/manage/te
 
 **How to deploy an Enhanced Teams app**
 
-As a global admin, you can now deploy an Enhanced Teams App on Teams, Outlook, and the Microsoft 365 App to a specific set of users, the entire organization, or just to yourself from Integrated Apps on Microsoft 365 Admin Center. Deploying an Enhanced Teams Apps means that it will be pre-installed for the selected users on the applicable hosts of the app.
+As a global admin, you can now deploy an Enhanced Teams App on Teams, Outlook, and the Microsoft 365 App (formerly known as Office.com) to a specific set of users, the entire organization, or just to yourself from Integrated Apps on Microsoft 365 Admin Center. Deploying an Enhanced Teams Apps means that it will be pre-installed for the selected users on the applicable hosts of the app.
 
 1. Sign in to M365 Admin Center as a Global Administrator.
 2. Select **Settings** and then select **Integrated Apps**.
@@ -155,7 +165,7 @@ As a global admin, you can now deploy an Enhanced Teams App on Teams, Outlook, a
 7. Review and finish the deployment of the app. This app will now be pre-installed for all selected users in the applicable hosts.  
 
 > [!NOTE]
-> The Enhanced Teams App will only be deployed on all the applicable hosts to the assigned users, but will only show up in the Microsoft 365 App at this time. Once support for other hosts is built, the Enhanced Teams App will start to show up in those clients based on the last saved setting of the app.
+> The Enhanced Teams App will be deployed to all the applicable hosts to the assigned users, but will only show up in the Microsoft 365 App at this time. Once support for other hosts is built, the Enhanced Teams App will start to show up in those clients based on the last saved setting of the app.
 
 **Edit user access or remove an Enhanced Teams App via the Integrated Apps portal**
 
