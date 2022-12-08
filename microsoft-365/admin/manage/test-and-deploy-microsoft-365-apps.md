@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
 - scotvorg
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -52,6 +53,10 @@ You can manage testing and deployment of purchased and licensed Microsoft 365 Ap
 7. Select **Done** on the Deployment completed page and review the details of the test or full deployment on the **Overview** tab.
 
 8. If the app has a status of **Update pending**, you can click on the app to open the Manage pane and update the app.
+
+
+> [!NOTE]
+> _Is this a test deployment_ is an administrative tag to determine if the app is still in testing phase. It has no technical impact.
 
 ## Find published apps for testing and full deployment
 

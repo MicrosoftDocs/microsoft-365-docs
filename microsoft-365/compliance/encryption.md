@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
 - purview-compliance
-- Strat_O365_IP
+- tier1
 - m365solution-mip
 - m365initiative-compliance
 - highpri
