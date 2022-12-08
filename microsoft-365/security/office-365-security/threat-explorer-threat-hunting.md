@@ -242,7 +242,7 @@ To learn more about roles and permissions, see the following resources:
 ## More information
 
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
-- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)
+- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft Threat Protection](automated-investigation-response-office.md)

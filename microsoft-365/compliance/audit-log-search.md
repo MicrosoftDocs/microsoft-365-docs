@@ -9,7 +9,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - tier1
 - purview-compliance
