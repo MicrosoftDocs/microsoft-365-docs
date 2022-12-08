@@ -49,7 +49,7 @@ Welcome to **Phase 3: Onboard** of your **[migration to Microsoft Defender for O
 If your organization has a security response team, now is the time to begin integrating Microsoft Defender for Office 365 into your response processes, including ticketing systems. This is an entire topic unto itself, but it's sometimes overlooked. Getting the security response team involved early will ensure that your organization is ready to deal with threats when you switch your MX records. Incident response needs to be well equipped to handle the following tasks:
 
 - Learn the new tools and integrate them into existing flows. For example:
-  - Admin management of quarantined messages is important. For instructions, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+  - Admin management of quarantined messages is important. For instructions, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md).
   - Message trace allows you to see what happened to messages as they enter or leave Microsoft 365. For more information, see [Message trace in the modern Exchange admin center in Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 - Identify risks that may have been let into the organization.
 - Tune and customize [alerts](../../compliance/alert-policies.md) for organizational processes.
@@ -90,7 +90,7 @@ Although this step isn't required, you should consider configuring your pilot us
 
 ## Step 3: Tune spoof intelligence
 
-Check the [Spoof intelligence insight](learn-about-spoof-intelligence.md) to see what's being allowed or blocked as spoofing, and to determine if you need to override the system verdict for spoofing. Some sources of your business-critical email might have incorrectly configured email authentication records in DNS (SPF, DKIM, and DMARC) and you might be using overrides in your existing protection service to mask their domain issues.
+Check the [Spoof intelligence insight](anti-spoofing-spoof-intelligence.md) to see what's being allowed or blocked as spoofing, and to determine if you need to override the system verdict for spoofing. Some sources of your business-critical email might have incorrectly configured email authentication records in DNS (SPF, DKIM, and DMARC) and you might be using overrides in your existing protection service to mask their domain issues.
 
 Spoof intelligence can rescue email from domains without proper email authentication records in DNS, but the feature sometimes needs assistance in distinguishing good spoofing from bad spoofing. Focus on the following types of message sources:
 
@@ -153,7 +153,7 @@ As your pilot users report false positives and false negatives, the messages wil
 
 Use the following features to monitor and iterate on the protection settings in Defender for Office 365:
 
-- [Quarantine](manage-quarantined-messages-and-files.md)
+- [Quarantine](quarantine-admin-manage-messages-files.md)
 - [Threat Explorer](email-security-in-microsoft-defender.md)
 - [Email security reports](view-email-security-reports.md)
 - [Defender for Office 365 reports](reports-defender-for-office-365.md)
@@ -214,7 +214,7 @@ Feel free to pause and evaluate here at any point. But, remember: once you turn 
 
 Congratulations! You have completed your [migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! Because you followed the steps in this migration guide, the first few days where mail is delivered directly into Microsoft 365 should be much smoother.
 
-Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
+Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
 
 - Review user reported messages, especially [user-reported phishing messages](automated-investigation-response-office.md)
 - Review overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).

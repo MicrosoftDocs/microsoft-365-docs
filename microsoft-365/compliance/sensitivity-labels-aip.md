@@ -80,12 +80,11 @@ Some features are only supported by built-in labeling for Office apps, and won't
     - In Word, users can review and remove the identified sensitive content
 - [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that is integrated into existing user workflows
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support)
-- [Labeling meeting invites from Outlook](sensitivity-labels-meetings.md) (in preview)
+- [Protect meeting invites, with their attachments and responses](sensitivity-labels-meetings.md) (in preview)
 - For labels that let users assign permissions, different permissions (Read or Change) can be granted to users or groups
 - Encrypt-Only for emails
 - Support for account switching
 - Users can't disable labeling
-- [Protect meeting invites](sensitivity-labels-meetings.md) (in preview)
 
 Watch a short demo to see some of these features in action:
 

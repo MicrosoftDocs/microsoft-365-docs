@@ -6141,6 +6141,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/security-config-management.md",
+      "redirect_url": "/mem/intune/protect/mde-security-integration",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/configure-attack-surface-reduction.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
       "redirect_document_id": false
@@ -9734,6 +9739,11 @@
       "source_path": "microsoft-365/compliance/enable-mailbox-auditing.md",
       "redirect_url": "/microsoft-365/compliance/audit-mailboxes",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/microsoft-threat-experts.md",
+      "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
+      "redirect_document_id": false
     }
    ]
   }

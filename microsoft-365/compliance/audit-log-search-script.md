@@ -9,7 +9,7 @@ manager: laurawi
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - tier1
 - purview-compliance
@@ -27,9 +27,7 @@ ms.custom:
 Security, compliance, and auditing have become a top priority for IT administrators in today’s world. Microsoft 365 has several built-in capabilities to help organizations manage security, compliance, and auditing. In particular, unified audit logging can help you investigate security incidents and compliance issues. You can retrieve audit logs by using the following methods:
 
 - [The Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference)
-
 - The [audit log search tool](audit-log-search.md) in the Microsoft Purview compliance portal
-
 - The [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell
 
 If you need to retrieve audit logs regularly, you should consider a solution that uses the Office 365 Management Activity API because it that can provide large organizations with the scalability and performance to retrieve millions of audit records on an ongoing basis. Using the audit log search tool in compliance portal is a good way to quickly find audit records for specific operations that occur in shorter time range. Using longer time ranges in the audit log search tool, especially for large organizations, might return too many records to easily manage or export.
@@ -48,7 +46,7 @@ When there are situations where you need to manually retrieve auditing data for 
 
   The value of `True` for the **UnifiedAuditLogIngestionEnabled** property indicates that audit log search is turned on.
 
-- You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to run successfully the script. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the Permissions page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information, see the "Requirements to search the audit log" section in [Search the audit log in the compliance portal](audit-log-search.md#before-you-search-the-audit-log).
+- You have to be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online to run successfully the script. By default, these roles are assigned to the *Compliance Management* and *Organization Management* role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information, see the "Requirements to search the audit log" section in [Search the audit log in the compliance portal](audit-log-search.md#before-you-search-the-audit-log).
 
 - It may take a long time for the script to complete. How long it takes to run depends on the date range and the size of the interval that you configure the script to retrieve audit records for. Larger date ranges and smaller intervals will result in a long running time. See the table in Step 2 for more information about the date range and intervals.
 

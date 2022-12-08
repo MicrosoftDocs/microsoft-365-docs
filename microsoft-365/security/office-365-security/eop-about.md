@@ -82,11 +82,11 @@ For information about requirements, important limits, and feature availability a
 |---|---|
 |**Protection**||
 |Anti-malware|[Anti-malware protection in EOP](anti-malware-protection.md) <p> [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml) <p> [Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
-|Inbound anti-spam|[Anti-spam protection in EOP](anti-spam-protection.md) <p> [Anti-spam protection FAQ](anti-spam-protection-faq.yml) <p> [Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
+|Inbound anti-spam|[Anti-spam protection in EOP](anti-spam-protection-about.md) <p> [Anti-spam protection FAQ](anti-spam-protection-faq.yml) <p> [Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
 |Outbound anti-spam|[Outbound spam protection in EOP](outbound-spam-protection-about.md) <p> [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md) <p> [Control automatic external email forwarding in Microsoft 365](outbound-spam-policies-external-email-forwarding.md)|
 |Connection filtering|[Configure connection filtering](connection-filter-policies-configure.md)|
 |Anti-phishing|[Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md) <p> [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)|
-|Anti-spoofing protection|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|
+|Anti-spoofing protection|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|
 |Zero-hour auto purge (ZAP) for delivered malware, spam, and phishing messages|[ZAP in Exchange Online](zero-hour-auto-purge.md)|
 |Preset security policies|[Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md) <p> [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)|
 |Tenant Allow/Block List|[Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md)|
@@ -96,7 +96,7 @@ For information about requirements, important limits, and feature availability a
 |**Quarantine and submissions**||
 |Admin submission|[Use Admin submission to submit suspected spam, phish, URLs, and files to Microsoft](submissions-admin.md)|
 |User reported message settings|[User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md)|
-|Quarantine - admins|[Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md) <p> [Quarantined messages FAQ](quarantine-faq.yml) <p> [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Anti-spam message headers in Microsoft 365](message-headers-eop-mdo.md) <p> You can analyze the message headers of quarantined messages using the [Message Header Analyzer at](https://mha.azurewebsites.net/).|
+|Quarantine - admins|[Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md) <p> [Quarantined messages FAQ](quarantine-faq.yml) <p> [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) <p> [Anti-spam message headers in Microsoft 365](message-headers-eop-mdo.md) <p> You can analyze the message headers of quarantined messages using the [Message Header Analyzer at](https://mha.azurewebsites.net/).|
 |Quarantine - end-users|[Find and release quarantined messages as a user in EOP](quarantine-end-user.md) <p> [Use quarantine notifications to release and report quarantined messages](quarantine-quarantine-notifications.md) <p> [Quarantine policies](quarantine-policies.md)|
 |**Mail flow**||
 |Mail flow rules|[Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) <p> [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions) <p> [Mail flow rule actions in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) <p> [Manage mail flow rules in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) <p> [Mail flow rule procedures in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-procedures)|
