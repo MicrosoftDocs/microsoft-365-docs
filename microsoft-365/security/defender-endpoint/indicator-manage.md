@@ -56,7 +56,9 @@ Download the sample CSV to know the supported column attributes.
 5. Select **Done**.
 
 > [!NOTE]
-> Only 500 indicators can be uploaded for each batch.
+> Only 500 indicators can be uploaded for each batch. 
+>
+> Attempting to import indicators with specific categories requires the string to be written in Pascal case convention and only accepts the category list available at the portal.
 
 The following table shows the supported parameters.
 
@@ -88,3 +90,4 @@ Watch this video to learn how Microsoft Defender for Endpoint provides multiple 
 - [Create indicators for files](indicator-file.md)
 - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)
 - [Create indicators based on certificates](indicator-certificates.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

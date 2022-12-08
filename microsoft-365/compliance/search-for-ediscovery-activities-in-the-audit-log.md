@@ -31,7 +31,7 @@ Content Search and eDiscovery-related activities (for Microsoft Purview eDiscove
 - Configuring permissions filtering for Content search.
 - Managing the eDiscovery Administrator role.
   
-For more information about searching the audit log, the permissions that are required, and exporting search results, see [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md).
+For more information about searching the audit log, the permissions that are required, and exporting search results, see [Search the audit log in the compliance portal](audit-log-search.md).
   
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -60,7 +60,7 @@ Currently, you have to do a few specific things to view eDiscovery activities in
 
     A **Details** fly out page is displayed that contains the detailed properties from the event record. To display additional details, select **More information**. For a description of these properties, see the [Detailed properties for eDiscovery activities](#detailed-properties-for-ediscovery-activities) section.
 
-9. If desired, you can export the audit log search results to a CSV file, and then use the Excel Power Query feature to format and filter these records. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
+9. If desired, you can export the audit log search results to a CSV file, and then use the Excel Power Query feature to format and filter these records. For more information, see [Export, configure, and view audit log records](audit-log-export-records.md).
 
 ## eDiscovery activities
 
@@ -188,7 +188,7 @@ As previously stated, it may take up to 24 hours for eDiscovery cmdlet activitie
 The following table describes the properties that are included on the flyout page for an eDiscovery activity listed in the search results. These properties are also included in the CSV file when you export the audit log search results. An audit log record for an eDiscovery activity won't include every detailed property listed below.
   
 > [!TIP]
-> When you export the search results, the CSV file contains a column named **AudtiData**, which contains the detailed properties described in the following table in a multi-value property. You can use the Power Query feature in Excel to split this column into multiple columns so that each property will have its own column. This will let you sort and filter on one or more of these properties. For more information, see the "Export the search results to a file" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#step-3-export-the-search-results-to-a-file). 
+> When you export the search results, the CSV file contains a column named **AudtiData**, which contains the detailed properties described in the following table in a multi-value property. You can use the Power Query feature in Excel to split this column into multiple columns so that each property will have its own column. This will let you sort and filter on one or more of these properties. For more information, see the "Export the search results to a file" section in [Search the audit log](audit-log-search.md#step-3-export-the-search-results-to-a-file). 
   
 |**Property**|**Description**|
 |:-----|:-----|
