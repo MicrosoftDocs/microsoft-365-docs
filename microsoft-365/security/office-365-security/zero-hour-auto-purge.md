@@ -93,7 +93,7 @@ For more information about configuring spam filtering verdicts, see [Configure a
 
 ### Zero-hour auto purge (ZAP) considerations for Microsoft Defender for Office 365
 
-ZAP will not quarantine any message that's in the process of [Dynamic Delivery](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) in Safe Attachments policy scanning. If a phishing or spam signal is received for messages in this state, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, or Quarantine) then ZAP will default to a 'Move to Junk' action.
+ZAP will not quarantine any message that's in the process of [Dynamic Delivery](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies) in Safe Attachments policy scanning. If a phishing or spam signal is received for messages in this state, and the filtering verdict in the anti-spam policy is set to take some action on the message (Move to Junk, Redirect, Delete, or Quarantine) then ZAP will default to a 'Move to Junk' action.
 
 ## How to see if ZAP moved your message
 
@@ -109,7 +109,7 @@ To determine if ZAP moved your message, you have the following options:
 
 ### What happens if a legitimate message is moved to the Junk Email folder?
 
-You should follow the normal reporting process for [false positives](report-junk-email-messages-to-microsoft.md). The only reason the message would be moved from the Inbox to the Junk Email folder would be because the service has determined that the message was spam or malicious.
+You should follow the normal reporting process for [false positives](submissions-report-messages-files-to-microsoft.md). The only reason the message would be moved from the Inbox to the Junk Email folder would be because the service has determined that the message was spam or malicious.
 
 ### What if I use the Quarantine folder instead of the Junk Mail folder?
 
