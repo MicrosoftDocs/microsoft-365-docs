@@ -3,7 +3,7 @@ title: "Office 365 URLs and IP address ranges"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/29/2022
+ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -54,7 +54,7 @@ Data columns shown are:
 
 - **ER**: This is **Yes** if the endpoint set is supported over Azure ExpressRoute with Office 365 route prefixes. The BGP community that includes the route prefixes shown aligns with the service area listed. When ER is **No**, this means that ExpressRoute is not supported for this endpoint set.
 
-   Some routes may be advertised in more than one BGP community, making it possible for endpoints within a given IP range to traverse the ER circuit, but still be unsupported. In all cases, the value of a given endpoint set's ER column should be respected. For more information about BGP communities, see [Using BGP communities in ExpressRoute for Office 365 scenarios](bgp-communities-in-expressroute.md#key-planning-considerations-to-using-bgp-communities).
+   Some routes may be advertised in more than one BGP community, making it possible for endpoints within a given IP range to traverse the ER circuit, but still be unsupported. In all cases, the value of a given endpoint set's ER column should be respected.
 
 - **Addresses**: Lists the FQDNs or wildcard domain names and IP address ranges for the endpoint set. Note that an IP address range is in CIDR format and may include many individual IP addresses in the specified network.
 
