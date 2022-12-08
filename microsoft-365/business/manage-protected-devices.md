@@ -2,14 +2,13 @@
 title: "Manage protected devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: efrene
+- 'O365E_DevicesManageLM'
+- 'O365E_DevicesManageKM'
+- ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
-- 'O365E_DevicesManageLM'
-- 'O365E_DevicesManageKM'
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
