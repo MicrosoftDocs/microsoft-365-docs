@@ -519,13 +519,13 @@ Additional information for specific locations:
 
 ## Auditing retention configuration and actions
 
-When [auditing is enabled](turn-audit-log-search-on-or-off.md), auditing events for retention are supported for both administration configuration (retention policies and retention labels) and retention actions (retention labels only).
+When [auditing is enabled](audit-log-enable-disable.md), auditing events for retention are supported for both administration configuration (retention policies and retention labels) and retention actions (retention labels only).
 
 ### Auditing retention configuration
 
 Administrator configuration for retention policies and retention labels is logged as auditing events when a retention policy or label is created, reconfigured, or deleted.
 
-For the full list of auditing events, see [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+For the full list of auditing events, see [Retention policy and retention label activities](audit-log-activities.md#retention-policy-and-retention-label-activities).
 
 ### Auditing retention actions
 
@@ -548,7 +548,7 @@ Retention actions that are logged as auditing events are available only for rete
 
 ## PowerShell cmdlets for retention policies and retention labels
 
-Use [Office 365 Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) for Purview retention cmdlets that support configuration at scale, scripting for automation, or might be necessary for advanced configuration scenarios.
+Use [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) for Purview retention cmdlets that support configuration at scale, scripting for automation, or might be necessary for advanced configuration scenarios.
 
 For a list of available cmdlets, and to identify which ones are supported for the different locations, see [PowerShell cmdlets for retention policies and retention labels](retention-cmdlets.md).
 
