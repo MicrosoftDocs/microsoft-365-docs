@@ -1,5 +1,5 @@
 ---
-title: "Google API key entity definition (preview)"
+title: "Google API key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,11 +22,13 @@ recommendations: false
 description: "Google API key sensitive information type entity definition."
 ---
 
-# Google API key (preview)
+# Google API key
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Format
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 A combination of 39 characters consisting of letters, digits, and special characters.
 
@@ -45,9 +47,15 @@ for example:
 
 `AIzaefgh0123456789_-ABCDEFGHIJKLMNOPQRS`
 
+## Credential example 
+
+`apiKey=AIzaefgh0123456789_-ABCDEFGHIJKLMNOPQRS;`
+
 ## Checksum
 
 No
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
 
 ## Definition
 

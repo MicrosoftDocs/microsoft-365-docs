@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: other
-ms.date: 09/15/2022
+ms.date: 10/26/2022
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
@@ -41,7 +41,7 @@ This article provides information about:
 
 Security defaults were designed to help protect your company's user accounts from the start. When turned on, security defaults provide secure default settings that help keep your company safe by:
 
-- Requiring all users and admins to register for MFA using the Microsoft Authenticator app.
+- Requiring all users and admins to register for MFA using the [Microsoft Authenticator app](/azure/active-directory/authentication/concept-authentication-authenticator-app) or any third-party application using [OATH TOTP](/azure/active-directory/authentication/concept-authentication-oath-tokens#oath-software-tokens).
 - Challenging users with MFA, mostly when they show up on a new device or app, but more often for critical roles and tasks.
 - Disabling authentication from legacy authentication clients that can't do MFA.
 - Protecting admins by requiring extra authentication every time they sign in.

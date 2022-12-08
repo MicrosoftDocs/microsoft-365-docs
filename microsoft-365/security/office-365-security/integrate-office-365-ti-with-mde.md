@@ -8,7 +8,7 @@ author: denisebmsft
 manager: dansimp
 ms.date: 12/02/2021
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
   - MET150
