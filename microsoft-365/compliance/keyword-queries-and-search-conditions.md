@@ -39,7 +39,7 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 
 - [Content search](content-search.md)
 - [Search for content in eDiscovery (Standard)](search-for-content-in-core-ediscovery.md)
-- [Create a draft collection in eDiscovery (Premium)](create-draft-collection.md)
+- [Create a collection estimate in eDiscovery (Premium)](create-draft-collection.md)
 
 > [!NOTE]
 > eDiscovery searches in the compliance portal and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
@@ -51,7 +51,7 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 The following table lists email message properties that can be searched by using the eDiscovery search tools in the compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples. You can enter these  `property:value` pairs in the keywords box for an eDiscovery search.
 
 > [!NOTE]
-> When searching email properties, it's not possible to search for items in which the specified property is empty or blank. For example, using the *property:value* pair of **subject:""** to search for email messages with an empty subject line will return zero results. This also applies when searching site and contact properties.
+> When searching email properties, it's not possible to search for message headers. Header information is not indexed for collections. Additionally, items in which the specified property is empty or blank are not searchable. For example, using the *property:value* pair of **subject:""** to search for email messages with an empty subject line will return zero results. This also applies when searching site and contact properties.
 
 |**Property**|**Property description**|**Examples**|**Search results returned by the examples**|
 |:-----------|:-----------------------|:-----------|:------------------------------------------|

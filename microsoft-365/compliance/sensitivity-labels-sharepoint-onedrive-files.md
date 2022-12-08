@@ -47,7 +47,7 @@ After you enable sensitivity labels for Office files in SharePoint and OneDrive,
 >
 > The SharePoint and OneDrive behavior also doesn't change for existing files in these locations that are labeled with encryption using a single Azure-based key. For these files to benefit from the new capabilities after you enable sensitivity labels for Office files in SharePoint and OneDrive, the files must be either downloaded and uploaded again, or edited.
 
-After you enable sensitivity labels for Office files in SharePoint and OneDrive, three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied to documents in SharePoint and OneDrive:
+After you enable sensitivity labels for Office files in SharePoint and OneDrive, three new [audit events](audit-log-activities.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied to documents in SharePoint and OneDrive:
 
 - **Applied sensitivity label to file**
 - **Changed sensitivity label applied to file**
@@ -125,6 +125,8 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
     > Co-authoring is now supported for Windows and macOS, and in preview for iOS and Android. For more information, see [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
 
 - If an admin changes settings for a published label that's already applied to files downloaded to users' sync client, users might be unable to save changes they make to the file in their OneDrive Sync folder. This scenario applies to files that are labeled with encryption, and also when the label change is from a label that didn't apply encryption to a label that does apply encryption. Users see a [red circle with a white cross icon error](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3), and they are asked to save new changes as a separate copy. Instead, they can close and reopen the file, or use Office for the web.
+
+- Sensitivity labels that are configured for [automatic labeling](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) are supported for Office on the web when the label settings for conditions are for sensitive information types only. Automatic labeling isn't supported for Office on the web when the conditions include trainable classifiers.
 
 - Users can experience save problems after going offline or into a sleep mode when instead of using Office for the web, they use the desktop and mobile apps for Word, Excel, or PowerPoint. For these users, when they resume their Office app session and try to save changes, they see an upload failure message with an option to save a copy instead of saving the original file.
 
@@ -274,7 +276,7 @@ Requirements:
 
 - The encryption has been applied by a sensitivity label with admin-defined encryption settings (the [Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now) label settings). [Double Key Encryption](encryption-sensitivity-labels.md#double-key-encryption) is not supported for this cmdlet.
 
-The justification text is added to the [audit event](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) of **Removed sensitivity label from file**, and the decryption action is also recorded in the [protection usage logging for Azure Information Protection](/azure/information-protection/log-analyze-usage).
+The justification text is added to the [audit event](audit-log-activities.md#sensitivity-label-activities) of **Removed sensitivity label from file**, and the decryption action is also recorded in the [protection usage logging for Azure Information Protection](/azure/information-protection/log-analyze-usage).
 
 ## How to disable sensitivity labels for SharePoint and OneDrive (opt-out)
 
