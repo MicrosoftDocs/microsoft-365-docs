@@ -91,7 +91,7 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of items per public folder mailbox displayed on preview page for searches.|100|
 |Maximum number of items found in all public folder mailbox items displayed on preview page for searches.|200|
 |Maximum number of public folder mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain items that match the search query, only the top 500 mailboxes with the most results are available for preview.|500|
-|The maximum size of an item that can be viewed on the sample page of a draft collection.|10,000,000 bytes (approximately 9.5 MB)|
+|The maximum size of an item that can be viewed on the sample page of a collection estimate.|10,000,000 bytes (approximately 9.5 MB)|
 
 ## Search times
 
@@ -126,6 +126,15 @@ The limits described in this section are related to exporting documents out of a
 |:---|:---|
 |Total file size or maximum number of documents downloaded from a review set.|3 MB or 50 documents<sup>6</sup>|
 
+## Review set viewer limits
+
+|Description of limit|Limit|
+|:---|:---|
+|Maximum number of items displayed per page in a review set.|10,000|
+
+> [!NOTE]
+> Use default or custom filters to [adjust the displayed items](/microsoft-365/compliance/review-set-search) in a review set as needed.
+
 ## Reference notes
 
 <sup>1</sup> This is the maximum number of tags that you can create in a case. This limit isn't related to the number of documents that can be tagged.
@@ -140,6 +149,6 @@ The limits described in this section are related to exporting documents out of a
   - All search permissions filters that apply to the user.
   - The characters from any location properties in the search, including ExchangeLocation, PublicFolderLocation, SharPointLocation, ExchangeLocationExclusion, PublicFolderLocationExclusion, SharePointLocationExclusion, and OneDriveLocationExclusion. For example, including all SharePoint sites and OneDrive accounts in the search will count as six characters, as the word "ALL" will appear for both the SharePointLocation and OneDriveLocation field.
 
-<sup>5</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR ..."**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There is no upper limit for non-phrase terms.
+<sup>5</sup> For non-phrase queries (a keyword value that doesn't use double quotation marks) we use a special prefix index. This tells us that a word occurs in a document, but not where it occurs in the document. To do a phrase query (a keyword value with double quotation marks), we need to compare the position within the document for the words in the phrase. This means that we can't use the prefix index for phrase queries. In this case, we internally expand the query with all possible words that the prefix expands to; for example,  **time\*** can expand to  **"time OR timer OR times OR timex OR timeboxed OR ..."**. The limit of 10,000 is the maximum number of variants the word can expand to, not the number of documents matching the query. There's no upper limit for non-phrase terms.
 
 <sup>6</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in eDiscovery (Premium)](exporting-data-ediscover20.md).

@@ -41,7 +41,7 @@ Microsoft offers several support options for people having trouble sending mail 
 
 - Follow the instructions in any non-delivery report you receive.
 
-- Check out the most common problems that non-customers encounter in [Troubleshooting mail sent to Office 365](troubleshooting-mail-sent-to-office-365.md).
+- Check out the most common problems that non-customers encounter in [Troubleshooting mail sent to Office 365](mail-flow-troubleshooting.md).
 
 - Use the [Microsoft 365 delist portal](https://sender.office.com) to submit a request to have your IP removed from the blocked sender's list.
 
