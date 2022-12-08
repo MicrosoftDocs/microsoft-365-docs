@@ -2,13 +2,14 @@
 title: "Plan for Microsoft 365 Enterprise"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 f1.keywords:

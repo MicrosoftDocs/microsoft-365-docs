@@ -13,9 +13,11 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 description: "Configure device proxy and internet connection settings for Information Protection"
@@ -39,6 +41,8 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 - Manual static proxy configuration:
   - Registry-based configuration
   - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Configure the proxy server manually using a registry-based static proxy
 
@@ -132,7 +136,7 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 > [!NOTE]
 >
-> The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
+> The Connectivity Analyzer tool is not compatible with attack surface reduction rule [Block process creations originating from PSExec and WMI commands](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-process-creations-originating-from-psexec-and-wmi-commands). You will need to temporarily disable this rule to run the connectivity tool.
 >
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Defender for Endpoint will fall back to direct if it can’t access the defined proxy. Related topics:
 >

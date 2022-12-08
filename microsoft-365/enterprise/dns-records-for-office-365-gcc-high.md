@@ -6,7 +6,7 @@ manager: dzazzo
 ms.date: 05/19/2020
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
@@ -34,9 +34,9 @@ Once you have your domains added to your tenant and validated, use the following
 
 | Type | Priority | Host name | Points to address or value | TTL |
 | --- | --- | --- | --- | --- |
-| MX | 0 | @ | *tenant*.mail.protection.office365.us (see below for additional details) | 1 Hour |
-| TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | 1 Hour |
-| CNAME | - | autodiscover | autodiscover.office365.us | 1 Hour |
+| MX | 0 | @ | *tenant*.mail.protection.office365.us (see below for more details) | One Hour |
+| TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | One Hour |
+| CNAME | - | autodiscover | autodiscover.office365.us | One Hour |
 
 ### Exchange Autodiscover record
 
@@ -54,17 +54,17 @@ For example, if your tenant name is contoso.onmicrosoft.us, you’d use **contos
 
 | Type | Host name | Points to address or value | TTL |
 | --- | --- | --- | --- |
-| CNAME | sip | sipdir.online.gov.skypeforbusiness.us | 1 Hour |
-| CNAME | lyncdiscover | webdir.online.gov.skypeforbusiness.us | 1 Hour |
+| CNAME | sip | sipdir.online.gov.skypeforbusiness.us | One Hour |
+| CNAME | lyncdiscover | webdir.online.gov.skypeforbusiness.us | One Hour |
 
 ### SRV records
 
 | Type | Service | Protocol | Port | Weight | Priority | Name | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.gov.skypeforbusiness.us | 1 Hour |
-| SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.gov.skypeforbusiness.us | 1 Hour |
+| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.gov.skypeforbusiness.us | One Hour |
+| SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.gov.skypeforbusiness.us | One Hour |
 
-## Additional DNS records
+## Other DNS records
 
 > [!IMPORTANT]
 > If you have an existing *msoid* CNAME record in your DNS zone, you must **remove** the record from DNS at this time.  The msoid record is incompatible with Microsoft 365 Enterprise Apps *(formerly Office 365 ProPlus)* and will prevent activation from succeeding.

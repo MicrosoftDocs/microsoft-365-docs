@@ -2,14 +2,16 @@
 title: "Microsoft 365 support integration with ServiceNow configuration overview"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
@@ -21,33 +23,39 @@ description: "Scoped Certified application installation and configuration guide 
 
 # Microsoft 365 support integration with ServiceNow configuration overview
 
-**Microsoft 365 support integration** enables you to integrate Microsoft 365 help, support, and service health with your ServiceNow instances. You can research Microsoft known and reported issues, resolve incidents, complete tasks by using Microsoft recommended solutions, and, if necessary, escalate to Microsoft human-assisted support.
+The following article applies to the Microsoft 365 support integration app with a minimum version of **2.0.0**.
 
-For the **Microsoft 365 support integration** app from the ServiceNow store, go to the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+For version 1.0.11 and earlier, see [Microsoft 365 support integration overview v1](../manage/servicenow-overview-v1.md).
+
+Microsoft 365 support integration enables you to integrate Microsoft 365 help, support, and service health with your ServiceNow instances. You can research Microsoft known and reported issues, resolve incidents, complete tasks by using Microsoft recommended solutions, and, if necessary, escalate to Microsoft human-assisted support.
+
+For the Microsoft 365 support integration app, go to the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
 ## Key features
 
-These are the key features you'll get with the Microsoft 365 support integration app in your ServiceNow instance:
+These are the key features you'll get with the Microsoft 365 support integration app in ServiceNow:
 
-- Service Health Incidents: Information about known Microsoft service health incidents, including user impact, scope, current status, and next expected update. Using machine learning, ServiceNow incidents are matched to Microsoft service health incidents based on the short description field.
+- Service Health Incidents: Information about known Microsoft service health incidents, including user impact, scope, status, and next expected update. Using machine learning, ServiceNow incidents are matched to Microsoft service health incidents based on the short description field.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" alt-text="Service Health Incidents description field.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" lightbox="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" alt-text="Service Health Incidents description field.":::
 
 - Recommended solutions: Descriptions of tasks and incidents are used to recommend precise targeted solutions and relevant articles from Microsoft powered by machine learning. You can also use Search to find other solutions, if needed.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" alt-text="Recommended solutions description field.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow_recommended_articles.png" lightbox="../../media/ServiceNow-guide/servicenow_recommended_articles.png" alt-text="Recommended solutions description field.":::
 
-- Microsoft service request: Escalate issues to Microsoft support agents and receive status updates for your case.
+- Microsoft service request: Escalate issues to Microsoft support agents and receive status updates for your request. With an updated workflow, you can now create a service request by adding your preferred title, description, and contact information similar to what is found in the Microsoft 365 admin portal.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-service-request.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-service-request.png" alt-text="Service request form.":::
+    :::image type="content" source="../../media/ServiceNow-guide/SNOW_escalation.png" lightbox="../../media/ServiceNow-guide/SNOW_escalation.png" alt-text="Screenshot that shows the recommended solutions description field.":::
+
+    :::image type="content" source="../../media/ServiceNow-guide/SNOW_escalation2.png" lightbox="../../media/ServiceNow-guide/SNOW_escalation2.png" alt-text="Screenshot that shows the recommended solutions description field.":::
 
 ## Prerequisites
 
 ### Permissions requirements
 
-To proceed with this guide, make sure that the following permissions are available and configured for your environments during the whole process:
+To proceed with this guide, make sure that the following permissions are available and configured for your environments during the entire process:
 
-- Azure Active Directory (AAD) admin who can create AAD applications
+- Azure Active Directory (AAD) admin who can create Azure AD Applications
 
 - ServiceNow admin
 
@@ -55,11 +63,11 @@ To proceed with this guide, make sure that the following permissions are availab
 
 ### Configuration highlights
 
-To set up **Microsoft 365 support integration**:
+To set up Microsoft 365 support integration:
 
-- Register applications in Microsoft Azure Active Directory (AAD) for authentication of both outbound and inbound API calls.
+- Register application in Microsoft Azure Active Directory (AAD) for authentication of both outbound and inbound API calls.
 
-- Create ServiceNow entities with Microsoft AAD application for both outbound and inbound data flow.
+- Create ServiceNow entities with Microsoft Azure AD Application for both outbound and inbound data flow.
 
 - Integrate ServiceNow instance with Microsoft support through the Microsoft 365 admin portal.
 
@@ -73,20 +81,21 @@ Permissions required:
 
 - oauth\_entity\_profile
 
-After the Microsoft 365 Support Integration app has been installed, two Application Cross-Scope accesses are created. If they're not created successfully, create them manually.
+After the Microsoft 365 support integration app has been installed, two application cross-scope accesses are created. If they're not created successfully, create them manually.
 
-## What features will work for your organization based on your configuration?
+## Set up the integration
 
-Before setting up any configuration for Microsoft 365 support integration, review your answers to these questions:
+After you've downloaded the app, go to the Microsoft 365 setup wizard in your ServiceNow environment to complete the setup process.
 
-**Question \#1**: Does your ServiceNow environment allow Basic Authentication (access with ServiceNow user credential) for inbound webservice calls?
+To open the setup wizard, type **Microsoft 365** in the ServiceNow navigator and select **Setup**. 
 
-**Question \#2**: If you have multiple tenants, do you plan to use a single tenant integrated with your ServiceNow environment for Microsoft 365 support integration?
+:::image type="content" source="../../media/ServiceNow-guide/servicenow-wizard-start-setup.png" alt-text="Start setup wizard.":::
 
-Depending on your answers to the questions above, this table tells you what features are available and how to set up Microsoft 365 support integration. For a description of each feature, see [Microsoft 365 support integration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+- If you want to get started without setting up the Microsoft 365 support integration app, you can select the option to **Continue without any setup**. This option continues to provide basic recommended solutions.
+- To set up the application with full functionality, select **Start setup**, and then follow the instructions in [Integrate Microsoft 365 with ServiceNow Virtual Agent](../manage/servicenow-virtual-agent-integration.md).
 
-| Question \#1 Answer | Question \#2 Answer | What features are available? | Configuration steps |
-|---------------------|---------------------|-----------|----------------|
-| Yes                 | Yes/No              | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md) |
-| No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with AAD OAuth Token](servicenow-aad-oauth-token.md)                 |
-| No                  | No                  | Service Health Incidents Recommended Solutions                           | [Set up Microsoft 365 support integration for Insights ONLY](servicenow-service-health-incidents-solutions-only.md)                    |
+> [!NOTE]
+> This app is not supported in regulated or restricted environments.
+
+> [!IMPORTANT]
+> The Microsoft 365 support integration app occasionally prompts users for feedback about the app. If you don’t want users to be prompted for feedback, turn off this functionality in the app settings. For more information about Microsoft feedback policies, see [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md). To change the feedback settings, follow the steps in the installation process.

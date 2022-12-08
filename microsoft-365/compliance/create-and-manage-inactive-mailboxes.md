@@ -2,8 +2,8 @@
 title: "Create and manage inactive mailboxes"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -11,8 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid: 
 - MOE150
 - MET150
@@ -25,15 +25,19 @@ description: "Create and manage inactive mailboxes that retain the contents of d
 
 # Create and manage inactive mailboxes
 
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
 Inactive mailboxes let you retain former employees' email after they leave your organization and can be accessed by authorized people who have been granted [eDiscovery permissions](assign-ediscovery-permissions.md) for compliance or legal reasons. For example, administrators, compliance officers, and records managers who can then use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
 
 For more information about inactive mailboxes, see [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create an inactive mailbox
 
 Making a mailbox inactive requires a hold on the mailbox, and then deleting the mailbox or corresponding user account.
 
-To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a hold can be applied to the mailbox before it's deleted. After the user account is deleted, any Exchange Online license associated with the user account will be available to assign to a new user.
+To make a mailbox inactive, it must be [licensed correctly](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#email-archiving) so that a hold can be applied to the mailbox before it's deleted. After the user account is deleted, any Exchange Online license associated with the user account will be available to assign to a new user.
 
 We recommend you use Microsoft 365 retention to apply the hold on the mailbox. Other methods are covered in [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
 
@@ -57,21 +61,21 @@ The following table summarizes the process of making an inactive mailbox for dif
 
 To view a list of the inactive mailboxes in your organization:
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for a Global administrator or a Compliance administrator account in your organization.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and sign in using the credentials for a Global administrator or a Compliance administrator account in your organization.
 
-2. In the left navigation pane, click **Show all**, and then click **Information governance** > **Retention**.
+2. In the left navigation pane, select **Data lifecycle management** > **Microsoft 365** > **Retention policies**.
 
-   ![Click the Inactive Mailbox button on the Retention page.](../media/MCCInactiveMailboxes1.png)
+3. Select the **Inactive mailbox** option:
 
-3. On the **Retention** page, click **Inactive mailbox** to display a list of inactive mailboxes.
+   ![Inactive Mailbox option on the Retention policies page from data lifecycle management.](../media/inactive-mailbox-option.png)
 
-4. Select an inactive mailbox to display a flyout page with information about the inactive mailbox.
+4. The **Inactive mailboxes** page displays a list of inactive mailboxes. Select one to see details about that inactive mailbox. Details include the Exchange identifier for the mailbox and whether it's on [Litigation Hold](create-a-litigation-hold.md).
+    
+    You won't see other types of holds in the details pane, for example a Microsoft 365 retention policy or eDiscovery hold. To find this information, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
 
-   ![The flyout page displays details about the inactive mailbox.](../media/MCCInactiveMailboxes2.png)  
+If you have many inactive mailboxes, you might find it easier to search and sort a CSV file for the details you see in the list: On the **Inactive mailboxes** page, select :::image type="icon" source="../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png"::: **Export**.
 
-You can click ![Export search results icon.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization.
-
-Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes.
+Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes:
 
 ```powershell
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
@@ -84,11 +88,11 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
 ```
 
 > [!NOTE]
-> It's possible that an inactive mailbox may have the same SMTP address as an active user mailbox. In this case, the value of the **DistinguishedName** or **ExchangeGuid** property can be used to uniquely identify an inactive mailbox.
+> It's possible that an inactive mailbox might have the same SMTP address as an active user mailbox. In this case, the value of the **DistinguishedName** or **ExchangeGuid** property can be used to uniquely identify an inactive mailbox.
   
 ## Search and export the contents of an inactive mailbox
 
-You can access the contents of the inactive mailbox by using the Content Search tool in the Microsoft 365 compliance center. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
+You can access the contents of the inactive mailbox by using the Content Search tool in the Microsoft Purview compliance portal. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
   
 - [Content search](content-search.md)
 

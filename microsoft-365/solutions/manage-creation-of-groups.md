@@ -7,9 +7,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
@@ -39,7 +40,7 @@ When you limit who can create a group, it affects all services that rely on grou
 - Power BI (classic)
 - Project for the web / Roadmap
 
-The steps in this article won't prevent members of certain roles from creating Groups. Office 365 Global admins can create Groups via the Microsoft 365 admin center, Planner, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
+The steps in this article won't prevent members of certain roles from creating Groups. Microsoft 365 global admins can create groups via the Microsoft 365 admin center, Planner, Exchange, and SharePoint, but not other locations such as Teams. Other roles can create Microsoft 365 Groups via limited means, listed below.
 
 - Exchange Administrator: Exchange admin center, Azure AD
 - Partner Tier 1 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
@@ -67,7 +68,7 @@ The following people don't need Azure AD Premium or Azure AD Basic EDU licenses 
 
 ## Step 1: Create a group for users who need to create Microsoft 365 groups
 
-Only one group in your organization can be used to control who is able to create Groups. But, you can nest other groups as members of this group.
+Only one group in your organization can be used to control who is able to create Microsoft 365 Groups. But, you can nest other groups as members of this group.
 
 Admins in the roles listed above do not need to be members of this group: they retain their ability to create groups.
 
@@ -77,7 +78,7 @@ Admins in the roles listed above do not need to be members of this group: they r
 
 3. Choose the group type you want. Remember the name of the group! You'll need it later.
 
-4. Finish setting up the group, adding people or other groups who you want to be able to create groups in your org.
+4. Finish setting up the group, adding people or other groups who you want to be able to create groups as members (not owners).
 
 For detailed instructions, see [Create, edit, or delete a security group in the Microsoft 365 admin center](../admin/email/create-edit-or-delete-a-security-group.md).
 
@@ -89,7 +90,7 @@ You must use the preview version of [Azure Active Directory PowerShell for Graph
 
 - If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.
 
-- If you have already installed the preview version, run `Install-Module AzureADPreview` to make sure it's the latest version of this module.
+- If you have already installed the preview version, run `Update-Module AzureADPreview` to make sure it's the latest version of this module.
 
 Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 

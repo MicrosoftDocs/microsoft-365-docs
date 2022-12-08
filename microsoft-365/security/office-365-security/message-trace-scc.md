@@ -7,19 +7,20 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-
+ms.collection: m365-security
 ms.localizationpriority: medium
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can use the message trace link in the Microsoft 365 Defender portal to find out what happened to messages.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
+search.appverid: met150
 ---
 
 # Message trace in the Microsoft 365 Defender portal
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

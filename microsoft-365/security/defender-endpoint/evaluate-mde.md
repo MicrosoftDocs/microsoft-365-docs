@@ -5,7 +5,7 @@ description: Evaluate the different security capabilities in Microsoft Defender 
 keywords: attack surface reduction, evaluate, next, generation, protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
 ---
 
 # Evaluate Microsoft Defender for Endpoint 
@@ -40,7 +42,6 @@ You can also evaluate the different security capabilities in Microsoft Defender 
 
 These capabilities help prevent attacks and exploitations from infecting your organization.
 
-- [Evaluate attack surface reduction](./evaluate-attack-surface-reduction.md)
 - [Evaluate exploit protection](./evaluate-exploit-protection.md)
 - [Evaluate network protection](./evaluate-exploit-protection.md)
 - [Evaluate controlled folder access](./evaluate-controlled-folder-access.md)

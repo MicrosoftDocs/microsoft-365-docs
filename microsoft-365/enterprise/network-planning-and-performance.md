@@ -2,13 +2,15 @@
 title: "Network planning and performance tuning for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 8/19/2020
+manager: scotv
+ms.date: 2/18/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Strat_O365_Enterprise
+ms.collection: 
+- scotvorg
+- Strat_O365_Enterprise
 f1.keywords:
 - CSH
 search.appverid: 
@@ -34,12 +36,14 @@ Before you deploy for the first time or migrate to Microsoft 365, you can use th
 
 Once you have Microsoft 365 deployed, you can optimize your performance by using the topics in this section. If you experience performance degradation you can also use these topics to troubleshoot issues.
   
- **[Tune Office 365 performance](tune-microsoft-365-performance.md)**: For information about using network address translation with Office 365, see [NAT support with Office 365](nat-support-with-microsoft-365.md). Also, take a look at the [top 10 tips for optimizing and troubleshooting your Office 365 network connectivity](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity). 
+ **[Tune Office 365 performance](tune-microsoft-365-performance.md)**: For information about using network address translation with Office 365, see [NAT support with Office 365](nat-support-with-microsoft-365.md). Also, take a look at the [top 10 tips for optimizing and troubleshooting your Office 365 network connectivity](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity).
   
- **[Tune Exchange Online performance](tune-exchange-online-performance.md)**: Use these articles to fine tune Exchange Online performance. 
+ **[Tune Exchange Online performance](tune-exchange-online-performance.md)**: Use these articles to fine tune Exchange Online performance.
+
+ **[Prepare your organization's network for Microsoft Teams](/microsoftteams/prepare-network)**: Use these articles to optimize your network for Teams.
   
- **[Tune Skype for Business Online performance](tune-skype-for-business-online-performance.md)**: Use these articles to fine tune Skype for Business Online performance. 
+ **[Tune Skype for Business Online performance](tune-skype-for-business-online-performance.md)**: Use these articles to fine tune Skype for Business Online performance.
   
- **[Tune SharePoint Online performance](tune-sharepoint-online-performance.md)**: Use these articles to fine tune SharePoint Online performance. 
+ **[Tune SharePoint Online performance](tune-sharepoint-online-performance.md)**: Use these articles to fine tune SharePoint Online performance.
   
- **[Tune Project Online performance](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c)**: Use this article to fine tune Project Online performance.
+ **[Tune Project Online performance](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c)**: Use this article to fine tune Project Online performance

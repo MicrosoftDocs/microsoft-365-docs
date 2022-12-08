@@ -1,5 +1,5 @@
 ---
-title: "BitLocker for Encryption"
+title: "BitLocker for encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -13,7 +13,8 @@ search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_Enterprise
-- M365-security-compliance
+- purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: Learn about how Office 365 uses BitLocker encryption, reducing the potential for data theft due to lost or stolen computers and disks.
 ms.custom: seo-marvel-apr2020

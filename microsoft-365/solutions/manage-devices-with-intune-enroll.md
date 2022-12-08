@@ -4,33 +4,41 @@ ms.author: bcarter
 author: brendacarter
 f1.keywords:
 - enroll devices into management
-- enroll devices with Intune
+- enroll devices to Intune
 - Intune mobile device platforms
 manager: dougeby
 audience: ITPro
 description: Use Intune and Autopilot to enroll devices into management to ensure the apps running on them are compliant and to prevent corporate data leaks.
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 keywords: 
 ---
 
-# Step 2. Enroll devices into management with Intune
+# Step 2. Enroll devices to Intune
 
-There are several ways to secure the endpoint, a term often used to refer to the combined entity including devices, apps, and user identity. Security policies must be enforced consistently and reliably not only on the apps but the device itself. Enrolling the device into management and registering with a cloud identity provider, such as Azure Active Directory, is a great start.
+There are several ways to secure the endpoint, a term often used to refer to the combined entity including devices, apps, and user identity. Security policies must be enforced consistently and reliably not only on the apps but the device itself. Enrolling the device to Intune and registering with a cloud identity provider, such as Azure Active Directory, is a great start.
 
 Whether a device is a personally owned BYOD device or a corporate-owned and fully managed device, it's good to have visibility into the endpoints accessing your organization’s resources to ensure you’re only allowing healthy and compliant devices. This includes the health and trustworthiness of mobile and desktop apps that run on endpoints. You want to ensure those apps are healthy and compliant and that they prevent corporate data from leaking to consumer apps or services through malicious intent or accidental means.
 
 The device enrollment process establishes a relationship between the user, the device, and the Microsoft Intune service. Using Microsoft Intune as a standalone service enables you to use a single web-based administration console to manage Windows PCs, macOS, and the most popular mobile device platforms.
 
-This article recommends methods for enrolling devices into management using Intune. For more information about these methods and how to deploy each one, see [Deployment guidance: Enroll devices in Microsoft Intune](/microsoft-365/security/defender/eval-overview).
+This article recommends methods for enrolling devices to Intune. For more information about these methods and how to deploy each one, see [Deployment guidance: Enroll devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 ![Steps for managing devices](../media/devices/intune-mdm-steps-1.png#lightbox)
+
+Use the guidance in this article together with this illustrated version of enrollment options for each platform. 
+
+[![A visual representation of Intune enrollment options by platform](../media/devices/msft-intune-enrollment-options-thumb-landscape.png)](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) <br/> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) | [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br/> Updated June 2022
+
+
 
 ## Windows enrollment
 There are several options for enrolling Windows 10 and Windows 11 devices. The most common methods include these two:
@@ -40,9 +48,9 @@ There are several options for enrolling Windows 10 and Windows 11 devices. The m
 
 For additional options, including enrolling BYOD Windows devices, see, [Enroll Windows devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows).
 
-## iOS/iPadOS and iPadOS enrollment
+## iOS and iPadOS enrollment
 
-For user owned (BYOD) devices, you can let users enroll their personal devices for Intune management using one of the following methods.
+For user owned (BYOD) devices, you can let users enroll their personal devices with Intune using one of the following methods.
 - Device enrollment is what you may think of as typical BYOD enrollment. It provides admins with a wide range of management options.
 - User enrollment is a more streamlined enrollment process that provides admins with a subset of device management options. This feature is currently in preview.
 

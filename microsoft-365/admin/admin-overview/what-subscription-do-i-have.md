@@ -1,31 +1,35 @@
 ---
-title: "What subscription do I have?"
+title: "What Microsoft 365 subscription do I have?"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
+- highpri
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom: 
+- commerce_subscriptions
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
-description: "Learn to verify which subscriptions your organization has by going to the Your products page."
+description: "Learn to verify which Microsoft 365 subscriptions your organization has by going to the Your products page."
 ms.date: 01/21/2021
 ---
 
-# What subscription do I have?
+# Which Microsoft 365 subscription do I have?
 
 If you're an admin, you can verify which subscriptions your organization has by going to the admin center.
   

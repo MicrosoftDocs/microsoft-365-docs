@@ -1,23 +1,25 @@
 ---
-title: Explanation types in Microsoft SharePoint Syntex
+title: Explanation types in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn more about phrase list, regular expression, and proximity explanation types in Microsoft SharePoint Syntex.
+description: Learn more about phrase list, regular expression, and proximity explanation types in Microsoft Syntex.
 ---
 
-# Explanation types in Microsoft SharePoint Syntex
+# Explanation types in Microsoft Syntex
 
-Explanations are used to help to define the information you want to label and extract in your document understanding models in Microsoft SharePoint Syntex. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they're used.
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
+
+Explanations are used to help to define the information you want to label and extract in your unstructured document processing models in Microsoft Syntex. When you create an explanation, you need to select an explanation type. This article helps you understand the different explanation types and how they're used.
 
 ![Screenshot of the Create an explanation panel showing the three explanation types.](../media/content-understanding/explanation-types.png)
 
@@ -114,10 +116,10 @@ To add a regular expression explanation type:
 
 The following table shows inline character options that currently are not available for use in regular expression patterns.
 
-|Option  |State  |Current functionality  |
-|---------|---------|---------|
-|Case sensitivity | Currently not supported. | All matches performed are case-insensitive.  |
-|Line anchors     | Currently not supported. | Unable to specify a specific position in a string where a match must occur.   |
+|Option|State|Current functionality|
+|---|---|---|
+|Case sensitivity|Currently not supported.|All matches performed are case-insensitive.|
+|Line anchors|Currently not supported.| Unable to specify a specific position in a string where a match must occur.|
 
 ## Proximity
 
@@ -135,7 +137,7 @@ Use the proximity explanation to define how far away the phone number explanatio
 ![Proximity explanation.](../media/content-understanding/proximity.png)
 
 > [!NOTE]
-> Regular expressions currently can’t be used with the proximity explanation type.
+> Regular expressions currently can't be used with the proximity explanation type.
 
 #### What are tokens?
 
@@ -144,11 +146,11 @@ To use the proximity explanation type, you need to understand what a token is. T
 The following table shows examples for how to determine the number of tokens in a phrase.
 
 |Phrase|Number of tokens|Explanation|
-|--|--|--|
+|---|---|---|
 |`Dog`|1|A single word with no punctuation or spaces.|
 |`RMT33W`|1|A record locator number. It might include numbers and letters, but doesn't have punctuation.|
-|`425-555-5555`|5|A phone number. Each punctuation mark is a single token, so `425-555-5555` is 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
-|`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
+|`425-555-5555`|5|A phone number. Each punctuation mark is a single token, so `425-555-5555` is 5 tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555`|
+|`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`|
 
 #### Configure the proximity explanation type
 
@@ -206,18 +208,19 @@ You can choose the following options for this setting:
    ![Custom range.](../media/content-understanding/custom-file.png)
 
     In the viewer, you can manually adjust the select box to include the location where the phase occurs. For this setting, you need to select a **Start** and an **End** position. These values represent the number of tokens from the beginning of the document. While you can manually enter in these values, it's easier to manually adjust the select box in the viewer.
-    
+
 ## Considerations when configuring explanations
+
 When training a classifier there a few things to keep in mind that will produce more predictable results:
 
-- The more documents you train with, the more accurate the classifier will be.  When possible, use more than 5 good documents and use more than 1 bad document.  If the libraries you’re working with have several different document types in it, several of each type lead to more predictable results.
-- Labeling the document plays an important role in the training process.  They are used together with explanations to train the model.  You may see some anomalies when training a classifier with documents that don’t have a lot of content in them.  The explanation may not match anything in the document but since it was labeled as a “good” document you may see it be a match during training.
+- The more documents you train with, the more accurate the classifier will be.  When possible, use more than 5 good documents and use more than 1 bad document.  If the libraries you're working with have several different document types in it, several of each type lead to more predictable results.
+- Labeling the document plays an important role in the training process.  They are used together with explanations to train the model.  You may see some anomalies when training a classifier with documents that don't have a lot of content in them.  The explanation may not match anything in the document but since it was labeled as a "good" document you may see it be a match during training.
 - When creating explanations, it uses OR logic in combination with the label to determine if it is a match.  Regular expression that uses AND logic may be more predictable.  Here is a sample regular expression to use on real documents as your training them.  Note the text highlighted in red is the phrase(s) you would be looking for.
 
     <pre>(?=.*network provider)(?=.*participating providers).*</pre>
-    
-- Labels and explanations work together and are used in training the model.  It’s not a series of rules that can be de-coupled and precise weights or prediction applied to each variable that has been configured.  The greater the variation of documents used in the training will provide more accuracy in the model.
+
+- Labels and explanations work together and are used in training the model.  It's not a series of rules that can be de-coupled and precise weights or prediction applied to each variable that has been configured.  The greater the variation of documents used in the training will provide more accuracy in the model.
 
 ### See also
 
-[Use explanation templates in SharePoint Syntex](explanation-templates.md)
+[Use explanation templates in Microsoft Syntex](explanation-templates.md)

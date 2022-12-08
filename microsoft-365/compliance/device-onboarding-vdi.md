@@ -11,10 +11,11 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MET150
-description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to the Microsoft 365 Endpoint data loss prevention service.
+description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to the Endpoint data loss prevention service.
 
 ---
 
@@ -22,13 +23,15 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md)
 
 - Virtual desktop infrastructure (VDI) devices
 
 > [!WARNING]
-> Microsoft 365 Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios. Multi-session scenarios on Windows Virtual Desktop are currently not supported.
+> Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios. Multi-session scenarios on Windows Virtual Desktop are currently not supported.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Onboard VDI devices
 
@@ -39,10 +42,10 @@ Microsoft 365 supports non-persistent virtual desktop infrastructure (VDI) sessi
 
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
-- Instant early onboarding of a short-lived sessions, which must be onboarded to Microsoft 365 prior to the actual provisioning.
+- Instant early onboarding of short-lived sessions, which must be onboarded to Microsoft 365 prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-VDI devices can appear in the Microsoft 365 Compliance center as either:
+VDI devices can appear in the Microsoft Purview compliance portal as either:
 
 - Single entry for each device.
 Note that in this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
@@ -53,7 +56,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 > [!WARNING]
 > For environments where there are low resource configurations, the VDI boot procedure might slow the device onboarding process.
 
-1. Get the VDI configuration package .zip file (*DeviceCompliancePackage.zip*) from [Microsoft Compliance center](https://compliance.microsoft.com).
+1. Get the VDI configuration package .zip file (*DeviceCompliancePackage.zip*) from [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 
 2. In the navigation pane, select **Settings** > **Device onboarding** > **Onboarding**.
 
@@ -61,7 +64,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 4. Click **Download package** and save the .zip file.
 
-5. Copy the files from the DeviceCompliancePackage folder extracted from the .zip file into the `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
+5. Copy the files from the DeviceCompliancePackage folder extracted from the .zip file into the `golden` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
 
 6. If you are not implementing a single entry for each device, copy DeviceComplianceOnboardingScript.cmd.
 
@@ -87,9 +90,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 10. Test your solution:
     1. Create a pool with one device.
-    1. Logon to device.
-    1. Logoff from device.
-    1. Logon to device with another user.
+    1. Log on to device.
+    1. Log off from device.
+    1. Log on to device with another user.
     1. **For single entry for each device**: Check only one entry in Microsoft Defender Security Center.
        **For multiple entries for each device**: Check multiple entries in Microsoft Defender Security Center.
 
@@ -99,11 +102,11 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 ## Updating non-persistent virtual desktop infrastructure (VDI) images
 
-As a best practice, we recommend using offline servicing tools to patch golden/master images.
+As a best practice, we recommend using offline servicing tools to patch golden images.
 
 For example, you can use the below commands to install an update while the image remains offline:
 
-```console
+```DOS
 DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
 DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
 DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
@@ -117,11 +120,11 @@ For more information on DISM commands and offline servicing, please refer to the
 
 If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft 365 device monitoring sensor. For more information, see [Offboard devices using a local script](device-onboarding-script.md#offboard-devices-using-a-local-script).
+1. After booting the golden image for online servicing or patching, run an offboarding script to turn off the Microsoft 365 device monitoring sensor. For more information, see [Offboard devices using a local script](device-onboarding-script.md#offboard-devices-using-a-local-script).
 
 2. Ensure the sensor is stopped by running the command below in a CMD window:
 
-   ```console
+   ```DOS
    sc query sense
    ```
 
@@ -129,15 +132,15 @@ If offline servicing is not a viable option for your non-persistent VDI environm
 
 4. Run the below commands using PsExec.exe (which can be downloaded from https://download.sysinternals.com/files/PSTools.zip) to cleanup the cyber folder contents that the sensor may have accumulated since boot:
 
-    ```console
+    ```DOS
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 
-5. Re-seal the golden/master image as you normally would.
+5. Re-seal the golden image as you normally would.
 
 ## Related topics
 

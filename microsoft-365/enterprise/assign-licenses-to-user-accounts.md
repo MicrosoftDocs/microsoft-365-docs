@@ -2,11 +2,11 @@
 title: "Assign Microsoft 365 licenses to user accounts"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -17,6 +17,7 @@ ms.custom:
 - 'O365E_HRCSetupAADConnectAboutLM617031'
 - 'O365E_AddUsersWithDirSync'
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -56,13 +57,13 @@ Make sure you have enough licenses for all the group members. If you run out of 
 >You should not configure group-based licensing for groups that contain Azure business to business (B2B) accounts.
 >
 
-For more informaion, see [group-based licensing in Azure AD](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+For more information, see [group-based licensing in Azure AD](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## Next steps
 
 With the appropriate set of user accounts that have been assigned licenses, you are now ready to:
 
-- [Implement security](../security/office-365-security/security-roadmap.md)
+- [Implement security](/microsoft-365/security/office-365-security/overview)
 - [Deploy client software, such as Microsoft 365 Apps](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Set up device management](device-management-roadmap-microsoft-365.md)
 - [Configure services and applications](configure-services-and-applications.md)

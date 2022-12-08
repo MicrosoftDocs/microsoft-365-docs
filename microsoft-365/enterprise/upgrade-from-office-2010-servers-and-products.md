@@ -2,12 +2,14 @@
 title: "Resources to help you upgrade from Office 2010 servers and clients"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 search.appverid:
 - MET150
 - LCC120

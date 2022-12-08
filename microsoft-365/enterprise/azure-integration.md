@@ -2,12 +2,13 @@
 title: "Azure integration with Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 f1.keywords:
@@ -48,7 +49,7 @@ With the free subscription you can synchronize with on-premises directories, set
   
 If you want enhanced AD DS functionality, bi-directional synchronization, and other management capabilities, you can upgrade your free subscription to a paid premium subscription. For the details, see [Azure Active Directory editions](https://azure.microsoft.com/pricing/details/active-directory/).
   
-For more information about Microsoft 365 and Azure AD, see [Microsoft 365 identity models](about-microsoft-365-identity.md).
+For more information about Microsoft 365 and Azure AD, see [Microsoft 365 identity models](deploy-identity-solution-identity-model.md).
   
 ## Extend the capabilities of your Microsoft 365 tenant
 

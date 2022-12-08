@@ -1,27 +1,28 @@
 ---
-title: "Document metadata fields in Advanced eDiscovery"
+title: "Document metadata fields in eDiscovery (Premium)"
+description: "This article defines the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium) in Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-
-description: "This article defines the metadata fields for documents in a review set in a case in Advanced eDiscovery in Microsoft 365."
 ---
 
-# Document metadata fields in Advanced eDiscovery
+# Document metadata fields in eDiscovery (Premium)
 
-The following table lists the metadata fields for documents in a review set in a case in Advanced eDiscovery. The table provides the following information:
+The following table lists the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium). The table provides the following information:
 
 - **Field name** and **Display field name:** The name of the metadata field and the name of the field that's displayed when viewing the file metadata of a selected document in a review set. Some metadata fields aren't included when viewing the file metadata of a document. These fields are highlighted with an asterisk (*).
 
@@ -49,7 +50,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Compound Path|CompoundPath|Compound_path|Human readable path that describes the source of the item.|
 |Content*|Content||Extracted text of the item.|
 |Conversation Body|ConversationBody||Conversation body of the item.|
-|Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Conversation ID. For more information, see [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
+|Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Conversation ID. For more information, see [eDiscovery (Premium) workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Conversation Family ID|ConversationFamilyID|ConversationFamilyID|The Id that identifies individual elements of a conversation as well as the related items in the conversation.|
 |Conversation Index||Conversation_index|Conversation index from the message.|
 |Conversation Name||ConversationName|This field depends on content type.<br>**Teams 1:1 chat:** first 40 characters of first message.<br>**Teams 1:N chat:** Name of group chat; if not available, the first 40 characters of the first message.<br>**Teams Channel Post:** Post title or announcement subhead; if not available, the first 40 characters of the first message.|
@@ -62,7 +63,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Teams Announcement Title|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Title from a [teams announcement](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|The path of the converted export file. For internal Microsoft use only.|
 |Custodian|Custodian|Custodian|Name of the custodian the item was associated with.|
-|Date|Date|Date|Date is a computed field that depends on the file type.<p>Email: Sent date<br>Email attachments: Last modified date of the document;if not available, the parent's Sent date<br>Embedded documents: Last modified date of the document; if not available, the parent's last modified date<br>SPO documents (includes modern attachments): SharePoint Last modified date; if not available, the documents last modified date<br>Non-Office 365 documents: Last modified date<br>Meetings: Meeting start date<br>VoiceMail: Sent date<br>IM: Sent date<br>Teams: Sent date|
+|Date|Date|Date|Date is a computed field that depends on the file type.<p>**Email**: Sent date<br>**Email attachments**: Last modified date of the document; if not available, the parent's sent date<br>**Embedded documents**: Last modified date of the document; if not available, the parent's last modified date<br>**SPO documents (includes modern attachments)**: Last modified date of the document; if not available, SharePoint last modified date<br>**Non-Office 365 documents**: Last modified date<br>**Meetings**: Meeting start date<br>**VoiceMail**: Sent date<br>**IM**: Sent date<br>**Teams**: Sent date|
 |Document comments|DocComments|Doc_comments|Comments from the document metadata.|
 |Document company||Doc_company|Company from the document metadata.|
 |Document date created|CreatedTime|Doc_date_created|Create date from document metadata.|
@@ -134,8 +135,8 @@ The following table lists the metadata fields for documents in a review set in a
 |O365 authors||O365_authors|Author from SharePoint.|
 |O365 created by||O365_created_by|Created by from SharePoint.|
 |O365 date created||O365_date_created|Created date from SharePoint.|
-|O365 date modified||O365_date_modified|Last modified date from SharePoint.|
-|O365 modified by||O365_modified_by|Modified by from SharePoint.|
+|O365ModifiedDate||O365_date_modified|The date a document (or document version) collected from SharePoint or OneDrive for Business was modified. This is the same modified date as the one displayed in the version history in the SharePoint and OneDrive user experience.|
+|O365 modified by||O365_modified_by|Modified by from SharePoint or OneDrive.|
 |Other custodians|DedupedCustodians|Deduped_custodians|List of custodians of documents that are exact duplicates (for email, based on content; for documents, based on hash).|
 |Other file IDs|DedupedFileIds|Deduped_file_IDs|List of file IDs of documents that are exact duplicates (for email, based on content; for documents, based on hash).|
 |Other paths|Dedupedcompoundpath|Deduped_compound_path|List of compound paths of documents that are exact duplicates (email: based on content, documents: based on hash).|
@@ -176,9 +177,10 @@ The following table lists the metadata fields for documents in a review set in a
 |To|To|Email_to|To field for message types. Format is **DisplayName\<SmtpAddress>**|
 |Unique in email set|UniqueInEmailSet||**False** if there's a duplicate of the attachment in its email set.|
 |Version Group ID||Version_Group_Id|Groups together the different versions of the same document.|
+|VersionNumber||Version_Number|The version number of a document collected from SharePoint or OneDrive for Business. This is the same version number as the one displayed in the version history in the SharePoint and OneDrive user experience.|
 |Was Remediated|WasRemediated|Was_Remediated|**True** if the item was remediated, otherwise **False**.|
 |Word count|WordCount|Word_count|Number of words in the item.|
 |||||
 
 > [!NOTE]
-> For more information about searchable properties when searching Office 365 content locations when you're collecting data for an Advanced eDiscovery case, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+> For more information about searchable properties when searching Office 365 content locations when you're collecting data for an eDiscovery (Premium) case, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).

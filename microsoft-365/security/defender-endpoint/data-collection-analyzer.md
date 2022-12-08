@@ -2,7 +2,7 @@
 title:  Data collection for advanced troubleshooting on Windows
 description: Learn how to use the client analyzer to collect data for complex troubleshooting scenarios
 keywords: analzyer, collect data, troubleshooting mdeclientanalyzer, advanced troubleshooting
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,11 +13,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.technology: m365d
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Data collection for advanced troubleshooting on Windows
@@ -30,10 +31,10 @@ When collaborating with Microsoft support professionals, you may be asked to use
 
 Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and their description:
 
-![Image of client analyzer parameters in command line.](images/d89a1c04cf8441e4df72005879871bd0.png)
+:::image type="content" source="images/MDEClientAnalyzerHelp.png" alt-text="The parameters for MDEClientAnalyzer.cmd" lightbox="images/MDEClientAnalyzerHelp.png":::
 
 > [!NOTE]
-> When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance) to collect Microsoft Defender Antivirus related support logs.
+> When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) to collect Microsoft Defender Antivirus related support logs.
 
 **-h** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect a verbose general performance trace in addition to the standard log set.
 
@@ -44,6 +45,8 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 **-i** - Calls into built-in [netsh.exe](/windows/win32/winsock/netsh-exe) command to start a network and windows firewall trace that is useful when troubleshooting various network-related issues.
 
 **-b** - Same as '-c' but the process monitor trace will be initiated during next boot and stopped only when the -b is used again.
+
+**-e** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect Defender AV Client tracing (AM-Engine and AM-Service) for analysis of Antivirus cloud connectivity issues.
 
 **-a** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect a verbose performance trace specific to analysis of high CPU issues related to the antivirus process (MsMpEng.exe).
 
@@ -66,7 +69,7 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 
 The analyzer and all the above scenario flags can be initiated remotely by running 'RemoteMDEClientAnalyzer.cmd', which is also bundled into the analyzer toolset:
 
-![Image of commandline with analyzer information.](images/57cab9d82d08f672a92bf9e748ac9572.png)
+:::image type="content" source="images/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="The parameters for RemoteMDEClientAnalyzer.cmd" lightbox="images/57cab9d82d08f672a92bf9e748ac9572.png":::
 
 > [!NOTE]
 >
@@ -79,3 +82,5 @@ The analyzer and all the above scenario flags can be initiated remotely by runni
 >   - **-r** - Indicates that tool is being run from remote (or non-interactive context)
 >   - **-i** - Scenario flag for collection of network trace along with other related logs
 >   - **-m** \# - The number of minutes to run (5 minutes in the above example)
+>   
+>  - When using MDEClientAnalyzer.cmd the script checks for privileges using "net session" which requires the service "Server" to be running. If it is not, you will get the error message _Script is running with insufficient privileges_. Run it with administrator privileges if ECHO is off.

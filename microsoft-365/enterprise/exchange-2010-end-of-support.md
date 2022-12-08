@@ -2,12 +2,14 @@
 title: "Exchange 2010 end of support roadmap"
 ms.author: dstrome
 author: dstrome
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
@@ -43,8 +45,8 @@ It's a great time to explore your options and prepare a migration plan. You can:
 > [!IMPORTANT]
 > If your organization chooses to migrate mailboxes to Microsoft 365 but plans to keep DirSync or Azure AD Connect in place to continue managing user accounts from on-premises Active Directory, you need to keep at least one Microsoft Exchange server on-premises. If you remove all Exchange servers, you won't be able to make changes to Exchange recipients in Exchange Online because the source of authority remains in your on-premises Active Directory. Changes need to be made there. In this scenario, you have the following options:
 >
->- *Recommended:* If you migrated your mailboxes to Microsoft 365 and upgraded your servers by October 13, 2020, use Exchange 2010 to connect to Microsoft 365 and migrate mailboxes. Next, migrate Exchange 2010 to Exchange 2016, and decommission any remaining Exchange 2010 servers.
->- If you didn't complete the mailbox migration and on-premises server upgrade by October 13, 2020, upgrade your on-premises Exchange 2010 servers to Exchange 2016 first. Then use Exchange 2016 to connect to Microsoft 365 and migrate mailboxes.
+> - *Recommended:* If you migrated your mailboxes to Microsoft 365 and upgraded your servers by October 13, 2020, use Exchange 2010 to connect to Microsoft 365 and migrate mailboxes. Next, migrate Exchange 2010 to Exchange 2016, and decommission any remaining Exchange 2010 servers.
+> - If you didn't complete the mailbox migration and on-premises server upgrade by October 13, 2020, upgrade your on-premises Exchange 2010 servers to Exchange 2016 first. Then use Exchange 2016 to connect to Microsoft 365 and migrate mailboxes.
 
 > [!NOTE]
 > It's little more complicated, but you can also migrate mailboxes to Microsoft 365 while migrating your on-premises Exchange 2010 servers to Exchange 2016.
@@ -83,16 +85,11 @@ Depending on your organization, you have a few options to get to Microsoft 365. 
 
 This table shows your migration options and the most important factors that determine which method to use.
 
-<br>
-
-****
-
 |Migration option|Organization size|Duration|
 |---|---|---|
 |Cutover migration|Fewer than 150 seats|A week or less|
 |Minimal hybrid migration|Fewer than 150 seats|A few weeks or less|
 |Full hybrid migration|More than 150 seats|A few weeks or more|
-|
 
 The following sections give you an overview of these methods. For more information, see [Decide on a migration path](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27).
 
@@ -174,36 +171,27 @@ For the best experience, we recommend that you upgrade your remaining on-premise
 
 Exchange 2016 includes all the features of previous releases of Exchange. It most closely matches the experience available with Microsoft 365, although some features are available only in Microsoft 365. Check out just a few of the things you've been missing:
 
-<br>
-
-****
-
 |Exchange release|Features|
 |---|---|
 |**Exchange 2013**|Simplified architecture reduces the number of server roles to three (Mailbox, Client Access, Edge Transport)|
 ||Data loss prevention policies (DLP) that help keep sensitive information from leaking|
 ||Improved Outlook Web App experience|
-|**Exchange 2016**|*Features from Exchange 2013 and …*|
+|**Exchange 2016**|*Features from Exchange 2013 and ...*|
 ||Further simplified server roles to just Mailbox and Edge Transport|
 ||Improved DLP along with integration with SharePoint|
 ||Improved database resilience|
 ||Online document collaboration|
-|
 
-<br>
-
-****
 
 |Consideration|More information|
 |---|---|
-|End of support dates|Like Exchange 2010, each version of Exchange has its own end-of-support date: <p> Exchange 2013 - April 2023 <p> Exchange 2016 - October 2025 <p> The earlier the end-of-support date, the sooner you'll need to perform another migration. April 2023 is a lot closer than you think!|
-|Migration path to Exchange 2013 or 2016|The migration path from Exchange 2010 to a newer version is the same whether you choose Exchange 2013 or Exchange 2016: <p> Install Exchange 2013 or 2016 into your existing Exchange 2010 organization. <p> Move services and other infrastructure to Exchange 2013 or 2016. <p> Move mailboxes and public folders to Exchange 2013 or 2016 Decommission remaining Exchange 2010 servers.|
+|End of support dates|Like Exchange 2010, each version of Exchange has its own end-of-support date: <br/><br/> Exchange 2013 - April 2023 <br/><br/> Exchange 2016 - October 2025 <br/><br/> The earlier the end-of-support date, the sooner you'll need to perform another migration. April 2023 is a lot closer than you think!|
+|Migration path to Exchange 2013 or 2016|The migration path from Exchange 2010 to a newer version is the same whether you choose Exchange 2013 or Exchange 2016: <br/><br/> Install Exchange 2013 or 2016 into your existing Exchange 2010 organization. <br/><br/> Move services and other infrastructure to Exchange 2013 or 2016. <br/><br/> Move mailboxes and public folders to Exchange 2013 or 2016 Decommission remaining Exchange 2010 servers.|
 |Version coexistence|When migrating to Exchange 2013 or Exchange 2016, you can install either version into an existing Exchange 2010 organization. This enables you to install one or more Exchange 2013 or Exchange 2016 servers and do your migration.|
-|Server hardware|Server hardware requirements have changed from Exchange 2010. Make sure your hardware is compatible. Find out more about hardware requirements for each version here: <p> [Exchange 2016 system requirements](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) <p> [Exchange 2013 system requirements](/Exchange/exchange-2013-system-requirements-exchange-2013-help) <p> With the significant improvements in Exchange performance and the increased computing power and storage capacity in newer servers, you'll likely need fewer servers to support the same number of mailboxes.|
-|Operating system version|The minimum supported operating system versions for each version are: <p> Exchange 2016 - Windows Server 2012 <p> Exchange 2013 - Windows Server 2008 R2 SP1 <p> You can find more information about operating system support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
-|Active Directory forest functional level|The minimum supported Active Directory forest functional levels for each version are: <p> Exchange 2016 - Windows Server 2008 R2 SP1 <p> Exchange 2013 - Windows Server 2003 <p> You can find more information about forest functional level support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
-|Office client versions|The minimum supported Office client versions for each version are: <p> Exchange 2016 - Office 2010 (with the latest updates) <p> Exchange 2013 - Office 2007 SP3 <p> Find more information about Office client support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
-|
+|Server hardware|Server hardware requirements have changed from Exchange 2010. Make sure your hardware is compatible. Find out more about hardware requirements for each version here: <br/><br/> [Exchange 2016 system requirements](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) <br/><br/> [Exchange 2013 system requirements](/Exchange/exchange-2013-system-requirements-exchange-2013-help) <br/><br/> With the significant improvements in Exchange performance and the increased computing power and storage capacity in newer servers, you'll likely need fewer servers to support the same number of mailboxes.|
+|Operating system version|The minimum supported operating system versions for each version are: <br/><br/> Exchange 2016 - Windows Server 2012 <br/><br/> Exchange 2013 - Windows Server 2008 R2 SP1 <br/><br/> You can find more information about operating system support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
+|Active Directory forest functional level|The minimum supported Active Directory forest functional levels for each version are: <br/><br/> Exchange 2016 - Windows Server 2008 R2 SP1 <br/><br/> Exchange 2013 - Windows Server 2003 <br/><br/> You can find more information about forest functional level support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
+|Office client versions|The minimum supported Office client versions for each version are: <br/><br/> Exchange 2016 - Office 2010 (with the latest updates) <br/><br/> Exchange 2013 - Office 2007 SP3 <br/><br/> Find more information about Office client support at [Exchange Supportability Matrix](/exchange/plan-and-deploy/supportability-matrix).|
 
 Use the following resources to help with your migration:
 

@@ -7,9 +7,11 @@ author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -77,7 +79,7 @@ To delete a custom tile, from the **Custom tiles** window, select the tile, sele
   
 ## Next steps
 
-In addition to adding tiles to the app launcher, you can add app launcher tiles to the navigation bar ([learn more](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). To customize the look and feel of Microsoft 365 to match your organization's brand, see [Customize the Microsoft 365 theme](../setup/customize-your-organization-theme.md).
+ To customize the look and feel of Microsoft 365 to match your organization's brand, see [Customize the Microsoft 365 theme](../setup/customize-your-organization-theme.md).
 
 ## Related content
 

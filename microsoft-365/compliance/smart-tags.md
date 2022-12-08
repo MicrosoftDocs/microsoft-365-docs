@@ -1,27 +1,31 @@
 ---
-title: "Set up smart tags in Advanced eDiscovery"
+title: "Set up smart tags in eDiscovery (Premium)"
+description: "Smart tags let you apply the machine learning capabilities when reviewing content in an eDiscovery (Premium) case. Use smart tag groups to display the results of machine learning detection models, such as the attorney-client privilege model."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
 ROBOTS: NOINDEX, NOFOLLOW 
-description: "Smart tags let you apply the machine learning capabilities when reviewing content in an Advanced eDiscovery case. Use smart tag groups to display the results of machine-learning detection models, such as the attorney-client privilege model."
 ---
 
-# Set up smart tags in Advanced eDiscovery
+# Set up smart tags in eDiscovery (Premium)
 
-Machine learning (ML) capabilities in Advanced eDiscovery can help you make the decision process more efficient when reviewing case documents in a review set. Smart tags are a way to bring the ML capabilities to where the decisions are recorded: when tagging documents during review. When you create a smart tag group, then the decisions that are the result of the ML model that you've associated with the smart tag group are displayed in-line with the tags in the tag group. This helps see the ML results information in-line when you're reviewing specific documents.
+Machine learning (ML) capabilities in Microsoft Purview eDiscovery (Premium) can help you make the decision process more efficient when reviewing case documents in a review set. Smart tags are a way to bring the ML capabilities to where the decisions are recorded: when tagging documents during review. When you create a smart tag group, then the decisions that are the result of the ML model that you've associated with the smart tag group are displayed in-line with the tags in the tag group. This helps see the ML results information in-line when you're reviewing specific documents.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How to set up a smart tag group
 

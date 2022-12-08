@@ -4,12 +4,13 @@ author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -124,7 +125,7 @@ Use [Common identity and device access policies](../security/office-365-security
 
 [Additional identity Test Lab Guides](m365-enterprise-test-lab-guides.md#identity)
 
-[Identity roadmap](identity-roadmap-microsoft-365.md)
+[Deploy identity](deploy-identity-solution-overview.md)
 
 [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 

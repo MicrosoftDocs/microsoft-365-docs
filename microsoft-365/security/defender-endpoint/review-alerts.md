@@ -2,7 +2,7 @@
 title: Review alerts in Microsoft Defender for Endpoint
 description: Review alert information, including a visualized alert story and details for each step of the chain.
 keywords: incident, incidents, machines, devices, users, alerts, alert, investigation, graph, evidence
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
@@ -12,11 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-security
+  - tier1
 ms.topic: conceptual
 ms.date: 5/1/2020
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Review alerts in Microsoft Defender for Endpoint
@@ -48,21 +49,24 @@ Note the detection status for your alert.
 
 - Prevented: The attempted suspicious action was avoided. For example, a file either wasn't written to disk or executed.
 
-  ![An alert page showing threat was prevented.](images/detstat-prevented.png)
+  :::image type="content" source="images/detstat-prevented.png" alt-text="The page showing the prevention of a threat" lightbox="images/detstat-prevented.png":::
 
 - Blocked: Suspicious behavior was executed and then blocked. For example, a process was executed but because it subsequently exhibited suspicious behaviors, the process was terminated.
 
-  ![An alert page showing threat was blocked.](images/detstat-blocked.png)
+  :::image type="content" source="images/detstat-blocked.png" alt-text="The page showing the blockage of a threat" lightbox="images/detstat-blocked.png":::
 
 - Detected: An attack was detected and is possibly still active.
 
-  ![An alert page showing threat was detected.](images/detstat-detected.png)
+  :::image type="content" source="images/detstat-detected.png" alt-text="The page showing the detection of a threat" lightbox="images/detstat-detected.png":::
 
 You can then also review the *automated investigation details* in your alert's details pane, to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
-![A snippet of the details pane with the alert description and automatic investigation sections highlighted.](images/alert-air-and-alert-description.png)
+:::image type="content" source="images/alert-air-and-alert-description.png" alt-text="The details pane with the alert description and automatic investigation sections highlighted" lightbox="images/alert-air-and-alert-description.png":::
 
 Other information available in the details pane when the alert opens includes MITRE techniques, source, and additional contextual details.
+
+> [!NOTE]
+> If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](../defender/investigate-incidents.md#alerts).
 
 ## Review affected assets
 
@@ -70,11 +74,11 @@ Selecting a device or a user card in the affected assets sections will switch to
 
 - **For devices**, the details pane will display information about the device itself, like Domain, Operating System, and IP. Active alerts and the logged on users on that device are also available. You can take immediate action by isolating the device, restricting app execution, or running an antivirus scan. Alternatively, you could collect an investigation package, initiate an automated investigation, or go to the device page to investigate from the device's point of view.
 
-   ![A snippet of the details pane when a device is selected.](images/device-page-details.png)
+   :::image type="content" source="images/device-page-details.png" alt-text="The details pane when a device is selected" lightbox="images/device-page-details.png":::
 
 - **For users**, the details pane will display detailed user information, such as the user's SAM name and SID, as well as logon types performed by this user and any alerts and incidents related to it. You can select *Open user page* to continue the investigation from that user's point of view.
 
-   ![A snippet of the details pane when a user is selected.](images/user-page-details.png)
+   :::image type="content" source="images/user-page-details.png" alt-text="The details pane when a  user is selected" lightbox="images/user-page-details.png":::
 
 ## Related topics
 

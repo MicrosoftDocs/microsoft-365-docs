@@ -2,10 +2,10 @@
 title: "How to check Microsoft 365 service health"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 f1.keywords:
 - CSH
@@ -17,6 +17,7 @@ ms.custom:
 - 'O365E_ServiceHealthModern'
 - 'seo-marvel-apr2020'
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:
@@ -43,7 +44,7 @@ If you are unable to sign in to the admin center, you can use the [service statu
     > [!NOTE]
     > People who are assigned the global admin or service support admin role can view service health. To allow Exchange, SharePoint, and Skype for Business admins to view service health, they must also be assigned the Service admin role. For more information about roles that can view service health, see [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
 
-2. To view service health, in the admin center, go to **Health** > **Service health**, or select the **Service health** card on the **Home dashboard**. The dashboard card indicates whether there is an active service issue and links to the detailed **Service health** page.
+2. To view service health, in the left-hand navigation of the admin center, go to **Health** > **Service health**, or select the **Service health** card on the **Home dashboard**. The dashboard card indicates whether there is an active service issue and links to the detailed **Service health** page.
 
 3. On the **Service health** page, the health state of each cloud service is shown in a table format.
 

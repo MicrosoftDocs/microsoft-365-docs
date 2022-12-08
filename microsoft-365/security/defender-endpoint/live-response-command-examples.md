@@ -2,7 +2,7 @@
 title: Live response command examples
 description: Learn to run basic or advanced live response commands for Microsoft Defender for Endpoint, and see examples on how they're used.
 keywords: example, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Live response command examples
@@ -107,8 +110,8 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > The following file types *cannot* be downloaded using this command from within Live Response:
 >
-> - [Reparse point files](/windows/desktop/fileio/reparse-points/)
-> - [Sparse files](/windows/desktop/fileio/sparse-files/)
+> - [Reparse point files](/windows-hardware/drivers/ifs/reparse-points)
+> - [Sparse files](/windows-server/administration/windows-commands/fsutil-sparse)
 > - Empty files
 > - Virtual files, or files that are not fully present locally
 >
@@ -175,7 +178,7 @@ registry HKEY_CURRENT_USER\Console
 ```
 
 ```console
-# Show information about a specific registry value
+# Show information about a specific registry value (the double backslash \\ indicates a registry value versus key)
 registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
@@ -190,6 +193,11 @@ remediate file c:\Users\user\Desktop\malware.exe
 ```console
 # Remediate process with specific PID
 remediate process 7960
+```
+
+```console
+# Remediate a registry value (the double backslash \\ indicates a registry value versus key)
+remediate registry HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\\SPStartup
 ```
 
 ```console
@@ -213,6 +221,10 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 >
 > For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.
 > This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).
+
+> [!NOTE]
+> 
+> When passing parameters to a live response script, do not include the following forbidden characters: **';'**, **'&'**, **'|'**, **'!'**, and **'$'**.
 
 ## `scheduledtask`
 

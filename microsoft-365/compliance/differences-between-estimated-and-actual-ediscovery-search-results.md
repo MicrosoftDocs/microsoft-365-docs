@@ -1,34 +1,34 @@
 ---
-title: "Differences between estimated and actual eDiscovery search results"
+title: "Estimated and actual eDiscovery search results"
+description: "Understand why estimated and actual search results may vary in searches run with eDiscovery tools in Office 365."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - SPO160
 - MOE150
 - MET150
-ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
-description: "Understand why estimated and actual search results may vary in searches run with eDiscovery tools in Office 365."
 ---
 
 # Differences between estimated and actual eDiscovery search results
 
-This topic applies to searches that you can run using one of the following Microsoft 365 eDiscovery tools: 
+This article applies to searches that you can run using one of the following Microsoft Purview eDiscovery tools:
 
 - Content search
-- Core eDiscovery
+- eDiscovery (Standard)
 
-When you run an eDiscovery search, the tool you're using will return an estimate of the number of items (and their total size) that match the search criteria. For example, when you run a search in the Microsoft 365 compliance center, the estimated search results are displayed on the flyout page for the selected search.
+When you run an eDiscovery search, the tool you're using will return an estimate of the number of items (and their total size) that match the search criteria. For example, when you run a search in the Microsoft Purview compliance portal, the estimated search results are displayed on the flyout page for the selected search.
   
 ![Estimate of results displayed on the search flyout page.](../media/EstimatedSearchResults1.png)
   
@@ -49,10 +49,15 @@ However, as you'll notice in the previous screenshot of the Export Summary repor
 Here are some reasons for these differences:
   
 - **The way results are estimated**. An estimate of the search results is just that, an estimate (and not an actual count) of the items that meet the search query criteria. To compile the estimate of Exchange items, a list of the message IDs that meet the search criteria is requested from the Exchange database by the eDiscovery tool you're using. But when you export the search results, the search is rerun and the actual messages are retrieved from the Exchange database. So these differences might result because of how the estimated number of items and the actual number of items are determined.
+- **Changes that happen between the time when estimating and exporting search results**. When you export search results, the search is restarted to collect that most recent items in the search index that meet the search criteria. It's possible there are additional items were created, sent, or received that meet the search criteria in the time between when the estimated search results were collected and when the search results were exported. It's also possible that items that were in the search index when the search results were estimated are no longer there because they were purged from the content location before the search results are exported. One way to mitigate this issue is to specify a date range for an eDiscovery search. Another way is to place a hold on content locations so that items are preserved and can't be purged.
 
-- **Changes that happen between the time when estimating and exporting search results**. When you export search results, the search is restarted to collect that most recent items in the search index that meet the search criteria. It's possible there are additional items were created, sent, or received that meet the search criteria in the time between when the estimated search results were collected and when the search results were exported. It's also possible that items that were in the search index when the search results were estimated are no longer there because they were purged from the content location before the search results are exported. One way to mitigate this issue is to specify a date range for an eDiscovery search. Another way is to place a hold on content locations so that items are preserved and can't be purged. 
+   Here are other issues that can result is differences between estimated and exported search results:
 
-   Although rare, even in the case when a hold is applied, maintenance of built-in calendar items (which aren't editable by the user, but are included in many search results) may be removed from time to time. This periodic removal of calendar items will result in fewer items that are exported.
+  - In increase in items when using a date query. This is typically cause by the following two things:
+      - Hold versioning in SharePoint. If a document is deleted from a site that's on hold and document versioning is enabled, all versions of the deleted document will be preserved.
+      - Calendar items. Accept and reject messages and recurring meetings will automatically continue creating new items in the background with old dates.
+  - With holds, there can be cases where the same item is preserved in a user's primary mailbox and in their archive mailbox. This can happen when a user manually moves an item to their archive.
+  - Although rare, even in the case when a hold is applied, maintenance of built-in calendar items (which aren't editable by the user, but are included in many search results) may be removed from time to time. This periodic removal of calendar items will result in fewer items that are exported.
 
 - **Unindexed items**. Items that are unindexed for search can cause differences between estimated and actual search results. You can include unindexed items when you export the search results. If you include unindexed items when exporting search results, there might be more items that are exported. This will cause a difference between the estimated and exported search results.
 
@@ -68,9 +73,15 @@ Here are some reasons for these differences:
 
 - **Document versions in SharePoint and OneDrive**. When searching SharePoint sites and OneDrive accounts, multiple versions of a document aren't included in the count of estimated search results. But you have the option to include all document versions when you export the search results. If you include document versions when exporting search results, the actual number (and total size) of the exported items will be increased.
 
-- **SharePoint folders**. If the name of folders in SharePoint matches a search query, the search estimate will include a count of those folders (but not the items in those folders). When you export the search results, the items in folder are exported but the actual folder in not exported. The result is that the number of exported items export will more than the number of estimated search results. If a folder is empty, then the number of actual search results exported will be reduced by one item, because the actual folder isn't exported.
+- **SharePoint folders**. If folders in SharePoint match a search query, for example, searching by date, the search estimate will include a count of those folders with the last modified date range (but not the items in those folders). When you export the search results, the items in folder are exported but the actual folder isn't exported. The result is that the number of exported items will be more than the number of estimated search results. If a folder is empty, then the number of actual search results exported will be reduced by one item, because the actual folder isn't exported.
+
+   > [!NOTE]
+   > When running a query-based search, you can exclude SharePoint folders by adding the following condition to the query: `NOT(ContentType:folder)`.
 
 - **SharePoint lists**. If the name of a SharePoint list matches a search query, the search estimate will include a count of all the items in the list. When you export the search results, the list (and the list items) is exported as a single CSV file. This will reduce the actual number of items actually exported. If the list contains attachments, the attachments will be exported as separate documents, which will also increase the number of items exported.
+
+   > [!NOTE]
+   > When running a query-based search, you can exclude SharePoint lists by adding the following condition to the query: `NOT(ContentType:list)`.
 
 - **Raw file formats versus exported file formats**. For Exchange items, the estimated size of the search results is calculated by using the raw Exchange message sizes. However, email messages are exported in a PST file or as individual messages (which are formatted as EML files). Both of these export options use a different file format than raw Exchange messages, which results in the total exported file size being different than the estimated file size.
 

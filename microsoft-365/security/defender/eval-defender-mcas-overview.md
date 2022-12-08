@@ -1,9 +1,10 @@
 ---
-title: Evaluate Microsoft Defender for Cloud Apps overview
+title: Step 5. Evaluate Microsoft Defender for Cloud Apps overview
 description: Steps to set up your Microsoft 365 Defender trial lab or pilot environment to try out and experience the security solution designed to protect devices, identity, data, and applications in your organization.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,15 +17,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-evalutatemtp  
-  - m365solution-overview
+  - zerotrust-solution
+  - highpri
+  - tier1
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
-# Evaluate Microsoft Defender for Cloud Apps
+# Step 5. Evaluate Microsoft Defender for Cloud Apps
 
 **Applies to:**
 - Microsoft 365 Defender
@@ -35,9 +37,7 @@ This article outlines the process to enable and pilot Microsoft Defender for Clo
 
 Use the following steps to enable and pilot Microsoft Defender for Cloud Apps.
 
-![Steps for adding Microsoft Defender for Office to the Defender evaluation environment.](../../media/defender/m365-defender-office-eval-steps.png)
-
-
+:::image type="content" source="../../media/defender/m365-defender-office-eval-steps.png" alt-text="The steps for adding Microsoft Defender for Office to the Defender evaluation environment" lightbox="../../media/defender/m365-defender-office-eval-steps.png":::
 
 |Step  |Description  |
 |---------|---------|

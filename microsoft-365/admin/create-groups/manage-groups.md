@@ -4,12 +4,14 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
@@ -77,7 +79,7 @@ This option is great if you want to have a company email address such as info@co
 4. Select **Save**.
 
 > [!NOTE]
-> It may take up to 30 minutes before users outside the organication can email the group.
+> It may take up to 30 minutes before users outside the organization can email the group.
 
 ## Permanently delete a Microsoft 365 group
 

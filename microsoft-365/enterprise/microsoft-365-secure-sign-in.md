@@ -1,24 +1,29 @@
 ---
-title: "Secure user sign-ins to your Microsoft 365 tenant"
+title: "Step 3: Protect your Microsoft 365 user accounts"
 f1.keywords:
 - NOCSH
 author: kelleyvice-msft
 ms.author: kvice
-manager: laurawi
+manager: scotv
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
+- highpri
 ms.custom: 
 description: Require that your users sign in securely with multi-factor authentication (MFA) and other features.
 ---
 
-# Secure user sign-ins to your Microsoft 365 tenant
+# Step 3: Protect your Microsoft 365 user accounts
 
 To increase the security of user sign-ins:
 
@@ -47,17 +52,15 @@ MFA requires that user sign-ins be subject to an additional verification beyond 
 
 ![The correct password plus an additional verification results in a successful sign-in.](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-Your first step in using MFA is to ***require it for all administrator accounts***, also known as privileged accounts.
+Your first step in using MFA is to [require it for all administrator accounts](protect-your-global-administrator-accounts.md), also known as privileged accounts. Beyond this first step, Microsoft recommends MFA For all users.
 
-Beyond this first step, Microsoft recommends MFA For all users.
-
-There are three ways to require your administrators or users to use MFA based on your Microsoft 365 plan.
+There are three ways to require your users to use MFA based on your Microsoft 365 plan.
 
 | Plan | Recommendation |
 |---------|---------|
-|All Microsoft 365 plans (without Azure AD Premium P1 or P2 licenses)     |[Enable Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
-|Microsoft 365 E3 (includes Azure AD Premium P1 licenses)     | Use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (includes Azure AD Premium P2 licenses)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](../security/office-365-security/identity-access-policies.md) by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [High risk users must change password](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|All Microsoft 365 plans (without Azure AD Premium P1 or P2 licenses)     |[Enable security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
+|Microsoft 365 E3 (includes Azure AD Premium P1 licenses)     | Use the [common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (includes Azure AD Premium P2 licenses)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's recommended set of Conditional Access and related policies by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [High risk users must change password](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
 | | |
 
 ### Security defaults
@@ -101,9 +104,9 @@ This table shows the results of enabling MFA with security defaults and Conditio
 | **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
 ||||
 
-## Identity and device access configurations
+## Zero Trust identity and device access configurations
 
-Identity and device access settings and policies are recommended prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions. This determination is based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
+Zero Trust identity and device access settings and policies are recommended prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions. This determination is based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
 
 >[!Note]
 >Azure AD Identity Protection requires Azure AD Premium P2 licenses, which are included with Microsoft 365 E5.
@@ -117,7 +120,7 @@ Identity and device access policies are defined to be used in three tiers:
 
 These tiers and their corresponding configurations provide consistent levels of protection across your data, identities, and devices.
 
-Microsoft highly recommends configuring and rolling out identity and device access policies in your organization, including specific settings for Microsoft Teams, Exchange Online, and SharePoint. For more information, see [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
+Microsoft highly recommends configuring and rolling out Zero Trust identity and device access policies in your organization, including specific settings for Microsoft Teams, Exchange Online, and SharePoint. For more information, see [Zero Trust identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
 
 ## Azure AD Identity Protection
 
@@ -132,18 +135,23 @@ With Azure AD Identity Protection, you can:
 | Investigate suspicious incidents and resolve them with administrative actions | You can investigate risk events using information about the security incident. Basic workflows are available to track investigations and initiate remediation actions, such as password resets. |
 |||
 
-See [more information about Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection).
+See [more information about Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
-See the [steps to enable Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection-enable).
+See the [steps to enable Azure AD Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 
 ## Admin technical resources for MFA and secure sign-ins
 
 - [MFA for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
-- [Identity roadmap for Microsoft 365](identity-roadmap-microsoft-365.md)
+- [Deploy identity for Microsoft 365](deploy-identity-solution-overview.md)
 - [Azure Academy Azure AD training videos](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Configure the Azure AD Multi-Factor Authentication registration policy](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## Next step
 
-[Manage your user accounts](manage-microsoft-365-accounts.md)
+![Deploy your identity model](../media/deploy-identity-solution-overview/deploy-identity-solution-identity-infrastructure.png)
+
+Continue with Step 4 to deploy the identity infrastructure based on your chosen identity model:
+
+- [Cloud-only identity](cloud-only-identities.md)
+- [Hybrid identity](prepare-for-directory-synchronization.md)

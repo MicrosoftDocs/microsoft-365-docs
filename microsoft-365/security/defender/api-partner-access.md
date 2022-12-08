@@ -3,7 +3,8 @@ title: Partner access through Microsoft 365 Defender APIs
 description: Learn how to create an app to get programmatic access to Microsoft 365 Defender on behalf of your users.
 keywords: partner, access, api, multi tenant, consent, access token, app
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.technology: m365d
 ms.custom: api
 ---
 
@@ -57,7 +59,7 @@ This article explains how to:
 
 Microsoft 365 Defender exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft 365 Defender capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-In general, you’ll need to take the following steps to use the APIs:
+In general, you'll need to take the following steps to use the APIs:
 
 - Create a **multi-tenant** Azure AD application.
 - Get authorized (consent) by your user administrator for your application to access Microsoft 365 Defender resources it needs.
@@ -72,7 +74,7 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration.](../../media/atp-azure-new-app2.png)
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="An application's registration section in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the registration form:
 
@@ -82,18 +84,18 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
    After you're done filling out the form, select **Register**.
 
-   ![Image of the Register an application form.](../..//media/atp-api-new-app-partner.png)
+   :::image type="content" source="../..//media/atp-api-new-app-partner.png" alt-text="An application's registration sections in the Microsoft 365 Defender portal" lightbox="../..//media/atp-api-new-app-partner.png":::
 
 4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**. Your app can now access Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API permission selection.](../../media/apis-in-my-org-tab.PNG)
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="The APIs usage section in the Microsoft 365 Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
 5. Select **Application permissions**. Choose the relevant permissions for your scenario (for example, **Incident.Read.All**), and then select **Add permissions**.
 
-   ![Image of API access and API selection.](../../media/request-api-permissions.PNG)
+   :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="An application's permission pane in the Microsoft 365 Defender portal" lightbox="../../media/request-api-permissions.PNG":::
 
     > [!NOTE]
     > You need to select the relevant permissions for your scenario. *Read all incidents* is just an example. To determine which permission you need, please look at the **Permissions** section in the API you want to call.
@@ -102,18 +104,18 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
 6. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
-    ![Image of Grant permissions.](../../media/grant-consent.PNG)
+    :::image type="content" source="../../media/grant-consent.PNG" alt-text="A section to grant admin consent in the Microsoft 365 Defender portal" lightbox="../../media/grant-consent.PNG":::
 
 7. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, then select **Add**.
 
     > [!TIP]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve the secret value after you leave.
 
-    ![Image of create app key.](../../media/webapp-create-key2.png)
+      :::image type="content" source="../../media/webapp-create-key2.png" alt-text="The Secret addition section in the Microsoft 365 Defender portal" lightbox="../../media/webapp-create-key2.png":::
 
 8. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   ![Image of created app id.](../../media/app-and-tenant-ids.png)
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview pane in the Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
 
 9. Add the application to your user's tenant.
 
@@ -131,7 +133,7 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
    After clicking on the consent link, sign in with the Global Administrator of the user's tenant and consent the application.
 
-   ![Image of consent.](../../media/app-consent-partner.png)
+   :::image type="content" source="../../media/app-consent-partner.png" alt-text="The consent application page in the Microsoft 365 Defender portal" lightbox="../../media/app-consent-partner.png":::
 
    You'll also need to ask your user for their tenant ID. The tenant ID is one of the identifiers used to acquire access tokens.
 
@@ -143,7 +145,7 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 For more information on Azure AD tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
-> Although the examples in this section encourage you to paste in secret values for testing purposes, you should **never hardcode secrets** into an application running in production. A third party could use your secret to access resources. You can help keep your app's secrets secure by using [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
+> Although the examples in this section encourage you to paste in secret values for testing purposes, you should **never hardcode secrets** into an application running in production. A third party could use your secret to access resources. You can help keep your app's secrets secure by using [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
 
 > [!TIP]
 > In the following examples, use a user's tenant ID to test that the script is working.
@@ -178,30 +180,35 @@ return $token
 ### Get an access token using C\#
 
 > [!NOTE]
-> The following code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+> The following code was tested with Nuget Microsoft.Identity.Client 3.19.8.
+
+> [!IMPORTANT]
+> The [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet package and Azure AD Authentication Library (ADAL) have been deprecated. No new features have been added since June 30, 2020.   We strongly encourage you to upgrade, see the [migration guide](/azure/active-directory/develop/msal-migration) for more details.
 
 1. Create a new console application.
-1. Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Install NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
 1. Add the following line:
 
     ```C#
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. Copy and paste the following code into your app (don't forget to update the three variables: `tenantId`, `clientId`, `appSecret`):
 
     ```C#
-    string tenantId = ""; // Paste your directory (tenant) ID here
-    string clientId = ""; // Paste your application (client) ID here
-    string appSecret = ""; // Paste your own app secret here to test, then store it in a safe place, such as the Azure Key Vault!
+    string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
+    string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.windows.net";
-    const string wdatpResourceId = "https://api.security.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(clientId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### Get an access token using Python
@@ -261,7 +268,7 @@ A successful response will look like this:
 
 In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-![Image of token validation.](../../media/webapp-decoded-token.png)
+:::image type="content" source="../../media/webapp-decoded-token.png" alt-text="The Decoded Token pane in the Microsoft 365 Defender portal" lightbox="../../media/webapp-decoded-token.png":::
 
 ## Use the token to access the Microsoft 365 Defender API
 
@@ -289,5 +296,5 @@ The following example shows how to send a request to get a list of incidents **u
 - [Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
-- [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

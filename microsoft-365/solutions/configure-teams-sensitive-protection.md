@@ -6,17 +6,19 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: o365-solutions
 ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
+- highpri
 - Ent_O365
 - Strat_O365_Enterprise
 - m365solution-3tiersprotection
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkSPO
 recommendations: false
 description: "Learn how to deploy teams with protection for sensitive data."
 ---
@@ -51,14 +53,14 @@ To allow or block guest sharing, we use a combination of a sensitivity label for
 
 For the sensitive level of protection, we'll be using a sensitivity label to classify the team. This label can also be used to classify individual files in this or other teams, or in other file locations such as SharePoint or OneDrive. 
 
-As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
+As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
 
 If you already have sensitivity labels deployed in your organization, consider how this label fits with your overall label strategy. You can change the name or settings if needed to meet the needs of your organization.
 
 Once you have enabled sensitivity labels for Teams, the next step is to create the label.
 
 To create a sensitivity label
-1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
+1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 2. Under **Solutions**, click **Information protection**.
 3. Click **Create a label**.
 4. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
@@ -77,7 +79,7 @@ To create a sensitivity label
 17. On the **Auto-labeling for database columns** page, click **Next**.
 18. Click **Create label**, and then click **Done**.
 
-Once you've created the label, you need to publish it to the users who will use it. For sensitive protection, we'll make the label available to all users. You publish the label in the Microsoft 365 compliance center, on the **Label policies** tab of the **Information protection** page. If you have an existing policy that applies to all users, add this label to that policy. If you need to create a new policy, see [Publish sensitivity labels by creating a label policy](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
+Once you've created the label, you need to publish it to the users who will use it. For sensitive protection, we'll make the label available to all users. You publish the label in the Microsoft Purview compliance portal, on the **Label policies** tab of the **Information protection** page. If you have an existing policy that applies to all users, add this label to that policy. If you need to create a new policy, see [Publish sensitivity labels by creating a label policy](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## Create a team
 
@@ -103,6 +105,10 @@ To restrict private channel creation
 
 You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who can create private channels.
 
+## Shared channel settings
+
+[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD apply to all teams regardless of sensitivity.
+
 ## SharePoint settings
 
 Each time you create a new team with the sensitive label, there are two steps to do in SharePoint:
@@ -114,22 +120,19 @@ Each time you create a new team with the sensitive label, there are two steps to
 
 To update the site default sharing link type
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Sites**, click **Active sites**.
-3. Click the site that is associated with team.
-4. On the **Policies** tab, under **External sharing**, click **Edit**.
-5. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **Specific people (only the people the user specifies)**.
-6. Click **Save**.
+1. Open the SharePoint admin center, and under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the site that is associated with team.
+1. On the **Policies** tab, under **External sharing**, click **Edit**.
+1. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **Specific people (only the people the user specifies)**.
+1. Select **Save**.
 
 If you want to script this as part of your team creation process, you can use [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) with the `-DefaultSharingLinkType Direct` parameter to change the default sharing link to *Specific people*.
 
-#### Private channels
-
-If you add private channels to the team, each private channel creates a new SharePoint site with the default sharing settings. These sites are not visible in the SharePoint admin center, so you must use the Set-SPOSite PowerShell cmdlet to update the guest sharing settings.
+Note that if you add private or shared channels to the team, each creates a new SharePoint site with the default sharing settings. You can update them in the SharePoint admin center by selecting the sites associated with the team.
 
 ### Site sharing settings
 
-To help ensure that the SharePoint site does not get shared with people who are not members of the team, we limit such sharing to owners.
+To help ensure that the SharePoint site does not get shared with people who are not members of the team, we limit such sharing to owners. This is only necessary for the SharePoint site that was created with the team. Additional sites created as part of private or shared channels can't be shared outside the team or channel.
 
 To configure owners-only site sharing
 1. In Teams, navigate to the **General** tab of the team you want to update.
@@ -140,6 +143,6 @@ To configure owners-only site sharing
 6. Under **Sharing permissions**, choose **Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**, and then click **Save**.
 
 
-## See Also
+## Related topics
 
 [Create and configure sensitivity labels and their policies](../compliance/create-sensitivity-labels.md)

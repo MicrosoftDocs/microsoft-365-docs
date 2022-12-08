@@ -1,14 +1,15 @@
 ---
-title: "Navigation options for SharePoint Online"
+title: Navigation options for SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 4/7/2020
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - Ent_O365
 - SPO_Content
 f1.keywords:
@@ -74,7 +75,7 @@ Under **Site Settings** > **Look and Feel** > **Navigation**, you can validate i
 
 Caching can be enabled or disabled at the site collection level and at the site level, and is enabled for both by default. To enable at the site collection level, under **Site Settings** > **Site Collection Administration** > **Site Collection Navigation**, check the box for **Enable caching**.
 
-![Enable caching at site level.](../media/structural-nav/structural-nav-caching-site-coll.png)
+![Enable caching at site collection level.](../media/structural-nav/structural-nav-caching-site-coll.png)
 
 To enable at the site level, under **Site Settings** > **Navigation**, check the box for **Enable caching**.
 
@@ -94,7 +95,7 @@ Many sites do not require security trimming, as the navigation structure is ofte
 
 ### How to implement managed navigation and the results
 
-There are several articles on docs.microsoft.com about the details of managed navigation. For example, see [Overview of managed navigation in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
+There are several articles on Microsoft Learn about the details of managed navigation. For example, see [Overview of managed navigation in SharePoint Server](/sharepoint/administration/overview-of-managed-navigation).
 
 In order to implement managed navigation, you set up terms with URLs corresponding to the navigation structure of the site. Managed navigation can even be manually curated to replace structural navigation in many cases. For example:
 
@@ -471,7 +472,7 @@ The [above code](#about-the-javascript-file) has the following dependencies:
 
 - jQuery - https://jquery.com/
 - KnockoutJS - https://knockoutjs.com/
-- Linq.js - https://linqjs.codeplex.com/, or github.com/neuecc/linq.js
+- Linq.js - `https://linqjs.codeplex.com/`, or github.com/neuecc/linq.js
 
 The current version of LinqJS does not contain the ByHierarchy method used in the above code and will break the navigation code. To fix this, add the following method to the Linq.js file before the line `Flatten: function ()`.
 

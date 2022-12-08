@@ -1,5 +1,5 @@
 ---
-title: "Learn about the Microsoft Compliance Extension"
+title: "Learn about the Microsoft Purview Extension"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -13,27 +13,31 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MET150
-description: "The Microsoft Compliance Extension extends monitoring and control of file activities and protective actions to the Google Chrome browser"
+description: "The Microsoft Purview Extension extends monitoring and control of file activities and protective actions to the Google Chrome browser"
 ---
 
-# Learn about the Microsoft Compliance Extension
+# Learn about the Microsoft Purview Extension
 
-[Endpoint data loss prevention (endpoint DLP)](endpoint-dlp-learn-about.md) extends the activity monitoring and protection capabilities of [Microsoft 365 data loss prevention (DLP)](dlp-learn-about-dlp.md) to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
+[Endpoint data loss prevention (endpoint DLP)](endpoint-dlp-learn-about.md) extends the activity monitoring and protection capabilities of [Microsoft Purview data loss prevention (DLP)](dlp-learn-about-dlp.md) to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
 
-Once the Microsoft Compliance Extension is installed on a Windows 10 device, organizations can monitor when a user attempts to access or upload a sensitive item to a cloud service using Google Chrome and enforce protective actions via DLP.  
+Once the Extension is installed on a Windows 10 device, organizations can monitor when a user attempts to access or upload a sensitive item to a cloud service using Google Chrome and enforce protective actions via DLP.  
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Activities you can monitor and take action on
 
-The Microsoft Compliance Extension enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.
+The extension enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.
 
 activity |description  | supported policy actions|
 |---------|---------|---------|
-|file copied to cloud  | Detects when a user attempts to upload a sensitive item to a restricted service domain through the Chrome browser |audit, block|
+|file copied to cloud  | Detects when a user attempts to upload a sensitive item to a restricted service domain through the Chrome browser |audit, block with override, block|
 |file printed  |Detects when a user attempts to print a sensitive item that is open in the Chrome browser to a local or network printer |audit, block with override, block|
 |file copied to clipboard |Detects when a user attempts to copy information from a sensitive item that is being viewed in the Chrome browser and then paste it into another app, process, or item. |audit, block with override, block|
 |file copied to removable storage    | Detects when a user attempts to copy a sensitive item or information from a sensitive item that is open in the Chrome browser to removable media or USB device |audit, block with override, block|
@@ -47,16 +51,16 @@ activity |description  | supported policy actions|
 
 ## Next steps
 
-See [Get started with the Microsoft Compliance Extension](dlp-chrome-get-started.md) for complete deployment procedures and scenarios.
+See [Get started with the Microsoft Purview Extension](dlp-chrome-get-started.md) for complete deployment procedures and scenarios.
 
 ## See also
 
-- [Get started with Microsoft Compliance Extension](dlp-chrome-get-started.md)
-- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md)
-- [Getting started with Microsoft Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-- [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
+- [Get started with Microsoft Purview Extension](dlp-chrome-get-started.md)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Getting started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Insider Risk management](insider-risk-management.md)
+- [Insider risk management](insider-risk-management.md)

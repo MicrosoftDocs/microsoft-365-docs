@@ -2,12 +2,13 @@
 title: "Microsoft 365 inter-tenant collaboration"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-collaboration
 - M365-subscription-management
 - SPO_Content

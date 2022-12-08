@@ -2,20 +2,23 @@
 title: Apply Microsoft Defender Antivirus updates after certain events
 description: Manage how Microsoft Defender Antivirus applies security intelligence updates after startup or receiving cloud-delivered detection reports.
 keywords: updates, protection, force updates, events, startup, check for latest, notifications
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Manage event-based forced updates
@@ -26,6 +29,10 @@ ms.collection: m365-security-compliance
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- Microsoft Defender Antivirus
+
+**Platforms**
+- Windows
 
 Microsoft Defender Antivirus allows you to determine if updates should (or should not) occur after certain events, such as at startup or after receiving specific reports from the cloud-delivered protection service.
 
@@ -133,9 +140,9 @@ For more information, see [Windows Defender WMIv2 APIs](/previous-versions/windo
 
 ## Allow ad hoc changes to protection based on cloud-delivered protection
 
-Microsoft Defender AV can make changes to its protection based on cloud-delivered protection. Such changes can occur outside of normal or scheduled protection updates.
+Microsoft Defender Antivirus can make changes to its protection based on cloud-delivered protection. Such changes can occur outside of normal or scheduled protection updates.
 
-If you have enabled cloud-delivered protection, Microsoft Defender AV will send files it is suspicious about to the Windows Defender cloud. If the cloud service reports that the file is malicious, and the file is detected in a recent protection update, you can use Group Policy to configure Microsoft Defender AV to automatically receive that protection update. Other important protection updates can also be applied.
+If you have enabled cloud-delivered protection, Microsoft Defender Antivirus will send files it is suspicious about to the Windows Defender cloud. If the cloud service reports that the file is malicious, and the file is detected in a recent protection update, you can use Group Policy to configure Microsoft Defender Antivirus to automatically receive that protection update. Other important protection updates can also be applied.
 
 ### Use Group Policy to automatically download recent updates based on cloud-delivered protection
 
@@ -153,6 +160,16 @@ If you have enabled cloud-delivered protection, Microsoft Defender AV will send 
 
 > [!NOTE]
 > **Allow notifications to disable definitions based reports** enables Microsoft MAPS to disable those definitions known to cause false-positive reports. You must configure your computer to join Microsoft MAPS for this function to work.
+
+> [!TIP]
+> If you're looking for Antivirus related information for other platforms, see:
+> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
+> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+> - [Configure Defender for Endpoint on Android features](android-configure.md)
+> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## See also
 

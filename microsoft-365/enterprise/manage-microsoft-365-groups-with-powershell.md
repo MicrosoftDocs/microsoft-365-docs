@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -66,7 +66,7 @@ You can create sensitivity labels that the users in your organization can set wh
 > [!IMPORTANT]
 > If you are currently using classification labels, they will no longer be available to users who create groups once sensitivity labels are enabled.
 
-You can still use the previous groups classification feature. You can create classifications that the users in your organization can set when they create an Microsoft 365 Group. For example, you can allow users to set "Standard", "Secret", and "Top Secret" on groups they create. Group classifications aren't set by default and you need to create it in order for your users to set it. Use Azure Active Directory PowerShell to point your users to your organization's usage guidelines for Microsoft 365 Groups.
+You can still use the previous groups classification feature. You can create classifications that the users in your organization can set when they create a Microsoft 365 Group. For example, you can allow users to set "Standard", "Secret", and "Top Secret" on groups they create. Group classifications aren't set by default and you need to create it in order for your users to set it. Use Azure Active Directory PowerShell to point your users to your organization's usage guidelines for Microsoft 365 Groups.
 
 Check out [Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/users-groups-roles/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the classification for Microsoft 365 Groups.
 
@@ -74,13 +74,13 @@ Check out [Azure Active Directory cmdlets for configuring group settings](/azure
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
 ```
 
-In order to associate a description to each classification you can use the settings attribute  *ClassificationDescriptions* to define.
+In order to associate a description to each classification, you can use the settings attribute  *ClassificationDescriptions* to define.
 
 ```powershell
 $setting["ClassificationDescriptions"] ="Classification:Description,Classification:Description"
 ```
 
-where Classification matches the strings in the ClassificationList.
+Where Classification matches the strings in the ClassificationList.
 
 Example:
 
@@ -134,7 +134,7 @@ Run the Set-Unified Group cmdlet to add a mailTip to the group:
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
 ```
 
-Along with MailTip, you can also set MailTipTranslations, which specifies additional languages for the MailTip. Suppose you want to have the Spanish translation, then run the following command:
+Along with MailTip, you can also set MailTipTranslations, which specify other languages for the MailTip. Suppose you want to have the Spanish translation, then run the following command:
 
 ```powershell
 Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" -MailTipTranslations "@{Add="ES:Esta caja no se supervisa."
@@ -152,15 +152,21 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 
 Microsoft 365 Groups in Outlook are created as Private by default. If your organization wants Microsoft 365 Groups to be created as Public by default (or back to Private), use this PowerShell cmdlet syntax:
 
- `Set-OrganizationConfig -DefaultGroupAccessType Public`
+ ```powershell
+ Set-OrganizationConfig -DefaultGroupAccessType Public
+ ```
 
 To set to Private:
 
- `Set-OrganizationConfig -DefaultGroupAccessType Private`
+ ```powershell
+ Set-OrganizationConfig -DefaultGroupAccessType Private
+ ```
 
 To verify the setting:
 
- `Get-OrganizationConfig | ft DefaultGroupAccessType`
+ ```powershell
+ Get-OrganizationConfig | ft DefaultGroupAccessType
+ ```
 
 To learn more, see [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) and [Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig).
 
@@ -179,7 +185,7 @@ The following cmdlets can be used with Microsoft 365 Groups.
 |[Remove-UnifiedGroupLinks](/powershell/module/exchange/remove-unifiedgrouplinks) <br/> |Remove owners and members from an existing Microsoft 365 Group  <br/> |
 |[Get-UserPhoto](/powershell/module/exchange/get-userphoto) <br/> |Used to view information about the user photo associated with an account. User photos are stored in Active Directory  <br/> |
 |[Set-UserPhoto](/powershell/module/exchange/set-userphoto) <br/> |Used to associate a user photo with an account. User photos are stored in Active Directory  <br/> |
-|[Remove-UserPhoto](/powershell/module/exchange/remove-userphoto) <br/> |Remove the photo for an Microsoft 365 Group  <br/> |
+|[Remove-UserPhoto](/powershell/module/exchange/remove-userphoto) <br/> |Remove the photo for a Microsoft 365 Group  <br/> |
 
 ## Related topics
 

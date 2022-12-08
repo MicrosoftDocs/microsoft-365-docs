@@ -1,15 +1,16 @@
 ---
 title: "Step 4. Protect devices"
-author: JoeDavies-MSFT
+author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
@@ -21,25 +22,25 @@ description: Use Windows Intune as an MDA and MAM provider and Windows 10 securi
 
 # Step 4. Protect devices
 
-To help protect devices against the initial access part of a ransomware attack:
+To help protect devices (endpoints) against the initial access part of a ransomware attack:
 
 - Deploy [Intune](/mem/intune/fundamentals/what-is-intune) as a mobile device management (MDM) and mobile application management (MAM) provider for your devices and enroll your organization-owned devices.
-- Implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) to validate the user account credentials and device health and compliance requirements.
+- Implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) to validate the user account credentials and enforce device health and compliance requirements.
 - Enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection) in Microsoft Defender for Endpoint and Microsoft 365 Defender.
 - Configure [site and download checking](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) and [app and file checking](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) in Microsoft Defender SmartScreen to block or warn.
 - Enable [Microsoft Defender Antivirus scanning](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus) of downloaded files and attachments.
 - Set **Remote Desktop security level** to **TLS** in Microsoft Defender for Endpoint and Microsoft 365 Defender.
 
-## Windows 10 devices
+## Windows 11 or 10 devices
 
-To help protect against the lateral movement part of an attack from a Windows 10 device:
+To help protect against the lateral movement part of an attack from a Windows 11 or 10 device:
 
 - [Turn on Microsoft Defender Firewall](https://support.microsoft.com/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f).
-- [Update Microsoft Defender Antivirus definitions](/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
+- [Update Microsoft Defender Antivirus definitions](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
 
 To reduce the impact of the attack:
 
-- Use [advanced protection](/Microsoft-365/security/defender-endpoint/attack-surface-reduction#use-advanced-protection-against-ransomware) against ransomware.
+- Use [attack surface reduction rules and advanced protection against ransomware](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#use-advanced-protection-against-ransomware).
 
 To help protect against an attacker evading your security defenses:
 
@@ -60,13 +61,13 @@ To help protect against an attacker executing code as part of an attack:
 
 As you implement these protections, perform change management for the following:
 
-- The [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) can deny access to users who have non-compliant devices.
+- The [common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) can deny access to users who have non-compliant devices.
 - Downloading files might warn users before the download or it might be blocked.
 - Some Office, Excel 4.0, XLM, or VBA macros might no longer run.
 
 ## Resulting configuration
 
-Here is the ransomware protection for your tenant for steps 1-4.
+Here's the ransomware protection for your tenant for steps 1-4.
 
 ![Ransomware protection for your Microsoft 365 tenant after Step 4](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step4.png)
 

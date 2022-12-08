@@ -1,9 +1,9 @@
 ---
-title: "Enable auto-expanding archiving - Admin Help"
+title: "Enable auto-expanding archiving"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -11,8 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+- tier2
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -21,27 +21,33 @@ description: "For administrators: Learn how to enable auto-expanding archiving, 
 ms.custom: seo-marvel-apr2020
 ---
 
-# Enable auto-expanding archiving - Admin Help
+# Enable auto-expanding archiving
 
-You can use the Exchange Online auto-expanding archiving feature to enable additional storage space for archive mailboxes. When auto-expanding archiving is turned on, additional storage space is automatically added to a user's archive mailbox until it reaches the storage limit of 1.5 TB. You can turn on auto-expanding archiving for everyone in your organization or just for specific users. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving](autoexpanding-archiving.md).
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+You can use the Exchange Online auto-expanding archiving feature to enable additional storage space for archive mailboxes. When auto-expanding archiving is turned on, additional storage space is automatically added to a user's archive mailbox until it reaches the storage limit of 1.5 TB. You can turn on auto-expanding archiving for everyone in your organization or just for specific users. For more information about auto-expanding archiving, see [Learn about auto-expanding archiving](autoexpanding-archiving.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you enable auto-expanding archiving
 
-- After you turn on auto-expanding archiving for your organization or for a specific user, it can't be turned off. Additionally, administrators can't adjust the storage quota for auto-expanding archiving.
+- Understand the following restrictions: 
+
+    - After you turn on auto-expanding archiving for your organization or for a specific user, it can't be turned off. Administrators also can't adjust the storage quota for auto-expanding archiving.
+    
+    - Auto-expanding archiving prevents you from recovering or restoring an [inactive mailbox](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes). That means if you enable auto-expanding archiving for a mailbox and the mailbox is made inactive at a later date, you won't be able to [recover the inactive mailbox](recover-an-inactive-mailbox.md) (by converting it to an active mailbox) or [restore it](restore-an-inactive-mailbox.md) (by merging the contents to an existing mailbox). 
+        
+        If auto-expanding archiving is enabled on an inactive mailbox, the only way to recover data is by using the Content search tool in the Microsoft Purview compliance portal to export the data from the mailbox and import to another mailbox. For more information, see the [Inactive mailboxes and auto-expanding archives](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
 
 - You must be a global administrator in your organization or a member of the Organization Management role group in your Exchange Online organization to enable auto-expanding archiving. Alternately, you have to be a member of a role group that's assigned the Mail Recipients role to enable auto-expanding archiving for specific users.
 
-- A user's archive mailbox has to be enabled before you can enable auto-expanding archiving. A user must be assigned an Exchange Online Plan 2 license to enable the archive mailbox. If a user is assigned an Exchange Online Plan 1 license, you would have to assign them a separate Exchange Online Archiving license to enable their archive mailbox. See [Enable archive mailboxes](enable-archive-mailboxes.md).
+- A user's mailbox must already be [enabled for archive](enable-archive-mailboxes.md) before you can enable auto-expanding archiving.
 
 - After you turn on auto-expanding archiving, an archive mailbox is converted to an auto-expanding archive when the archive mailbox (including the Recoverable Items folder) reaches 90 GB. It can take up to 30 days for the additional storage space to be provisioned.
 
-- You can also use PowerShell to enable archive mailboxes. See the [More information](#more-information) section for an example of the PowerShell command that you can use to enable archive mailboxes for all users in your organization.
+- Auto-expanding archiving also supports shared mailboxes.
 
-- Auto-expanding archiving also supports shared mailboxes. To enable the archive for a shared mailbox, an Exchange Online Plan 2 license or an Exchange Online Plan 1 license with an Exchange Online Archiving license is required.
-
-- Auto-expanding archiving prevents you from recovering or restoring an [inactive mailbox](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes). That means if you enable auto-expanding archiving for a mailbox and the mailbox is made inactive at a later date, you won't be able to [recover the inactive mailbox](recover-an-inactive-mailbox.md) (by converting it to an active mailbox) or [restore it](restore-an-inactive-mailbox.md) (by merging the contents to an existing mailbox). If auto-expanding archiving is enabled on an inactive mailbox, the only way to recover data is by using the Content search tool in the Microsoft 365 compliance center to export the data from the mailbox and import to another mailbox. For more information, see the "Inactive mailboxes and auto-expanding archives" section in [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
-
-- You can't use the Exchange admin center or the Microsoft 365 compliance center to enable auto-expanding archiving. You have to use Exchange Online PowerShell. To connect to your Exchange Online organization using remote PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- You can't use the Exchange admin center or the Microsoft Purview compliance portal to enable auto-expanding archiving. You must use Exchange Online PowerShell.
 
 ## Enable auto-expanding archiving for your entire organization
 
@@ -122,9 +128,13 @@ Keep the following things in mind after you enable auto-expanding archiving:
 
 - Auto-expanding archiving is supported for cloud-based archive mailboxes in an Exchange hybrid deployment for users who have an on-premises primary mailbox. However, after auto-expanding archiving is enabled for a cloud-based archive mailbox, you can't off-board that archive mailbox back to the on-premises Exchange organization. Auto-expanding archiving isn't supported for on-premises mailboxes in any version of Exchange Server.
 
-- For a list of Outlook clients that users can use to access items in the additional storage area in their archive mailbox, see the "Outlook requirements for accessing items in an auto-expanded archive" section in [Overview of auto-expanding archiving](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
+- For a list of Outlook clients that users can use to access items in the additional storage area in their archive mailbox, see the "Outlook requirements for accessing items in an auto-expanded archive" section in [Learn about auto-expanding archiving](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
 
 - As previously explained, 10 GB is added to the storage quota of the user's primary archive mailbox (and to the Recoverable Items folder if the mailbox is on hold) when you run the **Enable-Mailbox -AutoExpandingArchive** command. This provides additional storage until the auto-expanded storage space is provisioned (which can take up to 30 days). This additional storage space isn't added when you run the **Set-OrganizationConfig -AutoExpandingArchive** to enable auto-expanding archiving for all mailboxes in your organization. If you enabled auto-expanding archiving for the entire organization, but need to add the additional 10 GB of storage space for a specific user, you can run the **Enable-Mailbox -AutoExpandingArchive** command on that mailbox. You will receive an error saying that auto-expanding archiving has already been enabled, but the additional storage space will be added to the mailbox.
 
 > [!IMPORTANT]
 > Auto-expanding archiving is supported only for mailboxes used by individual users or for shared mailboxes with a growth rate that doesn't exceed 1 GB per day. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox for the purposes of archiving is not permitted. A user's archive mailbox is intended for just that user. Microsoft reserves the right to deny additional archiving in instances where a user's archive mailbox is used to store archive data for other users or in other cases of inappropriate use.
+
+## Next steps
+
+Make sure you prepare end users for the changes they can expect after enabling their mailbox for auto-expanding archives.
