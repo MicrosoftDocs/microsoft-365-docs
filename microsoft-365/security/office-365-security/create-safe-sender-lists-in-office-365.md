@@ -118,7 +118,7 @@ When messages skip spam filtering due to entries in a user's Safe Senders list, 
   - **Move messages to Junk Email folder**: Domain entries and sender email address entries are honored. Messages from those senders are not moved to the Junk Email folder.
   - **Quarantine**: Domain entries are not honored (messages from those senders are quarantined). Email address entries are honored (messages from those senders are not quarantined) if either of the following statements are true:
     - The message is not identified as malware or high confidence phishing (malware and high confidence phishing messages are quarantined).
-    - The email address is not also in a block entry in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) (messages from those senders will be quarantined).
+    - The email address is not also in a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-about.md) (messages from those senders will be quarantined).
 - Entries for blocked senders and blocked domains are honored (messages from those senders are moved to the Junk Email folder). Safe mailing list settings are ignored.
 
 ## Use the IP Allow List
