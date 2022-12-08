@@ -5,7 +5,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: amberb, vikdesai
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 f1.keywords:
 - 'MACBillingBillsPaymentsInvoices'
 ms.service: microsoft-365-business
