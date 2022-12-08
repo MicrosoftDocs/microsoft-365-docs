@@ -34,7 +34,7 @@ If a recipient's account was compromised as a result of the phishing message, fo
 
 If your subscription includes Microsoft Defender for Office 365, you can use [Office 365 Threat Intelligence](office-365-ti.md) to identify other users who also received the phishing message. You have additional options to block phishing messages:
 
-- [Safe Links in Microsoft Defender for Office 365](set-up-safe-links-policies.md)
+- [Safe Links in Microsoft Defender for Office 365](safe-links-policies-configure.md)
 
 - [Safe Attachments in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
 
@@ -76,9 +76,9 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
   - [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
 
-  - [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md)
+  - [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md)
 
-  - [Use DMARC to validate email](use-dmarc-to-validate-email.md)
+  - [Use DMARC to validate email](email-authentication-dmarc-configure.md)
 
 - Whenever possible, we recommend that you deliver email for your domain directly to Microsoft 365. In other words, point your Microsoft 365 domain's MX record to Microsoft 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Microsoft 365. If you must use a third-party email hygiene system in front of EOP, use Enhanced Filtering for Connectors. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 

@@ -230,10 +230,10 @@ In addition to the above sections, you will also see sections specific to few ex
 
 - Quarantine:  
 
-    - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](manage-quarantined-messages-and-files.md#view-quarantined-message-details).
+    - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#view-quarantined-message-details).
 
         - Expires: The date/time when the message will be automatically and permanently deleted from quarantine.
         - Released to: All email addresses (if any) to which the message has been released.
         - Not yet released to: All email addresses (if any) to which the message has not yet been released.
 
-    - *Quarantine actions*: For more information on different quarantine actions, see [Manage quarantined messages](manage-quarantined-messages-and-files.md#take-action-on-quarantined-email).
+    - *Quarantine actions*: For more information on different quarantine actions, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email).
