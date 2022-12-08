@@ -19,7 +19,7 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: "Learn the basic steps to creating a keyword dictionary in the Office 365 Security & Compliance Center."
+description: "Learn the basic steps to creating a keyword dictionary in the Microsoft Purview comliance portal."
 ---
 
 # Create a keyword dictionary
@@ -78,7 +78,7 @@ The keywords for your dictionary could come from various sources, most commonly 
 
 3. **Create your dictionary**. Choose a name and description and create your dictionary.
 
-## Create a keyword dictionary using the Security & Compliance Center
+## Create a keyword dictionary using the Microsoft Purview compliance portal
 
 Use the following steps to create and import keywords for a custom dictionary:
 

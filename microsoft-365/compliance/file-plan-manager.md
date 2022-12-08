@@ -79,11 +79,11 @@ All columns except the label **Name** can be displayed or hidden by selecting th
     - Yes
     - Yes(Regulatory)
 
-- **Is unlocked by default**—currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
+- **Is unlocked by default** identifies if the item marked as a record is unlocked when the label is applied. Valid values:
     - No
     - Yes
 
-- **Relabel to**—currently rolling out—identifies if the label is configured to apply another label at the end of the retention period. Valid values:
+- **Relabel to** identifies if the label is configured to apply another label at the end of the retention period. Valid values:
     - Blank or the selected label name
 
 - **Retention duration** identifies the retention period. Valid values:

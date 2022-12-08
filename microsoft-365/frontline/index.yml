@@ -18,6 +18,7 @@ metadata:
   ms.collection:
     - m365-frontline
     - highpri
+    - tier2
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -32,10 +33,10 @@ highlightedContent:
     - title: Choose your scenarios for Microsoft 365 for frontline workers
       itemType: get-started
       url: flw-choose-scenarios.md
-#    # Card
-#    - title: Try Microsoft 365 for frontline workers (start a free trial)
-#      itemType: whats-new
-#      url: flw-trial.md
+    # Card
+    - title: Technical planning guide for deploying frontline solutions
+      itemType: whats-new
+      url: flw-technical-planning-guide-deployment.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -55,7 +56,7 @@ productDirectory:
         - url: simplify-business-processes.md
           text: Digitized processes
         - url: virtual-appointments.md
-          text: Virtual appointments
+          text: Virtual Appointments
     # Card
     - title: Solutions for your industry
       imageSrc: /office/media/icons/walkthrough-map-blue.svg
