@@ -63,7 +63,7 @@ Good password practices fall into a few broad categories:
 
 The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
 
-- Maintain an 8-character minimum length requirement (and longer is not necessarily better).
+- Maintain an 8-character minimum length requirement (longer is not necessarily better).
 
 - Don't require character composition requirements. For example, \*&amp;(^%$
 
