@@ -124,19 +124,18 @@ You can unblock an Enhanced Teams App so that it can start showing up in the Mic
 
     :::image type="content" alt-text="How to unblock an app." source="../../media/to-unblock-app.png" lightbox="../../media/to-unblock-app.png":::
 
-
 ### What happens to your existing settings for Teams and Outlook?
 
 Any existing settings made from the Teams Admin Center will continue to be honored on the Teams client.
 
-For example, the Foo Teams app that recently upgraded to an Enhanced Teams app that is now available for Teams, Outlook, and the Microsoft 365 App (formerly known as Office.com).
+As an example, the *Foo* Teams app recently upgraded to an Enhanced Teams app and is now available for Teams, Outlook, and the Microsoft 365 App (formerly known as Office.com).
 
 ||Impact of Teams client|Impact on the Microsoft 365 App|Impact on Outlook client|
 |:-----|:-----|:-----|:-----|
 |If you had previously blocked the Foo Teams App on Teams Admin Center |Users in your organization cannot download and use Foo on Teams.|Users in your organization can download and use Foo Enhanced Teams App on the Microsoft 365 App. This can be controlled by admins on the Microsoft 365 Admin Center.|Currently, users in your organization can access Outlook add-ins based on your settings in Exchange Admin Center.|
 |If you had previously allowed the Foo Teams App on Teams Admin Center |Users in your organization can download and use the Foo Enhanced Teams App on Teams.|Users in your organization can download and use Foo Enhanced Teams App on the Microsoft 365 App. This can be controlled by admins on the Microsoft 365 Admin Center.|Currently, users in your organization can access Outlook add-ins based on your settings in Exchange Admin Center.|
 
-Now that Foo is an Enhanced Teams App, you can make changes to its availability from Microsoft 365 Admin Center.  
+Now that *Foo* is an Enhanced Teams App, you can make changes to its availability from the Microsoft 365 Admin Center.  
 
 ||Impact of Teams client|Impact on the Microsoft 365 App|Impact on Outlook client|
 |:-----|:-----|:-----|:-----|
