@@ -33,9 +33,9 @@ ms.service: microsoft-365-security
 
 Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In all Microsoft 365 organizations, EOP uses these standards to verify inbound email:
 
-- [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-- [DKIM](use-dkim-to-validate-outbound-email.md)
-- [DMARC](use-dmarc-to-validate-email.md)
+- [SPF](email-authentication-spf-configure.md)
+- [DKIM](email-authentication-dkim-configure.md)
+- [DMARC](email-authentication-dmarc-configure.md)
 
 Email authentication verifies that email messages from a sender (for example, laura@contoso.com) are legitimate and come from expected sources for that email domain (for example, contoso.com.)
 
@@ -138,9 +138,9 @@ Microsoft 365 keeps track of who is sending unauthenticated email to your organi
 
 You can use this method to resolve intra-org spoofing and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Microsoft 365 or third parties that are hosted by other providers.
 
-- [Configure SPF records](set-up-spf-in-office-365-to-help-prevent-spoofing.md) for your domains.
-- [Configure DKIM records](use-dkim-to-validate-outbound-email.md) for your primary domains.
-- [Consider setting up DMARC records](use-dmarc-to-validate-email.md) for your domain to determine your legitimate senders.
+- [Configure SPF records](email-authentication-spf-configure.md) for your domains.
+- [Configure DKIM records](email-authentication-dkim-configure.md) for your primary domains.
+- [Consider setting up DMARC records](email-authentication-dmarc-configure.md) for your domain to determine your legitimate senders.
 
 Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, there's many information available online. There are also third party companies dedicated to helping your organization set up email authentication records.
 
@@ -160,7 +160,7 @@ Once you've gotten started with an SPF fallback policy of `?all`, you can gradua
 
 ### Configure permitted senders of unauthenticated email
 
-You can also use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
+You can also use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
 
 For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is one of the following values:
 

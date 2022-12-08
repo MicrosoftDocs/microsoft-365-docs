@@ -98,7 +98,7 @@ You don't have to do a thing to set up DMARC for mail that you receive in Micros
 
 ## Set up DMARC for outbound mail from Microsoft 365
 
-If you use Microsoft 365 but you aren't using a custom domain (you use onmicrosoft.com), SPF is already set up for you and Microsoft 365 automatically generates a DKIM signature for your outgoing mail (for more information about this signature, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)). To set up DMARC for your organization, you need to [Form the DMARC TXT record](#step-4-form-the-dmarc-txt-record-for-your-domain) for the onmicrosoft.com domain and publish it to DNS via [Office 365 Admin Center](https://admin.microsoft.com) > Settings > Domains > click on onmicrosoft.com domain > Add record.
+If you use Microsoft 365 but you aren't using a custom domain (you use onmicrosoft.com), SPF is already set up for you and Microsoft 365 automatically generates a DKIM signature for your outgoing mail (for more information about this signature, see [Default behavior for DKIM and Microsoft 365](email-authentication-dkim-configure.md#DefaultDKIMbehavior)). To set up DMARC for your organization, you need to [Form the DMARC TXT record](#step-4-form-the-dmarc-txt-record-for-your-domain) for the onmicrosoft.com domain and publish it to DNS via [Office 365 Admin Center](https://admin.microsoft.com) > Settings > Domains > click on onmicrosoft.com domain > Add record.
 
  If you have a custom domain or are using on-premises Exchange servers along with Microsoft 365, you need to manually set up DMARC for your outbound mail. Setting up DMARC for your custom domain includes these steps:
 
@@ -120,7 +120,7 @@ If you have already set up SPF, then you've already gone through this exercise. 
 
 ### Step 2: Set up SPF for your domain
 
-Now that you have a list of all your valid senders you can follow the steps to [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+Now that you have a list of all your valid senders you can follow the steps to [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
 
 For example, assuming contoso.com sends mail from Exchange Online, an on-premises Exchange server whose IP address is 192.168.0.1, and a web application whose IP address is 192.168.100.100, the SPF TXT record would look like this:
 
@@ -136,7 +136,7 @@ Once you've set up SPF, you need to set up DKIM. DKIM lets you add a digital sig
 
 If you have third-party senders that send mail on your behalf and the mail they send has mismatched 5321.MailFrom and 5322.From addresses, DMARC will fail for that email. To avoid this, you need to set up DKIM for your domain specifically with that third-party sender. This allows Microsoft 365 to authenticate email from this 3rd-party service. However, it also allows others, for example, Yahoo, Gmail, and Comcast, to verify email sent to them by the third-party as if it was email sent by you. This is beneficial because it allows your customers to build trust with your domain no matter where their mailbox is located, and at the same time Microsoft 365 won't mark a message as spam due to spoofing because it passes authentication checks for your domain.
 
-For instructions on setting up DKIM for your domain, including how to set up DKIM for third-party senders so they can spoof your domain, see [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md).
+For instructions on setting up DKIM for your domain, including how to set up DKIM for third-party senders so they can spoof your domain, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 
 ### Step 4: Form the DMARC TXT record for your domain
 
@@ -226,13 +226,13 @@ If you publish a DMARC reject policy (p=reject), no other customer in Microsoft 
 
 ## How Microsoft 365 handles inbound email that fails DMARC
 
-If the DMARC policy of the sending server is `p=reject`, [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) marks the message as spoof instead of rejecting it. In other words, for inbound email, Microsoft 365 treats `p=reject` and `p=quarantine` the same way. Admins can define the action to take on messages classified as spoof within the [anti-phishing policy](set-up-anti-phishing-policies.md).
+If the DMARC policy of the sending server is `p=reject`, [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) marks the message as spoof instead of rejecting it. In other words, for inbound email, Microsoft 365 treats `p=reject` and `p=quarantine` the same way. Admins can define the action to take on messages classified as spoof within the [anti-phishing policy](anti-phishing-policies-about.md).
 
 Microsoft 365 is configured like this because some legitimate email may fail DMARC. For example, a message might fail DMARC if it's sent to a mailing list that then relays the message to all list participants. If Microsoft 365 rejected these messages, people could lose legitimate email and have no way to retrieve it. Instead, these messages will still fail DMARC but they'll be marked as spam and not rejected. If desired, users can still get these messages in their inbox through these methods:
 
 - Users add safe senders individually by using their email client.
 
-- Admins can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) or the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to allow messages from the spoofed sender.
+- Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to allow messages from the spoofed sender.
 
 - Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 
@@ -273,10 +273,10 @@ Want more information about DMARC? These resources can help.
 
 ## See also
 
-[How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)
+[How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md)
 
-[**Set up SPF in Microsoft 365 to help prevent spoofing**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+[**Set up SPF in Microsoft 365 to help prevent spoofing**](email-authentication-spf-configure.md)
 
-[**Use DKIM to validate outbound email sent from your custom domain in Microsoft 365**](use-dkim-to-validate-outbound-email.md)
+[**Use DKIM to validate outbound email sent from your custom domain in Microsoft 365**](email-authentication-dkim-configure.md)
 
 [Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&preserve-view=true)

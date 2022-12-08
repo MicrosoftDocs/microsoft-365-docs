@@ -99,6 +99,8 @@ landingContent:
         links:
           - text: Create modern templates
             url: content-assembly-modern-template.md
+          - text: Generate documents
+            url: content-assembly-create-document.md
           - text: Use with Power Automate
             url: automate-document-generation.md
 
