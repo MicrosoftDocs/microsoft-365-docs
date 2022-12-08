@@ -1,11 +1,11 @@
 ---
-title: "Manage app licenses used in a managed environment"
+title: "Manage app licenses used in Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Manage app licenses used in a managed environment.
+description: Manage app licenses used in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,6 +14,6 @@ ms.custom:
 keywords:
 ---
 
-# Manage app licenses used in a managed environment
+# Manage app licenses used in Intune
 
 

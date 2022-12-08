@@ -1,5 +1,5 @@
 ---
-title: "Understand Microsoft apps for a managed environment"
+title: "Understand Microsoft apps for Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Understand Microsoft apps in a managed environment
+# Understand Microsoft apps in Intune
 
 There are specific Microsoft app types that allow you to install and manage Microsoft 365 apps, Microsoft Edge, and Microsoft Defender for Endpoint. The app types can are specific to Windows 10 and later, and also macOS. Users must have an account and license to use these apps.
 

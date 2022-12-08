@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Understand store apps for a managed environment
+# Understand store apps for Intune
 
 One method of protecting and securing your organization's data is to deploy store apps to your organization's workforce. Many store apps have been designed to support a managed environment such as Microsoft Intune. 
 

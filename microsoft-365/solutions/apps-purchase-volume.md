@@ -1,11 +1,11 @@
 ---
-title: "Purchase apps in volume for a managed environment"
+title: "Purchase apps in volume for Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Purchase apps in volume for a managed environment.
+description: Purchase apps in volume for Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Purchase apps in volume for a managed environment
+# Purchase apps in volume for Intune
 
 <!--
 ## Types of volume purchased apps 

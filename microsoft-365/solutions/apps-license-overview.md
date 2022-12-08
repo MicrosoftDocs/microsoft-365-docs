@@ -1,11 +1,11 @@
 ---
-title: "Understand app licenses used in a managed environment"
+title: "Understand app licenses used in Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Understand app licenses used in a managed environment.
+description: Understand app licenses used in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,12 +14,35 @@ ms.custom:
 keywords:
 ---
 
-# Understand app licenses used in a managed environment
+# Understand app licenses used in Intune
 
-Before you can distribute managed apps to your workforce, you must add them to Intune. Many of the apps that you use with Microsoft Intune can be added to Intune and deployed to user's devices for free. However, some of those apps that you can deploy to your workforce may require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook, which can be purchased as part of your Intune license) requires both a license and an account to use the app.
+Before you can distribute managed apps to members of your organization, you must add the apps to Intune. Many of the apps that you use with Intune can be added to Intune and deployed to user's devices for free. However, some apps that you can deploy to your workforce may require either a license, subscription, or account for each user to use the app. 
+
+The following table provides the primary ways to obtain app license that you can use with Intune:
+
+| App   license type | Description |
+|---|---|
+| Standard   for-use app license | You can freely add these apps to   Intune and deploy them to the members of your organization. These apps do not   require any additional cost to use.  |
+| Purchased   app license  | You must purchase licenses for   these apps before adding them to Intune and deploying them to members of your   organization. Each device platform (Windows, iOS, Android) offers a standard   method to purchase licenses for these apps. Intune provides methods to manage   the app license for each member (end user) of your organization. |
+| License   for apps that requiring an account, subscription, or license from the app   developer | You can freely add and deploy   the app from Intune, but the app requires an account, subscription, or   license from the app developer to use. |
+| App   license of apps included with your Intune license | Based on your Microsoft Intune   license, you may already have Microsoft app licenses available, allowing you   to add and deploy apps to members of your organization. |
+
+## Standard for-use app license
+
+As previously mentioned, many of the apps available within the Intune console are free to use. You can add these apps to Intune and assign them to the members of your organization without cost. The members of your organization can use the app without any additional license, subscription, or account. 
+
+## Purchased app license
+
+You can purchase app licenses in-volume through a volume purchase program (VPP). Each device platform provides a VPP method. Apple lets you purchase multiple app licenses using Apple Business Manager. Google provides the Manage Google Play. Depending on your Microsoft Intune license, you may already have Microsoft app licenses available to add and deploy. However, Microsoft also offers the Microsoft Store for Business. For more information, see [Purchase apps in-volume for Intune](apps-purchase-volume.md).
+
+## Apps requiring account, subscription, or license from app developer
+
+## App licenses included with Intune
+
+For instance, Microsoft Outlook, which can be purchased as part of your Intune license) requires both a license and an account to use the app.
 
 
-## Apps included with Microsoft 365 E5 license
+## App functionality included with Microsoft 365 E5 license
 
 To use Microsoft Intune, your organization must purchase a license. Microsoft apps are included with specific Microsoft 365 licenses. For instance, common areas of functionality included with an E5 enterprise license are displayed in the following table.
 

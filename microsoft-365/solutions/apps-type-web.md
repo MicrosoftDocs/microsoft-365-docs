@@ -1,5 +1,5 @@
 ---
-title: "Understand web apps for a managed environment"
+title: "Understand web apps for Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Understand web apps in a managed environment
+# Understand web apps in Intune
 
 Intune supports a variety of app types, including web apps and web links. A web app is commonly recognized as a client-server application. A web link is simply a URL to a web page. 
 

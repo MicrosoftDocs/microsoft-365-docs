@@ -403,7 +403,7 @@
 
 - name: Microsoft app guidance and scenarios
   items: 
-    - name: Purchase and add apps in your managed environment
+    - name: Purchase and add apps to Microsoft Intune
       items: 
       - name: Overview
         href: apps-guide-overview.md
@@ -421,6 +421,18 @@
           href: apps-type-web.md
         - name: Understand Microsoft apps
           href: apps-type-microsoft.md          
+      - name: Understand app licenses
+        items:
+        - name: App licenses overview
+          href: apps-license-overview.md
+        - name: Select and acquire app licenses
+          href: apps-license-select.md
+        - name: Manage app licenses
+          href: apps-license-manage.md
+        - name: Confirm app licenses
+          href: apps-license-confirm.md
+        - name: Understand licenses terms
+          href: apps-license-terms.md
       - name: Purchase apps
         items:
         - name: Purchase apps overview
@@ -435,18 +447,6 @@
           href: apps-purchase-in-app.md
         - name: Verify purchased apps
           href: apps-purchase-verify.md
-      - name: Understand app licenses
-        items:
-        - name: App licenses overview
-          href: apps-license-overview.md
-        - name: Select and acquire app licenses
-          href: apps-license-select.md
-        - name: Manage app licenses
-          href: apps-license-manage.md
-        - name: Confirm app licenses
-          href: apps-license-confirm.md
-        - name: Understand licenses terms
-          href: apps-license-terms.md
       - name: Add apps to Intune
         items:
         - name: Add apps overview

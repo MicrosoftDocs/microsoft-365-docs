@@ -1,11 +1,11 @@
 ---
-title: "Assess app requirements for a managed environment"
+title: "Assess app requirements for Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Assess app requirements for a managed environment.
+description: Assess app requirements for Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Assess app requirements for a managed environment
+# Assess app requirements for Intune
 
 
 

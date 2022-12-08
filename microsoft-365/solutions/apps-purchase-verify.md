@@ -1,11 +1,11 @@
 ---
-title: "Verify purchased apps in a managed environment"
+title: "Verify purchased apps in Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Verify purchased apps in a managed environment.
+description: Verify purchased apps in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,5 +14,5 @@ ms.custom:
 keywords:
 ---
 
-# Verify purchased apps in a managed environment
+# Verify purchased apps in Intune
 

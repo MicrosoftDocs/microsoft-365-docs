@@ -1,11 +1,11 @@
 ---
-title: "Select and acquire app licenses in a managed environment"
+title: "Select and acquire app licenses in Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Select and acquire app licenses in a managed environment.
+description: Select and acquire app licenses in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,6 +14,6 @@ ms.custom:
 keywords:
 ---
 
-# Select and acquire app licenses in a managed environment
+# Select and acquire app licenses in Intune
 
 

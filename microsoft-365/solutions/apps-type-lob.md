@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Understand line-of-business apps for a managed environment
+# Understand line-of-business apps for Intune
 
 A line-of-business (LOB) app is an app that you add to Microsoft Intune from an app installation file. Line-of-business (LOB) apps are commonly referred to as custom apps and in-house apps because they are typically created in-house for your organization and support a specific purpose for your organization. To include LOB apps in your managed environment, you upload the app installation file to Intune and assign the app to devices or groups from Intune. LOB apps are supported by Intune for Android devices, iOS/iPadOS devices, Windows, and macOS devices.
 

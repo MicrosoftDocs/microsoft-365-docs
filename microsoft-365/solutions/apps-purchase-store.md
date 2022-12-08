@@ -1,11 +1,11 @@
 ---
-title: "Add standard store apps to Intune"
+title: "Purchase store apps in Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Add standard store apps to Intune.
+description: Purchase store apps in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,11 +14,11 @@ ms.custom:
 keywords:
 ---
 
-# Add store apps to Intune
+# Purchase store apps in Intune
 
-Many of the standard store apps displayed within the Intune console are freely available for you to add and deploy to members of your organization. You also have options to purchase store apps for each device platform.
+Many of the standard store apps displayed within the Intune console are freely available for you to add and deploy to members of your organization. In addition, you can purchase store apps for each device platform.
 
-The following table provides the different categories avilable for store apps:
+The following table provides the different categories available for store apps:
 
 | Store   app category | Description |
 |---|---|
@@ -32,7 +32,7 @@ The following table provides the different categories avilable for store apps:
 
 ## Add available apps based on platform
 
-Intune displays apps that are either freely available, or you own a licenses for the apps. 
+Intune displays apps that are either freely available, or you own a licenses for the apps.
 
 
 

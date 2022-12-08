@@ -1,11 +1,11 @@
 ---
-title: "Understand supported app types in a managed environment"
+title: "Understand supported app types in Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Understand supported app types in a managed environment.
+description: Understand supported app types in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,5 +14,5 @@ ms.custom:
 keywords:
 ---
 
-# Understand supported app types in a managed environment
+# Understand supported app types in Intune
 

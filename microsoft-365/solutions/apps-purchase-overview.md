@@ -1,11 +1,11 @@
 ---
-title: "Purchase apps for a managed environment"
+title: "Purchase apps for Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Understand how to purchase apps for a managed environment.
+description: Understand how to purchase apps for Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Purchase apps for a managed environment
+# Purchase apps for Intune
 
 There are a variety of apps that you can use with Microsoft Intune. Some apps are free for your workforce to use, while other apps require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook requires both a license and an account to use the app. Within the Intune console, you can select store apps and freely add them to Intune. Based on the supported integration with Intune, you can then configure these apps so that your workforce can easily set them up based on your unique company requirements and also add app protection policies for each app to protect your company's data.
 
@@ -37,7 +37,7 @@ Intune integrates directly with the different supported platform stores. Within 
 > [!NOTE]
 > Intune only shows free store apps. Apps that require a payment method will not be displayed as an available store app from within Intune.
 
-For more information about store apps, see [Purchase store apps for a managed environment](apps-purchase-store.md).
+For more information about store apps, see [Purchase store apps for Intune](apps-purchase-store.md).
 
 ### Volume purchased apps
 
@@ -48,7 +48,7 @@ Each of the following device platforms has a method to purchase apps for your or
 - Google provides[Managed Google Play](apps-purchase-volume.md#managed-google-play)
 - Microsoft provide the [Microsoft Store for Business](apps-purchase-volume.md#microsoft-store-for-business)
 
-For more information about volume purchased apps, see [Purchase apps in volume for a managed environment](apps-purchase-volume.md).
+For more information about volume purchased apps, see [Purchase apps in volume for Intune](apps-purchase-volume.md).
 
 ### Partner productivity apps
 
@@ -58,16 +58,16 @@ Areas of support include the following:
 - [Core Intune app protection policy settings](/mem/intune/apps/apps-supported-intune-apps.md#core-app-settings)
 - [Advanced Intune app protection policy and app configuration policy settings](/mem/intune/apps/apps-supported-intune-apps.md#advanced-app-settings)
 
-For more information about partner productivity apps, see [Purchase third-party apps for a managed environment](apps-purchase-third-party.md).
+For more information about partner productivity apps, see [Purchase third-party apps for Intune](apps-purchase-third-party.md).
 
 ### Partner UEM apps
 
 In addition to standard store apps that can be managed, you can add specific [partner UEM apps](/mem/intune/apps/apps-supported-intune-apps.md#partner-uem-apps) to Intune. These apps are also available in either the Google Play Store or the Apple App Store. However, these apps are capable of supporting advanced app protection policy and app configuration policy settings.
 
-For more information about partner UEM apps, see [Purchase third-party apps for a managed environment](apps-purchase-third-party.md).
+For more information about partner UEM apps, see [Purchase third-party apps for Intune](apps-purchase-third-party.md).
 
 ### In-app purchases
 
 Many apps offer core functionality for free, however there are those apps that provide additional capabilities that you can purchase from within the app. Purchase additional app functionality is called "in-app purchase". You can choose to block in-app purchases specifically for iOS devices using device restriction settings. On Android devices, you can allow access to all apps in Google Play store by allowing users to add new accounts to the device. However, doing so will enable end users not only to have the ability to conduct in-app purchases from the Google Play store using personal accounts, but purchase apps as well.
 
-For more information about in-app purchases, see [In-app purchases for apps in a managed environment](apps-purchase-in-app.md).
+For more information about in-app purchases, see [In-app purchases for apps in Intune](apps-purchase-in-app.md).

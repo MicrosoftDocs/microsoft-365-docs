@@ -1,5 +1,5 @@
 ---
-title: "Understand built-in apps for a managed environment"
+title: "Understand built-in apps for Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Understand built-in apps for a managed environment
+# Understand built-in apps for Intune
 
 The *built-in* app type makes it easy for you to assign curated managed apps, such as Microsoft 365 apps and third-party apps, to iOS/iPadOS and Android devices. You can assign specific apps for this app type, such as Excel, OneDrive, Outlook, Skype, and others. After you add an app to Intune, the app type is displayed as either *Built-in iOS app* or *Built-in Android app*. By using the built-in app type, you can choose which of these apps to publish to device users.
 
