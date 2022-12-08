@@ -158,7 +158,7 @@ sections:
           
             SPF records are a mechanism for validating that mail sent from a domain really is coming from that domain and is not spoofed. For more information about SPF records, see the following links:
           
-            [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+            [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
           
             [Domains FAQ](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
           

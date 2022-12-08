@@ -42,7 +42,7 @@ Each of the troubleshooting scenarios described in this article is based on usin
 
 ### Permissions required to use the audit log search tool
 
-You must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
+You must be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online to search the audit log. By default, these roles are assigned to the *Compliance Management* and *Organization Management* role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the *Organization Management* role group in Exchange Online. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
 ### Running audit log searches
 
@@ -71,7 +71,6 @@ This section describes the basics for creating and running audit log searches. U
     For more information about viewing and exporting audit log search results, see:
 
     - [View search results](audit-log-search.md#step-2-view-the-search-results)
-  
     - [Export search results](audit-log-search.md#step-3-export-the-search-results-to-a-file)
 
 ## Find the IP address of the computer used to access a compromised account

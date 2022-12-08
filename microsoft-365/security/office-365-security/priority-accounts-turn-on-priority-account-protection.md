@@ -78,7 +78,7 @@ The affects of priority account protection are visible in the following features
 - [Email entity page](mdo-email-entity-page.md)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
-- [Attack simulation](attack-simulation-training.md#target-users)
+- [Attack simulation](attack-simulation-training-simulations.md#target-users)
 - [Campaign Views](campaigns.md)
 - [Admin submissions and user reported messages](submissions-admin.md)
 - [Quarantine](quarantine.md)
