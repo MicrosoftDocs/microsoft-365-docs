@@ -80,6 +80,12 @@ You can configure the tamper protection mode by providing the mode name as enfor
 
 - System Integrity Protection (SIP) enabled. For more information, see [Disabling and Enabling System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
 - Use a Mobile device management (MDM) tool to configure Microsoft Defender for Endpoint.
+- Ensure that MDE always have **Full Disk Access** authorization.
+
+> [!NOTE]
+> 
+> Enabling **TCC** (Transparency, Consent & Control) through an MDM solution such as [Intune](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-install-with-intune?view=o365-worldwide#full-disk-access), will eliminate the risk of MDE loosing **Full Disk Access** Authorization to function properly 
+.
 
 ## Configure tamper protection on macOS devices
 
