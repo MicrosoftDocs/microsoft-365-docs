@@ -16,7 +16,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolib
-- M365-Lighthous
+- M365-Lighthouse
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, see a list of known issues for Lighthouse by feature area."
 ---

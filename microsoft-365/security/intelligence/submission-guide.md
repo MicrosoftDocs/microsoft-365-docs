@@ -41,7 +41,7 @@ After you sign in, you will be able to track your submissions.
 
 ### Submit a suspected email attachment
 
-Use the [Microsoft 365 Defender portal](https://security.microsoft.com/) to submit suspected email attachments to Microsoft for review. For more information, see [Submit a suspected email attachment to Microsoft](../office-365-security/admin-submission.md).
+Use the [Microsoft 365 Defender portal](https://security.microsoft.com/) to submit suspected email attachments to Microsoft for review. For more information, see [Submit a suspected email attachment to Microsoft](../office-365-security/submissions-admin.md).
 
 ### Submit a file or file hash
 
@@ -94,3 +94,7 @@ Processing submissions take dedicated analyst resource. Because we regularly rec
 * Submissions flagged as high priority by SAID holders are given immediate attention.
 
 Your submission is immediately scanned by our systems to give you the latest determination even before an analyst starts handling your case. Note that the same file may have already been processed by an analyst. To check for updates to the determination, select rescan on the submission details page.
+
+## See also
+
+[Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](../defender-endpoint/defender-endpoint-antivirus-exclusions.md)
