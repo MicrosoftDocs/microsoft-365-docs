@@ -30,6 +30,9 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+
 Learn how to configure your Event Hubs so that it can ingest events from Microsoft 365 Defender.
 
 ## Set up the required Resource Provider in the Event Hubs subscription
@@ -179,3 +182,7 @@ Once you've verified there's data to export, you can view the Event Hubs page to
 for your custom app to ingest.
 
 :::image type="content" source="../../media/e88060e315d76e74269a3fc866df047f.png" alt-text=" The Overview page in the Microsoft 365 Azure portal" lightbox="../../media/e88060e315d76e74269a3fc866df047f.png":::
+
+## Related topics
+
+[Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)

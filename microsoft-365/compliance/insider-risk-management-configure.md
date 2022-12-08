@@ -89,7 +89,7 @@ There are six role groups used to configure insider risk management features. To
 - *Insider Risk Management* role group
 - *Insider Risk Management Admins* role group
 
-Depending on how you wish to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the Insider Risk Management role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
+Depending on how you wish to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the *Insider Risk Management* role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
 
 You'll choose from these role group options and solution actions when working with insider risk management:
 
@@ -142,7 +142,7 @@ Insider risk management uses Microsoft 365 audit logs for user insights and risk
 
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step.
 
-For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](audit-log-enable-disable.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](audit-log-search.md).
 
 ## Step 3 (optional): Enable and view insider risk analytics insights
 
@@ -209,12 +209,14 @@ See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) ar
 
 Insider risk management includes support for assigning priority user groups to policies to help identity unique risk activities for user with critical positions, high levels of data and network access, or a past history of risk behavior. Creating a priority user group and assigning users to the group help scope policies to the unique circumstances presented by these users.
 
+You can create a priority user group and assign users to the group to help you scope policies specific to the unique circumstances presented by these identified users. To enable the *priority user groups* risk score booster, go to the *Insider risk management settings* page, then select **Policy indicators** and **Risk score boosters**. These identified users are more likely to receive [alerts](insider-risk-management-activities.md#alert-dashboard), so analysts and investigators can review and prioritize these users' risk severity to help triage alerts in accordance with your organization's risk policies and standards.
+
 A priority user group is required when using the following policy templates:
 
 - Security policy violations by priority users
 - Data leaks by priority users
 
-See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups) article for step-by-step guidance to create a priority user group. After you've configured a priority user group, return to these configuration steps.
+See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups) article for step-by-step configuration guidance. 
 
 ### Configure Physical badging connector (optional)
 

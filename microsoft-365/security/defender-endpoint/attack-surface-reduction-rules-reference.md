@@ -87,6 +87,9 @@ Following is a list of ASR rules that honor Microsoft Defender Antivirus exclusi
 | [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) |
 | [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |
 
+> [!NOTE]
+> See: [Configure ASR rules per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-rules-per-rule-exclusions) for information about configuring ASR rules per-rule exclusions.
+
 ## ASR rules supported operating systems
 
 The following table lists the supported operating systems for rules that are currently released to general availability. The rules are listed alphabetical order in this table.
@@ -159,7 +162,7 @@ Toast notifications are generated for all rules in Block mode. Rules in any othe
 For rules with the "Rule State" specified:
 
 - ASR rules with \<ASR Rule, Rule State\> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high cloud block level won't generate alerts for any <ASR Rule, Rule State> combinations
-- EDR alerts are generated for ASR rules in the specified states, but only for devices at high cloud block level.
+- EDR alerts are generated for ASR rules in the specified states, but only for devices at high+ cloud block level.
 
 | Rule name: | Rule state: | Generates alerts in EDR? <br> (Yes&nbsp;\|&nbsp;No) | Generates toast notifications? <br> (Yes&nbsp;\|&nbsp;No) |
 |---|:---:|:---:|:---:|
@@ -180,7 +183,7 @@ For rules with the "Rule State" specified:
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
-  
+
 ## ASR rule to GUID matrix
 
 | Rule Name | Rule GUID |
@@ -216,7 +219,7 @@ When the allow button is clicked, the block will be suppressed for 24 hours. Aft
 You can also set a rule in warn mode via PowerShell by specifying the AttackSurfaceReductionRules_Actions as "Warn". For example:
 
 ```powershell
--command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
+Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn
 ```
 
 ## Per rule descriptions
@@ -598,3 +601,4 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 - [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 - [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
