@@ -1,5 +1,5 @@
 ---
-title: "Get started with Data loss prevention for Power BI"
+title: "Get started with DLP for Power BI"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -13,21 +13,25 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: "Prepare for and deploy DLP to PowerBI locations."
+description: "Prepare for and deploy DLP to PowerBI locations, to help organizations detect and protect their sensitive data."
 ---
 # Get started with Data loss prevention policies for Power BI (preview)
 
-To help organizations detect and protect their sensitive data, [Microsoft 365 data loss prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp) support Power BI. When a PowerBI data set matches the criteria in a DLP policy, an alert that explains the nature of the sensitive content can be triggered. This alert is also registered in the data loss prevention **Alerts** tab in the Microsoft compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
+To help organizations detect and protect their sensitive data, [Microsoft Purview data loss prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp) support Power BI. When a PowerBI data set matches the criteria in a DLP policy, an alert that explains the nature of the sensitive content can be triggered. This alert is also registered in the data loss prevention **Alerts** tab in the Microsoft compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Considerations and limitations
 
-- DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities are supported.
+- DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities are supported. For more information, see [What is Power BI Premium Gen2?](/power-bi/enterprise/service-premium-gen2-what-is).
 - DLP dataset evaluation workloads impact capacity. Metering for DLP evaluation workloads is not supported.
 - Both classic and new experience workspaces are supported, as long as they are hosted in Premium Gen2 capacities.
 - You must create a custom DLP custom policy for Power BI. DLP templates are not supported.
@@ -84,7 +88,7 @@ When a dataset matches a DLP policy:
     >[!NOTE]
     > If you hide the policy tip, it doesn’t get deleted. It will appear the next time you visit the page.
 
-- If alerts are enabled in the policy, an alert will be recorded on the dlp **Alerts** tab in the compliance center, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the compliance center.
+- If alerts are enabled in the policy, an alert will be recorded on the dlp **Alerts** tab in the compliance center, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the Microsoft Purview compliance portal.
 
     ![Screenshot of Alerts tab in the compliance center.](../media/dlp-power-bi-alerts-tab.png)
 
@@ -95,7 +99,7 @@ Follow the procedures in [Create, test, and tune a DLP policy](create-test-tune-
 > [!IMPORTANT]
 > When you select the locations for your DLP policy for Power BI, select only the Power BI location. Do not select any other locations, this configuration is not supported. 
 
-<!--1. Log into the [Microsoft 365 compliance portal](https://compliance.microsoft.com).
+<!--1. Log into the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 
 1. Choose the **Data loss prevention** solution in the navigation pane, select the **Policies** tab, choose **Create policy**.
 
@@ -215,7 +219,7 @@ Assign a severity level that will be shown in alerts generated from this policy.
  
 ## Monitor and manage policy alerts
 
-Log into the Microsoft 365 compliance portal and navigate to **Data loss prevention > Alerts**.
+Log into the Microsoft Purview compliance portal and navigate to **Data loss prevention > Alerts**.
 
 ![Screenshot of D L P Alerts tab.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
 

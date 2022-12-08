@@ -1,24 +1,26 @@
 ---
-title: "Manage issuing officers in Advanced eDiscovery"
+title: "Manage issuing officers in eDiscovery (Premium)"
+description: "You can add organization-wide issuing officers in eDiscovery (Premium) so they can be added to any custodial communication in any case in your organization."
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: "You can add organization-wide issuing officers in Advanced eDiscovery so they can be added to any custodial communication in any case in your organization."
 ---
 
-# Manage issuing officers in Advanced eDiscovery
+# Manage issuing officers in eDiscovery (Premium)
 
 When you or others create a hold notification or other type of communication that is sent to a user who is a custodian in case, you have to specify an issuing officer. The notification is sent to the custodian on behalf of the specified issuing officer. For example, a paralegal in your organization might be responsible for creating and sending hold notifications to custodians in a case. In this scenario, the paralegal can specify an attorney in the organization as the issuing officer. Who can be specified as an issuing officer? There are two types of users who can be selected as an issuing officer for a custodian communication:
 
@@ -28,19 +30,21 @@ When you or others create a hold notification or other type of communication tha
 
 This article explains how to add and remove users to the list of organization-wide issuing officers.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you add an issuing officer
 
-- You must be an eDiscovery Administrator in your organization to add or remove issuing officers. For more information, see [Assign eDiscovery permissions in the Microsoft 365 compliance center](assign-ediscovery-permissions.md)  
+- You must be an eDiscovery Administrator in your organization to add or remove issuing officers. For more information, see [Assign eDiscovery permissions in the Microsoft Purview compliance portal](assign-ediscovery-permissions.md)  
 
 - The user who is added as an issuing officer must have an active mailbox in your Microsoft 365 organization.
 
-- Your organization can have a maximum of 15 issuing officers. Members of a case who can be specified as an issuing officer aren't counted toward this limit. This limit only applies to the number of users that can be added to the **Issuing officers** page in Advanced eDiscovery.
+- Your organization can have a maximum of 15 issuing officers. Members of a case who can be specified as an issuing officer aren't counted toward this limit. This limit only applies to the number of users that can be added to the **Issuing officers** page in eDiscovery (Premium).
 
 ## Add an issuing officer
 
-1. In the Microsoft 365 compliance center, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
+1. In the compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **eDiscovery (Premium) settings**.
 
-   ![Select Advanced eDiscovery settings](..\media\HistoricalVersions1.png)
+   ![Select eDiscovery (Premium) settings](..\media\HistoricalVersions1.png)
 
 2. On the **Settings** page, select the **Issuing officers** tab to display the **Manage issuing officers** page.
 
@@ -52,7 +56,7 @@ After you add users as issuing officers, you or other users will be able to spec
 
 ## Remove an issuing officer
 
-1. In the Microsoft 365 compliance center, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
+1. In the compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **eDiscovery (Premium) settings**.
 
 2. On the **Settings** page, select the **Issuing officers** tab.
 

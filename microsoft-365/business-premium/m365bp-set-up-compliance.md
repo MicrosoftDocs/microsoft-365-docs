@@ -1,32 +1,33 @@
 ---
-title: "Increase threat protection for Microsoft 365 Business Premium"
+title: "Set up compliance features in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
-ms.localizationpriority: medium
-ms.collection: 
-- M365-subscription-management
-- M365-identity-device-management 
-- Adm_TOC
+ms.topic: how-to
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 10/18/2022
+ms.localizationpriority: high
+ms.collection:
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: "Set up compliance features to prevent data loss and help keep your and your customers' sensitive information secure."
 ---
-# Set up compliance features
+# Set up compliance features in Microsoft 365 Business Premium
 
-Your Microsoft 365 Business Premium subscription includes compliance and privacy features. These capabilities help protect your company's data, and to help you keep your and your customers' sensitive information secure. This article is designed to help you get started with your compliance features.
+
+Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
+Your Microsoft 365 Business Premium subscription includes compliance and privacy features. These capabilities help protect your company's data, and keep your and your customers' sensitive information secure. This article is designed to help you get started with your compliance features.
+
 
 ## Before you begin
 
@@ -41,7 +42,7 @@ To learn more, see [Get started with the roles page](../admin/add-users/admin-ro
 
 :::image type="content" source="./media/m365bp-compliancemanager.png" alt-text="Screenshot of Compliance Manager in Microsoft 365 Business Premium.":::
 
-Microsoft 365 Business Premium includes Compliance Manager, which can help you get started setting up your compliance features. Such features include data loss prevention, information governance, and insider risk management, to name a few. Compliance Manager can save you time by highlighting recommendations, a compliance score, and ways to improve your score.
+Microsoft 365 Business Premium includes Compliance Manager, which can help you get started setting up your compliance features. Such features include data loss prevention, data lifecycle management, and insider risk management, to name a few. Compliance Manager can save you time by highlighting recommendations, a compliance score, and ways to improve your score.
 
 Here's how to get started:
 
@@ -63,11 +64,13 @@ Here's how to get started:
 
    Follow the information on the screen to set up your DLP policy.
 
-For more information about compliance features in Microsoft 365 for business, see [Microsoft 365 compliance documentation](../compliance/index.yml).
+For more information about compliance features in Microsoft 365 for business, see [Microsoft Purview documentation](../compliance/index.yml).
 
 ## Use sensitivity labels
 
-Sensitivity labels are available in Office apps (such as Outlook, Word, Excel, and PowerPoint). Examples of labels include:
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198022).
+
+Sensitivity labels are available in Microsoft 365 apps (such as Outlook, Word, Excel, and PowerPoint). Examples of labels include:
 
 - Normal
 - Personal

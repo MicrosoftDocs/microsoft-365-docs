@@ -1,5 +1,5 @@
 ---
-title: "Message center"
+title: "Message center in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -7,12 +7,13 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
@@ -25,7 +26,7 @@ ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
 ---
 
-# Message center
+# Track new and changed features in the Microsoft 365 Message center
 
 To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>.
   
@@ -66,6 +67,29 @@ To unsubscribe from Message center emails, see [Unsubscribe from Message center 
 |How can I ensure data privacy notifications are received by the right contacts in my organization?|As a global admin you will receive data privacy messages for your organization. Additionally, you can assign the Message Center Privacy reader role to people who should see data privacy messages. Other admin roles with access to Message Center cannot view data privacy messages.   <br/><br/>For more info, see [Preferences](#preferences) in this article.|
 |Why can’t I see a message that was previously there?|To manage the number of messages within Message center, each message will expire and be removed after a period of time. Generally, messages expire 30 days post the time period outlined in the message body.|
 |
+
+## Relevance Recommendation
+
+For each new Message center post, we will provide a recommendation for how relevant the change is for your organization. This recommendation is based on multiple factors such as: 
+- Apps and service usage 
+- Changes meant to prevent or fix issues for subscription. 
+- Changes meant to help you plan ahead or stay informed. 
+- Impact changes, such as data privacy and app and service retirements.  
+
+There are three levels of relevance: 
+
+-   **High** - These are posts about changes in your organization which need immediate action to avoid service disruption. These can also include feature releases with high potential impact to your organization, for example, an app or service being heavily used by people in your organization. 
+
+- **Medium**  - These are posts about changes in your organization which don't need immediate action. . Examples are non-breaking changes or new features for a service which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement 
+
+- **Low** -  These are posts about changes which just need monitoring. They are related to low impact apps and services in your organization. Examples would be a feature update for an app or service which isn't actively used in your organization. 
+
+
+The relevance recommendations will **ONLY** be available for the newer MC posts. This means the MC posts you already received will see a "blank" for relevance recommendation.
+
+If you see “**Processing**” for a MC post, it means that the score is being computed for this post and should be available soon. You should try to refresh after a few minutes.  
+
+Once you start receiving this, please tell us if a MC post is **not relevant** to you through the [**extended feedback.**](#give-feedback-on-a-post)  This feedback is very important for us to improve the accuracy of the relevance recommendations.
 
 ## Filter messages
 
@@ -122,7 +146,7 @@ If administration is distributed across your organization, you may not want or n
 
 2. In the **Custom View** tab, make sure that the check box is selected for each service that you want to monitor. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**. 
+3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**.
 
    You can also enter up to two email addresses, separated by a semicolon.
 
@@ -195,7 +219,7 @@ Here's a quick overview of the information you'll see in each column.
 
 - Compliance administrator
 - Conditional access administrator
-- Customer LockBox access approver
+- Customer Lockbox access approver
 - Device administrators
 - Directory readers
 - Directory synchronization accounts
@@ -208,7 +232,9 @@ Here's a quick overview of the information you'll see in each column.
 
 In the Message center, you can select a message to see details.
 
-If you want to provide feedback on the message, in the details pane, select either the **Like** or **Dislike** icon on the bottom of the message details pane, and provide optional feedback in the text box that appears. Do not provide any personal information. You can optionally select **It's OK to contact me about this feedback** and then select **Send**.
+
+If a Message Center post is not relevant for your organization, please provide us feedback using the options demonstrated in the image below. After you click thumbs up/down on the MC post, select "this change isn't relevant to my org."
+:::image type="content" source="../../media/message-center-feedbacksection.jpg" alt-text="Message center view of feedback section.":::
 
 > [!NOTE]
 > If you're using Microsoft 365 for Government - GCC, Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.
@@ -266,7 +292,7 @@ When you open a message in a reading pane, you can use the **Up** and **Down** :
 
 A lot of actionable information about changes to Microsoft 365 services arrives in the Microsoft 365 message center. It can be difficult to keep track of which changes require tasks to be done, when, and by whom, and to track each task to completion. You also might want to make a note of something and tag it to check on later. You can do all this and more when you sync your messages from the Microsoft 365 admin center to Microsoft Planner. For more information, see [Track your message center tasks in Planner](/office365/planner/track-message-center-tasks-planner).
 
-For an overview of Message center, see [Message center in Microsoft 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message center communications, please reference [Working with service communications API in Microsoft Graph](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta).
+For an overview of Message center, see [Message center in Microsoft 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message center communications, see [Working with service communications API in Microsoft Graph](/graph/api/resources/service-communications-api-overview).
 
 ## Unsubscribe from Message center emails
 
@@ -280,5 +306,4 @@ For an overview of Message center, see [Message center in Microsoft 365](message
 ## Related content
 
 [Set up the Standard or Targeted release options](../manage/release-options-in-office-365.md) (article)\
-[Manage which Office features appear in What's New](../manage/show-hide-new-features.md) (article)\
 [Business subscriptions and billing documentation](../../commerce/index.yml) (link page)

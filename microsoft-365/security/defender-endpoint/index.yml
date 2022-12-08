@@ -7,10 +7,10 @@ metadata:
   title: Microsoft Defender for Endpoint documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about Microsoft Defender for Endpoint and maximize the built-in security capabilities to protect devices, detect malicious activity, and remediate threats# Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
-  ms.prod: m365-security
-  ms.technology: mde
+  ms.service: microsoft-365-security
+  ms.subservice: mde
   ms.topic: landing-page # Required
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
   ms.custom: intro-hub-or-landing
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
@@ -29,9 +29,9 @@ landingContent:
         links:
         - text: What is Microsoft Defender for Endpoint?
           url:  microsoft-defender-endpoint.md
-        - text: What is Defender for Endpoint Plan 1?
+        - text: What is Defender for Endpoint plan 1?
           url: defender-endpoint-plan-1.md
-        - text: Compare Defender for Endpoint Plan 1 to Plan 2
+        - text: Compare Defender for Endpoint plans
           url: defender-endpoint-plan-1-2.md
       - linkListType: whats-new
         links:
@@ -119,8 +119,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Threat & vulnerability management
-          url: next-gen-threat-and-vuln-mgt.md
+        - text: Microsoft Defender Vulnerability Management
+          url: ../defender-vulnerability-management/defender-vulnerability-management.md
         - text: Attack surface reduction
           url: overview-attack-surface-reduction.md
         - text: Next-generation protection

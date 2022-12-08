@@ -9,12 +9,14 @@ audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: null
-ms.collection: M365-security-compliance
+ms.collection: 
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 recommendations: false
-description: "learn about dlp policy conditions and exceptions"
+description: "Learn about dlp policy conditions and exceptions that identify sensitive items that the policy is applied to."
 ---
 
 # DLP policy conditions, exceptions, and actions
@@ -29,6 +31,8 @@ Most conditions and exceptions have one property that supports one or more value
 
 Actions typically require additional properties. For example, when the DLP policy rule redirects a message, you need to specify where the message is redirected to.
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Conditions and exceptions for DLP policies
 
@@ -61,7 +65,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 - **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Sender is|condition: *From* <br/><br/> exception: *ExceptIfFrom*|Addresses|Messages that are sent by the specified mailboxes, mail users, mail contacts, or Microsoft 365 groups in the organization.|
 |The sender is a member of |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|Addresses|Messages that are sent by a member of the specified distribution group, mail-enabled security group, or Microsoft 365 group.|
@@ -75,7 +79,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 ### Recipients
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Recipient is|condition: *SentTo* <br/><br/> exception: *ExceptIfSentTo*|Addresses|Messages where one of the recipients is the specified mailbox, mail user, or mail contact in the organization. The recipients can be in the **To**, **Cc**, or **Bcc** fields of the message.|
 |Recipient domain is|condition: *RecipientDomainIs* <br/><br/> exception: *ExceptIfRecipientDomainIs*|DomainName|Messages where the domain of the recipient's email address matches the specified value.|
@@ -87,17 +91,18 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 ### Message subject or body
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
-|Subject contains words or phrases|condition: *SubjectContainsWords* <br/><br/> exception: *ExceptIf SubjectContainsWords*|Words|Messages that have the specified words in the Subject field.|
-|Subject matches patterns|condition: *SubjectMatchesPatterns* <br/><br/> exception: *ExceptIf SubjectMatchesPatterns*|Patterns|Messages where the Subject field contain text patterns that match the specified regular expressions.|
-|Content contains|condition: *ContentContainsSensitiveInformation* <br/><br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages or documents that contain sensitive information as defined by data loss prevention (DLP) policies.|
-|Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/><br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|Patterns|Messages where the subject field or message body contains text patterns that match the specified regular expressions.|
-|Subject or Body contains words|condition: *SubjectOrBodyContainsWords* <br/><br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|Messages that have the specified words in the subject field or message body|
+|Subject contains words or phrases|condition: *SubjectContainsWords* <br/> exception: *ExceptIf SubjectContainsWords*|Words|Messages that have the specified words in the Subject field.|
+|Subject matches patterns|condition: *SubjectMatchesPatterns* <br/> exception: *ExceptIf SubjectMatchesPatterns*|Patterns|Messages where the Subject field contain text patterns that match the specified regular expressions.|
+|Content contains|condition: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages or documents that contain sensitive information as defined by Microsoft Purview Data Loss Prevention (DLP) policies.|
+|Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|Patterns|Messages where the subject field or message body contains text patterns that match the specified regular expressions.|
+|Subject or Body contains words|condition: *SubjectOrBodyContainsWords* <br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|Messages that have the specified words in the subject field or message body|
+|
 
 ### Attachments
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Attachment is password protected|condition: *DocumentIsPasswordProtected* <br/><br/> exception: *ExceptIfDocumentIsPasswordProtected*|none|Messages where an attachment is password protected (and therefore can't be scanned). Password detection only works for Office documents, .zip files, and .7z files.|
 |Attachment's file extension is|condition: *ContentExtensionMatchesWords* <br/><br/> exception: *ExceptIfContentExtensionMatchesWords*|Words|Messages where an attachment's file extension matches any of the specified words.|
@@ -105,21 +110,21 @@ To configure the sender address location at a DLP rule level, the parameter is *
 |Any email attachment's content didn't complete scanning|condition: *ProcessingLimitExceeded* <br/><br/> exception: *ExceptIfProcessingLimitExceeded*|n/a|Messages where the rules engine couldn't complete the scanning of the attachments. You can use this condition to create rules that work together to identify and process messages where the content couldn't be fully scanned.|
 |Document name contains words|condition: *DocumentNameMatchesWords* <br/><br/> exception: *ExceptIfDocumentNameMatchesWords*|Words|Messages where an attachment's file name matches any of the specified words.|
 |Document name matches patterns|condition: *DocumentNameMatchesPatterns* <br/><br/> exception: *ExceptIfDocumentNameMatchesPatterns*|Patterns|Messages where an attachment's file name contains text patterns that match the specified regular expressions.|
-|Document property is|condition: *ContentPropertyContainsWords* <br/><br/> exception: *ExceptIfContentPropertyContainsWords*|Words|Messages or documents where an attachment's file extension matches any of the specified words.|
+|Document property is|condition: *ContentPropertyContainsWords* <br/><br/> exception: *ExceptIfContentPropertyContainsWords*|Words|Messages with documents where an attachment's custom property matches the given value.|
 |Document size equals or is greater than|condition: *DocumentSizeOver* <br/><br/> exception: *ExceptIfDocumentSizeOver*|Size|Messages where any attachment is greater than or equal to the specified value.|
 |Any attachment's content includes any of these words|condition: *DocumentContainsWords* <br/><br/> exception: *ExceptIfDocumentContainsWords*|`Words`|Messages where an attachment contains the specified words.|
 |Any attachments content matches these text patterns|condition: *DocumentMatchesPatterns* <br/><br/> exception: *ExceptIfDocumentMatchesPatterns*|`Patterns`|Messages where an attachment contains text patterns that match the specified regular expressions.|
 
 ### Message Headers
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Header contains words or phrases|condition: *HeaderContainsWords* <br/><br/> exception: *ExceptIfHeaderContainsWords*|Hash Table|Messages that contain the specified header field, and the value of that header field contains the specified words.|
 |Header matches patterns|condition: *HeaderMatchesPatterns* <br/><br/> exception: *ExceptIfHeaderMatchesPatterns*|Hash Table|Messages that contain the specified header field, and the value of that header field contains the specified regular expressions.|
 
 ### Message properties
 
-|condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
+|condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |With importance|condition: *WithImportance* <br/><br/> exception: *ExceptIfWithImportance*|Importance|Messages that are marked with the specified importance level.|
 |Content character set contains words|condition: *ContentCharacterSetContainsWords* <br/><br/> *ExceptIfContentCharacterSetContainsWords*|CharacterSets|Messages that have any of the specified character set names.|
@@ -131,7 +136,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 This table describes the actions that are available in DLP.
 
-|action in DLP|action parameters in Microsoft 365 PowerShell|property type|description|
+|action in DLP|action parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
 |Set header|SetHeader|First property: *Header Name* <br/><br/> Second property: *Header Value*|The SetHeader parameter specifies an action for the DLP rule that adds or modifies a header field and value in the message header. This parameter uses the syntax "HeaderName:HeaderValue". You can specify multiple header name and value pairs separated by commas|
 |Remove header|RemoveHeader|First property: *MessageHeaderField*<br/><br/> Second property: *String*|The RemoveHeader parameter specifies an action for the DLP rule that removes a header field from the message header. This parameter uses the syntax "HeaderName" or "HeaderName:HeaderValue".You can specify multiple header names or header name and value pairs separated by commas|
@@ -142,7 +147,6 @@ This table describes the actions that are available in DLP.
 |Add the sender's manager as recipient|AddRecipients|First property: *AddedManagerAction*<br/><br/>Second property: *Field*|Adds the sender's manager to the message as the specified recipient type (To, Cc, Bcc), or redirects the message to the sender's manager without notifying the sender or the recipient. This action only works if the sender's Manager attribute is defined in Active Directory. This parameter uses the syntax: @{AddManagerAsRecipientType = "\<To \| Cc \| Bcc\>"}|
 Prepend subject|PrependSubject|String|Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.<br/><br/>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.|
 |Apply HTML disclaimer|ApplyHtmlDisclaimer|First property: *Text*<br/><br/>Second property: *Location*<br/><br/>Third property: *Fallback action*|Applies the specified HTML disclaimer to the required location of the message.<br/><br/>This parameter uses the syntax: @{ Text = " " ; Location = \<Append \| Prepend\>; FallbackAction = \<Wrap \| Ignore \| Reject\> }|
-|Remove Office 365 Message Encryption and rights protection|RemoveRMSTemplate|n/a|Removes Office 365 encryption applied on an email|
-|Deliver the message to the hosted quarantine |*Quarantine*|n/a| This action is currently in **public preview**. During this phase, emails quarantined by DLP policies will show policy type as ExchangeTransportRule.<br/><br/> Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
-
-<!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: <br/><br/>- **Replace** all matches in the subject with the replacement text <br/><br/>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. <br/><br/>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
+|Remove message encryption and rights protection|RemoveRMSTemplate|n/a|Removes message encryption applied on an email|
+|Deliver the message to the hosted quarantine |*Quarantine*|n/a| This action is currently in **public preview**. During this phase, emails quarantined by DLP policies will show policy type as ExchangeTransportRule.<br/><br/> Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-about).|
+|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: <br/><br/>- **Replace** all matches in the subject with the replacement text <br/><br/>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. <br/><br/>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|

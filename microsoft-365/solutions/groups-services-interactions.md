@@ -6,9 +6,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 
@@ -104,9 +105,9 @@ The experience of group creation restriction varies between apps and services:
 
 See the Groups in Microsoft 365 poster for information about different types of groups, how these are created and managed, and a few governance recommendations.
 
-[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)
+[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf)
 
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)
+[PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx)
 
 The following table provides an overview of Microsoft 365 Groups interactions with various services:
 
@@ -608,6 +609,8 @@ Yammer is an enterprise social platform designed to foster community engagement 
 Creating a community (formerly known as “group”) in Yammer creates a mailbox, but at present this is not used.
 
 A Microsoft 365 group that is associated with Yammer cannot be used with a team in Microsoft Teams.
+
+A Yammer group cannot be used with a PowerBI Pro Workspace.
 
 **Key features provided to Groups**
 

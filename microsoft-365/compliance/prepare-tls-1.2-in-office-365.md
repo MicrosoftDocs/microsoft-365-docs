@@ -11,11 +11,16 @@ ms.service: O365-seccomp
 ms.topic: article
 ms.author: shmehta
 ms.reviewer: krowley
+ms.collection: 
+- tier3
+- purview-compliance
 appliesto:
 - Office 365 Business
 ---
 
 # Preparing for TLS 1.2 in Office 365 and Office 365 GCC
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Summary
 
@@ -25,7 +30,7 @@ The [Microsoft TLS 1.0 implementation](https://support.microsoft.com/help/311733
 
 For information about how to remove TLS 1.0 and 1.1 dependencies, see the following white paper: [Solving the TLS 1.0 problem](https://www.microsoft.com/download/details.aspx?id=55266).
 
-After you upgrade to TLS 1.2, make sure that the cipher suites you're using are supported by Azure Front Door. Microsoft 365 and Azure Front Door have slight differences in cipher suite support. For details, see [What are the current cipher suites supported by Azure Front Door?](/azure/frontdoor/front-door-faq#what-are-the-current-cipher-suites-supported-by-azure-front-door-).
+After you upgrade to TLS 1.2, make sure that the cipher suites you're using are supported by Azure Front Door. Microsoft 365 and Azure Front Door have slight differences in cipher suite support. For details, see [What are the current cipher suites supported by Azure Front Door?](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites).
 
 ## More information
 
@@ -75,7 +80,7 @@ The following resources provide guidance to help make sure that your clients are
 - [New IIS functionality](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) makes it easier to find clients on [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) and [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) that connect to the service by using weak security protocols.
 - Get more information about how to [solve the TLS 1.0 problem](https://www.microsoft.com/download/details.aspx?id=55266).
 - For general information about our approach to security, go to the [Office 365 Trust Center](https://www.microsoft.com/trustcenter/cloudservices/office365).
-- To identify the TLS version that is used by SMTP clients, see [SMTP Auth clients insight and report in the Security & Compliance Center](../security/office-365-security/mfi-smtp-auth-clients-report.md).
+- To identify the TLS version that is used by SMTP clients, see [SMTP Auth clients report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-smtp-auth-clients-report).
 - [Preparing for TLS 1.0/1.1 Deprecation - Office 365 Skype for Business](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Preparing-for-TLS-1-0-1-1-Deprecation-O365-Skype-for-Business/ba-p/222247)
 - [Exchange Server TLS guidance, part 1: Getting Ready for TLS 1.2](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)
 - [Exchange Server TLS guidance Part 2: Enabling TLS 1.2 and Identifying Clients Not Using It](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761)

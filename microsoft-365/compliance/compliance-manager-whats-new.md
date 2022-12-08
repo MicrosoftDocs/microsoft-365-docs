@@ -1,5 +1,5 @@
 ---
-title: "What's new in Microsoft Compliance Manager"
+title: "What's new in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -10,18 +10,58 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
 description: "Find out what’s new in Compliance Manger and what’s to come. Read about updated assessments, new assessment templates, new actions, and more."
 ---
 
-# What's new in Microsoft Compliance Manager
+# What's new in Microsoft Purview Compliance Manager
 
 **In this article:** Learn about recent updates in Compliance Manager.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+## December 2022
+
+Assessment templates that belong to the same regulation family now count as one template. This change means that when you purchase a premium template license for a regulation, the license will apply for all levels and versions of that regulation. Review the [list of templates](compliance-manager-templates-list.md) and a summary of [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
+
+## November 2022
+
+Compliance Manager now allows you to assign user roles that are specific to individual assessments. This feature allows you to provide assessors with scoped access to Compliance Manager. Learn more about [granting user access to individual assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).
+
+## August 2022
+
+Compliance Manager has published the following new assessment template:
+
+- Australian Information Security Registered Assessor Program (IRAP) with ISM Version 3.5 - Official
+
+View our [full list of assessment templates](compliance-manager-templates-list.md).
+
+## July 2022
+
+Compliance Manager has published the following new assessment template:
+
+- Hong Kong - Code of Banking Practice and Payment Card
+
+View our [full list of assessment templates](compliance-manager-templates-list.md).
+
+
+## May 2022
+
+Compliance Manager has published the following new assessment templates:
+
+Europe, Middle East, and Africa (EMEA)
+- Qatar National Information Assurance (NIA)
+- UAE Data Privacy Law
+
+US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers should see these templates available in the next few weeks.
+
+View our [full list of assessment templates](compliance-manager-templates-list.md).
 
 ## March 2022
 
@@ -45,7 +85,7 @@ View our [full list of assessment templates](compliance-manager-templates-list.m
 
 ### Continuous compliance assessment of improvement actions
 
-We're adding automated testing and evidence generation for over 35 improvement actions in Compliance Manager that were not previously covered by Secure Score. With continuous compliance assessment, you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. Continuous compliance assessment also gives users visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is. Learn more about [automated testing settings](compliance-manager-setup.md#set-up-automated-testing).
+We're adding automated testing and evidence generation for over 35 improvement actions in Compliance Manager that weren't previously covered by Secure Score. With continuous compliance assessment, you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. Continuous compliance assessment also gives users visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is. Learn more about [automated testing settings](compliance-manager-setup.md#testing-source-for-automated-testing).
 
 ## February 2022
 

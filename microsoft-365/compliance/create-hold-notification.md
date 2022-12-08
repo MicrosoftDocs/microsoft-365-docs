@@ -1,32 +1,35 @@
 ---
 title: "Create a legal hold notice"
+description: Use the Communications tool in an eDiscovery (Premium) case to send, collect, and track legal hold notifications.
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-
-description: Use the Communications tool in an Advanced eDiscovery case to send, collect, and track legal hold notifications.
 ms.custom: seo-marvel-mar2020
 ---
 
 # Create a legal hold notice
 
-Using Advanced eDiscovery custodian communications, organizations can manage their workflow around communicating with custodians. Through the Communications tool, legal teams can systematically send, collect, and track legal hold notifications. The flexible creation process also allows teams to customize the hold notification workflow and the content in the notices sent to custodians.
+Using eDiscovery (Premium) custodian communications, organizations can manage their workflow around communicating with custodians. Through the Communications tool, legal teams can systematically send, collect, and track legal hold notifications. The flexible creation process also allows teams to customize the hold notification workflow and the content in the notices sent to custodians.
 
 ![Communications Page.](../media/CommunicationPage.PNG)
 
 The article outlines the steps in the hold notification workflow.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step 1: Specify communication details
 
@@ -34,7 +37,7 @@ The first step is to specify the appropriate details for legal hold notices or o
 
 ![Name Communication page.](../media/NameCommunication.PNG)
 
-1. In the Microsoft 365 compliance center, go to **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the Microsoft Purview compliance portal, go to **eDiscovery > Advanced** to display the list of cases in your organization.
 
 2. Select a case, click the **Communications** tab, and then click **New communication**.
 
@@ -42,9 +45,9 @@ The first step is to specify the appropriate details for legal hold notices or o
 
     - **Name**: This is the name for the communication.
 
-    - **Issuing officer**: The drop-down list displays users in your organization who can be selected as the issuing officer for the communication. Each communication sent to custodians will be sent on behalf of the selected issuing officer. The list of users in the drop-down consists of the members of the case and the organization-wide issuing officers. These issuing officers are added by an eDiscovery Administrator, and are available in all Advanced eDiscovery cases in your organization. For more information, see [Manage issuing officers](advanced-ediscovery-issuing-officers.md).
+    - **Issuing officer**: The drop-down list displays users in your organization who can be selected as the issuing officer for the communication. Each communication sent to custodians will be sent on behalf of the selected issuing officer. The list of users in the drop-down consists of the members of the case and the organization-wide issuing officers. These issuing officers are added by an eDiscovery Administrator, and are available in all eDiscovery (Premium) cases in your organization. For more information, see [Manage issuing officers](advanced-ediscovery-issuing-officers.md).
 
-    - **Select communication template**: The drop-down list displays the templates from the Communications library on the Advanced eDiscovery settings page. If you select a template, it will be displayed on the **Define portal content** as a starting point for the text of the notification that you're creating. If you don't select a template, then you'll have to create the notice yourself from scratch. For more information about communication templates, see [Manage custodian communications templates](advanced-ediscovery-communications-library.md).
+    - **Select communication template**: The drop-down list displays the templates from the Communications library on the eDiscovery (Premium) settings page. If you select a template, it will be displayed on the **Define portal content** as a starting point for the text of the notification that you're creating. If you don't select a template, then you'll have to create the notice yourself from scratch. For more information about communication templates, see [Manage custodian communications templates](advanced-ediscovery-communications-library.md).
 
 4. Click **Next**.
 

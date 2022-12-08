@@ -1,27 +1,31 @@
 ---
-title: "Manage custodians in an Advanced eDiscovery case"
+title: "Manage custodians in an eDiscovery (Premium) case"
+description: Learn how to view details, edit, and bulk edit the list of custodians in an eDiscovery (Premium) case.
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn how to view details, edit, and bulk edit the list of custodians in an Advanced eDiscovery case.
 ms.custom: seo-marvel-apr2020
 ---
-# Manage custodians in an Advanced eDiscovery case
 
-The **Custodians** page on the **Data sources** tab in an Advanced eDiscovery case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
+# Manage custodians in an eDiscovery (Premium) case
+
+The **Custodians** page on the **Data sources** tab in an Microsoft Purview eDiscovery (Premium) case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in eDiscovery (Premium).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## View custodian details
 
@@ -63,7 +67,7 @@ As your case progresses, you may discover that there may be additional data sour
 
 To update the data sources that are associated with a custodian:
 
-1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
+1. Go to  **eDiscovery > eDiscovery (Premium)** and open the case.
   
 2. Click the **Data Sources** tab.
   
@@ -98,13 +102,13 @@ To update the data sources that are associated with a custodian:
 
 ## Reindex custodian data
 
-In most eDiscovery workflows for legal investigations, a subset of a custodian's data is searched after the custodian is added to a legal case. Because of very large file sizes or possible data corruption, some items in the data sources associated with a custodian may be partially indexed. Using the [advanced indexing](indexing-custodian-data.md) capability in the Advanced eDiscovery, most partially indexed items can be automatically remediated by reindexing these items on demand.
+In most eDiscovery workflows for legal investigations, a subset of a custodian's data is searched after the custodian is added to a legal case. Because of very large file sizes or possible data corruption, some items in the data sources associated with a custodian may be partially indexed. Using the [advanced indexing](indexing-custodian-data.md) capability in the eDiscovery (Premium), most partially indexed items can be automatically remediated by reindexing these items on demand.
 
 When a custodian is added to a case, the data located in the data sources associated with the custodian is automatically reindexed (by the advanced indexing process). This means you can leave the data in-place instead of having to download and remediate it and then search it offline). However, during the lifecycle of a legal case new data sources might be associated with a custodian. In this case, you can reindex the custodian's data by rerunning the advanced indexing process to remediate any partially indexed items and update the index for the custodian's data.
 
 To trigger the reindexing process to address partially indexed items:
 
-1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
+1. Go to  **eDiscovery > eDiscovery (Premium)** and open the case.
 
 2. Click the **Sources** tab.
 
@@ -130,7 +134,7 @@ If you release a custodian after a hold notice was published, a release notice w
 
 To release a custodian:
 
-1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
+1. Go to  **eDiscovery > eDiscovery (Premium)** and open the case.
 
 2. Click the **Sources** tab.
 
@@ -138,7 +142,7 @@ To release a custodian:
 
 4. On the flyout page, click **Release custodian**.
 
-   A warning page is displayed explaining that if a hold is placed on a data source associated with the custodian, the hold will be removed, and that any other hold associated with a different Advanced eDiscovery case will still apply. That includes other types of preservation and retention features (such as a Microsoft 365 retention policy).
+   A warning page is displayed explaining that if a hold is placed on a data source associated with the custodian, the hold will be removed, and that any other hold associated with a different eDiscovery (Premium) case will still apply. That includes other types of preservation and retention features (such as a Microsoft 365 retention policy).
 
 5. Click **Yes** to confirm that you want to release the custodian. 
 

@@ -2,11 +2,11 @@
 title: "Office 365 performance tuning using baselines and performance history"
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: scotv
 ms.date: 07/08/2021
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -19,6 +19,7 @@ search.appverid:
 - BCS160
 ms.assetid: 1492cb94-bd62-43e6-b8d0-2a61ed88ebae
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Ent_O365
 - SPO_Content

@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date: 
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -22,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 
 > [!IMPORTANT]
 > Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns. Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Sensitive Information Type regular expression validators
 

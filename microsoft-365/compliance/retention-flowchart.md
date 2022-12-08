@@ -1,5 +1,5 @@
 ---
-title: "Flowchart to determine when an item will be retained or permanently deleted"
+title: "Flowchart to determine when an item is retained or deleted"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -11,12 +11,13 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid: 
 - MOE150
 - MET150
-description: "Use a flowchart to determine the outcome when an item has multiple retention policies or a retention label and retention policies"
+description: "Use a flowchart to determine the outcome when an item in Microsoft 365 has multiple retention policies or a retention label and retention policies"
 ---
 
 # Flowchart to determine when an item will be retained or permanently deleted

@@ -7,9 +7,11 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
@@ -169,7 +171,7 @@ To learn more about configuring a hybrid deployment with Office 365 tenants host
 |Calendar sharing|Exchange 2013 SP1 and greater supports manually configuring Internet calendar sharing with other on-premises Exchange or Exchange Online organizations. For more details about configuring this feature manually, see [Enable Internet Calendar Publishing](/exchange/enable-internet-calendar-publishing-exchange-2013-help).|
 Sharing Exchange contact data on Apple mobile devices to the Apple iCloud.|This setting/feature is enabled by default. Administrators should turn this feature off to help prevent users from sharing Exchange data outside of your organization.|
 |Exchange Hosted Email Encryption|Not available.|
-|Office 365 Message Encryption|Coming soon.|
+|Microsoft Purview Message Encryption|Coming soon.|
 
 ## Office
 

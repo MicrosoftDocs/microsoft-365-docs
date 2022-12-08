@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -40,6 +41,8 @@ Sensitivity labels appear as an option in the **Content contains** list.
 > **Sensitivity Labels** as a condition will not be available if you have selected **Teams chat and channel messages** as a location to apply the DLP policy.
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Supported items, scenarios, and policy tips
 
 You can use sensitivity labels as conditions on these items and in these scenarios.
@@ -57,7 +60,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 |Windows 10 devices     |items         |yes         |yes         |
 |MCAS (preview) |items         |yes         |yes         |
 
-\* DLP detection of sensitivity labeled email attachments are supported for Office file types only.
+\* DLP detection of sensitivity labeled email attachments is supported for Open XML-based Office file types only.
 
 \** Attachments sent in Teams over 1:1 chat or channels are automatically uploaded to OneDrive for Business and SharePoint. So if SharePoint Online or OneDrive for Business are included as locations in your DLP policy, then labeled attachments sent in Teams will be automatically included in the scope of this condition. Teams as a location does not need to be selected in the DLP policy.
 
@@ -70,7 +73,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 
 - Using sensitivity labels as a condition is supported across all workloads as indicated in the support matrix above.
 
-- DLP policy tips will continue to be shown across workloads (except Outlook Win32) for DLP policies that contain sensitivity label as a condition.
+- DLP policy tips will continue to be shown across workloads (except Outlook for Windows) for DLP policies that contain sensitivity label as a condition.
 
 - Sensitivity labels will also appear as a part of the incident report email if a DLP policy with sensitivity label as a condition is matched.
 
@@ -83,7 +86,7 @@ You can use sensitivity labels as conditions on these items and in these scenari
 |Workload  |Policy tips supported/not supported  |
 |---------|---------|
 |OWA |    supported     |
-|Outlook Win 32    |  not supported       |
+|Outlook for Windows   |  not supported       |
 |SharePoint   |   supported      |
 |OneDrive for Business    |    supported     |
 |endpoint devices   |  not supported       |

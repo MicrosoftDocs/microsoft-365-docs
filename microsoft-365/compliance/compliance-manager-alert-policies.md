@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager alerts and alert policies"
+title: "Microsoft Purview Compliance Manager alerts and alert policies"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -10,27 +10,29 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to create alerts for activities in Microsoft Compliance Manager that can impact your compliance score."
+description: "Learn how to create alerts for activities in Microsoft Purview Compliance Manager that can impact your compliance score."
 ---
 
-# Microsoft Compliance Manager alerts and alert policies
+# Microsoft Purview Compliance Manager alerts and alert policies
 
 **In this article:** Learn how to **set alerts** for certain activities in Compliance Manager, how to manage alerts, and how to **create alert policies** for defining alert conditions.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview
-Compliance Manger can alert you to changes as soon as they happen so that you can stay on track with your compliance goals. For example, you can set up alerts to inform you when an improvement action's score value has increased or decreased due to a configuration change in your tenant, or when an improvement action has been assigned to a user to perform implementation or testing work. View the [types of events](#create-an-alert-policy) for which you can create alerts.
+Compliance Manager can alert you to changes as soon as they happen so that you can stay on track with your compliance goals. For example, you can set up alerts to inform you when an improvement action's score value has increased or decreased due to a configuration change in your tenant, or when an improvement action has been assigned to a user to perform implementation or testing work. View the [types of events](#create-an-alert-policy) for which you can create alerts.
 
 To create alerts, you first set up an alert policy to outline the conditions that trigger an alert and the frequency of notifications. When we detect a match to your policy conditions, you'll receive an email notification with details so you can determine whether to investigate or take further action.
 
-
-All alerts are listed on the **Alerts** tab in Compliance Manger, and all alert policies are listed on the **Alert Policies tab**.
+All alerts are listed on the **Alerts** tab in Compliance Manager, and all alert policies are listed on the **Alert Policies tab**.  All organizations have a [default score change policy](#default-score-change-policy) already set up for them.
 
 ## Understanding the Alerts and Alert policies pages
 
@@ -39,9 +41,9 @@ All alerts are listed on the **Alerts** tab in Compliance Manger, and all alert 
 
 ### Alert policies page
 
-Select the **Alert policies** tab in Compliance Manger to view and manage your alert policies. The **Alert policies** page contains a table listing all the policies created by your organization. From this page, you can create new policies, edit existing policies, and change activation status, and delete policies.
+Select the **Alert policies** tab in Compliance Manager to view and manage your alert policies. The **Alert policies** page contains a table listing all the policies created by your organization. From this page, you can create new policies, edit existing policies, change activation status, and delete policies.
 
-In the **Status column**, **Active** means the policy is in effect and triggering alerts when conditions are met. **Inactive** means the policy exists but is't generating alerts. The policies table also shows you the severity of the policy and the date the policy was last modified.
+In the **Status column**, **Active** means the policy is in effect and triggering alerts when conditions are met. **Inactive** means the policy exists but isn't generating alerts. The policies table also shows you the severity of the policy and the date the policy was last modified.
 
 To view an individual policy's details, select its row in the table. A flyout pane will appear that shows all details. Select the **Action** button at the bottom of the pane and select from options to edit the policy, view its alerts, or delete it. The commands to add, edit, delete, activate, and disable are also available near the top of the table, above the filters.
 
@@ -61,19 +63,19 @@ To start working with alerts, see [Viewing and managing alerts](#viewing-and-man
 
 The table below outlines which users can create and edit alerts and alert policies based on their role type. In addition to holding a Compliance Manager role, users also need an Azure AD role as follows:
 
-- The **Security reader** role in Azure AD for viewing alerts and alert policies
-- The **Security administrator** role in Azure AD for creating or updating alert policies
+- To view alerts and alert policies: the **Security reader** role in Azure AD
+- To create or update alert policies: the **Compliance administrator**, **Compliance data administrator**, **Security administrator**, or **Security operator** role in Azure AD
  
-Learn more about [Azure roles in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-microsoft-365-compliance-center).
+Learn more about [Azure roles in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
 
 | Role | Can create and edit policies | Can edit alerts | 
 | :------------- | :-------------: | :------------: |
 | **Compliance Manager Administration**| Yes  | Yes | 
 | **Compliance Manager Assessor**| Yes | Yes | 
-| **Compliance Manager Contribution**| Yes | Yes | 
-| **Global Administrator**| No | No  | 
+| **Compliance Manager Contributor**| Yes | Yes | 
 | **Compliance Manager Reader**| No | No | 
+| **Global administrator**| Yes | Yes | 
 
 Learn how to [set user permissions and assign roles for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
@@ -88,6 +90,28 @@ You can create policies to alert you when certain changes or events related to i
 - **Implementation status change**: a user has changed an improvement action's implementation status.
 - **Test status change**: a user has changed the testing status of an improvement action.
 - **Evidence change**: a user has uploaded or deleted an evidence document in the **Documents** tab of the improvement action.
+
+#### Default score change policy
+
+Compliance Manager sets up a default alert policy to monitor for score changes in improvement actions. The default policy will generate an alert when an improvement action's score changes. Most settings for the default policy can't be edited, but you can add additional recipients for notifications.
+
+Here are the settings for the default policy:
+
+- All matches that are detected within a span of 60 minutes will be grouped into one single alert to reduce excessive notifications. For example, if five improvement actions experience a score change within one hour, one alert will be generated.
+
+- The severity level for these alerts is **medium**.
+
+- The Global Admin for your organization is the default recipient of alert notifications.
+
+- You can add more alert recipients by following these steps:
+    - On the **Alert policies** page, find the **Compliance Manager default alert policy**.
+    - Check the box to thee left of its name and select the **Edit** button near the top, above the filters.
+    - Select the **Next** button until you come to the **Alert recipients** page.
+    - Select **+Select recipients** and check the boxes next to each user name on the flyout pane whom you want to receive the email notification. When done, select **Add recipient**, then select **Next**.
+    - On the **Review and finish** page, select **Update** to save your changes.
+
+- The default policy can't be deleted, but you can disable it by [following the steps outlined below](#activate-or-inactivate-a-policy).
+
 
 ### Policy creation steps
 
@@ -168,7 +192,7 @@ You can filter your view of alerts by selecting the **Filter** command above the
 - Detection date
 - Policy name
 
-After making your selections, select **Apply**. The flyout pane will close and your updated **Alerts** page shows your filtered view,. Your filters are displayed at the top of the table, though not all filter columns may show in the table.
+After making your selections, select **Apply**. The flyout pane will close and your updated **Alerts** page shows your filtered view. Your filters are displayed at the top of the table, though not all filter columns may show in the table.
 
 ### View alert details
 

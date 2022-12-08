@@ -1,6 +1,7 @@
 ---
-title: "Learn about information barriers in Microsoft 365"
-description: "Use information barriers to ensure communication compliance using Microsoft Teams within your organization."
+title: "Learn about information barriers"
+description: "Learn about information barriers in Microsoft Purview. Information barriers can help to avoid conflicts of interest and safeguard internal information between users and organizational areas."
+keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,47 +10,40 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- highpri 
+- tier2
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ---
 
-# Learn about information barriers in Microsoft 365
+# Learn about information barriers
 
-Microsoft cloud services include powerful communication and collaboration capabilities. But suppose that you want to restrict communication and collaboration between two groups to avoid a conflict of interest from occurring in your organization. Or, perhaps you want to restrict communication and collaboration between certain people inside your organization in order to safeguard internal information. Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communication and collaboration  among specific groups of users when necessary? With information barriers, you can!
+Microsoft Purview Information Barriers (IB) is a compliance solution that allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint, and OneDrive. Often used in highly regulated industries, IB can help to avoid conflicts of interest and safeguard internal information between users and organizational areas.
 
-Microsoft Teams, SharePoint Online, and OneDrive for Business support information barriers. Assuming your [subscription](#required-licenses-and-permissions) includes information barriers, a compliance administrator, or information barriers administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams. Information barrier policies can be used for situations like these:
+When IB policies are in place, users who shouldn't communicate or share files with other specific users won't be able to find, select, chat, or call those users. IB policies automatically put checks in place to detect and prevent unauthorized communication and collaboration among defined groups and users. IB policies are independent from [compliance boundaries](/microsoft-365/compliance/set-up-compliance-boundaries) for eDiscovery investigations that control user content locations that eDiscovery managers can search.
 
-- User in the day trader group should not communicate or share files with the marketing team
-- Finance personnel working on confidential company information should not communicate or share files with certain groups within their organization
-- An internal team with trade secret material should not call or chat online with people in certain groups within their organization
+IB policies can allow or prevent communication and collaboration between groups and users for the following example scenarios:
+
+- Users in the *Day Trader* group shouldn't communicate or share files with the *Marketing Team*
+- Finance personnel working on confidential company information shouldn't communicate or share files with certain groups within their organization
+- An internal team with trade secret material shouldn't call or chat online with people in certain groups within their organization
 - A research team should only call or chat online with a product development team
-- A site for day trader group should not be shared or accessed by anyone outside the day trader group
+- A SharePoint site for *Day Trader* group shouldn't be shared or accessed by anyone outside of the *Day Trader* group
 
 > [!IMPORTANT]
-> Information barriers ***only supports*** two way restrictions. One way restrictions, such as marketing can communicate and collaborate with day traders, but day traders cannot communicate and collaborate with marketing ***is not supported***.
+> Information barriers **only supports** two-way communication and collaboration restrictions. For example, a scenario where Marketing can communicate and collaborate with Day Traders, but Day Traders cannot communicate and collaborate with Marketing **isn't supported**.
 
-For all of these example scenarios (and more), information barrier policies can be defined to prevent or allow communications and collaboration in Microsoft Teams, SharePoint Online and OneDrive. Such policies can prevent people from calling or chatting with those they shouldn't, or enable people to communicate only with specific groups in Microsoft Teams. With information barrier policies in effect, whenever users who are covered by those policies attempt to communicate and collaborate with others in Microsoft Teams, SharePoint Online or OneDrive checks are done to prevent (or allow) communication and collaboration (as defined by information barrier policies).
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-To learn more about the user experience with information barriers, see:
+## Information barriers and Microsoft Teams
 
-- [Information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
-- [Information barriers in SharePoint Online](/sharepoint/information-barriers)
-- [Information barriers in OneDrive](/onedrive/information-barriers)
-
-> [!IMPORTANT]
-> Currently, information barriers do not apply to email communications. In addition, information barriers are independent from [compliance boundaries](set-up-compliance-boundaries.md).<p> Before you define and apply information barrier policies, make sure your organization does not have [Exchange address book policies](/exchange/address-books/address-book-policies/address-book-policies) in effect. (Information barriers are based on address book policies.)
-
-## What happens with information barriers
-
-When information barrier policies are in place, people who should not communicate or share files with other specific users won't be able to find, select, chat, or call those users. With information barriers, checks are in place to prevent unauthorized communication and collaboration.
-
-Information barriers applies to Microsoft Teams (chats and channels), SharePoint Online and OneDrive. 
-In Microsoft Teams, information barrier policies determine and prevent the following kinds of unauthorized communications:
+In Microsoft Teams, IB policies determine and prevent the following kinds of unauthorized communication and collaboration:
 
 - Searching for a user
 - Adding a member to a team
@@ -59,49 +53,33 @@ In Microsoft Teams, information barrier policies determine and prevent the follo
 - Sharing a screen
 - Placing a call
 - Sharing a file with another user
-- Access to file through sharing link
+- Access to a file through sharing a link
 
-If the people involved are included in an information barrier policy to prevent the activity, they will not be able to proceed. In addition, potentially, everyone included in an information barrier policy can be blocked from communicating with others in Microsoft Teams. When people affected by information barrier policies are part of the same team or group chat, they might be removed from those chat sessions and further communication with the group might not be allowed.
+If the users conducting these activities in Microsoft Teams are included in an IB policy to prevent the activity, they won't be able to proceed. In addition, everyone included in an IB policy can be potentially blocked from communicating with other users in Microsoft Teams. When people affected by IB policies are part of the same team or group chat, they may be removed from those chat sessions and further communication with the group may not be allowed.
 
-To learn more about the user experience with information barriers, see [information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams).
+For more information, see [information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams).
 
-In SharePoint Online and OneDrive, information barrier policies determine and prevent the following kinds of unauthorized collaborations:
+## Information barriers and SharePoint and OneDrive
+
+In SharePoint and OneDrive, IB policies detect and prevent the following kinds of unauthorized collaboration:
 
 - Adding a member to a site
 - Accessing site or content by a user
 - Sharing site or content with another user
 - Searching a site
 
-To learn more about the user experience with information barriers, see [information barriers in SharePoint Online](/sharepoint/information-barriers)
+For more information, see [Information barriers in SharePoint](/sharepoint/information-barriers) and [Information barriers in OneDrive](/onedrive/information-barriers).
 
-## Required licenses and permissions
+## Information barriers and Exchange Online
 
-Before you get started with insider risk management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use information barriers, your organization must have one of the following subscriptions or add-ons:
+IB policies aren't available to restrict communication and collaboration between groups and users in email messages. IB policies are based on [Exchange Online Address Book Policies (ABPs)](/exchange/address-books/address-book-policies/address-book-policies). ABPs allow organizations to virtually assign users into specific groups in order to provide customized views of the organization's global address book (GAL). When IB policies are created, ABPs for the policies are automatically created. As IB policies are added in your organization, the structure and behavior of your GAL will change to comply with IB policies.
 
-- Microsoft 365 E5/A5 subscription (paid or trial version)
-- Office 365 E5/A5/A3/A1 subscription (paid or trial version)
-- Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
-- Microsoft 365 E3/A3/A1 subscription + the Microsoft 365 E5/A5 Compliance add-on
-- Microsoft 365 E3/A3/A1 subscription + the Microsoft 365 E5/A5 Insider Risk Management add-on
+Before you define and apply IB policies, you must remove all existing Exchange address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Once IB policies are enabled and if you have hierarchical address book enabled, all users not included in an IB segment will see the [hierarchical address book](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
 
-For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Only Exchange Online deployments are currently supported for IB policies. If your organization needs to define and control email communications, consider using [Exchange mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
-To [define or edit information barrier policies](information-barriers-policies.md), you must be assigned one of the following roles:
+## Ready to get started?
 
-- Microsoft 365 global administrator
-- Office 365 global administrator
-- Compliance administrator
-- IB Compliance Management
-
-(To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).)
-
-You must be familiar with PowerShell cmdlets in order to define, validate, or edit information barrier policies. Although we provide several examples of PowerShell cmdlets in the [how-to article](information-barriers-policies.md), you'll need to know other details, such as parameters, for your organization.
-
-## Next steps
-
-- [Learn more about information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
-- [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
-- [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
-- [See the attributes that can be used for information barrier policies](information-barriers-attributes.md)
-- [Define policies for information barriers](information-barriers-policies.md)
-- [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md)
+- [Get started with information barriers](information-barriers-policies.md)
+- [Manage IB policies](information-barriers-edit-segments-policies.md)
+- [See the attributes that can be used for IB policies](information-barriers-attributes.md)

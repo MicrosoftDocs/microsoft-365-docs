@@ -1,5 +1,5 @@
 ---
-title: "Extend assessment templates in Microsoft Compliance Manager"
+title: "Extend assessment templates in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -11,20 +11,23 @@ ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how to extend assessment templates in Microsoft Compliance Manager to add and modify controls."
+description: "Understand how to extend assessment templates in Microsoft Purview Compliance Manager to add and modify controls."
 ---
 
-# Extend assessment templates in Microsoft Compliance Manager
+# Extend assessment templates in Microsoft Purview Compliance Manager
 
 Compliance Manager offers the option to add your own controls and improvement actions to an existing template. This process is called extending a template.
 
 To extend a template, you will use special instructions for modifying template data, depending on whether you’re extending Microsoft assessment templates or universal assessment templates.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Extend Microsoft assessment templates
 

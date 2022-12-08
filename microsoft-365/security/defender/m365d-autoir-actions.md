@@ -3,7 +3,8 @@ title: View and manage actions in the Action center
 description: Use the Action center to view and manage remediation actions
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,23 +13,20 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: how-to
 ms.custom: 
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.technology: m365d
 ---
 
 # View and manage actions in the Action center
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - Microsoft 365 Defender
@@ -42,13 +40,18 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 > [!NOTE]
 > You must have [appropriate permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions. For more information, see the [prerequisites](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
+To navigate to the Action center, take one of the following steps:
+
+- Go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); or
+- In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the Automated investigation & response card, select **Approve in Action Center**.
+
 ## Review pending actions in the Action center
 
 It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
-2. In the navigation pane, choose **Action center**. 
+2. In the navigation pane, choose **Action center**.
 
 3. In the Action center, on the **Pending** tab, select an item in the list. Its flyout pane opens. Here's an example.
 
@@ -58,7 +61,10 @@ It's important to approve (or reject) pending actions as soon as possible so tha
    - Select **Open investigation page** to view more details about the investigation.
    - Select **Approve** to initiate a pending action.
    - Select **Reject** to prevent a pending action from being taken.
-   - Select **Go hunt** to go into [Advanced hunting](advanced-hunting-overview.md). 
+   - Select **Go hunt** to go into [Advanced hunting](advanced-hunting-overview.md).
+
+> [!TIP]
+> You now have more options to review and approve/reject a remediation action. In addition to using the Action center, you can also approve or reject a remediation action while reviewing an incident. For more information, see [Approve or reject remediation actions](./investigate-incidents.md#approve-or-reject-remediation-actions).
 
 ## Undo completed actions
 

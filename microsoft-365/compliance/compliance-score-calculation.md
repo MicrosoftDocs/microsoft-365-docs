@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how Microsoft Compliance Manager calculates a personalized score based on actions taken to address risks and improve your compliance posture."
+description: "Understand how Microsoft Purview Compliance Manager calculates a personalized score based on actions taken to address risks and improve your compliance posture."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -22,21 +22,19 @@ ms.custom: seo-marvel-apr2020
 **In this article:** Learn how Compliance Manager calculates a compliance score for your organization. This article explains how to **interpret your score**, what the **Data Protection Baseline assessment** includes, **continuous monitoring**, and **how different types of actions are managed and scored**.
 
 > [!IMPORTANT]
-> Recommendations from Compliance Manager should not be interpreted as a guarantee of compliance. It is up to you to evaluate and validate the effectiveness of customer controls per your regulatory environment. These services are subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910). See also [Microsoft 365 licensing guidance for security and compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Recommendations from Compliance Manager should not be interpreted as a guarantee of compliance. It is up to you to evaluate and validate the effectiveness of customer controls per your regulatory environment. These services are subject to the terms and conditions in the [Product Terms](https://go.microsoft.com/fwlink/?linkid=2108910). See also [Microsoft 365 licensing guidance for security and compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How to read your compliance score
 
 The Compliance Manager dashboard displays your overall compliance score. This score measures your progress in completing recommended improvement actions within controls. Your score can help you understand your current compliance posture. It can also help you prioritize actions based on their potential to reduce risk.
 
-A score value is assigned at three levels:
+A score value is assigned at these levels:
 
-1. **Improvement action score**: each action has a different impact on your score depending on the potential risk involved
+1. **Improvement action**: Each action has a different impact on your score depending on the potential risk involved. See [Action types and points](#action-types-and-points) below for details.
 
-2. **Control score**: this score is the sum of points earned by completing improvement actions within the control. This sum is applied in its entirety to your overall compliance score when the control meets both of the following conditions:
-    - **Implementation Status** equals **Implemented** or **Alternative Implementation**, and
-    - **Test Result** equals **Passed**.
-
-3. **Assessment score**: this score is the sum of your control scores. It is calculated using action scores. Each Microsoft action and each improvement action managed by your organization is counted once, regardless of how often it is referenced in a control.
+2. **Assessment**: This score is calculated using improvement action scores. Each Microsoft action and each improvement action managed by your organization is counted once, regardless of how often it's referenced in a control.
 
 The overall compliance score is calculated using action scores, where each Microsoft action is counted once, each technical action you manage is counted once, and each non-technical action you manage is counted once per group. This logic is designed to provide the most accurate accounting of how actions are implemented and tested in your organization. You may notice that this can cause your overall compliance score to differ from the average of your assessment scores. Read more below about [how actions are scored](#action-types-and-points).
 
@@ -50,7 +48,7 @@ Because every organization has specific needs, Compliance Manager relies on you 
 
 ## How Compliance Manager continuously assesses controls
 
-Compliance Manager automatically identifies settings in your Microsoft 365 environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager detects signals from other compliance solutions you may have deployed, including information governance, information protection, communication compliance, and insider risk management, and also leverages Microsoft Secure Score monitoring of complementary improvement actions.
+Compliance Manager automatically identifies settings in your Microsoft 365 environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager detects signals from other compliance solutions you may have deployed, including data lifecycle management, information protection, communication compliance, and insider risk management, and also leverages Microsoft Secure Score monitoring of complementary improvement actions.
 
 Your action status is updated on your dashboard within 24 hours of a change being made. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
 
@@ -62,8 +60,8 @@ Learn more about [Secure Score and how it works](../security/defender/microsoft-
 
 Compliance Manager tracks two types of actions:
 
-1. **Your improvement actions**: actions that your organization manages.
-2. **Microsoft actions**: actions that Microsoft manages.
+1. **Your improvement actions**: Managed by your organization
+2. **Microsoft actions**: Managed by Microsoft
 
 Both types of actions have points that count toward your overall score when completed.
 

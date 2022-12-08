@@ -2,7 +2,7 @@
 title: Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
 description: Troubleshoot issues that might arise during the onboarding of devices using Security Management for Microsoft Defender for Endpoint.
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: troubleshooting
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
@@ -45,7 +48,7 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
 
 - Computers can authenticate with the domain controller
 - Computers have access to the following Microsoft resources from inside your organization's network:
-  - https://enterpriseregistration.windows.net
+  - /windows/iot/iot-enterprise/commercialization/licensing
   - https://login.microsoftonline.com
   - https://device.login.microsoftonline.com
 - Azure AD connect is configured to sync the computer objects. By default, computer OUs are in Azure AD connect sync scope. If the computer objects belong to specific organizational units (OUs), configure the OUs to sync in Azure AD Connect. To learn more about how to sync computer objects by using Azure AD Connect, see [Organizational unit–based filtering](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
@@ -70,16 +73,17 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
 
 Through the Microsoft Defender for Endpoint portal, security administrators can now troubleshoot Security Management for Microsoft Defender for Endpoint onboarding.
 
-In **Endpoints** \> **Device inventory**, the **Managed By** column has been added to filter by management channel (for example, MEM).
+In **Configuration management** the **Onboarded via MDE security management** widget has been added to present the enrollment status breakdown of Microsoft Defender for Endpoint-managed devices.
 
-:::image type="content" source="./images/device-inventory-mde-error.png" alt-text="The device inventory page" lightbox="./images/device-inventory-mde-error.png":::
+To see a list of all devices managed by Microsoft Defender for Endpoint, select **View all devices managed by MDE**.
 
-To see a list of all devices that have failed the Security Management for Microsoft Defender for Endpoint onboarding process, filter the table by **MDE-Error**.
-
-In the list, select a specific device to see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
+In the list, if a device's enrollment status is not "Success", select the device to see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
 
 
 :::image type="content" source="./images/secconfig-mde-error.png" alt-text="The filter criteria applied on the device inventory page" lightbox="./images/secconfig-mde-error.png":::
+
+> [!NOTE] 
+> We are aware of an issue impacting the accurate detection of third-party MDMs when trying to use the security management feature and are working on a fix. 
 
 ## Run Microsoft Defender for Endpoint Client Analyzer on Windows
 
@@ -109,26 +113,21 @@ If you weren't able to identify the onboarded device in AAD or MEM, and did not 
 
 The following table lists errors and directions on what to try/check in order to address the error. Note that the list of errors is not complete and is based on typical/common errors encountered by customers in the past:
 
-<br>
-
-****
-
 |Error Code|Enrollment Status|Administrator Actions|
 |---|---|---|
-|`5-9`,`11-12`, `26-33`|General error|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow. This could be due to the device not meeting [prerequisites for Microsoft Defender for Endpoint management channel](security-config-management.md). Running the [Client Analyzer](https://aka.ms/BetaMDEAnalyzer) on the device can help identify the root cause of the issue. If this doesn't help, please contact support.|
+|`5-7`, `9`, `11-12`, `26-33`|General error|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow. This could be due to the device not meeting [prerequisites for Microsoft Defender for Endpoint management channel](security-config-management.md). Running the [Client Analyzer](https://aka.ms/BetaMDEAnalyzer) on the device can help identify the root cause of the issue. If this doesn't help, please contact support.|
+| `8`, `44` | Microsoft Endpoint Manager Configuration issue | The device was successfully onboarded to Microsoft Defender for Endpoint. However, Microsoft Endpoint Manager has not been configured through the Admin Center to allow Microsoft Defender for Endpoint Security Configuration. Make sure the [Microsoft Endpoint Manager tenant is configured and the feature is turned on](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
 |`13-14`,`20`,`24`,`25`|Connectivity issue|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow which could be due to a connectivity issue. Verify that the [Azure Active Directory and Microsoft Endpoint Manager endpoints](security-config-management.md#connectivity-requirements) are opened in your firewall.|
 |`10`,`42`|General Hybrid join failure|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow and the OS failed to perform hybrid join. Use [Troubleshoot hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) for troubleshooting OS-level hybrid join failures.|
 |`15`|Tenant mismatch|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow because your Microsoft Defender for Endpoint tenant ID doesn't match your Azure Active Directory tenant ID. Make sure that the Azure Active Directory tenant ID from your Defender for Endpoint tenant matches the tenant ID in the SCP entry of your domain. For more details, [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](troubleshoot-security-config-mgt.md).|
 |`16`,`17`|Hybrid error - Service Connection Point|The device was successfully onboarded to Microsoft Defender for Endpoint. However, Service Connection Point (SCP) record is not configured correctly and the device couldn't be joined to Azure AD. This could be due to the SCP being configured to join Enterprise DRS. Make sure the SCP record points to AAD and SCP is configured following best practices. For more information, see [Configure a service connection point](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point).|
 |`18`|Certificate error|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow due to a device certificate error. The device certificate belongs to a different tenant. Verify that best practices are followed when creating [trusted certificate profiles](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles).|
-|`36`|LDAP API error|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow. Verify the network topology and ensure the LDAP API is available to complete hybrid join requests.|
-|`37`|On-premise sync issue|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow. Try again later. If that doesn't help, see [Troubleshoot object synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/tshoot-connect-objectsync).|
+|`36` , `37`| AAD Connect misconfiguration |The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow due to a misconfiguration in AAD Connect. To identify what is preventing the device from registering to AAD, consider running the [Device Registration Troubleshooter Tool](/samples/azure-samples/dsregtool/dsregtool). For Windows Server 2012 R2, run the  [dedicated troubleshooting instructions](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy).  |
 |`38`,`41`|DNS error|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow due to a DNS error. Check the internet connection and/or DNS settings on the device. The invalid DNS settings might be on the workstation's side. Active Directory requires you to use domain DNS to work properly (and not the router's address). For more information, see [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](troubleshoot-security-config-mgt.md).|
 |`40`|Clock sync issue|The device was successfully onboarded to Microsoft Defender for Endpoint. However, there was an error in the security configuration management flow. Verify that the clock is set correctly and is synced on the device where the error occurs.|
+|`43`|MDE and ConfigMgr|The device is managed using Configuration Manager and Microsoft Defender for Endpoint. Controlling policies through both channels may cause conflicts and undesired results. To avoid this, endpoint security policies should be isolated to a single control plane. |
 
 ## Azure Active Directory Runtime troubleshooting
-
-### Azure Active Directory Runtime
 
 The main mechanism to troubleshoot Azure Active Directory Runtime (AADRT) is to collect debug traces. Azure Active Directory Runtime on Windows uses **ETW provider with ID bd67e65c-9cc2-51d8-7399-0bb9899e75c1**. ETW traces need to be captured with the reproduction of the failure (for example if join failure occurs, the traces need to be enabled for the duration of time covering calls to AADRT APIs to perform join).
 

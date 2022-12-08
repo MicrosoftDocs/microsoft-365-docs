@@ -1,22 +1,23 @@
 ---
-title: Create an extractor Microsoft SharePoint Syntex
+title: Create an extractor in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create an extractor in Microsoft SharePoint Syntex.
+description: Learn how to create an extractor in Microsoft Syntex.
 ---
 
-# Create an extractor in Microsoft SharePoint Syntex
+# Create an extractor in Microsoft Syntex
 
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 <br/>
 
@@ -42,7 +43,9 @@ You need to create an extractor for each entity in the document that you want to
     ![Screenshot of the Advanced settings portion of the New entity extractor panel showing the Column type option.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you type exceeding the limit get truncated.
+    > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you select exceeding the limit get truncated. To select greater than 255 characters, choose the **Multiple lines of text** column type when creating the extractor.
+    >
+    >By default, **Multiple lines of text** columns are created with a limit to the amount of text that can be added. In this case, extracted text might appear truncated. If this occurs, the column setting **Allow unlimited length in document libraries** can be used to remove the limit.
 
 3. When you're done, select **Create**.
 
@@ -52,7 +55,7 @@ The next step is to label the entity you want to extract in your example trainin
 
 Creating the extractor opens the extractor page. Here you see a list of your sample files, with the first file on the list displayed in the viewer.
 
-1. From the viewer, select the data that you want to extract from the files. For example, if you want to extract the *Start Service Date*, you highlight the date value in the first file (*Monday, October 14, 2019*). and then select **Save**. You should see the value display from the file in the Labeled examples list, under the **Label** column.
+1. From the viewer, select the data that you want to extract from the files. For example, if you want to extract the *Start Service Date*, you highlight the date value in the first file (*Monday, October 14, 2022*). and then select **Save**. You should see the value display from the file in the Labeled examples list, under the **Label** column.
 2. Select **Next file** to autosave and open the next file in the list in the viewer. Or select **Save** and then select another file from the **Labeled examples** list.
 3. In the viewer, repeat steps 1 and 2, then repeat until you saved the label in all five files.
 
@@ -70,13 +73,13 @@ The Find feature is useful if you're searching a large document or if there are 
 
 ## Add an explanation
 
-For our example, we're going to create an explanation that provides a hint about the entity format itself and variations it might have in the sample documents. For example, a date value can be in a number of different formats, such as:
+For our example, we're going to create an explanation that provides a hint about the entity format itself and variations it might have in the sample documents. For example, a date value can be in several different formats, such as:
 
-- 10/14/2019
-- October 14, 2019
-- Monday, October 14, 2019
+- 10/14/2022
+- October 14, 2022
+- Monday, October 14, 2022
 
-To help identify the *Service Start Date* you can create a pattern explanation.
+To help identify the *Service Start Date*, you can create a pattern explanation.
 
 1. In the Explanation section, select **New** and type a name (for example, *Date*).
 2. For Type, select **Pattern list**.
@@ -90,7 +93,7 @@ To help identify the *Service Start Date* you can create a pattern explanation.
 > [!NOTE]
 > For more learn more about explanation types, see [Explanation types](./explanation-types-overview.md).
 
-### Use the Explanation library
+### Use the explanation library
 
 For creating explanations for items such as dates, it's easier to [use the explanation library](./explanation-types-overview.md) than to manually enter all variations. The explanation library is a set of pre-built phrase and pattern explanations. The library tries to provide all formats for common phrase or pattern lists, such as dates, phone numbers, zip codes, and many others.
 
@@ -135,15 +138,15 @@ If you again receive a **Mismatch** on your labeled files, you likely need to cr
 
 ## Test your model
 
-If you receive a match on your labeled sample files, you can now test your model on the remaining unlabeled example files. This is optional, but a useful step to evaluate the "fitness" or readiness of the model before using it, by testing it on files the model hasn't seen before.
+If you receive a match on your labeled sample files, you can now test your model on the remaining unlabeled example files. This step is optional, but useful to evaluate the "fitness" or readiness of the model before using it, by testing it on files the model hasn't seen before.
 
-1. From the model home page, select the **Test** tab.  This runs the model on your unlabeled sample files.
+1. From the model home page, select the **Test** tab.  This will run the model on your unlabeled sample files.
 
 2. In the **Test files** list, your example files display to show if the model is able to extract the information you need. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
     ![Test on your files.](../media/content-understanding/test-filies-extractor.png)
 
-### Further refine an extractor
+## Further refine an extractor
 
 If you have duplicate entities and want to extract only one value or a certain number of values, you can set a rule to specify how you want it processed. To add a rule to refine extracted information, follow these steps:
 
@@ -171,7 +174,7 @@ If you have duplicate entities and want to extract only one value or a certain n
 
 6. If you want to delete a refinement rule on an extractor, select the extractor from which you want to remove the rule, select **Refine extracted info**, and then select **Delete**.
 
-## See Also
+## See also
 
 [Create a classifier](create-a-classifier.md)
 
@@ -179,8 +182,4 @@ If you have duplicate entities and want to extract only one value or a certain n
 
 [Leverage term store taxonomy when creating an extractor](leverage-term-store-taxonomy.md)
 
-[Document Understanding overview](document-understanding-overview.md)
-
-[Apply a model](apply-a-model.md)
-
-[SharePoint Syntex Accessibility Mode](accessibility-mode.md)
+[Syntex accessibility mode](accessibility-mode.md)

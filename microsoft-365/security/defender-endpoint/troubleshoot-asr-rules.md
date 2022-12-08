@@ -4,7 +4,7 @@ description: This topic describes how to report and troubleshoot Microsoft Defen
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,9 +16,12 @@ manager: dansimp
 ms.custom: 
 - asr
 - admindeeplinkDEFENDER
-ms.topic: article
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
@@ -92,7 +95,7 @@ The above shows all the IDs for ASR rules that have a setting different from 0 (
 The next step is then to list the actual actions (Block or Audit) that each rule is configured with.
 
 ```powershell
-Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
+Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Actions
 ```
 
 :::image type="content" source="images/getmpref-example2new.png" alt-text="The get mppreference example2" lightbox="images/getmpref-example2new.png":::

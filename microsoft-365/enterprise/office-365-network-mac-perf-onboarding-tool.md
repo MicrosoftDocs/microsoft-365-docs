@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 1/18/2022
 audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 description: "Microsoft 365 network connectivity test tool"
@@ -192,7 +193,7 @@ We measure the download speed for a 15 Mb file from the SharePoint service front
 
 #### Buffer bloat
 
-During the 15Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and It's compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 1,000 or more.
+During the 15Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and it's compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 100ms or more.
 
 #### Service front door recorded in the client DNS
 
@@ -256,10 +257,17 @@ You can run it by double clicking the executable in Windows File Explorer, or yo
 
 The first time you launch the executable you will be prompted to accept the end user license agreement (EULA) before testing is performed. If you have already read and accepted the EULA you can create an empty file called Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt in the current working directory for the executable process when it is launched. To accept the EULA you can type 'y' and press enter in the command line window when prompted.
 
-The executable accepts a command line parameter of /h to show a link to this help documentation.
+The executable accepts the following  command line parameters:
+- -h to show a link to this help documentation
+- -testlist &lt;test&gt; Specifies tests to run. By default only basic tests are run. Valid test names include: all, dnsConnectivityPerf, dnsResolverIdentification, bufferBloat, traceroute, proxy, vpn, skype, connectivity, networkInterface
+- -filepath &lt;filedir&gt; Directory path of test result files. Allowed value is absolute or relative path of an accessible directory
+- -city &lt;city&gt; For the city, state, and country fields the specified value will be used if provided. If not provided then Windows Location Services (WLS) will be queried. If WLS fails the location will be detected fromthe machines network egress 
+- -state &lt;state&gt;
+- -country &lt;country&gt; 
+- -proxy &lt;account&gt; &lt;password&gt; Proxy account name and password can be provided if you require a proxy to access the Internet
 
 ### Results
-Output of results are written to a JSON file in a folder called TestResults which is created in the current working directory of the process unless it already exists. The filename format for the output is connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. The results are in JSON nodes that match the output shown on the web page for the Microsoft 365 network connectivity test tool web site. A new result file is created each time you run it and the standalone executable does not upload results to your Microsoft tenant for viewing in the Admin Center Network Connectivity pages.
+Output of results are written to a JSON file in a folder called TestResults which is created in the current working directory of the process unless it already exists. The filename format for the output is connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. The results are in JSON nodes that match the output shown on the web page for the Microsoft 365 network connectivity test tool web site. A new result file is created each time you run it and the standalone executable does not upload results to your Microsoft tenant for viewing in the Admin Center Network Connectivity pages. Front door codes, longitudes, and latitudes are not included in the result file.
 
 ### Launching from Windows File Explorer
 You can simply double click on the executable to start the testing and a command prompt window will appear.
@@ -274,6 +282,49 @@ In Windows Task Scheduler you can add a task to launch the standalone test execu
 The commandline tool uses Windows Location Services to find the users City State Country information for determining some distances. If Windows Location Services is disabled in the control panel then user location based assessments will be blank. In Windows Settings "Location services" must be on and "Let desktop apps access your location" must also be on.
 
 The commandline tool will attempt to install the .NET Framework if it is not already installed. It will also download the main testing executable from the Microsoft 365 network connectivity test tool and launch that.
+
+## Test using the Microsoft Support and Recovery Assistant
+
+[Microsoft Support and Recovery Assistant](https://aka.ms/SaRA_home) (Assistant) automates all the steps required to execute the command-line version of the Microsoft 365 network connectivity test tool on a user’s machine and creates a report similar to the one created by the web version of the connectivity test tool. Note, the Assistant runs the command line version of Microsoft 365 network connectivity test tool to produce the same JSON result file, but the JSON file is converted into .CSV file format.  
+
+[Download and Run the Assistant Here](https://aka.ms/SaRA-NetworkConnectivity-Learn)
+
+### Viewing Test Results
+
+Reports can be accessed in the following ways:
+
+The reports will be available on the below screen once the Assistant has finished scanning the user's machine. To access these reports, simply click on the &#8220;View log&#8221; option to view them.
+
+> [!div class="mx-imgBorder"]
+> ![Microsoft Support and Recovery Assistant wizard.](../media/m365-mac-perf/m365-mac-perf-sara1.png)
+
+Connectivity test results and Telemetry data are collected and uploaded to the **uploadlogs** folder. To access this folder, use one of the following methods:
+
+- Open Run (**Windows logo key + R**), and run the **%localappdata%/saralogs/uploadlogs** command as follows:
+
+> [!div class="mx-imgBorder"]
+> ![Run dialog for locating output.](../media/m365-mac-perf/m365-mac-perf-sara2.png)
+
+- In File Explorer, type C:\Users\<UserName>\AppData\Local\saralogs\uploadlogs and press **Enter** as follows:
+
+> [!div class="mx-imgBorder"]
+> ![Windows Explorer Address Bar for output.](../media/m365-mac-perf/m365-mac-perf-sara3.png)
+
+**Note:** &lt;UserName&gt; is the user's Windows profile name.
+To view the information about the test results and telemetry, double-click and open the files.
+
+> [!div class="mx-imgBorder"]
+> ![Windows Explorer SARA Output Files.](../media/m365-mac-perf/m365-mac-perf-sara3.png)
+
+### Types of result files
+
+Microsoft Support and Recovery Assistant creates 2 files:
+
+1. Network Connectivity Report (CSV)
+This report runs the raw JSON file against a rule engine to make sure defined thresholds are being met and if they are not met a &#8220;warning&#8221; or &#8220;error&#8221; is displayed in the output column of the CSV file. You can view the NetworkConnectivityReport.csv file to be informed about any detected issues or defects. Please see [What happens at each test step](office-365-network-mac-perf-onboarding-tool.md#what-happens-at-each-test-step) for details on each test and the thresholds for warnings.
+
+1. Network Connectivity Scan Report (JSON)
+This file provides the raw output test results from the command-line version of the Microsoft 365 network connectivity test tool (MicrosoftConnectivityTest.exe).
 
 ## FAQ
 

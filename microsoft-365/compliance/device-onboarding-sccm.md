@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
@@ -22,12 +23,12 @@ description: Use Configuration Manager to deploy the configuration package on de
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md)
 
 ### Onboard devices using System Center Configuration Manager
 
-1. Get the configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) from [Microsoft Compliance center](https://compliance.microsoft.com/).
+1. Get the configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) from [Microsoft Purview compliance portal](https://compliance.microsoft.com/).
 
 2. In the navigation pane, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device Onboarding** > **Onboarding**.
 
@@ -87,6 +88,8 @@ The default value in case the registry key doesn't exist is 1.
 For more information about System Center Configuration Manager Compliance, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Other recommended configuration settings
 
 After onboarding devices to the service, it's important to take advantage of the included threat protection capabilities by enabling them with the following recommended configuration settings.
@@ -141,7 +144,7 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
-1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>:
+1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>:
 
 2. In the navigation pane, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> >  **Device onboarding**> **Offboarding**.
 
@@ -184,7 +187,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     ![Configuration Manager showing successful deployment with no errors.](../media/sccm-deployment.png)
 
-### Check that the devices are compliant with the Microsoft 365 Endpoint data loss prevention service
+### Check that the devices are compliant with the Endpoint data loss prevention service
 
 You can set a compliance rule for configuration item in System Center 2012 R2 Configuration Manager to monitor your deployment.
 

@@ -7,9 +7,11 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -31,7 +33,7 @@ To enable Microsoft 365 usage analytics in a Microsoft 365 US Government Communi
 
 ## Before you begin
 
-To get started with Microsoft 365 usage analytics you must first make the data available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then initiate the template app in Power BI.
+To get started with Microsoft 365 usage analytics you must first make the data available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then select **Reports** > **Usage** and initiate the template app in Power BI.
 
 ## Get Power BI
 
@@ -100,7 +102,7 @@ Global administrators can revert this change for their tenant and show identifia
   
 3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes.  
   
-It'll take a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
+It'll take a few minutes for these changes to take effect. Showing identifiable user information is a logged event in the Microsoft Purview compliance portal audit log.   
 
 ## Related content
 
