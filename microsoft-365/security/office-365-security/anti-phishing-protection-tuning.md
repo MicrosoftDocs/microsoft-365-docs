@@ -44,7 +44,7 @@ Verify these Defender for Office 365 features are turned on.
 
 ## Report the phishing message to Microsoft
 
-Reporting phishing messages is helpful in tuning the filters that are used to protect all customers in Microsoft 365. For instructions, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+Reporting phishing messages is helpful in tuning the filters that are used to protect all customers in Microsoft 365. For instructions, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Inspect the message headers
 

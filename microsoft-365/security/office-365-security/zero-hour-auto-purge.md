@@ -109,7 +109,7 @@ To determine if ZAP moved your message, you have the following options:
 
 ### What happens if a legitimate message is moved to the Junk Email folder?
 
-You should follow the normal reporting process for [false positives](report-junk-email-messages-to-microsoft.md). The only reason the message would be moved from the Inbox to the Junk Email folder would be because the service has determined that the message was spam or malicious.
+You should follow the normal reporting process for [false positives](submissions-report-messages-files-to-microsoft.md). The only reason the message would be moved from the Inbox to the Junk Email folder would be because the service has determined that the message was spam or malicious.
 
 ### What if I use the Quarantine folder instead of the Junk Mail folder?
 
