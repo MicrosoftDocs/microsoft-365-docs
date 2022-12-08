@@ -86,7 +86,7 @@ User tags in Microsoft Defender for Office 365 Plan 2 (as part of Microsoft 365 
 
 **Priority accounts** is a type of built-in user tag (known as a _system tag_) that you can use to identify incidents and alerts that involve priority accounts. For more information about **priority accounts**, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 
-You can also create custom tags to further identify and classify your priority accounts. For more information, see [User tags](user-tags.md). You can manage **priority accounts** (system tags) in the same interface as custom user tags.
+You can also create custom tags to further identify and classify your priority accounts. For more information, see [User tags](user-tags-about.md). You can manage **priority accounts** (system tags) in the same interface as custom user tags.
 
 ## Monitor priority accounts in alerts, reports, and detections
 

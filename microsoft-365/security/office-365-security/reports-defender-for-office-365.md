@@ -122,7 +122,7 @@ The **Top senders and recipients** report show the top recipients for EOP and De
 
 ## URL protection report
 
-The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy was applied when the **Track user clicks** option is not selected.
+The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links-about.md). This report will not have click data from users where the Safe Links policy was applied when the **Track user clicks** option is not selected.
 
 To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **URL protection page** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
@@ -242,5 +242,5 @@ For more information, see [Permissions in the Microsoft 365 Defender portal](per
 
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](set-up-safe-links-policies.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [anti-spam](anti-spam-protection.md) and [anti-malware protection](anti-malware-protection.md).
+If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](safe-links-policies-configure.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [anti-spam](anti-spam-protection-about.md) and [anti-malware protection](anti-malware-protection.md).
 
