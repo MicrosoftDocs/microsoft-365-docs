@@ -1,9 +1,10 @@
 ---
 title: "Legacy eDiscovery tools retired"
+description: "In-Place eDiscovery and In-Place Hold (and the corresponding PowerShell cmdlets) in Exchange Online will be retired in the first half of 2020. The Search-Mailbox cmdlet and Microsoft Purview eDiscovery (Premium) v1.0 are also being retired within the same time period."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -11,14 +12,14 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ms.custom: admindeeplinkCOMPLIANCE
-description: "In-Place eDiscovery and In-Place Hold (and the corresponding PowerShell cmdlets) in Exchange Online will be retired in the first half of 2020. The Search-Mailbox cmdlet and Microsoft Purview eDiscovery (Premium) v1.0 are also being retired within the same time period."
 ---
 
 # Retirement of legacy eDiscovery tools
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > The functionality of the legacy eDiscovery tools described in this article has either been removed from the Microsoft 365 service or is still available, but no longer supported. Any functionality that's still available may be removed without notice. If you're still using any of these legacy tools, consider migrating to the eDiscovery tools in the Microsoft Purview compliance portal or one of the alternatives described in this article.
@@ -60,6 +61,8 @@ As a result of this new and improved eDiscovery functionality in the compliance 
 > The eDiscovery functionality being retired only applies to cloud-based versions of Microsoft 365 and Office 365. eDiscovery functionality in on-premises versions of Exchange and SharePoint will still be supported until further notice.
 
 The following sections in this article provide guidance about each feature being retired. This information including timelines and alternative tools that you can use instead of the retired tool.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## In-Place eDiscovery and In-Place Holds in the Exchange admin center 
 

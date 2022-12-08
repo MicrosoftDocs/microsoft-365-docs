@@ -11,7 +11,8 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: low
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -23,11 +24,11 @@ description: Learn what the sensitive information type functions look for.
 
 # Sensitive information type functions
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Sensitive information types (SIT) can use functions as primary elements to identify sensitive items. For example, the Credit Card Number sensitive information type uses the Func_credit_card function to detect credit card number.
 
 This article explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Table of functions
 

@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -25,11 +26,11 @@ description: Learn about data loss prevention alerts and the alerts dashboard.
 
 # Learn about the data loss prevention Alerts dashboard
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 When the criteria in a Microsoft Purview Data Loss Prevention (DLP) policy is matched by the actions a user is taking on a sensitive item, the policy can generate an alert. This situation can result in a high volume of alerts. DLP alerts are collected in the alerts dashboard. The alerts dashboard gives you a single place to go to do a deep investigation of all the details about the policy match.  
 
 <!-- [Microsoft Purview compliance portal](https://compliance.microsoft.com/)-->
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Workloads
 

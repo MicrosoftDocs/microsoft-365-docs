@@ -1,41 +1,40 @@
 ---
 title: "Error remediation when processing data"
+description: Learn how to use error remediation to correct data issues in eDiscovery (Premium) that might prevent proper processing of content.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-
-description: Learn how to use error remediation to correct data issues in eDiscovery (Premium) that might prevent proper processing of content.
 ms.custom: seo-marvel-mar2020
 ---
 
 # Error remediation when processing data
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Error remediation allows eDiscovery administrators the ability to rectify data issues that prevent Microsoft Purview eDiscovery (Premium) from properly processing the content. For example, files that are password protected can't be processed since the files are locked or encrypted. Using error remediation, eDiscovery administrators can download files with such errors, remove the password protection, and then upload the remediated files.
 
 Use the following workflow to remediate files with errors in eDiscovery (Premium) cases.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create an error remediation session to remediate files with processing errors
 
 > [!NOTE]
 > If the the error remediation wizard is closed at any time during the following procedure, you can return to the error remediation session from the **Processing** tab by selecting **Remediations** in the **View** drop-down menu.
 
-1. On the **Processing** tab in the eDiscovery (Premium) case, select **Errors** in the **View** drop-down menu and then select a review set or the entire case in the **Scope** drop-down menu. This section displays all errors from the case or error from a specific review set.
+1. On the **Processing** tab in the eDiscovery (Premium) case, select **Errors** in the **View** drop-down menu and then select a review set in the **Scope** drop-down menu. You must select a review set in the scope to start the remediation of any errors. After you've selected the scope, this section displays errors from the specific review set.
 
-   ![Error remediation.](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+   ![Error remediation.](../media/ediscovery-new-error-remediation.png)
 
 2. Select the errors you want to remediate by clicking the radio button next to either the error type or file type.  In the following example, we're remediating a password protected file.
 
@@ -43,11 +42,11 @@ Use the following workflow to remediate files with errors in eDiscovery (Premium
 
     The error remediation workflow starts with a preparation stage where the files with errors are copied to a Microsoft-provided Azure Storage location so that you can download them to your local computer to remediate.
 
-    ![Preparing error remediation.](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Preparing error remediation.](../media/ediscovery-new-error-remediation-step-1.png)
 
 4. After the preparation is complete, click **Next: Download files** to proceed with download.
 
-    ![Download files.](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Download files.](../media/ediscovery-new-error-remediation-step-2.png)
 
 5. To download files, specify the **Destination path for download**. This is a path to the parent folder on your local computer where the file will be downloaded.  The default path, %USERPROFILE%\Downloads\errors, points to the logged-in user's downloads folder. You can change this path if desired. If you do change it, we recommend that you use a local file path for the best performance. Don't use a remote network path. For example, you could use the path **C:\Remediation**.
 
@@ -83,7 +82,7 @@ Use the following workflow to remediate files with errors in eDiscovery (Premium
 
 8. Return to eDiscovery (Premium) and the error remediation wizard and then click **Next: Upload files**.  This moves to the next page where you can now upload the files.
 
-    ![Upload Files.](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Upload Files.](../media/ediscovery-new-error-remediation-step-3.png)
 
 9. Specify the parent folder where the remediated files are located in the **Path to location of files** text box. Again, the parent folder must have the same subfolder structure that was created when you downloaded the files.
 

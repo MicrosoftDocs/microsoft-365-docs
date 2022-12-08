@@ -1,27 +1,28 @@
 ---
 title: Add custodians to an eDiscovery (Premium) case
+description: "Learn how to use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows and identify relevant data sources in a case."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows and identify relevant data sources in a case."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Add custodians to an eDiscovery (Premium) case
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Use the built-in custodian management tool in Microsoft Purview eDiscovery (Premium) to coordinate your workflows around managing custodians and identifying relevant, custodial data sources associated with a case. When you add a custodian, the system can automatically identify and place a hold on their Exchange mailbox and OneDrive for Business account. During the discovery process of your investigation, you might also identify other data sources (such as mailboxes, sites, or Teams) that a custodian accessed or contributed to. In this situation, you can use the custodian management tool to associate those data sources will a specific custodian. After you add custodians to a case and associate other data source with them, you can quickly preserve data and search the custodial data.
 
@@ -34,6 +35,8 @@ You can add and manage custodians in eDiscovery (Premium) cases in four steps:
 3. Configure hold settings.
 
 4. Review the custodians and complete the process.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Make sure you have the necessary permissions
 
@@ -49,11 +52,11 @@ To add custodians to a case, you must be a member of the eDiscovery Manager role
 
 4. Select the **Data sources** tab, and then select **Add data source** > **Add new custodians**.
 
-5. Add one or more users in your organization as custodians to the case by typing the first part of a person's name or alias. After you find the correct person, select their name to add them to the list.
+5. Add one or more users in your organization as custodians to the case by typing the first part of a person's name or alias. Both active and inactive users are searched. After you find the correct person, select their name to add them to the list. 
 
 ## Step 2: Choose custodian data locations
 
-After you select custodians, the system automatically attempts to identify and verify these users and their data sources. After adding custodians to the list, the tool automatically includes the primary mailbox and OneDrive account for each custodian. You can choose not to include these data sources when adding custodians to the case.
+After you select custodians, the system automatically attempts to identify and verify these users and their data sources. After adding custodians to the list, the tool automatically includes the primary mailbox and OneDrive account for each active user that has been added as a custodian. If the user is inactive, the tool will only identify the primary mailbox. You can choose not to include these data sources when adding custodians to the case.
 
 In addition to a custodian's mailbox and OneDrive account, you can also associate other data locations to a custodian, such as SharePoint site or a Microsoft Team the custodian is a member of. This allows you to preserve, collect, analyze, and review content in other data sources associated with the custodians of the case.
 
@@ -71,7 +74,7 @@ To associate other mailboxes, sites, Teams, or Yammer groups to a specific custo
 
    - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then click **Add**.
 
-   - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then click **Add**.
+   - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then click **Add**. If a user is inactive, their OneDrive site will need to be added as an additional SharePoint location here. 
 
    - **Teams**: Use to assign the Microsoft Teams the custodian is currently a member of. Select the teams to assign to the custodian and then click **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that team and assigns them to the custodian.
 

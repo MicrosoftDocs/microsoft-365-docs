@@ -12,22 +12,24 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-description: "Learn about archive mailboxes to provide additional mailbox storage."
+- purview-compliance
+- tier2
+description: "Learn about archive mailboxes to provide extra mailbox storage."
 ---
 
 # Learn about archive mailboxes
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Mailbox archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with additional mailbox storage space. After you turn on archive mailboxes, a user's current mailbox becomes their *primary mailbox* and an additional mailbox is created, called the *archive mailbox*. Both mailboxes are considered a user's mailbox for compliance features such as Content search from the Microsoft Purview compliance portal, Microsoft 365 retention, and Litigation Hold.
+Mailbox archiving in Microsoft Purview is sometimes also called *In-Place Archiving* and provides users with extra mailbox storage space. After you turn on archive mailboxes, a user's current mailbox becomes their *primary mailbox* and an additional mailbox is created, called the *archive mailbox*. Both mailboxes are considered a user's mailbox for compliance features such as Content search from the Microsoft Purview compliance portal, Microsoft 365 retention, and Litigation Hold.
 
 Users can access and store messages in their archive mailboxes by using Outlook and Outlook on the web. Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool.
 
-## Managing archive mailboxes with Messaging Records Management (MRM)
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-Messages can also be moved to the archive mailbox by the [default Exchange retention policy](/exchange/security-and-compliance/messaging-records-management/default-retention-policy) from Messaging Records Management (MRM). This default policy is automatically assigned to every mailbox and does the following:
+## Managing archive mailboxes with messaging records management (MRM)
+
+Messages can also be moved to the archive mailbox by the [default Exchange retention policy](/exchange/security-and-compliance/messaging-records-management/default-retention-policy) from messaging records management (MRM). This default policy is automatically assigned to every mailbox and does the following:
 
   - Moves items that are two years or older from a user's primary mailbox to their archive mailbox.
 
@@ -42,10 +44,6 @@ You can customize your organization's MRM policy with [retention tags](/exchange
 
 After a user's archive mailbox is enabled, up to 100 GB of additional storage is available. If users need more storage space, enable auto-expanding archiving to provide up to 1.5 TB of additional storage in archive mailboxes. For more information, see [Learn about auto-expanding archiving](autoexpanding-archiving.md).
 
-## Licensing
-
-For a list of Outlook licenses that support archive mailboxes, see the references to In-Place Archiving in [Outlook license requirements for Exchange features](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99).
-
 ## Next steps
 
-See [Enable archive mailboxes in the Microsoft Purview compliance portal](enable-archive-mailboxes.md).
+See [Enable archive mailboxes in Microsoft 365](enable-archive-mailboxes.md).

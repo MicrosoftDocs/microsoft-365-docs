@@ -2,7 +2,7 @@
 title: Investigate Microsoft Defender for Endpoint files
 description: Use the investigation options to get details on files associated with alerts, behaviors, or events.
 keywords: investigate, investigation, file, malicious activity, attack motivation, deep analysis, deep analysis report
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
-ms.date: 04/24/2018
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.date: 11/10/2022
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Investigate a file associated with a Microsoft Defender for Endpoint alert
@@ -39,11 +42,11 @@ You can get information from the following sections in the file view:
 
 - File details, Malware detection, File prevalence
 - File PE metadata (if it exists)
-- Deep analysis
 - Alerts
 - Observed in organization
 - Deep analysis
 - File names
+- Action center
 
 You can also take action on a file from this page.
 
@@ -55,7 +58,7 @@ Along the top of the profile page, above the file information cards. Actions you
 - Add/edit indicator
 - Download file
 - Consult a threat expert
-- Action center
+- Manual actions
 
 For more information on these actions, see [Take response action on a file](respond-file-alerts.md).
 
@@ -63,20 +66,23 @@ For more information on these actions, see [Take response action on a file](resp
 
 The file details, incident, malware detection, and file prevalence cards display various attributes about the file.
 
-You'll see details such as the file's MD5, the Virus Total detection ratio, and Microsoft Defender AV detection if available, and the file's prevalence.
+You'll see details such as the file's MD5, the Virus Total detection ratio, and Microsoft Defender Antivirus detection if available, and the file's prevalence.
 
 The file prevalence card shows where the file was seen in devices in the organization and worldwide. You can easily pivot to the first and last devices where the file was seen on, and continue the investigation in the device timeline. 
 
 > [!NOTE]
 > Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the RBAC scope that a user has. Meaning, if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
 
-:::image type="content" source="images/atp-file-information.png" alt-text="The file information" lightbox="images/atp-file-information.png":::
 
-## Alerts
+![Screenshot showing file prevalence.](https://user-images.githubusercontent.com/96785904/200525998-e11576f7-e495-4d16-98fb-940d8bd9a0d6.png)
 
-The **Alerts** tab provides a list of alerts that are associated with the file, as well as the incident the alert is linked to. This list covers much of the same information as the Alerts queue, except for the device group, if any, the affected device belongs to. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
 
-:::image type="content" source="images/atp-alerts-related-to-file.png" alt-text="The alerts related to the file section" lightbox="images/atp-alerts-related-to-file.png":::
+## Incidents and alerts
+
+The **Incidents and alerts** tab provides a list of incidents that are associated with the file, as well as the alerts the file is linked to. This list covers much of the same information as the incidents queue. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
+
+![Screenshot showing incidents and alerts.](https://user-images.githubusercontent.com/96785904/200527005-1fd139dc-7483-4e4c-83ad-855cd198f153.png)
+
 
 ## Observed in organization
 
@@ -104,6 +110,8 @@ The **File names** tab lists all names the file has been observed to use, within
 ## Action center
 
 The **Action center** displays the action center filtered on a specific file, so you can see pending actions and the history of actions taken on the file.
+
+![Screenshot showing the action center](https://user-images.githubusercontent.com/96785904/200527287-0c09dd24-6192-4a7d-990a-824d35b97460.png)
 
 ## Related topics
 

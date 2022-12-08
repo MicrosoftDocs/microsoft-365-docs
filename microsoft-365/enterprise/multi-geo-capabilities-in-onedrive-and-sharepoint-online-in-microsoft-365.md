@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
 ms.custom: admindeeplinkSPO
@@ -15,6 +15,7 @@ ms.collection:
 - SPO_Content
 - m365solution-scenario
 - m365solution-spintranet
+- highpri
 ms.localizationpriority: medium
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: "Expand your Microsoft 365 presence to multiple geographic regions with multi-geo capabilities in OneDrive Online."

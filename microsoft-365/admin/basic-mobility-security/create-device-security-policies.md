@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier3
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -119,13 +121,13 @@ When you apply a policy to user devices, the impact on each device varies somewh
 |**Security Policy**|**Android**|**Samsung KNOX**|**iOS**|**Notes**|
 |:-----|:-----|:-----|:-----|:-----|
 |Require encrypted backup|No|Yes|Yes|iOS encrypted backup required.|
-|Block cloud backup|Yes|Yes|Yes|Block Google backup on Android (grayed out), cloud backup on iOS.|
-|Block document synchronization|No|No|Yes|iOS: Block documents in the cloud.|
+|Block cloud backup|Yes|Yes|Yes|Block Google backup on Android (grayed out), cloud backup on supervised iOS.|
+|Block document synchronization|No|No|Yes|iOS: Block documents in the cloud on supervised iOS devices.|
 |Block photo synchronization |No|No|Yes|iOS (native): Block Photo Stream.|
 |Block screen capture |No|Yes|Yes|Blocked when attempted.|
-|Block video conference |No|No|Yes|FaceTime blocked on iOS, not on Skype or others.|
+|Block video conference |No|No|Yes|FaceTime blocked on supervised iOS devices, not on Skype or others.|
 |Block sending diagnostic data |No|Yes|Yes|Block sending Google crash report on Android.|
-|Block access to app store |No|Yes|Yes|App store icon missing on Android home page, disabled on Windows, missing on iOS.|
+|Block access to app store |No|Yes|Yes|App store icon missing on Android home page, disabled on Windows, and supervised iOS devices.|
 |Require password for app store |No|No|Yes|iOS: Password required for iTunes purchases.|
 |Block connection to removable storage |No|Yes|N/A|Android: SD card is grayed out in settings, Windows notifies user, apps installed aren't available|
 |Block Bluetooth connection |See notes|See notes|Yes|We can't disable BlueTooth as a setting on Android. Instead, we disable all of the transactions that require BlueTooth: Advanced Audio Distribution, Audio/Video Remote Control, hands-free devices, headset, Phone Book Access, and Serial Port. A small toast message appears at the bottom of the page when any of these are used.|

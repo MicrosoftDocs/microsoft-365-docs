@@ -11,7 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance 
+- tier1
+- purview-compliance 
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
@@ -20,8 +21,6 @@ description: Use Mobile Device Management tools to deploy the configuration pack
 
 # Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
@@ -29,6 +28,8 @@ description: Use Mobile Device Management tools to deploy the configuration pack
 
 You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 information protection supports MDMs by providing OMA-URIs to create policies to manage devices.
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings will not be applied successfully. 

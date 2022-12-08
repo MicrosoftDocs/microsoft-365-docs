@@ -1,27 +1,29 @@
 ---
 title: "eDiscovery solution series Data spillage scenario - Search and purge"
+description: "Use eDiscovery and search tools to manage and respond to a data spillage incident in your organization."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MET150
-ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
-description: "Use eDiscovery and search tools to manage and respond to a data spillage incident in your organization."
 ---
 
 # eDiscovery solution series: Data spillage scenario - Search and purge
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
  **What is data spillage and why should you care?** Data spillage is when a confidential document is released into an untrusted environment. When a data spillage incident is detected, it's important to quickly assess the size and locations of the spillage, examine user activities around it, and then permanently purge the spilled data from the system.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Data spillage scenario
 
 You're a lead information security officer at Contoso. You are informed of a data spillage situation where an employee unknowingly shared a highly confidential document with multiple people through email. You want to quickly assess who received this document internally and externally. Once identified, you would like to share case findings with other investigators to review, and then permanently remove the data from Office 365. After the investigation is complete, you want to generate a report with the evidence of permanent removal and other case details for any future reference.
@@ -204,6 +206,6 @@ If the keywords in the search query that you created and used in Step 3 contains
 
 You can search the audit log for the eDiscovery activities that were performed during the investigation. You can also search the audit log to return the audit records for the **New-ComplianceSearchAction -Purge** command that you ran in Step 7 to delete the spilled data. For more information, see:
 
-- [Search the audit log](search-the-audit-log-in-security-and-compliance.md)
+- [Search the audit log](audit-log-search.md)
 
 - [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)

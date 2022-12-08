@@ -1,8 +1,8 @@
 ---
 title: Certificate assessment methods and properties per device
-description: Provides information about the certificates APIs that pull "threat and vulnerability management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
+description: Provides information about the certificates APIs that pull "Microsoft Defender Vulnerability Management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,12 +11,15 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
- 
+
 # Export certificate inventory per device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -27,7 +30,7 @@ ms.custom: api
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender Vulnerability Management? [Sign up for a free trial.- Update](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 
@@ -48,21 +51,31 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 Returns all certificate assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, Thumbprint and Path.
 
-#### 1.2 Limitations
+#### 1.1.1 Limitations
 
 - Maximum page size is 200,000.
 - Rate limitations for this API are 30 calls per minute and 1000 calls per hour.
 
-### 1.3 Parameters
+### 1.2 Permissions
 
-- pageSize (default = 50,000): Number of results in response.
-- $top: Number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
-### 1.4 HTTP request
+Permission type|Permission|Permission display name
+:---|:---|:---
+Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
+
+### 1.3 URL
 
 ```http
 GET /api/machines/certificateAssessmentByMachine
 ```
+
+### 1.4 Parameters
+
+- pageSize (default = 50,000): Number of results in response.
+- $top: Number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
+
 
 ### 1.5 Properties (JSON response)
 
@@ -134,19 +147,28 @@ GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAsse
 
 Returns all certificate assessments for all devices, on a per-device basis. It returns a table with a separate entry for every unique combination of DeviceId, Thumbprint and Path.
 
-#### 2.2 Limitations
+#### 2.1.1 Limitations
 
-- Rate limitations for this API are 5 calls per minute and 20 calls per hour. 
+- Rate limitations for this API are 5 calls per minute and 20 calls per hour.
 
-### 2.3 Parameters
+### 2.2 Permissions
 
-- sasValidHours: The number of hours that the download URLs will be valid for (Maximum 24 hours).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)
 
-### 2.4 HTTP request
+Permission type|Permission|Permission display name
+:---|:---|:---
+Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
+
+### 2.3 URL
 
 ```http
 GET /api/machines/certificateAssessmentExport
 ```
+
+### 2.4 Parameters
+
+- sasValidHours: The number of hours that the download URLs will be valid for (Maximum 24 hours).
 
 ### 2.5 Properties (JSON response)
 

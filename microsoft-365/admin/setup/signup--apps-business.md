@@ -7,11 +7,15 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier1 
+- scotvorg
+- highpri
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 description: "Sign up for Microsoft 365 Apps for business."
 ---

@@ -3,23 +3,23 @@ title: "Review detected threats on devices and take action"
 f1.keywords: NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article 
-ms.service: o365-administration
+ms.topic: conceptual 
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: medium
 ms.collection:
-- M365-subscription-management 
-- Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+- m365-security
+- tier1
 search.appverid: MET150
 description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows devices." 
 ---
 
-# Review threats detected by Microsoft Defender Antivirus and take action
+# Review detected threats
 
-As soon as a malicious file or software is detected, Microsoft Defender Antivirus blocks it and prevents it from running. And with cloud-delivered protection turned on, newly detected threats are added to the antivirus and antimalware engine so that your other devices and users are protected, as well.
+As soon as a malicious file or software is detected, Microsoft Defender blocks it and prevents it from running. And with cloud-delivered protection turned on, newly detected threats are added to the antivirus and antimalware engine so that your other devices and users are protected, as well.
 
 Microsoft Defender Antivirus detects and protects against the following kinds of threats:
 
@@ -33,25 +33,7 @@ As an IT professional/admin, you can view information about threat detections ac
 - How many devices aren't in compliance with security policies
 - How many threats are currently active, mitigated, or resolved
 
-You have several options to view specific information about threat detections and devices:
-
-- Use the **Active threats** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. See [Manage threat detections on the **Active threats** page](#manage-threat-detections-on-the-active-threats-page) in this article.
-- Use the **Security report** in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). See [View and manage threat detections in the Microsoft 365 Defender portal](#view-and-manage-threat-detections-in-the-microsoft-365-defender-portal) in this article.
-- Use the **Antivirus** page in <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager</a>. See [Manage threat detections in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in this article.
-
-To learn more, see [Threats detected by Microsoft Defender Antivirus](/admin/security-and-compliance/threats-detected-defender-av.md).
-
-## Manage threat detections on the **Active threats** page
-
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in.
-
-2. On the **Microsoft Defender Antivirus** card, select **View active threats**. (Alternatively, in the navigation pane, select **Health** > **Threats & antivirus**.)
-
-3. On the **Active threats** page, select a detected threat to learn more about it. A flyout opens with details about that threat, including which devices are affected.
-
-4. On the flyout, select a device to view available actions, such as **Update policy**, **Update antivirus**, **Run quick scan**, and more.
-
-### Actions you can take
+## Actions you can take
 
 When you view details about specific threats or devices, you'll see recommendations and one or more actions you can take. The following table describes actions that you might see.<br><br>
 
@@ -62,35 +44,37 @@ When you view details about specific threats or devices, you'll see recommendati
 | Run quick scan | Starts a quick antivirus scan on the device, focusing on common locations where malware might be registered, such as registry keys and known Windows startup folders. |
 | Run full scan | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Update antivirus | Requires the device to get [security intelligence updates](https://go.microsoft.com/fwlink/?linkid=2149926) for antivirus and antimalware protection. |
-| Restart device | Forces a Windows 10 device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
+| Restart device | Forces a Windows device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
 
 ## View and manage threat detections in the Microsoft 365 Defender portal
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the ([Microsoft 365 Defender portal](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, choose **Reports** > **General** > **Security report**.
+1. In the navigation pane, choose **Threat Analytics** to see all the current threats. They are categorized by threat severity and type.
 
-3. Scroll down to the **Devices** row. If threats were detected on devices, you'll see that information in this row.
+1. Click on a threat to see more details about the threat.
 
-## Manage threat detections in Microsoft Endpoint Manager
+1. In the table, you can filter the alerts according to a number of criteria.
 
-You can use Microsoft Endpoint Manager to manage threat detections. Windows 10 devices must be [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods) (part of Microsoft Endpoint Manager).
+## Manage threat detections in Microsoft InTune
+
+You can use Microsoft Endpoint Manager to manage threat detections as well. First, all devices whether Windows, iOS or Android, must be [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods) (part of Microsoft Endpoint Manager).
 
 1. Go to the Microsoft Endpoint Manager admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> and sign in.
 
 2. In the navigation pane, select **Endpoint security**.
 
-3. Under **Manage**, select **Antivirus**. You'll see several tabs, such as **Summary**, **Windows 10 unhealthy endpoints**, and **Windows 10 detected malware**.
+3. Under **Manage**, select **Antivirus**. You'll see tabs for **Summary**, **Unhealthy endpoints**, and **Active malware**.
 
 4. Review the information on the available tabs, and then take any needed action.
 
-For example, suppose that devices are listed on the **Windows 10 detected malware** tab. When you select a device, you'll have certain actions available, such as **Restart**, **Quick Scan**, **Full Scan**, **Sync**, or **Update signatures**. Select an action for that device.
+For example, suppose that devices are listed on the **Active malware** tab. When you select a device, you'll have certain actions available, such as **Restart**, **Quick Scan**, **Full Scan**, **Sync**, or **Update signatures**. Select an action for that device.
 
 The following table describes the actions you might see in Microsoft Endpoint Manager.<br><br>
 
 | Action | Description |
 |--|--|
-| Restart | Forces a Windows 10 device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
+| Restart | Forces a Windows device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
 | Quick Scan | Starts a quick antivirus scan on the device, focusing on common locations where malware might be registered, such as registry keys and known Windows startup folders. Results are sent to [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Full Scan | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
 | Sync | Requires a device to check in with Intune (part of Microsoft Endpoint Manager). When the device checks in, the device receives any pending actions or policies assigned to the device. |

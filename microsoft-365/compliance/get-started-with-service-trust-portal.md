@@ -1,33 +1,34 @@
 ---
 title: "Get started with the Microsoft Service Trust Portal"
+description: Learn how to access and use the Microsoft Service Trust Portal to help with security, privacy, and compliance practices.
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: MET150
-mscollection: M365-security-compliance
+mscollection:
+- tier3
+- purview-compliance
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Learn how to access and use the Microsoft Service Trust Portal to help with security, privacy, and compliance practices.
 ---
 
-# Get started with the Microsoft Service Trust Portal
+# Get started with Microsoft Service Trust Portal
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about how Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization.
 
-The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance practices.
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Accessing the Service Trust Portal
 
-The Service Trust Portal contains details about Microsoft's implementation of controls and processes that protect our cloud services and the customer data therein. To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft Non-Disclosure Agreement for Compliance Materials.
+The Service Trust Portal is Microsoft's public site for publishing audit reports and other compliance-related information associated with Microsoft’s cloud services. STP users can download audit reports produced by external auditors and gain insight from Microsoft-authored whitepapers that provide details on how Microsoft cloud services protect your data, and how you can manage cloud data security and compliance for your organization. To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft Non-Disclosure Agreement for Compliance Materials.
 
 ### Existing customers
 
@@ -38,7 +39,7 @@ Existing customers can access the Service Trust Portal at <https://aka.ms/STP> w
 - Azure
 
  > [!NOTE]
- > Azure Active Directory accounts associated with organizations have access to the full range of documents and features like Compliance Manager.
+ > Azure Active Directory accounts associated with organizations have access to the full range of documents and resources like Compliance Manager.
 
 ### New customers and customers evaluating Microsoft online services
 
@@ -56,7 +57,7 @@ When you sign up for either a free trial, or a subscription, you must enable Azu
 
 The Service Trust Portal features and content are accessible from the main menu.
 
-![Service Trust Portal menu.](../media/STPMenus1.png)
+![Service Trust Portal - Service Trust Portal main menu.](../media/86b754e1-c63c-4514-89ac-d014bf334140-2.png)
 
 The following sections describe each item in the main menu.
 
@@ -64,79 +65,84 @@ The following sections describe each item in the main menu.
 
 The **Service Trust Portal** link displays the home page. It provides a quick way to get back to the home page.
 
-### Compliance Manager
+### Certifications, Regulations and Standards
 
-> [!IMPORTANT]
-> Compliance Manager has moved from the Service Trust Portal to  the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. All customer data has been moved over to the new location, so you can continue using Compliance Manager without interruption. Refer to the [Compliance Manager documentation](compliance-manager.md) for setup information and to learn about new features.
+Provides a wealth of security implementation and design information with the goal of making it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. To review content, select one of the following tiles.
 
-### Trust Documents
+- **ISO/IEC** - International Organization for Standardization (ISO) / International Electrotechnical Commission (IEC)
+- **SOC** - System and Organization Controls (SOC) 1, 2, and 3 Reports
+- **GDPR** - General Data Protection Regulation
+- **FedRAMP** - Federal Risk and Authorization Management Program
+- **PCI** - Payment Card Industry (PCI) Data Security Standards (DSS)
+- **CSA Star** - Cloud Security Alliance (CSA) Security, Trust and Assurance Registry (STAR)
+- **Australia IRAP** - Australia Information Security Registered Assesors Program (IRAP)
+- **Singapore MTCS** - Multi-Tier Cloud Security (MTCS) Singapore Standard
+- **Spain ENS** - Spain Esquema Nacional de Seguridad (ENS)
 
-Provides a wealth of security implementation and design information with the goal of making it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. To review content, select one of the following options on the **Trust Documents** pull-down menu.
+### Reports, Whitepapers, and Artifacts
 
-- **Audit Reports:** A list of independent audit and assessment reports on Microsoft's Cloud services is displayed. These reports provide information about Microsoft Cloud services compliance with data protection standards and regulatory requirements, such as:
+General documents relating to the following categories:
 
-  - International Organization for Standardization (ISO)
-  - Service Organization Controls (SOC)
-  - National Institute of Standards and Technology (NIST)
-  - Federal Risk and Authorization Management Program (FedRAMP)
-  - General Data Protection Regulation (GDPR)
+- **BCP and DR** - Business Continuity and Disaster Recovery
+- **Pen Test and Security Assessments** - Attestation of Penetration tests and security assessments conducted by third parties
+- **Privacy and Data Protection** - Privacy and Data Protection Resources
+- **FAQ and Whitepapers** - Whitepapers and answers to frequently asked questions
 
-- **Data Protection:** Contains a wealth of resources such as audited controls, white papers, FAQs, penetration tests, risk assessment tools, and compliance guides.
+### Industry and Regional Resources
 
-- **Azure Security and Compliance Blueprints:** Resources that help you build secure and compliant cloud-based applications. This area contain blueprint-guidance for government, finance, healthcare, and retail verticals.
+Documents the apply to the following industries and regions:
 
-### Industries & Regions
+- **Financial Services** - Resources elaborating regulatory compliance guidance for FSI (by country)
+- **Healthcare and Life Sciences** - Capabilities offered by Microsoft for Healthcare Industry
+- **Media and Entertainment** - Media and Entertainment Industry Resources
+- **United States Government** - Resources exclusively for US Government customers
+- **Regional Resources** - Documents describing compliance of Microsoft's online services with various regional policies and regulations
 
-Provides industry- and region-specific compliance information about Microsoft Cloud services.
+### Resources for your Organization
 
-- **Industries:** At this time, this page provides an industry-specific landing page the for the Financial Services industry. This contains information such as compliance offerings, FAQs, and success stories. Resources for more industries will be released in the future, however you can find resources for more industries by going to the **Trust Documents > Data Protection** page in the STP.
+Documents applying to your organization (restricted by tenant).
 
-- **Regions:** Provides legal opinions on Microsoft Cloud services compliance with various the laws of various countries. Specific countries include Australia, Canada, Czech Republic, Denmark, Germany, Poland, Romania, Spain, and the United Kingdom.
+- **Resources for your Organization** - Documents based on your organization’s subscription and permissions
 
-### Trust Center
+Resources with the series check mark indicate that the document has multiple versions, which can be viewed once you click on the document and click “view all versions” on the download page.  
 
-Links to the [Microsoft Trust Center](https://www.microsoft.com/trust-center), which provides more information about security, compliance, and privacy in the Microsoft Cloud. This includes information about the capabilities in Microsoft Cloud services that you can use to address specific requirements of the GDPR, documentation helpful to your GDPR accountability and to your understanding of the technical and organizational measures Microsoft has taken to support the GDPR.
+:::image type="content" source="../media/stp-series.png" alt-text="Document series are marked and can be viewed on the download page.":::
 
-### My Library
+Filter by date and cloud service - When viewing the available documents, you can filter the results by date range by selecting **Dates** and then selecting the range you want to use.
 
-This new feature lets you save (or *pin*) documents so that you can quickly access them on your My Library page. You can also set up notifications so that Microsoft sends you an email message when documents in your My Library are updated. For more information, see the [My Library](#my-library-1) section in this article.
+:::image type="content" source="../media/stp-documents-filter-date.png" alt-text="Filter available documents by date range.":::
 
-### More
+Document download view - When viewing the available documents, you can filter the results by the applicable **Cloud Service**.
 
-Go to **More > Admin** to access administrative functions that are only available to the global administrator account. This option is visible only when you are signed in as a global administrator. There are two options in the **Admin** pull-down menu:
+:::image type="content" source="../media/stp-documents-filter-service.png" alt-text="Filter available documents by cloud service.":::
 
-- **Settings:** This page lets you assign user roles for Compliance Manager (classic).
+> [!NOTE]
+> Many of the files on the STP require acceptance of a license agreement. Some browser-based PDF viewers do not allow Javascript to run, which prevents the license agreement from being displayed and the file from opening.
 
-- **User Privacy Settings:** This page lets you export a report that contains action item assignments in Compliance Manager (classic) for a specific user. You can also reassign all action items to a different user and remove any assigned action item from the specified user.
+### All Documents
+
+This section displays all available documents. Select the documents to save into your My Library section. Documents are sorted under the same categories shown under Certifications, Standards, Regulations, and Industry Resources. To view all resources for a particular cloud service use the **Cloud Service** filter.
 
 ### Search
 
 Click the magnifying glass in the upper right-hand corner of the Service Trust Portal page to expand the box, enter your search terms, and press **Enter**. The **Search** page is displayed, with the search term displayed in the search box and the search results listed below.
 
-By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, categories of compliance or security practices, regions, and industries. Click the document name link to download the document.
+:::image type="content" source="../media/stp-search.png" alt-text="Search for documents and filter results.":::
+
+By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, and regions. Click the document name link to download the document.
 
 > [!NOTE]
 > Service Trust Portal reports and documents are available to download for at least 12 months after publishing or until a new version of document becomes available.
 
 ## My Library
 
-Use the My Library feature to add documents and resources on the Service Trust Portal to your My Library page. This lets you access documents that are relevant to you in a single place.  To add a document to your My Library, click the **...** menu to the right of a document and then select **Save to library**. You can add multiple documents to your My Library by clicking the checkbox next to one or more documents, and then clicking **Save to library** at the top of the page.
+Use the My Library feature to add documents and resources on the Service Trust Portal to your My Library page. This lets you access documents that are relevant to you in a single place.  To add a document to your My Library, click the elipsis (**...**) menu to the right of a document and then select **Save to library**. You can add multiple documents to your My Library by clicking the checkbox next to one or more documents, and then clicking **Save to library** at the top of the page.
 
 Additionally, the notifications feature lets you configure your My Library so that an email message is sent to you whenever Microsoft updates a document that you've added to your My Library. To set up notifications, go to your My Library and click **Notification Settings**. You can choose the frequency of notifications and specify an email address in your organization to send notifications to. Email notifications include links to the documents that have been updated and a brief description of the update.
 
-Also note that we identify any documents in your My Library that have been updated within the last 30 days, regardless of whether or not you turn on notifications. A brief description of the update is also displayed in a tool tip.
+If a document is part of a series, you will be subscribed to the series and will receive notifications when there is an update to that series. You can view the individual documents and Series documents that you have subscribed to, in 2 sections as shown below:
 
-## Starter packs
-
-Starter packs are a Microsoft-curated set of documentation about Microsoft Cloud services for specific industries. Currently, the Service Trust Portal offers the following three starter packs for financial services organizations. These starter packs help organizations evaluate and assess security, compliance, and privacy in the Microsoft Cloud and provide guidance to help implement Microsoft Cloud services in the highly regulated financial services industry.
-
-- **Evaluation Starter Pack:** Use for early evaluation of the Microsoft cloud for financial services organizations.
-
-- **Assessment Starter Pack:** After evaluation, use the checklists and other guidance in this starter pack to help your organization assess risks related to security, compliance, and privacy.
-
-- **Audit Starter Pack:** User this starter pack for guidance on using auditing controls and other tool to help guide your implementation of Microsoft Cloud services in a way that helps reduce your organization's exposure to risk.
-
-To access these starter packs, go to **Service Trust Portal > Industries & Regions > Industry Solutions > Financial Services**. You can open or a download documents from a starter pack or save them to your My Library.
+:::image type="content" source="../media/stp-my-library.png" alt-text="My Library displays the documents you have subscribed to in two sections.":::
 
 ## Localization support
 
