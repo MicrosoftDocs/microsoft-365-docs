@@ -91,7 +91,7 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of items per public folder mailbox displayed on preview page for searches.|100|
 |Maximum number of items found in all public folder mailbox items displayed on preview page for searches.|200|
 |Maximum number of public folder mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain items that match the search query, only the top 500 mailboxes with the most results are available for preview.|500|
-|The maximum size of an item that can be viewed on the sample page of a draft collection.|10,000,000 bytes (approximately 9.5 MB)|
+|The maximum size of an item that can be viewed on the sample page of a collection estimate.|10,000,000 bytes (approximately 9.5 MB)|
 
 ## Search times
 
