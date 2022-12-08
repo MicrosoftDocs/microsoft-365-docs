@@ -48,6 +48,15 @@ Custom models include:
 
 To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
+When you create a custom model, you'll select the training method associated with the model type. For example, if you want to create an unstructured document processing model, on the **Options for model creation** page where you create a model, you will choose the **Teaching method** option. The following table shows the training method associated with each custom model type.
+
+|Unstructured<br> document processing  |Freeform<br> document processing  |Structured<br> document processing  |
+|---------|---------|---------|
+| ![Tile for teaching method.](../media/content-understanding/teaching-method-tile-2.png) | ![Tile for freeform seletion method.](../media/content-understanding/freeform-selection-method-tile-2.png) | ![Tile for layout method.](../media/content-understanding/layout-method-tile-2.png) |
+
+> [!NOTE]
+> To make the **Freeform selection method** and the **Layout method** options available to users, they first must be configured in the Microsoft 365 admin center.
+
 ### Unstructured document processing
 
 Use the unstructured document processing model to automatically classify documents and extract information from them. It works best with unstructured documents, such as letters or contracts. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
@@ -55,6 +64,8 @@ Use the unstructured document processing model to automatically classify documen
 For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, information exists consistently in the body of each contract renewal document, such as the text string "Service start date of" followed by an actual date.
 
 This model type supports the widest range of file types and only works on files using the Latin alphabet (English characters).
+
+When you create an unstructured document processing model, use the **Teaching method** option.
 
 For more information, see [Overview of unstructured document processing](document-understanding-overview.md).
 
@@ -71,6 +82,8 @@ Because your organization receives letters and documents in large quantities fro
 
 This model type is the best option for English documents in PDF or image files when you don't require automatic classification of the type of document.
 
+When you create a freeform document processing model, use the **Freeform selection method** option.
+
 For more information, see [Overview of freeform document processing](freeform-document-processing-overview.md).
 
 ### Structured document processing
@@ -80,6 +93,8 @@ Use the structured document processing model to automatically identify field and
 Structured document processing models use Microsoft Power Apps [AI Builder](/ai-builder/form-processing-model-overview) document processing (formerly known as form processing) to create and train models within Syntex. 
 
 This model type supports the widest range of languages and is trained to understand the layout of your form from example documents, and then learns to look for the data you need to extract from similar locations. Forms usually have a more structured layout where entities are in the same location (for example, a social security number on a tax form).
+
+When you create a structured document processing model, use the **Layout method** option.
 
 For more information, see [Overview of structured document processing](form-processing-overview.md).
 

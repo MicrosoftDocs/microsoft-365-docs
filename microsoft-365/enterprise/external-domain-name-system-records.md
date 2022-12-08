@@ -101,7 +101,7 @@ These DNS records apply to Teams, Skype for Business Online or both as indicated
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF cannot protect against. In order to protect against these, once you have set up SPF, you should also configure DKIM and DMARC for Office 365. To get started, see [Use DKIM to validate outbound email sent from your domain in Office 365](../security/office-365-security/use-dkim-to-validate-outbound-email.md). Next, see [Use DMARC to validate email in Office 365](../security/office-365-security/use-dmarc-to-validate-email.md).
+> SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF cannot protect against. In order to protect against these, once you have set up SPF, you should also configure DKIM and DMARC for Office 365. To get started, see [Use DKIM to validate outbound email sent from your domain in Office 365](../security/office-365-security/email-authentication-dkim-configure.md). Next, see [Use DMARC to validate email in Office 365](../security/office-365-security/email-authentication-dmarc-configure.md).
 
 SPF records are TXT records that help to prevent other people from using your domain to send spam or other malicious email. Sender policy framework (SPF) records work by identifying the servers that are authorized to send email from your domain.
 
@@ -123,14 +123,14 @@ An email system that receives an email from your domain looks at the SPF record,
 For scenarios where you're not just using Exchange Online email for Office 365 (for example, when you use email originating from SharePoint Online as well), use the following table to determine what to include in the value of the record.
 
 > [!NOTE]
-> If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. Learn how: [Set up SPF records in Office 365 to help prevent spoofing](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). You can also learn much more about how SPF works with Office 365 by reading [How Office 365 uses Sender Policy Framework (SPF) to help prevent spoofing](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md).
+> If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. Learn how: [Set up SPF records in Office 365 to help prevent spoofing](../security/office-365-security/email-authentication-spf-configure.md). You can also learn much more about how SPF works with Office 365 by reading [How Office 365 uses Sender Policy Framework (SPF) to help prevent spoofing](../security/office-365-security/email-authentication-anti-spoofing.md).
 
 |Number|If you're using...|Purpose|Add these includes|
 |---|---|---|---|
 |1|All email systems (required)|All SPF records start with this value|v=spf1|
 |2|Exchange Online (common)|Use with just Exchange Online|include:spf.protection.outlook.com|
 |3|Third-party email system (less common)||include:\<email system like mail.contoso.com\>|
-|4|On-premises mail system (less common)|Use if you're using Exchange Online Protection or Exchange Online plus another mail system|ip4:\<0.0.0.0\> <br/> ip6:\< : : \> <br/> include:\<mail.contoso.com\> <br/> The value in brackets (\<\>) should be other mail systems that will send email for your domain.|
+|4|On-premises mail system (less common)|Use if you're using Exchange Online Protection or Exchange Online plus another mail system|`ip4:<0.0.0.0>` <br/> `ip6:< : : >` <br/> include:\<mail.contoso.com\> <br/> The value in brackets (\<\>) should be other mail systems that will send email for your domain.|
 |5|All email systems (required)||-all|
 
 ### Example: Adding to an existing SPF record
@@ -179,6 +179,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-These are some common examples that can help you adapt your existing SPF record when you add your domain to Office 365 for email. If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. Learn how: [Set up SPF records in Office 365 to help prevent spoofing](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+These are some common examples that can help you adapt your existing SPF record when you add your domain to Office 365 for email. If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. Learn how: [Set up SPF records in Office 365 to help prevent spoofing](../security/office-365-security/email-authentication-spf-configure.md).
 
 Here's a short link you can use to come back: <https://aka.ms/o365edns>
