@@ -36,10 +36,10 @@ An SPF TXT record is a DNS record that helps prevent spoofing and phishing by ve
 > [!NOTE]
 > SPF record types were deprecated by the Internet Engineering Task Force (IETF) in 2014. Instead, ensure that you use TXT records in DNS to publish your SPF information. The rest of this article uses the term SPF TXT record for clarity.
 
-Domain administrators publish SPF information in TXT records in DNS. The SPF information identifies authorized outbound email servers. Destination email systems verify that messages originate from authorized outbound email servers. If you're already familiar with SPF, or you have a simple deployment, and just need to know what to include in your SPF TXT record in DNS for Microsoft 365, you can go to [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). If you don't have a deployment that is fully hosted in Microsoft 365, or you want more information about how SPF works or how to troubleshoot SPF for Microsoft 365, keep reading.
+Domain administrators publish SPF information in TXT records in DNS. The SPF information identifies authorized outbound email servers. Destination email systems verify that messages originate from authorized outbound email servers. If you're already familiar with SPF, or you have a simple deployment, and just need to know what to include in your SPF TXT record in DNS for Microsoft 365, you can go to [Set up SPF in Microsoft 365 to help prevent spoofing](email-authentication-spf-configure.md). If you don't have a deployment that is fully hosted in Microsoft 365, or you want more information about how SPF works or how to troubleshoot SPF for Microsoft 365, keep reading.
 
 > [!NOTE]
-> Previously, you had to add a different SPF TXT record to your custom domain if you also used SharePoint Online. This is no longer required. This change should reduce the risk of SharePoint Online notification messages ending up in the Junk Email folder. You do not need to make any changes immediately, but if you receive the "too many lookups" error, modify your SPF TXT record as described in [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+> Previously, you had to add a different SPF TXT record to your custom domain if you also used SharePoint Online. This is no longer required. This change should reduce the risk of SharePoint Online notification messages ending up in the Junk Email folder. You do not need to make any changes immediately, but if you receive the "too many lookups" error, modify your SPF TXT record as described in [Set up SPF in Microsoft 365 to help prevent spoofing](email-authentication-spf-configure.md).
 
 ## How SPF works to prevent spoofing and phishing in Microsoft 365
 <a name="HowSPFWorks"> </a>
@@ -113,7 +113,7 @@ In addition to IP addresses, you can also configure your SPF TXT record to inclu
 v=spf1 include:contoso.net include:contoso.org -all
 ```
 
-When the receiving server sees this record in DNS, it also performs a DNS lookup on the SPF TXT record for contoso.net and then for contoso.org. If it finds another include statement within the records for contoso.net or contoso.org, it will follow those too. In order to help prevent denial of service attacks, the maximum number of DNS lookups for a single email message is 10. Each include statement represents an additional DNS lookup. If a message exceeds the 10 limit, the message fails SPF. Once a message reaches this limit, depending on the way the receiving server is configured, the sender may get a message that says the message generated "too many lookups" or that the "maximum hop count for the message has been exceeded" (which can happen when the lookups loop and surpass the DNS timeout). For tips on how to avoid this, see [Troubleshooting: Best practices for SPF in Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
+When the receiving server sees this record in DNS, it also performs a DNS lookup on the SPF TXT record for contoso.net and then for contoso.org. If it finds another include statement within the records for contoso.net or contoso.org, it will follow those too. In order to help prevent denial of service attacks, the maximum number of DNS lookups for a single email message is 10. Each include statement represents an additional DNS lookup. If a message exceeds the 10 limit, the message fails SPF. Once a message reaches this limit, depending on the way the receiving server is configured, the sender may get a message that says the message generated "too many lookups" or that the "maximum hop count for the message has been exceeded" (which can happen when the lookups loop and surpass the DNS timeout). For tips on how to avoid this, see [Troubleshooting: Best practices for SPF in Microsoft 365](email-authentication-anti-spoofing.md#SPFTroubleshoot).
 
 ## Requirements for your SPF TXT record and Microsoft 365
 <a name="SPFReqsinO365"> </a>
@@ -156,7 +156,7 @@ where:
 
 - **ip4** indicates that you're using IP version 4 addresses. **ip6** indicates that you're using IP version 6 addresses. If you're using IPv6 IP addresses, replace **ip4** with **ip6** in the examples in this article. You can also specify IP address ranges using CIDR notation, for example **ip4:192.168.0.1/26**.
 
-- _IP address_ is the IP address that you want to add to the SPF TXT record. Usually, this is the IP address of the outbound mail server for your organization. You can list multiple outbound mail servers. For more information, see [Example: SPF TXT record for multiple outbound on-premises mail servers and Microsoft 365](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365).
+- _IP address_ is the IP address that you want to add to the SPF TXT record. Usually, this is the IP address of the outbound mail server for your organization. You can list multiple outbound mail servers. For more information, see [Example: SPF TXT record for multiple outbound on-premises mail servers and Microsoft 365](email-authentication-anti-spoofing.md#ExampleSPFMultipleMailServerO365).
 
 - _domain name_ is the domain you want to add as a legitimate sender. For a list of domain names you should include for Microsoft 365, see [External DNS records required for SPF](../../enterprise/external-domain-name-system-records.md).
 
@@ -204,9 +204,9 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.ou
 ## Next steps: Set up SPF for Microsoft 365
 <a name="SPFNextSteps"> </a>
 
-Once you've formulated your SPF TXT record, follow the steps in [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md) to add it to your domain.
+Once you've formulated your SPF TXT record, follow the steps in [Set up SPF in Microsoft 365 to help prevent spoofing](email-authentication-spf-configure.md) to add it to your domain.
 
-Although SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF can't protect against. In order to protect against these, once you have set up SPF, you should also configure DKIM and DMARC for Microsoft 365. To get started, see [Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](use-dkim-to-validate-outbound-email.md). Next, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
+Although SPF is designed to help prevent spoofing, but there are spoofing techniques that SPF can't protect against. In order to protect against these, once you have set up SPF, you should also configure DKIM and DMARC for Microsoft 365. To get started, see [Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](email-authentication-dkim-configure.md). Next, see [Use DMARC to validate email in Microsoft 365](email-authentication-dmarc-configure.md).
 
 ## Troubleshooting: Best practices for SPF in Microsoft 365
 <a name="SPFTroubleshoot"> </a>

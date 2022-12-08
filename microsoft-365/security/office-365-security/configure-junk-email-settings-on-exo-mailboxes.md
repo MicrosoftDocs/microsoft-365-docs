@@ -29,14 +29,14 @@ ms.service: microsoft-365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 organizations with mailboxes in Exchange Online, organizational anti-spam settings are controlled by Exchange Online Protection (EOP). For more information, see [Anti-spam protection in EOP](anti-spam-protection.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online, organizational anti-spam settings are controlled by Exchange Online Protection (EOP). For more information, see [Anti-spam protection in EOP](anti-spam-protection-about.md).
 
 But, there are also specific anti-spam settings that admins can configure on individual mailboxes in Exchange Online:
 
 > [!NOTE]
 > EOP now uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet no longer has any effect on mail flow. EOP routes messages based on the actions set in anti-spam policies. The user's Safe Sender list and Blocked Senders list will continue to work as usual.
 
-- **Move messages to the Junk Email folder based on anti-spam policies**: When an anti-spam policy is configured with the action **Move message to Junk Email folder** for a spam filtering verdict, the message is moved to the Junk Email folder after the message is delivered to the mailbox. For more information about spam filtering verdicts in anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md). Similarly, if zero-hour auto purge (ZAP) determines a delivered message is spam or phish, the message is moved to the Junk Email folder for **Move message to Junk Email folder** spam filtering verdict actions. For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
+- **Move messages to the Junk Email folder based on anti-spam policies**: When an anti-spam policy is configured with the action **Move message to Junk Email folder** for a spam filtering verdict, the message is moved to the Junk Email folder after the message is delivered to the mailbox. For more information about spam filtering verdicts in anti-spam policies, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md). Similarly, if zero-hour auto purge (ZAP) determines a delivered message is spam or phish, the message is moved to the Junk Email folder for **Move message to Junk Email folder** spam filtering verdict actions. For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
 
 - **Junk email settings that users configure for themselves in Outlook or Outlook on the web**: The _safelist collection_ is the Safe Senders list, the Safe Recipients list, and the Blocked Senders list on each mailbox. The entries in these lists determine whether the message is moved to the Inbox or the Junk Email folder. Users can configure the safelist collection for their own mailbox in Outlook or Outlook on the web (formerly known as Outlook Web App). Admins can configure the safelist collection on any user's mailbox.
 

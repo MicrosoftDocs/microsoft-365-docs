@@ -71,7 +71,7 @@
 #### [Onboard Windows Client using Group Policy](configure-endpoints-gp.md)
 #### [Onboard Windows Client using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-#### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
+#### [Onboard Windows 10 multi-session devices in Azure Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
@@ -201,7 +201,7 @@
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
-### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
+### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-endpoint%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-endpoint%2Ftoc.json)
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
@@ -211,7 +211,6 @@
 ### [Configure portal settings]()
 #### [Configure general Defender for Endpoint settings](preferences-setup.md)
 #### [General]()
-##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
 ##### [Configure vulnerability email notifications](configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](advanced-features.md)
@@ -247,7 +246,7 @@
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
-#### [Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md)
+#### [Microsoft Defender for IoT integration](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint/)
 #### [Enable Corelight data integration](corelight-integration.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
@@ -501,6 +500,8 @@
 
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
+### [Advanced deployment guidance - Microsoft Defender for Endpoint on Linux](comprehensive-guidance-on-linux-deployment.md)
+
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
 #### [Configure Microsoft Defender for Cloud Apps integration](microsoft-cloud-app-security-config.md)
@@ -577,6 +578,9 @@
 ####### [Submit Indicator](post-ti-indicator.md)
 ####### [Import Indicator](import-ti-indicators.md)
 ####### [Delete Indicator](delete-ti-indicator-by-id.md)
+
+###### [Information gathering]()
+####### [Export information gathering assessment](get-assessment-information-gathering.md)
 
 ###### [IP]()
 ####### [Get IP related alerts](get-ip-related-alerts.md)

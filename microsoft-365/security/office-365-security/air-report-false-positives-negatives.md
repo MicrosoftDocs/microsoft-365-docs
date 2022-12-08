@@ -42,7 +42,7 @@ Use this article as a guide.
 
 ## Report a false positive/negative to Microsoft for analysis
 
-If AIR in Microsoft Defender for Office 365 missed an email message, an email attachment, a URL in an email message, or a URL in an Office file, you can [submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](admin-submission.md).
+If AIR in Microsoft Defender for Office 365 missed an email message, an email attachment, a URL in an email message, or a URL in an Office file, you can [submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning](submissions-admin.md).
 
 You can also [Submit a file to Microsoft for malware analysis](https://www.microsoft.com/wdsi/filesubmission).
 
@@ -66,7 +66,7 @@ With Threat Explorer, your security operations team can find an email affected b
 |Scenario|Undo Options|Learn more|
 |---|---|---|
 |An email message was routed to a user's Junk Email folder|<ul><li>Move the message to the user's Deleted Items folder</li><li>Move the message to the user's Inbox</li><li>Delete the message</li></ul>|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
-|An email message or a file was quarantined|<ul><li>Release the email or file</li><li> Delete the email or file</li></ul>|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
+|An email message or a file was quarantined|<ul><li>Release the email or file</li><li> Delete the email or file</li></ul>|[Manage quarantined messages as an admin](quarantine-admin-manage-messages-files.md)|
 
 ### Undo an action in the Action center
 
