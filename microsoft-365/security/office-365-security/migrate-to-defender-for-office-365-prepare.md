@@ -70,8 +70,8 @@ Review your existing protection features in Microsoft 365 and consider removing 
 - If you're using any sort of complex routing (for example [Centralized Mail Transport](/exchange/transport-options)), you should consider simplifying your routing and thoroughly documenting it. External hops, especially after Microsoft 365 has already received the message, can complicate configuration and troubleshooting.
 
 - Outbound and relay mail flow is out of the scope for this article. However, be aware that you might need to do one or more of the following steps:
-  - Verify that all of the domains that you use to send email have the proper SPF records. For more information, see [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
-  - We strongly recommend that you setup DKIM signing in Microsoft 365. For more information, see [Use DKIM to validate outbound email](use-dkim-to-validate-outbound-email.md).
+  - Verify that all of the domains that you use to send email have the proper SPF records. For more information, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
+  - We strongly recommend that you setup DKIM signing in Microsoft 365. For more information, see [Use DKIM to validate outbound email](email-authentication-dkim-configure.md).
   - If you're not routing mail directly from Microsoft 365, you need to change that routing by removing or changing the outbound connector.
 
 - Using Microsoft 365 to relay email from your on-premises email servers can be a complex project in itself. A simple example is a small number of apps or devices that send most of their messages to internal recipients and aren't used for mass mailings. See [this guide](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) for details. More extensive environments will need to be more thoughtful. Marketing email and messages that could be seen as spam by recipients are not allowed.
@@ -90,14 +90,14 @@ If you don't turn off message modification features in your existing protection 
 
 To recreate external sender identification in Microsoft 365, you have the following options:
 
-- The [Outlook external sender call-out feature](https://techcommunity.microsoft.com/t5/exchange-team-blog/native-external-sender-callouts-on-email-in-outlook/ba-p/2250098), together with [first contact safety tips](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+- The [Outlook external sender call-out feature](https://techcommunity.microsoft.com/t5/exchange-team-blog/native-external-sender-callouts-on-email-in-outlook/ba-p/2250098), together with [first contact safety tips](anti-phishing-policies-about.md#first-contact-safety-tip).
 - Mail flow rules (also known as transport rules). For more information, see [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
 
 Microsoft is working with the industry to support the Authenticated Received Chain (ARC) standard in the near future. If you wish to leave any message modification features enabled at your current mail gateway provider, then we recommend contacting them about their plans to support this standard.
 
 ## Account for any active phishing simulations
 
-If you have active third-party phishing simulations, you need to prevent the messages, links, and attachments from being identified as phishing by Defender for Office 365. For more information, see [Configure third-party phishing simulations in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
+If you have active third-party phishing simulations, you need to prevent the messages, links, and attachments from being identified as phishing by Defender for Office 365. For more information, see [Configure third-party phishing simulations in the advanced delivery policy](skip-filtering-phising-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 
 ## Define spam and bulk user experiences
 
@@ -121,7 +121,7 @@ If you have active third-party phishing simulations, you need to prevent the mes
 
 ## Identify and designate priority accounts
 
-If the feature is available to you, **priority accounts** and **user tags** can help to identify your important Microsoft 365 users so they stand out in reports. For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md) and [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
+If the feature is available to you, **priority accounts** and **user tags** can help to identify your important Microsoft 365 users so they stand out in reports. For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md) and [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
 ## Next step
 

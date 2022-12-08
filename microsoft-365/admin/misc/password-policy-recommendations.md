@@ -153,8 +153,6 @@ Want to know more about managing passwords? Here is some recommended reading:
 
 - [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018)
 
-- [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
-
 ## Related content
 
 [Reset passwords](../add-users/reset-passwords.md) (article)\

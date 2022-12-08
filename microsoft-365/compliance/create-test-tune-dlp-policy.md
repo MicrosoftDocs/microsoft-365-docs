@@ -36,9 +36,9 @@ DLP examines email messages and files for sensitive information, like a credit c
 
 ## Permissions
 
-Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:
+Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow the steps in [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group) to add your users to the **DLP Compliance Management** role group.
   
-1. Create a group in Microsoft 365 and add compliance officers to it.
+<!--1. Create a group in Microsoft 365 and add compliance officers to it.
 
 2. Create a role group on the **Permissions** page of the Microsoft Purview compliance portal. 
 
@@ -48,22 +48,20 @@ Members of your compliance team who will create DLP policies need permissions to
 
 Use the **View-Only DLP Compliance Management** role to create role group with view-only privileges to the DLP policies and DLP reports.
 
-For more information, see [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group).
+For more information, see [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group).-->
   
-These permissions are required to create and apply a DLP policy not to enforce policies.
+### Roles and Role Groups
 
-### Roles and Role Groups in preview
+There are roles and role groups that you can use to fine tune your access controls.
 
-There are roles and role groups in preview that you can test out to fine tune your access controls.
-
-Here's a list of applicable roles that are in preview. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable roles that you can use to fine tune your access controls. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable role groups that you can use. To learn more, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
