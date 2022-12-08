@@ -3,7 +3,7 @@ title: "Connect an on-premises network to a Microsoft Azure virtual network"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/21/2019
+ms.date: 
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 f1.keywords:
@@ -45,14 +46,12 @@ The Azure virtual network hosts virtual machines. Network traffic originating fr
 >You can also use [ExpressRoute](https://azure.microsoft.com/services/expressroute/), which is a direct connection between your organization and Microsoft's network. Traffic over ExpressRoute does not travel over the public Internet. This article does not describe the use of ExpressRoute.
 >
   
-To set up the VPN connection between your Azure virtual network and your on-premises network, follow these steps: 
+To set up the VPN connection between your Azure virtual network and your on-premises network, follow these steps:
   
 1. **On-premises:** Define and create an on-premises network route for the address space of the Azure virtual network that points to your on-premises VPN device.
-    
-2. **Microsoft Azure:** Create an Azure virtual network with a site-to-site VPN connection. 
-    
+2. **Microsoft Azure:** Create an Azure virtual network with a site-to-site VPN connection.
 3. **On premises:** Configure your on-premises hardware or software VPN device to terminate the VPN connection, which uses Internet Protocol security (IPsec).
-    
+
 After you establish the site-to-site VPN connection, you add Azure virtual machines to the subnets of the virtual network.
   
 ## Plan your Azure virtual network

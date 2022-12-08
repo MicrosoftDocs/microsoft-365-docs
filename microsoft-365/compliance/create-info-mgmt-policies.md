@@ -36,6 +36,8 @@ You can create an information management policy can at three different locations
 
 For more information, see [Introduction to information management policies](intro-to-info-mgmt-policies.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create a policy for multiple content types within a site collection
 <a name="__toc261001590"> </a>
 

@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -25,6 +25,8 @@ description: "Finland passport number sensitive information type entity definiti
 # Finland passport number
 
 This entity is available in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

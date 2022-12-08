@@ -46,6 +46,8 @@ Configuring the default link type for documents might also be appropriate withou
 - Documents labeled **General** have a default sharing link type that restricts sharing to people in your organization.
 - Documents labeled **Personal** have a default sharing link type that allows sharing to anyone with the link.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Prerequisites
 
 To apply the default sharing link type for sites, sensitivity labels must be enabled for containers. If this capability isn't yet enabled for your tenant, see [How to enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).

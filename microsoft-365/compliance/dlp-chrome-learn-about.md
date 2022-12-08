@@ -29,6 +29,8 @@ description: "The Microsoft Purview Extension extends monitoring and control of 
 
 Once the Extension is installed on a Windows 10 device, organizations can monitor when a user attempts to access or upload a sensitive item to a cloud service using Google Chrome and enforce protective actions via DLP.  
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Activities you can monitor and take action on
 
 The extension enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.

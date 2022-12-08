@@ -9,6 +9,7 @@ ms.topic: interactive-tutorial
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Strat_O365_Enterprise
 - SPO_Content
 f1.keywords:

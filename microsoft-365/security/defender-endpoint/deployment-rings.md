@@ -15,6 +15,7 @@ ms.collection:
   - m365-security
   - m365solution-endpointprotect
   - highpri
+  - tier1
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150

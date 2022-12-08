@@ -8,7 +8,8 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - Ent_O365
 - SPO_Content
 f1.keywords:

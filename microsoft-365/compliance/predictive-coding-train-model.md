@@ -25,6 +25,8 @@ After you create a predictive coding model in Microsoft Purview eDiscovery (Prem
 
 To review the predictive coding workflow, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you train a model
 
 - During a training round, label items as **Relevant** or **Not relevant** based on the relevancy of the content in the document. Don't base your decision on the values in the metadata fields. For example, for email messages or Teams conversations, don't base your labeling decision on the message participants.

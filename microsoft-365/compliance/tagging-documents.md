@@ -35,6 +35,8 @@ When experts, attorneys, or other users review content in a review set, their op
 > [!NOTE]
 > The scope of tags is an eDiscovery (Premium) case. That means a case can only have one set of tags that reviewers can use to tag review set documents. You can't set up a different set of tags for use in different review sets in the same case.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Tag types
 
 eDiscovery (Premium) provides two types of tags:

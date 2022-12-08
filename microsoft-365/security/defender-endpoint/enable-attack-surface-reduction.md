@@ -16,6 +16,7 @@ ms.subservice: mde
 ms.topic: how-to
 ms.collection: 
 - m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 search.appverid: met150
@@ -304,6 +305,7 @@ Example:
 
    > [!WARNING]
    > Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
+   > The rule ID should not have any leading or trailing spaces.
 
 ### PowerShell
 

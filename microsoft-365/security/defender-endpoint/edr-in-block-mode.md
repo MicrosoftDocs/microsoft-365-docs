@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
@@ -16,7 +16,9 @@ ms.custom:
   - edr
   - admindeeplinkDEFENDER
 ms.date: 08/19/2022
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.subservice: mde
 search.appverid: met150
 ---

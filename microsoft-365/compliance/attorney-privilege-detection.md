@@ -24,6 +24,8 @@ search.appverid:
 
 A major and costly aspect of the review phase of any eDiscovery process is reviewing documents for privileged content. Microsoft Purview eDiscovery (Premium) provides machine learning-based detection of privileged content to make this process more efficient. This feature is called *attorney-client privilege detection*.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How does it work?
 
 When attorney-client privilege detection is enabled, all documents in a review set will be processed by the attorney-client privilege detection model when you [analyze the data](analyzing-data-in-review-set.md) in the review set. The model looks for two things:

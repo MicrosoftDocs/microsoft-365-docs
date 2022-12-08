@@ -13,8 +13,8 @@ ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde

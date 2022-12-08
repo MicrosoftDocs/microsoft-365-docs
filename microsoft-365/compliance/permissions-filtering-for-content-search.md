@@ -23,7 +23,9 @@ ms.custom: seo-marvel-apr2020
 
 # Configure permissions filtering for eDiscovery
 
-You can use search permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your organization. You can also use permissions filtering to let that same eDiscovery manager search only for mailbox or site content that meets a specific search criteria. For example, you might let an eDiscovery manager search only the mailboxes of users in a specific location or department. You do this by creating a filter that uses a supported recipient filter to limit which mailboxes a specific user or group of users can search. You can also create a filter that specifies what mailbox content a user can search for. This is done by creating a filter that uses a searchable message property. Similarly, you can let an eDiscovery manager search only specific SharePoint sites in your organization. You do this by creating a filter that limits which site can be searched. You can also create a filter that specifies what site content can be searched. This is done by creating a filter that uses a searchable site property.
+You can use search permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your organization. You can also use permissions filtering to let that same eDiscovery manager search only for mailbox or site content that meets a specific search criteria. 
+
+For example, you might want an eDiscovery manager to search only the mailboxes of users in a specific location or department. You do this by creating a filter that uses a supported recipient filter to limit which mailboxes a specific user or group of users can search. You can also create a filter that specifies what mailbox content a user can search for. This is done by creating a filter that uses a searchable message property. Similarly, you can let an eDiscovery manager search only specific SharePoint sites in your organization. You do this by creating a filter that limits which site can be searched. You can also create a filter that specifies what site content can be searched. This is done by creating a filter that uses a searchable site property.
 
 Search permissions filters are applied when you search for content using Content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium) in the Microsoft Purview compliance portal. When a search permissions filter is applied to a specific user, that user can perform the following search-related actions:
 
@@ -34,30 +36,27 @@ Search permissions filters are applied when you search for content using Content
 
 You can also use search permissions filtering to create logical boundaries (called _compliance boundaries_) within an organization that control the user content locations (such as mailboxes, SharePoint sites, and OneDrive accounts) that specific eDiscovery managers can search. For more information, see [Set up compliance boundaries for eDiscovery investigations](set-up-compliance-boundaries.md).
 
-The following four cmdlets in Security & Compliance PowerShell let you configure and manage search permissions filters:
+The following four cmdlets in [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) let you configure and manage search permissions filters:
 
 - [New-ComplianceSecurityFilter](#new-compliancesecurityfilter)
 - [Get-ComplianceSecurityFilter](#get-compliancesecurityfilter)
 - [Set-ComplianceSecurityFilter](#set-compliancesecurityfilter)
 - [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Requirements to configure permissions filtering
 
-- To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the compliance portal. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
-
+- To run the compliance security filter cmdlets, you have to be a member of the *Organization Management* role group in the compliance portal. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 - You have to connect to both Exchange Online and Security & Compliance PowerShell to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online PowerShell. See the steps in the next section.
-
 - See the [More information](#more-information) section for additional information about search permissions filters.
-
 - Search permissions filtering is applicable to inactive mailboxes, which means you can use mailbox and mailbox content filtering to limit who can search an inactive mailbox. See the [More information](#more-information) section for additional information about permissions filtering and inactive mailboxes.
-
 - Search permissions filtering can't be used to limit who can search public folders in Exchange.
-
-- There is no limit to the number of search permissions filters that can be created in an organization. However, a search query can have a maximum of 100 conditions. In this case, a condition is defined as something that's connected to the query by a Boolean operator (such as **AND**, **OR**, and **NEAR**). The limit for the number of conditions includes the search query itself plus all search permissions filters that are applied to the user who runs the search. Therefore, the more search permissions filters you have (especially if these filters are applied to the same user or group of users), the better the chance of exceeding the maximum number of conditions for a search. To prevent your organization from reaching the conditions limit, keep the number of search permissions filters in your organization to few as possible to meet your business requirements. For more information, see [Set up compliance boundaries for eDiscovery investigations](set-up-compliance-boundaries.md#frequently-asked-questions).
+- There's no limit to the number of search permissions filters that can be created in an organization. However, a search query can have a maximum of 100 conditions. In this case, a condition is defined as something that's connected to the query by a Boolean operator (such as **AND**, **OR**, and **NEAR**). The limit for the number of conditions includes the search query itself plus all search permissions filters that are applied to the user who runs the search. Therefore, the more search permissions filters you have (especially if these filters are applied to the same user or group of users), the better the chance of exceeding the maximum number of conditions for a search. To prevent your organization from reaching the conditions limit, keep the number of search permissions filters in your organization to few as possible to meet your business requirements. For more information, see [Set up compliance boundaries for eDiscovery investigations](set-up-compliance-boundaries.md#frequently-asked-questions).
 
 ## Connect to Exchange Online and Security & Compliance PowerShell in a single session
 
-Before you can successfully run the script in this section, you have to download and install the Exchange Online PowerShell module. For information, see [Install and maintain the Exchange Online Powershell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
+Before you can successfully run the script in this section, you have to download and install the Exchange Online PowerShell module. For information, see [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).
 
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of **.ps1**. For example, you could save it to a file named **ConnectEXO-SCC.ps1**.
 
@@ -80,7 +79,6 @@ How do you know if this worked? After you run the script, cmdlets from Exchange 
 For troubleshooting PowerShell connection errors, see:
 
 - [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
-
 - [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
 
 ## New-ComplianceSecurityFilter
@@ -120,7 +118,6 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
 - **Site and site content filtering:** There are two SharePoint- and OneDrive-related filters that you can use to specify what site or site content the assigned users can search.
 
   - **Site_**_SearchableSiteProperty_
-
   - **SiteContent_**_SearchableSiteProperty_
 
    These two filters are interchangeable. For example, `"Site_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` and  `"SiteContent_Path -like 'https://contoso.sharepoint.com/sites/doctors'"` return the same results. For a list of searchable site properties, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md#searchable-site-properties)  For a more complete list, see [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Properties marked with a **Yes** in the **Queryable** column can be used to create a site or site content filter.
@@ -131,7 +128,6 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
 Keep the following considerations in mind when configuring the _Filters_ parameter for search permissions filters:
 
 - Unlike mailboxes, there isn't a content location filter for sites even though the _Site_ filter looks like a location filter. All filters for SharePoint and OneDrive are content filters (which is also why _Site\__ and _SiteContent\__ filters are interchangeable) because site-related properties like _Path_ are stamped directly on the documents. Why is this? It's a result of the way that SharePoint is designed. In SharePoint, there isn't a "site object" with properties, like there is with Exchange mailboxes. Therefore, the _Path_ property is stamped on the document and contains the URL of the site where the document is located. This is why a _Site_ filter is considered a content filter and not a content location filter.
-
 - You have to create a search permissions filter to explicitly prevent users from searching content locations in a specific service (such as preventing a user from searching any Exchange mailbox or any SharePoint site). In other words, creating a search permissions filter that allows a user to search all SharePoint sites in the organization doesn't prevent that user from searching mailboxes. For example, to allow SharePoint admins to only search SharePoint sites, you have to create a filter that prevents them from searching mailboxes. Similarly, to allow Exchange admins to only search mailboxes, you have to create a filter that prevents them from searching sites.
 
 ### Users
@@ -155,7 +151,6 @@ An alternative to using a filters list would be to create two separate search pe
 Keep the following things in mind about using a filters list:
 
 - You have to use a filters list to create a filter that includes a **Mailbox** filter and a **MailboxContent** filter.
-
 - Each component of a filters list can contain a complex filter syntax. For example, the mailbox and site filters can contain multiple filters separated by an **-or** operator:
 
    ```powershell
@@ -178,7 +173,7 @@ This example allows the user annb@contoso.com to perform search actions only for
 New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com -Filters "Mailbox_CountryCode  -eq '124'"
 ```
 
-This example allows the users donh and suzanf to search only the mailboxes and OneDrive accounts that have the value 'Marketing' for the CustomAttribute1 mailbox property.
+This example allows the users *donh* and *suzanf* to search only the mailboxes and OneDrive accounts that have the value 'Marketing' for the CustomAttribute1 mailbox property.
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'"
@@ -320,7 +315,7 @@ The **Remove-ComplianceSecurityFilter** is used to delete a search filter. Use t
 
 ## More information
 
-- **How does search permissions filtering work?** The permissions filter is appended to the search query when a search is run. The permissions filter is joined to the search query by the **AND** Boolean operator. The query logic for the search query and the permissions filter would look like this:
+**How does search permissions filtering work?** The permissions filter is appended to the search query when a search is run. The permissions filter is joined to the search query by the **AND** Boolean operator. The query logic for the search query and the permissions filter would look like this:
 
   ```text
   <SearchQuery> AND <PermissionsFilter>
@@ -328,7 +323,7 @@ The **Remove-ComplianceSecurityFilter** is used to delete a search filter. Use t
 
   For example, you have a permissions filter that allows Bob to perform all search actions on the mailboxes of members of the Workers distribution group. Then Bob runs a search on all mailboxes in the organization with the search query  `sender:jerry@adatum.com`. Because the permissions filter and the search query are logically combined by an **AND** operator, the search returns any message sent by jerry@adatum.com to any member of the Workers distribution group.
 
-- **What happens if you have multiple search permissions filters?** In a search query, multiple permissions filters are combined by **OR** Boolean operators. So results will be returned if any of the filters are true. In a search, all filters (combined by **OR** operators) are then combined with the search query by the **AND** operator.
+**What happens if you have multiple search permissions filters?** In a search query, multiple permissions filters are combined by **OR** Boolean operators. So results will be returned if any of the filters are true. In a search, all filters (combined by **OR** operators) are then combined with the search query by the **AND** operator.
 
   ```text
   <SearchQuery> AND  (<PermissionsFilter1> OR <PermissionsFilter2> OR <PermissionsFilter3>)
@@ -336,17 +331,17 @@ The **Remove-ComplianceSecurityFilter** is used to delete a search filter. Use t
 
   Let's take the previous example, where a search filter allows Bob to search only the mailboxes of the members of the Workers distribution group. Then we create another filter that prevents Bob from searching Phil's mailbox ("Mailbox_Alias -ne 'Phil'"). And let's also assume that Phil is a member of the Workers group. When Bob runs a search (from the previous example) on all mailboxes in the organization, search results are returned for Phil's mailbox even though you applied filter to prevent Bob from searching Phil's mailbox. This is because the first filter, which allows Bob to search the Workers group, is true. And because Phil is a member of the Workers group, Bob can search Phil's mailbox.
 
-- **Does search permissions filtering work for inactive mailboxes?** Yes, you can use mailbox and mailbox content filters to limit who can search inactive mailboxes in your organization. Like a regular mailbox, an inactive mailbox has to be configured with the recipient property that's used to create a permissions filter. If necessary, you can use the **Get-Mailbox -InactiveMailboxOnly** command to display the properties of inactive mailboxes. For more information, see [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md).
+**Does search permissions filtering work for inactive mailboxes?** Yes, you can use mailbox and mailbox content filters to limit who can search inactive mailboxes in your organization. Like a regular mailbox, an inactive mailbox has to be configured with the recipient property that's used to create a permissions filter. If necessary, you can use the **Get-Mailbox -InactiveMailboxOnly** command to display the properties of inactive mailboxes. For more information, see [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md).
 
-- **Does search permissions filtering work for public folders?** No. As previously explained, search permissions filtering can't be used to limit who can search public folders in Exchange. For example, items in public folder locations can't be excluded from the search results by a permissions filter.
+**Does search permissions filtering work for public folders?** No. As previously explained, search permissions filtering can't be used to limit who can search public folders in Exchange. For example, items in public folder locations can't be excluded from the search results by a permissions filter.
 
-- **Does allowing a user to search all content locations in a specific service also prevent them from searching content locations in a different service?** No. As previously explained, you have to create a search permissions filter to explicitly prevent users from searching content locations in a specific service (such as preventing a user from searching any Exchange mailbox or any SharePoint site). In other words, creating a search permissions filter that allows a user to search all SharePoint sites in the organization doesn't prevent that user from searching mailboxes. For example, to allow SharePoint admins to only search SharePoint sites, you have to create a filter that prevents them from searching mailboxes. Similarly, to allow Exchange admins to only search mailboxes, you have to create a filter that prevents them from searching sites.
+**Does allowing a user to search all content locations in a specific service also prevent them from searching content locations in a different service?** No. As previously explained, you have to create a search permissions filter to explicitly prevent users from searching content locations in a specific service (such as preventing a user from searching any Exchange mailbox or any SharePoint site). In other words, creating a search permissions filter that allows a user to search all SharePoint sites in the organization doesn't prevent that user from searching mailboxes. For example, to allow SharePoint admins to only search SharePoint sites, you have to create a filter that prevents them from searching mailboxes. Similarly, to allow Exchange admins to only search mailboxes, you have to create a filter that prevents them from searching sites.
 
-- **Do search permissions filters count against search query character limits?** Yes. Search permissions filters count against the character limit for search queries. For more information, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md).
+**Do search permissions filters count against search query character limits?** Yes. Search permissions filters count against the character limit for search queries. For more information, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md).
 
 **What is the maximum number of search permissions filters that can be created in an organization?**
 
-There is no limit to the number of search permissions filters that can be created in an organization. However, a search query can have a maximum of 100 conditions. In this case, a condition is defined as something that's connected to the query by a Boolean operator (such as **AND**, **OR**, and **NEAR**). The limit of the number of conditions includes the search query itself plus all search permissions filters that are applied to the user who runs the search. Therefore, the more search permissions filters you have (especially if these filters are applied to the same user or group of users), the better the chance of exceeding the maximum number of conditions for a search.
+There's no limit to the number of search permissions filters that can be created in an organization. However, a search query can have a maximum of 100 conditions. In this case, a condition is defined as something that's connected to the query by a Boolean operator (such as **AND**, **OR**, and **NEAR**). The limit of the number of conditions includes the search query itself plus all search permissions filters that are applied to the user who runs the search. Therefore, the more search permissions filters you have (especially if these filters are applied to the same user or group of users), the better the chance of exceeding the maximum number of conditions for a search.
 
 To understand how this limit works, you need to understand that a search permissions filter is appended to the search query when a search is run. A search permissions filter is joined to the search query by the **AND** Boolean operator. The query logic for the search query and a single search permissions filter would look like this:
 

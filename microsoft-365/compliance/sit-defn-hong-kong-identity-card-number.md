@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -23,6 +23,8 @@ description: "Hong Kong identity card (HKID) number sensitive information type e
 ---
 
 # Hong Kong identity card (HKID) number
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

@@ -56,6 +56,8 @@ However, if the hold is time-based, the mailbox content will be retained until t
 
 As regulations and policies evolve, there may be some situations in which you need to change the duration of the hold assigned to the inactive mailbox.  The following steps outline how to do this.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Connect to PowerShell
 
 As we mentioned before, many different types of holds can trigger the creation of an inactive mailbox.  For this reason, in order to change the hold duration applied to the inactive mailbox, you must first identify what type of holds are affecting it.  To do this, you must use Exchange Online PowerShell to identify the types of holds and, if the inactive mailbox is affected by Microsoft 365 retention policies or labels you must also use Security & Compliance PowerShell to identify the specific policies.

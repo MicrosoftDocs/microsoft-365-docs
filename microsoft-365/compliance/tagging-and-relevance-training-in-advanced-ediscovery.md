@@ -28,6 +28,8 @@ This article describes the procedure for working with the Relevance training mod
   
 After Assessment is completed in eDiscovery (Premium), and you enter the Relevance training stage, a training sample of 40 files is brought into the Tag tab for tagging.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Performing Relevance training
 
 1. In the **Relevance \> Tag** tab, the Tagging pane is displayed by default in the left pane and the sample files are displayed, one at a time for tagging.

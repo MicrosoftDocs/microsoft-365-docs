@@ -11,8 +11,10 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 search.appverid: met150
 ---
 
@@ -21,6 +23,9 @@ search.appverid: met150
 The Microsoft Virus Initiative (MVI) helps organizations develop better-together security solutions that are performant, reliable, and aligned with Microsoft technology and strategy.
 
 ## Become a member
+
+> [!NOTE]
+> The MVI Program is not currently accepting new applications for membership. Please contact MVI@microsoft.com for more information.
 
 You can request membership if you're a representative for an organization that develops and produces antimalware or antivirus technology. 
 

@@ -31,6 +31,8 @@ To get started, you create a model, label as few as 50 items as relevant or not 
 
 For a detailed overview of predictive coding, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Create a new predictive coding model
 
 The first step is to create a new predictive coding model in the review set

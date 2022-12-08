@@ -24,6 +24,8 @@ Risk and compliance solutions in Microsoft Purview are collections of integrated
 
 Read this article to get acquainted with the solution catalog in the Microsoft Purview compliance portal, [how to access](#how-do-i-access) and your [next steps](#next-steps).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Catalog organization
 
 The solution catalog is organized into sections that contain information cards for each risk and compliance solution available in your Microsoft 365 subscription. Each section contains cards for solutions grouped by risk and compliance area.

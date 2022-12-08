@@ -52,6 +52,8 @@ It's outside the scope of this article to document all the ways in which you can
 - [When the flow is triggered](#when-the-flow-is-triggered)
  
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Overview of using retention labels with a Power Automate flow
 
 The following processes show the high-level overview of how retention labels work with a Power Automate flow:

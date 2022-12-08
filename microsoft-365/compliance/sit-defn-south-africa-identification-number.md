@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -27,6 +27,8 @@ description: "South Africa identification number sensitive information type enti
 ### Format
 
 13 digits that may contain spaces
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Pattern
 

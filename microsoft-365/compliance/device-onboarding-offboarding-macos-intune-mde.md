@@ -30,11 +30,13 @@ description: Learn how to onboard and offboard macOS devices into Microsoft Purv
 - [Insider risk management](insider-risk-management.md)
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 - Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home)
-- This supports macOS version Catalina 10.15 and higher
+- This supports the three latest released macOS versions.
 - Install the v95+ Edge browser on your macOS devices 
 
 ## Onboard macOS devices into Microsoft Purview solutions using Microsoft Intune

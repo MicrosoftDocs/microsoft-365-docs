@@ -16,8 +16,9 @@ ms.collection:
   - m365solution-endpointprotect
   - m365solution-scenario
   - highpri
+  - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---

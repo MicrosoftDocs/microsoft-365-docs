@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -25,6 +25,8 @@ description: "Lab test terms sensitive information type entity definition."
 # Lab test terms
 
 This unbundled named entity detects terms related to lab tests, such as *Insulin C-peptide*. It supports English terms only. It's also included in the [All medical terms and conditions](sit-defn-all-medical-terms-conditions.md) bundled named entity SIT.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Confidence level
 

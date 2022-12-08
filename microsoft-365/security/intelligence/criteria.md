@@ -11,8 +11,10 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.date: 12/13/2021
 search.appverid: met150
 ---

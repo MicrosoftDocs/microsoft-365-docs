@@ -25,6 +25,8 @@ The predictive coding module in eDiscovery (Premium) uses the intelligent, machi
 
 The predictive coding module is designed to streamline the complexity of managing a model within a review set and provide an iterative approach to training your model so you can get started faster with the machine learning capabilities in eDiscovery (Premium). To get started, you can create a model, label as few as 50 items as relevant or not relevant. The system uses this training to apply prediction scores to every item in the review set. This lets you filter items based on the prediction score, which  allows you to review the most relevant (or non-relevant) items first. If you want to train models with higher accuracies and recall rates, you can continue labeling items in subsequent training rounds until the model stabilizes.  
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## The predictive coding workflow
 
 Here's an overview and description of each step predictive coding workflow. For a more detailed description of the concepts and terminology of the predictive coding process, see [Predictive coding reference](predictive-coding-reference.md).

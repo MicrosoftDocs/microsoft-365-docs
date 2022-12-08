@@ -22,23 +22,9 @@ search.appverid:
 
 # Use the new case format in eDiscovery (Premium)
 
-More organizations are using the eDiscovery (Premium) solution in Microsoft Purview for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation. As usage of eDiscovery (Premium) increases, a common customer requirement is to expand the total amount of content that can be managed in a single eDiscovery (Premium) case. To help accommodate significant increases in case size, both for total data volume and the total number of items, you can now choose the new case format when you create an eDiscovery (Premium) case.  
+More organizations are using the eDiscovery (Premium) solution in Microsoft Purview for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation. As usage of eDiscovery (Premium) increases, a common customer requirement is to expand the total amount of content that can be managed in a single eDiscovery (Premium) case. To help accommodate significant increases in case size, both for total data volume and the total number of items, you can choose the new case format when you create an eDiscovery (Premium) case.  
 
-## Create a case
-
-To create an eDiscovery (Premium) case using the new case format:
-
-1. Go to <https://compliance.microsoft.com> and sign in.
-
-2. In the left navigation pane of the Microsoft Purview compliance portal, click **eDiscovery > Advanced**.
-
-3. On the **eDiscovery (Premium)** page, click the **Cases** tab, and then click **Create a case**.
-
-   The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a case using the new format.
-
-   ![New case format option on the New eDiscovery case page.](..\media\AeDNewCaseFormat1.png)
-
-4. After naming the case, select the **New** option, and then click **Save** to create the case using the new format.
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Benefits of the new case format
 
@@ -57,6 +43,24 @@ Here's a list of other benefits of large cases in eDiscovery (Premium) workflow.
 Additionally, the new case format includes an updated user interface that displays the total size of each review set in the case. Review set sizes are displayed in a column on the **Review sets** tab.
 
 ![New review set statistics in eDiscovery (Premium) user interface.](..\media\LargeCaseUI.png)
+
+## Create a case in the new format
+
+To create an eDiscovery (Premium) case using the new case format, complete the following steps:
+
+1. Go to <https://compliance.microsoft.com> and sign in.
+
+2. In the left navigation pane of the Microsoft Purview compliance portal, select **eDiscovery > Advanced**.
+
+3. On the **eDiscovery (Premium)** page, select the **Cases** tab, and then select **Create a case**.
+
+   The **New eDiscovery case** flyout page is displayed. The **Case format** section on the **Name and description** page provides the option to create a case using the *New (recommended)* or *Classic* format.
+
+   ![New case format option on the New eDiscovery case page.](..\media\ediscovery-new-case-format-option.png)
+
+4. After naming the case, select the **New (recommended)** option, and then select **Next** to continue in the new case wizard to finish creating your case.
+
+After you've created your case, the case format information is displayed on the **Case format** card on the case **Overview** tab and in the **Case format** section on the case settings page for each case.
 
 ## Frequently asked questions
 

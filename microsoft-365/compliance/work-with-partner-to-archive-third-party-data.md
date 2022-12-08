@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- tier1
+- tier3
 - purview-compliance
 - data-connectors
 ms.custom:
@@ -41,6 +41,8 @@ Here's an overview of the process and the steps necessary to work with a Microso
 [Step 4: Provide your partner with information](#step-4-provide-your-partner-with-information)
 
 [Step 5: Register the third-party data connector in Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How the third-party data import process works
 
@@ -501,7 +503,7 @@ Here are the steps for creating and configuring a third-party data mailbox for i
 
       - [Learn about retention policies and retention labels](retention.md)
 
-    - Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing](enable-mailbox-auditing.md). This allows you to audit all activity performed by any user who has access to the third-party data mailbox.
+    - Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing](audit-mailboxes.md). This allows you to audit all activity performed by any user who has access to the third-party data mailbox.
 
 ## Step 3: Configure user mailboxes for third-party data
 

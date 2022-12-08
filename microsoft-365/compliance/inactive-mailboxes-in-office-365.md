@@ -28,6 +28,8 @@ description: Learn how to retain mailbox content for former employees by turning
 
 Your organization might need to retain former employees' email after they leave the organization. Depending on your organization's retention requirements, you might need to retain mailbox content for a few months or years after employment ends, or you might need to retain mailbox content indefinitely. Regardless of how long you need to retain email, you can create inactive mailboxes to retain the mailbox of former employees.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What are inactive mailboxes?
 
 When an employee leaves your organization (or goes on an extended leave of absence), you can remove their Microsoft 365 account. The employee's mailbox data is retained for 30 days after the account is removed. During this period, you can still recover the mailbox data by undeleting the account. After 30 days, the data is permanently removed.

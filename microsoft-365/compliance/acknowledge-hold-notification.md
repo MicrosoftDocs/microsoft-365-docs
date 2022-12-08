@@ -29,6 +29,8 @@ When responding to a regulatory request or investigation, you may be required to
 
 To help reduce the time, cost, and effort of following up with your custodians,  eDiscovery (Premium) allows you to send and follow up on legal hold notifications through email. In addition to email notices, each custodian will have access to an individualized Compliance Portal, allowing custodians to be kept informed of changes to their obligation status.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Email notifications
 
 After a Legal Hold Notification has been issued, each custodian will receive a unique and personalized email containing your defined legal hold notice and added instructions. 

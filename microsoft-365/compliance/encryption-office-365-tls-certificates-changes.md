@@ -45,6 +45,8 @@ This change will not affect certificates, domains, or services used in the China
 
 All certificate information in this article was previously provided in [Microsoft 365 encryption chains](./encryption-office-365-certificate-chains.md) no later than October 2020.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## When will this change happen?
 
 Services began transitioning to the new Root CAs in January 2022 and will continue through October 2022.

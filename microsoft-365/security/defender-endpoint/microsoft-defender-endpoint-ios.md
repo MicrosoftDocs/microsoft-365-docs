@@ -13,8 +13,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -71,7 +71,7 @@ search.appverid: met150
 
 **System Requirements**
 
-- iOS device running iOS 12.0 and above. iPads are also supported. *Note that starting 31-March-2022, the minimum supported iOS version by Microsoft Defender for Endpoint will be iOS 13.0.*
+- iOS device running iOS 14.0 and above. iPads are also supported. 
 
 - The device is either enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358) or is registered with Azure Active Directory through [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) with the same account.
 

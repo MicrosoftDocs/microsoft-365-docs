@@ -30,6 +30,8 @@ Microsoft 365 customers can perform eDiscovery searches on content ingested for 
 
 With Graph connectors, you can enable content from external data sources to be available to Microsoft Purview eDiscovery premium solution. Learn more about establishing Graph Connectors for your organization here: [Microsoft Graph connectors overview for Microsoft Search](/microsoftsearch/connectors-overview).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Add Graph Connector as a data source within a case
 
 Once Graph Connectors are established for an organization and eDiscovery is enabled, the option to add the Graph Connector data source to the case will be available under non-Microsoft 365 locations. Only the connectors that have been established and enabled will be available to the eDiscovery manager for inclusion in a case.

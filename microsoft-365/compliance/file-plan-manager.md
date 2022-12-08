@@ -39,6 +39,8 @@ File plan can be used for all retention labels, even if they don't mark content 
 
 For information about what retention labels are and how to use them, see [Learn about retention policies and retention labels](retention.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Accessing file plan
 
 To access file plan, you must have one of the following admin roles:
@@ -77,11 +79,11 @@ All columns except the label **Name** can be displayed or hidden by selecting th
     - Yes
     - Yes(Regulatory)
 
-- **Is unlocked by default**—currently rolling out—identifies if the item marked as a record is unlocked when the label is applied. Valid values:
+- **Is unlocked by default** identifies if the item marked as a record is unlocked when the label is applied. Valid values:
     - No
     - Yes
 
-- **Relabel to**—currently rolling out—identifies if the label is configured to apply another label at the end of the retention period. Valid values:
+- **Relabel to** identifies if the label is configured to apply another label at the end of the retention period. Valid values:
     - Blank or the selected label name
 
 - **Retention duration** identifies the retention period. Valid values:

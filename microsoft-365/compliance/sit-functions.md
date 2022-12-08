@@ -28,6 +28,8 @@ Sensitive information types (SIT) can use functions as primary elements to ident
 
 This article explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Table of functions
 
 |Function name | Function action | Is a validator|

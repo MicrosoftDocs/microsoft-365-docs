@@ -43,6 +43,8 @@ Eligibility includes customers who have a [free trial for Microsoft Purview](com
     |DLP for Teams | At least one DLP policy for Teams|
     |DLP for devices | At least one DLP policy for devices|
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Activate the default labels and policies
 
 To get these preconfigured labels and policies: 

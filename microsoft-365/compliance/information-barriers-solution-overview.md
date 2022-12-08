@@ -31,6 +31,8 @@ Microsoft Purview Information Barriers (IB) is supported in Microsoft Teams, Sha
 - An internal team with trade secret material should not call or chat online with people in certain groups within their organization
 - A research team should only call or chat online with a product development team
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Configure information barriers
 
 Use the following steps to configure IB for your organization:

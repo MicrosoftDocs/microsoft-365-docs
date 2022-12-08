@@ -14,6 +14,7 @@ search.appverid:
 ms.collection:
 - Strat_O365_Enterprise
 - purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: In this article, read an overview of the various forms of encryption used to keep customer data safe in the Microsoft cloud.
 ms.custom: seo-marvel-apr2020
@@ -47,6 +48,8 @@ Encryption of customer data at rest is provided by multiple service-side technol
 For customer data in transit, all Office 365 servers negotiate secure sessions using TLS by default with client machines to secure customer data. For example, Office 365 will negotiate secure sessions to Skype for Business, Outlook, and Outlook on the web, mobile clients, and web browsers.
 
 (All customer-facing servers negotiate to TLS 1.2 by default.)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Related Links
 

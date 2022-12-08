@@ -40,6 +40,8 @@ After you complete these steps to import contacts, you can perform these additio
   
 - [Hide external contacts from the shared address book](#hide-external-contacts-from-the-shared-address-book)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Create a CSV file that contains information about the external contacts
 
 The first step is to create a CSV file that contains information about each external contact that you want to import to Exchange Online. 

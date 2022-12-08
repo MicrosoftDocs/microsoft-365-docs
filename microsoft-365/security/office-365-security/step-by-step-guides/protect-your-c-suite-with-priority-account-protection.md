@@ -13,7 +13,10 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
@@ -41,7 +44,7 @@ Priority account protection helps IT and security teams ensure a high quality of
 To learn what priority account tags are see [Manage and monitor priority accounts - Microsoft 365 admin | Microsoft Docs](../../../admin/setup/priority-accounts.md).
 
 ## Next Steps
-[Review the differentiated protection for users tagged as priority accounts](../../office-365-security/configure-review-priority-account.md).
+[Review the differentiated protection for users tagged as priority accounts](../../office-365-security/priority-accounts-turn-on-priority-account-protection.md).
 
 ## PowerShell configuration
 If you want to achieve these steps via [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), you can do this using the following cmdlets:

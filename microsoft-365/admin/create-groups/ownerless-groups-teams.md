@@ -7,7 +7,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
@@ -67,3 +67,5 @@ Up to two group members per group can accept the invitation to become an owner. 
 ## Related topics
 
 [Ownerless group FAQ](/exchange/troubleshoot/groups-and-distribution-lists/ownerless-group-policy)
+
+[Search the audit log in the compliance portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)

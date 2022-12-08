@@ -62,6 +62,8 @@ As a result of this new and improved eDiscovery functionality in the compliance 
 
 The following sections in this article provide guidance about each feature being retired. This information including timelines and alternative tools that you can use instead of the retired tool.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## In-Place eDiscovery and In-Place Holds in the Exchange admin center 
 
 As per the original announcement on July 1, 2017, the In-Place eDiscovery & Hold functionality in the Exchange admin center (EAC) is being retired. The In-Place eDiscovery & Holds page in the EAC allowed you to search, hold, and export content from Exchange Online. In-Place eDiscovery also let you copy search results to a discovery mailbox so that you or other eDiscovery managers could review content and make it available for legal, regulatory, and public requests.

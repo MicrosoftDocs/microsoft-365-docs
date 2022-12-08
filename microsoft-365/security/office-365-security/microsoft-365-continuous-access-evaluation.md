@@ -5,7 +5,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords:
   - NOCSH
@@ -83,7 +83,7 @@ The following Microsoft 365 services currently support continuous access evaluat
 
 \* SharePoint Office web browser access supports instant IP policy enforcement by enabling strict mode. Without strict mode, access token lifetime is one hour.
 
-\** Calls, meetings, and chat in Teams do not conform to IP-based Conditional Access policies yet.
+\** Calls, meetings, and chat in Teams do not conform to IP-based Conditional Access policies.
 
 For more information about how to set up a Conditional Access policy, see [this article](/azure/active-directory/conditional-access/overview).
 
