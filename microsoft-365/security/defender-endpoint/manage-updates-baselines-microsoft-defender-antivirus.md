@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 12/05/2022
+ms.date: 12/08/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -85,16 +85,16 @@ All our updates contain
 
 <br/><br/>
 <details>
-<summary>November-2022 (Platform: 4.18.2211.x | Engine: 1.1.19900.2)</summary>
+<summary>November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)</summary>
 
-&ensp;Security intelligence update version: **x.x** <br/>
-&ensp;Release date: **December 5, 2022**<br/>
-&ensp;Platform: **4.18.2211.x** <br/>
+&ensp;Security intelligence update version: **1.381.144.0** <br/>
+&ensp;Release date: **December 8, 2022**<br/>
+&ensp;Platform: **4.18.2211.5** <br/>
 &ensp;Engine: **1.1.19900.2**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.19900.x <br/>
-Security intelligence update version: x.x <br/>
+Security intelligence update version: 1.381.144.0 <br/>
 
 ### What's new
 
