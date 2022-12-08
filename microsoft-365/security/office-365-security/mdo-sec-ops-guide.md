@@ -100,8 +100,8 @@ False positive and false negative management and the responsible personas are de
 
 In Defender for Office 365, you can use the following reports to review email detection trends in your organization:
 
-- The [Mailflow status report](view-email-security-reports.md#mailflow-status-report)
-- The [Threat Protection status report](view-email-security-reports.md#threat-protection-status-report)
+- The [Mailflow status report](reports-email-security.md#mailflow-status-report)
+- The [Threat Protection status report](reports-email-security.md#threat-protection-status-report)
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
@@ -152,7 +152,7 @@ Campaign Views reveals malware and phishing attacks against your organization. F
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
 |Review the configuration of Defender for Office 365 policies at <https://security.microsoft.com/configurationAnalyzer>.|Ad-hoc <br/><br/> Monthly|Use the [Configuration analyzer](configuration-analyzer-for-security-policies.md) to compare your existing policy settings to the [recommended Standard or Strict values for Defender for Office 365](recommended-settings-for-eop-and-office365.md). The Configuration analyzer identifies accidental or malicious changes that can lower your organization's security posture. <br/><br/> Or you can use the PowerShell-based [ORCA tool](https://aka.ms/getorca).|Security Administration <br/><br/> Messaging Team|
-|Review detection overrides in Defender for Office 365 at <https://security.microsoft.com/reports/TPSMessageOverrideReportATP>|Ad-hoc <br/><br/> Monthly|Use the [View data by System override \> Chart breakdown by Reason view](view-email-security-reports.md#view-data-by-system-override-and-chart-breakdown-by-reason) in the **Threat Protection status report** to review email that was detected as phishing but delivered due to policy or user override settings. <br/><br/> Actively investigate, remove, or fine tune overrides to avoid delivery of email that was determined to be malicious.|Security Administration <br/><br/> Messaging Team|
+|Review detection overrides in Defender for Office 365 at <https://security.microsoft.com/reports/TPSMessageOverrideReportATP>|Ad-hoc <br/><br/> Monthly|Use the [View data by System override \> Chart breakdown by Reason view](reports-email-security.md#view-data-by-system-override-and-chart-breakdown-by-reason) in the **Threat Protection status report** to review email that was detected as phishing but delivered due to policy or user override settings. <br/><br/> Actively investigate, remove, or fine tune overrides to avoid delivery of email that was determined to be malicious.|Security Administration <br/><br/> Messaging Team|
 
 ### Review spoof and impersonation detections
 

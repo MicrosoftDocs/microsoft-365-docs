@@ -98,8 +98,8 @@ Watch this video to learn more: [Learn how to use the Submissions portal to subm
 
 Use the reporting capabilities in Defender for Office 365 to get more details about your environment.
 
-- Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
-- See where threats are blocked with the [Mailflow status report](view-email-security-reports.md#mailflow-status-report).
+- Understand threats received in email and collaboration tools with the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
+- See where threats are blocked with the [Mailflow status report](reports-email-security.md#mailflow-status-report).
 - [Review links](reports-defender-for-office-365.md#url-protection-report) that were viewed by users or blocked by the system.
 
 :::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-reporting.png":::
@@ -205,7 +205,7 @@ Watch this video to learn more: [Learn how to use the Submissions portal to subm
 Use the reporting capabilities in Defender for Office 365 to get more details about your environment.
 
 - The [Evaluation dashboard](try-microsoft-defender-for-office-365.md#reports-for-audit-mode) provides an easy view of the threats detected by Defender for Office 365 during evaluation.
-- Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+- Understand threats received in email and collaboration tools with the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 
 ### Step 2: Intermediate steps in auditing mode
 

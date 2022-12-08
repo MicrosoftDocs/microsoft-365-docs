@@ -155,7 +155,7 @@ Use the following features to monitor and iterate on the protection settings in 
 
 - [Quarantine](quarantine-admin-manage-messages-files.md)
 - [Threat Explorer](email-security-in-microsoft-defender.md)
-- [Email security reports](view-email-security-reports.md)
+- [Email security reports](reports-email-security.md)
 - [Defender for Office 365 reports](reports-defender-for-office-365.md)
 - [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [Mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
@@ -167,7 +167,7 @@ If your organization uses a third-party service for user reported messages, you 
 As you find and fix issues, you can add more users to the pilot groups (and correspondingly exempt those new pilot users from scanning by your existing protection service as appropriate). The more testing that you do now, the fewer user issues that you'll need to deal with later. This "waterfall" approach allows tuning against larger portions of the organization and gives your security teams time to adjust to the new tools and processes.
 
 - Microsoft 365 generates alerts when high confidence phishing messages are allowed by organizational policies. To identify these messages, you have the following options:
-  - Overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+  - Overrides in the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
   - Filter in Threat Explorer to identify the messages.
   - Filter in Advanced Hunting to identify the messages.
 
@@ -217,5 +217,5 @@ Congratulations! You have completed your [migration to Microsoft Defender for Of
 Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
 
 - Review user reported messages, especially [user-reported phishing messages](automated-investigation-response-office.md)
-- Review overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+- Review overrides in the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 - Use [Advanced Hunting](/microsoft-365/security/defender/advanced-hunting-example) queries to look for tuning opportunities and risky messages.
