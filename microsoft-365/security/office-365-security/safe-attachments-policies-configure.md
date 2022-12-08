@@ -124,7 +124,7 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
      - **Replace**: This action will be deprecated. For more information, see [MC424901](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC424901).
      - **Dynamic Delivery (Preview feature)**
 
-     These values are explained in [Safe Attachments policy settings](safe-attachments.md#safe-attachments-policy-settings).
+     These values are explained in [Safe Attachments policy settings](safe-attachments-about.md#safe-attachments-policy-settings).
 
    - **Quarantine policy**: Select the quarantine policy that applies to messages that are quarantined by Safe Attachments (**Block**, **Replace**, or **Dynamic Delivery**). Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 
