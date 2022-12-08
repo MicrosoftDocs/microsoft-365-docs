@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Configure alert notifications in Microsoft Defender for Endpoint
@@ -33,7 +36,8 @@ You can configure Defender for Endpoint to send email notifications to specified
 If you're using [Defender for Business](../defender-business/mdb-overview.md), you can set up email notifications for specific users (not roles or groups).
 
 > [!NOTE]
-> Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
+> - Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
+> - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts triggered after they're added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue.md).
 
@@ -44,7 +48,9 @@ The email notification includes basic information about the alert and a link to 
 ## Create rules for alert notifications
 You can create rules that determine the devices and alert severities to send email notifications for and the notification recipients.
 
-1. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Email notifications**.
+1. Go to [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in using an account with the Security administrator or Global administrator role assigned.
+
+2. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Email notifications**.
 
 2. Click **Add item**.
 

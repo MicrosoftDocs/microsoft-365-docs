@@ -14,10 +14,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365-initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
+search.appverid: met150
 ---
 
 # Create a custom gradual rollout process for Microsoft Defender updates

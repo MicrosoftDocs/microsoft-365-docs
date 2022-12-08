@@ -11,10 +11,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Indicator resource type
@@ -106,3 +109,8 @@ For more information on the description of the response action types, see [Creat
     "rbacGroupNames": ["team1"]
 }
 ```
+
+## See also
+
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+

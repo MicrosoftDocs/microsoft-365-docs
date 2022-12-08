@@ -14,7 +14,8 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier2
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
@@ -33,6 +34,8 @@ For information about the components that make up mail flow rules and how mail f
 
 > [!IMPORTANT]
 > For hybrid Exchange environments, on-premises users can send and receive encrypted mail using message encryption only if email is routed through Exchange Online. To configure message encryption in a hybrid Exchange environment, you need to first [configure hybrid using the Hybrid Configuration wizard](/Exchange/exchange-hybrid) and then [configure mail to flow from Office 365 to your email server](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) and [configure mail to flow from your email server to Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365). Once you've configured mail to flow through Office 365, then you can configure mail flow rules for message encryption by using this guidance.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create mail flow rules to encrypt email messages with Microsoft Purview Message Encryption
 

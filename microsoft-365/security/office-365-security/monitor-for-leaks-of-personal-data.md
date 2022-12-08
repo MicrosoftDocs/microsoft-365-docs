@@ -12,7 +12,7 @@ ms.collection:
   - Strat_O365_Enterprise
   - Ent_O365
   - GDPR
-  - M365-security-compliance
+  - m365-security
 
 ms.localizationpriority: high
 search.appverid:
@@ -78,7 +78,7 @@ More information about alert policies and searching the audit log:
 - [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md)
 - [Search the audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
-- [Detailed properties in the audit log](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
+- [Detailed properties in the audit log](../../compliance/audit-log-detailed-properties.md)
 
 ## Microsoft Defender for Cloud Apps
 

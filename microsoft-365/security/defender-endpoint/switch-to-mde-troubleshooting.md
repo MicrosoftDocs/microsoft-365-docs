@@ -13,12 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365solution-scenario
-- M365-security-compliance
+- m365-security
+- highpri
+- tier1
 ms.topic: conceptual
 ms.custom: migrationguides
 ms.date: 05/20/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshooting issues when switching to Microsoft Defender for Endpoint

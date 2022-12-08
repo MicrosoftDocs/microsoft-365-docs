@@ -9,9 +9,10 @@ manager: dougeby
 audience: ITPro
 description: Learn how to create device compliance policies that specify the minimum requirements for a device to access your environment.
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
+- highpri
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario

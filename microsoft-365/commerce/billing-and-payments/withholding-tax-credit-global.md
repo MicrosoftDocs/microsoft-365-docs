@@ -7,10 +7,12 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller, martinl, melmar
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 search.appverid: MET150
@@ -60,13 +62,13 @@ Submit the WHT request by opening a ticket with Microsoft support.
 
 After you submit the request, it goes into the approval process where it is either approved for completion or is sent back to you for correction.
 
-If there’s a problem with your request, the review team might require corrections to the withholding amount or replacement of the certificate or receipt. You must resubmit the request before it can be approved. The review team will either approve the request or ask for more changes.
+If there's a problem with your request, the review team might require corrections to the withholding amount or replacement of the certificate or receipt. You must resubmit the request before it can be approved. The review team will either approve the request or ask for more changes.
 
 ## Approved requests
 
 **For customers paying by check or wire:** Approved WHT requests are settled against the unpaid portion of the invoice amount reflected in Withholding Tax Credit Form.
 
-After your claim is approved, it’s reflected in the next billing cycle. The WHT amount paid is included in the payment section of your next invoice. The amount is also displayed under the paid amount in the customer portal.
+After your claim is approved, it's reflected in the next billing cycle. The WHT amount paid is included in the payment section of your next invoice. The amount is also displayed under the paid amount in the customer portal.
 
 **For customers paying by credit card:** After your claim is approved, your overpayment is refunded to your credit card.
 

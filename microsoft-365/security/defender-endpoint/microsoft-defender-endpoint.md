@@ -12,11 +12,12 @@ ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint
@@ -167,4 +168,4 @@ With this learning path from Microsoft Learn, you can understand Defender for En
 |![Microsoft 365 Defender training icon.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender for Endpoint is an endpoint security solution that offers vulnerability management, endpoint protection, endpoint detection and response, mobile threat defense, and managed services in a single, unified platform.<p> 2 hr 25 min - Learning Path - 9 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/paths/defender-endpoint-fundamentals/)
+> [Start >](/training/paths/defender-endpoint-fundamentals/)

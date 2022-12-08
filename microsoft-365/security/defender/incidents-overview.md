@@ -1,7 +1,7 @@
 ---
 title: Incident response with Microsoft 365 Defender
 description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 Defender portal.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
+keywords: incidents, alerts, attack story, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -16,8 +16,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
@@ -41,12 +41,6 @@ Because piecing the individual alerts together to gain insight into an attack ca
 
 :::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="How Microsoft 365 Defender correlates events from entities into an incident." lightbox="../../media/incidents-overview/incidents.png":::
 
-Watch this short overview of incidents in Microsoft 365 Defender (4 minutes).
-
-<br>
-
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
-
 Grouping related alerts into an incident gives you a comprehensive view of an attack. For example, you can see:
 
 - Where the attack started.
@@ -59,13 +53,18 @@ If [enabled](m365d-enable.md), Microsoft 365 Defender can [automatically investi
 
 ## Incidents and alerts in the Microsoft 365 Defender portal
 
-You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's an example.
+You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target=" blank">Microsoft 365 Defender portal</a>. Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
-Selecting an incident name displays a summary of the incident and provides access to tabs with additional information. Here's an example.
+Selecting an incident name displays the entire attack story of the incident, including:
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="The Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+- Alert page within incident: The scope of alerts related to the incident and their information on the same tab.
+- Graph: A visual representation of the attack that connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
+
+You can view the entity details directly from the graph and act on them with response options like file delete or device isolation.
+
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 The additional tabs for an incident are:
 
@@ -93,13 +92,9 @@ The additional tabs for an incident are:
 
   All the supported events and suspicious entities in the alerts of the incident.
 
-- Graph (Preview)
+- Summary
 
-  A visual representation of the attack that connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
-
-Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 Defender portal.
-
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-security-center.png":::
+  A quick overview of the impacted assets associated with alerts.
 
 > [!NOTE]
 > If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](investigate-incidents.md#alerts).
@@ -119,11 +114,11 @@ Consider these steps for your own incident response workflow:
 
 1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
 
-   1. View the summary of the incident to understand its scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
+   1. View the attack story of the incident to understand its scope, severity, detection source, and what entities are affected.
 
-   1. Begin analyzing the alerts to understand their origin, scope, and severity with the **Alerts** tab.
+   1. Begin analyzing the alerts to understand their origin, scope, and severity with the alert story within the incident.
 
-   1. As needed, gather information on impacted devices, users, and mailboxes with the **Devices**, **Users**, and **Mailboxes** tabs.
+   1. As needed, gather information on impacted devices, users, and mailboxes with the graph. Right click on any entity to open a flyout with all the details.
 
    1. See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) with the **Investigations** tab.
 
@@ -238,7 +233,7 @@ Use this learning module from Microsoft Learn to understand how to use Microsoft
 |![Investigate incidents with Microsoft 365 Defender training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft 365 Defender unifies threat data from multiple services and uses AI to combine them into incidents and alerts. Learn how to minimize the time between an incident and its management for subsequent response and resolution. <p> 27 min - 6 Units |
 
 > [!div class="nextstepaction"]
-> [Start >](/learn/modules/defender-investigate-incidents/)
+> [Start >](/training/modules/defender-investigate-incidents/)
 
 ## Next steps
 

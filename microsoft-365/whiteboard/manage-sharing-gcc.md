@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection:
 ms.localizationpriority: medium
 description: Learn how to manage sharing for Microsoft Whiteboard in GCC environments.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -25,13 +24,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 When you share a whiteboard in a Teams meeting, Whiteboard creates a sharing link. This link is accessible by anyone within the organization. The whiteboard is also shared with any in-tenant users in the meeting. Whiteboards are shared using company-shareable links, regardless of the default setting. Support for the default sharing link type is planned.
 
-There's more capability for temporary collaboration by most external and shared device accounts during a meeting. Users can temporarily view and collaborate on whiteboards when they're shared in a Teams meeting, similar to PowerPoint Live sharing.
+During a Teams meeting, external and shared device accounts (typically used in Surface Hubs and Teams Rooms devices) have more capability for temporary
+collaboration. Users can temporarily view and collaborate on whiteboards that are shared in a meeting, in a similar way to PowerPoint Live sharing.
 
 In this case, Whiteboard provides temporary viewing and collaboration on the whiteboard during the Teams meeting only. A share link isn't created and Whiteboard doesn't grant access to the file.
 
-If you have external sharing enabled for OneDrive for Business, no further action is required.
-
-If you restrict external sharing for OneDrive for Business, you can keep it restricted, and just enable a new setting in order for external and shared device accounts to work. To do so, follow these steps:
+To enable this behavior, follow these steps:
 
 1. Ensure that Whiteboard is enabled for your organization. For more information, see [Manage access to Whiteboard in GCC environments](manage-whiteboard-access-gcc.md).
 
@@ -50,7 +48,10 @@ If you restrict external sharing for OneDrive for Business, you can keep it rest
 This setting applies only to whiteboards and replaces the previously shared settings: **OneDriveLoopSharingCapability** and **CoreLoopSharingCapability**. Those settings are no longer applicable and can be disregarded.
 
 > [!NOTE]
-> By default, the Teams meeting setting **Anonymous users can interact with apps in meetings** is enabled by default. If you have disabled it, any anonymous users (as opposed to guests or federated users) will not have access to the whiteboard during the meeting
+> By default, the Teams meeting setting **Anonymous users can interact with apps in meetings** is enabled by default. If you have disabled it, any anonymous user (as opposed to guests or federated users) will not have access to the whiteboard during the meeting
+
+> [!NOTE]
+> If you would like shared device accounts to have access to Whiteboard in Teams meetings but not anonymous users, you can disable **Anonymous users can interact with apps in meetings** while having **AllowAnonymousMeetingParticipantsToAccessWhiteboards** enabled
 
 These changes should take approximately 60 minutes to apply across your tenancy.
 

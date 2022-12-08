@@ -16,8 +16,10 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ---
 
 # EmailEvents
@@ -27,7 +29,7 @@ ms.topic: article
 **Applies to:**
 
 - Microsoft 365 Defender
-- Microsoft Defender for Office 365
+
 
 The `EmailEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about events involving the processing of emails on Microsoft Defender for Office 365. Use this reference to construct queries that return information from this table.
 
@@ -76,6 +78,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `UserLevelPolicy` | `string` | End-user mailbox policy that triggered the action taken on the email |
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `AuthenticationDetails` | `string` | List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF or a combination of multiple authentication types (CompAuth) |
+| `BulkComplaintLevel` | `int` | Threshold assigned to email from bulk mailers, a high bulk complaint level (BCL) means the email is more likely to generate complaints, and thus more likely to be spam |
 
 ## Related topics
 

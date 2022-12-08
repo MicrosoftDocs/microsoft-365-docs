@@ -3,7 +3,7 @@ title: "Common usage scenarios for sensitive information types"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
-author: v-tophillips
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -22,6 +23,8 @@ ms.custom: seo-marvel-apr2020
 # Common usage scenarios for sensitive information types
 
 This article describes how to implement some common sensitive information type (SIT) use case scenarios. You can use these procedures as examples and adapt them to your specific needs.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Protect credit card numbers
 

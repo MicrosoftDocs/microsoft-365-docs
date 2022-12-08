@@ -7,14 +7,16 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
 ms.localizationpriority: high
+ms.date: 09/15/2022
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
 - M365-identity-device-management
 - M365-Campaigns
+- tier1
 ms.custom:
 - Adm_O365
 - MiniMaven

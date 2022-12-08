@@ -13,8 +13,11 @@ audience: ITPro
 ms.reviewer: mimilone, julih
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
-ms.collection: m365-security-compliance
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Detect and block potentially unwanted applications

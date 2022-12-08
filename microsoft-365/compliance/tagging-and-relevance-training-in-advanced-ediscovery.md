@@ -1,9 +1,10 @@
 ---
 title: "Tagging and Relevance training in eDiscovery (Premium)"
+description: "Learn the steps to tag and then work with a training sample of 40 files during the Relevance training stage of eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 
@@ -14,9 +15,11 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn the steps to tag and then work with a training sample of 40 files during the Relevance training stage of eDiscovery (Premium)."
 ---
 
 # Tagging and Relevance training in eDiscovery (Premium)
@@ -25,6 +28,8 @@ This article describes the procedure for working with the Relevance training mod
   
 After Assessment is completed in eDiscovery (Premium), and you enter the Relevance training stage, a training sample of 40 files is brought into the Tag tab for tagging.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Performing Relevance training
 
 1. In the **Relevance \> Tag** tab, the Tagging pane is displayed by default in the left pane and the sample files are displayed, one at a time for tagging.

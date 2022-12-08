@@ -6,7 +6,7 @@ manager: serdars
 ms.date: 10/11/2021
 audience: ITPro
 ms.topic: conceptual
-ms.prod: project-server-itpro
+ms.service: microsoft-365-enterprise
 ms.collection: Ent_O365
 f1.keywords:
 - CSH

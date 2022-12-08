@@ -13,15 +13,17 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-migratetomdatp
   - highpri
-ms.topic: article
+  - tier1
+ms.topic: conceptual
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+search.appverid: met150
 ---
 
 # Switch to Microsoft Defender for Endpoint - Phase 1: Prepare
@@ -46,7 +48,7 @@ This migration phase includes the following steps:
 
 ## Get and deploy updates across your organization's devices
 
-As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that the operating systems and apps your organization is also have the latest updates. Doing this now can help prevent problems later as you migrate to Defender for Endpoint and Microsoft Defender Antivirus.
+As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that your organization's operating systems and apps also have the latest updates. Doing this now can help prevent problems later as you migrate to Defender for Endpoint and Microsoft Defender Antivirus.
 
 ### Make sure your existing solution is up to date
 
@@ -60,7 +62,7 @@ Need help updating your organization's devices? See the following resources:
 
 |OS|Resource|
 |---|---|
-|Windows|[Microsoft Update](https://www.update.microsoft.com)|
+|Windows|[Microsoft Update](/windows/deployment/update/how-windows-update-works)|
 |macOS|[How to update the software on your Mac](https://support.apple.com/HT201541)|
 |iOS|[Update your iPhone, iPad, or iPod touch](https://support.apple.com/HT204204)|
 |Android|[Check & update your Android version](https://support.google.com/android/answer/7680439)|
@@ -110,10 +112,10 @@ To enable communication between your devices and Defender for Endpoint, configur
 |Capabilities|Operating System|Resources|
 |---|---|---|
 |[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) or later<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2016*](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configure machine proxy and internet connectivity settings](configure-proxy-internet.md)|
-|EDR[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configure proxy and internet connectivity settings](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|EDR|macOS (see [System requirements](microsoft-defender-endpoint-mac.md)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
+|EDR |[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configure proxy and internet connectivity settings](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|EDR|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)|
-|Antivirus|macOS (see [System requirements](microsoft-defender-endpoint-mac.md)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
+|Antivirus|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
 |Antivirus|Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
 
 *Requires installation of the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).

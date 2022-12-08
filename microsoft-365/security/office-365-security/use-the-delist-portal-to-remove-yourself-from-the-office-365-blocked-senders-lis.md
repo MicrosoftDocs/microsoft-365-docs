@@ -14,7 +14,7 @@ search.appverid:
   - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
@@ -72,7 +72,7 @@ There are good reasons for senders to wind up on the blocked senders list, but m
     > [!NOTE]
     > It may take up to 24 hours or results can vary widely before restrictions are removed.
 
-See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-controls.md) to prevent an IP from being blocked.
+See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-protection-about.md) to prevent an IP from being blocked.
 
 ### How do fix error code 5.7.511
 

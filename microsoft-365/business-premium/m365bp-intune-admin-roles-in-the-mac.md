@@ -1,5 +1,5 @@
 ---
-title: "About Intune admin roles in the Microsoft 365 admin center"
+title: "Admin roles for Intune in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -7,16 +7,16 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.subservice: business-premium
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 09/15/2022
 ms.localizationpriority: high
-ms.date: 07/19/2022
 ms.collection: 
-ms.custom: 
+- tier1
 description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
 ---
 
-# Intune admin roles in the Microsoft 365 admin center
+# Admin roles for Intune in the Microsoft 365 admin center
 
 Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to any users in your organization using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. Given this, these roles are only a subset of all the roles available in the Intune admin center, which includes additional roles specific to Intune itself.
 

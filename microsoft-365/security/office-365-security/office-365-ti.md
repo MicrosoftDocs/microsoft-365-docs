@@ -1,5 +1,5 @@
 ---
-title: Threat investigation & response capabilities - Microsoft Defender for Office 365 Plan 2
+title: Threat investigation & response capabilities in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
 ms.author: tracyp
@@ -8,14 +8,13 @@ manager: dansimp
 ms.date: 12/09/2019
 audience: Admin
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
@@ -46,7 +45,7 @@ Threat investigation and response capabilities in the Microsoft 365 Defender por
 
 - [Explorer](#explorer)
 - [Incidents](#incidents)
-- [Attack simulation training](attack-simulation-training.md)
+- [Attack simulation training](attack-simulation-training-simulations.md)
 - [Automated investigation and response](automated-investigation-response-office.md)
 
 ### Explorer
@@ -76,11 +75,10 @@ Use the Incidents list (this is also called Investigations) to see a list of in 
 
 To view the list of current incidents for your organization in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Incidents & alerts** \> **Incidents**. Or, to go directly to the **Incidents** page, use <https://security.microsoft.com/incidents>.
 
-:::image type="content" source="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png" alt-text="The Review page in the Security & Compliance Center" lightbox="../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png":::
 
 ### Attack simulation training
 
-Use Attack simulation training to set up and run realistic cyberattacks in your organization, and identify vulnerable people before a real cyberattack affects your business. To learn more, see [Simulate a phishing attack](attack-simulation-training.md).
+Use Attack simulation training to set up and run realistic cyberattacks in your organization, and identify vulnerable people before a real cyberattack affects your business. To learn more, see [Simulate a phishing attack](attack-simulation-training-simulations.md).
 
 To view and use this feature in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** > **Attack simulation training**. Or, to go directly to the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
 
@@ -96,7 +94,7 @@ As part of the Microsoft Defender for Office 365 Plan 2 offering, security analy
 
 ## How do we get these capabilities?
 
-Microsoft 365 threat investigation and response capabilities are included in Microsoft Defender for Office 365 Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. To learn more, see [Defender for Office 365 Plan 1 and Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
+Microsoft 365 threat investigation and response capabilities are included in Microsoft Defender for Office 365 Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. To learn more, see [Defender for Office 365 Plan 1 and Plan 2](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2).
 
 ## Required roles and permissions
 
@@ -110,7 +108,7 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 
 |Activity|Roles and permissions|
 |---|---|
-|Use the Microsoft Defender Vulnerability Management dashboard (or the new [Security dashboard](security-dashboard.md) <p> View information about recent or current threats|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator**</li><li>**Security Reader**</li></ul> <p> These roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>).|
+|Use the Microsoft Defender Vulnerability Management dashboard <p> View information about recent or current threats|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator**</li><li>**Security Reader**</li></ul> <p> These roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>).|
 |Use [Explorer (and real-time detections)](threat-explorer.md) to analyze threats|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator**</li><li>**Security Reader**</li></ul> <p> These roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>).|
 |View Incidents (also referred to as Investigations) <p> Add email messages to an incident|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator**</li><li>**Security Reader**</li></ul> <p> These roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>).|
 |Trigger email actions in an incident <p> Find and delete suspicious email messages|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator** plus the **Search and Purge** role</li></ul> <p> The **Global Administrator** and **Security Administrator** roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>). <p> The **Search and Purge** role must be assigned in the **Email & collaboration roles** in the Microsoft 36 Defender portal (<https://security.microsoft.com>).|
@@ -121,4 +119,4 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 - [Learn about Threat Trackers - New and Noteworthy](threat-trackers.md)
 - [Find and investigate malicious email that was delivered (Office 365 Threat Investigation and Response)](investigate-malicious-email-that-was-delivered.md)
 - [Integrate Office 365 Threat Investigation and Response with Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md)
-- [Simulate a phishing attack](attack-simulation-training.md)
+- [Simulate a phishing attack](attack-simulation-training-simulations.md)

@@ -7,12 +7,13 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
-
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkEXCHANGE
@@ -44,7 +45,7 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
 
 - [Create a shared mailbox](../email/create-a-shared-mailbox.md) so a group of people can monitor and send email from a common email address.
 
-- [Email anti-spam protection](../../security/office-365-security/anti-spam-protection.md) and malware filters for the organization.
+- [Email anti-spam protection](../../security/office-365-security/anti-spam-protection-about.md) and malware filters for the organization.
 
 - Manage Microsoft 365 groups
 

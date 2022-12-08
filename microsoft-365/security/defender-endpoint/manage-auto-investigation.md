@@ -12,12 +12,13 @@ ms.localizationpriority: medium
 ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Review remediation actions following an automated investigation
@@ -37,6 +38,9 @@ Depending on
 - how your organization's [device groups](/microsoft-365/security/defender-endpoint/machine-groups) are configured,
 
 remediation actions can occur automatically or only upon approval by your organization's security operations team.
+
+> [!NOTE]
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
 Here are a few examples:
 
@@ -71,6 +75,21 @@ Whether taken automatically or upon approval, an automated investigation can res
    - Select **Approve** to initiate a pending action.
    - Select **Reject** to prevent a pending action from being taken.
    - Select **Go hunt** to go into [Advanced hunting](advanced-hunting-overview.md).
+
+### Approve or reject remediation actions
+
+For incidents with a remediation status of **Pending approval**, you can also approve or reject a remediation action from within the incident.
+
+1. In the navigation pane, go to **Incidents & alerts** \> **Incidents**.
+2. Filter on **Pending action** for the Automated investigation state (optional).
+3. Select an incident name to open its summary page.
+4. Select the **Evidence and Response** tab.
+5. Select an item in the list to open its flyout pane.
+6. Review the information, and then take one of the following steps:
+   - Select the Approve pending action option to initiate a pending action.
+   - Select the Reject pending action option to prevent a pending action from being taken.
+
+:::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/defender//m365-defender-approve-reject-action.png":::
 
 ## Review completed actions
 

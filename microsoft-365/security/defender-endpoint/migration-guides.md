@@ -9,12 +9,14 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+- m365-security
+- tier1
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 07/01/2022
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Move to Microsoft Defender for Endpoint

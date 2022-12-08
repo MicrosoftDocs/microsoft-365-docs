@@ -11,10 +11,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
@@ -147,8 +149,8 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
         - Name: Microsoft Defender for Endpoint.
         - Choose **Android Enterprise** as platform.
-        - Choose **Work Profile only** as Profile Type.
-        - Click **Select App**, choose **Microsoft Defender ATP**, select **OK** and then **Next**.
+        - Choose **Personally-owned Work Profile only** or **Fully Managed, Dedicated, and Corporate-owned work profile only** as Profile Type.
+        - Click **Select App**, choose **Microsoft Defender**, select **OK** and then **Next**.
 
         :::image type="content" source="images/android-create-app.png" alt-text=" Screenshot of the Associated app details pane." lightbox="images/android-create-app.png":::
      
@@ -159,7 +161,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
        - **Auto grant** - Automatically approves without notifying the user.
        - **Auto deny** - Automatically denies without notifying the user. 
 
-    1. In the **Settings** page, go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format. 
+    1. Go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format. 
 
        :::image type="content" alt-text="Image of android create app configuration policy." source="images/configurationformat.png" lightbox="images/configurationformat.png":::
 
@@ -177,12 +179,10 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     1. In the **Review + Create** page that comes up next, review all the information and then select **Create**.
 
-        The app configuration policy for Defender for Endpoint autogranting the storage permission is now assigned to the selected user group.
+        The app configuration policy for Defender for Endpoint is now assigned to the selected user group.
 
-        > [!div class="mx-imgBorder"]
-        > :::image type="content" source="images/android-review-create.png" alt-text="The Review + create tab in the Create app configuration policy page" lightbox="images/android-review-create.png":::
 
-10. Select **Microsoft Defender ATP** app in the list \> **Properties** \>
+10. Select **Microsoft Defender** app in the list \> **Properties** \>
 **Assignments** \> **Edit**.
 
     :::image type="content" source="images/mda-properties.png" alt-text="The Edit option on the Properties page" lightbox="images/mda-properties.png":::

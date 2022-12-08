@@ -16,8 +16,10 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ---
 
 # EmailUrlInfo
@@ -27,7 +29,7 @@ ms.topic: article
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Office 365
+
 
 The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Microsoft Defender for Office 365. Use this reference to construct queries that return information from this table. 
 

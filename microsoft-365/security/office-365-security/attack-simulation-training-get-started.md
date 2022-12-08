@@ -14,7 +14,7 @@ search.appverid:
   - MOE150
 ms.assetid:
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
 ms.custom: 
   - seo-marvel-apr2020
@@ -39,6 +39,8 @@ Watch this short video to learn more about Attack simulation training.
 > Attack simulation training replaces the old Attack Simulator v1 experience that was available in the Security & Compliance Center at **Threat management** \> **Attack simulator** or <https://protection.office.com/attacksimulator>.
 
 ## What do you need to know before you begin?
+
+- Attack simulation training requres a Microsoft 365 E5 or [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md) license.
 
 - To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, use <https://security.microsoft.com/attacksimulator>.
 
@@ -116,7 +118,7 @@ The URLs that are used by Attack simulation training are described in the follow
 
 ### Create a simulation
 
-For step by step instructions on how to create and send a new simulation, see [Simulate a phishing attack](attack-simulation-training.md).
+For step by step instructions on how to create and send a new simulation, see [Simulate a phishing attack](attack-simulation-training-simulations.md).
 
 ### Create a payload
 

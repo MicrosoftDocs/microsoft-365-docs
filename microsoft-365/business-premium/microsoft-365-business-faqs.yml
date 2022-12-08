@@ -7,9 +7,13 @@ metadata:
   - NOCSH
   ms.author: deniseb
   ms.topic: how-to
-  ms.date: 07/19/2022
-  ms.service: microsoft-365-business
-  ms.subservice: business-premium
+  ms.service: microsoft-365-security
+  ms.collection:
+  - tier1
+  - highpri
+  - m365-security
+  ms.subservice: other
+  ms.date: 09/15/2022
   ms.localizationpriority: medium
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
@@ -41,7 +45,7 @@ sections:
           **Simplified device deployment and user setup**:
           
           - Single admin console to set up and manage users and devices
-          - Auto-installation of Office apps on Windows 10 PCs.
+          - Auto-installation of Microsoft 365 apps on Windows 10 PCs.
           - Always up-to-date Office + Windows 10.
           - Streamlined deployment of PCs with Windows Autopilot.
           
@@ -102,7 +106,7 @@ sections:
           
           Microsoft 365 Business Premium offers customers a simple but powerful means of enabling employees to use their personal devices for work while providing the business with the ability to prevent those devices from accessing, retaining, and/or sharing business information. More specifically:
           
-          - **App Protection for Office mobile apps** helps protect Office data, including email, calendar, contacts, and documents on iOS and Android mobile devices, by enforcing policies such as automatically deleting business data after a prescribed amount of time of not connecting to the service, requiring that information is stored only in OneDrive for Business, requiring a PIN/fingerprint verification to access Office apps, and preventing company data from being copied from an Office app into personal apps. Mobile application management for other mobile apps through Intune is also available for Microsoft 365 Business Premium subscribers.
+          - **App Protection for Office mobile apps** helps protect Office data, including email, calendar, contacts, and documents on iOS and Android mobile devices, by enforcing policies such as automatically deleting business data after a prescribed amount of time of not connecting to the service, requiring that information is stored only in OneDrive for Business, requiring a PIN/fingerprint verification to access Microsoft 365 apps, and preventing company data from being copied from an Office app into personal apps. Mobile application management for other mobile apps through Intune is also available for Microsoft 365 Business Premium subscribers.
           
           - **Device Management for Windows 10 PCs** allows businesses to choose to set and enforce capabilities such as Microsoft Defender Antivirus protection for malware, automatic updates, and turning off screens after a prescribed amount of time. In addition, lost or stolen Windows 10 devices can be completely wiped of business applications and data through the admin center.
           

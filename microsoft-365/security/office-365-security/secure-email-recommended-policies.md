@@ -5,7 +5,7 @@ ms.author: dansimp
 author: dansimp
 manager: Laurawi
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords: 
   - NOCSH
@@ -15,13 +15,14 @@ ms.custom:
   - goldenconfig
 ms.collection: 
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - remotework
   - m365solution-identitydevice
   - m365solution-scenario
   - zerotrust-solution
   - highpri
 ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Policy recommendations for securing email

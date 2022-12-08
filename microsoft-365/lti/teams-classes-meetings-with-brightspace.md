@@ -6,7 +6,7 @@ manager: serdars
 ms.reviewer: amitman 
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu

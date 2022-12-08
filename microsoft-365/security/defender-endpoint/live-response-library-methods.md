@@ -16,9 +16,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance 
+- m365-security
+- tier3
 ms.topic: reference
-ms.subservice: m365d
+ms.subservice: mde
 ---
 
 #  Live response library methods and properties

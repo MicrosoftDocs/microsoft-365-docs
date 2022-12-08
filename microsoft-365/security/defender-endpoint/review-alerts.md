@@ -12,11 +12,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+  - m365-security
+  - tier1
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Review alerts in Microsoft Defender for Endpoint

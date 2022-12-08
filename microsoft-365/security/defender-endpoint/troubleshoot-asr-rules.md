@@ -16,9 +16,12 @@ manager: dansimp
 ms.custom: 
 - asr
 - admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
@@ -92,7 +95,7 @@ The above shows all the IDs for ASR rules that have a setting different from 0 (
 The next step is then to list the actual actions (Block or Audit) that each rule is configured with.
 
 ```powershell
-Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Actions
+Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Actions
 ```
 
 :::image type="content" source="images/getmpref-example2new.png" alt-text="The get mppreference example2" lightbox="images/getmpref-example2new.png":::

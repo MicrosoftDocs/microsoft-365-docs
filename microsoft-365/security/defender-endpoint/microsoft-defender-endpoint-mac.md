@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint on Mac
 ms.reviewer: 
 description: Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, catalina, mojave, mde for mac
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, catalina, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,10 +13,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Microsoft Defender for Endpoint on Mac
@@ -73,7 +74,7 @@ The three most recent major releases of macOS are supported.
 > [!IMPORTANT]
 > On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 
-- 12 (Monterey), 11 (Big Sur), 10.15 (Catalina)
+- 13 (Ventura), 12 (Monterey), 11 (Big Sur)
 - Disk space: 1GB
 
 Beta versions of macOS are not supported.

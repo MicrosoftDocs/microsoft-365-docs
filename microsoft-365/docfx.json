@@ -75,7 +75,7 @@
       "extendBreadcrumb": true,
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "searchScope": ["Microsoft 365", "Microsoft Bookings", "SharePoint Syntex", "Microsoft 365 for frontline workers"],
+      "searchScope": ["Microsoft 365", "Microsoft Bookings", "Microsoft Syntex", "Microsoft 365 for frontline workers"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
@@ -106,7 +106,7 @@
         "business/**/*.md": "Microsoft 365 Business",
         "admin/**/*.md": "Microsoft 365 admin",
         "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
-        "contentunderstanding/**/*.md": "SharePoint Syntex",
+        "contentunderstanding/**/*.md": "Microsoft Syntex",
         "frontline/**/*.md": "Microsoft 365 for frontline workers"
       },
       "feedback_product_url": {
@@ -126,18 +126,18 @@
         "frontline/":"https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472"
       },
       "searchScope": {
-        "admin/**/*.md": "Microsoft 365",
-        "bookings/**/*.md": "Microsoft Bookings",
-        "business/**/*.md": "Microsoft 365",
-        "business-video/**/*.md": "Microsoft 365",
-        "commerce/**/*.md": "Microsoft 365",
-        "compliance/**/*.md": "Microsoft 365",
-        "contentunderstanding/**/*.md":"SharePoint Syntex",
-        "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
-        "frontline/**/*.md": "Microsoft 365 for frontline workers",
-        "enterprise/**/*.md": "Microsoft 365",
-        "security/**/*.md": "Microsoft 365",
-        "solutions/**.*.md": "Microsoft 365"
+        "admin/**/*.md": ["Microsoft 365"],
+        "bookings/**/*.md": ["Microsoft Bookings"],
+        "business/**/*.md": ["Microsoft 365"],
+        "business-video/**/*.md": ["Microsoft 365"],
+        "commerce/**/*.md": ["Microsoft 365"],
+        "compliance/**/*.md": ["Microsoft 365"],
+        "contentunderstanding/**/*.md":["Microsoft Syntex"],
+        "lighthouse/**/*.md": ["Microsoft 365 Lighthouse"],
+        "frontline/**/*.md": ["Microsoft 365 for frontline workers"],
+        "enterprise/**/*.md": ["Microsoft 365"],
+        "security/**/*.md": ["Microsoft 365"],
+        "solutions/**.*.md": ["Microsoft 365"]
       }
     },
     "template": [],

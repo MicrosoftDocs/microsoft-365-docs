@@ -13,9 +13,12 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.date: 06/16/2022
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Common mistakes to avoid when defining exclusions
@@ -36,7 +39,8 @@ ms.collection: M365-security-compliance
 
 You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. However, excluded items could contain threats that make your device vulnerable. This article describes some common mistakes that you should avoid when defining exclusions.
 
-Before defining your exclusion lists, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
+> [!TIP]
+> Before defining your exclusion lists, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) and review the detailed information in [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
 ## Excluding certain trusted items
 
@@ -200,3 +204,7 @@ See [Use wildcards in the file name and folder path or extension exclusion lists
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+## See also
+
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

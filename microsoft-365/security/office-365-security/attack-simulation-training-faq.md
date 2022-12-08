@@ -13,7 +13,7 @@ search.appverid:
   - MET150
   - MOE150
 ms.assetid:
-ms.collection: m365-security-compliance
+ms.collection: m365-security
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about deployment considerations and frequently asked questions regarding Attack simulation and training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
@@ -132,9 +132,9 @@ If messages that users reported as phishing aren't captured in Attack simulation
 
 ### Users are assigned training after they report a simulated message
 
-If users are assigned training after they report a phishing simulation message, check to see if your organization has a **custom mailbox** configured in your **user submission policy**. When configuring a **custom mailbox**, this mailbox needs to be excluded from Safe Links and Safe Attachments policies as per the [Custom mailbox prerequisites](user-submission.md).
+If users are assigned training after they report a phishing simulation message, check to see if your organization uses a reporting mailbox to receive user reported messages at <https://security.microsoft.com/securitysettings/userSubmission>. The reporting mailbox needs to be configured to skip many security checks as described in the [reporting mailbox prerequisites](submissions-user-reported-messages-files-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox).
 
-If your organization has a **custom mailbox** configured and has not set up the required exclusions, these messages may be detonated, causing training assignments.
+If you don't configure the required exclusions for the custom reporting mailbox, these messages might be detonated by Safe Links or Safe Attachments protection, which will cause training assignments.
 
 ## Other frequently asked questions
 

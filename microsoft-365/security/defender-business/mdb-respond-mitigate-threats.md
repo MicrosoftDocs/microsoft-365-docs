@@ -10,13 +10,14 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 09/14/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # Respond to and mitigate threats in Microsoft Defender for Business
@@ -32,11 +33,11 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
    :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Screenshot of cards in the Microsoft 365 Defender portal":::
 
-3. Select a button or link on the card to view more information and take action. As an example, our **Devices at risk** card includes a **View details** button. Selecting that button takes us to the **Device inventory** page, as shown in the following image:
+3. Select a button or link on the card to view more information and take action. As an example, our **Devices at risk** card includes a **View details** button. Selecting that button takes us to the **Devices** list, as shown in the following image:
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
 
-   The **Device inventory** page lists company devices, along with their risk level and exposure level.
+   The **Devices** page lists company devices, along with their risk level and exposure level.
 
 4. Select an item, such as a device. A flyout pane opens and displays more information about alerts and incidents generated for that item, as shown in the following image:  
 

@@ -8,13 +8,13 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom: 
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -33,7 +33,7 @@ Before you try Defender for Office 365 Plan 2, there are some key questions that
 
 This article will help you answer those questions so you can try Defender for Office 365 Plan 2 in a way that best meets the needs of your organization.
 
-For a companion guide for how to use your trial, see [Trial playbook: Microsoft Defender for Office 365](trial-playbook-defender-for-office-365.md).
+For a companion guide for how to use your trial, see [Trial User Guide: Microsoft Defender for Office 365](trial-user-guide-defender-for-office-365.md).
 
 ## Overview of Defender for Office 365
 
@@ -55,17 +55,17 @@ Defender for Office 365 includes the features of Exchange Online Protection (EOP
 
 The protection features of EOP and Defender for Office 365 are implemented using policies. **Policies that are exclusive to Defender for Office 365 are created for you as needed**:
 
-- [Impersonation protection in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-- [Safe Attachments for email messages](safe-attachments.md)
-- [Safe Links for email messages and Microsoft Teams](safe-links.md)
+- [Impersonation protection in anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+- [Safe Attachments for email messages](safe-attachments-about.md)
+- [Safe Links for email messages and Microsoft Teams](safe-links-about.md)
   - Safe Links detonates URLs during mail flow. To prevent specific URLs from being detonated, use allow entries for URLs in the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
   - Safe Links doesn't wrap URL links in email message bodies.
 
 Your eligibility for an evaluation or trial means you already have EOP. **No new or special EOP policies are created for your evaluation or trial of Defender for Office 365 Plan 2**. Existing EOP policies in your Microsoft 365 organization are able to act on messages (for example, send messages to the Junk Email folder or to quarantine):
 
 - [Anti-malware policies](anti-malware-protection.md)
-- [Inbound anti-spam protection](anti-spam-protection.md)
-- [Anti-spoofing protection in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings)
+- [Inbound anti-spam protection](anti-spam-protection-about.md)
+- [Anti-spoofing protection in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings)
 
 The default policies for these EOP features are always on, apply to all recipients, and are always applied last after any custom policies.
 
@@ -75,7 +75,7 @@ Do you want your Defender for Office 365 experience to be active or passive? The
 
 - **Audit mode**: Special *evaluation policies* are created for anti-phishing (which includes impersonation protection), Safe Attachments, and Safe Links. These evaluation policies are configured to *detect* threats only. Defender for Office 365 detects harmful messages for reporting, but the messages aren't acted upon (for example, detected messages aren't quarantined). The settings of these evaluation policies are described in the [Policies in audit mode](#policies-in-audit-mode) section later in this article.
 
-  Audit mode provides access to customized reports for threats detected by Defender for Office 365 on the **Evaluation mode** page at<https://security.microsoft.com/atpEvaluation>.
+  Audit mode provides access to customized reports for threats detected by Defender for Office 365 on the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation>.
 
 - **Blocking mode**: The Standard template for [preset security policies](preset-security-policies.md) is turned on and used for the trial, and the users you specify to include in the trial are added to the Standard preset security policy. Defender for Office 365 *detects* and *takes action on* harmful messages (for example, detected messages are quarantined).
 
@@ -107,7 +107,7 @@ What's the difference between an evaluation and a trial of Defender for Office 3
 
   - For organizations without Defender for Office 365 (for example, standalone EOP or Microsoft 365 E3) the features (in particular, the policies) of Defender for Office 365 are available to you during the trial period.
 
-  - Organizations with Defender for Office 365 Plan 1 (for example Microsoft 365 Business Premium or add-on subscriptions) have exactly the same policies as organizations with Defender for Office 365 Plan 2 (impersonation protection in anti-phishing policies, Safe Attachments policies, and Safe Links policies). The security policies from **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) don't expire or stop working after 90 days. What ends after 90 days for these organizations are the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) of Plan 2 that aren't present in Plan 1.
+  - Organizations with Defender for Office 365 Plan 1 (for example Microsoft 365 Business Premium or add-on subscriptions) have exactly the same policies as organizations with Defender for Office 365 Plan 2 (impersonation protection in anti-phishing policies, Safe Attachments policies, and Safe Links policies). The security policies from **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) don't expire or stop working after 90 days. What ends after 90 days for these organizations are the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) of Plan 2 that aren't present in Plan 1.
 
 - If you already have Defender for Office 365 Plan 2 (for example, as part of a Microsoft 365 E5 subscription), you'll never see **Defender for Office 365** on the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>. Instead, you start your evaluation of Defender for Office 365 Plan to on the **Evaluation mode** page at <https://security.microsoft.com/atpEvaluation> in **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies).
 
@@ -121,7 +121,7 @@ The information from the previous list is summarized in the following table:
 |Defender for Office 365 Plan 1 <br/><br/> Microsoft 365 Business Premium|Audit mode <br/> Blocking mode|Yes|Yes|Unlimited<sup>\*</sup>|
 |Microsoft 365 E5|Audit mode <br/> Blocking mode|Yes|No|Unlimited|
 
-<sup>\*</sup> The security policies from **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) don't expire or stop working after 90 days. Only the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) that are exclusive to Defender for Office 365 Plan 2 stop working after 90 days.
+<sup>\*</sup> The security policies from **allow mode** (Standard preset security policy) or **blocking mode** (evaluation policies) don't expire or stop working after 90 days. Only the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) that are exclusive to Defender for Office 365 Plan 2 stop working after 90 days.
 
 ## Set up an evaluation or trial in audit mode
 
@@ -196,7 +196,7 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
           As explained in the previous step, Enhanced Filtering for Connectors is automatically configured on the connector that you specify as the source of mail from the protection service.
 
-          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-spoofing-protection.md), and could impact the delivery of those newly-detected messages (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
+          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-spoofing-protection.md), and could impact the delivery of those newly detected messages (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
 
           To create an SCL=-1 mail flow rule or to review your existing rules, click the **Go to Exchange admin center** button on the page. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
@@ -279,7 +279,11 @@ After you set up your evaluation or trial in audit mode or blocking mode, the **
 
 ## Reports for your evaluation or trial of Defender for Office 365
 
-In **audit mode** or **blocking mode**, the following reports show detections by Defender for Office 365:
+This section describes the reports that are available in audit mode and blocking mode.
+
+### Reports for blocking mode
+
+In **blocking mode**, the following reports show detections by Defender for Office 365:
 
 - The [Mailflow view for the Mailflow status report](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report):
 
@@ -321,11 +325,18 @@ In **audit mode** or **blocking mode**, the following reports show detections by
 
     **Show data for Top malware recipients (MDO)** and **Show data for Top phish recipients (MDO)**.
 
-  - The [URL protection report](view-reports-for-mdo.md#url-protection-report)
+  - The [URL protection report](reports-defender-for-office-365.md#url-protection-report)
 
-### Reports for audit mode only
+### Reports for audit mode
 
-In [Threat Explorer](threat-explorer.md), messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
+In **audit mode**, the following reports show detections by Defender for Office 365:
+
+- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) has **Evaluation: Yes/No** as a filterable property in the following views:
+  - [View data by Email \> Phish and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Spam and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
+
+- [Threat Explorer](threat-explorer.md) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
 
   ![Notification banner in message details that the Defender for Office 365 evaluation detected a malicious email message.](../../media/evalv2-detection-banner.png)
 
@@ -375,7 +386,7 @@ A: A maximum of 2 times. If your first trial expires, you need to wait at least 
 
 A: Yes. No one in any program or SKU can turn off or bypass taking action on messages that are classified as malware or high confidence phishing by the service.
 
-In audit mode, [anti-spoofing protection in EOP](set-up-anti-phishing-policies.md#spoof-settings) also takes action on messages. To prevent anti-spoofing protection from acting on messages, create an Exchange mail flow rule (also known as a transport rule) where inbound email bypasses all types of filtering that can be bypassed (including anti-spoofing protection). For instructions, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+In audit mode, [anti-spoofing protection in EOP](anti-phishing-policies-about.md#spoof-settings) also takes action on messages. To prevent anti-spoofing protection from acting on messages, create an Exchange mail flow rule (also known as a transport rule) where inbound email bypasses all types of filtering that can be bypassed (including anti-spoofing protection). For instructions, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 ### Q: In what order are policies evaluated?
 

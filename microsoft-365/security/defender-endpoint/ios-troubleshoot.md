@@ -12,9 +12,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Troubleshoot issues and find answers to FAQs on Microsoft Defender for Endpoint on iOS
