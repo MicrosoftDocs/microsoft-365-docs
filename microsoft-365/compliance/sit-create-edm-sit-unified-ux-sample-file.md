@@ -45,8 +45,8 @@ The system will extract the column names from the sample file to create the sche
 - The first row must be the header row and contain column names.
 - The file must contain at least one row of data.
 - Each row of data must contain the correct number of fields, corresponding to the headers.
-- The sample file contain up to 32 columns.
-- The sample file can exceed 2.5 MB in size.
+- The sample file can contain up to 32 columns.
+- The sample file can't exceed 2.5 MB in size.
 - Column (field) names must start with a letter, be at least three characters long, and consist of only alphanumeric characters (A-Z, a-z, 0-9) and can’t include spaces, underscores or other special characters. 
 
 For example, if your actual data looks like this and uses tab delimited (.tsv) format
