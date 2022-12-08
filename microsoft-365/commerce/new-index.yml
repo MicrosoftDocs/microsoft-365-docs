@@ -71,7 +71,7 @@ landingContent:
             url: https://www.youtube.com/watch?v=1E3-ozWz0A4
 
   # Card
-  - title: Try, buy, upgrade, renew, or cancel
+  - title: Try, buy, upgrade, or cancel
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -81,8 +81,6 @@ landingContent:
             url: ../admin/get-help-with-domains/buy-a-domain-name.md
           - text: Upgrade to a different plan 
             url: subscriptions/upgrade-to-different-plan.md
-          - text: Renew your subscription
-            url: subscriptions/renew-your-subscription.md
           - text: Cancel your subscription
             url: subscriptions/cancel-your-subscription.md
           - text: Close your account
@@ -123,13 +121,13 @@ landingContent:
             url: ../admin/manage/assign-licenses-to-users.md
 
   # Card
-  - title: Upgrade, renew, or cancel (billing profile)
+  - title: Upgrade, cancel, or close (billing profile)
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Upgrade to a different plan
             url: ./try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial
-          - text: Cancl your subscription
+          - text: Cancel your subscription
             url: subscriptions/cancel-your-subscription.md#if-you-have-a-billing-profile
           - text: Close your account
             url: close-your-account.md
