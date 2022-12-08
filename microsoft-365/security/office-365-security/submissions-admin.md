@@ -107,7 +107,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 :::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-block.png":::
 
 > [!NOTE]
-> For messages that were incorrectly blocked by [spoof intelligence](learn-about-spoof-intelligence.md), a block entry for the domain pair is not created in the Tenant Allow/Block List.
+> For messages that were incorrectly blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md), a block entry for the domain pair is not created in the Tenant Allow/Block List.
 >
 > For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), a block entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains section** in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 
@@ -231,7 +231,7 @@ After a few moments, the allow entry will appear on the **Domains & addresses** 
 > - If the sender has not already been blocked, submitting the email message to Microsoft won't create an allow entry in the Tenant Allow/Block List.
 > - Allows are added during mail flow, based on which filters determined the message to be malicious. For example, if the sender and a URL in the message were determined to be bad, an allow entry is created for the sender, and an allow entry is created for the URL.
 > - When that entity (domain or email address, URL, file) is encountered again, all filters associated with that entity are skipped. For an email, all other entities are still evaluated by the filtering system before making a decision.
-> - During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-validation-and-authentication.md) passes, a message from a sender in the allow entry will be delivered.
+> - During mail flow, if messages from the domain or email address pass other checks in the filtering stack, the messages will be delivered. For example, if [email authentication](email-authentication-about.md) passes, a message from a sender in the allow entry will be delivered.
 
 ## Report good email attachments to Microsoft
 
@@ -266,7 +266,7 @@ After a few moments, the allow entry will appear on the **Domains & addresses** 
 After a few moments, an allow entry will appear on the **Files** tab on the **Tenant Allow/Block List** page.
 
 > [!NOTE]
-> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered.
+> When the file is encountered again, it's not sent for [Safe Attachments](safe-attachments-about.md) detonation or file reputation checks, and all other file-based filters are skipped. During mail flow, if messages containing the file pass other non-file checks in the filtering stack, the messages will be delivered.
 
 ## Report good URLs to Microsoft
 

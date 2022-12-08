@@ -87,7 +87,7 @@ Preset security policies use the corresponding policies from the various protect
 
 - **Exchange Online Protection (EOP) policies**: These policies are in all Microsoft 365 organizations with Exchange Online mailboxes and standalone EOP organizations without Exchange Online mailboxes:
 
-  - [Anti-spam policies](configure-your-spam-filter-policies.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
+  - [Anti-spam policies](anti-spam-policies-configure.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
   - [Anti-malware policies](configure-anti-malware-policies.md) named **Standard Preset Security Policy** and **Strict Preset Security Policy**.
   - [Anti-phishing policies (spoofing protection)](anti-phishing-policies-about.md#spoof-settings) named **Standard Preset Security Policy** and **Strict Preset Security Policy** (spoof settings).
 
@@ -99,7 +99,7 @@ Preset security policies use the corresponding policies from the various protect
     - The same [spoof settings](anti-phishing-policies-about.md#spoof-settings) that are available in the EOP anti-phishing policies.
     - [Impersonation settings](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Advanced phishing thresholds](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [Safe Links policies](set-up-safe-links-policies.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
+  - [Safe Links policies](safe-links-policies-configure.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
   - [Safe Attachments policies](set-up-safe-attachments-policies.md) named **Standard Preset Security Policy**, **Strict Preset Security Policy**, and **Built-in Protection Policy**.
 
 You can apply EOP protections to different users than Defender for Office 365 protections, or you can apply EOP and Defender for Office 365 to the same recipients.

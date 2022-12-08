@@ -37,7 +37,7 @@ ms.service: microsoft-365-security
 
 Safe Links is a feature in [Microsoft Defender for Office 365](defender-for-office-365.md) that provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links.md).
 
-You configure most Safe Links settings in Safe Links policies, including [Safe Links settings for supported Office Apps](safe-links.md#safe-links-settings-for-office-apps). For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
+You configure most Safe Links settings in Safe Links policies, including [Safe Links settings for supported Office Apps](safe-links.md#safe-links-settings-for-office-apps). For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
 
 But, Safe Links also uses the following global settings that you configure outside of the Safe Links policies themselves:
 
@@ -47,7 +47,7 @@ You can configure the global Safe Links settings in the Microsoft 365 Defender p
 
 ## What do you need to know before you begin?
 
-- Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies to apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
+- Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies to apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
 

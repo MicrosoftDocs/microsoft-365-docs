@@ -76,7 +76,7 @@ Security settings in Office 365 help protect email and content. To view or chang
    - [Safe Attachments](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [Safe Links](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
 
-3. Make sure [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md) is turned on.
+3. Make sure [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../office-365-security/safe-attachments-for-spo-odfb-teams-about.md) is turned on.
 
 4. Make sure [Zero-hour auto purge (ZAP) in Exchange Online](../office-365-security/zero-hour-auto-purge.md) is in effect.
 

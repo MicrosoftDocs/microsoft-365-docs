@@ -31,7 +31,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Spoofed sender management in the Microsoft 365 Defender portal is now available only on the **Spoofed senders** tab in the Tenant Allow/Block List. For current procedures in the Microsoft 365 Defender portal, see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
+> Spoofed sender management in the Microsoft 365 Defender portal is now available only on the **Spoofed senders** tab in the Tenant Allow/Block List. For current procedures in the Microsoft 365 Defender portal, see [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md).
 >
 > Spoofed sender management in Exchange Online PowerShell or Standalone EOP PowerShell is in the process of being migrated exclusively to the related **\*-TenantAllowBlockListSpoofItems**, **Get-SpoofIntelligenceInsight**, and **Get-SpoofMailReport** cmdlets. For procedures using these cmdlets, see the following articles:
 >
