@@ -74,7 +74,7 @@ Incident queue management and the responsible personas are described in the foll
 In Defender for Office 365, you manage false positives (good mail marked as bad) and false negatives (bad mail allowed) in the following locations:
 
 - The [Submissions portal (admin submissions)](submissions-admin.md).
-- The [Tenant Allow/Block List](manage-tenant-allow-block-list.md)
+- The [Tenant Allow/Block List](tenant-allow-block-list-about.md)
 - [Threat Explorer](threat-explorer.md)
 
 For more information, see the [Manage false positive and false negative detections](#manage-false-positive-and-false-negative-detections) section later in this article.
@@ -210,7 +210,7 @@ The following permissions (roles and role groups) are available in Defender for 
 
     To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
-  - **Tenant AllowBlockList Manager**: Manage allow and block entries in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
+  - **Tenant AllowBlockList Manager**: Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
 
     By default, this role is assigned only to the **Security Operator** role group. But, members of the **Security Administrators** and **Organization management** role groups can also manage entries in the Tenant Allow/Block List.
 
@@ -273,7 +273,7 @@ Security team members can do submissions from multiple locations in the Microsof
 
   You can select up to 10 messages to perform a bulk submission. Admin submissions created this way also visible in the Submission portal.
 
-For the short-term mitigation of false negatives, security teams can directly manage block entries for files, URLs, and domains or email addresses in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+For the short-term mitigation of false negatives, security teams can directly manage block entries for files, URLs, and domains or email addresses in the [Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 For the short-term mitigation of false positives, security teams can't directly manage allow entries for domains and email addresses in the Tenant Allow/Block List. Instead, they need to use [admin submissions](submissions-admin.md) to report the email message as a false positive. For instructions, see [Use the Microsoft 365 Defender portal to create allow entries for domains and email addresses in the Submissions portal](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal).
 

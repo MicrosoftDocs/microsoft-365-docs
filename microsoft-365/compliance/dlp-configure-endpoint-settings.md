@@ -385,13 +385,14 @@ This feature is available for devices running any of the following Windows versi
 You define a printer by these parameters:
 
 - Friendly printer name - Get the Friendly printer name value from the printer device property details in device manager.
-- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
-- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB printer - A printer connected through USB port of a computer. You can select this if you want to enforce any USB printer and leave USB product ID and USB vendor ID unselected, you can also define specific USB printer through USB product ID and USB vendor ID.
+	- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+	- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - IP range
-- Print to file - For example Microsoft Print to PDF or Microsoft XPS Document Writer.
+- Print to file - Microsoft Print to PDF or Microsoft XPS Document Writer. If you only want to enforce Microsoft Print to PDF, you should use Friendly printer name with 'Microsoft Print to PDF'.
 - Universal print deployed on a printer - See, [Set up Universal Print](/universal-print/fundamentals/universal-print-getting-started.md) for more information on universal printers
 - Corporate printer - is a print queue shared through on-premises Windows print server in your domain. Its path might look like  \\print-server\contoso.com\legal_printer_001
-- Print to local
+- Print to local: Any printer connecting through Microsoft print port but not any of above type, for example print through remote desktop or redirect printer.
 
 You assign each printer in the group a **Display name**. The name only appears in the Purview console. So, continuing with the example, you would create a printer group named **Legal printers** and add individual printers (with an alias) by their friendly name, like `legal_printer_001`, `legal_printer_002` and `legal_color_printer`.
 
