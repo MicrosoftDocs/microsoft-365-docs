@@ -56,15 +56,15 @@ Defender for Office 365 includes the features of Exchange Online Protection (EOP
 The protection features of EOP and Defender for Office 365 are implemented using policies. **Policies that are exclusive to Defender for Office 365 are created for you as needed**:
 
 - [Impersonation protection in anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-- [Safe Attachments for email messages](safe-attachments.md)
-- [Safe Links for email messages and Microsoft Teams](safe-links.md)
+- [Safe Attachments for email messages](safe-attachments-about.md)
+- [Safe Links for email messages and Microsoft Teams](safe-links-about.md)
   - Safe Links detonates URLs during mail flow. To prevent specific URLs from being detonated, use allow entries for URLs in the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
   - Safe Links doesn't wrap URL links in email message bodies.
 
 Your eligibility for an evaluation or trial means you already have EOP. **No new or special EOP policies are created for your evaluation or trial of Defender for Office 365 Plan 2**. Existing EOP policies in your Microsoft 365 organization are able to act on messages (for example, send messages to the Junk Email folder or to quarantine):
 
 - [Anti-malware policies](anti-malware-protection.md)
-- [Inbound anti-spam protection](anti-spam-protection.md)
+- [Inbound anti-spam protection](anti-spam-protection-about.md)
 - [Anti-spoofing protection in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings)
 
 The default policies for these EOP features are always on, apply to all recipients, and are always applied last after any custom policies.

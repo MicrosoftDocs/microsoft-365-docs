@@ -25,6 +25,9 @@ search.appverid:
 ---
 # Custom roles in role-based access control for Microsoft 365 Defender
 
+>[!Note]
+> If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
+
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Applies to:**
@@ -63,7 +66,6 @@ Each custom role created through an individual portal allows access to the data 
 > Custom roles created in Microsoft Defender for Cloud Apps have access to Microsoft Defender for Identity data as well. Users with User group admin, or App/instance admin Microsoft Defender for Cloud Apps roles are not able to access Microsoft Defender for Cloud Apps data through the Microsoft 365 Defender portal.
 
 ## Manage permissions and roles in the Microsoft 365 Defender portal
-
 Permissions and roles can also be managed in the Microsoft 365 Defender portal:
 
 1. Sign in to the Microsoft 365 Defender portal at security.microsoft.com.
@@ -73,8 +75,8 @@ Permissions and roles can also be managed in the Microsoft 365 Defender portal:
 > [!NOTE]
 > This only applies to Defender for Office 365 and Defender for Endpoint. Access for other workloads must be done in their relevant portals.
 
-## Required roles and permissions
 
+## Required roles and permissions
 The following table outlines the roles and permissions required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.
 
 > [!NOTE]
@@ -99,7 +101,6 @@ Similarly, to view hunting data from Microsoft Defender for Office 365, users wo
 - View-only recipients
 
 ## Related topics
-
 - [RBAC roles](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Manage access to Microsoft 365 Defender](m365d-permissions.md)
 - [Manage admin access for Defender for Cloud Apps](/cloud-app-security/manage-admins)
