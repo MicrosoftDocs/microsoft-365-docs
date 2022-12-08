@@ -1,5 +1,5 @@
 ---
-title: OneDrive Cross-Tenant User Data Migration Step 6
+title: OneDrive Cross-tenant OneDrive migration Step 6
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
@@ -30,7 +30,7 @@ This is Step 6 in a solution designed to complete a Cross-tenant OneDrive migrat
 
 Now you're ready to start your OneDrive migration.  Before starting any cross-tenant migration, do the following steps. 
 
-1. Ensure you've verified the compatibility status. if you see a compatible status on your source tenant you may continue. Run:
+1. Ensure you have verified the compatibility status. If you see a status of either **Compatible** or **Warning**  on your source tenant, you may continue. Run: 
 
 ```powershell
 Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
