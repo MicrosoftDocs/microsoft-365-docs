@@ -70,6 +70,7 @@ After you've [identified what type of hold is placed on the inactive mailbox](ch
 Use the instructions that map to the type of hold:
 
 - [Remove an inactive mailbox from a retention policy](#remove-an-inactive-mailbox-from-a-retention-policy)
+- [Remove an eDiscovery hold](#remove-an-ediscovery-hold)
 - [Remove a Litigation Hold](#remove-a-litigation-hold)
 - [Remove an In-Place Hold](#remove-an-in-place-hold)
 
@@ -124,6 +125,10 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
 ```
 
 For more information about identifying specific location retention policies that are applied to an inactive mailbox, and obtaining the GUID for a retention policy, see the "Get-Mailbox" section in [How to identify the type of hold placed on a mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox).
+
+### Remove an eDiscovery hold
+
+See [Removing content locations from an eDiscovery hold](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold )
 
 ### Remove a Litigation Hold
 
