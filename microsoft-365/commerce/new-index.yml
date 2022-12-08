@@ -85,8 +85,6 @@ landingContent:
             url: subscriptions/renew-your-subscription.md
           - text: Cancel your subscription
             url: subscriptions/cancel-your-subscription.md
-          - text: Reactivate your subscription
-            url: subscriptions/reactivate-your-subscription.md
           - text: Close your account
             url: close-your-account.md
       - linkListType: video
