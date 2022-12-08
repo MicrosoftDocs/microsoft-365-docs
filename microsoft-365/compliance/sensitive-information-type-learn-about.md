@@ -14,7 +14,9 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 description: "This article gives an overview of sensitive information types and how they detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items"
 ---
 
@@ -29,6 +31,8 @@ Identifying and classifying sensitive items that are under your organizations co
 Sensitive information types (SIT) are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of all SITs.
 
 Microsoft provides a large number of pre-configured SITs or you can create your own.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Sensitive information types are used in
 
@@ -82,9 +86,9 @@ Every sensitive information type entity is defined by these fields:
 
 ![Diagram of corroborative evidence and proximity window.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-<!--Learn more about confidence levels in this short video.
+Learn more about confidence levels in this short video.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]-->
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]
 
 ### Example sensitive information type
 
@@ -194,6 +198,11 @@ You can choose from several options to create custom sensitive information types
 > `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > We recommend using string match instead of word match in a keyword list.
+
+## Provide match/not a match accuracy feedback in sensitive info types
+
+You can view the number of matches a SIT has in **Sensitive info types** and **Content explorer**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your SITs. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
+
 
 ## For further information
 

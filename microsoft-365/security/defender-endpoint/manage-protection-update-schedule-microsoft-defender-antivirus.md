@@ -2,20 +2,22 @@
 title: Schedule Microsoft Defender Antivirus protection updates
 description: Schedule the day, time, and interval for when protection updates should be downloaded
 keywords: updates, security baselines, schedule updates
-ms.prod: m365-security
+ms.service: microsoft-365-security
 search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.technology: mde
-ms.collection: m365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier2
 ---
 
 # Manage the schedule for when protection updates should be downloaded and applied
@@ -71,9 +73,9 @@ Enabling these settings will override that default.
 
     1. Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
 
-    2. Double-click the **Specify the interval to check for definition updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
+    2. Double-click the **Specify the interval to check for security intelligence updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
 
-    3. Double-click the **Specify the time to check for definition updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
+    3. Double-click the **Specify the time to check for security intelligence updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
 
 ## Use PowerShell cmdlets to schedule protection updates
 

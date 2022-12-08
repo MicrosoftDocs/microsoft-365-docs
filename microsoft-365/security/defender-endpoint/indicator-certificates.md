@@ -3,7 +3,7 @@ title: Create indicators based on certificates
 ms.reviewer:
 description: Create indicators based on certificates that define the detection, prevention, and exclusion of entities.
 keywords: ioc, certificate, certificates, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Create indicators based on certificates
@@ -69,9 +72,10 @@ It's important to understand the following requirements prior to creating indica
 
 4. Review the details in the Summary tab, then click **Save**.
 
-## Related topics
+## Related articles
 
 - [Create indicators](manage-indicators.md)
 - [Create indicators for files](indicator-file.md)
 - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)
 - [Manage indicators](indicator-manage.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

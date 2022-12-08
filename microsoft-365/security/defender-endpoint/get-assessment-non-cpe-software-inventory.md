@@ -2,7 +2,7 @@
 title: Export non product code software inventory assessment per device
 description: Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion for software that doesn't have a Common Platform Enumeration (CPE)
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Export non product code software inventory assessment per device
@@ -29,7 +32,7 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This API returns all the data for installed software that doesn't have a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), on a per-device basis. The information returned by this API, along with the information returned by the [Export software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that does have a CPE, gives you full visibility into the software installed across your organization and the devices it’s installed on.
+This API returns all the data for installed software that doesn't have a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), on a per-device basis. The information returned by this API, along with the information returned by the [Export software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that does have a CPE, gives you full visibility into the software installed across your organization and the devices it's installed on.
 
 > [!NOTE]
 > Software products without a CPE are not supported by vulnerability management. They will be shown in the software inventory page, but because CPEs are used by vulnerability management to identify the software and any vulnerabilities, information like, exploits, number of exposed devices, and weaknesses won't be available for them. For more information, see [Software inventory](../defender-vulnerability-management/tvm-software-inventory.md).

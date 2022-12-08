@@ -12,10 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier1
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.subservice: mde
+search.appverid: met150
 ---
 
 # Alerts queue in Microsoft 365 Defender

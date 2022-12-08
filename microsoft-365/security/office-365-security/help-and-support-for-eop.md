@@ -12,9 +12,10 @@ ms.topic: conceptual
 ms.localizationpriority: medium
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
-ms.technology: mdo
-ms.prod: m365-security
-ms.collection: M365-security-compliance
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.collection: m365-security
+search.appverid: met150
 ---
 
 # Help and support for EOP

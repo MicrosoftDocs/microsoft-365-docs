@@ -1,21 +1,23 @@
 ---
 title: "Troubleshoot AzCopy in eDiscovery (Premium)"
+description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in eDiscovery (Premium).
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in eDiscovery (Premium).
 ms.custom: 
  - seo-marvel-mar2020
  - seo-marvel-apr2020
@@ -28,6 +30,8 @@ When loading non-Microsoft 365 data or documents for error remediation in Micros
 ![Upload non-Microsoft 365 files.](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 
 Usually the command that's provided works when you run it. However, there may be cases when the command that's displayed will not run successfully. Here's a few possible reasons.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## The supported version of AzCopy isn't installed on the local computer
 

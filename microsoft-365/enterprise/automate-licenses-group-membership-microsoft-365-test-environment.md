@@ -8,9 +8,11 @@ manager: scotv
 ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-identity-device-management
+ms.collection: 
+- scotvorg
+- M365-identity-device-management
 ms.custom: 
 - TLG
 - Ent_TLGs

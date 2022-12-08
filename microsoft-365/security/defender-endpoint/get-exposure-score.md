@@ -2,7 +2,7 @@
 title: Get exposure score
 description: Retrieves the organizational exposure score.
 keywords: apis, graph api, supported apis, get, exposure score, organizational exposure score
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-MS.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Get exposure score

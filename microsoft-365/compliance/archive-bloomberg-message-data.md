@@ -1,17 +1,20 @@
 ---
 title: "Set up a connector to archive Bloomberg Message data"
+description: "Administrators can set up a data connector to import and archive data from the Bloomberg Message email tool in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage your organization's third-party data."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-description: "Administrators can set up a data connector to import and archive data from the Bloomberg Message email tool in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage your organization's third-party data."
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 ---
 
 # Set up a connector to archive Bloomberg Message data
@@ -19,6 +22,8 @@ description: "Administrators can set up a data connector to import and archive d
 Use a data connector in the Microsoft Purview compliance portal to import and archive financial services email data from the [Bloomberg Message](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP (SFTP) site once every day, and imports email items to mailboxes in Microsoft 365.
 
 After Bloomberg Message data is stored in user mailboxes, you can apply Microsoft Purview features such as Litigation hold, content search, In-place archiving, auditing, Communication compliance, and Microsoft 365 retention policies to Bloomberg Message data. For example, you can search Bloomberg Message emails using the content search tool or associate the mailbox that contains the Bloomberg Message data with a custodian in an eDiscovery (Premium) case. Using a Bloomberg Message connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview of archiving Bloomberg Message data
 
@@ -66,7 +71,7 @@ Some of the implementation steps required to archive Bloomberg Message data are 
 
 - The Bloomberg Message connector can import a total of 200,000 items in a single day. If there are more than 200,000 items on the SFTP site, none of those items will be imported to Microsoft 365.
 
-- The user who creates a Bloomberg Message connector in Step 3 (and who downloads the public keys and IP address in Step 1) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the security and compliance centers" section in [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- The user who creates a Bloomberg Message connector in Step 3 (and who downloads the public keys and IP address in Step 1) must be assigned the Data Connector Admin role. This role is required to add connectors on the **Data connectors** page in the compliance portal. This role is added by default to multiple role groups. For a list of these role groups, see the "Roles in the Defender and compliance portals" section in [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-defender-and-compliance-portals). Alternatively, an admin in your organization can create a custom role group, assign the Data Connector Admin role, and then add the appropriate users as members. For instructions, see the "Create a custom role group" section in [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## Set up a connector using public keys
 
@@ -76,19 +81,19 @@ The steps in this section show you how to set up a Bloomberg Message connector u
 
 The first step is to obtain a copy of the PGP and SSH public keys. You use these keys in Step 2 to configure the Bloomberg SFTP site to allow the connector (that you create in Step 3) to connect to the SFTP site and transfer the Bloomberg Message email data to Microsoft 365 mailboxes. You also obtain an IP address in this step, which you use when configuring the Bloomberg SFTP site.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
+1. Go to <https://compliance.microsoft.com> and select **Data connectors** in the left nav.
 
-2. On the **Data connectors** page under **Bloomberg Message**, click **View**.
+2. On the **Data connectors** page under **Bloomberg Message**, select **View**.
 
-3. On the **Bloomberg Message** product description page, click **Add connector**
+3. On the **Bloomberg Message** product description page, select **Add connector**
 
-4. On the **Terms of service** page, click **Accept**.
+4. On the **Terms of service** page, select **Accept**.
 
-5. On the **Add credentials for content source** page, click **I want to use PGP and SSH public keys provided by Microsoft**.
+5. On the **Add credentials for content source** page, select **I want to use PGP and SSH public keys provided by Microsoft**.
 
    ![Select the option to use public keys.](../media/BloombergMessagePublicKeysOption.png)
 
-6. Under step 1, click the **Download SSH key**, **Download PGP key**, and **Download IP address** links to save a copy of each file to your local computer.
+6. Under step 1, select the **Download SSH key**, **Download PGP key**, and **Download IP address** links to save a copy of each file to your local computer.
 
    ![Links to download public keys and IP address.](../media/BloombergMessagePublicKeyDownloadLinks.png)
 
@@ -100,7 +105,7 @@ The first step is to obtain a copy of the PGP and SSH public keys. You use these
 
    - IP address: The Bloomberg SFTP site is configured to accept connection requests from this IP address. The same IP address is used by the Bloomberg Message connector to connect to the SFTP site and transfer Bloomberg Message data to Microsoft 365.
 
-7. Click **Cancel** to close the wizard. You come back to this wizard in Step 3 to create the connector.
+7. Select **Cancel** to close the wizard. You come back to this wizard in Step 3 to create the connector.
 
 ### Step 2: Configure the Bloomberg SFTP site
 
@@ -116,17 +121,17 @@ The next step is to use the PGP and SSH public keys and the IP address that you 
 
 The last step is to create a Bloomberg Message connector in the compliance portal. The connector uses the information you provide to connect to the Bloomberg SFTP site and transfer email messages to the corresponding user mailbox boxes in Microsoft 365.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
+1. Go to <https://compliance.microsoft.com> and select **Data connectors** in the left nav.
 
-2. On the **Data connectors** page under **Bloomberg Message**, click **View**.
+2. On the **Data connectors** page under **Bloomberg Message**, select **View**.
 
-3. On the **Bloomberg Message** product description page, click **Add connector**
+3. On the **Bloomberg Message** product description page, select **Add connector**
 
-4. On the **Terms of service** page, click **Accept**.
+4. On the **Terms of service** page, select **Accept**.
 
-5. On the **Add credentials for content source** page, click **I want to use PGP and SSH public keys provided by Microsoft**.
+5. On the **Add credentials for content source** page, select **I want to use PGP and SSH public keys provided by Microsoft**.
 
-6. Under Step 3, enter the required information in the following boxes and then click **Validate connection**.
+6. Under Step 3, enter the required information in the following boxes and then select **Validate connection**.
 
       - **Name:** The name for the connector. It must be unique in your organization.
 
@@ -138,7 +143,7 @@ The last step is to create a Bloomberg Message connector in the compliance porta
 
       - **SFTP port:** The port number for the Bloomberg SFTP site. The connector uses this port to connect to the SFTP site.
 
-7. After the connection is successfully validated, click **Next**.
+7. After the connection is successfully validated, select **Next**.
 
 8. On the **Define user** page, specify the users to import data for.
 
@@ -151,9 +156,9 @@ The last step is to create a Bloomberg Message connector in the compliance porta
    > [!NOTE]
    > The connector imports message items to the mailbox of a specific user. A new folder named **BloombergMessage** is created in the specific user's mailbox and the items will be imported to it. The connector does by using the value of the *CorporateEmailAddress* property. Every chat message contains this property, and the property is populated with the email address of every participant of the chat message. In addition to automatic user mapping using the value of the *CorporateEmailAddress* property, you can also define custom mapping by uploading a CSV mapping file. The mapping file should contain the Bloomberg UUID and corresponding Microsoft 365 mailbox address for each user. If you enable automatic user mapping and provide a custom mapping, for every message item the connector will first look at custom mapping file. If it doesn't find a valid Microsoft 365 user that corresponds to a user's Bloomberg UUID, the connector will use the *CorporateEmailAddress* property of the chat item. If the connector doesn't find a valid Microsoft 365 user in either the custom mapping file or the *CorporateEmailAddress* property of the message item, the item won't be imported.
 
-10. Click **Next**, review your settings, and then click **Finish** to create the connector.
+10. Select **Next**, review your settings, and then select **Finish** to create the connector.
 
-11. Go to the **Data connectors** page to see the progress of the import process for the new connector. Click the connector to display the flyout page, which contains information about the connector.
+11. Go to the **Data connectors** page to see the progress of the import process for the new connector. Select the connector to display the flyout page, which contains information about the connector.
 
 ## Set up a connector using private keys
 
@@ -168,21 +173,21 @@ If your organization has used PGP and SSH private keys to set up a Bloomberg SFT
 
 To obtain the IP address:
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
+1. Go to <https://compliance.microsoft.com> and select **Data connectors** in the left nav.
 
-2. On the **Data connectors** page under **Bloomberg Message**, click **View**.
+2. On the **Data connectors** page under **Bloomberg Message**, select **View**.
 
-3. On the **Bloomberg Message** product description page, click **Add connector**
+3. On the **Bloomberg Message** product description page, select **Add connector**
 
-4. On the **Terms of service** page, click **Accept**.
+4. On the **Terms of service** page, select **Accept**.
 
-5. On the **Add credentials for content source** page, click **I want to use PGP and SSH private keys**.
+5. On the **Add credentials for content source** page, select **I want to use PGP and SSH private keys**.
 
-6. Under step 1, click **Download IP address** to save a copy of the IP address file to your local computer.
+6. Under step 1, select **Download IP address** to save a copy of the IP address file to your local computer.
 
    ![Download the IP address.](../media/BloombergMessageConnectorIPAddress.png)
 
-7. Click **Cancel** to close the wizard. You come back to this wizard in Step 2 to create the connector.
+7. Select **Cancel** to close the wizard. You come back to this wizard in Step 2 to create the connector.
 
 You need to work with Bloomberg customer support to configure your Bloomberg SFTP site to accept connection requests from this IP address. Contact [Bloomberg customer support](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc) for assistance.
 
@@ -190,19 +195,19 @@ You need to work with Bloomberg customer support to configure your Bloomberg SFT
 
 After your Bloomberg SFTP site is configured, the next step is to create a Bloomberg Message connector in the compliance portal. The connector uses the information you provide to connect to the Bloomberg SFTP site and transfer email messages to the corresponding user mailbox boxes in Microsoft 365. To complete this step, be sure to have copies of the same private keys and key passphrases that you used to set up your Bloomberg SFTP site.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
+1. Go to <https://compliance.microsoft.com> and select **Data connectors** in the left nav.
 
-2. On the **Data connectors** page under **Bloomberg Message**, click **View**.
+2. On the **Data connectors** page under **Bloomberg Message**, select **View**.
 
-3. On the **Bloomberg Message** product description page, click **Add connector**
+3. On the **Bloomberg Message** product description page, select **Add connector**
 
-4. On the **Terms of service** page, click **Accept**.
+4. On the **Terms of service** page, select **Accept**.
 
-5. On the **Add credentials for content source** page, click **I want to use PGP and SSH private keys**.
+5. On the **Add credentials for content source** page, select **I want to use PGP and SSH private keys**.
 
    ![Select the option to use private keys.](../media/BloombergMessagePrivateKeysOption.png)
 
-6. Under Step 3, enter the required information in the following boxes and then click **Validate connection**.
+6. Under Step 3, enter the required information in the following boxes and then select **Validate connection**.
 
       - **Name:** The name for the connector. It must be unique in your organization.
 
@@ -222,7 +227,7 @@ After your Bloomberg SFTP site is configured, the next step is to create a Bloom
 
       - **SSH key passphrase:** The passphrase for the SSH private key.
 
-7. After the connection is successfully validated, click **Next**.
+7. After the connection is successfully validated, select **Next**.
 
 8. On the **Define user** page, specify the users to import data for
 
@@ -235,9 +240,9 @@ After your Bloomberg SFTP site is configured, the next step is to create a Bloom
    > [!NOTE]
    > The connector imports message items to the mailbox of a specific user. A new folder named **BloombergMessage** is created in the specific user's mailbox and the items will be imported to it. The connector does by using the value of the *CorporateEmailAddress* property. Every chat message contains this property, and the property is populated with the email address of every participant of the chat message. In addition to automatic user mapping using the value of the *CorporateEmailAddress* property, you can also define custom mapping by uploading a CSV mapping file. The mapping file should contain the Bloomberg UUID and corresponding Microsoft 365 mailbox address for each user. If you enable automatic user mapping and provide a custom mapping, for every message item the connector will first look at custom mapping file. If it doesn't find a valid Microsoft 365 user that corresponds to a user's Bloomberg UUID, the connector will use the *CorporateEmailAddress* property of the chat item. If the connector doesn't find a valid Microsoft 365 user in either the custom mapping file or the *CorporateEmailAddress* property of the message item, the item won't be imported.
 
-10. Click **Next**, review your settings, and then click **Finish** to create the connector.
+10. Select **Next**, review your settings, and then select **Finish** to create the connector.
 
-11. Go to the **Data connectors** page to see the progress of the import process for the new connector. Click the connector to display the flyout page, which contains information about the connector.
+11. Go to the **Data connectors** page to see the progress of the import process for the new connector. Select the connector to display the flyout page, which contains information about the connector.
 
 ## Known issues
 

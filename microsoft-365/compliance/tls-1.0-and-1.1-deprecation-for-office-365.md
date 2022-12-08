@@ -29,6 +29,8 @@ As of October 31, 2018, the Transport Layer Security (TLS) 1.0 and 1.1 protocols
 
 For SharePoint and OneDrive, you'll need to update and configure .NET to support TLS 1.2. For information, see [How to enable TLS 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Office 365 and TLS overview
 
 The Office client relies on the Windows web service (WINHTTP) to send and receive traffic over TLS protocols. The Office client can use TLS 1.2 if the web service of the local computer can use TLS 1.2. All Office clients can use TLS protocols, as TLS and SSL protocols are part of the operating system and not specific to the Office client.

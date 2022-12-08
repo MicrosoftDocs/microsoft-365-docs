@@ -2,7 +2,7 @@
 title: Security baseline assessment methods and properties per device
 description: Provides information about the security baselines APIs that pull "Microsoft Defender Vulnerability Management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Export security baselines assessment per device
@@ -168,8 +171,6 @@ GET /api/machines/BaselineComplianceAssessmentExport
 >The download URLs are only valid for 3 hours; otherwise you can use the parameter.
 >
 >To maximize download speeds, make sure you are downloading the data from the same Azure region where your data resides.
->
->Each record is approximately 1KB of data. You should take this into account when choosing the pageSize parameter that works for you.
 >
 >Some additional columns might be returned in the response. These columns are temporary and might be removed. Only use the documented columns.
 

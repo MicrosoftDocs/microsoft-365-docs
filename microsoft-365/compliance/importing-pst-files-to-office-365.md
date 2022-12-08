@@ -1,9 +1,10 @@
 ---
 title: "Learn about importing organization PST files"
+description: Learn how to use the Import service in the Microsoft Purview compliance portal to bulk-import email data (PST files) to user mailboxes.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
@@ -13,14 +14,13 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- import
 search.appverid: MET150
-ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: Learn how to use the Import service in the Microsoft Purview compliance portal to bulk-import email data (PST files) to user mailboxes.
 ---
 
 # Learn about importing your organization's PST files
@@ -35,6 +35,8 @@ You can use the Import service in the <a href="https://go.microsoft.com/fwlink/p
 - **Network upload** ![Cloud upload.](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - Upload the PST files over the network to a temporary Azure Storage location in the Microsoft cloud. Then you use the Microsoft 365 Import service to import the PST data to mailboxes in your organization.
 
 - **Drive shipping** ![Hard disk.](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - Copy the PST files to a BitLocker-encrypted hard drive and then physically ship the drive to Microsoft. When Microsoft receives the hard drive, data center personnel upload the data to a temporary Azure Storage location in the Microsoft cloud. Then you use the Microsoft 365 Import service to import the data to mailboxes in your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step-by-step instructions
 

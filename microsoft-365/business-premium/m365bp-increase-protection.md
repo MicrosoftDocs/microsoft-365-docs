@@ -7,12 +7,16 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 10/05/2022
 ms.localizationpriority: high
-ms.date: 08/18/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- m365-security
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -93,7 +97,7 @@ To assign preset security policies, follow these steps:
 
 2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. (To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.)
 
-3. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, change the toggle from **Disabled** to **Enabled**, and then select **Manage**.
+3. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, select **Manage Protection Settings**.
 
 4. The **Apply Standard protection** or **Apply Strict protection** wizard starts in a flyout. On the **EOP protections apply to** page, identify the internal recipients that the policies apply to (recipient conditions):
    - **Users**

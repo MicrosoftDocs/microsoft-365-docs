@@ -7,12 +7,15 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-security
+ms.subservice: other
+ms.date: 10/18/2022
 ms.localizationpriority: high
-ms.date: 08/05/2022
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
+- highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -64,7 +67,7 @@ Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 
 2. Sign in using the username and password for the account. Users will have this information in the email they receive when they are added as users. If they can't find the email, see [user didn't receive invite email](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
 > [!TIP]
-> Provide your staff a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md) for help signing in, getting Office apps, and saving, copying, and sharing files.
+> Provide your staff a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md) for help signing in, getting Microsoft 365 apps, and saving, copying, and sharing files.
 
 ## Customize your sign-in page with a privacy and consent notice
 

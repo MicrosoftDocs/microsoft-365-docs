@@ -15,9 +15,11 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - m365-security-compliance
+  - m365-security
   - m365initiative-defender-endpoint
+  - tier1
 ms.topic: conceptual
+search.appverid: met150
 ---
 
 # Before you begin using Defender Experts for Hunting

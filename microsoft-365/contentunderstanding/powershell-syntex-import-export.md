@@ -1,30 +1,32 @@
 ---
-title: Export and import document understanding models with PowerShell
+title: Export and import unstructured document processing models with PowerShell
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
-manager: serdars
+manager: ssquires
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-syntex
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: medium
-description: "Learn about how to export and import document understanding models with PowerShell in SharePoint Syntex."
+description: Learn about how to export and import models with PowerShell in Microsoft Syntex.
 ---
 
-# Export and import document understanding models with PowerShell
+# Export and import unstructured document processing models with PowerShell
+
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
 > [!IMPORTANT]
-> The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
+> The Microsoft Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
 
-SharePoint Syntex models can be exported as PnP templates, enabling reuse across content centers or tenants.
+Syntex models can be exported as PnP templates, enabling reuse across content centers or tenants.
 
 ## Export all models in a content center
 
-To export all models in a content center into a single PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
+To export all unstructured document processing models in a content center into a single PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -34,7 +36,7 @@ Get-PnPSiteTemplate -Out MyModels.pnp -Handlers SyntexModels
 
 ## Export specific models
 
-To export specific models from a content center into a PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
+To export specific unstructured document processing models from a content center into a PnP template, use the following [PnP PowerShell](https://pnp.github.io/powershell/) cmdlets:
 
 ```powershell
 Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
@@ -83,13 +85,14 @@ The extract.json defines which models you want to export, allowing to specify mo
 }
 ```
 
-If you do not include the property "includeTrainingData", the default behavior is to include.
+If you don't include the property "includeTrainingData", the default behavior is to include.
 
 > [!NOTE]
 > Training data is required for a model to be editable when imported to a destination content center.
 
 ## Import models to a content center
-Document understanding models that have been exported to PnP templates can be imported to a content center on any tenant. If the export included training data, then the model will be editable once imported.
+
+Unstructured document processing models that have been exported to PnP templates can be imported to a content center on any tenant. If the export included training data, then the model will be editable once imported.
 
 To import a model, use the following commands:
 

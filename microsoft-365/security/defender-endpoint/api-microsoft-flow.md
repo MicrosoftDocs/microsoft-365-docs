@@ -12,10 +12,13 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # How to use Power Automate Connector to set up a Flow for events

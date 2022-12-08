@@ -11,14 +11,15 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 04/21/2021
+ms.date: 11/14/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ---
 
@@ -65,11 +66,12 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 > What you see in Microsoft 365 Defender depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown.
 
 > [!Note]
-> Microsoft 365 Defender is not available for:
+> Microsoft 365 Defender is not fully available for:
 >- US Government Community Cloud (GCC)
 >- US Government Community Cloud High (GCC High)
 >- US Department of Defense
 >- All US government institutions with commercial licenses
+>- See availability for the above enviroments here: [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov?view=o365-worldwide&preserve-view=true)
 
 Take a look in Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
 

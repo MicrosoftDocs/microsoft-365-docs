@@ -2,8 +2,7 @@
 title: Steps to set up a weekly digest email of message center changes for Microsoft Defender for Office 365
 description: The steps to setup a weekly digest email of message center activity to stay up-to-date about changes to Microsoft Defender for Office 365.
 search.product: 
-search.appverid: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +13,13 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: jarogers
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
-ms.technology: mdo
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Set up a digest notification of changes to Microsoft Defender for Office 365 using the message center

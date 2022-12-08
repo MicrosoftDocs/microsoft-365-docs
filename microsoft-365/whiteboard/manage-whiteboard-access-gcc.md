@@ -7,7 +7,7 @@ ms.reviewer:
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.prod: microsoft-365-enterprise
+ms.service: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
@@ -38,12 +38,12 @@ You can control access to Whiteboard in the following ways:
 
 - Enable or disable Whiteboard for your entire tenant using the [SharePoint Online PowerShell module](/microsoft-365/enterprise/manage-sharepoint-online-with-microsoft-365-powershell).
 
-- Show or hide Whiteboard for specific users in meetings using a Teams meeting policy. It will still be visible via the web, native clients, and the Teams tab app.
+- Show or hide Whiteboard for specific users in meetings using a Microsoft Teams meeting policy. It will still be visible via the web, native clients, and the Teams tab app.
 
 - Require conditional access policies for accessing Whiteboard using the Azure Active Directory admin center.
 
 >[!NOTE]
-> Whiteboard on OneDrive for Business doesn't appear in the Microsoft 365 admin center. Teams meeting policy only hides Whiteboard entry points, it doesn't prevent users from using Whiteboard. Conditional access ploicies prevent access to Whiteboard, but doesn't hide the entry points.
+> Teams meeting policy only hides Whiteboard entry points. It doesn't prevent users from using Whiteboard. Conditional access policies prevent access to Whiteboard, but doesn't hide the entry points.
 
 ## Enable or disable Whiteboard
 
@@ -59,21 +59,14 @@ To enable or disable Whiteboard for your tenant, do the following steps:
 
 The change should take approximately 60 minutes to apply across your tenancy. If you don't see this option, you'll need to update the module.
 
->[!NOTE]
-> By default, Whiteboard is enabled. If it has been disabled in the Azure Active Directory enterprise applications, then Whiteboard on OneDrive for Business will not work.
-
 ## Show or hide Whiteboard
 
 To show or hide Whiteboard in meetings, see [Meeting policy settings](/microsoftteams/meeting-policies-content-sharing).
 
 ## See also
 
-[Manage data for Whiteboard - GCC High](manage-data-gcc-high.md)
+[Manage data for Whiteboard - GCC](manage-data-gcc.md)
 
-[Manage sharing for Whiteboard - GCC High](manage-sharing-gcc-high.md)
+[Manage sharing for Whiteboard - GCC](manage-sharing-gcc.md)
 
-[Manage clients for Whiteboard - GCC High](manage-clients-gcc-high.md)
-
-
-
-
+[Manage clients for Whiteboard - GCC](manage-clients-gcc.md)
