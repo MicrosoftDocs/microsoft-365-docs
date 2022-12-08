@@ -25,15 +25,19 @@ search.appverid:
 ---
 # Custom roles in role-based access control for Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+>[!Note]
+> If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Applies to:**
 
 - Microsoft 365 Defender
- 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)] 
+
 There are two types of roles that can be used to access to Microsoft 365 Defender:
+
 - **Global Azure Active Directory (AD) roles**
 - **Custom roles**
 
@@ -46,7 +50,8 @@ For example, a Custom role created through Microsoft Defender for Endpoint would
 Users with existing Custom roles may access data in the Microsoft 365 Defender portal according to their existing workload permissions with no additional configuration required.
 
 ## Create and manage custom roles
-Custom roles and permissions can be created and individually managed through each of the following security portals: 
+
+Custom roles and permissions can be created and individually managed through each of the following security portals:
 
 - Microsoft Defender for Endpoint – [Edit roles in Microsoft Defender for Endpoint](../defender-endpoint/user-roles.md)
 - Microsoft Defender for Office 365 – [Permissions in the Security & Compliance Center](../office-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)

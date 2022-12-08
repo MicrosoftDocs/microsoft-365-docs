@@ -143,7 +143,7 @@ No changes to these areas:
 - [Explorer](../office-365-security/threat-explorer.md)
 - [Policies & Rules](../../compliance/alert-policies.md)
 - [Campaign](../office-365-security/campaigns.md)
-- [Submissions](../office-365-security/admin-submission.md)
+- [Submissions](../office-365-security/submissions-admin.md)
 - [Review](./m365d-action-center.md)
 - [Threat Tracker](../office-365-security/threat-trackers.md)
 
@@ -169,4 +169,4 @@ Also included is a link to the Security & Compliance Center for comparison. The 
 - [The Action center](./m365d-action-center.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
 - [Custom detection rules](/microsoft-365/security/defender-endpoint/custom-detection-rules)
-- [Create a phishing attack simulation](../office-365-security/attack-simulation-training.md) and [create a payload for training your people](../office-365-security/attack-simulation-training-payloads.md)
+- [Create a phishing attack simulation](../office-365-security/attack-simulation-training-simulations.md) and [create a payload for training your people](../office-365-security/attack-simulation-training-payloads.md)
