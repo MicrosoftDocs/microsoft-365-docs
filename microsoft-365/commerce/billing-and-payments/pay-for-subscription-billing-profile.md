@@ -21,7 +21,7 @@ ms.custom:
 - commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-ms.date: 12/07/2022
+ms.date: 12/08/2022
 ---
 
 # How to pay for your Microsoft business subscription with a billing profile
@@ -51,7 +51,7 @@ As of September 30, 2022, Microsoft and other online merchants no longer store c
 
 ### UPI and NetBanking payment options
 
-The Microsoft 365 admin center supports two alternate payment options for customers in India:
+The admin center supports two alternate payment options for customers in India:
 
 - UPI (Unified Payments Interface) payment is a real-time payment method.
 - NetBanking (Internet Banking) provides customers with access to banking services on an online platform.

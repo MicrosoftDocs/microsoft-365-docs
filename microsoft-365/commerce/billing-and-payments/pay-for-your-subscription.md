@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
@@ -27,7 +27,7 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 12/07/2022
+ms.date: 12/08/2022
 ---
 
 # Payment options for your Microsoft business subscription
