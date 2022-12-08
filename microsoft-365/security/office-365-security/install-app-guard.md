@@ -7,7 +7,7 @@ ms.author: maccruz
 author: schmurky
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
   - MET150

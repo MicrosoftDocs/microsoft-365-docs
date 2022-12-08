@@ -7,7 +7,7 @@ ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.date: 
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.localizationpriority:  medium
 ROBOTS: 
@@ -31,7 +31,7 @@ The following diagram shows the Power Automate flow for the contract management 
 
 ## Prepare your contract for review
 
-When a contract is identified and classified by your Syntex document understanding model, the Power Automate flow will first change the status to **In review**.
+When a contract is identified and classified by your unstructured document processing model, the Power Automate flow will first change the status to **In review**.
 
 ![Update status.](../media/content-understanding/flow-overview.png)
 

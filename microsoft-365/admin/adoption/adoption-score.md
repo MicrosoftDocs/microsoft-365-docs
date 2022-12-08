@@ -11,6 +11,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: high
 monikerRange: 'o365-worldwide'
 ms.collection: 
+- Tier2
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
@@ -24,7 +25,7 @@ search.appverid:
 description: "Learn how Microsoft Adoption Score reflects people and technology experience measurements and compare to organizations of similar size."
 ---
 
-# Microsoft Adoption Score 
+# Microsoft Adoption Score
 
 Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.
 
@@ -42,17 +43,17 @@ We provide metrics, insights, and recommendations in two areas:
 
     For each of the mentioned categories, we look at public research to identify some best practices and associated benefits in the form of organizational effectiveness. For example, Forrester research has shown that when people collaborate and share content in the cloud (instead of emailing attachments), they can save up to 100 minutes a week. Furthermore, we quantify the use of these best practices in your organization to help you see where you are on your digital transformation journey. 
 
-- **Technology experiences:** Your organization depends on reliable and well-performing technology, as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. [Network connectivity](../../enterprise/microsoft-365-networking-overview.md) helps you understand Exchange, SharePoint, and Microsoft Teams performance on your network architecture. You can review and update network settings to improve connectivity. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
+- **Technology experiences:** Your organization depends on reliable and well-performing technology, and the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. [Network connectivity](../../enterprise/microsoft-365-networking-overview.md) helps you understand Exchange, SharePoint, and Microsoft Teams performance on your network architecture. You can review and update network settings to improve connectivity. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
 
 > [!NOTE]
 > All insights are calculated using data at the organizational level, not the individual level.
 
-## How to turn on Adoption Score
+## How to enable Adoption Score
 
 To enable Adoption Score:
 
-1. Login to the Microsoft 365 admin center as a Global Administrator and go to **Reports** > **Adoption Score**
-2. Select **Enable Adoption Score**. It can take up to 24 hours for insights to become available.
+1. Sign in to the Microsoft 365 admin center as a Global Administrator and go to **Reports** > **Adoption Score**
+2. Select **enable Adoption Score**. It can take up to 24 hours for insights to become available.
 
 > [!NOTE]
 > Only an IT professional with the Global Administrator role can opt-in for Adoption Score.
@@ -68,21 +69,26 @@ For people experiences data, you need a Microsoft 365 for business or Office 365
 
 Adoption Score is only available in the Microsoft 365 admin center and can only be accessed by IT professionals who have one of the following roles:  
 
-- Global admin
-- Exchange admins
-- SharePoint admin
-- Skype for Business admin
-- Teams admin
+- Global Administrator
+- Exchange Administrator
+- SharePoint Administrator
+- Skype for Business Administrator
+- Teams Service Administrator
+- Teams Communications Administrator
 - Global Reader
 - Reports Reader
 - Usage Summary Reports Reader
 - User Experience Success Manager
+- Organizational Messages Writer Role
 
 The role-based access control model for Adoption Score helps organizations further digital transformation efforts with Microsoft 365 by providing the flexibility to assign roles to IT professionals within an organization.
 
 Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft.
 
 You can access the experience from Microsoft 365 Admin home under **Reports** > **Adoption Score**.
+
+> [!NOTE]
+> This feature is not available in GCC High, GCC, and DOD tenants.
   
 ## How the score is calculated
 
@@ -100,15 +106,15 @@ Your Adoption Score is based on the combined scores of your people and technolog
 - Microsoft 365 Apps Health (100 points)
 - **Total possible = 800 points**
  
-In each score category, we quantify the key indicators for how your organization is using Microsoft 365 in its journey towards digital transformation. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation, but are important for helping you identify underlying usage statistics and configurations that you can address.
+In each score category, we quantify the key indicators for how your organization is using Microsoft 365 in its journey towards digital transformation. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that aren't part of the score calculation, but are important for helping you identify underlying usage statistics and configurations that you can address.
 
-### Products included in Adoption Score 
+### Products included in Adoption Score
 
 Adoption Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, and Skype.
 
 Your organization's score is updated daily and reflects user actions completed in the last 28 (including the current day).
 
-## Interpreting your organization's Adoption Score 
+## Interpreting your organization's Adoption Score
 
 The Adoption Score home page shows your organization's total score and score history and the primary insight for each category.
 
@@ -163,6 +169,17 @@ This report helps organizations understand:
 > [!NOTE]
 > Users also have the option to get productivity insights from the [MyAnalytics dashboard](/workplace-analytics/myanalytics/use/dashboard-2).
 
+## Group Level Aggregates
+
+The group-level filters functionality helps admins and adoption strategists understand how different groups, based on data from Azure Active Directory, are performing on the people experiencing insights. It's used to provide higher granularity of insights and actions.
+
+[Learn more about Group Level Aggregates](group-level-aggregates.md).
+
+## Adoption Score Organizational Messages
+
+Organizational Messages is a new feature added to Adoption Score that will increase the actionability of admins to reach employees and drive adoption awareness. For example, to improve the content collaboration score, admins can send notifications to encourage employees who weren’t actively using cloud attachments before to use the feature when they're about to attach a physical attachment in Outlook. Currently, we enable admins to send messages to drive the adoption scenarios for OneDrive SharePoint, Teams Chat, using @mention in Outlook, and cloud attachments in Outlook.
+
+[Learn more about Adoption Score Organizational Messages](organizational-messages.md).
 
 ## We want to hear from you
 

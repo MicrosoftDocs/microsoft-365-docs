@@ -11,10 +11,11 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
-ms.topic: article
+ms.topic: conceptual
 ms.date: 10/10/2022
 ms.collection: 
-- M365-security-compliance
+- m365-security
+- tier2
 - m365initiative-defender-endpoint
 ---
 

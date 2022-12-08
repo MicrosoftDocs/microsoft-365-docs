@@ -5,7 +5,7 @@ ms.author: dansimp
 author: dansimp
 manager: Laurawi
 ms.service: microsoft-365-security
-ms.topic: article
+ms.topic: conceptual
 audience: Admin
 f1.keywords: 
   - NOCSH
