@@ -47,7 +47,7 @@ Network devices are not managed as standard endpoints since Defender for Endpoin
 
 There will be two types of devices to keep in mind:
 
-- **Assessment device**: A device that's already onboarded that you'll use to scan the network devices.
+- **Scanning device**: A device that's already onboarded that you'll use to scan the network devices.
 - **Network devices**: The network devices you plan to scan and onboard.
 
 ### Vulnerability management for network devices
@@ -71,15 +71,15 @@ Your first step is to select a device that will perform the authenticated networ
 
 1. Decide on a Defender for Endpoint onboarded device (client or server) that has a network connection to the management port for the network devices you plan on scanning.
 
-2. SNMP traffic between the Defender for Endpoint assessment device and the targeted network devices must be allowed (for example, by the Firewall).
+2. SNMP traffic between the Defender for Endpoint scanning device and the targeted network devices must be allowed (for example, by the Firewall).
 
 3. Decide which network devices will be assessed for vulnerabilities (for example: a Cisco switch or a Palo Alto Networks firewall).
 
-4. Make sure SNMP read-only is enabled on all configured network devices to allow the Defender for Endpoint assessment device to query the configured network devices. 'SNMP write' isn't needed for the proper functionality of this feature.
+4. Make sure SNMP read-only is enabled on all configured network devices to allow the Defender for Endpoint scanning device to query the configured network devices. 'SNMP write' isn't needed for the proper functionality of this feature.
 
 5. Obtain the IP addresses of the network devices to be scanned (or the subnets where these devices are deployed).
 
-6. Obtain the SNMP credentials of the network devices (for example: Community String, noAuthNoPriv, authNoPriv, authPriv). You'll be required to provide the credentials when configuring a new assessment job.
+6. Obtain the SNMP credentials of the network devices (for example: Community String, noAuthNoPriv, authNoPriv, authPriv). You'll be required to provide the credentials when configuring a new scan job.
 
 7. Proxy client configuration: No extra configuration is required other than the Defender for Endpoint device proxy requirements.
 
@@ -95,20 +95,20 @@ Your first step is to select a device that will perform the authenticated networ
 
 ## Permissions
 
-To configure assessment jobs, the following user permission option is required: **Manage security settings in Defender**. You can find the permission by going to **Settings** \> **Roles**. For more information, see [Create and manage roles for role-based access control](user-roles.md).
+To configure scan jobs, the following user permission option is required: **Manage security settings in Defender**. You can find the permission by going to **Settings** \> **Roles**. For more information, see [Create and manage roles for role-based access control](user-roles.md).
 
 ## Install the network scanner
 
 1. Go to **Microsoft 365 security** \> **Settings** \> **Device discovery** \> **Authenticated scans**.
 
-2. Download the network scanner and install it on the designated Defender for Endpoint assessment device.
+2. Download the network scanner and install it on the designated Defender for Endpoint scanning device.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="The Download scanner button" lightbox="images/assessment-jobs-download-scanner.png":::
 
 ## Network scanner installation & registration
 
-The signing-in process can be completed on the designated assessment device itself or any other device (for example, your personal client device).
+The signing-in process can be completed on the designated scanning device itself or any other device (for example, your personal client device).
 
 > [!NOTE]
 > Both the account the user signs in with and the device being used to complete the sign in process, must be in the same tenant where the device is onboarded to Microsoft Defender for Endpoint.
