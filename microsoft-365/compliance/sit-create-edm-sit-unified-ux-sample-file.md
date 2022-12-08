@@ -11,17 +11,20 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Create the sample file to use in the new experience.
+description: Learn how to create the sample file to use in the new exact data match experience.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Create EDM SIT sample file for the new experience
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each phase using the classic experience.
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsoft Purview data loss prevention policies, eDiscovery and certain content governance tasks.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Applies to
 
@@ -42,8 +45,8 @@ The system will extract the column names from the sample file to create the sche
 - The first row must be the header row and contain column names.
 - The file must contain at least one row of data.
 - Each row of data must contain the correct number of fields, corresponding to the headers.
-- The sample file contain up to 32 columns.
-- The sample file can exceed 2.5 MB in size.
+- The sample file can contain up to 32 columns.
+- The sample file can't exceed 2.5 MB in size.
 - Column (field) names must start with a letter, be at least three characters long, and consist of only alphanumeric characters (A-Z, a-z, 0-9) and can’t include spaces, underscores or other special characters. 
 
 For example, if your actual data looks like this and uses tab delimited (.tsv) format
@@ -52,7 +55,16 @@ For example, if your actual data looks like this and uses tab delimited (.tsv) f
 
 Then your sample file must have the same column headers, but use synthetic values for the rows, like this
 
-![image showing a tab separated table with four columns and three rows of synthetic representative data](../media/sit-edm-tsv-sample-file.png)
+
+|FirstName |LastName  |PatientNumber  |CreditCardNumber  |
+|---------|---------|---------|---------|
+|Eric     |Solomon         |987-65-4321        |9000000000000000         |
+|Lisa  |Taylor         |123-45-6789         |500000000000000         |
+|Andre    |Lawson        |234-56-7890         | 200000000000000        |
+
+
+<!--
+![image showing a tab separated table with four columns and three rows of synthetic representative data](../media/sit-edm-tsv-sample-file.png)-->
 
 > [!TIP]
 > In the new experience, you choose between uploading the sample file or entering the sample file values manually. Either way, we recommend creating the sample file.

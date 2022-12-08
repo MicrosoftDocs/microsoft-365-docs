@@ -4,7 +4,8 @@ description: Create your first threat hunting query and learn about common opera
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types, powershell download, query example
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,10 +17,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
-ms.topic: article
-ms.technology: m365d
+  - tier1
+ms.topic: conceptual
 ---
 
 # Learn the advanced hunting query language
@@ -30,7 +31,6 @@ ms.technology: m365d
 **Applies to:**
 
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). 
 

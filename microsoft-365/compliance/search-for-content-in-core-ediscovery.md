@@ -1,22 +1,22 @@
 ---
 title: "Search for content in a eDiscovery (Standard) case"
+description: "Search for content that may be relevant to a eDiscovery (Standard) case."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-description: "Search for content that may be relevant to a eDiscovery (Standard) case."
 ---
 
 # Search for content in a eDiscovery (Standard) case
@@ -67,6 +67,8 @@ To create a eDiscovery (Standard) search:
 8. Review the search settings (and edit if necessary), and then submit the search to start it.
 
 After the search is completed, you can preview the search results. If necessary, click **Refresh** on the **Searches** page to display the search you created.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## More information about searching content locations
 

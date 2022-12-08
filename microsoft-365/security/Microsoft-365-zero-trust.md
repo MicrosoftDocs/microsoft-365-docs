@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Zero Trust deployment plan"
+title: "Zero Trust deployment plan with Microsoft 365"
 f1.keywords:
 - deploy zero trust
 - zero trust strategy
@@ -7,21 +7,22 @@ ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
-description: Learn how to deploy Microsoft 365 Zero Trust security into your environment to defend against threats and protect sensitive data.
+description: Learn how to apply Zero Trust security principles with Microsoft 365 to defend against threats and protect sensitive data.
 ms.topic: tutorial
-ms.prod: m365-security
-ms.technology: m365d
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
-- M365-security-compliance
+- m365-security
 - zerotrust-solution
+- highpri
+- tier1
 ---
 
-# Microsoft 365 Zero Trust deployment plan
+# Zero Trust deployment plan with Microsoft 365
 
 This article provides a deployment plan for building **Zero Trust** security with Microsoft 365. Zero Trust is a new security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 
@@ -48,10 +49,8 @@ In the illustration:
 For more information about Zero Trust, see Microsoft's [_**Zero Trust Guidance Center**_](/security/zero-trust).
 
 <!---
-For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
+For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](/security/zero-trust/zero-trust-ramp-overview).
 -->
-
-
 
 ## Deploying Zero Trust for Microsoft 365
 

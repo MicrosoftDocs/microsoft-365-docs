@@ -6,9 +6,10 @@ manager: scotv
 ms.date: 01/13/2022
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - SPO_Content
 - m365initiative-coredeploy

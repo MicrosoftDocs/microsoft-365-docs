@@ -14,10 +14,12 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority:  null
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 - SPO_Content
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 ms.custom:
@@ -65,6 +67,8 @@ With a DLP policy, you can:
     To view alerts and metadata related to your DLP policies you can use the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
 
 -->
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create and manage DLP policies
 
 You create and manage DLP policies on the data loss prevention page in the Microsoft Purview compliance portal.
@@ -555,7 +559,7 @@ By default, Global admins, Security admins, and Compliance admins will have acce
 
 You can also create a role group with view-only privileges to the DLP policies and DLP reports by granting the **View-Only DLP Compliance Management** role.
 
-For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group).
 
 These permissions are required only to create and apply a DLP policy. Policy enforcement does not require access to the content.
 

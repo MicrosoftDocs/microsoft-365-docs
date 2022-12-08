@@ -6,12 +6,15 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
-ms.topic: article
-ms.prod: m365-security
-ms.technology: mdb
+ms.topic: conceptual
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
-ms.reviewer: shlomiakirav
+ms.date: 12/07/2022
+ms.collection: 
+- m365-security
+- tier1
+ms.reviewer: efratka
 f1.keywords: NOCSH 
 ---
 
@@ -38,11 +41,10 @@ As soon as you have signed up for Defender for Business, your first step is to a
 
    If you don't have any licenses available, you can still add a user and buy additional licenses. For more information about adding users, see [Add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 
-5. On the **Optional settings** page, you can expand **Profile info** and fill in details, such as the user's jo title, department, location, and so forth. Then choose **Next**.
+5. On the **Optional settings** page, you can expand **Profile info** and fill in details, such as the user's job title, department, location, and so forth. Then choose **Next**.
 
 6. On the **Review and finish** page, review the details, and then select **Finish adding** to add the user. If you need to make any changes, choose **Back** to go back to a previous page.
 
 ## Next steps
 
-- [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
-- [Use the setup wizard in Defender for Business](mdb-use-wizard.md).
+- Proceed to [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).

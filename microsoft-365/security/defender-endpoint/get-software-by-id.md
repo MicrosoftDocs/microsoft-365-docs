@@ -2,7 +2,7 @@
 title: Get software by ID
 description: Retrieves a list of software details by ID.
 keywords: apis, graph api, supported apis, get, software, Microsoft Defender for Endpoint tvm api, mdvm, Microsoft Defender Vulnerability Management
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Get software by ID
