@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ROBOTS: NO INDEX, NO FOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
@@ -131,8 +132,12 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
-    - To turn on Bookings with me for your organization, add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
+    - To turn on Bookings with me for your organization, you must set the **EwsApplicationAccessPolicy** to **EnforceAllowList** and add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
 
+   ```PowerShell
+   Set-OrganizationConfig -EwsApplicationAccessPolicy:EnforceAllowList
+   ```
+   
    ```PowerShell
    Set-OrganizationConfig -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```

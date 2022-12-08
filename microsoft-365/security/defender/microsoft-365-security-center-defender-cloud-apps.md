@@ -32,7 +32,7 @@ ms.custom: admindeeplinkDEFENDER
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Cloud Apps](/defender-cloud-apps/)
 
-Microsoft Defender for Cloud Apps is now part of Microsoft 365 Defender. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location. This will simplify workflows, and add the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
+Microsoft Defender for Cloud Apps is now part of Microsoft 365 Defender. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location. This simplifies workflows, and adds the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
 SOC analysts will be able to triage, investigate and hunt across all Microsoft 365 Defender workloads, including cloud apps.
 Defender for Cloud Apps alerts will continue to appear in Microsoft 365 Defender's incidents queue and alerts queue, but now with relevant content inside the alert pages available in the Microsoft 365 Defender portal, in a unified format with the proper adaptations to each alerts type.
@@ -94,20 +94,19 @@ The images and the tables below list the changes in navigation between Microsoft
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
 | Settings | Settings -> Cloud apps |
-| System  settings | Settings -> Cloud apps |
 | Settings/Governance log | Cloud apps -> Governance log |
-| Security  extensions | Settings -> Cloud apps |
-| Playbooks | Settings -> Cloud apps |
-| SIEM  agents | Settings -> Cloud apps |
-| External  DLP | Settings -> Cloud apps |
-| API  tokens | Settings -> Cloud apps |
-| Manage  admin access | Permissions-> Cloud apps-> Roles |
-| Exported  reports | Reports -> Cloud apps -> Exported reports |
-| Scoped  deployment and privacy | Permissions -> Cloud apps -> Activity Privacy permissions |
-| Connected Apps/App connectors | Settings -> Cloud Apps -> Connected Apps |
-| Conditional Access App Control | Settings -> Cloud apps -> Conditional Access App Control apps |
-| IP  address ranges              | Settings -> Cloud apps                                      |
-| User  groups                    | Settings -> Cloud apps                                      |
+| Security extensions -> Playbooks | Settings -> Cloud apps |
+| Security extensions -> SIEM  agents | Settings -> Cloud apps |
+| Security extensions -> External  DLP | Settings -> Cloud apps |
+| Security extensions -> API  tokens | Settings -> Cloud apps |
+| Manage admin access -> Admin roles | Permissions-> Cloud apps-> Roles |
+| Manage admin access -> Activity privacy permissions | Permissions-> Cloud apps-> Activity privacy permissions |
+| Exported reports | Reports -> Cloud apps -> Exported reports |
+| Scoped deployment and privacy | Settings -> Cloud Apps -> Scoped deployment and privacy |
+| Connected Apps / App connectors | Settings -> Cloud Apps -> Connected apps -> App Connectors |
+| Conditional Access App Control | Settings -> Cloud apps -> Connected apps -> Conditional Access App Control apps |
+| IP address ranges              | Settings -> Cloud apps                                      |
+| User groups                    | Settings -> Cloud apps                                      |
 
 ## Limitations
 
@@ -135,7 +134,9 @@ As part of the creation of a dedicated **Assets** section that spans the entire 
 
 ## Related videos
 
-- [Protecting cloud apps in Microsoft 365 Defender](https://www.microsoft.com/videoplayer/embed/RE59yVU)
+Learn how to protect your cloud apps in Microsoft 365 Defender:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU]
 
 ## Related information
 

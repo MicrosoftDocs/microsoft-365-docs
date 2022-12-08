@@ -228,13 +228,13 @@ While the unified labeling client cannot apply encryption without an internet co
 
 To support a disconnected computer, use one of the following methods:
 
-- [Use the Azure portal](#use-the-azure-portal-with-a-disconnected-computer) (recommended when possible)
+- [Use the compliance portal](#use-the-microsoft-purview-compliance-portal-with-a-disconnected-computer) (recommended when possible)
 
 - [Use PowerShell](#use-powershell-with-a-disconnected-computer)
 
-#### Use the Azure portal with a disconnected computer
+#### Use the Microsoft Purview compliance portal with a disconnected computer
 
-To support a disconnected computer from the Azure portal, perform the following steps:
+To support a computer that can't connect to the Microsoft Purview compliance portal, perform the following steps:
 
 1.	Configure labels in your policy, and then use the [procedure to support disconnected computers](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#support-for-disconnected-computers) to enable offline classification and labeling.
 

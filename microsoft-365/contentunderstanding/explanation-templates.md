@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid:
 ms.collection:
     - enabler-strategic
@@ -17,6 +17,8 @@ description: Learn more about how to use and save explanation templates in Micro
 
 # Use explanation templates in Microsoft Syntex
 
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
+
 While you can manually add various phrase list values for your explanation, it can be easier to use the templates provided to you in the explanation library.
 
 For example, instead of manually adding all the variations for *date*, you can use the phrase list template for *date* because it already includes many phrase lists values:
@@ -25,8 +27,8 @@ For example, instead of manually adding all the variations for *date*, you can u
 
 The explanation library includes commonly used *phrase list* explanations, including:
 
-- Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2020").
-- Date (numeric): Calendar dates, all formats. Includes numbers (for example, 1-11-2020).
+- Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2022").
+- Date (numeric): Calendar dates, all formats. Includes numbers (for example, 1-11-2022).
 - Time: 12-hour and 24-hour formats.
 - Number: Positive and negative numbers up to two decimals.
 - Percentage: A list of patterns representing a percentage. For example, 1%, 11%, 100%, or 11.11%.
