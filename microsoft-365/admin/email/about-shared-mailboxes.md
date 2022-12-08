@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg 
 - M365-subscription-management
 - Adm_O365
@@ -37,6 +38,16 @@ Users with permissions to the group mailbox can send as or send on behalf of the
 Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some things you should know:
 
 - **Licenses:** Your shared mailbox can store up to 50GB of data without you assigning a license to it. After that, you need to assign a license to the mailbox to store more data. For more details on shared mailbox licensing, please see [Exchange Online Limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#StorageLimits). When a shared mailbox reaches the storage limit, you'll be able to receive email for a while, but you won't be able to send new email. Then, after that, it will stop receiving email. Senders to the mailbox will get a non-delivery receipt.
+
+> [!NOTE]
+>
+> The following scenarios require an Exchange Online Plan 2 license:
+>
+> - The shared mailbox has more than 50 GB of storage in use.
+> - The shared mailbox uses in-place archiving.
+> - The shared mailbox is placed on litigation hold.
+> 
+> For step-by-step instructions on how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
 - **User permissions:** You need to give users permissions (membership) to use the shared mailbox. Only people inside your organization can use a shared mailbox.
 

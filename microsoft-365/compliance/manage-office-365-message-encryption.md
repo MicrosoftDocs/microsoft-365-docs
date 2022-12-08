@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection:
-- Strat_O365_IP
+- tier1
 - purview-compliance
 ms.custom:
 - seo-marvel-apr2020
