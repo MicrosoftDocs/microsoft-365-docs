@@ -80,6 +80,6 @@ Use [Exchange Online Protection and Microsoft Defender for Office 365](../securi
 
 - [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 - [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [Safe Attachments](../security/office-365-security/safe-attachments.md)
-- [Safe Links](../security/office-365-security/safe-links.md)
-- [Safe Documents](../security/office-365-security/safe-docs.md)
+- [Safe Attachments](../security/office-365-security/safe-attachments-about.md)
+- [Safe Links](../security/office-365-security/safe-links-about.md)
+- [Safe Documents](../security/office-365-security/safe-documents-in-e5-plus-security-about.md)
