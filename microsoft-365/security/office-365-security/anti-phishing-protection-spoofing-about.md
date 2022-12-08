@@ -61,7 +61,7 @@ The following anti-spoofing technologies are available in EOP:
 
   **Note**: Anti-phishing policies in Defender for Office 365 contain addition protections, including **impersonation** protection. For more information, see [Exclusive settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-- **Spoof detections report**: For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
+- **Spoof detections report**: For more information, see [Spoof Detections report](reports-email-security.md#spoof-detections-report).
 
   **Note**: Defender for Office 365 organizations can also use Real-time detections (Plan 1) or Threat Explorer (Plan 2) to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
 

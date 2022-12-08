@@ -105,7 +105,7 @@ For information about requirements, important limits, and feature availability a
 |Enhanced Filtering for Connectors|[Enhanced filtering for connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)|
 |**Monitoring**||
 |Message trace|[Message trace](message-trace-scc.md) <p> [Message trace in the Exchange admin center](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
-|Email & collaboration reports|[View email security reports](view-email-security-reports.md)|
+|Email & collaboration reports|[View email security reports](reports-email-security.md)|
 |Mail flow reports|[Mail flow reports in the Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 |Mail flow insights|[Mail flow insights in the Exchange admin center](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
 |Auditing reports|[Auditing reports in the Exchange admin center](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
