@@ -134,7 +134,7 @@ Microsoft differentiates between two different types of spoofed messages:
 > [!NOTE]
 > If you've gotten a message like ***compauth=fail reason=###*** and need to know about composite authentication (compauth), and the values related to spoofing, see [*Anti-spam message headers in Microsoft 365*](message-headers-eop-mdo.md). Or go directly to the [*reason*](message-headers-eop-mdo.md) codes.
 
-For more information about DMARC, see [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
+For more information about DMARC, see [Use DMARC to validate email in Microsoft 365](email-authentication-dmarc-configure.md).
 
 ## Problems with anti-spoofing protection
 

@@ -71,7 +71,7 @@ Review your existing protection features in Microsoft 365 and consider removing 
 
 - Outbound and relay mail flow is out of the scope for this article. However, be aware that you might need to do one or more of the following steps:
   - Verify that all of the domains that you use to send email have the proper SPF records. For more information, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
-  - We strongly recommend that you setup DKIM signing in Microsoft 365. For more information, see [Use DKIM to validate outbound email](use-dkim-to-validate-outbound-email.md).
+  - We strongly recommend that you setup DKIM signing in Microsoft 365. For more information, see [Use DKIM to validate outbound email](email-authentication-dkim-configure.md).
   - If you're not routing mail directly from Microsoft 365, you need to change that routing by removing or changing the outbound connector.
 
 - Using Microsoft 365 to relay email from your on-premises email servers can be a complex project in itself. A simple example is a small number of apps or devices that send most of their messages to internal recipients and aren't used for mass mailings. See [this guide](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) for details. More extensive environments will need to be more thoughtful. Marketing email and messages that could be seen as spam by recipients are not allowed.
