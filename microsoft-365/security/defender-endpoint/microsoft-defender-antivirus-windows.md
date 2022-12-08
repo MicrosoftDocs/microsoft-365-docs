@@ -111,3 +111,4 @@ It's important to keep Microsoft Defender Antivirus (or any antivirus/antimalwar
 
 - [Microsoft Defender Antivirus management and configuration](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Evaluate Microsoft Defender Antivirus protection](evaluate-microsoft-defender-antivirus.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
