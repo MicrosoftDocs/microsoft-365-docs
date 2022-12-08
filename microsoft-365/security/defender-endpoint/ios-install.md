@@ -42,7 +42,19 @@ This topic describes deploying Defender for Endpoint on iOS on Intune Company Po
 > [!NOTE]
 > Microsoft Defender for Endpoint on iOS is available in the [Apple App Store](https://aka.ms/mdatpiosappstore).
 
-## Deployment steps
+This section covers:
+
+1. **Deployment steps** (applicable for both **Supervised** and **Unsupervised** devices)- Admins can deploy Defender for Endpoint on iOS via Intune Company Portal. This step is not needed for VPP (volume purchase) apps.
+
+1. **Complete deployment** (only for Supervised devices)- Admins can select to deploy any one of the given profiles.
+    1. **Zero touch (Silent) Control Filter** - Provides Web Protection without the local loopback VPN and also enables silent onboarding for users. App is automatically installed  and activated without the need for user to open the app.
+    1. **Control Filter** - Provides Web Protection without the local loopback VPN.
+  
+1. **Automated Onboarding setup** (only for **Unsupervised** devices) - Admins can automate the Defender for Endpoint onboarding for users in two different ways:
+    1. **Zero touch (Silent) Onboarding** - App is automatically installed and activated without the need for users to open the app.
+    1. **Auto Onboarding of VPN** - Defender for Endpoint VPN profile is automatically setup without having the user to do so during onboarding. This step is not recommended in Zero touch configurations.
+
+## Deployment steps (applicable for both Supervised and Unsupervised devices)
 
 Deploy Defender for Endpoint on iOS via Intune Company Portal.
 
@@ -54,7 +66,7 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
 
 1. On the **Add app** page, click on **Search the App Store** and type **Microsoft Defender** in the search bar. In the search results section, click on *Microsoft Defender* and click **Select**.
 
-1. Select **iOS 12.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
+1. Select **iOS 14.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
 
 1. In the **Assignments** section, go to the **Required** section and select **Add group**. You can then choose the user group(s) that you would like to target Defender for Endpoint on iOS app. Click **Select** and then **Next**.
 
@@ -112,14 +124,19 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 
 1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
-#### Device configuration profile
+#### Device configuration profile (Control Filter)
 
 > [!NOTE]
 > For devices that run iOS/iPadOS (in Supervised Mode), there is  custom **.mobileconfig** profile, called the **ControlFilter** profile available. This profile enables Web Protection **without setting up the local loopback VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks.
 
-Deploy a custom profile on supervised iOS devices. This is for enhanced Anti-phishing capabilities. Follow the steps below:
+Admins deploy any one of the given profiles.
 
-1. Download the config profile from [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised).
+1. **Zero touch (Silent) Control Filter** - This profile enables silent onboarding for users. Download the config profile from [ControlFilterZeroTouch](https://aka.ms/mdeiosprofilesupervisedzerotouch)
+
+2. **Control Filter** - Download the config profile from [ControlFilter](https://aka.ms/mdeiosprofilesupervised).
+
+Once the profile has been downloaded, deploy the custom profile. Follow the steps below:
+
 1. Navigate to **Devices** > **iOS/iPadOS** > **Configuration profiles** > **Create Profile**.
 1. Select **Profile Type** > **Templates** and **Template name** > **Custom**.
 
@@ -133,39 +150,11 @@ Deploy a custom profile on supervised iOS devices. This is for enhanced Anti-phi
 
 1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
-## Auto-Onboarding of VPN profile (Simplified Onboarding)
+## Automated Onboarding setup (only for Unsupervised devices)
 
-For unsupervised devices, a VPN is used in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
+Admins can automate the Defender onboarding for users in two different ways with Zero touch(Silent) Onboarding or Auto Onboarding of VPN.
 
-> [!NOTE]
-> For supervised devices, a VPN is not needed for Web Protection capability and requires admins to set up a configuration profile on supervised devices. To configure for supervised devices, follow the steps in the [Complete deployment for supervised devices](#complete-deployment-for-supervised-devices) section.
-
-Admins can configure auto-setup of VPN profile. This will automatically set up the Defender for Endpoint VPN profile without having the user to do so while onboarding.
-
-This step simplifies the onboarding process by setting up the VPN profile. For a zero-touch or silent onboarding experience, see the next section: [Zero-touch onboard](#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
-
-1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Configuration Profiles** > **Create Profile**.
-1. Choose **Platform** as **iOS/iPadOS** and **Profile type** as **VPN**. Click **Create**.
-1. Type a name for the profile and click **Next**.
-1. Select **Custom VPN** for Connection Type and in the **Base VPN** section, enter the following:
-   - Connection Name = Microsoft Defender for Endpoint
-   - VPN server address = 127.0.0.1
-   - Auth method = "Username and password"
-   - Split Tunneling = Disable
-   - VPN identifier = com.microsoft.scmx
-   - In the key-value pairs, enter the key **AutoOnboard** and set the value to **True**.
-   - Type of Automatic VPN = On-demand VPN
-   - Select **Add** for **On Demand Rules** and select **I want to do the following = Connect VPN**, **I want to restrict to = All domains**.
-
-      :::image type="content" source="images/ios-deploy-8.png" alt-text="The VPN profile Configuration settings tab." lightbox="images/ios-deploy-8.png":::
-    
-   - To mandate that VPN cannot be disabled in users device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, it's not configured and users can disable VPN only in the Settings.
-   - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users cannot change the toggle from within the app.
-
-1. Click **Next** and assign the profile to targeted users.
-1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
-
-## Zero-touch onboarding of Microsoft Defender for Endpoint
+### Zero-touch (Silent) onboarding of Microsoft Defender for Endpoint
 
 > [!NOTE]
 > Zero-touch cannot be configured on iOS devices that are enrolled without user affinity (user-less devices or shared devices).
@@ -200,7 +189,38 @@ Once the above configuration is done and synced with the device, the following a
 - Web Protection and other features will be activated.
 
 > [!NOTE]
-> For supervised devices, although a VPN profile is not required, admins still can set up Zero-touch onboarding by configuring the Defender for Endpoint VPN profile through Intune. The VPN profile will be deployed on the device but will only be present on the device as a pass-through profile and can be deleted after initial onboarding.
+> For supervised devices, admins can setup Zero touch onboarding with the new [ZeroTouch Control Filter Profile](#device-configuration-profile-control-filter).
+Defender for Endpoint VPN Profile will not be installed on the device and Web protection will be provided by the Control Filter Profile.
+
+### Auto-Onboarding of VPN profile (Simplified Onboarding)
+
+> [!NOTE]
+> This step simplifies the onboarding process by setting up the VPN profile. If you are using Zero touch, you do not need to perform this step. 
+
+For unsupervised devices, a VPN is used to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
+
+Admins can configure auto-setup of VPN profile. This will automatically set up the Defender for Endpoint VPN profile without having the user to do so while onboarding.
+
+1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Configuration Profiles** > **Create Profile**.
+1. Choose **Platform** as **iOS/iPadOS** and **Profile type** as **VPN**. Click **Create**.
+1. Type a name for the profile and click **Next**.
+1. Select **Custom VPN** for Connection Type and in the **Base VPN** section, enter the following:
+   - Connection Name = Microsoft Defender for Endpoint
+   - VPN server address = 127.0.0.1
+   - Auth method = "Username and password"
+   - Split Tunneling = Disable
+   - VPN identifier = com.microsoft.scmx
+   - In the key-value pairs, enter the key **AutoOnboard** and set the value to **True**.
+   - Type of Automatic VPN = On-demand VPN
+   - Select **Add** for **On Demand Rules** and select **I want to do the following = Connect VPN**, **I want to restrict to = All domains**.
+
+      :::image type="content" source="images/ios-deploy-8.png" alt-text="The VPN profile Configuration settings tab." lightbox="images/ios-deploy-8.png":::
+
+   - To require that VPN cannot be disabled on a users' device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, this setting not configured and users can disable VPN only in the Settings.
+   - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users cannot change the toggle from within the app.
+
+1. Click **Next** and assign the profile to targeted users.
+1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
 
 ## Complete onboarding and check status
 

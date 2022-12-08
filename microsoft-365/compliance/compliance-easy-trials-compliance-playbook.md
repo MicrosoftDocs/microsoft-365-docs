@@ -275,7 +275,7 @@ If you are not able to see permissions, please talk to your tenant admin to assi
 
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it’s OK to turn auditing back on when completing this step.
 
-For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about  using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](audit-log-enable-disable.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about  using the Microsoft 365 audit log, see [Search the audit log](audit-log-search.md).
 
 ### Step 3 (recommended): Enable and view Insider Risk Management analytics insights
 
@@ -314,7 +314,7 @@ Assign users communication compliance roles to be able to use the product. The "
 
 ### Step 2: Enable the audit log
 
-To use this feature, turn on auditing. When you turn this on actions will be available in the audit log and view in a report. To learn more, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
+To use this feature, turn on auditing. When you turn this on actions will be available in the audit log and view in a report. To learn more, see [Turn audit log search on or off](audit-log-enable-disable.md).
 
 ### Step 3: Review recommended actions insights
 
@@ -385,7 +385,7 @@ Set up compliance boundaries for eDiscovery investigations:
 
 ### Step 5 (optional): eDiscovery Premium’s collection tool
 
-Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-draft-collection) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
+Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-collection-estimate) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
 
 [Learn more about collection queries and estimates.](building-search-queries.md)
 
@@ -399,11 +399,11 @@ Advanced Audit helps organizations to conduct forensic and compliance investigat
 
 Audit (Premium) features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
 
-Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
+Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](audit-premium-setup.md#step-1-set-up-audit-premium-for-users).
 
-1. Enable Audit (Premium) events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
-1. Set up audit retention policies - [create additional audit log retention policies](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization’s security operations, IT, and compliance teams.
-1. Search for Audit (Premium) events - [search for crucial Audit (Premium) events](set-up-advanced-audit.md#step-4-search-for-audit-premium-events) and other activities when conducting forensic investigations.
+1. Enable Audit (Premium) events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](audit-premium-setup.md#step-2-enable-audit-premium-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Set up audit retention policies - [create additional audit log retention policies](audit-premium-setup.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization’s security operations, IT, and compliance teams.
+1. Search for Audit (Premium) events - [search for crucial Audit (Premium) events](audit-premium-setup.md#step-4-search-for-audit-premium-events) and other activities when conducting forensic investigations.
 
 ### Step 2: Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies
 
