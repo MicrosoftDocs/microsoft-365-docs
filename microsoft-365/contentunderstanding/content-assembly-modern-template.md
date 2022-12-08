@@ -149,3 +149,4 @@ When you have completed adding all relevant fields to the template and you want 
 ## See also
 
 [Edit a modern template](content-assembly-edit-template.md)
+[Create a document from a modern template](content-assembly-create-document.md)

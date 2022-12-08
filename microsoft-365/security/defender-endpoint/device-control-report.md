@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 11/30/2022
 ms.author: deniseb
 author: denisebmsft
 ms.reviewer: dansimp
@@ -22,6 +23,7 @@ search.appverid: met150
 # Device control report
 
 **Applies to:** 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint device control protects against data loss by monitoring and controlling media use by devices in your organization, such as using removable storage devices and USB drives.
