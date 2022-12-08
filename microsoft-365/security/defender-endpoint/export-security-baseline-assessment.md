@@ -172,8 +172,6 @@ GET /api/machines/BaselineComplianceAssessmentExport
 >
 >To maximize download speeds, make sure you are downloading the data from the same Azure region where your data resides.
 >
->Each record is approximately 1KB of data. You should take this into account when choosing the pageSize parameter that works for you.
->
 >Some additional columns might be returned in the response. These columns are temporary and might be removed. Only use the documented columns.
 
 Property (ID)|Data type|Description

@@ -166,7 +166,7 @@ Keep exploring the features and capabilities in Microsoft 365 Defender:
 - [Hunt for threats across devices, emails, apps, and identities](./advanced-hunting-query-emails-devices.md)
 - [Custom detection rules](./custom-detection-rules.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
-- [Create a phishing attack simulation](../office-365-security/attack-simulation-training.md) and [create a payload for training your teams](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+- [Create a phishing attack simulation](../office-365-security/attack-simulation-training-simulations.md) and [create a payload for training your teams](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
 
 ## Training for security analysts
 
