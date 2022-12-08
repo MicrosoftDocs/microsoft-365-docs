@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/24/2022
+ms.date: 12/07/2022
 ms.collection: 
 - m365-security
 - tier1
-ms.reviewer: shlomiakirav
+ms.reviewer: efratka
 f1.keywords: NOCSH 
 ---
 
@@ -47,5 +47,4 @@ As soon as you have signed up for Defender for Business, your first step is to a
 
 ## Next steps
 
-- [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
-- [Use the setup wizard in Defender for Business](mdb-use-wizard.md).
+- Proceed to [Step 3: Assign security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).

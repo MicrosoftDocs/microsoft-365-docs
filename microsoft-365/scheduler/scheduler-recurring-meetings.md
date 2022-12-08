@@ -1,6 +1,6 @@
 ---
 title: Scheduling Dynamic Recurring Meetings
-ms.author: sarichardson
+ms.author: v-aiyengar
 author: sallyri
 manager: serdars
 audience: Admin
@@ -13,9 +13,12 @@ description: "Users can learn more about scheduling dynamic recurring meetings."
 
 # Scheduling Dynamic Recurring Meetings
 
+> [!IMPORTANT]
+> Scheduler for Microsoft 365 will stop working in August 2023. After that date, Scheduler won't be able to create or modify any meeting requests.
+
 Scheduler's dynamic meetings work around the user's busy schedule. Recurring meetings managed by Scheduler behave differently than traditional recurring meetings in Outlook. To keep your future calendar open and minimize conflicts with attendees, Scheduler will schedule one instance of a recurring meeting at a time.
 
-As an example, asking Cortana to "Schedule 30 minutes of focus time every day" will initially create one 30 minute appointment for the next available date on your calendar.  Once that appointment time has passed, Scheduler will proceed to book another instance on the following date. If the original time slot is not currently available, then Scheduler will adjust the time based on your availability.
+As an example, asking Cortana to "Schedule 30 minutes of focus time every day" will initially create one 30-minute appointment for the next available date on your calendar.  Once that appointment time has passed, Scheduler will proceed to book another instance on the following date. If the original time slot isn't currently available, then Scheduler will adjust the time based on your availability.
 
 The same heuristic can be applied to meetings with invitees. You can include attendees in your request and ask Cortana to "Schedule a meeting every two weeks". The first and each successive meeting will get scheduled dynamically based on the current availability of all attendees within your organization. If you or an attendee is unavailable or out of the office on the next date, the meeting time will automatically adjust to when everyone is available, and the desired cadence is preserved for follow-on meeting instances based on the newly scheduled date.
 
@@ -29,7 +32,7 @@ Scheduler supports daily, weekly, and monthly intervals.
 
 Here are some examples of how you can email Cortana to schedule recurring meetings:
 
-- "Cortana, schedule a meeting every 2 weeks."
+- "Cortana, schedule a meeting every two weeks."
 - "Book 30 minutes monthly for a review."
 - "Cortana will find 30 minutes for us to meet every Tuesday."
 - "Cortana, schedule 30 minutes every Friday at 3:30pm"
@@ -43,12 +46,12 @@ You can change the frequency of any recurring meeting or a non-recurring meeting
 
 ## Cancelling Recurring Meetings
 
-You can reply to Cortana's latest confirmation message and ask to "cancel this meeting" to cancel the scheduled instance. However, Scheduler will continue to schedule future meetings at the same frequency. Alternatively, you can just ask Scheduler to reschedule the next instance to the desired date or time. If you wish to cancel the entire recurring series, respond with "cancel this series" and no future instances will be scheduled.
+You can reply to Cortana's latest confirmation message and ask to "cancel this meeting" to cancel the scheduled instance. However, Scheduler will continue to schedule future meetings at the same frequency. Alternatively, you can just ask Scheduler to reschedule the next instance to the desired date or time. If you wish to cancel the entire recurring series, respond with "cancel this series", and no future instances will be scheduled.
 
 ## Recurring Meeting Limitations
 
-Please note that there are some technical limitations on the types of recurrences Scheduler can understand and support:
+Note that there are some technical limitations on the types of recurrences Scheduler can understand and support:
 
-- Multiple occurrences within the same interval are not supported (for example: "twice a week").
-- End dates for recurrence are not supported (for example: "every day until December 20th"). Since each meeting is scheduled upon completion of the previous meeting, simply reply to the latest message from Cortana with "cancel this meeting series".
-- Scheduler currently does not support recurrence frequencies greater than 90 days.
+- Multiple occurrences within the same interval aren't supported (for example: "twice a week").
+- End dates for recurrence aren't supported (for example: "every day until December 20"). Since each meeting is scheduled upon completion of the previous meeting, just reply to the latest message from Cortana with "cancel this meeting series".
+- Scheduler currently doesn't support recurrence frequencies greater than 90 days.
