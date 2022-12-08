@@ -8,11 +8,11 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
 ---
 

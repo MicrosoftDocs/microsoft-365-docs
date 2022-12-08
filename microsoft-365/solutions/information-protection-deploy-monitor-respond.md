@@ -8,13 +8,15 @@ manager: laurawi
 ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: 
 description: Use auditing and alert policies and data subject requests to monitor and respond to personal data incidents.
 ---
@@ -56,7 +58,7 @@ To help you get started with a monitoring and response scheme in Microsoft 365 f
 - What sort of day-to-day monitoring, investigative and reporting techniques are available for the different data types and sources?
 - What mechanisms will be needed to handle data subject requests (DSRs) and any remedial actions, such as anonymization, redaction, and deletion.
 
-## Auditing and Alert Policies in the Security and Compliance Center
+## Auditing and Alert Policies in the Microsoft Purview compliance portal
 
 See these articles for setting up auditing, advanced auditing, and alert policies:
 

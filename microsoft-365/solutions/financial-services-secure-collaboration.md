@@ -6,8 +6,9 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.collection: 
+- highpri
 - M365-security-compliance
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: Learn how financial services institutions can maintain financial security compliance and effectively collaborate using Microsoft 365 and Teams.
@@ -17,6 +18,7 @@ f1.keywords: NOCSH
 # Key compliance and security considerations for US banking and capital markets
 
 ## Introduction
+
 Financial services institutions surpass nearly all commercial businesses in their demand for stringent security, compliance, and governance controls. The protection of data, identities, devices, and applications is not only critical to their business, it's subject to compliance requirements and guidelines from regulatory bodies such as the U.S. Securities and Exchange Commission (SEC), the Financial Industry Regulatory Authority (FINRA), the Federal Financial Institutions Examination Council (FFIEC), and the Commodity Futures Trading Commission (CFTC). In addition, financial institutions are subject to laws such as Dodd-Frank and the Sarbanes-Oxley Act of 2002.
 
 In today's climate of increased security vigilance, insider risk concerns and public data breaches, customers also demand high levels of security from their financial institutions in order to trust them with their personal data and banking assets.
@@ -24,6 +26,7 @@ In today's climate of increased security vigilance, insider risk concerns and pu
 Historically, the need for comprehensive controls directly impacted and constrained the IT systems and platforms that financial institutions use to enable collaboration internally and externally. Today, financial services employees need a modern collaboration platform that's easy to adopt and easy to use. But financial services can't trade the flexibility to collaborate between users, teams, and departments with security and compliance controls that enforce policies to protect users and IT systems from threats.
 
 In the financial services sector, careful consideration is required for the configuration and deployment of collaboration tools and security controls, including:
+
 - Risk assessment of common organizational collaboration and business process scenarios
 - Information protection and data governance requirements
 - Cybersecurity and insider threats
@@ -62,6 +65,7 @@ Teams provides a collaboration hub for the organization. It helps bring people t
 Every Microsoft Team is backed by a Microsoft 365 group. That group is considered the membership service for numerous Office 365 services, including Teams. Microsoft 365 groups are used to securely distinguish between "owners" and "members" and to control access to various capabilities within Teams. When coupled with appropriate governance controls and regularly administered access reviews, Teams allows only members and owners to utilize authorized channels and capabilities.
 
 A common scenario where Teams benefits financial services is when running internal projects or programs. For example, many financial institutions, including banks, wealth management firms, credit unions, and insurance providers, are required to have anti-money laundering and other compliance programs in place. A cross-functional team comprised of IT, lines of business such as retail and wealth management, and a financial crime unit may be required to share data with each other and communicate about the program or specific investigations. Traditionally, these programs have used shared network drives, but this approach can present numerous challenges, including:
+
 * Only one person can edit a document at a time.
 * Managing security is time-consuming because adding/removing individuals typically involves IT.
 * Data remains resident on shared network drives much longer than required or wanted.
@@ -98,6 +102,7 @@ FINRA [emphasizes that the digital communications of regulated firms meet the re
 If an organization permits its employees to use a specific application, such as an app-based messaging service or collaboration platform, the firm must archive business records and supervise the activities and communications of those employees in that application. Organizations are responsible for conducting due diligence to comply with FINRA rules and securities laws, and for following up on potential violations of those rules related to employee use of such apps.
   
 Effective practices recommended by FINRA include the following:
+
 * Establish a comprehensive governance program for digital communication channels. Manage the organization's decisions about which digital communication channels are permitted and define compliance processes for each digital channel. Closely monitor the rapidly changing landscape of digital communication channels and keep compliance processes up to date.
 * Clearly define and control permissible digital channels. Define both approved and prohibited digital channels. Block or restrict the use of prohibited digital channels, or prohibited features within digital channels, that limit the organization's ability to comply with records management and supervisory requirements.
 * Provide training for digital communications. Implement mandatory training programs before giving registered representatives access to approved digital channels. Training helps clarify an organization's expectations for business and personal digital communications, and it guides staff through using permitted features of each channel in a compliant manner.
@@ -148,6 +153,7 @@ Azure AD, and the related Microsoft 365 security services, provide the foundatio
 * Proactively protect against email phishing and ransomware attacks.
 
 #### Azure AD Identity Protection
+
 While Conditional Access protects resources from suspicious requests, Identity Protection goes further by providing ongoing risk detection and remediation of suspicious user accounts. Identity Protection keeps you informed of suspicious user and sign-in behavior in your environment around the clock. Its automatic response proactively prevents compromised identities from being abused.
  
 Identity Protection is a tool that allows organizations to accomplish three key tasks:
@@ -163,6 +169,7 @@ Identity Protection helps organizations automatically protect against identity c
 ![Five information workers watch as another gives a presentation.](../media/win17-15021-00-n9.jpg)
  
 ## Identify sensitive data and prevent data loss
+
 Microsoft 365 allows all organizations to identify sensitive data within the organization through a combination of powerful capabilities, including:
 
 * **Microsoft Purview Information Protection** for both user-based classification and automated classification of sensitive data.
@@ -253,7 +260,7 @@ Upon request, Microsoft will provide an attestation letter of compliance with SE
 
 In addition, these capabilities also help Microsoft 365 meet storage requirements for [CFTC Rule 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) from the **U.S. Commodity Futures Trading Commission** and [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) from the **Financial Industry Regulatory Authority.** Collectively, these rules represent the most-prescriptive guidance globally for financial institutions to retain records.
 
-Additional details about how Microsoft 365 complies with SEC rule 17a-4 and other regulations is available at  [Assessment of Office 365 Exchange Online SEC 17a-4(f) / CFTC 1.31(c)-(d) by Cohasset Associates](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers).
+Additional details about how Microsoft 365 complies with SEC rule 17a-4 and other regulations is available with the [Office 365 - Cohasset Assessment - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Exchange, Teams, and Yammer (2022)](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) download document.
 
 ## Establish ethical walls with information barriers
 
@@ -284,6 +291,7 @@ Information barriers support conversations and files in Teams. They can prevent 
 Financial institutions are typically required to establish and maintain a supervisory function within their organizations to monitor the activities of employees and to help it achieve compliance with applicable securities laws. Specifically, FINRA has established these supervision requirements:
  
 * [FINRA Rule 3110 (Supervision)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) requires firms to have written supervisory procedures (WSPs) to supervise activities of its employees and the types of businesses in which it engages. In addition to other requirements, procedures must include:
+
    - Supervision of supervisory personnel
    - Review of a firm's investment banking, securities business, internal communications, and internal investigations
    - Review of transactions for insider trading
@@ -297,12 +305,11 @@ Financial institutions are typically required to establish and maintain a superv
  
 ### Communication compliance
 
-Communication compliance enables organizations to pre-configure policies to capture employee communications for monitoring and review by authorized supervisors. Policies in communication compliance can capture internal/external email and attachments, Teams chat and channel communications, and Skype for Business Online chat communications and attachments. In addition, communication compliance can ingest communications and data from third-party services (such as Bloomberg, Thomson Reuters, LinkedIn, Twitter, Facebook, Box, and Dropbox).
-The comprehensive nature of communications that can be captured and reviewed within an organization, and the extensive conditions with which policies may be configured, allow communication compliance policies to help financial institutions comply with FINRA Rule 3110. Policies may be configured to review communications for individuals or groups.  Designated supervisors can be assigned at an individual or group level. Comprehensive conditions can be configured to capture communications based on inbound or outbound messages, domains, retention labels, keywords or phrases, keyword dictionaries, sensitive data types, attachments, message size, or attachment size. Reviewers get a dashboard in which they can review flagged communications, act on communications that potentially violate policies, and mark flagged items as resolved. They can also review the results of reviews and items that were previously resolved.
+[Microsoft Purview Communication Compliance](/microsoft-365/compliance/communication-compliance) is a compliance solution that helps minimize communication risks by helping you detect, investigate, and act on inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate actions to make sure they're compliant with your organization's message standards.
   
-Communication compliance provides reports that enable policy review activities to be audited based on the policy and the reviewer. Reports are available to validate that policies are working as defined by an organization's written supervision policies. They can also be used to identify communications that require review and those that are not compliant with corporate policy. Finally, all activities related to configuring policies and reviewing communications are audited in the Office 365 unified audit log. As a result, communication compliance also helps financial institutions to comply with FINRA Rule 3120.
+Communication compliance provides reports that enable policy review activities to be audited based on the policy and the reviewer. Reports are available to validate that policies are working as defined by an organization's written policies. They can also be used to identify communications that require review and those that are not compliant with corporate policy. Finally, all activities related to configuring policies and reviewing communications are audited in the Office 365 unified audit log. As a result, communication compliance also helps financial institutions to comply with FINRA Rule 3120.
 
-In addition to complying with FINRA rules, communication compliance allows organizations to monitor communications for compliance with other legal requirements, corporate policies, and ethical standards. Communication compliance provides built-in threat, harassment, and profanity classifiers that help reduce false positives when reviewing communications, saving reviewers time during the investigation and remediation process. It also allows organizations to reduce risk by monitoring communications when they undergo sensitive changes, such as mergers and acquisitions or leadership changes.
+In addition to complying with FINRA rules, communication compliance allows organizations to detect and act on communications that may be impacted by other legal requirements, corporate policies, and ethical standards. Communication compliance provides built-in threat, harassment, and profanity classifiers that help reduce false positives when reviewing communications, saving reviewers time during the investigation and remediation process. It also allows organizations to reduce risk by detecting communications when they undergo sensitive organizational changes, such as mergers and acquisitions or leadership changes.
 
 ![An information worker focuses on a screen.](../media/msc16-slalom-004.jpg)
  
@@ -314,11 +321,11 @@ A common threat to enterprises is data exfiltration, or the act of extracting da
 
 Enabling employees with online collaboration tools that can be accessed anywhere inherently brings risk to the organization. Employees may inadvertently or maliciously leak data to attackers or competitors.  Alternatively, they may exfiltrate data for personal use or take data with them to a future employer. These scenarios present serious risks to financial services institutions from both security and compliance standpoints. Identifying these risks when they occur and quickly mitigating them requires both intelligent tools for data collection and collaboration across departments such as legal, human resources, and information security.
 
-Microsoft 365 recently launched an insider risk management solution that correlates signals across Microsoft 365 services and uses machine learning models to analyze user behavior for hidden patterns and signs of insider risk. This tool enables collaboration between security operations, internal investigators, and HR so that they can easily remediate cases based on predetermined workflows.  
+[Microsoft Purview Insider Risk Management](/microsoft-365/compliance/insider-risk-management) is a compliance solution that helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Insider risk policies allow you to define the types of risks to identify and detect in your organization, including acting on cases and escalating cases to Microsoft eDiscovery (Premium) if needed. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.  
 
-For example, insider risk management can correlate signals from a user's Windows 10 desktop, such as copying files to a USB drive or emailing a personal email account, with activities from online services such as Office 365 email, SharePoint Online, Microsoft Teams, or OneDrive for Business, to identify data exfiltration patterns. It can also correlate these activities with employees leaving an organization, which is a common data exfiltration pattern. It can monitor multiple activities and behavior over time. When common patterns emerge, it can raise alerts and help investigators focus on key activities to verify a policy violation with a high degree of confidence. Insider risk management can pseudo-anonymize data from investigators to help meet data privacy regulations, while still surfacing key activities that help them perform investigations efficiently. It allows investigators to package and securely send key activity data to the HR and legal departments, following common escalation workflows for raising cases for remediation action.
+For example, insider risk management can correlate signals from a user's devices, such as copying files to a USB drive or emailing a personal email account, with activities from online services such as Office 365 email, SharePoint Online, Microsoft Teams, or OneDrive for Business, to identify data exfiltration patterns. It can also correlate these activities with employees leaving an organization, which is a common data exfiltration pattern. It can detect multiple potentially risky activities and behavior over time. When common patterns emerge, it can raise alerts and help investigators focus on key activities to verify a policy violation with a high degree of confidence. Insider risk management can pseudo-anonymize data from investigators to help meet data privacy regulations, while still surfacing key activities that help them perform investigations efficiently. It allows investigators to package and securely send key activity data to the HR and legal departments, following common escalation workflows for raising cases for remediation action.
 
-Insider risk management significantly increases capabilities of organizations to monitor and investigate insider risks while allowing organizations to still meet data privacy regulations and follow established escalation paths when cases require higher-level action. For more information about insider risk management, see [Modern risk pain points and Workflow in Insider risk management](../compliance/insider-risk-management.md).
+Insider risk management significantly increases capabilities of organizations to detect and investigate insider risks while allowing organizations to still meet data privacy regulations and follow established escalation paths when cases require higher-level action.
 
 ![A call center worker in in a cubicle types while viewing a screen.](../media/clo17-call-center-006.jpg)
 

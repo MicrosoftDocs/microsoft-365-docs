@@ -12,7 +12,8 @@ f1_keywords:
 - 'ms.o365.cc.DLPNewPolicyFromTemplate'
 ms.service: O365-seccomp
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.localizationpriority: medium
 search.appverid: 
 - MOE150
@@ -25,10 +26,10 @@ description: Learn what the data loss prevention (DLP) policy templates in the M
 
 # What the DLP policy templates include
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Microsoft Purview Data Loss Prevention (DLP) in the Microsoft Purview compliance portal includes ready-to-use policy templates that address common compliance requirements, such as helping you to protect sensitive information subject to the U.S. Health Insurance Act (HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA), or U.S. Patriot Act. This article lists all of the policy templates, what types of sensitive information they look for, and what the default conditions and actions are. This article doesn't include every detail of how each policy template is configured; instead, the article presents with you enough information to help you decide which template is the best starting point for your scenario. Remember, you can customize these policy templates to meet your specific requirements.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Australia Financial Data
 
 |**Rule name**|**Conditions  <br/> (including sensitive information types)**|**Actions**|

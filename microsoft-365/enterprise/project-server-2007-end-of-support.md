@@ -1,14 +1,16 @@
 ---
-title: "Project Server 2007 end of support roadmap"
-ms.author: efrene
-author: efrene
+title: Project Server 2007 end of support roadmap
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- scotvorg
+- Ent_O365
 f1.keywords:
 - CSH
 ms.custom: IT_ProjectAdmin
@@ -18,7 +20,7 @@ search.appverid:
 - PJU120
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
-description: "On October 10, 2017, support ended for Project Server 2007, Project Portfolio Server, and Project 2007. Use this article to plan your upgrade now."
+description: On October 10, 2017, support ended for Project Server 2007, Project Portfolio Server, and Project 2007. Use this article to plan your upgrade now.
 ---
 
 # Project Server 2007 end of support roadmap
@@ -187,7 +189,7 @@ Additional resources:
 
 After you verify that your data migrated successfully, the next step is to migrate to Project Server 2016.
   
-For a comprehensive description of what you need to do to upgrade from Project Server 2013 to Project Server 2016, see [Upgrade to Project Server 2016](//project/upgrading-to-project-server-2016).
+For a comprehensive description of what you need to do to upgrade from Project Server 2013 to Project Server 2016, see [Upgrade to Project Server 2016](/project/upgrading-to-project-server-2016).
   
 Key resources:
   

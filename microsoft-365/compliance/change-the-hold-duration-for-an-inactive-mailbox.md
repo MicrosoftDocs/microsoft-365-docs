@@ -11,8 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid: 
 - MOE150
 - MET150
@@ -24,7 +24,7 @@ description: "After an Office 365 mailbox is made inactive, change the duration 
 
 # Change the hold duration for an inactive mailbox
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 An [inactive mailbox](inactive-mailboxes-in-office-365.md) is mailbox state that is used to retain a former employee's email after they leave your organization. A mailbox becomes inactive when an applicable hold is applied to it before the Microsoft 365 user object is deleted.  The following types of holds will initiate the creation of an inactive mailbox upon user account deletion:
 
@@ -56,15 +56,17 @@ However, if the hold is time-based, the mailbox content will be retained until t
 
 As regulations and policies evolve, there may be some situations in which you need to change the duration of the hold assigned to the inactive mailbox.  The following steps outline how to do this.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Connect to PowerShell
 
-As we mentioned before, many different types of holds can trigger the creation of an inactive mailbox.  For this reason, in order to change the hold duration applied to the inactive mailbox, you must first identify what type of holds are affecting it.  To do this, you must use Exchange Online PowerShell to identify the types of holds and, if the inactive mailbox is affected by Microsoft 365 retention policies or labels you must also use Security and Compliance Center PowerShell to identify the specific policies.
+As we mentioned before, many different types of holds can trigger the creation of an inactive mailbox.  For this reason, in order to change the hold duration applied to the inactive mailbox, you must first identify what type of holds are affecting it.  To do this, you must use Exchange Online PowerShell to identify the types of holds and, if the inactive mailbox is affected by Microsoft 365 retention policies or labels you must also use Security & Compliance PowerShell to identify the specific policies.
 
-- To connect to Exchange Online PowerShell or Security & Compliance Center PowerShell, see one of the following topics:
+- To connect to Exchange Online PowerShell or Security & Compliance PowerShell, see one of the following topics:
 
   - [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-  - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 ## Step 1: Identify the holds on an inactive mailbox
 
@@ -200,7 +202,7 @@ After you identify what type of hold is placed on the inactive mailbox (and whet
 
 ### Change the duration for a Microsoft 365 retention policy
 
-In order to modify the hold duration for a Microsoft 365 retention policy, you must first identify the policy affecting the inactive mailbox by running `Get-RetentionCompliancePolicy` with the associated GUID from the `InPlaceHolds` property on the mailbox in Security and Compliance Center PowerShell.
+In order to modify the hold duration for a Microsoft 365 retention policy, you must first identify the policy affecting the inactive mailbox by running `Get-RetentionCompliancePolicy` with the associated GUID from the `InPlaceHolds` property on the mailbox in Security & Compliance PowerShell.
 
 Be sure to remove the prefix and suffix from the GUID when running this command.  For example, using the sample information from above, you would take the `InPlaceHolds` value of `mbxcdbbb86ce60342489bff371876e7f224:3` then remove `mbx` and `:3` resulting in a policy GUID of `cdbbb86ce60342489bff371876e7f224`.  In this example, you'd want to run:
 
@@ -217,7 +219,7 @@ If the intention is to modify the retention period for only inactive mailboxes, 
 
 ### Change the duration for a Microsoft 365 retention label
 
-As with retention policies, when modifying the hold duration of a Microsoft 365 retention label, you must first identify the policy which publishes the label affecting the content within the inactive mailbox by running `Get-RetentionCompliancePolicy` with the associated GUID from the `InPlaceHolds` property on the mailbox in Security and Compliance Center PowerShell.
+As with retention policies, when modifying the hold duration of a Microsoft 365 retention label, you must first identify the policy which publishes the label affecting the content within the inactive mailbox by running `Get-RetentionCompliancePolicy` with the associated GUID from the `InPlaceHolds` property on the mailbox in Security & Compliance PowerShell.
 
 Be sure to remove the prefix and suffix from the GUID when running this command.  For example, using the sample information from above, you would take the `InPlaceHolds` value of `mbx6fe063689d404a5bb9940eed0f0bf5d2:1` then remove `mbx` and `:1` resulting in a policy GUID of `6fe063689d404a5bb9940eed0f0bf5d2`.  In this example, you'd want to run:
 
@@ -275,7 +277,7 @@ In-Place Holds have been retired and can no longer be modified. If an inactive m
 
     Conversely, any archive policies (MRM retention tags configured with a **MoveToArchive** action) that are included in the MRM retention policy assigned to an inactive mailbox are ignored. That means items in an inactive mailbox that are tagged with an archive policy remain in the primary mailbox when the retention period expires. They're not moved to the archive mailbox or to the Recoverable Items folder in the archive mailbox. They will be retained indefinitely.
     > [!NOTE]
-    > Applying an Exchange retention policy (the Messaging Records Management, or MRM, feature in Exchange Online) does not create an inactive mailbox when the user account is deleted.
+    > Applying an Exchange retention policy (the messaging records management, or MRM, feature in Exchange Online) does not create an inactive mailbox when the user account is deleted.
 
 - **As with regular mailboxes, the Managed Folder Assistant (MFA) also processes inactive mailboxes.** In Exchange Online, the MFA processes mailboxes approximately once every seven days. After you change the hold duration for an inactive mailbox, you can use the **Start-ManagedFolderAssistant** cmdlet to immediately start processing the new hold duration for the inactive mailbox. Run the following command. 
 

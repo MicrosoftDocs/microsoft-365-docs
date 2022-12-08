@@ -1,8 +1,8 @@
 ---
 title: Get missing KBs by software ID
 description: Retrieves missing security updates by software ID
-keywords: apis, graph api, supported apis, get, list, file, information, software id, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
-ms.prod: m365-security
+keywords: apis, graph api, supported apis, get, list, file, information, software id, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api, mdvm, Microsoft Defender Vulnerability Management
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,10 +11,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-MS.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
 
 # Get missing KBs by software ID
@@ -97,5 +100,5 @@ Here is an example of the response.
 
 ## Related topics
 
-- [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Threat & Vulnerability software inventory](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender Vulnerability Management software inventory](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

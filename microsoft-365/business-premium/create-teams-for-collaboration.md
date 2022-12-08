@@ -2,18 +2,21 @@
 title: "Use Microsoft Teams for collaboration"
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-security
+ms.subservice: other
 ms.localizationpriority: high
+ms.date: 09/15/2022
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
 - M365-identity-device-management
 - M365-Campaigns
+- tier1
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -27,25 +30,25 @@ description: "Learn why and how to create a team in Microsoft Teams so your smal
 
 # Use Microsoft Teams for collaboration
 
-Microsoft Teams is a collaboration app that helps your staff stay organized and have conversations, from any device. You can use Microsoft Teams to have instant conversations with members of your staff or guests outside your organization. You can also make phone calls, host meetings, and share files.
+Microsoft Teams is a collaboration app that helps members of the org use any device to stay organized and have conversations. You can use Microsoft Teams to have immediate conversations with members of your staff or guests outside your organization. You can also make phone calls, host meetings, and share files.
 
 ## Best practices
 
 1. Create private teams for sensitive information.
 
-2. Create an org-wide team for communication with everyone across your organization.
+1. Create an org-wide team for communication with everyone across your organization.
 
-3. Create teams for specific projects and apply the right amount of protection based on who should be included.
+1. Create teams for specific projects and apply the right amount of protection based on who should be included.
 
-4. Create specific teams for communication with external partners to keep them separate from anything sensitive for your business.
+1. Create specific teams for communication with external partners to keep them separate from anything sensitive for your business.
 
 For example, a business, legal firm, or healthcare practice might create the following teams:
 
-1. **A business-, firm-, or practice-wide team:** This is for everyone to use for day to day communications and work across your business. You can use this team to post announcements or share information of interest for your whole firm or practice.
+1. **A business-, firm-, or practice-wide team:** This is for everyone to use for day-to-day communications and work across your business. You can use this team to post announcements or share information of interest for your whole firm or practice.
 
-2. **Individual teams:** Set up teams for smaller groups to collaborate about their day to day work.
+1. **Individual teams:** Set up teams for smaller groups to collaborate about their day to day work.
 
-3. **An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive. Set up different channels for specific groups.
+1. **An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive. Set up different channels for specific groups.
 
 ![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business.](../media/m365-democracy-teams-business-collab.png)
 
@@ -101,7 +104,7 @@ Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/m
 
 ## Admin settings
 
-> [!Note]
+> [!NOTE]
 > You must be an admin to create an organization-wide team. For more information, see [What is an Admin in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
 
 ## Next objective

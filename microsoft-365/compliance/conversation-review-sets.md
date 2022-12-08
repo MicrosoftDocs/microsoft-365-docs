@@ -1,27 +1,26 @@
 ---
 title: "Review conversations in eDiscovery (Premium)"
+description: "Learn about the conversation reconstruction feature in Microsoft Purview eDiscovery (Premium) (called conversation threading) to reconstruct, review, and export chat conversations in Microsoft Teams and Yammer groups."
+ms.custom: seo-marvel-mar2020
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
-ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-description: "Learn about the conversation reconstruction feature in Microsoft Purview eDiscovery (Premium) (called conversation threading) to reconstruct, review, and export chat conversations in Microsoft Teams and Yammer groups."
-ms.custom: seo-marvel-mar2020
 ---
 
 # Conversation threading in eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Instant messaging is a convenient way to ask questions, share ideas, or quickly communicate across large audiences. As instant messaging platforms, like Microsoft Teams and Yammer groups, become core to enterprise collaboration, organizations must evaluate how their eDiscovery workflow addresses these new forms of communication and collaboration.
 
@@ -37,6 +36,8 @@ With conversation reconstruction, you can use built-in capabilities to reconstru
 
 - Export individual messages or threaded conversations
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Terminology
 
 Here are few definitions to help you get start using conversation reconstruction.
@@ -49,13 +50,13 @@ Here are few definitions to help you get start using conversation reconstruction
 
    In other apps (such as group chat messages in Teams), there is not a formal reply chain and instead messages appear as a "flat river of messages" within a single thread. In these types apps, conversations are inferred from a group of messages that occur within a certain time. This "soft-grouping" of messages (as opposed to a reply chain) represent the "back and forth" conversation about a specific topic of interest.
 
-## Step 1: Create a draft collection
+## Step 1: Create a collection estimate
 
-After you have identified relevant custodians and content locations, you can create a search to find potentially relevant content. On the **Collections** tab in the eDiscovery (Premium) case, you can create a collection by clicking **New collection** and following the wizard. For information about how you can create a collection, build a search query, and preview the search results, see [Create a draft collection](create-draft-collection.md).
+After you have identified relevant custodians and content locations, you can create a search to find potentially relevant content. On the **Collections** tab in the eDiscovery (Premium) case, you can create a collection by clicking **New collection** and following the wizard. For information about how you can create a collection, build a search query, and preview the search results, see [Create a collection estimate](create-draft-collection.md).
 
-## Step 2: Commit a draft collection to a review set
+## Step 2: Commit a collection estimate to a review set
 
-After you have reviewed and finalized the search query in a collection, you can add the search results to a review set. When you add your search results into a review set, the original data is copied to an Azure Storage area to facilitate the review and analysis process. For more information about adding search results to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
+After you have reviewed and finalized the search query in a collection, you can add the search results to a review set. When you add your search results into a review set, the original data is copied to an Azure Storage area to facilitate the review and analysis process. For more information about adding search results to a review set, see [Commit a collection estimate to a review set](commit-draft-collection.md).
 
 When you add items from conversations to a review set, you can use the threaded conversations option to collect contextual messages from conversations that contain items that match the search criteria of the collection. After you select the thread conversations option, the following things can happen:
 
@@ -67,7 +68,7 @@ When you add items from conversations to a review set, you can use the threaded 
 
 3. After the items have been added to the review set, you can review all the individual messages from *CRC1*.
 
-To enable the threaded conversations option, see [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set).
+To enable the threaded conversations option, see [Commit a collection estimate to a review set](commit-draft-collection.md#commit-a-collection-estimate-to-a-review-set).
 
 ## Step 3: Review and export threaded conversations
 

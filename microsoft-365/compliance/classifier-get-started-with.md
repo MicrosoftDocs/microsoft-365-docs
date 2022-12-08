@@ -11,21 +11,21 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: null
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkDEFENDER
 search.appverid: 
 - MOE150
 - MET150
-description: "A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This article shows you how to create and train a custom classifier and how to retrain them to increase accuracy."
+description: "A Microsoft Purview classifier is a tool you can train to recognize various types of content by giving it samples to look at. This article shows you how to create and train a custom classifier and how to retrain them to increase accuracy."
 ---
 
 # Get started with trainable classifiers
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, Communications compliance policies, and retention label policies.
+A Microsoft Purview trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, Communications compliance policies, and retention label policies.
 
 Creating a custom trainable classifier first involves giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the classifiers ability to predict by giving it a mix of positive and negative samples. This article shows you how to create and train a custom classifier and how to improve the performance of custom trainable classifiers and pre-trained classifiers over their lifetime through retraining.
 
@@ -37,6 +37,8 @@ Watch this video for a quick summary of creating a trainable classifier. You'll 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
 
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Prerequisites
 
@@ -93,7 +95,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 ## How to create a trainable classifier
 
-1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
+1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
    > [!IMPORTANT]
    > Make sure the items in your seed set are **strong** examples of the category. The trainable classifier initially builds its model based on what you seed it with. The classifier assumes all seed samples are strong positives and has no way of knowing if a sample is a weak or negative match to the category.

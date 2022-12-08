@@ -7,10 +7,12 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -23,7 +25,7 @@ description: "Learn how to update your billing addresses or the email address us
 ms.date: 01/24/2022
 ---
 
-# Change your billing addresses
+# Change your Microsoft 365 for business billing addresses
 
 Your bill or invoice contains three addresses:
   

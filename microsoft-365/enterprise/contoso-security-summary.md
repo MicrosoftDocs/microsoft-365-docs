@@ -8,9 +8,10 @@ manager: scotv
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom:
@@ -81,9 +82,9 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 ## Threat protection
 
-- Protection from malware with Windows Defender Antivirus
+- Protection from malware with Microsoft Defender Antivirus
 
-  Contoso is using [Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for malware protection and anti-malware management for PCs and devices running Windows 10 Enterprise.
+  Contoso is using [Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for malware protection and anti-malware management for PCs and devices running Windows 10 Enterprise.
 
 - Secure email flow and mailbox audit logging with Microsoft Defender for Office 365 
 

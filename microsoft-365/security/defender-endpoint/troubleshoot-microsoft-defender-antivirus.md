@@ -2,19 +2,22 @@
 title: Microsoft Defender Antivirus event IDs and error codes
 description: Look up the causes and solutions for Microsoft Defender Antivirus event IDs and errors
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/27/2022
+ms.date: 08/04/2022
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier3
+search.appverid: met150
 ---
 
 # Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus
@@ -37,15 +40,6 @@ The tables list:
 - [Microsoft Defender Antivirus client error codes](#error-codes)
 - [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
-> [!TIP]
-> You can also visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
->
-> - Cloud-delivered protection
-> - Fast learning (including Block at first sight)
-> - Potentially unwanted application blocking
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 <a id="windows-defender-av-ids"></a>
 ## Microsoft Defender Antivirus event IDs
@@ -338,7 +332,7 @@ To troubleshoot this event:
 <ol>
 <li>Run the scan again.</li>
 <li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -1291,7 +1285,7 @@ Verify that the user has permission to access the necessary resources.
 If this event persists:<ol>
 <li>Run the scan again.</li>
 <li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -1607,7 +1601,7 @@ To troubleshoot this event:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
 <li>Review the entries in the %Windir%\WindowsUpdate.log file for more information about this error.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -1699,7 +1693,7 @@ The Microsoft Defender Antivirus client update failed. This event occurs when th
 To troubleshoot this event:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -1751,7 +1745,7 @@ To troubleshoot this event:
 <li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
 </li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -1925,6 +1919,23 @@ Message:
 <td >
 <b>The Dynamic Signature Service deleted the out-of-date dynamic definitions.
 </b>
+</td>
+</tr>
+<tr>
+<td>
+Change to default behavior:
+</td>
+<td >
+<dl>
+<dt><b>Change to dynamic signature event reporting default behavior</b></dt>
+<dt>When a dynamic signature is received by MDE, a 2010 event is reported. However, when the dynamic signature expires or is manually deleted a 2011 event is reported. In some cases, when a new signature is delivered to MDE sometimes hundreds of dynamic signatures will expire at the same time; therefore hundreds of 2011 events are reported. The generation of so many 2011 events can cause a Security information and event management (SIEM) server to become flooded.</dt>
+<dt>To avoid the above situation - starting with platform version 4.18.2207.7 - by default, MDE will now <i>not</i> report 2011 events:<ul>
+<li>This new default behavior is controlled by registry entry: <b>HKLM\SOFTWARE\Microsoft\Windows&nbsp;Defender\Reporting\EnableDynamicSignatureDroppedEventReporting</b>.</li>
+<li>The default value for <b>EnableDynamicSignatureDroppedEventReporting</b> is <b>false</b>, which means <i>2011 events are not reported</i>. If it's set to true, 2011 events <i>are reported</i>.</li>
+</ul>
+</dt>
+<dt>Because 2010 signature events are timely distributed sporadically - and will not cause a spike - 2010 signature event behavior is unchanged.</dt>
+</dl>
 </td>
 </tr>
 <tr>
@@ -2393,7 +2404,7 @@ Microsoft Defender Antivirus Real-time Protection has restarted a feature. It is
 User action:
 </td>
 <td >
-The real-time protection feature has restarted. If this event happens again, contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+The real-time protection feature has restarted. If this event happens again, contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </td>
 </tr>
 <tr>
@@ -2568,7 +2579,7 @@ To troubleshoot this event:<ol>
 </li>
 </ul>
 </li>
-<li>If it fails in the same way, look up the error code by accessing the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support Site</a>  and entering the error number in the <b>Search</b> box, and contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.</li>
+<li>If it fails in the same way, look up the error code by accessing the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support Site</a>  and entering the error number in the <b>Search</b> box, and contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.</li>
 </ol>
 </td>
 </tr>
@@ -2582,7 +2593,7 @@ To troubleshoot this event:
 <ol>
 <li>Run the scan again.</li>
 <li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
+<li>Contact <a href="/microsoft-365/admin/get-help-support">Microsoft Technical Support</a>.
 </li>
 </ol>
 </td>
@@ -2721,7 +2732,7 @@ Message:
 Description:
 </td>
 <td >
-If Tamper protection is enabled then, any attempt to change any of Defender's settings if blocked and Event ID 5013 is generated that states which setting change was blocked.
+If Tamper protection is enabled then, any attempt to change any of Defender's settings is blocked. Event ID 5013 is generated and states which setting change was blocked.
 </td>
 </tr>
 <tr>
@@ -2796,8 +2807,7 @@ Description of the error. </dt>
 
 <a id="error-codes"></a>
 ## Microsoft Defender Antivirus client error codes
-If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
-This section provides the following information about Microsoft Defender Antivirus client errors.
+If Microsoft Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update. This section provides the following information about Microsoft Defender Antivirus client errors.
 - The error code
 - The possible reason for the error
 - Advice on what to do now

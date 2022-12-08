@@ -4,7 +4,8 @@ description: Learn about the Microsoft 365 Defender for US Government customers 
 keywords: government, gcc, high, requirements, capabilities, defender, Microsoft 365 Defender, xdr, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +14,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security-compliance
+- tier3
 ms.topic: conceptual
-ms.technology: m365d
 ---
 
 # Microsoft 365 Defender for US Government customers
@@ -108,12 +110,15 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Integrations: Microsoft Sentinel (Incidents & Raw data)|![Yes](../defender-endpoint/images/svg/check-yes.svg)|![Yes](../defender-endpoint/images/svg/check-yes.svg) In private preview|![Yes](../defender-endpoint/images/svg/check-yes.svg) In private preview|
+|Integrations: Microsoft Sentinel (Incidents & Raw data)|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|![Yes](../defender-endpoint/images/svg/check-yes.svg) In public preview|
 |Microsoft Threat Experts|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|
+
+For detailed list of Event Streaming API tables, see [Microsoft 365 Defender streaming event types supported in Event Streaming API](supported-event-types.md).
 
 ## More details
 
 For more information, see the individual workloads US Gov pages:
+
 - [Microsoft Defender for Cloud Apps](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description).
 - [Microsoft Defender for Identity](/enterprise-mobility-security/solutions/ems-mdi-govt-service-description).
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/gov).

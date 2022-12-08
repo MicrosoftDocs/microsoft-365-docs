@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,6 +15,7 @@ f1.keywords:
 - NOCSH
 description: This article contains information for using lean popouts to improve message download performance in Outlook on the web.
 ms.custom: seo-marvel-apr2020
+ms.collection: scotvorg
 ---
 
 # Use lean popouts to reduce memory used when reading mail messages
@@ -34,7 +35,7 @@ These features will continue to work in the main window but are not available in
   
 ## To configure lean popouts for all users within your Office 365 organization
   
-1. [Connect to Exchange Online Using Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
   
 2. Run the [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) cmdlet with the LeanPopoutEnabled parameter as follows:
 

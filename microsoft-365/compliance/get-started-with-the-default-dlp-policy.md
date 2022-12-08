@@ -15,7 +15,8 @@ search.appverid:
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Learn how to use the report to refine your organization's default data loss prevention (DLP) policy.
@@ -23,14 +24,14 @@ description: Learn how to use the report to refine your organization's default d
 
 # Get started with the default DLP policy
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 Before you even create your first Microsoft Purview Data Loss Prevention (DLP) policy, DLP is helping to protect your sensitive information with a default policy. This default policy and its recommendation (shown below) help keep your sensitive content secure by notifying you when email or documents containing a credit card number were shared with someone outside your organization. You'll see this recommendation on the **Home** page of the Microsoft Purview compliance portal. 
   
 You can use this widget to quickly view when and how much sensitive information was shared, and then refine the default DLP policy in just a click or two. You can also edit the default DLP policy at any time because it's fully customizable. Note that if you don't see the recommendation at first, try clicking **+More** at the bottom of the **Recommended for you** section. 
   
 ![Widget named Further protect shared content.](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## View the report and refine the default DLP policy
 
 When the widget shows you that users have shared sensitive information with people outside your organization, choose **Refine DLP policy** at the bottom. 
@@ -43,7 +44,7 @@ To help protect the sensitive information, the default DLP policy:
     
 - Shows a policy tip and sends an email notification to users when they attempt to share this sensitive information with people outside your organization. For more information on these options, see [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md).
     
-- Generates detailed activity reports so that you can track things like who shared the content with people outside your organization and when they did it. You can use the [DLP reports](view-the-dlp-reports.md) and [audit log data](search-the-audit-log-in-security-and-compliance.md) (where **Activity** = **DLP**) to see this information.
+- Generates detailed activity reports so that you can track things like who shared the content with people outside your organization and when they did it. You can use the [DLP reports](view-the-dlp-reports.md) and [audit log data](audit-log-search.md) (where **Activity** = **DLP**) to see this information.
     
 To quickly refine the default DLP policy, you can choose to have it:
   

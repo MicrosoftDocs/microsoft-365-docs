@@ -2,20 +2,21 @@
 title: Run a detection test on a device to verify it has been properly onboarded to Microsoft Defender for Endpoint
 description: Run the detection test script on a device recently onboarded to the Microsoft Defender for Endpoint service to verify that it is properly added.
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 09/13/2022
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier1
+ms.topic: conceptual
+ms.subservice: mde
 ---
 
 # Run a detection test on a newly onboarded Microsoft Defender for Endpoint device
@@ -44,8 +45,7 @@ Making sure, or verifying, that a device has been added to the service successfu
 
 Run the following PowerShell script on a newly onboarded device to verify that it is properly reporting to the Defender for Endpoint service.
 
-1. Create a folder: 'C:\test-MDATP-test'.
-2. Open an elevated command-line prompt on the device and run the script:
+1. Open an elevated command-line prompt on the device and run the script:
 
    1. Go to **Start** and type **cmd**.
 
@@ -53,7 +53,7 @@ Run the following PowerShell script on a newly onboarded device to verify that i
 
       :::image type="content" source="images/run-as-admin.png" alt-text="The Start menu pointing to Run as administrator" lightbox="images/run-as-admin.png":::
     
-3. At the prompt, copy and run the following command:
+2. At the prompt, copy and run the following command:
 
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'

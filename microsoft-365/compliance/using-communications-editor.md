@@ -1,30 +1,31 @@
 ---
 title: "Use the communications editor"
+description: Use the Communications Editor to change text and merge field variables when formatting your content.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Use the Communications Editor to change text and merge field variables when formatting your content.
 ms.custom: seo-marvel-mar2020
 ---
 
 # Use the communications editor
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 As you define the content of your portal content, legal hold notifications, and related reminders/escalations, you can use the Communications Editor to format and dynamically customize your content.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Rich text editor
 
