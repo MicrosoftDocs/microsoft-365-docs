@@ -4,17 +4,19 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolib
-- M365-Lighthous
+- M365-Lighthouse
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, see a list of known issues for Lighthouse by feature area."
 ---

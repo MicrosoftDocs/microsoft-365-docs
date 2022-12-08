@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - tier3
 - M365-security-compliance
 ms.custom: Ent_TLGs

@@ -7,10 +7,13 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
-ms.topic: article
-ms.service: o365-administration 
+ms.topic: end-user-help
+ms.service: microsoft-365-business 
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection: 
+- Tier1
+- scotvorg
+- M365-subscription-management
 ms.custom: 
 - commerce_ssp
 - AdminSurgePortfolio

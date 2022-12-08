@@ -62,6 +62,8 @@ Here's the process for setting up compliance boundaries:
 
 [Step 4: Create an eDiscovery case for an intra-agency investigations](#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you set up compliance boundaries
 
 - Users must be assigned an Exchange Online license. To verify this, use the [Get-User](/powershell/module/exchange/get-user) cmdlet in Exchange Online PowerShell.

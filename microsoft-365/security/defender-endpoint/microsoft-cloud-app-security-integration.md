@@ -12,7 +12,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.subservice: mde

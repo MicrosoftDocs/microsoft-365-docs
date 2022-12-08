@@ -44,6 +44,8 @@ To configure search and analytics settings for a case:
 
    ![Configure analytics and search settings for an eDiscovery (Premium) case.](../media/AeDCaseSettings.png)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Near duplicates and email threading
 
 In this section, you can set parameters for duplicate detection, near duplicate detection, and email threading. For more information, see [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md) and [Email threading](email-threading-in-advanced-ediscovery.md).

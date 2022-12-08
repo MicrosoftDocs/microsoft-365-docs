@@ -42,6 +42,8 @@ You can add or remove members to manage who can access the case. However, before
 > [!IMPORTANT]
 > If a role is added or removed from a role group that you've added as a member of a case, then the role group will be automatically removed as a member of the case (or any case the role group is a member of). The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Removing members from a case
 
 Only an [eDiscovery Administrator](assign-ediscovery-permissions.md) can remove members from a case. Even if you are assigned to the eDiscovery Manager role group or initially created the case, you won't be able to remove yourself or other members from a case unless you are also an eDiscovery Administrator. To remove yourself or other members from a case, contact an eDiscovery Administrator in your organization.

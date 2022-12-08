@@ -11,8 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.collection: m365-security
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier3
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150

@@ -68,6 +68,8 @@ To create a eDiscovery (Standard) search:
 
 After the search is completed, you can preview the search results. If necessary, click **Refresh** on the **Searches** page to display the search you created.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## More information about searching content locations
 
 - When you click **Choose users, groups, or teams** to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, click **Choose users, groups, or teams**, type a name (a minimum of three characters) in the search box, select the check box next to the name, and then click **Choose**.

@@ -30,6 +30,8 @@ When the number of collected documents is large, it can be difficult to review t
 
 - [Themes](themes-in-advanced-ediscovery.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Run analytics for a review set
 
 To analyze data in a review set:

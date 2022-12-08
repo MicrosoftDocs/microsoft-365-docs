@@ -27,6 +27,8 @@ ms.custom:
 
 Need to find if a user viewed a specific document or purged an item from their mailbox? Microsoft Purview eDiscovery (Premium) is now integrated with the existing audit log search tool in the Microsoft Purview compliance portal. Using this embedded experience, you can use the eDiscovery (Premium) Custodian Management tool to facilitate your investigation by easily accessing and searching the activity for custodians within your case.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Get permissions
 
 You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the Permissions page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. To give a user the ability to search the eDiscovery (Premium) audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see Manage role groups in Exchange Online.
@@ -109,4 +111,4 @@ You can export the results of an audit log search to a comma separated value (CS
 
 3. After you select an export option, a message is displayed at the bottom of the window that prompts you to open the CSV file, save it to the Downloads folder, or save it to a specific folder
 
-For more information about viewing, filtering, or exporting audit log search results, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+For more information about viewing, filtering, or exporting audit log search results, see [Search the audit log](audit-log-search.md).

@@ -8,7 +8,9 @@ manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier2
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
@@ -19,6 +21,8 @@ description: "Learn which user roles are required in order to sign up for a tria
 # User roles for starting Microsoft 365 trials
 
 This article outlines the user roles required in order to enroll your organization in a Microsoft 365 trial.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Who can start all trials
 

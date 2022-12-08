@@ -13,8 +13,10 @@ ms.localizationpriority: medium
 ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 ---
 

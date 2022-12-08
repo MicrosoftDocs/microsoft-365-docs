@@ -16,7 +16,8 @@ ms.collection:
   - m365-security
   - m365solution-evalutatemtp
   - highpri
-ms.topic: article
+  - tier1
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---

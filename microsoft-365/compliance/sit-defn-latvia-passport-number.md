@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -24,6 +24,8 @@ description: "Latvia passport number sensitive information type entity definitio
 
 
 # Latvia passport number
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

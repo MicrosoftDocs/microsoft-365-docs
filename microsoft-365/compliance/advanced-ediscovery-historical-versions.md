@@ -28,6 +28,8 @@ To support the historical versions capability in eDiscovery (Premium), SharePoin
 
 After an eDiscovery administrator turns on historical versions for the organization and then activates it for specific SharePoint sites, the SharePoint content push service crawls all major and minor versions of documents on the activated sites and then sends those versions for indexing. After the crawling and indexing process is complete, documents and their versions are available for eDiscovery search. As long as a specific version can be accessed (by version history), then that version will be discoverable in an eDiscovery (Premium) collection search.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Set up historical versions
 
 To enable historical versions in eDiscovery (Premium), your organization has to turn it on and then activate specific sites so that all versions of documents stored on those sites are indexed for search. Before you set up eDiscovery (Premium) for historical versions, you have to enable versioning support in SharePoint.
@@ -82,9 +84,9 @@ After you turn on historical versions for your organization, the last step is to
 
 ## Frequently asked questions
 
-**How are historical versions different that the option to "collect all versions" when you commit a draft collection to a review set?**
+**How are historical versions different that the option to "collect all versions" when you commit a collection estimate to a review set?**
 
-Currently, only the latest version of documents is indexed for search. That means when you run a draft collection, only the latest versions of documents are searched. If a document matches the keyword query for the collection, it is returned in the collection results. However, if the latest version of a document doesn't match a search query, the document won't be returned event if older versions of the document contain the keyword. To help mitigate this situation, eDiscovery (Premium) gives you the ability to collect all versions of the document when you [commit a collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set). That means any older version that may contain the keyword will be added to the review set.
+Currently, only the latest version of documents is indexed for search. That means when you run a collection estimate, only the latest versions of documents are searched. If a document matches the keyword query for the collection, it is returned in the collection results. However, if the latest version of a document doesn't match a search query, the document won't be returned event if older versions of the document contain the keyword. To help mitigate this situation, eDiscovery (Premium) gives you the ability to collect all versions of the document when you [commit a collection to a review set](commit-draft-collection.md#commit-a-collection-estimate-to-a-review-set). That means any older version that may contain the keyword will be added to the review set.
 
 Historical versions are different and more efficient than "collecting all versions" because when you activate a site, all versions of a document (and not just the last version) are indexed for search. The result is that if an older version of a document contains a keyword that matches the search query, it will be returned by the collection.
 

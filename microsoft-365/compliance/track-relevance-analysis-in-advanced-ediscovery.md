@@ -26,6 +26,8 @@ ROBOTS: NOINDEX, NOFOLLOW
   
 In Microsoft Purview eDiscovery (Premium), the Relevance Track tab displays the calculated validity of the Relevance training performed in the Tag tab and indicates the next step to take in the iterative training process in Relevance. 
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Tracking Relevance training status
 
 1. View the following details in Relevance Track for the case issues, as shown in the following example of an **Issue name** dialog below.

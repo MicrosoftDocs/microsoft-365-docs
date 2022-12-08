@@ -25,6 +25,8 @@ The first step in using the machine learning capabilities of predictive coding i
 
 To review the predictive coding workflow, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you create a model
 
 - There must be a minimum of 2,000 items in a review set to create a predictive coding model.

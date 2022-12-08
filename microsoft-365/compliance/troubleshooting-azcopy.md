@@ -31,6 +31,8 @@ When loading non-Microsoft 365 data or documents for error remediation in Micros
 
 Usually the command that's provided works when you run it. However, there may be cases when the command that's displayed will not run successfully. Here's a few possible reasons.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## The supported version of AzCopy isn't installed on the local computer
 
 At this time, you must use AzCopy v8.1 to load non-Microsoft 365 data in eDiscovery (Premium). The AzCopy command that's displayed on the **Upload files** page shown in the previous screenshot returns an error if you're not using AzCopy v8.1. To install this version, see [Transfer data with the AzCopy v8.1 on Windows](/previous-versions/azure/storage/storage-use-azcopy).

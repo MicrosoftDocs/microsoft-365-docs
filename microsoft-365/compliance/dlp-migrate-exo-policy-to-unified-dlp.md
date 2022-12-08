@@ -35,6 +35,8 @@ The migration wizard works by reading the configuration of your DLP policies in 
 
 The migration wizard only migrates EXO policies and associated mail flow rules. Standalone Exchange mail flow rules aren't migrated.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Migration workflow
 
 There are four phases to migrating DLP policies from Exchange into the Unified DLP management console in the compliance portal.

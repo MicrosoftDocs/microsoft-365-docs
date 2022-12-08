@@ -3,7 +3,6 @@ title: "How modern authentication works for Office 2013 and Office 2016 client a
 ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
-ms.date: 8/1/2017
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -23,6 +22,7 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
+- scotvorg
 - M365-security-compliance
 description: Learn how Microsoft 365 modern authentication features work differently for Office 2013 and 2016 client apps.
 ---
@@ -53,14 +53,61 @@ For the Microsoft 365 services, the default state of modern authentication is:
 
 Office 2013 client apps support legacy authentication by default. Legacy means that they support either Microsoft Online Sign-in Assistant or basic authentication. In order for these clients to use modern authentication features, the Windows client must have registry keys set. For instructions, see [Enable Modern Authentication for Office 2013 on Windows devices](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
+> [!IMPORTANT]
+> The use of basic authentication is being deprecated for Exchange Online mailboxes on Microsoft 365. This means that if Outlook 2013 is not configured to use modern authentication, it loses the ability to connect. Read [this article](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-september/ba-p/3609437) for more information about basic auth deprecation.
+
 To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
 
 |**Registry key**|**Type**|**Value** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
+|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
+|HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover |REG_DWORD |1 |
 
 Read [How to use Modern Authentication (ADAL) with Skype for Business](./hybrid-modern-auth-overview.md) to learn about how it works with Skype for Business.
+
+## Software requirements
+
+To enable multifactor authentication (MFA) for Office 2013 client apps, you must have the software listed below installed (at the version listed below, or a *later* version). The process is different depending on your installation type (either MSI-based, or via Click-to-run.)
+
+First, find out if your Office installation is MSI-based or Click-to-run with the steps below.
+
+1. Start Outlook 2013.
+2. On the **File** menu, select **Office Account**.
+3. For Outlook 2013 *Click-to-Run* installations an **Update Options** item is displayed. For MSI-based installations, the Update Options item is not displayed.
+    1. The Click-to-run **Update Options** button will tell you 'Updates are automatically downloaded and installed', and your current version.
+
+### Click-to-run based installations
+
+For Click-to-run based installations you *must* have the following software installed at a file version listed below, or a *later* file version. If your file version is not equal to, or greater than, the file version listed, update it using the steps below.
+
+
+|File name  |Install path on your computer  |File version  |
+|---------|---------|---------|
+|MSO.DLL     |C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\MSO.DLL       |15.0.4753.1001       |
+|CSI.DLL   |CSI.DLL C:\Program Files\Microsoft Office 15\root\office15\csi.dll         |15.0.4753.1000        |
+|Groove.EXE*     |C:\Program Files\Microsoft Office 15\root\office15\GROOVE.exe       |15.0.4763.1000      |
+|Outlook.exe     |C:\Program Files\Microsoft Office 15\root\office15\OUTLOOK.exe         |15.0.4753.1002     |
+|ADAL.DLL    |C:\Program Files\Microsoft Office 15\root\vfs\ProgramFilesCommonx86\Microsoft Shared\OFFICE15\ADAL.DLL       |1.0.2016.624         |
+|Iexplore.exe    |C:\Program Files\Internet Explorer     |varies         |
+
+\* If the Groove.EXE component is not present in your Office installation, it doesn't need to be installed for ADAL to work. However, if it is present, then the build for Groove.EXE listed here is required.
+
+### MSI-based installations
+
+For MSI-based installations the following software *must* be installed at the file version listed below, or a *later* file version. If your file version is not equal to, or greater than, the file version listed below, update using the link in the *Update KB Article* column.
+
+
+|File name  |Install path on your computer  |Where to get the update  |Version  |
+|---------|---------|---------|---------|
+|MSO.DLL|C:\Program Files\Common Files\Microsoft Shared\OFFICE15\MSO.DLL     |[KB3085480](https://support.microsoft.com/en-us/topic/description-of-the-security-update-for-office-2013-september-10-2019-0d171ba2-2eba-a2ca-a54d-c0f568de6bcc)        |15.0.4753.1001       |
+|CSI.DLL|C:\Program Files\Common Files\Microsoft Shared\OFFICE15\Csi.dll     |[KB3172545](https://support.microsoft.com/en-us/topic/july-11-2017-update-for-office-2013-kb3172545-d6b47054-04d5-5154-40ba-3436d1e0efdb)        |15.0.4753.1000         |
+|Groove.exe*|C:\Program Files\Microsoft Office\Office15\GROOVE.EXE            |[KB4022226](https://support.microsoft.com/en-us/topic/august-7-2018-update-for-onedrive-for-business-for-office-2013-kb4022226-6163bb26-cbde-eb16-ac42-abfda7afbf68)        |15.0.4763.1000         |
+|Outlook.exe|C:\Program Files\Microsoft Office\Office15\OUTLOOK.EXE          |[KB4484096](https://support.microsoft.com/en-us/topic/october-1-2019-update-for-outlook-2013-kb4484096-6513145a-cc75-1cd1-72b7-78cb62d8476b)        |15.0.4753.1002         |
+|ADAL.DLL|C:\Program Files\Common Files\Microsoft Shared\OFFICE15\ADAL.DLL   |[KB3085565](https://support.microsoft.com/en-us/topic/july-5-2016-update-for-office-2013-kb3085565-1d1a6d24-fbd4-1bae-242f-a35e0e2aba40)        |1.0.2016.624         |
+|Iexplore.exe|C:\Program Files\Internet Explorer                             |[MS14-052](https://support.microsoft.com/en-us/topic/ms14-052-cumulative-security-update-for-internet-explorer-september-9-2014-17d29b71-9e78-0bc1-8961-7b812d04e4e1)         |Not applicable         |
+
+\* If the Groove.EXE component is not present in your Office installation, it doesn't need to be installed for ADAL to work. However, if it is present, then the build for Groove.EXE listed here is required.
 
 Office 2016 and Office 2019 clients support modern authentication by default, and no action is needed for the client to use these new flows. However, explicit action is needed to use legacy authentication.
 

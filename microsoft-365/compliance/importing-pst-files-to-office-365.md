@@ -36,6 +36,8 @@ You can use the Import service in the <a href="https://go.microsoft.com/fwlink/p
 
 - **Drive shipping** ![Hard disk.](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - Copy the PST files to a BitLocker-encrypted hard drive and then physically ship the drive to Microsoft. When Microsoft receives the hard drive, data center personnel upload the data to a temporary Azure Storage location in the Microsoft cloud. Then you use the Microsoft 365 Import service to import the data to mailboxes in your organization.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step-by-step instructions
 
 See one of the following topics for detailed, step-by-step instructions for bulk-importing your organization's PST files to Microsoft 365.

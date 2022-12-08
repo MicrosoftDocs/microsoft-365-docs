@@ -9,7 +9,8 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - m365-security
+- m365-security
+- tier1
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH

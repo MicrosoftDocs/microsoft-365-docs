@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -25,6 +25,8 @@ description: "All medical terms and conditions sensitive information type entity
 # All medical terms and conditions
 
 All medical terms and conditions is a bundled named entity that detects medical terms and medical conditions. It detects English terms only. Use this SIT to detect all possible matches of medical terms and conditions.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

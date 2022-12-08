@@ -23,6 +23,8 @@ description: "Use these procedures to take advantage of named entities in your d
 
 Read through [Learn about named entities](named-entities-learn.md) before you start to use them.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 ### SKU/subscriptions licensing
@@ -31,7 +33,7 @@ For full licensing details see, [the service description](/office365/servicedesc
 
 ### Permissions
 
-The account you use to create and edit data loss prevention (DLP) policies, must have the **DLP Compliance Management** role permissions. For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+The account you use to create and edit data loss prevention (DLP) policies, must have the **DLP Compliance Management** role permissions. For more information, see [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group).
 
 
 ## Supported locations

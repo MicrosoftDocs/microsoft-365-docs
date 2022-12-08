@@ -9,7 +9,8 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:

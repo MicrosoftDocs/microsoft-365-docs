@@ -35,6 +35,8 @@ Why clone Content Searches?
 
 - To decrease the size of the search results. For example, if you have a search that returns too many results to export, you can clone the search and then add a search condition based on a date range to reduce the number of search results.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Script information
 
 - You need to install the Exchange Online PowerShell module. For instructions, see [Install and maintain the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-module).

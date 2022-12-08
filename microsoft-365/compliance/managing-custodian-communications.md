@@ -24,6 +24,8 @@ search.appverid:
 
 Microsoft Purview eDiscovery (Premium) allows legal departments to simplify their processes around tracking and distributing legal hold notifications. The custodian communications tool enables legal departments to manage and automate the entire legal hold process, from initial notifications, to reminders, and to escalations, all in one location.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What is a legal hold notification?
 
 A legal hold (also known as a *litigation hold*) notice is a notification sent from an organization’s legal department to employees, contingent staff, or custodians of data that may be relevant to a legal investigation. These notifications instruct custodians to preserve electronically stored information and any content that may be relevant to an active or impending legal matter. Legal teams must know that each custodian has received, read, understood, and has agreed to comply with the given instructions.

@@ -13,12 +13,15 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - purview-compliance
+- tier1
 
 ---
 
 # Double Key Encryption frequently asked questions
 
 Have a question about how Double Key Encryption works? Check for an answer here.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What is Double Key Encryption (DKE)?
 

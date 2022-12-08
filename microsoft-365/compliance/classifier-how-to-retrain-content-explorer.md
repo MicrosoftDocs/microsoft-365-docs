@@ -36,6 +36,8 @@ Watch this video for a quick summary of the tuning and retraining process. You'l
 > [!NOTE]
 > Pre-trained classifiers cannot be retrained.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Permissions
 
 To access classifiers in the Microsoft Purview compliance portal:

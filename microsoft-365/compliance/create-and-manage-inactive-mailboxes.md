@@ -31,6 +31,8 @@ Inactive mailboxes let you retain former employees' email after they leave your 
 
 For more information about inactive mailboxes, see [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create an inactive mailbox
 
 Making a mailbox inactive requires a hold on the mailbox, and then deleting the mailbox or corresponding user account.

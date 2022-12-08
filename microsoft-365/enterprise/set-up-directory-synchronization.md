@@ -12,6 +12,7 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:

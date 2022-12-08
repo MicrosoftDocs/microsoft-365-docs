@@ -35,6 +35,8 @@ Review sets are a static set of documents where you can analyze, query, view, ta
 
 - [Export case data](exporting-data-ediscover20.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create a review set
 
 Review sets can be created on the **Review sets** tab by clicking **+ Add review set**.

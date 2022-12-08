@@ -9,7 +9,8 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.collection: 
+ms.collection:
+- scotvorg 
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:

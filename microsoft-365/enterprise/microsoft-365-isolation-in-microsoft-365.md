@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content

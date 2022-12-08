@@ -42,6 +42,8 @@ DLP makes special use of named entities in *enhanced policy templates*, which ar
 
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Examples of named entity SITs
 
 Named entity SITs come in two flavors, *bundled* and *unbundled*

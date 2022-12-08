@@ -5,12 +5,13 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/03/2022
+ms.date: 
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
@@ -32,7 +33,6 @@ In the planning phase of your networking implementation:
 - [Understand how Microsoft 365 networking works](microsoft-365-networking-overview.md)
 - [Learn about network connectivity principles](microsoft-365-network-connectivity-principles.md)
 - [Assess your current network connectivity](assessing-network-connectivity.md)
-- [Determine if ExpressRoute is right for your organization](network-planning-with-expressroute.md)
 - [Plan for your network devices](plan-for-network-devices.md)
 - [Get your network set up for migration](network-and-migration-planning.md)
 

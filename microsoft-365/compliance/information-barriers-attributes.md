@@ -27,6 +27,8 @@ This article describes how to use attributes with information barriers, and it p
 - [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
 - [Edit (or remove) IB policies](information-barriers-edit-segments-policies.md)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## How to use attributes in IB policies
 
 The attributes listed in this article can be used to define or edit segments of users. Your defined segments serve as parameters (called *UserGroupFilter* values) in [IB policies](information-barriers-policies.md).

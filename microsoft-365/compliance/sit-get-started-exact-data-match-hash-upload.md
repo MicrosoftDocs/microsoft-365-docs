@@ -24,6 +24,8 @@ ms.custom: seo-marvel-apr2020
 
 This article shows you how to hash and upload your sensitive information source table.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Applies to
 
 - [Create exact data match sensitive information type new experience](sit-create-edm-sit-unified-ux-workflow.md)

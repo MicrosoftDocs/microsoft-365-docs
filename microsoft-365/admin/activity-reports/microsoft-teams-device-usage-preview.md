@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 admin center Teams app usage reports"
+title: "Microsoft 365 admin center Teams device usage reports"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
@@ -7,32 +7,33 @@ author: camillepack
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
-description: "Gain insights into the Microsoft Teams apps used in your organization by getting the Microsoft Teams app usage report from Microsoft 365 Reports."
+description: "Gain insights into the devices on which Microsoft Teams apps are being used in your organization by getting the Microsoft Teams device usage report from Microsoft 365 Reports."
 ---
 
 # Microsoft 365 Reports in the admin center - Microsoft Teams device usage
 
-The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft Teams app usage report, you can gain insights into the Microsoft Teams apps that are used in your organization.
+The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft Teams device usage report, you can gain insights into the types of devices on which the Microsoft Teams apps is being used in your organization.
   
-## How to get to the Microsoft Teams app usage report
+## How to get to the Microsoft Teams device usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
 2. From the dashboard homepage, click on the **View more** button on the Microsoft Teams activity card.
   
-## Interpret the Microsoft Teams app usage report
+## Interpret the Microsoft Teams device usage report
 
 You can view the device use in the Teams report by choosing the **Device usage** tab.<br/>![Microsoft 365 reports - Microsoft Teams device usage.](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
 

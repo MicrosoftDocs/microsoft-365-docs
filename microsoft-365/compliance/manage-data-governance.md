@@ -38,6 +38,8 @@ The following sections detail the main capabilities for each solution, with link
 
 Looking for complementary capabilities to protect your data? See [Protect your data with Microsoft Purview](information-protection.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Microsoft Purview Data Lifecycle Management
 
 To keep what you need and delete what you don't:

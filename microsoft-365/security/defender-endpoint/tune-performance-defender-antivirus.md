@@ -8,15 +8,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
-ms.author: v-jweston
+author: dansimp
+ms.author: dansimp
 ms.date: 08/13/2022
 manager: dansimp
-ms.collection: m365-security
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
+
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Performance analyzer for Microsoft Defender Antivirus
 
@@ -92,7 +96,7 @@ Based on the query, the user will be able to view data for scan counts, duration
 The results of the performance analyzer can also be exported and converted to a CSV or JSON file.
 For examples that describe the process of "export" and "convert" through sample codes, see below.
 
-Starting   with Defender version 4.18.2206.X, users will be able to view scan skip reason information under “SkipReason” column. The possible values are:
+Starting   with Defender version 4.18.2206.X, users will be able to view scan skip reason information under "SkipReason" column. The possible values are:
 
 1. Not Skipped
 1. Optimization  (typically due to performance reasons)

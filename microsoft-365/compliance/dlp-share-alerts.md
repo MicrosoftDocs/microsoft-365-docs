@@ -30,6 +30,8 @@ Users with the [appropriate permissions](dlp-configure-view-alerts-policies.md#r
 
 You can share an alert with users that you give limited permissions to using the procedures in this article.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you begin
 
 If you aren't familiar with DLP Alerts, see [Configure and view alerts for data loss prevention policies](/microsoft-365/compliance/dlp-configure-view-alerts-policies).

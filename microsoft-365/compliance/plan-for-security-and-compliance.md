@@ -25,6 +25,8 @@ ms.custom: seo-marvel-apr2020
 
 Managing security and compliance is a partnership. You're responsible for protecting your data, identities, and devices, while Microsoft vigorously protects Microsoft 365 services. You can use Microsoft 365 and Enterprise Mobility + Security (EMS) together to help you achieve the appropriate level of protection for your organization.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Step 1: Review capabilities
 
 Orient yourself to the information protection capabilities in the Information Protection for Office 365 poster. 
@@ -55,22 +57,22 @@ Review and plan for file protection capabilities organized by three levels of pr
   
 ## Step 5: Use the Compliance portal
 
-The Compliance portal gives you a single view into the controls you'll use to manage the spectrum of Microsoft 365 security, including threat management, data governance, and search and investigation. 
+The Compliance portal gives you a single view into the controls you'll use to manage the spectrum of Microsoft 365 security, including threat management, data governance, and search and investigation.
   
 - [Go to the Compliance portal](./microsoft-365-compliance-center.md)
-    
+
 - [Permissions in the Compliance portal](~/security/office-365-security/protect-against-threats.md)
-    
-- [Give users access to the Compliance portal](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
-    
+
+- [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group)
+
 ## Step 6: Use end-to-end security scenarios as starting points
 
 Use these recommended configurations as a starting point for enterprise scale or sophisticated access security scenarios.
   
 - [Secure email policies and configurations](../security/office-365-security/secure-email-recommended-policies.md)
-    
+
 - [Contoso in the Microsoft Cloud](../enterprise/contoso-case-study.md)
-    
+
 ## Microsoft 365 admin centers and dashboards
 
 Configure your security and compliance settings in these admin centers and dashboards to protect your Microsoft 365 environment

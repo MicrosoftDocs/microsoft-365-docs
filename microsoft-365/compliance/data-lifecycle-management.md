@@ -26,6 +26,8 @@ Microsoft Purview Data Lifecycle Management (formerly Microsoft Information Gove
 
 Retaining and deleting content is often needed for compliance and regulatory requirement, but deleting content that no longer has business value also helps you manage risk and liability. For example, it reduces your attack surface.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Microsoft 365 features
 
 **Retention policies** are the cornerstone for data lifecycle management. Use these policies for Microsoft 365 workloads that include Exchange, SharePoint, OneDrive, Teams, and Yammer. Configure whether content for these services needs to be retained indefinitely, or for a specific period if users edit or delete it. Or you can configure the policy to automatically permanently delete the content after a specified period if it's not already deleted. You can also combine these two actions for retain and then delete, which is a very typical configuration. For example, retain email for three years and then delete it.

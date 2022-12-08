@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -16,8 +16,9 @@ ms.collection:
   - m365solution-endpointprotect
   - m365solution-scenario
   - highpri
+  - tier1
 ms.custom: admindeeplinkDEFENDER
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
