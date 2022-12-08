@@ -430,7 +430,7 @@ On the **Submissions** page, the **[Export](#export-report)** button is availabl
 
 The **Threat protection status** report is available in both EOP and Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 
-The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and Defender for Office 365 features like [Safe Links](safe-links.md), [Safe Attachments](safe-attachments-about.md), and [impersonation protection features in anti-phishing policies](anti-phishing-policies-about.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). You can use this information to identify trends or determine whether organization policies need adjustment.
+The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and Defender for Office 365 features like [Safe Links](safe-links-about.md), [Safe Attachments](safe-attachments-about.md), and [impersonation protection features in anti-phishing policies](anti-phishing-policies-about.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). You can use this information to identify trends or determine whether organization policies need adjustment.
 
 **Note**: It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
 
@@ -504,8 +504,8 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 - **Spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).
 - **Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.
 - **Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.
-- **URL detonation**<sup>\*</sup>: [Safe Links](safe-links.md) detected a malicious URL in the message during detonation analysis.
-- **URL detonation reputation**<sup>\*</sup>: URLs previously detected by [Safe Links](safe-links.md) detonations in other Microsoft 365 organizations.
+- **URL detonation**<sup>\*</sup>: [Safe Links](safe-links-about.md) detected a malicious URL in the message during detonation analysis.
+- **URL detonation reputation**<sup>\*</sup>: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.
 - **URL malicious reputation**: The message contains a URL that was previously identified as malicious in other Microsoft 365 organizations.
 
 <sup>\*</sup> Defender for Office 365 only
@@ -611,8 +611,8 @@ In the **View data by Email \> Malware** and **Chart breakdown by Detection Tech
 - **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
 - **Anti-malware engine**<sup>\*</sup>: Detection from anti-malware engines.
 - **Anti-malware policy file type block**: The message was blocked due to the file type of the attachment ([common attachment filtering in anti-malware policies](anti-malware-protection.md)).
-- **URL detonation**<sup>\*</sup>: [Safe Links](safe-links.md) detected a malicious URL in the message during detonation analysis.
-- **URL detonation reputation**<sup>\*</sup>>: URLs previously detected by [Safe Links](safe-links.md) detonations in other Microsoft 365 organizations.
+- **URL detonation**<sup>\*</sup>: [Safe Links](safe-links-about.md) detected a malicious URL in the message during detonation analysis.
+- **URL detonation reputation**<sup>\*</sup>>: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.
 - **Campaign**<sup>\*</sup>: Messages identified as part of a [campaign](campaigns.md).
 
 <sup>\*</sup> Defender for Office 365 only

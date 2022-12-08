@@ -45,7 +45,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Built-in protection offers a base level of unobtrusive protection, and includes malware, zero day (Safe Attachments), and URL protection (Safe Links) in email (including internal email), SharePoint Online, OneDrive, and Teams. Note that URL protection provided in this state is via API call only. It doesn't wrap or rewrite URLs but does require a supported Outlook client. You can create your own custom policies to expand your protection.
 
-**Read more & watch an overview video of Safe Links here :** [Complete Safe Links overview](../safe-links.md)
+**Read more & watch an overview video of Safe Links here :** [Complete Safe Links overview](../safe-links-about.md)
 
 **Read more about Safe Attachments here :**  [Safe Attachments](../safe-attachments-about.md) 
 

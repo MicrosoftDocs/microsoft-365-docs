@@ -136,7 +136,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
 - [Advanced Delivery](skip-filtering-phising-simulations-sec-ops-mailboxes.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
-- [Safe Links for Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- [Safe Links for Microsoft Teams](safe-links-about.md#safe-links-settings-for-microsoft-teams)
 - New alert policies for the following scenarios: compromised mailboxes, Forms phishing, malicious mails delivered due to overrides and rounding out ZAP
   - Suspicious email forwarding activity
   - User restricted from sharing forms and collecting responses
