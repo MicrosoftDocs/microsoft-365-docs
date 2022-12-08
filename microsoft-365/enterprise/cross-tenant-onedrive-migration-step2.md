@@ -1,5 +1,5 @@
 ---
-title: OneDrive Cross-Tenant User Data Migration Step 2
+title: OneDrive Cross-tenant OneDrive migration Step 2
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars

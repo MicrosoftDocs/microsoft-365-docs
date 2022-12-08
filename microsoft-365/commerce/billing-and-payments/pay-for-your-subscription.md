@@ -1,5 +1,5 @@
 ---
-title: "Paying for your subscription"
+title: "Payment options for your Microsoft business subscription"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
@@ -18,7 +18,6 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150 
-description: "Use a credit or debit card or bank account to pay for your Microsoft 365 for business subscription."
 ms.custom: 
 - commerce_billing
 - VSBFY23
@@ -27,15 +26,16 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 09/28/2022
+description: "Learn what payment options are available to pay for your Microsoft business subscription."
+ms.date: 11/21/2022
 ---
 
-# How to pay for your subscription
+# Payment options for your Microsoft business subscription
 
 > [!IMPORTANT]
 > As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you're an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account that is in good standing. However, you can't add new subscriptions to the bank account.
 
-You can use a credit or debit card, or bank account to pay for your subscription. In some cases, you can pay by invoice, using check or electronic funds transfer (EFT). If you have a billing profile, your options are slightly different. For more information, see [How to pay for your subscription with a billing profile](pay-for-subscription-billing-profile.md). If you're not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md).
+You can use a credit or debit card, or bank account to pay for your Microsoft business subscription. In some cases, you can pay by invoice, using check or electronic funds transfer (EFT). If you have a billing profile, your options are slightly different. For more information, see [How to pay for your subscription with a billing profile](pay-for-subscription-billing-profile.md). If you're not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md).
 
 **Just want to find out where to send your invoice payment?** If you pay your invoice by check or electronic funds transfer (EFT), see [Where do I send my check or EFT payment?](#where-do-i-send-my-check-or-eft-payment)
 
@@ -68,15 +68,13 @@ The Microsoft 365 admin center supports two alternate payment options for custom
 - NetBanking (Internet Banking) provides customers with access to banking services on an online platform.
 
 > [!IMPORTANT]
-> UPI and NetBanking are only supported for one-time transactions.
+> UPI and NetBanking are only supported for one-time transactions for existing customers only.
 
 #### How do I make a payment with UPI or NetBanking?
 
-1. If you're a returning customer, when you make a payment, select **UPI / NetBanking** from the **Payment method** drop-down list, then select M**ake payment**. Continue to step 4.
-2. For new customers, when you make your first payment, select **Add payment method**.
-3. Select **UPI / NetBanking**, then select **Make payment**.
-4. You're redirected to the payment partner, BillDesk, where you choose UPI or NetBanking for your payment method.
-5. Follow the instructions in BillDesk to complete the transaction.
+1. If you're a returning customer, when you make a payment, select **UPI / NetBanking** from the **Payment method** drop-down list, then select **Make payment**.
+2. You're redirected to the payment partner, BillDesk, where you choose UPI or NetBanking for your payment method.
+3. Follow the instructions in BillDesk to complete the transaction.
 
 After you submit the payment, allow time for the payment to appear in the admin center.
 

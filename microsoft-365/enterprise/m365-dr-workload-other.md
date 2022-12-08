@@ -27,7 +27,7 @@ Use the following guidance to determine where your data is located. Please refer
 Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
 
 ### Forms
-Tenants in EU member Countries maintain data in _Macro Region Geography 1 – EMEA_. All other tenants have customer data stored in the United States.
+Tenants in EU member Countries maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
 
 ### Intune
 Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune.
@@ -64,7 +64,7 @@ Customer data is processed and stored in the employee's Exchange Online mailbox.
 Please see the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section.
 
 ### Whiteboard
-Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/whiteboard/manage-data-organizations).
+Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/microsoft-365/whiteboard/manage-data-organizations).
 
 ### Yammer
 Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-security-and-compliance/data-residency).
@@ -78,7 +78,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 1. Canada
 1. Japan
 
-| Country Code | Country Name | Viva Insights Advanced | Viva Learning | Planner |
+| Country Code | Countries/Regions | Viva Insights Advanced | Viva Learning | Planner |
 | --- | --- | --- | --- | --- |
 | AF | Afghanistan | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | AX | Aland Islands | APC<sup>2</sup>| AMER<sup>3</sup>| EUR<sup>1</sup>|
@@ -296,7 +296,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | SZ | Swaziland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | SE | Sweden | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | CH | Switzerland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| TW | Taiwan, Republic of China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| TW | Taiwan | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | TJ | Tajikistan | EUR<sup>1</sup>| APC<sup>2</sup>| EUR<sup>1</sup>|
 | TH | Thailand | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | TL | Timor-Leste | APC<sup>2</sup>| EUR<sup>1</sup>| APC<sup>2</sup>|
