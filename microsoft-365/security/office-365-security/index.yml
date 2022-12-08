@@ -59,9 +59,9 @@ landingContent:
           - text: Set up SPF to help prevent spoofing
             url: email-authentication-spf-configure.md
           - text: Use DKIM to validate outbound email sent from your custom domain
-            url: use-dkim-to-validate-outbound-email.md
+            url: email-authentication-dkim-configure.md
           - text: Use DMARC to validate email
-            url: use-dmarc-to-validate-email.md
+            url: email-authentication-dmarc-configure.md
    # Card
   - title: Set up Exchange Online Protection
     linkLists:

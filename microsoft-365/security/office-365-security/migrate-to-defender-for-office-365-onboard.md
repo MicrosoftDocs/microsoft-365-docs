@@ -49,7 +49,7 @@ Welcome to **Phase 3: Onboard** of your **[migration to Microsoft Defender for O
 If your organization has a security response team, now is the time to begin integrating Microsoft Defender for Office 365 into your response processes, including ticketing systems. This is an entire topic unto itself, but it's sometimes overlooked. Getting the security response team involved early will ensure that your organization is ready to deal with threats when you switch your MX records. Incident response needs to be well equipped to handle the following tasks:
 
 - Learn the new tools and integrate them into existing flows. For example:
-  - Admin management of quarantined messages is important. For instructions, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+  - Admin management of quarantined messages is important. For instructions, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md).
   - Message trace allows you to see what happened to messages as they enter or leave Microsoft 365. For more information, see [Message trace in the modern Exchange admin center in Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 - Identify risks that may have been let into the organization.
 - Tune and customize [alerts](../../compliance/alert-policies.md) for organizational processes.
@@ -153,7 +153,7 @@ As your pilot users report false positives and false negatives, the messages wil
 
 Use the following features to monitor and iterate on the protection settings in Defender for Office 365:
 
-- [Quarantine](manage-quarantined-messages-and-files.md)
+- [Quarantine](quarantine-admin-manage-messages-files.md)
 - [Threat Explorer](email-security-in-microsoft-defender.md)
 - [Email security reports](view-email-security-reports.md)
 - [Defender for Office 365 reports](reports-defender-for-office-365.md)
