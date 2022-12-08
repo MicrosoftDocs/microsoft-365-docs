@@ -56,4 +56,4 @@ Attack simulation training allows you to run realistic but benign cyber attack s
 
 ### Further reading
 
-To learn how Attack Simulation works see [Simulate a phishing attack with Attack simulation training - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training.md)
+To learn how Attack Simulation works see [Simulate a phishing attack with Attack simulation training - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulations.md)

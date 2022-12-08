@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: sunasing
 author: sunasing
 ms.localizationpriority: medium
+ms.date: 12/07/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -69,21 +70,21 @@ The following table summarizes how to deploy Microsoft Defender for Endpoint on 
 
 |Enrollment type     |Details      |
 |--------------------|-------------|
-|Android Enterprise with Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Deploy on Android Enterprise enrolled devices](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|Device Administrator with Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Deploy on Device Administrator enrolled devices](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
-|Unmanaged BYOD OR devices managed by other Unified Endpoint Managers / Set up app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](android-configure-mam.md)|
+|Android Enterprise with Intune |[Deploy on Android Enterprise enrolled devices](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
+|Device Administrator with Intune |[Deploy on Device Administrator enrolled devices](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|Unmanaged BYOD OR devices managed by other enterprise mobility management / Set up app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](android-configure-mam.md)|
 
 **iOS**
 
 |Enrollment type     |Details      |
 |--------------------|-------------|
-|Supervised devices with Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|1. [Deploy as iOS store app](ios-install.md)<br/>2. [Setup Web Protection without VPN for supervised iOS devices](ios-install.md#complete-deployment-for-supervised-devices)|
-|Unsupervised (BYOD) devices enrolled with Intune UEM (Microsoft Endpoint Manager)|[Deploy as iOS store app](ios-install.md)|
-|Unmanaged BYOD OR devices managed by other UEMs / Set up app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](ios-install-unmanaged.md)|
+|Supervised devices with Intune |1. [Deploy as iOS store app](ios-install.md)<br/>2. [Setup Web Protection without VPN for supervised iOS devices](ios-install.md#complete-deployment-for-supervised-devices)|
+|Unsupervised (BYOD) devices enrolled with Intune |[Deploy as iOS store app](ios-install.md)|
+|Unmanaged BYOD OR devices managed by other enterprise mobility management / Set up app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](ios-install-unmanaged.md)|
 
 ### End-user onboarding
 
-- [Configure Zero-touch onboard for iOS enrolled devices](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint): Admins can configure zero-touch install to silently onboard Microsoft Defender for Endpoint on enrolled iOS devices without requiring the user to open the app. 
+- [Configure Zero-touch onboard for iOS enrolled devices](ios-install.md#zero-touch-silent-onboarding-of-microsoft-defender-for-endpoint): Admins can configure zero-touch install to silently onboard Microsoft Defender for Endpoint on enrolled iOS devices without requiring the user to open the app. 
 
 - [Configure Conditional Access to enforce user onboarding](android-configure.md#conditional-access-with-defender-for-endpoint-on-android): This can be applied to ensure end-users onboard to the Microsoft Defender for Endpoint app after deploying. Watch this video for a quick demo on configuring conditional access with Defender for Endpoint risk signals. 
 
@@ -93,7 +94,7 @@ The following table summarizes how to deploy Microsoft Defender for Endpoint on 
 
 ### Simplify Onboarding
 
-- [iOS - Zero-Touch Onboard](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint)
+- [iOS - Zero-Touch Onboard](ios-install.md#zero-touch-silent-onboarding-of-microsoft-defender-for-endpoint)
 - [Android Enterprise - Setup Always-on VPN](android-intune.md#auto-setup-of-always-on-vpn).
 - [iOS - Auto-setup of VPN profile](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
 
