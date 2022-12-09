@@ -110,12 +110,12 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 1. Add 'DefenderNetworkProtectionEnable' as the configuration key, value type as “String” and value as 'true' to enable Network Protection. (Network protection is disabled by default)
        :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Add mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
 1. For other configurations related to Network protection, add the following keys, choose the corresponding value type and value.
-    |Key| Value Type |Default (true-enable, false-disable)|Description|
-    |---|-- |---|---|
-    |`DefenderOpenNetworkDetection`| Integer |0|1- Enable, 0 - Disable; This setting is managed by IT Admin to enable or disable open network detection informational alerts with no end user detection experience|
-    |`DefenderEndUserTrustFlowEnable`| String |false | true-Enable, false- disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks.|
-    |`DefenderNetworkProtectionAutoRemediation`| String |true |true-Enable, false- disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender|
-    |`DefenderNetworkProtectionPrivacy`| String |true |true-Enable, false- disable; This setting is managed by IT admin to enable or disable privacy in network protection|
+   |Key| Value Type |Default (true-enable, false-disable)|Description|
+   |---|-- |---|---|
+   |`DefenderOpenNetworkDetection`| Integer |0|1- Enable, 0 - Disable; This setting is managed by IT Admin to enable or disable open network detection informational alerts with no end user detection experience|
+   |`DefenderEndUserTrustFlowEnable`| String |false | true-Enable, false- disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks.|
+   |`DefenderNetworkProtectionAutoRemediation`| String |true |true-Enable, false- disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender|
+   |`DefenderNetworkProtectionPrivacy`| String |true |true-Enable, false- disable; This setting is managed by IT admin to enable or disable privacy in network protection|
 
 1. In the Assignments section, admin can choose groups of users to include and exclude from the policy.
 1. Review and create the configuration policy.
