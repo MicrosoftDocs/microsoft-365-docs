@@ -23,7 +23,7 @@ ms.service: microsoft-365-security
 # Submit malware, non-malware, and other suspicious files to Microsoft for analysis
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -46,7 +46,7 @@ But what can you do if you receive a message with a suspicious attachment or hav
 
 - Messages with attachments that contain scripts or other malicious executables are considered malware, and you can use the procedures in this article to report them.
 
-- Messages with links to malicious sites are considered spam. For more information about reporting spam and non-spam, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- Messages with links to malicious sites are considered spam. For more information about reporting spam and non-spam, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 - Files that block you from your accessing your system and demand money to open them are considered ransomware. 
 

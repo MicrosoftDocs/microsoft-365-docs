@@ -140,10 +140,10 @@ This table is a quick reference of Threat management where change has occurred b
 
 No changes to these areas:
 
-- [Explorer](../office-365-security/threat-explorer.md)
+- [Explorer](../office-365-security/threat-explorer-about.md)
 - [Policies & Rules](../../compliance/alert-policies.md)
 - [Campaign](../office-365-security/campaigns.md)
-- [Submissions](../office-365-security/admin-submission.md)
+- [Submissions](../office-365-security/submissions-admin.md)
 - [Review](./m365d-action-center.md)
 - [Threat Tracker](../office-365-security/threat-trackers.md)
 

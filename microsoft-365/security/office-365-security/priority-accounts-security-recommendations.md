@@ -95,9 +95,9 @@ After you secure and tag your priority users, you can use the available reports,
 |Feature|Description|
 |---|---|
 |Alerts|The user tags of affected users are visible and available as filters on the **Alerts** page in the Microsoft 365 Defender portal. For more information, see [Viewing alerts](../../compliance/alert-policies.md#view-alerts).|
-|Explorer <p> Real-time detections|In **Explorer** (Defender for Office 365 Plan 2) or **Real-time detections** (Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Explorer](threat-explorer.md#tags-in-threat-explorer).|
+|Explorer <p> Real-time detections|In **Explorer** (Defender for Office 365 Plan 2) or **Real-time detections** (Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Explorer](threat-explorer-about.md#tags-in-threat-explorer).|
 |Campaign Views|User tags are one of many filterable properties in Campaign Views in Microsoft Defender for Office 365 Plan 2. For more information, see [Campaign Views](campaigns.md).|
-|Threat protection status report|In virtually all of the views and detail tables in the **Threat protection status report**, you can filter the results by **priority accounts**. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).|
+|Threat protection status report|In virtually all of the views and detail tables in the **Threat protection status report**, you can filter the results by **priority accounts**. For more information, see [Threat protection status report](reports-email-security.md#threat-protection-status-report).|
 |Email issues for priority accounts report|The **Email issues for priority accounts** report in the Exchange admin center (EAC) contains information about undelivered and delayed messages for **priority accounts**. For more information, see [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report).|
 
 ## Train users

@@ -49,7 +49,7 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 
 > [!NOTE]
 >
-> Email security reports that don't require Defender for Office 365 are described in [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).
+> Email security reports that don't require Defender for Office 365 are described in [View email security reports in the Microsoft 365 Defender portal](reports-email-security.md).
 >
 > Reports that are related to mail flow are now in the Exchange admin center (EAC). For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
@@ -110,19 +110,19 @@ In the details table below the chart, the following information is available:
 - **90th percentile**
 - **99th percentile**
 
-On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** button is available.
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](reports-email-security.md#export-report)** button is available.
 
 ## Threat protection status report
 
-The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](eop-about.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 
 ## Top senders and recipients report
 
-The **Top senders and recipients** report show the top recipients for EOP and Defender for Office 365 protection features. For more information, see [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
+The **Top senders and recipients** report show the top recipients for EOP and Defender for Office 365 protection features. For more information, see [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report).
 
 ## URL protection report
 
-The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy was applied when the **Track user clicks** option is not selected.
+The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links-about.md). This report will not have click data from users where the Safe Links policy was applied when the **Track user clicks** option is not selected.
 
 To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **URL protection page** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
@@ -174,7 +174,7 @@ The details table below the chart provides the following near-real-time view of 
 - **Action**
 - **App**
 
-On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](view-email-security-reports.md#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](view-email-security-reports.md#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** buttons are available.
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](reports-email-security.md#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](reports-email-security.md#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](reports-email-security.md#export-report)** buttons are available.
 
 ### View data by URL click by application
 
@@ -203,7 +203,7 @@ The details table below the chart provides the following near-real-time view of 
 - **Action**
 - **App**
 
-On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](view-email-security-reports.md#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](view-email-security-reports.md#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** buttons are available.
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](reports-email-security.md#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](reports-email-security.md#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](reports-email-security.md#export-report)** buttons are available.
 
 ## Additional reports to view
 
@@ -211,8 +211,8 @@ In addition to the reports described in this article, several other reports are 
 
 |Report|Topic|
 |---|---|
-|**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer.md)|
-|Email security reports that don't require Defender for Office 365|[View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md)|
+|**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer-about.md)|
+|Email security reports that don't require Defender for Office 365|[View email security reports in the Microsoft 365 Defender portal](reports-email-security.md)|
 |Mail flow reports in the Exchange admin center (EAC)|[Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 
 PowerShell reporting cmdlets:
@@ -236,11 +236,11 @@ In order to view and use the reports described in this article, you need to be a
 - **Security Reader**
 - **Global Reader**
 
-For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](set-up-safe-links-policies.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [anti-spam](anti-spam-protection-about.md) and [anti-malware protection](anti-malware-protection.md).
+If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly. Your organization must have [Safe Links policies](safe-links-policies-configure.md) and [Safe Attachments policies](set-up-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place. Also see [anti-spam](anti-spam-protection-about.md) and [anti-malware protection](anti-malware-protection.md).
 
