@@ -99,7 +99,7 @@ ZAP will not quarantine any message that's in the process of [Dynamic Delivery](
 
 To determine if ZAP moved your message, you have the following options:
 
-- **Number of messages**: Use the [Mailflow view in the Mailflow status report](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) to see the number of ZAP-affected messages for the specified date range.
+- **Number of messages**: Use the [Mailflow view in the Mailflow status report](reports-email-security.md#mailflow-view-for-the-mailflow-status-report) to see the number of ZAP-affected messages for the specified date range.
 - **Message details**: Use [Threat Explorer (and real-time detections)](threat-explorer.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
 
 > [!NOTE]
@@ -109,7 +109,7 @@ To determine if ZAP moved your message, you have the following options:
 
 ### What happens if a legitimate message is moved to the Junk Email folder?
 
-You should follow the normal reporting process for [false positives](report-junk-email-messages-to-microsoft.md). The only reason the message would be moved from the Inbox to the Junk Email folder would be because the service has determined that the message was spam or malicious.
+You should follow the normal reporting process for [false positives](submissions-report-messages-files-to-microsoft.md). The only reason the message would be moved from the Inbox to the Junk Email folder would be because the service has determined that the message was spam or malicious.
 
 ### What if I use the Quarantine folder instead of the Junk Mail folder?
 
