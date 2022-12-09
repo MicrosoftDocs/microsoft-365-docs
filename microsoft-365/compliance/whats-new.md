@@ -38,6 +38,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## December 2022
+
+### Data lifecycle management and records management
+
+- For disposition review, removed the previous maximums of 1,000,000 items and 200 disposition reviewers.
+
 ## November 2022
 
 ### Compliance Manager
