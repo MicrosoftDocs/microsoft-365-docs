@@ -103,7 +103,7 @@ On the **Domains** tab on the **Impersonation insight** page, select one of the 
 - What you need to do.
 - A domain summary that list the impersonated domain.
 - WhoIs data about the sender.
-- A link to open [Threat Explorer](threat-explorer.md) to see additional details about the sender.
+- A link to open [Threat Explorer](threat-explorer-about.md) to see additional details about the sender.
 - Similar messages from the same sender that were delivered to your organization.
 
 ## View information about messages from impersonated senders
@@ -136,5 +136,5 @@ On the **Users** tab on the **Impersonation insight** page, select one of the av
 - What you need to do.
 - A sender summary that list the impersonated sender.
 - WhoIs data about the sender.
-- A link to open [Threat Explorer](threat-explorer.md) to see additional details about the sender.
+- A link to open [Threat Explorer](threat-explorer-about.md) to see additional details about the sender.
 - Similar messages from the same sender that were delivered to your organization.
