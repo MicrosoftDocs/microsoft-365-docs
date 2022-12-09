@@ -78,7 +78,7 @@ search.appverid: met150
 
  > [!NOTE]
 >
-> - Microsoft Defender for Endpoint on iOS is not supported on user-less or shared devices.
+> - Microsoft Defender for Endpoint on iOS isn't supported on user-less or shared devices.
 > - Microsoft Defender for Endpoint on iOS isn't supported currently while using iOS User Enrollment.
 
 ## Installation instructions
