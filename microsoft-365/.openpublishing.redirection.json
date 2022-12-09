@@ -61,8 +61,8 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "security/defender/microsoft-threat-experts.md",
-            "redirect_url": "security/defender-endpoint/endpoint-attack-notifications.md",
+            "source_path": "/microsoft-365/security/defender/microsoft-threat-experts.md",
+            "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
             "redirect_document_id": false
         }
     ]
