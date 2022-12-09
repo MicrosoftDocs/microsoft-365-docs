@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ROBOTS: NO INDEX, NO FOLLOW
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
 ---
 
@@ -72,7 +72,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
-3.	For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyActio as one of the domains.
+3.    For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyActio as one of the domains.
 
    ```Powershell:
       get-mailbox adam@contoso.com | Format-List SharingPolicy
@@ -109,9 +109,9 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Get-OrganizationConfig | Format-List EwsEnabled
    ```
 
-    If the command returns “EwsEnabled: **$true**" then proceed to Step 2.
+    If the command returns "EwsEnabled: **$true**" then proceed to Step 2.
 
-    If the command returns “EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
+    If the command returns "EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
     Otherwise the default values of EwsEnabled is enough to leave "Bookings with me" enabled, no further changes are needed.
 
    ```PowerShell
@@ -171,7 +171,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
 Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status and turn Bookings with me on or off for individual users in your organization.
 
-1. Check the individual’s EWS control access by running the following command:
+1. Check the individual's EWS control access by running the following command:
 
    ```PowerShell
    Get-CASMailbox -Identity adam@contoso.com | Format-List EwsEnabled
@@ -179,7 +179,7 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
 
     **A**. If the command returns "**EwsEnabled: $true**", then proceed to Step 2.
 
-2. Check the individual’s **EwsApplicationAccessPolicy** by running the following command:
+2. Check the individual's **EwsApplicationAccessPolicy** by running the following command:
 
    ```PowerShell
    Get-CASMailbox -Identity adam@contoso.com | Format-List EwsApplicationAccessPolicy,Ews*List
@@ -251,7 +251,7 @@ Private meeting types can also generate single use links. Single use links expir
 
 ### Do people need to have a Microsoft account or Bookings license to schedule time with me?
 
-No. Anyone can schedule time with you using your Bookings with me page, even if they don’t have a Microsoft account. You need a Bookings license to create a Bookings with me page.
+No. Anyone can schedule time with you using your Bookings with me page, even if they don't have a Microsoft account. You need a Bookings license to create a Bookings with me page.
 
 ## Privacy
 

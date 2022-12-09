@@ -44,7 +44,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## October 2022
 
-- **[Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md):**
+- **[Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md):**
   - With **allow expiry management** (currently in private preview), if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
   - Customers in the government cloud environments will now be able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using the admin URL and email attachment submissions. The data submitted through the submissions experience will not leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
 - **Enhancement in URL click alerts:**
@@ -84,9 +84,9 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the Submissions page in Microsoft 365 Defender.
 
-- [View converted admin submission from user reported messages](admin-submission.md#convert-user-reported-messages-in-the-reporting-mailbox-into-admin-submissions): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
+- [View converted admin submission from user reported messages](submissions-admin.md#convert-user-reported-messages-in-the-reporting-mailbox-into-admin-submissions): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
 
-- [View associated alert for user and admin submissions](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions): View the corresponding alert for each user reported phish message and admin email submission.
+- [View associated alert for user and admin submissions](submissions-admin.md#view-associated-alert-for-user-and-admin-email-submissions): View the corresponding alert for each user reported phish message and admin email submission.
 
 - [Configurable impersonation protection custom users and domains and increased scope within Preset policies](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
   - (Choose to) Apply Preset Strict/Standard policies to entire organization and avoid the hassle of selecting specific recipient users, groups, or domains, thereby securing all recipient users of your organization.
@@ -136,7 +136,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
 - [Advanced Delivery](skip-filtering-phising-simulations-sec-ops-mailboxes.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
-- [Safe Links for Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- [Safe Links for Microsoft Teams](safe-links-about.md#safe-links-settings-for-microsoft-teams)
 - New alert policies for the following scenarios: compromised mailboxes, Forms phishing, malicious mails delivered due to overrides and rounding out ZAP
   - Suspicious email forwarding activity
   - User restricted from sharing forms and collecting responses
@@ -150,9 +150,9 @@ For more information on what's new with other Microsoft Defender security produc
 ## June 2021
 
 - New first contact safety tip setting within anti-phishing policies. This safety tip is shown when recipients first receive an email from a sender or don't often receive email from a sender. For more information on this setting and how to configure it, see the following articles:
-  - [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip)
-  - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
-  - [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)
+  - [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip)
+  - [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
+  - [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
 
 ## April/May 2021
 
@@ -162,10 +162,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## February/March 2021
 
-- Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer.md)
-- Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer.md)
-- Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer.md)
-- New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+- Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer-about.md)
+- Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer-about.md)
+- Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer-about.md)
+- New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer-about.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 
 ## Microsoft Defender for Office 365 Plan 1 and Plan 2
 

@@ -45,9 +45,9 @@ The information below will detail how to get the most out of your investment, br
 
 - Built-in protection offers a base level of unobtrusive protection, and includes malware, zero day (Safe Attachments), and URL protection (Safe Links) in email (including internal email), SharePoint Online, OneDrive, and Teams. Note that URL protection provided in this state is via API call only. It doesn't wrap or rewrite URLs but does require a supported Outlook client. You can create your own custom policies to expand your protection.
 
-**Read more & watch an overview video of Safe Links here :** [Complete Safe Links overview](../safe-links.md)
+**Read more & watch an overview video of Safe Links here :** [Complete Safe Links overview](../safe-links-about.md)
 
-**Read more about Safe Attachments here :**  [Safe Attachments](../safe-attachments.md) 
+**Read more about Safe Attachments here :**  [Safe Attachments](../safe-attachments-about.md) 
 
 ### Detection, investigation, response and hunting features
 
@@ -61,7 +61,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Explorer can be used to hunt threats, visualize mail flow patterns, spot trends, and identify the impact of changes you make during tuning Defender for Office 365. You can also quickly delete messages from your organization with a few simple clicks.
 
-**Read more, and get started here:** [Threat Explorer and Real-time detections](../threat-explorer.md)
+**Read more, and get started here:** [Threat Explorer and Real-time detections](../threat-explorer-about.md)
 
 ## Step 2 – Enhance the value further with these simple steps
 
@@ -69,7 +69,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Consider enabling policies beyond the built-in Protection. Enabling time-of-click protection, or impersonation protection, for example, to add extra layers or fill gaps missing from your third party protection. Be aware that if you have a transport rule or connection filter that is overriding verdicts (this also can be known as SCL-1) you'll need to address this before turning on other protection features.
 
-**Read more here:** [Anti-phishing policies](../set-up-anti-phishing-policies.md)
+**Read more here:** [Anti-phishing policies](../anti-phishing-policies-about.md)
 
 - If your current security provider is configured to modify messages *in any way*, it's important to note that authentication signals can impact the ability for Defender for Office to protect you against attacks such as spoofing. If your third party supports Authenticated Received Chain (ARC), then enabling this is a highly recommended step in your journey to advanced dual filtering. Moving any message modification configuration to Defender for Office 365 is also an alternative.
 

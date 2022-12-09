@@ -31,7 +31,7 @@ Microsoft Purview Audit (Standard) in Microsoft 365 lets you search for audit re
 
 This article discusses the following steps necessary to set up Audit (Standard).
 
-![Steps to set up Audit (Standard).](../media/BasicAuditingWorkflow.png)
+![Steps to set up Audit (Standard).](../media/audit-standard-workflow.png)
 
 These steps include ensuring the proper organizational subscriptions and user licensing required to generate and preserve audit records and assigning permissions to team members of your security operations, IT, compliance, and legal teams so that can search the audit log.
 
@@ -45,7 +45,7 @@ Licensing for Audit (Standard) requires the appropriate organization subscriptio
 
 When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. In Audit (Standard), audit records are retained and searchable in the audit log for 90 days.
 
-For a list of subscription and licensing requirements for Audit (Standard), see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements).
+For a list of subscription and licensing requirements for Audit (Standard), see [Microsoft Purview auditing solutions](audit-solutions-overview.md#licensing-requirements).
 
 ## Step 2: Assign permissions to search the audit log
 
