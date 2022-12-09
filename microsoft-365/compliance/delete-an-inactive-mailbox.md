@@ -74,7 +74,7 @@ Use the instructions that map to the type of hold:
 - [Remove a Litigation hold](#remove-a-litigation-hold)
 - [Remove an In-Place Hold](#remove-an-in-place-hold)
 
-> [!TIP]
+> [!NOTE]
 > The instructions require you to specify an identity for the inactive mailbox. The best way to do this is by using its Distinguished Name or Exchange GUID value. Using one of these values helps prevent accidentally specifying the wrong mailbox.
 
 ### Remove an inactive mailbox from a retention policy
