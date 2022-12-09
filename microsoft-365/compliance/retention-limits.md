@@ -122,3 +122,5 @@ For the [disposition of content](disposition.md), there are some limits to be aw
 - Maximum number of disposition reviewers:
     - 10 reviewers per disposition stage in any combination of individual users and mail-enabled security groups
     - 200 reviewers per tenant in any combination of individual users and mail-enabled security groups. Because of this limit, we recommend using mail-enabled security groups whenever possible for larger organizations.
+
+- Proof of disposition for up to 7 years after the item was disposed.
