@@ -100,15 +100,13 @@ Use the following PowerShell cmdlets to retrieve a policy GUID and identify the 
 
 ##### Static scope: How to remove an inactive mailbox from a retention policy that's configured for the entire location
 
-Run the following PowerShell command:
+Run the following PowerShell command for a specific retention policy:
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention policy GUID without prefix or suffix>
 ```
 
-For more information identifying organization-wide retention policies applied to an inactive mailbox and obtaining the GUID for a retention policy, see the "Get-OrganizationConfig" section in [How to identify the type of hold placed on a mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#get-organizationconfig).
-
-Alternatively, you can run the following PowerShell command to remove the inactive mailbox from all organization-wide policies:
+Alternatively, you can run the following PowerShell command to remove the inactive mailbox from all retention policies that are configured for the entire location:
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
@@ -122,11 +120,9 @@ Run the following PowerShell command:
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>
 ```
 
-For more information about identifying specific location retention policies that are applied to an inactive mailbox, and obtaining the GUID for a retention policy, see the "Get-Mailbox" section in [How to identify the type of hold placed on a mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox).
-
 ### Remove an eDiscovery hold
 
-See [Removing content locations from an eDiscovery hold](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold )
+See [Removing content locations from an eDiscovery hold](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
 ### Remove a Litigation hold
 
