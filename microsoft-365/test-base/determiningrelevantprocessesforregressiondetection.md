@@ -24,5 +24,5 @@ To decide which processes are relevant for a given application, Test Base uses a
 
 To learn more about mutual information ranking and how it is used in the **Test Base** service, see: [Infinite Segmentation: Scalable Mutual Information Ranking on Real World Graphs](//medium.com/microsoftazure/infinite-segmentation-scalable-mutual-information-ranking-on-real-world-graphs-f4983ba81be3).
 
-**Note**  
-On the **Reliability** tab, you can favorite a subset of processes that can be monitored along with relevant processes for Memory and CPU regression analysis. Favorited processes that are manually selected will be considered relevant by Test Base and included in the calculation of Memory and CPU regressions.
+ > [!NOTE]
+ > On the **Reliability** tab, you can favorite a subset of processes that can be monitored along with relevant processes for Memory and CPU regression analysis. Favorited processes that are manually selected will be considered relevant by Test Base and included in the calculation of Memory and CPU regressions.

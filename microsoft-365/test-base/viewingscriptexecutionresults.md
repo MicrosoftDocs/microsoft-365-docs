@@ -27,11 +27,11 @@ Detailed results appear, such as a script **Pass** or **Fail** indication in the
 
 An Execution request ID for tests related to each release is provided, as are KB articles for more technical information. Tests are typically run after a product team releases its original public updates. 
 
-&nbsp;&nbsp;&nbsp;**Note**
-- Upon successful test execution, a script should return a value of zero (0). If an error occurs during execution, a script should return an error code with a non-    zero - value.
+ > [!NOTE]
+ > Upon successful test execution, a script should return a value of zero (0). If an error occurs during execution, a script should return an error code with a non-    zero - value.
 
-&nbsp;&nbsp;&nbsp;**Important**
-- Avoid coding your scripts to reboot a machine. If a reboot is necessary, please specify the Reboot enabled tag to the script during the script configuration and upload process, as described in Test Base documentation. For further details, see For more details, see [Package guidelines](contentguideline.md) and [Application/Test rules](rules.md).
+ > [!IMPORTANT]
+ > Avoid coding your scripts to reboot a machine. If a reboot is necessary, please specify the Reboot enabled tag to the script during the script configuration and upload process, as described in Test Base documentation. For further details, see For more details, see [Package guidelines](contentguideline.md) and [Application/Test rules](rules.md).
 
  > [!div class="mx-imgBorder"]
  > ![Screenshot shows Script Execution Summary.](Media/scriptexecution01.png)
