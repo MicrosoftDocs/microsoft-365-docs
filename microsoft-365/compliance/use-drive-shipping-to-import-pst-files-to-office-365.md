@@ -442,7 +442,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
   - Apply [Microsoft 365 retention policies](retention.md) to control how long the data is retained, and what action to take after the retention period expires. 
 
-  - Search the [audit log](search-the-audit-log-in-security-and-compliance.md) for events related to this data. 
+  - Search the [audit log](audit-log-search.md) for events related to this data. 
 
   - Import data to [inactive mailboxes](inactive-mailboxes-in-office-365.md) to archive data for compliance purposes. 
 

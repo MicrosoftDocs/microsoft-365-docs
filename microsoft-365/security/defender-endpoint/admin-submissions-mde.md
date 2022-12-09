@@ -43,7 +43,7 @@ In Microsoft Defender for Endpoint, admins can use the unified submissions featu
 
   - **Organization Management**, **Security Administrator**, or **Security Reader** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
 
-- For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
+- For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/submissions-report-messages-files-to-microsoft.md).
 
 ## Report items to Microsoft from the portal
 
@@ -99,6 +99,7 @@ You can also submit a file or file hash directly from the list of alerts on the 
 
 ## Related information
 
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
 - [View and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md)
