@@ -135,17 +135,17 @@ Any existing settings made from the Teams Admin Center will continue to be honor
 
 As an example, the *Foo* Teams app recently upgraded to an Enhanced Teams app and is now available for Teams, Outlook, and the Microsoft 365 App (formerly known as Office.com).
 
-| |Impact on Teams client|Impact on the Microsoft 365 App|Impact on Outlook client|
+||Impact on Teams client|Impact on the Microsoft 365 App|Impact on Outlook client|
 |:-----|:-----|:-----|:-----|
-|If you had previously blocked the Foo Teams App on Teams Admin Center |Users in your organization cannot download and use Foo on Teams.|Users in your organization can download and use Foo Enhanced Teams App on the Microsoft 365 App. This can be controlled by admins on the Microsoft 365 Admin Center.|Currently, users in your organization can access Outlook add-ins based on your settings in Exchange Admin Center.|
-|If you had previously allowed the Foo Teams App on Teams Admin Center |Users in your organization can download and use the Foo Enhanced Teams App on Teams.|Users in your organization can download and use Foo Enhanced Teams App on the Microsoft 365 App. This can be controlled by admins on the Microsoft 365 Admin Center.|Currently, users in your organization can access Outlook add-ins based on your settings in Exchange Admin Center.|
+|**If you had previously blocked the Foo Teams App on Teams Admin Center**|Users in your organization cannot download and use Foo on Teams.|Users in your organization can download and use Foo Enhanced Teams App on the Microsoft 365 App. This can be controlled by admins on the Microsoft 365 Admin Center.|Currently, users in your organization can access Outlook add-ins based on your settings in Exchange Admin Center.|
+|**If you had previously allowed the Foo Teams App on Teams Admin Center** |Users in your organization can download and use the Foo Enhanced Teams App on Teams.|Users in your organization can download and use Foo Enhanced Teams App on the Microsoft 365 App. This can be controlled by admins on the Microsoft 365 Admin Center.|Currently, users in your organization can access Outlook add-ins based on your settings in Exchange Admin Center.|
 
 Now that *Foo* is an Enhanced Teams App, you can make changes to its availability from the Microsoft 365 Admin Center.  
 
-| |Impact on Teams client|Impact on the Microsoft 365 App|Impact on Outlook client|
+||Impact on Teams client|Impact on the Microsoft 365 App|Impact on Outlook client|
 |:-----|:-----|:-----|:-----|
-|If you block Foo Enhanced Teams App on Microsoft 365 Admin Center | No impact. Users in your organization will continue to experience Teams behavior for Foo Enhanced Teams App based on the admin settings in Teams Admin Center.|Users in your organization cannot  download the Foo Enhanced Teams App on the Microsoft 365 App, and cannot use any previously installed (by user/admin) Foo enhanced teams app.|Currently, users in your organization can access Outlook add-ins based on your settings in Exchange Admin Center. |
-| If you unblock Foo Enhanced Teams App on Microsoft 365 Admin Center.  | No impact. Users in your organization will continue to experience Teams behavior for Foo Enhanced Teams App based on the admin settings in Teams Admin Center.|Users in your organization can download and use Foo Enhanced Teams App on the Microsoft 365 App. Users can use any previously installed (by user/admin) Foo Enhanced Teams App.|Currently, users in your organization can access Outlook add-ins based on your settings in Exchange Admin Center.|
+|**If you block Foo Enhanced Teams App on Microsoft 365 Admin Center** | No impact. Users in your organization will continue to experience Teams behavior for Foo Enhanced Teams App based on the admin settings in Teams Admin Center.|Users in your organization cannot  download the Foo Enhanced Teams App on the Microsoft 365 App, and cannot use any previously installed (by user/admin) Foo enhanced teams app.|Currently, users in your organization can access Outlook add-ins based on your settings in Exchange Admin Center. |
+|**If you unblock Foo Enhanced Teams App on Microsoft 365 Admin Center.**  | No impact. Users in your organization will continue to experience Teams behavior for Foo Enhanced Teams App based on the admin settings in Teams Admin Center.|Users in your organization can download and use Foo Enhanced Teams App on the Microsoft 365 App. Users can use any previously installed (by user/admin) Foo Enhanced Teams App.|Currently, users in your organization can access Outlook add-ins based on your settings in Exchange Admin Center.|
 
 ### Managing Office add-ins and Teams Apps
 
@@ -154,7 +154,7 @@ You can continue to manage access to Office add-ins and Teams apps via the follo
 - Exchange Admin Center for Outlook Add-ins
 - Teams Admin Center for Teams Apps
 
-You can continue to [deploy Office Add-ins via Integrated Apps](/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-worldwide#deploy-an-office-add-in-using-the-admin-center) and [Teams Apps via Teams Admin Center](/en-us/microsoftteams/manage-apps#app-management-use-cases-and-the-available-interfaces). 
+You can continue to [deploy Office Add-ins via Integrated Apps](test-and-deploy-microsoft-365-apps.md#deploy-an-office-add-in-using-the-admin-center) and [Teams Apps via Teams Admin Center](/microsoftteams/manage-apps#app-management-use-cases-and-the-available-interfaces).
 
 **How to deploy an Enhanced Teams app**
 
