@@ -96,9 +96,7 @@ Use the following PowerShell cmdlets to retrieve a policy GUID and identify the 
 
 - If the policy is configured for the entire location: Use the **Get-OrganizationConfig** cmdlet in Exchange Online PowerShell to get information about these policies.
 
-- If the policy is configured for specific inclusions: Use the **Get-Mailbox -IncludeInactiveMailbox** cmdlet in Exchange Online PowerShell to get information about these policies.
-
-For information about identifying specific location retention policies that are applied to an inactive mailbox, and obtaining the GUID for a retention policy, see the "Get-Mailbox" section in [How to identify the type of hold placed on a mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox).
+- If the policy is configured for specific inclusions: Use the **Get-Mailbox -IncludeInactiveMailbox** cmdlet and parameter in Exchange Online PowerShell to get information about these policies.
 
 #### How to remove an inactive mailbox from a retention policy that's configured for the entire location (static scope)
 
