@@ -255,6 +255,8 @@ For more information about configuring Yammer in Native Mode, see:
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 
     - Choose a limited condition field, usually a sensitive info type or keyword dictionary to apply to the policy.
+     
+    - Consider using [adaptive scopes](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes) rather than creating and maintaining multiple policies with includes and excludes. Creating multiple policies can result in higher administrative overheads. 
 
     > [!NOTE]
     > If you want to enable [optical character recognition (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) to identify embedded or attached images in messages for printed or handwritten text that match policy conditions, select **Customize policy** > **Conditions and percentage** and enable **Extract printed or handwritten text from images for evaluation**.
@@ -266,6 +268,8 @@ For more information about configuring Yammer in Native Mode, see:
     - Choose the users or groups to supervise, including all users in your organization, specific users and groups, or other users and groups you'd like to exclude.
 
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
+    
+    - Choose adaptive scopes for the policy. For more information, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to create an adaptive policy, you must create one or more adaptive scopes before you create your policy, and then select them during the create new policy process. For instructions, see [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes).
 
     - Choose the communication channels to check, including Exchange, Microsoft Teams, or Yammer. You'll also choose to check third-party sources if you've configured a connector in Microsoft 365.
 
@@ -283,9 +287,13 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Review your policy selections and create the policy.
 
-5. Select **Create policy** when using the templates or **Submit** when using the custom policy wizard.
+5. Depending on your selected scope:
 
-6. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
+ - If you chose **Adaptive** scopes, on the **Choose adaptive policy scopes** page, select **Add scopes** and select one or more adaptive scopes that have been created. The scopes that you can select depend on the [scope types](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Groups**.
+
+6. Select **Create policy** when using the templates or **Submit** when using the custom policy wizard.
+
+7. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
 
 ## Step 6 (optional): Update compliance boundaries for communication compliance policies
 

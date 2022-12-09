@@ -42,7 +42,7 @@ These advantages include:
 - A single communication compliance policy can include locations for both Microsoft Teams and Yammer, whereas when you don’t use an adaptive scope, each location requires its own policy.
 
 > [!IMPORTANT]
-> Adaptive scopes don't currently support public Teams channels. Also, the Skype for Business and Exchange public folder locations don't support adaptive scopes. For those locations, you must [TBD].
+> Adaptive scopes don't currently support public Teams channels. Also, the Skype for Business and Exchange public folder locations don't support adaptive scopes. 
 
 For configuration information, see [Configuring adaptive scopes](#configure-adaptive-scopes).
 
@@ -64,9 +64,12 @@ When you choose to use adaptive scopes, you're prompted to select what type of a
 
 | Adaptive scope type | Attributes or properties supported include |
 |:-----|:-----|
-|**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
+|**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages (<br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
+|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages <br> |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
-|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
+
+> [!NOTE]
+> For communications compliance policies, SharePoint sites and OneDrive accounts are not suported. Also, excluded users and Microsoft 365 groups are supported.
 
 The property names for sites are based on SharePoint site managed properties. The attribute names for users and groups are based on [(https://learn.microsoft.com/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
 
@@ -209,13 +212,4 @@ To run a query using SharePoint search:
 
 3. Verify that the search results match the expected site URLs for your adaptive scope. If they don't, check your query and the URLs with the relevant administrator for SharePoint.
 
-### Add an adaptive scope to a compliance policy (preview)
-
-Once you create an adaptive scope, you can apply it to a compliance policy. This enables admins to choose whether to use adaptive scopes or a static list of users when creating a policy. 
-
-1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
-2. In the compliance portal, select the **Policy** tab and the policy you want to add an adaptive scope to. 
-3. Select **Edit policy**.
-4. On the **Adaptive scopes** pane, select [TBD]. 
-5. Select **Save**.
 

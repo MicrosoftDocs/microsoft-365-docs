@@ -113,6 +113,9 @@ When you create a communication compliance policy, you must determine who review
 
 To simplify your setup, we recommend you create groups for people who need their communications reviewed and groups for people who review those communications. If you're using groups, you might need several. For example, if you want to identify communications between two distinct groups of people, or if you want to specify a group that isn't supervised. When you assign a Distribution group in the policy, the policy detects all emails from each user in Distribution group. When you assign a Microsoft 365 group in the policy, the policy detects all emails sent to that group, not the individual emails received by each group member.
 
+> [!NOTE]
+> Before you create a policy, you should decide whether you want to apply an **adaptive scope** for users or groups. For more information, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
+
 Adding groups and distribution lists to communication compliance policies are part of the overall conditions and rules set, so the maximum number of groups and distribution lists that a policy supports varies depending on the number of conditions also added to the policy. Each policy should support approximately 20 groups or distribution lists, depending on the number of additional conditions present in the policy.
 
 The following chart can help you configure groups in your organization for communication compliance policies:
@@ -138,6 +141,7 @@ Creating communication compliance policies is quick and easy with the [pre-defin
 When planning for communication compliance policies, consider the following areas:
 
 - Consider adding all users in your organization as in-scope for your communication compliance policies. Identifying specific users as in-scope for individual policies are useful in some circumstances, however most organizations should include all users in communication compliance policies optimized for harassment or discrimination detection.
+- Decide whether you want to apply an adaptive scope to your communication compliance policy. For more information, see [Adaptive policy scopes for retention](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). Creating multiple policies can result in higher administrative overheads. 
 - Configure the percentage of communications to review at 100% to ensure that policies are catching all issues of concern in communications for your organization.
 - You can analyze communications from [third-party sources](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) for data imported into mailboxes in your Microsoft 365 organization. To include review of communications in these platforms, you'll need to configure a third-party connector to these services before messages meeting policy conditions are detected by a communication policy.
 - Policies can support detecting languages other than English in custom communication compliance policies. Build a [custom keyword dictionary](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) of offensive words in the language of your choice or build your own machine learning model using [trainable classifiers](/microsoft-365/compliance/classifier-get-started-with) in Microsoft 365.

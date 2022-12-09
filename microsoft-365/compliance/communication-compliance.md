@@ -145,6 +145,9 @@ Whether you're setting up communication compliance for the first time or getting
 
 Communication compliance helps you address common pain points associated with complying with internal policies and regulatory compliance requirements. With focused policy templates and a flexible workflow, you can use actionable insights to quickly resolve detected compliance issues.
 
+Before you create a policy, you can decide whether you want to apply an **adaptive scope**. For more information, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to create an adaptive policy, you must create one or more adaptive scopes before you create your policy, and then select them during the create new policy process. For instructions, see [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes).
+
+
 Identifying and resolving compliance issues with communication compliance uses the following workflow:
 
 ![Communication compliance workflow.](../media/communication-compliance-workflow.png)
