@@ -124,24 +124,25 @@ To complete the network scanner registration process:
 
 3. When finished, you should see a message confirming you have signed in.
 
-## Configure a new assessment job
+## Configure a new network device authenticated scan
 
-In the Assessment jobs page in **Settings**, select **Add network assessment job**. Follow the set-up process to choose network devices to be scanned regularly and added to the device inventory.
+1. Go to **Settings** > **Device discovery** > **Authenticated scans** in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+2. Select **Add new scan** and choose **Network device authenticated scan** and select **Next**.
 
-To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.
+     :::image type="content" source="../../media/defender-endpoint/network-authenticated-scan.png" alt-text="Screenshot of the add new network device authenticated scan screen" lightbox="../../media/defender-endpoint/network-authenticated-scan.png":::
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/assessment-jobs-add.png" alt-text="The Add network assessment job button" lightbox="images/assessment-jobs-add.png":::
+3. Choose whether to **Activate scan**.
+4. Enter an **Scan name**.
+5. Select the **Scanning device:** The onboarded device you'll use to scan the network devices.
+6. Enter the **Target (range):** Add IP addresses of target network devices to be scanned (or the subnets where these devices are deployed).
+7. Select the **Scan interval:** By default, the scan will run every hour, you can change the scan interval or have it only run once, by selecting ‘Do not repeat’.
+8. Choose your **Authentication method**
+    - You can select to **Use azure KeyVault for providing credentials:** If you manage your credentials in Azure KeyVault you can enter the Azure KeyVault URL and Azure KeyVault secret name to be accessed by the scanning device to provide credentials
+9. Select **Next** to run or skip the test scan
+10. Select **Next** to review the settings and the select **Submit** to create your new authenticated scan.
 
-Adding a network assessment job steps:
-
-1. Choose an 'Assessment job' name and the 'Assessment device' on which the network scanner was installed. This device will perform the periodic authenticated scans.
-
-2. Add IP addresses of target network devices to be scanned (or the subnets where these devices are deployed).
-
-3. Add required SNMP credentials of the target network devices.
-
-4. Save the newly configured network assessment job to start the periodic network scan.
+>[!Note]
+>To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.
 
 ### Scan and add network devices
 
