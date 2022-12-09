@@ -34,9 +34,9 @@ Holds can be any of the following:
 
 - A hold associated with an [eDiscovery](ediscovery.md) case
 
-- [Litigation Hold](create-a-litigation-hold.md)
+- [Litigation hold](create-a-litigation-hold.md)
 
-- An In-Place Hold.
+- An [In-Place Hold](/exchange/security-and-compliance/in-place-and-litigation-holds#placing-a-mailbox-on-in-place-hold)
 
 > [!IMPORTANT]
 > It is strongly recommended that you use Microsoft 365 retention when proactively planning to use inactive mailboxes.
@@ -154,7 +154,7 @@ There are two ways to remove an In-Place Hold from an inactive mailbox:
 
 #### How to delete an In-Place Hold
 
-1. Create a variable that contains the properties of the In-Place Hold that you want to delete. Use the In-Place Hold GUID that you obtained in [Step 1: Identify the holds on an inactive mailbox](#step-1-identify-the-holds-on-an-inactive-mailbox).
+1. Create a variable that contains the properties of the In-Place Hold that you want to delete. Use the In-Place Hold GUID that you obtained when you [identified the holds on an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox).
 
    ```powershell
    $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
