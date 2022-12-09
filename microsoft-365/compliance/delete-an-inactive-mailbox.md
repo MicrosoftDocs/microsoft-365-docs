@@ -98,7 +98,7 @@ Use the following PowerShell cmdlets to retrieve a policy GUID and identify the 
 
 - If the policy is configured for specific inclusions: Use the **Get-Mailbox -IncludeInactiveMailbox** cmdlet and parameter in Exchange Online PowerShell to get information about these policies.
 
-#### How to remove an inactive mailbox from a retention policy that's configured for the entire location (static scope)
+##### Static scope: How to remove an inactive mailbox from a retention policy that's configured for the entire location
 
 Run the following PowerShell command:
 
@@ -114,7 +114,7 @@ Alternatively, you can run the following PowerShell command to remove the inacti
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 ```
 
-#### How to remove an inactive mailbox from a retention policy that's configured for specific instances (static scope)
+##### Static scope: How to remove an inactive mailbox from a retention policy that's configured for specific instances
 
 Run the following PowerShell command:
 
