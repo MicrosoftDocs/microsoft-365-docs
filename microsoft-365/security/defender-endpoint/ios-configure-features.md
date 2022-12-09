@@ -95,8 +95,35 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
 ## Configure Network Protection
 
+Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to configure Network Protection. This configurations is available for both enrolled devices through MDM config and unenrolled devices through MAM config.
 
-Network protection in Microsoft Defender for endpoint is disabled by default. Admins can use the following steps to configure MAM support for network protection in iOS devices. (Authenticator device registration is required for MAM configuration) in iOS devices. Network protection initialization will require the end user to open the app once. 
+>[!NOTE]
+>Only one policy should be created for Network Protection, either MDM or MAM.
+
+**For enrolled devices (MDM) :**
+Follow the below steps for setting up MDM configuration for enrolled devices for Network protection.
+
+1. In Microsoft Endpoint Manager Admin, navigate to **Apps > App configuration policies. > Add > Managed devices**
+1. Provide name and description for the policy. In Platform choose “iOS/iPad”.
+1. In targeted app choose “Microsoft Defender for Endpoint”.
+1. In the Settings page, choose configuration settings format as “Use configuration designer”.
+1. Add 'DefenderNetworkProtectionEnable' as the configuration key, value type as “String” and value as 'true' to enable Network Protection. (Network protection is disabled by default)
+       :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Add configuration policy." lightbox="images/np-mdmconfig-key.png":::
+1. For other configurations related to Network protection, add the following keys, choose the corresponding value type and value.
+    |Key| Value Type |Default (true-enable, false-disable)|Description|
+    |---|-- |---|---|
+    |`DefenderOpenNetworkDetection`| Integer |0|1- Enable, 0 - Disable; This setting is managed by IT Admin to enable or disable open network detection informational alerts with no end user detection experience|
+    |`DefenderEndUserTrustFlowEnable`| String |false | true-Enable, false- disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks.|
+    |`DefenderNetworkProtectionAutoRemediation`| String |true |true-Enable, false- disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender|
+    |`DefenderNetworkProtectionPrivacy`| String |true |true-Enable, false- disable; This setting is managed by IT admin to enable or disable privacy in network protection|
+
+1. In the Assignments section, admin can choose groups of users to include and exclude from the policy.
+1. Review and create the configuration policy.
+
+
+**For unenrolled devices (MAM) :**
+
+Follow the below steps for setting up MAM config for unenrolled devices for Network protection (Authenticator device registration is required for MAM configuration) in iOS devices. Network Protection initialization will require the end user to open the app once.
 
 1. In the Microsoft Endpoint Manager admin center, navigate to **Apps** > **App configuration policies** > **Add** > **Managed apps**. Create a new App configuration policy.
    :::image type="content" source="images/addiosconfig.png" alt-text="Add configuration policy." lightbox="images/addiosconfig.png":::
@@ -113,9 +140,9 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
     |Key| Default (true-enable, false-disable)|Description|
     |---|---|---|
     |`DefenderOpenNetworkDetection`|0|1- Enable, 0 - Disable; This setting is managed by IT Admin to enable or disable open network detection informational alerts with no end user detection experience|
-    |`DefenderEndUserTrustFlowEnable`| false | Enable Users to Trust Networks and Certificates|
-    |`DefenderNetworkProtectionAutoRemediation`| true |This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender|
-    |`DefenderNetworkProtectionPrivacy`| true |This setting is managed by IT admin to enable or disable privacy in network protection|
+    |`DefenderEndUserTrustFlowEnable`| false | true-Enable, false- disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks.|
+    |`DefenderNetworkProtectionAutoRemediation`| true |true-Enable, false- disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender|
+    |`DefenderNetworkProtectionPrivacy`| true |true-Enable, false- disable; This setting is managed by IT admin to enable or disable privacy in network protection|
   
 5. In the **Assignments** section, an admin can choose groups of users to include and exclude from the policy.
    :::image type="content" source="images/assigniosconfig.png" alt-text="Assign configuration." lightbox="images/assigniosconfig.png":::
@@ -269,12 +296,7 @@ Defender for Endpoint on iOS enables admins to configure custom indicators on iO
 
 ## Configure vulnerability assessment of apps
 
-> [!NOTE]
-> Vulnerability Assessment of apps on Microsoft Defender for Endpoint for iOS is now in public preview. The following information relates to the prerelease of the product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. If you are interested to participate in the preview, please share your Tenant name and id with us on **mdatpmobile@microsoft.com**.
-
-Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices.
-
-Admins can use the following steps to configure the vulnerability assessment of apps.
+Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices. Admins can use the following steps to configure the vulnerability assessment of apps.
 
 ### On a Supervised Device
 
