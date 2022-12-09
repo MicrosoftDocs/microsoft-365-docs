@@ -65,11 +65,11 @@ To configure Defender for Office 365 policies, you must be assigned an appropria
 |Security Administrator|[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
-To learn more, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+To learn more, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 ### Turn on audit logging for reporting and investigation
 
-- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, [email security reports](reports-email-security.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, [email security reports](reports-email-security.md), and [Explorer](threat-explorer-about.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## Part 1 - Anti-malware protection in EOP
 
@@ -308,6 +308,6 @@ After configuring the threat protection features, make sure to monitor how those
 
 |What to do|Resources to learn more|
 |---|---|
-|See how threat protection features are working for your organization by viewing reports|[Email security reports](reports-email-security.md) <p> [Reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) <p> [Threat Explorer](threat-explorer.md)|
+|See how threat protection features are working for your organization by viewing reports|[Email security reports](reports-email-security.md) <p> [Reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) <p> [Threat Explorer](threat-explorer-about.md)|
 |Periodically review and revise your threat protection policies as needed|[Secure Score](../defender/microsoft-secure-score.md) <p> [Microsoft 365 threat investigation and response features](./office-365-ti.md)|
 |Watch for new features and service updates|[Standard and Targeted release options](../../admin/manage/release-options-in-office-365.md) <p> [Message Center](../../admin/manage/message-center.md) <p> [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

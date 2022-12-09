@@ -75,7 +75,7 @@ In Defender for Office 365, you manage false positives (good mail marked as bad)
 
 - The [Submissions portal (admin submissions)](submissions-admin.md).
 - The [Tenant Allow/Block List](tenant-allow-block-list-about.md)
-- [Threat Explorer](threat-explorer.md)
+- [Threat Explorer](threat-explorer-about.md)
 
 For more information, see the [Manage false positive and false negative detections](#manage-false-positive-and-false-negative-detections) section later in this article.
 
@@ -117,7 +117,7 @@ Use [Threat analytics](/microsoft-365/security/defender-endpoint/threat-analytic
 
 ### Review top targeted users for malware and phishing
 
-Use the **[Top targeted users](threat-explorer.md#top-targeted-users)** tab in Threat Explorer to discover or confirm the users who are the top targets for malware and phishing email.
+Use the **[Top targeted users](threat-explorer-about.md#top-targeted-users)** tab in Threat Explorer to discover or confirm the users who are the top targets for malware and phishing email.
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
@@ -143,7 +143,7 @@ Campaign Views reveals malware and phishing attacks against your organization. F
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Regular, proactive hunting for threats at: <ul><li><https://security.microsoft.com/threatexplorer></li><li><https://security.microsoft.com/v2/advanced-hunting></li></ul>.|Ad-hoc|Search for threats using [Threat Explorer](threat-explorer.md) and [Advanced hunting](../defender-endpoint/advanced-hunting-overview.md).|Security Operations Team <br/><br/> Threat hunting team|
+|Regular, proactive hunting for threats at: <ul><li><https://security.microsoft.com/threatexplorer></li><li><https://security.microsoft.com/v2/advanced-hunting></li></ul>.|Ad-hoc|Search for threats using [Threat Explorer](threat-explorer-about.md) and [Advanced hunting](../defender-endpoint/advanced-hunting-overview.md).|Security Operations Team <br/><br/> Threat hunting team|
 |Share hunting queries.|Ad-hoc|Actively share frequently used, useful queries within the security team for faster manual threat hunting and remediation. <br/><br/> Use [Threat trackers](threat-trackers.md) and [shared queries in Advanced hunting](/microsoft-365/security/defender/advanced-hunting-shared-queries).|Security Operations Team <br/><br/> Threat hunting team|
 |Create custom detection rules at <https://security.microsoft.com/custom_detection>.|Ad-hoc|[Create custom detection rules](../defender/custom-detections-overview.md) to proactively monitor events, patterns, and threats based on Defender for Office 365 data in Advance Hunting. Detection rules contain advanced hunting queries that generate alerts based on the matching criteria.|Security Operations Team <br/><br/> Threat hunting team|
 
@@ -178,7 +178,7 @@ Short videos for specific tasks are also available in the [Microsoft Defender fo
 
 ### Permissions for Defender for Office 365 activities and tasks
 
-Permissions for managing Defender for Office 365 in the Microsoft 365 Defender portal and PowerShell are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+Permissions for managing Defender for Office 365 in the Microsoft 365 Defender portal and PowerShell are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 > [!NOTE]
 > Privileged Identity Management (PIM) in Azure AD is also a way to assign required permissions to SecOps personnel. For more information, see [Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365](use-privileged-identity-management-in-defender-for-office-365.md).
@@ -199,7 +199,7 @@ The following permissions (roles and role groups) are available in Defender for 
     - Data Investigator
     - eDiscovery Manager
 
-    To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
+    To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](mdo-portal-permissions.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
   - **Search and Purge** role: Approve the deletion of malicious messages as recommended by AIR or take manual action on messages in hunting experiences like Threat Explorer.
 
@@ -208,7 +208,7 @@ The following permissions (roles and role groups) are available in Defender for 
     - Data Investigator
     - Organization Management
 
-    To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
+    To assign this role to a new or existing role group, see [Modify Email & collaboration role membership in the Microsoft 365 Defender portal](mdo-portal-permissions.md#modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal).
 
   - **Tenant AllowBlockList Manager**: Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
 
