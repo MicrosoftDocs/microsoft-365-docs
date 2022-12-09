@@ -78,7 +78,7 @@ After you've verified that the reporting mailbox meets all of these requirements
 
 - To modify the settings for user reported messages, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Administrator** in the [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+  - **Organization Management** or **Security Administrator** in the [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 - You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specifying the submissions mailbox:
 

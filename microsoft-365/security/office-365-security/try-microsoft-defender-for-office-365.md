@@ -362,7 +362,7 @@ The following permissions are required in **Azure AD** to set up an evaluation o
 - **Create, modify or delete an evaluation or trial**: Security Administrator or Global Administrator.
 - **View evaluation policies and reports in audit mode**: Security Administrator or Security Reader.
 
-For more information about Azure AD permissions in the Microsoft 365 Defender portal, see [Azure AD roles in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
+For more information about Azure AD permissions in the Microsoft 365 Defender portal, see [Azure AD roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
 
 ## Frequently asked questions
 
