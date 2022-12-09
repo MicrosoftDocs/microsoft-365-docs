@@ -176,9 +176,9 @@ Verify that the required URLs are added to the allowed domains in your firewall.
 
 ### Network devices are not shown in the device inventory after several hours
 
-The scan results should be updated a few hours after the initial scan that took place after completing the assessment job configuration.
+The scan results should be updated a few hours after the initial scan that took place after completing the network device authenticated scan configuration.
 
-If devices are still not shown, verify that the service 'MdatpNetworkScanService' is running on your assessment devices, on which you installed the network scanner, and perform a "Run scan" in the relevant assessment job configuration.
+If devices are still not shown, verify that the service 'MdatpNetworkScanService' is running on your devices being scanned, on which you installed the network scanner, and perform a "Run scan" in the relevant network device authenticated scan configuration.
 
 If you still don't get results after 5 minutes, restart the service.
 
@@ -206,3 +206,4 @@ Change command-line settings on your device to allow copying and change text siz
 
 - [Device inventory](machines-view-overview.md)
 - [Configure advanced features](advanced-features.md)
+- [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md)
