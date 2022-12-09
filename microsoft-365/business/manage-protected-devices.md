@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 - 'O365E_DevicesManageLM'
 - 'O365E_DevicesManageKM'
-- ms.author: efrene
+ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
