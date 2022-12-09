@@ -9744,6 +9744,11 @@
       "source_path": "microsoft-365/security/defender-endpoint/microsoft-threat-experts.md",
       "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/priority accounts-security-recommendations.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/priority-accounts-security-recommendations",
+      "redirect_document_id": false
     }
    ]
   }

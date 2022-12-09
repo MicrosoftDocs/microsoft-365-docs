@@ -45,7 +45,7 @@ In this example, you can see that the recipients of the detected email message h
 
 - You must have either the global administrator or security administrator role assigned in Microsoft 365. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-- You must have access to [Explorer (or real-time detections)](threat-explorer.md).
+- You must have access to [Explorer (or real-time detections)](threat-explorer-about.md).
 
 ## To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint
 
