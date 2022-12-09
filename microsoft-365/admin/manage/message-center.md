@@ -79,11 +79,9 @@ There will be three release statuses available on each applicable message which 
 
 - **Launched**: The feature is available to all the applicable users in your organization 
 
-:::image type="content" source="../../media/message-center-rolloutstatus-listanddetailsview.png" alt-text="Image displaying ‘status for your org.’ updated release choices.":::
-
 Updates to feature release status will be provided on the original Message center post. Filtering capability on **"status for your org."** will allow better visibility on the updated release status.  
 
-:::image type="content" source="../../media/message-center-status-of-your-org.png" alt-text="Image displaying ‘status for your org.’ updated release choices.":::
+:::image type="content" source="../../media/message-center-rolloutstatus-listanddetailsview.png" alt-text="Image displaying ‘status for your org.’ updated release choices."::: 
 
 The release status will **ONLY** be available for new and updated features that are also announced on M365 Roadmap. If you do not see release status on a message, it means the release status is not available for that feature.
 ## Relevance Recommendation
