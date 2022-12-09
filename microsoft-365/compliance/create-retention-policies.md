@@ -40,7 +40,7 @@ For more information about retention policies and how retention works in Microso
 
 The global admin for your organization has full permissions to create and edit retention policies. If you aren't signing in as a global admin, see the [permissions information for data lifecycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels).
 
-Decide before you create your retention policy whether it will be **adaptive** or **static**. For more information, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention policy, and then select them during the create retention policy process. For instructions, see [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes).
+Decide before you create your retention policy whether it will be **adaptive** or **static**. For more information, see [Adaptive policy scopes for compliance solutions](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention policy, and then select them during the create retention policy process. For instructions, see [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes).
 
 ## Create and configure a retention policy
 

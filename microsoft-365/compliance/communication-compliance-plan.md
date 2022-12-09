@@ -114,7 +114,7 @@ When you create a communication compliance policy, you must determine who review
 To simplify your setup, we recommend you create groups for people who need their communications reviewed and groups for people who review those communications. If you're using groups, you might need several. For example, if you want to identify communications between two distinct groups of people, or if you want to specify a group that isn't supervised. When you assign a Distribution group in the policy, the policy detects all emails from each user in Distribution group. When you assign a Microsoft 365 group in the policy, the policy detects all emails sent to that group, not the individual emails received by each group member.
 
 > [!NOTE]
-> Before you create a policy, you should decide whether you want to apply an **adaptive scope** for users or groups. For more information, see [Adaptive or static policy scopes for retention](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
+> Before you create a policy, you should decide whether you want to apply an **adaptive scope** for users or groups. For more information, see [Adaptive policy scopes for compliance solutions](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
 
 Adding groups and distribution lists to communication compliance policies are part of the overall conditions and rules set, so the maximum number of groups and distribution lists that a policy supports varies depending on the number of conditions also added to the policy. Each policy should support approximately 20 groups or distribution lists, depending on the number of additional conditions present in the policy.
 
