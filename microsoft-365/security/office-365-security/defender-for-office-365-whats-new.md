@@ -44,7 +44,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## October 2022
 
-- **[Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md):**
+- **[Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md):**
   - With **allow expiry management** (currently in private preview), if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
   - Customers in the government cloud environments will now be able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using the admin URL and email attachment submissions. The data submitted through the submissions experience will not leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
 - **Enhancement in URL click alerts:**
@@ -136,7 +136,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
 - [Advanced Delivery](skip-filtering-phising-simulations-sec-ops-mailboxes.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
-- [Safe Links for Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams)
+- [Safe Links for Microsoft Teams](safe-links-about.md#safe-links-settings-for-microsoft-teams)
 - New alert policies for the following scenarios: compromised mailboxes, Forms phishing, malicious mails delivered due to overrides and rounding out ZAP
   - Suspicious email forwarding activity
   - User restricted from sharing forms and collecting responses
@@ -162,10 +162,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## February/March 2021
 
-- Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer.md)
-- Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer.md)
-- Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer.md)
-- New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+- Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer-about.md)
+- Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer-about.md)
+- Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer-about.md)
+- New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer-about.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
 
 ## Microsoft Defender for Office 365 Plan 1 and Plan 2
 

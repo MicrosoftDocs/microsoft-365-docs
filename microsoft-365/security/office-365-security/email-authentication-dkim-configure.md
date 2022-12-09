@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -157,8 +157,8 @@ For detailed syntax and parameter information, see the following articles: [Rota
 
 To configure DKIM, you will complete these steps:
 
-- [Publish two CNAME records for your custom domain in DNS](use-dkim-to-validate-outbound-email.md#Publish2CNAME)
-- [Enable DKIM signing for your custom domain](use-dkim-to-validate-outbound-email.md#EnableDKIMinO365)
+- [Publish two CNAME records for your custom domain in DNS](email-authentication-dkim-configure.md#Publish2CNAME)
+- [Enable DKIM signing for your custom domain](email-authentication-dkim-configure.md#EnableDKIMinO365)
 
 ### Publish two CNAME records for your custom domain in DNS
 <a name="Publish2CNAME"> </a>
@@ -286,15 +286,28 @@ Wait a few minutes before you follow these steps to confirm that you have proper
 
 - Look for the Authentication-Results header. While each receiving service uses a slightly different format to stamp the incoming mail, the result should include something like **DKIM=pass** or **DKIM=OK**.
 
+> [!IMPORTANT]
+> The DKIM signature is **omitted** under any of the following conditions:
+>
+> - The sender and recipient email addresses are in the same domain.
+> - The sender and recipient email addresses are in different domains that are controlled by the same organization.
+>
+> In both cases, the header will look similar to this:
+>
+> ```console
+>   Authentication-Results: dkim=none (message not signed) header.d=none;
+>     dmarc=none action=none header.from=<sender_domain>;
+> ```
+
 ## To configure DKIM for more than one custom domain
 <a name="DKIMMultiDomain"> </a>
 
-If at some point in the future you decide to add another custom domain and you want to enable DKIM for the new domain, you must complete the steps in this article for each domain. Specifically, complete all steps in [What you need to do to manually set up DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365).
+If at some point in the future you decide to add another custom domain and you want to enable DKIM for the new domain, you must complete the steps in this article for each domain. Specifically, complete all steps in [What you need to do to manually set up DKIM](email-authentication-dkim-configure.md#SetUpDKIMO365).
 
 ## Disabling the DKIM signing policy for a custom domain
 <a name="DisableDKIMSigningPolicy"> </a>
 
-Disabling the signing policy does not completely disable DKIM. After a period of time, Microsoft 365 will automatically apply the default policy for your domain, if the default policy is still in the enabled state. If you wish to completely disable DKIM, you need to disable DKIM on both the custom and default domains. For more information, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+Disabling the signing policy does not completely disable DKIM. After a period of time, Microsoft 365 will automatically apply the default policy for your domain, if the default policy is still in the enabled state. If you wish to completely disable DKIM, you need to disable DKIM on both the custom and default domains. For more information, see [Default behavior for DKIM and Microsoft 365](email-authentication-dkim-configure.md#DefaultDKIMbehavior).
 
 ### To disable the DKIM signing policy by using Windows PowerShell
 
@@ -389,9 +402,9 @@ For example, the DKIM record would look like this:
 
 **Although DKIM is designed to help prevent spoofing, DKIM works better with SPF and DMARC.**
 
-Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [**Set up SPF in Microsoft 365 to help prevent spoofing**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
+Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [**Set up SPF in Microsoft 365 to help prevent spoofing**](email-authentication-spf-configure.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
 
-Next, see [**Use DMARC to validate email**](use-dmarc-to-validate-email.md). [Anti-spam message headers](message-headers-eop-mdo.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
+Next, see [**Use DMARC to validate email**](email-authentication-dmarc-configure.md). [Anti-spam message headers](message-headers-eop-mdo.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
 
 **This test will validate** that the DKIM signing configuration has been configured correctly, and that the proper DNS entries have been published.
 

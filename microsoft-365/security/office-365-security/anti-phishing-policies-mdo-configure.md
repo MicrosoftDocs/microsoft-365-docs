@@ -134,9 +134,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
    - **Impersonation**: These settings are a condition for the policy that identifies specific senders to look for (individually or by domain) in the From address of inbound messages. For more information, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
      > [!NOTE]
-     >
-     > - In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies.
-     > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
+     > In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies.
 
      - **Enable users to protect**: The default value is off (not selected). To turn it on, select the check box, and then click the **Manage (nn) sender(s)** link that appears.
 
@@ -210,6 +208,9 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 
        We recommend that you turn this setting on by selecting the check box. To turn this setting off, clear the check box.
 
+       > [!NOTE]
+       > Mailbox intelligence protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt by mailbox intelligence.
+
    - **Spoof**: In this section, use the **Enable spoof intelligence** check box to turn spoof intelligence on or off. The default value is on (selected), and we recommend that you leave it on. You specify the action to take on messages from blocked spoofed senders in the **If message is detected as spoof** setting on the next page.
 
      To turn off spoof intelligence, clear the check box.
@@ -266,7 +267,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
      - **Show user impersonation safety tip**: This setting is available only if you selected **Enable users to protect** on the previous page.
      - **Show domain impersonation safety tip**: This setting is available only if you selected **Enable domains to protect** on the previous page.
      - **Show user impersonation unusual characters safety tip** This setting is available only if you selected **Enable users to protect** or **Enable domains to protect** on the previous page.
-     - **Show (?) for unauthenticated senders for spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a question mark (?) to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication).
+     - **Show (?) for unauthenticated senders for spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a question mark (?) to the sender's photo in the From box in Outlook if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-authentication-about.md#composite-authentication).
      - **Show "via" tag**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. The default value is on (selected). To turn it off, clear the check box.
 
      To turn on a setting, select the check box. To turn it off, clear the check box.
