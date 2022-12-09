@@ -65,7 +65,7 @@ To configure Defender for Office 365 policies, you must be assigned an appropria
 |Security Administrator|[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
-To learn more, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+To learn more, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 ### Turn on audit logging for reporting and investigation
 

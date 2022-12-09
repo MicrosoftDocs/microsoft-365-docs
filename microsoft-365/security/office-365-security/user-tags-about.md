@@ -66,7 +66,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
   - To add and remove members from existing custom user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
   - For read-only access to user tags, you need to be a member of the **Global Reader**, **Security Operator**, or **Security Reader** role groups.
 
-  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
   > [!NOTE]
   >
