@@ -102,7 +102,7 @@ The table below includes recommendations for applying groups in frontline implem
 |---------|-----------|
 |Assign licenses, policies, and permissions automatically. If a member’s attributes change, the system looks at dynamic group rules for the directory to see if the member meets the rule requirements (is added), or no longer meets the rule requirements (is removed). |Security group (limit 5,000 groups) <br> dynamic user |
 |Manage access for users without automatic assignment to groups. |Security groups or distribution list (no limit applies) |
-|Create an email alias to distribute groups messages to groups of users without automatic user management. |Distribution list or static Microsoft 365 group |
+|Create an email alias to distribute groups messages to groups of users without automatic user management. |Distribution list or assigned Microsoft 365 group |
 |Create an email alias or team in Microsoft Teams and manage membership automatically. |Microsoft 365 groups, dynamic user |
 |Use [My Staff](/azure/active-directory/roles/my-staff-configure) to delegate permissions to frontline managers to view employee profiles, change phone numbers, and reset passwords. |[Administrative Unit](/azure/active-directory/roles/administrative-units) |
 
