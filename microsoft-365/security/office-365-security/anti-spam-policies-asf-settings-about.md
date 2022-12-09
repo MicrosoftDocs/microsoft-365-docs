@@ -23,7 +23,7 @@ ms.service: microsoft-365-security
 # Advanced Spam Filter (ASF) settings in EOP
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -36,7 +36,7 @@ In all Microsoft 365 organizations, the Advanced Spam Filter (ASF) settings in a
 > - The presence of filtered messages in quarantine.
 > - The specific `X-CustomSpam:` X-header fields that are added to messages as described in this article.
 
-The following sections describe the ASF settings and options that are available in anti-spam policies in the Microsoft 365 Defender portal, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+The following sections describe the ASF settings and options that are available in anti-spam policies in the Microsoft 365 Defender portal, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
 ## Enable, disable, or test ASF settings
 
