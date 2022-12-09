@@ -62,6 +62,22 @@ Then your sample file must have the same column headers, but use synthetic value
 |Lisa  |Taylor         |123-45-6789         |500000000000000         |
 |Andre    |Lawson        |234-56-7890         | 200000000000000        |
 
+### How to use the sample file templates
+
+If you're in any of these industry verticals:
+
+- U.S. Healthcare data <!--make this a live link-->
+- U.S. Financial data <!--make this a live link-->
+- U.S. Insurance data <!--make this a live link-->
+
+You can start with these sample file templates to speed up the sample file creation process. These files contain the most commonly used column headers across the respective industries as a well as synthetic values in the fields.
+
+1. Download the sample file template for your industry.
+1. Compare the column headers in the template to your actual source data and pick the ones you want to use as primary fields in your customized sample file.
+1. Compare the formatting of your actual source data with the formatting of the synthetic values. Change the formatting of the synthetic values to match the formatting of your source data values.
+1. Save your customized sample file to use when you [create EDM SIT schema and rule package](sit-create-edm-sit-unified-ux-schema-rule-package.md).
+
+
 
 <!--
 ![image showing a tab separated table with four columns and three rows of synthetic representative data](../media/sit-edm-tsv-sample-file.png)-->
