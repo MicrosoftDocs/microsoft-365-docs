@@ -135,9 +135,6 @@ Run the following PowerShell command to remove a Litigation hold from a mailbox:
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
 ```
 
-> [!TIP]
-> The best way to identify an inactive mailbox is by using its Distinguished Name or Exchange GUID value. Using one of these values helps prevent accidentally specifying the wrong mailbox. 
-
 ### Remove an In-Place Hold
 
 There are two ways to remove an In-Place Hold from an inactive mailbox:
