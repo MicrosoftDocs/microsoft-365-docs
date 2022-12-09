@@ -55,7 +55,7 @@ See the [More information](#more-information) section for a description of what 
 
 - You must use Exchange Online PowerShell to remove holds from an inactive mailbox. You can't use the Exchange admin center (EAC) or the Microsoft Purview compliance portal for these procedures. For step-by-step instructions to use Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Identify the holds on an inactive mailbox by using the instructions from [Step 1: Identify the holds on an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox). You'll need this information to know which holds to remove.
+- Identify the holds on an inactive mailbox by using the instructions from [Step 1: Identify the holds on an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox). You'll need this information to know which holds to remove, and identifying information.
 
 - Consider whether you want to copy the contents of an inactive mailbox to another mailbox before you remove the final hold that will result in the deletion of the inactive mailbox. For details, see [Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md).
 
@@ -73,6 +73,10 @@ Use the instructions that map to the type of hold:
 - [Remove an eDiscovery hold](#remove-an-ediscovery-hold)
 - [Remove a Litigation hold](#remove-a-litigation-hold)
 - [Remove an In-Place Hold](#remove-an-in-place-hold)
+
+> [!TIP]
+> The instructions require you to specify an identity for the inactive mailbox. The best way to do this is by using its Distinguished Name or Exchange GUID value. Using one of these values helps prevent accidentally specifying the wrong mailbox.
+
 
 ### Remove an inactive mailbox from a retention policy
 
