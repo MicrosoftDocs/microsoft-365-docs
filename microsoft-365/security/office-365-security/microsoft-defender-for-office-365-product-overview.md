@@ -25,7 +25,7 @@ adobe-target: true
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 This article will introduce you to your new Microsoft Defender for Office 365 security properties in the Cloud. Whether you're part of a Security Operations Center, you're a Security Administrator new to the space, or you want a refresher, let's get started.
@@ -70,7 +70,7 @@ If you have an Office 365 E3, or below, you have EOP, but with the option to buy
 ## The Office 365 security ladder from EOP to Microsoft Defender for Office 365
 
 > [!IMPORTANT]
-> Learn the details on these pages: [Exchange Online Protection](exchange-online-protection-overview.md), and [Defender for Office 365](defender-for-office-365.md).
+> Learn the details on these pages: [Exchange Online Protection](eop-about.md), and [Defender for Office 365](defender-for-office-365.md).
 
 What makes adding Microsoft Defender for Office 365 plans an advantage to pure EOP threat management can be difficult to tell at first glance. To help sort out if an upgrade path is right for your organization, let's look at the capabilities of each product when it comes to:
 
@@ -85,7 +85,7 @@ starting with **Exchange Online Protection**:
 |---|---|---|
 |Technologies include:<ul><li>spam</li><li>phish</li><li>malware</li><li>bulk mail</li><li>spoof intelligence</li><li>impersonation detection</li><li>Admin Quarantine</li><li>False positives and false negative reporting by admin submissions and user reported messages</li><li>Allow/Block for URLs and Files</li><li>Reports</li></ul>|<li>Audit log search</li><li>Message Trace</li>|<li>Zero-hour auto purge (ZAP)</li><li>Refinement and testing of Allow and Block lists</li>|
 
-If you want to dig in to EOP, **[jump to this article](exchange-online-protection-overview.md)**.
+If you want to dig in to EOP, **[jump to this article](eop-about.md)**.
 
 Because these products are cumulative, if you evaluate Microsoft Defender for Office 365 P1 and decide to subscribe to it, you'll add these abilities.
 
