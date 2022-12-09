@@ -108,7 +108,7 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 1. In targeted app choose “Microsoft Defender for Endpoint”.
 1. In the Settings page, choose configuration settings format as “Use configuration designer”.
 1. Add 'DefenderNetworkProtectionEnable' as the configuration key, value type as “String” and value as 'true' to enable Network Protection. (Network protection is disabled by default)
-       :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Add configuration policy." lightbox="images/np-mdmconfig-key.png":::
+       :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Add mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
 1. For other configurations related to Network protection, add the following keys, choose the corresponding value type and value.
     |Key| Value Type |Default (true-enable, false-disable)|Description|
     |---|-- |---|---|
