@@ -85,7 +85,7 @@ MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.mi
 
 macOS requires that a user manually and explicitly approves certain functions that an application uses, for example system extensions, running in background, sending notifications, full disk access etc. Microsoft Defender for Endpoint relies on these functions, and cannot properly function until all these consents are received from a user.
 
-To grant consent automatically on user's behalf, an administrator pushes system policies through their MDM system. This is what we strongly recommend to do, instead of relying on manual approvals from end users.
+To grant consent automatically on a user's behalf, an administrator pushes system policies through their MDM system. This is what we strongly recommend doing, instead of relying on manual approvals from end users.
 
 We supply all policies that Microsoft Defender for Endpoint requires as mobileconfig files available at [https://github.com/microsoft/mdatp-xplat](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles). Mobileconfig is an Apple's import/export format that e.g. [Apple Configurator](https://support.apple.com/apple-configurator) or other products like [iMazing Profile Editor](https://imazing.com/profile-editor) support.
 
