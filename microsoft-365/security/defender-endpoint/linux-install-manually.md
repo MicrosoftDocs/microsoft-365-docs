@@ -53,7 +53,29 @@ Before you get started, see [Microsoft Defender for Endpoint on Linux](microsoft
 > [!WARNING]
 > Upgrading your operating system to a new major version after the product installation requires the product to be reinstalled. You need to [Uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux) the existing Defender for Endpoint on Linux, upgrade the operating system, and then reconfigure Defender for Endpoint on Linux following the below steps.
 
+## Installer script
 
+The easiest way to deploy Defender for Endpoint on Linux is with an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
+The script identifies the distribution and version, simplifies the selection of the right repository, sets up the device to pull the latest package, and combines the product installation and onboarding steps. Details on the steps performed can be found in the manual set up instructions below this section.
+
+```bash
+> ./mde_installer.sh --help
+usage: basename ./mde_installer.sh [OPTIONS]
+Options:
+-c|--channel      specify the channel from which you want to install. Default: insiders-fast
+-i|--install      install the product
+-r|--remove       remove the product
+-u|--upgrade      upgrade the existing product
+-o|--onboard      onboard/offboard the product with <onboarding_script>
+-p|--passive-mode set EPP to passive mode
+-t|--tag          set a tag by declaring <name> and <value>. ex: -t GROUP Coders
+-m|--min_req      enforce minimum requirements
+-w|--clean        remove repo from package manager for a specific channel
+-v|--version      print out script version
+-h|--help         display help
+```
+
+Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
 
 ## Configure the Linux software repository
@@ -414,30 +436,6 @@ Download the onboarding package from Microsoft 365 Defender portal.
     - After a few minutes, a detection should be raised in Microsoft 365 Defender.
 
     - Look at the alert details, machine timeline, and perform your typical investigation steps.
-
-## Installer script
-
-Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
-The script identifies the distribution and version, simplifies the selection of the right repository, sets up the device to pull the latest package, and combines the product installation and onboarding steps.
-
-```bash
-> ./mde_installer.sh --help
-usage: basename ./mde_installer.sh [OPTIONS]
-Options:
--c|--channel      specify the channel from which you want to install. Default: insiders-fast
--i|--install      install the product
--r|--remove       remove the product
--u|--upgrade      upgrade the existing product
--o|--onboard      onboard/offboard the product with <onboarding_script>
--p|--passive-mode set EPP to passive mode
--t|--tag          set a tag by declaring <name> and <value>. ex: -t GROUP Coders
--m|--min_req      enforce minimum requirements
--w|--clean        remove repo from package manager for a specific channel
--v|--version      print out script version
--h|--help         display help
-```
-
-Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
 ## Log installation issues
 
