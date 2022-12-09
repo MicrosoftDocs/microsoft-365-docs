@@ -27,18 +27,9 @@ ms.custom: seo-marvel-apr2020
 
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
 
-> [!NOTE]
-> Microsoft Purview auditing is the new name for the unified audit log.
-
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Microsoft Purview auditing solutions
-
-Microsoft Purview provides two auditing solutions: Audit (Standard) and Audit (Premium).
-
-![Key capabilities of Audit (Standard) and Audit (Premium).](..\media\AuditingSolutionsComparison.png)
-
-### Audit (Standard)
+## Audit (Standard)
 
 Microsoft Purview Audit (Standard) provides with you with the ability to log and search for audited activities and power your forensic, IT, compliance, and legal investigations.
 
@@ -57,7 +48,7 @@ Microsoft Purview Audit (Standard) provides with you with the ability to log and
 - **Access to audit logs via Office 365 Management Activity API**. A third method for accessing and retrieving audit records is to use the Office 365 Management Activity API. This lets organizations retain auditing data for longer periods than the default 90 days and lets them import their auditing data to a SIEM solution. For more information, see [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference).
 - **90-day audit log retention**. When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. In Audit (Standard), records are retained for 90 days, which means you can search for activities that occurred within the past three months.
 
-### Audit (Premium)
+## Audit (Premium)
 
 Audit (Premium) builds on the capabilities of Audit (Standard) by providing audit log retention policies, longer retention of audit records, high-value crucial events, and higher bandwidth access to the Office 365 Management Activity API.
 
@@ -87,7 +78,7 @@ The following table compares the key capabilities available in Audit (Standard) 
 |High-value, crucial events||![Supported](../media/check-mark.png)|
 
 > [!NOTE]
-> <sup>1</sup> Audit (Premium) includes higher bandwidth access to the Office 365 Management Activity API, which provides faster access to audit data.<br/><sup>2</sup> In addition to the required licensing for Audit (Premium) (described in the next section), a user must be assigned a 10-Year Audit Log Retention add on license to retain their audit records for 10 years.
+> <sup>1</sup> Audit (Premium) includes higher bandwidth access to the Office 365 Management Activity API, which provides faster access to audit data.<br/><sup>2</sup> In addition to the required licensing for Audit (Premium) (described in the next section), a user must be assigned a 10-Year Audit Log Retention add-on license to retain their audit records for 10 years.
 
 ## Licensing requirements
 
@@ -127,7 +118,7 @@ To get started using the auditing solutions in Microsoft Purview, see the follow
 
 The first step is to set up Audit (Standard) and then start running audit log searches.
 
-![Workflow to set up Audit (Standard).](../media/BasicAuditingWorkflow.png)
+![Workflow to set up Audit (Standard).](../media/audit-standard-workflow.png)
 
 1. Verify that your organization has a subscription that supports Audit (Standard) and if applicable, a subscription that supports Audit (Premium).
 
@@ -141,7 +132,7 @@ For more detailed instructions, see [Set up Audit (Standard)](audit-standard-set
 
 If your organization has a subscription that supports Audit (Premium), perform the following steps to set up and use the additional capabilities in Audit (Premium).
 
-![Workflow to set up Audit (Premium).](../media/AdvancedAuditWorkflow.png)
+![Workflow to set up Audit (Premium).](../media/audit-premium-workflow.png)
 
 1. Set up Audit (Premium) for users. This step consists of the following tasks:
 

@@ -59,7 +59,7 @@ sections:
       - question: |
           How can I report spam or non-spam messages back to Microsoft?
         answer: |
-          See [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+          See [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
           
       - question: |
           I'm an admin and I don't know all of sources for messages in my email domain!
