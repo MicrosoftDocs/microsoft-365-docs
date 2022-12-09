@@ -184,7 +184,7 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
             [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) is automatically configured on the connector that you specify.
 
-            When a third-party service or device sits in front of email flowing into Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md).
+            When a third-party service or device sits in front of email flowing into Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer-about.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md).
 
           - **List each gateway IP address your messages pass through**: This setting is available only if you selected **Other** for **Select a third party service provider**. Enter a comma-separated list of the IP addresses that are used by the third-party protection service or device to send mail into Microsoft 365.
 
@@ -285,43 +285,43 @@ This section describes the reports that are available in audit mode and blocking
 
 In **blocking mode**, the following reports show detections by Defender for Office 365:
 
-- The [Mailflow view for the Mailflow status report](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report):
+- The [Mailflow view for the Mailflow status report](reports-email-security.md#mailflow-view-for-the-mailflow-status-report):
 
   - Messages detected as user impersonation or domain impersonation by anti-phishing policies appear in **Impersonation block**.
   - Messages detected during file or URL detonation by Safe Attachments policies or Safe Links policies appear in **Detonation block**.
 
-- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report):
+- The [Threat protection status report](reports-email-security.md#threat-protection-status-report):
 
-  - [View data by Overview](view-email-security-reports.md#view-data-by-overview):
+  - [View data by Overview](reports-email-security.md#view-data-by-overview):
 
     You can filter most views by the **Protected by** value **MDO** to see the effects of Defender for Office 365.
 
-  - [View data by Email \> Phish and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
 
     - Messages detected by [campaigns](campaigns.md) appear in **Campaign**.
     - Messages detected by Safe Attachments appear in **File detonation** and **File detonation reputation**.
     - Messages detected by user impersonation protection in anti-phishing policies appear in **Impersonation domain**, **Impersonation user**, and **Mailbox intelligence impersonation**.
     - Messages detected by Safe Links appear in **URL detonation** and **URL detonation reputation**.
 
-  - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
 
     - Messages detected by [campaigns](campaigns.md) appear in **Campaign**.
     - Messages detected by Safe Attachments appear in **File detonation** and **File detonation reputation**.
     - Messages detected by Safe Links appear in **URL detonation** and **URL detonation reputation**.
 
-  - [View data by Email \> Spam and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Spam and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
 
     Messages detected by Safe Links appear in **URL malicious reputation**.
 
-  - [Chart breakdown by Policy type](view-email-security-reports.md#chart-breakdown-by-policy-type)
+  - [Chart breakdown by Policy type](reports-email-security.md#chart-breakdown-by-policy-type)
 
     Messages detected by Safe Attachments appear in **Safe Attachments**
 
-  - [View data by Content \> Malware](view-email-security-reports.md#view-data-by-content--malware)
+  - [View data by Content \> Malware](reports-email-security.md#view-data-by-content--malware)
 
     Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) appear in **MDO detonation**.
 
-  - The [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
+  - The [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report)
 
     **Show data for Top malware recipients (MDO)** and **Show data for Top phish recipients (MDO)**.
 
@@ -331,12 +331,12 @@ In **blocking mode**, the following reports show detections by Defender for Offi
 
 In **audit mode**, the following reports show detections by Defender for Office 365:
 
-- The [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) has **Evaluation: Yes/No** as a filterable property in the following views:
-  - [View data by Email \> Phish and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
-  - [View data by Email \> Malware and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
-  - [View data by Email \> Spam and Chart breakdown by Detection Technology](view-email-security-reports.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
+- The [Threat protection status report](reports-email-security.md#threat-protection-status-report) has **Evaluation: Yes/No** as a filterable property in the following views:
+  - [View data by Email \> Phish and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+  - [View data by Email \> Spam and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
 
-- [Threat Explorer](threat-explorer.md) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
+- [Threat Explorer](threat-explorer-about.md) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
 
   ![Notification banner in message details that the Defender for Office 365 evaluation detected a malicious email message.](../../media/evalv2-detection-banner.png)
 
@@ -362,7 +362,7 @@ The following permissions are required in **Azure AD** to set up an evaluation o
 - **Create, modify or delete an evaluation or trial**: Security Administrator or Global Administrator.
 - **View evaluation policies and reports in audit mode**: Security Administrator or Security Reader.
 
-For more information about Azure AD permissions in the Microsoft 365 Defender portal, see [Azure AD roles in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
+For more information about Azure AD permissions in the Microsoft 365 Defender portal, see [Azure AD roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
 
 ## Frequently asked questions
 

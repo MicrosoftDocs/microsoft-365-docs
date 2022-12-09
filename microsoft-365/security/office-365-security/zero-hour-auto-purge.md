@@ -99,8 +99,8 @@ ZAP will not quarantine any message that's in the process of [Dynamic Delivery](
 
 To determine if ZAP moved your message, you have the following options:
 
-- **Number of messages**: Use the [Mailflow view in the Mailflow status report](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) to see the number of ZAP-affected messages for the specified date range.
-- **Message details**: Use [Threat Explorer (and real-time detections)](threat-explorer.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
+- **Number of messages**: Use the [Mailflow view in the Mailflow status report](reports-email-security.md#mailflow-view-for-the-mailflow-status-report) to see the number of ZAP-affected messages for the specified date range.
+- **Message details**: Use [Threat Explorer (and real-time detections)](threat-explorer-about.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
 
 > [!NOTE]
 > ZAP is not logged in the Exchange mailbox audit logs as a system action.
