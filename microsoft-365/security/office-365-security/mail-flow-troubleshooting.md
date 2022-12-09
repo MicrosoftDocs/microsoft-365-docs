@@ -68,7 +68,7 @@ To request removal from this list, you can [Use the delist portal to remove your
 
 ## My email landed in the recipient's Junk Email folder
 
-If a message was incorrectly identified as spam by EOP, you can work with the recipient to submit this false positive message to the Microsoft Spam Analysis Team, who will evaluate and analyze the message. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+If a message was incorrectly identified as spam by EOP, you can work with the recipient to submit this false positive message to the Microsoft Spam Analysis Team, who will evaluate and analyze the message. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Traffic from my IP address is throttled by EOP
 

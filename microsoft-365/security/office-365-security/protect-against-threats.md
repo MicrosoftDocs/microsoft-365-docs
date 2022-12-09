@@ -69,7 +69,7 @@ To learn more, see [Permissions in the Microsoft 365 Defender portal](permission
 
 ### Turn on audit logging for reporting and investigation
 
-- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, [email security reports](reports-email-security.md), and [Explorer](threat-explorer-about.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## Part 1 - Anti-malware protection in EOP
 
@@ -297,7 +297,7 @@ To learn more about alert policies, see [Alert policies in the Microsoft Purview
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:
 >
-> - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+> - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 > - [Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 > - [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 > - [Manage quarantined messages and files as an admin in Microsoft 365](quarantine-admin-manage-messages-files.md)
@@ -308,6 +308,6 @@ After configuring the threat protection features, make sure to monitor how those
 
 |What to do|Resources to learn more|
 |---|---|
-|See how threat protection features are working for your organization by viewing reports|[Email security reports](view-email-security-reports.md) <p> [Reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) <p> [Threat Explorer](threat-explorer.md)|
+|See how threat protection features are working for your organization by viewing reports|[Email security reports](reports-email-security.md) <p> [Reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) <p> [Threat Explorer](threat-explorer-about.md)|
 |Periodically review and revise your threat protection policies as needed|[Secure Score](../defender/microsoft-secure-score.md) <p> [Microsoft 365 threat investigation and response features](./office-365-ti.md)|
 |Watch for new features and service updates|[Standard and Targeted release options](../../admin/manage/release-options-in-office-365.md) <p> [Message Center](../../admin/manage/message-center.md) <p> [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
