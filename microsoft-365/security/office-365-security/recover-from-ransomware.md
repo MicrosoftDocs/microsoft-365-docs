@@ -135,7 +135,7 @@ If your country isn't listed, ask your local or federal law enforcement agencies
 
 ### Submit email messages to Microsoft
 
-You can report phishing messages that contain ransomware by using one of several methods. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+You can report phishing messages that contain ransomware by using one of several methods. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Additional ransomware resources
 
