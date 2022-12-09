@@ -94,7 +94,7 @@ Most MDM vendors support importing a mobileconfig file, creating a new custom co
 To setup profiles:
 
 1) Find out how a mobileconfig import is done with your MDM vendor.
-2) For all profiles from [https://github.com/microsoft/mdatp-xplat](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles), download a mobileconfig file and import it
+2) For all profiles from [https://github.com/microsoft/mdatp-xplat](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles), download a mobileconfig file and import it.
 3) Assign proper scope for each created configuration profile
 
 Note, that Apple regularly create new types of payloads with new versions of OS.
