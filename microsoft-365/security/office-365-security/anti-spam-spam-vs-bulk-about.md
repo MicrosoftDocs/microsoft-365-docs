@@ -35,7 +35,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
   - You can configure the actions to take on spam filtering verdicts. For instructions, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
-  - If you disagree with the spam filtering verdict, you can report messages that you consider to be spam or non-spam to Microsoft in several ways, as described in [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+  - If you disagree with the spam filtering verdict, you can report messages that you consider to be spam or non-spam to Microsoft in several ways, as described in [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 - **Bulk email** (also known as _gray mail_), is more difficult to classify. Whereas spam is a constant threat, bulk email is often one-time advertisements or marketing messages. Some users want bulk email messages (and in fact, they have deliberately signed up to receive them), while other users consider bulk email to be spam. For example, some users want to receive advertising messages from the Contoso Corporation or invitations to an upcoming conference on cyber security, while other users consider these same messages to be spam.
 
@@ -66,7 +66,7 @@ EmailEvents
 
 This query allows admins to identify wanted and unwanted senders. If a bulk sender has a BCL score that doesn't meet the bulk threshold, admins can [submit the sender's messages to Microsoft for analysis](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), which adds the sender as an allow entry to the Tenant Allow/Block List.
 
-Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft 365 Defender for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
+Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft 365 Defender for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](reports-email-security.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
 
 1. In the Threat protection status report, select **View data by Email \> Spam**. To go directly to the report, open one of the following URLs:
 

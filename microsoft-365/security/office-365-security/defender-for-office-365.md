@@ -127,7 +127,7 @@ Microsoft Defender for Office 365 includes [reports](reports-defender-for-office
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Predefined reports include the following:
 
-- [Threat Explorer (or real-time detections)](threat-explorer.md)
+- [Threat Explorer (or real-time detections)](threat-explorer-about.md)
 - [Threat protection status report](reports-defender-for-office-365.md#threat-protection-status-report)
 - ... and several more.
 
@@ -137,7 +137,7 @@ Microsoft Defender for Office 365 Plan 2 includes best-of-class [threat investig
 
 - **[Threat trackers](threat-trackers.md)** provide the latest intelligence on prevailing cybersecurity issues. For example, you can view information about the latest malware, and take countermeasures before it becomes an actual threat to your organization. Available trackers include [Noteworthy trackers](threat-trackers.md#noteworthy-trackers), [Trending trackers](threat-trackers.md#trending-trackers), [Tracked queries](threat-trackers.md#tracked-queries), and [Saved queries](threat-trackers.md#saved-queries).
 
-- **[Threat Explorer in Plan 2 (or real-time detections in Plan 1)](threat-explorer.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
+- **[Threat Explorer in Plan 2 (or real-time detections in Plan 1)](threat-explorer-about.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
 
 - **[Attack simulation training](attack-simulation-training-simulations.md)** allows you to run realistic attack scenarios in your organization to identify vulnerabilities. Simulations of current types of attacks are available, including spear phishing credential harvest and attachment attacks, and password spray and brute force password attacks.
 
