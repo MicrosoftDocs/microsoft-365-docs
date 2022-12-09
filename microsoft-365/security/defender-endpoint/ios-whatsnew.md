@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint on iOS enables Privacy Controls for both the Adm
 
 Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the onboarding flow. Currently the permissions required by MDE are mandatory in the onboarding flow. With this feature, admin can deploy MDE on BYOD devices without enforcing the mandatory **VPN Permission** during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for enrolled devices (MDM).
 
-With **Disable Web Protection**,Customers who do not want to setup a VPN, can configure to disable **Web Protection** and deploy MDE without that feature. Other MDE features will continue to work. This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices.
+With **Disable Web Protection**,Customers who do not want to set up a VPN, can configure to disable **Web Protection** and deploy MDE without that feature. Other MDE features will continue to work. This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices.
 
 ## Integration with Tunnel
 
