@@ -166,4 +166,4 @@ For detailed syntax and parameter information, see [New-ActivityAlert](/powershe
 
     For detailed syntax and parameter information, see [Get-ActivityAlert](/powershell/module/exchange/get-activityalert).
 
-- Use the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) to view information about detected files in SharePoint, OneDrive, and Microsoft Teams. Specifically, you can use the **View data by: Content \> Malware** view.
+- Use the [Threat protection status report](reports-email-security.md#threat-protection-status-report) to view information about detected files in SharePoint, OneDrive, and Microsoft Teams. Specifically, you can use the **View data by: Content \> Malware** view.
