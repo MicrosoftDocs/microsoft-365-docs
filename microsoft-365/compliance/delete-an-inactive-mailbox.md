@@ -86,10 +86,10 @@ The procedure to remove an inactive mailbox from a Microsoft 365 retention polic
 When you use the advanced query builder to define your adaptive scope for mailboxes, modify it to  exclude inactive mailboxes by using the OPATH property *IsInactiveMailbox*:
 
 ```Console
-(IsInactiveMailbox -eq "False")
+IsInactiveMailbox -eq "False"
 ````
 
-You can't exclude inactive mailboxes by using the simple query builder.
+You can't exclude inactive mailboxes by using the simple query builder. If the policy is configured by using the simple query builder, you must first convert it to use the advanced query builder.
 
 #### How to remove an inactive mailbox from a retention policy with a static scope
 
@@ -102,6 +102,8 @@ Use the following PowerShell cmdlets to retrieve a policy GUID and identify the 
 - If the policy is configured to include specific mailboxes: Use the **Get-Mailbox -IncludeInactiveMailbox** cmdlet and parameter in Exchange Online PowerShell to get information about these policies.
 
 ##### Static scope: How to remove an inactive mailbox from a retention policy that's configured for the entire location
+
+The following commands require you to first [connect to Security & Compliance PowerShell]([Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 Run the following PowerShell command for a specific retention policy:
 
@@ -147,6 +149,8 @@ There are two ways to remove an In-Place Hold from an inactive mailbox:
 - **Remove the inactive mailbox as a source mailbox of an In-Place Hold**. If you want to retain other source mailboxes for an In-Place Hold, you can remove the inactive mailbox from the list of source mailboxes and keep the In-Place Hold object.
 
 #### How to delete an In-Place Hold
+
+when you run the following commands, you'll see a warning that the Get-MailboxSearch cmdlet is obsolete. However, it's safe to ignore the warning for this specific scenario.
 
 1. Create a variable that contains the properties of the In-Place Hold that you want to delete. Use the In-Place Hold GUID that you obtained when you [identified the holds on an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox).
 
