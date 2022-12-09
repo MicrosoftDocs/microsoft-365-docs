@@ -89,7 +89,7 @@ When you use the advanced query builder to define your adaptive scope for mailbo
 IsInactiveMailbox -eq "False"
 ````
 
-You can't exclude inactive mailboxes by using the simple query builder. If the policy is configured by using the simple query builder, you must first convert it to use the advanced query builder.
+You can't exclude inactive mailboxes by using the simple query builder. If the policy is configured by using the simple query builder, you must first change it to use the advanced query builder.
 
 #### How to remove an inactive mailbox from a retention policy with a static scope
 
