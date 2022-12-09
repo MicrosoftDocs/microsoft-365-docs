@@ -67,7 +67,7 @@ See the [More information](#more-information) section for a description of what 
 
 After you've [identified what type of hold is placed on the inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox) and whether there are multiple holds, you can remove the holds on the mailbox. Remember, you must remove all holds to permanently delete an inactive mailbox.
 
-Use the instructions that map to the type of hold:
+Use the instructions for the type of hold you need to remove:
 
 - [Remove an inactive mailbox from a retention policy](#remove-an-inactive-mailbox-from-a-retention-policy)
 - [Remove an eDiscovery hold](#remove-an-ediscovery-hold)
