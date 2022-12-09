@@ -139,13 +139,16 @@ When the toggle is **On** ![Toggle on.](../../media/scc-toggle-on.png) and you'v
 
 The following settings are also available on the page:
 
-- **Show a pop-up message in Outlook to confirm it the user want's to report the message** in the **Before a message is reported** section: This setting controls whether users see a pop-up before they report a message using the Report Message add-in or the Report Phishing add-in. Currently, this setting does not affect the built-in **Report** button in Outlook on the web.
+  > [!NOTE]
+  > Currently, users who report messages from Outlook on the web using the built-in **Report** button don't get these before or after pop-up messages. The pop-ups work for users who report messages using the Microsoft Report Message and Report Phishing add-ins.
+
+- **Show a pop-up message in Outlook to confirm it the user want's to report the message** in the **Before a message is reported** section: This setting controls whether users see a pop-up before they report a message.
 
   If this setting is selected, click **Customize before message** to enter the the **Title** and **Message** text in the **Customize text before message is reported** flyout that opens. Use the variable `%type%` to include the submission type (junk, not junk, phishing, etc.).
 
   When you're finished, click **Confirm** to return to the **User reported** page.
 
-- **Show a success pop-up message in Outlook after the user reports** in the **After a message is reported** section: This setting controls whether users see a pop-up after they report a message using the Report Message add-in or the Report Phishing add-in. Currently, this setting does not affect the built-in **Report** button in Outlook on the web.
+- **Show a success pop-up message in Outlook after the user reports** in the **After a message is reported** section: This setting controls whether users see a pop-up after they report a message.
 
   If this setting is selected, click **Customize after message** to enter the the **Title** and **Message** text in the **Customize text after message is reported** flyout that opens. Use the variable `%type%` to include the submission type (junk, not junk, phishing, etc.).
 
@@ -230,7 +233,7 @@ The difference between these two elements isn't obvious when you manage the user
 
   As soon as you visit <https://security.microsoft.com/securitysettings/userSubmission> and even before you configure any settings, the report submission policy is created with the default values and is visible in PowerShell.
 
-  As after you configure and save the settings at <https://security.microsoft.com/securitysettings/userSubmission> to specify a reporting mailbox (used by Microsoft or third-party reporting tools), the report submission rule named DefaultReportSubmissionRule is automatically created. Note that it takes several seconds before the rule is visible in PowerShell.
+  Only after you specify a reporting mailbox (used by Microsoft or third-party reporting tools) and save the changes is the report submission rule named DefaultReportSubmissionRule automatically created. It takes several seconds before the rule is visible in PowerShell.
 
 - You can delete the report submission rule and recreate it with a different name, but the rule is always associated with the report submission policy whose name you can't change. So, we recommend that you name the rule DefaultReportSubmissionRule whenever you create or recreate the rule.
 
@@ -268,122 +271,152 @@ Always create the report submission policy first, because you specify the report
 
 For detailed syntax and parameter information, see [New-ReportSubmissionPolicy](/powershell/module/exchange/new-reportsubmissionpolicy) and [New-ReportSubmissionRule](/powershell/module/exchange/new-reportsubmissionrule).
 
-#### Use PowerShell to enable the Microsoft integrated reporting experience with report to Microsoft only
+#### Use PowerShell to configure the Microsoft integrated reporting experience with report messages to Microsoft only
 
-This example creates the report submission policy with the default settings (the same settings as when you first visit <https://security.microsoft.com/securitysettings/userSubmission>, but before you configure or save any settings):
+This example creates the report submission policy with the default settings (the same settings as when you first visit <https://security.microsoft.com/securitysettings/userSubmission>, but before you save any setting changes):
 
-- The Microsoft integrated reporting experience is turned on (toggle **On** ![Toggle on.](../../media/scc-toggle-on.png)).
+- The Microsoft integrated reporting experience is turned on: toggle **On** (![Toggle on.](../../media/scc-toggle-on.png)) and **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options** is selected (`-EnableReportToMicrosoft $true -EnableThirdPartyAddress $false` are the default values).
 
-- Send reported messages to Microsoft only: **Send the reported messages to** \> **Microsoft**.
+- **Reported message destinations** section: **Send messages to** \> **Microsoft only** is selected (`-ReportJunkToCustomizedAddress $false -ReportNotJunkToCustomizedAddress $false -ReportPhishToCustomizedAddress $false` are the default values).
 
-- No reporting mailbox is needed or specified, so the report submission rule is not created.
+Other settings:
+
+- **Before a message is reported** section:
+  - **Show a pop-up message in Outlook to confirm if the user wants to report the message** is selected (`-PreSubmitMessageEnabled $true | $false` is available only on **Set-ReportSubmissionPolicy**; the unconfigurable value on **New-ReportSubmissionPolicy** is `$true`).
+  - **Customize before message** link: Nothing is entered in the **Title** or **Message** boxes in the flyout.(`-EnableCustomizedMsg $false` is the default value).
+
+- **After a message is reported** section:
+  - **Show a success pop-up message in Outlook after the user reports message** is selected (`-PostSubmitMessageEnabled $true | $false` is available only on **Set-ReportSubmissionPolicy**; the unconfigurable value on **New-ReportSubmissionPolicy** is `$true`).
+  - **Customize after message** link: Nothing is entered in the **Title** or **Message** boxes in the flyout (`-EnableCustomizedMsg $false` is the default value).
+
+  > [!NOTE]
+  > Currently, pop-up messages before or after a user reports a message are supported only by the Microsoft Report Message and Report Phishing add-ins. Users who report messages with the built-in **Report** button in Outlook on the web don't see these pop-ups.
+
+- **Email sent to user after admin review** section:
+  - **Specify an Office 365 mailbox to send email notifications from** is not selected (`-EnableCustomNotificationSender $false` is the default value).
+  - **Replace the Microsoft logo with my company logo** is not selected (`-EnableOrganizationBranding $false` is the default value).
+  - **Customize email notification messages** link: Nothing is entered in the **Email body results text** or **Email footer text** boxes on the **Phishing**, **Junk**, or **No threats found** tabs in the flyout (`-EnableCustomizedMsg $false` is the default value).
+- **Report from quarantine** section: **Let your organization report messages from quarantine** is selected (`-DisableQuarantineReportingOption $false` is the default value).
 
 ```powershell
 New-ReportSubmissionPolicy
 ```
 
-#### Use PowerShell for the Microsoft integrated reporting experience with report to Microsoft and the reporting mailbox
+Because a reporting mailbox isn't use, the report submission rule is not needed or created.
+
+#### Use PowerShell to configure the Microsoft integrated reporting experience with report messages to Microsoft and the reporting mailbox
 
 This example creates the report submission policy and the report submission rule with the following settings:
 
-- The Microsoft integrated reporting experience is turned on: **Microsoft Outlook Report Message button** toggle: **On** ![Toggle on.](../../media/scc-toggle-on.png). On the **New-ReportSubmissionPolicy** cmdlet, the default value of the _EnableReportToMicrosoft_ parameter is `$true` and the default value of the _EnableThirdPartyAddress_ parameter is `$false`, so you don't need to use them.
+- The Microsoft integrated reporting experience is **On** (![Toggle on.](../../media/scc-toggle-on.png)) and **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options** is selected (`-EnableReportToMicrosoft $true -EnableThirdPartyAddress $false` are the default values).
 
-- Send reported messages to Microsoft and the reporting mailbox: **Send the reported messages to** \> **Microsoft and my organization's mailbox**:
+- **Reported message destinations** section:
+  - **Send messages to** \> **Microsoft and my reporting mailbox** is selected.
+  - **Add a mailbox to send reported messages to** specifies the email address of the reporting mailbox.
 
-  - **New-ReportSubmissionPolicy**: `-ReportJunkToCustomizedAddress $true -ReportJunkAddresses <emailaddress> -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses <emailaddress> -ReportPhishToCustomizedAddress $true -ReportPhishAddresses <emailaddress>`.
-  - **Set-ReportSubmissionRule**: `SentTo <emailaddress>`.
+    - **New-ReportSubmissionPolicy**: `-ReportJunkToCustomizedAddress $true -ReportJunkAddresses <emailaddress> -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses <emailaddress> -ReportPhishToCustomizedAddress $true -ReportPhishAddresses <emailaddress>`.
+    - **New-ReportSubmissionRule**: `-SentTo <emailaddress>`.
 
-  In this example, the email address of the reporting mailbox is reportedmessages@contoso.com in Exchange Online (you can't specify an external email address).
+    In this example, the email address of the reporting mailbox is reportedmessages@contoso.com in Exchange Online (you can't specify an external email address).
 
-  > [!NOTE]
-  > You must use the same email address value in all parameters that identify the reporting mailbox.
+    > [!NOTE]
+    > You must use the same email address value in all parameters that identify the reporting mailbox.
 
-The remaining parameters are required to create the report submission policy. In this example, the default values are used. If you don't specify the default values as described in this example, additional parameters and settings might be required:
-
-- **Let users choose if they want to report** selected (`-DisableUserSubmissionOptions $false`) and no **Select reporting options that are available to users** options are selected (the default _UserSubmissionOptions_ parameter value `0` is used).
-- **User reporting experience** section:
-  - Nothing is entered in the **Title** and **Message body** boxes on the **Before reporting** or **After reporting** tabs (`-EnableCustomizedMsg $false`).
-  - **Only display when user reports phishing** selected (`-OnlyShowPhishingDisclaimer $true`).
-- **Email notifications for admin review results** section:
-  - **Specify Office 365 email address to use as sender** not selected (`-EnableCustomNotificationSender $false`).
-  - **Customize notifications** link \> **Customize confirmation** flyout \> **Footer** tab: **Display company logo** not selected (`-EnableOrganizationBranding $false`).
-- **Customize your organization's experience when reporting potential threats in quarantine** section:
-
-  **Quarantine report message button** toggle: **On** ![Toggle on.](../../media/scc-toggle-on.png) (`-DisableQuarantineReportingOption $false`).
+The remaining settings are the default values in "Other settings" as described in [Use PowerShell to configure the Microsoft integrated reporting experience with report to Microsoft only](#use-powershell-to-configure-the-microsoft-integrated-reporting-experience-with-report-messages-to-microsoft-only).
 
 ```powershell
 $usersub = "reportedmessages@contoso.com"
 
-New-ReportSubmissionPolicy -ReportJunkToCustomizedAddress $true -ReportJunkAddresses $usersub -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses $usersub -ReportPhishToCustomizedAddress $true -ReportPhishAddresses $usersub -DisableUserSubmissionOptions $false -EnableCustomizedMsg $false -OnlyShowPhishingDisclaimer $true -EnableCustomNotificationSender $false -EnableOrganizationBranding $false -DisableQuarantineReportingOption $false
+New-ReportSubmissionPolicy -ReportJunkToCustomizedAddress $true -ReportJunkAddresses $usersub -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses $usersub -ReportPhishToCustomizedAddress $true -ReportPhishAddresses $usersub 
 
 New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPolicy DefaultReportSubmissionPolicy -SentTo $usersub
 ```
 
-#### Use PowerShell for the Microsoft integrated reporting experience with report to the reporting mailbox only
+#### Use PowerShell to configure the Microsoft integrated reporting experience with report messages to the reporting mailbox only
 
 This example creates the report submission policy and the report submission rule with the following settings:
 
-- The Microsoft integrated reporting experience is turned on: **Microsoft Outlook Report Message button** toggle: **On** ![Toggle on.](../../media/scc-toggle-on.png). On the **New-ReportSubmissionPolicy** cmdlet: `-EnableReportToMicrosoft $false`. The default value of the _EnableThirdPartyAddress_ parameter is `$false`, so you don't need to use it.
+- The Microsoft integrated reporting experience is **On** (![Toggle on.](../../media/scc-toggle-on.png)) and **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options** is selected (you need to set `-EnableReportToMicrosoft $false`; `-EnableThirdPartyAddress $false` is the default value).
 
-- Send reported messages to the reporting mailbox only: **Send the reported messages to** \> **My organizations mailbox**:
+- **Reported message destinations** section:
+  - **Send messages to** \> **Microsoft and my reporting mailbox** is selected.
+  - **Add a mailbox to send reported messages to** specifies the email address of the reporting mailbox.
 
-  - **New-ReportSubmissionPolicy**: `-ReportJunkToCustomizedAddress $true -ReportJunkAddresses <emailaddress> -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses <emailaddress> -ReportPhishToCustomizedAddress $true -ReportPhishAddresses <emailaddress>`.
-  - **Set-ReportSubmissionRule**: `SentTo <emailaddress>`.
+    - **New-ReportSubmissionPolicy**: `-ReportJunkToCustomizedAddress $true -ReportJunkAddresses <emailaddress> -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses <emailaddress> -ReportPhishToCustomizedAddress $true -ReportPhishAddresses <emailaddress>`.
+    - **New-ReportSubmissionRule**: `-SentTo <emailaddress>`.
 
-  In this example, the email address of the reporting mailbox is userreportedmessages@fabrikam.com in Exchange Online (you can't specify an external email address).
+    In this example, the email address of the reporting mailbox is userreportedmessages@fabrikam.com in Exchange Online (you can't specify an external email address).
 
-  > [!NOTE]
-  > You must use the same email address value in all parameters that identify the reporting mailbox.
+    > [!NOTE]
+    > You must use the same email address value in all parameters that identify the reporting mailbox.
 
-As in the previous example, the same remaining parameters are required to create the report submission policy. As in the previous example, the default values of those parameters are also used:
+The remaining settings are the default values in "Other settings" as described in [Use PowerShell to configure the Microsoft integrated reporting experience with report to Microsoft only](#use-powershell-to-configure-the-microsoft-integrated-reporting-experience-with-report-messages-to-microsoft-only).
 
 ```powershell
 $usersub = "userreportedmessages@fabrikam.com"
 
-New-ReportSubmissionPolicy -EnableReportToMicrosoft $false -ReportJunkToCustomizedAddress $true -ReportJunkAddresses $usersub -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses $usersub -ReportPhishToCustomizedAddress $true -ReportPhishAddresses $usersub -DisableUserSubmissionOptions $false -EnableCustomizedMsg $false -OnlyShowPhishingDisclaimer $true -EnableCustomNotificationSender $false -EnableOrganizationBranding $false -DisableQuarantineReportingOption $false
+New-ReportSubmissionPolicy -EnableReportToMicrosoft $false -ReportJunkToCustomizedAddress $true -ReportJunkAddresses $usersub -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses $usersub -ReportPhishToCustomizedAddress $true -ReportPhishAddresses $usersub
 
 New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPolicy DefaultReportSubmissionPolicy -SentTo $usersub
 ```
 
-#### Use PowerShell for third-party reporting tools
+#### Use PowerShell to configure the Microsoft integrated reporting experience to use third-party reporting tools
 
 This example creates the report submission policy and the report submission rule with the following settings:
 
-- The Microsoft integrated reporting experience is turned off: **Microsoft Outlook Report Message button** toggle: **Off** ![Toggle off.](../../media/scc-toggle-off.png). On the **New-ReportSubmissionPolicy** cmdlet: `-EnableReportToMicrosoft $false -EnableThirdPartyAddress $true`.
+- The Microsoft integrated reporting experience is **On** (![Toggle on.](../../media/scc-toggle-on.png)) and **Use a non-Microsoft add-in button** is selected (`-EnableReportToMicrosoft $false -EnableThirdPartyAddress $true`).
 
-- Use the following parameters to specify the email address of the reporting mailbox:
+- **Reported message destinations** section: **Add a mailbox to send reported messages to** specifies the email address of the reporting mailbox.
 
-  - **New-ReportSubmissionPolicy**: `-ThirdPartyReportAddresses <emailaddress>`
-  - **Set-ReportSubmissionRule**: `SentTo <emailaddress>`.
+  - **New-ReportSubmissionPolicy**:`-ThirdPartyReportAddresses <emailaddress>`.
+  - **New-ReportSubmissionRule**: `-SentTo <emailaddress>`.
 
-  In this example, the email address of the reporting mailbox is thirdpartyreporting@wingtiptoys.com in Exchange Online (you can't specify an external email address
+    In this example, the email address of the reporting mailbox is thirdpartyreporting@wingtiptoys.com in Exchange Online (you can't specify an external email address).
 
-  > [!NOTE]
-  > You must use the same email address value in all parameters that identify the reporting mailbox.
+    > [!NOTE]
+    > You must use the same email address value in all parameters that identify the reporting mailbox.
 
-The remaining parameters are required to create the report submission policy successfully. In this example, the default values are used. No other options are available in the report submission policy when you turn off the Microsoft integrated reporting experience:
+Other settings:
 
-- **Customize your organization's experience when reporting potential threats in quarantine** section:
-
-  **Quarantine report message button** toggle: **On** ![Toggle on.](../../media/scc-toggle-on.png) (`-DisableQuarantineReportingOption $false`).
+- **Report from quarantine** section: **Let your organization report messages from quarantine** is selected (`-DisableQuarantineReportingOption $false` is the default value).
 
 ```powershell
 $usersub = "thirdpartyreporting@wingtiptoys.com"
 
-New-ReportSubmissionPolicy -EnableReportToMicrosoft $false -EnableThirdPartyAddress $true -ThirdPartyReportAddresses $usersub -DisableQuarantineReportingOption $false
+New-ReportSubmissionPolicy -EnableReportToMicrosoft $false -EnableThirdPartyAddress $true -ThirdPartyReportAddresses $usersub
 
 New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPolicy DefaultReportSubmissionPolicy -SentTo $usersub
 ```
 
+#### Use PowerShell to turn off the Microsoft integrated reporting experience
+
+Turning off the Microsoft integrated reporting experiences has the following consequences:
+
+- The **Report** button in Outlook on the web and the Microsoft Report Message and Report Phishing add-ins are unavailable in all Outlook platforms.
+- Third-party reporting tools still work, but reported messages do not appear on the **Submissions** page in the Microsoft 365 Defender portal.
+
+This example creates the report submission policy with the Microsoft integrated reporting experience turned **Off** (![Toggle off.](../../media/scc-toggle-on.png)) (`-EnableReportToMicrosoft $false`; `-EnableThirdPartyAddress $false -ReportJunkToCustomizedAddress $false -ReportNotJunkToCustomizedAddress $false -ReportPhishToCustomizedAddress $false` are the default values).
+
+```powershell
+New-ReportSubmissionPolicy -EnableReportToMicrosoft $false
+```
+
 ### Use PowerShell to modify the report submission policy and the report submission rule
 
-The same settings are available when you modify the report submission policy in PowerShell as when you created the policy as described in [the previous section](#use-powershell-to-create-the-report-submission-policy-and-the-report-submission-rule). The major difference is: the additional parameters that were required to create the policy (for example, _DisableQuarantineReportingOption_) are no long required. But, you might have to undo or nullify some important settings that you previously configured or didn't configure. And, you might need to create or delete the report submission rule to allow or prevent reporting to a reporting mailbox.
+Virtually all of the same settings are available when you modify the report submission policy in PowerShell as when you created the policy as described in [the previous section](#use-powershell-to-create-the-report-submission-policy-and-the-report-submission-rule). The exceptions is:
+
+- You can turn off **Show a pop-up message in Outlook to confirm if the user wants to report the message** and **Show a success pop-up message in Outlook after the user reports** using the _PreSubmitMessageEnabled_ and _PostSubmitMessageEnabled_ parameters on **Set-ReportSubmissionPolicy**.
+
+  > [!NOTE]
+  > Currently, users who report messages from Outlook on the web using the built-in **Report** button don't get these pop-up messages. The pop-ups work for users who report messages using the Microsoft Report Message and Report Phishing add-ins.
+
+When you modify the existing settings in the report submission policy, you might need to undo or nullify some important settings that you previously configured or didn't configure. And, you might need to create or delete the report submission rule to allow or prevent message reporting to a reporting mailbox.
 
 For detailed syntax and parameter information, see [Set-ReportSubmissionPolicy](/powershell/module/exchange/set-reportsubmissionpolicy).
 
 The following examples show how to change the user reporting experience without concern for the existing settings or values:
 
-- Change to **Microsoft integrated reporting experience \> report to Microsoft only**:
+- Change to **Use built-in "Report" button with "Phishing", "Junk" and "Not Junk" options** and **Send messages to** \> **Microsoft only**:
 
   ```powershell
    Set-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy -EnableReportToMicrosoft $true -EnableThirdPartyAddress $false -ThirdPartyReportAddresses $null -ReportJunkToCustomizedAddress $false -ReportJunkAddresses $null -ReportNotJunkToCustomizedAddress $false -ReportNotJunkAddresses $null -ReportPhishToCustomizedAddress $false -ReportPhishAddresses $null
@@ -391,7 +424,7 @@ The following examples show how to change the user reporting experience without 
   Get-ReportSubmissionRule | Remove-ReportSubmissionRule
   ```
 
-- Change to **Microsoft integrated reporting experience \> report to Microsoft and the reporting mailbox** (for example, reportedmessages@contoso.com):
+- Change to **Use built-in "Report" button with "Phishing", "Junk" and "Not Junk" options** and **Send messages to** \> **Microsoft and my reporting mailbox*** (for example, reportedmessages@contoso.com):
 
   ```powershell
   $usersub = "reportedmessages@contoso.com"
@@ -405,7 +438,7 @@ The following examples show how to change the user reporting experience without 
   New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPolicy DefaultReportSubmissionPolicy -SentTo $usersub
   ```
 
-- Change to **Microsoft integrated reporting experience \> report to the reporting mailbox only** (for example, userreportedmessages@fabrikam.com):
+- Change to **Use built-in "Report" button with "Phishing", "Junk" and "Not Junk" options** and **Send messages to** \> **Microsoft and my reporting mailbox** (for example, userreportedmessages@fabrikam.com):
 
   ```powershell
   $usersub = "userreportedmessages@fabrikam.com"
@@ -419,7 +452,7 @@ The following examples show how to change the user reporting experience without 
   New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPolicy DefaultReportSubmissionPolicy -SentTo $usersub
   ```
 
-- Change to **Third-party reporting tools** (for example, thirdpartyreporting@wingtiptoys.com):
+- Change to **Use a non-Microsoft add-in button** (for example, thirdpartyreporting@wingtiptoys.com):
 
   ```powershell
   $usersub = "thirdpartyreporting@wingtiptoys.com"
@@ -433,15 +466,33 @@ The following examples show how to change the user reporting experience without 
   New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPolicy DefaultReportSubmissionPolicy -SentTo $usersub
   ```
 
+- Turn off the Microsoft integrated reporting experience **Off** (![Toggle off.](../../media/scc-toggle-off.png)):
+
+  ```powershell
+  Set-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy -EnableReportToMicrosoft $false -EnableThirdPartyAddress $false -ThirdPartyReportAddresses $null -ReportJunkToCustomizedAddress $false -ReportJunkAddresses $null -ReportNotJunkToCustomizedAddress $false -ReportNotJunkAddresses $null -ReportPhishToCustomizedAddress $false -ReportPhishAddresses $null
+  ```
+
+  The following command is required only if you don't already have the report submission rule:
+
+  ```powershell
+  Get-ReportSubmissionRule | Remove-ReportSubmissionRule
+  ```
+
 The only meaningful setting that you can modify in the report submission rule is the email address of the reporting mailbox (the _SentTo_ parameter value). For example:
 
 ```powershell
 Get-ReportSubmissionRule | Set-ReportSubmissionRule -SentTo newemailaddress@contoso.com
 ```
 
+> [!NOTE]
+> If you change the email address of the reporting mailbox in the report submission rule, be sure to change the corresponding values in the report submissions policy. For example:
+>
+> - _ThirdPartyReportAddresses_
+> - _ReportJunkAddresses_, _ReportNotJunkAddresses_, and _ReportPhishAddresses_
+
 For detailed syntax and parameter information, see [Set-ReportSubmissionRule](/powershell/module/exchange/set-reportsubmissionrule).
 
-To temporarily disable sending email messages to the reporting mailbox (Microsoft integrated reporting experience or third-party tools) without deleing the report submission rule, use [Disable-ReportSubmissionRule](/powershell/module/exchange/disable-reportsubmissionrule). For example:
+To temporarily disable sending email messages to the reporting mailbox without deleing the report submission rule, use [Disable-ReportSubmissionRule](/powershell/module/exchange/disable-reportsubmissionrule). For example:
 
 ```powershell
 Get-ReportSubmissionRule | Disable-ReportSubmissionRule -Confirm:$false
