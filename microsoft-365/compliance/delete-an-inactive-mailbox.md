@@ -103,8 +103,6 @@ Use the following PowerShell cmdlets to retrieve a policy GUID and identify the 
 
 ##### Static scope: How to remove an inactive mailbox from a retention policy that's configured for the entire location
 
-The following commands require you to first [connect to Security & Compliance PowerShell]([Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
-
 Run the following PowerShell command for a specific retention policy:
 
 ```powershell
@@ -118,6 +116,8 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 ```
 
 ##### Static scope: How to remove an inactive mailbox from a retention policy that's configured to include specific mailboxes
+
+The following command requires you to first [connect to Security & Compliance PowerShell]([Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 Run the following PowerShell command:
 
