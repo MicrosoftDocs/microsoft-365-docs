@@ -63,9 +63,11 @@ See the [More information](#more-information) section for a description of what 
 
 - For more information about inactive mailboxes, see [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
 
-## How to remove a hold from an inactive mailbox
+## How to delete an inactive mailbox by removing holds
 
-After you've [identified what type of hold is placed on the inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox) and whether there are multiple holds, you can remove the holds on the mailbox. Remember, you must remove all holds to permanently delete an inactive mailbox.
+After you've [identified what type of hold is placed on the inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox) and whether there are multiple holds, you can remove the holds on the mailbox. 
+
+When the last hold is removed, no further action is required from you because the inactive mailbox will be [automatically deleted](#more-information).
 
 Use the instructions for the type of hold you need to remove:
 
@@ -74,7 +76,7 @@ Use the instructions for the type of hold you need to remove:
 - [Remove a Litigation hold](#remove-a-litigation-hold)
 - [Remove an In-Place Hold](#remove-an-in-place-hold)
 
-> [!NOTE]
+> [!CAUTION]
 > The instructions require you to specify an identity for the inactive mailbox. The best way to do this is by using its Distinguished Name or Exchange GUID value. Using one of these values helps prevent accidentally specifying the wrong mailbox.
 
 ### Remove an inactive mailbox from a retention policy
