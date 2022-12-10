@@ -40,6 +40,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## December 2022
 
+### Data lifecycle management and records management
+
+- Disposition review no longer has maximums of 1,000,000 items and 200 disposition reviewers.
+
 ### Sensitivity labels
 
 - **General availability (GA)**: S/MIME support for Windows is now available with the Office Current Channel, providing parity with the AIP add-in. For more information, see [Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
