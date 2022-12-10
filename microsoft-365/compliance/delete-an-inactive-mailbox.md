@@ -31,11 +31,8 @@ When you no longer need to preserve the contents of an [inactive mailbox](inacti
 Holds can be any of the following:
 
 - [Microsoft 365 retention policies and labels](retention.md) with retain or retain and delete settings
-
 - A hold associated with an [eDiscovery](ediscovery.md) case
-
 - [Litigation hold](create-a-litigation-hold.md)
-
 - An [In-Place Hold](/exchange/security-and-compliance/in-place-and-litigation-holds#placing-a-mailbox-on-in-place-hold)
 
 > [!IMPORTANT]
