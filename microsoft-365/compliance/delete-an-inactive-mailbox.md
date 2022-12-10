@@ -26,7 +26,7 @@ description: When you no longer need to preserve the contents of a Microsoft 365
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-When you no longer need to preserve the contents of an [inactive mailbox](inactive-mailboxes-in-office-365.md), you can permanently delete the mailbox by removing all holds on it. Then, the inactive mailbox is marked for deletion and permanently deleted after it's processed.
+When you no longer need to preserve the contents of an [inactive mailbox](inactive-mailboxes-in-office-365.md), you can permanently delete the mailbox by removing all holds on it. Then, the inactive mailbox is automatically marked for deletion and permanently deleted after it's processed.
 
 Holds can be any of the following:
 
@@ -54,7 +54,7 @@ See the [More information](#more-information) section for a description of what 
 
 - Identify the holds on an inactive mailbox by using the instructions from [Step 1: Identify the holds on an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox). You'll need this information to know which holds to remove, and identifying information.
 
-- Consider whether you want to copy the contents of an inactive mailbox to another mailbox before you remove the final hold that will result in the deletion of the inactive mailbox. For details, see [Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md).
+- Consider whether you want to copy the contents of an inactive mailbox to another mailbox before you remove the final hold that will result in the deletion of the inactive mailbox. For details, see [Restore an inactive mailbox](restore-an-inactive-mailbox.md).
 
 - Be aware that if you remove the final hold from an inactive mailbox the mailbox will be permanently deleted after the 30-day soft-deleted mailbox retention period expires. After the inactive mailbox is permanently deleted, it can't be recovered. Before you remove a hold, be sure that you no longer need the contents in the mailbox. If you want to reactivate an inactive mailbox, you can recover it. For details, see [Recover an inactive mailbox](recover-an-inactive-mailbox.md).
 
