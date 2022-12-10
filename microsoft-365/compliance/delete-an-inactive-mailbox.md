@@ -223,11 +223,11 @@ when you run the following commands, you'll see a warning that the Get-MailboxSe
 
 - **An inactive mailbox is a type of soft-deleted mailbox.** In Exchange Online, a soft-deleted mailbox is a mailbox that's been deleted but can be recovered within a specific retention period. For soft-deleted mailboxes that aren't on hold, the mailbox is recoverable within 30 days. An inactive mailbox (a mailbox on hold before it was deleted) will remain in a soft-deleted with hold state until the hold is removed. After the hold is removed from an inactive mailbox, the mailbox will no longer be in an inactive state. Instead it will become soft-deleted and remain in Exchange Online for 30 days from the day the hold was removed and recoverable during that time. After 30 days, a soft-deleted mailbox is marked for permanent deletion and can't be recovered.
 
-- <a name="automatic-deletion"></a>**What happens after you remove the last hold on an inactive mailbox?** The mailbox is treated like other soft-deleted mailboxes and is marked for permanent deletion after the 30-day soft-deleted mailbox retention period expires. This retention period starts on the date when the hold is removed from the inactive mailbox. The *InactiveMailboxRetireTime* property is set when the mailbox transitions from being inactive (soft-deleted on hold) to no longer being inactive (soft-deleted with no holds). At that point, the *InactiveMailboxRetireTime* property is set to the current date when the transition occurred. There is an assistant that runs (called the *MailboxLifeCycle* assistant) that looks for mailboxes that have the *InactiveMailboxRetireTime* property set. If "InactiveMailboxRetireTime + 30 days" is less than the current date, then it will purge the mailbox.
+- <a name="automatic-deletion"></a>**What happens after you remove the last hold on an inactive mailbox?** The mailbox is treated like other soft-deleted mailboxes and is marked for permanent deletion after the 30-day soft-deleted mailbox retention period expires. This retention period starts on the date when the last hold is removed from the inactive mailbox. The *InactiveMailboxRetireTime* property is set when the mailbox transitions from being inactive (soft-deleted on hold) to no longer being inactive (soft-deleted with no holds). At that point, the *InactiveMailboxRetireTime* property is set to the current date when the transition occurred. There is an assistant that runs (called the *MailboxLifeCycle* assistant) that looks for mailboxes that have the *InactiveMailboxRetireTime* property set. If "InactiveMailboxRetireTime + 30 days" is less than the current date, then it will purge the mailbox.
 
-- **Is an inactive mailbox permanently deleted immediately after the hold is removed?** A formerly inactive mailbox will be available in the soft-deleted state for 30 days. After 30 days, the mailbox will be marked for permanent deletion.
+- **Is an inactive mailbox permanently deleted immediately after all holds are removed?** A formerly inactive mailbox will be available in the soft-deleted state for 30 days. After 30 days, the mailbox will be marked for permanent deletion.
 
-- **How do you display information about an inactive mailbox after the hold is removed?** After a hold is removed and the inactive mailbox is reverted back to a soft-deleted mailbox, it won't be returned by using the  *InactiveMailboxOnly*  parameter with the **Get-Mailbox** cmdlet. But you can display information about the mailbox by using the **Get-Mailbox -SoftDeletedMailbox** command. For example:
+- **How do you display information about an inactive mailbox after all holds are removed?** After all holds are removed and the inactive mailbox is reverted back to a soft-deleted mailbox, it won't be returned by using the  *InactiveMailboxOnly*  parameter with the **Get-Mailbox** cmdlet. But you can display information about the mailbox by using the **Get-Mailbox -SoftDeletedMailbox** command. For example:
 
   ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
@@ -236,10 +236,10 @@ when you run the following commands, you'll see a warning that the Get-MailboxSe
   Identity               : Soft Deleted Objects\pilarp
   LitigationHoldEnabled  : False
   InPlaceHolds           : {}
-  WhenSoftDeleted        : 6/16/2020 1:19:04 AM
+  WhenSoftDeleted        : 6/16/2022 1:19:04 AM
   IsInactiveMailbox      : False
   WasInactiveMailbox     : True
-  InactiveMailboxRetireTime : 9/30/2020 11:16:23 PM
+  InactiveMailboxRetireTime : 9/30/2022 11:16:23 PM
   ```
 
-  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2020. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 183 days after September 30, 2020.
+  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2022. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 183 days after September 30, 2022.
