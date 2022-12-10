@@ -72,9 +72,9 @@ When the last hold is removed, no further action is required from you because th
 Use the instructions for the type of hold you need to remove:
 
 - [Remove an inactive mailbox from a retention policy](#remove-an-inactive-mailbox-from-a-retention-policy)
-- [Remove an eDiscovery hold](#remove-an-ediscovery-hold)
-- [Remove a Litigation hold](#remove-a-litigation-hold)
-- [Remove an In-Place Hold](#remove-an-in-place-hold)
+- [Remove an inactive mailbox from an eDiscovery hold](#remove-an-inactive-mailbox-from-an-ediscovery-hold)
+- [Remove Litigation hold from an inactive mailbox](#remove-a-litigation-hold-from-an-inactive-mailbox)
+- [Remove an In-Place Hold from an inactive mailbox](#remove-an-in-place-hold-from-an-inactive-mailbox)
 
 > [!CAUTION]
 > The instructions require you to specify an identity for the inactive mailbox. The best way to do this is by using its Distinguished Name or Exchange GUID value. Using one of these values helps prevent accidentally specifying the wrong mailbox.
@@ -127,11 +127,11 @@ Run the following [Security & Compliance PowerShell](/powershell/exchange/connec
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>
 ```
 
-### Remove an eDiscovery hold
+### Remove an inactive mailbox from an eDiscovery hold
 
 See [Removing content locations from an eDiscovery hold](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
-### Remove a Litigation hold
+### Remove a Litigation hold from an inactive mailbox
 
 Run the following PowerShell command to remove a Litigation hold from a mailbox:
   
@@ -139,7 +139,7 @@ Run the following PowerShell command to remove a Litigation hold from a mailbox:
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
 ```
 
-### Remove an In-Place Hold
+### Remove an In-Place Hold from an inactive mailbox
 
 There are two ways to remove an In-Place Hold from an inactive mailbox:
   
