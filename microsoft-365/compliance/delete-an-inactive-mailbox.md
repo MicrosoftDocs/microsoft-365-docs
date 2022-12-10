@@ -26,7 +26,7 @@ description: When you no longer need to preserve the contents of a Microsoft 365
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-When you no longer need to preserve the contents of an [inactive mailbox](inactive-mailboxes-in-office-365.md), you can permanently delete the mailbox by removing all holds on it. Then, the inactive mailbox is automatically marked for deletion and permanently deleted after it's processed.
+When you no longer need to keep the contents of an [inactive mailbox](inactive-mailboxes-in-office-365.md), you can permanently delete the mailbox by removing all holds on it. Then, the inactive mailbox is automatically marked for deletion and permanently deleted after it's processed.
 
 Holds can be any of the following:
 
