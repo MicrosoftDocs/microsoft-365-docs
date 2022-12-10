@@ -91,13 +91,13 @@ We supply all policies that Microsoft Defender for Endpoint requires as mobileco
 
 Most MDM vendors support importing a mobileconfig file, creating a new custom configuration profile.
 
-To setup profiles:
+To set up profiles:
 
 1) Find out how a mobileconfig import is done with your MDM vendor.
 2) For all profiles from [https://github.com/microsoft/mdatp-xplat](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles), download a mobileconfig file and import it.
 3) Assign proper scope for each created configuration profile.
 
-Note that Apple regularly create new types of payloads with new versions of OS.
+Note that Apple regularly creates new types of payloads with new versions of OS.
 You will have to visit the above mentioned page, and publish new profiles once they became available.
 We post notifications to our [What's New page](mac-whatsnew.md) once we make changes like that.
 
