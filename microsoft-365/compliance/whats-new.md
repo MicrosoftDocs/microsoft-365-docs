@@ -46,7 +46,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- **Rolling out in preview**: Protected meetings by labeling [calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md).
+- **Rolling out in preview**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md).
 
 ## November 2022
 
