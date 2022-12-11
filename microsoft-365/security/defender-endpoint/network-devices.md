@@ -106,6 +106,8 @@ To configure scan jobs, the following user permission option is required: **Mana
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="The Download scanner button" lightbox="images/assessment-jobs-download-scanner.png":::
 
+     :::image type="content" source="../../media/defender-endpoint/network-authenticated-scan-new.png" alt-text="Screenshot of the add new authenticated scan screen" lightbox="../../media/defender-endpoint/network-authenticated-scan-new.png":::
+
 ## Network scanner installation & registration
 
 The signing-in process can be completed on the designated scanning device itself or any other device (for example, your personal client device).
@@ -132,13 +134,13 @@ To complete the network scanner registration process:
      :::image type="content" source="../../media/defender-endpoint/network-authenticated-scan.png" alt-text="Screenshot of the add new network device authenticated scan screen" lightbox="../../media/defender-endpoint/network-authenticated-scan.png":::
 
 3. Choose whether to **Activate scan**.
-4. Enter an **Scan name**.
+4. Enter a **Scan name**.
 5. Select the **Scanning device:** The onboarded device you'll use to scan the network devices.
 6. Enter the **Target (range):** Add IP addresses of target network devices to be scanned (or the subnets where these devices are deployed).
 7. Select the **Scan interval:** By default, the scan will run every hour, you can change the scan interval or have it only run once, by selecting ‘Do not repeat’.
-8. Choose your **Authentication method**
-    - You can select to **Use azure KeyVault for providing credentials:** If you manage your credentials in Azure KeyVault you can enter the Azure KeyVault URL and Azure KeyVault secret name to be accessed by the scanning device to provide credentials
-9. Select **Next** to run or skip the test scan
+8. Choose your **Authentication method**.
+    - You can select to **Use azure KeyVault for providing credentials:** If you manage your credentials in Azure KeyVault you can enter the Azure KeyVault URL and Azure KeyVault secret name to be accessed by the scanning device to provide credentials.
+9. Select **Next** to run or skip the test scan.
 10. Select **Next** to review the settings and the select **Submit** to create your new authenticated scan.
 
 >[!Note]
