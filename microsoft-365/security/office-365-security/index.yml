@@ -68,7 +68,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Exchange Online Protection overview 
-            url: exchange-online-protection-overview.md
+            url: eop-about.md
           - text: Recommended settings for EOP and Microsoft Defender for Office 365 security for set up
             url: recommended-settings-for-eop-and-office365.md
    # Card

@@ -42,7 +42,11 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 
-- **Rolling out in preview**: [Use sensitivity labels to protect calendar items, Teams meetings, and chat](sensitivity-labels-meetings.md)
+- **Rolling out in preview**: Protected meetings by labeling [calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md).
+
+### Data lifecycle management and records management
+
+- Disposition review no longer has maximums of 1,000,000 items and 200 disposition reviewers.
 
 ## November 2022
 
