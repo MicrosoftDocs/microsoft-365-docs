@@ -83,7 +83,7 @@ The images and the tables below list the changes in navigation between Microsoft
 
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
-| Policies | Cloud apps -> Policy management |
+| Policies | Cloud apps -> Policy management. Note: Azure AD identity protection policies would need to be will be removed gradually from the Cloud apps policies list. To configure alerts from these policies https://learn.microsoft.com/en-us/microsoft-365/security/defender/investigate-alerts?view=o365-worldwide#configure-aad-ip-alert-service | 
 | Templates | Cloud apps -> Policy templates |
 
 ### Settings
