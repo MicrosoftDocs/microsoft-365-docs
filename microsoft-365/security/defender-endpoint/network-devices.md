@@ -201,7 +201,7 @@ Validate that the scanner is running properly. Then go to the scan definition an
 
 ### My scanner is configured but scans aren't running
 
-As the authenticated scanner currently uses an algorithm that is not yet approved,  the scanner can't operate when an organizations enforce the usage of only approved algorithms.
+As the authenticated scanner currently uses an algorithm that is not yet approved, the scanner can't operate when an organizations enforce the usage of only approved algorithms.
 
 To allow not-approved algorithms, set the following value in the registry for the devices where the scanner will run:
 
