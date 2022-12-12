@@ -255,8 +255,6 @@ For more information about configuring Yammer in Native Mode, see:
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 
     - Choose a limited condition field, usually a sensitive info type or keyword dictionary to apply to the policy.
-     
-    - Consider using [adaptive scopes](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes) rather than creating and maintaining multiple policies with includes and excludes. Creating multiple policies can result in higher administrative overheads. 
 
     > [!NOTE]
     > If you want to enable [optical character recognition (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) to identify embedded or attached images in messages for printed or handwritten text that match policy conditions, select **Customize policy** > **Conditions and percentage** and enable **Extract printed or handwritten text from images for evaluation**.
