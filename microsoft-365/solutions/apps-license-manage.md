@@ -17,3 +17,8 @@ keywords:
 # Manage app licenses used in Intune
 
 
+## App store connectors
+
+
+## App store connector status
+

@@ -425,14 +425,10 @@
         items:
         - name: App licenses overview
           href: apps-license-overview.md
-        - name: Select and acquire app licenses
-          href: apps-license-select.md
         - name: Manage app licenses
           href: apps-license-manage.md
         - name: Confirm app licenses
-          href: apps-license-confirm.md
-        - name: Understand licenses terms
-          href: apps-license-terms.md
+          href: apps-license-monitor.md
       - name: Purchase apps
         items:
         - name: Purchase apps overview

@@ -1,11 +1,11 @@
 ---
-title: "Confirm app licenses used in Intune"
+title: "Monitor app licenses used in Intune"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Confirm app licenses used in Intune.
+description: Monitor app licenses used in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Confirm app licenses used in Intune
+# Monitor app licenses used in Intune
 
 <!-- 
 https://learn.microsoft.com/en-us/mem/intune/fundamentals/licenses#confirm-your-licenses
