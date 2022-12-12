@@ -2938,7 +2938,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links-for-Teams.md",
       "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#safe-links-settings-for-microsoft-teams",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links-warning-pages.md",
