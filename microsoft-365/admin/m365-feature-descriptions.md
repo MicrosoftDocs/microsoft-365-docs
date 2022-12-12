@@ -5,7 +5,7 @@ author: pebaum
 manager: scotv
 audience: ITPro
 ms.topic: reference
-f1_keywords:
+f1.keywords:
 - 'microsoft-365-and-office-365-general-information'
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
