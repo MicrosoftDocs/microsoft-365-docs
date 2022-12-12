@@ -199,15 +199,13 @@ If you still don't get results after 5 minutes, restart the service.
 
 Validate that the scanner is running properly. Then go to the scan definition and select "Run test." Check what error messages are returning from the relevant IP addresses.
 
-### My scanner is configured but scans are failing or not starting to run
+### My scanner is configured but scans are not running
 
-If your scanner is configured but scans are failing or not starting to run this maybe because your system enforce usage of only approved algorithms. The authenticated scanner currently used 
-
-an algorithm that is yet not approved, so when organizations enforce usage of only approved algorithms, the scanner cannot operate.
+If your scanner is configured but scans are not starting or failing to run this may be because your system enforces usage of only approved algorithms. The authenticated scanner currently uses an algorithm that is yet not approved, so when organizations enforce usage of only approved algorithms, the scanner cannot operate.
 
 To allow not-approved algorithms, set the following value in the registry for the devices where the scanner will run:
 
-    *Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy* with a DWORD value named **Enabled** and value of *0x0*
+    Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy* with a DWORD value named **Enabled** and value of *0x0*
 
 ### Required Defender Vulnerability Management user permission
 
