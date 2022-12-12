@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Global roles in Azure Active Directory (Azure AD) allow you to manage permissions and access to capabilities in all of Microsoft 365, which also includes Microsoft Defender for Office 365. But, if you need to limit permissions and capabilities to security features in Defender for Office 365 only, you can assign **Email & collaboration** permissions in the Microsoft 365 Defender portal.
@@ -88,7 +88,7 @@ For more information, see [View and assign administrator roles in Azure Active D
 
 In the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Email & collaboration roles** \> **Permissions & roles** page \> **Email & collaboration roles** \> **Roles** (or directly at <https://security.microsoft.com/emailandcollabpermissions>) you'll see the same role groups that are available in the Microsoft Purview compliance portal at <https://compliance.microsoft.com> \> **Permissions** page \> **Microsoft Purview solutions** \> **Roles** (or directly at <https://compliance.microsoft.com/compliancecenterpermissions>).
 
-For complete information about these role groups, see [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](permissions-in-the-security-and-compliance-center.md)
+For complete information about these role groups, see [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](scc-permissions.md)
 
 #### Modify Email & collaboration role membership in the Microsoft 365 Defender portal
 

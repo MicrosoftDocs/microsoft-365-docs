@@ -131,4 +131,4 @@ There are scenarios where Dynamic Delivery is unable to replace attachments in m
 ## Submitting files for malware analysis
 
 - If you receive a file that you want to send to Microsoft for analysis, see [Submit malware and non-malware to Microsoft for analysis](submissions-submit-files-to-microsoft.md).
-- If you receive an email message (with or without an attachment) that you want to submit to Microsoft for analysis, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- If you receive an email message (with or without an attachment) that you want to submit to Microsoft for analysis, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).

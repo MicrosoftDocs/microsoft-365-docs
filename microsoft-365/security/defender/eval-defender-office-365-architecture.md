@@ -61,7 +61,7 @@ The following table identified key concepts that are important to understand whe
 
 |Concept|Description|More information|
 |---|---|---|
-|Exchange Online Protection|Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware in email. EOP is included in all Microsoft 365 licenses that include Exchange Online.|[Exchange Online Protection overview](../office-365-security/exchange-online-protection-overview.md)|
+|Exchange Online Protection|Exchange Online Protection (EOP) is the cloud-based filtering service that helps protect your organization against spam and malware in email. EOP is included in all Microsoft 365 licenses that include Exchange Online.|[Exchange Online Protection overview](../office-365-security/eop-about.md)|
 |Anti-malware protection|Organizations with mailboxes in Exchange Online are automatically protected against malware.|[Anti-malware protection in EOP](../office-365-security/anti-malware-protection.md)|
 |Anti-spam protection|Organizations with mailboxes in Exchange Online are automatically protected against junk mail and spam.|[Anti-spam protection in EOP](../office-365-security/anti-spam-protection-about.md)|
 |Anti-phishing protection|Defender for Office 365 offers more advanced anti-phishing protection related to spear phishing, whaling, ransomware, and other malicious activities.|[Extra anti-phishing protection in Microsoft Defender for Office 365](../office-365-security/anti-phishing-protection-about.md)|
