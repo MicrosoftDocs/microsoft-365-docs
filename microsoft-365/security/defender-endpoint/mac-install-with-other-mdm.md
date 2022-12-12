@@ -85,19 +85,19 @@ MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.mi
 
 macOS requires that a user manually and explicitly approves certain functions that an application uses, for example system extensions, running in background, sending notifications, full disk access etc. Microsoft Defender for Endpoint relies on these functions, and cannot properly function until all these consents are received from a user.
 
-To grant consent automatically on user's behalf, an administrator pushes system policies through their MDM system. This is what we strongly recommend to do, instead of relying on manual approvals from end users.
+To grant consent automatically on a user's behalf, an administrator pushes system policies through their MDM system. This is what we strongly recommend doing, instead of relying on manual approvals from end users.
 
 We supply all policies that Microsoft Defender for Endpoint requires as mobileconfig files available at [https://github.com/microsoft/mdatp-xplat](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles). Mobileconfig is an Apple's import/export format that e.g. [Apple Configurator](https://support.apple.com/apple-configurator) or other products like [iMazing Profile Editor](https://imazing.com/profile-editor) support.
 
 Most MDM vendors support importing a mobileconfig file, creating a new custom configuration profile.
 
-To setup profiles:
+To set up profiles:
 
 1) Find out how a mobileconfig import is done with your MDM vendor
 2) For all profiles from [https://github.com/microsoft/mdatp-xplat](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles), download a mobileconfig file and import it
 3) Assign proper scope for each created configuration profile
 
-Note, that Apple regularly create new types of payloads with new versions of OS.
+Note, that Apple regularly creates new types of payloads with new versions of OS.
 You will have to visit the above mentioned page, and publish new profiles once they became available.
 We post notifications to our [What's New page](mac-whatsnew.md) once we make changes like that.
 
