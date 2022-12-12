@@ -24,7 +24,7 @@ description: "Learn how Microsoft 365 retention works for Exchange, using retent
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.  For other workloads, see:
+The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange. For other workloads, see:
 
 - [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
@@ -38,6 +38,8 @@ The following Exchange items from user mailboxes and shared mailboxes can be ret
 
 Calendar items that have an end date are supported for retention policies but aren't supported for retention labels.
 
+Public folders are supported for retention policies but aren't supported for retention labels.
+
 Contacts, and any tasks and calendar items that don't have an end date are not supported.
 
 Other items stored in a mailbox, such as Skype and Teams messages, aren't included in retention policies or labels for Exchange. These items have their own retention policies.
@@ -50,7 +52,7 @@ Both a mailbox and a public folder use the [Recoverable Items folder](/exchange/
   
 When a user deletes a message in a folder other than the Deleted Items folder, by default, the message moves to the Deleted Items folder. However, a user can soft delete an item (Shift+Delete) in any folder, which bypasses the Deleted Items folder and moves the item directly to the Recoverable Items folder.
   
-When you apply retention settings to Exchange data, a timer job periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy or retention label to retain the item, it is permanently deleted (also called hard deleted) from the Recoverable Items folder.
+When you apply retention settings to Exchange data, a timer job periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy or retention label to retain the item, it is permanently deleted (also called hard deleted) from the Recoverable Items folder. Items configured for [disposition review](disposition.md) are never permanently deleted from the Recoverable Items folder until the disposition is confirmed.
 
 > [!NOTE]
 > Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), permanent deletion is always suspended if the same item must be retained because of another retention policy or retention label, or it is under eDiscovery holds for legal or investigative reasons.

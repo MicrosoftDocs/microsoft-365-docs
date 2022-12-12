@@ -23,8 +23,8 @@ search.appverid:
 
 # Detect channel signals with communication compliance
 
->[!IMPORTANT]
->Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
+> [!IMPORTANT]
+> Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.
 
 With communication compliance policies, you can choose to analyze messages in one or more of the following communication platforms as a group or as standalone sources. Original messages captured across these platforms are retained in the original platform location in accordance with your organization's [retention and hold policies](/microsoft-365/compliance/information-governance). Copies of messages used by communication compliance policies for analysis and investigation are retained for as long as policy is in place, even if users leave your organization and their mailboxes are deleted. When a communication policy is deleted, copies of messages associated with the policy are also deleted.
 
