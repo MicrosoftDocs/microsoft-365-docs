@@ -9742,7 +9742,7 @@
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/microsoft-threat-experts.md",
-      "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
       "redirect_document_id": false
     },
     {
