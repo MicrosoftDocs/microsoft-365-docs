@@ -1,15 +1,14 @@
 ---
 title: "What is the difference between device and app management"
 f1.keywords:
-- NOCSH
+- NOCS
+- 'O365E_understand_devices'
+- 'BCS365_understand_devices'
 ms.author: efrene
 author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
-- 'O365E_understand_devices'
-- 'BCS365_understand_devices'
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
