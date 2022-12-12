@@ -48,7 +48,7 @@ Make sure that the following requirements are met:
 
 - Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Protect against threats in Office 365](protect-against-threats.md).
 
-- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). For some actions, you must also have the Preview role assigned.
+- You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md). For some actions, you must also have the Preview role assigned.
 
 ### Preview role permissions
 
@@ -61,7 +61,7 @@ To perform certain actions, such as viewing message headers or downloading email
 |Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
 
 > [!NOTE]
-> **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+> **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 >
 > The Global Administrator role is assigned the Microsoft 365 admin center at <https://admin.microsoft.com>. The Security Administrator and Security Reader roles are assigned in Microsoft 365 Defender portal.
 
