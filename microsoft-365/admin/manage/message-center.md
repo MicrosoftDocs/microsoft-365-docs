@@ -71,19 +71,19 @@ With hundreds of new and updated feature announcements across Microsoft 365, it 
 
 There will be three release statuses available on each applicable message which will be updated over the lifecycle of the feature release. 
 
-- **Scheduled**: The feature is planned to release, and is not available to the applicable users in your organization 
+- **Scheduled**: The feature is planned to release to your tenant, and is not yet available to any user in your organization 
 
 
-- **Rolling out**: The feature is beginning to roll out to some applicable users in your organization. 
+- **Rolling out**: The feature is beginning to roll out to some applicable users in your organization and is not yet available to all the applicable users in your organization. 
 
 
-- **Launched**: The feature is available to all the applicable users in your organization 
+- **Launched**: The feature is generally available to all the applicable users in your organization. 
 
 Updates to feature release status will be provided on the original Message center post. Filtering capability on **"status for your org."** will allow better visibility on the updated release status.  
 
-:::image type="content" source="../../media/message-center-rolloutstatus-listanddetailsview.png" alt-text="Image displaying ‘status for your org.’ updated release choices."::: 
+:::image type="content" source="../../media/message-center-rolloutstatus-listanddetailsview.png" alt-text="Image displaying ‘status for your org.’ updated release choices.":::
 
-The release status will **ONLY** be available for new and updated features that are also announced on M365 Roadmap. If you do not see release status on a message, it means the release status is not available for that feature.
+The release status will **ONLY** be available for generally available new and updated features that are also announced on Microsoft 365 Public Roadmap. If you do not see release status on a message, it means the release status is not available for that feature.
 ## Relevance Recommendation
 
 For each new Message center post, we will provide a recommendation for how relevant the change is for your organization. This recommendation is based on multiple factors such as: 
