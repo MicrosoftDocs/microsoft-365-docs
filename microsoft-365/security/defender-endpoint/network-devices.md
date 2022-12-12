@@ -205,7 +205,7 @@ If your scanner is configured but scans are not starting or failing to run this 
 
 To allow not-approved algorithms, set the following value in the registry for the devices where the scanner will run:
 
-    Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy* with a DWORD value named **Enabled** and value of *0x0*
+    Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy* with a DWORD value named **Enabled** and value of **0x0**
 
 ### Required Defender Vulnerability Management user permission
 
