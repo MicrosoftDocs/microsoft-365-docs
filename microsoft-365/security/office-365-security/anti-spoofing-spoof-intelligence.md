@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -141,7 +141,7 @@ When you select an entry from the list, a details flyout appears that contains t
 - What you need to do.
 - A domain summary that includes most of the same information from the main spoof intelligence page.
 - WhoIs data about the sender.
-- A link to open [Threat Explorer](threat-explorer.md) to see additional details about the sender under **View** \> **Phish** in Microsoft Defender for Office 365.
+- A link to open [Threat Explorer](threat-explorer-about.md) to see additional details about the sender under **View** \> **Phish** in Microsoft Defender for Office 365.
 - Similar messages we have seen in your tenant from the same sender.
 
 ### About allowed spoofed senders
@@ -171,7 +171,7 @@ For detailed syntax and parameter information, see [Get-SpoofIntelligenceInsight
 
 Be diligent about spoofing and phishing protection. Here are related ways to check on senders who are spoofing your domain and help prevent them from damaging your organization:
 
-- Check the **Spoof Mail Report**. You can use this report often to view and help manage spoofed senders. For information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
+- Check the **Spoof Mail Report**. You can use this report often to view and help manage spoofed senders. For information, see [Spoof Detections report](reports-email-security.md#spoof-detections-report).
 
 - Review your Sender Policy Framework (SPF) configuration. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Microsoft 365 to help prevent spoofing](email-authentication-spf-configure.md). For a more in-depth understanding of how Office 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
 

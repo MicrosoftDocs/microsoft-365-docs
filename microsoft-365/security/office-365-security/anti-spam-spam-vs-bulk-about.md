@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 # What's the difference between junk email and bulk email in EOP?
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -66,7 +66,7 @@ EmailEvents
 
 This query allows admins to identify wanted and unwanted senders. If a bulk sender has a BCL score that doesn't meet the bulk threshold, admins can [submit the sender's messages to Microsoft for analysis](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal), which adds the sender as an allow entry to the Tenant Allow/Block List.
 
-Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft 365 Defender for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
+Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft 365 Defender for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](reports-email-security.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
 
 1. In the Threat protection status report, select **View data by Email \> Spam**. To go directly to the report, open one of the following URLs:
 
