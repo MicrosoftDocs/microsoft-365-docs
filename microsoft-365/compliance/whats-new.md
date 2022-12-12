@@ -42,7 +42,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data lifecycle management and records management
 
-- Disposition review no longer has maximums of 1,000,000 items and 200 disposition reviewers. These limitations are removed from [Limits for retention policies and retention label policies](retention-limits.md).
+- Disposition review no longer has a maximum of 1,000,000 items and this limitation is removed from [Limits for retention policies and retention label policies](retention-limits.md).
 
 ### Sensitivity labels
 
