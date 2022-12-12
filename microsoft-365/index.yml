@@ -136,7 +136,7 @@ conceptualContent:
               text: Microsoft 365 productivity illustrations
           # footerLink (optional)
           footerLink:
-            url: solutions/
+            url: solutions/index.yml
             text: See more
         # Card
         - title: Manage devices
