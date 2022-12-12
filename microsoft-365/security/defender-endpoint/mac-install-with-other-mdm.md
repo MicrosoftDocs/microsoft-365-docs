@@ -39,7 +39,6 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 ## Approach
 
 > [!CAUTION]
-
 > Currently, Microsoft officially supports only Intune and JAMF for the deployment and management of Microsoft Defender for Endpoint on macOS. Microsoft makes no warranties, express or implied, with respect to the information provided below.
 
 If your organization uses a Mobile Device Management (MDM) solution that is not officially supported, this does not mean you are unable to deploy or run Microsoft Defender for Endpoint on macOS.
