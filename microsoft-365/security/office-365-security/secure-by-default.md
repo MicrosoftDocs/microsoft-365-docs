@@ -24,7 +24,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -41,7 +41,7 @@ Microsoft 365 organizations with mailboxes in Exchange Online are protected by E
 - Email with suspected malware will automatically be quarantined. Whether recipients are notified about quarantined malware messages is controlled by the quarantine policy and the settings in the anti-malware policy. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 - Email identified as high confidence phishing will be handled according to the anti-spam policy action. See [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
-For more information about EOP, see [Exchange Online Protection overview](exchange-online-protection-overview.md).
+For more information about EOP, see [Exchange Online Protection overview](eop-about.md).
 
 Because Microsoft wants to keep our customers secure by default, some tenants overrides are not applied for malware or high confidence phishing. These overrides include:
 

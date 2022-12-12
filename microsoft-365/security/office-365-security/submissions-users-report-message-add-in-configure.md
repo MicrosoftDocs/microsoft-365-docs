@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -99,7 +99,7 @@ After the add-in is installed and enabled, users will see the following icons:
 
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+- Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 - For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
 

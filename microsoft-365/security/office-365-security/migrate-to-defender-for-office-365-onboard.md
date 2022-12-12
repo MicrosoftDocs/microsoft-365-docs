@@ -72,7 +72,7 @@ If your organization does not have a security response team or existing process 
 
 ### RBAC roles
 
-Permissions in Defender for Office 365 is based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). These are the important points to keep in mind:
+Permissions in Defender for Office 365 is based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft 365 Defender portal](mdo-portal-permissions.md). These are the important points to keep in mind:
 
 - Azure AD roles give permissions to **all** workloads in Microsoft 365. For example, if you add a user to the Security Administrator in the Azure portal, they have Security Administrator permissions everywhere.
 - Email & collaboration roles in the Microsoft 365 Defender portal give permissions to the Microsoft 365 Defender Portal and the Microsoft Purview compliance portal. For example, if you add a user to Security Administrator in the Microsoft 365 Defender portal, they have Security Administrator access **only** in the Microsoft 365 Defender Portal and the Microsoft Purview compliance portal.

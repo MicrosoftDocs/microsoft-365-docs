@@ -114,7 +114,7 @@ On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-ico
 
 ## Threat protection status report
 
-The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](reports-email-security.md#threat-protection-status-report).
+The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](eop-about.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 
 ## Top senders and recipients report
 
@@ -236,7 +236,7 @@ In order to view and use the reports described in this article, you need to be a
 - **Security Reader**
 - **Global Reader**
 
-For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
