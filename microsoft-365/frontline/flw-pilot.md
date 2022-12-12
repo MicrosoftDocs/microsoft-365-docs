@@ -147,7 +147,7 @@ For step-by-step guidance, see [Use the Frontline Worker onboarding wizard to ge
 
 After you have Teams set up and you have your teams and channels created, you can configure any additional frontline apps that you want to use in the pilot, including:
 
-- [Bookings](bookings-virtual-appointments.md) to schedule appointments with clients or customers.
+- The [Virtual Appointments](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) app (Preview) or the [Bookings](bookings-virtual-appointments.md) app to schedule appointments with clients or customers.
 - [Shifts](shifts-for-teams-landing-page.md) to schedule your frontline workforce.
 - [Viva Learning](/sharepoint/build-learning-and-training-experiences-for-employees) to build learning and training experiences for employees.
 
