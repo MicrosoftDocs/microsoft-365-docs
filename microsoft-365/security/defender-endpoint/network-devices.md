@@ -130,9 +130,9 @@ To complete the network scanner registration process:
 
 The network scanner has a scheduled task that, by default, is configured to look for updates on a regular basis. When the task runs, it compares the version of the network scanner on the client device to the version of the agent on the update location. The update location is where Windows looks for updates, such as on a network share or from the internet.
 
-If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. Once the required updates are determined, the downloading the updates will start.
+If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. Once the required updates are determined, the downloading of the updates will start.
 
-It is possible to disable automatic updates of the network scanner by going to the **MDATP Network Scanner Updater** in the Windows Task Scheduler. To disable it:
+It's possible to disable automatic updates of the network scanner by going to the **MDATP Network Scanner Updater** in the Windows Task Scheduler. To disable it:
 
 - Right-click on **MDATP Network Scanner Updater** and select **Disable**.
 - To re-enable, right-click on **MDATP Network Scanner Updater** and select **Enable**.
@@ -198,6 +198,10 @@ If you still don't get results after 5 minutes, restart the service.
 ### Devices last seen time is longer than 24 hours
 
 Validate that the scanner is running properly. Then go to the scan definition and select "Run test." Check what error messages are returning from the relevant IP addresses.
+
+### My scanner is configured but scans are failing or not starting to run
+
+
 
 ### Required Defender Vulnerability Management user permission
 
