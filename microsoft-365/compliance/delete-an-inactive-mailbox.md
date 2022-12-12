@@ -62,7 +62,9 @@ See the [More information](#more-information) section for a description of what 
 
 ## How to delete an inactive mailbox by removing holds
 
-After you've [identified what type of hold is placed on the inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox) and whether there are multiple holds, you can remove the holds on the mailbox. 
+After you've [identified what type of hold is placed on the inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox) and whether there are multiple holds, you can remove the holds on the mailbox.
+
+An exception is if the inactive mailbox has one or more retention labels configured to retain the item. In this case, you can't remove the hold.
 
 When the last hold is removed, no further action is required from you because the inactive mailbox will be [automatically deleted](#automatic-deletion).
 
