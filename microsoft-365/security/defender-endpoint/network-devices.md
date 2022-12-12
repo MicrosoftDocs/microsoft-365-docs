@@ -126,6 +126,17 @@ To complete the network scanner registration process:
 
 3. When finished, you should see a message confirming you have signed in.
 
+### Updates for Network scanner
+
+The network scanner has a scheduled task that, by default, is configured to look for updates on a regular basis. When the task runs, it compares the version of the network scanner on the client device to the version of the agent on the update location. The update location is where Windows looks for updates, such as on a network share or from the internet.
+
+If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. Once the required updates are determined, the downloading the updates will start.
+
+It is possible to disable automatic updates of the network scanner by going to the **MDATP Network Scanner Updater** in the Windows Task Scheduler. To disable it:
+
+- Right-click on **MDATP Network Scanner Updater** and select **Disable**.
+- To re-enable, right-click on **MDATP Network Scanner Updater** and select **Enable**.
+
 ## Configure a new network device authenticated scan
 
 1. Go to **Settings** > **Device discovery** > **Authenticated scans** in the [Microsoft 365 Defender portal](https://security.microsoft.com).
