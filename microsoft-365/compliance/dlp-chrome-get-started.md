@@ -140,21 +140,33 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 3. Select **Create Profile**.
 
-4. Select **Windows 10** as the platform.
+4. Select **Windows 10 and later** as the platform.
 
-5. Select **Custom** as profile type.
+5. Select **Templates** as the profile type.
 
-6. Select the **Settings** tab.
+6. Select **Custom** as the template name.
 
-7. Select **Add**.
+7. Click create.
 
-8. Enter the following policy information.
+8. Enter a name and optional description on the **Basics** tab and click next.
+
+9. Select **Add** on the **Configuration settings** tab.
+
+10. Enter the following policy information.
 
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Data type: `String`<br/>
     Value: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
+    
+11. Click save and click next.
 
-9. Click create.
+12. Add or edit scope tags on the **Scope tags** tab if desired and click next.
+
+13. Add the desired deployment users/devices/groups on the **Assignments** tab and click next.
+
+14. Add applicability rules on the **Applicability Rules** tab if desired and click next.
+
+15. Click create.
 
 ### Deploy using Group Policy
 
