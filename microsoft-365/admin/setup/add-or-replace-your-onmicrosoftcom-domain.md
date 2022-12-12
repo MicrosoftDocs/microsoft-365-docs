@@ -53,9 +53,6 @@ You can change your fallback domain in the Microsoft 365 admin center. Common re
 While you can add additional onmicrosoft.com domains, only one onmicrosoft.com domain can be used as your fallback domain. The steps in this article describe how to:
 - Create a new onmicrosoft.com domain
 - Assign it as your fallback domain
-
-> [!NOTE]
-> You are limited a total of five onmicrosoft.com domains in your Microsoft 365 environment. Once they are added, they cannot be removed. 
   
 ## Before you begin
 
