@@ -60,5 +60,15 @@
             "redirect_url": "https://learn.microsoft.com/legal/test-base/testbase-for-m365-product-terms-changehistory",
             "redirect_document_id": false
         },
+        {
+            "source_path": "microsoft-365/security/defender/microsoft-threat-experts.md",
+            "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "microsoft-365/security/defender/configure-microsoft-threat-experts.md",
+            "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
+            "redirect_document_id": false
+        }
     ]
 }

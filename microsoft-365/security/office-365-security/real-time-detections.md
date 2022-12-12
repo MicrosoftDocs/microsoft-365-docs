@@ -165,7 +165,7 @@ To view and use Explorer *or* Real-time detections, you need the following permi
 
 To learn more about roles and permissions, see the following articles:
 
-- [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
+- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
 - [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 
 ## More information
@@ -173,5 +173,5 @@ To learn more about roles and permissions, see the following articles:
 - [Threat Explorer collect email details on the email entity page](mdo-email-entity-page.md)
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)
-- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+- [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft Threat Protection](automated-investigation-response-office.md)
