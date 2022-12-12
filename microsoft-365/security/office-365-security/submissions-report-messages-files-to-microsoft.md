@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -48,7 +48,7 @@ Watch this video that shows more information about the unified submissions exper
 
 - [The Submissions page](submissions-admin.md)
 - [Automated investigation and response (AIR) results](air-view-investigation-results.md)
-- [The User-reported messages report](view-email-security-reports.md#user-reported-messages-report)
+- [The User-reported messages report](reports-email-security.md#user-reported-messages-report)
 - [Threat Explorer](threat-explorer-views.md#email--submissions)
 
 Admins can use mail flow rules (also known as transport rules) to notify specified email address when users report messages to Microsoft for analysis. For more information, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
