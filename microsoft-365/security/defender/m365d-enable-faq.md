@@ -93,8 +93,10 @@ By default, Microsoft 365 Defender displays time information in the UTC time zon
 
 Microsoft regularly provides information through the various channels, including:
 
+- Blogposts in the [Microsoft 365 security & compliance tech community](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/bg-p/MicrosoftThreatProtectionBlog)
+- Go to [Defender monthly news](https://aka.ms/defendernews) 
 - The [message center](../../admin/manage/message-center.md) in Microsoft 365 admin center
-- Blogposts in the [Microsoft 365 security & compliance tech community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
+
 
 Get the latest publicly available experiences by turning on [preview features](preview.md).
 
