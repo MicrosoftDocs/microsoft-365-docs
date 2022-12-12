@@ -42,10 +42,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data lifecycle management and records management
 
-- Disposition review no longer has maximums of 1,000,000 items and 200 disposition reviewers.
+- Disposition review no longer has maximums of 1,000,000 items and 200 disposition reviewers. These limitations are removed from [Limits for retention policies and retention label policies](retention-limits.md).
 
 ### Sensitivity labels
 
+
+- **General availability (GA)**: S/MIME support for Windows is now available with the Office Current Channel, providing parity with the AIP add-in. For more information, see [Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
 - **Rolling out in preview**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md).
 
 ## November 2022
