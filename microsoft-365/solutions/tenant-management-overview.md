@@ -3,7 +3,7 @@ title: Tenant management for Microsoft 365 for enterprise
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
@@ -128,7 +128,7 @@ The following sections and table list the key capabilities and licensing for the
 
 |Capability or feature|Description|Licensing|
 |---|---|---|
-|Microsoft Intune|A cloud-based service that provides mobile device management (MDM) and mobile application management (MAM) to control how your organization’s application and the devices are used, including mobile phones, tablets, and laptops.|Microsoft 365 E3 or E5|
+|Microsoft Intune|A cloud-based service that provides mobile device management (MDM) and mobile application management (MAM) to control how your organization's application and the devices are used, including mobile phones, tablets, and laptops.|Microsoft 365 E3 or E5|
 |Basic Mobility and Security|Secure and manage your users' mobile devices like iPhones, iPads, Androids, and Windows phones with this built-in service.|Microsoft 365 E3 or E5|
 ||||
 
