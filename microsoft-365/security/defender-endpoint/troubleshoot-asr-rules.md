@@ -85,7 +85,7 @@ To expand the above information on ASR rules, you can use the properties **Attac
 Example:
 
 ```powershell
-Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids
+Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Ids
 ```
 
 :::image type="content" source="images/getmpref-examplenew.png" alt-text="The get mpreference example" lightbox="images/getmpref-examplenew.png":::
