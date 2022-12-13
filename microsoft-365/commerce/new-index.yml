@@ -33,8 +33,6 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: This is a sample without a URL
-            url: 
           - text: View your bill or invoice
             url: billing-and-payments/view-your-bill-or-invoice.md
           - text: Manage payment methods
