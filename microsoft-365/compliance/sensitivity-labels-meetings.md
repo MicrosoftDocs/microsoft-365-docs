@@ -79,6 +79,8 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 ## Limitations
 
+- Preventing copying chat has some limitations that are listed in the [Prevent copying chat to the clipboard label setting](#prevent-copying-chat-to-the-clipboard-label-setting) section on this page.
+
 - Calendar items don't support label encryption that uses S/MIME or Double Key Encryption. You must use the default encryption that uses the Azure Rights Management service from Azure Information Protection, with either admin-defined permissions (the option **Assign permissions now**) or user-defined permissions (the option **Let users assign permissions**).
 
 - Automatic and recommended labeling isn't supported.
@@ -178,7 +180,7 @@ Other label policy settings that are specific just to calendar items, Teams meet
 
 The label setting to prevent copying chat to the clipboard is enforced for all channel chats, even outside channel meetings. For non-channel meetings, it's enforced only for meetings.
 
-Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users.
+Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users. For meetings, it's also not supported for users who join the chat but weren't invited to the meeting.
 
 The methods supported to prevent copying chat: Select the text and then right-click \> **Copy** or Ctrl+C. Copying using developer tools or third-party apps won't be prevented.
 
