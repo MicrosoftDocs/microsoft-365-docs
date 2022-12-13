@@ -146,7 +146,7 @@ To sort policies by groups:
 
 - **All policies**: This is the default view, displaying all the policies in the list. 
 
-- **Show only favorites**: Groups policies by favorites at the top of the list. This option shows only those policies marked as favorites. 
+- **Show only favorites**: Groups policies by favorites at the top of the list. 
 
 ![Communication compliance sort policies by group.](../media/communication-compliance-group-favorites.png)
 
