@@ -35,7 +35,7 @@ When auditing in the Microsoft Purview compliance portal is turned on, user and 
 
 ## Before you turn auditing on or off
 
-- You have to be assigned the Audit Logs role in Exchange Online to turn auditing on or off in your Microsoft 365 organization. By default, this role is assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global admins in Microsoft 365 are members of the Organization Management role group in Exchange Online.
+- You have to be assigned the *Audit Logs* role in Exchange Online to turn auditing on or off in your Microsoft 365 organization. By default, this role is assigned to the *Compliance Management* and *Organization Management* role groups on the **Permissions** page in the Exchange admin center. Global admins in Microsoft 365 are members of the **Organization Management* role group in Exchange Online.
 
     > [!NOTE]
     > Users have to be assigned permissions in Exchange Online to turn auditing on or off. If you assign users the Audit Logs role on the **Permissions** page in the compliance portal, they won't be able to turn auditing on or off. This is because the underlying cmdlet is an Exchange Online PowerShell cmdlet.
