@@ -212,7 +212,7 @@ The following configuration settings are recommended:
 - Disable catch-up full scan: Not configured
 - Disable catchup quick scan: Not configured
 - CPU usage limit per scan: 50
-- Scan mapped netoword drives during full scan: Not configured
+- Scan mapped network drives during full scan: Not configured
 - Run daily quick scan at: 12 PM
 - Scan type: Not configured
 - Day of week to run scheduled scan: Not configured
