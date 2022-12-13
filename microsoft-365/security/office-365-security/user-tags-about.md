@@ -60,19 +60,15 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **User tags** page, use <https://security.microsoft.com/securitysettings/userTags>.
 
-- You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
-  - To create, modify, and delete custom user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - To add and remove members from the Priority Account system tag, you need to be a member of the **Security Administrator** and **Exchange Admin** role groups.
-  - To add and remove members from existing custom user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to user tags, you need to be a member of the **Global Reader**, **Security Operator**, or **Security Reader** role groups.
-
-  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md):
+    - _Create, modify, and delete custom user tags_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Add and remove members from the Priority Account system tag_: Membership in the **Security Administrator** and **Exchange Admin** role groups.
+    - _Add and remove members from existing custom user tags_: Membership in the **Organization Management** or **Security Administrator** role groups.
 
   > [!NOTE]
-  >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  >
-  > - User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
+  > User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
 
 - You can also manage and monitor priority accounts in the Microsoft 365 admin center. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
 

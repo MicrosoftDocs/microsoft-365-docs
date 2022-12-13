@@ -53,17 +53,12 @@ There are 2 types of restricted entities:
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You must have permissions in **Exchange Online** before you can follow the procedures mentioned in this article:
-  - To remove connectors from the Restricted entities portal, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to the Restricted entities portal, you need to be a member of the **Global Reader** or **Security Reader** role groups.
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  > [!NOTE]
-  >
-  > - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  >
-  > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Remove connectors from the Restricted entities portal_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Read-only access to the Restricted entities portal_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - Before you remove the connector from the Restricted entities portal, be sure to follow the required steps to regain control of the connector. For more information, see [Respond to a compromised connector](connectors-detect-respond-to-compromise.md).
 

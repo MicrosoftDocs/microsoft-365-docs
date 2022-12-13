@@ -143,13 +143,12 @@ You might want to apply the **Standard** or **Strict** preset security policies 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To configure preset security policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to preset security policies, you need to be a member of the **Global Reader** role group.
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Configure preset security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Read-only access to preset security policies_: Membership in the **Global Reader** role group.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ### Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users
 

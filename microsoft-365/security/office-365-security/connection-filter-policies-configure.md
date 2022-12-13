@@ -37,7 +37,7 @@ If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standa
 
 - **IP Block List**: Block all incoming messages from the source email servers that you specify by IP address or IP address range. The incoming messages are rejected, are not marked as spam, and no additional filtering occurs. For more information about how the IP Block List should fit into your overall blocked senders strategy, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
-- **Safe list**: The *safe list* is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Microsoft identifies these trusted email sources from subscriptions to various third-party lists. You enable or disable the use of the safe list; you can't configure the source email servers on the safe list. Spam filtering is skipped on incoming messages from the email servers on the safe list.
+- **Safe list**: The _safe list_ is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Microsoft identifies these trusted email sources from subscriptions to various third-party lists. You enable or disable the use of the safe list; you can't configure the source email servers on the safe list. Spam filtering is skipped on incoming messages from the email servers on the safe list.
 
 This article describes how to configure the default connection filter policy in the Microsoft 365 Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes). For more information about how EOP uses connection filtering is part of your organization's overall anti-spam settings, see [Anti-spam protection](anti-spam-protection-about.md).
 
@@ -50,16 +50,12 @@ This article describes how to configure the default connection filter policy in 
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To modify the default connection filter policy, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - For read-only access to the default connection filter policy, you need to be a member of the **Global Reader** or **Security Reader** role groups.
-
-  For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
-
-  **Notes**:
-
-  - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
+- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+    - _Modify policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
+    - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
+  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - To find the source IP addresses of the email servers (senders) that you want to allow or block, you can check the connecting IP (**CIP**) header field in the message header. To view a message header in various email clients, see [View internet message headers in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -125,8 +121,8 @@ Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional
   - Single IP: For example, 192.168.1.1.
   - IP range: For example, 192.168.0.1-192.168.0.254.
   - CIDR IP: For example, 192.168.0.1/25. Valid network mask values are /24 through /32.
-- To *overwrite* any existing entries with the values you specify, use the following syntax: `IPAddressOrRange1,IPAddressOrRange2,...,IPAddressOrRangeN`.
-- To *add or remove* IP addresses or address ranges without affecting other existing entries, use the following syntax: `@{Add="IPAddressOrRange1","IPAddressOrRange2",...,"IPAddressOrRangeN";Remove="IPAddressOrRange3","IPAddressOrRange4",...,"IPAddressOrRangeN"}`.
+- To _overwrite_ any existing entries with the values you specify, use the following syntax: `IPAddressOrRange1,IPAddressOrRange2,...,IPAddressOrRangeN`.
+- To _add or remove_ IP addresses or address ranges without affecting other existing entries, use the following syntax: `@{Add="IPAddressOrRange1","IPAddressOrRange2",...,"IPAddressOrRangeN";Remove="IPAddressOrRange3","IPAddressOrRange4",...,"IPAddressOrRangeN"}`.
 - To empty the IP Allow List or IP Block List, use the value `$null`.
 
 This example configures the IP Allow List and the IP Block List with the specified IP addresses and address ranges.
@@ -189,9 +185,9 @@ For example, the source email server 192.168.1.25 sends email from the domains c
 
 Messages from an email server in your IP Allow List are still subject to spam filtering in the following scenarios:
 
-- An IP address in your IP Allow List is also configured in an on-premises, IP-based inbound connector in *any* tenant in Microsoft 365 (let's call this Tenant A), **and** Tenant A and the EOP server that first encounters the message both happen to be in *the same* Active Directory forest in the Microsoft datacenters. In this scenario, **IPV:CAL** *is* added to the message's [anti-spam message headers](message-headers-eop-mdo.md) (indicating the message bypassed spam filtering), but the message is still subject to spam filtering.
+- An IP address in your IP Allow List is also configured in an on-premises, IP-based inbound connector in _any_ tenant in Microsoft 365 (let's call this Tenant A), **and** Tenant A and the EOP server that first encounters the message both happen to be in _the same_ Active Directory forest in the Microsoft datacenters. In this scenario, **IPV:CAL** _is_ added to the message's [anti-spam message headers](message-headers-eop-mdo.md) (indicating the message bypassed spam filtering), but the message is still subject to spam filtering.
 
-- Your tenant that contains the IP Allow List and the EOP server that first encounters the message both happen to be in *different* Active Directory forests in the Microsoft datacenters. In this scenario, **IPV:CAL** *is not* added to the message headers, so the message is still subject to spam filtering.
+- Your tenant that contains the IP Allow List and the EOP server that first encounters the message both happen to be in _different_ Active Directory forests in the Microsoft datacenters. In this scenario, **IPV:CAL** _is not_ added to the message headers, so the message is still subject to spam filtering.
 
 If you encounter either of these scenarios, you can create a mail flow rule with the following settings (at a minimum) to ensure that messages from the problematic IP addresses will skip spam filtering:
 
