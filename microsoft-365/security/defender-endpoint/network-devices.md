@@ -132,9 +132,7 @@ The network scanner has a scheduled task that, by default, is configured to look
 
 If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. Once the required updates are determined, the downloading of the updates will start.
 
-find this task inside the Windows Task Scheduler.
-
-It's possible to disable automatic updates of the network scanner by going to the **MDATP Network Scanner Updater** inside the Windows Task Scheduler. To do this: 
+It's possible to disable automatic updates of the network scanner by going to the **MDATP Network Scanner Updater** inside the Windows Task Scheduler. To do this:
 
 - In Windows, go to **Computer Management** > **Task Scheduler** > **Task Scheduler Library**.
 - Select **MDATP Network Scanner Updater** > right-click > and select **Disable**.
@@ -204,9 +202,12 @@ Validate that the scanner is running properly. Then go to the scan definition an
 
 ### My scanner is configured but scans aren't running
 
-As the authenticated scanner currently uses an encryption algorithm that is not approved as part of the Federal Information Processing Standards (FIPS), the scanner can't operate when an organizations enforce FIPS-only algorithms.
+As the authenticated scanner currently uses an encryption algorithm that is not compliant with [Federal Information Processing Standards (FIPS)](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing/), the scanner can't operate when an organization enforces the use FIPS compliant algorithms.
 
-To allow not-approved algorithms, set the following value in the registry for the devices where the scanner will run:
+>[!Note]
+>FIPS compliant algorithms are only used in relation to departments and agencies of the United States federal government.
+
+To allow algorithms that are not compliant with FIPS, set the following value in the registry for the devices where the scanner will run:
 
 Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy with a DWORD value named **Enabled** and value of **0x0**
 
