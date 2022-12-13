@@ -24,6 +24,7 @@ search.appverid: met150
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
@@ -54,7 +55,7 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 
 - **4.18.2205 or later**: Expand the default enforcement to **Printer**. If you set it to **Deny**, it will block Printer as well, so if you only want to manage storage, make sure to create a custom policy to allow Printer
 
-- **4.18.2207 or later**: Add **File** support, the common use case can be: block people from Read/Write/Execute access specific file on removable storage; add **Network** and **VPN Connection** support, the common use case can be: block people from access removable storage when the machine isn't connecting corporate network. 
+- **4.18.2207 or later**: Add **File** support, the common use case can be: block people from Read/Write/Execute access specific file on removable storage; add **Network** and **VPN Connection** support, the common use case can be: block people from access removable storage when the machine isn't connecting corporate network.
 
 :::image type="content" source="images/powershell.png" alt-text="Screenshot of the PowerShell interface" lightbox="images/powershell.png":::
 
@@ -67,12 +68,14 @@ The Removable Storage Access Control includes Removable storage group creation a
 
 - Removable storage group allows you to create group. For example, authorized USB group or encrypted USB group.
 - Access policy rule allows you to create policy to restrict each removable storage group. For example, only allow authorized user to Write access-authorized USB group.
-- To block a specific removable storage class but allow specific media, you can use ‘`IncludedIdList` a group through `PrimaryId` and `ExcludedIDList` a group through `DeviceId`\/`HardwareId`/etc.`  For more information, see [Deploy Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri).
+- To block a specific removable storage class but allow specific media, you can use `IncludedIdList` a group through `PrimaryId` and `ExcludedIDList` a group through `DeviceId/HardwareId/etc.` For more information, see [Deploy Removable Storage Access Control by using Intune OMA-URI](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri).
 
 Here are the properties you can use when you create the group and policy XML files.
 
 ### Group
+
 Group includes following types:
+
 - Device: if there's an explicit type setting, this setting is the default, including removable storage and Printer.
 - Network
 - VPN Connection
@@ -107,8 +110,8 @@ The following table lists the properties you can use in **Entry**:
 |---|---|---|
 | **Entry Id** | GUID, a unique ID, represents the entry and will be used in the reporting and troubleshooting.| You can generate ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)|
 | **Type** | Defines the action for the removable storage groups in IncludedIDList. <p>Enforcement: Allow or Deny <p>Audit: AuditAllowed or AuditDenied<p> | Allow<p>Deny <p>AuditAllowed: Defines notification and event when access is allowed <p>AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.<p> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**. |
-| **SID** | Local user SID or user SID group or the SID of the AD object or the Object ID of the Azure AD object, defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the machine. |  |
-| **ComputerSID** | Local computer SID or computer SID group or the SID of the AD object or the Object Id of the AAD object, defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both SID and ComputerSID into the same Entry. |  |
+| **Sid** | Local user Sid or user Sid group or the Sid of the AD object or the Object ID of the Azure AD object, defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the machine. |  |
+| **ComputerSid** | Local computer Sid or computer Sid group or the Sid of the AD object or the Object Id of the AAD object, defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both SID and ComputerSID into the same Entry. |  |
 | **Options** | Defines whether to display notification or not |**When Type Allow is selected**: <p>0: nothing<p>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Allow** happens and the AuditAllowed is setting configured, the system won't send event. <p>8: capture file information and have a copy of the file as evidence for Write access. <p>16: capture file information for Write access. <p>**When Type Deny is selected**: <p>0: nothing<p>4: disable **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system won't show notification. <p>**When Type **AuditAllowed** is selected**: <p>0: nothing <p>1: nothing <p>2: send event<p> **When Type **AuditDenied** is selected**: <p>0: nothing <p>1: show notification <p>2: send event<p>3: show notification and send event |
 |AccessMask|Defines the access. | **Disk level access**: <p>1: Read <p>2: Write <p>4: Execute <p>**File system level access**: <p>8: File system Read <p>16: File system Write <p>32: File system Execute <p><p>You can have multiple access by performing binary OR operation, for example, the AccessMask for Read and Write and Execute will be 7; the AccessMask for Read and Write will be 3.|
 |Parameters|Condition for this Entry, for example Network condition. | Can add groups (non Devices type) or even put Parameters into Parameters. See Parameters properties table below to get details.|

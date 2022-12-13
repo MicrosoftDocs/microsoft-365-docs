@@ -37,15 +37,12 @@ During the GDAP setup process, you'll assign roles to tiers of job functions for
 
 - You'll need to have specific permissions in your own tenant:
 
-  - To establish GDAP security groups and add users, you'll need Global Administrator, User Administrator, or Groups Administrator to set up users with standing access to GDAP roles. You can assign these roles in Azure Active Directory (ADD).
-
-    - To enable the just-in-time (JIT) Only tier, you'll need to have Global Administrator or a combination of User Administrator and Privilege Role Administrator.
-
+  - To establish GDAP security groups, add users and create GDAP templates, you will need Global Administrator in your partner tenant. You can assign this role in Azure Active Directory (AAD).
   - To create and complete GDAP relationships, you must be a member of the Admin Agents group in Partner Center.
 
 - Any customer can be managed by a Lighthouse partner, if they're set up in Partner Center with either a reseller relationship or an existing delegated relationship (DAP or GDAP).
 
-- To enable the JIT Only tier permissions, you'll also need an Azure AD P2 license.
+- To enable the JIT Only tier permissions, you'll also need an Azure AD P2 license for your own tenant.
 
 ## Set up GDAP for the first time
 

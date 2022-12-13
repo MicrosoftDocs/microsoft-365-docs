@@ -80,6 +80,7 @@ Some features are only supported by built-in labeling for Office apps, and won't
     - In Word, users can review and remove the identified sensitive content
 - [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that is integrated into existing user workflows
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support)
+- [Protect meeting invites, with their attachments and responses](sensitivity-labels-meetings.md) (in preview)
 - For labels that let users assign permissions, different permissions (Read or Change) can be granted to users or groups
 - Encrypt-Only for emails
 - Support for account switching
@@ -96,7 +97,7 @@ To keep informed when new labeling capabilities become available for built-in la
 For the latest Office apps, the AIP add-in is disabled by default, so there's nothing for you to configure:
 
 - Currently rolling out to [Current Channel (Preview)](https://office.com/insider)
-- **Current Channel** and **Monthly Enterprise Channel**: Not before version 2211+ (not yet released)
+- **Current Channel** and **Monthly Enterprise Channel**: Not before version 2212+ (not yet released)
 - **Semi-Annual Channel**: Not before version 2301+ (not yet released)
 
 If you have a version that disabled the AIP add-in by default, and you need to use the AIP add-in rather than built-in labeling, you must [configure a new setting to override the default](#how-to-configure-newer-versions-of-office-to-enable-the-aip-add-in).
@@ -196,8 +197,6 @@ However, you might find you don't need to use PowerShell to configure the suppor
 The following configurations from the AIP add-in that aren't yet supported by built-in labeling include:
 
 - [Label inheritance from email attachments](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
-- [S/MIME for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configure-a-label-to-apply-smime-protection-in-outlook)
-    - This setting is starting to [roll out in preview for built-in labeling across all platforms](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook)
 - [Oversharing popup messages for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
 - [Default sublabel for a parent label](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#specify-a-default-sublabel-for-a-parent-label)
 - [Remove external content markings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution )
