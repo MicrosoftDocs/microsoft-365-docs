@@ -56,7 +56,7 @@ Before you get started, see [Microsoft Defender for Endpoint on Linux](microsoft
 ## Installer script
 
 The easiest way to deploy Defender for Endpoint on Linux is with an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
-The script identifies the distribution and version, simplifies the selection of the right repository, sets up the device to pull the latest package, and combines the product installation and onboarding steps. Details on the steps performed can be found in the manual set up instructions below this section.
+The script identifies the distribution and version, simplifies the selection of the right repository, sets up the device to pull the latest package, and combines the product installation and onboarding steps. Details on the steps to be performed are provided in the manual setup instructions following this section.
 
 ```bash
 > ./mde_installer.sh --help
