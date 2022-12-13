@@ -896,3 +896,18 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
     :::image type="content" source="images/99679a7835b0d27d0a222bc3fdaf7f3b.png" alt-text="The Contoso onboarding status with an option to complete it" lightbox="images/99679a7835b0d27d0a222bc3fdaf7f3b.png":::
 
     :::image type="content" source="images/632aaab79ae18d0d2b8e0c16b6ba39e2.png" alt-text="The policies page" lightbox="images/632aaab79ae18d0d2b8e0c16b6ba39e2.png":::
+
+## Configuration profile scope
+
+JAMF requires you to define a set of machines for a configuration profile.
+You need to make sure that all machines receiving Defender's package, also receive *all* configuration profiles listed above.
+
+> [!WARNING]
+> JAMF supports so called Smart Computer Groups, that allow deployoing e.g. configuration profiles to all machines matching certain criteria evaluated dynamically.
+> It is a powerful concept that is widely used for configuration profiles distribution.
+>
+> However, keep in mind that these criteria should not include presence of Defender on a machine.
+> While using this criterion may sound logical, it creates problems that are difficult to diagnose.
+>
+> Defender relies on all these profiles at the moment of its installation.
+> Making configuration profiles depending on Defender's presence effectively delays deployment of configuration profiles, and results in an initially unhealthy product and/or prompts for manual approval of certian application permissions, that are otherwise auto approved by profiles.
