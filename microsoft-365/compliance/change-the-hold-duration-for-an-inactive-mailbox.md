@@ -265,7 +265,7 @@ The result is that items in the inactive mailbox are retained indefinitely or un
 
 ### Change the duration for an In-Place Hold
 
-In-Place Holds have been retired and can no longer be modified. If an inactive mailbox has an In-Place Hold applied to it, you can't change the hold duration. You can only remove the In-Place Hold, which will result in the deletion of the inactive mailbox. For more information, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md#remove-an-in-place-hold).
+In-Place Holds have been retired and can no longer be modified. If an inactive mailbox has an In-Place Hold applied to it, you can't change the hold duration. You can only remove the In-Place Hold, which will result in the deletion of the inactive mailbox. For more information, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md#remove-an-in-place-hold-from-an-inactive-mailbox).
   
 ## More information
 

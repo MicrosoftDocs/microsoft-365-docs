@@ -31,6 +31,7 @@ search.appverid:
 
 
 **Applies to:**
+
 - Microsoft 365 Defender
 
 Read responses to the most commonly asked questions about turning on [Microsoft 365 Defender](microsoft-365-defender.md), including required licenses and permissions, deploying support services, and initial settings.
@@ -80,7 +81,6 @@ Accounts assigned the following Azure Active Directory (Azure AD) roles can acce
 - Compliance Data Administrator
 - Application Administrator
 - Cloud Application Administrator
-
 
 > [!NOTE]
 > Role-based access control settings in Microsoft Defender for Endpoint influence access to data. For more information, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
