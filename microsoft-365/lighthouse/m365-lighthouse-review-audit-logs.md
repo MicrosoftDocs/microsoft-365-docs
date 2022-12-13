@@ -83,7 +83,12 @@ The following table lists activities captured within Lighthouse audit logs. The 
 
 Use Microsoft Graph API to access more audit events, if needed. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
 
+For broader investigations, you can search the Microsoft Purview compliance portal for user actions performed across other administrative portals, including Microsoft 365 Lighthouse. Review user actions periodically to help increase accountability and security across your organization.  
+
+To learn more about how to search the unified audit log and which other actions are included, see [Search the audit log in the Microsoft Purview compliance portal](../compliance/audit-log-search.md).
+
 ## Related content
 
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
-[View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)
+[View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)\
+[Search the audit log in the Microsoft Purview compliance portal](../compliance/audit-log-search.md) (article)
