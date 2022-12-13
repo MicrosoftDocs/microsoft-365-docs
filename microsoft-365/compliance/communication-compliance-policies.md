@@ -148,7 +148,7 @@ To sort policies by groups:
 
 - **Show only favorites**: Groups policies by favorites at the top of the list. This option shows only those policies marked as favorites. 
 
-![Communication compliance sort policies by group](../media/communication-compliance-group-favorites.png)
+![Communication compliance sort policies by group.](../media/communication-compliance-group-favorites.png)
 
 ## Policy activity detection
 
