@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-
+ms.date: 12/12/2022
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -180,7 +180,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 > [!NOTE]
 > It could take up to 24 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center at <https://admin.microsot.com>, go to **Settings** \> **Add-ins**, and select **Deploy Add-In**.
+1. In the Microsoft 365 admin center at <https://portal.office365.us/adminportal>, go to **Organization** \> **Add-ins**, and select **Deploy Add-In**.
 
 2. In the **Deploy a new add-in** flyout that opens, click **Next**, and then select **Upload custom apps**.  
 
