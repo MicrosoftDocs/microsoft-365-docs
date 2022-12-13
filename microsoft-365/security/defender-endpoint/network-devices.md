@@ -132,9 +132,12 @@ The network scanner has a scheduled task that, by default, is configured to look
 
 If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. Once the required updates are determined, the downloading of the updates will start.
 
-It's possible to disable automatic updates of the network scanner by going to the **MDATP Network Scanner Updater** in the Windows Task Scheduler. To disable it:
+find this task inside the Windows Task Scheduler.
 
-- Right-click on **MDATP Network Scanner Updater** and select **Disable**.
+It's possible to disable automatic updates of the network scanner by going to the **MDATP Network Scanner Updater** inside the Windows Task Scheduler. To do this: 
+
+- In Windows, go to **Computer Management** > **Task Scheduler** > **Task Scheduler Library**.
+- Select **MDATP Network Scanner Updater** > right-click > and select **Disable**.
 - To re-enable, right-click on **MDATP Network Scanner Updater** and select **Enable**.
 
 ## Configure a new network device authenticated scan
@@ -201,7 +204,7 @@ Validate that the scanner is running properly. Then go to the scan definition an
 
 ### My scanner is configured but scans aren't running
 
-As the authenticated scanner currently uses an algorithm that is not yet approved, the scanner can't operate when an organizations enforce the usage of only approved algorithms.
+As the authenticated scanner currently uses an encryption algorithm that is not approved as part of the Federal Information Processing Standards (FIPS), the scanner can't operate when an organizations enforce FIPS-only algorithms.
 
 To allow not-approved algorithms, set the following value in the registry for the devices where the scanner will run:
 
