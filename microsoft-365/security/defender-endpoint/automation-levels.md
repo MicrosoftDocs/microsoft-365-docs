@@ -10,7 +10,7 @@ ms.service: microsoft-365-security
 ms.subservice: mde
 ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/22/2022
+ms.date: 12/13/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
