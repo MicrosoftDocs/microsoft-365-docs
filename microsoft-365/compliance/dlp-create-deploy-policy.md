@@ -54,14 +54,13 @@ Before you get started with DLP policies, you should confirm your [Microsoft 365
 For full licensing details, see: [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 
-### Permissions <!--check these-->
+### Permissions 
 
-Data from DLP can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
+The account you use to create and deploy policies must be a member of one of these roles/role groups
 
-- Global administrator
 - Compliance administrator
-- Security administrator
 - Compliance data administrator
+- Security administrator
 
 #### Roles and Role Groups
 
@@ -96,6 +95,7 @@ There are so many configuration options in the policy creation flow that it's no
 #### Scenario 1 pre-requisites and assumptions
 
 This scenario uses the *Highly confidential* sensitivity label, so it requires that you have created and published sensitivity labels. To learn more, see:
+
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Get started with sensitivity labels](get-started-with-sensitivity-labels.md)
 - [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)
