@@ -256,7 +256,9 @@
 #### [Device timeline](device-timeline-event-flag.md)
 #### [Manage device group and tags](machine-tags.md)
 
-### [Network devices](network-devices.md)
+### [Authenticated scans]()
+#### [Network devices](network-devices.md)
+#### [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md)
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
