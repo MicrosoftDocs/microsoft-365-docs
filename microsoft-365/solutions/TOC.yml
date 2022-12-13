@@ -427,7 +427,7 @@
           href: apps-license-overview.md
         - name: Manage app licenses
           href: apps-license-manage.md
-        - name: Confirm app licenses
+        - name: Monitor app licenses
           href: apps-license-monitor.md
       - name: Purchase apps
         items:
