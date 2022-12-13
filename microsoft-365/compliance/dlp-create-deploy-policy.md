@@ -185,6 +185,41 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
  
 1. Choose **Next** > **Keep it off** > **Next** > **Submit**.
 
+### Scenario 2 Monitor or restrict user activities on sensitive service domains
+
+Use this scenario when you want to audit or block these user activities on a website.
+
+- print from a website
+- copy data from a website
+- save a website as local files
+
+The user must be accessing the website through Microsoft Edge.
+
+#### Scenario 2 pre-requisites and assumptions
+
+This scenario requires that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
+
+#### Scenario 2 policy intent statement and mapping
+
+#### Steps to create policy for scenario 2
+
+### Configure Sensitive service domains
+
+1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Browser and domain restrictions to sensitive data** > **Sensitive service domains**.
+1. Select **Add a new group of sensitive service domains**.
+1. Name the group.
+1. Select the **Match type** you want. You can select from **URL**, **IP address**, **IP address range**.
+1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website or \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
+1. Select **Save**.
+1. Select **Policies**.
+1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.
+1. Create a rule that uses the **the user accessed a sensitive site from Edge**, and the action **Audit or restrict activities when users access sensitive sites in Microsoft Edge browser on Windows devices**.
+1. In the action select **Add or remove Sensitive site groups**.
+1. Select the **Sensitive site groups** you want. Any website under the group(s) you select here will be redirected to Edge when opened in Chrome browser (with Purview extension installed).
+1. Select **Add**.
+1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
+1. Finish configuring the rule and policy and apply it.
+
 <!--
 ### Scenario 2
 
