@@ -44,7 +44,7 @@ Only Microsoft Word documents (.docx/.doc extension) are currently supported for
 
 - The uploaded document that is used to create the modern template will be saved as a separate copy and placed in the /forms directory of the document library. The original file on the disk will be unaffected.
 
-- You can create fields for text, and also fields for text within cells in a table. However, images, smart art, complete tables, and bulleted lists are currently not supported.
+- You can create fields for text, and also fields for text within cells in a table. However, smart art and bulleted lists are currently not supported.
 
 - Once a document is created from a template, it's not associated with the template.
 
