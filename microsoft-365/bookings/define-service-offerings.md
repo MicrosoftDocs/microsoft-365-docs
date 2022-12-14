@@ -100,7 +100,7 @@ You can also add customized information and URLs to the email confirmation and r
 
     - Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
 
-7. On the **Notifications** page, you can send sms, set up reminders, and send notifications.
+7. On the **Notifications** page, you can send SMS messages, set up reminders, and send notifications.
 
     - **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
     - **Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
