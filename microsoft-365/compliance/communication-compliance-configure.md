@@ -274,10 +274,12 @@ For more information about configuring Yammer in Native Mode, see:
     - Define the communication compliance policy [conditions](/microsoft-365/compliance/communication-compliance-policies#conditional-settings). You can choose from message address, keyword, file types, and size match conditions.
 
     - Choose if you'd like to include sensitive information types. This step is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
-
+    
     - Choose if you'd like to enable classifiers. Classifiers can detect potentially inappropriate language and images sent or received in the body of email messages or other types of text. You can choose the following built-in classifiers: *Threat*, *Profanity*, *Targeted harassment*, *Adult images*, *Racy images*, and *Gory images*.
 
     - Enable [optical character recognition (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) to identify embedded or attached images in messages for printed or handwritten text that match policy conditions. For custom policies, one or more conditional settings associated with text, keywords, classifiers, or sensitive info types must be configured in the policy to enable the selection of optical character recognition (OCR) documents.
+
+    - Choose **Filter email blasts** to assign a [bulk complaint level](/security/office-365-security/anti-spam-bulk-complaint-level-bcl-about) to exclude detection of email sent from bulk senders, such as those sending corporate newsletters. When this option is selected, you can view [reports](communication-compliance-reports-audits.md#detailed-reports) to display filtered bulk sender messages.
 
     - Define the percentage of communications to review.
 
