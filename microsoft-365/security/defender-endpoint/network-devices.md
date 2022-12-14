@@ -148,32 +148,32 @@ It's possible to disable automatic updates of the network scanner by going to th
 3. Choose whether to **Activate scan**.
 4. Enter a **Scan name**.
 5. Select the **Scanning device:** The onboarded device you'll use to scan the network devices.
-6. Enter the **Target (range):** Add IP addresses of target network devices to be scanned (or the subnets where these devices are deployed).
-7. Select the **Scan interval:** By default, the scan will run every hour, you can change the scan interval or have it only run once, by selecting ‘Do not repeat’.
+6. Enter the **Target (range):** The IP address ranges or hostnames you want to scan. You can either enter the addresses or import a CSV file. Importing a file will override any manually added addresses.
+7. Select the **Scan interval:** By default, the scan will run every four hours, you can change the scan interval or have it only run once, by selecting ‘Do not repeat’.
 8. Choose your **Authentication method**.
     - You can select to **Use azure KeyVault for providing credentials:** If you manage your credentials in Azure KeyVault you can enter the Azure KeyVault URL and Azure KeyVault secret name to be accessed by the scanning device to provide credentials.
 9. Select **Next** to run or skip the test scan.
 10. Select **Next** to review the settings and the select **Submit** to create your new authenticated scan.
 
 >[!Note]
->To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.
+>To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple scanning devices.
 
 ### Scan and add network devices
 
 During the set-up process, you can perform a one time test scan to verify that:
 
-- There is connectivity between the Defender for Endpoint assessment device and the configured target network devices.
+- There is connectivity between the Defender for Endpoint scanning device and the configured target network devices.
 - The configured SNMP credentials are correct.
 
-Each assessment device can support up to 1,500 successful IP addresses scan. For example, if you scan 10 different subnets where only 100 IP addresses return successful results, you will be able to scan 1,400 IP additional addresses from other subnets on the same assessment device.
+Each scanning device can support up to 1,500 successful IP addresses scan. For example, if you scan 10 different subnets where only 100 IP addresses return successful results, you will be able to scan 1,400 IP additional addresses from other subnets on the same scanning device.
 
 If there are multiple IP address ranges/subnets to scan, the test scan results will take several minutes to show up. A test scan will be available for up to 1,024 addresses.
 
-Once the results show up, you can choose which devices will be included in the periodic scan. If you skip viewing the scan results, all configured IP addresses will be added to the network assessment job (regardless of the device's response). The scan results can also be exported.
+Once the results show up, you can choose which devices will be included in the periodic scan. If you skip viewing the scan results, all configured IP addresses will be added to the network device authenticated scan (regardless of the device's response). The scan results can also be exported.
 
 ## Device inventory
 
-Newly discovered devices will be shown under the new **Network devices** tab in the **Device inventory** page. It may take up to two hours after adding an assessment job until the devices are updated.
+Newly discovered devices will be shown under the new **Network devices** tab in the **Device inventory** page. It may take up to two hours after adding an scanning job until the devices are updated.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="The Network devices section in the Device inventory" lightbox="images/assessment-jobs-device-inventory.png":::
