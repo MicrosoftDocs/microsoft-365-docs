@@ -22,7 +22,7 @@ You can also add customized information and URLs to the email confirmation and r
 
 ## Watch: Create a new service
 
-> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RWuKXH>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuKXH]
 
 ## Steps
 
