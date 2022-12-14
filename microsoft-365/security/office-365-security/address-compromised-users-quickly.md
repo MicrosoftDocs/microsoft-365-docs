@@ -12,7 +12,7 @@ search.appverid:
   - MOE150
 ms.collection: m365-security
 ms.custom:
-ms.date: 06/10/2021
+ms.date: 12/14/2022
 description: Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
