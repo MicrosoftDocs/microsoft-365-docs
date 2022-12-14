@@ -1,5 +1,5 @@
 ---
-title: Get and provision Microsoft Defender for Business
+title: Get Microsoft Defender for Business
 description: Find out how to get Microsoft Defender for Business, endpoint protection for small and medium sized businesses.
 search.appverid: MET150
 author: denisebmsft
@@ -19,7 +19,7 @@ ms.collection:
 - tier1
 ---
 
-# Get and provision Microsoft Defender for Business
+# Get Microsoft Defender for Business
 
 Defender for Business is a new endpoint security solution designed especially for small and medium-sized businesses (up to 300 employees). This article describes how to get and provision Defender for Business.
 
