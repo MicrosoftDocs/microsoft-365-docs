@@ -10,7 +10,7 @@ ms.service: microsoft-365-security
 ms.collection: 
 - m365-security
 - tier1
-ms.subservice: other
+ms.subservice: m365bp
 ms.date: 09/15/2022
 ms.localizationpriority: medium
 search.appverid: MET150
