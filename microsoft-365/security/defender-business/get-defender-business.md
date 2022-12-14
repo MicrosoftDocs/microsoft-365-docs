@@ -52,10 +52,12 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 
 5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), where you'll view and manage security settings and devices for your organization.
 
-6. In the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. 
+6. In the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. You'll know this process has started when you see a message like what's displayed in the following screenshot:
 
-> [!NOTE]
-> It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
+   :::image type="content" source="media/mdb-hangon-provisioning.png" alt-text="Screenshot of provisioning message in Defender for Business.":::
+
+   > [!NOTE]
+   > It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
 
 ## Get Microsoft 365 Business Premium
 
