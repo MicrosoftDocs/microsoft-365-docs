@@ -90,7 +90,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Detects files relating to disciplinary action including a reprimand or corrective action in response to employee misconduct, rule violation, or poor performance. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. |
+| Detects files relating to disciplinary action including a reprimand or corrective action in response to employee misconduct, rule violation, or poor performance. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. | English |
  
 ### Employee insurance
 
