@@ -52,11 +52,9 @@ If you don't already have Microsoft Defender for Business, you can choose from s
    > [!TIP]
    > If you're brand new to Microsoft 365, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
 
-4. Use one of the following procedures, depending on your scenario:<br/>
+4. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), where you'll view and manage security settings and devices for your organization.
 
-5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), where you'll view and manage security settings and devices for your organization.
-
-6. In the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. You'll know this process has started when you see a message like what's displayed in the following screenshot:
+5. In the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. You'll know this process has started when you see a message like what's displayed in the following screenshot:
 
    :::image type="content" source="media/mdb-hangon-provisioning.png" alt-text="Screenshot of provisioning message in Defender for Business.":::
 
