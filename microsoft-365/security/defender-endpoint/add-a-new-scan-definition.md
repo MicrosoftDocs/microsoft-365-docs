@@ -35,7 +35,7 @@ search.appverid: met150
 
 ## API description
 
-Adds or removes tag to a specific [Machine](machine.md).
+Adds or removes an authenticated scan
 
 ## Limitations
 

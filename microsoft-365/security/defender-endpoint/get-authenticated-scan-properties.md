@@ -20,7 +20,7 @@ ms.custom: api
 search.appverid: met150
 ---
 
-# Remediation activity methods and properties
+# Authenticated scan methods and properties
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

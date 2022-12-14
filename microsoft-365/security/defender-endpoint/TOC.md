@@ -544,7 +544,7 @@
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
 ###### [Authenticated scan]()
-####### [Authenticated scan](get-authenticated-scan-properties.md)
+####### [Authenticated scan methods and properties](get-authenticated-scan-properties.md)
 ####### [Add a new scan definition](add-a-new-scan-definition.md)
 ####### [Get all scan agents](get-all-scan-agents.md)
 ####### [Get all scan definitions](get-all-scan-definitions.md)
