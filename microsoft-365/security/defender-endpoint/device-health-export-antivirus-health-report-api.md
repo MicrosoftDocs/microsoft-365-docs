@@ -88,6 +88,9 @@ This API retrieves a list of Microsoft Defender Antivirus device antivirus healt
 - `$top` with max value of 10,000.
 - `$skip`
 
+> [!IMPORTANT]
+> Note that **rbacgroupname** and **Id** are not supported filter operators.
+
 ### 1.2 Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Use Microsoft Defender for Endpoint APIs for details.
