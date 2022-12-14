@@ -22,7 +22,7 @@ f1.keywords: NOCSH
 
 Additional relevant test execution results data that you can analyze is described in the table that follows. The data folders listed in the table below exist within the a **logs.zip** folder that is accessible from the **Log files: Download** link in the Test Base results for an application that completed testing against a specified operating system version.
 
-**Table 1. Data Sources for Performance and Results Analysis**
+## Table 1. Data Sources for Performance and Results Analysis
 
 |**Data Folder**|**Performance or Results Data Source**|**FileType**|**Description**|
 |----|----|----|----|
