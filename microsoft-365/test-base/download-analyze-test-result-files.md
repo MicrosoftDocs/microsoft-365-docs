@@ -24,7 +24,7 @@ Additional relevant test execution results data that you can analyze is describe
 
 ## Table 1. Data Sources for Performance and Results Analysis
 
-|**Data Folder**|**Performance or Results Data Source**|**FileType**|**Description**|
+| Data Folder | Performance or Results Data Source | FileType | Description |
 |----|----|----|----|
 |package|Application installation results (.log)|.log|See app installation and script logs.|
 |performance|Performance counters (.csv)|.csv|Review Perf counter data.|
@@ -38,6 +38,6 @@ Additional relevant test execution results data that you can analyze is describe
 
 If you choose not to download the log files because you would rather analyze data in the **Test Base** web view, you have the option to observe certain data from the **Script execution** tab. To do so, click the linked name of an individual script and view the **Log Output** directly in the portal, as shown in the right-hand sector of the figure that follows.
 
-:::image type="content" source="Media/downloadingandanalyzingtestresultfiles01.png" alt-text="Screenshot shows Scripts Execution Results." lightbox="Media/downloadingandanalyzingtestresultfiles01.png" border="true":::
+:::image type="content" source="Media/downloadingandanalyzingtestresultfiles01.png" alt-text="Screenshot shows Scripts Execution Results." lightbox="Media/downloadingandanalyzingtestresultfiles01.png":::
 
 **Figure 6. Viewing log output in the Script Execution tab**

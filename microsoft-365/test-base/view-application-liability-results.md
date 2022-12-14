@@ -25,15 +25,15 @@ To display the **Reliability** tab, perform the steps of the procedure that foll
 1. Click **Security update results** under **Insights**.
 1. Select the values associated with your package in the following drop-downs: **Package name, Package version, Operating system, Release**, and **Release build version**, as shown in the figure that follows.
 
-The drop-downs are populated with data followed by Test results for the **Functional** and **Out of box** tests.
+   The drop-downs are populated with data followed by Test results for the **Functional** and **Out of box** tests.
 
-:::image type="content" source="Media/applicationreliability01.png" alt-text="Screenshot shows Security update results." lightbox="Media/applicationreliability01.png" border="true":::
+   :::image type="content" source="Media/applicationreliability01.png" alt-text="Screenshot shows Security update results." lightbox="Media/applicationreliability01.png":::
 
 **Figure 2. Populating security update results**
 
 1. Click **See details** in the **Reliability** row to display the **Reliability** data, providing that the status is **Completed**, as shown in the figure that follows.
 
-:::image type="content" source="Media/applicationreliability02.png" alt-text="Screenshot shows Reliability data." lightbox="Media/applicationreliability02.png" border="true":::
+   :::image type="content" source="Media/applicationreliability02.png" alt-text="Screenshot shows Reliability data." lightbox="Media/applicationreliability02.png":::
 
 **Figure 3. Reliability tab**
 

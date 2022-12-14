@@ -26,7 +26,7 @@ Current possible execution status values are described in the table that follows
 
 ## Table 2. Test Execution status
 
-|**Status**|**Meaning**|
+| Status | Meaning |
 |----|----|
 |**Completed**|Test run and data processing are completed. Results are available.|
 |**Processing**|Test execution is complete. Data is processing and results will be available soon.|

@@ -34,7 +34,7 @@ An Execution request ID for tests related to each release is provided, as are KB
 > [!IMPORTANT]
 > Avoid coding your scripts to reboot a machine. If a reboot is necessary, please specify the Reboot enabled tag to the script during the script configuration and upload process, as described in Test Base documentation. For further details, see For more details, see [Package guidelines](contentguideline.md) and [Application/Test rules](rules.md).
 
-:::image type="content" source="Media/scriptexecution01.png" alt-text="Screenshot shows Script Execution Summary." lightbox="Media/scriptexecution01.png" border="true":::
+:::image type="content" source="Media/scriptexecution01.png" alt-text="Screenshot shows Script Execution Summary." lightbox="Media/scriptexecution01.png":::
 
 **Figure 1. Script execution summary page**
 
