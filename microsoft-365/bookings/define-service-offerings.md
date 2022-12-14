@@ -34,7 +34,7 @@ You can also add customized information and URLs to the email confirmation and r
 
    **Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the Calendar page. This name will also appear when anyone manually adds an appointment on the Calendar page, and it will appear as a tile on the Self-service page.
 
-   **Description**: The description you enter is what will appear when a user clicks the information icon on the Self-service page.
+   **Description**: The description you enter is what will appear when a user selects the information icon on the Self-service page.
 
    **Default location**: This location is what will be displayed on confirmation and reminder emails for both staff and customers, and it will be displayed on the calendar event created for the booking.
 
@@ -60,7 +60,7 @@ You can also add customized information and URLs to the email confirmation and r
 
    **Price not set**: Select the price options that will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
 
-   **Notes**: This field appears in the booking event for booked staff, as well as on the event that appears on the Calendar tab in the Bookings web app.
+   **Notes**: This field appears in the booking event for booked staff, and on the event that appears on the Calendar tab in the Bookings web app.
 
    **Maximum attendees per event**: This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app. We refer to this as 1:N booking service.
 
@@ -78,7 +78,7 @@ You can also add customized information and URLs to the email confirmation and r
 
         :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="The Manage Bookings button in Bookings.":::
 
-      We only recommend leaving this setting enabled if you are comfortable with customers accessing the Self-Service page.
+      We only recommend leaving this setting enabled if you're comfortable with customers accessing the Self-Service page.
 
    - Disabled:
 
@@ -102,9 +102,8 @@ You can also add customized information and URLs to the email confirmation and r
 
 7. On the **Notifications** page, you can send sms, set up reminders, and send notifications.
 
-  **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
-
-  **Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
+    - **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
+    - **Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
    :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="A confirmation email from Bookings.":::
 
