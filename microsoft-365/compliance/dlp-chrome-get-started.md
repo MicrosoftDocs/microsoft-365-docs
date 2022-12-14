@@ -146,7 +146,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 6. Select **Custom** as the template name.
 
-7. Click create.
+7. Select **Create**.
 
 8. Enter a name and optional description on the **Basics** tab and click next.
 
