@@ -137,7 +137,7 @@ Compliance Manager settings can only be accessed by users who hold a global admi
 > [!NOTE]
 > The automated testing feature is not available to customers in GCC High and DoD environments because Secure Score isn't available in these environments. GCC High and DoD customers will need to manually implement and test their improvement actions.
 
-### Testing source for automated testing
+## Testing source for automated testing
 
 Compliance Manager detects signals from other Microsoft Purview solutions that your organization may subscribe to, including data lifecycle management, information protection, Microsoft Purview Data Loss Prevention, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions in order to provide you with continuous control assessment. When an improvement action is successfully tested and implemented, you receive the maximum possible points for that action, which gets [credited to your overall compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
@@ -157,12 +157,12 @@ Note that improvement actions in templates that aren't scoped to Microsoft 365, 
 
 #### When actions are added or updated
 
-When automation becomes available for existing improvement actions, or when new automated improvement actions are added, the default behavior depends on whether or not you've already [brought data into an improvement action](compliance-manager-update-actions.md). When you add your own testing data or evidence into an improvement action, automatic testing is turned off for that action to ensure that Compliance Manager doesn't overwrite any of your data.
+When automation becomes available for existing improvement actions, or when new automated improvement actions are added, the default behavior depends on your current settings and whether or not you've [brought data into an improvement action](compliance-manager-update-actions.md). When you add your own testing data or evidence into an improvement action, automatic testing is turned off for that action to ensure that Compliance Manager doesn't overwrite any of your data.
 
-If you've added data to the improvement action:
+If you've added data to an existing improvement action:
 - Automated testing remains **off** by default for the action. You can choose to turn it back on.
 
-If you haven't added data to the improvement action, the testing behavior follows your current settings:
+If you haven't added data to an improvement action, or when new automatically actions are added to Compliance Manager, the testing behavior follows your current settings:
 - Automated testing is **on** if your setting is **on** for **all actions** or **per action**.
 - Automated testing is **off** if your setting is **off for all actions**.
 
@@ -188,7 +188,7 @@ The global administrator for your organization can change the settings for autom
 
 6. Select **Save** to save your settings. You’ll receive a confirmation message at the top of your screen that your selection was saved. If you receive a failure notice, try again.
 
-### Manage user history
+## Manage user history
 
 The **Manage user history** settings help you quickly identify which users have worked with improvement actions in Compliance Manager. The identifiable user data associated with improvement actions includes the status of the improvement actions and  documents they uploaded. Understanding and retrieving this type of data may be necessary for your organization’s own compliance needs.
 
@@ -269,7 +269,7 @@ To delete a user’s history, follow the steps below:
 
 1. You’ll arrive back at the **Manage user history** page with a confirmation message at the top that the history for the user was deleted.
 
-### User access
+## User access
 
 The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. This section is also where you can revoke access to an assessment by removing their assessment-specific role.
 
