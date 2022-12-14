@@ -43,7 +43,7 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 
 3. Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and depending on your scenario, take your next step:
 
-   | Scenario | Procedure |
+   | Scenario | Next step |
    |:---|:---|
    | Defender for Business is your first Microsoft 365 subscription. | Proceed to step 4 to start provisioning Defender for Business. |
    | You're adding Defender for Business to an existing [Microsoft 365 for business subscription](../../admin/admin-overview/what-is-microsoft-365-for-business.md). | You've probably already [set up your Microsoft 365 subscription](../../admin/setup/setup-business-standard.md), and now you only need to set up and configure Defender for Business. Proceed to step 4.  |
