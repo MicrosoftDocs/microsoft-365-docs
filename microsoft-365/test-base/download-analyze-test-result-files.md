@@ -38,6 +38,6 @@ Additional relevant test execution results data that you can analyze is describe
 
 If you choose not to download the log files because you would rather analyze data in the **Test Base** web view, you have the option to observe certain data from the **Script execution** tab. To do so, click the linked name of an individual script and view the **Log Output** directly in the portal, as shown in the right-hand sector of the figure that follows.
 
- > [!div class="mx-imgBorder"]  
- > ![Screenshot shows Scripts Execution Results.](Media/downloadingandanalyzingtestresultfiles01.png)  
- > **Figure 6. Viewing log output in the Script Execution tab**
+:::image type="content" source="Media/downloadingandanalyzingtestresultfiles01.png" alt-text="Screenshot shows Scripts Execution Results." lightbox="Media/downloadingandanalyzingtestresultfiles01.png" border="true":::
+
+**Figure 6. Viewing log output in the Script Execution tab**
