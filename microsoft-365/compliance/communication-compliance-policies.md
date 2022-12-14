@@ -211,9 +211,9 @@ Communication compliance detects images of the following types:
 
 |**Classifier**|**Description**|
 |:-------------|:--------------|
-| [Adult images](classifier-tc-definitions.md#adult-racy-and-gory) | Detects images that are potentially sexually explicit. |
-| [Gory images](classifier-tc-definitions.md#adult-racy-and-gory) | Detects images that potentially depict violence and gore. |
-| [Racy images](classifier-tc-definitions.md#adult-racy-and-gory) | Detects images that are potentially sexually suggestive, but contain less explicit content than images deemed as Adult. |
+| [Adult images](classifier-tc-definitions.md#adult-racy-and-gory-images) | Detects images that are potentially sexually explicit. |
+| [Gory images](classifier-tc-definitions.md#adult-racy-and-gory-images) | Detects images that potentially depict violence and gore. |
+| [Racy images](classifier-tc-definitions.md#adult-racy-and-gory-images) | Detects images that are potentially sexually suggestive, but contain less explicit content than images deemed as Adult. |
 
 For information about applying content flags that can detect adult, gory, and racy material in images, see [Adult content detection](/azure/cognitive-services/computer-vision/concept-detecting-adult-content).
 
