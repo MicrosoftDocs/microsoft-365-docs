@@ -66,7 +66,7 @@ To move or copy a file from one document library to another, follow these steps.
        > If you try to set up a rule to move or copy a file to a library that already has a move  or copy rule applied, you'll receive a message saying that you need to disable all move or copy rules on the destination library. To disable a rule, see [Manage a rule](#manage-a-rule).<br>      
        >![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-disable-rules.png)
 
-4. When your rule statement is complete, select **Create**. You'll see the new rule under **Manage rules**.
+4. When your rule statement is complete, select **Create**. You'll see the new rule on the **Manage rules** page.
 
 ## Manage a rule
 
