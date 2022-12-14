@@ -160,7 +160,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
     
 11. Select **Save** and then select **Next**.
 
-12. Add or edit scope tags on the **Scope tags** tab if desired and click next.
+12. Add or edit scope tags on the **Scope tags** tab as needed and select **Next**.
 
 13. Add the desired deployment users/devices/groups on the **Assignments** tab and click next.
 
