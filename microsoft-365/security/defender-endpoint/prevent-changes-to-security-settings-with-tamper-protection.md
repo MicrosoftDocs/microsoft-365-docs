@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 12/07/2022
+ms.date: 12/14/2022
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -38,26 +38,11 @@ search.appverid: met150
 
 Tamper protection is available for devices that are running one of the following versions of Windows:
 
-- Windows 11
-- Windows 11 Enterprise multi-session 
-- Windows 10
-- Windows 10 Enterprise multi-session
-- Windows Server 2022
-- Windows Server 2019
-- Windows Server, version 1803 or later
-- Windows Server 2016
-- Windows Server 2012 R2
+- Windows 10 and 11 (including Enterprise multi-session)
+- Windows Server 2022, Windows Server 2019, and Windows Server, version 1803 or later
+- Windows Server 2016 and Windows Server 2012 R2 (using the modern, unified solution)
 
-> [!NOTE]
-> Tamper protection in Windows Server 2012 R2 is available for devices that were onboarded using the modern, unified solution. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
-
-Tamper protection is available for devices that are running one of the following versions of macOS:
-
-- Monterey (12)
-- Big Sur (11)
-- Catalina (10.15+)
-
-See [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
+Tamper protection is also available for Mac. See [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
 
 ## Overview
 
@@ -119,7 +104,7 @@ The following table provides details on the methods, tools, and dependencies.
 If you're using Windows Server 2012 R2 using the modern unified solution, Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
 
 > [!NOTE]
-> If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on the devices.
+> If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
 
 On Windows Server 2016, the Settings app won't accurately reflect the status of real-time protection when tamper protection is enabled.
 
