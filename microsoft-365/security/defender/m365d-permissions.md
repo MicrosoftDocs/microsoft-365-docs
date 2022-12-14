@@ -26,7 +26,7 @@ search.appverid:
 
 # Manage access to Microsoft 365 Defender with Azure Active Directory global roles
 
->[!Note]
+> [!NOTE]
 > If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
 
 **Applies to:**
