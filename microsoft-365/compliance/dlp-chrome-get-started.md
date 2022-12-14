@@ -158,7 +158,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
     Data type: `String`<br/>
     Value: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
     
-11. Click save and click next.
+11. Select **Save** and then select **Next**.
 
 12. Add or edit scope tags on the **Scope tags** tab if desired and click next.
 
