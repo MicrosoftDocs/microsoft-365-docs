@@ -543,6 +543,12 @@
 ####### [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
+###### [Authenticated scan]()
+####### [Authenticated scan](get-authenticated-scan-properties.md)
+####### [Add a new scan definition](add-a-new-scan-definition.md)
+####### [Get all scan agents](get-all-scan-agents.md)
+####### [Get all scan definitions](get-all-scan-definitions.md)
+
 ###### [Browser extensions]()
 ####### [Export browser extensions assessment](get-assessment-browser-extensions.md)
 ####### [Get browser extensions permission information](get-browser-extensions-permission-info.md)
