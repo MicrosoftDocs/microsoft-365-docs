@@ -2337,7 +2337,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center",
+      "redirect_url": "/microsoft-365/security/office-365-security/mdo-portal-permissions",
       "redirect_document_id": false
     },
     {
@@ -2802,27 +2802,27 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-the-anti-spam-policies.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/enable-or-disable-safety-tips.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-end-user-spam-notifications-in-eop.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-your-spam-filter-policies#configure-end-user-spam-notifications",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure#configure-end-user-spam-notifications",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-end-user-spam-notifications-in-exchange-online.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-your-spam-filter-policies#configure-end-user-spam-notifications",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure#configure-end-user-spam-notifications",
       "redirect_document_id": false
     },
     {
@@ -2932,27 +2932,27 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/how-atp-safe-attachments-works.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links-for-Teams.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links#safe-links-settings-for-microsoft-teams",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#safe-links-settings-for-microsoft-teams",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links-warning-pages.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links#warning-pages-from-safe-links",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#warning-pages-from-safe-links",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/how-atp-safe-links-works.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links#do-not-rewrite-the-following-urls-lists-in-safe-links-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#do-not-rewrite-the-following-urls-lists-in-safe-links-policies",
       "redirect_document_id": false
     },
     {
@@ -2962,7 +2962,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-anti-phishing.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/set-up-anti-phishing-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-policies-about",
       "redirect_document_id": false
     },
     {
@@ -3012,7 +3012,7 @@
     },
     {
       "source_path": "./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links#block-the-following-urls-list-for-safe-links",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#block-the-following-urls-list-for-safe-links",
       "redirect_document_id": true
     },
     {
@@ -3172,7 +3172,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/unverified-sender-feature.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#unauthenticated-sender",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-policies-about#unauthenticated-sender-indicators",
       "redirect_document_id": false
     },
     {
@@ -5677,7 +5677,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center",
+      "redirect_url": "/microsoft-365/security/office-365-security/mdo-portal-permissions",
       "redirect_document_id": true
     },
     {
@@ -5692,12 +5692,12 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/set-up-atp-safe-links-policies.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/set-up-safe-links-policies",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-policies-configure",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about",
       "redirect_document_id": false
     },
     {
@@ -5712,8 +5712,8 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/set-up-safe-attachments-policies",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-policies-configure",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/office-365-atp.md",
@@ -5722,7 +5722,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/mdo-for-spo-odb-and-teams",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about",
       "redirect_document_id": false
     },
     {
@@ -5742,7 +5742,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-attachments.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-about",
       "redirect_document_id": false
     },
     {
@@ -9373,7 +9373,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/configure-your-spam-filter-policies.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/anti-spam-protection.md",
@@ -9488,7 +9488,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/permissions-microsoft-365-security-center.md",
       "redirect_url": "/microsoft-365/security/office-365-security/mdo-portal-permissions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/anti-spam-message-headers.md",
@@ -9742,7 +9742,12 @@
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/microsoft-threat-experts.md",
-      "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/priority accounts-security-recommendations.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/priority-accounts-security-recommendations",
       "redirect_document_id": false
     }
    ]
