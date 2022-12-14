@@ -16,7 +16,7 @@ metadata:
   manager: dansimp
   ms.custom: asr
   ms.topic: faq
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
   ms.date: 09/13/2022
 
 title: Attack surface reduction frequently asked questions (FAQ)
@@ -35,7 +35,7 @@ sections:
       - question: |
           Is attack surface reduction (ASR) part of Windows?
         answer: |
-          ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10, version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Microsoft Defender Antivirus exclusions.
+          ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10, version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that some Microsoft Defender Antivirus exclusions are applicable to ASR rule exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
 
       - question: |
           Do I need to have an enterprise license to run ASR rules?
@@ -75,7 +75,7 @@ sections:
 
           Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
 
-          - ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions.
+          - Most ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions. However, Microsoft Defender Antivirus exclusions do apply to some attack surface reduction (ASR) rules. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
           - Wildcards cannot be used to define a drive letter.
           - If you want to exclude more than one folder, in a path, use multiple instances of ```\*\``` to indicate multiple nested folders (for example, ```c:\Folder\*\*\Test```)
           - Microsoft Endpoint Configuration Manager supports wildcards (* or ?).

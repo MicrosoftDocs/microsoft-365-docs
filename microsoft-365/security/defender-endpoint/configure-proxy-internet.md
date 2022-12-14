@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
-ms.topic: article
+- m365-security
+- tier1
+ms.topic: conceptual
 ms.subservice: mde
 ---
 
@@ -30,7 +30,7 @@ ms.subservice: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Defender for Endpoint service. The embedded Defender for Endpoint sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Defender for Endpoint cloud service.
+The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Defender for Endpoint service. The embedded Defender for Endpoint sensor runs in system context using the LocalSystem account.
 
 > [!TIP]
 > For organizations that use forward proxies as a gateway to the Internet, you can use network protection to [investigate connection events that occur behind forward proxies](investigate-behind-proxy.md).
@@ -91,7 +91,7 @@ The static proxy is configurable through group policy (GP), both the settings un
 | Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> For example: ```10.0.0.6:8080``` (REG_SZ) |
 
 > [!NOTE]
-> If you are using 'TelemetryProxyServer' setting on devices that are otherwise **completely offline**, then it is recommended to add the additional registry setting `PreferStaticProxyForHttpRequest` with a value of `1`.<br>
+> If you are using 'TelemetryProxyServer' setting on devices that are otherwise **completely offline**, meaning the operating system is unable to connect for the online certificate revocation list or Windows Update, then it is recommended to add the additional registry setting `PreferStaticProxyForHttpRequest` with a value of `1`.<br>
 > Parent registry path location for "PreferStaticProxyForHttpRequest" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
 > The following command can be used to insert the registry value in the correct location:<br>
 > ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
@@ -183,7 +183,7 @@ The following downloadable spreadsheet lists the services and their associated U
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
-In your firewall, open all the URLs where the geography column is WW. For rows where the geography column isn't WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).
+In your firewall, open all the URLs where the geography column is WW. For rows where the geography column isn't WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings). Don't exclude the URL `*.blob.core.windows.net` from any kind of network inspection.
 
 > [!NOTE]
 > Windows devices running with version 1803 or earlier needs `settings-win.data.microsoft.com`.  <br>

@@ -1,12 +1,12 @@
 ---
 title: Test Relevance analysis in eDiscovery (Premium)
+description: "Learn how to use the Test tab after Batch calculation in eDiscovery (Premium) to test, compare, and validate the overall quality of processing."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 titleSuffix: Office 365
-ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,9 +14,11 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to use the Test tab after Batch calculation in eDiscovery (Premium) to test, compare, and validate the overall quality of processing."
 ---
 
 # Test Relevance analysis in eDiscovery (Premium)
@@ -25,6 +27,8 @@ The Test tab in Microsoft Purview eDiscovery (Premium) enables you to test, comp
   
 In single and multiple-issue scenarios, tests are typically performed per issue. Results can be viewed after each test, and test results can be reworked with specified sample test files.
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Testing the rest
 
 The "Test the Rest" test is used to validate culling decisions, for example, to review only files above a specific Relevance cutoff score based on the final eDiscovery (Premium) results. The expert reviews a sample of files under a selected cutoff score to evaluate the number of relevant files within that set.

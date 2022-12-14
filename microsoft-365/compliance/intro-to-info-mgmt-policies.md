@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Learn how to use information management policies to control and track things like how long content is retained or what actions users can take with that content.
@@ -31,6 +31,8 @@ For example, an organization that must follow government regulations requiring t
   
 For how-to information, see [Create and apply information management policies](create-info-mgmt-policies.md).
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Features of information management policies
 <a name="__top"> </a>
 

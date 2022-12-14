@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
 search.appverid:
 - MOE150
@@ -23,7 +24,7 @@ description: "Configure a default sensitivity label for a SharePoint document li
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is in preview and subject to change. It is also a premium feature with licensing details to be provided when the feature becomes generally available (GA).
+> This feature is in preview and subject to change. Licensing options will be provided when the feature becomes generally available (GA).
 > 
 > To read the preview announcement, see the [blog post](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136).
 
@@ -41,6 +42,8 @@ When you use Office on the web to create or edit a file, the default sensitivity
 - File upload: it can take a few minutes for the label to be applied.
 - Microsoft 365 Apps: the label is applied after the app is closed.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Will an existing label be overridden?
 
 Summary of outcomes:
@@ -55,7 +58,9 @@ Summary of outcomes:
 
 ## Requirements
 
-- You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+- You've [created and published](create-sensitivity-labels.md) sensitivity labels, and they're published to the users who will select a default sensitivity label for a SharePoint document library.
+
+- You've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md). To check this status, you can run `Get-SPOTenant -EnableAIPIntegration` from the [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to confirm the value is set to true.
 
 - [SharePoint Information Rights Management (IRM) is not enabled for the library](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). This older technology isn't compatible with using a default sensitivity label for a SharePoint document library. If a library is enabled for IRM, you won't be able to select a default sensitivity label.
 
@@ -90,7 +95,7 @@ The permissions required to set and change a default sensitivity label for a Sha
 
 Use the SharePoint **Sensitivity** column to see the names of sensitivity labels applied to files. When the label has been applied by this features, the tooltip for the label name displays **This file has been automatically labeled**. However, this tooltip isn't exclusive to the default sensitivity label for a document library. It also displays when sensitivity labels are applied by using auto-labeling policies or as a result of a user's default label from sensitivity label policies.
 
-To specifically identify when the label was applied because of the library's default sensitivity label, use the [audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md) and the **Applied sensitivity label file** auditing event from the **Sensitivity label activities** group. Then:
+To specifically identify when the label was applied because of the library's default sensitivity label, use the [audit log in the compliance portal](audit-log-search.md) and the **Applied sensitivity label file** auditing event from the **Sensitivity label activities** group. Then:
 1. Select an entry to view the details in a flyout pane.
 
 2. From the details pane, scroll to the **SensitivityLabelEventData section**, and identify the value for **ActionScourceDetails**.
@@ -105,7 +110,7 @@ To audit the configuration setting for this feature, use the **Updated list** au
 
 To map sensitivity label GUIDs to label names, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet:
 
-1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. First, [connect to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Then run the following command, where you specify the GUID:
 

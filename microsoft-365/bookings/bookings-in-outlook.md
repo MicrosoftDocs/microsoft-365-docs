@@ -7,16 +7,16 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
-ROBOTS: NO INDEX, NO FOLLOW
+ms.collection:
+- Tier1
+- scotvorg
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
 ---
 
 # Bookings with me
 
 **Bookings with me** in Outlook is a web-based personal scheduling page that integrates with the free/busy information from your Outlook calendar. Bookings with me lets people schedule a meeting or appointment with you. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Bookings with me page.
-
-> [!NOTE]
-> Bookings with me is available worldwide in preview. Features included in preview might not be complete and could undergo changes before becoming available in the public release.
 
 Bookings with me has two different views:
 
@@ -72,7 +72,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
-3.	For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyActio as one of the domains.
+3.    For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyActio as one of the domains.
 
    ```Powershell:
       get-mailbox adam@contoso.com | Format-List SharingPolicy
@@ -109,9 +109,9 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Get-OrganizationConfig | Format-List EwsEnabled
    ```
 
-    If the command returns “EwsEnabled: **$true**" then proceed to Step 2.
+    If the command returns "EwsEnabled: **$true**" then proceed to Step 2.
 
-    If the command returns “EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
+    If the command returns "EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
     Otherwise the default values of EwsEnabled is enough to leave "Bookings with me" enabled, no further changes are needed.
 
    ```PowerShell
@@ -132,8 +132,12 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
-    - To turn on Bookings with me for your organization, add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
+    - To turn on Bookings with me for your organization, you must set the **EwsApplicationAccessPolicy** to **EnforceAllowList** and add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
 
+   ```PowerShell
+   Set-OrganizationConfig -EwsApplicationAccessPolicy:EnforceAllowList
+   ```
+   
    ```PowerShell
    Set-OrganizationConfig -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```
@@ -167,7 +171,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
 Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status and turn Bookings with me on or off for individual users in your organization.
 
-1. Check the individual’s EWS control access by running the following command:
+1. Check the individual's EWS control access by running the following command:
 
    ```PowerShell
    Get-CASMailbox -Identity adam@contoso.com | Format-List EwsEnabled
@@ -175,7 +179,7 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
 
     **A**. If the command returns "**EwsEnabled: $true**", then proceed to Step 2.
 
-2. Check the individual’s **EwsApplicationAccessPolicy** by running the following command:
+2. Check the individual's **EwsApplicationAccessPolicy** by running the following command:
 
    ```PowerShell
    Get-CASMailbox -Identity adam@contoso.com | Format-List EwsApplicationAccessPolicy,Ews*List
@@ -217,6 +221,12 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
    Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
+### Create Bookings with me
+
+1. Open [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+2. Select **Calendar**.
+3. Select the **Create bookings page** link that appears in your calendar to create Bookings with me.
+
 ## Frequently asked questions
 
 ### What is the difference between Bookings and Bookings with me?
@@ -241,7 +251,7 @@ Private meeting types can also generate single use links. Single use links expir
 
 ### Do people need to have a Microsoft account or Bookings license to schedule time with me?
 
-No. Anyone can schedule time with you using your Bookings with me page, even if they don’t have a Microsoft account. You need a Bookings license to create a Bookings with me page.
+No. Anyone can schedule time with you using your Bookings with me page, even if they don't have a Microsoft account. You need a Bookings license to create a Bookings with me page.
 
 ## Privacy
 

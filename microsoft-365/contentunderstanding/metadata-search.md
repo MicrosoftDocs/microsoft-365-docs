@@ -1,38 +1,38 @@
 ---
-title: Search for metadata in document libraries in Microsoft SharePoint Syntex
+title: Use metadata to find content in document libraries in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: high
-description: Learn how to use advanced metadata search and search for custom site columns to find items in SharePoint document libraries using SharePoint Syntex.
+description: Learn how to use Syntex content query and search for custom site columns to find items in SharePoint document libraries using Microsoft Syntex.
 ---
 
-# Search for metadata in document libraries in Microsoft SharePoint Syntex
+# Use metadata to find content in document libraries in Microsoft Syntex
 
-The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
+Microsoft Syntex gives you the ability to quickly search through your document's metadata with ease. The Syntex content query feature lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
-Advanced metadata search lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+Syntex content query lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 > [!NOTE]
-> This feature is available only for users who are licensed for SharePoint Syntex. 
+> This feature is available only for licensed Syntex users. 
 
-## To use advanced metadata search
+## To use Syntex content query
 
-1. From a SharePoint document library, in the **Search this library** box, select the metadata search icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)).
+1. From a SharePoint document library, in the **Search this library** box, select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)).
 
-    ![Screenshot of a document library page showing the search box with the metadata search icon highlighted.](../media/content-understanding/metadata-search-box.png)
+    ![Screenshot of a document library page showing the search box with the content query icon highlighted.](../media/content-understanding/metadata-search-box.png)
 
-2. In the metadata search pane, type the text or select the parameter you want to find in one or more of the search fields.
+2. In the content query pane, type the text or select the parameter you want to find in one or more of the search fields.
 
-    ![Screenshot of a document library page showing the metadata search pane.](../media/content-understanding/metadata-search-pane.png)
+    ![Screenshot of a document library page showing the content query pane.](../media/content-understanding/metadata-search-pane.png)
 
    The following metadata search fields are currently available. More fields will be added in the future.
 
@@ -47,8 +47,10 @@ Advanced metadata search lets you use the metadata associated with a document to
 
 3. You can also search for custom site columns that are in the current library view. This is especially useful if you have a model running on the library because the metadata extractors automatically populate information into site columns.  
 
-    To add a custom site column to your search, select **Add more options**, and then select the name of the site column.
+    To add a custom site column to your query, select **Add more options**, and then select the name of the site column.
 
-    ![Screenshot of the Add more options menu on the metadata search pane.](../media/content-understanding/metadata-search-add-more-options.png)
+    ![Screenshot of the Add more options menu on the content query pane.](../media/content-understanding/metadata-search-add-more-options.png)
 
-4. Select **Search**. The documents that match your metadata search are shown on the results page. 
+    For numbers, currency, and date columns, you can scope parameters of the query—for example, greater than a specific amount or within a specific period of time. For text columns, you can specify if you want to contain or not contain certain words.
+
+4. Select **Search**. The documents that match your metadata query are shown on the results page. 

@@ -11,8 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+- purview-compliance
+- tier2
 search.appverid: 
 - MOE150
 - MET150
@@ -55,6 +55,8 @@ However, if the hold is time-based, the mailbox content will be retained until t
 > For inactive mailboxes, we recommend using a retain and delete setting for your Microsoft 365 retention policy or labels.  If you choose a retain only setting, the Recoverable Items folder will purge at the end of the hold duration, however any other non-deleted items will remain within the inactive mailbox indefinitely.
 
 As regulations and policies evolve, there may be some situations in which you need to change the duration of the hold assigned to the inactive mailbox.  The following steps outline how to do this.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Connect to PowerShell
 
@@ -263,7 +265,7 @@ The result is that items in the inactive mailbox are retained indefinitely or un
 
 ### Change the duration for an In-Place Hold
 
-In-Place Holds have been retired and can no longer be modified. If an inactive mailbox has an In-Place Hold applied to it, you can't change the hold duration. You can only remove the In-Place Hold, which will result in the deletion of the inactive mailbox. For more information, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md#remove-in-place-holds).
+In-Place Holds have been retired and can no longer be modified. If an inactive mailbox has an In-Place Hold applied to it, you can't change the hold duration. You can only remove the In-Place Hold, which will result in the deletion of the inactive mailbox. For more information, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md#remove-an-in-place-hold-from-an-inactive-mailbox).
   
 ## More information
 

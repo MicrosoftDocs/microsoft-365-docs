@@ -4,7 +4,7 @@ ms.author: v-lanachin
 ms.date: 03/31/2022 
 ms.topic: include
 audience: admin
-ms.service: msteams
+ms.service: microsoft-365-frontline
 ---
 1. Install PowerShell version 7 or later. For step-by-step guidance, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 
@@ -29,7 +29,7 @@ ms.service: msteams
     Import-Module MicrosoftTeams 
     ```
 
-    Verify that it's at least version 4.1.0 and contains the Shifts connector cmdlets.
+    Verify that it's at least version 4.7.0 and contains the Shifts connector cmdlets.
 
     ```powershell
     Get-Command -Module MicrosoftTeams -Name *teamsshiftsconnection* 

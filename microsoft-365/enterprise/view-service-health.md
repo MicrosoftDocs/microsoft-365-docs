@@ -17,6 +17,7 @@ ms.custom:
 - 'O365E_ServiceHealthModern'
 - 'seo-marvel-apr2020'
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 search.appverid:

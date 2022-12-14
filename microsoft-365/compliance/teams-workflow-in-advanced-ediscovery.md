@@ -1,5 +1,6 @@
 ---
 title: "Teams workflow in eDiscovery (Premium)"
+description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -12,8 +13,10 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in eDiscovery (Premium)."
+ms.collection:
+- highpri 
+- tier1
+- purview-compliance
 ---
 
 # eDiscovery (Premium) workflow for content in Microsoft Teams
@@ -33,6 +36,8 @@ There are six categories of Teams content that you can collect and process using
 - **Private channels**. Message posts, replies, and attachments shared in a private Teams channel.
 
 - **Shared channels**. Message posts, replies, and attachments shared in a shared Teams channel.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Where Teams content is stored
 
@@ -127,11 +132,11 @@ After adding custodians to the case and preserving content in custodian data sou
 
 When you collect Teams content for a case, there are two steps in the workflow:
 
-1. **Create a draft collection**.  The first step is to create a *draft collection*, which is an estimate of the items that match your search criteria. You can view information about the results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also preview a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the draft collection as many times as is necessary to narrow the results until you're satisfied you're collecting the content relevant to your case.
+1. **Create a collection estimate**.  The first step is to create a *collection estimate*, which is an estimate of the items that match your search criteria. You can view information about the results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also preview a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the collection estimate as many times as is necessary to narrow the results until you're satisfied you're collecting the content relevant to your case.
 
-2. **Commit a draft collection to a review set**. Once you're satisfied with the results of a draft collection, you can commit the collection to a review set. When you commit a draft collection, the items returned by the collection are added to a review set for review, analysis, and export.
+2. **Commit a collection estimate to a review set**. Once you're satisfied with the results of a collection estimate, you can commit the collection to a review set. When you commit a collection estimate, the items returned by the collection are added to a review set for review, analysis, and export.
 
-You also have the option of not running a draft collection and adding the collection results directly to a review set when you create and run the collection.
+You also have the option of not running a collection estimate and adding the collection results directly to a review set when you create and run the collection.
 
 To create a collection of Teams content:
 
@@ -151,9 +156,9 @@ To create a collection of Teams content:
 
    We recommend doing the following things when collecting Teams content:
 
-   - Remove custodians' OneDrive accounts from the collection scope (by unselecting the checkbox in the **Custodian's OneDrive** column for each custodian). This prevents the collection of duplicate files that were attached to 1:1 chats and group chats. Cloud attachments are automatically collected from each conversation found in the collection when you commit the draft collection to the review set. By using this method (instead of searching OneDrive accounts as part of the collection), files attached to 1:1 and group chats are grouped in the conversation they were shared in.
+   - Remove custodians' OneDrive accounts from the collection scope (by unselecting the checkbox in the **Custodian's OneDrive** column for each custodian). This prevents the collection of duplicate files that were attached to 1:1 chats and group chats. Cloud attachments are automatically collected from each conversation found in the collection when you commit the collection estimate to the review set. By using this method (instead of searching OneDrive accounts as part of the collection), files attached to 1:1 and group chats are grouped in the conversation they were shared in.
 
-   - Unselect the checkbox in the **Additional site** column to remove the SharePoint sites containing files shared in private or shared channels. Doing this eliminates collecting duplicate files that were attached to private or shared channel conversations because these cloud attachments are automatically added to the review set when you commit the draft collection and grouped in the conversations they were shared in.
+   - Unselect the checkbox in the **Additional site** column to remove the SharePoint sites containing files shared in private or shared channels. Doing this eliminates collecting duplicate files that were attached to private or shared channel conversations because these cloud attachments are automatically added to the review set when you commit the collection estimate and grouped in the conversations they were shared in.
 
 6. If you previously followed the steps to add Teams content as custodian data sources, you can skip this step and select **Next**. Otherwise, on the **Non-custodial data sources** wizard page, you can choose non-custodial data sources that contain Teams content that you may have added to the case to search in the collection.
 
@@ -165,15 +170,15 @@ To create a collection of Teams content:
 
    ![Query to collect Teams content.](..\media\TeamsConditionsQueryType.png)
 
-9. On the **Save draft or collect** wizard page, do one of the following depending on whether you want to create a draft collection or commit the collection to a review set.
+9. On the **Save draft or collect** wizard page, do one of the following depending on whether you want to create a collection estimate or commit the collection to a review set.
 
-   ![Save draft collection or commit collection.](..\media\TeamsDraftCommitCollection.png)
+   ![Save collection estimate or commit collection.](..\media\TeamsDraftCommitCollection.png)
 
-   1. **Save collection as draft**. Choose this option to create a draft collection. As previously explained, a draft collection doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(collection-statistics-reports.md)] and edit and rerun the draft collection. When you satisfied with the result of a draft collection, you can commit it to a review set. For more information, see [Create a draft collection](create-draft-collection.md).
+   1. **Save collection as draft**. Choose this option to create a collection estimate. As previously explained, a collection estimate doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(collection-statistics-reports.md)] and edit and rerun the collection estimate. When you satisfied with the result of a collection estimate, you can commit it to a review set. For more information, see [Create a collection estimate](create-draft-collection.md).
 
-   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. The options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the new case format that you used when you initially created the case for Teams content. For more information about committing collections to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
+   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. The options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the new case format that you used when you initially created the case for Teams content. For more information about committing collections to a review set, see [Commit a collection estimate to a review set](commit-draft-collection.md).
 
-10. After you're finished configuring the collection, submit the collection to create a draft collection or collect items and add them to a review set.
+10. After you're finished configuring the collection, submit the collection to create a collection estimate or collect items and add them to a review set.
 
    When the process of adding the collection to the review set is completed, the status value for the collection on the **Collections** tab is set to **Committed**.
 

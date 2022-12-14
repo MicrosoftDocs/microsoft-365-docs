@@ -8,6 +8,7 @@ ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - M365-collaboration
 - M365-subscription-management
 - SPO_Content

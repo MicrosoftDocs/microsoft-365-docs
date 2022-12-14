@@ -1,5 +1,6 @@
 ---
 title: "Set up compliance boundaries for eDiscovery investigations"
+description: "Learn how to use compliance boundaries to create logical boundaries that control the user content locations that an eDiscovery manager can search in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,15 +10,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
-- SPO_Content
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: "Learn how to use compliance boundaries to create logical boundaries that control the user content locations that an eDiscovery manager can search in Microsoft 365."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -62,6 +61,8 @@ Here's the process for setting up compliance boundaries:
 [Step 3: Create a search permissions filter to enforce the compliance boundary](#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
 [Step 4: Create an eDiscovery case for an intra-agency investigations](#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you set up compliance boundaries
 

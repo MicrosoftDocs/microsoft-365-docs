@@ -9,12 +9,14 @@ audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: null
-ms.collection: M365-security-compliance
+ms.collection: 
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 recommendations: false
-description: "learn about dlp policy conditions and exceptions"
+description: "Learn about dlp policy conditions and exceptions that identify sensitive items that the policy is applied to."
 ---
 
 # DLP policy conditions, exceptions, and actions
@@ -29,6 +31,8 @@ Most conditions and exceptions have one property that supports one or more value
 
 Actions typically require additional properties. For example, when the DLP policy rule redirects a message, you need to specify where the message is redirected to.
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Conditions and exceptions for DLP policies
 
@@ -144,5 +148,5 @@ This table describes the actions that are available in DLP.
 Prepend subject|PrependSubject|String|Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.<br/><br/>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.|
 |Apply HTML disclaimer|ApplyHtmlDisclaimer|First property: *Text*<br/><br/>Second property: *Location*<br/><br/>Third property: *Fallback action*|Applies the specified HTML disclaimer to the required location of the message.<br/><br/>This parameter uses the syntax: @{ Text = " " ; Location = \<Append \| Prepend\>; FallbackAction = \<Wrap \| Ignore \| Reject\> }|
 |Remove message encryption and rights protection|RemoveRMSTemplate|n/a|Removes message encryption applied on an email|
-|Deliver the message to the hosted quarantine |*Quarantine*|n/a| This action is currently in **public preview**. During this phase, emails quarantined by DLP policies will show policy type as ExchangeTransportRule.<br/><br/> Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
+|Deliver the message to the hosted quarantine |*Quarantine*|n/a| This action is currently in **public preview**. During this phase, emails quarantined by DLP policies will show policy type as ExchangeTransportRule.<br/><br/> Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-about).|
 |Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: <br/><br/>- **Replace** all matches in the subject with the replacement text <br/><br/>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. <br/><br/>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|

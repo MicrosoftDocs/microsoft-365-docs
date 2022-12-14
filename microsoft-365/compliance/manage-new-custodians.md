@@ -1,5 +1,6 @@
 ---
 title: "Manage custodians in an eDiscovery (Premium) case"
+description: Learn how to view details, edit, and bulk edit the list of custodians in an eDiscovery (Premium) case.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,18 +11,21 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance 
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-description: Learn how to view details, edit, and bulk edit the list of custodians in an eDiscovery (Premium) case.
 ms.custom: seo-marvel-apr2020
 ---
 
 # Manage custodians in an eDiscovery (Premium) case
 
 The **Custodians** page on the **Data sources** tab in an Microsoft Purview eDiscovery (Premium) case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in eDiscovery (Premium).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## View custodian details
 

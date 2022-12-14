@@ -15,6 +15,7 @@ ms.collection:
 - SPO_Content
 - m365solution-scenario
 - m365solution-spintranet
+- highpri
 ms.localizationpriority: medium
 description: "Learn about how Teams works with Microsoft 365 Multi-Geo."
 ---

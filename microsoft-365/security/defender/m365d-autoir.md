@@ -17,8 +17,8 @@ ms.date: 07/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-- M365-security-compliance
-- m365initiative-m365-defender
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco

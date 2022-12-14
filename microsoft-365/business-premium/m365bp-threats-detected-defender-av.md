@@ -7,7 +7,10 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual 
 ms.service: microsoft-365-security
-ms.subservice: other
+ms.collection: 
+- m365-security
+- tier1
+ms.subservice: m365bp
 ms.date: 09/15/2022
 ms.localizationpriority: medium
 search.appverid: MET150
@@ -81,4 +84,4 @@ To learn more about different threats, visit the <a href="https://www.microsoft.
 [How to turn on and use Microsoft Defender Antivirus from the Windows Security app](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (article)\
 [How to turn on Microsoft Defender Antivirus by using Group Policy](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (article)\
 [How to update your antivirus definitions](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (article)\
-[How to submit malware and non-malware to Microsoft for analysis](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (article)
+[How to submit malware and non-malware to Microsoft for analysis](/microsoft-365/security/office-365-security/submissions-submit-files-to-microsoft) (article)

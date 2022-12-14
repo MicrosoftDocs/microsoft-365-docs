@@ -10,7 +10,8 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MOE150
@@ -59,6 +60,8 @@ You can find these reports in the Microsoft Purview compliance portal \> **Repor
 
 ![DLP policy matches report.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## View the justification submitted by a user for an override
 
 If your DLP policy allows users to override it, you can use the false positive and override report to view the text submitted by users in the policy tip.
@@ -73,11 +76,11 @@ Reports can show insights and recommendations where you can click the red warnin
 
 ## Permissions for DLP reports
 
-To view DLP reports in the Security & Compliance Center, you have to be assigned the:
+To view DLP reports in the Purview compliance portal, you have to be assigned the:
 
 - **Security Reader** role in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. By default, this role is assigned to the Organization Management and Security Reader role groups in the Exchange admin center.
 
-- **View-Only DLP Compliance Management** role in the Security & Compliance Center. By default, this role is assigned to the Compliance Administrator, Organization Management, Security Administrator, and Security Reader role groups in the Security & Compliance Center.
+- **View-Only DLP Compliance Management** role in the Purview compliance portal. By default, this role is assigned to the Compliance Administrator, Organization Management, Security Administrator, and Security Reader role groups in the Purview compliance portal.
 
 - **View-Only Recipients** role in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. By default, this role is assigned to the Compliance Management, Organization Management, and View-Only Organization Management role groups in the Exchange admin center.
 

@@ -1,5 +1,5 @@
 ---
-title: "Cancel your business subscription"
+title: "Cancel your Microsoft business subscription"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -7,10 +7,12 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier1
+- scotvorg
 - highpri 
 - M365-subscription-management
 - Adm_O365
@@ -22,26 +24,47 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and Microsoft 365 for business trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 07/07/2022
+ms.date: 11/28/2022
 ---
 
-# Cancel your Microsoft subscription
+# Cancel your Microsoft business subscription
 
-If you want to cancel your subscription, the easiest way to do that is to [turn off recurring billing](renew-your-subscription.md). When you turn off recurring billing, you can continue to use your subscription until it expires at the end of the subscription term. If you want to cancel immediately, use the information and steps in this article to do that.
+This article only applies to canceling **Dynamics 365**, **Intune**, **Power Platform**, **Windows 365**, and **Microsoft 365 for business** subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 
-You can cancel your free trial at any time to stop future charges. After your 1-month free trial ends, you will be charged the applicable subscription fee.
+> [!WARNING]
+> Before you cancel a subscription, make sure your users [save their data](#save-your-data).
 
-> [!IMPORTANT]
-> - This article only applies to Dynamics 365, Intune, Power Platform, Windows 365, and Microsoft 365 for business subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
-> - If you bought your subscription through a Microsoft representative or a reseller partner, you have seven days to cancel for a pro-rated refund. Contact your seller or partner to help you cancel your subscription. [Learn more about partners](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
-> - If your organization is located in Chile, and you bought your subscription through a partner in Chile, you have 10 days to cancel for a pro-rated refund.
+**In this article:**
+
+[Before you begin](#before-you-begin)\
+[What's the easiest way to cancel?](#whats-the-easiest-way-to-cancel)\
+[How do I cancel my free trial?](#how-do-i-cancel-my-free-trial)\
+[What if I bought my subscription through a partner?](#what-if-i-bought-my-subscription-through-a-partner)\
+[Determine your cancellation options](#determine-your-cancellation-options)\
+[Steps to cancel your subscription](#steps-to-cancel-your-subscription)\
+[Save your data](#save-your-data)\
+[Next steps](#next-steps)\
+[Related content](#related-content)
 
 ## Before you begin
 
 - You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-- Before you cancel a subscription, make sure your users [save their data](#save-your-data).
 - If you added your own domain name to use with your subscription, you must [remove the domain](../../admin/get-help-with-domains/remove-a-domain.md) before you cancel your subscription.
 - If you have a domain subscription, to prevent any other charges for that subscription, [turn off recurring billing](renew-your-subscription.md).
+
+## What's the easiest way to cancel?
+
+The easiest way to cancel your subscription is to [turn off recurring billing](renew-your-subscription.md#turn-recurring-billing-off-or-on). When you turn off recurring billing, you can continue to use your subscription until it expires at the end of the subscription term. If you want to cancel immediately, use the information and steps in this article to do that.
+
+## How do I cancel my free trial?
+
+You can cancel your free trial at any time to stop future charges. To cancel a free trial, [turn off recurring billing](renew-your-subscription.md#turn-recurring-billing-off-or-on). If you don't turn off recurring billing, after your one month free trial ends, you're charged the applicable subscription fee. If your trial subscription doesn't have a payment method associated with it, you can just let it expire at the end of the trial period, and you won't be charged.
+
+## What if I bought my subscription through a partner?
+
+If you bought your subscription through a Microsoft representative or a reseller partner, you have seven days to cancel for a pro-rated refund. Contact your seller or partner to help you cancel your subscription. [Learn more about partners](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
+
+If your organization is in Chile, and you bought your subscription through a partner in Chile, you have 10 days to cancel for a prorated refund.
 
 ## Determine your cancellation options
 
@@ -54,27 +77,27 @@ You can only cancel and receive a prorated credit or refund if you cancel within
 
 If you need to cancel within seven days after the start or renewal of your subscription, go to [Steps to cancel your subscription](#steps-to-cancel-your-subscription) later in this article.
 
-If more than seven days have passed, [turn off recurring billing](renew-your-subscription.md). This prevents your subscription from renewing at the end of its term.  You keep access to your products and services for the remainder of your subscription. If you have an annual subscription and are paying monthly, you are charged each month for the remainder of your subscription term.
+If more than seven days have passed, [turn off recurring billing](renew-your-subscription.md). Turning off recurring billing prevents your subscription from renewing at the end of its term.  You keep access to your products and services for the remainder of your subscription. If you have an annual subscription and are paying monthly, you're charged each month for the remainder of your subscription term.
 
 ### If you don't have a billing profile
 
 If you cancel after you start or renew your subscription, you receive a prorated credit or refund. The amount is either credited towards your next invoice or returned to you in the next billing cycle.
 
-The steps to cancel your trial or paid subscription depend on the number of licenses in your subscription. The following table explains what steps you can take, based on your number of licenses.
+The steps to cancel your trial or paid subscription depend on the number of licenses in your subscription. The following table explains what steps you can take, based on the number of licenses in your subscription.
 
 |If your subscription has  |You can  |
 |--------------|--------------|
 |25 or fewer licenses  | [Use the steps below to cancel](#steps-to-cancel-your-subscription) your trial or paid subscription online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.        |
 |More than 25 licenses   | Reduce the number of licenses to 25 or fewer and then [use the steps below to cancel](#steps-to-cancel-your-subscription).      |
 
-If you can't reduce the number of licenses, [turn off recurring billing](renew-your-subscription.md). This prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
+If you can't reduce the number of licenses, [turn off recurring billing](renew-your-subscription.md). Turning off recurring billing prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
 
 If you're unable to cancel your subscription, [contact support](../../admin/get-help-support.md) for help.
 
 ## Steps to cancel your subscription
 
 > [!NOTE]
-> If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one subscription won't impact the purchased licenses or services inside the others.
+> If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one subscription won't impact the licenses or services that you bought inside inside the other subscriptions.
 
 ::: moniker range="o365-worldwide"
 
@@ -94,10 +117,10 @@ If you're unable to cancel your subscription, [contact support](../../admin/get-
 
 4. Select **Save**.
 
-Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
+Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For information about what you can expect when you cancel a paid Microsoft 365 for business subscription, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
-> [!IMPORTANT]
-> If you explicitly delete a subscription, then it skips the **Expired** and **Disabled** states and the SharePoint Online data and content, including OneDrive, is deleted immediately.
+> [!WARNING]
+> If you explicitly delete a subscription, it skips the **Expired** and **Disabled** states and the SharePoint Online data and content, including OneDrive content, is deleted immediately.
 
 ## Save your data
 

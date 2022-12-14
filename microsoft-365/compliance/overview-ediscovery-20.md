@@ -1,5 +1,6 @@
 ---
 title: "Overview of the eDiscovery (Premium) solution in Microsoft Purview"
+description: "Learn about the eDiscovery (Premium) solution in Microsoft Purview. This article provides an overview of eDiscovery (Premium) in Microsoft Purview, a tool to help you manage internal and external investigations. It also frames the business reasons for using eDiscovery (Premium) to manage your legal investigations."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,20 +12,23 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- m365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-aed
-- m365initiative-compliance
 - m365solution-overview
+- highpri
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-description: "Learn about the eDiscovery (Premium) solution in Microsoft Purview. This article provides an overview of eDiscovery (Premium) in Microsoft Purview, a tool to help you manage internal and external investigations. It also frames the business reasons for using eDiscovery (Premium) to manage your legal investigations."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Overview of Microsoft Purview eDiscovery (Premium)
 
 The Microsoft Purview eDiscovery (Premium) solution builds on the existing Microsoft eDiscovery and analytics capabilities. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## eDiscovery (Premium) capabilities
 
@@ -103,6 +107,10 @@ There are two quick and easy steps to get started with eDiscovery (Premium).
 |[Set up eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)| After verifying the subscription and licensing requirements, you can assign permissions and configure organization-wide settings to get started using eDiscovery (Premium).|
 |[Create and manage cases](create-and-manage-advanced-ediscoveryv2-case.md) | Create cases to manage the eDiscovery (Premium) workflow for all legal and other types of investigations in your organization.|
 |||
+
+## Integration with Insider Risk Management
+
+Cases in [Microsoft Purview Insider Risk Management](https://compliance.microsoft.com/insiderriskmgmt) can be quickly escalated to new cases in Microsoft Purview eDiscovery (Premium) when additional legal review is needed for potentially risky user activity. The tight integration between these solutions can help your risk and legal teams work more efficiently and can help provide a complete end-to-end view of user activities under review. Check out how to [get started with Insider Risk Management](/microsoft-365/compliance/insider-risk-management-configure) and how to easily [escalate an Insider Risk Management case](/microsoft-365/compliance/insider-risk-management-cases#escalate-for-investigation) to an eDiscovery (Premium) case.
 
 ## eDiscovery (Premium) architecture
 

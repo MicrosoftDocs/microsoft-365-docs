@@ -26,28 +26,26 @@
 
     - name: Whiteboard for government
       items:
-
-    - name: GCC
-      items:
-        - name: Manage access - GCC
-          href: manage-whiteboard-access-gcc.md
-        - name: Manage data - GCC
-          href: manage-data-gcc.md
-        - name: Manage sharing - GCC
-          href: manage-sharing-gcc.md
-        - name: Manage clients - GCC
-          href: manage-clients-gcc.md
-
-    - name: GCC High
-      items:
-        - name: Manage access - GCC High
-          href: manage-whiteboard-access-gcc-high.md
-        - name: Manage data - GCC High
-          href: manage-data-gcc-high.md
-        - name: Manage sharing - GCC High
-          href: manage-sharing-gcc-high.md
-        - name: Manage clients - GCC High
-          href: manage-clients-gcc-high.md
+        - name: GCC
+          items:
+            - name: Manage access - GCC
+              href: manage-whiteboard-access-gcc.md
+            - name: Manage data - GCC
+              href: manage-data-gcc.md
+            - name: Manage sharing - GCC
+              href: manage-sharing-gcc.md
+            - name: Manage clients - GCC
+              href: manage-clients-gcc.md
+        - name: GCC High
+          items:
+            - name: Manage access - GCC High
+              href: manage-whiteboard-access-gcc-high.md
+            - name: Manage data - GCC High
+              href: manage-data-gcc-high.md
+            - name: Manage sharing - GCC High
+              href: manage-sharing-gcc-high.md
+            - name: Manage clients - GCC High
+              href: manage-clients-gcc-high.md
 
     - name: Whiteboard PowerShell
       href: /powershell/module/whiteboard/

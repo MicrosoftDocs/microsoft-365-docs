@@ -11,9 +11,9 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.localizationpriority: normal
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 - SPO_Content
-- m365initiative-compliance
 description: Identify the PowerShell cmdlets for Microsoft 365 retention that support configuration at-scale, automation, or might be needed for advanced configuration scenarios.
 ---
 
@@ -23,7 +23,7 @@ description: Identify the PowerShell cmdlets for Microsoft 365 retention that su
 
 Use the following sections to identify the main PowerShell cmdlets that are available for retention policies and retention labels that you might need for configuration at-scale, automated scripts, or advanced configuration scenarios. For the full list of  cmdlets, see the [policy-and-compliance-retention list](/powershell/module/exchange#policy-and-compliance-retention) from the PowerShell documentation.
 
-Before you use these cmdlets, you must first [connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Before you use these cmdlets, you must first [connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 In the descriptions that follow, a policy for retention can refer to a retention policy (no labels), or a retention label policy. Each policy defines whether it's static or adaptive and the locations for the policy to be applied. The policy then requires one rule to complete the configuration.
 
@@ -33,6 +33,8 @@ For example:
 When you use retention labels, these contain the retention settings and their policies need different rules:
 - A retention label policy that you publish needs a rule that defines which labels should be displayed in apps.
 - An auto-apply retention label policy needs a rule that defines the label to apply and the conditions for applying the label.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Retention cmdlets for most locations
 

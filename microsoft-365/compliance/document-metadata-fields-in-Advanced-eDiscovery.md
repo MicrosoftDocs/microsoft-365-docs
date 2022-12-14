@@ -1,5 +1,6 @@
 ---
 title: "Document metadata fields in eDiscovery (Premium)"
+description: "This article defines the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium) in Microsoft 365."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,13 +11,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 search.appverid:
 - MOE150
 - MET150
-ms.assetid:
-
-description: "This article defines the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium) in Microsoft 365."
 ---
 
 # Document metadata fields in eDiscovery (Premium)

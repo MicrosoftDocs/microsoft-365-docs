@@ -5,7 +5,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.collection: 
 - highpri
 - SPO_Content
@@ -133,9 +133,9 @@ To create a DLP rule:
 
 When you allow anonymous users to upload files, you're at an increased risk of someone uploading a malicious file. In organizations with Microsoft Defender for Office 365 Plan 1 or Plan 2 licenses (for example, in Microsoft 365 E5 or as an add-on), you can use the *Safe Attachments* feature to detonate uploaded files in a sandboxed virtual environment, and quarantine files that are found to be unsafe.
 
-For instructions, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md).
+For instructions, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/safe-attachments-for-spo-odfb-teams-configure.md).
 
-If you have Microsoft 365 A5 or E5 Security licenses, you can also turn on (and use) the *Safe Documents* feature. For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](../security/office-365-security/safe-docs.md).
+If you have Microsoft 365 A5 or E5 Security licenses, you can also turn on (and use) the *Safe Documents* feature. For more information, see [Safe Documents in Microsoft 365 A5 or E5 Security](../security/office-365-security/safe-documents-in-e5-plus-security-about.md).
 
 ## Add copyright information to your files
 

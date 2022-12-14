@@ -1,7 +1,7 @@
 ---
 title: Intune-based deployment for Microsoft Defender for Endpoint on Mac
 description: Install Microsoft Defender for Endpoint on Mac, using Microsoft Intune.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,8 +11,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -37,6 +38,7 @@ This topic describes how to deploy Microsoft Defender for Endpoint on macOS thro
 1. [Publish application](#publish-application)
 
 ## Prerequisites and system requirements
+
 
 Before you get started, see [the main Microsoft Defender for Endpoint on macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.
 
@@ -93,7 +95,7 @@ In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/
 
 ### Onboarding blob
 
-This profile contains license information for Microsoft Defender for Endpoint. Without this profile, Microsoft Defender for Endpoint will report that it isn't licensed.
+This profile contains a license information for Microsoft Defender for Endpoint. Without license information, Microsoft Defender for Endpoint will report that it is not licensed.
 
 1. Select **Create Profile** under **Configuration Profiles**.
 1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Custom**. Click **Create**.
@@ -185,9 +187,20 @@ Follow the instructions for [Onboarding blob](#onboarding-blob) from above, usin
 
 ### Notifications
 
-This profile is used to allow Microsoft Defender for Endpoint on macOS and Microsoft Auto Update to display notifications in UI on macOS 10.15 (Catalina) or newer.
+This profile is used to allow Microsoft Defender for Endpoint on macOS and Microsoft Auto Update to display notifications in UI.
 
 Download [**notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
+
+Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "Defender for Endpoint Notifications" as profile name, and downloaded **notif.mobileconfig** as Configuration profile name.
+
+### Background Services
+
+   > [!CAUTION]
+   > macOS 13 (Ventura) contains new privacy enhancements. Beginning with this version, by default, applications cannot run in background without explicit consent. Microsoft Defender for Endpoint must run its daemon process in background.
+   >
+   > This configuration profile grants Background Service permissions to Microsoft Defender for Endpoint. If you previously configured Microsoft Defender for Endpoint through Intune, we recommend you update the deployment with this configuration profile.
+
+Download [**background_services.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/background_services.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
 Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "Defender for Endpoint Notifications" as profile name, and downloaded **notif.mobileconfig** as Configuration profile name.
 

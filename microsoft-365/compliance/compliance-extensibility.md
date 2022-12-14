@@ -1,5 +1,6 @@
 ---
 title: "Microsoft Purview extensibility"
+description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -10,16 +11,15 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier3
+- purview-compliance
+- data-connectors
 search.appverid: 
 - MOE150
-- MET150
-ms.assetid: 
+- MET150 
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn about extending Microsoft Purview solutions by using third-party data connectors and Microsoft Graph APIs."
 ---
 
 # Microsoft Purview and Microsoft Priva extensibility
@@ -31,6 +31,8 @@ There are two key building blocks for compliance extensibility:
 - **Data connectors**. Use to import and archive non-Microsoft data so you can apply Microsoft 365 protection and governance capabilities to third-party data.
 
 - **APIs**. Enables programmatic access to Microsoft Purview capabilities.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Data connectors
 

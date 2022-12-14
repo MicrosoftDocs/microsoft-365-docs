@@ -2,18 +2,21 @@
 title: "About the Microsoft Purview solutions trial"
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- highpri
+- tier1
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn details about the Microsoft Purview solutions trial and how to sign up."
+description: "Learn how to join the Microsoft Purview solutions free trial. Try all premium capabilities of Purview solutions at the E5 level, such as Audit and Information Protection, to help your organization manage data security and compliance needs. Get details about eligibility and how to sign up today."
 ---
 
 # About the Microsoft Purview solutions trial
@@ -21,6 +24,8 @@ description: "Learn details about the Microsoft Purview solutions trial and how 
 Microsoft Purview solutions help protect your organization from internal threats arising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and internal business requirements.
 
 The Microsoft Purview solutions trial is the easiest way to try all the capabilities of Microsoft Purview solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Terms and conditions
 
@@ -60,7 +65,7 @@ Your trial will be effective immediately for 90 days. It can take up to two hour
 
 You can start using Purview solutions as soon as you see them in the Microsoft Purview compliance portal. Nothing is created automatically and users won't be affected. When you navigate to each solution, you may be guided to make extra setup configurations to start using features.
 
-Use our [trial playbook](compliance-easy-trials-compliance-playbook.md) to help you get started.
+Use our [trial user guide](compliance-easy-trials-compliance-playbook.md) to help you get started.
 
 #### Finding support
 
@@ -82,7 +87,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Audit**
 
-  Microsoft Purview Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and faster access to Office 365 Management Activity API. Learn more about [Audit](advanced-audit.md)
+  Microsoft Purview Audit (Premium) helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and faster access to Office 365 Management Activity API. Learn more about [Audit (Premium)](audit-premium.md)
 
 - **Communication Compliance**
 

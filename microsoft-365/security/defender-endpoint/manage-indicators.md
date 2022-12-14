@@ -12,8 +12,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -90,8 +92,9 @@ The IoC API schema and the threat ids in advance hunting have been updated to al
 >
 > The format for importing new indicators (IoCs) has changed according to the new updated actions and alerts settings. We recommend downloading the new CSV format that can be found at the bottom of the import panel.
 
-## Related topics
+## Related articles
 
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Create contextual IoC](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
 - [Use the Microsoft Defender for Endpoint indicators API](ti-indicator.md)
 - [Use partner integrated solutions](partner-applications.md)

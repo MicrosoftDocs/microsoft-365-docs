@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 description: Follow the path of an incoming message through the threat filtering stack in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 search.appverid: met150
 ---
 
@@ -88,9 +88,9 @@ In this phase the filtering stack begins to handle the specific contents of the 
 
 1. **Transport rules** (also known as mail flow rules or Exchange transport rules) allow an admin to take a wide range of actions when an equally wide range of conditions are met for a message. All messages that flow through your organization are evaluated against the enabled mail flow rules / transport rules.
 
-2. **Microsoft Defender Antivirus** and two *third-party Antivirus engines* are used to detect all known malware in attachments.
+2. **Microsoft Defender Antivirus** and a *third-party Antivirus engine* are used to detect all known malware in attachments.
 
-3. The anti-virus (AV) engines are also used to true-type all attachments, so that **Type blocking** can block all attachments of types the admin specifies.
+3. The anti-virus (AV) engines are also used to true-type supported attachment types, which allows **Type blocking** to correctly block file types specified by admins.
 
 4. Whenever Microsoft Defender for Office 365 detects a malicious attachment, the file's hash, and a hash of its active content, are added to Exchange Online Protection (EOP) reputation. **Attachment reputation blocking** will block that file across all Office 365, and on endpoints, through MSAV cloud calls.
 

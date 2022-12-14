@@ -6,17 +6,21 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
 ---
+
+<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Export software inventory assessment per device
 
@@ -209,7 +213,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 ```
 
 > [!NOTE]
-> The information returned by this API, along with the information returned by the [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that doesn't have a CPE, gives you full visibility into the software installed across your organization and the devices it’s installed on.
+> The information returned by this API, along with the information returned by the [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that doesn't have a CPE, gives you full visibility into the software installed across your organization and the devices it's installed on.
 
 ## 2. Export software inventory assessment (via files)
 

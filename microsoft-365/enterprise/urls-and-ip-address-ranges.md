@@ -3,12 +3,13 @@ title: "Office 365 URLs and IP address ranges"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/29/2022
+ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- scotvorg
 - M365-subscription-management
 - Strat_O365_Enterprise
 f1.keywords:
@@ -34,7 +35,7 @@ Office 365 requires connectivity to the Internet. The endpoints below should be 
 
 |Notes|Download|Use|
 |---|---|---|
-|**Last updated:** 08/29/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change Log subscription](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** all required and optional destinations in one [JSON formatted](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) list.|**Use:** our proxy [PAC files](managing-office-365-endpoints.md#pacfiles)|
+|**Last updated:** 11/29/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Change Log subscription](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** all required and optional destinations in one [JSON formatted](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) list.|**Use:** our proxy [PAC files](managing-office-365-endpoints.md#pacfiles)|
 |
 
 Start with [Managing Office 365 endpoints](managing-office-365-endpoints.md) to understand our recommendations for managing network connectivity using this data. Endpoints data is updated as needed at the beginning of each month with new IP Addresses and URLs published 30 days in advance of being active. This cadence allows for customers who don't yet have automated updates to complete their processes before new connectivity is required. Endpoints may also be updated during the month if needed to address support escalations, security incidents, or other immediate operational requirements. The data shown on this page below is all generated from the REST-based web services. If you're using a script or a network device to access this data, you should go to the [Web service](microsoft-365-ip-web-service.md) directly.
@@ -53,7 +54,7 @@ Data columns shown are:
 
 - **ER**: This is **Yes** if the endpoint set is supported over Azure ExpressRoute with Office 365 route prefixes. The BGP community that includes the route prefixes shown aligns with the service area listed. When ER is **No**, this means that ExpressRoute is not supported for this endpoint set.
 
-   Some routes may be advertised in more than one BGP community, making it possible for endpoints within a given IP range to traverse the ER circuit, but still be unsupported. In all cases, the value of a given endpoint set's ER column should be respected. For more information about BGP communities, see [Using BGP communities in ExpressRoute for Office 365 scenarios](bgp-communities-in-expressroute.md#key-planning-considerations-to-using-bgp-communities).
+   Some routes may be advertised in more than one BGP community, making it possible for endpoints within a given IP range to traverse the ER circuit, but still be unsupported. In all cases, the value of a given endpoint set's ER column should be respected.
 
 - **Addresses**: Lists the FQDNs or wildcard domain names and IP address ranges for the endpoint set. Note that an IP address range is in CIDR format and may include many individual IP addresses in the specified network.
 

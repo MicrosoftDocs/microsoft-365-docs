@@ -1,5 +1,6 @@
 ---
 title: "Manage Relevance setup in eDiscovery (Premium)"
+description: "Read the recommendations for setting up Relevance training in eDiscovery (Premium) to score files by their relevance and generate analytical results."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -13,9 +14,11 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Read the recommendations for setting up Relevance training in eDiscovery (Premium) to score files by their relevance and generate analytical results."
+ms.collection:
+- tier1
+- purview-compliance
+- ediscovery
 ---
 
 # Manage Relevance setup in eDiscovery (Premium) (classic)
@@ -27,6 +30,8 @@ description: "Read the recommendations for setting up Relevance training in eDis
   
  eDiscovery (Premium) includes components for the Relevance training and tagging of files relevant to a case. eDiscovery (Premium) learns from the trained samples of Relevant and Not Relevant files to provide Relevance scores for each file, and generates analytical results that can be used during and after the file review process. 
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Guidelines for setting up Relevance training
 
  In Advance eDiscovery, in the **Cases** window, select a case and click **Go to case**. Click **Relevance** \> **Relevance setup**. Follow these recommended guidelines to set up Relevance. 
