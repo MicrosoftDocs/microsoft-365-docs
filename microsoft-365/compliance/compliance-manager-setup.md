@@ -162,7 +162,7 @@ When automation becomes available for existing improvement actions, or when new 
 If you've added data to an existing improvement action:
 - Automated testing remains **off** by default for the action. You can choose to turn it back on.
 
-If you haven't added data to an improvement action, or when new automatically actions are added to Compliance Manager, the testing behavior follows your current settings:
+If you haven't added data to an improvement action, or when new automatically-tested actions are added to Compliance Manager, the testing behavior follows your current settings:
 - Automated testing is **on** if your setting is **on** for **all actions** or **per action**.
 - Automated testing is **off** if your setting is **off for all actions**.
 
