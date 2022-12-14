@@ -177,7 +177,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
     :::image type="content" source="images/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="The page on which you complete the Configuration settings" lightbox="images/dd55405106da0dfc2f50f8d4525b01c8.png":::
 
-Microsoft Defender for Endpoint adds new settings over time. These new settings will be added to the schema, and a new version will be published to Github.
+Microsoft Defender for Endpoint adds new settings over time. These new settings will be added to the schema, and a new version will be published to GitHub.
 All you need to do to have updates is to download an updated schema, edit existing configuration profile, and **Edit schema** at the **Application & Custom Settings** tab.
 
 ### Legacy method
@@ -896,3 +896,18 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
     :::image type="content" source="images/99679a7835b0d27d0a222bc3fdaf7f3b.png" alt-text="The Contoso onboarding status with an option to complete it" lightbox="images/99679a7835b0d27d0a222bc3fdaf7f3b.png":::
 
     :::image type="content" source="images/632aaab79ae18d0d2b8e0c16b6ba39e2.png" alt-text="The policies page" lightbox="images/632aaab79ae18d0d2b8e0c16b6ba39e2.png":::
+
+## Configuration profile scope
+
+JAMF requires you to define a set of machines for a configuration profile.
+You need to make sure that all machines receiving Defender's package, also receive *all* configuration profiles listed above.
+
+> [!WARNING]
+> JAMF supports so called Smart Computer Groups, that allow deployoing e.g. configuration profiles to all machines matching certain criteria evaluated dynamically.
+> It is a powerful concept that is widely used for configuration profiles distribution.
+>
+> However, keep in mind that these criteria should not include presence of Defender on a machine.
+> While using this criterion may sound logical, it creates problems that are difficult to diagnose.
+>
+> Defender relies on all these profiles at the moment of its installation.
+> Making configuration profiles depending on Defender's presence effectively delays deployment of configuration profiles, and results in an initially unhealthy product and/or prompts for manual approval of certian application permissions, that are otherwise auto approved by profiles.
