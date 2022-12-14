@@ -18,13 +18,13 @@ f1.keywords: NOCSH
 
 # Monitoring Test Status
 
-Test run status in the Test Base portal keeps you informed of where your package is in the testing process. You can see status in the **Test summary** page in addition to the **Details** pane. 
+Test run status in the Test Base portal keeps you informed of where your package is in the testing process. You can see status in the **Test summary** page in addition to the **Details** pane.
 
 This status provides details about test execution. If failures were detected during test execution, you'll find additional status and guidance information on the **Test Analysis** tab.
 
 Current possible execution status values are described in the table that follows:
 
-**Table 2. Test Execution status**
+## Table 2. Test Execution status
 
 |**Status**|**Meaning**|
 |----|----|
