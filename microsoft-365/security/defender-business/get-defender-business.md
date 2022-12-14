@@ -92,7 +92,7 @@ Microsoft has a list of solution providers who are authorized to sell offerings,
 
 ## Portals you'll use for setup and management
 
-When you're ready to get started, you'll work with two main portals: the Microsoft 365 admin center, and the Microsoft 365 Defender portal. If your subscription also includes Microsoft Intune, you might use the Intune admin center as well.
+When you use Defender for Business, you'll work with two main portals: the Microsoft 365 admin center, and the Microsoft 365 Defender portal. If your subscription also includes Microsoft Intune, you might use the Intune admin center as well. The following table summarizes these portals and how you'll use them.
 
 |Portal  |Description  |
 |---------|---------|
