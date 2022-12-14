@@ -36,7 +36,7 @@ Only Microsoft Word documents (.docx/.doc extension) are currently supported for
 
 - The Word document you want to use as a modern template shouldn't include comments or have Track Changes enabled.
 
-- Because content controls are used in Word to create fields for the modern template, make sure any text placeholders for images aren't text-wrapped. If the document already contains content controls, remove them before you use it to create a modern template.
+- Because content controls are used in Word to create fields for the modern template, make sure any text fields for images aren't text-wrapped. If the document already contains content controls, remove them before you use it to create a modern template.
 
 ### Current release limitations
 
