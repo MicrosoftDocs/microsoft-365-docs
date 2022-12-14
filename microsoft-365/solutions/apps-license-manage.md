@@ -47,3 +47,7 @@ You must create an Apple ID and purchase the app license from Apple. Once you co
 ## View app store connector status
 
 Your Intune tenant maintains a connection with each of the apps stores to ensure that your app tokens for each store are update-to-date and correctly synched. The store connections are called connectors. You can confirm the status of each connector by viewing the **Connector status** pane listed in the **Tenant admin** workload. If you find that the connector is not in-sync, you can navigate within Intune to the **Connectors and tokens** workload to manually sync the connector and tokens for each store.
+
+## Monitor app licenses used in Intune
+
+Intune provides a list of all the app licenses your tenant currently has in use. You can see the license name, the total number of licenses, the available licenses left to use, and the current licenses in use. When you view this list, you can also sync your volume purchased (VPP) licenses to be certain the list is up-to-date. For related information, see [Intune app management overview](/mem/intune/apps/app-management).

@@ -421,21 +421,13 @@
           href: apps-type-web.md
         - name: Understand Microsoft apps
           href: apps-type-microsoft.md          
-      - name: Understand app licenses
-        items:
-        - name: App licenses overview
-          href: apps-license-overview.md
-        - name: Manage app licenses
-          href: apps-license-manage.md
-        - name: Monitor app licenses
-          href: apps-license-monitor.md
       - name: Purchase apps
         items:
         - name: Purchase apps overview
           href: apps-purchase-overview.md
         - name: Purchase store apps
           href: apps-purchase-store.md
-        - name: Purchase apps in volume
+        - name: Purchase apps in-volume
           href: apps-purchase-volume.md
         - name: Purchase third-party apps
           href: apps-purchase-third-party.md
@@ -443,6 +435,12 @@
           href: apps-purchase-in-app.md
         - name: Verify purchased apps
           href: apps-purchase-verify.md
+      - name: Understand app licenses
+        items:
+        - name: App licenses overview
+          href: apps-license-overview.md
+        - name: Manage app licenses
+          href: apps-license-manage.md
       - name: Add apps to Intune
         items:
         - name: Add apps overview
