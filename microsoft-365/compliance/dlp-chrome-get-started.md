@@ -166,7 +166,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 14. Add applicability rules on the **Applicability Rules** tab as required and select **Next**.
 
-15. Click create.
+15. Select **Create**.
 
 ### Deploy using Group Policy
 
