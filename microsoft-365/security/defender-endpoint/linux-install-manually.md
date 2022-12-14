@@ -344,7 +344,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
 2. Run MicrosoftDefenderATPOnboardingLinuxServer.py.
 
     > [!NOTE]
-    > To run this command, you must have `python`  or `python3` installed on the device depending on the disto and version. If needed, see [Step-by-step Instruction for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
+    > To run this command, you must have `python`  or `python3` installed on the device depending on the distro and version. If needed, see [Step-by-step Instructions for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
 
     If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
 
