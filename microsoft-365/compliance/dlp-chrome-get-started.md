@@ -148,7 +148,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 7. Select **Create**.
 
-8. Enter a name and optional description on the **Basics** tab and click next.
+8. Enter a name and optional description on the **Basics** tab and select **Next**.
 
 9. Select **Add** on the **Configuration settings** tab.
 
