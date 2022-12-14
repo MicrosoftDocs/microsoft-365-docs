@@ -129,9 +129,9 @@
         - name: Move or copy a file 
           href: content-processing-create-rules.md
      
-    - name: Metadata search
+    - name: Content query
       items: 
-        - name: Search for metadata in document libraries 
+        - name: Use metadata to find content in document libraries 
           href: metadata-search.md
      
     - name: Taxonomy

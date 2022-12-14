@@ -79,7 +79,7 @@
        - name: Configure your tenant for increased security
          href: tenant-wide-setup-for-increased-security.md
        - name: Security recommendations for priority accounts
-         href: priority accounts-security-recommendations.md
+         href: priority-accounts-security-recommendations.md
        - name: Anti-malware protection
          items:
          - name: Anti-malware protection
