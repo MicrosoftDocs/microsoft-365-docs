@@ -16,7 +16,7 @@ keywords:
 
 # Understand app licenses used in Intune
 
-Before you can distribute and manage apps to members of your organization, you must add the apps to Intune. Many of the apps that you use with Intune can be added to Intune and deployed to user's devices for free. However, some apps that you can deploy to your workforce may require either a license, subscription, or account for each user to use the app.
+Before you can distribute managed apps to members of your organization, you must add the apps to Intune. Many of the apps that you use with Intune can be added to Intune and deployed to user's devices for free. However, some apps that you can deploy to your workforce may require either a license, subscription, or account for each user to use the app. Intune helps you manage app licenses as tokens. Additionally, Intune uses Azure Active Directory (Azure AD) to help manage user credentials that managed apps can utilize.  
 
 The following table provides the primary ways to obtain app licenses that you can use with Intune:
 
