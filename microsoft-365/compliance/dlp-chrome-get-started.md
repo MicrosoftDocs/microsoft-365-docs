@@ -164,7 +164,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 13. Add the required deployment users, devices, and groups on the **Assignments** tab and select **Next**.
 
-14. Add applicability rules on the **Applicability Rules** tab if desired and click next.
+14. Add applicability rules on the **Applicability Rules** tab as required and select **Next**.
 
 15. Click create.
 
