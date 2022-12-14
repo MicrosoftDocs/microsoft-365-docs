@@ -38,7 +38,24 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## December 2022
+
+### Data lifecycle management and records management
+
+- Disposition review no longer has a maximum of 1,000,000 items per label pending or reviewed. This limitation is removed from [Limits for retention policies and retention label policies](retention-limits.md).
+
+### Sensitivity labels
+
+
+- **General availability (GA)**: S/MIME support for Windows is now rolling out to the Office Current Channel, providing parity with the AIP add-in. For more information, see [Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
+- **Rolling out in preview**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md).
+
 ## November 2022
+
+### Compliance Manager
+
+- New [role-based access to assessments](compliance-manager-setup.md#role-based-access-to-assessments) allows you to [assign users roles for viewing and managing individual assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).
+- [Working with improvement actions](compliance-manager-improvement-actions.md#assign-improvement-action-to-assessor-for-completion) - clarified that users need a **Compliance Manager Assessor** role in order to edit improvement action testing notes, and that roles can now be assigned for individual assessments.
 
 ### eDiscovery
 
@@ -46,6 +63,14 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - [Decryption in Microsoft Purview eDiscovery tools](/microsoft-365/compliance/ediscovery-decryption) - clarified how items labeled within SharePoint Online are decrypted with eDiscovery tools.
 - [Conduct an eDiscovery investigation of content in Microsoft Teams](/microsoftteams/ediscovery-investigation) - expanded reactions in Microsoft Teams chats are now supported in eDiscovery (Premium).
 - [Create an eDiscovery hold](/microsoft-365/compliance/create-ediscovery-holds) - clarified how eDiscovery holds are handled when a user's OneDrive URL changes.
+
+### Microsoft Priva
+
+- **In preview**: Delete requests are now supported by Subject Rights Requests.
+    - [Create and manage a delete request (preview)](/privacy/priva/subject-rights-requests-delete) - details the process for setting up a delete type of request, collaborating on a review process to approve the deletion, and initiating a workflow to carry out the deletion.
+    - [Set user permissions and assign roles](/privacy/priva/priva-permissions) - lists the new role of **Subject Rights Requests Approver** for delete request approvers.
+    - [Review data for a subject rights request](/privacy/priva/subject-rights-requests-data-review) - clarifies that adding the **delete** data review tag doesn't mark the item for deletion in the new delete request type.
+    - [Create a request and define search settings](/privacy/priva/subject-rights-requests-create) - adds **Delete (preview)** as a request type.
 
 ### On-premises scanner
 
@@ -159,7 +184,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Data loss prevention
 
-- [Design a data loss prevention policy complex rule design (preview)](dlp-policy-design.md#complex-rule-design-preview) - The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. New video and content added that walks you through this new functionality.
+- [Design a data loss prevention policy complex rule design](dlp-policy-design.md#complex-rule-design) - The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. New video and content added that walks you through this new functionality.
 
 ### Sensitivity labels
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support) in Word, Excel, and PowerPoint is now available to Windows Current Channel and Monthly Enterprise Channel.
@@ -319,7 +344,7 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 
 | **Former Name** | **New Name** | **Description** |
 |:----------------|:-------------|:----------------|
-| Microsoft 365 Advanced Audit <br><br> Microsoft 365 Basic Audit | Microsoft Purview Audit (Premium) <br><br> Microsoft Purview Audit (Standard)| Auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. To learn more, see [Microsoft Purview Advanced Audit (Premium)](advanced-audit.md) and [Microsoft Purview Advanced Audit (Standard)](set-up-basic-audit.md). |
+| Microsoft 365 Advanced Audit <br><br> Microsoft 365 Basic Audit | Microsoft Purview Audit (Premium) <br><br> Microsoft Purview Audit (Standard)| Auditing solutions provide an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. To learn more, see [Microsoft Purview Advanced Audit (Premium)](audit-premium.md) and [Microsoft Purview Advanced Audit (Standard)](audit-standard-setup.md). |
 | Microsoft 365 Communication Compliance | Microsoft Purview Communication Compliance | Communication Compliance helps minimize risks by helping you quickly detect, capture, and take remediation actions for company communication channels and policy violations. To learn more, see [Microsoft Purview Communication Compliance](communication-compliance-solution-overview.md). |
 | Microsoft Compliance Manager | Microsoft Purview Compliance Manager | Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors. To learn more, see [Microsoft Purview Compliance Manager](compliance-manager.md). |
 | Microsoft 365 Customer Key | Microsoft Purview Customer Key | Customer Key provides extra protection against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft data centers. To learn more, see [Microsoft Purview Customer Key](customer-key-overview.md). |

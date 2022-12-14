@@ -44,7 +44,7 @@ Use the following capabilities to support your records management solution for M
 
 - **Export information about all disposed items** with the [export option](disposition.md#filter-and-export-the-views).
 
-- **Set specific permissions** for records manager functions in your organization to [have the right access](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Set specific permissions** for records manager functions in your organization to [have the right access](../security/office-365-security/scc-permissions.md).
 
 Using these capabilities, you can incorporate your organization's retention schedules and requirements into a records management solution that manages retention, records declaration, and disposition, to support the full lifecycle of your content.
 

@@ -25,7 +25,7 @@ summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
   
   **Applies to**
-  - [Exchange Online Protection](exchange-online-protection-overview.md)
+  - [Exchange Online Protection](eop-about.md)
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
   
@@ -59,12 +59,12 @@ sections:
       - question: |
           How can I report spam or non-spam messages back to Microsoft?
         answer: |
-          See [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+          See [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
           
       - question: |
           I'm an admin and I don't know all of sources for messages in my email domain!
         answer: |
-          See [You don't know all sources for your email](email-validation-and-authentication.md#you-dont-know-all-sources-for-your-email).
+          See [You don't know all sources for your email](email-authentication-about.md#you-dont-know-all-sources-for-your-email).
           
       - question: |
           What happens if I disable anti-spoofing protection for my organization?
@@ -88,7 +88,7 @@ sections:
         answer: |
           No. This ASF setting is no longer required. Anti-spoofing protection considers both SPF hard fails and a much wider set of criteria. If you have anti-spoofing enabled and the **SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_) turned on, you will probably get more false positives.
           
-          We recommend that you disable this feature as it provides almost no additional benefit for detecting spam or phishing message, and would instead generate mostly false positives. For more information, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
+          We recommend that you disable this feature as it provides almost no additional benefit for detecting spam or phishing message, and would instead generate mostly false positives. For more information, see [Advanced Spam Filter (ASF) settings in EOP](anti-spam-policies-asf-settings-about.md).
           
       - question: |
           Does Sender Rewriting Scheme help fix forwarded email?
