@@ -162,7 +162,7 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 12. Add or edit scope tags on the **Scope tags** tab as needed and select **Next**.
 
-13. Add the desired deployment users/devices/groups on the **Assignments** tab and click next.
+13. Add the required deployment users, devices, and groups on the **Assignments** tab and select **Next**.
 
 14. Add applicability rules on the **Applicability Rules** tab if desired and click next.
 
