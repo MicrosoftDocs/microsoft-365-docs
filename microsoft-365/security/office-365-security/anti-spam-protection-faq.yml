@@ -26,7 +26,7 @@ summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
   
   **Applies to**
-  - [Exchange Online Protection](exchange-online-protection-overview.md)
+  - [Exchange Online Protection](eop-about.md)
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
   
@@ -58,7 +58,7 @@ sections:
           A zero-day spam variant is a first generation, previously unknown variant of spam that's never been captured or analyzed, so our anti-spam filters don't yet have any information available for detecting it. After a zero-day spam sample is captured and analyzed by our spam analysts, if it meets the spam classification criteria, our anti-spam filters are updated to detect it, and it's no longer considered "zero-day."
           
           > [!NOTE]
-          > If you receive a message that may be a zero-day spam variant, in order to help us improve the service, please submit the message to Microsoft using one of the methods described in [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+          > If you receive a message that may be a zero-day spam variant, in order to help us improve the service, please submit the message to Microsoft using one of the methods described in [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
           
       - question: |
           Do I need to configure the service to provide anti-spam protection?
@@ -93,7 +93,7 @@ sections:
       - question: |
           How can customers using the service send false negative (spam) and false positive (non-spam) messages to Microsoft?
         answer: |
-          Spam and non-spam messages can be submitted to Microsoft for analysis in several ways. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+          Spam and non-spam messages can be submitted to Microsoft for analysis in several ways. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
           
       - question: |
           Can I get spam reports?
