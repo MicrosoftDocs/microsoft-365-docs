@@ -109,7 +109,7 @@ You can also add customized information and URLs to the email confirmation and r
 
    You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 
-   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email.":::
+   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email." lightbox="media/bookings-additional-info.jpg":::
   
   Opt-in box on the manual booking and Self-Service Page:
 
