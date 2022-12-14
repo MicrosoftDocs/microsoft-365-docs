@@ -47,30 +47,30 @@
   - name: CPU Regression Analysis
     href: cpu.md
   - name: Viewing Test Results
-    href: viewingtestresults.md
+    href: view-test-results.md
     items:
       - name: Viewing Script Execution Results
-        href: viewingscriptexecutionresults.md
+        href: view-script-execution-results.md
       - name: Viewing Application Reliability Results
-        href: viewingapplicationreliabilityresults.md
+        href: view-application-reliability-results.md
       - name: Memory and CPU Regression Results Overview
-        href: memoryandcpuregressionresultsoverview.md
+        href: memory-cpu-regressions-results-overview.md
         items:
           - name: Understanding Memory Regression Analysis
-            href: understandingmemoryregressionanalysis.md
+            href: learn-memory-regression-analysis.md
           - name: Understanding CPU Regression Analysis
-            href: understandingcpuregressionanalysis.md
+            href: learn-cpu-regression-analysis.md
       - name: Analyzing the Causes of Regressions
-        href: analyzingthecausesofregressions.md
+        href: analyze-regression-causes.md
       - name: Determining Relevant Processes for Regression Detection
-        href: determiningrelevantprocessesforregressiondetection.md
+        href: determine-relevant-processes-regression-detection.md
       - name: Downloading and Analyzing Test Result Files
-        href: downloadingandanalyzingtestresultfiles.md
+        href: download-analyze-test-result-files.md
         items:
           - name: Viewing Log Files
-            href: viewinglogfiles.md
+            href: view-log-files.md
       - name: Monitoring Test Status
-        href: monitoringteststatus.md
+        href: monitor-test-status.md
   - name: Request to change access level
     href: accesslevel.md
   - name: SDK & API
