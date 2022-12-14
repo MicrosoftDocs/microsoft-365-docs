@@ -41,7 +41,7 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 
 2. If you're adding Defender for Business to an existing Microsoft 365 subscription, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and then sign in using your existing work or school account. Or, follow the prompts to create a new account, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and then sign in using your new account. 
 
-3. In the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), take one of the following next steps, depending on your scenario:
+3. In the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), review your recommendations. Then take one of the following next steps, depending on your scenario:
 
    | Scenario | Next step |
    |:---|:---|
