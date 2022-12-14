@@ -47,10 +47,10 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 
    | Scenario | Procedure |
    |:---|:---|
-   | You're setting up a Microsoft 365 subscription for the first time. | Select **Go to guided setup** and [set up your Microsoft 365 subscription](../../admin/setup/setup-business-standard.md). The process includes the following steps:<ol><li>Either install your Office apps now, or choose **Continue** to skip this step. (You can install your Office apps later.)</li><li>If your company has a domain, you can [add it now](../../admin/setup/add-domain.md) (this option is recommended). Alternately, you could choose to use your default `.onmicrosoft.com` domain for now.</li><li>[Add users and assign licenses](mdb-add-users.md). Each user you list will be assigned a license automatically.</li><li>Proceed to step 5 to start provisioning Defender for Business.</li></ol> |
+   | You're setting up a Microsoft 365 subscription for the first time. | Select **Go to guided setup** and [set up your Microsoft 365 subscription](../../admin/setup/setup-business-standard.md). The guided setup process includes the following steps:<ul><li>Installing Microsoft 365 Apps (formerly called Office apps), or choosing to skip app installation for now. (You can install your Microsoft 365 Apps later.)</li><li>[Adding your company domain](../../admin/setup/add-domain.md). </li><li>[Adding users and assigning licenses](mdb-add-users.md).</li></ul>After your guided setup process is complete, proceed to step 5 to start provisioning Defender for Business.</li></ol> |
    | You're adding a Defender for Business trial subscription to an existing Microsoft 365 tenant. | You've probably already [set up your Microsoft 365 subscription](../../admin/setup/setup-business-standard.md) and only need to set up and configure Defender for Business. In this case, proceed to step 5.  |
-   | 
-   | You have Microsoft 365 Business Premium all set up and now you're setting up Defender for Business. | Proceed to step 5. |
+   | You have Microsoft 365 Business Premium, but it's not set up yet. | See the setup process in [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). |
+   | You have Microsoft 365 Business Premium, and it's set up. Now you're setting up Defender for Business. | Proceed to step 5. |
 
 5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), where you'll view and manage security settings and devices for your organization.
 
