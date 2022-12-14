@@ -1,5 +1,5 @@
 ---
-title: Get and provision Microsoft Defender for Business
+title: Get Microsoft Defender for Business
 description: Find out how to get Microsoft Defender for Business, endpoint protection for small and medium sized businesses.
 search.appverid: MET150
 author: denisebmsft
@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 12/07/2022
+ms.date: 12/14/2022
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -19,7 +19,7 @@ ms.collection:
 - tier1
 ---
 
-# Get and provision Microsoft Defender for Business
+# Get Microsoft Defender for Business
 
 Defender for Business is a new endpoint security solution designed especially for small and medium-sized businesses (up to 300 employees). This article describes how to get and provision Defender for Business.
 
@@ -34,28 +34,30 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 > [!IMPORTANT]
 > The person who signs your company up for Microsoft 365 is a global administrator. You should be a global administrator to complete the following task. [Learn more about admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
-1. Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select the option to try or buy Defender for Business. Fill in the requested information.
+1. Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select an option to try or buy Defender for Business. Fill in the requested information.
 
    > [!TIP]
    > If you're starting a trial, look for your acceptance email, which contains your promo code. And be sure to see the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
 
-2. If you already had a Microsoft 365 subscription before getting Defender for Business, sign in using your existing work or school account. If you didn't already have a subscription, follow the prompts to create a new account. 
+2. If you're adding Defender for Business to an existing Microsoft 365 subscription, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and then sign in using your existing work or school account. Or, follow the prompts to create a new account, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and then sign in using your new account. 
 
-3. Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). If you're brand new to Microsoft 365, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
+3. In the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), review your recommendations. Then take one of the following next steps, depending on your scenario:
 
-4. Use one of the following procedures, depending on your scenario:<br/>
-
-   | Scenario | Procedure |
+   | Scenario | Next step |
    |:---|:---|
-   | You're setting up a Microsoft 365 subscription for the first time. | Select **Go to guided setup** and complete the following steps:<ol><li>Either install your Office apps now, or choose **Continue** to skip this step. (You can install your Office apps later.)</li><li>If your company has a domain, you can add it now (this option is recommended). Alternately, you could choose to use your default `.onmicrosoft.com` domain for now.</li><li>Add users and assign licenses. Each user you list will be assigned a license automatically. See [Add users and assign licenses at the same time](mdb-add-users.md).</li></ol>Note that this procedure helps you complete your basic setup process, but you'll still have security settings to configure. |
-   | You're adding a trial to an existing Microsoft 365 tenant. | <ol><li>Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in.</li><li>In the navigation pane, choose **Users** > **Active users**. Review the list of users. </li><li>To assign licenses, follow the guidance in [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
+   | Defender for Business is your first Microsoft 365 subscription. | Proceed to step 4 to start provisioning Defender for Business. |
+   | You're adding Defender for Business to an existing [Microsoft 365 for business subscription](../../admin/admin-overview/what-is-microsoft-365-for-business.md). | You've probably already [set up your Microsoft 365 subscription](../../admin/setup/setup-business-standard.md), and now you only need to set up and configure Defender for Business. Proceed to step 4.  |
+   | You have Microsoft 365 Business Premium, but it's not set up yet. | Follow the guidance in [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). This guidance walks you through how to set up and configure your subscription, including your security capabilities. |
 
-5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), where you'll view and manage security settings and devices for your organization.
+   > [!TIP]
+   > If you're brand new to Microsoft 365, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
 
-6. In the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. 
+4. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and in the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. You'll know this process has started when you see a message like what's displayed in the following screenshot:
 
-> [!NOTE]
-> It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
+   :::image type="content" source="media/mdb-hangon-provisioning.png" alt-text="Screenshot of provisioning message in Defender for Business.":::
+
+   > [!NOTE]
+   > It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
 
 ## Get Microsoft 365 Business Premium
 
@@ -90,7 +92,7 @@ Microsoft has a list of solution providers who are authorized to sell offerings,
 
 ## Portals you'll use for setup and management
 
-When you're ready to get started, you'll work with two main portals: the Microsoft 365 admin center, and the Microsoft 365 Defender portal. If your subscription also includes Microsoft Intune, you might use the Intune admin center as well.
+When you use Defender for Business, you'll work with two main portals: the Microsoft 365 admin center, and the Microsoft 365 Defender portal. If your subscription also includes Microsoft Intune, you might use the Intune admin center as well. The following table summarizes these portals and how you'll use them.
 
 |Portal  |Description  |
 |---------|---------|
