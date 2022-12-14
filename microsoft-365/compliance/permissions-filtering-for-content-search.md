@@ -47,7 +47,7 @@ The following four cmdlets in [Security & Compliance PowerShell](/powershell/exc
 
 ## Requirements to configure permissions filtering
 
-- To run the compliance security filter cmdlets, you have to be a member of the *Organization Management* role group in the compliance portal. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- To run the compliance security filter cmdlets, you have to be a member of the *Organization Management* role group in the compliance portal. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/scc-permissions.md).
 - You have to connect to both Exchange Online and Security & Compliance PowerShell to use the compliance security filter cmdlets. This is necessary because these cmdlets require access to mailbox properties, which is why you have to connect to Exchange Online PowerShell. See the steps in the next section.
 - See the [More information](#more-information) section for additional information about search permissions filters.
 - Search permissions filtering is applicable to inactive mailboxes, which means you can use mailbox and mailbox content filtering to limit who can search an inactive mailbox. See the [More information](#more-information) section for additional information about permissions filtering and inactive mailboxes.
