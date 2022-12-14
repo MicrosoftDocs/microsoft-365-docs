@@ -279,7 +279,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Enable [optical character recognition (OCR)](/microsoft-365/compliance/communication-compliance-policies#optical-character-recognition-ocr) to identify embedded or attached images in messages for printed or handwritten text that match policy conditions. For custom policies, one or more conditional settings associated with text, keywords, classifiers, or sensitive info types must be configured in the policy to enable the selection of optical character recognition (OCR) documents.
 
-    - Choose **Filter email blasts** to assign a [bulk complaint level](/security/office-365-security/anti-spam-bulk-complaint-level-bcl-about) to exclude detection of email sent from bulk senders, such as those sending corporate newsletters. When this option is selected, you can view [reports](communication-compliance-reports-audits.md#detailed-reports) to display filtered bulk sender messages.
+    - Choose **Filter email blasts** to assign a [bulk complaint level](/microsoft-365/security/office-365-security/anti-spam-bulk-complaint-level-bcl-about) to exclude detection of email sent from bulk senders, such as those sending corporate newsletters. When this option is selected, you can view [reports](communication-compliance-reports-audits.md#detailed-reports) to display filtered bulk sender messages.
 
     - Define the percentage of communications to review.
 
