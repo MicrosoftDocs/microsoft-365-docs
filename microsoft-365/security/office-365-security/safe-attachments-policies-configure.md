@@ -91,12 +91,8 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
 4. On the **Users and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups or mail-enabled security groups.
+     - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
      - The specified Microsoft 365 Groups.
-
-     > [!NOTE]
-     >  Dynamic distribution groups are not supported.
-     
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
