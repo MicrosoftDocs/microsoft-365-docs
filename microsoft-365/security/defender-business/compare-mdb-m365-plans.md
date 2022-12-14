@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 12/02/2022
+ms.date: 12/14/2022
 ms.reviewer: efratka
 ms.collection: 
 - SMB
@@ -22,6 +22,11 @@ f1.keywords: NOCSH
 ---
 
 # Compare security features in Microsoft 365 plans for small and medium-sized businesses
+
+> [!IMPORTANT]
+> This article provides a high-level overview of features and capabilities that are included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see the following resources:
+> - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> - [Microsoft 365 Education](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
 
 Microsoft offers a wide variety of cloud solutions and services, including plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device-management capabilities, along with productivity features such as Office apps. This article describes the security features in Microsoft 365 Business Premium, Microsoft Defender for Business, and [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md).
 
@@ -36,11 +41,9 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 
 ## Compare Microsoft Defender for Business to Microsoft 365 Business Premium
 
-> [!IMPORTANT]
-> This article provides a high-level overview of features and capabilities that are included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see the following resources:
-> - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
-> - [Microsoft 365 Education](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
+Defender for Business provides advanced security protection for your devices. Microsoft 365 Business Premium includes Defender for Business plus additional cybersecurity and productivity capabilities.
 
+:::image type="content" source="media/mdb-m365bp-comparison.png" alt-text="Diagram comparing Defender for Business to Microsoft 365 Business Premium.":::
 
 | Plan | Description |
 |:---|:---|
