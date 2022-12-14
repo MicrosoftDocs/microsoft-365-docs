@@ -39,9 +39,9 @@ If you don't already have Microsoft Defender for Business, you can choose from s
    > [!TIP]
    > If you're starting a trial, look for your acceptance email, which contains your promo code. And be sure to see the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
 
-2. If you already had a Microsoft 365 subscription before getting Defender for Business, sign in using your existing work or school account. If you didn't already have a subscription, follow the prompts to create a new account, and then sign in. 
+2. If you're adding Defender for Business to another Microsoft 365 subscription, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and sign in using your existing work or school account. Or, create a new account, go to the [Microsoft 365 admin center](https://admin.microsoft.com/), sign in using your new account. 
 
-3. Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and depending on your scenario, take your next step:
+3. In the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), take one of the following next steps, depending on your scenario:
 
    | Scenario | Next step |
    |:---|:---|
