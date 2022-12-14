@@ -73,7 +73,9 @@ The following policy settings are available in anti-phishing policies in EOP and
   You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
   - **Users**: One or more mailboxes, mail users, or mail contacts in your organization.
-  - **Groups**: One or more groups in your organization.
+  - **Groups**:
+    - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
+    - The specified Microsoft 365 Groups.
   - **Domains**: One or more of the configured [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365.
 
   - **Exclude these users, groups, and domains**: Exceptions for the policy. The settings and behavior are exactly like the conditions:
