@@ -109,9 +109,3 @@ Most of the updates will take effect right away, but it may take up to a day for
 
 > [!NOTE]
 > Control mapping won't be included in the Excel file that's downloaded when you *Export* actions. Control mapping is handled via the process of creating an assessment template using a [differently formatted Excel file for importing template data](compliance-manager-templates-format-excel.md).
-
-## Automated testing of updated actions
-
-When you add data to an improvement action, we turn off automated testing if that action had been automatically tested. This is done to ensure that Compliance Manager doesn't overwrite any of your data. You can turn automatic testing back on for the action. See [Testing source for automated testing](compliance-manager-setup.md#testing-source-for-automated-testing) for details.
-
-
