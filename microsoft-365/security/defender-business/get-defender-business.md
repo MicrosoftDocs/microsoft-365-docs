@@ -41,15 +41,18 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 
 2. If you already had a Microsoft 365 subscription before getting Defender for Business, sign in using your existing work or school account. If you didn't already have a subscription, follow the prompts to create a new account. 
 
-3. Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). If you're brand new to Microsoft 365, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
-
-4. Use one of the following procedures, depending on your scenario:<br/>
+3. Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and depending on your scenario, take your next step:
 
    | Scenario | Procedure |
    |:---|:---|
-   | Defender for Business is your first Microsoft 365 subscription. | Proceed to step 5 to start provisioning Defender for Business. |
-   | You're adding Defender for Business to an existing [Microsoft 365 for business subscription](../../admin/admin-overview/what-is-microsoft-365-for-business.md). | You've probably already [set up your Microsoft 365 subscription](../../admin/setup/setup-business-standard.md), and now you only need to set up and configure Defender for Business. Proceed to step 5.  |
+   | Defender for Business is your first Microsoft 365 subscription. | Proceed to step 4 to start provisioning Defender for Business. |
+   | You're adding Defender for Business to an existing [Microsoft 365 for business subscription](../../admin/admin-overview/what-is-microsoft-365-for-business.md). | You've probably already [set up your Microsoft 365 subscription](../../admin/setup/setup-business-standard.md), and now you only need to set up and configure Defender for Business. Proceed to step 4.  |
    | You have Microsoft 365 Business Premium, but it's not set up yet. | Follow the guidance in [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). This guidance walks you through how to set up and configure your subscription, including your security capabilities. |
+
+   > [!TIP]
+   > If you're brand new to Microsoft 365, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
+
+4. Use one of the following procedures, depending on your scenario:<br/>
 
 5. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), where you'll view and manage security settings and devices for your organization.
 
