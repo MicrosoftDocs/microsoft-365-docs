@@ -36,6 +36,7 @@ This topic provides troubleshooting information to help you address issues that 
 > Defender for Endpoint on iOS would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 
 ## Apps don't work when VPN is turned on
+
 There are some apps that stop functioning when an active VPN is detected. You can disable the VPN during the time you're using such apps.
 
 By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint on iOS uses a VPN in order to provide this protection. Note that this is a local VPN and unlike traditional VPN, network traffic isn't sent outside the device.
@@ -107,6 +108,16 @@ If you still have connectivity issues, check if turning on/off Airplane mode hel
 There is an issue on supervised devices with Defender for Endpoint content filter installed. If you observe slowness or latency in internet connectivity on such devices, uninstall or delete the content filter profile from the device. We are working to resolve this issue and will update this place once we have a resolution. 
 
 ## Issues during app updates from the app store
+
+Apps that are downloaded from the app store are automatically updated by default. 
+
+But if there's an issue, users can update the app manually. 
+
+- Open the App Store.
+- Tap your profile icon at the top of the screen.
+- Scroll to see any pending updates and release notes. Tap **Update** next to an app to update only that app, or tap **Update All**.
+
+You can also choose to turn off automatic updates. Go to the **Settings** page > **App Store** > slide **App Updates** to off. 
 
 If you observe issues when the app is updated through the app store (either auto-updates or manual updates), you might need to restart the device. If that doesn't resolve the issue, you can disable the Defender VPN and perform the app update. You can also provide an in-app feedback to report this issue.
 
