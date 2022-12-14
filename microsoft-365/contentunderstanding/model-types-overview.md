@@ -22,19 +22,17 @@ Content understanding in Microsoft Syntex starts with AI models. Models let you 
 
 When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
 
-Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models). 
-
-![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram.png)
-
-Models can be either *enterprise models*, which are created in a [content center](create-a-content-center.md), or *local models*, which are created on your [local SharePoint site](create-local-model.md).
-
-<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
 
 </br>
---->
+
+Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models). 
+
+![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram.png)
+
+Models can be either *enterprise models*, which are created in a [content center](create-a-content-center.md), or *local models*, which are created on your [local SharePoint site](create-local-model.md).
 
 ## Custom models
 
