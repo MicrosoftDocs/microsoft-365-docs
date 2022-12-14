@@ -70,7 +70,7 @@ You can also view Campaigns from:
 ## Required licenses and permissions
  
 - ** You must have Defender for Office 365 Plan 2 to view Campaigns.
-- ** To access Campaigns, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+- ** To access Campaigns, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 ## Campaigns overview
 
