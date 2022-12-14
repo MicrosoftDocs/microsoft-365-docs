@@ -54,11 +54,11 @@ To move or copy a file from one document library to another, follow these steps.
 
        ![Screenshot of the rule statement page showing the choose a site option highlighted.](../media/content-understanding/content-rule-choose-a-site.png)
 
-      When you select **choose a site**, you can either select from the list of recent sites or enter the name or URL of another site.
+          When you select **choose a site**, you can either select from the list of recent sites or enter the name or URL of another site.
 
     3. Select **choose a library**, and then select the document library you want the file moved or copied to.
 
-      When you select **choose a library**, you can either select from the list of suggested libraries or enter the name of another library.
+          When you select **choose a library**, you can either select from the list of suggested libraries or enter the name of another library.
 
        ![Screenshot of the rule statement page showing the choose a libary option highlighted.](../media/content-understanding/content-rule-choose-a-library.png)
 
