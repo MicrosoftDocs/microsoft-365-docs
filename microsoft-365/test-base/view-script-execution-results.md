@@ -28,15 +28,15 @@ Detailed results appear, such as a script **Pass** or **Fail** indication in the
 
 An Execution request ID for tests related to each release is provided, as are KB articles for more technical information. Tests are typically run after a product team releases its original public updates.
 
- > [!NOTE]
- > Upon successful test execution, a script should return a value of zero (0). If an error occurs during execution, a script should return an error code with a non-    zero - value.
+> [!NOTE]
+> Upon successful test execution, a script should return a value of zero (0). If an error occurs during execution, a script should return an error code with a non-zero-value.
 
- > [!IMPORTANT]
- > Avoid coding your scripts to reboot a machine. If a reboot is necessary, please specify the Reboot enabled tag to the script during the script configuration and upload process, as described in Test Base documentation. For further details, see For more details, see [Package guidelines](contentguideline.md) and [Application/Test rules](rules.md).
+> [!IMPORTANT]
+> Avoid coding your scripts to reboot a machine. If a reboot is necessary, please specify the Reboot enabled tag to the script during the script configuration and upload process, as described in Test Base documentation. For further details, see For more details, see [Package guidelines](contentguideline.md) and [Application/Test rules](rules.md).
 
- > [!div class="mx-imgBorder"]
- > ![Screenshot shows Script Execution Summary.](Media/scriptexecution01.png)
- > **Figure 1. Script execution summary page**
+:::image type="content" source="Media/scriptexecution01.png" alt-text="Screenshot shows Script Execution Summary." lightbox="Media/scriptexecution01.png" border="true":::
+
+**Figure 1. Script execution summary page**
 
 On the **Script Execution** tab, the **Summary** that is presented specifies the results of test execution for each script you uploaded when creating and configuring your application package. This will include Out-of-box test scripts and any Functional test scripts you may have provided. As a result of script execution, various forms of output information are generated and stored in a folder named **logs.zip**. This folder contains subfolders in which additional information is accessible, as described in the table of [Downloading and Analyzing Test Result Files](download-analyze-test-result-files.md).
 
