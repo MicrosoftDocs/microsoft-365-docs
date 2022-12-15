@@ -400,7 +400,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > [!NOTE]
 > This capability is available for built-in labeling for Windows, Mac, iOS, and Android, but it's not yet available for Outlook on the web. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Apply S/MIME protection**.
 > 
-> If you configure a label to apply S/MIME protection but Outlook on Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
+> If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
 
 This configuration is not available in the Microsoft Purview compliance portal. You must use PowerShell advanced settings with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
