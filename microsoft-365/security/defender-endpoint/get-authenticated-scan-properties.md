@@ -44,9 +44,11 @@ search.appverid: met150
 
 Method|Description
 :---|:---|:---
-[Add a new scan definition](../defender-endpoint/get-browser-extensions-permission-info.md)|Add a new scan definition.
-[Get all scan agents](../defender-endpoint/get-assessment-browser-extensions.md)|List all scan agents.
-[Get all scan definitions](../defender-endpoint/get-browser-extensions-permission-info.md)|List all scan definitions.
+[Add a new scan definition](add-a-new-scan-definition.md)|Add a new scan definition.
+[Get all scan agents]((get-all-scan-agents.md))|List all scan agents.
+[Get all scan definitions](get-all-scan-definitions.md)|List all scan definitions.
+[Get scan history by definition](get-scan-history-by-definition.md))|List scan definition history.
+[Get scan history by session](get-scan-history-by-session.md)|List scan history for a session.
 
 Learn more about [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md) and [Network authenticated scans](./network-devices.md)
 
