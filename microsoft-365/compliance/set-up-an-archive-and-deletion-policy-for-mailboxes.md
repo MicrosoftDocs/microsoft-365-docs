@@ -50,7 +50,7 @@ The steps in this article set up an archiving and retention policy for a fictiti
     
     - Automatically move items that are 3 years old to the user's archive mailbox. Moving items to the archive mailbox frees up space in a user's primary mailbox.
     
-    - Automatically delete items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. User's will have the opportunity to recover these items if necessary. See the footnote in the [More information](#more-information) section for more details. 
+    - Automatically delete items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. User's will have the opportunity to recover these items if necessary. For more information, see the final bullet in the [More information](#more-information) section. 
 
 - [Step 3](#step-3-create-a-new-retention-policy): Create a new retention policy and add the new custom retention tags to it. Additionally, you'll add a built-in retention tag that can't be achieved with a recommended Microsoft 365 retention label because it also moves items to the archive mailbox. It's a personal tag for archiving after 1 year that users can assign to items in their mailbox when they want a shorter archive period than their default of 3 years.
 
@@ -114,7 +114,7 @@ The new archive DPT is displayed in the list of retention tags.
 
 ### Create the custom retention policy tag for the Deleted Items folder
   
-The second retention tag to create for our example scenario, is a custom retention policy tag (RPT) for the Deleted Items folder. This retention tag will delete items in the Deleted Items folder after 5 years, and provides a recovery period when users can use the Recover Deleted Items tool to recover an item.
+The second retention tag to create for our example scenario is a custom retention policy tag (RPT) for the Deleted Items folder. This retention tag will delete items in the Deleted Items folder after 5 years, and provides a recovery period when users can use the Recover Deleted Items tool to recover an item.
 
 1. Back on the **MRM Retention tags** page, select **+ New tag**, and on the **Name your tag** page, type a name for the new retention tag, and an optional description that explains the purpose of the custom retention tag.
     
@@ -255,5 +255,5 @@ You do this by using Exchange Online PowerShell to update your organization's de
     |Personal 1 year move to archive  <br/> |Moves items to the archive mailbox after 1 year.  <br/> |Built-in  <br/> |Personal; this tag can be applied by users.   |
     
     
-- Users can use the Recover Deleted Items tool in Outlook and Outlook on the web (formerly known as Outlook Web App) to recover a deleted item within the deleted item retention period, which by default is 14 days in Exchange Online. An administrator can use Exchange Online PowerShell to increase the deleted item retention period to a maximum of 30 days. For more information, see: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) and [Change the deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
+- Users can use the Recover Deleted Items tool in Outlook and Outlook on the web to recover a deleted item within the deleted item retention period, which by default is 14 days in Exchange Online. An administrator can use Exchange Online PowerShell to increase the deleted item retention period to a maximum of 30 days. For more information, see: [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) and [Change the deleted item retention period for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention).
   
