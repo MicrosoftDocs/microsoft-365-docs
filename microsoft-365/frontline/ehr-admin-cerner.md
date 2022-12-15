@@ -42,6 +42,8 @@ The communication and collaboration platform of Teams makes it easy for clinicia
 
 This article describes how to set up and configure the Teams EHR connector to integrate with the Cerner platform. It also gives you an overview of the Teams Virtual Appointments experience from the Cerner EHR system.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d6gj]
+
 ## Before you begin
 
 > [!NOTE]

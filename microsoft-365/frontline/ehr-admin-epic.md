@@ -44,6 +44,8 @@ The communication and collaboration platform of Teams makes it easy for clinicia
 
 This article describes how to set up and configure the Teams EHR connector to integrate with the Epic platform in your healthcare organization. It also gives you an overview of the Teams Virtual Appointments experience from the Epic EHR system.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d3h4]
+
 ## Before you begin
 
 Before you get started, there’s a few things to do to prepare for the integration.
