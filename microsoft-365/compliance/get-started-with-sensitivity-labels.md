@@ -70,8 +70,6 @@ By default, global administrators for your tenant have access to this admin cent
 
 For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance](../security/office-365-security/scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance).
 
-
-
 Alternatively to using the default roles, you can create a new role group and add the **Sensitivity Label Administrator** role to this group. For a read-only role, use **Sensitivity Label Reader**. 
 
 Another option is to add users to the **Compliance Data Administrator**, **Compliance Administrator**, or **Security Administrator** role group.
