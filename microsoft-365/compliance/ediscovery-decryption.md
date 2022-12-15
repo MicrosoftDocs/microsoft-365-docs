@@ -56,6 +56,23 @@ The following table identifies the supported tasks that can be performed in Micr
 |Export encrypted documents in SharePoint and OneDrive    |No       |No  |Yes    |
 |||||
 
+## Supported decryption
+
+The following table describes the decryption supported by eDiscovery (Standard) and eDiscovery (Premium) for email, attachments, and files hosted by SharePoint.
+
+| **Item type** | **Task** | **eDiscovery (Standard)** | **eDiscovery (Premium)** |
+|:--------------|:---------|:--------------------------|:-------------------------|
+| Encrypted email | Search | Yes | Yese |
+| Encrypted email | Decryption to .pst | No | Yes |
+| Encrypted email | Decryption to file | Yes | Yes |
+| Encrypted mail and attachment | Search | No | Yes (with advanced indexing)<sup>1</sup> |
+| Encrypted mail and attachment | Decryption to .pst | No | Yes |
+| Encrypted mail and attachment | Decryption to file | Yes | Yes |
+| File in SharePoint with MIP label | Search | Yes | Yes |
+| File in SharePoint with MIP label | Decryption | No | Yes |
+| File in SharePoint with other encryption<sup>2</sup> | Search, Decryption | No  | No |
+|||||
+
 ## Decryption limitations with sensitivity labels in SharePoint and OneDrive
 
 eDiscovery doesn't support encrypted files in SharePoint and OneDrive when a sensitivity label that applied the encryption is configured with either of the following settings:
@@ -87,7 +104,7 @@ Any rights-protected (RMS-protected) email messages included in the results of a
 
 ## Notes
 
-<sup>1</sup> Encrypted files located on a local computer and copied to an email message aren't decrypted and indexed for eDiscovery. For eDiscovery (Premium), encrypted email and attachments in recipient mailbox needs to be advanced indexed to be decrypted. For more information about advanced indexing, see [Advanced indexing of custodian data](indexing-custodian-data.md).
+<sup>1</sup> Encrypted files located on a local computer and copied to an email message aren't decrypted and indexed for eDiscovery. For eDiscovery (Premium), encrypted email and attachments in recipient mailbox needs to be advanced indexed to be decrypted. To search encrypted attachments for certain keywords, the data sources (mailbox) that have the encrypted attachments must be added to the case as a data source to initiate advanced indexing. Only content that has been advanced indexed enabled you to search encrypted attachments for specific keywords. For more information about advanced indexing, see [Advanced indexing of custodian data](indexing-custodian-data.md).
 
 <sup>2</sup> Only items labeled in SharePoint (or uploaded to SharePoint after integration with sensitivity labels are enabled) and that have labels with admin-defined permissions and no expiration are decrypted. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files).
 
