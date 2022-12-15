@@ -86,3 +86,5 @@ In the document library, in the upper-right corner of the page, select the detai
 
    ![Screenshot of a document library showing the details pane highlighted.](../media/content-understanding/content-processing-details-pane.png)
 
+> [!NOTE]
+> Currently, the activity feed shows only move activity. Copy activity will be available in a future release.
