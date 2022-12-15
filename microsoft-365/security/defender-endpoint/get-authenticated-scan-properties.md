@@ -60,4 +60,4 @@ isActive|Boolean|Status of the scan
 target|Long|IP target range the scan applies to
 scannerAgent|String|Id of te scanning device
 intervalInHours| String |The interval at which the scan will run
-scanAuthenticationParams| Array of authentication related parameters. See [add a new scan definition](./add-a-new-scan-definition.md)
+scanAuthenticationParams|String | Array of authentication related parameters. See [add a new scan definition](./add-a-new-scan-definition.md)
