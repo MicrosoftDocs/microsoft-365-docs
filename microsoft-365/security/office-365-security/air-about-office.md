@@ -63,7 +63,7 @@ Next, several threat investigation and hunting steps are executed:
 - Similar email messages are identified via email cluster searches.
 - The signal is shared with other platforms, such as [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - A determination is made on whether any users have clicked through any malicious links in suspicious email messages.
-- A check is done across Exchange Online Protection ([EOP](exchange-online-protection-overview.md) and ([Microsoft Defender for Office 365](defender-for-office-365.md) to see if there are any other similar messages reported by users.
+- A check is done across Exchange Online Protection ([EOP](eop-about.md) and ([Microsoft Defender for Office 365](defender-for-office-365.md) to see if there are any other similar messages reported by users.
 - A check is done to see if a user has been compromised. This check leverages signals across Office 365, [Microsoft Defender for Cloud Apps](/cloud-app-security), and [Azure Active Directory](/azure/active-directory), correlating any related user activity anomalies.
 
 During the hunting phase, risks and threats are assigned to various hunting steps.
@@ -72,7 +72,7 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 ## Example: A security administrator triggers an investigation from Threat Explorer
 
-In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer.md). This investigation also creates an alert, so Microsoft 365 Defender incidents and external SIEM tools can see that this investigation was triggered.
+In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer-about.md). This investigation also creates an alert, so Microsoft 365 Defender incidents and external SIEM tools can see that this investigation was triggered.
 
 For example, suppose that you are using the **Malware** view in Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates.
 
