@@ -99,7 +99,7 @@ ID | Category | ER | Addresses | Ports
 147 | Default<BR>Required | No | `*.office.com, www.microsoft365.com` | **TCP:** 443, 80
 148 | Default<BR>Required | No | `cdnprod.myanalytics.microsoft.com, myanalytics.microsoft.com, myanalytics-gcc.microsoft.com` | **TCP:** 443, 80
 152 | Default<BR>Optional<BR>**Notes:** These endpoints enables the Office Scripts functionality in Office clients available through the Automate tab.  This feature can also be disabled through the Office 365 Admin portal. | No | `*.microsoftusercontent.com` | **TCP:** 443
-153 | Default<BR>Required | No | `*.azure-apim.net, *.flow.microsoft.com, *.powerapps.com` | **TCP:** 443
+153 | Default<BR>Required | No | `*.azure-apim.net, *.flow.microsoft.com, *.powerautomate.com, *.powerapps.com` | **TCP:** 443
 156 | Default<BR>Required | No | `*.activity.windows.com, activity.windows.com` | **TCP:** 443
 157 | Default<BR>Required | No | `ocsp.int-x3.letsencrypt.org` | **TCP:** 80
 158 | Default<BR>Required | No | `*.cortana.ai` | **TCP:** 443
