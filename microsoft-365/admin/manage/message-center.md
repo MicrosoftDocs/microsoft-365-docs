@@ -86,7 +86,9 @@ Updates to feature release status are provided on the original Message center po
 
 The release status is **ONLY** available for new and updated features that are also announced on Microsoft 365 Public Roadmap and have reached general availability status (production ready). If you do not see release status on a message, it means the release status is not available for that feature. 
 
-The release status will initially be available for a limited number of Microsoft Teams, Outlook on the web and Microsoft 365 admin center feature announcements. 
+> [!NOTE]
+> The release status will initially be available for a limited number of Microsoft Teams, Outlook on the web and Microsoft 365 admin center feature announcements. 
+ 
 ## Relevance Recommendation
 
 For each new Message center post, we will provide a recommendation for how relevant the change is for your organization. This recommendation is based on multiple factors such as: 
