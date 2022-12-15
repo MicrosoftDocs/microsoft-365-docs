@@ -96,7 +96,7 @@ To keep informed when new labeling capabilities become available for built-in la
 
 For the latest Office apps, the AIP add-in is disabled by default, so there's nothing for you to configure:
 
-- Currently rolling out to [Current Channel (Preview)](https://office.com/insider)
+- Currently in preview: [Current Channel (Preview)](https://office.com/insider)
 - **Current Channel** and **Monthly Enterprise Channel**: Not before version 2212+ (not yet released)
 - **Semi-Annual Channel**: Not before version 2301+ (not yet released)
 
@@ -199,7 +199,7 @@ The following configurations from the AIP add-in that aren't yet supported by bu
 - [Label inheritance from email attachments](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 - [Oversharing popup messages for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
 - [Default sublabel for a parent label](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#specify-a-default-sublabel-for-a-parent-label)
-- [Remove external content markings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution )
+- [Remove external content markings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution)
 
 ## Features not planned to be supported by built-in labeling for Office apps
 
