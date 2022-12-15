@@ -9,8 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection:
-- Tier2 
+ms.collection: 
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
@@ -68,11 +67,9 @@ To unsubscribe from Message center emails, see [Unsubscribe from Message center 
 |Why can’t I see a message that was previously there?|To manage the number of messages within Message center, each message will expire and be removed after a period of time. Generally, messages expire 30 days post the time period outlined in the message body.|
 |
 ## Feature release status for your organization in Message Center 
- For each new and updated feature announcement in Message center, “Status for your org.” field provides a release status to help you track when a feature is available in your tenant. 
+For each new and updated feature announcement in Message center, “Status for your org.” field provides a release status to help you track when a feature is available in your tenant. 
 
-These three release statuses will be updated on each applicable message over the lifecycle of the feature release 
-
- 
+These three release statuses will be updated on each applicable message over the lifecycle of the feature release  
 
 - **Scheduled**: The feature is planned to release to your tenant, and is not available to any users in your organization 
 
@@ -80,15 +77,13 @@ These three release statuses will be updated on each applicable message over the
 
 - **Launched**: The feature is generally available to all the applicable users in your organization.  
 
-Updates to feature release status are provided on the original Message center post. Filtering capability on **“Status for your org.”** allows easier visibility on the updated release status.  
+Updates to feature release status are provided on the original Message center post. Filtering capability on “Status for your org.” allows easier visibility on the updated release status.   
 
 :::image type="content" source="../../media/message-center-rolloutstatus-listanddetailsview.png" alt-text="Image displaying ‘status for your org.’ updated release choices.":::
 
 The release status is **ONLY** available for new and updated features that are also announced on Microsoft 365 Public Roadmap and have reached general availability status (production ready). If you do not see release status on a message, it means the release status is not available for that feature. 
 
-> [!NOTE]
-> The release status will initially be available for a limited number of Microsoft Teams, Outlook on the web and Microsoft 365 admin center feature announcements. 
- 
+The release status will initially be available for a limited number of Microsoft Teams, Outlook on the web and Microsoft 365 admin center feature announcements. 
 ## Relevance Recommendation
 
 For each new Message center post, we will provide a recommendation for how relevant the change is for your organization. This recommendation is based on multiple factors such as: 
