@@ -26,6 +26,11 @@ description: "This is a list of all trainable classifiers, their definitions and
 
 Microsoft Purview comes with multiple pre-trained classifiers. They appear in the **Microsoft Purview compliance portal** \> **Data classification** \> **Trainable classifiers** view with the status of `Ready to use`.
 
+> [!IMPORTANT]
+> Please note that the built-in trainable and global classifiers don't provide an exhaustive or complete list of terms or language across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While classifiers may assist your organization in detecting these areas, classifiers are not intended to provide your organization's sole means of detecting or addressing the use of such language. Your organization, not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, scanning, blocking, removal, and retention of any content identified by a pre-trained classifier, including compliance with local privacy and other applicable laws. Microsoft encourages consulting with legal counsel before deployment and use.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ### Adult, racy, and gory images
  
 |**Description**|**File types**|**Languages**|
@@ -336,11 +341,6 @@ Some classifiers have minimum word count requirements for messages. To identify 
 | Threat and Harassment | 3 words | English |
 | Profanity | 5 words | English |
 | Corporate sabotage, Customer complaints, Gifts & entertainment, Money laundering, Regulatory collusion, Stock manipulation, and Unauthorized disclosure | 6 words | English |
-
-> [!IMPORTANT]
-> Please note that the built-in trainable and global classifiers don't provide an exhaustive or complete list of terms or language across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While classifiers may assist your organization in detecting these areas, classifiers are not intended to provide your organization's sole means of detecting or addressing the use of such language. Your organization, not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, scanning, blocking, removal, and retention of any content identified by a pre-trained classifier, including compliance with local privacy and other applicable laws. Microsoft encourages consulting with legal counsel before deployment and use.
-
-[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## See also
 
