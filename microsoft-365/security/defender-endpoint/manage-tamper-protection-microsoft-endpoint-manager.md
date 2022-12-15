@@ -39,6 +39,8 @@ If your organization uses [Microsoft Intune](/mem/intune/fundamentals/what-is-in
 
 Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md).
 
+> [!NOTE]
+> If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
 
 ## Requirements for managing tamper protection in Intune
 
