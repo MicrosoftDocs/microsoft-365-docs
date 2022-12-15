@@ -81,8 +81,8 @@ For instructions to enable archive mailboxes, see [Enable archive mailboxes in M
 
 In this step, you'll create the two custom retention tags that were previously described for our [example scenario](#example-scenario-for-the-instructions).
   
-- A custom archive default policy tag that has the name "Alpine House 3 Year Move to Archive".
-- A custom retention policy tag configured for the Deleted Items folder, which has the name "Alpine House Deleted Items 5 Years Delete and Allow Recovery".
+- A custom archive default policy tag, which we'll name "Alpine House 3 Year Move to Archive".
+- A custom retention policy tag configured for the Deleted Items folder, which we'll name "Alpine House Deleted Items 5 Years Delete and Allow Recovery".
 
 1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/) and sign in using your credentials.
   
