@@ -22,7 +22,6 @@ search.appverid: met150
 
 # Get scan definitions API
 
-
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
