@@ -81,7 +81,7 @@ Email customers who are using Exchange Federation will also need the additional 
 
 There are specific steps to take when you use [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md) to make sure your network is configured correctly.
 
-These DNS records apply only to tenants in Teams-only mode, for hybrid tenants, see [DNS implications for on-premises organizations that become hybrid](https://learn.microsoft.com/en-us/skypeforbusiness/hybrid/configure-hybrid-connectivity#dns-implications-for-on-premises-organizations-that-become-hybrid).
+These DNS records apply only to tenants in Teams-only mode, for hybrid tenants, see [DNS implications for on-premises organizations that become hybrid](/skypeforbusiness/hybrid/configure-hybrid-connectivity#dns-implications-for-on-premises-organizations-that-become-hybrid).
 
 |DNS record|Purpose|Value to use|
 |---|---|---|
