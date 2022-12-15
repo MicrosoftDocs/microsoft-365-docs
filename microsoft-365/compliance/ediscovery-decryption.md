@@ -62,7 +62,7 @@ The following table describes the decryption supported by eDiscovery (Standard) 
 
 | **Item type** | **Task** | **eDiscovery (Standard)** | **eDiscovery (Premium)** |
 |:--------------|:---------|:--------------------------|:-------------------------|
-| Encrypted email | Search | Yes | Yese |
+| Encrypted email | Search | Yes | Yes |
 | Encrypted email | Decryption to .pst | No | Yes |
 | Encrypted email | Decryption to file | Yes | Yes |
 | Encrypted mail and attachment | Search | No | Yes (with advanced indexing)<sup>1</sup> |
