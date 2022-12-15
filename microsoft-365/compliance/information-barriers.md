@@ -33,7 +33,7 @@ IB policies can allow or prevent communication and collaboration between groups 
 - Users in the *Day Trader* group shouldn't communicate or share files with the *Marketing Team*
 - Instructors in one school shouldn't be able to communicate or share files with students in another school in the same school district.
 - Finance personnel working on confidential company information shouldn't communicate or share files with certain groups within their organization
-- An internal team with trade secret material shouldn't call or chat online with people in certain groups within their organization
+- An internal team with trade secret material shouldn't call or chat online with users in certain groups within their organization
 - A research team should only call or chat online with a product development team
 - A SharePoint site for *Day Trader* group shouldn't be shared or accessed by anyone outside of the *Day Trader* group
 
@@ -56,7 +56,7 @@ In Microsoft Teams, IB policies determine and prevent the following kinds of una
 - Sharing a file with another user
 - Access to a file through sharing a link
 
-If the users conducting these activities in Microsoft Teams are included in an IB policy to prevent the activity, they won't be able to proceed. In addition, everyone included in an IB policy can be potentially blocked from communicating with other users in Microsoft Teams. When people affected by IB policies are part of the same team or group chat, they may be removed from those chat sessions and further communication with the group may not be allowed.
+If the users conducting these activities in Microsoft Teams are included in an IB policy to prevent the activity, they won't be able to proceed. In addition, everyone included in an IB policy can be potentially blocked from communicating with other users in Microsoft Teams. When users affected by IB policies are part of the same team or group chat, they may be removed from those chat sessions and further communication with the group may not be allowed.
 
 For more information, see [information barriers in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams).
 

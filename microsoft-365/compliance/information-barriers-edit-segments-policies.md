@@ -91,7 +91,7 @@ Use this procedure edit the definition of a user segment. For example, you might
 
     Example: Suppose a policy was defined to block the *Research* segment from communicating with the *Sales* and *Marketing* segments. The policy was defined by using this cmdlet: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
 
-    Suppose we want to change it so that people in the *Research* segment can only communicate with people in the *HR* segment. To make this change, we use this cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
+    Suppose we want to change it so that users in the *Research* segment can only communicate with users in the *HR* segment. To make this change, we use this cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
     In this example, we changed *SegmentsBlocked* to *SegmentsAllowed* and specified the *HR* segment.
 
