@@ -176,6 +176,9 @@ Other label policy settings that are specific just to calendar items, Teams meet
 - **Apply a default label to meetings and calendar events**
 - **Require users to apply a label to their meetings and calendar events**
 
+> [!NOTE]
+> These settings are independent from, rather than override, the similar policy settings for emails. For example, if you don't select the setting to apply a default label to meetings and calendar events, but do select the setting to apply a default label for emails, no default label is applied to calendar events.
+
 #### Prevent copying chat to the clipboard label setting
 
 The label setting to prevent copying chat to the clipboard is enforced for all channel chats, even outside channel meetings. For non-channel meetings, it's enforced only for meetings.
