@@ -40,10 +40,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## December 2022
 
-### Compliance Manager
+### Communications compliance
 - New [transparency note](/microsoft-365/compliance/communication-compliance-solution-overview) to convey the purpose and intended uses of machine learning in policy templates that use classifiers for business conduct and regulatory compliance.
 - Changed the [time zone from local time zone to Coordinated Universal Time (UTC)](/microsoft-365/compliance/communication-compliance-policies) for policy activity detection, user-reported messages, and filters for reports.
-- Updated table for [built-in trainable and global classifiers](microsoft-365/compliance/communication-compliance-policies) to increase visibility for details specific to pre-trained classifiers. Includes updated word count requirements for messages in English and non-English languages. 
+- Updated table for [built-in trainable and global classifiers](/microsoft-365/compliance/communication-compliance-policies) to increase visibility for details specific to pre-trained classifiers. Includes updated word count requirements for messages in English and non-English languages. 
 
 ### Data lifecycle management and records management
 - Disposition review no longer has a maximum of 1,000,000 items per label pending or reviewed. This limitation is removed from [Limits for retention policies and retention label policies](retention-limits.md).
@@ -58,9 +58,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ## November 2022
 
 ### Communication compliance
-- [Messages in alerts](microsoft-365/compliance/communication-compliance-investigate-remediate) now include a sentiment evaluation to help investigators quickly prioritize potentially riskier messages to address first.
+- [Messages in alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate) now include a sentiment evaluation to help investigators quickly prioritize potentially riskier messages to address first.
 - [Automatically detects if text is in a different language](/microsoft-365/compliance/communication-compliance-investigate-remediate) than the user's current system setting and displays alert message text accordingly. 
-- [Threat, Harassment, and Profanity classifiers](microsoft-365/compliance/communication-compliance-policies) in the English language now inspects and evaluates messages with a word count of three or greater.
+- [Threat, Harassment, and Profanity classifiers](/microsoft-365/compliance/communication-compliance-policies) in the English language now inspects and evaluates messages with a word count of three or greater.
 
 ### Compliance Manager
 
@@ -76,8 +76,8 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Insider risk management
 - [Sensitive info types](/microsoft-365/compliance/insider-risk-management-settings) now has a limit of 500 types that you can exclude. The previous limit was 100 sensitive info types.
-- Admins can now enable [potential high impact user](microsoft-365/compliance/insider-risk-management-settings) and [cumulative exfiltration activities](microsoft-365/compliance/insider-risk-management-configure) score boosters in policy settings.
-- New [risky browser indicators](microsoft-365/compliance/insider-risk-management-settings) available for detecting user browsing activity related to websites that are considered malicious or risky and pose potential insider risk that may lead to a security or compliance incident.
+- Admins can now enable [potential high impact user](/microsoft-365/compliance/insider-risk-management-settings) and [cumulative exfiltration activities](/microsoft-365/compliance/insider-risk-management-configure) score boosters in policy settings.
+- New [risky browser indicators](/microsoft-365/compliance/insider-risk-management-settings) available for detecting user browsing activity related to websites that are considered malicious or risky and pose potential insider risk that may lead to a security or compliance incident.
 
 ### Microsoft Priva
 
