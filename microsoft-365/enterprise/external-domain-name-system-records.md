@@ -3,7 +3,7 @@ title: "External Domain Name System records for Office 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 10/14/2022
+ms.date: 12/15/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
