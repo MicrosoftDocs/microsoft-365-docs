@@ -58,7 +58,7 @@ The following table identifies the supported tasks that can be performed in Micr
 
 ## Supported decryption
 
-The following table describes the decryption supported by eDiscovery (Standard) and eDiscovery (Premium) for email, attachments, and files hosted by SharePoint.
+The following table describes the decryption supported by eDiscovery (Standard) and eDiscovery (Premium) for email, email with attachments, and files hosted by SharePoint.
 
 | **Item type** | **Task** | **eDiscovery (Standard)** | **eDiscovery (Premium)** |
 |:--------------|:---------|:--------------------------|:-------------------------|
