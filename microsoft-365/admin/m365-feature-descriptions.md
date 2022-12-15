@@ -5,7 +5,7 @@ author: pebaum
 manager: scotv
 audience: ITPro
 ms.topic: reference
-f1_keywords:
+f1.keywords:
 - 'microsoft-365-and-office-365-general-information'
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
@@ -179,7 +179,7 @@ Office 365 for enterprise follows a role-based access control (RBAC) model: perm
 
 **Partners:** You can select a Microsoft partner and delegate administrative functions, including creating service request tickets. For more information, see the [Partners](/office365/servicedescriptions/office-365-platform-service-description/partners) service description and [Add, change, or delete a subscription advisor partner](/office365/admin/misc/add-partner).
 
-**Technical support for partners:** If you're a partner and need information about specific partner support plans to support your customers, you have [Advanced Support for Partners](https://partner.microsoft.com/support/advanced-cloud-support) or [Premier Support for Partners](https://partner.microsoft.com/support/microsoft-services-premier-support). For more information, see [Compare partner support plans](https://partner.microsoft.com/support/partnersupport). 
+**Technical support for partners:** If you're a partner and need information about specific partner support plans, see [Compare partner support plans](https://partner.microsoft.com/support/partnersupport). Partners can also escalate tickets to Microsoft. For more information, see [Escalating to Microsoft](/partner-center/customer-support#escalating-to-microsoft).
 
 **Developers:** Developers can learn more about developing Office and SharePoint applications at the [MSDN Microsoft Developer Network](https://developer.microsoft.com/office/docs). Developer Support is available through online blogs and forums in the developer community, through Premier or Partner support resources, or directly through Microsoft. For links to Developer Support options, see [Support Resources](https://developer.microsoft.com/office/docs).
 

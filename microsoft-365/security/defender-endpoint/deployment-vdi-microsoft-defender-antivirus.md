@@ -5,6 +5,7 @@ keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, vi
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 12/05/2022
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -31,7 +32,7 @@ search.appverid: met150
 - Windows
 
 > [!TIP]
-> This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md).
+> This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender](configure-endpoints-vdi.md).
 
 You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in. 
 
@@ -78,7 +79,7 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 You can set a scheduled task to run once a day so that whenever the package is downloaded and unpacked then the VMs will receive the new update.
 We suggest starting with once a day, but you should experiment with increasing or decreasing the frequency to understand the impact.
 
-Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advised because it will increase the network overhead on your management machine for no benefit.
+Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advisable because it will increase the network overhead on your management machine for no benefit.
 
 You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
 This configuration is possible when the devices have the share and read access (NTFS permissions) to the share so they can grab the updates. To set this configuration up, follow these steps:
@@ -110,7 +111,7 @@ This configuration is possible when the devices have the share and read access (
 
 3. Go to the **Actions** tab. Select **New...** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Select **OK**.
 
-4. Configure any oher settings as appropriate.
+4. Configure any other settings as appropriate.
 
 5. Select **OK** to save the scheduled task.
 
@@ -160,7 +161,7 @@ You can specify the type of scan that should be performed during a scheduled sca
 
 ## Prevent notifications
 
-Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can lock down the Microsoft Defender Antivirus user interface. The following procedure describes how to suppress notifications with Group Policy.
+Sometimes, Microsoft Defender Antivirus notifications are sent to or persist across multiple sessions. To help avoid user confusion, you can lock down the Microsoft Defender Antivirus user interface. The following procedure describes how to suppress notifications using Group Policy.
 
 1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Client Interface**.
 
@@ -170,20 +171,14 @@ Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist 
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan while the attack was detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
-
-> [!TIP]
-> To open the Action Center on Windows 10 or Windows 11, take one of the following steps:
-> - On the right end of the taskbar, select the Action Center icon.
-> - Press the Windows logo key button + A.
-> - On a touchscreen device, swipe in from the right edge of the screen.
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team will see the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
 ## Disable scans after an update
 
 Disabling a scan after an update will prevent a scan from occurring after receiving an update. You can apply this setting when creating the base image if you have also run a quick scan. This way, you can prevent the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
 
 > [!IMPORTANT]
-> Running scans after an update will help ensure your VMs are protected with the latest Security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
+> Running scans after an update will help ensure your VMs are protected with the latest security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
 
 1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
@@ -205,7 +200,7 @@ Use the following cmdlet, to stop a quick or scheduled scan whenever the device 
 Set-MpPreference -ScanOnlyIfIdleEnabled $false
 ```
 
-You can also disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus by configuration via local or domain group policy. This prevents the significant CPU contention in high density environments.
+You can also disable the `ScanOnlyIfIdle` option in Microsoft Defender Antivirus by configuration via local or domain group policy. This setting prevents significant CPU contention in high density environments.
 
 For more information, see [Start the scheduled scan only when computer is on but not in use](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 

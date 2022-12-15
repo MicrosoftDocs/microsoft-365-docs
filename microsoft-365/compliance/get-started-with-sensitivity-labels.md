@@ -68,7 +68,7 @@ By default, global administrators for your tenant have access to this admin cent
 - **Information Protection Investigators**
 - **Information Protection Readers**
 
-For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Defender and compliance portals](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-defender-and-compliance-portals).
+For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Defender and compliance portals](../security/office-365-security/scc-permissions.md#role-groups-in-the-defender-and-compliance-portals).
 
 Alternatively to using the default roles, you can create a new role group and add the **Sensitivity Label Administrator** role to this group. For a read-only role, use **Sensitivity Label Reader**. 
 
@@ -92,6 +92,7 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Manage sensitivity labels for Office apps so that content is labeled as it's created—includes support for manual labeling on all platforms |[Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
 |Extend labeling to File Explorer and PowerShell, with additional features for Office apps on Windows (if needed)|[Azure Information Protection unified labeling client for Windows](/azure/information-protection/rms-client/aip-clientv2)|
 |Encrypt documents and emails with sensitivity labels and restrict who can access that content and how it can be used |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
+|Protect Teams meetings, from meeting invites and responses, to protecting the meeting itself and related chat |[Use sensitivity labels to protect calendar items, Teams meetings and chat](sensitivity-labels-meetings.md)|
 |Enable sensitivity labels for Office on the web, with support for coauthoring, eDiscovery, data loss prevention, search—even when documents are encrypted | [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Files in SharePoint to be automatically labeled with a default sensitivity label | [Configure a default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md)
 |Use co-authoring and AutoSave in Office desktop apps when documents are encrypted | [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md)

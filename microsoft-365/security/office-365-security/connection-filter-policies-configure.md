@@ -27,7 +27,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -39,7 +39,7 @@ If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standa
 
 - **Safe list**: The *safe list* is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Microsoft identifies these trusted email sources from subscriptions to various third-party lists. You enable or disable the use of the safe list; you can't configure the source email servers on the safe list. Spam filtering is skipped on incoming messages from the email servers on the safe list.
 
-This article describes how to configure the default connection filter policy in the Microsoft 365 Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes). For more information about how EOP uses connection filtering is part of your organization's overall anti-spam settings, see [Anti-spam protection](anti-spam-protection.md).
+This article describes how to configure the default connection filter policy in the Microsoft 365 Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes). For more information about how EOP uses connection filtering is part of your organization's overall anti-spam settings, see [Anti-spam protection](anti-spam-protection-about.md).
 
 > [!NOTE]
 > The IP Allow List, safe list, and the IP Block List are one part of your overall strategy to allow or block email in your organization. For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md) and [Create blocked sender lists](create-block-sender-lists-in-office-365.md).
@@ -189,7 +189,7 @@ For example, the source email server 192.168.1.25 sends email from the domains c
 
 Messages from an email server in your IP Allow List are still subject to spam filtering in the following scenarios:
 
-- An IP address in your IP Allow List is also configured in an on-premises, IP-based inbound connector in *any* tenant in Microsoft 365 (let's call this Tenant A), **and** Tenant A and the EOP server that first encounters the message both happen to be in *the same* Active Directory forest in the Microsoft datacenters. In this scenario, **IPV:CAL** *is* added to the message's [anti-spam message headers](anti-spam-message-headers.md) (indicating the message bypassed spam filtering), but the message is still subject to spam filtering.
+- An IP address in your IP Allow List is also configured in an on-premises, IP-based inbound connector in *any* tenant in Microsoft 365 (let's call this Tenant A), **and** Tenant A and the EOP server that first encounters the message both happen to be in *the same* Active Directory forest in the Microsoft datacenters. In this scenario, **IPV:CAL** *is* added to the message's [anti-spam message headers](message-headers-eop-mdo.md) (indicating the message bypassed spam filtering), but the message is still subject to spam filtering.
 
 - Your tenant that contains the IP Allow List and the EOP server that first encounters the message both happen to be in *different* Active Directory forests in the Microsoft datacenters. In this scenario, **IPV:CAL** *is not* added to the message headers, so the message is still subject to spam filtering.
 
