@@ -131,52 +131,6 @@ When you run the onboarding wizard for the first time, you must choose where you
 > - You cannot change your data storage location after the first-time setup.
 > - Review the [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.
 
-### Diagnostic data settings
-
-> [!NOTE]
-> Microsoft Defender for Endpoint doesn't require any specific diagnostic level as long as it's enabled.
-
-Make sure that the diagnostic data service is enabled on all the devices in your organization.
-By default, this service is enabled. It's good practice to check to ensure that you'll get sensor data from them.
-
-The display name of this service is _Connected User Experiences and Telemetry_.
-
-#### Use the command line to check the Windows diagnostic data service startup type
-
-1. Open an elevated command-line prompt on the device:
-   1. Go to **Start** and type **cmd**.
-   2. Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command, and press **Enter**:
-
-   ```console
-   sc qc diagtrack
-   ```
-
-   If the service is enabled, then the result should look like the following screenshot:
-
-   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Result of the sc query command for diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
-
-You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.
-
-#### Use the command line to set the Windows diagnostic data service to automatically start
-
-1. Open an elevated command-line prompt on the endpoint:
-    1. Go to **Start** and type **cmd**.
-    2. Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command, and press **Enter**:
-
-    ```console
-    sc config diagtrack start=auto
-    ```
-
-3. A success message is displayed. Verify the change by entering the following command, and press **Enter**:
-
-    ```console
-    sc qc diagtrack
-    ```
-
 #### Internet connectivity
 
 Internet connectivity on devices is required either directly or through proxy.
@@ -184,8 +138,6 @@ Internet connectivity on devices is required either directly or through proxy.
 The Defender for Endpoint sensor can use a daily average bandwidth of 5 MB to communicate with the Defender for Endpoint cloud service and report cyber data. One-off activities such as file uploads and investigation package collection aren't included in this daily average bandwidth.
 
 For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
-
-Before you onboard devices, the diagnostic data service must be enabled. The service is enabled by default in Windows 10 and Windows 11.
 
 ## Microsoft Defender Antivirus configuration requirement
 
