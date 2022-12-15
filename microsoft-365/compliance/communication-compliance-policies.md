@@ -221,34 +221,42 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 ### Classifiers
 
-[Built-in trainable and global classifiers](/microsoft-365/compliance/classifier-learn-about) inspect sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies.
+[Built-in trainable and global classifiers](/microsoft-365/compliance/classifier-tc-definitions) inspect sent and received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies.
 
-Policies using classifiers will inspect and evaluate messages with a word count of six or greater. Messages containing fewer than six words aren't evaluated in policies using classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies detecting this type of content.
+Communication compliance uses specific built-in trainable and global classifiers to inspect content specific to the image and language categories described in this section.
 
-Communication compliance can use specific built-in trainable and global classifiers to inspect communications for the following types of language and content:
+#### Images
+
+Communication compliance detects images of the following types:
 
 |**Classifier**|**Description**|
 |:-------------|:--------------|
-| **Adult images** | Detects images that are potentially sexually explicit in nature. |
-| **Corporate sabotage (preview)** | Detects messages that may mention acts to damage or destroy corporate assets or property. This classifier can help customers manage regulatory compliance obligations such as NERC Critical Infrastructure Protection standards or state by state regulations like Chapter 9.05 RCW in Washington state. |
-| **Customer complaints (preview)** | Detects messages that may suggest customer complaints made on your organization's products or services, as required by law for regulated industries. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 4530, FINRA 4513, FINRA 2111, Consumer Financial Protection Bureau, Code of Federal Regulations Title 21: Food and Drugs, and the Federal Trade Commission Act. |
-| **Discrimination** | Detects potentially explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities. |
-| **Gifts & entertainment (preview)** | Detects messages that may suggest exchanging gifts or entertainment in return for service, which violates regulations related to bribery. This classifier can help customers manage regulatory compliance obligations such as Foreign Corrupt Practices Act (FCPA), UK Bribery Act, and FINRA Rule 2320. |
-| **Gory images** | Detects images that potentially depict violence and gore. |
-| **Harassment** | Detects potentially offensive conduct targeting people regarding race, color, religion, national origin. |
-| **Money laundering (preview)** | Detects signs that may suggest money laundering or engagement in acts to conceal or disguise the origin or destination of proceeds. This classifier can help customers manage regulatory compliance obligations such as the Bank Secrecy Act, the USA Patriot Act, FINRA Rule 3310, and the Anti-Money Laundering Act of 2020. |
-| **Profanity** | Detects potentially profane expressions that embarrass most people. |
-| **Racy images** | Detects images that are potentially sexually suggestive in nature, but contain less explicit content than images deemed Adult. |
-| **Regulatory collusion (preview)** | Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and the Robinson-Patman Act. |
-| **Stock manipulation (preview)** | Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. |
-| **Threat** | Detects potential threats to commit violence or physical harm to a person or property. |
-| **Unauthorized disclosure (preview)** | Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
+| [Adult images](classifier-tc-definitions.md#adult-racy-and-gory-images) | Detects images that are potentially sexually explicit. |
+| [Gory images](classifier-tc-definitions.md#adult-racy-and-gory-images) | Detects images that potentially depict violence and gore. |
+| [Racy images](classifier-tc-definitions.md#adult-racy-and-gory-images) | Detects images that are potentially sexually suggestive, but contain less explicit content than images deemed as Adult. |
+
+For information about applying content flags that can detect adult, gory, and racy material in images, see [Adult content detection](/azure/cognitive-services/computer-vision/concept-detecting-adult-content).
+
+#### Language
+
+Communication compliance policies using classifiers inspect and evaluate messages that meet a minimum word count requirement, depending upon the language of the content. For a complete list of supported languages, word count requirements, and file types for these classifiers, see [Trainable classifier definitions](/microsoft-365/compliance/classifier-tc-definitions). To identify and take action on messages containing inappropriate language content that don't meet the word count requirement, you can create a [custom keyword dictionary](#custom-keyword-dictionaries) for communication compliance policies detecting this type of content.
+
+|**Classifier**|**Description**|
+|:-------------|:--------------|
+| [Corporate sabotage (preview)](classifier-tc-definitions.md#corporate-sabotage-preview) | Detects messages that may mention acts to damage or destroy corporate assets or property. This classifier can help customers manage regulatory compliance obligations such as NERC Critical Infrastructure Protection standards or state by state regulations like Chapter 9.05 RCW in Washington state. |
+| [Customer complaints (preview)](classifier-tc-definitions.md#customer-complaints) | Detects messages that may suggest customer complaints made on your organization's products or services, as required by law for regulated industries. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 4530, FINRA 4513, FINRA 2111, Consumer Financial Protection Bureau, Code of Federal Regulations Title 21: Food and Drugs, and the Federal Trade Commission Act. |
+| [Discrimination](classifier-tc-definitions.md#discrimination) | Detects potentially explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities. |
+| [Gifts & entertainment (preview)](classifier-tc-definitions.md#gifts--entertainment-preview) | Detects messages that may suggest exchanging gifts or entertainment in return for service, which violates regulations related to bribery. This classifier can help customers manage regulatory compliance obligations such as Foreign Corrupt Practices Act (FCPA), UK Bribery Act, and FINRA Rule 2320. |
+| [Harassment](classifier-tc-definitions.md#harassment) | Detects potentially offensive content in multiple languages that targets people regarding race, color, religion, national origin. |
+| [Money laundering (preview)](classifier-tc-definitions.md#money-laundering-preview) | Detects signs that may suggest money laundering or engagement in acts to conceal or disguise the origin or destination of proceeds. This classifier can help customers manage regulatory compliance obligations such as the Bank Secrecy Act, the USA Patriot Act, FINRA Rule 3310, and the Anti-Money Laundering Act of 2020. |
+| [Profanity](classifier-tc-definitions.md#profanity) | Detects potentially profane content in multiple languages that would likely offend most people. |
+| [Regulatory collusion (preview)](classifier-tc-definitions.md#regulatory-collusion-preview) | Detects messages that may violate regulatory anti-collusion requirements such as an attempted concealment of sensitive information. This classifier can help customers manage regulatory compliance obligations such as the Sherman Antitrust Act, Securities Exchange Act 1933, Securities Exchange Act of 1934, Investment Advisers Act of 1940, Federal Commission Act, and the Robinson-Patman Act. |
+| [Stock manipulation (preview)](classifier-tc-definitions.md#stock-manipulation-preview) | Detects signs of possible stock manipulation, such as recommendations to buy, sell or hold stocks that may suggest an attempt to manipulate the stock price. This classifier can help customers manage regulatory compliance obligations such as the Securities Exchange Act of 1934, FINRA Rule 2372, and FINRA Rule 5270. |
+| [Threat](classifier-tc-definitions.md#threat) | Detects potential threatening content in multiple languages aimed at committing violence or physical harm to a person or property. | 
+| [Unauthorized disclosure (preview)](classifier-tc-definitions.md#unauthorized-disclosure-preview) | Detects sharing of information containing content that is explicitly designated as confidential or internal to unauthorized individuals. This classifier can help customers manage regulatory compliance obligations such as FINRA Rule 2010 and SEC Rule 10b-5. |
 
 > [!IMPORTANT]
-> Preview classifiers may detect a large volume of bulk sender/newsletter content due to a known issue. While these classifiers are in preview, you can mitigate the detection of large volumes of bulk sender/newsletter content by adding the [*Message is not sent to any of these domains* condition](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) to your polices with a list of domains to exclude.
-
-> [!NOTE]
-> Policies using Threat, Harassment, and Profanity classifiers in the English language will inspect and evaluate messages with a word count of three or greater. Messages containing less than three words aren't evaluated in policies using these types of classifiers. To identify and take action on shorter messages containing inappropriate content, we recommend including a custom keyword dictionary to communication compliance policies detecting this type of content.
+> Classifiers in (preview) may detect a large volume of bulk sender/newsletter content due to a known issue. While these classifiers are in preview, you can mitigate the detection of large volumes of bulk sender/newsletter content by adding the [*Message is not sent to any of these domains* condition](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) to your polices with a list of domains to exclude.
 
 ### Optical character recognition (OCR)
 

@@ -112,7 +112,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply a sensitivity label to emails automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | Under review           | Under review               | Yes |
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
 |[PDF support](#pdf-support) | Current Channel: 2205+ <br /><br> Monthly Enterprise Channel: 2205+ <br /><br> Semi-Annual Enterprise Channel: Under review|  Under review | Under review | Under review | Under review |
-|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook) | Rolling out: 2211+ <br /><br> Monthly Enterprise Channel: Under review <br /><br> Semi-Annual Enterprise Channel:Under review  | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
+|[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook) | Current Channel: 2211+ <br /><br> Monthly Enterprise Channel: Under review <br /><br> Semi-Annual Enterprise Channel:Under review  | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Under review |  Under review | Under review | Under review | Under review |
 
 **Footnotes:**
@@ -400,7 +400,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 > [!NOTE]
 > This capability is available for built-in labeling for Windows, Mac, iOS, and Android, but it's not yet available for Outlook on the web. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Apply S/MIME protection**.
 > 
-> If you configure a label to apply S/MIME protection but Outlook on Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
+> If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
 
 This configuration is not available in the Microsoft Purview compliance portal. You must use PowerShell advanced settings with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
