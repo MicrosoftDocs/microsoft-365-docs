@@ -21,9 +21,9 @@ description: Learn about the unstructured document processing model in Microsoft
 > [!NOTE]
 > *Unstructured document processing* was known as *document understanding* in previous releases.
 
-Use the unstructured document processing model ([training method](create-syntex-model.md#train-a-custom-model)) to automatically classify files and extract information. It works best for unstructured documents, such as letters or contracts. 
+Use the unstructured document processing model ([teaching method](create-syntex-model.md#train-a-custom-model)) to automatically classify files and extract information. It works best for unstructured documents, such as letters or contracts. 
 
-The unstructured document processing model (formerly known as document understanding model) uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
+The unstructured document processing model (formerly known as *document understanding model*) uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 </br>
 
