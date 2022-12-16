@@ -48,6 +48,36 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## November 2022
+
+### Sentiment per Topic available in the NPS survey insights dashboard
+
+To empower IT Admins like you, the Net Promoter Score (NPS) survey insights dashboard released the new Sentiment per Topic feature under the sentiment section.
+
+With this new feature, you will be able to identify the sentiment that is associated with each topic available. The sentiment is calculated for each NPS feedback comment and tied to a specific topic. With this new addition, you can discover what trending topics your users are talking about and understand the feeling they're experiencing regarding that specific topic.
+
+With the new sentiment per topic feature on the NPS survey insights dashboard, you will be able to:
+
+- Identify the sentiment for each topic
+- Choose between three sentiments: Positive, Negative, Other
+
+Here are the topics available:
+
+- Change Management
+- Collaboration
+- Complexity
+- Navigation
+- Performance
+- Reliability
+- User Education
+- Value
+
+To access the sentiment per topic insights, sign in to the M365 Admin Center and go to **Health** > **Product feedback** > **NPS survey insights tab**.
+
+:::image type="content" source="../media/nps-sentimentpertopic.jpg" alt-text="Screenshot: Sentiment per topic feature in the NPS survey insights dashboard" lightbox="../media/nps-sentimentpertopic.jpg":::
+
+For questions or feedback related to NPS survey insights, contact us at Prosight@microsoft.com.
+
 ## August 2022
 
 ### Date filter in the Net Promoter Score (NPS) survey insights dashboard
