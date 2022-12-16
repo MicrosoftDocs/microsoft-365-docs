@@ -73,13 +73,19 @@ For more information, see [Information barriers in SharePoint](/sharepoint/infor
 
 ## Information barriers and Exchange Online
 
-SECTION NEEDS UPDATING FOR V2
+IB policies aren't available to restrict communication and collaboration between groups and users in email messages. Only Exchange Online deployments are currently supported for IB policies. If your organization needs to define and control email communications, consider using [Exchange mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
-IB policies aren't available to restrict communication and collaboration between groups and users in email messages. IB policies are based on [Exchange Online Address Book Policies (ABPs)](/exchange/address-books/address-book-policies/address-book-policies). ABPs allow organizations to virtually assign users into specific groups in order to provide customized views of the organization's global address book (GAL). When IB policies are created, ABPs for the policies are automatically created. As IB policies are added in your organization, the structure and behavior of your GAL will change to comply with IB policies.
+### Information barriers enabled after to January 31, 2023
+
+Information barriers is no longer based on Exchange Online Address Book Policies (ABPs). Organizations using ABPs will not have any impact to the existing ABPs when enabling information barriers. However, we recommend that your ABPs are consistent with the segments you configure in information barriers. You should try to avoid user visibility differences between your existing ABPs and your new information barriers configuration.
+
+### Information barriers enabled prior to January 31, 2023
+
+IB policies are based on [Exchange Online Address Book Policies (ABPs)](/exchange/address-books/address-book-policies/address-book-policies). ABPs allow organizations to virtually assign users into specific groups in order to provide customized views of the organization's global address book (GAL). When IB policies are created, ABPs for the policies are automatically created. As IB policies are added in your organization, the structure and behavior of your GAL will change to comply with IB policies.
 
 Before you define and apply IB policies, you must remove all existing Exchange address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). Once IB policies are enabled and if you have hierarchical address book enabled, all users not included in an IB segment will see the [hierarchical address book](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
 
-Only Exchange Online deployments are currently supported for IB policies. If your organization needs to define and control email communications, consider using [Exchange mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+
 
 ## Ready to get started?
 

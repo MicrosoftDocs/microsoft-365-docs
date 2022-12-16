@@ -63,9 +63,7 @@ When you configure IB, you'll work with several objects and concepts.
 - **Segments** are sets of groups or users that are defined in the compliance portal or by using PowerShell that use selected group or user account attributes. Your organization can have up to 5,000 segments and users can be assigned to multiple segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
 
     > [!IMPORTANT]
-    > Support for 5,000 segments and assigning users to multiple segments is only supported in information barriers v2. Organizations that have configured IB prior to December 31, 2022 are on the older version of IB and the maximum number of segments supported 250 and user are restricted to being assigned to only one segment.
-
-    > If you are an organization with an existing IB configuration and would like to migrate to the newest version of IB, see the following guidance for ......
+    > Support for 5,000 segments and assigning users to multiple segments is only available in the newest version of information barriers (enabling information barriers in your organization after January 31, 2023). <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
 
 - **IB policies** determine communication limits or restrictions. When you define IB policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
@@ -88,7 +86,8 @@ When you configure IB, you'll work with several objects and concepts.
 | **Step 3**: [Create information barriers policies](#step-3-create-ib-policies) | - Create your policies (don't apply yet)<br/>- Choose from two kinds (block or allow) |
 | **Step 4**: [Apply information barriers policies](#step-4-apply-ib-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
 | **Step 5**: [Configuration for information barriers on SharePoint and OneDrive (optional)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configure IB for SharePoint and OneDrive |
-| **Step 6**: [Information barriers modes (optional)](#step-6-information-barriers-modes) | - Update IB modes if applicable |
+| **Step 6**: [Information barriers modes (optional)](#step-6-information-barriers-modes-optional) | - Update IB modes if applicable |
+| **Step 7**: [Configure user discoverability for information barriers (optional)](#step-7-configure-user-discoverability-for-information-barriers-optional) | - Enable or restrict user discoverability in IB with the people picker if applicable. |
 
 ## Step 1: Make sure prerequisites are met
 
@@ -411,7 +410,7 @@ If you're configuring IB for SharePoint and OneDrive, you'll need to enable IB o
 
 To enable IB in SharePoint and OneDrive, follow the guidance and steps in the [Use information barriers with SharePoint](/sharepoint/information-barriers) article.
 
-## Step 6: Information barriers modes
+## Step 6: Information barriers modes (optional)
 
 Modes can help strengthen access, sharing, and membership of a Microsoft 365 resource based on the resource's IB mode. Modes are supported on Microsoft 365 Groups, Microsoft Teams, OneDrive, and SharePoint sites and are automatically enabled in your new or existing IB configuration.
 
@@ -437,7 +436,7 @@ For more information about IB modes and how they're configured across services, 
 
 IB policies aren't in effect until you set them to active status and apply the policies.
 
-## Example scenario: Contoso's departments, segments, and policies
+## Example scenario 1: Contoso's departments, segments, and policies
 
 To see how an organization might approach defining segments and policies, consider the following example scenario.
 
@@ -488,6 +487,58 @@ Contoso defines three IB policies, as described in the following table:
 With segments and policies defined, Contoso applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet.
 
 When the cmdlet finishes, Contoso is compliant with industry requirements.
+
+## Example scenario 2: North Schools District's schools, segments, and policies
+
+Intro
+
+### North School District's schools and plan
+
+North School District's has five schools:
+
+| **Segment** | **Can communicate with** | **Can't communicate with** |
+|:------------|:-------------------------|:---------------------------|
+| School 1 |  |  |
+| School 2 |  |  |
+| School 3 |  |  |
+| School 4 |  |  |
+| School 5 |  |  |
+||||
+
+For this structure, North School District's plan includes three IB policies:
+
+1. An IB policy designed to prevent 
+2. Another IB policy to prevent 
+3. An IB policy designed to allow 
+
+### North School District's defined segments
+
+North School District will use the School attribute in Azure Active Directory to define segments, as follows:
+
+| School | Segment Definition |
+|:-------|:-------------------|
+| School 1 | `New-OrganizationSegment -Name  |
+| School 2 | `New-OrganizationSegment -Name  |
+| School 3 | `New-OrganizationSegment -Name  |
+| School 4 | `New-OrganizationSegment -Name  |
+| School 5 | `New-OrganizationSegment -Name  |
+||||
+
+With the segments defined, Contoso proceeds to define the IB policies.
+
+### North School District's IB policies
+
+North School District defines three IB policies, as described in the following table:
+
+| Policy | Policy Definition |
+|:-------|:------------------|
+| **Policy 1: Prevent Sales from communicating with Research** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In this example, the IB policy is called *Sales-Research*. When this policy is active and applied, it will help prevent users who are in the Sales segment from communicating with users in the Research segment. This policy is a one-way policy; it won't prevent Research from communicating with Sales. For that, Policy 2 is needed. |
+| **Policy 2: Prevent Research from communicating with Sales** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In this example, the IB policy is called *Research-Sales*. When this policy is active and applied, it will help prevent users who are in the Research segment from communicating with users in the Sales segment. |
+| **Policy 3: Allow Manufacturing to communicate with HR and Marketing only** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> In this case, the IB policy is called *Manufacturing-HRMarketing*. When this policy is active and applied, Manufacturing can communicate only with HR and Marketing. HR and Marketing aren't restricted from communicating with other segments. |
+
+With segments and policies defined, Contoso applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet.
+
+When the cmdlet finishes, Contoso is compliant with industry requirements
 
 ## Resources
 
