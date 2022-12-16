@@ -31,7 +31,7 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 
 ## How to get Microsoft Defender for Business
 
-# [Try or buy Defender for Business](#tab/tryorbuy)
+# [Get Defender for Business (standalone)](#tab/getmdb)
 
 > [!IMPORTANT]
 > You should be a global administrator to complete the following task. The person who signs your company up for Microsoft 365 is a global administrator. [Learn more about admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
@@ -55,7 +55,7 @@ If you don't already have Microsoft Defender for Business, you can choose from s
    It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
 
 
-# [Get Microsoft 365 Business Premium](#tab/premium)
+# [Get Microsoft 365 Business Premium](#tab/getpremium)
 
 Microsoft 365 Business Premium includes Defender for Business and Microsoft Defender for Office 365 Plan 1. Microsoft 365 Business Premium also includes Microsoft 365 Apps (formerly referred to as Office apps) and advanced anti-spam, anti-phishing, and anti-malware protection. For more information, see [Productivity and security for small and medium-sized businesses](../../business-premium/m365bp-secure-users.md).
 
@@ -69,7 +69,7 @@ Microsoft 365 Business Premium includes Defender for Business and Microsoft Defe
 
 5. In the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. 
 
-# [Work with a Microsoft partner](#tab/partner)
+# [Work with a Microsoft partner](#tab/findpartner)
 
 Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium and Microsoft Defender for Business. If you'd prefer to work with a Microsoft partner, you can follow these steps to find a solution provider in your area:
 
