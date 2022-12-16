@@ -58,47 +58,6 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 
 # [Get Microsoft 365 Business Premium](#tab/premium)
 
-stuff
-
-# [Work with a partner](#tab/partner)
-
-stuff
-
----
-
-
-## Try or buy Microsoft Defender for Business
-
-> [!IMPORTANT]
-> The person who signs your company up for Microsoft 365 is a global administrator. You should be a global administrator to complete the following task. [Learn more about admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
-
-1. Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select an option to try or buy Defender for Business. Fill in the requested information.
-
-   > [!TIP]
-   > If you're starting a trial, look for your acceptance email, which contains your promo code. And be sure to see the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
-
-2. If you're adding Defender for Business to an existing Microsoft 365 subscription, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and then sign in using your existing work or school account. Or, follow the prompts to create a new account, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and then sign in using your new account. 
-
-3. In the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), review your recommendations. Then take one of the following next steps, depending on your scenario:
-
-   | Scenario | Next step |
-   |:---|:---|
-   | Defender for Business is your first Microsoft 365 subscription. | Proceed to step 4 to start provisioning Defender for Business. |
-   | You're adding Defender for Business to an existing [Microsoft 365 for business subscription](../../admin/admin-overview/what-is-microsoft-365-for-business.md). | You've probably already [set up your Microsoft 365 subscription](../../admin/setup/setup-business-standard.md), and now you only need to set up and configure Defender for Business. Proceed to step 4.  |
-   | You have Microsoft 365 Business Premium, but it's not set up yet. | Follow the guidance in [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). This guidance walks you through how to set up and configure your subscription, including your security capabilities. |
-
-   > [!TIP]
-   > If you're brand new to Microsoft 365, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
-
-4. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and in the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. You'll know this process has started when you see a message like what's displayed in the following screenshot:
-
-   :::image type="content" source="media/mdb-hangon-provisioning.png" alt-text="Screenshot of provisioning message in Defender for Business.":::
-
-   > [!NOTE]
-   > It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
-
-## Get Microsoft 365 Business Premium
-
 Microsoft 365 Business Premium includes Defender for Business and Microsoft Defender for Office 365 Plan 1. Microsoft 365 Business Premium also includes Microsoft 365 Apps (formerly referred to as Office apps) and advanced anti-spam, anti-phishing, and anti-malware protection. See [Productivity and security for small and medium-sized businesses](../../business-premium/m365bp-secure-users.md).
 
 1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
@@ -111,7 +70,7 @@ Microsoft 365 Business Premium includes Defender for Business and Microsoft Defe
 
 5. In the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. 
 
-## Work with a Microsoft partner
+# [Work with a Microsoft partner](#tab/partner)
 
 Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium and Microsoft Defender for Business. If you'd prefer to work with a Microsoft partner, you can follow these steps to find a solution provider in your area:
 
@@ -127,6 +86,10 @@ Microsoft has a list of solution providers who are authorized to sell offerings,
    As soon as you select one or more criteria, the list of partners updates.
 
 3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
+
+---
+
+
 
 ## Portals you'll use for setup and management
 
