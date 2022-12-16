@@ -29,7 +29,7 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 - [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium), which now includes Defender for Business.
 - [Work with a Microsoft partner](#work-with-a-microsoft-partner) who can help you get everything set up and configured.
 
-# [Try or buy](#tab/tryorbuy)
+# [Try or buy Defender for Business](#tab/tryorbuy)
 
 > [!IMPORTANT]
 > The person who signs your company up for Microsoft 365 is a global administrator. You should be a global administrator to complete the following task. [Learn more about admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
