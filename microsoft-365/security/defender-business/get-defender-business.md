@@ -29,12 +29,12 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 - Get Microsoft 365 Business Premium, which includes Defender for Business.
 - Work with a Microsoft partner who can help you get everything set up and configured.
 
+> [!IMPORTANT]
+> You should be a global administrator to complete the tasks described in this article. The person who signs your company up for Microsoft 365 is a global administrator. [Learn more about admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
+
 ## How to get Microsoft Defender for Business
 
 # [Get Defender for Business (standalone)](#tab/getmdb)
-
-> [!IMPORTANT]
-> You should be a global administrator to complete the following task. The person who signs your company up for Microsoft 365 is a global administrator. [Learn more about admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
 1. Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select an option to try or buy Defender for Business. Fill in the requested information.
 
