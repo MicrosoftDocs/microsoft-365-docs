@@ -57,6 +57,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## November 2022
 
+### Audit
+- [Audit New Search](/microsoft-365/compliance/audit-new-search) - the new export limit is now up to a maximum of 500K (500,000 rows) for a single export.
+- [Search the audit log in the compliance portal](/microsoft-365/compliance/audit-log-search) - clarified table for retention policies and labels.
+
 ### Communication compliance
 - [Messages in alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate) now include a sentiment evaluation to help investigators quickly prioritize potentially riskier messages to address first.
 - [Automatically detects if text is in a different language](/microsoft-365/compliance/communication-compliance-investigate-remediate) than the user's current system setting and displays alert message text accordingly. 
@@ -73,6 +77,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - [Decryption in Microsoft Purview eDiscovery tools](/microsoft-365/compliance/ediscovery-decryption) - clarified how items labeled within SharePoint Online are decrypted with eDiscovery tools.
 - [Conduct an eDiscovery investigation of content in Microsoft Teams](/microsoftteams/ediscovery-investigation) - expanded reactions in Microsoft Teams chats are now supported in eDiscovery (Premium).
 - [Create an eDiscovery hold](/microsoft-365/compliance/create-ediscovery-holds) - clarified how eDiscovery holds are handled when a user's OneDrive URL changes.
+- [Export documents from a review set in eDiscovery (Premium)](/microsoft-365/compliance/export-documents-from-review-set) - clarified how eDiscovery includes the parent email in the PST files if defined by the "Group" option in the review set.
 
 ### Insider risk management
 - [Sensitive info types](/microsoft-365/compliance/insider-risk-management-settings) now has a limit of 500 types that you can exclude. The previous limit was 100 sensitive info types.
