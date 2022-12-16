@@ -21,7 +21,7 @@ ms.collection:
 
 # Get Microsoft Defender for Business
 
-Defender for Business is a new endpoint security solution designed especially for small and medium-sized businesses (up to 300 employees). This article describes how to get and provision Defender for Business.
+[Defender for Business](mdb-overview.md) is a new endpoint security solution designed especially for small and medium-sized businesses (up to 300 employees). This article describes how to get and provision Defender for Business.
 
 > [!IMPORTANT]
 > You should be a global administrator to complete the tasks described in this article. The person who signs your company up for Microsoft 365 is a global administrator. [Learn more about admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
