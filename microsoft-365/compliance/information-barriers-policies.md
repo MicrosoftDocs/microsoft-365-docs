@@ -436,14 +436,18 @@ For more information about IB modes and how they're configured across services, 
 
 ## Step 7: Configure user discoverability for information barriers (optional)
 
-Information barriers policies allow administrators to enable or disable search restrictions in the people picker. IB policy will block two users will also restrict people search capability.
+Information barriers policies allow administrators to enable or disable search restrictions in the people picker. By default, the people picker restriction is enabled for IB policies. For example, IB policies that block two specific users from communication can also restrict the users from seeing each other when using the people picker.
 
 > [!IMPORTANT]
 > Support for enabling or disabling search restrictions is only available when enabling information barriers in your organization after January 31, 2023. <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and cannot enable or disable search restrictions. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
 
-Administrators could choose to disable the people search restriction using Security & Compliance Center PowerShell cmdlet Set-PolicyConfig:
+To disable the people picker search restriction using PowerShell, complete the following steps:
 
-Set-PolicyConfig –InformationBarrierPeopleSearchRestriction “Disabled” 
+1. Use the **Set-PolicyConfig** cmdlet to disable the people picker restriction:
+
+```powershell
+Set-PolicyConfig -InformationBarrierPeopleSearchRestriction 'Disabled'
+```
 
 ## Example scenario 1: Contoso's departments, segments, and policies
 
