@@ -36,6 +36,8 @@ To get Defender for Business, you can choose from several options:
 
 # [Get Defender for Business (standalone)](#tab/getmdb)
 
+Defender for Business provides advanced security protection for your company's devices. For more information, see [What is Microsoft Defender for Business](mdb-overview.md)?
+
 1. Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select an option to try or buy Defender for Business. Fill in the requested information.
 
    If you're starting a trial, look for your acceptance email, which contains your promo code and a link to sign in. And be sure to see the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
