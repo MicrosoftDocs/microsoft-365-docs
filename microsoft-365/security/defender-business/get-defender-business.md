@@ -25,9 +25,9 @@ Defender for Business is a new endpoint security solution designed especially fo
 
 If you don't already have Microsoft Defender for Business, you can choose from several options:
 
-- [Try or buy the standalone version of Defender for Business](#try-or-buy-microsoft-defender-for-business).
-- [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium), which now includes Defender for Business.
-- [Work with a Microsoft partner](#work-with-a-microsoft-partner) who can help you get everything set up and configured.
+- Try or buy the standalone version of Defender for Business.
+- Get Microsoft 365 Business Premium, which includes Defender for Business.
+- Work with a Microsoft partner who can help you get everything set up and configured.
 
 # [Try or buy Defender for Business](#tab/tryorbuy)
 
@@ -88,8 +88,6 @@ Microsoft has a list of solution providers who are authorized to sell offerings,
 3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
 ---
-
-
 
 ## Portals you'll use for setup and management
 
