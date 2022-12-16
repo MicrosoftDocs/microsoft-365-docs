@@ -40,7 +40,11 @@ The detailed report shows you when and how much content containing credit card n
   
 To help protect the sensitive information, the default DLP policy:
   
-- Detects when content in Exchange, SharePoint, and OneDrive that contains at least one credit card number is shared with people outside your organization.
+- Detects when content in Exchange, SharePoint, and OneDrive that contains at least one of the following sensitive information is shared with people outside your organization.
+  - Credit Card Number
+  - Content containing source code (as matched by our Source Code trainable classifier)
+  - Content matching our U.S HIPAA Enhanced template
+  - Content containing Intellectual Property (as matched by our IP, Project Documents, M&A Files, Software Product developement files, IT Infra and Network Security Documents, and Strategic planning documents trainable classifiers)
     
 - Shows a policy tip and sends an email notification to users when they attempt to share this sensitive information with people outside your organization. For more information on these options, see [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md).
     
