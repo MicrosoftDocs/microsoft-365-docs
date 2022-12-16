@@ -324,7 +324,7 @@ Similarly, allow up to 7 days for retention labels to be visible in apps after y
 
 Often, the policies will take effect and labels will be visible quicker than 7 days. But with many potential variables that can impact this process, it's best to plan for the maximum of 7 days.
 
-## Adaptive policy scopes for compliance solutions
+## Adaptive or static scopes for retention
 
 When you create a retention policy or retention label policy, you must choose between adaptive and static to define the scope of the policy.
 
@@ -338,17 +338,13 @@ When you create a retention policy or retention label policy, you must choose be
 
     OneDrive URLs are particularly challenging to reliably specify because by default, these URLs aren't created until the user accesses their OneDrive for the first time. And if a user's UPN changes, which you might not know about, their OneDrive URL automatically changes.
 
-Advantages of using adaptive scopes:
+Advantages of using adaptive scopes over static scopes:
 
 - No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive policies are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
 
-- More powerful targeting for your retention requirements. For example, you can assign different retention settings to users according to their geographical location by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
-
-- Query-based membership provides resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
-
-- A single retention policy can include locations for both Microsoft Teams and Yammer, whereas when you use a static scope, these locations require their own retention policy.
-
 - You can apply specific retention settings to just inactive mailboxes. This configuration isn't possible with a static scope because at the time the policy is assigned, static scopes don't support the specific inclusion of recipients with inactive mailboxes.
+
+For more advantages of using adaptive scopes, see [Adaptive scopes](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
 
 Advantages of using static scopes:
 

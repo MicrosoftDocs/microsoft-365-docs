@@ -1,5 +1,5 @@
 ---
-title: "Adaptive scopes for compliance solutions"
+title: "Adaptive scopes"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,28 +18,30 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Learn about Microsoft Purview adaptive scopes for compliance solutions.
+description: Learn about Microsoft Purview adaptive scopes for policies.
 ---
 
-# Adaptive scopes for compliance solutions
+# Adaptive scopes
 
-When you create a compliance policy, you create or add an adaptive scope for the policy. A single compliance policy can have one or many adaptive scopes.
+When you create a communications compliance policy or a policy for retention, you can create or add an adaptive scope for your policy. A single policy can have one or many adaptive scopes.
 
-- An adaptive scope uses a query that you specify, so you can define the membership of users or groups included in that query. These dynamic queries run daily against the attributes or properties that you specify for the selected scope. You can use one or more adaptive scopes with a single communication compliance policy.
+- An adaptive scope uses a query that you specify, so you can define the membership of users or groups included in that query. These dynamic queries run daily against the attributes or properties that you specify for the selected scope. You can use one or more adaptive scopes with a single policy.
 
 - For example, you can assign different policy settings to users according to their department by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
 
 ## Advantages of using adaptive scopes
 
-These advantages include: 
+The advantages of using adaptive scopes include: 
 
 - No limits on the number of items per policy. Although adaptive policies are still subject to the maximum number of policies per tenant limitations, the more flexible configuration will likely result in far fewer policies.
 
-- Powerful targeting for your communication policy requirements. For example, you can create an adaptive scope to define a custom distribution group for a specific communication policy. 
+- Powerful targeting for your policy requirements. For example, you can create an adaptive scope to define a custom distribution group for a specific policy. 
 
 - Query-based scopes provide resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 
-- A single communication compliance policy can include locations for both Microsoft Teams and Yammer, whereas when you don’t use an adaptive scope, each location requires its own policy.
+- A single policy can include locations for both Microsoft Teams and Yammer, whereas when you don’t use an adaptive scope, each location requires its own policy.
+
+For specific advantages of using adaptive scopes specific to policies for retention, see [Learn about retention policies and retention labels](retention.md#adaptive-or-static-scopes-for-retention).
 
 > [!IMPORTANT]
 > Adaptive scopes don't currently support public Teams channels. Also, the Skype for Business and Exchange public folder locations don't support adaptive scopes. 
@@ -50,7 +52,7 @@ To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptiv
 
 ### Maximums for adaptive policy scopes
 
-There's no limit to the number of adaptive policy scopes that you can add to a compliance policy, but there are some maximum limits for the query that defines each adaptive scope:
+There's no limit to the number of adaptive policy scopes that you can add to a policy, but there are some maximum limits for the query that defines each adaptive scope:
 
 - String length for attribute or property values: 200
 - Number of attributes or properties without a group, or within a group: 10
@@ -90,8 +92,9 @@ Before you configure your adaptive scope, use the previous section to identify w
 Specifically for SharePoint sites, there might be additional SharePoint configuration needed if you plan to use [custom site properties](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com/) using credentials for an admin account in your Microsoft 365 organization.
-2. In the compliance portal, select the **Adaptive scopes** tab and then **+ Create scope**.
-3. Follow the prompts in the configuration to first select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
+2. In the compliance portal, select **Data lifecycle management** or **Communication compliance**.
+3. Select the **Adaptive scopes** tab, and then **+ Create scope**.
+4. Follow the prompts in the configuration to first select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
     
     For example, to configure an adaptive scope that will be used to identify users in Europe, first select **Users** as the scope type, and then select the **Country or region** attribute, and type in **Europe**:
     
