@@ -29,6 +29,21 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 - [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium), which now includes Defender for Business.
 - [Work with a Microsoft partner](#work-with-a-microsoft-partner) who can help you get everything set up and configured.
 
+# [Try or buy](#tab/tryorbuy)
+
+stuff
+
+# [Get Microsoft 365 Business Premium](#tab/premium)
+
+stuff
+
+# [Work with a partner](#tab/partner)
+
+stuff
+
+---
+
+
 ## Try or buy Microsoft Defender for Business
 
 > [!IMPORTANT]
