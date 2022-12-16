@@ -63,7 +63,7 @@ When you configure IB, you'll work with several objects and concepts.
 - **Segments** are sets of groups or users that are defined in the compliance portal or by using PowerShell that use selected group or user account attributes. Your organization can have up to 5,000 segments and users can be assigned to multiple segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
 
     > [!IMPORTANT]
-    > Support for 5,000 segments and assigning users to multiple segments is only available in the newest version of information barriers (enabling information barriers in your organization after January 31, 2023). <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
+    > Support for 5,000 segments and assigning users to multiple segments is only available when enabling information barriers in your organization after January 31, 2023. <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
 
 - **IB policies** determine communication limits or restrictions. When you define IB policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
@@ -165,6 +165,10 @@ If you want to support assigning users to multiple segments......
 If enable multiple segment, cannot revert to single segment.
 
 STEPS FOR CONFIGURING SET-ORGANIZATION cmdlet with InformationBarrierMode to MultiAllow
+
+```powershell
+Set-Organization <exampledomain.com> -InformationBarrierMode MultiAllow
+```
 
 ### Define segments using the compliance portal
 
@@ -432,9 +436,14 @@ For more information about IB modes and how they're configured across services, 
 
 ## Step 7: Configure user discoverability for information barriers (optional)
 
+Information barriers policies allow administrators to enable or disable search restrictions in the people picker. IB policy will block two users will also restrict people search capability.
 
+> [!IMPORTANT]
+> Support for enabling or disabling search restrictions is only available when enabling information barriers in your organization after January 31, 2023. <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and cannot enable or disable search restrictions. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
 
-IB policies aren't in effect until you set them to active status and apply the policies.
+Administrators could choose to disable the people search restriction using Security & Compliance Center PowerShell cmdlet Set-PolicyConfig:
+
+Set-PolicyConfig –InformationBarrierPeopleSearchRestriction “Disabled” 
 
 ## Example scenario 1: Contoso's departments, segments, and policies
 
@@ -490,7 +499,7 @@ When the cmdlet finishes, Contoso is compliant with industry requirements.
 
 ## Example scenario 2: North Schools District's schools, segments, and policies
 
-Intro
+NOTE - THIS IS AN 'EXAMPLE OF AN EXAMPLE' TO EMPHASIZE SUPPORT FOR THE DUTY OF CARE REQUIREMENTS. THIS INFORMATION CAN STAY HERE OR BE INCLUDED IN THE EDU CONTENT. IF IT STAYS HERE, THE INFORMATION BELOW WILL BE COMPLETED.
 
 ### North School District's schools and plan
 
