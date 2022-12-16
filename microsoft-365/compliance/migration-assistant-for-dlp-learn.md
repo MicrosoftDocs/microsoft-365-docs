@@ -42,7 +42,7 @@ The migration assistant helps with some of the tasks involved in a DLP migration
 
 The following diagram illustrates the migration process:
 
-:::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of migration assistant for DLP":::
+:::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of migration assistant for DLP.":::
 
 Each time the migration assistant runs, it follows these five phases:
 

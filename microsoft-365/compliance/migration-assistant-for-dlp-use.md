@@ -56,41 +56,41 @@ After you've installed and launched the migration assistant for Microsoft Purvie
 >
 > For all subsequent launches, you may launch the migration assistant normally and don't need to run as administrator.
 
-:::image type="content" source="../media/migration-assistant-run-as-admin.png" alt-text="Screenshot of the migration assistant Run as administrator dialog box":::
+:::image type="content" source="../media/migration-assistant-run-as-admin.png" alt-text="Screenshot of the migration assistant Run as administrator dialog box.":::
 
 1. You'll be greeted with a welcome screen.
     1. Click the **Get Started** button and the migration assistant will check if your environment is set up correctly.
-     :::image type="content" source="../media/migration-assistant-get-started-screen.png" alt-text="Screenshot of MAMPD Get Started screen":::
+     :::image type="content" source="../media/migration-assistant-get-started-screen.png" alt-text="Screenshot of MAMPD Get Started screen.":::
      2. Click **Next**.
-     :::image type="content" source="../media/migration-assistant-environment-setup.png" alt-text="Screenshot of MAMPD setup":::
+     :::image type="content" source="../media/migration-assistant-environment-setup.png" alt-text="Screenshot of MAMPD setup.":::
 2. You'll be taken to the Login screen.
     1. Enter your username and click **Login**.
-     :::image type="content" source="../media/migration-assistant-username-entry.png" alt-text="Screenshot of the MAMPD username input":::
+     :::image type="content" source="../media/migration-assistant-username-entry.png" alt-text="Screenshot of the MAMPD username input.":::
     2. Enter your password in the browser window that opens and click **Sign in**.
-     :::image type="content" source="../media/migration-assistant-login-complete.png" alt-text="Screenshot of entering MAMPD password":::
+     :::image type="content" source="../media/migration-assistant-login-complete.png" alt-text="Screenshot of entering MAMPD password.":::
 3. You need to wait until your login is validated. Simultaneously, the migration assistant fetches information that will be required in later stages of the migration process.
-   :::image type="content" source="../media/login-fetching-details.png" alt-text="Screenshot of teh screen fetching details":::
+   :::image type="content" source="../media/login-fetching-details.png" alt-text="Screenshot of the screen fetching details.":::
 4. Once you're logged in, click anywhere on the tool window. The **Next** button should now be enabled.
 
    You can click on **Next** and move to the next step in the migration process.
-   :::image type="content" source="../media/login-next-page-mampd.png" alt-text="Screenshot of completion of fetching MAMPD login details":::
+   :::image type="content" source="../media/login-next-page-mampd.png" alt-text="Screenshot of completion of fetching MAMPD login details.":::
 
 ### Step 2: Upload your Symantec policy
 
 You need to upload your Symantec DLP policy exports, which act as input for the migration assistant. The policies you upload will be the ones that will be migrated to the Microsoft DLP platform.
 
 1. To upload the files, you need to click on **Browse** button.
- :::image type="content" source="../media/upload-dlp-files.png" alt-text="Screenshot of uploading DLP files by clicking Browse":::
+ :::image type="content" source="../media/upload-dlp-files.png" alt-text="Screenshot of uploading DLP files by clicking Browse.":::
 2. Select the required policy files in the File Explorer pop-up window and click **Open**.
      1. You can select more than one XML file to migrate multiple policies at a time. Based on our initial engagement with some customers, we've learned that it's best to migrate anywhere from one to three policies at a time to avoid confusion during later stages of the migration process.
 
          > [!NOTE]
          > Ensure that the XML files you upload are Symantec DLP policy exports only and no other kind of XML.
 
-        :::image type="content" source="../media/save-as-xml.png" alt-text="Screenshot of saving DLP as XML":::
+        :::image type="content" source="../media/save-as-xml.png" alt-text="Screenshot of saving DLP as XML.":::
 3. The tool will show you a list of your selected input policy files.
      1. If you wish to deselect a previously selected policy file, you can click the delete icon corresponding to that policy.
-      :::image type="content" source="../media/upload-dlp-policies.png" alt-text="Screenshot of uploading DLP Policies to migrate":::
+      :::image type="content" source="../media/upload-dlp-policies.png" alt-text="Screenshot of uploading DLP Policies to migrate.":::
 4. Once you've completed with the selection of policy files you wish to migrate, click **Next** and move to the next step.
 
 ### Step 3: Edit policy settings
@@ -100,7 +100,7 @@ Once you input the policies you want to migrate, the migration assistant will pr
 > [!IMPORTANT]
 > There may be some items that may need your review and will be marked with 'warning symbol'.
 
- :::image type="content" source="../media/edit-policy-settings.png" alt-text="Screenshot of editing DLP policy settings":::
+ :::image type="content" source="../media/edit-policy-settings.png" alt-text="Screenshot of editing DLP policy settings.":::
 
 #### Keywords, Data Identifiers and Regular expressions
 
@@ -135,7 +135,7 @@ All other response rules in Symantec are currently not supported by the migratio
 
 1. You'll be able to see a list of all your policies and rules within them along with their status. You can select different policies from the left column to see Details for each policy.
     1. By default, the tool will display all items that need review. You can toggle to see all items in a given policy by choosing the **Show All Items** button at the top of the Details section.
-      :::image type="content" source="../media/edit-policy-settings-mampd.png" alt-text="Screenshot of Show All Items":::
+      :::image type="content" source="../media/edit-policy-settings-mampd.png" alt-text="Screenshot of Show All Items.":::
 2. Policy Details
     1. Policy Name - You can edit the name of the policy before migration.
     2. Each policy will be divided into two sections:
@@ -164,16 +164,16 @@ All other response rules in Symantec are currently not supported by the migratio
 
 3. Editing a row element:
 
-   :::image type="content" source="../media/edit-row-edit-policy-settings-dlp.png" alt-text="Screenshot of editing a row in Edit Policy Settings":::
+   :::image type="content" source="../media/edit-row-edit-policy-settings-dlp.png" alt-text="Screenshot of editing a row in Edit Policy Settings.":::
 
     1. When you click **Edit** button for one or more row elements, you'll be navigated to an Edit screen with more details about that row element.
-      :::image type="content" source="../media/save-sensitive-information.png" alt-text="Screenshot of editing Sensitive Information Type":::
+      :::image type="content" source="../media/save-sensitive-information.png" alt-text="Screenshot of editing Sensitive Information Type.":::
     2. If there’s any issue, it will be reported by a yellow banner at the top of the screen.
     3. You may need to make changes to the content in the editable sections, and those changes will be incorporated at the time of migration. 
     - Once you resolve the issues in the content, the yellow banner will disappear.
     4. Use existing SITs from tenant to auto replace current SIT.
     - You may choose to replace the current SIT (which is being edited) with another SIT from your tenant.
-         :::image type="content" source="../media/sit-content.png" alt-text="Screenshot of editing SIT content":::
+         :::image type="content" source="../media/sit-content.png" alt-text="Screenshot of editing SIT content.":::
     - You can manually change any of the mappings if you wish to, by clicking on the corresponding row in the ‘Target’ column.
     This will open a drop-down list with all the out-of-box SITs (OOB SITs) and all the custom SITs (if any) that you may have previously created. You can choose the option to which you wish to map to the ‘Source’ row item. Alternatively, you can also choose the option ‘New SIT’ from the drop-down and the migration assistant will bring over the Source SIT as a new Custom SIT.
 
@@ -191,7 +191,7 @@ All other response rules in Symantec are currently not supported by the migratio
 
 The migration assistant will provide you with a pre-migration feasibility report showing overall coverage & migration feasibility at the policy level.
 
- :::image type="content" source="../media/review-dlp-policies.png" alt-text="Screenshot of Review your Policies":::
+ :::image type="content" source="../media/review-dlp-policies.png" alt-text="Screenshot of Review your Policies.":::
 
 1. The pre-migration feasibility report shows:
     - Migration Summary
@@ -211,7 +211,7 @@ The migration assistant will provide you with a pre-migration feasibility report
 
 After you've completed all the previous steps, your Symantec DLP policy is ready to be imported to Microsoft DLP platform.
 
- :::image type="content" source="../media/start-migration.png" alt-text="Screenshot of DLP Policy migration":::
+ :::image type="content" source="../media/start-migration.png" alt-text="Screenshot of DLP Policy migration.":::
 
 1. You need to choose whether to turn on or off the imported policies before the policies are imported. There are three options you can choose from:
     - Turn on policy immediately.
@@ -237,9 +237,9 @@ In this step, the migration assistant will work on creating policies in Microsof
     > [!NOTE]
     > Refrain from closing the tool window while policies are being created as it may cause incomplete SITs and policies which may require you to manually clean up later.
 
-    :::image type="content" source="../media/migration-dlp-progress.png" alt-text="Screenshot of the Migration in process":::
+    :::image type="content" source="../media/migration-dlp-progress.png" alt-text="Screenshot of the Migration in process.":::
 2. In case an error occurs during migration, you can choose an action to perform.
-    :::image type="content" source="../media/errors-migration-options.png" alt-text="Screenshot of errors that can occur during Migration process":::
+    :::image type="content" source="../media/errors-migration-options.png" alt-text="Screenshot of errors that can occur during Migration process.":::
     You'll have to click on one of these options:
     - **Try Again**: Policy creation will be attempted again.
     - **Roll back all changes**: All SITs and policies for that session will be deleted.
@@ -250,13 +250,13 @@ In this step, the migration assistant will work on creating policies in Microsof
     >
     >This long duration is because, first the created policies are deleted which take a while to reflect on the MIP platform. Following that, the underlying sensitive information types (SITs) are deleted. Everything cannot be deleted at once since SITs being used in any policy cannot be deleted until that policy exists.
 3. Once the policies are migrated, click **Next** to view the migration report.
-    :::image type="content" source="../media/all-set-migration.png" alt-text="Screenshot of Migration process complete":::
+    :::image type="content" source="../media/all-set-migration.png" alt-text="Screenshot of Migration process complete.":::
 
 ### Step 7: View your migration report
 
 Once your policies are imported and the migration process is complete, then you can view the migration report.
 
- :::image type="content" source="../media/migration-report.png" alt-text="Screenshot of migration report":::
+ :::image type="content" source="../media/migration-report.png" alt-text="Screenshot of migration report.":::
 
 For each session, a separate report is generated. We define a session from when the user launches the app, and the session ends when migration process is completed, or user exits the app.
 
@@ -270,7 +270,7 @@ You can use the **Save Technical Report** button to save a more detailed excel-b
 
 **Overview Sheet:** As the name suggests, it provides an overview of the migration session.
 
-:::image type="content" source="../media/overview-sheet-dlp-migration.png" alt-text="Screenshot of the Overview-excel":::
+:::image type="content" source="../media/overview-sheet-dlp-migration.png" alt-text="Screenshot of the Overview-excel.":::
 
 It provides the following information:
 
@@ -281,7 +281,7 @@ It provides the following information:
 
 **Policy Details:** This sheet provides a more detailed view of each migrated (or output) policy created or not created.
 
-:::image type="content" source="../media/creation-of-policy-status.png" alt-text="Screenshot of Policy creation status-excel":::
+:::image type="content" source="../media/creation-of-policy-status.png" alt-text="Screenshot of Policy creation status-excel.":::
 
 It provides the following information:
 
@@ -294,7 +294,7 @@ It provides the following information:
 
 **SIT Details:** This sheet provides information about all the sensitive information types (SITs) that were migrated.
 
-:::image type="content" source="../media/sit-migration.png" alt-text="Screenshot of SITs migrated-excel":::
+:::image type="content" source="../media/sit-migration.png" alt-text="Screenshot of SITs migrated-excel.":::
 
 It provides the following information:
 

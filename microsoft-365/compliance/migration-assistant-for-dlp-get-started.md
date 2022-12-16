@@ -71,19 +71,19 @@ Follow these steps to install the migration assistant for Microsoft Purview DLP:
 
 1. Download and launch **[MigrationAssistantforMicrosoftPurviewDLP.msi]( https://aka.ms/DLPMigrationAssistant)** file.
 2. The following dialog box will open. Click **Next**.
-     :::image type="content" source="../media/migration-assistant-for-dlp-dialog-box.png" alt-text="Screenshot of the dialog box for migration assistant tool":::
+     :::image type="content" source="../media/migration-assistant-for-dlp-dialog-box.png" alt-text="Screenshot of the dialog box for migration assistant tool.":::
 3. Review the End-User License Agreement.
-     :::image type="content" source="../media/migration-assistant-for-dlp-license-agreement.png" alt-text="Screenshot of End user license agreement of migration assistant tool":::
+     :::image type="content" source="../media/migration-assistant-for-dlp-license-agreement.png" alt-text="Screenshot of End user license agreement of migration assistant tool.":::
 4. After reviewing, accept the License Agreement and click **Next**.
-     :::image type="content" source="../media/migration-assistant-for-dlp-license-agreement-accept.png" alt-text="Screenshot of ticking the acceptance box of Migration tool agreement":::
+     :::image type="content" source="../media/migration-assistant-for-dlp-license-agreement-accept.png" alt-text="Screenshot of ticking the acceptance box of Migration tool agreement.":::
 5. Select the location where you want to install the migration assistant and click **Next**.
-     :::image type="content" source="../media/migration-assistant-for-dlp-installation-path.png" alt-text="Screenshot of folder path for migration assistant installation":::
+     :::image type="content" source="../media/migration-assistant-for-dlp-installation-path.png" alt-text="Screenshot of folder path for migration assistant installation.":::
 6. Once installer is ready, click **Install** to begin installation.
-     :::image type="content" source="../media/migration-assistant-for-dlp-install-dialog-box.png" alt-text="Screenshot of migration assistant installation dialog box ":::
+     :::image type="content" source="../media/migration-assistant-for-dlp-install-dialog-box.png" alt-text="Screenshot of migration assistant installation dialog box. ":::
 7. Wait while the migration assistant is being installed.
-     :::image type="content" source="../media/migration-assistant-for-dlp-installation-status.png" alt-text="Screenshot of migration assistant installation status":::
+     :::image type="content" source="../media/migration-assistant-for-dlp-installation-status.png" alt-text="Screenshot of migration assistant installation status.":::
 8. Once migration assistant is installed, click on **Finish** and close the dialog box.
-    :::image type="content" source="../media/migration-assistant-for-dlp-finish-installation.png" alt-text="Screenshot of migration assistant installation completion":::
+    :::image type="content" source="../media/migration-assistant-for-dlp-finish-installation.png" alt-text="Screenshot of migration assistant installation completion.":::
 
 ## Next steps
 
