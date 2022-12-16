@@ -29,6 +29,8 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 - Get Microsoft 365 Business Premium, which includes Defender for Business.
 - Work with a Microsoft partner who can help you get everything set up and configured.
 
+## How to get Microsoft Defender for Business
+
 # [Try or buy Defender for Business](#tab/tryorbuy)
 
 > [!IMPORTANT]
@@ -36,29 +38,26 @@ If you don't already have Microsoft Defender for Business, you can choose from s
 
 1. Go to the [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) web page, and select an option to try or buy Defender for Business. Fill in the requested information.
 
-   > [!TIP]
-   > If you're starting a trial, look for your acceptance email, which contains your promo code. And be sure to see the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
+   If you're starting a trial, look for your acceptance email, which contains your promo code and a link to sign in. And be sure to see the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
 
 2. If you're adding Defender for Business to an existing Microsoft 365 subscription, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and then sign in using your existing work or school account. Or, follow the prompts to create a new account, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and then sign in using your new account. 
 
 3. In the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), review your recommendations, and then proceed to step 4. 
 
-   If you have Microsoft 365 Business Premium, but haven't set it up yet, skip over to [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). This guidance walks you through how to set up and configure everything, including Defender for Business.
+   If you have Microsoft 365 Business Premium, but haven't set it up yet, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). This guidance walks you through how to set up and configure everything, including Defender for Business.
 
-   > [!TIP]
-   > If you're brand new to Microsoft 365, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
+   If you're brand new to Microsoft 365, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
 
 4. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and in the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. You'll know this process has started when you see a message like what's displayed in the following screenshot:
 
    :::image type="content" source="media/mdb-hangon-provisioning.png" alt-text="Screenshot of provisioning message in Defender for Business.":::
 
-   > [!NOTE]
-   > It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
+   It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
 
 
 # [Get Microsoft 365 Business Premium](#tab/premium)
 
-Microsoft 365 Business Premium includes Defender for Business and Microsoft Defender for Office 365 Plan 1. Microsoft 365 Business Premium also includes Microsoft 365 Apps (formerly referred to as Office apps) and advanced anti-spam, anti-phishing, and anti-malware protection. See [Productivity and security for small and medium-sized businesses](../../business-premium/m365bp-secure-users.md).
+Microsoft 365 Business Premium includes Defender for Business and Microsoft Defender for Office 365 Plan 1. Microsoft 365 Business Premium also includes Microsoft 365 Apps (formerly referred to as Office apps) and advanced anti-spam, anti-phishing, and anti-malware protection. For more information, see [Productivity and security for small and medium-sized businesses](../../business-premium/m365bp-secure-users.md).
 
 1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
