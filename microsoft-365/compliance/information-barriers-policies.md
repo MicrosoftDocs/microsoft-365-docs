@@ -61,6 +61,12 @@ When you configure IB, you'll work with several objects and concepts.
 
 - **User account attributes** are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. You'll assign users or groups to segments with these attributes.
 - **Segments** are sets of groups or users that are defined in the compliance portal or by using PowerShell that use selected group or user account attributes. Your organization can have up to 5,000 segments and users can be assigned to multiple segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
+
+    > [!IMPORTANT]
+    > Support for 5,000 segments and assigning users to multiple segments is only supported in information barriers v2. Organizations that have configured IB prior to December 31, 2022 are on the older version of IB and the maximum number of segments supported 250 and user are restricted to being assigned to only one segment.
+
+    > If you are an organization with an existing IB configuration and would like to migrate to the newest version of IB, see the following guidance for ......
+
 - **IB policies** determine communication limits or restrictions. When you define IB policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
   - *Allow* policies allow one segment to communicate with only certain other segments.
@@ -97,7 +103,9 @@ In addition to the required subscriptions and permissions, make sure that the fo
 
 - **Verify audit logging is enabled**: In order to look up the status of an IB policy application, audit logging must be turned on. Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step. For more information, see [Turn the audit log search on or off](audit-log-enable-disable.md).
 
-- **Remove existing Exchange Online address book policies**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
+- **Remove existing Exchange Online address book policies (optional)**: CHANGES
+
+- IB V1 NOTE - Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
 - **Manage using PowerShell (optional)**: IB segments and policies can be defined and managed in the compliance portal, bu you can also use the Office 365 Security & Compliance PowerShell if preferred or needed. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters if you choose to use PowerShell to configure and manage IB segments and policies. You'll also need the Azure Active Directory PowerShell module if you choose this configuration option.
   - [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
@@ -150,6 +158,14 @@ Determine which attributes in your organization's directory data you'll use to d
 
 > [!IMPORTANT]
 > **Before you proceed to the next section, make sure your directory data has values for attributes that you can use to define segments**. If your directory data does not have values for the attributes you want to use, then the user accounts must be updated to include that information before you proceed with configuring IB. To get help with this, see the following resources:<br/>- [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+
+### Enable multiple segment support for users (optional)
+
+If you want to support assigning users to multiple segments......
+
+If enable multiple segment, cannot revert to single segment.
+
+STEPS FOR CONFIGURING SET-ORGANIZATION cmdlet with InformationBarrierMode to MultiAllow
 
 ### Define segments using the compliance portal
 
@@ -414,6 +430,12 @@ For more information about IB modes and how they're configured across services, 
 - [Information barriers modes and Microsoft Teams](/microsoftteams/information-barriers-in-teams)
 - [Information barriers modes and OneDrive](/onedrive/information-barriers)
 - [Information barriers modes and SharePoint](/sharepoint/information-barriers)
+
+## Step 7: Configure user discoverability for information barriers (optional)
+
+
+
+IB policies aren't in effect until you set them to active status and apply the policies.
 
 ## Example scenario: Contoso's departments, segments, and policies
 
