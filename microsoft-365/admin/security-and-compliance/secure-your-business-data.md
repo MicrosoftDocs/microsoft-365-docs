@@ -1,5 +1,5 @@
 ---
-title: Top 10 ways to secure your business
+title: Top 10 ways to secure your business data
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -8,8 +8,8 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
-ms.subservice: other
-ms.date: 09/15/2022
+ms.subservice: m365bp
+ms.date: 12/16/2022
 ms.localizationpriority: medium
 ms.collection:
 - highpri
