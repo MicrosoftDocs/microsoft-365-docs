@@ -28,7 +28,7 @@ ms.collection:
 
 ## How to get Microsoft Defender for Business
 
-If you don't already have Microsoft Defender for Business, you can choose from several options:
+To get Defender for Business, you can choose from several options:
 
 - Try or buy the standalone version of Defender for Business.
 - Get Microsoft 365 Business Premium, which includes Defender for Business.
