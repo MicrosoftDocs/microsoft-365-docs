@@ -76,13 +76,13 @@ There are two subgroups in the eDiscovery Manager role group. The difference bet
 
   Because of the broad scope of access, an organization should have only a few admins who are members of the eDiscovery Administrators subgroup.
 
-For more information about eDiscovery permissions and a description of each role that's assigned to the eDiscovery Manager role group, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+For more information about eDiscovery permissions and a description of each role that's assigned to the eDiscovery Manager role group, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
 
 ## Step 3: Configure global settings for eDiscovery (Premium)
 
 The last step to complete before people in your organization start to create and use cases is to configure global settings that apply to all cases in your organization. At this time, the only global setting is *attorney-client privilege detection* (more global settings will be available in the future). This setting enables the attorney-client privilege model to run when you analyze data in a review set. The model uses machine learning to determine the likelihood that a document contains content that is legal in nature. It also compares the participants of documents with an attorney list (that you submit when setting up the model) to determine if a document has at least one participant who is an attorney.
 
-For more information about setting up and using the attorney-client privilege detection model, see [Set up attorney-client privilege detection in eDiscovery (Premium)](attorney-privilege-detection.md).
+For more information about setting up and using the attorney-client privilege detection model, see [Set up attorney-client privilege detection in eDiscovery (Premium)](ediscovery-attorney-privilege-detection.md).
 
 > [!NOTE]
 > This is an optional step that you can perform anytime. Not implementing the attorney-client privilege detection model doesn't prevent you from creating and using eDiscovery (Premium) cases.

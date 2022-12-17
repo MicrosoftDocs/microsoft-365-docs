@@ -27,7 +27,7 @@ description: "Create and manage inactive mailboxes that retain the contents of d
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Inactive mailboxes let you retain former employees' email after they leave your organization and can be accessed by authorized people who have been granted [eDiscovery permissions](assign-ediscovery-permissions.md) for compliance or legal reasons. For example, administrators, compliance officers, and records managers who can then use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
+Inactive mailboxes let you retain former employees' email after they leave your organization and can be accessed by authorized people who have been granted [eDiscovery permissions](ediscovery-assign-permissions.md) for compliance or legal reasons. For example, administrators, compliance officers, and records managers who can then use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
 
 For more information about inactive mailboxes, see [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
 

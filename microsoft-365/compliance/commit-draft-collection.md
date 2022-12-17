@@ -54,7 +54,7 @@ When you're satisfied with the items you've collected in a collection estimate a
        B. **Cloud attachments**: Select this option to include modern attachments or linked files when the collection results are added to the review set. This means the target file of a modern attachment or linked file is added to the review set.
 
        > [!NOTE]
-       > The two options to collect contextual Teams and Yammer messages and cloud attachments are selected by default (and grayed out) for cases that were created using the new case format. For more information, see [Use the new case format](advanced-ediscovery-new-case-format.md).
+       > The two options to collect contextual Teams and Yammer messages and cloud attachments are selected by default (and grayed out) for cases that were created using the new case format. For more information, see [Use the new case format](ediscovery-new-case-format.md).
 
        C. **Partially indexed items**: Select this option to add partially indexed items from additional data sources to the review set. If the collection searched additional data sources (as specified on the **Additional locations** page in the collections wizard), there may be partially indexed items from these locations that you want to add to the review set. Custodial and non-custodial data sources typically don't have partially indexed items. That's because the Advanced indexing process reindexes items when custodial and non-custodial data sources are added to a case. Also, Adding partially indexed items will increase the number of items added to the review set.
 

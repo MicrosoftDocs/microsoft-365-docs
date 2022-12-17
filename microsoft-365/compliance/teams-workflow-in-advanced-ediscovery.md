@@ -69,7 +69,7 @@ The first step to managing Teams content in eDiscovery (Premium) is to create a 
 
 - Collections up to 1 TB can be added to review sets, which let you collect and amounts large amounts of Teams content in a case.
 
-For more information about the increased case limits, see [Use the new case format in eDiscovery (Premium)](advanced-ediscovery-new-case-format.md).
+For more information about the increased case limits, see [Use the new case format in eDiscovery (Premium)](ediscovery-new-case-format.md).
 
 To create a case:
 
@@ -122,7 +122,7 @@ To add custodians to a case and preserve custodial data sources:
 
 For more information about adding and preserving data sources in an eDiscovery (Premium) case, see:
 
-- [Add custodians to an eDiscovery (Premium) case](add-custodians-to-case.md)
+- [Add custodians to an eDiscovery (Premium) case](ediscovery-add-custodians-to-case.md)
 
 - [Add non-custodial data sources to an eDiscovery (Premium) case](non-custodial-data-sources.md)
 
@@ -164,7 +164,7 @@ To create a collection of Teams content:
 
 7. If you previously followed the steps to add Teams content as custodian data sources, you can skip this step and select **Next**. Otherwise, on the **Additional locations** wizard page, you can add other data sources to search in the collection. For example, you could add the mailbox and site for a team that wasn't added as a custodial or non-custodial data source. Otherwise, select **Next** and skip this step.
 
-8. On the **Conditions** wizard page, configure the search query to collect Teams content from the data sources that you specified on the previous wizard pages. You can use various keywords and search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](building-search-queries.md).
+8. On the **Conditions** wizard page, configure the search query to collect Teams content from the data sources that you specified on the previous wizard pages. You can use various keywords and search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](ediscovery-building-search-queries.md).
 
    To help ensure the most comprehensive collection of Teams chat conversations (including 1:1, group, and channel chats) use the **Type** condition and select the **Instant messages** option. We also recommend including a date range or several keywords to narrow the scope of the collection to items relevant to your investigation. Here's a screenshot of a sample query using the **Type** and **Date** options:
 
@@ -174,7 +174,7 @@ To create a collection of Teams content:
 
    ![Save collection estimate or commit collection.](..\media\TeamsDraftCommitCollection.png)
 
-   1. **Save collection as draft**. Choose this option to create a collection estimate. As previously explained, a collection estimate doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(collection-statistics-reports.md)] and edit and rerun the collection estimate. When you satisfied with the result of a collection estimate, you can commit it to a review set. For more information, see [Create a collection estimate](create-draft-collection.md).
+   1. **Save collection as draft**. Choose this option to create a collection estimate. As previously explained, a collection estimate doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(ediscovery-collection-statistics-reports.md)] and edit and rerun the collection estimate. When you satisfied with the result of a collection estimate, you can commit it to a review set. For more information, see [Create a collection estimate](create-draft-collection.md).
 
    2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. The options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the new case format that you used when you initially created the case for Teams content. For more information about committing collections to a review set, see [Commit a collection estimate to a review set](commit-draft-collection.md).
 

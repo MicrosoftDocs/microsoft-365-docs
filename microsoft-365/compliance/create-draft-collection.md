@@ -29,11 +29,11 @@ After you've identified custodians and any non-custodian data sources for the ca
 
 ## Recommendations when creating collection estimates
 
-- Consider [adding custodians](add-custodians-to-case.md) and [non-custodial data sources](non-custodial-data-sources.md) to the case before you create a collection estimate.
+- Consider [adding custodians](ediscovery-add-custodians-to-case.md) and [non-custodial data sources](non-custodial-data-sources.md) to the case before you create a collection estimate.
 
     This is recommended so that you can quickly select the data sources when you create a collection estimate in the wizard. If you choose to skip adding custodians or non-custodial data sources, you'll have the option to search for these and any additional data sources (ones that haven't been added to the case as custodial or non-custodial locations) in a collection estimate for content that may be relevant to the case. These data sources might include mailboxes, SharePoint sites, and Teams. If this situation is applicable to your case, use additional locations to add these sources to your collection.
 
-- Verify that you have [permissions](/microsoft-365/compliance/assign-ediscovery-permissions) to create a collection estimate for a case.
+- Verify that you have [permissions](/microsoft-365/compliance/ediscovery-assign-permissions) to create a collection estimate for a case.
 
 ## Create a collection estimate
 
@@ -63,7 +63,7 @@ After you've identified custodians and any non-custodian data sources for the ca
 
    - To search specific content location for a service, select the corresponding **Select all** toggle in the **Status** column, and then select **Users, groups or teams** (for Exchange mailboxes) or **Choose sites** for (SharePoint and OneDrive sites) to search specific content locations.
 
-8. On the **Conditions** page, you can create the search query that is used to collect items from the data sources that you've identified in the previous wizard pages. You can search for keywords, property:value pairs, or use a keyword list. You can also add various search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](building-search-queries.md).
+8. On the **Conditions** page, you can create the search query that is used to collect items from the data sources that you've identified in the previous wizard pages. You can search for keywords, property:value pairs, or use a keyword list. You can also add various search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](ediscovery-building-search-queries.md).
 
 9. On the **Review your collection and get estimates** page, you'll see a summary of the collection estimate process. Note that the collection estimate will be saved for further review and refinement, but the results won't be automatically committed to a review set. You'll need to decide to commit to a review set later.
 
@@ -111,7 +111,7 @@ Here's a list of things you can do from the collection flyout page:
 
 - Select the **Data sources** tab to view a list of custodians and non-custodial data sources) that were searched in the collection. Any additional content locations that were search are listed under **Locations** on the **Summary** tab.
 
-- Select the **Search statistics** tab to view statistics about the collection. This includes the total number and size of items found in each service (for example, Exchange mailboxes or SharePoint sites) and a condition report that displays statistics about the number of items returned by different components of the search query used by the collection. For more information, see [Collection statistics and reports](collection-statistics-reports.md).
+- Select the **Search statistics** tab to view statistics about the collection. This includes the total number and size of items found in each service (for example, Exchange mailboxes or SharePoint sites) and a condition report that displays statistics about the number of items returned by different components of the search query used by the collection. For more information, see [Collection statistics and reports](ediscovery-collection-statistics-reports.md).
 
 - Select **Review sample** (located at the bottom of the flyout page) to preview a sample of the items returned by the collection.
 

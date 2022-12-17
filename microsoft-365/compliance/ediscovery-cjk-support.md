@@ -29,7 +29,7 @@ Microsoft Purview eDiscovery (Premium) supports double-byte character set langua
 
 - When you [tag documents in a review set](tagging-documents.md).
 
-- When you [analyze case data in a review set](analyzing-data-in-review-set.md) by using near duplicate detection, email threading, and themes analytics.
+- When you [analyze case data in a review set](ediscovery-analyzing-data-in-review-set.md) by using near duplicate detection, email threading, and themes analytics.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -37,7 +37,7 @@ Microsoft Purview eDiscovery (Premium) supports double-byte character set langua
 
 **How do I create a search to collect items that contains CJK characters?**
 
-You can use CJK characters for [keyword searches](building-search-queries.md#keyword-searches), [keyword queries and search conditions](keyword-queries-and-search-conditions.md) when searching for content in eDiscovery (Premium). Searching for CJK characters is also supported when searching for content in Microsoft Purview eDiscovery (Standard) and Content Search.
+You can use CJK characters for [keyword searches](ediscovery-building-search-queries.md#keyword-searches), [keyword queries and search conditions](keyword-queries-and-search-conditions.md) when searching for content in eDiscovery (Premium). Searching for CJK characters is also supported when searching for content in Microsoft Purview eDiscovery (Standard) and Content Search.
 
 We provide CJK support for all [search operators](keyword-queries-and-search-conditions.md#search-operators) and [search conditions](keyword-queries-and-search-conditions.md#search-conditions), including the boolean operators **AND**, **OR**, **NOT**, and **NEAR**.
 

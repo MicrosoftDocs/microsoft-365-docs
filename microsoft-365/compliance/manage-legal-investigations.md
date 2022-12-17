@@ -35,7 +35,7 @@ eDiscovery cases let you control who can create, access, and manage eDiscovery c
   
 - [Manage your eDiscovery workflow](./get-started-core-ediscovery.md) by creating and using eDiscovery cases for every legal investigation your organization has to undertake.
 
-- [Assign eDiscovery permissions](assign-ediscovery-permissions.md) to control who can create and manage eDiscovery cases in your organization.
+- [Assign eDiscovery permissions](ediscovery-assign-permissions.md) to control who can create and manage eDiscovery cases in your organization.
 
 - [Set up compliance boundaries](set-up-compliance-boundaries.md) to control the user content locations that eDiscovery managers can search.
 
@@ -69,7 +69,7 @@ Here's a quick overview of the built-in workflow in eDiscovery (Premium). For mo
 
 - [View](view-documents-in-review-set.md) documents, [query](review-set-search.md) data, and [tag](tagging-documents.md) items in a review set.
 
-- [Analyze case data](analyzing-data-in-review-set.md) with advanced analytics tools.
+- [Analyze case data](ediscovery-analyzing-data-in-review-set.md) with advanced analytics tools.
 
 - [Export case data](exporting-data-ediscover20.md) for review by outside counsel.
 

@@ -27,7 +27,7 @@ You can use eDiscovery (Premium) and the Microsoft Graph Explorer to search for 
 
 ## Before you search and purge chat messages
 
-- To create an eDiscovery (Premium) case and use collections to search for chat messages, you have to be a member of the *eDiscovery Manager* role group in the Microsoft Purview compliance portal. To delete chat messages, you have to be assigned the *Search And Purge* role. This role is assigned to the *Data Investigator* and *Organization Management* role groups by default. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To create an eDiscovery (Premium) case and use collections to search for chat messages, you have to be a member of the *eDiscovery Manager* role group in the Microsoft Purview compliance portal. To delete chat messages, you have to be assigned the *Search And Purge* role. This role is assigned to the *Data Investigator* and *Organization Management* role groups by default. For more information, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
 - Search and purge are supported for conversations within your tenant. Support for Teams Connect Chat (External Access or Federation) conversations is enabled in the interface in some cases but isn't working as intended.
 - A maximum of 10 items per mailbox can be removed at one time. Because the capability to search for and remove chat messages is intended to be an incident-response tool, this limit helps ensure that chat messages are quickly removed.
 
@@ -39,7 +39,7 @@ Here's the process to search for and purge Teams chat messages:
 
 ## Step 1: Create a case in eDiscovery (Premium)
 
-The first step is to create a case in eDiscovery (Premium) to manage the search and purge process. For information about creating a case, see [Use the new case format](advanced-ediscovery-new-case-format.md).
+The first step is to create a case in eDiscovery (Premium) to manage the search and purge process. For information about creating a case, see [Use the new case format](ediscovery-new-case-format.md).
 
 ## Step 2: Create a collection estimate
 
@@ -69,13 +69,13 @@ Here's an example of a sample query using the **Type** and **Date** options:
 
    ![Query to collect Teams content.](..\media\TeamsConditionsQueryType.png)
 
-For more information, see [Build search queries for collections](building-search-queries.md).
+For more information, see [Build search queries for collections](ediscovery-building-search-queries.md).
 
 ## Step 3: Review and verify chat messages to purge
 
 The purge process in Step 5 will delete the items returned by the collection. It's important that you review the collection estimate results to ensure that the collection only returns the items that you want to purge. To review a sample of items in a collection estimate, see the "Next steps after a collection estimate is complete" section in [Create a collection estimate](create-draft-collection.md#next-steps-after-a-collection-estimate-is-complete).
 
-Additionally, you can use the collection statistics (specifically the Top Locations statistics) to generate a list of the data sources that contain items returned by the collection. Use this list in the next step to remove hold and retention policies from the data sources that contain search results. For more information, see [Collection statistics and reports](collection-statistics-reports.md).
+Additionally, you can use the collection statistics (specifically the Top Locations statistics) to generate a list of the data sources that contain items returned by the collection. Use this list in the next step to remove hold and retention policies from the data sources that contain search results. For more information, see [Collection statistics and reports](ediscovery-collection-statistics-reports.md).
 
 ## Step 4: Remove holds and retention policies from data sources
 

@@ -92,6 +92,6 @@ After data is added to a review set, image text can be reviewed, searched, tagge
 
 - [Advanced indexing of custodian data](indexing-custodian-data.md)
 
-- [Add search results to a review set](add-data-to-review-set.md#optical-character-recognition)
+- [Add search results to a review set](ediscovery-add-data-to-review-set.md#optical-character-recognition)
 
 - [Supported image file types](supported-filetypes-ediscovery20.md#image)

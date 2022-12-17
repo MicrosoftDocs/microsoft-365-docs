@@ -32,9 +32,9 @@ In an eDiscovery (Premium) case, legal teams can add individuals in their organi
 
 For more information about working with custodians, see the following articles:
 
-- [Add custodians to a case](add-custodians-to-case.md)
+- [Add custodians to a case](ediscovery-add-custodians-to-case.md)
 
-- [Bulk-add custodians to a case](bulk-add-custodians.md)
+- [Bulk-add custodians to a case](ediscovery-bulk-add-custodians.md)
 
 - [Manage custodians in a case](manage-new-custodians.md)
 

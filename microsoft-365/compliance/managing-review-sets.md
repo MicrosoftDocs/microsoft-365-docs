@@ -25,7 +25,7 @@ search.appverid:
 
 Review sets are a static set of documents where you can analyze, query, view, tag, and export data in a case. For more information about performing these tasks, see:
 
-- [Analyze data in a review set](analyzing-data-in-review-set.md)
+- [Analyze data in a review set](ediscovery-analyzing-data-in-review-set.md)
 
 - [Query the data in a review set](review-set-search.md)
 
@@ -51,11 +51,11 @@ There are three different ways to add data to a review set in an eDiscovery (Pre
 
 ![Three ways to add to a review sets.](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
-1. [Add search results to a review set](add-data-to-review-set.md)
+1. [Add search results to a review set](ediscovery-add-data-to-review-set.md)
 
 2. [Load non-Microsoft 365 data into a review set](load-non-Office-365-data-into-a-review-set.md)
 
-3. [Add data to a review set from another review set](add-data-to-review-set-from-another-review-set.md)
+3. [Add data to a review set from another review set](ediscovery-ediscovery-add-data-to-review-set-from-another-review-set.md)
 
 > [!NOTE]
-> You can't delete items from a review set and you can't delete review sets from a case. To delete a review set (and delete the data in it), you have to delete the eDiscovery (Premium) case the review set is located in. For more information, see [Close or delete an eDiscovery (Premium) case](close-or-delete-case.md).
+> You can't delete items from a review set and you can't delete review sets from a case. To delete a review set (and delete the data in it), you have to delete the eDiscovery (Premium) case the review set is located in. For more information, see [Close or delete an eDiscovery (Premium) case](ediscovery-close-or-delete-case.md).

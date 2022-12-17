@@ -25,7 +25,7 @@ search.appverid:
 
 # Create and manage an eDiscovery (Premium) case
 
-After setting up Microsoft Purview eDiscovery (Premium) and [assigning permissions to eDiscovery managers](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) in your organization that will manage cases, the next step is to create and manage a case.
+After setting up Microsoft Purview eDiscovery (Premium) and [assigning permissions to eDiscovery managers](get-started-with-advanced-ediscovery.md#step-2-ediscovery-assign-permissions) in your organization that will manage cases, the next step is to create and manage a case.
 
 This article also provides a high-level overview of using cases to manage the eDiscovery (Premium) workflow for a legal case or other types of investigations.
 
@@ -55,7 +55,7 @@ Complete the following steps to create a case and configure case settings. The u
 
 6. On the **Members and settings** page, complete the following fields as applicable:
 
-    - **Team members**: Select users and groups that should be assigned to the case. Make sure that users and groups assigned here have been [assigned the appropriate eDiscovery permissions](/microsoft-365/compliance/assign-ediscovery-permissions#assign-ediscovery-permissions).
+    - **Team members**: Select users and groups that should be assigned to the case. Make sure that users and groups assigned here have been [assigned the appropriate eDiscovery permissions](/microsoft-365/compliance/ediscovery-assign-permissions#ediscovery-assign-permissions).
     - **Search and analytics**: Select the options to configure the case. You can skip this section and configure these settings after the case is created if needed.
     - **Text to ignore**: Add text or regex expressions to define text to ignore in the case. You can apply this to *Near-duplicates*, *Email threads*, or *Themes* modules.
     - **Optical character recognition (OCR)**: Configure the option and settings for finding text contained in images during advanced indexing.
@@ -76,7 +76,7 @@ To get you started using eDiscovery (Premium), here's a basic workflow that alig
 
 ![eDiscovery (Premium) workflow.](../media/AeDWorkflow.png)
 
-1. **[Add custodians](add-custodians-to-case.md) and [non-custodial data sources](non-custodial-data-sources.md) to the case**. The first step after creating a case is to add custodians. A *custodian* is a person having administrative control of a document or electronic file that may be relevant to the case. Additionally, you can add data sources that aren't associated with a specific user but may be relevant to the case.
+1. **[Add custodians](ediscovery-add-custodians-to-case.md) and [non-custodial data sources](non-custodial-data-sources.md) to the case**. The first step after creating a case is to add custodians. A *custodian* is a person having administrative control of a document or electronic file that may be relevant to the case. Additionally, you can add data sources that aren't associated with a specific user but may be relevant to the case.
 
    Here are some things that happen (or that you can do) when you add custodians to a case:
 
@@ -86,9 +86,9 @@ To get you started using eDiscovery (Premium), here's a basic workflow that alig
    - You can associate other data sources with a custodian (for example, you can associate a SharePoint site or Microsoft 365 Group with a custodian) so this data can be reindexed, placed on hold, and searched, just like the data in the custodian's mailbox or OneDrive account.
    - You can use the [communications workflow](managing-custodian-communications.md) in eDiscovery (Premium) to send a legal hold notification to custodians.
 
-2. **[Collect relevant content from data sources](create-draft-collection.md)**. After you add custodians and non-custodial data sources to a case, use the built-in collections tool to search these data sources for content that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
+2. **[Collect relevant content from data sources](create-draft-collection.md)**. After you add custodians and non-custodial data sources to a case, use the built-in collections tool to search these data sources for content that may be relevant to the case. You use keywords, properties, and conditions to [build search queries](ediscovery-building-search-queries.md) that return search results with the data that's most likely relevant to the case. You can also:
 
-   - View [collection statistics](collection-statistics-reports.md) that may help you refine a collection to narrow the results.
+   - View [collection statistics](ediscovery-collection-statistics-reports.md) that may help you refine a collection to narrow the results.
    - Preview a sample of the collection to quickly verify whether the relevant data is being found.
    - Revise a query and rerun the collection.
 
@@ -102,7 +102,7 @@ To get you started using eDiscovery (Premium), here's a basic workflow that alig
    - [Create queries and filters](review-set-search.md). You create search queries using various search criteria (including the ability to search all [file metadata properties](document-metadata-fields-in-advanced-ediscovery.md) to further refine and cull the case data to what is most relevant to the case. You can also use review set filters to quickly apply other conditions to the results of a search query to further refine those results. 
    - [Create and use tags](tagging-documents.md). You can apply tags to documents in a review set to identify which are responsive (or non-responsive to the case) and then use those tags when creating search queries to include or exclude the tagged documents. You can also tagging to determine which documents to export.
    - [Annotate and redact documents](view-documents-in-review-set.md#annotate-view). You can use the annotation tool in a review to annotate documents and redact content in documents as work product. We generate a PDF version of an annotated or redacted document during review to reduce the risk of exporting the unredacted native version of the document.
-   - [Analyze case data](analyzing-data-in-review-set.md). The analytics functionality in eDiscovery (Premium) is powerful. After you run analytics on the data in review set, we perform analysis such as near duplicate detection, email threading, and themes that can help reduce the volume of documents that you have to review. We also generate an Analytics reports that summarize the result of running analytics. As previously explained, running analytics also runs [the attorney-client privilege detection model](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
+   - [Analyze case data](ediscovery-analyzing-data-in-review-set.md). The analytics functionality in eDiscovery (Premium) is powerful. After you run analytics on the data in review set, we perform analysis such as near duplicate detection, email threading, and themes that can help reduce the volume of documents that you have to review. We also generate an Analytics reports that summarize the result of running analytics. As previously explained, running analytics also runs [the attorney-client privilege detection model](ediscovery-attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
 5. **Export and download case data**. A final step after collecting, reviewing, and analyzing case data is to export it out of eDiscovery (Premium) for external review or for review by people outside of the investigation team. Exporting data is a two-step process. The first step is to [export](export-documents-from-review-set.md) data out of the review set and copy it to a different Azure Storage location (one provided by Microsoft or one managed by your organization). Then you use Azure Storage Explorer to [download](download-export-jobs.md) the data to a local computer. In addition to the exported data files, the contains of the export package also contains an export report, a summary report, and an error report.
 

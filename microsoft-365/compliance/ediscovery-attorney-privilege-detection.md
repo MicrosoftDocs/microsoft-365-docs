@@ -28,7 +28,7 @@ A major and costly aspect of the review phase of any eDiscovery process is revie
 
 ## How does it work?
 
-When attorney-client privilege detection is enabled, all documents in a review set will be processed by the attorney-client privilege detection model when you [analyze the data](analyzing-data-in-review-set.md) in the review set. The model looks for two things:
+When attorney-client privilege detection is enabled, all documents in a review set will be processed by the attorney-client privilege detection model when you [analyze the data](ediscovery-analyzing-data-in-review-set.md) in the review set. The model looks for two things:
 
 - Privileged content – The model uses machine learning to determine the likelihood that the document contains content that is legal in nature.
 
@@ -108,7 +108,7 @@ One of the primary ways to see the results of attorney-client privilege detectio
 
 ### Step 2: Analyze a review set
 
-When you analyze the documents in a review set, the attorney-client privilege detection model will also run and the corresponding properties (described in [How does it work?](#how-does-it-work)) will be added to every document in the review set. For more information about analyzing data in review set, see [Analyze data in a review set in eDiscovery (Premium)](analyzing-data-in-review-set.md).
+When you analyze the documents in a review set, the attorney-client privilege detection model will also run and the corresponding properties (described in [How does it work?](#how-does-it-work)) will be added to every document in the review set. For more information about analyzing data in review set, see [Analyze data in a review set in eDiscovery (Premium)](ediscovery-analyzing-data-in-review-set.md).
 
 ### Step 3: Use the smart tag group for review of privileged content
 

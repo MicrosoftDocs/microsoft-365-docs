@@ -40,7 +40,7 @@ The following screenshot shows the option to include the targets of cloud attach
 ![The option to include cloud attachments when committing a collection to a review set](../media/CollectCloudAttachments1.png)
 
 > [!NOTE]
->- If you use the [new case format](advanced-ediscovery-new-case-format.md) in eDiscovery (Premium), the option to include cloud attachments in the review set is selected by default and can't be unselected.<br/>
+>- If you use the [new case format](ediscovery-new-case-format.md) in eDiscovery (Premium), the option to include cloud attachments in the review set is selected by default and can't be unselected.<br/>
 >- You also have the option to include all versions (in addition to the version that was shared) of cloud attachments in the review set.  
 For instructions committing a collection to a review set, see [Commit a collection estimate to a review set](commit-draft-collection.md).
 

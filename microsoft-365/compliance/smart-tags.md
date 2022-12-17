@@ -35,7 +35,7 @@ Machine learning (ML) capabilities in Microsoft Purview eDiscovery (Premium) can
 
 3. Select the ML model that you want to associate to the tag group.
     
-   This creates a tag group and *N* child tags, where *N* is the number of possible outputs of the model. For example, the [attorney-client privilege detection model](attorney-privilege-detection.md) has two possible outputs: 
+   This creates a tag group and *N* child tags, where *N* is the number of possible outputs of the model. For example, the [attorney-client privilege detection model](ediscovery-attorney-privilege-detection.md) has two possible outputs: 
 
    - **Positive** – Use to tag documents that contain attorney-client privileged content.
    

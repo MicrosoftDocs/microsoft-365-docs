@@ -111,5 +111,5 @@ To learn more about how to review case data in eDiscovery (Premium), see the fol
 - [Query and filter content in a review set](review-set-search.md)
 - [Tag documents in a review set](tagging-documents.md)
 - [View case data](view-documents-in-review-set.md)
-- [Analyze case data](analyzing-data-in-review-set.md)
+- [Analyze case data](ediscovery-analyzing-data-in-review-set.md)
 - [Export case data](exporting-data-ediscover20.md)

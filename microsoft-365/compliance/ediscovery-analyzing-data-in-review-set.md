@@ -73,7 +73,7 @@ The following list describes the result of the filter query in terms of what con
 For more information about inclusive types and document uniqueness, see [Email threading in eDiscovery (Premium)](email-threading-in-advanced-ediscovery.md).
 
 > [!NOTE]
-> During the public preview of [the new case format](advanced-ediscovery-new-case-format.md) in eDiscovery (Premium), the **For Review** filter query did not return Teams or Yammer conversations for review sets (in cases that use the large case format) created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set in a case that uses the large case format, more items that match the filter query may be displayed because all Teams or Yammer conversations are included.
+> During the public preview of [the new case format](ediscovery-new-case-format.md) in eDiscovery (Premium), the **For Review** filter query did not return Teams or Yammer conversations for review sets (in cases that use the large case format) created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set in a case that uses the large case format, more items that match the filter query may be displayed because all Teams or Yammer conversations are included.
 
 ## Analytics report
 

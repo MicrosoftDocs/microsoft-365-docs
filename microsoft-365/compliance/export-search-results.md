@@ -33,7 +33,7 @@ Exporting the results of a Content search involves preparing the results, and th
 
 ## Before you export search results
 
-- To export search results, you have to be assigned the Export management role in Microsoft Purview compliance portal. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To export search results, you have to be assigned the Export management role in Microsoft Purview compliance portal. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
 - The computer you use to export the search results has to meet the following system requirements:
   
   - Latest version of Windows (32-bit or 64-bit)

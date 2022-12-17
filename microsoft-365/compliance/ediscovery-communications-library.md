@@ -30,7 +30,7 @@ This article explains how to create organization-wide communications templates a
 
 ## Before you create templates in the Communications library
 
-- You must be an eDiscovery Administrator in your organization to add or remove templates in the Communications library in eDiscovery (Premium). For more information, see [Assign eDiscovery permissions in the Microsoft Purview compliance portal](assign-ediscovery-permissions.md)  
+- You must be an eDiscovery Administrator in your organization to add or remove templates in the Communications library in eDiscovery (Premium). For more information, see [Assign eDiscovery permissions in the Microsoft Purview compliance portal](ediscovery-assign-permissions.md)  
 
 - Your organization can have a maximum of 50 templates in the Communications library.
 

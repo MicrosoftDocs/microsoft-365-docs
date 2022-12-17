@@ -48,7 +48,7 @@ This article explains how admins can delete items from the Recoverable Items fol
 
 ## Before you delete items
 
-- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).
+- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./ediscovery-assign-permissions.md).
 
 - If a mailbox is assigned to an organization-wide retention policy, you have to exclude the mailbox from the policy before you can delete items from the Recoverable Items folder. It may take up to 24 hours to synchronize the policy change, and remove the mailbox from the policy. For more information, see "Organization-wide retention policies" in the [Remove all holds from the mailbox](#organization-wide-retention-policies) section in this article.
 

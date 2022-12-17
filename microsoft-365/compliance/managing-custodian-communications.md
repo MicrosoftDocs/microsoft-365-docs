@@ -56,4 +56,4 @@ For more information about managing the custodian communication process, see the
 
 - [Manage hold notifications](manage-hold-notification.md)
 
-- [Acknowledge a hold notification](acknowledge-hold-notification.md)
+- [Acknowledge a hold notification](ediscovery-acknowledge-hold-notification.md)

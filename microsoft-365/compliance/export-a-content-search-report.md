@@ -34,7 +34,7 @@ When you export a report, the report files are downloaded to a folder on your lo
 
 ## Before you export a search report
 
-- To export a search report, you have to be assigned the Compliance Search management role in compliance portal. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To export a search report, you have to be assigned the Compliance Search management role in compliance portal. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
 - When you export a report, the data is temporarily stored in an Azure Storage location in the Microsoft cloud before it's downloaded to your local computer. Be sure that your organization can connect to the endpoint in Azure, which is **\*.blob.core.windows.net** (the wildcard represents a unique identifier for your export). The search results data is deleted from the Azure Storage location two weeks after it's created.
 - The computer you use to export the search report has to meet the following system requirements:
   

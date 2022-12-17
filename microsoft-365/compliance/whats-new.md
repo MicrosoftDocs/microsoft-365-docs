@@ -134,7 +134,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - [Limits for Content search and eDiscovery (Standard)](/microsoft-365/compliance/limits-for-content-search) - clarified how eDiscovery jobs are counted towards limits.
 - [Export documents from a review set in eDiscovery (Premium)](/microsoft-365/compliance/export-documents-from-review-set) - removed conversation PDF support per feature and UI updates.
-- [Assign eDiscovery permissions in the compliance portal](/microsoft-365/compliance/assign-ediscovery-permissions) - added content to support new Manage review set tags role.
+- [Assign eDiscovery permissions in the compliance portal](/microsoft-365/compliance/ediscovery-assign-permissions) - added content to support new Manage review set tags role.
 - [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) - now support only 'all' parameters, removed non-supported example scenarios.
 - [Keyword queries and search conditions for eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions) - clarified the supported FolderId 48-character format indexed for search.
 

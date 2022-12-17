@@ -34,7 +34,7 @@ In this example, Contoso LTD is an organization that consists of two subsidiarie
   
 - The search permissions filtering functionality for eDiscovery controls the content locations that eDiscovery managers and investigators can search. This means eDiscovery managers and investigators in the Fourth Coffee agency can only search content locations in the Fourth Coffee subsidiary. The same restriction applies to the Coho Winery subsidiary.
 
-- [Role groups](assign-ediscovery-permissions.md#rbac-roles-related-to-ediscovery) provide the following functions for compliance boundaries:
+- [Role groups](ediscovery-assign-permissions.md#rbac-roles-related-to-ediscovery) provide the following functions for compliance boundaries:
 
   - Control who can see the eDiscovery cases in the Microsoft Purview compliance portal. This means that eDiscovery managers and investigators can only see the eDiscovery cases in their agency.
 
@@ -88,7 +88,7 @@ For a complete list, see the full list of supported [mailbox filters](/powershel
 
 ## Step 2: Create a role group for each agency
 
-The next step is to create the role groups in the compliance portal that will align with your agencies. We recommend that you create a role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+The next step is to create the role groups in the compliance portal that will align with your agencies. We recommend that you create a role group by copying the built-in eDiscovery Managers group, adding the appropriate members, and removing roles that may not be applicable to your needs. For more information about eDiscovery-related roles, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
   
 To create the role groups, go to the **Permissions** page in the compliance portal and create a role group for each team in each agency that will use compliance boundaries and eDiscovery cases to manage investigations.
   
@@ -180,7 +180,7 @@ To create a case and assign members:
 
    - [Add members to a eDiscovery (Standard) case](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-ediscovery-standard-case)
 
-   - [Add members to an eDiscovery (Premium) case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+   - [Add members to an eDiscovery (Premium) case](ediscovery-add-or-remove-members-from-a-case.md)
 
 > [!NOTE]
 > When adding a role group to a case, you can only add the role groups that you are a member of.

@@ -193,7 +193,7 @@ After a mailbox, SharePoint site, or OneDrive account is removed from an eDiscov
 
    For more information, see [Releasing a policy for retention](retention.md#releasing-a-policy-for-retention).
 
-A delay hold is also applied to content locations on hold when you close a eDiscovery (Standard) case because holds are turned off when a case is closed. For more information about closing a case, see [Close, reopen, and delete a eDiscovery (Standard) case](close-reopen-delete-core-ediscovery-cases.md).
+A delay hold is also applied to content locations on hold when you close a eDiscovery (Standard) case because holds are turned off when a case is closed. For more information about closing a case, see [Close, reopen, and delete a eDiscovery (Standard) case](ediscovery-close-reopen-delete-cases.md).
 
 ## eDiscovery hold limits
 

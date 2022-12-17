@@ -81,8 +81,8 @@ When you update the content or settings of the Issuance, Release, Reissue, Remin
 
 ## More information
 
-- [Add custodians to a case](add-custodians-to-case.md)
+- [Add custodians to a case](ediscovery-add-custodians-to-case.md)
 
 - [Create a legal hold notice](create-hold-notification.md)
 
-- [Acknowledge a hold notification](acknowledge-hold-notification.md)
+- [Acknowledge a hold notification](ediscovery-acknowledge-hold-notification.md)

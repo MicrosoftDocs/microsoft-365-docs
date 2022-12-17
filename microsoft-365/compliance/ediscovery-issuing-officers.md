@@ -34,7 +34,7 @@ This article explains how to add and remove users to the list of organization-wi
 
 ## Before you add an issuing officer
 
-- You must be an eDiscovery Administrator in your organization to add or remove issuing officers. For more information, see [Assign eDiscovery permissions in the Microsoft Purview compliance portal](assign-ediscovery-permissions.md)  
+- You must be an eDiscovery Administrator in your organization to add or remove issuing officers. For more information, see [Assign eDiscovery permissions in the Microsoft Purview compliance portal](ediscovery-assign-permissions.md)  
 
 - The user who is added as an issuing officer must have an active mailbox in your Microsoft 365 organization.
 
