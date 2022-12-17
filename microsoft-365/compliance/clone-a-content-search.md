@@ -130,7 +130,7 @@ To clone a search:
 
 After you run the script to clone an existing Content Search, the next step is to go to the Microsoft Purview compliance portal to edit and run the new search. As previously stated, you can edit a search by changing the keyword search query and adding or removing search conditions. For more information, see:
 
-- [Content Search in Office 365](content-search.md)
+- [Content Search in Office 365](ediscovery-content-search.md)
 
 - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
 

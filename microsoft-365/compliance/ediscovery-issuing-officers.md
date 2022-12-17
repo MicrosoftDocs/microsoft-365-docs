@@ -52,7 +52,7 @@ This article explains how to add and remove users to the list of organization-wi
 
 3. Click **Add** and then search for and add one or more users to the list of issuing officers.
 
-After you add users as issuing officers, you or other users will be able to specify these users as an issuing officer for custodian communications for any case in your organization. For more information about creating custodian communications, see [Create a legal hold notice](create-hold-notification.md).
+After you add users as issuing officers, you or other users will be able to specify these users as an issuing officer for custodian communications for any case in your organization. For more information about creating custodian communications, see [Create a legal hold notice](ediscovery-create-hold-notification.md).
 
 ## Remove an issuing officer
 

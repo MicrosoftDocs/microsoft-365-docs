@@ -52,11 +52,11 @@ Here are few definitions to help you get start using conversation reconstruction
 
 ## Step 1: Create a collection estimate
 
-After you have identified relevant custodians and content locations, you can create a search to find potentially relevant content. On the **Collections** tab in the eDiscovery (Premium) case, you can create a collection by clicking **New collection** and following the wizard. For information about how you can create a collection, build a search query, and preview the search results, see [Create a collection estimate](create-draft-collection.md).
+After you have identified relevant custodians and content locations, you can create a search to find potentially relevant content. On the **Collections** tab in the eDiscovery (Premium) case, you can create a collection by clicking **New collection** and following the wizard. For information about how you can create a collection, build a search query, and preview the search results, see [Create a collection estimate](ediscovery-create-draft-collection.md).
 
 ## Step 2: Commit a collection estimate to a review set
 
-After you have reviewed and finalized the search query in a collection, you can add the search results to a review set. When you add your search results into a review set, the original data is copied to an Azure Storage area to facilitate the review and analysis process. For more information about adding search results to a review set, see [Commit a collection estimate to a review set](commit-draft-collection.md).
+After you have reviewed and finalized the search query in a collection, you can add the search results to a review set. When you add your search results into a review set, the original data is copied to an Azure Storage area to facilitate the review and analysis process. For more information about adding search results to a review set, see [Commit a collection estimate to a review set](ediscovery-commit-draft-collection.md).
 
 When you add items from conversations to a review set, you can use the threaded conversations option to collect contextual messages from conversations that contain items that match the search criteria of the collection. After you select the thread conversations option, the following things can happen:
 
@@ -68,7 +68,7 @@ When you add items from conversations to a review set, you can use the threaded 
 
 3. After the items have been added to the review set, you can review all the individual messages from *CRC1*.
 
-To enable the threaded conversations option, see [Commit a collection estimate to a review set](commit-draft-collection.md#commit-a-collection-estimate-to-a-review-set).
+To enable the threaded conversations option, see [Commit a collection estimate to a review set](ediscovery-commit-draft-collection.md#commit-a-collection-estimate-to-a-review-set).
 
 ## Step 3: Review and export threaded conversations
 

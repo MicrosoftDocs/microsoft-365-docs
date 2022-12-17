@@ -152,7 +152,7 @@ This role lets users place content on hold in mailboxes, public folders, sites, 
 
 For more information about holds, see:
 
-- [Create a hold in eDiscovery (Standard)](create-ediscovery-holds.md) 
+- [Create a hold in eDiscovery (Standard)](ediscovery-create-holds.md) 
 - [Create a hold in eDiscovery (Premium)](ediscovery-add-custodians-to-case.md)
 
 ### Manage review set tags

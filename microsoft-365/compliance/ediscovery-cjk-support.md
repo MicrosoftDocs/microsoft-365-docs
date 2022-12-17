@@ -49,7 +49,7 @@ It depends on your search scenario.
 
 - When you [query data in a review set](review-set-search.md) in eDiscovery (Premium), you can search for multiple languages.
 
-- When you [create a search to collect data](create-draft-collection.md), create separate collections for each language you're targeting. For example, if you are searching for a document that contains both Chinese and Korean, select Chinese for your first collection and select Korean for your second collection.
+- When you [create a search to collect data](ediscovery-create-draft-collection.md), create separate collections for each language you're targeting. For example, if you are searching for a document that contains both Chinese and Korean, select Chinese for your first collection and select Korean for your second collection.
 
 **I don't see the query language-country/region icon to select a language for queries in a review set. How can I specify a query language in a review set search?**
 

@@ -31,7 +31,7 @@ This article describes features and functionality of Content search.
 
 ## Content search limits
 
-For a description of the limits that are applied to Content searches, see [Limits for Content search](limits-for-content-search.md).
+For a description of the limits that are applied to Content searches, see [Limits for Content search](limits-for-ediscovery-content-search.md).
 
 ## Building a search query
 
@@ -61,7 +61,7 @@ Keep the following things in mind when using the keyword list to create a search
 
 ## Partially indexed items
 
-- Partially indexed items in mailboxes are included in the estimated search results. Partially indexed items from SharePoint and OneDrive aren't included in the estimated search results. For more information, see [Partially indexed items in eDiscovery](partially-indexed-items-in-content-search.md).
+- Partially indexed items in mailboxes are included in the estimated search results. Partially indexed items from SharePoint and OneDrive aren't included in the estimated search results. For more information, see [Partially indexed items in eDiscovery](partially-indexed-items-in-ediscovery-content-search.md).
 
 ## Searching OneDrive accounts
 

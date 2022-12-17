@@ -89,4 +89,4 @@ For more information about setting up and using the attorney-client privilege de
 
 ## Next steps
 
-After you set up eDiscovery (Premium), you're ready to [create a case](create-and-manage-advanced-ediscoveryv2-case.md).
+After you set up eDiscovery (Premium), you're ready to [create a case](ediscovery-create-and-manage-advanced-cases.md).

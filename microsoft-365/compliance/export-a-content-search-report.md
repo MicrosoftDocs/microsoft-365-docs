@@ -44,7 +44,7 @@ When you export a report, the report files are downloaded to a folder on your lo
 - You have to use Microsoft Edge<sup>1</sup> to run the eDiscovery Export Tool. Using Internet Explorer 11 to export search results is no longer supported<sup>2</sup>.
   
   > [!NOTE]
-  > <sup>1</sup> As a result of recent changes to Microsoft Edge, SelectOnce support is no longer enabled by default. For instructions on enabling SelectOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md). Also, Microsoft doesn't manufacture third-party extensions or add-ons for SelectOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.
+  > <sup>1</sup> As a result of recent changes to Microsoft Edge, SelectOnce support is no longer enabled by default. For instructions on enabling SelectOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](ediscovery-configure-edge-to-export-search-results.md). Also, Microsoft doesn't manufacture third-party extensions or add-ons for SelectOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.
   > 
   > <sup>2</sup> Beginning August 2021, Microsoft 365 apps and services will no longer support Internet Explorer 11 (IE11) and users may have a degraded experience or be unable to connect to those apps and services. These apps and services will phase out over the upcoming weeks and months to ensure a smooth end of support. Each app and service are being phased out on independent schedules. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
 
@@ -80,7 +80,7 @@ The first step is to prepare the report for downloading to your computer exporti
 
    - If you don't select this option, the export reports will contain information about all messages returned by the search, including duplicates.
 
-     For more information about de-duplication and how duplicate items are identified, see [De-duplication in eDiscovery search results](de-duplication-in-ediscovery-search-results.md).
+     For more information about de-duplication and how duplicate items are identified, see [De-duplication in eDiscovery search results](ediscovery-de-duplication-in-search-results.md).
 
 5. Select **Generate report**.
 

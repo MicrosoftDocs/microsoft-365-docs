@@ -37,9 +37,9 @@ This article also describes:
 
 For step-by-step instructions on how to create different eDiscovery searches, see:
 
-- [Content search](content-search.md)
+- [Content search](ediscovery-content-search.md)
 - [Search for content in eDiscovery (Standard)](search-for-content-in-core-ediscovery.md)
-- [Create a collection estimate in eDiscovery (Premium)](create-draft-collection.md)
+- [Create a collection estimate in eDiscovery (Premium)](ediscovery-create-draft-collection.md)
 
 > [!NOTE]
 > eDiscovery searches in the compliance portal and the corresponding **\*-ComplianceSearch** cmdlets in Security & Compliance PowerShell use the Keyword Query Language (KQL). For more detailed information, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
@@ -418,7 +418,7 @@ Here's how the total number of characters in the search query are calculated:
 - The characters in any location property (such as the URLs for all the SharePoint sites or OneDrive locations being searched) count against this limit.
 - The characters in all the search permissions filters that are applied to the user running the search count against the limit.
 
-For more information about character limits, see [eDiscovery search limits](limits-for-content-search.md#search-limits).
+For more information about character limits, see [eDiscovery search limits](limits-for-ediscovery-content-search.md#search-limits).
 
 > [!NOTE]
 > The 4,000 character limit applies to Content search, eDiscovery (Standard), and eDiscovery (Premium).

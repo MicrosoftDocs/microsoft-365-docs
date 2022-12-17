@@ -49,7 +49,7 @@ When you're satisfied with the items you've collected in a collection estimate a
 
       ![Configure additional collection settings.](../media/ediscovery-additional-collection-settings.png).
 
-       A. **Teams and Yammer messages**: Select this option to add conversation threads to the collection that include the chat items returned by the search query in the collection. This means that the chat conversation that contains items that match the search criteria is reconstructed. This lets you review chat items in the context of the back and forth conversation. For more information, see [Conversation threading in eDiscovery (Premium)](conversation-review-sets.md).
+       A. **Teams and Yammer messages**: Select this option to add conversation threads to the collection that include the chat items returned by the search query in the collection. This means that the chat conversation that contains items that match the search criteria is reconstructed. This lets you review chat items in the context of the back and forth conversation. For more information, see [Conversation threading in eDiscovery (Premium)](ediscovery-conversation-review-sets.md).
 
        B. **Cloud attachments**: Select this option to include modern attachments or linked files when the collection results are added to the review set. This means the target file of a modern attachment or linked file is added to the review set.
 
@@ -96,4 +96,4 @@ When you commit a collection estimate to a review set, the following things happ
 
 When you commit a collection to a review set, optical character recognition (OCR) functionality in eDiscovery (Premium) automatically extracts text from images, and includes the image text with the content that's added to a review set. You can view the extracted text in the Text viewer of the selected image file in the review set. This lets you conduct further review and analysis on text in images. OCR is supported for loose files, email attachments, and embedded images. For a list of image file formats that are supported for OCR, see [Supported file types in eDiscovery (Premium)](supported-filetypes-ediscovery20.md#image).
 
-You have to enable OCR functionality for each case that you create in eDiscovery (Premium). For more information, see [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).
+You have to enable OCR functionality for each case that you create in eDiscovery (Premium). For more information, see [Configure search and analytics settings](ediscovery-configure-search-and-analytics-settings.md#optical-character-recognition-ocr).

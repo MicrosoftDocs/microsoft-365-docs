@@ -44,7 +44,7 @@ This article explains how to create organization-wide communications templates a
 
 3. On the **Communications library** page, click **Create**.
 
-4. Follow the procedure to create a custodian communication. For step-by-step instructions, see [Create a legal hold notification](create-hold-notification.md).
+4. Follow the procedure to create a custodian communication. For step-by-step instructions, see [Create a legal hold notification](ediscovery-create-hold-notification.md).
 
    > [!NOTE]
    > The steps to create a communications template are the same as the workflow to create a notification within a case. The only difference is that when you create a template, you don't specify an issuing officer and you don't assign custodians. Specifying an issuing officer and assigning custodians is done when you use a communications template to create a custodian notification for a case.

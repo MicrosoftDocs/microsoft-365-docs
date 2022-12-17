@@ -45,7 +45,7 @@ The first step is to create a case in eDiscovery (Premium) to manage the search 
 
 After you create a case, the next step is to create a collection estimate to search for the Teams chat messages that you want to purge. The purge process you perform is Step 5 will purge all items that are found in the collection estimate.
 
-In eDiscovery (Premium), a *collection* is an eDiscovery search of the Teams content locations that contain the chat messages that you want to purge. Create the collection estimate in the case that you created in the previous step. For more information, see [Create a collection estimate](create-draft-collection.md).
+In eDiscovery (Premium), a *collection* is an eDiscovery search of the Teams content locations that contain the chat messages that you want to purge. Create the collection estimate in the case that you created in the previous step. For more information, see [Create a collection estimate](ediscovery-create-draft-collection.md).
 
 ### Data sources for chat messages
 
@@ -73,7 +73,7 @@ For more information, see [Build search queries for collections](ediscovery-buil
 
 ## Step 3: Review and verify chat messages to purge
 
-The purge process in Step 5 will delete the items returned by the collection. It's important that you review the collection estimate results to ensure that the collection only returns the items that you want to purge. To review a sample of items in a collection estimate, see the "Next steps after a collection estimate is complete" section in [Create a collection estimate](create-draft-collection.md#next-steps-after-a-collection-estimate-is-complete).
+The purge process in Step 5 will delete the items returned by the collection. It's important that you review the collection estimate results to ensure that the collection only returns the items that you want to purge. To review a sample of items in a collection estimate, see the "Next steps after a collection estimate is complete" section in [Create a collection estimate](ediscovery-create-draft-collection.md#next-steps-after-a-collection-estimate-is-complete).
 
 Additionally, you can use the collection statistics (specifically the Top Locations statistics) to generate a list of the data sources that contain items returned by the collection. Use this list in the next step to remove hold and retention policies from the data sources that contain search results. For more information, see [Collection statistics and reports](ediscovery-collection-statistics-reports.md).
 

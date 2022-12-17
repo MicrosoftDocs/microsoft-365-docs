@@ -45,7 +45,7 @@ eDiscovery cases let you control who can create, access, and manage eDiscovery c
 
 Like the previous section that listed scripts for content search scenarios, we've also created some Security & Compliance PowerShell scripts to help you manage eDiscovery cases.
   
-- [Create a eDiscovery hold report](create-a-report-on-holds-in-ediscovery-cases.md) that contains information about all holds associated with eDiscovery cases in your organization.
+- [Create a eDiscovery hold report](ediscovery-create-a-report-on-holds-in-cases.md) that contains information about all holds associated with eDiscovery cases in your organization.
 
 - [Add mailboxes and OneDrive locations](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) for a list of users to an eDiscovery hold.
   
@@ -55,9 +55,9 @@ The Microsoft Purview eDiscovery (Premium) solution in Microsoft 365 builds on t
 
 eDiscovery (Premium) requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Set up eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Here's a quick overview of the built-in workflow in eDiscovery (Premium). For more information, see [Manage the eDiscovery (Premium) workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
+Here's a quick overview of the built-in workflow in eDiscovery (Premium). For more information, see [Manage the eDiscovery (Premium) workflow](ediscovery-create-and-manage-advanced-cases.md#manage-the-workflow).
 
-- [Create a case](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) to get started.
+- [Create a case](ediscovery-create-and-manage-advanced-cases.md#create-a-case) to get started.
 
 - [Manage custodians](managing-custodians.md) by adding them to a case and placing a legal hold on content in their mailbox, OneDrive account, and Microsoft Teams they're members of.
 

@@ -57,7 +57,7 @@ The first step is to connect to [Security & Compliance PowerShell](/powershell/e
 
 The second step is to create and run a Content search to find the message that you want to remove from mailboxes in your organization. You can create the search by using the [Microsoft Purview compliance portal](https://compliance.microsoft.com) or by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets in Security & Compliance PowerShell. The messages that match the query for this search will be deleted by running the **New-ComplianceSearchAction -Purge** command in [Step 3](#step-3-delete-the-message). For information about creating a Content search and configuring search queries, see the following articles:
 
-- [Content search in Office 365](content-search.md)
+- [Content search in Office 365](ediscovery-content-search.md)
 - [Keyword queries for Content search](keyword-queries-and-search-conditions.md)
 - [New-ComplianceSearch](/powershell/module/exchange/New-ComplianceSearch)
 - [Start-ComplianceSearch](/powershell/module/exchange/Start-ComplianceSearch)
@@ -141,7 +141,7 @@ For more information, see [New-ComplianceSearchAction](/powershell/module/exchan
 
 - **What if you have to delete a message from more than 50,000 mailboxes?**
 
-  As previously stated, you can perform a search and purge operation on a maximum of 50,000 mailboxes (even if less than 50,000 contain items that match the search query). If you have to do a search and purge operation on more than 50,000 mailboxes, consider creating temporary search permissions filters that reduce the number of mailboxes that would be searched to less than 50,000 mailboxes. For example, if your organization contains mailboxes in different departments, states, or countries, you can create a mailbox search permissions filter based on one of those mailbox properties to search a subset of mailboxes in your organization. After you create the search permissions filter, you would create the search (described in Step 1) and then delete the message (described in Step 3). Then you can edit the filter to search for and purge messages in a different set of mailboxes. For more information about creating search permissions filters, see [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md).
+  As previously stated, you can perform a search and purge operation on a maximum of 50,000 mailboxes (even if less than 50,000 contain items that match the search query). If you have to do a search and purge operation on more than 50,000 mailboxes, consider creating temporary search permissions filters that reduce the number of mailboxes that would be searched to less than 50,000 mailboxes. For example, if your organization contains mailboxes in different departments, states, or countries, you can create a mailbox search permissions filter based on one of those mailbox properties to search a subset of mailboxes in your organization. After you create the search permissions filter, you would create the search (described in Step 1) and then delete the message (described in Step 3). Then you can edit the filter to search for and purge messages in a different set of mailboxes. For more information about creating search permissions filters, see [Configure permissions filtering for Content Search](permissions-filtering-for-ediscovery-content-search.md).
 
 - **Will unindexed items included in the search results be deleted?**
 

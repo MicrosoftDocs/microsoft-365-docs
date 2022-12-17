@@ -27,8 +27,8 @@ This article explains how to identify holds placed on Exchange Online mailboxes 
 
 Microsoft Purview offers several ways that your organization can prevent mailbox content from being permanently deleted. This allows your organization to retain content to meet compliance regulations or during legal and other types of investigations. Here's a list of the retention features (also called *holds*) in Microsoft Purview and Microsoft 365:
 
-- **[Litigation Hold](create-a-litigation-hold.md):** Holds that are applied to user mailboxes in Exchange Online.
-- **[eDiscovery hold](create-ediscovery-holds.md):** Holds that are associated with a Microsoft Purview eDiscovery (Standard) case in the Microsoft Purview compliance portal. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams.
+- **[Litigation Hold](ediscovery-create-a-litigation-hold.md):** Holds that are applied to user mailboxes in Exchange Online.
+- **[eDiscovery hold](ediscovery-create-holds.md):** Holds that are associated with a Microsoft Purview eDiscovery (Standard) case in the Microsoft Purview compliance portal. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams.
 - **[In-Place Hold](/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Holds that are applied to user mailboxes by using the In-Place eDiscovery & Hold tool in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> in Exchange Online.
 
    > [!NOTE]

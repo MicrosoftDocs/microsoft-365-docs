@@ -36,7 +36,7 @@ When the number of collected documents is large, it can be difficult to review t
 
 To analyze data in a review set:
 
-1. Configure analytics settings for your case. For more information, see [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md).
+1. Configure analytics settings for your case. For more information, see [Configure search and analytics settings](ediscovery-configure-search-and-analytics-settings.md).
 
 2. Open the review set you want to analyze.
 

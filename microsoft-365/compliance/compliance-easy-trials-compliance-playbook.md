@@ -367,7 +367,7 @@ More organizations use the eDiscovery (Premium) solution in Microsoft 365 for cr
 To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. You can manage settings such as attorney-client privilege detection, historical versions and many more.
 
 1. [Configure global settings for eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
-1. [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
+1. [Configure search and analytics settings](ediscovery-configure-search-and-analytics-settings.md)
 1. [Manage jobs in eDiscovery (Premium)](managing-jobs-ediscovery20.md)
 
 ### Step 4 (optional): Compliance Boundaries
@@ -385,7 +385,7 @@ Set up compliance boundaries for eDiscovery investigations:
 
 ### Step 5 (optional): eDiscovery Premium’s collection tool
 
-Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-collection-estimate) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
+Use the [eDiscovery (Premium) collection workflow](ediscovery-create-draft-collection.md#create-a-collection-estimate) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
 
 [Learn more about collection queries and estimates.](ediscovery-building-search-queries.md)
 

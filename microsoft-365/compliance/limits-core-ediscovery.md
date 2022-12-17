@@ -39,4 +39,4 @@ The following table lists the limits for eDiscovery (Standard) cases and holds a
    > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
    > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-For more information about limits related to searches and exports associated with a eDiscovery (Standard) case, see [Limits for Content search and eDiscovery (Standard)](limits-for-content-search.md).
+For more information about limits related to searches and exports associated with a eDiscovery (Standard) case, see [Limits for Content search and eDiscovery (Standard)](limits-for-ediscovery-content-search.md).

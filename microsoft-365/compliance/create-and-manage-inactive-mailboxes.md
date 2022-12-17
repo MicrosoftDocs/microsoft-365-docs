@@ -69,7 +69,7 @@ To view a list of the inactive mailboxes in your organization:
 
    ![Inactive Mailbox option on the Retention policies page from data lifecycle management.](../media/inactive-mailbox-option.png)
 
-4. The **Inactive mailboxes** page displays a list of inactive mailboxes. Select one to see details about that inactive mailbox. Details include the Exchange identifier for the mailbox and whether it's on [Litigation Hold](create-a-litigation-hold.md).
+4. The **Inactive mailboxes** page displays a list of inactive mailboxes. Select one to see details about that inactive mailbox. Details include the Exchange identifier for the mailbox and whether it's on [Litigation Hold](ediscovery-create-a-litigation-hold.md).
     
     You won't see other types of holds in the details pane, for example a Microsoft 365 retention policy or eDiscovery hold. To find this information, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
 
@@ -94,7 +94,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
 
 You can access the contents of the inactive mailbox by using the Content Search tool in the Microsoft Purview compliance portal. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
   
-- [Content search](content-search.md)
+- [Content search](ediscovery-content-search.md)
 
 - [Export search results](export-search-results.md)
 

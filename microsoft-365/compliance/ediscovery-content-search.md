@@ -73,7 +73,7 @@ After you run a search, the number of content locations and an estimated number 
 
    2. Alternatively, you can select the **Show keyword list** checkbox and the enter a keyword in each row. If you do this, the keywords on each row are connected by a logical operator (**c:s**) that is similar in functionality to the **OR** operator in the search query that's created.
 
-      **Why use the keyword list**? You can get statistics that show how many items match each keyword. This can help you quickly identify which keywords are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row. For more information about the keyword list and search statistics, see [Get keyword statistics for searches](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches).
+      **Why use the keyword list**? You can get statistics that show how many items match each keyword. This can help you quickly identify which keywords are the most (and least) effective. You can also use a keyword phrase (surrounded by parentheses) in a row. For more information about the keyword list and search statistics, see [Get keyword statistics for searches](view-keyword-statistics-for-ediscovery-content-search.md#get-keyword-statistics-for-searches).
 
       > [!NOTE]
       > To help reduce issues caused by large keyword lists, you're limited to a maximum of 20 rows in the keyword list.
@@ -84,13 +84,13 @@ After you run a search, the number of content locations and an estimated number 
   
 To access this content search again or access other content searches listed on the **Content search** page, select a search to view the search summary and search statistics.
 
-For more information about Content search, such as searching for content in different Microsoft 365 services, see [Feature reference for Content search](content-search-reference.md).
+For more information about Content search, such as searching for content in different Microsoft 365 services, see [Feature reference for Content search](ediscovery-content-search-reference.md).
 
 ## Next steps
 
 Here's a list of next steps to perform after you create and run a Content search.
 
 - [Preview search results](preview-ediscovery-search-results.md)
-- [View statistics for search results](view-keyword-statistics-for-content-search.md)
+- [View statistics for search results](view-keyword-statistics-for-ediscovery-content-search.md)
 - [Export search results](export-search-results.md)
 - [Export a search report](export-a-content-search-report.md)

@@ -32,7 +32,7 @@ An [inactive mailbox](inactive-mailboxes-in-office-365.md) is mailbox state that
 
 - A hold associated with an [eDiscovery](ediscovery.md) case
 
-- [Litigation Hold](create-a-litigation-hold.md)
+- [Litigation Hold](ediscovery-create-a-litigation-hold.md)
 
 - An existing In-Place Hold.
 
@@ -43,7 +43,7 @@ An [inactive mailbox](inactive-mailboxes-in-office-365.md) is mailbox state that
 >
 > - In-Place Holds in the Exchange admin center are now retired. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
 >
-> - [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
+> - [Litigation hold](ediscovery-create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
 
 Once made inactive, the contents of the mailbox including the [Recoverable Items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) are retained until the hold that was placed on the mailbox before it was made inactive no longer applies.  
 
@@ -229,7 +229,7 @@ Get-RetentionCompliancePolicy 6fe063689d404a5bb9940eed0f0bf5d2 | FL Name
 
 Once you've identified the policy, you will know which labels have been published and their settings.  Because labels apply to individual items, depending on the number of labels published with the policy and their settings, you may not be able to directly identify which label is affecting the content.  
 
-One method that you can use to identify the content each label applies to is using [Content Search](content-search.md).  For example, using the sample information from above, assume the policy publishes several labels, one of which is named "HR-Content".  With the [correct permissions](microsoft-365-compliance-center-permissions.md), a Content Search can be run with the [New-ComplianceSearch PowerShell command](/powershell/module/exchange/new-compliancesearch), specifying the inactive mailbox's primary SMTP address, pre-pended with a period (`.`), and the `-AllowNotFoundExchangeLocationsEnabled $true` parameter to skip validation:
+One method that you can use to identify the content each label applies to is using [Content Search](ediscovery-content-search.md).  For example, using the sample information from above, assume the policy publishes several labels, one of which is named "HR-Content".  With the [correct permissions](microsoft-365-compliance-center-permissions.md), a Content Search can be run with the [New-ComplianceSearch PowerShell command](/powershell/module/exchange/new-compliancesearch), specifying the inactive mailbox's primary SMTP address, pre-pended with a period (`.`), and the `-AllowNotFoundExchangeLocationsEnabled $true` parameter to skip validation:
 
 ```powershell
 New-ComplianceSearch -Name "MeganB Inactive Mailbox HR-Content Label Search" -ExchangeLocation .meganb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true -ContentMatchQuery "compliancetag=HR-Content"
@@ -248,7 +248,7 @@ Using this method, you can then identify which labels from the identified label 
 
 ### Change the duration for an eDiscovery Hold
 
-Holds associated with eDiscovery cases are indefinite holds, which means there's no hold duration that can be changed. Items are held forever or until the [hold is removed](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold) or the case is closed.
+Holds associated with eDiscovery cases are indefinite holds, which means there's no hold duration that can be changed. Items are held forever or until the [hold is removed](ediscovery-create-holds.md#removing-content-locations-from-an-ediscovery-hold) or the case is closed.
   
 ### Change the duration for a Litigation Hold
 

@@ -129,13 +129,13 @@ The following table describes the indexing limits that might result in an email 
 
 There are additional limits related to different aspects of searching for content, such as content indexing. For more information about these limits, see the following articles:
 
-- [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md)
+- [Partially indexed items in Content Search](partially-indexed-items-in-ediscovery-content-search.md)
 - [Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 - [Search limits for SharePoint Online](/sharepoint/search-limits)
 
 For information about content searches, see:
 
-- [Content search in Microsoft 365](content-search.md)
+- [Content search in Microsoft 365](ediscovery-content-search.md)
 - [Search for content in a eDiscovery (Standard) case](search-for-content-in-core-ediscovery.md)
 - [Keyword queries and search conditions for content search](keyword-queries-and-search-conditions.md)
 

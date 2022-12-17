@@ -50,7 +50,7 @@ With eDiscovery (Premium), legal teams can create and customize their legal hold
 
 For more information about managing the custodian communication process, see the following: 
 
-- [Create a legal hold notice](create-hold-notification.md)
+- [Create a legal hold notice](ediscovery-create-hold-notification.md)
 
 - [Use the communications editor](using-communications-editor.md)
 

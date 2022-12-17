@@ -24,7 +24,7 @@ ms.custom:
 
 # Investigating partially indexed items in eDiscovery
 
-An eDiscovery search that you run from the Microsoft Purview compliance portal automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-content-search.md#indexing-limits-for-email-messages). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
+An eDiscovery search that you run from the Microsoft Purview compliance portal automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-ediscovery-content-search.md#indexing-limits-for-email-messages). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
   
 - Email messages have an attached file that can't be opened; this is the most common cause of partially indexed email items.
 - Too many files attached to an email message.
@@ -33,7 +33,7 @@ An eDiscovery search that you run from the Microsoft Purview compliance portal a
 
 Although it varies, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed. The reason for the difference between the volume versus size is that larger files have a higher probability of containing content that can't be completely indexed.
 
-For more information about partially index items in Content search, see [Investigating partially indexed items in Content search](partially-indexed-items-in-content-search.md).
+For more information about partially index items in Content search, see [Investigating partially indexed items in Content search](partially-indexed-items-in-ediscovery-content-search.md).
   
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

@@ -22,7 +22,7 @@ ms.custom: seo-marvel-mar2020
 
 # Build search queries for collections in eDiscovery (Premium)
 
-When configuring the search query when creating a [collection](collections-overview.md) in an eDiscovery (Premium) case, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your legal investigation.
+When configuring the search query when creating a [collection](ediscovery-collections.md) in an eDiscovery (Premium) case, you can use keywords to find specific content and conditions to narrow the scope of the search to return items that are most relevant to your legal investigation.
 
 ![Use keywords and conditions to narrow the results of a search.](../media/SearchQueryBox.png)
 
