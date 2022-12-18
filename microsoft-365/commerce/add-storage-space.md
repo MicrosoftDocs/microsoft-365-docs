@@ -69,6 +69,9 @@ If you haven't yet bought extra storage for your subscription, you can do that.
 6. On the **How does this look?** page, verify the number of gigabytes of storage you selected, review the pricing information, and then select **Next**.
 7. On the **Complete order** page, verify the total. If you need to make any changes, select **Edit order**. If the order requires a credit check, select the check box. When you're finished, select **Place order** \> **Go to Admin Home**.
 
+> [!NOTE]
+> Each Microsoft Office 365 Extra File Storage Add-on has 1 GB capacity.
+
 ## Increase or decrease your extra storage
 
 If you've already bought extra file storage via the **Office 365 Extra File Storage** add-on, you can use these steps to increase or decrease the extra storage space for your subscription. You can reduce the storage to as low as 1 gigabyte. To remove all of the extra storage space, [contact support](../admin/get-help-support.md).
