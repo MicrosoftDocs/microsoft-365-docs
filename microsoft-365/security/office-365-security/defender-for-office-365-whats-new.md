@@ -42,6 +42,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## December 2022
+
+- **[Use the built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web):** Use the built-in Report button in Outlook on the web to report junk and phishing messages. You can also use the built-in Report button to report messages that aren't junk.
+
 ## October 2022
 
 - **[Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md):**
