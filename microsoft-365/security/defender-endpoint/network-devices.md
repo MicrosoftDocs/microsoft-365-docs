@@ -97,7 +97,7 @@ Your first step is to select a device that will perform the authenticated networ
 
 To configure scan jobs, the following user permission option is required: **Manage security settings in Defender**. You can find the permission by going to **Settings** \> **Roles**. For more information, see [Create and manage roles for role-based access control](user-roles.md).
 
-## Windows version pre-requisite
+## Windows version pre-requisite for the scanner
 
 The network scanner is supported on Windows 10, version 1903 and Windows Server, version 1903 and later. For more information, see [Windows 10, version 1903 and Windows Server, version 1903](https://support.microsoft.com/topic/windows-10-update-history-e6058e7c-4116-38f1-b984-4fcacfba5e5d).
 
