@@ -144,7 +144,7 @@ On the **Template fields** panel:
 
     ![Screenshot of the template viewer showing the New field for associating a table field.](../media/content-understanding/content-assembly-associate-table-1.png)
 
-2.	Select the table section in the document you want to create a field for. You can view the table selection in the fields panel. 
+2.	Select the table section in the document you want to create a field for. You can view the table selection in the **All fields** panel. 
 
 3.	Confirm the selection, and then select **Next**.
 
@@ -152,12 +152,21 @@ On the **Template fields** panel:
 
     ![Screenshot of the Select a list for adding a source column page.](../media/content-understanding/content-assembly-associate-table-2.png)
 
-5.	Once the list is selected, you can map the list columns to the table columns.
+5.	Once the list is selected, map the list columns to the table columns.
 
     ![Screenshot of the template viewer showing how to map the list columns to the table columns.](../media/content-understanding/content-assembly-associate-table-3.png)
 
+    The associated list column names that match with the table header columns will be filled in automatically, which you can then modify.
 
+6.	Next, map all the table columns to the list columns.
 
+    ![Screenshot of the template viewer showing how to map all the table columns with the list columns.](../media/content-understanding/content-assembly-associate-table-4.png)
+
+7.	When all the table columns are mapped, you can see the table selection in the **All fields** panel.
+
+    ![Screenshot of the template viewer showing the table selection in the All fields panel.](../media/content-understanding/content-assembly-associate-table-5.png)
+
+When users generate documents from the template, they can select relevant list entries to be filled in, and the table rows will increase or decrease based on the number of row selections made.
 
 ### Add an image field
 
@@ -167,7 +176,7 @@ On the **Template fields** panel:
 
     ![Screenshot of the template viewer showing the New field for adding an image field.](../media/content-understanding/content-assembly-add-image-field.png)
 
-2.	Select the image section in the document you want to create a field for. You can view the image name and the alt text (a description of the image) for the selected image in the fields panel.
+2.	Select the image section in the document you want to create a field for. You can view the image name and the alt text (a description of the image) for the selected image in the **All fields** panel.
 
 3.	Confirm the selection, and then select **Next**.
 
