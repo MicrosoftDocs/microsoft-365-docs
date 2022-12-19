@@ -60,7 +60,7 @@ id|String| Scan id.
 scanType|String|The type of scan.
 scanName|String|Name of the scan.
 isActive|Boolean|Status of the scan.
-orgId | Related organization id.
+orgId |String| Related organization id.
 intervalInHours|String |The interval at which the scan will run.
 createdBy|String| Who created the scan.
 targetType|Long|IP target range the scan applies to.
