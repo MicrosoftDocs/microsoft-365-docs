@@ -15,6 +15,7 @@ ms.collection:
 - highpri
 - tier1
 - purview-compliance
+- ediscovery
 search.appverid: 
 - MOE150
 - MET150

@@ -16,6 +16,7 @@ ms.collection:
 - tier1
 - purview-compliance
 - content-search
+- ediscovery
 search.appverid:
 - MOE150
 - MED150
