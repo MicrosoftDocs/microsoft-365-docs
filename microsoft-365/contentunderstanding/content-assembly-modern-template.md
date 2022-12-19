@@ -47,6 +47,8 @@ You can associate fields by:
 
 - [Selecting from a managed metadata term set or term](#associate-a-placeholder-by-selecting-from-a-managed-metadata-term-set-or-term)
 
+- [Adding an image field](#add-an-image-field)
+
 ### Associate a field by entering text or selecting a date
 
 On the **All field** panel:
@@ -113,6 +115,25 @@ On the **All fields** panel:
 
    > [!TIP]
    > When you enable the **Allow new values** option (only allowed for open term sets), users are more likely to add redundant terms in the term store. Redundant terms can make it difficult for admins to manage a term set.
+
+### Add an image field
+
+On the **Template fields** panel:
+
+1.	In the **Name** field, enter a relevant name for the field.
+
+   ![Screenshot of the template viewer showing the New field for adding an image field.](../media/content-understanding/content-assembly-add-image-field.png)
+
+2.	Select the image section in the document you want to create a field for. You can view the Image Name and the Alt Text for the selected image in the fields panel.
+
+3.	Confirm the selection, and then select **Next**.
+
+4.	You can choose to allow authors who will fill in the field to either upload images from any source—OneDrive or SharePoint or from local storage—or restrict the entries by associating it to an image column in a SharePoint list.
+
+5.	You can choose to control how the image selected by the author will be filled in the document. If you select the **Resize** checkbox, then the uploaded image will be scaled to the dimensions of the image selected for templatization. If not selected, then the image dimension of the image uploaded by the author will be persisted.
+
+   > [!TIP]
+   > When you enable the **Resize** option, users are more likely to have favorable results of the image dimensions in the template. 
 
 ## Save a modern template as a draft
 
