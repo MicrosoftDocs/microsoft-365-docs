@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
-ms.subservice: other
+ms.subservice: m365bp
 ms.date: 12/05/2022
 ms.localizationpriority: high
 ms.reviewer: efratka

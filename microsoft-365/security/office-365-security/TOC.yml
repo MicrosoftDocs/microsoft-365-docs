@@ -79,7 +79,7 @@
        - name: Configure your tenant for increased security
          href: tenant-wide-setup-for-increased-security.md
        - name: Security recommendations for priority accounts
-         href: priority accounts-security-recommendations.md
+         href: priority-accounts-security-recommendations.md
        - name: Anti-malware protection
          items:
          - name: Anti-malware protection
@@ -430,7 +430,7 @@
           href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
    - name: Reference
      items:
-     - name: Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals
+     - name: Roles and role groups in the Defender for Office 365 and Purview compliance
        href: scc-permissions.md
      - name: Defender for Office 365 data retention
        href: mdo-data-retention.md

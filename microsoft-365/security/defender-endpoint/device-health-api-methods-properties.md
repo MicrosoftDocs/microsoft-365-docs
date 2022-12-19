@@ -76,7 +76,8 @@ Method|Data type|Description
 > [!NOTE]
 >
 > - The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
-> - Some additional columns might be returned in the response. These columns are temporary and might be removed; please use only the documented columns.
+> - Note that **rbacgroupname** and **Id** are not supported filter operators.
+> - Some additional columns might be returned in the response. These columns can be temporary and might be removed; use only the documented columns.
 
 | Property (ID) | Data type | Description | Example of a returned value |
 |:----|:----|:----|:----|
