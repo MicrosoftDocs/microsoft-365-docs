@@ -42,11 +42,13 @@ search.appverid: met150
 
 ## API description
 
-Add, update or remove an authenticated scan.
+API to Add, update or remove an authenticated scan.
 
 ## Limitations
 
 Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
+You can post on machines last seen according to your configured retention period.
 
 ## Permissions
 
@@ -54,9 +56,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Machine.Read.All| Read all scan information.
 Application|Machine.ReadWrite.All| Read and write all scan information.
-Delegated (work or school account)|Machine.Read.All|Read all scan information.
 Delegated (work or school account)|Machine.Read.Write|Read and write all scan information.
 
 > [!NOTE]
@@ -68,7 +68,7 @@ Delegated (work or school account)|Machine.Read.Write|Read and write all scan in
 ## HTTP request
 
 ```http
-POST https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions
 ```
 
 ## Request headers
@@ -84,8 +84,8 @@ In the request body, supply a JSON object with the following parameters:
 
 Parameter|Type|Description
 :---|:---|:---
-Value|String|The tag name. **Required**.
-Action|Enum|Add or Remove. Allowed values are: 'Add' or 'Remove'. **Required**.
+Value|String|The scan Id. **Required**.
+Action|Enum|Add, Patch or Remove. Allowed values are: 'Add', 'Patch' or 'Remove'. **Required**.
 
 ## Response
 
@@ -93,15 +93,15 @@ If successful, this method returns 200 - Ok response code and the updated Machin
 
 ## Example Request
 
-Here is an example of a request that adds machine tag.
+Here is an example of a request that adds a new scan.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/tags
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions
 ```
 
 ```json
 {
-  "Value" : "test Tag 2",
+  "Value" : "td32f17af-5cc2-4e4e-964a-4c4ef7d216e2",
   "Action": "Add"
 }
 ```

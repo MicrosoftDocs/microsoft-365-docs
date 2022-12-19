@@ -65,57 +65,38 @@ Delegated (work or school account)|Machine.Read.All|Read all scan information.
 ## HTTP request
 
 ```http
-GET /api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId
+POST /api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId
 ```
 
 ## Request headers
 
 Name|Type|Description
 :---|:---|:---
-Authorization|String|Bearer {token}. **Required**.
+Authorization|string|Bearer {token}. **Required**.
+Content-Type|string|application/json. **Required**.
 
 ## Request body
 
-Empty
+In the request body, supply a JSON object with the following parameters:
+
+Parameter|Type|Description
+:---|:---|:---
+ScanDefinitionIds |String|The scan Id. **Required**.
 
 ## Response
 
 If successful, this method returns 200 - OK response code with a list of the scan history for a session.
 
-## Example
-
-### Request example
+## Example request
 
 Here is an example of the request.
 
 ```http
-GET https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId
+POST https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId
 ```
-
-### Response example
-
-Here is an example of the response.
 
 ```json
 {
-"scanType": "Network", 
-"scanName": "Test Network scan", 
-"isActive": true, 
-"target": "127.0.0.1", 
-"intervalInHours": 4, 
-"scannerAgent": { 
-    "machineId": "896226a67c5e2917e44fb5c0368dc6c83129c5bf" 
-    }, 
-"scanAuthenticationParams": { 
-    "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
-    "type": "AuthPriv", 
-    "username": "username", 
-    "authProtocol": "authProtocol", 
-    "authPassword": "authPassword", 
-    "privProtocol": "privProtocol", 
-    "privPassword": "privPassword", 
-    "communityString": "community-string" 
-    } 
-} 
-
+    "ScanDefinitionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae"]
+}
 ```

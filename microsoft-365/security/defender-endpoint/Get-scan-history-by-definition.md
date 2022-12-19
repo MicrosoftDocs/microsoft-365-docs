@@ -73,31 +73,30 @@ POST api/DeviceAuthenticatedScanDefinitions/ScanHistoryByScanDefinitionId
 Name|Type|Description
 :---|:---|:---
 Authorization|String|Bearer {token}. **Required**.
+Content-Type|string|application/json. **Required**.
 
 ## Request body
 
-Empty
+In the request body, supply a JSON object with the following parameters:
+
+Parameter|Type|Description
+:---|:---|:---
+ScanDefinitionIds |String|The scan Id. **Required**.
 
 ## Response
 
 If successful, this method returns 200 - OK response code with a list of the scan history for a definition.
 
-## Example
-
-### Request example
+## Example request
 
 Here is an example of the request.
 
 ```http
-GET https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryByScanDefinitionId
+POST https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryByScanDefinitionId
 ```
 
-### Response example
-
-Here is an example of the response.
-
 ```json
- {
+{
     "ScanDefinitionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae"]
-} 
+}
 ```
