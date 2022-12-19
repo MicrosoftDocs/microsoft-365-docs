@@ -172,12 +172,12 @@ See the following articles to help you learn more and get started using Microsof
 
 ### Get started with eDiscovery (Standard)
 
-- [Get started with eDiscovery (Standard)](get-started-core-ediscovery.md)
+- [Get started with eDiscovery (Standard)](ediscovery-standard-get-started.md)
 
 ### Get started with eDiscovery (Premium)
 
 - [Overview of eDiscovery (Premium)](overview-ediscovery-20.md)
-- [Set up eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
+- [Set up eDiscovery (Premium)](ediscovery-premium-get-started.md)
 - [Create and manage an eDiscovery (Premium) case](ediscovery-create-and-manage-advanced-cases.md)
 
 ## Integration with Insider Risk Management

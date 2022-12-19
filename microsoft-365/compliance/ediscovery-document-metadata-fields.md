@@ -183,4 +183,4 @@ The following table lists the metadata fields for documents in a review set in a
 |||||
 
 > [!NOTE]
-> For more information about searchable properties when searching Office 365 content locations when you're collecting data for an eDiscovery (Premium) case, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+> For more information about searchable properties when searching Office 365 content locations when you're collecting data for an eDiscovery (Premium) case, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).

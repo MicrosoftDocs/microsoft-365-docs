@@ -33,7 +33,7 @@ Review sets are a static set of documents where you can analyze, query, view, ta
 
 - [Tag documents in a review set](tagging-documents.md)
 
-- [Export case data](exporting-data-ediscover20.md)
+- [Export case data](ediscovery-exporting-data.md)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 

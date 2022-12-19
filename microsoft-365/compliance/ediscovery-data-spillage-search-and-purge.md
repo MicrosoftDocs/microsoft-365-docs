@@ -71,7 +71,7 @@ You can also create a new role group that aligns with your organizational needs.
 
 An eDiscovery case provides an effective way to manage your data spillage investigation. You can add members to the role group that you created in Step 1, add the role group as a member of new a eDiscovery case, perform iterative searches to find the spilled data, export a report to share, track the status of the case, and then refer back to the details of the case if needed. Consider establishing a naming convention for eDiscovery cases used for data spillage incidents, and provide as much information as you can in the case name and description so you can locate and refer to in the future if necessary.
   
-To create a new case, you can use eDiscovery in the security and compliance center. See "Create a new case" in [Get started with eDiscovery (Standard)](get-started-core-ediscovery.md#step-3-create-a-ediscovery-standard-case).
+To create a new case, you can use eDiscovery in the security and compliance center. See "Create a new case" in [Get started with eDiscovery (Standard)](ediscovery-standard-get-started.md#step-3-create-a-ediscovery-standard-case).
   
 ## Step 3: Search for the spilled data
 
@@ -112,7 +112,7 @@ After you verified the search results, you may want to share your findings with 
 
 The **Export Summary** report contains the number of locations found with results and the size of the search results. You can use this to compare with the report generated after deletion and provide as a proof of deletion. The **Results** report contains a more detailed summary of the search results, including the subject, sender, recipients, if the email was read, dates, and size of each message. If any of the details in this report contains that actual spilled data, be sure to permanently delete the Results.csv file when the investigation is complete.
 
-For more information about exporting reports, see [Export a Content Search report](export-a-content-search-report.md).
+For more information about exporting reports, see [Export a Content Search report](ediscovery-export-a-content-search-report.md).
     
 ## Step 5: Use message trace log to check how spilled data was shared
 

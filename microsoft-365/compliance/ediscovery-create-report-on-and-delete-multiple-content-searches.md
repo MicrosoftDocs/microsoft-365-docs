@@ -66,7 +66,7 @@ The comma separated value (CSV) file that you create in this step contains a row
    |---|---|
    |`ExchangeLocation`|The SMTP address of the user's mailbox.|
    |`SharePointLocation`|The URL for the user's OneDrive for Business site or the URL for any site in your organization. For the URL for OneDrive for Business sites, use this format: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. For example,  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
-   |`ContentMatchQuery`|The search query for the search. For more information about creating a search query, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).|
+   |`ContentMatchQuery`|The search query for the search. For more information about creating a search query, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).|
    |`StartDate`|For email, the date on or after a message was received by a recipient or sent by the sender. For documents on SharePoint or OneDrive for Business sites, the date on or after a document was last modified.|
    |`EndDate`|For email, the date on or before a message was sent by a sent by the user. For documents on SharePoint or OneDrive for Business sites, the date on or before a document was last modified.|
    |

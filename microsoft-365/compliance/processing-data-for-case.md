@@ -32,8 +32,8 @@ The **Processing** tab in eDiscovery (Premium) provides insight into the status 
 
 For more information, see the following articles:
 
-- [Advanced indexing of custodian data](indexing-custodian-data.md)
+- [Advanced indexing of custodian data](ediscovery-indexing-custodian-data.md)
 
-- [Error remediation when processing data](error-remediation-when-processing-data-in-advanced-ediscovery.md)
+- [Error remediation when processing data](ediscovery-error-remediation-when-processing-data.md)
 
 - [Single item error remediation](single-item-error-remediation.md)

@@ -74,4 +74,4 @@ Use review set filters to filter by message kind or to exclude cloud attachments
 
 **When exporting chat conversation transcripts, will the load file contain all of the expanded metadata and a single item for each transcript?**
 
-All metadata for a conversation is embedded in the HTML transcript file.  Many of the common fields are available in the load file. For more information about exported metadata, see [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).
+All metadata for a conversation is embedded in the HTML transcript file.  Many of the common fields are available in the load file. For more information about exported metadata, see [Document metadata fields in eDiscovery (Premium)](ediscovery-document-metadata-fields.md).

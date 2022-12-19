@@ -31,7 +31,7 @@ Not all documents that you need to analyze in Microsoft Purview eDiscovery (Prem
 
 Using the upload non-Microsoft 365 feature described in this article requires that you have the following:
 
-- All custodians that you want to associate non-Microsoft 365 content to must be assigned the appropriate license. For more information, see [Get started with eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+- All custodians that you want to associate non-Microsoft 365 content to must be assigned the appropriate license. For more information, see [Get started with eDiscovery (Premium)](ediscovery-premium-get-started.md#step-1-verify-and-assign-appropriate-licenses).
 
 - An existing eDiscovery (Premium) case.
 

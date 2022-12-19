@@ -58,7 +58,7 @@ The first step is to connect to [Security & Compliance PowerShell](/powershell/e
 The second step is to create and run a Content search to find the message that you want to remove from mailboxes in your organization. You can create the search by using the [Microsoft Purview compliance portal](https://compliance.microsoft.com) or by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets in Security & Compliance PowerShell. The messages that match the query for this search will be deleted by running the **New-ComplianceSearchAction -Purge** command in [Step 3](#step-3-delete-the-message). For information about creating a Content search and configuring search queries, see the following articles:
 
 - [Content search in Office 365](ediscovery-content-search.md)
-- [Keyword queries for Content search](keyword-queries-and-search-conditions.md)
+- [Keyword queries for Content search](ediscovery-keyword-queries-and-search-conditions.md)
 - [New-ComplianceSearch](/powershell/module/exchange/New-ComplianceSearch)
 - [Start-ComplianceSearch](/powershell/module/exchange/Start-ComplianceSearch)
 

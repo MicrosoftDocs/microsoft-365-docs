@@ -351,7 +351,7 @@ Take advantage of an end-to-end workflow for preserving, collecting, analyzing, 
 
 To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium) case, a user must be assigned the appropriate permissions.
 
-1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-ediscovery-assign-permissions)
+1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](ediscovery-premium-get-started.md#step-2-ediscovery-assign-permissions)
 1. [Add or remove members from a case](ediscovery-add-or-remove-members-from-a-case.md)
 
 ### Step 2 (required): Create a Case
@@ -366,7 +366,7 @@ More organizations use the eDiscovery (Premium) solution in Microsoft 365 for cr
 
 To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. You can manage settings such as attorney-client privilege detection, historical versions and many more.
 
-1. [Configure global settings for eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [Configure global settings for eDiscovery (Premium)](ediscovery-premium-get-started.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [Configure search and analytics settings](ediscovery-configure-search-and-analytics-settings.md)
 1. [Manage jobs in eDiscovery (Premium)](managing-jobs-ediscovery20.md)
 

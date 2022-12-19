@@ -41,7 +41,7 @@ To view the custodian hold policy:
 
 3. Go to the **Holds** tab and select **CustodianHold\<HoldId>**.
 
-4. On the flyout page, you can perform actions like apply a query to your custodian-based hold. For more information about creating a hold query and using conditions, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+4. On the flyout page, you can perform actions like apply a query to your custodian-based hold. For more information about creating a hold query and using conditions, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 ## Manage non-custodial holds
 

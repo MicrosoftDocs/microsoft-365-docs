@@ -244,7 +244,7 @@ You can then drill down into details by using [content explorer](data-classifica
 
 After retention labels are applied to content, either by users or auto-applied, you can use content search to find all items that have a specific retention label applied.
 
-When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 ![Retention label condition.](../media/retention-label-condition.png)
 
@@ -577,12 +577,12 @@ If you are using older eDiscovery tools to preserve data, see the following reso
 
 - Exchange:
   - [In-Place Hold and Litigation Hold](/exchange/security-and-compliance/in-place-and-litigation-holds)
-  - [How to identify the type of hold placed on an Exchange Online mailbox](./identify-a-hold-on-an-exchange-online-mailbox.md)
+  - [How to identify the type of hold placed on an Exchange Online mailbox](./ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md)
 
 - SharePoint and OneDrive:
   - [Add content to a case and place sources on hold in the eDiscovery Center](/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
-- [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md)
+- [Retirement of legacy eDiscovery tools](ediscovery-legacy-retirement.md)
 
 ## Use retention policies and retention labels instead of older features
 

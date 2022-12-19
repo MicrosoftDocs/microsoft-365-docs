@@ -33,7 +33,7 @@ Organizations have many reasons to respond to a legal case involving certain exe
 
 eDiscovery cases let you control who can create, access, and manage eDiscovery cases in your organization. Use cases to add members and control what types of actions they can perform, place a hold on content locations relevant to a legal case, and use the Content Search tool to search the locations on hold for content that might be responsive to your case. Then you can also export and download those results for further investigation by external reviewers.
   
-- [Manage your eDiscovery workflow](./get-started-core-ediscovery.md) by creating and using eDiscovery cases for every legal investigation your organization has to undertake.
+- [Manage your eDiscovery workflow](./ediscovery-standard-get-started.md) by creating and using eDiscovery cases for every legal investigation your organization has to undertake.
 
 - [Assign eDiscovery permissions](ediscovery-assign-permissions.md) to control who can create and manage eDiscovery cases in your organization.
 
@@ -53,7 +53,7 @@ Like the previous section that listed scripts for content search scenarios, we'v
 
 The Microsoft Purview eDiscovery (Premium) solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365. This new solution, called *eDiscovery (Premium)*, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
 
-eDiscovery (Premium) requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Set up eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+eDiscovery (Premium) requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Set up eDiscovery (Premium)](ediscovery-premium-get-started.md#step-1-verify-and-assign-appropriate-licenses).
 
 Here's a quick overview of the built-in workflow in eDiscovery (Premium). For more information, see [Manage the eDiscovery (Premium) workflow](ediscovery-create-and-manage-advanced-cases.md#manage-the-workflow).
 
@@ -71,6 +71,6 @@ Here's a quick overview of the built-in workflow in eDiscovery (Premium). For mo
 
 - [Analyze case data](ediscovery-analyzing-data-in-review-set.md) with advanced analytics tools.
 
-- [Export case data](exporting-data-ediscover20.md) for review by outside counsel.
+- [Export case data](ediscovery-exporting-data.md) for review by outside counsel.
 
 - [Manage long-running jobs](managing-jobs-ediscovery20.md) in eDiscovery (Premium).

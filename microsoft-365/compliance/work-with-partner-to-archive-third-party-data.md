@@ -596,4 +596,4 @@ To revoke consent for a third-party data connector, you can delete the applicati
 
   - [Content Search](ediscovery-content-search.md)
 
-  - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+  - [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md)

@@ -23,7 +23,7 @@ search.appverid:
 
 Various limits are applied to eDiscovery search tools in the Microsoft Purview compliance portal. This includes searches run on the **Content search** page and searches that are associated with an eDiscovery case on the **eDiscovery (Standard)** page. These limits help to maintain the health and quality of services provided to organizations. There are also limits related to the indexing of email messages in Exchange Online for search. You can't modify the limits for eDiscovery searches or email indexing, but you should be aware of them so that you can take these limits into consideration when planning, running, and troubleshooting eDiscovery searches.
 
-For limits related to the Microsoft Purview eDiscovery (Premium) tool, see [Limits in eDiscovery (Premium)](limits-ediscovery20.md)
+For limits related to the Microsoft Purview eDiscovery (Premium) tool, see [Limits in eDiscovery (Premium)](ediscovery-premium-limits.md)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -130,16 +130,16 @@ The following table describes the indexing limits that might result in an email 
 There are additional limits related to different aspects of searching for content, such as content indexing. For more information about these limits, see the following articles:
 
 - [Partially indexed items in Content Search](partially-indexed-items-in-ediscovery-content-search.md)
-- [Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
+- [Investigating partially indexed items in eDiscovery](ediscovery-investigating-partially-indexed-items.md)
 - [Search limits for SharePoint Online](/sharepoint/search-limits)
 
 For information about content searches, see:
 
 - [Content search in Microsoft 365](ediscovery-content-search.md)
 - [Search for content in a eDiscovery (Standard) case](search-for-content-in-core-ediscovery.md)
-- [Keyword queries and search conditions for content search](keyword-queries-and-search-conditions.md)
+- [Keyword queries and search conditions for content search](ediscovery-keyword-queries-and-search-conditions.md)
 
 For case limits related to eDiscovery (Standard) and eDiscovery (Premium), see:
 
-- [Limits in eDiscovery (Standard)](limits-core-ediscovery.md)
-- [Limits in eDiscovery (Premium)](limits-ediscovery20.md)
+- [Limits in eDiscovery (Standard)](ediscovery-standard-limits.md)
+- [Limits in eDiscovery (Premium)](ediscovery-premium-limits.md)

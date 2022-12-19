@@ -202,7 +202,7 @@ For information about limits when exporting content search results, see the "Exp
   - **Trace.log** Contains detailed logging information about the export process and can help uncover issues during export. If you open a ticket with Microsoft Support about an issue related to exporting search results, you may be asked to provide this trace log.
   
     > [!NOTE]
-    > You can just export these documents without having to export the actual search results. See [Export a Content search report](export-a-content-search-report.md).
+    > You can just export these documents without having to export the actual search results. See [Export a Content search report](ediscovery-export-a-content-search-report.md).
   
 ### Exporting partially indexed items
   

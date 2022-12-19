@@ -21,7 +21,7 @@ search.appverid:
 
 # Limits in eDiscovery (Standard)
 
-The following table lists the limits for eDiscovery (Standard) cases and holds associated with a eDiscovery (Standard) case. For more information about Microsoft Purview eDiscovery (Standard), see [Overview of eDiscovery (Standard)](./get-started-core-ediscovery.md).
+The following table lists the limits for eDiscovery (Standard) cases and holds associated with a eDiscovery (Standard) case. For more information about Microsoft Purview eDiscovery (Standard), see [Overview of eDiscovery (Standard)](./ediscovery-standard-get-started.md).
     
   | Description of limit | Limit |
   |:-----|:-----|

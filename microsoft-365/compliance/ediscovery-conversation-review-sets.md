@@ -100,7 +100,7 @@ In a review set, you can use the following options to facilitate the review proc
 
 ### Exporting conversations
 
-For the options you can select when exporting conversations from a review set, see [Export documents from a review set](export-documents-from-review-set.md#export-options).
+For the options you can select when exporting conversations from a review set, see [Export documents from a review set](ediscovery-export-documents-from-review-set.md#export-options).
 
 Specifically, you can export entire chat conversations in a single PDF file or you can export each chat message in a conversation as an individual file.
 
@@ -112,4 +112,4 @@ To learn more about how to review case data in eDiscovery (Premium), see the fol
 - [Tag documents in a review set](tagging-documents.md)
 - [View case data](view-documents-in-review-set.md)
 - [Analyze case data](ediscovery-analyzing-data-in-review-set.md)
-- [Export case data](exporting-data-ediscover20.md)
+- [Export case data](ediscovery-exporting-data.md)

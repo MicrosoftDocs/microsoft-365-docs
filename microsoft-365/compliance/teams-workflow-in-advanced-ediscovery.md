@@ -284,7 +284,7 @@ The following table describes metadata properties for Teams content.
 |Recipients|A list of all users who received a message within the transcript conversation.|
 |TeamsChannelName|The Teams channel name of the transcript.|
 
-For descriptions of other eDiscovery (Premium) metadata properties, see [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).
+For descriptions of other eDiscovery (Premium) metadata properties, see [Document metadata fields in eDiscovery (Premium)](ediscovery-document-metadata-fields.md).
 
 ## Export Teams content
 

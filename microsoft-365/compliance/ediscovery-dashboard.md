@@ -56,7 +56,7 @@ For some cases in Microsoft Purview eDiscovery (Premium), you may have a large v
 
     a. Type a name for the widget, which is displayed in the widget title bar. Naming a widget is required, but it's helpful to identify the widget data.
 
-    b. Select a property in the **Choose pivot** dropdown list that will be used for the widget data. The items in this list are the searchable properties for the items in the review set. For a description of these properties, see [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md). The pivot options for the widget are listed in the **Searchable field name** column in this topic.
+    b. Select a property in the **Choose pivot** dropdown list that will be used for the widget data. The items in this list are the searchable properties for the items in the review set. For a description of these properties, see [Document metadata fields in eDiscovery (Premium)](ediscovery-document-metadata-fields.md). The pivot options for the widget are listed in the **Searchable field name** column in this topic.
 
     c. Select a chart type to display the data from the selected pivot property.
 

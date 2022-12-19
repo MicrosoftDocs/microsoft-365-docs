@@ -29,7 +29,7 @@ Automatic redirection is enabled by default for all users accessing compliance-r
 - [eDiscovery (Premium)](overview-ediscovery-20.md)
 - [Communication compliance](communication-compliance.md)
 - [Content search](search-for-content.md)
-- [eDiscovery (Standard)](get-started-core-ediscovery.md)
+- [eDiscovery (Standard)](ediscovery-standard-get-started.md)
 - [Data classification](data-classification-overview.md)
 - [Data loss prevention (DLP)](dlp-learn-about-dlp.md)
 - [Data subject requests](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)

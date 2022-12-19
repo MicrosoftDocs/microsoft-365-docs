@@ -54,7 +54,7 @@ When you add the content of a search to an existing or new review set, you have 
 
 - **Conversation retrieval options**: Items added to the review set are enabled for threaded conversations to help review content in context of the back and forth conversation. For more information, see [Review conversations in eDiscovery (Premium)](ediscovery-conversation-review-sets.md).
 
-- **Enable retrieval for modern attachments**: Use this option to include modern attachments or linked files in the collection for further review. For more information about the searchable properties related to modern attachments, see [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).
+- **Enable retrieval for modern attachments**: Use this option to include modern attachments or linked files in the collection for further review. For more information about the searchable properties related to modern attachments, see [Document metadata fields in eDiscovery (Premium)](ediscovery-document-metadata-fields.md).
 
 ## Add a sample to a review set
 

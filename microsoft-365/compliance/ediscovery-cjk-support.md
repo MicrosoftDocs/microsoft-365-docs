@@ -37,9 +37,9 @@ Microsoft Purview eDiscovery (Premium) supports double-byte character set langua
 
 **How do I create a search to collect items that contains CJK characters?**
 
-You can use CJK characters for [keyword searches](ediscovery-building-search-queries.md#keyword-searches), [keyword queries and search conditions](keyword-queries-and-search-conditions.md) when searching for content in eDiscovery (Premium). Searching for CJK characters is also supported when searching for content in Microsoft Purview eDiscovery (Standard) and Content Search.
+You can use CJK characters for [keyword searches](ediscovery-building-search-queries.md#keyword-searches), [keyword queries and search conditions](ediscovery-keyword-queries-and-search-conditions.md) when searching for content in eDiscovery (Premium). Searching for CJK characters is also supported when searching for content in Microsoft Purview eDiscovery (Standard) and Content Search.
 
-We provide CJK support for all [search operators](keyword-queries-and-search-conditions.md#search-operators) and [search conditions](keyword-queries-and-search-conditions.md#search-conditions), including the boolean operators **AND**, **OR**, **NOT**, and **NEAR**.
+We provide CJK support for all [search operators](ediscovery-keyword-queries-and-search-conditions.md#search-operators) and [search conditions](ediscovery-keyword-queries-and-search-conditions.md#search-conditions), including the boolean operators **AND**, **OR**, **NOT**, and **NEAR**.
 
 If you're certain that content locations or items contain CJK characters, but searches aren't returning any results, click the query language-country/region icon ![Query language-country/region icon in Content search.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select the corresponding language-country culture code value for the search. The default language/region is neutral.
 

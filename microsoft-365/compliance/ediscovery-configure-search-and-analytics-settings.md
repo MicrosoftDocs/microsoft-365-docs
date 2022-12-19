@@ -48,7 +48,7 @@ To configure search and analytics settings for a case:
 
 ## Near duplicates and email threading
 
-In this section, you can set parameters for duplicate detection, near duplicate detection, and email threading. For more information, see [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md) and [Email threading](email-threading-in-advanced-ediscovery.md).
+In this section, you can set parameters for duplicate detection, near duplicate detection, and email threading. For more information, see [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md) and [Email threading](ediscovery-email-threading.md).
 
 - **Near duplicates/email threading:** When turned on, duplicate detection, near duplicate detection, and email threading are included as part of the workflow when you run analytics on the data in a review set.
 
@@ -84,13 +84,13 @@ There are situations where certain text will diminish the quality of analytics, 
 
 When this setting is turned on, OCR processing will be run on image files. OCR processing is run in the following situations:
 
-- When custodians and [non-custodial data sources](non-custodial-data-sources.md) are added to a case. When OCR is applied to image files, the text in those files will be searchable during a collection. OCR processing is performed during the [Advanced indexing](indexing-custodian-data.md) process. OCR is only run on items that are processed during Advanced indexing. For example, if a large PDF file that is partially indexed or had other indexing errors is processed during Advanced indexing, the file will also have OCR applied. In other words, OCR processing only occurs on files that are re-indexed during the Advanced indexing process. This means there may be situations where custodians are added to a case but some email attachments won't be processed for OCR because those files are not processed during Advanced indexing.
+- When custodians and [non-custodial data sources](non-custodial-data-sources.md) are added to a case. When OCR is applied to image files, the text in those files will be searchable during a collection. OCR processing is performed during the [Advanced indexing](ediscovery-indexing-custodian-data.md) process. OCR is only run on items that are processed during Advanced indexing. For example, if a large PDF file that is partially indexed or had other indexing errors is processed during Advanced indexing, the file will also have OCR applied. In other words, OCR processing only occurs on files that are re-indexed during the Advanced indexing process. This means there may be situations where custodians are added to a case but some email attachments won't be processed for OCR because those files are not processed during Advanced indexing.
 
 - When content from other data sources (that aren't associated with a custodian and added to the case in a non-custodial data source) is added to a review set.
 
 After data is added to a review set, image text can be reviewed, searched, tagged, and analyzed. You can view the extracted text in the Text viewer of the selected image file in the review set. For more information, see:
 
-- [Advanced indexing of custodian data](indexing-custodian-data.md)
+- [Advanced indexing of custodian data](ediscovery-indexing-custodian-data.md)
 
 - [Add search results to a review set](ediscovery-add-data-to-review-set.md#optical-character-recognition)
 

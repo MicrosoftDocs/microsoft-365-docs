@@ -22,7 +22,7 @@ search.appverid:
 
 # Single item error remediation in eDiscovery (Premium)
 
-Error remediation gives Microsoft Purview eDiscovery (Premium) users the ability to rectify data issues that prevent eDiscovery (Premium) from properly processing the content. For example, files that are password protected can't be processed because those files are locked or encrypted. Previously, you could only remediate errors in bulk by using [this workflow](error-remediation-when-processing-data-in-advanced-ediscovery.md). But sometimes, it doesn't make sense to remediate errors in multiple files when you’re unsure if any of those files are responsive to the case you’re investigating. It also might not make sense to remediate errors before you’ve had a chance to review the file metadata (such as file location or who had access) to help you make up-front decisions about responsiveness. A new feature called *single item error remediation* gives eDiscovery managers the ability to view the metadata of files with a processing error and if necessary remediate the error directly in the review set. The article discusses how to identify, ignore, and remediate files with processing errors in a review set.
+Error remediation gives Microsoft Purview eDiscovery (Premium) users the ability to rectify data issues that prevent eDiscovery (Premium) from properly processing the content. For example, files that are password protected can't be processed because those files are locked or encrypted. Previously, you could only remediate errors in bulk by using [this workflow](ediscovery-error-remediation-when-processing-data.md). But sometimes, it doesn't make sense to remediate errors in multiple files when you’re unsure if any of those files are responsive to the case you’re investigating. It also might not make sense to remediate errors before you’ve had a chance to review the file metadata (such as file location or who had access) to help you make up-front decisions about responsiveness. A new feature called *single item error remediation* gives eDiscovery managers the ability to view the metadata of files with a processing error and if necessary remediate the error directly in the review set. The article discusses how to identify, ignore, and remediate files with processing errors in a review set.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -38,7 +38,7 @@ You can also search for documents that have processing errors by using the **Pro
 
 ### Ignore errors
 
-You can ignore a processing error by clicking **Ignore** in the processing error banner. When you ignore an error, the document is removed from the [bulk error remediation workflow](error-remediation-when-processing-data-in-advanced-ediscovery.md). After an error is ignored, the document banner changes color and indicates that the processing error was ignored. At any time, you can revert the decision to ignore the error by clicking **Revert**.
+You can ignore a processing error by clicking **Ignore** in the processing error banner. When you ignore an error, the document is removed from the [bulk error remediation workflow](ediscovery-error-remediation-when-processing-data.md). After an error is ignored, the document banner changes color and indicates that the processing error was ignored. At any time, you can revert the decision to ignore the error by clicking **Revert**.
 
 ![Click Ignore to ignore the processing error.](../media/SIERimage3.png)
 
@@ -75,7 +75,7 @@ To remediate a single document, follow these steps:
 
     ![You can view the remediated file in the native format in the review set.](../media/SIERimage9.png)
 
-For more information about what happens when a document is remediated, see [What happens when files are remediated](error-remediation-when-processing-data-in-advanced-ediscovery.md#what-happens-when-files-are-remediated).
+For more information about what happens when a document is remediated, see [What happens when files are remediated](ediscovery-error-remediation-when-processing-data.md#what-happens-when-files-are-remediated).
 
 ## Search for remediated documents
 

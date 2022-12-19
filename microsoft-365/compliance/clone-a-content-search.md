@@ -132,6 +132,6 @@ After you run the script to clone an existing Content Search, the next step is t
 
 - [Content Search in Office 365](ediscovery-content-search.md)
 
-- [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+- [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md)
 
-- [eDiscovery cases](./get-started-core-ediscovery.md)
+- [eDiscovery cases](./ediscovery-standard-get-started.md)

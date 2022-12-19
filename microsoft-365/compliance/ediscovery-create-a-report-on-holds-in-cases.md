@@ -194,7 +194,7 @@ After you've connected to Security & Compliance PowerShell, the next step is to 
 
 ## More information
 
-The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases](./get-started-core-ediscovery.md).
+The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases](./ediscovery-standard-get-started.md).
 
 - The name of the hold and the name of the eDiscovery case that the hold is associated with.
 
