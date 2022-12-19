@@ -36,9 +36,9 @@ As previously mentioned, many of the apps available within the Intune console ar
 
 For more information, see [Add apps to Microsoft Intune Overview](apps-add-overview.md).
 
-## Purchased app license
+## Acquire app licenses
 
-You can purchase app licenses in-volume through a volume purchase program (VPP). Each device platform provides a VPP method. Apple lets you purchase multiple app licenses using Apple Business Manager. Google provides the Manage Google Play. Depending on your Microsoft Intune license, you may already have Microsoft app licenses for specific apps available to add and deploy. Microsoft also offers the Microsoft Store for Business. Once you've connected your VPP app license with Intune, you can find and add those apps using the regular 'add app' process. For more information, see [Purchase apps in-volume for Intune](apps-purchase-volume.md).
+You can purchase or acquire app licenses in-volume through a volume purchase program (VPP). Each device platform provides a VPP method. Apple lets you purchase multiple app licenses using Apple Business Manager. Google provides the Manage Google Play store to approve and acquire app licenses. Depending on your Microsoft Intune license, you may already have Microsoft app licenses for specific apps available to add and deploy. Microsoft also offers the Microsoft Store for Business. Once you've connected your VPP app license with Intune, you can find and add those apps using the regular 'add app' process. For more information, see [Understanding licensed apps](/mem/intune/apps/apps-add#understanding-licensed-apps) and [Purchase apps in-volume for Intune](apps-purchase-volume.md).
 
 ## Apps requiring account, subscription, or license from the app vendor
 

@@ -433,8 +433,6 @@
           href: apps-purchase-third-party.md
         - name: Purchases within an app
           href: apps-purchase-in-app.md
-        - name: Verify purchased apps
-          href: apps-purchase-verify.md
       - name: Understand app licenses
         items:
         - name: App licenses overview

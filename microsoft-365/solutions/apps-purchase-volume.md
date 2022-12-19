@@ -23,10 +23,13 @@ keywords:
 
 App licenses that you purchase in-volume are purchased through a volume purchase program (VPP). Each device platform provides a VPP method. Apple lets you purchase multiple app licenses using Apple Business Manager. Google provides the Manage Google Play. Depending on your Microsoft Intune license, you may already have Microsoft app licenses available to add and deploy. However, Microsoft also offers the Microsoft Store for Business.
 
-Each device platform has a method to purchase apps for your organization in bulk:
-- Apple provides the Apple Business Manager
-- Google provides Managed Google Play
-- Microsoft provide the Microsoft Store for Business
+Each device platform has a method to acquire apps for your organization in bulk:
+- Apple provides the Apple Business Manager to purchase apps
+- Microsoft provide the Microsoft Store for Business to purchase apps
+- Google provides the Managed Google Play store to acquire managed apps
+
+> [!NOTE]
+> The Managed Google Play store only supports free apps. Standard Google apps are added to Intune as a **Android store app**. Managed Google Play apps are added to Intune as a **Managed Google Play app**.
 
 ## Apple Business Manager<!-- What is it? -->
 
@@ -37,10 +40,14 @@ Apple lets you purchase multiple licenses for an app that you want to use in you
 
 ### Set up Apple Business Manager<!-- How to set up? -->
 
-Before you use Microsoft Intune to manage the iOS/iPadOS and macOS apps that your organization would like to use, you must sign up for Apple Business Manager. However, first make sure you meet the [requirements](https://support.apple.com/guide/apple-business-manager/program-requirements-axm6d9dc7acf/web) to use Apple Business Manager, then you can [sign up for Apple Business Manager](https://support.apple.com/guide/apple-business-manager/sign-up-axm402206497/web). 
+Before you use Microsoft Intune to manage the iOS/iPadOS and macOS apps that your organization would like to use, you must follow Apple's guidelines to check requirements, sign-up, and purchase apps.
+
+Follow Apple's guidelines to set up Apple Business Manager:
+1. Confirm you meet the [requirements](https://support.apple.com/guide/apple-business-manager/program-requirements-axm6d9dc7acf/web) to use Apple Business Manager.
+2. [Sign up for Apple Business Manager](https://support.apple.com/guide/apple-business-manager/sign-up-axm402206497/web).
 
 > [!NOTE]
-> Once you have signed up to use Apple Business Manager, you can sync from Microsoft Intune to manage your Apple apps on your organization's Apple devices. Managing apps includes setting the app configuration policies and the protection policies.
+> After you have signed up to use Apple Business Manager and purchased your app licenses, you can sync from Microsoft Intune to manage your Apple apps on your organization's Apple devices. Managing apps with Intune includes setting the app configuration policies, setting the app protection policies, assigning the apps, and monitor the apps.
 
 ### Purchase apps using Apple Business Manager<!-- How do you buy apps? -->
 
@@ -103,23 +110,12 @@ Where can I find additional information?
 ## Managed Google Play<!-- What is it? -->
 
 
-### Set up Apple Business Manager<!-- How to set up? -->
+### Approve Managed Google Play apps<!-- How to set up? -->
 
 
-### Purchase apps using Managed Google Play<!-- How do you buy apps? -->
-
-Using Managed Google Play, you can purchase standard apps, custom apps, and unlisted apps. Custom and unlisted apps are apps that have been tailored specifically for your organization by apps developers that you, or your organization, have worked with directly.
+### Sync Managed Google Play apps with Intune<!-- What does sync mean (certs)? How to sync? -->
 
 
-
-### Integrate Managed Google Play apps with Intune<!-- What does sync mean (certs)? How to sync? -->
-
-
-#### Synchronize a Managed Google Play VPP token
-
-You can synchronize the app names, metadata and license information for your purchased apps in Intune by choosing **Sync** for a selected token.
-
-Where can I find additional information?
 
 
 
