@@ -11,7 +11,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Learn about advanced data residency options in Microsoft 365.
+description: Learn about People Search in multi-tenant Microsoft 365 organizations.
 ---
 
 # Microsoft 365 Multi-Tenant Organization People Search Private Preview
