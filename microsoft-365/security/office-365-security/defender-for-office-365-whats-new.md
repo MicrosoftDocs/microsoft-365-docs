@@ -42,11 +42,15 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## December 2022
+
+- [Use the built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web): Use the built-in Report button in Outlook on the web to report messages as phish, junk, and not junk. 
+
 ## October 2022
 
-- **[Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md):**
-  - With **allow expiry management** (currently in private preview), if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
-  - Customers in the government cloud environments will now be able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using the admin URL and email attachment submissions. The data submitted through the submissions experience will not leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
+- [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md):
+  - With **allow expiry management** (currently in private preview), if Microsoft hasn't learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
+  - Customers in the government cloud environments will now be able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using the admin URL and email attachment submissions. The data submitted through the submissions experience won't leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
 - **Enhancement in URL click alerts:**
   - With the new lookback scenario, the "A potentially malicious URL click was detected" alert will now include any clicks during the _past 48 hours_ (for emails) from the time the malicious URL verdict is identified. 
 
@@ -64,7 +68,7 @@ For more information on what's new with other Microsoft Defender security produc
   - DoD Environment:
     - From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
     - To Microsoft 365 Defender URL: security.apps.mil
-- Items in the Office 365 Security & Compliance Center that are not related to security aren't redirected to Microsoft 365 Defender. For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886. 
+- Items in the Office 365 Security & Compliance Center that aren't related to security aren't redirected to Microsoft 365 Defender. For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886. 
 - This is a continuation of [Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), announced in March 2022.
 - This change enables users to view and manage additional Microsoft 365 Defender security solutions in one portal.
 - This change impacts all customers who use the Office 365 Security & Compliance Center (protection.office.com), including Microsoft Defender for Office (Plan 1 or Plan 2), Microsoft 365 E3 / E5, Office 365 E3/ E5, and Exchange Online Protection. For the full list, see [Security & Compliance Center - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
@@ -143,7 +147,7 @@ For more information on what's new with other Microsoft Defender security produc
   - Form blocked due to potential phishing attempt
   - Form flagged and confirmed as phishing
   - [New alert policies for ZAP](../../compliance/new-defender-alert-policies.md)
-- Microsoft Defender for Office 365 alerts are now integrated into Microsoft 365 Defender - [Microsoft 365 Defender Unified Alerts Queue and Unified Alerts Queue](../defender/investigate-alerts.md)
+- Microsoft Defender for Office 365 alerts is now integrated into Microsoft 365 Defender - [Microsoft 365 Defender Unified Alerts Queue and Unified Alerts Queue](../defender/investigate-alerts.md)
 - [User Tags](user-tags-about.md) are now integrated into Microsoft Defender for Office 365 alerting experiences, including: the alerts queue and details in Office 365 Security & Compliance, and scoping custom alert policies to user tags to create targeted alert policies.
   - Tags are also available in the unified alerts queue in the Microsoft 365 Defender portal (Microsoft Defender for Office 365 Plan 2)
 
