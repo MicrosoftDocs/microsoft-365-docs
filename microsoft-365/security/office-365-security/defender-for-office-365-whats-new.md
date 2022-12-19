@@ -44,11 +44,11 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## December 2022
 
-- **[Use the built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web):** Use the built-in Report button in Outlook on the web to report junk and phishing messages. You can also use the built-in Report button to report messages that aren't junk.
+- [Use the built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web): Use the built-in Report button in Outlook on the web to report junk and phishing messages. You can also use the built-in Report button to report messages that aren't junk.
 
 ## October 2022
 
-- **[Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md):**
+- [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md):
   - With **allow expiry management** (currently in private preview), if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again.
   - Customers in the government cloud environments will now be able to create allow and block entries for URLs and attachments in the Tenant Allow/Block List using the admin URL and email attachment submissions. The data submitted through the submissions experience will not leave the customer tenant, thus satisfying the data residency commitments for government cloud clients.
 - **Enhancement in URL click alerts:**
