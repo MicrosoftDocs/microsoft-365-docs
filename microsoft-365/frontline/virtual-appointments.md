@@ -83,6 +83,12 @@ Currently, the Teams EHR connector supports integration with the Cerner EHR syst
 - [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
 - [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
 
+## Virtual Appointment meeting template
+
+The Virtual appointment template is a default meeting template in Teams that your users can use to schedule virtual appointments with customers, clients and other people outside your organization. The template allows you to specify values for meeting settings that meeting organizers typically control. Use it to apply default settings and enforce settings.
+
+With this template, you can enable a consistent experience across your organization for virtual appointments scheduled directly within Teams and help enforce compliance requirements. To learn more, see [Virtual appointment meeting template in Teams](/microsoftteams/virtual-appointment-meeting-template).
+
 ## Virtual Appointment Graph API
 
 Developers can programmatically create and manage Virtual Appointments using Microsoft Graph. With the Virtual Appointment Graph API, virtual appointment join links can be embedded in any app, with features that include a waiting room and browser join experience for external attendees.
