@@ -18,7 +18,11 @@ description: Learn about advanced data residency options in Microsoft 365.
 
 ## Overview
 
-The Private Preview program is designed to offer select customers the opportunity to try out the multi-tenant people search feature, validate the scenario, and provide feedback to the product development team. The purpose of this document is to give an overview of the feature, define use cases we currently support as part of the preview, feature roadmap and provide instructions on how you can configure this feature and test it.
+The Private Preview program is designed to offer select customers the opportunity to try out the multi-tenant people search feature. You can then validate the scenario and provide feedback to the product development team. The purpose of this article is to:
+
+- Give an overview of the feature.
+- Define use cases that we currently support as part of the preview.
+- Provide instructions on how you can configure this feature and test it.
 
 ## Feature Overview
 
@@ -30,7 +34,7 @@ The MTO People Search is a collaboration feature that enables search and discove
 
 ### Example
 
-Cameron from Fabrikam has been synced to the target tenant, Woodgrove. Megan from Woodgrove would like to search and view Cameron's people card in Teams. After Cameron has been synced, Megan can search and discover Cameron's people card in any of the M365 apps.
+Cameron from Fabrikam has been synced to the target tenant, Woodgrove. Megan from Woodgrove would like to search and view Cameron's people card in Teams. After Cameron has been synced, Megan can search and discover Cameron's people card in any of the Microsoft 365 apps.
 
 ![Limited people card](../media/mt-people-search/limited-people-card.png)
 
@@ -48,9 +52,9 @@ Cameron from Fabrikam has been synced to the target tenant, Woodgrove. Megan fro
 
 ### Prerequisites
 
-To test the MTO people search scenario, it is assumed that you already have the following:
+To test the MTO people search scenario, it is assumed that you already have the following settings:
 
-- Two Azure AD/M365 tenants
+- Two Azure AD/Microsoft 365 tenants
 
 - The tenants are enabled for Private Preview of Cross Tenant Synchronization
 
@@ -58,12 +62,12 @@ To test the MTO people search scenario, it is assumed that you already have the 
 
 ### Use Cases
 
-Multi-tenant organization people search is supported across a range of scenarios and M365 applications. Some of the scenarios you can test and validate are described below:
+Multi-tenant organization people search is supported across a range of scenarios and Microsoft 365 applications. Some of the scenarios you can test and validate are described below:
 
 1. **Microsoft Outlook (OWA, Desktop and Mobile)**
 
    - <alice@fabrikam.com> searches for "Bob" on the centralized search bar in OWA and gets the results and can view Bobs people card with limited profile information.
-   - <alice@fabrikam.com> types in "Bob" in the to line of the email and can send an email to Bob after getting the results for <bob@woodgrove.ms>.
+   - <alice@fabrikam.com> types in "Bob" in the To line of the email and can send an email to Bob after getting the results for <bob@woodgrove.ms>.
    - <alice@fabrikam.com> \@mentions "Bob" in the body of the email and can get the result for <bob@woodgrove.ms>.
    - <alice@fabrikam.com> types in "Bob" in the cc line of the email and can get the result for <bob@woodgrove.ms>.
    - Alice can hover and/or click on Bob's facepile to view Bob's limited people card.
@@ -93,7 +97,7 @@ Multi-tenant organization people search is supported across a range of scenarios
 
 - Home tenant admin: The IT admin in the home tenant.
 
-- Cross-Tenant synchronization is a feature enables multi-tenant organizations to grant users access to applications in other tenants within the organization. It does this by synchronizing internal member users from a home tenant into a resource tenants as external B2B users.
+- Cross-Tenant synchronization is a feature enables multi-tenant organizations to grant users access to applications in other tenants within the organization. It achieves this result by synchronizing internal member users from a home tenant into a resource tenant as external B2B users.
 
 ## Contact Us
 
