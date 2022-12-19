@@ -51,7 +51,7 @@ You can associate fields by:
 
 ### Associate a field by entering text or selecting a date
 
-On the **All field** panel:
+On the **All fields** panel:
 
 1. In the **Name** field, enter a relevant name for the field.
 
