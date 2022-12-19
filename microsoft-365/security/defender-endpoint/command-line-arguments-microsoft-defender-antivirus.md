@@ -97,6 +97,7 @@ The following table lists common errors that can occur while using the MpCmdRun 
 
 ## See also
 
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
 - [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
