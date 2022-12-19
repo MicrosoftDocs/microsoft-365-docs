@@ -20,7 +20,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 12/05/2022
+ms.date: 12/16/2022
 ---
 # Microsoft Teams Advanced Virtual Appointments activity report
 
@@ -28,7 +28,7 @@ ms.date: 12/05/2022
 
 The Advanced Virtual Appointments activity report in the Microsoft Teams admin center provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview).
 
-To view the report, you must be a global admin, Teams admin, Global reader, or Report reader, and your organization must be using advanced Virtual Appointments capabilities.
+To view the report, you must be a Global admin, Teams admin, Global reader, or Report reader, and your organization must be using advanced Virtual Appointments capabilities.
 
 The report shows usage information for the following features.
 
@@ -75,5 +75,5 @@ Select **View details** to view the report.
 
 ## Related articles
 
-- [Teams Virtual Appointments usage report](virtual-appointments-usage-report.md)
+- [Virtual Appointments usage report](virtual-appointments-usage-report.md)
 - [Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)

@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 12/08/2022
+ms.date: 12/14/2022
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -35,7 +35,7 @@ Defender for Business provides a streamlined setup and configuration experience,
 
 The following diagram depicts the overall setup and configuration process for Defender for Business. If you used the setup wizard, then you've likely already completed steps 1-3, and possibly step 4. 
 
-:::image type="content" source="media/mdb-setup-process.png" alt-text="Setup and configuration process for Defender for Business.":::
+:::image type="content" source="media/mdb-setup-process.png" alt-text="Setup and configuration for Defender for Business.":::
 
 | Step  | Article | Description  |
 |---------|---------|--------|
