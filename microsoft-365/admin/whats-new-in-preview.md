@@ -72,7 +72,7 @@ You can now find all the same guides from the Microsoft 365 admin center on [set
 
 We’ve also released a new advanced deployment guide for setting up your [Microsoft Zero Trust security model](https://setup.microsoft.com/purview/zero-trust-setup-guide) and are planning the release of a new guide for Windows 365 Cloud PC configuration in early 2023.
 
-To learn more, see [Simplify deployment of Microsoft 365 with new and updated deployment guides]((https://techcommunity.microsoft.com/t5/microsoft-365-blog/simplify-deployment-of-microsoft-365-with-new-and-updated/ba-p/3687463)).
+To learn more, see [Simplify deployment of Microsoft 365 with new and updated deployment guides](https://techcommunity.microsoft.com/t5/microsoft-365-blog/simplify-deployment-of-microsoft-365-with-new-and-updated/ba-p/3687463).
 
 ## November 2022
 
