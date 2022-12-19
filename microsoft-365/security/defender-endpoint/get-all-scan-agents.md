@@ -1,7 +1,7 @@
 ---
 title: Get all scan agents
 description: Learn how to use the Get all scan agents API
-keywords: apis, graph api, supported apis
+keywords: apis, graph api, supported apis, scan, authenticated scan, agent
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -54,18 +54,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|File.Read.All|'Read all file profiles'
-Delegated (work or school account)|File.Read.All|'Read all file profiles'
+Application|Machine.Read.All| Read all scan information.
+Delegated (work or school account)|Machine.Read.All|Read all scan information.
 
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> - To view data the user needs to have at least the following role permission: 'ViewData' or 'TvmViewData' (See [Create and manage roles](user-roles.md) for more information)
 
 ## HTTP request
 
 ```http
-GET /api/files/{id}
+GET /api/DeviceAuthenticatedScanAgents
 ```
 
 ## Request headers
@@ -80,7 +80,7 @@ Empty
 
 ## Response
 
-If successful and file exists - 200 OK with the [file](files.md) entity in the body. If file does not exist - 404 Not Found.
+If successful, this method returns 200 - OK response code with a list of authenticated scan agents.
 
 ## Example
 
@@ -89,7 +89,7 @@ If successful and file exists - 200 OK with the [file](files.md) entity in the b
 Here is an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
+https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanAgents
 ```
 
 ### Response example
@@ -98,22 +98,20 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Files/$entity",
-    "sha1": "4388963aaa83afe2042a46a3c017ad50bdcdafb3",
-    "sha256": "413c58c8267d2c8648d8f6384bacc2ae9c929b2b96578b6860b5087cd1bd6462",
-    "globalPrevalence": 180022,
-    "globalFirstObserved": "2017-09-19T03:51:27.6785431Z",
-    "globalLastObserved": "2020-01-06T03:59:21.3229314Z",
-    "size": 22139496,
-    "fileType": "APP",
-    "isPeFile": true,
-    "filePublisher": "CHENGDU YIWO Tech Development Co., Ltd.",
-    "fileProductName": "EaseUS MobiSaver for Android",
-    "signer": "CHENGDU YIWO Tech Development Co., Ltd.",
-    "issuer": "VeriSign Class 3 Code Signing 2010 CA",
-    "signerHash": "6c3245d4a9bc0244d99dff27af259cbbae2e2d16",
-    "isValidCertificate": false,
-    "determinationType": "Pua",
-    "determinationValue": "PUA:Win32/FusionCore"
+    "@odata.context": "https://api-us.securitycenter.microsoft.com/api/$metadata#DeviceAuthenticatedScanAgents",
+    "value": [
+        {
+            "id": "47df41a0c-asad-4fd6d3-bbea-a93dbc0bfcaa_4edd75b2407a5b64d704b4e53d74f15",
+            "machineId": "4ejh675b240118fbehiuiy5b64d704b4e53d15",
+            "lastSeen": "2022-05-08T12:18:41.538203Z",
+            "computerDnsName": "TEST_DOMAIN"
+        },
+        {
+            "id": "47d41a0c-1dfd-46d3-bbea-a93dbc0bfcaa_eb663a27ae9d032f61bc268oiu4c4b90f77",
+            "machineId": "eb663a27ae9d032sdf9dfd79eedf14c4b90f77",
+            "lastSeen": "2022-12-19T20:29:04.8242449Z",
+            "computerDnsName": "TEST_DOMAIN"
+        },
+    ]
 }
 ```

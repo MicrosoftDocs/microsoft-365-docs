@@ -1,7 +1,7 @@
 ---
 title: Get scan definitions
 description: Learn how to use the Get all scan definition APIs.
-keywords: apis, graph api, supported apis,
+keywords: apis, graph api, supported apis, scan, authenticated scan
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -54,14 +54,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Machine.Read.All|View scans.
-Application|File.Read.All|'Read all file profiles'
-Delegated (work or school account)|Machine.Read.All|View scans.
+Application|Machine.Read.All| Read all scan information.
+Delegated (work or school account)|Machine.Read.All|Read all scan information.
+
+> [!NOTE]
+> When obtaining a token using user credentials:
+>
+> - To view data the user needs to have at least the following role permission: 'ViewData' or 'TvmViewData' (See [Create and manage roles](user-roles.md) for more information)
 
 ## HTTP request
 
 ```http
-/api/DeviceAuthenticatedScanDefinitions
+GET /api/DeviceAuthenticatedScanDefinitions
 ```
 
 ## Request headers
@@ -76,7 +80,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 - OK response code with a collection of authenticated scan definitions.
+If successful, this method returns 200 - OK response code with a list of authenticated scan definitions.
 
 ## Example
 
@@ -94,24 +98,30 @@ Here is an example of the response.
 
 ```json
 {
+"@odata.context": "https://api-us.securitycenter.microsoft.com/api/$metadata#DeviceAuthenticatedScanDefinitions",
+    "value": [
+{
+"id": "60c4vv57-c173-4478-8d58-23091d79ec9d", 
 "scanType": "Network", 
 "scanName": "Test Network scan", 
 "isActive": true, 
 "target": "127.0.0.1", 
-"intervalInHours": 4, 
-"scannerAgent": { 
-    "machineId": "896226a67c5e2917e44fb5c0368dc6c83129c5bf" 
-    }, 
-"scanAuthenticationParams": { 
-    "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
-    "type": "AuthPriv", 
-    "username": "username", 
-    "authProtocol": "authProtocol", 
-    "authPassword": "authPassword", 
-    "privProtocol": "privProtocol", 
-    "privPassword": "privPassword", 
-    "communityString": "community-string" 
-    } 
-} 
-
+"intervalInHours": 1, 
+"createdBy": "test@contoso.com",
+"targetType": null,
+"scanAuthenticationParams": null,
+"scannerAgent": {
+    "id": "47d41a0c-xxx-46d3-bbea-93dbc0bfcaa_1bc268a79eedf14c4b90f77",
+    "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
+    "machineName": "DESKTOP-TEST",
+    "lastSeen": "2021-12-19T20:29:04.8242449Z"
+            },
+            "latestScan": {
+            "status": "Fail",
+            "failureReason": null,
+            "executionDateTime": "2021-12-19T20:06:55.2295854Z"
+            } 
+        }
+    ]
+}
 ```

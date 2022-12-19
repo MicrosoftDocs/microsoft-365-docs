@@ -83,7 +83,7 @@ Your first step is to select a device that will perform the authenticated networ
 
 7. Proxy client configuration: No extra configuration is required other than the Defender for Endpoint device proxy requirements.
 
-8. To allow the network scanner to be authenticated and work properly, it's essential that you add the following domains/URLs:
+8. To allow the scanner to be authenticated and work properly, it's essential that you add the following domains/URLs:
 
     - login.windows.net
     - \*.security.microsoft.com
@@ -99,24 +99,24 @@ To configure scan jobs, the following user permission option is required: **Mana
 
 ## Windows version pre-requisite for the scanner
 
-The network scanner is supported on Windows 10, version 1903 and Windows Server, version 1903 and later. For more information, see [Windows 10, version 1903 and Windows Server, version 1903](https://support.microsoft.com/topic/windows-10-update-history-e6058e7c-4116-38f1-b984-4fcacfba5e5d).
+The scanner is supported on Windows 10, version 1903 and Windows Server, version 1903 and later. For more information, see [Windows 10, version 1903 and Windows Server, version 1903](https://support.microsoft.com/topic/windows-10-update-history-e6058e7c-4116-38f1-b984-4fcacfba5e5d).
 
-## Install the network scanner
+## Install the scanner
 
 1. Go to **Microsoft 365 security** \> **Settings** \> **Device discovery** \> **Authenticated scans**.
 
-2. Download the network scanner and install it on the designated Defender for Endpoint scanning device.
+2. Download the scanner and install it on the designated Defender for Endpoint scanning device.
 
      :::image type="content" source="../../media/defender-endpoint/network-authenticated-scan-new.png" alt-text="Screenshot of the add new authenticated scan screen" lightbox="../../media/defender-endpoint/network-authenticated-scan-new.png":::
 
-## Network scanner installation & registration
+## Scanner installation & registration
 
 The signing-in process can be completed on the designated scanning device itself or any other device (for example, your personal client device).
 
 > [!NOTE]
 > Both the account the user signs in with and the device being used to complete the sign in process, must be in the same tenant where the device is onboarded to Microsoft Defender for Endpoint.
 
-To complete the network scanner registration process:
+To complete the scanner registration process:
 
 1. Copy and follow the URL that appears on the command line and use the provided installation code to complete the registration process.
 
@@ -127,13 +127,13 @@ To complete the network scanner registration process:
 
 3. When finished, you should see a message confirming you have signed in.
 
-### Updates for Network scanner
+### Updates for scanner
 
-The network scanner has a scheduled task that, by default, is configured to look for updates on a regular basis. When the task runs, it compares the version of the network scanner on the client device to the version of the agent on the update location. The update location is where Windows looks for updates, such as on a network share or from the internet.
+The scanner has a scheduled task that, by default, is configured to look for updates on a regular basis. When the task runs, it compares the version of the scanner on the client device to the version of the agent on the update location. The update location is where Windows looks for updates, such as on a network share or from the internet.
 
 If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. Once the required updates are determined, the downloading of the updates will start.
 
-It's possible to disable automatic updates of the network scanner by going to the **MDATP Network Scanner Updater** inside the Windows Task Scheduler. To do this:
+It's possible to disable automatic updates of the scanner by going to the **MDATP Network Scanner Updater** inside the Windows Task Scheduler. To do this:
 
 - In Windows, go to **Computer Management** > **Task Scheduler** > **Task Scheduler Library**.
 - Select **MDATP Network Scanner Updater** > right-click > and select **Disable**.
@@ -180,7 +180,7 @@ Newly discovered devices will be shown under the new **Network devices** tab in 
 
 ## Troubleshooting
 
-### Network scanner installation has failed
+### Scanner installation has failed
 
 Verify that the required URLs are added to the allowed domains in your firewall settings. Also, make sure proxy settings are configured as described in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
@@ -192,7 +192,7 @@ Verify that the required URLs are added to the allowed domains in your firewall.
 
 The scan results should be updated a few hours after the initial scan that took place after completing the network device authenticated scan configuration.
 
-If devices are still not shown, verify that the service 'MdatpNetworkScanService' is running on your devices being scanned, on which you installed the network scanner, and perform a "Run scan" in the relevant network device authenticated scan configuration.
+If devices are still not shown, verify that the service 'MdatpNetworkScanService' is running on your devices being scanned, on which you installed the scanner, and perform a "Run scan" in the relevant network device authenticated scan configuration.
 
 If you still don't get results after 5 minutes, restart the service.
 

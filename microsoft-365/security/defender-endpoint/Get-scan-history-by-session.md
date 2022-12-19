@@ -1,7 +1,7 @@
 ---
 title: Get scan history by session
 description: Learn how to use the Get all scan definition APIs.
-keywords: apis, graph api, supported apis,
+keywords: apis, graph api, supported apis, scan history by session
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -54,14 +54,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Machine.Read.All|View scans.
-Application|File.Read.All|'Read all file profiles'
-Delegated (work or school account)|Machine.Read.All|View scans.
+Application|Machine.Read.All| Read all scan information.
+Delegated (work or school account)|Machine.Read.All|Read all scan information.
+
+> [!NOTE]
+> When obtaining a token using user credentials:
+>
+> - To view data the user needs to have at least the following role permission: 'ViewData' or 'TvmViewData' (See [Create and manage roles](user-roles.md) for more information)
 
 ## HTTP request
 
 ```http
-/api/DeviceAuthenticatedScanDefinitions
+GET /api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId
 ```
 
 ## Request headers
@@ -76,7 +80,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 - OK response code with a collection of authenticated scan definitions.
+If successful, this method returns 200 - OK response code with a list of the scan history for a session.
 
 ## Example
 
@@ -85,7 +89,7 @@ If successful, this method returns 200 - OK response code with a collection of a
 Here is an example of the request.
 
 ```http
-GET https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions
+GET https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId
 ```
 
 ### Response example

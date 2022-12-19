@@ -1,6 +1,6 @@
 ---
 title: Add, update or remove a scan definition
-description: Learn how to use the Add or Remove scan definitions.
+description: Learn how to use the Add, update or Remove scan definitions.
 keywords: apis, graph api, supported apis, scans, network scans, authenticated scan
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -54,19 +54,21 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Machine.ReadWrite.All|'Read and write all machine information'
-Delegated (work or school account)|Machine.ReadWrite|'Read and write machine information'
+Application|Machine.Read.All| Read all scan information.
+Application|Machine.ReadWrite.All| Read and write all scan information.
+Delegated (work or school account)|Machine.Read.All|Read all scan information.
+Delegated (work or school account)|Machine.Read.Write|Read and write all scan information.
 
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'Manage security setting'. For more (See [Create and manage roles](user-roles.md) for more information).
-> - The user needs to have access to the machine, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information).
+> - To view data the user needs to have at least the following role permission: 'ViewData' or 'TvmViewData' (See [Create and manage roles](user-roles.md) for more information)
+> - To edit data the user needs to have at least the following role permission: 'ManageSecurity' (See [Create and manage roles](user-roles.md) for more information)
 
 ## HTTP request
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
+POST https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions
 ```
 
 ## Request headers
