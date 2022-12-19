@@ -124,7 +124,7 @@ On the **Template fields** panel:
 
     ![Screenshot of the template viewer showing the New field for adding an image field.](../media/content-understanding/content-assembly-add-image-field.png)
 
-2.	Select the image section in the document you want to create a field for. You can view the Image Name and the Alt Text for the selected image in the fields panel.
+2.	Select the image section in the document you want to create a field for. You can view the image name and the alt text (a description of the image) for the selected image in the fields panel.
 
 3.	Confirm the selection, and then select **Next**.
 
