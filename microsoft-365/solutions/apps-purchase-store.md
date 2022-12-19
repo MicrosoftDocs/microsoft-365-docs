@@ -51,6 +51,16 @@ The following table lists the specific store app types and how you can add them 
 
 You can add an app in from the Intune console by selecting **Apps** > **All apps** > **Add**. The **Select app type** pane is displayed and allows you to select one of the above app types.
 
+## Managed Google Play<!-- What is it? -->
+
+
+### Approve Managed Google Play apps<!-- How to set up? -->
+
+
+### Sync Managed Google Play apps with Intune<!-- What does sync mean (certs)? How to sync? -->
+
+
+
 ## Removing store limitations
 
 An Android Enterprise fully managed device will not allow employees to install any apps that are not approved by the organization. Also, employees will not be able to remove any installed apps against policy. If you wish to allow users to access the full Google Play store to install apps rather than only having access to the approved apps in Managed Google Play store, you can set the **Allow access to all apps in Google Play store** to **Allow**. With this setting, the user can access all the apps in the Google Play store using their corporate account, however purchases may be limited. You can remove the limited purchases restriction by allowing users to add new accounts to the device. Doing so will enable end users to have the ability to purchase apps from the Google Play store using personal accounts, and conduct in-app purchases. For more information, see [Android Enterprise device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-android-for-work).

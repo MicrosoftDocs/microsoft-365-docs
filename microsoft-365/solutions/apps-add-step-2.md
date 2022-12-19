@@ -1,11 +1,11 @@
 ---
-title: "Understand supported app types in Intune"
+title: "Step 2. Determine who will use the app"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Understand supported app types in Intune.
+description: Step 2. Determine who will use the app.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,5 +14,4 @@ ms.custom:
 keywords:
 ---
 
-# Understand supported app types in Intune
-
+# Step 2. Determine who will use the app

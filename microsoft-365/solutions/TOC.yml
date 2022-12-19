@@ -429,10 +429,6 @@
           href: apps-purchase-store.md
         - name: Purchase apps in-volume
           href: apps-purchase-volume.md
-        - name: Purchase third-party apps
-          href: apps-purchase-third-party.md
-        - name: Purchases within an app
-          href: apps-purchase-in-app.md
       - name: Understand app licenses
         items:
         - name: App licenses overview
@@ -443,12 +439,18 @@
         items:
         - name: Add apps overview
           href: apps-add-overview.md
-        - name: Understand supported app types
-          href: apps-add-supported.md
-        - name: Assess app requirements
-          href: apps-add-assess.md
-        - name: Add apps to Intune
-          href: apps-add-apps.md
+        - name: Step 1. Assess app requirements
+          href: apps-add-step-1.md
+        - name: Step 2. Determine who will use the app
+          href: apps-add-step-2.md
+        - name: Step 3. Determine the type of app for your solution
+          href: apps-add-step-3.md
+        - name: Step 4. Understand apps and cloud storage
+          href: apps-add-step-4.md
+        - name: Step 5. Create categories for apps
+          href: apps-add-step-5.md
+        - name: Step 6. Add apps to Intune
+          href: apps-add-step-6.md
 
 - name: Industry-specific guidance
   items: 

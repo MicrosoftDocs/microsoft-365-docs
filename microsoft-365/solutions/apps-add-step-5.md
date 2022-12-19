@@ -1,11 +1,11 @@
 ---
-title: "In-app purchases for apps in Intune"
+title: "Step 5. Create and edit categories for apps"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: In-app purchases for apps in Intune.
+description: Step 5. Create and edit categories for apps.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,8 +14,4 @@ ms.custom:
 keywords:
 ---
 
-# In-app purchases for apps in Intune
-
-##Types of in-app purchases 
-
-## Control in-app purchases 
+# Step 5. Create and edit categories for apps

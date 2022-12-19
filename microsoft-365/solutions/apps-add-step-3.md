@@ -1,11 +1,11 @@
 ---
-title: "Purchase third-party apps for Intune"
+title: "Step 3. Determine the type of app for your solution"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Purchase third-party apps for Intune.
+description: Step 3. Determine the type of app for your solution.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,6 +14,4 @@ ms.custom:
 keywords:
 ---
 
-# Purchase third-party apps for Intune
-
-## Understand first-party and third-party apps
+# Step 3. Determine the type of app for your solution

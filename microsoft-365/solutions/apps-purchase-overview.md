@@ -65,19 +65,21 @@ Areas of support include the following:
 - [Core Intune app protection policy settings](/mem/intune/apps/apps-supported-intune-apps.md#core-app-settings)
 - [Advanced Intune app protection policy and app configuration policy settings](/mem/intune/apps/apps-supported-intune-apps.md#advanced-app-settings)
 
-For more information about partner productivity apps, see [Purchase third-party apps for Intune](apps-purchase-third-party.md).
-
 ### Partner UEM apps
 
 In addition to standard store apps that can be managed, you can add specific [partner UEM apps](/mem/intune/apps/apps-supported-intune-apps.md#partner-uem-apps) to Intune. These apps are also available in either the Google Play Store or the Apple App Store. However, these apps are capable of supporting advanced app protection policy and app configuration policy settings. You may need to work directly with the app vendor to purchase a license, subscription, or account for each user to use the related app.
 
-For more information about partner UEM apps, see [Purchase third-party apps for Intune](apps-purchase-third-party.md).
-
 ### In-app purchases
 
-Many apps offer core functionality for free, however there are those apps that provide additional capabilities that you can purchase from within the app. Purchasing additional app functionality within an app is called "in-app purchases". You can choose to block in-app purchases specifically for iOS devices using device restriction settings. On Android devices, you can allow access to all apps in Google Play store by allowing users to add new accounts to the device. However, doing so will enable end users not only to have the ability to conduct in-app purchases from the Google Play store using personal accounts, but purchase apps as well.
+Many apps offer core functionality for free, however there are those apps that provide additional capabilities that you can purchase from within the app. Purchasing additional app functionality within an app is called "in-app purchases". 
 
-For more information about in-app purchases, see [In-app purchases for apps in Intune](apps-purchase-in-app.md).
+### iOS in-app purchase settings
+
+You can choose to block in-app purchases specifically for iOS devices using device restriction settings. To force users to enter the Apple ID password for each in-app or ITunes purchase, you can set **Require iTunes Store password for all purchases** to **Yes**. However, the default is **Not configured**. Intune doesn't change or update this setting. By default, the OS might allow purchases without prompting for a password every time. To block in-app purchases from the Apple store, set **Block in-app purchases** to **Yes**. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the OS might allow store purchases within a running app.
+
+### Android in-app purchase settings
+
+On Android devices, you can allow access to all apps in Google Play store by allowing users to add new accounts to the device. However, doing so will enable end users not only to have the ability to conduct in-app purchases from the Google Play store using personal accounts, but purchase apps as well.
 
 ## Verify purchased apps in Intune
 

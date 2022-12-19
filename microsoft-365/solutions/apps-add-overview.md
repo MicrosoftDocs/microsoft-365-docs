@@ -16,6 +16,5 @@ keywords:
 
 # Add apps to Microsoft Intune Overview
 
-Before you distribute managed apps to your workforce, you first need to add the apps to Intune. In addition, once you've added your apps to include, you should consider creating app protection policies that you can assign to your workforce and the devices your workforce uses.
+Before you distribute a managed app to your workforce, you first need to add the app to Intune. Once added, you can create both configuration and protection policies to support the app. When you're ready, you can assign the apps to the members of your organization. 
 
-Intune makes it easy to find and add store apps.

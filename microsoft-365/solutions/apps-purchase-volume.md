@@ -21,118 +21,91 @@ keywords:
 ## Volume purchased apps by platform
 -->
 
-App licenses that you purchase in-volume are purchased through a volume purchase program (VPP). Each device platform provides a VPP method. Apple lets you purchase multiple app licenses using Apple Business Manager. Google provides the Manage Google Play. Depending on your Microsoft Intune license, you may already have Microsoft app licenses available to add and deploy. However, Microsoft also offers the Microsoft Store for Business.
+App licenses that you purchase in-volume are purchased through a volume purchase program (VPP). Apple lets you purchase multiple app licenses using Apple Business Manager. Microsoft offers the Microsoft Store for Business. Depending on your Microsoft Intune license, you may already have Microsoft app licenses available to add and deploy.
 
-Each device platform has a method to acquire apps for your organization in bulk:
+Both Apple and Microsoft have methods to acquire apps for your organization in bulk:
 - Apple provides the Apple Business Manager to purchase apps
 - Microsoft provide the Microsoft Store for Business to purchase apps
-- Google provides the Managed Google Play store to acquire managed apps
 
 > [!NOTE]
-> The Managed Google Play store only supports free apps. Standard Google apps are added to Intune as a **Android store app**. Managed Google Play apps are added to Intune as a **Managed Google Play app**.
+> The Managed Google Play store only supports free apps. Standard Google apps are added to Intune as a **Android store app**. To add a **Managed Google Play app**, you must find and approve the app from the Managed Google Play store, then sync the app with Intune.
 
 ## Apple Business Manager<!-- What is it? -->
 
-Apple lets you purchase multiple licenses for an app that you want to use in your organization on iOS/iPadOS and macOS devices using [Apple Business Manager](https://business.apple.com/). Apple Business Manager is web-based portals. Once you set up Apple Business Manager, you can purchase the apps needed to support your organization's Apple devices. Once you purchases apps, you can synchronize your purchase information with Intune.
+[Apple Business Manager](https://business.apple.com/) is a web-based portal that allows you to purchase apps that can be managed by Intune. Apple lets you purchase multiple licenses for an app that you can use for your organization on iOS/iPadOS and macOS devices. Once you set up Apple Business Manager, you can purchase the apps that you need. After purchasing apps, you can synchronize and manage your purchased licenses using Intune. In addition to managing apps, you can use Intune to enroll and manage the Apple devices used by your organization.
 
 > [!NOTE]
-> If your organization is a school, you can use [Apple School Manager](https://school.apple.com/) to purchase apps. Once the apps are purchased, you can sync Apple School Manager with Microsoft Intune, where you can manage those apps. For Apple School Manager set up details, see [Set up Apple School Manager](https://support.apple.com/guide/deployment-education/set-up-apple-school-manager-edu42181fe4b/1/web/1.0).
+> If your organization is a school, you can use [Apple School Manager](https://school.apple.com/) to purchase apps. Once the apps are purchased, you can sync Apple School Manager with Microsoft Intune, where you can manage those apps. For Apple School Manager set up details, see [Set up Apple School Manager](https://support.apple.com/guide/deployment-education/set-up-apple-school-manager-edu42181fe4b).
 
 ### Set up Apple Business Manager<!-- How to set up? -->
 
-Before you use Microsoft Intune to manage the iOS/iPadOS and macOS apps that your organization would like to use, you must follow Apple's guidelines to check requirements, sign-up, and purchase apps.
+You can purchase app licenses from Apple Business Manager in-volume. Before purchasing licenses, first determine the number of licenses you need. Once you have purchased the app licenses, you can then synchronize your volume purchase information with Intune and track your volume-purchased app use. Purchasing app licenses helps you efficiently manage apps within your company and retain ownership and control of purchased apps. Before you use Microsoft Intune to manage the iOS/iPadOS and macOS apps that your organization would like to use, you must follow Apple's guidelines to check requirements, sign-up, and purchase apps.
 
 Follow Apple's guidelines to set up Apple Business Manager:
 1. Confirm you meet the [requirements](https://support.apple.com/guide/apple-business-manager/program-requirements-axm6d9dc7acf/web) to use Apple Business Manager.
-2. [Sign up for Apple Business Manager](https://support.apple.com/guide/apple-business-manager/sign-up-axm402206497/web).
+2. [Sign up for Apple Business Manager](https://support.apple.com/guide/apple-business-manager/sign-up-axm402206497).
 
 > [!NOTE]
-> After you have signed up to use Apple Business Manager and purchased your app licenses, you can sync from Microsoft Intune to manage your Apple apps on your organization's Apple devices. Managing apps with Intune includes setting the app configuration policies, setting the app protection policies, assigning the apps, and monitor the apps.
+> After you have signed up to use Apple Business Manager and purchased your app licenses, you can sync from Microsoft Intune to manage your Apple apps on the Apple devices used at your organization. Managing apps with Intune includes setting the app configuration policies, setting the app protection policies, assigning the apps, and monitor the apps. 
 
 ### Purchase apps using Apple Business Manager<!-- How do you buy apps? -->
 
-Using Apple Business Manager, you can purchase standard apps, custom apps, and unlisted apps. Custom and unlisted apps are apps that have been tailored specifically for your organization by apps developers that you, or your organization, have worked with directly.
+Using Apple Business Manager, you can find and purchase [standard apps](https://support.apple.com/guide/apple-business-manager/select-and-purchase-content-axmc21817890), [custom apps](https://support.apple.com/guide/apple-business-manager/learn-about-custom-apps-axm58ba3112a), and [unlisted apps](https://support.apple.com/guide/deployment/distribute-unlisted-apps-dep36d738732). Custom and unlisted apps are apps that have been tailored specifically for your organization by apps developers that you, or your organization, have worked with directly.
 
-> [!IMPORTANT]
-> Before you can purchase app using Apple Business Manager, you must [add a payment method to Apple Business Manager](https://support.apple.com/guide/apple-business-manager/review-content-payment-billing-information-axm746a59fa2/web). You must have a payment method set up to purchase any app, including free apps.
+Before you can purchase apps using Apple Business Manager, you must add a payment method to Apple Business Manager. A payment method is required to purchase any app, including free apps.
 
-You can purchase app licenses from Apple Business Manager in-volume. Before purchasing licenses, first determine the number of licenses you need. Once you have purchased the app licenses, you can then synchronize your volume purchase information with Intune and track your volume-purchased app use. Purchasing app licenses helps you efficiently manage apps within your company and retain ownership and control of purchased apps.
+Follow Apple's guidelines to add payment information and purchase apps using Apple Business Manager:
+1. [Add a payment method to Apple Business Manager](https://support.apple.com/guide/apple-business-manager/review-content-payment-billing-information-axm746a59fa2)
+2. [Find, select, and purchase apps from Apple Business Manager](https://support.apple.com/guide/apple-business-manager/select-and-purchase-content-axmc21817890)
 
-For related information about purchasing apps, see [Select and purchase content in Apple Business Manager](https://support.apple.com/guide/apple-business-manager/select-and-purchase-content-axmc21817890/web).
+For related information about purchasing apps, see [Intro to purchasing content in Apple Business Manager](https://support.apple.com/guide/apple-business-manager/intro-to-purchasing-content-axme19b23f7f).
 
 ### Integrate Apple apps with Intune<!-- What does sync mean (certs)? How to sync? -->
 
-Microsoft Intune helps you manage apps you purchased from Apple by synchronizing location tokens you download from Apple Business Manager. Location tokens are volume purchase licenses that were commonly known as Volume Purchase Program (VPP) tokens. These location tokens are used to assign and manage licenses purchased using Apple Business Manager. Content Managers can purchase and associate licenses with location tokens they have permissions to in Apple Business Manager. These location tokens are then downloaded from Apple Business Manager and uploaded in Microsoft Intune. Microsoft Intune supports uploading multiple location tokens per tenant. Each token is valid for one year.
+Microsoft Intune helps you manage apps you purchased from Apple Business Manager by synchronizing app license information (location tokens) you download from Apple Business Manager. Location tokens are volume purchase licenses that were commonly known as Volume Purchase Program (VPP) tokens. With VPP tokens you can assign and manage licenses purchased using Apple Business Manager. These tokens are then downloaded from Apple Business Manager and uploaded into Microsoft Intune. Each token is commonly valid for one year.
+
+Follow the Intune guidelines to upload and sync a Apple VPP token:
+- Upload multiple location tokens per tenant](/mem/intune/apps/vpp-apps-ios#upload-an-apple-vpp-or-apple-business-manager-location-token) using Intune.
 
 In addition to synchronizing location tokens, Intune help you track how many licenses are available and have been used for purchased apps, and helps you install apps up to the number of licenses you own.
 
 > [!NOTE]
-> Additionally, you can synchronize, manage, and assign books you purchased from Apple Business Manager with Intune to iOS/iPadOS devices. 
+> You can also synchronize, manage, and assign books you purchased from Apple Business Manager with Intune to iOS/iPadOS devices. 
 
-#### Upload an Apple Business Manager location token
+For more information, see [How to manage iOS and macOS apps purchased through Apple Business Manager with Microsoft Intune](/mem/intune/apps/vpp-apps-ios).
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Select **Tenant administration** > **Connectors and tokens** > **Apple VPP tokens**.
-3. On the list of VPP tokens pane, select **Create**. The **Create VPP token** process is displayed. There are four pages used when creating a VPP token. The first is **Basics**.
-4. On the **Basics** page, specify the following information:
-   - **Token Name** - An administrative field for setting the token name.
-   - **Apple ID** - Enter the Managed Apple ID of the account associated with the uploaded token.
-   - **VPP token file** - If you haven't already, sign up for Apple Business Manager or Apple School Manager. After you sign up, download the Apple Business Manager location token (Apple VPP token) for your account and select it here.
-5. Click **Next** to display the **Settings** page.
-6. On the **Settings** page, specify the following information:
-   - **Take control of token from another MDM** - Setting this option to **yes** allows the token to be reassigned to Intune from another MDM solution.
-   - **Country/Region** - Select the VPP country/region store.  Intune synchronizes VPP apps for all locales from the specified VPP country/region store.
+#### Assign a volume-purchase iOS/iPadOS app using Intune
 
-        > [!WARNING]  
-        > Changing the country/region will update the apps metadata and App Store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country/region store.
+Once Apple apps have been integrated and synced with Intune, you can deploy the app to members of your organization by assigning the app to groups of users listed in Intune. To assign an app, you must already have users added to Intune and groups of uses created. For more information, see [Add users and grant administrative permission using Intune](/mem/intune/fundamentals/users-add) and [Add groups to organize users and devices using Intune](/mem/intune/fundamentals/groups-add).
 
-   - **Type of VPP account** - Choose from **Business** or **Education**.
-   - **Automatic app updates** - Choose from **Yes** or **No** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in.
-
-        > [!NOTE]
-        > Automatic app updates for Apple VPP apps will automatically update for both **Required** and **Available** install intents. For apps deployed with **Available** install intent, the automatic update generates a status message for the IT admin informing that a new version of the app is available. This status message is viewable by selecting the app, selecting Device Install Status, and checking the Status Details. 
-        >
-        > When updating a VPP app, it can take up to 24 hours for the device to receive the updated VPP app. The device must be unlocked and available to install the update successfully.
-
-    - **I grant Microsoft permission to send both user and device information to Apple.** - You must select **I agree** to proceed. To review what data Microsoft sends to Apple, see [Data Intune sends to Apple](/mem/intune/protect/data-intune-sends-to-apple.md).
-7. Click **Next** to display the **Scope tags** page.
-8. Click **Select scope tags** to optionally add scope tags for the app. For more information, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags.md).
-9. Click **Next** to display the **Review + create** page. Review the values and settings you entered for the VPP token.
-10. When you are done, click **Create**. The token is displayed in the list of tokens pane.
-
-#### Synchronize an Apple VPP token
-
-You can synchronize the app names, metadata and license information for your purchased apps in Intune by choosing **Sync** for a selected token.
-
-Where can I find additional information?
-[Apple Business Manager User Guide](https://support.apple.com/guide/apple-business-manager/welcome/web)
-
-## Managed Google Play<!-- What is it? -->
-
-
-### Approve Managed Google Play apps<!-- How to set up? -->
-
-
-### Sync Managed Google Play apps with Intune<!-- What does sync mean (certs)? How to sync? -->
-
-
-
-
+Follow the Intune guidelines to assign iOS/iPadOS apps:
+- [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy)
 
 ## Microsoft Store for Business<!-- What is it? -->
 
+[Microsoft Store for Business](https://business.apple.com/) is a web-based portal that allows you to find and purchase apps that can be managed by Intune. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from Intune. Using Intune, you can synchronize the list of apps you have purchased (or that are free) from the store with Intune. Apps that are synchronized appear in Intune, where you can assign these apps like any other apps. Both Online and Offline licensed versions of Apps are synchronized to Intune. You can track how many licenses are available, and how many are being used in the admin center. Also, Intune will block assignment and installation of apps if there are an insufficient number of licenses available. In addition, Intune will revoke app licenses for apps managed by Microsoft Store for Business when the user is deleted from Azure AD.
+
+> [!IMPORTANT]
+> Microsoft Store for Business will be retired in the first quarter of 2023. However, admins can still leverage the connection to Store for Business and Education from their UEM solution to deploy apps to managed Windows 11 devices until they are retired in 2023.
 
 ### Set up Microsoft Store for Business<!-- How to set up? -->
 
+Review the following information before you start syncing and assigning apps from the Microsoft Store for Business:
+[Before you start using Microsoft Store for Business with Microsoft Intune][/mem/intune/apps/windows-store-for-business#before-you-start]
 
 ### Purchase apps using Microsoft Store for Business<!-- How do you buy apps? -->
 
 
 ### Integrate Microsoft Store for Business apps with Intune<!-- What does sync mean (certs)? How to sync? -->
 
+Microsoft Intune helps you manage apps you purchased from Microsoft Store for Business by synchronizing app license information. 
 
-#### Upload an Microsoft Store for Business location token
-
+Follow the Intune guidelines to configure Microsoft Store for Business:
+- [Associate your Microsoft Store for Business account with Intune](/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune)
 
 #### Synchronize an Microsoft Store for Business VPP token
 
+If you've already associated your Microsoft Store for Business account with your Intune admin credentials, you can manually sync your Microsoft Store for Business apps with Intune.
+
+Follow the Intune guidelines to sync Microsoft Store for Business:
+- [Configure synchronization with Microsoft Store for Business](/mem/intune/apps/windows-store-for-business#configure-synchronization)

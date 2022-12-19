@@ -1,11 +1,11 @@
 ---
-title: "Add apps to Microsoft Intune"
+title: "Step 4. Understand apps and cloud storage space"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Add apps to Microsoft Intune.
+description: Step 4. Understand apps and cloud storage space.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,12 +14,4 @@ ms.custom:
 keywords:
 ---
 
-# Add apps to Intune
-
-
-
-## Required apps
- 
-
-
-## Specific apps
+# Step 4. Understand apps and cloud storage space
