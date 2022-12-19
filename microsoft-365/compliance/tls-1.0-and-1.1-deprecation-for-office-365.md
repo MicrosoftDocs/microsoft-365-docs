@@ -61,6 +61,7 @@ The value of the **DefaultSecureProtocols** registry key that the KB article des
 |0x00000080|Enable TLS 1.0 by default|
 |0x00000200|Enable TLS 1.1 by default|
 |0x00000800|Enable TLS 1.2 by default|
+|0x00002000|Enable TLS 1.3 by default|
 
 ## Office clients and TLS registry keys
 
