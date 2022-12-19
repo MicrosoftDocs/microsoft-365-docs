@@ -95,7 +95,7 @@ The static proxy is configurable through group policy (GP), both the settings un
 > Parent registry path location for "PreferStaticProxyForHttpRequest" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
 > The following command can be used to insert the registry value in the correct location:<br>
 > ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
-> The above registry value is applicable only starting with MsSense.exe version 10.8210.* and later, or version 10.8049.* and later (on Windows Server 2012R2/2016 with the unified agent)
+> The above registry value is applicable only starting with MsSense.exe version 10.8210.* and later, or version 10.8049.* and later.
 
 
 
