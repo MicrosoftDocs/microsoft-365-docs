@@ -40,12 +40,12 @@ Use the guidance in these articles to help you assess risks and take appropriate
 
 The steps in this solution are:
 
-![The steps to manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../media/information-protection-deploy-protect-information/manage-data-privacy-protection-steps.png)
+![The steps to manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../media/data-privacy-protection/manage-data-privacy-protection-steps.png)
 
-1. [Assess your organization's data and risks](information-protection-deploy-assess-data-risks.md): Start your journey by understanding your data and possible risks.
-1. [Protect and govern your data](information-protection-deploy-protect-govern-data.md): Identify, categorize, and manage the data you need to protect.
-1. [Stay on track with privacy regulations](information-protection-deploy-privacy-regulations.md): Monitor your progress in completing assessments and stay up-to-date as regulations change.
-1. [Respond to data privacy incidents and subject requests](information-protection-deploy-incidents-subject-requests.md): Set up alerts so you can respond to privacy risks and automate your management of data subject requests.
+1. [Assess your organization's data and risks](data-privacy-protection-assess.md): Start your journey by understanding your data and possible risks.
+1. [Protect and govern your data](data-privacy-protection-protect-govern.md): Identify, categorize, and manage the data you need to protect.
+1. [Stay on track with privacy regulations](data-privacy-protection-regulations.md): Monitor your progress in completing assessments and stay up-to-date as regulations change.
+1. [Respond to data privacy incidents and subject requests](data-privacy-protection-respond-requests.md): Set up alerts so you can respond to privacy risks and automate your management of data subject requests.
 
 > [!IMPORTANT]
 > Following this guidance will not necessarily make you compliant with any data privacy regulation, especially considering the number of steps required that are outside the context of the features. You are responsible for ensuring your compliance and to consult your legal and compliance teams or to seek guidance and advice from third parties that specialize in compliance.

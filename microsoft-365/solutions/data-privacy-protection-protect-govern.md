@@ -107,4 +107,4 @@ This is also the stage where you accumulate learnings based on user behavior as 
 
 ## Next step
 
-Visit [Step 3. Stay on track with privacy regulations](information-protection-deploy-privacy-regulations.md).
+Visit [Step 3. Stay on track with privacy regulations](data-privacy-protection-regulations.md).

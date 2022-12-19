@@ -53,4 +53,4 @@ We'll walk you through setting up your first policy in step 2 of this guidance.
 
 ## Next step
 
-Visit [Step 2. Protect and govern your data](information-protection-deploy-protect-govern-data.md).
+Visit [Step 2. Protect and govern your data](data-privacy-protection-protect-govern.md).

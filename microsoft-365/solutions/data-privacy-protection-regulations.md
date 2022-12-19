@@ -41,7 +41,7 @@ Research shows that there are over 250 daily updates to global regulations[*](#r
 
 ## Next step
 
-Visit [Step 4. Respond to data privacy incidents and subject requests](information-protection-deploy-incidents-subject-requests.md).
+Visit [Step 4. Respond to data privacy incidents and subject requests](data-privacy-protection-respond-requests.md).
 
 ###### Reference
 *Cost of Compliance 2021, Thompson Reuters, 2021
