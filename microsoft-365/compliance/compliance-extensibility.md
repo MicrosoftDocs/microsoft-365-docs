@@ -84,7 +84,7 @@ For the licensing requirements for Teams DLP, see [Microsoft 365 licensing guida
 
 ### Microsoft Graph API for eDiscovery (preview)
 
-With [eDiscovery (Premium)](overview-ediscovery-20.md), organizations can discover data where it lives, and manage more end-to-end eDiscovery workflows with intelligent machine learning and analytics capabilities to reduce data to the relevant set – all while the data stays within the Microsoft 365 security and compliance boundary.
+With [eDiscovery (Premium)](ediscovery-overview.md), organizations can discover data where it lives, and manage more end-to-end eDiscovery workflows with intelligent machine learning and analytics capabilities to reduce data to the relevant set – all while the data stays within the Microsoft 365 security and compliance boundary.
 
 Graph APIs for eDiscovery (Premium) can be used to create and manage cases, review sets, and review set queries in a scalable and repeatable manner. This enables customers and partners to create apps and workflows to automate common and repetitive processes such as creating cases and managing custodians and legal holds.
 
