@@ -53,9 +53,10 @@ On the **All field** panel:
 
 1. In the **Name** field, enter a relevant name for the field.
 
+2. In the **How authors fill in this field** section, select **Enter text or select a date**.
+
    ![Screenshot of the template viewer showing the All fields panel for manual input.](../media/content-understanding/content-assembly-create-template-5a.png)
 
-2. In the **How authors fill in this field** section, select **Enter text or select a date**.
 
 3. In the **Type of info** field, select the data type you want to associate with the field. Currently, there are six options available: **Single line of text**, **Multiple lines of text**, **Number**, **Date and time**, **Email**, and **Hyperlink**.
 
@@ -70,9 +71,9 @@ On the **All fields** panel:
 
 1. In the **Name** field, enter a relevant name for the field.
 
-   ![Screenshot of the template viewer showing the All fields panel for input from a SharePoint list.](../media/content-understanding/content-assembly-create-template-6a.png)
-
 2. In the **How authors fill in this field** section, choose **Select from choices in a column of a list or library**, and then choose **Select**.
+
+   ![Screenshot of the template viewer showing the All fields panel for input from a SharePoint list.](../media/content-understanding/content-assembly-create-template-6a.png)
 
 3. On the **Select a list for adding a source column** page, select the list you want to use, and then select **Next**.
 
@@ -96,9 +97,9 @@ On the **All fields** panel:
 
 1. In the **Name** field, enter a relevant name for the field.
 
-   ![Screenshot of the template viewer showing the All fields panel for input from a term or term set.](../media/content-understanding/content-assembly-create-template-term.png)
-
 2. In the **How authors fill in this field** section, choose **Select from managed metadata term set or term**, and then choose **Select**.
+
+   ![Screenshot of the template viewer showing the All fields panel for input from a term or term set.](../media/content-understanding/content-assembly-create-template-term.png)
 
 3. On the **Select term sets or terms** page, search for or select the term set or term to associate with the field, and then select **Save**.
 
