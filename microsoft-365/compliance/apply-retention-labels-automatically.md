@@ -190,7 +190,7 @@ Some things to consider when using keywords or searchable properties to auto-app
 
 - Suffix wildcard searches (such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. However, prefix wildcard searches (such as `cat*`) are supported.
 
-- Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-ediscovery-content-search.md).
+- Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](ediscovery-partially-indexed-items-in-content-search.md).
 
 - We recommend that you don't use spaces between words in RefinableStrings values on documents. RefinableString is not a word-break property.
 

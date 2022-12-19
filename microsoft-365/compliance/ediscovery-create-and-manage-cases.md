@@ -25,7 +25,7 @@ search.appverid:
 
 # Create and manage an eDiscovery (Premium) case
 
-After setting up Microsoft Purview eDiscovery (Premium) and [assigning permissions to eDiscovery managers](ediscovery-premium-get-started.md#step-2-ediscovery-assign-permissions) in your organization that will manage cases, the next step is to create and manage a case.
+After setting up Microsoft Purview eDiscovery (Premium) and [assigning permissions to eDiscovery managers](ediscovery-premium-get-started.md#step-2-assign-ediscovery-permissions) in your organization that will manage cases, the next step is to create and manage a case.
 
 This article also provides a high-level overview of using cases to manage the eDiscovery (Premium) workflow for a legal case or other types of investigations.
 

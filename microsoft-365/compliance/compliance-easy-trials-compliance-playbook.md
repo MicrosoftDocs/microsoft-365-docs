@@ -351,7 +351,7 @@ Take advantage of an end-to-end workflow for preserving, collecting, analyzing, 
 
 To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium) case, a user must be assigned the appropriate permissions.
 
-1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](ediscovery-premium-get-started.md#step-2-ediscovery-assign-permissions)
+1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](ediscovery-premium-get-started.md#step-2-assign-ediscovery-permissions)
 1. [Add or remove members from a case](ediscovery-add-or-remove-members-from-a-case.md)
 
 ### Step 2 (required): Create a Case

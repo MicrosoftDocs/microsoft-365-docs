@@ -10236,11 +10236,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/compliance/themes-in-advanced-ediscovery.md",
-      "redirect_url": "/microsoft-365/compliance/ediscovery-themes",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/compliance/track-relevance-analysis-in-advanced-ediscovery.md",
       "redirect_url": "/microsoft-365/compliance/ediscovery-track-relevance-analysis",
       "redirect_document_id": false
