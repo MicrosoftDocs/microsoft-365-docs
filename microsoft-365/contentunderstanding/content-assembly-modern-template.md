@@ -148,9 +148,15 @@ On the **Template fields** panel:
 
 3.	Confirm the selection, and then select **Next**.
 
-4.	You can associate a SharePoint list or library to the table.
+4.	On the **Select a list for adding a source column** page, associate a SharePoint list or library to the table.
 
-    ![Screenshot of the template viewer showing the New field for associating a table field.](../media/content-understanding/content-assembly-associate-table-1.png)
+    ![Screenshot of the Select a list for adding a source column page.](../media/content-understanding/content-assembly-associate-table-2.png)
+
+5.	Once the list is selected, you can map the list columns to the table columns.
+
+    ![Screenshot of the template viewer showing how to map the list columns to the table columns.](../media/content-understanding/content-assembly-associate-table-3.png)
+
+
 
 
 ### Add an image field
