@@ -59,11 +59,11 @@ To create and reuse a field:
 
 You can associate fields by:
 
-- [Entering text or selecting a date](#associate-a-placeholder-by-entering-text-or-selecting-a-date)
+- [Entering text or selecting a date](#associate-a-field-by-entering-text-or-selecting-a-date)
 
-- [Selecting from choices in a column of a list or library](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
+- [Selecting from choices in a column of a list or library](#associate-a-field-by-selecting-from-choices-in-a-column-of-a-list-or-library)
 
-- [Selecting from a managed metadata term set or term](#associate-a-placeholder-by-selecting-from-a-managed-metadata-term-set-or-term)
+- [Selecting from a managed metadata term set or term](#associate-a-field-by-selecting-from-a-managed-metadata-term-set-or-term)
 
 - [Associating a table with a SharePoint list or library](#associate-a-table-with-a-sharepoint-list-or-library)
 
