@@ -103,9 +103,6 @@ To configure scan jobs, the following user permission option is required: **Mana
 
 2. Download the network scanner and install it on the designated Defender for Endpoint scanning device.
 
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="The Download scanner button" lightbox="images/assessment-jobs-download-scanner.png":::
-
      :::image type="content" source="../../media/defender-endpoint/network-authenticated-scan-new.png" alt-text="Screenshot of the add new authenticated scan screen" lightbox="../../media/defender-endpoint/network-authenticated-scan-new.png":::
 
 ## Network scanner installation & registration
@@ -153,7 +150,7 @@ It's possible to disable automatic updates of the network scanner by going to th
 8. Choose your **Authentication method**.
     - You can select to **Use azure KeyVault for providing credentials:** If you manage your credentials in Azure KeyVault you can enter the Azure KeyVault URL and Azure KeyVault secret name to be accessed by the scanning device to provide credentials.
 9. Select **Next** to run or skip the test scan.
-10. Select **Next** to review the settings and the select **Submit** to create your new authenticated scan.
+10. Select **Next** to review the settings and the select **Submit** to create your new network device authenticated scan.
 
 >[!Note]
 >To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple scanning devices.
@@ -175,8 +172,7 @@ Once the results show up, you can choose which devices will be included in the p
 
 Newly discovered devices will be shown under the new **Network devices** tab in the **Device inventory** page. It may take up to two hours after adding an scanning job until the devices are updated.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="The Network devices section in the Device inventory" lightbox="images/assessment-jobs-device-inventory.png":::
+     :::image type="content" source="../../media/defender-endpoint/network-devices-inventory.png" alt-text="Screenshot of the network device tab in the device inventory" lightbox="../../media/defender-endpoint/network-devices-inventory.png":::
 
 ## Troubleshooting
 
@@ -202,14 +198,13 @@ Validate that the scanner is running properly. Then go to the scan definition an
 
 ### My scanner is configured but scans aren't running
 
-As the authenticated scanner currently uses an encryption algorithm that is not compliant with [Federal Information Processing Standards (FIPS)](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing/), the scanner can't operate when an organization enforces the use FIPS compliant algorithms.
-
->[!Note]
->FIPS compliant algorithms are only used in relation to departments and agencies of the United States federal government.
+As the authenticated scanner currently uses an encryption algorithm that is not compliant with [Federal Information Processing Standards (FIPS)](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing/), the scanner can't operate when an organization enforces the use of FIPS compliant algorithms.
 
 To allow algorithms that are not compliant with FIPS, set the following value in the registry for the devices where the scanner will run:
 
 Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\FipsAlgorithmPolicy with a DWORD value named **Enabled** and value of **0x0**
+
+FIPS compliant algorithms are only used in relation to departments and agencies of the United States federal government.
 
 ### Required Defender Vulnerability Management user permission
 
@@ -230,5 +225,4 @@ Change command-line settings on your device to allow copying and change text siz
 ## Related articles
 
 - [Device inventory](machines-view-overview.md)
-- [Configure advanced features](advanced-features.md)
 - [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md)

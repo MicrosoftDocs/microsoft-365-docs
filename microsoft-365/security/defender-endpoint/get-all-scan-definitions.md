@@ -44,14 +44,6 @@ search.appverid: met150
 
 Retrieves a list of all scan definitions.
 
-<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
-<br>OData supported operators:
-<br>```$filter``` on:  ```id```, ```name```, ```description```, ```cvssV3```, ```publishedOn```, ```severity```, and ```updatedOn``` properties.
-<br>```$top``` with max value of 10,000.
-<br>```$skip```.
-<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
-
-
 ## Limitations
 
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
