@@ -190,7 +190,7 @@ The three primary eDiscovery tools in Microsoft 365 are Content search, Microsof
 
 - **[eDiscovery (Standard)](ediscovery-standard-get-started.md).** This tool builds on the basic search and export functionality by enabling you to create cases that let you control who can access case data, place a hold on user mailboxes or mailbox content that matches search criteria. That means you can place an eDiscovery hold on the third-party data that was imported to user mailboxes.
 
-- **[eDiscovery (Premium)](overview-ediscovery-20.md).** This powerful tool expands the case functionality of eDiscovery (Standard) by letting you add custodians to a case, placing custodian's data on hold, and then loading a custodian's third-party data into a review for further analysis such as themes and duplicate detection. After you load third-party data into a review set, you can query and filter it to a narrow result set.
+- **[eDiscovery (Premium)](ediscovery-overview.md).** This powerful tool expands the case functionality of eDiscovery (Standard) by letting you add custodians to a case, placing custodian's data on hold, and then loading a custodian's third-party data into a review for further analysis such as themes and duplicate detection. After you load third-party data into a review set, you can query and filter it to a narrow result set.
 
    Both eDiscovery (Standard) and eDiscovery (Premium) let you manage third-party data that may be relevant to your organization's legal or internal investigations.
 

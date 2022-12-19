@@ -23,7 +23,7 @@ ms.collection:
 
 The first step in using the machine learning capabilities of predictive coding in eDiscovery (Premium) is to create a predictive coding model. After you create a model, you can train it identify the relevant and non-relevant content in a review set.
 
-To review the predictive coding workflow, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
+To review the predictive coding workflow, see [Learn about predictive coding in eDiscovery (Premium)](ediscovery-predictive-coding-overview.md#the-predictive-coding-workflow)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -63,4 +63,4 @@ After you create a model, the following things occur in the background during th
 
 ## Next steps
 
-After you create a model for a review set, the next step is performing training rounds to "teach" the model to identify content that is relevant to your investigation. For more information, see [Train a predictive coding model](predictive-coding-train-model.md).
+After you create a model for a review set, the next step is performing training rounds to "teach" the model to identify content that is relevant to your investigation. For more information, see [Train a predictive coding model](ediscovery-predictive-coding-train-model.md).

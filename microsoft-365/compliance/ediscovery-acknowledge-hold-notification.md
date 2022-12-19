@@ -36,7 +36,7 @@ To help reduce the time, cost, and effort of following up with your custodians, 
 After a Legal Hold Notification has been issued, each custodian will receive a unique and personalized email containing your defined legal hold notice and added instructions. 
 
 > [!TIP]
-> See how you can use the built-in  [Communication Editor](using-communications-editor.md) to allow your custodians to acknowledge their notice or access their Compliance Portal directly from their email.
+> See how you can use the built-in  [Communication Editor](ediscovery-using-communications-editor.md) to allow your custodians to acknowledge their notice or access their Compliance Portal directly from their email.
 
 Based on the configuration of your legal hold notification, your custodians may receive the following notices: 
 

@@ -27,11 +27,11 @@ Review sets are a static set of documents where you can analyze, query, view, ta
 
 - [Analyze data in a review set](ediscovery-analyzing-data-in-review-set.md)
 
-- [Query the data in a review set](review-set-search.md)
+- [Query the data in a review set](ediscovery-review-set-search.md)
 
-- [View documents in a review set](view-documents-in-review-set.md)
+- [View documents in a review set](ediscovery-view-documents-in-review-set.md)
 
-- [Tag documents in a review set](tagging-documents.md)
+- [Tag documents in a review set](ediscovery-tagging-documents.md)
 
 - [Export case data](ediscovery-exporting-data.md)
 
@@ -53,7 +53,7 @@ There are three different ways to add data to a review set in an eDiscovery (Pre
 
 1. [Add search results to a review set](ediscovery-add-data-to-review-set.md)
 
-2. [Load non-Microsoft 365 data into a review set](load-non-Office-365-data-into-a-review-set.md)
+2. [Load non-Microsoft 365 data into a review set](ediscovery-load-non-office-365-data-into-a-review-set.md)
 
 3. [Add data to a review set from another review set](ediscovery-ediscovery-add-data-to-review-set-from-another-review-set.md)
 

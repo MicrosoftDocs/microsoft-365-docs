@@ -46,7 +46,7 @@ These properties (and their corresponding values) are added to the file metadata
 
 ![Attorney-client privilege properties shown in file metadata.](../media/AeDAttorneyClientPrivilegeMetadata.png)
 
-These three properties are also searchable within a review set. For more information, see [Query the data in a review set](review-set-search.md).
+These three properties are also searchable within a review set. For more information, see [Query the data in a review set](ediscovery-review-set-search.md).
 
 ## Set up the attorney-client privilege detection model
 
@@ -90,7 +90,7 @@ Follow the steps in this section to use attorney-client privilege detection for 
 
 ### Step 1: Create a smart tag group with attorney-client privilege detection model
 
-One of the primary ways to see the results of attorney-client privilege detection in your review process is by using a smart tag group. A smart tag group indicates the results of the attorney-client privilege detection and shows the results in-line next to the tags in a smart tag group. This lets you quickly identify potentially privileged documents during document review. Additionally, you can also use the tags in the smart tag group to tag documents as privileged or non-privileged. For more information about smart tags, see [Set up smart tags in eDiscovery (Premium)](smart-tags.md).
+One of the primary ways to see the results of attorney-client privilege detection in your review process is by using a smart tag group. A smart tag group indicates the results of the attorney-client privilege detection and shows the results in-line next to the tags in a smart tag group. This lets you quickly identify potentially privileged documents during document review. Additionally, you can also use the tags in the smart tag group to tag documents as privileged or non-privileged. For more information about smart tags, see [Set up smart tags in eDiscovery (Premium)](ediscovery-smart-tags.md).
 
 1. In the review set that contains the documents that you analyzed in Step 1, select **Manage review set** and then select **Manage tags**.
 

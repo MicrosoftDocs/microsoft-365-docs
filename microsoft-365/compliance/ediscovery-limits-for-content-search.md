@@ -136,7 +136,7 @@ There are additional limits related to different aspects of searching for conten
 For information about content searches, see:
 
 - [Content search in Microsoft 365](ediscovery-content-search.md)
-- [Search for content in a eDiscovery (Standard) case](search-for-content-in-core-ediscovery.md)
+- [Search for content in a eDiscovery (Standard) case](ediscovery-search-for-content.md)
 - [Keyword queries and search conditions for content search](ediscovery-keyword-queries-and-search-conditions.md)
 
 For case limits related to eDiscovery (Standard) and eDiscovery (Premium), see:

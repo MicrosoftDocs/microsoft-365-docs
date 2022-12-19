@@ -37,7 +37,7 @@ Using the upload non-Microsoft 365 feature described in this article requires th
 
 - Custodians must be added to the case before you can upload and associate the non-Microsoft 365 data to them.
 
-- Non-Microsoft 365 data must be a file type that's supported by eDiscovery (Premium). For more information, see [Supported file types in eDiscovery (Premium)](supported-filetypes-ediscovery20.md).
+- Non-Microsoft 365 data must be a file type that's supported by eDiscovery (Premium). For more information, see [Supported file types in eDiscovery (Premium)](ediscovery-supported-file-types.md).
 
 - All files that are uploaded to a review set must be located in folders, where each folder is associated with a specific custodian. The names for these folders must use the following naming format: *alias@domainname*. The alias@domainname must be the user's Microsoft 365 alias and domain. You can collect all the alias@domainname folders in a root folder. The root folder can only contain the alias@domainname folders. Loose files in the root folder aren't supported.
 
@@ -89,7 +89,7 @@ Using the upload non-Microsoft 365 feature described in this article requires th
    ![Non-Microsoft 365 Import: AzCopy.](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > As previously stated, you must use AzCopy v8.1 to successfully use the command that's provided on the **Upload files** page. If the supplied AzCopy command fails, please see [Troubleshoot AzCopy in eDiscovery (Premium)](troubleshooting-azcopy.md).
+   > As previously stated, you must use AzCopy v8.1 to successfully use the command that's provided on the **Upload files** page. If the supplied AzCopy command fails, please see [Troubleshoot AzCopy in eDiscovery (Premium)](ediscovery-troubleshooting-azcopy.md).
 
 8. Go back to the Microsoft Purview compliance portal, and click **Next: Process files** in the wizard.  This initiates processing, text extraction, and indexing of the non-Microsoft 365 files that were uploaded to the Azure Storage location.  
 

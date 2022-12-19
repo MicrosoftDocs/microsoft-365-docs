@@ -49,7 +49,7 @@ Here's a how to manage a data spillage incident:
 
 ## Things to know before you start
 
-- The data spillage workflow described in this article doesn't delete chat messages in Microsoft Teams. To search for and delete Teams chat messages, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
+- The data spillage workflow described in this article doesn't delete chat messages in Microsoft Teams. To search for and delete Teams chat messages, see [Search and purge chat messages in Teams](ediscovery-search-and-delete-teams-chat-messages.md).
 
 - When a mailbox is on hold, a deleted message remains in the Recoverable Items folder until the retention period expires or the hold is released. [Step 6](#step-6-prepare-the-mailboxes) describes how to remove hold from the mailboxes. Check with your records management or legal departments before removing the hold. Your organization might have a policy that defines whether a mailbox on hold or a data spillage incident takes priority. 
 
@@ -65,7 +65,7 @@ Here's a how to manage a data spillage incident:
 
 Depending on your organizational practice, you need to control who can access the eDiscovery case used to investigate a data spillage incident and set up compliance boundaries. The easiest way to do this is to add investigators as members of an existing role group in the Microsoft Purview compliance portal and then add the role group as a member of the eDiscovery case. For information about the built-in eDiscovery role groups and how to add members to an eDiscovery case, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
   
-You can also create a new role group that aligns with your organizational needs. For example, you might want a group of data spillage investigators in the organization to access and collaborate on all data spillage cases. You can do this by creating a "Data Spillage Investigator" role group, assigning the appropriate roles (Export, RMS Decrypt, Review, Preview, Compliance Search, and Case Management), adding the data spillage investigators to the role group, and then adding the role group as a member of the data spillage eDiscovery case. See [Set up compliance boundaries for eDiscovery investigations in Office 365](set-up-compliance-boundaries.md) for detailed instructions on how to do this. 
+You can also create a new role group that aligns with your organizational needs. For example, you might want a group of data spillage investigators in the organization to access and collaborate on all data spillage cases. You can do this by creating a "Data Spillage Investigator" role group, assigning the appropriate roles (Export, RMS Decrypt, Review, Preview, Compliance Search, and Case Management), adding the data spillage investigators to the role group, and then adding the role group as a member of the data spillage eDiscovery case. See [Set up compliance boundaries for eDiscovery investigations in Office 365](ediscovery-set-up-compliance-boundaries.md) for detailed instructions on how to do this. 
   
 ## Step 2: Create an eDiscovery case
 
@@ -77,7 +77,7 @@ To create a new case, you can use eDiscovery in the security and compliance cent
 
 Now that you've created a case and managed access, you can use the case to iteratively search to find the spilled data and identify the mailboxes that contain the spilled data. You will use the same search query that you used to find the email messages to delete those same messages in [Step 7](#step-7-permanently-delete-the-spilled-data).
   
-To create a content search associated with an eDiscovery case, see [Search for content in a eDiscovery (Standard) case](search-for-content-in-core-ediscovery.md).
+To create a content search associated with an eDiscovery case, see [Search for content in a eDiscovery (Standard) case](ediscovery-search-for-content.md).
   
 > [!IMPORTANT]
 > The keywords that you use in the search query may contain the actual spilled data that you're searching for. For example, if you searching for documents containing a social security number and you use the it as search keyword, you must delete the query afterwards to avoid further spillage. See [Deleting the search query](#deleting-the-search-query) in Step 8.
@@ -208,4 +208,4 @@ You can search the audit log for the eDiscovery activities that were performed d
 
 - [Search the audit log](audit-log-search.md)
 
-- [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md)
+- [Search for eDiscovery activities in the audit log](ediscovery-search-for-activities-in-the-audit-log.md)

@@ -176,7 +176,7 @@ See the following articles to help you learn more and get started using Microsof
 
 ### Get started with eDiscovery (Premium)
 
-- [Overview of eDiscovery (Premium)](overview-ediscovery-20.md)
+- [Overview of eDiscovery (Premium)](ediscovery-overview.md)
 - [Set up eDiscovery (Premium)](ediscovery-premium-get-started.md)
 - [Create and manage an eDiscovery (Premium) case](ediscovery-create-and-manage-advanced-cases.md)
 

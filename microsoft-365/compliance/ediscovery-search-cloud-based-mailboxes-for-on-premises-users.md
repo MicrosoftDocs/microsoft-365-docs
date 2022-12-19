@@ -76,7 +76,7 @@ Here's how to use Content search in the Microsoft Purview compliance portal to s
 6. Submit and run the search. Any search results for on-premises users can be previewed like any other search results. You can also export the search results (including any Teams chat data) to a PST file. For more information, see:
 
     - [Create a search](ediscovery-content-search.md)
-    - [Preview search results](preview-ediscovery-search-results.md)
+    - [Preview search results](ediscovery-preview-search-results.md)
     - [Export search results](export-search-results.md)
 
 ## Using PowerShell to search for Teams chat data for on-premises users

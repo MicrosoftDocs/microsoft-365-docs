@@ -55,7 +55,7 @@ As a result of this new and improved eDiscovery functionality in the compliance 
 
    - [GetHoldOnMailboxes](/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
-- [Microsoft Purview eDiscovery (Premium) v1.0](./overview-ediscovery-20.md), which is the first version of eDiscovery (Premium) that's accessed through a Microsoft Purview eDiscovery (Standard) case in the compliance portal. The retirement of eDiscovery (Premium) v1.0 doesn't impact your ability to create and manage eDiscovery (Standard) cases.
+- [Microsoft Purview eDiscovery (Premium) v1.0](./ediscovery-overview.md), which is the first version of eDiscovery (Premium) that's accessed through a Microsoft Purview eDiscovery (Standard) case in the compliance portal. The retirement of eDiscovery (Premium) v1.0 doesn't impact your ability to create and manage eDiscovery (Standard) cases.
 
 > [!NOTE]
 > The eDiscovery functionality being retired only applies to cloud-based versions of Microsoft 365 and Office 365. eDiscovery functionality in on-premises versions of Exchange and SharePoint will still be supported until further notice.
@@ -157,15 +157,15 @@ The following table describes other tools that you can use to replace the existi
 
 **I use the copy search results functionality of In-Place eDiscovery & Holds in the EAC to copy search results to a discovery mailbox for review by attorneys. What options do I have now?**
 
-There are two ways to replicate this functionality today. The first is to use [review sets in eDiscovery (Premium) v2.0](./view-documents-in-review-set.md). Review sets have many of the same capabilities you see in a traditional review tool like fast search of documents, tagging, email threading, near duplicate grouping, themes analysis, and predictive coding. If you still want to use discovery mailboxes for review, the second option is to export search results to PST files and then import the PST files to a discovery mailbox by using the [PST import feature](use-network-upload-to-import-pst-files.md) in the Microsoft compliance center.
+There are two ways to replicate this functionality today. The first is to use [review sets in eDiscovery (Premium) v2.0](./ediscovery-view-documents-in-review-set.md). Review sets have many of the same capabilities you see in a traditional review tool like fast search of documents, tagging, email threading, near duplicate grouping, themes analysis, and predictive coding. If you still want to use discovery mailboxes for review, the second option is to export search results to PST files and then import the PST files to a discovery mailbox by using the [PST import feature](use-network-upload-to-import-pst-files.md) in the Microsoft compliance center.
 
 **How do I control which content locations (such as mailboxes or sites) that can an eDiscovery manager can search using the new tools?**
 
-The compliance portal also uses [compliance boundaries](set-up-compliance-boundaries.md) to control which content locations an eDiscovery Manager can search. Compliance boundaries are useful in government entities that need to stay within agency boundaries or multi-national corporations required to respect geographical boarders.
+The compliance portal also uses [compliance boundaries](ediscovery-set-up-compliance-boundaries.md) to control which content locations an eDiscovery Manager can search. Compliance boundaries are useful in government entities that need to stay within agency boundaries or multi-national corporations required to respect geographical boarders.
 
 **How can I move my current searches and holds to the Microsoft Purview compliance portal?**
 
-It's possible to migrate In-Place eDiscovery searches and holds from the EAC by using PowerShell. For instructions, see [Migrate searches and holds from the EAC to the compliance portal](./migrate-legacy-ediscovery-searches-and-holds.md).
+It's possible to migrate In-Place eDiscovery searches and holds from the EAC by using PowerShell. For instructions, see [Migrate searches and holds from the EAC to the compliance portal](./ediscovery-migrate-legacy-searches-and-holds.md).
 
 ## \*-MailboxSearch cmdlets
 
@@ -244,7 +244,7 @@ The [<span class="underline">Microsoft Graph APIs</span>](https://developer.micr
 
 **How can I migrate my searches and holds to the compliance portal?**
 
-It's possible to migrate In-Place eDiscovery searches and holds from the Exchange admin center by using a PowerShell script. For more information, see [Migrate legacy eDiscovery searches and holds to the compliance portal](migrate-legacy-eDiscovery-searches-and-holds.md).
+It's possible to migrate In-Place eDiscovery searches and holds from the Exchange admin center by using a PowerShell script. For more information, see [Migrate legacy eDiscovery searches and holds to the compliance portal](ediscovery-migrate-legacy-searches-and-holds.md).
 
 **After the cmdlets are retired, will I still be able to remove or retrieve searches?**
 
@@ -350,7 +350,7 @@ To determine if your organization is using eDiscovery (Premium) v1.0:
 
 1. If you see the **Switch to eDiscovery (Premium)** button, then clicking it will take you to the 1.0 version of eDiscovery (Premium), which is being retired. The ability to create and manage cases in eDiscovery (Standard) won't be affected. Only the ability to add and analyze case data in eDiscovery (Premium) v1.0 (by clicking **Switch to eDiscovery (Premium)**) is being retired.
 
-The new eDiscovery (Premium) solution in Microsoft 365 (also known as *eDiscovery (Premium) v2.0*) provides all of the capabilities of the original solution, but now includes a custodian-based approach of identifying content in other Microsoft 365 services, collecting that content, and then adding it to a review set where reviewers can take advantage of fast search queries, tagging, and analytics features to help cull relevant documents. eDiscovery (Premium) now includes improved processing and native viewers for both Microsoft and non-Microsoft file types, a full list of file types is [here](./supported-filetypes-ediscovery20.md) and supported metadata fields are [here](./ediscovery-document-metadata-fields.md). Also, the new eDiscovery (Premium) solution provides a powerful custodian holds management feature that lets you apply holds to content in different services, notify users of the holds, and track custodian responses, all within an eDiscovery (Premium) case.
+The new eDiscovery (Premium) solution in Microsoft 365 (also known as *eDiscovery (Premium) v2.0*) provides all of the capabilities of the original solution, but now includes a custodian-based approach of identifying content in other Microsoft 365 services, collecting that content, and then adding it to a review set where reviewers can take advantage of fast search queries, tagging, and analytics features to help cull relevant documents. eDiscovery (Premium) now includes improved processing and native viewers for both Microsoft and non-Microsoft file types, a full list of file types is [here](./ediscovery-supported-file-types.md) and supported metadata fields are [here](./ediscovery-document-metadata-fields.md). Also, the new eDiscovery (Premium) solution provides a powerful custodian holds management feature that lets you apply holds to content in different services, notify users of the holds, and track custodian responses, all within an eDiscovery (Premium) case.
 
 To access eDiscovery (Premium) v2.0:
 
@@ -378,4 +378,4 @@ At this time, we recommend that you begin to transition your eDiscovery workflow
 
 ### Alternative tools
 
-The [eDiscovery (Premium) solution](./overview-ediscovery-20.md) in the compliance portal.
+The [eDiscovery (Premium) solution](./ediscovery-overview.md) in the compliance portal.

@@ -36,4 +36,4 @@ For more information, see the following articles:
 
 - [Error remediation when processing data](ediscovery-error-remediation-when-processing-data.md)
 
-- [Single item error remediation](single-item-error-remediation.md)
+- [Single item error remediation](ediscovery-single-item-error-remediation.md)

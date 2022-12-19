@@ -26,7 +26,7 @@ This article explains how automatic redirection works for users accessing compli
 
 Automatic redirection is enabled by default for all users accessing compliance-related solutions in Office 365 Security and Compliance (protection.office.com):
 
-- [eDiscovery (Premium)](overview-ediscovery-20.md)
+- [eDiscovery (Premium)](ediscovery-overview.md)
 - [Communication compliance](communication-compliance.md)
 - [Content search](search-for-content.md)
 - [eDiscovery (Standard)](ediscovery-standard-get-started.md)

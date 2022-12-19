@@ -23,7 +23,7 @@ ms.collection:
 
 After you create a predictive coding model in Microsoft Purview eDiscovery (Premium), the next step is to performing the first training round to train the model on what is relevant and non-relevant content in your review set. After you complete the first round of training, you can perform subsequent training rounds to improve the model's ability to predict relevant and non-relevant content.
 
-To review the predictive coding workflow, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)
+To review the predictive coding workflow, see [Learn about predictive coding in eDiscovery (Premium)](ediscovery-predictive-coding-overview.md#the-predictive-coding-workflow)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -77,7 +77,7 @@ After you perform the first training round, a job is started that does the follo
   |**Reviewer labels item as not relevant**|False negative|True negative|
   |
 
-  Based on these comparisons, the model derives values for the F-score, precision, and recall metrics and the margin of error for each one. Scores for these model performance metrics are displayed on a flyout page for the training round. For a description of these metrics, see [Predictive coding reference](predictive-coding-reference.md).
+  Based on these comparisons, the model derives values for the F-score, precision, and recall metrics and the margin of error for each one. Scores for these model performance metrics are displayed on a flyout page for the training round. For a description of these metrics, see [Predictive coding reference](ediscovery-predictive-coding-reference.md).
 
 - Finally, the model determines the next 50 items that will be used for the next training round. This time, the model might select 20 items from the control set and 30 new items from the review set and designate them as the training set for the next round. The sampling for the next training round is not uniformly sampled. The model will optimize the sampling selection of items from the review set to select items where the prediction is ambiguous, which means the prediction score is in the 0.5 range. This process is known as *biased selection*.
 
@@ -93,4 +93,4 @@ After you perform subsequent training rounds (after the first training round), t
 
 ## Next steps
 
-After you perform the first training round, you can perform more training rounds or apply the model's prediction score filter to the review set to view the items the model has predicted as relevant or not relevant. For more information, see [Apply a prediction score filter to a review set](predictive-coding-apply-prediction-filter.md).
+After you perform the first training round, you can perform more training rounds or apply the model's prediction score filter to the review set to view the items the model has predicted as relevant or not relevant. For more information, see [Apply a prediction score filter to a review set](ediscovery-predictive-coding-apply-prediction-filter.md).

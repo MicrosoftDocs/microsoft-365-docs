@@ -32,7 +32,7 @@ Documents with processing errors in a review set are now identified (with a bann
 
 ![Banner displayed for document with processing error.](../media/SIERimage1.png)
 
-You can also search for documents that have processing errors by using the **Processing status** condition when [querying the documents in a review set](review-set-search.md).
+You can also search for documents that have processing errors by using the **Processing status** condition when [querying the documents in a review set](ediscovery-review-set-search.md).
 
 ![Use the Processing status condition to search for error documents.](../media/SIERimage2.png)
 

@@ -124,7 +124,7 @@ For more information about adding and preserving data sources in an eDiscovery (
 
 - [Add custodians to an eDiscovery (Premium) case](ediscovery-add-custodians-to-case.md)
 
-- [Add non-custodial data sources to an eDiscovery (Premium) case](non-custodial-data-sources.md)
+- [Add non-custodial data sources to an eDiscovery (Premium) case](ediscovery-non-custodial-data-sources.md)
 
 ## Collect Teams content and add to review set
 
@@ -267,7 +267,7 @@ The following list describes the deduplication (and duplication) behavior when c
 
 ### Metadata for Teams content
 
-In large review sets with thousands or millions of items, it can be difficult to narrow the scope of your review to Teams content. To help you focus your review on Teams content, there are metadata properties that are specific to Teams content. You can use these properties to organize the columns in the review list and [configure filters and queries](review-set-search.md) to optimize the review of Teams content. These metadata properties are also included when you export Teams content from eDiscovery (Premium), to help you organize and view content post-export or in third-party eDiscovery tools.
+In large review sets with thousands or millions of items, it can be difficult to narrow the scope of your review to Teams content. To help you focus your review on Teams content, there are metadata properties that are specific to Teams content. You can use these properties to organize the columns in the review list and [configure filters and queries](ediscovery-review-set-search.md) to optimize the review of Teams content. These metadata properties are also included when you export Teams content from eDiscovery (Premium), to help you organize and view content post-export or in third-party eDiscovery tools.
 
 The following table describes metadata properties for Teams content.
 
@@ -304,11 +304,11 @@ Here are some tips and best practices for viewing Teams content in a review set.
 
 - Useful columns that to help you review Teams content include **Custodian**, **Recipients**, and **File type** or **Message kind**.
 
-- Use [filters](review-set-search.md) for Teams-related properties to quickly display Teams content. There are filters for most of the metadata properties described in the previous section.
+- Use [filters](ediscovery-review-set-search.md) for Teams-related properties to quickly display Teams content. There are filters for most of the metadata properties described in the previous section.
 
 ## Deleting Teams chat messages
 
-You can use eDiscovery (Premium) and the Microsoft Graph Explorer to respond to data spillage incidents, when content containing confidential or malicious information is released through Teams chat messages. Admins in your organization can search for and delete chat messages in Microsoft Teams. This can help you remove sensitive information or inappropriate content in Teams chat messages. For more information, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
+You can use eDiscovery (Premium) and the Microsoft Graph Explorer to respond to data spillage incidents, when content containing confidential or malicious information is released through Teams chat messages. Admins in your organization can search for and delete chat messages in Microsoft Teams. This can help you remove sensitive information or inappropriate content in Teams chat messages. For more information, see [Search and purge chat messages in Teams](ediscovery-search-and-delete-teams-chat-messages.md).
 
 ## Reference guide
 

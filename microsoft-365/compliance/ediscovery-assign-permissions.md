@@ -43,7 +43,7 @@ The primary eDiscovery-related role group in compliance portal is called **eDisc
   For reasons why you might want eDiscovery Administrators in your organization, see [More information](#more-information).
 
 > [!NOTE]
-> To analyze a user's data using eDiscovery (Premium), the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft 365 E5 license. Alternatively, users with an Office 365 E1 or a Office 365 or Microsoft 365 E3 license can be assigned a Microsoft 365 E5 Compliance or Microsoft 365 eDiscovery and Audit add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use eDiscovery (Premium) to collect, view, and analyze data don't need an E5 license. For more information about eDiscovery (Premium) licensing, see [Subscriptions and licensing in eDiscovery (Premium)](overview-ediscovery-20.md#subscriptions-and-licensing).
+> To analyze a user's data using eDiscovery (Premium), the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft 365 E5 license. Alternatively, users with an Office 365 E1 or a Office 365 or Microsoft 365 E3 license can be assigned a Microsoft 365 E5 Compliance or Microsoft 365 eDiscovery and Audit add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use eDiscovery (Premium) to collect, view, and analyze data don't need an E5 license. For more information about eDiscovery (Premium) licensing, see [Subscriptions and licensing in eDiscovery (Premium)](ediscovery-overview.md#subscriptions-and-licensing).
   
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -138,7 +138,7 @@ The two-week grace period for previewing and exporting search results (without t
 
 This role lets users identify and manage custodians for eDiscovery (Premium) cases and use the information from Azure Active Directory and other sources to find data sources associated with custodians. The user can associate other data sources such as mailboxes, SharePoint sites, and Teams with custodians in a case. The user can also place a legal hold on the data sources associated with custodians to preserve content in the context of a case.
 
-For more information, see [Work with custodians in eDiscovery (Premium)](managing-custodians.md).
+For more information, see [Work with custodians in eDiscovery (Premium)](ediscovery-managing-custodians.md).
 
 ### Export
 
@@ -165,7 +165,7 @@ This role lets users view a list of items that were returned from a Content Sear
 
 ### Review
 
-This role lets users access review sets in [eDiscovery (Premium)](overview-ediscovery-20.md). Users who are assigned this role can see and open the list of cases on the **eDiscovery > Advanced** page in the compliance portal that they're members of. After the user accesses an eDiscovery (Premium) case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Users with this role can only access the data in a review set.
+This role lets users access review sets in [eDiscovery (Premium)](ediscovery-overview.md). Users who are assigned this role can see and open the list of cases on the **eDiscovery > Advanced** page in the compliance portal that they're members of. After the user accesses an eDiscovery (Premium) case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Users with this role can only access the data in a review set.
 
 ### RMS Decrypt
 

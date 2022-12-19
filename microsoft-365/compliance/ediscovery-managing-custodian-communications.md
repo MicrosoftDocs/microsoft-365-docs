@@ -52,8 +52,8 @@ For more information about managing the custodian communication process, see the
 
 - [Create a legal hold notice](ediscovery-create-hold-notification.md)
 
-- [Use the communications editor](using-communications-editor.md)
+- [Use the communications editor](ediscovery-using-communications-editor.md)
 
-- [Manage hold notifications](manage-hold-notification.md)
+- [Manage hold notifications](ediscovery-manage-hold-notifications.md)
 
 - [Acknowledge a hold notification](ediscovery-acknowledge-hold-notification.md)

@@ -29,7 +29,7 @@ Here's an a quick overview of the predictive coding process:
 
 To get started, you create a model, label as few as 50 items as relevant or not relevant. The system then uses this training to apply prediction scores to every item in the review set. This lets you filter items based on the prediction score, which  allows you to review the most relevant (or non-relevant) items first. If you want to train models with higher accuracies and recall rates, you can continue labeling items in subsequent training rounds until the model stabilizes. Once the model is stabilized, you can apply the final prediction filter to prioritize items to review.
 
-For a detailed overview of predictive coding, see [Learn about predictive coding in eDiscovery (Premium)](predictive-coding-overview.md).
+For a detailed overview of predictive coding, see [Learn about predictive coding in eDiscovery (Premium)](ediscovery-predictive-coding-overview.md).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -51,7 +51,7 @@ The first step is to create a new predictive coding model in the review set
 
    It will take a couple minutes for the system to prepare your model. After it's ready, you can perform the first round of training.
 
-For more detailed instructions, see [Create a predictive coding model](predictive-coding-create-model.md).
+For more detailed instructions, see [Create a predictive coding model](ediscovery-predictive-coding-create-model.md).
 
 ## Step 2: Perform the first training round
 
@@ -73,7 +73,7 @@ After you create the model, the next step is to complete the first training roun
 
     It will take a couple minutes for the system to "learn" from your labeling and update the model. When this process is complete, a status of **Ready** is displayed for the model on the **Predictive coding models (preview)** page.
 
-For more detailed instructions, see [Train a predictive coding model](predictive-coding-train-model.md).
+For more detailed instructions, see [Train a predictive coding model](ediscovery-predictive-coding-train-model.md).
 
 ## Step 3: Apply the prediction score filter to items in review set
 
@@ -103,13 +103,13 @@ After you perform at lease one training round, you can apply the prediction scor
 
   A list of documents with a prediction score within the range you specified is displayed on the review set page.
 
-For more detailed instructions, see [Apply a prediction filter to a review set](predictive-coding-apply-prediction-filter.md).
+For more detailed instructions, see [Apply a prediction filter to a review set](ediscovery-predictive-coding-apply-prediction-filter.md).
 
 ## Step 4: Perform more training rounds
 
 More than likely, you'll have to perform more training rounds to train the module to better predict relevant and non-relevant items in the review set. In general, you'll train the model enough times until it stabilizes enough to meet your requirements.
 
-For more information, see [Perform additional training rounds](predictive-coding-train-model.md#perform-additional-training-rounds)
+For more information, see [Perform additional training rounds](ediscovery-predictive-coding-train-model.md#perform-additional-training-rounds)
 
 ## Step 5: Apply the final prediction score filter to prioritize review
 

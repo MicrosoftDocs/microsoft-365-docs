@@ -122,9 +122,9 @@ Reindexing custodian data is a long-running process; the corresponding job that'
 
 For more information, see:
 
-- [Work with processing errors](processing-data-for-case.md)
+- [Work with processing errors](ediscovery-processing-data-for-case.md)
 
-- [Manage jobs](managing-jobs-ediscovery20.md)
+- [Manage jobs](ediscovery-managing-jobs.md)
 
 ## Release a custodian from a case
 

@@ -36,8 +36,8 @@ For more information about working with custodians, see the following articles:
 
 - [Bulk-add custodians to a case](ediscovery-bulk-add-custodians.md)
 
-- [Manage custodians in a case](manage-new-custodians.md)
+- [Manage custodians in a case](ediscovery-manage-new-custodians.md)
 
-- [View custodian activity](view-custodian-activity.md)
+- [View custodian activity](ediscovery-view-custodian-activity.md)
 
-- [Add non-custodial data sources to a case](non-custodial-data-sources.md)
+- [Add non-custodial data sources to a case](ediscovery-non-custodial-data-sources.md)

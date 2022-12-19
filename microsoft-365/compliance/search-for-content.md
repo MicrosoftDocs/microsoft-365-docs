@@ -32,7 +32,7 @@ The first step is to starting using the Content search tool to choose content lo
 - [Build search queries and use conditions](ediscovery-keyword-queries-and-search-conditions.md) to narrow your search.
 - [Feature reference](ediscovery-content-search-reference.md) for Content search.
 - [Configure search permissions filtering](permissions-filtering-for-ediscovery-content-search.md) so that an eDiscovery manager can only search subset of mailboxes or sites in your organization.
-- [Search cloud-based mailboxes](search-cloud-based-mailboxes-for-on-premises-users.md) for on-premises users in Microsoft 365.
+- [Search cloud-based mailboxes](ediscovery-search-cloud-based-mailboxes-for-on-premises-users.md) for on-premises users in Microsoft 365.
 - [View keyword statistics](view-keyword-statistics-for-ediscovery-content-search.md) for the results of a search and then refine the query if necessary.
 - [Search for third-party data](use-content-search-to-search-third-party-data-that-was-imported.md) that your organization has imported to Microsoft 365.
 - [Preserve Bcc recipients](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) so you can search for them.

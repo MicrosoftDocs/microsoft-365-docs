@@ -29,7 +29,7 @@ After you've identified custodians and any non-custodian data sources for the ca
 
 ## Recommendations when creating collection estimates
 
-- Consider [adding custodians](ediscovery-add-custodians-to-case.md) and [non-custodial data sources](non-custodial-data-sources.md) to the case before you create a collection estimate.
+- Consider [adding custodians](ediscovery-add-custodians-to-case.md) and [non-custodial data sources](ediscovery-non-custodial-data-sources.md) to the case before you create a collection estimate.
 
     This is recommended so that you can quickly select the data sources when you create a collection estimate in the wizard. If you choose to skip adding custodians or non-custodial data sources, you'll have the option to search for these and any additional data sources (ones that haven't been added to the case as custodial or non-custodial locations) in a collection estimate for content that may be relevant to the case. These data sources might include mailboxes, SharePoint sites, and Teams. If this situation is applicable to your case, use additional locations to add these sources to your collection.
 

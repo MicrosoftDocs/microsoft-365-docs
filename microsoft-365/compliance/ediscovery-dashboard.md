@@ -80,4 +80,4 @@ For some cases in Microsoft Purview eDiscovery (Premium), you may have a large v
 
 5. Close the **Search profile view** to return to the search results view.
 
-   If you have created any visual filters, the resulting query is applied to the search results that are displayed, and the search query that you saved in step 4 is displayed under **Saved queries**. For more information about review set queries, see [Query the data in a review set](review-set-search.md).
+   If you have created any visual filters, the resulting query is applied to the search results that are displayed, and the search query that you saved in step 4 is displayed under **Saved queries**. For more information about review set queries, see [Query the data in a review set](ediscovery-review-set-search.md).

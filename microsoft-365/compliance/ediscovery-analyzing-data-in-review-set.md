@@ -24,11 +24,11 @@ ms.custom: seo-marvel-mar2020
 
 When the number of collected documents is large, it can be difficult to review them all. Microsoft Purview eDiscovery (Premium) provides a number of tools to analyze the documents to reduce the volume of documents to be reviewed without any loss in information, and to help you organize the documents in a coherent manner. To learn more about these capabilities, see:
 
-- [Near duplicate detection](near-duplicate-detection-in-advanced-ediscovery.md)
+- [Near duplicate detection](ediscovery-near-duplicate-detection.md)
 
 - [Email threading](ediscovery-email-threading.md)
 
-- [Themes](themes-in-advanced-ediscovery.md)
+- [Themes](ediscovery-themes.md)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -46,7 +46,7 @@ To analyze data in a review set:
 
 You can check the progress of analysis on the **Jobs** tab of the case.
 
- After analysis is completed, you can view the analytics report, run queries within your review set on outputs of the analysis (see [Query within your review set](review-set-search.md), and see related documents of a given document (see [Reviewing data in review set](reviewing-data-in-review-set.md).
+ After analysis is completed, you can view the analytics report, run queries within your review set on outputs of the analysis (see [Query within your review set](ediscovery-review-set-search.md), and see related documents of a given document (see [Reviewing data in review set](reviewing-data-in-review-set.md).
 
 ## Using the For Review filter query
 

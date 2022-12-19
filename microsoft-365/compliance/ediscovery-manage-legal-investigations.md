@@ -37,7 +37,7 @@ eDiscovery cases let you control who can create, access, and manage eDiscovery c
 
 - [Assign eDiscovery permissions](ediscovery-assign-permissions.md) to control who can create and manage eDiscovery cases in your organization.
 
-- [Set up compliance boundaries](set-up-compliance-boundaries.md) to control the user content locations that eDiscovery managers can search.
+- [Set up compliance boundaries](ediscovery-set-up-compliance-boundaries.md) to control the user content locations that eDiscovery managers can search.
 
 - [Search for content](search-for-content.md) in your organization.
 
@@ -47,7 +47,7 @@ Like the previous section that listed scripts for content search scenarios, we'v
   
 - [Create a eDiscovery hold report](ediscovery-create-a-report-on-holds-in-cases.md) that contains information about all holds associated with eDiscovery cases in your organization.
 
-- [Add mailboxes and OneDrive locations](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) for a list of users to an eDiscovery hold.
+- [Add mailboxes and OneDrive locations](ediscovery-use-a-script-to-add-users-to-a-hold.md) for a list of users to an eDiscovery hold.
   
 ## Manage legal investigations with the eDiscovery (Premium) solution in Microsoft 365
 
@@ -59,18 +59,18 @@ Here's a quick overview of the built-in workflow in eDiscovery (Premium). For mo
 
 - [Create a case](ediscovery-create-and-manage-advanced-cases.md#create-a-case) to get started.
 
-- [Manage custodians](managing-custodians.md) by adding them to a case and placing a legal hold on content in their mailbox, OneDrive account, and Microsoft Teams they're members of.
+- [Manage custodians](ediscovery-managing-custodians.md) by adding them to a case and placing a legal hold on content in their mailbox, OneDrive account, and Microsoft Teams they're members of.
 
 - [Manage communications](managing-custodian-communications.md) with custodians by automating the legal hold notification process.
 
-- [Index custodian data](processing-data-for-case.md) and fix indexing errors so you can effectively collect data for your investigations.
+- [Index custodian data](ediscovery-processing-data-for-case.md) and fix indexing errors so you can effectively collect data for your investigations.
 
 - [Collect data](collecting-data-for-ediscovery.md) for a case and add [add it to a review set](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) for further investigation.
 
-- [View](view-documents-in-review-set.md) documents, [query](review-set-search.md) data, and [tag](tagging-documents.md) items in a review set.
+- [View](ediscovery-view-documents-in-review-set.md) documents, [query](ediscovery-review-set-search.md) data, and [tag](ediscovery-tagging-documents.md) items in a review set.
 
 - [Analyze case data](ediscovery-analyzing-data-in-review-set.md) with advanced analytics tools.
 
 - [Export case data](ediscovery-exporting-data.md) for review by outside counsel.
 
-- [Manage long-running jobs](managing-jobs-ediscovery20.md) in eDiscovery (Premium).
+- [Manage long-running jobs](ediscovery-managing-jobs.md) in eDiscovery (Premium).

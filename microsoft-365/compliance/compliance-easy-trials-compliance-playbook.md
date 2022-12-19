@@ -368,7 +368,7 @@ To allow people in your organization start to create and use cases, you must con
 
 1. [Configure global settings for eDiscovery (Premium)](ediscovery-premium-get-started.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [Configure search and analytics settings](ediscovery-configure-search-and-analytics-settings.md)
-1. [Manage jobs in eDiscovery (Premium)](managing-jobs-ediscovery20.md)
+1. [Manage jobs in eDiscovery (Premium)](ediscovery-managing-jobs.md)
 
 ### Step 4 (optional): Compliance Boundaries
 
@@ -378,10 +378,10 @@ Compliance boundaries create logical boundaries within an organization that cont
 
 Set up compliance boundaries for eDiscovery investigations:
 
-1. [Identify a user attribute to define your agencies](set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
-1. [Create a role group for each agency](set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
-1. [Create a search permissions filter to enforce the compliance boundary](set-up-compliance-boundaries.md#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
-1. [Create an eDiscovery case for an intra-agency investigations](set-up-compliance-boundaries.md#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
+1. [Identify a user attribute to define your agencies](ediscovery-set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
+1. [Create a role group for each agency](ediscovery-set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
+1. [Create a search permissions filter to enforce the compliance boundary](ediscovery-set-up-compliance-boundaries.md#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
+1. [Create an eDiscovery case for an intra-agency investigations](ediscovery-set-up-compliance-boundaries.md#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
 ### Step 5 (optional): eDiscovery Premium’s collection tool
 

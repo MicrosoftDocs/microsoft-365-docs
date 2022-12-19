@@ -18,6 +18,7 @@ ms.collection:
 - m365solution-aed
 - m365solution-scenario
 - highpri
+- ediscovery
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -38,7 +39,7 @@ This includes ensuring the proper licensing required to access eDiscovery (Premi
 
 ## Step 1: Verify and assign appropriate licenses
 
-Licensing for eDiscovery (Premium) requires the appropriate organization subscription and per-user licensing. For a list of licensing requirements for eDiscovery (Premium), see [Subscriptions and licensing](overview-ediscovery-20.md#subscriptions-and-licensing).
+Licensing for eDiscovery (Premium) requires the appropriate organization subscription and per-user licensing. For a list of licensing requirements for eDiscovery (Premium), see [Subscriptions and licensing](ediscovery-overview.md#subscriptions-and-licensing).
 
 ## Step 2: Assign eDiscovery permissions
 

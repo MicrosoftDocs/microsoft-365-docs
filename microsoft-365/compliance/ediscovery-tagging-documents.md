@@ -89,7 +89,7 @@ With the tag structure in place, reviewers can apply tags to items in a review s
 
    ![Click Tag files in the command bar to open the tagging panel.](../media/TagFilesFlyoutPage.png)
 
-2. On the **Tag files** flyout page, you can set the following options to configure how to tag items displayed in the review set. The filters or filter queries currently applied to the review set determine which items are displayed and therefore the items that you can apply tags to. For more information, see [Query and filter content in a review set](review-set-search.md).
+2. On the **Tag files** flyout page, you can set the following options to configure how to tag items displayed in the review set. The filters or filter queries currently applied to the review set determine which items are displayed and therefore the items that you can apply tags to. For more information, see [Query and filter content in a review set](ediscovery-review-set-search.md).
 
    - **Choose selection**. Choose one the following options to determine the scope of items to apply tags to.
 

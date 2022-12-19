@@ -33,7 +33,7 @@ Follow the workflow in this article to add content from one review set to anothe
 
 ## Create a review set
 
-Before you start, you'll need to create a review set to add the data to.  A new review set can be added on the **Review sets** tab of the case. For more information, see [Create a review set](managing-review-sets.md#create-a-review-set).
+Before you start, you'll need to create a review set to add the data to.  A new review set can be added on the **Review sets** tab of the case. For more information, see [Create a review set](ediscovery-managing-review-sets.md#create-a-review-set).
 
 ## Step 1: Identify content to add to another review set
 
@@ -47,4 +47,4 @@ In the **Add to another review set options** flyout page, choose the review set 
 
 ![Options for adding data to another review set.](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 
-After you click **Ok**, a new job (named **Adding data to another review set**) is created to add the content to another review set. You can go to the **Jobs** tab and monitor the progress of this job. For more information, see [Manage jobs](managing-jobs-ediscovery20.md).
+After you click **Ok**, a new job (named **Adding data to another review set**) is created to add the content to another review set. You can go to the **Jobs** tab and monitor the progress of this job. For more information, see [Manage jobs](ediscovery-managing-jobs.md).

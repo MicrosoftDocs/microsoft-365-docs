@@ -68,4 +68,4 @@ Here are two ways you can use the prediction score filter:
 
 ## More information
 
-- For more information about using filters, see [Query and filter content in a review set](review-set-search.md).
+- For more information about using filters, see [Query and filter content in a review set](ediscovery-review-set-search.md).

@@ -108,8 +108,8 @@ Specifically, you can export entire chat conversations in a single PDF file or y
 
 To learn more about how to review case data in eDiscovery (Premium), see the following articles:
 
-- [Query and filter content in a review set](review-set-search.md)
-- [Tag documents in a review set](tagging-documents.md)
-- [View case data](view-documents-in-review-set.md)
+- [Query and filter content in a review set](ediscovery-review-set-search.md)
+- [Tag documents in a review set](ediscovery-tagging-documents.md)
+- [View case data](ediscovery-view-documents-in-review-set.md)
 - [Analyze case data](ediscovery-analyzing-data-in-review-set.md)
 - [Export case data](ediscovery-exporting-data.md)
