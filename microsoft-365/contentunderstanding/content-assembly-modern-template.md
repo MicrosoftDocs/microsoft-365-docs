@@ -138,7 +138,19 @@ On the **All fields** panel:
 
 ### Associate a table with a SharePoint list or library
 
-On the **All fields** panel:
+On the **Template fields** panel:
+
+1.	In the **Name** field, enter a relevant name for the field.
+
+    ![Screenshot of the template viewer showing the New field for associating a table field.](../media/content-understanding/content-assembly-associate-table-1.png)
+
+2.	Select the table section in the document you want to create a field for. You can view the table selection in the fields panel. 
+
+3.	Confirm the selection, and then select **Next**.
+
+4.	You can associate a SharePoint list or library to the table.
+
+    ![Screenshot of the template viewer showing the New field for associating a table field.](../media/content-understanding/content-assembly-associate-table-1.png)
 
 
 ### Add an image field
