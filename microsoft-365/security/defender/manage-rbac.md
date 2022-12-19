@@ -42,17 +42,16 @@ The Microsoft 365 Defender role-based access control (RBAC) model provides a sin
 
 Centralized permissions management is supported for the following solutions:
 
-| Solution| Description |
-|:-------|:-----|:-------|
-|Microsoft 365 Defender | Centralized permissions management for Microsoft 365 Defender experiences.|
-|Microsoft Defender for Endpoint | Full support for all endpoint data and actions. All roles are compatible with the device group's scope as defined on the device groups page.|
-| Microsoft Defender for Office 365 | Support for all scenarios that were controlled by <strong>Exchange Online Protection roles</strong> (EOP), configured in the Microsoft 365 Defender portal under **Permissions** > **Email & collaboration roles**. </br></br> **Note:** Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses only. This capability is not available to users on trial licenses.|
-| Microsoft for Identity | Full support for all identity data and actions. </br></br> **Note:** Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://security.microsoft.com/cloudapps/permissions/roles). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).|
+|Solution|Description|
+|---|---|---|
+|Microsoft 365 Defender|Centralized permissions management for Microsoft 365 Defender experiences.|
+|Microsoft Defender for Endpoint|Full support for all endpoint data and actions. All roles are compatible with the device group's scope as defined on the device groups page.|
+|Microsoft Defender for Office 365|Support for all scenarios that were controlled by **Exchange Online Protection roles** (EOP), configured in the Microsoft 365 Defender portal under **Permissions** \> **Email & collaboration roles**. </br></br> **Note:** Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses only. This capability is not available to users on trial licenses.|
+|Microsoft for Identity|Full support for all identity data and actions. </br></br> **Note:** Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://security.microsoft.com/cloudapps/permissions/roles). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).|
 
->[!Note]
+> [!NOTE]
 > Scenarios and experiences controlled by Compliance permissions are still managed in the Microsoft Purview compliance portal.
-
->[!Note]
+>
 > This offering isn't currently available for Microsoft Defender for CloudApps.
 
 ## Before you start
@@ -64,7 +63,7 @@ This section provides useful information on what you need to know before you sta
 - You must be a Global Administrator or Security Administrator in Azure Active Directory to:
 
   - Gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
-  
+
   - Manage roles and permissions in Microsoft 365 Defender RBAC.
 
   - Create a custom role that can grant access to security groups or individual users to manage roles and permissions in Microsoft 365 Defender RBAC. This will remove the need for Azure Active Directory global roles to manage permissions. To do this you need assign the **Authorization** permission in Microsoft 365 Defender RBAC. For details on how to assign the Authorization permission, see [Create a role to access and manage roles and permissions](../defender/create-custom-rbac-roles.md#create-a-role-to-access-and-manage-roles-and-permissions).
@@ -98,4 +97,3 @@ Use the following steps as a guide to start using the Microsoft 365 Defender RBA
 3. **Learn more about the Microsoft 365 Defender RBAC model**
    - [Microsoft 365 Defender RBAC permissions](custom-permissions-details.md)
    - [Map existing RBAC roles to Microsoft 365 Defender RBAC roles](compare-rbac-roles.md)
-
