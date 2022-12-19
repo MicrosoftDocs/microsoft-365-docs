@@ -70,7 +70,7 @@ If you haven't yet bought extra storage for your subscription, you can do that.
 7. On the **Complete order** page, verify the total. If you need to make any changes, select **Edit order**. If the order requires a credit check, select the check box. When you're finished, select **Place order** \> **Go to Admin Home**.
 
 > [!NOTE]
-> Each Microsoft Office 365 Extra File Storage Add-on has 1 GB capacity.
+> Each Microsoft Office 365 Extra File Storage add-on has a 1 GB capacity.
 
 ## Increase or decrease your extra storage
 
