@@ -108,8 +108,6 @@ As for the connector itself, you don't need to worry about upgrades or maintenan
 
 ### Microsoft Teams Shifts connector for UKG Dimensions
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
 The Teams Shifts connector for UKG Dimensions is a first-party offering that's hosted and managed by Microsoft. With this connector, you can integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date.  
 
 :::image type="content" source="media/shifts-connector-ukg-dimensions.png" alt-text="Screenshot showing Shifts on a mobile device, a time off request, and a schedule in UKG Dimensions." lightbox="media/shifts-connector-ukg-dimensions.png":::

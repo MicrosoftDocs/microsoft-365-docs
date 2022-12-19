@@ -22,8 +22,6 @@ ms.date: 10/28/2022
 
 # Use PowerShell to manage your Shifts connection to UKG Dimensions
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
 ## Overview
 
 The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate the Shifts app in Microsoft Teams with UKG Dimensions. After you set up a connection, your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
