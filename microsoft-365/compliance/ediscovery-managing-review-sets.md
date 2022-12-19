@@ -55,7 +55,7 @@ There are three different ways to add data to a review set in an eDiscovery (Pre
 
 2. [Load non-Microsoft 365 data into a review set](ediscovery-load-non-office-365-data-into-a-review-set.md)
 
-3. [Add data to a review set from another review set](ediscovery-ediscovery-add-data-to-review-set-from-another-review-set.md)
+3. [Add data to a review set from another review set](ediscovery-add-data-to-review-set-from-another-review-set.md)
 
 > [!NOTE]
 > You can't delete items from a review set and you can't delete review sets from a case. To delete a review set (and delete the data in it), you have to delete the eDiscovery (Premium) case the review set is located in. For more information, see [Close or delete an eDiscovery (Premium) case](ediscovery-close-or-delete-case.md).

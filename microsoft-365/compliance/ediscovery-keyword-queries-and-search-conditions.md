@@ -418,7 +418,7 @@ Here's how the total number of characters in the search query are calculated:
 - The characters in any location property (such as the URLs for all the SharePoint sites or OneDrive locations being searched) count against this limit.
 - The characters in all the search permissions filters that are applied to the user running the search count against the limit.
 
-For more information about character limits, see [eDiscovery search limits](limits-for-ediscovery-content-search.md#search-limits).
+For more information about character limits, see [eDiscovery search limits](ediscovery-limits-for-content-search.md#search-limits).
 
 > [!NOTE]
 > The 4,000 character limit applies to Content search, eDiscovery (Standard), and eDiscovery (Premium).

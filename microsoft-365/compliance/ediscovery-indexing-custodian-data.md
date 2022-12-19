@@ -28,7 +28,7 @@ To learn more about processing support and partially indexed items, see:
 
 - [Supported file types in eDiscovery (Premium)](ediscovery-supported-file-types.md)
 
-- [Partially indexed items in eDiscovery](partially-indexed-items-in-ediscovery-content-search.md)
+- [Partially indexed items in eDiscovery](ediscovery-partially-indexed-items-in-content-search.md)
 
 - [File formats indexed by Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 

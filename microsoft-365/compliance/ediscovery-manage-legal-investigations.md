@@ -55,9 +55,9 @@ The Microsoft Purview eDiscovery (Premium) solution in Microsoft 365 builds on t
 
 eDiscovery (Premium) requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Set up eDiscovery (Premium)](ediscovery-premium-get-started.md#step-1-verify-and-assign-appropriate-licenses).
 
-Here's a quick overview of the built-in workflow in eDiscovery (Premium). For more information, see [Manage the eDiscovery (Premium) workflow](ediscovery-create-and-manage-advanced-cases.md#manage-the-workflow).
+Here's a quick overview of the built-in workflow in eDiscovery (Premium). For more information, see [Manage the eDiscovery (Premium) workflow](ediscovery-create-and-manage-cases.md#manage-the-workflow).
 
-- [Create a case](ediscovery-create-and-manage-advanced-cases.md#create-a-case) to get started.
+- [Create a case](ediscovery-create-and-manage-cases.md#create-a-case) to get started.
 
 - [Manage custodians](ediscovery-managing-custodians.md) by adding them to a case and placing a legal hold on content in their mailbox, OneDrive account, and Microsoft Teams they're members of.
 

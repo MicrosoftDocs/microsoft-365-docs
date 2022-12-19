@@ -105,7 +105,7 @@ There are two quick and easy steps to get started with eDiscovery (Premium).
 |Steps  |Description  |
 |:---------|:---------|
 |[Set up eDiscovery (Premium)](ediscovery-premium-get-started.md)| After verifying the subscription and licensing requirements, you can assign permissions and configure organization-wide settings to get started using eDiscovery (Premium).|
-|[Create and manage cases](ediscovery-create-and-manage-advanced-cases.md) | Create cases to manage the eDiscovery (Premium) workflow for all legal and other types of investigations in your organization.|
+|[Create and manage cases](ediscovery-create-and-manage-cases.md) | Create cases to manage the eDiscovery (Premium) workflow for all legal and other types of investigations in your organization.|
 |||
 
 ## Integration with Insider Risk Management

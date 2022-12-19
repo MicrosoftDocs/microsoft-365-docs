@@ -31,9 +31,9 @@ The first step is to starting using the Content search tool to choose content lo
 - [Create and run](ediscovery-content-search.md) a Content search.
 - [Build search queries and use conditions](ediscovery-keyword-queries-and-search-conditions.md) to narrow your search.
 - [Feature reference](ediscovery-content-search-reference.md) for Content search.
-- [Configure search permissions filtering](permissions-filtering-for-ediscovery-content-search.md) so that an eDiscovery manager can only search subset of mailboxes or sites in your organization.
+- [Configure search permissions filtering](ediscovery-permissions-filtering-for-content-search.md) so that an eDiscovery manager can only search subset of mailboxes or sites in your organization.
 - [Search cloud-based mailboxes](ediscovery-search-cloud-based-mailboxes-for-on-premises-users.md) for on-premises users in Microsoft 365.
-- [View keyword statistics](view-keyword-statistics-for-ediscovery-content-search.md) for the results of a search and then refine the query if necessary.
+- [View keyword statistics](ediscovery-view-keyword-statistics-for-content-search.md) for the results of a search and then refine the query if necessary.
 - [Search for third-party data](use-content-search-to-search-third-party-data-that-was-imported.md) that your organization has imported to Microsoft 365.
 - [Preserve Bcc recipients](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) so you can search for them.
 
@@ -49,9 +49,9 @@ After you run a search and refine it as necessary, the next step is to do someth
 
 Content search is easy to use, but it's also a powerful tool. Behind-the-scenes, there's a lot going on. The more you know about it and understand its behavior and its limitations, the more successful you'll be using it for your organization's search and investigation needs.
   
-- [Content search limits](limits-for-ediscovery-content-search.md), such as the maximum number of searches that you can run at one time and the maximum number of content locations you can include in a single search.
+- [Content search limits](ediscovery-limits-for-content-search.md), such as the maximum number of searches that you can run at one time and the maximum number of content locations you can include in a single search.
 - [Estimated and actual search results](ediscovery-differences-between-estimated-and-actual-search-results.md) and the reasons why there might be differences between them when you export and download search results.
-- [Partially indexed items in Exchange and SharePoint](partially-indexed-items-in-ediscovery-content-search.md) and how to include or exclude them when you export and download search results.
+- [Partially indexed items in Exchange and SharePoint](ediscovery-partially-indexed-items-in-content-search.md) and how to include or exclude them when you export and download search results.
 - [Investigate partially indexed items](ediscovery-investigating-partially-indexed-items.md) and determine your organization's exposure to them.
 - [De-duplication in search results](ediscovery-de-duplication-in-search-results.md) that you can enable when you export email messages that are the results of a search.
 

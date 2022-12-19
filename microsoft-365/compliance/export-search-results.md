@@ -90,7 +90,7 @@ The first step is to prepare the search results for exporting. When you prepare 
     - **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports indexed and unindexed items.
     - **Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons**. This option exports only unindexed items.
 
-      See the [More information](#more-information) section for a description about how partially indexed items are exported. For more information about partially indexed items, see [Partially indexed items in Content search](partially-indexed-items-in-ediscovery-content-search.md).
+      See the [More information](#more-information) section for a description about how partially indexed items are exported. For more information about partially indexed items, see [Partially indexed items in Content search](ediscovery-partially-indexed-items-in-content-search.md).
 
 4. Under **Export Exchange content as**, choose one of the following options:
   
@@ -173,7 +173,7 @@ Here's more information about exporting search results.
   
 ### Export limits
 
-For information about limits when exporting content search results, see the "Export limits" section in [Limits for content search](limits-for-ediscovery-content-search.md#export-limits).
+For information about limits when exporting content search results, see the "Export limits" section in [Limits for content search](ediscovery-limits-for-content-search.md#export-limits).
 
 ### Export reports
   
