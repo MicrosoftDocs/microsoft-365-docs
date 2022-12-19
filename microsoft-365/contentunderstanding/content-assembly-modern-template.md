@@ -41,7 +41,7 @@ Follow these steps to create a modern template.
 
 When you select a document to create a modern template, you can create a new field and map it to multiple occurrences of the content with the same field.
 
-For example, contractor name can occur multiple times in a consulting agreement document. You can create a field named “Contractor Name” and associate it with all occurrences of the name throughout the document when you generate a modern template.
+For example, the name of a contractor can occur multiple times in a consulting agreement document. You can create a field named “Contractor Name” and associate it with all occurrences of the name throughout the document when you generate a modern template.
 
    ![Screenshot of the document in the template viewer with a field highlighted.](../media/content-understanding/content-assembly-create-and-reuse-fields-1.png)
 
@@ -64,6 +64,8 @@ You can associate fields by:
 - [Selecting from choices in a column of a list or library](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
 
 - [Selecting from a managed metadata term set or term](#associate-a-placeholder-by-selecting-from-a-managed-metadata-term-set-or-term)
+
+- [Associating a table with a SharePoint list or library](#associate-a-table-with-a-sharepoint-list-or-library)
 
 - [Adding an image field](#add-an-image-field)
 
@@ -133,6 +135,11 @@ On the **All fields** panel:
 
    > [!TIP]
    > When you enable the **Allow new values** option (only allowed for open term sets), users are more likely to add redundant terms in the term store. Redundant terms can make it difficult for admins to manage a term set.
+
+### Associate a table with a SharePoint list or library
+
+On the **All fields** panel:
+
 
 ### Add an image field
 
