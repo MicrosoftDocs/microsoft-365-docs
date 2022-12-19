@@ -1,5 +1,5 @@
 ---
-title: Get all scan definition APIs
+title: Get scan definitions
 description: Learn how to use the Get all scan definition APIs.
 keywords: apis, graph api, supported apis,
 ms.service: microsoft-365-security
@@ -20,24 +20,37 @@ ms.custom: api
 search.appverid: met150
 ---
 
-# Get scan definitions API
+# Get scan definitions
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink).
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
+[!Include[Prerelease information](../../includes/prerelease.md)]
+
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## API description
 
 Retrieves a list of all scan definitions.
+
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>OData supported operators:
+<br>```$filter``` on:  ```id```, ```name```, ```description```, ```cvssV3```, ```publishedOn```, ```severity```, and ```updatedOn``` properties.
+<br>```$top``` with max value of 10,000.
+<br>```$skip```.
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
+
 
 ## Limitations
 

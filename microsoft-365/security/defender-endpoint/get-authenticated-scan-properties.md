@@ -44,22 +44,26 @@ search.appverid: met150
 
 Method|Description
 :---|:---|:---
-[Add a new scan definition](add-a-new-scan-definition.md)|Add a new scan definition.
-[Get all scan agents]((get-all-scan-agents.md))|List all scan agents.
 [Get all scan definitions](get-all-scan-definitions.md)|List all scan definitions.
-[Get scan history by definition](get-scan-history-by-definition.md))|List scan definition history.
+[Add, delete or update a scan definition](add-a-new-scan-definition.md)|Add, delete, or update a new scan definition.
+[Get all scan agents](get-all-scan-agents.md)|List all scan agents.
+[Get scan history by definition](get-scan-history-by-definition.md)|List scan definition history.
 [Get scan history by session](get-scan-history-by-session.md)|List scan history for a session.
 
-Learn more about [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md) and [Network authenticated scans](./network-devices.md)
+Learn more about [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md) and [Network authenticated scans](./network-devices.md).
 
 ## Properties
 
 Property ID|Data type|Description
 :---|:---|:---
-scanType|String|The type of scan
-scanName|String|Name of the scan
-isActive|Boolean|Status of the scan
-target|Long|IP target range the scan applies to
-scannerAgent|String|Id of te scanning device
-intervalInHours| String |The interval at which the scan will run
-scanAuthenticationParams|String | Array of authentication related parameters. See [add a new scan definition](./add-a-new-scan-definition.md)
+id|String| Scan id.
+scanType|String|The type of scan.
+scanName|String|Name of the scan.
+isActive|Boolean|Status of the scan.
+orgId | Related organization id.
+intervalInHours|String |The interval at which the scan will run.
+createdBy|String| Who created the scan.
+targetType|Long|IP target range the scan applies to.
+scanAuthenticationParams|String |Authenticated scan object contains: authentication type string, username string, password string.
+scannerAgent|String|Scanner agent object contains: scanning agent id string, scanning agent device id string, scanning agent device name string, the date and time (in UTC) the device was last seen.
+latestScan|String|Latest scan object contains: scan status string, failure string, the date and time (in UTC) the scan was executed.

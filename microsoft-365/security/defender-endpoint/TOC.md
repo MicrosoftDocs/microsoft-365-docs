@@ -545,9 +545,9 @@
 
 ###### [Authenticated scan]()
 ####### [Authenticated scan methods and properties](get-authenticated-scan-properties.md)
-####### [Add a new scan definition](add-a-new-scan-definition.md)
-####### [Get all scan agents](get-all-scan-agents.md)
 ####### [Get all scan definitions](get-all-scan-definitions.md)
+####### [Add, delete or update a scan definition](add-a-new-scan-definition.md)
+####### [Get all scan agents](get-all-scan-agents.md)
 ####### [Get scan history by definition](get-scan-history-by-definition.md)
 ####### [Get scan history by session](get-scan-history-by-session.md)
 
