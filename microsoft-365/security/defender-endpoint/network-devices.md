@@ -176,7 +176,7 @@ Once the results show up, you can choose which devices will be included in the p
 
 Newly discovered devices will be shown under the new **Network devices** tab in the **Device inventory** page. It may take up to two hours after adding an scanning job until the devices are updated.
 
-    :::image type="content" source="../../media/defender-endpoint/network-devices-inventory.png" alt-text="Screenshot of the network device tab in the device inventory" lightbox="../../media/defender-endpoint/network-devices-inventory.png":::
+:::image type="content" source="../../media/defender-endpoint/network-devices-inventory.png" alt-text="Screenshot of the network device tab in the device inventory" lightbox="../../media/defender-endpoint/network-devices-inventory.png":::
 
 ## Troubleshooting
 
