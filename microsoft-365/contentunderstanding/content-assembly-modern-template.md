@@ -37,6 +37,24 @@ Follow these steps to create a modern template.
 
    ![Screenshot of the template viewer showing the name of the document to select to rename.](../media/content-understanding/content-assembly-create-template-3a.png)
 
+## Create and reuse fields
+
+When you select a document to create a modern template, you can create a new field and map it to multiple occurrences of the content with the same field.
+
+For example, contractor name can occur multiple times in a consulting agreement document. You can create a field named “Contractor Name” and associate it with all occurrences of the name throughout the document when you generate a modern template.
+
+   ![Screenshot of the document in the template viewer with a field highlighted.](../media/content-understanding/content-assembly-create-and-reuse-fields-1.png)
+
+To create and reuse a field:
+
+1. Select a section of the content, and when it appears on the field panel on the right, select **Confirm**. You can select as many occurrences as required.
+
+2. When the field is created, select **Next** to associate the created field with different data sources.
+
+3. When done, you can see the count of all selections in the field card with the field name and the associated data source.
+
+   ![Screenshot of the Set up the template panel showing the field name and the associated data source.](../media/content-understanding/content-assembly-create-and-reuse-fields-2.png)
+
 ## Associate fields with different data sources
 
 You can associate fields by:
