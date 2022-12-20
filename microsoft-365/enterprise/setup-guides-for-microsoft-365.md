@@ -223,6 +223,10 @@ The [Teams Phone setup guide](https://aka.ms/teamsphonesetupguide) helps you sta
 
 The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, and drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, and enable the security settings for your SharePoint environment.
 
+### Surface Hub and Microsoft Teams Rooms setup guide
+
+The [Surface Hub and Microsoft Teams Rooms setup guide](https://admin.microsoft.com/#/modernonboarding/surfacehubsetupguide) will customize your experience based on your environment. If you're hosted in Exchange Online and using Microsoft Teams, the guide will automatically create your device account with the correct settings.
+
 ### OneDrive setup guide
 
 Use the [OneDrive setup guide](https://aka.ms/ODfBquickstartguide) to get started with OneDrive file storage, sharing, collaboration, and syncing capabilities. OneDrive provides a central location where users can sync their Microsoft 365 Apps files, configure external sharing, migrate user data, and configure advanced security and device access settings. The OneDrive setup guide can be deployed using a OneDrive subscription or a standalone OneDrive plan.
