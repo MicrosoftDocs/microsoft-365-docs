@@ -168,6 +168,8 @@ The Reflexis Shifts connector for Microsoft Teams is hosted and managed by Zebra
 
 Frontline workers have access to their schedule in Shifts in Teams, and their requests are synchronized from Shifts to Reflexis WFM. The status of requests and shifts created in WFM are synced to Shifts in Teams. This solution is available in WFM versions 4.3.2, 4.4, and 4.5.
 
+To learn more, go to <https://connect.zebra.com/microsoft-connectors>.
+
 :::image type="content" source="media/shifts-connector-reflexis.png" alt-text="Screenshot showing list of shifts on a mobile device and a schedule in Reflexis." lightbox="media/shifts-connector-reflexis.png":::
 
 Prerequisites for setting up a connection
@@ -201,8 +203,6 @@ The following actions are currently not supported:
 - Assign open shifts that were created in Reflexis WFM in Shifts (frontline managers)
 - Set availability in Shifts (frontline workers)
 - View and post timecard entries in Shifts (frontline workers)
-
-To learn more, go to <https://connect.zebra.com/microsoft-connectors>.
 
 #### Example scenario
 
