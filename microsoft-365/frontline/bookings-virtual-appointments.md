@@ -47,13 +47,13 @@ The virtual appointments are held through Microsoft Teams meetings, which offer 
 
 With Bookings, you get an experience that's tailored to your industry. Here's a few examples of how you can use it in your organization:
 
-|Industry | Examples |
+|Industry|Examples|
 |---------|---------|
-|Financial services    |  Virtual appointments for remote sales and service<br/>Schedule and manage appointments for bank relationship managers, financial advisors, and claims adjusters, just to name a few, to serve your customers with increased efficiency and convenience.  |
-|Retail   | Virtual fittings and consultations <br/>Schedule and manage appointments for your sales associates, product experts, and design consultants to conduct virtual fittings and consultations with customers.   |
-|Healthcare   |  Virtual appointments for patient care <br/>Schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.   |
+|Financial services|Virtual appointments for remote sales and service<br/>Schedule and manage appointments for bank relationship managers, financial advisors, and claims adjusters, just to name a few, to serve your customers with increased efficiency and convenience.|
+|Retail|Virtual fittings and consultations <br/>Schedule and manage appointments for your sales associates, product experts, and design consultants to conduct virtual fittings and consultations with customers.|
+|Healthcare|Virtual appointments for patient care <br/>Schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.|
 
-With any Microsoft 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, attendees can wait in a pre-appointment waiting room and join through a browser without having to download Teams. With [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview), your organization gets advanced Virtual Appointments capabilities on top of Bookings to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and analytics.
+With any Microsoft 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, attendees can wait in a pre-appointment waiting room and join through a browser without having to download Teams. With [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview), your organization gets advanced Virtual Appointments capabilities on top of Bookings to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and analytics.
 
 This article gives you an overview of how to schedule, manage, and conduct virtual appointments using the Bookings app in Teams.
 
