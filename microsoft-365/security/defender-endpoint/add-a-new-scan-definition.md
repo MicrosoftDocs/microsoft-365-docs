@@ -85,25 +85,53 @@ In the request body, supply a JSON object with the following parameters:
 Parameter|Type|Description
 :---|:---|:---
 Value|String|The scan Id. **Required**.
-Action|Enum|Add, Patch or Remove. Allowed values are: 'Add', 'Patch' or 'Remove'. **Required**.
 
 ## Response
 
 If successful, this method returns 200 - Ok response code and the updated Machine in the response body.
 
-## Example Request
+## Add example request
 
 Here is an example of a request that adds a new scan.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/Add
 ```
 
 ```json
 {
-  "Value" : "td32f17af-5cc2-4e4e-964a-4c4ef7d216e2",
-  "Action": "Add"
+  "ScanDefinitionIds": "td32f17af-5cc2-4e4e-964a-4c4ef7d216e2",
 }
 ```
 
-To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.
+## Remove example request
+
+Here is an example of a request that removes a scan.
+
+```http
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/BatchDelete
+```
+
+```json
+{
+  "ScanDefinitionIds": "td32f17af-5cc2-4e4e-964a-4c4ef7d216e2",
+}
+```
+
+## Update example request
+
+Here is an example of a request that updates a scan.
+
+```http
+PATCH https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/a07c400a-f8e1-4329-ae66-7d3be65df0ec
+
+```
+
+```json
+{
+  "ScanDefinitionIds": "td32f17af-5cc2-4e4e-964a-4c4ef7d216e2",
+  "intervalInHours": 8,
+  "isActive": "True"
+}
+
+The following fields can be updated using the API: scanName, isActive, intervalInHours, targetType and scanAuthenticationParams
