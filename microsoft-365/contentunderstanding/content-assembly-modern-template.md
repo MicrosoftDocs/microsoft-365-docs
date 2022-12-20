@@ -71,13 +71,13 @@ You can associate fields by:
 
 ### Associate a field by entering text or selecting a date
 
-On the **All fields** panel:
+On the **New field** panel:
 
 1. In the **Name** field, enter a relevant name for the field.
 
 2. In the **How authors fill in this field** section, select **Enter text or select a date**.
 
-   ![Screenshot of the template viewer showing the All fields panel for manual input.](../media/content-understanding/content-assembly-create-template-5a.png)
+   ![Screenshot of the template viewer showing the New field panel for manual input.](../media/content-understanding/content-assembly-create-template-5a.png)
 
 
 3. In the **Type of info** field, select the data type you want to associate with the field. Currently, there are six options available: **Single line of text**, **Multiple lines of text**, **Number**, **Date and time**, **Email**, and **Hyperlink**.
@@ -89,13 +89,13 @@ On the **All fields** panel:
 
 ### Associate a field by selecting from choices in a column of a list or library
 
-On the **All fields** panel:
+On the **New field** panel:
 
 1. In the **Name** field, enter a relevant name for the field.
 
 2. In the **How authors fill in this field** section, choose **Select from choices in a column of a list or library**, and then choose **Select**.
 
-   ![Screenshot of the template viewer showing the All fields panel for input from a SharePoint list.](../media/content-understanding/content-assembly-create-template-6a.png)
+   ![Screenshot of the template viewer showing the New field panel for input from a SharePoint list.](../media/content-understanding/content-assembly-create-template-6a.png)
 
 3. On the **Select a list for adding a source column** page, select the list you want to use, and then select **Next**.
 
@@ -109,19 +109,19 @@ On the **All fields** panel:
 
 5. When you're done, you'll see that the list field has been associated with the field.
 
-   ![Screenshot of the All fields panel showing the list field associated with the field.](../media/content-understanding/content-assembly-create-template-9.png)
+   ![Screenshot of the New field panel showing the list field associated with the field.](../media/content-understanding/content-assembly-create-template-9.png)
 
 6. If you want users to be able to add inputs manually, in addition to choosing from a list, select **Allow authors to add new choices**. In this case, the default for the manual input data type is *Single line of text*. Also the values input by the authors will only be used to generate the document. They won't be added to the SharePoint list.
 
 ### Associate a field by selecting from a managed metadata term set or term
 
-On the **All fields** panel:
+On the **New field** panel:
 
 1. In the **Name** field, enter a relevant name for the field.
 
 2. In the **How authors fill in this field** section, choose **Select from managed metadata term set or term**, and then choose **Select**.
 
-   ![Screenshot of the template viewer showing the All fields panel for input from a term or term set.](../media/content-understanding/content-assembly-create-template-term.png)
+   ![Screenshot of the template viewer showing the New field panel for input from a term or term set.](../media/content-understanding/content-assembly-create-template-term.png)
 
 3. On the **Select term sets or terms** page, search for or select the term set or term to associate with the field, and then select **Save**.
 
@@ -129,7 +129,7 @@ On the **All fields** panel:
 
 4. When you’re done, you’ll see that the selected term set or term has been associated with the field. 
 
-   ![Screenshot of the All fields panel showing the associated term set or term.](../media/content-understanding/content-assembly-associated-term.png)
+   ![Screenshot of the New field panel showing the associated term set or term.](../media/content-understanding/content-assembly-associated-term.png)
 
 5. If you want users to be able to add multiple values corresponding to the term set or term, select **Allow multiple values**. Also, if the term set is configured as an open term set, you can select **Allow new values**. If you enable this option, users who generate documents from the modern template can add new terms to the term set and add those terms as field values.
 
@@ -138,13 +138,13 @@ On the **All fields** panel:
 
 ### Associate a table with a SharePoint list or library
 
-On the **Template fields** panel:
+On the **New field** panel:
 
 1.	In the **Name** field, enter a relevant name for the field.
 
     ![Screenshot of the template viewer showing the New field for associating a table field.](../media/content-understanding/content-assembly-associate-table-1.png)
 
-2.	Select the table section in the document you want to create a field for. You can view the table selection in the **All fields** panel. 
+2.	Select the table section in the document you want to create a field for. You can view the table selection in the **Fields** section. 
 
 3.	Confirm the selection, and then select **Next**.
 
@@ -162,21 +162,21 @@ On the **Template fields** panel:
 
     ![Screenshot of the template viewer showing how to map all the table columns with the list columns.](../media/content-understanding/content-assembly-associate-table-4.png)
 
-7.	When all the table columns are mapped, you can see the table selection in the **All fields** panel.
+7.	When all the table columns are mapped, you can see the table selection in the **Fields** section.
 
-    ![Screenshot of the template viewer showing the table selection in the All fields panel.](../media/content-understanding/content-assembly-associate-table-5.png)
+    ![Screenshot of the template viewer showing the table selection in the New field panel.](../media/content-understanding/content-assembly-associate-table-5.png)
 
 When users generate documents from the template, they can select relevant list entries to be filled in, and the table rows will increase or decrease based on the number of row selections made.
 
 ### Add an image field
 
-On the **Template fields** panel:
+On the **New field** panel:
 
 1.	In the **Name** field, enter a relevant name for the field.
 
     ![Screenshot of the template viewer showing the New field for adding an image field.](../media/content-understanding/content-assembly-add-image-field.png)
 
-2.	Select the image section in the document you want to create a field for. You can view the image name and the alt text (a description of the image) for the selected image in the **All fields** panel.
+2.	Select the image section in the document you want to create a field for. You can view the image name and the alt text (a description of the image) for the selected image in the **Fields** section.
 
 3.	Confirm the selection, and then select **Next**.
 
