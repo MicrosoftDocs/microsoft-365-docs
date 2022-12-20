@@ -25,11 +25,11 @@ ms.custom:
 
 Microsoft Purview eDiscovery (Premium) supports double-byte character set languages (these include Simplified Chinese, Traditional Chinese, Japanese, and Korean, which are collectively known as *CJK* languages) for the following advanced scenarios in a review set:
 
-- When you [query the data in a review set](review-set-search.md).
+- When you [query the data in a review set](ediscovery-review-set-search.md).
 
-- When you [tag documents in a review set](tagging-documents.md).
+- When you [tag documents in a review set](ediscovery-tagging-documents.md).
 
-- When you [analyze case data in a review set](analyzing-data-in-review-set.md) by using near duplicate detection, email threading, and themes analytics.
+- When you [analyze case data in a review set](ediscovery-analyzing-data-in-review-set.md) by using near duplicate detection, email threading, and themes analytics.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -37,9 +37,9 @@ Microsoft Purview eDiscovery (Premium) supports double-byte character set langua
 
 **How do I create a search to collect items that contains CJK characters?**
 
-You can use CJK characters for [keyword searches](building-search-queries.md#keyword-searches), [keyword queries and search conditions](keyword-queries-and-search-conditions.md) when searching for content in eDiscovery (Premium). Searching for CJK characters is also supported when searching for content in Microsoft Purview eDiscovery (Standard) and Content Search.
+You can use CJK characters for [keyword searches](ediscovery-building-search-queries.md#keyword-searches), [keyword queries and search conditions](ediscovery-keyword-queries-and-search-conditions.md) when searching for content in eDiscovery (Premium). Searching for CJK characters is also supported when searching for content in Microsoft Purview eDiscovery (Standard) and Content Search.
 
-We provide CJK support for all [search operators](keyword-queries-and-search-conditions.md#search-operators) and [search conditions](keyword-queries-and-search-conditions.md#search-conditions), including the boolean operators **AND**, **OR**, **NOT**, and **NEAR**.
+We provide CJK support for all [search operators](ediscovery-keyword-queries-and-search-conditions.md#search-operators) and [search conditions](ediscovery-keyword-queries-and-search-conditions.md#search-conditions), including the boolean operators **AND**, **OR**, **NOT**, and **NEAR**.
 
 If you're certain that content locations or items contain CJK characters, but searches aren't returning any results, click the query language-country/region icon ![Query language-country/region icon in Content search.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select the corresponding language-country culture code value for the search. The default language/region is neutral.
 
@@ -47,15 +47,15 @@ If you're certain that content locations or items contain CJK characters, but se
 
 It depends on your search scenario.
 
-- When you [query data in a review set](review-set-search.md) in eDiscovery (Premium), you can search for multiple languages.
+- When you [query data in a review set](ediscovery-review-set-search.md) in eDiscovery (Premium), you can search for multiple languages.
 
-- When you [create a search to collect data](create-draft-collection.md), create separate collections for each language you're targeting. For example, if you are searching for a document that contains both Chinese and Korean, select Chinese for your first collection and select Korean for your second collection.
+- When you [create a search to collect data](ediscovery-create-draft-collection.md), create separate collections for each language you're targeting. For example, if you are searching for a document that contains both Chinese and Korean, select Chinese for your first collection and select Korean for your second collection.
 
 **I don't see the query language-country/region icon to select a language for queries in a review set. How can I specify a query language in a review set search?**
 
 For review set queries, you don't need to specify a document language. eDiscovery (Premium) automatically detects document languages when you add content to a review set. This helps you optimize your query results in a review set.
 
-**Can I see detected languages in [file metadata](view-documents-in-review-set.md#file-metadata)?**
+**Can I see detected languages in [file metadata](ediscovery-view-documents-in-review-set.md#file-metadata)?**
 
 No, you can't see detected languages in file metadata.
 
@@ -75,10 +75,10 @@ For information about how to change display language and time zone, see [How to 
 
 - OCR doesn't support CJK characters from image files
 
-- Email files (such as *.eml and *.msg) in [Annotate view](view-documents-in-review-set.md#annotate-view) aren't supported for CJK languages.
+- Email files (such as *.eml and *.msg) in [Annotate view](ediscovery-view-documents-in-review-set.md#annotate-view) aren't supported for CJK languages.
 
-- Search hit highlighting in [Text view](view-documents-in-review-set.md#text-view) isn't supported for CJK languages.
+- Search hit highlighting in [Text view](ediscovery-view-documents-in-review-set.md#text-view) isn't supported for CJK languages.
 
 - The [Relevance module](using-relevance.md) used to analyze data doesn't support CJK languages.
 
-- [Query-based holds](managing-holds.md#manage-non-custodial-holds) aren't supported for CJK languages.
+- [Query-based holds](ediscovery-managing-holds.md#manage-non-custodial-holds) aren't supported for CJK languages.
