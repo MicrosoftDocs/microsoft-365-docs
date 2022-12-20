@@ -42,7 +42,7 @@ search.appverid: met150
 
 ## API description
 
-Retrieves a list of all scan definitions by history.
+Retrieves a list of the scan history by definitions.
 
 ## Limitations
 
@@ -85,7 +85,7 @@ ScanDefinitionIds |String|The scan Id. **Required**.
 
 ## Response
 
-If successful, this method returns 200 - OK response code with a list of the scan history for a definition.
+If successful, this method returns 200 - OK response code with a list of the scan history by definition.
 
 ## Example request
 
@@ -97,7 +97,7 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
 {
-    "ScanDefinitionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae"]
+    "ScanDefinitionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae", "60c4aa57-c573-4488-8d18-230914792a92", "c6220f67-2cad-4ba3-a2fa-7ded6384da56"]
 }
 ```
 
@@ -114,13 +114,13 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
                 },
     {
-    "ScanDefinitionIds": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
+    "ScanDefinitionIds": "60c4aa57-c573-4488-8d18-230914792a92",
     "LastScanned": "2022-11-17T15:13:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
                 },
 {
-    "ScanDefinitionIds": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
+    "ScanDefinitionIds": "c6220f67-2cad-4ba3-a2fa-7ded6384da56",
     "LastScanned": "2022-11-10T18:15:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"

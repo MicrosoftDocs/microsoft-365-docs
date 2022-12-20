@@ -1,6 +1,6 @@
 ---
-title: Add, update or remove a scan definition
-description: Learn how to use the Add, update or Remove scan definitions.
+title: Add, update or delete a scan definition
+description: Learn how to use the Add, update or delete scan definitions.
 keywords: apis, graph api, supported apis, scans, network scans, authenticated scan
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -20,7 +20,7 @@ ms.custom: api
 search.appverid: met150
 ---
 
-# Add, update or remove a scan definition
+# Add, update or delete a scan definition
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ search.appverid: met150
 
 ## API description
 
-API to add, update or remove an authenticated scan.
+API to add, update or delete an authenticated scan.
 
 ## Limitations
 

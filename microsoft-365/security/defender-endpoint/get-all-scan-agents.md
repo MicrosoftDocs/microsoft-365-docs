@@ -110,7 +110,7 @@ Here is an example of the response.
             "id": "47d41a0c-1dfd-46d3-bbea-a93dbc0bfcaa_eb663a27ae9d032f61bc268oiu4c4b90f77",
             "machineId": "eb663a27ae9d032sdf9dfd79eedf14c4b90f77",
             "lastSeen": "2022-12-19T20:29:04.8242449Z",
-            "computerDnsName": "TEST_DOMAIN"
+            "computerDnsName": "TEST_DOMAIN2"
         },
     ]
 }
