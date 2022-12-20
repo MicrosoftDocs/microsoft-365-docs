@@ -68,7 +68,7 @@ By default, global administrators for your tenant have access to this admin cent
 - **Information Protection Investigators**
 - **Information Protection Readers**
 
-For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Defender and compliance portals](../security/office-365-security/scc-permissions.md#role-groups-in-the-defender-and-compliance-portals).
+For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance](../security/office-365-security/scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance).
 
 Alternatively to using the default roles, you can create a new role group and add the **Sensitivity Label Administrator** role to this group. For a read-only role, use **Sensitivity Label Reader**. 
 
@@ -99,7 +99,7 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Automatically apply sensitivity labels to documents and emails | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md)|
 |Use sensitivity labels to configure the default sharing link type for sites and individual documents in SharePoint and OneDrive |[Use sensitivity labels to set the default sharing link for sites and documents in SharePoint and OneDrive](sensitivity-labels-default-sharing-link.md)|
-|Apply a sensitivity label to a document understanding model, so that identified documents in a SharePoint library are automatically classified and protected |[Apply a sensitivity label to a model in Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
+|Apply a sensitivity label to a document understanding model, so that identified documents in a SharePoint library are automatically classified and protected |[Apply a sensitivity label to a model in Microsoft Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |Prevent or warn users about sharing files or emails with a specific sensitivity label |[Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md) |
 |Apply a sensitivity label to a file when I receive an alert that content containing personal data is being shared and needs protection| [Investigate and remediate alerts in Privacy Risk Management](/privacy/priva/risk-management-alerts)|
 |Apply a retention label to retain or delete files or emails that have a specific sensitivity label|[Automatically apply a retention label to retain or delete content](apply-retention-labels-automatically.md) |
