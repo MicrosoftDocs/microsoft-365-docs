@@ -42,7 +42,7 @@ search.appverid: met150
 
 ## API description
 
-API to Add, update or remove an authenticated scan.
+API to add, update or remove an authenticated scan.
 
 ## Limitations
 
@@ -84,7 +84,7 @@ In the request body, supply a JSON object with the following parameters:
 
 Parameter|Type|Description
 :---|:---|:---
-Value|String|The scan Id. **Required**.
+ScanDefinitionIds|String|The scan Id. **Required**.
 
 ## Response
 
@@ -133,5 +133,6 @@ PATCH https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefini
   "intervalInHours": 8,
   "isActive": "True"
 }
+```
 
 The following fields can be updated using the API: scanName, isActive, intervalInHours, targetType and scanAuthenticationParams
