@@ -30,7 +30,19 @@ search.appverid: met150
 > [!NOTE]
 > The Group Policy management and Intune OMA-URI/Custom Policy management of this product are now generally available (4.18.2106): See [Tech Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
-The Removable Storage Access Control feature enables you to apply policy by using OMA-URI to either user or device, or both.
+The Removable Storage Access Control feature enables you to apply policy by using OMA-URI or by using Intune user interface to either user or device, or both.
+
+|Capability|Intune OMA-URI|Intune user interface|
+|---|---|---|
+|Enable or Disable Device control|supported|not supported|
+|Set Default Enforcement|supported|not supported|
+|Create Removable storage group|supported|supported|
+|Control Disk level access|supported|supported|
+|Control File level access|supported|not supported|
+|Set location for a copy of the file|supported|not supported|
+|File Parameter|supported|not supported|
+|Network location|supported|not supported|
+
 
 ## Licensing requirements
 
@@ -48,7 +60,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) > **Devices** > **Create profile** > **Platform: Windows 10 and later, Profile type: Templates** > Custom**.
 
-1. Enable or Disable Device control as follows:
+1. Enable or Disable Device control (Optional):
 
    - Under **Custom** > **Configuration settings**, select **Add**.
    - In the **Add Row** pane, specify the following settings:
@@ -64,7 +76,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
    :::image type="content" source="images/enable-rsac.png" alt-text="Screenshot of enabling Removable Storage Access Control policy" lightbox="images/enable-rsac.png":::
 
-2. Set Default Enforcement:
+2. Set Default Enforcement (Optional):
 
    You can set the default access (Deny or Allow) for all Device Control features (`RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, `PrinterDevices`).
 
@@ -119,7 +131,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
    > [!NOTE]
    > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
-5. Set location for a copy of the file (evidence):
+5. Set location for a copy of the file (Optional):
 
    If you want to have a copy of the file (evidence) when Write access happens, set right **Options** in your removable storage access policy rule in the XML file, and then specify the location where system can save the copy.
 
@@ -132,7 +144,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
 ## Scenarios
 
-Here are some common scenarios to help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control.
+Here are some common scenarios to help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control. In the following samples, 'Default Enforcement' hasn't been used because the 'Default Enforcement' will apply to both the removable storage and the printer.
 
 ### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
 
@@ -236,6 +248,8 @@ For this scenario, you need to create two groups - one removable storage group f
 
     2. Policy 2: Deny read and execute access to any file under the allowed file extension group for defined removable storage group.
     
+        ![image](https://user-images.githubusercontent.com/81826151/200713006-c0d39e2b-9acc-4522-9f88-e064eeb3a4ae.png)
+        
     What does '40' mean in the policy? It's 8 + 32 = 40:
 
     - only need to restrict file system level access
@@ -243,8 +257,68 @@ For this scenario, you need to create two groups - one removable storage group f
     Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Deny%20Read%20and%20Write%20access%20to%20specific%20files.xml). See step 4 from the [Deploy Removable Storage Access Control](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-oma-uri) section to deploy the configuration.
 
 
-## Use Intune user interface
+## Deploy Removable Storage Access Control by using Intune user interface
 
 This capability is available in the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>).
 
 Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
+
+## Scenarios
+
+Here are some common scenarios to help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control. In the following samples, 'Default Enforcement' hasn't been used because the 'Default Enforcement' will apply to both the removable storage and the printer.
+
+### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
+
+For this scenario, you need to create two groups - one group for any removable storage and another group for approved USBs. You also need to create two policies - one policy to deny Write and Execute access for any removable storage group and the other policy to audit the approved USBs group.
+
+1. Create groups: Go to **Endpoint Security** > **Attack Surface Reduction** > **Reusable settings** > **Add**. See **DescriptorIdList** on the [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media | Microsoft Learn](device-control-removable-storage-access-control?view=o365-worldwide#group)  to get more details.
+    a. Group 1: Any removable storage, CD/DVD, and Windows portable devices
+      ![image](https://user-images.githubusercontent.com/81826151/208774115-ab503406-a3c6-4611-b5fa-9e837e731898.png)
+      ![image](https://user-images.githubusercontent.com/81826151/208774136-b63b2268-926f-482a-a509-aab7f8efba02.png)
+    b. Group 2: Choose **+ Add** to create another group for ‘Approved USBs’ based on device properties.
+      ![image](https://user-images.githubusercontent.com/81826151/208774190-b700f7cb-0d0e-4d27-955b-23be9c0cb7b5.png)
+2.	Create policy: Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform**: **Windows 10 and later** with **Profile: Device Control**. Select **Device Control**: **Configured**.
+   a.	Policy 1: Audit Write and Execute access for allowed USBs.
+      Choose **+ Set reusable settings** for **Included ID** and choose **Select**:
+      ![image](https://user-images.githubusercontent.com/81826151/208774439-b46795ce-e9c0-41ec-a3f7-26feefa6b2e7.png)
+      Choose **+ Edit Entry** for **Entry**:
+      ![image](https://user-images.githubusercontent.com/81826151/208774532-d8d3f0a0-5ce3-401b-bb8b-2b75383d6cf7.png)
+   b.	Policy 2: Choose + Add to create another policy for ‘Block Write and Execute access for any removable storage group’.
+      Choose **+ Set reusable settings** for **Included ID** and choose **Select**:
+      ![image](https://user-images.githubusercontent.com/81826151/208774632-5a568173-c6af-4a64-8236-e0ec5f835147.png)
+      Choose **+ Set reusable settings** for **Excluded ID** to exclude authorized USBs and choose **Select**:
+      ![image](https://user-images.githubusercontent.com/81826151/208774743-6b584ac3-3373-4650-9af8-d340ffa9ceae.png)
+      Choose **+ Edit Entry** for **Entry**:
+      ![image](https://user-images.githubusercontent.com/81826151/208774780-39818049-07ee-4bee-824c-25a7cf235227.png)
+
+### Scenario 2: Audit Write and Execute access for all but block specific blocked USBs
+
+For this scenario, you need to create two groups - one group for any removable storage and another group for blocked USBs. You also need to create two policies - one policy to audit Write and Execute access for any removable storage group and the other policy to deny the blocked USBs group.
+
+1. Create groups: Go to **Endpoint Security** > **Attack Surface Reduction** > **Reusable settings** > **Add**. See **DescriptorIdList** on the [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media | Microsoft Learn](device-control-removable-storage-access-control?view=o365-worldwide#group)  to get more details.
+    a. Group 1: Any removable storage, CD/DVD, and Windows portable devices
+      ![image](https://user-images.githubusercontent.com/81826151/208774115-ab503406-a3c6-4611-b5fa-9e837e731898.png)
+      ![image](https://user-images.githubusercontent.com/81826151/208774136-b63b2268-926f-482a-a509-aab7f8efba02.png)
+    b. Group 2: Choose **+ Add** to create another group for ‘Unauthorized USBs’ based on device properties.
+    ![image](https://user-images.githubusercontent.com/81826151/208775067-3184b60b-551e-44ad-b724-bf113202699c.png)
+2.	Create policy: Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform**: **Windows 10 and later** with **Profile: Device Control**. Select **Device Control**: **Configured**.
+   a.	Policy 1: Block unauthorized USBs.
+      Choose **+ Set reusable settings** for **Included ID** and choose **Select**:
+      ![image](https://user-images.githubusercontent.com/81826151/208775137-c5a98123-b488-4e1a-9695-9b93b1d8f45b.png)
+      Choose **+ Edit Entry** for **Entry**:
+      ![image](https://user-images.githubusercontent.com/81826151/208775203-439bb8b5-e45a-47a7-9828-51ea9d5cfe95.png)
+   b.	Policy 2: Choose **+ Add** to create another policy for ‘Audit Write and Execute access for any removable storage group’.
+      Choose **+ Set reusable settings** for Included ID: and choose Select:
+      ![image](https://user-images.githubusercontent.com/81826151/208775292-485a13e4-533c-4efc-97a4-611786d02fd1.png)
+      Choose **+ Set reusable settings** for **Excluded ID** to exclude authorized USBs and choose **Select**:
+      ![image](https://user-images.githubusercontent.com/81826151/208775330-79c69f54-513e-49b2-8b9f-2fdf8293ee35.png)
+      Choose **+ Edit Entry** for **Entry**:
+      ![image](https://user-images.githubusercontent.com/81826151/208775366-f2cafb54-eb63-4bcd-b0fe-880f3cba2c1b.png)
+
+
+
+
+    
+    
+    
+    
