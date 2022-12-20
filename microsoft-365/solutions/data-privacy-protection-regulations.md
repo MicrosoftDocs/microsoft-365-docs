@@ -1,5 +1,5 @@
 ---
-title: "Data privacy and protection with Microsoft Priva and Purview – Stay on track with privacy regulations"
+title: "Stay on track with data privacy regulations – Microsoft Priva and Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
@@ -18,8 +18,7 @@ ms.collection:
 - m365solution-overview
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
-description: Configure information protection in Microsoft 365 for data privacy regulations like GDPR and the California Consumer Privacy Act (CCPA), including Microsoft Teams, SharePoint, and email.
-
+description: Learn how Microsoft Purview Compliance Manager helps you keep up with data privacy regulations through continuous control assessments and regulatory updates.
 ---
 
 # Data privacy and protection – Stay on track with regulations

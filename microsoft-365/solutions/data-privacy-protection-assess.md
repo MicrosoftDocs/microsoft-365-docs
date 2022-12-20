@@ -1,5 +1,5 @@
 ---
-title: "Data privacy and protection with Microsoft Priva and Purview – Assess your organization's data and risks"
+title: "Assess personal data and privacy risks – Microsoft Priva and Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
@@ -18,8 +18,7 @@ ms.collection:
 - m365solution-overview
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
-description: Configure information protection in Microsoft 365 for data privacy regulations like GDPR and the California Consumer Privacy Act (CCPA), including Microsoft Teams, SharePoint, and email.
-
+description: With Microsoft Priva and Microsoft Purview Compliance Manager, see how much personal data your org has and where, and which data privacy regulations apply.
 ---
 
 # Data privacy and protection – Assess data and risks

@@ -1,5 +1,5 @@
 ---
-title: "Data privacy and protection with Microsoft Priva and Purview – Respond to data privacy incidents and subject requests requests"
+title: "Respond to privacy incidents and subject requests – Microsoft Priva and Purview"
 ms.author: chvukosw
 author: chvukosw
 f1.keywords:
@@ -18,8 +18,7 @@ ms.collection:
 - m365solution-overview
 - zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
-description: Configure information protection in Microsoft 365 for data privacy regulations like GDPR and the California Consumer Privacy Act (CCPA), including Microsoft Teams, SharePoint, and email.
-
+description: Use Microsoft Priva and Microsoft Purview to monitor and investigate data privacy incidents in your organization, including automation of data subject requests.
 ---
 
 # Data privacy and protection – Respond to incidents and subject requests
