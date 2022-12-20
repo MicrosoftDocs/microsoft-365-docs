@@ -89,7 +89,7 @@ By default, insights are shown in aggregate at the organizational level. You can
 
 To turn on group-level insights:
 
-1. In the admin center, go to **Settings** > **Org Settings** > **Adoption Score**.
+1. In the admin center, go to **Settings** \> **Org Settings** \> **Adoption Score**.
 1. Select **All users** or **Specific users**.
 1. Select **Turn on group-level insights**.
 
@@ -113,12 +113,12 @@ The Organizational Message Writer Role is a new built-in role that allows assign
 
 To turn on organizational messages:
 
-- In the admin center, go to **Settings** > **Org Settings** > **Adoption Score**.
+- In the admin center, go to **Settings** \> **Org Settings** \> **Adoption Score**.
 - Under the Organizational Messages tab, select **All approved admins to send in-product recommendations to specific users**.
 
 :::image type="content" source="../../media/privacy-organizational-messages.png" alt-text="Screenshot: Enable Organizational Messages in Adoption Score":::
 
->[!NOTE]
+> [!NOTE]
 > Both roles can sign up or opt for a tenant for organizational messages. Other roles can read and see the results of the messages. If you opt out of people experience, you cannot turn on this control.
 
 ## Related content
