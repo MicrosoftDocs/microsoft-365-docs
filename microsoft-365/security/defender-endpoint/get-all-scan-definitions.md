@@ -106,20 +106,26 @@ Here is an example of the response.
 "scanName": "Test Network scan", 
 "isActive": true, 
 "target": "127.0.0.1", 
+"orgId": "47d41a0c-188d-46d3-bbea-a93dbc0bfcaa",
 "intervalInHours": 1, 
 "createdBy": "test@contoso.com",
 "targetType": "Ip",
-"scanAuthenticationParams": null,
+"scanAuthenticationParams": {
+    "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
+    "type": "Kerberos", 
+    "username": "username", 
+    "password": "password"
+        },
 "scannerAgent": {
     "id": "47d41a0c-xxx-46d3-bbea-93dbc0bfcaa_1bc268a79eedf14c4b90f77",
     "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
     "machineName": "DESKTOP-TEST",
     "lastSeen": "2021-12-19T20:29:04.8242449Z"
             },
-            "latestScan": {
-            "status": "Fail",
-            "failureReason": null,
-            "executionDateTime": "2021-12-19T20:06:55.2295854Z"
+"latestScan": {
+    "status": "Fail",
+    "failureReason": null,
+    "executionDateTime": "2021-12-19T20:06:55.2295854Z"
             } 
         }
     ]

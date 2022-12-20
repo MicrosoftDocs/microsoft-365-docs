@@ -92,7 +92,7 @@ If successful, this method returns 200 - OK response code with a list of the sca
 Here is an example of the request.
 
 ```http
-POST https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId
 ```
 
 ```json
@@ -105,14 +105,26 @@ POST https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefi
 
 ```json
 {
-"@odata.context": "https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId",
+"@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId",
     "value": [
+   {
+     "SessionId": "01decc497f4b4ec49a5fc4e12597f8c8",
+     "LastScanned": "2022-12-19T15:14:24.5561791Z",
+     "ScanStatus": "Partial Success",
+     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
+    },
     {
-    "SessionId": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
-    "LastScanned": "2022-12-19T15:14:24.5561791Z",
+    "SessionId": "c149a9627647443d8fc9d9b28c173cd5",
+    "LastScanned": "2022-12-19T11:15:30.9101502Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
-                },
+    },
+    {
+    "SessionId": "6f05909bb4e146b1b1b029dd6548080d",
+    "LastScanned": "2022-12-19T07:13:38.6687379Z",
+    "ScanStatus": "Partial Success",
+    "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
+    }
     ]
 
 }

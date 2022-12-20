@@ -99,21 +99,29 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 ```
 
 ```json
-{
-"id": "60c4vv57-c173-4478-8d58-23091d79ec9d", 
+ {
 "scanType": "Network", 
 "scanName": "Test Network scan", 
 "isActive": true, 
 "target": "127.0.0.1", 
 "intervalInHours": 1, 
 "targetType": "Ip",
-"scanAuthenticationParams": null,
-}
+"scannerAgent": {
+    "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
+    "machineName": "DESKTOP-TEST",
+"scanAuthenticationParams": { 
+    "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
+    "type": "Kerberos", 
+    "username": "username", 
+    "password": "password"
+        },
+    },
+ }
 ```
 
-## Example request to remove a scan
+## Example request to delete scans
 
-Here is an example of a request that removes a scan.
+Here is an example of a request that deletes scans.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/BatchDelete
@@ -136,11 +144,16 @@ PATCH https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefini
 
 ```json
 {
-"scanType": "Network", 
 "scanName": "Test Network scan", 
 "intervalInHours": 8,
 "isActive": "True",
 "targetType": "Ip",
 "target": "10.5.0.8",
+"scanAuthenticationParams": { 
+ "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
+    "type": "Kerberos", 
+    "username": "username", 
+    "password": "password"
+    }
 }
 ```
