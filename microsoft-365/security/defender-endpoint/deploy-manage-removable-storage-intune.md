@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 11/14/2022
+ms.date: 12/20/2022
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -271,7 +271,7 @@ Here are some common scenarios to help you familiarize with Microsoft Defender f
 
 For this scenario, you need to create two groups - one group for any removable storage and another group for approved USBs. You also need to create two policies - one policy to deny Write and Execute access for any removable storage group and the other policy to audit the approved USBs group.
 
-1. Create groups: Go to **Endpoint Security** > **Attack Surface Reduction** > **Reusable settings** > **Add**. See **DescriptorIdList** on the [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media | Microsoft Learn](device-control-removable-storage-access-control?view=o365-worldwide#group)  to get more details.
+1. Create groups: Go to **Endpoint Security** > **Attack Surface Reduction** > **Reusable settings** > **Add**. See **DescriptorIdList** on the [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media | Microsoft Learn](device-control-removable-storage-access-control.md#group)  to get more details.
     a. Group 1: Any removable storage, CD/DVD, and Windows portable devices
       ![image](https://user-images.githubusercontent.com/81826151/208774115-ab503406-a3c6-4611-b5fa-9e837e731898.png)
       ![image](https://user-images.githubusercontent.com/81826151/208774136-b63b2268-926f-482a-a509-aab7f8efba02.png)
@@ -295,7 +295,7 @@ For this scenario, you need to create two groups - one group for any removable s
 
 For this scenario, you need to create two groups - one group for any removable storage and another group for blocked USBs. You also need to create two policies - one policy to audit Write and Execute access for any removable storage group and the other policy to deny the blocked USBs group.
 
-1. Create groups: Go to **Endpoint Security** > **Attack Surface Reduction** > **Reusable settings** > **Add**. See **DescriptorIdList** on the [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media | Microsoft Learn](device-control-removable-storage-access-control?view=o365-worldwide#group)  to get more details.
+1. Create groups: Go to **Endpoint Security** > **Attack Surface Reduction** > **Reusable settings** > **Add**. See **DescriptorIdList** on the [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media | Microsoft Learn](device-control-removable-storage-access-control.md#group)  to get more details.
     a. Group 1: Any removable storage, CD/DVD, and Windows portable devices
       ![image](https://user-images.githubusercontent.com/81826151/208774115-ab503406-a3c6-4611-b5fa-9e837e731898.png)
       ![image](https://user-images.githubusercontent.com/81826151/208774136-b63b2268-926f-482a-a509-aab7f8efba02.png)
