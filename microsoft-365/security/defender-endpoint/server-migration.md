@@ -14,8 +14,10 @@ ms.localizationpriority: medium
 ms.date: 09/19/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 ---
 
@@ -39,21 +41,19 @@ These instructions apply to the new unified solution and installer (MSI) package
 > [!NOTE]
 > Operating system upgrades with Microsoft Defender for Endpoint installed are not supported. Please offboard and uninstall, upgrade the operating system, then proceed with installation.
 
-> [!NOTE]
-> Full Microsoft Endpoint Configuration Manager automation and integration to perform an automated upgrade will be available in a later release of MECM. From the 2107 release with the latest hotfix rollup, you CAN use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in Microsoft Endpoint Configuration Manager to automate manual upgrade steps; methods for which are described below.
-
 ## Installer script
 
 >[!NOTE]
 >Make sure the machines you run the script on is not blocking the execution of the script. The recommended execution policy setting for PowerShell is Allsigned. This requires importing the script's signing certificate into the Local Computer Trusted Publishers store if the script is running as SYSTEM on the endpoint.
 
-To facilitate upgrades when Microsoft Endpoint Configuration Manager is not yet available or updated to perform the automated upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). Download it by selection the "Code" button and downloading the .zip file, then extracting install.ps1. It can help automate the following required steps:
+To facilitate upgrades when Microsoft Endpoint Configuration Manager is not yet available or updated to perform the automated upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver/archive/refs/heads/main.zip). Download it by selection the "Code" button and downloading the .zip file, then extracting install.ps1. It can help automate the following required steps:
 
 1. Remove the OMS workspace for Microsoft Defender for Endpoint (OPTIONAL).
 2. Remove System Center Endpoint Protection (SCEP) client if installed.
-3. Download and install (Windows Server 2012 R2) [prerequisites](configure-server-endpoints.md#prerequisites) if required.
-4. Install Microsoft Defender for Endpoint.
-5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com).
+3. Download and install [prerequisites](configure-server-endpoints.md#prerequisites) if required.
+4. Enable and update the Defender Antivirus feature on Windows Server 2016
+5. Install Microsoft Defender for Endpoint.
+6. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com).
 
 To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md)).
 
@@ -64,7 +64,7 @@ For more information on how to use the script, use the PowerShell command "get-h
 ## Microsoft Endpoint Configuration Manager migration scenarios 
 
 >[!NOTE]
->You'll need Microsoft Endpoint Configuration Manager, version 2107 or later to perfom Endpoint Protection policy configuration.
+>You'll need Microsoft Endpoint Configuration Manager, version 2107 or later to perform Endpoint Protection policy configuration. From [version 2207 or later](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2207#improved-microsoft-defender-for-endpoint-mde-onboarding-for-windows-server-2012-r2-and-windows-server-2016) deployment and upgrades can be fully automated.
 
 For instructions on how to migrate using Microsoft Endpoint Configuration Manager older than version 2207 please see [Migrating servers from Microsoft Monitoring Agent to the unified solution.](/microsoft-365/security/defender-endpoint/application-deployment-via-mecm)
 
@@ -72,7 +72,7 @@ For instructions on how to migrate using Microsoft Endpoint Configuration Manage
 
 1. Fully update the machine including Microsoft Defender Antivirus (Windows Server 2016) ensuring [prerequisites](configure-server-endpoints.md#prerequisites) have been met. For more information on the prerequisites that have to be met, see [Prerequisites for Windows Server 2016](configure-server-endpoints.md#prerequisites-for-windows-server-2016).
 2. Ensure third-party antivirus management no longer pushes antivirus agents to these machines.*
-3. Author your policies for the protection capabilities in Microsoft Defender for Endpoint and target those to the machine in the tool of your choice.*
+3. Author your policies for the protection capabilities in Microsoft Defender for Endpoint and target those to the machine in the tool of your choice.
 4. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
    a. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com).
 5. Apply updates.

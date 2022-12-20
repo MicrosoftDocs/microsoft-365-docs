@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - import
 search.appverid:
 - MOE150
@@ -43,6 +43,8 @@ Here are the step-by-step instructions required to use network upload to bulk-im
 [Step 6: Filter data and start the PST Import job](#step-6-filter-data-and-start-the-pst-import-job)
 
 You have to perform Step 1 only once to import PST files to Microsoft 365 mailboxes. After you perform these steps, follow Step 2 through Step 6 each time you want to upload and import a batch of PST files.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you import PST files
   
@@ -329,13 +331,13 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-autoexpanding-archiving.md) to give users additional mailbox storage space to store the data that you imported.
 
-  - Placing mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain the data that you imported.
+  - Placing mailboxes on [Litigation Hold](./ediscovery-create-a-litigation-hold.md) to retain the data that you imported.
 
   - Using Microsoft [eDiscovery tools](search-for-content.md) to search the data that you imported.
 
   - Using [Microsoft 365 retention policies](retention.md) to control how long the data that you imported will be retained, and what action to take after the retention period expires.
 
-  - Searching the [audit log](search-the-audit-log-in-security-and-compliance.md) for mailbox-related events that affect the data that you imported.
+  - Searching the [audit log](audit-log-search.md) for mailbox-related events that affect the data that you imported.
 
   - Importing data to [inactive mailboxes](inactive-mailboxes-in-office-365.md) to archive data for compliance purposes. 
 

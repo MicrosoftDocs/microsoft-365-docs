@@ -137,7 +137,7 @@ landingContent:
           - text: Evaluate Microsoft 365 Defender
             url: ../security/defender-endpoint/deployment-phases.md
           - text: Security recommendations for priority accounts
-            url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+            url: ../security/office-365-security/priority-accounts-security-recommendations.md
           - text: Evaluate Microsoft 365 Defender
             url: ../security/defender-endpoint/deployment-phases.md
       - linkListType: how-to-guide
@@ -168,6 +168,8 @@ landingContent:
             url: financial-services-secure-collaboration.md
           - text: Security and compliance for energy and utility services
             url: energy-secure-collaboration.md
+          - text: Microsoft 365 for frontline workers
+            url: ../frontline/flw-overview.md??bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Microsoft 365 for Healthcare
             url: ../frontline/teams-in-hc.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
           - text: Microsoft 365 for Retail

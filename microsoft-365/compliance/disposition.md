@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
 ms.custom: admindeeplinkMAC
 search.appverid: 
@@ -26,9 +26,11 @@ description: "Monitor and manage the disposal of content for when you use a disp
 
 Use the **Disposition** page from **Records Management** in the Microsoft Purview compliance portal to manage disposition reviews and view the metadata of [records](records-management.md#records) that have been automatically deleted at the end of their retention period.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Prerequisites for viewing content dispositions
 
-To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md#maximum-numbers-for-disposition) for disposition.
+To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled. Also be aware of any [limitations](retention-limits.md#maximum-numbers-for-disposition-review) for disposition.
 
 ### Permissions for disposition
 
@@ -66,7 +68,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 ### Enable auditing
 
-Make sure that auditing is enabled at least one day before the first disposition action. For more information, see [Search the audit log in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md). 
+Make sure that auditing is enabled at least one day before the first disposition action. For more information, see [Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md). 
 
 ## Disposition reviews
 
@@ -196,7 +198,7 @@ As you can see from the example shown, the actions supported are:
     > [!NOTE]
     > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they can't participate in the disposition review.
 
-Each action taken has a corresponding audit event in the [Disposition review activities](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) auditing activities group.
+Each action taken has a corresponding audit event in the [Disposition review activities](audit-log-activities.md#disposition-review-activities) auditing activities group.
 
 During a disposition review, the content never moves from its original location, and it's not marked for permanent deletion until this action is selected by a reviewer for the final or only disposition stage.
 
@@ -212,7 +214,7 @@ These items display **Records Disposed** in the **Type** column. For example:
 ![Items that were disposed of without a disposition review.](../media/records-disposed2.png)
 
 > [!NOTE]
-> This functionality uses information from the [unified audit log](search-the-audit-log-in-security-and-compliance.md) and therefore requires auditing to be [enabled and searchable](turn-audit-log-search-on-or-off.md) so the corresponding events are captured.
+> This functionality uses information from the [unified audit log](audit-log-search.md) and therefore requires auditing to be [enabled and searchable](audit-log-enable-disable.md) so the corresponding events are captured.
 
 For auditing of deleted items that were marked as records or regulatory records, search for **Deleted file marked as a record** in the **File and page activities** category. This audit event is applicable to documents and emails.
 

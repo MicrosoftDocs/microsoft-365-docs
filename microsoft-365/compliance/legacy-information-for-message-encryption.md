@@ -14,7 +14,8 @@ search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier3
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
@@ -35,6 +36,8 @@ Here are some examples:
 - A mortgage broker requests financial information from a customer for a loan application
 - A health care provider sends health care information to patients
 - An attorney sends confidential information to a customer or another attorney
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How Office 365 Message Encryption works without the new capabilities
 
@@ -283,7 +286,7 @@ When an encrypted reply is sent from the encryption portal or through the OME Vi
 
  **Q. I am an Exchange Hosted Encryption (EHE) subscriber. Where can I learn more about the upgrade to Office 365 Message Encryption?**
 
-All EHE customers have been upgraded to Office 365 Message Encryption. For more information, visit the [Exchange Hosted Encryption Upgrade Center](../security/office-365-security/exchange-online-protection-overview.md).
+All EHE customers have been upgraded to Office 365 Message Encryption. For more information, visit the [Exchange Hosted Encryption Upgrade Center](../security/office-365-security/eop-about.md).
 
  **Q. Do I need to open any URLs, IP addresses, or ports in my organization's firewall to support Office 365 Message Encryption?**
 
@@ -309,4 +312,4 @@ The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.m
 
 First, check the junk or spam folder in your email client. DKIM and DMARC settings for your organization may cause these emails to end up filtered as spam.
 
-Next, check quarantine in the Security & Compliance Center. Often, messages containing a one-time pass code, especially the first ones your organization receives, end up in quarantine.
+Next, check quarantine in the Microsoft Purview compliance portal. Often, messages containing a one-time pass code, especially the first ones your organization receives, end up in quarantine.

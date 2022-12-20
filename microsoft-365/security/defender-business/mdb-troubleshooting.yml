@@ -16,8 +16,8 @@ metadata:
   f1.keywords: NOCSH 
   ms.collection: 
   - SMB
-  - M365-security-compliance
-
+  - m365-security
+  - tier1
 title: Microsoft Defender for Business troubleshooting
 summary: |
   Use this article as a guide to resolve issues you might encounter in Defender for Business. 

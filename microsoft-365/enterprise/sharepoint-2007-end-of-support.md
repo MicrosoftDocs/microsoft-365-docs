@@ -19,6 +19,7 @@ ms.custom:
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - Ent_O365
 - SPO_Content
 search.appverid:

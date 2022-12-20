@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - tier1
 - highpri
 search.appverid:
@@ -30,12 +30,9 @@ description: Learn how Microsoft Purview Records Management supports high-value 
 
 A records management system, also known as records and information management, is a solution for organizations to manage regulatory, legal, and business-critical records. Records management for Microsoft Purview helps you achieve your organization's legal obligations, provides the ability to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be retained, no longer of value, or no longer required for business purposes.
 
-> [!TIP]
-> *Did you know you can try the premium versions of all nine Microsoft Purview solutions for free?* Use the 90-day Purview solutions trial to explore how robust Purview capabilities can help your organization meet its compliance needs. Microsoft 365 E3 and Office 365 E3 customers can start now at the [Microsoft Purview compliance portal trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). Learn details about [who can sign up and trial terms](compliance-easy-trials.md).
-
 Use the following capabilities to support your records management solution for Microsoft 365 data:
 
-- **Label content as a record**. Create and configure retention labels to mark content as a [record](#records) that can then be applied by users or automatically applied by identifying sensitive information, keywords, or content types.
+- **Label items as a record**. Create and configure retention labels to mark items as a [record](#records) that can then be applied by users or automatically applied by identifying sensitive information, keywords, or content types.
 
 - **Migrate and manage your retention requirements with file plan**. By using a [file plan](file-plan-manager.md), you can bring in an existing retention plan to Microsoft 365, or build a new one for enhanced management capabilities.
 
@@ -47,31 +44,33 @@ Use the following capabilities to support your records management solution for M
 
 - **Export information about all disposed items** with the [export option](disposition.md#filter-and-export-the-views).
 
-- **Set specific permissions** for records manager functions in your organization to [have the right access](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Set specific permissions** for records manager functions in your organization to [have the right access](../security/office-365-security/scc-permissions.md).
 
 Using these capabilities, you can incorporate your organization's retention schedules and requirements into a records management solution that manages retention, records declaration, and disposition, to support the full lifecycle of your content.
 
 In addition to the online documentation, you might find it useful to download a [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) from a records management webinar. The recording of the actual webinar is no longer available.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Records
 
-When content is declared a record:
+When an item is declared a record:
 
-- Restrictions are placed on the items in terms of what [actions are allowed or blocked](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+- Restrictions are placed on the item in terms of what [actions are allowed or blocked](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 - Additional activities about the item are logged.
 
-- You have proof of disposition when the items are deleted at the end of their retention period.
+- You have proof of disposition when the item is deleted at the end of their retention period.
 
-You use [retention labels](retention.md#retention-labels) to mark content as a **record**, or a **regulatory record**. The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record or a regulatory record.
+You use [retention labels](retention.md#retention-labels) to mark items as a **record**, or a **regulatory record**. The difference between these two are explained in the next section. You can either publish those labels so that users and administrators can manually apply them to items, or for labels that mark items as a record, you can auto-apply those labels.
 
 By using retention labels to declare records, you can implement a single and consistent strategy for managing records across your Microsoft 365 environment.
 
 ### Compare restrictions for what actions are allowed or blocked
 
-Use the following table to identify what restrictions are placed on content as a result of applying a standard retention label, and retention labels that mark content as a record or regulatory record.
+Use the following table to identify what restrictions are placed on items as a result of applying a standard retention label, and retention labels that mark items as a record or regulatory record.
 
-A standard retention label has retention settings and actions but doesn't mark content as a record or a regulatory record.
+A standard retention label has retention settings and actions but doesn't mark items as a record or a regulatory record.
 
 > [!NOTE]
 > For completeness, the table includes columns for a locked and unlocked record, which is applicable to SharePoint and OneDrive, but not Exchange. The ability to lock and unlock a record uses [record versioning](record-versioning.md) that isn't supported for Exchange items. So for all Exchange items that are marked as a record, the behavior maps to the **Record - locked** column, and the **Record - unlocked column** is not relevant.
@@ -100,7 +99,7 @@ Deleting labeled items in SharePoint and OneDrive can be blocked as a tenant set
 When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted.
 
 <sup>3</sup>
-Containers include SharePoint document libraries, OneDrive accounts, and Exchange mailboxes.
+Containers include SharePoint sites, OneDrive accounts, and Exchange mailboxes.
 
 > [!IMPORTANT]
 > The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label.

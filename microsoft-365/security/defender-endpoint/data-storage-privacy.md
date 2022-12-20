@@ -11,7 +11,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -22,6 +24,7 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -65,6 +68,12 @@ Customer data in pseudonymized form may also be stored in the central storage an
 
 Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside.
 
+## Data sharing for Microsoft Defender for Endpoint
+
+Microsoft Defender for Endpoint shares data, including customer data, among the following Microsoft products also licensed by the customer.
+
+- Microsoft Sentinel
+
 ## Is my data isolated from other customer data?
 
 Yes, your data is isolated through access authentication and logical segregation based on customer identifier. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
@@ -89,7 +98,7 @@ No. Customer data is isolated from other customers and is not shared. However, i
 
 ### At service onboarding
 
-By default, data is retained for 180 days; however, you can specify the data retention policy for your data. This determines how long Microsoft Defender for Endpoint will store your data. There's a flexibility of choosing in the range of one month to six months to meet your company's regulatory compliance needs.
+Data from Microsoft Defender for Endpoint is retained for 180 days, visible across the portal. However, in the advanced hunting investigation experience, it is accessible via a query for a period of 30 days. 
 
 ### At contract termination or expiration
 

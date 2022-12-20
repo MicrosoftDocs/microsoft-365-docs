@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -24,13 +25,15 @@ description: "Credit card number sensitive information type entity definition."
 
 # Credit card number
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Format
 
 14 to 19 digits that can be formatted or unformatted (dddddddddddddddd) and that must pass the Luhn test.
 
 ## Pattern
 
-Detects cards from all major brands worldwide, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, diner's cards, Rupay and China UnionPay.
+Detects cards from all major brands, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, diner's cards, Rupay and China UnionPay.
 
 ## Checksum
 

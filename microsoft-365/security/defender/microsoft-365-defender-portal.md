@@ -17,8 +17,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier1
 ms.custom: 
   - admindeeplinkDEFENDER
   - intro-overview
@@ -49,6 +49,7 @@ The Microsoft 365 Defender portal helps security teams investigate and respond t
 - Secure score
 - Learning hub
 - Trials
+- Partner catalog
 
 Microsoft 365 Defender emphasizes *unity, clarity, and common goals*. 
 
@@ -59,11 +60,11 @@ Microsoft 365 Defender emphasizes *unity, clarity, and common goals*.
 
 Centralizing security information creates a single place for investigating security incidents across Microsoft 365. A primary example is **Incidents** under **Incidents & alerts**.
 
-:::image type="content" source="../../media/converged-incidents-2.png" alt-text="The Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/converged-incidents-2.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 Selecting an incident name displays a page that demonstrates the value of centralizing security information as you'll have better insights into the full extend of a threat, from email, to identity, to endpoints.
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="The Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/converged-incident-info-3.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 Take the time to review the incidents in your environment, drill down into each alert, and practice building an understanding of how to access the information and determine next steps in your analysis.
 
@@ -142,7 +143,14 @@ Threat analytics is the Microsoft 365 Defender threat intelligence solution from
 > Along with the Product filter, current topics, types of resources (from videos to webinars), levels of familiarity or experience with security areas, security roles, and product features are listed.
 
 > [!TIP]
-> There are lots of other learning opportunities in [Microsoft Learn](/training/). You'll find certification training such as [Course MS-500T02-A: Implementing Microsoft 365 Threat Protection](/training/certifications/courses/ms-500t02).
+> There are lots of other learning opportunities in [Microsoft Learn](/training/). You'll find certification training such as [Course MS-500T00: Microsoft 365 Security Administration](/training/courses/ms-500t00).
+
+## Partner catalog
+
+Microsoft 365 Defender supports two types of partners:
+- Third-party integrations to help secure users with effective threat protection, detection, investigation, and response in various security fields of endpoints, vulnerability management, email, identities, and cloud apps.
+- Professional services where organizations can enhance the detection, investigation, and threat intelligence capabilities of the platform. 
+
 
 ## Send us your feedback
 
@@ -158,7 +166,7 @@ Keep exploring the features and capabilities in Microsoft 365 Defender:
 - [Hunt for threats across devices, emails, apps, and identities](./advanced-hunting-query-emails-devices.md)
 - [Custom detection rules](./custom-detection-rules.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
-- [Create a phishing attack simulation](../office-365-security/attack-simulation-training.md) and [create a payload for training your teams](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+- [Create a phishing attack simulation](../office-365-security/attack-simulation-training-simulations.md) and [create a payload for training your teams](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
 
 ## Training for security analysts
 

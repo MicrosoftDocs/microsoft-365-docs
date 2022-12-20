@@ -36,7 +36,7 @@ The following table provides a quick reference for the compliance controls avail
 ||Encrypt sensitive content|[Restrict access to content by using sensitivity labels to apply encryption](../compliance/encryption-sensitivity-labels.md)|
 |Information protection|||
 ||Prevent the loss of sensitive information|[Learn about Microsoft Purview Data Loss Prevention](../compliance/dlp-learn-about-dlp.md)|
-||Protect sensitive information in chat.|[Microsoft Purview Data loss prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
+||Protect sensitive information in chat.|[Microsoft Purview Data Loss Prevention and Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Define your organization's sensitive information|[Custom sensitive information types](../compliance/sensitive-information-type-learn-about.md)|
 |User segmentation|||
 ||Restrict communication between user segments|[Information barriers](../compliance/information-barriers.md)|
@@ -59,7 +59,7 @@ User chats are retained indefinitely even if a user account is deleted. If you d
 
 - [Retention policies in Microsoft Teams](/microsoftteams/retention-policies)
 
-A single retention policy can be set to apply to Teams chat and Teams channel messages. 
+A single retention policy can be set to apply to Teams chat and Teams channel messages (including shared channel messages). Teams private channel messages must be contained in their own retention policy.
 
 Additional resources:
 
@@ -104,7 +104,7 @@ If you have sensitive information that is unique to your organization, such as p
 
 ## User segmentation
 
-With information barriers, you can segment your data and users to restrict unwanted communication and collaboration between groups and avoid conflicts of interest in your organization. Information barriers lets you create policies to allow or prevent file collaboration, chatting, calling, or meeting invitations between groups of people in your organization.
+With information barriers, you can segment your data and users to restrict unwanted communication and collaboration between groups and avoid conflicts of interest in your organization. Information barriers let you create policies to allow or prevent file collaboration, chatting, calling, or meeting invitations between groups of people in your organization.
 
 - [Information barriers](../compliance/information-barriers.md)
 
@@ -121,6 +121,8 @@ With Microsoft 365 Multi-Geo, you can provision and store data at rest in the ge
 - [Plan for Microsoft 365 Multi-Geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## Related topics
+
+[Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 [Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 

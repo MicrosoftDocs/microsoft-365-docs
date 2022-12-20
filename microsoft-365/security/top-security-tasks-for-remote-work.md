@@ -12,8 +12,9 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- m365-security
 - remotework
+- tier2
 ms.custom: admindeeplinkDEFENDER
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
 ---
@@ -97,13 +98,13 @@ For an overview, including a summary of plans, see [Defender for Office 365](./o
 
 Your Global Administrator can configure these protections:
 
-- [Set up Safe Links policies](office-365-security/set-up-safe-links-policies.md)
+- [Set up Safe Links policies](office-365-security/safe-links-policies-configure.md)
 - [Configure global settings for Safe Links](office-365-security/configure-global-settings-for-safe-links.md)
 - [Set up Safe Attachments policies](office-365-security/set-up-safe-attachments-policies.md)
 
 You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure Defender for Office 365 for these workloads:
 
-- [Microsoft Defender for Endpoint for SharePoint, OneDrive, and Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
+- [Microsoft Defender for Endpoint for SharePoint, OneDrive, and Microsoft Teams](office-365-security/safe-attachments-for-spo-odfb-teams-about.md)
 
 ## 4: Configure Microsoft Defender for Identity
 

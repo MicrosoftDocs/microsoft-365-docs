@@ -5,14 +5,14 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
-ms.collection: M365-security-compliance
+ms.collection: m365-security
 ms.custom:
-ms.date: 06/10/2021
+ms.date: 12/14/2022
 description: Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -23,13 +23,11 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. Microsoft continues to improve security capabilities. Recently, AIR capabilities were enhanced to include a compromised user security playbook (currently in preview). Read this article to learn more about the compromised user security playbook. And see the blog post [Speed up time to detect and respond to user compromise and limit breach scope with Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) for additional details.
-
-![Automated investigation for a compromised user.](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
+[Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) includes powerful [automated investigation and response](office-365-air.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. This article describes one of the facets of the AIR capabilities, the compromised user security playbook.
 
 The compromised user security playbook enables your organization's security team to:
 
@@ -40,14 +38,6 @@ The compromised user security playbook enables your organization's security team
 ## Compromised user alerts
 
 When a user account is compromised, atypical or anomalous behaviors occur. For example, phishing and spam messages might be sent internally from a trusted user account. Defender for Office 365 can detect such anomalies in email patterns and collaboration activity within Office 365. When this happens, alerts are triggered, and the threat mitigation process begins.
-
-For example, here's an alert that was triggered because of suspicious email sending:
-
-![Alert triggered because of suspicious email sending.](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
-
-And here's an example of an alert that was triggered when a sending limit was reached for a user:
-
-![Alert triggered by sending limit reached.](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
 
 ## Investigate and respond to a compromised user
 
@@ -79,7 +69,7 @@ You have a few options for navigating to a list of restricted users. For example
 
 ### View details about automated investigations
 
-When an automated investigation has begun, you can see its details and results in the Security & Compliance Center. Go to **Threat management** \> **Investigations**, and then select an investigation to view its details.
+When an automated investigation has begun, you can see its details and results in the **Action center** in the Microsoft 365 Defender portal.
 
 To learn more, see [View details of an investigation](air-view-investigation-results.md).
 
@@ -87,9 +77,7 @@ To learn more, see [View details of an investigation](air-view-investigation-res
 
 - **Stay on top of your alerts**. As you know, the longer a compromise goes undetected, the larger the potential for widespread impact and cost to your organization, customers, and partners. Early detection and timely response are critical to mitigate threats, and especially when a user's account is compromised.
 
-- **Automation assists, but does not replace, your security operations team**. Automated investigation and response capabilities can detect a compromised user early on, but your security operations team will likely need to engage and do some investigation and remediation. Need some help with this? See [Review and approve actions](air-review-approve-pending-completed-actions.md).
-
-- **Don't rely on a suspicious login alert as your only indicator**. When a user account is compromised, it might or might not trigger a suspicious login alert. Sometimes it's the series of activities that occur after an account is compromised that triggers an alert. Want to know more about alerts? See [Alert policies](../../compliance/alert-policies.md).
+- **Automation assists your security operations team**. Automated investigation and response capabilities can detect a compromised user early on and enable your security operations team to take action to remediate the threat. Need some help with this? See [Review and approve actions](air-review-approve-pending-completed-actions.md).
 
 ## Next steps
 

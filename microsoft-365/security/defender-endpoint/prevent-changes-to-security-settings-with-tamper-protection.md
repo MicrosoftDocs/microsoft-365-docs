@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 09/23/2022
+ms.date: 12/15/2022
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -19,8 +19,8 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-endpoint
+- m365-security
+- tier2
 search.appverid: met150
 ---
 
@@ -34,21 +34,15 @@ search.appverid: met150
 
 **Platforms**
 - Windows
+- [macOS](tamperprotection-macos.md)
 
 Tamper protection is available for devices that are running one of the following versions of Windows:
 
-- Windows 11
-- Windows 11 Enterprise multi-session 
-- Windows 10
-- Windows 10 Enterprise multi-session
-- Windows Server 2022
-- Windows Server 2019
-- Windows Server, version 1803 or later
-- Windows Server 2016
-- Windows Server 2012 R2
+- Windows 10 and 11 (including Enterprise multi-session)
+- Windows Server 2022, Windows Server 2019, and Windows Server, version 1803 or later
+- Windows Server 2016 and Windows Server 2012 R2 (using the modern, unified solution)
 
-> [!NOTE]
-> Tamper protection in Windows Server 2012 R2 is available for devices onboarded using the modern unified solution package. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+Tamper protection is also available for Mac. See [Protect macOS security settings with tamper protection](tamperprotection-macos.md).
 
 ## Overview
 
@@ -65,30 +59,33 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 - Disabling scanning of archives and network files
 
 > [!IMPORTANT]
-> Built-in protection (preview) includes turning tamper protection on by default. To learn more about built-in protection, see:
+> Built-in protection includes turning tamper protection on by default. To learn more about built-in protection, see:
 > - [Built-in protection helps guard against ransomware](built-in-protection.md) (article)
-> - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)
+> - [Tamper protection will be turned on for all enterprise customers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/tamper-protection-will-be-turned-on-for-all-enterprise-customers/ba-p/3616478) (Tech Community blog post)   
+> 
+> Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md).
+> If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
+
 
 ### How it works
 
 Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values, and prevents your security settings from being changed through apps and methods such as:
 
 - Configuring settings in Registry Editor on your Windows device
-- Changing settings through PowerShell cmdlets
-- Editing or removing security settings through Group Policy
+- Changing settings through PowerShell cmdlets on your device
 
-Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Windows 10 Enterprise E5, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team.
+Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team.
 
 ### What do you want to do?
 
 |To perform this task...|See this section...|
 |---|---|
 |Manage tamper protection across your tenant <p> Use the Microsoft 365 Defender portal to turn tamper protection on or off|[Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)|
-|Fine-tune tamper protection settings in your organization <p> Use Intune (Microsoft Endpoint Manager) to turn tamper protection on or off. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md)|
-|Turn tamper protection on (or off) for your organization with Configuration Manager|[Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
-|Turn tamper protection on (or off) for an individual device|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
-|View details about tampering attempts on devices|[View information about tampering attempts](#view-information-about-tampering-attempts)|
-|Review your security recommendations|[Review security recommendations](#review-your-security-recommendations)|
+|Fine-tune tamper protection settings in your organization <p> Use Microsoft Intune to turn tamper protection on or off. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Intune](manage-tamper-protection-microsoft-endpoint-manager.md)|
+|Turn tamper protection on (or off) for your organization by using Configuration Manager|[Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
+|Turn tamper protection on (or off) for an individual device (for home users or devices that are not managed by a security team)|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
+|View details about tampering attempts on devices|[View information about tampering attempts in Microsoft 365 Defender](#view-information-about-tampering-attempts)|
+|Review your security recommendations |[Review security recommendations](#review-your-security-recommendations)|
 |Review the list of frequently asked questions (FAQs)|[Browse the FAQs](faqs-tamper-protection.md)|
 
 ## Potential dependency on cloud protection  
@@ -134,16 +131,14 @@ To learn more about Microsoft Defender Vulnerability Management, see [Dashboard 
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ## See also
 
+- [Built-in protection helps guard against ransomware](built-in-protection.md)
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Get an overview of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
 - [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)

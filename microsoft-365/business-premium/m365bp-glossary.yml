@@ -10,21 +10,22 @@ metadata:
   - M365-Campaigns
   - m365solution-smb
   - highpri
+  - tier1
   ms.custom: 
   - MiniMaven
   ms.localizationpriority: high
   ms.service: microsoft-365-security
-  ms.subservice: other
+  ms.subservice: m365bp
   ms.date: 09/15/2022
   ms.topic: conceptual
   search.appverid: 
   - BCS160
   - MET150
-  title: "Glossary of security terms for Microsoft 365 security capabilities"
+  title: "Glossary: Microsoft 365 Business Premium security concepts"
 products: 
   - m365-business
 name: "Glossary of terms"
-summary: "Glossary of terms for Microsoft 365 security capabilities"
+summary: "Glossary: Microsoft 365 Business Premium security concepts"
 thumbnailUrl: /microsoft-365/business-premium/
 content: |
 

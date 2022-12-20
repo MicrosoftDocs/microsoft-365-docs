@@ -12,8 +12,8 @@ ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde

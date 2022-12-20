@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier1
 - SPO_Content
 search.appverid: 
@@ -35,6 +35,8 @@ For the scenarios that support these policies for retention, see:
 Settings that are specific to each scenario are explained in their respective documentation.
 
 For overview information about policies for retention and how retention works in Microsoft 365, see [Learn about retention policies and retention labels](retention.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Scopes - adaptive and static
 
@@ -265,9 +267,7 @@ The **Exchange public folders** location applies retention settings to all publi
 
 When you configure an auto-apply policy that uses sensitive information types and select the **Exchange email** location:
 
-- Microsoft 365 group mailboxes are included.
-
-- All mailboxes are automatically included, even if you configure an adaptive scope to identify specific mailboxes. If you've chosen a static policy scope, you won't be able to specify recipients to include or exclude.
+- See the important callout for [Auto-apply labels to content with specific types of sensitive information](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information).
 
 ### Configuration information for SharePoint sites and OneDrive accounts
 
@@ -360,7 +360,7 @@ By choosing the settings for retaining and deleting content, your policy for ret
     
     - For retention labels: On the **Define label settings page**, select **Retain items indefinitely or for a specific period**, and then:
         - For the retention settings to no longer be in effect on the labeled content after a specific time: On the **Define the retention period** page, for **Retain items for**, specify the time period. Then on the **Choose what happens after the retention period** page, select **Deactivate retention settings**. The label remains on the content but with no restrictions, as if it's a [label that just classifies](retention.md#classifying-content-without-applying-any-actions).
-        - To retain without an end date: On the **Define the retention period** page, for **Retain items for**, select **An indefinite period**. The label remains on the content with any [existing restrictions](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked ).
+        - To retain without an end date: On the **Define the retention period** page, for **Retain items for**, select **An indefinite period**. The label remains on the content with any [existing restrictions](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 - Retain and then delete
 
@@ -394,7 +394,7 @@ At the end of the retention period, you choose whether you want the content to b
 
 ![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
-As explained in the next section, retention labels have another option; to apply another retention label with its own retention period.
+Retention labels have two more options. As described in the next section, they can apply another retention label with its own retention period. Or, they can [trigger a Power Automate flow](retention-label-flow.md) for custom actions.
 
 Before you configure retention, first familiarize yourself with capacity and storage limits for the respective workloads:
 
@@ -402,12 +402,9 @@ Before you configure retention, first familiarize yourself with capacity and sto
 
 - For Exchange, Teams, and Yammer, where retained messages are stored in mailboxes, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) and enable [auto-expanding archiving](autoexpanding-archiving.md).
     
-    In extreme cases where a high volume of email is deleted in a short time period, either by users or automatically from policy settings, you might also need to configure Exchange to more frequently move items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. For step-by-step instructions, see [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
+    In extreme cases where a high volume of email is deleted in a short time period, either by users or automatically from policy settings, you might also need to configure Exchange to more frequently move items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. For step-by-step instructions, see [Increase the Recoverable Items quota for mailboxes on hold](ediscovery-increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 #### Relabeling at the end of the retention period
-
-> [!NOTE]
-> This option is in preview and subject to change.
 
 When you configure a retention label to automatically apply a different retention label at the end of the retention period, the item is then subject to the retention settings of the newly selected retention label. This option lets you automatically change the retention settings for the item.
 

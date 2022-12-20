@@ -14,7 +14,7 @@ search.appverid:
   - MET150
   - MOE150
 ms.collection:
-  - M365-security-compliance
+  - m365-security
 ms.custom:
 description: SecOps personnel can learn how to use the Incidents queue in Microsoft 365 Defender to manage incidents in Microsoft Defender for Office 365.
 ms.subservice: mdo
@@ -114,9 +114,9 @@ Security teams can take wide variety of response actions on email using Defender
 
 - You can start an AIR playbook manually on any email message using the **Trigger investigation** action in Threat Explorer.
 
-- You can report false positive or false negative detections directly to Microsoft using [Threat Explorer](threat-explorer.md) or [admin submissions](admin-submission.md).
+- You can report false positive or false negative detections directly to Microsoft using [Threat Explorer](threat-explorer-about.md) or [admin submissions](submissions-admin.md).
 
-- You can block undetected malicious files, URLs, or senders using the [Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+- You can block undetected malicious files, URLs, or senders using the [Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 Defender for Office 365 actions are seamlessly integrated into hunting experiences and the history of actions are visible on the **History** tab in the unified **Action center** at <https://security.microsoft.com/action-center/history>.
 
@@ -126,7 +126,7 @@ The most effective way to take action is to use the built-in integration with In
 - You benefit from the built-in correlation with other workloads: Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps.
 - You take actions on email from a single place.
 
-You take action on email based on the result of a manual investigation or hunting activity. [Threat Explorer](threat-explorer.md) allows security team members to take action on any email messages that might still exist in cloud mailboxes. They can take action on intra-org messages that were sent between users in your organization. Threat Explorer data is available for the last 30 days.
+You take action on email based on the result of a manual investigation or hunting activity. [Threat Explorer](threat-explorer-about.md) allows security team members to take action on any email messages that might still exist in cloud mailboxes. They can take action on intra-org messages that were sent between users in your organization. Threat Explorer data is available for the last 30 days.
 
 Watch this short video to learn how Microsoft 365 Defender combines alerts from various detection sources, like Defender for Office 365, into incidents. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGpcs]

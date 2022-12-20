@@ -1,5 +1,5 @@
 ---
-title: Virtual appointments with Teams - Integration into Epic EHR
+title: Virtual Appointments with Teams - Integration into Epic EHR
 author: LanaChin
 ms.author: v-lanachin
 manager: samanro
@@ -20,26 +20,31 @@ ms.collection:
   - m365solution-healthcare
   - m365solution-scenario
   - m365-frontline
+  - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.reviewer: ansantam 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Epic EHR system. 
+ms.date: 12/15/2022
 ---
 
-# Virtual appointments with Teams - Integration into Epic EHR
+# Virtual Appointments with Teams - Integration into Epic EHR
 
 The Microsoft Teams Electronic Health Record (EHR) connector makes it easy for clinicians to launch a virtual patient appointment or consultation with another provider in Microsoft Teams directly from the Epic EHR system. Built on the Microsoft 365 cloud, Teams enables simple, secure collaboration and communication with chat, video, voice, and healthcare tools in a single hub that supports compliance with HIPAA, HITECH certification, and more.
 
 The communication and collaboration platform of Teams makes it easy for clinicians to cut through the clutter of fragmented systems so they can focus on providing the best possible care. With the Teams EHR connector, you can:
 
-- Launch Teams virtual appointments from your Epic EHR system with an integrated clinical workflow.
-- Enable patients to join Teams virtual appointments from within the patient portal or through SMS.
+- Launch Teams Virtual Appointments from your Epic EHR system with an integrated clinical workflow.
+- Enable patients to join Teams Virtual Appointments from within the patient portal or through SMS.
 - Support other scenarios including multi-participant, group visits, and interpreter services.
-- Write metadata back to the EHR system about Teams virtual appointments to record when attendees connect, disconnect, and enable automatic auditing and record keeping.
+- Write metadata back to the EHR system about Teams Virtual Appointments to record when attendees connect, disconnect, and enable automatic auditing and record keeping.
 - View consumption data reports and customizable Call Quality information for EHR-connected appointments.
 
-This article describes how to set up and configure the Teams EHR connector to integrate with the Epic platform in your healthcare organization. It also gives you an overview of the Teams virtual appointments experience from the Epic EHR system.
+This article describes how to set up and configure the Teams EHR connector to integrate with the Epic platform in your healthcare organization. It also gives you an overview of the Teams Virtual Appointments experience from the Epic EHR system.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d3h4]
 
 ## Before you begin
 
@@ -56,7 +61,6 @@ Review the following information to get an understanding of the overall integrat
 | **Duration** | Approximately 12-24 hours| Approximately 24 hours | Approximately 1-3 days | Approximately 1-3 days | &nbsp; |
 | **Action**| You [request access to the Teams app](#request-access-to-the-teams-app).  | We create a public and private key certificate and upload them to Epic. | You complete configuration steps in the EHR connector configuration portal.  | You work with your Epic technical specialist to configure FDI records in Epic.| You complete testing in your test environment. |
 | **Outcome**| We authorize your organization for testing. | Epic syncs the public key certificate. | You receive FDI records for Epic configuration. | Configuration completed. Ready to test. | Full validation of flows and decision to move to production. |
-
 
 ### Request access to the Teams app
 
@@ -110,7 +114,7 @@ Your Microsoft 365 admin can configure a single organization or multiple organiz
 
 ### Enter configuration information
 
-Next, to set up the integration, your Microsoft 365 admin does the following:
+Next, to set up the integration, your Microsoft 365 admin completes following steps:
 
 1. Adds a Fast Health Interoperability Resources (FHIR) base URL from your Epic technical specialist and specifies the environment. Configure as many FHIR base URLs as needed, depending on your organization’s needs and the environments you want to test.
 
@@ -129,13 +133,13 @@ Next, to set up the integration, your Microsoft 365 admin does the following:
 
 Complete this step if your organization wants Microsoft to manage SMS notifications for your patients. When you enable SMS notifications, your patients will receive confirmation and reminder messages for scheduled appointments.
 
-To enable SMS notifications, your Microsoft 365 admin does the following:
+To enable SMS notifications, your Microsoft 365 admin completes the following steps:
 
 1. On the SMS notifications page, select both consent checkboxes to:
 
     - Allow Microsoft to send SMS notifications to patients on behalf of your organization.
     - Acknowledge that you'll ensure attendees have consented to send and receive SMS messages.
-    
+
     :::image type="content" source="media/ehr-connector-epic-sms-notifications.png" alt-text="Screenshot of the SMS notifications page, showing consent check boxes and the option to generate a phone number." lightbox="media/ehr-connector-epic-sms-notifications.png":::
 
 1. Under **Your phone numbers**, select **Generate a new phone number** to generate a phone number for your organization. Doing this starts the process to request and generate a new phone number. This process might take up to 2 minutes to complete.
@@ -150,7 +154,7 @@ To enable SMS notifications, your Microsoft 365 admin does the following:
 
     :::image type="content" source="media/ehr-connector-epic-link-phone-number.png" alt-text="Screenshot showing how to link a phone number to a FHIR base URL." lightbox="media/ehr-connector-epic-link-phone-number.png":::
 
-    If this is the first time you’re configuring the connector, you’ll see the FHIR base URL that was entered in the earlier step. The same phone number can be linked to multiple FHIR base URLs, which means that patients will receive SMS notifications from the same phone number for different organizations and/or departments.
+    If you’re configuring the connector for the first time, you’ll see the FHIR base URL that was entered in the earlier step. The same phone number can be linked to multiple FHIR base URLs, which means that patients will receive SMS notifications from the same phone number for different organizations and/or departments.
 
 1. Select **SMS setup** next to each FHIR base URL to set up the types of SMS notifications to send to your patients.
 
@@ -196,19 +200,19 @@ When the configuration information is approved by the Epic administrator, you'll
 
 The context token for device test can be found in the patient integration record. The Epic customer analyst must provide these records to Epic to complete the virtual appointments configuration in Epic. For more information, see the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.epic.com/Search/GetFile?Url=1!68!100!100100357).
 
-> [!Note]  
+> [!NOTE]  
 > At any time the Microsoft 365 or Epic customer analyst can sign in to the configuration portal to view integration records and change organization configuration, as needed.
 
 :::image type="content" source="media/ehr-connector-epic-finish.png" alt-text="Screenshot of the Review and Finish page, showing integration information." lightbox="media/ehr-connector-epic-finish.png":::
 
-> [!Note]
+> [!NOTE]
 > The Epic customer analyst must complete the approval process for each FHIR base URL that's configured by the Microsoft 365 admin.
 
-## Launch Teams virtual appointments
+## Launch Teams Virtual Appointments
 
 After completing the EHR connector steps and Epic configuration, your organization is ready to support video appointments with Teams.
 
-### Virtual appointments prerequisites
+### Virtual Appointments prerequisites
 
 - Your systems must meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 
@@ -260,14 +264,12 @@ Key features of the patient experience:
 
 - Patients can test their video and microphone in the lobby before they join the appointment.
 
-> [!Note]
+> [!NOTE]
 > Epic, MyChart, Haiku, and Canto are trademarks of Epic Systems Corporation.
 
-## Get insight into virtual appointments usage
+## Get insight into Virtual Appointments usage
 
-The [Virtual Visits usage report](virtual-visits-usage-report.md) in the Microsoft Teams admin center gives admins an overview of Teams virtual appointments activity in your organization. The report shows detailed analytics for virtual appointments including Teams EHR-integrated meetings conducted from your EHR system.
-
-You can view key metrics such as lobby wait time and appointment duration. Use this information to gain insight into usage trends to help you optimize virtual appointments to deliver better business outcomes.
+The [EHR connector Virtual Appointments report](ehr-connector-report.md) in the Teams admin center gives you an overview of EHR-integrated virtual appointment activity in your organization. You can view a breakdown of data for each appointment that took place for a given date range. The data includes the staff member who conducted the appointment, duration, the number of attendees, department, and whether the appointment was within the allocation limit.
 
 ### Privacy and location of data
 
@@ -279,6 +281,6 @@ The EHR user’s unique ID is stored in one of the three geographic regions desc
 
 ## Related articles
 
-- [Teams Virtual Visits usage report](virtual-visits-usage-report.md)
+- [Teams Virtual Appointments usage report](virtual-appointments-usage-report.md)
 - [Teams EHR connector Virtual Appointments report](ehr-connector-report.md)
 - [Get started with Teams for healthcare organizations](teams-in-hc.md)

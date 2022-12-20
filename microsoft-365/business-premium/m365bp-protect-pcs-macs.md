@@ -8,13 +8,14 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
-ms.subservice: other
+ms.subservice: m365bp
 ms.date: 09/15/2022
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
 - highpri
+- tier1
 ms.custom:
 - MiniMaven
 search.appverid:

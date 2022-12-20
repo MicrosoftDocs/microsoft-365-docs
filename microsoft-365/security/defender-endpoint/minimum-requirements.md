@@ -12,8 +12,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier1
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -39,7 +39,7 @@ There are some minimum requirements for onboarding devices to the service. Learn
 
 ## Licensing requirements
 
-The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md), even when they are included as part of other Microsft 365 plans, do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more, see the overview of [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md), even when they are included as part of other Microsoft 365 plans, do not include server licenses. To onboard servers to those plans, you'll need Defender for Servers Plan 1 or Plan 2 as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more, see the overview of [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 
 For information licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
@@ -83,7 +83,8 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 or later
-  - Windows Server 2019
+  - Windows Server 2019 and later
+  - Windows Server 2019 core edition
   - Windows Server 2022
 - Windows Virtual Desktop
 - Windows 365
@@ -130,50 +131,6 @@ When you run the onboarding wizard for the first time, you must choose where you
 > - You cannot change your data storage location after the first-time setup.
 > - Review the [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.
 
-### Diagnostic data settings
-
-> [!NOTE]
-> Microsoft Defender for Endpoint doesn't require any specific diagnostic level as long as it's enabled.
-
-Make sure that the diagnostic data service is enabled on all the devices in your organization.
-By default, this service is enabled. It's good practice to check to ensure that you'll get sensor data from them.
-
-#### Use the command line to check the Windows diagnostic data service startup type
-
-1. Open an elevated command-line prompt on the device:
-   1. Go to **Start** and type **cmd**.
-   2. Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command, and press **Enter**:
-
-   ```console
-   sc qc diagtrack
-   ```
-
-   If the service is enabled, then the result should look like the following screenshot:
-
-   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="Result of the sc query command for diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
-
-You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.
-
-#### Use the command line to set the Windows diagnostic data service to automatically start
-
-1. Open an elevated command-line prompt on the endpoint:
-    1. Go to **Start** and type **cmd**.
-    2. Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command, and press **Enter**:
-
-    ```console
-    sc config diagtrack start=auto
-    ```
-
-3. A success message is displayed. Verify the change by entering the following command, and press **Enter**:
-
-    ```console
-    sc qc diagtrack
-    ```
-
 #### Internet connectivity
 
 Internet connectivity on devices is required either directly or through proxy.
@@ -181,8 +138,6 @@ Internet connectivity on devices is required either directly or through proxy.
 The Defender for Endpoint sensor can use a daily average bandwidth of 5 MB to communicate with the Defender for Endpoint cloud service and report cyber data. One-off activities such as file uploads and investigation package collection aren't included in this daily average bandwidth.
 
 For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
-
-Before you onboard devices, the diagnostic data service must be enabled. The service is enabled by default in Windows 10 and Windows 11.
 
 ## Microsoft Defender Antivirus configuration requirement
 

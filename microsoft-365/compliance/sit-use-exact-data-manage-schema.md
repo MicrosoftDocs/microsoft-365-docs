@@ -11,7 +11,8 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -19,6 +20,8 @@ description: Learn how to edit or remove your exact data match schema.
 ms.custom: seo-marvel-apr2020
 ---
 # Manage your exact data match schema
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Editing the schema for EDM-based classification manually
 

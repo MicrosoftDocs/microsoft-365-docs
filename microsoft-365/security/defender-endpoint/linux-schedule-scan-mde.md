@@ -11,7 +11,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -205,9 +207,11 @@ crontab -u username -r
 
 ### Explanation
 
+```
 +—————- minute (values: 0 - 59) (special characters: , \- \* /)  <br>
 | +————- hour (values: 0 - 23) (special characters: , \- \* /) <br>
 | | +———- day of month (values: 1 - 31) (special characters: , \- \* / L W C)  <br>
 | | | +——- month (values: 1 - 12) (special characters: , \- \* /)  <br>
 | | | | +—- day of week (values: 0 - 6) (Sunday=0 or 7) (special characters: , \- \* / L W C) <br>
 | | | | |*****command to be executed
+```

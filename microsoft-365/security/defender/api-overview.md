@@ -15,7 +15,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -30,6 +32,9 @@ ms.custom: api
 **Applies to:**
 
 - Microsoft 365 Defender
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -56,6 +61,7 @@ Watch this short video to learn how you can use Microsoft 365 Defender to automa
 
 | **Understand how to access the APIs** |
 |-|
+| [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview) |
 | [Learn about API quotas and licensing](api-terms.md) |
 | [Access the Microsoft 365 Defender APIs](api-access.md) |
 | **Build apps** |

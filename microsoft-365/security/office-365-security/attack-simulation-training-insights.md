@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how Attack simulation training in the Microsoft 365 Defender portal affects users and can gain insights from simulation and training outcomes.
@@ -48,7 +48,7 @@ You can select a simulation to view details.
 
 Selecting **View all simulations** takes you to the **Simulations** tab.
 
-Selecting **Launch a simulation** starts the simulation creation wizard. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
+Selecting **Launch a simulation** starts the simulation creation wizard. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training-simulations.md).
 
 :::image type="content" source="../../media/attack-sim-training-overview-recent-simulations-card.png" alt-text="The Recent simulations card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-recent-simulations-card.png":::
 
@@ -76,7 +76,7 @@ To see a more detailed report, click **View simulations and training efficacy re
 
 The **Simulation coverage** card on the **Overview** tab shows the percentage of users in your organization who've received a simulation (**Simulated users**) vs. those who haven't received a simulation (**Non-simulated users**). You can hover over a section in the chart to see the actual number of users in each category.
 
-Selecting **Launch simulation for non-simulated users** starts the simulation creation wizard where the users who didn't receive the simulation are automatically selected on the **Target user** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
+Selecting **Launch simulation for non-simulated users** starts the simulation creation wizard where the users who didn't receive the simulation are automatically selected on the **Target user** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training-simulations.md).
 
 Selecting **View simulation coverage report** takes you to the [User coverage tab for the Attack simulation report](#user-coverage-tab-for-the-attack-simulation-report).
 
@@ -98,7 +98,7 @@ Selecting **View training completion report** takes you to the [Training complet
 
 The **Repeat offenders** card on the **Overview** tab shows the information about repeat offenders. A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>.
 
-The chart organizes repeat offender data by [simulation type](attack-simulation-training.md#select-a-social-engineering-technique):
+The chart organizes repeat offender data by [simulation type](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
 
 - **All**
 - **Malware attachment**
@@ -113,7 +113,7 @@ Selecting **View repeat offender report** takes you to the [Repeat offenders tab
 
 The **Recommendations** card on the **Overview** tab suggests different types of simulations to run.
 
-Selecting **Launch now** starts the simulation creation wizard with the specified simulation type automatically selected on the **Select technique** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
+Selecting **Launch now** starts the simulation creation wizard with the specified simulation type automatically selected on the **Select technique** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training-simulations.md).
 
 :::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="The Recommendations card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
 
@@ -210,7 +210,7 @@ If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Exp
 
 A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>.
 
-On the **Repeat offenders** tab, the chart organizes repeat offender data by [simulation type](attack-simulation-training.md#select-a-social-engineering-technique):
+On the **Repeat offenders** tab, the chart organizes repeat offender data by [simulation type](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
 
 - **All**
 - **Credential harvest**
@@ -300,6 +300,6 @@ The **Recommended actions** section on the simulation details page shows recomme
 
 [Get started using Attack simulation training](attack-simulation-training-get-started.md)
 
-[Create a phishing attack simulation](attack-simulation-training.md)
+[Create a phishing attack simulation](attack-simulation-training-simulations.md)
 
 [create a payload for training your people](attack-simulation-training-payloads.md#create-payloads)

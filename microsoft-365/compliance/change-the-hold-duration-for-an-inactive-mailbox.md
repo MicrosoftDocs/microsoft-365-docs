@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier2
 search.appverid: 
 - MOE150
@@ -32,7 +32,7 @@ An [inactive mailbox](inactive-mailboxes-in-office-365.md) is mailbox state that
 
 - A hold associated with an [eDiscovery](ediscovery.md) case
 
-- [Litigation Hold](create-a-litigation-hold.md)
+- [Litigation Hold](ediscovery-create-a-litigation-hold.md)
 
 - An existing In-Place Hold.
 
@@ -41,9 +41,9 @@ An [inactive mailbox](inactive-mailboxes-in-office-365.md) is mailbox state that
 >
 > - eDiscovery holds are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed (or deleted). If a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and the hold is released or the eDiscovery case is closed or deleted, the inactive mailbox will be permanently deleted.
 >
-> - In-Place Holds in the Exchange admin center are now retired. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
+> - In-Place Holds in the Exchange admin center are now retired. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](ediscovery-legacy-retirement.md).
 >
-> - [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
+> - [Litigation hold](ediscovery-create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
 
 Once made inactive, the contents of the mailbox including the [Recoverable Items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) are retained until the hold that was placed on the mailbox before it was made inactive no longer applies.  
 
@@ -55,6 +55,8 @@ However, if the hold is time-based, the mailbox content will be retained until t
 > For inactive mailboxes, we recommend using a retain and delete setting for your Microsoft 365 retention policy or labels.  If you choose a retain only setting, the Recoverable Items folder will purge at the end of the hold duration, however any other non-deleted items will remain within the inactive mailbox indefinitely.
 
 As regulations and policies evolve, there may be some situations in which you need to change the duration of the hold assigned to the inactive mailbox.  The following steps outline how to do this.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Connect to PowerShell
 
@@ -178,11 +180,11 @@ The following table identifies the six different hold types that were used to ma
 |**Inactive mailbox**|**Hold type**|**How to identify the hold on the inactive mailbox**|
 |:-----|:-----|:-----|
 |Ann Beebe  <br/> |Litigation Hold  <br/> | The  `LitigationHoldEnabled`  property is set to  `True` indicating the mailbox is on Litigation Hold. <br/><br/> Additionally, the `LitigationHoldDuration` is set to `365.00:00:00` indicating that mailbox items will no longer be subject to litigation hold 365 days after their creation date (sent/received).  <br/><br/> The `LitigationHoldDate` indicates the date LitigationHold was enabled and `LitigationHoldOwner` identifies the person who initiated the litigation hold. <br/> |
-|Carol Olson  <br/> |Microsoft 365 retention policy from the Microsoft Purview compliance portal that is applied to specific mailboxes  <br/> |The  `InPlaceHolds`  property contains the GUID of the Microsoft 365 retention policy that's applied to the inactive mailbox. You can tell this is a retention policy that applied to specific mailboxes because the GUID starts with the `mbx` prefix and ends in a `:2` or `:3`. <br/><br/> For more information, see [Understanding the format of the InPlaceHolds value for retention policies](identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies).  <br/> |
-|Megan Bowen <br/> | Microsoft 365 retention label with a retain or retain and delete action is applied to at least one item in the mailbox  <br/> |The `ComplianceTagHoldApplied` property is `True` indicating an item has been labeled with a retain or retain and delete label.  <br/><br/> Additionally, the `InPlaceHolds` property contains the GUID of the Microsoft 365 retention label policy that's applied to the inactive mailbox.  <br/><br/> For more information, see [Identifying mailboxes on hold because a retention label has been applied to a folder or item](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) <br/>  |
-|Mario Necaise  <br/> |Organization-wide Microsoft 365 retention policy from the Microsoft Purview compliance portal <br/> |The  `InPlaceHolds`  property is empty, `LitigationHoldEnabled` is `False` and `ComplianceTagHoldApplied` is `False`. This indicates that one or more entire (Exchange) location Microsoft 365 retention policies applied to the organization which the inactive mailbox is inheriting. <br/><br/> For more information, see [How to confirm that an organization-wide retention policy is applied to a mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox) <br/> |
-|Abraham McMahon  <br/> |eDiscovery case hold in the Microsoft Purview compliance portal  <br/> |The  `InPlaceHolds`  property contains the GUID of the eDiscovery case hold that's placed on the inactive mailbox. You can tell this is an eDiscovery case hold because the GUID starts with the  `UniH` prefix.  <br/><br/> For more information, see [eDiscovery holds](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds). <br/> |
-|Pilar Pinilla  <br/> |In-Place Hold  <br/> |The  `InPlaceHolds`  property contains the GUID of the In-Place Hold that's placed on the inactive mailbox. You can tell this is an In-Place Hold because the GUID doesn't start with a prefix.  <br/><br/> **NOTE**: As of October 1, 2020, the hold duration of in-place holds can no longer be changed. You can only remove an In-Place Hold which will result in the deletion of the inactive mailbox. <br/><br/> For more information, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md). <br/> |
+|Carol Olson  <br/> |Microsoft 365 retention policy from the Microsoft Purview compliance portal that is applied to specific mailboxes  <br/> |The  `InPlaceHolds`  property contains the GUID of the Microsoft 365 retention policy that's applied to the inactive mailbox. You can tell this is a retention policy that applied to specific mailboxes because the GUID starts with the `mbx` prefix and ends in a `:2` or `:3`. <br/><br/> For more information, see [Understanding the format of the InPlaceHolds value for retention policies](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies).  <br/> |
+|Megan Bowen <br/> | Microsoft 365 retention label with a retain or retain and delete action is applied to at least one item in the mailbox  <br/> |The `ComplianceTagHoldApplied` property is `True` indicating an item has been labeled with a retain or retain and delete label.  <br/><br/> Additionally, the `InPlaceHolds` property contains the GUID of the Microsoft 365 retention label policy that's applied to the inactive mailbox.  <br/><br/> For more information, see [Identifying mailboxes on hold because a retention label has been applied to a folder or item](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) <br/>  |
+|Mario Necaise  <br/> |Organization-wide Microsoft 365 retention policy from the Microsoft Purview compliance portal <br/> |The  `InPlaceHolds`  property is empty, `LitigationHoldEnabled` is `False` and `ComplianceTagHoldApplied` is `False`. This indicates that one or more entire (Exchange) location Microsoft 365 retention policies applied to the organization which the inactive mailbox is inheriting. <br/><br/> For more information, see [How to confirm that an organization-wide retention policy is applied to a mailbox](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox) <br/> |
+|Abraham McMahon  <br/> |eDiscovery case hold in the Microsoft Purview compliance portal  <br/> |The  `InPlaceHolds`  property contains the GUID of the eDiscovery case hold that's placed on the inactive mailbox. You can tell this is an eDiscovery case hold because the GUID starts with the  `UniH` prefix.  <br/><br/> For more information, see [eDiscovery holds](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds). <br/> |
+|Pilar Pinilla  <br/> |In-Place Hold  <br/> |The  `InPlaceHolds`  property contains the GUID of the In-Place Hold that's placed on the inactive mailbox. You can tell this is an In-Place Hold because the GUID doesn't start with a prefix.  <br/><br/> **NOTE**: As of October 1, 2020, the hold duration of in-place holds can no longer be changed. You can only remove an In-Place Hold which will result in the deletion of the inactive mailbox. <br/><br/> For more information, see [Retirement of legacy eDiscovery tools](ediscovery-legacy-retirement.md). <br/> |
 
 ## Step 2: Change the hold duration for an inactive mailbox
 
@@ -227,7 +229,7 @@ Get-RetentionCompliancePolicy 6fe063689d404a5bb9940eed0f0bf5d2 | FL Name
 
 Once you've identified the policy, you will know which labels have been published and their settings.  Because labels apply to individual items, depending on the number of labels published with the policy and their settings, you may not be able to directly identify which label is affecting the content.  
 
-One method that you can use to identify the content each label applies to is using [Content Search](content-search.md).  For example, using the sample information from above, assume the policy publishes several labels, one of which is named "HR-Content".  With the [correct permissions](microsoft-365-compliance-center-permissions.md), a Content Search can be run with the [New-ComplianceSearch PowerShell command](/powershell/module/exchange/new-compliancesearch), specifying the inactive mailbox's primary SMTP address, pre-pended with a period (`.`), and the `-AllowNotFoundExchangeLocationsEnabled $true` parameter to skip validation:
+One method that you can use to identify the content each label applies to is using [Content Search](ediscovery-content-search.md).  For example, using the sample information from above, assume the policy publishes several labels, one of which is named "HR-Content".  With the [correct permissions](microsoft-365-compliance-center-permissions.md), a Content Search can be run with the [New-ComplianceSearch PowerShell command](/powershell/module/exchange/new-compliancesearch), specifying the inactive mailbox's primary SMTP address, pre-pended with a period (`.`), and the `-AllowNotFoundExchangeLocationsEnabled $true` parameter to skip validation:
 
 ```powershell
 New-ComplianceSearch -Name "MeganB Inactive Mailbox HR-Content Label Search" -ExchangeLocation .meganb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true -ContentMatchQuery "compliancetag=HR-Content"
@@ -246,7 +248,7 @@ Using this method, you can then identify which labels from the identified label 
 
 ### Change the duration for an eDiscovery Hold
 
-Holds associated with eDiscovery cases are indefinite holds, which means there's no hold duration that can be changed. Items are held forever or until the [hold is removed](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold) or the case is closed.
+Holds associated with eDiscovery cases are indefinite holds, which means there's no hold duration that can be changed. Items are held forever or until the [hold is removed](ediscovery-create-holds.md#removing-content-locations-from-an-ediscovery-hold) or the case is closed.
   
 ### Change the duration for a Litigation Hold
 
@@ -263,7 +265,7 @@ The result is that items in the inactive mailbox are retained indefinitely or un
 
 ### Change the duration for an In-Place Hold
 
-In-Place Holds have been retired and can no longer be modified. If an inactive mailbox has an In-Place Hold applied to it, you can't change the hold duration. You can only remove the In-Place Hold, which will result in the deletion of the inactive mailbox. For more information, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md#remove-in-place-holds).
+In-Place Holds have been retired and can no longer be modified. If an inactive mailbox has an In-Place Hold applied to it, you can't change the hold duration. You can only remove the In-Place Hold, which will result in the deletion of the inactive mailbox. For more information, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md#remove-an-in-place-hold-from-an-inactive-mailbox).
   
 ## More information
 

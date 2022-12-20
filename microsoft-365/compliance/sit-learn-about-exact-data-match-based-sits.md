@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
@@ -51,6 +51,8 @@ EDM-based classification enables you to create custom sensitive information type
 > - Japanese
 >
 > This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## What's different in an EDM SIT
 

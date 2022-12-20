@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Purview solutions trial playbook"
+title: "Microsoft Purview solutions trial user guide"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -8,19 +8,23 @@ manager: laurawi
 audience: Admin
 ms.topic: landing-page
 ms.service: O365-seccomp
-ms.collection: m365-security-compliance
+ms.collection: 
+- purview-compliance
+- tier3
 ms.localizationpriority: high
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Purview solutions trial playbook."
+description: "Microsoft Purview solutions trial user guide."
 ms.custom: trial-playbook
 ---
 
-# Trial playbook: Microsoft Purview solutions
+# Trial user guide: Microsoft Purview solutions
 
-Welcome to the Microsoft Purview solutions trial playbook. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
+Welcome to the Microsoft Purview solutions trial user guide. This playbook will help you make the most of your free trial by helping you discover robust and comprehensive capabilities of Microsoft Purview and security products.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Compliance actions with Microsoft Purview
 
@@ -54,7 +58,7 @@ You may also want to jump right to key sections of our documentation using the l
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)
-- [Do a quick scan of your environment using the Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)](compliance-manager-mcca.md)
+- [Do a quick check of your environment using the Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)](compliance-manager-mcca.md)
 
 :::image type="content" source="../media/compliance-trial/compliance-portal.png" alt-text="Compliance Manager - dashboard":::
 
@@ -86,7 +90,7 @@ Custom assessments are helpful for:
   1. [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates-extend.md)
   1. [Create your own custom template](compliance-manager-templates-create.md)
   1. [Modify an existing template to add or remove controls and actions](compliance-manager-templates-modify.md)
-  1. [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)
+  1. [Set up automated testing of improvement actions](compliance-manager-setup.md#testing-source-for-automated-testing)
   1. [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
 
 **Organizational Concerns**
@@ -263,7 +267,7 @@ Leverage end-to-end workflows to help you quickly identify, triage, and remediat
 
 There are four role groups used to configure permissions to manage Insider Risk Management features, which have different roles and level of access. Setting up permissions to Insider Risk Management is key before proceeding.
 
-[Add users to an insider risk management role group](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
+[Add users to the Insider Risk Management role group](insider-risk-management-configure.md#add-users-to-the-insider-risk-management-role-group)
 
 If you are not able to see permissions, please talk to your tenant admin to assign the correct roles.
 
@@ -271,11 +275,11 @@ If you are not able to see permissions, please talk to your tenant admin to assi
 
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it’s OK to turn auditing back on when completing this step.
 
-For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about  using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](audit-log-enable-disable.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about  using the Microsoft 365 audit log, see [Search the audit log](audit-log-search.md).
 
 ### Step 3 (recommended): Enable and view Insider Risk Management analytics insights
 
-Analytics within Insider Risk Management enables you to conduct an evaluation of potential insider risks that may lead to a data security incident in your organization without configuring any insider risk policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. These assessment results are aggregated and anonymized, and offer organization-wide insights, like the percentage of users performing potential sensitive data exfiltration activities.
+Analytics within Insider Risk Management enables you to conduct an evaluation of potential insider risks that may lead to a data security incident in your organization without configuring any insider risk policies. Analytics check results may take up to 48 hours before insights are available as reports for review. These assessment results are aggregated and anonymized, and offer organization-wide insights, like the percentage of users performing potential sensitive data exfiltration activities.
 
 To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider risk management analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.
 
@@ -294,7 +298,7 @@ Each recommended action guides you through the required activities for the recom
 
 Note that the recommended steps in the playbook (above) may also be included in the Recommended actions shown in the portal.
 
-Set up recommendations are also available on the Microsoft docs page, via the [Microsoft Purview Insider Risk Management Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197153).
+Setup recommendations are also available on Microsoft Learn via the [Microsoft Purview Insider Risk Management Setup Guide](https://go.microsoft.com/fwlink/?linkid=2197153).
 
 To fully leverage the functionality of Insider Risk Management, we recommend setting up policies for your organization to better identify potential risky actions that may lead to a security incident, leveraging templates for Data leaks or Data theft.  
 
@@ -310,7 +314,7 @@ Assign users communication compliance roles to be able to use the product. The "
 
 ### Step 2: Enable the audit log
 
-To use this feature, turn on auditing. When you turn this on actions will be available in the audit log and view in a report. To learn more, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
+To use this feature, turn on auditing. When you turn this on actions will be available in the audit log and view in a report. To learn more, see [Turn audit log search on or off](audit-log-enable-disable.md).
 
 ### Step 3: Review recommended actions insights
 
@@ -347,24 +351,24 @@ Take advantage of an end-to-end workflow for preserving, collecting, analyzing, 
 
 To access eDiscovery (Premium) or be added as a member of an eDiscovery (Premium) case, a user must be assigned the appropriate permissions.
 
-1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
-1. [Add or remove members from a case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+1. [Set up eDiscovery (Premium) – Assign eDiscovery permissions](ediscovery-premium-get-started.md#step-2-assign-ediscovery-permissions)
+1. [Add or remove members from a case](ediscovery-add-or-remove-members-from-a-case.md)
 
 ### Step 2 (required): Create a Case
 
 More organizations use the eDiscovery (Premium) solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
 1. Manage eDiscovery (Premium) – [learn how to configure eDiscovery (Premium), manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results](/training/modules/manage-advanced-ediscovery).
-1. [Create an eDiscovery case](advanced-ediscovery-new-case-format.md) using eDiscovery Premium’s new case format
-1. [Close or delete a case](close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
+1. [Create an eDiscovery case](ediscovery-new-case-format.md) using eDiscovery Premium’s new case format
+1. [Close or delete a case](ediscovery-close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
 
 ### Step 3 (optional): Settings
 
 To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. You can manage settings such as attorney-client privilege detection, historical versions and many more.
 
-1. [Configure global settings for eDiscovery (Premium)](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
-1. [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [Manage jobs in eDiscovery (Premium)](managing-jobs-ediscovery20.md)
+1. [Configure global settings for eDiscovery (Premium)](ediscovery-premium-get-started.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [Configure search and analytics settings](ediscovery-configure-search-and-analytics-settings.md)
+1. [Manage jobs in eDiscovery (Premium)](ediscovery-managing-jobs.md)
 
 ### Step 4 (optional): Compliance Boundaries
 
@@ -374,16 +378,16 @@ Compliance boundaries create logical boundaries within an organization that cont
 
 Set up compliance boundaries for eDiscovery investigations:
 
-1. [Identify a user attribute to define your agencies](set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
-1. [Create a role group for each agency](set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
-1. [Create a search permissions filter to enforce the compliance boundary](set-up-compliance-boundaries.md#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
-1. [Create an eDiscovery case for an intra-agency investigations](set-up-compliance-boundaries.md#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
+1. [Identify a user attribute to define your agencies](ediscovery-set-up-compliance-boundaries.md#step-1-identify-a-user-attribute-to-define-your-agencies)
+1. [Create a role group for each agency](ediscovery-set-up-compliance-boundaries.md#step-2-create-a-role-group-for-each-agency)
+1. [Create a search permissions filter to enforce the compliance boundary](ediscovery-set-up-compliance-boundaries.md#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
+1. [Create an eDiscovery case for an intra-agency investigations](ediscovery-set-up-compliance-boundaries.md#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
 ### Step 5 (optional): eDiscovery Premium’s collection tool
 
-Use the [eDiscovery (Premium) collection workflow](create-draft-collection.md#create-a-draft-collection) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
+Use the [eDiscovery (Premium) collection workflow](ediscovery-create-draft-collection.md#create-a-collection-estimate) to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Teams.  Collections in eDiscovery (Premium) help eDiscovery managers quickly scope a search for content across email, documents, Teams reactions, and other content in Microsoft 365. Collections provide managers with an estimate of the content that may be relevant to the case.
 
-[Learn more about collection queries and estimates.](building-search-queries.md)
+[Learn more about collection queries and estimates.](ediscovery-building-search-queries.md)
 
 ## Microsoft Purview Audit (Premium)
 
@@ -395,11 +399,11 @@ Advanced Audit helps organizations to conduct forensic and compliance investigat
 
 Audit (Premium) features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
 
-Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
+Set up Audit (Premium) for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](audit-premium-setup.md#step-1-set-up-audit-premium-for-users).
 
-1. Enable Audit (Premium) events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
-1. Set up audit retention policies - [create additional audit log retention policies](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization’s security operations, IT, and compliance teams.
-1. Search for Audit (Premium) events - [search for crucial Audit (Premium) events](set-up-advanced-audit.md#step-4-search-for-audit-premium-events) and other activities when conducting forensic investigations.
+1. Enable Audit (Premium) events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](audit-premium-setup.md#step-2-enable-audit-premium-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Set up audit retention policies - [create additional audit log retention policies](audit-premium-setup.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization’s security operations, IT, and compliance teams.
+1. Search for Audit (Premium) events - [search for crucial Audit (Premium) events](audit-premium-setup.md#step-4-search-for-audit-premium-events) and other activities when conducting forensic investigations.
 
 ### Step 2: Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies
 
@@ -408,7 +412,7 @@ Audit log retention policies are part of the new Advanced Audit capabilities in 
 1. Before you create an audit log retention policy – [key things to know](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) before creating your policy.
 1. [Create an audit log retention policy](audit-log-retention-policies.md#create-an-audit-log-retention-policy).
 1. [Manage audit log retention policies in the Microsoft Purview compliance portal](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - Audit log retention policies are listed on the Audit retention policies tab (also called the dashboard). You can use the dashboard to view, edit, and delete audit retention policies.
-1. [Create and manage audit log retention policies on PowerShell](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) - You can also use Security & Compliance Center PowerShell to create and manage audit log retention policies. One reason to use PowerShell is to create a policy for a record type or activity that isn’t available in the UI.
+1. [Create and manage audit log retention policies on PowerShell](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell) - You can also use Security & Compliance PowerShell to create and manage audit log retention policies. One reason to use PowerShell is to create a policy for a record type or activity that isn’t available in the UI.
 
 ## Additional trials and add-ons
 
@@ -420,7 +424,7 @@ Help your organization assess risks and efficiently respond to nations, regional
 
 [More information on the Compliance Manager premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
-[Trial playbook: Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[Trial user guide: Microsoft Purview Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### Microsoft Priva Privacy Risk Management and Microsoft Priva Subject Rights Requests
 
@@ -430,7 +434,7 @@ Proactively identify and protect against privacy risks such as data hoarding, da
 
 [Learn more about Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management).
 
-[Trial playbook: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[Trial user guide: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## Additional resources
 

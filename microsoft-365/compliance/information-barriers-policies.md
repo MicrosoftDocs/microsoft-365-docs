@@ -11,7 +11,10 @@ ms.service: O365-seccomp
 ms.collection:
 - highpri 
 - tier2
-- M365-security-compliance
+- purview-compliance
+- m365solution-mip
+- m365initiative-compliance
+- highpri
 ms.localizationpriority: null
 f1.keywords:
 - NOCSH
@@ -28,6 +31,8 @@ For more information about IB scenarios and features, see [Learn about informati
 
 > [!TIP]
 > To help you prepare your plan, an [example scenario](#example-scenario-contosos-departments-segments-and-policies) is included in this article.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Required subscriptions and permissions
 
@@ -48,7 +53,7 @@ To [manage IB policies](information-barriers-policies.md), you must be assigned 
 - Compliance administrator
 - IB Compliance Management
 
-To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+To learn more about roles and permissions, see [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](../security/office-365-security/scc-permissions.md).
 
 ## Configuration concepts
 
@@ -90,7 +95,7 @@ In addition to the required subscriptions and permissions, make sure that the fo
 
 - **Scoped directory search**: Before you define your organization's first IB policy, you must [enable scoped directory search in Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Wait at least 24 hours after enabling scoped directory search before you set up or define IB policies.
 
-- **Verify audit logging is enabled**: In order to look up the status of an IB policy application, audit logging must be turned on. Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step. For more information, see [Turn the audit log search on or off](turn-audit-log-search-on-or-off.md).
+- **Verify audit logging is enabled**: In order to look up the status of an IB policy application, audit logging must be turned on. Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step. For more information, see [Turn the audit log search on or off](audit-log-enable-disable.md).
 
 - **Remove existing Exchange Online address book policies**: Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
@@ -265,7 +270,7 @@ To define policies with PowerShell, complete the following steps:
 
     | Syntax | Example |
     |:--------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"` | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In this example, we defined a policy called *Sales-Research* for a segment called *Sales*. When active and applied, this policy prevents users in *Sales* from communicating with users in a segment called *Research*. |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segmentAname" -SegmentsBlocked "segmentBname"` | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In this example, we defined a policy called *Sales-Research* for a segment called *Sales*. When active and applied, this policy prevents users in *Sales* from communicating with users in a segment called *Research*. |
 
 2. To define your second blocking segment, use the **New-InformationBarrierPolicy** cmdlet with the **SegmentsBlocked** parameter again, this time with the segments reversed.
 
@@ -280,9 +285,14 @@ To define policies with PowerShell, complete the following steps:
 
 ### Scenario 2: Allow a segment to communicate only with one other segment
 
-When you want to allow a segment to communicate with only one other segment, you define only one policy for that segment. The segment that is being communicated with doesn't require a similar directional policy (because they can communicate and collaborate with everyone by default).
+When you want to allow a segment to communicate with only one other segment, you define two policies: one for each direction. Each policy allows communication in one direction only.
 
-#### Create a policy using the compliance portal for Scenario 2
+In this example, you'd define two policies:
+
+- One policy allows Segment A to communicate with Segment B
+- A second policy to allow Segment B to communicate with Segment A
+
+#### Create policies using the compliance portal for Scenario 2
 
 To define policies in the compliance portal, complete the following steps:
 
@@ -301,26 +311,33 @@ To define policies in the compliance portal, complete the following steps:
 9. Select **Next**.
 10. On the **Policy status** page, toggle the active policy status to **On**. Select **Next** to continue.
 11. On the **Review your settings** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy segments and status or select **Submit** to create the policy.
+12. In this example, you would repeat the previous steps to create a second *Allow policy* to allow users in a segment called *Research* to communicate with users in a segment called *Sales*. You would have defined the *Research* segment in **Step 5** and you would assign *Sales* (or multiple segments) in the **Choose segment** option.
 
 #### Create a policy using PowerShell for Scenario 2
 
 To define policies with PowerShell, complete the following steps:
 
-1. To allow one segment to communicate with only one other segment, use the **New-InformationBarrierPolicy** cmdlet with the **SegmentsAllowed** parameter.
+1. To allow one segment to communicate with the other segment, use the **New-InformationBarrierPolicy** cmdlet with the **SegmentsAllowed** parameter.
 
     | Syntax | Example |
     |:----------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"` | `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p> In this example, we defined a policy called *Manufacturing-HR* for a segment called *Manufacturing*. When active and applied, this policy allows users in *Manufacturing* to communicate only with users in a segment called *HR*. In this case, *Manufacturing* can't communicate with users who aren't part of *HR*. |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segmentAname" -SegmentsAllowed "segmentBname","segment1name"` | `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p> In this example, we defined a policy called *Manufacturing-HR* for a segment called *Manufacturing*. When active and applied, this policy allows users in *Manufacturing* to communicate only with users in a segment called *HR*. In this case, *Manufacturing* can't communicate with users who aren't part of *HR*. |
 
     **If needed, you can specify multiple segments with this cmdlet, as shown in the following example.**
 
     | Syntax | Example |
     |:---------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"` | `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p> In this example, we defined a policy that allows the *Research* segment to communicate with only *HR* and *Manufacturing*. |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segmentAname" -SegmentsAllowed "segmentBname", "segmentCname","segmentDname"` | `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p> In this example, we defined a policy that allows the *Research* segment to communicate with only *HR* and *Manufacturing*. |
 
     Repeat this step for each policy you want to define to allow specific segments to communicate with only certain other specific segments.
 
-2. Proceed to one of the following actions:
+2. To define your second allowing segment, use the **New-InformationBarrierPolicy** cmdlet with the **SegmentsAllowed** parameter again, this time with the segments reversed.
+
+    | Example | Note |
+    |:--------|:-----|
+    | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsAllowed "Sales" -State Inactive` | In this example, we defined a policy called *Research-Sales* to allow *Research* to communicate with *Sales*. |
+
+3. Proceed to one of the following actions:
 
    - (If needed) [Define a policy to block communications between segments](#scenario-1-block-communications-between-segments) 
    - (After all your policies are defined) [Apply IB policies](#step-4-apply-ib-policies)

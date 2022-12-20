@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
@@ -65,6 +67,50 @@ To unsubscribe from Message center emails, see [Unsubscribe from Message center 
 |How can I ensure data privacy notifications are received by the right contacts in my organization?|As a global admin you will receive data privacy messages for your organization. Additionally, you can assign the Message Center Privacy reader role to people who should see data privacy messages. Other admin roles with access to Message Center cannot view data privacy messages.   <br/><br/>For more info, see [Preferences](#preferences) in this article.|
 |Why can’t I see a message that was previously there?|To manage the number of messages within Message center, each message will expire and be removed after a period of time. Generally, messages expire 30 days post the time period outlined in the message body.|
 |
+## Feature release status for your organization in Message Center 
+ For each new and updated feature announcement in Message center, “Status for your org.” field provides a release status to help you track when a feature is available in your tenant. 
+
+These three release statuses will be updated on each applicable message over the lifecycle of the feature release 
+
+ 
+
+- **Scheduled**: The feature is planned to release to your tenant, and is not available to any users in your organization 
+
+- **Rolling out**: The feature is beginning to roll out to some applicable users in your organization.  
+
+- **Launched**: The feature is generally available to all the applicable users in your organization.  
+
+Updates to feature release status are provided on the original Message center post. Filtering capability on **“Status for your org.”** allows easier visibility on the updated release status.  
+
+:::image type="content" source="../../media/message-center-rolloutstatus-listanddetailsview.png" alt-text="Image displaying ‘status for your org.’ updated release choices.":::
+
+The release status is **ONLY** available for new and updated features that are also announced on Microsoft 365 Public Roadmap and have reached general availability status (production ready). If you do not see release status on a message, it means the release status is not available for that feature. 
+
+> [!NOTE]
+> The release status will initially be available for a limited number of Microsoft Teams, Outlook on the web and Microsoft 365 admin center feature announcements. 
+ 
+## Relevance Recommendation
+
+For each new Message center post, we will provide a recommendation for how relevant the change is for your organization. This recommendation is based on multiple factors such as: 
+- Apps and service usage 
+- Changes meant to prevent or fix issues for subscription. 
+- Changes meant to help you plan ahead or stay informed. 
+- Impact changes, such as data privacy and app and service retirements.  
+
+There are three levels of relevance: 
+
+-   **High** - These are posts about changes in your organization which need immediate action to avoid service disruption. These can also include feature releases with high potential impact to your organization, for example, an app or service being heavily used by people in your organization. 
+
+- **Medium**  - These are posts about changes in your organization which don't need immediate action. . Examples are non-breaking changes or new features for a service which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement 
+
+- **Low** -  These are posts about changes which just need monitoring. They are related to low impact apps and services in your organization. Examples would be a feature update for an app or service which isn't actively used in your organization. 
+
+
+The relevance recommendations will **ONLY** be available for the newer MC posts. This means the MC posts you already received will see a "blank" for relevance recommendation.
+
+If you see “**Processing**” for a MC post, it means that the score is being computed for this post and should be available soon. You should try to refresh after a few minutes.  
+
+Once you start receiving this, please tell us if a MC post is **not relevant** to you through the [**extended feedback.**](#give-feedback-on-a-post)  This feedback is very important for us to improve the accuracy of the relevance recommendations.
 
 ## Filter messages
 
@@ -121,7 +167,7 @@ If administration is distributed across your organization, you may not want or n
 
 2. In the **Custom View** tab, make sure that the check box is selected for each service that you want to monitor. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**. 
+3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**.
 
    You can also enter up to two email addresses, separated by a semicolon.
 
@@ -207,7 +253,9 @@ Here's a quick overview of the information you'll see in each column.
 
 In the Message center, you can select a message to see details.
 
-If you want to provide feedback on the message, in the details pane, select either the **Like** or **Dislike** icon on the bottom of the message details pane, and provide optional feedback in the text box that appears. Do not provide any personal information. You can optionally select **It's OK to contact me about this feedback** and then select **Send**.
+
+If a Message Center post is not relevant for your organization, please provide us feedback using the options demonstrated in the image below. After you click thumbs up/down on the MC post, select "this change isn't relevant to my org."
+:::image type="content" source="../../media/message-center-feedbacksection.jpg" alt-text="Message center view of feedback section.":::
 
 > [!NOTE]
 > If you're using Microsoft 365 for Government - GCC, Microsoft 365 for Government - GCC High and Office 365 Government - DoD, you won't be able to provide feedback on a post.

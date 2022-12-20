@@ -14,8 +14,8 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- tier1
-- M365-security-compliance
+- tier3
+- purview-compliance
 - data-connectors
 ms.custom:
 - seo-marvel-apr2020
@@ -41,6 +41,8 @@ Here's an overview of the process and the steps necessary to work with a Microso
 [Step 4: Provide your partner with information](#step-4-provide-your-partner-with-information)
 
 [Step 5: Register the third-party data connector in Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How the third-party data import process works
 
@@ -497,11 +499,11 @@ Here are the steps for creating and configuring a third-party data mailbox for i
 
     - Place the third-party data mailbox on Litigation Hold. You can also apply a Microsoft 365 retention policy in the security and compliance center. Placing this mailbox on hold retains third-party data items (indefinitely or for a specified duration) and prevent them from being purged from the mailbox. See one of the following topics:
 
-      - [Place a mailbox on Litigation Hold](./create-a-litigation-hold.md)
+      - [Place a mailbox on Litigation Hold](./ediscovery-create-a-litigation-hold.md)
 
       - [Learn about retention policies and retention labels](retention.md)
 
-    - Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing](enable-mailbox-auditing.md). This allows you to audit all activity performed by any user who has access to the third-party data mailbox.
+    - Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing](audit-mailboxes.md). This allows you to audit all activity performed by any user who has access to the third-party data mailbox.
 
 ## Step 3: Configure user mailboxes for third-party data
 
@@ -511,7 +513,7 @@ The next step is to configure user mailboxes to support third-party data. Comple
 
 2. Place user mailboxes on Litigation Hold or apply a Microsoft 365 retention policy; see one of the following topics:
 
-    - [Place a mailbox on Litigation Hold](./create-a-litigation-hold.md)
+    - [Place a mailbox on Litigation Hold](./ediscovery-create-a-litigation-hold.md)
 
     - [Learn about retention policies and retention labels](retention.md)
 
@@ -592,6 +594,6 @@ To revoke consent for a third-party data connector, you can delete the applicati
 
    For more information about using Content Search and creating keyword search queries, see:
 
-  - [Content Search](content-search.md)
+  - [Content Search](ediscovery-content-search.md)
 
-  - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+  - [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md)

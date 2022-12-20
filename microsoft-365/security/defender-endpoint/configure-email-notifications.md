@@ -11,8 +11,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -46,7 +48,9 @@ The email notification includes basic information about the alert and a link to 
 ## Create rules for alert notifications
 You can create rules that determine the devices and alert severities to send email notifications for and the notification recipients.
 
-1. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Email notifications**.
+1. Go to [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in using an account with the Security administrator or Global administrator role assigned.
+
+2. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Email notifications**.
 
 2. Click **Add item**.
 

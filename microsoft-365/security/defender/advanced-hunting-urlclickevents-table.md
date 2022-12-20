@@ -16,8 +16,10 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ---
 
 # UrlClickEvents
@@ -27,10 +29,9 @@ ms.topic: article
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Office 365
 
 
-The `UrlClickEvents` table in the advanced hunting schema contains information about [Safe Links](../office-365-security/safe-links.md) clicks from email messages, Microsoft Teams, and Office 365 apps in supported desktop, mobile, and web apps. 
+The `UrlClickEvents` table in the advanced hunting schema contains information about [Safe Links](../office-365-security/safe-links-about.md) clicks from email messages, Microsoft Teams, and Office 365 apps in supported desktop, mobile, and web apps. 
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -65,5 +66,5 @@ UrlClickEvents
 ## Related topics
 
 - [Proactively hunt for threats](advanced-hunting-overview.md)
-- [Safe Links in Microsoft Defender for Office 365](../office-365-security/safe-links.md)
+- [Safe Links in Microsoft Defender for Office 365](../office-365-security/safe-links-about.md)
 - [Take action on advanced hunting query results](advanced-hunting-take-action.md)

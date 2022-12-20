@@ -13,14 +13,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365solution-migratetomdatp
   - highpri
+  - tier1
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
-ms.topic: article
-ms.date: 09/22/2022
+ms.topic: conceptual
+ms.date: 11/15/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
@@ -90,7 +91,7 @@ Now that your endpoints have been onboarded to Defender for Endpoint, your next 
 
 |Method|What to do|
 |---|---|
-|Command Prompt|1. On a Windows device, open Command Prompt.<br/><br/>2. Type `sc query windefend`, and then press Enter.<br/><br/>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.|
+|Command Prompt|1. On a Windows device, open Command Prompt.<br/><br/>2. Type `sc query windefend`, and then press Enter.<br/><br/>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode. The state of WinDefend returns **STOPPABLE** if it is in **Passive mode** and **NOT_STOPPABLE** if it is in **Active mode**.|
 |PowerShell|1. On a Windows device, open Windows PowerShell as an administrator.<br/><br/>2. Run following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`. <br/><br/>3. Review the results. You should see **Passive mode**.|
 |Windows Security app|1. On a Windows device, open the Windows Security app.<br/><br/>2. Select **Virus & threat protection**.<br/><br/>3. Under **Who's protecting me?** select **Manage providers**.<br/><br/>4. On the **Security providers** page, under **Antivirus**, look for **Microsoft Defender Antivirus is turned on**.|
 |Task Manager|1. On a Windows device, open the Task Manager app.<br/><br/>2. Select the **Details** tab. Look for **MsMpEng.exe** in the list.|

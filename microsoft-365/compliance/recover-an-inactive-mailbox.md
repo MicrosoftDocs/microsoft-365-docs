@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier2
 ms.localizationpriority: medium
 search.appverid: 
@@ -36,8 +36,10 @@ See the [More information](#more-information) section for more details about the
 > [!NOTE]
 > You can't recover or restore an inactive mailbox that's configured with an auto-expanding archive. If you need to recover data from an inactive mailbox with an auto-expanding archive, use content search to export the data from the mailbox and then import to another mailbox. For instructions, see following articles:
 >
-> - [Content search](content-search.md)
+> - [Content search](ediscovery-content-search.md)
 > - [Export content search results](export-search-results.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Requirements to recover an inactive mailbox
 
@@ -84,7 +86,7 @@ After you recover an inactive mailbox, a new user account is also created. You n
     
     - **Microsoft 365 retention policy with Preservation Lock.** If the inactive mailbox was included in a retention policy that has [Preservation Lock](retention-preservation-lock.md), the recovered mailbox is assigned to the same retention policy.
     
-    - **Microsoft 365 retention policy without Preservation Lock.** The inactive mailbox is removed from the Microsoft 365 retention policy. However, Litigation Hold is enabled on the recovered mailbox to prevent the deletion of mailbox content based on any organization-wide retention policies that delete content older than a specific age. You can keep the Litigation Hold or remove it. For more information, see [Create a Litigation Hold](create-a-litigation-hold.md).
+    - **Microsoft 365 retention policy without Preservation Lock.** The inactive mailbox is removed from the Microsoft 365 retention policy. However, Litigation Hold is enabled on the recovered mailbox to prevent the deletion of mailbox content based on any organization-wide retention policies that delete content older than a specific age. You can keep the Litigation Hold or remove it. For more information, see [Create a Litigation Hold](ediscovery-create-a-litigation-hold.md).
 
     - **Litigation Hold.** If Litigation Hold was enabled for the inactive mailbox, it's removed from the recovered mailbox.
 
@@ -94,7 +96,7 @@ After you recover an inactive mailbox, a new user account is also created. You n
 
   - Retention hold is enabled, and the retention hold duration is set to 30 days. This means that the default Exchange retention policy and any organization-wide or Exchange-wide Microsoft 365 retention policies that are assigned to the new mailbox won't be processed for 30 days. This gives the returning employee or the new owner of the recovered inactive mailbox time to manage the old messages. Otherwise, the Exchange or Microsoft 365 retention policy might delete old mailbox items (or move items to the archive mailbox, if it's enabled) that have expired based on the settings configured for the Exchange or Microsoft 365 retention policies. After 30 days, the retention hold expires, the **RetentionHoldEnabled** mailbox property is set to **False**, and the Managed Folder Assistant starts processing the policies assigned to the mailbox. If you don't need this additional time, you can just remove the retention hold. Alternatively, you can increase the duration of the retention hold by using the **Set-Mailbox -EndDateForRetentionHold** command. For more information, see [Place a mailbox on retention hold](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
 
-- **Put a hold on the recovered mailbox if you need to preserve the original state of the inactive mailbox.** To prevent the new mailbox owner or retention policy from permanently deleting any messages from the recovered inactive mailbox, you can place the mailbox on Litigation Hold. For more information, see [Create a Litigation Hold](./create-a-litigation-hold.md).
+- **Put a hold on the recovered mailbox if you need to preserve the original state of the inactive mailbox.** To prevent the new mailbox owner or retention policy from permanently deleting any messages from the recovered inactive mailbox, you can place the mailbox on Litigation Hold. For more information, see [Create a Litigation Hold](./ediscovery-create-a-litigation-hold.md).
 
 - **What user ID can you use when recovering an inactive mailbox?** When you recover an inactive mailbox, the value that you specify for the  *MicrosoftOnlineServicesID*  parameter can be different from the original one that was associated with the inactive mailbox. You can also use the original user ID. But as previously stated, make sure that the values used for  *Name*  and  *MicrosoftOnlineServicesID*  are unique within your organization when you recover the inactive mailbox.
 

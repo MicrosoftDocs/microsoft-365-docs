@@ -12,8 +12,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
-- M365-security-compliance
-ms.topic: article
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -72,13 +73,19 @@ You can configure the tamper protection mode by providing the mode name as enfor
 
 ## Before you begin
 
-- Supported macOS versions: Monterey (12), Big Sur (11), Catalina (10.15+).
+- Supported macOS versions: Big Sur (11), or later.
 - Minimum required version for Defender for Endpoint: 101.70.19.
 
 **Highly recommended settings:**
 
 - System Integrity Protection (SIP) enabled. For more information, see [Disabling and Enabling System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
 - Use a Mobile device management (MDM) tool to configure Microsoft Defender for Endpoint.
+- Ensure that Defender for Endpoint has **Full Disk Access** authorization.
+
+> [!NOTE]
+> 
+> Enabling **TCC** (Transparency, Consent & Control) through an Mobile Device Management solution such as [Intune](mac-install-with-intune.md), will eliminate the risk of Defender for Endpoint losing **Full Disk Access** Authorization to function properly 
+.
 
 ## Configure tamper protection on macOS devices
 
@@ -91,7 +98,6 @@ There are several ways you can configure tamper protection:
 ### Before you begin
 
 Verify that "tamper_protection" is set to "disabled" or "audit" to observe the state change.
-Also, make sure that "release_ring" does not report "Production".
 
 ```bash
 mdatp health

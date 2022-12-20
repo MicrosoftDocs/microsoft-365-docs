@@ -15,7 +15,9 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
@@ -29,6 +31,7 @@ search.appverid:
 
 
 **Applies to:**
+
 - Microsoft 365 Defender
 
 Read responses to the most commonly asked questions about turning on [Microsoft 365 Defender](microsoft-365-defender.md), including required licenses and permissions, deploying support services, and initial settings.
@@ -79,7 +82,6 @@ Accounts assigned the following Azure Active Directory (Azure AD) roles can acce
 - Application Administrator
 - Cloud Application Administrator
 
-
 > [!NOTE]
 > Role-based access control settings in Microsoft Defender for Endpoint influence access to data. For more information, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
 
@@ -91,8 +93,10 @@ By default, Microsoft 365 Defender displays time information in the UTC time zon
 
 Microsoft regularly provides information through the various channels, including:
 
+- Blogposts in the [Microsoft 365 security & compliance tech community](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/bg-p/MicrosoftThreatProtectionBlog)
+- Go to [Defender monthly news](https://aka.ms/defendernews) 
 - The [message center](../../admin/manage/message-center.md) in Microsoft 365 admin center
-- Blogposts in the [Microsoft 365 security & compliance tech community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
+
 
 Get the latest publicly available experiences by turning on [preview features](preview.md).
 

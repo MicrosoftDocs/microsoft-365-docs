@@ -10,7 +10,7 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdo
   ms.topic: landing-page # Required 
-  ms.collection: m365-security-compliance
+  ms.collection: m365-security
   ms.custom: intro-hub-or-landing
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
@@ -57,18 +57,18 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Set up SPF to help prevent spoofing
-            url: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            url: email-authentication-spf-configure.md
           - text: Use DKIM to validate outbound email sent from your custom domain
-            url: use-dkim-to-validate-outbound-email.md
+            url: email-authentication-dkim-configure.md
           - text: Use DMARC to validate email
-            url: use-dmarc-to-validate-email.md
+            url: email-authentication-dmarc-configure.md
    # Card
   - title: Set up Exchange Online Protection
     linkLists:
       - linkListType: overview
         links:
           - text: Exchange Online Protection overview 
-            url: exchange-online-protection-overview.md
+            url: eop-about.md
           - text: Recommended settings for EOP and Microsoft Defender for Office 365 security for set up
             url: recommended-settings-for-eop-and-office365.md
    # Card
@@ -127,7 +127,7 @@ landingContent:
           - text: Remediate Outlook Rules and Custom Forms Injections Attacks
             url: detect-and-remediate-outlook-rules-forms-attack.md
           - text: Submit False Positives/False Negatives
-            url: admin-submission.md
+            url: submissions-admin.md
         # Card
   - title: Automate
     linkLists:

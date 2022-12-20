@@ -5,13 +5,14 @@ author: pebaum
 manager: scotv
 audience: ITPro
 ms.topic: reference
-f1_keywords:
+f1.keywords:
 - 'microsoft-365-and-office-365-general-information'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.custom:
 - Adm_ServiceDesc
 - Adm_ServiceDesc_top
+ms.collection: scotvorg
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: "Learn about the information available for Microsoft 365 feature descriptions."
 ---
@@ -177,6 +178,8 @@ Office 365 for enterprise follows a role-based access control (RBAC) model: perm
 **Additional support services:** There are several types of additional support services available: For options for large enterprise customers looking for a full-lifecycle service to support their move to Office 365, see [Empower your employees to be more productive](https://www.microsoft.com/en-us/microsoftservices/cloud-productivity.aspx); for options for large enterprise customers looking for a managed support service that covers both Microsoft and on-premises technologies required to access the online service, see [Premier Support](https://www.microsoft.com/enterprise/services/support): for options for smaller enterprise customers in the United States, Canada, and the United Kingdom, see [Professional Direct Support](https://support.microsoft.com/help/4341255/support-for-business).
 
 **Partners:** You can select a Microsoft partner and delegate administrative functions, including creating service request tickets. For more information, see the [Partners](/office365/servicedescriptions/office-365-platform-service-description/partners) service description and [Add, change, or delete a subscription advisor partner](/office365/admin/misc/add-partner).
+
+**Technical support for partners:** If you're a partner and need information about specific partner support plans, see [Compare partner support plans](https://partner.microsoft.com/support/partnersupport). Partners can also escalate tickets to Microsoft. For more information, see [Escalating to Microsoft](/partner-center/customer-support#escalating-to-microsoft).
 
 **Developers:** Developers can learn more about developing Office and SharePoint applications at the [MSDN Microsoft Developer Network](https://developer.microsoft.com/office/docs). Developer Support is available through online blogs and forums in the developer community, through Premier or Partner support resources, or directly through Microsoft. For links to Developer Support options, see [Support Resources](https://developer.microsoft.com/office/docs).
 

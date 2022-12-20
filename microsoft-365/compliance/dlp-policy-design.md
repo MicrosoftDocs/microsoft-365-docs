@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: "Learn how to design a data loss prevention (DLP) policy"
@@ -23,10 +23,6 @@ description: "Learn how to design a data loss prevention (DLP) policy"
 
 Taking the time to design a policy before you implement it will get you to the desired results faster, and with fewer unintended issues, than creating it and then tuning by trial and error alone. Having your policy designs documented will also help you in communications, policy reviews, troubleshooting, and further tuning.
 
-<!--, but excessive tuning to get the intended results can be time consuming.
-
- if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
-
 If you are new to Microsoft Purview DLP, it's helpful to work through these articles before you start designing a policy:
 
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) - this article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
@@ -35,6 +31,8 @@ If you are new to Microsoft Purview DLP, it's helpful to work through these arti
   - [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
   - [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
 - [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article introduces all the components of a DLP policy and how each one influences the behavior of a policy
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Policy design overview
 
@@ -72,6 +70,26 @@ This example doesn't cover all the configuration points of a DLP policy, it woul
 > [!IMPORTANT]
 > Keep in mind that the location(s) you pick impact whether you can use sensitive information types, sensitivity labels and retention labels as well as the actions that are available. See, [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference).
 
+### Complex rule design
+
+The above HIPPA content in SharePoint and OneDrive is a simple example of a DLP policy. The DLP rule builder supports boolean logic (AND, OR, NOT) and nested groups. 
+
+> [!IMPORTANT]
+> - All existing **Exceptions** are replaced with a NOT condition in a nested group inside of the **Conditions**.
+> - You need to create groups in order to use multiple operators as shown in the video.
+ 
+
+> [!IMPORTANT]
+> When an action in Office desktop client apps, (Word, Outlook, Excel, and PowerPoint) matches a policy that uses complex conditions, the user will only see policy tips for rules that use the **Content contains sensitive information** condition.
+
+Here's a video that shows how you'd map two complex policy intent statements to policies in the rule builder.
+
+- *Example 1 We need to block emails to all recipients that contain credit card numbers, OR that have the 'highly confidential' sensitivity label applied, but do NOT block the email if it is sent from someone on the finance team to adele.vance@contoso.com*
+
+- *Example 2 Contoso needs to block all emails that contain a password protected file OR a zip document file extension ('zip' or '7z'), but do NOT block the email if the recipient is in the contoso.com domain OR the fabrikam.com domain, OR the sender is a member of the Contoso HR group.*
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE55JXJ]
+
 ## Policy Design Process
 
 1. Complete the steps in [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
@@ -88,8 +106,8 @@ This example doesn't cover all the configuration points of a DLP policy, it woul
 
 5. Determine how this policy fits into your overall DLP policy strategy.
 
-   > [!IMPORTANT]
-   > Policies can't be renamed once they are created. If you must rename a policy, you will have to create a new one with the desired name and retire the old one. So decide on the naming structure that all your policies will use now.
+> [!IMPORTANT]
+> Policies can't be renamed once they are created. If you must rename a policy, you will have to create a new one with the desired name and retire the old one. So decide on the naming structure that all your policies will use now.
 
 6. Map the items in your policy intent statement to configuration options.
 

@@ -11,7 +11,7 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - tier2
 search.appverid: 
 - MOE150
@@ -28,6 +28,8 @@ description: Learn how to retain mailbox content for former employees by turning
 
 Your organization might need to retain former employees' email after they leave the organization. Depending on your organization's retention requirements, you might need to retain mailbox content for a few months or years after employment ends, or you might need to retain mailbox content indefinitely. Regardless of how long you need to retain email, you can create inactive mailboxes to retain the mailbox of former employees.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## What are inactive mailboxes?
 
 When an employee leaves your organization (or goes on an extended leave of absence), you can remove their Microsoft 365 account. The employee's mailbox data is retained for 30 days after the account is removed. During this period, you can still recover the mailbox data by undeleting the account. After 30 days, the data is permanently removed.
@@ -38,9 +40,9 @@ Inactive mailboxes are useful when your organization needs to retain mailbox con
 
 > [!IMPORTANT]
 > As we mentioned previously, we recommend you use Microsoft 365 retention to create an inactive mailbox:
-> - In-Place Holds in the Exchange admin center are now retired. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
+> - In-Place Holds in the Exchange admin center are now retired. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](ediscovery-legacy-retirement.md).
 > 
-> - [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
+> - [Litigation hold](ediscovery-create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
 
 When there are multiple holds on the same content, the [principle of retention apply](retention.md#the-principles-of-retention-or-what-takes-precedence) and the content is retained for the longest period.
 
@@ -50,7 +52,7 @@ Whether you apply a Microsoft 365 retention policy, retention labels, eDiscovery
 
 To prevent accidental or unintentional deletion, we recommend you confirm the hold before you delete the user account. If the hold isn't applied, the mailbox won't be converted into an inactive mailbox.
 
-For instructions, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
+For instructions, see [How to identify the type of hold placed on an Exchange Online mailbox](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md).
 
 ## Inactive mailboxes and Microsoft 365 retention
 
@@ -74,7 +76,7 @@ For more information about Microsoft retention, see [Learn about retention polic
 If Microsoft 365 retention is used to create an inactive mailbox, the retention settings from the retention policy or retention labels continue to apply to the inactive mailbox. This means if the retention settings are configured to retain and then delete content, items will be moved to the Recoverable Items folder when the retention duration expires, and then eventually purged from the inactive mailbox. If the retention settings aren't configured to deleted items, then items that haven't been permanently deleted by the user (before the mailbox was made inactive) will not be moved to the Recoverable Items folder and will be retained indefinitely after the mailbox becomes inactive.
 
 > [!TIP]
-> You can use the *ComplianceTagHoldApplied* property to identify whether a mailbox has items that have one or more retention labels applied to retain, or retain and then delete content. For more information, see [Identifying mailboxes on hold because a retention label has been applied to a folder or item](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item).
+> You can use the *ComplianceTagHoldApplied* property to identify whether a mailbox has items that have one or more retention labels applied to retain, or retain and then delete content. For more information, see [Identifying mailboxes on hold because a retention label has been applied to a folder or item](ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item).
 
 ### Using adaptive policy scopes to manage retention of inactive mailboxes
 
@@ -111,7 +113,7 @@ If you don't use [adaptive policy scopes](retention.md#adaptive-or-static-policy
 
 ## Inactive mailboxes and eDiscovery case holds
 
-If a hold that's associated with an [eDiscovery case](./get-started-core-ediscovery.md) in the Microsoft Purview compliance portal is placed on a mailbox and then the mailbox or the user's account is deleted, the mailbox becomes an inactive mailbox. However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. Also, you can't create a time-based eDiscovery hold. This means that content in an inactive mailbox is retained forever or until the hold is removed and the inactive mailbox is deleted. Therefore, we recommend using Microsoft 365 retention for inactive mailboxes.
+If a hold that's associated with an [eDiscovery case](./ediscovery-standard-get-started.md) in the Microsoft Purview compliance portal is placed on a mailbox and then the mailbox or the user's account is deleted, the mailbox becomes an inactive mailbox. However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. Also, you can't create a time-based eDiscovery hold. This means that content in an inactive mailbox is retained forever or until the hold is removed and the inactive mailbox is deleted. Therefore, we recommend using Microsoft 365 retention for inactive mailboxes.
 
 For more information about the differences between eDiscovery holds and Microsoft 365 retention, see [When to use retention policies and retention labels or eDiscovery holds](retention.md#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
 
@@ -119,7 +121,7 @@ For more information about the differences between eDiscovery holds and Microsof
 
 An inactive mailbox that's configured with an auto-expanding archive can't be recovered or restored. In situations where it's necessary to recover data from an inactive mailbox with an auto-expanding archive, we recommended that you use the content search tool to export the data from the mailbox and then import to another mailbox. For step-by-step instructions to search an inactive mailbox and export the search results, see:
 
-- [Content search](content-search.md)
+- [Content search](ediscovery-content-search.md)
 
 - [Export content search results](export-search-results.md)
 

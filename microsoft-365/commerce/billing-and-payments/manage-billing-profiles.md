@@ -5,12 +5,14 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: amberb, vikdesai
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 f1.keywords:
 - 'MACBillingBillsPaymentsBillingProfiles'
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -45,7 +47,7 @@ Roles on billing profiles have permissions to control purchases, and view and ma
 
 > [!NOTE]
 >
-> If you follow these steps and the billing profiles list is empty, it means that you don’t have a billing profile, and can’t use this feature.
+> If you follow these steps and the billing profiles list is empty, it means that you don't have a billing profile, and can't use this feature.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. Select the **Billing profile** tab, then select a billing profile from the list.

@@ -19,7 +19,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - content-search
 ---
 
@@ -34,6 +34,8 @@ Why clone Content Searches?
 - To save you from having to reenter a large number of content locations when you create a new search.
 
 - To decrease the size of the search results. For example, if you have a search that returns too many results to export, you can clone the search and then add a search condition based on a date range to reduce the number of search results.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Script information
 
@@ -128,8 +130,8 @@ To clone a search:
 
 After you run the script to clone an existing Content Search, the next step is to go to the Microsoft Purview compliance portal to edit and run the new search. As previously stated, you can edit a search by changing the keyword search query and adding or removing search conditions. For more information, see:
 
-- [Content Search in Office 365](content-search.md)
+- [Content Search in Office 365](ediscovery-content-search.md)
 
-- [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+- [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md)
 
-- [eDiscovery cases](./get-started-core-ediscovery.md)
+- [eDiscovery cases](./ediscovery-standard-get-started.md)

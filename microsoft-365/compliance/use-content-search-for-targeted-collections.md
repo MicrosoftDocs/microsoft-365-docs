@@ -12,7 +12,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 - content-search
 ms.localizationpriority: medium
 search.appverid:
@@ -28,9 +28,11 @@ The Content search tool in the Microsoft Purview compliance portal doesn't provi
 > [!NOTE]
 > To return content located in a folder in a SharePoint or OneDrive for Business site, the script in this topic uses the DocumentLink managed property instead of the Path property. The DocumentLink property is more robust than the Path property because it will return all content in a folder, whereas the Path property won't return some media files.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Before you run a targeted collection
 
-- You have to be a member of the eDiscovery Manager role group in the compliance portal to run the script in Step 1. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- You have to be a member of the eDiscovery Manager role group in the compliance portal to run the script in Step 1. For more information, see [Assign eDiscovery permissions](ediscovery-assign-permissions.md).
 
 - You also have to be assigned the Mail Recipients role in your Exchange Online organization. This is required to run the **Get-MailboxFolderStatistics** cmdlet, which is included in the script. By default, the Mail Recipients role is assigned to the Organization Management and Recipient Management role groups in Exchange Online. For more information about assigning permissions in Exchange Online, see [Manage role group members](/exchange/manage-role-group-members-exchange-2013-help). You could also create a custom role group, assign the Mail Recipients role to it, and then add the members who need to run the script in Step 1. For more information, see [Manage role groups](/Exchange/permissions-exo/role-groups).
 

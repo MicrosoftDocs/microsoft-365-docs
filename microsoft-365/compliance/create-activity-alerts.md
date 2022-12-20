@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ms.collection:
 - tier1
-- M365-security-compliance
+- purview-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
@@ -32,9 +32,11 @@ You can create an activity alert that will send you an email notification when u
 > [!NOTE]
 > Activity alerts are being deprecated. We recommend that you start using alert policies in the security and compliance center instead of creating new activity alerts. Alert policies provide additional functionality such as the ability to create an alert policy that triggers an alert when any user performs a specified activity, and displaying alerts on the **View alerts** page in the security and compliance center. For more information, see [Alert policies](alert-policies.md).
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Confirm roles and configure audit logging
 
-- You must be assigned the Organization Configuration role in the Microsoft Purview compliance portal to manage activity alerts. By default, this role is assigned to the Compliance Administrator and Organization Management role groups. For more information about adding members to role groups, see [Give users access to the Microsoft Purview compliance portal](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+- You must be assigned the Organization Configuration role in the Microsoft Purview compliance portal to manage activity alerts. By default, this role is assigned to the Compliance Administrator and Organization Management role groups. For more information about adding members to role groups, see [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group).
 
 - You (or another admin) must first turn on audit logging for your organization before you can start using activity alerts. To do this, just click **Start recording user and admin activity** on the **Activity alerts** page. (If you don't see this link, auditing has already been turned on for your organization.) You can also turn on auditing on the **Audit log search** page in the compliance portal (go to **Audit**). You only have to do this once for your organization.
 
@@ -65,7 +67,7 @@ You can create an activity alert that will send you an email notification when u
 
     1. **Send this alert when** - Click **Send this alert when** and then configure these two fields:
 
-       - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the audit log. You can select one or more specific activities, or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities). When a user performs any of the activities that you've added to the alert, an email notification is sent.
+       - **Activities** - Click the drop-down list to display the activities that you can create an alert for. This is the same activities list that's displayed when you search the audit log. You can select one or more specific activities, or you can click the activity group name to select all activities in the group. For a description of these activities, see the "Audited activities" section in [Search the audit log](audit-log-activities.md). When a user performs any of the activities that you've added to the alert, an email notification is sent.
 
        - **Users** - Click this box and then select one or more users. If the users in this box perform the activities that you added to the **Activities** box, an alert will be sent. Leave the **Users** box blank to send an alert when any user in your organization performs the activities specified by the alert.
 
@@ -101,7 +103,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
 
     ![Example of an email notification sent for an activity alert.](../media/a5f91611-fae6-4fe9-82f5-58521a2e2541.png)
 
-- Here are some common document and email activities that you can create activity alerts for. The tables describe the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **Activities** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log](search-the-audit-log-in-security-and-compliance.md#audited-activities).
+- Here are some common document and email activities that you can create activity alerts for. The tables describe the activity, the name of the activity to create an alert for, and the name of the activity group that the activity is listed under in the **Activities** drop-down list. To see a complete list of the activities that you can create activity alerts for, see the "Audited activities" section in [Search the audit log](audit-log-activities.md).
 
     > [!TIP]
     > You might want to create an activity alert for just one activity that's performed by any user. Or you might want to create an activity alert that tracks multiple activities performed by one or more users.
@@ -112,7 +114,7 @@ To turn an activity alert back on, just repeat these steps and click the **Off**
     |:-----|:-----|:-----|
     |Views a document on a site.  |Accessed file  |File and folder activities  |
     |Edits or changes a document.  |Modified file  |File and folder activities  |
-    |Shares a document with a user outside of your organization.  |Share file, folder, or site  <br/> And  <br/> Created sharing invitation  <br/> For more information, see [Use sharing auditing in the audit log](use-sharing-auditing.md).  |Sharing and access request activities  |
+    |Shares a document with a user outside of your organization.  |Share file, folder, or site  <br/> And  <br/> Created sharing invitation  <br/> For more information, see [Use sharing auditing in the audit log](audit-log-sharing.md).  |Sharing and access request activities  |
     |Uploads or downloads a document.  |Uploaded file  <br/> And/or  <br/> Downloaded file  |File and folder activities  |
     |Changes the access permissions to a site.  |Modified site permissions  |Site administration activities  |
 

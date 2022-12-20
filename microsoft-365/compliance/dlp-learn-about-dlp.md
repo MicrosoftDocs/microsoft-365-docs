@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 search.appverid:
 - MET150
 description: "Learn how to protect your sensitive information using Microsoft Purview data loss prevention policies and tools and take a tour through the DLP lifecycle."
@@ -27,11 +27,13 @@ In Microsoft Purview, you implement data loss prevention by defining and applyin
 
 - Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
 - Office applications such as Word, Excel, and PowerPoint
-- Windows 10, Windows 11 and macOS (Catalina 10.15 and higher) endpoints
+- Windows 10, Windows 11 and macOS (three latest released versions) endpoints
 - non-Microsoft cloud apps
 - on-premises file shares and on-premises SharePoint.
 
 DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## DLP is part of the larger Microsoft Purview offering
 
@@ -47,7 +49,7 @@ DLP policies are how you monitor the activities that users take on sensitive ite
 - for data at rest, sensitive items can be locked and moved to a secure quarantine location
 - for Teams chat, the sensitive information will not be displayed
 
-All DLP monitored activities are recorded to the [Microsoft 365 Audit log](search-the-audit-log-in-security-and-compliance.md) by default and routed to [Activity explorer](data-classification-activity-explorer.md). When a user performs an action that meets the criteria of a DLP policy, and you have alerts configured, DLP provides alerts in the [DLP alert management dashboard](dlp-configure-view-alerts-policies.md).
+All DLP monitored activities are recorded to the [Microsoft 365 Audit log](audit-log-search.md) by default and routed to [Activity explorer](data-classification-activity-explorer.md). When a user performs an action that meets the criteria of a DLP policy, and you have alerts configured, DLP provides alerts in the [DLP alert management dashboard](dlp-configure-view-alerts-policies.md).
 
 ## DLP lifecycle
 
@@ -64,7 +66,7 @@ DLP monitoring and protection are native to the applications that users use ever
 
 **Technology planning for DLP**
 
-Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.
+Keep in mind that DLP as a technology can monitor and protect your data at rest, data in use and data in motion across Microsoft 365 services, Windows 10, Windows 11, and macOS (three latest released versions) devices, on-premises file shares, and on-premises SharePoint. There are planning implications for the different locations, the type of data you want to monitor and protect, and the actions to be taken when a policy match occurs.
 
 **Business processes planning for DLP**
 
@@ -85,7 +87,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - OneDrive accounts
 - Teams chat and channel messages
 - Microsoft Defender for Cloud Apps
-- Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices
+- Windows 10, Windows 11, and macOS (three latest released versions) devices
 - On-premises repositories
 - PowerBI sites
 
@@ -106,7 +108,7 @@ Evaluate the impact of the controls by implementing them with a DLP policy in te
 While in test mode, monitor the outcomes of the policy and fine-tune it so that it meets your control objectives while ensuring you aren't adversely or inadvertently impacting valid user workflows and productivity. Here are some examples of things to fine-tune:
 
 - adjusting the locations and people/places that are in or out of scope
-- tune the conditions and exceptions that are used to determine if an item and what is being done with it matches the policy
+- tune the conditions that are used to determine if an item and what is being done with it matches the policy
 - the sensitive information definition/s
 - the actions
 - the level of restrictions
@@ -125,8 +127,6 @@ Once the policy meets all your objectives, turn it on. Continue to monitor the o
 > [!NOTE]
 > In general, policies take effect about an hour after being turned on.
 
-<!--See, LINK TO topic for SLAs for location specific  details-->
-
 ## DLP policy configuration overview
 
 You have flexibility in how you create and configure your DLP policies. You can start from a predefined template and create a policy in just a few clicks or you can design your own from the ground up. No matter which you choose, all DLP policies require the same information from you.
@@ -142,7 +142,7 @@ location | include/exclude by|
 |SharePoint sites |sites |
 |OneDrive accounts |accounts or distribution groups |
 |Teams chat and channel messages |account or distribution group |
-|Windows 10, Windows 11, and macOS (Catalina 10.15 and higher)  devices |user or group |
+|Windows 10, Windows 11, and macOS (three latest released versions)  devices |user or group |
 |Microsoft Cloud App Security |instance |
 |On-premises repositories| repository file path|
 
@@ -156,7 +156,7 @@ location | include/exclude by|
 
 - SharePoint/Exchange/OneDrive: Block people who are outside your organization form accessing the content. Show the user a tip and send them an email notification that they are taking an action that is prohibited by the DLP policy.
 - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
-- Windows 10, Windows 11, and macOS (Catalina 10.15 and higher)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
+- Windows 10, Windows 11, and macOS (three latest released versions)  Devices: Audit or restrict copying a sensitive item to a removeable USB device
 - Office Apps: Show a popup notifying the user that they are engaging in a risky behavior and block or block but allow override.
 - On-premises file shares: move the file from where it is stored to a quarantine folder
 
@@ -179,7 +179,7 @@ After the policy's synced to the right locations, it starts to evaluate content 
 
 ## Viewing policy application results
 
-DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
+DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
 ### DLP Alerts Dashboard
 

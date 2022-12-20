@@ -13,9 +13,10 @@ ms.localizationpriority: high
 ms.collection: 
 - tier1
 - highpri
-- M365-security-compliance
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkDEFENDER
 search.appverid: 
 - MOE150
@@ -49,6 +50,8 @@ Take a video tour of our data classification features.
 
 Data classification will scan your sensitive content and labeled content before you create any policies. This is called **zero change management**. This lets you see the impact that all the retention and sensitivity labels are having in your environment and empower you to start assessing your protection and governance policy needs.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Prerequisites
 
 ### Permissions
@@ -65,18 +68,18 @@ Data classification will scan your sensitive content and labeled content before 
 > [!NOTE]
 > As a best practice, always use the role with least privilege to grant access to Microsoft 365 data classification.
 
-#### Roles and Role Groups in preview
+#### Roles and Role Groups
 
-There are roles and role groups in preview that you can test out to fine tune your access controls.
+There are roles and role groups that you can use to fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more about them, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
@@ -139,7 +142,7 @@ This card provides a quick summary of the most common actions that users are tak
 
 > [!NOTE]
 > If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on. To turn the audit logs on , see:
->- [Search the audit log in security & compliance center](search-the-audit-log-in-security-and-compliance.md)
+>- [Search the audit log in the compliance portal](audit-log-search.md)
 
 ## Sensitivity and retention labeled data by location
 

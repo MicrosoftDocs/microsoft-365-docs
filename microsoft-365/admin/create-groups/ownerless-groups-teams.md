@@ -7,7 +7,7 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
@@ -25,7 +25,7 @@ description: "Learn how to automatically invite members to become owners in an o
 
 # Manage ownerless Microsoft 365 groups and teams
 
-A team in Microsoft Teams or a Microsoft 365 group and its related services can become ownerless if an owner's account is deleted or disabled in Microsoft 365. Groups and teams require an owner to add or remove members and change group settings.
+A team in Microsoft Teams or a Microsoft 365 group and its related services can become ownerless if an owner's account is deleted in Microsoft 365. Groups and teams require an owner to add or remove members and change group settings.
 
 A Global Administrator, Exchange Administrator, or Groups Administrator can create a policy that automatically asks the most active members of an ownerless group or team if they'll accept ownership. When a member accepts the invitation to become an owner, the action is logged in the compliance portal audit log. Guests are never invited to be owners.
 
@@ -67,3 +67,5 @@ Up to two group members per group can accept the invitation to become an owner. 
 ## Related topics
 
 [Ownerless group FAQ](/exchange/troubleshoot/groups-and-distribution-lists/ownerless-group-policy)
+
+[Search the audit log in the compliance portal](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)

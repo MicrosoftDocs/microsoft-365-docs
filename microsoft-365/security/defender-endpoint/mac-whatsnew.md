@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -9,10 +9,12 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 11/21/2022
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - m365-security-compliance
+ms.collection:
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
@@ -28,9 +30,92 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-For more information on Microsoft Defender for Endpoint on other operating systems: 
-- [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md) 
+For more information on Microsoft Defender for Endpoint on other operating systems:
+
+- [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
+
+**Known issues**
+
+Apple has identified an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), and expected to be fixed in the next release.
+The issue impacts Microsoft Defender for endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
+
+> To mitigate the risk with this issue, make sure that [Microsoft Defender for Endpoint has Full Disk Access Authorization](mac-install-manually.md).
+
+<details>
+  <summary>Dec-2022 (Build: 101.90.97  | Release version: 20.122102.19097.0)</summary>
+
+&ensp;Build: **101.90.97**<br/>
+&ensp;Release version: **20.122102.19097.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.381.202.0**<br/>
+
+**What's new**
+
+- Scanning optimization for move file operations
+- Adding exclusions from command line now requires admin privileges
+- Decrease sysextd noise from Tamper Protection in Advanced Hunting
+- Bug and performance fixes
+
+<br/>
+</details>
+
+<details>
+  <summary>Nov-2022 (Build: 101.87.30  | Release version: 20.122082.18681.0)</summary>
+
+&ensp;Released: **Nov 5, 2022**<br/>
+&ensp;Published: **Nov 5, 2022**<br/>
+&ensp;Build: **101.87.30**<br/>
+&ensp;Release version: **20.122082.18681.0**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Signature version: **1.379.17.0**<br/>
+
+**What's new**
+
+- Fix for some users experiencing performance issues and temporary system hangs
+- Bug and performance fixes
+
+<br/>
+</details>
+
+<details>
+  <summary>Oct-2022 (Build: 101.86.81  | Release version: 20.122082.18681.0)</summary>
+
+&ensp;Released: **Oct 25, 2022**<br/>
+&ensp;Published: **Oct 25, 2022**<br/>
+&ensp;Build: **101.86.81**<br/>
+&ensp;Release version: **20.122082.18681.0**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Signature version: **1.377.636.0**<br/>
+
+**What's new**
+
+- Bug fix: Upgrade fails if \_mdatp user a member of \_lpadmin group
+
+<br/>
+</details>
+
+> [!IMPORTANT]
+> This is a minimal recommended MDE version for macOS Ventura.
+
+<details>
+  <summary>Oct-2022 (Build: 101.82.21  | Release version: 20.122082.18221.0)</summary>
+
+&ensp;Build: **101.82.21**<br/>
+&ensp;Release version: **20.122082.18221.0**<br/>
+&ensp;Engine version: **1.1.19400.3**<br/>
+&ensp;Signature version: **1.369.962.0**<br/>
+
+**What's new**
+
+- Bug fix - Mac TP in Block mode causing device hang on shutdown/crashes on reboot
+- Add a mdatp command-line switch to view the on-demand scan history
+- Improve Performance of Device Owner on MacOs
+- Ready for macOS Ventura (13.0)
+- Bug and performance fixes
+
+<br/>
+</details>
 
 <details>
   <summary>Aug-2022 (Build: 101.78.13  | Release version: 20.122072.17813.0)</summary>
@@ -127,7 +212,6 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 <br/>
 </details>
 
-
 <details>
   <summary>Jun-2022 (Build: 101.70.18 | Release version: 20.122042.17018.0)</summary>
 
@@ -152,7 +236,6 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Published: **May 11, 2022**<br/>
 &ensp;Build: **101.66.54**<br/>
 &ensp;Release version: **20.122041.16654.0**<br/>
-
 
 **What's new**
 
@@ -220,10 +303,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- This version adds support for macOS 12.3. Starting with macOS 12.3, [Apple is removing Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). There will be no Python version preinstalled on macOS by default. **ACTION NEEDED**: 
+- This version adds support for macOS 12.3. Starting with macOS 12.3, [Apple is removing Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). There will be no Python version preinstalled on macOS by default. **ACTION NEEDED**:
   - Users must update Microsoft Defender for Endpoint for Mac to version 101.59.50 (or newer) prior to updating their devices to macOS Monterey 12.3 (or newer). This minimal version 101.59.50 is a prerequisite to eliminating Python-related issues with Microsoft Defender for Endpoint for Mac on macOS Monterey.
   - For remote deployments, existing MDM setups must be updated to Microsoft Defender for Endpoint for Mac version 101.59.50 (or newer). Pushing via MDM an older Microsoft Defender for Endpoint for Mac version to macOS Monterey 12.3 (or newer) will result in an installation failure.
-
+\*\*\n
 <br/>
 </details>
 
@@ -255,7 +338,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 **What's new**
 
-- Bug fixes 
+- Bug fixes
 
 <br/>
 </details>
@@ -295,126 +378,135 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - macOS 10.14 (Mojave) is no longer supported
 - After a product setting stops being managed by the administrator through MDM, it now reverts to the value it had before it was managed (the value configured locally by the end user or, if no such local value was explicitly provided, the default value used by the product). Prior to this change, after a setting stopped being managed, its managed value persisted and was still used by the product.
 - Performance improvements & bug fixes
-    
+
 <br/>
 </details>
 
 <details><summary>2021 releases </summary><blockquote>
     <details><summary>(Build: 101.49.25 | Release version: 20.121092.14925.0)</summary>
 
-&ensp;Build: **101.49.25**<br/>
-&ensp;Release version: **20.121092.14925.0** <br/>
+&ensp;Build: **101.49.25**<br/>
+&ensp;Release version: **20.121092.14925.0** <br/>
 
 **What's new**
 
-- Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through `mdatp config scan-archives --value [enabled/disabled]`. By default, this is set to enabled. 
-- Bug fixes  
+- Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through `mdatp config scan-archives --value [enabled/disabled]`. By default, this is set to enabled.
+- Bug fixes
 
 <br/>
 </details>
- 
+
 <details><summary>(Build: 101.47.27 | Release version: 20.121082.14727.0)</summary>
 
-&ensp;Build: **101.47.27**<br/>
-&ensp;Release version: **20.121082.14727.0** <br/>
+&ensp;Build: **101.47.27**<br/>
+&ensp;Release version: **20.121082.14727.0** <br/>
 
 **What's new**
-- Fix for a system freeze occurring on shutdown on macOS Mojave and macOS Catalina. 
+
+- Fix for a system freeze occurring on shutdown on macOS Mojave and macOS Catalina.
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.43.84 | Release version: 20.121082.14384.0)</summary>
 
-&ensp;Build: **101.43.84**<br/>
-&ensp;Release version: **20.121082.14384.0** <br/>
+&ensp;Build: **101.43.84**<br/>
+&ensp;Release version: **20.121082.14384.0** <br/>
 
 **What's new**
-- Candidate build for macOS 12 (Monterey) 
-- Bug fixes 
+
+- Candidate build for macOS 12 (Monterey)
+- Bug fixes
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.41.10 | Release version: 20.121072.14110.0)</summary>
 
-&ensp;Build: **101.41.10**<br/>
-&ensp;Release version: **20.121072.14110.0** <br/>
+&ensp;Build: **101.41.10**<br/>
+&ensp;Release version: **20.121072.14110.0** <br/>
 
 **What's new**
-- Added new switches to the command-line tool: 
-    - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of 2 is used. 
-    - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this is set to enabled. 
-- Changing the product log level now requires elevation. 
-- Performance improvements & bug fixes 
+
+- Added new switches to the command-line tool:
+  - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of 2 is used.
+  - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this is set to enabled.
+- Changing the product log level now requires elevation.
+- Performance improvements & bug fixes
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.40.84 | Release version: 20.121071.14084.0)</summary>
 
-&ensp;Build: **101.40.84**<br/>
-&ensp;Release version: **20.121071.14084.0** <br/>
+&ensp;Build: **101.40.84**<br/>
+&ensp;Release version: **20.121071.14084.0** <br/>
 
 **What's new**
-- M1 chip native support 
-- Performance improvements & bug fixes 
+
+- M1 chip native support
+- Performance improvements & bug fixes
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.37.97 | Release version: 20.121062.13797.0)</summary>
 
-&ensp;Build: **101.37.97**<br/>
-&ensp;Release version: **20.121062.13797.0** <br/>
+&ensp;Build: **101.37.97**<br/>
+&ensp;Release version: **20.121062.13797.0** <br/>
 
 **What's new**
-- Performance improvements & bug fixes 
+
+- Performance improvements & bug fixes
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.34.28 | Release version: 20.121061.13428.0)</summary>
 
-&ensp;Build: **101.34.28**<br/>
-&ensp;Release version: **20.121061.13428.0** <br/>
+&ensp;Build: **101.34.28**<br/>
+&ensp;Release version: **20.121061.13428.0** <br/>
 
 **What's new**
-- Bug fixes 
+
+- Bug fixes
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.34.27 | Release version: 20.121052.13427.0)</summary>
 
-&ensp;Build: **101.34.27**<br/>
-&ensp;Release version: **20.121052.13427.0** <br/>
+&ensp;Build: **101.34.27**<br/>
+&ensp;Release version: **20.121052.13427.0** <br/>
 
 **What's new**
-- Bug fixes 
+
+- Bug fixes
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.34.20 | Release version: 20.121051.13420.0)</summary>
 
-&ensp;Build: **101.34.20**<br/>
-&ensp;Release version: **20.121051.13420.0** <br/>
+&ensp;Build: **101.34.20**<br/>
+&ensp;Release version: **20.121051.13420.0** <br/>
 
 **What's new**
-- [Device control for macOS](mac-device-control-overview.md) is now in general availability. 
-- Addressed an issue where a quick scan could not be started from the status menu on macOS 11 (Big Sur). 
-- Other bug fixes 
+
+- [Device control for macOS](mac-device-control-overview.md) is now in general availability.
+- Addressed an issue where a quick scan could not be started from the status menu on macOS 11 (Big Sur).
+- Other bug fixes
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.32.69 | Release version: 20.121042.13269.0)</summary>
 
-&ensp;Build: **101.32.69**<br/>
-&ensp;Release version: **20.121042.13269.0** <br/>
+&ensp;Build: **101.32.69**<br/>
+&ensp;Release version: **20.121042.13269.0** <br/>
 
 **What's new**
+
 - Addressed an issue where concurrent access to the keychain from Microsoft Defender for Endpoint and other applications can lead to keychain corruption.
 
 <br/>
@@ -422,14 +514,15 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 <details><summary>(Build: 101.29.64 | Release version: 20.121042.12964.0)</summary>
 
-&ensp;Build: **101.29.64**<br/>
-&ensp;Release version: **20.121042.12964.0** <br/> 
+&ensp;Build: **101.29.64**<br/>
+&ensp;Release version: **20.121042.12964.0** <br/>
 
 **What's new**
-- Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action. 
-- `mdatp diagnostic real-time-protection-statistics` now supports two additional switches: 
-    - `--sort`: sorts the output descending by total number of files scanned 
-    - `--top N`: displays the top N results (only works if `--sort` is also specified) 
+
+- Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
+- `mdatp diagnostic real-time-protection-statistics` now supports two additional switches:
+  - `--sort`: sorts the output descending by total number of files scanned
+  - `--top N`: displays the top N results (only works if `--sort` is also specified)
 - Performance improvements (specifically for when `YARN` is used) & bug fixes
 
 <br/>
@@ -437,35 +530,38 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 <details><summary>(Build: 101.27.50 | Release version: 20.121022.12750.0)</summary>
 
-&ensp;Build: **101.27.50**<br/>
-&ensp;Release version: **20.121022.12750.0** <br/> 
+&ensp;Build: **101.27.50**<br/>
+&ensp;Release version: **20.121022.12750.0** <br/>
 
 **What's new**
-- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Microsoft Defender Vulnerability Management (MDVM) functionality.  
+
+- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Microsoft Defender Vulnerability Management (MDVM) functionality.
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.25.69 | Release version: 20.121022.12569.0)</summary>
 
-&ensp;Build: **101.25.69**<br/>
-&ensp;Release version: **20.121022.12569.0** <br/> 
+&ensp;Build: **101.25.69**<br/>
+&ensp;Release version: **20.121022.12569.0** <br/>
 
 **What's new**
-- Microsoft Defender for Endpoint on macOS is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md) . 
-- Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes. 
+
+- Microsoft Defender for Endpoint on macOS is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
+- Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes.
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.23.64 | Release version: 20.121021.12364.0)</summary>
 
-&ensp;Build: **101.23.64**<br/>
-&ensp;Release version: **20.121021.12364.0** <br/> 
+&ensp;Build: **101.23.64**<br/>
+&ensp;Release version: **20.121021.12364.0** <br/>
 
 **What's new**
-- Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`. 
-- Performance improvements & bug fixes 
+
+- Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`.
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -475,11 +571,12 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 <details><summary>Prior releases </summary><blockquote>
 <details><summary>(Build: 101.22.79  | Release version: 20.121012.12279.0)</summary>
 
-&ensp;Build: **101.22.79** <br> 
+&ensp;Build: **101.22.79** <br>
 &ensp;Release version: **20.121012.12279.0**<br>
 
 **What's new**
-- Performance improvements & bug fixes 
+
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -490,7 +587,8 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Release version: **20.121011.11988.0**<br>
 
 **What's new**
-- Performance improvements & bug fixes 
+
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -501,10 +599,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Release version: **20.120121.11948.0**<br>
 
 **What's new**
+
 > [!NOTE]
-> The old command-line tool syntax has been deprecated with this release. For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line). 
-- Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint on Mac. 
-- Performance improvements & bug fixes 
+> The old command-line tool syntax has been deprecated with this release. For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line).
+- Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`. This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint on Mac.
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -515,7 +614,8 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Release version: **20.120101.11921.0** <br>
 
 **What's new**
-- Bug fixes 
+
+- Bug fixes
 
 <br/>
 </details>
@@ -526,11 +626,12 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Release version: **20.120102.11526.0**<br>
 
 **What's new**
-- Improved the reliability of the agent when running on macOS 11 Big Sur. 
-- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`). 
+
+- Improved the reliability of the agent when running on macOS 11 Big Sur.
+- Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`).
 - Performance improvements & bug fixes
 
-<br/> 
+<br/>
 </details>
 
 <details><summary>(Build: 101.13.75  | Release version: 20.120101.11375.0)</summary>
@@ -538,10 +639,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **101.13.75**<br>
 &ensp;Release version: **20.120101.11375.0**<br>
 
-**What's new** 
-- Removed conditions when Microsoft Defender for Endpoint was triggering a macOS 11 (Big Sur) bug that manifests into a kernel panic. 
-- Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur). 
-- Bug fixes 
+**What's new**
+
+- Removed conditions when Microsoft Defender for Endpoint was triggering a macOS 11 (Big Sur) bug that manifests into a kernel panic.
+- Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur).
+- Bug fixes
 
 <br/>
 </details>
@@ -550,8 +652,9 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **101.10.72** <br>
 
-**What's new** 
-- Bug fixes  
+**What's new**
+
+- Bug fixes
 
 <br/>
 </details>
@@ -560,10 +663,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **101.09.61**<br>
 
-**What's new** 
-- Added a new managed preference for [disabling the option to send feedback](mac-preferences.md#show--hide-option-to-send-feedback). 
-- Status menu icon now shows a healthy state when the product settings are managed. Previously, the status menu icon was displaying a warning or error state, even though the product settings were managed by the administrator. 
-- Performance improvements & bug fixes 
+**What's new**
+
+- Added a new managed preference for [disabling the option to send feedback](mac-preferences.md#show--hide-option-to-send-feedback).
+- Status menu icon now shows a healthy state when the product settings are managed. Previously, the status menu icon was displaying a warning or error state, even though the product settings were managed by the administrator.
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -572,13 +676,14 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **101.09.50**<br>
 
-**What's new** 
-- This product version has been validated on macOS Big Sur 11 beta 9. 
-- The new syntax for the mdatp command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line). 
+**What's new**
+
+- This product version has been validated on macOS Big Sur 11 beta 9.
+- The new syntax for the mdatp command-line tool is now the default one. For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line).
 > [!NOTE]
-> The old command-line tool syntax will be removed from the product on **January 1st, 2021**.
-- Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory. 
-- Performance improvements & bug fixes 
+> The old command-line tool syntax will be removed from the product on **January 1st, 2021**.
+- Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory.
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -587,10 +692,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **101.09.49**<br>
 
-**What's new** 
-- User interface improvements to differentiate exclusions that are managed by the IT administrator versus exclusions defined by the local user. 
-- Improved CPU utilization during on-demand scans. 
-- Performance improvements & bug fixes 
+**What's new**
+
+- User interface improvements to differentiate exclusions that are managed by the IT administrator versus exclusions defined by the local user.
+- Improved CPU utilization during on-demand scans.
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -599,13 +705,14 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **101.07.23**<br>
 
-**What's new** 
-- Added new fields to the output of `mdatp --health` for checking the status of passive mode and the EDR group ID. 
+**What's new**
+
+- Added new fields to the output of `mdatp --health` for checking the status of passive mode and the EDR group ID.
 > [!NOTE]
-> `mdatp --health` will be replaced with `mdatp health` in a future product update. 
-- Fixed a bug where automatic sample submission was not marked as managed in the user interface. 
-- Added new settings for controlling the retention of items in the antivirus scan history. You can now [specify the number of days to retain items in the scan history](mac-preferences.md#antivirus-scan-history-retention-in-days) and [specify the maximum number of items in the scan history](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history). 
-- Bug fixes 
+> `mdatp --health` will be replaced with `mdatp health` in a future product update.
+- Fixed a bug where automatic sample submission was not marked as managed in the user interface.
+- Added new settings for controlling the retention of items in the antivirus scan history. You can now [specify the number of days to retain items in the scan history](mac-preferences.md#antivirus-scan-history-retention-in-days) and [specify the maximum number of items in the scan history](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history).
+- Bug fixes
 
 <br/>
 </details>
@@ -614,22 +721,24 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **101.06.63**<br>
 
-**What's new** 
-- Addressed a performance regression introduced in version `101.05.17`. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics. 
+**What's new**
+
+- Addressed a performance regression introduced in version `101.05.17`. The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares. We have reverted this code change and are investigating alternative ways to eliminate the kernel panics.
 
 <br/>
 </details>
 
 <details><summary>(Build: 101.05.17)</summary>
 
-&ensp;Build: **101.05.17**<br> 
+&ensp;Build: **101.05.17**<br>
 
-**What's new** 
+**What's new**
+
 > [!IMPORTANT]
-> We are working on a new and enhanced syntax for the `mdatp` command-line tool. The new syntax is currently the default in the Insider Fast and Insider Slow update channels. We encourage you to famliliarize yourself with this new syntax. 
-> We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months. 
-- Addressed a kernel panic that occurred sometimes when accessing SMB file shares. 
-- Performance improvements & bug fixes 
+> We are working on a new and enhanced syntax for the `mdatp` command-line tool. The new syntax is currently the default in the Insider Fast and Insider Slow update channels. We encourage you to famliliarize yourself with this new syntax.
+> We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months.
+- Addressed a kernel panic that occurred sometimes when accessing SMB file shares.
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -638,10 +747,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **101.05.16**<br>
 
-**What's new** 
-- Improvements to quick scan logic to significantly reduce the number of scanned files. 
-- Added [autocompletion support](mac-resources.md#how-to-enable-autocompletion) for the command-line tool. 
-- Bug fixes 
+**What's new**
+
+- Improvements to quick scan logic to significantly reduce the number of scanned files.
+- Added [autocompletion support](mac-resources.md#how-to-enable-autocompletion) for the command-line tool.
+- Bug fixes
 
 <br/>
 </details>
@@ -650,8 +760,9 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **101.03.12**<br>
 
-**What's new** 
-- Performance improvements & bug fixes 
+**What's new**
+
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -660,10 +771,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **101.01.54**<br>
 
-**What's new** 
-- Improvements around compatibility with Time Machine 
-- Accessibility improvements 
-- Performance improvements & bug fixes 
+**What's new**
+
+- Improvements around compatibility with Time Machine
+- Accessibility improvements
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -672,25 +784,27 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **101.00.31** <br>
 
-**What's new** 
-- Improved [product onboarding experience for Intune users](/mem/intune/apps/apps-advanced-threat-protection-macos) 
-- Antivirus [exclusions now support wildcards](mac-exclusions.md#supported-exclusion-types)
-- Added the ability to trigger antivirus scans from the macOS contextual menu. You can now right-click a file or a folder in Finder and select **Scan with Microsoft Defender for Endpoint**. 
-- In-place product downgrades are now explicitly disallowed by the installer. If you need to downgrade, first uninstall the existing version and reconfigure your device. 
-- Other performance improvements & bug fixes 
+**What's new**
+
+- Improved [product onboarding experience for Intune users](/mem/intune/apps/apps-advanced-threat-protection-macos)
+- Antivirus [exclusions now support wildcards](mac-exclusions.md#supported-exclusion-types)
+- Added the ability to trigger antivirus scans from the macOS contextual menu. You can now right-click a file or a folder in Finder and select **Scan with Microsoft Defender for Endpoint**.
+- In-place product downgrades are now explicitly disallowed by the installer. If you need to downgrade, first uninstall the existing version and reconfigure your device.
+- Other performance improvements & bug fixes
 
 <br/>
 </details>
 
 <details><summary>(Build: 100.90.27)</summary>
 
-&ensp;Build: **100.90.27** <br>   
+&ensp;Build: **100.90.27** <br>
 
-**What's new** 
-- You can now [set an update channel](mac-updates.md#set-the-channel-name) for Microsoft Defender for Endpoint on macOS that is different from the system-wide update channel. 
-- New product icon 
-- Other user experience improvements 
-- Bug fixes 
+**What's new**
+
+- You can now [set an update channel](mac-updates.md#set-the-channel-name) for Microsoft Defender for Endpoint on macOS that is different from the system-wide update channel.
+- New product icon
+- Other user experience improvements
+- Bug fixes
 
 <br/>
 </details>
@@ -699,11 +813,12 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 &ensp;Build: **100.86.92**<br>
 
-**What's new** 
-- Improvements around compatibility with Time Machine 
-- Addressed an issue where the product was sometimes not cleaning all files under `/Library/Application Support/Microsoft/Defender` during uninstallation. 
-- Reduced the CPU utilization of the product when Microsoft products are updated through Microsoft AutoUpdate. 
-- Other performance improvements & bug fixes 
+**What's new**
+
+- Improvements around compatibility with Time Machine
+- Addressed an issue where the product was sometimes not cleaning all files under `/Library/Application Support/Microsoft/Defender` during uninstallation.
+- Reduced the CPU utilization of the product when Microsoft products are updated through Microsoft AutoUpdate.
+- Other performance improvements & bug fixes
 
 <br/>
 </details>
@@ -713,12 +828,13 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **100.86.91**<br>
 
 **What's new**
+
 > [!CAUTION]
 > To ensure the most complete protection for your macOS devices and in alignment with Apple stopping delivery of macOS native security updates to OS versions older than [current - 2], MDATP for Mac deployment and updates will no longer be supported on macOS Sierra [10.12]. MDATP for Mac updates and enhancements will be delivered to devices running versions Catalina [10.15], Mojave [10.14], and High Sierra [10.13].
 >
 > If you already have MDATP for Mac deployed to your Sierra [10.12] devices, please upgrade to the latest macOS version to eliminate risks of losing protection.
 
--  Performance improvements & bug fixes 
+- Performance improvements & bug fixes
 
 <br/>
 </details>
@@ -728,10 +844,11 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **100.83.73**<br>
 
 **What's new**
-- Added more controls for IT administrators around [management of exclusions](mac-preferences.md#exclusion-merge-policy), [management of threat type settings](mac-preferences.md#threat-type-settings-merge-policy), and [disallowed threat actions](mac-preferences.md#disallowed-threat-actions). 
-- When Full Disk Access is not enabled on the device, a warning is now displayed in the status menu. 
+
+- Added more controls for IT administrators around [management of exclusions](mac-preferences.md#exclusion-merge-policy), [management of threat type settings](mac-preferences.md#threat-type-settings-merge-policy), and [disallowed threat actions](mac-preferences.md#disallowed-threat-actions).
+- When Full Disk Access is not enabled on the device, a warning is now displayed in the status menu.
 - Performance improvements & bug fixes
- 
+
 <br/>
 </details>
 
@@ -740,9 +857,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **100.82.60** <br>
 
 **What's new**
+
 - Addressed an issue where the product fails to start following a definition update.
 
-<br/> 
+<br/>
 </details>
 
 <details><summary>(Build: 100.80.42)</summary>
@@ -750,9 +868,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **100.80.42**<br>
 
 **What's new**
+
 - Bug fixes
 
-<br/> 
+<br/>
 </details>
 
 <details><summary>(Build: 100.79.42)</summary>
@@ -760,64 +879,70 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 &ensp;Build: **100.79.42**<br>
 
 **What's new**
-- Fixed an issue where Microsoft Defender for Endpoint on Mac was sometimes interfering with Time Machine. 
+
+- Fixed an issue where Microsoft Defender for Endpoint on Mac was sometimes interfering with Time Machine.
 - Added a new switch to the command-line utility for testing the connectivity with the backend service
- 
+
   ```bash
   mdatp connectivity test
   ```
-- Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view). 
+- Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view).
 - Performance improvements & bug fixes
 
 <br/>
 </details>
 
-<details><summary>(Build: 100.72.15)</summary> 
+<details><summary>(Build: 100.72.15)</summary>
 
 &ensp;Build: **100.72.15**<br>
 
 **What's new**
-- Bug fixes 
+
+- Bug fixes
 
 <br/>
 </details>
 
-<details><summary>(Build: 100.70.99)</summary> 
+<details><summary>(Build: 100.70.99)</summary>
 
 &ensp;Build: **100.70.99**<br>
 
 **What's new**
+
 - Addressed an issue that impacts the ability of some users to upgrade to macOS Catalina when real-time protection is enabled. This sporadic issue was caused by Microsoft Defender for Endpoint locking files within Catalina upgrade package while scanning them for threats, which led to failures in the upgrade sequence.
-
-<br/>
-</details> 
-
-<details><summary>(Build: 100.68.99)</summary> 
-
-&ensp;Build: **100.68.99**<br>
-
-**What's new**
-- Added the ability to configure the antivirus functionality to run in [passive mode](mac-preferences.md#enforcement-level-for-antivirus-engine). 
-- Performance improvements & bug fixes 
 
 <br/>
 </details>
 
-<details><summary>(Build: 100.65.28)</summary> 
+<details><summary>(Build: 100.68.99)</summary>
+
+&ensp;Build: **100.68.99**<br>
+
+**What's new**
+
+- Added the ability to configure the antivirus functionality to run in [passive mode](mac-preferences.md#enforcement-level-for-antivirus-engine).
+- Performance improvements & bug fixes
+
+<br/>
+</details>
+
+<details><summary>(Build: 100.65.28)</summary>
 
 &ensp;Build: **100.65.28**<br>
 
 **What's new**
-- Added support for macOS Catalina. 
+
+- Added support for macOS Catalina.
+
 > [!CAUTION]
 > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
-> 
+>
 > The mechanism for granting this consent depends on how you deployed Microsoft Defender for Endpoint:
-> 
-> - For manual deployments, see the updated instructions in the [Manual deployment topic](mac-install-manually.md#how-to-allow-full-disk-access).
-> - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics. 
+>
+> - For manual deployments, see the updated instructions in the [Manual deployment topic](mac-install-manually.md#how-to-allow-full-disk-access).
+> - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
 
-- Performance improvements & bug fixes 
+- Performance improvements & bug fixes
 
 <br/>
 </details>

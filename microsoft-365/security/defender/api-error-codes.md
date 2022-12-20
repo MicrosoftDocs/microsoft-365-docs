@@ -15,7 +15,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+ - m365-security
+ - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -30,6 +32,9 @@ ms.custom: api
 **Applies to:**
 
 - Microsoft 365 Defender
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -94,6 +99,8 @@ If you experience an *InvalidRequestBody* or *MissingRequiredParameter* error, i
 Each error response contains a unique ID parameter for tracking. The property name of this parameter is *target*. When contacting us about an error, attaching this ID will help us find the root cause of the problem.
 
 ## Related articles
+
+- [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Microsoft 365 Defender APIs overview](api-overview.md)
 - [Supported Microsoft 365 Defender APIs](api-supported.md)

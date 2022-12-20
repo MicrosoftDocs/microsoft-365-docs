@@ -21,9 +21,23 @@
 - name: Protect customers with baselines
   items: 
     - name: Overview of using baselines to deploy standard tenant configurations
-      href: m365-lighthouse-deploy-standard-tenant-configurations-overview.md
-    - name: Deploy baselines
-      href: m365-lighthouse-deploy-baselines.md
+      href: m365-lighthouse-deploy-standard-tenant-configurations-overview.md    
+    - name: Overview of deployment tasks
+      href: m365-lighthouse-overview-deployment-task.md
+    - name: Review a deployment plan
+      href: m365-lighthouse-review-deployment-plan.md
+    - name: Understand deployment statuses
+      href: m365-lighthouse-understand-deployment-statuses.md
+    - name: View task details
+      href: m365-lighthouse-view-task-details.md
+    - name: Deploy a task manually
+      href: m365-lighthouse-deploy-task-manually.md
+    - name: Deploy a task automatically
+      href: m365-lighthouse-deploy-task-automatically.md
+    - name: Dismiss a task
+      href: m365-lighthouse-dismiss-task.md
+    - name: Reinstate a task
+      href: m365-lighthouse-reinstate-task.md
 - name: Manage tenants
   items: 
     - name: Overview of the Tenants page
@@ -40,6 +54,8 @@
       href: m365-lighthouse-users-page-overview.md
     - name: Block user sign-in
       href: m365-lighthouse-block-user-signin.md
+    - name: Block sign-in for shared mailbox accounts
+      href: m365-lighthouse-block-signin-shared-mailboxes.md
     - name: Manage inactive users
       href: m365-lighthouse-manage-inactive-users.md
     - name: Manage multifactor authentication

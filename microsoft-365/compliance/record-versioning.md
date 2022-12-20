@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
 - tier1
 - SPO_Content
 search.appverid:
@@ -42,12 +42,14 @@ You can now do the following things:
     > [!NOTE]
     > If the label is configured to unlock the record by default, but versioning is not enabled by the admin, or prevented by the records management setting, users will not be able to unlock the document after they lock it.
 
-- **Have the records automatically stored in an in-place records repository located with the site.** Each site in SharePoint and OneDrive preserves content in its Preservation Hold library. Record versions are stored in the Records folder in this library. For more information about how the Preservation Hold library works, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+- **Have the records automatically stored in an in-place records repository located with the site.** Each site in SharePoint and OneDrive preserves content in its Preservation Hold library. Record versions are stored in the Records folder in this library as individual files. For more information about how the Preservation Hold library works, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 - **Maintain an evergreen document that contains all versions.** By default, each SharePoint and OneDrive document has a version history available on the item menu. In this version history, you can easily see which versions are records and view those documents.
 
 > [!TIP]
 > When you use record versioning with a retention label that has a delete action, consider configuring the retention setting **Start the retention period based on:** to be **When items were labeled**. With this label setting, the start of the retention period is reset for each new record version, which ensures that older versions will be deleted before newer versions.
+
+If the retention label is configured for [disposition review](disposition.md) at the end of the retention period, each version undergoes its own disposition review.
 
 By default, record versioning is automatically available for any document that has a retention label applied that marks the item as a record, and that label is [published to the site](create-apply-retention-labels.md). When a user views the document properties by using the details pane, they can toggle the **Record status** between **Locked** and **Unlocked**.
 
@@ -57,6 +59,8 @@ While the document is unlocked, any user with standard edit permissions can edit
 :::image type="content" alt-text="Record status property on document tagged as a record." source="../media/recordversioning8.png" lightbox="../media/recordversioning8.png":::
 
 For more information about what user actions are allowed when a record is locked or unlocked, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Locking and unlocking a record
 
@@ -92,7 +96,7 @@ To view the version history, select a document in the document library and then 
 
 The actions of locking and unlocking records are logged in the audit log. From **File and page activities**, select **Changed record status to locked** and **Changed record status to unlocked**.
 
-For more information about searching for these events, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+For more information about searching for these events, see [Search the audit log](audit-log-activities.md#file-and-page-activities).
 
 ## Next steps
 

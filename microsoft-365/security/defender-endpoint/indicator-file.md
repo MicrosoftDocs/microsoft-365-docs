@@ -13,8 +13,10 @@ ms.localizationpriority: medium
 ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -168,10 +170,6 @@ Microsoft Defender Vulnerability Management's block vulnerable application featu
 
 ### Examples
 
-<br>
-
-****
-
 |Component|Component enforcement|File indicator Action|Result|
 |---|---|---|---|
 |Attack surface reduction file path exclusion|Allow|Block|Block|
@@ -187,3 +185,4 @@ Microsoft Defender Vulnerability Management's block vulnerable application featu
 - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

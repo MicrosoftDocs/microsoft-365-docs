@@ -13,8 +13,9 @@ ms.localizationpriority: medium
 ms.date: 09/20/2022
 manager: dansimp
 audience: ITPro
-ms.collection:
-- m365-security-compliance
+ms.collection: 
+- m365-security
+- tier3
 ms.topic: reference
 ms.subservice: mde
 ---
@@ -28,6 +29,7 @@ ms.subservice: mde
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
@@ -49,16 +51,19 @@ All updates contain:
 
 **What's new**
 
-- Added a fix to resolve a missing intermediate certificate issue with the use of “TelemetryProxyServer” on Windows Server 2012 R2 running the unified agent.
+- Added a fix to resolve a missing intermediate certificate issue with the use of "TelemetryProxyServer" on Windows Server 2012 R2 running the unified agent.
 - Enhanced Endpoint DLP with ability to protect password protected and encrypted files and not label files.
 - Enhanced Endpoint DLP with support for context data in audit telemetry (short evidence).
 - Improved Microsoft Defender for Endpoint client authentication support for VDI devices.
-- Enhanced Microsoft Defender for Endpoint’s ability to identify and intercept ransomware and advanced attacks.
+- Enhanced Microsoft Defender for Endpoint's ability to identify and intercept ransomware and advanced attacks.
 - The Contain feature now supports more desktop and server versions to perform the Contain action and block discovered devices when these are contained.
 - Expanded the troubleshooting mode feature to additional desktop and server versions. For a complete list of supported OS versions and more information about prerequisites, see [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md).
 - Live Response improvements include reduced session creation latency when using proxies, an undo Remediation manual command, support for OneDrive share in FindFile action, and improved isolation and stability.
 - [Security Management for Microsoft Defender for Endpoint](security-config-management.md#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management) now provides the ability to sync the device configuration on demand instead of waiting for a specific cadence.
 
+ > [!NOTE] 
+ > Update package KB5005292 is on a gradual rollout schedule through Windows Update. Towards the end of this schedule, the package will be published completely, including to the update catalog for manual download. For the current release, this will be in the second half of October. If you want to test the package sooner, you can use [gradual rollout controls for platform updates](configure-updates.md) to select the Preview channel.
+  
 <br/>
 </details>
 

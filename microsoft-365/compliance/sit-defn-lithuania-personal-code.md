@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -23,6 +24,8 @@ description: "Lithuania personal code sensitive information type entity definiti
 
 
 # Lithuania personal code
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 

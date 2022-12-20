@@ -15,9 +15,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-m365-defender
-ms.topic: article
+  - tier1
+ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
 ---
@@ -35,13 +36,12 @@ Advanced hunting is a query-based threat hunting tool that lets you explore up t
 Advanced hunting supports two modes, guided and advanced. Use [guided mode](advanced-hunting-query-builder.md) if you are not yet familiar with Kusto Query Language (KQL) or prefer the convenience of a query builder. Use [advanced mode](advanced-hunting-query-language.md) if you are comfortable using KQL to create queries from scratch. 
 
 **To start hunting, read [Choose between guided and advanced modes to hunt in Microsoft 365 Defender](advanced-hunting-modes.md).**
-<br><br>
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4G6DO]
 
 You can use the same threat hunting queries to build custom detection rules. These rules run automatically to check for and then respond to suspected breach activity, misconfigured machines, and other findings.
 
-This capability is similar to [advanced hunting in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) and supports queries that check a broader data set coming from:
+Advanced hunting supports queries that check a broader data set coming from:
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
@@ -49,6 +49,7 @@ This capability is similar to [advanced hunting in Microsoft Defender for Endpoi
 - Microsoft Defender for Identity
 
 To use advanced hunting, [turn on Microsoft 365 Defender](m365d-enable.md).
+
 
 For more information on advanced hunting in Microsoft Defender for Cloud Apps data, see the [video](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa). 
 
