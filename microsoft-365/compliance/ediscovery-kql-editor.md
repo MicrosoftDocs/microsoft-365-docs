@@ -61,7 +61,7 @@ Additionally, the editor also suggests provides a list of supported operators (s
 
 ![KQL editor suggests operators](../media/KQLEditorOperatorSuggestions.png)
 
-For more information about the supported search properties and operators, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
+For more information about the supported search properties and operators, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md).
 
 ### Property value suggestions
 
