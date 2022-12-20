@@ -165,7 +165,7 @@ This role lets users view a list of items that were returned from a Content Sear
 
 ### Review
 
-This role lets users access review sets in [eDiscovery (Premium)](ediscovery-overview.md). Users who are assigned this role can see and open the list of cases on the **eDiscovery > Advanced** page in the compliance portal that they're members of. After the user accesses an eDiscovery (Premium) case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Users with this role can only access the data in a review set.
+This role lets users access review sets in [eDiscovery (Premium)](ediscovery-overview.md). Users who are assigned this role can see and open the list of cases on the **eDiscovery > Premium** page in the compliance portal that they're members of. After the user accesses an eDiscovery (Premium) case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Users with this role can only access the data in a review set.
 
 ### RMS Decrypt
 
