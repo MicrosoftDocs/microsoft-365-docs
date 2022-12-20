@@ -27,7 +27,7 @@ Welcome to **Step 1** of managing data privacy and data protection with Microsof
 
 ![The steps to manage data privacy and data protection with Microsoft Priva and Microsoft Purview](../media/data-privacy-protection/manage-data-privacy-protection-steps-one.png)
 
-When you begin your data privacy journey, you'll want to first understand what types of personal data you have, how much, where it's stored, and how it flows over time. The best place to start understanding your data is with Microsoft Priva. You'll next want to know which regulations you'll need to comply with. Microsoft Purview Compliance Manager help you identify which data privacy regulations most likely apply to your organization.
+When you begin your data privacy journey, you'll want to first understand what types of personal data you have, how much, where it's stored, and how it flows over time. The best place to start understanding your data is with Microsoft Priva. You'll next want to know which regulations you'll need to comply with. Microsoft Purview Compliance Manager helps you identify which data privacy regulations most likely apply to your organization.
 
 ## Actions to take
 
@@ -38,7 +38,7 @@ When you begin your data privacy journey, you'll want to first understand what t
 
 ## Optimizing your initial setup
 
-Within 48-72 hours of starting Microsoft Priva, you'll start to see insights around personal data display for your organization. On the Priva overview page, you'll see insights on the amount of personal data that exists in your organization, where it lives, and how it moves. These insights are dynamically updated as new data comes in, so you can start to gain a perspective over time on how personal data is evolving in your Microsoft 365 environment to help you quickly spot issues, identify and assess risks, and take action to fix issues. Learn more about [understanding the data presented on the overview page](/privacy/priva/priva-data-profile.md#explore-the-overview-page).
+Within 48-72 hours of starting Microsoft Priva, you'll start to see insights around personal data display for your organization. On the Priva overview page, you'll see insights on the amount of personal data that exists in your organization, where it lives, and how it moves. These insights are dynamically updated as new data comes in. Over time, you can better understand how personal data evolves in your Microsoft 365 environment so you can more quickly spot issues, identify and assess risks, and take action to fix issues. Learn more about [understanding the data presented on the overview page](/privacy/priva/priva-data-profile.md#explore-the-overview-page).
 
  ​Select **Data profile** underneath **Privacy risk management** on the left navigation of the Purview compliance portal. On this page, you can explore and document all the personal data types detected across repositories. Based on this information, you can decide if all the data types you're concerned about are successfully detected. If you find something missing, you can [create custom sensitive information types (SITs)](../compliance/create-a-custom-sensitive-information-type.md) and come back to the data profile page in the next 24-48 hours.
 
@@ -46,7 +46,7 @@ There are three data handling policies in Priva Privacy Risk Management: data ov
 
 ***We recommend [turning off the default policies](/priva/risk-management-policies.md#turn-off-a-policy)*** as you get started. This is because the default policies monitor for personal data based on multiple classification groups (sets of data based on privacy regulations), which can involve a broad array of SITs that may not be relevant to your industry or geographic location. You may also experience a high number of false positives. The result may be that an overwhelming amount of data that's less relevant appears in your data profile and gets factored into your insights. To create a more manageable and accurate view of the personal data you're most concerned with, we suggest setting up a customized policy at first. This also gives you time to become familiar with how policies work and watch for false positives. You can run the policy in test mode and continue to fine tune its settings until it's set up to track exactly what you need.
 
-If the amount of data presented on your overview and data profile pages was large or felt overwhelming at the start, you'll find that turning off the default policies and setting up one or more custom policies may present a more accurate and workable picture of your data estate and current risks.
+If you felt overwhelmed by the amount of data presented on your overview and data profile pages at the start, turning off the default policies and setting up one or more custom policies may present a more accurate and workable picture of your data estate and current risks.
 
 We'll walk you through setting up your first policy in step 2 of this guidance.
 
