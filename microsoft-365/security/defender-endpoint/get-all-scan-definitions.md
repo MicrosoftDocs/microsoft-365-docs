@@ -108,7 +108,7 @@ Here is an example of the response.
 "target": "127.0.0.1", 
 "intervalInHours": 1, 
 "createdBy": "test@contoso.com",
-"targetType": null,
+"targetType": "Ip",
 "scanAuthenticationParams": null,
 "scannerAgent": {
     "id": "47d41a0c-xxx-46d3-bbea-93dbc0bfcaa_1bc268a79eedf14c4b90f77",

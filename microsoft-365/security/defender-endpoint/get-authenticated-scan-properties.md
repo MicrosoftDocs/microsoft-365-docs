@@ -57,13 +57,14 @@ Learn more about [Windows authenticated scan](../defender-vulnerability-manageme
 Property ID|Data type|Description
 :---|:---|:---
 id|String| Scan id.
-scanType|String|The type of scan.
+scanType|Enum|The type of scan. Possible values are: "Windows", "Network",
 scanName|String|Name of the scan.
-isActive|Boolean|Status of the scan.
+isActive|Boolean|Status of whether the scan actively running.
 orgId |String| Related organization id.
-intervalInHours|String |The interval at which the scan will run.
-createdBy|String| Who created the scan.
-targetType|Long|IP target range the scan applies to.
-scanAuthenticationParams|String |Authenticated scan object contains: authentication type string, username string, password string.
-scannerAgent|String|Scanner agent object contains: scanning agent id string, scanning agent device id string, scanning agent device name string, the date and time (in UTC) the device was last seen.
-latestScan|String|Latest scan object contains: scan status string, failure string, the date and time (in UTC) the scan was executed.
+intervalInHours|Int|The interval at which the scan will run.
+createdBy|String| Unique identity of the user that created the scan.
+targetType|String|The target type in the target field. Possible types are "IP Address" or "Hostname". Default value is IP Address.
+target|String| A comma separated list of targets to scan, either IP addresses or hostnames.
+scanAuthenticationParams|Object|Set of authenticated scan objects, contains: authentication type string, username string, password string. See [Get all scan definitions](./get-all-scan-definitions.md).
+scannerAgent|Object|Set of scanner agent objects, contains: scanning agent id string, scanning agent device id string, scanning agent device name string, the date and time (in UTC) the device was last seen. See [Get all scan definitions](./get-all-scan-definitions.md).
+latestScan|Object|Latest scan object contains: scan status string, failure string, the date and time (in UTC) the scan was executed. See [Get all scan definitions](./get-all-scan-definitions.md).

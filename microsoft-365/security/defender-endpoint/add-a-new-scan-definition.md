@@ -90,12 +90,12 @@ ScanDefinitionIds|String|The scan Id. **Required**.
 
 If successful, this method returns 200 - Ok response code and the updated Machine in the response body.
 
-## Add example request
+## Example request to add a new scan
 
 Here is an example of a request that adds a new scan.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/Add
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions
 ```
 
 ```json
@@ -104,7 +104,7 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 }
 ```
 
-## Remove example request
+## Example request to remove a scan
 
 Here is an example of a request that removes a scan.
 
@@ -114,11 +114,11 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
 {
-  "ScanDefinitionIds": "td32f17af-5cc2-4e4e-964a-4c4ef7d216e2",
+  "ScanDefinitionIds": ["td32f17af-5cc2-4e4e-964a-4c4ef7d216e2", "ab32g20af-5dd2-4a5e-954a-4c4ef7d216e2"],
 }
 ```
 
-## Update example request
+## Example request to update a scan
 
 Here is an example of a request that updates a scan.
 
@@ -129,10 +129,11 @@ PATCH https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefini
 
 ```json
 {
-  "ScanDefinitionIds": "td32f17af-5cc2-4e4e-964a-4c4ef7d216e2",
-  "intervalInHours": 8,
-  "isActive": "True"
+"scanType": "Network", 
+"scanName": "Test Network scan", 
+"intervalInHours": 8,
+"isActive": "True",
+"targetType": "Ip",
+"target": "10.5.0.8",
 }
 ```
-
-The following fields can be updated using the API: scanName, isActive, intervalInHours, targetType and scanAuthenticationParams

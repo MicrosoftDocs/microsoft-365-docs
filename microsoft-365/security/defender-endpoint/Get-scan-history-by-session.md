@@ -81,7 +81,7 @@ In the request body, supply a JSON object with the following parameters:
 
 Parameter|Type|Description
 :---|:---|:---
-ScanDefinitionIds |String|The scan Id. **Required**.
+SessionIds |String|The session Id. **Required**.
 
 ## Response
 
@@ -97,6 +97,24 @@ POST https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefi
 
 ```json
 {
-    "ScanDefinitionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae"]
+    "SessionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae"]
 }
+```
+
+## Response example
+
+```json
+{
+"@odata.context": "https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId",
+    "value": [
+    {
+    "SessionId": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
+    "LastScanned": "2022-12-19T15:14:24.5561791Z",
+    "ScanStatus": "Partial Success",
+    "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
+                },
+    ]
+
+}
+
 ```
