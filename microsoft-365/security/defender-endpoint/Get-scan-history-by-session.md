@@ -97,7 +97,7 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
 {
-    "SessionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae"]
+    "SessionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae","c149a9627647443d8fc9d9b28c173cd5","6f05909bb4e146b1b1b029dd6548080d"]
 }
 ```
 
