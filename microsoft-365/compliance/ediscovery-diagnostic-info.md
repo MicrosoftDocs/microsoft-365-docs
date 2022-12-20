@@ -80,7 +80,7 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 The **Settings** tab in an eDiscovery (Premium) case lets you quickly copy the diagnostic information for the case. The diagnostic information is saved to the clipboard so you can paste it into a text file and send it to Microsoft Support.
 
-1. Go to the compliance portal, and select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
+1. Go to the compliance portal, and select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Premium**</a>.
 
 2. Select a case and then click the **Settings** tab.
 
