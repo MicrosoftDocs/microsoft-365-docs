@@ -142,7 +142,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
        :::image type="content" source="../../media/device-control-oma-uri-edit-row.png" alt-text="Set location for file evidence":::
 
-## Scenarios
+## Scenarios (default enforcement)
 
 Here are some common scenarios to help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control. In the following samples, 'Default Enforcement' hasn't been used because the 'Default Enforcement' will apply to both the removable storage and the printer.
 
@@ -263,7 +263,7 @@ This capability is available in the Microsoft Endpoint Manager admin center (<ht
 
 Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
 
-## Scenarios
+## Scenarios (USB devices)
 
 Here are some common scenarios to help you familiarize with Microsoft Defender for Endpoint Removable Storage Access Control. In the following samples, 'Default Enforcement' hasn't been used because the 'Default Enforcement' will apply to both the removable storage and the printer.
 
