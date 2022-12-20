@@ -273,16 +273,16 @@ For this scenario, you need to create two groups - one group for any removable s
 
 1. Create groups: Go to **Endpoint Security** > **Attack Surface Reduction** > **Reusable settings** > **Add**. See **DescriptorIdList** on the [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media | Microsoft Learn](device-control-removable-storage-access-control.md#group)  to get more details.
     a. Group 1: Any removable storage, CD/DVD, and Windows portable devices
-      ![image](https://user-images.githubusercontent.com/81826151/208774115-ab503406-a3c6-4611-b5fa-9e837e731898.png)
-      ![image](https://user-images.githubusercontent.com/81826151/208774136-b63b2268-926f-482a-a509-aab7f8efba02.png)
+      ![removable device settings](https://user-images.githubusercontent.com/81826151/208774115-ab503406-a3c6-4611-b5fa-9e837e731898.png)
+      ![removable device settings continued](https://user-images.githubusercontent.com/81826151/208774136-b63b2268-926f-482a-a509-aab7f8efba02.png)
     b. Group 2: Choose **+ Add** to create another group for ‘Approved USBs’ based on device properties.
-      ![image](https://user-images.githubusercontent.com/81826151/208774190-b700f7cb-0d0e-4d27-955b-23be9c0cb7b5.png)
+      ![adding another group for approved USB devices](https://user-images.githubusercontent.com/81826151/208774190-b700f7cb-0d0e-4d27-955b-23be9c0cb7b5.png)
 2.	Create policy: Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform**: **Windows 10 and later** with **Profile: Device Control**. Select **Device Control**: **Configured**.
    a.	Policy 1: Audit Write and Execute access for allowed USBs.
       Choose **+ Set reusable settings** for **Included ID** and choose **Select**:
-      ![image](https://user-images.githubusercontent.com/81826151/208774439-b46795ce-e9c0-41ec-a3f7-26feefa6b2e7.png)
+      ![auditing settings](https://user-images.githubusercontent.com/81826151/208774439-b46795ce-e9c0-41ec-a3f7-26feefa6b2e7.png)
       Choose **+ Edit Entry** for **Entry**:
-      ![image](https://user-images.githubusercontent.com/81826151/208774532-d8d3f0a0-5ce3-401b-bb8b-2b75383d6cf7.png)
+      ![editing auditing settings](https://user-images.githubusercontent.com/81826151/208774532-d8d3f0a0-5ce3-401b-bb8b-2b75383d6cf7.png)
    b.	Policy 2: Choose + Add to create another policy for ‘Block Write and Execute access for any removable storage group’.
       Choose **+ Set reusable settings** for **Included ID** and choose **Select**:
       ![ID for reusable settings](https://user-images.githubusercontent.com/81826151/208774632-5a568173-c6af-4a64-8236-e0ec5f835147.png)
