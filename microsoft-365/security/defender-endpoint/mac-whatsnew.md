@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 11/07/2022
+ms.date: 11/21/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -63,6 +63,8 @@ The issue impacts Microsoft Defender for endpoint security extensions, and might
 <details>
   <summary>Nov-2022 (Build: 101.87.30  | Release version: 20.122082.18681.0)</summary>
 
+&ensp;Released: **Nov 5, 2022**<br/>
+&ensp;Published: **Nov 5, 2022**<br/>
 &ensp;Build: **101.87.30**<br/>
 &ensp;Release version: **20.122082.18681.0**<br/>
 &ensp;Engine version: **1.1.19700.3**<br/>
@@ -79,6 +81,8 @@ The issue impacts Microsoft Defender for endpoint security extensions, and might
 <details>
   <summary>Oct-2022 (Build: 101.86.81  | Release version: 20.122082.18681.0)</summary>
 
+&ensp;Released: **Oct 25, 2022**<br/>
+&ensp;Published: **Oct 25, 2022**<br/>
 &ensp;Build: **101.86.81**<br/>
 &ensp;Release version: **20.122082.18681.0**<br/>
 &ensp;Engine version: **1.1.19700.3**<br/>
