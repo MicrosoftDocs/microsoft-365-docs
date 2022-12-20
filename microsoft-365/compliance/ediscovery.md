@@ -168,17 +168,17 @@ See the following articles to help you learn more and get started using Microsof
 ### Get started with Content search
 
 - [Search for content using Content search](search-for-content.md)
-- [Create a search](content-search.md)
+- [Create a search](ediscovery-content-search.md)
 
 ### Get started with eDiscovery (Standard)
 
-- [Get started with eDiscovery (Standard)](get-started-core-ediscovery.md)
+- [Get started with eDiscovery (Standard)](ediscovery-standard-get-started.md)
 
 ### Get started with eDiscovery (Premium)
 
-- [Overview of eDiscovery (Premium)](overview-ediscovery-20.md)
-- [Set up eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
-- [Create and manage an eDiscovery (Premium) case](create-and-manage-advanced-ediscoveryv2-case.md)
+- [Overview of eDiscovery (Premium)](ediscovery-overview.md)
+- [Set up eDiscovery (Premium)](ediscovery-premium-get-started.md)
+- [Create and manage an eDiscovery (Premium) case](ediscovery-create-and-manage-cases.md)
 
 ## Integration with Insider Risk Management
 
