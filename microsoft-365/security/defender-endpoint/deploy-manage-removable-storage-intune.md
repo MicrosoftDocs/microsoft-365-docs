@@ -304,16 +304,16 @@ For this scenario, you need to create two groups - one group for any removable s
 2.	Create policy: Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform**: **Windows 10 and later** with **Profile: Device Control**. Select **Device Control**: **Configured**.
    a.	Policy 1: Block unauthorized USBs.
       Choose **+ Set reusable settings** for **Included ID** and choose **Select**:
-      ![image](https://user-images.githubusercontent.com/81826151/208775137-c5a98123-b488-4e1a-9695-9b93b1d8f45b.png)
+      ![Screenshot showing included ID for settings](https://user-images.githubusercontent.com/81826151/208775137-c5a98123-b488-4e1a-9695-9b93b1d8f45b.png)
       Choose **+ Edit Entry** for **Entry**:
-      ![image](https://user-images.githubusercontent.com/81826151/208775203-439bb8b5-e45a-47a7-9828-51ea9d5cfe95.png)
+      ![Screenshot showing editing entry](https://user-images.githubusercontent.com/81826151/208775203-439bb8b5-e45a-47a7-9828-51ea9d5cfe95.png)
    b.	Policy 2: Choose **+ Add** to create another policy for ‘Audit Write and Execute access for any removable storage group’.
       Choose **+ Set reusable settings** for Included ID: and choose Select:
-      ![image](https://user-images.githubusercontent.com/81826151/208775292-485a13e4-533c-4efc-97a4-611786d02fd1.png)
+      ![screenshot showing resuable settings](https://user-images.githubusercontent.com/81826151/208775292-485a13e4-533c-4efc-97a4-611786d02fd1.png)
       Choose **+ Set reusable settings** for **Excluded ID** to exclude authorized USBs and choose **Select**:
-      ![image](https://user-images.githubusercontent.com/81826151/208775330-79c69f54-513e-49b2-8b9f-2fdf8293ee35.png)
+      ![Set resuable settings example](https://user-images.githubusercontent.com/81826151/208775330-79c69f54-513e-49b2-8b9f-2fdf8293ee35.png)
       Choose **+ Edit Entry** for **Entry**:
-      ![image](https://user-images.githubusercontent.com/81826151/208775366-f2cafb54-eb63-4bcd-b0fe-880f3cba2c1b.png)
+      ![Edit entry example](https://user-images.githubusercontent.com/81826151/208775366-f2cafb54-eb63-4bcd-b0fe-880f3cba2c1b.png)
 
 
 
