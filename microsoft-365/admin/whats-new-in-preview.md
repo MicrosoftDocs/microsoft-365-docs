@@ -48,6 +48,62 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## December 2022
+
+### Advanced deployment guides for Microsoft 365
+
+To help you easily find guides for the services you’re deploying, we’ve updated the search tools, recommendations, and layouts for the [Advanced deployment guides & assistance](https://admin.microsoft.com/Adminportal/Home?Q=TechCommunity#/SetupGuidance) page in the Microsoft 365 admin center and at [setup.microsoft.com](https://setup.microsoft.com/).
+
+In this update, you can now:
+
+- Save valuable time by exporting your progress in Excel and share your progress as needed
+- View the most important actions front and center in the Suggested guides section
+- Use tags to notify you when a new or updated guide has been released since your last visit to the page
+
+:::image type="content" source="../media/advanced-deployment-guides.png" alt-text="Advanced deployment guides page in the Microsoft 365 admin center" lightbox="../media/advanced-deployment-guides.png":::
+
+To get to Advanced deployment guides, sign in the Microsoft 365 admin center and go to **Setup** > **Advanced deployment guides & assistance**.
+
+You can now find all the same guides from the Microsoft 365 admin center on [setup.microsoft.com](https://setup.microsoft.com/). Key updates to this site include:  
+
+- Expanded searchability to quickly find guides
+- Better page organization to help you navigate to the right view
+- Addition of all guides previously only available in the Microsoft 365 admin center (early 2023)
+
+We’ve also released a new advanced deployment guide for setting up your [Microsoft Zero Trust security model](https://setup.microsoft.com/purview/zero-trust-setup-guide) and are planning the release of a new guide for Windows 365 Cloud PC configuration in early 2023.
+
+To learn more, see [Simplify deployment of Microsoft 365 with new and updated deployment guides](https://techcommunity.microsoft.com/t5/microsoft-365-blog/simplify-deployment-of-microsoft-365-with-new-and-updated/ba-p/3687463).
+
+## November 2022
+
+### Sentiment per Topic available in the NPS survey insights dashboard
+
+To empower IT Admins like you, the Net Promoter Score (NPS) survey insights dashboard released the new Sentiment per Topic feature under the sentiment section.
+
+With this new feature, you will be able to identify the sentiment that is associated with each topic available. The sentiment is calculated for each NPS feedback comment and tied to a specific topic. With this new addition, you can discover what trending topics your users are talking about and understand the feeling they're experiencing regarding that specific topic.
+
+With the new sentiment per topic feature on the NPS survey insights dashboard, you will be able to:
+
+- Identify the sentiment for each topic
+- Choose between three sentiments: Positive, Negative, Other
+
+Here are the topics available:
+
+- Change Management
+- Collaboration
+- Complexity
+- Navigation
+- Performance
+- Reliability
+- User Education
+- Value
+
+To access the sentiment per topic insights, sign in to the M365 Admin Center and go to **Health** > **Product feedback** > **NPS survey insights tab**.
+
+:::image type="content" source="../media/nps-sentimentpertopic.jpg" alt-text="Screenshot: Sentiment per topic feature in the NPS survey insights dashboard" lightbox="../media/nps-sentimentpertopic.jpg":::
+
+For questions or feedback related to NPS survey insights, contact us at Prosight@microsoft.com.
+
 ## August 2022
 
 ### Date filter in the Net Promoter Score (NPS) survey insights dashboard

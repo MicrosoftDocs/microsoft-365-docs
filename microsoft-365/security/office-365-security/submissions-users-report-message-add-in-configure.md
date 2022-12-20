@@ -6,8 +6,9 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
+ms.reviewer: dhagarwal
 ms.topic: how-to
-
+ms.date: 12/15/2022
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -180,14 +181,14 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 > [!NOTE]
 > It could take up to 24 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center at <https://admin.microsot.com>, go to **Settings** \> **Add-ins**, and select **Deploy Add-In**.
+1. In the Microsoft 365 admin center at <https://portal.office365.us/adminportal>, go to **Organization** \> **Add-ins**, and select **Deploy Add-In**.
 
 2. In the **Deploy a new add-in** flyout that opens, click **Next**, and then select **Upload custom apps**.  
 
 3. Select **I have a URL for the manifest file**. Use the following URLs:
 
    - **Report Message**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml>
-   - **Report Phishing**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml>
+   - **Report Phishing**: <https://ipagave.azurewebsites.net/ReportPhishingManifest/ReportPhishingAzure.xml>
 
 4. Choose which users will have access to the add-in, select a deployment method, and then select **Deploy**.
 

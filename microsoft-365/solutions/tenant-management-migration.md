@@ -3,7 +3,7 @@ title: Step 4. Migration for your Microsoft 365 for enterprise tenants
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium

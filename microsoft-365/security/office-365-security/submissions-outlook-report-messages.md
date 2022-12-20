@@ -73,7 +73,7 @@ Based on the [user reported message settings](submissions-user-reported-messages
 
 ### Use the built-in Report button in Outlook on the web to report messages that aren't junk
 
-In Outlook on the web, select one or messages in the Junk Email folder, click **Report**, and then select **Not junk** in the dropdown list.
+In Outlook on the web, select one or more messages in the Junk Email folder, click **Report**, and then select **Not junk** in the dropdown list.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/owa-report-as-not-junk.png" alt-text="The results of clicking the Report button after selecting multiple messages in the Junk Email folder in Outlook on the web." lightbox="../../media/owa-report-as-not-junk.png":::
