@@ -1,11 +1,11 @@
 ---
-title: "Step 6. Add apps to Intune"
+title: "Step 6. Purchase apps"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Step 6. Add apps to Intune.
+description: Step 6. Purchase apps.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,15 +14,6 @@ ms.custom:
 keywords:
 ---
 
-# Step 6. Add apps to Intune
+# Step 6. Purchase apps
 
 
-## Add apps included with your Intune license
-
-
-
-## Add commonly used apps
-
-
-
-## Add in-house apps

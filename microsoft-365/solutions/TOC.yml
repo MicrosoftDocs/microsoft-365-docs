@@ -421,7 +421,7 @@
           href: apps-type-web.md
         - name: Understand Microsoft apps
           href: apps-type-microsoft.md          
-      - name: Purchase apps
+      - name: Understand app purchases
         items:
         - name: Purchase apps overview
           href: apps-purchase-overview.md
@@ -449,8 +449,10 @@
           href: apps-add-step-4.md
         - name: Step 5. Create categories for apps
           href: apps-add-step-5.md
-        - name: Step 6. Add apps to Intune
+        - name: Step 6. Purchase apps
           href: apps-add-step-6.md
+        - name: Step 7. Add apps to Intune
+          href: apps-add-step-7.md          
 
 - name: Industry-specific guidance
   items: 
