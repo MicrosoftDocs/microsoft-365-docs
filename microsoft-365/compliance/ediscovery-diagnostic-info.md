@@ -76,18 +76,25 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 ## Collect diagnostic information for eDiscovery (Premium)
 
+### Collect case information
+
 The **Settings** tab in an eDiscovery (Premium) case lets you quickly copy the diagnostic information for the case. The diagnostic information is saved to the clipboard so you can paste it to a text file and send to Microsoft Support.
 
 1. Go to the compliance portal, and select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
-
-2. Select a case and then click the **Settings** tab.
-
-3. Under **Case Information**, click **Select**.
-
-4. On the flyout page, click **Actions** > **Copy support information** to copy the information to the clipboard.
-
+2. Select a case and then select the **Settings** tab.
+3. Under **Case Information**, select **Select**.
+4. On the flyout page, select **Actions** > **Copy support information** to copy the information to the clipboard.
 5. Open a text file (in Notepad) and then paste the information in the text file.
+6. Save the text file and name it something like `eDP Diagnostic Info YYYY.MM.DD` (for example, `eDP Diagnostic Info 2020.11.03`).
 
-6. Save the text file and name it something like `AeD Diagnostic Info YYYY.MM.DD` (for example, `AeD Diagnostic Info 2020.11.03`).
+After reviewing the file and redacting sensitive information, send it to the Microsoft Support engineer working on your case.
+
+### Collect job information
+
+1. While in a case, select the **Jobs** tab.
+2. Scroll down to the Job that failed and select it to open the job information pane.
+3. Select **Copy support information** to copy the job diagnostics information to the clipboard.
+4. Open a text file (in Notepad) and then paste the information into the text file.
+5. Save the text file and name it something like `eDP Job Diagnostic Info YYYY.MM.DD` (for example, `eDP Diagnostic Info 2020.11.03`).
 
 After reviewing the file and redacting sensitive information, send it to the Microsoft Support engineer working on your case.
