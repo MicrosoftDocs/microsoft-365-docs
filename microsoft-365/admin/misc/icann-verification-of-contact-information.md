@@ -2,8 +2,8 @@
 title: "ICANN verification of contact information"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: Natalie Kagole
+author: nataliekagole
 manager: scotv
 audience: Admin
 ms.topic: article

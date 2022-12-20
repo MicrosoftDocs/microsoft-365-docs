@@ -2,8 +2,8 @@
 title: "Change nameservers to set up Microsoft 365 with any domain registrar"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: Natalie Kagole
+author: nataliekagole
 manager: scotv
 audience: Admin
 ms.topic: article
