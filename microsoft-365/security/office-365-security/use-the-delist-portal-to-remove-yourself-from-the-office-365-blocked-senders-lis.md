@@ -26,7 +26,7 @@ ms.service: microsoft-365-security
 # Use the delist portal to remove yourself from the blocked senders list and address 5.7.511 Access denied errors
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -72,7 +72,7 @@ There are good reasons for senders to wind up on the blocked senders list, but m
     > [!NOTE]
     > It may take up to 24 hours or results can vary widely before restrictions are removed.
 
-See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-controls.md) to prevent an IP from being blocked.
+See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-protection-about.md) to prevent an IP from being blocked.
 
 ### How to fix error code 5.7.511
  

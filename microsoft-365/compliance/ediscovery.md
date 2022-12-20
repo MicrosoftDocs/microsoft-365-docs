@@ -88,7 +88,7 @@ Here's a description of each eDiscovery capability.
 
 - **Role-based permissions**. Use role-based access control (RBAC) permissions to control what eDiscovery-related tasks that different users can perform. You can use a built-in eDiscovery-related role group or create custom role groups that assign specific eDiscovery permissions.
 
-- **Case management**. eDiscovery cases in eDiscovery (Standard) and eDiscovery (Premium) let you associate specific searches and exports with a specific investigation. You can also assign members to a case to control who can access the case and view the contents of the case.
+- **Case management**. eDiscovery cases in eDiscovery (Standard) and eDiscovery (Premium) let you associate specific searches and exports with a specific investigation. You can also assign members to a case to control who can access the case and view the contents of the case. eDiscovery (Premium) also supports new case creation integration with [Microsoft Purview Insider Risk Management](/microsoft-365/compliance/insider-risk-management) cases.
 
 - **Place content locations on legal hold**. Preserve content relevant to your investigation by placing a legal hold on the content locations in a case. This lets you secure electronically stored information from inadvertent (or intentional) deletion during your investigation.
 
@@ -108,7 +108,7 @@ Here's a description of each eDiscovery capability.
 
 - **Conversation threading**. When chat messages from Teams and Yammer conversations are added to a review set, you can collect the entire conversation thread. This means that the entire chat conversation that contains items that match the collection criteria is added to the review set. This lets you review chat items in the context of the back-and-forth conversation.
 
-- **Collection statistics and reports**. After you create a draft collection or commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results.
+- **Collection statistics and reports**. After you create a collection estimate or commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results.
 
 - **Review set filtering**. After content is added to a review set, you can apply filters to display only the set of items that match your filtering criteria. Then you can save the filter sets as a query, which lets you quickly reapply the saved filters. Review set filtering and saved queries help you quickly select content items that are most relevant to your investigation.
 
@@ -168,17 +168,21 @@ See the following articles to help you learn more and get started using Microsof
 ### Get started with Content search
 
 - [Search for content using Content search](search-for-content.md)
-- [Create a search](content-search.md)
+- [Create a search](ediscovery-content-search.md)
 
 ### Get started with eDiscovery (Standard)
 
-- [Get started with eDiscovery (Standard)](get-started-core-ediscovery.md)
+- [Get started with eDiscovery (Standard)](ediscovery-standard-get-started.md)
 
 ### Get started with eDiscovery (Premium)
 
-- [Overview of eDiscovery (Premium)](overview-ediscovery-20.md)
-- [Set up eDiscovery (Premium)](get-started-with-advanced-ediscovery.md)
-- [Create and manage an eDiscovery (Premium) case](create-and-manage-advanced-ediscoveryv2-case.md)
+- [Overview of eDiscovery (Premium)](ediscovery-overview.md)
+- [Set up eDiscovery (Premium)](ediscovery-premium-get-started.md)
+- [Create and manage an eDiscovery (Premium) case](ediscovery-create-and-manage-cases.md)
+
+## Integration with Insider Risk Management
+
+Cases in [Microsoft Purview Insider Risk Management](https://compliance.microsoft.com/insiderriskmgmt) can be quickly escalated to new cases in Microsoft Purview eDiscovery (Premium) when additional legal review is needed for potentially risky user activity. The tight integration between these solutions can help your risk and legal teams work more efficiently and can help provide a complete end-to-end view of user activities under review. Check out how to [get started with Insider Risk Management](/microsoft-365/compliance/insider-risk-management-configure) and how to easily [escalate an Insider Risk Management case](/microsoft-365/compliance/insider-risk-management-cases#escalate-for-investigation) to an eDiscovery (Premium) case.
 
 ## eDiscovery roadmap
 
