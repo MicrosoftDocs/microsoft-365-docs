@@ -76,7 +76,7 @@ You can perform these manual steps instead:
 
 1. Launch CFA test tool
 2. Select the desired folder and create file
-- You can find more information [here](/security/defender-endpoint/evaluate-controlled-folder-access)
+- You can find more information [here](/microsoft-365/security/defender-endpoint/defender-endpoint/evaluate-controlled-folder-access).
 
 ## Clean-up
 
