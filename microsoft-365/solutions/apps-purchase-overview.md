@@ -34,7 +34,7 @@ Common types of apps to purchase and/or add:
 
 ### Individual store apps
 
-Intune integrates directly with the different supported platform stores. Within Intune, you can find and select free store apps for Windows, iOS, and Android. Intune displays the available store apps directly in the Intune console. When [adding an app to Intune](apps-add-apps.md), you can select each app by platform and choose the users and devices that will receive the app.
+Intune integrates directly with the different supported platform stores. Within Intune, you can find and select free store apps for Windows, iOS, and Android. Intune displays the available store apps directly in the Intune console. When [adding an app to Intune](apps-add-overview.md), you can select each app by platform and choose the users and devices that will receive the app.
 
 > [!NOTE]
 > Intune only shows free store apps. Apps that require a payment method will not be displayed as an available store app from within Intune unless you have a license for the app.

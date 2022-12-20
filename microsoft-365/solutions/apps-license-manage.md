@@ -25,7 +25,6 @@ For more information about purchasing apps in-volume for each platform type, see
 Once you have purchases the licenses as tokens for the apps you want to assign to the members of your organization, you can manage those tokens in Intune. As previously mentioned, Intune provides volume purchased store apps as tokens for each of the following categories:
 - Microsoft Store for Business
 - Apple Apps Store
-- Google Play Store
 
 ### Manage tokens from Microsoft Store for Business
 
@@ -39,10 +38,6 @@ You must create an Apple ID and purchase the app license from Apple. Once you co
 
 > [!NOTE]
 > You can also synchronize, manage, and assign books you purchased from Apple Business Manager with Intune to iOS/iPadOS devices. For more information, see [How to manage iOS/iPadOS eBooks you purchased through a volume-purchase program](/mem/intune/apps/vpp-ebooks-ios).
-
-### Manage tokens from Google Play Store
-
-[Managed Google Play](https://play.google.com/work) is the location to find and purchase apps for the Android devices that are used by members of your organization. Managed Google Play is Google's enterprise app store and sole source of applications for Android Enterprise in Intune. By connecting the Managed Google Play store to Microsoft Intune, you can manage volume-purchased apps directly from Intune.  You can use Intune to orchestrate app deployment through Managed Google Play for any Android Enterprise scenario (including personally-owned work profile, dedicated, fully managed, and corporate-owned work profile enrollments). How you add Managed Google Play apps to Intune differs from how Android apps are added for non-Android Enterprise scenarios. Store apps, line-of-business (LOB) apps, and web apps are approved in or added to Managed Google Play, and then synchronized into Intune so that they appear in the Client Apps list. Once they appear in the Client Apps list, you can manage assignment of any Managed Google Play app as you would any other app. For more information, see [Add Managed Google Play apps to Android Enterprise devices with Intune](/mem/intune/apps/apps-add-android-for-work).
 
 ## View app store connector status
 
