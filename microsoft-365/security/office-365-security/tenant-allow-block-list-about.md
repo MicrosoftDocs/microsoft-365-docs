@@ -24,7 +24,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -109,6 +109,6 @@ After you add an allow entry through the Submissions portal or a block entry in 
 
 We recommend letting entries automatically expire after 30 days to see if the system has learned about the allow or block. If not, you should make another entry to give the system another 30 days to learn.
 
-With **allow expiry management** (currently in Private preview), if Microsoft has not learned from the allow entry, Microsoft will automatically extend the expiry time of allow entries that will soon expire by another 30 days. This extension helps to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from the date of the original creation of the allow entry, Microsoft will remove the allow entry.
+With **allow expiry management**, if Microsoft has not learned from the allow entry, Microsoft will automatically extend the expiry time of allow entries that will soon expire by another 30 days. This extension helps to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from the date of the original creation of the allow entry, Microsoft will remove the allow entry.
 
 If Microsoft has learned from the allow entry, the entry will be removed, and you'll get an alert informing you about it.

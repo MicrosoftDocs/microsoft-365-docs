@@ -46,11 +46,12 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ## Deploy Removable Storage Access Control by using Intune OMA-URI
 
-Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) > **Devices** > **Create profile** > **Platform: Windows 10 and later, Profile type: Templates** > Custom**.
+Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) > **Devices** > **Configuration profiles** > **Create profile** > **Platform: Windows 10 and later, Profile type: Templates** > **Custom** > **Create**.
 
 1. Enable or Disable Device control as follows:
 
-   - Under **Custom** > **Configuration settings**, select **Add**.
+   - Under **Custom**, enter the **Name** and **Description** and select **Next**.
+   - In the **Configuration settings**, select **Add**.
    - In the **Add Row** pane, specify the following settings:
      - **Name** as **Enable Device Control**
      - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
