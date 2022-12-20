@@ -61,7 +61,7 @@ After one or more communications templates are created in the Communications lib
 
 To select a template:
 
-1. In the compliance portal, go to **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the compliance portal, go to **eDiscovery > Premium** to display the list of cases in your organization.
 
 2. Select a case, click the **Communications** tab, and then click **New communication**.
 
