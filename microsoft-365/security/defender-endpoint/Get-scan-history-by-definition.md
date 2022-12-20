@@ -100,6 +100,7 @@ POST https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefi
     "ScanDefinitionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae"]
 }
 ```
+
 ## Response example
 
 ```json
@@ -115,3 +116,5 @@ POST https://api-us.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefi
     ]
 
 }
+
+```

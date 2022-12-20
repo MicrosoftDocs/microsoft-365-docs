@@ -57,7 +57,7 @@ Learn more about [Windows authenticated scan](../defender-vulnerability-manageme
 Property ID|Data type|Description
 :---|:---|:---
 id|String| Scan id.
-scanType|Enum|The type of scan. Possible values are: "Windows", "Network",
+scanType|Enum|The type of scan. Possible values are: "Windows", "Network".
 scanName|String|Name of the scan.
 isActive|Boolean|Status of whether the scan actively running.
 orgId |String| Related organization id.

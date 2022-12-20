@@ -100,7 +100,14 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
 {
-  "ScanDefinitionIds": "td32f17af-5cc2-4e4e-964a-4c4ef7d216e2",
+"id": "60c4vv57-c173-4478-8d58-23091d79ec9d", 
+"scanType": "Network", 
+"scanName": "Test Network scan", 
+"isActive": true, 
+"target": "127.0.0.1", 
+"intervalInHours": 1, 
+"targetType": "Ip",
+"scanAuthenticationParams": null,
 }
 ```
 
