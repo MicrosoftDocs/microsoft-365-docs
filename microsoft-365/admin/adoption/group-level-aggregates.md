@@ -67,9 +67,9 @@ Currently, we provide capabilities for five attributes in Azure AD:
 
 - Country
 
-- State and Country
+- State
 
-- City, State, and Country
+- City
 
 :::image type="content" source="../../media/group-level-aggregates-data-evaluation.png" alt-text="Screenshot: Group-level data evaluation report.":::
 

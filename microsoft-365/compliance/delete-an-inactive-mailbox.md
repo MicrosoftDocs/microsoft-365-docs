@@ -26,16 +26,13 @@ description: When you no longer need to preserve the contents of a Microsoft 365
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-When you no longer need to preserve the contents of an [inactive mailbox](inactive-mailboxes-in-office-365.md), you can permanently delete the mailbox by removing all holds on it. Then, the inactive mailbox is marked for deletion and permanently deleted after it's processed.
+When you no longer need to keep the contents of an [inactive mailbox](inactive-mailboxes-in-office-365.md), you can permanently delete the mailbox by removing all holds on it. Then, the inactive mailbox is automatically marked for deletion and permanently deleted after it's processed.
 
 Holds can be any of the following:
 
 - [Microsoft 365 retention policies and labels](retention.md) with retain or retain and delete settings
-
 - A hold associated with an [eDiscovery](ediscovery.md) case
-
-- [Litigation hold](create-a-litigation-hold.md)
-
+- [Litigation hold](ediscovery-create-a-litigation-hold.md)
 - An [In-Place Hold](/exchange/security-and-compliance/in-place-and-litigation-holds#placing-a-mailbox-on-in-place-hold)
 
 > [!IMPORTANT]
@@ -43,9 +40,9 @@ Holds can be any of the following:
 >
 > - eDiscovery holds are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed (or deleted). If a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and the hold is released or the eDiscovery case is closed or deleted, the inactive mailbox will be permanently deleted.
 >
-> - In-Place Holds in the Exchange admin center are now retired. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
+> - In-Place Holds in the Exchange admin center are now retired. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](ediscovery-legacy-retirement.md).
 >
-> - [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
+> - [Litigation hold](ediscovery-create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
 
 See the [More information](#more-information) section for a description of what happens after holds are removed from an inactive mailbox.
   
@@ -57,24 +54,26 @@ See the [More information](#more-information) section for a description of what 
 
 - Identify the holds on an inactive mailbox by using the instructions from [Step 1: Identify the holds on an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox). You'll need this information to know which holds to remove, and identifying information.
 
-- Consider whether you want to copy the contents of an inactive mailbox to another mailbox before you remove the final hold that will result in the deletion of the inactive mailbox. For details, see [Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md).
+- Consider whether you want to copy the contents of an inactive mailbox to another mailbox before you remove the final hold that will result in the deletion of the inactive mailbox. For details, see [Restore an inactive mailbox](restore-an-inactive-mailbox.md).
 
 - Be aware that if you remove the final hold from an inactive mailbox the mailbox will be permanently deleted after the 30-day soft-deleted mailbox retention period expires. After the inactive mailbox is permanently deleted, it can't be recovered. Before you remove a hold, be sure that you no longer need the contents in the mailbox. If you want to reactivate an inactive mailbox, you can recover it. For details, see [Recover an inactive mailbox](recover-an-inactive-mailbox.md).
 
 - For more information about inactive mailboxes, see [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
 
-## How to remove a hold from an inactive mailbox
+## How to delete an inactive mailbox by removing holds
 
-After you've [identified what type of hold is placed on the inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox) and whether there are multiple holds, you can remove the holds on the mailbox. Remember, you must remove all holds to permanently delete an inactive mailbox.
+After you've [identified what type of hold is placed on the inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md#step-1-identify-the-holds-on-an-inactive-mailbox) and whether there are multiple holds, you can remove the holds on the mailbox. An exception is if the inactive mailbox has one or more retention labels configured to retain items. In this case, you can't remove the hold.
+
+When the last hold is removed, no further action is required from you because the inactive mailbox will be [automatically deleted](#automatic-deletion).
 
 Use the instructions for the type of hold you need to remove:
 
 - [Remove an inactive mailbox from a retention policy](#remove-an-inactive-mailbox-from-a-retention-policy)
-- [Remove an eDiscovery hold](#remove-an-ediscovery-hold)
-- [Remove a Litigation hold](#remove-a-litigation-hold)
-- [Remove an In-Place Hold](#remove-an-in-place-hold)
+- [Remove an inactive mailbox from an eDiscovery hold](#remove-an-inactive-mailbox-from-an-ediscovery-hold)
+- [Remove Litigation hold from an inactive mailbox](#remove-a-litigation-hold-from-an-inactive-mailbox)
+- [Remove an In-Place Hold from an inactive mailbox](#remove-an-in-place-hold-from-an-inactive-mailbox)
 
-> [!NOTE]
+> [!CAUTION]
 > The instructions require you to specify an identity for the inactive mailbox. The best way to do this is by using its Distinguished Name or Exchange GUID value. Using one of these values helps prevent accidentally specifying the wrong mailbox.
 
 ### Remove an inactive mailbox from a retention policy
@@ -125,11 +124,11 @@ Run the following [Security & Compliance PowerShell](/powershell/exchange/connec
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>
 ```
 
-### Remove an eDiscovery hold
+### Remove an inactive mailbox from an eDiscovery hold
 
-See [Removing content locations from an eDiscovery hold](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
+See [Removing content locations from an eDiscovery hold](ediscovery-create-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
-### Remove a Litigation hold
+### Remove a Litigation hold from an inactive mailbox
 
 Run the following PowerShell command to remove a Litigation hold from a mailbox:
   
@@ -137,7 +136,7 @@ Run the following PowerShell command to remove a Litigation hold from a mailbox:
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
 ```
 
-### Remove an In-Place Hold
+### Remove an In-Place Hold from an inactive mailbox
 
 There are two ways to remove an In-Place Hold from an inactive mailbox:
   
@@ -221,11 +220,11 @@ when you run the following commands, you'll see a warning that the Get-MailboxSe
 
 - **An inactive mailbox is a type of soft-deleted mailbox.** In Exchange Online, a soft-deleted mailbox is a mailbox that's been deleted but can be recovered within a specific retention period. For soft-deleted mailboxes that aren't on hold, the mailbox is recoverable within 30 days. An inactive mailbox (a mailbox on hold before it was deleted) will remain in a soft-deleted with hold state until the hold is removed. After the hold is removed from an inactive mailbox, the mailbox will no longer be in an inactive state. Instead it will become soft-deleted and remain in Exchange Online for 30 days from the day the hold was removed and recoverable during that time. After 30 days, a soft-deleted mailbox is marked for permanent deletion and can't be recovered.
 
-- **What happens after you remove the hold on an inactive mailbox?** The mailbox is treated like other soft-deleted mailboxes and is marked for permanent deletion after the 30-day soft-deleted mailbox retention period expires. This retention period starts on the date when the hold is removed from the inactive mailbox. The *InactiveMailboxRetireTime* property is set when the mailbox transitions from being inactive (soft-deleted on hold) to no longer being inactive (soft-deleted with no holds). At that point, the *InactiveMailboxRetireTime* property is set to the current date when the transition occurred. There is an assistant that runs (called the *MailboxLifeCycle* assistant) that looks for mailboxes that have the *InactiveMailboxRetireTime* property set. If "InactiveMailboxRetireTime + 30 days" is less than the current date, then it will purge the mailbox.
+- <a name="automatic-deletion"></a>**What happens after you remove the last hold on an inactive mailbox?** The mailbox is treated like other soft-deleted mailboxes and is marked for permanent deletion after the 30-day soft-deleted mailbox retention period expires. This retention period starts on the date when the last hold is removed from the inactive mailbox. The *InactiveMailboxRetireTime* property is set when the mailbox transitions from being inactive (soft-deleted on hold) to no longer being inactive (soft-deleted with no holds). At that point, the *InactiveMailboxRetireTime* property is set to the current date when the transition occurred. There is an assistant that runs (called the *MailboxLifeCycle* assistant) that looks for mailboxes that have the *InactiveMailboxRetireTime* property set. If "InactiveMailboxRetireTime + 30 days" is less than the current date, then it will purge the mailbox.
 
-- **Is an inactive mailbox permanently deleted immediately after the hold is removed?** A formerly inactive mailbox will be available in the soft-deleted state for 30 days. After 30 days, the mailbox will be marked for permanent deletion.
+- **Is an inactive mailbox permanently deleted immediately after all holds are removed?** A formerly inactive mailbox will be available in the soft-deleted state for 30 days. After 30 days, the mailbox will be marked for permanent deletion.
 
-- **How do you display information about an inactive mailbox after the hold is removed?** After a hold is removed and the inactive mailbox is reverted back to a soft-deleted mailbox, it won't be returned by using the  *InactiveMailboxOnly*  parameter with the **Get-Mailbox** cmdlet. But you can display information about the mailbox by using the **Get-Mailbox -SoftDeletedMailbox** command. For example:
+- **How do you display information about an inactive mailbox after all holds are removed?** After all holds are removed and the inactive mailbox is reverted back to a soft-deleted mailbox, it won't be returned by using the  *InactiveMailboxOnly*  parameter with the **Get-Mailbox** cmdlet. But you can display information about the mailbox by using the **Get-Mailbox -SoftDeletedMailbox** command. For example:
 
   ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
@@ -234,10 +233,10 @@ when you run the following commands, you'll see a warning that the Get-MailboxSe
   Identity               : Soft Deleted Objects\pilarp
   LitigationHoldEnabled  : False
   InPlaceHolds           : {}
-  WhenSoftDeleted        : 6/16/2020 1:19:04 AM
+  WhenSoftDeleted        : 6/16/2022 1:19:04 AM
   IsInactiveMailbox      : False
   WasInactiveMailbox     : True
-  InactiveMailboxRetireTime : 9/30/2020 11:16:23 PM
+  InactiveMailboxRetireTime : 9/30/2022 11:16:23 PM
   ```
 
-  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2020. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 183 days after September 30, 2020.
+  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2022. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 183 days after September 30, 2022.
