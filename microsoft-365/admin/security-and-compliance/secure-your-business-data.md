@@ -1,5 +1,5 @@
 ---
-title: Top 10 ways to secure your business
+title: Top 10 ways to secure your business data
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -8,8 +8,8 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
-ms.subservice: other
-ms.date: 09/15/2022
+ms.subservice: m365bp
+ms.date: 12/16/2022
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -74,7 +74,7 @@ The following table compares capabilities in Microsoft 365 for business plans.
 | **Outlook and Web/mobile versions of Office apps** <br/>Word, Excel, and PowerPoint | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Desktop versions of Office apps**<br/>Word, Excel, PowerPoint, Publisher, and Access <sup>[[See note 1](#fn1)]</sup> |  | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Secure communication, collaboration, and file storage**<br/>Microsoft Teams, Exchange, OneDrive, and SharePoint | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| **Antispam, antiphishing, and antimalware protection** for email <br/>[Exchange Online Protection](../../security/office-365-security/exchange-online-protection-overview.md) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| **Antispam, antiphishing, and antimalware protection** for email <br/>[Exchange Online Protection](../../security/office-365-security/eop-about.md) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Mobile device management** and mobile app management <br/>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) | See note <sup>[[2](#fn2)]</sup> | See note <sup>[[2](#fn2)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Advanced device security** with next-generation protection, firewall, attack surface reduction, automated investigation and response, and more <br/>[Defender for Business](../../security/defender-business/mdb-overview.md) | See note <sup>[[3](#fn3)]</sup>  | See note <sup>[[3](#fn3)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | **Advanced protection for email and documents** with advanced anti-phishing, Safe Links, Safe Attachments, and real-time detections<br/>[Microsoft Defender for Office 365 Plan 1](../../security/office-365-security/defender-for-office-365.md) | See note <sup>[[4](#fn4)]</sup> | See note <sup>[[4](#fn4)]</sup> | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 

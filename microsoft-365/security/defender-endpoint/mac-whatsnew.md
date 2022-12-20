@@ -43,6 +43,24 @@ The issue impacts Microsoft Defender for endpoint security extensions, and might
 > To mitigate the risk with this issue, make sure that [Microsoft Defender for Endpoint has Full Disk Access Authorization](mac-install-manually.md).
 
 <details>
+  <summary>Dec-2022 (Build: 101.90.97  | Release version: 20.122102.19097.0)</summary>
+
+&ensp;Build: **101.90.97**<br/>
+&ensp;Release version: **20.122102.19097.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.381.202.0**<br/>
+
+**What's new**
+
+- Scanning optimization for move file operations
+- Adding exclusions from command line now requires admin privileges
+- Decrease sysextd noise from Tamper Protection in Advanced Hunting
+- Bug and performance fixes
+
+<br/>
+</details>
+
+<details>
   <summary>Nov-2022 (Build: 101.87.30  | Release version: 20.122082.18681.0)</summary>
 
 &ensp;Released: **Nov 5, 2022**<br/>
