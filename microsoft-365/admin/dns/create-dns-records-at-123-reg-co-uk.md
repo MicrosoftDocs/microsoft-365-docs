@@ -2,7 +2,7 @@
 title: "Connect your DNS records at 123-reg.co.uk to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: Natalie Kagole
+ms.author: nkagole
 author: nataliekagole
 manager: scotv
 audience: Admin

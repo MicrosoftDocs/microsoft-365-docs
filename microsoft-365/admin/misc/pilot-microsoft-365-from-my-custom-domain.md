@@ -2,7 +2,7 @@
 title: "Pilot Microsoft 365 from my custom domain"
 f1.keywords:
 - CSH
-ms.author: Natalie Kagole
+ms.author: nkagole
 author: nataliekagole
 manager: scotv
 audience: Admin

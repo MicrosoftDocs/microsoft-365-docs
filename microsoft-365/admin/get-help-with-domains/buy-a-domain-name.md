@@ -2,7 +2,7 @@
 title: "Buy a domain name"
 f1.keywords:
 - NOCSH
-ms.author: Natalie Kagole
+ms.author: nkagole
 author: nataliekagole
 manager: scotv
 audience: Admin

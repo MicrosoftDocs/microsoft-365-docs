@@ -2,7 +2,7 @@
 title: "Create DNS records for Office 365 when you manage your DNS records"
 f1.keywords:
 - CSH
-ms.author: Natalie Kagole
+ms.author: nkagole
 author: nataliekagole
 manager: scotv
 audience: Admin
