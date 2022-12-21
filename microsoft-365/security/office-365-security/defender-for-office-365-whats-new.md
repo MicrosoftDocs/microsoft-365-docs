@@ -116,7 +116,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## October 2021
 
-- [Advanced Delivery DKIM enhancement](skip-filtering-phising-simulations-sec-ops-mailboxes.md): Added support for DKIM domain entry as part of third-party phishing simulation configuration.
+- [Advanced Delivery DKIM enhancement](skip-filtering-phishing-simulations-sec-ops-mailboxes.md): Added support for DKIM domain entry as part of third-party phishing simulation configuration.
 - [Secure by Default](secure-by-default.md): Extended Secure by Default for Exchange mail flow rules (also known as transport rules).
 
 ## September 2021
@@ -139,7 +139,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## July 2021
 
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
-- [Advanced Delivery](skip-filtering-phising-simulations-sec-ops-mailboxes.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
+- [Advanced Delivery](skip-filtering-phishing-simulations-sec-ops-mailboxes.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
 - [Safe Links for Microsoft Teams](safe-links-about.md#safe-links-settings-for-microsoft-teams)
 - New alert policies for the following scenarios: compromised mailboxes, Forms phishing, malicious mails delivered due to overrides and rounding out ZAP
   - Suspicious email forwarding activity
