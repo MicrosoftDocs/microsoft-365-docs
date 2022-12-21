@@ -2692,7 +2692,7 @@
     },
     {
       "source_path": "microsoft-365/compliance/prevent-email-from-being-marked-as-spam.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": false
     },
     {
@@ -2827,22 +2827,22 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/fighting-junk-email.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/reduce-spam-email.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-an-administrator.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files",
       "redirect_document_id": false
     },
     {
@@ -2877,12 +2877,12 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/troubleshooting-and-support-information.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure",
       "redirect_document_id": false
     },
     {
@@ -2957,8 +2957,8 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/malicious-files-detected-in-spo-odb-or-teams.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/mdo-for-spo-odb-and-teams",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-anti-phishing.md",
@@ -3057,8 +3057,8 @@
     },
     {
       "source_path": "./office-365-security/manage-recipients-and-admin-role-groups-in-eop.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/manage-recipients-in-eop",
-      "redirect_document_id": true
+      "redirect_url": "/exchange/standalone-eop/manage-recipients-in-eop",
+      "redirect_document_id": false
     },
     {
       "source_path": "./office-365-security/how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md",
@@ -3067,17 +3067,17 @@
     },
     {
       "source_path": "./office-365-security/what-is-eop.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/exchange-online-protection-overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/eop-about",
       "redirect_document_id": true
     },
     {
       "source_path": "./office-365-security/block-email-spam-in-EOPStandalone.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": true
     },
     {
       "source_path": "./office-365-security/exchange-online-protection-eop.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/exchange-online-protection-overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/eop-about",
       "redirect_document_id": true
     },
     {
@@ -3227,7 +3227,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/mfi-sender-domain-insight.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/mfi-non-accepted-domain-report",
+      "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-non-accepted-domain-report",
       "redirect_document_id": false
     },
     {
@@ -3886,9 +3886,9 @@
       "redirect_document_id": false
     },
     {
-    "source_path": " microsoft-365/admin/security-and-compliance/multi-factor-authentication-plan.md",
-    "redirect_url": " /microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365",
-    "redirect_document_id": true
+      "source_path": "microsoft-365/admin/security-and-compliance/multi-factor-authentication-plan.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/compliance/compliance-manager-overview.md",
@@ -5682,7 +5682,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/eop-features.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/exchange-online-protection-overview#eop-features",
+      "redirect_url": "/microsoft-365/security/office-365-security/eop-about#eop-features",
       "redirect_document_id": false
     },
     {
@@ -6237,7 +6237,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/safety-tips-in-office-365.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": false
     },
     {
@@ -6327,13 +6327,13 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/enable-the-report-message-add-in",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure",
       "redirect_document_id": false
     },
     {
-     "source_path": "microsoft-365/security/office-365-security/enable-the-report-phish-add-in.md",
-     "redirect_url": "/microsoft-365/security/office-365-security/enable-the-report-message-add-in",
-     "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/enable-the-report-phish-add-in.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/quarantine-tags.md",
@@ -7331,9 +7331,9 @@
       "redirect_document_id": true
    },
    {
-     "source_path": "microsoft-365/learning/linkedin-learning.md",
-     "redirect_url": "/microsoft-365/learning/content-sources-365-admin-center",
-     "redirect_document_id": true
+      "source_path": "microsoft-365/learning/linkedin-learning.md",
+      "redirect_url": "/microsoft-365/learning/content-sources-365-admin-center",
+      "redirect_document_id": true
    },
     {
       "source_path": "microsoft-365/commerce/pay/zimbabwe.md",
@@ -8246,9 +8246,9 @@
       "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
-    "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
-    "redirect_document_id": true
+      "source_path": "microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
+      "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/office-365-security/alerts.md",
@@ -8267,103 +8267,103 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
+      "redirect_url": "/microsoft-365/compliance/compliance-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
+      "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/compliance-manager-and-the-gdpr.md",
+      "redirect_url": "/microsoft-365/compliance/compliance-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/secure-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": true
     },
     {
-    "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
-    "redirect_url": "/microsoft-365/compliance/compliance-manager",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/app-protection-settings-for-android-and-ios.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
-    "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/add-autopilot-devices-and-profile.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/compliance/compliance-manager-and-the-gdpr.md",
-    "redirect_url": "/microsoft-365/compliance/compliance-manager",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/autopilot-profile-settings.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-autopilot-profile-settings",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/misc/secure-windows-10-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
-    "redirect_document_id": true
+      "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/app-protection-settings-for-android-and-ios.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/device-states.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-device-states",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/add-autopilot-devices-and-profile.md",
-    "redirect_url": "/mem/autopilot/windows-autopilot",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/map-protection-features-to-intune-settings.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/autopilot-profile-settings.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-autopilot-profile-settings",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/remove-company-data.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-remove-company-data",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/device-states.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-device-states",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/reset-devices-to-factory-settings.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/map-protection-features-to-intune-settings.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/view-policies-and-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/misc/prepare-for-office-client-deployment.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/remove-company-data.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-remove-company-data",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/security-and-compliance/pre-requisites-for-data-protection.md",
+      "redirect_url": "/microsoft-365/business-premium/index",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/reset-devices-to-factory-settings.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/setup/manage-windows-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-manage-windows-devices",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/view-policies-and-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/misc/prepare-for-office-client-deployment.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
-    "redirect_document_id": false
-    },
-    {
-    "source_path": "microsoft-365/admin/security-and-compliance/pre-requisites-for-data-protection.md",
-    "redirect_url": "/microsoft-365/business-premium/index",
-    "redirect_document_id": false
-    },
-    {
-    "source_path": "microsoft-365/admin/setup/manage-windows-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-manage-windows-devices",
-    "redirect_document_id": false
-    },
-    {
-    "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-pcs.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-    "redirect_document_id": false
-    },
-    {
-    "source_path": "microsoft-365/admin/security-and-compliance/set-up-compliance.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/security-and-compliance/set-up-compliance.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/lighthouse/m365-lighthouse-set-up-roles.md",
@@ -8982,23 +8982,23 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/manage-tenant-blocks.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/manage-tenant-allows.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/modify-remove-entries-tenant-allow-block.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-about",
       "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/security/office-365-security/tenant-allow-block-list.md",
-    "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/tenant-allow-block-list.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-about",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/privileged-access-management-overview.md",
@@ -9131,9 +9131,9 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "microsoft-365/security/office-365-security/security-roadmap.md",
-        "redirect_url": "/microsoft-365/security/office-365-security/overview",
-        "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/security-roadmap.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/old-index.md",
@@ -9141,19 +9141,19 @@
       "redirect_document_id": false
   },
   {
-    "source_path": "microsoft-365/security/office-365-security/reporting-and-message-trace-in-exchange-online-protection.md",
-    "redirect_url": "/microsoft-365/security/office-365-security/message-trace-scc.md",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/reporting-and-message-trace-in-exchange-online-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/message-trace-scc.md",
+      "redirect_document_id": false
   },
   {
-    "source_path": "microsoft-365/security/office-365-security/security-dashboard.md",
-    "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/security-dashboard.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
+      "redirect_document_id": false
   },
   {
-    "source_path": "microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance.md",
-    "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
+      "redirect_document_id": false
   },
   {
       "source_path": "microsoft-365/business-premium/m365bp-ms-partner.md",
@@ -9607,7 +9607,12 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-advanced-delivery.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/skip-filtering-phising-simulations-sec-ops-mailboxes",
+      "redirect_url": "/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/skip-filtering-phising-simulations-sec-ops-mailboxes.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes",
       "redirect_document_id": true
     },
     {
