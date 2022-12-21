@@ -10279,6 +10279,16 @@
       "source_path": "microsoft-365/compliance/what-is-stored-in-exo-mailbox.md",
       "redirect_url": "/microsoft-365/compliance/ediscovery-what-is-stored-in-a-mailbox",
       "redirect_document_id": false
-    }
-   ]
+    },
+    {
+      "source_path": "microsoft-365/security/defender/microsoft-threat-experts.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/security/defender/configure-microsoft-threat-experts.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications",
+      "redirect_document_id": false
+  }
+ ]
   }
