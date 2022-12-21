@@ -166,7 +166,7 @@ As for the connector itself, you don't need to worry about upgrades or maintenan
 
 The Reflexis Shifts connector for Microsoft Teams is hosted and managed by Zebra. With this connector, you can integrate Shifts with Reflexis Workforce Management (WFM) to manage your schedules and keep them up to date.
 
-Frontline workers have access to their schedule in Shifts in Teams, and their requests are synchronized from Shifts to Reflexis WFM. The status of requests and shifts created in WFM are synced to Shifts in Teams. This solution is available in WFM versions 4.3.2, 4.4, and 4.5.
+Frontline workers have access to their schedule in Shifts in Teams, and their requests are synchronized from Shifts to Reflexis WFM. The status of requests and shifts created in Reflexis WFM are synced to Shifts in Teams. This solution is available in Reflexis WFM versions 4.3.2, 4.4, and 4.5.
 
 To learn more, go to <https://connect.zebra.com/microsoft-connectors>.
 
