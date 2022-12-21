@@ -88,7 +88,7 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
 
     - Select  **Add** conditions to add one or more conditions to narrow the search query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example, you can specify a date range so that email or site documents that were created within the date ranged are placed on hold. A condition is logically connected to the keyword query (specified in the keyword box) by the AND operator. That means that items have to satisfy both the keyword query and the condition to be placed on hold.
 
-     For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search](/office365/SecurityCompliance/keyword-queries-and-search-conditions).
+     For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search](/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions).
 
 11. After configuring a query-based hold, select **Next**.
 
