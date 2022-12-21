@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Purview compliance solutions free trial"
+title: "Free trial - Microsoft Purview compliance solutions"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
