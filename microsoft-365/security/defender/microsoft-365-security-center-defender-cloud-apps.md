@@ -132,6 +132,19 @@ Global search in Microsoft 365 Defender (using the search bar at the top of the 
 
 As part of the creation of a dedicated **Assets** section that spans the entire Microsoft 365 Defender experience, the **Users and Accounts** section of Defender for Cloud Apps is rebranded as the **Identities** section. No changes to functionality are expected.
 
+### Preview features in Defender for Cloud Apps
+
+Turn on the preview experience setting to be among the first to try upcoming features.
+
+1. In the navigation pane, select **Settings**.
+1. Select **Cloud apps**.
+1. Select **Preview features** > **Enable preview features**.
+1. Select **Save**.
+
+You'll know you have preview features turned on when you see that the **Enable preview features** check box is selected.
+
+:::image type="content" source="../../media/preview-features.png" alt-text="Enable preview features.":::
+
 ## Related videos
 
 Learn how to protect your cloud apps in Microsoft 365 Defender:
