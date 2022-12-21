@@ -16,7 +16,7 @@ ms.collection:
 
 <!---
 IMPORTANT!
-Do not edit or republish this article without express approval from CELA and the content PM Tracy Tughan (tratug@microsoft.com).
+The content in this topic is CELA-reviewed and affects Microsoft legal obligations. Do not edit or republish this article without express approval from the E+D Subprocessor Governance team (EDSUBGOV@microsoft.com).
 -->
 
 # Locations of Microsoft Online Services Personnel with Remote Access to Data
