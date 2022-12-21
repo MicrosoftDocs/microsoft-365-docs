@@ -135,7 +135,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ## Step 8: Verify the case, hold, and search in the compliance portal
 
-To make sure that everything is set up correctly, go to the compliance portal at [https://compliance.microsoft.com](https://compliance.microsoft.com), and click **eDiscovery > Core**.
+To make sure that everything is set up correctly, go to the compliance portal at [https://compliance.microsoft.com](https://compliance.microsoft.com), and select **eDiscovery > Core**.
 
 ![Microsoft Purview compliance portal eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
 

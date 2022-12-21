@@ -342,13 +342,13 @@ These operations in the Exchange Web Services API are used by the In-Place eDisc
 
 ## eDiscovery (Premium) v1.0
 
-eDiscovery (Premium) v1.0, which is the version of eDiscovery (Premium) available in a eDiscovery (Standard) case by clicking **Switch to eDiscovery (Premium)**, is being retired. Its functionality has been replaced by the new [eDiscovery (Premium) solution](./ediscovery.md) in the compliance portal.
+eDiscovery (Premium) v1.0, which is the version of eDiscovery (Premium) available in a eDiscovery (Standard) case by selecting **Switch to eDiscovery (Premium)**, is being retired. Its functionality has been replaced by the new [eDiscovery (Premium) solution](./ediscovery.md) in the compliance portal.
 
 To determine if your organization is using eDiscovery (Premium) v1.0:
 
 1. Go to the compliance portal, select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>, and open a eDiscovery (Standard) case.
 
-1. If you see the **Switch to eDiscovery (Premium)** button, then clicking it will take you to the 1.0 version of eDiscovery (Premium), which is being retired. The ability to create and manage cases in eDiscovery (Standard) won't be affected. Only the ability to add and analyze case data in eDiscovery (Premium) v1.0 (by clicking **Switch to eDiscovery (Premium)**) is being retired.
+1. If you see the **Switch to eDiscovery (Premium)** button, then selecting it will take you to the 1.0 version of eDiscovery (Premium), which is being retired. The ability to create and manage cases in eDiscovery (Standard) won't be affected. Only the ability to add and analyze case data in eDiscovery (Premium) v1.0 (by selecting **Switch to eDiscovery (Premium)**) is being retired.
 
 The new eDiscovery (Premium) solution in Microsoft 365 (also known as *eDiscovery (Premium) v2.0*) provides all of the capabilities of the original solution, but now includes a custodian-based approach of identifying content in other Microsoft 365 services, collecting that content, and then adding it to a review set where reviewers can take advantage of fast search queries, tagging, and analytics features to help cull relevant documents. eDiscovery (Premium) now includes improved processing and native viewers for both Microsoft and non-Microsoft file types, a full list of file types is [here](./ediscovery-supported-file-types.md) and supported metadata fields are [here](./ediscovery-document-metadata-fields.md). Also, the new eDiscovery (Premium) solution provides a powerful custodian holds management feature that lets you apply holds to content in different services, notify users of the holds, and track custodian responses, all within an eDiscovery (Premium) case.
 

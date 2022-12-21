@@ -29,9 +29,9 @@ Machine learning (ML) capabilities in Microsoft Purview eDiscovery (Premium) can
 
 ## How to set up a smart tag group
 
-1. In a review set, click **Manage review set** and then click **Manage tags**.
+1. In a review set, select **Manage review set** and then select **Manage tags**.
 
-2. Click **Add tag group** and then select **Add smart tag group**.
+2. Select **Add tag group** and then select **Add smart tag group**.
 
 3. Select the ML model that you want to associate to the tag group.
     

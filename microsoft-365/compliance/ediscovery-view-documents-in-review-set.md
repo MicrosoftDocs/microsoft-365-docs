@@ -22,7 +22,7 @@ ms.custom: seo-marvel-mar2020
 
 # View documents in a review set in eDiscovery (Premium)
 
-eDiscovery (Premium) displays content via several viewers each with different purposes. The various viewers can be used by clicking on any document within a review set. The viewers currently provided are:
+eDiscovery (Premium) displays content via several viewers each with different purposes. The various viewers can be used by selecting on any document within a review set. The viewers currently provided are:
 
 - File metadata
 - Native view

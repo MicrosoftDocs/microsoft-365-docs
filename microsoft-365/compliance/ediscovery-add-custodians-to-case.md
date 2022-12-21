@@ -70,22 +70,22 @@ To deselect the primary mailbox and OneDrive account for a custodian:
 
 To associate other mailboxes, sites, Teams, or Yammer groups to a specific custodian:
 
-1. Expand a custodian to display the following services to associate data locations with the custodian. Click **Edit** next to a service to add a data location.
+1. Expand a custodian to display the following services to associate data locations with the custodian. Select **Edit** next to a service to add a data location.
 
-   - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then click **Add**.
+   - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then select **Add**.
 
-   - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then click **Add**. If a user is inactive, their OneDrive site will need to be added as an additional SharePoint location here. 
+   - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then select **Add**. If a user is inactive, their OneDrive site will need to be added as an additional SharePoint location here. 
 
-   - **Teams**: Use to assign the Microsoft Teams the custodian is currently a member of. Select the teams to assign to the custodian and then click **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that team and assigns them to the custodian.
+   - **Teams**: Use to assign the Microsoft Teams the custodian is currently a member of. Select the teams to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that team and assigns them to the custodian.
 
-   - **Yammer**:  Use to assign the Yammer groups the custodian is currently a member of. Select the groups to assign to the custodian and then click **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
+   - **Yammer**:  Use to assign the Yammer groups the custodian is currently a member of. Select the groups to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
 
    > [!NOTE]
    > You can use the **Exchange** and **SharePoint** location pickers to associate any mailbox or site in your organization to a custodian. , This includes associating the mailbox and site for a Microsoft Team or Yammer group that a custodian is not a member of. To do this, you have to add both the mailbox and site associated with each team or Yammer group.
 
 2. You can view the total number of mailboxes, sites, Teams, and Yammer groups assigned to each custodian by expanding each custodian in the table. When you've finalized the assigned data locations for each custodian, these associations will be maintained and used during the collection, processing, and review stages in the eDiscovery (Premium) workflow.
 
-3. After adding custodians and configuring their data locations, click **Next** to go to the **Hold settings** page.  
+3. After adding custodians and configuring their data locations, select **Next** to go to the **Hold settings** page.  
 
 ## Step 3: Configure hold settings
 
@@ -97,7 +97,7 @@ To place the custodians and data sources on hold:
 
    Alternatively, you can place all custodians on hold by selecting the **Hold** checkbox at the top of the column.
 
-2. Verify the custodian hold selections and then click **Next**.
+2. Verify the custodian hold selections and then select **Next**.
 
    > [!NOTE]
    > If you don't place a hold on a custodian, the custodian and their associated data sources will be added to the case but the content in those data sources won't preserved by the hold that associated with the case.
@@ -108,7 +108,7 @@ Before you actually add the custodians to the case, you can review the list of c
 
 1. Verify and review all the data sources count and the hold setting associated with each custodian in the table. If necessary, go back to the **Identify custodian** or **Hold settings** pages to make any changes.
 
-2. Click **Submit** to add custodians and their data locations to the case and apply all custodial hold settings.
+2. Select **Submit** to add custodians and their data locations to the case and apply all custodial hold settings.
 
    The new custodians are added to the case and displayed on the **Data sources** tab.
 

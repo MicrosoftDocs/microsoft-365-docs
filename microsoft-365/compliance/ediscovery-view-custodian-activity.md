@@ -40,9 +40,9 @@ You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange 
 
 1. Go to  **eDiscovery > eDiscovery (Premium)** and open the case.
   
-2. Click the **Sources** tab.
+2. Select the **Sources** tab.
   
-3. On the **Custodians** page, select a custodian from the list, and then click **View custodian activity** on the flyout page.
+3. On the **Custodians** page, select a custodian from the list, and then select **View custodian activity** on the flyout page.
 
     The Custodian activities search page is displayed. Note the custodian you selected in the previous step is displayed in the **Custodian** drop-down box. You can select different custodians in the drop-down box, but you can only search for activities for one custodian at a time.
 
@@ -50,15 +50,15 @@ You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange 
    
 4. Configure the following search criteria:
       
-   1. **Activities** - Click the drop-down list to display the activities that you can search for. After you run the search, only the audit records for the selected activities are displayed. Selecting **Show results for all activities** will display results for all activities performed by the custodian that match the other search criteria.
+   1. **Activities** - Select the drop-down list to display the activities that you can search for. After you run the search, only the audit records for the selected activities are displayed. Selecting **Show results for all activities** will display results for all activities performed by the custodian that match the other search criteria.
 
       ![List of Activities.](../media/CustodianActivityAudit.PNG)
       
    1. **Start date and End date** - Select a date and time range to display the events that occurred within that period. The last seven days are selected by default. The date and time are presented in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is one year.
       
-   1. **Custodians** - Click in this box and then select a specific custodian to display search results for. Audit records for the selected activity performed by the users you select in this box are displayed in the list of results.
+   1. **Custodians** - Select in this box and then select a specific custodian to display search results for. Audit records for the selected activity performed by the users you select in this box are displayed in the list of results.
       
-5. Click ![Search Button.](../media/SearchButton.PNG)  to run the search using your search criteria. The search results are loaded, and after a few moments they are displayed under Results on the Custodian Activities search page. 
+5. Select ![Search Button.](../media/SearchButton.PNG)  to run the search using your search criteria. The search results are loaded, and after a few moments they are displayed under Results on the Custodian Activities search page. 
 
 ## Step 2: View the audit log search results
 
@@ -85,13 +85,13 @@ To filter the results:
 
  1. Create and run an audit log search.
   
-2. When the results are displayed, click **Filter results**.
+2. When the results are displayed, select **Filter results**.
  
 3. Keyword boxes are displayed under each column header.
   
-4. Click one of the boxes under a column header and type a word or phrase, depending on the column you're filtering on. The results will dynamically readjust to display the events that match your filter.
+4. Select one of the boxes under a column header and type a word or phrase, depending on the column you're filtering on. The results will dynamically readjust to display the events that match your filter.
   
-5. To clear a filter, click the **X** in the filter box or just click **Hide filtering**.
+5. To clear a filter, select the **X** in the filter box or just select **Hide filtering**.
 
 ## Export the search results to a file
 
@@ -99,7 +99,7 @@ You can export the results of an audit log search to a comma separated value (CS
 
 1. Run an audit log search, and then revise the search criteria until you have the desired results.
   
-2. Click Export results and select one of the following options:
+2. Select Export results and select one of the following options:
 
     - **Save loaded results:** Choose this option to export only the entries that are displayed under **Results** on the **Custodian Audit log search** page. The CSV file that is downloaded contains the same columns (and data) displayed on the page (Date, User, Activity, Item, and Details). An additional column (titled **More**) is included in the CSV file that contains more information from the audit log entry. Because you're exporting the same results that are loaded (and viewable) on the Audit log search page, a maximum of 5,000 entries are exported.
         

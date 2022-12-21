@@ -43,7 +43,7 @@ To run the "Test the Rest" test:
 
 1. Open the **Relevance \> Test** tab.
 
-2. In the **Test** tab, click **New test**. The **Create test** dialog is displayed, as shown in the following example.
+2. In the **Test** tab, select **New test**. The **Create test** dialog is displayed, as shown in the following example.
 
     ![Relevance Test the Rest results.](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
@@ -59,11 +59,11 @@ To run the "Test the Rest" test:
 
 8. In **Set size**, or accept the default value. The restore icons will restore the default values.
 
-9. Click **Start tagging**. A test sample is generated.
+9. Select **Start tagging**. A test sample is generated.
 
-10. Review and tag each of the files in the **Relevance \> Tag** tab and when done, click **Calculate**.
+10. Review and tag each of the files in the **Relevance \> Tag** tab and when done, select **Calculate**.
 
-11. In the Test tab, you can click **View results** to see the test results. An example is shown in the following screenshot.
+11. In the Test tab, you can select **View results** to see the test results. An example is shown in the following screenshot.
 
     ![Test the rest results.](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
@@ -89,7 +89,7 @@ To run the "Test the Slice" test:
   
 1. Open the **Relevance \> Test** tab.
 
-2. In the **Test** tab, click **New test**. The **Create test** dialog is displayed.
+2. In the **Test** tab, select **New test**. The **Create test** dialog is displayed.
 
 3. In **Test name** and **Description**, type the information.
 
@@ -105,8 +105,8 @@ To run the "Test the Slice" test:
 
     The restore icons will restore the default value.
 
-9. Click **Start tagging**. A test sample is generated.
+9. Select **Start tagging**. A test sample is generated.
 
-10. Review and tag each of the files in the **Relevance \> Tag** tab and when done, click **Calculate**.
+10. Review and tag each of the files in the **Relevance \> Tag** tab and when done, select **Calculate**.
 
-11. In the Test tab, you can click **View results** to see the test results.
+11. In the Test tab, you can select **View results** to see the test results.

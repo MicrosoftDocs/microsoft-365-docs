@@ -40,7 +40,7 @@ To analyze data in a review set:
 
 2. Open the review set you want to analyze.
 
-3. Click **Analytics** > **Run document & email analytics**.
+3. Select **Analytics** > **Run document & email analytics**.
 
    ![Select Run document & email analytics from the Analytics dropdown list](..\media\RunAnalytics1.png)
 
@@ -81,7 +81,7 @@ To view the analytics report for a review set:
 
 1. Open the review set.
 
-2. Click **Analytics** > **Show reports**.
+2. Select **Analytics** > **Show reports**.
 
 The **Analytics** report has seven components from the analysis:
 

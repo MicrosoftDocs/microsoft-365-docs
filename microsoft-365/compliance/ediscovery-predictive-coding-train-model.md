@@ -35,11 +35,11 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 1. In the Microsoft Purview compliance portal, open an eDiscovery (Premium) case and then select the **Review sets** tab.
 
-2. Open a review set and then click **Analytics** > **Manage predictive coding (preview)**.
+2. Open a review set and then select **Analytics** > **Manage predictive coding (preview)**.
 
 3. On the **Predictive coding models (preview)** page, select the model that you want to train.
 
-4. On the **Overview** tab, under **Round 1**, click **Start next training round**.
+4. On the **Overview** tab, under **Round 1**, select **Start next training round**.
 
    The **Training** tab is displayed and contains 50 items for you to label.
 
@@ -47,13 +47,13 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
    ![Label each document as relevant or not relevant.](..\media\TrainModel1.png)
 
-6. After you've labeled all 50 items, click **Finish**.
+6. After you've labeled all 50 items, select **Finish**.
 
     It will take a couple minutes for the system to "learn" from your labeling and update the model. When this process is complete, a status of **Ready** is displayed for the model on the **Predictive coding models (preview)** page.
 
 ## Perform additional training rounds
 
-After you perform the first round of training, you can perform subsequent training rounds by following the steps in the previous section. The only difference is the number of the training round will be updated on the model **Overview** tab. For example, after performing the first training round, you can click **Start next training round** to start the second round of training. And so on.
+After you perform the first round of training, you can perform subsequent training rounds by following the steps in the previous section. The only difference is the number of the training round will be updated on the model **Overview** tab. For example, after performing the first training round, you can select **Start next training round** to start the second round of training. And so on.
 
 Each round of training (both those in progress and those that are complete) is displayed on the **Training** tab for the model. When you select a training round, a flyout page with information and metrics for the round is displayed.
 

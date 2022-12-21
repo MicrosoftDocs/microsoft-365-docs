@@ -36,13 +36,13 @@ When you add the results of a search to a review set (the review sets in a case 
 
 - A file encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's returned in the search results is decrypted when the email message and attached file are added to the review set. You can review and query the decrypted file in the review set. You have to be assigned the RMS Decrypt role to add decrypted email attachments to a review set. For more information, see [Decryption in Microsoft Purview eDiscovery tools](ediscovery-decryption.md).
 
-To add data to a review set, click a search on the **Searches** tab, and then click **Add results to review set** on the flyout page.
+To add data to a review set, select a search on the **Searches** tab, and then select **Add results to review set** on the flyout page.
 
-You can add to an existing review set or create a new review set.  If adding to a new review set, specify the name and then click **Add** to display the flyout page.
+You can add to an existing review set or create a new review set.  If adding to a new review set, specify the name and then select **Add** to display the flyout page.
 
 ![Select a review set and configure collection options.](../media/AeD_AddToReviewSet.png)
 
-Adding data to a review set is a long-running process. This process includes gathering items from the original data sources in Microsoft 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then reindexing the items. You can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column. After the review set processing is completed, click the **Review sets** tab in the case, and then click the review set to start the process of filtering, reviewing, tagging, and exporting data in the review set.
+Adding data to a review set is a long-running process. This process includes gathering items from the original data sources in Microsoft 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then reindexing the items. You can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column. After the review set processing is completed, select the **Review sets** tab in the case, and then select the review set to start the process of filtering, reviewing, tagging, and exporting data in the review set.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -60,13 +60,13 @@ When you add the content of a search to an existing or new review set, you have 
 
 If you want to validate the results of a search more thoroughly before adding all of them to a review set, you can add a sample of the search results to a review set instead of adding everything.
 
-To add a sample to a review set, click a search on the **Searches** tab and click **Sample** on the flyout page. On the **Sampling parameters** page, choose one of the following options:
+To add a sample to a review set, select a search on the **Searches** tab and select **Sample** on the flyout page. On the **Sampling parameters** page, choose one of the following options:
 
 - **Confidence level %** and **Confidence interval %** - The items added to the review set will be determined by the statistical parameters that you set. If you typically use a confidence level and interval when sampling results, specify them in the drop-down boxes. Otherwise, use the default settings.
 
 - **Random sample %** - The items added to the review set is based on a random selection of the specified percentage of the total number of items returned by the search.
 
-After selecting and configuring one of the previous options, choose a review set to add the sample to and then click **Send**. Again, you can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column.
+After selecting and configuring one of the previous options, choose a review set to add the sample to and then select **Send**. Again, you can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column.
 
 ## Optical character recognition
 

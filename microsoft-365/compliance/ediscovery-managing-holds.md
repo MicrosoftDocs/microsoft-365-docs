@@ -73,7 +73,7 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
    1. **Exchange email** - select **Choose users, groups, or teams** and then select **Choose users, groups, or teams** again to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft 365 Group or a Microsoft Team. Select the user, group, team check box, select **Choose**, and then select **Done**.
 
       > [!NOTE]
-      > When you click **Choose users, groups, or teams** to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box.
+      > When you select **Choose users, groups, or teams** to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box.
 
    1. **SharePoint Sites** - select **Choose sites** and then select **Choose sites** again to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft 365 Group or a Microsoft Team. Select **Choose**, and then select **Done**.
 

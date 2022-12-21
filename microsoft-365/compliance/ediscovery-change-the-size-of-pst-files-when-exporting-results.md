@@ -53,7 +53,7 @@ Perform the following procedure on the computer that you'll use to export the re
 
 3. Change the `PstSizeLimitInBytes` value to the desired maximum size of a PST file when you export search results, and then save the file.
 
-4. In Windows Explorer, select or double-click the .reg file that you created in the previous steps.
+4. In Windows Explorer, select or double-select the .reg file that you created in the previous steps.
 
 5. In the User Access Control window, select **Yes** to let the Registry Editor make the change.
 

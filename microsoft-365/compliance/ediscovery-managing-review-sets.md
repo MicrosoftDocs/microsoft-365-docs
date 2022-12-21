@@ -39,11 +39,11 @@ Review sets are a static set of documents where you can analyze, query, view, ta
 
 ## Create a review set
 
-Review sets can be created on the **Review sets** tab by clicking **+ Add review set**.
+Review sets can be created on the **Review sets** tab by selecting **+ Add review set**.
 
 ![Add review set.](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-On the **Add review set** flyout page, type a name for the review set and then click **Save**. The new review set is displayed in the list on the **Review sets** tab.
+On the **Add review set** flyout page, type a name for the review set and then select **Save**. The new review set is displayed in the list on the **Review sets** tab.
 
 ![New review set listed on Review set tab.](../media/AeDnewreviewset.png)
 

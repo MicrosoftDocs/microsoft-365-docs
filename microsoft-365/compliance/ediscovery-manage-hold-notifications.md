@@ -32,7 +32,7 @@ After you select a communication from the **Communications** tab, you can view a
 
 1. In the compliance center, go to **eDiscovery > eDiscovery (Premium)**.
 
-2. Select a case and then click the **Communications** tab.
+2. Select a case and then select the **Communications** tab.
 
 3. Select a communication to display the **Custodian communication** flyout page.
 
@@ -44,15 +44,15 @@ Occasionally, custodians lose track of email messages in their day-to-day work. 
 
 To re-send a hold notice to a custodian:
 
-1. In eDiscovery (Premium), select a case and then click the **Communications** tab.
+1. In eDiscovery (Premium), select a case and then select the **Communications** tab.
 
 2. Select a communication to display the **Custodian communication** flyout page.
 
-3. Click **More > Re-send hold notice**.
+3. Select **More > Re-send hold notice**.
 
 4. On the **Re-send hold notice** flyout page, select the custodians that you what to re-send the notice and type an optional reason.
 
-5. Click **Re-send** to send the notice to the selected custodians.
+5. Select **Re-send** to send the notice to the selected custodians.
 
 If a custodian hasn't acknowledged the hold notification, the reminder and escalation workflow is restarted. If a custodian has acknowledged the hold notice, the custodian will receive a copy of the original hold notice.
 
@@ -65,13 +65,13 @@ As the case progresses, custodians may be required to preserve additional or les
 
 To update the contents of the initial hold notice:
 
-1. In eDiscovery (Premium), select a case and then click the **Communications** tab.
+1. In eDiscovery (Premium), select a case and then select the **Communications** tab.
 
-2. Select the hold notice that you want to update and click **Edit** on the **Custodian communication** flyout page.
+2. Select the hold notice that you want to update and select **Edit** on the **Custodian communication** flyout page.
 
-3. In the **Edit Communication** wizard, click **Define Portal Content** in the left pane of the wizard, and update the contents of the notice.
+3. In the **Edit Communication** wizard, select **Define Portal Content** in the left pane of the wizard, and update the contents of the notice.
 
-4. Click **Save**.
+4. Select **Save**.
 
 The re-issuance notice will be sent to all the custodians assigned to the legal hold notification. In addition, if the Reminder or Escalation notice is enabled, then the workflows for those types of notices will restart.
 

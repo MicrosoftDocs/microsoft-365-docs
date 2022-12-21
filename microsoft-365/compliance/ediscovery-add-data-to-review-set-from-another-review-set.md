@@ -47,4 +47,4 @@ In the **Add to another review set options** flyout page, choose the review set 
 
 ![Options for adding data to another review set.](../media/6440ee44-68fd-44d7-b43a-3a477345525c.png)
 
-After you click **Ok**, a new job (named **Adding data to another review set**) is created to add the content to another review set. You can go to the **Jobs** tab and monitor the progress of this job. For more information, see [Manage jobs](ediscovery-managing-jobs.md).
+After you select **Ok**, a new job (named **Adding data to another review set**) is created to add the content to another review set. You can go to the **Jobs** tab and monitor the progress of this job. For more information, see [Manage jobs](ediscovery-managing-jobs.md).

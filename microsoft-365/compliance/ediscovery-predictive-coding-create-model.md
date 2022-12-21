@@ -39,17 +39,17 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 1. In the Microsoft Purview compliance portal, open an eDiscovery (Premium) case and then select the **Review sets** tab.
 
-2. Open a review set and then click **Analytics** > **Manage predictive coding (preview)**.
+2. Open a review set and then select **Analytics** > **Manage predictive coding (preview)**.
 
-   ![Click the Analyze dropdown menu in review set to go to the Predictive coding page.](..\media\ManagePredictiveCoding.png)
+   ![Select the Analyze dropdown menu in review set to go to the Predictive coding page.](..\media\ManagePredictiveCoding.png)
 
-3. On the **Predictive coding models (preview)** page, click **New model**.
+3. On the **Predictive coding models (preview)** page, select **New model**.
 
 4. On the flyout page, type a name for the model and an optional description.
 
-5. Optionally, you can configure advanced settings (by clicking **Advanced options** on the flyout page) related to the confidence level and margin of error. These settings affect the number of items included in the control set. The *control set* is used during the training process to evaluate the prediction scores that the model assigns to items with the labeling that you perform during the training rounds. If your organization has guidelines about confidence level and margin of error for document review, specify them in the appropriate boxes. Otherwise, use the default settings.
+5. Optionally, you can configure advanced settings (by selecting **Advanced options** on the flyout page) related to the confidence level and margin of error. These settings affect the number of items included in the control set. The *control set* is used during the training process to evaluate the prediction scores that the model assigns to items with the labeling that you perform during the training rounds. If your organization has guidelines about confidence level and margin of error for document review, specify them in the appropriate boxes. Otherwise, use the default settings.
 
-6. Click **Save** to create the model.
+6. Select **Save** to create the model.
 
    It will take a couple minutes for the system to prepare your model. After it's ready, you can perform the first round of training.
 

@@ -43,11 +43,11 @@ To close a case:
 
 1. On the **eDiscovery (Premium)** page, select the case that you want to close.
 
-2. On the **Settings** tab, under **Case Information**, click **Select**.
+2. On the **Settings** tab, under **Case Information**, select **Select**.
 
    ![Access the case information flyout page in an eDiscovery (Premium) case.](..\media\AeDSelectCaseInformation.png) 
 
-3. At the bottom of the **Case Information** flyout page, click **Actions**, and then click **Close case**.
+3. At the bottom of the **Case Information** flyout page, select **Actions**, and then select **Close case**.
 
    It might take up to 60 minutes for the closing process to complete.
 
@@ -59,9 +59,9 @@ To reopen a closed case:
 
 1. On the **eDiscovery (Premium)** page, select the case that you want to reopen.
 
-2. On the **Settings** tab, under **Case Information**, click **Select**.
+2. On the **Settings** tab, under **Case Information**, select **Select**.
 
-3. At the bottom of the **Case Information** flyout page, click **Actions**, and then click **Reopen case**.
+3. At the bottom of the **Case Information** flyout page, select **Actions**, and then select **Reopen case**.
 
    It might take up to 60 minutes for the reopening process to complete.
 
@@ -78,15 +78,15 @@ To delete holds associated with a case:
 
 1. Go the **Holds** tab in the eDiscovery (Premium) case that you want to delete.
 
-2. Click the hold that you want to delete.
+2. Select the hold that you want to delete.
 
-3. On the flyout page, click **Delete hold**.
+3. On the flyout page, select **Delete hold**.
 
 To delete a case:
 
 1. On the **eDiscovery (Premium)** page, select the case that you want to delete.
 
-2. On the **Settings** tab, under **Case Information**, click **Select**.
+2. On the **Settings** tab, under **Case Information**, select **Select**.
 
-3. At the bottom of the **Case Information** flyout page, click **Actions**, and then click **Delete case**.
+3. At the bottom of the **Case Information** flyout page, select **Actions**, and then select **Delete case**.
 

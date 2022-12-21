@@ -41,17 +41,17 @@ For Microsoft Purview eDiscovery (Premium) cases that involve many custodians, y
 
 1. Open the eDiscovery (Premium) case and select the **Data sources** tab.
 
-2. Click **Add data source** > **Import custodians**.
+2. Select **Add data source** > **Import custodians**.
 
-3. On the **Get template** wizard page, click **Download the CSV template** to download a custodian template CSV file.
+3. On the **Get template** wizard page, select **Download the CSV template** to download a custodian template CSV file.
 
    ![Download a CSV template from Import custodians flyout page.](../media/ImportCustodians1.png)
 
 4. Add the custodial information to the CSV file and save it to your local computer. See the [Custodian CSV file](#custodian-csv-file) section for detailed information about the required properties in the CSV file.
 
-5. After you've prepared the CSV file with the custodian information, go back to the **Data sources** tab, and click **Add data source** > **Import custodians** again.
+5. After you've prepared the CSV file with the custodian information, go back to the **Data sources** tab, and select **Add data source** > **Import custodians** again.
 
-6. On the **Upload CSV file** wizard page, click **Upload csv file** and then upload the CSV file that contains the custodian information.
+6. On the **Upload CSV file** wizard page, select **Upload csv file** and then upload the CSV file that contains the custodian information.
 
    After you upload the CSV file, the import wizard validates the CSV file. If any validation errors exist, the wizard displays an error banner with a link to view the errors.
 
@@ -59,7 +59,7 @@ For Microsoft Purview eDiscovery (Premium) cases that involve many custodians, y
 
    The error information identifies the row and column of the cell that contains the error, and suggests a remediation action. You have to fix any validation error and then reupload the fixed CSV file. The CSV file must be successfully validated before you can create the import custodian job.
 
-7. Once the CSV file has been successfully validated, click **Next** and then click **Import** to start the import job.
+7. Once the CSV file has been successfully validated, select **Next** and then select **Import** to start the import job.
 
 After you start the import job, eDiscovery (Premium) does the following things:
 

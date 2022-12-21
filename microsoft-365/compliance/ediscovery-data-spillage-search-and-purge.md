@@ -94,21 +94,21 @@ After you verified the search results, you may want to share your findings with 
   
  **To generate a statistical report:**
   
-1. Go to the **Search** page in the eDiscovery case, and click the search that you want to generate a report for. 
+1. Go to the **Search** page in the eDiscovery case, and select the search that you want to generate a report for. 
     
-2. On the flyout page, click **More > Export report**.
+2. On the flyout page, select **More > Export report**.
  
       The Export report page is displayed.
 
-    ![Select the search and then click More > Export report on the flyout page.](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
+    ![Select the search and then select More > Export report on the flyout page.](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport1.png)
     
-3. Select **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** and then click **Generate report**.
+3. Select **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** and then select **Generate report**.
 
-4. In the eDiscovery case, click **Export** to display the list of export jobs. You may have to click **Refresh** to update the list to display the export job you created.
+4. In the eDiscovery case, select **Export** to display the list of export jobs. You may have to select **Refresh** to update the list to display the export job you created.
 
-5. Click the export job, and then click **Download** report on the flyout page.
+5. Select the export job, and then select **Download** report on the flyout page.
  
-    ![On the Export page, click the export and then click "Download report.".](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
+    ![On the Export page, select the export and then select "Download report.".](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
 The **Export Summary** report contains the number of locations found with results and the size of the search results. You can use this to compare with the report generated after deletion and provide as a proof of deletion. The **Results** report contains a more detailed summary of the search results, including the subject, sender, recipients, if the email was read, dates, and size of each message. If any of the details in this report contains that actual spilled data, be sure to permanently delete the Results.csv file when the investigation is complete.
 
@@ -136,17 +136,17 @@ There are two ways to collect a list of email addresses of mailboxes with spille
 
 1. Open the eDiscovery case, go to the **Search** page and select the appropriate content search. 
     
-2. On the flyout page, click **View results**.
+2. On the flyout page, select **View results**.
     
-3. In the **Individual results** drop down list, click **Search statistics**.
+3. In the **Individual results** drop down list, select **Search statistics**.
     
-4. In the **Type** drop down list, click **Top locations**.
+4. In the **Type** drop down list, select **Top locations**.
     
     ![Get a list of mailboxes that contain search results on the Top locations page in the Search statistics.](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
     A list of mailboxes that contain search results is displayed. The number of items in each mailbox that match the search query is also displayed.
     
-5. Copy the information in the list and save it to a file or click **Download** to download the information to a CSV file. 
+5. Copy the information in the list and save it to a file or select **Download** to download the information to a CSV file. 
     
 **Option 2: Get mailbox locations from the export report**
 
@@ -198,9 +198,9 @@ If the keywords in the search query that you created and used in Step 3 contains
   
 1. In the security and compliance center, open the eDiscovery case, go to the **Search** page, and select the appropriate content search.
 
-2. On the flyout page, click **Delete**.
+2. On the flyout page, select **Delete**.
 
-    ![Select the search and then click Delete on the flyout page.](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
+    ![Select the search and then select Delete on the flyout page.](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
 
 ### Auditing the data spillage investigation process
 

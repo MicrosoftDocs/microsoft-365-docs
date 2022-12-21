@@ -34,7 +34,7 @@ ms.collection:
 
 ## Guidelines for setting up Relevance training
 
- In Advance eDiscovery, in the **Cases** window, select a case and click **Go to case**. Click **Relevance** \> **Relevance setup**. Follow these recommended guidelines to set up Relevance. 
+ In Advance eDiscovery, in the **Cases** window, select a case and select **Go to case**. Select **Relevance** \> **Relevance setup**. Follow these recommended guidelines to set up Relevance. 
   
 - **Tagging**: The effectiveness of the iterative Relevance training process is dependent on the ability of the expert to tag the file samples with precision and consistency.
 
@@ -52,7 +52,7 @@ ms.collection:
 
   - eDiscovery (Premium) can be used to generate candidate privilege files. Set up a separate issue for privilege. If possible, train and cull for relevance first, and then train for privilege on the culled set only (reload the culled set as a separate case). 
 
-  - Batch calculation can be performed only when there are no open samples (when clicking Batch Calculation, there will be a list displayed of users with open samples). To "close" samples of other users (this should be performed only if these users are not tagging these samples), an Administrator can use the "Modify relevance" utility with the "All users sample" option.
+  - Batch calculation can be performed only when there are no open samples (when selecting Batch Calculation, there will be a list displayed of users with open samples). To "close" samples of other users (this should be performed only if these users are not tagging these samples), an Administrator can use the "Modify relevance" utility with the "All users sample" option.
 
 - **Metadata**: eDiscovery (Premium) focuses on content. It does not consider metadata as part of the relevance criteria.
 

@@ -42,7 +42,7 @@ This article explains how to add and remove users to the list of organization-wi
 
 ## Add an issuing officer
 
-1. In the compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **eDiscovery (Premium) settings**.
+1. In the compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then select **eDiscovery (Premium) settings**.
 
    ![Select eDiscovery (Premium) settings](..\media\HistoricalVersions1.png)
 
@@ -50,16 +50,16 @@ This article explains how to add and remove users to the list of organization-wi
 
    ![Issuing officers settings page.](..\media\AeDIssuingOfficers1.png)
 
-3. Click **Add** and then search for and add one or more users to the list of issuing officers.
+3. Select **Add** and then search for and add one or more users to the list of issuing officers.
 
 After you add users as issuing officers, you or other users will be able to specify these users as an issuing officer for custodian communications for any case in your organization. For more information about creating custodian communications, see [Create a legal hold notice](ediscovery-create-hold-notification.md).
 
 ## Remove an issuing officer
 
-1. In the compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **eDiscovery (Premium) settings**.
+1. In the compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then select **eDiscovery (Premium) settings**.
 
 2. On the **Settings** page, select the **Issuing officers** tab.
 
-3. Select one or more users in the issuing officers list, and then click **Delete**.
+3. Select one or more users in the issuing officers list, and then select **Delete**.
 
 After you delete users from the list of issuing officers, those users can no longer be specified as an issuing officer in new custodian communications, unless the user is a member of the specific case the communication is being issued from. Also, removing an issuing officer won't affect any communications that were sent before the user was removed as an issuing officer.

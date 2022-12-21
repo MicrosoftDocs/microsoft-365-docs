@@ -174,7 +174,7 @@ To create a case and assign members:
 
 1. Go to the **eDiscovery (Standard)** or **eDiscovery (Premium)** page in the compliance portal and create a case.
 
-2. In the list of cases, click the name of the case you created.
+2. In the list of cases, select the name of the case you created.
 
 3. Add role groups as members to the case. For instructions, see the one of the following articles:
 

@@ -94,21 +94,21 @@ You can use the EAC or Exchange Online PowerShell to create a retention policy.
 
 ### Use the EAC to create a retention policy
 
-1. In the EAC, go to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon.](../media/ITPro-EAC-AddIcon.gif).
+1. In the EAC, go to **Compliance management** \> **Retention policies**, and then select **Add** ![Add Icon.](../media/ITPro-EAC-AddIcon.gif).
 
 2. On the **New retention policy** page, under **Name**, type a name that describes the purpose of the retention policy; for example, **MRM Policy for Mailboxes on Hold**.
 
-3. Under **Retention tags**, click **Add** ![Add Icon.](../media/ITPro-EAC-AddIcon.gif).
+3. Under **Retention tags**, select **Add** ![Add Icon.](../media/ITPro-EAC-AddIcon.gif).
 
-4. In the list of retention tags, select the Recoverable Items RPT that you created in Step 1, and then click **Add**.
+4. In the list of retention tags, select the Recoverable Items RPT that you created in Step 1, and then select **Add**.
 
     ![Select the custom Recoverable Items retention tag.](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
 
 5. Select additional retention tags to add to the retention policy. For example, you might want to add the same tags that are included in the Default MRM Policy.
 
-6. When you're finished adding retention tags, click **OK**.
+6. When you're finished adding retention tags, select **OK**.
 
-7. Click **Save** to create the new retention policy.
+7. Select **Save** to create the new retention policy.
 
     Notice that the retention tags linked to the retention policy are displayed in the details pane.
 
@@ -136,11 +136,11 @@ The last step is to apply the new retention policy that you created in Step 2 to
 
 1. Go to **Recipients** > **Mailboxes**.
 
-2. In the list view, select the mailbox you want to apply the retention policy to, and then click **Edit** ![Edit icon.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+2. In the list view, select the mailbox you want to apply the retention policy to, and then select **Edit** ![Edit icon.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
-3. On the **User Mailbox** page, click **Mailbox features**.
+3. On the **User Mailbox** page, select **Mailbox features**.
 
-4. Under **Retention policy**, select the retention policy that you created in Step 2, and then click **Save**.
+4. Under **Retention policy**, select the retention policy that you created in Step 2, and then select **Save**.
 
 You can also use the EAC to apply the retention policy to multiple mailboxes.
 
@@ -148,11 +148,11 @@ You can also use the EAC to apply the retention policy to multiple mailboxes.
 
 2. In the list view, use the Shift or Ctrl keys to select multiple mailboxes.
 
-3. In the details pane, click **More options**.
+3. In the details pane, select **More options**.
 
-4. Under **Retention Policy**, click **Update**.
+4. Under **Retention Policy**, select **Update**.
 
-5. On the **Bulk assign retention policy** page, select the retention policy that you created in Step 2, and then click **Save**.
+5. On the **Bulk assign retention policy** page, select the retention policy that you created in Step 2, and then select **Save**.
 
 ### Use Exchange Online PowerShell to apply the new retention policy
 
@@ -224,4 +224,4 @@ $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 
 - After you enable a user's archive mailbox, consider telling the user that other items in their mailbox (not just items in the Recoverable Items folder) might be moved to the archive mailbox. This is because the Default MRM Policy that's assigned to Exchange Online mailboxes contains a retention tag (named Default 2 years move to archive) that moves items to the archive mailbox two years after the date the item was delivered to the mailbox or created by the user. For more information, see [Default Retention Policy in Exchange Online](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
-- After you enable a user's archive mailbox, you might also tell the user that they can recover deleted items in the Recoverable Items folder in their archive mailbox. They can do this in Outlook by selecting the **Deleted Items** folder in the archive mailbox, and then clicking **Recover Deleted Items from Server** on the **Home** tab. For more information about recovering deleted items, see [Recover deleted items in Outlook for Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829).
+- After you enable a user's archive mailbox, you might also tell the user that they can recover deleted items in the Recoverable Items folder in their archive mailbox. They can do this in Outlook by selecting the **Deleted Items** folder in the archive mailbox, and then selecting **Recover Deleted Items from Server** on the **Home** tab. For more information about recovering deleted items, see [Recover deleted items in Outlook for Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829).

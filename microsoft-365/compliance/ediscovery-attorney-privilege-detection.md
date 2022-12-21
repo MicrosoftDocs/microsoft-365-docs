@@ -56,15 +56,15 @@ To enable the attorney-client privilege detection model, your organization has t
 
 A person who is an eDiscovery Administrator in your organization (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group) must make the model available in your eDiscovery (Premium) cases.
 
-1. In the Microsoft Purview compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **eDiscovery (Premium) settings**.
+1. In the Microsoft Purview compliance portal, go to [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then select **eDiscovery (Premium) settings**.
 
    ![Select eDiscovery (Premium) settings](..\media\HistoricalVersions1.png)
 
 2. On the **Settings** page, select the **Analytics** tab, and then switch the **Attorney-client privilege detection** toggle to on.
 
-   ![Click toggle to turn on Attorney-client privilege detection](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
+   ![Select toggle to turn on Attorney-client privilege detection](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
 
-3. Click **Save** to save the change.
+3. Select **Save** to save the change.
 
 ### Step 2: Upload a list of attorneys (optional)
 

@@ -39,21 +39,21 @@ When the legal case or investigation supported by a eDiscovery (Standard) case i
 
 To close a case:
   
-1. In the compliance portal, click **eDiscovery** > **eDiscovery (Standard)** to display the list of eDiscovery (Standard) cases in your organization.
+1. In the compliance portal, select **eDiscovery** > **eDiscovery (Standard)** to display the list of eDiscovery (Standard) cases in your organization.
 
-2. Click the name of the case that you want to close.
+2. Select the name of the case that you want to close.
 
    ![Close case on case home page.](../media/eDiscoveryCaseHomePage.png)
 
-3. On the home page, under **Status**, click **Close case**.
+3. On the home page, under **Status**, select **Close case**.
 
     A warning is displayed saying that the holds associated with the case will be turned off.
 
-4. Click **Yes** to close the case.
+4. Select **Yes** to close the case.
 
     The status on the case home page is changed from **Active** to **Closing**.
 
-5. On the **eDiscovery (Standard)** page, click **Refresh** to update the status of the closed case. It might take up to 60 minutes for the closing process to complete.
+5. On the **eDiscovery (Standard)** page, select **Refresh** to update the status of the closed case. It might take up to 60 minutes for the closing process to complete.
 
     When the process is complete, the status of the case is changed to **Closed** on the **eDiscovery (Standard)** page.
 
@@ -61,21 +61,21 @@ To close a case:
 
 When you reopen a case, any eDiscovery holds that were in place when the case was closed won't be automatically reinstated. After the case is reopened, you'll have to go to the **Holds** page and turn on the previous holds. To turn on a hold, select it to display the flyout page, and then set the **Status** toggle to **On**.
   
-1. In the compliance portal, click **eDiscovery** > **Core** to display the list of eDiscovery (Standard) cases in your organization.
+1. In the compliance portal, select **eDiscovery** > **Core** to display the list of eDiscovery (Standard) cases in your organization.
 
-2. Click the name of the case that you want to reopen.
+2. Select the name of the case that you want to reopen.
 
    ![Reopen a closed case.](../media/eDiscoveryCaseHomePageReopen.png)
 
-3. On the home page, under **Status**, click **Reopen case**.
+3. On the home page, under **Status**, select **Reopen case**.
 
     A warning is displayed saying that the holds that were associated with the case when it was closed won't be turned on automatically.
 
-4. Click **Yes** to reopen the case.
+4. Select **Yes** to reopen the case.
 
     The status on the case home page flyout page is changed from **Closed** to **Active**.
 
-5. On the **eDiscovery (Standard)** page, click **Refresh** to update the status of the reopened case. It might take up to 60 minutes for the reopening process to complete. 
+5. On the **eDiscovery (Standard)** page, select **Refresh** to update the status of the reopened case. It might take up to 60 minutes for the reopening process to complete. 
 
     When the process is complete, the status of the case is changed to **Active** on the **eDiscovery (Standard)** page.
 
@@ -93,17 +93,17 @@ To delete an eDiscovery hold:
 
 2. Select the hold that you want to delete.
 
-3. On the flyout page, click **Delete**.
+3. On the flyout page, select **Delete**.
 
       ![Delete an eDiscovery hold.](../media/DeleteeDiscoveryHold.png)
 
 To delete a case:
 
-1. In the compliance portal, click **eDiscovery** > **eDiscovery (Standard)** to display the list of eDiscovery (Standard) cases in your organization.
+1. In the compliance portal, select **eDiscovery** > **eDiscovery (Standard)** to display the list of eDiscovery (Standard) cases in your organization.
 
-2. Click the name of the case that you want to delete.
+2. Select the name of the case that you want to delete.
 
-3. On the case home page, under **Status**, click **Delete case**.
+3. On the case home page, under **Status**, select **Delete case**.
 
       ![Delete a case.](../media/eDiscoveryCaseHomePageDelete.png)
 

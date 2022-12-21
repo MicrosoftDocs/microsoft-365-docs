@@ -38,7 +38,7 @@ To configure search and analytics settings for a case:
 
 1. On the **eDiscovery (Premium)** page, select the case.
 
-2. On the **Settings** tab, under **Search & analytics**, click **Select**.
+2. On the **Settings** tab, under **Search & analytics**, select **Select**.
 
    The case settings page is displayed. These settings are applied to all review sets in a case.
 

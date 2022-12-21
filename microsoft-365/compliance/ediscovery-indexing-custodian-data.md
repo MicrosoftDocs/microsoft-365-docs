@@ -48,7 +48,7 @@ This view  also includes the number of items that require remediation and anothe
 
 ## Updating the Advanced index for custodians
 
-When a custodian is added to an eDiscovery (Premium) case, all partially indexed items are reprocessed. However, as time passes, more partially indexed items may be added to a user's mailbox or OneDrive account.  If necessary, you can update the index for specific custodian. For more information, see [Manage custodians in an eDiscovery (Premium) case](ediscovery-manage-new-custodians.md#reindex-custodian-data). You can also update the index for all custodians in a case by clicking the **Update index** on the **Processing** tab.
+When a custodian is added to an eDiscovery (Premium) case, all partially indexed items are reprocessed. However, as time passes, more partially indexed items may be added to a user's mailbox or OneDrive account.  If necessary, you can update the index for specific custodian. For more information, see [Manage custodians in an eDiscovery (Premium) case](ediscovery-manage-new-custodians.md#reindex-custodian-data). You can also update the index for all custodians in a case by selecting the **Update index** on the **Processing** tab.
 
 > [!NOTE]
 > Updating custodian indexes is a long running process. It's recommended that you don't update indexes more than once a day in a case.

@@ -29,7 +29,7 @@ The **Custodians** page on the **Data sources** tab in an Microsoft Purview eDis
 
 ## View custodian details
 
-To view the details about a custodian, click the custodian from the list on the **Custodians** tab. A flyout page is displayed and contains the following information about the custodian.
+To view the details about a custodian, select the custodian from the list on the **Custodians** tab. A flyout page is displayed and contains the following information about the custodian.
 
 ![Custodian details.](../media/CustodianDetails.PNG)
 
@@ -69,9 +69,9 @@ To update the data sources that are associated with a custodian:
 
 1. Go to  **eDiscovery > eDiscovery (Premium)** and open the case.
   
-2. Click the **Data Sources** tab.
+2. Select the **Data Sources** tab.
   
-3. Select a custodian from the list, and then click **Edit** on the flyout page.
+3. Select a custodian from the list, and then select **Edit** on the flyout page.
 
     ![Edit Data Sources.](../media/EditCustodianDataSource.PNG)
   
@@ -79,24 +79,24 @@ To update the data sources that are associated with a custodian:
 
     - Expand the custodian to view the primary data locations that have been previously associated with the custodian.
 
-    - Click **Edit** next to **Mailbox** or **OneDrive** to add the custodian's mailbox or OneDrive location.
+    - Select **Edit** next to **Mailbox** or **OneDrive** to add the custodian's mailbox or OneDrive location.
 
     - Select **Clear** next to **Mailbox** or **OneDrive** to remove the custodian's mailbox or OneDrive account from being associated as a data location for this custodian.
 
-5. To add or remove other mailboxes, sites, Teams, or Yammer groups to a specific custodian, click **Edit** next to the service to add a data location.
+5. To add or remove other mailboxes, sites, Teams, or Yammer groups to a specific custodian, select **Edit** next to the service to add a data location.
 
-   - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then click **Add**.
+   - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then select **Add**.
 
-   - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then click **Add**.
+   - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then select **Add**.
 
-   - **Teams**: Use to assign the Microsoft Teams the custodian is currently a member of. Select the teams to assign to the custodian and then click **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that team and assigns them to the custodian.
+   - **Teams**: Use to assign the Microsoft Teams the custodian is currently a member of. Select the teams to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that team and assigns them to the custodian.
 
-   - **Yammer**:  Use to assign the Yammer groups the custodian is currently a member of. Select the groups to assign to the custodian and then click **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
+   - **Yammer**:  Use to assign the Yammer groups the custodian is currently a member of. Select the groups to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
 
    > [!NOTE]
    > You can use the **Exchange** and **SharePoint** location pickers to associate any mailbox or site in your organization, including teams or Yammer groups that a custodian is not a member of, to a custodian. To do this, you have to add both the mailbox and site associated with each team or Yammer group.
 
-6. After editing the data locations for the custodian, click **Next** to go to the **Hold settings** page.  
+6. After editing the data locations for the custodian, select **Next** to go to the **Hold settings** page.  
 
 7. On the **Hold settings** page, update the hold settings for the custodian.
 
@@ -110,11 +110,11 @@ To trigger the reindexing process to address partially indexed items:
 
 1. Go to  **eDiscovery > eDiscovery (Premium)** and open the case.
 
-2. Click the **Sources** tab.
+2. Select the **Sources** tab.
 
 3. On the **Custodians** page, select a custodian whose data must be reindexed.
 
-4. On the flyout page, click **Update index**.
+4. On the flyout page, select **Update index**.
 
    A dialog is displayed saying the index job has been created.
 
@@ -136,15 +136,15 @@ To release a custodian:
 
 1. Go to  **eDiscovery > eDiscovery (Premium)** and open the case.
 
-2. Click the **Sources** tab.
+2. Select the **Sources** tab.
 
 3. On the **Custodians** page, and then select the custodian who is being released from the case.
 
-4. On the flyout page, click **Release custodian**.
+4. On the flyout page, select **Release custodian**.
 
    A warning page is displayed explaining that if a hold is placed on a data source associated with the custodian, the hold will be removed, and that any other hold associated with a different eDiscovery (Premium) case will still apply. That includes other types of preservation and retention features (such as a Microsoft 365 retention policy).
 
-5. Click **Yes** to confirm that you want to release the custodian. 
+5. Select **Yes** to confirm that you want to release the custodian. 
 
     The status for this user on the **Custodians** tab is set to **Released** and the **Hold status** on the flyout page is changed to **False**.
 
