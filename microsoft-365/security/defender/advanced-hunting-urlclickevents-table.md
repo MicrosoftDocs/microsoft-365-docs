@@ -52,11 +52,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `IsClickedThrough` | `bool` | Indicates whether the user was able to click through to the original URL or was not allowed|
 | `UrlChain` | `string` | For scenarios involving redirections, it includes URLs present in the redirection chain|
 | `ReportId` | `string` | This is the unique identifier for a click event. Note that for clickthrough scenarios, report ID would have same value, and therefore it should be used to correlate a click event.|
-| `LatestDeliveryLocation`* | `string` | Last known location of the email |
-|`LatestDeliveryAction`* | `string` | Last known action attempted on an email by the service or by an admin through manual remediation |
 
-> [!NOTE]
->\* The `LatestDeliveryLocation` and `LatestDeliveryAction` columns are currently **not** available in the Streaming API. 
 
 You can try this example query that uses the `UrlClickEvents` table to return a list of links where a user was allowed to proceed: 
 
