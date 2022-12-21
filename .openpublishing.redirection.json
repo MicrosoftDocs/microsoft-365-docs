@@ -3773,7 +3773,7 @@
     {
       "source_path": "microsoft-365/enterprise/infoprotect-infrastructure.md",
       "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-define-sec-infoprotect-levels.md",
