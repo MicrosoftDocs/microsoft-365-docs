@@ -16,42 +16,66 @@ keywords:
 
 # Purchase and add apps in your managed environment
 
-To help protect and secure your organization’s data, you can provide your organization's workforce with managed apps so they can safely collaborate and be productive. Managed apps are those apps that have been enhanced to support special functionality. This functionality is managed and maintained by the Microsoft Intune product family’s integrated management platform. The platform provides a web-based console to manage, protect, and monitor all of your organization's endpoints, whether those endpoints are devices or apps. This console helps keep your organization's cloud and on-premises devices, apps, and data secure. The web-based console is commonly known as Microsoft Intune. The Microsoft Intune product family integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot.
-
-Managing the apps that your company's workforce uses on their devices is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed.
+To help protect and secure your organization’s data, you can provide your members of your organization with managed apps so they can safely collaborate and be productive. Managed apps are those apps that have been enhanced to support special configuration and protection capabilities. These capabilities are managed and maintained by Microsoft Intune. Intune provides a web-based console to manage, protect, and monitor all of your organization's endpoints, whether those endpoints are devices or apps. This console helps keep your organization's cloud and on-premises devices, apps, and data secure. The Microsoft Intune product family integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot.
 
 > [!NOTE]
-> Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, servers, and shared devices that your organization uses. Examples of shared and specialized devices include retail point of sale devices, ruggedized devices, digital interactive whiteboards, conference room devices, and holographic wearable computers. Additionally, endpoints include the apps used by your organization.
+> Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, servers, and shared devices that your organization uses. Examples of shared and specialized devices include retail point of sale devices, ruggedized devices, digital interactive whiteboards, conference room devices, and holographic wearable computers. Additionally, endpoints also include the apps used by your organization.
 
-By protecting and managing your organization's endpoints using Microsoft Intune, you accomplish the following actions:
-- Protect the data that the people at your organization are accessing.
-- Ensure your organization is using proper credentials to access and share company data.
-- Safeguard the devices and apps that access your organization resources.
-- Ensure that new members of your organization have a great experience on-boarding to your organization.
-- Confirm security rules are in place based on your organizations requirements.
-- Confirm that every member of your organization has a device that is configured and protected.
-- Ensure that all your corporate services are easily available to end users on all the devices they use.
-- Ensure that end users get the best possible experience based on first class support for all the products that they need to use.
+## MAM configurations
 
-You can use Microsoft Intune to manage the apps that your company's workforce uses on their devices. This functionality is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed.
+When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data exposure and data loss. One of the primary reasons to use either **MAM without device enrollment** or **MAM with device enrollment** is to help protect your organization's data.
 
-The users of apps and devices at your company (your company's workforce) might have several app requirements. Before adding apps to Intune and making them available to your workforce, you may find it helpful to assess and understand a few app fundamentals. There are various types of apps that are available for Intune. You must determine app requirements that are needed by the users at your company, such as the platforms and capabilities that your workforce needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Also, you must determine the apps and capabilities that your workforce needs, and who needs them. The information in this article helps you get started.
+Microsoft Endpoint Manager supports two MAM configurations:
+- **[MAM without device management](#mam-without-device-management)**
+- **[MAM with device management](#mam-with-device-management)**
 
-Suppose that you're the administrator of a company with several thousand employees. Your company uses Microsoft Office to create and share information internally and externally. Your company allows employees to use their own devices. You must implement the rules that are enforced when employees attempts to access, move, or copy corporate data using managed apps.
+### MAM without device management
 
-Microsoft Intune supports two MAM configurations:
-- **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune console in the Microsoft Intune admin center.
-- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Microsoft Intune admin center. Also, apps can be managed by Intune on devices enrolled with third-party enterprise mobility management (EMM) providers or not enrolled with an MDM at all.
+Managing the apps that the members of your organization uses on their devices is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed. This configuration allows your organization's apps to be managed by Intune, but doesn't enroll the devices to be managed by Intune. This configuration is commonly referred to as **MAM without device enrollment**, or **MAM-WE**. IT administrators can manage apps using MAM by using Intune configuration and protection policies on devices not enrolled with Intune Mobile Device Management (MDM). MAM is ideal to help protect organization data on devices used by members of your organization for both personal and work tasks.
 
-When apps are managed in Intune, administrators can:
+> [!TIP]
+>  Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM. See the official list of [Microsoft Intune protected apps](../apps/apps-supported-intune-apps.md) available for public use.
+
+If you choose to use MAM without device enrollment, there are some limitations to be aware of, such as:
+- You can't deploy apps to the device. The end user has to get the apps from the store.
+- You can't provision certificate profiles on these unmanaged devices.
+- You can't provision company Wi-Fi and VPN settings on these unmanged devices.
+
+> [!NOTE]
+> The MAM configuration includes managing apps with Intune on devices enrolled with third-party enterprise mobility management (EMM) providers. You can use Intune app configuration and protection policies independent of any MDM solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution. By implementing app-level policies, you can restrict access to company resources and keep data within the purview of your IT department.
+
+### MAM with device management
+
+This configuration allows both your organization's apps and devices to be managed. This configuration is commonly referred to as **MAM + MDM**. IT administrators can manage apps using MAM on devices that are enrolled with Intune MDM.
+
+MDM, in addition to MAM, makes sure that the device is protected. For example, you can require a PIN to access the device, or you can deploy managed apps to the device. 
+
+There are additional benefits to using MDM with app protection policies. For example, a member of your organization could have both a phone issued by the company, as well as their own personal tablet. The company phone could be enrolled in MDM and protected by app protection policies while the personal device is protected by app protection policies only.
+
+On enrolled devices that use an MDM service, app protection policies can add an extra layer of protection. For example, a user signs in to a device with their organization credentials. Their organization identity allows access to data that's tied to their personal identity. As that organization data is used, app protection policies control how the data is saved and shared. When users sign in with their personal identity, those same protections (access and restrictions) aren't applied. In this way, IT has control of organization data, while end users maintain control and privacy over their personal data.
+
+The MDM solution adds value by providing the following:
+- Enrolls the device
+- Deploys the apps to the device
+- Provides ongoing device compliance and management
+
+The App protection policies add value by providing the following:
+- Help protect company data from leaking to consumer apps and services
+- Apply restrictions like *save-as*, *clipboard*, or *PIN*, to client apps
+- Wipe company data when needed from apps without removing those apps from the device
+
+### Benefits of MAM with Intune
+
+When apps are managed in Intune, administrators can do the following:
 - **Protect company data at the app level.** You can add and assign mobile apps to user groups and devices. This allows your company data to be protected at the app level. You can protect company data on both managed and unmanaged devices because mobile app management doesn't require device management. The management is centered on the user identity, which removes the requirement for device management.
 - **Configure apps to start or run with specific settings enabled.** In addition, you can update existing apps already on the device.
 - **Assign policies to limit access and prevent data from being used outside your organization.** You choose the setting for these policies based on your organization's requirements. For example, you can:
   - Require a PIN to open an app in a work context.
+  - Block managed apps from running on jailbroken or rooted devices
   - Control the sharing of data between apps.
-  - Prevent the saving of company app data to a personal storage location.
-- **Support apps on a variety of platforms and operating systems.** Each platform is different. Intune and Configuration Manager provides available settings specifically for each supported platform.
-- **See reports about which apps are used, and track their usage.** In addition, Intune and Configuration Manager provides endpoint analytics to help you assess and resolve problems.
+  - Prevent the saving of company app data to a personal storage location by using data relocation policies like  **Save copies of org data**, and **Restrict cut, copy, and paste**..
+- **Support apps on a variety of platforms and operating systems.** Each platform is different. Intune provides available settings specifically for each supported platform.
+- **See reports about which apps are used, and track their usage.** In addition, Intune provides endpoint analytics to help you assess and resolve problems.
 - **Do a selective wipe by removing only organization data from apps.**
 - **Ensure personal data is kept separate from managed data.** End-user productivity isn't affected and policies don't apply when using the app in a personal context. The policies are applied only in a work context, which gives you the ability to protect company data without touching personal data.
 

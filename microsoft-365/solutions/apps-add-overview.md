@@ -31,3 +31,16 @@ Before you distribute a managed app to your workforce, you first need to add the
 ## Understand apps that are added automatically by Intune
 
 ## Understanding app management and protection policies
+
+
+## Understand configuration for apps
+<!-- 
+configuration policies to apply for those groups
+-->
+## Understand protection needed for apps
+<!-- 
+protection policies to apply
+Start with level 1
+
+For example, for enrollment types including Android personally-owned work profile, you may want to deploy a web browsing app to make sure users will have a way to open links.
+-->
