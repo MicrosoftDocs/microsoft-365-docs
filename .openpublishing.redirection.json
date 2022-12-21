@@ -2297,17 +2297,17 @@
     },
     {
       "source_path": "microsoft-365/enterprise/microsoft-security-guidance.md",
-      "redirect_url": "/office365/SecurityCompliance",
+      "redirect_url": "/microsoft-365/",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/protect-files-with-aip.md",
-      "redirect_url": "/office365/SecurityCompliance/protect-sharepoint-online-files-with-azure-information-protection",
+      "redirect_url": "/microsoft-365/solutions/configure-teams-three-tiers-protection",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/protect-files-with-o365-labels-dlp.md",
-      "redirect_url": "/office365/SecurityCompliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp",
+      "redirect_url": "/microsoft-365/solutions/configure-teams-three-tiers-protection",
       "redirect_document_id": false
     },
     {
@@ -2322,17 +2322,17 @@
     },
     {
       "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-dev-test.md",
-      "redirect_url": "/office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment",
+      "redirect_url": "/microsoft-365/solutions/team-security-isolation-dev-test",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-and-files.md",
-      "redirect_url": "/office365/SecurityCompliance/secure-sharepoint-online-sites-and-files",
+      "redirect_url": "/microsoft-365/community/sharepoint-security-a-team-effort",
       "redirect_document_id": false
     },
     {
       "source_path": "office365/SecurityCompliance/secure-sharepoint-online-sites-and-files.md",
-      "redirect_url": "/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_url": "/microsoft-365/community/sharepoint-security-a-team-effort",
       "redirect_document_id": false
     },
     {
@@ -2408,7 +2408,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md",
       "redirect_url": "/microsoft-365/solutions/team-security-isolation-dev-test",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment.md",
@@ -2517,7 +2517,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/controlling-outbound-spam-in-office-365.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-controls",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-protection-about",
       "redirect_document_id": false
     },
     {
@@ -2672,7 +2672,7 @@
     },
     {
       "source_path": "microsoft-365/compliance/view-email-security-reports.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/view-email-security-reports",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-email-security",
       "redirect_document_id": false
     },
     {
@@ -2862,17 +2862,17 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/quarantine.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-email-messages",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-controls",
+      "redirect_url": "/microsoft-365/security/office-365-security/outbound-spam-protection-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-quarantine-notifications",
       "redirect_document_id": false
     },
     {
@@ -3132,37 +3132,37 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/create-a-schedule-for-a-report.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/manage-schedules-for-multiple-reports.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/set-up-and-download-a-custom-report.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/download-existing-reports.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/from-a-detailed-report-to-an-insight.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/from-a-dashboard-to-an-insight.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/from-an-insight-to-a-detailed-report.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
       "redirect_document_id": false
     },
     {
@@ -3772,47 +3772,47 @@
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-infrastructure.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-define-sec-infoprotect-levels.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-classification.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-increased-security-office-365.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-deploy-windows-information-protection.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-data-loss-prevention.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-email-encryption.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-configure-privileged-access-management.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/enterprise/infoprotect-exit-criteria.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
@@ -5717,7 +5717,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/office-365-atp.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
@@ -5732,12 +5732,12 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/whats-new-in-defender-office-365-atp.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/whats-new-in-defender-for-office-365",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365-whats-new",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/defender-365-security/threat-explorer.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-about",
       "redirect_document_id": false
     },
     {
@@ -5747,7 +5747,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/view-reports-for-atp.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
       "redirect_document_id": false
     },
     {
@@ -6192,12 +6192,12 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-outlook-report-messages",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-outlook-report-messages",
       "redirect_document_id": false
     },
     {
@@ -6352,8 +6352,8 @@
      },
      {
       "source_path": "submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft",
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft",
+      "redirect_document_id": true
      },
      {
       "source_path": "microsoft-365/enterprise/microsoft-365-tenant-isolation-overview.md",
@@ -6497,7 +6497,7 @@
     },
     {
       "source_path": "microsoft-365/compliance/download-existing-reports.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
+      "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
       "redirect_document_id": false
     },
     {
@@ -9127,22 +9127,22 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/office365-security-incident-response-overview.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/security-roadmap.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/old-index.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/defender-for-office-365",
       "redirect_document_id": false
   },
   {
       "source_path": "microsoft-365/security/office-365-security/reporting-and-message-trace-in-exchange-online-protection.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/message-trace-scc.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/message-trace-scc",
       "redirect_document_id": false
   },
   {
@@ -9162,7 +9162,7 @@
   },
   {
       "source_path": "microsoft-365/bookings/get-bookings-app.md",
-      "redirect_url": "microsoft-365/bookings/bookings-overview.md",
+      "redirect_url": "microsoft-365/bookings/bookings-overview",
       "redirect_document_id": false
   },
     {
@@ -9497,7 +9497,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/priority accounts-security-recommendations",
+      "redirect_url": "/microsoft-365/security/office-365-security/priority-accounts-security-recommendations",
       "redirect_document_id": true
     },
     {
@@ -9543,7 +9543,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md",
       "redirect_url": "/microsoft-365/security/office-365-security/quarantine-quarantine-notifications",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/view-and-release-quarantined-messages-from-shared-mailboxes.md",
@@ -9553,7 +9553,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/view-reports-for-mdo.md",
       "redirect_url": "/microsoft-365/security/office-365-security/reports-defender-for-office-365",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/view-email-security-reports.md",
@@ -9623,12 +9623,12 @@
     {
       "source_path": "microsoft-365/security/office-365-security/report-false-positives-and-false-negatives.md",
       "redirect_url": "/microsoft-365/security/office-365-security/submissions-outlook-report-messages",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft.md",
       "redirect_url": "/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md",
@@ -9668,7 +9668,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/threat-explorer.md",
       "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-about",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer.md",
@@ -9747,7 +9747,7 @@
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/microsoft-threat-experts.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications",
       "redirect_document_id": false
     },
     {
