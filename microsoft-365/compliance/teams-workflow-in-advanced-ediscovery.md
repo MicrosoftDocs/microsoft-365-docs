@@ -75,7 +75,7 @@ To create a case:
 
 1. Go to <https://compliance.microsoft.com> and sign in.
 
-2. In the left navigation pane of the Microsoft Purview compliance portal, click **eDiscovery > Advanced**.
+2. In the left navigation pane of the Microsoft Purview compliance portal, click **eDiscovery > Premium**.
 
 3. On the **eDiscovery (Premium)** page, click the **Cases** tab, and then click **Create a case**.
 

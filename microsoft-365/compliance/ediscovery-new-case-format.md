@@ -50,7 +50,7 @@ To create an eDiscovery (Premium) case using the new case format, complete the f
 
 1. Go to <https://compliance.microsoft.com> and sign in.
 
-2. In the left navigation pane of the Microsoft Purview compliance portal, select **eDiscovery > Advanced**.
+2. In the left navigation pane of the Microsoft Purview compliance portal, select **eDiscovery > Premium**.
 
 3. On the **eDiscovery (Premium)** page, select the **Cases** tab, and then select **Create a case**.
 
