@@ -2958,7 +2958,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/malicious-files-detected-in-spo-odb-or-teams.md",
       "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-anti-phishing.md",
@@ -8268,7 +8268,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
@@ -9608,7 +9608,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/configure-advanced-delivery.md",
       "redirect_url": "/microsoft-365/security/office-365-security/skip-filtering-phising-simulations-sec-ops-mailboxes",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/skip-filtering-phising-simulations-sec-ops-mailboxe.md",
