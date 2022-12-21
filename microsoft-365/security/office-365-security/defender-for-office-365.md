@@ -102,8 +102,6 @@ It's recommended that you configure with preset security policies, but some orga
 
 With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Policies & rules** \> **Threat policies**. Or, you can go directly to the **Threat policies** page by using <https://security.microsoft.com/threatpolicy>.
 
-Learn more by watching [this video](https://www.youtube.com/watch?v=vivvTmWJ_3c).
-
 > [!TIP]
 > For a quick list of policies to define, see [Protect against threats](protect-against-threats.md).
 
