@@ -1,11 +1,11 @@
 ---
-title: "Step 2. Determine who will use the app"
+title: "Step 2. Create and edit categories for apps"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Step 2. Determine who will use the app.
+description: Step 2. Create and edit categories for apps.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,4 +14,4 @@ ms.custom:
 keywords:
 ---
 
-# Step 2. Determine who will use the app
+# Step 2. Create and edit categories for apps

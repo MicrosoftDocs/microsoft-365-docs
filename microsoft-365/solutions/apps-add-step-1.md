@@ -52,6 +52,10 @@ Intune commonly supports the following platforms:
 <!--  
 The users of apps and devices at your company (your company's workforce) might have several app requirements. 
 -->
+
+## Determine who will use the app
+## Determine the type of app for your solution
+
 ## Configuration of each app
 <!-- 
 configuration policies to apply for those groups
