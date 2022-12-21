@@ -25,7 +25,9 @@ When you use Microsoft Online Services, personnel with specialized technical exp
 
 The following tables include the locations of these Microsoft personnel and contract staff who may require limited remote access to Customer or Personal Data (consisting of pseudonymized personal identifiers). This data resides only on Microsoft systems and is subject to Microsoft policies and supervision. The location of the Customer and Personal Data is distinct from its remote access by personnel in other locations; this data remains within Microsoft datacenter infrastructure in the locations you select when deploying your Online Services (when regional selection is available). For more information on Microsoft datacenters, please see the [Azure global infrastructure site](https://azure.microsoft.com/global-infrastructure/).
 
-Remote access to data by Microsoft personnel, including contract staff, is limited and controlled. Microsoft employs the least privileged access mechanisms to control access to Customer Data and Personal Data. Role-based access controls are employed to ensure that access to Customer Data and Personal Data required for service operations is for an appropriate purpose and approved with management oversight. There is no standing access by personnel to Customer Data and any required access is provided for a limited time. Personnel also undergo background checks and use multifactor authentication as part of Microsoft standard business requirements, and access to Customer and Personal Data is logged and monitored by Microsoft.
+Remote access to data by Microsoft personnel, including contract staff, is limited and controlled. Microsoft employs the least privileged access mechanisms to control access to Customer Data and Personal Data. Role-based access controls are employed to ensure that access to Customer Data and Personal Data required for service operations is for an appropriate purpose and approved with management oversight. There is no standing access by personnel to Customer Data and any required access is provided for a limited time. Personnel also undergo background checks and use multi-factor authentication as part of Microsoft standard business requirements, and access to Customer and Personal Data is logged and monitored by Microsoft.
+
+For more information on remote access to data by personnel, see [Continuing data transfers that apply to all EU Data Boundary services](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-transfers-for-all-services).
 
 | Microsoft Subsidiary Personnel Locations ||||
 |--|--|--|--|
@@ -59,18 +61,18 @@ Remote access to data by Microsoft personnel, including contract staff, is limit
 
 | Contract Staff Personnel Locations ||||
 |--|--|--|--|
-| Argentina                          | Egypt         | Jamaica     | Romania             |
-| Armenia                            | El Salvador   | Japan       | Serbia              |
-| Australia                          | Finland       | Korea       | Singapore           |
-| Austria                            | France        | Malaysia    | South Africa        |
-| Belgium                            | Georgia       | Mexico      | Spain               |
-| Bolivia                            | Germany       | Netherlands | Sweden              |
-| Brazil                             | Ghana         | New Zealand | Switzerland         |
-| Bulgaria                           | Guatemala     | Norway      | Taiwan              |
-| Canada                             | Honduras      | Panama      | Trinidad and Tobago |
-| China                              | Hong Kong SAR | Paraguay    | Turkey              |
-| Costa Rica                         | Hungary       | Peru        | United Kingdom      |
-| Czech Republic                     | Japan         | Philippines | United States       |
-| Denmark                            | India         | Poland      | Uruguay             |
-| Dominican Republic                 | Ireland       | Portugal    |                     |
-| Ecuador                            | Italy         | Qatar       |                     |
+| Argentina                          | Egypt         | Japan       | Serbia              |
+| Armenia                            | El Salvador   | Korea       | Singapore           |
+| Australia                          | Finland       | Malaysia    | South Africa        |
+| Austria                            | France        | Mexico      | Spain               |
+| Belgium                            | Georgia       | Netherlands | Sweden              |
+| Bolivia                            | Germany       | New Zealand | Switzerland         |
+| Brazil                             | Ghana         | Norway      | Taiwan              |
+| Bulgaria                           | Guatemala     | Panama      | Trinidad and Tobago |
+| Canada                             | Honduras      | Paraguay    | Turkey              |
+| China                              | Hong Kong SAR | Peru        | United Kingdom      |
+| Costa Rica                         | Hungary       | Philippines | United States       |
+| Czech Republic                     | India         | Poland      | Uruguay             |
+| Denmark                            | Ireland       | Portugal    |                     |
+| Dominican Republic                 | Italy         | Qatar       |                     |
+| Ecuador                            | Jamaica       | Romania     |                     |
