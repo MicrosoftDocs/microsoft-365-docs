@@ -101,7 +101,7 @@ Watch the following video to see an example of how you can simplify business pro
 
 :::image type="icon" source="media/virtual-appointment-teams.png":::
 
-Use the Virtual Appointments app (Preview) or the Bookings app and Microsoft Teams to schedule, manage, and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
+Use the Virtual Appointments app or the Bookings app and Microsoft Teams to schedule, manage, and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
 Watch the following video for an overview of the virtual appointments experience with the Bookings app and Teams:
 

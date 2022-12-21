@@ -63,7 +63,7 @@ The following scenarios are available for healthcare organizations:
 | Scenario | Description | Requirements |
 | -------- | -------- | -------- |
 | [Virtual Appointments with Teams and Electronic Healthcare Record (EHR) integration](#virtual-appointments-and-electronic-healthcare-record-ehr-integration) | Schedule, manage, and conduct virtual appointments with patients. This scenario connects Teams and the Cerner or Epic platform to support virtual appointments. | Active subscription to Microsoft Cloud for Healthcare or subscription to Microsoft Teams EHR connector standalone offer. <br> Users must have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings*. <br> Organizations must have Cerner version November 2018 or later or Epic version November 2018 or later. <br>Details for [Cerner EHR](ehr-admin-cerner.md#before-you-begin) and [Epic EHR](ehr-admin-epic.md#before-you-begin) requirements |
-| [Virtual Appointments with Teams](#virtual-appointments-and-electronic-healthcare-record-ehr-integration) | Schedule, manage, and conduct virtual appointments with patients. This scenario relies on the Virtual Appointments app (Preview) or the Bookings app to support virtual appointments. | The Virtual Appointments app or the Bookings app must be enabled for your organization. <br> All staff who conduct meetings must have a license that supports Teams Meeting scheduling*.|
+| [Virtual Appointments with Teams](#virtual-appointments-and-electronic-healthcare-record-ehr-integration) | Schedule, manage, and conduct virtual appointments with patients. This scenario relies on the Virtual Appointments app or the Bookings app to support virtual appointments. | The Virtual Appointments app or the Bookings app must be enabled for your organization. <br> All staff who conduct meetings must have a license that supports Teams Meeting scheduling*.|
 | [Care coordination and collaboration](#care-coordination-and-collaboration) | Clinicians and staff can collaborate internally on schedules, documents, tasks, and so on.| Users must have an appropriate license*. |
 
 *Office 365 A3, A5, E3, E5, F1, F3, Microsoft 365 A3, A5, E3, and E5, Business Standard are supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams/user-access).
@@ -91,7 +91,7 @@ Use the following poster to start envisioning what your organization can do with
 Use the complete meetings platform in Teams to schedule, manage, and conduct virtual appointments with patients.
 
 - If your organization already uses an Electronic Health Record (EHR) system, you can integrate Teams for a more seamless experience. Teams Electronic Health Record (EHR) connector makes it easy for clinicians to launch a virtual patient appointment or consultation with another provider in Teams directly from the EHR system. To learn more, see [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md) and [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md).
-- If you aren't using a supported EHR system, you can use the Virtual Appointments app (Preview) or the Bookings app in Teams. To learn more, see [Virtual Appointments with Teams](virtual-appointments.md).
+- If you aren't using a supported EHR system, you can use the Virtual Appointments app the Bookings app in Teams. To learn more, see [Virtual Appointments with Teams](virtual-appointments.md).
 
 ![Virtual Appointments with Microsoft Teams.](media/virtual-visits-teams.png)
 
