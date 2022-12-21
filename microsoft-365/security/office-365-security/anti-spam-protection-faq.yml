@@ -102,7 +102,7 @@ sections:
           
           Exchange Online customers: [Monitoring, Reporting, and Message Tracing in Exchange Online](/exchange/monitoring/monitoring)
           
-          Standalone EOP customers: [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
+          Standalone EOP customers: [Reporting and message trace in Exchange Online Protection](message-trace-scc.md)
           
       - question: |
           Someone sent me a message and I can't find it. I suspect that it may have been detected as spam. Is there a tool that I can use to find out?
