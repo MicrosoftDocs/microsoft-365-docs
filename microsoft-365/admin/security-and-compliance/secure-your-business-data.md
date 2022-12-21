@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 12/16/2022
+ms.date: 12/21/2022
 ms.localizationpriority: medium
 ms.collection:
 - highpri

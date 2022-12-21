@@ -48,7 +48,7 @@ You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messa
 
 <sup>\*</sup> You can't bypass malware filtering.
 
-<sup>\*\*</sup> You can bypass ZAP for malware by creating an anti-malware policy for the SecOps mailbox where ZAP for malware is turned off. For instructions, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+<sup>\*\*</sup> You can bypass ZAP for malware by creating an anti-malware policy for the SecOps mailbox where ZAP for malware is turned off. For instructions, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked with system overrides. Admin experiences will show these messages as due to either a **Phishing simulation** system override or a **SecOps mailbox** system override. Admins can filter and analyze on these system overrides in the following experiences:
 
