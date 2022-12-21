@@ -27,33 +27,16 @@ As a result of recent changes to the newest version of Microsoft Edge, SelectOnc
 ## Enable SelectOnce support in Microsoft Edge
 
 1. In Microsoft Edge, go to **edge://flags/#edge-select-once**.
-
 2. If the existing value is set to **Default** or **Disabled** in the dropdown list, change it to **Enabled**.
-
-   ![Select Enabled from dropdown list.](../media/SelectOnceimage1.png)
-
 3. Scroll down to the bottom of the browser window and select **Restart** to restart Microsoft Edge.
 
-   ![Select Restart.](../media/SelectOnceimage2.png)
-
-**Note:** Organizations can use Group Policy to disable SelectOnce support. To check if there's an organizational policy for SelectOnce support, go to **edge://policy**. The following screenshot shows that SelectOnce is enabled across the entire organization. If this policy value is set to **false**, you'll need to contact an admin in your organization.
-
-![List of Edge organizational policies.](../media/SelectOnceimage3.png)
+> [!NOTE]
+> Organizations can use Group Policy to disable SelectOnce support. To check if there's an organizational policy for SelectOnce support, go to **edge://policy**. The following screenshot shows that SelectOnce is enabled across the entire organization. If this policy value is set to **false**, you'll need to contact an admin in your organization.
 
 ## Install and run the eDiscovery Export Tool
 
 1. Select **Download results** on the flyout page of an export in Content Search or an eDiscovery case.
-
-   ![Select Download results on the flyout page to download search results.](../media/SelectOnceExport1.png)
-
-2. You'll be prompted with a confirmation to launch the tool, select **Open**.
-
-   ![Select Open to launch the eDiscovery Export Tool.](../media/SelectOnceimage4.png)
-
-   If the eDiscovery Export Tool isn't installed, you'll be prompted with a Security Warning, 
-
-   ![Select Install to install the eDiscovery Export Tool.](../media/SelectOnceimage5.png)
-
+2. You'll be prompted with a confirmation to launch the tool, select **Open**. If the eDiscovery Export Tool isn't installed, you'll be prompted with a Security Warning, 
 3. Select **Install**. After it's installed, the export tool will launch automatically.
 
 For more information, see the following articles:
