@@ -34,25 +34,19 @@ ms.collection:
 
 ## Guidelines for setting up Relevance training
 
- In Advance eDiscovery, in the **Cases** window, select a case and click **Go to case**. Click **Relevance** \> **Relevance setup**. Follow these recommended guidelines to set up Relevance. 
+ In Advance eDiscovery, in the **Cases** window, select a case and select **Go to case**. Select **Relevance** \> **Relevance setup**. Follow these recommended guidelines to set up Relevance. 
   
 - **Tagging**: The effectiveness of the iterative Relevance training process is dependent on the ability of the expert to tag the file samples with precision and consistency.
 
 - **Case issues**:
   
   - For each issue, use the same expert throughout the entire Relevance training process. Simultaneous tagging of the same issue by multiple experts is not permitted.
-  
   - Determine if each group of files is pertinent only to a specific issue.
-
   - If an issue is defined too generally, eDiscovery (Premium) may yield too many files that are not relevant. If an issue is defined too narrowly, the Relevance training process may take more time. 
-
   - During each Relevance training cycle, eDiscovery (Premium) focuses on a single active issue and interim sample results are displayed accordingly.
-
   - In a multiple-issue scenario, the Sampling mode enables the selection of issues to be included in processing. Issues defined as "off" are not handled until their Sampling mode is changed. An issue can be "idle" or "on" for only one expert.
-
   - eDiscovery (Premium) can be used to generate candidate privilege files. Set up a separate issue for privilege. If possible, train and cull for relevance first, and then train for privilege on the culled set only (reload the culled set as a separate case). 
-
-  - Batch calculation can be performed only when there are no open samples (when clicking Batch Calculation, there will be a list displayed of users with open samples). To "close" samples of other users (this should be performed only if these users are not tagging these samples), an Administrator can use the "Modify relevance" utility with the "All users sample" option.
+  - Batch calculation can be performed only when there are no open samples (when selecting Batch Calculation, there will be a list displayed of users with open samples). To "close" samples of other users (this should be performed only if these users are not tagging these samples), an Administrator can use the "Modify relevance" utility with the "All users sample" option.
 
 - **Metadata**: eDiscovery (Premium) focuses on content. It does not consider metadata as part of the relevance criteria.
 
@@ -65,9 +59,7 @@ ms.collection:
 The parameters described in this section are available in the eDiscovery (Premium) **Relevance** \> **Relevance setup**.
   
 - Issues must be assigned to a user who will train the files.
-
 - Imported files must then be added to the load being processed.
-
 - Define and organize issues carefully, as this can impact the Relevance training results.
 
 After parameters are set, the reviewer / expert can start training the files in the **Relevance** tab.
