@@ -39,11 +39,11 @@ Licensing for eDiscovery (Standard) requires the appropriate organization subscr
   -  Exchange online Plan 2 license
 
    OR
-   
+
   - A Microsoft 365 E3 or Office 365 E3 license or higher
 
    OR
-   
+
   - Microsoft 365 Business Premium (Exchange only) license
   
 
@@ -96,11 +96,8 @@ There are two subgroups in the eDiscovery Manager role group. The difference bet
 - **eDiscovery Administrator**: Can perform all case management tasks that an eDiscovery Manager can do. Additionally, an eDiscovery Administrator can:
 
   - View all cases that are listed on the eDiscovery (Standard) page.
-  
   - Manage any case in the organization after they add themselves as a member of the case.
-
   - Access and export case data for any case in the organization.
-  
   - Remove members from an eDiscovery case. Only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
 
   Because of the broad scope of access, an organization should have only a few admins who are members of the eDiscovery Administrators subgroup.
@@ -157,9 +154,7 @@ To get you started using eDiscovery (Standard), here's a simple workflow of crea
 2. **[Search for content](ediscovery-search-for-content.md)**. After you create eDiscovery holds, use the built-in search tool to search the content locations on hold. You can also search other content locations for data that may be relevant to the case. You can create and run different searches that are associated with the case. You use keywords, properties, and conditions to [build search queries](ediscovery-keyword-queries-and-search-conditions.md) that return search results with the data that's most likely relevant to the case. You can also:
 
    - View search statistics that may help you refine a search query to narrow the results.
-
    - Preview the search results to quickly verify whether the relevant data is being found.
-
    - Revise a query and rerun the search.
 
 3. **[Export and download search results](ediscovery-export-content.md)**. After you search for and find data that's relevant to your investigation, you can export it out of Office 365 for review by people outside of the investigation team. Exporting data is a two-step process. The first step is to export the results of a search in the case out of Office 365. This is accomplished by copying the results of a search to a Microsoft-provided Azure Storage location. The next step is to use the eDiscovery Export tool to download the content to a local computer. In addition to the exported data files, the export package contains an export report, a summary report, and an error report.

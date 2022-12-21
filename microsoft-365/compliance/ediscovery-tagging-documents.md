@@ -25,9 +25,7 @@ ms.custom: seo-marvel-mar2020
 Organizing content in a review set is important to complete various workflows in the eDiscovery process. This includes:
 
 - Culling unnecessary content
-
 - Identifying relevant content
-
 - Identifying content that must be reviewed by an expert or attorney
 
 When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags. For example, if the intent is to cull unnecessary content, a user can tag documents with a tag such as "non-responsive". After content has been reviewed and tagged, a review set search can be created to exclude any content tagged as "non-responsive". This process eliminates the non-responsive content from the next steps in the eDiscovery workflow. The tagging panel in a review set can be customized for every case so that the tags support the intended review workflow for the case.
@@ -42,7 +40,6 @@ When experts, attorneys, or other users review content in a review set, their op
 eDiscovery (Premium) provides two types of tags:
 
 - **Single choice tags**: Restricts reviewers to selecting a single tag within a group. These types of tags can be useful to ensure that reviewers don't select conflicting tags such as "responsive" and "non-responsive". Single choice tags appear as radio buttons.
-
 - **Multiple choice tags**: Allow reviews to select multiple tags within a group. These types of tags appear as checkboxes.
 
 ## Tag structure

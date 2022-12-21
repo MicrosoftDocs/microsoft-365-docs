@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -36,19 +35,14 @@ To view the details about a custodian, select the custodian from the list on the
 - Contact information
 
   - **Title**. The custodian's job title.
-  
   - **User principal name**. The user principal name(UPN) for the custodian, for example, AdeleV@contoso.onmicrosoft.com.
-  
   - **Location**. The office location in the custodian's place of business.
-  
   - **Manager**. The custodian's manager. The designated manager will receive any escalation communications for this custodian.
-  
   - **Department**. The name for the department in which the custodian works.
 
 - Case information
 
   - **Status**. The status of the custodian within the case. A status of **Active** indicates that the custodian is part of the case. If a custodian is released from a case, the status is changed to **Released**.
-  
   - **Hold**. Indicates if the custodian has been placed on hold.
 
 - Data locations and hold information
@@ -58,7 +52,6 @@ To view the details about a custodian, select the custodian from the list on the
   - **Custodial locations**. Shows the count and type of data sources (mailboxes, sites, and Teams) that are associated with the custodian and are part of the case.
 
     - Each data location shows its hold status. Possible values for hold status: **On hold**, **Not on hold**, and **In progress**.
-
     - If you don't see a hold status for a data source, please check the status of the custodian hold that's listed on the **Hold** tab for the case. The custodian hold identifies the specific data sources place on hold.
 
 ## Edit a custodian
@@ -78,19 +71,14 @@ To update the data sources that are associated with a custodian:
 4. To add or remove the primary mailbox and OneDrive account for the custodian:
 
     - Expand the custodian to view the primary data locations that have been previously associated with the custodian.
-
     - Select **Edit** next to **Mailbox** or **OneDrive** to add the custodian's mailbox or OneDrive location.
-
     - Select **Clear** next to **Mailbox** or **OneDrive** to remove the custodian's mailbox or OneDrive account from being associated as a data location for this custodian.
 
 5. To add or remove other mailboxes, sites, Teams, or Yammer groups to a specific custodian, select **Edit** next to the service to add a data location.
 
    - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then select **Add**.
-
    - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then select **Add**.
-
    - **Teams**: Use to assign the Microsoft Teams the custodian is currently a member of. Select the teams to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that team and assigns them to the custodian.
-
    - **Yammer**:  Use to assign the Yammer groups the custodian is currently a member of. Select the groups to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
 
    > [!NOTE]
@@ -123,7 +111,6 @@ Reindexing custodian data is a long-running process; the corresponding job that'
 For more information, see:
 
 - [Work with processing errors](ediscovery-processing-data-for-case.md)
-
 - [Manage jobs](ediscovery-managing-jobs.md)
 
 ## Release a custodian from a case

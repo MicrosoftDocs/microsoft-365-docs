@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -29,11 +28,8 @@ Use the built-in custodian management tool in Microsoft Purview eDiscovery (Prem
 You can add and manage custodians in eDiscovery (Premium) cases in four steps:
 
 1. Identify the custodians.
-
 2. Choose custodian data locations.
-
 3. Configure hold settings.
-
 4. Review the custodians and complete the process.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -45,14 +41,10 @@ To add custodians to a case, you must be a member of the eDiscovery Manager role
 ## Step 1: Identify custodians
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in with a user account that has been assigned the appropriate eDiscovery permissions.
-
 2. In the left navigation pane of the Microsoft Purview compliance portal, select **eDiscovery** > **eDiscovery (Premium)**, and select the [**Cases**](https://go.microsoft.com/fwlink/p/?linkid=2173764) tab.
-
 3. Select the case that you want to add custodians to.
-
 4. Select the **Data sources** tab, and then select **Add data source** > **Add new custodians**.
-
-5. Add one or more users in your organization as custodians to the case by typing the first part of a person's name or alias. Both active and inactive users are searched. After you find the correct person, select their name to add them to the list. 
+5. Add one or more users in your organization as custodians to the case by typing the first part of a person's name or alias. Both active and inactive users are searched. After you find the correct person, select their name to add them to the list.
 
 ## Step 2: Choose custodian data locations
 
@@ -73,11 +65,8 @@ To associate other mailboxes, sites, Teams, or Yammer groups to a specific custo
 1. Expand a custodian to display the following services to associate data locations with the custodian. Select **Edit** next to a service to add a data location.
 
    - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then select **Add**.
-
-   - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then select **Add**. If a user is inactive, their OneDrive site will need to be added as an additional SharePoint location here. 
-
+   - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then select **Add**. If a user is inactive, their OneDrive site will need to be added as an additional SharePoint location here.
    - **Teams**: Use to assign the Microsoft Teams the custodian is currently a member of. Select the teams to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that team and assigns them to the custodian.
-
    - **Yammer**:  Use to assign the Yammer groups the custodian is currently a member of. Select the groups to assign to the custodian and then select **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
 
    > [!NOTE]
@@ -93,10 +82,7 @@ To associate other mailboxes, sites, Teams, or Yammer groups to a specific custo
 
 To place the custodians and data sources on hold:
 
-1. On the **Hold settings** page, you can apply a hold to individual custodians by selecting the checkbox under the **Hold** column.
-
-   Alternatively, you can place all custodians on hold by selecting the **Hold** checkbox at the top of the column.
-
+1. On the **Hold settings** page, you can apply a hold to individual custodians by selecting the checkbox under the **Hold** column. Alternatively, you can place all custodians on hold by selecting the **Hold** checkbox at the top of the column.
 2. Verify the custodian hold selections and then select **Next**.
 
    > [!NOTE]
@@ -107,7 +93,6 @@ To place the custodians and data sources on hold:
 Before you actually add the custodians to the case, you can review the list of custodians, the data locations assigned to them, and the hold settings.
 
 1. Verify and review all the data sources count and the hold setting associated with each custodian in the table. If necessary, go back to the **Identify custodian** or **Hold settings** pages to make any changes.
-
 2. Select **Submit** to add custodians and their data locations to the case and apply all custodial hold settings.
 
    The new custodians are added to the case and displayed on the **Data sources** tab.

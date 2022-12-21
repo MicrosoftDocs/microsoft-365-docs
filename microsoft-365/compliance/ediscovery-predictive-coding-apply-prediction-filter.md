@@ -26,7 +26,6 @@ After you create a predictive coding model in Microsoft Purview eDiscovery (Prem
 Here are two ways you can use the prediction score filter:
 
 - Prioritize the review of items in a review set that the model has predicted are relevant.
-
 - Cull items from the review set that the model has predicted are not relevant. Alternative, you can use the prediction score filter to de-prioritize the review of non-relevant items.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -34,7 +33,6 @@ Here are two ways you can use the prediction score filter:
 ## Before you apply a prediction score filter
 
 - Create a predictive coding model so that a corresponding prediction score filter is created.
-
 - You can apply a prediction score filter after any of the training rounds. But you may want to wait after performing several rounds or until the model is stable before using the prediction score filter.
 
 ## Apply a prediction score filter

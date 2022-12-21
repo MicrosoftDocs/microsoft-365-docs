@@ -59,5 +59,4 @@ As a result of recent changes to the newest version of Microsoft Edge, SelectOnc
 For more information, see the following articles:
 
 - [Export Content Search results](export-search-results.md)
-
 - [How to enable experiment flags in Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)

@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -95,7 +94,6 @@ Historical versions are different and more efficient than "collecting all versio
 No. Once historical versions is enabled for a site, the performance for the site will the same as it was before the site was enabled. The crawling and indexing processes that are performed on the site after it's enabled will occur at a slower rate and be performed during off-peak hours. Enabling historical versions for a site will kick off a backfill process, which finds all the versions of documents on the site and then sends those versions to the index. Depending on the number of document versions for site, this backfill process might impact service health. We have mitigated this potential impact in the following ways:
 
 - We make the best effort to process these versions during off-peak hours.
-
 - We process document versions in our lowest priority queues, which allows most service resources to be delegated to user changes.
 
 **How long do I have to wait after a site is activated until all historical versions of documents on that site are all indexed and available for eDiscovery search?**

@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/27/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -49,7 +48,6 @@ To view the custodian hold policy:
 When you create a hold, you have the following options to scope the content that is held in the specified content locations:
 
 - You create an infinite hold where all content is placed on hold. Alternatively, you can create a query-based hold where only content that matches a search query is placed on hold.
-  
 - You can specify a date range to hold only the content that was sent, received, or created within that date range. Alternatively, you can hold all content regardless of when it was sent, received, or created.
 
 To create a non-custodial hold for an eDiscovery (Premium) case:

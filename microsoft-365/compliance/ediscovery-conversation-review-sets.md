@@ -29,11 +29,8 @@ The conversation reconstruction feature in Microsoft Purview eDiscovery (Premium
 With conversation reconstruction, you can use built-in capabilities to reconstruct, review, and export threaded conversations. Use eDiscovery (Premium) conversation reconstruction to:
 
 - Preserve unique message-level metadata across all messages within a conversation.
-
 - Collect contextual messages around your search results.
-
 - Review, annotate, and redact threaded conversations.
-
 - Export individual messages or threaded conversations
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]

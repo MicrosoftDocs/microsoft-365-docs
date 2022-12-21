@@ -33,11 +33,8 @@ As a result of this new and improved eDiscovery functionality in the compliance 
 - The Exchange Online PowerShell cmdlets that support In-Place eDiscovery and In-Place Holds (these cmdlets are collectively identified as **-MailboxSearch* cmdlets). This includes the following cmdlets:
 
   - [New-MailboxSearch](/powershell/module/exchange/new-mailboxsearch)
-
   - [Start-MailboxSearch](/powershell/module/exchange/start-mailboxsearch)
-
   - [Stop-MailboxSearch](/powershell/module/exchange/stop-mailboxsearch)
-
   - [Set-MailboxSearch](/powershell/module/exchange/set-mailboxsearch)
 
    > [!NOTE]
@@ -48,11 +45,8 @@ As a result of this new and improved eDiscovery functionality in the compliance 
 - The following operations in the Exchange Web Services API:
 
    - [GetSearchableMailboxes](/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
-
    - [SearchMailboxes](/exchange/client-developer/web-service-reference/searchmailboxes-operation)
-   
    - [SetHoldOnMailboxes](/exchange/client-developer/web-service-reference/setholdonmailboxes-operation)
-
    - [GetHoldOnMailboxes](/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
 - [Microsoft Purview eDiscovery (Premium) v1.0](./ediscovery-overview.md), which is the first version of eDiscovery (Premium) that's accessed through a Microsoft Purview eDiscovery (Standard) case in the compliance portal. The retirement of eDiscovery (Premium) v1.0 doesn't impact your ability to create and manage eDiscovery (Standard) cases.
@@ -73,17 +67,13 @@ Because all of these capabilities (except for copying search results to a discov
 ### Scope of affected organizations
 
 - Office 365 and Microsoft 365 Enterprise organizations
-
 - Office 365 and Microsoft 365 Education organizations
-
 - Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
-
 - Office 365 Germany
 
 ### Timeline for retirement
 
 - July 1, 2020: You won't be able to create new searches and holds, but you can still run, edit, and delete existing searches at your own risk. Microsoft Support will no longer In-Place eDiscovery & Holds in the EAC.
-
 - October 1, 2020: The In-Place eDiscovery & Holds functionality in the EAC will be placed in a read-only mode. This means you'll only be able to remove existing searches and holds.
 
 ### Alternative tools
@@ -176,17 +166,13 @@ Because these capabilities are now available in the [<span class="underline">com
 ### Scope of affected organizations
 
 - Office 365 and Microsoft 365 Enterprise organizations
-
 - Office 365 and Microsoft 365 Education organizations
-
 - Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
-
 - Office 365 Germany
 
 ### Timeline
 
 - July 1, 2020: You won't be able to use **New-MailboxSearch** to create new In-Place eDiscovery searches and In-Place Holds, but you can still use cmdlets to run, edit, and delete existing searches and holds at your own risk. Microsoft Support will no longer provide assistance for these types of searches and holds.
-
 - October 1, 2020: As previously stated, The In-Place eDiscovery & Holds functionality in the EAC will be placed in a read-only mode. That also means that you won't be able to use the **New-MailboxSearch**, **Start-MailboxSearch**, or **Set-MailboxSearch** cmdlets. You'll only be able to get and remove existing searches and holds.
 
 ### Alternative tools
@@ -257,16 +243,13 @@ The **Search-Mailbox** cmdlet in Exchange Online PowerShell is being retired as 
 ### Scope of affected organizations
 
 - Office 365 and Microsoft 365 Enterprise organizations
-
 - Office 365 and Microsoft 365 Education organizations
-
 - Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
-
 - Office 365 Germany
 
 ### Timeline
 
--  July 1, 2020: The **Search-Mailbox** cmdlet will no longer be available and Microsoft Support will no longer provide assistance.
+July 1, 2020: The **Search-Mailbox** cmdlet will no longer be available and Microsoft Support will no longer provide assistance.
 
 ### Alternative tools
 
@@ -329,16 +312,13 @@ These operations in the Exchange Web Services API are used by the In-Place eDisc
 ### Scope of affected organizations
 
 - Office 365 and Microsoft 365 Enterprise organizations
-
 - Office 365 and Microsoft 365 Education organizations
-
 - Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
-
 - Office 365 Germany
 
 ### Timeline
 
-- July 1, 2020: The GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes, and GetHoldOnMailboxes operations will no longer be available, and Microsoft Support will no longer provide assistance.
+July 1, 2020: The GetSearchableMailboxes, SearchMailboxes, SetHoldOnMailboxes, and GetHoldOnMailboxes operations will no longer be available, and Microsoft Support will no longer provide assistance.
 
 ## eDiscovery (Premium) v1.0
 
@@ -361,19 +341,14 @@ At this time, we recommend that you begin to transition your eDiscovery workflow
 ### Scope of affected organizations
 
 - Office 365 and Microsoft 365 Enterprise organizations
-
 - Office 365 and Microsoft 365 Education organizations
-
 - Office 365 and Microsoft 365 Government organizations; this includes GCC, GCC High, and DoD
-
 - Office 365 Germany
 
 ### Timeline
 
 - July 1, 2020: You won't be able to create new eDiscovery (Premium) v1.0  cases.
-
 - October 1, 2020: You won't be able to add new data (Prepare search results for eDiscovery (Premium)) to any cases. You'll be able to continue working with data in existing cases at your own risk. Microsoft Support will no longer provide assistance. 
-
 - December 31, 2020: You won't be able to access eDiscovery (Premium) v1.0 cases.
 
 ### Alternative tools

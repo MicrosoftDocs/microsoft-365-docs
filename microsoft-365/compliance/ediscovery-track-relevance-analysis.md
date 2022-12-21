@@ -7,7 +7,6 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 titleSuffix: Office 365
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -123,9 +122,7 @@ The **Training Progress** pane includes a training progress graph and quality in
 **Training quality indicator**: Displays the rating of the tagging consistency as follows:
   
 - **Good**: Files are tagged consistently. (Green light displayed)
-  
 - **Medium**: Some files may be tagged inconsistently. (Yellow light displayed)
-
 - **Warning**: Many files may be tagged inconsistently. (Red light displayed)
 
 **Training progress graph**: Shows the degree of Relevance training stability after many Relevance training cycles in comparison to the F-measure value. As we move from the left to the right across the graph, the confidence interval narrows and is used, along with the F-measure, by eDiscovery (Premium) Relevance to determine stability when the Relevance training results are optimized.
@@ -138,13 +135,9 @@ The **Training Progress** pane includes a training progress graph and quality in
 The **Batch calculation results** pane includes the number of files that were scored for Relevance, as follows: 
   
 - **Success**
-  
 - **Empty**: Contains no text, for example, only spaces/tabs
-  
 - **Failed**: Due to excessive size or could not be read
-  
 - **Ignored**: Due to excessive size
-  
 - **Nebulous**: Contains meaningless text or no features relevant to the issue
   
 > [!NOTE]
@@ -159,11 +152,7 @@ The **Training statistics** pane displays statistics and graphs based on results
 This view shows the following:
   
 - **Review-recall ratio**: Comparison of results according to Relevance scores in a hypothetically linear review. Recall is estimated given the review set size set.
-  
 - **Parameters**: Cumulative calculated statistics pertaining to the review set in relation to the file population for the entire case.
-  
 - **Review**: Percentage of files to review based on this cutoff.
-  
 - **Recall**: Percentage of Relevant files in the review set. 
-  
 - **Distribution by relevance score**: Files in the dark gray display to the left are below the cutoff score. A tool-tip displays the Relevance score and the related percentage of files in the review file set in relation to the total files.

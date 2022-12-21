@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 05/13/2022
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -142,15 +141,9 @@ For a list of indexing limits for SharePoint documents, see [Search limits for S
 ## More information about partially indexed items
 
 - As previously stated, because message and document properties and their metadata are indexed, a keyword search might return results if that keyword appears in the indexed metadata. However, that same keyword search might not return the same item if the keyword only appears in the content of an item with an unsupported file type. In this case, the item would be returned as a partially indexed item.
-
 - If a partially indexed item is included in the search results because it matched the search query criteria, then it won't be included as a partially indexed item in the estimated search statistics. Also, it won't be included with partially indexed items when you export search results.
-
 - Although a file type is supported for indexing and is indexed, there can be indexing or search errors that will cause a file to be returned as a partially indexed item. For example, searching a large Excel file might be partially successful (because the first 4 MB are indexed), but then fails because the file size limit is exceeded. In this case, it's possible that the same file is returned with the search results and as a partially indexed item.
-
 - Files that are encrypted with [Microsoft encryption technologies](encryption.md) and are attached to an email message that matches the criteria of a search can be previewed and will be decrypted when exported. At this time, files that are encrypted with Microsoft encryption technologies (and stored in SharePoint or OneDrive for Business) are partially indexed. 
-
 - Email messages encrypted with S/MIME are partially indexed. This includes encrypted messages with or without file attachments.
-
 - Email messages protected using Azure Rights Management are indexed and will be included in the search results if they match the search query. Rights-protected email messages are decrypted and can be previewed and exported. This functionality requires that you're assigned the RMS Decrypt role, which is assigned by default to the eDiscover Manager role group.
-
 - If you create a query-based hold that's associated with an eDiscovery case, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria for the hold. For more information about creating query-based eDiscovery holds, see [Create an eDiscovery hold](ediscovery-create-holds.md).

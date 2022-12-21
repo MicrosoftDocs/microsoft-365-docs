@@ -73,7 +73,5 @@ After the search is completed, you can preview the search results. If necessary,
 ## More information about searching content locations
 
 - When you select **Choose users, groups, or teams** to specify mailboxes to search, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add recipients to this list, select **Choose users, groups, or teams**, type a name (a minimum of three characters) in the search box, select the check box next to the name, and then select **Choose**.
-
 - You can add inactive mailboxes, Microsoft Teams, Yammer Groups, Office 365 Groups, and distribution groups to the list of mailboxes to search. Dynamic distribution groups aren't supported. If you add Microsoft Teams, Yammer Groups, or Office 365 Groups, the group or team mailbox is searched; the mailboxes of the group members aren't searched.
-
 - To add sites to the search, turn on the toggle and then select **Choose sites**. Type the URL for each site that you want to search. You can also add the URL for the SharePoint site for a Microsoft Team, a Yammer Group, or an Office 365 Group.

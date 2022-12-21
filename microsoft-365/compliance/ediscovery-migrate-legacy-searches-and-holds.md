@@ -154,23 +154,16 @@ If you migrate an In-Place eDiscovery search but don't associate it with an eDis
 - For more information about In-Place eDiscovery & Holds in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, see:
 
   - [In-Place eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
-
   - [In-Place Hold and Litigation Hold](/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 - For more information about the PowerShell cmdlets used in the article, see:
 
   - [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch)
-
   - [New-ComplianceCase](/powershell/module/exchange/new-compliancecase)
-
   - [New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy)
-
   - [New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule)
-
   - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
-
   - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
-
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
 - For more information about the compliance portal, see [Overview of the Microsoft Purview compliance portal](microsoft-365-compliance-center.md).

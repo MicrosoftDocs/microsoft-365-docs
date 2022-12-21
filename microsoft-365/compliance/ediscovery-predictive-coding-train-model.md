@@ -62,9 +62,7 @@ Each round of training (both those in progress and those that are complete) is d
 After you perform the first training round, a job is started that does the following things:
 
 - Based on how you labeled the 40 items in the training set, the model learns from your labeling and updates itself to become more accurate.
-
 - The model then processes each item in the entire review set and assigns a prediction score between **0** (not relevant) and **1** (relevant).
-
 - The model assigns a prediction score to the 10 items in the control set that you labeled during the training round. The model compares the prediction score of these 10 items with the actual label that you assigned to the item during the training round. Based on this comparison, the model identifies the following classification (called the *Control set confusion matrix*) to assess the model's prediction performance:
 
   <br>
@@ -86,9 +84,7 @@ After you perform the first training round, a job is started that does the follo
 After you perform subsequent training rounds (after the first training round), the model does the following things:
 
 - The model is updated based on the labels that you applied to the training set in that round of training.
-
 - The system evaluates the model's prediction score on the items in the control set and check whether the score aligns with how you labeled items in the control set. The evaluation is performed on all labeled items from control set for all training rounds. The results of this evaluation are incorporated in the dashboard on the **Overview** tab for the model.
-
 - The updated model reprocesses every item in the review set and assign each item an updated prediction score.
 
 ## Next steps

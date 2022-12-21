@@ -26,9 +26,7 @@ ms.custom:
 Microsoft Purview eDiscovery (Premium) supports double-byte character set languages (these include Simplified Chinese, Traditional Chinese, Japanese, and Korean, which are collectively known as *CJK* languages) for the following advanced scenarios in a review set:
 
 - When you [query the data in a review set](ediscovery-review-set-search.md).
-
 - When you [tag documents in a review set](ediscovery-tagging-documents.md).
-
 - When you [analyze case data in a review set](ediscovery-analyzing-data-in-review-set.md) by using near duplicate detection, email threading, and themes analytics.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -48,7 +46,6 @@ If you're certain that content locations or items contain CJK characters, but se
 It depends on your search scenario.
 
 - When you [query data in a review set](ediscovery-review-set-search.md) in eDiscovery (Premium), you can search for multiple languages.
-
 - When you [create a search to collect data](ediscovery-create-draft-collection.md), create separate collections for each language you're targeting. For example, if you are searching for a document that contains both Chinese and Korean, select Chinese for your first collection and select Korean for your second collection.
 
 **I don't see the query language-country/region icon to select a language for queries in a review set. How can I specify a query language in a review set search?**
@@ -74,11 +71,7 @@ For information about how to change display language and time zone, see [How to 
 ## Known issues
 
 - OCR doesn't support CJK characters from image files
-
 - Email files (such as *.eml and *.msg) in [Annotate view](ediscovery-view-documents-in-review-set.md#annotate-view) aren't supported for CJK languages.
-
 - Search hit highlighting in [Text view](ediscovery-view-documents-in-review-set.md#text-view) isn't supported for CJK languages.
-
 - The [Relevance module](using-relevance.md) used to analyze data doesn't support CJK languages.
-
 - [Query-based holds](ediscovery-managing-holds.md#manage-non-custodial-holds) aren't supported for CJK languages.

@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -65,16 +64,12 @@ You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange 
 The results of an audit log search are displayed under Results on the Custodian Audit log page. A maximum of 5,000 (newest) events are displayed in increments of 150 events. To display more events you can use the scroll bar in the Results pane or you can press Shift + End to display the next 150 events.
 
 The results contain the following information about each event returned by the search.
+
 - **Date**: The date and time (in UTC format) when the event occurred.
-
 - **IP address**: The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.
-
 - **User**: The user (or service account) who performed the action that triggered the event.
-
 - **Activity**: The activity performed by the user. This value corresponds to the activities that you selected in the Activities drop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet.
-
 - **Item**: The object that was created or modified as a result of the corresponding activity. For example, the file that was viewed or modified or the user account that was updated. Not all activities have a value in this column.
-
 - **Detail**: Additional detail about an activity. Again, not all activities will have a value.
 
 ## Step 3: Filter the search results
@@ -83,10 +78,10 @@ In addition to sorting, you can also filter the results of an audit log search. 
 
 To filter the results:
 
- 1. Create and run an audit log search.
+1. Create and run an audit log search.
   
 2. When the results are displayed, select **Filter results**.
- 
+
 3. Keyword boxes are displayed under each column header.
   
 4. Select one of the boxes under a column header and type a word or phrase, depending on the column you're filtering on. The results will dynamically readjust to display the events that match your filter.
@@ -102,12 +97,11 @@ You can export the results of an audit log search to a comma separated value (CS
 2. Select Export results and select one of the following options:
 
     - **Save loaded results:** Choose this option to export only the entries that are displayed under **Results** on the **Custodian Audit log search** page. The CSV file that is downloaded contains the same columns (and data) displayed on the page (Date, User, Activity, Item, and Details). An additional column (titled **More**) is included in the CSV file that contains more information from the audit log entry. Because you're exporting the same results that are loaded (and viewable) on the Audit log search page, a maximum of 5,000 entries are exported.
-        
+
     - **Download all results:** Choose this option to export all entries from the audit log that meet the search criteria. For a large set of search results, choose this option to download all entries from the audit log in addition to the 5,000 results that can be displayed on the **Custodian Audit log** search page. This option will download the raw data from the audit log to a CSV file, and contains additional information from the audit log entry in a column named AuditData. It may take longer to download the file if you choose this export option because the file may be much larger than the one that's downloaded if you choose the other option.
-    
+
       > [!IMPORTANT]
       > You can download a maximum of 50,000 entries to a CSV file from a single audit log search. If 50,000 entries are downloaded to the CSV file, you can probably assume there are more than 50,000 events that met the search criteria. To export more than this limit, try using a date range to reduce the number of audit log entries. You might have to run multiple searches with smaller date ranges to export more than 50,000 entries.
-        
 
 3. After you select an export option, a message is displayed at the bottom of the window that prompts you to open the CSV file, save it to the Downloads folder, or save it to a specific folder
 

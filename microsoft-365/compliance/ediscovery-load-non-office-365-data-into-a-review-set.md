@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -32,13 +31,9 @@ Not all documents that you need to analyze in Microsoft Purview eDiscovery (Prem
 Using the upload non-Microsoft 365 feature described in this article requires that you have the following:
 
 - All custodians that you want to associate non-Microsoft 365 content to must be assigned the appropriate license. For more information, see [Get started with eDiscovery (Premium)](ediscovery-premium-get-started.md#step-1-verify-and-assign-appropriate-licenses).
-
 - An existing eDiscovery (Premium) case.
-
 - Custodians must be added to the case before you can upload and associate the non-Microsoft 365 data to them.
-
 - Non-Microsoft 365 data must be a file type that's supported by eDiscovery (Premium). For more information, see [Supported file types in eDiscovery (Premium)](ediscovery-supported-file-types.md).
-
 - All files that are uploaded to a review set must be located in folders, where each folder is associated with a specific custodian. The names for these folders must use the following naming format: *alias@domainname*. The alias@domainname must be the user's Microsoft 365 alias and domain. You can collect all the alias@domainname folders in a root folder. The root folder can only contain the alias@domainname folders. Loose files in the root folder aren't supported.
 
    The folder structure for the non-Microsoft 365 data that you want to upload would be similar to the following example:
@@ -52,7 +47,6 @@ Using the upload non-Microsoft 365 feature described in this article requires th
    ![Non-Microsoft 365 data upload folder structure.](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
 - An account that is assigned to the eDiscovery Manager role group (and added as eDiscovery Administrator).
-
 - The AzCopy v10 tool installed on a computer that has access to the non-Microsoft 365 content folder structure. To install AzCopy, see [Transfer data with the AzCopy v10 on Windows](/azure/storage/common/storage-use-azcopy-v10). Be sure to install AzCopy in the default location, which is **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. You must use AzCopy v10. Other versions of AzCopy may not work when loading non-Microsoft 365 data in eDiscovery (Premium).
 
 

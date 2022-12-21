@@ -45,7 +45,7 @@ Perform the following procedure on the computer that you'll use to export the re
     In the example above, the  `PstSizeLimitInBytes` value is set to 1,073,741,824 bytes or approximately 1 GB. Here are some other sample values for the  `PstSizeLimitInBytes` setting. 
 
     |**Size in GB (approx.)**|**Size in bytes**|
-    |:-----|:-----|
+    |:-----------------------|:----------------|
     |0.7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |

@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -34,13 +33,12 @@ Machine learning (ML) capabilities in Microsoft Purview eDiscovery (Premium) can
 2. Select **Add tag group** and then select **Add smart tag group**.
 
 3. Select the ML model that you want to associate to the tag group.
-    
-   This creates a tag group and *N* child tags, where *N* is the number of possible outputs of the model. For example, the [attorney-client privilege detection model](ediscovery-attorney-privilege-detection.md) has two possible outputs: 
 
-   - **Positive** – Use to tag documents that contain attorney-client privileged content.
-   
-   - **Negative** – Use to tag documents that don't contain attorney-client privileged content.
-    
+   This creates a tag group and *N* child tags, where *N* is the number of possible outputs of the model. For example, the [attorney-client privilege detection model](ediscovery-attorney-privilege-detection.md) has two possible outputs:
+
+   - **Positive**: Use to tag documents that contain attorney-client privileged content.
+   - **Negative**: Use to tag documents that don't contain attorney-client privileged content.
+
     If you select this model, a tag group with two child tags is created (one child tag named **Positive** and the other named **Negative**) for the review set. In this example, each child tag corresponds to one of the possible outputs from the attorney-client privilege detection model.
 
 4. Optionally, you can rename the tag group and the child tags. For example, you could rename the **Positive** tag to **Privileged** and the **Negative** tag to **Not privileged**.

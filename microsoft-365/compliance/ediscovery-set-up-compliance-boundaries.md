@@ -37,29 +37,21 @@ In this example, Contoso LTD is an organization that consists of two subsidiarie
 - [Role groups](ediscovery-assign-permissions.md#rbac-roles-related-to-ediscovery) provide the following functions for compliance boundaries:
 
   - Control who can see the eDiscovery cases in the Microsoft Purview compliance portal. This means that eDiscovery managers and investigators can only see the eDiscovery cases in their agency.
-
   - Control who can assign members to an eDiscovery case. This means eDiscovery managers and investigators can only assign members to cases that they themselves are a member of.
-
   - Control the eDiscovery-related tasks that members can perform by adding or removing roles that assign specific permissions.
 
 - When a search permissions filter is applied to a role group, members of the role group can perform the following search-related actions as long as the permissions to perform an action is assigned to the role group:
 
   - Search for content
-
   - Preview search results
-
   - Export search results
-
   - Purge items returned by a search
 
 Here's the process for setting up compliance boundaries:
   
 [Step 1: Identify a user attribute to define your agencies](#step-1-identify-a-user-attribute-to-define-your-agencies)
-
 [Step 2: Create a role group for each agency](#step-2-create-a-role-group-for-each-agency)
-
 [Step 3: Create a search permissions filter to enforce the compliance boundary](#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
-
 [Step 4: Create an eDiscovery case for an intra-agency investigations](#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -75,13 +67,9 @@ The first step is to choose an attribute to use that will define your agencies. 
 Here are some examples of user attributes that you can use for compliance boundaries:
   
 - Company
-
 - CustomAttribute1 - CustomAttribute15
-
 - Department
-
 - Office
-
 - CountryOrRegion (Two-letter country code)
 
 For a complete list, see the full list of supported [mailbox filters](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties).
@@ -95,11 +83,8 @@ To create the role groups, go to the **Permissions** page in the compliance port
 Using the Contoso compliance boundaries scenario, four role groups need to be created and the appropriate members added to each one.
   
 - Fourth Coffee eDiscovery Managers
-
 - Fourth Coffee Investigators
-
 - Coho Winery eDiscovery Managers
-
 - Coho Winery Investigators
   
 To meet the requirements of the Contoso compliance boundaries scenario, you would also remove the **Hold** and **Export** roles from the investigators role groups to prevent investigators from placing holds on content locations and exporting content from a case.
@@ -241,11 +226,8 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 Keep the following things in mind when searching and exporting content in multi-geo environments.
   
 - The *Region* parameter doesn't control searches of Exchange mailboxes. All datacenters will be searched when you search mailboxes. To limit the scope of which Exchange mailboxes are searched, use the *Filters* parameter when creating or changing a search permissions filter.
-
 - If it's necessary for an eDiscovery Manager to search across multiple SharePoint regions, you need to create a different user account for that eDiscovery manager to use in the search permissions filter to specify the region where the SharePoint sites or OneDrive accounts are located. For more information about setting this up, see the "Searching for content in a SharePoint Multi-Geo environment" section in [Content Search](ediscovery-content-search-reference.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
-
 - When searching for content in SharePoint and OneDrive, the *Region* parameter directs searches to either the primary or satellite location where the eDiscovery manager will conduct eDiscovery investigations. If an eDiscovery manager searches SharePoint and OneDrive sites outside of the region that's specified in the search permissions filter, no search results are returned.
-
 - When exporting search results from eDiscovery (Standard), content from all content locations (including Exchange, Skype for Business, SharePoint, OneDrive, and other services that you can search by using the Content Search tool) are uploaded to the Azure Storage location in the datacenter that's specified by the *Region* parameter. This helps organizations stay within compliance by not allowing content to be exported across controlled borders. If no region is specified in the search permissions filter, content is uploaded to the organization's primary datacenter.
 
   When exporting content from eDiscovery (Premium), you can't control where content is uploaded by using the *Region* parameter. Content is uploaded to an Azure Storage location in a datacenter in your organization's central location. For a list of geo locations based on your central location, see [Microsoft 365 Multi-Geo eDiscovery configuration](../enterprise/multi-geo-ediscovery-configuration.md).
@@ -277,21 +259,15 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 Keep the following limitations in mind when managing eDiscovery cases and investigations that use of compliance boundaries.
   
 - When creating and running a search, you can select content locations that are outside of your agency. However, because of the search permissions filter, content from those locations isn't included in the search results.
-
 - Compliance boundaries don't apply to holds in eDiscovery cases. That means an eDiscovery manager in one agency can place a user in a different agency on hold. However, the compliance boundary will be enforced if the eDiscovery manager searches the content locations of the user who was placed on hold. That means the eDiscovery manager won't be able search the user's content locations, even though they were able to place the user on hold.
-
 - If you're assigned a search permissions filter (either a mailbox or a site filter) and you try to export unindexed items for a search that includes all SharePoint sites in your organization, you'll receive the following error message: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied`. If you're assigned a search permissions filter and you want to export unindexed items from SharePoint, you'll have to rerun the search and include specific SharePoint sites to search. Otherwise, you'll only be able to export indexed items from a search that includes all SharePoint sites. For more information about the options when you export search results, see [Export Content search results](export-search-results.md#step-1-prepare-search-results-for-export).
-
 - Search permissions filters aren't applied to Exchange public folders.
 
 ## More information
 
 - If a mailbox is de-licensed or soft-deleted, the user will no longer be considered within the compliance boundary. If a hold was placed on the mailbox when it was deleted, the content preserved in the mailbox is still subject to a compliance boundary or search permissions filter.
-
 - If compliance boundaries and search permissions filters are implemented for a user, then we recommend that you don't delete a user's mailbox and not their OneDrive account. In other words, if you delete a user's mailbox, you should also remove the user's OneDrive account since mailbox_RecipientFilter is used to enforce search permission filter for OneDrive.
-
 - Compliance boundaries and search permissions filters depend on attributes being stamped on content in Exchange, OneDrive, and SharePoint and the subsequent indexing of this stamped content.
-
 - We don't recommend using exclusion filters (such as using `-not()` in a search permissions filter) for a content-based compliance boundary. Using an exclusion filter can have unexpected results if content with recently updated attributes hasn't been indexed.
 
 ## Frequently asked questions

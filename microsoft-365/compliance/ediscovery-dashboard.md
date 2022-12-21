@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/05/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -60,7 +59,7 @@ For some cases in Microsoft Purview eDiscovery (Premium), you may have a large v
 
     c. Select a chart type to display the data from the selected pivot property.
 
-  6. Select **Add** to create the custom widget and display it on the **Search profile view** page.
+7. Select **Add** to create the custom widget and display it on the **Search profile view** page.
 
 ## Step 2: Create a review set search query
 

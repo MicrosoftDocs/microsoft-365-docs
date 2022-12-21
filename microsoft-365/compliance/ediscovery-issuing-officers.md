@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -25,7 +24,6 @@ search.appverid:
 When you or others create a hold notification or other type of communication that is sent to a user who is a custodian in case, you have to specify an issuing officer. The notification is sent to the custodian on behalf of the specified issuing officer. For example, a paralegal in your organization might be responsible for creating and sending hold notifications to custodians in a case. In this scenario, the paralegal can specify an attorney in the organization as the issuing officer. Who can be specified as an issuing officer? There are two types of users who can be selected as an issuing officer for a custodian communication:
 
 - Any member of the specific case the communication is being sent in behalf of.
-
 - Any user who is added to a list of organization-wide issuing officers. Users from this list can be added an issuing officer to any case in your organization.
 
 This article explains how to add and remove users to the list of organization-wide issuing officers.
@@ -35,9 +33,7 @@ This article explains how to add and remove users to the list of organization-wi
 ## Before you add an issuing officer
 
 - You must be an eDiscovery Administrator in your organization to add or remove issuing officers. For more information, see [Assign eDiscovery permissions in the Microsoft Purview compliance portal](ediscovery-assign-permissions.md)  
-
 - The user who is added as an issuing officer must have an active mailbox in your Microsoft 365 organization.
-
 - Your organization can have a maximum of 15 issuing officers. Members of a case who can be specified as an issuing officer aren't counted toward this limit. This limit only applies to the number of users that can be added to the **Issuing officers** page in eDiscovery (Premium).
 
 ## Add an issuing officer

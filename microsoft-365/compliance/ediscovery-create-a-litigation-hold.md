@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 07/20/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -30,11 +29,8 @@ You can place a mailbox on Litigation hold to retain all mailbox content, includ
 Here's what happens when you create a Litigation hold.
   
 - Items that are permanently deleted by the user are retained in the Recoverable Items folder in the user's mailbox for the duration of the hold.
-
 - Items that are purged from the Recoverable Items folder by the user are retained for the duration of the hold.
-
 - The storage quota for the Recoverable Items folder is increased from 30 GB to 110 GB.
-
 - Items in the user's primary and the archive mailboxes are retained
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]

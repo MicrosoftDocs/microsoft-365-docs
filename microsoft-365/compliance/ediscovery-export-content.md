@@ -63,7 +63,5 @@ After a search associated with a Microsoft Purview eDiscovery (Standard) case is
 ### More information about exporting searches from a case
 
 - For more information about the export files that are included when you export search results, see [Export a Content search report](ediscovery-export-a-content-search-report.md#whats-included-in-the-report).
-
 - If you restart the export, any changes to the queries of the searches that make up the export job won't affect the search results that are retrieved. When you restart an export, the same combined search query job that was run when the export job was created will be run again.
-
 - Also, if you restart an export, the search results that are copied to the Azure Storage location overwrites the previous results. The previous results that were copied won't be available to be downloaded.

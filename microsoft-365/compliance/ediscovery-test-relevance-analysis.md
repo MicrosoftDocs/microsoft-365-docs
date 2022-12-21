@@ -36,7 +36,6 @@ The "Test the Rest" test is used to validate culling decisions, for example, to 
 This test provides statistics and a comparison between the Review set and the Test the Rest population. The results of the review set are those calculated by Relevance during Training. The results include calculations based on settings and input parameters, such as:
   
 - Test sample statistics of the number of files in a sample and identified relevant files.
-
 - Tabular comparison of the Population parameters of the Review set and the Rest, for example, the number of files, estimated number of relevant files, estimated richness, and the average cost of finding another relevant file. Cost parameter settings can be set by the administrator.
 
 To run the "Test the Rest" test:
@@ -72,13 +71,9 @@ In the previous screenshot, the **Sample parameters** section of the table conta
 The **Population parameters** section of the table contains the test results, including the Review set population of files with a score below the selected cutoff and "The Rest" population of files with a score above the selected cutoff. For each population, the following results are displayed:
   
 - Includes files with read % - Stated cutoff
-
 - The total number of files
-
 - The estimated number of relevant files
-
 - The estimated richness
-
 - The average review cost of finding another relevant file
 
 ## Testing the slice

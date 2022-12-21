@@ -7,7 +7,6 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 titleSuffix: Office 365
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -84,15 +83,10 @@ The sample files list allows you to view a list of the files in a training sampl
 2. Select a specific sample or file number by entering or selecting its number in the **Sample** or **File** boxes.
 
    - A file sequence number is listed in the left column of the displayed file list on the **Tag** tab. By selecting the header, the original displayed order of the files returns to its original order.
-
    - Selecting on a file row displays its content in the right pane.
-
    - Navigate between files in the current sample by using the lower menu bar options. In addition, navigational keyboard shortcuts are available:
   
      - To go to the first file in the sample: `Shift + Ctrl + <`
-
      - To go to the previous file in the sample: `Shift + <`
-
      - To go to the next file in the sample: `Shift + >`
-
      - To go to the last file in the sample: `Shift + Ctrl + >`

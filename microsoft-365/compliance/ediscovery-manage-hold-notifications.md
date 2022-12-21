@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -82,7 +81,5 @@ When you update the content or settings of the Issuance, Release, Reissue, Remin
 ## More information
 
 - [Add custodians to a case](ediscovery-add-custodians-to-case.md)
-
 - [Create a legal hold notice](ediscovery-create-hold-notification.md)
-
 - [Acknowledge a hold notification](ediscovery-acknowledge-hold-notification.md)

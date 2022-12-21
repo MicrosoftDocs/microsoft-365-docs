@@ -61,16 +61,16 @@ The Text viewer provides a view of the extracted text of a file. It ignores any 
 
 The Annotate view provides features that allow users to apply markup on a document including:
 
-- Area redactions – users can draw a box on the document in order to hide sensitive content
-- Pencil – users can free-hand draw on a document in order to bring attention to certain portions of a document
-- Select annotations - users can select annotations on a document in order to delete
-- Toggle annotation transparency – makes annotations semi-transparent in order to view the content behind the annotation
-- Previous page – navigates to previous page
-- Next page – navigates to the next page
-- Go to page – user can enter a specific page number to navigate to
-- Zoom – set zoom level for annotate view
-- Rotate – user can rotate document clockwise
-- Search – user can search within a document and navigate to the various hits within the document
+- **Area redactions**: users can draw a box on the document in order to hide sensitive content
+- **Pencil**: users can free-hand draw on a document in order to bring attention to certain portions of a document
+- **Select annotations**: users can select annotations on a document in order to delete
+- **Toggle annotation transparency**: makes annotations semi-transparent in order to view the content behind the annotation
+- **Previous page**: navigates to previous page
+- **Next page**: navigates to the next page
+- **Go to page**: user can enter a specific page number to navigate to
+- **Zoom**: set zoom level for annotate view
+- **Rotate**: user can rotate document clockwise
+- **Search**: user can search within a document and navigate to the various hits within the document
 
   ![Annotate view.](../media/Reviewimage1.png)
 

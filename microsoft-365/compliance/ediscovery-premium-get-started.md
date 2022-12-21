@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -70,9 +69,7 @@ There are two subgroups in the eDiscovery Manager role group. The difference bet
 - **eDiscovery Administrator**: Can perform all case management tasks that an eDiscovery Manager can do. Additionally, an eDiscovery Administrator can:
 
   - View all cases that are listed on the eDiscovery (Premium) page.
-  
   - Manage any case in the organization after they add themselves as a member of the case.
-
   - Access and export case data for any case in the organization.
 
   Because of the broad scope of access, an organization should have only a few admins who are members of the eDiscovery Administrators subgroup.
