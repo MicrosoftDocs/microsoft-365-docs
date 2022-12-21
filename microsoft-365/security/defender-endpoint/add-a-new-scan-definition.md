@@ -100,8 +100,8 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
  {
-"scanType": "Network", 
-"scanName": "Test Network scan", 
+"scanType": "Windows", 
+"scanName": "Test Windows scan", 
 "isActive": true, 
 "target": "127.0.0.1", 
 "intervalInHours": 1, 

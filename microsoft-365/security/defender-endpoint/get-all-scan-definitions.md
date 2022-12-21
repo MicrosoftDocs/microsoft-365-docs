@@ -102,8 +102,8 @@ Here is an example of the response.
     "value": [
 {
 "id": "60c4vv57-c173-4478-8d58-23091d79ec9d", 
-"scanType": "Network", 
-"scanName": "Test Network scan", 
+"scanType": "Windows", 
+"scanName": "Test Windows scan", 
 "isActive": true, 
 "target": "127.0.0.1", 
 "orgId": "47d41a0c-188d-46d3-bbea-a93dbc0bfcaa",
