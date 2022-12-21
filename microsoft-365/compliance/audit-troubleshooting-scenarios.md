@@ -42,7 +42,7 @@ Each of the troubleshooting scenarios described in this article is based on usin
 
 ### Permissions required to use the audit log search tool
 
-You must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
+You must be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online to search the audit log. By default, these roles are assigned to the *Compliance Management* and *Organization Management* role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the *Organization Management* role group in Exchange Online. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
 ### Running audit log searches
 
@@ -71,7 +71,6 @@ This section describes the basics for creating and running audit log searches. U
     For more information about viewing and exporting audit log search results, see:
 
     - [View search results](audit-log-search.md#step-2-view-the-search-results)
-  
     - [Export search results](audit-log-search.md#step-3-export-the-search-results-to-a-file)
 
 ## Find the IP address of the computer used to access a compromised account
@@ -165,7 +164,7 @@ After you run the search, you can filter the search results to display the audit
 
 Users can recover soft-deleted items if the deleted items retention period hasn't expired. In Exchange Online, the default deleted items retention period is 14 days, but admins can increase this setting to a maximum of 30 days. Point users to the [Recover deleted items or email in Outlook on the web](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) article for instructions on recovering deleted items.
 
-As previously explained, admins may be able to recover hard-deleted items if the deleted item retention period hasn't expired or if the mailbox is on hold, in which case items are kept until the hold duration expires. When you run a content search, soft-deleted and hard-deleted items in the Recoverable Items folder are returned in the search results if they match the search query. For more information about running content searches, see [Content Search in Office 365](content-search.md).
+As previously explained, admins may be able to recover hard-deleted items if the deleted item retention period hasn't expired or if the mailbox is on hold, in which case items are kept until the hold duration expires. When you run a content search, soft-deleted and hard-deleted items in the Recoverable Items folder are returned in the search results if they match the search query. For more information about running content searches, see [Content Search in Office 365](ediscovery-content-search.md).
 
 > [!TIP]
 > To search for deleted email items, search for all or part of the subject line that's displayed in the **AffectedItems** field in the audit record.

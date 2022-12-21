@@ -41,12 +41,12 @@ After you apply system tags or custom tags to users, you can use those tags as f
 
 - [Alerts](alerts.md)
 - [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
-- [Threat Explorer and real-time detections](threat-explorer.md)
-- [Compromised user report](view-email-security-reports.md#compromised-users-report)
+- [Threat Explorer and real-time detections](threat-explorer-about.md)
+- [Compromised user report](reports-email-security.md#compromised-users-report)
 - [Email entity page](mdo-email-entity-page.md)
-- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
-- [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report)
-- [Attack simulation](attack-simulation-training.md#target-users)
+- [Threat protection status report](reports-email-security.md#threat-protection-status-report)
+- [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report)
+- [Attack simulation](attack-simulation-training-simulations.md#target-users)
 - [Campaign Views](campaigns.md)
 - [Admin submissions and user reported messages](submissions-admin.md)
 - [Quarantine](quarantine.md)
@@ -66,7 +66,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
   - To add and remove members from existing custom user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
   - For read-only access to user tags, you need to be a member of the **Global Reader**, **Security Operator**, or **Security Reader** role groups.
 
-  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
   > [!NOTE]
   >

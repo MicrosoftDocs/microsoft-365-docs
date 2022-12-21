@@ -49,7 +49,7 @@ Welcome to **Phase 3: Onboard** of your **[migration to Microsoft Defender for O
 If your organization has a security response team, now is the time to begin integrating Microsoft Defender for Office 365 into your response processes, including ticketing systems. This is an entire topic unto itself, but it's sometimes overlooked. Getting the security response team involved early will ensure that your organization is ready to deal with threats when you switch your MX records. Incident response needs to be well equipped to handle the following tasks:
 
 - Learn the new tools and integrate them into existing flows. For example:
-  - Admin management of quarantined messages is important. For instructions, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+  - Admin management of quarantined messages is important. For instructions, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md).
   - Message trace allows you to see what happened to messages as they enter or leave Microsoft 365. For more information, see [Message trace in the modern Exchange admin center in Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 - Identify risks that may have been let into the organization.
 - Tune and customize [alerts](../../compliance/alert-policies.md) for organizational processes.
@@ -57,7 +57,7 @@ If your organization has a security response team, now is the time to begin inte
 
 If your organization has purchased Microsoft Defender for Office 365 Plan 2, they should begin familiarizing themselves with and using features such as Threat Explorer, Advanced Hunting, and Incidents. For relevant trainings, see <https://aka.ms/mdoninja>.
 
-If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phising-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phishing-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
 ### SIEM/SOAR
 
@@ -72,7 +72,7 @@ If your organization does not have a security response team or existing process 
 
 ### RBAC roles
 
-Permissions in Defender for Office 365 is based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). These are the important points to keep in mind:
+Permissions in Defender for Office 365 is based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft 365 Defender portal](mdo-portal-permissions.md). These are the important points to keep in mind:
 
 - Azure AD roles give permissions to **all** workloads in Microsoft 365. For example, if you add a user to the Security Administrator in the Azure portal, they have Security Administrator permissions everywhere.
 - Email & collaboration roles in the Microsoft 365 Defender portal give permissions to the Microsoft 365 Defender Portal and the Microsoft Purview compliance portal. For example, if you add a user to Security Administrator in the Microsoft 365 Defender portal, they have Security Administrator access **only** in the Microsoft 365 Defender Portal and the Microsoft Purview compliance portal.
@@ -90,7 +90,7 @@ Although this step isn't required, you should consider configuring your pilot us
 
 ## Step 3: Tune spoof intelligence
 
-Check the [Spoof intelligence insight](learn-about-spoof-intelligence.md) to see what's being allowed or blocked as spoofing, and to determine if you need to override the system verdict for spoofing. Some sources of your business-critical email might have incorrectly configured email authentication records in DNS (SPF, DKIM, and DMARC) and you might be using overrides in your existing protection service to mask their domain issues.
+Check the [Spoof intelligence insight](anti-spoofing-spoof-intelligence.md) to see what's being allowed or blocked as spoofing, and to determine if you need to override the system verdict for spoofing. Some sources of your business-critical email might have incorrectly configured email authentication records in DNS (SPF, DKIM, and DMARC) and you might be using overrides in your existing protection service to mask their domain issues.
 
 Spoof intelligence can rescue email from domains without proper email authentication records in DNS, but the feature sometimes needs assistance in distinguishing good spoofing from bad spoofing. Focus on the following types of message sources:
 
@@ -153,9 +153,9 @@ As your pilot users report false positives and false negatives, the messages wil
 
 Use the following features to monitor and iterate on the protection settings in Defender for Office 365:
 
-- [Quarantine](manage-quarantined-messages-and-files.md)
+- [Quarantine](quarantine-admin-manage-messages-files.md)
 - [Threat Explorer](email-security-in-microsoft-defender.md)
-- [Email security reports](view-email-security-reports.md)
+- [Email security reports](reports-email-security.md)
 - [Defender for Office 365 reports](reports-defender-for-office-365.md)
 - [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [Mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
@@ -167,11 +167,11 @@ If your organization uses a third-party service for user reported messages, you 
 As you find and fix issues, you can add more users to the pilot groups (and correspondingly exempt those new pilot users from scanning by your existing protection service as appropriate). The more testing that you do now, the fewer user issues that you'll need to deal with later. This "waterfall" approach allows tuning against larger portions of the organization and gives your security teams time to adjust to the new tools and processes.
 
 - Microsoft 365 generates alerts when high confidence phishing messages are allowed by organizational policies. To identify these messages, you have the following options:
-  - Overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+  - Overrides in the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
   - Filter in Threat Explorer to identify the messages.
   - Filter in Advanced Hunting to identify the messages.
 
-  Report any false positives to Microsoft as early as possible through admin submissions, use the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) feature to configure safe overrides for those false positives.
+  Report any false positives to Microsoft as early as possible through admin submissions, use the [Tenant Allow/Block List](tenant-allow-block-list-about.md) feature to configure safe overrides for those false positives.
 
 - It's also a good idea to examine unnecessary overrides. In other words, look at the verdicts that Microsoft 365 would have provided on the messages. If Microsoft365  rendered the correct verdict, then the need for override is greatly diminished or eliminated.
 
@@ -214,8 +214,8 @@ Feel free to pause and evaluate here at any point. But, remember: once you turn 
 
 Congratulations! You have completed your [migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! Because you followed the steps in this migration guide, the first few days where mail is delivered directly into Microsoft 365 should be much smoother.
 
-Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
+Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
 
-- Review user reported messages, especially [user-reported phishing messages](automated-investigation-response-office.md)
-- Review overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+- Review user reported messages, especially [user-reported phishing messages](air-about-office.md)
+- Review overrides in the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 - Use [Advanced Hunting](/microsoft-365/security/defender/advanced-hunting-example) queries to look for tuning opportunities and risky messages.

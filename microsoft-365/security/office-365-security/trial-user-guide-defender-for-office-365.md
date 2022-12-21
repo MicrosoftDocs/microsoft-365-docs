@@ -54,7 +54,7 @@ Do you want your Defender for Office 365 experience to be active or passive? The
 
 A key factor in audit mode vs. blocking mode is how email is delivered to your Microsoft 365 organization:
 
-- Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](exchange-online-protection-overview.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+- Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](eop-about.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
   ![Mail flows from the internet into Microsoft 365, with protection from EOP and/or Defender for Office 365 Plan 1.](../../media/mdo-trial-mail-flow.png)
 
@@ -98,8 +98,8 @@ Watch this video to learn more: [Learn how to use the Submissions portal to subm
 
 Use the reporting capabilities in Defender for Office 365 to get more details about your environment.
 
-- Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
-- See where threats are blocked with the [Mailflow status report](view-email-security-reports.md#mailflow-status-report).
+- Understand threats received in email and collaboration tools with the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
+- See where threats are blocked with the [Mailflow status report](reports-email-security.md#mailflow-status-report).
 - [Review links](reports-defender-for-office-365.md#url-protection-report) that were viewed by users or blocked by the system.
 
 :::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-reporting.png":::
@@ -131,7 +131,7 @@ Watch this video to learn more: [Detect and respond to compromise in Microsoft D
 
 #### Use Threat Explorer to investigate malicious email
 
-Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer.md).
+Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer-about.md).
 
 - [Find suspicious email that was delivered](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
 - [Check the delivery action and location](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
@@ -174,8 +174,8 @@ Watch this video to learn more: [Threat hunting with Microsoft 365 Defender - Yo
 
 Equip your users with the right knowledge to identify threats and report suspicious messages with Attack simulation training in Defender for Office 365.
 
-- [Simulate realistic threats](attack-simulation-training.md) to identify vulnerable users.
-- [Assign training](attack-simulation-training.md#assign-training) to users based on simulation results.
+- [Simulate realistic threats](attack-simulation-training-simulations.md) to identify vulnerable users.
+- [Assign training](attack-simulation-training-simulations.md#assign-training) to users based on simulation results.
 - [Track progress](attack-simulation-training-insights.md) of your organization in simulations and training completion.
 
   :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="The attack simulation training insights in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
@@ -205,13 +205,13 @@ Watch this video to learn more: [Learn how to use the Submissions portal to subm
 Use the reporting capabilities in Defender for Office 365 to get more details about your environment.
 
 - The [Evaluation dashboard](try-microsoft-defender-for-office-365.md#reports-for-audit-mode) provides an easy view of the threats detected by Defender for Office 365 during evaluation.
-- Understand threats received in email and collaboration tools with the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+- Understand threats received in email and collaboration tools with the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 
 ### Step 2: Intermediate steps in auditing mode
 
 #### Use Threat Explorer to investigate malicious email in auditing mode
 
-Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer.md).
+Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer-about.md).
 
 - [Find suspicious email that was delivered](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
 - [Check the delivery action and location](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
@@ -243,8 +243,8 @@ For more information, see [Migrate from a third-party protection service or devi
 
 Equip your users with the right knowledge to identify threats and report suspicious messages with Attack simulation training in Defender for Office 365.
 
-- [Simulate realistic threats](attack-simulation-training.md) to identify vulnerable users.
-- [Assign training](attack-simulation-training.md#assign-training) to users based on simulation results.
+- [Simulate realistic threats](attack-simulation-training-simulations.md) to identify vulnerable users.
+- [Assign training](attack-simulation-training-simulations.md#assign-training) to users based on simulation results.
 - [Track progress](attack-simulation-training-insights.md) of your organization in simulations and training completion.
 
   :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="The attack simulation training insights in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::

@@ -2337,7 +2337,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center",
+      "redirect_url": "/microsoft-365/security/office-365-security/mdo-portal-permissions",
       "redirect_document_id": false
     },
     {
@@ -2692,7 +2692,7 @@
     },
     {
       "source_path": "microsoft-365/compliance/prevent-email-from-being-marked-as-spam.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": false
     },
     {
@@ -2802,47 +2802,47 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-the-anti-spam-policies.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/enable-or-disable-safety-tips.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/invalid-characters-hosted-spam-filter-rules-policies.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-your-spam-filter-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-end-user-spam-notifications-in-eop.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-your-spam-filter-policies#configure-end-user-spam-notifications",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure#configure-end-user-spam-notifications",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-end-user-spam-notifications-in-exchange-online.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/configure-your-spam-filter-policies#configure-end-user-spam-notifications",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure#configure-end-user-spam-notifications",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/fighting-junk-email.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/reduce-spam-email.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-an-administrator.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files",
+      "redirect_url": "/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files",
       "redirect_document_id": false
     },
     {
@@ -2877,12 +2877,12 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/install-the-junk-email-reporting-add-in-for-microsoft-outlook.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/troubleshooting-and-support-information.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure",
       "redirect_document_id": false
     },
     {
@@ -2932,37 +2932,37 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/how-atp-safe-attachments-works.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links-for-Teams.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links#safe-links-settings-for-microsoft-teams",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#safe-links-settings-for-microsoft-teams",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links-warning-pages.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links#warning-pages-from-safe-links",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#warning-pages-from-safe-links",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/how-atp-safe-links-works.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links#do-not-rewrite-the-following-urls-lists-in-safe-links-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#do-not-rewrite-the-following-urls-lists-in-safe-links-policies",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/malicious-files-detected-in-spo-odb-or-teams.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/mdo-for-spo-odb-and-teams",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-anti-phishing.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/set-up-anti-phishing-policies",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-policies-about",
       "redirect_document_id": false
     },
     {
@@ -3012,7 +3012,7 @@
     },
     {
       "source_path": "./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links#block-the-following-urls-list-for-safe-links",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#block-the-following-urls-list-for-safe-links",
       "redirect_document_id": true
     },
     {
@@ -3057,8 +3057,8 @@
     },
     {
       "source_path": "./office-365-security/manage-recipients-and-admin-role-groups-in-eop.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/manage-recipients-in-eop",
-      "redirect_document_id": true
+      "redirect_url": "/exchange/standalone-eop/manage-recipients-in-eop",
+      "redirect_document_id": false
     },
     {
       "source_path": "./office-365-security/how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md",
@@ -3067,17 +3067,17 @@
     },
     {
       "source_path": "./office-365-security/what-is-eop.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/exchange-online-protection-overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/eop-about",
       "redirect_document_id": true
     },
     {
       "source_path": "./office-365-security/block-email-spam-in-EOPStandalone.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": true
     },
     {
       "source_path": "./office-365-security/exchange-online-protection-eop.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/exchange-online-protection-overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/eop-about",
       "redirect_document_id": true
     },
     {
@@ -3172,7 +3172,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/unverified-sender-feature.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#unauthenticated-sender",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-phishing-policies-about#unauthenticated-sender-indicators",
       "redirect_document_id": false
     },
     {
@@ -3227,7 +3227,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/mfi-sender-domain-insight.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/mfi-non-accepted-domain-report",
+      "redirect_url": "/exchange/monitoring/mail-flow-reports/mfr-non-accepted-domain-report",
       "redirect_document_id": false
     },
     {
@@ -3886,9 +3886,9 @@
       "redirect_document_id": false
     },
     {
-    "source_path": " microsoft-365/admin/security-and-compliance/multi-factor-authentication-plan.md",
-    "redirect_url": " /microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365",
-    "redirect_document_id": true
+      "source_path": "microsoft-365/admin/security-and-compliance/multi-factor-authentication-plan.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/compliance/compliance-manager-overview.md",
@@ -5677,12 +5677,12 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/permissions-microsoft-365-compliance-security.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center",
+      "redirect_url": "/microsoft-365/security/office-365-security/mdo-portal-permissions",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/office-365-security/eop-features.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/exchange-online-protection-overview#eop-features",
+      "redirect_url": "/microsoft-365/security/office-365-security/eop-about#eop-features",
       "redirect_document_id": false
     },
     {
@@ -5692,12 +5692,12 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/set-up-atp-safe-links-policies.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/set-up-safe-links-policies",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-policies-configure",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-links.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-links",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about",
       "redirect_document_id": false
     },
     {
@@ -5712,8 +5712,8 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/set-up-safe-attachments-policies",
-      "redirect_document_id": true
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-policies-configure",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/office-365-atp.md",
@@ -5722,7 +5722,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/mdo-for-spo-odb-and-teams",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-for-spo-odfb-teams-about",
       "redirect_document_id": false
     },
     {
@@ -5742,7 +5742,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/atp-safe-attachments.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments",
+      "redirect_url": "/microsoft-365/security/office-365-security/safe-attachments-about",
       "redirect_document_id": false
     },
     {
@@ -6141,6 +6141,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/security-config-management.md",
+      "redirect_url": "/mem/intune/protect/mde-security-integration",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/configure-attack-surface-reduction.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
       "redirect_document_id": false
@@ -6232,7 +6237,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/safety-tips-in-office-365.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
       "redirect_document_id": false
     },
     {
@@ -6322,13 +6327,13 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/enable-the-report-message-add-in",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure",
       "redirect_document_id": false
     },
     {
-     "source_path": "microsoft-365/security/office-365-security/enable-the-report-phish-add-in.md",
-     "redirect_url": "/microsoft-365/security/office-365-security/enable-the-report-message-add-in",
-     "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/enable-the-report-phish-add-in.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/quarantine-tags.md",
@@ -7326,9 +7331,9 @@
       "redirect_document_id": true
    },
    {
-     "source_path": "microsoft-365/learning/linkedin-learning.md",
-     "redirect_url": "/microsoft-365/learning/content-sources-365-admin-center",
-     "redirect_document_id": true
+      "source_path": "microsoft-365/learning/linkedin-learning.md",
+      "redirect_url": "/microsoft-365/learning/content-sources-365-admin-center",
+      "redirect_document_id": true
    },
     {
       "source_path": "microsoft-365/commerce/pay/zimbabwe.md",
@@ -8241,9 +8246,9 @@
       "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
-    "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
-    "redirect_document_id": true
+      "source_path": "microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
+      "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/office-365-security/alerts.md",
@@ -8262,103 +8267,103 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection-about",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
+      "redirect_url": "/microsoft-365/compliance/compliance-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
+      "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/compliance-manager-and-the-gdpr.md",
+      "redirect_url": "/microsoft-365/compliance/compliance-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/secure-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": true
     },
     {
-    "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
-    "redirect_url": "/microsoft-365/compliance/compliance-manager",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/app-protection-settings-for-android-and-ios.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
-    "redirect_url": "/microsoft-365/solutions/productivity-illustrations#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/add-autopilot-devices-and-profile.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/compliance/compliance-manager-and-the-gdpr.md",
-    "redirect_url": "/microsoft-365/compliance/compliance-manager",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/autopilot-profile-settings.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-autopilot-profile-settings",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/misc/secure-windows-10-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
-    "redirect_document_id": true
+      "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/app-protection-settings-for-android-and-ios.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-app-protection-settings-for-android-and-ios",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/device-states.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-device-states",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/add-autopilot-devices-and-profile.md",
-    "redirect_url": "/mem/autopilot/windows-autopilot",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/map-protection-features-to-intune-settings.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/autopilot-profile-settings.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-autopilot-profile-settings",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/create-and-edit-autopilot-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-create-and-edit-autopilot-devices",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/remove-company-data.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-remove-company-data",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/device-states.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-device-states",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/reset-devices-to-factory-settings.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/map-protection-features-to-intune-settings.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/view-policies-and-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/misc/prepare-for-office-client-deployment.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/remove-company-data.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-remove-company-data",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/security-and-compliance/pre-requisites-for-data-protection.md",
+      "redirect_url": "/microsoft-365/business-premium/index",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/reset-devices-to-factory-settings.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-reset-devices-to-factory-settings",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/setup/manage-windows-devices.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-manage-windows-devices",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/devices/view-policies-and-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-view-policies-and-devices",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-pcs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
+      "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/admin/misc/prepare-for-office-client-deployment.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-prepare-for-office-client-deployment",
-    "redirect_document_id": false
-    },
-    {
-    "source_path": "microsoft-365/admin/security-and-compliance/pre-requisites-for-data-protection.md",
-    "redirect_url": "/microsoft-365/business-premium/index",
-    "redirect_document_id": false
-    },
-    {
-    "source_path": "microsoft-365/admin/setup/manage-windows-devices.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-manage-windows-devices",
-    "redirect_document_id": false
-    },
-    {
-    "source_path": "microsoft-365/admin/devices/protection-settings-for-windows-10-pcs.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-protection-settings-for-windows-10-devices",
-    "redirect_document_id": false
-    },
-    {
-    "source_path": "microsoft-365/admin/security-and-compliance/set-up-compliance.md",
-    "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/admin/security-and-compliance/set-up-compliance.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-set-up-compliance",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/lighthouse/m365-lighthouse-set-up-roles.md",
@@ -8977,23 +8982,23 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/manage-tenant-blocks.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/manage-tenant-allows.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-about",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/modify-remove-entries-tenant-allow-block.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-about",
       "redirect_document_id": false
     },
     {
-    "source_path": "microsoft-365/security/office-365-security/tenant-allow-block-list.md",
-    "redirect_url": "/microsoft-365/security/office-365-security/manage-tenant-allow-block-list",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/tenant-allow-block-list.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/tenant-allow-block-list-about",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/privileged-access-management-overview.md",
@@ -9126,9 +9131,9 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "microsoft-365/security/office-365-security/security-roadmap.md",
-        "redirect_url": "/microsoft-365/security/office-365-security/overview",
-        "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/security-roadmap.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/old-index.md",
@@ -9136,19 +9141,19 @@
       "redirect_document_id": false
   },
   {
-    "source_path": "microsoft-365/security/office-365-security/reporting-and-message-trace-in-exchange-online-protection.md",
-    "redirect_url": "/microsoft-365/security/office-365-security/message-trace-scc.md",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/reporting-and-message-trace-in-exchange-online-protection.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/message-trace-scc.md",
+      "redirect_document_id": false
   },
   {
-    "source_path": "microsoft-365/security/office-365-security/security-dashboard.md",
-    "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/security-dashboard.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
+      "redirect_document_id": false
   },
   {
-    "source_path": "microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance.md",
-    "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
-    "redirect_document_id": false
+      "source_path": "microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender-portal",
+      "redirect_document_id": false
   },
   {
       "source_path": "microsoft-365/business-premium/m365bp-ms-partner.md",
@@ -9368,7 +9373,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/configure-your-spam-filter-policies.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-policies-configure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/anti-spam-protection.md",
@@ -9483,7 +9488,7 @@
     {
       "source_path": "microsoft-365/security/office-365-security/permissions-microsoft-365-security-center.md",
       "redirect_url": "/microsoft-365/security/office-365-security/mdo-portal-permissions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/office-365-security/anti-spam-message-headers.md",
@@ -9602,7 +9607,12 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/configure-advanced-delivery.md",
-      "redirect_url": "/microsoft-365/security/office-365-security/skip-filtering-phising-simulations-sec-ops-mailboxes",
+      "redirect_url": "/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/skip-filtering-phising-simulations-sec-ops-mailboxes.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes",
       "redirect_document_id": true
     },
     {
@@ -9737,7 +9747,537 @@
     },
     {
       "source_path": "microsoft-365/security/defender-endpoint/microsoft-threat-experts.md",
-      "redirect_url": "/microsoft-365/security/defender/defender-experts-for-hunting",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/priority accounts-security-recommendations.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/priority-accounts-security-recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/acknowledge-hold-notification.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-acknowledge-hold-notification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/add-custodians-to-case.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-add-custodians-to-case",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/add-data-to-review-set-from-another-review-set.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-add-data-to-review-set-from-another-review-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/add-data-to-review-set.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-add-data-to-review-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/add-or-remove-members-from-a-case-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-add-or-remove-members-from-a-case",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/advanced-ediscovery-cloud-attachments.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-cloud-attachments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/advanced-ediscovery-communications-library.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-communications-library",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/advanced-ediscovery-dashboard.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/advanced-ediscovery-historical-versions.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-historical-versions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/advanced-ediscovery-issuing-officers.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-issuing-officers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/advanced-ediscovery-new-case-format.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-new-case-format",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/analyzing-data-in-review-set.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-analyzing-data-in-review-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/assessment-in-relevance-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-assessment-in-relevance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/assign-ediscovery-permissions.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-assign-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/attorney-privilege-detection.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-attorney-privilege-detection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/building-search-queries.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-building-search-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/bulk-add-custodians.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-bulk-add-custodians",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/change-the-size-of-pst-files-when-exporting-results.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-change-the-size-of-pst-files-when-exporting-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/check-your-content-search-query-for-errors.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-check-your-content-search-query-for-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/close-or-delete-case.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-close-or-delete-case",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/close-reopen-delete-core-ediscovery-cases.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-close-reopen-delete-cases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/collection-statistics-reports.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-collection-statistics-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/collections-overview.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-collections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/commit-draft-collection.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-commit-draft-collection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/configure-edge-to-export-search-results.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-configure-edge-to-export-search-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-configure-search-and-analytics-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/content-search-reference.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-content-search-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/content-search.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-content-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/conversation-review-sets.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-conversation-review-sets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-a-litigation-hold.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-create-a-litigation-hold",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-a-report-on-holds-in-ediscovery-cases.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-create-a-report-on-holds-in-cases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-and-manage-advanced-ediscoveryv2-case.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-create-and-manage-cases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-draft-collection.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-create-draft-collection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-ediscovery-holds.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-create-holds",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-hold-notification.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-create-hold-notification",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-report-on-and-delete-multiple-content-searches.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-create-reports-and-delete-multiple-content-searches",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/data-spillage-scenariosearch-and-purge.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-data-spillage-search-and-purge",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/de-duplication-in-ediscovery-search-results.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-de-duplication-in-search-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/decision-based-on-the-results-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-decision-based-on-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/differences-between-estimated-and-actual-ediscovery-search-results.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-differences-between-estimated-and-actual-search-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/document-metadata-fields-in-Advanced-eDiscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-document-metadata-fields",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/download-documents-from-review-set.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-download-documents-from-review-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/email-threading-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-email-threading",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/error-remediation-when-processing-data-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-error-remediation-when-processing-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/export-a-content-search-report.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-export-a-content-search-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/export-content-in-core-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-export-content",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/export-documents-from-review-set.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-export-documents-from-review-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/exporting-data-ediscover20.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-exporting-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/get-started-core-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-standard-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/get-started-with-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-premium-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-identify-a-hold-on-an-exchange-online-mailbox",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-increase-the-recoverable-quota-for-mailboxes-on-hold",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/indexing-custodian-data.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-indexing-custodian-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/investigating-partially-indexed-items-in-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-investigating-partially-indexed-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/keyword-queries-and-search-conditions.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/legacy-ediscovery-retirement.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-legacy-retirement",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/limits-core-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-standard-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/limits-ediscovery20.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-premium-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/limits-for-content-search.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-limits-for-content-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/load-non-Office-365-data-into-a-review-set.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-load-non-office-365-data-into-a-review-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/manage-hold-notification.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-manage-hold-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/manage-legal-investigations.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-manage-legal-investigations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/manage-new-custodians.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-manage-new-custodians",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/manage-relevance-setup-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-manage-relevance-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/managing-custodian-communications.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-managing-custodian-communications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/managing-custodians.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-managing-custodians",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/managing-holds.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-managing-holds",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/managing-jobs-ediscovery20.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-managing-jobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/managing-review-sets.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-managing-review-sets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/migrate-legacy-eDiscovery-searches-and-holds.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-migrate-legacy-searches-and-holds",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/near-duplicate-detection-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-near-duplicate-detection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/non-custodial-data-sources.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-non-custodial-data-sources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/overview-ediscovery-20.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/partially-indexed-items-in-content-search.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-partially-indexed-items-in-content-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/permissions-filtering-for-content-search.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-permissions-filtering-for-content-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/predictive-coding-apply-prediction-filter.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-predictive-coding-apply-prediction-filter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/predictive-coding-create-model.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-predictive-coding-create-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/predictive-coding-overview.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-predictive-coding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/predictive-coding-quick-start.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-predictive-coding-quick-start",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/predictive-coding-reference.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-predictive-coding-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/predictive-coding-train-model.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-predictive-coding-train-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-preserve-bcc-and-expanded-distribution-group-recipients",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/preview-ediscovery-search-results.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-preview-search-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/processing-data-for-case.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-processing-data-for-case",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/review-set-search.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-review-set-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-and-delete-Teams-chat-messages.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-search-and-delete-teams-chat-messages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-search-cloud-based-mailboxes-for-on-premises-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-for-content-in-core-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-search-for-content",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-for-ediscovery-activities-in-the-audit-log.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-search-for-activities-in-the-audit-log",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/set-up-compliance-boundaries.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-set-up-compliance-boundaries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/single-item-error-remediation.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-single-item-error-remediation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/smart-tags.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-smart-tags",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/supported-filetypes-ediscovery20.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-supported-file-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/tagging-and-relevance-training-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-tagging-and-relevance-training",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/tagging-documents.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-tagging-documents",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/test-relevance-analysis-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-test-relevance-analysis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/themes-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-themes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/track-relevance-analysis-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-track-relevance-analysis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/troubleshooting-azcopy.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-troubleshooting-azcopy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-use-a-script-to-add-users-to-a-hold",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/using-communications-editor.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-using-communications-editor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/view-custodian-activity.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-view-custodian-activity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/view-documents-in-review-set.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-view-documents-in-review-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/view-keyword-statistics-for-content-search.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-view-keyword-statistics-for-content-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/what-is-stored-in-exo-mailbox.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-what-is-stored-in-a-mailbox",
       "redirect_document_id": false
     }
    ]

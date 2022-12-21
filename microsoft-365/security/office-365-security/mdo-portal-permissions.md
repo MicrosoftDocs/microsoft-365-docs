@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Global roles in Azure Active Directory (Azure AD) allow you to manage permissions and access to capabilities in all of Microsoft 365, which also includes Microsoft Defender for Office 365. But, if you need to limit permissions and capabilities to security features in Defender for Office 365 only, you can assign **Email & collaboration** permissions in the Microsoft 365 Defender portal.
@@ -37,6 +37,8 @@ To manage Defender for Office 365 permissions in the Microsoft 365 Defender port
 
 > [!NOTE]
 > Some Defender for Office 365 features require additional permissions in Exchange Online. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+>
+> In the Microsoft 365 Defender preview program, a different Microsoft Defender 365 RBAC model is also available. The permissions in this RBAC model are different from the Defender for Office 365 permissions as described in this article. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).
 >
 > For information about permissions in the Microsoft Purview compliance portal, see [Permissions in the Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center-permissions.md).
 
@@ -81,14 +83,14 @@ For more information, see [View and assign administrator roles in Azure Active D
 |**Security reader**|View and investigate active threats to your Microsoft 365 users, devices, and content, but (unlike the Security operator) they do not have permissions to respond by taking action. For more information, see [Security Reader](/azure/active-directory/roles/permissions-reference#security-reader).|
 |**Security administrator**|Control your organization's overall security by managing security policies, reviewing security analytics and reports across Microsoft 365 products, and staying up-to-speed on the threat landscape. For more information, see [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator).|
 |**Global reader**|The read-only version of the **Global administrator** role. View all settings and administrative information across Microsoft 365. For more information, see [Global Reader](/azure/active-directory/roles/permissions-reference#global-reader).|
-|**Attack simulation administrator**|Create and manage all aspects of [attack simulation](attack-simulation-training.md) creation, launch/scheduling of a simulation, and the review of simulation results. For more information, see [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
+|**Attack simulation administrator**|Create and manage all aspects of [attack simulation](attack-simulation-training-simulations.md) creation, launch/scheduling of a simulation, and the review of simulation results. For more information, see [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
 |**Attack payload author**|Create attack payloads but not actually launch or schedule them. For more information, see [Attack Payload Author](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 
 ### Email & collaboration roles in the Microsoft 365 Defender portal
 
 In the Microsoft 365 Defender portal at <https://security.microsoft.com> \> **Email & collaboration roles** \> **Permissions & roles** page \> **Email & collaboration roles** \> **Roles** (or directly at <https://security.microsoft.com/emailandcollabpermissions>) you'll see the same role groups that are available in the Microsoft Purview compliance portal at <https://compliance.microsoft.com> \> **Permissions** page \> **Microsoft Purview solutions** \> **Roles** (or directly at <https://compliance.microsoft.com/compliancecenterpermissions>).
 
-For complete information about these role groups, see [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](permissions-in-the-security-and-compliance-center.md)
+For complete information about these role groups, see [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](scc-permissions.md)
 
 #### Modify Email & collaboration role membership in the Microsoft 365 Defender portal
 

@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -58,7 +58,7 @@ The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 repor
 |**Spam detection report** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Threat protection status report: View data by Email \> Spam](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|October 2021|
 |Get-AdvancedThreatProtectionDocumentReport <br/><br/> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <br/><br/> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|May 2022|
 |**Exchange transport rule report** <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|April 2022|
-|Get-MailTrafficTopReport|[Top senders and recipient report](view-email-security-reports.md#top-senders-and-recipients-report) <br/><br/> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport) <br/><br/> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
+|Get-MailTrafficTopReport|[Top senders and recipient report](reports-email-security.md#top-senders-and-recipients-report) <br/><br/> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport) <br/><br/> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
 
 ## Compromised users report
 
@@ -223,10 +223,10 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or ![
 
 Back on the **Mailflow status report** page, if you click **Choose a category for more details**, you can select from the following values:
 
-- **Phishing email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
-- **Malware in email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
-- **Spam detections**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
-- **Edge blocked spam**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
+- **Phishing email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
+- **Malware in email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
+- **Spam detections**: This selection takes you to the [Spam Detections report](reports-email-security.md#spam-detections-report).
+- **Edge blocked spam**: This selection takes you to the [Spam Detections report](reports-email-security.md#spam-detections-report).
 
 On the **Mailflow status report** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
@@ -255,10 +255,10 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or ![
 
 Back on the **Mailflow status report** page, if you click **Choose a category for more details**, you can select from the following values:
 
-- **Phishing email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
-- **Malware in email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
-- **Spam detections**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
-- **Edge blocked spam**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
+- **Phishing email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
+- **Malware in email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
+- **Spam detections**: This selection takes you to the [Spam Detections report](reports-email-security.md#spam-detections-report).
+- **Edge blocked spam**: This selection takes you to the [Spam Detections report](reports-email-security.md#spam-detections-report).
 
 On the **Mailflow status report** page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **Create schedule** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** buttons are available.
 
@@ -338,7 +338,7 @@ The **Mail latency report** in Defender for Office 365 contains information on t
 
 ## Spoof detections report
 
-The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing. For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
+The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing. For more information about spoofing, see [Anti-spoofing protection in EOP](anti-phishing-protection-spoofing-about.md).
 
 The aggregate and detail views of the report allows for 90 days of filtering.
 
@@ -428,9 +428,9 @@ On the **Submissions** page, the **[Export](#export-report)** button is availabl
 
 ## Threat protection status report
 
-The **Threat protection status** report is available in both EOP and Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+The **Threat protection status** report is available in both EOP and Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 
-The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and Defender for Office 365 features like [Safe Links](safe-links.md), [Safe Attachments](safe-attachments.md), and [impersonation protection features in anti-phishing policies](anti-phishing-policies-about.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). You can use this information to identify trends or determine whether organization policies need adjustment.
+The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and Defender for Office 365 features like [Safe Links](safe-links-about.md), [Safe Attachments](safe-attachments-about.md), and [impersonation protection features in anti-phishing policies](anti-phishing-policies-about.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). You can use this information to identify trends or determine whether organization policies need adjustment.
 
 **Note**: It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
 
@@ -491,8 +491,8 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 
 - **Advanced filter**: Phishing signals based on machine learning.
 - **Campaign**<sup>\*</sup>: Messages identified as part of a [campaign](campaigns.md).
-- **File detonation**<sup>\*</sup>: [Safe Attachments](safe-attachments.md) detected a malicious attachment during detonation analysis.
-- **File detonation reputation**<sup>\*</sup>: File attachments previously detected by [Safe Attachments](safe-attachments.md) detonations in other Microsoft 365 organizations.
+- **File detonation**<sup>\*</sup>: [Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.
+- **File detonation reputation**<sup>\*</sup>: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.
 - **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
 - **Fingerprint matching**: The message closely resembles a previous detected malicious message.
 - **General filter**: Phishing signals based on analyst rules.
@@ -501,11 +501,11 @@ In the **View data by Email \> Phish** and **Chart breakdown by Detection Techno
 - **Impersonation user**<sup>\*</sup>: Impersonation of protected senders that you specified in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) or learned through mailbox intelligence.
 - **Mailbox intelligence impersonation**<sup>\*</sup>: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 - **Mixed analysis detection**: Multiple filters contributed to the message verdict.
-- **Spoof DMARC**: The message failed [DMARC authentication](use-dmarc-to-validate-email.md).
+- **Spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).
 - **Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.
 - **Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.
-- **URL detonation**<sup>\*</sup>: [Safe Links](safe-links.md) detected a malicious URL in the message during detonation analysis.
-- **URL detonation reputation**<sup>\*</sup>: URLs previously detected by [Safe Links](safe-links.md) detonations in other Microsoft 365 organizations.
+- **URL detonation**<sup>\*</sup>: [Safe Links](safe-links-about.md) detected a malicious URL in the message during detonation analysis.
+- **URL detonation reputation**<sup>\*</sup>: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.
 - **URL malicious reputation**: The message contains a URL that was previously identified as malicious in other Microsoft 365 organizations.
 
 <sup>\*</sup> Defender for Office 365 only
@@ -606,13 +606,13 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 
 In the **View data by Email \> Malware** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
-- **File detonation**<sup>\*</sup>: [Safe Attachments](safe-attachments.md) detected a malicious attachment during detonation analysis.
-- **File detonation reputation**<sup>\*</sup>: File attachments previously detected by [Safe Attachments](safe-attachments.md) detonations in other Microsoft 365 organizations.
+- **File detonation**<sup>\*</sup>: [Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.
+- **File detonation reputation**<sup>\*</sup>: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.
 - **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
 - **Anti-malware engine**<sup>\*</sup>: Detection from anti-malware engines.
-- **Anti-malware policy file type block**: The message was blocked due to the file type of the attachment ([common attachment filtering in anti-malware policies](anti-malware-protection.md)).
-- **URL detonation**<sup>\*</sup>: [Safe Links](safe-links.md) detected a malicious URL in the message during detonation analysis.
-- **URL detonation reputation**<sup>\*</sup>>: URLs previously detected by [Safe Links](safe-links.md) detonations in other Microsoft 365 organizations.
+- **Anti-malware policy file type block**: The message was blocked due to the file type of the attachment ([common attachment filtering in anti-malware policies](anti-malware-protection-about.md)).
+- **URL detonation**<sup>\*</sup>: [Safe Links](safe-links-about.md) detected a malicious URL in the message during detonation analysis.
+- **URL detonation reputation**<sup>\*</sup>>: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.
 - **Campaign**<sup>\*</sup>: Messages identified as part of a [campaign](campaigns.md).
 
 <sup>\*</sup> Defender for Office 365 only
@@ -768,7 +768,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 In the **View data by Content \> Malware** view, the following information is shown in the chart for Microsoft Defender for Office 365 organizations:
 
 - **Anti-malware engine**: Malicious files detected in SharePoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](anti-malware-protection-for-spo-odfb-teams-about.md).
-- **MDO detonation**: Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+- **MDO detonation**: Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 - **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
 
 In the details table below the chart, the following information is available:
@@ -804,7 +804,7 @@ In the **View data by System override** and **Chart breakdown by Reason** view, 
 - **ZAP not enabled**
 - **User Safe Sender**
 - **User Safe Domain**
-- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
+- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
 - **Third party filter**
 
 In the details table below the chart, the following information is available:
@@ -843,7 +843,7 @@ On the **Threat protection status** page, the ![Export icon.](../../media/m365-c
 In the **View data by System override** and **Chart breakdown by Delivery location** view, the following override reason information is shown in the chart:
 
 - **Junk Mail folder not enabled**
-- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
+- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
 
 In the details table below the chart, the following information is available:
 
@@ -867,7 +867,7 @@ If you click **Filter**, the following filters are available:
   - **ZAP not enabled**
   - **User Safe Sender**
   - **User Safe Domain**
-  - **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
+  - **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
   - **Third party filter**
 - **Delivery Location**: **Junk Mail folder not enabled** or **SecOps mailbox**.
 - **Direction**:
@@ -895,7 +895,7 @@ On the **Threat protection status** page, the ![Export icon.](../../media/m365-c
 
 ## Top malware report
 
-The **Top malware** report shows the various kinds of malware that was detected by [anti-malware protection in EOP](anti-malware-protection.md).
+The **Top malware** report shows the various kinds of malware that was detected by [anti-malware protection in EOP](anti-malware-protection-about.md).
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top malware** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/TopMalware>.
 
@@ -916,7 +916,7 @@ On the **Top malware** page, the ![Create schedule icon.](../../media/m365-cc-sc
 
 ## Top senders and recipients report
 
-The **Top senders and recipients** report is available in both EOP and Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about top malware, spam, and phishing (spoofing) recipients, but not information about malware detected by [Safe Attachments](safe-attachments.md) or phishing detected by [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+The **Top senders and recipients** report is available in both EOP and Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about top malware, spam, and phishing (spoofing) recipients, but not information about malware detected by [Safe Attachments](safe-attachments-about.md) or phishing detected by [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 The **Top senders and recipients** shows the top messages senders in your organization, as well as the top recipients for messages that were detected by EOP and Defender for Office 365 protection features. By default, the report shows data for the last week, but data is available for the last 90 days.
 
@@ -1024,7 +1024,7 @@ In order to view and use the reports described in this article, you need to be a
 - **Security Reader**
 - **Global Reader**
 
-For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 **Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
@@ -1136,9 +1136,9 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 ## Related topics
 
-[Anti-spam protection in EOP](anti-spam-protection.md)
+[Anti-spam protection in EOP](anti-spam-protection-about.md)
 
-[Anti-malware protection in EOP](anti-malware-protection.md)
+[Anti-malware protection in EOP](anti-malware-protection-about.md)
 
 [View mail flow reports in the EAC](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 

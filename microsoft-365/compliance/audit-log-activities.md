@@ -9,7 +9,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - tier1
 - purview-compliance
@@ -21,9 +21,9 @@ search.appverid:
 
 # Audit log activities
 
-The tables in this article describe the activities that are audited in Microsoft 365. You can search for these events by searching the audit log in the security and compliance portal.
+The tables in this article describe the activities that are audited in Microsoft 365. You can search for these events by searching the audit log in the compliance portal.
 
-These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Detailed properties in the audit log](audit-log-detailed-properties.md).
+These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Audit log detailed properties](audit-log-detailed-properties.md).
 
 Select one of the following links to go to a specific table.
 
@@ -540,14 +540,14 @@ Content Search and eDiscovery-related activities that are performed in the secur
 - Configuring permissions filtering for Content Search
 - Managing the eDiscovery Administrator role
 
-For a list and detailed description of the eDiscovery activities that are logged, see [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md).
+For a list and detailed description of the eDiscovery activities that are logged, see [Search for eDiscovery activities in the audit log](ediscovery-search-for-activities-in-the-audit-log.md).
 
 > [!NOTE]
 > It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** and **eDiscovery (Premium) activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results.
 
 ## eDiscovery (Premium) activities
 
-You can also search the audit log for activities in Microsoft Purview eDiscovery (Premium). For a description of these activities, see the "eDiscovery (Premium) activities" section in [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-premium-activities).
+You can also search the audit log for activities in Microsoft Purview eDiscovery (Premium). For a description of these activities, see the "eDiscovery (Premium) activities" section in [Search for eDiscovery activities in the audit log](ediscovery-search-for-activities-in-the-audit-log.md#ediscovery-premium-activities).
 
 ## Power BI activities
 

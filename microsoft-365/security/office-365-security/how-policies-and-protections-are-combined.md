@@ -26,7 +26,7 @@ search.appverid: met150
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -43,7 +43,7 @@ There are two major factors that determine which policy is applied to a message:
   |1|Malware|CAT:MALW|[Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
   |2|Phishing|CAT:PHSH|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
   |3|High confidence spam|CAT:HSPM|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
-  |4|Spoofing|CAT:SPOOF|[Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)|
+  |4|Spoofing|CAT:SPOOF|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md)|
   |5<sup>\*</sup>|User impersonation (protected users)|UIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)|
   |6<sup>\*</sup>|Domain impersonation (protected domains)|DIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)|
   |7|Spam|CAT:SPM|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|

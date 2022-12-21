@@ -26,7 +26,7 @@ search.appverid: met150
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -73,7 +73,9 @@ The following policy settings are available in anti-phishing policies in EOP and
   You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
   - **Users**: One or more mailboxes, mail users, or mail contacts in your organization.
-  - **Groups**: One or more groups in your organization.
+  - **Groups**:
+    - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
+    - The specified Microsoft 365 Groups.
   - **Domains**: One or more of the configured [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365.
 
   - **Exclude these users, groups, and domains**: Exceptions for the policy. The settings and behavior are exactly like the conditions:
@@ -103,21 +105,21 @@ The following spoof settings are available in anti-phishing policies in EOP and 
 
   When spoof intelligence is enabled, the **spoof intelligence insight** shows spoofed senders that were automatically detected and allowed or blocked by spoof intelligence. You can manually override the spoof intelligence verdict to allow or block the detected spoofed senders from within the insight. But when you do, the spoofed sender disappears from the spoof intelligence insight, and is now visible only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders in the Tenant Allow/Block List. For more information, see the following articles:
 
-  - [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)
-  - [Manage the Tenant Allow/Block List in EOP](manage-tenant-allow-block-list.md)
+  - [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md)
+  - [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list-about.md)
 
   > [!NOTE]
   >
   > - Anti-spoofing protection is enabled by default in the default anti-phishing policy and in any new custom anti-phishing policies that you create.
   > - You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
-  > - Disabling anti-spoofing protection only disables _implicit_ spoofing protection from [composite authentication](email-validation-and-authentication.md#composite-authentication) checks. If the sender fails _explicit_ [DMARC](use-dmarc-to-validate-email.md) checks where the policy is set to quarantine or reject, the message is still quarantined or rejected.
+  > - Disabling anti-spoofing protection only disables _implicit_ spoofing protection from [composite authentication](email-authentication-about.md#composite-authentication) checks. If the sender fails _explicit_ [DMARC](email-authentication-dmarc-configure.md) checks where the policy is set to quarantine or reject, the message is still quarantined or rejected.
 
 - **Unauthenticated sender indicators**: Available in the **Safety tips & indicators** section only when spoof intelligence is turned on. See the details in the next section.
 - **Actions**: For messages from blocked spoofed senders (automatically blocked by spoof intelligence or manually blocked in the Tenant Allow/Block list), you can also specify the action to take on the messages:
   - **Move messages to the recipients' Junk Email folders**: This is the default value. The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
     - [Quarantine in Microsoft 365](quarantine-about.md)
-    - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Manage quarantined messages and files as an admin in Microsoft 365](quarantine-admin-manage-messages-files.md)
     - [Find and release quarantined messages as a user in Microsoft 365](quarantine-end-user.md)
 
     If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
@@ -126,14 +128,14 @@ The following spoof settings are available in anti-phishing policies in EOP and 
 
 Unauthenticated sender indicators are part of the [Spoof settings](#spoof-settings) that are available in the **Safety tips & indicators** section in anti-phishing policies in both EOP and Defender for Office 365. The following settings are available only when spoof intelligence is turned on:
 
-- **Show (?) for unauthenticated senders for spoof**: Adds a question mark to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
+- **Show (?) for unauthenticated senders for spoof**: Adds a question mark to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-authentication-about.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
 
 - **Show "via" tag**: Adds the via tag (chris@contoso.com <u>via</u> fabrikam.com) in the From box if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](anti-phishing-from-email-address-validation.md#an-overview-of-email-message-standards).
 
 To prevent the question mark or via tag from being added to messages from specific senders, you have the following options:
 
-- Allow the spoofed sender in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md). Allowing the spoofed sender will prevent the via tag from appearing in messages from the sender, even if the **Show "via" tag** setting is turned on in the policy.
-- [Configure email authentication](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) for the sender domain.
+- Allow the spoofed sender in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Allowing the spoofed sender will prevent the via tag from appearing in messages from the sender, even if the **Show "via" tag** setting is turned on in the policy.
+- [Configure email authentication](email-authentication-about.md#configure-email-authentication-for-domains-you-own) for the sender domain.
   - For the question mark in the sender's photo, SPF or DKIM are the most important.
   - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
 
@@ -183,9 +185,7 @@ The following impersonation settings are only available in anti-phishing policie
   You can use protected users to add internal and external sender email addresses to protect from impersonation. This list of **senders** that are protected from user impersonation is different from the list of **recipients** that the policy applies to (all recipients for the default policy; specific recipients as configured in the **Users, groups, and domains** setting in the [Common policy settings](#common-policy-settings) section).
 
   > [!NOTE]
-  >
-  > - In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 350. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
-  > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
+  > In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 350. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
   By default, no sender email addresses are configured for impersonation protection in **Users to protect**. Therefore, by default, no sender email addresses are covered by impersonation protection, either in the default policy or in custom policies.
 
@@ -206,7 +206,7 @@ The following impersonation settings are only available in anti-phishing policie
   - **Move messages to the recipients' Junk Email folders**: The message is delivered to the mailbox and moved to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
   - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following articles:
     - [Quarantine in Microsoft 365](quarantine-about.md)
-    - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Manage quarantined messages and files as an admin in Microsoft 365](quarantine-admin-manage-messages-files.md)
     - [Find and release quarantined messages as a user in Microsoft 365](quarantine-end-user.md)
 
     If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by user impersonation or domain impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
@@ -224,6 +224,9 @@ The following impersonation settings are only available in anti-phishing policie
   For example, Gabriela Laureano (glaureano@contoso.com) is the CEO of your company, so you add her as a protected sender in the **Enable users to protect** settings of the policy. But, some of the recipients that the policy applies to communicate regularly with a vendor who is also named Gabriela Laureano (glaureano@fabrikam.com). Because those recipients have a communication history with glaureano@fabrikam.com, mailbox intelligence will not identify messages from glaureano@fabrikam.com as an impersonation attempt of glaureano@contoso.com for those recipients.
 
   To use frequent contacts that were learned by mailbox intelligence (and lack thereof) to help protect users from impersonation attacks, you can turn on **Enable intelligence impersonation protection** after you turn on **Enable mailbox intelligence**.
+
+  > [!NOTE]
+  > Mailbox intelligence protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt by mailbox intelligence.
 
 - **Enable intelligence impersonation protection**: Turn on this setting to specify the action to take on messages for impersonation detections from mailbox intelligence results:
   - **Don't apply any action**: Note that this value has the same result as turning on **Mailbox intelligence** but turning off **Enable intelligence impersonation protection**.

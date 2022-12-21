@@ -70,7 +70,7 @@ Users and groups are included in the same file. Depending on whether it's a user
 |6|UserType|GroupType|
 
 > [!IMPORTANT]
-> Do NOT include column headings in your CSV file.  In the examples below we include them for illustrative purposes only.
+> **Do NOT include column headings in your CSV file.**  In the examples below we include them for illustrative purposes only.
 
 **Users**. Enter your values as shown in this example for guests:
 
