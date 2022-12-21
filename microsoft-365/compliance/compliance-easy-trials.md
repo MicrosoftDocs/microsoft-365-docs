@@ -12,6 +12,7 @@ ms.collection:
 - purview-compliance
 - highpri
 - tier1
+- contentengagementFY23
 ms.localizationpriority: high
 search.appverid: 
 - MOE150
