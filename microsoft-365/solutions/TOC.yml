@@ -445,14 +445,14 @@
           href: apps-add-step-2.md
         - name: Step 3. Determine the type of app for your solution
           href: apps-add-step-3.md
-        - name: Step 4. Understand apps and cloud storage
+        - name: Step 4. Create categories for apps
           href: apps-add-step-4.md
-        - name: Step 5. Create categories for apps
+        - name: Step 5. Purchase apps
           href: apps-add-step-5.md
-        - name: Step 6. Purchase apps
+        - name: Step 6. Add apps to Intune
           href: apps-add-step-6.md
-        - name: Step 7. Add apps to Intune
-          href: apps-add-step-7.md          
+        - name: Step 7. Manage apps and licenses
+          href: apps-add-step-7.md                  
 
 - name: Industry-specific guidance
   items: 

@@ -1,11 +1,11 @@
 ---
-title: "Step 7. Add apps to Intune"
+title: "Step 7. Manage apps and licenses"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Step 7. Add apps to Intune.
+description: Step 7. Manage apps and licenses.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,15 +14,8 @@ ms.custom:
 keywords:
 ---
 
-# Step 7. Add apps to Intune
+# Step 7. Manage apps and licenses
 
+## Manage app licenses
 
-## Add apps included with your Intune license
-
-
-
-## Add commonly used apps
-
-
-
-## Add in-house apps
+## Manage apps
