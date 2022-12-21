@@ -81,7 +81,7 @@ The affects of priority account protection are visible in the following features
 - [Attack simulation](attack-simulation-training-simulations.md#target-users)
 - [Campaign Views](campaigns.md)
 - [Admin submissions and user reported messages](submissions-admin.md)
-- [Quarantine](quarantine.md)
+- [Quarantine](quarantine-about.md)
 
 ### Threat protection status report
 
