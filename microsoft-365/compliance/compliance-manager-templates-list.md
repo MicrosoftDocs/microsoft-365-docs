@@ -265,7 +265,7 @@ The templates listed below may be purchased by your organization. Certain licens
 
 ### Regional
 
-#### Asia-Pacific Countries
+#### Asia-Pacific Countries/Regions
 
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - ASD Essential 8  
