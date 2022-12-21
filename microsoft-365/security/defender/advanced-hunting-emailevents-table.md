@@ -83,7 +83,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`LatestDeliveryAction`* | `string` | Last known action attempted on an email by the service or by an admin through manual remediation |
 
 > [!NOTE]
->\* The `LatestDeliveryLocation` and `LatestDeliveryAction` columns are currently **not** available in the Streaming API. 
+>\* The `LatestDeliveryLocation` and `LatestDeliveryAction` columns are **not** available in the Streaming API. 
 
 ## Related topics
 
