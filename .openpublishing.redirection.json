@@ -10281,7 +10281,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender/microsoft-threat-experts.md",
+      "source_path": "microsoft-365/security/defender-endpoint/microsoft-threat-experts.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
       "redirect_document_id": false
   },
@@ -10289,11 +10289,6 @@
       "source_path": "microsoft-365/security/defender/configure-microsoft-threat-experts.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
       "redirect_document_id": false
-  },
-  {
-    "source_path": "microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md.md",
-    "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications.md",
-    "redirect_document_id": false
-}
-   ]
+  }
+ ]
   }
