@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 
 The [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal) and [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center) have replaced the Security & Compliance Center as the place to manage Microsoft Defender for Office 365 and Microsoft Purview compliance roles and role groups for your organization. For more information about permissions within these portals, see the following articles:
 
-- [Email & collaboration permissions in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center)
+- [Email & collaboration permissions in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/mdo-portal-permissions)
 - [Microsoft Purview solutions permissions in the Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center-permissions)
 
 These portals let you grant permissions to people who perform tasks like device management, data loss prevention, eDiscovery, retention, and so on. These people can perform only the tasks that you explicitly grant them access to. To access these portals, users need to be a global admin or a member of one or more Defender for Office 365 (Email & collaboration) or Purview compliance groups.
