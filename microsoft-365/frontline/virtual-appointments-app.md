@@ -86,11 +86,9 @@ After you add staff, you’ll be able to view their availability in the Teams an
 
 ### Create appointment types
 
-Create specific appointment types to represent the services offered by your organization and to tailor the booking experience. The appointment type can then be used to book appointments.
+Create specific appointment types to represent the services offered by your organization and to tailor the booking experience. The appointment type can then be used to book appointments. To learn more, see [SMC??? Create and edit appointment types]().
 
 On the **Manage** tab, select **Appointment types**, and then choose **Add appointment type**. Specify whether the service is for [Scheduled](#scheduled-appointment-type) or [On-demand](#on-demand-appointment-type) appointments.
-
-To learn more, see [SMC??? Create and edit appointment types]().
 
 #### Scheduled appointment type
 
@@ -186,16 +184,7 @@ From the queue, schedulers can add a new booking, view relevant appointment deta
 
 When an attendee joins the waiting room, the status changes, and their wait time is displayed and tracked. The view automatically refreshes with color-coded updates so that changes can easily be identified.
 
-To learn more, see [???SMC Manage your appointment queue]()
-
-> [!NOTE]
-> Currently, the Virtual Appointments app supports adding up to 100 staff per booking calendar. If you used Graph APIs to set up and add staff to a booking calendar, this limit may not be enforced. In this scenario, the **Queue** tab won't be able to render content for calendars that have more than 100 staff. For an optimal experience, we recommend that you add no more than 100 staff to a booking calendar. We're working to resolve this limitation in future releases.
-
-## Get insight into Virtual Appointments usage
-
-![Information icon](media/info.png) **Organizational analytics is available as part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). After the preview, a Teams Premium license is required. To access departmental and individual analytics during the preview period, users need a Teams Premium trial license.**
-
-Use the Virtual Appointments usage report on the **Analytics** tab to get an overview of virtual appointments activity in your organization. The report provides key metrics such as total number of appointments, appointment duration, lobby wait time, and no shows. You can view detailed activity for virtual appointments scheduled and conducted through multiple scheduling entry points and drill down into individual appointment data.
+The Virtual Appointments usage report in the **Analytics** tab gives you an overview of virtual appointments activity in your organization. The report provides key metrics such as total number of appointments, appointment duration, lobby wait time, and no shows. You can view detailed activity for virtual appointments scheduled and conducted through multiple scheduling entry points and drill down into individual appointment data.
 
 :::image type="content" source="media/virtual-appointments-app-analytics-org.png" alt-text="Screenshot of the Analytics tab in the Virtual Appointments app, showing the organizational-level Virtual Appointments usage report for admins." lightbox="media/virtual-appointments-app-analytics-org.png":::
 
