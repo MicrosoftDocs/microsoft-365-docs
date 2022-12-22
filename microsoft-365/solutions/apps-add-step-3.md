@@ -39,5 +39,5 @@ There are three primary ways you would purchase app content:
 
 ## Purchase app subscription or license
 
-## Purchase a custom a line-of-business app
+## Purchase a custom line-of-business app
 

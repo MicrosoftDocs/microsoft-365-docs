@@ -22,10 +22,10 @@ To start, first determine your organization's requirements by asking the questio
 
 | Questions | Details |
 |---|---|
-| Does my organization need to use Mobile Application Management (MAM) or Mobile Device Management (MDM)? | Intune supports both MAM and MEM. MAM without device management allows just your organization's apps to be managed by Intune, without enrolling the devices to be managed by Intune. MAM with device management (known as MDM) allows your organization's apps and devices to be managed. There's advantages to each management method. For more information, see [Understanding MAM and MDM](#understanding-mam-and-mdm).  |
-| What platforms do members of my organization use? | Intune supports a number of device platforms. You should consider supporting all possible device platforms that members of your organization use to access corporate data. For more information, see |
-| Which apps are needed to access company information and data? | Consider first including the apps that involve communication (such as email and meeting apps) and productivity apps (such as Excel, PowerPoint, and Word). For more information, see  |
-| Which groups of users need specific apps? |  |
+| Does my organization need to use Mobile Application Management (MAM) or Mobile Device Management (MDM)? | Intune supports both MAM and MDM. MAM without device management allows just your organization's apps to be managed by Intune, without enrolling the devices to be managed by Intune. MAM with device management (known as MDM) allows your organization's apps and devices to be managed. There's advantages to each management method. For more information, see [Understanding MAM and MDM](#understanding-mam-and-mdm).  |
+| What platforms do members of my organization use? | Intune supports a number of device platforms. You should consider supporting all possible device platforms that members of your organization use to access corporate data. For more information, see [Determine the platforms needed for each app](#determine-the-platforms-needed-for-each-app). |
+| Which apps are needed to access company information and data? | Determine which apps are currently used by members of your organization and which apps need to be available or added. For more information, see [Determine the type of app for your solution](#determine-the-type-of-app-for-your-solution). |
+| Which groups of users need specific apps? | For more information, see [Determine who will use the app](#determine-who-will-use-the-app). |
 | Is there helpful configuration needed for each app? |  |
 | Does each app need access protection and data protection? |  |
 
@@ -47,6 +47,35 @@ Intune supports configuring and protecting the apps that the members of your org
 
 For details about platforms for the apps your organization uses, see [Deploy apps your organization uses](/mem/intune/fundamentals/manage-apps#deploy-apps-your-organization-uses).
 
+## Determine the type of app for your solution
+
+There are several types of apps that you can consider assigning to the members of your organization. There are store apps, apps created specifically for your organization, apps on the web, and apps that have been designed to work with Intune. Determine all the apps that your organization uses and will need to use. For more information, see [Determine the type of app for your solution](/mem/intune/apps/apps-add#determine-the-type-of-app-for-your-solution).
+
+- Communication
+    - communities, events, chats, channels, meetings, storage, tasks, and calendars
+    - Email, meetings, calendar
+    - Collaboration, bookings, sharing, calling, messaging
+- Finance
+- Productivity
+    - Spreadsheets, presentations, writing, reading, task management
+- Security
+    - Authentication, Encryption
+    - Verification
+    - Signatures
+- Tools and utilities
+    - Editors, zip, view files, location services
+    - Secure printing, annotations
+    - Workspace management
+- Storage
+    - cloud storage
+    - secure file store
+    - Inventory
+
+<!--
+https://apps.apple.com/us/genre/ios/id36
+https://learn.microsoft.com/mem/intune/apps/apps-supported-intune-apps
+-->
+
 ## Determine who will use the app
 
 Intune uses Azure Active Directory (Azure AD) groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs. Create groups to organize users or devices by geographic location, department, or hardware characteristics. Use groups to manage tasks at scale. For example, you can set policies for many users or deploy apps to a set of devices.
@@ -54,7 +83,3 @@ Intune uses Azure Active Directory (Azure AD) groups to manage devices and users
 As you're determining which apps your workforce needs, consider the various groups of users and the various apps they use. Knowing these groups is also helpful after you've added an app. As you add an app to Intune, you assign a group of users that can use the app.
 
 To help determine the app users, see [Determine who will use the app](/mem/intune/apps/apps-add#assess-app-requirements). For details about adding groups of users, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
-
-## Determine the type of app for your solution
-
-There are several types of apps that you can consider assigning to the members of your organization. There are store apps, apps created specifically for your organization, apps on the web, and apps that have been designed to work with Intune. Determine all the apps that your organization uses and will need to use. For more information, see [Determine the type of app for your solution](/mem/intune/apps/apps-add#determine-the-type-of-app-for-your-solution).
