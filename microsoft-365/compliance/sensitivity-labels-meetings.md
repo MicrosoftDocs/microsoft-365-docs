@@ -204,4 +204,6 @@ However, if you select a label that applies encryption, it must be a label with 
 
 ## End-user documentation
 
-To help end users understand how to apply and change sensitivity labels for meetings, see [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-abd9f361-6a18-4256-ae46-5d429bc16ba6). Remember to provide your own guidance which named label to apply for different types of meetings. Then, users can focus on the label name instead of the individual settings behind the label.
+To help end users understand how to apply and change sensitivity labels in Teams, see [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-abd9f361-6a18-4256-ae46-5d429bc16ba6). For calendar items in Outlook, the labeling experience is very similar to labeling emails. For Outlook, probably the only additional information users need is [which Outlook clients](#requirements) currently support this labeling feature.
+
+Remember to provide your own guidance which named label to apply for different types of meetings. Then, users can focus on the label name instead of the individual settings applied by the label.
