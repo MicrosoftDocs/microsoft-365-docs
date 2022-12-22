@@ -202,5 +202,6 @@ This association is a setting that's available only when you edit an existing la
 
 However, if you select a label that applies encryption, it must be a label with admin-defined permissions (**Assign permissions now**) rather than user-defined permissions (**Do Not Forward** and **Encrypt-Only**).
 
+## End-user documentation
 
-
+To help end users understand how to apply and change sensitivity labels for meetings, see [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-abd9f361-6a18-4256-ae46-5d429bc16ba6). Remember to provide your own guidance which named label to apply for different types of meetings. Then, users can focus on the label name instead of the individual settings behind the label.
