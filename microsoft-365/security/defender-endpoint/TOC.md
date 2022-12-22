@@ -402,7 +402,7 @@
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
 ##### [Collect diagnostic data of Microsoft Defender Antivirus](collect-diagnostic-data.md)
 ##### [Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus](collect-diagnostic-data-update-compliance.md)
-##### [Tune performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+##### [Improve performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)

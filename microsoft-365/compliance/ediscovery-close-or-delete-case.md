@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -32,22 +31,19 @@ When the legal case or investigation supported by a Microsoft Purview eDiscovery
 Here's what happens when you close an eDiscovery (Premium) case:
 
 - If the case contains any content locations on hold, those holds will be turned off. After the hold is turned off, a 30-day grace period (called a *delay hold*) is applied to content locations that were on hold. This helps prevent content from being immediately deleted and gives admins an opportunity to search for or recover content that will be permanently deleted after the delay hold period expires. For more information, see [Removing content locations from an eDiscovery hold](ediscovery-create-holds.md#removing-content-locations-from-an-ediscovery-hold).
-
 - Closing a case only turns off the holds that are associated with that case. If other holds are place on a content location (such as a Litigation Hold, Microsoft Purview eDiscovery (Standard) hold, or a hold from a different eDiscovery (Premium) case) those holds will still be maintained.
-
 - The case is still listed on the eDiscovery page in the Microsoft Purview compliance portal. The details, holds, searches, and members of a closed case are retained.
-
 - You can edit a case after it's closed. For example, you can add or removing members, create searches, export search results, and prepare search results for analysis in eDiscovery (Premium). The primary difference between active and closed cases is that holds are turned off when a case is closed.
 
 To close a case:
 
 1. On the **eDiscovery (Premium)** page, select the case that you want to close.
 
-2. On the **Settings** tab, under **Case Information**, click **Select**.
+2. On the **Settings** tab, under **Case Information**, select **Select**.
 
    ![Access the case information flyout page in an eDiscovery (Premium) case.](..\media\AeDSelectCaseInformation.png) 
 
-3. At the bottom of the **Case Information** flyout page, click **Actions**, and then click **Close case**.
+3. At the bottom of the **Case Information** flyout page, select **Actions**, and then select **Close case**.
 
    It might take up to 60 minutes for the closing process to complete.
 
@@ -59,9 +55,9 @@ To reopen a closed case:
 
 1. On the **eDiscovery (Premium)** page, select the case that you want to reopen.
 
-2. On the **Settings** tab, under **Case Information**, click **Select**.
+2. On the **Settings** tab, under **Case Information**, select **Select**.
 
-3. At the bottom of the **Case Information** flyout page, click **Actions**, and then click **Reopen case**.
+3. At the bottom of the **Case Information** flyout page, select **Actions**, and then select **Reopen case**.
 
    It might take up to 60 minutes for the reopening process to complete.
 
@@ -77,16 +73,11 @@ Before you can delete a case (whether it's active or closed), you must first del
 To delete holds associated with a case:
 
 1. Go the **Holds** tab in the eDiscovery (Premium) case that you want to delete.
-
-2. Click the hold that you want to delete.
-
-3. On the flyout page, click **Delete hold**.
+2. Select the hold that you want to delete.
+3. On the flyout page, select **Delete hold**.
 
 To delete a case:
 
 1. On the **eDiscovery (Premium)** page, select the case that you want to delete.
-
-2. On the **Settings** tab, under **Case Information**, click **Select**.
-
-3. At the bottom of the **Case Information** flyout page, click **Actions**, and then click **Delete case**.
-
+2. On the **Settings** tab, under **Case Information**, select **Select**.
+3. At the bottom of the **Case Information** flyout page, select **Actions**, and then select **Delete case**.
