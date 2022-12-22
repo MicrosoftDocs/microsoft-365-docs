@@ -34,11 +34,8 @@ Organizations have many reasons to respond to a legal case involving certain exe
 eDiscovery cases let you control who can create, access, and manage eDiscovery cases in your organization. Use cases to add members and control what types of actions they can perform, place a hold on content locations relevant to a legal case, and use the Content Search tool to search the locations on hold for content that might be responsive to your case. Then you can also export and download those results for further investigation by external reviewers.
   
 - [Manage your eDiscovery workflow](./ediscovery-standard-get-started.md) by creating and using eDiscovery cases for every legal investigation your organization has to undertake.
-
 - [Assign eDiscovery permissions](ediscovery-assign-permissions.md) to control who can create and manage eDiscovery cases in your organization.
-
 - [Set up compliance boundaries](ediscovery-set-up-compliance-boundaries.md) to control the user content locations that eDiscovery managers can search.
-
 - [Search for content](search-for-content.md) in your organization.
 
 ### Use scripts for advanced scenarios
@@ -46,7 +43,6 @@ eDiscovery cases let you control who can create, access, and manage eDiscovery c
 Like the previous section that listed scripts for content search scenarios, we've also created some Security & Compliance PowerShell scripts to help you manage eDiscovery cases.
   
 - [Create a eDiscovery hold report](ediscovery-create-a-report-on-holds-in-cases.md) that contains information about all holds associated with eDiscovery cases in your organization.
-
 - [Add mailboxes and OneDrive locations](ediscovery-use-a-script-to-add-users-to-a-hold.md) for a list of users to an eDiscovery hold.
   
 ## Manage legal investigations with the eDiscovery (Premium) solution in Microsoft 365
@@ -58,19 +54,11 @@ eDiscovery (Premium) requires an E5 subscription for your Microsoft 365 or Offic
 Here's a quick overview of the built-in workflow in eDiscovery (Premium). For more information, see [Manage the eDiscovery (Premium) workflow](ediscovery-create-and-manage-cases.md#manage-the-workflow).
 
 - [Create a case](ediscovery-create-and-manage-cases.md#create-a-case) to get started.
-
 - [Manage custodians](ediscovery-managing-custodians.md) by adding them to a case and placing a legal hold on content in their mailbox, OneDrive account, and Microsoft Teams they're members of.
-
 - [Manage communications](managing-custodian-communications.md) with custodians by automating the legal hold notification process.
-
 - [Index custodian data](ediscovery-processing-data-for-case.md) and fix indexing errors so you can effectively collect data for your investigations.
-
 - [Collect data](collecting-data-for-ediscovery.md) for a case and add [add it to a review set](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) for further investigation.
-
 - [View](ediscovery-view-documents-in-review-set.md) documents, [query](ediscovery-review-set-search.md) data, and [tag](ediscovery-tagging-documents.md) items in a review set.
-
 - [Analyze case data](ediscovery-analyzing-data-in-review-set.md) with advanced analytics tools.
-
 - [Export case data](ediscovery-exporting-data.md) for review by outside counsel.
-
 - [Manage long-running jobs](ediscovery-managing-jobs.md) in eDiscovery (Premium).

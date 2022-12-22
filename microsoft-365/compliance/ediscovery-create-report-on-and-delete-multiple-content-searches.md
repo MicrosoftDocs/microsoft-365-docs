@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -31,13 +30,9 @@ ms.custom: seo-marvel-apr2020
 ## Before you create a Content Search
 
 - You have to be a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal to run the scripts that are described in this topic.
-
 - To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](/onedrive/list-onedrive-urls).
-
 - Be sure to save all the files that you create in this topic to the same folder. That will make it easier to run the scripts.
-
 - The scripts include minimal error handling. Their primary purpose is to quickly create, report on, and delete multiple Content Searches.
-
 - The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
 ## Step 1: Create a CSV file that contains information about the searches you want to run
