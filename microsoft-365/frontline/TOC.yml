@@ -115,8 +115,8 @@
     items: 
     - name: Overview
       href: virtual-appointments.md
-    - name: Virtual Appointments with Teams and Bookings
-      href: bookings-virtual-appointments.md
+    - name: Virtual Appointments with Teams and the Virtual Appointments app
+      href: virtual-appointments-app.md
     - name: Virtual Appointments with Teams and Cerner EHR 
       href: ehr-admin-cerner.md
     - name: Virtual Appointments with Teams and Epic EHR 
