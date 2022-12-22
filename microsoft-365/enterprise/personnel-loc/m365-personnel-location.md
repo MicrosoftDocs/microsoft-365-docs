@@ -29,7 +29,9 @@ Remote access to data by Microsoft personnel, including contract staff, is limit
 
 For more information on remote access to data by personnel, see [Continuing data transfers that apply to all EU Data Boundary services](https://learn.microsoft.com/privacy/eudb/eu-data-boundary-transfers-for-all-services).
 
-| Microsoft Subsidiary Personnel Locations ||||
+## Microsoft Subsidiary Personnel Locations
+
+|||||
 |--|--|--|--|
 | Albania                                  | Egypt         | Latvia                | Qatar                |
 | Algeria                                  | El Salvador   | Lebanon               | Romania              |
@@ -59,7 +61,9 @@ For more information on remote access to data by personnel, see [Continuing data
 | Dominican Republic                       | Kuwait        | Poland                |                      |
 | Ecuador                                  | Kyrgyzstan    | Portugal              |                      |
 
-| Contract Staff Personnel Locations ||||
+## Contract Staff Personnel Locations
+
+|||||
 |--|--|--|--|
 | Argentina                          | Egypt         | Japan       | Serbia              |
 | Armenia                            | El Salvador   | Korea       | Singapore           |
