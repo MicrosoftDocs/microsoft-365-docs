@@ -116,12 +116,12 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
      "ScanStatus": "Partial Success",
      "LastScanned": "2022-12-19T15:14:24.5561791Z",
      "ListScannedTargets": {
-         "Ip": "4asdff0c-3344-46d3-bxxe-a9334rtgfcaa_eb6df89dfdf9032f61eedf14c4b90f77",
+         "Ip": "127.0.0.1",
          "Hostname": "DESKTOP-Test",
-         "ScannedDeviceDescription": "2022-12-21T14:34:19.5698988Z",
-         "ErrorMessage": "2022-12-21T14:34:19.5698988Z",
-         "ScanStatus": "2022-12-21T14:34:19.5698988Z",
-         "ScanDuration": "2022-12-21T14:34:19.5698988Z",
+         "ScannedDeviceDescription": "Network device",
+         "ErrorMessage": "",
+         "ScanStatus": Success,
+         "ScanDuration": "00:08:30",
         },
     }
   ]
