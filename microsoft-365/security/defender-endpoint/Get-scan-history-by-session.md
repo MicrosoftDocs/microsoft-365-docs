@@ -108,10 +108,21 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
  "@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId",
     "value": [
     {
+     "orgId": "asdf781a0c-792d-46d3-bbea-a93dbc0bfcaa",
+     "ScanDefinitionId": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
      "SessionId": "01decc497f4b4ec49a5fc4e12597f8c8",
-     "LastScanned": "2022-12-19T15:14:24.5561791Z",
+     "NumberOfSuccessfullyScannedTargets": 3,
+     "NumberOfTargets": 5,
      "ScanStatus": "Partial Success",
-     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
+     "LastScanned": "2022-12-19T15:14:24.5561791Z",
+     "ListScannedTargets": {
+         "Ip": "4asdff0c-3344-46d3-bxxe-a9334rtgfcaa_eb6df89dfdf9032f61eedf14c4b90f77",
+         "Hostname": "DESKTOP-Test",
+         "ScannedDeviceDescription": "2022-12-21T14:34:19.5698988Z",
+         "ErrorMessage": "2022-12-21T14:34:19.5698988Z",
+         "ScanStatus": "2022-12-21T14:34:19.5698988Z",
+         "ScanDuration": "2022-12-21T14:34:19.5698988Z",
+        },
     }
   ]
 }

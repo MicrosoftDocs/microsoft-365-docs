@@ -157,9 +157,9 @@ Here is an example of the response.
     "status": "Fail",
     "failureReason": null,
     "executionDateTime": "2022-12-21T14:35:55.6702703Z"
-            }        
-    },
-    }    
+        }        
+      },
+     }    
     ]
 }
 ```
