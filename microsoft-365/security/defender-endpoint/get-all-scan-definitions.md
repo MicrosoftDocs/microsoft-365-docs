@@ -114,19 +114,20 @@ Here is an example of the response.
         "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
         "type": "Kerberos", 
         "username": "username", 
-        "password": "password"
+        "domain": "password",
+        "isGmsaUser": true
         },
     "scannerAgent": {
         "id": "47d41a0c-xxx-46d3-bbea-93dbc0bfcaa_1bc268a79eedf14c4b90f77",
         "machineId": "eb663asadf345dfg4bc268a79eedf14c4b90f77",
         "machineName": "DESKTOP-TEST",
         "lastSeen": "2021-12-19T20:29:04.8242449Z"
-            },
+        },
     "latestScan": {
         "status": "Fail",
         "failureReason": null,
         "executionDateTime": "2021-12-19T20:06:55.2295854Z"
-            }, 
+       }, 
     {    
     "id": "60c4aa57-ioi3-1290-7ff6-09fr14792a92",
     "scanType": "Network",
@@ -158,7 +159,7 @@ Here is an example of the response.
     "failureReason": null,
     "executionDateTime": "2022-12-21T14:35:55.6702703Z"
         }        
-      },
+    },
      }    
     ]
 }

@@ -113,7 +113,8 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
     "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
     "type": "Kerberos", 
     "username": "username", 
-    "password": "password"
+    "domain": "password",
+    "isGmsaUser": true
         },
     },
  },
@@ -175,7 +176,8 @@ PATCH https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefini
  "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
     "type": "Kerberos", 
     "username": "username", 
-    "password": "password"
+    "domain": "password",
+    "isGmsaUser": true
     }
 }
 ```
