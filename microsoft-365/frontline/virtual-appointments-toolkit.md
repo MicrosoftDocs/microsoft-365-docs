@@ -98,7 +98,6 @@ Share the [Join a Bookings appointment as an attendee](https://support.microsoft
 
 Make the most of Virtual Appointments in your organization by making sure your staff members know how to conduct them. You can share these articles and videos with your team members to help them better understand virtual appointments.
 
-- [Learn about Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Learn how to use the Bookings app in Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
 - [Learn how to join a Bookings appointment](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0).
 - [Conduct an appointment](bookings-virtual-visits.md#conduct-an-appointment).
