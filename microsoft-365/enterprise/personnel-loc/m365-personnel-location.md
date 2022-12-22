@@ -32,7 +32,7 @@ For more information on remote access to data by personnel, see [Continuing data
 ## Microsoft Subsidiary Personnel Locations
 
 |||||
-|--|--|--|--|
+|---|---|---|---|
 | Albania                                  | Egypt         | Latvia                | Qatar                |
 | Algeria                                  | El Salvador   | Lebanon               | Romania              |
 | Angola                                   | Estonia       | Lithuania             | Saudi Arabia         |
@@ -64,7 +64,7 @@ For more information on remote access to data by personnel, see [Continuing data
 ## Contract Staff Personnel Locations
 
 |||||
-|--|--|--|--|
+|---|---|---|---|
 | Argentina                          | Egypt         | Japan       | Serbia              |
 | Armenia                            | El Salvador   | Korea       | Singapore           |
 | Australia                          | Finland       | Malaysia    | South Africa        |
