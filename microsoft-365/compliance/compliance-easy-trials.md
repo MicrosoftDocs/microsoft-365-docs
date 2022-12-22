@@ -22,7 +22,7 @@ description: "Try all Microsoft Purview risk and compliance solutions at the E5 
 
 # About the Microsoft Purview risk and compliance solutions trial
 
-The Microsoft Purview solutions trial is a free and easy way to try all the [capabilities of Microsoft Purview risk and compliance solutions](purview-compliance.md). After a quick setup taking only takes a couple of minutes, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+The Microsoft Purview solutions trial is a free and easy way to try all the [capabilities of Microsoft Purview risk and compliance solutions](purview-compliance.md). After a quick setup taking only a couple of minutes, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
 - [**Start now** at the Microsoft Purview compliance trials hub](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)
 - [Get detailed sign-up instructions](#how-to-sign-up-for-the-trial)
@@ -97,7 +97,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Data Lifecycle Management**
 
-  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention).
+  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes aren't subject to location limits. Learn more about [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
 - **Data Loss Prevention**
 
@@ -122,15 +122,15 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
   - All files and emails labeled during your trial stay labeled. You can manually remove the labels.
   - Your existing policies will stay turned on unless you turn them off.
-  - Any auto-labeling policies cannot be edited after the trial ends, but can be deleted.
+  - Any auto-labeling policies can't be edited after the trial ends, but can be deleted.
   
-  For more information about each of these preconfigured features and how they will impact users, see Learn about the [free trial for Microsoft Purview Information Protection](mip-easy-trials.md).
+  For more information about each of these preconfigured features and how they'll affect users, see Learn about the [free trial for Microsoft Purview Information Protection](mip-easy-trials.md).
 
   For more information about the full range of features for Microsoft Purview Information Protection, see [Microsoft Purview Information Protection](information-protection.md).
 
 - **Insider Risk Management**
 
-  Leverage artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for risk signals, then take remediation actions such as promoting user education or initiating an investigation. Learn more about [Insider Risk Management](insider-risk-management-solution-overview.md)
+  Use artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for risk signals, then take remediation actions such as promoting user education or initiating an investigation. Learn more about [Insider Risk Management](insider-risk-management-solution-overview.md)
 
 <!--
 - **privacy management**
@@ -145,7 +145,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
   - Classify content as a record to prevent users from editing, as required by regulations, laws, or organizational policy
   - Apply retention labels to content automatically when it matches criteria you specify, using auto-apply label policies
   - Use adaptive scope policies to dynamically target your retention label policies to locations, with no limit on how many locations are included
-  - Get full content lifecycle support, including the ability to perform disposition review on contents before they are permanently deleted at the end
+  - Get full content lifecycle support, including the ability to perform disposition review on contents before they're permanently deleted at the end
 
   For more information on the full range of feature for Microsoft Records Management, learn more about [Records Management](records-management.md)
 
