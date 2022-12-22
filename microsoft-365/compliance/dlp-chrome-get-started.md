@@ -31,7 +31,7 @@ Use these procedures to roll out the Microsoft Purview Extension.
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 > [!NOTE]
-> The Microsoft Purview Extension is only applicable to Windows devices. The extension is not necessary for enforcement of data loss prevention on MacOS devices.
+> Microsoft Purview Extension is only applicable to Windows devices. The extension is not necessary for the enforcement of data loss prevention on macOS devices.
 
 ## Before you begin
 
