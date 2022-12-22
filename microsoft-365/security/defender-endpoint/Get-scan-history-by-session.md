@@ -105,16 +105,14 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
 {
-"@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId",
+ "@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryBySessionId",
     "value": [
-   {
+    {
      "SessionId": "01decc497f4b4ec49a5fc4e12597f8c8",
      "LastScanned": "2022-12-19T15:14:24.5561791Z",
      "ScanStatus": "Partial Success",
      "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
     }
-    ]
-
+  ]
 }
-
 ```

@@ -112,21 +112,20 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
     "LastScanned": "2022-12-20T11:14:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
-                },
+    },
     {
     "ScanDefinitionId": "60c4aa57-c573-4488-8d18-230914792a92",
     "LastScanned": "2022-11-17T15:13:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
-                },
-{
+    },
+    {
     "ScanDefinitionId": "c6220f67-2cad-4ba3-a2fa-7ded6384da56",
     "LastScanned": "2022-11-10T18:15:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
-                 },
-    ]
-
+    },
+   ]
 }
 
 ```
