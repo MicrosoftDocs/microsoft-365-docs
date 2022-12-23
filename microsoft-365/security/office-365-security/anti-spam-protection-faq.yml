@@ -26,7 +26,7 @@ summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
   
   **Applies to**
-  - [Exchange Online Protection](exchange-online-protection-overview.md)
+  - [Exchange Online Protection](eop-about.md)
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
   
@@ -34,9 +34,9 @@ summary: |
   
   For questions and answers about the quarantine, see [Quarantine FAQ](quarantine-faq.yml).
   
-  For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml).
+  For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq.yml).
   
-  For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-spoofing-protection-faq.yml).
+  For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-phishing-protection-spoofing-faq.yml).
   
 
 sections:
@@ -58,7 +58,7 @@ sections:
           A zero-day spam variant is a first generation, previously unknown variant of spam that's never been captured or analyzed, so our anti-spam filters don't yet have any information available for detecting it. After a zero-day spam sample is captured and analyzed by our spam analysts, if it meets the spam classification criteria, our anti-spam filters are updated to detect it, and it's no longer considered "zero-day."
           
           > [!NOTE]
-          > If you receive a message that may be a zero-day spam variant, in order to help us improve the service, please submit the message to Microsoft using one of the methods described in [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+          > If you receive a message that may be a zero-day spam variant, in order to help us improve the service, please submit the message to Microsoft using one of the methods described in [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
           
       - question: |
           Do I need to configure the service to provide anti-spam protection?
@@ -93,7 +93,7 @@ sections:
       - question: |
           How can customers using the service send false negative (spam) and false positive (non-spam) messages to Microsoft?
         answer: |
-          Spam and non-spam messages can be submitted to Microsoft for analysis in several ways. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+          Spam and non-spam messages can be submitted to Microsoft for analysis in several ways. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
           
       - question: |
           Can I get spam reports?
@@ -102,7 +102,7 @@ sections:
           
           Exchange Online customers: [Monitoring, Reporting, and Message Tracing in Exchange Online](/exchange/monitoring/monitoring)
           
-          Standalone EOP customers: [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
+          Standalone EOP customers: [Reporting and message trace in Exchange Online Protection](message-trace-scc.md)
           
       - question: |
           Someone sent me a message and I can't find it. I suspect that it may have been detected as spam. Is there a tool that I can use to find out?
@@ -227,4 +227,4 @@ sections:
 
           If you use a third-party protection service or device to scan email before it's delivered to Microsoft 365, you should also enable Enhanced Filtering for Connectors (also known as *skip listing*) so detection, reporting, and investigation features in Microsoft 365 are able to correctly identify messages sources. For more information, see [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-          If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phising-simulations-sec-ops-mailboxes.md).
+          If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).

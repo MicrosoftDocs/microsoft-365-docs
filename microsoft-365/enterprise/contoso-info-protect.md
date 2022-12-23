@@ -114,7 +114,7 @@ Learn how Contoso uses the [security features across Microsoft 365 for enterpris
 
 ## See also
 
-[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/overview)
+[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
