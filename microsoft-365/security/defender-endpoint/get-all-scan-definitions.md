@@ -1,6 +1,6 @@
 ---
 title: Get scan definitions
-description: Learn how to use the Get all scan definition APIs.
+description: Learn how to use the Get all scan definition APIs
 keywords: apis, graph api, supported apis, scan, authenticated scan
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy

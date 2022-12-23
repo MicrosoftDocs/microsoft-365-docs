@@ -1,6 +1,6 @@
 ---
 title: Get scan history by session
-description: Learn how to use the Get all scan definition APIs.
+description: Learn how to use the get scan history by session api
 keywords: apis, graph api, supported apis, scan history by session
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
