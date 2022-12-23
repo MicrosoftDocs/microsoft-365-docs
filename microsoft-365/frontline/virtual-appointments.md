@@ -52,8 +52,10 @@ With any Microsoft 365 license, you can use basic Virtual Appointments capabilit
 
 To learn more, see:
 
-- [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Virtual Appointments guided tour](https://guidedtour.microsoft.com/guidedtour/industry-longform/virtual-appointments/1/1)
+- [??? SMC What is Virtual Appointments?]()
+- [Virtual Appointments with Teams and the Virtual Appointments app](virtual-appointments-app.md)
+- [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 
 ## The Bookings app
 
@@ -67,8 +69,8 @@ With any Microsoft 365 license, you can use basic Virtual Appointments capabilit
 
 To learn more, see:
 
-- [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [What is Bookings?](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
+- [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Help your clients and customers use Bookings for virtual appointments](virtual-appointments-toolkit.md)
 
 ## Teams Electronic Health Record (EHR) connector
