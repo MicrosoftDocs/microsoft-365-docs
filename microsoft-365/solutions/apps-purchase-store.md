@@ -16,7 +16,7 @@ keywords:
 
 # Purchase store apps in Intune
 
-Many of the standard store apps displayed within the Intune console are freely available for you to add and deploy to members of your organization. In addition, you can purchase store apps for each device platform.
+Many of the standard store apps displayed within [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are freely available for you to add and deploy to members of your organization. In addition, you can purchase store apps for each device platform.
 
 The following table provides the different categories available for store apps:
 
@@ -32,7 +32,7 @@ The following table provides the different categories available for store apps:
 
 ## Add store apps based on platform
 
-You can use the Intune console to display apps that are either freely available, or available because you have a license for the app.
+You can use Intune to display apps that are either freely available, or available because you have a license for the app.
 
 The following table lists the specific store app types and how you can add them to Intune from the **Select app type** pane:
 
@@ -49,7 +49,7 @@ The following table lists the specific store app types and how you can add them 
 | Microsoft Edge, version 77 and later for macOS | Store app | Windows | Select **macOS** under **Microsoft Edge, version 77 and later** as the **app type**. |
 | Microsoft Defender for Endpoint (macOS) | Store app (Microsoft Defender ATP) | macOS | Select **macOS** under **Microsoft Defender for Endpoint** as the app type and then continue by setting up the app in Intune.  |
 
-You can add an app in from the Intune console by selecting **Apps** > **All apps** > **Add**. The **Select app type** pane is displayed and allows you to select one of the above app types.
+You can add an app in from [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Apps** > **All apps** > **Add**. The **Select app type** pane is displayed and allows you to select one of the above app types.
 
 ## Managed Google Play<!-- What is it? -->
 

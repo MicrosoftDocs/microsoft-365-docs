@@ -16,7 +16,7 @@ keywords:
 
 # Purchase apps for Intune
 
-There are a variety of apps that you can use with Microsoft Intune. Some apps are free for your workforce to use, while other apps require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook requires both a license and an account to use the app. Within the Intune console, you can select store apps and freely add them to Intune. Based on the supported integration with Intune, you can then configure these apps so that your workforce can easily set them up based on your unique company requirements and also add app protection policies for each app to protect your company's data.
+There are a variety of apps that you can use with Microsoft Intune. Some apps are free for your workforce to use, while other apps require either a license and/or an account for each user to use the app. For instance, Microsoft Outlook requires both a license and an account to use the app. Within [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you can select store apps and freely add them to Intune. Based on the supported integration with Intune, you can then configure these apps so that your workforce can easily set them up based on your unique company requirements and also add app protection policies for each app to protect your company's data.
 
 > [!NOTE]
 > Many of the apps available from Intune are free to add to Intune and assign to members of your organization. Apps that you must purchase to add to Intune are available through a volume purchase program. For app licensing information, see [Understand app licenses used in Intune](apps-license-overview.md).
@@ -34,10 +34,11 @@ Common types of apps to purchase and/or add:
 
 ### Individual store apps
 
-Intune integrates directly with the different supported platform stores. Within Intune, you can find and select free store apps for Windows, iOS, and Android. Intune displays the available store apps directly in the Intune console. When [adding an app to Intune](apps-add-overview.md), you can select each app by platform and choose the users and devices that will receive the app.
+Intune integrates directly with the different supported platform stores. Within Intune, you can find and select free store apps for Windows, iOS, and Android. Intune displays the available store apps directly in Intune. When [adding an app to Intune](apps-add-overview.md), you can select each app by platform and choose the users and devices that will receive the app.
 
 > [!NOTE]
 > Intune only shows free store apps. Apps that require a payment method will not be displayed as an available store app from within Intune unless you have a license for the app.
+
 
 For more information about store apps, see [Purchase store apps for Intune](apps-purchase-store.md).
 
@@ -73,11 +74,11 @@ In addition to standard store apps that can be managed, you can add specific [pa
 
 Many apps offer core functionality for free, however there are those apps that provide additional capabilities that you can purchase from within the app. Purchasing additional app functionality within an app is called "in-app purchases". 
 
-### iOS in-app purchase settings
+#### iOS in-app purchase settings
 
 You can choose to block in-app purchases specifically for iOS devices using device restriction settings. To force users to enter the Apple ID password for each in-app or ITunes purchase, you can set **Require iTunes Store password for all purchases** to **Yes**. However, the default is **Not configured**. Intune doesn't change or update this setting. By default, the OS might allow purchases without prompting for a password every time. To block in-app purchases from the Apple store, set **Block in-app purchases** to **Yes**. When set to **Not configured** (default), Intune doesn't change or update this setting. By default, the OS might allow store purchases within a running app.
 
-### Android in-app purchase settings
+#### Android in-app purchase settings
 
 On Android devices, you can allow access to all apps in Google Play store by allowing users to add new accounts to the device. However, doing so will enable end users not only to have the ability to conduct in-app purchases from the Google Play store using personal accounts, but purchase apps as well.
 

@@ -110,3 +110,17 @@ Description: Learn about modern management and the Microsoft Intune and how the 
 
 [Set up Microsoft Intune](/training/modules/set-up-microsoft-intune/)
 Description: Microsoft Intune, which is a part of Microsoft Intune, helps you protect the devices, apps, and data that the people at your organization use to be productive. After completing this module, you will have set up Microsoft Intune. Set up includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, granting admin permissions, and setting the MDM authority.
+
+## Guidance results
+Here's the results for your tenant for steps 1-7.
+
+## Guidance next steps
+Next, you'll want to consider adding application configuration and protection policies.
+
+## Additional app resources
+
+Key information from Microsoft:
+
+<!--
+https://review.learn.microsoft.com/microsoft-365/solutions/ransomware-protection-microsoft-365-information?view=o365-worldwide#additional-ransomware-resources
+-->

@@ -29,10 +29,10 @@ The following table provides the primary ways to obtain app licenses that you ca
 
 ## Standard license included with app
 
-As previously mentioned, many of the apps available within the Intune console are free to use. You can add these apps to Intune and assign them to the members of your organization without additional cost. The members of your organization can use the app without any additional license, subscription, or account. Each app may have their own standard use-license.
+As previously mentioned, many of the apps available to select within [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are free to use. You can add these apps to Intune and assign them to the members of your organization without additional cost. The members of your organization can use the app without any additional license, subscription, or account. Each app may have their own standard use-license.
 
 > [!NOTE]
-> Each app type for their related platform is added within the Intune console by selecting **Apps** > **All apps** > **Add**.
+> Each app type for their related platform is added within [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Apps** > **All apps** > **Add**.
 
 For more information, see [Add apps to Microsoft Intune Overview](apps-add-overview.md).
 
@@ -42,7 +42,7 @@ You can purchase or acquire app licenses in-volume through a volume purchase pro
 
 ## Apps requiring account, subscription, or license from the app vendor
 
-You can freely add and deploy the apps provided within the Intune console, but there are apps that require an account, subscription, or license from the app vendor to use.
+You can freely add and deploy the apps provided within [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), but there are apps that require an account, subscription, or license from the app vendor to use.
 
 ## Microsoft app licenses included with Intune
 

@@ -109,3 +109,6 @@ If you've already associated your Microsoft Store for Business account with your
 
 Follow the Intune guidelines to sync Microsoft Store for Business:
 - [Configure synchronization with Microsoft Store for Business](/mem/intune/apps/windows-store-for-business#configure-synchronization)
+
+> [!NOTE]
+> After you add and assign a VPP app to your end users (members of your organization), they will receive a prompt to install a VPP apps. For more information, see [End-User Prompts for VPP](/mem/intune/apps/vpp-apps-ios#upload-an-apple-vpp-or-apple-business-manager-location-token).

@@ -47,34 +47,31 @@ Intune supports configuring and protecting the apps that the members of your org
 
 For details about platforms for the apps your organization uses, see [Deploy apps your organization uses](/mem/intune/fundamentals/manage-apps#deploy-apps-your-organization-uses).
 
-## Determine the type of app for your solution
+## Determine apps needed for your organization
 
-There are several types of apps that you can consider assigning to the members of your organization. There are store apps, apps created specifically for your organization, apps on the web, and apps that have been designed to work with Intune. Determine all the apps that your organization uses and will need to use. For more information, see [Determine the type of app for your solution](/mem/intune/apps/apps-add#determine-the-type-of-app-for-your-solution).
+There are several types of apps that you can consider assigning to the members of your organization. There are store apps, apps created specifically for your organization, apps on the web, and apps that have been designed to work with Intune. You must determine all the apps that your organization currently uses and will need to use. 
+
+Application that you may want to consider adding to Intune include may include the following areas:
 
 - Communication
-    - communities, events, chats, channels, meetings, storage, tasks, and calendars
-    - Email, meetings, calendar
-    - Collaboration, bookings, sharing, calling, messaging
-- Finance
+    - Email, meetings, calendar, tasks, messaging
+    - Collaboration, communities, events, chats, channels
+    - Sharing, booking, calling
 - Productivity
-    - Spreadsheets, presentations, writing, reading, task management
+    - Spreadsheets, presentations, writing, reading
+    - 
 - Security
-    - Authentication, Encryption
-    - Verification
-    - Signatures
+    - Authentication, Verification, Encryption, Signatures
 - Tools and utilities
-    - Editors, zip, view files, location services
-    - Secure printing, annotations
-    - Workspace management
+    - Editors, compression, view files
+    - Secure printing, annotations, Workspace management
+    - Dev Ops, location services
 - Storage
-    - cloud storage
-    - secure file store
-    - Inventory
+    - cloud storage, secure file store, inventory
 
-<!--
-https://apps.apple.com/us/genre/ios/id36
-https://learn.microsoft.com/mem/intune/apps/apps-supported-intune-apps
--->
+Consider those apps that integrate with Intune by having built-in configuration and protection capabilities. For a list of apps, see [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps).
+
+For more information, see [Determine the type of app for your solution](/mem/intune/apps/apps-add#determine-the-type-of-app-for-your-solution).
 
 ## Determine who will use the app
 
