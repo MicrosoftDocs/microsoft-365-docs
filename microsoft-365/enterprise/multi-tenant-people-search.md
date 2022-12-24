@@ -58,7 +58,7 @@ To test the MTO people search scenario, it is assumed that you already have the 
 
 - The tenants are enabled for Private Preview of Cross Tenant Synchronization
 
-- Provisioned users from Home to target tenants. [Instructions to enable Tenant-to-Tenant sync](https://github.com/ArvindHarinder1/CrossTenantSynchronization/blob/main/CrossTenantSynchronization.md)
+- Provisioned users from Home to target tenants.
 
 ### Use Cases
 
