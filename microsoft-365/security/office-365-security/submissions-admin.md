@@ -528,7 +528,7 @@ After a few moments, an allow entry will appear on the **URL** tab on the **Tena
      - **Status**<sup>\*</sup>
      - **Priority**<sup>\*</sup>
      - **Customer comment**
-     - **Researchedr comment**
+     - **Researcher comment**
 
      When you're finished, click **Apply**.
 
