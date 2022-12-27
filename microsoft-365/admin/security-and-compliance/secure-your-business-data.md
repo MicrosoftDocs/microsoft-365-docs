@@ -1,5 +1,5 @@
 ---
-title: Top 10 ways to secure your business
+title: Top 10 ways to secure your business data
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -8,8 +8,8 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
-ms.subservice: other
-ms.date: 09/15/2022
+ms.subservice: m365bp
+ms.date: 12/21/2022
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -86,7 +86,7 @@ The following table compares capabilities in Microsoft 365 for business plans.
 
 (<a id="fn3">3</a>) Defender for Business is included in Microsoft 365 Business Premium. Defender for Business can also be added on to Microsoft 365 Business Basic or Standard. See [Get Defender for Business](/microsoft-365/security/defender-business/get-defender-business).
 
-(<a id="fn4">4</a>) Defender for Office 365 Plan 1 is included in Microsoft 365 Business Premium. Defender for Office 365 Plan 1 can also be added on to Microsoft 365 Business Basic or Standard. See [Defender for Office 365 Plan 1 and Plan 2](/microsoft-365/security/security/office-365-security/overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+(<a id="fn4">4</a>) Defender for Office 365 Plan 1 is included in Microsoft 365 Business Premium. Defender for Office 365 Plan 1 can also be added on to Microsoft 365 Business Basic or Standard. See [Defender for Office 365 Plan 1 and Plan 2](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview).
 
 > [!TIP]
 > For more information about what each plan includes, see [Reimagine productivity with Microsoft 365 and Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=8c2a86ec9ea514a008c6e419e036519c:G:s&OCID=AIDcmmwf9kwzdj_SEM_8c2a86ec9ea514a008c6e419e036519c:G:s&lnkd=Bing_O365SMB_Brand&msclkid=8c2a86ec9ea514a008c6e419e036519c).

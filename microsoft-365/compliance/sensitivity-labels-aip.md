@@ -75,9 +75,9 @@ Use the AIP add-in for your Windows Office apps only if you've already deployed 
 Some features are only supported by built-in labeling for Office apps, and won't be supported by the AIP add-in. These include:
 
 - For automatic and recommended labeling:
-    - Access to intelligent classification services that include [trainable classifiers](classifier-learn-about.md), [exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md), and [named entities](named-entities-learn.md)
-    - Detection of sensitive information as users enter the text
-    - In Word, users can review and remove the identified sensitive content
+  - Access to intelligent classification services that include [trainable classifiers](classifier-learn-about.md), [exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md), and [named entities](named-entities-learn.md)
+  - Detection of sensitive information as users enter the text
+  - In Word, users can review and remove the identified sensitive content
 - [Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that is integrated into existing user workflows
 - [PDF support](sensitivity-labels-office-apps.md#pdf-support)
 - [Protect meeting invites, with their attachments and responses](sensitivity-labels-meetings.md) (in preview)
@@ -96,7 +96,7 @@ To keep informed when new labeling capabilities become available for built-in la
 
 For the latest Office apps, the AIP add-in is disabled by default, so there's nothing for you to configure:
 
-- Currently rolling out to [Current Channel (Preview)](https://office.com/insider)
+- Currently in preview: [Current Channel (Preview)](https://office.com/insider)
 - **Current Channel** and **Monthly Enterprise Channel**: Not before version 2212+ (not yet released)
 - **Semi-Annual Channel**: Not before version 2301+ (not yet released)
 
@@ -115,13 +115,12 @@ For Office apps older than the versions listed in the previous section, to preve
 
 For your Windows Office apps that support built-in labeling, use the configuration for Microsoft Word 2016, Excel 2016, PowerPoint 2016, and Outlook 2016, specify the following programmatic identifiers (ProgID) for the AIP client, and set the option to **0: The add-in is always disabled (blocked)**
 
-|Application  |ProgID  |
-|---------|---------|
-|Word     |     `MSIP.WordAddin`    |
-|Excel     |  `MSIP.ExcelAddin`       |
-|PowerPoint     |   `MSIP.PowerPointAddin`      |
-|Outlook | `MSIP.OutlookAddin` |
-| | | 
+|Application|ProgID|
+|---|---|
+|Word|`MSIP.WordAddin`|
+|Excel|`MSIP.ExcelAddin`|
+|PowerPoint|`MSIP.PowerPointAddin`|
+|Outlook|`MSIP.OutlookAddin`|
 
 Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
 
@@ -137,7 +136,7 @@ If after making these changes the **Sensitivity** button doesn't display on the 
 ### How to configure newer versions of Office to enable the AIP add-in
 
 > [!CAUTION]
-> If you've previously set the value of **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **0** (or used the equivalent registry key of **UseOfficeForLabelling**​) to disable built-in labeling because you wanted to use the AIP add-in: Going forward, if you don't configure the new setting that's described in this section, you won't be able to use sensitivity labeling with either the AIP add-in or built-in labeling.
+> If you've previously set the value of **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **0** (or used the equivalent registry key of **UseOfficeForLabelling**) to disable built-in labeling because you wanted to use the AIP add-in: Going forward, if you don't configure the new setting that's described in this section, you won't be able to use sensitivity labeling with either the AIP add-in or built-in labeling.
 
 In the [newer versions of Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps), the AIP add-in is disabled by default. To enable it, you must configure a new Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**:
 
@@ -149,42 +148,42 @@ Additional Office settings you might need to configure:
 
 1. The security setting **Use the Sensitivity feature in Office to apply and view sensitivity labels**, must be **0**, or not configured.
 
-2. If the list of managed add-ins block the AIP add-in, as described in the previous section, you'll need to either remove these entries for the AIP add-in, or set their value to **1: The add-in is always enabled.** 
+2. If the list of managed add-ins block the AIP add-in, as described in the previous section, you'll need to either remove these entries for the AIP add-in, or set their value to **1: The add-in is always enabled.**
 
 ## Feature parity for built-in labeling and the AIP add-in for Office apps
 
 Many of the labeling features supported by the AIP add-in are now supported by built-in labeling. For a more detailed list of available capabilities, minimum versions that might be needed, and configuration information, see [Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md). To support a specific feature, you might need to change your [Office update channel](/deployoffice/overview-update-channels).
- 
+
 More features are planned and in development. If there's a specific feature that you're interested in, check the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) and consider joining the [Microsoft Information Protection in Office Private Preview](https://aka.ms/MIP/PreviewRing).
 
 Use the following information to help you identify if the features you use with the AIP add-in is currently available with built-in labeling. Features that aren't yet available but in planning or deployment might delay your final migration for users, but you can begin testing the other features now to expedite a later migration.
 
-|AIP add-in feature or capability|Built-in labeling |
-|:-------------------------------|:----------------:|
-|**Category: General** ||
-|Central reporting and auditing|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#auditing-labeling-activities) |
+|AIP add-in feature or capability|Built-in labeling|
+|---|:---:|
+|**Category: General**||
+|Central reporting and auditing|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#auditing-labeling-activities)|
 |Government Cloud|![Supported.](../media/yes-icon.png)|
-|Admin can disable labeling for all apps|  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
-|**Category: User Experience** ||
+|Admin can disable labeling for all apps|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
+|**Category: User Experience**||
 |Labeling button on the ribbon|![Supported.](../media/yes-icon.png)|
-|Multilanguage support for label names and tooltips| ![Supported.](../media/yes-icon.png) <br>[Learn more](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages) |
-|Visibility of labels on a toolbar| [In preview](sensitivity-labels-office-apps.md#sensitivity-bar) |
-|Label colors| [In preview](sensitivity-labels-office-apps.md#label-colors) |
-|**Category: Labeling actions** ||
-|Manual labeling |  ![Supported.](../media/yes-icon.png) <br>[Learn more](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) |
-|Mandatory labeling | ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|
-|Default labeling <br> - New and existing items <br> - Separate settings for email|  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do) |
-|Recommended or automatic |![Supported.](../media/yes-icon.png) <br>[Learn more](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) |
-|Downgrade justification |  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|
-| **Category: Visual markings** | |
-|Headers, footers, watermark| ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|
-|Dynamic markings| ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)|
-|Per app visual marking| ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)|
-| **Category: Encryption** | |
-|Admin-defined permissions | ![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#assign-permissions-now) |
-|User-defined permissions <br> - Do Not Forward for Outlook <br> - User and group custom permissions for Word, Excel, PowerPoint| ![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|User-defined permissions <br> - Organization-wide custom permissions by specifying domains for Word, Excel, PowerPoint | [In preview](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) |
-|Co-authoring and AutoSave | ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-coauthoring.md) |
+|Multilanguage support for label names and tooltips|![Supported.](../media/yes-icon.png) <br>[Learn more](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages)|
+|Visibility of labels on a toolbar|[In preview](sensitivity-labels-office-apps.md#sensitivity-bar)|
+|Label colors|[In preview](sensitivity-labels-office-apps.md#label-colors)|
+|**Category: Labeling actions**||
+|Manual labeling|![Supported.](../media/yes-icon.png) <br>[Learn more](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)|
+|Mandatory labeling|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|
+|Default labeling <br> - New and existing items <br> - Separate settings for email|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|
+|Recommended or automatic|![Supported.](../media/yes-icon.png) <br>[Learn more](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)|
+|Downgrade justification|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|
+|**Category: Visual markings**||
+|Headers, footers, watermark|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|
+|Dynamic markings|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)|
+|Per app visual marking|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-office-apps.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)|
+|**Category: Encryption**||
+|Admin-defined permissions|![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#assign-permissions-now)|
+|User-defined permissions <br> - Do Not Forward for Outlook <br> - User and group custom permissions for Word, Excel, PowerPoint|![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)|
+|User-defined permissions <br> - Organization-wide custom permissions by specifying domains for Word, Excel, PowerPoint|[In preview](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)|
+|Co-authoring and AutoSave|![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-coauthoring.md)|
 
 Remember to use the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label) to identify and track new features in development.
 
@@ -199,7 +198,7 @@ The following configurations from the AIP add-in that aren't yet supported by bu
 - [Label inheritance from email attachments](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 - [Oversharing popup messages for Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
 - [Default sublabel for a parent label](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#specify-a-default-sublabel-for-a-parent-label)
-- [Remove external content markings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution )
+- [Remove external content markings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution)
 
 ## Features not planned to be supported by built-in labeling for Office apps
 

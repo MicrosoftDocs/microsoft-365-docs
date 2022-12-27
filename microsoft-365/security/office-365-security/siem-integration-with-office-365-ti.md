@@ -67,4 +67,4 @@ The following table summarizes the values of **AuditLogRecordType** that are rel
 
 [Office 365 threat investigation and response](office-365-ti.md)
 
-[Automated investigation and response (AIR) in Office 365](automated-investigation-response-office.md)
+[Automated investigation and response (AIR) in Office 365](air-about-office.md)
