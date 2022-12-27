@@ -86,7 +86,7 @@ This configuration is possible when the devices have the share and read access (
 
  1. Create an SMB/CIFS file share. 
  
- 2. Use the following example to create a file share with the following share permissions.
+ 2. Use the following to create a file share with the following share permissions.
 
     ```PowerShell
     PS c:\> Get-SmbShareAccess -Name mdatp$
@@ -130,12 +130,22 @@ If you would prefer to do everything manually, here's what to do to replicate th
    > [!NOTE]
    > In the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time.
 
-3. Download a security intelligence package from [https://www.microsoft.com/wdsi/definitions](https://www.microsoft.com/wdsi/definitions)  into the GUID folder. The file should be named `mpam-fe.exe`.
+3. Download a security intelligence package from [https://www.microsoft.com/wdsi/definitions](https://www.microsoft.com/wdsi/definitions)  into the GUID folder. The file should be named `mpam-fe.exe`. Example: C:\Windows\wdav-update\{00000000-0000-0000-0000-yMMddHHmmss}\mpam-fe.exe
 
-4. Open a cmd prompt window and navigate to the GUID folder you created. Use the **/X** extraction command to extract the files, for example `mpam-fe.exe /X`.
+4. Open a cmd prompt window and navigate to the GUID folder you created. Use the **/X** extraction command to extract the x64 security intelligence update, for example `mpam-fe.exe /X`.
 
-   > [!NOTE]
+ > [!NOTE]
    > The VMs will pick up the updated package whenever a new GUID folder is created with an extracted update package or whenever an existing folder is updated with a new extracted package.
+
+5. Copy the entire C:\Windows\wdav-update\{00000000-0000-0000-0000-yMMddHHmmss}\ folder to the file share at the following path: \\fileserver.fqdn\mdatp$\wdav-update
+
+6. Copy the file C:\Windows\wdav-update\{00000000-0000-0000-0000-yMMddHHmmss}\mpam-fe.exe to the following path: \\fileserver.fqdn\mdatp$\wdav-update\x64
+
+> [!NOTE]
+>  The x64 directory MUST be present or clients that are not using the "Define security intelligence location for VDI clients" setting will fail to find the security intelligence package update.
+
+7. Remove folders older than 7 days (configurable) in the following paths: C:\Windows\wdav-update\ & \\fileserver.fqdn\mdatp$\wdav-update
+
 
 ## Randomize scheduled scans
 
