@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 12/20/2022
+ms.date: 12/27/2022
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -75,7 +75,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
      - Select **Save**.
 
-   :::image type="content" source="images/enable-rsac.png" alt-text="Screenshot of enabling Removable Storage Access Control policy" lightbox="images/enable-rsac.png":::
+   :::image type="content" source="media/enable-rsac.png" alt-text="Screenshot of enabling Removable Storage Access Control policy" lightbox="media/enable-rsac.png":::
 
 2. Set Default Enforcement (Optional):
 
