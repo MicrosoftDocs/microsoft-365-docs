@@ -96,7 +96,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
      - Select **Save**.
 
-   :::image type="content" source="images/default-deny.png" alt-text="Screenshot of setting Default Enforcement as Deny" lightbox="images/default-deny.png":::
+   :::image type="content" source="media/default-deny.png" alt-text="Screenshot of setting Default Enforcement as Deny" lightbox="media/default-deny.png":::
 
 3. Create one XML file for each group:
 
