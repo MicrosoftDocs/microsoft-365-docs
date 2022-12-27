@@ -199,7 +199,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
    - **This file should have been categorized as**: Select **Malware** or **Unwanted Software**.
 
-   - **Choose the priority**: Select **Low - bulk file or file hash submission** or **Medium - standard submission** or **High - need immediate attention (3 allowed per org per day)**. If you're not sure, use your best judgment. This option is only availabel if you choose the option **Files** in **Select the submission type**.
+   - **Choose the priority**: Select **Low - bulk file or file hash submission** or **Medium - standard submission** or **High - need immediate attention (3 allowed per org per day)**. If you're not sure, use your best judgment. This option is only available if you choose the option **Files** in **Select the submission type**.
 
    - **Note for Microsoft**: Enter optional information in case there is anything else that needs to be added.
 
