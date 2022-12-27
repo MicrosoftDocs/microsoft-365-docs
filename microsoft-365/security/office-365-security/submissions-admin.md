@@ -537,7 +537,7 @@ After a few moments, an allow entry will appear on the **URL** tab on the **Tena
      - **Submitted as**: The values **Unknown**, **Clean**, **False positive**, **Experimental false positive**, **Malware**, **Spyware**, **Unwanted Software**, **Pua false positive**, and **Night watch unknown**.
      - **Status**: The values **New**, **Unassigned**, **Assigned**, **Pending**, **Resolved**, **Closed**, **Downloading**, **Sample collection**, **Sample collection failure**, **Rejected**, and **Review timed out**.
      - **Submission ID**: A GUID value that's assigned to every submission.
-     - **Priority**: The values **Low**, **Medium** or **High**.
+     - **Priority**: The values **Low**, **Medium**, or **High**.
 
      When you're finished, click **Apply**. To clear existing filters, click ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters** in the **Filter** flyout.
 
