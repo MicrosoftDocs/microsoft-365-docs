@@ -156,7 +156,7 @@ On an improvement action's details page, select the **Testing** tab. Under **Tes
 
 ## Update testing source
 
-Compliance Manager provides you options for how to test improvement actions. In the **Overview** section of each improvement action, the **Testing Source** area has a drop-down menu from which you can choose how you want the action to be tested: **Manual**, **Automatic**, and **Parent**. Learn details about each testing method below.
+Compliance Manager provides options for how to test improvement actions. In the **Overview** section of each improvement action, the **Testing Source** area has a drop-down menu from which you can choose how you want the action to be tested: **Manual**, **Automatic**, and **Parent**. Learn details about each testing method below.
 
 #### Manual testing source
 Improvement actions set for manual testing are actions which you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab. For some actions, this is the only available method for testing improvement actions.
@@ -174,7 +174,7 @@ When automated testing is turned on, the action’s test date won’t be updated
 
 #### Parent testing source
 
-When you select **Parent** as the testing source for an improvement action, you'll choose another action to which your action will be linked. Your action in effect becomes the "child" to the action that you designate as the "parent." When you designate a parent for an improvement action, that action will inherent the implementation and testing details of the parent action. Any time the parent action's status changes, the child's status will inherit those changes. The child action will also accept all evidence in its **Documents** tab that belong to the parent action, which could override any data that previously existed in the child action's **Documents**.
+When you select **Parent** as the testing source for an improvement action, you'll choose another action to which your action will be linked. Your action in effect becomes the "child" to the action that you designate as the "parent." When you designate a parent for an improvement action, that action inherits the implementation and testing details of the parent action. Anytime the parent action's status changes, the child's status will inherit those changes. The child action will also accept all evidence in its **Documents** tab belonging to the parent action, which could override any data that previously existed in the child action's **Documents**.
 
 > [!NOTE]
 > Having a testing source of **Parent** doesn't necessarily mean that the action is automatically tested by Compliance Manager. For example, if the parent action's testing source is **manual**, then the child action will take on the status of parent action, which is a manual test and implementation by your organization.
