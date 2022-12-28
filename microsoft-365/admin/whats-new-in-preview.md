@@ -7,16 +7,18 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
-  - M365-subscription-management
-  - Adm_O365
-  - Adm_TOC
+- Tier1
+- scotvorg
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
 search.appverid:
-  - MET150
-  - MOE150
-  - FRP150
+- MET150
+- MOE150
+- FRP150
 ms.custom: 
 - MACDashWhatsNew
 - AdminSurgePortfolio
@@ -33,18 +35,105 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
 - [What's new in Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
 - [What's new in the Exchange admin center](/Exchange/whats-new)
 - [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new)
-- [What's new in the Microsoft Purview compliance portal](/Office365/SecurityCompliance/whats-new)
+- [What's new in the Microsoft Purview compliance portal](/microsoft-365/compliance/whats-new)
 - [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
+
+## December 2022
+
+### Advanced deployment guides for Microsoft 365
+
+To help you easily find guides for the services you’re deploying, we’ve updated the search tools, recommendations, and layouts for the [Advanced deployment guides & assistance](https://admin.microsoft.com/Adminportal/Home?Q=TechCommunity#/SetupGuidance) page in the Microsoft 365 admin center and at [setup.microsoft.com](https://setup.microsoft.com/).
+
+In this update, you can now:
+
+- Save valuable time by exporting your progress in Excel and share your progress as needed
+- View the most important actions front and center in the Suggested guides section
+- Use tags to notify you when a new or updated guide has been released since your last visit to the page
+
+:::image type="content" source="../media/advanced-deployment-guides.png" alt-text="Advanced deployment guides page in the Microsoft 365 admin center" lightbox="../media/advanced-deployment-guides.png":::
+
+To get to Advanced deployment guides, sign in the Microsoft 365 admin center and go to **Setup** > **Advanced deployment guides & assistance**.
+
+You can now find all the same guides from the Microsoft 365 admin center on [setup.microsoft.com](https://setup.microsoft.com/). Key updates to this site include:  
+
+- Expanded searchability to quickly find guides
+- Better page organization to help you navigate to the right view
+- Addition of all guides previously only available in the Microsoft 365 admin center (early 2023)
+
+We’ve also released a new advanced deployment guide for setting up your [Microsoft Zero Trust security model](https://setup.microsoft.com/purview/zero-trust-setup-guide) and are planning the release of a new guide for Windows 365 Cloud PC configuration in early 2023.
+
+To learn more, see [Simplify deployment of Microsoft 365 with new and updated deployment guides](https://techcommunity.microsoft.com/t5/microsoft-365-blog/simplify-deployment-of-microsoft-365-with-new-and-updated/ba-p/3687463).
+
+## November 2022
+
+### Sentiment per Topic available in the NPS survey insights dashboard
+
+To empower IT Admins like you, the Net Promoter Score (NPS) survey insights dashboard released the new Sentiment per Topic feature under the sentiment section.
+
+With this new feature, you will be able to identify the sentiment that is associated with each topic available. The sentiment is calculated for each NPS feedback comment and tied to a specific topic. With this new addition, you can discover what trending topics your users are talking about and understand the feeling they're experiencing regarding that specific topic.
+
+With the new sentiment per topic feature on the NPS survey insights dashboard, you will be able to:
+
+- Identify the sentiment for each topic
+- Choose between three sentiments: Positive, Negative, Other
+
+Here are the topics available:
+
+- Change Management
+- Collaboration
+- Complexity
+- Navigation
+- Performance
+- Reliability
+- User Education
+- Value
+
+To access the sentiment per topic insights, sign in to the M365 Admin Center and go to **Health** > **Product feedback** > **NPS survey insights tab**.
+
+:::image type="content" source="../media/nps-sentimentpertopic.jpg" alt-text="Screenshot: Sentiment per topic feature in the NPS survey insights dashboard" lightbox="../media/nps-sentimentpertopic.jpg":::
+
+For questions or feedback related to NPS survey insights, contact us at Prosight@microsoft.com.
+
+## August 2022
+
+### Date filter in the Net Promoter Score (NPS) survey insights dashboard
+
+Based on your feedback, we are introducing a new function in the NPS survey insights dashboard that allows Admins like you to filter the Net Promoter Score (NPS) data and insights per date, so that you can access details based on your date range preference.
+
+With this change, you will be able to look at the NPS survey insights based on the following date ranges:
+
+- Past 30 days
+- Past 90 days
+- Past 180 days
+
+To access, go to **Health** > **Product feedback** > **NPS survey insights tab**.
+
+:::image type="content" source="../media/nps-date-filter.png" alt-text="Screenshot: Date filter in the NPS survey insights dashboard" lightbox="../media/nps-date-filter.png":::
+
+Learn more about [NPS survey insights](/microsoft-365/admin/manage/manage-feedback-product-insights).
+
+For questions or feedback related to NPS survey insights, contact us at Prosight@microsoft.com.
+
+
+## July 2022
+
+### Multi-tenant billing relationships
+
+You can now create multi-tenant billing relationships with other tenants. A multi-tenant billing relationship lets you securely share your organization's billing account with other tenants, while maintaining control over your billing data.
+
+This feature is available to organizational account customers with a Microsoft Customer Agreement.
+
+For more information, see [Manage billing across multiple tenants in the Microsoft 365 admin center](../commerce/billing-and-payments/manage-multi-tenant-billing.md).
 
 ## May 2022
 
@@ -176,7 +265,7 @@ Learn more at [Microsoft product NPS feedback and insights for your organization
 
 ### Microsoft 365 admin center video training
 
-We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](admin-video-library.yml) page to learn how to set up and manage Microsoft 365 for your business.
+We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](https://go.microsoft.com/fwlink/?linkid=2197659) page to learn how to set up and manage Microsoft 365 for your business.
 
 :::image type="content" source="../media/admin-library-vid-training.png" alt-text="Screenshot: Showing the admin center video training library":::
 

@@ -2,7 +2,7 @@
 title: Understand threat intelligence concepts in Microsoft Defender for Endpoint
 description: Create custom threat alerts for your organization and learn the concepts around threat intelligence in Microsoft Defender for Endpoint
 keywords: threat intelligence, alert definitions, indicators of compromise, ioc
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ms.topic: conceptual
-ms.technology: mde
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Understand threat intelligence concepts
@@ -25,7 +28,8 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-threatindicator-abovefoldlink)
 
@@ -53,6 +57,8 @@ Here is an example of an IOC:
 
 IOCs have a many-to-one relationship with alert definitions such that an alert definition can have many IOCs that correspond to it.
 
-
 ## Related topics
+
+- [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
+
 - [Manage indicators](manage-indicators.md)

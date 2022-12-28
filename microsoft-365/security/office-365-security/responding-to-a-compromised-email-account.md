@@ -9,8 +9,9 @@ audience: ITPro
 ms.topic: how-to
 ms.collection: 
   - o365_security_incident_response
-  - M365-security-compliance
+  - m365-security
   - m365solution-smb
+  - highpri
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
@@ -18,15 +19,15 @@ ms.localizationpriority: high
 search.appverid: 
   - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ---
 # Responding to a Compromised Email Account
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -175,17 +176,10 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
 3. Make sure that your contact information, such as telephone numbers and addresses, is correct.
 
-## Secure Microsoft 365 like a cybersecurity pro
-
-Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.  Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
-
-- Tasks to accomplish in the first 30 days. These have immediate affect and are low-impact to your users.
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
-- Beyond 90 days. These enhancements build in your first 90 days work.
-
 ## See also
 
 - [Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Detect and Remediate Illicit Consent Grants](detect-and-remediate-illicit-consent-grants.md)
 - [Internet Crime Complaint Center](https://www.ic3.gov/Home/Ransomware)
 - [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
 - To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

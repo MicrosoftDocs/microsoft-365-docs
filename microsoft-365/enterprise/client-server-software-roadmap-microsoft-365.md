@@ -8,9 +8,11 @@ manager: scotv
 ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-subscription-management
+ms.collection: 
+- scotvorg
+- M365-subscription-management
 ms.custom: it-pro
 description: Use this roadmap to set up client and server software for Microsoft 365.
 ---

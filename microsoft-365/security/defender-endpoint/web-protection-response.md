@@ -2,7 +2,7 @@
 title: Respond to web threats in Microsoft Defender for Endpoint
 description: Respond to alerts related to malicious and unwanted websites. Understand how web threat protection informs end users through their web browsers and Windows notifications
 keywords: web protection, web threat protection, web browsing, alerts, response, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, notifications, end users, Windows notifications, blocking page,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
+ms.subservice: mde
+search.appverid: met150
 ---
 
 # Respond to web threats

@@ -1,5 +1,5 @@
 ---
-title: "Learn about retention policies & labels to automatically retain or delete content"
+title: "Learn about retention policies & labels to retain or delete"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -11,21 +11,20 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
-- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Learn about retention policies and retention labels that help you to retain what you need and delete what you don't.
+description: Learn about Microsoft 365 retention policies and retention labels to retain what you need and delete what you don't to manage your organization's data.
 ---
 
 # Learn about retention policies and retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > If you're seeing messages about retention policies in Teams or have questions about retention labels in your apps, contact your IT department for information about how they have been configured for you. In the meantime, you might find the following articles helpful:
@@ -59,6 +58,8 @@ With these two retention actions, you can configure retention settings for the f
 These retention settings work with content in place that saves you the additional overheads of creating and configuring additional storage when you need to retain content for compliance reasons. In addition, you don't need to implement customized processes to copy and synchronize this data.
 
 Use the following sections to learn more about how retention policies and retention labels work, when to use them, and how they supplement each other. But if you're ready to get started and deploy retention settings for some common scenarios, see [Get started with data lifecycle management](get-started-with-data-lifecycle-management.md).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## How retention settings work with content in place
 
@@ -147,7 +148,7 @@ With retention labels, you can:
 
 - **Enable people in your organization to apply a retention label manually** to content in Outlook and Outlook on the web, OneDrive, SharePoint, and Microsoft 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate retention settings applied.
 
-- **Apply retention labels to content automatically** if it matches specific conditions, that include cloud attachments that are shared in email or Teams, or when the content contains:
+- **Apply retention labels to content automatically** if it matches specific conditions, that includes cloud attachments that are shared in email or Teams, or when the content contains:
   - Specific types of sensitive information.
   - Specific keywords that match a query you create.
   - Pattern matches for a trainable classifier.
@@ -206,7 +207,7 @@ Exchange public folders, Skype, Teams and Yammer messages do not support retenti
 An email or document can have only a single retention label applied to it at a time. A retention label can be applied [manually](create-apply-retention-labels.md#manually-apply-retention-labels) by an end user or admin, or automatically by using any of the following methods:
 
 - [Auto-apply label policy](apply-retention-labels-automatically.md)
-- [Document understanding model for SharePoint Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
+- [Document understanding model for Microsoft Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [Default label for SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) or [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Outlook rules](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 
@@ -243,7 +244,7 @@ You can then drill down into details by using [content explorer](data-classifica
 
 After retention labels are applied to content, either by users or auto-applied, you can use content search to find all items that have a specific retention label applied.
 
-When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 ![Retention label condition.](../media/retention-label-condition.png)
 
@@ -263,6 +264,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
+|Run a Power Automate flow at the end of the retention period | No | Yes|
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when you use disposition review or item is marked a record|
 |Audit admin activities| Yes | Yes|
@@ -290,13 +292,13 @@ Scenario: By default, content in users' OneDrive accounts is automatically delet
 
 2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
-Example to retain items for longer**
+#### Example to retain items for longer
 
 Scenario: By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
 
 1. You create and configure a retention policy that automatically retains and then deletes content after five years, and apply the policy to all SharePoint and Microsoft 365 Groups instances.
 
-2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint site admins, so that they can apply it as a default label to be inherited by all items in specific document libraries.
+2. You create and configure a retention label that automatically retains content for ten years. You add this label to a label policy that you publish to all SharePoint and Microsoft 365 Groups instances so that SharePoint admins can then apply it as a default label to be inherited by all items in specific document libraries.
 
 #### Example to delete items in a shorter time period
 
@@ -517,13 +519,13 @@ Additional information for specific locations:
 
 ## Auditing retention configuration and actions
 
-When [auditing is enabled](turn-audit-log-search-on-or-off.md), auditing events for retention are supported for both administration configuration (retention policies and retention labels) and retention actions (retention labels only).
+When [auditing is enabled](audit-log-enable-disable.md), auditing events for retention are supported for both administration configuration (retention policies and retention labels) and retention actions (retention labels only).
 
 ### Auditing retention configuration
 
 Administrator configuration for retention policies and retention labels is logged as auditing events when a retention policy or label is created, reconfigured, or deleted.
 
-For the full list of auditing events, see [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+For the full list of auditing events, see [Retention policy and retention label activities](audit-log-activities.md#retention-policy-and-retention-label-activities).
 
 ### Auditing retention actions
 
@@ -546,43 +548,13 @@ Retention actions that are logged as auditing events are available only for rete
 
 ## PowerShell cmdlets for retention policies and retention labels
 
-To use the retention cmdlets, you must first [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell). Then, use any of the following cmdlets:
+Use [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) for Purview retention cmdlets that support configuration at scale, scripting for automation, or might be necessary for advanced configuration scenarios.
 
-- [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
-
-- [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)
-
-- [Remove-ComplianceTag](/powershell/module/exchange/remove-compliancetag)
-
-- [Set-ComplianceTag](/powershell/module/exchange/set-compliancetag)
-
-- [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage)
-
-- [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
-
-- [Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig)
-
-- [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
-
-- [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
-
-- [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
-
-- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig)
-
-- [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
-
-- [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule)
-
-- [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule)
-
-- [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
-
-- [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
+For a list of available cmdlets, and to identify which ones are supported for the different locations, see [PowerShell cmdlets for retention policies and retention labels](retention-cmdlets.md).
 
 ## When to use retention policies and retention labels or eDiscovery holds
 
-Although retention settings and [holds that you create with an eDiscovery case](create-ediscovery-holds.md) can both prevent data from being permanently deleted, they are designed for different scenarios. To help you understand the differences and decide which to use, use the following guidance:
+Although retention settings and [holds that you create with an eDiscovery case](ediscovery-create-holds.md) can both prevent data from being permanently deleted, they are designed for different scenarios. To help you understand the differences and decide which to use, use the following guidance:
 
 - Retention settings that you specify in retention policies and retention labels are designed for a long-term data lifecycle management strategy to retain or delete data for compliance requirements. The scope is usually broad with the main focus being the location and content rather than individual users. The start and end of the retention period is configurable, with the option to automatically delete content without additional administrator intervention.
 
@@ -605,16 +577,16 @@ If you are using older eDiscovery tools to preserve data, see the following reso
 
 - Exchange:
   - [In-Place Hold and Litigation Hold](/exchange/security-and-compliance/in-place-and-litigation-holds)
-  - [How to identify the type of hold placed on an Exchange Online mailbox](./identify-a-hold-on-an-exchange-online-mailbox.md)
+  - [How to identify the type of hold placed on an Exchange Online mailbox](./ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md)
 
 - SharePoint and OneDrive:
   - [Add content to a case and place sources on hold in the eDiscovery Center](/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
-- [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md)
+- [Retirement of legacy eDiscovery tools](ediscovery-legacy-retirement.md)
 
 ## Use retention policies and retention labels instead of older features
 
-If you need to proactively retain or delete content in Microsoft 365 for data lifecycle management, we recommend that you use retention policies and retention labels instead of the following older features.
+If you need to proactively retain or delete content in Microsoft 365 for data lifecycle management, we recommend that you use Microsoft 365 retention policies and retention labels instead of the following older features.
 
 If you currently use these older features, they will continue to work side by side with Microsoft 365 retention policies and retention labels. However, we recommend that going forward, you use Microsoft 365 retention policies and retention labels to benefit from a single solution to manage both retention and deletion of content across multiple workloads in Microsoft 365.
 
@@ -628,7 +600,11 @@ If you currently use these older features, they will continue to work side by si
 
   - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
 
-- [Litigation hold](create-a-litigation-hold.md) (retention only)
+- [Journaling](/exchange/security-and-compliance/journaling/journaling) (retention and archive)
+    
+    Might be required to integrate with third-party solutions and copies of email messages and their data communication are stored outside Exchange Online. Because you're moving data outside Microsoft 365, you must take extra precautions to secure it and also resolve any duplications that might result from this solution. It will be your responsibility to monitor and follow up on any non-delivery receipts to the journaling mailbox that can occur because of external and dependent services. You don't have these additional administrative overheads when you use Microsoft 365 retention and other Microsoft Purview compliance solutions that also aren't limited to just email messages.
+
+- [Litigation hold](ediscovery-create-a-litigation-hold.md) (retention only)
 
    Although Litigation holds are still supported, we recommend you use Microsoft 365 retention or eDiscovery holds, [as appropriate](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
 

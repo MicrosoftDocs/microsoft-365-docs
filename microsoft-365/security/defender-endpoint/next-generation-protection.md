@@ -2,19 +2,22 @@
 title: Overview of next-generation protection in Microsoft Defender for Endpoint
 description: Get an overview of next-generation protection in Microsoft Defender for Endpoint. Reinforce the security perimeter of your network by using next-generation protection designed to catch all types of emerging threats.
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, virus, malware, threat, detection, protection, security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.topic: article
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.collection: 
+- m365-security
+- tier1
+search.appverid: met150
 ---
 
 # Next-generation protection overview
@@ -39,17 +42,6 @@ Microsoft Defender for Endpoint includes next-generation protection to reinforce
 > Next-generation protection is included in both Microsoft Defender for Endpoint Plan 1 and Plan 2. [Learn more about Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md)
 > Next-generation protection is also included in Microsoft Defender for Business and Microsoft 365 Business Premium. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../defender-business/compare-mdb-m365-plans.md).
 
-## Try a demo!
-
-Visit the [Microsoft Defender for Endpoint demo website](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following protection features are working and explore them using demo scenarios:
-
-- Cloud-delivered protection
-- Block at first sight (BAFS) protection
-- Potentially unwanted applications (PUA) protection
-
-> [!NOTE]
-> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
-
 ## Configure next-generation protection services
 
 For information on how to configure next-generation protection services, see [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md).
@@ -67,3 +59,19 @@ For information on how to configure next-generation protection services, see [Co
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).

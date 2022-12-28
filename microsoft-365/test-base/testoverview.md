@@ -8,7 +8,7 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 04/13/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
@@ -25,7 +25,7 @@ In this section, you'll learn how to create packages with different types of app
 
    - **Test Binaries files**
 
-      See [Creating and Testing Binary Files on Test Base](testapplication.md) to prepare a package with a Binary application file (.exe, .msi) for uploading and testing.
+      See [Creating and Testing Binary Files on Test Base](testapplication.md) to prepare a package with a Binary application file (that is, .exe, .msi) for uploading and testing.
 
    - **Intunewin app**
 
@@ -33,7 +33,7 @@ In this section, you'll learn how to create packages with different types of app
 
    - **Pre-built Zip package**
 
-      See [Uploading pre-built zip package](uploadApplication.md) if you already have an offline built package in .zip format.
+      See [Uploading pre-built zip package](uploadapplication.md) if you already have an offline built package in .zip format.
 
    - **Clone existing package**
 

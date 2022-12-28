@@ -2,8 +2,8 @@
 title: Connect Microsoft Defender for Office 365 to Microsoft Sentinel
 description: The steps to connect Microsoft Defender for Office 365 to Sentinel. Add your Microsoft Defender for Office 365 data (*and* data from the rest of the Microsoft 365 Defender suite), including incidents, to Microsoft Sentinel for a single pane of glass into your security.
 search.product: 
-search.appverid: 
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,12 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
-ms.topic: article
-ms.technology: mdo
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
+ms.topic: how-to
+search.appverid: met150
 ---
 
 # Connect Microsoft Defender for Office 365 to Microsoft Sentinel
@@ -29,12 +32,12 @@ Take advantage of rich security information events management (SIEM) combined wi
 > The Microsoft 365 Defender connector is currently in **PREVIEW**. See the Supplemental Terms of Use for Microsoft Azure Previews for additional legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.>
 
 ## What you will need
-- Microsoft Defender for Office 365 Plan 2 or higher.
+- Microsoft Defender for Office 365 Plan 2 or higher. (Included in E5 plans)
 - Microsoft Sentinel [Quickstart guide](/azure/sentinel/quickstart-onboard).
 - Sufficient permissions (Security Administrator in M365 & Read / Write permissions in Sentinel).
 
 ## Add the Microsoft 365 Defender Connector
-1. [Login to the Azure Portal](https://portal.azure.com) and navigate to **Microsoft Sentinel** > Pick the relevant workspace to intergrate with Microsoft 365 Defender
+1. [Login to the Azure Portal](https://portal.azure.com) and navigate to **Microsoft Sentinel** > Pick the relevant workspace to integrate with Microsoft 365 Defender
     1. On the left-hand navigation menu underneath the heading **Configuration** > choose **Data connectors**.
 2. When the page loads, **search for** Microsoft 365 Defender **and select the Microsoft 365 Defender (preview) connector**.
 3. On the right-hand flyout, select **Open Connector Page**.

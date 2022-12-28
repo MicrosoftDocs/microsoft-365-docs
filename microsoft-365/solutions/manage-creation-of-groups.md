@@ -7,9 +7,10 @@ author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management
 - Adm_O365
 - m365solution-collabgovernance
@@ -89,7 +90,7 @@ You must use the preview version of [Azure Active Directory PowerShell for Graph
 
 - If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.
 
-- If you have already installed the preview version, run `Install-Module AzureADPreview` to make sure it's the latest version of this module.
+- If you have already installed the preview version, run `Update-Module AzureADPreview` to make sure it's the latest version of this module.
 
 Copy the script below into a text editor, such as Notepad, or the [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 

@@ -4,7 +4,8 @@ description: Learn about file signing information in the DeviceFileCertificateIn
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, digital signature, certificate, file signing, DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,9 +16,10 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
-ms.technology: m365d
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ---
 
 # DeviceFileCertificateInfo
@@ -51,7 +53,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `CertificateExpirationTime` | `datetime` | Date and time the certificate is set to expire |
 | `CertificateCountersignatureTime` | `datetime` | Date and time the certificate was countersigned |
 | `IsTrusted` | `boolean` | Indicates whether the file is trusted based on the results of the WinVerifyTrust function, which checks for unknown root certificate information, invalid signatures, revoked certificates, and other questionable attributes |
-| `IsRootSignerMicrosoft` | `boolean` | Indicates whether the signer of the root certificate is Microsoft |
+| `IsRootSignerMicrosoft` | `boolean` | Indicates whether the signer of the root certificate is Microsoft and if the file is included in Windows operating system |
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. | 
 
 ## Related topics

@@ -5,8 +5,8 @@ keywords: antivirus, spam, phish, file, alert, Microsoft Defender for Endpoint, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.date: 06/15/2021
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,11 +16,9 @@ manager: dansimp
 localization_priority: Normal
 audience: ITPro
 ms.topic: how-to
-ms.collection:
-- m365-security-compliance
-- m365initiative-defender-endpoint
-- m365solution-scenario
-- m365scenario-fpfn
+ms.collection: 
+- m365-security
+- tier2
 ms.custom: FPFN
 ---
 
@@ -43,9 +41,9 @@ In Microsoft Defender for Endpoint, admins can use the unified submissions featu
 
 - To submit files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management**, **Security Administrator**, or **Security Reader** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
+  - **Organization Management**, **Security Administrator**, or **Security Reader** in the [Microsoft 365 Defender portal](../office-365-security/mdo-portal-permissions.md).
 
-- For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
+- For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/submissions-report-messages-files-to-microsoft.md).
 
 ## Report items to Microsoft from the portal
 
@@ -101,6 +99,7 @@ You can also submit a file or file hash directly from the list of alerts on the 
 
 ## Related information
 
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
 - [View and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md)

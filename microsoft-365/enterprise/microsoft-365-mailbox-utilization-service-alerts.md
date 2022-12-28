@@ -6,11 +6,12 @@ manager: scotv
 ms.date: 
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: 
@@ -23,17 +24,20 @@ description: "Use mailbox utilization service advisories to monitor mailboxes on
 
 # Service advisories for mailbox utilization in Exchange Online monitoring
 
-We've released a new Exchange Online service advisories that informs you of mailboxes that are on hold that are at risk of reaching or exceeding their quota. These service advisories provide visibility to the number of mailboxes in your organization that may require admin intervention.
+We've released a new Exchange Online service advisory that informs you of mailboxes that are on hold that are at risk of reaching or exceeding their quota. These service advisories provide visibility to the number of mailboxes in your organization that may require admin intervention.
 
 These service advisories are displayed in the Microsoft 365 admin center. To view these service advisories, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then click the **Active issues** tab. Here's an example of a mailbox utilization service advisory.
 
 :::image type="content" alt-text="Mailbox utilization service alert." source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
-To display a list of mailboxes that are nearing their storage quota (called the *mailbox usage report*), click the highlighted link in the following screenshot. This link is displayed in the service advisory.
+To display a list of mailboxes that are nearing their storage quota, select the highlighted link in the following screenshot to access your mailbox usage report. This link is displayed in the service advisory.
 
 :::image type="content" alt-text="Link to mailbox usage report." source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
 Alternatively, the direct URL to the mailbox usage report is <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage>.
+
+> [!NOTE]
+> The mailbox usage report information could be 24 hours behind your mailbox utilization service advisory alert.
 
 ## What do these service advisories indicate?
 

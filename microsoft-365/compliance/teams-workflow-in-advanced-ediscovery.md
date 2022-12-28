@@ -1,9 +1,10 @@
 ---
 title: "Teams workflow in eDiscovery (Premium)"
+description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in eDiscovery (Premium)."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -12,13 +13,13 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
-ms.collection: M365-security-compliance
-description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in eDiscovery (Premium)."
+ms.collection:
+- highpri 
+- tier1
+- purview-compliance
 ---
 
 # eDiscovery (Premium) workflow for content in Microsoft Teams
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 This article provides a comprehensive set of procedures, guidelines, and best practices for using Microsoft Purview eDiscovery (Premium) to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 
@@ -36,9 +37,15 @@ There are six categories of Teams content that you can collect and process using
 
 - **Shared channels**. Message posts, replies, and attachments shared in a shared Teams channel.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Where Teams content is stored
 
-A prerequisite to managing Teams content in eDiscovery (Premium) is to understand the type of Teams content that you can collect, process, and review in eDiscovery (Premium) and where that content is stored in Microsoft 365. The following table lists Teams content type and where each is stored.
+A prerequisite to managing Teams content in eDiscovery (Premium) is to understand the type of Teams content that you can collect, process, and review in eDiscovery (Premium) and where that content is stored in Microsoft 365.
+
+Teams data is stored in Azure Cosmos DB. Teams compliance records captured by the substrate are in Exchange Online and are available for ediscovery. 
+
+The following table lists Teams content type and where each is stored for complaince purpose. The data stored in Exchange online is hidden from clients. eDiscovery never operates against the real Teams message data, which remains in Azure Cosmos DB.
 
 |&nbsp;|Location of chat messages and posts|Location of files and attachments|
 |---|---|---|
@@ -62,13 +69,13 @@ The first step to managing Teams content in eDiscovery (Premium) is to create a 
 
 - Collections up to 1 TB can be added to review sets, which let you collect and amounts large amounts of Teams content in a case.
 
-For more information about the increased case limits, see [Use the new case format in eDiscovery (Premium)](advanced-ediscovery-new-case-format.md).
+For more information about the increased case limits, see [Use the new case format in eDiscovery (Premium)](ediscovery-new-case-format.md).
 
 To create a case:
 
 1. Go to <https://compliance.microsoft.com> and sign in.
 
-2. In the left navigation pane of the Microsoft Purview compliance portal, click **eDiscovery > Advanced**.
+2. In the left navigation pane of the Microsoft Purview compliance portal, click **eDiscovery > Premium**.
 
 3. On the **eDiscovery (Premium)** page, click the **Cases** tab, and then click **Create a case**.
 
@@ -115,9 +122,9 @@ To add custodians to a case and preserve custodial data sources:
 
 For more information about adding and preserving data sources in an eDiscovery (Premium) case, see:
 
-- [Add custodians to an eDiscovery (Premium) case](add-custodians-to-case.md)
+- [Add custodians to an eDiscovery (Premium) case](ediscovery-add-custodians-to-case.md)
 
-- [Add non-custodial data sources to an eDiscovery (Premium) case](non-custodial-data-sources.md)
+- [Add non-custodial data sources to an eDiscovery (Premium) case](ediscovery-non-custodial-data-sources.md)
 
 ## Collect Teams content and add to review set
 
@@ -125,11 +132,11 @@ After adding custodians to the case and preserving content in custodian data sou
 
 When you collect Teams content for a case, there are two steps in the workflow:
 
-1. **Create a draft collection**.  The first step is to create a *draft collection*, which is an estimate of the items that match your search criteria. You can view information about the results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also preview a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the draft collection as many times as is necessary to narrow the results until you're satisfied you're collecting the content relevant to your case.
+1. **Create a collection estimate**.  The first step is to create a *collection estimate*, which is an estimate of the items that match your search criteria. You can view information about the results that matched the search query, such as the total number and size of items found, the different data sources where they were found, and statistics about the search query. You can also preview a sample of items that were returned by the collection. Using these statistics, you can change the search query and rerun the collection estimate as many times as is necessary to narrow the results until you're satisfied you're collecting the content relevant to your case.
 
-2. **Commit a draft collection to a review set**. Once you're satisfied with the results of a draft collection, you can commit the collection to a review set. When you commit a draft collection, the items returned by the collection are added to a review set for review, analysis, and export.
+2. **Commit a collection estimate to a review set**. Once you're satisfied with the results of a collection estimate, you can commit the collection to a review set. When you commit a collection estimate, the items returned by the collection are added to a review set for review, analysis, and export.
 
-You also have the option of not running a draft collection and adding the collection results directly to a review set when you create and run the collection.
+You also have the option of not running a collection estimate and adding the collection results directly to a review set when you create and run the collection.
 
 To create a collection of Teams content:
 
@@ -149,29 +156,29 @@ To create a collection of Teams content:
 
    We recommend doing the following things when collecting Teams content:
 
-   - Remove custodians' OneDrive accounts from the collection scope (by unselecting the checkbox in the **Custodian's OneDrive** column for each custodian). This prevents the collection of duplicate files that were attached to 1:1 chats and group chats. Cloud attachments are automatically collected from each conversation found in the collection when you commit the draft collection to the review set. By using this method (instead of searching OneDrive accounts as part of the collection), files attached to 1:1 and group chats are grouped in the conversation they were shared in.
+   - Remove custodians' OneDrive accounts from the collection scope (by unselecting the checkbox in the **Custodian's OneDrive** column for each custodian). This prevents the collection of duplicate files that were attached to 1:1 chats and group chats. Cloud attachments are automatically collected from each conversation found in the collection when you commit the collection estimate to the review set. By using this method (instead of searching OneDrive accounts as part of the collection), files attached to 1:1 and group chats are grouped in the conversation they were shared in.
 
-   - Unselect the checkbox in the **Additional site** column to remove the SharePoint sites containing files shared in private or shared channels. Doing this eliminates collecting duplicate files that were attached to private or shared channel conversations because these cloud attachments are automatically added to the review set when you commit the draft collection and grouped in the conversations they were shared in.
+   - Unselect the checkbox in the **Additional site** column to remove the SharePoint sites containing files shared in private or shared channels. Doing this eliminates collecting duplicate files that were attached to private or shared channel conversations because these cloud attachments are automatically added to the review set when you commit the collection estimate and grouped in the conversations they were shared in.
 
 6. If you previously followed the steps to add Teams content as custodian data sources, you can skip this step and select **Next**. Otherwise, on the **Non-custodial data sources** wizard page, you can choose non-custodial data sources that contain Teams content that you may have added to the case to search in the collection.
 
 7. If you previously followed the steps to add Teams content as custodian data sources, you can skip this step and select **Next**. Otherwise, on the **Additional locations** wizard page, you can add other data sources to search in the collection. For example, you could add the mailbox and site for a team that wasn't added as a custodial or non-custodial data source. Otherwise, select **Next** and skip this step.
 
-8. On the **Conditions** wizard page, configure the search query to collect Teams content from the data sources that you specified on the previous wizard pages. You can use various keywords and search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](building-search-queries.md).
+8. On the **Conditions** wizard page, configure the search query to collect Teams content from the data sources that you specified on the previous wizard pages. You can use various keywords and search conditions to narrow the scope of the collection. For more information, see [Build search queries for collections](ediscovery-building-search-queries.md).
 
    To help ensure the most comprehensive collection of Teams chat conversations (including 1:1, group, and channel chats) use the **Type** condition and select the **Instant messages** option. We also recommend including a date range or several keywords to narrow the scope of the collection to items relevant to your investigation. Here's a screenshot of a sample query using the **Type** and **Date** options:
 
    ![Query to collect Teams content.](..\media\TeamsConditionsQueryType.png)
 
-9. On the **Save draft or collect** wizard page, do one of the following depending on whether you want to create a draft collection or commit the collection to a review set.
+9. On the **Save draft or collect** wizard page, do one of the following depending on whether you want to create a collection estimate or commit the collection to a review set.
 
-   ![Save draft collection or commit collection.](..\media\TeamsDraftCommitCollection.png)
+   ![Save collection estimate or commit collection.](..\media\TeamsDraftCommitCollection.png)
 
-   1. **Save collection as draft**. Choose this option to create a draft collection. As previously explained, a draft collection doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(collection-statistics-reports.md)] and edit and rerun the draft collection. When you satisfied with the result of a draft collection, you can commit it to a review set. For more information, see [Create a draft collection](create-draft-collection.md).
+   1. **Save collection as draft**. Choose this option to create a collection estimate. As previously explained, a collection estimate doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(ediscovery-collection-statistics-reports.md)] and edit and rerun the collection estimate. When you satisfied with the result of a collection estimate, you can commit it to a review set. For more information, see [Create a collection estimate](ediscovery-create-draft-collection.md).
 
-   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. The options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the new case format that you used when you initially created the case for Teams content. For more information about committing collections to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
+   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. The options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the new case format that you used when you initially created the case for Teams content. For more information about committing collections to a review set, see [Commit a collection estimate to a review set](ediscovery-commit-draft-collection.md).
 
-10. After you're finished configuring the collection, submit the collection to create a draft collection or collect items and add them to a review set.
+10. After you're finished configuring the collection, submit the collection to create a collection estimate or collect items and add them to a review set.
 
    When the process of adding the collection to the review set is completed, the status value for the collection on the **Collections** tab is set to **Committed**.
 
@@ -260,7 +267,7 @@ The following list describes the deduplication (and duplication) behavior when c
 
 ### Metadata for Teams content
 
-In large review sets with thousands or millions of items, it can be difficult to narrow the scope of your review to Teams content. To help you focus your review on Teams content, there are metadata properties that are specific to Teams content. You can use these properties to organize the columns in the review list and [configure filters and queries](review-set-search.md) to optimize the review of Teams content. These metadata properties are also included when you export Teams content from eDiscovery (Premium), to help you organize and view content post-export or in third-party eDiscovery tools.
+In large review sets with thousands or millions of items, it can be difficult to narrow the scope of your review to Teams content. To help you focus your review on Teams content, there are metadata properties that are specific to Teams content. You can use these properties to organize the columns in the review list and [configure filters and queries](ediscovery-review-set-search.md) to optimize the review of Teams content. These metadata properties are also included when you export Teams content from eDiscovery (Premium), to help you organize and view content post-export or in third-party eDiscovery tools.
 
 The following table describes metadata properties for Teams content.
 
@@ -277,7 +284,7 @@ The following table describes metadata properties for Teams content.
 |Recipients|A list of all users who received a message within the transcript conversation.|
 |TeamsChannelName|The Teams channel name of the transcript.|
 
-For descriptions of other eDiscovery (Premium) metadata properties, see [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-Advanced-eDiscovery.md).
+For descriptions of other eDiscovery (Premium) metadata properties, see [Document metadata fields in eDiscovery (Premium)](ediscovery-document-metadata-fields.md).
 
 ## Export Teams content
 
@@ -297,11 +304,11 @@ Here are some tips and best practices for viewing Teams content in a review set.
 
 - Useful columns that to help you review Teams content include **Custodian**, **Recipients**, and **File type** or **Message kind**.
 
-- Use [filters](review-set-search.md) for Teams-related properties to quickly display Teams content. There are filters for most of the metadata properties described in the previous section.
+- Use [filters](ediscovery-review-set-search.md) for Teams-related properties to quickly display Teams content. There are filters for most of the metadata properties described in the previous section.
 
 ## Deleting Teams chat messages
 
-You can use eDiscovery (Premium) and the Microsoft Graph Explorer to respond to data spillage incidents, when content containing confidential or malicious information is released through Teams chat messages. Admins in your organization can search for and delete chat messages in Microsoft Teams. This can help you remove sensitive information or inappropriate content in Teams chat messages. For more information, see [Search and purge chat messages in Teams](search-and-delete-Teams-chat-messages.md).
+You can use eDiscovery (Premium) and the Microsoft Graph Explorer to respond to data spillage incidents, when content containing confidential or malicious information is released through Teams chat messages. Admins in your organization can search for and delete chat messages in Microsoft Teams. This can help you remove sensitive information or inappropriate content in Teams chat messages. For more information, see [Search and purge chat messages in Teams](ediscovery-search-and-delete-teams-chat-messages.md).
 
 ## Reference guide
 

@@ -2,14 +2,16 @@
 title: "Pilot Microsoft 365 from my custom domain"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection:
+- Tier2
+- scotvorg
 - Adm_O365
 - Adm_TOC
 ms.custom:
@@ -58,7 +60,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 3. Select the services you want to test with your domain, like email and instant messaging.
 
-4. On the **Verify** domain page, follow the step-by-step instructions, amd then select **Verify**.
+4. On the **Verify** domain page, follow the step-by-step instructions, and then select **Verify**.
 
     It takes between a few minutes and 72 hours for DNS changes to take effect.
 
@@ -101,7 +103,7 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
 5. Select **Create** > **Close**.
 
-### Step 6: **Configure mail to flow from Microsoft 365 or Office 365 to Email server
+### Step 6: Configure mail to flow from Microsoft 365 or Office 365 to Email server
 
 There are two steps for this:
 

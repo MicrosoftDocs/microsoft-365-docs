@@ -1,9 +1,10 @@
 ---
 title: "Learn about importing organization PST files"
+description: Learn how to use the Import service in the Microsoft Purview compliance portal to bulk-import email data (PST files) to user mailboxes.
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
@@ -13,19 +14,18 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
+- tier1
+- purview-compliance
+- import
 search.appverid: MET150
-ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: Learn how to use the Import service in the Microsoft Purview compliance portal to bulk-import email data (PST files) to user mailboxes.
 ---
 
 # Learn about importing your organization's PST files
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075).
@@ -35,6 +35,8 @@ You can use the Import service in the <a href="https://go.microsoft.com/fwlink/p
 - **Network upload** ![Cloud upload.](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - Upload the PST files over the network to a temporary Azure Storage location in the Microsoft cloud. Then you use the Microsoft 365 Import service to import the PST data to mailboxes in your organization.
 
 - **Drive shipping** ![Hard disk.](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - Copy the PST files to a BitLocker-encrypted hard drive and then physically ship the drive to Microsoft. When Microsoft receives the hard drive, data center personnel upload the data to a temporary Azure Storage location in the Microsoft cloud. Then you use the Microsoft 365 Import service to import the data to mailboxes in your organization.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Step-by-step instructions
 
@@ -91,11 +93,11 @@ Here's an illustration and description of the complete PST import process. The i
 
   - Enable [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](autoexpanding-archiving.md) to give users additional mailbox storage space.
 
-  - Place mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain content.
+  - Place mailboxes on [Litigation Hold](./ediscovery-create-a-litigation-hold.md) to retain content.
 
-  - Use the [Content Search tool](content-search.md) to search for mailbox content.
+  - Use the [Content Search tool](ediscovery-content-search.md) to search for mailbox content.
 
-  - Use [eDiscovery cases](./get-started-core-ediscovery.md) to manage your organization's legal investigations
+  - Use [eDiscovery cases](./ediscovery-standard-get-started.md) to manage your organization's legal investigations
 
   - Use [retention policies](retention.md) in the compliance portal to control how long mailbox content is retained, and then delete content after the retention period expires.
 

@@ -7,9 +7,11 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -84,7 +86,7 @@ If you want to allow everyone to see the Sent email, in the admin center, edit t
 
 ## Put a shared mailbox on litigation hold
 
-To learn more about litigation hold, see [Create a Litigation Hold](../../compliance/create-a-litigation-hold.md).
+To learn more about litigation hold, see [Create a Litigation Hold](../../compliance/ediscovery-create-a-litigation-hold.md).
 
 1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.
 

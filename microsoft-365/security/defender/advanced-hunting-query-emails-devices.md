@@ -4,7 +4,8 @@ description: Study common hunting scenarios and sample queries that cover device
 keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, apps, identities, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,10 +17,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
-ms.topic: article
-ms.technology: m365d
+  - m365-security
+  - tier1
+ms.topic: conceptual
 ---
 
 # Hunt for threats across devices, emails, apps, and identities

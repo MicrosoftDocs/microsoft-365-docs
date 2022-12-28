@@ -6,9 +6,10 @@ author: samanro
 manager: bcarter
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 
+- highpri
 - M365-subscription-management
 - M365solutions
 f1.keywords: NOCSH
@@ -30,10 +31,9 @@ Learn how you can use Microsoft 365, Dynamics 365, and Azure to digitize, modern
 
 |Resource |Description  |
 |---------|---------|
-|[Teams for Retail ](/microsoftteams/expand-teams-across-your-org/teams-for-retail-landing-page)    |  Microsoft 365 and Microsoft Teams offer several capabilities that can help retail organizations with their daily operations and digital transformation. <br>- In-store and cross-store communication <br>- Virtual fittings and consultations <br>- Simplify business processes <br>- Corporate communications <br>- Onboarding new employees    |
+|[Microsoft 365 for Retail](../frontline/teams-for-retail-landing-page.md)    |  Microsoft 365 and Microsoft Teams offer several capabilities that can help retail organizations with their daily operations and digital transformation. <br>- In-store and cross-store communication <br>- Virtual fittings and consultations <br>- Simplify business processes <br>- Corporate communications <br>- Onboarding new employees    |
 |[Microsoft Cloud for Retail](/industry/retail/overview)  | Learn about Microsoft Cloud for Retail and how it accelerates business growth by providing trusted retail industry solutions that integrate with retailer’s existing systems.     |
 |[Azure architecture and solutions for retail](/azure/architecture/industries/retail)| Learn how you can use Microsoft Azure services to digitize, modernize, and enhance your retail solutions at Azure Solutions for the Retail industry. |
-| | |
 
 ## Videos you can share with your team
 
