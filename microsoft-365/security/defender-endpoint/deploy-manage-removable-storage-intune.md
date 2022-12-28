@@ -149,7 +149,7 @@ Here are some common scenarios to help you familiarize with Microsoft Defender f
 
 ### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
 
-For this scenario, you need to create two groups - one group for any removable storage and another group for approved USBs. You also need to create two policies - one policy to deny Write and Execute access for any removable storage group and the other policy to audit the approved USBs group.
+For this scenario, you need to create two groups: one group for any removable storage and another group for approved USBs. You also need to create two policies: one policy to deny Write and Execute access for any removable storage group and the other policy to audit the approved USBs group.
 
 1. Create groups
 
@@ -189,7 +189,7 @@ For this scenario, you need to create two groups - one group for any removable s
 
 ### Scenario 2: Audit Write and Execute access for all but block specific blocked USBs
 
-For this scenario, you need to create two groups - one group for any removable storage and another group for blocked USBs. You also need to create two policies - one policy to audit Write and Execute access for any removable storage group and the other policy to deny the blocked USBs group.
+For this scenario, you need to create two groupss: one group for any removable storage and another group for blocked USBs. You also need to create two policies: one policy to audit Write and Execute access for any removable storage group and the other policy to deny the blocked USBs group.
 
 1. Create groups
 
@@ -229,7 +229,7 @@ For this scenario, you need to create two groups - one group for any removable s
 
 ### Scenario 3: Block read and execute access to specific file extension
 
-For this scenario, you need to create two groups - one removable storage group for any removable storage and another group for unallowed file extensions. You also need to create one policy - deny read and execute access to any file under the allowed file extension group for defined removable storage group.
+For this scenario, you need to create two groups: one removable storage group for any removable storage and another group for unallowed file extensions. You also need to create one policy: deny read and execute access to any file under the allowed file extension group for defined removable storage group.
 
 1. Create groups
 
@@ -270,7 +270,7 @@ Here are some common scenarios to help you familiarize with Microsoft Defender f
 
 ### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
 
-For this scenario, you need to create two groups - one group for any removable storage and another group for approved USBs. You also need to create two policies - one policy to deny Write and Execute access for any removable storage group and the other policy to audit the approved USBs group.
+For this scenario, you need to create two groups: one group for any removable storage and another group for approved USBs. You also need to create two policies: one policy to deny Write and Execute access for any removable storage group and the other policy to audit the approved USBs group.
 
 1. To set up the groups you'll need, go to **Endpoint Security** > **Attack Surface Reduction** > **Reusable settings** > **Add**. For more details, see **DescriptorIdList** on the [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](device-control-removable-storage-access-control.md#group).
 
