@@ -55,12 +55,25 @@ Contact your Epic technical specialist to provide the full FHIR base URL.
 
 This issue can occur if the keys aren't set up in the Epic instance or if OAuth configuration isn't completed by Epic. Contact your Epic technical specialist.
 
-## I'm an Epic analyst and when selecting Approve to approve the FHIR URL, I'm unable to log in to Epic using my Epic credentials in the EHR connector configuration portal
+## I'm an Epic analyst and when selecting Approve to approve the FHIR URL, I'm unable to sign in to Epic using my Epic credentials in the EHR connector configuration portal
 
 Your permissions need to be changed in Epic. Contact your Epic technical specialist to check and update your permissions.
 
-## Patients are unable to launch a virtual appointment from the patient portal after we've set up the EHR connector for the first time
+## We've set up the EHR connector for the first time and patients are unable to launch a virtual appointment from the patient portal.
 
+Here are some common reasons why you may be experiencing this issue and how to resolve it.
+
+### Values from EHR connector configuration portal don't match the FDI records in Epic
+
+The launch URL and the context tokens must be copied from the EHR connector to the FDI records in Epic. Contact the Epic analyst in your organization to verify that the values were copied correctly. Keep in mind that in some cases, manipulating the FDI records after copying them from EHR connector configuration portal is allowed.
+
+### The FDI records aren't updated in the correct Epic environment
+
+The FHIR base URLs for the test and production environments in Epic are different. Check to make sure that the FDI records reflect the values from the correct environment.
+
+### You're using a production environment and you don't have a production license
+
+Your organization must have at least one active license for either Microsoft Cloud for Healthcare, Microsoft Teams EHR Connector add-on, or Microsoft Teams EMR connector add-on. For Cerner customers, a license is also required for testing.
 
 ## Providers don't get a Teams notification when patients join a virtual appointment
 
