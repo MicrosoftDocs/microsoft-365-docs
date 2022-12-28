@@ -141,7 +141,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
      - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
      - **Data Type** as **String**
 
-       :::image type="content" source="media/device-control-oma-uri-edit-row.png" alt-text="Set location for file evidence":::
+       :::image type="content" source="media/device-control-oma-uri-edit-row.png" alt-text="Set location for file evidence" lightbox="media/device-control-oma-uri-edit-row.png":::
 
 ## Scenarios (default enforcement)
 
@@ -220,7 +220,7 @@ For this scenario, you need to create two groups - one group for any removable s
 
        :::image type="content" source="media/188244203-36c869b6-9330-4e2a-854b-494c342bb77d.png" alt-text="A screenshot of audit write and execute access" lightbox= "media/188244203-36c869b6-9330-4e2a-854b-494c342bb77d.png":::
 
-    What does '54' mean in the policy? It's 18 + 36 = 54:
+    What does `54` mean in the policy? It's `18 + 36 = 54`. 
 
     - Write access: disk level 2 + file system level 16 = 18.
     - Execute: disk level 4 + file system level 32 = 36.
