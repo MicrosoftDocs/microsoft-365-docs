@@ -55,7 +55,7 @@ Contact your Epic technical specialist to provide the full FHIR base URL.
 
 This issue can occur if the keys aren't set up in the Epic instance or if OAuth configuration isn't completed by Epic. Contact your Epic technical specialist.
 
-## I'm an Epic analyst and when selecting Approve to approve the FHIR URL, I'm unable to sign in to Epic using my Epic credentials in the EHR connector configuration portal
+## I'm an Epic analyst and when I select Approve to approve the FHIR URL in the EHR connector configuration portal, I'm unable to sign in to Epic using my Epic credentials
 
 Your permissions need to be changed in Epic. Contact your Epic technical specialist to check and update your permissions.
 
