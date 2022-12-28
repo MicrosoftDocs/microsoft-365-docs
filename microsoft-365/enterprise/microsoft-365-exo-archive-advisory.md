@@ -48,6 +48,6 @@ The following list describes each column in the previous example.
 
 For more information about auto-expanding archive limits and considerations, see the following articles:
 
-- [Learn about auto-expanding archiving](https://learn.microsoft.com/microsoft-365/compliance/autoexpanding-archiving)
+- [Learn about auto-expanding archiving](/microsoft-365/compliance/autoexpanding-archiving)
 
-- [Customize an archive and deletion policy for mailboxes in your organization](https://learn.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes)
+- [Customize an archive and deletion policy for mailboxes in your organization](/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes)
