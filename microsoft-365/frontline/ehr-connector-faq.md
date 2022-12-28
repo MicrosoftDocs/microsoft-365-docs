@@ -40,7 +40,7 @@ This article covers frequently asked questions about the Microsoft Teams Electro
 
 This article provides guidance for how to troubleshoot common setup and configuration issues for the Microsoft Teams Electronic Health Record (EHR) connector. Use it to help resolve blockers that you may experience when you set up and configure the EHR connector to integrate with your [Cerner EHR](ehr-admin-cerner.md) or [Epic EHR](ehr-admin-epic.md) system.
 
-## I get an error that the Fast Health Interoperability Resources (FHIR) URL isn't valid when I try to configure the EHR connector
+## I get a "FHIR URL isn't valid" error when I try to configure the EHR connector
 
 This issue can happen in the following scenarios:
 
@@ -49,31 +49,30 @@ This issue can happen in the following scenarios:
 
 Contact your Epic technical specialist to provide the full FHIR base URL.
 
-## I'm an Epic analyst and I see an "OATH2" error from Epic when I try to approve the FHIR base URL
+## I'm an Epic analyst and I get an "OATH2" error from Epic when I try to approve the FHIR URL
 
 This issue can occur if the keys aren't set up in the Epic instance or if OAuth configuration in't completed by Epic. Contact your Epic technical specialist.
 
-## I'm an Epic analyst and when I select Approve to approve the FHIR URL, Epic blocks me from logging in using my Epic credentials in the EHR connector configuration portal
+## I'm an Epic analyst and when selecting Approve to approve the FHIR URL, I'm unable to log in to Epic using my Epic credentials in the EHR connector configuration portal
 
 Your permissions need to be changed in Epic. Contact your Epic technical specialist to check and update your permissions.
 
-## I've set up the EHR connector for the first time and our patients are unable to launch a virtual appointment from the patient portal
+## Patients are unable to launch a virtual appointment from the patient portal after we've set up the EHR connector for the first time
 
 
-## Providers don't get a Teams notification when a patient joins a virtual appointment
+## Providers don't get a Teams notification when patients join a virtual appointment
 
 Often this can be solved by training. When a provider starts the virtual appointment, a temporary notification is displayed to the provider to admit the patient. This notification appears only briefly. Providers can also select **People** in the meeting controls at the top of the screen to see the list of participants, and then under **Waiting in lobby**, select the green check mark next to the participant's name to admit them.
 
-Another reason can be restrictions in Teams Admin Center. Teams notifications can be managed from TA (Teams Admin Center). Please contact your Teams IT admin to verify the tenant level settings in place for your organization
+Another reason can be restrictions in Teams Admin Center. Teams notifications can be managed from TA (Teams Admin Center). Contact your Teams IT admin to verify the tenant level settings in place for your organization
 
-## Patients are prompted to download Teams instead of being able to join from a web browser. We want patients to join from a web browser without having to install Teams. How do we fix this?
+## Patients are prompted to download Teams instead of joining from a web browser. We want patients to join from a web browser without having to install Teams.
 
 Contact Microsoft Support and open a support ticket for the Teams EHR connector. Indicate in the ticket that the web browser join setting needs to be turned on. This change needs to be done by the Teams EHR connector team.
 
 After the web browser join setting is turned on, patients can join virtual appointments in a browser. They don't need to download and install Teams on their device.
 
-## Patients can send chat messages to the Provider post visit from the virtual visit. How can we block this? 
-
+## Patients can send chat messages to providers after the virtual appointment ends from within the appointment. How can we block this?
 
 ## I'm unable to access the EHR connector configuration portal or I can only see existing configurations and can't add new ones.
 
