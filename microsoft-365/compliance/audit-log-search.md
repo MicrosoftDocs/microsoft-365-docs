@@ -36,12 +36,12 @@ Why a unified audit log? Because you can search the audit log for activities per
 |:---------|:---------|
 | Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon |
 | Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
-| Communication compliance|ComplianceSuperVisionExchange|
+| Communication compliance|ComplianceSupervisionExchange|
 | Content explorer|LabelContentExplorer|
 | Data connectors|ComplianceConnector|
 | Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
 | Dynamics 365|CRM|
-| eDiscovery|Discovery, AeD|
+| eDiscovery (Standard + Premium)|Discovery, AeD|
 | Exact Data Match|MipExactDataMatch|
 | Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
 | Forms|MicrosoftForms|
@@ -76,7 +76,7 @@ The previous table also identifies the record type value to use to search the au
 
 ## Before you search the audit log
 
-Be sure to read the following items before you start searching the audit log.
+Be sure to review the following items before you start searching the audit log.
 
 - Audit log search is turned on by default for Microsoft 365 and Office 365 enterprise organizations. To verify that audit log search is turned on, you can run the following command in Exchange Online PowerShell:
 
@@ -86,7 +86,7 @@ Be sure to read the following items before you start searching the audit log.
 
   The value of `True` for the *UnifiedAuditLogIngestionEnabled* property indicates that audit log search is turned on. For more information, see [Turn audit log search on or off](audit-log-enable-disable.md).
 
-- You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
+- You have to be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online to search the audit log. By default, these roles are assigned to the *Compliance Management* and *Organization Management* role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the *Organization Management* role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the *View-Only Audit Logs* or *Audit Logs* role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
   > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the compliance portal, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
 
@@ -97,7 +97,7 @@ Be sure to read the following items before you start searching the audit log.
     > [!NOTE]
     > If your organization participated in the private preview program for the one-year retention of audit records, the retention duration for audit records that were generated before the general availability rollout date will not be reset.
 
-  - For users assigned any other (non-E5) Office 365 or Microsoft 365 license, audit records are retained for 90 days. For a list of Office 365 and Microsoft 365 subscriptions that support unified audit logging, see [the security and compliance portal service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+  - For users assigned any other (non-E5) Office 365 or Microsoft 365 license, audit records are retained for 90 days. For a list of Office 365 and Microsoft 365 subscriptions that support unified audit logging, see the [security and compliance portal service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
     > Even when mailbox auditing on by default is turned on, you might notice that mailbox audit events for some users aren't found in audit log searches in the compliance portal or via the Office 365 Management Activity API. For more information, see [More information about mailbox audit logging](audit-mailboxes.md#more-information).
@@ -116,7 +116,7 @@ Be sure to read the following items before you start searching the audit log.
 
   For more information, see [Turn off audit log search](audit-log-enable-disable.md).
 
-- As previously stated, the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, which is **Search-UnifiedAuditLog**. That means you can use this cmdlet to search the audit log instead of using the search tool on the **Audit** page in the compliance portal. You have to run this cmdlet in Exchange Online PowerShell. For more information, see [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- The underlying cmdlet used to search the audit log is an Exchange Online cmdlet, which is **Search-UnifiedAuditLog**. That means you can use this cmdlet to search the audit log instead of using the search tool on the **Audit** page in the compliance portal. You have to run this cmdlet in Exchange Online PowerShell. For more information, see [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   For information about exporting the search results returned by the **Search-UnifiedAuditLog** cmdlet to a CSV file, see the "Tips for exporting and viewing the audit log" section in [Export, configure, and view audit log records](audit-log-export-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -252,7 +252,7 @@ See the [Audit log activities](audit-log-activities.md) article for a list and d
 
 **How long does it take for an auditing record to be available after an event has occurred?**
 
-Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Before you search the audit log](#before-you-search-the-audit-log) section of this article that shows the time it takes for events in the different services to be available.
+Most auditing data is available within 60-90 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the [Before you search the audit log](#before-you-search-the-audit-log) section of this article that shows the time it takes for events in the different services to be available.
 
 **How long are the audit records retained for?**
 

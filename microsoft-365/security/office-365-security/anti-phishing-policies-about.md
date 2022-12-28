@@ -26,7 +26,7 @@ search.appverid: met150
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -73,7 +73,9 @@ The following policy settings are available in anti-phishing policies in EOP and
   You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
 
   - **Users**: One or more mailboxes, mail users, or mail contacts in your organization.
-  - **Groups**: One or more groups in your organization.
+  - **Groups**:
+    - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
+    - The specified Microsoft 365 Groups.
   - **Domains**: One or more of the configured [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365.
 
   - **Exclude these users, groups, and domains**: Exceptions for the policy. The settings and behavior are exactly like the conditions:
@@ -95,7 +97,7 @@ The following policy settings are available in anti-phishing policies in EOP and
 
 ## Spoof settings
 
-Spoofing is when the From address in an email message (the sender address that's shown in email clients) doesn't match the domain of the email source. For more information about spoofing, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
+Spoofing is when the From address in an email message (the sender address that's shown in email clients) doesn't match the domain of the email source. For more information about spoofing, see [Anti-spoofing protection in Microsoft 365](anti-phishing-protection-spoofing-about.md).
 
 The following spoof settings are available in anti-phishing policies in EOP and Defender for Office 365:
 
@@ -104,7 +106,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
   When spoof intelligence is enabled, the **spoof intelligence insight** shows spoofed senders that were automatically detected and allowed or blocked by spoof intelligence. You can manually override the spoof intelligence verdict to allow or block the detected spoofed senders from within the insight. But when you do, the spoofed sender disappears from the spoof intelligence insight, and is now visible only on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoofed senders in the Tenant Allow/Block List. For more information, see the following articles:
 
   - [Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md)
-  - [Manage the Tenant Allow/Block List in EOP](manage-tenant-allow-block-list.md)
+  - [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list-about.md)
 
   > [!NOTE]
   >
@@ -132,7 +134,7 @@ Unauthenticated sender indicators are part of the [Spoof settings](#spoof-settin
 
 To prevent the question mark or via tag from being added to messages from specific senders, you have the following options:
 
-- Allow the spoofed sender in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md). Allowing the spoofed sender will prevent the via tag from appearing in messages from the sender, even if the **Show "via" tag** setting is turned on in the policy.
+- Allow the spoofed sender in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Allowing the spoofed sender will prevent the via tag from appearing in messages from the sender, even if the **Show "via" tag** setting is turned on in the policy.
 - [Configure email authentication](email-authentication-about.md#configure-email-authentication-for-domains-you-own) for the sender domain.
   - For the question mark in the sender's photo, SPF or DKIM are the most important.
   - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.

@@ -24,7 +24,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the Submissions portal in the Microsoft 365 Defender portal to submit email messages, URLs, and attachments to Microsoft for scanning.
@@ -39,7 +39,7 @@ When you submit an email message for analysis, you will get:
 > [!IMPORTANT]
 > Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside the organization when data is not supposed to leave the tenant boundary for compliance purposes.
 
-For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 Watch this short video to learn how to use admin submissions in Microsoft Defender for Office 365 to submit messages to Microsoft for evaluation.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
@@ -49,7 +49,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To submit messages and files to Microsoft, you need to have one of following roles:
-  - **Security Administrator** or **Security Reader** in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+  - **Security Administrator** or **Security Reader** in the [Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
     Note that one of these roles is required to [View user reported messages](#view-user-reported-messages-to-microsoft) as described later in this article.
 
@@ -60,7 +60,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
   - Same submissions in a 24 hour period: 3 submissions
   - Same submissions in a 15 minute period: 1 submission
 
-- For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Report questionable email to Microsoft
 
@@ -86,7 +86,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      - **The email should have been categorized as**: Select **Phish**, **Malware**, or **Spam**. If you're not sure, use your best judgment.
 
-     - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+     - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
        After you select this option, the following settings are available:
 
@@ -129,7 +129,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgment.
 
-     - **Block this file**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+     - **Block this file**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
        After you select this option, the following settings are available:
 
@@ -165,7 +165,7 @@ Watch this short video to learn how to use admin submissions in Microsoft Defend
 
      - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgment.
 
-     - **Block this URL**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+     - **Block this URL**: Select this option to create a block entry for the sender in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
        After you select this option, the following settings are available:
 
@@ -298,11 +298,11 @@ After a few moments, an allow entry will appear on the **Files** tab on the **Te
 
    :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Submit a false positive (good) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-allow.png":::
 
-After a few moments, an allow entry will appear on the **URL** tab on the **Tenant Allow/Block List** page. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+After a few moments, an allow entry will appear on the **URL** tab on the **Tenant Allow/Block List** page. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 > [!NOTE]
 >
-> - When the URL is detected again, it's not sent for [Safe Links](safe-links.md) detonation or URL reputation checks, and all other URL-based filters are skipped.
+> - When the URL is detected again, it's not sent for [Safe Links](safe-links-about.md) detonation or URL reputation checks, and all other URL-based filters are skipped.
 > - During mail flow, if messages containing the URL pass other non-URL checks in the filtering stack, the messages will be delivered.
 
 ## View email admin submissions to Microsoft

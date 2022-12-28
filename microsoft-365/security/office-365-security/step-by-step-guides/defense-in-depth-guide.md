@@ -45,7 +45,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Built-in protection offers a base level of unobtrusive protection, and includes malware, zero day (Safe Attachments), and URL protection (Safe Links) in email (including internal email), SharePoint Online, OneDrive, and Teams. Note that URL protection provided in this state is via API call only. It doesn't wrap or rewrite URLs but does require a supported Outlook client. You can create your own custom policies to expand your protection.
 
-**Read more & watch an overview video of Safe Links here :** [Complete Safe Links overview](../safe-links.md)
+**Read more & watch an overview video of Safe Links here :** [Complete Safe Links overview](../safe-links-about.md)
 
 **Read more about Safe Attachments here :**  [Safe Attachments](../safe-attachments-about.md) 
 
@@ -61,7 +61,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Explorer can be used to hunt threats, visualize mail flow patterns, spot trends, and identify the impact of changes you make during tuning Defender for Office 365. You can also quickly delete messages from your organization with a few simple clicks.
 
-**Read more, and get started here:** [Threat Explorer and Real-time detections](../threat-explorer.md)
+**Read more, and get started here:** [Threat Explorer and Real-time detections](../threat-explorer-about.md)
 
 ## Step 2 – Enhance the value further with these simple steps
 
@@ -85,7 +85,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Advanced Delivery should be configured to deliver any third party phish simulations correctly, and if you have a Security Operations mailbox, consider defining it as a SecOps mailbox to ensure emails *do not* get removed from the mailbox due to threats.
 
-**Read more here:** [Advanced delivery](../skip-filtering-phising-simulations-sec-ops-mailboxes.md)
+**Read more here:** [Advanced delivery](../skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
 
 - You can configure user reported message settings to allow users to report good or bad messages to Microsoft, to a designated reporting mailbox (to integrate with current security workflows) or both. Admins can use the **User reported** tab on the **Submissions** page to triage false positives and false negative user reported messages.
 

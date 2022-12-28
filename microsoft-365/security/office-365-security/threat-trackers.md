@@ -43,7 +43,7 @@ Trackers are just a few of the many great features you get with [Microsoft Defen
 To view and use your Threat Trackers for your organization, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, and go to **Email & collaboration** \> **Threat tracker**. To go directly to the **Threat tracker** page, use <https://security.microsoft.com/threattrackerv2>.
 
 > [!NOTE]
-> To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+> To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 ### Noteworthy trackers
 
@@ -83,7 +83,7 @@ And remember that you can always provide us feedback on this or other Microsoft 
 
 ## Trackers and Microsoft Defender for Office 365
 
-With our inaugural Noteworthy threat, we're highlighting advanced malware threats detected by [Safe Attachments](safe-attachments-about.md). If you're an Office 365 Enterprise E5 customer and you're not using [Microsoft Defender for Office 365](defender-for-office-365.md), you should be - it's included in your subscription. Defender for Office 365 provides value even if you have other security tools filtering email flow with your Office 365 services. However, anti-spam and [Safe Links](safe-links.md) features work best when your main email security solution is through Office 365.
+With our inaugural Noteworthy threat, we're highlighting advanced malware threats detected by [Safe Attachments](safe-attachments-about.md). If you're an Office 365 Enterprise E5 customer and you're not using [Microsoft Defender for Office 365](defender-for-office-365.md), you should be - it's included in your subscription. Defender for Office 365 provides value even if you have other security tools filtering email flow with your Office 365 services. However, anti-spam and [Safe Links](safe-links-about.md) features work best when your main email security solution is through Office 365.
 
 :::image type="content" source="../../media/policies.png" alt-text="The Microsoft Defender for Office 365 in the Microsoft 365 Defender portal" lightbox="../../media/policies.png":::
 
@@ -95,8 +95,8 @@ The new Noteworthy threat filter highlights items that were recently detected th
 
 - If your organization doesn't already have these Office 365 Threat Investigation and Response capabilities, see [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
 
-- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator or Search and Purge role assigned in the Microsoft 365 Defender portal. See [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator or Search and Purge role assigned in the Microsoft 365 Defender portal. See [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 - Watch for the new Trackers to show up in your Microsoft 365 environment. When available, you'll find your Trackers on the **Threat tracker** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/threattracker>.
 
-- If you haven't already done so, learn more about and configure [Microsoft Defender for Office 365](defender-for-office-365.md) for your organization, including [Safe links](safe-links.md) and [Safe Attachments](safe-attachments-about.md).
+- If you haven't already done so, learn more about and configure [Microsoft Defender for Office 365](defender-for-office-365.md) for your organization, including [Safe links](safe-links-about.md) and [Safe Attachments](safe-attachments-about.md).

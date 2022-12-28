@@ -82,7 +82,7 @@ You can use the **Report clean** option in Explorer to report a message as false
 
 ## View phishing URL and click verdict data
 
-You can view phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links.md) must be configured. Make sure that you set up [Safe Links policies](safe-links-policies-configure.md) for time-of-click protection and logging of click verdicts by Safe Links.
+You can view phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links-about.md) must be configured. Make sure that you set up [Safe Links policies](safe-links-policies-configure.md) for time-of-click protection and logging of click verdicts by Safe Links.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
 
@@ -133,7 +133,7 @@ In the Email or URL flyouts, Top Clicks, and in our filtering experiences, you'l
 > [!NOTE]
 > Automated investigation and response capabilities are available in *Microsoft Defender for Office 365 Plan 2* and *Office 365 E5*.
 
-[Automated investigation and response](automated-investigation-response-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+[Automated investigation and response](air-about-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 ## Other articles
 

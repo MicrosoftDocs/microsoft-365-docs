@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -419,6 +419,6 @@ Next, see [**Use DMARC to validate email**](email-authentication-dmarc-configure
 
 Key rotation via PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Use DMARC to validate email](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
+[Use DMARC to validate email](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure)
 
 [Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders)

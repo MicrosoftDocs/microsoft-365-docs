@@ -27,7 +27,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -37,7 +37,7 @@ The following types of policies are analyzed by the configuration analyzer:
 
 - **Exchange Online Protection (EOP) policies**: This includes Microsoft 365 organizations with Exchange Online mailboxes and standalone EOP organizations without Exchange Online mailboxes:
   - [Anti-spam policies](anti-spam-policies-configure.md).
-  - [Anti-malware policies](configure-anti-malware-policies.md).
+  - [Anti-malware policies](anti-malware-policies-configure.md).
   - [EOP anti-phishing policies](anti-phishing-policies-about.md#spoof-settings).
 
 - **Microsoft Defender for Office 365 policies**: This includes organizations with Microsoft 365 E5 or Defender for Office 365 add-on subscriptions:
@@ -46,7 +46,7 @@ The following types of policies are analyzed by the configuration analyzer:
     - [Impersonation settings](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Advanced phishing thresholds](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [Safe Links policies](safe-links-policies-configure.md).
-  - [Safe Attachments policies](set-up-safe-attachments-policies.md).
+  - [Safe Attachments policies](safe-attachments-policies-configure.md).
 
 The Standard and Strict policy setting values that are used as baselines are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
@@ -60,7 +60,7 @@ The Standard and Strict policy setting values that are used as baselines are des
   - To use the configuration analyzer **and** make updates to security policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
   - For read-only access to the configuration analyzer, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
   > [!NOTE]
   >

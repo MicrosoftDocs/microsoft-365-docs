@@ -25,6 +25,9 @@ search.appverid:
 ---
 # Custom roles in role-based access control for Microsoft 365 Defender
 
+> [!NOTE]
+> If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
+
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Applies to:**
@@ -40,7 +43,7 @@ There are two types of roles that can be used to access to Microsoft 365 Defende
 
 Access to Microsoft 365 Defender can be managed collectively by using [Global roles in Azure Active Directory (AAD)](m365d-permissions.md)
 
-If you need greater flexibility and control over access to specific product data, Microsoft 365 Defender access can also be managed with the creation of Custom roles through each respective security portal.  
+If you need greater flexibility and control over access to specific product data, Microsoft 365 Defender access can also be managed with the creation of Custom roles through each respective security portal.
 
 For example, a Custom role created through Microsoft Defender for Endpoint would allow access to the relevant product data, including Endpoint data within the Microsoft 365 Defender portal. Similarly, a Custom role created through Microsoft Defender for Office 365 would allow access to the relevant product data, including Email & collaboration data within the Microsoft 365 Defender portal.
 
@@ -51,7 +54,7 @@ Users with existing Custom roles may access data in the Microsoft 365 Defender p
 Custom roles and permissions can be created and individually managed through each of the following security portals:
 
 - Microsoft Defender for Endpoint – [Edit roles in Microsoft Defender for Endpoint](../defender-endpoint/user-roles.md)
-- Microsoft Defender for Office 365 – [Permissions in the Security & Compliance Center](../office-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
+- Microsoft Defender for Office 365 – [Permissions in the Security & Compliance Center](../office-365-security/scc-permissions.md?preserve-view=true&view=o365-worldwide)
 - Microsoft Defender for Cloud Apps – [Manage admin access](/cloud-app-security/manage-admins)
 
 Each custom role created through an individual portal allows access to the data of the relevant product portal. For example, a custom role created through Microsoft Defender for Endpoint will only allow access to Defender for Endpoint data.
@@ -79,19 +82,19 @@ The following table outlines the roles and permissions required to access each u
 
 > [!NOTE]
 > Incident management requires management permissions for all products that are part of the incident.
- 
-| **One of the following roles are required for Microsoft 365 Defender**  | **One of the following roles are required for Defender for Endpoint**  | **One of the following roles are required for Defender for Office 365** | **One of the following roles are required for Defender for Cloud Apps** | 
-|---------|---------|---------|---------|
-| Viewing investigation data: <ul><li>Alert page</li> <li>Alerts queue</li> <li>Incidents</li>  <li>Incident queue</li> <li>Action center</li></ul>| View data- security operations | <ul><li>View-only Manage alerts </li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li> <li>Security reader</li> <li>Security admin</li><li>View-only recipients</li></ul>  | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul> |
-| Viewing hunting data | View data- security operations | <ul><li>Security reader</li> <li>Security admin</li> <li>View-only recipients</li> | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul> |
-| Managing alerts and incidents | Alerts investigation | <ul><li>Manage alerts</li> <li>Security admin</li> | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li></ul> |
-| Action center remediation | Active remediation actions – security operations | Search and purge | |
-| Setting custom detections | Manage security settings |<ul><li>Manage alerts</li> <li>Security admin</li></ul> | <ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul> |
-| Threat Analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>Defender Vulnerability Management mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only Manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | Not available for Defender for Cloud Apps or MDI users |
 
-For example, to view hunting data from Microsoft Defender for Endpoint, View data security operations permissions are required.  
+|Microsoft 365 Defender workload|One of the following roles is required for Defender for Endpoint|One of the following roles is required for Defender for Office 3655|One of the following roles is required for Defender for Cloud Apps|
+|---|---|---|---|
+|Viewing investigation data: <ul><li>Alert page</li> <li>Alerts queue</li> <li>Incidents</li>  <li>Incident queue</li> <li>Action center</li></ul>|View data- security operations|<ul><li>View-only Manage alerts </li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li> <li>Security reader</li> <li>Security admin</li><li>View-only recipients</li></ul>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
+|Viewing hunting data|View data- security operations|<ul><li>Security reader</li> <li>Security admin</li> <li>View-only recipients</li>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
+|Managing alerts and incidents|Alerts investigation|<ul><li>Manage alerts</li> <li>Security admin</li>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li></ul>|
+|Action center remediation|Active remediation actions – security operations|Search and purge||
+|Setting custom detections|Manage security settings|<ul><li>Manage alerts</li> <li>Security admin</li></ul>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
+|Threat Analytics|Alerts and incidents data: <ul><li>View data- security operations</li></ul>Defender Vulnerability Management mitigations:<ul><li>View data - Threat and vulnerability management</li></ul>|Alerts and incidents data:<ul> <li>View-only Manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li>|Not available for Defender for Cloud Apps or MDI users|
 
-Similarly, to view hunting data from Microsoft Defender for Office 365, users would require one of the following roles:  
+For example, to view hunting data from Microsoft Defender for Endpoint, View data security operations permissions are required.
+
+Similarly, to view hunting data from Microsoft Defender for Office 365, users would require one of the following roles:
 
 - View data security operations
 - Security reader
