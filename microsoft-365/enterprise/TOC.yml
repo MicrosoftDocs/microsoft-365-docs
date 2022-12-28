@@ -153,7 +153,7 @@
                 - name: Service advisories for Mailbox utilization
                   href: microsoft-365-mailbox-utilization-service-alerts.md
                 - name: Service advisories for auto-expanding archive utilization
-                  href: microsoft-365-mailbox-exo-archive-advisory.md
+                  href: microsoft-365-exo-archive-advisory.md
                 - name: Service advisories for eDiscovery throttling
                   href: microsoft-365-ediscovery-throttling-service-advisory.md
                 - name: Service advisories for MRS source delays
