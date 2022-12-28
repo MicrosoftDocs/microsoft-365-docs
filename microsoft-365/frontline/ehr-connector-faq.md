@@ -34,7 +34,9 @@ ms.date:
 
 **Option 1**
 
-This article covers frequently asked questions about the Microsoft Teams Electronic Health Record (EHR) connector. It provides answers to common setup, configuration, and user experience questions.
+This article covers frequently asked questions about the Microsoft Teams Electronic Health Record (EHR) connector. It provides answers to common setup and configuration questions.
+
+Use this guidance to help resolve blockers that you may experience when you set up and configure the EHR connector to integrate with your [Cerner EHR](ehr-admin-cerner.md) or [Epic EHR](ehr-admin-epic.md) system.
 
 **Option 2**
 
@@ -51,7 +53,7 @@ Contact your Epic technical specialist to provide the full FHIR base URL.
 
 ## I'm an Epic analyst and I get an "OATH2" error from Epic when I try to approve the FHIR URL
 
-This issue can occur if the keys aren't set up in the Epic instance or if OAuth configuration in't completed by Epic. Contact your Epic technical specialist.
+This issue can occur if the keys aren't set up in the Epic instance or if OAuth configuration isn't completed by Epic. Contact your Epic technical specialist.
 
 ## I'm an Epic analyst and when selecting Approve to approve the FHIR URL, I'm unable to log in to Epic using my Epic credentials in the EHR connector configuration portal
 
@@ -64,7 +66,7 @@ Your permissions need to be changed in Epic. Contact your Epic technical special
 
 Often this can be solved by training. When a provider starts the virtual appointment, a temporary notification is displayed to the provider to admit the patient. This notification appears only briefly. Providers can also select **People** in the meeting controls at the top of the screen to see the list of participants, and then under **Waiting in lobby**, select the green check mark next to the participant's name to admit them.
 
-Another reason can be restrictions in Teams Admin Center. Teams notifications can be managed from TA (Teams Admin Center). Contact your Teams IT admin to verify the tenant level settings in place for your organization
+Another reason can be restrictions that are set in the Teams admin center. If you're an admin, check the settings that are configured for your organization in the Teams admin center. If you're not an admin, contact the Teams admin in your organization.
 
 ## Patients are prompted to download Teams instead of joining from a web browser. We want patients to join from a web browser without having to install Teams.
 
@@ -72,25 +74,48 @@ Contact Microsoft Support and open a support ticket for the Teams EHR connector.
 
 After the web browser join setting is turned on, patients can join virtual appointments in a browser. They don't need to download and install Teams on their device.
 
-## Patients can send chat messages to providers after the virtual appointment ends from within the appointment. How can we block this?
+## Patients can send chat messages to providers in Teams after the virtual appointment ends from within the appointment. How can we block this?
+
+This scenario can happen because of several reasons. 
+
+### The provider leaves the appointment but didn't end it
+
+If the provider leaves the appointment but didn't end it and the patient remains in the appointment, they can both continue to chat. To prevent the patient from sending chat messages, the provider must select **End meeting** in Teams to end the appointment.
+
+### The web browser join setting is turned off and the patient, who is also an employee of your organization, joins in the Teams app using their work credentials
+
+If the patient is an employee of your organization and they join the appointment in the Teams app when they're signed in using their work credentials, they're in the appointment as a member of your organization and not as a guest. This means that they can send chat messages even after the appointment ends.
+
+To avoid this scenario, you can do one of the following actions:
+
+- Contact Microsoft Support and open a support ticket for the Teams EHR connector. Indicate in the ticket that the web browser join setting needs to be turned on. This change needs to be done by the Teams EHR connector team.
+- Train your employees to not sign in to Teams using their work credentials when they attend appointments as a patient.
 
 ## I'm unable to access the EHR connector configuration portal or I can only see existing configurations and can't add new ones.
 
-You don't have admin access to the [Teams EHR connector configuration portal](https://ehrconnector.teams.microsoft.com/). Check to see whether you can access the [Teams admin center](https://admin.teams.microsoft.com/). If you can't access the Teams admin center, you don't have admin permissions to the tenant.
+You don't have admin access to the [Teams EHR connector configuration portal](https://ehrconnector.teams.microsoft.com/). As a quick check, see whether you can access the [Teams admin center](https://admin.teams.microsoft.com/). If you can't access the Teams admin center, you don't have admin permissions.
 
-Contact an admin to either grant you access or set up the integration in the portal.  
+Contact an admin in your organization to either grant you admin access or set up the integration in the portal.  
 
 ## Group visits aren't working in my organization.
 
+> [!NOTE]
+> Currently, group visits are only supported in Epic.
 
-## My organization uses a Citrix environment and I need help with configuring the environment to use the EHR connector.
+Here are some common reasons why you may be experiencing this issue and how to resolve it.
 
-You can configure a Citrix environment to route certain URLs back to the local machine and not launch in the virtual machine. For example, to launch virtual appointments in Teams, configure all traffic for  “*.teams.microsoft.com” to the local machine.
+- You're using an incorrect version of Teams. Group visits require a minimum of Teams version 1.2 and an upgrade must be requested in Epic App Market.
+- New FDI records need to be added. Your Epic analyst will need to create new FDI records for group visits to support the provider and patient join experience. Additionally, you must change the context token in the group visit FDI records from ```sessionId=%CSN%``` to ```sessionId=%CONFERENCEID%```. Contact your Epic technical specialist for help.
+- If you're still experiencing this issue after trying the previous steps in this list, your tenant settings may need to be changed. Contact Microsoft Support to open a support ticket for the Teams EHR connector. Indicate in the ticket that group settings need to be enabled.
+
+## My organization uses a Citrix environment. How do I configure it to use the EHR connector?
+
+You can configure a Citrix environment to route certain URLs back to the local machine and not launch in the virtual machine. For example, to launch virtual appointments in Teams, configure all traffic for “*.teams.microsoft.com” to the local machine.
 
 To learn more, see the following Citrix documentation:
 
-- [Optimization for Microsoft Teams](https://docs.citrix.com/citrix-virtual-apps-desktops/multimedia/opt-ms-teams.html)
-- [Browser content redirection](https://docs.citrix.com/citrix-virtual-apps-desktops/multimedia/browser-content-redirection.html)
+- [Optimization for Microsoft Teams](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/opt-ms-teams.html)
+- [Browser content redirection](https://docs.citrix.com//en-us/citrix-virtual-apps-desktops/multimedia/browser-content-redirection.html)
 
 ## Users get a "Tenant config not found" error when launching a virtual appointment even though all our FHIR base URLs are configured correctly.
 
