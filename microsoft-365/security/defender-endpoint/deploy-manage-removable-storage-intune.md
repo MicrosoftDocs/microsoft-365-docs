@@ -180,7 +180,7 @@ For this scenario, you need to create two groups - one group for any removable s
 
         :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2" lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
 
-    What does '54' mean in the policy? It's 18 + 36 = 54:
+    What does `54` mean in the policy? It's `18 + 36 = 54`.
 
     - Write access: disk level 2 + file system level 16 = 18.
     - Execute: disk level 4 + file system level 32 = 36.
@@ -251,7 +251,7 @@ For this scenario, you need to create two groups - one removable storage group f
     
         :::image type="content" source="media/200713006-c0d39e2b-9acc-4522-9f88-e064eeb3a4ae.png" alt-text="Screenshot of OMA-URI settings." lightbox="media/200713006-c0d39e2b-9acc-4522-9f88-e064eeb3a4ae.png":::
         
-    What does '40' mean in the policy? It's 8 + 32 = 40:
+    What does `40` mean in the policy? It's `8 + 32 = 40`.
 
     - only need to restrict file system level access
     
