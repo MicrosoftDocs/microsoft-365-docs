@@ -46,7 +46,7 @@ Jump to a section below to view templates by area or industry:
 - [Industry](#industry)
 - [US Government](#us-government)
 - [US States and Territories](#us-states-and-territories)
-- [Asia-Pacific Countries](#asia-pacific-countries)
+- [Asia-Pacific Countries/Regions](#asia-pacific-countriesregions)
 - [Europe, Middle East, and Africa (EMEA)](#europe-middle-east-and-africa-emea)
 - [Latin America](#latin-america)
 - [North America](#north-america)
@@ -265,7 +265,7 @@ The templates listed below may be purchased by your organization. Certain licens
 
 ### Regional
 
-#### Asia-Pacific Countries
+#### Asia-Pacific Countries/Regions
 
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - ASD Essential 8  
@@ -326,11 +326,12 @@ The templates listed below may be purchased by your organization. Certain licens
 - Taiwan - Implementation Rules for the Internal Audit and Internal Control System of Electronic Payment Institutions - 2015  
 - Taiwan - Implementation Rules of Internal Audit and Internal Control System of Financial Holding Companies and Banking
 - Taiwan - Regulations Governing Approval and Administration of Financial Information Service Enterprises Engaging in Interbank Funds Transfer and Settlement  
-- Taiwan - Regulations Governing the Standards for Information System and Security Management of Electronic Payment Institutions  
-- Taiwan Personal Data Protection Act (PDPA)  
+- Taiwan - Regulations Governing the Standards for Information System and Security Management of Electronic Payment Institutions
+- Taiwan – Trade Secrets Act 
+- Taiwan Personal Data Protection Act (PDPA)
 - Thailand PDPA  
-- Trade Secrets Act of The Republic of China  
-- Law of The Republic of Uzbekistan on Personal Data  
+- Taiwan – Trade Secrets Act
+- Uzbekistan - Law of The Republic of Uzbekistan on Personal Data  
 - Vietnam - Consumer Rights Protection Law  
 - Vietnam - Law of Cybersecurity  
 - Vietnam - Law of Network Information Security
