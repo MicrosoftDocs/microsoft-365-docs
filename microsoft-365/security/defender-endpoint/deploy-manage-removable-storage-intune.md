@@ -314,32 +314,37 @@ For this scenario, you need to create two groups - one group for any removable s
 
 ### Scenario 2: Audit Write and Execute access for all but block specific blocked USBs
 
-For this scenario, you need to create two groups - one group for any removable storage and another group for blocked USBs. You also need to create two policies - one policy to audit Write and Execute access for any removable storage group and the other policy to deny the blocked USBs group.
+For this scenario, you need to create two groups: one group for any removable storage, and another group for blocked USBs. You also need to create two policies: one policy to audit Write and Execute access for any removable storage group, and the other policy to deny the blocked USBs group.
 
-1. Create groups: Go to **Endpoint Security** > **Attack Surface Reduction** > **Reusable settings** > **Add**. See **DescriptorIdList** on the [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](device-control-removable-storage-access-control.md#group)  to get more details.
-    a. Group 1: Any removable storage, CD/DVD, and Windows portable devices
-      ![Group 1 removable storage example](media/208774115-ab503406-a3c6-4611-b5fa-9e837e731898.png)
-      ![Group 1 removable storage example 2](media/208774136-b63b2268-926f-482a-a509-aab7f8efba02.png)
-    b. Group 2: Choose **+ Add** to create another group for ‘Unauthorized USBs’ based on device properties.
-    ![Adding another group](media/208775067-3184b60b-551e-44ad-b724-bf113202699c.png)
-2.	Create policy: Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform**: **Windows 10 and later** with **Profile: Device Control**. Select **Device Control**: **Configured**.
-   a.	Policy 1: Block unauthorized USBs.
-      Choose **+ Set reusable settings** for **Included ID** and choose **Select**:
-      ![Screenshot showing included ID for settings](media/208775137-c5a98123-b488-4e1a-9695-9b93b1d8f45b.png)
-      Choose **+ Edit Entry** for **Entry**:
-      ![Screenshot showing editing entry](media/208775203-439bb8b5-e45a-47a7-9828-51ea9d5cfe95.png)
-   b.	Policy 2: Choose **+ Add** to create another policy for ‘Audit Write and Execute access for any removable storage group’.
-      Choose **+ Set reusable settings** for Included ID: and choose Select:
-      ![screenshot showing resuable settings](media/208775292-485a13e4-533c-4efc-97a4-611786d02fd1.png)
-      Choose **+ Set reusable settings** for **Excluded ID** to exclude authorized USBs and choose **Select**:
-      ![Set resuable settings example](media/208775330-79c69f54-513e-49b2-8b9f-2fdf8293ee35.png)
-      Choose **+ Edit Entry** for **Entry**:
-      ![Edit entry example](media/208775366-f2cafb54-eb63-4bcd-b0fe-880f3cba2c1b.png)
+1. To create groups, go to **Endpoint Security** > **Attack Surface Reduction** > **Reusable settings** > **Add**. For more details, see **DescriptorIdList** on the [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](device-control-removable-storage-access-control.md#group).
 
+   1. Group 1: Any removable storage, CD/DVD, and Windows portable devices, as shown in the following screenshots:
+      
+      :::image type="content" source="media/208774115-ab503406-a3c6-4611-b5fa-9e837e731898.png" alt-text="Screenshot showing removable storage example." lightbox="media/208774115-ab503406-a3c6-4611-b5fa-9e837e731898.png":::
 
+      And here's another example:
 
+      :::image type="content" source="media/208774136-b63b2268-926f-482a-a509-aab7f8efba02.png" alt-text="Screenshot showing a second example of removable storage." lightbox="media/208774136-b63b2268-926f-482a-a509-aab7f8efba02.png":::
 
-    
-    
-    
-    
+2.	To create your policy, go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform**: **Windows 10 and later** with **Profile: Device Control**. Select **Device Control**: **Configured**.
+
+   1. Policy 1: Block unauthorized USBs. Choose **+ Set reusable settings** for **Included ID** and choose **Select**, as shown in the following screenshot:
+
+      :::image type="content" source="media/208775137-c5a98123-b488-4e1a-9695-9b93b1d8f45b.png" alt-text="Screenshot showing the included ID for settings." lightbox="media/208775137-c5a98123-b488-4e1a-9695-9b93b1d8f45b.png":::
+
+      Choose **+ Edit Entry** for **Entry**, as shown in the following screenshot:
+
+      :::image type="content" source="media/208775203-439bb8b5-e45a-47a7-9828-51ea9d5cfe95.png" alt-text="Screenshot showing Entry being edited." lightbox="media/208775203-439bb8b5-e45a-47a7-9828-51ea9d5cfe95.png":::
+
+   2. Policy 2: Choose **+ Add** to create another policy for ‘Audit Write and Execute access for any removable storage group’. Choose **+ Set reusable settings** for **Included ID**, and then choose **Select**, as shown in the following screenshot:
+
+      :::image type="content" source="media/208775292-485a13e4-533c-4efc-97a4-611786d02fd1.png" alt-text="Screenshot showing reusable settings." lightbox="media/208775292-485a13e4-533c-4efc-97a4-611786d02fd1.png":::
+
+      Choose **+ Set reusable settings** for **Excluded ID** to exclude authorized USBs, and then choose **Select**, as shown in the following screenshot:
+
+      :::image type="content" source="media/208775330-79c69f54-513e-49b2-8b9f-2fdf8293ee35.png" alt-text="Screenshot showing excluded ID in reusable settings." lightbox="media/208775330-79c69f54-513e-49b2-8b9f-2fdf8293ee35.png":::
+
+      Choose **+ Edit Entry** for **Entry**, as shown in the following screenshot:
+
+      :::image type="content" source="media/208775366-f2cafb54-eb63-4bcd-b0fe-880f3cba2c1b.png" alt-text="Screenshot showing edit mode for an entry." lightbox="media/208775366-f2cafb54-eb63-4bcd-b0fe-880f3cba2c1b.png":::
+
