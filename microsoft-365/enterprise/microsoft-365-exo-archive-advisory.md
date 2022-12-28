@@ -34,9 +34,9 @@ This service advisory informs you of potential data storage limits being reached
 
 | mailboxGuid | Status | SizeInGB |
 | --- | --- | --- |
-| 1a-2b-3c | Warning | 1312 |
-| 555-12-1200 | Warning | 1316 |
-| 086-753-090 | Critical | 1499 |
+| b47c25fd-3d78-481c-970b-6799bc454275 | Warning | 1312 |
+| faf1c53e-9214-48aa-b91e-f908f3c1c762 | Warning | 1316 |
+| c874b925-989a-4119-aa39-b6280a456b9e | Critical | 1499 |
 
 The following list describes each column in the previous example.
 
