@@ -44,18 +44,18 @@ This article provides guidance for how to troubleshoot common setup and configur
 
 ## I get a "FHIR URL isn't valid" error when I try to configure the EHR connector
 
-This issue can happen in the following scenarios:
+This issue can happen in the following scenarios:.
 
 - The FHIR base URL is missing the DSTU2 extension and you're using Teams version 1.1 or 1.2.
 - The FHIR base URL is missing the R4 extension and you're using Teams version 1.3.
 
 Contact your Epic technical specialist to provide the full FHIR base URL.
 
-## I'm an Epic analyst and I get an "OATH2" error from Epic when I try to approve the FHIR URL
+## I'm an Epic analyst and I get an "OATH2" error from Epic when I try to approve the FHIR URL.
 
 This issue can occur if the keys aren't set up in the Epic instance or if OAuth configuration isn't completed by Epic. Contact your Epic technical specialist.
 
-## I'm an Epic analyst and when I select Approve to approve the FHIR URL in the EHR connector configuration portal, I'm unable to sign in to Epic using my Epic credentials
+## I'm an Epic analyst and when I select Approve to approve the FHIR URL in the EHR connector configuration portal, I'm unable to sign in to Epic using my Epic credentials.
 
 Your permissions need to be changed in Epic. Contact your Epic technical specialist to check and update your permissions.
 
@@ -63,7 +63,7 @@ Your permissions need to be changed in Epic. Contact your Epic technical special
 
 Here are some common reasons why you may be experiencing this issue and how to resolve it.
 
-### The FDI records in Epic don't match the values from the EHR connector configuration portal.
+### The FDI records in Epic don't match the values from the EHR connector configuration portal
 
 The launch URL and the context tokens must be copied from the EHR connector configuration portal to the FDI records in Epic. Contact the Epic analyst in your organization to verify that the values were copied correctly. Keep in mind that in some cases, manipulating the FDI records after copying them from the EHR connector configuration portal is allowed.
 
@@ -75,7 +75,7 @@ The FHIR base URLs for the test and production environments in Epic are differen
 
 Your organization must have at least one active license for either Microsoft Cloud for Healthcare, Microsoft Teams EHR Connector add-on, or Microsoft Teams EMR connector add-on. For Cerner customers, a license is also required for testing.
 
-## Providers don't get a Teams notification when patients join a virtual appointment
+## Providers don't get a Teams notification when patients join a virtual appointment.
 
 Often this can be solved by training. When a provider starts the virtual appointment, a temporary notification is displayed to the provider to admit the patient. This notification appears only briefly. Providers can also select **People** in the meeting controls at the top of the screen to see the list of participants, and then under **Waiting in lobby**, select the green check mark next to the participant's name to admit them.
 
