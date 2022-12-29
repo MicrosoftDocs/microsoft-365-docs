@@ -26,11 +26,11 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.reviewer: casjacks
-description: Get answers to frequently asked questions about Teams Electronic Health Record (EHR) connector setup and configuration. 
+description: Get answers to frequently asked questions about Teams Electronic Health Record (EHR) connector setup and configuration. Use this guidance to help you troubleshoot common setup and configuration issues for the Teams Electronic Health Record (EHR) connector.  
 ms.date: 
 ---
 
-# Teams EHR connector FAQ
+# Troubleshoot Teams EHR connector setup and configuration
 
 **Option 1**
 
@@ -59,17 +59,17 @@ This issue can occur if the keys aren't set up in the Epic instance or if OAuth 
 
 Your permissions need to be changed in Epic. Contact your Epic technical specialist to check and update your permissions.
 
-## We've set up the EHR connector for the first time and patients are unable to launch a virtual appointment from the patient portal.
+## I've set up the EHR connector for the first time and patients are unable to launch a virtual appointment from the patient portal.
 
 Here are some common reasons why you may be experiencing this issue and how to resolve it.
 
-### Values from EHR connector configuration portal don't match the FDI records in Epic
+### The FDI records in Epic don't match the values from the EHR connector configuration portal.
 
-The launch URL and the context tokens must be copied from the EHR connector to the FDI records in Epic. Contact the Epic analyst in your organization to verify that the values were copied correctly. Keep in mind that in some cases, manipulating the FDI records after copying them from EHR connector configuration portal is allowed.
+The launch URL and the context tokens must be copied from the EHR connector configuration portal to the FDI records in Epic. Contact the Epic analyst in your organization to verify that the values were copied correctly. Keep in mind that in some cases, manipulating the FDI records after copying them from the EHR connector configuration portal is allowed.
 
 ### The FDI records aren't updated in the correct Epic environment
 
-The FHIR base URLs for the test and production environments in Epic are different. Check to make sure that the FDI records reflect the values from the correct environment.
+The FHIR base URLs for the test and production environments in Epic are different. Check to make sure that the FDI records reflect the values for the correct environment.
 
 ### You're using a production environment and you don't have a production license
 
@@ -79,13 +79,13 @@ Your organization must have at least one active license for either Microsoft Clo
 
 Often this can be solved by training. When a provider starts the virtual appointment, a temporary notification is displayed to the provider to admit the patient. This notification appears only briefly. Providers can also select **People** in the meeting controls at the top of the screen to see the list of participants, and then under **Waiting in lobby**, select the green check mark next to the participant's name to admit them.
 
-Another reason can be restrictions that are set in the Teams admin center. If you're an admin, check the settings that are configured for your organization in the Teams admin center. If you're not an admin, contact the Teams admin in your organization.
+Another reason can be restrictions that are set in the Teams admin center. Teams notifications can be managed in the Teams admin center. If you're an admin, check the settings that are configured for your organization. If you're not an admin, contact the Teams admin in your organization.
 
-## Patients are prompted to download Teams instead of joining from a web browser. We want patients to join from a web browser without having to install Teams.
+## Patients are prompted to download the Teams app instead of joining from a web browser. We want patients to join from a web browser without having to install Teams.
 
 Contact Microsoft Support and open a support ticket for the Teams EHR connector. Indicate in the ticket that the web browser join setting needs to be turned on. This change needs to be done by the Teams EHR connector team.
 
-After the web browser join setting is turned on, patients can join virtual appointments in a browser. They don't need to download and install Teams on their device.
+After the web browser join setting is turned on, patients can join virtual appointments in a browser without having install Teams.
 
 ## Patients can send chat messages to providers in Teams after the virtual appointment ends from within the appointment. How can we block this?
 
@@ -112,10 +112,9 @@ Contact an admin in your organization to either grant you admin access or set up
 
 ## Group visits aren't working in my organization.
 
-> [!NOTE]
-> Currently, group visits are only supported in Epic.
+Currently, group visits are only supported in Epic.
 
-Here are some common reasons why you may be experiencing this issue and how to resolve it.
+Here are some common reasons why you may be experiencing this issue when integrating with Epic, and how to resolve it.
 
 - You're using an incorrect version of Teams. Group visits require a minimum of Teams version 1.2 and an upgrade must be requested in Epic App Market.
 - New FDI records need to be added. Your Epic analyst will need to create new FDI records for group visits to support the provider and patient join experience. Additionally, you must change the context token in the group visit FDI records from ```sessionId=%CSN%``` to ```sessionId=%CONFERENCEID%```. Contact your Epic technical specialist for help.
@@ -132,7 +131,7 @@ To learn more, see the following Citrix documentation:
 
 ## Users get a "Tenant config not found" error when launching a virtual appointment even though all our FHIR base URLs are configured correctly.
 
-This issue can happen if a user accidentally launches the virtual appointment in the EHR production environment by using the test FHIR URL or vice versa.
+This issue can happen if a user accidentally launches the virtual appointment in the EHR production environment by using the test FHIR base URL or vice versa.
 
 To resolve this issue:
 
@@ -141,5 +140,7 @@ To resolve this issue:
 
 ## Related articles
 
+- [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
+- [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
 - [Teams EHR connector Virtual Appointments report](ehr-connector-report.md)
-- [Get started with Teams for healthcare organizations](teams-in-hc.md)
+- [Get started with Microsoft 365 for healthcare organizations](teams-in-hc.md)
