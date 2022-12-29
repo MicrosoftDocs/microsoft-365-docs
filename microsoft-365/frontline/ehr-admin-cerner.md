@@ -163,6 +163,10 @@ Key features of the patient experience
 - Patients are placed in a lobby until the provider joins and admits them.
 - Patients can test their video and microphone in the lobby before joining the appointment.
 
+## Troubleshoot Teams EHR connector setup and integration
+
+If you're experiencing issues when setting up the integration, see [Troubleshoot Teams EHR connector setup and configuration](ehr-connector-faq.md) for guidance on how to resolve common setup and configuration issues.
+
 ## Get insight into Virtual Appointments usage
 
 The [EHR connector Virtual Appointments report](ehr-connector-report.md) in the Teams admin center gives you an overview of EHR-integrated virtual appointment activity in your organization. You can view a breakdown of data for each appointment that took place for a given date range. The data includes the staff member who conducted the appointment, duration, the number of attendees, department, and whether the appointment was within the allocation limit.
