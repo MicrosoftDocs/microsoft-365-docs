@@ -142,5 +142,5 @@ To resolve this issue:
 
 - [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
 - [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
-- [Teams EHR connector Virtual Appointments report](ehr-connector-report.md)
+- [EHR connector Virtual Appointments report](ehr-connector-report.md)
 - [Get started with Microsoft 365 for healthcare organizations](teams-in-hc.md)
