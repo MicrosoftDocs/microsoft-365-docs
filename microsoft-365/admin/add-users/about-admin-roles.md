@@ -100,9 +100,10 @@ You'll probably only need to assign the following roles in your organization. By
 |User admin     |    Assign the User admin role to users who need to do the following for all users: <br> - Add users and groups <br> - Assign licenses <br> - Manage most users properties <br> - Create and manage user views <br> - Update password expiration policies <br> - Manage service requests <br> - Monitor service health <br><br>  The user admin can also do the following actions for users who aren't admins and for users assigned the following roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, Reports reader: <br> - Manage usernames<br> - Delete and restore users<br> - Reset passwords <br> - Force users to sign out <br> - Update (FIDO) device keys   |
 |User Experience Success Manager     |    Assign the User Experience Success Manager role to users who need to access Experience Insights, Adoption Score, and the Message Center in the Microsoft 365 admin center. This role includes the permissions of the Usage Summary Reports Reader role.    |
 
-## Permissions based on Admin role and Group type in M365 Admin page:
+## Permissions based on Admin role and Group type in M365 Admin page
 
-|   | **M365 Groups**   | **Security Groups**   | **Distribution Groups**   | **Mail Enabled Security Groups**   |
+
+|  | M365 Groups   | Security Groups  | Distribution Groups   | Mail Enabled Security Groups   |
 | --- | --- | --- | --- | --- |
 | Global admin  | Create, Read, Update, Delete  | Create, Read, Update, Delete | Create, Read, Update, Delete | Create, Read, Update, Delete |
 | Global reader  | Read | Read  | Read | Read |
