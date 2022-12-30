@@ -106,14 +106,14 @@ You'll probably only need to assign the following roles in your organization. By
 | --- | --- | --- | --- | --- |
 | Global admin  | Create, Read, Update, Delete  | Create, Read, Update, Delete | Create, Read, Update, Delete | Create, Read, Update, Delete |
 | Global reader  | Read | Read  | Read | Read |
-| User admin  | Create, Read, Update, Delete, ***Cannot  Update EXO properties*** | Create, Read, Update, Delete | Read | Read |
+| User admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete | Read | Read |
 | Exchange admin  | Create, Read, Update, Delete | Create, Read, Update, Delete - *only groups they own*  | Create, Read, Update, Delete | Create, Read, Update, Delete |
-| Teams admin  | Create, Read, Update, Delete, ***Cannot  Update EXO properties*** | Create, Read, Update, Delete - _only groups they own_  | Read | Read |
-| SharePoint admin  | Create, Read, Update, Delete, ***Cannot  Update EXO properties*** | Create, Read, Update, Delete -_only groups they own_  | Read | Read |
+| Teams admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete - _only groups they own_  | Read | Read |
+| SharePoint admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete -_only groups they own_  | Read | Read |
 | Billing admin  | Read | Read | Read  | Read |
 | Skype admin  | Read | Read | Read | Read |
 | Service admin  | Read | Read  | Read | Read |
-| Group admin  | Create, Read, Update, Delete, ***Cannot  Update EXO properties*** | Create, Read, Update, Delete | Read | Read |
+| Group admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete | Read | Read |
 
 ## Delegated administration for Microsoft Partners
 
