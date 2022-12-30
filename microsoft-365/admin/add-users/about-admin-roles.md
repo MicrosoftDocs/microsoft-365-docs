@@ -103,7 +103,7 @@ You'll probably only need to assign the following roles in your organization. By
 ## Permissions based on Admin role and Group type in M365 Admin page
 
 
-|  | M365 Groups   | Security Groups  | Distribution Groups   | Mail Enabled Security Groups   |
+|&nbsp; | M365 Groups   | Security Groups  | Distribution Groups   | Mail Enabled Security Groups   |
 | --- | --- | --- | --- | --- |
 | Global admin  | Create, Read, Update, Delete  | Create, Read, Update, Delete | Create, Read, Update, Delete | Create, Read, Update, Delete |
 | Global reader  | Read | Read  | Read | Read |
