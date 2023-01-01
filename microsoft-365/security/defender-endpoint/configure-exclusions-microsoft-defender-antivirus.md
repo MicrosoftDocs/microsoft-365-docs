@@ -47,7 +47,7 @@ To configure and validate exclusions, see the following:
 ## Recommendations for defining exclusions
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations. For more information, refer to the [list of automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#the-list-of-automatic-exclusions)).
+> Microsoft Defender Antivirus includes many automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations. For more information, see [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md).
 >
 > Defining exclusions lowers the protection offered by Microsoft Defender Antivirus. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
 
