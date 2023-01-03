@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 10/28/2022
+ms.date: 01/03/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -21,12 +21,14 @@ ms.collection:
 
 # Manage Microsoft Defender for Endpoint subscription settings across devices
 
-If you're using multiple Microsoft endpoint security solutions, such as Defender for Endpoint Plan 1 and Plan 2, you potentially have a [mixed licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios). Up until now, in such cases, the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience. 
+If you're using multiple Microsoft endpoint security solutions, such as a mix of licenses that include Defender for Endpoint Plan 1 and Plan 2, you could benefit from [mixed-licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios). You can:
 
-Now, however, you have several options available to manage your subscription settings across devices. You can:
-
-- (Recommended) **[Set your tenant to mixed mode and use device tags](#set-your-tenant-to-mixed-mode-and-use-device-tags)** to specify which devices will receive features and capabilities from each plan; OR
+- **[Set your tenant to mixed mode and use device tags](#set-your-tenant-to-mixed-mode-and-use-device-tags)** (*recommended*) to specify which devices will receive features and capabilities from each plan; OR
 - **[Use the features and capabilities from one plan across all devices](#choose-to-use-one-plan-for-all-devices)**.
+
+Up until now, in such cases, the highest functional Microsoft endpoint security subscription would set the experience for your tenant. Starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience. 
+
+## [**Use mixed mode**](#tab/mixed)
 
 ## Set your tenant to mixed mode and use device tags
 
@@ -44,6 +46,8 @@ Now, however, you have several options available to manage your subscription set
 > [!NOTE]
 > It can take up to three hours for your changes to take effect.
 
+## [**Choose one plan**](#tab/oneplan)
+
 ## Choose to use one plan for all devices
 
 1. Go to **Settings** > **Endpoints** > **Licenses**.
@@ -54,6 +58,8 @@ Now, however, you have several options available to manage your subscription set
 
 > [!NOTE]
 > It can take up to three hours for your changes to take effect.
+
+---
 
 ## Review license usage
 
