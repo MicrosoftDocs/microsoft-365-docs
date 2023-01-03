@@ -53,6 +53,9 @@ Here's a quick overview of the process.
 > [!IMPORTANT]
 > Auto-expanding archiving is supported only for mailboxes used for individual users (or shared mailboxes) with a growth rate that doesn't exceed 1 GB per day. A user's archive mailbox is intended for just that user. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox is not permitted. Microsoft reserves the right to deny additional archiving in instances where a user's archive mailbox is used to store archive data for other users or in other cases of the inappropriate use.
 
+> [!IMPORTANT]
+> If a mailbox with an auto-expanding archive reaches a total of 1.5TB of data stored in the auto-expanding archive, no more data will be stored in the auto-expanding archive or moved from the main archive to the auto-expanding archive. If the main archive also reaches its quota, no more data will be stored in the main archive. This can result in the primary mailbox also reaching its quota and being prevented from sending or receiving email or other items. To minimize risk and liability, we recommend removing content after it is no longer useful to the organization through deletion policies configured in [Microsoft Purview Data Lifecycle Management](data-lifecycle-management.md).
+
 ## What gets moved to the additional archive storage space?
 
 To make efficient use of auto-expanding archive storage, folders may get moved. Microsoft Purview determines which folders get moved when additional storage is added to the archive. Sometimes when a folder is moved, one or more subfolders are automatically created and items from the original folder are distributed to these folders to facilitate the moving process. You might need to communicate this behavior to end users after enabling their mailbox for auto-expanding archives, to help set expectations.
