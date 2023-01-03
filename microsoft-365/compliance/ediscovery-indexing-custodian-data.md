@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -27,11 +26,8 @@ When a custodian is added to an eDiscovery (Premium) case, any content that was 
 To learn more about processing support and partially indexed items, see:
 
 - [Supported file types in eDiscovery (Premium)](ediscovery-supported-file-types.md)
-
 - [Partially indexed items in eDiscovery](ediscovery-partially-indexed-items-in-content-search.md)
-
 - [File formats indexed by Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
-
 - [Default crawled file name extensions and parsed file types in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -43,12 +39,11 @@ After the Advanced indexing process is completed, you can get an understanding o
 This view  also includes the number of items that require remediation and another graph of errors by file type. For more information, see:
 
 - [Error remediation when processing data](ediscovery-error-remediation-when-processing-data.md)
-
 - [Single item error remediation](ediscovery-single-item-error-remediation.md)
 
 ## Updating the Advanced index for custodians
 
-When a custodian is added to an eDiscovery (Premium) case, all partially indexed items are reprocessed. However, as time passes, more partially indexed items may be added to a user's mailbox or OneDrive account.  If necessary, you can update the index for specific custodian. For more information, see [Manage custodians in an eDiscovery (Premium) case](ediscovery-manage-new-custodians.md#reindex-custodian-data). You can also update the index for all custodians in a case by clicking the **Update index** on the **Processing** tab.
+When a custodian is added to an eDiscovery (Premium) case, all partially indexed items are reprocessed. However, as time passes, more partially indexed items may be added to a user's mailbox or OneDrive account.  If necessary, you can update the index for specific custodian. For more information, see [Manage custodians in an eDiscovery (Premium) case](ediscovery-manage-new-custodians.md#reindex-custodian-data). You can also update the index for all custodians in a case by selecting the **Update index** on the **Processing** tab.
 
 > [!NOTE]
 > Updating custodian indexes is a long running process. It's recommended that you don't update indexes more than once a day in a case.

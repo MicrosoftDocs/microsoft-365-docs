@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -57,11 +56,8 @@ To add or remove filters that are displayed for the review set, select **Filters
 The available filters are organized in four sections:
 
 - **Search**: Filters that provide different search capabilities.
-
 - **Analytics & predictive coding**: Filters for properties generated and added to documents when you run the **Document & email analytic** job or use predictive coding models.
-
 - **IDs**: Filters for all ID properties of documents.
-
 - **Item properties**: Filters for document properties. 
 
 Expand each section and select or deselect filters to add or remove them in the filter set. When you add a filter, it's displayed in the filter set. 
@@ -78,11 +74,8 @@ Every searchable field in a review set has a corresponding filter that you can u
 There are multiple types of filters:
 
 - **Freetext**: A freetext filter is applied to text fields such as "Subject". You can list multiple search terms by separating them with a comma.
-
 - **Date**: A date filter is used for date fields such as "Last modified date".
-
 - **Search options**: A search options filter provides a list of possible values (each value is displayed with a checkbox that you can select) for particular fields in the review. This filter is used for fields, such as "Sender", where there's a finite number of possible values in the review set.
-
 - **Keyword**: A keyword condition is a specific instance of freetext condition that you can use to search for terms. You can also use KQL-like query language in this type of filter. For more information, see the Query language and Advanced query builder sections in this article.
 
 ## Include and exclude filter relationships

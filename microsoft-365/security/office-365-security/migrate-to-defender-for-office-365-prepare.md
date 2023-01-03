@@ -85,7 +85,7 @@ You need to transfer any customizations or features that modify messages in any 
 If you don't turn off message modification features in your existing protection service, you can expect the following negative results in Microsoft 365:
 
 - DKIM will break. Not all senders rely on DKIM, but those that do will fail authentication.
-- [Spoof intelligence](anti-spoofing-protection.md) and the tuning step later in this guide will not work properly.
+- [Spoof intelligence](anti-phishing-protection-spoofing-about.md) and the tuning step later in this guide will not work properly.
 - You'll probably get a high number of false positives (good mail marked as bad).
 
 To recreate external sender identification in Microsoft 365, you have the following options:
@@ -97,7 +97,7 @@ Microsoft is working with the industry to support the Authenticated Received Cha
 
 ## Account for any active phishing simulations
 
-If you have active third-party phishing simulations, you need to prevent the messages, links, and attachments from being identified as phishing by Defender for Office 365. For more information, see [Configure third-party phishing simulations in the advanced delivery policy](skip-filtering-phising-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
+If you have active third-party phishing simulations, you need to prevent the messages, links, and attachments from being identified as phishing by Defender for Office 365. For more information, see [Configure third-party phishing simulations in the advanced delivery policy](skip-filtering-phishing-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 
 ## Define spam and bulk user experiences
 
@@ -108,7 +108,7 @@ If you have active third-party phishing simulations, you need to prevent the mes
   However, many enterprise users are used to little (if any) mail in their Junk Email folder. Instead, these enterprise users are used to checking a quarantine for their missing messages. Quarantine introduces issues of quarantine notifications, notification frequency, and the permissions that are required to view and release messages.
 
   - Domain Keys Identified Mail (DKIM) will break.
-  - [Spoof intelligence](anti-spoofing-protection.md) will not work properly.
+  - [Spoof intelligence](anti-phishing-protection-spoofing-about.md) will not work properly.
   - You'll probably get a high number of false positives (good mail marked as bad).
 
   Ultimately, it's your decision if you want to prevent delivery of email to the Junk Email folder in favor of delivery to quarantine. But, one thing is certain: if the experience in Defender for Office 365 is different than what your users are used to, you need to notify them and provide basic training. Incorporate learnings from the pilot and make sure that users are prepared for any new behavior for email delivery.
