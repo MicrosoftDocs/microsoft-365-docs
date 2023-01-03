@@ -54,7 +54,7 @@ To learn more, see:
 
 - [Virtual Appointments guided tour](https://guidedtour.microsoft.com/guidedtour/industry-longform/virtual-appointments/1/1)
 - [??? SMC What is Virtual Appointments?]()
-- [Virtual Appointments with Teams and the Virtual Appointments app](virtual-appointments-app.md)
+- [Use the Virtual Appointments app](virtual-appointments-app.md)
 - [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 
 ## The Bookings app

@@ -1,5 +1,5 @@
 ---
-title: Virtual Appointments with Microsoft Teams and the Virtual Appointments app
+title: Use the Virtual Appointments app in Microsoft Teams
 author: lanachin
 ms.author: v-lanachin
 manager: samanro
@@ -24,14 +24,14 @@ ms.collection:
   - EngageScoreSep2022
   - m365initiative-meetings
 ms.reviewer: 
-description: Get an overview of how to use the Virtual Appointments app to schedule, manage, and conduct virtual appointments in Teams.
+description: Get an overview of how to use the Virtual Appointments app in Teams to schedule, manage, conduct and view analytics on virtual appointments in your organization. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.date: 12/22/2022
 ---
 
-# Virtual Appointments with Microsoft Teams and the Virtual Appointments app
+# Use the Virtual Appointments app in Microsoft Teams
 
 ![Information icon](media/info.png) **Some features described in this article require [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)**.
 
@@ -183,6 +183,8 @@ The queue view on the **Queue** tab provides your staff with a dashboard to moni
 From the queue, schedulers can add a new booking, view relevant appointment details, and see appointment statuses throughout the day. They can also send email reminders to assigned staff and attendees and send SMS notifications to attendees for scheduled appointments. Staff can join and manage appointments directly from the queue.
 
 When an attendee joins the waiting room, the status changes, and their wait time is displayed and tracked. The view automatically refreshes with color-coded updates so that changes can easily be identified.
+
+## Get insight into Virtual Appointments usage
 
 The Virtual Appointments usage report in the **Analytics** tab gives you an overview of virtual appointments activity in your organization. The report provides key metrics such as total number of appointments, appointment duration, lobby wait time, and no shows. You can view detailed activity for virtual appointments scheduled and conducted through multiple scheduling entry points and drill down into individual appointment data.
 

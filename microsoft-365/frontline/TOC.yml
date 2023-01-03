@@ -115,7 +115,7 @@
     items: 
     - name: Overview
       href: virtual-appointments.md
-    - name: Virtual Appointments with Teams and the Virtual Appointments app
+    - name: Use the Virtual Appointments app in Teams
       href: virtual-appointments-app.md
     - name: Virtual Appointments with Teams and Cerner EHR 
       href: ehr-admin-cerner.md
