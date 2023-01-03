@@ -74,7 +74,7 @@ During a one-on-one or group call, you might start sharing a Whiteboard. Similar
 
 When all members of the call are from the same organization, any person can start and access the Whiteboard. For calls involving users from different organizations, only some users can access the Whiteboard sharing button. During a one-on-one call, only the original user who created a conversation or call (the first person to send a message or call another user, whichever occurs first) between the two users can access the Whiteboard sharing button from the drop-down share tray button.
 
-This can not be changed after two users have started a conversation. Deleting the chat involving the two users will not restart the chat, therefore, this will not reset who created or started the chat. Having the other user call will also not change who can share the Whiteboard, even if a Whiteboard has not been shared yet. The purpose of this limitation is to prevent out-of-organization user access to a Whiteboard unless sharing starts from an in-organization user.
+This cannot be changed after two users have started a conversation. Deleting the chat involving the two users will not restart the chat, therefore, this will not reset who created or started the chat. Having the other user call will also not change who can share the Whiteboard, even if a Whiteboard has not been shared yet. The purpose of this limitation is to prevent out-of-organization user access to a Whiteboard unless sharing starts from an in-organization user.
 
 ## Add as a tab in Teams channels and chats
 
