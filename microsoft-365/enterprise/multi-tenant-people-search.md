@@ -56,7 +56,7 @@ To test the MTO People Search feature, it is assumed that you already have the f
 
 - Two Azure AD/Microsoft 365 tenants
 - Both tenants have the **Azure AD Cross-tenant Synchronization** feature enabled (currently in private preview - make sure you sign up for both preview features)
-- Provisioned users from home to target tenants as described in [Instructions to enable Tenant-to-Tenant sync](https://github.com/ArvindHarinder1/CrossTenantSynchronization/blob/main/CrossTenantSynchronization.md)
+- Provisioned users from home to target tenants as described in [Instructions to enable Tenant-to-Tenant Sync](https://github.com/ArvindHarinder1/CrossTenantSynchronization/blob/main/CrossTenantSynchronization.md)
 
 ## Use Cases
 
@@ -65,9 +65,9 @@ Multi-tenant organization people search is supported across a range of scenarios
 1. **Microsoft Outlook (OWA, desktop and mobile app)**
 
    - Nestor (<nestor@contoso.com>) searches for "Megan" on the centralized search bar in OWA and gets the results and can view Megan's people card with limited profile information.
-   - Nestor types in "Megan" in the To line of the email and can send an email to Megan after getting the results for <megan@fabrikam.com>.
+   - Nestor types in "Megan" in the _To_ line of the email and can send an email to Megan after getting the results for <megan@fabrikam.com>.
    - Nestor \@mentions "Megan" in the body of the email and can get the result for <megan@fabrikam.com>.
-   - Nestor types in "Megan" in the cc line of the email and can get the result for <megan@fabrikam.com>.
+   - Nestor types in "Megan" in the _cc_ line of the email and can get the result for <megan@fabrikam.com>.
    - Nestor can hover and/or click on Megan's profile picture/initials to view Megan's limited people card.
 
 2. **Microsoft OneDrive/Sharepoint**
@@ -87,9 +87,9 @@ Multi-tenant organization people search is supported across a range of scenarios
 
 ## Key terminology
 
-- _Home tenant_: The tenant you want to search from. The direction of the search is *outbound*.
+- _Home tenant_: The tenant you want to search from. The direction of the search is _outbound_.
 
-- _Resource tenant_: The tenant you want to search in. The direction of the search is *inbound*.
+- _Resource tenant_: The tenant you want to search in. The direction of the search is _inbound_.
 
   A tenant can be both home and resource tenant simultaneously.
 
