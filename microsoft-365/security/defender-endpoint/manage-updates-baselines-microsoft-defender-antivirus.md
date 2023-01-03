@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 11/07/2022
+ms.date: 12/12/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -85,6 +85,33 @@ All our updates contain
 
 <br/><br/>
 <details>
+<summary>November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)</summary>
+
+&ensp;Security intelligence update version: **1.381.144.0** <br/>
+&ensp;Release date: **December 8, 2022**<br/>
+&ensp;Platform: **4.18.2211.5** <br/>
+&ensp;Engine: **1.1.19900.2**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19900.2 <br/>
+Security intelligence update version: 1.381.144.0 <br/>
+
+### What's new
+
+- Enhanced threat protection capabilities
+- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities
+- Enhanced enabling of tamper protection for newly onboarded devices
+- Improved reporting for [cloud protection](cloud-protection-microsoft-defender-antivirus.md)
+- Improved [controlled folder access](controlled-folders.md) notifications
+- Improved scanning of network shares
+- Enhanced processing of host files containing a wild card
+- Improved performance for [scan events](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+
+### Known Issues
+
+- None  
+<br/><br/>
+</details><details>
 <summary>October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)</summary>
 
 &ensp;Security intelligence update version: **1.379.4.0**<br/>
@@ -145,14 +172,21 @@ Security intelligence update version: 1.377.8.0<br/>
 
 - Some customers might have received platform updates 4.18.2209.2 from preview. It can cause the service to get stuck at the start state after the update.  
 <br/><br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary>August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
 
 &ensp;Security intelligence update version: **1.373.1647.0**<br/>
 &ensp;Release date: **September 6, 2022**<br/>
 &ensp;Platform: **4.18.2207.7**<br/>
 &ensp;Engine: **1.1.19600.3**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19600.3<br/>
 Security intelligence update version: 1.373.1647.0 <br/>
@@ -171,14 +205,7 @@ Security intelligence update version: 1.373.1647.0 <br/>
 - None
 
 <br/><br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary>July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)</summary>
 
 &ensp;Security intelligence update version: **1.373.219.0**<br/>
@@ -871,6 +898,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20221209.1</summary>
+
+&ensp;Defender package version: **20221209.1**<br/>
+&ensp;Security intelligence version: **1.381.144.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Platform version: **4.18.2211.5**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20221102.3</summary>
 
 &ensp;Defender package version: **20221102.3**<br/>

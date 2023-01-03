@@ -49,6 +49,24 @@ This article explains how these actions work, and describes the various types of
 > [!CAUTION]
 > Defining exclusions reduces the level of protection offered by Defender for Endpoint and Microsoft Defender Antivirus. Use exclusions as a last resort, and make sure to define only the exclusions that are necessary. Make sure to review your exclusions periodically, and remove the ones you no longer need. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) and [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md).
 
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are: 
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+>
+
 ## Submissions, suppressions, and exclusions
 
 When you're dealing with false positives, or known entities that are generating alerts, you don't necessarily need to add an exclusion. Sometimes classifying and suppressing an alert is enough. We recommend submitting false positives (and false negatives) to Microsoft for analysis as well. The following table describes some scenarios and what steps to take with respect to file submissions, alert suppressions, and exclusions.
@@ -196,7 +214,7 @@ Most organizations have several different types of exclusions and indicators to 
 
 The following image summarizes how exclusions and indicators are handled across Defender for Endpoint and Microsoft Defender Antivirus:
 
-:::image type="content" source="images/mdav-mde-flow.png" alt-text="Shows the order in which exclusions and indicators are evaluated." lightbox="images/mdav-mde-flow.png":::
+:::image type="content" source="images/mdav-mde-flow.png" alt-text="Screenshot that Shows the order in which exclusions and indicators are evaluated." lightbox="images/mdav-mde-flow.png":::
 
 Here's how it works:
 
@@ -226,7 +244,7 @@ In cases where Defender for Endpoint indicators conflict, here's what to expect:
 
 The following diagram shows how [automated investigation and remediation works with indicators](manage-indicators.md#automated-investigation-and-remediation-engine):
 
-:::image type="content" source="images/air-exclusions.png" alt-text="Shows automated investigation and remediation and indicators" lightbox="images/air-exclusions.png":::
+:::image type="content" source="images/air-exclusions.png" alt-text="Screenshot that Shows automated investigation and remediation and indicators." lightbox="images/air-exclusions.png":::
 
 ## Additional server workloads and exclusions
 
