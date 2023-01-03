@@ -38,13 +38,13 @@ Up until now, in such cases, the highest functional Microsoft endpoint security 
 
 3. A **Subscription settings** flyout opens. Choose the option to use multiple plans and use device tagging for mixed licenses.
 
-4. To select an assignment option for devices, follow these steps:
+4. Tag the devices that will receive Defender for Endpoint Plan 1 capabilities (all other devices will receive Defender for Endpoint Plan 2). You can choose to tag your devices manually or by using a dynamic rule.
 
-   1. Either select an existing rule, such as a **Plan 1 devices rule**, or create a new device rule to tag devices.
-   2. Tag one set of devices, such as those that should receive Defender for Endpoint Plan 1 capabilities. Device tags are visible in the **Device inventory** view and in the [Defender for Endpoint APIs](apis-intro.md).
+   - To tag devices manually, create a tag called `License MDE P1`. To get help with this step, see [Create and manage device tags](machine-tags.md).
+   - To use a dynamic rule, specify a set of criteria based on device name, domain, operating system platform, and/or device tags. Devices that meet the specified criteria will receive the `License MDE P1` tag.
+   - Device tags are visible in the **Device inventory** view and in the [Defender for Endpoint APIs](apis-intro.md).
 
-> [!NOTE]
-> It can take up to three hours for your changes to take effect.
+5. Save your rule and wait for up to three (3) hours for tags to be applied. 
 
 ## [**Choose one plan**](#tab/oneplan)
 
