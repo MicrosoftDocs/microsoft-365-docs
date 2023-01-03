@@ -55,7 +55,7 @@ The people card shows all the user's attributes including the profile picture wh
 To test the MTO People Search feature, it is assumed that you already have the following settings:
 
 - Two Azure AD/Microsoft 365 tenants
-- Both tenants are enabled for Private Preview of the **Cross Tenant Synchronization** feature
+- Both tenants have the **Azure AD Cross-tenant Synchronization** feature enabled (currently in private preview - make sure you sign up for both preview features)
 - Provisioned users from home to target tenants as described in [Instructions to enable Tenant-to-Tenant sync](https://github.com/ArvindHarinder1/CrossTenantSynchronization/blob/main/CrossTenantSynchronization.md)
 
 ## Use Cases
