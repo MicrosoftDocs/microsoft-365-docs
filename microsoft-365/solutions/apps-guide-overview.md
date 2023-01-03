@@ -81,41 +81,25 @@ When apps are managed in Intune, administrators can do the following:
 
 ## Understand app types
 
-The users of apps and devices at your company (your company's workforce) might have several app requirements. Before adding apps to Intune and making them available to your workforce, you may find it helpful to assess and understand a few app fundamentals. There are various types of apps that are available for Intune. You must determine app requirements that are needed by the users at your company, such as the platforms and capabilities that your workforce needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Also, you must determine the apps and capabilities that your workforce needs, and who needs them. 
-
-Intune supports a wide range of app types. The available options differ for each app type. Intune lets you # and assign the following app types:
-
-| App types | Installation | Updates |
-|---|---|---|
-| Apps from the store (store apps) | Intune installs the app on the device.  | App updates are automatic. |
-| Apps written in-house or as a custom app (line-of-business) | Intune installs the app on the device (you supply the installation file). | You must update the app. |
-| Apps that are built-in (built-in apps) | Intune installs the app on the device.  | App updates are automatic. |
-| Apps on the web (web link) | Intune creates a shortcut to the web app on the device home screen. | App updates are automatic. |
-| Apps from other Microsoft services  | Intune creates a shortcut to the app in the Company Portal. | App updates are automatic. |
+The users of apps and devices at your company (your company's workforce) might have several app requirements. Before adding apps to Intune and making them available to your workforce, you may find it helpful to assess and understand a few app fundamentals. There are various types of apps that are available for Intune. You must determine app requirements that are needed by the users at your company, such as the platforms and capabilities that your workforce needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Also, you must determine the apps and capabilities that your workforce needs, and who needs them. For more information, see [App types for managed environments](apps-type-overview.md) for an overview.
 
 ## Purchase apps
 
-Often times, before you can distribute an app to your workforce, you must either purchase the app or purchase a license to use the app. Some apps are free, however you may still need to follow the purchase process in order to distribute those apps to your workforce.
+Often times, before you can distribute an app to your workforce, you must either purchase the app or purchase a license to use the app. Some apps are free, however you may still need to follow the purchase process in order to distribute those apps to your workforce. For more information, see [Purchase apps for Intune](apps-purchase-overview.md) for an overview.
 
 ## Add apps to Intune
 
-Before you can distribute protected apps to your workforce, you must add the apps to Microsoft Intune. Intune allows you to add and distribute a wide variety of app types to your workforce.
+Before you distribute a managed app to your workforce, you first need to add the app to Intune. Once added, you can create both configuration and protection policies to support the app. When you're ready, you can assign the apps to the members of your organization. For more information, see [Add apps to Microsoft Intune Overview](apps-add-overview.md)
 
-## Learning for administrators
+## Next steps
 
-The following resources help administrators learn concepts about using MEM and Intune.
+Once you have reviewed and understand app types, app purchases, and app licenses, use the following steps to add apps to Microsoft Intune.
 
-[Simplify device management with Microsoft Intune](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/)
-Description: Learn about modern management and the Microsoft Intune and how the business management tools in Microsoft 365 can simplify management of all your devices.
-
-[Set up Microsoft Intune](/training/modules/set-up-microsoft-intune/)
-Description: Microsoft Intune, which is a part of Microsoft Intune, helps you protect the devices, apps, and data that the people at your organization use to be productive. After completing this module, you will have set up Microsoft Intune. Set up includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, granting admin permissions, and setting the MDM authority.
-
-## Guidance results
-Here's the results for your tenant for steps 1-7.
-
-## Guidance next steps
-Next, you'll want to consider adding application configuration and protection policies.
+1. [Assess app requirements](apps-add-step-1.md)
+2. [Create categories for apps](apps-add-step-2.md)
+3. [Purchase apps](apps-add-step-3.md)
+4. [Add apps to Intune](apps-add-step-4.md)
+5. [Manage apps and licenses](apps-add-step-5.md)
 
 ## Additional app resources
 

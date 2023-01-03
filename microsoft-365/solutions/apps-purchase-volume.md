@@ -28,7 +28,7 @@ Both Apple and Microsoft have methods to acquire apps for your organization in b
 - Microsoft provide the Microsoft Store for Business to purchase apps
 
 > [!NOTE]
-> The Managed Google Play store only supports free apps. Standard Google apps are added to Intune as a **Android store app**. To add a **Managed Google Play app**, you must find and approve the app from the Managed Google Play store, then sync the app with Intune.
+> The Managed Google Play store only supports free apps, however the process to add Managed Google Play apps to Intune is similiar to volume app purchases. For more information, see [Managed Google Play](apps-purchase-volume.md#managed-google-play).
 
 ## Apple Business Manager<!-- What is it? -->
 
@@ -112,3 +112,36 @@ Follow the Intune guidelines to sync Microsoft Store for Business:
 
 > [!NOTE]
 > After you add and assign a VPP app to your end users (members of your organization), they will receive a prompt to install a VPP apps. For more information, see [End-User Prompts for VPP](/mem/intune/apps/vpp-apps-ios#upload-an-apple-vpp-or-apple-business-manager-location-token).
+
+## Managed Google Play<!-- What is it? -->
+
+Managed Google Play apps are available to add to Intune from the [Managed Google Play store](https://play.google.com/work). Intune can deploy these apps specifically to Android Enterprise devices. Also, you need to have a Google administrator account to access the Managed Google Play store. 
+
+You can use Intune to deploy apps through the Managed Google Play store for any Android Enterprise scenario, including personally-owned work profile, dedicated, fully managed, and corporate-owned work profile enrollments. 
+
+There are three types of Managed Google Play apps:
+- Managed Google Play store app
+- Managed Google Play private app
+- Managed Google Play web apps
+
+### Connect Your Intune tenant to Managed Google Play
+
+Before you can browse Managed Google Play apps and add them to Intune, your Intune tenant account must be connected to your Android Enterprise account. 
+
+Be sure to use or create an Enterprise account rather than a personal GMail account. Keep in mind that the account you use should be one that is easily shared or transferred in the case that the person setting up the Managed Google Play connection leaves the company or moves teams.
+
+Additionally, confirm that your [mobile device management (MDM) authority](/mem/intune/fundamentals/mdm-authority-set) is set to Microsoft Intune. 
+
+> [!IMPORTANT]
+> Ensure that Android Enterprise is available in your country or region. For more information, see [Is Android Enterprise available in my country?](https://support.google.com/work/android/answer/6270910)
+
+For more information, see [Connect your Intune account to your Managed Google Play account](/mem/intune/enrollment/connect-intune-android-enterprise).
+
+### Set up Managed Google Play store
+
+### Approve Managed Google Play apps<!-- How to set up? -->
+
+Using your Google administrator account, you can **Approve** an app to be included in the **My Managed Apps** list within the Google Play store. This app list is then used to sync with Intune. 
+
+### Sync Managed Google Play apps with Intune<!-- What does sync mean (certs)? How to sync? -->
+

@@ -16,18 +16,18 @@ keywords:
 
 # Step 1. Assess app requirements
 
-As an IT admin, before adding apps to Intune and making them available to the members of your organization, you may find it helpful determine a few app requirements for your organization up front. You must determine app requirements such as the platforms and capabilities that your workforce needs. For instance, you must determine whether to use Intune to manage the devices (including apps) or have Intune manage just the apps without managing the devices. Intune supports both of these types of management. In addition, you should determine the apps and capabilities that your workforce should use and who needs them. This assessment step helps you consider these options.
+As an IT admin, before adding apps to Intune and making them available to the members of your organization, you may find it helpful to determine a few app requirements for your organization up front. You must determine app requirements such as the platforms and capabilities that your workforce needs. For instance, you must determine whether to use Intune to manage the devices and also the apps, or have Intune manage just the apps without managing the devices. Intune supports both of these types of management. In addition, you should determine the apps and capabilities that your workforce should use and who needs them. This step helps you assess and consider how you will provide apps to your organization.
 
-To start, first determine your organization's requirements by asking the questions presented in the below table:
+To start, first determine your organization's requirements by asking the questions presented in the table below:
 
 | Questions | Details |
 |---|---|
 | Does my organization need to use Mobile Application Management (MAM) or Mobile Device Management (MDM)? | Intune supports both MAM and MDM. MAM without device management allows just your organization's apps to be managed by Intune, without enrolling the devices to be managed by Intune. MAM with device management (known as MDM) allows your organization's apps and devices to be managed. There's advantages to each management method. For more information, see [Understanding MAM and MDM](#understanding-mam-and-mdm).  |
 | What platforms do members of my organization use? | Intune supports a number of device platforms. You should consider supporting all possible device platforms that members of your organization use to access corporate data. For more information, see [Determine the platforms needed for each app](#determine-the-platforms-needed-for-each-app). |
 | Which apps are needed to access company information and data? | Determine which apps are currently used by members of your organization and which apps need to be available or added. For more information, see [Determine the type of app for your solution](#determine-the-type-of-app-for-your-solution). |
-| Which groups of users need specific apps? | For more information, see [Determine who will use the app](#determine-who-will-use-the-app). |
-| Is there helpful configuration needed for each app? |  |
-| Does each app need access protection and data protection? |  |
+| Which groups of users need specific apps? | Intune allows you to add users to be managed. You can create groups of users to organize your devices and apps. For more information, see [Determine who will use the app](#determine-who-will-use-the-app). |
+| Is there helpful configuration needed for each app? | App configuration policies can help you eliminate app setup problems by letting you assign configuration settings to a policy that is assigned to end-users before they run the app. For more information, see [Understand configuration for apps](apps-add-overview.md#understand-configuration-for-apps). |
+| Does each app need access protection and data protection? | App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. For more information, see [Understand configuration for apps](apps-add-overview.md#understand-protection-needed-for-apps). |
 
 ## Understanding MAM and MDM
 

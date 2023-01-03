@@ -51,15 +51,8 @@ The following table lists the specific store app types and how you can add them 
 
 You can add an app in from [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Apps** > **All apps** > **Add**. The **Select app type** pane is displayed and allows you to select one of the above app types.
 
-## Managed Google Play<!-- What is it? -->
-
-
-### Approve Managed Google Play apps<!-- How to set up? -->
-
-
-### Sync Managed Google Play apps with Intune<!-- What does sync mean (certs)? How to sync? -->
-
-
+> [!NOTE]
+> The Managed Google Play store only supports free apps. Standard Google apps are added to Intune as a **Android store app**. To add a **Managed Google Play app**, you must find and approve the app from the Managed Google Play store, then sync the app with Intune. For more information, see [Managed Google Play](apps-purchase-volume.md#managed-google-play).
 
 ## Removing store limitations
 
