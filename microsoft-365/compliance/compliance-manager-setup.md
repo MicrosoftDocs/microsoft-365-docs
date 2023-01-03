@@ -346,7 +346,7 @@ To remove filters:
 
 The Compliance Manager dashboard shows your key improvement actions. To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, which brings you to your improvement actions page. You can also select **View all improvement actions** underneath the list of key improvement actions on your dashboard to get to your improvement actions page.
 
-The improvement actions page shows all of the improvement actions that are managed by your organization. Actions that are managed by Microsoft can be viewed within each assessment (learn more about [Microsoft actions](compliance-manager-assessments.md#microsoft-actions-tab)).
+The improvement actions page shows all of the improvement actions managed by your organization. Actions managed by Microsoft can be viewed within each assessment (learn more about [Microsoft actions](compliance-manager-assessments.md#microsoft-actions-tab)).
 
 If you have a long list of actions on your improvement actions page, it may be helpful to filter your view. Select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, select your criteria from the available options. You can also customize your view by selecting **Group** in the upper-right corner. From the drop-down menu, select to view by group, solution, category, action type, or status.
 
@@ -354,13 +354,13 @@ The default view for this page does not show improvement actions with a test sta
 
 The improvement actions page shows the following data points for each improvement action:
 
-- **Products**: the product being evaluated.
-- **Points achieved**: the number of points achieved out of the total available by completing the action
-- **Regulations**: the regulations or standards pertaining to the action
-- **Group**: the group to which you assigned the action
-- **Solutions**: the solution where you can go to perform the action
-- **Assessments**: the assessments that contain the action
-- **Categories**: the related data protection category (such as, protect information, manage devices, etc.)
+- **Products**: The product being evaluated.
+- **Points achieved**: The number of points achieved out of the total available by completing the action.
+- **Regulations**: The regulations or standards pertaining to the action.
+- **Group**: The group to which you assigned the action.
+- **Solutions**: The solution where you can go to perform the action.
+- **Assessments**: The number of assessments that contain the action. Select the number to see the list of related assessments; you'll see only the assessments to which you have access ([learn more](#role-based-access-to-assessments)).
+- **Categories**: The related data protection category (such as, protect information, manage devices, etc.).
 - **Test status**:
   - **None** – no status update recorded
   - **Not assessed** - testing hasn't started
@@ -368,15 +368,15 @@ The improvement actions page shows the following data points for each improvemen
   - **Failed low risk** - testing failed, low risk
   - **Failed medium risk** - testing failed, medium risk
   - **Failed high risk** - testing failed, high risk
-  - **Out of scope** – the action is not in scope for the assessment and doesn't impact your score
+  - **Out of scope** – the action isn't in scope for the assessment and doesn't impact your score
   - **To be detected** - for manual test, indicates an action has been implemented but not tested; for automated test, indicates an action is waiting for automation result
   - **Could not be detected** - automated status can't be determined
   - **Partially tested** – automated scoring that awards partial points
-- **Action type**: indicates whether the improvement action is technical, meaning it can be implemented within a solution or product, or non-technical, which would be implemented outside of a technical solution
-- **Assigned to**: the person this action has been assigned to, if applicable
-- **Testing source**: indicates whether the testing source for the action is manual, automatic, or inherited from a parent
+- **Action type**: Indicates whether the improvement action is technical, meaning it can be implemented within a solution or product, or non-technical, which would be implemented outside of a technical solution.
+- **Assigned to**: The user assigned to the action to perform work.
+- **Testing source**: Indicates whether the testing source for the action is manual, automatic, or inherited from a parent.
 
-**Learn more:** [See how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
+Learn [how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
 
 ## Solutions page
 

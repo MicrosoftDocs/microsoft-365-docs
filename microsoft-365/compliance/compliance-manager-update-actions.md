@@ -32,7 +32,7 @@ Compliance Manager enables organizations to bring their existing compliance acti
 
 This upload process also gives new and existing Compliance Manager users greater flexibility and ability to update improvement actions on a larger scale. For example, you can:
 
-- [Add test results and evidence](compliance-manager-improvement-actions.md#perform-work-and-store-documentation) to multiple improvement actions that were tested in a system other than Compliance Manager.
+- [Add test results and evidence](compliance-manager-improvement-actions.md#perform-work-and-store-evidence) to multiple improvement actions that were tested in a system other than Compliance Manager.
 - [Assign improvement actions](compliance-manager-improvement-actions.md#assign-improvement-actions) to various users based on the actions' score potential.
 - Update the [implementation status](compliance-manager-improvement-actions.md#change-implementation-details) or [testing status](compliance-manager-improvement-actions.md#change-test-status) of multiple improvement actions all at one time.
 - Change improvement actions' [testing source](compliance-manager-improvement-actions.md#update-testing-source) from automatic to manual implementation and testing.
