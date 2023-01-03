@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 12/07/2022
+ms.date: 01/03/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -131,8 +131,6 @@ After you've onboarded Windows devices to Defender for Business, you can run a d
 
 After the command runs, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about 10 minutes.
 
----
-
 ## [**Mac**](#tab/mac)
 
 ## Mac
@@ -215,8 +213,6 @@ If your business prefers to have people enroll their own devices in Intune, dire
    `mdatp health --field real_time_protection_enabled`
 
 After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
-
----
 
 ## [**Servers**](#tab/Servers)
 
@@ -303,8 +299,6 @@ You can use the following methods to onboard an instance of Linux Server to Defe
 
 > [!NOTE]
 > Onboarding an instance of Linux Server to Defender for Business is the same as onboarding to [Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md).
-
----
 
 ## [**Mobile devices**](#tab/mobiles)
 

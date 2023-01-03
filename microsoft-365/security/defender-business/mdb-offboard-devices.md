@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 01/03/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -57,8 +57,6 @@ As devices are replaced or retired, or your business needs change, you can offbo
 
 7. Run the script on each device that you want to offboard.
 
----
-
 ## [**Mac**](#tab/mac)
 
 ## Offboard a Mac
@@ -66,8 +64,6 @@ As devices are replaced or retired, or your business needs change, you can offbo
 1. Go to **Finder** > **Applications**. 
 
 2. Right click on **Microsoft Defender for Business**, and then choose **Move to Trash**. <br/>--- or --- <br/> Use the following command: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
-
----
 
 ## [**Servers**](#tab/Servers)
 
@@ -112,8 +108,6 @@ Choose the operating system for your server:
 
 > [!TIP]
 > For more information, see [Uninstall](../defender-endpoint/linux-resources.md) in the Microsoft Defender for Endpoint on Linux guidance.
-
----
 
 ## [**Mobile devices**](#tab/mobiles)
 
