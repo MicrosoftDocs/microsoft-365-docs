@@ -59,7 +59,7 @@ As devices are replaced or retired, or your business needs change, you can offbo
 
 ## [**Mac**](#tab/mac)
 
-## Offboard a Mac
+## Mac
 
 1. Go to **Finder** > **Applications**. 
 
