@@ -281,7 +281,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance Manager
 
-- [Compliance Manager templates list](compliance-manager-templates-list.md) - added new premium template in the Asia-Pacific countries category for "Hong Kong - Code of Banking Practice and Payment Card".
+- [Compliance Manager templates list](compliance-manager-templates-list.md) - added new premium template in the Asia-Pacific country/region category for "Hong Kong - Code of Banking Practice and Payment Card".
 
 ### Compliance offerings & service assurance
 
