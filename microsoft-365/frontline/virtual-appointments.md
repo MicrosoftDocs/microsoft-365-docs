@@ -22,7 +22,7 @@ f1.keywords:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/05/2022
+ms.date: 12/21/2022
 ---
 
 # Virtual Appointments with Microsoft Teams
@@ -39,6 +39,7 @@ This article gives you an overview of the capabilities available in Teams for sc
 - [The Virtual Appointments app](#the-virtual-appointments-app), for every organization
 - [The Bookings app](#the-bookings-app), for every organization
 - [The Teams Electronic Health Record (EHR) connector](#teams-electronic-health-record-ehr-connector), for healthcare organizations who use an EHR system
+- [Virtual appointment meeting template](#virtual-appointment-meeting-template), for every organization
 - [Virtual Appointment Graph API](#virtual-appointment-graph-api), for developers in your organization
 
 ## The Virtual Appointments app
@@ -82,6 +83,14 @@ Currently, the Teams EHR connector supports integration with the Cerner EHR syst
 
 - [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
 - [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
+
+## Virtual appointment meeting template
+
+The Virtual appointment template is a default meeting template in Teams that your users can use to schedule virtual appointments with customers, clients and other people outside your organization. The template allows you to specify values for meeting settings that meeting organizers typically control. Use it to apply default settings and enforce settings.
+
+With this template, you can enable a consistent experience across your organization for virtual appointments scheduled directly within Teams and help enforce compliance requirements. 
+
+To learn more, see [Virtual appointment meeting template in Teams](/microsoftteams/virtual-appointment-meeting-template).
 
 ## Virtual Appointment Graph API
 
