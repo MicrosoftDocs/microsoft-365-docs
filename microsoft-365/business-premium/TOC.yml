@@ -118,7 +118,7 @@
       href: m365bp-reset-devices-to-factory-settings.md
 - name: Reference
   items:
-    - name: Top 10 ways to secure a business
+    - name: Top 10 ways to secure your business data
       href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Glossary of security terms
       href: m365bp-glossary.yml
