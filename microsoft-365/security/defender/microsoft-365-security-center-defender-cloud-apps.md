@@ -83,7 +83,7 @@ The images and the tables below list the changes in navigation between Microsoft
 
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
-| Policies | Cloud apps -> Policy management. Note: Azure AD identity protection policies will be removed gradually from the Cloud apps policies list. To configure alerts from these policies, see [Configure AAD IP alert service](investigate-alerts.md#configure-aad-ip-alert-service) | 
+| Policies | Cloud apps -> Policy management. Note: Azure AD identity protection policies will be removed gradually from the Cloud apps policies list. To configure alerts from these policies, see [Configure AAD IP alert service](investigate-alerts.md#configure-aad-ip-alert-service) |
 | Templates | Cloud apps -> Policy templates |
 
 ### Settings
@@ -136,6 +136,9 @@ As part of the creation of a dedicated **Assets** section that spans the entire 
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
+> [!NOTE]
+> This feature is now available in public preview.
+
 1. In the navigation pane, select **Settings**.
 1. Select **Cloud apps**.
 1. Select **Preview features** > **Enable preview features**.
@@ -144,6 +147,8 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 You'll know you have preview features turned on when you see that the **Enable preview features** check box is selected.
 
 :::image type="content" source="../../media/preview-features.png" alt-text="Enable preview features.":::
+
+For more information, see [Microsoft Defender for Cloud Apps preview features](/defender-cloud-apps/preview-features).
 
 ## Related videos
 
