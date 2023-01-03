@@ -47,6 +47,8 @@ Here's a quick overview of the process.
 
 3. Microsoft Purview automatically adds more storage space when necessary.
 
+For information what happens when the maximum 1.5 TB is reached, and other size-related limitations for email storage, see [Important considerations and limitations for auto-expanding archiving](#important-considerations-and-limitations-for-auto-expanding-archiving) on this page.
+
 ## What gets moved to the additional archive storage space?
 
 To make efficient use of auto-expanding archive storage, folders may get moved. Microsoft Purview determines which folders get moved when additional storage is added to the archive. Sometimes when a folder is moved, one or more subfolders are automatically created and items from the original folder are distributed to these folders to facilitate the moving process. You might need to communicate this behavior to end users after enabling their mailbox for auto-expanding archives, to help set expectations.
