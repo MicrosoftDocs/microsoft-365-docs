@@ -39,7 +39,7 @@ With browser join, when an attendee joins an appointment, they aren't prompted t
 
 Currently, browser join is available for appointments that are scheduled through the following:
 
-- [The Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
+- [SMC??? The Virtual Appointments app]()
 - [The Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
 - Microsoft Teams Electronic Health Record (EHR) connector
 
@@ -134,4 +134,5 @@ If you've configured any of these features in your organization, attendees won't
 ## Related articles
 
 - [Virtual Appointments with Teams](virtual-appointments.md)
+- [Use the Virtual Appointments app in Teams](virtual-appointments-app.md)
 - [Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)
