@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 12/07/2022
+ms.date: 01/04/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -69,7 +69,7 @@ When tamper protection is turned on and you use Group Policy to make changes to 
 
 ## If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
 
-You have flexibility in configuring tamper protection with Intune. You can target your entire organization, or select specific devices and user groups.
+If you're using Intune to configure and manage tamper protection, you can target your entire organization, or select specific devices and user groups.
 
 ## Can I configure tamper protection with Microsoft Endpoint Configuration Manager?
 
@@ -80,7 +80,7 @@ If you're using tenant attach, you can use Microsoft Endpoint Configuration Mana
 
 ## I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
 
-Currently, configuring tamper protection in Intune is only available for customers who have [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint).
+Currently, configuring tamper protection in Intune is only available for customers whose subscriptions include [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint).
 
 ## I'm an enterprise customer. Can local admins change tamper protection on their devices?
 
