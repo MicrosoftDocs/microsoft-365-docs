@@ -2,6 +2,17 @@
 
 
 
+## Week of December 26, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/28/2022 | [Working with improvement actions in Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager-improvement-actions?view=o365-worldwide) | modified |
+| 12/28/2022 | [Get started with Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager-setup?view=o365-worldwide) | modified |
+| 12/28/2022 | [Deploy and manage Removable Storage Access Control using Intune](/microsoft-365/security/defender-endpoint/deploy-manage-removable-storage-intune?view=o365-worldwide) | modified |
+| 12/29/2022 | [Manage submissions](/microsoft-365/security/office-365-security/submissions-admin?view=o365-worldwide) | modified |
+
+
 ## Week of December 19, 2022
 
 

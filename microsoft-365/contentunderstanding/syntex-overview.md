@@ -109,8 +109,6 @@ This feature is useful when you have a specific piece of information you want to
 
 For more information, see [Search for metadata in document libraries in Microsoft Syntex](metadata-search.md).
 
---->
-
 ## Content compliance
 
 :::row:::
