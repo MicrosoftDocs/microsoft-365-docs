@@ -202,7 +202,7 @@ Follow the instructions for [Onboarding blob](#onboarding-blob) from above, usin
 
 Download [**background_services.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/background_services.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "Defender for Endpoint Notifications" as profile name, and downloaded **notif.mobileconfig** as Configuration profile name.
+Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "Defender for Background Services" as profile name, and downloaded **background_services.mobileconfig** as Configuration profile name.
 
 ### View Status
 
