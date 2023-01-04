@@ -112,7 +112,8 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 
 If you're using Windows Server 2012 R2 using the modern unified solution, Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
 
-On Windows Server 2016, the Settings app won't accurately reflect the status of real-time protection when tamper protection is enabled.
+> [!IMPORTANT]
+> On Windows Server 2016, the Settings app won't accurately reflect the status of real-time protection when tamper protection is enabled.
 
 ### Use PowerShell to determine whether tamper protection and real-time protection are turned on
 
