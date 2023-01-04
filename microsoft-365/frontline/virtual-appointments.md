@@ -81,8 +81,8 @@ After you set up the Teams EHR connector, clinicians can launch visits with pati
 
 Currently, the Teams EHR connector supports integration with the Cerner EHR system and Epic EHR system. To learn more, see:
 
-- [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
-- [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
+- [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
+- [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
 
 ## Virtual appointment meeting template
 
