@@ -84,6 +84,6 @@ This query looks for emails which have been overridden by sending address withou
 ## Learn More
 Hopefully you found this useful, with some basic queries to get you started with advanced hunting, to learn more check out the below articles
 
-Learn more about advanced hunting: [Overview - Advanced hunting | Microsoft Docs](https://learn.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)
+Learn more about advanced hunting: [Overview - Advanced hunting | Microsoft Docs](microsoft-365/security/defender/advanced-hunting-overview)
 
-Learn more about authentication: [Email Authentication in Exchange Online Protection](https://learn.microsoft.com/microsoft-365/security/office-365-security/email-authentication-about)
+Learn more about authentication: [Email Authentication in Exchange Online Protection](/microsoft-365/security/office-365-security/email-authentication-about)
