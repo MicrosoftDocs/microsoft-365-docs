@@ -46,7 +46,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - Updated table for [built-in trainable and global classifiers](/microsoft-365/compliance/communication-compliance-policies) to increase visibility for details specific to pre-trained classifiers. Includes updated word count requirements for messages in English and non-English languages.
 
 ### Compliance Manager
-- Assessment templates that belong to the same regulation family now count as one template. The [definition of **included templates**](compliance-manager-templates-list#included-templates) has been updated to align with [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
+- Assessment templates that belong to the same regulation family now count as one template. The [definition of **included templates**](compliance-manager-templates-list.md#included-templates) has been updated to align with [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
 - Improvement actions now provide greater visibility into related controls and assessments. Improvement action details pages have a new [**Related controls** tab](compliance-manager-improvement-actions.md#related-controls), and the **Summary** section has a clickable **Assessments** number that, when selected, lists all the assessments related to that action.
 
 ### Data lifecycle management and records management
@@ -56,9 +56,9 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - [Examples of file paths](/microsoft-365/compliance/insider-risk-management-settings) to denote specific and wildcard folders and sub-folders to be excluded.
 
 ### Microsoft Priva
-- [Tags for reviewing data in a subject rights request](/privacy/priva/subject-rights-requests-data-review#apply-tags) provide greater flexibility. There are now two default tags and 21 custom tags that can be named and defined by an organization. Tags can now be applied to, or removed from, mutlipe items at once.
+- [Tags for reviewing data in a subject rights request](/privacy/priva/subject-rights-requests-data-review#apply-tags) provide greater flexibility. There are now two default tags and 21 custom tags that can be named and defined by an organization. Tags can now be applied to, or removed from, mutlipe content items at once.
 - The maximum file size for [file import during data review](/privacy/priva/subject-rights-requests-data-review#import-additional-files) for a subject rights request has increased to 500 MB.
-- Instructions for working with the [action execution log report](/privacy/priva/subject-rights-requests-delete#action-execution-log-report) for a delete request have been updated; including a clarification that its retention period is the same as all other reports for a subject rights request.
+- Instructions for working with the [action execution log report](/privacy/priva/subject-rights-requests-delete#action-execution-log-report) for a delete request have been updated; including a clarification that its retention period is the same as all other subject rights request reports.
 
 ### Sensitivity labels
 - **General availability (GA)**: S/MIME support for Windows is now available in the Office Current Channel, providing parity with the AIP add-in. For more information, see [Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
