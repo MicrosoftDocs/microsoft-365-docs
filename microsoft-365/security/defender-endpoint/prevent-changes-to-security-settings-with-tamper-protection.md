@@ -67,7 +67,7 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 > If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
 
 
-### How it works
+### How tamper protection works
 
 Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values, and prevents your security settings from being changed through apps and methods such as:
 
