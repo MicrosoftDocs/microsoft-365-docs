@@ -23,7 +23,7 @@ description: "Configure sensitivity labels to protect calendar items, and Teams 
 > [!NOTE]
 > This feature is currently rolling out in preview and subject to change.
 > 
-> You won't be able to configure all the options referenced on this page if your tenant doesn't have a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience). for those settings, you'll see an information bar in the Microsoft Purview compliance portal that your org must have a Teams Premium license. For more information about this new premium add-on for Teams, see the [blog post announcement](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-teams-premium-the-better-way-to-meet) and the official [Teams Premium site](https://www.microsoft.com/microsoft-teams/premium).
+> You won't be able to configure all the options referenced on this page if your tenant doesn't have a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience). For those settings, you'll see an information bar in the Microsoft Purview compliance portal that your org must have a Teams Premium license. For more information about this new premium add-on for Teams, see the [blog post announcement](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-teams-premium-the-better-way-to-meet) and the official [Teams Premium site](https://www.microsoft.com/microsoft-teams/premium).
 
 In addition to using [sensitivity labels](sensitivity-labels.md) to protect documents and emails, you can extend sensitivity labels to protect meeting invites and responses that use Outlook and Teams, and to protect Teams meetings and chat:
 
