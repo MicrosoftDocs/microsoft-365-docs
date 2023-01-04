@@ -80,25 +80,33 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 |To perform this task...|See this section...|
 |---|---|
-|Manage tamper protection across your tenant <p> Use the Microsoft 365 Defender portal to turn tamper protection on or off|[Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)|
-|Fine-tune tamper protection settings in your organization <p> Use Microsoft Intune to turn tamper protection on or off. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Intune](manage-tamper-protection-microsoft-endpoint-manager.md)|
+|Manage tamper protection across your tenant <br/><br/> Use the Microsoft 365 Defender portal to turn tamper protection on or off|[Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)|
+|Fine-tune tamper protection settings in your organization <br/><br/> Use Microsoft Intune to turn tamper protection on or off. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Intune](manage-tamper-protection-microsoft-endpoint-manager.md)|
 |Turn tamper protection on (or off) for your organization by using Configuration Manager|[Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
 |Turn tamper protection on (or off) for an individual device (for home users or devices that are not managed by a security team)|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
 |View details about tampering attempts on devices|[View information about tampering attempts in Microsoft 365 Defender](#view-information-about-tampering-attempts)|
 |Review your security recommendations |[Review security recommendations](#review-your-security-recommendations)|
 |Review the list of frequently asked questions (FAQs)|[Browse the FAQs](faqs-tamper-protection.md)|
 
-## Potential dependency on cloud protection  
+## Tamper protection and cloud protection  
   
-Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS).
+Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS). The following table summarizes whether there's a dependency on cloud protection.
 
-The following table provides details on the methods, tools, and dependencies.
-
-| How tamper protection is enabled | Dependency on cloud protection |
+| How tamper protection is enabled | Dependency on cloud protection? |
 |---|---|
 |Microsoft Intune|No|
 |Microsoft Endpoint Configuration Manager with Tenant Attach|No|
 |Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))|Yes|
+
+## What about exclusions?
+
+If your organization has [exclusions defined for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md), you can protect those exclusions provided all of the following conditions are met:
+
+- [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp) is enabled.
+- [Microsoft Defender Antivirus exclusions](/mem/intune/protect/antivirus-microsoft-defender-settings-windows) are managed in Microsoft Intune.
+- [Tamper protection is deployed and managed by using Intune](manage-tamper-protection-microsoft-endpoint-manager.md).
+
+[Learn more about exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
 ## Are you using Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809?
 
