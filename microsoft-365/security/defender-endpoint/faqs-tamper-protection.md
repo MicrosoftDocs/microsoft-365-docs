@@ -35,7 +35,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-## On which versions of Windows can I configure 'tamper protection'?
+## On which versions of Windows can I configure tamper protection?
 
 - Windows 11
 - Windows 11 Enterprise multi-session
@@ -54,18 +54,17 @@ Devices that are onboarded to Microsoft Defender for Endpoint will have Microsof
 
 ## How do I turn tamper protection on or off?
 
-If you're a home user, see [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md).
-
-If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), you should be able to manage 'tamper protection' in Intune similar to how you manage other endpoint protection features. See the following sections of this article:
+If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), you should be able to manage tamper protection in Intune similar to how you manage other endpoint protection features. See the following sections of this article:
 
 - [Manage tamper protection using Microsoft Endpoint Manager](manage-tamper-protection-microsoft-endpoint-manager.md)
 - [Manage tamper protection using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)
 
+If you're a home user, see [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md).
+
+
 ## How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus with Group Policy?
 
-If you're currently using Intune to configure and manage tamper protection, you should continue using Intune. 
-
-When tamper protection is turned on and you use Group Policy to make changes to Microsoft Defender Antivirus settings, the settings that are tamper protected will be ignored. 
+If you're currently using Intune to configure and manage tamper protection, you should continue using Intune. When tamper protection is turned on and you use Group Policy to make changes to Microsoft Defender Antivirus settings, any settings that are protected by tamper protection will be ignored. 
 
 ## If we use Microsoft Intune to configure tamper protection, does it apply only to the entire organization?
 
