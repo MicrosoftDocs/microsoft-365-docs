@@ -38,7 +38,7 @@ Communication compliance's mission is to foster safe and compliant communication
 Communication compliance uses machine learning models and keyword matching to identify messages containing potential business conduct or regulatory policy violations that are then reviewed by an investigator. Communication compliance cultivates user privacy with pseudonymization and responsible use of the product by providing role-based access controls.
 
 > [!IMPORTANT]
-> Microsoft is committed to making sure artificial intelligence (AI) systems are developed responsibly and in ways that warrant people's trust. As part of this commitment, Microsoft Purview engineering teams are operationalizing the six core principles of [Microsoft's Responsible AI](https://www.microsoft.com/ai/our-approach) strategy to design, build, and manage AI solutions. As part of our effort to responsibly deploy AI, we provide documentation, role-based access, scenario attestation, and more to help organizations use AI systems responsibly.
+> Microsoft is committed to making sure artificial intelligence (AI) systems are developed responsibly and in ways that warrant people's trust. As part of this commitment, Microsoft Purview engineering teams are operationalizing the six core principles of [Microsoft's Responsible AI](https://www.microsoft.com/ai/our-approach) strategy to design, build, and manage AI solutions. As part of our effort to responsibly deploy AI, we provide documentation, role-based access, scenario attestation, and more to help organizations use AI systems responsibly.
 
 Users are given [permissions](/microsoft-365/compliance/communication-compliance-plan#configure-permissions) that allow them to perform the tasks in their role, such as:  
 
@@ -61,26 +61,26 @@ Communication compliance considers many metrics to holistically evaluate system 
 
 Operational factors and settings allow for effective and responsible use of the system. These are detailed in the table below.
 
-|**Operational factor**|**Benefits**|
-|:---------------------|:-----------|
-| Role-based access control |- No individual has too much power to influence usage of communication compliance in the organization: <br> - Investigators can only view policies they have permission to view <br> - Administrators can only create/edit policies <br> - Communication compliance role has the most widespread permissions to view and edit policies. |
-| Using multiple conditions in a policy |The value from machine learning classifiers can be fine-tuned with other capabilities such as key phrase matching, detection of sensitive information, or scoping to specific domains. |
-| End user reporting of inappropriate content in Teams |Message recipients can report messages they find inappropriate or deem a data security incident as a proactive approach to identifying communication risks. |
-| Keyword highlighting of messages caught by built-in classifiers |Investigators gain clarity on which key phrases trigger which classifiers. |
-| Pseudonymization |Sender/recipient aliases are pseudonymized to minimize investigation bias. |
-| Users choose which communication channels to detect for patterns in |Users can choose which channels, such as Microsoft Teams, Exchange, Yammer, or third-party sources, to identify and detect content patterns. |
-| Feedback loop to report misclassified items |Items misclassified by machine learning classifiers can be reported to Microsoft to improve future performance of classifiers. User privacy is honored as per the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). |
+|Operational factor|Benefits|
+|---|---|
+|Role-based access control|- No individual has too much power to influence usage of communication compliance in the organization: <br> - Investigators can only view policies they have permission to view <br> - Administrators can only create/edit policies <br> - Communication compliance role has the most widespread permissions to view and edit policies.|
+|Using multiple conditions in a policy|The value from machine learning classifiers can be fine-tuned with other capabilities such as key phrase matching, detection of sensitive information, or scoping to specific domains.|
+|End user reporting of inappropriate content in Teams|Message recipients can report messages they find inappropriate or deem a data security incident as a proactive approach to identifying communication risks.|
+|Keyword highlighting of messages caught by built-in classifiers|Investigators gain clarity on which key phrases trigger which classifiers.|
+|Pseudonymization|Sender/recipient aliases are pseudonymized to minimize investigation bias.|
+|Users choose which communication channels to detect for patterns in|Users can choose which channels, such as Microsoft Teams, Exchange, Yammer, or third-party sources, to identify and detect content patterns.|
+|Feedback loop to report misclassified items|Items misclassified by machine learning classifiers can be reported to Microsoft to improve future performance of classifiers. User privacy is honored as per the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).|
 
 ## Limitations of communication compliance
 
 There are limitations to any artificial intelligence solution. Users of communication compliance can minimize the impact of the limitations when using the system.  These limitations are detailed in the table below.
 
-|**Limitations**|**Impacted users**|**Ways to minimize impact**|
-|:--------------|:-----------------|:--------------------------|
-| False positive messages |Message senders| - Communications compliance uses a feedback loop to report misclassified items to continually improve classifier performance. <br> - Human reviewers must view message before action is taken. |
-| False negative messages|Admins and message recipients |Machine learning classifiers can be combined with multiple conditions such as key phrase matching or user scoping to satisfy unique organizational needs. |
-| Limited support for evasive typing and other adversarial inputs |Message recipients |Basic evasive typing coverage is provided to address swapping letters with numbers with improvements to come in future releases. |
-| Not all languages covered |Message recipients |12 languages supported today corresponding to highest usage regions. |
+|Limitations|Impacted users|Ways to minimize impact|
+|---|---|---|
+|False positive messages|Message senders|- Communications compliance uses a feedback loop to report misclassified items to continually improve classifier performance. <br> - Human reviewers must view message before action is taken.|
+|False negative messages|Admins and message recipients|Machine learning classifiers can be combined with multiple conditions such as key phrase matching or user scoping to satisfy unique organizational needs.|
+|Limited support for evasive typing and other adversarial inputs|Message recipients|Basic evasive typing coverage is provided to address swapping letters with numbers with improvements to come in future releases.|
+|Not all languages covered|Message recipients|12 languages supported today corresponding to highest usage regions.|
 
 ## Configure communication compliance
 

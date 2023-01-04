@@ -55,7 +55,7 @@ For more information, see [Email security with Explorer](email-security-in-micro
 ## Differences between Explorer and Real-time detections
 
 - *Real-time detections* is a reporting tool available in Defender for Office 365 Plan 1. *Threat Explorer* is a threat hunting and remediation tool available in Defender for Office 365 Plan 2.
-- The Real-time detections report allows you to view detections in real time. Threat Explorer does this as well, but it provides additional details for a given attack, such as highlighting attack campaigns, and gives security operations teams the ability to remediate threats (including triggering an [Automated Investigation and Response investigation](automated-investigation-response-office.md).
+- The Real-time detections report allows you to view detections in real time. Threat Explorer does this as well, but it provides additional details for a given attack, such as highlighting attack campaigns, and gives security operations teams the ability to remediate threats (including triggering an [Automated Investigation and Response investigation](air-about-office.md).
 - An *All email* view is available in Threat Explorer, but not included in the Real-time detections report.
 - Rich filtering capabilities and remediation actions are included in Threat Explorer. For more information, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
@@ -165,7 +165,7 @@ To view and use Explorer *or* Real-time detections, you need the following permi
 
 To learn more about roles and permissions, see the following articles:
 
-- [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
+- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
 - [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 
 ## More information
@@ -174,4 +174,4 @@ To learn more about roles and permissions, see the following articles:
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
-- [Automated investigation and response in Microsoft Threat Protection](automated-investigation-response-office.md)
+- [Automated investigation and response in Microsoft Threat Protection](air-about-office.md)

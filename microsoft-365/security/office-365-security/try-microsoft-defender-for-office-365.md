@@ -63,7 +63,7 @@ The protection features of EOP and Defender for Office 365 are implemented using
 
 Your eligibility for an evaluation or trial means you already have EOP. **No new or special EOP policies are created for your evaluation or trial of Defender for Office 365 Plan 2**. Existing EOP policies in your Microsoft 365 organization are able to act on messages (for example, send messages to the Junk Email folder or to quarantine):
 
-- [Anti-malware policies](anti-malware-protection.md)
+- [Anti-malware policies](anti-malware-protection-about.md)
 - [Inbound anti-spam protection](anti-spam-protection-about.md)
 - [Anti-spoofing protection in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings)
 
@@ -85,7 +85,7 @@ Do you want your Defender for Office 365 experience to be active or passive? The
 
 A key factor in audit mode vs. blocking mode is how email is delivered to your Microsoft 365 organization:
 
-- Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](exchange-online-protection-overview.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+- Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](eop-about.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
   ![Mail flows from the internet into Microsoft 365, with protection from EOP and/or Defender for Office 365 Plan 1.](../../media/mdo-trial-mail-flow.png)
 
@@ -140,7 +140,7 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
    - **Select users**: If you select this option, you need to select the internal recipients that the evaluation applies to:
      - **Users**: The specified mailboxes, mail users, or mail contacts.
      - **Groups**:
-       - Members of the specified distribution groups or mail-enabled security groups.
+       - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
        - The specified Microsoft 365 Groups.
        - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
@@ -184,7 +184,7 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
             [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) is automatically configured on the connector that you specify.
 
-            When a third-party service or device sits in front of email flowing into Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md).
+            When a third-party service or device sits in front of email flowing into Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-phishing-protection-spoofing-about.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer-about.md) and [Automated Investigation & Response (AIR)](air-about-office.md).
 
           - **List each gateway IP address your messages pass through**: This setting is available only if you selected **Other** for **Select a third party service provider**. Enter a comma-separated list of the IP addresses that are used by the third-party protection service or device to send mail into Microsoft 365.
 
@@ -196,7 +196,7 @@ Remember, when you evaluate Defender for Office 365 in audit mode, special evalu
 
           As explained in the previous step, Enhanced Filtering for Connectors is automatically configured on the connector that you specify as the source of mail from the protection service.
 
-          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-spoofing-protection.md), and could impact the delivery of those newly detected messages (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
+          Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-phishing-protection-spoofing-about.md), and could impact the delivery of those newly detected messages (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in audit mode.
 
           To create an SCL=-1 mail flow rule or to review your existing rules, click the **Go to Exchange admin center** button on the page. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
@@ -225,7 +225,7 @@ Remember, when you try Defender for Office 365 in blocking mode, the Standard pr
    - **Select users**: If you select this option, you need to select the internal recipients that the trial applies to:
      - **Users**: The specified mailboxes, mail users, or mail contacts.
      - **Groups**:
-       - Members of the specified distribution groups or mail-enabled security groups.
+       - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups are not supported).
        - The specified Microsoft 365 Groups.
      - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
@@ -319,7 +319,7 @@ In **blocking mode**, the following reports show detections by Defender for Offi
 
   - [View data by Content \> Malware](reports-email-security.md#view-data-by-content--malware)
 
-    Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) appear in **MDO detonation**.
+    Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md) appear in **MDO detonation**.
 
   - The [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report)
 
@@ -336,7 +336,7 @@ In **audit mode**, the following reports show detections by Defender for Office 
   - [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
   - [View data by Email \> Spam and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--spam-and-chart-breakdown-by-detection-technology)
 
-- [Threat Explorer](threat-explorer.md) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
+- [Threat Explorer](threat-explorer-about.md) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation show the following banner in the details of the entry:
 
   ![Notification banner in message details that the Defender for Office 365 evaluation detected a malicious email message.](../../media/evalv2-detection-banner.png)
 
@@ -362,7 +362,7 @@ The following permissions are required in **Azure AD** to set up an evaluation o
 - **Create, modify or delete an evaluation or trial**: Security Administrator or Global Administrator.
 - **View evaluation policies and reports in audit mode**: Security Administrator or Security Reader.
 
-For more information about Azure AD permissions in the Microsoft 365 Defender portal, see [Azure AD roles in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
+For more information about Azure AD permissions in the Microsoft 365 Defender portal, see [Azure AD roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
 
 ## Frequently asked questions
 

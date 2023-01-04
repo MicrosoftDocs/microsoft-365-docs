@@ -57,7 +57,7 @@ If your organization has a security response team, now is the time to begin inte
 
 If your organization has purchased Microsoft Defender for Office 365 Plan 2, they should begin familiarizing themselves with and using features such as Threat Explorer, Advanced Hunting, and Incidents. For relevant trainings, see <https://aka.ms/mdoninja>.
 
-If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phising-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phishing-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
 ### SIEM/SOAR
 
@@ -72,7 +72,7 @@ If your organization does not have a security response team or existing process 
 
 ### RBAC roles
 
-Permissions in Defender for Office 365 is based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). These are the important points to keep in mind:
+Permissions in Defender for Office 365 is based on role-based access control (RBAC) and is explained in Permissions in the [Microsoft 365 Defender portal](mdo-portal-permissions.md). These are the important points to keep in mind:
 
 - Azure AD roles give permissions to **all** workloads in Microsoft 365. For example, if you add a user to the Security Administrator in the Azure portal, they have Security Administrator permissions everywhere.
 - Email & collaboration roles in the Microsoft 365 Defender portal give permissions to the Microsoft 365 Defender Portal and the Microsoft Purview compliance portal. For example, if you add a user to Security Administrator in the Microsoft 365 Defender portal, they have Security Administrator access **only** in the Microsoft 365 Defender Portal and the Microsoft Purview compliance portal.
@@ -216,6 +216,6 @@ Congratulations! You have completed your [migration to Microsoft Defender for Of
 
 Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
 
-- Review user reported messages, especially [user-reported phishing messages](automated-investigation-response-office.md)
+- Review user reported messages, especially [user-reported phishing messages](air-about-office.md)
 - Review overrides in the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 - Use [Advanced Hunting](/microsoft-365/security/defender/advanced-hunting-example) queries to look for tuning opportunities and risky messages.

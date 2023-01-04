@@ -26,7 +26,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -127,12 +127,12 @@ For more information about the default sending limits in the service, see [Sendi
 
 ### EOP anti-malware policy settings
 
-To create and configure anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+To create and configure anti-malware policies, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Protection settings**|||||
-|**Enable the common attachments filter** <br><br> _EnableFileFilter_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|This setting quarantines messages that contain attachments based on file type, regardless of the attachment content. For the list of file types, see [Anti-malware policies](anti-malware-protection.md#anti-malware-policies).|
+|**Enable the common attachments filter** <br><br> _EnableFileFilter_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|This setting quarantines messages that contain attachments based on file type, regardless of the attachment content. For the list of file types, see [Anti-malware policies](anti-malware-protection-about.md#anti-malware-policies).|
 |Common attachment filter notifications (**When these file types are found**) <br><br> _FileTypeAction_|**Reject the messages with a non-delivery receipt (NDR)** <br><br> `Reject`|**Reject the messages with a non-delivery receipt (NDR)** <br><br> `Reject`|**Reject the messages with a non-delivery receipt (NDR)** <br><br> `Reject`||
 |**Enable zero-hour auto purge for malware** <br><br> _ZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Quarantine policy**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|When you create a new anti-malware policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as malware (AdminOnlyAccessPolicy with no quarantine notifications). <br><br> Standard and Strict preset security policies use the default quarantine policy (AdminOnlyAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Admins can create and select custom quarantine policies that define more capabilities for users in the default or custom anti-malware policies. For more information, see [Quarantine policies](quarantine-policies.md).|

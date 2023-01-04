@@ -29,7 +29,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
@@ -60,7 +60,7 @@ The anti-spam settings in EOP are made of the following technologies:
 
 - **Outbound spam filtering**: EOP also checks to make sure that your users don't send spam, either in outbound message content or by exceeding outbound message limits. For more information, see [Configure outbound spam filtering in Microsoft 365](outbound-spam-policies-configure.md).
 
-- **Spoof intelligence**: For more information, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
+- **Spoof intelligence**: For more information, see [Anti-spoofing protection in EOP](anti-phishing-protection-spoofing-about.md).
 
 ## Manage errors in spam filtering
 

@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 # Zero-hour auto purge (ZAP) in Exchange Online
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -55,7 +55,7 @@ Watch this short video to learn how ZAP in Microsoft Defender for Office 365 aut
 
 For **read or unread messages** that are found to contain malware after delivery, ZAP quarantines the message that contains the malware attachment. By default, only admins can view and manage quarantined malware messages. But, admins can create and use _quarantine policies_ to define what users are allowed to do to messages that were quarantined as malware. For more information, see [Quarantine policies](quarantine-policies.md).
 
-ZAP for malware is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+ZAP for malware is enabled by default in anti-malware policies. For more information, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 ### Zero-hour auto purge (ZAP) for phishing
 
@@ -100,7 +100,7 @@ ZAP will not quarantine any message that's in the process of [Dynamic Delivery](
 To determine if ZAP moved your message, you have the following options:
 
 - **Number of messages**: Use the [Mailflow view in the Mailflow status report](reports-email-security.md#mailflow-view-for-the-mailflow-status-report) to see the number of ZAP-affected messages for the specified date range.
-- **Message details**: Use [Threat Explorer (and real-time detections)](threat-explorer.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
+- **Message details**: Use [Threat Explorer (and real-time detections)](threat-explorer-about.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
 
 > [!NOTE]
 > ZAP is not logged in the Exchange mailbox audit logs as a system action.

@@ -80,6 +80,12 @@ You may want to add a person to your staff list in Bookings without making them 
     ```powershell
     Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
     ```
+    
+    By default, the mailbox gets automatically mapped to Outlook. If you do not want the booking mailbox to appear in the user's Outlook, assign full access with the following commands:
+    
+     ```powershell 
+    Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false -AutoMapping:$false
+    ```
 
 3. And then run this command to assign send-as permissions.
 
@@ -94,7 +100,12 @@ Here's an example PowerShell command to add Allie Bellew to the Contoso daycare 
     ```powershell
     Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
     ```
-
+     By default, the mailbox gets automatically mapped to Outlook. If you do not want the booking mailbox to appear in the user's Outlook, assign full access with the following commands:
+     
+      ```powershell
+    Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -AutoMapping:$false -InheritanceType All
+    ```
+     
 2. Then run this command:
 
     ```powershell

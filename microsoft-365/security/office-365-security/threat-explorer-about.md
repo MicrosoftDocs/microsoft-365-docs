@@ -501,7 +501,7 @@ The report refreshes to show data about email messages that people in your organ
 > [!NOTE]
 > Automated investigation and response capabilities are available in *Microsoft Defender for Office 365 Plan 2* and *Office 365 E5*.
 
-[Automated investigation and response](automated-investigation-response-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+[Automated investigation and response](air-about-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 ## More ways to use Explorer and Real-time detections
 
@@ -538,7 +538,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
+- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## Differences between Threat Explorer and Real-time detections

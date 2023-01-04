@@ -30,13 +30,13 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.
 
-Anti-malware policies automatically quarantine a message if _any_ attachment is found to contain malware. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+Anti-malware policies automatically quarantine a message if _any_ attachment is found to contain malware. For more information, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 By default, anti-spam policies quarantine phishing and high confidence phishing messages, and deliver spam, high confidence spam, and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam, high confidence spam, and bulk-email messages. For more information, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 

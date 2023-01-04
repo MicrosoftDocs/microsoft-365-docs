@@ -73,7 +73,7 @@ The affects of priority account protection are visible in the following features
 
 - [Alerts](alerts.md)
 - [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
-- [Threat Explorer and real-time detections](threat-explorer.md)
+- [Threat Explorer and real-time detections](threat-explorer-about.md)
 - [Compromised user report](reports-email-security.md#compromised-users-report)
 - [Email entity page](mdo-email-entity-page.md)
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
@@ -81,7 +81,7 @@ The affects of priority account protection are visible in the following features
 - [Attack simulation](attack-simulation-training-simulations.md#target-users)
 - [Campaign Views](campaigns.md)
 - [Admin submissions and user reported messages](submissions-admin.md)
-- [Quarantine](quarantine.md)
+- [Quarantine](quarantine-about.md)
 
 ### Threat protection status report
 

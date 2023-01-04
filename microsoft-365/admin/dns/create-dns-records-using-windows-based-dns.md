@@ -2,8 +2,8 @@
 title: "Create DNS records for Microsoft using Windows-based DNS"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
 audience: Admin
 ms.topic: article

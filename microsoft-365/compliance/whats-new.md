@@ -38,7 +38,33 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## December 2022
+
+### Communication compliance
+- New [transparency note](/microsoft-365/compliance/communication-compliance-solution-overview) to convey the purpose and intended uses of machine learning in policy templates that use classifiers for business conduct and regulatory compliance.
+- Changed the [time zone from local time zone to Coordinated Universal Time (UTC)](/microsoft-365/compliance/communication-compliance-policies) for policy activity detection, user-reported messages, and filters for reports.
+- Updated table for [built-in trainable and global classifiers](/microsoft-365/compliance/communication-compliance-policies) to increase visibility for details specific to pre-trained classifiers. Includes updated word count requirements for messages in English and non-English languages. 
+
+### Data lifecycle management and records management
+- Disposition review no longer has a maximum of 1,000,000 items per label pending or reviewed. This limitation is removed from [Limits for retention policies and retention label policies](retention-limits.md).
+
+### Insider risk management
+- [Examples of file paths](/microsoft-365/compliance/insider-risk-management-settings) to denote specific and wildcard folders and sub-folders to be excluded.
+
+### Sensitivity labels
+- **General availability (GA)**: S/MIME support for Windows is now available in the Office Current Channel, providing parity with the AIP add-in. For more information, see [Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook).
+- **Rolling out in preview**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md).
+
 ## November 2022
+
+### Audit
+- [Audit New Search](/microsoft-365/compliance/audit-new-search) - the new export limit is now up to a maximum of 500K (500,000 rows) for a single export.
+- [Search the audit log in the compliance portal](/microsoft-365/compliance/audit-log-search) - clarified table for retention policies and labels.
+
+### Communication compliance
+- [Messages in alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate) now include a sentiment evaluation to help investigators quickly prioritize potentially riskier messages to address first.
+- [Automatically detects if text is in a different language](/microsoft-365/compliance/communication-compliance-investigate-remediate) than the user's current system setting and displays alert message text accordingly. 
+- [Threat, Harassment, and Profanity classifiers](/microsoft-365/compliance/communication-compliance-policies) in the English language now inspects and evaluates messages with a word count of three or greater.
 
 ### Compliance Manager
 
@@ -51,6 +77,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - [Decryption in Microsoft Purview eDiscovery tools](/microsoft-365/compliance/ediscovery-decryption) - clarified how items labeled within SharePoint Online are decrypted with eDiscovery tools.
 - [Conduct an eDiscovery investigation of content in Microsoft Teams](/microsoftteams/ediscovery-investigation) - expanded reactions in Microsoft Teams chats are now supported in eDiscovery (Premium).
 - [Create an eDiscovery hold](/microsoft-365/compliance/create-ediscovery-holds) - clarified how eDiscovery holds are handled when a user's OneDrive URL changes.
+- [Export documents from a review set in eDiscovery (Premium)](/microsoft-365/compliance/export-documents-from-review-set) - clarified how eDiscovery includes the parent email in the PST files if defined by the "Group" option in the review set.
+
+### Insider risk management
+- [Sensitive info types](/microsoft-365/compliance/insider-risk-management-settings) now has a limit of 500 types that you can exclude. The previous limit was 100 sensitive info types.
+- Admins can now enable [potential high impact user](/microsoft-365/compliance/insider-risk-management-settings) and [cumulative exfiltration activities](/microsoft-365/compliance/insider-risk-management-configure) score boosters in policy settings.
+- New [risky browser indicators](/microsoft-365/compliance/insider-risk-management-settings) available for detecting user browsing activity related to websites that are considered malicious or risky and pose potential insider risk that may lead to a security or compliance incident.
 
 ### Microsoft Priva
 
@@ -102,7 +134,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 - [Limits for Content search and eDiscovery (Standard)](/microsoft-365/compliance/limits-for-content-search) - clarified how eDiscovery jobs are counted towards limits.
 - [Export documents from a review set in eDiscovery (Premium)](/microsoft-365/compliance/export-documents-from-review-set) - removed conversation PDF support per feature and UI updates.
-- [Assign eDiscovery permissions in the compliance portal](/microsoft-365/compliance/assign-ediscovery-permissions) - added content to support new Manage review set tags role.
+- [Assign eDiscovery permissions in the compliance portal](/microsoft-365/compliance/ediscovery-assign-permissions) - added content to support new Manage review set tags role.
 - [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) - now support only 'all' parameters, removed non-supported example scenarios.
 - [Keyword queries and search conditions for eDiscovery](/microsoft-365/compliance/keyword-queries-and-search-conditions) - clarified the supported FolderId 48-character format indexed for search.
 
@@ -249,7 +281,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Compliance Manager
 
-- [Compliance Manager templates list](compliance-manager-templates-list.md) - added new premium template in the Asia-Pacific countries category for "Hong Kong - Code of Banking Practice and Payment Card".
+- [Compliance Manager templates list](compliance-manager-templates-list.md) - added new premium template in the Asia-Pacific country/region category for "Hong Kong - Code of Banking Practice and Payment Card".
 
 ### Compliance offerings & service assurance
 
@@ -271,7 +303,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### eDiscovery
 
-- [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md) - removed superseded information.
+- [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md) - removed superseded information.
 
 ### Sensitive information types
 
@@ -346,5 +378,5 @@ To meet the challenges of today's decentralized, data-rich workplace, we're intr
 | Office 365 Message Encryption | Microsoft Purview Message Encryption | With Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. To learn more, see [Microsoft Purview Message Encryption](ome.md). |
 | Privileged Access Management in Microsoft 365 | Microsoft Purview Privileged Access Management | Privileged Access Management helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. To learn more, see [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
 | Microsoft data connectors | Microsoft Purview data connectors | Microsoft 365 lets administrators use data connectors to import and archive non-Microsoft, third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Microsoft 365 organization. To learn more, see [Microsoft Purview data connectors](compliance-extensibility.md). |
-| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. To learn more, see [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) and [Microsoft Purview eDiscovery (Standard)](get-started-core-ediscovery.md). |
+| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. To learn more, see [Microsoft Purview eDiscovery (Premium)](ediscovery-overview.md) and [Microsoft Purview eDiscovery (Standard)](ediscovery-standard-get-started.md). |
 | Microsoft 365 compliance center | Microsoft Purview compliance portal | Admin portal to access solutions and solution catalog within the Microsoft 365 E5 Compliance suite. To learn more, see [Microsoft Purview compliance portal](microsoft-365-compliance-center.md). |
