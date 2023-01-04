@@ -40,8 +40,6 @@ When you use Office on the web to create or edit a file, the default sensitivity
 - File upload: it can take a few minutes for the label to be applied.
 - Microsoft 365 Apps: the label is applied after the app is closed.
 
-If you need to review a list of file types that are supported by sensitivity labels in SharePoint, see [Supported file types](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
-
 To read the preview announcement for this feature, see the [blog post](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
