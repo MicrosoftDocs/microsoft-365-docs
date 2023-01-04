@@ -56,6 +56,23 @@ The following table identifies the supported tasks that can be performed in Micr
 |Export encrypted documents in SharePoint and OneDrive    |No       |No  |Yes    |
 |||||
 
+## Supported decryption
+
+The following table describes the decryption supported by eDiscovery (Standard) and eDiscovery (Premium) for email, email with attachments, and files hosted by SharePoint.
+
+| **Item type** | **Task** | **eDiscovery (Standard)** | **eDiscovery (Premium)** |
+|:--------------|:---------|:--------------------------|:-------------------------|
+| Encrypted email | Search | Yes | Yes |
+| Encrypted email | Decryption to .pst | No | Yes |
+| Encrypted email | Decryption to file | Yes | Yes |
+| Encrypted mail and attachment | Search | No | Yes (with advanced indexing)<sup>1</sup> |
+| Encrypted mail and attachment | Decryption to .pst | No | Yes |
+| Encrypted mail and attachment | Decryption to file | Yes | Yes |
+| File in SharePoint with MIP label | Search | Yes | Yes |
+| File in SharePoint with MIP label | Decryption | No | Yes |
+| File in SharePoint with other encryption<sup>2</sup> | Search, Decryption | No  | No |
+|||||
+
 ## Decryption limitations with sensitivity labels in SharePoint and OneDrive
 
 eDiscovery doesn't support encrypted files in SharePoint and OneDrive when a sensitivity label that applied the encryption is configured with either of the following settings:

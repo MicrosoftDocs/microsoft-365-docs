@@ -183,7 +183,7 @@ Other label policy settings that are specific just to calendar items, Teams meet
 
 The label setting to prevent copying chat to the clipboard is enforced for all channel chats, even outside channel meetings. For non-channel meetings, it's enforced only for meetings.
 
-Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users. For meetings, it's also not supported for users who join the chat but weren't invited to the meeting.
+Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users. It is supported for guest user accounts in your tenant. For meetings, it's also not supported for users who join the chat but weren't invited to the meeting.
 
 The methods supported to prevent copying chat: Select the text and then right-click \> **Copy** or Ctrl+C. Copying using developer tools or third-party apps won't be prevented.
 
