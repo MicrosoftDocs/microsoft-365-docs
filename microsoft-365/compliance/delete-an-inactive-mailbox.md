@@ -32,7 +32,7 @@ Holds can be any of the following:
 
 - [Microsoft 365 retention policies and labels](retention.md) with retain or retain and delete settings
 - A hold associated with an [eDiscovery](ediscovery.md) case
-- [Litigation hold](create-a-litigation-hold.md)
+- [Litigation hold](ediscovery-create-a-litigation-hold.md)
 - An [In-Place Hold](/exchange/security-and-compliance/in-place-and-litigation-holds#placing-a-mailbox-on-in-place-hold)
 
 > [!IMPORTANT]
@@ -40,9 +40,9 @@ Holds can be any of the following:
 >
 > - eDiscovery holds are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed (or deleted). If a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and the hold is released or the eDiscovery case is closed or deleted, the inactive mailbox will be permanently deleted.
 >
-> - In-Place Holds in the Exchange admin center are now retired. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
+> - In-Place Holds in the Exchange admin center are now retired. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](ediscovery-legacy-retirement.md).
 >
-> - [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
+> - [Litigation hold](ediscovery-create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
 
 See the [More information](#more-information) section for a description of what happens after holds are removed from an inactive mailbox.
   
@@ -126,7 +126,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
 
 ### Remove an inactive mailbox from an eDiscovery hold
 
-See [Removing content locations from an eDiscovery hold](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
+See [Removing content locations from an eDiscovery hold](ediscovery-create-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
 ### Remove a Litigation hold from an inactive mailbox
 
@@ -239,4 +239,4 @@ when you run the following commands, you'll see a warning that the Get-MailboxSe
   InactiveMailboxRetireTime : 9/30/2022 11:16:23 PM
   ```
 
-  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2022. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 183 days after September 30, 2022.
+  In the above example, the *WhenSoftDeleted* property identifies the soft-deleted date, which in this example is June 16, 2022. The *WasInactiveMailbox* property is listed as `True` because it was previously an inactive mailbox. The mailbox will be permanently deleted 30 days after September 30, 2022.

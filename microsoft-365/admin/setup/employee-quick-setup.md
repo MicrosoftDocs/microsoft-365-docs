@@ -24,12 +24,14 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Help your employees learn how to set up Office apps they get with Microsoft 365 Business Premium."
+description: "Help your employees learn how to set up the apps they get with Microsoft 365."
 ---
 
 # Employee quick setup in Microsoft 365 for business
 
-Are you new to Microsoft 365 for business? :::image type="icon" source="../../media/video-call-icon.png" border="false"::: [Watch this video: What is Microsoft 365?](../admin-overview/what-is-microsoft-365.md) to learn about it. Then follow these steps.
+The best way to get started using Microsoft 365 as an employee of a small business is to watch the [Employee quick setup video](https://go.microsoft.com/fwlink/?linkid=2220354). This video provides the basics of how to set up your account and start using your apps, and is a great introduction to the wide range of features available with Microsoft 365.
+
+The steps below will guide you through the same process as the video.
 
 :::image type="content" source="../../media/m365-employee-quick-setup.png" alt-text="Image showing quick employee setup steps.":::
 

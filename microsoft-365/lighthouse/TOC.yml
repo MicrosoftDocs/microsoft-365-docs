@@ -18,6 +18,10 @@
       href: m365-lighthouse-overview-of-permissions.md
     - name: Review audit logs
       href: m365-lighthouse-review-audit-logs.md
+    - name: Set up and manage GDAP
+      items: 
+      - name: Set up GDAP for your customers
+      href: m365-lighthouse-setup-gdap.md
 - name: Protect customers with baselines
   items: 
     - name: Overview of using baselines to deploy standard tenant configurations
@@ -54,6 +58,8 @@
       href: m365-lighthouse-users-page-overview.md
     - name: Block user sign-in
       href: m365-lighthouse-block-user-signin.md
+    - name: Block sign-in for shared mailbox accounts
+      href: m365-lighthouse-block-signin-shared-mailboxes.md
     - name: Manage inactive users
       href: m365-lighthouse-manage-inactive-users.md
     - name: Manage multifactor authentication

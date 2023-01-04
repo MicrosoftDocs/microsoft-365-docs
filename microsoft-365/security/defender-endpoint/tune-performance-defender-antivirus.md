@@ -1,7 +1,7 @@
 ---
 title: Performance analyzer for Microsoft Defender Antivirus
 description: Describes the procedure to tune the performance of Microsoft Defender Antivirus.
-keywords: tune, performance, microsoft defender for endpoint, defender antivirus
+keywords: Microsoft Defender performance analyzer, defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows defender, microsoft defender, microsoft windows 10, microsoft defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows defender antivirus, Windows 10 antivirus, microsoft windows defender, performance windows, ms defender, microsoft scan, windows performance
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,8 +20,6 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
-
 # Performance analyzer for Microsoft Defender Antivirus
 
 **Applies to**
@@ -36,7 +34,11 @@ search.appverid: met150
 
 ## What is Microsoft Defender Antivirus performance analyzer?
 
-In some cases, you might need to tune the performance of Microsoft Defender Antivirus as it scans specific files and folders. Performance analyzer is a PowerShell command-line tool that helps determine which files, file extensions, and processes might be causing performance issues on individual endpoints. This information can be used to better assess performance issues and apply remediation actions.
+ If computers running Microsoft Defender Antivirus are experiencing performance issues, you can use performance analyzer to improve the performance of Microsoft Defender Antivirus. Performance analyzer for Microsoft Defender Antivirus in Windows 10, Windows 11, and Windows Server, is a PowerShell command-line tool that helps you determine files, file extensions, and processes that might be causing performance issues on individual endpoints during antivirus scans.  You can use the information gathered by performance analyzer to assess performance issues and apply remediation actions.
+
+Similar to the way mechanics perform diagnostics and service on a vehicle that has performance problems, performance analyzer can help you improve Defender Antivirus performance.
+
+>:::image type="content" source="images/performance-analyzer-improve-defender-antivirus-performance.png" alt-text="Conceptual performance analyzer image for Microsoft Defender Antivirus. The diagram is related to:  Microsoft Defender performance analyzer, defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows defender, microsoft defender, microsoft windows 10, microsoft defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows defender antivirus, Windows 10 antivirus, microsoft windows defender, performance windows. " lightbox="images/performance-analyzer-improve-defender-antivirus-performance.png":::
 
 Some options to analyze include:
 
@@ -50,7 +52,7 @@ Some options to analyze include:
   - top processes per path
   - top scans per file
   - top scans per file per process
-  
+
 ## Running performance analyzer
 
 The high-level process for running performance analyzer involves the following steps:

@@ -84,8 +84,8 @@ There are six role groups used to configure insider risk management features. To
 
 - Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
 - Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
-- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
-- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/scc-permissions) role group
+- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/scc-permissions) role group
 - *Insider Risk Management* role group
 - *Insider Risk Management Admins* role group
 
