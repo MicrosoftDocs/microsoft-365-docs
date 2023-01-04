@@ -92,19 +92,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## Search and export the contents of an inactive mailbox
 
-You can access the contents of the inactive mailbox by using the Content Search tool in the Microsoft Purview compliance portal. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
-  
-- [Content search](ediscovery-content-search.md)
-
-- [Export search results](export-search-results.md)
-
-Here are a few things to keep in mind when searching inactive mailboxes.
-  
-- If a content search includes a user mailbox and that mailbox is made inactive, the content search will continue to search the inactive mailbox when you rerun the search after it becomes inactive.
-
-- In some cases, a user may have an active mailbox and an inactive mailbox that have different SMTP addresses. In this case, only the specific mailbox that you select as a location for a content search will be searched. In other words, if you add a user's mailbox to a search, you can't assume that both their active and inactive mailboxes will be searched; only the mailbox that you explicitly add to the search will be searched.
-
-- We strongly recommend that you avoid having an active mailbox and inactive mailbox with the same SMTP address. If you need to reuse the SMTP address that is currently assigned to an inactive mailbox, we recommend that you recover the inactive mailbox or restore the contents of an inactive mailbox to an active mailbox (or the archive of an active mailbox), and then delete the inactive mailbox.
+You can access the contents of the inactive mailbox by using the Content Search tool in the Microsoft Purview compliance portal. For more information, see the [Feature reference for Content search](ediscovery-content-search-reference.md#searching-inactive-mailboxes) article.
 
 ## Change the hold duration for an inactive mailbox
 
