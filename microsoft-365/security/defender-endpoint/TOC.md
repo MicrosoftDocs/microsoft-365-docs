@@ -254,15 +254,15 @@
 ##### [Enhance Enterprise IoT discovery](/azure/defender-for-iot/eiot-sensor/)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
+### [Authenticated scans]()
+#### [Network devices](network-devices.md)
+#### [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md)
+
 ### [Devices]()
 #### [Device inventory](machines-view-overview.md)
 #### [Exclude devices](exclude-devices.md)
 #### [Device timeline](device-timeline-event-flag.md)
 #### [Manage device group and tags](machine-tags.md)
-
-### [Authenticated scans]()
-#### [Network devices](network-devices.md)
-#### [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md)
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
