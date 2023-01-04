@@ -105,7 +105,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Graph Explorer with an account that's assigned the *Search And Purge* role in the Microsoft Purview compliance portal.
 
-2. Run the following GET request to retrieve the ID for the eDiscovery (Premium) case. Use the value `https://graph.microsoft.com/v1.0/security/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
+2. Run the following GET request to retrieve the ID for the eDiscovery (Premium) case. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
 
    ![GET request for case Id.](..\media\ediscovery-GraphGetRequestForCaseId.png)
 
@@ -120,9 +120,9 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 > [!TIP]
 > Instead of using the previous procedure to obtain the case Id, you can open the case in the Microsoft Purview compliance portal and copy the case Id from the URL.
 
-### Get the collection ID
+### Get the search ID
 
-1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/ediscovery/cases('caseId')/sourceCollections` in the address bar of the request query, where *CaseId* is the ID that you obtained in the previous procedure. Be sure to surround the case ID with parentheses and single quotation marks.
+1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases('caseId')/searches` in the address bar of the request query, where *CaseId* is the ID that you obtained in the previous procedure. Be sure to surround the case ID with parentheses and single quotation marks.
 
    ![GET request for collection Id.](..\media\ediscovery-GraphGetRequestForCollectionId.png)
 
@@ -141,7 +141,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Purge the chat messages
 
-1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/v1.0/security/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` in the address bar of the request query, where *caseId* and *collectionId* are the IDs that you obtained in the previous procedures. Be sure to surround the ID values with parentheses and single quotation marks.
+1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases('caseId')/searches('searchId')/purgeData` in the address bar of the request query, where *caseId* and *searchId* are the IDs that you obtained in the previous procedures. Be sure to surround the ID values with parentheses and single quotation marks.
 
       ![POST request to delete items returned by the collection.](..\media\ediscovery-GraphPOSTRequestToPurgeItems.png)
 
@@ -157,10 +157,10 @@ You can also purge chat messages using PowerShell. For example, to purge message
 Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
 ``
 
-``Invoke-MgGraphRequest  -Method POST -Uri '/v1.0/security/cases/ediscoveryCases/<case ID>/searches/<collection ID>/purgeData'
+``Invoke-MgGraphRequest  -Method POST -Uri '/v1.0/security/cases/ediscoveryCases/<case ID>/searches/<search ID>/purgeData'
 ``
 
-For more information on using PowerShell to purge chat messages, see [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata).
+For more information on using PowerShell to purge chat messages, see [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-1.0).
 
 ## Step 6: Verify chat messages are purged
 
