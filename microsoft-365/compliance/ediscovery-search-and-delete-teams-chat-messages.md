@@ -137,7 +137,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 3. Copy the corresponding ID (or copy and paste it to a text file). You'll use this ID in the next task to purge the chat messages.
 
 > [!TIP]
-> Instead of using the previous procedure to obtain the collection Id, you can open the case in the Microsoft Purview compliance portal. Open the case and navigate to the Jobs tab. Select the relevant collection and under Support information, find the job ID (the job ID displayed here is the same as the collection ID).
+> Instead of using the previous procedure to obtain the search Id, you can open the case in the Microsoft Purview compliance portal. Open the case and navigate to the Jobs tab. Select the relevant collection and under Support information, find the job ID (the job ID displayed here is the same as the collection ID).
 
 ### Purge the chat messages
 
