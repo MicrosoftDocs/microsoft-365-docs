@@ -29,7 +29,7 @@ ms.date: 03/17/2021
 
 When you buy Microsoft 365 products and services, the taxes that you pay are determined by one of two things: your business address, or your shipping address, if it's different. If your organization is in the United States, you must provide a Federal Employer Identification Number (FEIN).
 
-Businesses in the following countries can provide their VAT number or local equivalent:
+Businesses in the following countries or regions can provide their VAT number or local equivalent:
 
 :::row:::
     :::column:::
@@ -92,7 +92,7 @@ Businesses in the following countries can provide their VAT number or local equi
     :::column-end:::
 :::row-end:::
 
-*For most of the countries listed, providing a VAT number or local equivalent is optional. For Brazil and India, the tax identifier number is required.
+*For most of the countries or regions listed, providing a VAT number or local equivalent is optional. For Brazil and India, the tax identifier number is required.
 
 > [!Note]
 > If you need to contact support, have your FEIN, VAT number, or local equivalent ready to give to the support agent.
