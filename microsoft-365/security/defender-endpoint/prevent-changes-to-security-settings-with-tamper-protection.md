@@ -109,7 +109,8 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 - Devices are running Windows Defender platform `4.18.2111.*` or later. (See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).)
 - Functionality to protect exclusions is enabled on devices. (See [How to determine whether the functionality is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device).)
 
-[Learn more about exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
+> [!TIP]
+> For more detailed information about exclusions, see [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
 ### How to determine whether the functionality to protect exclusions is enabled on a Windows device
 
