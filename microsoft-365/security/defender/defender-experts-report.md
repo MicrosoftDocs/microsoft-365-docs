@@ -62,4 +62,4 @@ Selecting an identified suspicious activity opens a flyout panel detailing the i
 
 The **Top trending suspicious activities** section of the report identifies up to 20 suspicious activities that were consistently observed in your environment in the last three months, sorted based on their severity rating and frequency of occurrence. By showing the most critical and frequently observed activities, you can assess and evaluate their impact and develop strategies to prevent or mitigate potential threats to your environment.
 
-Click **View details** in each card to open a flyout panel detailing the impacted devices and users. If applicable, the page also provides links to view related Defender Expert Notifications.
+Select **View details** in each card to open a flyout panel detailing the impacted devices and users. If applicable, the page also provides links to view related Defender Expert Notifications.
