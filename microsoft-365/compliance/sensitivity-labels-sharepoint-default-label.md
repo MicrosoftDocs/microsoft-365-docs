@@ -28,9 +28,6 @@ description: "Configure a default sensitivity label for a SharePoint document li
 
 When SharePoint is [enabled for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md), you can configure a default label for document libraries. Then, any new files uploaded to that library, or existing files edited in the library will have that label applied if they don't already have a sensitivity label, or they have a sensitivity label but with [lower priority](sensitivity-labels.md#label-priority-order-matters).
 
-> [!TIP]
-> To review a list of file types that are supported by sensitivity labels in SharePoint, see [Supported file types](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
-
 For example, you configure the **Confidential** label as the default sensitivity label for a document library. A user who has **General** as their policy default label saves a new file in that library. SharePoint will label this file as **Confidential** because of that label's higher priority. For a quick summary of the possible outcomes, see [Will an existing label be overridden](#will-an-existing-label-be-overridden) on this page.
 
 A default label offers a baseline level of protection and a form of automatic labeling without content inspection. To help you distinguish between this feature's default label with the default label in label policies:
@@ -42,6 +39,8 @@ When you use Office on the web to create or edit a file, the default sensitivity
 
 - File upload: it can take a few minutes for the label to be applied.
 - Microsoft 365 Apps: the label is applied after the app is closed.
+
+If you need to review a list of file types that are supported by sensitivity labels in SharePoint, see [Supported file types](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
 
 To read the preview announcement for this feature, see the [blog post](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136).
 
@@ -66,6 +65,8 @@ Summary of outcomes:
 - You've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md). To check this status, you can run `Get-SPOTenant -EnableAIPIntegration` from the [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to confirm the value is set to true.
 
 - [SharePoint Information Rights Management (IRM) is not enabled for the library](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). This older technology isn't compatible with using a default sensitivity label for a SharePoint document library. If a library is enabled for IRM, you won't be able to select a default sensitivity label.
+
+If you need to review a list of file types that are supported by sensitivity labels in SharePoint, see [Supported file types](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
 
 ## Limitations
 
