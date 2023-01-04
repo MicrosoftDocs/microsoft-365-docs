@@ -200,7 +200,7 @@ In _supported_ protection features that quarantine email messages, you can assig
 |---|:---:|---|
 |[Anti-spam policies](anti-spam-policies-configure.md): <ul><li>**Spam** (_SpamAction_)</li><li>**High confidence spam** (_HighConfidenceSpamAction_)</li><li>**Phishing** (_PhishSpamAction_)</li><li>**High confidence phishing** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|Yes|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>AdminOnlyAccessPolicy (No access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li></ul>|
 |Anti-phishing policies: <ul><li>[Spoof intelligence protection](anti-phishing-policies-about.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Impersonation protection in Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**If message is detected as an impersonated user** (_TargetedUserProtectionAction_)</li><li>**If message is detected as an impersonated domain** (_TargetedDomainProtectionAction_)</li><li>**If mailbox intelligence detects and impersonated user** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|Yes|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>Impersonation protection:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (Full access)</li></ul></li></ul>|
-|[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|Yes|AdminOnlyAccessPolicy (No access)|
+|[Anti-malware policies](anti-malware-policies-configure.md): All detected messages are always quarantined.|Yes|AdminOnlyAccessPolicy (No access)|
 |[Safe Attachments protection](safe-attachments-about.md): <ul><li>Email messages with attachments that are quarantined as malware by Safe Attachments policies (_Enable_ and _Action_)</li><li>Files quarantined as malware by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)</li></ul>|<ul><li>Yes</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (No access)</li><li>n/a</li></ul>|
 |[Mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
 
@@ -406,7 +406,7 @@ If you'd rather use PowerShell to assign quarantine policies in anti-malware pol
   Get-MalwareFilterPolicy | Format-Table Name,QuarantineTag
   ```
 
-- A new anti-malware policy in PowerShell requires a malware filter policy (settings) using the **New-MalwareFilterPolicy** cmdlet and an exclusive malware filter rule (recipient filters) using the **New-MalwareFilterRule** cmdlet. For instructions, see [Use Exchange Online PowerShell or standalone EOP PowerShell to configure anti-malware policies](configure-anti-malware-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-malware-policies).
+- A new anti-malware policy in PowerShell requires a malware filter policy (settings) using the **New-MalwareFilterPolicy** cmdlet and an exclusive malware filter rule (recipient filters) using the **New-MalwareFilterRule** cmdlet. For instructions, see [Use Exchange Online PowerShell or standalone EOP PowerShell to configure anti-malware policies](anti-malware-policies-configure.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-malware-policies).
 
 This example creates a malware filter policy named Research Department that uses the custom quarantine policy named NoAccess that assigns **No access** permissions to the quarantined messages.
 
@@ -444,7 +444,7 @@ For detailed syntax and parameter information, see [Set-MalwareFilterPolicy](/po
 
    **Note**: When you create a new policy, a blank **Quarantine policy** value indicates the default quarantine policy is used. When you later edit the policy, the blank value is replaced by the actual default quarantine policy name as described in the previous table.
 
-Full instructions for creating and modifying Safe Attachments policies are described in [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
+Full instructions for creating and modifying Safe Attachments policies are described in [Set up Safe Attachments policies in Microsoft Defender for Office 365](safe-attachments-policies-configure.md).
 
 #### Safe Attachments policies in PowerShell
 
@@ -468,7 +468,7 @@ If you'd rather use PowerShell to assign quarantine policies in Safe Attachments
   Get-SafeAttachmentPolicy | Format-List Name,Enable,Action,QuarantineTag
   ```
 
-- A new Safe Attachments policy in PowerShell requires a safe attachment policy (settings) using the **New-SafeAttachmentPolicy** cmdlet and an exclusive safe attachment rule (recipient filters) using the **New-SafeAttachmentRule** cmdlet. For instructions, see [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
+- A new Safe Attachments policy in PowerShell requires a safe attachment policy (settings) using the **New-SafeAttachmentPolicy** cmdlet and an exclusive safe attachment rule (recipient filters) using the **New-SafeAttachmentRule** cmdlet. For instructions, see [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies](safe-attachments-policies-configure.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
 
 This example creates a safe attachment policy named Research Department that blocks detected messages and uses the custom quarantine policy named NoAccess that assigns **No access** permissions to the quarantined messages.
 
