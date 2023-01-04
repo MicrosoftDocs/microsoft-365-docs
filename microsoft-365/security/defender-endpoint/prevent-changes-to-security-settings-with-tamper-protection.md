@@ -100,7 +100,7 @@ Depending on the method or management tool you use to enable tamper protection, 
 
 ## What about exclusions?
 
-If your organization has [exclusions defined for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md), you can protect those exclusions provided all of the following conditions are met:
+If your organization has [exclusions defined for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md), tamper protection will protect those exclusions, provided all of the following conditions are met:
 
 - [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp) is enabled.
 - [Microsoft Defender Antivirus exclusions](/mem/intune/protect/antivirus-microsoft-defender-settings-windows) are managed in Microsoft Intune.
