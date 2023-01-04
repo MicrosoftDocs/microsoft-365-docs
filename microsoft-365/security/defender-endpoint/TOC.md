@@ -249,7 +249,6 @@
 #### [Enable Corelight as a data source](corelight-integration.md)
 #### [Enterprise IoT security]()
 ##### [Enable Enterprise IoT security with Defender for Endpoint](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint/)
-##### [Securing IoT devices in the enterprise](/azure/defender-for-iot/organizations/concept-enterprise/)
 ##### [Manage Defender for IoT plans](/azure/defender-for-iot/organizations/manage-subscriptions-enterprise/)
 ##### [Enhance Enterprise IoT discovery](/azure/defender-for-iot/organizations/eiot-sensor/)
 #### [Device discovery FAQ](device-discovery-faq.md)
