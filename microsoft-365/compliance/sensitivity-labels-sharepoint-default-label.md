@@ -26,7 +26,10 @@ description: "Configure a default sensitivity label for a SharePoint document li
 > [!NOTE]
 > This feature is in preview and subject to change.
 
-When SharePoint is [enabled for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md), you can configure a default label for document libraries. Then, any new and [supported files](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types) uploaded to that library, or existing files edited in the library will have that label applied if they don't already have a sensitivity label, or they have a sensitivity label but with [lower priority](sensitivity-labels.md#label-priority-order-matters).
+When SharePoint is [enabled for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md), you can configure a default label for document libraries. Then, any new files uploaded to that library, or existing files edited in the library will have that label applied if they don't already have a sensitivity label, or they have a sensitivity label but with [lower priority](sensitivity-labels.md#label-priority-order-matters).
+
+> [!TIP]
+> To review a list of file types that are supported by sensitivity labels in SharePoint, see [Supported file types](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
 
 For example, you configure the **Confidential** label as the default sensitivity label for a document library. A user who has **General** as their policy default label saves a new file in that library. SharePoint will label this file as **Confidential** because of that label's higher priority. For a quick summary of the possible outcomes, see [Will an existing label be overridden](#will-an-existing-label-be-overridden) on this page.
 
