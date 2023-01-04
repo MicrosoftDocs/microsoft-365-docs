@@ -61,6 +61,9 @@ If you're an organization using [Microsoft Defender for Endpoint](/microsoft-365
 
 If you're a home user, see [Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md).
 
+## Does tamper protection apply to Microsoft Defender Antivirus exclusions?
+
+New functionality is rolling out now to protect Microsoft Defender Antivirus exclusions. However, certain conditions must be met. See [What about exclusions](prevent-changes-to-security-settings-with-tamper-protection.md#what-about-exclusions)?
 
 ## How does configuring tamper protection in Intune affect how I manage Microsoft Defender Antivirus with Group Policy?
 
