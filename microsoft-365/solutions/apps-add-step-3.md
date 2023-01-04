@@ -18,6 +18,9 @@ keywords:
 
 When your organization purchases a license to use Microsoft Intune, depending on your license, there are several Microsoft communication and productivity apps included with your license. Additionally, many of the store apps are free to add to Intune and assign to members of your organization. 
 
+> [!IMPORTANT]
+> Confirm that your [mobile device management (MDM) authority](/mem/intune/fundamentals/mdm-authority-set) is set to **Microsoft Intune** before purchasing or adding apps to Intune in-volume.
+
 ## Determine if you need to purchase apps
 
 There are three primary ways you would purchase app content:
@@ -27,35 +30,42 @@ There are three primary ways you would purchase app content:
     - A customized app that has been specifically modified for your organization.
     - An app that has been created specifically for your organization by an app developer.
 
-## Purchase a VPP app
+## Purchase apps in-volume
 
-App licenses that you purchase in-volume are purchased through a volume purchase program (VPP). Apple lets you purchase multiple app licenses using Apple Business Manager. Microsoft offers the Microsoft Store for Business. Depending on your Microsoft Intune license, you may already have Microsoft app licenses available to add and deploy.
+App licenses that you purchase in-volume are purchased through a volume purchase program (VPP). Apple lets you purchase multiple app licenses using Apple Business Manager. Microsoft offers the Microsoft Store for Business. Google provides the Managed Google Play store.
 
-### iOS/iPadOS
+> [!NOTE]
+> Most apps offered through a volume purchase program are free to add to Intune.
 
-Apps for Apple devices that run iOS/iPadOS can be purchased in-volume using Apple Business Manager. 
+### Apple Business Manager
+
+Apps for Apple devices that run iOS/iPadOS can be purchased in-volume using Apple Business Manager. Apple Business Manager is a web-based portal that allows you to purchase apps that can be managed by Intune.
 
 Use the following steps to set up in-volume app purchases for iOS/iPadOS devices:
-1. Confirm you meet the [requirements](https://support.apple.com/guide/apple-business-manager/program-requirements-axm6d9dc7acf/web) to use Apple Business Manager.
-2. [Sign up for Apple Business Manager](https://support.apple.com/guide/apple-business-manager/sign-up-axm402206497).
-3. [Add a payment method to Apple Business Manager](https://support.apple.com/guide/apple-business-manager/review-content-payment-billing-information-axm746a59fa2)
-4. [Find, select, and purchase apps from Apple Business Manager](https://support.apple.com/guide/apple-business-manager/select-and-purchase-content-axmc21817890)
-5. [Sync purchased app licenses (tokens) in Microsoft Intune](/mem/intune/apps/vpp-apps-ios#upload-an-apple-vpp-or-apple-business-manager-location-token)
 
-### MSfB
+1. [Set up Apple Business Manager](apps-purchase-volume.md#set-up-apple-business-manager).
+2. [Purchase apps using Apple Business Manager](apps-purchase-volume.md#purchase-apps-using-apple-business-manager).
+3. [Sync purchased Apple app licenses with Microsoft Intune](apps-purchase-volume.md#sync-purchased-apple-app-licenses-with-microsoft-intune).
 
-Apps for Windows devices that run Window OS can be purchased in-volume using Microsoft Store for Business. 
+### Microsoft Store for Business
+
+Apps for Windows devices that run Window OS can be purchased in-volume using [Microsoft Store for Business](https://www.microsoft.com/business-store). Microsoft Store for Business is a web-based portal that allows you to find and purchase apps that can be managed by Intune. Depending on your Microsoft Intune license, you may already have Microsoft app licenses available to add and deploy.
 
 Use the following steps to set up in-volume app purchases for Windows devices:
 
-### Google Play
+1. [Set up Microsoft Store for Business](apps-purchase-volume.md#set-up-apple-business-manager).
+2. [Purchase apps using Microsoft Store for Business](apps-purchase-volume.md#purchase-apps-using-apple-business-manager).
+3. [Sync purchased Windows app licenses with Microsoft Intune](apps-purchase-volume.md#sync-purchased-windows-app-licenses-with-microsoft-intune).
 
-Apps for Android devices that run Andorid OS can be aquired in-volume using Google Play store. 
+### Managed Google Play store
 
-Use the following steps to set up in-volume app purchases for Android devices:
+Apps for Android devices that run Android OS can be acquired in-volume using Google Play store. The Managed Google Play store is a web-based portal that allows you to sync and manage apps using Intune.
 
-## Purchase app subscription or license
+Use the following steps to sync apps from the Managed Google Play store with Intune:
 
-## Purchase a custom line-of-business app
+1. [Connect Your Intune tenant to Managed Google Play](apps-purchase-volume.md#set-up-apple-business-manager).
+2. [Approve Managed Google Play apps](apps-purchase-volume.md#purchase-apps-using-apple-business-manager).
+3. [Sync Managed Google Play apps with Microsoft Intune](apps-purchase-volume.md#sync-purchased-windows-app-licenses-with-microsoft-intune).
 
-
+> [!NOTE]
+> Purchase a custom line-of-business app
