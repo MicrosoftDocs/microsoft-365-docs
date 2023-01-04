@@ -130,7 +130,6 @@ For step-by-step procedures, see [Restore an inactive mailbox](restore-an-inacti
   
 ## Delete an inactive mailbox
 
-If you no longer need to retain the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold applied to the inactive mailbox. 
-The mailbox will be retained for 183 days after you remove the hold or retention policy and be recoverable during that time. After 183 days, the mailbox will be marked for permanent deletion, and the mailbox will become non-recoverable. 
+If you no longer need to retain the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold applied to the inactive mailbox.
 
-For step-by-step procedures for removing a hold or a retention policy to permanently delete an inactive mailbox, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md).
+For more details and step-by-step procedures, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md).
