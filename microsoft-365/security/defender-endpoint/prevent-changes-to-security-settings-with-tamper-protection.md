@@ -105,8 +105,23 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 - [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp) is enabled.
 - [Microsoft Defender Antivirus exclusions](/mem/intune/protect/antivirus-microsoft-defender-settings-windows) are managed in Microsoft Intune.
 - [Tamper protection is deployed and managed by using Intune](manage-tamper-protection-microsoft-endpoint-manager.md).
+- Functionality to protect exclusions is enabled on devices. 
 
 [Learn more about exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
+
+### How to determine whether a device has the functionality to protect exclusions enabled
+
+You can use a registry key to determine whether the functionality to protect Microsoft Defender Antivirus exclusions is enabled.
+
+1. On a Windows device open Registry Editor.
+
+2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a REG_DWORD called **TPExclusions**. 
+
+   - If **TPExclusions** has a value of `1`, then the new functionality to protect exclusions is enabled on the device.
+   - If **TPExclusions** has a value of `0`, then tamper protection is not currently protecting exclusions on the device.
+
+> [!CAUTION]
+> Do not change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key will have no effect on whether tamper protection applies to exclusions.
 
 ## Are you using Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809?
 
