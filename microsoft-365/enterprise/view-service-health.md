@@ -1,4 +1,4 @@
-researching ---
+---
 title: How to check Microsoft 365 service health
 ms.author: kvice
 author: kelleyvice-msft
