@@ -39,7 +39,7 @@ When you deploy a new policy, [you should run it in test mode](dlp-overview-plan
 > [!IMPORTANT]
 >
 > - Test-DlpPolicies only works for items that are in SharePoint Online (SPO) or OneDrive for Business (ODB).
->- It will only report results for policies that are scoped exclusively to SharePoint Online, OneDrive for Business, or SharePoint Online and OneDrive for Business.
+>- It will only report results for policies that include SharePoint Online in their scope.
 > - Test-DlpPolices works only with simple conditions. It doesn't work with complex, grouped, or nested conditions.
 
 ### Use Test-DlpPolices
@@ -60,7 +60,7 @@ For example:
 
 #### Get the site ID
 
-1. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 1. Use the following syntax to get the site id and save it.
 
