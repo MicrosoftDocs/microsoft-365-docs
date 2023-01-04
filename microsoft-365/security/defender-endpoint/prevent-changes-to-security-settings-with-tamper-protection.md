@@ -118,7 +118,7 @@ You can use a registry key to determine whether the functionality to protect Mic
 
 1. On a Windows device open Registry Editor. (Read-only mode is fine; you won't be editing the registry key.)
 
-2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a REG_DWORD called **TPExclusions**. 
+2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**. 
 
    - If **TPExclusions** has a value of `1`, then the new functionality to protect exclusions is enabled on the device.
    - If **TPExclusions** has a value of `0`, then tamper protection is not currently protecting exclusions on the device.
