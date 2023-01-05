@@ -33,10 +33,7 @@ If you're using the Microsoft Purview Data Loss Prevention migration assistant f
 
 ### 1. Have appropriate Microsoft 365 subscription
 
-To migrate your DLP policies and apply them to Exchange, SharePoint Online, OneDrive for Business, Teams, Endpoint Devices, as well as third party cloud apps like Box, and Google Drive, your organization must have one of these subscriptions:
-
-- Microsoft 365 E5 or Office 365 E5 subscription
-- Microsoft 365 E3 subscription with E5 Compliance add-on
+On the basis of the workloads you need to cover for the policies created by the tool, you will need the appropriate DLP licensing indicated [here](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ### 2. Have appropriate user role & privileges
 
@@ -51,13 +48,13 @@ You'll need to download, install, and run the migration assistant on one of the 
 - Windows Server 2008+
 - Windows Server 2003 (excluding IA-64)
 
-### 4. Install PowerShell 7
+### 4. Install PowerShell
 
-You need to have PowerShell 7 (v7.2.6) installed on the same machine where the migration assistant will be installed. [Download Powershell-7.2.6-win-x64.msi core on your machine](https://github.com/PowerShell/PowerShell/releases/download/v7.2.6/PowerShell-7.2.6-win-x64.msi).
+You must have PowerShell v7.2.6 or higher installed on your machine, before the migration assistant can be installed [Download Powershell-7.2.6-win-x64.msi core on your machine](https://github.com/PowerShell/PowerShell/releases/download/v7.2.6/PowerShell-7.2.6-win-x64.msi).
 
 ### 5. Install .NET 6
 
-You must have .NET 6 core SDK (v6.0.41) installed on the same machine where the migration assistant will be installed. [Download .NET 6 core SDK on your machine](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-6.0.401-windows-x64-installer).
+You must have installed .NET v6.0.41 or higher on your machine, before the migration assistant can be installed. [Download .NET 6 core SDK on your machine](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-6.0.401-windows-x64-installer).
 
 ### Export Symantec DLP policies
 
