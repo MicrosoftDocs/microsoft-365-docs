@@ -97,7 +97,7 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
 {
-    "SessionId": ["01decc497f4b4ec49a5fc4e12597f8c8"]
+    "SessionIds": ["01decc497f4b4ec49a5fc4e12597f8c8"]
 }
 ```
 
@@ -109,8 +109,8 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
     "value": [
     {
      "orgId": "asdf781a0c-792d-46d3-bbea-a93dbc0bfcaa",
-     "ScanDefinitionId": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
-     "SessionId": "01decc497f4b4ec49a5fc4e12597f8c8",
+     "ScanDefinitionIds": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
+     "SessionIds": "01decc497f4b4ec49a5fc4e12597f8c8",
      "NumberOfSuccessfullyScannedTargets": 3,
      "NumberOfTargets": 3,
      "ScanStatus": "Success",

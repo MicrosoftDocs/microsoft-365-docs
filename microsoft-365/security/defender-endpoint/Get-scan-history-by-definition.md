@@ -97,7 +97,7 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
 {
-    "ScanDefinitionId": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae", "60c4aa57-c573-4488-8d18-230914792a92", "c6220f67-2cad-4ba3-a2fa-7ded6384da56"]
+    "ScanDefinitionIds": ["4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae", "60c4aa57-c573-4488-8d18-230914792a92", "c6220f67-2cad-4ba3-a2fa-7ded6384da56"]
 }
 ```
 
@@ -108,19 +108,19 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 "@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId",
     "value": [
     {
-    "ScanDefinitionId": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
+    "ScanDefinitionIds": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
     "LastScanned": "2022-12-20T11:14:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
     },
     {
-    "ScanDefinitionId": "60c4aa57-c573-4488-8d18-230914792a92",
+    "ScanDefinitionIds": "60c4aa57-c573-4488-8d18-230914792a92",
     "LastScanned": "2022-11-17T15:13:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
     },
     {
-    "ScanDefinitionId": "c6220f67-2cad-4ba3-a2fa-7ded6384da56",
+    "ScanDefinitionIds": "c6220f67-2cad-4ba3-a2fa-7ded6384da56",
     "LastScanned": "2022-11-10T18:15:24.5561791Z",
     "ScanStatus": "Partial Success",
     "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
