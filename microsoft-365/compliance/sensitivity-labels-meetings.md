@@ -21,9 +21,9 @@ description: "Configure sensitivity labels to protect calendar items, and Teams 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is currently rolling out in preview and subject to change. If you don't see all the options referenced on this page, try again in a few days.
+> This feature is currently rolling out in preview and subject to change.
 > 
-> Also, the Teams options require a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience). For more information about this new premium add-on for Teams, see the [blog post announcement](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-teams-premium-the-better-way-to-meet) and the official [Teams Premium site](https://www.microsoft.com/microsoft-teams/premium).
+> You won't be able to configure all the options referenced on this page if a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience) isn't found for your tenant. For those settings, you'll see an information bar in the Microsoft Purview compliance portal that your organization doesn't have this license.
 
 In addition to using [sensitivity labels](sensitivity-labels.md) to protect documents and emails, you can extend sensitivity labels to protect meeting invites and responses that use Outlook and Teams, and to protect Teams meetings and chat:
 
@@ -183,7 +183,7 @@ Other label policy settings that are specific just to calendar items, Teams meet
 
 The label setting to prevent copying chat to the clipboard is enforced for all channel chats, even outside channel meetings. For non-channel meetings, it's enforced only for meetings.
 
-Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users. For meetings, it's also not supported for users who join the chat but weren't invited to the meeting.
+Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users. It is supported for guest user accounts in your tenant. For meetings, it's also not supported for users who join the chat but weren't invited to the meeting.
 
 The methods supported to prevent copying chat: Select the text and then right-click \> **Copy** or Ctrl+C. Copying using developer tools or third-party apps won't be prevented.
 
