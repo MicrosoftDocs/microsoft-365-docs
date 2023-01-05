@@ -108,7 +108,7 @@ Select apps that you want to include in Intune:
 2. Select either an **Online** or **Offline** license.
 3. Select **Get the app** to add the app to your account.
 
-#### Sync purchased Windows app licenses with Microsoft Intune
+### Sync purchased Windows app licenses with Microsoft Intune
 
 If you've already associated your Microsoft Store for Business account with your Intune admin credentials, you can manually sync your Microsoft Store for Business apps with Intune.
 

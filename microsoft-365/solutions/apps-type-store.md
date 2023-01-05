@@ -16,7 +16,7 @@ keywords:
 
 # Understand store apps for Intune
 
-One method of protecting and securing your organization's data is to deploy store apps to your organization's workforce. Many store apps have been designed to support a managed environment such as Microsoft Intune. 
+Microsoft, Apple, and Google each provide an app store. You can use Intune to deploy store apps to your organization's workforce. Deploying apps from the stores offers increased protection over allowing end-users to install apps on their own. Also, many store apps have been designed to support a managed environment such as Microsoft Intune. 
 
 In addition to protecting app data, Intune supports configuring app settings, such as email settings. Store apps are the most common type of apps that you would provide to your workforce. Common types of store apps that support Intune include [Microsoft apps](/mem/intune/apps/apps-supported-intune-apps#microsoft-apps), [partner productivity apps](/mem/intune/apps/apps-supported-intune-apps#partner-productivity-apps), and [Partner unified endpoint management (UEM) apps](/mem/intune/apps/apps-supported-intune-apps#partner-uem-apps).
 
@@ -32,4 +32,4 @@ You can add the following store app types to Intune.
 | Microsoft store apps | Microsoft store apps are available to add to Intune from the [Microsoft app store](https://apps.microsoft.com/store/apps). Intune can deploy these apps to Windows devices. |
 | Microsoft store for business | Microsoft store apps are available to add to Intune from the [Microsoft store for business](https://www.microsoft.com/business-store). You can either obtain free apps or purchase apps for your organization, for you individually, or in-volume. Intune can deploy these apps to Windows devices. **NOTE:** Microsoft Store for Business will be retired in the first quarter of 2023. |
 
-
+Intune integrates directly with the app stores when adding apps for many app scenarios. In addition, Intune provides capabilities to assign, configure, protect, manage, and retire the apps that you need to manage. Also, Intune provides several reports to keep track of app protection, installation, and licensing.

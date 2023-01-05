@@ -67,12 +67,55 @@ For more information, see the following resources:
 
 ## Add volume purchased apps to Intune
 
+Once you have added the apps included with you're Intune license to the Intune console, consider adding the apps that the members of your organization use most often. Those apps may be store apps, line-of-business apps, or web apps. Store apps can be purchased or acquired in-volume.
 
+Use the following steps to add in-volume apps to Intune:
+
+1. Determine which apps are used most by members of your organization.
+2. Narrow your app list to focus on the apps that are most used and most needed.
+3. Determine which apps require your organization to have a license for the apps and that are not already included as part of your Intune license.
+4. Determine which apps are available in the Microsoft, Apple, or Google app stores as part of a [volume purchase program](apps-purchase-volume.md). 
+
+    > [!NOTE]
+    > Many apps that are part of a volume purchase program allow your organization to obtain the app license for free. 
+
+5. Based on your [organization's app platform needs](apps-add-step-1.md#determine-the-platforms-needed-for-each-app), add your needed apps in-volume:
+    1. Use [Microsoft Store for Business](apps-purchase-volume.md#microsoft-store-for-business) to purchase or acquire apps in-volume:
+        1. [Set up Microsoft Store for Business](apps-purchase-volume.md#set-up-microsoft-store-for-business)
+        2. [Purchase apps using Microsoft Store for Business](apps-purchase-volume.md#purchase-apps-using-microsoft-store-for-business)
+        3. [Sync purchased Windows app licenses with Microsoft Intune](apps-purchase-volume.md#sync-purchased-windows-app-licenses-with-microsoft-intune)
+    2. Use [Apple Business Manager](apps-purchase-volume.md#apple-business-manager) to purchase or acquire apps in-volume:
+        1. [Set up Apple Business Manager](apps-purchase-volume.md#set-up-apple-business-manager)
+        2. [Purchase apps using Apple Business Manager](apps-purchase-volume.md#purchase-apps-using-apple-business-manager)
+        3. [Sync purchased Apple app licenses with Microsoft Intune](apps-purchase-volume.md#sync-purchased-apple-app-licenses-with-microsoft-intune)
+    3. Use [Managed Google Play](apps-purchase-volume.md#managed-google-play) to acquire apps in-volume:
+        1. [Add a Managed Google Play store app to Intune](apps-purchase-volume.md#add-a-managed-google-play-store-app-to-intune)
 
 ## Add Windows, iOS, and Android store apps to Intune
 
+Many of the standard store apps displayed from within Microsoft Intune are freely available for you to add and deploy to members of your organization. In addition, you can purchase store apps for each device platform.
 
+Use the following steps to add store apps to Intune:
 
+1. Determine which apps are needed by members of your organization that haven't already been add to Intune using the step above.
+2. Determine which of those apps require your organization to have a license for the apps.
+3. Determine which apps are available in the Microsoft, Apple, or Google app stores.
+4. Determine each [store app type](apps-type-store.md) that your organization requires.
+5. [Add store apps](apps-purchase-store.md#add-store-apps-based-on-platform) based on your [organization's app platform needs](apps-add-step-1.md#determine-the-platforms-needed-for-each-app).
+   
 ## Add Line-of-Business apps to Intune
 
+A line-of-business (LOB) apps are apps that you add to Microsoft Intune from an app installation file. These apps are often created in-house for your organization and support a specific purpose for your organization. To include LOB apps in your managed environment, you upload the app installation file to Intune and assign the app to devices or groups from Intune. LOB apps are supported by Intune for Android devices, iOS/iPadOS devices, Windows, and macOS devices. For more information about line-of-business apps, see [Understand line-of-business apps for Intune](apps-type-lob.md).
+
+Use the following steps to add line-of-business apps to Intune:
+
+1. Determine the platform(s) your LOB app requires.
+2. Determine your specific [LOB app type](apps-type-lob.md#line-of-business-apps-types).
+3. Add your LOB apps to Intune based on app type:
+    1. [Android LOB apps](/mem/intune/apps/lob-apps-android)
+    2. [iOS/iPadOS LOB apps](/mem/intune/apps/lob-apps-ios)
+    3. [Windows LOB apps](/mem/intune/apps/lob-apps-windows)
+    4. [Win32 apps](/mem/intune/apps/apps-win32-app-management)
+    5. [Mac LOB apps](/mem/intune/apps/lob-apps-macos)
+   
 

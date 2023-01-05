@@ -16,7 +16,7 @@ keywords:
 
 # Purchase store apps in Intune
 
-Many of the standard store apps displayed within [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are freely available for you to add and deploy to members of your organization. In addition, you can purchase store apps for each device platform.
+Many of the standard store apps displayed from within Microsoft Intune are freely available for you to add and deploy to members of your organization. In addition, you can purchase store apps for each device platform.
 
 The following table provides the different categories available for store apps:
 

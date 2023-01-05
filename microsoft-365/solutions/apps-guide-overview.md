@@ -16,7 +16,7 @@ keywords:
 
 # Purchase and add apps in your managed environment
 
-To help protect and secure your organization’s data, you can provide your members of your organization with managed apps so they can safely collaborate and be productive. Managed apps are those apps that have been enhanced to support special configuration and protection capabilities. These capabilities are managed and maintained by Microsoft Intune. Intune provides a web-based console to manage, protect, and monitor all of your organization's endpoints, whether those endpoints are devices or apps. This console helps keep your organization's cloud and on-premises devices, apps, and data secure. The Microsoft Intune product family integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot.
+To help protect and secure your organization’s data, you can provide the members of your organization with managed apps so they can safely collaborate and be productive. Managed apps are those apps that have been enhanced to support special configuration and protection capabilities. These capabilities are managed and maintained by a endpoint management solution, such as Microsoft Intune. Intune provides a web-based console to manage, protect, and monitor all of your organization's endpoints, whether those endpoints are devices or apps. The capabilities provided by Intune helps to keep your organization's cloud and on-premises devices, apps, and data secure. The Microsoft Intune product family integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot.
 
 > [!NOTE]
 > Endpoints include the mobile devices, desktop computers, virtual machines, embedded devices, servers, and shared devices that your organization uses. Examples of shared and specialized devices include retail point of sale devices, ruggedized devices, digital interactive whiteboards, conference room devices, and holographic wearable computers. Additionally, endpoints also include the apps used by your organization.
@@ -31,13 +31,13 @@ Microsoft Endpoint Manager supports two MAM configurations:
 
 ### MAM without device management
 
-Managing the apps that the members of your organization uses on their devices is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed. This configuration allows your organization's apps to be managed by Intune, but doesn't enroll the devices to be managed by Intune. This configuration is commonly referred to as **MAM without device enrollment**, or **MAM-WE**. IT administrators can manage apps using MAM by using Intune configuration and protection policies on devices not enrolled with Intune Mobile Device Management (MDM). MAM is ideal to help protect organization data on devices used by members of your organization for both personal and work tasks.
+Managing the apps that the members of your organization uses on their devices is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed. This configuration allows your organization's apps to be managed by Intune, but doesn't enroll the devices to be managed by Intune. This configuration is commonly referred to as **MAM without device enrollment**, or **MAM-WE**. IT administrators can manage apps using MAM by using Intune configuration and protection policies on devices not enrolled with Intune Mobile Device Management (MDM). In the MAM scenario, the apps are managed based on the signed-in user of the app on the device. MAM is ideal to help protect organization data on devices used by members of your organization for both personal and work tasks.
 
 > [!TIP]
 >  Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM. See the official list of [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps) available for public use.
 
 If you choose to use MAM without device enrollment, there are some limitations to be aware of, such as:
-- You can't deploy apps to the device. The end user has to get the apps from the store.
+- You can't specifically deploy apps directly to the device. The end user has to get the apps from the store.
 - You can't provision certificate profiles on these unmanaged devices.
 - You can't provision company Wi-Fi and VPN settings on these unmanged devices.
 
@@ -81,11 +81,11 @@ When apps are managed in Intune, administrators can do the following:
 
 ## Understand app types
 
-The users of apps and devices at your company (your company's workforce) might have several app requirements. Before adding apps to Intune and making them available to your workforce, you may find it helpful to assess and understand a few app fundamentals. There are various types of apps that are available for Intune. You must determine app requirements that are needed by the users at your company, such as the platforms and capabilities that your workforce needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Also, you must determine the apps and capabilities that your workforce needs, and who needs them. For more information, see [App types for managed environments](apps-type-overview.md) for an overview.
+The users of apps and devices at your company (your company's workforce) might have several app requirements. Before adding apps to Intune and making them available to your workforce, you may find it helpful to assess and understand a few app fundamentals. There are various types of apps that are available for Intune. You must determine app requirements that are needed by the users at your company, such as the platforms and capabilities that your workforce needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Also, you must determine the apps and capabilities that your workforce needs, and who needs them. For more information, see [App types for managed environments](apps-type-overview.md) or an overview.
 
 ## Purchase apps
 
-Often times, before you can distribute an app to your workforce, you must either purchase the app or purchase a license to use the app. Some apps are free, however you may still need to follow the purchase process in order to distribute those apps to your workforce. For more information, see [Purchase apps for Intune](apps-purchase-overview.md) for an overview.
+Often times, before you can distribute an app to your workforce, you must either purchase the app, purchase a license to use the app, or acquire a license to use the app. Some apps are free, however you may still need to follow the purchase process in order to distribute those apps to your workforce. For more information, see [Purchase apps for Intune](apps-purchase-overview.md) for an overview.
 
 ## Add apps to Intune
 
@@ -101,10 +101,11 @@ Once you have reviewed and understand app types, app purchases, and app licenses
 4. [Add apps to Intune](apps-add-step-4.md)
 5. [Manage apps and licenses](apps-add-step-5.md)
 
+<!--
 ## Additional app resources
 
 Key information from Microsoft:
 
-<!--
+
 https://review.learn.microsoft.com/microsoft-365/solutions/ransomware-protection-microsoft-365-information?view=o365-worldwide#additional-ransomware-resources
 -->
