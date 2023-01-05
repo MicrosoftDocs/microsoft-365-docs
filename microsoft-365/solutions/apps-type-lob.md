@@ -36,4 +36,6 @@ You can create LOB apps that are supported by Intune for each Android, iOS/iPadO
 | macOS apps (DMG) | macOS apps (DMG) apps are typically developed in-house. This app type requires you to upload an Android *.dmg* file to Intune. Intune installs the LOB app on the user's device. The Microsoft Intune management agent is necessary to be installed on managed macOS devices in order to enable advanced device management capabilities that are not supported by the native macOS operating system. |
 | Windows app (Win32) | Windows LOB apps are typically developed in-house. This app type requires you to upload a Windows app package file. Win32 apps must be contained in a *.intunewin* file to upload to Intune. Intune installs the LOB app on the user's device using a process called sideloading, which allows an app that isn't certified by the Microsoft Store to be installed. Intune supports both 32-bit and 64-bit operating system architecture for this file type. Win32 apps offer more control within Intune than a Windows LOB app.  |
 
+<!-- 
 ## Android line-of-business (LOB) apps
+-->

@@ -16,11 +16,11 @@ keywords:
 
 # Manage app licenses used in Intune
 
-Before you can manage app licenses in Intune, you much first purchase them. Purchasing app licenses involves first creating a business account for each platform according to each vendor's process. This process is commonly called a "volume purchase program" where you purchase app tokens. Each token represents a individual user license for the related app. Once you have purchased the app tokens that you need, you can sync those tokens with Intune. When the tokens have been sync'd, you can add the app to Intune and then assign the app to end users.
+Before you can manage app licenses in Intune, you much first add the apps to Intune. Part of adding the app to Intune may require you to purchase app licenses for your organization. This process involves first creating a business account for each platform according to each vendor's process. This process is commonly called a "volume purchase program" where you purchase app tokens. Each token represents a individual user license for the related app. Once you have purchased the app tokens that you need, you can sync those tokens with Intune. When the tokens have been sync'd, you can add the app to Intune and then assign the app to end users.
 
 For more information about purchasing apps in-volume for each platform type, see [Purchase apps in-volume for Intune](apps-purchase-volume.md).
 
-## Manage app store tokens
+## Manage app store licenses
 
 Once you have purchases the licenses as tokens for the apps you want to assign to the members of your organization, you can manage those tokens in Intune. As previously mentioned, Intune provides volume purchased store apps as tokens for each of the following categories:
 - Microsoft Store for Business
