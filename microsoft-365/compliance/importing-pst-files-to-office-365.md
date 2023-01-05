@@ -93,11 +93,11 @@ Here's an illustration and description of the complete PST import process. The i
 
   - Enable [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](autoexpanding-archiving.md) to give users additional mailbox storage space.
 
-  - Place mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain content.
+  - Place mailboxes on [Litigation Hold](./ediscovery-create-a-litigation-hold.md) to retain content.
 
-  - Use the [Content Search tool](content-search.md) to search for mailbox content.
+  - Use the [Content Search tool](ediscovery-content-search.md) to search for mailbox content.
 
-  - Use [eDiscovery cases](./get-started-core-ediscovery.md) to manage your organization's legal investigations
+  - Use [eDiscovery cases](./ediscovery-standard-get-started.md) to manage your organization's legal investigations
 
   - Use [retention policies](retention.md) in the compliance portal to control how long mailbox content is retained, and then delete content after the retention period expires.
 

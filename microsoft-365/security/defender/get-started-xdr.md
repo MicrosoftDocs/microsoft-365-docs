@@ -1,7 +1,7 @@
 ---
 title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
-description: Once the Defender Experts for XDR team are ready to onboard you, we’ll reach out to get you started.
+description: Once the Defender Experts for XDR team are ready to onboard you, we'll reach out to get you started.
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis, Microsoft XDR service
 search.product: Windows 10
 ms.service: microsoft-365-security
@@ -31,7 +31,7 @@ search.appverid: met150
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Once the Defender Experts for XDR team is ready to onboard you, we’ll reach out to get you started.
+Once the Defender Experts for XDR team is ready to onboard you, we'll reach out to get you started.
 
 ## Activate your trial license
 
@@ -41,9 +41,9 @@ Once the Defender Experts for XDR team is ready to onboard you, we’ll reach ou
 
 ## Grant permissions to our experts
 
-By default, Defender Experts for XDR require the following permissions to investigate incidents and notify you when you need to take action:
+By default, Defender Experts for XDR requires the following permissions to investigate incidents and notify you when you need to take action:
 
-- **Service provider access** - This permission lets our experts sign in to your tenant and deliver services based on assigned security roles. For details [learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview).
+- **Service provider access** - This permission lets our experts sign in to your tenant and deliver services based on assigned security roles. For details, [learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview).
 - **Security reader** - This built-in Azure Active Directory (Azure AD) role lets our experts investigate incidents and provide guidance on necessary response actions.
 
 You can also provide our experts the following permissions to investigate incidents on your behalf:
@@ -55,7 +55,7 @@ You can also provide our experts the following permissions to investigate incide
 
 Follow these steps to grant our experts additional permissions:
 
-1. In the same Defender Experts setting page mentioned earlier, select **Manage permissions**.
+1. In the same Defender Experts settings page mentioned earlier, select **Manage permissions**.
 2. Under **Additional permissions**, select the other role(s) you want to grant.
 3. Select **Give access**.
 
@@ -65,4 +65,3 @@ Follow these steps to grant our experts additional permissions:
 ## Go to the next step
 
 [Start using Microsoft Defender Experts for XDR preview service](start-using-mdex-xdr.md)
-

@@ -49,7 +49,7 @@ DLP policies are how you monitor the activities that users take on sensitive ite
 - for data at rest, sensitive items can be locked and moved to a secure quarantine location
 - for Teams chat, the sensitive information will not be displayed
 
-All DLP monitored activities are recorded to the [Microsoft 365 Audit log](search-the-audit-log-in-security-and-compliance.md) by default and routed to [Activity explorer](data-classification-activity-explorer.md). When a user performs an action that meets the criteria of a DLP policy, and you have alerts configured, DLP provides alerts in the [DLP alert management dashboard](dlp-configure-view-alerts-policies.md).
+All DLP monitored activities are recorded to the [Microsoft 365 Audit log](audit-log-search.md) by default and routed to [Activity explorer](data-classification-activity-explorer.md). When a user performs an action that meets the criteria of a DLP policy, and you have alerts configured, DLP provides alerts in the [DLP alert management dashboard](dlp-configure-view-alerts-policies.md).
 
 ## DLP lifecycle
 
@@ -101,17 +101,15 @@ Start by defining your control objectives, and how they apply across each respec
 
 #### Implement policy in test mode
 
-Evaluate the impact of the controls by implementing them with a DLP policy in test mode. It's ok to apply the policy to all workloads in test mode, so that you can get the full breadth of results, but you can start with one workload if you need to.
+Evaluate the impact of the controls by implementing them with a DLP policy in test mode. Actions defined in a policy are not applied while the policy is in test mode. It's ok to apply the policy to all workloads in test mode, so that you can get the full breadth of results, but you can start with one workload if you need to.
 
 #### Monitor outcomes and fine-tune the policy
 
 While in test mode, monitor the outcomes of the policy and fine-tune it so that it meets your control objectives while ensuring you aren't adversely or inadvertently impacting valid user workflows and productivity. Here are some examples of things to fine-tune:
 
 - adjusting the locations and people/places that are in or out of scope
-- tune the conditions and exceptions that are used to determine if an item and what is being done with it matches the policy
+- tune the conditions that are used to determine if an item and what is being done with it matches the policy
 - the sensitive information definition/s
-- the actions
-- the level of restrictions
 - add new controls
 - add new people
 - add new restricted apps
@@ -126,8 +124,6 @@ Once the policy meets all your objectives, turn it on. Continue to monitor the o
 
 > [!NOTE]
 > In general, policies take effect about an hour after being turned on.
-
-<!--See, LINK TO topic for SLAs for location specific  details-->
 
 ## DLP policy configuration overview
 
@@ -181,7 +177,7 @@ After the policy's synced to the right locations, it starts to evaluate content 
 
 ## Viewing policy application results
 
-DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
+DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview compliance portal Audit Logs](audit-log-search.md#search-the-audit-log-in-the-compliance-portal) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
 ### DLP Alerts Dashboard
 

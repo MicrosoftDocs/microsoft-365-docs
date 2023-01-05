@@ -65,7 +65,7 @@ You can use a retention policy to retain data from chats and channel messages in
 These mailboxes are, listed by their RecipientTypeDetails attribute:
 
 - **UserMailbox**: These mailboxes store message data for cloud-based Teams users.
-- **MailUser**: These mailboxes store message data for [on-premises Teams users](search-cloud-based-mailboxes-for-on-premises-users.md).
+- **MailUser**: These mailboxes store message data for [on-premises Teams users](ediscovery-search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: These mailboxes store message data for Teams standard channels.
 - **SubstrateGroup**: These mailboxes store message data for Teams shared channels.
 
