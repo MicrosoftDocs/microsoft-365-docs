@@ -22,8 +22,6 @@ ms.date: 10/28/2022
 
 # Known issues: Team Shifts connector for UKG Dimensions
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
 This article lists known issues for the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions).
 
 ## You can map an instance to more than one team using PowerShell or Microsoft Graph
