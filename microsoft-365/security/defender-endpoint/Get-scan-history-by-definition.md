@@ -65,7 +65,7 @@ Delegated (work or school account)|Machine.Read.All|Read all scan information.
 ## HTTP request
 
 ```http
-POST api/DeviceAuthenticatedScanDefinitions/ScanHistoryByScanDefinitionId
+POST api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId
 ```
 
 ## Request headers
@@ -92,7 +92,7 @@ If successful, this method returns 200 - OK response code with a list of the sca
 Here is an example of the request.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryByScanDefinitionId
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId
 ```
 
 ```json
@@ -105,7 +105,7 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
 {
-"@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/ScanHistoryByScanDefinitionId",
+"@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId",
     "value": [
     {
     "ScanDefinitionId": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
