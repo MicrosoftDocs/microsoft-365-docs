@@ -1,5 +1,5 @@
 ---
-title: "Get started with the migration assistant for Microsoft Purview DLP"
+title: "Get started with the Microsoft Purview Data Loss Prevention migration assistant for Symantec"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -17,19 +17,19 @@ ms.collection:
 - highpri
 search.appverid: 
 - MET150
-description: "This article describes the prerequisites and configuration of the migration assistant tool for Microsoft Purview DLP."
+description: "This article describes the prerequisites and configuration of the Microsoft Purview Data Loss Prevention migration assistant for Symantec."
 ---
 
-# Get started with the migration assistant for Microsoft Purview DLP (preview)
+# Get started with the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
 
-This article walks you through the prerequisites and installation of the [migration assistant tool for Microsoft Purview DLP](migration-assistant-for-dlp-learn.md).
+This article walks you through the prerequisites and installation of the [Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-learn.md).
 
 ## Before you begin
 
-If you're using the migration assistant for Microsoft Purview DLP for the first time, ensure the following prerequisites are met:
+If you're using the Microsoft Purview Data Loss Prevention migration assistant for Symantec for the first time, ensure the following prerequisites are met:
 
 > [!TIP]
-> In case you are facing issues with launching the application after completing all the steps in this article, refer to [Troubleshooting](migration-assistant-for-dlp-use.md#troubleshooting).
+> In case you are facing issues with launching the application after completing all the steps in this article, refer to [Troubleshooting](dlp-migration-assistant-for-symantec-use.md#troubleshooting).
 
 ### 1. Have appropriate Microsoft 365 subscription
 
@@ -67,7 +67,7 @@ You need to export these policies as XMLs from Symantec DLP. You can export the 
 
 ## Installation steps
 
-Follow these steps to install the migration assistant for Microsoft Purview DLP:
+Follow these steps to install the Microsoft Purview Data Loss Prevention migration assistant for Symantec:
 
 1. Download and launch **[MigrationAssistantforMicrosoftPurviewDLP.msi]( https://aka.ms/DLPMigrationAssistant)** file.
 2. The following dialog box will open. Click **Next**.
@@ -87,13 +87,13 @@ Follow these steps to install the migration assistant for Microsoft Purview DLP:
 
 ## Next steps
 
-Now that you have installed migration assistant for Microsoft Purview DLP (preview), you're ready to move on to your next step where you use the migration tool.
+Now that you have installed Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview), you're ready to move on to your next step where you use the migration tool.
 
-- [Using the migration assistant for Microsoft Purview DLP](migration-assistant-for-dlp-use.md)
+- [Using the Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-use.md)
 
 ## See also
 
-- [Learn about the migration assistant for Microsoft Purview DLP](migration-assistant-for-dlp-learn.md)
+- [Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-learn.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

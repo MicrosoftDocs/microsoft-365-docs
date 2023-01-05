@@ -1,5 +1,5 @@
 ---
-title: "Use the migration assistant for Microsoft Purview DLP"
+title: "Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,16 +18,16 @@ ms.collection:
 - highpri
 search.appverid:
 - MET150
-description: "Learn how to use the migration assistant for Microsoft Purview DLP to migrate your DLP policies from other DLP platforms to Microsoft's DLP platform."
+description: "Learn how to use the Microsoft Purview Data Loss Prevention migration assistant for Symantec to migrate your DLP policies from other DLP platforms to Microsoft's DLP platform."
 ---
 
-# Use the migration assistant for Microsoft Purview DLP (preview)
+# Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
 
-This article takes you through an instance of migration using the [migration assistant tool for Microsoft Purview DLP](migration-assistant-for-dlp-learn.md).
+This article takes you through an instance of migration using the [Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-learn.md).
 
 Before you start with migration, ensure you've met the prerequisites mentioned below:
 
-- Complete the steps in the [Before you begin](migration-assistant-for-dlp-get-started.md#before-you-begin) section.
+- Complete the steps in the [Before you begin](dlp-migration-assistant-for-symantec-get-started.md#before-you-begin) section.
 - Upload XML file exports of your DLP policies exported from Symantec DLP 15.7 or earlier.
 - Review and edit your DLP policy.
 - Create a new DLP policy in your Microsoft 365 tenant equivalent to your input policy.
@@ -49,14 +49,14 @@ Use these steps to perform a DLP policy migration:
 
 ### Step 1: Log in to your account
 
-After you've installed and launched the migration assistant for Microsoft Purview DLP, the first thing that you need to do is to log in.
+After you've installed and launched the Microsoft Purview Data Loss Prevention migration assistant for Symantec, the first thing that you need to do is to log in.
 
 > [!IMPORTANT]
 > The first time you launch the migration assistant, please choose **Run as administrator** option. This is required as the migration assistant may need to install additional dependencies if they are not already available on your machine.
 >
 > For all subsequent launches, you may launch the migration assistant normally and don't need to run as administrator.
 
-:::image type="content" source="../media/migration-assistant-run-as-admin.png" alt-text="Screenshot of the migration assistant Run as administrator dialog box.":::
+:::image type="content" source="../media/migration-assistant-run-as-admin.png" alt-text="Screenshot of the migration assistant run as administrator dialog box.":::
 
 1. You'll be greeted with a welcome screen.
     1. Click the **Get Started** button and the migration assistant will check if your environment is set up correctly.
@@ -347,7 +347,7 @@ You should go to the Compliance Center and validate that the policies were migra
 1. Welcome screen/Get started error
 
     If you see an error on Welcome screen after clicking Get Started button:
-     1. Confirm that you've installed all the pre-requisites using the same links/versions as mentioned in [Before you start](migration-assistant-for-dlp-get-started.md#before-you-begin).
+     1. Confirm that you've installed all the pre-requisites using the same links/versions as mentioned in [Before you start](dlp-migration-assistant-for-symantec-get-started.md#before-you-begin).
      2. Ensure that you've restarted the machine after installing the pre-requisites from the above step.
      3. Check if you're running the tool in admin mode using **Run as administrator** option while starting the application.
      4. Check if your PowerShell module path is set correctly. To check:
@@ -376,7 +376,7 @@ There are also some features in the software that may enable you and Microsoft t
 
 ## See also
 
-- [Learn about migration assistant for Microsoft Purview DLP](migration-assistant-for-dlp-learn.md)
-- [Get started with migration assistant for Microsoft Purview DLP](migration-assistant-for-dlp-get-started.md)
+- [Learn about Microsoft Purview Data Loss Prevention migration assistant for Symantec](migration-assistant-for-dlp-learn.md)
+- [Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-get-started.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)

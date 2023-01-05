@@ -1,5 +1,5 @@
 ---
-title: "Learn about the migration assistant for Microsoft Purview DLP"
+title: "Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,15 +20,15 @@ search.appverid:
 description: "The migration assistant tool is a Windows based desktop application that will migrate your DLP policies from other DLP platforms to Microsoft DLP platform."
 ---
 
-# Learn about the migration assistant for Microsoft Purview DLP (preview)
+# Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
 
-This article helps you to learn about the migration assistant for Microsoft Purview DLP.
+This article helps you to learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec.
 
-The migration assistant tool is a Windows-based desktop application that will migrate your DLP policies from other DLP platforms to our DLP platform. This tool takes you through a simple five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can safely use the migration assistant tool to create DLP policies in test mode, which doesn't affect your live data or interact with current environment.
+The migration assistant tool is a Windows-based desktop application that will migrate your DLP policies from other DLP platforms to our DLP platform. This tool takes you through a simple five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can safely use the migration assistant tool to create DLP policies in test mode, which doesn't affect your live data or interact with production environment.
 
-## Tasks that migration assistant can perform
+## What can the migration assistant help with?
 
-The migration assistant helps with some of the tasks involved in a DLP migration project:
+The migration assistant helps with some of the tasks involved in a Data Loss Prevention (DLP) migration project:
 
 - In traditional migration scenario, you need to perform feasibility analysis between source and target DLP platforms, map the features, migrate policies manually, and test and tweak DLP policies. With the migration assistant, your migrated DLP policies can be up and running within minutes of starting the migration assistant process.
 - With migration assistant, you can scale up your migration project quickly from moving a single policy manually to multiple policies at the same time.
@@ -36,15 +36,14 @@ The migration assistant helps with some of the tasks involved in a DLP migration
 - The migration assistant detects which conditions, exclusions & actions are currently being used in source policies and automatically creates new rules with the same conditions, and actions.
 - The migration assistant provides you with a detailed migration report that includes the migration status and recommendations at the policy level.
 - The migration assistant ensures that your DLP policy migration project is private and takes place within the boundaries of your organization.
-- The migration assistant supports policy migration from Symantec Data Loss Prevention 15.7 or earlier.
 
-## How does the migration assistant for Microsoft Purview DLP work?
+## How does the Microsoft Purview Data Loss Prevention migration assistant for Symantec work?
 
 The following diagram illustrates the migration process:
 
-:::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of migration assistant for DLP.":::
+:::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of Microsoft Purview Data Loss Prevention migration assistant for Symantec.":::
 
-Each time the migration assistant runs, it follows these five phases:
+Each time the migration assistant runs, it executes the following steps:
 
 - **Input:** The migration assistant ingests one or more Symantec DLP policy XML files.
 - **Analyze:** The migration assistant interprets the files and identifies Symantec DLP policy constructs.
@@ -58,10 +57,7 @@ The following section describes how the migration assistant translates different
 
 ### Symantec DLP supported versions
 
-The migration assistant supports migration of policies from Symantec DLP 15 and higher.
-
-> [!NOTE]
-> Some DLP policy exports from earlier versions of Symantec DLP may still work with the tool.
+The migration assistant supports migration of policies for Symantec versions (including maintenance packs) 15.0 to 15.7 (both inclusive).
 
 ### Supported Workloads
 
@@ -69,29 +65,29 @@ The migration assistant migrates policies into Microsoft DLP only for the worklo
 
 | **Workload**  | **Migration assistant support** |
 | ------------------------------- | ------------------------------- |
-| Exchange (EXO)| Yes           |
-| Share Point Online (SPO)        | Yes           |
-| One Drive for Business (ODB)    | Yes           |
-| Teams Chat and Channel messages | Yes           |
-| Devices       | Yes           |
+| Exchange Online (EXO)| Yes           |
+| SharePoint Online (SPO)        | Yes           |
+| OneDrive for Business (ODB)    | Yes           |
+| Teams chat and channel messages | Yes           |
+| Endpoint devices       | Yes           |
 
 > [!TIP]
-> For workloads other than the workloads detected in input policy, the migration assistant provides the ability to extend the policy to other workloads.
+>The migration assistant provides the capability for Microsoft DLP policy coverage to be extended to more workloads than those detected in the input Symantec DLP policy.
 
 ### Classification Elements
 
 The following table details the mapping of classification elements that the migration assistant uses while translating Symantec DLP policies:
 
-| **Symantec Classification Element** | **M365 DLP Classification Element**           |
+| **Symantec Classification Element** | **Microsoft 365 DLP Classification Element**           |
 | ---------------------- | ------------------------- |
-| Regular Expression| Create new custom SIT with regular expression.|
+| Regular Expression| Create new custom sensitive information type (SIT) with the regular expression.|
 | Keyword           | Create new custom SIT with a keyword list or keyword dictionary.|
 | Keyword Pair      | Create new custom SIT with first keyword list as primary element & second keyword list as a supporting element with 300 char proximity. |
-| Data Identifier   | Map to OOB SIT if equivalent available else, create new custom SIT.   |
+| Data Identifier   | Map to pre-configured SIT if an equivalent is available, else create a new custom SIT. |
 
 The following table details the mapping of optional validators for sensitive information types (also known as Data Identifiers in Symantec DLP) that the migration assistant uses while translating Symantec DLP policies:
 
-| **Symantec Optional Validators**  | **M365 DLP Optional Validators**|
+| **Symantec Optional Validators**  | **Microsoft 365 DLP Optional Validators**|
 | -------------------- | ------------------ |
 | Exclude exact match               | Exclude specific matches      |
 | Exact Match Data Identifier Check | NA          |
@@ -125,11 +121,11 @@ When you upload your rule package XML file, the system validates the XML and che
 
 ### Condition and Exception Mapping
 
-The following table details the mapping of condition and exception elements for Exchange (EXO) workload, Endpoint Devices, SharePoint Online, OneDrive and Other Workloads that the migration assistant uses while translating Symantec DLP policies:
+The following table details the mapping of condition and exception elements for various Workloads that the migration assistant uses while translating Symantec DLP policies:
 
 #### Exchange Workload
 
-| **Condition/Exception in Symantec**   | **Condition/Exception in M365 DLP**       |
+| **Condition/Exception in Symantec**   | **Condition/Exception in Microsoft 365 DLP**       |
 | ------------------ | -------------------------------------- |
 | Content Matches Regular Expression    | Content contains SIT    |
 | Content Matches Keyword               | Content contains SIT    |
@@ -151,7 +147,7 @@ The following table details the mapping of condition and exception elements for 
 
 #### Endpoint Devices, SharePoint Online, OneDrive & Other Workloads
 
-| **Condition/Exception in Symantec**   | **Condition/Exception in M365 DLP**   |
+| **Condition/Exception in Symantec**   | **Condition/Exception in Microsoft 365 DLP**   |
 | ----------- | ------------------- |
 | Content Matches Regular Expression    | Content contains SIT |
 | Content Matches Keyword               | Content contains SIT |
@@ -164,7 +160,7 @@ The following table details the mapping of condition and exception elements for 
 
 The following table details the mapping of Symantec response rules to Microsoft 365 DLP actions that the migration assistant uses while translating Symantec DLP policies:
 
-| **Symantec Response Rule** | **M365 DLP Action**|
+| **Symantec Response Rule** | **Microsoft 365 DLP Action**|
 | ----------------- | ----------------- |
 | Generate DLP Incident      | Generate Alert     |
 | Logging (Syslog)           | Audit logs         |
@@ -176,7 +172,7 @@ The following table details the mapping of Symantec response rules to Microsoft 
 
 ## Next steps
 
-Now that you've learned about the migration assistant tool for Microsoft Purview DLP, your next steps are:
+Now that you've learned about the Microsoft Purview Data Loss Prevention migration assistant for Symantec, your next steps are:
 
-1. [Get started with the migration assistant for Microsoft Purview DLP](migration-assistant-for-dlp-get-started.md)
-2. [Use the migration assistant for Microsoft Purview DLP](migration-assistant-for-dlp-use.md)
+1. [Get started with the Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-get-started.md)
+2. [Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-use.md)
