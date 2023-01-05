@@ -33,7 +33,7 @@ If you're using the Microsoft Purview Data Loss Prevention migration assistant f
 
 ### 1. Have appropriate Microsoft 365 subscription
 
-On the basis of the workloads you need to cover for the policies created by the tool, you will need the appropriate DLP licensing indicated [here](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Based on the workloads you need to cover for the policies created by the tool, you'll need the appropriate DLP licensing indicated [here](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-loss-prevention-endpoint-data-loss-protection-dlp).
 
 ### 2. Have appropriate user role & privileges
 
