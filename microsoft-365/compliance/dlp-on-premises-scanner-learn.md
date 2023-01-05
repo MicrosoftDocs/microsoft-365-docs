@@ -20,7 +20,7 @@ ms.collection:
 - highpri
 search.appverid: 
 - MET150
-description: "The data loss prevention on-premises scanner extends monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries. Files are scanned and protected by Azure Information Protection (AIP) scanner"
+description: "The data loss prevention on-premises scanner extends monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries. Files are scanned and protected by Purview Information Protection scanner"
 ---
 
 # Learn about the data loss prevention on-premises scanner
@@ -41,6 +41,7 @@ The DLP on-premises scanner relies on a full implementation of the Azure Informa
 - [Configuring and installing the information protection scanner](deploy-scanner-configure-install.md)
 - [Azure Information Protection unified labeling client - Version release history and support policy](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 
+<!--THIS IS DLP SPECIFIC 
 ## DLP on-premises scanner actions
 
 DLP on-premises scanner detects files by one of these four methods:
@@ -82,7 +83,7 @@ Now that you've learned about DLP on-premises scanner, your next steps are:
 
 1. [Get started with the DLP on-premises scanner](dlp-on-premises-scanner-get-started.md)
 2. [Use the DLP on-premises scanner](dlp-on-premises-scanner-use.md)
-
+-->
 ## See also
 
 - [Getting started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md)
