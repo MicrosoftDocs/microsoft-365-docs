@@ -176,7 +176,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - Discover IoT devices (preview): [Device discovery](device-discovery.md) now has the ability to help you find unmanaged IoT devices connected to your corporate network. This gives you a single unified view of your IoT inventory alongside the rest of your IT devices (workstations, servers, and mobile).
 
-- [Microsoft Defender for IoT integration (preview)](enable-microsoft-defender-for-iot-integration.md): This integration enhances your device discovery capabilities with the agentless monitoring capabilities provided by Microsoft Defender for IoT. This provides increased visibility to help locate, identify, and secure the IoT devices in your network.
+- Microsoft Defender for IoT integration (preview): See [Enable Enterprise IoT security with Defender for Endpoint](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint/). This integration enhances your device discovery capabilities with the agentless monitoring capabilities provided by Microsoft Defender for IoT. This provides increased visibility to help locate, identify, and secure the IoT devices in your network.
 
 ## November 2021
 
