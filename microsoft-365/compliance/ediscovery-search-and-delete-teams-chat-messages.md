@@ -157,7 +157,7 @@ You can also purge chat messages using PowerShell. For example, to purge message
 Connect-MgGraph -Scopes "ediscovery.ReadWrite.All" -Environment USGov
 ``
 
-``Invoke-MgGraphRequest  -Method POST -Uri '/v1.0/security/cases/ediscoveryCases/<case ID>/searches/<search ID>/purgeData'
+``Invoke-MgGraphRequest  -Method POST -Uri '/v1.0/security/cases/ediscoveryCases/<ediscoverySearchID>/searches/<search ID>/purgeData'
 ``
 
 For more information on using PowerShell to purge chat messages, see [ediscoverySearch: purgeData](/graph/api/security-ediscoverysearch-purgedata?view=graph-rest-1.0).
