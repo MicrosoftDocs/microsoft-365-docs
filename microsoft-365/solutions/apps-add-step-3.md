@@ -59,13 +59,13 @@ Use the following steps to set up in-volume app purchases for Windows devices:
 
 ### Managed Google Play store
 
-Apps for Android devices that run Android OS can be acquired in-volume using Google Play store. The Managed Google Play store is a web-based portal that allows you to sync and manage apps using Intune.
+Apps for Android devices that run Android OS can be acquired in-volume from the Managed Google Play store. The Managed Google Play store is a web-based portal that allows you to sync and manage apps using Intune.
 
 Use the following steps to sync apps from the Managed Google Play store with Intune:
 
 1. [Connect Your Intune tenant to Managed Google Play](apps-purchase-volume.md#set-up-apple-business-manager).
 2. [Approve Managed Google Play apps](apps-purchase-volume.md#purchase-apps-using-apple-business-manager).
-3. [Sync Managed Google Play apps with Microsoft Intune](apps-purchase-volume.md#sync-purchased-windows-app-licenses-with-microsoft-intune).
+3. [Sync Managed Google Play apps with Microsoft Intune](apps-purchase-volume.md#add-a-managed-google-play-store-app-to-intune).
 
 > [!NOTE]
 > Purchase a custom line-of-business app

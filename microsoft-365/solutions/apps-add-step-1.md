@@ -24,10 +24,8 @@ To start, first determine your organization's requirements by asking the questio
 |---|---|
 | Does my organization need to use Mobile Application Management (MAM) or Mobile Device Management (MDM)? | Intune supports both MAM and MDM. MAM without device management allows just your organization's apps to be managed by Intune, without enrolling the devices to be managed by Intune. MAM with device management (known as MDM) allows your organization's apps and devices to be managed. There's advantages to each management method. For more information, see [Understanding MAM and MDM](#understanding-mam-and-mdm).  |
 | What platforms do members of my organization use? | Intune supports a number of device platforms. You should consider supporting all possible device platforms that members of your organization use to access corporate data. For more information, see [Determine the platforms needed for each app](#determine-the-platforms-needed-for-each-app). |
-| Which apps are needed to access company information and data? | Determine which apps are currently used by members of your organization and which apps need to be available or added. For more information, see [Determine the type of app for your solution](#determine-the-type-of-app-for-your-solution). |
+| Which apps are needed to access company information and data? | Determine which apps are currently used by members of your organization and which apps need to be available or added. For more information, see [Determine apps needed for your organization](#determine-apps-needed-for-your-organization). |
 | Which groups of users need specific apps? | Intune allows you to add users to be managed. You can create groups of users to organize your devices and apps. For more information, see [Determine who will use the app](#determine-who-will-use-the-app). |
-| Is there helpful configuration needed for each app? | App configuration policies can help you eliminate app setup problems by letting you assign configuration settings to a policy that is assigned to end-users before they run the app. For more information, see [Understand configuration for apps](apps-add-overview.md#understand-configuration-for-apps). |
-| Does each app need access protection and data protection? | App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. For more information, see [Understand configuration for apps](apps-add-overview.md#understand-protection-needed-for-apps). |
 
 ## Understanding MAM and MDM
 
@@ -39,7 +37,7 @@ For more information, see [MAM configurations](apps-guide-overview.md#mam-config
 
 ## Determine the platforms needed for each app
 
-Intune supports configuring and protecting the apps that the members of your organization use. The mobile device type (such as Windows and Android) is referred to as the device platform. Each device platform supports multiple operating systems (OS). Intune supports the following platforms:
+Intune supports configuring and protecting the apps that the members of your organization use. The mobile device type (such as Windows and Android) is referred to as the device platform. Each device platform supports multiple operating systems (OS). When it comes to apps, Intune supports the following platforms:
 - Windows
 - iOS/iPadOS
 - macOS

@@ -108,7 +108,7 @@ Select apps that you want to include in Intune:
 2. Select either an **Online** or **Offline** license.
 3. Select **Get the app** to add the app to your account.
 
-#### Sync purchased Apple app licenses with Microsoft Intune
+#### Sync purchased Windows app licenses with Microsoft Intune
 
 If you've already associated your Microsoft Store for Business account with your Intune admin credentials, you can manually sync your Microsoft Store for Business apps with Intune.
 
@@ -131,7 +131,7 @@ Managed Google Play apps are available to add to Intune from the managed Google 
 Follow the Intune guidelines to add Managed Google Play apps:
 - Confirm that your [mobile device management (MDM) authority](/mem/intune/fundamentals/mdm-authority-set) is set to **Microsoft Intune**.
 - Ensure that Android Enterprise is available in your country or region. For more information, see [Is Android Enterprise available in my country?](https://support.google.com/work/android/answer/6270910)
-- [Add a Managed Google Play store app directly in the Microsoft Intune](/mem/intune/apps/apps-add-android-for-work#add-a-managed-google-play-store-app-directly-in-the-microsoft-endpoint-manager-admin-center)
+- [Add a Managed Google Play store app directly in the Microsoft Intune](/mem/intune/apps/apps-add-android-for-work#add-a-managed-google-play-store-app-directly-in-the-microsoft-endpoint-manager-admin-center).
 
 > [!NOTE]
 > As an alternative, you can specifically connect Your Intune tenant to Managed Google Play, approve Managed Google Play apps, and sync those apps with Microsoft Intune. This process follows similar steps used to approve and sync apps for other platforms. For more information, see [Add a Managed Google Play store app in the Managed Google Play console (Alternative)](/mem/intune/apps/apps-add-android-for-work#add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative).
