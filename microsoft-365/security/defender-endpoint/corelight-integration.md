@@ -1,5 +1,5 @@
 ---
-title: Enable Corelight integration in Microsoft Defender for Endpoint
+title: Enable Corelight as data source in Microsoft Defender for Endpoint
 description: Enable Corelight integration to gain visibility focused on IoT/OT devices in areas of the network where MDE is not deployed
 keywords: enable siem connector, siem, connector, security information and events
 search.product: eADQiWindows 10XVcnh
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ---
 
-# Enable Corelight data integration
+# Enable Corelight as data source in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
