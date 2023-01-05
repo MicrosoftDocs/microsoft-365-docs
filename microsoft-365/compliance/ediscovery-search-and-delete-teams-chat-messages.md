@@ -122,7 +122,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Get the eDiscoverySearchID
 
-1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases('caseId')/searches` in the address bar of the request query, where *CaseId* is the ID that you obtained in the previous procedure. Be sure to surround the case ID with parentheses and single quotation marks.
+1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases('ediscoverySearchID')/searches` in the address bar of the request query, where *ediscoverySearchID* is the ID that you obtained in the previous procedure. Be sure to surround the ediscoverySearchID with parentheses and single quotation marks.
 
    ![GET request for collection Id.](..\media\ediscovery-GraphGetRequestForCollectionId.png)
 
