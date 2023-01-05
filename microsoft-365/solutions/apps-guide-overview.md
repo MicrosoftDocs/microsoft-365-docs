@@ -34,7 +34,7 @@ Microsoft Endpoint Manager supports two MAM configurations:
 Managing the apps that the members of your organization uses on their devices is called mobile application management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed. This configuration allows your organization's apps to be managed by Intune, but doesn't enroll the devices to be managed by Intune. This configuration is commonly referred to as **MAM without device enrollment**, or **MAM-WE**. IT administrators can manage apps using MAM by using Intune configuration and protection policies on devices not enrolled with Intune Mobile Device Management (MDM). MAM is ideal to help protect organization data on devices used by members of your organization for both personal and work tasks.
 
 > [!TIP]
->  Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM. See the official list of [Microsoft Intune protected apps](../apps/apps-supported-intune-apps.md) available for public use.
+>  Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM. See the official list of [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps) available for public use.
 
 If you choose to use MAM without device enrollment, there are some limitations to be aware of, such as:
 - You can't deploy apps to the device. The end user has to get the apps from the store.
