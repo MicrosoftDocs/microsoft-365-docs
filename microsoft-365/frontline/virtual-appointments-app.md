@@ -102,6 +102,9 @@ You can configure options such as whether attendees can [join from a a desktop o
 
 ![Information icon](media/info.png) **This feature is now part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Users can continue using this feature during the preview period. After the preview, users need a Teams Premium license.**
 
+> [!NOTE]
+> We'll be providing unlimited SMS notifications through March 1, 2023 (previously January 31, 2023) for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
+
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
 To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link and scheduled appointment details. They can opt out of receiving the messages by replying STOP, or resume receiving them by replying START.
