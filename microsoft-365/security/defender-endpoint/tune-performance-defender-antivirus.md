@@ -38,7 +38,7 @@ search.appverid: met150
 
 Similar to the way mechanics perform diagnostics and service on a vehicle that has performance problems, performance analyzer can help you improve Defender Antivirus performance.
 
->:::image type="content" source="images/performance-analyzer-improve-defender-antivirus-performance.png" alt-text="Conceptual performance analyzer image for Microsoft Defender Antivirus. The diagram is related to:  Microsoft Defender performance analyzer, defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows defender, microsoft defender, microsoft windows 10, microsoft defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows defender antivirus, Windows 10 antivirus, microsoft windows defender, performance windows. " lightbox="images/performance-analyzer-improve-defender-antivirus-performance.png":::
+:::image type="content" source="images/performance-analyzer-improve-defender-antivirus-performance.png" alt-text="Conceptual performance analyzer image for Microsoft Defender Antivirus. The diagram is related to:  Microsoft Defender performance analyzer, defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows defender, microsoft defender, microsoft windows 10, microsoft defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows defender antivirus, Windows 10 antivirus, microsoft windows defender, performance windows. " lightbox="images/performance-analyzer-improve-defender-antivirus-performance.png":::
 
 Some options to analyze include:
 
