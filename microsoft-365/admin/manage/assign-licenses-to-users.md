@@ -29,7 +29,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Assign licenses depending on whether you want to assign product licenses to specific users or assign users licenses to a specific product."
-ms.date: 07/12/2022
+ms.date: 01/05/2023
 ---
 
 # Assign Microsoft 365 licenses to users
