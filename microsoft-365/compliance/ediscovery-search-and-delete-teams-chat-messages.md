@@ -141,7 +141,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Purge the chat messages
 
-1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases('caseId')/searches('searchId')/purgeData` in the address bar of the request query, where *caseId* and *searchId* are the IDs that you obtained in the previous procedures. Be sure to surround the ID values with parentheses and single quotation marks.
+1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoverycases/(ediscoveryCaseID)/searches/(ediscoverySearchID)/purgeData` in the address bar of the request query, where *ediscoveryCaseID* and *ediscoverySearchID* are the IDs that you obtained in the previous procedures. Be sure to surround the ID values with parentheses and single quotation marks.
 
       ![POST request to delete items returned by the collection.](..\media\ediscovery-GraphPOSTRequestToPurgeItems.png)
 
