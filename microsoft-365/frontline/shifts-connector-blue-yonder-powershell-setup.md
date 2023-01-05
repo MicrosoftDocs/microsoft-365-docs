@@ -25,7 +25,7 @@ ms.date: 10/28/2022
 
 ## Overview
 
-Use the [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) to integrate the Shifts app in Microsoft Teams with Blue Yonder Workforce Management (Blue Yonder WFM). After a connection is set up, your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
+Use the [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) to integrate the Shifts app in Microsoft Teams with Blue Yonder Workforce Management (Blue Yonder WFM). Your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
 
 In this article, we walk you through how to use PowerShell to set up and configure the connector to integrate Shifts with Blue Yonder WFM.
 
