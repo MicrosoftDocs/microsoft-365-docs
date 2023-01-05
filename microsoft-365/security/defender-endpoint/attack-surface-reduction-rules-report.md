@@ -175,6 +175,9 @@ Filtering provides a way for you to specify what results are returned:
 > [!NOTE]
 > When filtering by rule, the number of individual _detected_ items listed in the lower half of the report is currently limited to 200 rules. You can use **Export** to save the full list of detections to Excel.
 
+> [!TIP]
+> As the filter currently functions in this release, every time you want to "group by", you must first scroll down to last detection in the list to load the complete data set. After you have loaded the complete data set, you can then launch the "sort by" filtering. If you don't scroll down to last detection listed on every use or when changing filtering options (for example, the ASR rules applied to the current filter run), then results will be incorrect for any result that has more than one viewable page of listed detections.
+
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Screenshot that shows the ASR rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
 
 > [!div class="mx-imgBorder"]
