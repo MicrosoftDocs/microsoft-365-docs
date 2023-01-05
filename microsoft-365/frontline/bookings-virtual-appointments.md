@@ -28,7 +28,7 @@ description: Learn how to schedule, manage, and conduct virtual appointments usi
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/05/2022
+ms.date: 01/05/2023
 ---
 
 # Virtual Appointments with Microsoft Teams and the Bookings app
