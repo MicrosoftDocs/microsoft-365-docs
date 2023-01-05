@@ -70,7 +70,7 @@ However, **you can contact support and request an override for your tenant exper
 - For information about how to contact support, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
 > [!TIP]
-> If your organization is a small or medium-sized business, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
+> If your organization is a small or medium-sized business, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
 
 ## Start a trial
 
