@@ -70,12 +70,14 @@ When you configure IB, you'll work with several objects and concepts.
   - *Allow* policies allow one segment to communicate with only certain other segments.
 
     > [!NOTE]
-    > For *allow* policies, non-IB groups and users will not be visible to users included in IB segments and policies. If you need non-IB groups and users to be visible to users included in IB segments and policies, you must use *block* policies.
+    > **For organizations that have enabled IB prior to January 31, 2023**: Non-IB groups and users **will not be visible** to users included in IB segments and policies for *allow* policies. If you need non-IB groups and users to be visible to users included in IB segments and policies, you must use *block* policies. <br><br> **For organizations that have enabled IB after to January 31, 2023**: Non-IB groups and users **will be visible** to users included in IB segments and policies for *allow* policies.
 
 - **Policy application** is done after all IB policies are defined, and you're ready to apply them in your organization.
-- **Visibility of non-IB users and groups**. Non-IB users and groups are users and groups excluded from IB segments and policies. Depending on the type of IB policies (block or allow), the behavior for these users and group will differ in Microsoft Teams, SharePoint, OneDrive, and in your global address list. For users defined in *allow* policies, non-IB groups and users won't be visible to users included in IB segments and policies. For users defined in *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
+- **Visibility of non-IB users and groups**: Non-IB users and groups are users and groups excluded from IB segments and policies. Depending on when you configure IB policies in your organization and the type of IB policies (block or allow), the behavior for these users and group will differ in Microsoft Teams, SharePoint, OneDrive, and in your global address list.
+    - **For organizations that have enabled IB prior to January 31, 2023**: For users defined in *allow* policies, non-IB groups and users won't be visible to users included in IB segments and policies. For users defined in *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
+    - **For organizations that have enabled IB after to January 31, 2023**: For users defined in *allow* and *block* policies, non-IB groups and users will be visible to users included in IB segments and policies.
 - **Group support**. Only Modern Groups are currently supported in IB and Distribution Lists/Security Groups are treated as non-IB groups.
-- **Hidden/disabled user accounts**. For hidden/disabled accounts in your organization, the *HiddenFromAddressListEnabled* parameter is automatically set to *True* when the users accounts are hidden or disabled. In IB-enabled organizations, these accounts are prevented from communicating with all other user accounts. In Microsoft Teams, all chats including these accounts are locked or the users are automatically removed from conversations.
+- **Hidden/disabled user accounts**. For hidden/disabled accounts in your organization, the *HiddenFromAddressListEnabled* parameter is automatically set to *True* when the users accounts are hidden or disabled. In IB-enabled organizations, these accounts are prevented from communicating with all other user accounts.
 
 ## Configuration overview
 
@@ -102,9 +104,9 @@ In addition to the required subscriptions and permissions, make sure that the fo
 
 - **Verify audit logging is enabled**: In order to look up the status of an IB policy application, audit logging must be turned on. Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step. For more information, see [Turn the audit log search on or off](audit-log-enable-disable.md).
 
-- **Remove existing Exchange Online address book policies (optional)**: CHANGES
+- **Remove existing Exchange Online address book policies (optional)**: CHANGES - APPLIES ONLY TO VERSION 1
 
-- IB V1 NOTE - Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
+    - IB V1 NOTE - Before you define and apply IB policies, you must remove all existing Exchange Online address book policies in your organization. IB policies are based on address book policies and existing ABPs policies aren't compatible with the ABPs created by IB. To remove your existing address book policies, see [Remove an address book policy in Exchange Online](/exchange/address-books/address-book-policies/remove-an-address-book-policy). For more information about IB policies and Exchange Online, see [Information barriers and Exchange Online](information-barriers.md#information-barriers-and-exchange-online).
 
 - **Manage using PowerShell (optional)**: IB segments and policies can be defined and managed in the compliance portal, but you can also use the Office 365 Security & Compliance PowerShell if preferred or needed. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters if you choose to use PowerShell to configure and manage IB segments and policies. You'll also need the Azure Active Directory PowerShell module if you choose this configuration option.
   - [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
@@ -160,14 +162,13 @@ Determine which attributes in your organization's directory data you'll use to d
 
 ### Enable multiple segment support for users (optional)
 
-If you want to support assigning users to multiple segments......
+> [!IMPORTANT]
+> Support for assigning users to multiple segments is only available when enabling information barriers in your organization after January 31, 2023. <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
 
-If enable multiple segment, cannot revert to single segment.
-
-STEPS FOR CONFIGURING SET-ORGANIZATION cmdlet with InformationBarrierMode to MultiAllow
+If you want to support assigning users to multiple segments, run the following cmdlet. If you enable multiple segments in your organization, you cannot revert to single segment support.
 
 ```powershell
-Set-Organization <exampledomain.com> -InformationBarrierMode MultiAllow
+Enable-ExoInformationBarrierMultiSegment
 ```
 
 ### Define segments using the compliance portal

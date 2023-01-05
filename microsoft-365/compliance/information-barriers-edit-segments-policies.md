@@ -35,6 +35,7 @@ After you have [defined information barriers (IB) policies](information-barriers
 | [Remove a policy and a segment](#remove-a-policy-and-segment) | Remove an information barriers policy and a segment at the same time. |
 | [Stop a policy application](#stop-a-policy-application) | Take this action when you want to stop the process of applying information barriers policies. <br> Stopping a policy application isn't instant, and it doesn't undo policies that are already applied to users. |
 | [Define policies for information barriers](information-barriers-policies.md) | Define an information barriers policy when you don't already have such policies in place, and you must restrict or limit communications between specific groups of users. |
+| Enable or disable user discoverability |  |
 | [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Refer to this article when you run into unexpected issues with information barriers. |
 
 >[!IMPORTANT]
