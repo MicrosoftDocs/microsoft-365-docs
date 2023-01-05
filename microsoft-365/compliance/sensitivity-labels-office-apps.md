@@ -84,6 +84,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Support co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for labeled and encrypted documents | Current Channel: 2107+ <br /><br> Monthly Enterprise Channel: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | 2.58+ | 16.0.14931+  | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[PDF support](#pdf-support)| Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2209+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |  Under review | Under review | Under review | Under review |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Preview: [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review | Under review |
+|[Default sublabel for parent label](#specify-a-default-sublabel-for-a-parent-label)| Preview: Beta Channel |  Under review | Under review | Under review | Under review |
 
 ### Sensitivity label capabilities in Outlook
 
@@ -114,6 +115,8 @@ The numbers listed are the minimum Office application versions required for each
 |[PDF support](#pdf-support) | Current Channel: 2205+ <br /><br> Monthly Enterprise Channel: 2205+ <br /><br> Semi-Annual Enterprise Channel: Under review|  Under review | Under review | Under review | Under review |
 |[Apply S/MIME protection](#configure-a-label-to-apply-smime-protection-in-outlook) | Current Channel: 2211+ <br /><br> Monthly Enterprise Channel: Under review <br /><br> Semi-Annual Enterprise Channel:Under review  | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
 |[Sensitivity bar](#sensitivity-bar) and [display label color](#label-colors) | Under review |  Under review | Under review | Under review | Under review |
+|[Default sublabel for parent label](#specify-a-default-sublabel-for-a-parent-label)| Preview: Beta Channel |  Under review | Under review | Under review | Under review |
+
 
 **Footnotes:**
 
@@ -503,6 +506,24 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{col
 ```
 
 For more information to help you specify PowerShell advanced settings for sensitivity labels, see [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
+## Specify a default sublabel for a parent label
+
+> [!NOTE]
+> For built-in labeling, identify the minimum versions that support this setting by using the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps) on this page, and the row **Default sublabel for parent label**. All versions of the Azure Information Protection unified labeling client support this setting.
+
+This configuration is not available in the Microsoft Purview compliance portal. You must use the PowerShell advanced setting *DefaultSubLabelId* with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+When you add a sublabel to a label, users can no longer apply the parent label to a document or email. By default, users select the parent label to see the sublabels that they can apply, and then select one of those sublabels. If you specify a default sublabel for a parent label, when users select the parent label, a sublabel is automatically selected and applied for them.
+
+Example PowerShell command, where the parent sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e** and its sublabel that you want to specify as the default is **1ace2cc3-14bc-4142-9125-bf946a70542c**:
+
+```PowerShell
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{DefaultSubLabelId="1ace2cc3-14bc-4142-9125-bf946a70542c"}
+```
+
+For more help in specifying PowerShell advanced settings, see [PowerShell tips for specifying the advanced settings](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
+
 
 ## Auditing labeling activities
 
