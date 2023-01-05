@@ -60,7 +60,8 @@ To learn more about roles and permissions, see [Roles and role groups in the Mic
 When you configure IB, you'll work with several objects and concepts.
 
 - **User account attributes** are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. You'll assign users or groups to segments with these attributes.
-- **Segments** are sets of groups or users that are defined in the compliance portal or by using PowerShell that use selected group or user account attributes. Your organization can have up to 5,000 segments and users can be assigned to multiple segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
+- **Segments** are sets of groups or users that are defined in the compliance portal or by using PowerShell that use selected group or user account attributes. 
+Your organization can have up to 5,000 segments and users can be assigned to a maximum of 10 segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
 
     > [!IMPORTANT]
     > Support for 5,000 segments and assigning users to multiple segments is only available when enabling information barriers in your organization after January 31, 2023. <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
