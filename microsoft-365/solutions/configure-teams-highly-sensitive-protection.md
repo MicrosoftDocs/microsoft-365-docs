@@ -57,6 +57,7 @@ To allow or block guest sharing, we use a combination of a sensitivity label for
 
 ## Authentication context
 
+We'll use an [Azure Active Directory authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) to enforce more stringent access conditions when users access SharePoint sites.
 
 First, add an authentication context in Azure Active Directory.
 
@@ -70,8 +71,6 @@ To add an authentication context
     ![Screenshot of add authentication context UI](../media/aad-add-authentication-context.png)
 
 4. Click **Save**.
-
-### Create a conditional access policy
 
 Next, create a conditional access policy that applies to that authentication context and that requires guests to agree to a terms of use as a condition of access.
 
@@ -92,6 +91,7 @@ To create a conditional access policy
 
 1. Choose if you want to enable the policy, and then click **Create**.
 
+We'll point to the authentication context in the sensitivity label.
 
 ## Sensitivity labels
 
@@ -125,8 +125,7 @@ To create a sensitivity label
 1. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
 1. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
 1. Select **Use Azure AD Conditional Access to protect labeled SharePoint sites**.
-1. 
-1. 
+1. Select the **Choose an existing authentication context** option, and then select the authentication context that you created from the dropdown list.
 1. Click **Next**.
 1. On the **Auto-labeling for database columns** page, click **Next**.
 1. Click **Create label**, and then click **Done**.
@@ -164,34 +163,49 @@ You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who
 ## SharePoint settings
 
 Each time you create a new team with the highly sensitive label, there are two steps to do in SharePoint:
+- Restrict access to the site to members of the team only
+- Choose a default sensitivity label for the document library connected to the team.
 
-- Update the guest sharing settings for the site in the SharePoint admin center to update the default sharing link to *People with existing access*.
-- Update the site sharing settings in the site itself to prevent members from sharing files, folders, or the site, and turn off access requests.
+### Restrict site access to team members
 
-### Site default sharing link settings
+Each time you create a new team with the highly sensitive label, you need to turn on restricted site access on the associated SharePoint site. This prevents people from outside the team from accessing the site or its content.
 
-To update the site default sharing link type
+[SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell) is required to configure restricted site access.
 
-1. Open the SharePoint admin center, and under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
-1. Select the site that is associated with team.
-1. On the **Policies** tab, under **External sharing**, select **Edit**.
-1. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
-1. Select **Save**.
+If you haven't used restricted site access before, you need to turn it on for your organization. To do this, run the following command:
 
-Note that if you add private or shared channels to the team, each creates a new SharePoint site with the default sharing settings. You can update them in the SharePoint admin center by selecting the sites associated with the team.
+```Powershell
+Set-SPOTenant -EnableRestrictedAccessControl $true
+```
 
-### Site sharing settings
+> [!NOTE]
+> If you have Microsoft 365 Multi-Geo, you must run this command for each geo-location you want to use restricted access control.
 
-To help ensure that the SharePoint site does not get shared with people who are not members of the team, we limit such sharing to owners. We also limit sharing of files and folders to team owners. This helps ensure that owners are aware whenever a file is shared with someone outside the team.
+Wait for approximately one hour before turning on restricted access control for the site.
 
-To configure owners-only site sharing
-1. In Teams, navigate to the **General** tab of the team you want to update.
-2. In the tool bar for the team, click **Files**.
-3. Click the ellipsis, and then click **Open in SharePoint**.
-4. In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.
-5. In the **Site permissions** pane, under **Site sharing**, click **Change how members can share**.
-6. Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
-7. Set **Allow access requests** to **Off**, and then click **Save**.
+To restrict site access for the site connected to your team, run the following command:
+
+```Powershell
+Set-SPOSite -Identity <siteurl> -RestrictedAccessControl $true
+```
+
+### Choose a default sensitivity label for site content
+
+We'll use the sensitivity label that we created as the default sensitivity label for the site document library that is connected to Teams. This will automatically apply the highly sensitive label to any new label-compatible files that are uploaded to the library, encrypting them.
+
+To set a default sensitivity label for a document library
+
+1. In Teams, navigate to the **General** channel of the team you want to update.
+
+1. In the tool bar for the team, click **Files**.
+
+1. Click **Open in SharePoint**.
+
+1. In the SharePoint site, open **Settings** and then choose **Library settings**.
+
+1. From the **Library settings** flyout pane, select **Default sensitivity labels**, and then select the highly sensitive label from the drop-down box.
+
+For more details about how default library labels work, see [Configure a default sensitivity label for a SharePoint document library](/microsoft-365/compliance/sensitivity-labels-sharepoint-default-label).
 
 ## See Also
 
