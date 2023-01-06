@@ -134,7 +134,7 @@ When you use the **Active users** page to assign licenses, you assign users lice
     You might have to buy additional licenses if you don't have enough licenses for everyone.
 
 > [!NOTE]
-> If you want to assign licenses for a large number of users, use [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)
+> If you want to assign licenses for a large number of users, use [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign).
 
 ### Assign licenses to one user
 
