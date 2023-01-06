@@ -107,4 +107,5 @@ The following table describes each state and what it means.
 
 - [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
 - [Manage firewall settings in Defender for Business](mdb-custom-rules-firewall.md)
+- [View and edit security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)
 - [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender)
