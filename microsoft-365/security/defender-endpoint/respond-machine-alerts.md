@@ -52,9 +52,10 @@ Response actions run along the top of a specific device page and include:
 > - Run antivirus scan
 > - Isolate device
 > - Stop and quarantine a file
-> - Add an indicator to block or allow a file
-> [Microsoft Defender for Business](../defender-business/mdb-overview.md) does not include the "Stop and quarantine a file" action at this time.
-> Your subscription must include Defender for Endpoint Plan 2 to have all of the response actions described in this article.
+> - Add an indicator to block or allow a file.
+> 
+>  [Microsoft Defender for Business](../defender-business/mdb-overview.md) does not include the "Stop and quarantine a file" action at this time.
+>  Your subscription must include Defender for Endpoint Plan 2 to have all of the response actions described in this article.
 
  You can find device pages from any of the following views:
 
