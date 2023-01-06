@@ -42,7 +42,7 @@ search.appverid: met150
 This migration phase includes the following steps:
 
 1. [Get and deploy updates across your organization's devices](#get-and-deploy-updates-across-your-organizations-devices).
-2. [Get Defender for Endpoint Plan 1 or Plan 2](#get-microsoft-defender-for-endpoint).
+2. [Get Microsoft Defender for Endpoint Plan 1 or Plan 2](#get-microsoft-defender-for-endpoint-plan-1-or-plan-2).
 3. [Grant access to the Microsoft 365 Defender portal](#grant-access-to-the-microsoft-365-defender-portal).
 4. [Review more information about device proxy and internet connectivity settings](#more-information-about-device-proxy-and-internet-connectivity-settings).
 
