@@ -116,14 +116,14 @@ The migration assistant takes care of each of the above scenarios in one of thes
 
 - **Map to an existing OOB SIT:** For all sensitive data types for which there exists an equivalent SIT in Microsoft DLP, the migration assistant will attempt to create a 1:1 mapping. It automatically maps OOB Symantec Data Identifiers to pre-configured Microsoft SITs, if an equivalent exists. If you want to bring the Symantec Data Identifier over as-is, then you can create a new SIT as described in the next step.
 
-- **Migrate as a new custom SIT:** For all sensitive data types for which there isn't an equivalent SIT available in Microsoft DLP, the migration assistant will automatically opt to create a new SIT. It will automatically create a new SIT for all OOB Symantec Data Identifiers for which no equivalent SIT in Microsoft DLP is available. Similarly, any regular expression(s) or keyword(s) defined directly in rules will be brought over as a new Custom SIT.
+- **Migrate as a new custom SIT:** For all sensitive data types for which there isn't an equivalent SIT available in Microsoft DLP, the migration assistant will automatically opt to create a new SIT. It will automatically create a new SIT for all OOB Symantec Data Identifiers for which no equivalent SIT in Microsoft DLP is available. Similarly, any regular expression(s) or keyword(s) defined directly in rules will be brought over as a new custom SIT.
 
 > [!NOTE]
 > Regular expressions and/or keywords defined directly at the rule-level of Symantec policies will take on the name of the rule itself and show in the Source column. In case of multiple regular expressions and/or keywords, it will take the name of the rule name followed by roman numerals.
 >
 >Each of these will be migrated separately as a custom SIT. This may lead to confusion and we recommend you review and rename these SITs as soon as possible.
 >
->You cannot edit the name of these SITs within the migration assistant. You can edit the names of these Custom SITs from Compliance Center or via PowerShell after the policy migration has been completed.
+>You cannot edit the name of these SITs within the migration assistant. You can edit the names of these custom SITs from Compliance Center or via PowerShell after the policy migration has been completed.
 
 #### Inclusions, Exclusions and Response Rules
 
@@ -173,14 +173,14 @@ All other response rules in Symantec are currently not supported by the migratio
     - You may choose to replace the current SIT (which is being edited) with another SIT from your tenant.
          :::image type="content" source="../media/sit-content.png" alt-text="Screenshot of editing SIT content.":::
     - You can manually change any of the mappings if you wish to, by clicking on the corresponding row in the ‘Target’ column.
-    This will open a drop-down list with all the out-of-box SITs (OOB SITs) and all the custom SITs (if any) that you may have previously created. You can choose the option to which you wish to map to the ‘Source’ row item. Alternatively, you can also choose the option ‘New SIT’ from the drop-down and the migration assistant will bring over the Source SIT as a new Custom SIT.
+    This will open a drop-down list with all the out-of-box SITs (OOB SITs) and all the custom SITs (if any) that you may have previously created. You can choose the option to which you wish to map to the ‘Source’ row item. Alternatively, you can also choose the option ‘New SIT’ from the drop-down and the migration assistant will bring over the Source SIT as a new custom SIT.
 
    > **Recommendation**
    >
    > We highly recommend using existing SITs to replace current SITs wherever possible as it will help reduce duplicate SIT creation and also allow you reduce effort on optimizing multiple custom SITs of the same kind. Learn more about [sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
   
    >[!WARNING]
-   > Microsoft DLP platform has a threshold for up to 10 rule packages per tenant. This limit is enough for most customers, but the creation of many duplicate Custom SITs may quickly lead you to hitting this threshold without the ability to create any new Custom SITs.
+   > Microsoft DLP platform has a threshold for up to 10 rule packages per tenant. This limit is enough for most customers, but the creation of many duplicate custom SITs may quickly lead you to hitting this threshold without the ability to create any new custom SITs.
 
 4. After you've reviewed all the policies and the rules within them, click **Next**.
     1. If one or more of the policies contain at least one element with *Needs Review* status, then you’ll see a **Continue with errors** button instead of **Next**.
@@ -356,7 +356,7 @@ You should go to the Compliance Center and validate that the policies were migra
 2. If you're not able to install/uninstall due to another process install issue
     1. This is likely caused by another app installation.
     2. The following sequence of steps should resolve the problem:
-          1. Right click task bar to open **Task Manager**. If necessary, show More Details.
+          1. Right click task bar to open Task Manager. If necessary, show **More Details**.
           2. On **Details** tab, look for msiexec.exe, highlight to **End Task**.
           3. Now try to install or uninstall again.
     3. Alternatively, you may wait until the installation is finished and then you can install the tool.

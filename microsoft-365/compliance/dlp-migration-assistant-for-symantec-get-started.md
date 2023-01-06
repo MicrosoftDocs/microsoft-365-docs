@@ -50,7 +50,7 @@ You'll need to download, install, and run the migration assistant on one of the 
 
 ### 4. Install PowerShell
 
-You must have PowerShell v7.2.6 or higher installed on your machine, before the migration assistant can be installed [Download Powershell-7.2.6-win-x64.msi core on your machine](https://github.com/PowerShell/PowerShell/releases/download/v7.2.6/PowerShell-7.2.6-win-x64.msi).
+You must have PowerShell v7.2.6 or higher installed on your machine, before the migration assistant can be installed. [Download Powershell-7.2.6-win-x64.msi core on your machine](https://github.com/PowerShell/PowerShell/releases/download/v7.2.6/PowerShell-7.2.6-win-x64.msi).
 
 ### 5. Install .NET 6
 
