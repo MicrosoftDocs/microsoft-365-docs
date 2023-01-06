@@ -39,29 +39,29 @@ The migration assistant helps with some of the tasks involved in a Data Loss Pre
 
 ## How does the Microsoft Purview Data Loss Prevention migration assistant for Symantec work?
 
-The following diagram illustrates the migration process:
+Here's how the migration process works:
 
 :::image type="content" source="../media/migration-assistant-for-dlp-process.png" alt-text="Process diagram of Microsoft Purview Data Loss Prevention migration assistant for Symantec.":::
 
-Each time the migration assistant runs, it executes the following steps:
+Each time the migration assistant runs, it runs the following steps:
 
 - **Input:** The migration assistant ingests one or more Symantec DLP policy XML files.
 - **Analyze:** The migration assistant interprets the files and identifies Symantec DLP policy constructs.
 - **Rationalize:** The migration assistant maps the identified Symantec DLP policy constructs to Microsoft DLP capabilities. It performs validations for Microsoft DLP platform limitations.
 - **Migrate:** The migration assistant runs PowerShell scripts for the DLP scenarios identified and supported by the UDLP platform.
-- **Report:** The migration assistant reports the migration status of each policy were migrated successfully, partially, and/or not migrated. It also provides recommendations to improve future migrations.
+- **Report:** The migration assistant reports which policies were migrated successfully, which were partially migration, and which ones couldn't be migrated. It also provides recommendations to improve future migrations.
 
 ## Understanding mapping of Symantec DLP elements to Microsoft 365 DLP elements
 
-The following section describes how the migration assistant translates different policy elements from Symantec DLP to Microsoft 365 DLP:
+Here's how the migration assistant translates different policy elements from Symantec DLP to Microsoft 365 DLP:
 
 ### Symantec DLP supported versions
 
-The migration assistant supports migration of policies for Symantec versions (including maintenance packs) 15.0 to 15.7 (both inclusive).
+The migration assistant supports migrating DLP policies from Symantec versions 15.0 through 15.7 maintenance packs included.
 
 ### Supported Workloads
 
-The migration assistant migrates policies into Microsoft DLP only for the workloads listed in the following table:
+The migration assistant migrates policies into these workloads.
 
 | **Workload**  | **Migration assistant support** |
 | ------------------------------- | ------------------------------- |
@@ -72,22 +72,22 @@ The migration assistant migrates policies into Microsoft DLP only for the worklo
 | Endpoint devices       | Yes           |
 
 > [!TIP]
->The migration assistant provides the capability for Microsoft DLP policy coverage to be extended to more workloads than those detected in the input Symantec DLP policy.
+>You can use the migration assistant to extended to more workloads than the ones detected in the input Symantec DLP policy.
 
 ### Classification Elements
 
-The following table details the mapping of classification elements that the migration assistant uses while translating Symantec DLP policies:
+Here's how the migration assistant maps Symantec elements to Purview DLP elements.
 
-| **Symantec Classification Element** | **Microsoft 365 DLP Classification Element**           |
+| **Symantec Classification Element** | **Microsoft Purview DLP Classification Element**           |
 | ---------------------- | ------------------------- |
 | Regular Expression| Create new custom sensitive information type (SIT) with the regular expression.|
 | Keyword           | Create new custom SIT with a keyword list or keyword dictionary.|
 | Keyword Pair      | Create new custom SIT with first keyword list as primary element & second keyword list as a supporting element with 300 char proximity. |
 | Data Identifier   | Map to pre-configured SIT if an equivalent is available, else create a new custom SIT. |
 
-The following table details the mapping of optional validators for sensitive information types (also known as Data Identifiers in Symantec DLP) that the migration assistant uses while translating Symantec DLP policies:
+Here are the mapping details of optional validators for sensitive information types (also known as Data Identifiers in Symantec DLP) that the migration assistant uses while translating Symantec DLP policies:
 
-| **Symantec Optional Validators**  | **Microsoft 365 DLP Optional Validators**|
+| **Symantec Optional Validators**  | **Microsoft Purview DLP Optional Validators**|
 | -------------------- | ------------------ |
 | Exclude exact match               | Exclude specific matches      |
 | Exact Match Data Identifier Check | NA          |
@@ -104,7 +104,7 @@ The following table details the mapping of optional validators for sensitive inf
 
 ### Regular Expressions – Potential validation issues to be aware of
 
-When you upload your rule package XML file, the system validates the XML and checks for known bad patterns and obvious performance issues. Here are known issues that the validation checks for—a regular expression:
+When you upload your rule package XML file, the system validates the XML and checks for known bad patterns and obvious performance issues. Here are known issues that the validation process checks a regular expression for.
 
 - Can't begin or end with alternator "|", which matches everything because it's considered an empty match.
      - For example, "|a" or "b|" won't pass validation.
@@ -121,11 +121,11 @@ When you upload your rule package XML file, the system validates the XML and che
 
 ### Condition and Exception Mapping
 
-The following table details the mapping of condition and exception elements for various Workloads that the migration assistant uses while translating Symantec DLP policies:
+Here's how the migration assistant maps Symantec condition and exception elements for various workloads to PUrview DLP conditions.
 
 #### Exchange Workload
 
-| **Condition/Exception in Symantec**   | **Condition/Exception in Microsoft 365 DLP**       |
+| **Condition/Exception in Symantec**   | **Condition in Microsoft Purview DLP**       |
 | ------------------ | -------------------------------------- |
 | Content Matches Regular Expression    | Content contains SIT    |
 | Content Matches Keyword               | Content contains SIT    |
@@ -145,9 +145,9 @@ The following table details the mapping of condition and exception elements for 
 | Detect using Vector Machine Learning profile (VML)      | Not supported           |
 | Protocol Monitoring<li>SMTP protocol             | Exchange (EXO) DLP policy |
 
-#### Endpoint Devices, SharePoint Online, OneDrive & Other Workloads
+#### Endpoint Devices, SharePoint Online, OneDrive and other workloads
 
-| **Condition/Exception in Symantec**   | **Condition/Exception in Microsoft 365 DLP**   |
+| **Condition/Exception in Symantec**   | **Condition in Microsoft Purview DLP**   |
 | ----------- | ------------------- |
 | Content Matches Regular Expression    | Content contains SIT |
 | Content Matches Keyword               | Content contains SIT |
@@ -158,9 +158,9 @@ The following table details the mapping of condition and exception elements for 
 
 ### Response Rules
 
-The following table details the mapping of Symantec response rules to Microsoft 365 DLP actions that the migration assistant uses while translating Symantec DLP policies:
+Here's how the migration assitant maps Symantec response rules to Microsoft Purview DLP actions.
 
-| **Symantec Response Rule** | **Microsoft 365 DLP Action**|
+| **Symantec Response Rule** | **Microsoft Purview DLP Action**|
 | ----------------- | ----------------- |
 | Generate DLP Incident      | Generate Alert     |
 | Logging (Syslog)           | Audit logs         |
