@@ -33,7 +33,7 @@ Microsoft 365 and Office 365 setup guides give you tailored guidance and resourc
 > You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Administrator role can use the guides to change settings in the tenant.
 
 > [!IMPORTANT]
-> Any information saved before January 10th, 2023 within each guide listed on this page has been reset due to EU data regulations. This includes selections, task assignments, and progress status. We apologize for any inconvenience this might cause.
+> Any information saved before January 10, 2023, within each guide listed on this page has been reset due to EU data regulations. This includes selections, task assignments, and progress status. We apologize for any inconvenience this might cause.
 
 ## How to access setup guides in the Microsoft 365 admin center
 
