@@ -40,7 +40,7 @@ For more information about retention policies and how retention works in Microso
 
 The global admin for your organization has full permissions to create and edit retention policies. If you aren't signing in as a global admin, see the [permissions information for data lifecycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels).
 
-Decide before you create your retention policy whether it will be **adaptive** or **static**. For more information, see [Adaptive policy scopes for compliance solutions](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention policy, and then select them during the create retention policy process. For instructions, see [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes).
+Decide before you create your retention policy whether it will be **adaptive** or **static**. For more information, see [Adaptive policy scopes for compliance solutions](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention policy, and then select them during the create retention policy process. For instructions, see [Configuration information for adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
 
 ## Create and configure a retention policy
 
@@ -84,7 +84,7 @@ When you've more than one retention policy, and when you also use retention labe
 
 4. Depending on your selected scope:
     
-    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Teams chats** but not **Teams channel messages**. 
+    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Teams chats** but not **Teams channel messages**. 
     
     - If you chose **Static**: On the **Choose locations to apply the policy** page, select one or more locations for Teams:
         - **Teams channel message**: Messages from standard and shared channel chats, and standard and shared channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
@@ -142,7 +142,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 
 4. Depending on your selected scope:
     
-    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Yammer user messages** but not **Yammer community messages**. 
+    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Yammer user messages** but not **Yammer community messages**. 
     
     - If you chose **Static**: On the **Choose locations to apply the policy** page, toggle on one or both of the locations for Yammer: **Yammer community message** and **Yammer user messages**.
         
@@ -192,7 +192,7 @@ Use the following instructions for retention policies that apply to any of these
 
 4. Depending on your selected scope:
     
-    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Exchange email** but not **SharePoint sites**. 
+    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you'll be able to select **Exchange email** but not **SharePoint sites**. 
     
     - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations except the locations for Teams and Yammer. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
     

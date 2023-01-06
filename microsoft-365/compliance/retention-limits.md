@@ -57,9 +57,9 @@ Although retention policies for Microsoft Teams and Yammer use mailboxes to stor
 ## Maximum number of items per policy
 
 > [!IMPORTANT]
-> Applicable only if you use [static policy scopes rather than adaptive policy scopes](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
+> Applicable only if you use [static policy scopes rather than adaptive policy scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
 
-For maximum limits for adaptive policy scopes, see [Adaptive policy scopes](microsoft-365-adaptive-scopes.md#maximums-for-adaptive-policy-scopes).
+For maximum limits for adaptive policy scopes, see [Adaptive policy scopes](purview-adaptive-scopes.md#maximums-for-adaptive-policy-scopes).
 
 If you use static scopes and the optional configuration to include or exclude specific users, specific Microsoft 365 groups, or specific sites, there are some limits per policy to be aware of.
 

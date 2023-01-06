@@ -97,7 +97,7 @@ Wondering what you can experience in your free trial? The Purview solutions tria
 
 - **Data Lifecycle Management**
 
-  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
+  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. Learn more about [adaptive policy scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
 
 - **Data Loss Prevention**
 

@@ -344,7 +344,7 @@ Advantages of using adaptive scopes over static scopes:
 
 - You can apply specific retention settings to just inactive mailboxes. This configuration isn't possible with a static scope because at the time the policy is assigned, static scopes don't support the specific inclusion of recipients with inactive mailboxes.
 
-For more advantages of using adaptive scopes, see [Adaptive scopes](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
+For more advantages of using adaptive scopes, see [Adaptive scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
 
 Advantages of using static scopes:
 
@@ -354,7 +354,7 @@ Advantages of using static scopes:
 
 - The **Skype for Business** and **Exchange public folders** locations don't support adaptive scopes. For those locations, you must use a static scope.
 
-For configuration information, see [Configuring adaptive scopes](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes).
+For configuration information, see [Configuring adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
 
 To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
 

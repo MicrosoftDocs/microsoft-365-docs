@@ -267,7 +267,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
     
-    - Choose adaptive scopes for the policy. For more information, see [Adaptive policy scopes for compliance solutions](microsoft-365-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to create an adaptive policy, you must create one or more adaptive scopes before you create your policy, and then select them during the create new policy process. For instructions, see [Configuration information for adaptive scopes](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes).
+    - Choose adaptive scopes for the policy. For more information, see [Adaptive policy scopes for compliance solutions](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to create an adaptive policy, you must create one or more adaptive scopes before you create your policy, and then select them during the create new policy process. For instructions, see [Configuration information for adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
 
     - Choose the communication channels to check, including Exchange, Microsoft Teams, or Yammer. You'll also choose to check third-party sources if you've configured a connector in Microsoft 365.
 
@@ -287,7 +287,7 @@ For more information about configuring Yammer in Native Mode, see:
 
 5. Depending on your selected scope:
 
- - If you chose **Adaptive** scopes, on the **Choose adaptive policy scopes** page, select **Add scopes** and select one or more adaptive scopes that have been created. The scopes that you can select depend on the [scope types](microsoft-365-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Groups**.
+ - If you chose **Adaptive** scopes, on the **Choose adaptive policy scopes** page, select **Add scopes** and select one or more adaptive scopes that have been created. The scopes that you can select depend on the [scope types](purview-adaptive-scopes.md#configure-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Groups**.
 
 6. Select **Create policy** when using the templates or **Submit** when using the custom policy wizard.
 
