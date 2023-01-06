@@ -51,9 +51,9 @@ Each time the migration assistant runs, it runs the following steps:
 - **Migrate:** The migration assistant runs PowerShell scripts for the DLP scenarios identified and supported by the UDLP platform.
 - **Report:** The migration assistant reports which policies were migrated successfully, which were partially migration, and which ones couldn't be migrated. It also provides recommendations to improve future migrations.
 
-## Understanding mapping of Symantec DLP elements to Microsoft 365 DLP elements
+## Understand mapping of Symantec DLP elements to Microsoft Purview DLP elements
 
-Here's how the migration assistant translates different policy elements from Symantec DLP to Microsoft 365 DLP:
+Here's how the migration assistant translates different policy elements from Symantec DLP to Microsoft Purview DLP:
 
 ### Symantec DLP supported versions
 
