@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-ms.localizationpriority: high
+ms.localizationpriority: normal
 search.appverid:
 - MET150
 ms.collection:

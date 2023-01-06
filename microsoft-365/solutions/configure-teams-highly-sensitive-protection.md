@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.localizationpriority: high
+ms.localizationpriority: normal
 search.appverid:
 - MET150
 ms.collection: 
@@ -54,6 +54,45 @@ For details about sharing with guests securely, see the following resources:
 
 To allow or block guest sharing, we use a combination of a sensitivity label for the team and site-level sharing controls for the associated SharePoint site, both discussed later.
 
+
+## Authentication context
+
+
+First, add an authentication context in Azure Active Directory.
+
+To add an authentication context
+1. In [Azure Active Directory Conditional Access](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade), under **Manage**, click **Authentication context**.
+
+2. Click **New authentication context**.
+
+3. Type a name and description and select the **Publish to apps** check box.
+
+    ![Screenshot of add authentication context UI](../media/aad-add-authentication-context.png)
+
+4. Click **Save**.
+
+### Create a conditional access policy
+
+Next, create a conditional access policy that applies to that authentication context and that requires guests to agree to a terms of use as a condition of access.
+
+To create a conditional access policy
+1. In [Azure Active Directory Conditional Access](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade), click **New policy**.
+
+1. Type a name for the policy.
+
+1. On the **Users and groups** tab, choose the **Select users and groups** option, and then select the **Guest or external users** check box.
+
+1. Choose **B2B collaboration guest users** from the dropdown.
+
+1. On the **Cloud apps or actions** tab, under **Select what this policy applies to**, choose **Authentication context**, and select the check box for the authentication context that you created.
+
+    ![Screenshot of authentication context options in cloud apps or actions settings for a conditional access policy.](../media/aad-authentication-context-ca-policy-apps.png)
+
+1. On the **Grant** tab, select **Require multifactor authentication**, and then click **Select**.
+
+1. Choose if you want to enable the policy, and then click **Create**.
+
+
 ## Sensitivity labels
 
 For the highly sensitive level of protection, we'll be using a sensitivity label to classify the team. This label can also be used to classify and encrypt individual files in this or other teams or in other file locations such as SharePoint or OneDrive. 
@@ -66,28 +105,31 @@ Once you have enabled sensitivity labels for Teams, the next step is to create t
 
 To create a sensitivity label
 1. Open the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
-2. Under **Solutions**, click **Information protection**.
-3. Click **Create a label**.
-4. Give the label a name. We suggest **Highly sensitive**, but you can choose a different name if that one is already in use.
-5. Add a display name and description, and then click **Next**.
-6. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
-7. On the **Choose protection settings for files and emails** page, select **Encrypt files and emails**, and then click **Next**.
-8. On the **Encryption** page, choose **Configure encryption settings**.
-9. Under **Assign permissions to specific users and groups**, click **Assign permissions**.
-10. Click **Add all users and groups in your organization**.
-11. If there are guests who should have permissions to decrypt files, click **Add users or groups** and add them.
-12.  Click **Save**, and then click **Next**.
-13. On the *Auto-labeling for files and emails** page, click **Next**.
-14. On the **Define protection settings for groups and sites** page, select **Privacy and external user access settings** and **Device access and external sharing settings** and click **Next**.
-15. On the **Define privacy and external user access settings** page, under **Privacy**, select the **Private** option.
-16. If you want to allow guest access, under **External user access**, select **Let Microsoft 365 Group owners add people outside your organization to the group as guests**.
-17. Click **Next**.
-18. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
-19. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
-20. Under **Access from unmanaged devices**, choose **Block access**. (If you're allowing guests and they don't have managed devices, you may want to choose **Allow limited, web-only access**.)
-21. Click **Next**.
-22. On the **Auto-labeling for database columns** page, click **Next**.
-23. Click **Create label**, and then click **Done**.
+1. Under **Solutions**, click **Information protection**.
+1. On the **Labels** tab, click **Create a label**.
+1. Give the label a name. We suggest **Highly sensitive**, but you can choose a different name if that one is already in use.
+1. Add a display name and description, and then click **Next**.
+1. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and clear **Include meetings**.
+1. Click **Next**.
+1. On the **Choose protection settings for files and emails** page, select **Apply or remove encryption**, and then click **Next**.
+1. On the **Encryption** page, choose **Configure encryption settings**.
+1. Under **Assign permissions to specific users and groups**, click **Assign permissions**.
+1. Click **Add all users and groups in your organization**.
+1. If there are guests who should have permissions to decrypt files, click **Add users or groups** and add them.
+1.  Click **Save**, and then click **Next**.
+1. On the **Auto-labeling for files and emails** page, click **Next**.
+1. On the **Define protection settings for groups and sites** page, select **Privacy and external user access settings** and **External sharing and Conditional Access settings** and click **Next**.
+1. On the **Define privacy and external user access settings** page, under **Privacy**, select the **Private** option.
+1. If you want to allow guest access, under **External user access**, select **Let Microsoft 365 Group owners add people outside your organization to the group as guests**.
+1. Click **Next**.
+1. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
+1. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
+1. Select **Use Azure AD Conditional Access to protect labeled SharePoint sites**.
+1. 
+1. 
+1. Click **Next**.
+1. On the **Auto-labeling for database columns** page, click **Next**.
+1. Click **Create label**, and then click **Done**.
 
 Once you've created the label, you need to publish it to the users who will use it. For sensitive protection, we'll make the label available to all users. You publish the label in the Microsoft Purview compliance portal, on the **Label policies** tab of the **Information protection** page. If you have an existing policy that applies to all users, add this label to that policy. If you need to create a new policy, see [Publish sensitivity labels by creating a label policy](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
