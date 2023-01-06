@@ -1,7 +1,7 @@
 ---
 title: Performance analyzer for Microsoft Defender Antivirus
 description: Describes the procedure to tune the performance of Microsoft Defender Antivirus.
-keywords: tune, performance, microsoft defender for endpoint, defender antivirus
+keywords: Microsoft Defender performance analyzer, defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows defender, microsoft defender, microsoft windows 10, microsoft defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows defender antivirus, Windows 10 antivirus, microsoft windows defender, performance windows, ms defender, microsoft scan, windows performance
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 08/13/2022
+ms.date: 01/05/2023
 manager: dansimp
 ms.collection: 
 - m365-security
@@ -19,8 +19,6 @@ ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
 ---
-
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Performance analyzer for Microsoft Defender Antivirus
 
@@ -36,7 +34,11 @@ search.appverid: met150
 
 ## What is Microsoft Defender Antivirus performance analyzer?
 
-In some cases, you might need to tune the performance of Microsoft Defender Antivirus as it scans specific files and folders. Performance analyzer is a PowerShell command-line tool that helps determine which files, file extensions, and processes might be causing performance issues on individual endpoints. This information can be used to better assess performance issues and apply remediation actions.
+ If computers running Microsoft Defender Antivirus are experiencing performance issues, you can use performance analyzer to improve the performance of Microsoft Defender Antivirus. Performance analyzer for Microsoft Defender Antivirus in Windows 10, Windows 11, and Windows Server, is a PowerShell command-line tool that helps you determine files, file extensions, and processes that might be causing performance issues on individual endpoints during antivirus scans.  You can use the information gathered by performance analyzer to assess performance issues and apply remediation actions.
+
+Similar to the way mechanics perform diagnostics and service on a vehicle that has performance problems, performance analyzer can help you improve Defender Antivirus performance.
+
+:::image type="content" source="images/performance-analyzer-improve-defender-antivirus-performance.png" alt-text="Conceptual performance analyzer image for Microsoft Defender Antivirus. The diagram is related to:  Microsoft Defender performance analyzer, defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows defender, microsoft defender, microsoft windows 10, microsoft defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows defender antivirus, Windows 10 antivirus, microsoft windows defender, performance windows. " lightbox="images/performance-analyzer-improve-defender-antivirus-performance.png":::
 
 Some options to analyze include:
 
@@ -50,7 +52,7 @@ Some options to analyze include:
   - top processes per path
   - top scans per file
   - top scans per file per process
-  
+
 ## Running performance analyzer
 
 The high-level process for running performance analyzer involves the following steps:
@@ -105,15 +107,15 @@ Starting   with Defender version 4.18.2206.X, users will be able to view scan sk
 ### For CSV
 
 - **To export**:
-`(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
+`(Get-MpPerformanceReport -Path .\Repro-Install.etl -Topscans 1000). TopScans | Export-CSV -Path .\Repro-Install-Scans.csv -Encoding UTF8 -NoTypeInformation`
 
 - **To convert**:
-`(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
+`(Get-MpPerformanceReport -Path .\Repro-Install.etl -Topscans 100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
 ### For JSON
 
 - **To convert**:
-`(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
+`(Get-MpPerformanceReport -Path .\Repro-Install.etl -Topscans 1000). TopScans | ConvertTo-Json -Depth 1`
 
 To ensure machine-readable output for exporting with other data processing systems, it is recommended to use -Raw parameter for Get-MpPerformanceReport. See below for details
 
@@ -165,7 +167,7 @@ Windows Version 10 and later.
 ##### Example 1: Collect a performance recording and save it
 
 ```powershell
-New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
+New-MpPerformanceRecording -RecordTo .\Defender-scans.etl
 ```
 
 The above command collects a performance recording and saves it to the specified path: **.\Defender-scans.etl**.
@@ -182,7 +184,7 @@ The above command collects a performance recording on Server02 (as specified by 
 ##### Example 3: Collect a performance recording in non-interactive mode
 
 ```powershell
-New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60
+New-MpPerformanceRecording -RecordTo .\Defender-scans.etl -Seconds 60
 ```
 
 The above command collects a performance recording for the duration in seconds specified by parameter -Seconds. This is recommended for users conducting batch collections that require no interaction or prompt.
@@ -301,31 +303,31 @@ Windows Version 10 and later.
 ##### Example 1: Single query
 
 ```powershell
-Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:20
+Get-MpPerformanceReport -Path .\Defender-scans.etl -TopScans 20
 ```
 
 ##### Example 2: Multiple queries
 
 ```powershell
-Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10
+Get-MpPerformanceReport -Path .\Defender-scans.etl -TopFiles 10 -TopExtensions 10 -TopProcesses 10 -TopScans 10
 ```
 
 ##### Example 3: Nested queries
 
 ```powershell
-Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensionsPerProcess:3 -TopScansPerExtensionPerProcess:3
+Get-MpPerformanceReport -Path .\Defender-scans.etl -TopProcesses 10 -TopExtensionsPerProcess 3 -TopScansPerExtensionPerProcess 3
 ```
 
 ##### Example 4: Using -MinDuration parameter
 
 ```powershell
-Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
+Get-MpPerformanceReport -Path .\Defender-scans.etl -TopScans 100 -MinDuration 100ms
 ```
 
 ##### Example 5: Using -Raw parameter
 
 ```powershell
-Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
+Get-MpPerformanceReport -Path .\Defender-scans.etl -TopFiles 10 -TopExtensions 10 -TopProcesses 10 -TopScans 10 -Raw | ConvertTo-Json
 ```
 
 Using \-Raw in the above command specifies that the output should be machine readable and readily convertible to serialization formats like JSON

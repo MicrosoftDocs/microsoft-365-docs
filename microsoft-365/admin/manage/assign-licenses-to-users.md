@@ -29,7 +29,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Assign licenses depending on whether you want to assign product licenses to specific users or assign users licenses to a specific product."
-ms.date: 07/12/2022
+ms.date: 01/05/2023
 ---
 
 # Assign Microsoft 365 licenses to users
@@ -134,7 +134,7 @@ When you use the **Active users** page to assign licenses, you assign users lice
     You might have to buy additional licenses if you don't have enough licenses for everyone.
 
 > [!NOTE]
-> If you want to assign licenses for a large number of users, use [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)
+> If you want to assign licenses for a large number of users, use [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign).
 
 ### Assign licenses to one user
 

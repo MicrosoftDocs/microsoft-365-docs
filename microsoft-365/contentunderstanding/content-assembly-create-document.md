@@ -29,7 +29,7 @@ You can use a *published* modern template to quickly create similar documents wi
 
    ![Screenshot of document library showing the Create a document from a template panel.](../media/content-understanding/content-assembly-create-document-2b.png)
 
-   To help reduce time and effort involved in filling values for placeholders, Syntex provides:
+   To help reduce time and effort involved in filling values for fields, Syntex provides:
 
       - Suggestions to help you easily pick values when selecting values from a list.
-      - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
+      - Autofill field values if able to uniquely identify a record for fields associated with the same list.
