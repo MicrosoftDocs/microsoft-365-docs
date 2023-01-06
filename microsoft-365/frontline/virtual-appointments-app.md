@@ -28,7 +28,7 @@ description: Get an overview of how to use the Virtual Appointments app in Teams
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/22/2022
+ms.date: 02/01/2023
 ---
 
 # Use the Virtual Appointments app in Microsoft Teams

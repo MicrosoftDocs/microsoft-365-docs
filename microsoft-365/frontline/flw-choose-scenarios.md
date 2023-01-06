@@ -19,7 +19,7 @@ ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/05/2022
+ms.date: 02/01/2023
 ---
 
 # Choose your scenarios for Microsoft 365 for frontline workers

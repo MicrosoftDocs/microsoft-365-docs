@@ -22,7 +22,7 @@ f1.keywords:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/21/2022
+ms.date: 02/01/2023
 ---
 
 # Virtual Appointments with Microsoft Teams

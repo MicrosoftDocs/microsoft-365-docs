@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/12/2022
+ms.date: 02/01/2023
 ---
 
 # Start with a pilot deployment of Microsoft 365 for frontline workers

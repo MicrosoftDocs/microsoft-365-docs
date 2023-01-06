@@ -20,7 +20,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 12/16/2022
+ms.date: 02/01/2023
 ---
 # Microsoft Teams Virtual Appointments usage report
 
