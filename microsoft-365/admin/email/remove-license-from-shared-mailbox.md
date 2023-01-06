@@ -56,8 +56,8 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
 ::: moniker-end
 
-     > [!NOTE]
-     > You need to remove the license from the Active users page. You can't remove the license from the Shared mailbox page because licenses are user settings.
+   > [!NOTE]
+   > You need to remove the license from the Active users page. You can't remove the license from the Shared mailbox page because licenses are user settings.
   
 2. Select the shared mailbox.
 
