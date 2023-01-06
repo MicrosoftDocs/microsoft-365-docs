@@ -244,7 +244,7 @@ You can then drill down into details by using [content explorer](data-classifica
 
 After retention labels are applied to content, either by users or auto-applied, you can use content search to find all items that have a specific retention label applied.
 
-When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 ![Retention label condition.](../media/retention-label-condition.png)
 
@@ -550,7 +550,7 @@ For a list of available cmdlets, and to identify which ones are supported for th
 
 ## When to use retention policies and retention labels or eDiscovery holds
 
-Although retention settings and [holds that you create with an eDiscovery case](create-ediscovery-holds.md) can both prevent data from being permanently deleted, they are designed for different scenarios. To help you understand the differences and decide which to use, use the following guidance:
+Although retention settings and [holds that you create with an eDiscovery case](ediscovery-create-holds.md) can both prevent data from being permanently deleted, they are designed for different scenarios. To help you understand the differences and decide which to use, use the following guidance:
 
 - Retention settings that you specify in retention policies and retention labels are designed for a long-term data lifecycle management strategy to retain or delete data for compliance requirements. The scope is usually broad with the main focus being the location and content rather than individual users. The start and end of the retention period is configurable, with the option to automatically delete content without additional administrator intervention.
 
@@ -573,12 +573,12 @@ If you are using older eDiscovery tools to preserve data, see the following reso
 
 - Exchange:
   - [In-Place Hold and Litigation Hold](/exchange/security-and-compliance/in-place-and-litigation-holds)
-  - [How to identify the type of hold placed on an Exchange Online mailbox](./identify-a-hold-on-an-exchange-online-mailbox.md)
+  - [How to identify the type of hold placed on an Exchange Online mailbox](./ediscovery-identify-a-hold-on-an-exchange-online-mailbox.md)
 
 - SharePoint and OneDrive:
   - [Add content to a case and place sources on hold in the eDiscovery Center](/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
-- [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md)
+- [Retirement of legacy eDiscovery tools](ediscovery-legacy-retirement.md)
 
 ## Use retention policies and retention labels instead of older features
 
@@ -600,7 +600,7 @@ If you currently use these older features, they will continue to work side by si
     
     Might be required to integrate with third-party solutions and copies of email messages and their data communication are stored outside Exchange Online. Because you're moving data outside Microsoft 365, you must take extra precautions to secure it and also resolve any duplications that might result from this solution. It will be your responsibility to monitor and follow up on any non-delivery receipts to the journaling mailbox that can occur because of external and dependent services. You don't have these additional administrative overheads when you use Microsoft 365 retention and other Microsoft Purview compliance solutions that also aren't limited to just email messages.
 
-- [Litigation hold](create-a-litigation-hold.md) (retention only)
+- [Litigation hold](ediscovery-create-a-litigation-hold.md) (retention only)
 
    Although Litigation holds are still supported, we recommend you use Microsoft 365 retention or eDiscovery holds, [as appropriate](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
 

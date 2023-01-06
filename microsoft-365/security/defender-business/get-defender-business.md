@@ -42,19 +42,15 @@ Defender for Business provides advanced security protection for your company's d
 
    If you're starting a trial, look for your acceptance email, which contains your promo code and a link to sign in. And be sure to see the [Trial user guide for Defender for Business](trial-playbook-defender-business.md).
 
-2. If you're adding Defender for Business to an existing Microsoft 365 subscription, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and then sign in using your existing work or school account. Or, follow the prompts to create a new account, go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), and then sign in using your new account. 
+2. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and either sign in using your existing work or school account, or follow the prompts to create a new account. 
 
-3. In the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)), review your recommendations, and then proceed to step 4. 
-
-   If you have Microsoft 365 Business Premium, but haven't set it up yet, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). This guidance walks you through how to set up and configure everything, including Defender for Business.
-
-   If you're brand new to Microsoft 365, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
-
-4. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and in the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. You'll know this process has started when you see a message like what's displayed in the following screenshot:
+3. In the [Microsoft 365 Defender portal](https://security.microsoft.com), in the navigation bar, go to **Assets** > **Devices**. This action initiates the provisioning of Defender for Business for your tenant. You'll know this process has started when you see a message like what's displayed in the following screenshot:
 
    :::image type="content" source="media/mdb-hangon-provisioning.png" alt-text="Screenshot of provisioning message in Defender for Business.":::
 
    It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
+
+   If you have Microsoft 365 Business Premium and you haven't set it up yet, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). This guidance walks you through how to set up and configure everything, including Defender for Business.
 
 
 # [Get Microsoft 365 Business Premium](#tab/getpremium)

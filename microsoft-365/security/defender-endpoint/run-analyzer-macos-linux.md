@@ -33,7 +33,7 @@ search.appverid: met150
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
    > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: 'AD8D9D90F9C953E206E57971E9BA399471CA6E61F7034099A686E7DD6757D7C6'
+   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: '815F3E83EB1E6C33D712F101618018E1E38211D4E2807C3A9EF3CC0B0F95225C'
 
 2. Extract the contents of XMDEClientAnalyzer.zip on the machine.
 
@@ -68,7 +68,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
 > - If you are running on a machine that cannot use Python 3 or fetch the lxml component, then you can download a binary based version of the analyzer that does not have any of the requirements: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary). <br> Note that the binary is currently unsigned. To allow the package run on MacOS, you will need to use the syntax: "spctl --add /Path/To/Application.app".
-> - The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '678866D7F14318BD7FEFCDC0259147C34366BCE84A547B5E18BCD07957A21C72'
+> - The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '01B6165F54C00083F40D8BC9481911897591B9497D04395F3440382DFD03B481'
 >
 > - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
 > `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
