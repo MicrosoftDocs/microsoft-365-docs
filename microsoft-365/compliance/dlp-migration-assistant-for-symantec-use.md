@@ -235,7 +235,7 @@ In this step, the migration tool will create DLP policies in Microsoft Complianc
 3. Once the policies are migrated, select **Next** to view the migration report.
     :::image type="content" source="../media/all-set-migration.png" alt-text="Screenshot of Migration process complete.":::
 
-### Step 7: View your migration report
+### Step 7: View th migration report
 
 Once your policies are imported and the migration process is complete, then you can view the migration report.
 
