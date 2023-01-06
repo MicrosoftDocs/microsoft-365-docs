@@ -69,7 +69,9 @@ When you choose to use adaptive scopes, you're prompted to select what type of a
 > [!NOTE]
 > For communications compliance policies, SharePoint sites and OneDrive accounts are not suported. Also, excluded users and Microsoft 365 groups are supported.
 
-The property names for sites are based on SharePoint site managed properties. The attribute names for users and groups are based on [(https://learn.microsoft.com/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
+The property names for sites are based on SharePoint site managed properties. For information about the custom attributes, see [Using Custom SharePoint Site Properties to Apply Microsoft 365 Retention with Adaptive Policy Scopes](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
+
+The attribute names for users and groups are based on [(https://learn.microsoft.com/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
 
 - **Alias** maps to the LDAP name **mailNickname** that displays as **Email** in the Azure AD admin center.
 - **Email addresses** maps to the LDAP name **proxyAddresses** that displays as **Proxy address** in the Azure AD admin center.
