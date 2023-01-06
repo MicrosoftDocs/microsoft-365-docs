@@ -42,13 +42,13 @@ search.appverid: met150
 This migration phase includes the following steps:
 
 1. [Get and deploy updates across your organization's devices](#get-and-deploy-updates-across-your-organizations-devices)
-2. [Get Defender for Endpoint](#get-microsoft-defender-for-endpoint).
+2. [Get Defender for Endpoint Plan 1 or Plan 2](#get-microsoft-defender-for-endpoint).
 3. [Grant access to the Microsoft 365 Defender portal](#grant-access-to-the-microsoft-365-defender-portal).
 4. [Configure device proxy and internet connectivity settings](#configure-device-proxy-and-internet-connectivity-settings).
 
 ## Get and deploy updates across your organization's devices
 
-As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that your organization's operating systems and apps also have the latest updates. Doing this now can help prevent problems later as you migrate to Defender for Endpoint and Microsoft Defender Antivirus.
+As a best practice, keep your organization's devices and endpoints up to date. Make sure your existing endpoint protection and antivirus solution is up to date, and that your organization's operating systems and apps also have the latest updates. Getting updates installed now can help prevent problems later as you migrate to Defender for Endpoint and employ Microsoft Defender Antivirus on all your devices.
 
 ### Make sure your existing solution is up to date
 
@@ -68,26 +68,26 @@ Need help updating your organization's devices? See the following resources:
 |Android|[Check & update your Android version](https://support.google.com/android/answer/7680439)|
 |Linux|[Linux 101: Updating Your System](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
-## Get Microsoft Defender for Endpoint
+## Get Microsoft Defender for Endpoint Plan 1 or Plan 2
 
 Now that you've updated your organization's devices, the next step is to get Defender for Endpoint, assign licenses, and make sure the service is provisioned.
 
-1. Buy or try Defender for Endpoint today. [Start a free trial or request a quote](https://aka.ms/mdatp).
+1. Buy or try Defender for Endpoint today. [Start a free trial or request a quote](https://aka.ms/mdatp). Note that Microsoft 365 E3 includes Defender for Endpoint Plan 1, and Microsoft 365 E5 includes Defender for Endpoint Plan 2.
 
 2. Verify that your licenses are properly provisioned. [Check your license state](production-deployment.md#check-license-state).
 
 3. Set up your dedicated cloud instance of Defender for Endpoint. See [Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
 
-4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
+4. If any devices in your organization use a proxy to access the internet, follow the guidance in [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
 
 At this point, you are ready to grant access to your security administrators and security operators who will use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-> [!NOTE]
-> The Microsoft 365 Defender portal is sometimes referred to as the Defender for Endpoint portal, and can be accessed at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. The former Microsoft Defender Security Center (https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
+> [!TIP]
+> The Microsoft 365 Defender portal is sometimes referred to as the Defender for Endpoint portal, and can be accessed at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. The former Microsoft Defender Security Center (https://securitycenter.windows.com) now redirects to the Microsoft 365 Defender portal. To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
 
 ## Grant access to the Microsoft 365 Defender portal
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> is where you access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> is where you and your security team will access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
 
 Permissions to the Microsoft 365 Defender portal can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
