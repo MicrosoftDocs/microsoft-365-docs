@@ -415,6 +415,18 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
     - Look at the alert details, machine timeline, and perform your typical investigation steps.
 
+## External Package Dependencies on MDE package
+MDATP Package <br />
+For RHEL6: mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter" <br />
+mdatp DEBIAN package requires "libc6 (>= 2.23", "uuid-runtime", "auditd", "mde-netfilter" <br />
+mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "selinux-policy-targeted", "mde-netfilter" <br />
+
+MDE-NETFILTER Package <br />
+mde-netfilter_DEBIAN_PACKAGE_DEPENDS on "libnetfilter-queue1",  "libglib2.0-0" <br />
+mde-netfilter_RPM_PACKAGE_DEPENDS on "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"<br />
+
+If the mde installation fails due to some missing dependencies error, you can manually download the prerequiste dependencies. 
+
 ## Installer script
 
 Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
