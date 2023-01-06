@@ -103,7 +103,7 @@ Permissions to the Microsoft 365 Defender portal can be granted by using either 
 
 3. Grant your security team access to the Microsoft 365 Defender portal. (Need help? See [Manage portal access using RBAC](rbac.md).
 
-## Configure device proxy and internet connectivity settings
+## More information about device proxy and internet connectivity settings
 
 To enable communication between your devices and Defender for Endpoint, you might have to configure proxy and internet settings. The following table includes links to resources you can use to configure your proxy and internet settings for various operating systems:
 
