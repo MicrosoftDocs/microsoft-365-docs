@@ -40,6 +40,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## January 2023
+
+- The new Microsoft Defender Experts for Hunting report is now available. The report's new interface now lets customers have more contextual details about the suspicious activities Defender Experts have observed in their environments. It also shows which suspicious activities have been continuously trending from month to month. For details, see [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](defender-experts-report.md).
+
 ## December 2022
 
 - (Preview) The new Microsoft 365 Defender role-based access control (RBAC) model is now available for preview. The new RBAC model enables security admins to centrally manage privileges across multiple security solutions within a single system with a greater efficiency, currently supporting Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft Defender for Identity. The new model is fully compatible with the existing individual RBAC models currently supported in Microsoft 365 Defender. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](./manage-rbac.md).
