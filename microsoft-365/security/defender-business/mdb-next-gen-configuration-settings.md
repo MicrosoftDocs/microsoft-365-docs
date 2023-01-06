@@ -82,7 +82,7 @@ The following table describes settings that are preconfigured for Defender for B
 
 ## Microsoft Defender Antivirus states
 
-Microsoft Defender Antivirus, a key component of next-generation protection in Defender for Business, can have one of the following states: 
+Microsoft Defender Antivirus is a key component of next-generation protection in Defender for Business. Depending on whether devices are onboarded to Defender for Business and whether those devices are running a non-Microsoft antivirus/antimwalware solution, Microsoft Defender Antivirus can have one of the following states: 
 
 - Active mode
 - Passive mode
