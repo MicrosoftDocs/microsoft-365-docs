@@ -50,7 +50,9 @@ Both users and admins can work with quarantined messages:
 
   To prevent users from managing their own quarantined phishing messages, admins can assign a quarantine policy that denies access to quarantined messages from the **Phishing email** filtering verdict in anti-spam policies. For more information, see [Assign quarantine policies in anti-spam policies](quarantine-policies.md#anti-spam-policies)[Quarantine policies](quarantine-policies.md).
 
-- Admins and users can report false positives to Microsoft in quarantine.
+- Admins can report false positives to Microsoft from quarantine. For more information, see [Take action on quarantined email](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email) and [Take action on quarantined files](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-files).
+
+- Depending on the [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) in the organization (specifically, the **Let your organization report messages from quarantine** setting), users can report false positives to Microsoft from quarantine.
 
 - How long quarantined messages are held in quarantine before they expire varies based on why the message was quarantined. The features that quarantine messages and their corresponding retention periods are described in the following table:
 
