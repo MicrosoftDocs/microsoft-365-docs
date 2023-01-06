@@ -38,13 +38,15 @@ The Defender Experts for Hunting service generates reports to help you understan
 
 To view the report in your Microsoft 365 Defender portal, go to **Reports**, select **Defender Experts** > **Defender Experts for Hunting report**. Each section of the report is designed to provide more insights into the threats and suspicious activities our Defender Experts found in your environment. 
 
-[Screenshot of a Defender Experts for Hunting report.]
+Refer to the following screenshot of a sample report:
+
+![Screenshot of a Defender Experts for Hunting report.](../../media/defender-experts/defender-experts-hunting-report.png)
 
 ## Identify prevalent threats and other potential attack entry points
 
 Signals from Microsoft 365 Defender and investigations by Defender Experts for Hunting help identify suspicious activities in your environment. Significant threat activities will have corresponding [Defender Experts Notifications](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting#receive-defender-experts-notifications), which also provide recommendations to remediate and defend your organization. The report provides you with the total number of Defender Experts Notifications our experts have sent for your chosen time. 
 
-[Screenshot of the top section of the report showing the number of threats identified]
+![Screenshot of the top section of the report showing the number of threats identified](../../media/defender-experts/report-top-section-dens.png)
 
 To view these notifications, select **View Defender Experts Notifications**. This button redirects you to the Microsoft 365 Defender incidents page. Defender Expert for Hunting alerts or Defender Experts Notifications are labeled with **Defender Experts**.
 
@@ -56,10 +58,14 @@ All other identified suspicious activities are summarized in a table in the **Th
 If an activity has a related Defender Expert Notification, its corresponding icon also appears under the activity name.
 Selecting an identified suspicious activity opens a flyout panel detailing the impacted devices and users. If applicable, the page also provides links to view related Defender Expert Notifications:
 
-[Screenshot of a flyout panel displaying a list of devices impacted by a detected suspicious activity.]
+![Screenshot of a flyout panel displaying a list of devices impacted by a detected suspicious activity.](../../media/defender-experts/suspicious-activity-detail-panel.png)
 
 ## Know and understand the security weak spots in your environment
 
-The **Top trending suspicious activities** section of the report identifies up to 20 suspicious activities that were consistently observed in your environment in the last three months, sorted based on their severity rating and frequency of occurrence. By showing the most critical and frequently observed activities, you can assess and evaluate their impact and develop strategies to prevent or mitigate potential threats to your environment.
+The **Top trending suspicious activities** section of the report identifies up to 20 suspicious activities that were consistently observed in your environment in the last three months, sorted based on their severity rating and frequency of occurrence:
+
+![Screenshot of the Top trending suspicious activities section of the report.](../../media/defender-experts/top-trending-suspicious-activities.png)
+
+By showing the most critical and frequently observed activities, you can assess and evaluate their impact and develop strategies to prevent or mitigate potential threats to your environment
 
 Select **View details** in each card to open a flyout panel detailing the impacted devices and users. If applicable, the page also provides links to view related Defender Expert Notifications.
