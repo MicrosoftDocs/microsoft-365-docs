@@ -48,8 +48,8 @@ Each time the migration assistant runs, it executes the following steps:
 - **Input:** The migration assistant ingests one or more Symantec DLP policy XML files.
 - **Analyze:** The migration assistant interprets the files and identifies Symantec DLP policy constructs.
 - **Rationalize:** The migration assistant maps the identified Symantec DLP policy constructs to Microsoft DLP capabilities. It performs validations for Microsoft DLP platform limitations.
-- **Migrate:** The migration assistant executes PowerShell scripts for the DLP scenarios identified and supported by the UDLP platform.
-- **Report:** The migration assistant provides the user with a detailed migration report about which policies were migrated successfully, partially, and/or not migrated. It also provides recommendations to improve future migrations.
+- **Migrate:** The migration assistant runs PowerShell scripts for the DLP scenarios identified and supported by the UDLP platform.
+- **Report:** The migration assistant reports the migration status of each policy were migrated successfully, partially, and/or not migrated. It also provides recommendations to improve future migrations.
 
 ## Understanding mapping of Symantec DLP elements to Microsoft 365 DLP elements
 
