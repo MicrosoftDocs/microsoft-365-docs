@@ -459,6 +459,19 @@ For more information about this capability, see the announcement [Apply sensitiv
 
 For end user documentation, see [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4).
 
+### Disabling PDF support
+
+If you need to disable the PDF support in Office apps for Word, Excel, and PowerPoint, you can do so by using an Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**:
+
+- Use the Sensitivity feature in Office to apply sensitivity labels to PDFs Set the value to **0**.
+
+This is a new setting and might not yet be supported by the version of Office that you have:
+- Currently in preview: Rolling out to [Beta Channel](https://office.com/insider)
+- Current Channel and Monthly Enterprise Channel: Not not yet supported
+- Semi-Annual Channel: Not not yet supported
+
+Deploy this setting by using Group Policy, or by using the [Cloud Policy service for Microsoft 365](/DeployOffice/overview-office-cloud-policy-service).
+
 ## Sensitivity bar
 
 Newly supported in preview for built-in labels in Word, Excel, and PowerPoint, but not yet for Outlook or Office for the web, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page to identify minimum versions.
