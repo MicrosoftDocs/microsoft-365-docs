@@ -38,10 +38,14 @@ The Azure Information Protection (AIP) add-in component from the [Azure Informat
 
 ## Support for sensitivity label capabilities in apps
 
-The following tables list the minimum Office version that introduced specific capabilities for sensitivity labels built in to Office apps. Or, if the label capability is in public preview or under review for a future release:
+Use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify the minimum Office version that introduced specific capabilities for sensitivity labels built in to Office apps. Or, if the label capability is in public preview or under review for a future release.
+
+In addition to listing the minimum versions for Windows, macOS, iOS, and Android, the tables also include whether the capability is supported for Office on the web (Word, Excel, and PowerPoint), and Outlook for the web:
 
 - [Capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
 - [Capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook)
+
+Office for iOS and Office for Android: Sensitivity labels are built into the [Office app](https://www.microsoft.com/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
 ## Office built-in labeling client and the Azure Information Protection client
 
@@ -212,7 +216,7 @@ For these scenarios, using their Office apps, a user with built-in labeling can 
 > [!IMPORTANT]
 > If your Office apps don't support this capability, they apply the markings as the original text specified in the label configuration, rather than resolving the variables.
 > 
-> The Azure Information Protection unified labeling client supports dynamic markings. For labeling built in to Office, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page for minimum versions supported.
+> The Azure Information Protection unified labeling client supports dynamic markings. For labeling built in to Office, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md).
 
 When you configure a sensitivity label for content markings, you can use the following variables in the text string for your header, footer, or watermark:
 
@@ -264,7 +268,7 @@ Examples:
 
 > [!IMPORTANT]
 > 
-> The [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports this configuration that's also known as mandatory labeling. For labeling built in to Office apps, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page for minimum versions.
+> The [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) supports this configuration that's also known as mandatory labeling. For labeling built in to Office apps, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md).
 >
 > To use mandatory labeling for documents but not emails, see the instructions in the next section that explains how to configure Outlook-specific options.
 > 
@@ -295,11 +299,11 @@ For guidance about when to use this setting, see the information about [policy s
 >
 > The default label always takes priority over mandatory labeling. However, for documents, the Azure Information Protection unified labeling client applies the default label to all unlabeled documents whereas built-in labeling applies the default label to new documents and not to existing documents that are unlabeled. This difference in behavior means that when you use mandatory labeling with the default label setting, users will probably be prompted to apply a sensitivity label more often when they use built-in labeling than when they use the Azure Information Protection unified labeling client.
 > 
-> Now rolling out: Office apps that use built-in labeling and support a default label for existing documents. For details, see the [capabilities table](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) for Word, Excel, and PowerPoint.
+> Now rolling out: Office apps that use built-in labeling and support a default label for existing documents. For details, see the [capabilities table](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) for Word, Excel, and PowerPoint.
 
 ## Outlook-specific options for default label and mandatory labeling
 
-For built-in labeling, identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Different settings for default label and mandatory labeling**. All versions of the Azure Information Protection unified labeling client support these Outlook-specific options.
+For built-in labeling, identify the minimum versions of Outlook that support these features by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Different settings for default label and mandatory labeling**. All versions of the Azure Information Protection unified labeling client support these Outlook-specific options.
 
 When the Outlook app supports a default label setting that's different from the default label setting for documents:
 
@@ -321,7 +325,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 ## Configure a label to apply S/MIME protection in Outlook
 
 > [!NOTE]
-> This capability is available for built-in labeling for Windows, Mac, iOS, and Android, but it's not yet available for Outlook on the web. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](#sensitivity-label-capabilities-in-outlook) on this page, and the row **Apply S/MIME protection**.
+> This capability is available for built-in labeling for Windows, Mac, iOS, and Android, but it's not yet available for Outlook on the web. Identify the minimum versions of Outlook that support this feature by using the [capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook) and the row **Apply S/MIME protection**.
 > 
 > If you configure a label to apply S/MIME protection but your version of Outlook for Windows doesn't yet support it, the label is still displayed and can be applied, but the S/MIME settings are ignored. You won't be able to select this label for Exchange auto-labeling policies.
 
@@ -348,7 +352,7 @@ For more help in specifying PowerShell advanced settings, see [PowerShell tips f
 
 ## PDF support
 
-For built-in labeling, use the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page to identify minimum versions supported. The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
+For built-in labeling, use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md). The Azure Information Protection unified labeling client doesn't support PDF in Office apps.
 
 Word, Excel, and PowerPoint support the following methods to convert an Office document into a PDF document:
 
@@ -384,7 +388,7 @@ For end user documentation, see [Create protected PDFs from Office files](https:
 
 ## Sensitivity bar
 
-Newly supported in preview for built-in labels in Word, Excel, and PowerPoint, but not yet for Outlook or Office for the web, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page to identify minimum versions.
+Newly supported in preview for built-in labels in Word, Excel, and PowerPoint, but not yet for Outlook or Office for the web, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify which Office versions support this feature.
 
 For the supported apps, sensitivity labels are now displayed in a sensitivity bar, next to the file name on the top window bar. For example:
 
@@ -399,7 +403,7 @@ As part of this high visibility, these labels also support colors. For more info
 > [!IMPORTANT]
 > If your labeling apps don't support this capability, they don't display the configured label colors.
 > 
-> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office, label colors are currently supported in preview for Word, Excel, and PowerPoint on Windows, but not yet for Outlook, macOS, or Office for the web. For more information, see the tables in the [capabilities](#support-for-sensitivity-label-capabilities-in-apps) section on this page.
+> The Azure Information Protection unified labeling client supports label colors. For labeling built in to Office, label colors are currently supported in preview for Word, Excel, and PowerPoint on Windows, but not yet for Outlook, macOS, or Office for the web. For more information, see the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md).
 
 Newly created labels don't have a color by default. If your labels were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) or you configured label colors for the Azure Information Protection unified labeling client, these label colors are now displayed in apps that support them.
 
