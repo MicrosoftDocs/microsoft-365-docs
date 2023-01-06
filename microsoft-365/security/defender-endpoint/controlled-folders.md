@@ -150,4 +150,4 @@ You can use the Windows Security app to view the list of folders that are protec
    - To remove a folder, select it, and then select **Remove**.
 
 > [!NOTE]
-> [Windows system folders](#windows-system-folders-are-protected-by-default) are protected by default, and you cannot remove them from the list.
+> [Windows system folders](#windows-system-folders-are-protected-by-default) are protected by default, and you cannot remove them from the list. Subfolders are also included in protection when you add a new folder to the list.
