@@ -93,30 +93,28 @@ Permissions to the Microsoft 365 Defender portal can be granted by using either 
 
 1. Plan the roles and permissions for your security administrators and security operators. See [Role-based access control](prepare-deployment.md#role-based-access-control).
 
-2. Set up and configure RBAC. We recommend using [Intune](/mem/intune/fundamentals/what-is-intune) to configure RBAC, especially if your organization is using a combination of Windows 10, macOS, iOS, and Android devices. See [setting up RBAC using Intune](/mem/intune/fundamentals/role-based-access-control).
+2. Set up and configure RBAC. We recommend using [Intune](/mem/intune/fundamentals/what-is-intune) to configure RBAC, especially if your organization is using a combination of Windows, macOS, iOS, and Android devices. See [setting up RBAC using Intune](/mem/intune/fundamentals/role-based-access-control).
 
     If your organization requires a method other than Intune, choose one of the following options:
 
     - [Configuration Manager](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
-
     - [Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm)
-    
     - [Windows Admin Center](/windows-server/manage/windows-admin-center/overview)
 
-3. Grant access to the Microsoft 365 Defender portal. (Need help? See [Manage portal access using RBAC](rbac.md).
+3. Grant your security team access to the Microsoft 365 Defender portal. (Need help? See [Manage portal access using RBAC](rbac.md).
 
 ## Configure device proxy and internet connectivity settings
 
-To enable communication between your devices and Defender for Endpoint, configure proxy and internet settings. The following table includes links to resources you can use to configure your proxy and internet settings for various operating systems and capabilities:
+To enable communication between your devices and Defender for Endpoint, you might have to configure proxy and internet settings. The following table includes links to resources you can use to configure your proxy and internet settings for various operating systems and capabilities:
 
-|Capabilities|Operating System|Resources|
+|For this plan...| And this operating system... |See these resources.|
 |---|---|---|
-|[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) or later<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2016*](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configure machine proxy and internet connectivity settings](configure-proxy-internet.md)|
-|EDR |[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configure proxy and internet connectivity settings](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|EDR|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
-|[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)|
-|Antivirus|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
-|Antivirus|Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
+|[Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)|[Windows 10](/windows/release-health/release-information) <br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/> Windows Server 2022 <br/> [Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803) <br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)<br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)|
+|[Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
+|[Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)|Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
+|[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)|[Windows 10](/windows/release-health/release-information) or later<br/>Windows Server 2022 <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803)<br/>[Windows Server 2016*](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Configure machine proxy and internet connectivity settings](configure-proxy-internet.md)|
+|[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configure proxy and internet connectivity settings](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
 
 *Requires installation of the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
