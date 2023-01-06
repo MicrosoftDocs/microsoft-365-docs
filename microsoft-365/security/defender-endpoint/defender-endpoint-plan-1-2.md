@@ -60,17 +60,6 @@ Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalo
 - **Microsoft Defender for Servers Plan 1 or Plan 2** as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 - **Microsoft Defender for Business servers (preview)** for small and medium-sized businesses. See [How to get Microsoft Defender for Business servers (preview)](../defender-business/get-defender-business-servers.md).
 
-## Mixed licensing scenarios
-
-Suppose that your organization is using a mix of Microsoft endpoint security subscriptions, such as Defender for Endpoint Plan 1 and Defender for Endpoint Plan 2. **Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant**. In this example, your tenant experience would be Defender for Endpoint Plan 2 for all users.
-
-However, **you can contact support and request an override for your tenant experience**. That is, you could request an override to keep the Defender for Endpoint Plan 1 experience for all users. 
-
-- For more information about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
-- For information about how to contact support, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
-
-> [!TIP]
-> If your organization is a small or medium-sized business, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
 
 ## Start a trial
 
@@ -93,6 +82,9 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 - Use mixed mode, and apply Defender for Endpoint Plan 1 settings to some devices, and Defender for Endpoint Plan 2 to other devices.
 
 See [Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md).
+
+> [!TIP]
+> If your organization is a small or medium-sized business, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
 
 ## More resources
 
