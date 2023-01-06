@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
+ms.date: 01/06/2023
 ms.collection:
 - scotvorg
 - Ent_O365
