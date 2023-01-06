@@ -28,7 +28,7 @@ Next-generation protection in Defender for Business includes robust antivirus an
 - [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
 - [Other preconfigured settings in Defender for Business](#other-preconfigured-settings-in-defender-for-business) 
 - [How default settings in Defender for Business correspond to settings in Microsoft Intune](#how-default-settings-in-defender-for-business-correspond-to-settings-in-microsoft-intune)
-- Microsoft Defender Antivirus modes
+- [Microsoft Defender Antivirus states (active, passive, and disabled)](#microsoft-defender-antivirus-states)
 
 ## Next-generation protection settings and options
 
