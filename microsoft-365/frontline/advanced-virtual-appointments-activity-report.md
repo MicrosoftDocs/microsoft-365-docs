@@ -24,7 +24,7 @@ ms.date: 12/16/2022
 ---
 # Microsoft Teams Advanced Virtual Appointments activity report
 
-![Information icon](media/info.png) **This feature is part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). To access this feature during the preview period, a Teams Premium trial license is required.**
+![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
 The Advanced Virtual Appointments activity report in the Microsoft Teams admin center provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 

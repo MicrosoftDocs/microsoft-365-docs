@@ -79,7 +79,7 @@ No setup is needed by you or your staff!
 
 ## Customize the waiting room with your company logo
 
-![Information icon](media/info.png) **This feature is part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). To use this feature during the preview period, admins and users in your organization who schedule appointments need a Teams Premium trial license.**
+![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
 You can configure a custom waiting room experience for attendees by adding your company logo. As an admin, you use Teams meeting customization policies in the Teams admin center to define your branding by creating a meeting theme. A meeting theme can include your company's logo, a custom image, and more.
 

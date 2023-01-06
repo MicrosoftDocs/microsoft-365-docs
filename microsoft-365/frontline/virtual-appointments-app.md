@@ -100,7 +100,7 @@ You can configure options such as whether attendees can [join from a a desktop o
 
 ##### Set up SMS text notifications
 
-![Information icon](media/info.png) **This feature is now part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Users can continue using this feature during the preview period. After the preview, users need a Teams Premium license.**
+![Information icon](media/info.png) **This feature is now part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
 > [!NOTE]
 > We'll be providing unlimited SMS notifications through March 1, 2023 (previously January 31, 2023) for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
@@ -129,7 +129,7 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 
 #### On-demand appointment type
 
-![Information icon](media/info.png) **To access this feature during the preview period, users need a Teams Premium trial license.**
+![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
 Enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, Tax preparation.
 
@@ -137,7 +137,7 @@ Your customers, clients, and patients can then choose the appointment type on yo
 
 ## Publish a booking page
 
-![Information icon](media/info.png) **To access the on-demand scheduling feature during the preview period, users need a Teams Premium trial license.**
+![Information icon](media/info.png) **The on-demand scheduling feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
 Booking admins can publish an online booking page where people can book scheduled and on-demand appointments with your staff.
 
@@ -177,7 +177,7 @@ To learn more, see [???SMC Conduct a virtual appointment (organizer)]().
 
 ## Monitor appointments and get real-time status updates in the queue view
 
-![Information icon](media/info.png) **The scheduled queue view is now part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Users can continue using this feature during the preview period. After the preview, users need a Teams Premium license. To access the on-demand queue during the preview period, users need a Teams Premium trial license.**
+![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
 The queue view on the **Queue** tab provides your staff with a dashboard to monitor all scheduled and on-demand virtual appointments for the day, with updates in real time.
 
