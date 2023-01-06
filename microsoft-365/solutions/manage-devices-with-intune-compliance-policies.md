@@ -44,7 +44,7 @@ To configure device compliance policies, use the recommended guidance and settin
 
 |Policies |More information  |Licensing |
 |---------|---------|---------|
-|[Define device compliance policies ](../security/office-365-security/identity-access-policies.md#define-device-compliance-policies)   |  One policy for each platform       |  Microsoft 365 E3 or E5       |
+|[Define device compliance policies ](../security/office-365-security/identity-access-policies.md#create-device-compliance-policies)   |  One policy for each platform       |  Microsoft 365 E3 or E5       |
 |  |         |         |
 
 ## Next steps
