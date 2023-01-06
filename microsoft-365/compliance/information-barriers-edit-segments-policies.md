@@ -34,8 +34,8 @@ After you have [defined information barriers (IB) policies](information-barriers
 | [Remove a segment](#remove-a-segment) | Remove an information barriers segment when you no longer need a particular segment. |
 | [Remove a policy and a segment](#remove-a-policy-and-segment) | Remove an information barriers policy and a segment at the same time. |
 | [Stop a policy application](#stop-a-policy-application) | Take this action when you want to stop the process of applying information barriers policies. <br> Stopping a policy application isn't instant, and it doesn't undo policies that are already applied to users. |
+| [Enable or disable user discoverability](#enable-or-disable-user-discoverability) | Enable or disable if users are displayed in the people picker. |
 | [Define policies for information barriers](information-barriers-policies.md) | Define an information barriers policy when you don't already have such policies in place, and you must restrict or limit communications between specific groups of users. |
-| Enable or disable user discoverability |  |
 | [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Refer to this article when you run into unexpected issues with information barriers. |
 
 >[!IMPORTANT]
@@ -257,6 +257,27 @@ After you have started applying information barriers policies, if you want to st
     |**Syntax**|**Example**|
     |:---------|:----------|
     | `Stop-InformationBarrierPoliciesApplication -Identity GUID` | `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p> In this example, we're stopping information barriers policies from being applied. |
+
+## Enable or disable user discoverability
+
+> [!IMPORTANT]
+> Support for enabling or disabling search restrictions is only available when enabling information barriers in your organization after January 31, 2023. <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and cannot enable or disable search restrictions. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
+
+To enable the people picker search restriction using PowerShell, complete the following steps:
+
+1. Use the **Set-PolicyConfig** cmdlet to enable the people picker restriction:
+
+```powershell
+Set-PolicyConfig -InformationBarrierPeopleSearchRestriction 'Enabled'
+```
+
+To disable the people picker search restriction using PowerShell, complete the following steps:
+
+1. Use the **Set-PolicyConfig** cmdlet to disable the people picker restriction:
+
+```powershell
+Set-PolicyConfig -InformationBarrierPeopleSearchRestriction 'Disabled'
+```
 
 ## Resources
 
