@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: normal
 ms.collection: 
 - purview-compliance
-- tier1
+- tier3
 search.appverid: 
 - MOE150
 - MET150
