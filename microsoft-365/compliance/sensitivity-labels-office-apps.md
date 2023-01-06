@@ -40,7 +40,7 @@ The Azure Information Protection (AIP) add-in component from the [Azure Informat
 
 Use the tables in [Minimum versions for sensitivity labels in Office apps](sensitivity-labels-versions.md) to identify the minimum Office version that introduced specific capabilities for sensitivity labels built in to Office apps. Or, if the label capability is in public preview or under review for a future release.
 
-In addition to listing the minimum versions for Windows, macOS, iOS, and Android, the tables also include whether the capability is supported for Office on the web (Word, Excel, and PowerPoint), and Outlook for the web:
+In addition to listing the minimum versions for Windows, macOS, iOS, and Android, the tables also include whether the capability is supported for Office on the web:
 
 - [Capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)
 - [Capabilities table for Outlook](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-outlook)
