@@ -23,7 +23,7 @@ description: "Learn how to use the Microsoft Purview Data Loss Prevention migrat
 
 # Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
 
-This article takes you through an instance of migration using the [Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-learn.md).
+This article takes you through using the [Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-learn.md).
 
 Before you start with migration, ensure you've met the following prerequisites:
 
@@ -47,53 +47,44 @@ Use these steps to perform a DLP policy migration:
 
 ### Step 1: Log in to your account
 
-After you've installed and launched the Microsoft Purview Data Loss Prevention migration assistant for Symantec, the first thing that you need to do is to log in.
+After you've installed and launched the migration assistant, you need to log in.
 
 > [!IMPORTANT]
-> The first time you launch the migration assistant, please choose **Run as administrator** option. This is required as the migration assistant may need to install additional dependencies if they are not already available on your machine.
+> The first time you launch the migration assistant, please choose **Run as administrator** option. This is required as the migration assistant may need to install additional components if they are not already available on your machine.
 >
 > For all subsequent launches, you may launch the migration assistant normally and don't need to run as administrator.
 
 :::image type="content" source="../media/migration-assistant-run-as-admin.png" alt-text="Screenshot of the migration assistant run as administrator dialog box.":::
 
 1. You'll be greeted with a welcome screen.
-    1. Click the **Get Started** button and the migration assistant will check if your environment is set up correctly.
-     :::image type="content" source="../media/migration-assistant-get-started-screen.png" alt-text="Screenshot of MAMPD Get Started screen.":::
-     2. Click **Next**.
-     :::image type="content" source="../media/migration-assistant-environment-setup.png" alt-text="Screenshot of MAMPD setup.":::
-2. You'll be taken to the Login screen.
-    1. Enter your username and click **Login**.
-     :::image type="content" source="../media/migration-assistant-username-entry.png" alt-text="Screenshot of the MAMPD username input.":::
-    2. Enter your password in the browser window that opens and click **Sign in**.
-     :::image type="content" source="../media/migration-assistant-login-complete.png" alt-text="Screenshot of entering MAMPD password.":::
+    1. Select **Get Started** and the migration assistant will check if your environment is set up correctly.
+     2. Select **Next**.
+2. Enter your username and select **Login**.
+     2. Enter your password in the browser window that opens and select **Sign in**.
 3. You need to wait until your login is validated. Simultaneously, the migration assistant fetches information that will be required in later stages of the migration process.
    :::image type="content" source="../media/login-fetching-details.png" alt-text="Screenshot of the screen fetching details.":::
-4. Once you're logged in, click anywhere on the tool window. The **Next** button should now be enabled.
-
-   You can click on **Next** and move to the next step in the migration process.
-   :::image type="content" source="../media/login-next-page-mampd.png" alt-text="Screenshot of completion of fetching MAMPD login details.":::
+4. Once you're logged in choose **Next**.
+   
 
 ### Step 2: Upload your Symantec policy
 
-You need to upload your Symantec DLP policy exports, which act as input for the migration assistant. The policies you upload will be the ones that will be migrated to the Microsoft DLP platform.
+You need to upload your Symantec DLP policy exports, which act as input for the migration assistant. The policies you upload will be the ones that will be migrated to the Microsoft Purview DLP platform.
 
-1. To upload the files, you need to click on **Browse** button.
- :::image type="content" source="../media/upload-dlp-files.png" alt-text="Screenshot of uploading DLP files by clicking Browse.":::
-2. Select the required policy files in the File Explorer pop-up window and click **Open**.
-     1. You can select more than one XML file to migrate multiple policies at a time. Based on our initial engagement with some customers, we've learned that it's best to migrate anywhere from one to three policies at a time to avoid confusion during later stages of the migration process.
+1. To upload the files, select **Browse**.
+2. Select the required policy files in the File Explorer pop-up window and choose **Open**.
+     1. You can select more than one XML file to migrate multiple policies at a time. It's best to migrate anywhere from one to three policies at a time to avoid confusion during later stages of the migration process.
 
          > [!NOTE]
          > Ensure that the XML files you upload are Symantec DLP policy exports only and no other kind of XML.
 
-        :::image type="content" source="../media/save-as-xml.png" alt-text="Screenshot of saving DLP as XML.":::
 3. The tool will show you a list of your selected input policy files.
-     1. If you wish to deselect a previously selected policy file, you can click the delete icon corresponding to that policy.
+     1. If you wish to deselect a previously selected policy file, you can select the delete icon corresponding to that policy.
       :::image type="content" source="../media/upload-dlp-policies.png" alt-text="Screenshot of uploading DLP Policies to migrate.":::
-4. Once you've completed with the selection of policy files you wish to migrate, click **Next** and move to the next step.
+4. Once you've completed with the selection of policy files you wish to migrate, select **Next** and move to the next step.
 
 ### Step 3: Edit policy settings
 
-Once you input the policies you want to migrate, the migration assistant will process those files and auto-map Symantec DLP policy elements to Microsoft DLP elements.
+Once you input the policies you want to migrate, the migration assistant will process those files and map Symantec DLP policy elements to Microsoft DLP elements.
 
 > [!IMPORTANT]
 > There may be some items that may need your review and will be marked with 'warning symbol'.
@@ -102,9 +93,9 @@ Once you input the policies you want to migrate, the migration assistant will pr
 
 #### Keywords, Data Identifiers and Regular expressions
 
-Symantec DLP and Microsoft DLP differ in how they allow users to define sensitive information that needs to be protected.
+Symantec DLP and Microsoft Purview information protection differ in how they allow users to define sensitive information that needs to be protected.
 
-Microsoft DLP allows users to define sensitive information that needs to be protected as sensitive information types (SITs). Microsoft provides many commonly used SITs like Credit Card Number that is preconfigured. If these don't meet your needs, you can create your own custom SITs.
+Microsoft Purview Information Protection allows users to define sensitive items that need protection as sensitive information types (SITs), or through trainable classifiers. Microsoft provides many commonly used SITs like Credit Card Number that are preconfigured. If these don't meet your needs, you can create your own custom SITs.
 
 The most common ways in which Symantec users specify the types of sensitive information that need to be protected are:
 
@@ -116,78 +107,73 @@ The migration assistant takes care of each of the above scenarios in one of thes
 
 - **Map to an existing OOB SIT:** For all sensitive data types for which there exists an equivalent SIT in Microsoft DLP, the migration assistant will attempt to create a 1:1 mapping. It automatically maps OOB Symantec Data Identifiers to pre-configured Microsoft SITs, if an equivalent exists. If you want to bring the Symantec Data Identifier over as-is, then you can create a new SIT as described in the next step.
 
-- **Migrate as a new custom SIT:** For all sensitive data types for which there isn't an equivalent SIT available in Microsoft DLP, the migration assistant will automatically opt to create a new SIT. It will automatically create a new SIT for all OOB Symantec Data Identifiers for which no equivalent SIT in Microsoft DLP is available. Similarly, any regular expression(s) or keyword(s) defined directly in rules will be brought over as a new custom SIT.
+- **Migrate as a new custom SIT:** For all sensitive data types for which there isn't an equivalent SIT available in Microsoft DLP, the migration assistant will automatically create a new SIT. Similarly, any regular expression(s) or keyword(s) defined directly in rules will be brought over as a new custom SIT.
 
 > [!NOTE]
-> Regular expressions and/or keywords defined directly at the rule-level of Symantec policies will take on the name of the rule itself and show in the Source column. In case of multiple regular expressions and/or keywords, it will take the name of the rule name followed by roman numerals.
+> Regular expressions and/or keywords defined directly at the rule-level of Symantec policies will take on the name of the rule itself and show up in the Source column. In case of multiple regular expressions and/or keywords, it will take the name of the rule name followed by roman numerals.
 >
 >Each of these will be migrated separately as a custom SIT. This may lead to confusion and we recommend you review and rename these SITs as soon as possible.
 >
->You cannot edit the name of these SITs within the migration assistant. You can edit the names of these custom SITs from Compliance Center or via PowerShell after the policy migration has been completed.
+>You cannot edit the name of these SITs within the migration assistant. You can edit the names of these custom SITs from Microsoft Purview Compliance Portal or via PowerShell after the policy migration has been completed.
 
 #### Inclusions, Exclusions and Response Rules
 
 The current version of the migration assistant brings over policies with ‘*Generate Incident Report*’ as a default action. Also, DLP policies in Microsoft DLP automatically log events in Unified Audit Log and won't need a separate action equivalent to ‘Syslog’ in Symantec DLP.
 
-All other response rules in Symantec are currently not supported by the migration assistant and thus not migrated along with other policy elements. However, you can manually add (or remove) actions to the policies using Compliance Center after the migration assistant has successfully migrated the policies.
+All other response rules in Symantec are currently not supported by the migration assistant and thus not migrated along with other policy elements. However, you can manually add (or remove) actions to the policies using Compliance Portal after the migration assistant has successfully migrated the policies.
 
-1. You'll be able to see a list of all your policies and rules within them along with their status. You can select different policies from the left column to see Details for each policy.
-    1. By default, the tool will display all items that need review. You can toggle to see all items in a given policy by choosing the **Show All Items** button at the top of the Details section.
+You'll be able to see a list of all your policies and rules within them along with their status. You can select different policies from the left column to see Details for each policy. By default, the tool will display all items that need review. You can toggle to see all items in a given policy by choosing the **Show All Items** button at the top of the Details section.
       :::image type="content" source="../media/edit-policy-settings-mampd.png" alt-text="Screenshot of Show All Items.":::
-2. Policy Details
-    1. Policy Name - You can edit the name of the policy before migration.
-    2. Each policy will be divided into two sections:
-    - Keywords, Data Identifiers and Regular expressions: These will be migrated as sensitive information types (SITs) in Microsoft DLP.
-    - Rules: These will be automatically mapped to different Microsoft DLP conditions and exceptions.
-    3. Each row in the table will show:
+
+##### Policy Details
+
+Policy Name - You can edit the name of the policy before migration.
+
+Each policy will be divided into two sections
+
+Keywords, Data Identifiers and Regular expressions- These will be migrated as sensitive information types (SITs) in Microsoft DLP.
+
+Rules - These will be automatically mapped to different Microsoft DLP conditions. Each row in the table will show
     - The name that the SIT will have when migrated
     - Potential issues that may affect migration
     - Type of rule as detected from the input policy
     - Status:
-        - Blank/empty status: This row element will be migrated without issues.
-        - Needs Review: This row element may have one or more issues and may require some input from you.
-        - Informational: This row element may have one or more changes needed for migration but will be auto-resolved.
-        - Unsupported: This row element isn't supported for migration by the tool and may need to be migrated manually after the tool exits.
+      - Blank/empty status -  This row element will be migrated without issues.
+      - Needs Review - This row element may have one or more issues and may require some input           from you.
+      - Informational - This row element may have one or more changes needed for migration but will be auto-resolved.
+      - Unsupported -  This row element isn't supported for migration by the tool and may need to be migrated manually after the tool exits.
     - Edit button
-    4. Extend policy coverage to other Microsoft locations.
+
+Extend policy coverage to other Microsoft locations.
     - You can extend your current Symantec policies to other Microsoft locations in addition to the original scope of the policy.
 
-        For example: An email (Exchange) DLP policy can be extended to SharePoint, OneDrive, Teams, and Endpoint Devices.
+For example: 
+An Purview DLP policy that's scoped to email can be extended to SharePoint, OneDrive, Teams, and Endpoint Devices.
 
-    - The migration assistant will auto-create a new policy based on the original policy with all supported rules for that given workload. One or more rules may be dropped if not supported for a given workload.
+The migration assistant will auto-create a new policy based on the original policy with all supported rules for that given workload. One or more rules may be dropped if not supported for a given workload.
 
-        For example: Email subject is condition may be dropped while extending an email (Exchange) DLP policy to OneDrive.
+For example: 
+Email subject is condition may be dropped while extending an email (Exchange) DLP policy to OneDrive.
 
-    - Some checkboxes may be disabled by default, if there are no supported conditions available in extended locations.
+Some checkboxes may be disabled by default, if there are no supported conditions available in extended locations.
 
-3. Editing a row element:
+Editing a row element - When edit one or more row elements, you'll be navigated to an **Edit** screen with more details about that row element. If there’s any issue, it will be reported by a yellow banner at the top of the screen. You may need to make changes to the content in the editable sections, and those changes will be incorporated at the time of migration.Once you resolve the issues in the content, the yellow banner will disappear.
 
-   :::image type="content" source="../media/edit-row-edit-policy-settings-dlp.png" alt-text="Screenshot of editing a row in Edit Policy Settings.":::
-
-    1. When you click **Edit** button for one or more row elements, you'll be navigated to an Edit screen with more details about that row element.
-      :::image type="content" source="../media/save-sensitive-information.png" alt-text="Screenshot of editing Sensitive Information Type.":::
-    2. If there’s any issue, it will be reported by a yellow banner at the top of the screen.
-    3. You may need to make changes to the content in the editable sections, and those changes will be incorporated at the time of migration. 
-    - Once you resolve the issues in the content, the yellow banner will disappear.
-    4. Use existing SITs from tenant to auto replace current SIT.
-    - You may choose to replace the current SIT (which is being edited) with another SIT from your tenant.
+Use existing SITs from tenant to auto replace current SIT. You may choose to replace the current SIT (which is being edited) with another SIT from your tenant.
          :::image type="content" source="../media/sit-content.png" alt-text="Screenshot of editing SIT content.":::
-    - You can manually change any of the mappings if you wish to, by clicking on the corresponding row in the ‘Target’ column.
-    This will open a drop-down list with all the out-of-box SITs (OOB SITs) and all the custom SITs (if any) that you may have previously created. You can choose the option to which you wish to map to the ‘Source’ row item. Alternatively, you can also choose the option ‘New SIT’ from the drop-down and the migration assistant will bring over the Source SIT as a new custom SIT.
 
-   > **Recommendation**
-   >
-   > We highly recommend using existing SITs to replace current SITs wherever possible as it will help reduce duplicate SIT creation and also allow you reduce effort on optimizing multiple custom SITs of the same kind. Learn more about [sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+You can manually change any of the mappings if you wish to, by selecting on the corresponding row in the ‘Target’ column. This will open a drop-down list with all the out-of-box SITs (OOB SITs) and all the custom SITs (if any) that you may have previously created. You can choose the option to which you wish to map to the ‘Source’ row item. Alternatively, you can also choose the option ‘New SIT’ from the drop-down and the migration assistant will bring over the Source SIT as a new custom SIT.
+
+We strongly recommend using existing SITs to replace current SITs wherever possible to help reduce creation of duplicate SITs and also reduce effort on optimizing multiple custom SITs of the same kind. Learn more about [sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
   
    >[!WARNING]
    > Microsoft DLP platform has a threshold for up to 10 rule packages per tenant. This limit is enough for most customers, but the creation of many duplicate custom SITs may quickly lead you to hitting this threshold without the ability to create any new custom SITs.
 
-4. After you've reviewed all the policies and the rules within them, click **Next**.
-    1. If one or more of the policies contain at least one element with *Needs Review* status, then you’ll see a **Continue with errors** button instead of **Next**.
+After you've reviewed all the policies and the rules within them, select **Next**. If one or more of the policies contain at least one element with *Needs Review* status, then you’ll see a **Continue with errors** button instead of **Next**.
 
 ### Step 4: Review pre-migration feasibility report
-
-The migration assistant will provide you with a pre-migration feasibility report showing overall coverage & migration feasibility at the policy level.
+<!-- CHRFOX LEFT OFF HERE-->
+The migration assistant will provide you with a pre-migration feasibility report showing overall coverage and migration feasibility at the policy level.
 
  :::image type="content" source="../media/review-dlp-policies.png" alt-text="Screenshot of Review your Policies.":::
 
@@ -203,11 +189,11 @@ The migration assistant will provide you with a pre-migration feasibility report
        - Unsupported Items: This field indicates a list of all conditions, exceptions, and actions (response rules) that may not be supported for migration.
        - Delete button: This button will remove the selected policy from the scope of migration.
 
-2. After reviewing, click **Next** to move to the next step.
+2. After reviewing, select **Next**.
 
 ### Step 5: Test or turn on your policies
 
-After you've completed all the previous steps, your Symantec DLP policy is ready to be imported to Microsoft DLP platform.
+After you've completed all the previous steps, your Symantec DLP policy is ready to be imported to Microsoft Purview DLP platform.
 
  :::image type="content" source="../media/start-migration.png" alt-text="Screenshot of DLP Policy migration.":::
 
@@ -220,7 +206,7 @@ After you've completed all the previous steps, your Symantec DLP policy is ready
      >
      >Once your policy is fine-tuned, you can turn it on or in other words put it into production.
 
-2. Click **Start Migration** to import your policy. A new PowerShell window will open asking you to log in again.
+2. Select **Start Migration** to import your policy. A new PowerShell window will open asking you to log in again.
 
     After you log in, PowerShell scripts will get executed to create new policies in Microsoft DLP platform with all the data in the input policy files, and any other settings you made during the previous migration assistant steps.
 
@@ -238,7 +224,7 @@ In this step, the migration tool will create DLP policies in Microsoft Complianc
     :::image type="content" source="../media/migration-dlp-progress.png" alt-text="Screenshot of the Migration in process.":::
 2. In case an error occurs during migration, you can choose an action to perform.
     :::image type="content" source="../media/errors-migration-options.png" alt-text="Screenshot of errors that can occur during Migration process.":::
-    You'll have to click on one of these options:
+    You'll have to select one of these options:
     - **Try Again**: Policy creation will be attempted again.
     - **Rollback all changes**: All SITs and policies for that session will be deleted.
     - **Rollback failed policies**: Only the failed SITs and policies for that session will be deleted.
@@ -246,7 +232,7 @@ In this step, the migration tool will create DLP policies in Microsoft Complianc
     >[!NOTE]
     > When you choose to rollback any changes, it may take 2 – 4 hours for the entire rollback to take place. The migration assistant tool window needs to be kept open for the entire duration for successful rollback.
 
-3. Once the policies are migrated, click **Next** to view the migration report.
+3. Once the policies are migrated, select **Next** to view the migration report.
     :::image type="content" source="../media/all-set-migration.png" alt-text="Screenshot of Migration process complete.":::
 
 ### Step 7: View your migration report
@@ -343,7 +329,7 @@ You should go to the Compliance Center and validate that the policies were migra
 
 1. Welcome screen/Get started error
 
-    If you see an error on Welcome screen after clicking Get Started button:
+    If you see an error on Welcome screen after selecting **Get Started**:
      1. Confirm that you've installed all the pre-requisites using the same links/versions as mentioned in [Before you start](dlp-migration-assistant-for-symantec-get-started.md#before-you-begin).
      2. Ensure that you've restarted the machine after installing the pre-requisites from the above step.
      3. Check if you're running the tool in admin mode using **Run as administrator** option while starting the application.
