@@ -18,6 +18,8 @@ description: Learn about custom models and prebuilt models in Microsoft Syntex.
 
 # Overview of model types in Microsoft Syntex
 
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
+
 Content understanding in Microsoft Syntex starts with AI models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
 When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
