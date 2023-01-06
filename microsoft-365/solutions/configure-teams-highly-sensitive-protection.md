@@ -31,10 +31,9 @@ For this tier of protection, we create a sensitivity label that can be used acro
 
 The highly sensitive tier offers the following additional protections over the baseline tier:
 
-- A sensitivity label for the team that allows you to turn guest sharing on or off and blocks access to SharePoint content for unmanaged devices. This label can also be used to classify and encrypt files.
-- A more restrictive default sharing link type
+- A sensitivity label for the team that allows you to turn guest sharing on or off and enforces a conditional access for access to the SharePoint site. The label is also used as a default label for files.
 - Only team owners can create private channels.
-- Access requests for the associated SharePoint site are turned off.
+- Site access is restricted to team members.
 
 ## Video demonstration
 
@@ -52,7 +51,7 @@ For details about sharing with guests securely, see the following resources:
 - [Limit accidental exposure to files when sharing with people outside your organization](./share-limit-accidental-exposure.md)
 - [Create a secure guest sharing environment](./create-secure-guest-sharing-environment.md)
 
-To allow or block guest sharing, we use a combination of a sensitivity label for the team and site-level sharing controls for the associated SharePoint site, both discussed later.
+To allow or block guest sharing, we'll use controls available in sensitivity labels.
 
 
 ## Authentication context
@@ -95,7 +94,7 @@ We'll point to the authentication context in the sensitivity label.
 
 ## Sensitivity labels
 
-For the highly sensitive level of protection, we'll be using a sensitivity label to classify the team. This label can also be used to classify and encrypt individual files in this or other teams or in other file locations such as SharePoint or OneDrive. 
+For the highly sensitive level of protection, we'll be using a sensitivity label to classify the team. We'll also use this label to classify and encrypt individual files in the team. (It can also be used on files in other file locations such as SharePoint or OneDrive.)
 
 As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
 
@@ -189,7 +188,7 @@ To restrict site access for the site connected to your team, run the following c
 Set-SPOSite -Identity <siteurl> -RestrictedAccessControl $true
 ```
 
-### Choose a default sensitivity label for site content
+### Choose a default sensitivity label for files
 
 We'll use the sensitivity label that we created as the default sensitivity label for the site document library that is connected to Teams. This will automatically apply the highly sensitive label to any new label-compatible files that are uploaded to the library, encrypting them.
 

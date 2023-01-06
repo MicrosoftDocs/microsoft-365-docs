@@ -27,7 +27,7 @@ description: "Learn how to deploy teams with protection for sensitive data."
 
 In this article, we look at setting up a team for a sensitive level of protection. Be sure you've completed the steps in [Deploy teams with baseline protection](configure-teams-baseline-protection.md) before following the steps in this article. The sensitive tier offers the following additional protections over the baseline tier:
 
-- A sensitivity label for the team that allows you to turn guest sharing on or off and limits access to SharePoint content to web-only for unmanaged devices. This label can also be used to classify files.
+- A sensitivity label for the team that allows you to turn guest sharing on or off and limits access to SharePoint content to web-only for unmanaged devices. This label is also used as the default label for files.
 - A more restrictive default sharing link type
 - Only team owners can create private channels.
 
@@ -51,7 +51,7 @@ To allow or block guest sharing, we use a combination of a sensitivity label for
 
 ## Sensitivity labels
 
-For the sensitive level of protection, we'll be using a sensitivity label to classify the team. This label can also be used to classify individual files in this or other teams, or in other file locations such as SharePoint or OneDrive. 
+For the sensitive level of protection, we'll be using a sensitivity label to classify the team. We'll also use this label to classify individual files in the team. (It can also be used on files in other file locations such as SharePoint or OneDrive.)
 
 As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
 
@@ -67,12 +67,7 @@ To create a sensitivity label
 1. Add a display name and description, and then click **Next**.
 1. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and clear **Include meetings**.
 1. Click **Next**.
-1. On the **Choose protection settings for files and emails** page, select **Apply or remove encryption**, and then click **Next**.
-1. On the **Encryption** page, choose **Configure encryption settings**.
-1. Under **Assign permissions to specific users and groups**, click **Assign permissions**.
-1. Click **Add all users and groups in your organization**.
-1. If there are guests who should have permissions to decrypt files, click **Add users or groups** and add them.
-1.  Click **Save**, and then click **Next**.
+1. On the **Choose protection settings for files and emails** page, click **Next**.
 1. On the **Auto-labeling for files and emails** page, click **Next**.
 1. On the **Define protection settings for groups and sites** page, select **Privacy and external user access settings** and **External sharing and Conditional Access settings** and click **Next**.
 1. On the **Define privacy and external user access settings** page, under **Privacy**, select the **Private** option.
@@ -150,7 +145,7 @@ To configure owners-only site sharing
 5. In the **Site permissions** pane, under **Site sharing**, click **Change how members can share**.
 6. Under **Sharing permissions**, choose **Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**, and then click **Save**.
 
-### Choose a default sensitivity label for site content
+### Choose a default sensitivity label for files
 
 We'll use the sensitivity label that we created as the default sensitivity label for the site document library that is connected to Teams. This will automatically apply the highly sensitive label to any new label-compatible files that are uploaded to the library.
 
