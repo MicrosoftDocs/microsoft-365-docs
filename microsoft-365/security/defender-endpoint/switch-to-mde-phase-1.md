@@ -56,7 +56,7 @@ Keep your existing endpoint protection solution up to date, and make sure that y
 
 ### Make sure your organization's devices are up to date
 
-Need help updating your organization's devices? See the following resources:
+Need help with updating your organization's devices? See the following resources:
 
 |OS|Resource|
 |---|---|
@@ -78,7 +78,7 @@ Now that you've updated your organization's devices, the next step is to get Def
 
 4. If any devices in your organization use a proxy to access the internet, follow the guidance in [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
 
-At this point, you are ready to grant access to your security administrators and security operators who will use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+At this point, you're ready to grant access to your security administrators and security operators who will use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 > [!TIP]
 > The Microsoft 365 Defender portal is accessed at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. The former Microsoft Defender Security Center (https://securitycenter.windows.com) now redirects to the Microsoft 365 Defender portal. To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
@@ -121,6 +121,6 @@ To enable communication between your devices and Defender for Endpoint, you migh
 
 ## Next step
 
-**Congratulations**! You have completed the **Prepare** phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
+**Congratulations**! You've completed the **Prepare** phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
 - [Proceed to set up Defender for Endpoint](switch-to-mde-phase-2.md).
