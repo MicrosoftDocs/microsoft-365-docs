@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -13,6 +13,7 @@ ms.custom:
 - Adm_O365
 - 'O365E_SetupDirSyncLocalDir'
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 search.appverid:
@@ -46,7 +47,7 @@ You can solve the ".local" problem by registering new UPN suffix or suffixes in 
   
 After you've updated the UPNs to use the verified domain, you're ready to synchronize your on-premises AD DS with Microsoft 365.
   
-#### Step 1: Add the new UPN suffix**
+#### Step 1: Add the new UPN suffix
   
 1. On the AD DS domain controller, in the Server Manager choose **Tools** \> **Active Directory Domains and Trusts**.
     

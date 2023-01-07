@@ -4,8 +4,8 @@ description: Describes the policies for Microsoft recommendations about how to a
 ms.author: dansimp
 author: dansimp
 manager: Laurawi
-ms.prod: m365-security
-ms.topic: article
+ms.service: microsoft-365-security
+ms.topic: conceptual
 audience: Admin
 f1.keywords: 
   - NOCSH
@@ -15,11 +15,14 @@ ms.custom:
   - goldenconfig
 ms.collection: 
   - M365-identity-device-management
-  - M365-security-compliance
+  - m365-security
   - remotework
   - m365solution-identitydevice
   - m365solution-scenario
-ms.technology: mdo
+  - zerotrust-solution
+  - highpri
+ms.subservice: mdo
+search.appverid: met150
 ---
 
 # Policy recommendations for securing email
@@ -43,9 +46,9 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 |Protection level|Policies|More information|
 |---|---|---|
 |**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps|
-||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Include Exchange Online in the assignment of cloud apps|
-||[Apply APP data protection policies](identity-access-policies.md#apply-app-data-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows)|
-||[Require approved apps and APP protection](identity-access-policies.md#require-approved-apps-and-app-protection)|Include Exchange Online in the list of cloud apps|
+||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-multifactor-authentication)|Include Exchange Online in the assignment of cloud apps|
+||[Apply APP data protection policies](identity-access-policies.md#app-protection-policies)|Be sure Outlook is included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows)|
+||[Require approved apps and APP protection](identity-access-policies.md#require-approved-apps-and-app-protection-policies)|Include Exchange Online in the list of cloud apps|
 ||[Block ActiveSync clients](#block-activesync-clients)|Add this new policy|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include Exchange Online in the assignment of cloud apps|
 ||[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include Exchange Online in the list of cloud apps|
@@ -55,7 +58,7 @@ If you included Exchange Online and Outlook in the scope of the policies when yo
 
 Exchange ActiveSync can be used to synchronize messaging and calendaring data on desktop and mobile devices.
 
-For mobile devices, modern authentication-capable Exchange ActiveSync clients that do not support Intune app protection policies (or supported clients that are not defined in the app protection policy) and Exchange ActiveSync clients that use basic authentication are blocked based on the Conditional Access policy created in [Require approved apps and APP protection](identity-access-policies.md#require-approved-apps-and-app-protection).
+For mobile devices, modern authentication-capable Exchange ActiveSync clients that do not support Intune app protection policies (or supported clients that are not defined in the app protection policy) and Exchange ActiveSync clients that use basic authentication are blocked based on the Conditional Access policy created in [Require approved apps and APP protection](identity-access-policies.md#require-approved-apps-and-app-protection-policies).
 
 To block Exchange ActiveSync using basic authentication on other devices, follow the steps in [Block Exchange ActiveSync on all devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices), which prevents Exchange ActiveSync clients using basic authentication on non-mobile devices from connecting to Exchange Online.
 
@@ -67,7 +70,7 @@ You can restrict the ability for users to download attachments from Outlook on t
 
 Here are the steps:
 
-1. [Connect to an Exchange Online Remote PowerShell session](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 2. If you don't already have an OWA mailbox policy, create one with the [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) cmdlet.
 3. If you want to allow viewing of attachments but no downloading, use this command:
 

@@ -5,11 +5,12 @@ author: kelleyvice-msft
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
-ms.localizationpriority: mediumn
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: admindeeplinkMAC

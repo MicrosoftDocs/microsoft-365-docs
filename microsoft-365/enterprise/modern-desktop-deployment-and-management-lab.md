@@ -9,7 +9,7 @@ ms.reviewer: alainme
 ms.date: 05/11/2022
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -20,14 +20,12 @@ description: Learn about where to access the Windows and Office Deployment Lab K
 
 # Windows and Office 365 deployment lab kit
 
-The Windows and Office 365 deployment lab kit is designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps for enterprise. The labs in the kit cover using Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot, and more. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation.
-
-There are two versions of the lab available for free download:  
+The Windows and Office 365 deployment lab kits are designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps. The labs in the kit cover using Microsoft Intune and Microsoft Configuration Manager. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation. The following lab kits are available for free download:  
 
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
-|[Win 10 lab environment](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Win 11 lab environment](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
-|[Win 10 lab guides](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab_guides.zip)|[Win 11 lab guides](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Windows 10 lab environment](https://download.microsoft.com/download/a/5/0/a505dbce-6cc8-4f92-a777-cda556da9266/Win10_21H2_Lab_v2.zip)|[Windows 11 lab environment](https://download.microsoft.com/download/b/3/9/b3959d76-6ea6-4b4a-84e2-d863b9f38887/Win11_22H2_2211_Lab.zip)|
+|[Windows 10 lab guides](https://download.microsoft.com/download/a/5/0/a505dbce-6cc8-4f92-a777-cda556da9266/Win10_21H2_Lab_Guides_v2.zip)|[Windows 11 lab guides](https://download.microsoft.com/download/b/3/9/b3959d76-6ea6-4b4a-84e2-d863b9f38887/Win11_22H2_2211_Lab_Guides.zip)|
 
 ## A complete lab environment
 
@@ -35,8 +33,8 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
-|Windows 10 Enterprise, Version 21H1|Windows 11 Enterprise|
-|Microsoft Endpoint Configuration Manager, Version 2203|Microsoft Endpoint Configuration Manager, Version 2203|
+|Windows 10 Enterprise, Version 21H2|Windows 11 Enterprise, Version 22H2|
+|Microsoft Endpoint Configuration Manager, Version 2103|Microsoft Endpoint Configuration Manager, Version 2211|
 |Windows Assessment and Deployment Kit for Windows 10|Windows Assessment and Deployment Kit for Windows 11|
 |Windows Server 2019|Windows Server 2022|
 
@@ -68,15 +66,15 @@ Detailed lab guides take you through multiple deployment and management scenario
 - Servicing Windows using Microsoft Intune
 - Servicing Windows with Configuration Manager
 
-### Deploy Microsoft 365 Apps for enterprise
+### Deploy Microsoft 365 Apps 
 
 - Cloud managed deployment
 - Locally managed deployment
-- Microsoft 365 Apps for enterprise Deployment on Non-AD Joined Devices
+- Microsoft 365 Apps deployment on Non-AD Joined Devices
 - Enterprise managed deployment using Configuration Manager
 - Enterprise managed deployment using Microsoft Intune
-- Servicing Microsoft 365 Apps for enterprise using Configuration Manager
-- Servicing Microsoft 365 Apps for enterprise using Intune
+- Servicing Microsoft 365 Apps using Configuration Manager
+- Servicing Microsoft 365 Apps using Intune
 - LOB Deployment and Management with Microsoft Intune
 - Deploy Microsoft Teams
 - Assignment filters
@@ -92,9 +90,15 @@ Detailed lab guides take you through multiple deployment and management scenario
 - BitLocker
 - Microsoft Defender Antivirus
 - Windows Hello for Business
+- Windows Defender Credential Guard       
+- Microsoft Defender Application Guard     
+- Windows Defender Exploit Guard             
+- Windows Defender Application Control   
+- Microsoft Defender for Endpoint 
+
 
 > [!NOTE]
-> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows 10 lab expires May 16, 2022. The Windows 11 lab expires August 7, 2022. New versions will be published prior to expiration.
+> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before March 8, 2023. 
 
 ## Additional guidance
 
@@ -109,4 +113,4 @@ Detailed lab guides take you through multiple deployment and management scenario
 - [Introducing Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Microsoft 365 for business](https://products.office.com/business/office)
 - [Introducing Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows 11 for business](https://www.microsoft.com/windows/business)
+- [Windows for business](https://www.microsoft.com/windows/business)

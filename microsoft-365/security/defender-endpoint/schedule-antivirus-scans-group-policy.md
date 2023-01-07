@@ -2,7 +2,7 @@
 title: Schedule antivirus scans using Group Policy
 description: Use Group Policy to set up antivirus scans
 keywords: quick scan, full scan, schedule, group policy, antivirus
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,12 @@ ms.custom: nextgen
 ms.date: 11/10/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Schedule antivirus scans using Group Policy
@@ -89,7 +92,7 @@ For more information, see the [Manage when protection updates should be download
 | Signature updates | Turn on scan after Security intelligence update | A scan will occur immediately after a new protection update is downloaded | Enabled |
 
 > [!TIP]
-> If you’re looking for Antivirus related information for other platforms, see:
+> If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

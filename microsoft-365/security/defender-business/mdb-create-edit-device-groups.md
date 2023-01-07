@@ -7,20 +7,22 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: microsoft-365-security
+ms.subservice: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
+ms.date: 07/19/2022
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # Device groups in Microsoft Defender for Business
 
-In Microsoft Defender for Business, policies are applied to devices through certain collections that are called device groups. 
+In Defender for Business, policies are applied to devices through certain collections that are called device groups. 
 
 **This article describes**:  
 
@@ -29,21 +31,17 @@ In Microsoft Defender for Business, policies are applied to devices through cert
 - [How to view an existing device group](#view-an-existing-device-group)
 - [What the Add All Devices option does](#what-does-the-add-all-devices-option-do)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about security</a>. We'd love to hear from you!
->
 
 ## What is a device group?
 
-A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Microsoft Defender for Business, policies are applied to devices by using device groups.
+A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Defender for Business, policies are applied to devices by using device groups.
 
 Defender for Business includes default device groups that you can use. The default device groups include all the devices that are onboarded to Defender for Business. For example, there's a default device group for Windows devices. Whenever you onboard Windows devices, they're added to the default device group automatically.
 
 You can also create new device groups to assign policies with specific settings to certain devices. For example, you might have a firewall policy assigned to one set of Windows devices, and a different firewall policy assigned to another set of Windows devices. You can define specific device groups to use with your policies.
 
 > [!NOTE]
-> As you create policies in Defender for Business, an order of priority is assigned. If you apply multiple policies to a given set of devices, those devices will receive the first applied policy only. For more information, see [Understand policy order in Microsoft Defender for Business](mdb-policy-order.md).
+> As you create policies in Defender for Business, an order of priority is assigned. If you apply multiple policies to a given set of devices, those devices will receive the first applied policy only. For more information, see [Understand policy order in Defender for Business](mdb-policy-order.md).
 
 All device groups, including your default device groups and any custom device groups that you define, are stored in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
@@ -61,7 +59,7 @@ Currently, in Defender for Business, you can create a new device group while you
     2. Choose **+ Add** to create a new policy.
 
     > [!TIP]
-    > To get help creating or editing a policy, see [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md).
+    > To get help creating or editing a policy, see [View or edit policies in Defender for Business](mdb-view-edit-policies.md).
 
 4. On the **General information** step, review the information, edit if necessary, and then choose **Next**.
 
@@ -91,7 +89,7 @@ Currently, in Defender for Business, you can view your existing device groups wh
     2. Choose **+ Add** to create a new policy.
 
     > [!TIP]
-    > To get help creating or editing a policy, see [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md).
+    > To get help creating or editing a policy, see [View or edit policies in Defender for Business](mdb-view-edit-policies.md).
 
 4. On the **General information** step, review the information, edit if necessary, and then choose **Next**.
 
@@ -111,6 +109,6 @@ Choose one or more of the following tasks:
 
 - [View or edit policies](mdb-view-edit-policies.md)
 - [Create a new policy](mdb-create-new-policy.md)
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
+- [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)

@@ -14,13 +14,13 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier1
+- highpri
+- purview-compliance
 description: "This article gives an overview of sensitive information types and how they detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items"
 ---
 
 # Learn about sensitive information types
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Identifying and classifying sensitive items that are under your organizations control is the first step in the [Information Protection discipline](./information-protection.md).  Microsoft Purview provides three ways of identifying items so that they can be classified:
 
@@ -32,6 +32,8 @@ Sensitive information types (SIT) are pattern-based classifiers. They detect sen
 
 Microsoft provides a large number of pre-configured SITs or you can create your own.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Sensitive information types are used in
 
 - [Microsoft Purview Data Loss Prevention policies](dlp-learn-about-dlp.md)
@@ -41,6 +43,8 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 - [Communication compliance](communication-compliance.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
+
+
 
 ## Categories of sensitive information types
 
@@ -166,7 +170,7 @@ You can choose from several options to create custom sensitive information types
 
 - **Use EDM** - You can set up custom sensitive information types using Exact Data Match (EDM)-based classification. This method enables you to create a dynamic sensitive information type using a secure database that you can refresh periodically. See [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-- **Use PowerShell** - You can set up custom sensitive information types using PowerShell. Although this method is more complex than using the UI, you have more configuration options. See [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+- **Use PowerShell** - You can set up custom sensitive information types using PowerShell. Although this method is more complex than using the UI, you have more configuration options. See [Create a custom sensitive information type in Security & Compliance PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
 > Improved confidence levels are available for immediate use within Microsoft Purview data loss prevention services, information protection, Communication Compliance, data lifecycle management, and records management.
@@ -194,6 +198,11 @@ You can choose from several options to create custom sensitive information types
 > `(?<!\d)([4][0-9]{3}[\-?\-\t]*[0-9]{4}`
 >
 > We recommend using string match instead of word match in a keyword list.
+
+## Provide match/not a match accuracy feedback in sensitive info types
+
+You can view the number of matches a SIT has in **Sensitive info types** and **Content explorer**. You can also provide feedback on whether an item is actually a match or not using the **Match**, **Not a Match** feedback mechanism and use that feedback to tune your SITs. See, [Increase classifier accuracy (preview)](data-classification-increase-accuracy.md) for more information. 
+
 
 ## For further information
 

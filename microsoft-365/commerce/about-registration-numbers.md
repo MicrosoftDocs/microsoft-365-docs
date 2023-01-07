@@ -7,10 +7,12 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -24,7 +26,7 @@ ms.date: 02/02/2022
 
 # About registration numbers and under review notifications
 
-This article only applies to commercial customers who buy or activate products or services directly from Microsoft. This article doesn’t apply to Volume Licensing, or cloud solution provider (CSP) customers who work directly with a partner.
+This article only applies to commercial customers who buy or activate products or services directly from Microsoft. This article doesn't apply to Volume Licensing, or cloud solution provider (CSP) customers who work directly with a partner.
 
 ## What is a registration number?  
 
@@ -36,13 +38,13 @@ For example, in the following screenshot, the label indicates that a CNPJ (Brazi
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Screenshot of the registration number field for C N P J number.":::
 
-For countries where the registration number is optional, you can choose to provide a company legal registration number. Don’t enter a personal ID in this field.
+For countries where the registration number is optional, you can choose to provide a company legal registration number. Don't enter a personal ID in this field.
 
 The following screenshot shows an example of when the registration number is optional.
 
 :::image type="content" source="../media/macregnum-reg-screenshot_400.png" alt-text="Screenshot of the optional registration number field.":::
 
-If you don’t have a valid registration number, see [Tax Identification Numbers](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/).
+If you don't have a valid registration number, see [Tax Identification Numbers](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/).
 
 ## What should I do if I get an under-review notification?  
 

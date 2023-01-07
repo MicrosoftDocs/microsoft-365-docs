@@ -1,9 +1,9 @@
 ---
 title: Collect diagnostic data of Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Microsoft Defender Antivirus
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av, group policy object, setting, diagnostic data
+keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av, group policy object, setting, diagnostic data, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,12 @@ ms.custom: nextgen
 ms.date: 06/29/2020
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Collect Microsoft Defender Antivirus diagnostic data
@@ -33,6 +36,8 @@ This article describes how to collect diagnostic data that can be used by Micros
 
 > [!NOTE]
 > As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
+>
+> For performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 
 On at least two devices that are experiencing the same issue, obtain the .cab diagnostic file by taking the following steps:
 
@@ -132,6 +137,25 @@ You can also specify where the diagnostic .cab file will be created using a Grou
    :::image type="content" source="images/GPO3-SupportLogLocationGPPageEnabledExample.png" alt-text="The Enabled directory path custom setting" lightbox="images/GPO3-SupportLogLocationGPPageEnabledExample.png":::
 5. Select **OK** or **Apply**.
 
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are: 
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+>
+
 ## See also
 
 - [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md)
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)

@@ -1,8 +1,8 @@
 ---
 title: Security baselines assessment profiles
-description: Provides information about the security baselines assessment profiles APIs that pull "threat and vulnerability management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
+description: Provides information about the security baselines assessment profiles APIs that pull "Microsoft Defender Vulnerability Management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,12 +11,15 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
+ms.subservice: mde
 ms.custom: api
+search.appverid: met150
 ---
- 
+
 # List all security baselines assessment profiles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -24,21 +27,21 @@ ms.custom: api
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender Vulnerability Management - Update](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender Vulnerability Management? [Sign up for a free trial.- Update](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 ## 1. Get security baselines assessment profiles
 
-This API retrieves a list of all security baselines assessment profiles created by the organization.  
+This API retrieves a list of all security baselines assessment profiles created by the organization.
 
 ### 1.1 Parameters
 
-- Supports OData V4 queries.  
-- OData supported operators:  
-  - $filter on : id,name, operatingSystem, operatingSystemVersion, status, settingsNumber, passedDevices, totalDevices  
-  - $top with max value of 10,000.  
+- Supports OData V4 queries.
+- OData supported operators:
+  - $filter on : id,name, operatingSystem, operatingSystemVersion, status, settingsNumber, passedDevices, totalDevices
+  - $top with max value of 10,000.
   - $skip.
 
 ### 1.2 HTTP request
@@ -79,36 +82,36 @@ Authorization|String|Bearer {token}. **Required**.
 ### 1.5.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/baselineProfiles 
+GET https://api.securitycenter.microsoft.com/api/baselineProfiles
 ```
 
 ### 1.6.2 Response example
 
 ```json
-{  
-    "@odata.context": "https:// api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.PublicBaselineProfileDto)",  
-    "value": 
-    [  
-        {  
-            "id": "02bcbb9d-d197-479e-811e-1cd5a6f9f8fa",  
-            "name": "Windows 10 build 1909 CIS profile",  
-            "description": "important",  
-            "benchmark": "CIS",  
-            "version": "1.0.0",  
-            "operatingSystem": "Windows 10",  
-            "operatingSystemVersion": "1909",  
-            "status": true,  
-            "complianceLevel": "Level 1 (L1) - Corporate/Enterprise Environment (general use)",  
-            "settingsNumber": 51,  
-            "createdBy": "user@org.net",  
-            "lastUpdatedBy": null,  
-            "createdOnTimestampUTC": "0001-01-01T00:00:00Z",  
-            "lastUpdateTimestampUTC": "0001-01-01T00:00:00Z",  
-            "passedDevices": 0,  
-            "totalDevices": 10  
-        }  
-     ]  
-}  
+{
+    "@odata.context": "https:// api.securitycenter.microsoft.com/api/$metadata#Collection(microsoft.windowsDefenderATP.api.PublicBaselineProfileDto)",
+    "value":
+    [
+        {
+            "id": "02bcbb9d-d197-479e-811e-1cd5a6f9f8fa",
+            "name": "Windows 10 build 1909 CIS profile",
+            "description": "important",
+            "benchmark": "CIS",
+            "version": "1.0.0",
+            "operatingSystem": "Windows 10",
+            "operatingSystemVersion": "1909",
+            "status": true,
+            "complianceLevel": "Level 1 (L1) - Corporate/Enterprise Environment (general use)",
+            "settingsNumber": 51,
+            "createdBy": "user@org.net",
+            "lastUpdatedBy": null,
+            "createdOnTimestampUTC": "0001-01-01T00:00:00Z",
+            "lastUpdateTimestampUTC": "0001-01-01T00:00:00Z",
+            "passedDevices": 0,
+            "totalDevices": 10
+        }
+     ]
+}
 ```
 
 ## See also

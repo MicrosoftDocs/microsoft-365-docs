@@ -1,9 +1,9 @@
 ---
 title: Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus
 description: Use a tool to collect data to troubleshoot Update Compliance issues when using the Microsoft Defender Antivirus Assessment add-in.
-keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender AV
+keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender AV, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,9 +14,12 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer:
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.collection: M365-security-compliance
+ms.subservice: mde
+ms.topic: conceptual
+ms.collection: 
+- m365-security
+- tier2
+search.appverid: met150
 ---
 
 # Collect update compliance diagnostic data for Microsoft Defender Antivirus assessment
@@ -28,6 +31,9 @@ ms.collection: M365-security-compliance
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender Antivirus Assessment section in the Update Compliance add-in.
+
+> [!NOTE]
+> For performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 
 Before attempting this process, ensure you have read [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.
 
@@ -68,3 +74,4 @@ On at least two devices that are not reporting or showing up in Update Complianc
 ## See also
 
 - [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md)
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)

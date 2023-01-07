@@ -8,13 +8,15 @@ manager: laurawi
 ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
+- highpri
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom:
 description: Deploy Microsoft 365 security and compliance features and protect your personal information.
 ---
@@ -192,7 +194,7 @@ For data privacy within sites of concern, push sensitivity labels for automatic 
 
 ## Data loss prevention
 
-You can use [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) in Microsoft 365 to detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally.
+You can use [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) in Microsoft Purview to detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally.
 
 DLP allows you to:
 
@@ -221,7 +223,9 @@ DLP is used to identify a document or email containing a health record and then 
 
 ### Planning for DLP
 
-Plan your DLP policies for:
+See, [Plan for data loss prevention (DLP)](../compliance/dlp-overview-plan-for-dlp.md) for complete guidance on planning your DLP implementation
+
+<!-- Plan your DLP policies for:
 
 - Your business requirements.
 
@@ -241,12 +245,26 @@ Although sensitivity labels can’t be used in DLP policy conditions, certain pr
 
   - DLP has more granular levels of control in terms of rules, conditions, and actions.
 
-  - DLP policies can be applied to Teams chat and channel messages. Sensitivity labels can only be applied to documents and email.
+  - DLP policies can be applied to Teams chat and channel messages. Sensitivity labels can only be applied to documents and email. -->
 
 
 ### DLP policies
 
-DLP policies are configured in the Microsoft Purview compliance portal and specify the level of protection, the sensitive information type the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of data.
+DLP policies are configured in the Microsoft Purview compliance portal and specify the level of protection, the information the policy is looking for, and the target workloads. Every DLP policy requires you to:
+
+1. Choose what you want to monitor.
+1. Choose where to monitor.
+1. Choose the conditions that must be matched for a policy to be applied to an item.
+1. Choose the action to take when the policy conditions are met.
+
+To learn more about DLP policies, and how to design them, see:
+
+- [Learn about data loss prevention](../compliance/dlp-learn-about-dlp.md)
+- [Design a data loss prevention policy](../compliance/dlp-policy-design.md)
+- [Data Loss Prevention policy reference](../compliance/dlp-policy-reference.md)
+
+
+<!--
 
 > [!div class="mx-imgBorder"]
 > ![DLP policy configuration in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
@@ -255,7 +273,7 @@ Here is an example DLP policy for awareness of GDPR.
 
 ![Example DLP policy for awareness of GDPR.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-See [this article](../compliance/create-test-tune-dlp-policy.md) for more information about creating and applying DLP policies.
+See [this article](../compliance/create-test-tune-dlp-policy.md) for more information about creating and applying DLP policies.-->
 
 ### Protection levels for data privacy
 

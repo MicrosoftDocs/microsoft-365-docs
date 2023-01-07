@@ -7,13 +7,13 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
+ms.collection: 
+- Tier1
+- scotvorg
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 
 # Add staff to Bookings
-
-> [!NOTE]
-> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
 
 The Staff page in Bookings is where you create your staffing list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here.
 
@@ -27,7 +27,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 ## Steps
 
-1. Choose your calendar from the homepage. 
+1. Choose your calendar from the homepage.
 
 2. Go to staff option in left pane and select **Add new staff**.
 
@@ -80,6 +80,12 @@ You may want to add a person to your staff list in Bookings without making them 
     ```powershell
     Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
     ```
+    
+    By default, the mailbox gets automatically mapped to Outlook. If you do not want the booking mailbox to appear in the user's Outlook, assign full access with the following commands:
+    
+     ```powershell 
+    Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false -AutoMapping:$false
+    ```
 
 3. And then run this command to assign send-as permissions.
 
@@ -94,7 +100,12 @@ Here's an example PowerShell command to add Allie Bellew to the Contoso daycare 
     ```powershell
     Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
     ```
-
+     By default, the mailbox gets automatically mapped to Outlook. If you do not want the booking mailbox to appear in the user's Outlook, assign full access with the following commands:
+     
+      ```powershell
+    Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -AutoMapping:$false -InheritanceType All
+    ```
+     
 2. Then run this command:
 
     ```powershell

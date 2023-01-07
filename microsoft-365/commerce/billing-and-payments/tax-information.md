@@ -5,12 +5,14 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: conceptual
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
@@ -23,11 +25,11 @@ description: "Find out how much tax you will be charged for your Microsoft 365 f
 ms.date: 03/17/2021
 ---
 
-# Tax information
+# Microsoft 365 tax information
 
 When you buy Microsoft 365 products and services, the taxes that you pay are determined by one of two things: your business address, or your shipping address, if it's different. If your organization is in the United States, you must provide a Federal Employer Identification Number (FEIN).
 
-Businesses in the following countries can provide their VAT number or local equivalent:
+Businesses in the following countries or regions can provide their VAT number or local equivalent:
 
 :::row:::
     :::column:::
@@ -90,7 +92,7 @@ Businesses in the following countries can provide their VAT number or local equi
     :::column-end:::
 :::row-end:::
 
-*For most of the countries listed, providing a VAT number or local equivalent is optional. For Brazil and India, the tax identifier number is required.
+*For most of the countries or regions listed, providing a VAT number or local equivalent is optional. For Brazil and India, the tax identifier number is required.
 
 > [!Note]
 > If you need to contact support, have your FEIN, VAT number, or local equivalent ready to give to the support agent.
@@ -99,7 +101,7 @@ Businesses in the following countries can provide their VAT number or local equi
 
 When you buy Microsoft 365 services in the EMEA region, this purchase could be subject to Value-Added Tax (VAT).
   
-- If you're located in a European Union Member State, Armenia, Belarus, Norway, Turkey, or United Arab Emirates, and you don't provide your valid local VAT ID, Microsoft Ireland Operations Ltd. will apply the current local VAT rate, based on the billing country your account is set to.
+- If you're located in a European Union Member State, Armenia, Belarus, Norway, Turkey, or United Arab Emirates, and you don't provide your valid local VAT ID, Microsoft Ireland Operations Ltd. will apply the current local VAT rate, based on the billing country or region your account is set to.
 
 - If you're located in Liechtenstein, Russia, Serbia, South Africa, or Switzerland, the VAT is applied, whether you provide your VAT ID or not.
 
@@ -155,7 +157,7 @@ For example:
 
 If you qualify for tax-exempt status in your market, [start a service request](../../admin/get-help-support.md) to establish tax exempt status for your organization.
 
-|Country or locale | Documentation |
+|Country or region | Documentation |
 |------------------|----------------|
 | Canada | Certificate of Exemption (or equivalent letter of authorization) |
 | Chile | IVA status/RUT (Registro Unico Tributario) |

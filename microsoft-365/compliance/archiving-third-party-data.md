@@ -1,9 +1,10 @@
 ---
 title: "Use data connectors to import and archive third-party data in Microsoft 365"
+description: "Learn how to import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms to Microsoft 365 mailboxes."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date:
 audience: Admin
@@ -11,27 +12,26 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- Strat_O365_IP
-- M365-security-compliance
-- m365initiative-compliance
+- tier3
+- purview-compliance
+- data-connectors
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms to Microsoft 365 mailboxes."
+
 ---
 
 # Learn about connectors for third-party data
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 lets administrators use data connectors to import and archive non-Microsoft, third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Microsoft 365 organization. One primary benefit of using data connectors to import and archive third-party data in Microsoft 365 is that you can apply various Microsoft Purview solutions to the data after it's been imported. This helps you ensure that your organization's non-Microsoft data is in compliance with the regulations and standards that affect your organization.
 
 Watch this interactive guide that demonstrates how to create data connectors to import and archive third-party data and examples of applying compliance solutions to data after it's imported to Microsoft 365.
 
 > [!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Third-party data connectors
 
@@ -45,7 +45,7 @@ The Microsoft Purview compliance portal provides native third-party data connect
 
 - [CellTrust](#celltrust-data-connectors)
 
-The third-party data listed in the next sections (except for HR data and physical badging data that is used for the Microsoft 365 Insider risk management solution) is imported into user mailboxes. The Microsoft Purview solutions that support third-party data are applied to the user mailbox where the data is stored.
+The third-party data listed in the next sections (except for HR data and physical badging data that is used for the Microsoft Purview Insider Risk Management solution) is imported into user mailboxes. The Microsoft Purview solutions that support third-party data are applied to the user mailbox where the data is stored.
 
 ### Microsoft data connectors
 
@@ -180,17 +180,17 @@ The following sections describe some of the things that the Microsoft Purview so
 
 ### Litigation hold
 
-You place a [Litigation hold](create-a-litigation-hold.md) on a user mailbox to retain third-party data. When you create a hold, you can specify a hold duration (also called a *time-based hold*) so that deleted and modified third-party data is retained for a specified period and then permanently deleted from the mailbox. Or you can just retain content indefinitely (called an *infinite hold*) or until the Litigation hold is removed.
+You place a [Litigation hold](ediscovery-create-a-litigation-hold.md) on a user mailbox to retain third-party data. When you create a hold, you can specify a hold duration (also called a *time-based hold*) so that deleted and modified third-party data is retained for a specified period and then permanently deleted from the mailbox. Or you can just retain content indefinitely (called an *infinite hold*) or until the Litigation hold is removed.
 
 ### eDiscovery
 
 The three primary eDiscovery tools in Microsoft 365 are Content search, Microsoft Purview eDiscovery (Standard), and Microsoft Purview eDiscovery (Premium).
 
-- **[Content search](content-search.md).** You can use the content search tool to search mailboxes for third-party data that you imported. You can use search queries and conditions to narrow your search results, and the export the search results.
+- **[Content search](ediscovery-content-search.md).** You can use the content search tool to search mailboxes for third-party data that you imported. You can use search queries and conditions to narrow your search results, and the export the search results.
 
-- **[eDiscovery (Standard)](get-started-core-ediscovery.md).** This tool builds on the basic search and export functionality by enabling you to create cases that let you control who can access case data, place a hold on user mailboxes or mailbox content that matches search criteria. That means you can place an eDiscovery hold on the third-party data that was imported to user mailboxes.
+- **[eDiscovery (Standard)](ediscovery-standard-get-started.md).** This tool builds on the basic search and export functionality by enabling you to create cases that let you control who can access case data, place a hold on user mailboxes or mailbox content that matches search criteria. That means you can place an eDiscovery hold on the third-party data that was imported to user mailboxes.
 
-- **[eDiscovery (Premium)](overview-ediscovery-20.md).** This powerful tool expands the case functionality of eDiscovery (Standard) by letting you add custodians to a case, placing custodian's data on hold, and then loading a custodian's third-party data into a review for further analysis such as themes and duplicate detection. After you load third-party data into a review set, you can query and filter it to a narrow result set.
+- **[eDiscovery (Premium)](ediscovery-overview.md).** This powerful tool expands the case functionality of eDiscovery (Standard) by letting you add custodians to a case, placing custodian's data on hold, and then loading a custodian's third-party data into a review for further analysis such as themes and duplicate detection. After you load third-party data into a review set, you can query and filter it to a narrow result set.
 
    Both eDiscovery (Standard) and eDiscovery (Premium) let you manage third-party data that may be relevant to your organization's legal or internal investigations.
 
@@ -258,7 +258,7 @@ Here are a few examples for **itemclass** values for different types of third-pa
 
 Values for the *itemclass* property are not case-sensitive. In general, use the name of the third-party data type (without spaces) followed by a wildcard ( * ) character.
 
-For more information about creating eDiscovery search queries, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
+For more information about creating eDiscovery search queries, see [Keyword queries and search conditions for eDiscovery](ediscovery-keyword-queries-and-search-conditions.md).
 
 ## Data connectors in the US Government cloud
 

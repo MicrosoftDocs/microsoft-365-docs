@@ -4,7 +4,8 @@ description: Learn how to configure Microsoft 365 Defender to stream Advanced Hu
 keywords: raw data export, streaming API, API, Event hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +14,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.technology: mde
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ---
 
 # Streaming API
@@ -24,6 +26,9 @@ ms.technology: mde
 
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -41,8 +46,13 @@ Topic | Description
 [Stream events to your Azure storage account](streaming-api-storage.md)| Learn about enabling the streaming API in your tenant and configure Microsoft 365 Defender to stream [Advanced Hunting](advanced-hunting-overview.md) to your Azure storage account.
 [Supported event types](supported-event-types.md) | Learn which Advanced Hunting event types the Streaming API supports.
 
+Watch this short video to learn how to set up the streaming API to ship event information directly to Azure Event hubs for consumption by visualization services, data processing engines, or Azure storage for long-term data retention.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
 ## Related topics
+
+- [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
+
 - [Overview of Advanced Hunting](../defender/advanced-hunting-overview.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
