@@ -199,7 +199,7 @@ These insider risk management policies can use specific indicators and the order
 
 - **Collection**: Detects download activities by in-scope policy users. Example risk management activities include downloading files from SharePoint sites or moving files into a compressed folder.
 - **Exfiltration**: Detects sharing or extraction activities to internal and external sources by in-scope policy users. An example risk management activity includes sending emails with attachments from your organization to external recipients.
-- **Obfuscation**: Detects the masking of potentially risky activities by in-scope policy users. Example risk management activities include renaming files on a device or removing or downgrading sensitivity labels on SharePoint files.
+- **Obfuscation**: Detects the masking of potentially risky activities by in-scope policy users. An example risk management activity includes renaming files on a device.
 - **Clean-up**: Detects deletion activities by in-scope policy users. An example risk management activity includes deleting files from a device.
 
 > [!NOTE]
