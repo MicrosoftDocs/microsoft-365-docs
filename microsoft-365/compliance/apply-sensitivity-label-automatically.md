@@ -306,9 +306,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 ### Creating an auto-labeling policy
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, navigate to sensitivity labels:
-
-    - **Solutions** > **Information protection** > **Auto-labeling**:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, navigate to **Solutions** > **Information protection** > **Auto-labeling**:
 
     ![Auto-labeling page.](../media/auto-labeling-tab.png)
 
