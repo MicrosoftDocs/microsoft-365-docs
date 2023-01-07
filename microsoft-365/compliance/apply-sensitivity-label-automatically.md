@@ -101,7 +101,7 @@ Use the following table to help you identify the differences in behavior for the
 |Assign a Rights Management owner for emails sent from another organization |No |Yes|
 |For emails, replace existing label that has same or lower priority |No |Yes (configurable)|
 
-\* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the Microsoft Purview compliance portal. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
+\* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** page isn't visible in the Microsoft Purview compliance portal. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
@@ -308,26 +308,22 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>, navigate to sensitivity labels:
 
-    - **Solutions** > **Information protection**
+    - **Solutions** > **Information protection** > **Auto-labeling**:
 
-    If you don't immediately see this option, first select **Show all**.
-
-2. Select the **Auto-labeling** tab:
-
-    ![Auto-labeling tab.](../media/auto-labeling-tab.png)
+    ![Auto-labeling page.](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region because of a backend Azure dependency. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
+    > If you don't see the **Auto-labeling** option, this functionality isn't currently available in your region because of a backend Azure dependency. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
-3. Select **+ Create auto-labeling policy**. This starts the New policy configuration:
+2. Select **+ Create auto-labeling policy**. This starts the New policy configuration:
 
     ![New policy configuration for auto-labeling.](../media/auto-labeling-wizard.png)
 
-4. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the **Show options for** dropdown. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
+3. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the **Show options for** dropdown. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
 
-5. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
+4. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
-6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** included for your chosen locations, select the link to choose specific instances to include, or select the link to choose specific instances to exclude. Then select **Next**.
+5. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** included for your chosen locations, select the link to choose specific instances to include, or select the link to choose specific instances to exclude. Then select **Next**.
 
     ![Choose locations page for auto-labeling configuration.](../media/locations-auto-labeling-wizard.png)
     
@@ -339,7 +335,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     - For OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls) to help you specify individual OneDrive accounts to include or exclude.
 
-7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
+6. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
 
     The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), and sharing options:
     - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
@@ -364,15 +360,15 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
     For each of these conditions, you can then specify exceptions.
 
-8. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
+7. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
 
     The configuration options for sensitive information types are the same as those you select for auto-labeling for Office apps. If you need more information, see [Configuring sensitive info types for a label](#configuring-sensitive-info-types-for-a-label).
 
     When you've defined all the rules you need, and confirmed their status is on, select **Next** to move on to choosing a label to auto-apply.
 
-9. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
+8. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
 
-10. If your policy includes the Exchange location: Specify optional configurations on the **Additional settings for email** page:
+9. If your policy includes the Exchange location: Specify optional configurations on the **Additional settings for email** page:
     
     - **Automatically replace existing labels that have the same or lower priority**: Applicable for both incoming and outgoing emails, when you select this setting, it ensures a matching sensitivity label will always be applied. If you don't select this setting, a matching sensitivity label won't be applied to emails that have an existing sensitivity label with a [higher priority](sensitivity-labels.md#label-priority-order-matters) or that were manually labeled.
     
