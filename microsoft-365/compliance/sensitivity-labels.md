@@ -40,7 +40,7 @@ To get their work done, people in your organization collaborate with others both
 
 Sensitivity labels from Microsoft Purview Information Protection let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
 
-Example showing available sensitivity labels in Excel, from the **Home** tab on the Ribbon. In this example, the applied label displays on the status bar:
+See the following example of how users see and can apply sensitivity labels in Excel, by using the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) that's available with the latest versions of Office. The same labels are also available from the **Sensitivity** button on the ribbon.
 
 ![Sensitivity label on the Excel ribbon and status bar.](../media/Sensitivity-label-in-Excel.png)
 
