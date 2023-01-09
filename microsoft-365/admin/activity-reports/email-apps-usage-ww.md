@@ -37,7 +37,7 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 
 You can get a view into email apps activity by looking at the **Users** and **Clients** charts. 
   
-![Email clients used.](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
+![Email clients used.](../../media/activity-export-RPC.png)
 
 The **Email apps usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated). The data in each report usually covers up to the last 24 to 48 hours.
 
