@@ -59,7 +59,7 @@ You must be a global admin or Exchange admin to upgrade a distribution list. To 
 
    ![Upgrade to Microsoft 365 Groups icon.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-1. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of distribution lits you're upgrading, the process can take minutes or hours.
+1. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of distribution lists you're upgrading, the process can take minutes or hours.
 
    If the distribution list can't be upgraded, a dialog appears saying so. See [Which distribution lists cannot be upgraded?](#which-distribution-lists-cant-be-upgraded).
 
