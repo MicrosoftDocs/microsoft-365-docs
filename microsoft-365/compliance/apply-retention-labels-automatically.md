@@ -268,7 +268,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 #### Auto-apply labels to content by using trainable classifiers
 
 > [!IMPORTANT]
-> Currently, trainable classifiers for auto-labeling can't be used with [adaptive scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes). Use a static scope instead.
+> Currently, trainable classifiers for auto-labeling can't be used with [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention). Use a static scope instead.
 
 When you choose the option for a trainable classifier, you can select one or more of the pre-trained or custom trainable classifiers:
 
