@@ -321,16 +321,16 @@ You should visit the Compliance Portal and validate the policies migrated succes
 
 If you see an error on welcome screen after selecting **Get Started**, follow these steps:
 
- 1. Confirm that you've installed all the pre-requisites using the same links/versions as mentioned in [Before you start](dlp-migration-assistant-for-symantec-get-started.md#before-you-begin).
+ 1. Confirm that you've installed all the pre-requisites using the links/versions mentioned in [Before you start](dlp-migration-assistant-for-symantec-get-started.md#before-you-begin).
  2. Ensure that you've restarted the machine after installing the pre-requisites.
  3. Check if you're running the tool in admin mode using **Run as administrator** option while starting the application.
- 4. Che if your PowerShell module path is set correctly by following these steps:
-    1. Go to edit system environment variables
-    2. Add this path in PsModulePath system variable: `C:\Program Files\PowerShell\7\Modules`
+ 4. Check if your PowerShell module path is set correctly using these steps:
+    1. Go to edit system environment variables.
+    2. Add this path in PsModulePath system variable: `C:\Program Files\PowerShell\7\Modules`.
     3. Move this up and keep at top.
     4. Restart the tool in admin mode.
 
-If you're unable to install/uninstall due to another process installation, follow these steps:
+If you're unable to install/uninstall due to another app/process installation, follow these steps:
 
 1. Right click on the task bar to open Task Manager. If necessary, choose **More Details**.
 2. On **Details** tab, look for msiexec.exe and select **End Task**.
