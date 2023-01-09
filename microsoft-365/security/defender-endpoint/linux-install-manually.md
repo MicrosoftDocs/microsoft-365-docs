@@ -415,17 +415,20 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
     - Look at the alert details, machine timeline, and perform your typical investigation steps.
 
-## External Package Dependencies on MDE package
-MDATP Package <br />
-for RHEL6 mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter" <br />
-for DEBIAN mdatp package requires "libc6 (>= 2.23", "uuid-runtime", "auditd", "mde-netfilter" <br />
-for RPM mdatp package requires "glibc >= 2.17", "audit", "policycoreutils", "selinux-policy-targeted", "mde-netfilter" <br />
+## Microsoft Defender for Endpoint package external package dependencies
 
-MDE-NETFILTER Package <br />
-for DEBIAN mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0" <br />
-for RPM mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"<br />
+The following external package dependencies exist for the mdatp package:
 
-If the mde installation fails due to some missing dependencies error, you can manually download the prerequiste dependencies. 
+ - The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "selinux-policy-targeted", "mde-netfilter"
+ - For RHEL6 the mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter"
+ - For DEBIAN the mdatp package requires "libc6 >= 2.23", "uuid-runtime", "auditd", "mde-netfilter"
+
+The mde-netfilter package also has the following package dependencies:
+
+ - For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0" <br />
+ - for RPM  the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"<br />
+
+If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies.
 
 ## Installer script
 
