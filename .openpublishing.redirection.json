@@ -10289,6 +10289,11 @@
       "source_path": "microsoft-365/security/defender/configure-microsoft-threat-experts.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications",
       "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/compliance/teams-workflow-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/ediscovery-teams-workflow",
+      "redirect_document_id": false
   }
  ]
   }
