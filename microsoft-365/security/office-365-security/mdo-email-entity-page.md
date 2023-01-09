@@ -60,7 +60,7 @@ One way to get to the email entity page is Threat Explorer, but the steps remain
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="The graphic of the email entity page that focuses on headings that you'll see" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
-> The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+> The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 ## How to read the email entity page
 
@@ -97,7 +97,7 @@ Here are some helpful specifics to get started.
 Admins can preview and download emails in Cloud mailboxes, ***if*** the mails are still accessible to Microsoft in an Exchange Online mailbox. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), the emails are no longer present in the Exchange Online mailbox. In that case, admins won't be able to preview or download those specific emails. Emails that were dropped, or where delivery failed, never made it into the mailbox and as a result, admins won't be able to preview or download those emails either.
 
 > [!WARNING]
-> Previewing and downloading emails requires a special role called **Preview**. You can add this role in the Microsoft 365 Defender portal as described in [Email & collaboration roles in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). You might need to create a new **Email & collaboration** role group there and add the **Preview** role to that new role group or add the **Preview** role to a role group that allows admins in your organization to work in **Explorer**.
+> Previewing and downloading emails requires a special role called **Preview**. You can add this role in the Microsoft 365 Defender portal as described in [Email & collaboration roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). You might need to create a new **Email & collaboration** role group there and add the **Preview** role to that new role group or add the **Preview** role to a role group that allows admins in your organization to work in **Explorer**.
 
 ### Detonation details
 
@@ -191,7 +191,7 @@ In the Action wizard you can take email actions, email submissions, block sender
 We are also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, all the Tenant Allow and Block Lists (or TABL) block URL and block attachments can be tracked under TABL/URL and TABL/file pages. 
 ![Take block URL action from entity page.](../../media/Block-URL-Email-entity.png)
 
-See [permissions](permissions-microsoft-365-security-center.md) required to take these actions. 
+See [permissions](mdo-portal-permissions.md) required to take these actions. 
 
  
 ### The Email summary panel

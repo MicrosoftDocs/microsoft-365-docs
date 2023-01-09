@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -46,7 +46,7 @@ Delivering user reported messages to a reporting mailbox instead of directly to 
 
 Before you get started, you need to configure Exchange Online Protection and Defender for Office 365 so user reported messages are delivered to the reporting mailbox without being filtered as described in the following steps:
 
-- Identify the reporting mailbox as a SecOps mailbox. For instructions, see [Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phising-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+- Identify the reporting mailbox as a SecOps mailbox. For instructions, see [Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phishing-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
 - Create a custom anti-malware policy for the reporting mailbox with the following settings:
 
@@ -54,7 +54,7 @@ Before you get started, you need to configure Exchange Online Protection and Def
 
   - Turn off common attachments filtering (**Protection settings** section \> **Enable the common attachments filter** is not selected or `-EnableFileFilter $false` in PowerShell).
   
-  For instructions, see [Create an anti-malware policy](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies).
+  For instructions, see [Create an anti-malware policy](anti-malware-policies-configure.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies).
 
 - Verify that the reporting mailbox is not included in the **Standard** or **Strict** preset security policies. For instructions, see [Preset security policies](preset-security-policies.md).
 
@@ -62,7 +62,7 @@ Before you get started, you need to configure Exchange Online Protection and Def
 
   - Exclude the reporting mailbox from the **Built-in protection** preset security policy. For instructions, see [Preset security policies](preset-security-policies.md).
 
-  - Create a Safe Attachments policy for the mailbox where Safe Attachments scanning, including Dynamic Delivery, is turned off (**Settings** \> **Safe Attachments unknown malware response** section \> **Off** or `-Enable $false` in PowerShell). For instructions, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md).
+  - Create a Safe Attachments policy for the mailbox where Safe Attachments scanning, including Dynamic Delivery, is turned off (**Settings** \> **Safe Attachments unknown malware response** section \> **Off** or `-Enable $false` in PowerShell). For instructions, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](safe-attachments-policies-configure.md).
 
   - Create a Safe Links policy for the reporting mailbox where Safe Links scanning in email is turned off (**URL & click protection settings** \> **On: Safe Links checks a list of known, malicious links when users click links in email** is not selected or `EnableSafeLinksForEmail $false` in PowerShell). For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](safe-links-policies-configure.md).
 
@@ -78,7 +78,7 @@ After you've verified that the reporting mailbox meets all of these requirements
 
 - To modify the settings for user reported messages, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Administrator** in the [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+  - **Organization Management** or **Security Administrator** in the [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 - You need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that looks like this when specifying the submissions mailbox:
 
@@ -122,7 +122,7 @@ When the toggle is **On** ![Toggle on.](../../media/scc-toggle-on.png) and you'v
 
   - **My reporting mailbox only**: User reported messages go only to the specified reporting mailbox for an admin or the security operations team to analyze.
 
-    In the **Add a mailbox to send reported messages to** box that appears, enter the email address of an existing Exchange Online mailbox to use as the reporting mailbox that holds user reported messages from Microsoft reporting tools. Distribution groups are not allowed. 
+    In the **Add a mailbox to send reported messages to** box that appears, enter the email address of an existing Exchange Online mailbox to use as the reporting mailbox that holds user reported messages from Microsoft reporting tools. Distribution groups are not allowed.
 
     Messages don't go to Microsoft for analysis unless an admin manually submits the message from the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>.
 
@@ -156,9 +156,8 @@ The following settings are also available on the page:
   - **Specify an Office 365 mailbox to send email notifications from**: Select this option and enter the sender's email address in the box that appears.
   - **Replace the Microsoft logo with my company logo**: Select this option to replace the default Microsoft logo that's used in notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo. This option is not supported if your organization has a custom logo pointing to a URL instead of an uploaded image file.
   - **Customize email notification messages**: Click this link to customize the email notification that's sent after an admin reviews and marks a reported message. In the **Customize admin review email notifications** flyout that appears, configure the following settings on the **Phishing**, **Junk** and **No threats found** tabs:
-    - **Email box results text**: Enter the custom text to use.
-    - **Footer** tab: The following options are available:
-    - **Email footer text**: Enter the custom message footer text to use.
+    - **Email body results text**: Enter the custom text to use. You can use different text for **Phishing**, **Junk** and **No threats found**.
+    - **Email footer text**: Enter the custom message footer text to use. The same text is used for **Phishing**, **Junk** and **No threats found**.
 
      When you're finished, click **Confirm** to return to the **User reported** page.
 
@@ -179,7 +178,7 @@ When the toggle is **On** ![Toggle on.](../../media/scc-toggle-on.png) and you'v
 
   The message formatting requirements are described in the next section. This formatting is optional, but if user reported messages don't follow the prescribed format, they're always identified as phishing.
 
-  **Let your organization report messages from quarantine** in the **Report from qurantine** section: Verify that this setting is selected to let users report messages from quarantine. Otherwise, uncheck this setting
+  **Let your organization report messages from quarantine** in the **Report from quarantine** section: Verify that this setting is selected to let users report messages from quarantine. Otherwise, uncheck this setting.
 
 When you're finished on the **User reported** page, click **Save**. To restore all settings on the page to their immediately previous values, click **Restore**.
 

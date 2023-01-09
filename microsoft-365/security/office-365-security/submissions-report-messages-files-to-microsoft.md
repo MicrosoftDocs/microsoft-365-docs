@@ -5,10 +5,9 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 
+ms.date: 12/27/2022
 audience: ITPro
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -25,7 +24,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -42,13 +41,13 @@ Watch this video that shows more information about the unified submissions exper
 |---|---|---|
 |[The built-in Report button](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web)|User|Currently, this method is available only in Outlook on the web (formerly known as Outlook Web App or OWA).|
 |[The Microsoft Report Message and Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook)|User|These free add-ins work in Outlook on all available platforms. For installation instructions, see [Enable the Report Message or the Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).|
-|[The Submissions page in the Microsoft 365 Defender portal](submissions-admin.md)|Admin|Admins use this method to report good (false positives) and bad (false negative) **Email**, **Email attachments**, and **URLs**, including user reported messages, to Microsoft for further analysis. Available in organizations with Exchange Online mailboxes (not available in standalone EOP).|
+|[The Submissions page in the Microsoft 365 Defender portal](submissions-admin.md)|Admin|Admins use this method to submit good (false positive) and bad (false negative) entities including user-reported messages to Microsoft for further analysis. Tabs include **Email**, **Email attachments**, **URLs**, and **Files**. The Submissions page is available to organizations who have Exchange Online mailboxes as part of a Microsoft 365 subscription (not available in standalone EOP).|
 
-[User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) allow admins to configure whether user reported messages go to a specified reporting mailbox, to Microsoft, or both. Depending on your subscription, user reported messages are available in the following locations in the Defender portal:
+[User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) allow admins to configure whether user reported messages go to a specified reporting mailbox, to Microsoft, or both. Depending on your subscription, user reported messages are available in the following locations in the Microsoft 365 Defender portal:
 
 - [The Submissions page](submissions-admin.md)
 - [Automated investigation and response (AIR) results](air-view-investigation-results.md)
-- [The User-reported messages report](view-email-security-reports.md#user-reported-messages-report)
+- [The User-reported messages report](reports-email-security.md#user-reported-messages-report)
 - [Threat Explorer](threat-explorer-views.md#email--submissions)
 
 Admins can use mail flow rules (also known as transport rules) to notify specified email address when users report messages to Microsoft for analysis. For more information, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

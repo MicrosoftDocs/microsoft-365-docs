@@ -26,7 +26,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -79,7 +79,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |Enable ZAP for spam messages <br><br> _SpamZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Allow & block list**|||||
 |Allowed senders <br><br> _AllowedSenders_|None|None|None||
-|Allowed sender domains <br><br> _AllowedSenderDomains_|None|None|None|Adding domains to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <br><br> Use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
+|Allowed sender domains <br><br> _AllowedSenderDomains_|None|None|None|Adding domains to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <br><br> Use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list-about.md) to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
 |Blocked senders <br><br> _BlockedSenders_|None|None|None||
 |Blocked sender domains <br><br> _BlockedSenderDomains_|None|None|None||
 
@@ -127,13 +127,13 @@ For more information about the default sending limits in the service, see [Sendi
 
 ### EOP anti-malware policy settings
 
-To create and configure anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+To create and configure anti-malware policies, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Protection settings**|||||
-|**Enable the common attachments filter** <br><br> _EnableFileFilter_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|This setting quarantines messages that contain attachments based on file type, regardless of the attachment content. For the list of file types, see [Anti-malware policies](anti-malware-protection.md#anti-malware-policies).|
-|Common attachment filter notifications (**When these file types are found**) <br><br> _FileTypeAction_|**Reject the messages with a non-delivery receipt (NDR)** <br><br> `Reject`|**Reject the messages with a non-delivery receipt (NDR)** <br><br> `Reject`|**Reject the messages with a non-delivery receipt (NDR)** <br><br> `Reject`||
+|**Enable the common attachments filter** <br><br> _EnableFileFilter_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|This setting quarantines messages that contain attachments based on file type, regardless of the attachment content. For the list of file types, see [Anti-malware policies](anti-malware-protection-about.md#anti-malware-policies).|
+|Common attachment filter notifications (**When these file types are found**) <br><br> _FileTypeAction_|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`|**Quarantine the message** <br><br> `Quarantine`||
 |**Enable zero-hour auto purge for malware** <br><br> _ZapEnabled_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Quarantine policy**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|When you create a new anti-malware policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as malware (AdminOnlyAccessPolicy with no quarantine notifications). <br><br> Standard and Strict preset security policies use the default quarantine policy (AdminOnlyAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Admins can create and select custom quarantine policies that define more capabilities for users in the default or custom anti-malware policies. For more information, see [Quarantine policies](quarantine-policies.md).|
 |**Admin notifications**|||||
@@ -161,7 +161,7 @@ The spoof settings are inter-related, but the **Show first contact safety tip** 
 |**Phishing threshold & protection**|||||
 |**Enable spoof intelligence** <br><br> _EnableSpoofIntelligence_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Actions**|||||
-|**If message is detected as spoof** <br><br> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md). <br><br> If you select **Quarantine the message**, an **Apply quarantine policy** box is available to select the quarantine policy that defines what users are allowed to do to messages that are quarantined as spoofing. When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as spoofing (DefaultFullAccessPolicy with no quarantine notifications). <br><br> Standard and Strict preset security policies use the default quarantine policy (DefaultFullAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Admins can create and select custom quarantine policies that define more restrictive or less restrictive capabilities for users in the default or custom anti-phishing policies. For more information, see [Quarantine policies](quarantine-policies.md).|
+|**If message is detected as spoof** <br><br> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <br><br> `MoveToJmf`|**Quarantine the message** <br><br> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). <br><br> If you select **Quarantine the message**, an **Apply quarantine policy** box is available to select the quarantine policy that defines what users are allowed to do to messages that are quarantined as spoofing. When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined as spoofing (DefaultFullAccessPolicy with no quarantine notifications). <br><br> Standard and Strict preset security policies use the default quarantine policy (DefaultFullAccessPolicy with no quarantine notifications) as described in the table [here](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). <br><br> Admins can create and select custom quarantine policies that define more restrictive or less restrictive capabilities for users in the default or custom anti-phishing policies. For more information, see [Quarantine policies](quarantine-policies.md).|
 |**Show first contact safety tip** <br><br> _EnableFirstContactSafetyTips_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|For more information, see [First contact safety tip](anti-phishing-policies-about.md#first-contact-safety-tip).|
 |**Show (?) for unauthenticated senders for spoof** <br><br> _EnableUnauthenticatedSender_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Unauthenticated sender indicators](anti-phishing-policies-about.md#unauthenticated-sender-indicators).|
 |**Show "via" tag** <br><br> _EnableViaTag_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. <br><br> For more information, see [Unauthenticated sender indicators](anti-phishing-policies-about.md#unauthenticated-sender-indicators).|
@@ -316,7 +316,7 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 
 - Are you looking for best practices for **Exchange mail flow rules (also known as transport rules**)? See [Best practices for configuring mail flow rules in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
-- Admins and users can submit false positives (good email marked as bad) and false negatives (bad email allowed) to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- Admins and users can submit false positives (good email marked as bad) and false negatives (bad email allowed) to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 - Use these links for info on how to **set up** your [EOP service](/exchange/standalone-eop/set-up-your-eop-service), and **configure** [Microsoft Defender for Office 365](defender-for-office-365.md). Don't forget the helpful directions in '[Protect Against Threats in Office 365](protect-against-threats.md)'.
 

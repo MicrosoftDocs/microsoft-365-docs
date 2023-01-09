@@ -1,5 +1,5 @@
 ---
-title: Insider risk management policies
+title: Create and manage insider risk management policies
 description: Learn about insider risk management policies in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Insider risk management policies
+# Create and manage insider risk management policies
 
 > [!IMPORTANT]
 > Microsoft Purview Insider Risk Management correlates various signals to identify potentially malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
@@ -199,7 +199,7 @@ These insider risk management policies can use specific indicators and the order
 
 - **Collection**: Detects download activities by in-scope policy users. Example risk management activities include downloading files from SharePoint sites or moving files into a compressed folder.
 - **Exfiltration**: Detects sharing or extraction activities to internal and external sources by in-scope policy users. An example risk management activity includes sending emails with attachments from your organization to external recipients.
-- **Obfuscation**: Detects the masking of potentially risky activities by in-scope policy users. Example risk management activities include renaming files on a device or removing or downgrading sensitivity labels on SharePoint files.
+- **Obfuscation**: Detects the masking of potentially risky activities by in-scope policy users. An example risk management activity includes renaming files on a device.
 - **Clean-up**: Detects deletion activities by in-scope policy users. An example risk management activity includes deleting files from a device.
 
 > [!NOTE]
@@ -312,67 +312,7 @@ Use the following table to determine the maximum number of in-scope users suppor
 
 To create a new insider risk management policy, you'll generally use the policy wizard in the **Insider risk management** solution in the Microsoft Purview compliance portal. You can also create quick policies for general data leaks and data theft by departing users from Analytics checks if applicable.
 
-Complete the following steps to create a new policy using the policy wizard:
-
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
-2. Select **Create policy** to open the policy wizard.
-3. On the **Policy template** page, choose a policy category and then select the template for the new policy. These templates are made up of conditions and indicators that define the risk activities you want to detect and investigate. Review the template prerequisites, triggering events, and detected activities to confirm this policy template fits your needs.
-
-    > [!IMPORTANT]
-    > Some policy templates have prerequisites that must be configured for the policy to generate relevant alerts. If you haven't configured the applicable policy prerequisites, see **Step 4** in the [Get started with insider risk management](/microsoft-365/compliance/insider-risk-management-configure).
-
-4. Select **Next** to continue.
-5. On the **Name and description** page, complete the following fields:
-    - **Name (required)**: Enter a friendly name for the policy. This name can't be changed after the policy is created.
-    - **Description (optional)**: Enter a description for the policy.
-
-6. Select **Next** to continue.
-7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts aren't supported.
-8. Select **Next** to continue.
-9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
-
-    - **I want to prioritize content**. Selecting this option will enable you to prioritize *SharePoint sites*, *Sensitivity labels*, *Sensitive info types*, and *File extensions* content types. If you choose this option, you must select at least one priority content type.
-    - **I don't want to specify priority content right now**. Selecting this option will skip the priority content detail pages in the wizard.
-
-10. Select **Next** to continue.
-
-11. If you've selected **I want to prioritize content** in the previous step, you'll see the detail pages for *SharePoint sites*, *sensitive info types*, *sensitivity labels*, *file extensions*, and *Scoring*. Use these detail pages to define the SharePoint, sensitive info types, sensitivity labels, and file extensions to prioritize in the policy. The *Scoring* detail page allows you to scope the policy to only assign risk scores to priority content.
-
-    - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint sites you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
-    - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
-    - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
-    - **File extensions**: Add up to 50 file extensions. You can include or omit the '.' with the file extension. For example, *.py* or *py* would prioritize Python files.
-    - **Scoring**: Decide whether to assign risk scores to all activities detected by this policy or only for activities that include priority content. Choose **Get alerts for all activity** or **Get alerts only for activity that includes priority content**.
-
-    > [!NOTE]
-    > Users configuring the policy and determining priority SharePoint sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
-
-12. Select **Next** to continue.
-13. If you've selected the *Data leaks* or *Data leaks by priority users* templates, you'll see options on the **Triggers for this policy** page for custom triggering events and policy indicators. You have the choice to select a DLP policy or indicators for triggering events that bring users assigned to the policy in-scope for activity scoring. If you select the **User matches a data loss prevention (DLP) policy triggering event** option, you must select a DLP policy from the DLP policy dropdown list to enable triggering indicators for the DLP Policy for this insider risk management policy. If you select the **User performs an exfiltration activity triggering event** option, you must select one or more of the listed indicators for the policy triggering event.
-    >[!IMPORTANT]
-    >If you're unable to select a listed indicator, it's because they aren't enabled for your organization. To make them available to select and assign to the policy, enable the indicators in **Insider risk management** > **Settings** > **Policy indicators**.
-
-    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
-
-14. If you've selected the *Data leaks by risky users* or *Security policy violations by risky users* templates, you'll see options on the **Triggers for this policy** page for integration with communication compliance and HR data connector events. You have the choice to assign risk scores when users send messages that contain potentially threatening, harassing, or discriminatory language or to bring users into the the policy scope after risky user events are reported in your HR system. If you select the **Risk triggers from communication compliance (preview)** option, you can accept the default communication compliance policy (automatically created), choose a previously created policy scope for this trigger, or create another scoped policy. If you select **HR data connector events**, you must configure a HR data connector for your organization.
-15. Select **Next** to continue.
-16. If you've selected the *Data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
-17. Select **Next** to continue.
-18. If you've selected **Use custom thresholds for the triggering events**, for each triggering event indicator that you selected in Step 13, choose the appropriate level to generate the desired level of activity alerts.
-19. Select **Next** to continue.
-20. On the **Policy indicators** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. Select the indicators you want to apply to the policy.
-
-    > [!IMPORTANT]
-    > If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies. You can use the **Turn on indicators** button in the wizard or select indicators on the **Insider risk management** > **Settings** > **Policy indicators** page.
-
-    If you've selected at least one *Office* or *Device* indicator, select the **Risk score boosters** as appropriate. Risk score boosters are only applicable for selected indicators.
-    If you've selected a *Data theft* or *Data leaks* policy template, select one or more **Sequence detection** methods and a **Cumulative exfiltration detection** method to apply to the policy.
-    If you've selected the *Risky browser usage* policy template, select one or more of the **Browsing indicators**.
-
-21. Select **Next** to continue.
-22. On the **Decide whether to use default or custom indicator thresholds** page, choose custom or default thresholds for the policy indicators that you've selected. Choose either the **Use default thresholds for all indicators** or **Specify custom thresholds** for the selected policy indicators. If you've selected Specify custom thresholds, choose the appropriate level to generate the desired level of activity alerts for each policy indicator.
-23. Select **Next** to continue.
-24. On the **Review** page, review the settings you've chosen for the policy and any suggestions or warnings for your selections. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
+Complete [Step 6: Create an insider risk management policy](/microsoft-365/compliance/insider-risk-management-configure#step-6-required-create-an-insider-risk-management-policy) to configure new insider risk policies.
 
 ## Update a policy
 

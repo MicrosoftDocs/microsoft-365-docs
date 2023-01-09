@@ -27,7 +27,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Microsoft 365 and best practices for bulk mailing to customers.
@@ -68,7 +68,7 @@ To request removal from this list, you can [Use the delist portal to remove your
 
 ## My email landed in the recipient's Junk Email folder
 
-If a message was incorrectly identified as spam by EOP, you can work with the recipient to submit this false positive message to the Microsoft Spam Analysis Team, who will evaluate and analyze the message. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+If a message was incorrectly identified as spam by EOP, you can work with the recipient to submit this false positive message to the Microsoft Spam Analysis Team, who will evaluate and analyze the message. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Traffic from my IP address is throttled by EOP
 

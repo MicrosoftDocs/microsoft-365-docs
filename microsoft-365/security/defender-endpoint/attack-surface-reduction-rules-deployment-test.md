@@ -184,15 +184,23 @@ For more information about using the ASR rules report to manage ASR rules, see [
 ## Configure ASR rules per-rule exclusions
 
 ASR rules now provide the capability to configure rule-specific exclusions, known as "Per Rule Exclusions."
-The ability to configure per-rule exclusions is currently only available by using Microsoft Endpoint Manager admin center. Per-rule exclusions cannot currently be configured by using PowerShell or Group Policy.
 
-To configure per-rule exclusions,
+> [!NOTE]
+> Per-rule exclusions cannot currently be configured by using PowerShell or Group Policy.
+> In Microsoft Endpoint Manager (MEM), per-rule exclusions cannot be added to the existing policy. As it is currently implemented, in order to configure per-rule exclusions, you must create a new policy in MEM to replace the existing policy.
 
-1. In MEM, if it is not already configured, set the rule for which you want to configure exclusions to **Block*.
+To configure per-rule exclusions:
+
+1. Open [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home) console, and navigate to **Home** > **Endpoint security** > **Attack surface reduction**.
+1. If it is not already configured, set the rule for which you want to configure exclusions to **Block*.
 1. In **ASR Only Per Rule Exclusion**, click the toggle to change from **Not configured** to **Configured.**
 1. Enter the names of the files or application that you want to exclude.
+1. At the bottom of the **Create profile** wizard, click **Next** and follow the wizard instructions.
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-per-rule-exclusion.png" alt-text="Screenshot that shows the configuration settings for adding ASR per-rule exclusions." lightbox="images/attack-surface-reduction-rules-report-per-rule-exclusion.png":::
+
+> [!TIP]
+> Use the checkboxes next to your list of exclusion entries to select items to **Delete**, **Sort**, **Import**, or **Export**.
 
 ### Use PowerShell as an alternative method to enable ASR rules
 
