@@ -324,7 +324,7 @@ Similarly, allow up to 7 days for retention labels to be visible in apps after y
 
 Often, the policies will take effect and labels will be visible quicker than 7 days. But with many potential variables that can impact this process, it's best to plan for the maximum of 7 days.
 
-## Adaptive or static scopes for retention
+## Adaptive or static policy scopes for retention
 
 When you create a retention policy or retention label policy, you must choose between adaptive and static to define the scope of the policy.
 
