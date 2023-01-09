@@ -81,7 +81,10 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
 ## Configure Defender for Endpoint
 
-You can configure your Defender for Endpoint capabilities before devices are onboarded.
+> [!IMPORTANT]
+> - You can configure your Defender for Endpoint capabilities before devices are onboarded.
+> - If you have Defender for Endpoint Plan 1, complete steps 1-4 in the following procedure.
+> - If you have Defender for Endpoint Plan 2, complete all of the steps in the following procedure.
 
 1. Make sure Defender for Endpoint is provisioned. As a global admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. Then, in the navigation pane, select **Assets** > **Devices**. 
 
