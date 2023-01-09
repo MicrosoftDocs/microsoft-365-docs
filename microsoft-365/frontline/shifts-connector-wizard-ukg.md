@@ -82,9 +82,9 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 ### Create a connector instance
 
-After you create a connection, you can set up one or more connector instances in that connection. 
+After you create a connection, you can set up one or more connector instances in that connection.
 
-On the Connector Management Console page, under the connection that you created, select **Create instance**
+On the Connector Management Console page, under the connection that you created, select **Create instance**.
 
 <a name="sync"> </a>
 #### Choose sync settings
