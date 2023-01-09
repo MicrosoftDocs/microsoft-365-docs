@@ -17,7 +17,7 @@
     - name: Roles and role groups in the Microsoft Purview compliance portal
       href: /microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Adaptive scopes
-      href: microsoft-365-adaptive-scopes.md
+      href: purview-adaptive-scopes.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance in Microsoft Purview
