@@ -39,9 +39,6 @@ The advantages of using adaptive scopes include:
 
 For specific advantages of using adaptive scopes specific to policies for retention, see [Learn about retention policies and retention labels](retention.md#adaptive-or-static-scopes-for-retention).
 
-> [!IMPORTANT]
-> Adaptive scopes don't currently support public Teams channels. Also, the Skype for Business and Exchange public folder locations don't support adaptive scopes. 
-
 For configuration information, see [Configuring adaptive scopes](#configure-adaptive-scopes).
 
 To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
@@ -202,7 +199,7 @@ To run a query using PowerShell:
 
     > [!TIP]
     > When you use these commands to validate a user scope, if the number of recipients returned is higher than expected, it might be because it includes users who don't have a valid license for adaptive scopes. These users won't have the policy settings applied to them.
-
+    >
     > For example, in a hybrid environment, you might have unlicensed synchronized user accounts without an Exchange mailbox on-premises or in Exchange Online. You can identify these users by running the following command: `Get-User -RecipientTypeDetails User`
 
 3. Verify that the output matches the expected users or groups for your adaptive scope. If it doesn't, check your query and the values with the relevant administrator for Azure AD or Exchange.
