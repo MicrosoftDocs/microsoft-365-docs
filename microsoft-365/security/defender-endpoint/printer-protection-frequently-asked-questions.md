@@ -6,7 +6,7 @@ ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-satapathy
+ms.author: v-nsatapathy
 author: nimishasatapathy
 ms.localizationpriority: medium
 manager: dansimp
