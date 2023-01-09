@@ -78,7 +78,7 @@ Use the instructions for the type of hold you need to remove:
 
 ### Remove an inactive mailbox from a retention policy
 
-The procedure to remove an inactive mailbox from a Microsoft 365 retention policy depends on whether the policy scope is [adaptive or static](retention.md#adaptive-or-static-scopes-for-retention).
+The procedure to remove an inactive mailbox from a Microsoft 365 retention policy depends on whether the policy scope is [adaptive or static](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
 You won't be able to remove an inactive mailbox if the retention policy has [Preservation Lock](retention-preservation-lock.md) applied.
 
