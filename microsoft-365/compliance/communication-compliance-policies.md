@@ -132,21 +132,18 @@ To copy a policy and create a new policy, complete the following steps:
 
 ## Mark a policy as a favorite
 
-After you've created a communication compliance policy, you can mark the policy as a favorite. Once a policy has been identified as a favorite, you can filter favorite policies to appear at the top of the policies list. By marking a policy as a favorite, you can also easily sort policies by favorites. 
+After you've created a communication compliance policy, you can mark the policy as a favorite. Once a policy has been identified as a favorite, you can filter favorite policies to appear at the top of the policies list. By marking a policy as a favorite, you can also easily sort policies by favorites.
 
 To mark a policy as a favorite, you have the following options:
 
 - **Mark as favorite**: Enables you to mark selected policies as favorites, so you can easily find the policies that you're most interested in rather than having to search for them.
-
-- **Sort by favorites**: Sorts the policies by favorites, so your favorite policies appear at the top of the list. 
-
+- **Sort favorites**: Sorts the policies by favorites, so your favorite policies appear at the top of the list.
 - **Customize columns**: Choose to list the favorites that you want to see. You can also choose to sort favorite policies in ascending or descending order.
 
-To sort policies by groups: 
+To sort policies by groups:
 
-- **All policies**: This is the default view, displaying all the policies in the list. 
-
-- **Show only favorites**: Groups policies by favorites at the top of the list. 
+- **All policies**: This is the default view, displaying all the policies in the list.
+- **Only favorites**: Groups policies by favorites at the top of the list.
 
 ![Communication compliance sort policies by group.](../media/communication-compliance-group-favorites.png)
 
