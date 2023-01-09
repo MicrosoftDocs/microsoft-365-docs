@@ -100,6 +100,9 @@ To delete a filter query, open the filter panel and select the trashcan icon nex
 
 In addition to using filters, you can also use a KQL-like query language in the Keywords filter to build your review set search query. The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**. It also supports a single-character wildcard (?) and a multi-character wildcard (*).
 
+> [!NOTE]
+> Review filters only support wildcards (? or *) on a single term. Using wildcards in searches on phrases that consist of multiple terms aren't supported.
+
 ## Advanced query builder
 
 You can also build more advanced queries to search for documents in a review set.
