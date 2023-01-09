@@ -72,7 +72,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 1. When you're ready, select **Add connection**.
 1. In the Choose your connector pane, choose **UKG Dimensions**, and then select **Next** to create a UKG Dimensions connection.
 <a name="connection_details"> </a>
-1. In the Connection settings pane, give your connection a unique name. It can't be longer than 30 characters or have any special characters.
+1. In the Connection settings pane, give your connection a unique name. It can't be longer than 32 characters or have any special characters.
     :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 1. Enter your UKG Dimensions service account name (which enables access to all instances created in UKG Dimensions) and password and service URLs.
 1. When you're done, select **Create connection**.
