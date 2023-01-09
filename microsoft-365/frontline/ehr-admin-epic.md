@@ -269,7 +269,7 @@ Key features of the patient experience:
 
 ## Troubleshoot Teams EHR connector setup and integration
 
-If you're experiencing issues when setting up the integration, see [Troubleshoot Teams EHR connector setup and configuration](ehr-connector-faq.md) for guidance on how to resolve common setup and configuration issues.
+If you're experiencing issues when setting up the integration, see [Troubleshoot Teams EHR connector setup and configuration](ehr-connector-troubleshoot-setup-configuration.md) for guidance on how to resolve common setup and configuration issues.
 
 ## Get insight into Virtual Appointments usage
 

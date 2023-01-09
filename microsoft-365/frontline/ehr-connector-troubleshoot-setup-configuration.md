@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams EHR connector FAQ
+title: Troubleshoot Microsoft Teams EHR connector setup and configuration
 author: LanaChin
 ms.author: v-lanachin
 manager: samanro
@@ -26,25 +26,17 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.reviewer: casjacks
-description: Get answers to frequently asked questions about Teams Electronic Health Record (EHR) connector setup and configuration. Use this guidance to help you troubleshoot common setup and configuration issues for the Teams Electronic Health Record (EHR) connector.  
+description: Use this guidance to help you troubleshoot common setup and configuration issues for the Teams Electronic Health Record (EHR) connector.  
 ms.date: 
 ---
 
-# Troubleshoot Teams EHR connector setup and configuration
-
-**Option 1**
-
-This article covers frequently asked questions about the Microsoft Teams Electronic Health Record (EHR) connector. It provides answers to common setup and configuration questions.
-
-Use this guidance to help resolve blockers that you may experience when you set up and configure the EHR connector to integrate with your [Cerner EHR](ehr-admin-cerner.md) or [Epic EHR](ehr-admin-epic.md) system.
-
-**Option 2**
+# Troubleshoot Microsoft Teams EHR connector setup and configuration
 
 This article provides guidance for how to troubleshoot common setup and configuration issues for the Microsoft Teams Electronic Health Record (EHR) connector. Use it to help resolve blockers that you may experience when you set up and configure the EHR connector to integrate with your [Cerner EHR](ehr-admin-cerner.md) or [Epic EHR](ehr-admin-epic.md) system.
 
 ## I get a "FHIR URL isn't valid" error when I try to configure the EHR connector
 
-This issue can happen in the following scenarios:.
+This issue can happen in the following scenarios:
 
 - The FHIR base URL is missing the DSTU2 extension and you're using Teams version 1.1 or 1.2.
 - The FHIR base URL is missing the R4 extension and you're using Teams version 1.3.

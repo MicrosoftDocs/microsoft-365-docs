@@ -122,7 +122,7 @@
     - name: Virtual Appointments with Teams and Epic EHR 
       href: ehr-admin-epic.md
     - name: Troubleshoot Teams EHR connector setup and configuration
-      href: ehr-connector-faq.md
+      href: ehr-connector-troubleshoot-setup-configuration.md
     - name: Manage the join experience on browsers
       href: browser-join.md
     - name: Reports
