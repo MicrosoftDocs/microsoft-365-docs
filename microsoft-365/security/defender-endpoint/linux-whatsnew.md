@@ -79,7 +79,7 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-
+</details>
 
 <details>
   <summary>Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)</summary>
