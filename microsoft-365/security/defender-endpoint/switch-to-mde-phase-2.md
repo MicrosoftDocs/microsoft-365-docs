@@ -90,7 +90,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
    | :::image type="content" source="media/mde-hangon-provisioning.png" alt-text="Screenshot showing message that says hang on because MDE is not provisioned yet." lightbox="media/mde-hangon-provisioning.png"::: | Defender for Endpoint isn't finished provisioning yet. You might have to wait a little while for the process to finish. |
    | :::image type="content" source="media/device-inventory-empty.png" alt-text="Screenshot showing device inventory page with no device onboarded yet." lightbox="media/device-inventory-empty.png"::: | Defender for Endpoint is provisioned. In this case, proceed to the next step. |
 
-2. Set up integration between Microsoft Intune and Defender for Endpoint by following these steps:
+2. If you're going to use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) or [Microsoft Endpoint Configuration Manager](/mem/endpoint-manager-overview) to onboard devices and configure device policies, set up integration by following these steps:
 
    1. In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), go to **Endpoint security**.
    2. Under **Setup**, choose **Microsoft Defender for Endpoint**.
@@ -102,7 +102,18 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
    8. If you're planning to use Configuration Manager, set the toggle for **Manage Security settings using Configuration Manager** to **On**. (If you need help with this step, see [Co-existence with Microsoft Endpoint Configuration Manager](/mem/intune/protect/mde-security-integration#co-existence-with-microsoft-endpoint-configuration-manager).)
    9. Scroll down and select **Save**.
 
-3. 
+3. Configure your initial [attack surface reduction capabilities](overview-attack-surface-reduction.md). At a minimum, enable the standard protection rules that are listed in the following table right away:
+
+   | Standard protection rules | Configuration methods |
+   |:---|:---|
+   | - [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) <br/><br/>- [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)<br/><br/>- [Block persistence through Windows Management Instrumentation (WMI) event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) | - [Intune](enable-attack-surface-reduction.md#intune) (Device configuration profiles or Endpoint Security policies) <br/><br/>- [Mobile Device Management (MDM)](enable-attack-surface-reduction.md#mdm) (Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) to individually enable and set the mode for each rule.)<br/><br/>- [Group Policy](enable-attack-surface-reduction.md#group-policy) (only if you're not using Intune, Configuration Manager, or another enterprise-level management platform)<br/><br/>- [PowerShell](enable-attack-surface-reduction.md#powershell) (only if you're not using Intune, Configuration Manager, or another enterprise-level management platform) |
+
+
+4. Configure your [next-generation protection capabilities](next-generation-protection.md).
+
+   | Capability | Configuration methods |
+   |:---|:---|
+   |  |
 
 This step of the migration process involves configuring Microsoft Defender Antivirus for your endpoints. We recommend using Intune; however, you can any of the methods that are listed in the following table:
 
