@@ -158,7 +158,7 @@ You can download the files  [Printer Protection Samples](https://github.com/micr
 
     3. Group 3: Allowed PDF/XPS file printer group: following PrinterConnectionId is used, but if you want to only allow PDF, FriendlyNameId with ‘Microsoft Print to PDF’ is recommended. 
 
-      :::image type="content" source="images/Grp-3.png" alt-text="Allowed pdf":::
+      :::image type="content" source="images/allowed-pdf.png" alt-text="This is allowed pdf.":::
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml). See step 3 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 

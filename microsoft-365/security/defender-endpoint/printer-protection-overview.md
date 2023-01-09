@@ -1,11 +1,11 @@
 ---
 title: Printer Protection Overview
-description: A walk-through about Microsoft Defender for Endpoint
+description: A walk-through about Microsoft Defender for Endpoint for Printer Protection
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-satapathy
+ms.author: v-nsatapathy
 author: nimishasatapathy
 ms.localizationpriority: medium
 manager: dansimp
@@ -28,7 +28,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> The Group Policy management and Intune OMA-URI/Custom Policy management of this product have been release, if you are currently using [Microsoft Defender for Endpoint Device Control Printer Protection | Microsoft Learn](printer-protection.md), we recommend you upgrade.
+> The Group Policy management and Intune OMA-URI/Custom Policy management of this product have been release, if you are currently using [Microsoft Defender for Endpoint Device Control Printer Protection | Microsoft Learn](printer-protection-overview.md), we recommend you upgrade.
 
 ## Overview
 
@@ -54,7 +54,7 @@ Ensure that the Windows devices that you need to onboard should meet the followi
     
 2. MOCAMP:4.18.2205 or later, you can run the command `Get-MpComputerStatus `on PowerShell to check the version. 
 
-:::image type="content" source="images/administrator-powershell.png" alt-text="This is administration windows PowerShell":::
+:::image type="content" source="images/administrator-windows-powershell.png" alt-text="This is administrator windows powershell":::
 
 ### Device control printer protection properties
 
@@ -86,7 +86,7 @@ The table below lists the properties you can use in **Group**:
 
 Every access policy rule called PolicyRule can be used to define access restriction for each Device type group through multiple Entry.
 
-The table below lists the properties you can use in PolicyRule:
+The table below lists the properties you can use in **PolicyRule**:
 
 |Property Name|Description|Options|
 |---|---|---|
@@ -96,7 +96,7 @@ The table below lists the properties you can use in PolicyRule:
 |ExcludedIDList |The group(s) that the policy won't be applied to.|The Group ID/GUID must be used at this instance.| 
 |Entry |One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction. |See Entry properties table below for more details.|
 
-The table below lists the properties you can use in Entry:
+The table below lists the properties you can use in **Entry**:
 
 |Property Name|Description|Options|
 |---|---|---|
@@ -106,9 +106,9 @@ The table below lists the properties you can use in Entry:
 |ComputerSid|Local computer Sid or computer Sid group or the Sid of the AD object or the Object ID of the AAD object, defines whether to apply this policy over a specific machine or machine group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both SID and ComputerSID into the same Entry. |
 |Options|Defines whether to display notification or not|**When Type Allow is selected:**<li> 0: nothing </li> <li> 4: disable AuditAllowed and AuditDenied for this Entry. Even if Allow happens and the AuditAllowed is setting configured, the system won't send event. </li> <li> 8: capture file information and have a copy of the file as evidence for Write access. </li> <li> 16: capture printed content. </li> **When  Type Deny is selected:**<li> 0: nothing </li> <li> 4: disable AuditDenied for this Entry. Even if Block happens and the AuditDenied is setting configured, the system won't show notification. </li> **When Type AuditAllowed is selected:**<li> 0: nothing </li> <li> 1: nothing </li> <li> 2: send event </li> **When Type AuditDenied is selected:**<li> 0: nothing </li> <li> 1: show notification </li> <li> 2: send event </li> <li> 3: show notification and send event </li> <li> 4: print </li>|
 |AccessMask |Defines the access. |
-|Parameters |Condition for this Entry, for example, network condition.| Can add groups (non-devices type) or even put Parameters into Parameters. See Parameters properties table below to more details.|
+|Parameters |Condition for this Entry, for example, network condition.| Can add groups (non-devices type) or even put Parameters into Parameters. See Parameters properties table below for more details.|
 
-The table below lists the properties you can use in Parameters: 
+The table below lists the properties you can use in **Parameters**: 
 
 |Property Name|Description|Options|
 |---|---|---|
@@ -120,4 +120,4 @@ The table below lists the properties you can use in Parameters:
 
 You can view the policy name and printer information if you have right options setting in your policy.
 
-:::image type="content" source="images/windows-security.png" alt-text="This is windows security":::
+:::image type="content" source="images/enduser-experience.png" alt-text="This is enduser experience image.":::

@@ -131,7 +131,7 @@ You can download the files here, [Printer Protection Samples](https://github.com
 
     3. Group 2: Allowed PDF/XPS file printer group: following PrinterConnectionId is used, but if you want to only allow PDF, FriendlyNameId with ‘Microsoft Print to PDF’ is recommended 
 
-    :::image type="content" source="images/Group-3.png" alt-text="A screenshot of approved USB":::
+    :::image type="content" source="images/group-3.png" alt-text="This is group 3policy.":::
     
     Combine these two groups into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml). See step 3 from the [Deploy using group policy](deploy-and-manage-using-group-policy.md) section to deploy this configuration.
 
@@ -151,7 +151,7 @@ You can download the files here, [Printer Protection Samples](https://github.com
 
     3. Create Default Deny custom policy for any other printers 
 
-    :::image type="content" source="images/create-group.png" alt-text="Create deafult deny custom policy for any other printers":::
+    :::image type="content" source="images/create-default.png" alt-text="This is create default.":::
     
     Combine these two policy rules into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%201%20GPO%20Policy%20-%20Prevent%20Write%20and%20Execute%20access%20to%20all%20but%20allow%20specific%20approved%20USBs.xml). See step 4 from the [Deploy using group policy](deploy-and-manage-using-group-policy.md) section to deploy this configuration.
 
