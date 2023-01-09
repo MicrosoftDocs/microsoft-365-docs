@@ -34,6 +34,54 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+  <summary>Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)</summary>
+
+&ensp;Released: **January 10, 2023**<br/>
+&ensp;Published: **January 10, 2023**<br/>
+&ensp;Build: **101.94.13**<br/>
+&ensp;Release version: **30.122112.19413.0**<br/>
+&ensp;Engine version: **1.1.19700.3**<br/>
+&ensp;Signature version: **1.377.550.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release 
+	- Skip quarantine of threats in passive mode by default.
+	- New config, nonExecMountPolicy, can now be used to specify behavior of RTP on mount point marked as noexec.
+	- Improved performance under high load and in speed test scenarios.
+	- Fixes an issue with accessing SMB shares behind Cisco AnyConnect VPN connections.
+	- Fixes an issue with Network Protection and SMB.
+	- lttng performance tracing support.
+	- TVM, eBPF, auditd, telemetry and mdatp cli improvements.
+	- mdatp health will now report behavior_monitoring
+	- Other fixes. 
+
+**Known issues**
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.94.13. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
+
+There are two ways to mitigate the problem in upgrading.
+
+Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+	
+As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade. 
+Caution: Some customers(<1%) are experiencing issues with this method. 
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+	
+</details>
+
+<details>
   <summary>Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)</summary>
 
 &ensp;Released: **November 02, 2022**<br/>
