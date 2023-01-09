@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 12/01/2022
+ms.date: 01/09/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -88,9 +88,17 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
 2. Set up integration between Microsoft Intune and Defender for Endpoint.
 
-   1. In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)), go to **Endpoint security**, and then under **Setup**, choose **Microsoft Defender for Endpoint**.
-   2. Under **Endpoint Security Profile Settings**, set the toggle for **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations** to **On**, and then at the top of the screen, select **Save**.
+   1. In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), go to **Endpoint security**.
+   2. Under **Setup**, choose **Microsoft Defender for Endpoint**.
+   3. Under **Endpoint Security Profile Settings**, set the toggle for **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations** to **On**.
+   4. Near the top of the screen, select **Save**.
+   5. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Endpoints**.
+   6. Scroll down to **Configuration management**, and select **Enforcement scope**. 
+   7. Set the toggle for **Use MDE to enforce security configuration settings from MEM** to **On**, and then select the options for both Windows client and Windows Server devices. 
+   8. If you're planning to use Configuration Manager, set the toggle for **Manage Security settings using Configuration Manager** to **On**. (If you need help with this step, see [Co-existence with Microsoft Endpoint Configuration Manager](/mem/intune/protect/mde-security-integration#co-existence-with-microsoft-endpoint-configuration-manager).)
+   9. Scroll down and select **Save**.
 
+3. 
 
 This step of the migration process involves configuring Microsoft Defender Antivirus for your endpoints. We recommend using Intune; however, you can any of the methods that are listed in the following table:
 
