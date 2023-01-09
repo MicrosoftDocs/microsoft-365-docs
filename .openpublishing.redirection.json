@@ -10051,11 +10051,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/contentunderstanding/TOC.yml",
-      "redirect_url": "/microsoft-365/syntex/TOC",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/contentunderstanding/train-freeform-document-processing-model.md",
       "redirect_url": "/microsoft-365/syntex/train-freeform-document-processing-model",
       "redirect_document_id": false
