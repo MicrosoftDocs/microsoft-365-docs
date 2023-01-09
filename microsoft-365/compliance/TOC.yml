@@ -1600,7 +1600,7 @@
             - name: Export documents from a review set
               href: ediscovery-export-documents-from-review-set.md
             - name: Export documents to an Azure Storage account
-              href: ediscovery-download-export-jobs.md
+              href: download-export-jobs.md
         - name: Manage jobs
           href: ediscovery-managing-jobs.md
         - name: Configure case settings
@@ -1614,7 +1614,7 @@
         - name: eDiscovery (Premium) reference
           items:
             - name: eDiscovery (Premium) limits
-              href: ediscovery-limits.md
+              href: ediscovery-premium-limits.md
             - name: Supported file types
               href: ediscovery-supported-file-types.md
             - name: Document metadata fields
