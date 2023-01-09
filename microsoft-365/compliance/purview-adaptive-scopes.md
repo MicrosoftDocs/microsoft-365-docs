@@ -37,7 +37,7 @@ The advantages of using adaptive scopes include:
 - Query-based scopes provide resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 - A single policy can include locations for both Microsoft Teams and Yammer, whereas when you don’t use an adaptive scope, each location requires its own policy.
 
-For specific advantages of using adaptive scopes specific to policies for retention, see [Learn about retention policies and retention labels](retention.md#adaptive-or-static-scopes-for-retention).
+For specific advantages of using adaptive scopes specific to policies for retention, see [Learn about retention policies and retention labels](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
 For configuration information, see [Configuring adaptive scopes](#configure-adaptive-scopes).
 
