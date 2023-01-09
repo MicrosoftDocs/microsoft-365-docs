@@ -28,9 +28,13 @@ description: "Learn how to upgrade one or many distribution lists to Microsoft 3
 
 # Upgrade distribution lists to Microsoft 365 Groups in Exchange Online
 
+> [!IMPORTANT]
+> This functionality will be deprecated by February 1, 2023. For more information, see [Deprecating Conversion of Distribution Lists to Microsoft 365 Groups - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-conversion-of-distribution-lists-to-microsoft-365/ba-p/3668215).
+
 Upgrading a distribution list to a Microsoft 365 Group is a great way to improve the features and capabilities of groups in your organization. For more information, see [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 You can upgrade distribution lists one at a time, or several at the same time. You can use the Exchange admin center (EAC) or Exchange Online PowerShell.
+
 
 ## Upgrade one or many distribution list groups to Microsoft 365 Groups
 
@@ -55,7 +59,7 @@ You must be a global admin or Exchange admin to upgrade a distribution list. To 
 
    ![Upgrade to Microsoft 365 Groups icon.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-1. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of distribution lits you're upgrading, the process can take minutes or hours.
+1. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of distribution lists you're upgrading, the process can take minutes or hours.
 
    If the distribution list can't be upgraded, a dialog appears saying so. See [Which distribution lists cannot be upgraded?](#which-distribution-lists-cant-be-upgraded).
 
@@ -91,7 +95,7 @@ To upgrade a single distribution list, use the following syntax:
 Upgrade-DistributionGroup -DLIdentities <EmailAddress>
 ```
 
-This example upgrade the distribution list marketing@contoso.com:
+This example upgrades the distribution list marketing@contoso.com:
 
 ```PowerShell
 Upgrade-DistributionGroup -DLIdentities marketing@contoso.com
@@ -176,7 +180,7 @@ People with global admin or Exchange admin rights.
 
 ### Why is the contact card still showing a distribution list? What should I do to prevent an upgraded distribution list from showing up in my auto suggest list?
 
-- **Outlook**: After you upgrade a ditribution list to a Microsoft 365 group, the user's local recipient cache (also known as the nick name cache) is not aware of the change. Do the steps in the following article to reset the user's local recipient cache: [Information about the Outlook AutoComplete list](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list). 
+- **Outlook**: After you upgrade a distribution list to a Microsoft 365 group, the user's local recipient cache (also known as the nick name cache) is not aware of the change. Do the steps in the following article to reset the user's local recipient cache: [Information about the Outlook AutoComplete list](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list). 
 
   If you don't update the recipient cache, any email sent to the Microsoft 365 Group will be delivered successfully, but the following issues will remain:
   

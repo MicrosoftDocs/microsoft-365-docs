@@ -40,7 +40,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 
 |Step|Task|All Office 365 Enterprise plans|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1|[Enable Azure AD Multi-Factor Authentication (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Enable Azure AD Multifactor Authentication (MFA)](#1-enable-azure-ad-multifactor-authentication-mfa)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Protect against threats](#2-protect-against-threats)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Configure Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4|[Configure Microsoft Defender for Identity](#4-configure-microsoft-defender-for-identity)|||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -57,11 +57,11 @@ Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-s
 
 :::image type="content" source="../media/secure-score.png" alt-text="The Microsoft Secure Score screen in the Microsoft 365 Defender portal" lightbox="../media/secure-score.png":::
 
-## 1: Enable Azure AD Multi-Factor Authentication (MFA)
+## 1: Enable Azure AD Multifactor Authentication (MFA)
 
 The single best thing you can do to improve security for employees working from home is to turn on MFA. If you don't already have processes in place, treat this as an emergency pilot and make sure you have support folks ready to help employees who get stuck. As you probably can't distribute hardware security devices, use Windows Hello biometrics and smartphone authentication apps like Microsoft Authenticator.
 
-Normally, Microsoft recommends you give users 14 days to register their device for Multi-Factor Authentication before requiring MFA. However, if your workforce is suddenly working from home, go ahead and require MFA as a security priority and be prepared to help users who need it.
+Normally, Microsoft recommends you give users 14 days to register their device for Multifactor Authentication before requiring MFA. However, if your workforce is suddenly working from home, go ahead and require MFA as a security priority and be prepared to help users who need it.
 
 Applying these policies will take only a few minutes, but be prepared to support your users over the next several days.
 
@@ -71,7 +71,7 @@ Applying these policies will take only a few minutes, but be prepared to support
 |---|---|
 |Microsoft 365 plans (without Azure AD P1 or P2)|[Enable Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.|
 |Microsoft 365 E3 (with Azure AD P1)|Use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br/>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](./office-365-security/identity-access-policies.md) by creating these policies:<br/> - [Require MFA when sign-in risk is medium or high](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Block clients that don't support modern authentication](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [High risk users must change password](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of feature in Azure Active Directory, begin to implement Microsoft's [recommended set of Conditional Access and related policies](./office-365-security/identity-access-policies.md) like:<br/> - Requiring MFA when sign-in risk is medium or high. <br/>- Blocking clients that don't support modern authentication. <br/>- Requiring high risk users change their password.
 
 ## 2: Protect against threats
 
@@ -139,8 +139,8 @@ Even better, Microsoft coordinates this app protection framework with a set of c
 
 To configure mobile app protection, use the guidance in [Common identity and device access policies](./office-365-security/identity-access-policies.md):
 
- 1. Use the [Apply APP data protection policies](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) guidance to create policies for iOS and Android. Level 2 (enhanced data protection) is recommended for baseline protection.
- 2. Create a conditional access rule to [Require approved apps and APP protection](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection).
+ 1. Use the [Apply APP data protection policies](./office-365-security/identity-access-policies.md#app-protection-policies) guidance to create policies for iOS and Android. Level 2 (enhanced data protection) is recommended for baseline protection.
+ 2. Create a conditional access rule to [Require approved apps and APP protection](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection-policies).
 
 ## 7: Configure MFA and conditional access for guests, including Intune mobile app protection
 
@@ -171,7 +171,7 @@ You can also take advantage of these tutorials:
 
 After enrolling devices, use the guidance in [Common identity and device access policies](./office-365-security/identity-access-policies.md) to create these policies:
 
-- [Define device-compliance policies](./office-365-security/identity-access-policies.md#define-device-compliance-policies) — The recommended settings for Windows 10 include requiring antivirus protection. If you have Microsoft 365 E5, use Microsoft Defender for Endpoint to monitor the health of employee devices. Be sure compliance policies for other operating systems include antivirus protection and end-point protection software.
+- [Define device-compliance policies](./office-365-security/identity-access-policies.md#create-device-compliance-policies) — The recommended settings for Windows 10 include requiring antivirus protection. If you have Microsoft 365 E5, use Microsoft Defender for Endpoint to monitor the health of employee devices. Be sure compliance policies for other operating systems include antivirus protection and end-point protection software.
 - [Require compliant PCs](./office-365-security/identity-access-policies.md#require-compliant-pcs-and-mobile-devices) — This is the conditional access rule in Azure AD that enforces the device compliance policies.
 
 Only one organization can manage a device, so be sure to exclude guest accounts from the conditional access rule in Azure AD. If you don't exclude guest and external users from policies that require device compliance, these policies will block these users. For more information, see [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md).
@@ -208,7 +208,7 @@ Microsoft 365 provides the following resources to help inform users in your orga
 |---|---|
 |Microsoft 365|[Customizable learning pathways](/office365/customlearning/) <p>These resources can help you put together training for end users in your organization|
 |Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/training/modules/security-with-microsoft-365) <p>This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
-|Multi-factor authentication|[Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>This article helps end users understand what multi-factor authentication is and why it's being used at your organization.|
+|Multifactor authentication|[Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>This article helps end users understand what multifactor authentication is and why it's being used at your organization.|
 
 In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). These actions include:
 
