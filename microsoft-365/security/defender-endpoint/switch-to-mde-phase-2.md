@@ -90,16 +90,24 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
    | :::image type="content" source="media/mde-hangon-provisioning.png" alt-text="Screenshot showing message that says hang on because MDE is not provisioned yet." lightbox="media/mde-hangon-provisioning.png"::: | Defender for Endpoint isn't finished provisioning yet. You might have to wait a little while for the process to finish. |
    | :::image type="content" source="media/device-inventory-empty.png" alt-text="Screenshot showing device inventory page with no device onboarded yet." lightbox="media/device-inventory-empty.png"::: | Defender for Endpoint is provisioned. In this case, proceed to the next step. |
 
-2. If you're going to use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) or [Microsoft Endpoint Configuration Manager](/mem/endpoint-manager-overview) to onboard devices and configure device policies, set up integration by following these steps:
+2. If you're going to use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) or [Microsoft Endpoint Configuration Manager](/mem/endpoint-manager-overview) to onboard devices and configure device policies, set up integration by following these steps: <br/>
 
    1. In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), go to **Endpoint security**.
+
    2. Under **Setup**, choose **Microsoft Defender for Endpoint**.
+
    3. Under **Endpoint Security Profile Settings**, set the toggle for **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations** to **On**.
+
    4. Near the top of the screen, select **Save**.
+
    5. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Endpoints**.
+
    6. Scroll down to **Configuration management**, and select **Enforcement scope**. 
+
    7. Set the toggle for **Use MDE to enforce security configuration settings from MEM** to **On**, and then select the options for both Windows client and Windows Server devices. 
+
    8. If you're planning to use Configuration Manager, set the toggle for **Manage Security settings using Configuration Manager** to **On**. (If you need help with this step, see [Co-existence with Microsoft Endpoint Configuration Manager](/mem/intune/protect/mde-security-integration#co-existence-with-microsoft-endpoint-configuration-manager).)
+   
    9. Scroll down and select **Save**.
 
 3. Configure your initial [attack surface reduction capabilities](overview-attack-surface-reduction.md). At a minimum, enable the standard protection rules that are listed in the following table right away:
