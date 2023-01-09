@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 07/19/2022
-ms.reviewer: shlomiakirav
+ms.date: 01/05/2023
+ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
  - SMB
@@ -60,7 +60,7 @@ The following table can help you choose where to manage your security policies a
 
 | Option | Description |
 |:---|:---|
-| **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) is a one-stop shop for managing your company's devices, security policies, and security settings. You can access your security policies and settings, use the [Microsoft Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) all in one place. <p>If you're using Intune, devices that you onboard to Defender for Business and your security policies are visible in the Endpoint Manager admin center. To learn more, see the following articles:<ul><li>[Defender for Business default settings and Microsoft Intune](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-intune)</li><li>[Firewall in Defender for Business](mdb-firewall.md)</li></ul>   |
+| **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) is a one-stop shop for managing your company's devices, security policies, and security settings. You can access your security policies and settings, use the [Microsoft Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) all in one place. <p>If you're using Intune, devices that you onboard to Defender for Business and your security policies are visible in the Endpoint Manager admin center. To learn more, see the following articles:<ul><li>[How default settings in Defender for Business correspond to settings in Microsoft Intune](mdb-next-gen-configuration-settings.md#how-default-settings-in-defender-for-business-correspond-to-settings-in-microsoft-intune)</li><li>[Firewall in Defender for Business](mdb-firewall.md)</li></ul>   |
 | **Use the Microsoft Endpoint Manager admin center** | If your company is already using Intune to manage security policies, you can continue using the Endpoint Manager admin center to manage your devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <p>If you decide to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you'll be prompted to delete any existing security policies in Intune to avoid [policy conflicts](mdb-troubleshooting.yml) later. |
 
 > [!IMPORTANT]
