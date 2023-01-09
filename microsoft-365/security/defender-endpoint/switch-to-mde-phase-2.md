@@ -63,7 +63,7 @@ As you're making the switch to Defender for Endpoint, you might need to take cer
 
 > [!TIP]
 > You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
-
+test
 1. Open Registry Editor, and then navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
