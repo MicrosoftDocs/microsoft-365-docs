@@ -29,7 +29,7 @@ description: "Learn how to upgrade one or many distribution lists to Microsoft 3
 # Upgrade distribution lists to Microsoft 365 Groups in Exchange Online
 
 > [!IMPORTANT]
-> This functionality will be deprecated by February 1, 2023. For more information, see [Deprecating Conversion of Distribution Lists to Microsoft 365 Groups - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-conversion-of-distribution-lists-to-microsoft-365/ba-p/3668215)
+> This functionality will be deprecated by February 1, 2023. For more information, see [Deprecating Conversion of Distribution Lists to Microsoft 365 Groups - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-conversion-of-distribution-lists-to-microsoft-365/ba-p/3668215).
 
 Upgrading a distribution list to a Microsoft 365 Group is a great way to improve the features and capabilities of groups in your organization. For more information, see [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
