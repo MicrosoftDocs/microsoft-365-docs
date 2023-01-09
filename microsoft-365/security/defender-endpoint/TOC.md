@@ -2,7 +2,7 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
-### [Trial playbook: Get the most out of your trial](defender-endpoint-trial-playbook.md)
+### [Trial user guide: Microsoft Defender for Endpoint](defender-endpoint-trial-user-guide.md)
 ### [Compare Microsoft endpoint security plans](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
@@ -71,7 +71,7 @@
 #### [Onboard Windows Client using Group Policy](configure-endpoints-gp.md)
 #### [Onboard Windows Client using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-#### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
+#### [Onboard Windows 10 multi-session devices in Azure Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
@@ -201,7 +201,7 @@
 ### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
-### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
+### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-endpoint%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-endpoint%2Ftoc.json)
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
@@ -211,7 +211,6 @@
 ### [Configure portal settings]()
 #### [Configure general Defender for Endpoint settings](preferences-setup.md)
 #### [General]()
-##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
 ##### [Configure vulnerability email notifications](configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](advanced-features.md)
@@ -247,17 +246,23 @@
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
-#### [Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md)
-#### [Enable Corelight data integration](corelight-integration.md)
+#### [Enable Corelight as a data source](corelight-integration.md)
+#### [Enterprise IoT security]()
+##### [Securing IoT devices in the enterprise](/azure/defender-for-iot/organizations/concept-enterprise/)
+##### [Enable Enterprise IoT security with Defender for Endpoint](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint/)
+##### [Manage Defender for IoT plans](/azure/defender-for-iot/organizations/manage-subscriptions-enterprise/)
+##### [Enhance Enterprise IoT discovery](/azure/defender-for-iot/organizations/eiot-sensor/)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
-### [Device inventory]()
+### [Authenticated scans]()
+#### [Network devices](network-devices.md)
+#### [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md)
+
+### [Devices]()
 #### [Device inventory](machines-view-overview.md)
 #### [Exclude devices](exclude-devices.md)
-#### [Device timeline event flags](device-timeline-event-flag.md)
+#### [Device timeline](device-timeline-event-flag.md)
 #### [Manage device group and tags](machine-tags.md)
-
-### [Network devices](network-devices.md)
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
@@ -324,6 +329,7 @@
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
+#### [Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 #### [Cloud protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 ##### [Why cloud protection should be on](why-cloud-protection-should-be-on-mdav.md)
 ##### [Turn on cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)
@@ -374,7 +380,7 @@
 
 #### [Deploy and report on Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Deploy and enable Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
-##### [Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment](deployment-vdi-microsoft-defender-antivirus.md)
+##### [Configure Microsoft Defender Antivirus in a remote desktop or virtual desktop infrastructure environment](deployment-vdi-microsoft-defender-antivirus.md)
 ##### [Report on Microsoft Defender Antivirus](report-monitor-microsoft-defender-antivirus.md)
 
 #### [Scans and remediation](review-scan-results-microsoft-defender-antivirus.md)
@@ -402,7 +408,7 @@
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
 ##### [Collect diagnostic data of Microsoft Defender Antivirus](collect-diagnostic-data.md)
 ##### [Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus](collect-diagnostic-data-update-compliance.md)
-##### [Tune performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+##### [Improve performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
@@ -438,7 +444,6 @@
 ##### [Investigate files](investigate-files.md)
 ##### [Investigate devices](investigate-machines.md)
 ##### [Investigate an IP address](investigate-ip.md)
-##### [Investigate domains and URLs associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
 
@@ -495,12 +500,12 @@
 ### [Next generation protection]()
 #### [Run and customize scheduled and on-demand scans](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
-## [Endpoint Attack Notifications](endpoint-attack-notifications.md)
-
-### [Experts on Demand](experts-on-demand.md)
+### [Endpoint Attack Notifications](endpoint-attack-notifications.md)
 
 ## Reference
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
+### [Advanced deployment guidance - Microsoft Defender for Endpoint on Linux](comprehensive-guidance-on-linux-deployment.md)
+
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
 #### [Configure Microsoft Defender for Cloud Apps integration](microsoft-cloud-app-security-config.md)
@@ -542,6 +547,14 @@
 ####### [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
 
+###### [Authenticated scan]()
+####### [Authenticated scan methods and properties](get-authenticated-scan-properties.md)
+####### [Get all scan definitions](get-all-scan-definitions.md)
+####### [Add, delete or update a scan definition](add-a-new-scan-definition.md)
+####### [Get all scan agents](get-all-scan-agents.md)
+####### [Get scan history by definition](get-scan-history-by-definition.md)
+####### [Get scan history by session](get-scan-history-by-session.md)
+
 ###### [Browser extensions]()
 ####### [Export browser extensions assessment](get-assessment-browser-extensions.md)
 ####### [Get browser extensions permission information](get-browser-extensions-permission-info.md)
@@ -577,6 +590,9 @@
 ####### [Submit Indicator](post-ti-indicator.md)
 ####### [Import Indicator](import-ti-indicators.md)
 ####### [Delete Indicator](delete-ti-indicator-by-id.md)
+
+###### [Information gathering]()
+####### [Export information gathering assessment](get-assessment-information-gathering.md)
 
 ###### [IP]()
 ####### [Get IP related alerts](get-ip-related-alerts.md)
@@ -687,7 +703,7 @@
 ##### [Stream advanced hunting events to your storage account](raw-data-export-storage.md)
 
 #### [SIEM integration]()
-##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
+##### [Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API](configure-siem.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Partners & APIs]()

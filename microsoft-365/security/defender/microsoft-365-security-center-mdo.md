@@ -2,7 +2,7 @@
 title: Microsoft Defender for Office 365 in Microsoft 365 Defender
 description: Learn about changes from the Security & Compliance Center to Microsoft 365 Defender.
 keywords: Microsoft 365 security, Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, new defender security portal
-ms.date: 02/21/2021
+ms.date: 11/22/2022
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -126,26 +126,24 @@ View reports, change your settings, and modify user roles.
 > DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.
 > For Defender for Office 365 users, you can now *manage and rotate* DKIM keys through Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>, or navigate to **Policy & rules** \> **Threat policies** \> \> **Rules** section \> **DKIM**.
 >
-> For more information, see [Use DKIM to validate outbound email sent from your custom domain](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email).
+> For more information, see [Use DKIM to validate outbound email sent from your custom domain](/microsoft-365/security/office-365-security/email-authentication-dkim-configure).
 
 ## What's changed
 
 This table is a quick reference of Threat management where change has occurred between the Security & Compliance center and the Microsoft 365 Defender portal. Click the links to read more about these areas.
 
-****
-
 |Area|Description of change|
 |---|---|
-|[Investigation](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) and [Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.|
+|[Investigation](../office-365-security/air-about.md#the-overall-flow-of-air) |Brings together AIR capabilities in [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) and [Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.|
 |[Alert queue](../../compliance/alert-policies.md)|The **View alerts** flyout pane in the Security & Compliance Center now includes links to Microsoft 365 Defender. Click on the **Open Alert Page** link and Microsoft 365 Defender opens. You can access the **View alerts** page by clicking on any Office 365 alert in the Alerts queue.|
 |[Attack Simulation training](../office-365-security/attack-simulation-training-insights.md)|Use Attack Simulation training to run realistic attack scenarios in your organization. These simulated attacks can help train your workforce before a real attack impacts your organization. Attack simulation training includes, more options, enhanced reports, and improved training flows help make your attack simulation and training scenarios easier to deliver and manage.|
 
 No changes to these areas:
 
-- [Explorer](../office-365-security/threat-explorer.md)
+- [Explorer](../office-365-security/threat-explorer-about.md)
 - [Policies & Rules](../../compliance/alert-policies.md)
 - [Campaign](../office-365-security/campaigns.md)
-- [Submissions](../office-365-security/admin-submission.md)
+- [Submissions](../office-365-security/submissions-admin.md)
 - [Review](./m365d-action-center.md)
 - [Threat Tracker](../office-365-security/threat-trackers.md)
 
@@ -171,4 +169,4 @@ Also included is a link to the Security & Compliance Center for comparison. The 
 - [The Action center](./m365d-action-center.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
 - [Custom detection rules](/microsoft-365/security/defender-endpoint/custom-detection-rules)
-- [Create a phishing attack simulation](../office-365-security/attack-simulation-training.md) and [create a payload for training your people](../office-365-security/attack-simulation-training-payloads.md)
+- [Create a phishing attack simulation](../office-365-security/attack-simulation-training-simulations.md) and [create a payload for training your people](../office-365-security/attack-simulation-training-payloads.md)

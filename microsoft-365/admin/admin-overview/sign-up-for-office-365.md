@@ -5,12 +5,13 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: seemg, pablom
+ms.reviewer: zainzaigham, pablom
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier1 
 - scotvorg
 - highpri
 - M365-subscription-management 

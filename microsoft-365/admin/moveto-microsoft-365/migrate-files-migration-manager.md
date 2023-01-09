@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
 - scotvorg
 - highpri
 - M365-subscription-management 
@@ -44,6 +45,9 @@ When you move to Microsoft 365 for business from Google Workspace, you'll want t
 ## Before you start
 
 All the users should have signed in to Microsoft 365 for business and set up their OneDrive for Business. To do this, go to [office.com](https://office.com), sign in with your Microsoft 365 for business credentials, and then choose OneDrive.
+
+> [!NOTE]
+> Currently, Migration Manager isn't available for Google on any of the Government clouds.
 
 ## Install the Microsoft 365 Migration App
 

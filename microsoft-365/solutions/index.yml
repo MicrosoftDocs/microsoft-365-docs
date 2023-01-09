@@ -137,7 +137,7 @@ landingContent:
           - text: Evaluate Microsoft 365 Defender
             url: ../security/defender-endpoint/deployment-phases.md
           - text: Security recommendations for priority accounts
-            url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+            url: ../security/office-365-security/priority-accounts-security-recommendations.md
           - text: Evaluate Microsoft 365 Defender
             url: ../security/defender-endpoint/deployment-phases.md
       - linkListType: how-to-guide

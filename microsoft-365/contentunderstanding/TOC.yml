@@ -7,6 +7,8 @@
               href: syntex-overview.md 
             - name: Licensing for Syntex
               href: syntex-licensing.md
+            - name: Set up pay-as-you-go billing
+              href: syntex-azure-billing.md
             - name: Set up Syntex
               href: set-up-content-understanding.md
             - name: Create a content center 
@@ -122,9 +124,9 @@
         - name: Generate documents using Power Automate 
           href: automate-document-generation.md
      
-    - name: Metadata search
+    - name: Content query
       items: 
-        - name: Search for metadata in document libraries 
+        - name: Use metadata to find content in document libraries 
           href: metadata-search.md
      
     - name: Taxonomy
