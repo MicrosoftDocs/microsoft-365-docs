@@ -3,8 +3,8 @@ title: "Get started with the Microsoft Service Trust Portal"
 description: Learn how to access and use the Microsoft Service Trust Portal to help with security, privacy, and compliance practices.
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: overview
