@@ -95,7 +95,7 @@ To upgrade a single distribution list, use the following syntax:
 Upgrade-DistributionGroup -DLIdentities <EmailAddress>
 ```
 
-This example upgrade the distribution list marketing@contoso.com:
+This example upgrades the distribution list marketing@contoso.com:
 
 ```PowerShell
 Upgrade-DistributionGroup -DLIdentities marketing@contoso.com
