@@ -81,7 +81,7 @@ To complete the action, you have a few options:
 
 Add **Notes** to keep track of progress or anything else you want to comment on. If you add your own **tags** to the recommended action, you can filter by those tags.
 
-### Choose an recommended action status
+### Choose a recommended action status
 
 Choose any statuses and record notes specific to the recommended action.
 
