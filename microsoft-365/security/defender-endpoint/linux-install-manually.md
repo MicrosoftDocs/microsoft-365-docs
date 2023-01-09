@@ -425,8 +425,8 @@ The following external package dependencies exist for the mdatp package:
 
 The mde-netfilter package also has the following package dependencies:
 
- - For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0" <br />
- - for RPM  the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"<br />
+ - For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0" 
+ - for RPM  the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
 
 If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies.
 
