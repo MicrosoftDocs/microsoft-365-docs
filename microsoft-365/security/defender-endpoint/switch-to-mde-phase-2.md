@@ -131,7 +131,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
    |[Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) <br/> or <br/> [Group Policy Management Console](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. Go to **Computer configuration** \> **Administrative templates** \> **Windows components** \> **Microsoft Defender Antivirus**.<br/><br/>2. Look for a policy called **Turn off Microsoft Defender Antivirus**.<br/><br/>3. Choose **Edit policy setting**, and make sure that policy is disabled. This action enables Microsoft Defender Antivirus. (You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.)|
 
    > [!TIP]
-   > You can deploy the policies before your organization's devices are onboarded.
+   > If you have Defender for Endpoint Plan 1, your initial setup and configuration is done.
 
 5. 
 
