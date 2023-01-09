@@ -28,7 +28,7 @@ ms.date: 10/28/2022
 
 ## Integrate Shifts with UKG Dimensions
 
-The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection to UKG Dimensions through the connector.
+The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection and a connector instance to UKG Dimensions through the connector.
 
 > [!NOTE]
 > You can also use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md).
@@ -64,31 +64,38 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 ## Run the wizard
 
-### Get started
+### Create a connection
 
-1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then go to the **Apps and email** section.
-1. Select **Connect your workforce management system**. Here, you can learn more about Shifts connectors and the frontline worker and manager experience when you connect Shifts to your WFM system.
+1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
+1. Select **Connector Management Console**. Here, you can learn more about Shifts connectors and the frontline worker and manager experience when you connect Shifts to your WFM system.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Screenshot of the details page for the Shifts connector wizard in the Microsoft 365 admin center." lightbox="media/shifts-connector-wizard-get-started.png":::
-1. When you're ready, select **Get started**.
-1. On the Choose your connector page, choose **UKG Dimensions**, and then select **Next** to create a UKG Dimensions connection.
-
+1. When you're ready, select **Add connection**.
+1. In the Choose your connector pane, choose **UKG Dimensions**, and then select **Next** to create a UKG Dimensions connection.
 <a name="connection_details"> </a>
-### Enter connection details
-
-1. On the Connection details page, give your connection a unique name. It can't be longer than 128 characters or have any special characters.
+1. In the Connection settings pane, give your connection a unique name. It can't be longer than 30 characters or have any special characters.
     :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 1. Enter your UKG Dimensions service account name (which enables access to all instances created in UKG Dimensions) and password and service URLs.
-1. When you're done, select **Next** to test the connection with the settings you entered.
+1. When you're done, select **Create connection**.
+
+> [!NOTE]
+> If you need to create another connection, go to the Connector Management Console page, and then select **Add connection**.
+
+### Create a connector instance
+
+After you create a connection, you can set up one or more connector instances in that connection. 
+
+On the Connector Management Console page, under the connection that you created, select **Create instance**
 
 <a name="sync"> </a>
-### Choose sync settings
+#### Choose sync settings
 
 On the Sync settings page, you choose the information to sync from UKG Dimensions to Shifts, the sync frequency, and whether Shifts users can make changes to the data.
 
+1. Enter a name for your connector instance.
 1. Enter your Microsoft 365 system account.
     :::image type="content" source="media/shifts-connector-wizard-ukg-sync-settings.png" alt-text="Screenshot of the Sync settings page of the wizard, showing sync settings." lightbox="media/shifts-connector-wizard-ukg-sync-settings.png":::
 <a name="email"> </a>
-1. Under **Email notification recipients**, choose who receives email notifications about this connection. You can add individual users and groups. The email notifications contain information about connection setup status and any issues or errors that may occur after the connection is set up.
+1. Under **Email notification recipients**, choose who receives email notifications about this connector instance. You can add individual users and groups. The email notifications contain information about connection setup status and any issues or errors that may occur after the connector instance is set up.
 1. Choose your sync settings:
     1. Under **Schedule and shifts**, choose the UKG Dimensions data that Shifts users can see or change, and then set the sync frequency.
     1. Under **Time card**, choose what action Shifts users can do with time entries.
@@ -103,10 +110,10 @@ On the Sync settings page, you choose the information to sync from UKG Dimension
     >
     > After you run the wizard, make sure you follow the steps in the [Disable open shifts, open shifts requests, swap requests, and time off requests](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) section later in this article.
  
-1. When you're done choosing your settings, select **Create connection**.
+1. When you're done choosing your settings, select **Next**.
 
 <a name="instances"> </a>
-### Map UKG Dimensions instances to teams
+#### Map UKG Dimensions instances to teams
 
 Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each instance to a team in Teams. You can map up to 100 instances. There's two ways that you can do this:
 
@@ -114,7 +121,7 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 - [Prepare and upload a CSV file that defines your mappings](#use-a-csv-file-to-map-instances-to-teams)
 
 <a name="map_manual"> </a>
-#### Manually map instances to teams
+##### Manually map instances to teams
 
 Select the instances that you want to map.
 
@@ -126,7 +133,7 @@ Then, map each instance to a team in Teams. You can map an instance to an existi
 [!INCLUDE [shifts-connector-manually-map-instances](includes/shifts-connector-manually-map-instances.md)]
 
 <a name="map_csv"> </a>
-#### Use a CSV file to map instances to teams
+##### Use a CSV file to map instances to teams
 
 1. Select **switch to bulk mode**.
 1. Select **download a template file** to download a mapping template that you can use to define your mappings.
@@ -165,18 +172,18 @@ Review your settings. If you need to make changes to any team mappings, choose *
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-review.png" alt-text="Screenshot of the Review page of the wizard, showing mappings." lightbox="media/shifts-connector-wizard-ukg-review.png":::
 
-You’ll see a message to confirm that we received your request along with an operation ID. Make a note of the operation ID. You'll need it to check the setup status of your connection.
+You’ll see a message to confirm that we received your request along with an operation ID. Make a note of the operation ID. You'll need it to check setup status.
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-operation-id.png" alt-text="Screenshot of the wizard page, showing confirmation message and operation ID." lightbox="media/shifts-connector-wizard-ukg-operation-id.png":::
 
-The wizard starts the process to set up the connection and map the instances to the teams you selected. This process may take some time to complete. The recipients you chose will receive email notifications about setup status.
+The wizard starts the process to set up the connector instance and map the WFM instances to the teams you selected. This process may take some time to complete. The recipients you chose will receive email notifications about setup status.
 
 Select **Done** to exit the wizard.
 
 You’re on your way but you’re not done yet! Be sure to check your email. You'll receive a confirmation that we received your request along with a [link](shifts-connector-ukg-powershell-manage.md#check-connection-setup-status) to how you can check setup status.
 
 > [!NOTE]
-> If an issue or error occurs in a connection after it's set up, you'll get notified in email. Follow the instructions in the email to troubleshoot the issue.
+> If an issue or error occurs in a connection or connector instance after it's set up, you'll get notified in email. Follow the instructions in the email to troubleshoot the issue.
 
 ## Disable open shifts, open shifts requests, swap requests, and time off requests
 
@@ -204,7 +211,7 @@ After a connection is set up, you can manage and make changes to it in the Micro
 
 ### Use the Microsoft 365 admin center
 
-The Connector Management page lists each connection that you've set up, along with information such as health status and sync interval details. You can also access the wizard to make changes to any of your connections. For example, you can update sync settings and team mappings.
+The Connector Management Console page lists each connection and connector instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create new connections and connector instances and make changes to any of your existing ones. For example, you can update sync settings and team mappings.
 
 To learn more, see [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-admin-center-manage.md).
 
