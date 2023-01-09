@@ -50,7 +50,7 @@ The steps in this article set up an archiving and retention policy for a fictiti
     
     - Automatically move items that are 3 years old to the user's archive mailbox. Moving items to the archive mailbox frees up space in a user's primary mailbox.
     
-    - Automatically delete items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. User's will have the opportunity to recover these items if necessary. For more information, see the final bullet in the [More information](#more-information) section. 
+    - Automatically delete items that are 5 years old from the Deleted Items folder. This also frees up space in the user's primary mailbox. Users will have the opportunity to recover these items if necessary. For more information, see the final bullet in the [More information](#more-information) section. 
 
 - [Step 3](#step-3-create-a-new-retention-policy): Create a new retention policy and add the new custom retention tags to it. Additionally, you'll add a built-in retention tag that can't be achieved with a recommended Microsoft 365 retention label because it also moves items to the archive mailbox. It's a personal tag for archiving after 1 year that users can assign to items in their mailbox when they want a shorter archive period than their default of 3 years.
 

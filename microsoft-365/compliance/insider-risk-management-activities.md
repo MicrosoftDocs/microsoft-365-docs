@@ -43,7 +43,10 @@ To view activities for a user, first select **Create user activity report** and 
 - **User**: Search for a user by name or email address.
 - **Start date**: Use the calendar control to select the start date for user activities.
 - **End date**: Use the calendar control to select the end date for user activities. The end date selected must be greater than two days after the selected start date and no greater than 90 days from the selected start date.
- 
+
+>[!NOTE]
+>User activity data is available for reporting approximately 48 hours after the activity occurred. For example, to review user activity data for December 1st, you'll need to make sure at least 48 hours have elapsed before creating the report (you'd create a report on December 3rd at the earliest).
+
 New reports typically take up to 10 hours before they're ready for review. When the report is ready, you'll see *Report ready* in the **Status** column on the User activity report page. Select the user to view the detailed report:
 
 ![Insider risk management user activity report](../media/insider-risk-user-activity-report.png)
