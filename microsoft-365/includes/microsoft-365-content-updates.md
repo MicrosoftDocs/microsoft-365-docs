@@ -2,6 +2,45 @@
 
 
 
+## Week of January 02, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 1/2/2023 | [Get scan history by definition](/microsoft-365/security/defender-endpoint/get-scan-history-by-definition?view=o365-worldwide) | added |
+| 1/2/2023 | [Get scan history by session](/microsoft-365/security/defender-endpoint/get-scan-history-by-session?view=o365-worldwide) | added |
+| 1/2/2023 | [Add, update or delete a scan definition](/microsoft-365/security/defender-endpoint/add-a-new-scan-definition?view=o365-worldwide) | added |
+| 1/2/2023 | [Get all scan agents](/microsoft-365/security/defender-endpoint/get-all-scan-agents?view=o365-worldwide) | added |
+| 1/2/2023 | [Get scan definitions](/microsoft-365/security/defender-endpoint/get-all-scan-definitions?view=o365-worldwide) | added |
+| 1/2/2023 | [Authenticated scan methods and properties](/microsoft-365/security/defender-endpoint/get-authenticated-scan-properties?view=o365-worldwide) | added |
+| 1/2/2023 | [Windows authenticated scan in Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/windows-authenticated-scan?view=o365-worldwide) | added |
+| 1/2/2023 | [Network device discovery and vulnerability management](/microsoft-365/security/defender-endpoint/network-devices?view=o365-worldwide) | modified |
+| 1/3/2023 | [Decryption in Microsoft Purview eDiscovery tools](/microsoft-365/compliance/ediscovery-decryption?view=o365-worldwide) | modified |
+| 1/3/2023 | [Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)](/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps?view=o365-worldwide) | modified |
+| 1/3/2023 | [Use the eDiscovery Export Tool in Microsoft Edge](/microsoft-365/compliance/ediscovery-configure-edge-to-export-search-results?view=o365-worldwide) | modified |
+| 1/3/2023 | [Locations of Microsoft Online Services Personnel with Remote Access to Data](/microsoft-365/enterprise/personnel-loc/m365-personnel-location?view=o365-worldwide) | added |
+| 1/3/2023 | [Top 10 ways to secure your business data](/microsoft-365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide) | modified |
+| 1/3/2023 | [Learn about communication compliance](/microsoft-365/compliance/communication-compliance?view=o365-worldwide) | modified |
+| 1/3/2023 | [Offboard a device from Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-offboard-devices?view=o365-worldwide) | modified |
+| 1/3/2023 | [Onboard devices to Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-onboard-devices?view=o365-worldwide) | modified |
+| 1/4/2023 | [Create indicators](/microsoft-365/security/defender-endpoint/manage-indicators?view=o365-worldwide) | modified |
+| 1/4/2023 | [What's new in Microsoft Purview risk and compliance solutions](/microsoft-365/compliance/whats-new?view=o365-worldwide) | modified |
+| 1/4/2023 | [Service advisories for auto-expanding archive utilization in Exchange Online monitoring](/microsoft-365/enterprise/microsoft-365-exo-archive-advisory?view=o365-worldwide) | added |
+| 1/4/2023 | [Find Microsoft 365 for business support phone numbers by country or region](/microsoft-365/admin/support-contact-info?view=o365-worldwide) | modified |
+| 1/4/2023 | [Learn about auto-expanding archiving](/microsoft-365/compliance/autoexpanding-archiving?view=o365-worldwide) | modified |
+| 1/4/2023 | [Microsoft 365 Multi-Tenant Organization People Search](/microsoft-365/enterprise/multi-tenant-people-search?view=o365-worldwide) | modified |
+| 1/5/2023 | [Performance analyzer for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/tune-performance-defender-antivirus?view=o365-worldwide) | modified |
+| 1/5/2023 | [Overview of Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview?view=o365-worldwide) | modified |
+| 1/5/2023 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-worldwide) | modified |
+| 1/6/2023 | [Understand next-generation protection configuration settings in Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-next-gen-configuration-settings?view=o365-worldwide) | modified |
+| 1/6/2023 | [Get scan history by definition](/microsoft-365/security/defender-endpoint/get-scan-history-by-definition?view=o365-worldwide) | modified |
+| 1/6/2023 | [Get scan history by session](/microsoft-365/security/defender-endpoint/get-scan-history-by-session?view=o365-worldwide) | modified |
+| 1/6/2023 | [Migrate to Microsoft Defender for Endpoint from non-Microsoft endpoint protection](/microsoft-365/security/defender-endpoint/switch-to-mde-overview?view=o365-worldwide) | modified |
+| 1/6/2023 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-1?view=o365-worldwide) | modified |
+| 1/6/2023 | [Common Zero Trust identity and device access policies - Microsoft 365 for enterprise](/microsoft-365/security/office-365-security/identity-access-policies?view=o365-worldwide) | modified |
+| 1/6/2023 | [Top 12 tasks for security teams to support working from home](/microsoft-365/security/top-security-tasks-for-remote-work?view=o365-worldwide) | modified |
+
+
 ## Week of December 26, 2022
 
 
