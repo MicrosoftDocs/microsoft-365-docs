@@ -246,17 +246,23 @@
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
-#### [Microsoft Defender for IoT integration](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint/)
-#### [Enable Corelight data integration](corelight-integration.md)
+#### [Enable Corelight as a data source](corelight-integration.md)
+#### [Enterprise IoT security]()
+##### [Securing IoT devices in the enterprise](/azure/defender-for-iot/organizations/concept-enterprise/)
+##### [Enable Enterprise IoT security with Defender for Endpoint](/azure/defender-for-iot/organizations/eiot-defender-for-endpoint/)
+##### [Manage Defender for IoT plans](/azure/defender-for-iot/organizations/manage-subscriptions-enterprise/)
+##### [Enhance Enterprise IoT discovery](/azure/defender-for-iot/organizations/eiot-sensor/)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
-### [Device inventory]()
+### [Authenticated scans]()
+#### [Network devices](network-devices.md)
+#### [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md)
+
+### [Devices]()
 #### [Device inventory](machines-view-overview.md)
 #### [Exclude devices](exclude-devices.md)
 #### [Device timeline](device-timeline-event-flag.md)
 #### [Manage device group and tags](machine-tags.md)
-
-### [Network devices](network-devices.md)
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
@@ -540,6 +546,14 @@
 ####### [Export software inventory assessment](get-assessment-software-inventory.md)
 ####### [Export non product code software inventory assessment](get-assessment-non-cpe-software-inventory.md)
 ####### [Export software vulnerabilities assessment](get-assessment-software-vulnerabilities.md)
+
+###### [Authenticated scan]()
+####### [Authenticated scan methods and properties](get-authenticated-scan-properties.md)
+####### [Get all scan definitions](get-all-scan-definitions.md)
+####### [Add, delete or update a scan definition](add-a-new-scan-definition.md)
+####### [Get all scan agents](get-all-scan-agents.md)
+####### [Get scan history by definition](get-scan-history-by-definition.md)
+####### [Get scan history by session](get-scan-history-by-session.md)
 
 ###### [Browser extensions]()
 ####### [Export browser extensions assessment](get-assessment-browser-extensions.md)
