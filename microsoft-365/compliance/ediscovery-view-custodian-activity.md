@@ -30,10 +30,10 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 ## Get permissions
 
-You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the Permissions page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. To give a user the ability to search the eDiscovery (Premium) audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see Manage role groups in Exchange Online.
+You have to be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online to search or export the audit log. By default, these roles are assigned to the *Compliance Management* and *Organization Management* role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. To give a user the ability to search the eDiscovery (Premium) audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the *View-Only Audit Logs* or *Audit Logs* role, and then add the user as a member of the new role group. For more information, see Manage role groups in Exchange Online.
 
 > [!IMPORTANT]
-> If you assign a user the View-Only Audit Logs or Audit Logs role on the Permissions page in the compliance portal, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
+> If you assign a user the *View-Only Audit Logs* or *Audit Logs* role on the Permissions page in the compliance portal, they won't be able to search or export the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
 
 ## Step 1: Search the audit log for activities performed by a custodian
 
@@ -61,7 +61,7 @@ You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange 
 
 ## Step 2: View the audit log search results
 
-The results of an audit log search are displayed under Results on the Custodian Audit log page. A maximum of 5,000 (newest) events are displayed in increments of 150 events. To display more events you can use the scroll bar in the Results pane or you can press Shift + End to display the next 150 events.
+The results of an audit log search are displayed under Results on the Custodian Audit log page. A maximum of 5,000 (newest) events are displayed in increments of 150 events. To display more events you can use the scroll bar in the Results pane, or you can press Shift + End to display the next 150 events.
 
 The results contain the following information about each event returned by the search.
 
@@ -81,7 +81,6 @@ To filter the results:
 1. Create and run an audit log search.
   
 2. When the results are displayed, select **Filter results**.
-
 3. Keyword boxes are displayed under each column header.
   
 4. Select one of the boxes under a column header and type a word or phrase, depending on the column you're filtering on. The results will dynamically readjust to display the events that match your filter.

@@ -1364,58 +1364,58 @@
         - name: Overview of Content search
           href: search-for-content.md
         - name: Search for content
-          href: content-search.md
+          href: ediscovery-content-search.md
           items: 
           - name: Keyword queries and search conditions
-            href: keyword-queries-and-search-conditions.md
+            href: ediscovery-keyword-queries-and-search-conditions.md
           - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
           - name: Search for Teams chat data for on-premises users
-            href: search-cloud-based-mailboxes-for-on-premises-users.md
+            href: ediscovery-search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Configure search permissions filtering
-            href: permissions-filtering-for-content-search.md
+            href: ediscovery-permissions-filtering-for-content-search.md
           - name: Preview eDiscovery search results
-            href: preview-ediscovery-search-results.md
+            href: ediscovery-preview-search-results.md
           - name: View statistics for search results
-            href: view-keyword-statistics-for-content-search.md
+            href: ediscovery-view-keyword-statistics-for-content-search.md
           - name: Export search results
             href: export-search-results.md
           - name: Export a search report
-            href: export-a-content-search-report.md
+            href: ediscovery-export-a-content-search-report.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
           - name: Preserve Bcc recipients for search
-            href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            href: ediscovery-preserve-bcc-and-expanded-distribution-group-recipients.md
         - name: Content search reference
           items: 
           - name: Feature reference for Content search
-            href: content-search-reference.md
+            href: ediscovery-content-search-reference.md
           - name: eDiscovery search limits
-            href: limits-for-content-search.md
+            href: ediscovery-limits-for-content-search.md
           - name: Content stored in mailboxes for eDiscovery
-            href: what-is-stored-in-exo-mailbox.md
+            href: ediscovery-what-is-stored-in-a-mailbox.md
           - name: Differences between estimated and actual search results
-            href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            href: ediscovery-differences-between-estimated-and-actual-search-results.md
           - name: Partially indexed items
-            href: partially-indexed-items-in-content-search.md
+            href: ediscovery-partially-indexed-items-in-content-search.md
           - name: Investigating partially indexed items
-            href: investigating-partially-indexed-items-in-ediscovery.md
+            href: ediscovery-investigating-partially-indexed-items.md
           - name: De-duplication in search results
-            href: de-duplication-in-ediscovery-search-results.md
+            href: ediscovery-de-duplication-in-search-results.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
           - name: Change the size of PST files when exporting search results
-            href: change-the-size-of-pst-files-when-exporting-results.md
+            href: ediscovery-change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
             href: disable-reports-when-you-export-content-search-results.md
           - name: Check your search query for errors
-            href: check-your-content-search-query-for-errors.md
+            href: ediscovery-check-your-content-search-query-for-errors.md
           - name: Use Microsoft Edge to download search results
-            href: configure-edge-to-export-search-results.md
+            href: ediscovery-configure-edge-to-export-search-results.md
           - name: Search for eDiscovery activities in the audit log
-            href: search-for-ediscovery-activities-in-the-audit-log.md
+            href: ediscovery-search-for-activities-in-the-audit-log.md
         - name: Content search PowerShell scripts
           items: 
           - name: Use content search for targeted collections
@@ -1423,57 +1423,57 @@
           - name: Search the mailbox and OneDrive account for a list of users
             href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
           - name: Create, report on, and delete multiple searches
-            href: create-report-on-and-delete-multiple-content-searches.md
+            href: ediscovery-create-reports-and-delete-multiple-content-searches.md
           - name: Clone a search
             href: clone-a-content-search.md
     - name: eDiscovery (Standard)
       items:
         - name: Get started with eDiscovery (Standard)
-          href: get-started-core-ediscovery.md
+          href: ediscovery-standard-get-started.md
         - name: Create eDiscovery holds
-          href: create-ediscovery-holds.md
+          href: ediscovery-create-holds.md
         - name: Search for content in a case
-          href: search-for-content-in-core-ediscovery.md
+          href: ediscovery-search-for-content.md
         - name: Export content from a case
-          href: export-content-in-core-ediscovery.md
+          href: ediscovery-export-content.md
         - name: Close, reopen, and delete a case
-          href: close-reopen-delete-core-ediscovery-cases.md
+          href: ediscovery-close-reopen-delete-cases.md
         - name: eDiscovery (Standard) reference
           items:
           - name: eDiscovery search limits
-            href: limits-for-content-search.md
+            href: ediscovery-limits-for-content-search.md
           - name: Assign eDiscovery permissions
-            href: assign-ediscovery-permissions.md
+            href: ediscovery-assign-permissions.md
           - name: Keyword queries and search conditions
-            href: keyword-queries-and-search-conditions.md
+            href: ediscovery-keyword-queries-and-search-conditions.md
           - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
           - name: Set up compliance boundaries
-            href: set-up-compliance-boundaries.md
+            href: ediscovery-set-up-compliance-boundaries.md
           - name: Configure search permissions filtering
-            href: permissions-filtering-for-content-search.md
+            href: ediscovery-permissions-filtering-for-content-search.md
           - name: Content stored in mailboxes for eDiscovery
-            href: what-is-stored-in-exo-mailbox.md
+            href: ediscovery-what-is-stored-in-a-mailbox.md
           - name: Differences between estimated and actual search results
-            href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            href: ediscovery-differences-between-estimated-and-actual-search-results.md
           - name: Partially indexed items
-            href: partially-indexed-items-in-content-search.md
+            href: ediscovery-partially-indexed-items-in-content-search.md
           - name: Investigating partially indexed items
-            href: investigating-partially-indexed-items-in-ediscovery.md
+            href: ediscovery-investigating-partially-indexed-items.md
           - name: Preview eDiscovery search results
-            href: preview-ediscovery-search-results.md
+            href: ediscovery-preview-search-results.md
           - name: Export a search report
-            href: export-a-content-search-report.md
+            href: ediscovery-export-a-content-search-report.md
           - name: Use a script to add users to an eDiscovery hold
-            href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
+            href: ediscovery-use-a-script-to-add-users-to-a-hold.md
           - name: Use a script to create a holds report
-            href: create-a-report-on-holds-in-ediscovery-cases.md
+            href: ediscovery-create-a-report-on-holds-in-cases.md
           - name: View statistics for search results
-            href: view-keyword-statistics-for-content-search.md
+            href: ediscovery-view-keyword-statistics-for-content-search.md
           - name: Search and purge spilled data
-            href: data-spillage-scenariosearch-and-purge.md
+            href: ediscovery-data-spillage-search-and-purge.md
           - name: Preserve Bcc recipients for search
-            href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            href: ediscovery-preserve-bcc-and-expanded-distribution-group-recipients.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
           - name: Collect eDiscovery diagnostic information
@@ -1481,182 +1481,182 @@
           - name: Retry a failed search
             href: retry-failed-content-search.md
           - name: Use Microsoft Edge to download search results
-            href: configure-edge-to-export-search-results.md
+            href: ediscovery-configure-edge-to-export-search-results.md
           - name: Search for eDiscovery activities in the audit log
-            href: search-for-ediscovery-activities-in-the-audit-log.md
+            href: ediscovery-search-for-activities-in-the-audit-log.md
     - name: eDiscovery (Premium)
       items:
         - name: Overview
-          href: overview-ediscovery-20.md
+          href: ediscovery-overview.md
         - name: Set up eDiscovery (Premium)
-          href: get-started-with-advanced-ediscovery.md
+          href: ediscovery-premium-get-started.md
         - name: Create eDiscovery (Premium) cases
           items:
             - name: Create and manage a case
-              href: create-and-manage-advanced-ediscoveryv2-case.md
+              href: ediscovery-create-and-manage-cases.md
             - name: Use the new case format
-              href: advanced-ediscovery-new-case-format.md
+              href: ediscovery-new-case-format.md
         - name: eDiscovery (Premium) workflow for Teams content
-          href: teams-workflow-in-advanced-ediscovery.md
+          href: ediscovery-teams-workflow.md
         - name: Manage custodians and non-custodial data sources
-          href: managing-custodians.md
+          href: ediscovery-managing-custodians.md
           items: 
             - name: Add custodians to a case
-              href: add-custodians-to-case.md
+              href: ediscovery-add-custodians-to-case.md
             - name: Import multiple custodians to a case
-              href: bulk-add-custodians.md
+              href: ediscovery-bulk-add-custodians.md
             - name: Manage custodians
-              href: manage-new-custodians.md
+              href: ediscovery-manage-new-custodians.md
             - name: View custodian activity
-              href: view-custodian-activity.md
+              href: ediscovery-view-custodian-activity.md
             - name: Add non-custodial data sources to a case
-              href: non-custodial-data-sources.md
+              href: ediscovery-non-custodial-data-sources.md
         - name: Manage custodian communications
-          href: managing-custodian-communications.md
+          href: ediscovery-managing-custodian-communications.md
           items: 
             - name: Create a hold notification
-              href: create-hold-notification.md
+              href: ediscovery-create-hold-notification.md
             - name: Use the communications editor
-              href: using-communications-editor.md
+              href: ediscovery-using-communications-editor.md
             - name: Manage hold notifications
-              href: manage-hold-notification.md
+              href: ediscovery-manage-hold-notifications.md
             - name: Acknowledge a hold notification
-              href: acknowledge-hold-notification.md
+              href: ediscovery-acknowledge-hold-notification.md
             - name: Manage issuing officers
-              href: advanced-ediscovery-issuing-officers.md
+              href: ediscovery-issuing-officers.md
             - name: Manage custodian communications templates
-              href: advanced-ediscovery-communications-library.md
+              href: ediscovery-communications-library.md
         - name: Manage holds
-          href: managing-holds.md
+          href: ediscovery-managing-holds.md
           items:
             - name: Use a script to create a holds report
-              href: create-a-report-on-holds-in-ediscovery-cases.md
+              href: ediscovery-create-a-report-on-holds-in-cases.md
         - name: Manage processing errors
-          href: processing-data-for-case.md
+          href: ediscovery-processing-data-for-case.md
           items:
             - name: Advanced indexing of custodian content
-              href: indexing-custodian-data.md
+              href: ediscovery-indexing-custodian-data.md
             - name: Error remediation when processing content
-              href: error-remediation-when-processing-data-in-advanced-ediscovery.md
+              href: ediscovery-error-remediation-when-processing-data.md
             - name: Single item error remediation
-              href: single-item-error-remediation.md        
+              href: ediscovery-single-item-error-remediation.md        
         - name: Collect content for a case
           items: 
             - name: Learn about collections
-              href: collections-overview.md
+              href: ediscovery-collections.md
             - name: Create a collection estimate
-              href: create-draft-collection.md
+              href: ediscovery-create-draft-collection.md
             - name: Commit a collection estimate to a review set
-              href: commit-draft-collection.md
+              href: ediscovery-commit-draft-collection.md
             - name: Collection statistics and reports
-              href: collection-statistics-reports.md        
+              href: ediscovery-collection-statistics-reports.md        
             - name: Build search queries for collections
-              href: building-search-queries.md
+              href: ediscovery-building-search-queries.md
             - name: Use the KQL editor to build search queries
               href: ediscovery-kql-editor.md
             - name: Keyword queries and search conditions
-              href: keyword-queries-and-search-conditions.md 
+              href: ediscovery-keyword-queries-and-search-conditions.md 
             - name: Collect cloud attachments
-              href: advanced-ediscovery-cloud-attachments.md
+              href: ediscovery-cloud-attachments.md
         - name: Manage review sets
-          href: managing-review-sets.md
+          href: ediscovery-managing-review-sets.md
           items: 
             - name: Load non-Office 365 data into a review set
-              href: load-non-Office-365-data-into-a-review-set.md
+              href: ediscovery-load-non-office-365-data-into-a-review-set.md
             - name: Add data to another review set
-              href: add-data-to-review-set-from-another-review-set.md
+              href: ediscovery-add-data-to-review-set-from-another-review-set.md
         - name: Review case content
           items: 
             - name: Query and filter content in a review set
-              href: review-set-search.md
+              href: ediscovery-review-set-search.md
             - name: Tag documents in a review set
-              href: tagging-documents.md
+              href: ediscovery-tagging-documents.md
             - name: View documents in a review set
-              href: view-documents-in-review-set.md
+              href: ediscovery-view-documents-in-review-set.md
             - name: Use the review set dashboard
-              href: advanced-ediscovery-dashboard.md
+              href: ediscovery-dashboard.md
         - name: Analyze case content
-          href: analyzing-data-in-review-set.md
+          href: ediscovery-analyzing-data-in-review-set.md
           items: 
             - name: Near duplicate detection
-              href: near-duplicate-detection-in-advanced-ediscovery.md
+              href: ediscovery-near-duplicate-detection.md
             - name: Email threading
-              href: email-threading-in-advanced-ediscovery.md
+              href: ediscovery-email-threading.md
             - name: Themes
-              href: themes-in-advanced-ediscovery.md
+              href: ediscovery-themes.md
         - name: Use predictive coding (preview)
           items: 
             - name: Quick start - Predictive coding
-              href: predictive-coding-quick-start.md
+              href: ediscovery-predictive-coding-quick-start.md
             - name: Learn about predictive coding
-              href: predictive-coding-overview.md
+              href: ediscovery-predictive-coding-overview.md
             - name: Create a predictive coding model
-              href: predictive-coding-create-model.md
+              href: ediscovery-predictive-coding-create-model.md
             - name: Train a predictive coding model
-              href: predictive-coding-train-model.md
+              href: ediscovery-predictive-coding-train-model.md
             - name: Apply prediction score filter
-              href: predictive-coding-apply-prediction-filter.md
+              href: ediscovery-predictive-coding-apply-prediction-filter.md
             - name: Predictive coding reference
-              href: predictive-coding-reference.md
+              href: ediscovery-predictive-coding-reference.md
         - name: Export case content
-          href: exporting-data-ediscover20.md
+          href: ediscovery-exporting-data.md
           items: 
             - name: Download documents from a review set
-              href: download-documents-from-review-set.md
+              href: ediscovery-download-documents-from-review-set.md
             - name: Export documents from a review set
-              href: export-documents-from-review-set.md
+              href: ediscovery-export-documents-from-review-set.md
             - name: Export documents to an Azure Storage account
               href: download-export-jobs.md
         - name: Manage jobs
-          href: managing-jobs-ediscovery20.md
+          href: ediscovery-managing-jobs.md
         - name: Configure case settings
           items: 
             - name: Close or delete a case
-              href: close-or-delete-case.md
+              href: ediscovery-close-or-delete-case.md
             - name: Add or remove members from a case
-              href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
+              href: ediscovery-add-or-remove-members-from-a-case.md
             - name: Configure search and analytics settings
-              href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
+              href: ediscovery-configure-search-and-analytics-settings.md
         - name: eDiscovery (Premium) reference
           items:
             - name: eDiscovery (Premium) limits
-              href: limits-ediscovery20.md
+              href: ediscovery-premium-limits.md
             - name: Supported file types
-              href: supported-filetypes-ediscovery20.md
+              href: ediscovery-supported-file-types.md
             - name: Document metadata fields
-              href: document-metadata-fields-in-advanced-ediscovery.md
+              href: ediscovery-document-metadata-fields.md
             - name: Search and purge Teams chat messages
-              href: search-and-delete-Teams-chat-messages.md
+              href: ediscovery-search-and-delete-Teams-chat-messages.md
             - name: Set up historical versions
-              href: advanced-ediscovery-historical-versions.md
+              href: ediscovery-historical-versions.md
             - name: Set up attorney-client privilege detection
-              href: attorney-privilege-detection.md
+              href: ediscovery-attorney-privilege-detection.md
             - name: Assign eDiscovery permissions
-              href: assign-ediscovery-permissions.md
+              href: ediscovery-assign-permissions.md
             - name: Keyword queries and search conditions
-              href: keyword-queries-and-search-conditions.md
+              href: ediscovery-keyword-queries-and-search-conditions.md
             - name: Set up compliance boundaries
-              href: set-up-compliance-boundaries.md
+              href: ediscovery-set-up-compliance-boundaries.md
             - name: Configure search permissions filtering
-              href: permissions-filtering-for-content-search.md
+              href: ediscovery-permissions-filtering-for-content-search.md
             - name: Content stored in mailboxes for eDiscovery
-              href: what-is-stored-in-exo-mailbox.md
+              href: ediscovery-what-is-stored-in-a-mailbox.md
             - name: eDiscovery for Graph connectors
               href: ediscovery-graph-connector.md  
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
             - name: Conversation review sets
-              href: conversation-review-sets.md
+              href: ediscovery-conversation-review-sets.md
             - name: CJK language support
               href: ediscovery-cjk-support.md
             - name: Collect eDiscovery diagnostic information
               href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
-              href: search-for-ediscovery-activities-in-the-audit-log.md
+              href: ediscovery-search-for-activities-in-the-audit-log.md
             - name: Troubleshoot AzCopy
-              href: troubleshooting-azcopy.md
+              href: ediscovery-troubleshooting-azcopy.md
     - name: Retirement of legacy eDiscovery tools
-      href: legacy-ediscovery-retirement.md
+      href: ediscovery-legacy-retirement.md
 - name: Manage holds
   items: 
     - name: How to identify the type of hold placed on a mailbox
