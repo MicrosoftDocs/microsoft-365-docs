@@ -49,7 +49,9 @@ The following table lists the specific store app types and how you can add them 
 | Microsoft Edge, version 77 and later for macOS | Store app | Windows | Select **macOS** under **Microsoft Edge, version 77 and later** as the **app type**. |
 | Microsoft Defender for Endpoint (macOS) | Store app (Microsoft Defender ATP) | macOS | Select **macOS** under **Microsoft Defender for Endpoint** as the app type and then continue by setting up the app in Intune.  |
 
-You can add an app in from [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Apps** > **All apps** > **Add**. The **Select app type** pane is displayed and allows you to select one of the above app types.
+You can add an app in from [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) in the **Apps** workload. You can find free apps in the apps store by selecting **Search the App Store**.
+
+:::image type="content" border="true" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-01.png" alt-text="Add apps to Intune from the console.":::
 
 > [!NOTE]
 > The Managed Google Play store only supports free apps. Standard Google apps are added to Intune as a **Android store app**. To add a **Managed Google Play app**, you must find and approve the app from the Managed Google Play store, then sync the app with Intune. For more information, see [Managed Google Play](apps-purchase-volume.md#managed-google-play).
