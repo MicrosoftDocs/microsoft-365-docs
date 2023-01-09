@@ -124,7 +124,7 @@ To specify individual OneDrive accounts, see [Get a list of all user OneDrive UR
 >
 > Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage, or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify for retention settings.
 >
-> Because of the challenges of reliably specifying URLs for individual users to include or exclude for static scopes, [adaptive scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes) with the **User** scope type are better suited for this purpose.
+> Because of the challenges of reliably specifying URLs for individual users to include or exclude for static scopes, [adaptive scopes](purview-adaptive-scopes.md) with the **User** scope type are better suited for this purpose.
 
 #### Exceptions for adaptive policy scopes
 
