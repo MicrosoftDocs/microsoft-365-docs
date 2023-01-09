@@ -65,7 +65,7 @@ Make sure you have [created the retention labels](file-plan-manager.md#create-re
 
 ## How to create an auto-apply retention label policy
 
-Decide before you create your retention label policy whether it will be **adaptive** or **static**. For more information, see [Adaptive policy scopes for compliance solutions](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention label policy, and then select them during the create retention label policy process. For instructions, see [Configuration information for adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
+Decide before you create your retention label policy whether it will be **adaptive** or **static**. For more information, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention label policy, and then select them during the create retention label policy process. For instructions, see [Configuration information for adaptive scopes](purview-adaptive-scopes.md#configure-adaptive-scopes).
 
 When you create an auto-apply policy, you select a retention label to automatically apply to content, based on the conditions that you specify.
 
