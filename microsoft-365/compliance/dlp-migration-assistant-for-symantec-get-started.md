@@ -33,7 +33,7 @@ If you're using the Microsoft Purview Data Loss Prevention migration assistant f
 
 ### 1. Have appropriate Microsoft 365 subscription
 
-You'll need the appropriate DLP licensing for the locations that the migrated polices are scoped to. Check [here](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-loss-prevention-endpoint-data-loss-protection-dlp).
+You'll need the appropriate DLP licensing for the locations that the migrated policies are scoped to. Check [here](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-loss-prevention-endpoint-data-loss-protection-dlp).
 
 ### 2. Have appropriate user role and privileges
 
@@ -67,14 +67,13 @@ You need to export these policies as XML files from Symantec DLP. Export the pol
 Follow these steps to install the Microsoft Purview Data Loss Prevention migration assistant for Symantec:
 
 1. Download and launch **[MigrationAssistantforMicrosoftPurviewDLP.msi]( https://aka.ms/DLPMigrationAssistant)** file.
-2. The following dialog box will open. Click **Next**.
+2. The following dialog box will open. Select **Next**.
 3. Review the End-User License Agreement.
-4. After reviewing, accept the License Agreement and click **Next**.
-5. Select the location where you want to install the migration assistant and click **Next**.
-6. Once installer is ready, click **Install** to begin installation.
+4. After reviewing, accept the License Agreement and select **Next**.
+5. Select the location where you want to install the migration assistant and select **Next**.
+6. Once installer is ready, select **Install** to begin installation.
 7. Wait while the migration assistant is being installed.
-8. Once migration assistant is installed, click on **Finish** and close the dialog box.
-
+8. Once migration assistant is installed, select **Finish** and close the dialog box.
 
 ## Next steps
 

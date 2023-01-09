@@ -121,7 +121,7 @@ When you upload your rule package XML file, the system validates the XML and che
 
 ### Condition and Exception Mapping
 
-Here's how the migration assistant maps Symantec condition and exception elements for various workloads to PUrview DLP conditions.
+Here's how the migration assistant maps Symantec condition and exception elements for various workloads to Purview DLP conditions.
 
 #### Exchange Workload
 
@@ -158,7 +158,7 @@ Here's how the migration assistant maps Symantec condition and exception element
 
 ### Response Rules
 
-Here's how the migration assitant maps Symantec response rules to Microsoft Purview DLP actions.
+Here's how the migration assistant maps Symantec response rules to Microsoft Purview DLP actions.
 
 | **Symantec Response Rule** | **Microsoft Purview DLP Action**|
 | ----------------- | ----------------- |

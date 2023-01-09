@@ -42,7 +42,7 @@ Use these steps to perform a DLP policy migration:
 - [Step 4: Review pre-migration feasibility report](#step-4-review-pre-migration-feasibility-report)
 - [Step 5: Test or turn on your policies](#step-5-test-or-turn-on-your-policies)
 - [Step 6: Migration in progress](#step-6-migration-in-progress)
-- [Step 7: View your migration report](#step-7-view-your-migration-report)
+- [Step 7: View the migration report](#step-7-view-the-migration-report)
 - [Next Steps: After policy import](#next-steps-after-policy-import)
 
 ### Step 1: Log in to your account
@@ -50,21 +50,20 @@ Use these steps to perform a DLP policy migration:
 After you've installed and launched the migration assistant, you need to log in.
 
 > [!IMPORTANT]
-> The first time you launch the migration assistant, please choose **Run as administrator** option. This is required as the migration assistant may need to install additional components if they are not already available on your machine.
+> The first time you launch the migration assistant, please choose **Run as administrator** option. This is required as the migration assistant may need to install additional components if they're not already available on your machine.
 >
 > For all subsequent launches, you may launch the migration assistant normally and don't need to run as administrator.
 
 :::image type="content" source="../media/migration-assistant-run-as-admin.png" alt-text="Screenshot of the migration assistant run as administrator dialog box.":::
 
 1. You'll be greeted with a welcome screen.
-    1. Select **Get Started** and the migration assistant will check if your environment is set up correctly.
-     2. Select **Next**.
+      1. Select **Get Started** and the migration assistant will check if your environment is set up correctly.
+      2. Select **Next**.
 2. Enter your username and select **Login**.
-     2. Enter your password in the browser window that opens and select **Sign in**.
+      1. Enter your password in the browser window that opens and select **Sign in**.
 3. You need to wait until your login is validated. Simultaneously, the migration assistant fetches information that will be required in later stages of the migration process.
    :::image type="content" source="../media/login-fetching-details.png" alt-text="Screenshot of the screen fetching details.":::
-4. Once you're logged in choose **Next**.
-   
+4. Once you're logged in, choose **Next**.
 
 ### Step 2: Upload your Symantec policy
 
@@ -129,17 +128,17 @@ You'll be able to see a list of all your policies and rules within them along wi
 
 Policy Name - You can edit the name of the policy before migration.
 
-Each policy will be divided into two sections
+Each policy will be divided into two sections:
 
-Keywords, Data Identifiers and Regular expressions- These will be migrated as sensitive information types (SITs) in Microsoft DLP.
+- Keywords, Data Identifiers and Regular expressions- These will be migrated as sensitive information types (SITs) in Microsoft DLP.
 
-Rules - These will be automatically mapped to different Microsoft DLP conditions. Each row in the table will show
+- Rules - These will be automatically mapped to different Microsoft DLP conditions. Each row in the table will show
     - The name that the SIT will have when migrated
     - Potential issues that may affect migration
     - Type of rule as detected from the input policy
     - Status:
       - Blank/empty status -  This row element will be migrated without issues.
-      - Needs Review - This row element may have one or more issues and may require some input           from you.
+      - Needs Review - This row element may have one or more issues and may require some input from you.
       - Informational - This row element may have one or more changes needed for migration but will be auto-resolved.
       - Unsupported -  This row element isn't supported for migration by the tool and may need to be migrated manually after the tool exits.
     - Edit button
@@ -148,7 +147,7 @@ Extend policy coverage to other Microsoft locations.
     - You can extend your current Symantec policies to other Microsoft locations in addition to the original scope of the policy.
 
 For example: 
-An Purview DLP policy that's scoped to email can be extended to SharePoint, OneDrive, Teams, and Endpoint Devices.
+A Purview DLP policy that's scoped to email can be extended to SharePoint, OneDrive, Teams, and Endpoint Devices.
 
 The migration assistant will auto-create a new policy based on the original policy with all supported rules for that given workload. One or more rules may be dropped if not supported for a given workload.
 
@@ -157,7 +156,7 @@ Email subject is condition may be dropped while extending an email (Exchange) DL
 
 Some checkboxes may be disabled by default, if there are no supported conditions available in extended locations.
 
-Editing a row element - When edit one or more row elements, you'll be navigated to an **Edit** screen with more details about that row element. If there’s any issue, it will be reported by a yellow banner at the top of the screen. You may need to make changes to the content in the editable sections, and those changes will be incorporated at the time of migration.Once you resolve the issues in the content, the yellow banner will disappear.
+Editing a row element - When editing one or more row elements, you'll be navigated to an **Edit** screen with more details about that row element. If there’s any issue, it will be reported by a yellow banner at the top of the screen. You may need to make changes to the content in the editable sections, and those changes will be incorporated at the time of migration. Once you resolve the issues in the content, the yellow banner will disappear.
 
 Use existing SITs from tenant to auto replace current SIT. You may choose to replace the current SIT (which is being edited) with another SIT from your tenant.
          :::image type="content" source="../media/sit-content.png" alt-text="Screenshot of editing SIT content.":::
@@ -173,133 +172,126 @@ After you've reviewed all the policies and the rules within them, select **Next*
 
 ### Step 4: Review pre-migration feasibility report
 <!-- CHRFOX LEFT OFF HERE-->
-The migration assistant will provide you with a pre-migration feasibility report showing overall coverage and migration feasibility at the policy level.
+You'll see a pre-migration feasibility report with overall coverage and migration feasibility at policy level with the following details:
+
+- Migration Summary
+    - Policy stats - Policies that are migrated completely, partially or can't be migrated.
+    - SIT stats - Details of the SITs (keywords, data identifiers) that will be migrated.
+- Policy table
+    - Policy name - Name of the policy that will be migrated.
+    - Migration Feasibility - This field indicates if a policy can be migrated completely, partially or isn't supported for migration.
+    - Target Policy Count - This field indicates the number of policies that will be created in Microsoft DLP for the corresponding Symantec DLP policy.
+    - Workloads Covered - This field indicates a list of all workloads that will be covered by all the target policies that will be created in Microsoft DLP.
+    - Unsupported Items - This field indicates a list of all conditions, exceptions, and actions (response rules) that may not be supported for migration.
+    - Delete button - This button will remove the selected policy from the scope of migration.
 
  :::image type="content" source="../media/review-dlp-policies.png" alt-text="Screenshot of Review your Policies.":::
 
-1. The pre-migration feasibility report shows:
-    - Migration Summary
-       - Policy stats: It shows how many policies can be migrated completely, partially or can't be migrated.
-       - SIT stats: It shows how many SITs (keywords, data identifiers will be migrated).
-    - Policy table
-       - Policy name: Name of the policy that will be migrated.
-       - Migration Feasibility: This field indicates if a policy can be migrated completely, partially or isn't supported for migration.
-       - Target Policy Count: This field indicates the number of policies that will be created in Microsoft DLP for the corresponding Symantec DLP policy.
-       - Workloads Covered: This field indicates a list of all workloads that will be covered by all the target policies that will be created in Microsoft DLP.
-       - Unsupported Items: This field indicates a list of all conditions, exceptions, and actions (response rules) that may not be supported for migration.
-       - Delete button: This button will remove the selected policy from the scope of migration.
-
-2. After reviewing, select **Next**.
+Review these details and choose **Next**.
 
 ### Step 5: Test or turn on your policies
 
-After you've completed all the previous steps, your Symantec DLP policy is ready to be imported to Microsoft Purview DLP platform.
+Before the policies are imported, you can decide whether to test or turn on your Symantec DLP policies that are ready to be imported to Microsoft Purview DLP platform using these two steps:
 
- :::image type="content" source="../media/start-migration.png" alt-text="Screenshot of DLP Policy migration.":::
-
-1. You need to choose whether to turn on or off the imported policies before the policies are imported. There are three options you can choose from:
+1. Choose whether to turn-on or off from the following three options:
     - Turn on policy immediately.
     - Turn on policy in test mode first. Remove from test mode later manually.
-    - Turn off policy. Turn it on later manually.
+    - Keep it off. Turn it on later manually.
 
-     > **Recommendation:** We recommend that you choose to bring over policies first in test mode. You can monitor the alerts that the policy generates and fine-tune it as required by your organization.
-     >
-     >Once your policy is fine-tuned, you can turn it on or in other words put it into production.
+     We recommend you to bring over the policies first in test mode. You can monitor the alerts that the policy generates, and fine-tune it as required by your organization. Once your policy is fine-tuned, you can turn it on or put it into production.
 
 2. Select **Start Migration** to import your policy. A new PowerShell window will open asking you to log in again.
 
     After you log in, PowerShell scripts will get executed to create new policies in Microsoft DLP platform with all the data in the input policy files, and any other settings you made during the previous migration assistant steps.
 
-    Wait until the script completes execution with a Success/Failure message. Thereafter, new SITs and policies will start showing up in Compliance Center as well.
+    Wait until the script completes execution with a Success/Failure message. Thereafter, new SITs and policies will start showing up in Compliance Portal as well.
+
+:::image type="content" source="../media/start-migration.png" alt-text="Screenshot of DLP Policy migration.":::
 
 ### Step 6: Migration in progress
 
-In this step, the migration tool will create DLP policies in Microsoft Compliance Center.
+In this step, the migration tool will create DLP policies in Microsoft Compliance Portal.
 
-1. You must wait while policy creation is in progress.
+> [!NOTE]
+> Refrain from closing the tool window while policies are being created as it may cause incomplete SITs and policies, which may require you to manually clean up later.
 
-    > [!NOTE]
-    > Refrain from closing the tool window while policies are being created as it may cause incomplete SITs and policies which may require you to manually clean up later.
+:::image type="content" source="../media/migration-dlp-progress.png" alt-text="Screenshot of the Migration in process.":::
 
-    :::image type="content" source="../media/migration-dlp-progress.png" alt-text="Screenshot of the Migration in process.":::
-2. In case an error occurs during migration, you can choose an action to perform.
-    :::image type="content" source="../media/errors-migration-options.png" alt-text="Screenshot of errors that can occur during Migration process.":::
-    You'll have to select one of these options:
-    - **Try Again**: Policy creation will be attempted again.
-    - **Rollback all changes**: All SITs and policies for that session will be deleted.
-    - **Rollback failed policies**: Only the failed SITs and policies for that session will be deleted.
+In case an error occurs during migration, you can choose an action from the following to perform:
 
-    >[!NOTE]
-    > When you choose to rollback any changes, it may take 2 – 4 hours for the entire rollback to take place. The migration assistant tool window needs to be kept open for the entire duration for successful rollback.
+- **Try Again** - Policy creation will be attempted again.
+- **Rollback all changes** - All SITs and policies for that session will be deleted.
+- **Rollback failed policies** - Only the failed SITs and policies for that session will be deleted.
 
-3. Once the policies are migrated, select **Next** to view the migration report.
-    :::image type="content" source="../media/all-set-migration.png" alt-text="Screenshot of Migration process complete.":::
+>[!NOTE]
+> When you choose to rollback any changes, it may take 2 – 4 hours for the entire rollback to take place. The migration assistant tool window needs to be kept open for the entire duration for a successful rollback.
 
-### Step 7: View th migration report
+:::image type="content" source="../media/errors-migration-options.png" alt-text="Screenshot of errors that can occur during Migration process.":::
 
-Once your policies are imported and the migration process is complete, then you can view the migration report.
+Once the policies are migrated, select **Next** to view the migration report.
+
+:::image type="content" source="../media/all-set-migration.png" alt-text="Screenshot of Migration process complete.":::
+
+### Step 7: View the migration report
+
+You can view the migration report once your policies are imported and the migration process is complete.
 
  :::image type="content" source="../media/migration-report.png" alt-text="Screenshot of migration report.":::
 
-For each session, a separate report is generated. We define a session from when the user launches the app, and the session ends when migration process is completed, or user exits the app.
+For each session, a separate report is generated. A session begins from the time you launch the app and ends when you exit the app or when migration process is completed.
 
 #### Technical report
 
-You can use the **Save Technical Report** button to save a more detailed excel-based report that is divided into three different sheets:
+You can select the **Save Technical Report** button to save a more detailed excel-based report that is divided into three sheets:
 
 - Overview
 - Policy Details
 - SIT Details
 
-**Overview Sheet:** As the name suggests, it provides an overview of the migration session.
+**Overview Sheet** - This sheet provides an overview of the migration session with the following details:
 
-:::image type="content" source="../media/overview-sheet-dlp-migration.png" alt-text="Screenshot of the Overview-excel.":::
-
-It provides the following information:
-
-- Your tenant’s name.
+- Tenant’s name.
 - Timestamp of session.
 - Overall summary stats for that session.
 - Input policy level details, migration status and comments/recommendations.
 
-**Policy Details:** This sheet provides a more detailed view of each migrated (or output) policy created or not created.
+:::image type="content" source="../media/overview-sheet-dlp-migration.png" alt-text="Screenshot of the Overview-excel.":::
 
-:::image type="content" source="../media/creation-of-policy-status.png" alt-text="Screenshot of Policy creation status-excel.":::
-
-It provides the following information:
+**Policy Details** - This sheet provides a detailed view of each migrated (or output) policy created or not created with the following information:
 
 - Mapping of source policy and target policy(s) created.
 - List of workloads each policy is applied to.
-- Analysis status for each policy highlights if the migration assistant can migrate the policy completely, partially or can't migrate.
-     - For workloads other than Exchange, this would typically show as ‘Complete’ since we create a simple policy with the ‘Content contains’ condition, which is supported across all workloads.
-- Migration status for each policy describing if the policy migration was a success or failure.
-- The Comments/recommendations column will provide you with more details related to that policy.
+- Analysis status stating if the policy is migrated completely, partially or can't migrate.
+     - For workloads other than Exchange, this would typically show as ‘Complete’ since we create a policy with the ‘Content contains’ condition, which is supported across all workloads.
+- Migration status describing if the policy migration was a success or failure.
+- Comments/recommendations with more details of that policy.
 
-**SIT Details:** This sheet provides information about all the sensitive information types (SITs) that were migrated.
+:::image type="content" source="../media/creation-of-policy-status.png" alt-text="Screenshot of Policy creation status-excel.":::
+
+**SIT Details:** This sheet provides information about all the sensitive information types (SITs) that were migrated with following information:
+
+- Policy-wise mapping of Input & Output SITs created.
+- Validation fixes with information about validation errors that occurred during the migration process (if any).
+- Comments about SIT auto-mapping, remediation steps, etc.
 
 :::image type="content" source="../media/sit-migration.png" alt-text="Screenshot of SITs migrated-excel.":::
 
-It provides the following information:
-
-- Policy-wise mapping of Input & Output SITs created.
-- Validation fixes column will provide information about validation errors that occurred during the migration process (if any).
-- Comments column tells you about SIT auto-mapping, remediation steps, etc.
-
 ### Next steps: After policy import
 
-You should go to the Compliance Center and validate that the policies were migrated successfully for all the policies in a session.
+You should visit the Compliance Portal and validate the policies migrated successfully in a session.
 
 #### Check Sensitive Information Types
 
-1. **Validate that the SITs were created**
+1. **Validate the SITs created**
 
-    Choose **Data Classification** from left panel and navigate to **Sensitive Information Type** tab to check if new SITs are created. To make this easier, you can sort the list on **Publisher** and check for SITs with publisher name as “DLP Migration Tool”.
+    Choose **Data Classification** from left panel and navigate to **Sensitive Information Type** tab to check if new SITs are created. You can also sort the list on **Publisher** and check for SITs with publisher name as “DLP Migration Tool”.
 2. **Rename SITs as needed**
 
-    For many SITs, you may notice there are similar names often followed by roman numerals. To avoid confusion and duplication post-migration, we recommend you rename these SITs now. This is especially true in cases where your regular expressions and keywords are defined directly in rules within your input Symantec DLP policies.
+    For many SITs, you may notice there are similar names often followed by roman numerals. To avoid confusion and duplication post-migration, we recommend you rename these SITs. This is true for cases where your regular expressions and keywords are defined directly in rules within your input Symantec DLP policies.
 3. **Test and fine-tune SITs as needed**
 
-    You should test and fine-tune the migrated SITs. The migration assistant creates new SITs with a few standard settings, which may or may not be optimal for your tenant. Here are few things to look at:
+    You should test and fine-tune the migrated SITs. The migration assistant creates new SITs with a few standard settings, which may or may not be optimal for your tenant so look out for the following:
+
      - Regular expressions: Unsupported or deleted regexes (during migration)
      - Keywords:
        -  Case sensitive versus insensitive keywords
@@ -307,58 +299,57 @@ You should go to the Compliance Center and validate that the policies were migra
        -  Proximity
      - Optional validators
 
-#### Check DLP Policies
+#### Check DLP policies
 
-1. **Validate that the DLP policies were created**
+1. **Validate the DLP policies created**
 
     Choose **Data Loss Prevention** from left panel and check if new policies are created.
 2. **Add any missing policy elements**
 
-    While most of your input Symantec DLP policy elements (like conditions, exclusions, or actions) will get migrated, often a few elements from your input Symantec DLP policy may get dropped during the migration process. This is a known limitation of the migration assistant. In any of these scenarios, these elements are supported by the Microsoft 365 DLP platform and you'll have to manually add these elements to the policy.  
+    While most of the input Symantec DLP policy elements (like conditions, exclusions, or actions) will get migrated, often a few elements from your input Symantec DLP policy may get dropped during the migration process. This is a known limitation of the migration assistant. In this scenario, you'll have to manually add these elements to the policy as they're supported by the Microsoft Purview DLP platform.  
 3. **Test and fine-tune the policy**
 
-    Once your policy is properly configured with all requisite elements, you should test the policy and fine-tune it as per the needs of your organization.
+    You can test the policy and fine-tune it as per the needs of your organization.
 4. **Turn the policy on**
 
-    Once your policy is tested and fine-tuned as per the needs of your organization, you can go ahead and **Turn on** this policy. In other words, put the policy in production mode.
+    Once tested or fine-tuned, you can turn on this policy or put the policy in production mode.
 5. **Bring over any remaining policies**
 
-    Once you've completed the above checks, you can go back to bring over the next policy or next batch of policies using the migration assistant.
+    You can go back to bring over the next policy or next batch of policies using the migration assistant.
 
 ## Troubleshooting
 
-1. Welcome screen/Get started error
+If you see an error on welcome screen after selecting **Get Started**, follow these steps:
 
-    If you see an error on Welcome screen after selecting **Get Started**:
-     1. Confirm that you've installed all the pre-requisites using the same links/versions as mentioned in [Before you start](dlp-migration-assistant-for-symantec-get-started.md#before-you-begin).
-     2. Ensure that you've restarted the machine after installing the pre-requisites from the above step.
-     3. Check if you're running the tool in admin mode using **Run as administrator** option while starting the application.
-     4. Check if your PowerShell module path is set correctly. To check:
-         1. Go to edit system environment variables
-         2. Add this path in PsModulePath system variable: `C:\Program Files\PowerShell\7\Modules`
-         3. Move this up and keep at top.
-         4. Restart the tool in admin mode.
+ 1. Confirm that you've installed all the pre-requisites using the same links/versions as mentioned in [Before you start](dlp-migration-assistant-for-symantec-get-started.md#before-you-begin).
+ 2. Ensure that you've restarted the machine after installing the pre-requisites.
+ 3. Check if you're running the tool in admin mode using **Run as administrator** option while starting the application.
+ 4. Che if your PowerShell module path is set correctly by following these steps:
+    1. Go to edit system environment variables
+    2. Add this path in PsModulePath system variable: `C:\Program Files\PowerShell\7\Modules`
+    3. Move this up and keep at top.
+    4. Restart the tool in admin mode.
 
-2. If you're not able to install/uninstall due to another process install issue
-    1. This is likely caused by another app installation.
-    2. The following sequence of steps should resolve the problem:
-          1. Right click task bar to open Task Manager. If necessary, show **More Details**.
-          2. On **Details** tab, look for msiexec.exe, highlight to **End Task**.
-          3. Now try to install or uninstall again.
-    3. Alternatively, you may wait until the installation is finished and then you can install the tool.
-3. Report issues to Microsoft
-    1. **Collect logs**: Find the logs generated by the migration assistant on your local machine at the following path: `C:\Users\<username>\AppData\Local\Temp\MigrationAssistantforMicrosoftPurviewDLP\Logs`.
-    1. **Send email**: Send us the details about your issue along with the latest logs at [dlpmigrations@microsoft.com](mailto:dlpmigrations@microsoft.com) or contact your CXE / FastTrack / Microsoft partner to share your feedback and suggestions.
+If you're unable to install/uninstall due to another process installation, follow these steps:
+
+1. Right click on the task bar to open Task Manager. If necessary, choose **More Details**.
+2. On **Details** tab, look for msiexec.exe and select **End Task**.
+3. Try to install or uninstall again or wait until the installation is finished.
+
+To report issues to Microsoft:
+
+1. **Collect logs** - Find the logs generated by the migration assistant on your local machine at the following path: `C:\Users\<username>\AppData\Local\Temp\MigrationAssistantforMicrosoftPurviewDLP\Logs`.
+2. **Send email** - Send us the details about your issue along with the latest logs at [dlpmigrations@microsoft.com](mailto:dlpmigrations@microsoft.com) or contact your CXE / FastTrack / Microsoft partner to share your feedback and suggestions.
 
 ### Reporting errors & providing feedback
 
-To report errors, raise feature requests, or share more feedback, you can reach out to us at [dlpmigrations@microsoft.com](mailto:dlpmigrations@microsoft.com) or contact your CXE / FastTrack / Microsoft partner.
+To report errors, raise feature requests, or share more feedback, reach out to us at [dlpmigrations@microsoft.com](mailto:dlpmigrations@microsoft.com) or contact your CXE / FastTrack / Microsoft partner.
 
 ### Telemetry Notice
 
-**Data Collection**: This software may collect information about you and your use of the software, and send it to Microsoft. Microsoft may use this information to provide services and improve our products and services. If you wish to turn off telemetry, reach out to us, and we'll provide you with a separate version of tool with telemetry turned off.
+**Data Collection**: This software may collect information about you and your use of the software, and send it to Microsoft. Microsoft may use this information to improve our products and services. If you wish to turn off telemetry, you can reach out to us, and we'll provide you with a separate version of tool with telemetry turned off.
 
-There are also some features in the software that may enable you and Microsoft to collect data from users of your applications. If you use these features, you must comply with applicable law, including providing appropriate notices to users of your applications together with a copy of Microsoft's privacy statement. Our privacy statement is located at [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkID=824704). You can learn more about data collection and use in the help documentation and our privacy statement. Your use of the software operates as your consent to these practices.
+There are also some features in the software that may enable you and Microsoft to collect data from users of your applications. If you use these features, you must comply with applicable law that is to provide appropriate notices to users of your applications with a copy of Microsoft's privacy statement. Our privacy statement is located at [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkID=824704). You can learn more about data collection, use in the help documentation and our privacy statement. Your use of the software operates as your consent to these practices.
 
 ## See also
 
