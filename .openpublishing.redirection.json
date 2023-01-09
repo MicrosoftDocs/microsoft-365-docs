@@ -10289,6 +10289,41 @@
       "source_path": "microsoft-365/security/defender/configure-microsoft-threat-experts.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/endpoint-attack-notifications",
       "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/solutions/information-protection-deploy.md",
+      "redirect_url": "/microsoft-365/solutions/data-privacy-protection",
+      "redirect_document_id": true
+  },
+  {
+      "source_path": "microsoft-365/solutions/information-protection-deploy-assess.md",
+      "redirect_url": "/microsoft-365/solutions/data-privacy-protection",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/solutions/information-protection-deploy-compliance.md",
+      "redirect_url": "/microsoft-365/solutions/data-privacy-protection",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/solutions/information-protection-deploy-identity-device-threat.md",
+      "redirect_url": "/microsoft-365/solutions/data-privacy-protection",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/solutions/information-protection-deploy-protect-information.md",
+      "redirect_url": "/microsoft-365/solutions/data-privacy-protection",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/solutions/information-protection-deploy-govern.md",
+      "redirect_url": "/microsoft-365/solutions/data-privacy-protection",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/solutions/information-protection-deploy-monitor-respond.md",
+      "redirect_url": "/microsoft-365/solutions/data-privacy-protection",
+      "redirect_document_id": false
   }
  ]
   }
