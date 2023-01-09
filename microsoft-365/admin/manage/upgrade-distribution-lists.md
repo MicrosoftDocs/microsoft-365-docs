@@ -180,7 +180,7 @@ People with global admin or Exchange admin rights.
 
 ### Why is the contact card still showing a distribution list? What should I do to prevent an upgraded distribution list from showing up in my auto suggest list?
 
-- **Outlook**: After you upgrade a ditribution list to a Microsoft 365 group, the user's local recipient cache (also known as the nick name cache) is not aware of the change. Do the steps in the following article to reset the user's local recipient cache: [Information about the Outlook AutoComplete list](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list). 
+- **Outlook**: After you upgrade a distribution list to a Microsoft 365 group, the user's local recipient cache (also known as the nick name cache) is not aware of the change. Do the steps in the following article to reset the user's local recipient cache: [Information about the Outlook AutoComplete list](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list). 
 
   If you don't update the recipient cache, any email sent to the Microsoft 365 Group will be delivered successfully, but the following issues will remain:
   
