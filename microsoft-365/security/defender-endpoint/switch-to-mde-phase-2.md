@@ -90,7 +90,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
    | :::image type="content" source="media/mde-hangon-provisioning.png" alt-text="Screenshot showing message that says hang on because MDE is not provisioned yet." lightbox="media/mde-hangon-provisioning.png"::: | Defender for Endpoint isn't finished provisioning yet. You might have to wait a little while for the process to finish. |
    | :::image type="content" source="media/device-inventory-empty.png" alt-text="Screenshot showing device inventory page with no device onboarded yet." lightbox="media/device-inventory-empty.png"::: | Defender for Endpoint is provisioned. In this case, proceed to the next step. |
 
-2. Set up integration between Microsoft Intune and Defender for Endpoint.
+2. Set up integration between Microsoft Intune and Defender for Endpoint by following these steps:
 
    1. In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), go to **Endpoint security**.
    2. Under **Setup**, choose **Microsoft Defender for Endpoint**.
