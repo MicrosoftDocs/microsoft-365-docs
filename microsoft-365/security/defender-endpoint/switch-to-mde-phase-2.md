@@ -37,7 +37,7 @@ search.appverid: met150
 |---|---|---|
 ||*You are here!*||
 
-**Welcome to the Setup phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This phase includes the following steps:
+**Welcome to the Setup phase of [migrating to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This phase includes the following steps:
 
 1. [Reinstall/enable Microsoft Defender Antivirus on your endpoints](#step-1-reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
 2. [Configure Defender for Endpoint Plan 1 or Plan 2](#step-2-configure-defender-for-endpoint-plan-1-or-plan-2)

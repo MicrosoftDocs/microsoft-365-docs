@@ -37,7 +37,7 @@ search.appverid: met150
 |--|--|--|
 |*You are here!*| | |
 
-**Welcome to the Prepare phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**.
+**Welcome to the Prepare phase of [migrating to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**.
 
 This migration phase includes the following steps:
 

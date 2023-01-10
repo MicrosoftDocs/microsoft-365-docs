@@ -37,7 +37,7 @@ search.appverid: met150
 |--|--|--|
 || |*You are here!* |
 
-**Welcome to Phase 3 of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This migration phase includes the following steps:
+**Welcome to Phase 3 of [migrating to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This migration phase includes the following steps:
 
 1. [Onboard devices to Defender for Endpoint](#step-1-onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Run a detection test](#step-2-run-a-detection-test).
