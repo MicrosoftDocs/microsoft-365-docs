@@ -263,7 +263,7 @@ You can select the **Save Technical Report** button to save a more detailed exce
 
 :::image type="content" source="../media/creation-of-policy-status.png" alt-text="Screenshot of Policy creation status-excel.":::
 
-**SIT Details:** This sheet provides information about all the sensitive information types (SITs) that were migrated with following information:
+**SIT Details** - This sheet provides information about all the sensitive information types (SITs) that were migrated with following information:
 
 - Policy-wise mapping of Input and Output SITs created.
 - Validation fixes with information about validation errors that occurred during the migration process.
@@ -279,15 +279,15 @@ You should visit the Compliance Portal and validate the policies you just migrat
 
 1. Validate that the SITs were create by open **Data Classification** > **Sensitive Information Type** tab and look for the SITS. You can also sort the list on **Publisher** and check for SITs with publisher name as “DLP Migration Tool”.
 
-1. Rename SITs as needed. For many SITs, you may notice there are similar names often followed by roman numerals. To avoid confusion and duplication post-migration, you should rename these SITs. This is true for cases where your regular expressions and keywords are defined directly in rules within your input Symantec DLP policies.
+2. Rename SITs as needed. For many SITs, you may notice there are similar names often followed by roman numerals. To avoid confusion and duplication post-migration, you should rename these SITs. This is true for cases where your regular expressions and keywords are defined directly in rules within your input Symantec DLP policies.
 
-1. Test and fine-tune SITs as needed. You should test and fine-tune the migrated SITs. The migration assistant creates new SITs with a few standard settings, which might not be right for your tenant so look out for the following:
+3. Test and fine-tune SITs as needed. You should test and fine-tune the migrated SITs. The migration assistant creates new SITs with a few standard settings, which might not be right for your tenant so look out for the following:
     1. Regular expressions: Unsupported or deleted regexes (during migration)
-    1. Keywords
+    2. Keywords
         1. Case sensitive versus insensitive keywords
-        1. String versus word match
-        1. Proximity
-        1. Optional validators
+        2. String versus word match
+        3. Proximity
+        4. Optional validators
 
 #### Check DLP policies
 
