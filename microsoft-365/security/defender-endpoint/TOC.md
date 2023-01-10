@@ -27,12 +27,12 @@
 ##### [What's New](linux-whatsnew.md)
 #### [Mobile Threat Defense]()
 ##### [Mobile Threat Defense Overview](mtd.md)
-##### [Microsoft Defender for Endpoint on iOS]()
-###### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
-###### [What's New](ios-whatsnew.md)
 ##### [Microsoft Defender for Endpoint on Android]()
 ###### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 ###### [What's new](android-whatsnew.md)
+##### [Microsoft Defender for Endpoint on iOS]()
+###### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+###### [What's New](ios-whatsnew.md)
 ### [Antivirus solution compatibility with Defender for Endpoint](defender-compatibility.md)
 
 ## [Evaluate capabilities]()
@@ -103,7 +103,7 @@
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
 
-### [Microsoft Defender for Endpoint on other Operating Systems]()
+### [Microsoft Defender for Endpoint on other platforms]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 #### [Microsoft Defender for Endpoint on macOS]()
 ##### [Deploy]()
@@ -725,6 +725,13 @@
 #### [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices)
 #### [Review sensor events and errors on machines using Event Viewer](event-error-codes.md)
 
+### [Troubleshoot Microsoft Defender for Endpoint on macOS]()
+#### [Troubleshoot installation issues](mac-support-install.md)
+#### [Troubleshoot performance issues](mac-support-perf.md)
+#### [Troubleshoot cloud connectivity](troubleshoot-cloud-connect-mdemac.md)
+#### [Troubleshoot kernel extension issues](mac-support-kext.md)
+#### [Troubleshoot license issues](mac-support-license.md)
+
 ### [Troubleshoot Microsoft Defender for Endpoint on Linux]()
 #### [Troubleshoot installation issues](linux-support-install.md)
 #### [Investigate agent health issues](health-status.md)
@@ -733,12 +740,6 @@
 #### [Troubleshoot performance issues](linux-support-perf.md)
 #### [Troubleshoot missing events issues](linux-support-events.md)
 
-### [Troubleshoot Microsoft Defender for Endpoint on macOS]()
-#### [Troubleshoot installation issues](mac-support-install.md)
-#### [Troubleshoot performance issues](mac-support-perf.md)
-#### [Troubleshoot cloud connectivity](troubleshoot-cloud-connect-mdemac.md)
-#### [Troubleshoot kernel extension issues](mac-support-kext.md)
-#### [Troubleshoot license issues](mac-support-license.md)
 
 ### [Troubleshoot Mobile Threat Defense]()
 #### [Troubleshoot Microsoft Defender for Endpoint on Android issues](android-support-signin.md)
