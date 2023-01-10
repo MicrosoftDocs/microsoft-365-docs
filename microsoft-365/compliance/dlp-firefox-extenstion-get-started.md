@@ -33,7 +33,7 @@ Use these procedures to roll out the Microsoft Purview Firefox Extension.
 
 To use Microsoft Purview Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
-- [Learn about Microsoft Purview Firefox Extension](dlp-firefox-extenstion-learn.md)
+- [Learn about Microsoft Purview Firefox Extension](dlp-firefox-extension-learn.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
@@ -101,8 +101,8 @@ Deploying the extension is a multi-phase process. You can choose to install on o
 3. [Deploy using Microsoft Endpoint Manager](#deploy-using-microsoft-endpoint-manager)
 4. [Deploy using Group Policy](#deploy-using-group-policy)
 5. [Test the extension](#test-the-extension)
-6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
-7. [Viewing Chrome DLP data in activity explorer](#viewing-chrome-dlp-data-in-activity-explorer)
+6. [Use the Alerts Management Dashboard to view Firefox DLP alerts](#use-the-alerts-management-dashboard-to-view-firefox-dlp-alerts)
+7. [Viewing Firefox DLP data in activity explorer](#viewing-firefox-dlp-data-in-activity-explorer)
 
 ### Prepare infrastructure
 
@@ -210,7 +210,7 @@ Now that you’ve removed Firefox from the disallowed browsers/apps list, you ca
   - To test, try to save the file to a network share.
   - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 
-### Use the Alerts Management Dashboard to viewing Firefox DLP alerts
+### Use the Alerts Management Dashboard to view Firefox DLP alerts
 
 1. Open the **Data loss prevention** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and select **Alerts**.
 
