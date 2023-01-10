@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 12/07/2022
+ms.date: 01/10/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
