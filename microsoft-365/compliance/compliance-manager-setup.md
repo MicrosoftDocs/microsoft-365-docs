@@ -101,7 +101,7 @@ To grant users access to an assessment, open the assessment's details page and s
 
 **More information**:
 - See [Grant user access to assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for more detailed information and instructions.
-- Learn more about [managing all users' access to assessments](#user-access) in Compliance Manager settings
+- Learn more about [managing all users' access to assessments](#user-access) in Compliance Manager settings.
 
 ## Start a premium assessments trial
 
@@ -292,7 +292,7 @@ To remove a user's access to an assessment:
 The user list on the **User access** page will now reflect the changes you made.
 
 > [!NOTE]
-> Users whose permissions for Compliance Manager were set in Azure AD won't appear on the **User access** page. Examples of user roles that won't appear here include Global Administrator, Compliance Administrator, Compliance Data Administrator, and Security Administrator. Learn more about [setting user roles and permissions](#set-user-permissions-and-assign-roles).
+> Users whose permissions for Compliance Manager were set in Azure AD won't appear on the **User access** page. This means that if a user has access to one or more assessments, and their role is Global Administrator, Compliance Administrator, Compliance Data Administrator, or Security Administrator, they won't appear on this page. Learn more about [setting user roles and permissions](#set-user-permissions-and-assign-roles).
 
 **More information**:
 - [Visit these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for assigning user roles from an assessment's details page.
