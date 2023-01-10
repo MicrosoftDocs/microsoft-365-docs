@@ -33,7 +33,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you are ready to switch from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), or you're just interested in what all is involved in the process, use this article as a guide. This article describes the overall process of moving to [Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md). The following image depicts the migration process at a high level:
+If you are ready to move from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint), or you're just interested in what all is involved in the process, use this article as a guide. This article describes the overall process of moving to [Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md). The following image depicts the migration process at a high level:
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Diagram depicting the process of migrating to Defender for Endpoint" lightbox="images/nonms-mde-migration.png":::
 
