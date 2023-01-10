@@ -65,7 +65,7 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 
 |Operating systems  |Methods  |
 |---------|---------|
-|Windows 10 or later<br/><br/>Windows Server 2019 or later<br/><br/>Windows Server, version 1803 or later<br/><br/>Windows Server 2012 R2 and 2016<sup>[[1](#fn1)]<sup>  | [Microsoft Endpoint Manager/ Mobile Device Management (Intune)](configure-endpoints-mdm.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Group Policy](configure-endpoints-gp.md)<br/><br/>[VDI scripts](configure-endpoints-vdi.md)<br/><br/>[Local script (up to 10 devices)](configure-endpoints-script.md)<br/> Note that the local script method is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune. |
+|Windows 10 or later<br/><br/>Windows Server 2019 or later<br/><br/>Windows Server, version 1803 or later<br/><br/>Windows Server 2016 or Windows Server 2012 R2<sup>[[1](#fn1)]<sup>  | [Microsoft Endpoint Manager/ Mobile Device Management (Intune)](configure-endpoints-mdm.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Group Policy](configure-endpoints-gp.md)<br/><br/>[VDI scripts](configure-endpoints-vdi.md)<br/><br/>[Local script (up to 10 devices)](configure-endpoints-script.md)<br/> Note that the local script method is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune. |
 |Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) or [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br> Note that the Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>Note that the Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
 | macOS (see [System requirements](microsoft-defender-endpoint-mac.md) | [Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Mobile Device Management](mac-install-with-other-mdm.md)<br/><br/> [Local script](mac-install-manually.md) |
@@ -74,6 +74,9 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 |Android  | [Intune](android-intune.md)  | 
 
 (<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
+
+> [!IMPORTANT]
+> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as [Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). 
 
 ## Step 2: Run a detection test
 
