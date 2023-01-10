@@ -82,7 +82,7 @@ You must configure a [third-party connector](/microsoft-365/compliance/archiving
 ## Channel limits
 
 |**Channel**|**Current limit**|
-|:----------|:-------------|
+|:----------|:----------------|
 | All channels | Maximum of 25 attachments per policy match |
 | Teams | Maximum of 250 users for public channel messages for static scopes with users |
 | Teams | No support or coverage for public channel messages for adaptive scopes with users |
