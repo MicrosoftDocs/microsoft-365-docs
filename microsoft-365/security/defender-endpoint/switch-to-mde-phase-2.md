@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 01/09/2023
+ms.date: 01/10/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -121,6 +121,8 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
    |:---|:---|
    | [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) <br/><br/>[Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)<br/><br/>[Block persistence through Windows Management Instrumentation (WMI) event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) | [Intune](enable-attack-surface-reduction.md#intune) (Device configuration profiles or Endpoint Security policies) <br/><br/>[Mobile Device Management (MDM)](enable-attack-surface-reduction.md#mdm) (Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) to individually enable and set the mode for each rule.)<br/><br/>[Group Policy](enable-attack-surface-reduction.md#group-policy) or [PowerShell](enable-attack-surface-reduction.md#powershell) (only if you're not using Intune, Configuration Manager, or another enterprise-level management platform) |
 
+   [Learn more about attack surface reduction capabilities](overview-attack-surface-reduction.md).
+
 4. Configure your [next-generation protection capabilities](next-generation-protection.md).
 
    | Capability | Configuration methods |
@@ -130,7 +132,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
    |[Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) <br/> or <br/> [Group Policy Management Console](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. Go to **Computer configuration** \> **Administrative templates** \> **Windows components** \> **Microsoft Defender Antivirus**.<br/><br/>2. Look for a policy called **Turn off Microsoft Defender Antivirus**.<br/><br/>3. Choose **Edit policy setting**, and make sure that policy is disabled. This action enables Microsoft Defender Antivirus. (You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.)|
    |Control Panel in Windows|Follow the guidance here: [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows). (You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.)|
 
-   *If you have Defender for Endpoint Plan 1, your initial setup and configuration is done. If you have Defender for Endpoint Plan 2, continue to the next step.*
+   *If you have Defender for Endpoint Plan 1, your initial setup and configuration is done for now. If you have Defender for Endpoint Plan 2, continue to step 5.*
 
 5. Configure your endpoint detection and response (EDR) policies in the Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). To get help with this task, see [Create EDR policies](/mem/intune/protect/endpoint-security-edr-policy#create-edr-policies).
 
@@ -140,10 +142,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
 ## Add Microsoft Defender for Endpoint to the exclusion list for your existing solution
 
-This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using.
-
-> [!TIP]
-> To get help configuring exclusions, refer to your solution provider's documentation.
+This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. Make sure to refer to your solution provider's documentation to add exclusions.
 
 The specific exclusions to configure will depend on which version of Windows your endpoints or devices are running, and are listed in the following table.
 
@@ -155,7 +154,7 @@ The specific exclusions to configure will depend on which version of Windows you
 
 ## Add your existing solution to the exclusion list for Microsoft Defender Antivirus
 
-During this step of the setup process, you add your existing solution to the Microsoft Defender Antivirus exclusion list. You can choose from several methods to add your exclusions to Microsoft Defender Antivirus, as listed in the following table: 
+During this step of the setup process, you add your existing solution to the list of exclusions for Microsoft Defender Antivirus. You can choose from several methods to add your exclusions to Microsoft Defender Antivirus, as listed in the following table: 
 
 |Method|What to do|
 |---|---|
@@ -165,11 +164,11 @@ During this step of the setup process, you add your existing solution to the Mic
 |Local group policy object|1. On the endpoint or device, open the Local Group Policy Editor.<br/><br/>2. Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Exclusions**. (You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.)<br/><br/>3. Specify your path and process exclusions.|
 |Registry key|1. Export the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`.<br/><br/>2. Import the registry key. Here are two examples:<br/>- Local path: `regedit.exe /s c:\temp\MDAV_Exclusion.reg`<br/>- Network share: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg`|
 
+[Learn more about exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
+
 ### Keep the following points about exclusions in mind
 
 When you add [exclusions to Microsoft Defender Antivirus scans](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus), you should add path and process exclusions.
-
-Keep the following points in mind:
 
 - *Path exclusions* exclude specific files and whatever those files access.
 - *Process exclusions* exclude whatever a process touches, but doesn't exclude the process itself.
