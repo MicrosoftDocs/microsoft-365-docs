@@ -41,7 +41,7 @@ Watch this video that shows more information about the unified submissions exper
 |---|---|---|
 |[The built-in Report button](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web)|User|Currently, this method is available only in Outlook on the web (formerly known as Outlook Web App or OWA).|
 |[The Microsoft Report Message and Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook)|User|These free add-ins work in Outlook on all available platforms. For installation instructions, see [Enable the Report Message or the Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).|
-|[The Submissions page in the Microsoft 365 Defender portal](submissions-admin.md)|Admin|Admins use this method to submit good (false positive) and bad (false negative) entities including user-reported messages to Microsoft for further analysis. Tabs include **Email**, **Email attachments**, **URLs**, and **Files**. The Submissions page is available to organizations who have Exchange Online mailboxes as part of a Microsoft 365 subscription (not available in standalone EOP).|
+|[The Submissions page in the Microsoft 365 Defender portal](submissions-admin.md)|Admin|Admins use this method to submit good (false positive) and bad (false negative) entities including user-reported messages to Microsoft for further analysis. Tabs include **Email**, **Email attachments**, **URLs**, and **Files**. Note that **Files** is only available to users with Microsoft Defender for Endpoint P2 license or E5 licenses. The Submissions page is available to organizations who have Exchange Online mailboxes as part of a Microsoft 365 subscription (not available in standalone EOP).|
 
 [User reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) allow admins to configure whether user reported messages go to a specified reporting mailbox, to Microsoft, or both. Depending on your subscription, user reported messages are available in the following locations in the Microsoft 365 Defender portal:
 
@@ -54,11 +54,13 @@ Admins can use mail flow rules (also known as transport rules) to notify specifi
 
 Admins can also submit email attachments and other suspected files to Microsoft for analysis using the sample submission portal at <https://www.microsoft.com/wdsi/filesubmission>. For more information, see [Submit files for analysis](../intelligence/submission-guide.md).
 
-> [!NOTE]
-> When you report an email entity to Microsoft, we copy everything associated with the email to include it in our continual algorithm reviews. This copy includes the email content, email headers, and related data about email routing. Any message attachments are also included.
->
-> Microsoft treats your feedback as your organization's permission for us to analyze all of the previously described information to fine tune the message hygiene algorithms. We hold your message in our secure audited datacenters in the USA. The submission is deleted as soon as it's no longer required. Microsoft personnel might read your submitted messages and attachments, which is normally not permitted for email in Microsoft 365. However, your email is still treated as confidential between you and Microsoft, and we will not provide your email or attachments to any other party as part of the review process.
->
+> [!TIP]
 > Information is blocked from going outside the organization when data is not supposed to leave the tenant boundary for compliance purposes (for example, in U.S. Government organizations: Microsoft 365 GCC, GCC High, and DoD). Reporting a message or file to Microsoft from one of these organizations will have the following message in the result details:
 >
 > **Further investigation needed**. Your tenant does not allow data to leave the environment, so we could not find anything with an initial scan. You'll need to contact Microsoft support to have this item reviewed.
+
+> [!NOTE]
+> When you report an email entity to Microsoft, everything associated with the email is copied to include it in the continual algorithm reviews. This copy includes the email content, email headers, and related data about email routing. Any message attachments are also included.
+>
+> Microsoft treats your feedback as your organization's permission to analyze all the information to fine tune the message hygiene algorithms. Your message is held in secured and audited data centers in the USA. The submission is deleted as soon as it's no longer required. Microsoft personnel might read your submitted messages and attachments, which is normally not permitted for email in Microsoft 365. However, your email is still treated as confidential between you and Microsoft, and your email or attachments is not shared with any other party as part of the review process.
+
