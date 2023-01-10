@@ -64,7 +64,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## January 2023
 
-- (GA) Live Response is now generally available for macOS and Linux. For more information, see, [Investigate entities on devices using live response](live-response.md).
+- Live Response is now generally available for macOS and Linux. For more information, see, [Investigate entities on devices using live response](live-response.md).
 
 - [Live response API and library API for Linux and macos is now generally available](run-live-response.md) <br/> You can now run live response API commands on Linux and macos. 
 
