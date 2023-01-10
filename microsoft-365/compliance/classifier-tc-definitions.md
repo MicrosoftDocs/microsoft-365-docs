@@ -64,6 +64,12 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects components of a business plan including business opportunity, plan of achieving the outcomes, market study and competitor analysis. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa files. | English |
 
+## Completion Certificates
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Detects official documents that are issued at the end of a project or work by a project manager or a contractor. This document is used to testify that work on a particular project has been completed as per a contract or an agreement. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
+
 ## Construction specifications
 
 |**Description**|**File types**|**Languages**|
@@ -109,6 +115,24 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects employment agreement containing details like the starting date, salary, compensation, duties of employment. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
+## Employee Pension Records
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Detects documents that are related to employee's pension records such as claim forms, declaration forms, schemes, and benefit statement. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .txt, .one, .msg, .eml files. | English |
+
+## Employee Stocks and Financial Bond Records
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Detects documents that are related stock and financial bonds award by organization to employees. This classifier identifies employee stocks and financial bonds details which fall under employee's payroll. Contains details like bond clause, allocations, equity. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .txt, .one, .msg, .eml files. | English |
+
+## Enterprise Risk Management
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Enterprise risk management includes financial risks, strategic risks, operational risks and risks associated with accidental losses. This category consists of methods used by organizations to manage risks and seize opportunities related to the achievement of their objectives. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt  files. | English |
+
 ## Finance
 
 |**Description**|**File types**|**Languages**|
@@ -126,6 +150,12 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects financial statements like income statement, balance sheet, cash flow statement, statement of changes in equity. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
+
+## Freight Documents
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Detects documents that authorize the export or import of a good in a specific quantity from source to destination. This model categorizes different documents including Bill of Ladings, Certificate of Origin, Commercial Invoice, Export impot customs declaration, Importer Security Filing (ISF). | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .txt, .one files. | English |
 
 ## Gifts & entertainment (preview)
 
@@ -184,6 +214,12 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects content in legal affairs-related categories such as litigation, legal process, legal obligation, legal terminology, law, and legislation. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml files. | English |
 
+## Legal Agreements
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Detects various legally abiding documents/ contracts/ agreements like Arbitration agreements, Power of Attorney, Purchase Agreements between two parties. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .txt files. | English |
+
 ## License agreement
 
 |**Description**|**File types**|**Languages**|
@@ -241,6 +277,12 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects paystub/salary statement files. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
 
+## Personal Financial Information
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Detects documents related to different personal financial records consisting of financial statements, real estate planning and retirement plans. Consists of details of all assets and liabilities held by an individual. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .txt, .one files. | English |
+
 ## Procurement
 
 |**Description**|**File types**|**Languages**|
@@ -259,6 +301,12 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |:-------------|:--------------|:--------------|
 | Detects a specific category of offensive language text items that contain expressions that embarrass most people. | Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files. | Arabic <br> Chinese (Simplified) <br> Chinese (Traditional) <br> Dutch <br> English <br> French <br> German <br> Italian <br> Korean <br> Japanese <br> Portuguese <br> Spanish |
 
+## Quotation
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Detects documents that offer to sell goods or services for a set price, based on certain conditions. It contains a description of the goods or services, the price of the goods or rate of the service, the quantity, and a total cost. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
+
 ## Regulatory collusion (preview)
 
 |**Description**|**File types**|**Languages**|
@@ -273,6 +321,12 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
 | Detects a resume document that a job applicant provides an employer, which has a detailed statement of the candidate's prior work experience, education, and accomplishments. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .txt files. | English |
+
+## Safety records
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Detects documents that are related to facility/factory safety. These documents can be facility safety plan, safety assessments and audit reports, emergency response and evacuation plan, and equipment’s inspection reports concerning safety measurements. |  Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .txt, .one, .eml files. | English |
 
 ## Sales and revenue
 
@@ -294,6 +348,18 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 > [!NOTE]
 > Source code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
+
+## Standard Operating Procedures and Manuals
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Detects sets of documented instructions created to help workers perform routine operations or manufacturing tasks. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
+
+## Statement of Accounts
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| A statement of account is a detailed report of the contents of an account. This classifier identifies documents related to Statement of accounts, Accounts Payable and Accounts Receivable.  | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files. | English |
 
 ## Statement of work
 
@@ -330,6 +396,12 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
  > [!IMPORTANT]
 > While in preview, this classifier may capture a large volume of bulk sender/newsletter content due to a known issue. While they're in preview, you can address large volumes of bulk sender/newsletter content by adding the *Message is not sent to any of these domains condition* with a list of domains to exclude.
+
+## Wire Transfer
+
+|**Description**|**File types**|**Languages**|
+|:-------------|:--------------|:--------------|
+| Wire transfer is a method of electronic funds transfer from one person or entity to another. The model captures all the the wire transfer receipts and acknowledgements. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
 ## Word count requirements
 
