@@ -44,7 +44,9 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## December 2022
 
-- [Use the built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web): Use the built-in Report button in Outlook on the web to report messages as phish, junk, and not junk. 
+- The new Microsoft 365 Defender role-based access control (RBAC) model, with support for Microsoft Defender for Office, is now available in public preview. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).
+
+- [Use the built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web): Use the built-in Report button in Outlook on the web to report messages as phish, junk, and not junk.
 
 ## October 2022
 
