@@ -27,7 +27,7 @@ This preview does not include structured or freeform document processing which u
 
 To use Microsoft Syntex pay-as-you go, you need:
 
-- An Azure subscription
+- An Azure subscription in the same tenant as Microsoft Syntex
 - An Azure resource group in that subscription
 - An Azure storage account in that subscription if you want to create usage reports. (See [Azure Blob Storage pricing](https://azure.microsoft.com/pricing/details/storage) for pricing.)
 

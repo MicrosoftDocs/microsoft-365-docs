@@ -18,6 +18,8 @@ description: Learn about unstructured document processing models in Microsoft Sy
 
 # Import a sample model for Microsoft Syntex
 
+<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
+
 Microsoft Syntex provides you with a sample unstructured document processing model you can use to examine, giving you a better understanding of how to create your own models. The sample model also allows you to examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
 
 ## Import the sample model
