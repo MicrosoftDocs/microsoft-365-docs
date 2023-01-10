@@ -33,7 +33,7 @@ If you're using the Microsoft Purview Data Loss Prevention migration assistant f
 
 ### 1. Have appropriate Microsoft 365 subscription
 
-You'll need the appropriate DLP licensing for the locations that the migrated policies are scoped to. Check [here](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-loss-prevention-endpoint-data-loss-protection-dlp).
+You'll need the appropriate DLP licensing for the locations that the migrated policies are scoped to. Check [here](https://aka.ms/dlplicensing).
 
 ### 2. Have appropriate user role and privileges
 
@@ -60,13 +60,13 @@ You must have installed .NET v6.0.41 or higher on your machine, before the migra
 
 Before you begin migration process, you need to export your Symantec DLP policies.
 
-You need to export these policies as XML files from Symantec DLP. Export the policies using these [procedures](https://help.symantec.com/cs/DLP15.1/DLP/v28354460_v125428396/Policy-template-import-and-export).
+You need to export these policies as XML files from Symantec DLP. Export the policies using these [procedures](https://go.microsoft.com/fwlink/?linkid=2221525).
 
 ## Installation steps
 
 Follow these steps to install the Microsoft Purview Data Loss Prevention migration assistant for Symantec:
 
-1. Download and launch **[MigrationAssistantforMicrosoftPurviewDLP.msi]( https://aka.ms/DLPMigrationAssistant)** file.
+1. Download and launch **[MigrationAssistantforMicrosoftPurviewDLP.msi](https://aka.ms/DLPMigrationAssistant)** file.
 2. The following dialog box will open. Select **Next**.
 3. Review the End-User License Agreement.
 4. After reviewing, accept the License Agreement and select **Next**.
