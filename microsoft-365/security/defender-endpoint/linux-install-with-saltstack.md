@@ -64,7 +64,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
 
    :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option" lightbox="images/portal-onboarding-linux-2.png":::
 
-4. On the SaltStack Master extract the contents of the archive to the SaltStack Server's folder:
+4. On the SaltStack Master extract the contents of the archive to the SaltStack Server's folder (typically `/srv/salt`):
 
     ```bash
     ls -l
@@ -112,11 +112,19 @@ Create a SaltState state file in your configuration repository (typically `/srv/
   add_ms_repo:
     pkgrepo.managed:
       - humanname: Microsoft Defender Repository
+      {% if grains['os'] == 'Debian' %}
       - name: deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
       - dist: [codename] 
       - file: /etc/apt/sources.list.d/microsoft-[channel].list
       - key_url: https://packages.microsoft.com/keys/microsoft.asc
-      - refresh_db: true
+      - refresh: true
+      {% elif grains['os'] == 'RedHat' %}
+      #these have not been verified, just moved from the ansible file.
+      - name: packages-microsoft-[channel]
+      - file: microsoft-[channel]
+      - baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+      - gpgcheck: true
+      {% endif %}
   ```
 
 - Add the package installed state to `install_mdatp.sls` after the `add_ms_repo` state defined above
