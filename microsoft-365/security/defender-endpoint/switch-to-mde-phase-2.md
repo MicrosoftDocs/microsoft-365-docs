@@ -83,8 +83,8 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
 > [!IMPORTANT]
 > - This article describes how to configure your Defender for Endpoint capabilities before devices are onboarded.
-> - If you have Defender for Endpoint Plan 1, complete steps 1-4 in the following procedure.
-> - If you have Defender for Endpoint Plan 2, complete steps 1-6 in the following procedure.
+> - If you have Defender for Endpoint Plan 1, complete steps 1-5 in the following procedure.
+> - If you have Defender for Endpoint Plan 2, complete steps 1-7 in the following procedure.
 
 1. Make sure Defender for Endpoint is provisioned. As a global admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in. Then, in the navigation pane, select **Assets** > **Devices**. 
 
@@ -95,7 +95,17 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
    | :::image type="content" source="media/mde-hangon-provisioning.png" alt-text="Screenshot showing message that says hang on because MDE is not provisioned yet." lightbox="media/mde-hangon-provisioning.png"::: | Defender for Endpoint isn't finished provisioning yet. You might have to wait a little while for the process to finish. |
    | :::image type="content" source="media/device-inventory-empty.png" alt-text="Screenshot showing device inventory page with no device onboarded yet." lightbox="media/device-inventory-empty.png"::: | Defender for Endpoint is provisioned. In this case, proceed to the next step. |
 
-2. If you're going to use either [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) or [Microsoft Endpoint Configuration Manager](/mem/endpoint-manager-overview) to onboard devices and configure device policies, set up integration with Defender for Endpoint by following these steps: <br/>
+2. Turn on [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). We recommend turning tamper protection on for your whole organization. You can do this task in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+
+   1. In the Microsoft 365 Defender portal, choose **Settings** > **Endpoints**.
+
+   2. Go to **General** > **Advanced features**, and then set the toggle for tamper protection to **On**.
+
+   3. Select **Save**.
+
+   [Learn more about tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
+
+3. If you're going to use either [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) or [Microsoft Endpoint Configuration Manager](/mem/endpoint-manager-overview) to onboard devices and configure device policies, set up integration with Defender for Endpoint by following these steps: <br/>
 
    1. In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), go to **Endpoint security**.
 
@@ -115,7 +125,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
    9. Scroll down and select **Save**.
 
-3. Configure your initial [attack surface reduction capabilities](overview-attack-surface-reduction.md). At a minimum, enable the standard protection rules that are listed in the following table right away:
+4. Configure your initial [attack surface reduction capabilities](overview-attack-surface-reduction.md). At a minimum, enable the standard protection rules that are listed in the following table right away:
 
    | Standard protection rules | Configuration methods |
    |:---|:---|
@@ -123,7 +133,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
    [Learn more about attack surface reduction capabilities](overview-attack-surface-reduction.md).
 
-4. Configure your [next-generation protection capabilities](next-generation-protection.md).
+5. Configure your [next-generation protection capabilities](next-generation-protection.md).
 
    | Capability | Configuration methods |
    |:---|:---|
@@ -134,9 +144,9 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
    *If you have Defender for Endpoint Plan 1, your initial setup and configuration is done for now. If you have Defender for Endpoint Plan 2, continue to step 5.*
 
-5. Configure your endpoint detection and response (EDR) policies in the Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). To get help with this task, see [Create EDR policies](/mem/intune/protect/endpoint-security-edr-policy#create-edr-policies).
+6. Configure your endpoint detection and response (EDR) policies in the Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). To get help with this task, see [Create EDR policies](/mem/intune/protect/endpoint-security-edr-policy#create-edr-policies).
 
-6. Configure your automated investigation and remediation capabilities in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). To get help with this task, see [Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint](configure-automated-investigations-remediation.md).
+7. Configure your automated investigation and remediation capabilities in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). To get help with this task, see [Configure automated investigation and remediation capabilities in Microsoft Defender for Endpoint](configure-automated-investigations-remediation.md).
 
    *At this point, initial setup and configuration of Defender for Endpoint Plan 2 is complete.*
 
