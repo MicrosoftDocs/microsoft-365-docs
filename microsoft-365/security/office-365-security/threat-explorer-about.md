@@ -429,7 +429,7 @@ The report refreshes to show the results that malware detected in email, using t
 
 ## View phishing URL and click verdict data
 
-Suppose that you want to see phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links.md) must be configured. Make sure that you set up [Safe Links policies](set-up-safe-links-policies.md) for time-of-click protection and logging of click verdicts by Safe Links.
+Suppose that you want to see phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links-about.md) must be configured. Make sure that you set up [Safe Links policies](safe-links-policies-configure.md) for time-of-click protection and logging of click verdicts by Safe Links.
 
 To review phish URLs in messages and clicks on URLs in phish messages, use the [**Email** > **Phish**](threat-explorer-views.md#email--phish) view of Explorer or Real-time detections.
 
@@ -501,16 +501,16 @@ The report refreshes to show data about email messages that people in your organ
 > [!NOTE]
 > Automated investigation and response capabilities are available in *Microsoft Defender for Office 365 Plan 2* and *Office 365 E5*.
 
-[Automated investigation and response](automated-investigation-response-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+[Automated investigation and response](air-about-office.md) can save your security operations team time and effort spent investigating and mitigating cyberattacks. In addition to configuring alerts that can trigger a security playbook, you can start an automated investigation and response process from a view in Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 ## More ways to use Explorer and Real-time detections
 
 In addition to the scenarios outlined in this article, you have many more reporting options available with Explorer (or Real-time detections). See the following articles:
 
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
-- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
+- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](./safe-attachments-for-spo-odfb-teams-about.md)
 - [Get an overview of the views in Threat Explorer (and Real-time detections)](threat-explorer-views.md)
-- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+- [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## Required licenses and permissions
@@ -538,7 +538,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
+- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## Differences between Threat Explorer and Real-time detections

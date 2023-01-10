@@ -21,7 +21,7 @@
     - name: Permissions in the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-permissions.md
     - name: Roles and role groups in the Microsoft Purview compliance portal
-      href: /microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+      href: /microsoft-365/security/office-365-security/scc-permissions?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Redirecting users to the Microsoft Purview compliance portal
       href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
@@ -1687,14 +1687,6 @@
           href: audit-troubleshooting-scenarios.md
         - name: Use sharing auditing in the audit log
           href: audit-log-sharing.md
-        - name: Office 365 Management Activity API
-          items:
-            - name: Office 365 Management Activity API reference
-              href: /office/office-365-management-api/office-365-management-activity-api-reference
-            - name: Office 365 Management Activity API schema
-              href: /office/office-365-management-api/office-365-management-activity-api-schema
-            - name: Office 365 Management Activity API FAQs and troubleshooting
-              href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
     - name: Audit (Premium)
       items:
         - name: Overview of Audit (Premium)
@@ -1705,6 +1697,14 @@
           href: audit-log-retention-policies.md
         - name: Use Audit (Premium) to investigate compromised accounts
           href: audit-log-investigate-accounts.md
+    - name: Office 365 Management Activity API resources
+      items:
+        - name: Office 365 Management Activity API reference
+          href: /office/office-365-management-api/office-365-management-activity-api-reference?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+        - name: Office 365 Management Activity API schema
+          href: /office/office-365-management-api/office-365-management-activity-api-schema?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+        - name: Office 365 Management Activity API FAQs and troubleshooting
+          href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Audit log activities
       href: audit-log-activities.md
     - name: Mailbox auditing

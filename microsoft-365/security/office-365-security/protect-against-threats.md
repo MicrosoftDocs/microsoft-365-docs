@@ -27,7 +27,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -65,11 +65,11 @@ To configure Defender for Office 365 policies, you must be assigned an appropria
 |Security Administrator|[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
-To learn more, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+To learn more, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 ### Turn on audit logging for reporting and investigation
 
-- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, [email security reports](view-email-security-reports.md), and [Explorer](threat-explorer.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+- Start your audit logging early. You'll need auditing to be **ON** for some of the following steps. Audit logging is available in subscriptions that include [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). In order to view data in threat protection reports, [email security reports](reports-email-security.md), and [Explorer](threat-explorer-about.md), audit logging must be *On*. To learn more, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## Part 1 - Anti-malware protection in EOP
 
@@ -90,7 +90,7 @@ For more information about the recommended settings for anti-malware, see [EOP a
 
 4. Back on the policy details flyout, click **Close**.
 
-For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 ## Part 2 - Anti-phishing protection in EOP and Defender for Office 365
 
@@ -183,7 +183,7 @@ For detailed instructions for configuring anti-spam policies, see [Configure ant
 
 ## Part 4 - Protection from malicious URLs and files (Safe Links and Safe Attachments in Defender for Office 365)
 
-Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments-about.md) and [Safe Links](safe-links.md) policies.
+Time-of-click protection from malicious URLs and files is available in subscriptions that include [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). It's set up through [Safe Attachments](safe-attachments-about.md) and [Safe Links](safe-links-about.md) policies.
 
 ### Safe Attachments policies in Microsoft Defender for Office 365
 
@@ -247,7 +247,7 @@ For more information about the recommended settings for Safe Links, see [Safe Li
        - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting (turn on).
          - **Wait for URL scanning to complete before delivering the message**: Select this setting (turn on).
        - **Do not rewrite URLs, do checks via Safe Links API only**: Verify this setting is not selected (turn off).
-     - **Do not rewrite the following URLs in email**: We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
+     - **Do not rewrite the following URLs in email**: We have no specific recommendation for this setting. For more information, see ["Do not rewrite the following URLs" lists in Safe Links policies](safe-links-about.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies).
      - **Action for potentially malicious URLs in Microsoft Teams** section:
        - ***On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams**: Select this setting (turn on).
      - **Click protection settings** section:
@@ -297,10 +297,10 @@ To learn more about alert policies, see [Alert policies in the Microsoft Purview
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:
 >
-> - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
-> - [Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+> - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
+> - [Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 > - [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
-> - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
+> - [Manage quarantined messages and files as an admin in Microsoft 365](quarantine-admin-manage-messages-files.md)
 
 ## Post-setup tasks and next steps
 
@@ -308,6 +308,6 @@ After configuring the threat protection features, make sure to monitor how those
 
 |What to do|Resources to learn more|
 |---|---|
-|See how threat protection features are working for your organization by viewing reports|[Email security reports](view-email-security-reports.md) <p> [Reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) <p> [Threat Explorer](threat-explorer.md)|
+|See how threat protection features are working for your organization by viewing reports|[Email security reports](reports-email-security.md) <p> [Reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) <p> [Threat Explorer](threat-explorer-about.md)|
 |Periodically review and revise your threat protection policies as needed|[Secure Score](../defender/microsoft-secure-score.md) <p> [Microsoft 365 threat investigation and response features](./office-365-ti.md)|
 |Watch for new features and service updates|[Standard and Targeted release options](../../admin/manage/release-options-in-office-365.md) <p> [Message Center](../../admin/manage/message-center.md) <p> [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

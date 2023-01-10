@@ -30,13 +30,13 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.
 
-Anti-malware policies automatically quarantine a message if _any_ attachment is found to contain malware. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+Anti-malware policies automatically quarantine a message if _any_ attachment is found to contain malware. For more information, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 By default, anti-spam policies quarantine phishing and high confidence phishing messages, and deliver spam, high confidence spam, and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam, high confidence spam, and bulk-email messages. For more information, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
@@ -44,13 +44,15 @@ Both users and admins can work with quarantined messages:
 
 - _Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on why the message was quarantined (for supported features). Default quarantine policies enforce the historical capabilities as described below. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users, and also turn on quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 
-- Admins can work with all types of quarantined messages for all users. By default, only admins can work with messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
+- Admins can work with all types of quarantined messages for all users. By default, only admins can work with messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). For more information, see [Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md).
 
 - By default, users can work with quarantined messages where they are a recipient and the message was quarantined as spam, bulk email, or phishing (not high confidence phishing). For more information, see [Find and release quarantined messages as a user in EOP](quarantine-end-user.md).
 
   To prevent users from managing their own quarantined phishing messages, admins can assign a quarantine policy that denies access to quarantined messages from the **Phishing email** filtering verdict in anti-spam policies. For more information, see [Assign quarantine policies in anti-spam policies](quarantine-policies.md#anti-spam-policies)[Quarantine policies](quarantine-policies.md).
 
-- Admins and users can report false positives to Microsoft in quarantine.
+- Admins can report false positives to Microsoft from quarantine. For more information, see [Take action on quarantined email](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email) and [Take action on quarantined files](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-files).
+
+- Depending on the [user reported message settings](submissions-user-reported-messages-files-custom-mailbox.md) in the organization (specifically, the **Let your organization report messages from quarantine** setting), users can report false positives to Microsoft from quarantine.
 
 - How long quarantined messages are held in quarantine before they expire varies based on why the message was quarantined. The features that quarantine messages and their corresponding retention periods are described in the following table:
 

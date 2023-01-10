@@ -54,7 +54,7 @@ Watch this short video to learn more about Attack simulation training.
 
   <sup>\*</sup> Adding users to this role in the Microsoft 365 Defender portal is currently unsupported.
 
-  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) or [About admin roles](../../admin/add-users/about-admin-roles.md).
+  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md) or [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 
@@ -118,7 +118,7 @@ The URLs that are used by Attack simulation training are described in the follow
 
 ### Create a simulation
 
-For step by step instructions on how to create and send a new simulation, see [Simulate a phishing attack](attack-simulation-training.md).
+For step by step instructions on how to create and send a new simulation, see [Simulate a phishing attack](attack-simulation-training-simulations.md).
 
 ### Create a payload
 
