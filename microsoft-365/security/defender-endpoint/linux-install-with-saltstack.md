@@ -150,12 +150,7 @@ The completed install state file should look similar to this:
 ```Output
 add_ms_repo:
   pkgrepo.managed:
-    - humanname: Microsoft Defender Repository
-    - name: deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
-    - dist: [codename] 
-    - file: /etc/apt/sources.list.d/microsoft-[channel].list
-    - key_url: https://packages.microsoft.com/keys/microsoft.asc
-    - refresh_db: true
+    # will need to copy from above section once those instructions have been vetted.
 
 install_mdatp_package:
   pkg.installed:
