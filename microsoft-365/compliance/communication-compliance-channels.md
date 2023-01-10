@@ -79,11 +79,11 @@ You can analyze communications for data imported into all mailboxes in your Micr
 
 You must configure a [third-party connector](/microsoft-365/compliance/archiving-third-party-data) for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
 
-## Channel limitations
+## Channel limits
 
-|**Channel**|**Limitation**|
+|**Channel**|**Current limit**|
 |:----------|:-------------|
 | All channels | Maximum of 25 attachments per policy match |
 | Teams | Maximum of 250 users for public channel messages for static scopes with users |
-| Teams | Coverage for public channel messages for adaptive scopes with users |
+| Teams | No support or coverage for public channel messages for adaptive scopes with users |
 |||
