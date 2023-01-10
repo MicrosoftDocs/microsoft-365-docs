@@ -59,7 +59,9 @@ This view is what it will look like if you've included all possible score views:
 
 ## Take action to improve your score
 
-The **recommended actions** tab lists the security recommendations that address possible attack surfaces. It also includes their status (to address, planned, risk accepted, resolved through third party, resolved through alternate mitigation, and completed). You can search, filter, and group all the recommended actions.  
+The **recommended actions** tab lists the security recommendations that address possible attack surfaces. It also includes their status (to address, planned, risk accepted, resolved through third party, resolved through alternate mitigation, and completed). You can search, filter, and group all the recommended actions.
+
+Once you have completed an action it can take between 24-48 hours for the changes to be reflected in your secure score.  
 
 ### Ranking
 
@@ -69,7 +71,7 @@ Ranking is based on the number of points left to achieve, implementation difficu
 
 When you select a specific recommended action, a full page flyout appears.  
 
-:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="The flyout of an recommended action in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="Screenshot that shows the flyout of a recommended action in the Microsoft 365 Defender portal." lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 To complete the action, you have a few options:
 
@@ -79,13 +81,13 @@ To complete the action, you have a few options:
 
 Add **Notes** to keep track of progress or anything else you want to comment on. If you add your own **tags** to the recommended action, you can filter by those tags.
 
-### Choose an recommended action status
+### Choose a recommended action status
 
 Choose any statuses and record notes specific to the recommended action.
 
 - **To address** - You recognize that the recommended action is necessary and plan to address it at some point in the future. This state also applies to actions that are detected as partially, but not fully completed.
 - **Planned** - There are concrete plans in place to complete the recommended action.
-- **Risk accepted** - Security should always be balanced with usability, and not every recommendation will work for your environment. When that is the case, you can choose to accept the risk, or the remaining risk, and not enact the recommended action. You won't be given any points, but the action will no longer be visible in the list of recommended actions. You can view this action in history or undo it at any time.
+- **Risk accepted** - Security should always be balanced with usability, and not every recommendation will work for your environment. When that is the case, you can choose to accept the risk, or the remaining risk, and not enact the recommended action. You won't be given any points for this status. You can view this action in history or undo it at any time.
 - **Resolved through third party** and **Resolved through alternate mitigation** - The recommended action has already been addressed by a third-party application or software, or an internal tool. You'll gain the points that the action is worth, so your score better reflects your overall security posture. If a third party or internal tool no longer covers the control, you can choose another status. Keep in mind, Microsoft will have no visibility into the completeness of implementation if the recommended action is marked as either of these statuses.
 
 #### Recommended action status for devices

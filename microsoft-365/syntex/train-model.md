@@ -18,6 +18,8 @@ description: Learn how to train custom models in Microsoft Syntex.
 
 # Train your model in Microsoft Syntex
 
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; </sup>
+
 The steps to train your model depends on the type of model you are using. 
 
 |Model type  |Steps to train  |
