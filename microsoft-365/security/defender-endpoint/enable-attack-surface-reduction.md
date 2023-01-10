@@ -96,6 +96,8 @@ You can also exclude ASR rules from triggering based on certificate and file has
 
 You can specify individual files or folders (using folder paths or fully qualified resource names). An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
 
+For information about per-rule exclusions, see: [Configure ASR rules per-rule exclusions](attack-surface-reduction-rules-deployment-test#configure-asr-rules-per-rule-exclusions).
+
 ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
 ## Policy Conflict
@@ -123,9 +125,6 @@ This section provides configuration details for the following configuration meth
 - [PowerShell](#powershell)
 
 The following procedures for enabling ASR rules include instructions for how to exclude files and folders.
-
-> [!NOTE]
-> For information about per-rule exclusions, see: [Configure ASR rules per-rule exclusions](attack-surface-reduction-rules-deployment-test#configure-asr-rules-per-rule-exclusions).
 
 ### Intune
 
