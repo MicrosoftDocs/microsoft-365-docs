@@ -95,7 +95,7 @@ The static proxy is configurable through group policy (GP), both the settings un
 > Parent registry path location for "PreferStaticProxyForHttpRequest" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
 > The following command can be used to insert the registry value in the correct location:<br>
 > ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
-> The above registry value is applicable only starting with MsSense.exe version 10.8210.* and later, or version 10.8049.* and later (on Windows Server 2012R2/2016 with the unified agent)
+> The above registry value is applicable only starting with MsSense.exe version 10.8210.* and later, or version 10.8049.* and later.
 
 
 
@@ -229,7 +229,7 @@ The information in the list of proxy and firewall configuration information is r
 
 4. Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (refer to the Service URLs [Spreadsheet](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)).
 
-   :::image type="content" source="images/admin-powershell.png" alt-text="The administrator in Windows PowerShell" lightbox="images/admin-powershell.png":::
+   :::image type="content" source="../../media/defender-endpoint/admin-powershell.png" alt-text="This is admin powershell.":::
 
 The wildcards (\*) used in \*.ods.opinsights.azure.com, \*.oms.opinsights.azure.com, and \*.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace. It can be found in the Onboarding section of your tenant within the Microsoft 365 Defender portal.
 

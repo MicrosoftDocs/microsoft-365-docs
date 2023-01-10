@@ -33,7 +33,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 ## Vulnerability assessment of apps
 
-Vulnerability assessment of apps on Microsoft Defender for Endpoint for iOS is now in public preview. Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices. For more details, see [Configure vulnerability assessment of apps](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-vulnerability-assessment-of-apps). 
+Vulnerability assessment of apps on Microsoft Defender for Endpoint for iOS is now generally available. Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices. For more details, see [Configure vulnerability assessment of apps](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-vulnerability-assessment-of-apps). 
 
 ## Network protection
 
