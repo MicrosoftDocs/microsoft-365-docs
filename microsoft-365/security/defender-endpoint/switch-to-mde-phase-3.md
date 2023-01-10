@@ -39,14 +39,14 @@ search.appverid: met150
 
 **Welcome to Phase 3 of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This migration phase includes the following steps:
 
-1. [Onboard devices to Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
-2. [Run a detection test](#run-a-detection-test).
-3. [Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints).
-4. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
-5. [Uninstall your non-Microsoft solution](#uninstall-your-non-microsoft-solution).
-6. [Make sure Defender for Endpoint is working correctly](#make-sure-defender-for-endpoint-is-working-correctly).
+1. [Onboard devices to Defender for Endpoint](#step-1-onboard-devices-to-microsoft-defender-for-endpoint).
+2. [Run a detection test](#step-2-run-a-detection-test).
+3. [Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints](#step-3-confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints).
+4. [Get updates for Microsoft Defender Antivirus](#step-4-get-updates-for-microsoft-defender-antivirus).
+5. [Uninstall your non-Microsoft solution](#step-5-uninstall-your-non-microsoft-solution).
+6. [Make sure Defender for Endpoint is working correctly](#step-6-make-sure-defender-for-endpoint-is-working-correctly).
 
-## Onboard devices to Microsoft Defender for Endpoint
+## Step 1: Onboard devices to Microsoft Defender for Endpoint
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -75,7 +75,7 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 
 (<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
-## Run a detection test
+## Step 2: Run a detection test
 
 To verify that your onboarded devices are properly connected to Defender for Endpoint, you can run a detection test.
 
@@ -85,7 +85,7 @@ To verify that your onboarded devices are properly connected to Defender for End
 |macOS (see [System requirements](microsoft-defender-endpoint-mac.md)|Download and use the DIY app at <https://aka.ms/mdatpmacosdiy>. <br/><br/> For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
 |Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements))|1. Run the following command, and look for a result of **1**: `mdatp health --field real_time_protection_enabled`.<br/><br/>2. Open a Terminal window, and run the following command: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/><br/>3. Run the following command to list any detected threats: `mdatp threat list`.<br/><br/>For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
 
-## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
+## Step 3: Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
 Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use one of several methods, as described in the following table:
 
@@ -122,7 +122,7 @@ To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1
 
 If you are using Windows Server 2016, you might have to start Microsoft Defender Antivirus manually. You can perform this task by using the PowerShell cmdlet `mpcmdrun.exe -wdenable` on the device.
 
-## Get updates for Microsoft Defender Antivirus
+## Step 4: Get updates for Microsoft Defender Antivirus
 
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques, even if Microsoft Defender Antivirus is running in passive mode. (See [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).)
 
@@ -134,7 +134,7 @@ There are two types of updates related to keeping Microsoft Defender Antivirus u
 
 To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-## Uninstall your non-Microsoft solution
+## Step 5: Uninstall your non-Microsoft solution
 
 If at this point you have:
 
@@ -149,7 +149,7 @@ Then your next step is to uninstall your non-Microsoft antivirus, antimalware, a
 
 To get help with uninstalling your non-Microsoft solution, contact their technical support team.
 
-## Make sure Defender for Endpoint is working correctly
+## Step 6: Make sure Defender for Endpoint is working correctly
 
 Now that you have onboarded to Defender for Endpoint, and you have uninstalled your former non-Microsoft solution, your next step is to make sure that Defender for Endpoint working correctly. 
 
