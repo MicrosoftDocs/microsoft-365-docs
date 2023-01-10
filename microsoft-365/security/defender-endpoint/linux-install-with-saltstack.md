@@ -103,8 +103,6 @@ Create a SaltState state file in your configuration repository (typically `/srv/
     > [!NOTE]
     > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle utilize, replace *[version]* with the version of Oracle Linux.
 
-  [ ] TODO: add grain to handle various OS's
-
   ```bash
   cat /srv/salt/install_mdatp.sls
   ```
@@ -112,17 +110,17 @@ Create a SaltState state file in your configuration repository (typically `/srv/
   add_ms_repo:
     pkgrepo.managed:
       - humanname: Microsoft Defender Repository
-      {% if grains['os'] == 'Debian' %}
+      {% if grains['os_family'] == 'Debian' %}
       - name: deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
       - dist: [codename] 
       - file: /etc/apt/sources.list.d/microsoft-[channel].list
       - key_url: https://packages.microsoft.com/keys/microsoft.asc
       - refresh: true
-      {% elif grains['os'] == 'RedHat' %}
-      #these have not been verified, just moved from the ansible file.
+      {% elif grains['os_family'] == 'RedHat' %}
       - name: packages-microsoft-[channel]
       - file: microsoft-[channel]
       - baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+      - gpgkey: https://packages.microsoft.com/keys/microsoft.asc
       - gpgcheck: true
       {% endif %}
   ```
@@ -150,7 +148,20 @@ The completed install state file should look similar to this:
 ```Output
 add_ms_repo:
   pkgrepo.managed:
-    # will need to copy from above section once those instructions have been vetted.
+    - humanname: Microsoft Defender Repository
+    {% if grains['os_family'] == 'Debian' %}
+    - name: deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
+    - dist: [codename] 
+    - file: /etc/apt/sources.list.d/microsoft-[channel].list
+    - key_url: https://packages.microsoft.com/keys/microsoft.asc
+    - refresh: true
+    {% elif grains['os_family'] == 'RedHat' %}
+    - name: packages-microsoft-[channel]
+    - file: microsoft-[channel]
+    - baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+    - gpgkey: https://packages.microsoft.com/keys/microsoft.asc
+    - gpgcheck: true
+    {% endif %}
 
 install_mdatp_package:
   pkg.installed:
@@ -194,10 +205,6 @@ Create a SaltState state file in your configuration repository (typically `/srv/
 
 The complete uninstall state file should look similar to this:
 ```Output
-remove_mde_managed_file:
-  file.absent:
-    - name: /etc/opt/microsoft/mdatp/managed/mdatp_managed.json
-
 remove_mde_onboarding_file:
   file.absent:
     - name: /etc/opt/microsoft/mdatp/mdatp_onboard.json
@@ -214,7 +221,7 @@ remove_mde_packages:
 
 ## Deployment
 
-Now apply the state to the minions.
+Now apply the state to the minions. The below command will apply the state to machines with the name that begins with `mdetest`.
 
 - Installation:
 
