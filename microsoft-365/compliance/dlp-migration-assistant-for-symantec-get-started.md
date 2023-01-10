@@ -56,6 +56,9 @@ You must have PowerShell v7.2.6 or higher installed on your machine, before the 
 
 You must have installed .NET v6.0.401 or higher on your machine, before the migration assistant can be installed. [Download .NET 6 core SDK on your machine](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-6.0.401-windows-x64-installer).
 
+> [!IMPORTANT]
+> If you don't already have .NET v6.0.401 installed and attempt to install it through the migration tool installation, you will be directed to the wrong version of .NET.  You must have .net v6.0.401 installed.
+
 ### Export Symantec DLP policies
 
 Before you begin migration process, you need to export your Symantec DLP policies.
