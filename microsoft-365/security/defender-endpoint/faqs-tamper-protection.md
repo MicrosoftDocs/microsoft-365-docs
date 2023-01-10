@@ -107,3 +107,16 @@ Your security operations team can also use hunting queries, such as the followin
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+## What are all the options for configuring tamper protection?
+
+You can use any of the following methods to configure tamper protection:
+
+- The [Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md) (turn tamper protection on or off, tenant wide)
+- [Intune](manage-tamper-protection-microsoft-endpoint-manager.md) (turn tamper protection on or off, and/or configure tamper protection for some or all users)
+- [Configuration Manager](manage-tamper-protection-configuration-manager.md) (with tenant attach, you can configure tamper protection for some or all devices by using the Windows Security experience profile)
+- [Windows Security app](manage-tamper-protection-individual-device.md) (for an individual device used at home or that is not centrally managed by a security team)
+
+> [!NOTE]
+> We recommend keeping tamper protection turned on for your whole organization. If tamper protection prevents your IT or security team from performing a necessary task on a device, 
+consider using [troubleshooting mode](enable-troubleshooting-mode.md) instead of disabling tamper protection.
