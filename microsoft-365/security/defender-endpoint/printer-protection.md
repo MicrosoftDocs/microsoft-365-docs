@@ -26,6 +26,9 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+> [!NOTE]
+> If you want to manage printer, see [Microsoft Defender for Endpoint Device Control Printer Protection](/microsoft-365/security/defender-endpoint/printer-protection-overview?view=o365-worldwide).
+
 Microsoft Defender for Endpoint Device Control Printer Protection blocks people from printing via non-corporate printers or non-approved USB printer.
 
 ## Licensing
