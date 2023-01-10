@@ -39,6 +39,18 @@ All updates contain:
 - Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
 
 <details>
+  <summary>Dec-2022 (Release version: 10.8210.*)</summary>
+
+|OS  |KB  |Release version  |
+|---------|---------|---------|
+|Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8210.22621.1016|
+  
+**What's new**
+
+- Bug fixes and stability improvements
+</details>
+
+<details>  
   <summary>Aug-2022 (Release version: 10.8210.*)</summary>
 
 |OS  |KB  |Release version  |
