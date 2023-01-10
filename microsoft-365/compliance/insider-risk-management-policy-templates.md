@@ -19,9 +19,14 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Learn about insider risk management policy templates
 
+>[!IMPORTANT]
+>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+
 ## Policy templates
 
 Insider risk management templates are pre-defined policy conditions that define the types of risk indicators and risk scoring model used by the policy. Each policy must have a template assigned in the policy creation wizard before the policy is created. Insider risk management supports up to five policies for each policy template. When you create a new insider risk policy with the policy wizard, choose from one of the following policy templates:
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ### Data theft by departing users
 
