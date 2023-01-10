@@ -368,7 +368,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### 3.4 Parameters
 
-- sinceTime (required): The data between a selected time and today.
+- sinceTime (required): The start time from which you want to see data changes. Vulnerability management generates data on new and updated vulnerabilities every 6 hours. The data returned will include all the changes captured in the 6 hour period the specified sinceTime falls into, along with the changes in any subsequent 6 hour periods up to and including the most recently generated data.
 - pageSize (default = 50,000): number of results in response.
 - $top: number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
 
