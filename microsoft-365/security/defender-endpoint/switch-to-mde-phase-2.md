@@ -39,13 +39,13 @@ search.appverid: met150
 
 **Welcome to the Setup phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This phase includes the following steps:
 
-1. [Reinstall/enable Microsoft Defender Antivirus on your endpoints](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
-2. [Configure Defender for Endpoint](#configure-defender-for-endpoint).
-3. [Add Defender for Endpoint to the exclusion list for your existing solution](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution).
-4. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
-5. [Set up your device groups, device collections, and organizational units](#set-up-your-device-groups-device-collections-and-organizational-units).
+1. [Reinstall/enable Microsoft Defender Antivirus on your endpoints](#step-1-reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
+2. [Configure Defender for Endpoint Plan 1 or Plan 2](#step-2-configure-defender-for-endpoint-plan-1-or-plan-2)
+3. [Add Defender for Endpoint to the exclusion list for your existing solution](#step-3-add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution).
+4. [Add your existing solution to the exclusion list for Microsoft Defender Antivirus](#step-4-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
+5. [Set up your device groups, device collections, and organizational units](#step-5-set-up-your-device-groups-device-collections-and-organizational-units).
 
-## Reinstall/enable Microsoft Defender Antivirus on your endpoints
+## Step 1: Reinstall/enable Microsoft Defender Antivirus on your endpoints
 
 On certain versions of Windows, Microsoft Defender Antivirus was likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. When endpoints running Windows are onboarded to Defender for Endpoint, Microsoft Defender Antivirus can run in passive mode alongside a non-Microsoft antivirus solution. To learn more, see [Antivirus protection with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md#antivirus-protection-without-defender-for-endpoint).
 
@@ -79,7 +79,7 @@ As you're making the switch to Defender for Endpoint, you might need to take cer
 
 You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and 2016 using the method above. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
-## Configure Defender for Endpoint
+## Step 2: Configure Defender for Endpoint Plan 1 or Plan 2
 
 > [!IMPORTANT]
 > - This article describes how to configure your Defender for Endpoint capabilities before devices are onboarded.
@@ -140,7 +140,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
    *At this point, initial setup and configuration of Defender for Endpoint Plan 2 is complete.*
 
-## Add Microsoft Defender for Endpoint to the exclusion list for your existing solution
+## Step 3: Add Microsoft Defender for Endpoint to the exclusion list for your existing solution
 
 This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. Make sure to refer to your solution provider's documentation to add exclusions.
 
@@ -152,7 +152,7 @@ The specific exclusions to configure will depend on which version of Windows you
 [Windows Server 2022](/windows/release-health/status-windows-server-2022)<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |  On Windows Server 2012 R2 and Windows Server 2016 running the [modern, unified solution](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016), the following exclusions are required after updating the Sense EDR component using [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac):<br/> <br/> `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe` <br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe` <br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection`|
 |[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/><br/>**NOTE**: Monitoring Host Temporary Files 6\45 can be different numbered subfolders.<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
-## Add your existing solution to the exclusion list for Microsoft Defender Antivirus
+## Step 4: Add your existing solution to the exclusion list for Microsoft Defender Antivirus
 
 During this step of the setup process, you add your existing solution to the list of exclusions for Microsoft Defender Antivirus. You can choose from several methods to add your exclusions to Microsoft Defender Antivirus, as listed in the following table: 
 
@@ -175,7 +175,7 @@ When you add [exclusions to Microsoft Defender Antivirus scans](/windows/securit
 - List your process exclusions using their full path and not by their name only. (The name-only method is less secure.)
 - If you list each executable (.exe) as both a path exclusion and a process exclusion, the process and whatever it touches are excluded.
 
-## Set up your device groups, device collections, and organizational units
+## Step 5: Set up your device groups, device collections, and organizational units
 
 Device groups, device collections, and organizational units enable your security team to manage and assign security policies efficiently and effectively. The following table describes each of these groups and how to configure them. Your organization might not use all three collection types.
 
