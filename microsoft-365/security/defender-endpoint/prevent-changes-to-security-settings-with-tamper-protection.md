@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 01/06/2023
+ms.date: 01/10/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -67,7 +67,7 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 > If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to *true* on all devices.
 
 
-### How tamper protection works
+## How tamper protection works
 
 Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values, and prevents your security settings from being changed through apps and methods such as:
 
@@ -76,7 +76,19 @@ Tamper protection essentially locks Microsoft Defender Antivirus to its secure, 
 
 Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team.
 
-### What do you want to do?
+## Tamper protection and cloud protection  
+  
+Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS). The following table summarizes whether there's a dependency on cloud protection.
+
+| How tamper protection is enabled | Dependency on cloud protection? |
+|---|---|
+|Microsoft Intune|No|
+|Microsoft Endpoint Configuration Manager with Tenant Attach|No|
+|Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))|Yes|
+
+## Methods to configure tamper protection
+
+The following table lists the various methods you can use to configure tamper protection:
 
 |To perform this task...|See this content...|
 |---|---|
@@ -88,16 +100,6 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 |View details about tampering attempts on devices|[View information about tampering attempts in Microsoft 365 Defender](#view-information-about-tampering-attempts)|
 |Review your security recommendations |[Review security recommendations](#review-your-security-recommendations)|
 |Review the list of frequently asked questions (FAQs)|[Browse the FAQs](faqs-tamper-protection.md)|
-
-## Tamper protection and cloud protection  
-  
-Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS). The following table summarizes whether there's a dependency on cloud protection.
-
-| How tamper protection is enabled | Dependency on cloud protection? |
-|---|---|
-|Microsoft Intune|No|
-|Microsoft Endpoint Configuration Manager with Tenant Attach|No|
-|Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))|Yes|
 
 ## What about exclusions?
 
