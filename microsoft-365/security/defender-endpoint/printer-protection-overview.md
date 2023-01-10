@@ -54,7 +54,7 @@ Ensure that the Windows devices that you need to onboard should meet the followi
     
 2. MOCAMP:4.18.2205 or later, you can run the command `Get-MpComputerStatus `on PowerShell to check the version. 
 
-:::image type="content" source="images/administrator-windows-powershell.png" alt-text="This is administrator windows powershell":::
+:::image type="content" source="images/administrator-windows-powershell.png" alt-text="This is administrator windows powershell.":::
 
 ### Device control printer protection properties
 
@@ -92,7 +92,7 @@ The table below lists the properties you can use in **PolicyRule**:
 |---|---|---|
 |PolicyRule Id|GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting.|You can generate the group ID through  [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-7.3&preserve-view=true)|
 |Name |String, the name of the policy and will display on the toast based on the policy setting and will be captured in the reporting.|
-|IncludedIdList|The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups. |The Group ID/GUID must be used at this instance. The following example shows the usage of GroupID: <IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList> <p><b>Note:</b></p> You should not add multiple groups inside IncludedIdList, instead, add all groups into a new group and then add the new group inside IncludedIdList.|
+|IncludedIdList|The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups. |The Group ID/GUID must be used at this instance. The following example shows the usage of GroupID: {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}<p><b>Note:</b></p> You should not add multiple groups inside IncludedIdList, instead, add all groups into a new group and then add the new group inside IncludedIdList.|
 |ExcludedIDList |The group(s) that the policy won't be applied to.|The Group ID/GUID must be used at this instance.| 
 |Entry |One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction. |See Entry properties table below for more details.|
 

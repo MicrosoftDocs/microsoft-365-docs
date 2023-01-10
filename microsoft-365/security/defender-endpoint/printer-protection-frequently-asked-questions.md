@@ -33,7 +33,7 @@ This article provides answers to frequently asked questions about device control
 
 You can generate the GUID through online open source or by using PowerShell. For more information, see [How to generate GUID through PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).
 
-![Screenshot of GUID in PowerShell.](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
+:::image type="content" source="media/screenshot-of-powershell-guid.png" alt-text="This is the screenshot of GUID powershell." lightbox="media/screenshot-of-powershell-guid.png":::
 
 ## What are the removable storage media and policy limitations?
 
@@ -51,7 +51,7 @@ The device (machine) should have a valid certificate. Run the following command 
 
 `Get-AuthenticodeSignature C:\Windows\System32\wbem\WmiPrvSE.exe`
 
-![Screenshot showing results of Get-AuthenticodeSignature cmdlet.](https://user-images.githubusercontent.com/81826151/202582101-5470dd54-ef32-4448-80c9-ba23a721dc70.png)
+:::image type="content" source="media/signature-cmdled.png" alt-text="This is signature cmdlet screenshot." lightbox="media/signature-cmdled.png":::
 
 If the policy still isn't working, contact support, and share your support cab. To get that file, open Command Prompt as an administrator, and then use the following command: 
 
@@ -65,7 +65,7 @@ There is no configuration UX for **Define device control policy groups** and **D
 
 You can run the PowerShell cmdlet `Get-MpComputerStatus` as an administrator. The following value will show whether the latest policy has been applied to the target machine.
 
-:::image type="content" source="images/148609885-bea388a9-c07d-47ef-b848-999d794d24b8.png" alt-text="Screenshot showing device control status in PowerShell.":::
+:::image type="content" source="images/148609885-bea388a9-c07d-47ef-b848-999d794d24b8.png" alt-text="Screenshot showing device control status in PowerShell." lightbox="images/148609885-bea388a9-c07d-47ef-b848-999d794d24b8.png":::
 
 ## How can I know which machine is using out of date anti-malware client version in the organization?
 
@@ -88,20 +88,20 @@ DeviceFileEvents
 
 2. Open Device Manager. 
 
-   ![Screenshot of Device Manager.](https://user-images.githubusercontent.com/81826151/181859412-affd6aa1-09ad-44bf-9541-330499cc2c87.png)
+   :::image type="content" source="media/screenshot-of-device-manager.png" alt-text="This is the screenshot of device manager." lightbox="media/screenshot-of-device-manager.png":::
 
 3. Locate the media in the Device Manager, right-click, and then select **Properties**.
 
-   :::image type="content" alt-text="Screenshot of media in the Device Manager." source="https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png":::
+   :::image type="content" source="media/locate-the-media.png" alt-text="This is the locate the media screenshot." lightbox="media/locate-the-media.png":::
 
 4. Open **Details**, and select **Properties**.
 
-   :::image type="content" alt-text="Screenshot of right-click menu for disk drives in Device Manager." source="https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png":::
+   :::image type="content" source="media/details.png" alt-text="This is details screenshot." lightbox="media/details.png":::
  
  
 ## How do I find Sid or ComputerSid for Azure AD group?
 
 Different from AD group, the Sid or ComputerSid is using Object ID for Azure AD group. You can find the Object ID from Azure portal.
 
-![image](https://user-images.githubusercontent.com/81826151/200895994-cc395452-472f-472e-8d56-351165d341a7.png)
+:::image type="content" source="media/device-control-user-group.png" alt-text="This is device control user group screenshot." lightbox="media/device-control-user-group.png":::
 

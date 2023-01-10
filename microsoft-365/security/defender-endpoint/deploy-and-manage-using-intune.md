@@ -60,7 +60,7 @@ Go to Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>
 
      - Select **Save**.
 
-   :::image type="content" source="media/enable-rsac.png" alt-text="Screenshot of enabling Removable Storage Access Control policy" lightbox="media/enable-rsac.png":::
+   :::image type="content" source="media/enable-rsac.png" alt-text="Screenshot of enabling Removable Storage Access Control policy." lightbox="media/enable-rsac.png":::
 
 The purpose of this configuration is to temporarily disable Device control on specific machine.
 
@@ -82,7 +82,7 @@ The purpose of this configuration is to temporarily disable Device control on sp
 
      - Select **Save**.
 
-   :::image type="content" source="media/default-deny.png" alt-text="Screenshot of setting Default Enforcement as Deny" lightbox="media/default-deny.png":::
+   :::image type="content" source="media/default-deny.png" alt-text="Screenshot of setting Default Enforcement as Deny." lightbox="media/default-deny.png":::
 
     > [!NOTE]
     > This configuration controls both Removable storage access control [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md) and Printer protection. If you only want to manage storage, make sure to create Allow policy for Printer. Otherwise, this Default Enforcement will be applied to Printer as well.
@@ -97,7 +97,7 @@ The purpose of this configuration is to temporarily disable Device control on sp
      - **Data Type** as **String (XML file)**
        - **Custom XML** as selected XML file
 
-         Take a look at the **Overview** -> **Removable storage group**, you can create different group types. Here's a [group example roup example XML file for any printer and USB Printer and file Printer](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml).
+         Take a look at the **Overview** -> **Removable storage group**, you can create different group types. Here's a [XML file for any printer and USB Printer and file Printer](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml).
 
        :::image type="content" source="media/any-removable-storage-group.png" alt-text="Screenshot of creating any Removable Storage Group." lightbox="media/any-removable-storage-group.png":::
 
@@ -116,7 +116,7 @@ The purpose of this configuration is to temporarily disable Device control on sp
 
          Take a look at the **Overview** -> **Access policy rule**, you can use **Parameters** to set condition for specific Entry. Here's a [group example XML file for Allow Read access for each removable storage](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml).
 
-       :::image type="content" source="media/allow-read-activity.png" alt-text="Screenshot of Allow Read Activity policy" lightbox= "media/allow-read-activity.png":::
+       :::image type="content" source="media/allow-read-activity.png" alt-text="Screenshot of Allow Read Activity policy." lightbox= "media/allow-read-activity.png":::
 
    > [!NOTE]
    > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
@@ -130,7 +130,7 @@ The purpose of this configuration is to temporarily disable Device control on sp
      - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
      - **Data Type** as **String**
 
-       :::image type="content" source="media/device-control-oma-uri-edit-row.png" alt-text="Set location for file evidence" lightbox="media/device-control-oma-uri-edit-row.png":::
+       :::image type="content" source="media/device-control-oma-uri-edit-row.png" alt-text="Set location for file evidence." lightbox="media/device-control-oma-uri-edit-row.png":::
 
 ## Scenarios (default enforcement)
 
@@ -146,19 +146,20 @@ You can download the files  [Printer Protection Samples](https://github.com/micr
 
     1. Group 1: Any printer group 
 
-       :::image type="content" source="media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png" alt-text="A screenshot showing removable storage" lightbox= "media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png":::
+       :::image type="content" source="media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png" alt-text="A screenshot showing removable storage." lightbox= "media/188234308-4db09787-b14e-446a-b9e0-93c99b08748f.png":::
 
        Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml). See step 3 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 
     2. Group 2: Allowed-USB printer group
 
-       :::image type="content" source="media/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png" alt-text="A screenshot of approved USBs" lightbox= "media/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png":::
+       :::image type="content" source="media/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png" alt-text="A screenshot of approved USBs." lightbox= "media/188234372-526d20b3-cfea-4f1d-8d63-b513497ada52.png":::
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml). See step 3 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 
     3. Group 3: Allowed PDF/XPS file printer group: following PrinterConnectionId is used, but if you want to only allow PDF, FriendlyNameId with ‘Microsoft Print to PDF’ is recommended. 
 
-      :::image type="content" source="images/allowed-pdf.png" alt-text="This is allowed pdf.":::
+      :::image type="content" source="images/allowed-pdf.png" alt-text="This is allowed pdf."lightbox="images/allowed-pdf.png":::
+
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml). See step 3 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 
@@ -169,19 +170,19 @@ You can download the files  [Printer Protection Samples](https://github.com/micr
 
     1. Create **Allow** and **Audit** policy for allowed-file printer group.
 
-       :::image type="content" source="media/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png" alt-text="A screenshot of policy 1" lightbox= "media/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png":::
+       :::image type="content" source="media/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png" alt-text="A screenshot of policy 1." lightbox= "media/188243425-c0772ed4-6537-4c6a-9a1d-1dbb48018578.png":::
 
        Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%201%20Block%20Write%20and%20Execute%20Access%20but%20allow%20approved%20USBs.xml). See step 4 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 
     2. Create policy to allow authorized USB printer only when the machine is in Corporate Network or connected to the VPN 
 
-        :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2" lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
+        :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2." lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
 
         Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%201%20Block%20Write%20and%20Execute%20Access%20but%20allow%20approved%20USBs.xml). See step 4 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 
     3. Create Default Deny custom policy for any other printers  
 
-        :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2" lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
+        :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2." lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
 
         Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%201%20Block%20Write%20and%20Execute%20Access%20but%20allow%20approved%20USBs.xml). See step 4 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
 
