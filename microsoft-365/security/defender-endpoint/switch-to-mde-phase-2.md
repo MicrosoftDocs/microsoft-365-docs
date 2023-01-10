@@ -130,10 +130,11 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
    |Control Panel in Windows|Follow the guidance here: [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows). (You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.)|
    |[Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) <br/> or <br/> [Group Policy Management Console](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. Go to **Computer configuration** \> **Administrative templates** \> **Windows components** \> **Microsoft Defender Antivirus**.<br/><br/>2. Look for a policy called **Turn off Microsoft Defender Antivirus**.<br/><br/>3. Choose **Edit policy setting**, and make sure that policy is disabled. This action enables Microsoft Defender Antivirus. (You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.)|
 
-   > [!TIP]
-   > If you have Defender for Endpoint Plan 1, your initial setup and configuration is done.
+   *If you have Defender for Endpoint Plan 1, your initial setup and configuration is done. If you have Defender for Endpoint Plan 2, continue to the next step.*
 
-5. 
+5. Configure EDR.
+
+6. Configure AIR.
 
 ## Add Microsoft Defender for Endpoint to the exclusion list for your existing solution
 
