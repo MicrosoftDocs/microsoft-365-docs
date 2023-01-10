@@ -34,9 +34,9 @@ ms.date: 01/11/2023
 
 This article provides guidance for how to troubleshoot common setup and configuration issues for the Microsoft Teams Electronic Health Record (EHR) connector. Use it to help resolve blockers that you may experience when you set up and configure the EHR connector to integrate with your [Cerner EHR](ehr-admin-cerner.md) or [Epic EHR](ehr-admin-epic.md) system.
 
-## Fast Health Interoperability Resources (FHIR) base URL isn't working
+## FHIR URL isn't working
 
-### I get a "FHIR URL isn't valid" error when I try to configure the EHR connector.
+### I get an "FHIR URL isn't valid" error when I try to configure the EHR connector
 
 This issue can happen in the following scenarios:
 
@@ -49,7 +49,7 @@ Contact your Epic technical specialist to provide the full FHIR base URL.
 
 This issue can occur if the keys aren't set up in the Epic instance or if OAuth configuration isn't completed by Epic. Contact your Epic technical specialist.
 
-### I'm an Epic analyst and when I select Approve to approve the FHIR URL in the EHR connector configuration portal, I'm unable to sign in to Epic using my Epic credentials.
+### I'm an Epic analyst and when I try to approve the FHIR URL in the EHR connector configuration portal, I can't sign in to Epic using my Epic credentials.
 
 Your permissions need to be changed in Epic. Contact your Epic technical specialist to check and update your permissions.
 
@@ -61,7 +61,7 @@ Here are some common reasons why you may be experiencing this issue and how to r
 
 #### The FDI records in Epic don't match the values from the EHR connector configuration portal
 
-The launch URL and the context tokens must be copied from the EHR connector configuration portal to the FDI records in Epic. Contact the Epic analyst in your organization to verify that the values were copied correctly. Keep in mind that in some cases, manipulating the FDI records after copying them from the EHR connector configuration portal is allowed.
+The launch URL and the context tokens must be copied from the [EHR connector configuration portal](https://ehrconnector.teams.microsoft.com/) to the FDI records in Epic. Contact the Epic analyst in your organization to verify that the values were copied correctly. Keep in mind that in some cases, manipulating the FDI records after copying them from the EHR connector configuration portal is allowed.
 
 #### The FDI records aren't updated in the correct Epic environment
 
@@ -96,7 +96,9 @@ Here are some common reasons why you may be experiencing this issue when integra
 
 ### Providers don’t get a Teams notification when patients join a virtual appointment.
 
-Often this can be solved by training. When a provider starts the virtual appointment, a temporary notification is displayed to the provider to admit the patient. This notification appears only briefly. Providers can also select People in the meeting controls at the top of the screen to see the list of participants, and then under Waiting in lobby, select the green check mark next to the participant’s name to admit them.
+Often this can be solved by training. When a provider starts the virtual appointment, a temporary notification is displayed to the provider to admit the patient. This notification appears only briefly.
+
+Providers can also select **People** in the meeting controls at the top of the screen to see the list of participants, and then under **Waiting in lobby**, select the green check mark next to the participant’s name to admit them.
 
 ## Patient experience
 
@@ -104,7 +106,7 @@ Often this can be solved by training. When a provider starts the virtual appoint
 
 Contact Microsoft Support and open a support ticket for the Teams EHR connector. Indicate in the ticket that the web browser join setting needs to be turned on. This change needs to be done by the Teams EHR connector team.
 
-After the web browser join setting is turned on, patients can join virtual appointments in a browser without having install Teams.
+After the web browser join setting is turned on, patients can join virtual appointments in a browser without having to install Teams.
 
 ### Patients can send chat messages to providers in Teams after the virtual appointment ends from within the appointment. How can we block this?
 
@@ -127,7 +129,7 @@ To avoid this scenario, you can do one of the following actions:
 
 ### I'm unable to access the EHR connector configuration portal or I can only see existing configurations and can't add new ones.
 
-You don't have admin access to the [Teams EHR connector configuration portal](https://ehrconnector.teams.microsoft.com/). As a quick check, see whether you can access the [Teams admin center](https://admin.teams.microsoft.com/). If you can't access the Teams admin center, you don't have admin permissions.
+You don't have admin access to the [EHR connector configuration portal](https://ehrconnector.teams.microsoft.com/). As a quick check, see whether you can access the [Teams admin center](https://admin.teams.microsoft.com/). If you can't access the Teams admin center, you don't have admin permissions.
 
 Contact an admin in your organization to either grant you admin access or set up the integration in the portal.  
 
