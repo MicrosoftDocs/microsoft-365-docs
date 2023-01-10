@@ -45,7 +45,7 @@ The **Policy dashboard** allows you to quickly see the policies in your organiza
 
 ## Policy recommendations from analytics
 
-Insider risk analytics gives you an aggregate view of anonymized user activities related to security and compliance, enabling you to evaluate potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher risk and help determine the type and scope of insider risk management policies you may consider configuring. If you decide to act on analytics scan results for [data leaks](#data-leaks) or [data theft](#data-theft-by-departing-users) by departing users policies, you even have the option to configure a quick policy based on these results.
+Insider risk analytics gives you an aggregate view of anonymized user activities related to security and compliance, enabling you to evaluate potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher risk and help determine the type and scope of insider risk management policies you may consider configuring. If you decide to act on analytics scan results for [data leaks](insider-risk-management-policy-templates.md#data-leaks) or [data theft](insider-risk-management-policy-templates.md#data-theft-by-departing-users) by departing users policies, you even have the option to configure a quick policy based on these results.
 
 To learn more about insider risk analytics and policy recommendations, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics).
 
