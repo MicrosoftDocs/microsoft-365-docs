@@ -92,7 +92,7 @@ Once you input the policies you want to migrate, the migration assistant will pr
 
 #### Keywords, Data Identifiers and Regular expressions
 
-Symantec DLP and Microsoft Purview information protection differ in how they allow users to define sensitive information that needs to be protected.
+Symantec DLP and Microsoft Purview Information Protection differ in how they allow users to define sensitive information that needs to be protected.
 
 Microsoft Purview Information Protection allows users to define sensitive items that need protection as sensitive information types (SITs), or through trainable classifiers. Microsoft provides many commonly used SITs like Credit Card Number that are preconfigured. If these don't meet your needs, you can create your own custom SITs.
 
@@ -113,13 +113,13 @@ The migration assistant takes care of each of the above scenarios in one of thes
 >
 >Each of these will be migrated separately as a custom SIT. This may lead to confusion and we recommend you review and rename these SITs as soon as possible.
 >
->You cannot edit the name of these SITs within the migration assistant. You can edit the names of these custom SITs from Microsoft Purview Compliance Portal or via PowerShell after the policy migration has been completed.
+>You cannot edit the name of these SITs within the migration assistant. You can edit the names of these custom SITs from Microsoft Purview compliance portal or via PowerShell after the policy migration has been completed.
 
 #### Inclusions, Exclusions and Response Rules
 
 The current version of the migration assistant brings over policies with ‘*Generate Incident Report*’ as a default action. Also, DLP policies in Microsoft DLP automatically log events in Unified Audit Log and won't need a separate action equivalent to ‘Syslog’ in Symantec DLP.
 
-All other response rules in Symantec are currently not supported by the migration assistant and thus not migrated along with other policy elements. However, you can manually add (or remove) actions to the policies using Compliance Portal after the migration assistant has successfully migrated the policies.
+All other response rules in Symantec are currently not supported by the migration assistant and thus not migrated along with other policy elements. However, you can manually add (or remove) actions to the policies using the Compliance portal after the migration assistant has successfully migrated the policies.
 
 You'll be able to see a list of all your policies and rules within them along with their status. You can select different policies from the left column to see Details for each policy. By default, the tool will display all items that need review. You can toggle to see all items in a given policy by choosing the **Show All Items** button at the top of the Details section.
       :::image type="content" source="../media/edit-policy-settings-mampd.png" alt-text="Screenshot of Show All Items.":::
@@ -197,15 +197,15 @@ You can set the state in the migration assistant prior to migrating a policy usi
 
 2. Select **Start Migration** to import your policy. A new PowerShell window will open asking you to log in again.
 
-    After you log in, PowerShell scripts will run that create new policies in Microsoft DLP with all the data in the input policy files, and any other settings you made during the previous migration assistant steps.
+    After you log in, PowerShell scripts will run that creates new policies in Microsoft DLP with all the data in the input policy files, and any other settings you made during the previous migration assistant steps.
 
-    Wait until the script completes finishes with a Success/Failure message. Then, new SITs and policies will start showing up in Compliance Portal as well.
+    Wait until the script completes finishes with a Success/Failure message. Then, new SITs and policies will start showing up in the Compliance portal as well.
 
 :::image type="content" source="../media/start-migration.png" alt-text="Screenshot of DLP Policy migration.":::
 
 ### Step 6: Migration in progress
 
-In this step, the migration tool will create DLP policies in Microsoft Compliance Portal.
+In this step, the migration tool will create DLP policies in Microsoft Purview compliance portal.
 
 > [!NOTE]
 > Refrain from closing the tool window while policies are being created as it may cause incomplete SITs and policies, which may require you to manually clean up later.
@@ -273,7 +273,7 @@ You can select the **Save Technical Report** button to save a more detailed exce
 
 ### Next steps: After policy import
 
-You should visit the Compliance Portal and validate the policies you just migrated.
+You should visit the Compliance portal and validate the policies you just migrated.
 
 #### Check Sensitive Information Types
 
