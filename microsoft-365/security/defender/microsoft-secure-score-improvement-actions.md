@@ -59,7 +59,9 @@ This view is what it will look like if you've included all possible score views:
 
 ## Take action to improve your score
 
-The **recommended actions** tab lists the security recommendations that address possible attack surfaces. It also includes their status (to address, planned, risk accepted, resolved through third party, resolved through alternate mitigation, and completed). You can search, filter, and group all the recommended actions.  
+The **recommended actions** tab lists the security recommendations that address possible attack surfaces. It also includes their status (to address, planned, risk accepted, resolved through third party, resolved through alternate mitigation, and completed). You can search, filter, and group all the recommended actions.
+
+Once you have completed an action it can take between 24-48 hours for the changes to be reflected in your secure score.  
 
 ### Ranking
 
@@ -79,7 +81,7 @@ To complete the action, you have a few options:
 
 Add **Notes** to keep track of progress or anything else you want to comment on. If you add your own **tags** to the recommended action, you can filter by those tags.
 
-### Choose an recommended action status
+### Choose a recommended action status
 
 Choose any statuses and record notes specific to the recommended action.
 

@@ -1,5 +1,5 @@
 ---
-title: Insider risk management settings
+title: Get started with insider risk management settings
 description: Learn about insider risk management settings in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
