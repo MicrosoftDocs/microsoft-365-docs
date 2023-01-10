@@ -95,7 +95,7 @@ On the Sync settings page, you choose the information to sync from UKG Dimension
 1. Enter your Microsoft 365 system account.
     :::image type="content" source="media/shifts-connector-wizard-ukg-sync-settings.png" alt-text="Screenshot of the Sync settings page of the wizard, showing sync settings." lightbox="media/shifts-connector-wizard-ukg-sync-settings.png":::
 <a name="email"> </a>
-1. Under **Email notification recipients**, choose who receives email notifications about this connector instance. You can add individual users and groups. The email notifications contain information about connection setup status and any issues or errors that may occur after the connector instance is set up.
+1. Under **Email notification recipients**, choose who receives email notifications about this connector instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connector instance is set up.
 1. Choose your sync settings:
     1. Under **Schedule and shifts**, choose the UKG Dimensions data that Shifts users can see or change, and then set the sync frequency.
     1. Under **Time card**, choose what action Shifts users can do with time entries.

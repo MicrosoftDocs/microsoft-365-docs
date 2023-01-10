@@ -41,7 +41,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Mic
     :::image type="content" source="media/shifts-connector-blue-yonder-manage.png" alt-text="Screenshot of the Connector Management page in the Microsoft 365 admin center, showing a list of connections." lightbox="media/shifts-connector-blue-yonder-manage.png":::
 
     - To create a new connection, select **Add connection** at the top of the page.
-    - To update connection settings, choose **Edit** next to an existing connection. You'll see the Connection settings pane, whee you can update the settings that you want.
+    - To update connection settings, choose **Edit** next to an existing connection. You'll see the Connection settings pane, where you can update the settings that you want.
     - To create a new connector instance, select **Create instance**.
     - To view more details about an existing connector instance, click the instance name. On the details page, you'll see health information, including mapping and account authorization errors (if any), the list of mappings (if any), and more. You can also choose **Edit** to update settings in the wizard.
 
