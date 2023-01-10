@@ -1,5 +1,5 @@
 ---
-title: Switch to Microsoft Defender for Endpoint - Prepare
+title: Migrate to Microsoft Defender for Endpoint - Prepare
 description: Get ready to make the switch to Microsoft Defender for Endpoint. Update your devices and configure your network connections.
 keywords: migration, Microsoft Defender for Endpoint, best practice
 ms.service: microsoft-365-security
@@ -26,7 +26,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
 
-# Switch to Microsoft Defender for Endpoint - Phase 1: Prepare
+# Migrate to Microsoft Defender for Endpoint - Phase 1: Prepare
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)

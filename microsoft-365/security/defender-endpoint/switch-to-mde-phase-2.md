@@ -1,5 +1,5 @@
 ---
-title: Switch to Microsoft Defender for Endpoint - Setup
+title: Migrate to Microsoft Defender for Endpoint - Setup
 description: Make the switch to Defender for Endpoint. Review the setup process, which includes installing Microsoft Defender Antivirus.
 keywords: migration, Microsoft Defender for Endpoint, antivirus, passive mode, setup process
 ms.service: microsoft-365-security
@@ -26,7 +26,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
 
-# Switch to Microsoft Defender for Endpoint - Phase 2: Setup
+# Migrate to Microsoft Defender for Endpoint - Phase 2: Setup
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)

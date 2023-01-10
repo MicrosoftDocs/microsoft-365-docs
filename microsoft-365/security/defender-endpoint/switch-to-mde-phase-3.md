@@ -1,5 +1,5 @@
 ---
-title: Switch to Microsoft Defender for Endpoint - Onboard
+title: Migrate to Microsoft Defender for Endpoint - Onboard
 description: Make the switch to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
 keywords: migration, Microsoft Defender for Endpoint, edr
 ms.service: microsoft-365-security
@@ -109,7 +109,6 @@ To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1
 2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
 
    - Set the DWORD's value to **1**.
-
    - Under **Base**, select **Hexadecimal**.
 
 > [!NOTE]
