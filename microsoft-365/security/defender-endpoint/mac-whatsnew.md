@@ -50,7 +50,6 @@ The issue impacts Microsoft Defender for endpoint security extensions, and might
 
 **What's new**
 
-- Performance improvement - Adding system exclusions during full scan and quick scan
 - Bug and performance fixes
 
 <br/>
