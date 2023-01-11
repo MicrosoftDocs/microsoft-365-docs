@@ -32,7 +32,7 @@ Use the following table to see differences in custom models to help identify the
 | Supported regions| Available in all regions. | Relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). |
 | Transactional cost | Not applicable | Uses AI Builder credits.<br>3,500 credits are included for each Syntex license per month.<br>1 million credits will allow processing of 2,000 file pages. | Uses AI Builder credits.<br>3,500 credits are included for each Syntex license per month.<br>1 million credits will allow processing of 2,000 file pages. |
 | Capacity | No capacity restrictions. | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Uses the default Power Platform environment (custom environments with Dataverse database supported). |
-| Supported languages| Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. | Current language support is for English. | Language support for [73 languages](/ai-builder/form-processing-model-requirements.md#languages-supported). |
+| Supported languages| Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. | Current language support is for English. | Language support for [more than 100 languages](/ai-builder/form-processing-model-requirements#languages-supported). |
 
 ## See also
 
