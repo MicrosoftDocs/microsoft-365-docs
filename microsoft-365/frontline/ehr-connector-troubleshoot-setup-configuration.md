@@ -45,7 +45,7 @@ This issue can happen in the following scenarios:
 
 Contact your Epic technical specialist to provide the full FHIR base URL.
 
-### I'm an Epic analyst and I get an "OATH2" error from Epic when I try to approve the FHIR URL.
+### I'm an Epic analyst and I get an "OAUTH2" error from Epic when I try to approve the FHIR URL.
 
 This issue can occur if the keys aren't set up in the Epic instance or if OAuth configuration isn't completed by Epic. Contact your Epic technical specialist.
 
@@ -118,7 +118,7 @@ If the provider leaves the appointment but didn't end it and the patient remains
 
 #### The web browser join setting is turned off and the patient, who is also an employee of your organization, joins in the Teams app using their work credentials
 
-If the patient is an employee of your organization and they join the appointment in the Teams app when they're signed in using their work credentials, they're in the appointment as a member of your organization and not as a guest. This means that they can send chat messages even after the appointment ends.
+If the patient is an employee of your organization and they join the appointment via the Teams app using their work credentials, they're joining the appointment as a member of your organization and not as a guest. This means that they can send chat messages even after the appointment ends.
 
 To avoid this scenario, you can do one of the following actions:
 
