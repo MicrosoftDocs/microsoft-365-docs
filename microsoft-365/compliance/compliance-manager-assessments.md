@@ -177,7 +177,7 @@ Learn more about [how controls and improvement actions are tracked and scored.](
 
 When you assign users a Compliance Manager role in the Microsoft Purview compliance portal, they can view or edit data within all assessments by default (review the [Compliance Manager role types](compliance-manager-setup.md#role-types)). You can restrict user access to only certain assessments by managing user roles from within an assessment or assessment template. Restricting access in this way can help ensure that users who play a role in overseeing compliance with particular regulations or standards have access only to the data and information they need to perform their duties.
 
-External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#more-about-azure-ad).
+External users who need access for auditing or other purposes can also be assigned a role for viewing assessments and editing test data. You'll provide access to external individual by assigning them an Azure Active Directory (AD) role. Learn more about [assigning Azure AD roles](compliance-manager-setup.md#setting-permissions-in-azure-ad).
 
 #### Steps for granting access
 
@@ -224,7 +224,7 @@ Learn how to get a broad [view of all users with access to assessments](complian
     - For example, if a user holds a reader role for a GDPR assessment and you want to change them to a contributor role, you'll first need to remove their reader role, and then re-assign them the reader role.
 
 > [!NOTE]
-> Admins whose permissions for Compliance Manager were set in Azure AD won't appear on the **Manage user access** flyout pane. This means that if a user has access to one or more assessments, and their role is Global Administrator, Compliance Administrator, Compliance Data Administrator, or Security Administrator, they won't appear on this page. Learn more about [setting Compliance Manager permissions in Azure AD](compliance-manager-setup.md#setting-permissions-in-azure-ad).
+> Admins whose permissions for Compliance Manager were set in Azure AD won't appear on the **Manage user access** flyout pane. This means that if a user has access to one or more assessments, and their role is Global Administrator, Compliance Administrator, Compliance Data Administrator, or Security Administrator, they won't appear on this pane. Learn more about [setting Compliance Manager permissions and roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 ## Accept updates to assessments
 
