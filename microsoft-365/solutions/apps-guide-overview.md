@@ -91,15 +91,11 @@ Often times, before you can distribute an app to your workforce, you must either
 
 Before you distribute a managed app to your workforce, you first need to add the app to Intune. Once added, you can create both configuration and protection policies to support the app. When you're ready, you can assign the apps to the members of your organization. For more information, see [Add apps to Microsoft Intune Overview](apps-add-overview.md)
 
-## Next steps
+## What's in this solution
 
-Once you have reviewed and understand app types, app purchases, and app licenses, use the following steps to add apps to Microsoft Intune.
+This solution steps you through the process of adding managed apps to Microsoft Intune. Adding managed apps to Intune is the first step you take before you configuring, protecting, and deploying the apps to members of your organization. By managing apps at your organization, you help to protect and secure your organization’s data.
 
-1. [Assess app requirements](apps-add-step-1.md)
-2. [Create categories for apps](apps-add-step-2.md)
-3. [Purchase apps](apps-add-step-3.md)
-4. [Add apps to Intune](apps-add-step-4.md)
-5. [Manage apps and licenses](apps-add-step-5.md)
+:::image type="content" border="true" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-02.png" alt-text="Steps used to purchase and add apps to Microsoft Intune.":::
 
 <!--
 ## Additional app resources

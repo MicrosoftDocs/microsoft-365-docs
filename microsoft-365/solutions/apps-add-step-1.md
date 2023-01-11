@@ -78,3 +78,9 @@ Intune uses Azure Active Directory (Azure AD) groups to manage devices and users
 As you're determining which apps your workforce needs, consider the various groups of users and the various apps they use. Knowing these groups is also helpful after you've added an app. As you add an app to Intune, you assign a group of users that can use the app.
 
 To help determine the app users, see [Determine who will use the app](/mem/intune/apps/apps-add#assess-app-requirements). For details about adding groups of users, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
+
+## Next step
+
+[![Step 2 to create and edit categories for apps](../media/purchase-add-managed-apps/purchase-add-managed-apps-04.png)](apps-add-step-2.md)
+
+Continue with [Step 2](apps-add-step-2.md) to create and edit categories for apps in Microsoft Intune.

@@ -117,5 +117,9 @@ Use the following steps to add line-of-business apps to Intune:
     3. [Windows LOB apps](/mem/intune/apps/lob-apps-windows)
     4. [Win32 apps](/mem/intune/apps/apps-win32-app-management)
     5. [Mac LOB apps](/mem/intune/apps/lob-apps-macos)
-   
 
+## Next step
+
+[![Step 5 to manage apps and licenses](../media/purchase-add-managed-apps/purchase-add-managed-apps-06.png)](apps-add-step-5.md)
+
+Continue with [Step 5](apps-add-step-5.md) to manage apps and licenses in Microsoft Intune.

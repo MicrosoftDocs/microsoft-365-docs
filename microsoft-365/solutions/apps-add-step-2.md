@@ -30,3 +30,9 @@ Consider adding apps that fall into the following categories:
 - Storage
 
 When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app and assign categories. For more information, see [Create and edit categories for apps](/mem/intune/apps/apps-add#create-and-edit-categories-for-apps).
+
+## Next step
+
+[![Step 3 to purchase or acquire apps](../media/purchase-add-managed-apps/purchase-add-managed-apps-05.png)](apps-add-step-3.md)
+
+Continue with [Step 3](apps-add-step-3.md) to purchase or acquire apps in Microsoft Intune.

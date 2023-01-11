@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Step 3. Purchase apps
+# Step 3. Purchase or acquire apps
 
 When your organization purchases a license to use Microsoft Intune, depending on your license, there are several Microsoft communication and productivity apps included with your license. Additionally, many of the store apps are free to add to Intune and assign to members of your organization. 
 
@@ -69,3 +69,9 @@ Use the following steps to sync apps from the Managed Google Play store with Int
 
 > [!NOTE]
 > Purchase a custom line-of-business app
+
+## Next step
+
+[![Step 4 to add apps to Intune](../media/purchase-add-managed-apps/purchase-add-managed-apps-06.png)](apps-add-step-4.md)
+
+Continue with [Step 4](apps-add-step-4.md) to add apps to Intune to Microsoft Intune.
