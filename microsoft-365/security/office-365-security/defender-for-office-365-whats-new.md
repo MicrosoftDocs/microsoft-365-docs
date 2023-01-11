@@ -58,7 +58,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## September 2022
 
-- **Anti-Spoofing enhancement for internal domains and senders:**
+- **Anti-spoofing enhancement for internal domains and senders:**
   - For spoofing protection, the allowed senders or domains defined in the [Antispam policy] (anti-spam-policies-configure.md) and within user allow lists will require to pass authentication in order for the allowed messages to be honored. The change only impacts messages that are considered to be internal, that is, the sender or domain is defined as an accepted domain in your organization. All other messages will continue to be handled as they are today.
 
 **Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports. 
