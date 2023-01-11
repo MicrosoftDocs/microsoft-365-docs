@@ -27,7 +27,7 @@ Before you use these cmdlets, you must first [connect to Security & Compliance P
 
 In the descriptions that follow, a policy for retention can refer to a retention policy (no labels), or a retention label policy. Each policy defines whether it's static or adaptive and the locations for the policy to be applied. 
 
-When you use retention policies, the policy requires one rule to complete the configuration. For example: a rule that defines the retention settings, such as retain for five years and then delete.
+When you use retention policies, the policy requires one rule to complete the configuration, for example, a rule that defines the retention settings, such as retain for five years and then delete.
 
 When you use retention labels, these contain the retention settings and their policies need different rules:
 - A retention label policy that you publish needs a rule that defines which labels should be displayed in apps.
