@@ -49,12 +49,12 @@ Compliance Manager uses a role-based access control (RBAC) permission model. Onl
 
 ### Where to set permissions
 
-The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in the Microsoft Purview compliance portal as well as in Azure Active Directory (Azure AD).
+The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in the Microsoft Purview compliance portal as well as in [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 > [!NOTE]
 > Customers in US Government Community (GCC) High and Department of Defense (DoD) environments can only set user permissions and roles for Compliance Manager in Azure AD. See below for Azure AD instructions and role type definitions.
 
-To set permissions and assign roles in the Microsoft Purview compliance portal, follow the steps below:
+#### Setting permissions in the Microsoft Purview compliance portal
 
 1. Go to the Microsoft Purview compliance portal, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
 
@@ -72,9 +72,9 @@ To set permissions and assign roles in the Microsoft Purview compliance portal, 
 
 8. When you’re done assigning users, select **Done**, then select **Save**, then **Close**.
 
-#### More about Azure AD
+#### Setting permissions in Azure AD
 
-To assign roles and set permissions in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+To set permissions and assign roles in Azure AD, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscriptions won't be able to access Compliance Manager in the Microsoft Purview compliance portal. To seek assistance in accessing Compliance Manager, contact [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
@@ -273,7 +273,7 @@ To delete a user’s history, follow the steps below:
 
 The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. This section is also where you can revoke access to an assessment by removing their assessment-specific role.
 
-To remove a user's access to an assessment:
+To remove a user's access to one or more assessments:
 
 1. In **Compliance Manager settings,** select **User access**.
 
@@ -283,16 +283,16 @@ To remove a user's access to an assessment:
 
 1. Go to the tab that corresponds to the role you want to remove: Reader, Assessor, or Contributor.
 
-1. Select the button next to the assessment for which you want to remove access, and select **Remove assessment**.
+1. Select the button next to the assessments for which you want to remove access, and select **Remove assessment**.
 
-1. A **Remove access?** confirmation box appears. Select **Confirm** to remove the user's role for that assessment, or select **Cancel** to cancel. The name of the assessment will now be removed from the role tab.
+1. A **Remove access?** confirmation box appears. Select **Confirm** to remove the user's role, or select **Cancel** to cancel. The name of the assessments will now be removed from the role tab.
 
 1. Select **Save** on the flyout pane. The role removal won't be completed until you select the Save button. Selecting **Close** will cancel out of the process without saving the role removal.
 
 The user list on the **User access** page will now reflect the changes you made.
 
 > [!NOTE]
-> Users whose permissions for Compliance Manager were set in Azure AD won't appear on the **User access** page. This means that if a user has access to one or more assessments, and their role is Global Administrator, Compliance Administrator, Compliance Data Administrator, or Security Administrator, they won't appear on this page. Learn more about [setting user roles and permissions](#set-user-permissions-and-assign-roles).
+> Admins whose permissions for Compliance Manager were set in Azure AD won't appear on the **User access** page. This means that if a user has access to one or more assessments, and their role is Global Administrator, Compliance Administrator, Compliance Data Administrator, or Security Administrator, they won't appear on this page. Learn more about [setting Compliance Manager permissions in Azure AD](#setting-permissions-in-azure-ad).
 
 **More information**:
 - [Visit these instructions](compliance-manager-assessments.md#grant-user-access-to-individual-assessments) for assigning user roles from an assessment's details page.

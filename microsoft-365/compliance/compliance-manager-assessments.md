@@ -223,6 +223,9 @@ Learn how to get a broad [view of all users with access to assessments](complian
 - For an individual assessment, one user can only hold one assessment-based role at a time.
     - For example, if a user holds a reader role for a GDPR assessment and you want to change them to a contributor role, you'll first need to remove their reader role, and then re-assign them the reader role.
 
+> [!NOTE]
+> Admins whose permissions for Compliance Manager were set in Azure AD won't appear on the **Manage user access** flyout pane. This means that if a user has access to one or more assessments, and their role is Global Administrator, Compliance Administrator, Compliance Data Administrator, or Security Administrator, they won't appear on this page. Learn more about [setting Compliance Manager permissions in Azure AD](compliance-manager-setup.md#setting-permissions-in-azure-ad).
+
 ## Accept updates to assessments
 
 When an update is available for an assessment, you'll see a notification and have the option to accept the update or defer it for a later time.
