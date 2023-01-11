@@ -573,4 +573,6 @@ We realize that for some customers in highly regulated industries, this standard
 
 - [Thales](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption)
 
+- [Utimaco](https://utimaco.com/solutions/applications/double-key-encryption)
+
 Reach out directly to these vendors for more information and guidance on their in-market DKE HSM solutions.
