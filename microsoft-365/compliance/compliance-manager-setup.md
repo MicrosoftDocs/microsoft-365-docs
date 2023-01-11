@@ -47,9 +47,11 @@ The direct link to access Compliance Manager is [https://compliance.microsoft.co
 
 Compliance Manager uses a role-based access control (RBAC) permission model. Only users who are assigned a role may access Compliance Manager, and the actions allowed by each user are restricted by [role type](#role-types). Our RBAC model also allows you to grant user access to individual assessments. See [role-based access to assessments](#role-based-access-to-assessments) below to learn more.
 
-### Where to set permissions
 
-The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in the Microsoft Purview compliance portal as well as in [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+The person holding the global admin role for your organization can set user permissions for Compliance Manager. Permissions can be set in either of the following places:
+
+- The Microsoft Purview compliance portal ([instructions](#setting-permissions-in-the-microsoft-purview-compliance-portal))
+- Azure Active Directory (Azure AD) ([instructions](#setting-permissions-in-azure-ad))
 
 > [!NOTE]
 > Customers in US Government Community (GCC) High and Department of Defense (DoD) environments can only set user permissions and roles for Compliance Manager in Azure AD. See below for Azure AD instructions and role type definitions.
