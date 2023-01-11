@@ -70,13 +70,13 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## December 2022
 
-- Microsoft Defender for Endpoint Device control Removable storage access control updates are as follows:
-    1. Microsoft Endpoint Manager UX support for Removable storage access control is now available. Refer [Deploy Removable Storage Access Control by using Intune user interface](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-user-interface)
-    2. The new Default Enforcement policy of Removable storage access control is designed for all Device control features. Printer Protection is now available for this policy. If you create Default Deny policy, printer will be blocked in your organization.
-        - Intune:*./Vendor/MSFT/Defender/Configuration/DefaultEnforcement* <br> Refer [Deploy and manage Removable Storage Access Control using Intune](deploy-manage-removable-storage-intune.md)
-        - Group policy: *Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus > Features > Device Control > Select Device Control Default Enforcement*<br> Refer [Deploy and manage Removable Storage Access Control using group policy](deploy-manage-removable-storage-group-policy.md)
+- Microsoft Defender for Endpoint Device control removable storage access control updates:
+    1. Microsoft Endpoint Manager support for removable storage access control is now available in Intune. See [Deploy Removable Storage Access Control by using Intune user interface](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-user-interface)
+    2. The new default enforcement policy of removable storage access control is designed for all device control features. Printer Protection is now available for this policy. If you create a Default Deny policy, printers will be blocked in your organization.
+        - Intune:*./Vendor/MSFT/Defender/Configuration/DefaultEnforcement* <br> See [Deploy and manage Removable Storage Access Control using Intune](deploy-manage-removable-storage-intune.md)
+        - Group policy: *Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus > Features > Device Control > Select Device Control Default Enforcement*<br> See [Deploy and manage Removable Storage Access Control using group policy](deploy-manage-removable-storage-group-policy.md)
 
-- Microsoft Defender for Endpoint Device control New Printer Protection solution to manage printer is now available. Refer
+- Microsoft Defender for Endpoint Device control New Printer Protection solution to manage printer is now available. For more information, see
 [Printer Protection Overview](printer-protection-overview.md)
 
 ## November 2022
