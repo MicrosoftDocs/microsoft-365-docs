@@ -68,6 +68,17 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [Live response API and library API for Linux and macos is now generally available](run-live-response.md) <br/> You can now run live response API commands on Linux and macos. 
 
+## December 2022
+
+- Microsoft Defender for Endpoint Device control Removable storage access control updates are now available:
+    1. Microsoft Endpoint Manager UX support for Removable storage access control is now available. Refer [Deploy and manage Removable Storage Access Control using Intune](deploy-manage-removable-storage-intune.md#deploy-removable-storage-access-control-by-using-intune-user-interface)
+    2. The Default Enforcement policy of Removable storage access control is designed for all Device control features. It is now available as follows. Printer Protection is now available for this policy. If you create Default Deny policy, printer will be blocked in your organization.
+        - For Intune:*./Vendor/MSFT/Defender/Configuration/DefaultEnforcement* <br> Refer [Deploy and manage Removable Storage Access Control using Intune](deploy-manage-removable-storage-intune.md)
+        - For Group policy: *Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus > Features > Device Control > Select Device Control Default Enforcement*<br> Refer [Deploy and manage Removable Storage Access Control using group policy](deploy-manage-removable-storage-group-policy.md)
+
+- Microsoft Defender for Endpoint Device control New Printer Protection solution to manage printer is now available. Refer
+[Printer Protection Overview](printer-protection-overview.md)
+
 ## November 2022
 
 - [Built-in protection](built-in-protection.md) is now generally available. Built-in protection helps protect your organization from ransomware and other threats with default settings that help ensure your devices are protected. 
