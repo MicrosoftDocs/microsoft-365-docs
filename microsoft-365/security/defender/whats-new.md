@@ -40,6 +40,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## January 2023
+
+- (GA) Live Response is now generally available for macOS and Linux. 
+
 ## December 2022
 
 - (Preview) The new Microsoft 365 Defender role-based access control (RBAC) model is now available for preview. The new RBAC model enables security admins to centrally manage privileges across multiple security solutions within a single system with a greater efficiency, currently supporting Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft Defender for Identity. The new model is fully compatible with the existing individual RBAC models currently supported in Microsoft 365 Defender. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](./manage-rbac.md).
