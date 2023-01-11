@@ -256,6 +256,8 @@
           href: insider-risk-management-configure.md
         - name: Get started with insider risk settings
           href: insider-risk-management-settings.md
+        - name: Learn about policy templates
+          href: insider-risk-management-policy-templates.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
         - name: Investigate insider risk activities
