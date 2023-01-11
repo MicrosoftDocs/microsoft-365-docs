@@ -273,7 +273,7 @@ To delete a user’s history, follow the steps below:
 
 ## User access
 
-The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments and allows you to make changes to role assignments. To add or remove a user's access to one or more assessments, follow the steps below:
+The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. From this page, you can make changes to assessment-based role assignments. To add or remove such roles for users, follow the steps below:
 
 1. In **Compliance Manager settings,** select **User access**.
 
