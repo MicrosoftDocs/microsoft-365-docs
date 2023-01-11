@@ -45,6 +45,10 @@ With UKG Dimensions as the system of record, your frontline workers can efficien
 
 [!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
 
+### Configure single sign-on
+
+[!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]
+
 ### Admin role to manage the connector using PowerShell
 
 [!INCLUDE [shifts-connector-admin-role](includes/shifts-connector-admin-role.md)]

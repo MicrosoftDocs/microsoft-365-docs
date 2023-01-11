@@ -43,6 +43,10 @@ You must be a Microsoft 365 global admin to run the wizard.
 
 - The teams you want to map don't have any schedules. If a team has an existing schedule, [remove the schedule from the team](#remove-schedules-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
 
+### Configure single sign-on
+
+[!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]
+
 <a name="remove_schedules"> </a>
 ## Remove schedules from teams you want to map
 
