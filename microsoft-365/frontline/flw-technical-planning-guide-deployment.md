@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: amconkli
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -14,8 +14,10 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
+  - tier2
 appliesto: 
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 
 ---
 
