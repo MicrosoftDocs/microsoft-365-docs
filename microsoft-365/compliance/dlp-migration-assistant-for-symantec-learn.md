@@ -37,7 +37,7 @@ The migration assistant helps with some of the tasks involved in a Data Loss Pre
 - The migration assistant provides you with a detailed migration report that includes the migration status and recommendations at the policy level.
 - The migration assistant ensures that your DLP policy migration project is private and takes place within the boundaries of your organization.
 
-## How does the migration assistant work?
+## How does the migration assistant for Symantec work?
 
 Here's how the migration process works:
 
