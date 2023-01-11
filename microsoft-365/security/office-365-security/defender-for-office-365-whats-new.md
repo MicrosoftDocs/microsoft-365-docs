@@ -9,7 +9,7 @@ f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 09/20/2022
+ms.date: 01/10/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -44,7 +44,9 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## December 2022
 
-- [Use the built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web): Use the built-in Report button in Outlook on the web to report messages as phish, junk, and not junk. 
+- The new Microsoft 365 Defender role-based access control (RBAC) model, with support for Microsoft Defender for Office, is now available in public preview. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).
+
+- [Use the built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web): Use the built-in Report button in Outlook on the web to report messages as phish, junk, and not junk.
 
 ## October 2022
 
@@ -55,6 +57,9 @@ For more information on what's new with other Microsoft Defender security produc
   - With the new lookback scenario, the "A potentially malicious URL click was detected" alert will now include any clicks during the _past 48 hours_ (for emails) from the time the malicious URL verdict is identified. 
 
 ## September 2022
+
+- **Anti-spoofing enhancement for internal domains and senders:**
+  - For spoofing protection, the allowed senders or domains defined in the [anti-spam policy](anti-spam-policies-configure.md) and within user allow lists must now pass authentication in order for the allowed messages to be honored. The change only impacts messages that are considered to be internal (the sender or sender's domain is in an accepted domain in the organization). All other messages will continue to be handled as they are today.
 
 **Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft 365 Defender portal (security.microsoft.com). This is for all security workflows like: Alerts, Threat Management, and Reports. 
 
