@@ -45,16 +45,16 @@ activity |description  | supported policy actions|
 ## Deployment process
 1. [Get started with endpoint data loss prevention](endpoint-dlp-getting-started.md)
 2. [Onboarding tools and methods for Windows 10 devices](device-onboarding-overview.md)
-3. [Install the Firefox extension on your Windows 10 devices](dlp-firefox-extenstion-get-started.md)
+3. [Install the Firefox extension on your Windows 10 devices](dlp-firefox-extension-get-started.md)
 4. [Create or edit DLP policies](create-test-tune-dlp-policy.md) that restrict upload to cloud service, or access by unallowed browsers actions and apply them to your Windows 10 devices
 
 ## Next steps
 
-See [Get started with the Microsoft Purview Firefox Extension](dlp-firefox-extenstion-get-started.md) for complete deployment procedures and scenarios.
+See [Get started with the Microsoft Purview Firefox Extension](dlp-firefox-extension-get-started.md) for complete deployment procedures and scenarios.
 
 ## See also
 
-- [Get started with Microsoft Purview Firefox Extension](dlp-firefox-extenstion-get-started.md)
+- [Get started with Microsoft Purview Firefox Extension](dlp-firefox-extension-get-started.md)
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Getting started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
