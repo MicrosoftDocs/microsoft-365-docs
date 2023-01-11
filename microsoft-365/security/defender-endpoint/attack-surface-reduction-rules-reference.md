@@ -18,7 +18,7 @@ ms.topic: reference
 ms.collection: 
 - m365-security
 - tier2
-- ms.date: 10/07/2022
+ms.date: 1/11/2023
 search.appverid: met150
 ---
 
@@ -88,7 +88,7 @@ Following is a list of ASR rules that honor Microsoft Defender Antivirus exclusi
 | [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |
 
 > [!NOTE]
-> See: [Configure ASR rules per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-rules-per-rule-exclusions) for information about configuring ASR rules per-rule exclusions.
+> For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md).
 
 ## ASR rules supported operating systems
 
