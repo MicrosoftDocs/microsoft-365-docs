@@ -8,7 +8,7 @@ ms.service: microsoft-365-frontline
 ---
 You'll need to take some additional steps after UKG enables SSO for your organization.
 
-## Change user accounts to Federated accounts
+#### Change user accounts to Federated accounts
 
 Each user that will be using the connector will need a Federated account.
 
@@ -18,7 +18,7 @@ Each user that will be using the connector will need a Federated account.
 1. Change the **Authentication Type** to **Federated**.
 1. Save your changes and repeat the process for all users that will use the connector.
 
-## Whitelist Shifts SSO redirection URLs
+#### Whitelist Shifts SSO redirection URLs
 
 After UKG enables SSO for your organization, you'll need to whitelist the connector's redirection URL. This will allow UKG Dimensions to redirect the user to the Shifts app in Microsoft Teams as part of the SSO flow.
 
