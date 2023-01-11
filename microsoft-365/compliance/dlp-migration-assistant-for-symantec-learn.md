@@ -17,14 +17,14 @@ ms.collection:
 - highpri
 search.appverid: 
 - MET150
-description: "The migration assistant tool is a Windows based desktop application that will migrate your DLP policies from other DLP platforms to Microsoft DLP platform."
+description: "The migration assistant is a Windows based desktop application that will migrate your DLP policies from other DLP platforms to Microsoft DLP platform."
 ---
 
 # Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
 
 This article helps you to learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec.
 
-The migration assistant tool is a Windows-based desktop application that will migrate your Symantec data loss prevention (DLP) policies to Microsoft Purview Data Loss Prevention. This tool takes you through the five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can use the migration assistant tool to create DLP policies in test mode. Policies in test mode won't impact your live data or impact your existing business processes.
+The migration assistant is a Windows-based desktop application that will migrate your Symantec data loss prevention (DLP) policies to Microsoft Purview Data Loss Prevention. This takes you through the five-step migration process. It accepts Symantec DLP policy XML exports, performs mapping, and creates equivalent DLP policies through PowerShell scripts. You can use the migration assistant to create DLP policies in test mode. Policies in test mode won't impact your live data or impact your existing business processes.
 
 ## What can the migration assistant help with?
 
@@ -37,7 +37,7 @@ The migration assistant helps with some of the tasks involved in a Data Loss Pre
 - The migration assistant provides you with a detailed migration report that includes the migration status and recommendations at the policy level.
 - The migration assistant ensures that your DLP policy migration project is private and takes place within the boundaries of your organization.
 
-## How does the migration assistant for Symantec work?
+## How does the migration assistant work?
 
 Here's how the migration process works:
 
