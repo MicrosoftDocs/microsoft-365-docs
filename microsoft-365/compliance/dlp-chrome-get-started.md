@@ -1,5 +1,5 @@
 ---
-title: "Get started with the Microsoft Purview Extension"
+title: "Get started with the Microsoft Purview Chrome Extension"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -24,17 +24,17 @@ search.appverid:
 description: "Prepare for and deploy the Microsoft Purview Extension."
 ---
 
-# Get started with Microsoft Purview Extension
+# Get started with Microsoft Purview Chrome Extension
 
-Use these procedures to roll out the Microsoft Purview Extension.
+Use these procedures to roll out the Microsoft Purview Chrome Extension.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 
-To use Microsoft Purview Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+To use Microsoft Purview Chrome Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
-- [Learn about Microsoft Purview Extension](dlp-chrome-learn-about.md)
+- [Learn about Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)

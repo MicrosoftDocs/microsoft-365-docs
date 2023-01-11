@@ -1175,7 +1175,7 @@
             href: dlp-teams-default-policy.md
           - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Purview Extension
+          - name: Learn about the Microsoft Purview Chrome Extension
             href: dlp-chrome-learn-about.md
           - name: Learn about the Microsoft Purview Firefox Extension (preview)
             href: dlp-firefox-extension-learn.md
@@ -1207,7 +1207,7 @@
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Information Protection
             href: device-onboarding-configure-proxy.md
-          - name: Get started with the Microsoft Purview Extension
+          - name: Get started with the Microsoft Purview Chrome Extension
             href: dlp-chrome-get-started.md
           - name: Get started with the Microsoft Purview Firefox extension (preview)
             href: dlp-firefox-extension-get-started.md
