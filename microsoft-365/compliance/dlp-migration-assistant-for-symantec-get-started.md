@@ -57,7 +57,7 @@ You must have PowerShell v7.2.6 or higher installed on your machine, before the 
 You must have installed .NET v6.0.401 or higher on your machine, before the migration assistant can be installed. [Download .NET 6 core SDK on your machine](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-6.0.401-windows-x64-installer).
 
 > [!IMPORTANT]
-> If you don't already have .NET v6.0.401 installed and attempt to install it through the migration tool installation, you will be directed to the wrong version of .NET.  You must have .net v6.0.401 installed.
+> If you don't already have .NET v6.0.401 installed and attempt to install it through the migration assistant installation, you will be directed to the wrong version of .NET.  You must have .Net v6.0.401 installed.
 
 ### Export Symantec DLP policies
 
@@ -69,7 +69,7 @@ You need to export these policies as XML files from Symantec DLP. Export the pol
 
 Follow these steps to install the Microsoft Purview Data Loss Prevention migration assistant for Symantec:
 
-1. Download and launch **[MigrationAssistantforMicrosoftPurviewDLP.msi](https://aka.ms/DLPMigrationAssistant)** file.
+1. Download and launch the **[migration assistant](https://aka.ms/DLPMigrationAssistant)** file.
 2. The following dialog box will open. Select **Next**.
 3. Review the End-User License Agreement.
 4. After reviewing, accept the License Agreement and select **Next**.
@@ -80,7 +80,7 @@ Follow these steps to install the Microsoft Purview Data Loss Prevention migrati
 
 ## Next steps
 
-Now that you have installed Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview), you're ready to move on to your next step where you use the migration tool.
+Now that you have installed Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview), you're ready to move on to your next step where you use the migration assistant.
 
 - [Using the Microsoft Purview Data Loss Prevention migration assistant for Symantec](dlp-migration-assistant-for-symantec-use.md)
 
