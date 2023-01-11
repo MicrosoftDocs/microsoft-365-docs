@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
-ms.author: v-jweston
+ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: 
@@ -21,6 +21,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+ms.date: 1/11/2023
 ---
 
 # Attack surface reduction rules overview
@@ -66,7 +67,17 @@ See [Requirements](enable-attack-surface-reduction.md#requirements) in the "Enab
 
 ## Audit mode for evaluation
 
-Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would affect your organization if enabled. Run all rules in audit mode first so you can understand how they affect your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they might perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without reducing productivity.
+### Audit mode
+
+Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would affect your organization if enabled. Run all rules in audit mode first so you can understand how they affect your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they might perform tasks in ways that seem similar to malware. 
+
+### Exclusions
+
+By monitoring audit data and [adding exclusions](attack-surface-reduction-rules-deployment-test.md) for necessary applications, you can deploy attack surface reduction rules without reducing productivity. 
+
+### Per-rule exclusions
+
+For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md).
 
 ## Warn mode for users
 
