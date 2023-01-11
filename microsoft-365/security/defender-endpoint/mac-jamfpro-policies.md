@@ -789,7 +789,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 ## Step 11: Deploy Microsoft Defender for Endpoint on macOS
 
 > [!NOTE]
-> In the steps below, the name of the `.pkg` file and the **Display Name** values are examples. In these examples, `200329` represents the date on which the
+> In the steps that follow, the name of the `.pkg` file and the **Display Name** values are examples. In these examples, `200329` represents the date on which the
 > package and policy were created (in `yymmdd` format), and `v100.86.92` represents the version of the Microsoft Defender application that is being deployed.
 > These values should be updated to conform with the naming convention you use in your environment for Packages and Policies.
 
