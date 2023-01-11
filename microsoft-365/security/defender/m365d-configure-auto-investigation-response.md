@@ -60,7 +60,7 @@ Whether automated investigations run, and whether remediation actions are taken 
 
 ## Review your security and alert policies in Office 365
 
-Microsoft provides built-in [alert policies](../../compliance/alert-policies.md) that help identify certain risks. These risks include Exchange admin permissions abuse, malware activity, potential external and internal threats, and data lifecycle management risks. Some alerts can trigger [automated investigation and response in Office 365](../office-365-security/office-365-air.md). Make sure your [Defender for Office 365](../office-365-security/defender-for-office-365.md) features are configured correctly.
+Microsoft provides built-in [alert policies](../../compliance/alert-policies.md) that help identify certain risks. These risks include Exchange admin permissions abuse, malware activity, potential external and internal threats, and data lifecycle management risks. Some alerts can trigger [automated investigation and response in Office 365](../office-365-security/air-about.md). Make sure your [Defender for Office 365](../office-365-security/defender-for-office-365.md) features are configured correctly.
 
 Although certain alerts and security policies can trigger automated investigations, *no remediation actions are taken automatically for email and content*. Instead, all remediation actions for email and email content await approval by your security operations team in the [Action center](m365d-action-center.md).
 
@@ -76,7 +76,7 @@ Security settings in Office 365 help protect email and content. To view or chang
    - [Safe Attachments](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [Safe Links](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
 
-3. Make sure [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../office-365-security/mdo-for-spo-odb-and-teams.md) is turned on.
+3. Make sure [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../office-365-security/safe-attachments-for-spo-odfb-teams-about.md) is turned on.
 
 4. Make sure [Zero-hour auto purge (ZAP) in Exchange Online](../office-365-security/zero-hour-auto-purge.md) is in effect.
 

@@ -9,7 +9,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - tier1
 - purview-compliance
@@ -29,7 +29,7 @@ To help you with investigating compromise email accounts, we're now auditing acc
 
 ## The MailItemsAccessed mailbox-auditing action
 
-The new MailItemsAccessed action is part of the new [Audit (Premium)](audit-premium.md) functionality. It's part of [Exchange mailbox auditing](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) and is enabled by default for users that are assigned an Office 365 or Microsoft 365 E5 license or for organizations with a Microsoft 365 E5 Compliance add-on subscription.
+The new MailItemsAccessed action is part of the new [Audit (Premium)](audit-premium.md) functionality. It's part of [Exchange mailbox auditing](/microsoft-365/compliance/audit-mailboxes) and is enabled by default for users that are assigned an Office 365 or Microsoft 365 E5 license or for organizations with a Microsoft 365 E5 Compliance add-on subscription.
 
 The MailItemsAccessed mailbox-auditing action covers all mail protocols: POP, IMAP, MAPI, EWS, Exchange ActiveSync, and REST. It also covers both types of accessing mail: *sync* and *bind*.
 

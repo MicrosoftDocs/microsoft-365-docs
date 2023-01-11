@@ -27,11 +27,11 @@ description: "This article describes how to set up Audit (Standard) so you can s
 
 # Set up Microsoft Purview Audit (Standard)
 
-Microsoft Purview Audit (Standard) in Microsoft 365 lets you search for audit records for activities performed in the different Microsoft 365 services by users and admins. Because Audit (Standard) is enabled by default for most Microsoft 365 and Office 365 organizations, there's only a few things you need to do before you and others in your organization can search the audit log.
+Microsoft Purview Audit (Standard) in Microsoft 365 lets you search for audit records for activities performed in the different Microsoft 365 services by users and admins. Because Audit (Standard) is enabled by default for most Microsoft 365 and Office 365 organizations, there's only a few things you need to do before you, and others in your organization can search the audit log.
 
 This article discusses the following steps necessary to set up Audit (Standard).
 
-![Steps to set up Audit (Standard).](../media/BasicAuditingWorkflow.png)
+![Steps to set up Audit (Standard).](../media/audit-standard-workflow.png)
 
 These steps include ensuring the proper organizational subscriptions and user licensing required to generate and preserve audit records and assigning permissions to team members of your security operations, IT, compliance, and legal teams so that can search the audit log.
 
@@ -45,13 +45,13 @@ Licensing for Audit (Standard) requires the appropriate organization subscriptio
 
 When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for your organization. In Audit (Standard), audit records are retained and searchable in the audit log for 90 days.
 
-For a list of subscription and licensing requirements for Audit (Standard), see [Auditing solutions in Microsoft 365](audit-solutions-overview.md#licensing-requirements).
+For a list of subscription and licensing requirements for Audit (Standard), see [Microsoft Purview auditing solutions](audit-solutions-overview.md#licensing-requirements).
 
 ## Step 2: Assign permissions to search the audit log
 
-Admins and members of investigation teams must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
+Admins and members of investigation teams must be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online to search or export the audit log. By default, these roles are assigned to the *Compliance Management* and *Organization Management* role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the *Organization Management* role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the *View-Only Audit Logs* or *Audit Logs* role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
-The following screenshot shows the two audit-related roles assigned to the Organization Management role group in the Exchange admin center.
+The following screenshot shows the two audit-related roles assigned to the *Organization Management* role group in the Exchange admin center.
 
 ![Audit roles assigned to role group in Exchange Online.](../media/EACAuditRoles.png)
 

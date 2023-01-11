@@ -33,7 +33,7 @@ ms.service: microsoft-365-security
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365.md). If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Safe Links in [Microsoft Defender for Office 365](defender-for-office-365.md) provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links.md).
+Safe Links in [Microsoft Defender for Office 365](defender-for-office-365.md) provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
 
 Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
@@ -70,7 +70,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
   - To create, modify, and delete Safe Links policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Microsoft 365 Defender portal **and** a member of the **Organization Management** role group in Exchange Online.
   - For read-only access to Safe Links policies, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
-  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md) and [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
@@ -101,7 +101,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 4. On the **Users and domains** page that appears, identify the internal recipients that the policy applies to (recipient conditions):
    - **Users**: The specified mailboxes, mail users, or mail contacts.
    - **Groups**:
-     - Members of the specified distribution groups (including non-mail-enabled security groups within distribution groups) or mail-enabled security groups.
+     - Members of the specified distribution groups (including non-mail-enabled security groups within distribution groups) or mail-enabled security groups (dynamic distribution groups are not supported).
      - The specified Microsoft 365 Groups.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
@@ -142,7 +142,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
      1. In the **Manage URLs to not rewrite** flyout that appears, click ![Add URLs icon.](../../media/m365-cc-sc-create-icon.png) **Add URLs**.
      2. In the **Add URLs** flyout that appears, type the URL or value that you want, select the entry that appears below the box, and then click **Save**. Repeat this step as many times as necessary.
 
-        For entry syntax, see [Entry syntax for the "Do not rewrite the following URLs" list](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
+        For entry syntax, see [Entry syntax for the "Do not rewrite the following URLs" list](safe-links-about.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 
         To remove an entry, click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the entry.
 
@@ -173,15 +173,15 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
    - **Click protection settings** section:
      - **Track user clicks**: Leave this option selected to enable the tracking user clicks on URLs. If you select this option, the following options are available:
-       - **Let users click through to the original URL**: Clear this option to block users from clicking through to the original URL in [warning pages](safe-links.md#warning-pages-from-safe-links).
+       - **Let users click through to the original URL**: Clear this option to block users from clicking through to the original URL in [warning pages](safe-links-about.md#warning-pages-from-safe-links).
        - **Display the organization branding on notification and warning pages**: For more information about customized branding, see [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md).
 
    For detailed information about these settings, see:
 
-   - [Safe Links settings for email messages](safe-links.md#safe-links-settings-for-email-messages).
-   - [Safe Links settings for Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
-   - [Safe Links settings for Office apps](safe-links.md#safe-links-settings-for-office-apps).
-   - [Click protection settings in Safe Links policies](safe-links.md#click-protection-settings-in-safe-links-policies)
+   - [Safe Links settings for email messages](safe-links-about.md#safe-links-settings-for-email-messages).
+   - [Safe Links settings for Microsoft Teams](safe-links-about.md#safe-links-settings-for-microsoft-teams).
+   - [Safe Links settings for Office apps](safe-links-about.md#safe-links-settings-for-office-apps).
+   - [Click protection settings in Safe Links policies](safe-links-about.md#click-protection-settings-in-safe-links-policies)
 
    For more the recommended values for Standard and Strict policy settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
@@ -307,7 +307,7 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 
 > [!NOTE]
 >
-> - For details about the entry syntax to use for the _DoNotRewriteUrls_ parameter, see [Entry syntax for the "Do not rewrite the following URLs" list](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
+> - For details about the entry syntax to use for the _DoNotRewriteUrls_ parameter, see [Entry syntax for the "Do not rewrite the following URLs" list](safe-links-about.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 >
 > - For additional syntax that you can use for the _DoNotRewriteUrls_ parameter when you modify existing safe links policies by using the **Set-SafeLinksPolicy** cmdlet, see the [Use PowerShell to modify safe links policies](#use-powershell-to-modify-safe-links-policies) section later in this article.
 
@@ -421,7 +421,7 @@ For detailed syntax and parameter information, see [Get-SafeLinksRule](/powershe
 
 You can't rename a safe links policy in PowerShell (the **Set-SafeLinksPolicy** cmdlet has no _Name_ parameter). When you rename a Safe Links policy in the Microsoft 365 Defender portal, you're only renaming the safe links _rule_.
 
-The only additional consideration for modifying safe links policies in PowerShell is the available syntax for the _DoNotRewriteUrls_ parameter (the ["Do not rewrite the following URLs" list](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)):
+The only additional consideration for modifying safe links policies in PowerShell is the available syntax for the _DoNotRewriteUrls_ parameter (the ["Do not rewrite the following URLs" list](safe-links-about.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)):
 
 - To add values that will replace any existing entries, use the following syntax: `"Entry1","Entry2,..."EntryN"`.
 - To add or remove values without affecting other existing entries, use the following syntax: `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`
@@ -545,7 +545,7 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 For detailed syntax and parameter information, see [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-To verify that Safe Links is scanning messages, check the available Microsoft Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer.md).
+To verify that Safe Links is scanning messages, check the available Microsoft Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer-about.md).
 
 ## How do you know these procedures worked?
 

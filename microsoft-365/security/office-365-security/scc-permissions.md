@@ -1,5 +1,5 @@
 ---
-title: Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals
+title: Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -15,34 +15,39 @@ ms.localizationpriority: medium
 search.appverid: 
   - MOE150
   - MET150
-description: Admins can learn about the roles and role groups in the Microsoft 365 Defender portal and the Microsoft Purview compliance portal.
+description: Admins can learn about the roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance.
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
 
-# Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals
+# Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-The [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal) and [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center) have replaced the Security & Compliance Center as the place to manage security and complinace-related roles and role groups for your organization. For more information about permissions within these portals, see the following articles:
+The [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal) and [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center) have replaced the Security & Compliance Center as the place to manage Microsoft Defender for Office 365 and Microsoft Purview compliance roles and role groups for your organization. For more information about permissions within these portals, see the following articles:
 
-- [Permissions in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/permissions-microsoft-365-security-center)
-- [Permissions in the Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center-permissions)
+- [Email & collaboration permissions in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/mdo-portal-permissions)
+- [Microsoft Purview solutions permissions in the Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center-permissions)
 
-These portals let you grant permissions to people who perform tasks like device management, data loss prevention, eDiscovery, retention, and so on. These people can perform only the tasks that you explicitly grant them access to. To access these portals, users need to be a global admin or a member of one or more security or compliance role groups.
+These portals let you grant permissions to people who perform tasks like device management, data loss prevention, eDiscovery, retention, and so on. These people can perform only the tasks that you explicitly grant them access to. To access these portals, users need to be a global admin or a member of one or more Defender for Office 365 (Email & collaboration) or Purview compliance groups.
 
-Permissions in these portals are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by Exchange, so if you're familiar with Exchange, granting permissions in these portals will be very similar. It's important to remember, however, that Exchange role groups and security and compliance role groups don't share membership or permissions. While both have an Organization Management role group, they aren't the same. The permissions they grant, and the members of the role groups, are different. This article contains the inventory of security and compliance roles and role groups.
+Permissions in these portals are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by Exchange, so if you're familiar with Exchange Online, granting permissions in these portals will be very similar. But, It's important to remember that role groups in Exchange Online and role groups for Defender for Office 365 or Purview compliance don't share membership or permissions. For example, while an Organization Management role group exists in Exchange Online, the permissions granted and role group members are different than the Organization Management role group in Defender for Office 365 and Purview compliance.
 
-## Role groups in the Defender and compliance portals
-
-The following table lists the default role groups that are available in the Microsoft 365 Defender and Microsoft Purview compliance portals, and the roles that are assigned to the role groups by default. To grant permissions to a user to perform a security or compliance task, add them to the appropriate role group.
-
-Managing permissions in the portals only gives users access to the security and compliance features that are available within the portals. If you want to grant permissions to other security and compliance features that aren't in the portals, such as Exchange mail flow rules (also known as transport rules), you need to use the Exchange admin center (EAC). For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+This article contains the inventory of Defender for Office 365 and Purview compliance roles and role groups.
 
 > [!NOTE]
-> To view the **Permissions** tab in the portals, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
+> In the Microsoft 365 Defender preview program, a different Microsoft Defender 365 RBAC model is also available. The permissions in this RBAC model are different from the Defender for Office 365 permissions as described in this article. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).
+
+## Role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance
+
+The table in this section lists the default role groups that are available in the Microsoft 365 Defender and Microsoft Purview compliance portals, and the roles that are assigned to the role groups by default. To grant permissions to a user to perform taks in Defender for Office 365 or Purview compliance, add them to the appropriate role group.
+
+Managing permissions in Defender for Office 365 or Purview compliance gives users access to security and compliance features that are available within their respective portals. To grant permissions to other features, such as Exchange mail flow rules (also known as transport rules), you need to grant permissions in Exchange Online. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+
+> [!NOTE]
+> To view the **Permissions** tab as described in this article, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
 
 |Role group|Description|Default roles assigned|
 |---|---|---|
@@ -84,7 +89,7 @@ Managing permissions in the portals only gives users access to the security and 
 |**Privacy Management Contributors**|Manage contributor access for privacy management cases.|Privacy Management Permanent contribution <p><p> Privacy Management Temporary contribution|
 |**Privacy Management Investigators**|Investigators of privacy management solution that can investigate policy matches, view message content, and take remediation actions.|Case Management <p><p> Data Classification Content Viewer <p> Data Classification List Viewer <p> Privacy Management Investigation <p> View-Only Case|
 |**Privacy Management Viewers**|Viewer of privacy management solution that can access the available dashboards and widgets.|Data Classification List Viewer <p><p> Privacy Management Viewer|
-|**Quarantine Administrator**|Members can access all Quarantine actions. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)|Quarantine|
+|**Quarantine Administrator**|Members can access all Quarantine actions. For more information, see [Manage quarantined messages and files as an admin in EOP](quarantine-admin-manage-messages-files.md)|Quarantine|
 |**Records Management**|Members can configure all aspects of records management, including retention labels and disposition reviews.|Disposition Management <p><p> RecordManagement <p> Retention Management|
 |**Reviewer**|Members can access review sets in [eDiscovery (Premium)](../../compliance/overview-ediscovery-20.md) cases. Members of this role group can see and open the list of cases on the **eDiscovery > Advanced** page in the Microsoft Purview compliance portal that they're members of. After the user accesses an eDiscovery (Premium) case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Members of this role group can only access the data in a review set.|Review|
 |**Security Administrator**|Members have access to a number of security features of Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and the Defender and compliance portals. <p> By default, this role group may not appear to have any members. However, the Security Administrator role from Azure Active Directory is assigned to this role group. Therefore, this role group inherits the capabilities and membership of the Security Administrator role from Azure Active Directory. <p> To manage permissions centrally, add and remove group members in the Azure Active Directory admin center. For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). If you edit this role group in these portals (membership or roles), those changes apply only to the security and compliance areas and not to any other services. <p> This role group includes all of the read-only permissions of the Security reader role, plus a number of additional administrative permissions for the same services: Azure Information Protection, Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and the Defender and compliance portals.|Audit Logs <p><p> Device Management <p> DLP Compliance Management <p> IB Compliance Management <p> Manage Alerts <p> Quarantine <p> Security Administrator <p> Sensitivity Label Administrator <p> Tag Contributor <p> Tag Manager <p> Tag Reader <p> View-Only Audit Logs <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
@@ -97,11 +102,11 @@ Managing permissions in the portals only gives users access to the security and 
 > [!NOTE]
 > <sup>1</sup> This role group doesn't assign members the permissions necessary to search the audit log or to use any reports that might include Exchange data, such as the DLP or Defender for Office 365 reports. To search the audit log or to view all reports, a user has to be assigned permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet. Global admins can search the audit log and view all reports because they're automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Search the audit log in the compliance portal](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
-## Roles in the Defender and compliance portals
+## Roles in Microsoft Defender for Office 365 and Microsoft Purview compliance
 
-The following table lists the available roles and the role groups that they're assigned to by default.
+The table in this section lists the available roles and the role groups that they're assigned to by default.
 
-Note that the following roles aren't assigned to the Organization Management role group by default:
+The following roles aren't assigned to the Organization Management role group by default:
 
 - Attack Simulator Admin
 - Attack Simulator Payload Author

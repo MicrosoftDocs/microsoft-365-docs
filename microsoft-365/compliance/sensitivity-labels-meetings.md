@@ -21,9 +21,9 @@ description: "Configure sensitivity labels to protect calendar items, and Teams 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is currently rolling out in preview and subject to change. If you don't see all the options referenced on this page, try again in a few days.
+> This feature is currently rolling out in preview and subject to change.
 > 
-> Also, the Teams options require a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience). For more information about this new premium add-on for Teams, see the [blog post announcement](https://www.microsoft.com/microsoft-365/blog/2022/10/12/introducing-microsoft-teams-premium-the-better-way-to-meet) and the official [Teams Premium site](https://www.microsoft.com/microsoft-teams/premium).
+> You won't be able to configure all the options referenced on this page if a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience) isn't found for your tenant. For those settings, you'll see an information bar in the Microsoft Purview compliance portal that your organization doesn't have this license.
 
 In addition to using [sensitivity labels](sensitivity-labels.md) to protect documents and emails, you can extend sensitivity labels to protect meeting invites and responses that use Outlook and Teams, and to protect Teams meetings and chat:
 
@@ -79,6 +79,8 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 ## Limitations
 
+- Preventing copying chat has some limitations that are listed in the [Prevent copying chat to the clipboard label setting](#prevent-copying-chat-to-the-clipboard-label-setting) section on this page.
+
 - Calendar items don't support label encryption that uses S/MIME or Double Key Encryption. You must use the default encryption that uses the Azure Rights Management service from Azure Information Protection, with either admin-defined permissions (the option **Assign permissions now**) or user-defined permissions (the option **Let users assign permissions**).
 
 - Automatic and recommended labeling isn't supported.
@@ -87,11 +89,11 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 **Specific to Outlook:**
 
-- If somebody forwards a meeting invite from an email client other than Outlook, although any applied encryption persists, the sensitivity label is dropped.
-
 - No support for mailboxes on-premises; user mailboxes must be in Exchange Online.
 
 - No support for group calendar meeting invites; participants must be specific users.
+
+- As with labeled and encrypted email, if somebody forwards a meeting invite from an email client other than Outlook, any applied encryption persists but information about the sensitivity label is removed from the email headers.
 
 - When a mobile email client receives a labeled and encrypted meeting invite, the invite message is decrypted inline if the client supports encrypted email. However, in the calendar, the invite can't be decrypted inline and displays a link to view it in the encryption portal.
 
@@ -174,11 +176,14 @@ Other label policy settings that are specific just to calendar items, Teams meet
 - **Apply a default label to meetings and calendar events**
 - **Require users to apply a label to their meetings and calendar events**
 
+> [!NOTE]
+> These settings are independent from, rather than override, the similar policy settings for emails. For example, if you don't select the setting to apply a default label to meetings and calendar events, but do select the setting to apply a default label for emails, no default label is applied to calendar events.
+
 #### Prevent copying chat to the clipboard label setting
 
 The label setting to prevent copying chat to the clipboard is enforced for all channel chats, even outside channel meetings. For non-channel meetings, it's enforced only for meetings.
 
-Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users.
+Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users. It is supported for guest user accounts in your tenant. For meetings, it's also not supported for users who join the chat but weren't invited to the meeting.
 
 The methods supported to prevent copying chat: Select the text and then right-click \> **Copy** or Ctrl+C. Copying using developer tools or third-party apps won't be prevented.
 
@@ -197,5 +202,8 @@ This association is a setting that's available only when you edit an existing la
 
 However, if you select a label that applies encryption, it must be a label with admin-defined permissions (**Assign permissions now**) rather than user-defined permissions (**Do Not Forward** and **Encrypt-Only**).
 
+## End-user documentation
 
+To help end users understand how to apply and change sensitivity labels in Teams, see [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-abd9f361-6a18-4256-ae46-5d429bc16ba6). For calendar items in Outlook, the labeling experience is very similar to labeling emails. For Outlook, probably the only additional information users need is [which Outlook clients](#requirements) currently support this labeling feature.
 
+Remember to provide your own guidance which named label to apply for different types of meetings. Then, users can focus on the label name instead of the individual settings applied by the label.

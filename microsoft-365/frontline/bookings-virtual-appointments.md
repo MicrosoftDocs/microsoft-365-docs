@@ -28,7 +28,7 @@ description: Learn how to schedule, manage, and conduct virtual appointments usi
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/05/2022
+ms.date: 01/05/2023
 ---
 
 # Virtual Appointments with Microsoft Teams and the Bookings app
@@ -47,13 +47,13 @@ The virtual appointments are held through Microsoft Teams meetings, which offer 
 
 With Bookings, you get an experience that's tailored to your industry. Here's a few examples of how you can use it in your organization:
 
-|Industry | Examples |
+|Industry|Examples|
 |---------|---------|
-|Financial services    |  Virtual appointments for remote sales and service<br/>Schedule and manage appointments for bank relationship managers, financial advisors, and claims adjusters, just to name a few, to serve your customers with increased efficiency and convenience.  |
-|Retail   | Virtual fittings and consultations <br/>Schedule and manage appointments for your sales associates, product experts, and design consultants to conduct virtual fittings and consultations with customers.   |
-|Healthcare   |  Virtual appointments for patient care <br/>Schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.   |
+|Financial services|Virtual appointments for remote sales and service<br/>Schedule and manage appointments for bank relationship managers, financial advisors, and claims adjusters, just to name a few, to serve your customers with increased efficiency and convenience.|
+|Retail|Virtual fittings and consultations <br/>Schedule and manage appointments for your sales associates, product experts, and design consultants to conduct virtual fittings and consultations with customers.|
+|Healthcare|Virtual appointments for patient care <br/>Schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.|
 
-With any Microsoft 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, attendees can wait in a pre-appointment waiting room and join through a browser without having to download Teams. With [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview), your organization gets advanced Virtual Appointments capabilities on top of Bookings to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and analytics.
+With any Microsoft 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, attendees can wait in a pre-appointment waiting room and join through a browser without having to download Teams. With [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview), your organization gets advanced Virtual Appointments capabilities on top of Bookings to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and analytics.
 
 This article gives you an overview of how to schedule, manage, and conduct virtual appointments using the Bookings app in Teams.
 
@@ -101,6 +101,9 @@ You can configure options such as whether attendees can [join from a a desktop o
 ##### Set up SMS text notifications
 
 ![Information icon](media/info.png) **This feature is moving to [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview). Users can continue using this feature during the preview period. After the preview, users need a Teams Premium license.**
+
+> [!NOTE]
+> We'll be providing unlimited SMS notifications through March 1, 2023 (previously January 31, 2023) for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 

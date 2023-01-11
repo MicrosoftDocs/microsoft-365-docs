@@ -21,7 +21,7 @@ search.appverid: met150
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -32,12 +32,12 @@ Admins configure user reported messages to go to a designated reporting mailbox,
 Microsoft provides the following tools for users to report good and bad messages:
 
 - Built-in reporting in Outlook on the web (formerly known as Outlook Web App or OWA).
-- The Microsoft Report Message or Report Phishing add-ins. The add-ins work on all virtually all Outlook platforms, including Outlook on the web. For more information, see [Enable the Microsoft Report Message or Report Phishing add-ins](enable-the-report-message-add-in.md).
+- The Microsoft Report Message or Report Phishing add-ins. The add-ins work on all virtually all Outlook platforms, including Outlook on the web. For more information, see [Enable the Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).
 
-For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 > [!NOTE]
-> Admins in Microsoft 365 organizations with Exchange Online mailboxes use the **Submissions** page in the Microsoft 365 Defender portal to submit messages to Microsoft. For instructions, see [Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Admins in Microsoft 365 organizations with Exchange Online mailboxes use the **Submissions** page in the Microsoft 365 Defender portal to submit messages to Microsoft. For instructions, see [Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft](submissions-admin.md).
 >
 > Admins can view reported messages on the **Submissions** page at <https://security.microsoft.com/reportsubmission> **only** if both of the following settings are configured on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>:
 >
@@ -73,7 +73,7 @@ Based on the [user reported message settings](submissions-user-reported-messages
 
 ### Use the built-in Report button in Outlook on the web to report messages that aren't junk
 
-In Outlook on the web, select one or messages in the Junk Email folder, click **Report**, and then select **Not junk** in the dropdown list.
+In Outlook on the web, select one or more messages in the Junk Email folder, click **Report**, and then select **Not junk** in the dropdown list.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/owa-report-as-not-junk.png" alt-text="The results of clicking the Report button after selecting multiple messages in the Junk Email folder in Outlook on the web." lightbox="../../media/owa-report-as-not-junk.png":::
@@ -84,8 +84,8 @@ Based on the [user reported message settings](submissions-user-reported-messages
 
 > [!NOTE]
 >
-> - The procedures in this section require the Microsoft Report Message or Report Phishing add-ins to be installed. For more information, see [Enable the Microsoft Report Message or the Report Phishing add-in](enable-the-report-message-add-in.md) installed.
-> - The versions of Outlook that are supported by the Report Message and Report Phishing add-ins are described [here](enable-the-report-message-add-in.md#what-do-you-need-to-know-before-you-begin).
+> - The procedures in this section require the Microsoft Report Message or Report Phishing add-ins to be installed. For more information, see [Enable the Microsoft Report Message or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md) installed.
+> - The versions of Outlook that are supported by the Report Message and Report Phishing add-ins are described [here](submissions-users-report-message-add-in-configure.md#what-do-you-need-to-know-before-you-begin).
 
 ### Use the Report Message add-in to report junk and phishing messages in Outlook
 
@@ -152,7 +152,7 @@ You can report phishing messages from any email folder.
 
 To review messages that users have reported to Microsoft, admins have these options:
 
-- Use the **User reported** tab on the **Submissions** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/reportsubmission>. For more information, see [View user reported messages to Microsoft](admin-submission.md#view-user-reported-messages-to-microsoft).
+- Use the **User reported** tab on the **Submissions** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/reportsubmission>. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
 
 - Create a mail flow rule (also known as a transport rule) to send copies of reported messages to a recipient for review. For instructions, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
 
