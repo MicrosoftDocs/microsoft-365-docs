@@ -111,7 +111,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
     pkgrepo.managed:
       - humanname: Microsoft Defender Repository
       {% if grains['os_family'] == 'Debian' %}
-      - name: deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
+      - name: deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/[distro]/[version]/[channel] [codename] main
       - dist: [codename] 
       - file: /etc/apt/sources.list.d/microsoft-[channel].list
       - key_url: https://packages.microsoft.com/keys/microsoft.asc
