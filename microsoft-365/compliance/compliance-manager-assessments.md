@@ -90,7 +90,7 @@ To create an assessment, you'll use a guided process to select a template and de
 
 #### Create assessments based on recommendations for your org type
 
-Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we'll recommend which templates to use from our library of over 300 templates. Simply choose among the recommended templates for quick setup of multiple assessments all at once.
+Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we'll recommend which templates to use from our library of over 300 templates. Choose among the recommended templates for quick setup of multiple assessments all at once.
 
 To create one or more assessments based on our recommendations, select **Add Recommended Assessments** from your **Assessments** page and follow these steps:
 
@@ -101,7 +101,7 @@ To create one or more assessments based on our recommendations, select **Add Rec
 
 #### Create an assessment using a guided process
 
-1. From your **Assessments** page, select **Add assessment**. This will put you into the assessment creation wizard.
+1. From your **Assessments** page, select **Add assessment** to begin the assessment creation wizard.
 
 2. On the **Base template** screen, select **Select template** to choose the template for your assessment.
 
@@ -109,7 +109,7 @@ To create one or more assessments based on our recommendations, select **Add Rec
 
 4. **Product, name, and group:** Set these properties to identify your assessment, choose which product it will be evaluating, and assign it to a group.
 
-    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and cannot be changed. If you're using a universal template, select whether you're creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select a pre-defined Microsoft product when using a universal template.
+    - **Product**: Select the product you want your assessment to apply to. If you're using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and can't be changed. If you're using a universal template, select whether you're creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. You can't select a pre-defined Microsoft product when using a universal template.
     - **Assessment name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you'll receive an error asking you to create a different name.
     - **Group**: Assign your assessment to a group. You can either:
         - Select **Use existing group** to assign it to a group you've already created; or

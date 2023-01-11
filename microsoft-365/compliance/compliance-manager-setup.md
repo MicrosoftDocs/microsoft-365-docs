@@ -273,19 +273,17 @@ To delete a user’s history, follow the steps below:
 
 ## User access
 
-The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments. This section is also where you can revoke access to an assessment by removing their assessment-specific role.
-
-To remove a user's access to one or more assessments:
+The **User access** section of **Settings** displays a list of all users who have a role that allows access to one or more assessments and allows you to make changes to role assignments. To add or remove a user's access to one or more assessments, follow the steps below:
 
 1. In **Compliance Manager settings,** select **User access**.
 
-1. Select the checkbox next to the name of the user whose role you want to edit. Only one user can be selected at a time.
+1. Select the checkbox next to the name of one or more users whose role you want to edit.
 
-1. Select **Manage assessments**. An **Edit assessment permissions** flyout pane will appear.
+1. From the **Edit assessment roles** dropdown menu above the list of names, select **Add assessment permissions** or **Remove assessment permissions**.
 
-1. Go to the tab that corresponds to the role you want to remove: Reader, Assessor, or Contributor.
+1. If adding a role for an assessment: From the flyout pane, go to the tab that corresponds to the role you want to add: Reader, Assessor, or Contributor. Then select **Add assessments**, then on the next flyout pane, choose the checkbox next to the assessments and select **Apply**, then select **Save**.
 
-1. Select the button next to the assessments for which you want to remove access, and select **Remove assessment**.
+1. If removing a role: From the flyout pane, go to the tab that corresponds to the role you want to remove: Reader, Assessor, or Contributor. Select the button next to the assessments for which you want to remove access, and select the X mark in the **Remove** column.
 
 1. A **Remove access?** confirmation box appears. Select **Confirm** to remove the user's role, or select **Cancel** to cancel. The name of the assessments will now be removed from the role tab.
 
