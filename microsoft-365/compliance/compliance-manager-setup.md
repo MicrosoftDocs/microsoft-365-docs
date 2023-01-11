@@ -281,9 +281,9 @@ The **User access** section of **Settings** displays a list of all users who hav
 
 1. From the **Edit assessment roles** dropdown menu above the list of names, select **Add assessment permissions** or **Remove assessment permissions**.
 
-1. **For adding a role**: From the flyout pane, go to the tab that corresponds to the role you want to add: Reader, Assessor, or Contributor. Then select **Add assessments**, then on the next flyout pane, choose the checkbox next to the assessments and select **Apply**, then select **Save**.
+1. **For adding a role**: From the flyout pane, go to the tab that corresponds to the role you want to add (Reader, Assessor, or Contributor), then select **Add assessments**. On the next flyout pane, choose the checkbox next to the assessments and select **Apply**, then select **Save**.
 
-1. **For removing a role**: From the flyout pane, go to the tab that corresponds to the role you want to remove: Reader, Assessor, or Contributor. Select the button next to the assessments for which you want to remove access, and select the X mark in the **Remove** column.
+1. **For removing a role**: From the flyout pane, go to the tab that corresponds to the role you want to remove (Reader, Assessor, or Contributor). Select the button next to the assessments for which you want to remove access, and select the X mark in the **Remove** column.
 
 1. A **Remove access?** confirmation box appears. Select **Confirm** to remove the user's role, or select **Cancel** to cancel. The name of the assessments will now be removed from the role tab.
 
