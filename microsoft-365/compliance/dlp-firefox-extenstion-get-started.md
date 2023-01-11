@@ -33,7 +33,7 @@ Use these procedures to roll out the Microsoft Purview Firefox Extension.
 
 To use Microsoft Purview Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
-- [Learn about Microsoft Purview Extension](dlp-chrome-learn-about.md)
+- [Learn about Microsoft Purview Firefox Extension](dlp-firefox-extension-learn.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
@@ -101,12 +101,12 @@ Deploying the extension is a multi-phase process. You can choose to install on o
 3. [Deploy using Microsoft Endpoint Manager](#deploy-using-microsoft-endpoint-manager)
 4. [Deploy using Group Policy](#deploy-using-group-policy)
 5. [Test the extension](#test-the-extension)
-6. [Use the Alerts Management Dashboard to viewing Chrome DLP alerts](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
-7. [Viewing Chrome DLP data in activity explorer](#viewing-chrome-dlp-data-in-activity-explorer)
+6. [Use the Alerts Management Dashboard to view Firefox DLP alerts](#use-the-alerts-management-dashboard-to-view-firefox-dlp-alerts)
+7. [Viewing Firefox DLP data in activity explorer](#viewing-firefox-dlp-data-in-activity-explorer)
 
 ### Prepare infrastructure
 
-If you are rolling out the extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The extension will bypass the restrictions of both lists for those computers where it is installed.
+If you are rolling out the extension to all your monitored Windows 10 devices, you should remove Mozilla Firefox from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Firefox on the unallowed browser or unallowed app lists. The extension will bypass the restrictions of both lists for those computers where it is installed.
 
 ### Prepare your devices
 
@@ -119,9 +119,11 @@ If you are rolling out the extension to all your monitored Windows 10 devices, y
 
 This is the recommended method.
 
-1. Navigate to [Microsoft Purview Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+1. Download the initial [XPI file](https://firefoxdlp.blob.core.windows.net/packages-prod/prod-1.1.0.210.xpi).
 
-2. Install the extension using the instructions on the Chrome Web Store page.
+2. Locate the extension in your file explorer and drag the file into an open Mozilla Firefox window.
+
+3. Confirm the installation.
 
 ### Deploy using Microsoft Endpoint Manager
 
@@ -129,9 +131,9 @@ Use this setup method for organization-wide deployments.
 
 #### Microsoft Endpoint Manager Force Install Steps
 
-Before adding the extension to the list of force-installed extensions, it is important to ingest the Chrome ADMX. Steps for this process in Microsoft Endpoint Manager are documented by Google: [Manage Chrome Browser with Microsoft Intune - Google Chrome Enterprise Help](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+Before adding the extension to the list of force-installed extensions, it is important to ingest the Firefox ADMX. Steps for this process in Microsoft Endpoint Manager are documented below. Before beginning these steps, please ensure you have downloaded the latest Firefox ADMX from the [Firefox GitHub](https://github.com/mozilla/policy-templates/releases).
 
- After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
+After ingesting the ADMX, the steps below can be followed to create a configuration profile for this extension.
 
 1. Sign in to the Microsoft Endpoint Manager Admin Center (https://endpoint.microsoft.com).
 
@@ -149,11 +151,19 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 8. Enter the following policy information.
 
-    OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
+    OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Firefox~Policy~firefox~Extensions/ExtensionSettings`<br/>
     Data type: `String`<br/>
-    Value: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
+    Value: `<enabled/><data id="ExtensionSettings" value='{ 
+                "microsoft.defender.browser_extension.native_message_host@microsoft.com": { 
+                    "installation_mode": "force_installed", 
+                    "install_url": “https://firefoxdlp.blob.core.windows.net/packages-prod/prod-1.1.0.210.xpi”,
+                    “updates_disabled”: false 
+                } 
+            }'/> `
 
-9. Click create.
+9.  Note: It is critical that updates_disabled is set to false so that the extension can automatically update over time. 
+
+10. Click create.
 
 ### Deploy using Group Policy
 
@@ -163,9 +173,9 @@ If you don't want to use Microsoft Endpoint Manager, you can use group policies 
 
 1. In the Group Policy Management Editor, navigate to your OU.
 
-2. Expand the following path **Computer/User configuration** > **Policies** > **Administrative templates** > **Classic administrative templates** > **Google** > **Google Chrome** > **Extensions**. This path may vary depending on your configuration.
+2. Expand the following path **Computer/User configuration** > **Policies** > **Administrative templates** > **Classic administrative templates** > **Firefox** > **Extensions**. This path may vary depending on your configuration.
 
-3. Select **Configure the list of force-installed extensions**.
+3. Select **Extensions to install**.
 
 4. Right click and select **Edit**.
 
@@ -173,7 +183,7 @@ If you don't want to use Microsoft Endpoint Manager, you can use group policies 
 
 6. Select **Show**.
 
-7. Under **Value**, add the following entry: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+7. Under **Value**, add the following entry: `https://firefoxdlp.blob.core.windows.net/packages-prod/prod-1.1.0.210.xpi`
 
 8. Select **OK** and then **Apply**.
 
@@ -183,15 +193,15 @@ If you don't want to use Microsoft Endpoint Manager, you can use group policies 
 
 1. Create or get a sensitive item and, try to upload a file to one of your organization’s restricted service domains. The sensitive data must match one of our built-in [Sensitive Info Types](sensitive-information-type-entity-definitions.md), or one of your organization’s sensitive information types. You should get a DLP toast notification on the device you are testing from that shows that this action is not allowed when the file is open.
 
-#### Testing other DLP scenarios in Chrome
+#### Testing other DLP scenarios in Firefox
 
-Now that you’ve removed Chrome from the disallowed browsers/apps list, you can test the scenarios below to confirm the behavior meets your organization’s requirements:
+Now that you’ve removed Firefox from the disallowed browsers/apps list, you can test the scenarios below to confirm the behavior meets your organization’s requirements:
 
 - Copy data from a sensitive item to another document using the Clipboard
-  - To test, open a file that is protected against copy to clipboard actions in the Chrome browser and attempt to copy data from the file.
+  - To test, open a file that is protected against copy to clipboard actions in the Firefox browser and attempt to copy data from the file.
   - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Print a document
-  - To test, open a file that is protected against print actions in the Chrome browser and attempt to print the file.
+  - To test, open a file that is protected against print actions in the Firefox browser and attempt to print the file.
   - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 - Copy to USB Removeable Media
   - To test, try to save the file to a removeable media storage.
@@ -200,13 +210,13 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
   - To test, try to save the file to a network share.
   - Expected Result: A DLP toast notification showing that this action is not allowed when the file is open.
 
-### Use the Alerts Management Dashboard to viewing Chrome DLP alerts
+### Use the Alerts Management Dashboard to view Firefox DLP alerts
 
 1. Open the **Data loss prevention** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and select **Alerts**.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
-### Viewing Chrome DLP data in activity explorer
+### Viewing Firefox DLP data in activity explorer
 
 1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> and choose **Activity explorer**.
 
