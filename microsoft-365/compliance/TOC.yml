@@ -256,6 +256,8 @@
           href: insider-risk-management-configure.md
         - name: Get started with insider risk settings
           href: insider-risk-management-settings.md
+        - name: Learn about policy templates
+          href: insider-risk-management-policy-templates.md
         - name: Create and manage insider risk policies
           href: insider-risk-management-policies.md
         - name: Investigate insider risk activities
@@ -1173,10 +1175,14 @@
             href: dlp-teams-default-policy.md
           - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Purview Extension
+          - name: Learn about the Microsoft Purview Chrome Extension
             href: dlp-chrome-learn-about.md
+          - name: Learn about the Microsoft Purview Firefox Extension (preview)
+            href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
+          - name: Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+            href: dlp-migration-assistant-for-symantec-learn.md
         - name: Plan for DLP
           items:
           - name: Plan for data loss prevention
@@ -1201,12 +1207,16 @@
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Information Protection
             href: device-onboarding-configure-proxy.md
-          - name: Get started with the Microsoft Purview Extension
+          - name: Get started with the Microsoft Purview Chrome Extension
             href: dlp-chrome-get-started.md
+          - name: Get started with the Microsoft Purview Firefox extension (preview)
+            href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
           - name: Get started with Data loss prevention policies for Power BI (preview)
             href: dlp-powerbi-get-started.md
+          - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+            href: dlp-migration-assistant-for-symantec-get-started.md  
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -1241,6 +1251,8 @@
               href: dlp-policy-tips-reference.md
             - name: Share DLP Alerts (preview)
               href: dlp-share-alerts.md
+            - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+              href: dlp-migration-assistant-for-symantec-use.md       
 - name: Manage data lifecycle & records
   items: 
     - name: Govern your data

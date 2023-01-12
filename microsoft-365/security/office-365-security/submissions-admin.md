@@ -626,7 +626,7 @@ If you've deployed the [Microsoft Report Message or Report Phishing add-ins](sub
 
 ## Undo user reported messages
 
-Once a user reports a suspicious message that's delivered to the reporting mailbox, the user and admins don't can't undo the reported message. The user can recover the messages from their Deleted Items or Junk Email folders.
+Once a user reports a suspicious message that's delivered to the reporting mailbox, the user and admins can't undo the reported message. The user can recover the messages from their Deleted Items or Junk Email folders.
 
 ## Convert user reported messages in the reporting mailbox into admin submissions
 
