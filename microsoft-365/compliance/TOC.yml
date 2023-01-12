@@ -22,8 +22,6 @@
       href: microsoft-365-compliance-center-permissions.md
     - name: Roles and role groups in the Microsoft Purview compliance portal
       href: /microsoft-365/security/office-365-security/scc-permissions?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
-    - name: Redirecting users to the Microsoft Purview compliance portal
-      href: microsoft-365-compliance-center-redirection.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
@@ -1175,8 +1173,10 @@
             href: dlp-teams-default-policy.md
           - name: Learn about data loss prevention on-premises scanner
             href: dlp-on-premises-scanner-learn.md
-          - name: Learn about the Microsoft Purview Extension
+          - name: Learn about the Microsoft Purview Chrome Extension
             href: dlp-chrome-learn-about.md
+          - name: Learn about the Microsoft Purview Firefox Extension (preview)
+            href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
           - name: Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
@@ -1205,8 +1205,10 @@
             href: endpoint-dlp-getting-started.md
           - name: Configure device proxy and internet connection settings for Information Protection
             href: device-onboarding-configure-proxy.md
-          - name: Get started with the Microsoft Purview Extension
+          - name: Get started with the Microsoft Purview Chrome Extension
             href: dlp-chrome-get-started.md
+          - name: Get started with the Microsoft Purview Firefox extension (preview)
+            href: dlp-firefox-extension-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
           - name: Get started with Data loss prevention policies for Power BI (preview)
