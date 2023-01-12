@@ -270,11 +270,11 @@
            href: investigate-malicious-email-that-was-delivered.md
          - name: Report suspicious messages and files
            items:
-           - name: How do I report a suspicious email or file to Microsoft
+           - name: Report suspicious email or files to Microsoft
              href: submissions-report-messages-files-to-microsoft.md
            - name: Admin submissions
              href: submissions-admin.md
-           - name: Enable the Report Message and the Report Phishing add-ins
+           - name: Enable the Report Message and Report Phishing add-ins
              href: submissions-users-report-message-add-in-configure.md
            - name: Report false positives and false negatives in Outlook
              href: submissions-outlook-report-messages.md
@@ -284,6 +284,8 @@
              href: submissions-submit-files-to-microsoft.md
            - name: Admin review for reported messages
              href: admin-review-reported-message.md
+           - name: Errors during submissions
+             href: submissions-error-messages.md
          - name: Campaign Views
            href: campaigns.md
          - name: Threat Explorer
