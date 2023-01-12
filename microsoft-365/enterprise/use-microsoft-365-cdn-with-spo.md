@@ -28,6 +28,9 @@ description: Learn how to use the Office 365 Content Delivery Network (CDN) to s
 
 You can use the built-in Office 365 Content Delivery Network (CDN) to host static assets to provide better performance for your SharePoint Online pages. The Office 365 CDN improves performance by caching static assets closer to the browsers requesting them, which helps to speed up downloads and reduce latency. Also, the Office 365 CDN uses the [HTTP/2 protocol](https://en.wikipedia.org/wiki/HTTP/2) for improved compression and HTTP pipelining. The Office 365 CDN service is included as part of your SharePoint Online subscription.
 
+> [!CAUTION]
+> Private CDN configuration is in the process of deprecation. You are no longer required to configure Private CDN. Image file types are served through Private CDN out of the box. However if private CDN is in use for other file types, like js or css, it is recommended to use Public CDN for better performance. Going forward, non image file types will not be supported through Private CDN
+
 > [!NOTE]
 > The Office 365 CDN is only available to tenants in the **Production** (worldwide) cloud. Tenants in the US Government and China clouds do not currently support the Office 365 CDN.
 
