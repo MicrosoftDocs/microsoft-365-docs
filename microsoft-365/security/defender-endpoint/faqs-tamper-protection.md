@@ -71,6 +71,10 @@ When tamper protection is turned on and you use Group Policy to make changes to 
 
 You have flexibility in configuring tamper protection with Intune. You can target your entire organization, or select specific devices and user groups.
 
+## What settings can't be changed when tamper protection is turned on?
+
+When tamper protection is turned on, tamper-protected settings cannot be changed from their default value, even if you're using Intune to manage your security settings. Changes might appear to be successful in Intune, but will not actually be allowed by tamper protection. For the most current list of tamper protected settings, contact support.
+
 ## Can I configure tamper protection with Microsoft Endpoint Configuration Manager?
 
 If you're using tenant attach, you can use Microsoft Endpoint Configuration Manager. See the following resources:
