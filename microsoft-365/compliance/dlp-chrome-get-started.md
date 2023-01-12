@@ -1,5 +1,5 @@
 ---
-title: "Get started with the Microsoft Purview Extension"
+title: "Get started with the Microsoft Purview Chrome Extension"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -24,23 +24,23 @@ search.appverid:
 description: "Prepare for and deploy the Microsoft Purview Extension."
 ---
 
-# Get started with Microsoft Purview Extension
+# Get started with Microsoft Purview Chrome Extension
 
-Use these procedures to roll out the Microsoft Purview Extension.
+Use these procedures to roll out the Microsoft Purview Chrome Extension.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Before you begin
 
-To use Microsoft Purview Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+To use Microsoft Purview Chrome Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
-- [Learn about Microsoft Purview Extension](dlp-chrome-learn-about.md)
+- [Learn about Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-- [Onboarding tools and methods for Windows 10 devices](device-onboarding-overview.md)
+- [Onboarding tools and methods for Windows 10/11 devices](device-onboarding-overview.md)
 - [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
@@ -107,7 +107,7 @@ Deploying the extension is a multi-phase process. You can choose to install on o
 
 ### Prepare infrastructure
 
-If you are rolling out the extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The extension will bypass the restrictions of both lists for those computers where it is installed.
+If you are rolling out the extension to all your monitored Windows 10/11 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The extension will bypass the restrictions of both lists for those computers where it is installed.
 
 ### Prepare your devices
 
