@@ -162,9 +162,8 @@ Now that you have onboarded to Defender for Endpoint, and you have uninstalled y
 
 To learn more, see [Device inventory](machines-view-overview.md).
 
-## Next steps
+## Next step
 
 **Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
-
 
 - [Manage Defender for Endpoint, post migration](manage-mde-post-migration.md).
