@@ -160,9 +160,9 @@ You can see two types of invoices: debit invoice and credit memo.
 
 ## Who receives VL invoices by email?
 
-The **Bill To contact** for the contract receives invoices by email from microsoft-noreply@microsoft.com.
+The **Bill To contact** for the contract receives invoices by email from `microsoft-noreply@microsoft.com`.
 
-Be sure to add microsoft-noreply@microsoft.com to your safe senders list or modify any existing email rules to avoid emails landing in your junk folder.
+Be sure to add `microsoft-noreply@microsoft.com` to your safe senders list or modify any existing email rules to avoid emails landing in your junk folder.
 
 ## How do I become a Volume Licensing Service Center (VLSC) user?
 
