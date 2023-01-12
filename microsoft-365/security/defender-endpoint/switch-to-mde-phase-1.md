@@ -117,7 +117,7 @@ To enable communication between your devices and Defender for Endpoint, you migh
 \* Windows Server 2016 and Windows Server 2012 R2 require installation of the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows servers to Defender for Endpoint: Windows Server 2012 R2 and Windows Server 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016).
 
 > [!IMPORTANT]
-> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as [Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). 
+> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as either Defender for Endpoint for Servers, or [Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 ## Next step
 
