@@ -87,7 +87,7 @@ The Microsoft Defender for Endpoint on iOS app has specialized ability on superv
 
 Admins can use the following steps to configure supervised devices.
 
-### Configure Supervised Mode via Intune
+### Configure Supervised Mode via Microsoft Endpoint Manager (Intune)
 
 Configure the supervised mode for Defender for Endpoint app through an App configuration policy and Device configuration profile.
 
