@@ -133,10 +133,6 @@ To access communication compliance when starting from the Microsoft 365 admin ce
 
 ![Communication compliance link.](../media/communication-compliance-case-compliance-link.png)
 
-This action opens the **Office 365 Security and Compliance center**, and they must select the link to the **Microsoft Purview compliance portal** provided in the banner at the top of the page.
-
-![Office 365 security and compliance center.](../media/communication-compliance-case-scc.png)
-
 Once in the **Microsoft Purview compliance portal**, Contoso IT administrators select **Show all** to display the full list of compliance solutions.
 
 ![Communication compliance menu.](../media/communication-compliance-case-show-all.png)

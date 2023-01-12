@@ -103,7 +103,7 @@ On page one of your invoice, the **Product** is "Online Services," the generic t
 
 **Billing Period** is the period since the last invoice date.
 
-**Payment Terms** is the number of days from the invoice date when payment is due. The standard payment term is 30 days.
+**Payment Terms** is the number of days from the invoice date when payment is due.
 
 **Due Date** is the date when the invoice payment is due. If your subscription is paid with a credit card or bank account, we charge your card or account the day after the Invoice Date.
 
