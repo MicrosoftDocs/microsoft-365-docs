@@ -61,6 +61,41 @@ The roles that appear in the **Azure AD** > **Roles** section of the compliance 
 |**Attack payload author**|Create attack payloads but not actually launch or schedule them. For more information, see [Attack Payload Author](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 
+## Administrative units
+
+Administrative units let you subdivide your organization into any unit that you want, and then assign specific administrators that can manage only the members of that unit. They also allow you to configure specific members to manage certain features for supported Microsoft Purview compliance solutions. For example, you could use administrative units to delegate permissions to administrators for each geographic region in a large multi-national organization or for grouping administrator access by department within your organization.
+
+### Administrative units support in Microsoft Purview
+
+The following Microsoft Purview compliance solutions support administrative units:
+
+|**Solution**|**Description of support**|
+|:-----------|:-------------------------|
+| Microsoft Purview Audit (Premium) |  |
+| Microsoft Purview Data Loss Protection | Includes support for associated alerts and Activity Explorer |
+| Microsoft Purview Information Protection | Includes support for associated alerts and Activity Explorer |
+|||
+
+### Prerequisites for administrative units
+
+Before configuring administrative units for Microsoft Purview compliance solutions, make sure your organization and users meet the following subscription and licensing requriements:
+
+- [Azure Active Directory Premium licensing](/azure/active-directory/roles/admin-units-manage#prerequisites)
+- Microsoft Purview
+
+### Configure administrative units
+
+Complete the following steps to configure administrative units for Microsoft Purview compliance solutions:
+
+1. [Create administrative units](/azure/active-directory/roles/admin-units-manage#create-an-administrative-unit) to restrict the scope of role permissions in Azure Active Directory (Azure AD).
+2. [Add users and distribution groups](/azure/active-directory/roles/admin-units-members-add) to administrative units.
+3. If creating a geographic region or department-based administrative unit, configure administrative units with [dynamic membership rules](/azure/active-directory/roles/admin-units-members-dynamic). 
+
+    >[!NOTE]
+    >You can't add groups to an administrative unit that uses dynamic membership rules. If needed, create two administrative units, one for users and one for groups.
+
+4. Complete the steps in each supported compliance solution
+
 ## Add users to a compliance role group
 
 Complete the following steps to add users to a compliance role group:
