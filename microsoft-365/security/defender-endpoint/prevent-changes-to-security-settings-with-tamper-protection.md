@@ -99,7 +99,7 @@ The following table lists the various methods you can use to configure tamper pr
 |Fine-tune tamper protection settings in your organization <br/><br/> Use Microsoft Intune to turn tamper protection on or off. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Intune](manage-tamper-protection-microsoft-endpoint-manager.md)|
 | Protect Microsoft Defender Antivirus exclusions | [What about exclusions?](#what-about-exclusions) <br/><br/>[How to determine whether the functionality to protect exclusions is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device) |
 |Turn tamper protection on (or off) for your organization by using Configuration Manager|[Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
-|Turn tamper protection on (or off) for an individual device (for home users or devices that are not managed by a security team)|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
+|Turn tamper protection on (or off) for an individual device (for home users or devices that aren't managed by a security team)|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
 |View details about tampering attempts on devices|[View information about tampering attempts in Microsoft 365 Defender](#view-information-about-tampering-attempts)|
 |Review your security recommendations |[Review security recommendations](#review-your-security-recommendations)|
 |Review the list of frequently asked questions (FAQs)|[Browse the FAQs](faqs-tamper-protection.md)|
@@ -126,7 +126,7 @@ You can use a registry key to determine whether the functionality to protect Mic
 2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**. 
 
    - If **TPExclusions** has a value of `1`, then the new functionality to protect exclusions is enabled on the device.
-   - If **TPExclusions** has a value of `0`, then tamper protection is not currently protecting exclusions on the device.
+   - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device.
 
 > [!CAUTION]
 > Do not change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key will have no effect on whether tamper protection applies to exclusions.
