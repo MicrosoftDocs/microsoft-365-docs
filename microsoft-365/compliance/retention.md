@@ -346,7 +346,7 @@ Advantages of using adaptive scopes over static scopes:
 
 For more advantages of using adaptive scopes, see [Adaptive scopes](purview-adaptive-scopes.md#advantages-of-using-adaptive-scopes).
 
-Advantages of using static scopes:
+Advantages of using static scopes over adaptive scopes:
 
 - Simpler configuration if you want all instances automatically selected for a workload.
 
