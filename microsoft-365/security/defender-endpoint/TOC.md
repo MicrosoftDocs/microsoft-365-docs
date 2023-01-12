@@ -17,8 +17,8 @@
 #### [Get started](mde-plan1-getting-started.md)
 #### [Maintenance and operations](mde-p1-maintenance-operations.md)
 ### [Microsoft Defender for Endpoint for US Government customers](gov.md)
-### [Microsoft Defender for Endpoint on non-Windows platforms]()
-#### [Overview of Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
+### [Microsoft Defender for Endpoint on other platforms]()
+#### [Overview of Microsoft Defender for Endpoint on other platforms](non-windows.md)
 #### [Microsoft Defender for Endpoint on macOS]()
 ##### [Overview of Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 ##### [What's New](mac-whatsnew.md)
@@ -128,9 +128,9 @@
 
 #### [Mobile Threat Defense]()
 ##### [Deploy]()
-###### [Microsoft Defender for Endpoint on Android with Microsoft Endpoint Manager](android-intune.md)
-###### [Microsoft Defender for Endpoint on iOS via Microsoft Endpoint Manager](ios-install.md)
-###### [Microsoft Defender for Endpoint on iOS with Mobile Application Manager](ios-install-unmanaged.md)
+###### [Deployment on Android with Microsoft Endpoint Manager](android-intune.md)
+###### [Deployment on iOS via Microsoft Endpoint Manager](ios-install.md)
+###### [Deployment on iOS with Mobile Application Manager](ios-install-unmanaged.md)
 
 ### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 ### [Run a detection test on a newly onboarded Microsoft Defender for Endpoint](run-detection-test.md)
