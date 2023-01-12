@@ -1,6 +1,6 @@
 ---
-title: Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
-description: Describes how to deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
+title: Deploy Microsoft Defender for Endpoint on Android with Microsoft Endpoint Manager (previously Intune)
+description: Describes how to deploy Microsoft Defender for Endpoint on Android with Microsoft Endpoint Manager (previously Intune)
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, installation, deploy, uninstallation,
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -19,7 +19,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune
+# Deploy Microsoft Defender for Endpoint on Android with Microsoft Endpoint Manager (previously Intune)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

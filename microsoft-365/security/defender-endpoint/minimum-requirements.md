@@ -114,10 +114,11 @@ When components are up-to-date on Microsoft Windows operating systems, Microsoft
 
 ### Other supported operating systems
 
+- [macOS](microsoft-defender-endpoint-mac.md)
+- [Linux](microsoft-defender-endpoint-linux.md)
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
-- [Linux](microsoft-defender-endpoint-linux.md)
-- [macOS](microsoft-defender-endpoint-mac.md)
+
 
 > [!NOTE]
 > You'll need to confirm the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint for the integration to work.

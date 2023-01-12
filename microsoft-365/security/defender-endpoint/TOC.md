@@ -106,7 +106,7 @@
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 #### [Microsoft Defender for Endpoint on macOS]()
 ##### [Deploy]()
-###### [Microsoft Intune-based deployment](mac-install-with-intune.md)
+###### [Deployment with Microsoft Endpoint Manager](mac-install-with-intune.md)
 ###### [JAMF Pro-based deployment]()
 ####### [Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro](mac-install-with-jamf.md)
 ####### [Login to Jamf Pro](mac-install-jamfpro-login.md)
@@ -128,9 +128,9 @@
 
 #### [Mobile Threat Defense]()
 ##### [Deploy]()
-###### [Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
-###### [Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
-###### [Microsoft Defender for Endpoint on iOS for unenrolled devices](ios-install-unmanaged.md)
+###### [Microsoft Defender for Endpoint on Android with Microsoft Endpoint Manager](android-intune.md)
+###### [Microsoft Defender for Endpoint on iOS via Microsoft Endpoint Manager](ios-install.md)
+###### [Microsoft Defender for Endpoint on iOS with Mobile Application Manager](ios-install-unmanaged.md)
 
 ### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 ### [Run a detection test on a newly onboarded Microsoft Defender for Endpoint](run-detection-test.md)

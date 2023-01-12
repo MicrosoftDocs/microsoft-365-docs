@@ -1,6 +1,6 @@
 ---
-title: Intune-based deployment for Microsoft Defender for Endpoint on Mac
-description: Install Microsoft Defender for Endpoint on Mac, using Microsoft Intune.
+title: Deploy Microsoft Defender for Endpoint on macOS with Microsoft Endpoint Manager (previously Intune)
+description: Install Microsoft Defender for Endpoint on Mac, using Microsoft Endpoint Manager (previously Intune).
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -19,7 +19,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Intune-based deployment for Microsoft Defender for Endpoint on macOS
+# Deploy Microsoft Defender for Endpoint on macOS with Microsoft Endpoint Manager (previously Intune)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

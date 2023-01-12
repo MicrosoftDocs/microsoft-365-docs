@@ -58,7 +58,7 @@ The following table lists the supported endpoints and the corresponding deployme
 |**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
 |**Linux Server**|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)|
 |**Android**|[Microsoft Endpoint Manager](android-intune.md)|
-|**iOS**|[Microsoft Endpoint Manager](ios-install.md) <br> Mobile Application Manager|
+|**iOS**|[Microsoft Endpoint Manager](ios-install.md) <br> [Mobile Application Manager](ios-install-unmanaged.md) |
 
 ## Step 3: Configure capabilities
 
