@@ -78,10 +78,10 @@ The following Microsoft Purview compliance solutions support administrative unit
 
 ### Prerequisites for administrative units
 
-Before configuring administrative units for Microsoft Purview compliance solutions, make sure your organization and users meet the following subscription and licensing requriements:
+Before configuring administrative units for Microsoft Purview compliance solutions, make sure your organization and users meet the following subscription and licensing requirements:
 
 - [Azure Active Directory Premium licensing](/azure/active-directory/roles/admin-units-manage#prerequisites)
-- Microsoft Purview
+- Microsoft Purview licensing (**NEED SERVICE DESCRIPTION LICENSING SECTION LINK**)
 
 ### Configure administrative units
 
@@ -89,7 +89,7 @@ Complete the following steps to configure administrative units for Microsoft Pur
 
 1. [Create administrative units](/azure/active-directory/roles/admin-units-manage#create-an-administrative-unit) to restrict the scope of role permissions in Azure Active Directory (Azure AD).
 2. [Add users and distribution groups](/azure/active-directory/roles/admin-units-members-add) to administrative units.
-3. If creating a geographic region or department-based administrative unit, configure administrative units with [dynamic membership rules](/azure/active-directory/roles/admin-units-members-dynamic). 
+3. If creating a geographic region or department-based administrative units, configure administrative units with [dynamic membership rules](/azure/active-directory/roles/admin-units-members-dynamic).
 
     >[!NOTE]
     >You can't add groups to an administrative unit that uses dynamic membership rules. If needed, create two administrative units, one for users and one for groups.
