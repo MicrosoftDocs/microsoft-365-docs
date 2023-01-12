@@ -189,7 +189,7 @@ For this scenario, you need to create two groups: one group for any removable st
 
 ### Scenario 2: Audit Write and Execute access for all but block specific blocked USBs
 
-For this scenario, you need to create two groupss: one group for any removable storage and another group for blocked USBs. You also need to create two policies: one policy to audit Write and Execute access for any removable storage group and the other policy to deny the blocked USBs group.
+For this scenario, you need to create two groups: one group for any removable storage and another group for blocked USBs. You also need to create two policies: one policy to audit Write and Execute access for any removable storage group and the other policy to deny the blocked USBs group.
 
 1. Create groups
 
