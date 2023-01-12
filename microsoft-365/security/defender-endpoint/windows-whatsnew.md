@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: v-mathavale
 author: v-mathavale
 ms.localizationpriority: medium
-ms.date: 09/20/2022
+ms.date: 01/10/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -31,7 +31,7 @@ ms.subservice: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink).
 
 All updates contain:
 - Performance improvements
@@ -39,6 +39,18 @@ All updates contain:
 - Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
 
 <details>
+  <summary>Dec-2022 (Release version: 10.8210.*)</summary>
+
+|OS  |KB  |Release version  |
+|---------|---------|---------|
+|Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8210.22621.1016|
+  
+**What's new**
+
+- Bug fixes and stability improvements
+</details>
+
+<details>  
   <summary>Aug-2022 (Release version: 10.8210.*)</summary>
 
 |OS  |KB  |Release version  |
