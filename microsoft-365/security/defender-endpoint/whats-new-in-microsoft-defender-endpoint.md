@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 11/28/2022
+ms.date: 01/10/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -61,8 +61,9 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
-
 ## January 2023
+
+- [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) can now protect exclusions when deployed with Microsoft Intune. See [What about exclusions](prevent-changes-to-security-settings-with-tamper-protection.md#what-about-exclusions)?
 
 - Live Response is now generally available for macOS and Linux. For more information, see, [Investigate entities on devices using live response](live-response.md).
 
