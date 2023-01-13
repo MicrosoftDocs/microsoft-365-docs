@@ -42,7 +42,7 @@ Built-in protection is a set of default settings that are rolling out to help en
 | After built-in protection has arrived | Whenever new devices are onboarded to Defender for Endpoint, built-in protection settings will be applied to any new devices running Windows. You can always [change your built-in protection settings](#can-i-change-built-in-protection-settings). |
 
 > [!NOTE]
-> Built-in protection sets default values for Windows and Mac devices. If endpoint security settings change, such as through baselines or policies in [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), those settings override the built-in protection settings.  
+> Built-in protection sets default values for Windows and Mac devices. If endpoint security settings change, such as through baselines or policies in [Microsoft Intune](/mem/endpoint-manager-overview), those settings override the built-in protection settings.  
 
 ## What does the notification look like?
 
