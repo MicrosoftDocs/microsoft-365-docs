@@ -103,8 +103,6 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 
 ## Watch: Add multiple user
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198205).
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aOTI?autoplay=false]
 
 ## Add multiple users at the same time in dashboard view

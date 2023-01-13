@@ -42,7 +42,7 @@ The Defender for Endpoint device timeline helps you research and investigate ano
     :::image type="content" source="images/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="images/event-side-panel.png":::
 
    
-- All MITRE techniques are shown when there’s more than 1 related technique:
+- All MITRE techniques are shown when there's more than 1 related technique:
 
     :::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="images/new-timeline-mitre-techniques.png":::
 
@@ -85,19 +85,19 @@ Select the specific *Attack technique* to open the related ATT&CK technique page
 
 You can copy an entity's details when you see a blue icon on the right. For instance, to copy a related file's SHA1, select the blue page icon.
 
-:::image type="content" source="images/new-timeline-process-tree.png" alt-text="The copy entity details" lightbox="images/new-timeline-process-tree.png":::
+:::image type="content" source="images/new-timeline-process-tree.png" alt-text="Screenshot that shows the copy entity details." lightbox="images/new-timeline-process-tree.png":::
 
-:::image type="content" source="images/new-timeline-side-panel-1.png" alt-text="The side pane details" lightbox="images/new-timeline-side-panel-1.png":::
+:::image type="content" source="images/new-timeline-side-panel-1.png" alt-text="Screenshot that shows the side pane details." lightbox="images/new-timeline-side-panel-1.png":::
 
 You can do the same for command lines.
 
-:::image type="content" source="images/techniques-side-pane-command-1.png" alt-text="The option to copy command line" lightbox="images/techniques-side-pane-command-1.png":::
+:::image type="content" source="images/techniques-side-pane-command-1.png" alt-text="Screenshot that shows the option to copy command line." lightbox="images/techniques-side-pane-command-1.png":::
 
 ### Investigate related events
 
 To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected Technique, select **Hunt for related events**. This leads to the advanced hunting page with a query to find events related to the Technique.
 
-:::image type="content" source="images/techniques-hunt-for-related-events-1.png" alt-text="The Hunt for related events option" lightbox="images/techniques-hunt-for-related-events-1.png":::
+:::image type="content" source="images/techniques-hunt-for-related-events-1.png" alt-text="Screenshot that shows the Hunt for related events option." lightbox="images/techniques-hunt-for-related-events-1.png":::
 
 > [!NOTE]
 > Querying using the **Hunt for related events** button from a Technique side pane displays all the events related to the identified technique but does not include the Technique itself in the query results.
@@ -112,7 +112,7 @@ You can customize which columns to expose. You can also filter for flagged event
 
 You can choose which columns to expose in the timeline by selecting the **Choose columns** button.
 
-:::image type="content" source="images/new-timeline-customize-columns.png" alt-text="The pane in which you can customize columns" lightbox="images/new-timeline-customize-columns.png":::
+:::image type="content" source="images/new-timeline-customize-columns.png" alt-text="Screenshot that shows the pane in which you can customize columns." lightbox="images/new-timeline-customize-columns.png":::
 
 
 From there you can select which information set to include.
@@ -121,7 +121,7 @@ From there you can select which information set to include.
 
 To view only either events or techniques, select **Filters** from the device timeline and choose your preferred Data type to view.
 
-:::image type="content" source="images/new-timeline-filter.png" alt-text="The Filters pane" lightbox="images/new-timeline-filter.png":::
+:::image type="content" source="images/new-timeline-filter.png" alt-text="Screenshot that shows the Filters pane." lightbox="images/new-timeline-filter.png":::
 
 ## Timeline event flags
 

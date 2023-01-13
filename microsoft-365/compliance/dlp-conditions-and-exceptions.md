@@ -81,6 +81,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 |condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
+|Content is shared with |condition: *AccessScope* <br/><br/> |Scope|Messages that are sent to internal or external recipients.|
 |Recipient is|condition: *SentTo* <br/><br/> exception: *ExceptIfSentTo*|Addresses|Messages where one of the recipients is the specified mailbox, mail user, or mail contact in the organization. The recipients can be in the **To**, **Cc**, or **Bcc** fields of the message.|
 |Recipient domain is|condition: *RecipientDomainIs* <br/><br/> exception: *ExceptIfRecipientDomainIs*|DomainName|Messages where the domain of the recipient's email address matches the specified value.|
 |Recipient address contains words|condition: *AnyOfRecipientAddressContainsWords* <br/><br/> exception: *ExceptIfAnyOfRecipientAddressContainsWords*|Words|Messages that contain the specified words in the recipient's email address. <br/><br/>**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
@@ -98,7 +99,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 |Content contains|condition: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages or documents that contain sensitive information as defined by Microsoft Purview Data Loss Prevention (DLP) policies.|
 |Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|Patterns|Messages where the subject field or message body contains text patterns that match the specified regular expressions.|
 |Subject or Body contains words|condition: *SubjectOrBodyContainsWords* <br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|Messages that have the specified words in the subject field or message body|
-|
+
 
 ### Attachments
 
@@ -148,5 +149,5 @@ This table describes the actions that are available in DLP.
 Prepend subject|PrependSubject|String|Adds the specified text to the beginning of the Subject field of the message. Consider using a space or a colon (:) as the last character of the specified text to differentiate it from the original subject text.<br/><br/>To prevent the same string from being added to messages that already contain the text in the subject (for example, replies), add the "The subject contains words" (ExceptIfSubjectContainsWords) exception to the rule.|
 |Apply HTML disclaimer|ApplyHtmlDisclaimer|First property: *Text*<br/><br/>Second property: *Location*<br/><br/>Third property: *Fallback action*|Applies the specified HTML disclaimer to the required location of the message.<br/><br/>This parameter uses the syntax: @{ Text = " " ; Location = \<Append \| Prepend\>; FallbackAction = \<Wrap \| Ignore \| Reject\> }|
 |Remove message encryption and rights protection|RemoveRMSTemplate|n/a|Removes message encryption applied on an email|
-|Deliver the message to the hosted quarantine |*Quarantine*|n/a| This action is currently in **public preview**. During this phase, emails quarantined by DLP policies will show policy type as ExchangeTransportRule.<br/><br/> Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
+|Deliver the message to the hosted quarantine |*Quarantine*|n/a| This action is currently in **public preview**. During this phase, emails quarantined by DLP policies will show policy type as ExchangeTransportRule.<br/><br/> Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-about).|
 |Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: <br/><br/>- **Replace** all matches in the subject with the replacement text <br/><br/>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. <br/><br/>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|

@@ -78,7 +78,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 1. Canada
 1. Japan
 
-| Country Code | Country Name | Viva Insights Advanced | Viva Learning | Planner |
+| Country Code | Countries/Regions | Viva Insights Advanced | Viva Learning | Planner |
 | --- | --- | --- | --- | --- |
 | AF | Afghanistan | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | AX | Aland Islands | APC<sup>2</sup>| AMER<sup>3</sup>| EUR<sup>1</sup>|
@@ -296,7 +296,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | SZ | Swaziland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | SE | Sweden | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | CH | Switzerland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| TW | Taiwan, Republic of China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| TW | Taiwan | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | TJ | Tajikistan | EUR<sup>1</sup>| APC<sup>2</sup>| EUR<sup>1</sup>|
 | TH | Thailand | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | TL | Timor-Leste | APC<sup>2</sup>| EUR<sup>1</sup>| APC<sup>2</sup>|

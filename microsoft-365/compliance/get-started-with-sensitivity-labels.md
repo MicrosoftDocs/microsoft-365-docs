@@ -68,7 +68,7 @@ By default, global administrators for your tenant have access to this admin cent
 - **Information Protection Investigators**
 - **Information Protection Readers**
 
-For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in the Defender and compliance portals](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-defender-and-compliance-portals).
+For an explanation of each one, and the roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane. Or, see [Role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance](../security/office-365-security/scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance).
 
 Alternatively to using the default roles, you can create a new role group and add the **Sensitivity Label Administrator** role to this group. For a read-only role, use **Sensitivity Label Reader**. 
 
@@ -92,13 +92,14 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Manage sensitivity labels for Office apps so that content is labeled as it's created—includes support for manual labeling on all platforms |[Manage sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
 |Extend labeling to File Explorer and PowerShell, with additional features for Office apps on Windows (if needed)|[Azure Information Protection unified labeling client for Windows](/azure/information-protection/rms-client/aip-clientv2)|
 |Encrypt documents and emails with sensitivity labels and restrict who can access that content and how it can be used |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
+|Protect Teams meetings, from meeting invites and responses, to protecting the meeting itself and related chat |[Use sensitivity labels to protect calendar items, Teams meetings and chat](sensitivity-labels-meetings.md)|
 |Enable sensitivity labels for Office on the web, with support for coauthoring, eDiscovery, data loss prevention, search—even when documents are encrypted | [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Files in SharePoint to be automatically labeled with a default sensitivity label | [Configure a default sensitivity label for a SharePoint document library](sensitivity-labels-sharepoint-default-label.md)
 |Use co-authoring and AutoSave in Office desktop apps when documents are encrypted | [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md)
 |Automatically apply sensitivity labels to documents and emails | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md)|
 |Use sensitivity labels to configure the default sharing link type for sites and individual documents in SharePoint and OneDrive |[Use sensitivity labels to set the default sharing link for sites and documents in SharePoint and OneDrive](sensitivity-labels-default-sharing-link.md)|
-|Apply a sensitivity label to a document understanding model, so that identified documents in a SharePoint library are automatically classified and protected |[Apply a sensitivity label to a model in Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
+|Apply a sensitivity label to a document understanding model, so that identified documents in a SharePoint library are automatically classified and protected |[Apply a sensitivity label to a model in Microsoft Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |Prevent or warn users about sharing files or emails with a specific sensitivity label |[Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md) |
 |Apply a sensitivity label to a file when I receive an alert that content containing personal data is being shared and needs protection| [Investigate and remediate alerts in Privacy Risk Management](/privacy/priva/risk-management-alerts)|
 |Apply a retention label to retain or delete files or emails that have a specific sensitivity label|[Automatically apply a retention label to retain or delete content](apply-retention-labels-automatically.md) |
@@ -128,6 +129,8 @@ You can also use the following resources for basic instructions:
     - [Known issues with automatically applying or recommending sensitivity labels](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
 - [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
+
+- [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-abd9f361-6a18-4256-ae46-5d429bc16ba6)
 
 - [Azure Information Protection unified labeling user guide](/azure/information-protection/rms-client/clientv2-user-guide)
 

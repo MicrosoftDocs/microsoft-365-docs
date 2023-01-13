@@ -33,7 +33,7 @@ Compliance Manager helps you create assessments that evaluate your compliance wi
 All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
-> The templates available to your organization for building assessments depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## Data Protection Baseline default assessment
 
@@ -75,9 +75,7 @@ You can create a group while creating a new assessment. Groups can't be created 
 
 ## Understand templates before creating assessments
 
-Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Your organization starts out with at least one and possibly more **included** templates available to use, depending on your licensing agreement. Your organization may also purchase additional **premium** templates.
-
-Each template exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
+Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Each template exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
 
 Get more details more about templates at [Learn about assessment templates in Compliance Manager](compliance-manager-templates.md).
 
@@ -193,7 +191,7 @@ Follow the steps to grant user access to an assessment.
 
 1. Select the **+ Add** command for the role tab you're on: **Add reader**, or **Add assessor** or **Add contributor**.
 
-1. Another flyout pane appears which lists all the users in your organization. You can select the checkbox next to the username you want to add, or you can enter their name in the search bar adn select the user from there. You can select multiple users at once.
+1. Another flyout pane appears which lists all the users in your organization. You can select the checkbox next to the username you want to add, or you can enter their name in the search bar and select the user from there. You can select multiple users at once.
 
 1. After making all your selections, select **Add**.
     > [!NOTE]
