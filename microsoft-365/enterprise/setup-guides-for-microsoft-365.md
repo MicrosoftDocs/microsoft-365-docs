@@ -43,11 +43,11 @@ The setup guides are accessible from the [Setup guidance](https://aka.ms/setupgu
 
 2. Find the **Training & guides** card.
 
-   ![Training & guides card in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   :::image type="content" alt-text="This screenshot shows the training & guides card in the Microsoft 365 admin center." source="../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png":::
 
 3. Select **Advanced deployment guides** and then select **All guides**.
 
-   ![Screenshot of the Setup guidance page in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ::image type="content" alt-text="Screenshot of the Setup guidance page in the Microsoft 365 admin center." source="../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png":::
 
 ## Guides for initial setup
 
@@ -226,6 +226,10 @@ The [Teams Phone setup guide](https://aka.ms/teamsphonesetupguide) helps you sta
 ### SharePoint setup guide
 
 The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, and drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, and enable the security settings for your SharePoint environment.
+
+### Surface Hub and Microsoft Teams Rooms setup guide
+
+The [Surface Hub and Microsoft Teams Rooms setup guide](https://admin.microsoft.com/#/modernonboarding/surfacehubsetupguide) will customize your experience based on your environment. If you're hosted in Exchange Online and using Microsoft Teams, the guide will automatically create your device account with the correct settings.
 
 ### OneDrive setup guide
 
