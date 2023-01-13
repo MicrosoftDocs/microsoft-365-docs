@@ -1052,6 +1052,8 @@ If you are not seeing data in your reports, check the filters that you're using 
 5. On the **Review** page, review your selections. You can click the **Back** button or the **Edit** link in the respective sections to make changes.
 
    When you're finished, click **Submit**.
+   
+   Please note that in order to create or manage a schedule you need to be in the Organization management role
 
 ### Managed existing scheduled reports
 
