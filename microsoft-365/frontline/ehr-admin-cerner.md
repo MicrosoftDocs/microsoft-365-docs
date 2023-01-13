@@ -27,7 +27,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ms.reviewer: ansantam 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Cerner EHR system.
-ms.date: 12/15/2022
+ms.date: 01/05/2023
 ---
 
 # Virtual Appointments with Teams - Integration into Cerner EHR
@@ -41,6 +41,8 @@ The communication and collaboration platform of Teams makes it easy for clinicia
 - View consumption data reports and customizable Call Quality information for EHR-connected appointments.
 
 This article describes how to set up and configure the Teams EHR connector to integrate with the Cerner platform. It also gives you an overview of the Teams Virtual Appointments experience from the Cerner EHR system.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d6gj]
 
 ## Before you begin
 
