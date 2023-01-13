@@ -192,17 +192,12 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 
 You can add conditions to a search query to narrow a search and return a more refined set of results. Each condition adds a clause to the KQL search query that is created and run when you start the search.
 
-[Conditions for common properties](#conditions-for-common-properties)
-
-[Conditions for mail properties](#conditions-for-mail-properties)
-
-[Conditions for document properties](#conditions-for-document-properties)
-
-[Operators used with conditions](#operators-used-with-conditions)
-
-[Guidelines for using conditions](#guidelines-for-using-conditions)
-
-[Examples of using conditions in search queries](#examples-of-using-conditions-in-search-queries)
+- [Conditions for common properties](#conditions-for-common-properties)
+- [Conditions for mail properties](#conditions-for-mail-properties)
+- [Conditions for document properties](#conditions-for-document-properties)
+- [Operators used with conditions](#operators-used-with-conditions)
+- [Guidelines for using conditions](#guidelines-for-using-conditions)
+- [Examples of using conditions in search queries](#examples-of-using-conditions-in-search-queries)
 
 ### Conditions for common properties
 

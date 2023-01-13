@@ -1,5 +1,5 @@
 ---
-title: "How do protection features in Microsoft 365 Business Premium map to Intune settings"
+title: "How protection features in Microsoft 365 Business Premium map to Intune settings"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/18/2022
+ms.date: 01/03/2023
 ms.localizationpriority: high
 ms.collection: 
 - tier1
@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn how protection features in Microsoft 365 Business Premium map to Intune settings. The subscription provides you with a license to modify Intune settings."
 ---
 
-# How do protection features in Microsoft 365 Business Premium map to Intune settings
+# How protection features in Microsoft 365 Business Premium map to Intune settings
 
 ## Android and iOS application protection settings
 

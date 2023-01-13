@@ -235,7 +235,7 @@
        - name: Advanced delivery policies
          items:
          - name: Configure advanced delivery policies
-           href: skip-filtering-phising-simulations-sec-ops-mailboxes.md
+           href: skip-filtering-phishing-simulations-sec-ops-mailboxes.md
        - name: User tags and priority accounts
          items:
          - name: User tags in Defender for Office 365

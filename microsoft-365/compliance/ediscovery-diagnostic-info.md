@@ -52,7 +52,7 @@ Get-ComplianceSearch "<Search name>" | FL > "ComplianceSearch.txt"
 
 ### Collect information about search actions
 
-The following command collects information to investigate problems with previewing, exporting, or purging the results of a Content search or a search associated with a eDiscovery (Standard) case. You can identify the name of the search action by clicking an export that's listed on the **Exports** tab. To identify the names of preview and purge actions, you can run the **Get-ComplianceSearchAction** cmdlet to display a list of all actions. The format for the search action name is constructed by appending `_Preview`, `_Export`, or `_Purge` to the name of the corresponding search.
+The following command collects information to investigate problems with previewing, exporting, or purging the results of a Content search or a search associated with a eDiscovery (Standard) case. You can identify the name of the search action by selecting an export that's listed on the **Exports** tab. To identify the names of preview and purge actions, you can run the **Get-ComplianceSearchAction** cmdlet to display a list of all actions. The format for the search action name is constructed by appending `_Preview`, `_Export`, or `_Purge` to the name of the corresponding search.
 
 ```powershell
 Get-ComplianceSearchAction "<Search action name>" | FL > "ComplianceSearchAction.txt"

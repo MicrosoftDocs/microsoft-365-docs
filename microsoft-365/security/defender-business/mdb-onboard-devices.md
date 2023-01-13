@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 12/07/2022
+ms.date: 01/03/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -131,16 +131,6 @@ After you've onboarded Windows devices to Defender for Business, you can run a d
 
 After the command runs, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about 10 minutes.
 
-## View the list of onboarded devices
-
-To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, go to **Assets** > **Devices**.
-
-## Next steps
-
-- If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md)
-- See [Get started using Defender for Business](mdb-get-started.md).
-
 ## [**Mac**](#tab/mac)
 
 ## Mac
@@ -223,16 +213,6 @@ If your business prefers to have people enroll their own devices in Intune, dire
    `mdatp health --field real_time_protection_enabled`
 
 After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
-
-## View a list of onboarded devices
-
-To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, go to **Assets** > **Devices**.
-
-## Next steps
-
-- If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
-- See [Get started using Defender for Business](mdb-get-started.md).
 
 ## [**Servers**](#tab/Servers)
 
@@ -320,16 +300,6 @@ You can use the following methods to onboard an instance of Linux Server to Defe
 > [!NOTE]
 > Onboarding an instance of Linux Server to Defender for Business is the same as onboarding to [Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md).
 
-## View a list of onboarded devices
-
-To view the list of devices that are onboarded to Defender for Business, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). In the navigation pane, go to **Assets** > **Devices**.
-
-## Next steps
-
-- If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
-- If you're done onboarding devices, go to [Step 5: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
-- See [Get started using Defender for Business](mdb-get-started.md).
-
 ## [**Mobile devices**](#tab/mobiles)
 
 ## Mobile devices
@@ -343,6 +313,8 @@ After a device is enrolled in Intune, you can add it to a device group. [Learn m
 
 > [!NOTE]
 > The standalone version of Defender for Business does not include the Intune license that is required to onboard iOS and Android devices. You can add Intune to your Defender for Business subscription to onboard mobile devices. Intune is included in Microsoft 365 Business Premium.
+
+---
 
 ## View a list of onboarded devices
 

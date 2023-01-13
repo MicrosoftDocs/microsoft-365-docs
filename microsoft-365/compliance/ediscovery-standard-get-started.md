@@ -39,11 +39,11 @@ Licensing for eDiscovery (Standard) requires the appropriate organization subscr
   -  Exchange online Plan 2 license
 
    OR
-   
+
   - A Microsoft 365 E3 or Office 365 E3 license or higher
 
    OR
-   
+
   - Microsoft 365 Business Premium (Exchange only) license
   
 
@@ -77,15 +77,15 @@ Complete the following steps to add users to the eDiscovery Manager role group:
 
 2. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> page, select the **eDiscovery Manager** role group.
 
-3. On the eDiscovery Manager flyout page, click **Edit** next to the **eDiscovery Manager** section.
+3. On the eDiscovery Manager flyout page, select **Edit** next to the **eDiscovery Manager** section.
 
-4. On the **Choose eDiscovery Manager** page in the edit role group wizard, click **Choose Discovery Manager**.
+4. On the **Choose eDiscovery Manager** page in the edit role group wizard, select **Choose Discovery Manager**.
 
-5. Click **Add** then select the checkbox for all users you want to add to the role group.
+5. Select **Add** then select the checkbox for all users you want to add to the role group.
 
-6. Click **Add** to add the selected users, and then click **Done**.
+6. Select **Add** to add the selected users, and then select **Done**.
 
-7. Click **Save** to add the users to the role group, and then click **Close** to complete the step.
+7. Select **Save** to add the users to the role group, and then select **Close** to complete the step.
 
 ### More information about the eDiscovery Manager role group
 
@@ -96,11 +96,8 @@ There are two subgroups in the eDiscovery Manager role group. The difference bet
 - **eDiscovery Administrator**: Can perform all case management tasks that an eDiscovery Manager can do. Additionally, an eDiscovery Administrator can:
 
   - View all cases that are listed on the eDiscovery (Standard) page.
-  
   - Manage any case in the organization after they add themselves as a member of the case.
-
   - Access and export case data for any case in the organization.
-  
   - Remove members from an eDiscovery case. Only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
 
   Because of the broad scope of access, an organization should have only a few admins who are members of the eDiscovery Administrators subgroup.
@@ -113,31 +110,31 @@ The next step is to create a case and start using eDiscovery (Standard). Complet
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a> and sign in using the credentials for a user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create eDiscovery (Standard) cases.
 
-2. In the left navigation pane of the compliance portal, click **Show all**, and then click **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
+2. In the left navigation pane of the compliance portal, select **Show all**, and then select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
 
-3. On the **eDiscovery (Standard)** page, click **Create a case**.
+3. On the **eDiscovery (Standard)** page, select **Create a case**.
 
 4. On the **New case** flyout page, give the case a name (required) and then type an optional description. The case name must be unique in your organization.
 
-5. Click **Save** to create the case.
+5. Select **Save** to create the case.
 
-   The new case is created and displayed on the eDiscovery (Standard) page. You may have to click **Refresh** to display the new case.
+   The new case is created and displayed on the eDiscovery (Standard) page. You may have to select **Refresh** to display the new case.
 
 ## Step 4 (optional): Add members to a eDiscovery (Standard) case
 
 If you create a case in Step 3 and you're the only person who will use the case, then you don't have to perform this step. You can start using the case to create eDiscovery holds, search for content, and export search results. Perform this step if you want to give other users (or roles group) access to the case.
 
-1. On the **eDiscovery (Standard)** page in the compliance portal, click the name of the case that you want to add members to.
+1. On the **eDiscovery (Standard)** page in the compliance portal, select the name of the case that you want to add members to.
 
 2. On the case home page, select the **Settings** tab, and then select **Access & permissions**.
 
-3. On the **Access & permissions** flyout page, under **Members**, click **Add** to add members to the case.
+3. On the **Access & permissions** flyout page, under **Members**, select **Add** to add members to the case.
 
-    You can also choose to add role groups as members of a case. Under **Role groups**, click **Add**. You can only assign the role groups that you are a member of to a case. That's because role groups control who can assign members to an eDiscovery case.
+    You can also choose to add role groups as members of a case. Under **Role groups**, select **Add**. You can only assign the role groups that you are a member of to a case. That's because role groups control who can assign members to an eDiscovery case.
 
-4. In the list of people or role groups that can be added as members of the case, click to the left of the name of the people (or role groups) that you want to add. If you have a large list of people or role groups who can be added as members, use the **Search** box to search for a specific person or role group in the list.
+4. In the list of people or role groups that can be added as members of the case, select to the left of the name of the people (or role groups) that you want to add. If you have a large list of people or role groups who can be added as members, use the **Search** box to search for a specific person or role group in the list.
   
-5. After you select the people or role groups to add as members of the case, click **Save** to save the new members or role groups.
+5. After you select the people or role groups to add as members of the case, select **Save** to save the new members or role groups.
 
 > [!IMPORTANT]
 >
@@ -157,9 +154,7 @@ To get you started using eDiscovery (Standard), here's a simple workflow of crea
 2. **[Search for content](ediscovery-search-for-content.md)**. After you create eDiscovery holds, use the built-in search tool to search the content locations on hold. You can also search other content locations for data that may be relevant to the case. You can create and run different searches that are associated with the case. You use keywords, properties, and conditions to [build search queries](ediscovery-keyword-queries-and-search-conditions.md) that return search results with the data that's most likely relevant to the case. You can also:
 
    - View search statistics that may help you refine a search query to narrow the results.
-
    - Preview the search results to quickly verify whether the relevant data is being found.
-
    - Revise a query and rerun the search.
 
 3. **[Export and download search results](ediscovery-export-content.md)**. After you search for and find data that's relevant to your investigation, you can export it out of Office 365 for review by people outside of the investigation team. Exporting data is a two-step process. The first step is to export the results of a search in the case out of Office 365. This is accomplished by copying the results of a search to a Microsoft-provided Azure Storage location. The next step is to use the eDiscovery Export tool to download the content to a local computer. In addition to the exported data files, the export package contains an export report, a summary report, and an error report.

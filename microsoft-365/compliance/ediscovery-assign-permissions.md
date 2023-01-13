@@ -32,7 +32,6 @@ If you want people to use any of the [eDiscovery-related tools](ediscovery.md) i
 The primary eDiscovery-related role group in compliance portal is called **eDiscovery Manager**. There are two subgroups within this role group:
   
 - **eDiscovery Manager** - An eDiscovery Manager can use eDiscovery search tools to search content locations in the organization, and perform various search-related actions such as preview and export search results. Members can also create and manage cases in Microsoft Purview eDiscovery (Standard) and Microsoft Purview eDiscovery (Premium), add and remove members to a case, create case holds, run searches associated with a case, and access case data. eDiscovery Managers can only access and manage the cases they create. They can't access or manage cases created by other eDiscovery Managers.
-  
 - **eDiscovery Administrator** - An eDiscovery Administrator is a member of the eDiscovery Manager role group, and can perform the same content search and case management-related tasks that an eDiscovery Manager can perform. Additionally, an eDiscovery Administrator can:
   
   - Access all cases that are listed on the **eDiscovery (Standard)** and **eDiscovery (Premium)** pages in the compliance portal.
@@ -66,7 +65,7 @@ The primary eDiscovery-related role group in compliance portal is called **eDisc
   
     **To make a user an eDiscovery Manager:**
     - Next to **eDiscovery Manager**, select **Edit**.
-    - On the **Choose eDiscovery Manager** wizard page, select ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **Add**. 
+    - On the **Choose eDiscovery Manager** wizard page, select ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **Add**.
     - Select the user (or users) you want to add as an eDiscovery manager, and then select **Add**. 
     - When you're finished adding users, select **Done**.
     - On the **Editing Choose eDiscovery Manager** wizard page, select **Save** to save the changes to the eDiscovery Manager membership.

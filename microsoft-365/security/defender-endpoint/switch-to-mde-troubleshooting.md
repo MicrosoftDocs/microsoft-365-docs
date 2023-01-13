@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/20/2022
+ms.date: 01/10/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
 search.appverid: met150
@@ -46,19 +46,22 @@ To resolve this issue, take the following steps:
 
 Certain exclusions for Defender for Endpoint must be defined in your existing non-Microsoft endpoint protection solution. Make sure to add the following exclusions:
 
-`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe`
 
-`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`
 
-`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`
 
-`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`
 
-`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe`
+
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection`
+
 
 ### Set Microsoft Defender Antivirus to passive mode manually
 
-On Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, or Windows Server 2012 R2, you must set Microsoft Defender Antivirus to passive mode manually. This action helps prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key.
+On Windows Server 2022, Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, or Windows Server 2012 R2, you must set Microsoft Defender Antivirus to passive mode manually. This action helps prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key.
 
 You can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
 

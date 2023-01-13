@@ -45,7 +45,7 @@ Perform the following procedure on the computer that you'll use to export the re
     In the example above, the  `PstSizeLimitInBytes` value is set to 1,073,741,824 bytes or approximately 1 GB. Here are some other sample values for the  `PstSizeLimitInBytes` setting. 
 
     |**Size in GB (approx.)**|**Size in bytes**|
-    |:-----|:-----|
+    |:-----------------------|:----------------|
     |0.7 GB (700 MB)  <br/> |751619277  <br/> |
     |2 GB  <br/> |2147483648  <br/> |
     |4 GB  <br/> |4294967296  <br/> |
@@ -53,7 +53,7 @@ Perform the following procedure on the computer that you'll use to export the re
 
 3. Change the `PstSizeLimitInBytes` value to the desired maximum size of a PST file when you export search results, and then save the file.
 
-4. In Windows Explorer, select or double-click the .reg file that you created in the previous steps.
+4. In Windows Explorer, select or double-select the .reg file that you created in the previous steps.
 
 5. In the User Access Control window, select **Yes** to let the Registry Editor make the change.
 
