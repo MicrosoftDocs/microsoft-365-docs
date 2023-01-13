@@ -78,7 +78,7 @@ For instructions to add users to the default role group, roles, or create your o
 
 These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services. If additional permissions are needed for specific configurations that relate to sensitivity labels, those permissions will be listed in their respective documentation instructions.
 
-### Support for admin units
+## Support for admin units
 
 [Administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units) are now supported in preview for assigning to the role groups that you use to create and configure sensitivity labels and their label policies.
 
