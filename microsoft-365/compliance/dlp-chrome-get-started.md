@@ -30,6 +30,9 @@ Use these procedures to roll out the Microsoft Purview Extension.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+> [!NOTE]
+> Microsoft Purview Extension is only applicable to Windows devices. The extension is not necessary for the enforcement of data loss prevention on macOS devices.
+
 ## Before you begin
 
 To use Microsoft Purview Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
