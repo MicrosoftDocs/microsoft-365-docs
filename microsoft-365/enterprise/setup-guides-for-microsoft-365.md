@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
+ms.date: 01/06/2023
 ms.collection:
 - scotvorg
 - Ent_O365
@@ -30,6 +31,9 @@ Microsoft 365 and Office 365 setup guides give you tailored guidance and resourc
 
 > [!NOTE]
 > You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Administrator role can use the guides to change settings in the tenant.
+
+> [!IMPORTANT]
+> Any information saved before January 10, 2023, within each guide listed on this page has been reset due to EU data regulations. This includes selections, task assignments, and progress status. We apologize for any inconvenience this might cause.
 
 ## How to access setup guides in the Microsoft 365 admin center
 
