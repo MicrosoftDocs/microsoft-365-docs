@@ -78,6 +78,20 @@ For instructions to add users to the default role group, roles, or create your o
 
 These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services. If additional permissions are needed for specific configurations that relate to sensitivity labels, those permissions will be listed in their respective documentation instructions.
 
+## Support for admin units
+
+[Administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units) are now supported in preview for assigning to the role groups that you use to create and configure sensitivity labels and their label policies.
+
+Admin units are also supported in preview for label policies and auto-labeling policies for Exchange. As a new step when you create or edit these policies, you can select admin units so that only the users in those admin units will have the policy applied.
+
+> [!IMPORTANT]
+> Don't select admin units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because admin units support only users and groups, if you configure an auto-labeling policy to use admin units, you won't see the options for OneDrive and SharePoint.
+
+Admin units can simplify the configuration of your policies. For example, your organization has configured admin units for specific countries. You sign in to the Microsoft Purview compliance center with a role group that is assigned admin units for France and Germany. You need to publish a new sensitivity label just to users in France and assign specific policy settings to these users. When you create the sensitivity label policy, you select the France admin unit that automatically selects the users for you. You don't need to worry about group membership or manually selecting users.
+
+For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
+
+
 ## Deployment strategy for sensitivity labels
 A successful strategy to deploy sensitivity labels for an organization is to create a working virtual team that identifies and manages the business and technical requirements, proof of concept testing, internal checkpoints and approvals, and final deployment for the production environment.
 

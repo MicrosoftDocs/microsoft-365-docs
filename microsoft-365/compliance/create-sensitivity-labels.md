@@ -163,9 +163,13 @@ To check your label's configuration, including advanced settings, use the follow
     > [!IMPORTANT]
     > If you select a sublabel, make sure you also select its parent label.
 
-4. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
+4. For the **Assign admin units**: This configuration is currently in preview. If your organization is using [admin units from Azure Active Directory](/azure/active-directory/roles/administrative-units), the policy can be restricted to specific users by selecting admin units. For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
+    
+    If your organization isn't using admin units or you're signed in as a global admin and don't want to restrict the policy by using admin units, keep the default of **Full directory** and select **Next**. However, if you're signed in with an administrative role group that's using admin units, you must select one or more admin units for the policy.
 
-5. Follow the prompts to configure the policy settings.
+5. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
+
+6. Follow the prompts to configure the policy settings.
 
     The policy settings that you see match the scope of the labels that you selected. For example, if you selected labels that have just the **Items** scope, you don't see the policy settings **Apply this label by default to groups and sites** and **Require users to apply a label to their groups and sites**.
 
@@ -173,7 +177,7 @@ To check your label's configuration, including advanced settings, use the follow
 
     For labels configured for **Microsoft Purview Data Map assets (preview)**: These labels don't have any associated policy settings.
 
-6. Repeat these steps if you need different policy settings for different users or scopes. For example, you want additional labels for a group of users, or a different default label for a subset of users. Or, if you have configured labels to have different scopes.
+7. Repeat these steps if you need different policy settings for different users or scopes. For example, you want additional labels for a group of users, or a different default label for a subset of users. Or, if you have configured labels to have different scopes.
 
 7. If you create more than one label policy that might result in a conflict for a user, review the policy order and if necessary, move them up or down. To change the order of a label policy, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label policy priority (order matters)](sensitivity-labels.md#label-policy-priority-order-matters) from the overview information.
 
