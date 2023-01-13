@@ -11,7 +11,7 @@ ms.collection:
 - m365-security
 - tier1
 ms.service: microsoft-365-security
-ms.subservice: other
+ms.subservice: m365bp
 ms.date: 10/18/2022
 ms.localizationpriority: high
 search.appverid: 
