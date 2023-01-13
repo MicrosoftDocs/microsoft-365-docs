@@ -1,5 +1,5 @@
 ---
-title: "How to check Microsoft 365 service health"
+title: How to check Microsoft 365 service health
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -26,7 +26,7 @@ search.appverid:
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: "View the health status of Microsoft 365 services before you call support to see if there is an active service interruption."
+description: View the health status of Microsoft 365 services before you call support to see if there is an active service interruption.
 ---
 
 # How to check Microsoft 365 service health

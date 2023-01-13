@@ -90,7 +90,7 @@ For more information about the recommended settings for anti-malware, see [EOP a
 
 4. Back on the policy details flyout, click **Close**.
 
-For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+For detailed instructions for configuring anti-malware policies, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 ## Part 2 - Anti-phishing protection in EOP and Defender for Office 365
 
