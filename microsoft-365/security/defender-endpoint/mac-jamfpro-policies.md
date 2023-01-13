@@ -1,7 +1,7 @@
 ---
 title: Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
 description: Learn how to set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
-keywords: policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, big sur, monterey, ventura, mde for mac
+keywords: policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -391,13 +391,15 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 These steps are applicable of macOS 10.15 (Catalina) or newer.
 
+MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "These steps are applicable to "macOS 11 (Big Sur) or later"
+
 1. In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.
 
 2. Click **New**, and enter the following details for **Options**:
 
     - Tab **General**:
         - **Name**: MDATP MDAV Notification settings
-        - **Description**: macOS 10.15 (Catalina) or newer
+        - **Description**: macOS 10.15 (Catalina) or newer  >>>MO - CHANGE TO BIG SUR OR LATER?
         - **Category**: None *(default)*
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*
@@ -534,7 +536,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     **General**
     - Name: MDATP MDAV - grant Full Disk Access to EDR and AV
-    - Description: On macOS Catalina or newer, the new Privacy Preferences Policy Control
+    - Description: On macOS Catalina or newer, the new Privacy Preferences Policy Control >>>MO - CHANGE TO BIG SUR OR LATER?
     - Category: None
     - Distribution method: Install Automatically
     - Level: Computer level
@@ -725,13 +727,15 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 
 These steps are applicable of macOS 10.15 (Catalina) or newer.
 
+>>>MO - CHANGE TO BIG SUR OR LATER?
+
 1. In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.
 
 2. Click **New**, and enter the following details for **Options**:
 
     - Tab **General**:
         - **Name**: Microsoft Defender Network Extension
-        - **Description**: macOS 10.15 (Catalina) or newer
+        - **Description**: macOS 10.15 (Catalina) or newer >>>MO - CHANGE TO BIG SUR OR LATER?
         - **Category**: None *(default)*
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*

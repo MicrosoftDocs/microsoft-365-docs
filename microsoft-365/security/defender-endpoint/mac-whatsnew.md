@@ -1,7 +1,7 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew, catalina, big sur, monterey, ventura, mde for mac
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -417,7 +417,7 @@ The issue impacts Microsoft Defender for endpoint security extensions, and might
 
 **What's new**
 
-- Fix for a system freeze occurring on shutdown on macOS Mojave and macOS Catalina.
+- Fix for a system freeze occurring on shutdown on macOS Mojave and macOS Catalina. -- MO? I THINK OK TO KEEP AS IT'S MORE LIKE A LOG. THOUGHTS?
 
 <br/>
 </details>
@@ -549,7 +549,7 @@ The issue impacts Microsoft Defender for endpoint security extensions, and might
 
 **What's new**
 
-- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Microsoft Defender Vulnerability Management (MDVM) functionality.
+- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Microsoft Defender Vulnerability Management (MDVM) functionality. -- MO? I THINK OK TO KEEP AS IT'S MORE LIKE A LOG. THOUGHTS?
 
 <br/>
 </details>

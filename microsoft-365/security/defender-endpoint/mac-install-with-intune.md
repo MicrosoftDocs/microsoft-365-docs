@@ -1,7 +1,7 @@
 ---
 title: Intune-based deployment for Microsoft Defender for Endpoint on Mac
 description: Install Microsoft Defender for Endpoint on Mac, using Microsoft Intune.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, big sur, monterey, ventura, mde for mac
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -55,7 +55,6 @@ The following table summarizes the steps you would need to take to deploy and ma
 |[Download the onboarding package](#download-the-onboarding-package)|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
 |[Approve System Extension for Microsoft Defender for Endpoint](#approve-system-extensions)|MDATP_SysExt.xml|N/A|
 |[Approve Kernel Extension for Microsoft Defender for Endpoint](#download-the-onboarding-package)|MDATP_KExt.xml|N/A|
-|[Grant full disk access to Microsoft Defender for Endpoint](#full-disk-access)|MDATP_tcc_Catalina_or_newer.xml|com.microsoft.wdav.tcc|
 |[Network Extension policy](#network-filter)|MDATP_NetExt.xml|N/A|
 |[Configure Microsoft AutoUpdate (MAU)](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|
 |[Microsoft Defender for Endpoint configuration settings](mac-preferences.md#intune-full-profile) <p> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`.|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
@@ -131,6 +130,8 @@ This profile contains a license information for Microsoft Defender for Endpoint.
 
 This profile is needed for macOS 10.15 (Catalina) or newer. It will be ignored on older macOS.
 
+MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "THIS PROFILE IS NEEDED FOR "macOS 11 (Big Sur) OR LATER"
+
 1. Select **Create Profile** under **Configuration Profiles**.
 1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Extensions**. Click **Create**.
 1. In the **Basics** tab, give a name to this new profile.
@@ -151,6 +152,8 @@ This profile is needed for macOS 10.15 (Catalina) or newer. It will be ignored o
 
 This profile is needed for macOS 10.15 (Catalina) or older. It will be ignored on newer macOS.
 
+MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "THIS PROFILE IS NEEDED FOR "macOS 11 (Big Sur) OR LATER"
+
 > [!CAUTION]
 > Apple Silicon (M1) devices do not support KEXT. Installation of a configuration profile consisting KEXT policies will fail on these devices.
 
@@ -166,7 +169,7 @@ This profile is needed for macOS 10.15 (Catalina) or older. It will be ignored o
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 1. Review and create this configuration profile.
 
-### Full Disk Access
+### Full Disk Access - MO - DO WE DELETE THIS ENTIRE SECTION?
 
    > [!CAUTION]
    > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
