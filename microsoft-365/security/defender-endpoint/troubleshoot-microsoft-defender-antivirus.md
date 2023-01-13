@@ -1329,6 +1329,44 @@ Microsoft Defender Antivirus client is up and running in a healthy state.
 </td>
 </tr>
 <tr>
+<th colspan="2">Event ID: 1121</th>
+</tr>
+<tr><td>
+Symbolic name:
+</td>
+<td >
+<b>(TBD)</b>
+</td>
+</tr>
+<tr>
+<td>
+Message:
+</td>
+<td >
+<b>Event when an attack surface reduction rule fires in block mode.</b>
+</td>
+</tr>
+<tr>
+<td>
+Description:
+</td>
+<td >
+TBD.
+<dl>
+<dt>Current Platform Version: &lt;Current platform version&gt;</dt>
+<dt>Threat Resource Path: &lt;Path&gt;</dt>
+<dt>Hashes: &lt;Hashes&gt;</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<td></td>
+<td >
+<div class="alert"><b>Note: whatgoeshere?: <b>TBD</b>.</div>
+<div> </div>
+</td>
+</tr>
+<tr>
 <th colspan="2">Event ID: 1127</th>
 </tr>
 <tr><td>
