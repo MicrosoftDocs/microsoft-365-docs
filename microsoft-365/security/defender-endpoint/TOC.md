@@ -10,9 +10,10 @@
 ### [What's new in Microsoft Defender for Endpoint on Windows](windows-whatsnew.md)
 ### [What's new in Microsoft Defender for Endpoint on other platforms]()
 #### [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
-#### [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 #### [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 #### [What's new in Defender for Endpoint on Android](android-whatsnew.md)
+#### [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
 
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
