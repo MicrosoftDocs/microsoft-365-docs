@@ -336,10 +336,10 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     > [!NOTE]
     > For organizations that are using admin units:
     >
-    > - If you selected the option to use admin units in the previous step, you won't see the locations for SharePoint sites and OneDrive accounts. For the Exchange location, **All** represents all the users in the selected admin units rather than all users in your organization. 
-    > - If you change the default settings by using **Included** or **Excluded*, you can only select users from the admin units selected in the previous step.
+    > - If you selected the option to use admin units in the previous step, you won't see the locations for SharePoint sites and OneDrive accounts.
+    > - When you use the **Included** or **Excluded** options, you will  see and can select only users from the admin units selected in the previous step.
     
-    If you change the default settings by using **Included** or **Excluded**:
+    If you use the **Included** or **Excluded** options:
     
     - For the **Exchange** location, the policy is applied according to the sender address of the recipients specified. Most of the time, you'll want to keep the default of **All** included with **None** excluded. This configuration is suitable even if you're testing for a subset of users. Instead of specifying your subset of users here, use the advanced rules in the next step to configure conditions to include or exclude recipients in your organization. Otherwise, when you change the default settings here:
         -  If you change the default of **All** included and instead, choose specific users or groups, email sent from outside your organization will be exempt from the policy. 
