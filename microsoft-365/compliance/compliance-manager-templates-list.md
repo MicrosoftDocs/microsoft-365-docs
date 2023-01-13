@@ -46,7 +46,7 @@ Jump to a section below to view templates by area or industry:
 - [Industry](#industry)
 - [US Government](#us-government)
 - [US States and Territories](#us-states-and-territories)
-- [Asia-Pacific Countries](#asia-pacific-countries)
+- [Asia-Pacific Countries/Regions](#asia-pacific-countriesregions)
 - [Europe, Middle East, and Africa (EMEA)](#europe-middle-east-and-africa-emea)
 - [Latin America](#latin-america)
 - [North America](#north-america)
@@ -265,7 +265,7 @@ The templates listed below may be purchased by your organization. Certain licens
 
 ### Regional
 
-#### Asia-Pacific Countries
+#### Asia-Pacific Countries/Regions
 
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - ASD Essential 8  

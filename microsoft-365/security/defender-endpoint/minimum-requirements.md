@@ -135,8 +135,6 @@ When you run the onboarding wizard for the first time, you must choose where you
 
 Internet connectivity on devices is required either directly or through proxy.
 
-The Defender for Endpoint sensor can use a daily average bandwidth of 5 MB to communicate with the Defender for Endpoint cloud service and report cyber data. One-off activities such as file uploads and investigation package collection aren't included in this daily average bandwidth.
-
 For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 ## Microsoft Defender Antivirus configuration requirement

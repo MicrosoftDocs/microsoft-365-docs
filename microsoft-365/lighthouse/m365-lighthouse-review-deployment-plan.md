@@ -26,7 +26,7 @@ All tenants with an Onboarding status of **Active** are assigned the default bas
 
 ## Before you begin
 
-Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 Additionally, each partner tenant user must meet the following requirements:
 
@@ -40,30 +40,30 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## Access a tenant deployment plan
 
-1. In the left navigation pane in Lighthouse, select **Tenants**.
+1. In the left navigation pane in Lighthouse, select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 
-3. Select the **Deployment Plan** tab.
+3. Select the **Deployment Plan** tab.
 
 The **Deployment Plan** tab lists all tasks included in the tenant's deployment plan and provides the following information for each task:
 
-| **Column**    | **Description**                                                                                |
-|---------------|----------------------------------------------------------------|
-| Task          | The name of the task.                                                                          |
-| Status        | The status of the task.                                                                        |
-| Total users   | Where applicable, the total number of users detected within the tenant.                        |
-| Excluded      | The number of users that have been excluded from the task.                                     |
-| Not compliant | The number of users whose configuration is Not compliant with the task.                        |
-| Not licensed  | The number of users that haven't been assigned licenses to the services required by the task. |
-| Not targeted  | The number of users that aren't targeted for assignment of the task.                          |
-| Compliant     | The number of users whose configuration is Compliant with the task.                            |
+|Column|Description|
+|---|---|
+|Task|The name of the task.|
+|Status|The status of the task.|
+|Total users|Where applicable, the total number of users detected within the tenant.|
+|Excluded|The number of users that have been excluded from the task.|
+|Not compliant|The number of users whose configuration is Not compliant with the task.|
+|Not licensed|The number of users that haven't been assigned licenses to the services required by the task.|
+|Not targeted|The number of users that aren't targeted for assignment of the task.|
+|Compliant|The number of users whose configuration is Compliant with the task.|
 
 The **Deployment Plan** tab also supports the following actions:
 
-- **Refresh:** Select to retrieve the most current task data.
+- **Refresh:** Select to retrieve the most current task data.
 
-- **Search:** Enter keywords to quickly locate a specific task in the list.
+- **Search:** Enter keywords to quickly locate a specific task in the list.
 
 When a tenant’s onboarding status becomes **Active** or when you access a tenant within Lighthouse, Lighthouse queries the tenant for existing configurations. The deployment status is assigned to each task based on the status of each setting included in the subtask and, where applicable, for each user to which the subtask is assigned.
 
@@ -71,8 +71,8 @@ Deployment statuses are automatically determined by Lighthouse when detection is
 
 ## Related content
 
-[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
-[Overview of deployment tasks](m365-lighthouse-overview-deployment-task.md) (article)\
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Overview of deployment tasks](m365-lighthouse-overview-deployment-task.md) (article)\
 [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
-[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
+[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

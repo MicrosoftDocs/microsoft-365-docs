@@ -7,7 +7,6 @@ ms.author: robmazz
 author: robmazz
 ms.reviewer: nickrob
 manager: laurawi
-ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
