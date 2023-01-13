@@ -24,7 +24,7 @@ ms.service: microsoft-365-security
 # SIEM integration with Microsoft Defender for Office 365
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -59,7 +59,7 @@ The following table summarizes the values of **AuditLogRecordType** that are rel
 | 64| AirInvestigation | Automated investigation and response events, such as investigation details and relevant artifacts, from Microsoft Defender for Office 365 Plan 2. |
 
 > [!IMPORTANT]
-> You must have either the global administrator or Security Administrator role assigned in the Microsoft 365 Defender portal to set up SIEM integration with Microsoft Defender for Office 365. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+> You must have either the global administrator or Security Administrator role assigned in the Microsoft 365 Defender portal to set up SIEM integration with Microsoft Defender for Office 365. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 >
 > Audit logging must be turned on for your Microsoft 365 environment. To get help with this, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
@@ -67,4 +67,4 @@ The following table summarizes the values of **AuditLogRecordType** that are rel
 
 [Office 365 threat investigation and response](office-365-ti.md)
 
-[Automated investigation and response (AIR) in Office 365](automated-investigation-response-office.md)
+[Automated investigation and response (AIR) in Office 365](air-about-office.md)

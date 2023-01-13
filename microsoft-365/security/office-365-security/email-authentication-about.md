@@ -27,7 +27,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -160,7 +160,7 @@ Once you've gotten started with an SPF fallback policy of `?all`, you can gradua
 
 ### Configure permitted senders of unauthenticated email
 
-You can also use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to permit senders to transmit unauthenticated messages to your organization.
+You can also use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list-about.md) to permit senders to transmit unauthenticated messages to your organization.
 
 For external domains, the spoofed user is the domain in the From address, while the sending infrastructure is one of the following values:
 
