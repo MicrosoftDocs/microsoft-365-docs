@@ -31,6 +31,7 @@ search.appverid:
 
 
 **Applies to:**
+
 - Microsoft 365 Defender
 
 Read responses to the most commonly asked questions about turning on [Microsoft 365 Defender](microsoft-365-defender.md), including required licenses and permissions, deploying support services, and initial settings.
@@ -81,9 +82,10 @@ Accounts assigned the following Azure Active Directory (Azure AD) roles can acce
 - Application Administrator
 - Cloud Application Administrator
 
-
 > [!NOTE]
 > Role-based access control settings in Microsoft Defender for Endpoint influence access to data. For more information, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
+>
+> If you are running the Microsoft 365 Defender preview program you can now also experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft 365 Defender role-based access control (RBAC) model](./manage-rbac.md).
 
 ## What time zone does Microsoft 365 Defender default to?
 

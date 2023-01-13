@@ -1,5 +1,5 @@
 ---
-title: Insider risk management Users dashboard
+title: Manage the workflow with the insider risk management users dashboard
 description: Learn about insider risk management Users dashboard in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Insider risk management Users dashboard
+# Manage the workflow with the insider risk management users dashboard
 
 > [!IMPORTANT]
 > Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.

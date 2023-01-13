@@ -441,7 +441,7 @@ Attackers might attempt to use Office apps to migrate malicious code into other 
 
 There are no known legitimate business purposes for using code injection.
 
-This rule applies to Word, Excel, and PowerPoint.
+This rule applies to Word, Excel, OneNote, and PowerPoint.
 
 Intune name: `Office apps injecting code into other processes (no exceptions)`
 

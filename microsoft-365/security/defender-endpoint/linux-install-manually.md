@@ -344,7 +344,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
 2. Run MicrosoftDefenderATPOnboardingLinuxServer.py.
 
     > [!NOTE]
-    > To run this command, you must have `python`  or `python3` installed on the device depending on the disto and version. If needed, see [Step-by-step Instruction for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
+    > To run this command, you must have `python`  or `python3` installed on the device depending on the distro and version. If needed, see [Step-by-step Instructions for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
 
     If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
 
@@ -414,6 +414,21 @@ Download the onboarding package from Microsoft 365 Defender portal.
     - After a few minutes, a detection should be raised in Microsoft 365 Defender.
 
     - Look at the alert details, machine timeline, and perform your typical investigation steps.
+
+## Microsoft Defender for Endpoint package external package dependencies
+
+The following external package dependencies exist for the mdatp package:
+
+ - The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "selinux-policy-targeted", "mde-netfilter"
+ - For RHEL6 the mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter"
+ - For DEBIAN the mdatp package requires "libc6 >= 2.23", "uuid-runtime", "auditd", "mde-netfilter"
+
+The mde-netfilter package also has the following package dependencies:
+
+ - For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0" 
+ - for RPM  the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
+
+If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies.
 
 ## Installer script
 

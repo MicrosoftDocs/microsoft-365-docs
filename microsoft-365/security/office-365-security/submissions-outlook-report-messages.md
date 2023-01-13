@@ -32,7 +32,7 @@ Admins configure user reported messages to go to a designated reporting mailbox,
 Microsoft provides the following tools for users to report good and bad messages:
 
 - Built-in reporting in Outlook on the web (formerly known as Outlook Web App or OWA).
-- The Microsoft Report Message or Report Phishing add-ins. The add-ins work on all virtually all Outlook platforms, including Outlook on the web. For more information, see [Enable the Microsoft Report Message or Report Phishing add-ins](enable-the-report-message-add-in.md).
+- The Microsoft Report Message or Report Phishing add-ins. The add-ins work on all virtually all Outlook platforms, including Outlook on the web. For more information, see [Enable the Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md).
 
 For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
@@ -73,7 +73,7 @@ Based on the [user reported message settings](submissions-user-reported-messages
 
 ### Use the built-in Report button in Outlook on the web to report messages that aren't junk
 
-In Outlook on the web, select one or messages in the Junk Email folder, click **Report**, and then select **Not junk** in the dropdown list.
+In Outlook on the web, select one or more messages in the Junk Email folder, click **Report**, and then select **Not junk** in the dropdown list.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/owa-report-as-not-junk.png" alt-text="The results of clicking the Report button after selecting multiple messages in the Junk Email folder in Outlook on the web." lightbox="../../media/owa-report-as-not-junk.png":::
@@ -84,8 +84,8 @@ Based on the [user reported message settings](submissions-user-reported-messages
 
 > [!NOTE]
 >
-> - The procedures in this section require the Microsoft Report Message or Report Phishing add-ins to be installed. For more information, see [Enable the Microsoft Report Message or the Report Phishing add-in](enable-the-report-message-add-in.md) installed.
-> - The versions of Outlook that are supported by the Report Message and Report Phishing add-ins are described [here](enable-the-report-message-add-in.md#what-do-you-need-to-know-before-you-begin).
+> - The procedures in this section require the Microsoft Report Message or Report Phishing add-ins to be installed. For more information, see [Enable the Microsoft Report Message or the Report Phishing add-in](submissions-users-report-message-add-in-configure.md) installed.
+> - The versions of Outlook that are supported by the Report Message and Report Phishing add-ins are described [here](submissions-users-report-message-add-in-configure.md#what-do-you-need-to-know-before-you-begin).
 
 ### Use the Report Message add-in to report junk and phishing messages in Outlook
 

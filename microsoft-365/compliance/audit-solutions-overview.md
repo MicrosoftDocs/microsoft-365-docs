@@ -122,7 +122,7 @@ The first step is to set up Audit (Standard) and then start running audit log se
 
 1. Verify that your organization has a subscription that supports Audit (Standard) and if applicable, a subscription that supports Audit (Premium).
 
-2. Assign permissions in Exchange Online to people in your organization who will use the audit log search tool in the compliance portal or use the **Search-UnifiedAuditLog** cmdlet. Specifically, users must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online.
+2. Assign permissions in Exchange Online to people in your organization who will use the audit log search tool in the compliance portal or use the **Search-UnifiedAuditLog** cmdlet. Specifically, users must be assigned the *View-Only Audit Logs* or *Audit Logs* role in Exchange Online.
 
 3. Search the audit log. After completing step 1 and step 2, users in your organization can use the audit log search tool (or corresponding cmdlet) to search for audited activities.
 

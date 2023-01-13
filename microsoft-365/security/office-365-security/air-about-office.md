@@ -36,7 +36,7 @@ As security alerts are triggered, it's up to your security operations team to lo
 
 AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well-known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats.
 
-This article describes how AIR works through several examples. When you're ready to get started using AIR, see [Automatically investigate and respond to threats](office-365-air.md).
+This article describes how AIR works through several examples. When you're ready to get started using AIR, see [Automatically investigate and respond to threats](air-about.md).
 
 - [Example 1: A user-reported phish message launches an investigation playbook](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
 - [Example 2: A security administrator triggers an investigation from Threat Explorer](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
@@ -92,5 +92,5 @@ For example, recently, an organization set up a way for their security operation
 
 ## Next steps
 
-- [Get started using AIR](office-365-air.md)
+- [Get started using AIR](air-about.md)
 - [View pending or completed remediation actions](air-review-approve-pending-completed-actions.md)

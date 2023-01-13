@@ -382,7 +382,7 @@
       href: ../commerce/index.yml
     - name: Secure your organization
       items: 
-        - name: Top 10 ways to secure your data
+        - name: Top 10 ways to secure your business data
           href: security-and-compliance/secure-your-business-data.md
         - name: Multi-factor authentication for Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md

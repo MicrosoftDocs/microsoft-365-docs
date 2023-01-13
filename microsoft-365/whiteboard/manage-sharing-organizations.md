@@ -68,6 +68,14 @@ These changes should take approximately 60 minutes to apply across your tenancy.
 > [!NOTE]
 > If a Whiteboard is stored in OneDrive and already attached to a meeting, it cannot be initiated on a Surface Hub or Microsoft Teams Rooms device. An authenticated user on another device will need to do so. We plan to enable this functionality in a future release.
 
+## Share in Teams calls
+
+During a one-on-one or group call, you might start sharing a Whiteboard. Similar limitations apply to who can share a Whiteboard regarding scenarios where users from different organizations are involved in a call.
+
+When all members of the call are from the same organization, any person can start and access the Whiteboard. For calls involving users from different organizations, only some users can access the Whiteboard sharing button. During a one-on-one call, only the original user who created a conversation or call (the first person to send a message or call another user, whichever occurs first) between the two users can access the Whiteboard sharing button from the drop-down share tray button.
+
+This cannot be changed after two users have started a conversation. Deleting the chat involving the two users will not restart the chat, therefore, this will not reset who created or started the chat. Having the other user call will also not change who can share the Whiteboard, even if a Whiteboard has not been shared yet. The purpose of this limitation is to prevent out-of-organization user access to a Whiteboard unless sharing starts from an in-organization user.
+
 ## Add as a tab in Teams channels and chats
 
 When you add a whiteboard as a tab in a Teams channel or chat, Whiteboard will create a sharing link that's accessible by anyone in the organization.
