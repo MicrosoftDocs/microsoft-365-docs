@@ -218,7 +218,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Detects various legally abiding documents/ contracts/ agreements like Arbitration agreements, Power of Attorney, Purchase Agreements between two parties. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .txt files. | English |
+| Detects various legally binding documents/ contracts/ agreements like Arbitration agreements, Power of Attorney, Purchase Agreements between two parties. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .txt files. | English |
 
 ## License agreement
 
@@ -344,7 +344,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Detects items that contain a set of instructions and statements written computer programming languages on GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.  | Detects content in .msg, .as, .h, .c, .cs, .cc, .cpp, .hpp, .cxx, .hh, .c++, .clj, .edn, .cljc, .cljs, .coffee, .litcoffee, .go, .hs, .lhs, .java, .jar, .js, .mjs, .lua, .m, .mm, .pl, .pm, .t, .xs, .pod, .php, .phar, .php4, .pyc, .R, .r, .rda, .RData, .rds, .rb, .scala, .sc, .sh, .swift files. | N/A |
+| Detects items that contain a set of instructions and statements written computer programming languages on GitHub: ActionScript, C, C#, C++, Clojure, CoffeeScript, Go, Haskell, Java, JavaScript, Lua, MATLAB, Objective-C, Perl, PHP, Python, R, Ruby, Scala, Shell, Swift, TeX, Vim Script.  | Detects content in .c, .h, .w, .cs, .cake, .csx, .cpp, .c++, .cc, .cp, .cxx, .hh, .hpp, .hxx, .java, .js, .m, .matlab, .pl, .perl, .pm, .prl, .ipb, .php, .php3, .php4, .php5, .py, .pyc, .pyo, .r, .rl, .rb, .irb, .swift, .as, .clj, .cljs, .cljc, .coffee, .Go, .hs, .hsc, .lua, .lub, .m, .mm, .scala, .sca, .Tex,T, .xs, . sh, .vim, .edn, .javac, .lhs, .mjs, .pod, .r, .rda, .RData, .rds, .rb, .bash, .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .eml, .msg, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla, .sc, .litcoffee files. | N/A |
 
 > [!NOTE]
 > Source code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
