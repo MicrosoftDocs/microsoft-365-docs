@@ -26,17 +26,6 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## January 2023
-
-In preview: Compliance Manager has four new improvement actions that correspond to actions taken in Microsoft Priva to bolster your organization's compliance with data privacy regulations. The new improvement actions are:
-
-- Create data transfer policies to support privacy goals
-- Create data minimization policies to support privacy goals 
-- Create data overexposure policy to support privacy goals
-- Enable and enforce data retention limits for data involved in data subject rights request
-
-Learn more about [Priva](/privacy/priva/priva-overview) and get details about [automatic testing and monitoring of improvement actions](compliance-manager-setup.md#testing-source-for-automated-testing) in Compliance Manager.
-
 ## December 2022
 
 Assessment templates that belong to the same regulation family now count as one template. This change means that when you purchase a premium template license for a regulation, the license will apply for all levels and versions of that regulation. Review the [list of templates](compliance-manager-templates-list.md) and a summary of [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
