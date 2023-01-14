@@ -35,10 +35,15 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
 
+**Mac devices to soon receive built-in protection**
+
+Tamper protection will extend to macOS devices and will be turned on in block mode by default to help secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](<https://review.learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/built-in-protection?view=o365-worldwide&branch=main>).
+
 **Known issues**
 
 Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update.
 The issue impacts Microsoft Defender for endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
+
 
 <details>
   <summary>Jan-2023 (Build: 101.94.13  | Release version: 20.122112.19413.0)</summary>
