@@ -232,6 +232,10 @@
            href: attack-simulation-training-insights.md
          - name: Attack simulation training deployment considerations and FAQ
            href: attack-simulation-training-faq.md
+         - name: Training campaigns in Attack simulation training
+           href: attack-simulation-training-training-campaigns.md
+         - name: Training modules in Attack simulation training
+           href: attack-simulation-training-training-modules.md
        - name: Advanced delivery policies
          items:
          - name: Configure advanced delivery policies
