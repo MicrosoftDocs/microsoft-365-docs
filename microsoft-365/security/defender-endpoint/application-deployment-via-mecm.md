@@ -31,7 +31,7 @@ This article guides you in migrating down-level servers from Microsoft Monitorin
 
 ## Prerequisites
 
-- Microsoft Endpoint Configuration Manager (MECM) older than 2207.
+- Microsoft Endpoint Configuration Manager (MECM) higher than 2207.
 - Down-level OS devices in your environment onboarded with Microsoft Monitoring Agent. To confirm, verify that `MsSenseS.exe` is running in Task Manager.
 - Presence of the MMA agent. You can verify it by checking if the correct Workspace ID is present in the Control Panel> Microsoft Monitoring Agent.
 - Active Microsoft 365 Defender portal with devices onboarded.
