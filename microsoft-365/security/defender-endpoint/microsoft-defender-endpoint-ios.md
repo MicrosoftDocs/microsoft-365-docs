@@ -13,8 +13,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -47,7 +47,7 @@ search.appverid: met150
     - Intune Company Portal app can be downloaded from the [Apple App Store](https://apps.apple.com/us/app/intune-company-portal/id719171358).
     
     >[!NOTE]
-    >Apple does not allow redirecting users to download other apps from the app store so this step needs to be done by the user before onboarding to Microsoft Defender for Endpoint app.)
+    >Apple does not allow redirecting users to download other apps from the app store so this step needs to be done by the user before onboarding to Microsoft Defender for Endpoint app.
 
 
     - Device(s) are registered with Azure Active Directory. This requires the end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
@@ -66,17 +66,20 @@ search.appverid: met150
 
 
     > [!NOTE]
+    >
     > - Microsoft Defender for Endpoint now extends protection to an organization's data within a managed application for those who aren't using mobile device management (MDM) but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
     > - In addition, Microsoft Defender for Endpoint already supports devices that are enrolled using Intune mobile device management (MDM).  
 
 **System Requirements**
 
-- iOS device running iOS 12.0 and above. iPads are also supported. *Note that starting 31-March-2022, the minimum supported iOS version by Microsoft Defender for Endpoint will be iOS 13.0.*
+- iOS device running iOS 14.0 and above. iPads are also supported. 
 
 - The device is either enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358) or is registered with Azure Active Directory through [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) with the same account.
 
  > [!NOTE]
- > Microsoft Defender for Endpoint on iOS isn't supported currently while using iOS User Enrollment.
+>
+> - Microsoft Defender for Endpoint on iOS isn't supported on user-less or shared devices.
+> - Microsoft Defender for Endpoint on iOS isn't supported currently while using iOS User Enrollment.
 
 ## Installation instructions
 

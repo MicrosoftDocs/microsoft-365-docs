@@ -13,9 +13,11 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid:
 - MET150
 description: "Learn how to use the data loss prevention on premises scanner to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
@@ -43,7 +45,7 @@ Data from DLP on-premises scanner surfaces in several areas
 
 #### Microsoft 365 Audit log
 
-The DLP rule matches are available in Audit log UI, see [Search the audit log in the Microsoft Purview compliance portal](search-the-audit-log-in-security-and-compliance.md)  or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
+The DLP rule matches are available in Audit log UI, see [Search the audit log in the Microsoft Purview compliance portal](audit-log-search.md)  or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
 
 #### AIP
 
@@ -72,6 +74,8 @@ If you want to enforce DLP rules on the scanned files, enforcement must be enabl
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) and select the DLP policy that is targeted to the on-premises location repositories you have configured in AIP.
 2. Edit the policy.
 3. On the **Test or turn on the policy** page, select **Yes, turn it on right away**.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## See also
 

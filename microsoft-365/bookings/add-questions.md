@@ -6,6 +6,9 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
+ms.collection: 
+- Tier1
+- scotvorg
 ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: "If you need to ask customers questions when they book an appointment with you online, you can add custom questions and required questions to the booking page."

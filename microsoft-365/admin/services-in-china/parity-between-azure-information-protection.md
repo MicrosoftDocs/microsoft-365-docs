@@ -7,9 +7,11 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2 
+- scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
@@ -24,7 +26,7 @@ monikerRange: 'o365-21vianet'
 
 # Azure Information Protection support for Office 365 operated by 21Vianet
 
-This article covers the differences between Azure Information Protection (AIP) support for Office 365 operated by 21Vianet and commercial offerings, as well as specific instructions for configuring AIP for customers in China&mdash;including how to install the AIP on-premises scanner and manage content scan jobs.
+This article covers the differences between Azure Information Protection (AIP) support for Office 365 operated by 21Vianet and commercial offerings, as well as specific instructions for configuring AIP for customers in China&mdash;including how to install the information protection scanner and manage content scan jobs.
 
 ## Differences between AIP for Office 365 operated by 21Vianet and commercial offerings
 
@@ -46,7 +48,7 @@ The following list includes the existing gaps between AIP for Office 365 operate
 
 - The [Mobile Viewer](/azure/information-protection/rms-client/mobile-app-faq) is not supported by Azure China 21Vianet.
 
-- The AIP area of the Azure portal is unavailable to customers in China. Use [PowerShell commands](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as managing and running your content scan jobs.
+- The scanner area of the compliance portal is unavailable to customers in China. Use [PowerShell commands](#step-6-install-the-information-protection-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as managing and running your content scan jobs.
 
 - AIP endpoints in Office 365 operated by 21Vianet are different than the endpoints required for other cloud services. Network connectivity from clients to the following endpoints is required:
     - Download label and label policies: `*.protection.partner.outlook.cn`
@@ -65,7 +67,7 @@ To configure AIP for customers in China:
 
 1. [Configure AIP apps on Windows](#step-5-configure-aip-apps-on-windows).
 
-1. [Install the AIP on-premises scanner and manage content scan jobs](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs). 
+1. [Install the information protection scanner and manage content scan jobs](#step-6-install-the-information-protection-scanner-and-manage-content-scan-jobs). 
 
 ### Step 1: Enable Rights Management for the tenant
 
@@ -166,13 +168,13 @@ AIP apps on Windows need the following registry key to point them to the correct
 > [!IMPORTANT]
 > Make sure you don't delete the registry key after an uninstall. If the key is empty, incorrect, or non-existent, the functionality will behave as the default value (default value = 0 for the commercial cloud). If the key is empty or incorrect, a print error is also added to the log.
 
-### Step 6: Install the AIP on-premises scanner and manage content scan jobs
+### Step 6: Install the information protection scanner and manage content scan jobs
 
-Install the AIP on-premises scanner to scan your network and content shares for sensitive data, and apply classification and protection labels as configured in your organization's policy.
+Install the Microsoft Purview Information Protection scanner to scan your network and content shares for sensitive data, and apply classification and protection labels as configured in your organization's policy.
 
-When configuring and managing your content scan jobs, use the following procedure instead of the [Azure portal interface](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=azure-portal-only) that's used by the commercial offerings.
+When configuring and managing your content scan jobs, use the following procedure instead of the [Microsoft Purview compliance portal](../../compliance/deploy-scanner-configure-install.md) that's used by the commercial offerings.
 
-For more information, see [What is the Azure Information Protection unified labeling scanner?](/azure/information-protection/deploy-aip-scanner) and [Manage your content scan jobs using PowerShell only](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer).
+For more information, see [Learn about the information protection scanner](../../compliance/deploy-scanner.md) and [Manage your content scan jobs using PowerShell only](../../compliance/deploy-scanner-prereqs.md#use-powershell-with-a-disconnected-computer).
 
 **To install and configure your scanner**:
 
@@ -270,9 +272,9 @@ For more information, see [What is the Azure Information Protection unified labe
 
 Continue with the following steps as needed:
 
-- [Run a discovery cycle and view reports for the scanner](/azure/information-protection/deploy-aip-scanner-manage#run-a-discovery-cycle-and-view-reports-for-the-scanner)
-- [Use PowerShell to configure the scanner to apply classification and protection](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=azure-portal-only#use-powershell-to-configure-the-scanner-to-apply-classification-and-protection)
-- [Use PowerShell to configure a DLP policy with the scanner](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=azure-portal-only#use-powershell-to-configure-a-dlp-policy-with-the-scanner)
+- [Run a discovery cycle and view reports for the scanner](../../compliance/deploy-scanner-manage.md#run-a-discovery-cycle-and-view-reports-for-the-scanner)
+- [Use PowerShell to configure the scanner to apply classification and protection](../../compliance/deploy-scanner-configure-install.md?tabs=azure-portal-only#use-powershell-to-configure-the-scanner-to-apply-classification-and-protection)
+- [Use PowerShell to configure a DLP policy with the scanner](../../compliance/deploy-scanner-configure-install.md?tabs=azure-portal-only#use-powershell-to-configure-a-dlp-policy-with-the-scanner)
 
 The following table lists PowerShell cmdlets that are relevant for installing the scanner and managing your content scan jobs:
 
@@ -290,6 +292,6 @@ The following table lists PowerShell cmdlets that are relevant for installing th
 
 For more information, see:
 
-- [What is the Azure Information Protection unified labeling scanner?](/azure/information-protection/deploy-aip-scanner)
-- [Configuring and installing the Azure Information Protection (AIP) unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install?tabs=powershell-only)
-- [Manage your content scan jobs using PowerShell only](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer).
+- [Learn about the information protection scanner](../../compliance/deploy-scanner.md)
+- [Configuring and installing the information protection scanner](../../compliance/deploy-scanner-configure-install.md?tabs=powershell-only)
+- [Manage your content scan jobs using PowerShell only](../../compliance/deploy-scanner-prereqs.md#use-powershell-with-a-disconnected-computer).

@@ -11,9 +11,10 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
+- tier1
+- highpri
 - SPO_Content
-- m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -47,6 +48,8 @@ Ready to start managing the lifecycle of your organization's data by retaining t
 4. **Understand and manage inactive mailboxes** that retain mailbox content after employees leave the organization: [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md)
 
 5. If you have PST files that contain data you want to govern: **Import PST files to online mailboxes** by using network upload or drive shipping: [Learn about importing your organization's PST files](importing-pst-files-to-office-365.md)
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Subscription and licensing requirements
 

@@ -8,7 +8,7 @@ manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
-ms.subservice: other
+ms.subservice: m365bp
 ms.localizationpriority: high
 ms.date: 09/15/2022
 ms.collection: 
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management 
 - M365-identity-device-management
 - M365-Campaigns
+- tier1
 ms.custom:
 - Adm_O365
 - MiniMaven

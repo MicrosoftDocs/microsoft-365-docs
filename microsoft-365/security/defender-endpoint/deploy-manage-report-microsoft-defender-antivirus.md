@@ -16,7 +16,8 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.collection: 
-- M365-security-compliance
+- m365-security
+- tier2
 search.appverid: met150
 ---
 
@@ -49,7 +50,7 @@ You'll also see other links for:
 | Tool|Deployment options (<a href="#fn2" id="ref2">2</a>)|Management options (network-wide configuration and policy or baseline deployment) ([3](#fn3))|Reporting options |
 ---|---|---|---
 | Microsoft Intune|[Add endpoint protection settings in Intune](/intune/endpoint-protection-configure)|[Configure device restriction settings in Intune](/intune/device-restrictions-configure)| [Use the Intune console to manage devices](/intune/device-management)
-Microsoft Endpoint Manager ([1](#fn1))|Use the [Endpoint Protection point site system role](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role) and [enable Endpoint Protection with custom client settings](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client).|With [default and customized antimalware policies](/microsoft-365/security/office-365-security/configure-anti-malware-policies) and client management.|With the default [Configuration Manager Monitoring workspace](/mem/configmgr/apps/deploy-use/monitor-applications-from-the-console) and email alerts. |
+Microsoft Endpoint Manager ([1](#fn1))|Use the [Endpoint Protection point site system role](/mem/configmgr/protect/deploy-use/endpoint-protection-site-role) and [enable Endpoint Protection with custom client settings](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client).|With [default and customized antimalware policies](/microsoft-365/security/office-365-security/anti-malware-policies-configure) and client management.|With the default [Configuration Manager Monitoring workspace](/mem/configmgr/apps/deploy-use/monitor-applications-from-the-console) and email alerts. |
 | Group Policy and Active Directory (domain-joined)|Use a Group Policy Object to deploy configuration changes and ensure Microsoft Defender Antivirus is enabled.|Use Group Policy Objects (GPOs) to [configure update options for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/manage-protection-update-schedule-microsoft-defender-antivirus) and [configure Windows Defender features](/microsoft-365/security/defender-endpoint/configure-microsoft-defender-antivirus-features).|Endpoint reporting isn't available with Group Policy. You can generate a list of Group Policies to determine if any settings or policies aren't applied. |
 | PowerShell|Deploy with Group Policy, Microsoft Endpoint Configuration Manager, or manually on individual endpoints.|Use the [Set-MpPreference](/powershell/module/defender/set-mppreference) and [Update-MpSignature](/powershell/module/defender/update-mpsignature) cmdlets available in the Defender module.|Use the appropriate [Get- cmdlets available in the Defender module](/powershell/module/defender). |
 | Windows Management Instrumentation|Deploy with Group Policy, Microsoft Endpoint Configuration Manager, or manually on individual endpoints.|Use the [Set method of the MSFT_MpPreference class](/previous-versions/windows/desktop/defender/set-msft-mppreference) and the [Update method of the MSFT_MpSignature class](/previous-versions/windows/desktop/defender/update-msft-mpsignature).|Use the [MSFT_MpComputerStatus](/previous-versions/windows/desktop/defender/msft-mpcomputerstatus) class and the get method of associated classes in the [Windows Defender WMIv2 Provider](/windows/win32/wmisdk/wmi-providers). |
@@ -78,4 +79,21 @@ Article | Description
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-    
+
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are: 
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+>

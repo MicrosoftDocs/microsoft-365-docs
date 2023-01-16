@@ -14,7 +14,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
@@ -22,6 +23,8 @@ description: "EU debit card number sensitive information type entity definition.
 ---
 
 # EU debit card number
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
 
@@ -40,7 +43,7 @@ Yes
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
 - The function `Func_eu_debit_card` finds content that matches the pattern.
-- At least one of the following is true:
+- At least one of the following cases is true:
     - A keyword from `Keyword_eu_debit_card` is found.
     - A keyword from `Keyword_card_terms_dict` is found.
     - A keyword from `Keyword_card_security_terms_dict` is found.

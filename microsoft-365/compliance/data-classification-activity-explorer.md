@@ -10,10 +10,12 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- M365-security-compliance
+ms.collection:
+- tier1 
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 search.appverid: 
 - MOE150
 - MET150
@@ -39,6 +41,8 @@ There are over 30 different filters available for use, some are:
 
 
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Prerequisites
 
 Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
@@ -58,14 +62,14 @@ An account must be explicitly assigned membership in any one of these role group
 
 There are roles and role groups that you can use to fine-tune your access controls.
 
-Here's a list of applicable roles that you can use. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that you can use. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that you can use. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that you can use. To learn more about the, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins

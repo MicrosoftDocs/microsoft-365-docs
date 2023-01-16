@@ -14,6 +14,7 @@ ms.custom:
 - Adm_O365
 - 'ms.lync.lac.ProviderManagedFeature'
 - seo-marvel-apr2020
+ms.collection: scotvorg
 search.appverid:
 - MET150
 - MOE150

@@ -7,11 +7,12 @@ author: kccross
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
+- tier1
 search.appverid:
 - BCS160
 - MET150
@@ -29,6 +30,8 @@ To see the options for licensing your users to benefit from Microsoft Purview of
 Customer Lockbox ensures that Microsoft can't access your content to do service operations without your explicit approval. Customer Lockbox brings you into the approval workflow process that Microsoft uses to ensure only authorized requests allow access to your content. To learn more about Microsoft's workflow process, see [Privileged access management](privileged-access-management-solution-overview.md).
 
 Occasionally, Microsoft engineers help troubleshoot and fix issues that arise with the service. Usually, engineers fix issues using extensive telemetry and debugging tools Microsoft has in place for its services. However, some cases require a Microsoft engineer to access your content to determine the root cause and fix the issue. Customer Lockbox requires the engineer to request access from you as a final step in the approval workflow. This gives you the option to approve or deny the request for your organization, and provide direct-access control to your content.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Customer Lockbox overview video
 
@@ -101,11 +104,11 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 ## Auditing Customer Lockbox requests
 
-Audit records that correspond to Customer Lockbox requests are logged in the Microsoft 365 audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft Purview compliance portal. Actions related to accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
+Audit records that correspond to Customer Lockbox requests are logged in the Microsoft 365 audit log. You can access these logs by using the [audit log search tool](audit-log-search.md) in the Microsoft Purview compliance portal. Actions related to accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
 
 ### Search the audit log for activity related to Customer Lockbox requests
 
-Before you can use the audit log to track requests for Customer Lockbox, there are some steps you need to take to set up audit logging, including assigning permissions to search the audit log. For more information, see [Set up Microsoft Purview Audit (Standard)](set-up-basic-audit.md). Once you've completed the setup, use these steps to create an audit log search query to return audit records related to Customer Lockbox:
+Before you can use the audit log to track requests for Customer Lockbox, there are some steps you need to take to set up audit logging, including assigning permissions to search the audit log. For more information, see [Set up Microsoft Purview Audit (Standard)](audit-standard-setup.md). Once you've completed the setup, use these steps to create an audit log search query to return audit records related to Customer Lockbox:
 
 1. Go to <https://compliance.microsoft.com>.
   
@@ -145,12 +148,12 @@ Before you can use the audit log to track requests for Customer Lockbox, there a
 
 You can also export the audit log search results to a CSV file and then open the file in Excel to use the filtering and sorting capabilities to make it easier to find and view audit records related to a Customer Lockbox access request.
 
-To export audit records, use the previous steps to search the audit log. When the search is complete, select **Export > Download all results** at the top of the search results page. When the export process is complete, you can download the CSV file to your local computer. For more detailed instructions, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
+To export audit records, use the previous steps to search the audit log. When the search is complete, select **Export > Download all results** at the top of the search results page. When the export process is complete, you can download the CSV file to your local computer. For more detailed instructions, see [Export, configure, and view audit log records](audit-log-export-records.md).
 
 After you download the file, you can open it in Excel and then filter on the **Operations** column to display audit records for **Set-AccessToCustomerDataRequest** activities. You can also filter on the **UserIds** column (using the value **Microsoft Operator**) to display audit records for activities performed by Microsoft engineers.
 
 > [!NOTE]
-> When viewing audit records in the CSV file, additional information is contained in the **AuditData** column. The information in this column is contained in a JSON object, which contains multiple properties that are configured as *property:value* pairs separated by commas. You can use the JSON transform feature in the Power Query Editor in Excel to split each property in the JSON object in the **AuditData** column into multiple columns so that each property has its own column. This makes it easier to interpret this information. For detail instructions, see [Format the exported audit log using the Power Query Editor](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
+> When viewing audit records in the CSV file, additional information is contained in the **AuditData** column. The information in this column is contained in a JSON object, which contains multiple properties that are configured as *property:value* pairs separated by commas. You can use the JSON transform feature in the Power Query Editor in Excel to split each property in the JSON object in the **AuditData** column into multiple columns so that each property has its own column. This makes it easier to interpret this information. For detail instructions, see [Format the exported audit log using the Power Query Editor](audit-log-export-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
 
 ### Use PowerShell to search and export audit records
 
@@ -170,7 +173,7 @@ Search for activities performed by Microsoft engineers
 Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -UserIds "Microsoft Operator"
 ```
 
-For more information and examples, see [Use PowerShell to search and export audit log records](export-view-audit-log-records.md#use-powershell-to-search-and-export-audit-log-records).
+For more information and examples, see [Use PowerShell to search and export audit log records](audit-log-export-records.md#use-powershell-to-search-and-export-audit-log-records).
 
 We've also provided a PowerShell script that you can use to search the audit log and export the results to a CSV file. For more information, see [Use a PowerShell script to search the audit log](audit-log-search-script.md).
 

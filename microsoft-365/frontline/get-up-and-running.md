@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 ms.reviewer: samanro
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -12,10 +12,13 @@ description: Learn how frontline managers can get their teams up and running wit
 ms.localizationpriority: high
 ms.collection: 
   - Teams_ITAdmin_FLW
-  -  m365-frontline
+  - m365-frontline
+  - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Managers - Get your team started with Microsoft 365 for frontline workers

@@ -1,5 +1,5 @@
 ---
-title: "General password entity definition (preview)"
+title: "General password entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,16 +14,21 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: "General password sensitive information type entity definition."
 ---
 
-# General Password (preview)
+# General Password
 
-## Format
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
 
 Up to 20,000-character combination of letters, digits, and special characters.
 
@@ -78,7 +83,7 @@ for example:
 
 or
 
-Various command line sign in credentials formats, for example: 
+Various command line sign-in credentials formats, for example: 
 
 `-u username:********`
 
@@ -218,13 +223,19 @@ for example:
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDEabcdefghijklmnopqrstuvwxyz0123456789/+ABCDE==`
 
+## Credential example 
+
+`<secret>ZYXWVU_3</secret>`
+
 ## Checksum
 
 Yes
 
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
+
 ## Description
 
-This SIT is designed to match the security information that's like usernames and passwords used in general sign in process [user login process](/azure/key-vault/quick-create-portal). It uses several primary resources:
+This SIT is designed to match the security information that's like usernames and passwords used in general sign-in process [user login process](/azure/key-vault/quick-create-portal). It uses several primary resources:
 
 - Patterns of Base64 encoded string literal.
 - Patterns of Password context in command line.

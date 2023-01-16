@@ -13,8 +13,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+ - m365-security
+ - tier3
+ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
 ---
@@ -31,6 +33,9 @@ search.appverid: met150
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 ## API description
 
@@ -88,3 +93,6 @@ Here's an example of the request.
 ```http
 GET https://api.security.microsoft.com/api/incidents/{id}
 ```
+## Related topics
+
+[Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)

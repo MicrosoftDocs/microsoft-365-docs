@@ -13,7 +13,8 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- tier1
+- purview-compliance
 - SPO_Content
 search.appverid: 
 - MET150
@@ -27,6 +28,8 @@ description: Learn how to define and manage alerts for data loss prevention poli
 
 Microsoft Purview Data Loss Prevention (DLP) policies can take protective actions to prevent unintentional sharing of sensitive items. When an action is taken on a sensitive item, you can be notified by configuring alerts for DLP. This article shows you how to define rich alert policies that are linked to your data loss prevention (DLP) policies. You'll see how to use the
 new DLP alert management dashboard in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a> to view alerts, events, and associated metadata for DLP policy violations.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Features
 

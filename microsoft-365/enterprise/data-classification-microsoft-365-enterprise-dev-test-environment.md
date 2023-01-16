@@ -10,7 +10,9 @@ audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection: 
+- scotvorg
+- M365-security-compliance
 ms.custom: 
 - Ent_TLGs
 - admindeeplinkMAC

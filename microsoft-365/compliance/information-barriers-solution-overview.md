@@ -11,11 +11,13 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection:
-- m365-security-compliance
+ms.collection: 
+- tier2
+- purview-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
+- highpri
 ---
 
 # Information barriers
@@ -28,6 +30,8 @@ Microsoft Purview Information Barriers (IB) is supported in Microsoft Teams, Sha
 - Finance personnel working on confidential company information should not communicate or share files with certain groups within their organization
 - An internal team with trade secret material should not call or chat online with people in certain groups within their organization
 - A research team should only call or chat online with a product development team
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Configure information barriers
 

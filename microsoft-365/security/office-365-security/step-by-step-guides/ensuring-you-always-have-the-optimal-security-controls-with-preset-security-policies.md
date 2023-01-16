@@ -13,7 +13,10 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150

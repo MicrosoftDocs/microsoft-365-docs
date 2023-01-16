@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
@@ -57,7 +58,7 @@ For more information about Microsoft 365 endpoints and how they are categorized 
 
 #### Optimize URLs
 
-The current Optimize URLs can be found in the table below. Under most circumstances, you should only need to use URL endpoints in a [browser PAC file](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic) where the endpoints are configured to be sent direct, rather than to the proxy.
+The current Optimize URLs can be found in the table below. Under most circumstances, you should only need to use URL endpoints in a [browser PAC file](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-microsoft-365-traffic) where the endpoints are configured to be sent direct, rather than to the proxy.
 
 | Optimize URLs | Port/Protocol | Purpose |
 | --- | --- | --- |

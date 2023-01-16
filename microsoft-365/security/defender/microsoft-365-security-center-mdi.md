@@ -13,12 +13,13 @@ author: dcurwin
 manager: dansimp
 ms.date: 07/06/2022
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 search.appverid: 
 - MOE150
 - MET150
 ms.collection: 
-- M365-security-compliance 
+- m365-security 
+- tier2
 ms.custom: admindeeplinkDEFENDER
 ---
 

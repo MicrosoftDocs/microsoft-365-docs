@@ -12,9 +12,10 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ms.reviewer: chventou
 search.appverid: met150
 ---

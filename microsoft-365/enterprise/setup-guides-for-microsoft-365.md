@@ -7,7 +7,9 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
+ms.date: 01/06/2023
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-subscription-management
 - SPO_Content
@@ -30,6 +32,9 @@ Microsoft 365 and Office 365 setup guides give you tailored guidance and resourc
 > [!NOTE]
 > You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Administrator role can use the guides to change settings in the tenant.
 
+> [!IMPORTANT]
+> Any information saved before January 10, 2023, within each guide listed on this page has been reset due to EU data regulations. This includes selections, task assignments, and progress status. We apologize for any inconvenience this might cause.
+
 ## How to access setup guides in the Microsoft 365 admin center
 
 The setup guides are accessible from the [Setup guidance](https://aka.ms/setupguidance) page in the Microsoft 365 admin center. You can keep track of the status of your progress and return at any time to complete a guide. To reach the **Setup guidance** page:
@@ -38,11 +43,11 @@ The setup guides are accessible from the [Setup guidance](https://aka.ms/setupgu
 
 2. Find the **Training & guides** card.
 
-   ![Training & guides card in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   :::image type="content" alt-text="This screenshot shows the training & guides card in the Microsoft 365 admin center." source="../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png":::
 
 3. Select **Advanced deployment guides** and then select **All guides**.
 
-   ![Screenshot of the Setup guidance page in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ::image type="content" alt-text="Screenshot of the Setup guidance page in the Microsoft 365 admin center." source="../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png":::
 
 ## Guides for initial setup
 
@@ -134,10 +139,6 @@ Give users the ability to change or reset their password independently, if their
 
 Use the [Plan your self-service password reset deployment](https://aka.ms/SSPRSetupGuide) guide to receive relevant articles and instructions for configuring the appropriate Azure portal options to help you deploy SSPR in your environment.
 
-### Active Directory Federation Services (AD FS) deployment advisor
-
-The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with step-by-step guidance on deploying an on-premises AD FS infrastructure that authenticates users for Microsoft 365 and Office 365 services. With this guide, your organization can review AD FS components and requirements, acquire and install SSL certificates that are necessary for deployment, and install a required web application proxy server.
-
 ## Guides for security and compliance
 
 ### Security analyzer
@@ -225,6 +226,10 @@ The [Teams Phone setup guide](https://aka.ms/teamsphonesetupguide) helps you sta
 ### SharePoint setup guide
 
 The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, and drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, and enable the security settings for your SharePoint environment.
+
+### Surface Hub and Microsoft Teams Rooms setup guide
+
+The [Surface Hub and Microsoft Teams Rooms setup guide](https://admin.microsoft.com/#/modernonboarding/surfacehubsetupguide) will customize your experience based on your environment. If you're hosted in Exchange Online and using Microsoft Teams, the guide will automatically create your device account with the correct settings.
 
 ### OneDrive setup guide
 

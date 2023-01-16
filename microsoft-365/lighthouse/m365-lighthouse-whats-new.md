@@ -4,17 +4,19 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: crimora
+ms.reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- M365-Lighthouse                         
+- M365-Lighthouse
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, see what's been added, changed, and fixed in Microsoft 365 Lighthouse each month."
 ---
@@ -26,13 +28,98 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
+## November 2022
+
+### Changes to Microsoft Defender Firewall and Microsoft Defender Antivirus deployment tasks
+
+We've updated the Microsoft Defender Firewall and Microsoft Defender Antivirus policy settings in our default baseline to provide enhanced protection for your customer tenants. If you previously deployed the **Configure Microsoft Defender Firewall for Windows 10 and later** or the **Configure Microsoft Defender Antivirus for Windows 10 and later** tasks, your customer tenants are still protected with the original policy settings. However, on the Deployment plan page, the deployment steps for these two tasks will show a status of **Not compliant** until you deploy the new enhanced policy settings. To activate these enhanced policy settings, you'll need to go through the deployment process again for both the Microsoft Defender Firewall and Microsoft Defender Antivirus deployment tasks. Once deployed, the deployment step statuses will show as **Compliant** again.
+
+### Capability to set up Granular Delegated Admin Privileges (GDAP)
+
+You can now establish GDAP relationships with multiple reseller customers at once from within Microsoft 365 Lighthouse and assign users in the partner tenant to security groups with various roles and levels of permissions. To do this, you'll create reusable templates based on tiers of support for your customers and for various groups of technicians. You'll see recommended roles for each tier of support during this process. Once created, these templates can then be reapplied as needed to new customers. This functionality allows you to quickly establish GDAP with your customers by using a least-privileged approach for users as a replacement for Delegated Admin Privileges (DAP).
+
+For more information on GDAP in Microsoft 365 Lighthouse, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
+
+For more information on GDAP across all services, see [Introduction to granular delegated admin privileges (GDAP) - Partner Center](/partner-center/gdap-introduction).
+
+### Capability to collect diagnostics from Windows devices
+
+We've added the capability to collect diagnostics from Windows devices. You can access this feature from the Device compliance page. The Collect diagnostics remote action lets you collect and download logs without interrupting the user.
+
+### Manage shared mailboxes
+
+You can now manage all shared mailboxes and meeting rooms across your managed tenants under **Users** > **Account management** > **Shared mailboxes**. From this page, you can perform common management actions like delegating access to other users and securing shared mailboxes by blocking direct access.
+
+### File exclusion support in the antivirus policy
+
+You can now exclude certain non-malicious threats from showing up for tenants on the Threat management page in Microsoft 365 Lighthouse. Go to the tenant's deployment plan, select **Configure a Microsoft Defender Antivirus baseline policy**, and then specify the file, folder, or file-type exclusions.
+
+### Insights from Endpoint analytics
+
+We've added insights from Endpoint analytics in Microsoft Endpoint Manager to Microsoft 365 Lighthouse to help you proactively take measures to improve the health of user devices and apps within managed tenants. The insights from Endpoint analytics inform a deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, select **Devices** > **Device health** in the left navigation pane in Microsoft 365 Lighthouse to see the Endpoint analytics insights.
+
+For more information, see [What is Endpoint analytics?](/mem/analytics/overview)
+
+### Deployment status
+
+Microsoft 365 Lighthouse now provides a deployment status for each tenant's deployment plan so you can optimize and prioritize your deployment efforts accordingly.
+
+### Deployment insights
+
+Microsoft 365 Lighthouse now provides deployment insights to help you understand how consistently and effectively you're establishing and maintaining the health and security of the tenants you manage. The insights provide tenant-specific and multi-tenant visibility into the deployment progress of each tenant, task, and user.
+
+These insights help you:
+
+- Establish and maintain a robust security posture across your entire portfolio.
+- Prioritize deployment activities to maximize security and minimize risk.
+- Audit exceptions like task dismissals and user exclusions.
+
+### Enhanced baseline deployment with direct links to existing configurations
+
+We've enhanced the baseline deployment experience to make it faster and easier to ensure your managed tenants are healthy and secure. We've added links to detected managed tenant configurations so you can easily find, review, and modify these tenant configurations in the applicable management portal.
+
+### Enhanced deployment progress reporting
+
+Microsoft 365 Lighthouse now provides visibility into each managed tenant's deployment progress from the Tenants page so you can see how many of the assigned tasks are:
+
+- **Compliant** - All settings included in the task are Compliant.
+- **Not Compliant** - One or more settings included in the task are either Missing or Not compliant.
+- **Dismissed** - The task has been dismissed.
+- **Not Licensed** - The tenant is not licensed for the services required to deploy the configuration associated with the task.
+
+## October 2022
+
+### App protection policies
+
+Managed Service Providers (MSPs) can now deploy app protection policies for their managed tenants from within the default baseline in Microsoft 365 Lighthouse, which allows greater protection of the tenants' company data. These policies use Mobile Application Management (MAM) on iOS and Android devices to provide the most secure protection for company data.
+
+### Device health monitoring
+
+We've added a new deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, Endpoint analytics in Microsoft Endpoint Manager will be able to analyze device data and can recommend software, help improve startup performance, and fix common support issues.
+
+For more information, see [What is Endpoint analytics?](/mem/analytics/overview).
+
+## September 2022
+
+### Fully automated setup of Microsoft Defender for Business
+
+We've added a fully automated step to the default baseline that helps you set up your customer tenants with Microsoft Defender for Business. This step automatically provisions your tenant for Microsoft Defender for Business and automatically onboards Intune-enrolled devices to Microsoft Defender for Business.
+
+### Capability to filter the Multifactor Authentication (MFA) list to show relevant user accounts
+
+The Multifactor Authentication page now supports filtering the user account list by account type (such as by Admin, Member, or Guest). You can also exclude other accounts from the list, like service accounts or emergency access accounts. To access this functionality, go to **Users** > **Multifactor authentication**, select a tenant from the list to open the tenant details pane, and then select the **Users not registered for MFA** tab. These filtering and exclusion capabilities help you focus on relevant user accounts.
+
+### Capability to act on security incidents and alerts
+
+You can now act on the incidents and alerts shown on the **Device security** > **Incidents and alerts** page. The actions currently supported include assigning the incident or alert to yourself or resolving the incident or alert.
+
 ## August 2022
 
-### View and manage inactive user accounts 
+### View and manage inactive user accounts
 
-Microsoft 365 Lighthouse now provides a list of all the inactive user accounts in your managed tenants. To access the list, select **Users** > **Inactive users** from the left navigation pane in Microsoft 365 Lighthouse. You can reduce security risks by using this list to track and clean up accounts that are still enabled but that haven't been used in the past six months. 
+Microsoft 365 Lighthouse now provides a list of all the inactive user accounts in your managed tenants. To access the list, select **Users** > **Inactive users** from the left navigation pane in Microsoft 365 Lighthouse. You can reduce security risks by using this list to track and clean up accounts that are still enabled but that haven't been used in the past six months.
 
-### Microsoft Edge policy deployment   
+### Microsoft Edge policy deployment
 
 We've added a Microsoft Edge policy deployment task to the default baseline. This deployment task allows you to secure your customer tenant's browsers with Edge security settings, which include built-in protection against phishing and malware. Microsoft Edge has been proven to be more secure than Google Chromium for small- and medium-sized businesses with devices running Windows 10 or later.
 
@@ -56,13 +143,13 @@ Microsoft 365 Lighthouse now makes the deployment of baselines to all of your ma
 
 ### Support for Microsoft 365 E5 customers
 
-We've changed our onboarding requirements to allow you to onboard Microsoft 365 E5 customers to Microsoft 365 Lighthouse. The expanded list of licenses that Microsoft 365 Lighthouse supports for onboarding includes Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender for Business, and Windows 365 for Business. Customers who have at least one of any of these licenses, meet the requirements for delegated access permissions, and don't exceed the maximum number of licensed users can be managed in Microsoft 365 Lighthouse.  
+We've changed our onboarding requirements to allow you to onboard Microsoft 365 E5 customers to Microsoft 365 Lighthouse. The expanded list of licenses that Microsoft 365 Lighthouse supports for onboarding includes Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Microsoft Defender for Business, and Windows 365 for Business. Customers who have at least one of any of these licenses, meet the requirements for delegated access permissions, and don't exceed the maximum number of licensed users can be managed in Microsoft 365 Lighthouse.
 
 For a full list of requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 ### Microsoft Defender for Business integration
 
-Microsoft 365 Lighthouse now integrates with Microsoft Defender for Business to bring you related insights and management capabilities for all of your customer tenants that have Microsoft Defender for Business. To see the list of customer devices that have been onboarded to Microsoft Defender for Business, select **Devices** in the left navigation pane in Microsoft 365 Lighthouse. To see the list of incidents and alerts flagged across your customer tenants, go to **Devices** > **Device Security**, and then select the **Incidents and alerts** tab.  
+Microsoft 365 Lighthouse now integrates with Microsoft Defender for Business to bring you related insights and management capabilities for all of your customer tenants that have Microsoft Defender for Business. To see the list of customer devices that have been onboarded to Microsoft Defender for Business, select **Devices** in the left navigation pane in Microsoft 365 Lighthouse. To see the list of incidents and alerts flagged across your customer tenants, go to **Devices** > **Device Security**, and then select the **Incidents and alerts** tab.
 
 We've also added a step to the default baseline to help you set up Microsoft Defender for Business for your customer tenants. To see this step, select **Baselines** in the left navigation pane in Microsoft 365 Lighthouse or view the deployment plan for any of your customer tenants.
 
@@ -72,7 +159,7 @@ We've added new functionality around email quarantine data for your managed tena
 
 ### Increase in maximum license limit
 
-We're making it possible to manage more of your customers in Microsoft 365 Lighthouse by once again increasing the maximum license limit for customer onboarding. Customers with up to 2500 user licenses can now be onboarded to Microsoft 365 Lighthouse. We'll continue to evaluate this requirement in future Microsoft 365 Lighthouse releases. 
+We're making it possible to manage more of your customers in Microsoft 365 Lighthouse by once again increasing the maximum license limit for customer onboarding. Customers with up to 2500 user licenses can now be onboarded to Microsoft 365 Lighthouse. We'll continue to evaluate this requirement in future Microsoft 365 Lighthouse releases.
 
 For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
@@ -98,14 +185,14 @@ To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-li
 
 ### Windows 365 Business integration and management actions
 
-Based on user feedback, we've integrated Windows 365 Business into Microsoft 365 Lighthouse. This integration will help you manage and monitor all of your customers' Cloud PCs from a single location. 
+Based on user feedback, we've integrated Windows 365 Business into Microsoft 365 Lighthouse. This integration will help you manage and monitor all of your customers' Cloud PCs from a single location.
 
 In addition to integrating with Windows 365 Business Cloud PCs in Microsoft 365 Lighthouse, you can now take the following management actions:
 
 - Restart
 - Reprovision
 - Rename
- 
+
 To learn more about the new features, see [Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse](m365-lighthouse-win365-page-overview.md).
 
 ### Microsoft 365 Lighthouse partner amendment
@@ -126,7 +213,7 @@ As part of the device compliance baseline step, we've added the capability to no
 
 ### Deployment validation and reporting
 
-Microsoft 365 Lighthouse can now test tenant configurations for deployment steps with Conditional Access policies.  
+Microsoft 365 Lighthouse can now test tenant configurations for deployment steps with Conditional Access policies.
 
 This new functionality detects existing policies within the customer tenants that you manage and compares them to your deployment plan. Microsoft 365 Lighthouse then provides status designations for deployment steps and deployment step processes to help you understand which deployment processes have already been completed, which ones need to be addressed, and where the settings prescribed by the deployment plan are equal to, missing from, or in conflict with the settings included in the existing policies. Knowing this information makes identifying, prioritizing, and resolving policy conflicts faster, easier, and more effective.
 
@@ -139,7 +226,7 @@ Microsoft Defender Firewall is turned on by default on Windows 10 (and later) de
 1. On the **Tenants** page in Microsoft 365 Lighthouse, select the customer tenant to open the tenant's **Overview** page.
 2. Select the **Deployment Plan** tab.
 3. From the list of deployment steps, select **Configure Microsoft Defender Firewall**.
-4. Select **Review and deploy** to deploy this configuration to the customer tenant. 
+4. Select **Review and deploy** to deploy this configuration to the customer tenant.
 
 ### Increase in maximum license limit
 
@@ -162,16 +249,16 @@ Microsoft 365 Lighthouse now includes the capability to view audit logs. You can
 - View audit logs to see all actions taken inside Microsoft 365 Lighthouse, including what changed in which customer tenant, when it was changed, and who changed it.
 - Search and filter audit logs to find specific information.
 - Export logs so you can analyze and retain them.
- 
+
 In the left navigation pane of Microsoft 365 Lighthouse, select **Audit logs**. Or, [go directly to the Audit logs page now](https://lighthouse.microsoft.com/#blade/Microsoft_Intune_MTM/Audit.ReactView) to check it out.
 
 ## November 2021
 
 ### Microsoft 365 services usage data
 
-You can now view usage data for Microsoft 365 services from within Microsoft 365 Lighthouse. Understanding how customers use their Microsoft 365 services is critical to helping them get the most out of their IT investments. Instead of using multiple resources to view information across your customers' various productivity, security, and compliance services, Microsoft 365 Lighthouse aggregates them into one simple, powerful view.  
+You can now view usage data for Microsoft 365 services from within Microsoft 365 Lighthouse. Understanding how customers use their Microsoft 365 services is critical to helping them get the most out of their IT investments. Instead of using multiple resources to view information across your customers' various productivity, security, and compliance services, Microsoft 365 Lighthouse aggregates them into one simple, powerful view.
 
-These insights can help inform your customer engagements and deliver more value to your customers by empowering you to help them understand which services their users actively use and where there may be opportunities to enhance their security or productivity. 
+These insights can help inform your customer engagements and deliver more value to your customers by empowering you to help them understand which services their users actively use and where there may be opportunities to enhance their security or productivity.
 
 For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 services usage section](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
 
@@ -209,7 +296,7 @@ We've made some changes to the tenant filtering experience to help you quickly v
 
 ## August 2021
 
-### In-product email workflows to communicate with users 
+### In-product email workflows to communicate with users
 
 We've made it easier to communicate with users in your customer tenants about actions they're required to take. From the list of users not registered for multifactor authentication (MFA) or self-service password reset, you can now select one or more users and send them an email message using a downloadable email template.
 
@@ -219,7 +306,7 @@ We've introduced the capability to sync or restart one or more devices across mu
 
 ### Capability to monitor and manage Windows 365 Cloud PCs
 
-We've added the capability to monitor on-premises connections and provision and manage Windows 365 Cloud PCs across all of your customer tenants. The new **Windows 365** page provides detailed information about all of your tenants' Cloud PCs in one convenient location. 
+We've added the capability to monitor on-premises connections and provision and manage Windows 365 Cloud PCs across all of your customer tenants. The new **Windows 365** page provides detailed information about all of your tenants' Cloud PCs in one convenient location.
 
 ### Support for Microsoft 365 E3 customers
 
@@ -235,20 +322,20 @@ For more information about requirements, see [Requirements for Microsoft 365 Lig
 
 ### Capability to add custom tags to customer tenants
 
-You can now create and apply custom tags to the customer tenants that you manage in Microsoft 365 Lighthouse. Use these tags to help you organize your tenants, or use them to more easily filter your tenant list to show insights for relevant sets of customer tenants. 
+You can now create and apply custom tags to the customer tenants that you manage in Microsoft 365 Lighthouse. Use these tags to help you organize your tenants, or use them to more easily filter your tenant list to show insights for relevant sets of customer tenants.
 
 ### Baselines to standardize your customer tenant deployments
 
-With the new baselines feature, you can now deploy standard configurations to help secure users, devices, and data in customer tenants. The default baseline currently contains the following deployment steps (with more coming soon): 
+With the new baselines feature, you can now deploy standard configurations to help secure users, devices, and data in customer tenants. The default baseline currently contains the following deployment steps (with more coming soon):
 
-- Require MFA for admins 
-- Require MFA for users 
-- Block Legacy Authentication 
-- Enroll Windows Devices in Microsoft Endpoint Manager – Azure AD Join 
-- Configure Defender AV policy for Windows devices 
-- Configure Compliance Policy for Windows devices 
+- Require MFA for admins
+- Require MFA for users
+- Block Legacy Authentication
+- Enroll Windows Devices in Microsoft Endpoint Manager – Azure AD Join
+- Configure Defender AV policy for Windows devices
+- Configure Compliance Policy for Windows devices
 
-To act on these deployment steps, select **Tenants** in the left navigation pane in Microsoft 365 lighthouse, select a tenant from the list of tenants, and then select the **Deployment plan** tab. 
+To act on these deployment steps, select **Tenants** in the left navigation pane in Microsoft 365 lighthouse, select a tenant from the list of tenants, and then select the **Deployment plan** tab.
 
 ## May 2021
 
@@ -256,6 +343,6 @@ To act on these deployment steps, select **Tenants** in the left navigation pane
 
 We've made the following enhancements to the **Tenants** page:
 
-- Added a list of total counts by issue to the top of the page 
-- Provided the capability to hover over a status in the **Status** column of the tenants list to see restriction details 
+- Added a list of total counts by issue to the top of the page
+- Provided the capability to hover over a status in the **Status** column of the tenants list to see restriction details
 - Improved the status labels

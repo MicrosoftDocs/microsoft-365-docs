@@ -15,6 +15,7 @@ f1.keywords:
 - NOCSH
 description: This article contains information for using lean popouts to improve message download performance in Outlook on the web.
 ms.custom: seo-marvel-apr2020
+ms.collection: scotvorg
 ---
 
 # Use lean popouts to reduce memory used when reading mail messages

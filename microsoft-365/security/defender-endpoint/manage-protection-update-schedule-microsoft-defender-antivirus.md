@@ -8,14 +8,17 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.topic: article
+ms.date: 12/20/2022
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
-ms.collection: m365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
 ---
 
 # Manage the schedule for when protection updates should be downloaded and applied
@@ -67,13 +70,13 @@ Enabling these settings will override that default.
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Signature Updates** and configure the following settings:
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates** and configure the following settings:
 
     1. Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
 
-    2. Double-click the **Specify the interval to check for definition updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
+    2. Double-click the **Specify the interval to check for security intelligence updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
 
-    3. Double-click the **Specify the time to check for definition updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
+    3. Double-click the **Specify the time to check for security intelligence updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
 
 ## Use PowerShell cmdlets to schedule protection updates
 

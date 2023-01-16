@@ -16,8 +16,10 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ---
 
 # EmailPostDeliveryEvents
@@ -27,7 +29,7 @@ ms.topic: article
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Office 365
+
 
 The `EmailPostDeliveryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about post-delivery actions taken on email messages processed by Microsoft 365. Use this reference to construct queries that return information from this table.
 
@@ -57,7 +59,7 @@ To get more information about individual email messages, you can also use the [`
 ## Supported event types
 This table captures events with the following `ActionType` values:
 
-- **Manual remediation** – An administrator manually took action on an email message after it was delivered to the user mailbox. This includes actions taken manually through [Threat Explorer](../office-365-security/threat-explorer.md) or approvals of [automated investigation and response (AIR) actions](m365d-autoir-actions.md).
+- **Manual remediation** – An administrator manually took action on an email message after it was delivered to the user mailbox. This includes actions taken manually through [Threat Explorer](../office-365-security/threat-explorer-about.md) or approvals of [automated investigation and response (AIR) actions](m365d-autoir-actions.md).
 - **Phish ZAP** – [Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) took action on a phishing email after delivery.
 - **Malware ZAP** – Zero-hour auto purge (ZAP) took action on an email message found containing malware after delivery.
 

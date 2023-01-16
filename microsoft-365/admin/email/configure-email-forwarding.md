@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier3
+- scotvorg 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -32,7 +34,7 @@ description: "Email forwarding lets you forward email messages sent to a Microso
 As the admin of an organization, you might have company requirements to set up email forwarding for a user's mailbox. Email forwarding lets you forward email messages sent to a user's mailbox to another user's mailbox inside or outside of your organization.
 
 > [!IMPORTANT]
-> You can use outbound spam filter policies to control automatic forwarding to external recipients. For more information, see [Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
+> You can use outbound spam filter policies to control automatic forwarding to external recipients. For more information, see [Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -99,6 +101,6 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
 [Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)\
 [Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)\
-[Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding) (article)
+[Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding) (article)
 
 

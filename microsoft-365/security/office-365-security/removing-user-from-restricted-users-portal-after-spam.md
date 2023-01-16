@@ -15,7 +15,7 @@ search.appverid:
   - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
 description: Admins can learn how to remove users from the Restricted users page in the Microsoft 365 Defender portal. Users are added to the Restricted users portal for sending outbound spam, typically as a result of account compromise.
 ms.custom: 
 - seo-marvel-apr2020
@@ -28,11 +28,11 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-If a user exceeds one of the outbound sending limits as specified in [the service limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](configure-the-outbound-spam-policy.md), the user is restricted from sending email, but they can still receive email.
+If a user exceeds one of the outbound sending limits as specified in [the service limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](outbound-spam-policies-configure.md), the user is restricted from sending email, but they can still receive email.
 
 The user is added to the **Restricted users** page in the Microsoft 365 Defender portal. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce message) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
 
@@ -50,7 +50,7 @@ There are 2 types of restricted entities:
 
 - **Restricted user**: Learn about why a user can be restricted and how to handle restricted users (this article).  
 
-- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](remove-blocked-connectors.md). 
+- **Restricted connector**: For more information about why a connector can be restricted and how to handle restricted connectors, see [Remove blocked connectors from the Restricted entities portal](connectors-remove-blocked.md). 
 
 ## What do you need to know before you begin?
 
@@ -91,7 +91,7 @@ There are 2 types of restricted entities:
 6. Click **Yes** to confirm the change.
 
    > [!NOTE]
-   > It might take up to 1 hour for all restrictions to be removed from the user.
+   > Under most circumstances, all restrictions should be removed from the user within one hour. Transient technical issues might cause a longer wait time, but the total wait should be no longer than 24 hours.
 
 ## Verify the alert settings for restricted users
 

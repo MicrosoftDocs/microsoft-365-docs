@@ -22,12 +22,14 @@ appliesto:
 # Disabling TLS 1.0 and 1.1 for Microsoft 365
 
 > [!IMPORTANT]
-> We have already disabled TLS 1.0 and 1.1 for most Microsoft 365 services in the world wide environment. Rollout will continue over the following weeks and months.
+> We have already disabled TLS 1.0 and 1.1 for most Microsoft 365 services in the world wide environment.
 For Microsoft 365 operated by 21 Vianet, TLS 1.0/1.1 will be disabled on June 30, 2023.
 
 As of October 31, 2018, the Transport Layer Security (TLS) 1.0 and 1.1 protocols are deprecated for the Microsoft 365 service. The effect for end-users is minimal. This change has been publicized for over two years, with the first public announcement made in December 2017. This article is only intended to cover the Office 365 local client in relation to the Office 365 service but can also apply to on-premises TLS issues with Office and Office Online Server/Office Web Apps.
 
 For SharePoint and OneDrive, you'll need to update and configure .NET to support TLS 1.2. For information, see [How to enable TLS 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Office 365 and TLS overview
 
@@ -59,6 +61,7 @@ The value of the **DefaultSecureProtocols** registry key that the KB article des
 |0x00000080|Enable TLS 1.0 by default|
 |0x00000200|Enable TLS 1.1 by default|
 |0x00000800|Enable TLS 1.2 by default|
+|0x00002000|Enable TLS 1.3 by default|
 
 ## Office clients and TLS registry keys
 

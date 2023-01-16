@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 ms.custom:
 description: Admins can learn how to create and manage payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
@@ -42,7 +42,7 @@ The following information is shown for each payload:
 - **Compromised rate (%)**: For built-in payloads, this value is the predicted average compromise rate for Attack simulation training simulations that use the same type of payload across all other Microsoft 365 organizations.
 - **Created by**: For built-in payloads, the value is **Microsoft**. For custom payloads, the value is the UPN of the user who created the payload.
 - **Last modified**
-- **Technique**: One of the available [social engineering techniques](attack-simulation-training.md#select-a-social-engineering-technique):
+- **Technique**: One of the available [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
   - **Credential harvest**
   - **Malware attachment**
   - **Link in attachment**
@@ -99,7 +99,7 @@ When you select a payload from the list, a details flyout appears with the follo
    ![Create a payload on the Tenant payloads tab in Payloads in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
-   > ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** is also available on the **Select payload and login page** step of the simulation creation wizard. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training.md#select-a-payload-and-login-page).
+   > ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload** is also available on the **Select payload and login page** step of the simulation creation wizard. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page).
    >
    > At any point during the creation wizard, you can click **Save and close** to save your progress and continue configuring the payload later. You can pick up where you left off by selecting the notification on the **Tenant payloads** tab in **Payloads**, and then clicking ![Edit payload icon.](../../media/m365-cc-sc-edit-icon.png) **Edit payload**. The partially-completed payload will have the **Status** value **Draft**.
 
@@ -116,7 +116,7 @@ When you select a payload from the list, a details flyout appears with the follo
    - **Drive-by URL**
    - **OAuth Consent Grant**
 
-   For more information, see [Simulate a phishing attack with Attack simulation training in Defender for Office 365](attack-simulation-training.md).
+   For more information, see [Simulate a phishing attack with Attack simulation training in Defender for Office 365](attack-simulation-training-simulations.md).
 
    When you're finished, click **Next**.
 
@@ -338,6 +338,6 @@ Select the payload from the list by clicking the check box, and then click the !
 
 [Get started using Attack simulation training](attack-simulation-training-get-started.md)
 
-[Create a phishing attack simulation](attack-simulation-training.md)
+[Create a phishing attack simulation](attack-simulation-training-simulations.md)
 
 [Gain insights through Attack simulation training](attack-simulation-training-insights.md)

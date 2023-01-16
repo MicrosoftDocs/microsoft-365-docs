@@ -13,8 +13,8 @@ ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365-initiative-defender-endpoint
+- m365-security
+- tier2
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.subservice: mde
@@ -82,3 +82,7 @@ As a local administrator on the server, perform the following steps:
    > You can also use Server Manager or PowerShell cmdlets to install the Microsoft Defender Antivirus feature.
 
 3. Reboot the system.
+
+## Related articles
+
+[Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)

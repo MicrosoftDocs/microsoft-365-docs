@@ -10,8 +10,10 @@ ms.author: dansimp
 author: martyav
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 search.appverid: met150
 ---
 
@@ -76,7 +78,7 @@ Actions available on the device profile page include:
 * **Run antivirus scan** - Updates Microsoft Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
 * **Collect investigation package** - Gathers information about the device. When the investigation is completed, you can download it.
 * **Initiate Live Response Session** - Loads a remote shell on the device for [in-depth security investigations](/microsoft-365/security/defender-endpoint/live-response).
-* **Initiate automated investigation** - Automatically [investigates and remediates threats](../office-365-security/office-365-air.md). Although you can manually trigger automated investigations to run from this page, [certain alert policies](../../compliance/alert-policies.md#default-alert-policies) trigger automatic investigations on their own.
+* **Initiate automated investigation** - Automatically [investigates and remediates threats](../office-365-security/air-about.md). Although you can manually trigger automated investigations to run from this page, [certain alert policies](../../compliance/alert-policies.md#default-alert-policies) trigger automatic investigations on their own.
 * **Action center** - Displays information about any response actions that are currently running.
 
 ## Tabs section
@@ -178,4 +180,4 @@ Selecting an item will open a flyout that links to the update.
 * [Microsoft 365 Defender overview](microsoft-365-defender.md)
 * [Turn on Microsoft 365 Defender](m365d-enable.md)
 * [Investigate entities on devices, using live response](../defender-endpoint/live-response.md)
-* [Automated investigation and response (AIR) in Office 365](../office-365-security/office-365-air.md)
+* [Automated investigation and response (AIR) in Office 365](../office-365-security/air-about.md)

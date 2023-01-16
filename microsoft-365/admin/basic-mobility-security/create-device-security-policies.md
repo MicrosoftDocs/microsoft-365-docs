@@ -7,9 +7,11 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier3
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -33,7 +35,7 @@ You can use Basic Mobility and Security to create device policies that help prot
 
 - Learn about the devices, mobile device apps, and security settings that Basic Mobility and Security supports. See [Capabilities of Basic Mobility and Security](capabilities.md).
 - Create security groups that include Microsoft 365 users that you want to deploy policies to and for users that you might want to exclude from being blocked access to Microsoft 365. We recommend that before you deploy a new policy to your organization, you test the policy by deploying it to a small number of users. You can create and use a security group that includes just yourself or a small number Microsoft 365 users that can test the policy for you. To learn more about security groups, see [Create, edit, or delete a security group](../email/create-edit-or-delete-a-security-group.md).
-- To create and deploy Basic Mobility and Security policies in Microsoft 365, you need to be a Microsoft 365 global admin. For more info, see [Permissions in the Security & Compliance Center](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- To create and deploy Basic Mobility and Security policies in Microsoft 365, you need to be a Microsoft 365 global admin. For more info, see [Permissions in the Security & Compliance Center](../../security/office-365-security/scc-permissions.md).
 - Before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, noncompliant devices can be blocked from accessing Microsoft 365 and data, including installed applications, photos, and personal information on an enrolled device, and data can be deleted.
 
 > [!NOTE]
@@ -119,13 +121,13 @@ When you apply a policy to user devices, the impact on each device varies somewh
 |**Security Policy**|**Android**|**Samsung KNOX**|**iOS**|**Notes**|
 |:-----|:-----|:-----|:-----|:-----|
 |Require encrypted backup|No|Yes|Yes|iOS encrypted backup required.|
-|Block cloud backup|Yes|Yes|Yes|Block Google backup on Android (grayed out), cloud backup on iOS.|
-|Block document synchronization|No|No|Yes|iOS: Block documents in the cloud.|
+|Block cloud backup|Yes|Yes|Yes|Block Google backup on Android (grayed out), cloud backup on supervised iOS.|
+|Block document synchronization|No|No|Yes|iOS: Block documents in the cloud on supervised iOS devices.|
 |Block photo synchronization |No|No|Yes|iOS (native): Block Photo Stream.|
 |Block screen capture |No|Yes|Yes|Blocked when attempted.|
-|Block video conference |No|No|Yes|FaceTime blocked on iOS, not on Skype or others.|
+|Block video conference |No|No|Yes|FaceTime blocked on supervised iOS devices, not on Skype or others.|
 |Block sending diagnostic data |No|Yes|Yes|Block sending Google crash report on Android.|
-|Block access to app store |No|Yes|Yes|App store icon missing on Android home page, disabled on Windows, missing on iOS.|
+|Block access to app store |No|Yes|Yes|App store icon missing on Android home page, disabled on Windows, and supervised iOS devices.|
 |Require password for app store |No|No|Yes|iOS: Password required for iTunes purchases.|
 |Block connection to removable storage |No|Yes|N/A|Android: SD card is grayed out in settings, Windows notifies user, apps installed aren't available|
 |Block Bluetooth connection |See notes|See notes|Yes|We can't disable BlueTooth as a setting on Android. Instead, we disable all of the transactions that require BlueTooth: Advanced Audio Distribution, Audio/Video Remote Control, hands-free devices, headset, Phone Book Access, and Serial Port. A small toast message appears at the bottom of the page when any of these are used.|

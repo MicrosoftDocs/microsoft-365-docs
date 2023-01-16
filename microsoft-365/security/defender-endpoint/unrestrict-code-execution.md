@@ -12,8 +12,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -65,6 +67,8 @@ Delegated (work or school account)|Machine.RestrictExecution|'Restrict code exec
 >
 > - The user needs to have at least the following role permission: 'Active remediation actions' (See [Create and manage roles](user-roles.md) for more information)
 > - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+>
+> Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
 ## HTTP request
 

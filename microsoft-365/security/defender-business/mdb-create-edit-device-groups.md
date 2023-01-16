@@ -15,8 +15,9 @@ ms.date: 07/19/2022
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # Device groups in Microsoft Defender for Business

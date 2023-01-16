@@ -7,10 +7,12 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: argani, nicholak
 audience: Admin
-ms.topic: article
-ms.service: o365-administration
+ms.topic: how-to
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -53,7 +55,7 @@ If you bought an ISV app through an app vendor, contact the vendor to add or rem
 
 ## Next steps
 
-Depending on the ISV app that you bought, your next step might be to install the app into your organization’s environment. Installing the app makes it available for your users. Use the following steps to install an ISV app to your environment.
+Depending on the ISV app that you bought, your next step might be to install the app into your organization's environment. Installing the app makes it available for your users. Use the following steps to install an ISV app to your environment.
 
 1. In the admin center, **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. Select the app that you want to install into your account.

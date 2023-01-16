@@ -8,7 +8,9 @@ audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection: Ent_O365
+ms.collection: 
+- Ent_O365
+- scotvorg
 f1.keywords:
 - CSH
 ms.custom: admindeeplinkEXCHANGE

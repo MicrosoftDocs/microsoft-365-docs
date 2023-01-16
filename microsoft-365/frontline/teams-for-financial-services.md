@@ -13,8 +13,10 @@ ms.collection:
   - M365-collaboration
   - microsoftcloud-financial-services
   - m365-frontline
+  - highpri
   - m365solution-financialservices
   - m365solution-overview
+  - tier1
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -23,6 +25,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 12/05/2022
 ---
 
 # Get started with Microsoft 365 for Financial Services
@@ -76,15 +79,15 @@ Financial services organizations have unique needs due to the high knowledge bas
 
 **Key features and apps:** Lists, meetings
 
-**Additional services:** Viva Learning, Viva Connections, SharePoint, Yammer
+**Additional services:** Viva Learning, Viva Connections, SharePoint, Viva Engage
 
 More information: [Training and onboarding](flw-onboarding-training.md)
 
 ### Strengthen corporate communications
 
-Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Yammer, Stream, and Viva Connections.
+Employee engagement is a significant contributor to workplace satisfaction, loyalty, and productivity at any organization. Learn how to keep everyone informed and engaged using SharePoint, Teams, Viva Engage, Stream, and Viva Connections.
 
-**Additional services:** Viva Connections, SharePoint, Stream, Yammer
+**Additional services:** Viva Connections, SharePoint, Stream, Viva Engage
 
 More information: [Corporate communications with frontline workers](flw-corp-comms.md)
 
@@ -119,14 +122,15 @@ For financial services environments, the following apps and services can help yo
 | Shifts | Manage schedules and clock in and out with Shifts. | [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
 | Tasks | Help employees know what they should focus on when not with customers by assigning tasks. Your corporate office can use [task publishing](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
 | Updates | Check in on recurring or one-off priorities such as daily counts. Managers can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
+| Virtual Appointments (Preview) | A central hub for all your virtual appointment needs. Schedule and manage virtual consultations with clients, view analytics, and configure options, all in one place.| [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | - |
+| Bookings| Schedule and manage virtual consultations with clients. | [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md) |
 
 | More apps and services from Microsoft | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |
-| Bookings | Empower your team to conduct virtual consultations with clients. | [Virtual appointments with Microsoft Teams and the Bookings app](bookings-virtual-visits.md) | [Use Bookings](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) |
 | Power Apps and the Power Platform | Integrate business processes and enable quick updates to data, such as sales numbers, KPIs, and other reports. | [Teams integration with Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) and [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps) | -  |
 | SharePoint | A new, connected SharePoint site is created whenever you create a new team. You can use SharePoint to store files, post news, and make sure your workers have access to important information. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Add a SharePoint page, list, or document library as a tab in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
 | Viva Connections | Viva Connections creates a hub in Teams where your frontline team can view a tailored news feed from your organization and a personalized dashboard with resources they need. | [Overview of Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Manage Viva Learning](/microsoft-365/learning/) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
-| Yammer | Connect your entire organization and enable communication across departments and regions. | [Manage Yammer](/yammer) | [Use Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c) |
+| Viva Engage | Connect your entire organization and enable communication across departments and regions. | [Overview of Viva Engage](/viva/engage/overview) | [Use Viva Engage](https://support.microsoft.com/topic/getting-started-with-microsoft-viva-engage-729f9fce-3aa6-4478-888c-a1543918c284) |
 
 For more about successfully implementing and adopting Teams, see [Adopt Microsoft Teams](/microsoftteams/adopt-microsoft-teams-landing-page).

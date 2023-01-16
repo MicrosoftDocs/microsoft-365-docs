@@ -11,19 +11,22 @@ ms.service: O365-seccomp
 ms.date:
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: "Learn the basic steps to creating a keyword dictionary in the Office 365 Security & Compliance Center."
+description: "Learn the basic steps to creating a keyword dictionary in the Microsoft Purview comliance portal."
 ---
 
 # Create a keyword dictionary
 
 Microsoft Purview Data Loss Prevention (DLP) can identify, monitor, and protect your sensitive items. Identifying sensitive items sometimes requires looking for keywords, particularly when identifying generic content (such as healthcare-related communication), or inappropriate or explicit language. Although you can create keyword lists in sensitive information types, keyword lists are limited in size and require modifying XML to create or edit them. Keyword dictionaries provide simpler management of keywords and at a much larger scale, supporting up to 1 MB of terms (post compression) in the dictionary and support any language. The tenant limit is also 1 MB after compression. 1 MB of post compression limit means that all dictionaries combined across a tenant can have close to 1 million characters.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Keyword dictionary limits
 
@@ -75,7 +78,7 @@ The keywords for your dictionary could come from various sources, most commonly 
 
 3. **Create your dictionary**. Choose a name and description and create your dictionary.
 
-## Create a keyword dictionary using the Security & Compliance Center
+## Create a keyword dictionary using the Microsoft Purview compliance portal
 
 Use the following steps to create and import keywords for a custom dictionary:
 

@@ -10,9 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
@@ -28,6 +29,8 @@ Compliance Manager provides intelligent and actionable data upon your first visi
 
 Whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can support you along your journey.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## First visit: get to know Compliance Manager
 
 Compliance Manager is located in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>. Your organization's global administrator will need to [set up user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) before you start using Compliance Manager.
@@ -42,7 +45,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)
-- [Do a quick scan of your environment using the Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md)
+- [Do a quick check of your environment using the Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md)
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 
@@ -65,5 +68,5 @@ You can also set up automated testing of all or a subset of improvement actions.
 - [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates-extend.md)
 - [Create your own custom template](compliance-manager-templates-create.md)
 - [Modify an existing template to add or remove controls and actions](compliance-manager-templates-modify.md)
-- [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)
+- [Set up automated testing of improvement actions](compliance-manager-setup.md#testing-source-for-automated-testing)
 - [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

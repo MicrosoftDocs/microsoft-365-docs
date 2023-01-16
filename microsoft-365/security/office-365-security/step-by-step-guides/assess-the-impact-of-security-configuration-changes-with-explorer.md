@@ -14,7 +14,10 @@ author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 search.appverid: met150
 ---
@@ -57,6 +60,6 @@ This step-by-step guide will take you through assessing a change, and exporting 
 
 Consider using secure presets [Ensuring you always have the optimal security controls with preset security policies](/microsoft-365/security/office-365-security/step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies)
 
-You can also manage email authentication issues with spoof intelligence [Spoof intelligence insight](/microsoft-365/security/office-365-security/learn-about-spoof-intelligence)
+You can also manage email authentication issues with spoof intelligence [Spoof intelligence insight](/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence)
 
-Learn more about email authentication [Email Authentication in Exchange Online Protection](/microsoft-365/security/office-365-security/email-validation-and-authentication)
+Learn more about email authentication [Email Authentication in Exchange Online Protection](/microsoft-365/security/office-365-security/email-authentication-abou)

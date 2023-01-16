@@ -16,8 +16,10 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier2
+ms.topic: conceptual
 ---
 
 # Extend advanced hunting coverage with the right settings
@@ -27,7 +29,6 @@ ms.topic: article
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 [Advanced hunting](advanced-hunting-overview.md) relies on data coming from various sources, including your devices, your Office 365 workspaces, Azure AD, and Microsoft Defender for Identity. To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
 

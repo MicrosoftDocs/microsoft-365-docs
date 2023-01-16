@@ -7,9 +7,11 @@ author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
+- Tier2
+- scotvorg 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -87,7 +89,7 @@ You must be a global admin to perform these steps.
 
 ::: moniker-end
 
-2. Go to the **Setup** > **Domains** page.
+2. Go to the **Settings** > **Domains** page.
 
 3. On the **Domains** page, select **Add domain**.
 

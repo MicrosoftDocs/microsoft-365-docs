@@ -9,12 +9,14 @@ ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection:
+- scotvorg
 - Ent_O365
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-m365-identity
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 f1.keywords:
 - CSH
 ms.custom:

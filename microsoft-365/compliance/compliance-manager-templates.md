@@ -11,9 +11,10 @@ ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -25,7 +26,9 @@ description: "Understand how to use and manage templates for building assessment
 **In this article:** Understand **how templates work** and **how to manage them** from your assessment templates page. Get instructions for **creating** new templates, **extending** and **modifying** existing templates, **formatting your template data with Excel**, and exporting template **reports**.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Templates overview
 
@@ -44,9 +47,9 @@ Note that US Government Community (GCC) Moderate, GCC High, and Department of De
 
 ## Template availability and licensing
 
-There are two categories of templates in Compliance Manager: included and premium.
+There are two categories of templates in Compliance Manager: **included** and **premium**.
 
-1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+1. **Included templates** are granted by your Compliance Manager license and cover key regulations and requirements. To learn more about what templates are available under your licensing agreement, see [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 2. **Premium templates** to cover additional needs and scenarios can be obtained by purchasing template licenses.
 
 When you begin creating assessments, Compliance Manager will track how many templates are active so you can monitor your usage. To learn more, see [Active and inactive templates](compliance-manager-templates.md#active-and-inactive-templates).
@@ -95,15 +98,15 @@ If you link any assessments to a purchased premium template, that template will 
 
 #### Activated templates counter
 
-Your assessment page and assessment templates page have an **activated templates** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement. Template use is counted at the certification level.
+Your **Assessment templates** page has an **Activated/Licensed templates** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement.
 
-For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use.
+For example, if your counter shows 2/5, this means your organization has activated 2 templates out of the 5 that are available to use. If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
 
-If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
+Templates for a pre-defined product, such as Microsoft 365, have joint licensing with the universal versions of the same template. This enables you to use the same underlying regulation across more than one product. Using either or both versions of the same template will only count as one activated template.
 
-Templates for a pre-defined product, such as Microsoft 365, have joint licensing with the universal versions of the same template. This enables you to use the same underlying certification across more than one product. Using either or both versions of the same template will only count as one activated template.
+Similarly, templates that belong to the same regulation family are also counted as one template. The regulation family is shown in the **Overarching regulation** column on the **Assessment templates** page. When you purchase a template license for a regulation and activate the template, it counts as one activated template even if you create assessments for different levels or versions of that regulation. For example, if you use a template for CMMC Level 1 and a template for CMMC Level 2, your activated templates counter increases by only one.
 
-For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
+For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## View and manage templates
 
