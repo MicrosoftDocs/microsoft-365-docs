@@ -100,7 +100,7 @@ Enables or disables file hash computation feature. When this feature is enabled,
 |---|---|
 |**Key**|enableFileHashComputation|
 |**Data type**|Boolean|
-|**Possible values**|false (default) <p> true|
+|**Possible values**|true (default) <p> false|
 |**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
   
 #### Run a scan after definitions are updated
