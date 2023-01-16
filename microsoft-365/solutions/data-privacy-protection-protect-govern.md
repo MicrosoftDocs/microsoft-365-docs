@@ -56,7 +56,7 @@ The three data handling policies available in Priva Privacy Risk Management help
 
 We recommend deploying policies in a phased approach so you can get to know how they behave and optimize them to suit your needs. For the first phase, we recommend creating one custom policy to serve as a basis of understanding. Let's use the example of creating a [data overexposure policy](/privacy/priva/risk-management-policy-data-overexposure), which identifies content items containing personal data that may be too broadly accessible by other people. You can find [detailed policy creation instructions starting here](/privacy/priva/risk-management-policy-data-overexposure#custom-setup-guided-policy-creation-process).
 
-- When you get to the **Chose data to monitor** step of the policy creation wizard, we recommend selecting the **Individual sensitive information types** option and choosing the SITs that are most relevant to your organization. For example, if you're a  financial services company with customers in Europe, you'll likely want to include the EU debit card number as one of your SITs. [Find the list of SIT definitions here](../compliance/sensitive-information-type-entity-definitions.md).
+- When you get to the **Choose data to monitor** step of the policy creation wizard, we recommend selecting the **Individual sensitive information types** option and choosing the SITs that are most relevant to your organization. For example, if you're a  financial services company with customers in Europe, you'll likely want to include the EU debit card number as one of your SITs. [Find the list of SIT definitions here](../compliance/sensitive-information-type-entity-definitions.md).
 
 - At the **Choose users and groups covered by this policy** step, we recommend selecting **Specific users or groups** and choosing a small inner circle of users in scope for this policy.
 
@@ -85,7 +85,7 @@ Below are specific recommendations for key settings when creating your first **d
 - For **Data to monitor**, choose specific SITs or classification groups.
 - For **Choose users and groups covered by this policy**, select an inner ring of users.
 - For **Choose conditions for the policy**, choose 30, 60, 90, or 120 days.
-- or **Decide policy mode**, keep the policy in test mode.
+- For **Decide policy mode**, keep the policy in test mode.
 
 ### Maximizing policy performance to minimize privacy risks
 
