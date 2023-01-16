@@ -30,6 +30,9 @@ search.appverid: met150
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+
 The following professional services can be integrated with Microsoft Defenders' products:
 
 ## Manage
@@ -187,5 +190,7 @@ Mature and maintain your internal team's security capabilities to prevent, detec
 |[SecureShield365](https://go.microsoft.com/fwlink/?linkid=2209718)|Patriot Consulting|SecureShield365 includes a full deployment of all Microsoft 365 Defender products including Intune plus 12 months of support. Microsoft XDR including Sentinel, Defender for Cloud, and MDR are available options.|
 
 ## Related topics
+
+- [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Configure managed service security provider integration](configure-mssp-support.md)

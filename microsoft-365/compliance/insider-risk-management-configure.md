@@ -84,8 +84,8 @@ There are six role groups used to configure insider risk management features. To
 
 - Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
 - Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
-- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
-- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/scc-permissions) role group
+- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/scc-permissions) role group
 - *Insider Risk Management* role group
 - *Insider Risk Management Admins* role group
 
@@ -142,7 +142,7 @@ Insider risk management uses Microsoft 365 audit logs for user insights and risk
 
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step.
 
-For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](audit-log-enable-disable.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](audit-log-search.md).
 
 ## Step 3 (optional): Enable and view insider risk analytics insights
 
@@ -190,7 +190,7 @@ See the [Set up a connector to import healthcare data](import-healthcare-data.md
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties for High severity level DLP alerts. When configuring an insider risk management policy with any of the **Data leaks** templates, you have the option to assign a specific DLP policy to the policy for these types of alerts.
 
-Data loss policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#data-leaks).
+Data loss policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policy-templates.md#data-leaks).
 
 > [!IMPORTANT]
 > Make sure you've completed the following:

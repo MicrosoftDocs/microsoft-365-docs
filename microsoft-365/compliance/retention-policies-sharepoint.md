@@ -66,7 +66,7 @@ To store content that needs to be retained, SharePoint and OneDrive create a Pre
 
 When a user changes an item that's subject to retention from a retention policy or a retention label that marks items as a record, or deletes any item subject to retention, the original content is copied to the Preservation Hold library. This behavior lets the user to change or delete the  content in their app, while keeping a copy of the original for compliance reasons.
 
-A timer job periodically runs on the Preservation Hold library. For content that has been in the Preservation Hold library for more than 30 days, this job compares the content to all queries used by the retention settings for that content. Content that is older than their configured retention period is then deleted from the Preservation Hold library, and from the original location if it is still there. This timer job runs every seven days, which means that together with the minimal 30 days, it can take up to 37 days for content to be deleted from the Preservation Hold library.
+A timer job periodically runs on the Preservation Hold library. For content that has been in the Preservation Hold library for more than 30 days, this job compares the content to all queries used by the retention settings for that content. Content that is older than their configured retention period and isn't awaiting [disposition review](disposition.md) is then deleted from the Preservation Hold library, and from the original location if it is still there. This timer job runs every seven days, which means that together with the minimal 30 days, it can take up to 37 days for content to be deleted from the Preservation Hold library.
 
 This behavior for copying files into the Preservation Hold library applies to content that exists when the retention settings were applied. In addition, for retention policies, any new content that's created or added to the site after it was included in the policy will be retained in the Preservation Hold library. However, new content isn't copied to the Preservation Hold library the first time it's edited, only when it's deleted. To retain all versions of a file, [versioning](#how-retention-works-with-document-versions) must be turned on for the original site.
   
@@ -144,9 +144,12 @@ Only pages and sections are impacted by the retention settings that you specify.
 
 Versioning is a feature of all document lists and libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, although you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-When a document with versions is subject to retention settings to retain that content, how the versions are stored in the Preservation Hold library changed in July 2022 to improve performance. Now, all versions of the file are retained in a single file in the Preservation Hold library. Before the change, versions were copied to the Preservation Hold library as separate files, and after the change, remain as separate files.
+When a document with versions is subject to retention settings to retain that content, and it's not marked as a record, how the versions are stored in the Preservation Hold library changed in July 2022 to improve performance. Now, all versions of that file are retained in a single file in the Preservation Hold library. Before the change, versions were copied to the Preservation Hold library as separate files, and after the change, remain as separate files. 
 
-If the retention settings are configured to delete at the end of the retention period:
+> [!NOTE]
+> Versions that are from a record continue to be copied to the Preservation Hold library as separate files, which means that they can expire independently from each other and the current version.
+
+If the label doesn't mark the item as a record and retention settings are configured to delete the item at the end of the retention period:
 
 - If the retention period is based on when the content was created, when labeled, or when an event starts, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
 

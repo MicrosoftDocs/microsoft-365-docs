@@ -26,15 +26,15 @@ You can dismiss tasks from the deployment plan where a Managed Service Provider 
 
 ## Before you begin
 
-Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 Additionally, each partner tenant user must meet the following requirements:
 
 - The partner tenant user must have DAP/GDAP access to the applicable tenant.
 
-  1. For DAP, an admin agent group membership.
+  - For DAP, an admin agent group membership.
 
-  2. For GDAP, a role that can create Conditional Access (CA) policies.
+  - For GDAP, a role that can create Conditional Access (CA) policies.
 
 - The partner tenant user must enable MFA for their user account in the partner tenant.
 
@@ -64,9 +64,13 @@ Additionally, each partner tenant user must meet the following requirements:
 
 You can also select **More actions** (ellipsis icon) option directly from the task list to dismiss the task.
 
+## Next Steps
+
+If the status of a dismissed tasks changes, you can reinstate the task. For more information, see [Reinstate a task in Microsoft 365 Lighthouse](m365-lighthouse-reinstate-task.md).
+
 ## Related content
 
 [Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
-[Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\  
-[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
+[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

@@ -31,6 +31,9 @@ search.appverid: met150
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+
 Microsoft 365 Defender supports third-party integrations to help secure users with effective threat protection, detection, investigation, and response, in various security fields of endpoints, vulnerability management, email, identities, cloud apps.
 
 The following are the solution's categories:
@@ -173,6 +176,8 @@ The following are the solution's categories:
 |[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=2201875)|Nextron systems|Provides on-demand live forensics scans using a signature base focused on persistent threats.|
 
 ## Recommended content
+
+- [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Connect apps to get visibility and control|Microsoft Docs](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
 - [Partner applications in Microsoft Defender for Endpoint|Microsoft Docs](partner-applications.md)

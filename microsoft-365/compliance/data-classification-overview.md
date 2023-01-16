@@ -142,7 +142,7 @@ This card provides a quick summary of the most common actions that users are tak
 
 > [!NOTE]
 > If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on. To turn the audit logs on , see:
->- [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md)
+>- [Search the audit log in the compliance portal](audit-log-search.md)
 
 ## Sensitivity and retention labeled data by location
 

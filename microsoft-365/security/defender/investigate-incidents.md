@@ -118,7 +118,7 @@ Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="The Alerts pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incident-alerts.png":::
 
-By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft 365 Defender displays the alert information specific to the context of the overall incident. 
+By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft 365 Defender displays the alert information specific to the context of the overall incident.
 
 You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including devices, files, users, and mailboxes.
 
@@ -175,7 +175,7 @@ There is also an **Investigation graph** tab that shows:
 - Which entities are related to which alerts and how they are part of the story of the attack.
 - The alerts for the incident.
 
-The investigation graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
+The investigation graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
 
 For more information, see [Automated investigation and response in Microsoft 365 Defender](m365d-autoir.md).
 
@@ -188,6 +188,21 @@ The **Evidence and Response** tab shows all the supported events and suspicious 
 Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
+
+### Approve or reject remediation actions
+
+For incidents with a remediation status of **Pending approval**, you can approve or reject a remediation action from within the incident.
+
+1. In the navigation pane, go to **Incidents & alerts** \> **Incidents**.
+2. Filter on **Pending action** for the Automated investigation state (optional).
+3. Select an incident name to open its summary page.
+4. Select the **Evidence and Response** tab.
+5. Select an item in the list to open its flyout pane.
+6. Review the information, and then take one of the following steps:
+   - Select the Approve pending action option to initiate a pending action.
+   - Select the Reject pending action option to prevent a pending action from being taken.
+
+:::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft 365 Defender portal" lightbox="../../media/defender//m365-defender-approve-reject-action.png":::
 
 ## Next steps
 

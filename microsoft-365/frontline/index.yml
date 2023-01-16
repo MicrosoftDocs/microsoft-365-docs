@@ -56,7 +56,7 @@ productDirectory:
         - url: simplify-business-processes.md
           text: Digitized processes
         - url: virtual-appointments.md
-          text: Virtual appointments
+          text: Virtual Appointments
     # Card
     - title: Solutions for your industry
       imageSrc: /office/media/icons/walkthrough-map-blue.svg

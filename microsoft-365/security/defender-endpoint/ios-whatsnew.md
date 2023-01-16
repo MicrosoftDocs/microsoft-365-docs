@@ -33,7 +33,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 ## Vulnerability assessment of apps
 
-Vulnerability assessment of apps on Microsoft Defender for Endpoint for iOS is now in public preview. Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices. For more details, see [Configure vulnerability assessment of apps](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-vulnerability-assessment-of-apps). If you are interested in participating in the preview, share your tenant name and ID with us: mdatpmobile@microsoft.com.
+Vulnerability assessment of apps on Microsoft Defender for Endpoint for iOS is now generally available. Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices. For more details, see [Configure vulnerability assessment of apps](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-vulnerability-assessment-of-apps). 
 
 ## Network protection
 
@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint on iOS enables Privacy Controls for both the Adm
 
 Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the onboarding flow. Currently the permissions required by MDE are mandatory in the onboarding flow. With this feature, admin can deploy MDE on BYOD devices without enforcing the mandatory **VPN Permission** during onboarding. End Users can onboard the app without the mandatory permissions and can later review these permissions. This feature is currently present only for enrolled devices (MDM).
 
-With **Disable Web Protection**,Customers who do not want to setup a VPN, can configure to disable **Web Protection** and deploy MDE without that feature. Other MDE features will continue to work. This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices.
+With **Disable Web Protection**,Customers who do not want to set up a VPN, can configure to disable **Web Protection** and deploy MDE without that feature. Other MDE features will continue to work. This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices.
 
 ## Integration with Tunnel
 
@@ -80,7 +80,7 @@ On January 25, 2022, we announced the general availability of Vulnerability mana
 ## 1.1.23250104
 
 - Performance optimizations - Test battery performance with this version and let us know your feedback.
-- **Zero-touch onboard for enrolled iOS devices** - With this version, the preview of Zero-touch onboard for devices enrolled through Microsoft Endpoint Manager (Intune) has been added. For more information, see this [documentation](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint) for more details on setup and configuration.
+- **Zero-touch onboard for enrolled iOS devices** - With this version, the preview of Zero-touch onboard for devices enrolled through Microsoft Endpoint Manager (Intune) has been added. For more information, see this [documentation](ios-install.md#zero-touch-silent-onboarding-of-microsoft-defender-for-endpoint) for more details on setup and configuration.
 - **Privacy Controls** - Configure privacy controls for phish alert report. For more information, see [Configure iOS features](ios-configure-features.md).
 
 ## 1.1.23010101
