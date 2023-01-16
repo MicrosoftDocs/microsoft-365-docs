@@ -40,7 +40,7 @@ To get their work done, people in your organization collaborate with others both
 
 Sensitivity labels from Microsoft Purview Information Protection let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
 
-The following example from Excel shows some sensitivity labels that have been made available to users. In this case, the **Highly Confidential** label has been applied but users can change the label by using the **Sensitivity** button from the **Home** tab on the Ribbon.
+The following example from Excel shows some sensitivity labels that have been made available to users. In this case, the **Highly Confidential** label has been applied to the spreadsheet, but users can change the label by using the **Sensitivity** button from the **Home** tab on the Ribbon.
 
 ![Sensitivity label on the Excel ribbon and status bar.](../media/Sensitivity-label-in-Excel.png)
 
