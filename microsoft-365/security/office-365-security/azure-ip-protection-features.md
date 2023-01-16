@@ -7,7 +7,7 @@ author: kccross
 manager: laurawi
 ms.date: 6/29/2018
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 
 ms.localizationpriority: medium
 search.appverid: 

@@ -9,6 +9,7 @@ ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
+- Tier2
 - scotvorg
 - M365-subscription-management
 - Adm_O365

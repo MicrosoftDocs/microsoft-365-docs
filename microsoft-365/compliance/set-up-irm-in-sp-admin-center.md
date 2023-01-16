@@ -9,14 +9,16 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection:
-- SPO_Content
 ms.localizationpriority: medium
 search.appverid: 
 - SPO160
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: "Learn how to use SharePoint Online IRM through Microsoft Azure Active Directory Rights Management Services (RMS) to protect SharePoint lists and document libraries."
+ms.collection: 
+- tier3
+- purview-compliance
+- SPO_Content
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkSPO

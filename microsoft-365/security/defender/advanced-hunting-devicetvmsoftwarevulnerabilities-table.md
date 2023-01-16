@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # DeviceTvmSoftwareVulnerabilities
@@ -29,7 +29,7 @@ ms.topic: article
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
+
 
 >[!IMPORTANT]
 > Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.

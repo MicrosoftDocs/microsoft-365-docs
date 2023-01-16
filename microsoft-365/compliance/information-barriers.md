@@ -1,6 +1,6 @@
 ---
 title: "Learn about information barriers"
-description: "Learn about information barriers in Microsoft Purview."
+description: "Learn about information barriers in Microsoft Purview. Information barriers can help to avoid conflicts of interest and safeguard internal information between users and organizational areas."
 keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
 author: robmazz

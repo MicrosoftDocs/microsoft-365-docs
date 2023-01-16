@@ -14,7 +14,7 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- tier2
+- tier3
 - purview-compliance
 hideEdit: true
 feedback_system: None
@@ -32,7 +32,7 @@ Country code (two letters) plus check digits (two digits) plus bban number (up t
 
 ## Pattern
 
-Pattern must include all of the following:
+Pattern must include all of these patterns:
 
 - Two-letter country code
 - Two check digits (followed by an optional space)

@@ -7,10 +7,11 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: amberb, vikdesai
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
 - scotvorg
 - M365-subscription-management 
 - Adm_O365

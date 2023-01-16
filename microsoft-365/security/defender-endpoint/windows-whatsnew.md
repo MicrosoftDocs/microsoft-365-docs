@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: v-mathavale
 author: v-mathavale
 ms.localizationpriority: medium
-ms.date: 09/20/2022
+ms.date: 01/10/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -31,7 +31,7 @@ ms.subservice: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink).
 
 All updates contain:
 - Performance improvements
@@ -39,6 +39,18 @@ All updates contain:
 - Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
 
 <details>
+  <summary>Dec-2022 (Release version: 10.8210.*)</summary>
+
+|OS  |KB  |Release version  |
+|---------|---------|---------|
+|Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8210.22621.1016|
+  
+**What's new**
+
+- Bug fixes and stability improvements
+</details>
+
+<details>  
   <summary>Aug-2022 (Release version: 10.8210.*)</summary>
 
 |OS  |KB  |Release version  |
@@ -51,11 +63,11 @@ All updates contain:
 
 **What's new**
 
-- Added a fix to resolve a missing intermediate certificate issue with the use of “TelemetryProxyServer” on Windows Server 2012 R2 running the unified agent.
+- Added a fix to resolve a missing intermediate certificate issue with the use of "TelemetryProxyServer" on Windows Server 2012 R2 running the unified agent.
 - Enhanced Endpoint DLP with ability to protect password protected and encrypted files and not label files.
 - Enhanced Endpoint DLP with support for context data in audit telemetry (short evidence).
 - Improved Microsoft Defender for Endpoint client authentication support for VDI devices.
-- Enhanced Microsoft Defender for Endpoint’s ability to identify and intercept ransomware and advanced attacks.
+- Enhanced Microsoft Defender for Endpoint's ability to identify and intercept ransomware and advanced attacks.
 - The Contain feature now supports more desktop and server versions to perform the Contain action and block discovered devices when these are contained.
 - Expanded the troubleshooting mode feature to additional desktop and server versions. For a complete list of supported OS versions and more information about prerequisites, see [Get started with troubleshooting mode in Microsoft Defender for Endpoint](enable-troubleshooting-mode.md).
 - Live Response improvements include reduced session creation latency when using proxies, an undo Remediation manual command, support for OneDrive share in FindFile action, and improved isolation and stability.

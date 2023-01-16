@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Handle advanced hunting errors
@@ -29,7 +29,6 @@ ms.topic: article
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 
 Advanced hunting displays errors to notify for syntax mistakes and whenever queries hit [predefined quotas and usage parameters](advanced-hunting-limits.md). Refer to the table below for tips on how to resolve or avoid errors.

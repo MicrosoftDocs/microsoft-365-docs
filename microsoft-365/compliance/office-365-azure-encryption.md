@@ -14,6 +14,7 @@ search.appverid:
 ms.collection:
 - Strat_O365_Enterprise
 - purview-compliance
+- tier3
 - Strat_O365_Enterprise
 description: Learn about encryption available in Azure, such as Azure Disk Encryption
 ms.custom: seo-marvel-apr2020

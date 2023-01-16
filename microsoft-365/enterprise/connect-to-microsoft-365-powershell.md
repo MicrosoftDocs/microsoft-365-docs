@@ -79,7 +79,7 @@ For procedures that require the new cmdlets in the Azure Active Directory PowerS
 
 These steps are required only one time on your computer. But you'll likely need to update the software periodically.
   
-1. Open an elevated Windows PowerShell Command Prompt window (run Windows PowerShell as an administrator).
+1. Open a Windows PowerShell Command Prompt window.
     
 2. Run this command:
     

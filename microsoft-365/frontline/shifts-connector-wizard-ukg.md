@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 ms.reviewer: 
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -13,9 +13,11 @@ ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Use the Shifts connector wizard to connect Shifts to UKG Dimensions
@@ -77,7 +79,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 1. On the Connection details page, give your connection a unique name. It can't be longer than 128 characters or have any special characters.
     :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
-1. Enter your UKG Dimensions service account name and password and service URLs.
+1. Enter your UKG Dimensions service account name (which enables access to all instances created in UKG Dimensions) and password and service URLs.
 1. When you're done, select **Next** to test the connection with the settings you entered.
 
 <a name="sync"> </a>

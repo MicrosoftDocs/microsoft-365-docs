@@ -8,14 +8,18 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: evaluation
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
-author: jweston-1
+ms.author: dansimp 
+author: dansimp 
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- m365-security
+- tier2
+- demo
 ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
 
 # SmartScreen app reputation demonstration
@@ -36,8 +40,6 @@ This program has a good reputation; the download should run uninterrupted:
 
 - [Known good program download](https://demo.smartscreen.msft.net/download/known/freevideo.exe)
 
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
-
   Launching this link should render a message similar to the following:
 
   :::image type="content" source="images/smartscreen-app-reputation-known-good.png" alt-text="Based on the target file's reputation, SmartScreen allows the download without interference.":::
@@ -47,8 +49,6 @@ This program has a good reputation; the download should run uninterrupted:
 Because the program download doesn't have sufficient reputation to ensure that it's trustworthy, SmartScreen will show a warning before running the program download.
 
 - [Unknown program](https://demo.smartscreen.msft.net/download/unknown/freevideo.exe)
-
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->
   
   Launching this link should render a message similar to the following:
 
@@ -60,11 +60,9 @@ This download is known malware; SmartScreen should block this program from runni
 
 - [Known malware](https://demo.smartscreen.msft.net/download/known/knownmalicious.exe)
 
-  <!-- Hide {this intro with no subsequent list items} [Replace this link when new/updated source becomes available] -->  
-
   Launching this link should render a message similar to the following:
 
-  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="SmartScreen detects a file download with an unsafe reputation.; the download is blocked.":::
+  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="Screenshot showing how SmartScreen detects a file download with an unsafe reputation.; the download is blocked.":::
 
 ## Learn more
 

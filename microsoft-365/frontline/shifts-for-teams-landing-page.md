@@ -17,7 +17,7 @@ ms.collection:
   - microsoftcloud-retail
   - m365solution-frontline
   - m365solution-scenario
-  - highpri
+  - tier1
 search.appverid: MET150
 ms.localizationpriority: high
 searchScope:
@@ -28,6 +28,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-jun2020
+ms.date: 09/29/2022
 ---
 
 # Shifts for frontline workers

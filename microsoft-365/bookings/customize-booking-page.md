@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: "Change the color theme of your booking page."

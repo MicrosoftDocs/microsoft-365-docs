@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- Strat_O365_IP
+- tier1
 - purview-compliance
 search.appverid:
 - MET150
@@ -46,7 +46,6 @@ To assess whether this deprecation impacts your organization, see [How to migrat
 |*Experience for external recipient*|Recipients receive an HTML message, which they download and open in a web browser or mobile app|N/A|Native inline experience for Microsoft 365 recipients. All other recipients can read message from OME portal (no download or app required).|
 |*Attachment permissions*           |No restrictions on attachments|Attachments are protected|Attachments are protected for the Do Not Forward option and custom templates. Admins can choose whether attachments for the encrypt-only option are protected or not.|
 |*Bring your own key (BYOK) support*|None                |None               |BYOK supported          |
-||
 
 ## Advantages of Microsoft Purview Message Encryption over legacy OME
 
@@ -58,7 +57,7 @@ The new capabilities provide the following advantages:
 - Accounts outside of Microsoft 365, such as Gmail, Yahoo, and Microsoft accounts, are federated with the OME portal, which provides a better user experience for these recipients. All other identities use a one-time pass code to access encrypted messages.
 - Admins can customize branding, and create multiple branding templates.
 - Admins can revoke emails encrypted with the new capabilities.
-- The new capabilities provide detailed usage reports through the Security &amp; Compliance Center.
+- The new capabilities provide detailed usage reports through the Microsoft Purview compliance portal.
 
 ## Microsoft Purview Advanced Message Encryption capabilities
 

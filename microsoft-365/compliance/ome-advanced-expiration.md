@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
-- Strat_O365_IP
+- tier1
 - purview-compliance
 description: Use Microsoft Purview Advanced Message Encryption to extend your email security by setting an expiration date on emails through a custom branded template.
 ms.custom: seo-marvel-apr2020

@@ -11,6 +11,9 @@ description: "Setting up Scheduler for Microsoft 365."
 ---
 # Setting up Scheduler for Microsoft 365
 
+> [!IMPORTANT]
+> Scheduler for Microsoft 365 will stop working in August 2023. After that date, Scheduler won't be able to create or modify any meeting requests.
+
 Tenant admins need to set up a Scheduler assistant mailbox and obtain Scheduler licenses for meeting organizers to enable the Scheduler for Microsoft 365 service. 
 
 ## Licensing

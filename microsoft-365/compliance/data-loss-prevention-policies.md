@@ -559,7 +559,7 @@ By default, Global admins, Security admins, and Compliance admins will have acce
 
 You can also create a role group with view-only privileges to the DLP policies and DLP reports by granting the **View-Only DLP Compliance Management** role.
 
-For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group).
 
 These permissions are required only to create and apply a DLP policy. Policy enforcement does not require access to the content.
 

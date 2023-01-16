@@ -53,7 +53,7 @@ mx: *.mail.protection.outlook.com
 max_age: 604800
 ```
 
-Any customer whose MX records point directly to Exchange Online can specify in their own policy, with the same values that are shown above in the microsoft.com policy. The unique required information in the policy is the MX record that points to Exchange Online (`*`.mail.protection.outlook.com), and the same certificate is shared by all Exchange Online customers. It's possible to publish your policy in *test* mode to ensure it's valid before changing it to *enforce* mode. There are third-party validation tools out there that can check your configuration.
+Any customer whose MX records point directly to Exchange Online can specify in their own policy with the same values that are shown above in the microsoft.com policy. The unique required information in the policy is the MX record that points to Exchange Online (`*`.mail.protection.outlook.com) and the same certificate is shared by all Exchange Online customers. Exchange Online only allows one organization to receive emails for a given domain so using a wildcard doesn't weaken security, however that may not be the case for other email services. It's possible to publish your policy in *testing* mode to ensure it's valid before changing it to *enforce* mode. There are third-party validation tools out there that can check your configuration.
 
 These policies aren't something that Exchange Online can host on behalf of customers, so customers must configure their domain's STS policy using the services they prefer. Azure services can be easily used for policy hosting and there's a configuration walk-through later in this article. The policy needs to be protected by HTTPS with a certificate for the subdomain `mta-sts.<domain name>`.
 

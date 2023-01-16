@@ -17,7 +17,7 @@ description: Find resources about how to set up and manage Microsoft Whiteboard.
 
 # Introduction to Microsoft Whiteboard
 
-Microsoft Whiteboard in Microsoft 365 is a free-form, digital canvas where people, content, and ideas come together. Whiteboard lets team members collaborate in real time, wherever you are. It also gives your ideas room to grow with an infinite canvas designed for pen, touch, and keyboard.
+Microsoft Whiteboard in Microsoft 365 is a free-form, digital new canvas where people, content, and ideas come together. Whiteboard lets team members collaborate in real time, wherever you are. It also gives your ideas room to grow with an infinite canvas designed for pen, touch, and keyboard.
 
 ## Get started
 

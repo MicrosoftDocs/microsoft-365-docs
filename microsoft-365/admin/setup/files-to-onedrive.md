@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier2
 - scotvorg
 - highpri
 - M365-subscription-management 
@@ -48,3 +49,6 @@ In addition to working on your OneDrive files locally, you can access them from 
 
 1. In your web browser, sign in to office.com with your work email.
 2. Choose  **OneDrive**. All of your files are listed, and you can work on them in the browser from any computer.
+
+> [!NOTE]  
+> When multiple users use a shared computer and sync files via OneDrive locally, the available storage might be consumed very quickly.

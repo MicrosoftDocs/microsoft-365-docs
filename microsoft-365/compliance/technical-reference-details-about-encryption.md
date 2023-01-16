@@ -13,7 +13,7 @@ ms.collection:
 - purview-compliance
 - m365solution-mip
 - m365initiative-compliance
-- Strat_O365_IP
+- tier1
 search.appverid:
 - MET150
 - MOE150

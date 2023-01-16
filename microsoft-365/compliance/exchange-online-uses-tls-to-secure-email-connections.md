@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 4cde0cda-3430-4dc0-b489-f2c0736c929f
 ms.collection:
 - purview-compliance
-- Strat_O365_IP
+- tier1
 description: "Learn how Exchange Online and Microsoft 365 use Transport Layer Security (TLS) and Forward Secrecy (FS) to secure email communications. Also get information about the certificate issued by Microsoft for Exchange Online."
 ---
 

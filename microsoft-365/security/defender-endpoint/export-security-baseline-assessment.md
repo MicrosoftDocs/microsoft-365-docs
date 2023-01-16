@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -171,8 +171,6 @@ GET /api/machines/BaselineComplianceAssessmentExport
 >The download URLs are only valid for 3 hours; otherwise you can use the parameter.
 >
 >To maximize download speeds, make sure you are downloading the data from the same Azure region where your data resides.
->
->Each record is approximately 1KB of data. You should take this into account when choosing the pageSize parameter that works for you.
 >
 >Some additional columns might be returned in the response. These columns are temporary and might be removed. Only use the documented columns.
 

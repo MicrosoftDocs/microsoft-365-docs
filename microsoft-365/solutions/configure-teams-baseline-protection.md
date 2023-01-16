@@ -36,9 +36,9 @@ We also recommend turning on basic Defender for Office 365 features to guard aga
 
 |Option|Information|
 |:------|:-----------|
-|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](../security/office-365-security/safe-attachments.md) <p> [Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
-|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](../security/office-365-security/safe-docs.md)|
-|Safe Links for Teams|[Office 365 Safe Links in Teams](../security/office-365-security/safe-links.md) <p> [Safe Links](../security/office-365-security/safe-links.md)|
+|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](../security/office-365-security/safe-attachments-about.md) <p> [Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/safe-attachments-for-spo-odfb-teams-about.md)|
+|Safe Documents|[Safe Documents in Microsoft Defender for Office 365](../security/office-365-security/safe-documents-in-e5-plus-security-about.md)|
+|Safe Links for Teams|[Office 365 Safe Links in Teams](../security/office-365-security/safe-links-about.md) <p> [Safe Links](../security/office-365-security/safe-links-about.md)|
 
 ## Teams guest sharing
 

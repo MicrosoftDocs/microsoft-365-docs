@@ -94,7 +94,7 @@ For each rule in a DLP policy, you can:
 >
 > - Email notifications can be sent only to individual recipients, not groups or distribution lists.
 > - Only new content will trigger an email notification. Editing existing content will trigger policy tips, but not email notifications.
-> - External senders don't receive notifications. Notifications go only to internal users.
+> - External senders receive only a templatized notification without full details to prevent any unintended loss of information about the policy configuration.
 
 ![Email notification options.](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 

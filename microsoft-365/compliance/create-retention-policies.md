@@ -73,6 +73,8 @@ When you've more than one retention policy, and when you also use retention labe
 
 > [!NOTE]
 > Retention policies support [shared channels](/MicrosoftTeams/shared-channels). When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
+> 
+> Retention policies also support newly created call data records, which are system-generated messages that contain [metadata for meetings and calls](/MicrosoftTeams/ediscovery-investigation#teams-metadata). All call data records are always included with the **Teams chats** location, even call data records for Teams channel messages and Teams private channel messages.
 
 1. From the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), select **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
 
@@ -86,7 +88,7 @@ When you've more than one retention policy, and when you also use retention labe
     
     - If you chose **Static**: On the **Choose locations to apply the policy** page, select one or more locations for Teams:
         - **Teams channel message**: Messages from standard and shared channel chats, and standard and shared channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
-        - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
+        - **Teams chats**: Messages from private 1:1 chats, group chats, meeting chats, and chat with yourself.
         - **Teams private channel messages**: Messages from private channel chats and private channel meetings. If you select this option, you can't select the other Teams locations in the same retention policy.
         
        By default, [all teams and all users are selected](retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
@@ -106,6 +108,8 @@ For technical details about how retention works for Teams, including what elemen
 - Although you can select the option to start the retention period when items were last modified, the value of **When items were created** is always used. For messages that are edited, a copy of the original message is saved with its original timestamp to identify when this pre-edited message was created, and the post-edited message has a newer timestamp.
 
 - When you select **Edit** for the Teams chats location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
+
+- To include newly created call data records for Teams channel messages and Teams private channel messages, you must select the **Teams chats** location, instead of the **Teams channel messages** and **Teams private channel messages** locations.
 
 
 #### Additional retention policy needed to support Teams

@@ -21,7 +21,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: "Prepare for and deploy DLP to PowerBI locations."
+description: "Prepare for and deploy DLP to PowerBI locations, to help organizations detect and protect their sensitive data."
 ---
 # Get started with Data loss prevention policies for Power BI (preview)
 
