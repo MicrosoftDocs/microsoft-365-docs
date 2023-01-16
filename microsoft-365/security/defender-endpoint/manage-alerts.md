@@ -129,8 +129,9 @@ Whenever a change or comment is made to an alert, it is recorded in the **Commen
 
 Added comments instantly appear on the pane.
 
-## Related topics
+## Related articles
 
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Manage suppression rules](manage-suppression-rules.md)
 - [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
 - [Investigate Microsoft Defender for Endpoint alerts](investigate-alerts.md)

@@ -223,6 +223,10 @@ Please note that a grey circle indicates that the data is unknown.
 
 To gain an in-depth view of the device health report, you can go to **Reports > Devices health**. For more information, see [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports). 
 
+>[!NOTE]
+>The date and time for Defender Antivirus mode is currently not available. 
+
+
 :::image type="content" source="images/device-health-status.png"  alt-text="The device health status card" lightbox="images/device-health-status.png":::
 
 ## Related topics

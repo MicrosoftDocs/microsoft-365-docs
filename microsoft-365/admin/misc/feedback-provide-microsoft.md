@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
 - scotvorg
 description: "Learn about the different ways you can provide feedback to Microsoft about Microsoft products and services."
 ---

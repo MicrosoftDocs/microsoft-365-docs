@@ -13,11 +13,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
 
 # Controlled folder access (CFA) demonstration test tool (block script)
@@ -35,13 +37,13 @@ Controlled Folder Access helps you protect valuable data from malicious apps and
 Set-MpPreference -EnableControlledFolderAccess <State>
 ```
 
-Rule states
+## Rule states
 
 |State | Mode| Numeric value |
 |:---|:---|:---|
-| AuditMode | = Audit Mode | 2 |
-| Enabled | = Block mode | 1 |
 | Disabled | = Off | 0 |
+| Enabled | = Block mode | 1 |
+| Audit | = Audit mode | 2 |
 
 ### Verify configuration
 
@@ -74,7 +76,7 @@ You can perform these manual steps instead:
 
 1. Launch CFA test tool
 2. Select the desired folder and create file
-- You can find more information [here](/windows/threat-protection/windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
+- You can find more information [here](/microsoft-365/security/defender-endpoint/evaluate-controlled-folder-access).
 
 ## Clean-up
 

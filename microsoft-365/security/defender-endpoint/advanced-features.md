@@ -34,9 +34,13 @@ Depending on the Microsoft security products that you use, some advanced feature
 
 ## Enable advanced features
 
-1. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
-2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
-3. Select **Save preferences**.
+1. Log in to [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) using an account with the Security administrator or Global administrator role assigned.
+
+2. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
+
+3. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
+
+4. Select **Save preferences**.
 
 Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations.
 

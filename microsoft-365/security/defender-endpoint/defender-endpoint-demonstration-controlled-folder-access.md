@@ -13,11 +13,13 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
-ms.topic: conceptual
+- demo
+ms.topic: article
 ms.subservice: mde
+ms.date: 10/21/2022
 ---
 
 # Controlled folder access (CFA) demonstrations (block ransomware)
@@ -43,9 +45,9 @@ Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
 
 |State | Mode| Numeric value |
 |:---|:---|:---|
-| AuditMode | = Audit Mode | 2 |
-| Enabled | = Block mode | 1 |
 | Disabled | = Off | 0 |
+| Enabled | = Block mode | 1 |
+| Audit | = Audit mode | 2 |
 
 ## Verify configuration
 
@@ -75,7 +77,7 @@ You can perform these manual steps instead:
 
 ### Scenario 1: CFA blocks ransomware test file
 
-1. Turn on CFA using PowerShell command: 
+1. Turn on CFA using PowerShell command:
   
 ```powershell
 Set-MpPreference -EnableControlledFolderAccess Enabled
@@ -96,7 +98,7 @@ Set-MpPreference -ControlledFolderAccessProtectedFolders C:\demo\
 
 ### Scenario 2: What would happen without CFA
 
-1. Turn off CFA using this PowerShell command: 
+1. Turn off CFA using this PowerShell command:
 
 ```powershell
 Set-MpPreference -EnableControlledFolderAccess Disabled

@@ -53,9 +53,9 @@ For more information, see [Permissions in the Microsoft Purview compliance porta
   
 These permissions are required to create and apply a DLP policy not to enforce policies.
 
-### Roles and Role Groups in preview
+### Roles and Role Groups
 
-There are roles and role groups in preview that you can test out to fine tune your access controls.
+There are roles and role groups that you can use to fine tune your access controls.
 
 Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Insider risk management Users dashboard
+title: Manage the workflow with the insider risk management users dashboard
 description: Learn about insider risk management Users dashboard in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 ---
 
-# Insider risk management Users dashboard
+# Manage the workflow with the insider risk management users dashboard
 
 > [!IMPORTANT]
 > Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
@@ -30,6 +30,7 @@ Learn more about how the Users dashboard displays users in the following scenari
 
 - Users with active insider risk policy alerts
 - Users with triggering events
+- Users identified as potential high impact users or in priority user groups
 - Users added temporarily to policies
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -85,9 +86,12 @@ To view more details about risk activity for a user, open the user details pane 
 
 - **User profile** tab
   - **Name and title**: Name and position title for the user from Azure Active Directory. These user fields will be anonymized or empty if the global anonymization setting for insider risk management is enabled.
+  - **User details**: Lists whether the user has been identified as a potential high impact user or if the user is in priority user groups. 
+  - **Alert and activity summary**: Lists active user alerts and open cases.
   - **User email**: Email address for the user.
   - **Alias**: Network alias for the user.
   - **Organization or department**: Organization or department for the user.
+  - **In scope**: Lists in-scope assignment of the user to policies.
 
 - **User activity** tab
   - **History of recent user activity**: Lists both triggering indicators and insider risk indicators for risk activities up to the last 90 days. All risk activities pertinent to insider risk indicators are also scored, though the activities may or may not have generated an insider risk alert. Triggering indicator examples may be a resignation date or the last scheduled date of work for the user. Insider risk indicators are activities determined to have an element of risk, which may potentially lead to a security incident, and are defined in policies that the user is included in. Event and risk activities are listed with the most recent item listed first.
