@@ -434,7 +434,7 @@ For more information to help you specify PowerShell advanced settings for sensit
 ## Specify a default sublabel for a parent label
 
 > [!NOTE]
-> For built-in labeling, identify the minimum versions that support this setting by using the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps) on this page, and the row **Default sublabel for parent label**. All versions of the Azure Information Protection unified labeling client support this setting.
+> For built-in labeling, identify the minimum versions that support this setting by using the [capabilities tables](#support-for-sensitivity-label-capabilities-in-apps) and the row **Default sublabel for parent label**. All versions of the Azure Information Protection unified labeling client support this setting.
 
 This configuration is not available in the Microsoft Purview compliance portal. You must use the PowerShell advanced setting *DefaultSubLabelId* with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
