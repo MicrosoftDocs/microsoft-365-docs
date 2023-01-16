@@ -13,7 +13,10 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
@@ -26,7 +29,7 @@ When alerts are triggered in Microsoft 365 Defender, automated investigation and
 ## What you'll need
 
 - Microsoft Defender for Office 365 Plan 2 or higher
-- Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../permissions-microsoft-365-security-center.md) role)
+- Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../mdo-portal-permissions.md) role)
 
 ## Prioritize & manage Incidents
 
@@ -60,6 +63,6 @@ You can start using *Action Center* to act on pending action items from all inci
 
 [Manage incidents in Microsoft 365 Defender | Microsoft Docs](../../defender/manage-incidents.md)
 
-[How automated investigation and response works in Microsoft Defender for Office 365](../automated-investigation-response-office.md)
+[How automated investigation and response works in Microsoft Defender for Office 365](../air-about-office.md)
 
 [Remediation actions in Microsoft Defender for Office 365](../air-remediation-actions.md)

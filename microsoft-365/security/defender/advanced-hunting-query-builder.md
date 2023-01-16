@@ -17,8 +17,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365-security
+  - tier2
 ms.topic: conceptual
 ---
 
@@ -57,7 +57,7 @@ You can choose from:
 - All domains - to look through all available data in your query
 - Endpoints - to look through endpoint data as provided by Microsoft Defender for Endpoint
 - Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with [Activity log](/defender-cloud-apps/activity-filters) can find the same data here
-- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](/office-365-security/threat-explorer) can find the same data here
+- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](/office-365-security/threat-explorer-about) can find the same data here
 
 ## Use basic filters
 
@@ -150,7 +150,7 @@ Follow the instructions in the blue teaching bubbles to construct your query. Se
 ## Try some queries
 
 ### Hunt for successful connections to specific IP
-To hunt for successful network communications to a specific IP address, start typing “ip” to get suggested filters:
+To hunt for successful network communications to a specific IP address, start typing "ip" to get suggested filters:
 
 ![Screenshot of guided mode query builder hunt for successful connections to specific IP first filter](../../media/guided-hunting/query-builder-hunt-ip.png)
 

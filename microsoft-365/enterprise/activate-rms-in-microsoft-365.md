@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
+ms.collection: scotvorg
 search.appverid:
 - MET150
 - MOE150

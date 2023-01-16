@@ -14,7 +14,7 @@ metadata:
     - MET150
   ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
   ms.collection: 
-    - M365-security-compliance
+    - m365-security
     - m365initiative-defender-office365
   ms.custom: 
     - seo-marvel-apr2020
@@ -26,7 +26,7 @@ summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
   
   **Applies to**
-  - [Exchange Online Protection](exchange-online-protection-overview.md)
+  - [Exchange Online Protection](eop-about.md)
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
   
@@ -34,9 +34,9 @@ summary: |
   
   For questions and answers about the quarantine, see [Quarantine FAQ](quarantine-faq.yml).
   
-  For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq-eop.yml).
+  For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq.yml).
   
-  For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-spoofing-protection-faq.yml).
+  For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-phishing-protection-spoofing-faq.yml).
   
 
 sections:
@@ -45,12 +45,12 @@ sections:
       - question: |
           By default, what happens to a spam-detected message?
         answer: |
-          **For inbound messages:** The majority of spam is deleted via connection filtering, which is based on the IP address of the source email server. Anti-spam policies (also known as spam filter policies or content filter policies) inspect and classify messages as spam, bulk, or phishing. By default, messages that are classified as spam or bulk are delivered to the recipient's Junk Email folder, while messages classified as phishing are quarantined. You can modify the default anti-spam policy (applies to all recipients), or you can create custom anti-spam policies with stricter settings for specific groups of users (for example, you can quarantine spam that's sent to executives). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+          **For inbound messages:** The majority of spam is deleted via connection filtering, which is based on the IP address of the source email server. Anti-spam policies (also known as spam filter policies or content filter policies) inspect and classify messages as spam, bulk, or phishing. By default, messages that are classified as spam or bulk are delivered to the recipient's Junk Email folder, while messages classified as phishing are quarantined. You can modify the default anti-spam policy (applies to all recipients), or you can create custom anti-spam policies with stricter settings for specific groups of users (for example, you can quarantine spam that's sent to executives). For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md) and [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
           
           > [!IMPORTANT]
           > In hybrid deployments where EOP protects on-premises Exchange mailboxes, you need to configure two Exchange mail flow rules (also known as transport rules) in your on-premises Exchange organization to detect the EOP spam filtering headers that are added to messages. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
           
-           **For outbound messages:** The message is either routed through the [high-risk delivery pool](high-risk-delivery-pool-for-outbound-messages.md) or is returned to the sender in a non-delivery report (also known as an NDR or bounce message). For more information about outbound spam protection, see [Outbound spam controls](outbound-spam-controls.md).
+           **For outbound messages:** The message is either routed through the [high-risk delivery pool](outbound-spam-high-risk-delivery-pool-about.md) or is returned to the sender in a non-delivery report (also known as an NDR or bounce message). For more information about outbound spam protection, see [Outbound spam controls](outbound-spam-protection-about.md).
           
       - question: |
           What's a zero-day spam variant and how is it handled by the service?
@@ -58,7 +58,7 @@ sections:
           A zero-day spam variant is a first generation, previously unknown variant of spam that's never been captured or analyzed, so our anti-spam filters don't yet have any information available for detecting it. After a zero-day spam sample is captured and analyzed by our spam analysts, if it meets the spam classification criteria, our anti-spam filters are updated to detect it, and it's no longer considered "zero-day."
           
           > [!NOTE]
-          > If you receive a message that may be a zero-day spam variant, in order to help us improve the service, please submit the message to Microsoft using one of the methods described in [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+          > If you receive a message that may be a zero-day spam variant, in order to help us improve the service, please submit the message to Microsoft using one of the methods described in [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
           
       - question: |
           Do I need to configure the service to provide anti-spam protection?
@@ -69,11 +69,11 @@ sections:
           
           [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md)
           
-          [Configure connection filtering in EOP](configure-the-connection-filter-policy.md)
+          [Configure connection filtering in EOP](connection-filter-policies-configure.md)
           
-          [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)
+          [Configure anti-spam policies in EOP](anti-spam-policies-configure.md)
           
-          [Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
+          [Configure the outbound spam policy](outbound-spam-policies-configure.md)
           
       - question: |
           If I make a change to an anti-spam policy, how long does it take after I save my changes for them to take effect?
@@ -83,7 +83,7 @@ sections:
       - question: |
           Is bulk email filtering automatically enabled?
         answer: |
-          Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+          Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](anti-spam-spam-vs-bulk-about.md)
           
       - question: |
           Does the service provide URL filtering?
@@ -93,7 +93,7 @@ sections:
       - question: |
           How can customers using the service send false negative (spam) and false positive (non-spam) messages to Microsoft?
         answer: |
-          Spam and non-spam messages can be submitted to Microsoft for analysis in several ways. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+          Spam and non-spam messages can be submitted to Microsoft for analysis in several ways. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
           
       - question: |
           Can I get spam reports?
@@ -102,7 +102,7 @@ sections:
           
           Exchange Online customers: [Monitoring, Reporting, and Message Tracing in Exchange Online](/exchange/monitoring/monitoring)
           
-          Standalone EOP customers: [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
+          Standalone EOP customers: [Reporting and message trace in Exchange Online Protection](message-trace-scc.md)
           
       - question: |
           Someone sent me a message and I can't find it. I suspect that it may have been detected as spam. Is there a tool that I can use to find out?
@@ -114,7 +114,7 @@ sections:
         answer: |
           If more than half of the mail that is sent from a user through the service within a certain time frame (for example, per hour), is determined to be spam by EOP, the user will be blocked from sending messages. In most cases, if an outbound message is determined to be spam, it is routed through the high-risk delivery pool, which reduces the probability of the normal outbound-IP pool being added to a block list.
           
-          You can send a notification to a specified email address when a sender is blocked sending outbound spam. For more information about this setting, see [Configure the outbound spam policy](configure-the-outbound-spam-policy.md).
+          You can send a notification to a specified email address when a sender is blocked sending outbound spam. For more information about this setting, see [Configure the outbound spam policy](outbound-spam-policies-configure.md).
           
       - question: |
           Can I use a third-party anti-spam and anti-malware provider in conjunction with Exchange Online?
@@ -144,7 +144,7 @@ sections:
           
             For example, if the sender is user@fabrikam, the domain fabrikam resolves to the IP address 192.0.43.10.
           
-            If a sending domain has no A-record and no MX record in DNS, the service will route the message through its higher risk delivery pool regardless of whether or not the content of the message is spam. For more information about the higher risk delivery pool, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).
+            If a sending domain has no A-record and no MX record in DNS, the service will route the message through its higher risk delivery pool regardless of whether or not the content of the message is spam. For more information about the higher risk delivery pool, see [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md).
           
           - **Outbound email server should have a reverse DNS (PTR) entry.**
           
@@ -158,7 +158,7 @@ sections:
           
             SPF records are a mechanism for validating that mail sent from a domain really is coming from that domain and is not spoofed. For more information about SPF records, see the following links:
           
-            [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+            [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
           
             [Domains FAQ](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
           
@@ -227,4 +227,4 @@ sections:
 
           If you use a third-party protection service or device to scan email before it's delivered to Microsoft 365, you should also enable Enhanced Filtering for Connectors (also known as *skip listing*) so detection, reporting, and investigation features in Microsoft 365 are able to correctly identify messages sources. For more information, see [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-          If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](configure-advanced-delivery.md).
+          If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).

@@ -7,9 +7,11 @@ author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
@@ -93,6 +95,12 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 8. Select **Save**.
 
     It can take up to 48 hours for changes to Office Scripts settings to take effect.
+
+## Manage visibility of the Automate tab by using Group Policy
+
+Group Policy has a setting to show or hide the **Automate** tab or all Excel on Desktop users in your organization. You'll find Office Scripts settings under Computer Configuration\Administrative Templates\Microsoft Excel 2016\Miscellaneous in the Group Policy Management Console.
+
+To learn more, see [Use Group Policy to configure update settings for Microsoft 365 Apps](/deployoffice/configure-update-settings-microsoft-365-apps#use-group-policy-to-configure-update-settings-for-microsoft-365-apps).
 
 ## Next steps
 

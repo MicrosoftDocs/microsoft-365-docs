@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 manager: pamgreen
 audience: ITPro
-ms.topic: article 
+ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 
 search.appverid: 
 searchScope:
@@ -18,11 +18,14 @@ ms.collection:
   - m365solution-healthcare
   - m365solution-scenario
   - m365-frontline
+  - highpri
+  - tier1
 ms.reviewer: 
 description: Resources to help train your frontline team in using Shifts to access and manage their schedules.
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Help your frontline workers track time and attendance

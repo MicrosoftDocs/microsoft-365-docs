@@ -14,7 +14,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: Admin
 ms.collection:
-- m365-security-compliance
+- m365-security
+- tier1
 ms.topic: conceptual
 ---
 
@@ -53,4 +54,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 ## See also
 
-[How to get Microsoft Defender for Business servers (preview)](get-defender-business-servers.md)
+- [Get Microsoft Defender for Business](get-defender-business.md)
+- [How to get Microsoft Defender for Business servers](get-defender-business-servers.md)
+- [Trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md)
+- [Visit the Microsoft 365 Defender portal](mdb-get-started.md)

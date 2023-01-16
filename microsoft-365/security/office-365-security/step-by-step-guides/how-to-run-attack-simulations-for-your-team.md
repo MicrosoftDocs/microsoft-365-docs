@@ -13,7 +13,10 @@ author: MSFTTracyP
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: m365-guidance-templates
+ms.collection: 
+- m365-guidance-templates
+- m365-security
+- tier3
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
@@ -31,7 +34,7 @@ Attack simulation training allows you to run realistic but benign cyber attack s
 
 ## Send a payload to target users
 
-1. Navigate to [Attack Simulation Training](https://security.microsoft.com/attacksimulator ) in your subscription.
+1. Navigate to [Attack Simulation Training](https://security.microsoft.com/attacksimulator) in your subscription.
 1. Choose **Simulations** from the top navigation bar.
 1. Select **Launch a simulation**.
 1. Pick the technique you'd like to use from the flyout, and press **Next**.
@@ -53,4 +56,4 @@ Attack simulation training allows you to run realistic but benign cyber attack s
 
 ### Further reading
 
-To learn how Attack Simulation works see [Simulate a phishing attack with Attack simulation training - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training.md)
+To learn how Attack Simulation works see [Simulate a phishing attack with Attack simulation training - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulations.md)

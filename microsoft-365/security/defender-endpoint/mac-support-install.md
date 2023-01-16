@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot installation issues for Microsoft Defender for Endpoint on Mac
 description: Troubleshoot installation issues in Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, install
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, install, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -12,7 +12,8 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security-compliance
+- m365-security
+- tier3
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150

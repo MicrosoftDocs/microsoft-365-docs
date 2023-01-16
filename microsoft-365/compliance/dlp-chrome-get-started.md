@@ -1,5 +1,5 @@
 ---
-title: "Get started with the Microsoft Purview Extension"
+title: "Get started with the Microsoft Purview Chrome Extension"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -13,30 +13,37 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- tier1
+- purview-compliance
 - m365solution-mip
 - m365initiative-compliance
+- highpri
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: "Prepare for and deploy the Microsoft Purview Extension."
 ---
 
-# Get started with Microsoft Purview Extension
+# Get started with Microsoft Purview Chrome Extension
 
-Use these procedures to roll out the Microsoft Purview Extension.
+Use these procedures to roll out the Microsoft Purview Chrome Extension.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
+> [!NOTE]
+> Microsoft Purview Extension is only applicable to Windows devices. The extension is not necessary for the enforcement of data loss prevention on macOS devices.
 
 ## Before you begin
 
-To use Microsoft Purview Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
+To use Microsoft Purview Chrome Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
-- [Learn about Microsoft Purview Extension](dlp-chrome-learn-about.md)
+- [Learn about Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-- [Onboarding tools and methods for Windows 10 devices](device-onboarding-overview.md)
+- [Onboarding tools and methods for Windows 10/11 devices](device-onboarding-overview.md)
 - [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
@@ -70,18 +77,18 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Security reader
 - Reports reader
 
-#### Roles and Role Groups in preview
+#### Roles and Role Groups
 
-There are roles and role groups in preview that you can test out to fine tune your access controls.
+There are roles and role groups that you can use to fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
@@ -103,7 +110,7 @@ Deploying the extension is a multi-phase process. You can choose to install on o
 
 ### Prepare infrastructure
 
-If you are rolling out the extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The extension will bypass the restrictions of both lists for those computers where it is installed.
+If you are rolling out the extension to all your monitored Windows 10/11 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The extension will bypass the restrictions of both lists for those computers where it is installed.
 
 ### Prepare your devices
 
@@ -136,21 +143,33 @@ Before adding the extension to the list of force-installed extensions, it is imp
 
 3. Select **Create Profile**.
 
-4. Select **Windows 10** as the platform.
+4. Select **Windows 10 and later** as the platform.
 
-5. Select **Custom** as profile type.
+5. Select **Templates** as the profile type.
 
-6. Select the **Settings** tab.
+6. Select **Custom** as the template name.
 
-7. Select **Add**.
+7. Select **Create**.
 
-8. Enter the following policy information.
+8. Enter a name and optional description on the **Basics** tab and select **Next**.
+
+9. Select **Add** on the **Configuration settings** tab.
+
+10. Enter the following policy information.
 
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Data type: `String`<br/>
     Value: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
+    
+11. Select **Save** and then select **Next**.
 
-9. Click create.
+12. Add or edit scope tags on the **Scope tags** tab as needed and select **Next**.
+
+13. Add the required deployment users, devices, and groups on the **Assignments** tab and select **Next**.
+
+14. Add applicability rules on the **Applicability Rules** tab as required and select **Next**.
+
+15. Select **Create**.
 
 ### Deploy using Group Policy
 

@@ -9,7 +9,8 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-security-compliance
+- m365-security
+- tier1
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
@@ -47,6 +48,6 @@ Let us know what you think! Submit your feedback at the bottom of the page. We'l
 
 - [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection)
-- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Business Premium](../../business-premium/index.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)

@@ -19,6 +19,7 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Ent_O365
 description: This article can help you troubleshoot Office 365 performance issues and even fix some of the most common issues.

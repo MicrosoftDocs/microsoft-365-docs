@@ -1,26 +1,26 @@
 ---
 title: "Filter data when importing PST files"
+description: "Learn how to filter data using the intelligent import feature in the Microsoft 365 import service when you import PST files to Microsoft 365."
 f1.keywords:
 - NOCSH
-ms.author: v-tophillips
-author: v-tophillips
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: 
-- Strat_O365_IP
-- M365-security-compliance
+ms.collection:
+- tier1
+- purview-compliance
+- import
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: "Learn how to filter data using the intelligent import feature in the Microsoft 365 import service when you import PST files to Microsoft 365."
 ---
 
 # Filter data when importing PST files
@@ -47,6 +47,8 @@ The following graphic shows the Intelligent Import process, and highlights the t
   
 ![The Intelligent Import process in Office 365.](../media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Create a PST import job
 
 - The steps in this topic assume that you've created a PST import job in the Office 365 Import service by using network upload or drive shipping. For step-by-step instructions, see one of the following topics:

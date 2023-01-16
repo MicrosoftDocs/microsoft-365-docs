@@ -1,5 +1,5 @@
 ---
-title: "Azure Batch Shared Access Key entity definition (preview)"
+title: "Azure Batch Shared Access Key entity definition"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -14,18 +14,23 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
-- M365-security-compliance
+- tier3
+- purview-compliance
 hideEdit: true
 feedback_system: None
 recommendations: false
 description: "Azure Batch Shared Access Key sensitive information type entity definition."
 ---
 
-# Azure Batch Shared Access Key (preview)
+# Azure Batch Shared Access Key
 
-## Format
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-A combination of 43 characters consisting of letters, digits, and special characters ending in an equals (=) sign that is not part of the pattern.
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
+
+ ## Format
+
+A combination of 43 characters consisting of letters, digits, and special characters ending in an equals (=) sign that isn't part of the pattern.
 
 ## Pattern
 
@@ -40,9 +45,15 @@ for example:
 
 `abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=`
 
+## Credential example 
+
+`Account=account.batch.azure.net;AccountKey=abcdefghijklmnopqrstuvwxyz0123456789/+ABCDE=;`
+
 ## Checksum
 
 No
+
+SITs that have checksums use a unique calculation to check if the information is valid. This means when the **Checksum** value is **Yes**, the service can make a positive detection based on the sensitive data alone. When the **Checksum** value is **No** additional (secondary) elements must also be detected  for the service to make a positive detection.
 
 ## Definition
 
@@ -50,12 +61,12 @@ This SIT is designed to match the security information that's used to access [Az
 
 It uses several primary resources:
 
-- Patterns of Base64 encoded 256 bits symmetric key.
-- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, Id.
+- Patterns of Base64 encoded 256-bits symmetric key.
+- Patterns of CredentialName, CredentialFeatures, AccountIdentityName, AccountIdentityValue, ResourceType, ResourceName, ID.
 - Patterns of mockup values, redactions, and placeholders.
 - A dictionary of vocabulary.
 
-The patterns are designed to match actual credentials with reasonable confidence. The patterns do not match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present will not be matched.
+The patterns are designed to match actual credentials with reasonable confidence. The patterns don't match credentials formatted as examples. Mockup values, redacted values, and placeholders, like credential type or usage descriptions, in the position where an actual secret value should present won't be matched.
 
 
 ## Keywords

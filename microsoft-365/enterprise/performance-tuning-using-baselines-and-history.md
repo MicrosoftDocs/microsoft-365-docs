@@ -19,6 +19,7 @@ search.appverid:
 - BCS160
 ms.assetid: 1492cb94-bd62-43e6-b8d0-2a61ed88ebae
 ms.collection:
+- scotvorg
 - M365-security-compliance
 - Ent_O365
 - SPO_Content

@@ -12,8 +12,10 @@ ms.service: microsoft-365-frontline
 ms.collection: 
   - M365-collaboration
   - m365-frontline
+  - highpri
   - m365solution-frontline
   - m365solution-scenario
+  - tier2
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
@@ -22,6 +24,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 09/27/2022
 ---
 
 # Engage your frontline workers and focus on wellbeing

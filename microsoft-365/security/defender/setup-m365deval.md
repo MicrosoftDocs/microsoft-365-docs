@@ -15,11 +15,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-evalutatemtp
   - highpri
-ms.topic: article
+  - tier1
+ms.topic: conceptual
 ---
 
 # Set up your Microsoft 365 Defender trial in a lab environment 

@@ -17,11 +17,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
+  - m365-security
   - m365solution-scenario
   - m365solution-pilotmtpproject
   - zerotrust-solution
   - highpri
+  - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ---
@@ -59,7 +60,7 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
 1. Create a simulation
 
-   For step by step instructions on how to create and launch a new simulation, see [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training).
+   For step by step instructions on how to create and launch a new simulation, see [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training-simulations).
 
 2. Create a payload
 

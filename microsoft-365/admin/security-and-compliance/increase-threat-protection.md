@@ -7,9 +7,11 @@ author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier2
+- scotvorg
 - highpri
 - M365-subscription-management
 - M365-identity-device-management
@@ -65,7 +67,7 @@ To increase malware protection in email:
 
 1. Select **Save.**
 
-For more information, see [Anti-malware protection in EOP](../../security/office-365-security/anti-malware-protection.md).
+For more information, see [Anti-malware protection in EOP](../../security/office-365-security/anti-malware-protection-about.md).
 
 ## Watch: Protect against ransomware
 
@@ -157,7 +159,7 @@ We recommend that you get started with this protection by creating a policy to p
 
 3. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
 
-4. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md).
+4. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/anti-phishing-policies-about.md).
 
 5. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
 
@@ -211,7 +213,7 @@ After your policy has been in place for a while, visit the Reports page to see w
 |Redirect attachment on detection|Enable redirection (select this box)          Enter the admin account or a mailbox setup for quarantine.          Apply the above selection if malware scanning for attachments times out or error occurs (select this box).|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Set up anti-phishing policies in Microsoft Defender for Office 365](../../security/office-365-security/set-up-anti-phishing-policies.md).
+For more information, see [Set up anti-phishing policies in Microsoft Defender for Office 365](../../security/office-365-security/anti-phishing-policies-about.md).
 
 ## Watch: Protect against phishing attacks with Safe Links
 
@@ -258,7 +260,7 @@ To modify the default policy:
 |Use Safe Attachments to scan downloadable content|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
 
-For more information, see [Safe Links](../../security/office-365-security/safe-links.md).
+For more information, see [Safe Links](../../security/office-365-security/safe-links-about.md).
 
 ## Go to Intune admin center
 

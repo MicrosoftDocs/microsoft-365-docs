@@ -3,12 +3,13 @@ title: "Office 365 IP Address and URL web service"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 8/6/2019
+ms.date: 12/05/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection: 
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
@@ -47,7 +48,7 @@ As a network perimeter device vendor, you can use this web service to:
 - Get the current changes.
 
 > [!NOTE]
-> If you are using Azure ExpressRoute to connect to Office 365, please review [Azure ExpressRoute for Office 365](azure-expressroute.md) to familiarize yourself with the Office 365 services supported over Azure ExpressRoute. Also review the article [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md) to understand which network requests for Office 365 applications require Internet connectivity. This will help to better configure your perimeter security devices.
+> If you are using Azure ExpressRoute to connect to Office 365, please review [Azure ExpressRoute for Microsoft 365](azure-expressroute.md) to familiarize yourself with the Office 365 services supported over Azure ExpressRoute. Also review the article [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md) to understand which network requests for Office 365 applications require Internet connectivity. This will help to better configure your perimeter security devices.
 
 For more information, see:
 
@@ -251,13 +252,13 @@ The result from the changes web method is an array of records in which each reco
 - endpointSetId—The ID of the endpoint set record that is changed.
 - disposition—Describes what the change did to the endpoint set record. Values are _change_, _add_, or _remove_.
 - impact—Not all changes will be equally important to every environment. This element describes the expected impact to an enterprise network perimeter environment as a result of this change. This element is included only in change records of version **2018112800** and later. Options for the impact are:
-  — AddedIp – An IP address was added to Office 365 and will be live on the service soon. This represents a change you need to take on a firewall or other layer 3 network perimeter device. If you don’t add this before we start using it, you may experience an outage.
-  — AddedUrl – A URL was added to Office 365 and will be live on the service soon. This represents a change you need to take on a proxy server or URL parsing network perimeter device. If you don’t add this URL before we start using it, you may experience an outage.
-  — AddedIpAndUrl—Both an IP address and a URL were added. This represents a change you need to take on either a firewall layer 3 device or a proxy server or URL parsing device. If you don’t add this IP/URL pair before we start using it, you may experience an outage.
-  — RemovedIpOrUrl – At least one IP address or URL was removed from Office 365. Remove the network endpoints from your perimeter devices, but there’s no deadline for you to do this.
+  — AddedIp – An IP address was added to Office 365 and will be live on the service soon. This represents a change you need to take on a firewall or other layer 3 network perimeter device. If you don't add this before we start using it, you may experience an outage.
+  — AddedUrl – A URL was added to Office 365 and will be live on the service soon. This represents a change you need to take on a proxy server or URL parsing network perimeter device. If you don't add this URL before we start using it, you may experience an outage.
+  — AddedIpAndUrl—Both an IP address and a URL were added. This represents a change you need to take on either a firewall layer 3 device or a proxy server or URL parsing device. If you don't add this IP/URL pair before we start using it, you may experience an outage.
+  — RemovedIpOrUrl – At least one IP address or URL was removed from Office 365. Remove the network endpoints from your perimeter devices, but there's no deadline for you to do this.
   — ChangedIsExpressRoute – The ExpressRoute support attribute was changed. If you use ExpressRoute, you might need to take action depending on your configuration.
   — MovedIpOrUrl – We moved an IP address or Url between this endpoint set and another one. Generally no action is required.
-  — RemovedDuplicateIpOrUrl – We removed a duplicate IP address or Url but it’s still published for Office 365. Generally no action is required.
+  — RemovedDuplicateIpOrUrl – We removed a duplicate IP address or Url but it's still published for Office 365. Generally no action is required.
   — OtherNonPriorityChanges – We changed something less critical than all of the other options, such as the contents of a note field.
 - version—The version of the published endpoint set in which the change was introduced. Version numbers are of the format _YYYYMMDDNN_, where _NN_ is a natural number incremented if there are multiple versions required to be published on a single day.
 - previous—A substructure detailing previous values of changed elements on the endpoint set. This will not be included for newly added endpoint sets. Includes  _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_, and _notes_.
@@ -603,7 +604,7 @@ You can use a few different methods to get email notifications when changes to t
 
 ## Exporting a Proxy PAC file
 
-[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) is a PowerShell script that reads the latest network endpoints from the Office 365 IP Address and URL web service and creates a sample PAC file. For information on using Get-PacFile, see [Use a PAC file for direct routing of vital Office 365 traffic](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
+[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) is a PowerShell script that reads the latest network endpoints from the Office 365 IP Address and URL web service and creates a sample PAC file. For information on using Get-PacFile, see [Use a PAC file for direct routing of vital Microsoft 365 traffic](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-microsoft-365-traffic).
 
 ## Related Topics
   

@@ -7,10 +7,12 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: prlachhw, pablom
 audience: Admin
-ms.topic: article
-ms.service: o365-administration 
+ms.topic: how-to
+ms.service: microsoft-365-business 
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
@@ -118,7 +120,7 @@ You can take over a self-service purchase subscription made by a user in your or
 When you move users to a different subscription, the old subscription is automatically canceled. The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.
 
 > [!NOTE]
-> You must have an available license for each user you’re moving in the subscription that you’re moving users to.
+> You must have an available license for each user you're moving in the subscription that you're moving users to.
 
 ::: moniker range="o365-worldwide"
 
@@ -137,7 +139,7 @@ When you move users to a different subscription, the old subscription is automat
 4. On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.
 5. In the right pane, select **Move users**.
 6. Select the product that you want to move the users to, then select **Move users**.
-7. In the **Move users to** box, select **Move users**. The move process might take several minutes. Don’t close your browser while the process runs.
+7. In the **Move users to** box, select **Move users**. The move process might take several minutes. Don't close your browser while the process runs.
 8. When the move process is finished, close the **Move completed pane**.
 9. On the subscription details page, the **Subscription status** for the self-service purchased subscription shows as **Deleted**.
 

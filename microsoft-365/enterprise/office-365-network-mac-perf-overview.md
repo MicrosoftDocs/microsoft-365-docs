@@ -12,6 +12,7 @@ ms.reviewer: pandrew1
 search.appverid:
 - MET150
 ms.collection:
+- scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy

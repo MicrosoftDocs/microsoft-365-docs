@@ -10,9 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
-- M365-security-compliance
+- purview-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+- tier1
 search.appverid: 
 - MOE150
 - MET150
@@ -24,7 +25,9 @@ description: "Microsoft Purview Compliance Manager provides templates for buildi
 **In this article:** View the comprehensive list of **templates** available for creating assessments in Compliance Manager.
 
 > [!IMPORTANT]
-> The assessment templates that are available to your organization depend on your licensing agreement. [Review the details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+> The assessment templates that are included by default for your organization depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Overview
 
@@ -34,42 +37,32 @@ Templates are added to Compliance Manager as new laws and regulations are enacte
 
 ## List of templates and where to find them
 
-Below is the complete list of templates in Compliance Manager. Template names match the associated regulation or certification. Where available, links in the template names below take you to related documentation about that standard, regulation, or law.
+Below is the complete list of templates in Compliance Manager. Template names match the associated regulation or certification. Find all templates in Compliance Manager on the **Assessment templates** tab. Select a template name to view the template's description, properties, controls, and associated improvement actions.
 
-Each template (except for the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template) is available in at least one version designed for use with a specific product, such as Microsoft 365, along with a universal version that you can use to assess other products of your choice. To learn more about template options, see [Learn about assessment templates](compliance-manager-templates.md).
-
-You can also select individual templates in Compliance Manager to view more information about them, including a description of the regulation and properties of the template. Read the **About** section for a summary.
+Each template (except for the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) default template) is available in at least one version designed for use with a specific product, such as Microsoft 365, along with a universal version that you can use to assess other products of your choice. Templates that correspond to a regulation which has multiple levels or versions are treated as a single template.
 
 Jump to a section below to view templates by area or industry:
 - [Global](#global)
 - [Industry](#industry)
 - [US Government](#us-government)
 - [US States and Territories](#us-states-and-territories)
-- [Asia-Pacific Countries](#asia-pacific-countries)
+- [Asia-Pacific Countries/Regions](#asia-pacific-countriesregions)
 - [Europe, Middle East, and Africa (EMEA)](#europe-middle-east-and-africa-emea)
 - [Latin America](#latin-america)
 - [North America](#north-america)
 - [South America](#south-america)
 
-### Where to find your templates in Compliance Manager
-
-To review the templates available to your organization, go to your **Assessment templates** page. Learn more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
-
 ## Included templates
 
-One or more of the templates listed below are included as part of your licensing agreement. The Microsoft Data Protection Baseline template is included for all organizations.
+Some assessment templates are included in Compliance Manager by default, depending on subscription level:
 
-- [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
-- [European Union GDPR](/compliance/regulatory/gdpr)
-- [ISO/IEC 27001:2013](/compliance/regulatory/offering-iso-27001)
-- NIST 800-53 Revs. 4 and 5
+- **Customers at all subscription levels**: The [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) template is included for all organizations as part of their subscription.
+- **Customers at the A5/E5/G5 subscription levels**: In addition to the Microsoft Data Protection baseline, you can choose any three premium templates to use for free.
+- **US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers**: The Cybersecurity Maturity Model Certification (CMMC) template, levels 1 through 5, is included in addition to the Microsoft Data Protection Baseline template.
 
-> [!NOTE]
-> For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
+#### Preview templates
 
-## Preview templates
-
-The templates listed below are currently available for preview. Creating assessments using these templates will not count toward your total of licensed templates used.
+The templates listed below are available in preview. Creating assessments from these templates won't count toward your total of licensed templates used.
 
 - ISO 27001:2013 for Azure (Preview)
 - ISO 27001:2013 for Dynamics 365 (Preview)
@@ -84,7 +77,7 @@ The templates listed below are currently available for preview. Creating assessm
 
 ## Premium templates
 
-The templates listed below may be purchased by your organization.
+The templates listed below may be purchased by your organization. Certain licensing agreements allow for the use of three premium templates for free. Review [licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ### Global
 
@@ -272,7 +265,7 @@ The templates listed below may be purchased by your organization.
 
 ### Regional
 
-#### Asia-Pacific Countries
+#### Asia-Pacific Countries/Regions
 
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - ASD Essential 8  
@@ -302,7 +295,7 @@ The templates listed below may be purchased by your organization.
 - Japan - Act on Prohibition of Unauthorized Computer Access  
 - Japan - Common Model of Information Security Measures for Government Agencies and Related Agencies  
 - Japan - Common Standards for Information Security Measures for Government Agencies and Related Agencies  
-- Japan Privacy Mark - JIS Q 15001 : 2017  
+- Japan Privacy Mark - JIS Q 15001: 2017  
 - Japanese Act on the Protection of Personal Information (Law No. 57 of 2003)  
 - Korea - Credit Information Use And Protection Act  
 - Korea - The Act on Promotion of Information and Communications Network Utilization and Data Protection  
@@ -333,11 +326,12 @@ The templates listed below may be purchased by your organization.
 - Taiwan - Implementation Rules for the Internal Audit and Internal Control System of Electronic Payment Institutions - 2015  
 - Taiwan - Implementation Rules of Internal Audit and Internal Control System of Financial Holding Companies and Banking
 - Taiwan - Regulations Governing Approval and Administration of Financial Information Service Enterprises Engaging in Interbank Funds Transfer and Settlement  
-- Taiwan - Regulations Governing the Standards for Information System and Security Management of Electronic Payment Institutions  
-- Taiwan Personal Data Protection Act (PDPA)  
+- Taiwan - Regulations Governing the Standards for Information System and Security Management of Electronic Payment Institutions
+- Taiwan – Trade Secrets Act 
+- Taiwan Personal Data Protection Act (PDPA)
 - Thailand PDPA  
-- Trade Secrets Act of The Republic of China  
-- Law of The Republic of Uzbekistan on Personal Data  
+- Taiwan – Trade Secrets Act
+- Uzbekistan - Law of The Republic of Uzbekistan on Personal Data  
 - Vietnam - Consumer Rights Protection Law  
 - Vietnam - Law of Cybersecurity  
 - Vietnam - Law of Network Information Security

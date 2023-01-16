@@ -10,13 +10,14 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 12/07/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # The simplified configuration process in Microsoft Defender for Business
@@ -44,5 +45,6 @@ The following table describes each experience.
 
 ## Next steps
 
-- [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
-- [Get started using Microsoft Defender for Business](mdb-get-started.md).
+- If you're ready to start your trial subscription, see [Trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md).
+- If you're ready to use the simplified setup experience, see [Use the setup wizard in Microsoft Defender for Business](mdb-use-wizard.md).
+- If you want to see the overall setup process, see [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).

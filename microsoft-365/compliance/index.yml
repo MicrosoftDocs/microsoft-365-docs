@@ -10,7 +10,7 @@ metadata:
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: m365-security-compliance
+  ms.collection: purview-compliance
   ms.custom: intro-hub-or-landing
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
@@ -82,7 +82,7 @@ landingContent:
             url: /microsoft-365/compliance/information-protection-solution
           - text: Deploy a data governance solution
             url: /microsoft-365/compliance/data-governance-solution
-          - text: Deploy information protection for data privacy regulations
-            url: /microsoft-365/solutions/information-protection-deploy
+          - text: Manage data privacy and data protection
+            url: /microsoft-365/solutions/data-privacy-protection
           - text: Explore information protection & compliance illustrations
             url: /microsoft-365/solutions/productivity-illustrations

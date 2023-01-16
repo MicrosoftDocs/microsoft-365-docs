@@ -10,21 +10,19 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
-ms.reviewer: shlomiakirav
+ms.date: 12/02/2022
+ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security
 - m365-initiative-defender-business
+- tier1
 ---
 
 # Review remediation actions in the Action center
 
-As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval. Examples of remediation actions include: 
-- Send a file to quarantine
-- Stop a process from running
-- Remove a scheduled task
+As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval. Examples of remediation actions include stopping a process from running or removing a scheduled task.
 
 All remediation actions are tracked in the Action center.
 
@@ -55,7 +53,7 @@ The following table lists remediation actions that are available.
 | Source  | Actions  |
 |---------|---------|
 | [Automated investigations](../defender-endpoint/automated-investigations.md)      |<ul><li>Quarantine a file</li><li>Remove a registry key</li><li>Kill a process</li><li>Stop a service</li><li>Disable a driver</li><li>Remove a scheduled task </li></ul> |
-| [Manual response actions](../defender-endpoint/respond-machine-alerts.md)   |<ul><li>Run antivirus scan</li><li>Isolate a device</li><li>Stop and quarantine</li><li>Add an indicator to block or allow a file</li></ul> |
+| [Manual response actions](../defender-endpoint/respond-machine-alerts.md)   |<ul><li>Run antivirus scan</li><li>Isolate a device</li><li>Add an indicator to block or allow a file</li></ul> |
 | [Live response](../defender-endpoint/live-response.md)   |<ul><li>Collect forensic data</li><li>Analyze a file</li><li>Run a script</li><li>Send a suspicious entity to Microsoft for analysis</li><li>Remediate a file </li><li>Proactively hunt for threats</li></ul>|
 
 ## Next steps

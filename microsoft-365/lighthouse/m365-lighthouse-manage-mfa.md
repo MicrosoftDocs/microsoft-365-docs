@@ -4,12 +4,14 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms-reviewer: ragovind
+ms.reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
+- scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom:
@@ -56,11 +58,10 @@ To enable MFA through Conditional Access, see [Tutorial: Secure user sign-in eve
 4. Select all other users in the list who need to register for MFA, and then select **Create email**.
 
 > [!TIP]
-> If any of the user accounts in the list are emergency access accounts or service accounts for which you don't want to require MFA, select those user accounts, and then select **Exclude users**. The excluded user accounts will no longer appear in the list of users not registered for MFA.
+> Select the **Admin**, **Guest**, or **Members** counts to filter the list by type. If any of the user accounts in the list are emergency access accounts or service accounts for which you don't want to require MFA, select those user accounts, and then select **Exclude users**. The excluded user accounts will no longer appear in the list of users not registered for MFA.
 
 > [!NOTE]
 > If any shared mailbox accounts or inactive user accounts appear in the list of users not registered for MFA, we recommend that you block signin for those accounts so they'll no longer appear in this list.
-
 
 Lighthouse opens your default email client and prepopulates the email message with instructions to register for MFA. All the selected users will be included on the BCC line. If you prefer to individually email users, you can select the email icon next to the username.
 

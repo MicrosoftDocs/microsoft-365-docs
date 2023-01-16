@@ -10,13 +10,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
+- purview-compliance
+- tier1
 description: "After you set up Customer Key, learn how to manage it by restoring AKV keys, and managing permissions and creating and assigning data encryption policies."
 ---
 
 # Manage Customer Key
 
 After you've set up Customer Key, you'll need to create and assign one or more data encryption policies (DEP). Once you've assigned your DEPs, you can manage your keys as described in this article. Learn more about Customer Key in the related topics.
+
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Create a DEP for use with multiple workloads for all tenant users
 

@@ -6,6 +6,7 @@ metadata:
   keywords: wdsi, software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
   search.product: eADQiWindows 10XVcnh
   ms.service: microsoft-365-security
+  ms.subservice: intelligence
   ms.mktglfcycl: deploy
   ms.sitesec: library
   ms.pagetype: security
@@ -14,7 +15,7 @@ metadata:
   ms.localizationpriority: medium
   manager: dansimp
   audience: ITPro
-  ms.collection: M365-security-compliance
+  ms.collection: m365-security
   ms.topic: faq
   ms.technology: m365d
 title: Software developer FAQ

@@ -24,6 +24,8 @@ To learn more about sensitivity labels and their behavior for sites and Microsof
 
 See the following scenarios for best practices when migrating from classic AAD classification to the sensitivity labels.
 
+[!INCLUDE [purview-preview](../includes/purview-preview.md)]
+
 ## Scenario 1: Tenant never used classic AAD classifications or sensitivity labels for documents and emails
 
 - Tenant Admin enables sensitivity labels for groups by setting the tenant flag “EnableMIPLabels” to true via AAD powershell cmdlet.

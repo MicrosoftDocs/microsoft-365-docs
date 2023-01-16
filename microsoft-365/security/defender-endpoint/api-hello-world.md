@@ -12,8 +12,10 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
-ms.topic: article
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -156,7 +158,7 @@ Done! You have successfully registered an application!
   $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
   # The URL contains the type of query and the time filter we create above
-  # Read more about other query options and filters at   Https://TBD- add the documentation link
+  # Read more about [other query options and filters](get-alerts.md).
   $url = "https://api.securitycenter.microsoft.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
 
   # Set the WebRequest headers

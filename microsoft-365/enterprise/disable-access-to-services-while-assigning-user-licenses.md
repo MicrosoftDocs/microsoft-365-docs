@@ -6,7 +6,9 @@ manager: scotv
 ms.date: 04/24/2020
 audience: Admin
 ms.topic: article
-ms.collection: Ent_O365
+ms.collection:
+- scotvorg 
+- Ent_O365
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:

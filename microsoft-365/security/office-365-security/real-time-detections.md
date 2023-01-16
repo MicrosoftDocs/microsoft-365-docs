@@ -6,11 +6,11 @@ ms.author: dansimp
 author: MSFTTracyp
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.date: 05/05/2021
 ms.localizationpriority: medium
 ms.collection:
-  - M365-security-compliance
+  - m365-security
   - m365initiative-defender-office365
 description: Use Explorer or Real-time detections to investigate and respond to threats efficiently.
 ms.custom: 
@@ -35,7 +35,7 @@ In this article:
 - [Required licenses and permissions](#required-licenses-and-permissions)
 
 > [!NOTE]
-> This is part of a **3-article series** on **Explorer (also known as Threat Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Explorer](threat-hunting-in-threat-explorer.md) and [Email security with Explorer](email-security-in-microsoft-defender.md).
+> This is part of a **3-article series** on **Explorer (also known as Threat Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Explorer](threat-explorer-threat-hunting.md) and [Email security with Explorer](email-security-in-microsoft-defender.md).
 
 This article explains the difference between Explorer and real-time detections reporting, updated experience with Explorer and real-time detections where you can toggle between old and new experiences, and the licenses and permissions that are required.
 
@@ -55,7 +55,7 @@ For more information, see [Email security with Explorer](email-security-in-micro
 ## Differences between Explorer and Real-time detections
 
 - *Real-time detections* is a reporting tool available in Defender for Office 365 Plan 1. *Threat Explorer* is a threat hunting and remediation tool available in Defender for Office 365 Plan 2.
-- The Real-time detections report allows you to view detections in real time. Threat Explorer does this as well, but it provides additional details for a given attack, such as highlighting attack campaigns, and gives security operations teams the ability to remediate threats (including triggering an [Automated Investigation and Response investigation](automated-investigation-response-office.md).
+- The Real-time detections report allows you to view detections in real time. Threat Explorer does this as well, but it provides additional details for a given attack, such as highlighting attack campaigns, and gives security operations teams the ability to remediate threats (including triggering an [Automated Investigation and Response investigation](air-about-office.md).
 - An *All email* view is available in Threat Explorer, but not included in the Real-time detections report.
 - Rich filtering capabilities and remediation actions are included in Threat Explorer. For more information, see [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
@@ -165,13 +165,13 @@ To view and use Explorer *or* Real-time detections, you need the following permi
 
 To learn more about roles and permissions, see the following articles:
 
-- [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
+- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
 - [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 
 ## More information
 
 - [Threat Explorer collect email details on the email entity page](mdo-email-entity-page.md)
 - [Find and investigate malicious email that was delivered](investigate-malicious-email-that-was-delivered.md)
-- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)
-- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
-- [Automated investigation and response in Microsoft Threat Protection](automated-investigation-response-office.md)
+- [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)
+- [Threat protection status report](reports-email-security.md#threat-protection-status-report)
+- [Automated investigation and response in Microsoft Threat Protection](air-about-office.md)
