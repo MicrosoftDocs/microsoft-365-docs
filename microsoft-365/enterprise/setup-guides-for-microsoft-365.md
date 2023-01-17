@@ -7,6 +7,7 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
+ms.date: 01/06/2023
 ms.collection:
 - scotvorg
 - Ent_O365
@@ -30,6 +31,9 @@ Microsoft 365 and Office 365 setup guides give you tailored guidance and resourc
 
 > [!NOTE]
 > You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Administrator role can use the guides to change settings in the tenant.
+
+> [!IMPORTANT]
+> Any information saved before January 10, 2023, within each guide listed on this page has been reset due to EU data regulations. This includes selections, task assignments, and progress status. We apologize for any inconvenience this might cause.
 
 ## How to access setup guides in the Microsoft 365 admin center
 
@@ -222,6 +226,10 @@ The [Teams Phone setup guide](https://aka.ms/teamsphonesetupguide) helps you sta
 ### SharePoint setup guide
 
 The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, and drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, and enable the security settings for your SharePoint environment.
+
+### Surface Hub and Microsoft Teams Rooms setup guide
+
+The [Surface Hub and Microsoft Teams Rooms setup guide](https://admin.microsoft.com/#/modernonboarding/surfacehubsetupguide) will customize your experience based on your environment. If you're hosted in Exchange Online and using Microsoft Teams, the guide will automatically create your device account with the correct settings.
 
 ### OneDrive setup guide
 
