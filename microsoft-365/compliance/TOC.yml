@@ -1739,12 +1739,12 @@
           href: compliance-manager-assessments.md
         - name: Learn about assessment templates
           href: compliance-manager-templates.md
-        - name: Create assessment templates
+        - name: Create your own template
           href: compliance-manager-templates-create.md
-        - name: Extend assessment templates
-          href: compliance-manager-templates-extend.md
-        - name: Modify assessment templates
+        - name: Modify a tempalte you created
           href: compliance-manager-templates-modify.md
+        - name: Extend a Microsoft template
+          href: compliance-manager-templates-extend.md
         - name: Format template data in Excel
           href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list

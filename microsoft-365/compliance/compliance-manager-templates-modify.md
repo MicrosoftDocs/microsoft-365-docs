@@ -35,6 +35,9 @@ To learn more about the format of this spreadsheet, see [Format your template da
 
 From your **assessment templates** page, select the template you want to modify, which will bring up its details page. Then select **Export to Excel**. An Excel file with all your template data will download. Save the file to your local machine.
 
+> [!NOTE]
+> This template modification process can only be used for a custom template you've created. It can't be used to make changes to a Microsoft template, which is handled by the [Microsoft template extension process](compliance-manager-templates-extend.md).
+
 To work with this file, jump to a section below to quickly find the instructions you need:
 
 - [Edit the main template attributes](#edit-the-main-template-attributes)
