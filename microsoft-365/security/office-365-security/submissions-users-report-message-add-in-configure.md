@@ -6,8 +6,9 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
+ms.reviewer: dhagarwal
 ms.topic: how-to
-
+ms.date: 12/15/2022
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -25,7 +26,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -99,7 +100,7 @@ After the add-in is installed and enabled, users will see the following icons:
 
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+- Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 - For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
 
@@ -180,14 +181,14 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 > [!NOTE]
 > It could take up to 24 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center at <https://admin.microsot.com>, go to **Settings** \> **Add-ins**, and select **Deploy Add-In**.
+1. In the Microsoft 365 admin center at <https://portal.office365.us/adminportal>, go to **Organization** \> **Add-ins**, and select **Deploy Add-In**.
 
 2. In the **Deploy a new add-in** flyout that opens, click **Next**, and then select **Upload custom apps**.  
 
 3. Select **I have a URL for the manifest file**. Use the following URLs:
 
    - **Report Message**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml>
-   - **Report Phishing**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml>
+   - **Report Phishing**: <https://ipagave.azurewebsites.net/ReportPhishingManifest/ReportPhishingAzure.xml>
 
 4. Choose which users will have access to the add-in, select a deployment method, and then select **Deploy**.
 
