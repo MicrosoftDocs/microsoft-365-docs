@@ -33,7 +33,8 @@ search.appverid: met150
 For more information on Microsoft Defender for Endpoint on other operating systems:
 
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
-- [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)</br>
+- [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
+
 
 **Mac devices to soon receive built-in protection**
 
