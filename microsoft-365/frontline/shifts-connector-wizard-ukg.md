@@ -71,7 +71,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 ### Create a connection
 
 1. In the left navigation of the [Microsoft 365 admin center](https://admin.microsoft.com/), choose **Setup**, and then under **Featured collections**, select **Frontline workers**.
-1. Select **Connector Management Console**. Here, you can learn more about Shifts connectors and the frontline worker and manager experience when you connect Shifts to your WFM system.
+1. Select **Manage Shifts connectors**. Here, you can learn more about Shifts connectors and the frontline worker and manager experience when you connect Shifts to your WFM system.
     :::image type="content" source="media/shifts-connector-wizard-get-started.png" alt-text="Screenshot of the details page for the Shifts connector wizard in the Microsoft 365 admin center." lightbox="media/shifts-connector-wizard-get-started.png":::
 1. When you're ready, select **Add connection**.
 1. In the Choose your connector pane, choose **UKG Dimensions**, and then select **Next** to create a UKG Dimensions connection.
