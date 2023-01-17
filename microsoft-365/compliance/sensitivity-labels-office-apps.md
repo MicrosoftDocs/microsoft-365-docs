@@ -328,7 +328,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 ## Scope labels to just Word, Excel, and PowerPoint, or to just Outlook
 
 > [!NOTE]
-> This capability is currently rolling out for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions that support this feature by using the [capabilities tables](sensitivity-labels-versions.md#support-for-sensitivity-label-capabilities-in-apps), and the row **Scope labels to files or emails**.
+> This capability is currently rolling out for built-in labeling, and in various stages of release across the platforms. Identify the minimum versions that support this feature by using the [capabilities tables](sensitivity-labels-versions.md), and the row **Scope labels to files or emails**.
 
 This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance center. When you define the scope for the label, next to the **Items** check box, select **More options**.
 
