@@ -48,8 +48,6 @@ description: "Best practices to protect your small or medium sized business from
 
 Microsoft 365 for business plans, such as Microsoft 365 Business Basic, Standard, and Premium, include security capabilities, such as antiphishing, antispam, and antimalware protection. Microsoft 365 Business Premium includes even more capabilities, such as device security, advanced threat protection, and information protection. This article describes how to secure your data with Microsoft 365 for business. This article also includes information to [compare capabilities across Microsoft 365 for business plans](#comparing-microsoft-365-for-business-plans).
 
-:::image type="content" source="../../media/top-10-ways-secure-data.png" alt-text="Diagram listing top 10 ways to secure business data.":::
-
 | Step | Task | Description |
 |:--:|:---|:---|
 | 1 | **[Use multi-factor authentication](multi-factor-authentication-microsoft-365.md)**. | [Multi-factor authentication](multi-factor-authentication-microsoft-365.md) (MFA), also known as two-step verification, requires people to use a code or authentication app on their phone to sign into Microsoft 365, and is a critical first step to protecting your business data. Using MFA can prevent hackers from taking over if they know your password.<br/><br/>See [security defaults and MFA](../../business-premium/m365bp-conditional-access.md). |
