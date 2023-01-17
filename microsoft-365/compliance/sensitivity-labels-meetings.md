@@ -89,11 +89,11 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 **Specific to Outlook:**
 
-- If somebody forwards a meeting invite from an email client other than Outlook, although any applied encryption persists, the sensitivity label is dropped.
-
 - No support for mailboxes on-premises; user mailboxes must be in Exchange Online.
 
 - No support for group calendar meeting invites; participants must be specific users.
+
+- As with labeled and encrypted email, if somebody forwards a meeting invite from an email client other than Outlook, any applied encryption persists but information about the sensitivity label is removed from the email headers.
 
 - When a mobile email client receives a labeled and encrypted meeting invite, the invite message is decrypted inline if the client supports encrypted email. However, in the calendar, the invite can't be decrypted inline and displays a link to view it in the encryption portal.
 
