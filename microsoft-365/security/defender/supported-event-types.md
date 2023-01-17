@@ -63,7 +63,7 @@ The following table only includes the list of the tables supported in the stream
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)**|GA |GA |GA |GA |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)**|GA |GA |GA |GA |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)**|GA |GA |GA |GA |
-| **[UrlClickEvents](advanced-hunting-urlclickevents-table.md)**|GA |GA |GA |GA |
+| **[UrlClickEvents](advanced-hunting-urlclickevents-table.md)**|Public preview |Not available |Not available |Not available |
 
 ## Related topics
 
