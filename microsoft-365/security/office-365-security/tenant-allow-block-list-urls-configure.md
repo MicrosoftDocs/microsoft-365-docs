@@ -178,7 +178,9 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ## Use the Microsoft 365 Defender portal to modify allow or block entries for URLs in the Tenant Allow/Block List
 
-When you modify allow or block entries for URLs in the Tenant Allow/Block list, you can only modify the expiration date and notes.
+When you modify the domains and email addresses in the Tenant Allow/Block list, 
+- for blocks, you can modify the expiration date and notes
+- for allows, you can only modify the notes.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -188,8 +190,7 @@ When you modify allow or block entries for URLs in the Tenant Allow/Block list, 
 
 4. The following values are available in the **Edit URL** flyout that appears:
 
-   - **Remove allow entry after** or **Remove block entry after**:
-     - You can extend allow entries for a maximum of 30 days after the creation date.
+   - **Remove block entry after**:
      - You can extend block entries for a maximum of 90 days after the creation date or set them to **Never expire**.
 
    - **Optional note**
