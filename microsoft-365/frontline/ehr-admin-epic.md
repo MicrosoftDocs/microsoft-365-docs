@@ -27,7 +27,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ms.reviewer: ansantam 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Epic EHR system. 
-ms.date: 12/15/2022
+ms.date: 01/11/2023
 ---
 
 # Virtual Appointments with Teams - Integration into Epic EHR
@@ -266,6 +266,10 @@ Key features of the patient experience:
 
 > [!NOTE]
 > Epic, MyChart, Haiku, and Canto are trademarks of Epic Systems Corporation.
+
+## Troubleshoot Teams EHR connector setup and integration
+
+If you're experiencing issues when setting up the integration, see [Troubleshoot Teams EHR connector setup and configuration](ehr-connector-troubleshoot-setup-configuration.md) for guidance on how to resolve common setup and configuration issues.
 
 ## Get insight into Virtual Appointments usage
 
