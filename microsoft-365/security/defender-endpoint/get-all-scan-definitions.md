@@ -11,7 +11,7 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
@@ -101,20 +101,20 @@ Here is an example of the response.
 "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#DeviceAuthenticatedScanDefinitions",
     "value": [
     {
-    "id": "60c4vv57-asdf-3454-a456-2e45t9d79ec9d", 
-    "scanType": "Windows", 
-    "scanName": "Test Windows scan", 
-    "isActive": true, 
-    "target": "127.0.0.1", 
+    "id": "60c4vv57-asdf-3454-a456-2e45t9d79ec9d",
+    "scanType": "Windows",
+    "scanName": "Test Windows scan",
+    "isActive": true,
+    "target": "127.0.0.1",
     "orgId": "47d21a0c-cccd-45d3-bffa-a93dbc0bfcaa",
-    "intervalInHours": 1, 
+    "intervalInHours": 1,
     "createdBy": "test@contoso.com",
     "targetType": "Ip",
     "scanAuthenticationParams": {
-        "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
-        "type": "Kerberos", 
-        "username": "username", 
-        "domain": "password",
+        "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams",
+        "type": "Kerberos",
+        "username": "username",
+        "domain": "password",
         "isGmsaUser": true
         },
     "scannerAgent": {
@@ -127,26 +127,26 @@ Here is an example of the response.
         "status": "Fail",
         "failureReason": null,
         "executionDateTime": "2021-12-19T20:06:55.2295854Z"
-       }, 
-    {    
+       },
+    {
     "id": "60c4aa57-ioi3-1290-7ff6-09fr14792a92",
     "scanType": "Network",
     "scanName": "Network-test-scan",
-    "isActive": true, 
-    "target": "127.0.0.1", 
+    "isActive": true,
+    "target": "127.0.0.1",
     "orgId": "asdf781a0c-792d-46d3-bbea-a93dbc0bfcaa",
-    "intervalInHours": 1, 
+    "intervalInHours": 1,
     "createdBy": "test@contoso.com",
     "targetType": "Ip",
     "scanAuthenticationParams": {
-    "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams"", 
-        type": "AuthPriv", 
-        "username": "username", 
-        "authProtocol": "authProtocol", 
-        "authPassword": "authPassword", 
-        "privProtocol": "privProtocol", 
-        "privPassword": "privPassword", 
-        "communityString": "community-string" 
+    "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams"",
+        type": "AuthPriv",
+        "username": "username",
+        "authProtocol": "authProtocol",
+        "authPassword": "authPassword",
+        "privProtocol": "privProtocol",
+        "privPassword": "privPassword",
+        "communityString": "community-string"
             },
     "scannerAgent": {
     "id": "4asdff0c-3344-46d3-bxxe-a9334rtgfcaa_eb6df89dfdf9032f61eedf14c4b90f77",
@@ -158,9 +158,9 @@ Here is an example of the response.
     "status": "Fail",
     "failureReason": null,
     "executionDateTime": "2022-12-21T14:35:55.6702703Z"
-        }        
+        }
     },
-     }    
+     }
     ]
 }
 ```
