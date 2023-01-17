@@ -33,6 +33,9 @@ ms.date: 05/03/2021
 
 Customers in India receive Web Direct (Azure and Microsoft 365) invoices billed by Microsoft Regional Sales Pte Ltd. Singapore (MRS) and make cross-border payments to Singapore to settle the invoice. If you withheld taxes when remitting the payment, this article explains the process for claiming a credit for the Withholding Tax (WHT) in your account with MRS.
 
+> [!IMPORTANT]
+> Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
+
 ## For invoice pay customers who pay by check or wire
 
 If you withheld tax when remitting payment to MRS and deposited the withheld tax with the Income Tax Department, you must submit a WHT request to settle the tax amount withheld in your account.
