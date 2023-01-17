@@ -67,7 +67,6 @@ When you're satisfied with the items you've collected in a collection estimate a
       - **Add only collection sample to review set**: Select this option to add a sample of the collection results to the review set instead of adding all results. If you select this option, select **Edit sample parameters** and choose one of the following options:
 
          - **Sample based on confidence**: Items from the collection are added to the review set will be determined by the statistical parameters that you set. If you typically use a confidence level and confidecne interval when sampling results, specify them in the drop-down boxes. Otherwise, use the default settings.
-
          - **Randomly sample**: Items from the collection are added to the review set based on a random selection of the specified sample size percentage of the total number of items returned by the search.
 
 7. Select **Submit** to commit the collection to the review set.

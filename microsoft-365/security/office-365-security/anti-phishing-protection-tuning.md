@@ -36,7 +36,7 @@ If your subscription includes Microsoft Defender for Office 365, you can use [Of
 
 - [Safe Links in Microsoft Defender for Office 365](safe-links-policies-configure.md)
 
-- [Safe Attachments in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
+- [Safe Attachments in Microsoft Defender for Office 365](safe-attachments-policies-configure.md)
 
 - [Anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 

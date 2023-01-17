@@ -79,6 +79,11 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | `AuthenticationDetails` | `string` | List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF or a combination of multiple authentication types (CompAuth) |
 | `BulkComplaintLevel` | `int` | Threshold assigned to email from bulk mailers, a high bulk complaint level (BCL) means the email is more likely to generate complaints, and thus more likely to be spam |
+| `LatestDeliveryLocation`* | `string` | Last known location of the email |
+|`LatestDeliveryAction`* | `string` | Last known action attempted on an email by the service or by an admin through manual remediation |
+
+> [!NOTE]
+>\* The `LatestDeliveryLocation` and `LatestDeliveryAction` columns are **not** available in the Streaming API. 
 
 ## Related topics
 

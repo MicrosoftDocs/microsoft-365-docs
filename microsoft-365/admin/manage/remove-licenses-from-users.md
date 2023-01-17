@@ -24,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "The method you use to unassign product licenses depends on whether you unassign licenses from specific users or from a specific product."
-ms.date: 07/12/2022
+ms.date: 01/05/2023
 ---
 
 # Unassign Microsoft 365 licenses from users
@@ -126,7 +126,7 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ## Next steps
 
-If you’re not going to [reassign the unused licenses to other users](assign-licenses-to-users.md), consider [removing the licenses from your subscription](../../commerce/licenses/buy-licenses.md) so that you’re not paying for more licenses than you need.
+If you're not going to [reassign the unused licenses to other users](assign-licenses-to-users.md), consider [removing the licenses from your subscription](../../commerce/licenses/buy-licenses.md) so that you're not paying for more licenses than you need.
 
 ## Related content
 

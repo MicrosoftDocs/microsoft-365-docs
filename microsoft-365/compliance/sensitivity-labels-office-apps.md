@@ -404,7 +404,7 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 
 This configuration is not available in the Microsoft Purview compliance portal. You must use PowerShell advanced settings with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-Use these settings only when you have a working [S/MIME deployment](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) and want a label to automatically apply this protection method for emails rather than the [default protection that uses Rights Management encryption from Azure Information Protection](encryption-sensitivity-labels.md). The resulting protection will be the same as when a user manually selects S/MIME options from Outlook.
+Use these settings only when you have a working [S/MIME deployment](/exchange/security-and-compliance/smime-exo/smime-exo) and want a label to automatically apply this protection method for emails rather than the [default protection that uses Rights Management encryption from Azure Information Protection](encryption-sensitivity-labels.md). The resulting protection will be the same as when a user manually selects S/MIME options from Outlook.
 
 |Configuration  |Advanced setting key/value |
 |---------|---------|
