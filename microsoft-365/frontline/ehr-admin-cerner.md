@@ -27,7 +27,7 @@ appliesto:
   - Microsoft 365 for frontline workers
 ms.reviewer: ansantam 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Cerner EHR system.
-ms.date: 01/05/2023
+ms.date: 01/11/2023
 ---
 
 # Virtual Appointments with Teams - Integration into Cerner EHR
@@ -164,6 +164,10 @@ Key features of the patient experience
 - Patients aren't required to create a Microsoft account or sign in to launch a visit.
 - Patients are placed in a lobby until the provider joins and admits them.
 - Patients can test their video and microphone in the lobby before joining the appointment.
+
+## Troubleshoot Teams EHR connector setup and integration
+
+If you're experiencing issues when setting up the integration, see [Troubleshoot Teams EHR connector setup and configuration](ehr-connector-troubleshoot-setup-configuration.md) for guidance on how to resolve common setup and configuration issues.
 
 ## Get insight into Virtual Appointments usage
 
