@@ -66,7 +66,7 @@ If a user reports any of the above symptoms, you should perform further investig
 
 ## How to secure and restore email function to a suspected compromised Microsoft 365 account and mailbox
 
-> [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
+<!--- > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false] --->
 
 Even after you've regained access to your account, the attacker may have added back-door entries that enable the attacker to resume control of the account.
 
