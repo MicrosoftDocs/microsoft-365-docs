@@ -36,7 +36,7 @@ The Tenants page also includes the following options:
 
 ## Tenant list
 
-The tenant list provides insights into the different tenants you have a contract with, including their tenant Lighthouse onboarding status. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, and drill down to learn more about a given tenant and the status of its deployment plan.
+The tenant list provides insights into the different tenants you have a contract with, including their tenant Lighthouse management status. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, and drill down to learn more about a given tenant and the status of its deployment plan.
 
 After your tenants meet the [Lighthouse onboarding requirements](m365-lighthouse-requirements.md), its status will show as **Active** in the tenant list.
 
