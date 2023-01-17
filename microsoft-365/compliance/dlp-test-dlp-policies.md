@@ -19,15 +19,15 @@ description: "Learn how to use the Test-DlpPolicies cmdlet on items in SharePoin
 
 # Test your Data Loss Prevention policies (preview)
  
-Testing and tuning the behavior and impact of your Microsoft Purview Data Loss Prevention (DLP) policies is a necessary element of your DLP policy deployment. This article introduces you to some of the basic methods you can use to test policies in your DLP environment.
+You should test and tune the behavior of your Microsoft Purview Data Loss Prevention (DLP) policies as part of your DLP policy deployment. This article introduces you to some of the basic methods you can use to test policies in your DLP environment.
 
 ## Test mode
 
-When you deploy a new policy, [you should run it in test mode](dlp-overview-plan-for-dlp.md#policy-deployment) and then use the [view the reports for](view-the-dlp-reports.md) and any [alerts](dlp-alerts-dashboard-learn.md) to assess the impact. Test mode allows you to see the impact of an individual policy on all the items that are in the policies scope. You use it to find out what items match a policy.
+When you deploy a new policy, [you should run it in test mode,](dlp-overview-plan-for-dlp.md#policy-deployment) and then use the [view the reports for](view-the-dlp-reports.md) and any [alerts](dlp-alerts-dashboard-learn.md) to assess the impact. Test mode allows you to see the impact of an individual policy on all the items that are in the policies scope. You use it to find out what items match a policy.
 
 ## Test-DlpPolicies (preview)
 
-**Test-DlpPolicies** is a cmdlet that allows you to see what Sharpoint Online and OneDrive for Business scoped DLP policies match/don't match an individual item in SharePoint Online or OneDrive for Business. 
+**Test-DlpPolicies** is a cmdlet that allows you to see what SharePoint Online and OneDrive for Business scoped DLP policies match/don't match an individual item in SharePoint Online or OneDrive for Business. 
 
 ### Before you begin
 
@@ -97,20 +97,20 @@ For detailed syntax and parameter information, see [Test-DlpPolicies](/powershel
 
 ### Interpret the report
 
-The report is sent to the smtp address you passed the the Test-DlpPolicies PowerShell command. There are multiple fields, here are explanations of the most important ones.
+The report is sent to the smtp address you passed the Test-DlpPolicies PowerShell command. There are multiple fields, here are explanations of the most important ones.
 
 
 |Field name  |Means  |
 |---------|---------|
-|Classification ID     |The sensitive information type (SIT) the item is categorized as.         |
-|Confidence     |The [confidence level](/sensitive-information-type-learn-about.md#more-on-confidence-levels) of the SIT.         |
-|Count     |The total number of times the SIT value was found in the item, this includes duplicates.          |
-|Unique Count     |The number SIT values found in the item with duplicates eliminated.         |
-|Policy Details     |The name and GUID of the policy that was evaluated.         |
-|Rules - Rule Details     |The DLP rule name and GUID.        |
-|Rules - Predicates - Name     |The condition defined in the DLP rule.         |
-|Rules - Predicates - IsMatch     | Whether the item matched the conditions.        |
-|Predicates - Past Actions    |Any actions, like notify user, block, block with override that have been taken on the item.         |
-|Predicates - Rule's Actions     |The action defined in the DLP rule.         |
-|Predicates - IsMatched     | Whether the item matched the rule.        |
-|IsMatched     |Whether the item matched the overall policy.         |
+|Classification ID     |The sensitive information type (SIT) the item is categorized as         |
+|Confidence     |The [confidence level](/sensitive-information-type-learn-about.md#more-on-confidence-levels) of the SIT         |
+|Count     |The total number of times the SIT value was found in the item, this includes duplicates          |
+|Unique Count     |The number SIT values found in the item with duplicates eliminated         |
+|Policy Details     |The name and GUID of the policy that was evaluated         |
+|Rules - Rule Details     |The DLP rule name and GUID        |
+|Rules - Predicates - Name     |The condition defined in the DLP rule         |
+|Rules - Predicates - IsMatch     | Whether the item matched the conditions        |
+|Predicates - Past Actions    |Any actions, like notify user, block, block with override that 's been taken on the item         |
+|Predicates - Rule's Actions     |The action defined in the DLP rule         |
+|Predicates - IsMatched     | Whether the item matched the rule        |
+|IsMatched     |Whether the item matched the overall policy         |
