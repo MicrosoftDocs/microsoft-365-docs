@@ -178,7 +178,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ## Use the Microsoft 365 Defender portal to modify allow or block entries for URLs in the Tenant Allow/Block List
 
-When you modify the domains and email addresses in the Tenant Allow/Block list, 
+When you modify the URLs in the Tenant Allow/Block list, 
 - for blocks, you can modify the expiration date and notes
 - for allows, you can only modify the notes.
 
