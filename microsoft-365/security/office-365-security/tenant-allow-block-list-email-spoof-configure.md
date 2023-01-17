@@ -192,9 +192,10 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ### Use the Microsoft 365 Defender portal to modify allow or block entries for domains and email addresses in the Tenant Allow/Block List
 
-When you modify the domains and email addresses in the Tenant Allow/Block list, 
-- for blocks, you can modify the expiration date and notes
-- for allows, you can only modify the notes.
+You can make the following modifications to entries for domains and email addresses in the Tenant Allow/Block list:
+
+- **Block enries**: The expiration date and notes.
+- **Allow entries**: Notes.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -203,10 +204,7 @@ When you modify the domains and email addresses in the Tenant Allow/Block list,
 3. On the **Domains & addresses** tab, select the check box of the entry that you want to modify, and then click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** button that appears.
 
 4. The following settings are available in the **Edit domain & addresses** flyout that appears:
-
-   - **Remove block entry after**:
-     - You can extend block entries for a maximum of 90 days after the creation date or set them to **Never expire**.
-
+   - **Remove block entry after**: You can extend block entries for a maximum of 90 days after the creation date or set them to **Never expire**.
    - **Optional note**
 
    When you're finished, click **Save**.
