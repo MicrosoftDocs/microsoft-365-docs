@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 01/09/2023
+ms.date: 01/17/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
