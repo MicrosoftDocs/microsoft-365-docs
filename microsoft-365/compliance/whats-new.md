@@ -38,6 +38,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## January 2023
+
+### Sensitivity labels
+- **Rolling out in preview**: As a parity feature for the AIP add-in, built-in labeling for Windows supports the configuration of a [default label for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label).
+- The earliest version for the AIP add-in to be [disabled by default in Office apps](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) for the Current Channel and Monthly Enterprise Channeland is now version 2302. The expected version for the Semi-Annual Channel hasn't changed.
+
 ## December 2022
 
 ### Communication compliance
