@@ -31,15 +31,15 @@ When you deploy a new policy, [you should run it in test mode,](dlp-overview-pla
 
 ### Before you begin
 
-- You must be able to connect to [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
-- You must have a valid smtp address to send the report to. For example: **dlp_admin<!--no address-->@contoso.com**.
+- You must be able to connect to [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
+- You must have a valid smtp address to send the report to. For example: `dlp_admin@contoso.com`
 - You must get the site ID where the item is located.
 - You must have the direct link path to the item.
 
 > [!IMPORTANT]
 >
 > - Test-DlpPolicies only works for items that are in SharePoint Online (SPO) or OneDrive for Business (ODB).
->- It will only report results for policies that include SharePoint Online alone, OneDrive alone or SharePoint and OneDrive in their scope.
+> - It will only report results for policies that include SharePoint Online alone, OneDrive alone or SharePoint and OneDrive in their scope.
 > - Test-DlpPolices works only with simple conditions. It doesn't work with complex, grouped, or nested conditions.
 
 ### Use Test-DlpPolices
@@ -48,34 +48,32 @@ To see which DLP policies an item will match, follow these steps:
 
 #### Get the direct link path to the item
 
-1. Open the SharePoint or OneDrive folder in a browser
+1. Open the SharePoint or OneDrive folder in a browser.
 
-1. Select the files ellipsis and select **details**
+1. Select the files ellipsis and select **details**.
 
 1. In the details pane, scroll down and select **Path** (Copy direct link). Save it.
 
 For example:
 
-**http<!--nourl-->s://contoso.sharepoint.com/personal/user_contoso_com/Documents/test.docx**
+`https://contoso.sharepoint.com/personal/user_contoso_com/Documents/test.docx`
 
 #### Get the site ID
 
-1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 1. For SharePoint use the following syntax to get the site id and save it.
 
 ```powershell
 $reportAddress = "email@report.com" $siteName = "SITENAME@TENANT.onmicrosoft.com" $filePath = "https://Contoso.sharepoint.com/sites/SOMESITENAME/Shared%20Documents/TESTFILE.pptx"  $r = Get-Mailbox -Identity $siteName -GroupMailbox $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload SPO -SendReportTo $reportAddress
 ```
-3. For OneDrive use the following syntax to get the site id and save it
+3. For OneDrive use the following syntax to get the site id and save it.
 
 ```powershell
 $reportAddress = "email@report.com" $odbUser = "USER@TENANT.onmicrosoft.com" $filePath = "https://contoso-my.sharepoint.com/personal/userid_contoso_onmicrosoft_com/Documents/TESTFILE.docx" $r = Get-Mailbox -Identity $odbUser $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload ODB -SendReportTo $reportAddress
 ```
 
-Here's an example of a returned value
-
-For example:
+Here's an example of a returned value:
 
 `36ca70ab-6f38-7f3c-515f-a71e59ca6276`
 
