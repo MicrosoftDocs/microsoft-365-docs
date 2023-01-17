@@ -17,7 +17,7 @@ search.appverid:
 description: "Learn how to use the Test-DlpPolicies cmdlet on items in SharePoint Online and OneDrive for Business to see which DLP policies are matched"
 ---
 
-# Test your Data Loss Prevention policies
+# Test your Data Loss Prevention policies (preview)
  
 Testing and tuning the behavior and impact of your Microsoft Purview Data Loss Prevention (DLP) policies is a necessary element of your DLP policy deployment. This article introduces you to some of the basic methods you can use to test policies in your DLP environment.
 

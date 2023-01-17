@@ -1251,7 +1251,7 @@
               href: dlp-policy-tips-reference.md
             - name: Share DLP Alerts (preview)
               href: dlp-share-alerts.md
-            - name: Test your DLP policies
+            - name: Test your DLP policies (preview)
               href: dlp-test-dlp-policies.md
             - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
               href: dlp-migration-assistant-for-symantec-use.md       
