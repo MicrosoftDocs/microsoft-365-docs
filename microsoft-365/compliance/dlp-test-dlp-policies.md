@@ -67,9 +67,7 @@ For example:
 ```powershell
 $reportAddress = "email@report.com" $siteName = "SITENAME@TENANT.onmicrosoft.com" $filePath = "https://Contoso.sharepoint.com/sites/SOMESITENAME/Shared%20Documents/TESTFILE.pptx"  $r = Get-Mailbox -Identity $siteName -GroupMailbox $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload SPO -SendReportTo $reportAddress
 ```
-
-
-1. For OneDRive use the following syntax to get the site id and save it
+3. For OneDrive use the following syntax to get the site id and save it
 
 ```powershell
 $reportAddress = "email@report.com" $odbUser = "USER@TENANT.onmicrosoft.com" $filePath = "https://contoso-my.sharepoint.com/personal/userid_contoso_onmicrosoft_com/Documents/TESTFILE.docx" $r = Get-Mailbox -Identity $odbUser $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload ODB -SendReportTo $reportAddress
