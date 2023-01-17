@@ -39,7 +39,7 @@ When you deploy a new policy, [you should run it in test mode](dlp-overview-plan
 > [!IMPORTANT]
 >
 > - Test-DlpPolicies only works for items that are in SharePoint Online (SPO) or OneDrive for Business (ODB).
->- It will only report results for policies that include SharePoint Online in their scope.
+>- It will only report results for policies that include SharePoint Online alone, OneDrive alone or SharePoint and OneDrive in their scope.
 > - Test-DlpPolices works only with simple conditions. It doesn't work with complex, grouped, or nested conditions.
 
 ### Use Test-DlpPolices
@@ -62,12 +62,21 @@ For example:
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-1. Use the following syntax to get the site id and save it.
+1. For SharePoint use the following syntax to get the site id and save it.
 
 ```powershell
-$e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} 
-$siteID = e.Substring(8,36)
+$reportAddress = "email@report.com" $siteName = "SITENAME@TENANT.onmicrosoft.com" $filePath = "https://Contoso.sharepoint.com/sites/SOMESITENAME/Shared%20Documents/TESTFILE.pptx"  $r = Get-Mailbox -Identity $siteName -GroupMailbox $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload SPO -SendReportTo $reportAddress
 ```
+
+
+1. For OneDRive use the following syntax to get the site id and save it
+
+```powershell
+$reportAddress = "email@report.com" $odbUser = "USER@TENANT.onmicrosoft.com" $filePath = "https://contoso-my.sharepoint.com/personal/userid_contoso_onmicrosoft_com/Documents/TESTFILE.docx" $r = Get-Mailbox -Identity $odbUser $e = $r.EmailAddresses | Where-Object {$_ -like '*SPO*'} Test-DlpPolicies -SiteId $e.Substring(8,36) -FileUrl $filePath -Workload ODB -SendReportTo $reportAddress
+```
+
+Here's an example of a returned value
+
 For example:
 
 `36ca70ab-6f38-7f3c-515f-a71e59ca6276`
