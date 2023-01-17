@@ -1070,6 +1070,8 @@
           href: sensitivity-labels-default-sharing-link.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
+        - name: Minimum versions for sensitivity labels in Office apps
+          href: sensitivity-labels-versions.md
     - name: Encryption
       items: 
         - name: Understand encryption
