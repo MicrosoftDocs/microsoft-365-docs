@@ -41,7 +41,7 @@ Tamper protection will extend to macOS devices and will be turned on in block mo
 
 **Known issues**
 
-Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
+Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
 
 
 <details>
