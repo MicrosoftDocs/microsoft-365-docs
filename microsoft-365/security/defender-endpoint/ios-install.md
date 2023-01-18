@@ -20,7 +20,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Deploy Microsoft Defender for Endpoint on iOS with Microsoft Endpoint Manager (previously Intune)
+# Deploy Microsoft Defender for Endpoint on iOS with Microsoft Endpoint Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ search.appverid: met150
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-This topic describes deploying Defender for Endpoint on iOS on Microsoft Endpoint Manager (previously Intune) Company Portal enrolled devices. For more information about Microsoft Endpoint Manager (previously Intune) device enrollment, see [Enroll iOS/iPadOS devices in Microsoft Endpoint Manager (Intune)](/mem/intune/enrollment/ios-enroll).
+This topic describes deploying Defender for Endpoint on iOS on Microsoft Endpoint Manager (also known as Intune) Company Portal enrolled devices. For more information about Microsoft Endpoint Manager device enrollment, see [Enroll iOS/iPadOS devices in Microsoft Endpoint Manager](/mem/intune/enrollment/ios-enroll).
 
 ## Before you begin
 

@@ -21,7 +21,7 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 01/12/2023
+ms.date: 01/17/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
@@ -69,9 +69,9 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 |Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) or [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br> Note that the Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>Note that the Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
 | macOS (see [System requirements](microsoft-defender-endpoint-mac.md) | [Intune](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Mobile Device Management](mac-install-with-other-mdm.md)<br/><br/> [Local script](mac-install-manually.md) |
-| Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements)) | [Puppet](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)<br/><br/>[Local script](linux-install-manually.md) |  
-| iOS | [Intune](ios-install.md)     |
-|Android  | [Intune](android-intune.md)  | 
+| Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements)) | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)  |
+| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)           |
+| **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
 
 (<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 

@@ -26,20 +26,11 @@
 ### [Microsoft Defender for Endpoint for US Government customers](gov.md)
 ### [Microsoft Defender for Endpoint on other platforms]()
 #### [Overview of Microsoft Defender for Endpoint on other platforms](non-windows.md)
-#### [Microsoft Defender for Endpoint on macOS]()
 ##### [Overview of Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
-##### [What's New](mac-whatsnew.md)
-#### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-##### [What's New](linux-whatsnew.md)
-#### [Mobile Threat Defense]()
-##### [Mobile Threat Defense Overview](mtd.md)
-##### [Microsoft Defender for Endpoint on Android]()
-###### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
-###### [What's new](android-whatsnew.md)
-##### [Microsoft Defender for Endpoint on iOS]()
-###### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
-###### [What's New](ios-whatsnew.md)
+##### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+##### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+
 ### [Antivirus solution compatibility with Defender for Endpoint](defender-compatibility.md)
 
 ## [Evaluate capabilities]()
@@ -76,7 +67,7 @@
 #### [Phase 1: Prepare](switch-to-mde-phase-1.md)
 #### [Phase 2: Setup](switch-to-mde-phase-2.md)
 #### [Phase 3: Onboard](switch-to-mde-phase-3.md)
-#### [Troubleshooting](switch-to-mde-troubleshooting.md)
+
 ### [Manage Defender for Endpoint after migration]()
 #### [Overview](manage-mde-post-migration.md)
 #### [Use Intune (recommended)](manage-mde-post-migration-intune.md)
@@ -179,6 +170,7 @@
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
 #### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages.md)
 #### [Troubleshoot security configuration management onboarding issues](troubleshoot-security-config-mgt.md)
+
 
 ### [Configure portal settings]()
 #### [Configure general Defender for Endpoint settings](preferences-setup.md)
@@ -476,7 +468,7 @@
 ### [Next generation protection]()
 #### [Run and customize scheduled and on-demand scans](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
-## [Endpoint Attack Notifications](endpoint-attack-notifications.md)
+### [Endpoint Attack Notifications](endpoint-attack-notifications.md)
 
 ### [Experts on Demand](experts-on-demand.md)
 
@@ -727,6 +719,8 @@
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
 #### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages.md)
 #### [Troubleshoot security configuration management onboarding issues](troubleshoot-security-config-mgt.md)
+
+### [Troubleshooting migration issues](switch-to-mde-troubleshooting.md)
 
 ### [Troubleshoot sensor state]()
 #### [Check sensor state](check-sensor-status.md)
