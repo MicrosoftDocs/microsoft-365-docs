@@ -32,13 +32,13 @@ description: "Get Microsoft 365 Business Premium so you can protect your company
 
 When you're ready to sign up for Microsoft 365 Business Premium, you have several options. You can:
 
-- [Try or buy Microsoft 365 Business Premium on your own](#sign-up-for-microsoft-365-business-premium-on-your-own)
-- [Work with a Microsoft partner](#work-with-a-microsoft-partner-to-get-microsoft-365-business-premium)
+- Try or buy Microsoft 365 Business Premium on your own; or
+- Work with a Microsoft partner.
 
 > [!TIP]
 > If you're looking for Microsoft 365 for Campaigns, see [How to get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 
-# [Get Microsoft 365 Business Premium](#tab/getm365bp)
+# [Sign up on your own](#tab/getown)
 
 ## Sign up for Microsoft 365 Business Premium on your own
 
