@@ -156,6 +156,25 @@ Web protection helps to secure devices against web threats and protect users fro
 
 6. Review and create the policy.
 
+## Configure Network Protection
+1. In Microsoft Endpoint Manager Admin center, navigate to **Apps > App configuration policies**. Create a new App configuration policy. Click Managed Apps. 
+
+1. Provide a name and description to uniquely identify the policy. Target the policy to **'Selected apps'** and search for **'Microsoft Defender Endpoint'** for Android and click to select and then click “Select” Button. Press Next.
+
+1. Add key and value from the given table. Please ensure that, **“DefenderMAMConfigs”** key is present in every policy that you create using Managed Apps route. For Managed Devices route, this key should not exist. Press Next.
+    | Key | Value Type | Default (true-enable, false-disable) | Description |
+    | --- | --- | --- | --- |
+    | `DefenderNetworkProtectionEnable` | Integer | 0 | 1 - Enable , 0 - Disable ; This setting is used by the IT admin to enable or disable the network protection capabilities in the defender app|
+    |`DefenderAllowlistedCACertificates`| String|None|None-Disable; This setting is managed by an admin to establish trust for root CA and self signed certificates.|
+    |`DefenderCertificateDetection`|Integer|1|0 - Disable , 1 - Audit mode , 2 - Enable ;When network protection is enabled, Audit mode for certificate detection is enabled by default. In audit mode, notification alerts are sent to SOC admins, but no end user notifications is displayed to the user when defender detects a bad certificate. Admins can however disable this detection with 0 as the value and enable full feature functionality by setting 2 as the value ,when the feature is enabled with value as 2, end user notifications are sent to the user when defender detects a bad certificate and alerts are also sent to the SOC Admin. |
+    | `DefenderOpenNetworkDetection` | Integer | 0 | 1 - enable, 0 - disable; This setting is managed by IT Admin to enable or disable open network detection informational alerts with no end user detection experience. |
+    | `DefenderEndUserTrustFlowEnable` | String | false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks. |
+    | `DefenderNetworkProtectionAutoRemediation` | String | true | true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender. |
+    | `DefenderNetworkProtectionPrivacy` | String | true | true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection. |
+ 
+
+1. Include or exclude the groups you want the policy to apply to. Proceed to review and submit the policy. 
+
 
 ## Configure privacy controls
 Admins can use the following steps to enable privacy and not collect the domain name, app details and network information as part of the alert report for corresponding threats.
