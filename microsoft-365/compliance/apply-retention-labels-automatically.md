@@ -73,14 +73,14 @@ Typical workflow for an auto-labeling policy:
 
 2. Run the policy in simulation mode, which typically completes within a day. The completed simulation triggers an email notification that's sent to the user configured to receive activity alerts.
 
-3. Review the results, and if necessary, refine your policy and rerun simulation and wait for it to complete again.
+3. Review the results, and if necessary, refine your policy and rerun simulation. Wait for it to complete again.
 
 4. Repeat step 3 as needed.
 
 5. Deploy in production by turning on the policy.
 
 Unlike simulation mode for automatically applying sensitivity labels:
-- Simulation mode is optional, and not required to complete before you run the policy. You can even run the policy while simulation is still running.
+- Simulation mode is optional, and not required to complete before you turn on the policy. You can even turn on the policy while simulation is still running.
 - When simulation completes, the results automatically expire within 7 days. Then, to view samples for your policy, you must restart the simulation.
 
 Other considerations for simulation mode for auto-apply retention policies:
