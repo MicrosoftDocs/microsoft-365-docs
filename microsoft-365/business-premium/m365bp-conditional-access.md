@@ -73,9 +73,6 @@ MFA is an important first step in securing your company, and security defaults m
 
 ## Conditional Access
 
-> [!NOTE]
-> If you've been using security defaults, you'll need to turn them off before using Conditional Access. You can use either security defaults or Conditional Access policies, but you can't use both at the same time.
-
 If your company or business has complex security requirements or you need more granular control over your security policies, then you should consider using Conditional Access instead of security defaults to achieve a similar or higher security posture.
 
 Conditional Access lets you create and define policies that react to sign-in events and request additional actions before a user is granted access to an application or service. Conditional Access policies can be granular and specific, empowering users to be productive wherever and whenever, but also protecting your organization.
