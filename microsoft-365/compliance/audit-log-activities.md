@@ -179,9 +179,11 @@ Select one of the following links to go to a specific table.
         [SystemSync activities](#systemsync-activities)
     :::column-end:::
     :::column:::
-        
+        [Viva Goals activities](#viva-goals-activities)
     :::column-end:::
 :::row-end:::
+
+
 
 ## File and page activities
 
@@ -873,3 +875,30 @@ The following table lists the activities for SystemSync that are logged in the M
 |Data Share Deleted|DataShareDeleted|When the data export is deleted by the user.|
 |Generate Copy Of Lake Data|GenerateCopyOfLakeData|When the copy of Lake Data is generated.|
 |Download Copy Of Lake Data|DownloadCopyOfLakeData|When the copy of Lake Data is downloaded.|
+
+## Viva Goals activities
+
+The following table lists the user and admin activities in Viva Goals that are logged for auditing. The table includes the friendly name that's displayed in the Activities column and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results.
+
+[Search the audit log in the Security & Compliance Center](audit-log-search.md) details how you can search for the audit logs from the compliance portal. The user needs to be a global admin or have audit read permissions to access audit logs. You can use the Activities filter to search for specific activities and to list all Viva Goals activities you can choose ‘VivaGoals’ in the Record type filter. You can also use the date range boxes and the Users list to narrow the search results further.
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Organization created  |Organization created  |Admin or the user has created a new organization on Viva Goals.  |
+|User added |User added |A new user has been added to an organization on Viva Goals.  |
+|User deactivated |User deactivated |A user has been deactivated in an organization. |
+|User deleted |User deleted|A user has been deleted from an organization on Viva Goals. |
+|User logged in |User logged in |User has logged into Viva Goals. |
+|Team added |Team added |A new team has been created within an organization on Viva Goals. |
+|Team updated |Team updated |A team within an organization on Viva Goals has been modified or updated.  |
+|Team deleted |Team deleted |A team within an organization on Viva Goals has been deleted by the user.|
+|Data exported |Data exported |A user has exported list of OKRs or list of users in an organization on Viva Goals.|
+|Goals policy updated |Goals policy updated |The global admin has modified the policy or settings at the tenant level on Viva Goals. For example, the global admin has configured who can create organizations on Viva Goals.  |
+|Organisation settings updated |Organisation settings updated |The user (typically Organization owners or admins) has updated organization specific settings on Viva Goals.  |
+|Organisation  integrations updated |Organisation  integrations updated |The user (typically Organization owners or admins) has configured a third party integration or updated an existing third party integration for an organization on Viva Goals.  |
+|OKR or Project created |OKR or Project created |User has created an OKR or Project on Viva Goals.  |
+|OKR or Project updated |OKR or Project updated |An OKR/Project has been modified or a check-in has been made by the user or an integration on Viva Goals.  |
+|OKR or Project deleted |OKR or Project deleted |User has deleted an OKR or Project.  |
+|Dashboard created |Dashboard created |User has created a new dashboard on Viva Goals |
+|Dashboard updated |Dashboard updated |User has updated a dashboard on Viva Goals |
+|Dashboard deleted |Dashboard deleted |User has deleted a dashboard on Viva Goals.  |
