@@ -75,7 +75,7 @@ Provides a wealth of security implementation and design information with the goa
 - **FedRAMP** - Federal Risk and Authorization Management Program
 - **PCI** - Payment Card Industry (PCI) Data Security Standards (DSS)
 - **CSA Star** - Cloud Security Alliance (CSA) Security, Trust and Assurance Registry (STAR)
-- **Australia IRAP** - Australia Information Security Registered Assesors Program (IRAP)
+- **Australia IRAP** - Australia Information Security Registered Assessors Program (IRAP)
 - **Singapore MTCS** - Multi-Tier Cloud Security (MTCS) Singapore Standard
 - **Spain ENS** - Spain Esquema Nacional de Seguridad (ENS)
 
@@ -136,13 +136,17 @@ By default, the search returns document results. You can filter the results by u
 
 ## My Library
 
-Use the My Library feature to add documents and resources on the Service Trust Portal to your My Library page. This lets you access documents that are relevant to you in a single place.  To add a document to your My Library, click the elipsis (**...**) menu to the right of a document and then select **Save to library**. You can add multiple documents to your My Library by clicking the checkbox next to one or more documents, and then clicking **Save to library** at the top of the page.
+Use the My Library feature to add documents and resources on the Service Trust Portal to your My Library page. This lets you access documents that are relevant to you in a single place.  To add a document to your My Library, click the ellipsis (**...**) menu to the right of a document and then select **Save to library**. You can add multiple documents to your My Library by clicking the checkbox next to one or more documents, and then clicking **Save to library** at the top of the page.
 
 Additionally, the notifications feature lets you configure your My Library so that an email message is sent to you whenever Microsoft updates a document that you've added to your My Library. To set up notifications, go to your My Library and click **Notification Settings**. You can choose the frequency of notifications and specify an email address in your organization to send notifications to. Email notifications include links to the documents that have been updated and a brief description of the update.
 
 If a document is part of a series, you will be subscribed to the series and will receive notifications when there is an update to that series. You can view the individual documents and Series documents that you have subscribed to, in 2 sections as shown below:
 
 :::image type="content" source="../media/stp-my-library.png" alt-text="My Library displays the documents you have subscribed to in two sections.":::
+
+## My Download History
+
+On the My Download History tab, you can view and export a download history of documents downloaded from the Service Trust Portal within the last 18 months. The history includes the document title and download date, and the document status, such as whether it is live, has a newer version, or has been deleted. The full download history can be exported to a CSV file.
 
 ## Localization support
 

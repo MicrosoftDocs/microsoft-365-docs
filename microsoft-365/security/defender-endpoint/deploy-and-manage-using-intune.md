@@ -181,6 +181,6 @@ You can download the files  [Printer Protection Samples](https://github.com/micr
 
    3. Create Default Deny custom policy for any other printers.
 
-      :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 2." lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
+      :::image type="content" source="media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png" alt-text="A screenshot of policy 3." lightbox= "media/188243552-5d2a90ab-dba6-450f-ad8f-86a862f6e739.png":::
 
       Here's the [sample file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Scenario%201%20Block%20Write%20and%20Execute%20Access%20but%20allow%20approved%20USBs.xml). See step 4 from the [Deploy Printer Protection](deploy-and-manage-using-intune.md) section to deploy the configuration.
