@@ -63,13 +63,21 @@ Now rolling out in preview, you can run an auto-labeling policy in simulation mo
 - [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties).
 
-Very similar to [simulation mode for auto-labeling policies for sensitivity labels](apply-sensitivity-label-automatically.md#learn-about-simulation-mode), this addition lets you run the auto-labeling deployment like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the rules that you defined. You can then refine your rules for accuracy if needed, and rerun the simulation.
-
-However, for Exchange, because auto-labeling applies to emails that are sent and received, whereas simulation runs against emails stored in mailboxes, don't expect results for email in a simulation to be consistent unless you can send and receive the exact same email messages.
+Very similar to [simulation mode for auto-labeling policies for sensitivity labels](apply-sensitivity-label-automatically.md#learn-about-simulation-mode), this addition lets you run the auto-labeling deployment like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the conditions that you defined. You can then refine your conditions for accuracy if needed, and rerun the simulation.
 
 Simulation mode also lets you gradually increase the scope of your auto-labeling policy before deployment. For example, you might start with a single location, such as a SharePoint site, with a single document library. Then, with iterative changes, increase the scope to multiple sites, and then to another location, such as OneDrive.
 
-Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
+Typical workflow for an auto-labeling policy:
+
+1. Create and configure an auto-labeling retention policy.
+
+2. Run the policy in simulation mode, which typically completes within a day. The completed simulation triggers an email notification that's sent to the user configured to receive activity alerts.
+
+3. Review the results, and if necessary, refine your policy and rerun simulation and wait for it to complete again.
+
+4. Repeat step 3 as needed.
+
+5. Deploy in production by turning on the policy.
 
 Unlike simulation mode for automatically applying sensitivity labels:
 - Simulation mode is optional, and not required to complete before you run the policy. You can even run the policy while simulation is still running.
@@ -92,6 +100,10 @@ Simulation typically completes in a day. The completed simulation triggers an em
 ## Before you begin
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [data lifecycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
+
+To run the policy in simulation mode:
+- Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](audit-log-enable-disable.md).
+- To view file or email contents in the source view, you must have the **Data Classification Content Viewer** role, which is included in the **Content Explorer Content Viewer** role group. Without the required role, you don't see the preview pane when you select an item from the **Matched Items** tab. Global admins don't have this role by default.
 
 Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
 
