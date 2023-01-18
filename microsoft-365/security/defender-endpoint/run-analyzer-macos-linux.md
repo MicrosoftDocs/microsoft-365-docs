@@ -34,13 +34,15 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 
 1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
 
-2. `unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer`
+2. `echo '815F3E83EB1E6C33D712F101618018E1E38211D4E2807C3A9EF3CC0B0F95225C  XMDEClientAnalyzer.zip' | sha256sum -c`
 
-3. `cd XMDEClientAnalyzer`
+3. `unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer`
 
-4. Run as non-root user to install required pip and lxml components: `./mde_support_tool.sh`
+4. `cd XMDEClientAnalyzer`
 
-5. To collect actual diagnostic package and generate the result archive file run again as root: `sudo ./mde_support_tool.sh -d`
+5. Run as non-root user to install required pip and lxml components: `./mde_support_tool.sh`
+
+6. To collect actual diagnostic package and generate the result archive file run again as root: `sudo ./mde_support_tool.sh -d`
 
 > [!NOTE]
 > - For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://pypi.org/search/?q=lxml>
