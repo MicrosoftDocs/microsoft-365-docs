@@ -57,6 +57,38 @@ Use the following instructions for the two admin steps.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## Learn about simulation mode
+
+Now rolling out in preview, you can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
+- [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+- [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties).
+
+Very similar to [simulation mode for auto-labeling policies for sensitivity labels](apply-sensitivity-label-automatically.md#learn-about-simulation-mode), this addition lets you run the auto-labeling deployment like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the rules that you defined. You can then refine your rules for accuracy if needed, and rerun the simulation.
+
+However, for Exchange, because auto-labeling applies to emails that are sent and received, whereas simulation runs against emails stored in mailboxes, don't expect results for email in a simulation to be consistent unless you can send and receive the exact same email messages.
+
+Simulation mode also lets you gradually increase the scope of your auto-labeling policy before deployment. For example, you might start with a single location, such as a SharePoint site, with a single document library. Then, with iterative changes, increase the scope to multiple sites, and then to another location, such as OneDrive.
+
+Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
+
+Unlike simulation mode for automatically applying sensitivity labels:
+- Simulation mode is optional, and not required to complete before you run the policy. You can even run the policy while simulation is still running.
+- When simulation completes, the results automatically expire within 7 days. Then, to view samples for your policy, you must restart the simulation.
+
+Other considerations for simulation mode for auto-apply retention policies:
+
+- A maximum of 30 simulation jobs can be active in a 12-hour time period.
+- A maximum of 100 item samples can be collected per mailbox.
+- Simulation counts all items matching the policy criteria at time of simulation. However, when the policy is turned on, only content that is not already labeled will be eligible for auto-applying retention labels.
+- Because auto-labeling applies to emails that are sent and received, whereas simulation runs against emails stored in mailboxes, don't expect results for email in a simulation to be consistent unless you can send and receive the exact same email messages 
+- Because simulation results are based on items and content available in the specified locations at the time the simulation job runs, remember to take the following considerations into account for when you turn on the policy:
+    - Items that are no longer within the specified location won't be labeled.
+    - Items that no longer match the policy criteria won't be labeled.
+
+On the **Label policies** page, the **Status** column displays **In simulation** for auto-labeling policies that are running in simulation, or configured for simulation and complete. 
+
+Simulation typically completes in a day. The completed simulation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
+
 ## Before you begin
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [data lifecycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
@@ -93,7 +125,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
     For information about the location choices, see [Locations](retention-settings.md#locations).
 
-6. Follow the prompts in the wizard to select a retention label, and then review and submit your configuration choices.
+6. Follow the prompts in the wizard to select a retention label, whether to run the policy in [simulation mode](#learn-about-simulation-mode) to test it or turn it on, and then review and submit your configuration choices.
 
 To edit an existing retention label policy (the policy type is **Auto-apply**), select it, and then select the **Edit** option to start the **Edit retention policy** configuration.
 
