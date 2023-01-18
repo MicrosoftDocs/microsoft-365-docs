@@ -214,9 +214,6 @@ You can see the text that surrounds the matched content, like a credit card numb
 This is in preview for endpoint DLP.
 
 
-> [!TIP]
-> (in preview) If you want to see the text (surrounding context) that surrounds matched content, like a credit card number, enable When you open a *DLPRuleMatch* event, select the link under **Sensitive info type**. The supporting text will be in the **Surrounding context** column.
-
 For more information, see [Get started with activity explorer](data-classification-activity-explorer.md)
 
 To learn more about Microsoft Purview DLP, see:
