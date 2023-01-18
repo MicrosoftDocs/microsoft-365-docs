@@ -58,7 +58,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 
 4. Run as non-root user to install required pip and lxml components: `./mde_support_tool.sh`
 
-5. To collect actual diagnostic package and generate the result archive file run again as root: `./mde_support_tool.sh -d`
+5. To collect actual diagnostic package and generate the result archive file run again as root: `sudo ./mde_support_tool.sh -d`
 
 > [!NOTE]
 > - For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://pypi.org/search/?q=lxml>
