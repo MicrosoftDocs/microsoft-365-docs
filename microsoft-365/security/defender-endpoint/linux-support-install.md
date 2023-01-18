@@ -75,7 +75,7 @@ If the Microsoft Defender for Endpoint installation fails due to missing depende
 
 The following external package dependencies exist for the mdatp package:
 
-The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "selinux-policy-targeted", "mde-netfilter" 
+The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "semanage" "selinux-policy-targeted", "mde-netfilter" 
 For RHEL6 the mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter" 
 For DEBIAN the mdatp package requires "libc6 >= 2.23", "uuid-runtime", "auditd", "mde-netfilter" 
 
