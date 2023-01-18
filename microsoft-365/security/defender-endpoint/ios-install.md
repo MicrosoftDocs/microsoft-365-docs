@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Defender for Endpoint on iOS with Microsoft Endpoint Manager (previously Intune)
+title: Deploy Microsoft Defender for Endpoint on iOS with Microsoft Endpoint Manager
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on iOS using an app.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
@@ -44,7 +44,7 @@ This topic describes deploying Defender for Endpoint on iOS on Microsoft Endpoin
 
 This section covers:
 
-1. **Deployment steps** (applicable for both **Supervised** and **Unsupervised** devices)- Admins can deploy Defender for Endpoint on iOS via Microsoft Endpoint Manager (previously Intune) Company Portal. This step is not needed for VPP (volume purchase) apps.
+1. **Deployment steps** (applicable for both **Supervised** and **Unsupervised** devices)- Admins can deploy Defender for Endpoint on iOS via Microsoft Endpoint Manager Company Portal. This step is not needed for VPP (volume purchase) apps.
 
 1. **Complete deployment** (only for Supervised devices)- Admins can select to deploy any one of the given profiles.
     1. **Zero touch (Silent) Control Filter** - Provides Web Protection without the local loopback VPN and also enables silent onboarding for users. App is automatically installed  and activated without the need for user to open the app.
@@ -56,7 +56,7 @@ This section covers:
 
 ## Deployment steps (applicable for both Supervised and Unsupervised devices)
 
-Deploy Defender for Endpoint on iOS via Microsoft Endpoint Manager (previously Intune) Company Portal.
+Deploy Defender for Endpoint on iOS via Microsoft Endpoint Manager Company Portal.
 
 ### Add iOS store app
 
