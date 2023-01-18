@@ -74,7 +74,7 @@ Microsoft Defender for Endpoint shares data, including customer data, among the 
 
 - Microsoft Sentinel
 - Microsoft Tunnel for Mobile Application Management - Android 
- 
+
 ## Is my data isolated from other customer data?
 
 Yes, your data is isolated through access authentication and logical segregation based on customer identifier. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
