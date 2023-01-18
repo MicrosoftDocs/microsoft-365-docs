@@ -1,4 +1,4 @@
-﻿---
+---
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, performance
