@@ -9,14 +9,13 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 09/15/2022
+ms.date: 01/18/2023
 ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
 - M365-Campaigns
 - m365solution-smb
-- highpri
 - tier1
 ms.custom:
 - Adm_O365
@@ -39,6 +38,8 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 > [!TIP]
 > If you're looking for Microsoft 365 for Campaigns, see [How to get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 
+# [Get Microsoft 365 Business Premium](#tab/getm365bp)
+
 ## Sign up for Microsoft 365 Business Premium on your own
 
 1. Visit the [Microsoft 365 Business Premium product page](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
@@ -46,6 +47,8 @@ When you're ready to sign up for Microsoft 365 Business Premium, you have severa
 2. Choose to try or buy your subscription. See [Try or buy a Microsoft 365 for business subscription](../commerce/try-or-buy-microsoft-365.md). On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
 
 3. After you have signed up for Microsoft 365 Business Premium, you'll receive an email with a link to sign in and get started. Proceed to [Set up Microsoft 365 Business Premium](m365bp-setup.md).
+
+# [Work with a partner](#tab/partner)
 
 ## Work with a Microsoft partner to get Microsoft 365 Business Premium
 
@@ -63,6 +66,8 @@ Microsoft has a list of solution providers who are authorized to sell offerings,
    As soon as you select one or more criteria, the list of partners updates.
 
 3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
+
+---
 
 ## Next steps
 
