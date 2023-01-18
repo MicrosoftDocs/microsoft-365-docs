@@ -73,7 +73,8 @@ Once configured, you cannot change the location where your data is stored. This 
 Microsoft Defender for Endpoint shares data, including customer data, among the following Microsoft products also licensed by the customer.
 
 - Microsoft Sentinel
-
+- Microsoft Tunnel for Mobile Application Management - Android 
+- 
 ## Is my data isolated from other customer data?
 
 Yes, your data is isolated through access authentication and logical segregation based on customer identifier. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
