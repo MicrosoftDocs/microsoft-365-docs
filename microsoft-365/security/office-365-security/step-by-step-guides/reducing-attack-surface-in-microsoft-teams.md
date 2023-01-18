@@ -42,7 +42,7 @@ Microsoft Teams is a widely used collaboration tool, where many users are now sp
 
 If licensed for Microsoft Defender for Office 365 (free 90-day evaluation available at aka.ms/trymdo) you can ensure seamless protection from zero-day malware and time of click protection within Microsoft Teams.
 
-[Learn More (SafeLinks)](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-links#safe-links-settings-for-microsoft-teams) & [Learn More (Safe Attachments)](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams?view=o365-worldwide#step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams) (Detailed Documentation)
+[Learn More (SafeLinks)](/microsoft-365/security/office-365-security/safe-links#safe-links-settings-for-microsoft-teams) & [Learn More (Safe Attachments)](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams) (Detailed Documentation)
 
 1. **Login** to the security center's safe attachments configuration page at [https://security.microsoft.com/safeattachmentv2](https://security.microsoft.com/safeattachmentv2)
 2. Press **Global settings**
@@ -90,7 +90,7 @@ Applications are a very useful part of Microsoft teams, but it is recommended to
 ## Configure meeting settings
 
 You can reduce the attack surface by ensuring people outside your organization cannot request access to control presenter's screens and require dial in and all external people to be authenticated & admitted from a meeting lobby.
-[Learn more](https://docs.microsoft.com/en-US/microsoftteams/meeting-policies-participants-and-guests) (detailed documentation)
+[Learn more](/microsoftteams/meeting-policies-participants-and-guests) (detailed documentation)
 
 1. **Login** to the Teams admin center at: https://admin.teams.microsoft.com/
 2. On the left-hand navigation, expand **Meetings** and then choose **Meeting Policies**
@@ -116,7 +116,7 @@ You can reduce the risk of unwanted or inappropriate content being shared during
 ## Disable open federation
 
 Open federation allows your users to communicate externally in Microsoft teams, allowing external organizations to start a conversation with your users and vice versa, which is useful for collaboration, but also for attackers to directly communicate with your organization if they know a victims email address.
-[Learn more](https://docs.microsoft.com/microsoftteams/manage-external-access) (detailed documentation)
+[Learn more](/microsoftteams/manage-external-access) (detailed documentation)
 
 1. **Login** to the Teams admin center at: https://admin.teams.microsoft.com/
 2. On the left-hand navigation, expand **Users** and then choose **External access**
@@ -129,6 +129,6 @@ Open federation allows your users to communicate externally in Microsoft teams, 
 
 Consider configuring access policies to implement Zero Trust identity and device access policies to protect Microsoft Teams chats, groups, and content such as files and calendars.
 
-Learn more about teams access policies: [Recommended Teams policies - Microsoft 365 for enterprise - Office 365 | Microsoft Docs](https://docs.microsoft.com/microsoft-365/security/office-365-security/teams-access-policies)
+Learn more about teams access policies: [Recommended Teams policies - Microsoft 365 for enterprise - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/teams-access-policies)
 
-Security in Microsoft Teams:[Overview of security and compliance - Microsoft Teams | Microsoft Docs](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+Security in Microsoft Teams:[Overview of security and compliance - Microsoft Teams | Microsoft Docs](/microsoftteams/security-compliance-overview)
