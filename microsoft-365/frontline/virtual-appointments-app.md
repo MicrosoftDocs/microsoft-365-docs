@@ -37,7 +37,7 @@ ms.date: 02/01/2023
 
 ## Overview
 
-The [SMC??? Virtual Appointments app]() provides a central hub for all your virtual appointments needs in Microsoft Teams. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating Bookings schedules, analytics, and management options, all in one place.
+The [Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) provides a central hub for all your virtual appointments needs in Microsoft Teams. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating Bookings schedules, analytics, and management options, all in one place.
 
 You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports to gain insight into virtual appointments activity, and configure calendar, staff, and booking page settings
 
@@ -73,7 +73,7 @@ On the **Home** tab or the **Bookings schedule** tab of the Virtual Appointments
 
 :::image type="content" source="media/virtual-appointments-app-new-booking-calendar.png" alt-text="Screenshot of a new booking calendar screen showing business types." lightbox="media/virtual-appointments-app-new-booking-calendar.png":::
 
-If you’re a larger organization, consider creating separate booking calendars for specific departments within your organization. To learn more, see [SMC??? Create a Bookings calendar in Virtual Appointments]().
+If you’re a larger organization, consider creating separate booking calendars for specific departments within your organization. To learn more, see [Create a Bookings calendar in Virtual Appointments](https://support.microsoft.com/topic/0efc10f6-6152-42db-9cbd-0f939c57d8be).
 
 > [!NOTE]
 > If you want to work in an existing booking calendar, choose **Connect a calendar**, and then search for and add an existing booking calendar.
@@ -82,11 +82,11 @@ If you’re a larger organization, consider creating separate booking calendars 
 
 On the **Manage** tab, select **Staff**. Add staff members and assign a role to each person you add. You can add up to 100 staff members to a booking calendar.
 
-After you add staff, you’ll be able to view their availability in the Teams and Outlook calendars and schedule bookings for them. To learn more, see [SMC??? Add and manage staff to make scheduling a breeze]().  
+After you add staff, you’ll be able to view their availability in the Teams and Outlook calendars and schedule bookings for them. To learn more, see [Add and manage staff to make scheduling a breeze](https://support.microsoft.com/topic/9953defc-509d-4427-a2b9-8a2837495db7).  
 
 ### Create appointment types
 
-Create specific appointment types to represent the services offered by your organization and to tailor the booking experience. The appointment type can then be used to book appointments. To learn more, see [SMC??? Create and edit appointment types]().
+Create specific appointment types to represent the services offered by your organization and to tailor the booking experience. The appointment type can then be used to book appointments. To learn more, see [Create and edit appointment types](https://support.microsoft.com/topic/5a153902-f5f8-449e-890d-0443db547704).
 
 On the **Manage** tab, select **Appointment types**, and then choose **Add appointment type**. Specify whether the service is for [Scheduled](#scheduled-appointment-type) or [On-demand](#on-demand-appointment-type) appointments.
 
@@ -111,7 +111,7 @@ To send SMS notifications to attendees by default, turn on **Send them text mess
 
 Keep in mind that schedulers can later choose to turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
 
-To learn more, see [SMC??? Use text messages to remind customers of their appointment]().
+To learn more, see [Use text messages to remind customers of their appointment](https://support.microsoft.com/topic/adda1e2a-03b8-4db2-864d-0a5a3f3a874a).
 
 ##### Link forms
 
@@ -146,7 +146,7 @@ Booking admins can publish an online booking page where people can book schedule
     :::image type="content" source="media/virtual-appointments-app-booking-page-settings.png" alt-text="Screenshot of booking page settings." lightbox="media/virtual-appointments-app-booking-page-settings.png":::
 3. To enable people to request on-demand appointments on your booking page, turn on **Show option for On-demand scheduling**.
 
-You can customize and manage your booking page settings in the Bookings web app. To learn more, see [SMC??? Customize and publish your booking page for customers to schedule appointments]() and [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page).
+You can customize and manage your booking page settings in the Bookings web app. To learn more, see [Customize and publish your booking page for customers to schedule appointments](https://support.microsoft.com/topic/72fc8c8c-325b-4a16-b7ab-87bc1f324e4f) and [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page).
 
 ## Book an appointment
 
@@ -173,7 +173,7 @@ For scheduled appointments, do one of the following actions:
 
 For on-demand appointments, in the Virtual Appointments app, go to the **Queue** tab, and then under **On-demand**, select **Join** next to the appointment.
 
-To learn more, see [???SMC Conduct a virtual appointment (organizer)]().
+To learn more, see [Conduct a virtual appointment (organizer)](https://support.microsoft.com/topic/c5ec4285-154c-491c-9525-d517c621c7f9).
 
 ## Monitor appointments and get real-time status updates in the queue view
 
@@ -196,7 +196,7 @@ The Virtual Appointments usage report in the **Analytics** tab gives you an over
 The analytics experience depends on user role:
 
 - Admins get organizational analytics. If you're an admin, you'll see an org-level report showing aggregated analytics across all departments in your organization. To learn more, see [Virtual Appointments usage report](virtual-appointments-usage-report.md).
-- Non-admins get either departmental or individual analytics. Staff members who are associated with a department see a report that shows data for the given department. If a person isn’t associated with a department, the report shows data for the appointments that they conducted. To learn more, see [???SMC Analyze your Virtual Appointment usage]().
+- Non-admins get either departmental or individual analytics. Staff members who are associated with a department see a report that shows data for the given department. If a person isn’t associated with a department, the report shows data for the appointments that they conducted. To learn more, see [Analyze your Virtual Appointment usage](https://support.microsoft.com/topic/3214fd14-a860-4870-b30c-e8f87e182ce0).
 
 ## Related articles
 
