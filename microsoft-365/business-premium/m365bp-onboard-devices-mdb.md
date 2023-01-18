@@ -11,7 +11,7 @@ ms.service: microsoft-365-security
 ms.subservice: m365bp
 ms.date: 01/18/2023
 ms.localizationpriority: high
-ms.reviewer: shlomiakirav
+ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
