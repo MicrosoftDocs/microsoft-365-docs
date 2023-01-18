@@ -740,12 +740,16 @@ The following table lists events that result from using [sensitivity labels](sen
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Applied sensitivity label to site|SiteSensitivityLabelApplied|A sensitivity label was applied to a SharePoint or Teams site.|
-|Removed sensitivity label from site|SiteSensitivityLabelRemoved|A sensitivity label was removed from a SharePoint or Teams site.|
+|Applied sensitivity label to site|SiteSensitivityLabelApplied|A sensitivity label was applied to a SharePoint site or Teams site that isn't group-connected.|
+|Removed sensitivity label from site|SiteSensitivityLabelRemoved|A sensitivity label was removed from a SharePoint site or Teams site that isn't group-connected.|
 |Applied sensitivity label to file|FileSensitivityLabelApplied <br /><br> SensitivityLabelApplied|A sensitivity label was applied to a document, email, or calendar event by using Microsoft 365 apps, Office on the web, or an auto-labeling policy. <br /><br>The operations for this activity are different depending on how the label was applied:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelApplied) <br /> - Microsoft 365 apps (SensitivityLabelApplied)|
 |Changed sensitivity label applied to file|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|A different sensitivity label was applied to a document, email, or calendar event. <br /><br>The operations for this activity are different depending on how the label was changed:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelChanged) <br /> - Microsoft 365 apps (SensitivityLabelUpdated)|
-|Changed sensitivity label on a site|SiteSensitivityLabelChanged|A different sensitivity label was applied to a SharePoint or Teams site.|
+|Changed sensitivity label on a site|SiteSensitivityLabelChanged|A different sensitivity label was applied to a SharePoint site or Teams site that isn't group-connected.|
 |Removed sensitivity label from file|FileSensitivityLabelRemoved <br /><br> SensitivityLabelRemoved|A sensitivity label was removed from a document, email, or calendar event by using Microsoft 365 apps, Office on the web, an auto-labeling policy, or the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet. <br /><br>The operations for this activity are different depending on how the label was removed:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelRemoved) <br /> - Microsoft 365 apps (SensitivityLabelRemoved)|
+
+Additional auditing information:
+- Sensitivity labels for Microsoft 365 Groups are audited with Azure Active Directory.
+- Sensitivity labels for Teams meeting options and chat are audited with Teams.
 
 ## Retention policy and retention label activities
 
