@@ -42,6 +42,9 @@ For entry creation and configuration instructions, see the following topics:
 
 These articles contain procedures in the Microsoft 365 Defender Portal and in PowerShell.
 
+> [!NOTE]
+> To allow phishing URLs that are part of third-party or Microsoft [attack simulation training](attack-simulation-training-get-started.md), use the [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md) to specify the URLs. Don't use the Tenant Allow/Block List.
+
 ## Block entries in the Tenant Allow/Block List
 
 > [!NOTE]
