@@ -210,7 +210,7 @@ Use the following steps to enable Optional permissions for devices.
 1. Add **DefenderMAMConfigs** key and set the value as 1.
 
 5. To enable Optional permissions, enter value as **true** and assign this policy to users. By default, this value is set to false.
-For users with key set as true, the users will be able to onboard the app without giving these permission.
+For users with key set as true, the users will be able to onboard the app without giving these permissions.
 
 6. Select **Next** and assign this profile to targeted devices/users.
 
