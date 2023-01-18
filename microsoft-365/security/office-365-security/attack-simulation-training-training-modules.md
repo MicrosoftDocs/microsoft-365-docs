@@ -22,7 +22,7 @@ search.appverid: met150
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-In Attack simulation training in Microsoft Defender for Office 365 Plan 2, you use Training modules in Training campaigns that you create and assign to users. For more information about Training campaigns, see [Training campaigns in Attack simulation training](attack-simulation-training-training-campaigns.md).
+In Attack simulation training in Microsoft Defender for Office 365 Plan 2, you select one or more Training modules to include in Training campaigns that you create and assign to users. For more information about Training campaigns, see [Training campaigns in Attack simulation training](attack-simulation-training-training-campaigns.md).
 
 To see the available Training modules, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Training modules**. To go directly to the **Content library** tab where you can select **Training modules**, use <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
@@ -30,7 +30,17 @@ To see the available Training modules, open the Microsoft 365 Defender portal at
 
 - **Training name**
 - **Languages**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**,  **Chinese (Traditional, Taiwan)**,**Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
-- **Tags**
+- **Tags**: Training modules are organized into one or more of the following categories:
+  - **AttachmentMalware**
+  - **Basic**
+  - **Compliance**
+  - **Compromised**
+  - **CredentialHarvesting**
+  - **DriveByURL**
+  - **LinkInAttachment**
+  - **LinkToMalwareFile**
+  - **OAuthConsentGrant**
+  - **Phishing**
 - **Source**: All built-in modules have the value **Global**.
 - **Duration (mins)**
 - **Last assigned date**
@@ -44,8 +54,22 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 
 - **Source**
 - **Language**
-- **Tags**: For example **Priority Accounts**. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
+- **Tags**: Filter the results by the previously described **Tags** values.
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or ![Clear filters icon](../../media/m365-cc-sc-clear-filters-icon.png) **Clear filters**.
 
 To remove one or more columns that are displayed, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**.
+
+When you select a Training module from the list, a details flyout appears with the following information:
+
+- **Description**
+- **Source**
+- **Languages**
+- **Duration**
+- **Preview**: Click this button to watch the training.
+
+- **Active Training campaigns and simulations**: This section shows the following information about active Training campaigns that are using the selected module:
+  - **Name**
+  - **Type**
+  - **Status**
+  - **End by**
