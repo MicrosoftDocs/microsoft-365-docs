@@ -137,7 +137,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
     For information about the location choices, see [Locations](retention-settings.md#locations).
 
-6. Follow the prompts in the wizard to select a retention label, whether to run the policy in [simulation mode](#learn-about-simulation-mode) to test it or turn it on, and then review and submit your configuration choices.
+6. Follow the prompts in the wizard to select a retention label, whether to run the policy in [simulation mode](#learn-about-simulation-mode) or turn it on, and then review and submit your configuration choices.
 
 To edit an existing retention label policy (the policy type is **Auto-apply**), select it, and then select the **Edit** option to start the **Edit retention policy** configuration.
 
