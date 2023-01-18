@@ -122,10 +122,6 @@ The following steps can be used to troubleshoot and mitigate these issues:
 4. Next, type the following commands:
 
     ```bash
-    chmod +x high_cpu_parser.py
-    ```
-
-    ```bash
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
     ```
 
