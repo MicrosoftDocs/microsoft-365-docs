@@ -27,7 +27,7 @@ description: "Learn how security defaults can help protect your organization fro
 
 # Multi-factor authentication
 
-Microsoft 365 Business Premium was designed to help protect your company's user accounts with preconfigured security settings. These settings include enabling multi-factor authentication (MFA) for all your admins and user accounts. For most organizations, security defaults turn on MFA and offer a good level of sign-in security. For organizations who must meet more stringent requirements, Conditional Access policies can be used instead of security defaults.
+Multi-factor authentication (MFA) is a very important first step in securing your organization. Microsoft 365 Business Premium includes the option to use security defaults or Conditional Access policies to turn on MFA for your admins and user accounts. For most organizations, security defaults offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use Conditional Access policies instead.
 
 This article provides information about:
 
