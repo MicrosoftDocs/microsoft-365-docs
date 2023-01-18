@@ -24,12 +24,11 @@
 #### [Get started](mde-plan1-getting-started.md)
 #### [Maintenance and operations](mde-p1-maintenance-operations.md)
 ### [Microsoft Defender for Endpoint for US Government customers](gov.md)
-### [Microsoft Defender for Endpoint on other platforms]()
-#### [Overview of Microsoft Defender for Endpoint on other platforms](non-windows.md)
-##### [Overview of Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
-##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-##### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
-##### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+### [Overview of Microsoft Defender for Endpoint on other platforms](non-windows.md)
+#### [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
+#### [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+#### [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+#### [Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 
 ### [Antivirus solution compatibility with Defender for Endpoint](defender-compatibility.md)
 
