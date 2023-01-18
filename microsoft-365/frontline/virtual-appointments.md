@@ -53,7 +53,7 @@ With any Microsoft 365 license, you can use basic Virtual Appointments capabilit
 To learn more, see:
 
 - [Virtual Appointments guided tour](https://guidedtour.microsoft.com/guidedtour/industry-longform/virtual-appointments/1/1)
-- [??? SMC What is Virtual Appointments?]()
+- [What is Virtual Appointments?](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f)
 - [Use the Virtual Appointments app](virtual-appointments-app.md)
 - [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 
