@@ -166,11 +166,6 @@
 
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
-### [Troubleshoot onboarding issues]()
-#### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
-#### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages.md)
-#### [Troubleshoot security configuration management onboarding issues](troubleshoot-security-config-mgt.md)
-
 
 ### [Configure portal settings]()
 #### [Configure general Defender for Endpoint settings](preferences-setup.md)
