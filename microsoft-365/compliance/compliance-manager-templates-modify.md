@@ -23,10 +23,10 @@ description: "Understand how to modify assessment templates in Microsoft Purview
 
 # Modify a custom assessment template
 
-If you want to modify a custom template you created, you'll follow a process similar to the [template creation](compliance-manager-templates-create.md) process in that you'll upload a [formatted Excel file](compliance-manager-templates-format-excel.md) with your template data. However, there are details to be aware of as you format your Excel file with changes to existing template data. **We recommend you review these instructions carefully to ensure you don't overwrite any existing data that you want to retain.**
+If you want to modify a custom template you created, you'll follow a process similar to the [template creation](compliance-manager-templates-create.md) process of uploading a [formatted Excel file](compliance-manager-templates-format-excel.md) containing your template data. However, there are key details to know as you format your Excel file to change to existing template data. **We recommend you review these instructions carefully to ensure you don't overwrite any existing data that you want to retain.**
 
 > [!NOTE]
-> This template modification process can only be used for a custom template you have created. If you want to add controls or actions to template in Compliance Manager that Microsoft built, follow the instructions to [extend a Microsoft template](compliance-manager-templates-extend.md).
+> This template modification process can only be used for a custom template you have created. If you want to add controls or actions to a Compliance Manager template that Microsoft created, follow the instructions to [extend a Microsoft template](compliance-manager-templates-extend.md).
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
