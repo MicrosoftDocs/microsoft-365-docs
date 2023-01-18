@@ -642,7 +642,7 @@
                 href: sit-defn-eu-tax-identification-number.md
               - name: Finland drivers license number
                 href: sit-defn-finland-drivers-license-number.md
-              - name: Finland european health insurance number
+              - name: Finland European health insurance number
                 href: sit-defn-finland-european-health-insurance-number.md
               - name: Finland national ID
                 href: sit-defn-finland-national-id.md
@@ -1251,6 +1251,8 @@
               href: dlp-policy-tips-reference.md
             - name: Share DLP Alerts (preview)
               href: dlp-share-alerts.md
+            - name: Test your DLP policies (preview)
+              href: dlp-test-dlp-policies.md
             - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
               href: dlp-migration-assistant-for-symantec-use.md       
 - name: Manage data lifecycle & records
