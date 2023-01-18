@@ -52,7 +52,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 
 1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
 
-2. `unzip -q XMDEClientAnalyzer.zip`
+2. `unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer`
 
 3. `cd XMDEClientAnalyzer`
 
