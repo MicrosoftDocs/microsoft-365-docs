@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-ransomware
   - highpri
   - tier1
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Hunt for ransomware

@@ -10,6 +10,7 @@ ms.topic: reference
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
+- Tier3
 - Adm_O365
 - scotvorg
 ROBOTS: NOINDEX, NOFOLLOW 

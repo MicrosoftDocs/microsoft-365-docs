@@ -45,7 +45,7 @@ for example:
 
 ## Credential example 
 
-` account.azuredatabricks.net;PAT=dapiabcdef0123456789abcdef0123456789;`
+`account.azuredatabricks.net;PAT=dapiabcdef0123456789abcdef0123456789;`
 
 ## Checksum
 

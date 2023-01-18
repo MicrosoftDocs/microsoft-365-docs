@@ -6,13 +6,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 01/10/2023
 ms.author: dansimp
 author: lovina-saldanha
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
 ms.subservice: mde
-ms.topic: article
+ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier3
@@ -25,6 +26,9 @@ search.appverid: met150
 **Applies to**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+> [!NOTE]
+> If you want to manage printers, see [Microsoft Defender for Endpoint Device Control Printer Protection](printer-protection-overview.md).
 
 Microsoft Defender for Endpoint Device Control Printer Protection blocks people from printing via non-corporate printers or non-approved USB printer.
 

@@ -20,7 +20,7 @@ ms.collection:
   - m365-security
   - m365initiative-m365-defender
   - tier1
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Link query results to an incident
@@ -30,7 +30,6 @@ ms.topic: article
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 You can use the link to incident feature to add advanced hunting query results to a new or existing incident under investigation. This feature helps you easily capture records from advanced hunting activities, which enables you to create a richer timeline or context of events regarding an incident. 
 

@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
+- Tier1
 - scotvorg
 description: "Use Power Automate Bookings Connectors to create custom workflows with appointment triggers."
 ---

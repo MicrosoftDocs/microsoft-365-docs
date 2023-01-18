@@ -5,6 +5,7 @@ description: This page provides information for developers such as detection cri
 keywords: wdsi, software, developer, resources, detection, criteria, questions, scan, software, definitions, cloud, protection, security intelligence
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
+ms.subservice: intelligence
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,7 +17,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
 ---
 

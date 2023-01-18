@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Get expert training on advanced hunting
@@ -29,7 +29,6 @@ ms.topic: article
 **Applies to:**
 
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 Boost your knowledge of advanced hunting quickly with _Tracking the adversary_, a webcast series for new security analysts and seasoned threat hunters. The series guides you through the basics all the way to creating your own sophisticated queries. Start with the first video on fundamentals or jump to more advanced videos that suit your level of experience.
 

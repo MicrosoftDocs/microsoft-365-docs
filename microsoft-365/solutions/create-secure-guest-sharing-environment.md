@@ -147,9 +147,9 @@ It's important to note that for SharePoint and OneDrive locations, documents wil
 
 [Create an access review of groups or applications in Azure AD access reviews](/azure/active-directory/governance/create-access-review)
 
-## Set up web-only access for guests
+## Set up web-only access for guests with unmanaged devices
 
-You can require guests to access your teams, sites, and files by using a web browser only. This reduces the chance that they might download sensitive files and leave them on an unmanaged device. This is also useful when sharing with environments that use shared devices.
+If your guests use devices that are not managed by your organization or another organization that you have a trust relationship with, you can require them to access your teams, sites, and files by using a web browser only. This reduces the chance that they might download sensitive files and leave them on an unmanaged device. This is also useful when sharing with environments that use shared devices.
 
 For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
@@ -218,13 +218,11 @@ To create a sensitive information type
 6. Click **Next**, and then click **Finish**.
 7. If asked if you would like to test the sensitive information type, click **No**.
 
-### More information
-
-[Custom sensitive information types](/Office365/SecurityCompliance/custom-sensitive-info-types)
+For more information, see [Custom sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about).
 
 ## Create an auto-labeling policy to assign a sensitivity label based on a sensitive information type
 
-If you are using sensitivity labels in your organization, you can automatically apply a label to files that contain defined sensitive information types. 
+If you are using sensitivity labels in your organization, you can automatically apply a label to files that contain defined sensitive information types.
 
 To create an auto-labeling policy
 
@@ -248,9 +246,7 @@ To create an auto-labeling policy
 
 With the policy in place, when a user types "Project Saturn" into a document, the auto-labeling policy will automatically apply the specified label when it scans the file.
 
-### More information
-
-[Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md)
+For more information, see [Apply a sensitivity label to content automatically](../compliance/apply-sensitivity-label-automatically.md).
 
 ## Create a DLP policy to remove guest access to highly sensitive files
 
@@ -273,7 +269,7 @@ To create a DLP rule
 10. Under **Actions** click **Add an action** and choose **Restrict access or encrypt the content in Microsoft 365 locations**.
 11. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Only people outside your organization** option.
 
-      ![Screenshot of DLP rule action options.](../media/dlp-remove-guest-access-sensitive-files.png)
+    ![Screenshot of DLP rule action options.](../media/dlp-remove-guest-access-sensitive-files.png)
 
 12. Click **Save** and then click **Next**.
 13. Choose your test options and click **Next**.
