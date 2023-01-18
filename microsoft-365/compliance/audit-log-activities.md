@@ -747,9 +747,9 @@ The following table lists events that result from using [sensitivity labels](sen
 |Changed sensitivity label on a site|SiteSensitivityLabelChanged|A different sensitivity label was applied to a SharePoint site or Teams site that isn't group-connected.|
 |Removed sensitivity label from file|FileSensitivityLabelRemoved <br /><br> SensitivityLabelRemoved|A sensitivity label was removed from a document, email, or calendar event by using Microsoft 365 apps, Office on the web, an auto-labeling policy, or the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet. <br /><br>The operations for this activity are different depending on how the label was removed:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelRemoved) <br /> - Microsoft 365 apps (SensitivityLabelRemoved)|
 
-Additional auditing information:
-- Sensitivity labels for Microsoft 365 Groups are audited with Azure Active Directory.
-- Sensitivity labels for Teams meeting options and chat are audited with Teams.
+Additional auditing information for sensitivity labels:
+- When you use sensitivity labels for Microsoft 365 Groups, and therefore Teams sites that are group-connected, see [Azure AD group administration activities](audit-log-activities.md#azure-ad-group-administration-activities).
+- When you use sensitivity labels for Teams meeting invites, and Teams meeting options and chat, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events).
 
 ## Retention policy and retention label activities
 
