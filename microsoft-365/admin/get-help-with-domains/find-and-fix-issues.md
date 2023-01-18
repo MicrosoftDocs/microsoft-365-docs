@@ -2,8 +2,8 @@
 title: "Find and fix issues after adding your domain or DNS records"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
 audience: Admin
 ms.topic: article

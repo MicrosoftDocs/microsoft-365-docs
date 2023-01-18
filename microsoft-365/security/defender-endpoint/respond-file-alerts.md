@@ -65,13 +65,13 @@ You can contain an attack in your organization by stopping the malicious process
 > [!IMPORTANT]
 > You can only take this action if:
 >
-> - The device you're taking the action on is running Windows 10, version 1703 or later, and Windows 11
+> - The device you're taking the action on is running Windows 10, version 1703 or later, Windows 11, and Windows Server 2012 R2+
 > - The file does not belong to trusted third-party publishers or is not signed by Microsoft
 > - Microsoft Defender Antivirus must at least be running on Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistent data such as registry keys.
 
-This action takes effect on devices with Windows 10, version 1703 or later, and Windows 11, where the file was observed in the last 30 days.
+This action takes effect on devices with Windows 10, version 1703 or later, and Windows 11 and Server 2012 R2+, where the file was observed in the last 30 days.
 
 > [!NOTE]
 > You'll be able to restore the file from quarantine at any time.
@@ -249,9 +249,9 @@ Use the deep analysis feature to investigate the details of any file, usually du
 **Submit for deep analysis** is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.
 
 > [!NOTE]
-> Only files from Windows 10 and Windows 11 can be automatically collected.
+> Only files from Windows 10, Windows 11, and Windows Server 2012 R2+ can be automatically collected.
 
-You can also submit a sample through the [Microsoft 365 Defender Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11), and wait for **Submit for deep analysis** button to become available.
+You can also submit a sample through the [Microsoft 365 Defender Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11 or Windows Server 2012 R2+), and wait for **Submit for deep analysis** button to become available.
 
 > [!NOTE]
 > Due to backend processing flows in the Microsoft 365 Defender Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
@@ -274,7 +274,7 @@ You can also submit a sample through the [Microsoft 365 Defender Portal](https:/
    A progress bar is displayed and provides information on the different stages of the analysis. You can then view the report when the analysis is done.
 
 > [!NOTE]
-> Depending on device availability, sample collection time can vary. There is a 3-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 device (or Windows 11) reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
+> Depending on device availability, sample collection time can vary. There is a 3-hour timeout for sample collection. The collection will fail and the operation will abort if there is no online Windows 10 device (or Windows 11 or Windows Server 2012 R2+) reporting at that time. You can re-submit files for deep analysis to get fresh data on the file.
 
 ### View deep analysis reports
 

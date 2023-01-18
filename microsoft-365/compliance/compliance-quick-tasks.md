@@ -66,7 +66,7 @@ Microsoft provides several built-in alert policies that help identify admin perm
 
 Use alert policy and alert dashboard tools to create custom alert policies and view the alerts generated when users perform activities that match the policy conditions. Some examples could be to use alert policies to track user and admin activities affecting compliance requirements, permissions, and data loss incidents in your organization.
 
-For step-by-step guidance to create custom alert policies, see [Alert policies in the security and compliance center](/microsoft-365/compliance/alert-policies).
+For step-by-step guidance to create custom alert policies, see [Alert policies in Microsoft 365](/microsoft-365/compliance/alert-policies).
 
 ## Task 5: Classify and protect sensitive data
 

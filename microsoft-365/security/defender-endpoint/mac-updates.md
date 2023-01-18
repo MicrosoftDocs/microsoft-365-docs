@@ -1,7 +1,7 @@
 ---
 title: Deploy updates for Microsoft Defender for Endpoint on Mac
 description: Control updates for Microsoft Defender for Endpoint on Mac in enterprise environments.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, updates, deploy
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, updates, deploy, catalina, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

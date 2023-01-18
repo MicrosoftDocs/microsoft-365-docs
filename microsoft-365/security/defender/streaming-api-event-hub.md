@@ -28,6 +28,9 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Prerequisites
@@ -47,7 +50,7 @@ Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure
 
 1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to the [Streaming API settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export).
+2. Go to the [Streaming API settings page](https://sip.security.microsoft.com/settings/mtp_settings/raw_data_export).
 
 3. Click on **Add**.
 
@@ -128,6 +131,8 @@ You can monitor the resources created by the streaming API using **Azure Monitor
 For more information, see [Log Analytics workspace data export in Azure Monitor](/azure/azure-monitor/logs/logs-data-export). 
 
 ## Related topics
+
+- [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft 365 Defender streaming API](streaming-api.md)

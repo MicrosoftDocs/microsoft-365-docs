@@ -158,7 +158,7 @@ There are three procedures.
 
 7. Enter the path to the folder on local machines where you want the original sensitive files to be moved to. For example:
    
-    **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah langer* will place the moved items in a folder named:  
+    **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah Langer* will place the moved items in a folder named:  
 
     *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive*
 
@@ -255,41 +255,7 @@ You can continue to add new services, apps, and policies to extend and augment y
 
 This configuration will help ensure your data remains safe while also avoiding unnecessary restrictions that prevent or restrict users from accessing and sharing non-sensitive items.
 
-## Scenario 6 Monitor or restrict user activities on sensitive service domains
-
-Use this scenario when you want to audit, block with override, or block these user activities on a website.
-
-- print from a website
-- copy data from a website
-- save a website as local files
-
-The user must be accessing the website through Microsoft Edge.
-
-### Supported syntax for designating websites in a website group
-
-You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
-
-- use `*` as a wildcard to specify all domains or all subdomains
-- use `/` as a terminator at the end of a URL to scope to that specific site only.
-
-When you add a URL without a terminating `/`, that URL is scoped to that site and all subsites.
-
-This syntax applies to all http/https websites.
-
-Here are some examples:
-
-
-|URL that you add to the website group  |URL will match  | URL will not match|
-|---------|---------|---------|
-|contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2|        //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com.au    |
-|contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/au   |
-|*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
-|*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
-|*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
-
-
-### Configure Sensitive service domains
-
+You can also audit, block with override, or block these user upload sensitive items to cloud apps and services through **Sensitive service domains**.
 1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Browser and domain restrictions to sensitive data** > **Sensitive service domains**.
 1. Select **Add a new group of sensitive service domains**.
 1. Name the group.
@@ -303,6 +269,35 @@ Here are some examples:
 1. Select the **Sensitive site groups** you want.
 1. Select **Add**.
 1. OPTIONAL: If you want to create an exception (usually an allowlist) to the overall action for one or more site groups, select **Configure sensitive service domain exceptions**, add the site group you want the exception for, configure the desired action and **Save** the configuration.
+1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
+1. Finish configuring the rule and policy and apply it.
+
+
+
+## Scenario 6 Monitor or restrict user activities on sensitive service domains
+
+Use this scenario when you want to audit or block these user activities on a website.
+
+- print from a website
+- copy data from a website
+- save a website as local files
+
+The user must be accessing the website through Microsoft Edge.
+
+### Configure Sensitive service domains
+
+1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Browser and domain restrictions to sensitive data** > **Sensitive service domains**.
+1. Select **Add a new group of sensitive service domains**.
+1. Name the group.
+1. Select the **Match type** you want. You can select from **URL**, **IP address**, **IP address range**.
+1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website or \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
+1. Select **Save**.
+1. Select **Policies**.
+1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.
+1. Create a rule that uses the **the user accessed a sensitive site from Edge**, and the action **Audit or restrict activities when users access sensitive sites in Microsoft Edge browser on Windows devices**.
+1. In the action select **Add or remove Sensitive site groups**.
+1. Select the **Sensitive site groups** you want. Any website under the group(s) you select here will be redirected to Edge when opened in Chrome browser (with Purview extension installed).
+1. Select **Add**.
 1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
 1. Finish configuring the rule and policy and apply it.
 
@@ -320,7 +315,7 @@ In this scenario, we'll define a group of printers that the legal department use
 ### Create and use printer groups
 
 1. In the Microsoft Purview compliance portal open **Data loss prevention** > **Endpoint DLP settings** > **Printer groups**.
-1. Select **Create printer group** and give the group a name. In this scenarion, we'll use `Legal printers`.
+1. Select **Create printer group** and give the group a name. In this scenario, we'll use `Legal printers`.
 1. Select **Add printer** and provide a name. You can define printers by:
     1. Friendly printer name 
     1. USB product ID

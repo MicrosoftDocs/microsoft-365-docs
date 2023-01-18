@@ -29,7 +29,6 @@ ms.topic: conceptual
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 [Advanced hunting](advanced-hunting-overview.md) relies on data coming from various sources, including your devices, your Office 365 workspaces, Azure AD, and Microsoft Defender for Identity. To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
 

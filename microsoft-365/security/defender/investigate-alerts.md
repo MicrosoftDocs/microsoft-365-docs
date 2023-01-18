@@ -112,9 +112,17 @@ Microsoft 365 Defender alerts may come from solutions like Microsoft Defender fo
 | App Governance | `ma` |
 | Microsoft Data Loss Prevention | `dl` |
 
-By default, only the most relevant alerts for the security operation center are enabled. If you want to get all AAD IP risk detections, you can change it in Microsoft 365 Defender setting page under **Alert service setting** section.
+### Configure AAD IP alert service
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-aadip-alert.png" alt-text="Screenshot of Azure AD identity protection alerts setting in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-aadip-alert.png":::
+1.	Go to the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)), select **Settings** > **Microsoft 365 Defender**. 
+
+2. From the list, select **Alert service settings**, and then configure your **Azure AD identity protection** alert service.
+
+   :::image type="content" source="../../media/investigate-alerts/alerts-ss-aadip-alert.png" alt-text="Screenshot of Azure AD identity protection alerts setting in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-aadip-alert.png":::
+
+By default, only the most relevant alerts for the security operation center are enabled. If you want to get all AAD IP risk detections, you can change it in the **Alert service settings** section.
+
+You can also access **Alert service settings** directly from the **Incidents** page in the Microsoft 365 Defender portal. 
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.

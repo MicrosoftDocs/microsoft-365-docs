@@ -8,6 +8,7 @@ ms.topic: overview
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
+- Tier1
 - scotvorg
 description: "Get a periodic report about how people in your organization use Microsoft 365 services and drill into each chart for more insights."
 ---
@@ -29,7 +30,7 @@ If you’re a member of the reports reader role, once you sign into the admin ce
 
 :::image type="content" source="../../media/experience-insights-dashboard2.png" alt-text="Screenshot: Image showing an overview of the experience insights dashboard":::
 
-To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
+To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
 
 ## Apps and services data
 

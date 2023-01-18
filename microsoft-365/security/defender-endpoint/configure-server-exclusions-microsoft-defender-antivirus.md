@@ -10,6 +10,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 11/28/2022
 author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
@@ -71,7 +72,9 @@ Because Microsoft Defender Antivirus is built in, it does not require exclusions
 Operating system exclusions and server role exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 > [!NOTE]
-> Automatic exclusions for server roles and operating system files do not apply to Windows Server 2012. Automatic exclusions can apply if your servers running Windows Server 2012 R2 are onboarded to Defender for Endpoint. (See [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).)
+> Automatic exclusions apply only to Windows Server 2016 and later. These exclusions are not visible in the Windows Security app and in PowerShell.
+> Automatic exclusions can apply if your servers running Windows Server 2012 R2 are onboarded to Defender for Endpoint. For more information, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
+> Automatic exclusions for server roles and operating system files do not apply to Windows Server 2012.
 
 
 ### The list of automatic exclusions
@@ -386,6 +389,7 @@ If necessary, you can add or remove custom exclusions. To do that, see the follo
 
 ## See also
 
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions based on file name, extension, and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)

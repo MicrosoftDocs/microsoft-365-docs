@@ -561,7 +561,7 @@ If you're an Office Insider, DKE is enabled for you. Otherwise, enable DKE for y
 
 ## Migrate protected files from HYOK labels to DKE labels
 
-If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the AIP scanner. To get started using the scanner, see [What is the Azure Information Protection unified labeling scanner?](/azure/information-protection/deploy-aip-scanner).
+If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the Microsoft Purview Information Protection scanner. To get started using the scanner, see [Understand the information protection scanner](deploy-scanner.md).
 
 If you don't migrate content, your HYOK protected content will remain unaffected.
 
@@ -572,5 +572,7 @@ We realize that for some customers in highly regulated industries, this standard
 - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.)
 
 - [Thales](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption)
+
+- [Utimaco](https://utimaco.com/solutions/applications/double-key-encryption)
 
 Reach out directly to these vendors for more information and guidance on their in-market DKE HSM solutions.

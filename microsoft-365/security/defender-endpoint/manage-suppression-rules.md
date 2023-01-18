@@ -37,7 +37,9 @@ There might be scenarios where you need to suppress alerts from appearing in the
 You can view a list of all the suppression rules and manage them in one place. You can also turn an alert suppression rule on or off.
 
 
-1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
+1. Log in to [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) using an account with the Security administrator or Global administrator role assigned.
+
+2. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
 
 2. Select a rule by clicking on the check-box beside the rule name.
 
