@@ -120,11 +120,11 @@ You can download the files here, [Printer Protection Samples](https://github.com
 
    1. Group 1: Any printer group.
 
-      ![image](https://user-images.githubusercontent.com/81826151/212443946-274f71dd-a160-4e04-9e6d-9240219cdd79.png)
+    :::image type="content" source="media/screenshot-of-removable-storage.png" alt-text="This is the screenshot of removable of storage." lightbox="media/screenshot-of-removable-storage.png":::
 
    2. Group 2: Allowed-USB printer group.
 
-      ![image](https://user-images.githubusercontent.com/81826151/212443963-26cdb062-0242-41f2-bcee-7ce58418b9b7.png)
+      :::image type="content" source="media/screenshot-of-approved-usbs.png" alt-text="This is the screenshot of approved USBs." lightbox="media/screenshot-of-approved-usbs.png":::
 
    3. Group 2: Allowed PDF/XPS file printer group: following PrinterConnectionId is used, but if you want to only allow PDF, FriendlyNameId with 'Microsoft Print to PDF' is recommended.
 
@@ -139,11 +139,11 @@ You can download the files here, [Printer Protection Samples](https://github.com
 
    1. Create Allow and Audit policy for allowed-file printer group.
 
-      ![image](https://user-images.githubusercontent.com/81826151/212443857-bb635ff8-e003-4299-b22d-f92688bd8288.png)
+     :::image type="content" source="media/block-write-execute-access.png" alt-text="This is block write access screenshot." lightbox="media/block-write-execute-access.png":::
 
    2. Create policy to allow authorized USB printer only when the machine is Corporate Network OR VPN connected.
 
-      ![image](https://user-images.githubusercontent.com/81826151/212443879-cec66f5a-9f8b-4f7e-b542-9db635bc71ed.png)
+      :::image type="content" source="media/audit-write.png" alt-text="This is the deafult audit write access screenshot." lightbox="media/audit-write.png":::
 
    3. Create Default Deny custom policy for any other printers.
 
