@@ -28,7 +28,7 @@
     items: 
       - name: Overview
         href: m365bp-security-overview.md
-      - name: Turn on security defaults (MFA)
+      - name: Turn on MFA
         href: m365bp-conditional-access.md
       - name: Protect your admin accounts
         href: m365bp-protect-admin-accounts.md
