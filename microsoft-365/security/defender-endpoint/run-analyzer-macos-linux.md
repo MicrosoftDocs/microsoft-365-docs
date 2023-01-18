@@ -28,24 +28,6 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-## Running the analyzer through GUI scenario
-
-1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
-
-   > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: '815F3E83EB1E6C33D712F101618018E1E38211D4E2807C3A9EF3CC0B0F95225C'
-
-2. Extract the contents of XMDEClientAnalyzer.zip on the machine.
-
-3. Open a terminal session, change directory to the extracted location and run:
-
-   `./mde_support_tool.sh -d`
-
-   > [!NOTE]
-   > On Linux, if the script does not have permissions to execute, then you'll need to first run:
-   >
-   > `chmod a+x mde_support_tool.sh`
-
 ## Running the analyzer using a terminal or SSH scenario
 
 Open a terminal or SSH into the relevant machine and run the following commands:
