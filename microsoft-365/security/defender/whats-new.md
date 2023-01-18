@@ -42,6 +42,8 @@ You can also get product updates and important notifications through the [messag
 
 ## January 2023
 
+- The new Microsoft Defender Experts for Hunting report is now available. The report's new interface now lets customers have more contextual details about the suspicious activities Defender Experts have observed in their environments. It also shows which suspicious activities have been continuously trending from month to month. For details, see [Understand the Defender Experts for Hunting report in Microsoft 365 Defender](defender-experts-report.md).
+
 - (GA) Live Response is now generally available for macOS and Linux. 
 
 ## December 2022
