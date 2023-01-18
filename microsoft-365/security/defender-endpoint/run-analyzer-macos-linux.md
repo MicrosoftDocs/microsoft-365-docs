@@ -56,7 +56,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 
 3. `cd XMDEClientAnalyzer`
 
-4. Run as non-root use to install required pip and lxml which components: `./mde_support_tool.sh`
+4. Run as non-root user to install required pip and lxml components: `./mde_support_tool.sh`
 
 5. To collect actual diagnostic package and generate the result archive file run again as root: `./mde_support_tool.sh -d`
 
