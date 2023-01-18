@@ -42,6 +42,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ### Sensitivity labels
 - **Rolling out in preview**: As a parity feature for the AIP add-in, built-in labeling for Windows supports the configuration of a [default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label).
+- - **Rolling out in preview**: Word, Excel, and PowerPoint in Office for Mac also supports the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [label colors](sensitivity-labels-office-apps.md#label-colors).
 - The earliest version for the AIP add-in to be [disabled by default in Office apps](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) for the Current Channel and Monthly Enterprise Channel is now version 2302. The minimum version for the Semi-Annual Channel hasn't changed.
 
 ## December 2022
