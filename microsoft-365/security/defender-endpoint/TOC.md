@@ -158,8 +158,8 @@
 
 ### [Configure Mobile Threat Defense]()
 #### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
-#### [Configure Microsoft Defender for Endpoint risk signals using app protection policy](android-configure-mam.md)
-#### [Configure Microsoft Defender for Endpoint iOS features](ios-configure-features.md)
+#### [Configure Microsoft Defender for Endpoint on Android risk signals using app protection policy](android-configure-mam.md)
+#### [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
 ### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
