@@ -146,7 +146,7 @@ If a document is part of a series, you will be subscribed to the series and will
 
 ## My Download History
 
-On the My Download History tab, you can view and export a download history of documents downloaded within the last 18 months. The history includes document title, download date, and document status.
+On the My Download History tab, you can view and export a download history of documents downloaded from the Service Trust Portal within the last 18 months. The history includes the document title and download date, and the document status, such as whether it is live, has a newer version, or has been deleted. The full download history can be exported to a CSV file.
 
 ## Localization support
 
