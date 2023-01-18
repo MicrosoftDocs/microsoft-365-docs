@@ -93,7 +93,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     To collect current statistics, run:
 
     ```bash
-    mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
+    mdatp diagnostic real-time-protection-statistics --output json
     ```
 
     > [!NOTE]
@@ -122,14 +122,14 @@ The following steps can be used to troubleshoot and mitigate these issues:
 4. Next, type the following commands:
 
     ```bash
-    cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
+    mdatp diagnostic real-time-protection-statistics --output json | python high_cpu_parser.py
     ```
 
       The output of the above is a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is the process name, and the last column is the number of scanned files, sorted by impact.
     For example, the output of the command will be something like the below:
 
     ```Output
-    ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
+    ... > mdatp diagnostic real-time-protection-statistics --output json | python high_cpu_parser.py | head
     27432 None 76703
     73467 actool    1249
     73914 xcodebuild 1081
