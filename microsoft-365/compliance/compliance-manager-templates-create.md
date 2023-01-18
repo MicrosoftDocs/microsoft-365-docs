@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn how to create a custom assessment template in Microsoft Purview Compliance Manager using a formatted Excel file."
 ---
 
-# Create an assessment template in Microsoft Purview Compliance Manager
+# Create a custom assessment template
 
 To create your own new template for custom assessments in Compliance Manager, you'll use a specially formatted Excel spreadsheet to assemble the necessary control data. After completing the spreadsheet, you will import it into Compliance Manager.
 
@@ -33,8 +33,8 @@ Only users who hold a Global Administrator or Compliance Manager Administration 
 
 ## Create new template in Compliance Manager
 
-1. Start by creating a formatted Excel file that will contain your template's data. Get detailed instructions at [Format assessment template data with Excel](compliance-manager-templates-format-excel.md).
-1. When you have your Excel file ready, go to your **assessment templates** page in Compliance Manager and select **Create new template**. A template creation wizard will open.
+1. Start by creating a formatted Excel file that contains your template's data. Get detailed instructions at [Format assessment template data with Excel](compliance-manager-templates-format-excel.md).
+1. When your Excel file is ready, go to your **assessment templates** page in Compliance Manager and select **Create new template**. A template creation wizard will open.
 1. Choose the type of template you want to create. In this case, select **Create a custom template**, then select **Next**.
 1. At the **Upload file** screen, select **Browse** to find and upload your formatted Excel file containing all the required template data.
 1. If there are no problems with your file, the name of the file uploaded will be displayed. Select **Next** to continue. (If you need to change the file, select **Upload a different file**).
