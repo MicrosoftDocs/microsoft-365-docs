@@ -65,7 +65,8 @@ When you configure IB, you'll work with several objects and concepts.
     Your organization can have up to 5,000 segments and users can be assigned to a maximum of 10 segments. See the list of [IB supported attributes](information-barriers-attributes.md) for details.
 
     > [!IMPORTANT]
-    > Support for 5,000 segments and assigning users to multiple segments is only available when enabling information barriers in your organization after January 31, 2023. <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
+    > Support for 5,000 segments and assigning users to multiple segments is only available when enabling information barriers in your organization after January 31, 2023. For organization enabling information barriers after January 31, 2023, to enable assigning users to multiple segments requires an additional action to change organization information barriers mode, see [Enable multiple segment support for users (optional)](enable-multiple-segment-support-for-users-optional) for details. 
+    <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and the maximum number of segments supported is 250 and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
 
 - **IB policies** determine communication limits or restrictions. When you define IB policies, you choose from two kinds of policies:
   - *Block* policies prevent one segment from communicating with another segment.
@@ -157,6 +158,9 @@ When you have your initial list of needed groups and policies, proceed to identi
 
 In addition to your initial list of policies, make a list of segments for your organization. Users who will be included in IB policies should belong to at least one segment. Users can be assigned to multiple segments if needed. You can have up to 5,000 segments in your organization and each segment can have only one IB policy applied.
 
+> [!IMPORTANT]
+> A user can only be in one segment for organizations that have enabled IB prior to January 31, 2023 or organizations enabling IB after January 31, 2023 with IB mode being *Single*.
+
 Determine which attributes in your organization's directory data you'll use to define segments. You can use *Department*, *MemberOf*, or any of the supported IB attributes. Make sure that you have values in the attribute you select for users. For more information, see the [supported attributes for IB](information-barriers-attributes.md).
 
 > [!IMPORTANT]
@@ -167,7 +171,7 @@ Determine which attributes in your organization's directory data you'll use to d
 > [!IMPORTANT]
 > Support for assigning users to multiple segments is only available when enabling information barriers in your organization after January 31, 2023. <br><br> Organizations that have enabled IB prior to January 31, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to January 31, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the information barriers roadmap **NEED LINK**.
 
-If you want to support assigning users to multiple segments, run the following cmdlet. If you enable multiple segments in your organization, you cannot revert to single segment support.
+If you want to support assigning users to multiple segments, run the following cmdlet from an [Exchange Online PowerShell session](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps). If you enable multiple segments in your organization, you cannot revert to single segment support.
 
 ```powershell
 Enable-ExoInformationBarrierMultiSegment
