@@ -32,7 +32,7 @@ search.appverid: met150
 - Windows
 
 > [!TIP]
-> This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md).
+> This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender](configure-endpoints-vdi.md).
 
 You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in. 
 
@@ -161,7 +161,7 @@ You can specify the type of scan that should be performed during a scheduled sca
 
 ## Prevent notifications
 
-Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can lock down the Microsoft Defender Antivirus user interface. The following procedure describes how to suppress notifications with Group Policy.
+Sometimes, Microsoft Defender Antivirus notifications are sent to or persist across multiple sessions. To help avoid user confusion, you can lock down the Microsoft Defender Antivirus user interface. The following procedure describes how to suppress notifications using Group Policy.
 
 1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Client Interface**.
 
@@ -171,13 +171,7 @@ Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist 
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan while the attack was detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
-
-> [!TIP]
-> To open the Action Center on Windows 10 or Windows 11, take one of the following steps:
-> - On the right end of the taskbar, select the Action Center icon.
-> - Press the Windows logo key button + A.
-> - On a touchscreen device, swipe in from the right edge of the screen.
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up when scans are done or remediation actions are taken. However, your security operations team will see the results of a scan if an attack is detected and stopped. Alerts, such as an initial access alert, are generated and will appear in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
 ## Disable scans after an update
 

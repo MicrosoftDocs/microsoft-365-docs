@@ -34,7 +34,7 @@ Attack simulation training allows you to run realistic but benign cyber attack s
 
 ## Send a payload to target users
 
-1. Navigate to [Attack Simulation Training](https://security.microsoft.com/attacksimulator ) in your subscription.
+1. Navigate to [Attack Simulation Training](https://security.microsoft.com/attacksimulator) in your subscription.
 1. Choose **Simulations** from the top navigation bar.
 1. Select **Launch a simulation**.
 1. Pick the technique you'd like to use from the flyout, and press **Next**.

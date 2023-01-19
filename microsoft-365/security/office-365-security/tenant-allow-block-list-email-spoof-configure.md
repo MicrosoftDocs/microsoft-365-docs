@@ -23,11 +23,11 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-This article describes how to create and manage allow and block entries for domains and email addresses (including spoofed senders) that are available in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md).
+This article describes how to create and manage allow and block entries for domains and email addresses (including spoofed senders) that are available in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 You manage allow and block entries for email in the Microsoft 365 Defender Portal or in Exchange Online PowerShell.
 
@@ -192,7 +192,10 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ### Use the Microsoft 365 Defender portal to modify allow or block entries for domains and email addresses in the Tenant Allow/Block List
 
-When you modify allow or block entries for domains and email addresses in the Tenant Allow/Block list, you can only modify the expiration date and notes.
+You can make the following modifications to entries for domains and email addresses in the Tenant Allow/Block list:
+
+- **Block entries**: The expiration date and notes.
+- **Allow entries**: Notes.
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**. Or, to go directly to the **Tenant Allow/Block List** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -201,16 +204,12 @@ When you modify allow or block entries for domains and email addresses in the Te
 3. On the **Domains & addresses** tab, select the check box of the entry that you want to modify, and then click the ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** button that appears.
 
 4. The following settings are available in the **Edit domain & addresses** flyout that appears:
-
-   - **Remove allow entry after** or **Remove block entry after**:
-     - You can extend allow entries for a maximum of 30 days after the creation date.
-     - You can extend block entries for a maximum of 90 days after the creation date or set them to **Never expire**.
-
+   - **Remove block entry after**: You can extend block entries for a maximum of 90 days after the creation date or set them to **Never expire**.
    - **Optional note**
 
    When you're finished, click **Save**.
 
-Note that with **allow expiry management** (currently in private preview), if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from the date of allow creation, Microsoft will remove the allow.
+Note that with **allow expiry management**, if Microsoft has not learned from the allow, Microsoft will automatically extend the expiry time of allows, which are going to expire soon, by 30 days to prevent legitimate email from going to junk or quarantine again. If Microsoft does not learn within 90 calendar days from the date of allow creation, Microsoft will remove the allow.
 
 If Microsoft has learned from the allow, the allow will be removed and you will get an alert informing you about it.
 
@@ -523,6 +522,6 @@ The instructions to report the message are identical to the steps in [Use the Mi
 
 - [Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](submissions-admin.md)
 - [Report false positives and false negatives](submissions-outlook-report-messages.md)
-- [Manage your allows and blocks in the Tenant Allow/Block List](manage-tenant-allow-block-list.md)
+- [Manage your allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md)
 - [Allow or block files in the Tenant Allow/Block List](tenant-allow-block-list-files-configure.md)
 - [Allow or block URLs in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md)

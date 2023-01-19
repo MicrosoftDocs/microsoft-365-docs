@@ -36,7 +36,7 @@ You will only be able to mark and notify users of review results if the message 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>. To go directly to the **User reported** page, use <https://security.microsoft.com/reportsubmission?viewid=user>.
 
 - To modify the configuration for User reported messages, you need to be a member of one of the following role groups:
-  - Organization Management or Security Administrator in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+  - Organization Management or Security Administrator in the [Microsoft 365 Defender portal](mdo-portal-permissions.md).
   - Organization Management in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - You'll also need access to Exchange Online PowerShell. If the account that you're trying to use doesn't have access to Exchange Online PowerShell, you'll receive an error that says *Specify an email address in your domain*. For more information about enabling or disabling access to Exchange Online PowerShell, see the following topics:

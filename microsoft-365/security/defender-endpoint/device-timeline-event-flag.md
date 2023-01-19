@@ -42,7 +42,7 @@ The Defender for Endpoint device timeline helps you research and investigate ano
     :::image type="content" source="images/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="images/event-side-panel.png":::
 
    
-- All MITRE techniques are shown when there’s more than 1 related technique:
+- All MITRE techniques are shown when there's more than 1 related technique:
 
     :::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="images/new-timeline-mitre-techniques.png":::
 
