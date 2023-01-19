@@ -45,14 +45,14 @@ Before you get started, see [the main Defender for Endpoint on Linux page](micro
 In addition, for Saltstack deployment, you need to be familiar with Saltstack administration, have Saltstack installed, have configured the Master and Minions, and know how to apply states. Saltstack has many ways to complete the same task. These instructions assume availability of supported Saltstack modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Saltstack documentation](https://docs.saltproject.io/) for details.
 
 - Saltstack needs to be installed on at least one computer (Saltstack calls this the master).
-- The Saltstack master must have accepted the managed nodes (Saltstack calls these minions) connections
-- The Saltstack minions must be able to resolve communication to the Saltstack master (be default the minions try to communicate with a machine named 'salt')
-- Ping test:
+- The Saltstack master must have accepted the managed nodes (Saltstack calls these minions) connections.
+- The Saltstack minions must be able to resolve communication to the Saltstack master (be default the minions try to communicate with a machine named 'salt').
+- Rung this ping test:
 
     ```bash
     sudo salt '*' test.ping
     ```
-- The Saltstack master has a file server location where the MDE files can be distributed from (by default Saltstack uses the /srv/salt folder as the default distribution point)
+- The Saltstack master has a file server location where the Microsoft Defender for Endpoint files can be distributed from (by default Saltstack uses the /srv/salt folder as the default distribution point)
 
 ## Download the onboarding package
 
@@ -64,7 +64,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
 
    :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="The Download onboarding package option" lightbox="images/portal-onboarding-linux-2.png":::
 
-4. On the SaltStack Master extract the contents of the archive to the SaltStack Server's folder (typically `/srv/salt`):
+4. On the SaltStack Master, extract the contents of the archive to the SaltStack Server's folder (typically `/srv/salt`):
 
     ```bash
     ls -l
@@ -91,7 +91,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
 
     The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
-    In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
+    In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.
 
     > [!WARNING]
     > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
@@ -144,10 +144,11 @@ Create a SaltState state file in your configuration repository (typically `/srv/
         - required: install_mdatp_package
     ```
 
-The completed install state file should look similar to this:
-```Output
-add_ms_repo:
-  pkgrepo.managed:
+    The completed install state file should look similar to this:
+
+    ```Output
+    add_ms_repo:
+    pkgrepo.managed:
     - humanname: Microsoft Defender Repository
     {% if grains['os_family'] == 'Debian' %}
     - name: deb [arch=amd64,armhf,arm64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
@@ -163,21 +164,21 @@ add_ms_repo:
     - gpgcheck: true
     {% endif %}
 
-install_mdatp_package:
-  pkg.installed:
+    install_mdatp_package:
+    pkg.installed:
     - name: matp
     - required: add_ms_repo
     
-copy_mde_onboarding_file:
-  file.managed:
+    copy_mde_onboarding_file:
+    file.managed:
     - name: /etc/opt/microsoft/mdatp/mdatp_onboard.json
     - source: salt://mde/mdatp_onboard.json
     - required: install_mdatp_package
-```
+    ```
 
-Create a SaltState state file in your configuration repository (typically `/srv/salt`) that applies the necessary states to offboard and remove Defender for Endpoint. Before using the offboarding state file you will need to download the offboading package from the Security portal and extract it in the same way you did the onboarding package. Be aware that the downloaded offboarding package is only valid for a limited period of time.
+Create a SaltState state file in your configuration repository (typically `/srv/salt`) that applies the necessary states to offboard and remove Defender for Endpoint. Before using the offboarding state file, you will need to download the offboading package from the Security portal and extract it in the same way you did the onboarding package. The downloaded offboarding package is only valid for a limited period of time.
 
-- Create an Uninstall state file `uninstall_mdapt.sls` and add he state to remove the `mdatp_onboard.json` file
+- Create an Uninstall state file `uninstall_mdapt.sls` and add the state to remove the `mdatp_onboard.json` file
 
     ```bash
     cat /srv/salt/uninstall_mdatp.sls
@@ -203,21 +204,22 @@ Create a SaltState state file in your configuration repository (typically `/srv/
         - name: mdatp
     ```
 
-The complete uninstall state file should look similar to this:
-```Output
-remove_mde_onboarding_file:
-  file.absent:
-    - name: /etc/opt/microsoft/mdatp/mdatp_onboard.json
+    The complete uninstall state file should look similar to this:
+    
+    ```Output
+    remove_mde_onboarding_file:
+      file.absent:
+        - name: /etc/opt/microsoft/mdatp/mdatp_onboard.json
 
-offboard_mde:
-  file.managed:
-    - name: /etc/opt/microsoft/mdatp/mdatp_offboard.json
-    - source: salt://mde/offboard/mdatp_offboard.json
+    offboard_mde:
+      file.managed:
+        - name: /etc/opt/microsoft/mdatp/mdatp_offboard.json
+        - source: salt://mde/offboard/mdatp_offboard.json
 
-remove_mde_packages:
-  pkg.removed:
-    - name: mdatp
-```
+    remove_mde_packages:
+      pkg.removed:
+        - name: mdatp
+    ```
 
 ## Deployment
 
@@ -229,8 +231,8 @@ Now apply the state to the minions. The below command will apply the state to ma
     salt 'mdetest*' state.apply install_mdatp
     ```
 
-> [!IMPORTANT]
-> When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes.
+    > [!IMPORTANT]
+    > When the product starts for the first time, it downloads the latest antimalware definitions. Depending on your Internet connection, this can take up to a few minutes.
 
 - Validation/configuration:
 
