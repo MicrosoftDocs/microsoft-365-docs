@@ -1034,7 +1034,10 @@ If you are not seeing data in your reports, check the filters that you're using 
 
 ## Schedule report
 
-1. On the main page for the specific report, click ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **Create schedule**.
+> [!NOTE]
+> To create or manage report schedules, you need to be a member of the **Organization management** role.
+
+1. On the main page for the specific report, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create schedule**.
 2. The **Create scheduled report** wizard opens. On the **Name scheduled report** page, review or customize the **Name** value, and then click **Next**.
 3. On the **Set preferences** page, configure the following settings:
    - **Frequency**: Select one of the following values:

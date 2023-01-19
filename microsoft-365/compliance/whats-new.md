@@ -38,6 +38,13 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## January 2023
+
+### Sensitivity labels
+- **Rolling out in preview**: As a parity feature for the AIP add-in, built-in labeling for Windows supports the configuration of a [default sublabel for a parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label).
+- **Rolling out in preview**: Word, Excel, and PowerPoint in Office for Mac also supports the [sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [label colors](sensitivity-labels-office-apps.md#label-colors).
+- The earliest version for the AIP add-in to be [disabled by default in Office apps](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps) for the Current Channel and Monthly Enterprise Channel is now version 2302. The minimum version for the Semi-Annual Channel hasn't changed.
+
 ## December 2022
 
 ### Communication compliance
@@ -56,7 +63,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 - [Examples of file paths](/microsoft-365/compliance/insider-risk-management-settings) to denote specific and wildcard folders and sub-folders to be excluded.
 
 ### Microsoft Priva
-- [Tags for reviewing data in a subject rights request](/privacy/priva/subject-rights-requests-data-review#apply-tags) provide greater flexibility. There are now two default tags and 21 custom tags that can be named and defined by an organization. Tags can now be applied to, or removed from, mutlipe content items at once.
+- [Tags for reviewing data in a subject rights request](/privacy/priva/subject-rights-requests-data-review#apply-tags) provide greater flexibility. There are now two default tags and 21 custom tags that can be named and defined by an organization. Tags can now be applied to, or removed from, multiple content items at once.
 - The maximum file size for [file import during data review](/privacy/priva/subject-rights-requests-data-review#import-additional-files) for a subject rights request has increased to 500 MB.
 - Instructions for working with the [action execution log report](/privacy/priva/subject-rights-requests-delete#action-execution-log-report) for a delete request have been updated; including a clarification that its retention period is the same as all other subject rights request reports.
 
