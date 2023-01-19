@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting issues when switching to Microsoft Defender for Endpoint
-description: Learn how to troubleshoot issues when you make the switch to Microsoft Defender for Endpoint.
+title: Troubleshooting issues when moving to Microsoft Defender for Endpoint
+description: Learn how to troubleshoot issues when you migrate to Microsoft Defender for Endpoint.
 keywords: migration, windows defender, advanced endpoint protection, antivirus, antimalware, passive mode, active mode, troubleshooting
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -18,24 +18,24 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 01/10/2023
+ms.date: 01/12/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.subservice: mde
 search.appverid: met150
 ---
 
-# Troubleshooting issues when switching to Microsoft Defender for Endpoint
+# Troubleshooting issues when migrating to Microsoft Defender for Endpoint
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-This article provides troubleshooting information for security administrators who are experiencing issues when switching from a non-Microsoft endpoint protection solution to Microsoft Defender for Endpoint.
+This article provides troubleshooting information for security administrators who are experiencing issues when moving from a non-Microsoft endpoint protection solution to Microsoft Defender for Endpoint.
 
 ## Microsoft Defender Antivirus is getting uninstalled on Windows Server
 
-When you make the switch to Defender for Endpoint, you begin with your non-Microsoft antivirus/antimalware protection in active mode. As part of the setup process, you configure Microsoft Defender Antivirus in passive mode. Occasionally, your non-Microsoft antivirus/antimalware solution might prevent Microsoft Defender Antivirus from running on Windows Server. In fact, it can look like Microsoft Defender Antivirus has been removed from Windows Server.
+When you migrate to Defender for Endpoint, you begin with your non-Microsoft antivirus/antimalware protection in active mode. As part of the setup process, you configure Microsoft Defender Antivirus in passive mode. Occasionally, your non-Microsoft antivirus/antimalware solution might prevent Microsoft Defender Antivirus from running on Windows Server. In fact, it can look like Microsoft Defender Antivirus has been removed from Windows Server.
 
 To resolve this issue, take the following steps:
 

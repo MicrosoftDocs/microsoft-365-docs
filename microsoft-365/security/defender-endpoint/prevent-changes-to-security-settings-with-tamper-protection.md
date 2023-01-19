@@ -70,7 +70,7 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 > When tamper protection is turned on, tamper protected settings cannot be changed from their default value. Changes might appear to be successful in Intune, but will not actually be allowed by tamper protection. For the most current list of tamper protected settings, contact support.
 
 
-### How it works
+## How tamper protection works
 
 Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values, and prevents your security settings from being changed through apps and methods such as:
 
@@ -79,35 +79,64 @@ Tamper protection essentially locks Microsoft Defender Antivirus to its secure, 
 
 Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how non-Microsoft antivirus apps register with the Windows Security app. If your organization is using Defender for Endpoint, individual users can't change the tamper protection setting; in those cases, tamper protection is managed by your security team.
 
-### What do you want to do?
-
-|To perform this task...|See this section...|
-|---|---|
-|Manage tamper protection across your tenant <p> Use the Microsoft 365 Defender portal to turn tamper protection on or off|[Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)|
-|Fine-tune tamper protection settings in your organization <p> Use Microsoft Intune to turn tamper protection on or off. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Intune](manage-tamper-protection-microsoft-endpoint-manager.md)|
-|Turn tamper protection on (or off) for your organization by using Configuration Manager|[Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
-|Turn tamper protection on (or off) for an individual device (for home users or devices that are not managed by a security team)|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
-|View details about tampering attempts on devices|[View information about tampering attempts in Microsoft 365 Defender](#view-information-about-tampering-attempts)|
-|Review your security recommendations |[Review security recommendations](#review-your-security-recommendations)|
-|Review the list of frequently asked questions (FAQs)|[Browse the FAQs](faqs-tamper-protection.md)|
-
-## Potential dependency on cloud protection  
+## Tamper protection and cloud protection  
   
-Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS).
+Depending on the method or management tool you use to enable tamper protection, there might be a dependency on [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md). Cloud-delivered protection is also referred to as cloud protection, or Microsoft Advanced Protection Service (MAPS). The following table summarizes whether there's a dependency on cloud protection.
 
-The following table provides details on the methods, tools, and dependencies.
-
-| How tamper protection is enabled | Dependency on cloud protection |
+| How tamper protection is enabled | Dependency on cloud protection? |
 |---|---|
 |Microsoft Intune|No|
 |Microsoft Endpoint Configuration Manager with Tenant Attach|No|
 |Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))|Yes|
 
+## Methods to configure tamper protection
+
+The following table lists the various methods you can use to configure tamper protection:
+
+|To perform this task...|See this content...|
+|---|---|
+|Manage tamper protection across your tenant <br/><br/> Use the Microsoft 365 Defender portal to turn tamper protection on or off|[Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)|
+|Fine-tune tamper protection settings in your organization <br/><br/> Use Microsoft Intune to turn tamper protection on or off. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Intune](manage-tamper-protection-microsoft-endpoint-manager.md)|
+| Protect Microsoft Defender Antivirus exclusions | [What about exclusions?](#what-about-exclusions) <br/><br/>[How to determine whether the functionality to protect exclusions is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device) |
+|Turn tamper protection on (or off) for your organization by using Configuration Manager|[Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
+|Turn tamper protection on (or off) for an individual device (for home users or devices that aren't managed by a security team)|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
+|View details about tampering attempts on devices|[View information about tampering attempts in Microsoft 365 Defender](#view-information-about-tampering-attempts)|
+|Review your security recommendations |[Review security recommendations](#review-your-security-recommendations)|
+|Review the list of frequently asked questions (FAQs)|[Browse the FAQs](faqs-tamper-protection.md)|
+
+## What about exclusions?
+
+If your organization has [exclusions defined for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md), tamper protection will protect those exclusions, provided all of the following conditions are met:
+
+- `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).)
+- Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. (See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
+- Tamper protection is deployed and managed by using Intune. (See [Manage tamper protection for your organization using Microsoft Intune](manage-tamper-protection-microsoft-endpoint-manager.md).)
+- Devices are running Windows Defender platform `4.18.2111.*` or later. (See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).)
+- Functionality to protect exclusions is enabled on devices. (See [How to determine whether the functionality is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device).)
+
+> [!TIP]
+> For more detailed information about exclusions, see [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
+
+### How to determine whether the functionality to protect exclusions is enabled on a Windows device
+
+You can use a registry key to determine whether the functionality to protect Microsoft Defender Antivirus exclusions is enabled.
+
+1. On a Windows device open Registry Editor. (Read-only mode is fine; you won't be editing the registry key.)
+
+2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**. 
+
+   - If **TPExclusions** has a value of `1`, then the new functionality to protect exclusions is enabled on the device.
+   - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device.
+
+> [!CAUTION]
+> Do not change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key will have no effect on whether tamper protection applies to exclusions.
+
 ## Are you using Windows Server 2012 R2, 2016, or Windows version 1709, 1803, or 1809?
 
 If you're using Windows Server 2012 R2 using the modern unified solution, Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
 
-On Windows Server 2016, the Settings app won't accurately reflect the status of real-time protection when tamper protection is enabled.
+> [!IMPORTANT]
+> On Windows Server 2016, the Settings app won't accurately reflect the status of real-time protection when tamper protection is enabled.
 
 ### Use PowerShell to determine whether tamper protection and real-time protection are turned on
 
@@ -119,9 +148,9 @@ On Windows Server 2016, the Settings app won't accurately reflect the status of 
 
 ## View information about tampering attempts
 
-Tampering attempts typically indicate bigger cyberattacks. Bad actors try to change security settings as a way to persist and stay undetected. If you're part of your organization's security team, you can view information about such attempts, and then take appropriate actions to mitigate threats.
+Tampering attempts typically indicate that a larger cyberattack has taken place. Bad actors try to change security settings as a way to persist and stay undetected. If you're part of your organization's security team, you can view information about such attempts, and then take appropriate actions to mitigate threats.
 
-When a tampering attempt is detected, an alert is raised in the [Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)).
+Whenever a tampering attempt is detected, an alert is raised in the [Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)).
 
 Using [endpoint detection and response](overview-endpoint-detection-response.md) and [advanced hunting](advanced-hunting-overview.md) capabilities in Microsoft Defender for Endpoint, your security operations team can investigate and address such attempts.
 
