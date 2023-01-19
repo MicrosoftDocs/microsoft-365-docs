@@ -59,7 +59,7 @@ cd XMDEClientAnalyzer
 
 ### Install the components
 
-Run as non-root user to install required pip and lxml components.
+Run as a non-root user to install required pip and lxml components.
 
 ```sh
 ./mde_support_tool.sh
@@ -67,7 +67,7 @@ Run as non-root user to install required pip and lxml components.
 
 ### Collect the diagnosics
 
-To collect actual diagnostic package and generate the result archive file, run again as root.
+To collect the actual diagnostic package and generate the result archive file, run again as root.
 
 ```sh
 sudo ./mde_support_tool.sh -d
