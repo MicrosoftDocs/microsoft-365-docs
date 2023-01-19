@@ -41,7 +41,8 @@ Response actions run along the top of the file page, and include:
 
 - Stop and Quarantine File
 - Add Indicator
-- Download file
+- Download file 
+- Collect file
 - Ask Defender Experts
 - Action center
 
