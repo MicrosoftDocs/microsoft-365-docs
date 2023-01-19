@@ -22,8 +22,6 @@ ms.subservice: mde
 ms.reviewer: mkaminska
 ---
 
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
-
 # Device health, Microsoft Defender Antivirus health report
 
 **Applies to:**
@@ -99,7 +97,8 @@ Up-to-date reporting generates information for devices that meet the following c
 - Engine version: 1.1.19300.2+
 - Platform version: 4.18.2202.1+
 - Cloud protection enabled
-- Windows OS
+- MsSense.exe version 10.8210.x or later
+- Windows OS - Windows 10 1809 or later
    >[!Note]
    >Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
 
