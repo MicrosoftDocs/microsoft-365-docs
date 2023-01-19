@@ -65,9 +65,7 @@ Click ![Filter icon.](../../media/m365-cc-sc-filter-icon.png) **Filter** to filt
 
 To create a Training campaign, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab.
-
-   Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
 2. On the **Training** tab, click ![Create new icon.](../../media/m365-cc-sc-filter-icon.png) **Create new**.
 
@@ -290,18 +288,14 @@ You can select **Edit** in each section to modify the settings within the sectio
 
 When you're finished, click **Submit**.
 
-## View details reports for Training campaigns
+## View details and reports for Training campaigns
 
-To view the details or reports for a Training campaign, do the following steps:
+To view the details and reports for a Training campaign, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab.
-
-   Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
 2. On the **Training** tab, do one of the following steps:
-
    - Select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> ![View report icon.](../../media/m365-cc-sc-eye-icon.png) **View report**. You might need to scroll to the right to see **⋮ (Actions)**.
-
    - In the list of Training campaigns, click anywhere in the row without selecting the check box (for example, on the **Name** value).
 
 3. A details page for the Training campaign opens with the following tabs:
@@ -315,21 +309,33 @@ These tabs are described in the following sections.
 
 The **Report** tab of the Training campaign shows the following information:
 
-- **Training completion** section: For each Training module that's included in the Training campaign, the following information is shown:
-  - Users who completed that specific Training modules in the Training campaign as a percentage and a fraction ().
-  - The percentage of users who started one or more of the Training modules in the Training campaign.
-  - The percentage of users who haven't haven't started any of the Training modules in the Training campaign.
+- **Training completion** section:
+  - Each Training module that's included in the Training campaign is shown with a bar graph and a fraction that shows how many people have completed the module (number of users / total number of users).
+  - Using the previous data, the top of the section shows:
+    - The percentage of users who completed all modules in the campaign.
+    - The percentage of users who completed some of the modules in the campaign.
+    - The percentage of users who haven't started any of the modules in the campaign.
 
 - **All user activity** section:
+  - **Successfully received training notification**: A bar graph and a fraction that shows how main people received notifications for the modules in the campaign.
 
 ### Users tab
 
 The **Users** tab shows the following information about the users who were assign to the Training campaign:
 
 - **Display name**
-- **Training status**
+- **Training status**: One of the following values:
+  - **Not started**: The user hasn't started any Training modules in the campaign.
+  - **In progress**: The user has completed some of the modules in the campaign.
+  - **Completed**: The user has completed all Training modules in the campaign.
 - **Training completion date**
 - **Mail**
+
+To add or remove the **Training date status** or **Department** columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**.
+
+To download the displayed results to a RecordExport.csv file in the Downloads folder, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export**.
+
+To export the results
 
 ### Details tab
 
@@ -344,9 +350,7 @@ The **Details** tab of the Training campaign shows the following information:
 
 To delete an existing Training campaign, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab.
-
-   Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
 2. On the **Training** tab, select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**. You might need to scroll to the right to see **⋮ (Actions)**.
 
