@@ -30,9 +30,11 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 Assessment templates that belong to the same regulation family now count as one template. This change means that when you purchase a premium template license for a regulation, the license will apply for all levels and versions of that regulation. Review the [list of templates](compliance-manager-templates-list.md) and a summary of [template licensing changes starting December 2022](compliance-manager-faq.yml#what-changed-with-template-licensing-in-december-2022-).
 
+Also new in December: Improvement actions now provide greater visibility into related controls and assessments so you can better understand the impact of completing an action. Each improvement action details page has a new [**Related controls** tab](compliance-manager-improvement-actions.md#related-controls) that lists all the controls associated to the action, with a link to each control's description. In the **Summary** section, the number underneath **Assessments** is now linked. When you select the number, you'll see a flyout pane listing all the assessments related to that action.
+
 ## November 2022
 
-Compliance Manager now allows you to assign user roles that are specific to individual assessments. This feature allows you to provide assessors with scoped access to Compliance Manager. Learn more about [granting user access to individual assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).
+Compliance Manager allows you to assign user roles that are specific to individual assessments. This feature allows you to provide assessors with scoped access to Compliance Manager. Learn more about [granting user access to individual assessments](compliance-manager-assessments.md#grant-user-access-to-individual-assessments).
 
 ## August 2022
 

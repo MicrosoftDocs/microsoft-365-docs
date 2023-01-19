@@ -39,7 +39,7 @@ When you export documents from a review set in an eDiscovery (Premium) case, you
 
 ## Step 1: Export the documents from a review set
 
-The first step is to create an export job to export documents out of a review set. For more detailed instructions about all the export options, see [Export documents from a review set](export-documents-from-review-set.md). The following procedure highlights the settings to export documents to your organization's Azure Storage account.
+The first step is to create an export job to export documents out of a review set. For more detailed instructions about all the export options, see [Export documents from a review set](ediscovery-export-documents-from-review-set.md). The following procedure highlights the settings to export documents to your organization's Azure Storage account.
 
 1. In the Microsoft Purview compliance portal, open the eDiscovery (Premium) case, select the **Review sets** tab, and then select the review set that you want to export.
 
@@ -47,7 +47,7 @@ The first step is to create an export job to export documents out of a review se
 
 3. On the **Export options** flyout page, type a name (required) and description (optional) for the export.
 
-4. Configure the settings in the documents, metadata, content, and options sections. For more information about these settings, see [Export documents from a review set](export-documents-from-review-set.md).
+4. Configure the settings in the documents, metadata, content, and options sections. For more information about these settings, see [Export documents from a review set](ediscovery-export-documents-from-review-set.md).
 
 5. In the **Output options** section, select the **Condensed directory structure exported to your Azure Storage account** option.
 
@@ -117,9 +117,9 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 
 ## More information
 
-- The export job folder contains the following items. The actual items in the export folder are determined by the export options configured when the export job was created. For more information about these options, see [Export documents from a review set](export-documents-from-review-set.md).
+- The export job folder contains the following items. The actual items in the export folder are determined by the export options configured when the export job was created. For more information about these options, see [Export documents from a review set](ediscovery-export-documents-from-review-set.md).
 
-  - Export_load_file.csv: This CSV file is a detail export report that contains information about each exported document. The file consists of a column for each metadata property for a document. For a list and description of the metadata that's included in this report, see the **Exported field name** column in the table in [Document metadata fields in eDiscovery (Premium)](document-metadata-fields-in-advanced-ediscovery.md).
+  - Export_load_file.csv: This CSV file is a detail export report that contains information about each exported document. The file consists of a column for each metadata property for a document. For a list and description of the metadata that's included in this report, see the **Exported field name** column in the table in [Document metadata fields in eDiscovery (Premium)](ediscovery-document-metadata-fields.md).
 
   - Summary.txt: A text file that contains a summary of the export including export statistics.
 

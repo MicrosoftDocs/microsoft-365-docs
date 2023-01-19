@@ -101,7 +101,7 @@ Start by defining your control objectives, and how they apply across each respec
 
 #### Implement policy in test mode
 
-Evaluate the impact of the controls by implementing them with a DLP policy in test mode. It's ok to apply the policy to all workloads in test mode, so that you can get the full breadth of results, but you can start with one workload if you need to.
+Evaluate the impact of the controls by implementing them with a DLP policy in test mode. Actions defined in a policy are not applied while the policy is in test mode. It's ok to apply the policy to all workloads in test mode, so that you can get the full breadth of results, but you can start with one workload if you need to.
 
 #### Monitor outcomes and fine-tune the policy
 
@@ -110,8 +110,6 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 - adjusting the locations and people/places that are in or out of scope
 - tune the conditions that are used to determine if an item and what is being done with it matches the policy
 - the sensitive information definition/s
-- the actions
-- the level of restrictions
 - add new controls
 - add new people
 - add new restricted apps

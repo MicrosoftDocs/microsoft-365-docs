@@ -11,7 +11,7 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.localizationpriority: medium
-  ms.date: 10/24/2022
+  ms.date: 01/05/2023
   ms.reviewer: shlomiakirav
   f1.keywords: NOCSH 
   ms.collection: 
@@ -134,7 +134,7 @@ sections:
         answer: |
           *Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan 2 license. What happens if you have a mix of subscriptions like this example in your tenant?*
 
-          The highest functional Microsoft endpoint security subscription sets the experience for your tenant. Using our example, your tenant experience would be Defender for Endpoint Plan 2 for all 20 users. **You can now contact support and request an override for your tenant experience**. 
+          Currently, the highest functional Microsoft endpoint security subscription sets the experience for your tenant. Using our example, your tenant experience would be Defender for Endpoint Plan 2 for all 20 users. **You can contact support and request an override for your tenant experience**. 
           
           Referring to our example, you could request an override to keep the simplified Defender for Business experience, even if you have some Defender for Endpoint Plan 2 licenses. See [Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).
 

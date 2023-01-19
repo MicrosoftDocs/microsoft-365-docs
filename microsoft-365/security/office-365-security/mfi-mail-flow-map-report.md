@@ -23,7 +23,7 @@ search.appverid: met150
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -51,7 +51,7 @@ If you click **Filters** in a report view, you can specify a date range with **S
 
 To email the report for a specific date range to one or more recipients, click **Request download**.
 
-Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md).
+Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](/exchange/monitoring/mail-flow-insights/mfi-fix-possible-mail-loop-insight).
 
 ## Details table view for the Mail flow map
 
@@ -75,4 +75,4 @@ To go back to the reports view, click **View report**.
 
 ## See also
 
-For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other mail flow insights, see [Mail flow insights in Exchange Online](/exchange/monitoring/mail-flow-insights/mail-flow-insights).

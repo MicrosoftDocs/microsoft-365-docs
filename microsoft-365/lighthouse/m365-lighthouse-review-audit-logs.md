@@ -83,6 +83,7 @@ The following table lists activities captured within Lighthouse audit logs. The 
 
 Use Microsoft Graph API to access more audit events, if needed. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
 
+
 ## Related content
 
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\

@@ -53,7 +53,7 @@ To [manage IB policies](information-barriers-policies.md), you must be assigned 
 - Compliance administrator
 - IB Compliance Management
 
-To learn more about roles and permissions, see [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+To learn more about roles and permissions, see [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](../security/office-365-security/scc-permissions.md).
 
 ## Configuration concepts
 
