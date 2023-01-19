@@ -156,7 +156,7 @@ With content marking enabled for the label, the text you specified will be added
 
 ## See Also
 
-[Overview of sensitivity labels](/Office365/SecurityCompliance/sensitivity-labels)
+[Overview of sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
 
 [Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
 

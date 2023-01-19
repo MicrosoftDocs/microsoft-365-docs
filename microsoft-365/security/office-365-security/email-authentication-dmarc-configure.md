@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -226,13 +226,13 @@ If you publish a DMARC reject policy (p=reject), no other customer in Microsoft 
 
 ## How Microsoft 365 handles inbound email that fails DMARC
 
-If the DMARC policy of the sending server is `p=reject`, [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) marks the message as spoof instead of rejecting it. In other words, for inbound email, Microsoft 365 treats `p=reject` and `p=quarantine` the same way. Admins can define the action to take on messages classified as spoof within the [anti-phishing policy](anti-phishing-policies-about.md).
+If the DMARC policy of the sending server is `p=reject`, [Exchange Online Protection](eop-about.md) (EOP) marks the message as spoof instead of rejecting it. In other words, for inbound email, Microsoft 365 treats `p=reject` and `p=quarantine` the same way. Admins can define the action to take on messages classified as spoof within the [anti-phishing policy](anti-phishing-policies-about.md).
 
 Microsoft 365 is configured like this because some legitimate email may fail DMARC. For example, a message might fail DMARC if it's sent to a mailing list that then relays the message to all list participants. If Microsoft 365 rejected these messages, people could lose legitimate email and have no way to retrieve it. Instead, these messages will still fail DMARC but they'll be marked as spam and not rejected. If desired, users can still get these messages in their inbox through these methods:
 
 - Users add safe senders individually by using their email client.
 
-- Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to allow messages from the spoofed sender.
+- Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or the [Tenant Allow/Block List](tenant-allow-block-list-about.md) to allow messages from the spoofed sender.
 
 - Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 

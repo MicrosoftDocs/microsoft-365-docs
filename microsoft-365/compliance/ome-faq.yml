@@ -90,7 +90,7 @@ sections:
       - question: |
           Will Office 365 Message Encryption (OME) be deprecated?
         answer: |
-          You can still use the previous version of message encryption called Office 365 Message Encryption (OME), it will not be deprecated at this time. However, we highly encourage organizations to use the new and improved message encryption solution. If you have not already deployed OME, you can't set up a new deployment of the previous version of OME.
+          You can still use the previous version of message encryption called Office 365 Message Encryption (OME). It will be deprecated on July 1, 2023. Office Message Encryption will be automatically replaced and updated to Microsoft Purview Message Encryption. 
 
       - question: |
           My organization uses Active Directory Rights Management, can I use this functionality?
@@ -193,7 +193,7 @@ sections:
       - question: |
           Does the encrypted message portal support preview of encrypted attachments in protected emails?
         answer: |
-          The encrypted message portal supports preview of any encrypted attachment copies added to the encrypted mail. The support file types includes Word, Excel, PowerPoint, and PDF files.  
+          The encrypted message portal supports preview of any encrypted attachment copies added to the encrypted mail. The support file types include Word, Excel, PowerPoint, and PDF files.  
 
       - question: |
           Can I automatically encrypt messages by setting up policies?
@@ -234,7 +234,7 @@ sections:
       - question: |
           Are there any reporting capabilities or insights for encrypted emails?
         answer: |
-          There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Microsoft Purview compliance portal](../security/office-365-security/view-email-security-reports.md).
+          There is an Encryption report in the Security and Compliance Center. See [View email security reports in the Microsoft Purview compliance portal](../security/office-365-security/reports-email-security.md).
             
       - question: |
           Can I use message encryption with compliance features such as eDiscovery?

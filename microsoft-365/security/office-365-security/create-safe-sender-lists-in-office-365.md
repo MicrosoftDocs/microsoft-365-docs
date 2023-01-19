@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -68,8 +68,9 @@ The following example assumes you need email from contoso.com to skip spam filte
 1. **Condition**: **The sender** \> **domain is** \> contoso.com.
 
 2. Configure either of the following settings:
-
-   - **Mail flow rule condition**: **A message header** \> **includes any of these words** \> **Header name**: `Authentication-Results` \> **Header value**: `dmarc=pass` or `dmarc=bestguesspass`.
+   - **Mail flow rule condition**: **The message headers** \> **includes any of these words**:
+     - **Header name**: `Authentication-Results`
+     - **Header value**: `dmarc=pass` or `dmarc=bestguesspass` (add both values).
 
      This condition checks the email authentication status of the sending email domain to ensure that the sending domain is not being spoofed. For more information about email authentication, see [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md).
 
@@ -86,20 +87,20 @@ The following example assumes you need email from contoso.com to skip spam filte
    > - If you allow an IP address that's behind a network address translation (NAT) gateway, you need to know the servers that are involved in the NAT pool in order to know the scope of your IP Allow List. IP addresses and NAT participants can change. You need to periodically check your IP Allow List entries as part of your standard maintenance procedures.
 
 3. **Optional conditions**:
-
    - **The sender** \> **is internal/external** \> **Outside the organization**: This condition is implicit, but it's OK to use it to account for on-premises email servers that might not be correctly configured.
    - **The subject or body** \> **subject or body includes any of these words** \> \<keywords\>: If you can further restrict the messages by keywords or phrases in the subject line or message body, you can use those words as a condition.
 
-4. **Action**: Configure both of these actions in the rule:
-
+4. **Action**: Configure both of the following actions in the rule:
    1. **Modify the message properties** \> **set the spam confidence level (SCL)** \> **Bypass spam filtering**.
-   2. **Modify the message properties** \> **set a message header**: **Set the message header** \<CustomHeaderName\> **to the value** \<CustomHeaderValue\>.
+   2. **Modify the message properties** \> **set a message header**:
+      - **Header name**: For example, `X-ETR`.
+      - **Heaver value**: For example, `Bypass spam filtering for authenticated sender 'contoso.com'`.
 
-      For example, `X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`. If you have more than one domain in the rule, you can customize the header text as appropriate.
+      If you have more than one domain in the rule, you can customize the header text as appropriate.
 
-      When a message skips spam filtering due to a mail flow rule, the value `SFV:SKN` value is stamped in the **X-Forefront-Antispam-Report** header. If the message is from a source that's on the IP Allow List, the value `IPV:CAL` is also added. These values can help you with troubleshooting.
+When a message skips spam filtering due to a mail flow rule, the value `SFV:SKN` value is stamped in the **X-Forefront-Antispam-Report** header. If the message is from a source that's on the IP Allow List, the value `IPV:CAL` is also added. These values can help you with troubleshooting.
 
-      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="The Mail flow rule settings in the EAC for bypassing spam filtering" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
+:::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="Example mail flow rule settings in the new EAC to bypassing spam filtering." lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
 
 ## Use Outlook Safe Senders
 
@@ -108,7 +109,7 @@ The following example assumes you need email from contoso.com to skip spam filte
 
 Instead of an organizational setting, users or admins can add the sender email addresses to the Safe Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md). Safe Senders list entries in the mailbox affect that mailbox only.
 
-This method is not desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender can still be compromised and send malicious content. You should let our filters check every message and then [report the false positive/negative to Microsoft](report-junk-email-messages-to-microsoft.md) if we got it wrong. Bypassing the filtering stack also interferes with [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).
+This method is not desirable in most situations since senders will bypass parts of the filtering stack. Although you trust the sender, the sender can still be compromised and send malicious content. You should let our filters check every message and then [report the false positive/negative to Microsoft](submissions-report-messages-files-to-microsoft.md) if we got it wrong. Bypassing the filtering stack also interferes with [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).
 
 When messages skip spam filtering due to entries in a user's Safe Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:SFE`, which indicates that filtering for spam, spoof, and phishing (not high confidence phishing) was bypassed.
 
@@ -118,7 +119,7 @@ When messages skip spam filtering due to entries in a user's Safe Senders list, 
   - **Move messages to Junk Email folder**: Domain entries and sender email address entries are honored. Messages from those senders are not moved to the Junk Email folder.
   - **Quarantine**: Domain entries are not honored (messages from those senders are quarantined). Email address entries are honored (messages from those senders are not quarantined) if either of the following statements are true:
     - The message is not identified as malware or high confidence phishing (malware and high confidence phishing messages are quarantined).
-    - The email address is not also in a block entry in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) (messages from those senders will be quarantined).
+    - The email address is not also in a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-about.md) (messages from those senders will be quarantined).
 - Entries for blocked senders and blocked domains are honored (messages from those senders are moved to the Junk Email folder). Safe mailing list settings are ignored.
 
 ## Use the IP Allow List
