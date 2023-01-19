@@ -26,7 +26,7 @@ Microsoft 365 Business Premium includes endpoint protection through Microsoft De
 This article includes the following sections:  
 
 - [Working with device groups](#working-with-device-groups)
-- [How to create a new device group](#create-a-device-group-in-the-microsoft-365-defender-portal)
+- [How to create a new device group in the Microsoft 365 Defender portal](#create-a-device-group-in-the-microsoft-365-defender-portal)
 - [How to create a new device category in Intune](#create-a-device-category-in-intune)
 - [How to create dynamic device groups in Azure Active Directory](#create-dynamic-device-groups-in-azure-active-directory)
 - [How categories are used when enrolling devices](#how-categories-are-used-when-enrolling-devices)
