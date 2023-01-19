@@ -508,21 +508,20 @@ With segments and policies defined, Contoso applies the policies by running the 
 
 When the cmdlet finishes, Contoso is compliant with industry requirements.
 
-## Example scenario 2: North Schools District's schools, segments, and policies
+## Example scenario 2: North School District's schools, segments, and policies
 
-NOTE - THIS IS AN 'EXAMPLE OF AN EXAMPLE' TO EMPHASIZE SUPPORT FOR THE DUTY OF CARE REQUIREMENTS. THIS INFORMATION CAN STAY HERE OR BE INCLUDED IN THE EDU CONTENT. IF IT STAYS HERE, THE INFORMATION BELOW WILL BE COMPLETED.
+The North School District has two schools, School 1 and School 2. The district policy is to allow students and teachers to communicate with each other only if they are both in same school. For example, a student and teacher that are both in School 1 can communicate, but a student in School 1 cannot communicate with a teacher in School 2.
+
+For this scenario, multiple segments are configured to support this district policy:
 
 ### North School District's schools and plan
 
-North School District's has five schools:
+North School District's has two schools:
 
-| **Segment** | **Can communicate with** | **Can't communicate with** |
-|:------------|:-------------------------|:---------------------------|
-| School 1 |  |  |
-| School 2 |  |  |
-| School 3 |  |  |
-| School 4 |  |  |
-| School 5 |  |  |
+| **Segment** | **Allowed communication** | **Prevented communication** |
+|:------------|:--------------------------|:----------------------------|
+| School 1 | Students and teachers in School 1 | Students and teachers in School 2 |
+| School 2 | Students and teachers in School 2 | Students and teachers in School 1 |
 ||||
 
 For this structure, North School District's plan includes three IB policies:
@@ -535,13 +534,11 @@ For this structure, North School District's plan includes three IB policies:
 
 North School District will use the School attribute in Azure Active Directory to define segments, as follows:
 
-| School | Segment Definition |
+| Segment | Segment Definition |
 |:-------|:-------------------|
-| School 1 | `New-OrganizationSegment -Name  |
-| School 2 | `New-OrganizationSegment -Name  |
-| School 3 | `New-OrganizationSegment -Name  |
-| School 4 | `New-OrganizationSegment -Name  |
-| School 5 | `New-OrganizationSegment -Name  |
+| School1 | `New-OrganizationSegment -Name "School1" -UserGroupFilter "Department -eq 'School1'"` |
+| School2 | `New-OrganizationSegment -Name "School2" -UserGroupFilter "Department -eq 'School2'"`  |
+| AllTeachers | `New-OrganizationSegment -Name "AllTeachers" -UserGroupFilter "MemberOfGroup -eq 'AllTeachersgroup@northschoolsdistrict.com'"` |
 ||||
 
 With the segments defined, Contoso proceeds to define the IB policies.
@@ -552,13 +549,13 @@ North School District defines three IB policies, as described in the following t
 
 | Policy | Policy Definition |
 |:-------|:------------------|
-| **Policy 1: Prevent Sales from communicating with Research** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In this example, the IB policy is called *Sales-Research*. When this policy is active and applied, it will help prevent users who are in the Sales segment from communicating with users in the Research segment. This policy is a one-way policy; it won't prevent Research from communicating with Sales. For that, Policy 2 is needed. |
-| **Policy 2: Prevent Research from communicating with Sales** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In this example, the IB policy is called *Research-Sales*. When this policy is active and applied, it will help prevent users who are in the Research segment from communicating with users in the Sales segment. |
-| **Policy 3: Allow Manufacturing to communicate with HR and Marketing only** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> In this case, the IB policy is called *Manufacturing-HRMarketing*. When this policy is active and applied, Manufacturing can communicate only with HR and Marketing. HR and Marketing aren't restricted from communicating with other segments. |
+| **Policy 1: Students and teachers in School 1 can communicate with each other** | `New-InformationBarrierPolicy -Name School1Policy -SegmentsAllowed 'School1' -AssignedSegment 'School1' -State Active` <p> In this example, the IB policy is called *School1*. When this policy is active and applied, it will enable students and teachers in School 1 to communicate with each other. This policy is a one-way policy; it won't prevent students and teachers in School 1 from communicating with School 2. For that, Policy 2 is needed. |
+| **Policy 2: Students and teachers in School 2 can communicate with each other** | `New-InformationBarrierPolicy -Name School2Policy -SegmentsAllowed 'School2' -AssignedSegment 'School2' -State Active` <p> In this example, the IB policy is called *School2*. When this policy is active and applied, it will it will enable students and teachers in School 2 to communicate with each other. |
+| **Policy 3: Teachers in different schools can communicate with each other** | `New-InformationBarrierPolicy -Name AllTeachersPolicy -SegmentsAllowed 'AllTeachers' -AssignedSegment 'AllTeachers' -State Active` <p> In this case, the IB policy is called *AllTeachers*. When this policy is active and applied, teachers in School 1 and School 2 can communicate with each other. |
 
-With segments and policies defined, Contoso applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet.
+With segments and policies defined, the North School District applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet.
 
-When the cmdlet finishes, Contoso is compliant with industry requirements
+When the cmdlet finishes, the North School District has implemented their communication policy for students and teachers.
 
 ## Resources
 
