@@ -58,6 +58,13 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **Known issues**
 
+- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines needs to be fixed. Following steps can help you to identify such auditd rules (These commands needs to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+
+```bash
+echo -c >> /etc/audit/rules.d/audit.rules
+augenrules --load
+```
+
 - While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.94.13. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901)
 
 There are two ways to mitigate the problem in upgrading.
@@ -188,7 +195,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 **What's new**
 
-- Added support for Red Hat Enterprise Linux version 9.0
+- Added ` for Red Hat Enterprise Linux version 9.0
 - Added a new field in the output of `mdatp health` that can be used to query the enforcement level of the network protection feature. The new field is called `network_protection_enforcement_level` and can take one of the following values: `audit`, `block`, or `disabled`.
 - Addressed a product bug where multiple detections of the same content could lead to duplicate entries in the threat history
 - Addressed an issue where one of the processes spawned by the product (`mdatp_audisp_plugin`) was sometimes not properly terminated when the service was stopped
