@@ -11,7 +11,7 @@ author: nimishasatapathy
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
@@ -27,11 +27,11 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint Device Control Printer Protection feature enables you to audit, allow, or prevent printer with or without exclusions. 
+Microsoft Defender for Endpoint Device Control Printer Protection feature enables you to audit, allow, or prevent printer with or without exclusions.
 
-## Licensing requirements 
+## Licensing requirements
 
-Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/en-in/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=3). To access and use Printer Protection through group policy, you must have Microsoft 365 E5. 
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=3). To access and use Printer Protection through group policy, you must have Microsoft 365 E5.
 
 ## Deploy using group policy
 
@@ -44,21 +44,18 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="Screenshot of Enabling RSAC using Group Policy. " lightbox="images/enable-rsac-gp.png":::
 
-The purpose of this configuration is to temporarily disable device control on specific machine. 
+   The purpose of this configuration is to temporarily disable device control on specific machine.
 
-> [!NOTE]
-> If you don't see this group policy objects, you need to add the group policy administrative template. You can download administrative template (WindowsDefender.admx and WindowsDefender.admx) from [samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
-.
-
-> [!NOTE]
-> This configuration controls both Removable storage access control [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md) and Printer protection.
-
+   > [!NOTE]
+   > If you don't see this group policy objects, you need to add the group policy administrative template. You can download administrative template (WindowsDefender.admx and WindowsDefender.admx) from [samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
+   >
+   > This configuration controls both Removable storage access control [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md) and Printer protection.
 
 2. Set Default Enforcement:
 
    You can set default access (Deny or Allow) for all Device Control features (RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices).
 
-   For example, you can have either a Deny or an Allow policy for RemovableMediaDevices, but not for CdRomDevices or WpdDevices. You set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked. 
+   For example, you can have either a Deny or an Allow policy for RemovableMediaDevices, but not for CdRomDevices or WpdDevices. You set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
 
    - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Features** > **Device Control** > **Select Device Control Default Enforcement**
 
@@ -80,9 +77,9 @@ The purpose of this configuration is to temporarily disable device control on sp
    - In the **Define device control policy groups** window, specify the network share file path containing the XML groups data.
 
    Take a look at the **Overview** > **Removable storage group**. You can create different group types. Here's one group example XML file for any removable storage and CDROM and Windows portable devices and approved USBs group: [XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)
-         
-> [!NOTE]
-> Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
+
+   > [!NOTE]
+   > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
 4. Create one XML file for access policy rule(s):
 
@@ -96,8 +93,8 @@ The purpose of this configuration is to temporarily disable device control on sp
 
    Take a look at the **Overview** -> **Access policy rule**, you can use **Parameters** to set condition for specific Entry. Here's one [example XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml).
 
-> [!NOTE]
-> Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
+   > [!NOTE]
+   > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
 5. Set location for a copy of the file (evidence):
 
@@ -115,43 +112,41 @@ Here are some common scenarios to help you familiarize with Microsoft Defender f
 
 ### Scenario 1: Prevent print to all but allow print through specific approved USB printer when the machine is corporate network, VPN connected, or print through PDF/XPS file
 
-Allows to print only through approved USB when machine is in corporate network, VPN connected, or print through PDF/XPS file. 
+Allows to print only through approved USB when machine is in corporate network, VPN connected, or print through PDF/XPS file.
 
 You can download the files here, [Printer Protection Samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Printer%20Protection%20Samples/Group%20Policy).
 
-1. Create any printer group and allowed-USB printer group and allowed-file printer group
+1. Create any printer group and allowed-USB printer group and allowed-file printer group.
 
-    1. Group 1: Any printer group
+   1. Group 1: Any printer group.
 
-    :::image type="content" source="media/screenshot-of-removable-storage.png" alt-text="This is the screenshot of removable of storage." lightbox="media/screenshot-of-removable-storage.png":::
+      :::image type="content" source="media/screenshot-of-removable-storage.png" alt-text="This is the screenshot of removable of storage." lightbox="media/screenshot-of-removable-storage.png":::
 
-    2. Group 2: Allowed-USB printer group
+   2. Group 2: Allowed-USB printer group.
 
-    :::image type="content" source="media/screenshot-of-approved-usbs.png" alt-text="This is the screenshot of approved USBs." lightbox="media/screenshot-of-approved-usbs.png":::
+      :::image type="content" source="media/screenshot-of-approved-usbs.png" alt-text="This is the screenshot of approved USBs." lightbox="media/screenshot-of-approved-usbs.png":::
 
-    3. Group 2: Allowed PDF/XPS file printer group: following PrinterConnectionId is used, but if you want to only allow PDF, FriendlyNameId with ‘Microsoft Print to PDF’ is recommended 
+   3. Group 2: Allowed PDF/XPS file printer group: following PrinterConnectionId is used, but if you want to only allow PDF, FriendlyNameId with 'Microsoft Print to PDF' is recommended.
 
-    :::image type="content" source="images/group-3.png" alt-text="This is group 3policy." lightbox="images/group-3.png":::
-    
-    Combine these two groups into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml). See step 3 from the [Deploy using group policy](deploy-and-manage-using-group-policy.md) section to deploy this configuration.
+      :::image type="content" source="images/group-3.png" alt-text="This is group 3policy." lightbox="images/group-3.png":::
 
-    > [!TIP]
-    > Replace `&` with `&amp;` in the value.
+      Combine these two groups into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml). See step 3 from the [Deploy using group policy](deploy-and-manage-using-group-policy.md) section to deploy this configuration.
 
-2. Create policy
+      > [!TIP]
+      > Replace `&` with `&amp;` in the value.
 
-    1. Create Allow and Audit policy for allowed-file printer group 
+2. Create policy.
 
-    :::image type="content" source="media/block-write-execute-access.png" alt-text="This is block write access screenshot." lightbox="media/block-write-execute-access.png":::
+   1. Create Allow and Audit policy for allowed-file printer group.
 
+      :::image type="content" source="media/block-write-execute-access.png" alt-text="This is block write access screenshot." lightbox="media/block-write-execute-access.png":::
 
-    2. Create policy to allow authorized USB printer only when the machine is Corporate Network OR VPN connected 
+   2. Create policy to allow authorized USB printer only when the machine is Corporate Network OR VPN connected.
 
-    :::image type="content" source="media/audit-write.png" alt-text="This is the deafult audit write access screenshot." lightbox="media/audit-write.png":::
+      :::image type="content" source="media/audit-write.png" alt-text="This is the deafult audit write access screenshot." lightbox="media/audit-write.png":::
 
-    3. Create Default Deny custom policy for any other printers 
+   3. Create Default Deny custom policy for any other printers.
 
-    :::image type="content" source="images/create-default.png" alt-text="This is create default." lightbox="images/create-default.png":::
-    
-    Combine these two policy rules into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%201%20GPO%20Policy%20-%20Prevent%20Write%20and%20Execute%20access%20to%20all%20but%20allow%20specific%20approved%20USBs.xml). See step 4 from the [Deploy using group policy](deploy-and-manage-using-group-policy.md) section to deploy this configuration.
+      :::image type="content" source="images/create-default.png" alt-text="This is create default." lightbox="images/create-default.png":::
 
+   Combine these two policy rules into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%201%20GPO%20Policy%20-%20Prevent%20Write%20and%20Execute%20access%20to%20all%20but%20allow%20specific%20approved%20USBs.xml). See step 4 from the [Deploy using group policy](deploy-and-manage-using-group-policy.md) section to deploy this configuration.
