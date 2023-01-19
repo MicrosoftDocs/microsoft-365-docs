@@ -192,6 +192,7 @@ Most organizations use various devices and operating systems. Currently, Defende
 - Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
 - Windows 10 Enterprise IoT
 - macOS (the three most recent releases are supported)
+- Linux
 - iOS
 - Android OS
 
