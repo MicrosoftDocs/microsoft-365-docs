@@ -92,7 +92,7 @@ Customers can join a virtual appointment from any web browser or through the Mic
 
 **How do I join a virtual appointment?**
 
-Share the [Join a Bookings appointment as an attendee](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0) link with your customers for a detailed video and step-by-step process of how to join an appointment.
+Share the [Join a Virtual Appointment as an attendee](https://support.microsoft.com/topic/235765b0-0d9f-4d74-a9f8-e883cb75c0da) link with your customers for a detailed video and step-by-step process of how to join an appointment.
 
 ## Resources for your team
 
