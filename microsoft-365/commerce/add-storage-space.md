@@ -33,6 +33,8 @@ ms.date: 05/24/2022
 
 If you start to run out of storage for your SharePoint sites, you can add storage to your subscription if your plan is eligible. If you don't see the **Office 365 Extra File Storage** in the list of available add-ons, it means your plan is not eligible. For more information, see [Is my plan eligible?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
+When you buy Office 365 Extra File Storage, you can add units in increments of 1 GB.
+
 > [!NOTE]
 > If you bought your subscription through Volume Licensing or a CSP, you can't buy **Office 365 Extra File Storage** for your organization directly from Microsoft. Contact your representative or partner for help.
 > For information about OneDrive storage, see [Set the default storage space for OneDrive users](/onedrive/set-default-storage-space).
@@ -69,9 +71,6 @@ If you haven't yet bought extra storage for your subscription, you can do that.
 6. On the **How does this look?** page, verify the number of gigabytes of storage you selected, review the pricing information, and then select **Next**.
 7. On the **Complete order** page, verify the total. If you need to make any changes, select **Edit order**. If the order requires a credit check, select the check box. When you're finished, select **Place order** \> **Go to Admin Home**.
 
-> [!NOTE]
-> Each Microsoft Office 365 Extra File Storage add-on has a 1 GB capacity.
-
 ## Increase or decrease your extra storage
 
 If you've already bought extra file storage via the **Office 365 Extra File Storage** add-on, you can use these steps to increase or decrease the extra storage space for your subscription. You can reduce the storage to as low as 1 gigabyte. To remove all of the extra storage space, [contact support](../admin/get-help-support.md).
@@ -90,7 +89,6 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Office 365 Enterprise E1
 - Office 365 Enterprise E2
 - Office 365 Enterprise E3
-<!-- Office 365 Enterprise E4 -->
 - Office 365 Enterprise E5
 - Office 365 A3 (faculty)
 - Office 365 A5 (faculty)
