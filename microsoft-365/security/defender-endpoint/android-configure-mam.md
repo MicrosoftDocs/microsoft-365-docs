@@ -159,9 +159,9 @@ Web protection helps to secure devices against web threats and protect users fro
 ## Configure Network Protection
 1. In Microsoft Endpoint Manager Admin center, navigate to **Apps > App configuration policies**. Create a new App configuration policy. Click Managed Apps. 
 
-1. Provide a name and description to uniquely identify the policy. Target the policy to **'Selected apps'** and search for **'Microsoft Defender Endpoint for Android'**. Click the entry and then click **Select** and then **Next**.
+2. Provide a name and description to uniquely identify the policy. Target the policy to **'Selected apps'** and search for **'Microsoft Defender Endpoint for Android'**. Click the entry and then click **Select** and then **Next**.
 
-1. Add the key and value from the table below. Ensure that the **“DefenderMAMConfigs”** key is present in every policy that you create using Managed Apps route. For Managed Devices route, this key should not exist. When you are done, click **Next**.
+3. Add the key and value from the table below. Ensure that the **“DefenderMAMConfigs”** key is present in every policy that you create using Managed Apps route. For Managed Devices route, this key should not exist. When you are done, click **Next**.
 
 | Key | Value Type | Default (true-enable, false-disable) | Description |
 | --- | --- | --- | --- |
@@ -173,7 +173,7 @@ Web protection helps to secure devices against web threats and protect users fro
 | `DefenderNetworkProtectionAutoRemediation` | String | true | true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer Wi-Fi access points or deleting suspicious certificates detected by Defender. |
 | `DefenderNetworkProtectionPrivacy` | String | true | true - enable, false - disable; This setting is managed by IT admins to enable or disable privacy in network protection. |
  
-1. Include or exclude the groups you want the policy to apply to. Proceed to review and submit the policy. 
+4. Include or exclude the groups you want the policy to apply to. Proceed to review and submit the policy. 
 
 ## Configure privacy controls
 Admins can use the following steps to enable privacy and not collect the domain name, app details and network information as part of the alert report for corresponding threats.
