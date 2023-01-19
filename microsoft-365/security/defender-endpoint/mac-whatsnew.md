@@ -41,9 +41,9 @@ Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com
 The issue impacts Microsoft Defender for endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
 
 <details>
-  <summary>Jan-2023 (Build: 101.94.13  | Release version: 20.122112.19413.0)</summary>
+  <summary>Jan-2023 (Build: 101.96.85  | Release version: 20.122112.19413.0)</summary>
 
-&ensp;Build: **101.94.13**<br/>
+&ensp;Build: **101.96.85**<br/>
 &ensp;Release version: **20.122112.19413.0**<br/>
 &ensp;Engine version: **1.1.19900.2**<br/>
 &ensp;Signature version: **1.381.2029.0**<br/>
