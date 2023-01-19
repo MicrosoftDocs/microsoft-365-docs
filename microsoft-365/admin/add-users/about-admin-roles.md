@@ -100,6 +100,21 @@ You'll probably only need to assign the following roles in your organization. By
 |User admin     |    Assign the User admin role to users who need to do the following for all users: <br> - Add users and groups <br> - Assign licenses <br> - Manage most users properties <br> - Create and manage user views <br> - Update password expiration policies <br> - Manage service requests <br> - Monitor service health <br><br>  The user admin can also do the following actions for users who aren't admins and for users assigned the following roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, Reports reader: <br> - Manage usernames<br> - Delete and restore users<br> - Reset passwords <br> - Force users to sign out <br> - Update (FIDO) device keys   |
 |User Experience Success Manager     |    Assign the User Experience Success Manager role to users who need to access Experience Insights, Adoption Score, and the Message Center in the Microsoft 365 admin center. This role includes the permissions of the Usage Summary Reports Reader role.    |
 
+## Permissions based on Admin role and Group type in M365 Admin page
+
+|Admin Role | M365 Groups   | Security Groups  | Distribution Groups   | Mail Enabled Security Groups   |
+| --- | --- | --- | --- | --- |
+| Global admin  | Create, Read, Update, Delete  | Create, Read, Update, Delete | Create, Read, Update, Delete | Create, Read, Update, Delete |
+| Global reader  | Read | Read  | Read | Read |
+| User admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete | Read | Read |
+| Exchange admin  | Create, Read, Update, Delete | Create, Read, Update, Delete - *only groups they own*  | Create, Read, Update, Delete | Create, Read, Update, Delete |
+| Teams admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete - _only groups they own_  | Read | Read |
+| SharePoint admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete -_only groups they own_  | Read | Read |
+| Billing admin  | Read | Read | Read  | Read |
+| Skype admin  | Read | Read | Read | Read |
+| Service admin  | Read | Read  | Read | Read |
+| Group admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete | Read | Read |
+
 ## Delegated administration for Microsoft Partners
 
 If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company, or their company, admin roles. You might want them to do this, for example, if they're setting up and managing your online organization for you.
