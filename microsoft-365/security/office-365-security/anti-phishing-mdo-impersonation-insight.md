@@ -36,7 +36,7 @@ Impersonation is where the sender of an email message looks very similar to a re
 - **Domain impersonation**: Instead of lila@contoso.com, the impersonated sender's email address is lila@ćóntoso.com.
 - **User impersonation**: Instead of michelle@contoso.com, the impersonated sender's email address is rnichell@contoso.com.
 
-Domain impersonation is different from [domain spoofing](anti-spoofing-protection.md), because the impersonated domain is typically a real, registered domain. Messages from senders in the impersonated domain can and often do pass regular email authentication checks that would otherwise identify spoofing attempts (SPF, DKIM, and DMARC).
+Domain impersonation is different from [domain spoofing](anti-phishing-protection-spoofing-about.md), because the impersonated domain is typically a real, registered domain. Messages from senders in the impersonated domain can and often do pass regular email authentication checks that would otherwise identify spoofing attempts (SPF, DKIM, and DMARC).
 
 Impersonation protection is part of the anti-phishing policy settings that are exclusive to Microsoft Defender for Office 365. For more information about these settings, see [Impersonation settings in anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 

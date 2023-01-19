@@ -85,7 +85,7 @@ Select one of the following options to specify which users whose Slack eDiscover
 
 - **All users in your organization**. Select this option to import data for all users.
 
-- **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](create-a-litigation-hold.md).
+- **Only users on Litigation hold**. Select this option to import data only for users whose mailboxes are placed on Litigation hold. This option imports data to user mailboxes that have the LitigationHoldEnabled property set to True. For more information, see [Create a Litigation hold](ediscovery-create-a-litigation-hold.md).
 
 ## Step 4: Map users and select data types to import
 

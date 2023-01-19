@@ -158,7 +158,7 @@ Alternatively, if you need to create an event for multiple retention labels that
 
 Now you narrow the scope of the content. You do this by specifying keywords or a query. For SharePoint and OneDrive content, you can also do this by specifying asset IDs.
 
-Queries use Keyword Query Language (KQL). For more information about the query syntax, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+Queries use Keyword Query Language (KQL). For more information about the query syntax, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 For asset IDs, retention will be enforced only on content with the specified *property:value* pair. For example, if you're using the Asset ID property, enter `ComplianceAssetID:<value>` in the box for asset IDs shown in the following picture.
 
@@ -182,7 +182,7 @@ After retention labels are assigned to content, you can use content search to fi
     
 - To find all content with a specific asset ID, enter the **ComplianceAssetID** property and a value, using the format `ComplianceAssetID:<value>`. 
     
-For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+For more information, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 ## Automate events by using PowerShell
 

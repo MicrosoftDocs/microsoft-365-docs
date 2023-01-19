@@ -18,7 +18,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/05/2022
+ms.date: 1/03/2023
 ---
 
 # Set up Microsoft 365 for frontline workers
@@ -93,7 +93,7 @@ Use this table to validate your HR-driven user provisioning.
 
 Configuring groups in Azure  AD allows you to create and manage policies and license assignments at scale.
 
-- **Assign a unique attribute to frontline workers:** The ability to identify all frontline workers is useful when applying groups to the frontline workforce or for validating that integrations between Azure AD and HR systems are functioning properly. Organizations frequently use the Job ID attribute for this purpose.
+- **Assign a unique attribute to frontline workers:** The ability to identify all frontline workers is useful when applying groups to the frontline workforce or for validating that integrations between Azure AD and HR systems are functioning properly. Organizations frequently use the Job ID attribute for this purpose. Depending on your organization's structure, you may also need [custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) or [directory extension attributes](/azure/active-directory/develop/active-directory-schema-extensions).
 - **Create Azure AD groups and assign frontline users:** With Azure AD groups, you can grant access and permissions to a group of users instead of for each individual user. Groups are used to manage users that all need the same access and permissions to resources, such as potentially restricted apps and services. Instead of adding special permissions to individual users, you create a group that applies the special permissions to every member of that group.
 
 The table below includes recommendations for applying groups in frontline implementations. For more information on group types, membership types, and assignment, see the [Azure AD documentation for groups and membership](/azure/active-directory/fundamentals/concept-learn-about-groups?context=%2Fazure%2Factive-directory%2Fenterprise-users%2Fcontext%2Fugr-context) and [managing groups](/azure/active-directory/fundamentals/how-to-manage-groups). For more information on security group limits and other Azure AD service limits, see [Azure Active Directory Service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).
@@ -106,11 +106,15 @@ The table below includes recommendations for applying groups in frontline implem
 |Create an email alias or team in Microsoft Teams and manage membership automatically. |Microsoft 365 groups, dynamic user |
 |Use [My Staff](/azure/active-directory/roles/my-staff-configure) to delegate permissions to frontline managers to view employee profiles, change phone numbers, and reset passwords. |[Administrative Unit](/azure/active-directory/roles/administrative-units) |
 
+[Learn more about the different types of groups you can create in the Microsoft 365 admin center](/microsoft-365/admin/create-groups/compare-groups).
+
 ### Assign frontline licenses
 
 You can add licenses to individual users or to groups of users in Azure AD. Group assignment is the most scalable way to assign licenses to your frontline workers. You can assign one or more product licenses to a group.
 
 [Learn more about group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) and [assigning licenses to groups](/azure/active-directory/enterprise-users/licensing-groups-assign).
+
+You may need to [unassign licenses](/microsoft-365/admin/manage/remove-licenses-from-users) if you're changing some users from E to F licenses. [Learn more about how to switch specific users from E to F licenses](switch-from-enterprise-to-frontline.md#switch-users-to-a-microsoft-365-f-plan).
 
 ## Step 4: Configure device enrollment
 

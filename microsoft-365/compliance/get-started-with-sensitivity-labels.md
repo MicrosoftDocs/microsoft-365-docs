@@ -130,6 +130,8 @@ You can also use the following resources for basic instructions:
 
 - [Create protected PDFs from Office files](https://support.microsoft.com/topic/aba7e367-e482-49e7-b746-a385e48d01e4)
 
+- [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-abd9f361-6a18-4256-ae46-5d429bc16ba6)
+
 - [Azure Information Protection unified labeling user guide](/azure/information-protection/rms-client/clientv2-user-guide)
 
 If your sensitivity labels apply encryption for PDF documents, these documents can be opened with Microsoft Edge on Windows or Mac. For more information, and alternative readers, see [Which PDF readers are supported for protected PDFs?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)

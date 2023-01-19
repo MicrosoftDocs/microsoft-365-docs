@@ -73,7 +73,7 @@ The type of HR data to import depends on the insider risk management policy and 
 | Healthcare policy| Employee profile |
 |||
 
-For more information about policy templates for insider risk management, see [Insider risk management policies](insider-risk-management-policies.md#policy-templates).
+For more information about policy templates for insider risk management, see [Insider risk management policies](insider-risk-management-policy-templates.md#policy-templates).
 
 For each HR scenario, you'll need to provide the corresponding HR data in one or more CSV files. The number of CSV files to use for your insider risk management implementation is discussed later in this section.
 
