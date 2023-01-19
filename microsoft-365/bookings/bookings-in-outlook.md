@@ -62,7 +62,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
 2. Calendar FreeBusy Anonymous sharing must be enabled to use Bookings with me. This allows the Bookings page to have access to the free/busy information in your Outlook calendar. Use PowerShell to check the status.
 
    ```PowerShell
-     Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
+     Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains, Enabled 
    ```
 
     Anonymous:SharingPolicyAction must be one of the domains in the response. SharingPolicyAction value can be CalendarSharingFreeBusySimple, CalendarSharingFreeBusyDetail, or CalendarSharingFreeBusyReviewer (default).
@@ -72,7 +72,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
-3.    For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyActio as one of the domains.
+3.    For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyAction as one of the domains.
 
    ```Powershell:
       get-mailbox adam@contoso.com | Format-List SharingPolicy
