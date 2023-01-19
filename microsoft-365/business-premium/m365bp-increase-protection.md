@@ -43,7 +43,7 @@ Your subscription includes [preset security policies](../security/office-365-sec
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Screenshot of preset security policies.":::
 
 > [!NOTE]
-> Preset security policies are not the same thing as [security defaults](m365bp-conditional-access.md#security-defaults). Typically, you'll be using *either* security defaults *or* [Conditional Access](m365bp-conditional-access.md#conditional-access) first, and then you'll add your security policies. [Preset security policies](#what-are-preset-security-policies) simplify the process of adding your security policies. You can also [add your own custom policies](#create-custom-security-policies). 
+> Preset security policies are not the same thing as [security defaults](m365bp-conditional-access.md). Typically, you'll be using *either* security defaults *or* Conditional Access first, and then you'll add your security policies. [Preset security policies](#what-are-preset-security-policies) simplify the process of adding your security policies. You can also [add your own custom policies](#create-custom-security-policies). 
 
 ### What are preset security policies?
 
