@@ -139,7 +139,7 @@ This table describes the actions that are available in DLP.
 
 |action in DLP|action parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
-|Restrcit Access or Encrypt content in Microsoft 365 locations|BlockAccess|First property: *Boolean* <br/><br/> Second property: *BlockAccessScope*|This will allow you to block the access or encrypt the content to the specified users.|
+|Restrict access or encrypt content in Microsoft 365 locations|BlockAccess|First property: *Boolean* <br/><br/> Second property: *BlockAccessScope*|This will allow you to block the access or encrypt the content to the specified users.|
 |Set header|SetHeader|First property: *Header Name* <br/><br/> Second property: *Header Value*|The SetHeader parameter specifies an action for the DLP rule that adds or modifies a header field and value in the message header. This parameter uses the syntax "HeaderName:HeaderValue". You can specify multiple header name and value pairs separated by commas|
 |Remove header|RemoveHeader|First property: *MessageHeaderField*<br/><br/> Second property: *String*|The RemoveHeader parameter specifies an action for the DLP rule that removes a header field from the message header. This parameter uses the syntax "HeaderName" or "HeaderName:HeaderValue".You can specify multiple header names or header name and value pairs separated by commas|
 |Redirect the message to specific users|*RedirectMessageTo*|Addresses|Redirects the message to the specified recipients. The message isn't delivered to the original recipients, and no notification is sent to the sender or the original recipients.|
