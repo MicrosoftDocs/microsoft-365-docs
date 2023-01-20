@@ -157,7 +157,7 @@ The **Download file** button can have the following states:
     For Portable Executable file (.exe, .sys, .dll, and others)
     - Global admin or Advanced live response or Alerts 
 
-    Non-Portable Executable file (.txt, .docx) 
+    Non-Portable Executable file (.txt, .docx, and others) 
     - Global admin or Advanced live response
 
 
