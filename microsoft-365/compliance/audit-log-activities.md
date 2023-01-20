@@ -750,8 +750,10 @@ The following table lists events that result from using [sensitivity labels](sen
 |Removed sensitivity label from file|FileSensitivityLabelRemoved <br /><br> SensitivityLabelRemoved|A sensitivity label was removed from a document, email, or calendar event by using Microsoft 365 apps, Office on the web, an auto-labeling policy, or the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet. <br /><br>The operations for this activity are different depending on how the label was removed:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelRemoved) <br /> - Microsoft 365 apps (SensitivityLabelRemoved)|
 
 Additional auditing information for sensitivity labels:
-- When you use sensitivity labels for Microsoft 365 Groups, and therefore Teams sites that are group-connected, see [Azure AD group administration activities](audit-log-activities.md#azure-ad-group-administration-activities).
+- When you use sensitivity labels for Microsoft 365 Groups, and therefore Teams sites that are group-connected, the labels are a property of the group that's included in [Azure AD group administration activities](audit-log-activities.md#azure-ad-group-administration-activities).
 - When you use sensitivity labels for Teams meeting invites, and Teams meeting options and chat, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events).
+- When you use sensitivity labels with Power BI, see [Audit schema for sensitivity labels in Power BI](/power-bi/enterprise/service-security-sensitivity-label-audit-schema).
+- When you apply sensitivity labels by using the Azure Information Protection client or scanner, or the Microsoft Information Protection (MIP) SDK, see [/azure/information-protection/audit-logs]/azure/information-protection/audit-logs](https://learn.microsoft.com/en-us/azure/information-protection/audit-logs).
 
 ## Retention policy and retention label activities
 
