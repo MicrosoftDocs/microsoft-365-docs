@@ -44,8 +44,8 @@ Before you get started, see [the main Defender for Endpoint on Linux page](micro
 
 In addition, for Saltstack deployment, you need to be familiar with Saltstack administration, have Saltstack installed, have configured the Master and Minions, and know how to apply states. Saltstack has many ways to complete the same task. These instructions assume availability of supported Saltstack modules, such as *apt* and *unarchive* to help deploy the package. Your organization might use a different workflow. Refer to the [Saltstack documentation](https://docs.saltproject.io/) for details.
 
-- Saltstack needs to be installed on at least one computer (Saltstack calls this the master).
-- The Saltstack master must have accepted the managed nodes (Saltstack calls these minions) connections.
+- Saltstack needs to be installed on at least one computer (Saltstack calls the computer as the master).
+- The Saltstack master must have accepted the managed nodes (Saltstack calls the nodes as minions) connections.
 - The Saltstack minions must be able to resolve communication to the Saltstack master (be default the minions try to communicate with a machine named 'salt').
 - Rung this ping test:
 
@@ -176,7 +176,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
     - required: install_mdatp_package
     ```
 
-Create a SaltState state file in your configuration repository (typically `/srv/salt`) that applies the necessary states to offboard and remove Defender for Endpoint. Before using the offboarding state file, you will need to download the offboading package from the Security portal and extract it in the same way you did the onboarding package. The downloaded offboarding package is only valid for a limited period of time.
+Create a SaltState state file in your configuration repository (typically `/srv/salt`) that applies the necessary states to offboard and remove Defender for Endpoint. Before using the offboarding state file, you'll need to download the offboading package from the Security portal and extract it in the same way you did the onboarding package. The downloaded offboarding package is only valid for a limited period of time.
 
 - Create an Uninstall state file `uninstall_mdapt.sls` and add the state to remove the `mdatp_onboard.json` file
 
@@ -189,7 +189,7 @@ Create a SaltState state file in your configuration repository (typically `/srv/
         - name: /etc/opt/microsoft/mdatp/mdatp_onboard.json
     ```
 
-- Add the offboarding file deployment to the `uninstall_mdatp.sls` file after the `remove_mde_onboarding_file` state defined above
+- Add the offboarding file deployment to the `uninstall_mdatp.sls` file after the `remove_mde_onboarding_file` state defined in the previous section
     ```Output
     offboard_mde:
       file.managed:
@@ -197,14 +197,14 @@ Create a SaltState state file in your configuration repository (typically `/srv/
         - source: salt://mde/mdatp_offboard.json
     ```
 
-- Add the removal of the MDATP package to the `uninstall_mdatp.sls` file after the `offboard_mde` state defined above
+- Add the removal of the MDATP package to the `uninstall_mdatp.sls` file after the `offboard_mde` state defined in the previous section
     ```Output
     remove_mde_packages:
       pkg.removed:
         - name: mdatp
     ```
 
-    The complete uninstall state file should look similar to this:
+    The complete uninstall state file should look similar to the following output:
     
     ```Output
     remove_mde_onboarding_file:
