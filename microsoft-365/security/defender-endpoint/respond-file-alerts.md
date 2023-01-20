@@ -192,9 +192,9 @@ If a file isn't already stored by Microsoft Defender for Endpoint, you can't dow
 
 The **Collect file** button can have the following states:
 
-- Active - You'll be able to collect the file. 
+- **Active** - You'll be able to collect the file. 
 
-- Disabled - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files. 
+- **Disabled** - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files. 
 
 
     The following permissions are required: 
