@@ -155,10 +155,10 @@ The **Download file** button can have the following states:
   The following permissions are required: 
 
     For Portable Executable file (.exe, .sys, .dll, and others)
-    - Global admin or Live response advanced or Alerts investigations 
+    - Global admin or Advanced live response or Alerts 
 
     Non-Portable Executable file (.txt, .docx) 
-    - Global admin or Live response advanced 
+    - Global admin or Advanced live response
 
 
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
@@ -200,19 +200,13 @@ The **Collect file** button can have the following states:
     The following permissions are required: 
 
     For Portable Executable file (.exe, .sys, .dll, and others)
-    - Global admin or Live response advanced or Alerts investigations 
+    - Global admin or Advanced live response or Alerts 
 
-    Non-Portable Executable file (.txt, .docx) 
-    - Global admin or Live response advanced 
+    Non-Portable Executable file (.txt, .docx, and others) 
+    - Global admin or Advanced live response
 
-
-
-
-**LIOR - THE FOLLOWING STATEMENT WAS HERE ALREADY - IS IT STILL VALID? PLEASE VERIFY** 
 
 If a file hasn't been seen in the organization in the past 30 days, **Collect file** will be disabled. 
-
-
 
 
 > [!Important]
