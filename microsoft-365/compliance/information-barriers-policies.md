@@ -532,7 +532,7 @@ For this structure, North School District's plan includes three IB policies:
 
 ### North School District's defined segments
 
-North School District will use the School attribute in Azure Active Directory to define segments, as follows:
+North School District will use the *Department* attribute in Azure Active Directory to define segments, as follows:
 
 | Segment | Segment Definition |
 |:-------|:-------------------|
