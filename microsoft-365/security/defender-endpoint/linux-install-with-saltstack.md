@@ -34,7 +34,7 @@ search.appverid: met150
 This article describes how to deploy Defender for Endpoint on Linux using Saltstack. A successful deployment requires the completion of all of the following tasks:
 
 - [Download the onboarding package](#download-the-onboarding-package)
-- [Create Saltstack state files](#create-Saltstack-state-files)
+- [Create Saltstack state files](#create-saltstack-state-files)
 - [Deployment](#deployment)
 - [References](#references)
 
