@@ -19,7 +19,6 @@ ms.collection:
 - M365-collaboration
 - enabler-strategic
 - m365initiative-spsites
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to optimize search requests for SharePoint portal pages."
 ---
 
