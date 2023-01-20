@@ -39,20 +39,23 @@ The Page Diagnostics for SharePoint tool is a browser extension for the new Micr
 >[!NOTE]
 > The Page Diagnostics tool only works for SharePoint Online, and cannot be used on a SharePoint system page.
 
-When you analyze a SharePoint site page with the Page Diagnostics for SharePoint tool, you can see information about search requests in the **Number of search requests on a page** result in the Diagnostic tests pane. The line will appear in green if the site page contains fewer than the baseline number of search requests, red if the page exceeds the baseline number, or yellow if there are improvement opportunities. 
+When you analyze a SharePoint site page with the Page Diagnostics for SharePoint tool, you can see information about search requests in the **Number of search requests on a page** result in the Diagnostic tests pane. The line will appear in green if the site page contains fewer than the baseline number of search requests, and red if the page exceeds the baseline number.
 
-- Modern site pages should contain no more than **5** search requests
+- Modern site pages should contain no more than **3** search requests
 
 Possible results include:
 
-- **Attention required** (red): The page exceeds the baseline number of search requests by more than 3 search requests
-- **Improvement opportunities** (yellow): The page exceeds the baseline number of recommended search requests by less than 3 search requests
-- **No action required** (green): The page contains fewer than the baseline number of calls
+- **Attention required** (red): The page exceeds the baseline number of search requests 
+- **No action required** (green): The page contains fewer than the baseline number of search requests
 
 >[!NOTE]
 >The Page Diagnostics tool will only count non-cached search requests. To learn more about search requests caching please see the “**Remediate performance issues related to too many search requests on a page**” section below.
 
-If the **Search Requests to SharePoint** result appears in the **Attention required or Improvement Opportunities** sections, you can click the result for details, including the total number of search requests on the page and a list of the originators of these search requests.
+If the **Search Requests to SharePoint** result appears in the **Attention required** section, you can click the result for details, including the total number of search requests on the page and a list of the originators of these search requests.
+
+**Attention Required**
+
+![Screenshot that shows the red Attention Required notification.](../media/modern-portal-optimization/PageDiagSearchFailure.png)
 
 ## Remediate performance issues related to too many search requests on a page
 
@@ -62,26 +65,22 @@ If a page contains too many search requests, you can use the list of URLs in the
 
 ## Configure Events or Highlighted Content Web Parts to use caching of search results
 
-You can enable group-level caching of search requests on certain web parts, such as Events and Highlighted Content. 
+It is recommended to enable group-level caching of search requests on Events or Highlighted Content web parts, especially for popular home pages or on category pages that are starting points for navigating to more detailed pages. After being enabled, the web part will first look in the cache for existing search results that match the query and the security group(s). If it doesn't find any search results in the cache, it will look in the search index.
 
 1. Go to the site page that contains an Events or Highlighted Content web part and select **Edit**.
 
 2. Select the Events or Highlighted Content web part and then select **Edit web part** ![Screenshot of the edit web part icon.](../media/modern-portal-optimization/edit-web-part-icon.png). 
 
-3. In the web part settings pane, select the **Enable caching for group** setting. 
+3. In the web part settings pane, scroll to the **Group-level caching** setting. 
 
-4. Specify the security group(s) by entering a group name or email. The search results will be cached for all users who belong to the same security group(s).
+4. Specify the security group(s) by entering a group name or email. The search results will be cached for all users who belong to the same security group(s) and improve page performance.
 
-![Screenshot that shows the enable caching for group option.](../media/modern-portal-optimization/enable-caching-for-group.png)
+![Screenshot that shows the enable caching for group option.](../media/modern-portal-optimization/Group-level-caching-setting.png)
 
 5. Republish your SharePoint site page.
 
 >[!NOTE]
 >Please see the articles on [Events](https://support.microsoft.com/office/5fe4da93-5fa9-4695-b1ee-b0ae4c981909) and [Highlighted Content](https://support.microsoft.com/office/e34199b0-ff1a-47fb-8f4d-dbcaed329efd) web parts for more information.
-
-When you have configured the web part to use caching, it will first look in the cache for existing search results that match the query and the security group(s). If it doesn't find any search results in the cache, it will look in the search index.
-
-We recommend that you enable caching on popular home pages or on category pages that are starting points for navigating to more detailed pages.
 
 ## Related topics
 
