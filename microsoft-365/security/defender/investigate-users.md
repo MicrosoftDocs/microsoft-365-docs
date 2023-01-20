@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 manager: dansimp
 ms.date: 
 audience: ITPro
