@@ -304,6 +304,9 @@ You can use the following options to let users assign permissions when they manu
     
     To check which apps that use built-in labeling support this option, use the [capabilities table for Word, Excel, and PowerPoint](sensitivity-labels-versions.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) and the rows for **Let users assign permissions**.
 
+> [!NOTE]
+> You won't be able to use these configurations if the label scope excludes email (for Do Not Forward and Encrypt-Only) or excludes files (for prompting users in Word, PowerPoint, and Excel). For more information, see [Scope labels to just Word, Excel, and PowerPoint, or to just Outlook](sensitivity-labels-office-apps.md#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook).
+
 When the options are supported, use the following table to identify when users see the sensitivity label:
 
 |Setting |Label visible in Outlook|Label visible in Word, Excel, PowerPoint|
