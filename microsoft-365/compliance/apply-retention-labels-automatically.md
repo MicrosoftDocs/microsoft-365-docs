@@ -62,7 +62,7 @@ Use the following instructions for the two admin steps.
 > [!NOTE]
 > This option is in preview and subject to change.
 
-Now rolling out in preview, you can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
+Now gradually rolling out in preview, you can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
 - [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 - [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties).
 
