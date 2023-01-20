@@ -339,6 +339,9 @@ On the flyout pane for **Use the label for email or files only**, select or remo
 
 Make sure both options are selected if you don't want to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook. Both options might also be needed for the label to support other features:
 - [Teams meetings and chat](sensitivity-labels-meetings.md)
+- [Encryption that lets users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions): 
+    - If the scope doesn't include email, you won't be able to select the encryption options of **Do Not Forward** or **Encrypt-Only**.
+    - If the scope doesn't include files, you won't be able to select the encryption option **In Word, PowerPoint, and Excel, prompt users to specify permissions**.
 
 **Limitation for this preview:**
 
