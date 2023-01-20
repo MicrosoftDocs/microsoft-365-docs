@@ -56,7 +56,7 @@ You can also manually onboard individual devices to Microsoft 365. You might wan
 
     ![Window Start menu pointing to Run as administrator.](../media/dlp-run-as-admin.png)
 
-9. Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+9. Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\DeviceOnboardingScript.cmd*
 
 10. Press the **Enter** key or click **OK**.
 
