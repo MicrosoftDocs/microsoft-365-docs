@@ -25,7 +25,7 @@ search.appverid: met150
 > [!NOTE]
 > This article describes features that are in Public Preview, aren't available in all organizations, and are subject to change.
 
-In Attack simulation training in Microsoft Defender for Office 365 Plan 2, Training campaigns are a faster, more direct way to provide security training to users. Instead of creating and launching [simulated phishing attacks](attack-simulation-training-simulations.md) that eventually lead to training, you create and assign Training campaigns directly to users.
+In Attack simulation training in Microsoft Defender for Office 365 Plan 2, Training campaigns are a faster, more direct way to provide security training to users. Instead of creating and launching [simulated phishing attacks](attack-simulation-training-simulations.md) that eventually lead to training, you can also create and assign Training campaigns directly to users.
 
 A Training campaign contains one or more built-in Training modules that you select. Currently, there are over 70 Training modules to select from. For more information about Training modules, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
 
@@ -51,7 +51,7 @@ The **Training campaigns** tab lists the Training campaigns that you've created.
   - **Deleted**
   - **Failed**<sup>\*</sup>
   - **Scheduled**<sup>\*</sup>
-- **⋮ (Actions)**:
+- **⋮ Actions**:
   - ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**
   - ![View report icon.](../../media/m365-cc-sc-eye-icon.png) **View report**
 
@@ -96,7 +96,7 @@ On the **Target users** page, select one of the following values:
 
     Repeat this step as many times as required.
 
-  - **Filter users by categories**: Use the following categories to filter and select users and groups. Multiple selections within the same category use the OR operator (for example, **User tags** equals **Priority account** OR **User tags** equals **Hight risk profile**). Selections from different categories use the AND operator (for example, **City** equals Redmond AND **Department** equals IT):
+  - **Filter users by categories**: Use the following categories to filter and select users and groups. Multiple selections within the same category use the OR operator (for example, **User tags** equals **Priority account** OR **User tags** equals **High risk profile**). Selections from different categories use the AND operator (for example, **City** equals Redmond AND **Department** equals IT):
 
     - **Suggested user groups**: Select one or both of the following values:
       - **Users not targeted by a simulation in the last three months**
@@ -178,7 +178,7 @@ On the **Select end user notification** page, select from the following notifica
   - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
   - **Type**: **Training assignment notification** or **Training reminder notification**.
   - **Delivery preferences**: For **Training reminder notification** types, the values **Twice a week** and **Weekly** are available.
-  - **Actions**: If you click on the ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** icon, the **Review notification** page appears with the following information:
+  - **⋮ Actions**: If you click the ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** icon, the **Review notification** page appears with the following information:
     - **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select notification language** box.
     - **Details** tab: View details about the notification:
       - **Notification description**
@@ -236,6 +236,7 @@ When you're finished, click **Next**.
 The **Training reminder notification** page is available only if you selected **Customized end user notifications** on the **[Select end user notification](#select-end-user-notification)** page.
 
 - **Set frequency for reminder notification**: Select **Weekly** (default) or **Twice a week**.
+  - Reminder notifications will stop at the end of the campaign   
 
 - **Select a reminder notification**: This section shows the following notifications and their configured languages:
 
@@ -277,6 +278,9 @@ On the **Schedule** page, select the start date and end date for the Training ca
 - **Schedule this Training campaign to be launched later**: If this option is selected, **Set the campaign launch date** and **Set launch time** boxes appear for you to configure.
 
 **Send training with an end date** is selected by default, so **Set the campaign end date** and **Set end time** boxes are available for you to configure. If you clear **Send training with an end date**, the boxes disappear.
+
+> [!NOTE]
+> If you clear the **Send training with an end date** box, no reminder notifications will be send to the targeted users outside of the initial assignment notice.
 
 When you're finished, click **Next**.
 
@@ -321,21 +325,37 @@ The **Report** tab of the Training campaign shows the following information:
 
 ### Users tab
 
-The **Users** tab shows the following information about the users who were assign to the Training campaign:
+The **Users** tab shows the following information about the users who were assigned the Training campaign:
 
 - **Display name**
 - **Training status**: One of the following values:
   - **Not started**: The user hasn't started any Training modules in the campaign.
-  - **In progress**: The user has completed some of the modules in the campaign.
+  - **In progress**: The user has completed some Training modules in the campaign.
   - **Completed**: The user has completed all Training modules in the campaign.
+  - **Overdue**: The user has not completed all Training modules by the campaign end date/time.
 - **Training completion date**
 - **Mail**
 
 To add or remove the **Training date status** or **Department** columns, click ![Customize columns icon.](../../media/m365-cc-sc-customize-icon.png) **Customize columns**.
 
-To download the displayed results to a RecordExport.csv file in the Downloads folder, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export**.
+To download the displayed results to a RecordExport.csv file in the local Downloads folder, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export**.
 
-To export the results
+If you select a user from the list, the following information appears in a details flyout:
+
+- **User details** section:
+  - **Company**
+  - **IP address**
+  - **Job title**
+  - **Department**
+  - **Location**
+  - **Manager**
+- Status information for Training modules in the Training campaign for the user:
+  - **Training name**: The training module name.
+  - **Training status**: **Not started**, **In progress**, **Completed**, or **Overdue**.
+  - **Training start date**
+  - **Training completed date**
+
+To see details about other users in the Training campaign without leaving the details flyout, use ![Previous item and Next item icons.](../../media/updownarrows.png) **Previous item** and **Next item**.
 
 ### Details tab
 
