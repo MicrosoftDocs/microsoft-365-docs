@@ -68,13 +68,13 @@ It is recommended to enable group-level caching of search requests on Events or 
 
 1. Go to the site page that contains an Events or Highlighted Content web part and select **Edit**.
 
-2. Select the Events or Highlighted Content web part and then select **Edit web part** ![Screenshot of the edit web part icon.](../media/modern-portal-optimization/edit-web-part-icon.png). 
+2. Select the Events or Highlighted Content web part and then select **Edit web part** :::image type="icon" source="../media/modern-portal-optimization/edit-web-part-icon.png":::
 
 3. In the web part settings pane, scroll to the **Group-level caching** setting. 
 
 4. Specify the security group(s) by entering a group name or email. The search results will be cached for all users who belong to the same security group(s) and improve page performance.
 
-![Screenshot that shows the enable caching for group option.](../media/modern-portal-optimization/Group-level-caching-setting.png)
+   ![Screenshot that shows the enable caching for group option.](../media/modern-portal-optimization/Group-level-caching-setting.png)
 
 5. Republish your SharePoint site page.
 
