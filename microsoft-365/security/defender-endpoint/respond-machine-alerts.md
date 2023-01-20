@@ -1,4 +1,4 @@
----
+﻿---
 title: Take response actions on a device in Microsoft Defender for Endpoint
 description: Take response actions on a device such as isolating devices, collecting an investigation package, managing tags, running an av scan, and restricting app execution.
 keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
@@ -66,7 +66,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 > - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2019, and Windows Server 2022.
-> - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
+> - For non-Windows platforms, response capabilities (such as isolate device) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
 ## Manage tags
@@ -177,25 +177,36 @@ When an app is restricted, the following notification is displayed to inform the
 
 :::image type="content" source="images/atp-app-restriction.png" alt-text="The application restriction message" lightbox="images/atp-app-restriction.png":::
 
-> [!NOTE]
-> The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
+>[!NOTE]
+>The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
 
 ## Isolate devices from the network
 
 Depending on the severity of the attack and the sensitivity of the device, you might want to isolate the device from the network. This action can help prevent the attacker from controlling the compromised device and performing further activities such as data exfiltration and lateral movement.
 
+
+
 > [!IMPORTANT]
-> - Isolating devices from the network is not currently supported for devices running macOS or Linux. For macOS, use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
+> - Isolating devices from the network is not currently supported for devices running macOS. For macOS, use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
 > - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, and Windows Server 2016.
+>- You can use the device isolation capability **in public preview** on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 > - Selective isolation is available for devices running Windows 10, version 1709 or later, and Windows 11.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
+>- The feature supports VPN connection.
+>- You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
+>- You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
+>- Exclusion for Linux isolation is not supported.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
+
 On Windows 10, version 1709 or later, you'll have more control over the network isolation level. You can also choose to enable Outlook, Microsoft Teams, and Skype for Business connectivity (a.k.a 'Selective Isolation').
+
 
 > [!NOTE]
 > You'll be able to reconnect the device back to the network at any time. The button on the device page will change to say **Release from isolation**, and then you take the same steps as isolating the device.
+
+
 
 Once you have selected **Isolate device** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
@@ -209,6 +220,10 @@ Once you have selected **Isolate device** on the device page, type a comment and
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="images/atp-notification-isolate.png":::
+
+
+>[!NOTE]
+>The notification is not available on non-Windows platforms.
 
 ## Contain devices from the network
  

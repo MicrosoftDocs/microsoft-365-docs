@@ -98,7 +98,28 @@ If you only want monitoring data from policy matches, you can turn off the **Alw
 > [!TIP]
 > To ensure activities are audited for all supported file types, create a [custom DLP policy](create-test-tune-dlp-policy.md).
 
-Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed.
+Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed for these files types:
+
+After the extension is changed to any other file extension
+- doc
+- docx
+- xls
+- xlsx
+- ppt
+- pptx
+- pdf
+
+If the extension is changed only to supported file extensions:
+- txt
+- pst
+- msg
+- rtf
+- c
+- cpp
+- h
+- cs
+- java
+- tsv
 
 ### File types
 
