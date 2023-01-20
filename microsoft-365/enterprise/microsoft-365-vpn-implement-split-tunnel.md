@@ -60,7 +60,7 @@ For more information about Microsoft 365 endpoints and how they are categorized 
 
 The current Optimize URLs can be found in the table below. Under most circumstances, you should only need to use URL endpoints in a [browser PAC file](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-microsoft-365-traffic) where the endpoints are configured to be sent direct, rather than to the proxy.
 
-[!div class="mx-tdCol3BreakAll"]
+[!div class="mx-tdCol2BreakAll"]
 | Optimize URLs | Port/Protocol | Purpose |
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | This is one of the primary URLs Outlook uses to connect to its Exchange Online server and has a high volume of bandwidth usage and connection count. Low network latency is required for online features including: instant search, other mailbox calendars, free / busy lookup, manage rules and alerts, Exchange online archive, emails departing the outbox. |
