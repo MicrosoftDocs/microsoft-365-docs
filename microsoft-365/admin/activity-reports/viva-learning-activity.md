@@ -40,8 +40,5 @@ You can get a view into your user's Viva Learning activity by looking at the **A
 ![Microsoft 365 Apps usage report.](../../media/viva-learning-charts.png)
 
 - Active users – Shows you the number of active users over time. For example, you can use it to find the number of active users in your organization on a specific day over the past 30 days.
-- User activities – Shows you the number of user activities such as Viewed Featured Content, LearningTabsPinned, Viewed Learning Objects, Consumed Learning Objects, Recommendations made, and Bookmarks.
-
-
-
+- User activities – Shows you the number of user activities, such as viewed featured content, learning tabs pinned, viewed learning objects, consumed learning objects, recommendations made, and bookmarks.
  
