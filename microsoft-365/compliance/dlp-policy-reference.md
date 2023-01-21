@@ -281,7 +281,7 @@ The available context options change depending on which location you choose. If 
 - Document created by
 - Document created by member of (currently deprecated for customers not already using this predicate) 
 - Document name contains words or phrases
-- Document name matches patterns - Currently deprecated for customers not already using this predicate. 
+- Document name matches patterns (currently deprecated for customers not already using this predicate) 
 - Document size over
 - Document property is
 - File extension is
