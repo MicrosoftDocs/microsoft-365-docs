@@ -21,7 +21,7 @@ description: "Configure sensitivity labels to protect calendar items, and Teams 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is currently rolling out in preview and subject to change.
+> For this scenario, Outlook calendar events remain in preview and subject to change.
 > 
 > You won't be able to configure all the options referenced on this page if a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience) isn't found for your tenant. For those settings, you'll see an information bar in the Microsoft Purview compliance portal that your organization doesn't have this license.
 
@@ -65,7 +65,7 @@ Example showing a Teams meeting invite that has the label **Highly confidential*
 To apply a sensitivity label to meeting invites and appointments using Outlook, users must use Outlook on the web from a desktop computer, or use built-in labeling from Microsoft 365 Apps for enterprise:
 
 - **Outlook for Windows**: Rolling out to Beta Channel
-- **Outlook for Mac**: Not yet supported
+- **Outlook for Mac**: Rolling out to Beta Channel
 
 The AIP add-in for Outlook doesn't support applying labels to meeting invites.
 
