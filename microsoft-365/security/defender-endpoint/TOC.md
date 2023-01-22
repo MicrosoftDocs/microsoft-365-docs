@@ -133,6 +133,7 @@
 ###### [Manual deployment](linux-install-manually.md)
 ###### [Puppet based deployment](linux-install-with-puppet.md)
 ###### [Ansible based deployment](linux-install-with-ansible.md)
+###### [Saltstack based deployment](linux-install-with-saltack.md)
 ###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
 ##### [Update](linux-updates.md)
