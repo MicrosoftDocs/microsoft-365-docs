@@ -31,6 +31,30 @@
 | 1/20/2023 | [Requirements for Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-requirements?view=o365-worldwide) | modified |
 | 1/20/2023 | [Configure Microsoft Defender for Endpoint risk signals using App Protection Policies (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam?view=o365-worldwide) | modified |
 | 1/20/2023 | [Take response actions on a file in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-file-alerts?view=o365-worldwide) | modified |
+| 1/18/2023 | [Audit log activities](/microsoft-365/compliance/audit-log-activities?view=o365-worldwide) | modified |
+| 1/18/2023 | [Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-install?view=o365-worldwide) | modified |
+| 1/18/2023 | [Allow or block email using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list-email-spoof-configure?view=o365-worldwide) | modified |
+| 1/18/2023 | [Allow or block files using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list-files-configure?view=o365-worldwide) | modified |
+| 1/18/2023 | [Allow or block URLs using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure?view=o365-worldwide) | modified |
+| 1/18/2023 | [Create assessment templates in Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager-templates-create?view=o365-worldwide) | modified |
+| 1/18/2023 | [Modify assessment templates in Microsoft Purview Compliance Manager](/microsoft-365/compliance/compliance-manager-templates-modify?view=o365-worldwide) | modified |
+| 1/18/2023 | [Reduce the attack surface for Microsoft Teams](/microsoft-365/security/office-365-security/step-by-step-guides/reducing-attack-surface-in-microsoft-teams?view=o365-worldwide) | added |
+| 1/18/2023 | [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-perf?view=o365-worldwide) | modified |
+| 1/18/2023 | [Deploy and manage using Intune](/microsoft-365/security/defender-endpoint/deploy-and-manage-using-intune?view=o365-worldwide) | modified |
+| 1/18/2023 | [Sign up for Microsoft 365 Business Premium](/microsoft-365/business-premium/get-microsoft-365-business-premium?view=o365-worldwide) | modified |
+| 1/18/2023 | [Security defaults and Conditional Access](/microsoft-365/business-premium/m365bp-conditional-access?view=o365-worldwide) | modified |
+| 1/18/2023 | [Working with device groups in Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-device-groups-mdb?view=o365-worldwide) | modified |
+| 1/18/2023 | [Get started with the Microsoft Service Trust Portal](/microsoft-365/compliance/get-started-with-service-trust-portal?view=o365-worldwide) | modified |
+| 1/19/2023 | [Bookings with me](/microsoft-365/bookings/bookings-in-outlook?view=o365-worldwide) | modified |
+| 1/19/2023 | [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide) | modified |
+| 1/19/2023 | [Reduce the attack surface for Microsoft Teams](/microsoft-365/security/office-365-security/step-by-step-guides/reducing-attack-surface-in-microsoft-teams?view=o365-worldwide) | modified |
+| 1/20/2023 | [Add more SharePoint storage to your subscription](/microsoft-365/commerce/add-storage-space?view=o365-worldwide) | modified |
+| 1/20/2023 | [Optimize search requests in SharePoint Online modern site pages](/microsoft-365/enterprise/modern-search-optimization?view=o365-worldwide) | added |
+| 1/20/2023 | [Deploy Microsoft Defender for Endpoint on Linux with SaltStack](/microsoft-365/security/defender-endpoint/linux-install-with-saltack?view=o365-worldwide) | added |
+| 1/20/2023 | [Implementing VPN split tunneling for Microsoft 365](/microsoft-365/enterprise/microsoft-365-vpn-implement-split-tunnel?view=o365-worldwide) | modified |
+| 1/20/2023 | [Requirements for Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-requirements?view=o365-worldwide) | modified |
+| 1/20/2023 | [Configure Microsoft Defender for Endpoint risk signals using App Protection Policies (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam?view=o365-worldwide) | modified |
+| 1/20/2023 | [Take response actions on a file in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-file-alerts?view=o365-worldwide) | modified |
 
 
 ## Week of January 09, 2023
