@@ -738,7 +738,7 @@ The following table describes the auditing activities and information in the aud
 
 ## Sensitivity label activities
 
-The following table lists events that result from using [sensitivity labels](sensitivity-labels.md) with sites and items that are managed by Microsoft Purview. Items include documents, emails, calendar events, and files and schematized data assets in Microsoft Purview Data Map.
+The following table lists events that result from using [sensitivity labels](sensitivity-labels.md) with sites and items that are managed by Microsoft Purview. Items include documents, emails, and calendar events. For auto-labeling policies, items also include files and schematized data assets in Microsoft Purview Data Map.
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
