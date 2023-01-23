@@ -1042,10 +1042,10 @@ Signature version: **1.355.1482.0**
 
 ### 1.1.2112.01
 
-Package version: **1.1.2112.01**
-Platform version: **4.18.2110.6**
-Engine version: **1.1.18700.4**
-Signature version: **1.353.2283.0**
+- Package version: **1.1.2112.01**
+- Platform version: **4.18.2110.6**
+- Engine version: **1.1.18700.4**
+- Signature version: **1.353.2283.0**
 
 #### Fixes
 
@@ -1057,10 +1057,10 @@ Signature version: **1.353.2283.0**
 
 ### 1.1.2111.02
 
-Package version: **1.1.2111.02**
-Platform version: **4.18.2110.6**
-Engine version: **1.1.18700.4**
-Signature version: **1.353.613.0**
+- Package version: **1.1.2111.02**
+- Platform version: **4.18.2110.6**
+- Engine version: **1.1.18700.4**
+- Signature version: **1.353.613.0**
 
 #### Fixes
 
@@ -1072,10 +1072,10 @@ Signature version: **1.353.613.0**
 
 ### 1.1.2110.01
 
-Package version: **1.1.2110.01**
-Platform version: **4.18.2109.6**
-Engine version: **1.1.18500.10**
-Signature version: **1.349.2103.0**
+- Package version: **1.1.2110.01**
+- Platform version: **4.18.2109.6**
+- Engine version: **1.1.18500.10**
+- Signature version: **1.349.2103.0**
 
 #### Fixes
 
@@ -1087,10 +1087,10 @@ Signature version: **1.349.2103.0**
 
 ### 1.1.2109.01
 
-Package version: **1.1.2109.01**
-Platform version: **4.18.2107.4**
-Engine version: **1.1.18400.5**
-Signature version: **1.347.891.0**
+- Package version: **1.1.2109.01**
+- Platform version: **4.18.2107.4**
+- Engine version: **1.1.18400.5**
+- Signature version: **1.347.891.0**
 
 #### Fixes
 
@@ -1102,10 +1102,10 @@ Signature version: **1.347.891.0**
 
 ### 1.1.2108.01
 
-Package version: **1.1.2108.01**
-Platform version: **4.18.2107.4**
-Engine version: **1.1.18300.4**
-Signature version: **1.343.2244.0**
+- Package version: **1.1.2108.01**
+- Platform version: **4.18.2107.4**
+- Engine version: **1.1.18300.4**
+- Signature version: **1.343.2244.0**
 
 #### Fixes
 
@@ -1117,10 +1117,10 @@ Signature version: **1.343.2244.0**
 
 ### 1.1.2107.02
 
-Package version: **1.1.2107.02**
-Platform version: **4.18.2105.5**
-Engine version: **1.1.18300.4**
-Signature version: **1.343.658.0**
+- Package version: **1.1.2107.02**
+- Platform version: **4.18.2105.5**
+- Engine version: **1.1.18300.4**
+- Signature version: **1.343.658.0**
 
 #### Fixes
 
@@ -1132,10 +1132,10 @@ Signature version: **1.343.658.0**
 
 ### 1.1.2106.01
 
-Package version: **1.1.2106.01**
-Platform version: **4.18.2104.14**
-Engine version: **1.1.18100.6**
-Signature version: **1.339.1923.0**
+- Package version: **1.1.2106.01**
+- Platform version: **4.18.2104.14**
+- Engine version: **1.1.18100.6**
+- Signature version: **1.339.1923.0**
 
 #### Fixes
 
@@ -1147,10 +1147,10 @@ Signature version: **1.339.1923.0**
 
 ### 1.1.2105.01
 
-Package version: **1.1.2105.01**
-Platform version: **4.18.2103.7**
-Engine version: **1.1.18100.6**
-Signature version: **1.339.42.0**
+- Package version: **1.1.2105.01**
+- Platform version: **4.18.2103.7**
+- Engine version: **1.1.18100.6**
+- Signature version: **1.339.42.0**
 
 #### Fixes
 
@@ -1163,10 +1163,10 @@ Signature version: **1.339.42.0**
 
 ### 1.1.2104.01
 
-Package version: **1.1.2104.01**
-Platform version: **4.18.2102.4**
-Engine version: **1.1.18000.5**
-Signature version: **1.335.232.0**
+- Package version: **1.1.2104.01**
+- Platform version: **4.18.2102.4**
+- Engine version: **1.1.18000.5**
+- Signature version: **1.335.232.0**
 
 #### Fixes
 
@@ -1178,10 +1178,10 @@ Signature version: **1.335.232.0**
 
 ### 1.1.2103.01
 
-Package version: **1.1.2103.01**
-Platform version: **4.18.2101.9**
-Engine version: **1.1.17800.5**
-Signature version: **1.331.2302.0**
+- Package version: **1.1.2103.01**
+- Platform version: **4.18.2101.9**
+- Engine version: **1.1.17800.5**
+- Signature version: **1.331.2302.0**
 
 #### Fixes
 
@@ -1193,10 +1193,10 @@ Signature version: **1.331.2302.0**
 
 ### 1.1.2102.03
 
-Package version: **1.1.2102.03**
-Platform version: **4.18.2011.6**
-Engine version: **1.1.17800.5**
-Signature version: **1.331.174.0**
+- Package version: **1.1.2102.03**
+- Platform version: **4.18.2011.6**
+- Engine version: **1.1.17800.5**
+- Signature version: **1.331.174.0**
 
 #### Fixes
 
@@ -1208,10 +1208,10 @@ Signature version: **1.331.174.0**
 
 ### 1.1.2101.02
 
-Package version: **1.1.2101.02**
-Platform version: **4.18.2011.6**
-Engine version: **1.1.17700.4**
-Signature version: **1.329.1796.0**
+- Package version: **1.1.2101.02**
+- Platform version: **4.18.2011.6**
+- Engine version: **1.1.17700.4**
+- Signature version: **1.329.1796.0**
 
 #### Fixes
 
@@ -1223,10 +1223,10 @@ Signature version: **1.329.1796.0**
 
 ### 1.1.2012.01
 
-Package version: **1.1.2012.01**
-Platform version: **4.18.2010.7**
-Engine version: **1.1.17600.5**
-Signature version: **1.327.1991.0**
+- Package version: **1.1.2012.01**
+- Platform version: **4.18.2010.7**
+- Engine version: **1.1.17600.5**
+- Signature version: **1.327.1991.0**
 
 #### Fixes
 
@@ -1238,10 +1238,10 @@ Signature version: **1.327.1991.0**
 
 ### 1.1.2011.02
 
-Package version: **1.1.2011.02**
-Platform version: **4.18.2010.7**
-Engine version: **1.1.17600.5**
-Signature version: **1.327.658.0**
+- Package version: **1.1.2011.02**
+- Platform version: **4.18.2010.7**
+- Engine version: **1.1.17600.5**
+- Signature version: **1.327.658.0**
 
 #### Fixes
 
@@ -1253,10 +1253,10 @@ Signature version: **1.327.658.0**
 
 ### 1.1.2011.01
 
-Package version: **1.1.2011.01**
-Platform version: **4.18.2009.7**
-Engine version: **1.1.17600.5**
-Signature version: **1.327.344.0**
+- Package version: **1.1.2011.01**
+- Platform version: **4.18.2009.7**
+- Engine version: **1.1.17600.5**
+- Signature version: **1.327.344.0**
 
 #### Fixes
 
@@ -1268,10 +1268,10 @@ Signature version: **1.327.344.0**
 
 ### 1.1.2009.10
 
-Package version: **1.1.2011.01**
-Platform version: **4.18.2008.9**
-Engine version: **1.1.17400.5**
-Signature version: **1.327.2216.0**
+- Package version: **1.1.2011.01**
+- Platform version: **4.18.2008.9**
+- Engine version: **1.1.17400.5**
+- Signature version: **1.327.2216.0**
 
 #### Fixes
 
