@@ -108,14 +108,11 @@ None
 
 ### October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)
 
-Security intelligence update version: **1.379.4.0**
-Release date: **November 10, 2022**
-Platform: **4.18.2210.6**
-Engine: **1.1.19800.4**
-Support phase: **Security and Critical Updates**
-
-Engine version: 1.1.19800.4
-Security intelligence update version: 1.379.4.0
+- Security intelligence update version: **1.379.4.0**
+- Release date: **November 10, 2022**
+- Platform: **4.18.2210.6**
+- Engine: **1.1.19800.4**
+- Support phase: **Security and Critical Updates**
 
 #### What's new
 
@@ -137,14 +134,11 @@ None
 
 ### September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)
 
-Security intelligence update version: **1.377.8.0**
-Release date: **October 10, 2022**
-Platform: **4.18.2209.7**
-Engine: **1.1.19700.3**
-Support phase: **Security and Critical Updates**
-
-Engine version: 1.1.19700.3
-Security intelligence update version: 1.377.8.0
+- Security intelligence update version: **1.377.8.0**
+- Release date: **October 10, 2022**
+- Platform: **4.18.2209.7**
+- Engine: **1.1.19700.3**
+- Support phase: **Security and Critical Updates**
 
 #### What's new
 
@@ -171,14 +165,11 @@ After a new package version is released, support for the previous two versions i
 
 #### August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)
 
-Security intelligence update version: **1.373.1647.0**
-Release date: **September 6, 2022**
-Platform: **4.18.2207.7**
-Engine: **1.1.19600.3**
-Support phase: **Technical upgrade support (only)**
-
-Engine version: 1.1.19600.3
-Security intelligence update version: 1.373.1647.0 
+- Security intelligence update version: **1.373.1647.0**
+- Release date: **September 6, 2022**
+- Platform: **4.18.2207.7**
+- Engine: **1.1.19600.3**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
