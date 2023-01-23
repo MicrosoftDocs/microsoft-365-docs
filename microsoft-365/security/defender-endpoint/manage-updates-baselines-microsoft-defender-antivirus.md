@@ -936,10 +936,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 ### 20220629.5
 
-Package version: **20220629.5**
-Platform version: **4.18.2205.7**
-Engine version: **1.1.19300.2**
-Signature version: **1.369.220.0**
+- Package version: **20220629.5**
+- Platform version: **4.18.2205.7**
+- Engine version: **1.1.19300.2**
+- Signature version: **1.369.220.0**
 
 #### Fixes
 
@@ -951,10 +951,10 @@ Signature version: **1.369.220.0**
 
 ### 20220603.3
 
-Package version: **20220603.3**
-Platform version: **4.18.2203.5**
-Engine version: **1.1.19200.6**
-Signature version: **1.367.1009.0**
+- Package version: **20220603.3**
+- Platform version: **4.18.2203.5**
+- Engine version: **1.1.19200.6**
+- Signature version: **1.367.1009.0**
 
 #### Fixes
 
@@ -966,10 +966,10 @@ Signature version: **1.367.1009.0**
 
 ### 20220506.6
 
-Package version: **20220506.6**
-Platform version: **4.18.2203.5**
-Engine version: **1.1.19200.5**
-Signature version: **1.363.1436.0**
+- Package version: **20220506.6**
+- Platform version: **4.18.2203.5**
+- Engine version: **1.1.19200.5**
+- Signature version: **1.363.1436.0**
 
 #### Fixes
 
@@ -981,10 +981,10 @@ Signature version: **1.363.1436.0**
 
 ### 20220321.1
 
-Package version: **20220321.1**
-Platform version: **4.18.2202.4**
-Engine version: **1.1.19000.8**
-Signature version: **1.351.337.0**
+- Package version: **20220321.1**
+- Platform version: **4.18.2202.4**
+- Engine version: **1.1.19000.8**
+- Signature version: **1.351.337.0**
 
 #### Fixes
 
@@ -996,10 +996,10 @@ Signature version: **1.351.337.0**
 
 ### 20220305.1
 
-Package version: **20220305.1**
-Platform version: **4.18.2201.10**
-Engine version: **1.1.18900.3**
-Signature version: **1.359.1405.0**
+- Package version: **20220305.1**
+- Platform version: **4.18.2201.10**
+- Engine version: **1.1.18900.3**
+- Signature version: **1.359.1405.0**
 
 #### Fixes
 
