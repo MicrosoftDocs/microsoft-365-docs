@@ -30,7 +30,7 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 ## January 2023
 
-- **Default experience for Defender for Business when an enterprise plan is added**. Defender for Business now retains its default experience ([simplified configuration and setup](../security/defender-business/mdb-simplified-configuration.md)) even if an enterprise plan, such as Defender for Endpoint Plan 2 or Microsoft Defender for Servers Plan 1 or 2 is added. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq?#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)? 
+- **Default experience for Defender for Business when an enterprise plan is added**. Defender for Business now retains its default experience ([simplified configuration and setup](../security/defender-business/mdb-simplified-configuration.md)) even if an enterprise plan, such as [Defender for Endpoint Plan 2](../security/defender-endpoint/microsoft-defender-endpoint.md) or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/plan-defender-for-servers) is added. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq?#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)? 
 
 ## November 2022
 
