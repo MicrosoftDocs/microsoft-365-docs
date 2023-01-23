@@ -36,7 +36,7 @@ ms.topic: conceptual
 The `DeviceNetworkEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about network connections and related events. Use this reference to construct queries that return information from this table.
 
 >[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in the Defender for Cloud.
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft 365 Defender.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
