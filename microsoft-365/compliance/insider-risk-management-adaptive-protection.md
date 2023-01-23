@@ -58,11 +58,50 @@ See the following articles to complete the prerequisites for insider risk manage
 - [Get started with insider risk management settings](insider-risk-management-settings.md)
 - [Subscription and licensing for DLP](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-loss-prevention-data-loss-prevention-dlp-for-exchange-online-sharepoint-online-and-onedrive-for-business)
 
+<<<<<<< Updated upstream
 ## Enable Adaptive Protection
 
 
 ## Manage Adaptive Protection
 
+=======
+## Enable and configure Adaptive Protection
+
+### Quick setup
+
+Here’s what is configured when you use the quick setup process for Adaptive Protection:
+
+- Insider risk policy scoped to all users in your org
+- Built-in risk levels for Adaptive Protection to define how risky a user’s activity might be
+- DLP policy in test mode that only audits user activity
+
+### Custom setup
+
+Step 1: Create insider risk management policy or choose an existing one.
+Step 2: Configure risk level settings
+Step 3: Create or edit a DLP policy
+Step 4: Turn on adaptive protection
+
+### Risk levels, activity detection, and risk level timeframe
+
+Risk levels in AP define how risky a user's activity is and can be based on criteria such as how many exfiltration activities they performed or whether their activity generated a high severity insider risk alert.
+
+- Elevated risk level
+- Moderate risk level
+- Minor risk level
+
+## Manage Adaptive Protection
+
+### Dashboard
+
+
+### Users in scope
+
+### DLP policies
+
+
+
+>>>>>>> Stashed changes
 
 ## Disable Adaptive Protection
 
