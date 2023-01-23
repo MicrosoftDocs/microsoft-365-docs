@@ -85,14 +85,13 @@ All our updates contain
 
 ### November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)
 
-Security intelligence update version: **1.381.144.0** 
-Release date: **December 8, 2022**
-Platform: **4.18.2211.5** 
-Engine: **1.1.19900.2**
-Support phase: **Security and Critical Updates**
-
-Engine version: 1.1.19900.2 
-Security intelligence update version: 1.381.144.0 
+- Security intelligence update version: **1.381.144.0** 
+- Release date: **December 8, 2022**
+- Platform: **4.18.2211.5** 
+- Engine: **1.1.19900.2**
+- Support phase: **Security and Critical Updates**
+- Engine version: 1.1.19900.2 
+- Security intelligence update version: 1.381.144.0 
 
 #### What's new
 
