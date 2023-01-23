@@ -107,7 +107,7 @@ sections:
 
       - question: How does Microsoft Intune work with Defender for Business? 
         answer: |
-          If you have Defender for Business as a standalone subscription, you can onboard and secure Windows and Mac devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can use Microsoft Intune to onboard Windows and Mac computers as well as mobile devices.
+          If you have Defender for Business as a standalone subscription, you can onboard and secure Windows and Mac devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can use Microsoft Intune to onboard Windows and Mac computers and mobile devices.
 
           When you enroll devices in Intune and onboard those devices to Defender for Business, you create a connection between Intune and Defender for Business.
            
