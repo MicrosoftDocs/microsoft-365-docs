@@ -302,14 +302,11 @@ No known issues
 
 #### January-2022 (Platform: 4.18.2201.10 | Engine: 1.1.18900.2)
 
-Security intelligence update version: **1.357.8.0**
-Released: **February 9, 2022**
-Platform: **4.18.2201.10**
-Engine: **1.1.18900.2**
-Support phase: **Technical upgrade support (only)**
-
-Engine version: 1.1.18900.2 
-Security intelligence update version: 1.357.8.0 
+- Security intelligence update version: **1.357.8.0**
+- Released: **February 9, 2022**
+- Platform: **4.18.2201.10**
+- Engine: **1.1.18900.2**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -328,14 +325,11 @@ No known issues
 
 #### November-2021 (Platform: 4.18.2111.5 | Engine: 1.1.18800.4)
 
-Security intelligence update version: **1.355.2.0**
-Released: **December 9th, 2021**
-Platform: **4.18.2111.5**
-Engine: **1.1.18800.4**
-Support phase: **Technical upgrade support (only)**
-
-Engine version: 1.1.18800.4
-Security intelligence update version: 1.355.2.0
+- Security intelligence update version: **1.355.2.0**
+- Released: **December 9th, 2021**
+- Platform: **4.18.2111.5**
+- Engine: **1.1.18800.4**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -354,14 +348,11 @@ No known issues
 
 ####  October-2021 (Platform: 4.18.2110.6 | Engine: 1.1.18700.4)
 
-Security intelligence update version: **1.353.3.0**
-Released: **October 28th, 2021**
-Platform: **4.18.2110.6**
-Engine: **1.1.18700.4**
-Support phase: **Technical upgrade support (only)**
-
-Engine version: 1.1.18700.4
-Security intelligence update version: 1.353.3.0
+- Security intelligence update version: **1.353.3.0**
+- Released: **October 28th, 2021**
+- Platform: **4.18.2110.6**
+- Engine: **1.1.18700.4**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -377,14 +368,11 @@ No known issues
 
 ####  September-2021 (Platform: 4.18.2109.6 | Engine: 1.1.18600.4)
 
-Security intelligence update version: **1.351.7.0**
-Released: **October 7th, 2021**
-Platform: **4.18.2109.6**
-Engine: **1.1.18600.4**
-Support phase: **Technical upgrade support (only)**
-
-Engine version: 1.1.18600.4
-Security intelligence update version: 1.351.7.0
+- Security intelligence update version: **1.351.7.0**
+- Released: **October 7th, 2021**
+- Platform: **4.18.2109.6**
+- Engine: **1.1.18600.4**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -397,11 +385,11 @@ No known issues
 
 ####  August-2021 (Platform: 4.18.2108.7 | Engine: 1.1.18500.10)
 
-Security intelligence update version: **1.349.22.0**
-Released: **September 2, 2021**
-Platform: **4.18.2108.7**
-Engine: **1.1.18500.10**
-Support phase: **Technical upgrade support (only)**
+- Security intelligence update version: **1.349.22.0**
+- Released: **September 2, 2021**
+- Platform: **4.18.2108.7**
+- Engine: **1.1.18500.10**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -417,13 +405,14 @@ No known issues
 
 ####  July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)
 
-Security intelligence update version: **1.345.13.0**
-Released: **August 5, 2021**
-Platform: **4.18.2107.4**
-Engine: **1.1.18400.4**
-Support phase: **Technical upgrade support (only)**
+- Security intelligence update version: **1.345.13.0**
+- Released: **August 5, 2021**
+- Platform: **4.18.2107.4**
+- Engine: **1.1.18400.4**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
+
 - Device control support added for Windows Portable Devices
 - Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Block potentially unwanted applications with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).)
 - Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time
@@ -435,11 +424,11 @@ No known issues
 
 ####  June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)
 
-Security intelligence update version: **1.343.17.0**
-Released: **June 28, 2021**
-Platform: **4.18.2106.5**
-Engine: **1.1.18300.4**
-Support phase: **Technical upgrade support (only)**
+- Security intelligence update version: **1.343.17.0**
+- Released: **June 28, 2021**
+- Platform: **4.18.2106.5**
+- Engine: **1.1.18300.4**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -454,11 +443,11 @@ No known issues
 
 ####  May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)
 
-Security intelligence update version: **1.341.8.0**
-Released: **June 3, 2021**
-Platform: **4.18.2105.4**
-Engine: **1.1.18200.4**
-Support phase: **Technical upgrade support (only)**
+- Security intelligence update version: **1.341.8.0**
+- Released: **June 3, 2021**
+- Platform: **4.18.2105.4**
+- Engine: **1.1.18200.4**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -471,11 +460,11 @@ No known issues
 
 ####  April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)
 
-Security intelligence update version: **1.337.2.0**
-Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)
-Platform: **4.18.2104.14**
-Engine: **1.1.18100.5**
-Support phase: **Technical upgrade support (only)**
+- Security intelligence update version: **1.337.2.0**
+- Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)
+- Platform: **4.18.2104.14**
+- Engine: **1.1.18100.5**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -489,11 +478,11 @@ No known issues
 
 ####  March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)
 
-Security intelligence update version: **1.335.36.0**
-Released: **April 2, 2021**
-Platform: **4.18.2103.7**
-Engine: **1.1.18000.5**
-Support phase: **Technical upgrade support (only)**
+- Security intelligence update version: **1.335.36.0**
+- Released: **April 2, 2021**
+- Platform: **4.18.2103.7**
+- Engine: **1.1.18000.5**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -507,11 +496,11 @@ No known issues
 
 ####  February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)
 
-Security intelligence update version: **1.333.7.0**
-Released: **March 9, 2021**
-Platform: **4.18.2102.3**
-Engine: **1.1.17900.7**
-Support phase: **Technical upgrade support (only)**
+- Security intelligence update version: **1.333.7.0**
+- Released: **March 9, 2021**
+- Platform: **4.18.2102.3**
+- Engine: **1.1.17900.7**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -524,11 +513,11 @@ No known issues
 
 ####  January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)
 
-Security intelligence update version: **1.327.1854.0**
-Released: **February 2, 2021**
-Platform: **4.18.2101.9**
-Engine: **1.1.17800.5**
-Support phase: **Technical upgrade support (only)**
+- Security intelligence update version: **1.327.1854.0**
+- Released: **February 2, 2021**
+- Platform: **4.18.2101.9**
+- Engine: **1.1.17800.5**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -544,11 +533,11 @@ No known issues
 
 ####  November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)
 
-Security intelligence update version: **1.327.1854.0**
-Released: **December 03, 2020**
-Platform: **4.18.2011.6**
-Engine: **1.1.17700.4**
-Support phase: **Technical upgrade support (only)**
+- Security intelligence update version: **1.327.1854.0**
+- Released: **December 03, 2020**
+- Platform: **4.18.2011.6**
+- Engine: **1.1.17700.4**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -560,11 +549,11 @@ No known issues
 
 ####  October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)
 
-Security intelligence update version: **1.327.7.0**
-Released: **October 29, 2020**
-Platform: **4.18.2010.7**
-Engine: **1.1.17600.5**
-Support phase: **Technical upgrade support (only)**
+- Security intelligence update version: **1.327.7.0**
+- Released: **October 29, 2020**
+- Platform: **4.18.2010.7**
+- Engine: **1.1.17600.5**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
