@@ -51,7 +51,7 @@ The `FileProfile()` function is an enrichment function in [advanced hunting](adv
 | `ThreatName` | `string` | Detection name for any malware or other threats found |
 | `Publisher` | `string` | Name of the organization that published the file |
 | `SoftwareName` | `string` | Name of the software product |
-| `ProfileAvailability` | `string` | Indicates the availability status of the profile data for the file, can be Available, Missing, Error, or an empty value |
+| `ProfileAvailability` | `string` | Indicates the availability status of the profile data for the file: Available - profile was successfully queried and file data returned, Missing - profile was successfully queried but no file info was found, Error - error in querying the file info or maximum alloted time was exceeded before query could be completed, or an empty value - if file ID is invalid or the maximum number of files was reached |
 
 
 
