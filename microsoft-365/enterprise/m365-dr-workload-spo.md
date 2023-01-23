@@ -62,6 +62,9 @@ Each user, Group mailbox, and SharePoint site have a Preferred Data Location (PD
 
 Users get a seamless experience when using Microsoft 365 services, including Office applications, OneDrive, and Search. See User experience in a Multi-Geo environment for details.
 
+>[!NOTE]
+>Once your tenant has enabled the Multi-Geo add-on, changing the default location for the tenant is not supported. This applies even for the [Data Residency Legacy Move Program](/microsoft-365/enterprise/m365-dr-legacy-move-program) and the Advanced Data Residency add-on.
+
 ### **OneDrive**
 
 Each user's OneDrive can be provisioned in or moved by an administrator to a _Satellite Geography_ location in accordance with the user's PDL. Personal files are then kept in that _Satellite Geography_ location, though they can be shared with users in other _Macro Region Geography_ or _Local Region Geography_ locations.
@@ -457,7 +460,7 @@ OneNote win32 client and UWP (Universal) App will automatically detect and seaml
 #### **Teams (applicable to Microsoft 365 group connected sites)**
 
 When the SharePoint site _Geography_ move completes, users will have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to _Geography_ move will continue to work after move is complete.
-SharePoint site _Geography_ move does not support moving Private Channels from one _Geography_ to another. Private channels remain in the original _Geography_.
+SharePoint site _Geography_ move does not support moving sites backing Private and Shared Channels from one _Geography_ to another, when using the `Start-SPOUnifiedGroupMove` command. Sites backing Private and Shared Channels remain in the original _Geography_. To move those sites individually, admins can initiate direct moves using the `Start-SPOSiteContentMove` command.
 
 #### **SharePoint Mobile App (iOS/Android)**
 The SharePoint Mobile App is cross _Geography_ compatible and able to detect the site's new _Geography_ location.

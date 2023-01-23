@@ -27,7 +27,7 @@ The following tables include the locations of these Microsoft personnel and cont
 
 Remote access to data by Microsoft personnel, including contract staff, is limited and controlled. Microsoft employs the least privileged access mechanisms to control access to Customer Data and Personal Data. Role-based access controls are employed to ensure that access to Customer Data and Personal Data required for service operations is for an appropriate purpose and approved with management oversight. Personnel also undergo background checks and use multi-factor authentication as part of Microsoft standard business requirements, and access to Customer and Personal Data is logged and monitored by Microsoft.
 
-For more information on remote access to data by personnel, see [Continuing data transfers that apply to all EU Data Boundary services](https://learn.microsoft.com/privacy/eudb/eu-data-boundary-transfers-for-all-services).
+For more information on remote access to data by personnel, see [Continuing data transfers that apply to all EU Data Boundary services](/privacy/eudb/eu-data-boundary-transfers-for-all-services).
 
 | Microsoft Subsidiary <br>Personnel Locations ||||
 |---|---|---|---|

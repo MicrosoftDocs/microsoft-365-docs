@@ -28,7 +28,7 @@ description: Learn how to schedule, manage, and conduct virtual appointments usi
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/05/2022
+ms.date: 01/05/2023
 ---
 
 # Virtual Appointments with Microsoft Teams and the Bookings app
@@ -101,6 +101,9 @@ You can configure options such as whether attendees can [join from a a desktop o
 ##### Set up SMS text notifications
 
 ![Information icon](media/info.png) **This feature is moving to [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview). Users can continue using this feature during the preview period. After the preview, users need a Teams Premium license.**
+
+> [!NOTE]
+> We'll be providing unlimited SMS notifications through March 1, 2023 (previously January 31, 2023) for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
