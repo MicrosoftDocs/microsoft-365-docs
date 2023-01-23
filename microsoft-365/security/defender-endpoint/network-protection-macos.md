@@ -22,8 +22,6 @@ ms.collection:
 search.appverid: met150
 ---
 
-<!--- jweston-1 to return as author and ms.author appx April/May 2023. --->
-
 # Network protection for macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -33,9 +31,6 @@ search.appverid: met150
 - [Microsoft Microsoft 365 Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Microsoft 365 Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Overview
 
@@ -75,25 +70,12 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/wi
 - Onboarded Machines:
   - Minimum macOS version: 11
   - Product version 101.78.13 or later
-  - Your device must be in either the External (Preview) or InsiderFast (Beta) Microsoft AutoUpdate update channel. You can check the update channel using the following command:
-
-```bash
-mdatp health --field release_ring
-```
-
-If your device isn't already in the External(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
-
-```bash
-defaults write com.microsoft.autoupdate2 ChannelName -string Preview
-```
-
-Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the device group remotely. For more information, see [Set preferences for Microsoft 365 Defender for Endpoint on macOS](mac-preferences.md).
 
 ## Deployment instructions
 
 ### Microsoft 365 Defender for Endpoint
 
-After you've configured your device to be in the External(preview) update channel, install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
+Install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
 
 ```bash
 open /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app
@@ -255,7 +237,7 @@ After you create this configuration profile, assign it to the devices where you 
 
 ## Scenarios
 
-The following scenarios are supported during public preview:
+The following scenarios are supported.
 
 ### Web threat protection
 
