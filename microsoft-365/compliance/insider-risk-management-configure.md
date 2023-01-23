@@ -125,16 +125,11 @@ Members of the following roles can assign users to insider risk management role 
 Complete the following steps to add users to this role group:
 
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
-
 2. Select **Permissions** in the left nav, and select **Roles** under the **Microsoft Purview solutions** list.
-
 3. Select the *Insider Risk Management* role group, then select **Edit**.
-
 4. Select the **Choose users** tab, then select the checkbox for all users you want to add to the role group.
-
-6. Choose **Select**, then **Next**.
-
-7. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
+5. Choose **Select**, then **Next**.
+6. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
 
 ## Step 2 (required): Enable the Microsoft 365 audit log
 

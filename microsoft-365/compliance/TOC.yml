@@ -270,6 +270,8 @@
             href: insider-risk-management-forensic-evidence-configure.md
           - name: Manage forensic evidence (preview)
             href: insider-risk-management-forensic-evidence-manage.md
+        - name: Help dynamically mitigate risks with Adaptive Protection (preview)
+          href: insider-risk-management-adaptive-protection.md
         - name: Learn about and configure browser signal detection
           href: insider-risk-management-browser-support.md
         - name: Review activities with the insider risk audit log
