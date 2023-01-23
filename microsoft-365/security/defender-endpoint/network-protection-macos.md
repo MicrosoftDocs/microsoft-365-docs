@@ -69,7 +69,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/wi
 - Licensing: Microsoft 365 Defender for Endpoint tenant (can be trial)
 - Onboarded Machines:
   - Minimum macOS version: 11
-  - Product version 101.96.85 or later
+  - Product version 101.94.13 or later
 
 ## Deployment instructions
 
