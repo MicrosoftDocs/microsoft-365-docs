@@ -22,8 +22,6 @@ ms.subservice: mde
 ms.reviewer: mkaminska
 ---
 
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
-
 # Device health, Microsoft Defender Antivirus health report
 
 **Applies to:**
@@ -99,7 +97,8 @@ Up-to-date reporting generates information for devices that meet the following c
 - Engine version: 1.1.19300.2+
 - Platform version: 4.18.2202.1+
 - Cloud protection enabled
-- Windows OS
+- MsSense.exe version 10.8210.x or later
+- Windows OS - Windows 10 1809 or later
    >[!Note]
    >Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
 
@@ -330,6 +329,24 @@ The following table lays out the possible up to date report values for **Securit
 | <7 days (new) | <7 days (new) | Up to date |
 
 ## See also
+
+> [!TIP]
+> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+>
+> - Top paths that impact scan time
+> - Top files that impact scan time
+> - Top processes that impact scan time
+> - Top file extensions that impact scan time
+> - Combinations – for example:
+>   - top files per extension
+>   - top paths per extension
+>   - top processes per path
+>   - top scans per file
+>   - top scans per file per process
+>
+> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+>
 
 - [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
 - [Export device antivirus health report](device-health-api-methods-properties.md)

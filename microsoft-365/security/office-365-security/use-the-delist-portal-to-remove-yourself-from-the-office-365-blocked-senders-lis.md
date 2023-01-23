@@ -26,7 +26,7 @@ ms.service: microsoft-365-security
 # Use the delist portal to remove yourself from the blocked senders list and address 5.7.511 Access denied errors
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 

@@ -25,7 +25,7 @@ ms.service: microsoft-365-security
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -74,7 +74,7 @@ The safelist collection on a mailbox includes the Safe Senders list, the Safe Re
   - **Move messages to Junk Email folder**: Domain entries and sender email address entries are honored. Messages from those senders are not moved to the Junk Email folder.
   - **Quarantine**: Domain entries are not honored (messages from those senders are quarantined). Email address entries are honored (messages from those senders are not quarantined) if either of the following statements are true:
     - The message is not identified as malware or high confidence phishing (malware and high confidence phishing messages are quarantined).
-    - The email address is not also in a block entry in the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) (messages from those senders will be quarantined).
+    - The email address is not also in a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-about.md) (messages from those senders will be quarantined).
 - In standalone EOP with directory synchronization, domain entries aren't synchronized by default, but you can enable synchronization for domains. For more information, see [KB3019657](https://support.microsoft.com/help/3019657).
 - You can't directly modify the Safe Recipients list by using the **Set-MailboxJunkEmailConfiguration** cmdlet (the _TrustedRecipientsAndDomains_ parameter doesn't work). You modify the Safe Senders list, and those changes are synchronized to the Safe Recipients list.
 

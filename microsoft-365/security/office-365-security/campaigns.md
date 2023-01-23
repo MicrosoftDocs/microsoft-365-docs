@@ -9,7 +9,6 @@ ms.reviewer: mcostea
 ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -68,13 +67,13 @@ You can also view Campaigns from:
 - **Email & collaboration** \> **Explorer** \> **View** \> **Malware** \> **Campaign** tab
 
 ## Required licenses and permissions
- 
-- ** You must have Defender for Office 365 Plan 2 to view Campaigns.
-- ** To access Campaigns, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+
+- Campaigns is available in Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5).
+- To access Campaigns, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 ## Campaigns overview
 
-The main Campaigns page is a threat report with all campaigns targetting your organizations.
+The main Campaigns page is a threat report with all campaigns targeting your organizations.
 
 On the default **Campaign** tab, the **Campaign type** area shows a bar graph that shows the number of recipients per day. By default, the graph shows both **Phish** and **Malware** data.
 

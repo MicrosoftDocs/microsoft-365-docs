@@ -190,3 +190,4 @@ If your Windows Server is onboarded to Microsoft Defender for Endpoint, you can 
 ## See also
 
 - [Microsoft Defender Antivirus in Windows](microsoft-defender-antivirus-windows.md)
+- [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
