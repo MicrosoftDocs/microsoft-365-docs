@@ -104,7 +104,7 @@ All our updates contain
 
 #### Known Issues
 
-None  
+- None  
 
 ### October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)
 
@@ -130,7 +130,7 @@ None
 
 #### Known Issues
 
-None  
+- None  
 
 ### September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)
 
@@ -182,7 +182,7 @@ After a new package version is released, support for the previous two versions i
 
 ##### Known Issues
 
-None
+- None
 
 #### July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)
 
@@ -823,11 +823,11 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20221209.1
 
@@ -838,11 +838,11 @@ None
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20221102.3
 
@@ -853,11 +853,11 @@ None
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20221014.1
 
@@ -868,11 +868,11 @@ None
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220929.1
 
@@ -883,11 +883,11 @@ None
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220925.2
 
@@ -898,41 +898,41 @@ None
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220901.4
 
-Package version: **20220901.4**
-Platform version: **4.18.2205.7**
-Engine version: **1.1.19500.2**
-Signature version: **1.373.1371.0**
+- Package version: **20220901.4**
+- Platform version: **4.18.2205.7**
+- Engine version: **1.1.19500.2**
+- Signature version: **1.373.1371.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220802.1
 
-Package version: **20220802.1**
-Platform version: **4.18.2205.7**
-Engine version: **1.1.19400.3**
-Signature version: **1.371.1205.0**
+- Package version: **20220802.1**
+- Platform version: **4.18.2205.7**
+- Engine version: **1.1.19400.3**
+- Signature version: **1.371.1205.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220629.5
 
@@ -943,11 +943,11 @@ Signature version: **1.369.220.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220603.3
 
@@ -958,11 +958,11 @@ Signature version: **1.367.1009.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220506.6
 
@@ -973,11 +973,11 @@ Signature version: **1.363.1436.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220321.1
 
@@ -988,11 +988,11 @@ Signature version: **1.351.337.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220305.1
 
@@ -1003,11 +1003,11 @@ Signature version: **1.359.1405.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220203.1
 
@@ -1018,11 +1018,11 @@ Signature version: **1.357.32.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 20220105.1
 
@@ -1033,11 +1033,11 @@ Signature version: **1.355.1482.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 
 ### 1.1.2112.01
@@ -1049,11 +1049,11 @@ Signature version: **1.353.2283.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2111.02
 
@@ -1068,7 +1068,7 @@ Signature version: **1.353.613.0**
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2110.01
 
@@ -1079,11 +1079,11 @@ Signature version: **1.349.2103.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2109.01
 
@@ -1094,11 +1094,11 @@ Signature version: **1.347.891.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2108.01
 
@@ -1109,11 +1109,11 @@ Signature version: **1.343.2244.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2107.02
 
@@ -1124,11 +1124,11 @@ Signature version: **1.343.658.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2106.01
 
@@ -1139,11 +1139,11 @@ Signature version: **1.339.1923.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2105.01
 
@@ -1154,11 +1154,11 @@ Signature version: **1.339.42.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 
 ### 1.1.2104.01
@@ -1170,11 +1170,11 @@ Signature version: **1.335.232.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2103.01
 
@@ -1185,11 +1185,11 @@ Signature version: **1.331.2302.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2102.03
 
@@ -1200,11 +1200,11 @@ Signature version: **1.331.174.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2101.02
 
@@ -1215,11 +1215,11 @@ Signature version: **1.329.1796.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2012.01
 
@@ -1230,11 +1230,11 @@ Signature version: **1.327.1991.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2011.02
 
@@ -1245,7 +1245,7 @@ Signature version: **1.327.658.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
@@ -1260,11 +1260,11 @@ Signature version: **1.327.344.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
-None
+- None
 
 ### 1.1.2009.10
 
@@ -1275,7 +1275,7 @@ Signature version: **1.327.2216.0**
 
 #### Fixes
 
-None
+- None
 
 #### Additional information
 
