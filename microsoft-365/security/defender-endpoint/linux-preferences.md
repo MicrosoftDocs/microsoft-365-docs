@@ -229,6 +229,14 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 |**Possible values**|unmute (default) <p> mute|
 |**Comments**|Available in Defender for Endpoint version 101.85.27 or higher.|
 
+#### Unmonitor Filesystems
+
+Configure filesystems to be unmonitored/excluded from Real Time Protection. The filesystems configured will be validated against Microsoft Defender's list of permitted filesystems that can be unmonitored. By default NFS and Fuse are unmonitored from RTP and Quick and Full scans.
+
+|Description|Value|
+|---|---|
+|**Key**|unmonitoredFilesystems|
+|**Data type**|Array of strings|
 #### Configure file hash computation feature
 
 Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
