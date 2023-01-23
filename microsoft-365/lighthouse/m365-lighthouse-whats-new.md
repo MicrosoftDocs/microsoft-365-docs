@@ -54,12 +54,6 @@ You can now manage all shared mailboxes and meeting rooms across your managed te
 
 You can now exclude certain non-malicious threats from showing up for tenants on the Threat management page in Microsoft 365 Lighthouse. Go to the tenant's deployment plan, select **Configure a Microsoft Defender Antivirus baseline policy**, and then specify the file, folder, or file-type exclusions.
 
-### Insights from Endpoint analytics
-
-We've added insights from Endpoint analytics in Microsoft Endpoint Manager to Microsoft 365 Lighthouse to help you proactively take measures to improve the health of user devices and apps within managed tenants. The insights from Endpoint analytics inform a deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, select **Devices** > **Device health** in the left navigation pane in Microsoft 365 Lighthouse to see the Endpoint analytics insights.
-
-For more information, see [What is Endpoint analytics?](/mem/analytics/overview)
-
 ### Deployment status
 
 Microsoft 365 Lighthouse now provides a deployment status for each tenant's deployment plan so you can optimize and prioritize your deployment efforts accordingly.

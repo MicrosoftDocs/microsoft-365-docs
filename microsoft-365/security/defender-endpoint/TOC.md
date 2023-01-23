@@ -49,7 +49,7 @@
 
 ## [Migration guides](migration-guides.md)
 ### [Migrate Defender for Endpoint servers to Defender for Cloud](migrating-mde-server-to-cloud.md)
-### [Move to Defender for Endpoint](switch-to-mde-overview.md)
+### [Migrate to Defender for Endpoint](switch-to-mde-overview.md)
 #### [Phase 1: Prepare](switch-to-mde-phase-1.md)
 #### [Phase 2: Setup](switch-to-mde-phase-2.md)
 #### [Phase 3: Onboard](switch-to-mde-phase-3.md)
@@ -133,6 +133,7 @@
 ###### [Manual deployment](linux-install-manually.md)
 ###### [Puppet based deployment](linux-install-with-puppet.md)
 ###### [Ansible based deployment](linux-install-with-ansible.md)
+###### [Saltstack based deployment](linux-install-with-saltack.md)
 ###### [Deploy Defender for Endpoint on Linux with Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
 ##### [Update](linux-updates.md)
@@ -297,6 +298,10 @@
 ###### [Frequently asked questions](device-control-removable-storage-access-control-faq.md)
 ##### [Device Installation](mde-device-control-device-installation.md)
 ##### [Device Control Printer Protection](printer-protection.md)
+###### [Printer Protection Overview](printer-protection-overview.md)
+###### [Deploy and manage using group policy](deploy-and-manage-using-group-policy.md)
+###### [Deploy and manage using Intune](deploy-and-manage-using-intune.md)
+###### [Printer Protection frequently asked questions](printer-protection-frequently-asked-questions.md)
 ##### [Device Control Reports](device-control-report.md)
 #### [Exploit protection]()
 ##### [Protect devices from exploits](exploit-protection.md)
