@@ -27,7 +27,7 @@ Microsoft Defender for Business servers is an add-on to Defender for Business. T
 > - In order to add on Microsoft Defender for Business servers, you'll need at least one paid license for [Microsoft 365 Business Premium](../../business-premium/index.md) or [Defender for Business](mdb-overview.md) (standalone). 
 > - You'll need one Microsoft Defender for Business servers license per server instance, although you don't assign it to any devices or users.
 > - There's a limit of 60 Microsoft Defender for Business servers licenses per subscription to Microsoft 365 Business Premium or Defender for Business.
-> - Alternately, you could use [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/defender-for-servers-introduction) to onboard your servers. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
+> - Alternately, you could use [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers) to onboard your servers. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
 
 ## Get Microsoft Defender for Business servers
 
