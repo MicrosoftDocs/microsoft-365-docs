@@ -24,6 +24,7 @@ search.appverid: met150
 # Microsoft Defender for Endpoint Device Control Removable Storage frequently asked questions
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article provides answers to frequently asked questions about device control removable storage capabilities in Microsoft Defender for Endpoint.

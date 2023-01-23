@@ -90,6 +90,7 @@ You'll probably only need to assign the following roles in your organization. By
 |Message center privacy reader    |   Assign the Message center privacy reader role to users who need to read privacy and security messages and updates in the Microsoft 365 Message center. Message center privacy readers may get email notifications related to data privacy, depending on their preferences, and they can unsubscribe using Message center preferences. Only global administrators and Message center privacy readers can read data privacy messages. This role has no permission to view, create, or manage service requests. <br><br>Message center privacy readers can also: <br> - Monitor all notifications in the Message Center, including data privacy messages <br> - View groups, domains, and subscriptions   |
 |Message center reader |   Assign the Message center reader role to users who need to do the following: <br> - Monitor message center notifications <br> - Get weekly email digests of message center posts and updates <br> - Share message center posts <br> - Have read-only access to Azure AD services, such as users and groups|
 |Office Apps admin    |   Assign the Office Apps admin role to users who need to do the following: <br> - Use the Cloud Policy service for Microsoft 365 to create and manage cloud-based policies for Office <br> - Create and manage service requests <br> - Manage the What's New content that users see in their Office apps   <br> - Monitor service health  |
+|Organizational Message Writer    |    Assign the Organizational Message Writer role to users who need to write, publish, manage, and review the organizational messages for end-users through Microsoft product surfaces.   |
 |Password admin  |   Assign the Password admin role to a user who needs to reset passwords for non-administrators and Password Administrators.   |
 |Power Platform admin |   Assign the Power Platform admin role to users who need to do the following: <br> - Manage all admin features for Power Apps, Power Automate, and Microsoft Purview Data Loss Prevention <br> - Create and manage service requests <br> - Monitor service health  |
 |Reports reader |   Assign the Reports reader role to users who need to do the following: <br> - View usage data and the activity reports in the Microsoft 365 admin center <br> - Get access to the Power BI adoption content pack <br> - Get access to sign-in reports and activity in Azure AD <br> - View data returned by Microsoft Graph reporting API|
@@ -97,6 +98,22 @@ You'll probably only need to assign the following roles in your organization. By
 |SharePoint admin    |   Assign the SharePoint admin role to users who need to access and manage the SharePoint Online admin center. <br><br>SharePoint admins can also: <br> - Create and delete sites <br> - Manage site collections and global SharePoint settings   |
 |Teams administrator    |   Assign the Teams administrator role to users who need to access and manage the Teams admin center. <br><br>Teams administrator can also: <br> - Manage meetings <br> - Manage conference bridges <br> - Manage all org-wide settings, including federation, teams upgrade, and teams client settings   |
 |User admin     |    Assign the User admin role to users who need to do the following for all users: <br> - Add users and groups <br> - Assign licenses <br> - Manage most users properties <br> - Create and manage user views <br> - Update password expiration policies <br> - Manage service requests <br> - Monitor service health <br><br>  The user admin can also do the following actions for users who aren't admins and for users assigned the following roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, Reports reader: <br> - Manage usernames<br> - Delete and restore users<br> - Reset passwords <br> - Force users to sign out <br> - Update (FIDO) device keys   |
+|User Experience Success Manager     |    Assign the User Experience Success Manager role to users who need to access Experience Insights, Adoption Score, and the Message Center in the Microsoft 365 admin center. This role includes the permissions of the Usage Summary Reports Reader role.    |
+
+## Permissions based on Admin role and Group type in M365 Admin page
+
+|Admin Role | M365 Groups   | Security Groups  | Distribution Groups   | Mail Enabled Security Groups   |
+| --- | --- | --- | --- | --- |
+| Global admin  | Create, Read, Update, Delete  | Create, Read, Update, Delete | Create, Read, Update, Delete | Create, Read, Update, Delete |
+| Global reader  | Read | Read  | Read | Read |
+| User admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete | Read | Read |
+| Exchange admin  | Create, Read, Update, Delete | Create, Read, Update, Delete - *only groups they own*  | Create, Read, Update, Delete | Create, Read, Update, Delete |
+| Teams admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete - _only groups they own_  | Read | Read |
+| SharePoint admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete -_only groups they own_  | Read | Read |
+| Billing admin  | Read | Read | Read  | Read |
+| Skype admin  | Read | Read | Read | Read |
+| Service admin  | Read | Read  | Read | Read |
+| Group admin  | Create, Read, Update, Delete, ***Can't update EXO properties*** | Create, Read, Update, Delete | Read | Read |
 
 ## Delegated administration for Microsoft Partners
 

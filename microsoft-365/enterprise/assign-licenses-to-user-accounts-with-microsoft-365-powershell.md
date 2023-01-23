@@ -165,6 +165,51 @@ $addLicenses = @(
 Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
+This example updates a user with **SPE_E5** (Microsoft 365 E5) and turns off the Sway and Forms service plans while leaving the user's existing disabled plans in all other subscriptions in their current state:
+
+```powershell
+$userLicense = Get-MgUserLicenseDetail -UserId belinda@litwareinc.com
+
+$userDisabledPlans = $userLicense.ServicePlans | Where-Object ProvisioningStatus -eq "Disabled" | Select -ExpandProperty ServicePlanId
+
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+
+$newDisabledPlans = $e5Sku.ServicePlans | Where ServicePlanName -in ("SWAY", "FORMS_PLAN_E5") | Select -ExpandProperty ServicePlanId
+
+$disabledPlans = ($userDisabledPlans + $newDisabledPlans) | Select -Unique
+
+$result=@()
+$allPlans = $e5Sku.ServicePlans | Select -ExpandProperty ServicePlanId
+
+foreach($disabledPlan in $disabledPlans)
+{
+    foreach($allPlan in $allPlans)
+    {
+        if($disabledPlan -eq $allPlan)
+        {
+            $property = @{
+                Disabled = $disabledPlan
+            }
+        }
+     }
+     $result += New-Object psobject -Property $property
+}
+
+
+$finalDisabled = $result | Select-Object -ExpandProperty Disabled
+
+
+$addLicenses = @(
+    @{
+        SkuId = $e5Sku.SkuId
+        DisabledPlans = $finalDisabled
+    }
+)
+
+
+Set-MgUserLicense -UserId belinda@litwareinc.com -AddLicenses $addLicenses -RemoveLicenses @()
+```
+
 ### Assign licenses to a user by copying the license assignment from another user
 
 This example assigns **jamesp\@litwareinc.com** with the same licensing plan that has been applied to **belindan\@litwareinc.com**:

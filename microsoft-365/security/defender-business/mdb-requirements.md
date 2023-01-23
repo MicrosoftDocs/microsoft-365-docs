@@ -56,5 +56,6 @@ The following table lists the basic requirements you need to configure and use D
 
 ## Next steps
 
-Go to [Step 2: Assign roles and permissions in Defender for Business](mdb-roles-permissions.md).
- 
+- If you don't already have Defender for Business, see [Get and provision Microsoft Defender for Business](get-defender-business.md).
+- If you're starting a trial subscription, see the [Trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md).
+- If you're ready to set up Defender for Business for your organization, see [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).

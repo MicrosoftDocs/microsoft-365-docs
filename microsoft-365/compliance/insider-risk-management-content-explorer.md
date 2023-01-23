@@ -1,5 +1,5 @@
 ---
-title: Insider risk management Content explorer
+title: Review date with the insider risk management content explorer
 description: Learn about insider risk management Content explorer in Microsoft Purview
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
@@ -16,7 +16,7 @@ ms.collection:
 - purview-compliance
 ---
 
-# Insider risk management Content explorer
+# Review date with the insider risk management content explorer
 
 > [!IMPORTANT]
 > Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.

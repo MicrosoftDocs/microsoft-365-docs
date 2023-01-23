@@ -8,13 +8,12 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
-ms.subservice: other
-ms.date: 09/15/2022
+ms.subservice: m365bp
+ms.date: 01/18/2023
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
-- highpri
 - m365-security
 - tier1
 ms.custom:
@@ -29,7 +28,7 @@ description: "Start the setup process of Microsoft 365 Business Premium or Micro
 
 Now that you have Microsoft 365 Business Premium, your first critical mission is to complete your initial setup process right away. Let's get you going!
 
-:::image type="content" source="media/mission1.png" alt-text="Sign in and set up.":::
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
 
 Your objective is to:
 

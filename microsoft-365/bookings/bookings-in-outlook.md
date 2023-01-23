@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ROBOTS: NO INDEX, NO FOLLOW
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
 ---
 
@@ -62,7 +62,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
 2. Calendar FreeBusy Anonymous sharing must be enabled to use Bookings with me. This allows the Bookings page to have access to the free/busy information in your Outlook calendar. Use PowerShell to check the status.
 
    ```PowerShell
-     Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains 
+     Get-SharingPolicy -Identity "Default Sharing Policy" | fl Domains, Enabled 
    ```
 
     Anonymous:SharingPolicyAction must be one of the domains in the response. SharingPolicyAction value can be CalendarSharingFreeBusySimple, CalendarSharingFreeBusyDetail, or CalendarSharingFreeBusyReviewer (default).
@@ -72,7 +72,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
-3.	For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyActio as one of the domains.
+3. For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyAction as one of the domains.
 
    ```Powershell:
       get-mailbox adam@contoso.com | Format-List SharingPolicy
@@ -109,9 +109,9 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Get-OrganizationConfig | Format-List EwsEnabled
    ```
 
-    If the command returns “EwsEnabled: **$true**" then proceed to Step 2.
+    If the command returns "EwsEnabled: **$true**" then proceed to Step 2.
 
-    If the command returns “EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
+    If the command returns "EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
     Otherwise the default values of EwsEnabled is enough to leave "Bookings with me" enabled, no further changes are needed.
 
    ```PowerShell
@@ -129,17 +129,13 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
     - To turn off Bookings with me for your organization, remove **MicrosoftOWSPersonalBookings**, if present, from **EwsAllowList** by running the following command:  
 
    ```PowerShell
-   Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceAllowList -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
     - To turn on Bookings with me for your organization, you must set the **EwsApplicationAccessPolicy** to **EnforceAllowList** and add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
 
    ```PowerShell
-   Set-OrganizationConfig -EwsApplicationAccessPolicy:EnforceAllowList
-   ```
-   
-   ```PowerShell
-   Set-OrganizationConfig -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceAllowList -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     **B**. If the value of **EwsApplicationAccessPolicy** is **EnforceBlockList**, all applications are allowed to access EWS and REST, except those specified in **EwsBlockList**.
@@ -147,13 +143,13 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
     - To turn off Bookings with me for your organization, add **MicrosoftOWSPersonalBookings** by running the following command:
 
    ```PowerShell
-   Set-OrganizationConfig -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     - To turn on Bookings with me if blocked, remove **MicrosoftOWSPersonalBookings** by running the following command:
 
    ```PowerShell
-   Set-OrganizationConfig -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
     **C**. If the value of **EwsApplicationAccessPolicy** is empty, all applications are allowed to access EWS and REST.
@@ -164,6 +160,12 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
    Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
    
+    - If you want to revert the value of **EwsApplicationAccessPolicy** to empty to allow all applications to access EWS and REST, run the following command:
+
+   ```PowerShell
+   Set-OrganizationConfig -EwsApplicationAccessPolicy $null
+   ```
+      
   > [!NOTE]
   > The EwsApplicationAccessPolicy parameter defines which applications other than Entourage, Outlook, and Outlook for Mac can access EWS.
 
@@ -171,7 +173,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
 Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status and turn Bookings with me on or off for individual users in your organization.
 
-1. Check the individual’s EWS control access by running the following command:
+1. Check the individual's EWS control access by running the following command:
 
    ```PowerShell
    Get-CASMailbox -Identity adam@contoso.com | Format-List EwsEnabled
@@ -179,7 +181,7 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
 
     **A**. If the command returns "**EwsEnabled: $true**", then proceed to Step 2.
 
-2. Check the individual’s **EwsApplicationAccessPolicy** by running the following command:
+2. Check the individual's **EwsApplicationAccessPolicy** by running the following command:
 
    ```PowerShell
    Get-CASMailbox -Identity adam@contoso.com | Format-List EwsApplicationAccessPolicy,Ews*List
@@ -251,7 +253,7 @@ Private meeting types can also generate single use links. Single use links expir
 
 ### Do people need to have a Microsoft account or Bookings license to schedule time with me?
 
-No. Anyone can schedule time with you using your Bookings with me page, even if they don’t have a Microsoft account. You need a Bookings license to create a Bookings with me page.
+No. Anyone can schedule time with you using your Bookings with me page, even if they don't have a Microsoft account. You need a Bookings license to create a Bookings with me page.
 
 ## Privacy
 

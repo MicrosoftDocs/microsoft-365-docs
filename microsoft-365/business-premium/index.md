@@ -8,8 +8,8 @@ manager: dansimp
 ms.audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
-ms.subservice: other
-ms.date: 10/24/2022
+ms.subservice: m365bp
+ms.date: 01/18/2023
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
@@ -33,7 +33,7 @@ Microsoft 365 Business Premium with its world class productivity tools is a wise
 
 The task before you is this: let Microsoft 365 Business Premium help secure your organization’s future! Approach this task by taking on the following six missions: 
 
-:::image type="content" source="media/sixmissions.png" alt-text="Diagram listing six missions.":::
+:::image type="content" source="media/sixmissions.png" alt-text="Diagram listing your six missions.":::
 
 | What to do | How to do it |
 |:---|:---|

@@ -35,17 +35,17 @@ These are the key features you'll get with the Microsoft 365 support integration
 
 - Service Health Incidents: Information about known Microsoft service health incidents, including user impact, scope, current status, and next expected update. Using machine learning, ServiceNow incidents are matched to Microsoft service health incidents based on the short description field.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" lightbox="../../media/ServiceNow-guide/servicenow_service_health_incidents.png" alt-text="Service Health Incidents description field.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-servicehealth1.png" alt-text="ServiceNow Health Incidents description field."::: 
 
 - Recommended solutions: Descriptions of tasks and incidents are used to recommend precise targeted solutions and relevant articles from Microsoft powered by machine learning. You can also use Search to find other solutions, if needed.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow_recommended_articles.png" lightbox="../../media/ServiceNow-guide/servicenow_recommended_articles.png" alt-text="Recommended solutions description field.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-recommendedsol2.png" alt-text="ServiceNow Recommended solutions description field.":::
 
-- Microsoft service request: Escalate issues to Microsoft support agents and receive status updates for your request. With an updated workflow, you can now create a service request by adding your preferred title, description, and contact information similar to what is found in the Microsoft 365 admin portal.
+- Microsoft service request: Escalate issues to Microsoft support agents and receive status updates for your case.
 
-    :::image type="content" source="../../media/ServiceNow-guide/SNOW_escalation.png" lightbox="../../media/ServiceNow-guide/SNOW_escalation.png" alt-text="Screenshot that shows the recommended solutions description field.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-service-request.png" alt-text="ServiceNow service request form.":::
 
-    :::image type="content" source="../../media/ServiceNow-guide/SNOW_escalation2.png" lightbox="../../media/ServiceNow-guide/SNOW_escalation2.png" alt-text="Screenshot that shows the recommended solutions description field.":::
+
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ These are the key features you'll get with the Microsoft 365 support integration
 
 To proceed with this guide, make sure that the following permissions are available and configured for your environments during the whole process:
 
-- Azure Active Directory (AAD) admin who can create Azure AD Applications
+- Azure Active Directory (AAD) admin who can create AAD applications
 
 - ServiceNow admin
 
@@ -65,7 +65,7 @@ To set up **Microsoft 365 support integration**:
 
 - Register applications in Microsoft Azure Active Directory (AAD) for authentication of both outbound and inbound API calls.
 
-- Create ServiceNow entities with Microsoft Azure AD Application for both outbound and inbound data flow.
+- Create ServiceNow entities with Microsoft AAD application for both outbound and inbound data flow.
 
 - Integrate ServiceNow instance with Microsoft support through the Microsoft 365 admin portal.
 
@@ -81,25 +81,21 @@ Permissions required:
 
 After the Microsoft 365 Support Integration app has been installed, two Application Cross-Scope accesses are created. If they're not created successfully, create them manually.
 
-## Set up the integration
+## What features will work for your organization based on your configuration?
 
-After you've downloaded the app, navigate to the Microsoft 365 setup wizard in your SNOW environment to complete the setup process.
+Before setting up any configuration for Microsoft 365 support integration, review your answers to these questions:
 
-:::image type="content" source="../../media/ServiceNow-guide/Agree.png" lightbox="../../media/ServiceNow-guide/Agree.png" alt-text="Screenshot that shows the recommended solutions description field.":::
+**Question \#1**: Does your ServiceNow environment allow Basic Authentication (access with ServiceNow user credential) for inbound webservice calls?
 
-You can learn more about the steps by visiting the following pages:
-- If you would like to get started without setting up the Microsoft 365 support integration app, you can select the **Continue without any setup** option. This option will continue to provide basic recommended solutions.
+**Question \#2**: If you have multiple tenants, do you plan to use a single tenant integrated with your ServiceNow environment for Microsoft 365 support integration?
 
-    :::image type="content" source="../../media/ServiceNow-guide/No_setup.png" lightbox="../../media/ServiceNow-guide/No_setup.png" alt-text="Recommended solutions description field.":::
-    
-- If your ServiceNow environment allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md).
-- If your ServiceNow environment does NOT allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token.md).
-  - This configuration will require an SSO tenant in order for the AAD Auth Token to work correctly.
+Depending on your answers to the questions above, this table tells you what features are available and how to set up Microsoft 365 support integration. For a description of each feature, see [Microsoft 365 support integration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
-To understand each feature, see [Microsoft 365 support integration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+| **Question \#1 Answer** | **Question \#2 Answer** | **What features are available?** | **Configuration** |Steps                                                                                                        
+|---------------------|---------------------|-----------|----------------|
+| Yes                 | Yes/No              | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication-v1.md) |
+| No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with AAD OAuth Token](servicenow-aad-oauth-token-v1.md)                 |
+| No                  | No                  | Service Health Incidents Recommended Solutions                           | [Set up Microsoft 365 support integration for Insights ONLY]                |
 
-> [!NOTE]
-> This app is not supported in regulated or restricted environments.
 
-> [!IMPORTANT]
-> The Microsoft 365 support integration app will occasionally prompt users for feedback about the app. If you don’t want users to be prompted for feedback, turn off this functionality in the app settings. For more information about Microsoft feedback policies, see [Learn about Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control). To change the feedback settings, follow the steps in the installation process.
+[Configure Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token-v1.md)

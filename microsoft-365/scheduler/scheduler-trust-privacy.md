@@ -11,6 +11,9 @@ description: "Understanding Trust and Privacy in Scheduler for Microsoft 365 are
 ---
 # Trust and Privacy in Scheduler for Microsoft 365
 
+> [!IMPORTANT]
+> Scheduler for Microsoft 365 will stop working in August 2023. After that date, Scheduler won't be able to create or modify any meeting requests.
+
 Scheduler is a unique offering whose artificial intelligence is augmented with human assistance when the AI models are not confident in the user’s intent, often due to ambiguity or contextual references. 
 
 ## Policies

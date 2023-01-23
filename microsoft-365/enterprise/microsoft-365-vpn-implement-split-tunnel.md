@@ -58,7 +58,7 @@ For more information about Microsoft 365 endpoints and how they are categorized 
 
 #### Optimize URLs
 
-The current Optimize URLs can be found in the table below. Under most circumstances, you should only need to use URL endpoints in a [browser PAC file](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic) where the endpoints are configured to be sent direct, rather than to the proxy.
+The current Optimize URLs can be found in the table below. Under most circumstances, you should only need to use URL endpoints in a [browser PAC file](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-microsoft-365-traffic) where the endpoints are configured to be sent direct, rather than to the proxy.
 
 | Optimize URLs | Port/Protocol | Purpose |
 | --- | --- | --- |
@@ -72,7 +72,7 @@ In the above examples, **tenant** should be replaced with your Microsoft 365 ten
 
 #### Optimize IP address ranges
 
-At the time of writing the IP address ranges that these endpoints correspond to are as follows. It's **very strongly** advised you use a [script such as this](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) example, the [Microsoft 365 IP and URL web service](microsoft-365-ip-web-service.md) or the [URL/IP page](urls-and-ip-address-ranges.md) to check for any updates when applying the configuration, and put a policy in place to do so regularly.
+At the time of writing the IP address ranges that these endpoints correspond to are as follows. It's **very strongly** advised you use a [script such as this](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) example, the [Microsoft 365 IP and URL web service](microsoft-365-ip-web-service.md) or the [URL/IP page](urls-and-ip-address-ranges.md) to check for any updates when applying the configuration and put a policy in place to do so regularly. If utilizing continuous access evaluation, refer to [Continuous access evaluation IP address variation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#ip-address-variation-and-networks-with-ip-address-shared-or-unknown-egress-ips). Routing optimized IPs through a trusted IP or VPN may be required to prevent blocks related to _insufficient_claims_ or _Instant IP Enforcement check failed_ in certain scenarios.
 
 ```markdown
 104.146.128.0/17
