@@ -242,14 +242,11 @@ No known issues
 
 *Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to at least this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it's recommended to reboot machines after applying update.*
 
-Security intelligence update version: **1.363.817.0**
-Released: **April 22, 2022**
-Platform: **4.18.2203.5**
-Engine: **1.1.19200.5**
-Support phase: **Technical upgrade support (only)**
-
-Engine version: 1.1.19200.5 
-Security intelligence update version: 1.363.817.0
+- Security intelligence update version: **1.363.817.0**
+- Released: **April 22, 2022**
+- Platform: **4.18.2203.5**
+- Engine: **1.1.19200.5**
+- Support phase: **Technical upgrade support (only)**
 
 #### What's new
 
@@ -261,14 +258,11 @@ No known issues
 
 #### March-2022 (Platform: 4.18.2203.5 | Engine:  1.1.19100.5)
 
-Security intelligence update version: **1.361.1449.0**
-Released: **April 7, 2022**
-Platform: **4.18.2203.5**
-Engine: **1.1.19100.5**
-Support phase: **Technical upgrade support (only)**
-
-Engine version: 1.1.19100.5 
-Security intelligence update version: 1.361.1449.0
+- Security intelligence update version: **1.361.1449.0**
+- Released: **April 7, 2022**
+- Platform: **4.18.2203.5**
+- Engine: **1.1.19100.5**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
@@ -284,14 +278,11 @@ Security intelligence update version: 1.361.1449.0
 
 #### February-2022 (Platform: 4.18.2202.4 | Engine: 1.1.19000.8)
 
-Security intelligence update version: **1.361.14.0**
-Released: **March 14, 2022**
-Platform: **4.18.2202.4**
-Engine: **1.1.19000.8**
-Support phase: **Technical upgrade support (only)**
-
-Engine version: 1.1.19000.8 
-Security intelligence update version: 1.361.14.0 
+- Security intelligence update version: **1.361.14.0**
+- Released: **March 14, 2022**
+- Platform: **4.18.2202.4**
+- Engine: **1.1.19000.8**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
