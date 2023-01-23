@@ -218,14 +218,11 @@ None
 
 #### May-2022 (Platform: 4.18.2205.7 | Engine: 1.1.19300.2)
 
-Security intelligence update version: **1.369.88.0**
-Released: **June 22, 2022**
-Platform: **4.18.2205.7**
-Engine: **1.1.19300.2**
-Support phase: **Technical upgrade support (only)**
-
-Engine version: 1.1.19300.2
-Security intelligence update version: 1.369.88.0
+- Security intelligence update version: **1.369.88.0**
+- Released: **June 22, 2022**
+- Platform: **4.18.2205.7**
+- Engine: **1.1.19300.2**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
