@@ -81,6 +81,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 
 |condition or exception in DLP|condition/exception parameters in Security & Compliance PowerShell|property type|description|
 |---|---|---|---|
+|Content is shared with |condition: *AccessScope* <br/><br/> |Scope|Messages that are sent to internal or external recipients.|
 |Recipient is|condition: *SentTo* <br/><br/> exception: *ExceptIfSentTo*|Addresses|Messages where one of the recipients is the specified mailbox, mail user, or mail contact in the organization. The recipients can be in the **To**, **Cc**, or **Bcc** fields of the message.|
 |Recipient domain is|condition: *RecipientDomainIs* <br/><br/> exception: *ExceptIfRecipientDomainIs*|DomainName|Messages where the domain of the recipient's email address matches the specified value.|
 |Recipient address contains words|condition: *AnyOfRecipientAddressContainsWords* <br/><br/> exception: *ExceptIfAnyOfRecipientAddressContainsWords*|Words|Messages that contain the specified words in the recipient's email address. <br/><br/>**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
@@ -88,6 +89,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 |Sent to member of|condition: *SentToMemberOf* <br/><br/> exception: *ExceptIfSentToMemberOf*|Addresses|Messages that contain recipients who are members of the specified distribution group, mail-enabled security group, or Microsoft 365 group. The group can be in the **To**, **Cc**, or **Bcc** fields of the message.|
 |The recipient's specified properties include any of these words |*RecipientADAttributeContainsWords* <br/><br/> *ExceptIfRecipientADAttributeContainsWords*|First property: `ADAttribute` <br/><br/> Second property: `Words`|Messages where the specified Active Directory attribute of a recipient contains any of the specified words. <br/><br/> Note that the **Country** attribute requires the two-letter country code value (for example, DE for Germany).|
 |The recipient's specified properties match these text patterns |*RecipientADAttributeMatchesPatterns* <br/><br/> *ExceptIfRecipientADAttributeMatchesPatterns*|First property: `ADAttribute` <br/><br/> Second property: `Patterns`|Messages where the specified Active Directory attribute of a recipient contains text patterns that match the specified regular expressions.|
+|Recipient scope|condition: *AccessScope* <br/><br/> exception: *ExceptIfAccessScope*|UserScopeFrom|Messages that are received by either internal or external recipients.|
 
 ### Message subject or body
 
@@ -98,7 +100,7 @@ To configure the sender address location at a DLP rule level, the parameter is *
 |Content contains|condition: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages or documents that contain sensitive information as defined by Microsoft Purview Data Loss Prevention (DLP) policies.|
 |Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|Patterns|Messages where the subject field or message body contains text patterns that match the specified regular expressions.|
 |Subject or Body contains words|condition: *SubjectOrBodyContainsWords* <br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|Messages that have the specified words in the subject field or message body|
-|
+
 
 ### Attachments
 
