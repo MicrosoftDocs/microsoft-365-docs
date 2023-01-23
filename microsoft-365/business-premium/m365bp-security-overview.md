@@ -28,7 +28,7 @@ description: "Security overview for Microsoft 365 Business Premium which provide
 
 :::image type="content" source="media/mission2.png" alt-text="Diagram with Boost Your Security Protection highlighted.":::
 
-In this mission, you boost your security defenses. You begin by enforcing multifactor authentication (MFA) requirements by using either security defaults or Conditional Access. You'll set up the different admin roles and specific levels of security for them. Admin account access is a high-value target for the enemy hackers, and protecting those accounts is critical because the access and control they provide can impact the entire system. And, you'll protect your email content and devices.
+In this mission, you bump up your security defenses. You begin by enforcing multifactor authentication (MFA) requirements by using either security defaults or Conditional Access. You'll set up the different admin roles and specific levels of security for them. Admin account access is a high-value target for the enemy hackers, and protecting those accounts is critical because the access and control they provide can impact the entire system. And, you'll protect your email content and devices.
 
 Stay vigilant - the safety and reliability of the system relies upon you.
 
