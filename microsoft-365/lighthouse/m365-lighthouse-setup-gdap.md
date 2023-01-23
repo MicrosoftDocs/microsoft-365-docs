@@ -23,15 +23,15 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Set up GDAP for your customers
 
-
-> [!NOTE]
-> This feature is rolling out at different speeds to our customers. If you aren't seeing this feature yet, you should see it soon.
-
 Partners onboarded to Microsoft 365 Lighthouse can now set up all their customers with Granular Delegated Administrative Privileges (GDAP) through Lighthouse, regardless of their licenses or size. Lighthouse enables partners to quickly transition their organization to GDAP and begin the journey to least-privilege for their delegated access to customers. By setting up your organization with GDAP for the customer tenants you manage, users in your organization have the permissions necessary to do their work while keeping customer tenants secure.
 
 Delegated access via DAP or GDAP is a prerequisite for customers to be fully onboard to Lighthouse. Therefore, creating GDAP relationships may be the first step in managing your customers in Lighthouse.
 
 During the GDAP setup process, you'll assign roles to tiers of job functions for employees in your organization and then create GDAP templates that will assign those tiered roles to specific security groups with users for groups of customers. GDAP roles are scoped to [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference), and when you set up GDAP, you'll see recommendations for a set of roles needed for each tier.
+
+## Watch: Set up GDAP demonstration
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5e61P]
 
 ## Before you begin
 

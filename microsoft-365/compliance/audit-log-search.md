@@ -61,6 +61,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 | SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
 | Stream|MicrosoftStream|
 | Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
+| Viva Goals|Viva Goals|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
 | SystemSync| DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData |
