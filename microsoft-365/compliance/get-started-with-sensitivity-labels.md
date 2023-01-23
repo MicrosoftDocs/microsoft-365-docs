@@ -80,14 +80,32 @@ These permissions are required only to create and configure sensitivity labels a
 
 ## Support for admin units
 
-[Administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units) are now supported in preview for assigning to the role groups that you use to create and configure sensitivity labels and their label policies.
+Now in preview, when you use any of the Information Protection role groups that are listed in the preceding section, you can assign members of these role groups to [administrative units that are configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
+- **Information Protection**
+- **Information Protection Admins**
+- **Information Protection Analysts**
+- **Information Protection Investigators**
+- **Information Protection Readers**
 
-Admin units are also supported in preview for label policies and auto-labeling policies for Exchange. As a new step when you create or edit these policies, you can select admin units so that only the users in those admin units will have the policy applied.
+As a result, these restricted admins must now select one or more of their assigned admin units to define the scope of labeling policies that they create or edit. Only if they are also global admins, will they be able to assign labeling policies to the entire directory without selecting individual admin units.
+
+Label policies and auto-labeling policies for Exchange support admin units. As a new step when you create or edit these policies, you can select admin units so that only the users in those admin units will be eligible for the policy:
+
+- Users who have admin units assigned to them but are also global admins don't have to select admin units as part of the policy configuration. These users can keep the default of the entire directory, or they can select one of their assigned admin units.
+
+- Users who have admin units assigned to them and aren't global admins must select admin units as part of the policy configuration.
+
+- Users who don't have admin units assigned to them won't be able to select admin units. These users must keep the default of the entire directory.
+
+In the next step of the policy configuration, users can then refine their choice as before, by including or excluding (if supported) individual users. However, if admin units have been selected, **All** now represents all users in the selected admin units rather than all users in the tenant. Similarly, the users that can included or excluded will be from the selected admin units only.
 
 > [!IMPORTANT]
 > Don't select admin units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because admin units support only users and groups, if you configure an auto-labeling policy to use admin units, you won't see the options for OneDrive and SharePoint.
 
-Admin units can simplify the configuration of your policies. For example, your organization has configured admin units for specific countries. You sign in to the Microsoft Purview compliance center with a role group that is assigned admin units for France and Germany. You need to publish a new sensitivity label just to users in France and assign specific policy settings to these users. When you create the sensitivity label policy, you select the France admin unit that automatically selects the users for you. You don't need to worry about group membership or manually selecting users.
+Admin units can simplify the configuration of your policies. For example, your organization has configured admin units for specific countries and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
+
+1. You sign in to the Microsoft Purview compliance center. Your account is a member of the **Information Protection Admins** role group, and your account in that role group has been assigned admin units for France, Germany, and Spain. 
+2. When you create the sensitivity label policy, you select the France admin unit that automatically selects the users in France. You don't need to worry about group membership or manually selecting users.
 
 For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
