@@ -87,7 +87,7 @@ Now in preview, when you use any of the Information Protection role groups that 
 - **Information Protection Investigators**
 - **Information Protection Readers**
 
-As a result, these restricted admins must now select one or more of their assigned admin units to define the scope of labeling policies that they create or edit. Only if they are also global admins, will they be able to assign labeling policies to the entire directory without selected individual admin units.
+As a result, these restricted admins must now select one or more of their assigned admin units to define the scope of labeling policies that they create or edit. Only if they are also global admins, will they be able to assign labeling policies to the entire directory without selecting individual admin units.
 
 Label policies and auto-labeling policies for Exchange support admin units. As a new step when you create or edit these policies, you can select admin units so that only the users in those admin units will be eligible for the policy:
 
@@ -106,6 +106,9 @@ Admin units can simplify the configuration of your policies. For example, your o
 
 1. You sign in to the Microsoft Purview compliance center. Your account is a member of the **Information Protection Admins** role group, and your account in that role group has been assigned admin units for France, Germany, and Spain. 
 2. When you create the sensitivity label policy, you select the France admin unit that automatically selects the users in France. You don't need to worry about group membership or manually selecting users.
+
+> [!CAUTION]
+> After you've assigned admin units to users in one of the supported role groups, if these users have previously created labeling policies and they are not also global admins, they must update their policies to select admin units. If they don't, no users will be assigned the policy.
 
 For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
