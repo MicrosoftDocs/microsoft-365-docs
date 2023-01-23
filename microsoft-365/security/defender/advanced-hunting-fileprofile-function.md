@@ -51,6 +51,10 @@ The `FileProfile()` function is an enrichment function in [advanced hunting](adv
 | `ThreatName` | `string` | Detection name for any malware or other threats found |
 | `Publisher` | `string` | Name of the organization that published the file |
 | `SoftwareName` | `string` | Name of the software product |
+| `ProfileAvailability` | `string` | Indicates the availability status of the profile data for the file, can be Available, Missing, Error, or an empty value |
+
+
+
 
 ## Syntax
 
