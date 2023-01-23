@@ -91,9 +91,9 @@ As a result, these restricted admins must now select one or more of their assign
 
 Label policies and auto-labeling policies for Exchange support admin units. As a new step when you create or edit these policies, you can select admin units so that only the users in those admin units will be eligible for the policy:
 
-- Users who have admin units assigned to them but are also global admins don't have to select admin units as part of the policy configuration. These users can keep the default of the entire directory, or they can select one of their assigned admin units.
+- Users who have admin units assigned to them but are also global admins don't have to select admin units as part of the policy configuration. These users can keep the default of the entire directory, or they can select one or more of their assigned admin units.
 
-- Users who have admin units assigned to them and aren't global admins must select admin units as part of the policy configuration.
+- Users who have admin units assigned to them and aren't global admins must select one or more admin units as part of the policy configuration.
 
 - Users who don't have admin units assigned to them won't be able to select admin units. These users must keep the default of the entire directory.
 
