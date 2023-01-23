@@ -34,7 +34,7 @@ search.appverid: met150
 
 ## Overview
 
-Microsoft is bringing Network protection functionality to macOS (min. macOS 11).
+Network protection functionality for macOS (min. macOS 11) is now in generally available in production.
 
 Microsoft Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host:
 
