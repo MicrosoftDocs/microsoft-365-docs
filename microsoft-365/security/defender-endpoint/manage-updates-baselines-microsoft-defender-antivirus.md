@@ -710,7 +710,7 @@ After a new package version is released, support for the previous two versions i
 
 ##### Known issues
 
-[**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.
+- [**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.
 
 ####  February-2020 (Platform: - | Engine: 1.1.16800.2)
 
@@ -722,7 +722,7 @@ After a new package version is released, support for the previous two versions i
 
 ##### What's new
 
-No new features
+- None
 
 ##### Known issues
 
@@ -746,7 +746,7 @@ No new features
 
 ##### Known issues
 
-[**Fixed**] devices utilizing [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.
+- [**Fixed**] devices utilizing [modern standby mode](/windows-hardware/design/device-experiences/modern-standby) may experience a hang with the Windows Defender filter driver that results in a gap of protection.  Affected machines appear to the customer as having not updated to the latest antimalware platform.
 
 > [!IMPORTANT]
 > This update is:
@@ -773,7 +773,7 @@ No new features
 
 ##### Known issues
 
-When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
+- When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
 
 ## Microsoft Defender Antivirus platform support
 
@@ -1011,10 +1011,10 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 ### 20220203.1
 
-Package version: **20220203.1**
-Platform version: **4.18.2111.5**
-Engine version: **1.1.18900.2**
-Signature version: **1.357.32.0**
+- Package version: **20220203.1**
+- Platform version: **4.18.2111.5**
+- Engine version: **1.1.18900.2**
+- Signature version: **1.357.32.0**
 
 #### Fixes
 
@@ -1026,10 +1026,10 @@ Signature version: **1.357.32.0**
 
 ### 20220105.1
 
-Package version: **20220105.1**
-Platform version: **4.18.2111.5**
-Engine version: **1.1.18800.4**
-Signature version: **1.355.1482.0**
+- Package version: **20220105.1**
+- Platform version: **4.18.2111.5**
+- Engine version: **1.1.18800.4**
+- Signature version: **1.355.1482.0**
 
 #### Fixes
 
