@@ -83,20 +83,18 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-<br/><br/>
-<details>
-<summary>November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)</summary>
+### November-2022 (Platform: 4.18.2211.5 | Engine: 1.1.19900.2)
 
-&ensp;Security intelligence update version: **1.381.144.0** <br/>
-&ensp;Release date: **December 8, 2022**<br/>
-&ensp;Platform: **4.18.2211.5** <br/>
-&ensp;Engine: **1.1.19900.2**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+Security intelligence update version: **1.381.144.0** <br/>
+Release date: **December 8, 2022**<br/>
+Platform: **4.18.2211.5** <br/>
+Engine: **1.1.19900.2**<br/>
+Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.19900.2 <br/>
 Security intelligence update version: 1.381.144.0 <br/>
 
-### What's new
+#### What's new
 
 - Enhanced threat protection capabilities
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) capabilities
@@ -107,23 +105,23 @@ Security intelligence update version: 1.381.144.0 <br/>
 - Enhanced processing of host files containing a wild card
 - Improved performance for [scan events](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
-### Known Issues
+#### Known Issues
 
 - None  
 <br/><br/>
-</details><details>
-<summary>October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)</summary>
 
-&ensp;Security intelligence update version: **1.379.4.0**<br/>
-&ensp;Release date: **November 10, 2022**<br/>
-&ensp;Platform: **4.18.2210.6**<br/>
-&ensp;Engine: **1.1.19800.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+### October-2022 (Platform: 4.18.2210.6 | Engine: 1.1.19800.4)
+
+Security intelligence update version: **1.379.4.0**<br/>
+Release date: **November 10, 2022**<br/>
+Platform: **4.18.2210.6**<br/>
+Engine: **1.1.19800.4**<br/>
+Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.19800.4<br/>
 Security intelligence update version: 1.379.4.0<br/>
 
-### What's new
+#### What's new
 
 - Addressed a quality issue that could result in poor responsiveness/usability
 - Improved hang detection in antivirus engine 
@@ -137,18 +135,19 @@ Security intelligence update version: 1.379.4.0<br/>
 - Fixed a deadlock related to updating `\device\cdrom*` exclusions upon mounting a cdrom drive under certain conditions 
 - Improved PID information for threat detection 
 
-### Known Issues
+#### Known Issues
 
 - None  
 <br/><br/>
-</details><details>
-<summary>September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)</summary>
 
-&ensp;Security intelligence update version: **1.377.8.0**<br/>
-&ensp;Release date: **October 10, 2022**<br/>
-&ensp;Platform: **4.18.2209.7**<br/>
-&ensp;Engine: **1.1.19700.3**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+
+### September-2022 (Platform: 4.18.2209.7 | Engine: 1.1.19700.3)
+
+Security intelligence update version: **1.377.8.0**<br/>
+Release date: **October 10, 2022**<br/>
+Platform: **4.18.2209.7**<br/>
+Engine: **1.1.19700.3**<br/>
+Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.19700.3<br/>
 Security intelligence update version: 1.377.8.0<br/>
@@ -172,21 +171,21 @@ Security intelligence update version: 1.377.8.0<br/>
 
 - Some customers might have received platform updates 4.18.2209.2 from preview. It can cause the service to get stuck at the start state after the update.  
 <br/><br/>
-</details>
+
 
 
 ### Previous version updates: Technical upgrade support only
 
 After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
 
-<details>
-<summary>August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)</summary>
 
-&ensp;Security intelligence update version: **1.373.1647.0**<br/>
-&ensp;Release date: **September 6, 2022**<br/>
-&ensp;Platform: **4.18.2207.7**<br/>
-&ensp;Engine: **1.1.19600.3**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+### August-2022 (Platform: 4.18.2207.7 | Engine: 1.1.19600.3)
+
+Security intelligence update version: **1.373.1647.0**<br/>
+Release date: **September 6, 2022**<br/>
+Platform: **4.18.2207.7**<br/>
+Engine: **1.1.19600.3**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19600.3<br/>
 Security intelligence update version: 1.373.1647.0 <br/>
@@ -205,14 +204,14 @@ Security intelligence update version: 1.373.1647.0 <br/>
 - None
 
 <br/><br/>
-</details><details>
-<summary>July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)</summary>
 
-&ensp;Security intelligence update version: **1.373.219.0**<br/>
-&ensp;Release date: **August 15, 2022**<br/>
-&ensp;Platform: **4.18.2207.5**<br/>
-&ensp;Engine: **1.1.19500.2**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+### July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)
+
+Security intelligence update version: **1.373.219.0**<br/>
+Release date: **August 15, 2022**<br/>
+Platform: **4.18.2207.5**<br/>
+Engine: **1.1.19500.2**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19300.2<br/>
 Security intelligence update version: 1.373.219.0 <br/>
@@ -243,14 +242,14 @@ Security intelligence update version: 1.373.219.0 <br/>
 - Customers deploying platform update 4.18.2207.5 might experience lagging network performance that could impact applications.
 
 <br/><br/>
-</details><details>
-<summary>May-2022 (Platform: 4.18.2205.7 | Engine: 1.1.19300.2)</summary>
 
-&ensp;Security intelligence update version: **1.369.88.0**<br/>
-&ensp;Released: **June 22, 2022**<br/>
-&ensp;Platform: **4.18.2205.7**<br/>
-&ensp;Engine: **1.1.19300.2**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+### May-2022 (Platform: 4.18.2205.7 | Engine: 1.1.19300.2)
+
+Security intelligence update version: **1.369.88.0**<br/>
+Released: **June 22, 2022**<br/>
+Platform: **4.18.2205.7**<br/>
+Engine: **1.1.19300.2**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19300.2<br/>
 Security intelligence update version: 1.369.88.0<br/>
@@ -270,16 +269,16 @@ Security intelligence update version: 1.369.88.0<br/>
 No known issues
 
 <br/><br/>
-</details><details>
-<summary>March-2022 *UPDATE* (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)</summary>
+
+### March-2022 *UPDATE* (Platform: 4.18.2203.5 | Engine:  1.1.19200.5)
 
 *Customers who applied the March 2022 Microsoft Defender engine update (**1.1.19100.5**) might have encountered high resource utilization (CPU and/or memory). Microsoft has released an update (**1.1.19200.5**) that resolves the bugs introduced in the earlier version. Customers are recommended to update to at least this new engine build of Antivirus Engine (**1.1.19200.5**). To ensure any performance issues are fully fixed, it's recommended to reboot machines after applying update.*
 
-&ensp;Security intelligence update version: **1.363.817.0**<br/>
-&ensp;Released: **April 22, 2022**<br/>
-&ensp;Platform: **4.18.2203.5**<br/>
-&ensp;Engine: **1.1.19200.5**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+Security intelligence update version: **1.363.817.0**<br/>
+Released: **April 22, 2022**<br/>
+Platform: **4.18.2203.5**<br/>
+Engine: **1.1.19200.5**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19200.5 <br/>
 Security intelligence update version: 1.363.817.0<br/>
@@ -293,14 +292,14 @@ Security intelligence update version: 1.363.817.0<br/>
 No known issues
 
 <br/><br/>
-</details><details>
-<summary>March-2022 (Platform: 4.18.2203.5 | Engine:  1.1.19100.5)</summary>
 
-&ensp;Security intelligence update version: **1.361.1449.0**<br/>
-&ensp;Released: **April 7, 2022**<br/>
-&ensp;Platform: **4.18.2203.5**<br/>
-&ensp;Engine: **1.1.19100.5**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+### March-2022 (Platform: 4.18.2203.5 | Engine:  1.1.19100.5)
+
+Security intelligence update version: **1.361.1449.0**<br/>
+Released: **April 7, 2022**<br/>
+Platform: **4.18.2203.5**<br/>
+Engine: **1.1.19100.5**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19100.5 <br/>
 Security intelligence update version: 1.361.1449.0<br/>
@@ -318,14 +317,14 @@ Security intelligence update version: 1.361.1449.0<br/>
 - Potential for high resource utilization (CPU and/or memory). See the Platform 4.18.2203.5 and Engine 1.1.19200.5 update for March 2022.
 
 <br/><br/>
-</details><details>
-<summary>February-2022 (Platform: 4.18.2202.4 | Engine: 1.1.19000.8)</summary>
 
-&ensp;Security intelligence update version: **1.361.14.0**<br/>
-&ensp;Released: **March 14, 2022**<br/>
-&ensp;Platform: **4.18.2202.4**<br/>
-&ensp;Engine: **1.1.19000.8**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+### February-2022 (Platform: 4.18.2202.4 | Engine: 1.1.19000.8)
+
+Security intelligence update version: **1.361.14.0**<br/>
+Released: **March 14, 2022**<br/>
+Platform: **4.18.2202.4**<br/>
+Engine: **1.1.19000.8**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.19000.8 <br/>
 Security intelligence update version: 1.361.14.0 <br/>
@@ -347,14 +346,14 @@ Security intelligence update version: 1.361.14.0 <br/>
 No known issues
 
 <br/><br/>
-</details><details>
-<summary>January-2022 (Platform: 4.18.2201.10 | Engine: 1.1.18900.2)</summary>
 
-&ensp;Security intelligence update version: **1.357.8.0**<br/>
-&ensp;Released: **February 9, 2022**<br/>
-&ensp;Platform: **4.18.2201.10**<br/>
-&ensp;Engine: **1.1.18900.2**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+### January-2022 (Platform: 4.18.2201.10 | Engine: 1.1.18900.2)
+
+Security intelligence update version: **1.357.8.0**<br/>
+Released: **February 9, 2022**<br/>
+Platform: **4.18.2201.10**<br/>
+Engine: **1.1.18900.2**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18900.2 <br/>
 Security intelligence update version: 1.357.8.0 <br/>
@@ -375,14 +374,14 @@ Security intelligence update version: 1.357.8.0 <br/>
 No known issues
 
 <br/><br/>
-</details><details>
-<summary>November-2021 (Platform: 4.18.2111.5 | Engine: 1.1.18800.4)</summary>
 
-&ensp;Security intelligence update version: **1.355.2.0**<br/>
-&ensp;Released: **December 9th, 2021**<br/>
-&ensp;Platform: **4.18.2111.5**<br/>
-&ensp;Engine: **1.1.18800.4**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+### November-2021 (Platform: 4.18.2111.5 | Engine: 1.1.18800.4)
+
+Security intelligence update version: **1.355.2.0**<br/>
+Released: **December 9th, 2021**<br/>
+Platform: **4.18.2111.5**<br/>
+Engine: **1.1.18800.4**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18800.4
 Security intelligence update version: 1.355.2.0
@@ -402,14 +401,14 @@ Security intelligence update version: 1.355.2.0
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> October-2021 (Platform: 4.18.2110.6 | Engine: 1.1.18700.4)</summary>
 
-&ensp;Security intelligence update version: **1.353.3.0**<br/>
-&ensp;Released: **October 28th, 2021**<br/>
-&ensp;Platform: **4.18.2110.6**<br/>
-&ensp;Engine: **1.1.18700.4**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  October-2021 (Platform: 4.18.2110.6 | Engine: 1.1.18700.4)
+
+Security intelligence update version: **1.353.3.0**<br/>
+Released: **October 28th, 2021**<br/>
+Platform: **4.18.2110.6**<br/>
+Engine: **1.1.18700.4**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18700.4
 Security intelligence update version: 1.353.3.0
@@ -425,14 +424,14 @@ Security intelligence update version: 1.353.3.0
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> September-2021 (Platform: 4.18.2109.6 | Engine: 1.1.18600.4)</summary>
 
-&ensp;Security intelligence update version: **1.351.7.0**<br/>
-&ensp;Released: **October 7th, 2021**<br/>
-&ensp;Platform: **4.18.2109.6**<br/>
-&ensp;Engine: **1.1.18600.4**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  September-2021 (Platform: 4.18.2109.6 | Engine: 1.1.18600.4)
+
+Security intelligence update version: **1.351.7.0**<br/>
+Released: **October 7th, 2021**<br/>
+Platform: **4.18.2109.6**<br/>
+Engine: **1.1.18600.4**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18600.4
 Security intelligence update version: 1.351.7.0
@@ -444,14 +443,14 @@ Security intelligence update version: 1.351.7.0
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> August-2021 (Platform: 4.18.2108.7 | Engine: 1.1.18500.10)</summary>
 
-&ensp;Security intelligence update version: **1.349.22.0**<br/>
-&ensp;Released: **September 2, 2021**<br/>
-&ensp;Platform: **4.18.2108.7**<br/>
-&ensp;Engine: **1.1.18500.10**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  August-2021 (Platform: 4.18.2108.7 | Engine: 1.1.18500.10)
+
+Security intelligence update version: **1.349.22.0**<br/>
+Released: **September 2, 2021**<br/>
+Platform: **4.18.2108.7**<br/>
+Engine: **1.1.18500.10**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - Improvements to the behavior monitoring engine
@@ -463,14 +462,14 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
 
-&ensp;Security intelligence update version: **1.345.13.0**<br/>
-&ensp;Released: **August 5, 2021**<br/>
-&ensp;Platform: **4.18.2107.4**<br/>
-&ensp;Engine: **1.1.18400.4**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)
+
+Security intelligence update version: **1.345.13.0**<br/>
+Released: **August 5, 2021**<br/>
+Platform: **4.18.2107.4**<br/>
+Engine: **1.1.18400.4**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - Device control support added for Windows Portable Devices
@@ -482,14 +481,14 @@ No known issues
 No known issues
 
 <br/>
-</details><details>
-<summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
 
-&ensp;Security intelligence update version: **1.343.17.0**<br/>
-&ensp;Released: **June 28, 2021**<br/>
-&ensp;Platform: **4.18.2106.5**<br/>
-&ensp;Engine: **1.1.18300.4**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)
+
+Security intelligence update version: **1.343.17.0**<br/>
+Released: **June 28, 2021**<br/>
+Platform: **4.18.2106.5**<br/>
+Engine: **1.1.18300.4**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - New controls for managing the gradual rollout process of Microsoft Defender updates. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
@@ -500,14 +499,14 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
 
-&ensp;Security intelligence update version: **1.341.8.0**<br/>
-&ensp;Released: **June 3, 2021**<br/>
-&ensp;Platform: **4.18.2105.4**<br/>
-&ensp;Engine: **1.1.18200.4**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)
+
+Security intelligence update version: **1.341.8.0**<br/>
+Released: **June 3, 2021**<br/>
+Platform: **4.18.2105.4**<br/>
+Engine: **1.1.18200.4**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - Improvements to [behavior monitoring](client-behavioral-blocking.md)
@@ -516,14 +515,14 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)</summary>
 
-&ensp;Security intelligence update version: **1.337.2.0**<br/>
-&ensp;Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)<br/>
-&ensp;Platform: **4.18.2104.14**<br/>
-&ensp;Engine: **1.1.18100.5**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  April-2021 (Platform: 4.18.2104.14 | Engine: 1.1.18100.5)
+
+Security intelligence update version: **1.337.2.0**<br/>
+Released: **April 26, 2021**  (Engine: 1.1.18100.6 released May 5, 2021)<br/>
+Platform: **4.18.2104.14**<br/>
+Engine: **1.1.18100.5**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - More behavior monitoring logic
@@ -534,14 +533,14 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)</summary>
 
-&ensp;Security intelligence update version: **1.335.36.0**<br/>
-&ensp;Released: **April 2, 2021**<br/>
-&ensp;Platform: **4.18.2103.7**<br/>
-&ensp;Engine: **1.1.18000.5**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  March-2021 (Platform: 4.18.2103.7 | Engine: 1.1.18000.5)
+
+Security intelligence update version: **1.335.36.0**<br/>
+Released: **April 2, 2021**<br/>
+Platform: **4.18.2103.7**<br/>
+Engine: **1.1.18000.5**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -552,14 +551,14 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)</summary>
 
-&ensp;Security intelligence update version: **1.333.7.0**<br/>
-&ensp;Released: **March 9, 2021**<br/>
-&ensp;Platform: **4.18.2102.3**<br/>
-&ensp;Engine: **1.1.17900.7**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  February-2021 (Platform: 4.18.2102.3 | Engine: 1.1.17900.7)
+
+Security intelligence update version: **1.333.7.0**<br/>
+Released: **March 9, 2021**<br/>
+Platform: **4.18.2102.3**<br/>
+Engine: **1.1.17900.7**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -569,14 +568,14 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)</summary>
 
-&ensp;Security intelligence update version: **1.327.1854.0**<br/>
-&ensp;Released: **February 2, 2021**<br/>
-&ensp;Platform: **4.18.2101.9**<br/>
-&ensp;Engine: **1.1.17800.5**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  January-2021 (Platform: 4.18.2101.9 | Engine: 1.1.17800.5)
+
+Security intelligence update version: **1.327.1854.0**<br/>
+Released: **February 2, 2021**<br/>
+Platform: **4.18.2101.9**<br/>
+Engine: **1.1.17800.5**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -589,14 +588,14 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)</summary>
 
-&ensp;Security intelligence update version: **1.327.1854.0**<br/>
-&ensp;Released: **December 03, 2020**<br/>
-&ensp;Platform: **4.18.2011.6**<br/>
-&ensp;Engine: **1.1.17700.4**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  November-2020 (Platform: 4.18.2011.6 | Engine: 1.1.17700.4)
+
+Security intelligence update version: **1.327.1854.0**<br/>
+Released: **December 03, 2020**<br/>
+Platform: **4.18.2011.6**<br/>
+Engine: **1.1.17700.4**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -605,14 +604,14 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details><details>
-<summary> October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)</summary>
 
-&ensp;Security intelligence update version: **1.327.7.0**<br/>
-&ensp;Released: **October 29, 2020**<br/>
-&ensp;Platform: **4.18.2010.7**<br/>
-&ensp;Engine: **1.1.17600.5**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  October-2020 (Platform: 4.18.2010.7 | Engine: 1.1.17600.5)
+
+Security intelligence update version: **1.327.7.0**<br/>
+Released: **October 29, 2020**<br/>
+Platform: **4.18.2010.7**<br/>
+Engine: **1.1.17600.5**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -625,14 +624,14 @@ No known issues
 
 No known issues
 <br/>
-</details><details>
-<summary> September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)</summary>
 
-&ensp;Security intelligence update version: **1.325.10.0**<br/>
-&ensp;Released: **October 01, 2020**<br/>
-&ensp;Platform: **4.18.2009.7**<br/>
-&ensp;Engine: **1.1.17500.4**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+###  September-2020 (Platform: 4.18.2009.7 | Engine: 1.1.17500.4)
+
+Security intelligence update version: **1.325.10.0**<br/>
+Released: **October 01, 2020**<br/>
+Platform: **4.18.2009.7**<br/>
+Engine: **1.1.17500.4**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -650,15 +649,15 @@ No known issues
 
 No known issues
 <br/>
-</details>
-<details>
-<summary> August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)</summary>
 
-&ensp;Security intelligence update version: **1.323.9.0**<br/>
-&ensp;Released: **August 27, 2020**<br/>
-&ensp;Platform: **4.18.2008.9**<br/>
-&ensp;Engine: **1.1.17400.5**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+
+###  August-2020 (Platform: 4.18.2008.9 | Engine: 1.1.17400.5)
+
+Security intelligence update version: **1.323.9.0**<br/>
+Released: **August 27, 2020**<br/>
+Platform: **4.18.2008.9**<br/>
+Engine: **1.1.17400.5**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -673,16 +672,16 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details>
 
-<details>
-<summary> July-2020 (Platform: 4.18.2007.8 | Engine: 1.1.17300.4)</summary>
 
-&ensp;Security intelligence update version: **1.321.30.0**<br/>
-&ensp;Released: **July 28, 2020**<br/>
-&ensp;Platform: **4.18.2007.8**<br/>
-&ensp;Engine: **1.1.17300.4**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+
+###  July-2020 (Platform: 4.18.2007.8 | Engine: 1.1.17300.4)
+
+Security intelligence update version: **1.321.30.0**<br/>
+Released: **July 28, 2020**<br/>
+Platform: **4.18.2007.8**<br/>
+Engine: **1.1.17300.4**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -692,16 +691,16 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details>
 
-<details>
-<summary> June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)</summary>
 
-&ensp;Security intelligence update version: **1.319.20.0**<br/>
-&ensp;Released: **June 22, 2020**<br/>
-&ensp;Platform: **4.18.2006.10**<br/>
-&ensp;Engine: **1.1.17200.2**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+
+###  June-2020 (Platform: 4.18.2006.10 | Engine: 1.1.17200.2)
+
+Security intelligence update version: **1.319.20.0**<br/>
+Released: **June 22, 2020**<br/>
+Platform: **4.18.2006.10**<br/>
+Engine: **1.1.17200.2**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -715,16 +714,16 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details>
 
-<details>
-<summary> May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)</summary>
 
-&ensp;Security intelligence update version: **1.317.20.0**<br/>
-&ensp;Released: **May 26, 2020**<br/>
-&ensp;Platform: **4.18.2005.4**<br/>
-&ensp;Engine: **1.1.17100.2**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+
+###  May-2020 (Platform: 4.18.2005.4 | Engine: 1.1.17100.2)
+
+Security intelligence update version: **1.317.20.0**<br/>
+Released: **May 26, 2020**<br/>
+Platform: **4.18.2005.4**<br/>
+Engine: **1.1.17100.2**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -738,16 +737,16 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details>
 
-<details>
-<summary> April-2020 (Platform: 4.18.2004.6 | Engine: 1.1.17000.2)</summary>
 
-&ensp;Security intelligence update version: **1.315.12.0**<br/>
-&ensp;Released: **April 30, 2020**<br/>
-&ensp;Platform: **4.18.2004.6**<br/>
-&ensp;Engine: **1.1.17000.2**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+
+###  April-2020 (Platform: 4.18.2004.6 | Engine: 1.1.17000.2)
+
+Security intelligence update version: **1.315.12.0**<br/>
+Released: **April 30, 2020**<br/>
+Platform: **4.18.2004.6**<br/>
+Engine: **1.1.17000.2**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - WDfilter improvements
@@ -761,16 +760,16 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details>
 
-<details>
-<summary> March-2020 (Platform: 4.18.2003.8 | Engine: 1.1.16900.2)</summary>
 
-&ensp;Security intelligence update version: **1.313.8.0**<br/>
-&ensp;Released: **March 24, 2020**<br/>
-&ensp;Platform: **4.18.2003.8**<br/>
-&ensp;Engine: **1.1.16900.4**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+
+###  March-2020 (Platform: 4.18.2003.8 | Engine: 1.1.16900.2)
+
+Security intelligence update version: **1.313.8.0**<br/>
+Released: **March 24, 2020**<br/>
+Platform: **4.18.2003.8**<br/>
+Engine: **1.1.16900.4**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -784,18 +783,18 @@ No known issues
 [**Fixed**] Microsoft Defender Antivirus is skipping files when running a scan.
 
 <br/>
-</details>
-
-<details>
-
-<summary> February-2020 (Platform: - | Engine: 1.1.16800.2)</summary>
 
 
-&ensp;Security intelligence update version: **1.311.4.0**<br/>
-&ensp;Released: **February 25, 2020**<br/>
-&ensp;Platform/Client: **-**<br/>
-&ensp;Engine: **1.1.16800.2**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+
+
+###  February-2020 (Platform: - | Engine: 1.1.16800.2)
+
+
+Security intelligence update version: **1.311.4.0**<br/>
+Released: **February 25, 2020**<br/>
+Platform/Client: **-**<br/>
+Engine: **1.1.16800.2**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -803,17 +802,17 @@ No known issues
 ### Known issues
 No known issues
 <br/>
-</details>
 
-<details>
-<summary> January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)</summary>
+
+
+###  January-2020 (Platform: 4.18.2001.10 | Engine: 1.1.16700.2)
 
 
 Security intelligence update version: **1.309.32.0**<br/>
 Released: **January 30, 2020**<br/>
 Platform/Client: **4.18.2001.10**<br/>
 Engine: **1.1.16700.2**<br/>
-&ensp;Support phase: **Technical upgrade support (only)**<br/>
+Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 
@@ -835,10 +834,10 @@ Engine: **1.1.16700.2**<br/>
 > - is categorized as an update due to the reboot requirement; and
 > - is only be offered with [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).
 <br/>
-</details>
 
-<details>
-<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
+
+
+###  November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)
 
 Security intelligence update version: **1.307.13.0**<br/>
 Released: **December 7, 2019**<br/>
@@ -856,7 +855,7 @@ Support phase: **No support**<br/>
 ### Known issues
 When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
 <br/>
-</details>
+
 
 
 ## Microsoft Defender Antivirus platform support
@@ -897,28 +896,13 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
-<details>
-<summary>20230118.1</summary>
 
-&ensp;Defender package version: **20230118.1**<br/>
-&ensp;Security intelligence version: **1.381.2404.0**<br/>
-&ensp;Engine version: **1.1.19900.2**<br/>
-&ensp;Platform version: **4.18.2211.5**<br/>
+### 20230118.1
 
-### Fixes
-- None
-
-### Additional information
-- None
-
-<br/>
-</details><details>
-<summary>20221209.1</summary>
-
-&ensp;Defender package version: **20221209.1**<br/>
-&ensp;Security intelligence version: **1.381.144.0**<br/>
-&ensp;Engine version: **1.1.19900.2**<br/>
-&ensp;Platform version: **4.18.2211.5**<br/>
+Defender package version: **20230118.1**<br/>
+Security intelligence version: **1.381.2404.0**<br/>
+Engine version: **1.1.19900.2**<br/>
+Platform version: **4.18.2211.5**<br/>
 
 ### Fixes
 - None
@@ -927,28 +911,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 - None
 
 <br/>
-</details><details>
-<summary>20221102.3</summary>
 
-&ensp;Defender package version: **20221102.3**<br/>
-&ensp;Security intelligence version: **1.377.1180.0**<br/>
-&ensp;Engine version: **1.1.19700.3**<br/>
-&ensp;Platform version: **4.18.2210.4**<br/>
+### 20221209.1
 
-### Fixes
-- None
-
-### Additional information
-- None
-
-<br/>
-</details><details>
-<summary>20221014.1</summary>
-
-&ensp;Package version: **20221014.1**<br/>
-&ensp;Platform version: **4.18.2209.7**<br/>
-&ensp;Engine version: **1.1.19700.3**<br/>
-&ensp;Signature version: **1.373.208.0**<br/>
+Defender package version: **20221209.1**<br/>
+Security intelligence version: **1.381.144.0**<br/>
+Engine version: **1.1.19900.2**<br/>
+Platform version: **4.18.2211.5**<br/>
 
 ### Fixes
 - None
@@ -957,28 +926,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 - None
 
 <br/>
-</details><details>
-<summary>20220929.1</summary>
 
-&ensp;Package version: **20220929.1**<br/>
-&ensp;Platform version: **4.18.2207.7**<br/>
-&ensp;Engine version: **1.1.19600.3**<br/>
-&ensp;Signature version: **1.373.1243.0**<br/>
+### 20221102.3
 
-### Fixes
-- None
-
-### Additional information
-- None
-
-<br/>
-</details><details>
-<summary>20220925.2</summary>
-
-&ensp;Package version: **20220925.2**<br/>
-&ensp;Platform version: **4.18.2207.7**<br/>
-&ensp;Engine version: **1.1.19600.3**<br/>
-&ensp;Signature version: **1.373.1371.0**<br/>
+Defender package version: **20221102.3**<br/>
+Security intelligence version: **1.377.1180.0**<br/>
+Engine version: **1.1.19700.3**<br/>
+Platform version: **4.18.2210.4**<br/>
 
 ### Fixes
 - None
@@ -987,28 +941,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 - None
 
 <br/>
-</details><details>
-<summary>20220901.4</summary>
 
-&ensp;Package version: **20220901.4**<br/>
-&ensp;Platform version: **4.18.2205.7**<br/>
-&ensp;Engine version: **1.1.19500.2**<br/>
-&ensp;Signature version: **1.373.1371.0**<br/>
+### 20221014.1
 
-### Fixes
-- None
-
-### Additional information
-- None
-
-<br/>
-</details><details>
-<summary>20220802.1</summary>
-
-&ensp;Package version: **20220802.1**<br/>
-&ensp;Platform version: **4.18.2205.7**<br/>
-&ensp;Engine version: **1.1.19400.3**<br/>
-&ensp;Signature version: **1.371.1205.0**<br/>
+Package version: **20221014.1**<br/>
+Platform version: **4.18.2209.7**<br/>
+Engine version: **1.1.19700.3**<br/>
+Signature version: **1.373.208.0**<br/>
 
 ### Fixes
 - None
@@ -1017,28 +956,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 - None
 
 <br/>
-</details><details>
-<summary>20220629.5</summary>
 
-&ensp;Package version: **20220629.5**<br/>
-&ensp;Platform version: **4.18.2205.7**<br/>
-&ensp;Engine version: **1.1.19300.2**<br/>
-&ensp;Signature version: **1.369.220.0**<br/>
+### 20220929.1
 
-### Fixes
-- None
-
-### Additional information
-- None
-
-<br/>
-</details><details>
-<summary>20220603.3</summary>
-
-&ensp;Package version: **20220603.3**<br/>
-&ensp;Platform version: **4.18.2203.5**<br/>
-&ensp;Engine version: **1.1.19200.6**<br/>
-&ensp;Signature version: **1.367.1009.0**<br/>
+Package version: **20220929.1**<br/>
+Platform version: **4.18.2207.7**<br/>
+Engine version: **1.1.19600.3**<br/>
+Signature version: **1.373.1243.0**<br/>
 
 ### Fixes
 - None
@@ -1047,28 +971,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 - None
 
 <br/>
-</details><details>
-<summary>20220506.6</summary>
 
-&ensp;Package version: **20220506.6**<br/>
-&ensp;Platform version: **4.18.2203.5**<br/>
-&ensp;Engine version: **1.1.19200.5**<br/>
-&ensp;Signature version: **1.363.1436.0**<br/>
+### 20220925.2
 
-### Fixes
-- None
-
-### Additional information
-- None
-
-<br/>
-</details><details>
-<summary>20220321.1</summary>
-
-&ensp;Package version: **20220321.1**<br/>
-&ensp;Platform version: **4.18.2202.4**<br/>
-&ensp;Engine version: **1.1.19000.8**<br/>
-&ensp;Signature version: **1.351.337.0**<br/>
+Package version: **20220925.2**<br/>
+Platform version: **4.18.2207.7**<br/>
+Engine version: **1.1.19600.3**<br/>
+Signature version: **1.373.1371.0**<br/>
 
 ### Fixes
 - None
@@ -1077,13 +986,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 - None
 
 <br/>
-</details><details>
-<summary>20220305.1</summary>
 
-&ensp;Package version: **20220305.1**<br/>
-&ensp;Platform version: **4.18.2201.10**<br/>
-&ensp;Engine version: **1.1.18900.3**<br/>
-&ensp;Signature version: **1.359.1405.0**<br/>
+### 20220901.4
+
+Package version: **20220901.4**<br/>
+Platform version: **4.18.2205.7**<br/>
+Engine version: **1.1.19500.2**<br/>
+Signature version: **1.373.1371.0**<br/>
 
 ### Fixes
 - None
@@ -1092,13 +1001,103 @@ For more information, see [Microsoft Defender update for Windows operating syste
 - None
 
 <br/>
-</details><details>
-<summary>20220203.1</summary>
 
-&ensp;Package version: **20220203.1**<br/>
-&ensp;Platform version: **4.18.2111.5**<br/>
-&ensp;Engine version: **1.1.18900.2**<br/>
-&ensp;Signature version: **1.357.32.0**<br/>
+### 20220802.1
+
+Package version: **20220802.1**<br/>
+Platform version: **4.18.2205.7**<br/>
+Engine version: **1.1.19400.3**<br/>
+Signature version: **1.371.1205.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+
+### 20220629.5
+
+Package version: **20220629.5**<br/>
+Platform version: **4.18.2205.7**<br/>
+Engine version: **1.1.19300.2**<br/>
+Signature version: **1.369.220.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+
+### 20220603.3
+
+Package version: **20220603.3**<br/>
+Platform version: **4.18.2203.5**<br/>
+Engine version: **1.1.19200.6**<br/>
+Signature version: **1.367.1009.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+
+### 20220506.6
+
+Package version: **20220506.6**<br/>
+Platform version: **4.18.2203.5**<br/>
+Engine version: **1.1.19200.5**<br/>
+Signature version: **1.363.1436.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+
+### 20220321.1
+
+Package version: **20220321.1**<br/>
+Platform version: **4.18.2202.4**<br/>
+Engine version: **1.1.19000.8**<br/>
+Signature version: **1.351.337.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+
+### 20220305.1
+
+Package version: **20220305.1**<br/>
+Platform version: **4.18.2201.10**<br/>
+Engine version: **1.1.18900.3**<br/>
+Signature version: **1.359.1405.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+
+### 20220203.1
+
+Package version: **20220203.1**<br/>
+Platform version: **4.18.2111.5**<br/>
+Engine version: **1.1.18900.2**<br/>
+Signature version: **1.357.32.0**<br/>
 
 ### Fixes
 - None
@@ -1106,27 +1105,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - None
 <br/>
-</details><details>
-<summary>20220105.1</summary>
 
-&ensp;Package version: **20220105.1**<br/>
-&ensp;Platform version: **4.18.2111.5**<br/>
-&ensp;Engine version: **1.1.18800.4**<br/>
-&ensp;Signature version: **1.355.1482.0**<br/>
+### 20220105.1
 
-### Fixes
-- None
-
-### Additional information
-- None
-<br/>
-</details><details>
-<summary>1.1.2112.01</summary>
-
-&ensp;Package version: **1.1.2112.01**<br/>
-&ensp;Platform version: **4.18.2110.6**<br/>
-&ensp;Engine version: **1.1.18700.4**<br/>
-&ensp;Signature version: **1.353.2283.0**<br/>
+Package version: **20220105.1**<br/>
+Platform version: **4.18.2111.5**<br/>
+Engine version: **1.1.18800.4**<br/>
+Signature version: **1.355.1482.0**<br/>
 
 ### Fixes
 - None
@@ -1134,13 +1119,27 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - None
 <br/>
-</details><details>
-<summary>1.1.2111.02</summary>
 
-&ensp;Package version: **1.1.2111.02**<br/>
-&ensp;Platform version: **4.18.2110.6**<br/>
-&ensp;Engine version: **1.1.18700.4**<br/>
-&ensp;Signature version: **1.353.613.0**<br/>
+### 1.1.2112.01
+
+Package version: **1.1.2112.01**<br/>
+Platform version: **4.18.2110.6**<br/>
+Engine version: **1.1.18700.4**<br/>
+Signature version: **1.353.2283.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+
+### 1.1.2111.02
+
+Package version: **1.1.2111.02**<br/>
+Platform version: **4.18.2110.6**<br/>
+Engine version: **1.1.18700.4**<br/>
+Signature version: **1.353.613.0**<br/>
 
 ### Fixes
 - Fixed an issue pertaining to localization files
@@ -1148,27 +1147,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - None
 <br/>
-</details><details>
-<summary>1.1.2110.01</summary>
 
-&ensp;Package version: **1.1.2110.01**<br/>
-&ensp;Platform version: **4.18.2109.6**<br/>
-&ensp;Engine version: **1.1.18500.10**<br/>
-&ensp;Signature version: **1.349.2103.0**<br/>
+### 1.1.2110.01
 
-### Fixes
-- None
-
-### Additional information
-- None
-<br/>
-</details><details>
-<summary>1.1.2109.01</summary>
-
-&ensp;Package version: **1.1.2109.01**<br/>
-&ensp;Platform version: **4.18.2107.4**<br/>
-&ensp;Engine version: **1.1.18400.5**<br/>
-&ensp;Signature version: **1.347.891.0**<br/>
+Package version: **1.1.2110.01**<br/>
+Platform version: **4.18.2109.6**<br/>
+Engine version: **1.1.18500.10**<br/>
+Signature version: **1.349.2103.0**<br/>
 
 ### Fixes
 - None
@@ -1176,27 +1161,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - None
 <br/>
-</details><details>
-<summary>1.1.2108.01</summary>
 
-&ensp;Package version: **1.1.2108.01**<br/>
-&ensp;Platform version: **4.18.2107.4**<br/>
-&ensp;Engine version: **1.1.18300.4**<br/>
-&ensp;Signature version: **1.343.2244.0**<br/>
+### 1.1.2109.01
 
-### Fixes
-- None
-
-### Additional information
-- None
-<br/>
-</details><details>
-<summary>1.1.2107.02</summary>
-
-&ensp;Package version: **1.1.2107.02**<br/>
-&ensp;Platform version: **4.18.2105.5**<br/>
-&ensp;Engine version: **1.1.18300.4**<br/>
-&ensp;Signature version: **1.343.658.0**<br/>
+Package version: **1.1.2109.01**<br/>
+Platform version: **4.18.2107.4**<br/>
+Engine version: **1.1.18400.5**<br/>
+Signature version: **1.347.891.0**<br/>
 
 ### Fixes
 - None
@@ -1204,27 +1175,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - None
 <br/>
-</details><details>
-<summary>1.1.2106.01</summary>
 
-&ensp;Package version: **1.1.2106.01**<br/>
-&ensp;Platform version: **4.18.2104.14**<br/>
-&ensp;Engine version: **1.1.18100.6**<br/>
-&ensp;Signature version: **1.339.1923.0**<br/>
+### 1.1.2108.01
 
-### Fixes
-- None
-
-### Additional information
-- None
-<br/>
-</details><details>
-<summary>1.1.2105.01</summary>
-
-&ensp;Package version: **1.1.2105.01**<br/>
-&ensp;Platform version: **4.18.2103.7**<br/>
-&ensp;Engine version: **1.1.18100.6**<br/>
-&ensp;Signature version: **1.339.42.0**<br/>
+Package version: **1.1.2108.01**<br/>
+Platform version: **4.18.2107.4**<br/>
+Engine version: **1.1.18300.4**<br/>
+Signature version: **1.343.2244.0**<br/>
 
 ### Fixes
 - None
@@ -1232,27 +1189,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - None
 <br/>
-</details><details>
-<summary>1.1.2104.01</summary>
 
-&ensp;Package version: **1.1.2104.01**<br/>
-&ensp;Platform version: **4.18.2102.4**<br/>
-&ensp;Engine version: **1.1.18000.5**<br/>
-&ensp;Signature version: **1.335.232.0**<br/>
+### 1.1.2107.02
 
-### Fixes
-- None
-
-### Additional information
-- None
-<br/>
-</details><details>
-<summary>1.1.2103.01</summary>
-
-&ensp;Package version: **1.1.2103.01**<br/>
-&ensp;Platform version: **4.18.2101.9**<br/>
-&ensp;Engine version: **1.1.17800.5**<br/>
-&ensp;Signature version: **1.331.2302.0**<br/>
+Package version: **1.1.2107.02**<br/>
+Platform version: **4.18.2105.5**<br/>
+Engine version: **1.1.18300.4**<br/>
+Signature version: **1.343.658.0**<br/>
 
 ### Fixes
 - None
@@ -1260,27 +1203,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - None
 <br/>
-</details><details>
-<summary>1.1.2102.03</summary>
 
-&ensp;Package version: **1.1.2102.03**<br/>
-&ensp;Platform version: **4.18.2011.6**<br/>
-&ensp;Engine version: **1.1.17800.5**<br/>
-&ensp;Signature version: **1.331.174.0**<br/>
+### 1.1.2106.01
 
-### Fixes
-- None
-
-### Additional information
-- None
-<br/>
-</details><details>
-<summary>1.1.2101.02</summary>
-
-&ensp;Package version: **1.1.2101.02**<br/>
-&ensp;Platform version: **4.18.2011.6**<br/>
-&ensp;Engine version: **1.1.17700.4**<br/>
-&ensp;Signature version: **1.329.1796.0**<br/>
+Package version: **1.1.2106.01**<br/>
+Platform version: **4.18.2104.14**<br/>
+Engine version: **1.1.18100.6**<br/>
+Signature version: **1.339.1923.0**<br/>
 
 ### Fixes
 - None
@@ -1288,13 +1217,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - None
 <br/>
-</details><details>
-<summary>1.1.2012.01</summary>
 
-&ensp;Package version: **1.1.2012.01**<br/>
-&ensp;Platform version: **4.18.2010.7**<br/>
-&ensp;Engine version: **1.1.17600.5**<br/>
-&ensp;Signature version: **1.327.1991.0**<br/>
+### 1.1.2105.01
+
+Package version: **1.1.2105.01**<br/>
+Platform version: **4.18.2103.7**<br/>
+Engine version: **1.1.18100.6**<br/>
+Signature version: **1.339.42.0**<br/>
 
 ### Fixes
 - None
@@ -1302,13 +1231,83 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - None
 <br/>
-</details><details>
-<summary>1.1.2011.02</summary>
 
-&ensp;Package version: **1.1.2011.02**<br/>
-&ensp;Platform version: **4.18.2010.7**<br/>
-&ensp;Engine version: **1.1.17600.5**<br/>
-&ensp;Signature version: **1.327.658.0**<br/>
+### 1.1.2104.01
+
+Package version: **1.1.2104.01**<br/>
+Platform version: **4.18.2102.4**<br/>
+Engine version: **1.1.18000.5**<br/>
+Signature version: **1.335.232.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+
+### 1.1.2103.01
+
+Package version: **1.1.2103.01**<br/>
+Platform version: **4.18.2101.9**<br/>
+Engine version: **1.1.17800.5**<br/>
+Signature version: **1.331.2302.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+
+### 1.1.2102.03
+
+Package version: **1.1.2102.03**<br/>
+Platform version: **4.18.2011.6**<br/>
+Engine version: **1.1.17800.5**<br/>
+Signature version: **1.331.174.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+
+### 1.1.2101.02
+
+Package version: **1.1.2101.02**<br/>
+Platform version: **4.18.2011.6**<br/>
+Engine version: **1.1.17700.4**<br/>
+Signature version: **1.329.1796.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+
+### 1.1.2012.01
+
+Package version: **1.1.2012.01**<br/>
+Platform version: **4.18.2010.7**<br/>
+Engine version: **1.1.17600.5**<br/>
+Signature version: **1.327.1991.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+
+### 1.1.2011.02
+
+Package version: **1.1.2011.02**<br/>
+Platform version: **4.18.2010.7**<br/>
+Engine version: **1.1.17600.5**<br/>
+Signature version: **1.327.658.0**<br/>
 
 ### Fixes
 - None
@@ -1316,13 +1315,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - Refreshed Microsoft Defender Antivirus signatures
 <br/>
-</details><details>
-<summary>1.1.2011.01</summary>
 
-&ensp;Package version: **1.1.2011.01**<br/>
-&ensp;Platform version: **4.18.2009.7**<br/>
-&ensp;Engine version: **1.1.17600.5**<br/>
-&ensp;Signature version: **1.327.344.0**<br/>
+### 1.1.2011.01
+
+Package version: **1.1.2011.01**<br/>
+Platform version: **4.18.2009.7**<br/>
+Engine version: **1.1.17600.5**<br/>
+Signature version: **1.327.344.0**<br/>
 
 ### Fixes
 - None
@@ -1330,13 +1329,13 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - None
 <br/>
-</details><details>
-<summary>1.1.2009.10</summary>
 
-&ensp;Package version: **1.1.2011.01**<br/>
-&ensp;Platform version: **4.18.2008.9**<br/>
-&ensp;Engine version: **1.1.17400.5**<br/>
-&ensp;Signature version: **1.327.2216.0**<br/>
+### 1.1.2009.10
+
+Package version: **1.1.2011.01**<br/>
+Platform version: **4.18.2008.9**<br/>
+Engine version: **1.1.17400.5**<br/>
+Signature version: **1.327.2216.0**<br/>
 
 ### Fixes
 - None
@@ -1344,7 +1343,7 @@ For more information, see [Microsoft Defender update for Windows operating syste
 ### Additional information
 - Added support for Windows 10 RS1 or later OS install images.
 <br/>
-</details>
+
 
 ## More resources
 
