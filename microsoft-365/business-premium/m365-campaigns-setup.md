@@ -97,4 +97,4 @@ To help your staff learn about steps to protect your campaign from cyber threats
 
 ## Next objective
 
-Proceed to [bump up security](m365bp-security-overview.md).
+Proceed to [boost your security protection](m365bp-security-overview.md).
