@@ -186,14 +186,11 @@ None
 
 #### July-2022 (Platform: 4.18.2207.5 | Engine: 1.1.19500.2)
 
-Security intelligence update version: **1.373.219.0**
-Release date: **August 15, 2022**
-Platform: **4.18.2207.5**
-Engine: **1.1.19500.2**
-Support phase: **Technical upgrade support (only)**
-
-Engine version: 1.1.19300.2
-Security intelligence update version: 1.373.219.0 
+- Security intelligence update version: **1.373.219.0**
+- Release date: **August 15, 2022**
+- Platform: **4.18.2207.5**
+- Engine: **1.1.19500.2**
+- Support phase: **Technical upgrade support (only)**
 
 ##### What's new
 
