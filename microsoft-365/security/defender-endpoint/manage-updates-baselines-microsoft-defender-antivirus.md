@@ -549,7 +549,7 @@ No known issues
 - Expanded network brute-force-attack mitigations
 - More failed tampering attempt event generation when [Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
 
-### Known isues
+### Known issues
 No known issues
 <br/>
 </details><details>
