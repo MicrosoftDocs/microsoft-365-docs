@@ -327,7 +327,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 5. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
-6. For the page **Assign admin units**: This configuration is currently in preview. If your organization is using [admin units from Azure Active Directory](/azure/active-directory/roles/administrative-units), an auto-labeling policy for just Exchange can be restricted to specific users by selecting admin units. For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
+6. For the page **Assign admin units**: This configuration is currently in preview. If your account has been [assigned admin units for Information Protection](get-started-with-sensitivity-labels.md#support-for-admin-units), an auto-labeling policy for just Exchange can be automatically restricted to specific users by selecting admin units. For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
 7. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** included for your chosen locations, select the link to choose specific instances to include, or select the link to choose specific instances to exclude. Then select **Next**.
 

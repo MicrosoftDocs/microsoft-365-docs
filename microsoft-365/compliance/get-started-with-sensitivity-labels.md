@@ -91,9 +91,9 @@ As a result, these restricted admins must now select one or more of their assign
 
 Label policies and auto-labeling policies for Exchange support admin units. As a new step when you create or edit these policies, you can select admin units so that only the users in those admin units will be eligible for the policy:
 
-- Users who have admin units assigned to them but are also global admins don't have to select admin units as part of the policy configuration. These users can keep the default of the entire directory, or they can select one of their assigned admin units.
+- Users who have admin units assigned to them but are also global admins don't have to select admin units as part of the policy configuration. These users can keep the default of the entire directory, or they can select one or more of their assigned admin units.
 
-- Users who have admin units assigned to them and aren't global admins must select admin units as part of the policy configuration.
+- Users who have admin units assigned to them and aren't global admins must select one or more admin units as part of the policy configuration.
 
 - Users who don't have admin units assigned to them won't be able to select admin units. These users must keep the default of the entire directory.
 
@@ -102,10 +102,10 @@ In the next step of the policy configuration, users can then refine their choice
 > [!IMPORTANT]
 > Don't select admin units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because admin units support only users and groups, if you configure an auto-labeling policy to use admin units, you won't see the options for OneDrive and SharePoint.
 
-Admin units can simplify the configuration of your policies. For example, your organization has configured admin units for specific countries and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
+Admin units can simplify the configuration and maintenance of your policies. For example, your organization has configured admin units for specific countries and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
 
 1. You sign in to the Microsoft Purview compliance center. Your account is a member of the **Information Protection Admins** role group, and your account in that role group has been assigned admin units for France, Germany, and Spain. 
-2. When you create the sensitivity label policy, you select the France admin unit that automatically selects the users in France. You don't need to worry about group membership or manually selecting users.
+2. When you create the sensitivity label policy, you select the France admin unit that automatically selects the users in France. You don't need to worry about group membership or manually selecting users. You also don't need to worry about changing the policy when there are new users in France, because they are automatically added to the admin unit.
 
 For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
