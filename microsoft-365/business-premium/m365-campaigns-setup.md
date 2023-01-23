@@ -55,7 +55,7 @@ Here's how to sign in:
 
 3. Type your username and password. Select **Sign in**.
 
-4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365bp-security-overview.md).
+4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Boost your security protection for your campaign](m365bp-security-overview.md).
 
 ## How your staff will sign in
 
