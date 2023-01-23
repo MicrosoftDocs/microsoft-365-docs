@@ -56,6 +56,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "solutions/secure-teams-security-isolation.md",
+            "redirect_url": "/microsoft-365/solutions/configure-teams-highly-sensitive-protection",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "test-base/testbase-for-m365-product-terms-changehistory.md",
             "redirect_url": "https://learn.microsoft.com/legal/test-base/testbase-for-m365-product-terms-changehistory",
             "redirect_document_id": false
