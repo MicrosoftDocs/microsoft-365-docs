@@ -9,7 +9,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/08/2022 
+ms.date: 01/23/2023 
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -27,6 +27,10 @@ f1.keywords: NOCSH
 - [Microsoft Defender for Business](../security/defender-business/mdb-overview.md)
 
 This article lists new features in the latest release of [Microsoft 365 Business Premium](index.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
+
+## January 2023
+
+- **Default experience for Defender for Business when an enterprise plan is added**. Defender for Business now retains its default experience (simplified configuration and setup) even if an enterprise plan, such as Defender for Endpoint Plan 2 or Microsoft Defender for Servers Plan 1 or 2 is added. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq?#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)? 
 
 ## November 2022
 
