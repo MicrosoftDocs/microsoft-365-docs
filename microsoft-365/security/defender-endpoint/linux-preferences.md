@@ -229,9 +229,9 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 |**Possible values**|unmute (default) <p> mute|
 |**Comments**|Available in Defender for Endpoint version 101.85.27 or higher.|
 
-#### Unmonitoring Filesystems from Real Time Protection
+#### Unmonitor Filesystems
 
-Configure to unmonitor/exclude filesystems from RTP. The filesystems configured will be validated against Microsoft Defender's list of permitted filesystems that can be unmonitored. By default NFS and Fuse are unmonitored for RTP.
+Configure filesystems to be unmonitored/excluded from Real Time Protection. The filesystems configured will be validated against Microsoft Defender's list of permitted filesystems that can be unmonitored. By default NFS and Fuse are unmonitored from RTP and Quick and Full scans.
 
 |Description|Value|
 |---|---|
