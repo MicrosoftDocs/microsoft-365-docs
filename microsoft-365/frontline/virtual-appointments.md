@@ -1,8 +1,8 @@
 ---
 title: Virtual Appointments with Microsoft Teams
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer: 
+author: daisyfell
+ms.author: daisyfeller
+ms.reviewer: megano
 manager: samanro
 ms.topic: conceptual
 audience: admin
