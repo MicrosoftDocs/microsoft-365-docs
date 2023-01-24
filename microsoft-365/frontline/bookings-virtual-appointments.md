@@ -43,8 +43,6 @@ The Bookings app makes it easy to manage complex scheduling demands of any organ
 
 The virtual appointments are held through Microsoft Teams meetings, which offer robust video conferencing capabilities. For example, a doctor can share their screen and review test results with a patient. Or, a banking advisor can request electronic signatures on documents, allowing them to close transactions remotely.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
-
 With Bookings, you get an experience that's tailored to your industry. Here's a few examples of how you can use it in your organization:
 
 |Industry|Examples|
