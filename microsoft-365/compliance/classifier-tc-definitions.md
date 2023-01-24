@@ -155,7 +155,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Detects documents that authorize the export or import of a good in a specific quantity from source to destination. This model categorizes different documents including Bill of Ladings, Certificate of Origin, Commercial Invoice, Export impot customs declaration, Importer Security Filing (ISF). | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .txt, .one files. | English |
+| Detects documents that authorize the export or import of a good in a specific quantity from source to destination. This model categorizes different documents including Bill of Ladings, Certificate of Origin, Commercial Invoice, Export import customs declaration, Importer Security Filing (ISF). | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .txt, .one files. | English |
 
 ## Gifts & entertainment (preview)
 
@@ -401,7 +401,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Wire transfer is a method of electronic funds transfer from one person or entity to another. The model captures all the the wire transfer receipts and acknowledgements. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
+| Wire transfer is a method of electronic funds transfer from one person or entity to another. The model captures all the wire transfer receipts and acknowledgements. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
 ## Word count requirements
 
