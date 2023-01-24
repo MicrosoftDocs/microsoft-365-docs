@@ -504,7 +504,7 @@ Additional information for specific locations:
     Because of the behavior during the grace period, if you re-enable the policy or change the location status back to on within 30 days, the policy resumes without any permanent data loss during this time.
     
 > [!NOTE] 
-> To verify the validity of the retention policy on a SharePoint or OneDrive site and delete it if it's invalid, see [Compliance policy blocking site deletion] (https://learn.microsoft.com/sharepoint/troubleshoot/sites/compliance-policy-blocking-site-deletion).
+> To verify the validity of the retention policy on a SharePoint or OneDrive site and delete it if it's invalid, see [Compliance policy blocking site deletion] (/sharepoint/troubleshoot/sites/compliance-policy-blocking-site-deletion).
 
 - **Exchange email and Microsoft 365 Groups**
 
