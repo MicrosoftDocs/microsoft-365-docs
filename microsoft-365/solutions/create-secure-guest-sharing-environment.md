@@ -158,32 +158,29 @@ For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional ac
 To restrict guests to web-only access for Groups and Teams:
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. On the **Conditional Access - Policies** blade, click **New policy**.
-3. In the **Name** box, type a name.
-4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
-6. Under **Assignments**, click **Cloud apps or actions**.
-7. On the **Include** tab, select **Select apps**, and then click **Select**.
-8. On the **Select** blade, select **Microsoft Teams** and **Outlook Groups**, and then click **Select**.
-9. Under **Assignments**, click **Conditions**.
-10. On the **Conditions** blade, click **Client apps**.
-11. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients**, **Exchange ActiveSync clients**, and **Other clients** settings. Clear the **Browser** check box.
+1. Click **New policy**.
+1. In the **Name** box, type a name.
+1. Click the **Users** link.
+1. Select **Select users and groups**, and then select the **Guest or external users** check box.
+1. In the dropdown, select **B2B collaboration guest users** and **B2B collaboration member users**.
+1. Click the **Cloud apps or actions** link.
+1. On the **Include** tab, select **Select apps**, and then click the **Select** link.
+1. On the **Select** blade, select **Office 365**, and then click **Select**.
+1. Click the **Conditions** link.
+1. On the **Conditions** blade, click the **Client apps** link.
+1. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients**, **Exchange ActiveSync clients**, and **Other clients** settings. Clear the **Browser** check box.
 
     ![Screenshot of Azure AD conditional access client apps settings.](../media/azure-ad-conditional-access-client-mobile.png)
 
-12. Click **Done**.
-13. Under **Access controls**, click **Grant**.
-14. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.
-15. Under **For multiple controls**, select **Require one of the selected controls**, and then click **Select**.
-16. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+1. Click **Done**.
+1. Click the **Grant** link.
+1. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.
+1. Under **For multiple controls**, select **Require one of the selected controls**, and then click **Select**.
+1. Under **Enable policy**, click **On**, and then click **Create**.
 
-To restrict guests to web-ony access for SharePoint
+### More information
 
-1. In the SharePoint admin center, expand **Policies** and select <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Access control**</a>.
-2. Select **Unmanaged devices**.
-3. Select the **Allow limited, web-only access** option, and then select **Save**.
-
-Note that this setting in the SharePoint admin center creates a supporting conditional access policy in Azure AD.
+[SharePoint and OneDrive unmanaged device access controls for administrators](/sharepoint/control-access-from-unmanaged-devices)
 
 ## Configure a session timeout for guests
 
@@ -192,17 +189,18 @@ Requiring guests to authenticate on a regular basis can reduce the possibility o
 To configure a guest session timeout policy
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. On the **Conditional Access - Policies** blade, click **New policy**.
-3. In the **Name** box, type *Guest session timeout*.
-4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
-6. Under **Assignments**, click **Cloud apps or actions**.
-7. On the **Include** tab, select **Select apps**, and then click **Select**.
-8. On the **Select** blade, select **Microsoft Teams**, **Office 365 SharePoint Online**, and **Outlook Groups**, and then click **Select**.
-9. Under **Access controls**, click **Session**.
-10. On the **Session** blade, select **Sign-in frequency**.
-11. Select **1** and **Days** for the time period, and then click **Select**.
-12. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+1. Click **New policy**.
+1. In the **Name** box, type *Guest session timeout*.
+1. Click the **Users** link.
+1. Select **Select users and groups**, and then select the **Guest or external users** check box.
+1. In the dropdown, select **B2B collaboration guest users** and **B2B collaboration member users**.
+1. Click the **Cloud apps or actions** link.
+1. On the **Include** tab, select **Select apps**, and then click the **Select** link.
+1. On the **Select** blade, select **Office 365**, and then click **Select**.
+1. Click the **Session** link.
+1. On the **Session** blade, select **Sign-in frequency**.
+1. Choose **1** and **Days** for the time period, and then click **Select**.
+1. Under **Enable policy**, click **On**, and then click **Create**.
 
 ## Create a sensitive information type for a highly sensitive project
 
@@ -212,13 +210,17 @@ You can create custom sensitive information types to help manage content specifi
 
 To create a sensitive information type
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), in the left navigation, expand **Classification**, and then click **Sensitive info types**.
-2. Click **Create**.
-3. For **Name** and **Description**, type **Project Saturn**, and then click **Next**.
-4. Click **Add an element**.
-5. On the **Detect content containing** list, select **Keywords**, and then type *Project Saturn* in the keyword box.
-6. Click **Next**, and then click **Finish**.
-7. If asked if you would like to test the sensitive information type, click **No**.
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), in the left navigation, select **Data classification**, and then select the **Sensitive info types** tab.
+1. Click **Create sensitive info type**.
+1. For **Name** and **Description**, type **Project Saturn**, and then click **Next**.
+1. Select **Create pattern**.
+1. On the **New pattern** panel, select **Add primary element**, and then select **Keyword list**.
+1. Type an **ID** such as *Project Saturn*.
+1. In the **Case insensitive** box, type *Project Saturn, Saturn*, and then select **Done**.
+1. Select **Create**, and then select **Next**.
+1. Choose a confidence level, and then select **Next**.
+1. Select **Create**.
+1. Select **Done**.
 
 For more information, see [Custom sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about).
 
