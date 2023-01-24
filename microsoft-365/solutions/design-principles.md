@@ -14,6 +14,7 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
+ms.date: 09/22/2022
 ---
 
 # Microsoft 365 Enterprise architecture design principles

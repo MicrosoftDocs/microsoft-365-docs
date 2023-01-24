@@ -318,7 +318,7 @@ For the print, copy data and save actions, each website must be listed in a webs
 
 ##### Supported syntax for designating websites in a website group
 
-You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+Please do not add protocol, e.g. https://, file:// into the URL. You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
 
 - use `*` as a wildcard to specify all domains or all subdomains
 - use `/` as a terminator at the end of a URL to scope to that specific site only.
