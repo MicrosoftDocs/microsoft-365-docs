@@ -68,7 +68,7 @@ Microsoft Purview comes with multiple pre-trained classifiers. They appear in th
 
 |**Description**|**File types**|**Languages**|
 |:-------------|:--------------|:--------------|
-| Detects official documents that are issued at the end of a project or work by a project manager or a contractor. This document is used to testify that work on a particular project has been completed as per a contract or an agreement. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
+| Detects official documents that are issued at the end of a project or work by a project manager or a contractor. This document is used to testify that work on a particular project has been completed as per a contract or an agreement. | Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt files. | English |
 
 ## Construction specifications
 
