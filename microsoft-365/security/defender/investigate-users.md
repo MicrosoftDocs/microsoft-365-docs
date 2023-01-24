@@ -142,24 +142,19 @@ The following information is displayed in the timeline:
 - Application that performed the activity
 - Source device/IP address
 - Alert status and severity
-- Two-letter code of the location indicating the country where the client IP address is geolocated
+- Country where the client IP address is geolocated
 - Protocol used during the communication
 - Number of times the activity happened
-- MITRE information
 
 :::image type="content" source="../../media/investigate-users/Fig5-user-incident-timeline.png" alt-text="The timeline view that shows activities on a user account for an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig5-user-incident-timeline.png":::
 
 ## Remediation actions
 From the Overview page, you can do these additional actions:
 
-- Require the user to sign in again
-- Force password reset
-- Mark the user account as compromised
-- Suspend the user account in Azure AD
-- See the Azure AD user account settings
-- View related governance
-- View the files owned by the user account
-- View files shared with this user
+- Enable, disable, or suspend the user in Azure AD
+- Direct user to do certain actions such as require the user to sign in again or force password reset
+- Reset investigation priority score for the user
+- View Azure AD account settings, related governance, the user's owned files, or the user's shared files
 
 :::image type="content" source="../../media/investigate-users/Fig6-user-incident-actions.png" alt-text="The actions for remediation for a user in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig6-user-incident-actions.png":::
 
