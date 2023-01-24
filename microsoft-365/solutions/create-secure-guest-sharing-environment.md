@@ -50,15 +50,16 @@ In this example, we'll set up multi-factor authentication for guests by using a 
 To set up multi-factor authentication for guests
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. On the **Conditional Access | Policies** blade, click **New policy**.
-3. In the **Name** field, type a name.
-4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
-6. Under **Assignments**, click **Cloud apps or actions**.
-7. On the **Cloud apps or actions** blade, select **All cloud apps** on the **Include** tab.
-8. Under **Access controls**, click **Grant**.
-9. On the **Grant** blade, select the **Require multi-factor authentication** check box, and then click **Select**.
-10. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+1. On the **Conditional Access | Policies** blade, click **New policy**.
+1. In the **Name** field, type a name.
+1. Select the **Users** link.
+1. Select **Select users and groups**, and then select the **Guest or external users** check box.
+1. In the dropdown, select **B2B collaboration guest users** and **B2B collaboration member users**.
+1. Select the **Cloud apps or actions** link.
+1. Select **All cloud apps** on the **Include** tab.
+1. Select the **Grant** link.
+1. On the **Grant** blade, select the **Require multi-factor authentication** check box, and then click **Select**.
+1. Under **Enable policy**, click **On**, and then click **Create**.
 
 Now, guest will be required to enroll in multi-factor authentication before they can access shared content, sites, or teams.
 
@@ -75,33 +76,35 @@ To create a terms of use, you first need to create the document in Word or anoth
 To create an Azure AD terms of use
 
 1. Sign in to Azure as a Global Administrator, Security Administrator, or Conditional Access Administrator.
-2. Navigate to [Terms of use](https://aka.ms/catou).
-3. Click **New terms**.
+1. Navigate to [Terms of use](https://aka.ms/catou).
+1. Click **New terms**.
 
    ![Screenshot of Azure AD new terms of use settings.](../media/azure-ad-guest-terms-of-use.png)
 
-4. Type a **Name** and **Display name**.
-6. For **Terms of use document**, browse to the pdf file that you created and select it.
-7. Select the language for your terms of use document.
-8. Set **Require users to expand the terms of use** to **On**.
-9. Under **Conditional Access**, in the **Enforce with Conditional Access policy template** list choose **Create conditional access policy later**.
-10. Click **Create**.
+1. Type a **Name**.
+1. For **Terms of use document**, browse to the pdf file that you created and select it.
+1. Select the language for your terms of use document.
+1. Type a display name.
+1. Set **Require users to expand the terms of use** to **On**.
+1. Under **Conditional Access**, in the **Enforce with Conditional Access policy template** list choose **Create conditional access policy later**.
+1. Click **Create**.
 
 Once you've created the terms of use, the next step is to create a conditional access policy that displays the terms of use to guests.
 
 To create a conditional access policy
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-2. On the **Conditional Access | Policies** blade, click **New policy**.
-3. In the **Name** box, type a name.
-4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
-6. Under **Assignments**, click **Cloud apps or actions**.
-7. On the **Include** tab, select **Select apps**, and then click **Select**.
-8. On the **Select** blade, select **Microsoft Teams**, **Office 365 SharePoint Online**, and **Outlook Groups**, and then click **Select**.
-9. Under **Access controls**, click **Grant**.
-10. On the **Grant** blade, select **Guest terms of use**, and then click **Select**.
-11. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+1. On the **Conditional Access | Policies** blade, click **New policy**.
+1. In the **Name** box, type a name.
+1. Select the **Users** link.
+1. Select **Select users and groups**, and then select the **Guest or external users** check box.
+1. In the dropdown, select **B2B collaboration guest users** and **B2B collaboration member users**.
+1. Select the **Cloud apps or actions** link.
+1. On the **Include** tab, select **Select apps**, and then click the **Select** link.
+1. On the **Select** blade, select **Office 365**, then click **Select**.
+1. Select the **Grant** link.
+1. On the **Grant** blade, select **Guest terms of use**, and then click **Select**.
+1. Under **Enable policy**, click **On**, and then click **Create**.
 
 Now, the first time a guest attempts to access content or a team or site in your organization, they will be required to accept the terms of use.
 
@@ -119,27 +122,26 @@ With access reviews in Azure AD, you can automate a periodic review of user acce
 To set up a guest access review
 
 1. On the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), in the left menu, click **Access reviews**.
-2. Click **New access review**.
-3. Choose the **Teams + Groups** option.
-4. Choose the **All Microsoft 365 groups with guest users** option. Click **Select group(s) to exclude** if you want to exclude any groups.
-5. Choose the **Guest users only** option, and then click **Next: Reviews**.
-6. Under **Select reviewers**, choose **Group Owner(s)**.
-7. Click **Select fallback reviewers**, choose who should be the fallback reviewers, and then click **Select**.
-8. Under **Specify recurrence of review**, choose **Quarterly**.
-9. Select a start date and duration.
-10. For **End**, choose **Never**, and then click **Next: Settings**.
+1. Click **New access review**.
+1. Choose the **Teams + Groups** option.
+1. Choose the **All Microsoft 365 groups with guest users** option. Click **Select group(s) to exclude** if you want to exclude any groups.
+1. Choose the **Guest users only** option, and then click **Next: Reviews**.
+1. Under **Select reviewers**, choose **Group Owner(s)**.
+1. Click **Select fallback reviewers**, choose who should be the fallback reviewers, and then click **Select**.
+1. Choose a **Duration (in days)** for the review to be open for comments.
+1. Under **Specify recurrence of review**, choose **Quarterly**.
+1. Select a start date and duration.
+1. For **End**, choose **Never**, and then click **Next: Settings**.
 
     ![Screenshot of Azure AD access review tab.](../media/azure-ad-create-access-review.png)
 
-11. On the **Settings** tab, review the settings for compliance with your business rules.
+1. On the **Settings** tab, review the settings for compliance with your business rules.
 
     ![Screenshot of Azure AD access review settings tab.](../media/azure-ad-create-access-review-settings.png)
 
-12. Click **Next: Review + Create**.
-13. Type a **Review name** and review the settings.
-14. Click **Create**.
-
-It's important to note that for SharePoint and OneDrive locations, documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all guests, while internal users will continue to have access to the document.
+1. Click **Next: Review + Create**.
+1. Type a **Review name** and review the settings.
+1. Click **Create**.
 
 ### More information
 
