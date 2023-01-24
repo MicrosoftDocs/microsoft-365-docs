@@ -150,9 +150,6 @@ DLP supports using trainable classifiers as a condition to detect sensitive docu
 Rules are the business logic of DLP policies. They consist of:
 
 - [**Conditions**](#conditions) that when matched, trigger the policy
-<!--- [**Exceptions**](#exceptions) to the conditions
-> [!IMPORTANT]
-> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->  
 - [**Actions**](#actions) to take when the policy is triggered
 - [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they're doing something that triggers a policy and help educate them on how your organization wants sensitive information treated
 - [**User Overrides**](#user-overrides) when configured by an admin, allow users to selectively override a blocking action
@@ -160,6 +157,10 @@ Rules are the business logic of DLP policies. They consist of:
 - [**Additional Options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
 
  A policy contains one or more rules. Rules are executed sequentially, starting with the highest-priority rule in each policy.
+
+<!--- [**Exceptions**](#exceptions) to the conditions
+> [!IMPORTANT]
+> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->
 
 ### The priority by which rules are processed
 
@@ -227,6 +228,39 @@ SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videopl
 
 > [!IMPORTANT]
 > SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
+
+#### Adaptive Protection in Microsoft Purview
+
+**User's risk level for adaptive protection is**
+
+**Elevated risk level**
+**Moderate risk level**
+**Minor risk level**
+
+Once click configuration - configured in IRM, these get automatically created policy parameters:
+
+Link to Rob's docs
+
+first use Adaptive Protection in Microsoft Purview
+
+Adaptive Protection for subsequent uses
+
+
+- Test mode
+- Risk level - taken from the IRM risk level
+- Actions
+    - check box Restrict access or encrypt the content in Microsoft 365 locations
+    - radio button Block users from receiving email or accessing share SharePoint, OneDrive, and Teams files
+    - radio button - Block only people outside your organization
+  
+
+ok, that's an important distinction  to make:; Auto configured policies give you 1 policy for TEams + EXO with  3 rules, one for each of the risk levels AND 1 policy for Teams with three rules, one for each of the risk levels.  IF they don't want that. then they need to create their rules manually
+
+
+
+Manually created
+user picks the risk level, actions, everything
+
 
 #### Condition context
 
