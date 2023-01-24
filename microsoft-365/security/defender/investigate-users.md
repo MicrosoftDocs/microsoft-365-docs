@@ -106,7 +106,7 @@ You can see all active alerts involving the user from the last 180 days in this 
 ## Observed in organization
 
 - Devices - this section includes information on the devices the identity signed in to, including most and least used in the last 180 days.
-- Locations - this section includes all the observed locations for the identity in the last 3- days.
+- Locations - this section includes all the observed locations for the identity in the last 30 days.
 - Groups - this section includes all observed on-premises groups for the identity, as reported by Defender for Identity.
 - Lateral movement paths - this section includes all profiled lateral movement paths from the on-premises environment detected by Defender for Identity.
 
