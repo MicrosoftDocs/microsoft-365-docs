@@ -46,11 +46,11 @@ A clickable identity link is available in these views that will take you to the 
 
 When you investigate a specific identity, you'll see:
 
-- An overview, including identity details, incident and alerts visual view, investigation priority, and scored timelines timeline
-- Active Alerts tab
-- Observed in organization tab
-- Identity timeline tab
-- Remediation actions
+- An [overview](#overview), including identity details, incident and alerts visual view, investigation priority, and scored timelines timeline
+- [Active Alerts](#alerts) tab
+- [Observed in organization](#observed-in-organization) tab
+- [Identity timeline](#timeline) tab
+- [Remediation actions](#remediation-actions)
 
 :::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="A specific user's page in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
 
