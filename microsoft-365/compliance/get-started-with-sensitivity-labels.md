@@ -80,11 +80,11 @@ These permissions are required only to create and configure sensitivity labels a
 
 ## Support for admin units
 
-Now in preview, role groups that are used with Microsoft Purview Information Protection support [administrative units that are configured in Azure Active Directory](/azure/active-directory/roles/administrative-units). From these role groups, you can select individual users and then the **Assign admin units** option:
+Now in preview, role groups that are used with Microsoft Purview Information Protection support [administrative units that are configured in Azure Active Directory](/azure/active-directory/roles/administrative-units). When you edit these role groups, you can select individual users and then the **Assign admin units** option to select admin units from Azure Active Directory:
 
 ![Assign admin units option when you edit role groups.](../media/assign-admin-units.png)
 
-As a result, these admins can now select one or more of their assigned admin units to define the scope of labeling policies that they create or edit. Only if they are also global admins, will they be able to assign labeling policies to the entire directory without selecting individual admin units.
+These users can now select one or more of their assigned admin units to define the scope of labeling policies that they create or edit. Only if they are also global admins, will they be able to assign labeling policies to the entire directory without selecting individual admin units.
 
 Label policies and auto-labeling policies for Exchange support admin units. As a new step when you create or edit these policies, you can select admin units so that only the users in those admin units will be eligible for the policy:
 
