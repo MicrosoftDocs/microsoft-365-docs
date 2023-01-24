@@ -231,22 +231,24 @@ If you are using sensitivity labels in your organization, you can automatically 
 To create an auto-labeling policy
 
 1. Open the [Microsoft Purview admin center](https://compliance.microsoft.com).
-2. In the left navigation, click **Information protection**.
-3. On the **Auto-labeling** tab, click **Create auto-labeling policy**.
-4. On the **Choose info you want this label applied to** page, choose **Custom** and click **Next**.
-5. Type a name and description for the policy and click **Next**.
-6. On the **Choose locations where you want to apply the label** page, turn on **SharePoint sites** and click **Choose sites**.
-7. Add the URLs for the sites where you want to turn on auto-labeling and click **Done**.
-8. Click **Next**.
-9. On the **Set up common or advanced rules** page, choose **Common rules** and click **Next**.
-10. On the **Define rules for content in all locations** page, click **New rule**.
-11. On the **New rule** page, give the rule a name, click **Add condition**, and then click **Content contains sensitive info types**.
-12. Click **Add**, click **Sensitive info types**, choose the sensitive info types that you want to use, click **Add**, and then click **Save**.
-13. Click **Next**.
-14. Click **Choose a label**, select the label you want to use, and then click **Add**.
-15. Click **Next**.
-16. Leave the policy in simulation mode and click **Next**.
-17. Click **Create policy**, and then click **Done**.
+1. In the left navigation, click **Information protection**.
+1. On the **Auto-labeling** tab, click **Create auto-labeling policy**.
+1. On the **Choose info you want this label applied to** page, choose **Custom** and then click **Custom policy**.
+1. Click **Next**.
+1. Type a name and description for the policy and click **Next**.
+1. On the **Choose locations where you want to apply the label** page, turn on **SharePoint sites** and click **Choose sites**.
+1. Add the URLs for the sites where you want to turn on auto-labeling and click **Done**.
+1. Click **Next**.
+1. On the **Set up common or advanced rules** page, choose **Common rules** and click **Next**.
+1. On the **Define rules for content in all locations** page, click **New rule**.
+1. On the **New rule** page, give the rule a name, click **Add condition**, and then click **Content contains**.
+1. Click **Add**, click **Sensitive info types**, choose the sensitive info types that you want to use, click **Add**, and then click **Save**.
+1. Click **Next**.
+1. Click **Choose a label**, select the label you want to use, and then click **Add**.
+1. Click **Next**.
+1. Leave the policy in simulation mode and choose if you want it to automatically turn on.
+1. Click **Next**.
+1. Click **Create policy**, and then click **Done**.
 
 With the policy in place, when a user types "Project Saturn" into a document, the auto-labeling policy will automatically apply the specified label when it scans the file.
 
