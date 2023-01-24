@@ -28,7 +28,7 @@ ms.custom: seo-marvel-jun2020
 
 - Microsoft 365 Defender
 
-The user entity page in Microsoft 365 Defender helps you in your investigation on user identities. The page has all important information about each identity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile. 
+The user entity page in Microsoft 365 Defender helps you in your investigation of user identities. The page has all the important information about each identity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile. 
 
 You can find identity information in the following views:
 
@@ -40,13 +40,13 @@ You can find identity information in the following views:
 - Advanced hunting queries
 - Action center
  
-A clickable identity link is available in these views that will take you to the User page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft 365 Defender portal from **Incidents & alerts** \> ***incident*** \> **Users**.
+A clickable identity link is available in these views that will take you to the **User** page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft 365 Defender portal at **Incidents & alerts** \> ***incident*** \> **Users**.
 
 :::image type="content" source="../../media/investigate-users/Fig1-user-incident-overview.png" alt-text="The Users page for an incident in the Microsoft 365 Defender portal." lightbox="../../media/investigate-users/Fig1-user-incident-overview.png":::
 
-When you investigate a specific identity, you'll see:
+When you investigate a specific identity, you'll see the:
 
-- An [overview](#overview), including identity details, incident and alerts visual view, investigation priority, and scored timelines timeline
+- [Overview](#overview), including identity details, incident and alerts visual view, investigation priority, and scored timelines timeline
 - [Active Alerts](#alerts) tab
 - [Observed in organization](#observed-in-organization) tab
 - [Identity timeline](#timeline) tab
@@ -55,12 +55,12 @@ When you investigate a specific identity, you'll see:
 :::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="A specific user's page in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
 
 > [!NOTE]
-> The user page shows Azure Active Directory (AD) organization as well as groups, helping you understand the groups and permissions associated with a user.
+> The user page shows the Azure Active Directory (Azure AD) organization as well as groups, helping you understand the groups and permissions associated with a user.
 
 ## Overview
 ### Entity details
 
-The **Entity details** on the left of the page provide information about the user, such as Azure Active Directory (AD) Identity risk level, the number of devices the user is logged on to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You'll see other details depending on the integration features you've enabled.
+The **Entity details** on the left of the page provide information about the user, such as the Azure Active Directory (Azure AD) Identity risk level, the number of devices the user is signed in to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You'll see other details depending on the integration features you've enabled.
 
 ### Visual view of incidents and alerts
 
