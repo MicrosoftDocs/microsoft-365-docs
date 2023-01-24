@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 01/18/2023
+ms.date: 01/23/2023
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
@@ -55,7 +55,7 @@ Here's how to sign in:
 
 3. Type your username and password. Select **Sign in**.
 
-4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365bp-security-overview.md).
+4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Boost your security protection for your campaign](m365bp-security-overview.md).
 
 ## How your staff will sign in
 
@@ -97,4 +97,4 @@ To help your staff learn about steps to protect your campaign from cyber threats
 
 ## Next objective
 
-Proceed to [bump up security](m365bp-security-overview.md).
+Proceed to [boost your security protection](m365bp-security-overview.md).
