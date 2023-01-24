@@ -496,6 +496,7 @@ The following configuration profile contains entries for all settings described 
          "restore"
       ],
       "nonExecMountPolicy":"unmute",
+      "unmonitoredFilesystems": ["nfs"],
       "threatTypeSettingsMergePolicy":"merge",
       "threatTypeSettings":[
          {
