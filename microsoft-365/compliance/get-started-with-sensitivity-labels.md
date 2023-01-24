@@ -86,6 +86,9 @@ Now in preview, role groups that are used with Microsoft Purview Information Pro
 
 These users can now select one or more of their assigned admin units to define the scope of labeling policies that they create or edit. Only if they are also global admins, will they be able to assign labeling policies to the entire directory without selecting individual admin units.
 
+> [!IMPORTANT]
+> After you've assigned admin units to users, unless they are also global admins, they will no longer be able to see and edit existing policies that support admin units. However, there's no change to policies that they previously created or edited, and these remain visible and can be edited by users who don't have admin units assigned, or are global admins.
+
 Label policies and auto-labeling policies for Exchange support admin units. As a new step when you create or edit these policies, you can select admin units so that only the users in those admin units will be eligible for the policy:
 
 - Users who have admin units assigned to them but are also global admins don't have to select admin units as part of the policy configuration. These users can keep the default of the entire directory, or they can select one or more of their assigned admin units.
