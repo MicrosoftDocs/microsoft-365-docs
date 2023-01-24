@@ -17,7 +17,6 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
-description: "When you create a sensitivity label, you can automatically assign a label to files and emails, or you can prompt users to select the label that you recommend."
 ---
 
 # Apply a sensitivity label to content automatically
@@ -327,7 +326,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 5. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
-6. For the page **Assign admin units**: This configuration is currently in preview. If your account has been [assigned admin units for Information Protection](get-started-with-sensitivity-labels.md#support-for-admin-units), an auto-labeling policy for just Exchange can be automatically restricted to specific users by selecting admin units. For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
+6. For the page **Assign admin units**: This configuration is currently in preview. If your account has been [assigned admin units for information protection](get-started-with-sensitivity-labels.md#support-for-admin-units), an auto-labeling policy for just Exchange can be automatically restricted to specific users by selecting admin units. For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
 7. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** included for your chosen locations, select the link to choose specific instances to include, or select the link to choose specific instances to exclude. Then select **Next**.
 
@@ -336,7 +335,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     > [!NOTE]
     > For organizations that are using admin units:
     >
-    > - If you selected the option to use admin units in the previous step, you won't see the locations for SharePoint sites and OneDrive accounts.
+    > - If you selected the option to use admin units in the previous step, the locations for SharePoint sites and OneDrive accounts become unavailable.
     > - When you use the **Included** or **Excluded** options, you will  see and can select only users from the admin units selected in the previous step.
     
     If you use the **Included** or **Excluded** options:
