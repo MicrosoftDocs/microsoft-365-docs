@@ -753,7 +753,7 @@ Additional auditing information for sensitivity labels:
 - When you use sensitivity labels for Microsoft 365 Groups, and therefore Teams sites that are group-connected, the labels are audited with group management in Azure Active Directory. For more information, see [Audit logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 - When you use sensitivity labels for Teams meeting invites, and Teams meeting options and chat, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events).
 - When you use sensitivity labels with Power BI, see [Audit schema for sensitivity labels in Power BI](/power-bi/enterprise/service-security-sensitivity-label-audit-schema).
-- When you apply sensitivity labels by using the Azure Information Protection client or scanner, or the Microsoft Information Protection (MIP) SDK, see [Azure Information Protection audit log reference](/azure/information-protection/audit-logs]/azure/information-protection/audit-logs).
+- When you apply sensitivity labels by using the Azure Information Protection client or scanner, or the Microsoft Information Protection (MIP) SDK, see [Azure Information Protection audit log reference](/azure/information-protection/audit-logs).
 
 ## Retention policy and retention label activities
 
