@@ -58,16 +58,14 @@ See the following articles to complete the prerequisites for insider risk manage
 - [Get started with insider risk management settings](insider-risk-management-settings.md)
 - [Subscription and licensing for DLP](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-loss-prevention-data-loss-prevention-dlp-for-exchange-online-sharepoint-online-and-onedrive-for-business)
 
-<<<<<<< Updated upstream
-## Enable Adaptive Protection
-
-
-## Manage Adaptive Protection
-
-=======
 ## Enable and configure Adaptive Protection
 
 ### Quick setup
+
+Options for quick setup:
+
+- AP cards in the compliance portal
+- IRM > AP > Dashboard
 
 Here’s what is configured when you use the quick setup process for Adaptive Protection:
 
@@ -77,10 +75,36 @@ Here’s what is configured when you use the quick setup process for Adaptive Pr
 
 ### Custom setup
 
-Step 1: Create insider risk management policy or choose an existing one.
-Step 2: Configure risk level settings
-Step 3: Create or edit a DLP policy
-Step 4: Turn on adaptive protection
+#### Step 1: Create insider risk management policy or choose an existing one.
+
+Risk levels are assigned to users when this policy either detects user activity or generates alerts that match the risk level conditions you define in the next step. You can either use an existing policy or create a new one. Your insider risk management policy should include:
+
+- Users whose activity you want to detect. Can be all users and groups in your org or just a subset for testing purposes.
+- Activities you consider risky and custom thresholds that influence an activity's risk score, (which in turn determines whether an alert's severity is low, medium, or high). Risky activities might include emailing people outside your organization or copying files to USB (requires devices to be onboarded).
+
+#### Step 2: Configure risk level settings
+
+On the **Risk levels for Adaptive Protection** tab, select the IRM policy you want to use for Adaptive Protection. Then decide whether to use the built-in risk level conditions or create your own. Don’t forget to click 'Save' at the bottom of the page.
+
+#### Step 3: Create or edit a DLP policy
+
+Create or edit an existing DLP policy to restrict actions for users who match your risk level conditions. Use the following guidelines for your DLP policy configuration:
+
+- You must include the *User's risk level for Adaptive Protection is* condition in your DLP policy. This DLP policy can include other conditions as needed.​
+- Although you can include other locations in the DLP policy, AP currently supports only Exchange, Microsoft Teams, and devices.
+
+>[!TIP]
+>We recommend testing the DLP policy (with policy tips) so you can review DLP alerts to verify that the policy is working as expected before enabling AP.
+
+#### Step 4: Turn on adaptive protection
+
+To turn on AP, go to IRM > AP > Adaptive Protection settings
+
+When you turn it on:
+
+- IRM policy starts looking for user activity matching your risk level conditions. If detected, the risk levels will be assigned to users.
+- Users who are assigned risk levels will appear on the **Users assigned risk levels** tab.
+- DLP policy applies protection actions for any user assigned to risk levels included in the DLP policy.
 
 ### Risk levels, activity detection, and risk level timeframe
 
@@ -101,7 +125,6 @@ Risk levels in AP define how risky a user's activity is and can be based on crit
 
 
 
->>>>>>> Stashed changes
 
 ## Disable Adaptive Protection
 
