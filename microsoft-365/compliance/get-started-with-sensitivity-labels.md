@@ -99,8 +99,8 @@ Sensitivity label policies and auto-labeling policies for Exchange support admin
 
 In the next step of the policy configuration, users can then refine their choice as before, by including or excluding (if supported) individual users and groups. However, if admin units have been selected, **All** now represents all users in the selected admin units rather than all users in the tenant. Similarly, the users that can included or excluded will be from the selected admin units only.
 
-> [!IMPORTANT]
-> Don't select admin units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because admin units support only users and groups, if you configure an auto-labeling policy to use admin units, you won't see the options for OneDrive and SharePoint.
+> [!NOTE]
+> Don't select admin units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because admin units support only users and groups, if you configure an auto-labeling policy to use admin units, you won't be able to select the options for SharePoint and OneDrive.
 
 Admin units can simplify the configuration and maintenance of your policies. For example, your organization has configured admin units for specific countries and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
 
