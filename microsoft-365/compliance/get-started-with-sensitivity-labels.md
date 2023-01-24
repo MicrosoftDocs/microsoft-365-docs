@@ -84,7 +84,7 @@ Now in preview, role groups that are used with Microsoft Purview Information Pro
 
 ![Assign admin units option when you edit role groups.](../media/assign-admin-units.png)
 
-These users can now select one or more of their assigned admin units to define the scope of labeling policies that they create or edit. Only if they are also global admins, will they be able to assign labeling policies to the entire directory without selecting individual admin units.
+These users can now select one or more of their assigned admin units to automatically define the scope of labeling policies that they create or edit. Only if they are also global admins, will they be able to assign labeling policies to the entire directory without selecting individual admin units.
 
 > [!IMPORTANT]
 > After you've assigned admin units to users, unless they are also global admins, they will no longer be able to see and edit existing policies that support admin units. However, there's no change to policies that they previously created or edited, and these remain visible and can be edited by users who don't have admin units assigned, or are global admins.
