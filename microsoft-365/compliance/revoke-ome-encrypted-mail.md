@@ -133,7 +133,7 @@ To revoke the message using the Microsoft Purview compliance portal
 
 To revoke an email by using Windows PowerShell, use the Set-OMEMessageRevocation cmdlet.
 
-1. Using a work or school account that has global administrator, compliance administrator, or Exchange administrator permissions in your organization, [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Using a work or school account that has global administrator, compliance administrator, Exchange administrator permissions, or other Exchange role groups with Information Right Management in your organization [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-OMEMessageRevocation cmdlet as follows:
 
