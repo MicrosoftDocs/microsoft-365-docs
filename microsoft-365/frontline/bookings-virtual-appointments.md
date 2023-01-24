@@ -1,7 +1,7 @@
 ---
 title: Virtual Appointments with Microsoft Teams and the Bookings app
-author: lanachin
-ms.author: v-lanachin
+author: samanro
+ms.author: samanro
 manager: samanro
 audience: ITPro
 ms.topic: conceptual
@@ -23,7 +23,7 @@ ms.collection:
   - highpri
   - EngageScoreSep2022
   - m365initiative-meetings
-ms.reviewer: 
+ms.reviewer: megano
 description: Learn how to schedule, manage, and conduct virtual appointments using the Bookings app in Teams.
 appliesto: 
   - Microsoft Teams
