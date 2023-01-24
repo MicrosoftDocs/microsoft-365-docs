@@ -17,6 +17,7 @@ ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
+description: "When you create a sensitivity label, you can automatically assign a label to files and emails, or you can prompt users to select the label that you recommend."
 ---
 
 # Apply a sensitivity label to content automatically
