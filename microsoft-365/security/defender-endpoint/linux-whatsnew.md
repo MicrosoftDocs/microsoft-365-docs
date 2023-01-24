@@ -48,6 +48,7 @@ This article is updated frequently to let you know what's new in the latest rele
 - There are multiple fixes and new changes in this release 
 	- Skip quarantine of threats in passive mode by default.
 	- New config, nonExecMountPolicy, can now be used to specify behavior of RTP on mount point marked as noexec.
+	- New config, unmonitoredFilesystems, can be used to unmonitor certain filesystems.
 	- Improved performance under high load and in speed test scenarios.
 	- Fixes an issue with accessing SMB shares behind Cisco AnyConnect VPN connections.
 	- Fixes an issue with Network Protection and SMB.
