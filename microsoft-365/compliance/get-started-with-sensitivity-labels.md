@@ -84,9 +84,12 @@ Now in preview, role groups that are used with Microsoft Purview Information Pro
 
 ![Assign admin units option when you edit role groups.](../media/assign-admin-units.png)
 
-These users can now select one or more of their assigned admin units to define the scope of labeling policies that they create or edit. Only if they are also global admins, will they be able to assign labeling policies to the entire directory without selecting individual admin units.
+These users can now select one or more of their assigned admin units to automatically define the scope of labeling policies that they create or edit. Only if they are also global admins, will they be able to assign labeling policies to the entire directory without selecting individual admin units.
 
-Label policies and auto-labeling policies for Exchange support admin units. As a new step when you create or edit these policies, you can select admin units so that only the users in those admin units will be eligible for the policy:
+> [!IMPORTANT]
+> After you've assigned admin units to users, unless they are also global admins, they will no longer be able to see and edit existing policies that support admin units. However, there's no change to policies that they previously created or edited, and these remain visible and can be edited by users who don't have admin units assigned, or are global admins.
+
+Sensitivity label policies and auto-labeling policies for Exchange support admin units. As a new step when you create or edit these policies, you can select admin units so that only the users in those admin units will be eligible for the policy:
 
 - Users who have admin units assigned to them but are also global admins don't have to select admin units as part of the policy configuration. These users can keep the default of the entire directory, or they can select one or more of their assigned admin units.
 
@@ -94,10 +97,10 @@ Label policies and auto-labeling policies for Exchange support admin units. As a
 
 - Users who don't have admin units assigned to them won't be able to select admin units. These users must keep the default of the entire directory.
 
-In the next step of the policy configuration, users can then refine their choice as before, by including or excluding (if supported) individual users. However, if admin units have been selected, **All** now represents all users in the selected admin units rather than all users in the tenant. Similarly, the users that can included or excluded will be from the selected admin units only.
+In the next step of the policy configuration, users can then refine their choice as before, by including or excluding (if supported) individual users and groups. However, if admin units have been selected, **All** now represents all users in the selected admin units rather than all users in the tenant. Similarly, the users that can included or excluded will be from the selected admin units only.
 
-> [!IMPORTANT]
-> Don't select admin units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because admin units support only users and groups, if you configure an auto-labeling policy to use admin units, you won't see the options for OneDrive and SharePoint.
+> [!NOTE]
+> Don't select admin units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because admin units support only users and groups, if you configure an auto-labeling policy to use admin units, you won't be able to select the options for SharePoint and OneDrive.
 
 Admin units can simplify the configuration and maintenance of your policies. For example, your organization has configured admin units for specific countries and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
 
