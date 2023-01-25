@@ -24,35 +24,41 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 Insider risk management policies and alerts are effective in helping you detect and identify potential risks associated with specific user actions in your organization. However, organizations need a more effective and efficient data protection solution that can automatically protect their data against the most critical risks.
 
-Adaptive Protection (AP) in insider risk management uses machine learning to identify and mitigate the most critical risks with the most effective DLP protection controls dynamically, saving security teams valuable time while ensuring better data security. AP helps increase risk mitigation by extending and managing preventative options associated with detected risky action to the capabilities provided by Data Loss Prevention (DLP) policies.
+Adaptive Protection in Microsoft Purview uses machine learning to identify and mitigate the most critical risks with the most effective [data loss prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) protection controls dynamically, saving security teams valuable time while ensuring better data security. Adaptive Protection helps increase risk mitigation by extending and managing preventative options associated with detected risky action to the capabilities provided by DLP policies.
 
-AP helps mitigate these potential risks by using the following features:
+Adaptive Protection helps mitigate these potential risks by using the following features:
 
 - **Context-aware detection**. Helps identify the most critical risks with ML-driven analysis of both content and user activities.
 - **Dynamic controls**. Helps enforce effective controls on high-risk users while others maintain productivity.
 - **Automated mitigation**. Helps to minimize the impact of potential data security incidents and reduce admin overhead.
 
-AP dynamically assigns appropriate DLP policies to users based on the risk levels defined and analyzed by the machine learning models in insider risk management. With this new capability, static DLP policies become adaptive based on user context, ensuring that the most effective policy, such as blocking data sharing, is applied only to high-risk users while low-risk users can maintain productivity. The policy controls constantly adjust, so when a user's risk level changes, an appropriate policy is dynamically applied to match the new risk level.
+Adaptive Protection dynamically assigns appropriate DLP policies to users based on the risk levels defined and analyzed by the machine learning models in insider risk management. With this new capability, static DLP policies become adaptive based on user context, ensuring that the most effective policy, such as blocking data sharing, is applied only to high-risk users while low-risk users can maintain productivity. The policy controls constantly adjust, so when a user's risk level changes, an appropriate policy is dynamically applied to match the new risk level.
 
-Watch the following video to learn more about the AP workflow:
+Watch the following video to learn more about the Adaptive Protection workflow:
 
 PLACEHOLDER FOR AP VIDEO - RED TIGER VIDEO LINK NEEDED FROM TINA
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-## Customized risk levels and preventive controls
+## Risk levels and preventive controls
 
-With AP, your administrators can configure the risk factors or activities for each risk level (*minor*, *moderate*, and *elevated*) based on your organization's needs. For example, you can define the elevated risk level as users who downloaded an unusual volume of highly sensitive information for more than 3 days and have privileged roles, such as Azure Active Directory admins; while the moderate risk level could be the same activity, but the users don't have such as an elevated roles. The configuration helps insider risk management learn an organization's risk priorities so it can apply the machine learning-driven models to understand user context of potential data security risks and assigns risk levels accordingly. 
+With Adaptive Protection, your administrators can configure the risk factors or activities for customizable risk levels based on your organization's needs. The risk levels for Adaptive Protection update continuously and automatically based on the users' risk factors, so when users' data security risks increase or decrease, their risk levels will be adjusted accordingly. Based on the risk levels, DLP automatically applies the right level of preventative controls as configured by admins; such as *block*, *block with override*, or *warning*.
 
-The risk levels for AP update continuously and automatically based on the users' risk factors, so when users' data security risks increase or decrease, their risk levels will be adjusted accordingly. Based on the risk levels, DLP automatically applies the right level of preventative controls as configured by admins; such as *block*, *block with override*, or *warning*.
+For example, Adaptive Protection settings and DLP policies can allow users in the minor or medium risk level to receive policy tips and education on best practices of handling sensitive data, influencing positive behavior changes over time to reduce organizational data risks. For users in the elevated risk level, administrators can use the strictest protection controls, such as blocking users from saving or sharing sensitive data, to minimize the impact of potential data incidents.
 
-For example, with AP, DLP can allow users in the minor or medium risk level to receive policy tips and education on best practices of handling sensitive data, influencing positive behavior changes over time to reduce organizational data risks. For users in the elevated risk level, administrators can use the strictest protection controls, such as blocking users from saving or sharing sensitive data, to minimize the impact of potential data incidents.
+### Risk levels
+
+Risk levels in Adaptive Protection define how risky a user's activity is and can be based on criteria such as how many exfiltration activities they performed or whether their activity generated a high severity insider risk alert. These risk levels have default settings, but can be customized as needed:
+
+- **Elevated risk level**: 
+- **Moderate risk level**:
+- **Minor risk level**:
 
 ## Prerequisites
 
-To get started with AP in your organization, you'll need to configure insider risk management with at least one policy. You'll also need to make sure that your organization's subscription and licensing includes DLP. 
+To get started with Adaptive Protection in your organization, you'll need to configure insider risk management with at least one policy. You'll also need to make sure that your organization's subscription and licensing includes DLP.
 
-See the following articles to complete the prerequisites for insider risk management and DLP before enabling AP:
+See the following articles to complete the prerequisites for insider risk management and DLP before enabling Adaptive Protection:
 
 - [Get started with insider risk management](insider-risk-management-configure.md)
 - [Get started with insider risk management settings](insider-risk-management-settings.md)
