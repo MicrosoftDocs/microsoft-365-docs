@@ -24,45 +24,51 @@ Adaptive Protection in Microsoft Purview integrates Microsoft Purview Insider Ri
 
 Refer to [LINK TO ROBS ARTICLE](blah.md) to learn the basics of adaptive protection.
 
-## How adaptive protection shows up in DLP
+## How adaptive protection shows up in DLP policies
 
+If you are unfamiliar with DLP policies, you should review these articles before working with adaptive protection:
 
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md)
+- [Data Loss Prevention policy reference](dlp-policy-reference.md)
+- [Design a data loss prevention policy](dlp-policy-design.md)
 
+Once adaptive protection is configured in IRM, a condition called **User's risk level for adaptive protection is** will be available to use in rules that are configured for policies scoped to Exchange Online, Devices, and Teams locations.
 
-the **User's risk level for adaptive protection is** will show up as condition in rules that are configured for policies scoped to Exchange Online, Devices, and Teams locations.
+The condition **User's risk level for adaptive protection is** has three values: 
 
-When a user exhibits a risky behavior that triggers a match in an IRM policy, IRM can automatically create a DLP policy to 
+- **Elevated risk level**
+- **Moderate risk level**
+- **Minor risk level**
 
-**User's risk level for adaptive protection is**
+These risk level profiles are defined in IRM. You can select one, two or all three in a policy rule.  
 
-**Elevated risk level**
-**Moderate risk level**
-**Minor risk level**
+You can manually configure DLP policies that are part of adaptive protection and also use the [one-click configuration in IRM](LINK TO ROBS ARTICLE) to create DLP policies automatically from a template. 
 
-Once click configuration - configured in IRM, these get automatically created policy parameters:
+### Manual configuration
 
-Link to Rob's docs
+You manually configure an adaptive protection DLP policy just like you would [configure any other policy](create-test-tune-dlp-policy.md). Just select the **User's risk level for adaptive protection is** condition and the risk level profiles that you want, configure all the other policy options and deploy the policy according to your normal procedures.
 
-first use Adaptive Protection in Microsoft Purview
+### One-click configuration
 
-Adaptive Protection for subsequent uses
+If one-click is configured in IRM, adaptive protection will create DLP policies automatically, so you should be on the lookout for them. One-click will create one policy for Teams and Exchange Online with three rules, one for each of the risk levels. It will also create one policy for Teams with three rules, one for each of the risk levels.
 
+All one-click configured DLP policies start with these values:
 
-- Test mode
-- Risk level - taken from the IRM risk level
-- Actions
-    - check box Restrict access or encrypt the content in Microsoft 365 locations
-    - radio button Block users from receiving email or accessing share SharePoint, OneDrive, and Teams files
-    - radio button - Block only people outside your organization
-  
+Conditions:
 
-ok, that's an important distinction  to make:; Auto configured policies give you 1 policy for TEams + EXO with  3 rules, one for each of the risk levels AND 1 policy for Teams with three rules, one for each of the risk levels.  IF they don't want that. then they need to create their rules manually
+- **User's risk level for adaptive protection is** with the risk level profiles take from the IRM configuration
 
+Actions:
 
+- **Restrict access or encrypt the content in Microsoft 365 locations**
+    - **Block users from receiving email or accessing SharePoint, OneDrive, and Teams files**
+    - **Block only people outside your organization**
 
-Manually created
-user picks the risk level, actions, everything
+Status:
 
+- **Test mode**
 
+## See Also
 
-
+- [Adaptive Protection in Microsoft Purview](dlp-policy-reference.md#adaptive-protection-in-microsoft-purview)
