@@ -105,6 +105,8 @@ You can change how your organization receives Microsoft 365 updates by following
 8. Choose **Select users** to add users one at a time, or **Upload users** to add them in bulk.
 
 9. When you're done adding users, select **Save changes**.
+
+![Image to set up release option in the Microsoft 365 admin center.](../../media/release_option_admincenter.png)
   
 ## Next steps
 
