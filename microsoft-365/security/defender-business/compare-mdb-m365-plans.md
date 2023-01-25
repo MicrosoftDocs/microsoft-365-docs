@@ -56,7 +56,7 @@ The following table provides more information about what's included in each plan
 
 (<a id="fnb">b</a>) Microsoft Intune is required to onboard iOS and Android devices. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
-## Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2
+## Compare Defender for Business to Defender for Endpoint Plan 1 and Plan 2
 
 Defender for Business brings the enterprise-grade capabilities of Defender for Endpoint to small and medium-sized businesses. The following table compares security features and capabilities in Defender for Business to the enterprise offerings, Microsoft Defender for Endpoint Plans 1 and 2.
 
