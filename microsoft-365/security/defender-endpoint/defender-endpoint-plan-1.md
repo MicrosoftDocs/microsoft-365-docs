@@ -186,7 +186,8 @@ To learn more, see [Defender for Endpoint APIs](management-apis.md).
 Most organizations use various devices and operating systems. Defender for Endpoint Plan 1 supports the following operating systems:
 
 - Windows 10 and 11
-- Windows 7 (ESU required) and Windows 8.1 if System Center Endpoint Protection (SCEP) is used.
+- Windows 7 ([ESU required](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)) Pro or Enterprise 
+- Windows 8.1 Pro, Enterprise, and Pro Education 
 - macOS (the three most recent releases are supported)
 - iOS
 - Android OS
@@ -200,8 +201,8 @@ Servers require an additional license, such as:
 > [!TIP]
 > For more details about supported operating systems, see the following articles: 
 > 
-> - [Hardware and software requirements](minimum-requirements.md#hardware-and-software-requirements)
-> - [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
+> - [Defender for Endpoint Hardware and software requirements](minimum-requirements.md#hardware-and-software-requirements)
+> - [Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
 
 ## Next steps
 
