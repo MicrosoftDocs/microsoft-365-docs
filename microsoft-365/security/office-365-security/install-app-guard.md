@@ -50,7 +50,7 @@ To learn more about Microsoft 365 Apps update channels, see [Overview of update 
 
 ### Enable Application Guard for Office
 
-1. (Windows 10 only) Download and install **Windows 10 cumulative monthly security updates KB4571756**. 
+1. If you're running Windows 10, download and install **Windows 10 cumulative monthly security updates KB4571756**. Note that if you're running Windows 11, you don't need to download and install the security update. Simply follow the rest of the process steps. 
 
 2. Select **Microsoft Defender Application Guard** under Windows Features and select **OK**. Enabling the Application Guard feature will prompt a system reboot. You can choose to reboot now or after step 3.
 
@@ -90,7 +90,9 @@ For more on configuring Windows diagnostic settings, refer to [Configuring Windo
 ### Confirm that Application Guard for Office is enabled and working
 
 Before confirming that Application Guard for Office is enabled: 
-1. Launch Word, Excel, or PowerPoint on a device where the policies have been deployed. 
+
+1. Launch Word, Excel, or PowerPoint on a device where the policies have been deployed.
+
 2. From the app you launched, go to **File -> Account**. On the Account page, verify that the expected license is shown.
 
 To confirm that Application Guard for Office is enabled, open an untrusted document. For example, you can open a document that was downloaded from the internet or an email attachment from someone outside your organization.
@@ -120,7 +122,7 @@ Office supports the following policies to configure Application Guard for Office
 |---|---|
 |Don't use Application Guard for Office|Enabling this policy forces Word, Excel, and PowerPoint to use the Protected View isolation container instead of Application Guard for Office.|
 |Configure Application Guard for Office container pre-creation|This policy determines if the Application Guard for Office container is pre-created for improved run-time performance. When you enable this policy, you can specify the number of days to continue pre-creating a container or let the Office built-in heuristic pre-create the container.
-|Don't allow copy/paste for Office documents opened in Application Guard for Office|Enabling this policy prevents a user from copying and pasting content from a document opened in Application Guard for Office to a document opened outside of the container.|
+|Configure copy and paste from Office documents opened in Application Guard|This policy setting allows you to control whether users can copy and paste content from Office to and from documents opened in Application Guard, as well as the allowed formats.|
 |Disable hardware acceleration in Application Guard for Office|This policy controls whether Application Guard for Office uses hardware acceleration to render graphics. If you enable this setting, Application Guard for Office uses software-based (CPU) rendering and won't load any third-party graphics drivers or interact with any connected graphics hardware.
 |Disable unsupported file types protection in Application Guard for Office|This policy controls whether Application Guard for Office will block unsupported file types from being opened or if it will enable the redirection to Protected View.
 |Turn off camera and microphone access for documents opened in Application Guard for Office|Enabling this policy removes Office access to the camera and microphone inside Application Guard for Office.|
@@ -217,10 +219,13 @@ When this heuristic is met, Office will pre-create an Application Guard containe
 
 ## Known issues
 
-* Selecting web links (`http` or `https`) doesn't open the browser.
-* The default setting for copy-paste protection policy is to enable clipboard access to text only.
 * The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types that are encrypted or have Information Rights Management (IRM) set. This includes files that are encrypted by using sensitivity labels from Microsoft Purview Information Protection.
-* CSV and HTML files are not supported at this time.
+* HTML files are not supported at this time.
 * Application Guard for Office currently does not work with NTFS compressed volumes. If you are seeing an error "ERROR_VIRTUAL_DISK_LIMITATION" please try uncompressing the volume.
-* Updates to .NET might cause files to fail to open in Application Guard. As a workaround, users can restart their device when they come across this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* If you are seeing an error mentioning that the hypervisor may not be enabled, check the following:
+  * Virtualization is enabled in BIOS
+  * Hyper-V is turned on
+  * The Host Network Service is running
+* Updates to .NET might cause files to fail to open in Application Guard. This can be resolved by restarting the machine.
+* Application Guard requires "Virtual Machines" to be granted "Logon as a service" permission, and "wdagutilityaccount" must **not** be added to the "Deny logon as a service" security policy setting. 
 * Please see [Frequently asked questions - Microsoft Defender Application Guard for additional information.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard)
