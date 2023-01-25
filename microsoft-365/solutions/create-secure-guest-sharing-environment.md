@@ -261,25 +261,29 @@ You can use [Microsoft Purview Data Loss Prevention (DLP)](../compliance/dlp-lea
 To create a DLP rule
 
 1. In the Microsoft Purview admin center, go to the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention).
-2. Click **Create policy**.
-3. Choose **Custom** and click **Next**.
-4. Type a name for the policy and click **Next**.
-5. On the **Locations to apply the policy** page turn off all settings except **SharePoint sites** and **OneDrive accounts**, and then click **Next**.
-6. On the **Define policy settings** page, click **Next**.
-7. On the **Customize advanced DLP rules** page, click **Create rule** and type a name for the rule.
-8. Under **Conditions**, click **Add condition**, and choose **Content contains**.
-9. Click **Add**, choose **Sensitivity labels**, choose the labels you want to use, and click **Add**.
+1. On the **Policies** tab, click **Create policy**.
+1. Choose **Custom** and then **Custom policy**.
+1. Click **Next**.
+1. Type a name for the policy and click **Next**.
+1. On the **Locations to apply the policy** page turn off all settings except **SharePoint sites** and **OneDrive accounts**, and then click **Next**.
+1. On the **Define policy settings** page, click **Next**.
+1. On the **Customize advanced DLP rules** page, click **Create rule** and type a name for the rule.
+1. Under **Conditions**, click **Add condition**, and choose **Content is shared from Microsoft 365**.
+1. In the dropdown, choose **with people outside my organization**.
+1. Under **Conditions**, click **Add condition**, and choose **Content contains**.
+1. Click **Add**, choose **Sensitivity labels**, choose the labels you want to use, and click **Add**.
 
    ![Screenshot of conditions options, sensitive info types, sensitivity labels, and retention labels.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. Under **Actions** click **Add an action** and choose **Restrict access or encrypt the content in Microsoft 365 locations**.
-11. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Only people outside your organization** option.
+1. Under **Actions** click **Add an action** and choose **Restrict access or encrypt the content in Microsoft 365 locations**.
+1. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Block only people outside your organization** option.
 
     ![Screenshot of DLP rule action options.](../media/dlp-remove-guest-access-sensitive-files.png)
 
-12. Click **Save** and then click **Next**.
-13. Choose your test options and click **Next**.
-14. Click **Submit**, and then click **Done**.
+1. Turn user notifications **On**, and then select the **Notify users in Office 365 service with a policy tip** check box.
+1. Click **Save** and then click **Next**.
+1. Choose your test options and click **Next**.
+1. Click **Submit**, and then click **Done**.
 
 It's important to note that this policy doesn't remove access if the guest is a member of the site or team as a whole. If you plan to have highly sensitive documents in a site or team with guest members, consider these options:
 
