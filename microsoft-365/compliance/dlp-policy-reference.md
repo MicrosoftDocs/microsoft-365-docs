@@ -231,40 +231,17 @@ SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videopl
 
 #### Adaptive Protection in Microsoft Purview
 
-Adaptive protection integrates Microsoft Purview Insider Risk Management (IRM) with DLP. When configured in IRM, the **User's risk level for adaptive protection is** will show up as condition for Exchange Online, Devices, and Teams locations.
+Adaptive protection integrates Microsoft Purview Insider Risk Management (IRM) risk profiles into DLP policies so that DLP can help protect against dynamically identified risky behaviors. When configured in IRM, the **User's risk level for adaptive protection is** will show up as condition for Exchange Online, Devices, and Teams locations. Refer to [Learn about Adaptive Protection in Data Loss Prevention (preview)](dlp-adaptive-protection-learn.md) for more details.
 
-When a user exhibits a risky behavior that triggers a match in an IRM policy, IRM can automatically create a DLP policy to 
+##### Conditions that adaptive protection supports
 
-**User's risk level for adaptive protection is**
+- User's risk level for adaptive protection is
 
-**Elevated risk level**
-**Moderate risk level**
-**Minor risk level**
+with these values:
 
-Once click configuration - configured in IRM, these get automatically created policy parameters:
-
-Link to Rob's docs
-
-first use Adaptive Protection in Microsoft Purview
-
-Adaptive Protection for subsequent uses
-
-
-- Test mode
-- Risk level - taken from the IRM risk level
-- Actions
-    - check box Restrict access or encrypt the content in Microsoft 365 locations
-    - radio button Block users from receiving email or accessing share SharePoint, OneDrive, and Teams files
-    - radio button - Block only people outside your organization
-  
-
-ok, that's an important distinction  to make:; Auto configured policies give you 1 policy for TEams + EXO with  3 rules, one for each of the risk levels AND 1 policy for Teams with three rules, one for each of the risk levels.  IF they don't want that. then they need to create their rules manually
-
-
-
-Manually created
-user picks the risk level, actions, everything
-
+- Elevated risk level
+- Moderate risk level
+- Minor risk level
 
 #### Condition context
 
