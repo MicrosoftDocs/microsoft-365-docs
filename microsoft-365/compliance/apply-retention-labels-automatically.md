@@ -90,6 +90,7 @@ Other considerations for simulation mode for auto-apply retention policies:
 
 - A maximum of 30 simulation jobs can be active in a 12-hour time period.
 - A maximum of 100 item samples can be collected per mailbox.
+- You might need to be assigned additional permissions to see the simulation results. For information about the required roles, see the next section, [Before you begin](#before-you-begin).
 - Simulation counts all items matching the policy criteria at time of simulation. However, when the policy is turned on, only content that is not already labeled will be eligible for auto-applying retention labels.
 - Simulation for Exchange locations always runs against emails stored in mailboxes, so the results for email that are sent and received when the policy is turned on won't be consistent unless you can send and receive the exact same email messages.
 - Because simulation results are based on items available in the specified locations at the time the simulation job runs, remember to take the following considerations into account when you turn on the policy:
