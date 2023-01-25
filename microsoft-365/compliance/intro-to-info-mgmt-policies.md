@@ -59,7 +59,7 @@ When you add a site collection policy to a site content type, and an instance of
   
  **Create an information management policy for a site content type in the top-level site's Site Content Type Gallery, and then add that content type to one or more lists or libraries** You can also create an information management policy directly for a site content type and then associate an instance of that site content type with multiple lists or libraries. If you create an information management policy this way, every item in the site collection of that content type or a content type that inherits from that content type has the policy. However, if you create an information management policy directly for a site content type, it is more difficult to reuse this information management policy in other site collections, because policies that are created this way cannot be exported. 
  
- Note: If the content type of an item changes, it may impact the enforcement of policy actions on that item. For more information on content types, please visit:  [Introduction to content types](introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5.md).
+ Note: If the content type of an item changes, it might impact the enforcement of policy actions on that item. For more information about content types, see  [Introduction to content types](https://support.microsoft.com/office/introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5d).
   
 ![Site content types link on Site Settings page.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
