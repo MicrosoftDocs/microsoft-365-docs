@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 12/02/2022
+ms.date: 01/25/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
@@ -183,17 +183,25 @@ To learn more, see [Defender for Endpoint APIs](management-apis.md).
 
 ## Cross-platform support
 
-Most organizations use various devices and operating systems. Currently, Defender for Endpoint Plan 1 supports the following operating systems:
+Most organizations use various devices and operating systems. Defender for Endpoint Plan 1 supports the following operating systems:
 
-- Windows 7 (ESU required)
-- Windows 8.1
-- Windows 10, version 1709, or later
-- Windows 10 Enterprise
-- Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
-- Windows 10 Enterprise IoT
+- Windows 10 and 11
+- Windows 7 (ESU required) and Windows 8.1 if System Center Endpoint Protection (SCEP) is used.
 - macOS (the three most recent releases are supported)
 - iOS
 - Android OS
+
+Servers require an additional license, such as:
+
+- **Microsoft Defender for Servers Plan 1 or Plan 2** (*recommended for enterprise customers*) as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+- **Microsoft Defender for Business servers** (*for small and medium-sized businesses who have [Microsoft Defender for Business](../defender-business/mdb-overview.md)*). To learn more, see [How to get Microsoft Defender for Business servers](../defender-business/get-defender-business-servers.md).
+- **Microsoft Defender for Endpoint for Servers**. See [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+
+> [!TIP]
+> For more details about supported operating systems, see the following articles: 
+> 
+> - [Hardware and software requirements](minimum-requirements.md#hardware-and-software-requirements)
+> - [Supported Microsoft Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
 
 ## Next steps
 
