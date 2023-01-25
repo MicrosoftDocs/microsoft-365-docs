@@ -38,7 +38,7 @@ Microsoft 365 Defender can display date and time information using either your l
 - Incidents
 - Automated investigation and remediation, including the action center
 - Advanced hunting results
-- Incident timeline
+- Identity timeline
 
 To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.
 
