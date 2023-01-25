@@ -51,23 +51,65 @@ You manually configure an adaptive protection DLP policy just like you would [co
 
 ### One-click configuration
 
-If one-click is configured in IRM, adaptive protection will create DLP policies automatically, so you should be on the lookout for them. One-click will create one policy for Teams and Exchange Online with three rules, one for each of the risk levels. It will also create one policy for Teams with three rules, one for each of the risk levels.
+If one-click is configured in IRM, adaptive protection will create DLP policies automatically, so you should be on the lookout for them. One-click will create one policy for Teams and Exchange Online with two rules, one for the elevated risk profile and one for the moderate and minor risk levels. It will also create one policy for Teams with two rules, one for the elevated risk profile and one for the moderate and minor risk levels.
 
-All one-click configured DLP policies start with these values:
+#### Policy values for Teams and Exchange online
+
+Elevated risk level profile rule
+
+|DLP policy element  |Configured value  |
+|---------|---------|
+|Conditions     |- **User's risk level for adaptive protection is** </br> - **Elevated risk level**         |
+|Actions     |         |
+|User Notification     |         |
+|User Override     |         |
+|Incident reports     |         |
+|Additional Options    |         |
+|Status     |**Test it out first**        |
+
+
+
+#### Policy values for Devices
+
+ 
+
+Elevated risk level profiles one-click configured DLP policies start with these values
 
 Conditions:
 
-- **User's risk level for adaptive protection is** with the risk level profiles take from the IRM configuration
+- **User's risk level for adaptive protection is** 
+    - one rul
 
-Actions:
+Actions: 
+
+for elevated risk level profile rule:
 
 - **Restrict access or encrypt the content in Microsoft 365 locations**
     - **Block users from receiving email or accessing SharePoint, OneDrive, and Teams files**
-    - **Block only people outside your organization**
+    - **Block everyone**
+
+for moderate + minor risk level profile rule:
+
+WAITING ON RESPONSE FROM ERIN MIYAKE Actions for moderate and minor risk profile rule
+
+- **Restrict access or encrypt the content in Microsoft 365 locations**
+    - 
+
 
 Status:
 
 - **Test mode**
+
+o	Adaptive Protection policy for Endpoint DLP
+	Elevated risk level rule = Elevated risk level will get blocked
+	Moderate and minor risk level rule = audit
+	In test mode first (which only audits actions)
+o	Adaptive Protection policy for Teams and Exchange DLP 
+	Elevated risk level rule = Elevated risk level will get blocked
+	Moderate and minor risk level rule = audit
+	In test mode first (which only audits actions)
+
+
 
 ## See Also
 
