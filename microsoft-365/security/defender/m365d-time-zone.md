@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
