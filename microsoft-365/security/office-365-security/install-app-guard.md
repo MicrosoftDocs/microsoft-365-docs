@@ -133,7 +133,8 @@ Office supports the following policies to configure Application Guard for Office
 > [!NOTE]
 > For the following policies to take effect, users are required to sign out and sign in again to Windows:
 >
-> * Disable copy/paste for documents opened in Application Guard for Office
+> * Configure copy and paste from Office documents opened in Application Guard
+> * Disable hardware acceleration in Application Guard for Office
 > * Restrict printing for documents opened in Application Guard for Office
 > * Turn off camera and microphone access to documents opened in Application Guard for Office
 
