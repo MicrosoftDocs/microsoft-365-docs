@@ -33,15 +33,15 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 
 **Use this article to**:
 
-- [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](#compare-microsoft-defender-for-business-to-microsoft-365-business-premium).
-- [Compare Defender for Business (standalone) to Defender for Endpoint enterprise offerings](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+- [Compare Defender for Business to Microsoft 365 Business Premium](#compare-defender-for-business-to-microsoft-365-business-premium).
+- [Compare Defender for Business (standalone) to Defender for Endpoint Plan 1 and Plan 2](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > [!TIP]
 > Defender for Business is available as a standalone security solution for small and medium-sized businesses. Defender for Business is now included in Microsoft 365 Business Premium. If you already have Microsoft 365 Business Basic or Standard, consider either upgrading to Microsoft 365 Business Premium or adding Defender for Business to your current subscription to get more threat protection capabilities for your devices.
 
-## Compare Microsoft Defender for Business to Microsoft 365 Business Premium
+## Compare Defender for Business to Microsoft 365 Business Premium
 
-Defender for Business provides advanced security protection for your devices, with next-generation protection, endpoint detection and response, and threat & vulnerability management. Microsoft 365 Business Premium includes Defender for Business plus additional cybersecurity and productivity capabilities.
+Defender for Business provides advanced security protection for your devices, with next-generation protection, endpoint detection and response, and threat & vulnerability management. Microsoft 365 Business Premium includes Defender for Business and provides additional cybersecurity and productivity capabilities.
 
 :::image type="content" source="media/mdb-m365bp-comparison.png" alt-text="Diagram comparing Defender for Business to Microsoft 365 Business Premium.":::
 
