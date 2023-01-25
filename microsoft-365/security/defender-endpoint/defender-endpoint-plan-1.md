@@ -203,6 +203,7 @@ Servers require an additional license, such as:
 > 
 > - [Defender for Endpoint Hardware and software requirements](minimum-requirements.md#hardware-and-software-requirements)
 > - [Defender for Endpoint capabilities by platform](supported-capabilities-by-platform.md)
+> - [Microsoft licensing and product terms](https://www.microsoft.com/en-us/licensing/product-licensing/products)
 
 ## Next steps
 
