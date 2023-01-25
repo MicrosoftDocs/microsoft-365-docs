@@ -205,6 +205,15 @@ The Activity explorer tab on the DLP page has the *Activity* filter preset to *D
 
 ![screenshot of the DLPRuleMatch scoped activity explorer.](../media/dlp-activity-explorer.png)
 
+#### Contextual summary
+
+You can see the text that surrounds the matched content, like a credit card number in a **DLPRuleMatch** event in Activity explorer. To do this you must first enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
+
+**DLPRuleMatch** events are paired with the user activity event. The should be right next to (or at least very close to) each other in Activity explorer.  You'll want to look at both because the **user activity event** contains details about the matched policy and the **DLPRuleMatch** event contains the details about the text that surrounds the matched content. 
+
+This is in preview for endpoint DLP. For endpoints, be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+
+
 For more information, see [Get started with activity explorer](data-classification-activity-explorer.md)
 
 To learn more about Microsoft Purview DLP, see:
