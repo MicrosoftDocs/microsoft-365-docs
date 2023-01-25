@@ -18,9 +18,18 @@ search.appverid:
 description: "Learn how insider risk management and data Loss prevention work together to dynamically protect your organization from risky user activities."
 ---
 
-# Learn about Adaptive Protection in Data Loss Prevention
+# Learn about Adaptive Protection in Data Loss Prevention (preview)
 
-Adaptive protection integrates Microsoft Purview Insider Risk Management (IRM) with DLP. When configured in IRM, the **User's risk level for adaptive protection is** will show up as condition for Exchange Online, Devices, and Teams locations.
+Adaptive Protection in Microsoft Purview integrates Microsoft Purview Insider Risk Management (IRM) with Microsoft Purview Data Loss Prevention (DLP). When IRM identifies a user who is engaging in risky behavior, it can automatically create a DLP policy to help protect the organization against that risky behavior. You can manually create DLP policies that help protect against risky behaviors that IRM identifies too.
+
+Refer to [LINK TO ROBS ARTICLE](blah.md) to learn the basics of adaptive protection.
+
+## How adaptive protection shows up in DLP
+
+
+
+
+the **User's risk level for adaptive protection is** will show up as condition in rules that are configured for policies scoped to Exchange Online, Devices, and Teams locations.
 
 When a user exhibits a risky behavior that triggers a match in an IRM policy, IRM can automatically create a DLP policy to 
 
