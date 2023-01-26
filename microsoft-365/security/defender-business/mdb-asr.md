@@ -46,4 +46,15 @@ To enable these rules, see [Simplified standard protection option](../defender-e
 
 ## View your attack surface reduction report
 
+1. As a global administrator, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports**.
+
+2. Under **Endpoints**, choose **Attack surface reduction rules**. 
+
+The report opens and includes three tabs:
+
+- Detections
+- Configuration
+- Add exclusions
+
+
 ## Learn more about attack surface reduction rules
