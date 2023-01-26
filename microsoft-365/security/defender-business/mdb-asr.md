@@ -71,13 +71,13 @@ These rules help protect your network and devices without a lot of disruption to
 
 1. As a global administrator, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports**.
 
-2. Under **Endpoints**, choose **Attack surface reduction rules**. 
+2. Under **Endpoints**, choose **Attack surface reduction rules**. The report opens and includes three tabs:
 
-The report opens and includes three tabs:
+   - **Detections**, where you can view detections that occurred as a result of attack surface reduction rules
+   - **Configuration**, where you can apply attack surface reduction rules to devices
+   - **Add exclusions**, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
 
-- **Detections**, where you can view detections that occurred as a result of attack surface reduction rules
-- **Configuration**, where you can apply attack surface reduction rules to devices
-- **Add exclusions**, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
+
 
 ### Learn more about attack surface reduction rules
 
