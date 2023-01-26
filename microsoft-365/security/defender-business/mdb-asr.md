@@ -44,7 +44,26 @@ We recommend enabling the following standard protection rules as soon as possibl
 
 These rules help protect your network and devices without a lot of disruption to users.
 
-To enable these rules, see [Simplified standard protection option](../defender-endpoint/attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
+To enable these rules, try the [Simplified standard protection option](../defender-endpoint/attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
+
+You can also set up your ASR rules in Intune.
+
+1. As a global administrator, in the Microsoft Endpoint Manager admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
+
+2. Select an existing policy, or choose **Create policy** to create a new policy.
+
+   - For **Platform**, choose **Windows 10 and later**.
+   - For Profile, select **Attack Surface Reduction Rules**, and then choose **Create**.
+
+3. Set up your policy as follows:
+
+   1. Specify a name and description, and then choose **Next**.
+   
+   2. For at least the following three rules, set each one to **Block**:
+
+      - [Block credential stealing from the Windows local security authority subsystem](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
+      - [Block abuse of exploited vulnerable signed drivers](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+      - [Block persistence through WMI event subscription](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
 ### View your attack surface reduction report
 
