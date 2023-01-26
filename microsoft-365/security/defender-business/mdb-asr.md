@@ -52,9 +52,15 @@ To enable these rules, see [Simplified standard protection option](../defender-e
 
 The report opens and includes three tabs:
 
-- Detections
-- Configuration
-- Add exclusions
-
+- Detections, where you can view detections that occurred as a result of attack surface reduction rules
+- Configuration, where you can apply attack surface reduction rules to devices
+- Add exclusions, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
 
 ## Learn more about attack surface reduction rules
+
+More detailed information about attack surface reduction rules is available here:
+
+- [Attack surface reduction rules overview](../defender-endpoint/attack-surface-reduction.md)
+- [ASR rules report](../defender-endpoint/attack-surface-reduction-rules-report.md)
+- [ASR rules reference](../defender-endpoint/attack-surface-reduction-rules-reference.md)
+- [ASR rules deployment overview](../defender-endpoint/attack-surface-reduction-rules-deployment.md)
