@@ -59,9 +59,13 @@ These rules help protect your network and devices without a lot of disruption to
    
    2. For at least the following three rules, set each one to **Block**:
 
-      - [Block credential stealing from the Windows local security authority subsystem](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem)
-      - [Block persistence through WMI event subscription](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
-      - [Block abuse of exploited vulnerable signed drivers](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+      - **Block credential stealing from the Windows local security authority subsystem**
+      - **Block persistence through WMI event subscription**
+      - **Block abuse of exploited vulnerable signed drivers**
+
+      Then choose **Next**.
+
+    3. On the **Assignments** step, choose the users or devices to receive the rules. (We recommend selecting **Add all devices**).
 
 ### View your attack surface reduction report
 
