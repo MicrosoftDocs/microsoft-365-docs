@@ -4,7 +4,7 @@ description: Get an overview of attack surface reduction capabilities in Microso
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/25/2023 
+ms.date: 01/26/2023 
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -20,11 +20,11 @@ audience: Admin
 
 # Attack surface reduction capabilities in Microsoft Defender for Business
 
-Attack surfaces are the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Microsoft Defender for Business includes several attack surface reduction capabilities to help protect your environment. This article provides an overview of these capabilities, and includes links to more detailed information.
+Think of your attack surfaces as all the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Unsecure devices, unrestricted access to any URL on a company device, and allowing any type of app or script to run on company devices are all examples of attack surfaces. They leave your company vulnerable to cyberattacks. To help protect your network and devices, Microsoft Defender for Business includes attack surface reduction capabilities. This article provides an overview of those capabilities, and includes links to more detailed information.
 
 ## Attack surface reduction in Defender for Business
 
-Defender for Business includes several attack surface reduction capabilities:
+Attack surface reduction capabilities in Defender for Business include:
 
 - **Attack surface reduction rules** (also referred to as ASR rules) prevent specific actions that are commonly associated with malicious activity to run on Windows devices. 
 - **Controlled folder access** allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation.
@@ -34,7 +34,7 @@ Defender for Business includes several attack surface reduction capabilities:
 
 The sections that follow describe how to set up your attack surface reduction capabilities, beginning with your ASR rules.
 
-## Enable your standard protection rules
+## Enable your standard protection ASR rules
 
 We recommend enabling the following standard protection rules as soon as possible:
 
@@ -42,7 +42,7 @@ We recommend enabling the following standard protection rules as soon as possibl
 - [Block abuse of exploited vulnerable signed drivers](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 - [Block persistence through WMI event subscription](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
-These rules help protect your network and devices without a lot of disruption to users. **To enable these rules quickly and easily, try the [Simplified standard protection option](../defender-endpoint/attack-surface-reduction-rules-report.md#simplified-standard-protection-option)**. You can also set up your ASR rules by using Microsoft Intune.
+These rules help protect your network and devices but shouldn't cause disruption for users. **To enable these rules quickly and easily, try the [Simplified standard protection option](../defender-endpoint/attack-surface-reduction-rules-report.md#simplified-standard-protection-option)**. If you prefer, you can set up your ASR rules by using Microsoft Intune instead.
 
 ### To set up ASR rules using Intune
 
