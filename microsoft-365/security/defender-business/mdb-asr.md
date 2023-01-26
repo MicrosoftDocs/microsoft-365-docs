@@ -24,15 +24,15 @@ Think of your attack surfaces as all the places and ways that your organization'
 
 ## Attack surface reduction in Defender for Business
 
-Attack surface reduction capabilities in Defender for Business include:
+The following table summarizes attack surface reduction capabilities in Defender for Business, and how to set them up:
 
-- **Attack surface reduction rules** (also referred to as ASR rules) prevent specific actions that are commonly associated with malicious activity to run on Windows devices. 
-- **Controlled folder access** allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation.
-- **Network protection** prevents people from accessing dangerous domains through applications on their Windows and Mac devices. Network protection is also a key component of [web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering).
-- **Web protection** integrates with web browsers and works with network protection to protect against web threats and unwanted content. Web protection includes web content filtering and web threat reports.
-- **Firewall protection** determines what network traffic is permitted to flow to or from your organization's devices.
-
-The sections that follow describe how to set up your attack surface reduction capabilities, beginning with your ASR rules.
+| Capability | What to do |
+|:---|:---|
+| **Attack surface reduction rules**. <br/> Also referred to as ASR rules, attack surface reduction rules prevent specific actions that are commonly associated with malicious activity to run on Windows devices. | See [Enable your standard protection ASR rules](#enable-your-standard-protection-asr-rules) (in this article). |
+| **Controlled folder access** <br/>Controlled folder access allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. | See [Set up controlled folder access](#set-up-controlled-folder-access) (in this article). |
+| **Network protection** <br/>Network protection prevents people from accessing dangerous domains through applications on their Windows and Mac devices. Network protection is also a key component of [web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering). | Network protection is already enabled by default when devices are onboarded to Defender for Business and [next-generation protection settings](mdb-next-gen-configuration-settings.md) are applied. Your default policies are configured to use recommended security settings. |
+| **Web protection** <br/>Web protection integrates with web browsers and works with network protection to protect against web threats and unwanted content. Web protection includes web content filtering and web threat reports. | [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering).  |
+| **Firewall protection** <br/>Firewall protection determines what network traffic is permitted to flow to or from your organization's devices. | Firewall protection is already enabled by default when devices are onboarded to Defender for Business and [firewall settings](mdb-firewall.md) are applied. Your default policies are configured to use recommended security settings. |
 
 ## Enable your standard protection ASR rules
 
@@ -110,3 +110,5 @@ To learn more about ASR rules, see the following articles:
    5. On the **Review + create** step, review the information, and then choose **Create**.
 
 To learn more about controlled folder access, see [Protect important folders with controlled folder access](../defender-endpoint/controlled-folders.md).
+
+
