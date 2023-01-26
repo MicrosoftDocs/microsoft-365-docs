@@ -64,7 +64,7 @@ Use the following instructions for the two admin steps.
 
 Now gradually rolling out in preview, you can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
 - [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
-- [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties).
+- [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 Very similar to [simulation mode for auto-labeling policies for sensitivity labels](apply-sensitivity-label-automatically.md#learn-about-simulation-mode), this addition lets you run the auto-labeling deployment like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the conditions that you defined. You can then refine your conditions for accuracy if needed, and rerun the simulation.
 
