@@ -143,7 +143,7 @@ You can download the files here, [Printer Protection Samples](https://github.com
 
    2. Create policy to allow authorized USB printer only when the machine is Corporate Network OR VPN connected.
 
-      :::image type="content" source="media/audit-write.png" alt-text="This is the deafult audit write access screenshot." lightbox="media/audit-write.png":::
+      :::image type="content" source="media/audit-write.png" alt-text="This is the default audit write access screenshot." lightbox="media/audit-write.png":::
 
    3. Create Default Deny custom policy for any other printers.
 
