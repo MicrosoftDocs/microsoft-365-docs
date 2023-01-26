@@ -60,7 +60,7 @@ Use the following instructions for the two admin steps.
 ## Learn about simulation mode
 
 > [!NOTE]
-> This option is in preview and subject to change.
+> This option is gradually rolling out in preview and subject to change.
 
 Now gradually rolling out in preview, you can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
 - [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
