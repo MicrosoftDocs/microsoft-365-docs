@@ -22,6 +22,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Hunt for ransomware

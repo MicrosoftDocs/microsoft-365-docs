@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -38,6 +38,7 @@ Microsoft 365 Defender can display date and time information using either your l
 - Incidents
 - Automated investigation and remediation, including the action center
 - Advanced hunting results
+- Identity timeline
 
 To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.
 
