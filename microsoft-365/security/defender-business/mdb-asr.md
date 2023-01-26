@@ -26,11 +26,13 @@ Attack surfaces are the places and ways that your organization's network and dev
 
 Defender for Business includes several attack surface reduction capabilities:
 
-- Attack surface reduction rules (also referred to as ASR rules)
-- Controlled folder access
-- Network protection
-- Web protection
-- Firewall protection
+- **Attack surface reduction rules** (also referred to as ASR rules), which prevent specific actions that are commonly associated with malicious activity to run on Windows devices. 
+- **Controlled folder access**, which allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation.
+- **Network protection**, which prevents people from accessing dangerous domains through applications on their Windows and Mac devices. Network protection is also a key component of web content filtering.
+- **Web protection**, which integrates with web browsers and works with network protection to protect against web threats and unwanted content. Web protection includes web content filtering and web threat reports.
+- **Firewall protection**, which determines what network traffic is permitted to flow to or from your organization's devices.
+
+The sections that follow describe how to set up your attack surface reduction capabilities with links to learn more.
 
 ## Enable your standard protection rules
 
@@ -44,7 +46,7 @@ These rules help protect your network and devices without a lot of disruption to
 
 To enable these rules, see [Simplified standard protection option](../defender-endpoint/attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
 
-## View your attack surface reduction report
+### View your attack surface reduction report
 
 1. As a global administrator, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports**.
 
@@ -56,7 +58,7 @@ The report opens and includes three tabs:
 - Configuration, where you can apply attack surface reduction rules to devices
 - Add exclusions, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
 
-## Learn more about attack surface reduction rules
+### Learn more about attack surface reduction rules
 
 More detailed information about attack surface reduction rules is available here:
 
@@ -64,3 +66,8 @@ More detailed information about attack surface reduction rules is available here
 - [ASR rules report](../defender-endpoint/attack-surface-reduction-rules-report.md)
 - [ASR rules reference](../defender-endpoint/attack-surface-reduction-rules-reference.md)
 - [ASR rules deployment overview](../defender-endpoint/attack-surface-reduction-rules-deployment.md)
+
+## Set up controlled folder access
+
+INSTRUCTIONS
+
