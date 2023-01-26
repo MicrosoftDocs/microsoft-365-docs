@@ -113,4 +113,8 @@ To learn more about ASR rules, see the following articles:
 
 To learn more about controlled folder access, see [Protect important folders with controlled folder access](../defender-endpoint/controlled-folders.md).
 
+## Next steps
 
+- [Use your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
+- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [View reports](mdb-reports.md)
