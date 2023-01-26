@@ -32,7 +32,7 @@ Defender for Business includes several attack surface reduction capabilities:
 - **Web protection**, which integrates with web browsers and works with network protection to protect against web threats and unwanted content. Web protection includes web content filtering and web threat reports.
 - **Firewall protection**, which determines what network traffic is permitted to flow to or from your organization's devices.
 
-The sections that follow describe how to set up your attack surface reduction capabilities with links to learn more.
+The sections that follow describe how to set up your attack surface reduction capabilities, beginning with your ASR rules.
 
 ## Enable your standard protection rules
 
