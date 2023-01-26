@@ -147,6 +147,6 @@ You can download the files here, [Printer Protection Samples](https://github.com
 
    3. Create Default Deny custom policy for any other printers.
 
-      :::image type="content" source="images/create-default.png" alt-text="This is create default." lightbox="images/create-default.png":::
+      :::image type="content" source="images/create-default.png" alt-text="This is create default screenshot." lightbox="images/create-default.png":::
 
    Combine these two policy rules into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Scenario%201%20GPO%20Policy%20-%20Prevent%20Write%20and%20Execute%20access%20to%20all%20but%20allow%20specific%20approved%20USBs.xml). See step 4 from the [Deploy using group policy](deploy-and-manage-using-group-policy.md) section to deploy this configuration.
