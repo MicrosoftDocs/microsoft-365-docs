@@ -94,7 +94,7 @@ Here's what is configured when you use the quick setup process for Adaptive Prot
 | Two new DLP policies | Adaptive Protection policy for Endpoint DLP <br><br> - Elevated risk level rule: Blocked <br> - Moderate/Mionr risk level rule: Audit <br> - Policy starts in test mode (audit only) <br><br> Adaptive Protection policy for Teams and Exchange DLP <br><br> - Elevated risk level rule: Blocked <br> - Moderate/Minor risk level rules: Audit <br> - Policy starts in test mode (audit only) |
 |||
 
-Once the quick setup process is started, it may take up to XXXX.....
+Once the quick setup process is started, it may take up to 72 hours before the associated insider risk management and DLP policies are created and you can expect to see Adaptive Protection risk levels and DLP actions applied to applicable user activities.
 
 ### Custom setup
 
@@ -108,8 +108,6 @@ Risk levels are assigned to users when a policy assigned in Adaptive Protection 
 
 - **Users whose activity you want to detect**. This can be all users and groups in your organization or just a subset for specific risk mitigation scenarios or testing purposes.
 - **Activities you consider risky and custom thresholds that influence an activity's risk score**. Risky activities might include emailing people outside your organization or copying files to USB devices.
-
-
 
 #### Step 2: Configure risk level settings
 
