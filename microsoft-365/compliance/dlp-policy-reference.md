@@ -229,7 +229,7 @@ SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videopl
 > [!IMPORTANT]
 > SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
-#### Adaptive Protection in Microsoft Purview
+#### Adaptive Protection in Microsoft Purview (preview)
 
 Adaptive protection integrates Microsoft Purview Insider Risk Management (IRM) risk profiles into DLP policies so that DLP can help protect against dynamically identified risky behaviors. When configured in IRM, the **User's risk level for adaptive protection is** will show up as condition for Exchange Online, Devices, and Teams locations. Refer to [Learn about Adaptive Protection in Data Loss Prevention (preview)](dlp-adaptive-protection-learn.md) for more details.
 
