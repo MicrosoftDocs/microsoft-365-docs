@@ -19,7 +19,7 @@ ms.collection:
 - tier1
 ---
 
-# Understand next-generation configuration settings in Microsoft Defender for Business
+# Understand next-generation protection settings in Microsoft Defender for Business
 
 Next-generation protection in Defender for Business includes robust antivirus and antimalware protection. The default policies are designed to protect your devices and users without hindering productivity. You can also customize the policies to suit your business needs. And, if you're using Microsoft Intune, you can use it to manage your security policies.
 
