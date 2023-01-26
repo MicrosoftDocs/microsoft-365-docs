@@ -65,7 +65,11 @@ These rules help protect your network and devices without a lot of disruption to
 
       Then choose **Next**.
 
-    3. On the **Assignments** step, choose the users or devices to receive the rules. (We recommend selecting **Add all devices**).
+   3. On the **Scope tags** step, choose **Next**.
+
+   4. On the **Assignments** step, choose the users or devices to receive the rules, and then choose **Next**. (We recommend selecting **Add all devices**.)
+
+   5. On the **Review + create** step, review the information, and then choose **Create**.
 
 ### View your attack surface reduction report
 
