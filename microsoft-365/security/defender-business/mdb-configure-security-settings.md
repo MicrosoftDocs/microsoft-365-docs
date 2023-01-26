@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/05/2023
+ms.date: 01/25/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -32,6 +32,7 @@ Security policies to review and configure include:
 
 - **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
 - **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to and from your company's devices
+- **[Attack surface reduction rules](#enable-standard-attack-surface-reduction-rules)**, which help protect your network and devices from cyberthreats and attacks
 - **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
 - **[Advanced features](#review-settings-for-advanced-features)**, such as automated investigation and response and endpoint detection and response (EDR) in block mode
 
@@ -46,10 +47,11 @@ Use this article as a guide to managing your security policies and settings.
 1. [Choose where to manage your security policies and devices](#choose-where-to-manage-security-policies-and-devices).
 2. [Review your next-generation protection policies](#view-or-edit-your-next-generation-protection-policies).
 3. [Review your firewall policies and custom rules](#view-or-edit-your-firewall-policies-and-custom-rules).
-4. [Set up web content filtering](#set-up-web-content-filtering).
-5. [Review settings for advanced features](#review-settings-for-advanced-features).
-6. [View other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
-7. [Proceed to your next steps](#next-steps).
+4. [Enable standard attack surface reduction rules](#enable-standard-attack-surface-reduction-rules).
+5. [Set up web content filtering](#set-up-web-content-filtering).
+6. [Review settings for advanced features](#review-settings-for-advanced-features).
+7. [View other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
+8. [Proceed to your next steps](#next-steps).
 
 
 ## Choose where to manage security policies and devices
@@ -83,6 +85,10 @@ Depending on whether you're using the Microsoft 365 Defender portal or the Micro
 |:---|:---|
 | Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |<ol><li>Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.</li><li>In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.</li><li>Select an operating system tab (such as **Windows clients**).</li><li>Expand **Firewall** to view your list of policies.</li><li>Select a policy to view the details. </li><li>To make changes or to learn more about policy settings, see the following articles:<ul><li>[View or edit device policies](mdb-view-edit-policies.md)</li><li>[Firewall settings](mdb-firewall.md)</li><li>[Manage your custom rules for firewall policies](mdb-custom-rules-firewall.md)</li><ul></li><ol>  |
 | Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) |For help managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). <ol><li>Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in. You're now in the Endpoint Manager admin center.</li><li>Select **Endpoint security**.</li><li>Select **Firewall** to view your policies in that category. Custom rules that are defined for firewall protection are listed as separate policies.</li></ol>|
+
+## Enable standard attack surface reduction rules
+
+[Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md)
 
 ## Set up web content filtering
 
