@@ -81,9 +81,7 @@ These rules help protect your network and devices but shouldn't cause disruption
    - **Configuration**, where you can apply attack surface reduction rules to devices
    - **Add exclusions**, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
 
-### Learn more about attack surface reduction rules
-
-More detailed information about attack surface reduction rules is available here:
+To learn more about ASR rules, see the following articles:
 
 - [Attack surface reduction rules overview](../defender-endpoint/attack-surface-reduction.md)
 - [ASR rules report](../defender-endpoint/attack-surface-reduction-rules-report.md)
@@ -110,3 +108,5 @@ More detailed information about attack surface reduction rules is available here
    4. On the **Assignments** step, choose the users or devices to receive the rules, and then choose **Next**. (We recommend selecting **Add all devices**.)
 
    5. On the **Review + create** step, review the information, and then choose **Create**.
+
+To learn more about controlled folder access, see [Protect important folders with controlled folder access](../defender-endpoint/controlled-folders.md).
