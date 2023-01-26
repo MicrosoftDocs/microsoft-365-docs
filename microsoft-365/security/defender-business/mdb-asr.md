@@ -116,5 +116,5 @@ To learn more about controlled folder access, see [Protect important folders wit
 ## Next steps
 
 - [Use your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [View and manage incidents](mdb-view-manage-incidents.md)
 - [View reports](mdb-reports.md)
