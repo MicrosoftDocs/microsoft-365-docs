@@ -44,7 +44,15 @@ We recommend enabling the following standard protection rules as soon as possibl
 - [Block abuse of exploited vulnerable signed drivers](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 - [Block persistence through WMI event subscription](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
-These rules help protect your network and devices but shouldn't cause disruption for users. **To enable these rules quickly and easily, try the [Simplified standard protection option](../defender-endpoint/attack-surface-reduction-rules-report.md#simplified-standard-protection-option)**. If you prefer, you can set up your ASR rules by using Microsoft Intune instead.
+These rules help protect your network and devices but shouldn't cause disruption for users. **To enable these rules quickly and easily, try the [Simplified standard protection option](../defender-endpoint/attack-surface-reduction-rules-report.md#simplified-standard-protection-option)**. 
+
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Reports** > **Endpoints** > **Attack surface reduction rules report**.
+
+2. Select the **Configuration** tab. 
+
+3. If it's not already selected, select the **Standard protection** option to enable the three recommended standard protection rules to devices. 
+
+If you prefer, you can set up your ASR rules by using Microsoft Intune instead.
 
 ### To set up ASR rules using Intune
 
