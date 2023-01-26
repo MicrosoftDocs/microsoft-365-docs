@@ -67,7 +67,7 @@ The setup wizard is designed to help you set up and configure Defender for Busin
 4. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can also create your own security policies. See [View and edit your security policies and settings](mdb-configure-security-settings.md).
 
    > [!NOTE]
-   > If you're already using Intune to manage your devices and security policies, you can continue using the Microsoft Endpoint Manager admin center. See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
+   > If you're already using Intune to manage your devices and security policies, you can continue using it. See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
 
 
 ## What is automatic onboarding?

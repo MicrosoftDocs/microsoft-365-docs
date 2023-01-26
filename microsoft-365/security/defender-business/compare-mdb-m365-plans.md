@@ -41,7 +41,7 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 
 ## Compare Defender for Business to Microsoft 365 Business Premium
 
-Defender for Business provides advanced security protection for your devices, with next-generation protection, endpoint detection and response, and threat & vulnerability management. Microsoft 365 Business Premium includes Defender for Business and provides additional cybersecurity and productivity capabilities.
+Defender for Business provides advanced security protection for your devices, with next-generation protection, endpoint detection and response, and threat & vulnerability management. Microsoft 365 Business Premium includes Defender for Business and provides more cybersecurity and productivity capabilities.
 
 :::image type="content" source="media/mdb-m365bp-comparison.png" alt-text="Diagram comparing Defender for Business to Microsoft 365 Business Premium.":::
 
@@ -76,7 +76,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 |Partner APIs|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
 |[Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants) |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |:::image type="content" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 
-(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or by using Microsoft Intune, managed in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or by using Microsoft Intune ([https://intune.microsoft.com](https://intune.microsoft.com)).
 
 (<a id="fn2">2</a>) Intune is required to configure and manage [ASR rules](../defender-endpoint/attack-surface-reduction.md).
 
@@ -91,7 +91,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 
 (<a id="fn6">6</a>) In Defender for Business, threat analytics are optimized for small and medium-sized businesses.
 
-(<a id="fn7">7</a>) To onboard servers, an additional license is required. See the following articles:
+(<a id="fn7">7</a>) To onboard servers, another license is required. See the following articles:
 - [Onboard devices to Defender for Business](mdb-onboard-devices.md)
 - [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md)
 
