@@ -37,7 +37,6 @@ Several reports are available in the Microsoft 365 Defender portal ([https://sec
 | **Device control** | The device control report shows information about media usage, such as the use of removable storage devices in your organization. |
 | **Attack surface reduction rules** <br/>*(NEW!)* | The attack surface reduction rules report has three tabs: **Detections** (to show blocked or audited detections); **Configuration** (enabling you to implement standard protection rules quickly, by using a single toggle); and **Add exclusions** (enabling you to define exclusions, if needed). To access this report, in the navigation pane, choose **Reports** > **Endpoints** > Attack surface reduction rules**. <br/><br/>To learn more, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md). |
 
-
 ## See also
 
 - [Get started using Defender for Business](mdb-get-started.md)
