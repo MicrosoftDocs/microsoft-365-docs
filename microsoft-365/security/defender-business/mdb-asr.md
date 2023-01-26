@@ -46,7 +46,7 @@ These rules help protect your network and devices but shouldn't cause disruption
 
 ### To set up ASR rules using Intune
 
-1. As a global administrator, in the Microsoft Intune ([https://intune.microsoft.com/](https://intune.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
+1. As a global administrator, in the Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
 
 2. Select an existing policy, or choose **Create policy** to create a new policy.
 
@@ -81,8 +81,6 @@ These rules help protect your network and devices but shouldn't cause disruption
    - **Configuration**, where you can apply attack surface reduction rules to devices
    - **Add exclusions**, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
 
-
-
 ### Learn more about attack surface reduction rules
 
 More detailed information about attack surface reduction rules is available here:
@@ -94,5 +92,21 @@ More detailed information about attack surface reduction rules is available here
 
 ## Set up controlled folder access
 
-INSTRUCTIONS
+1. As a global administrator, in the Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
 
+2. Select an existing policy, or choose **Create policy** to create a new policy.
+
+   - For **Platform**, choose **Windows 10 and later**.
+   - For Profile, select **Attack Surface Reduction Rules**, and then choose **Create**.
+
+3. Set up your policy as follows:
+
+   1. Specify a name and description, and then choose **Next**.
+   
+   2. Scroll down, and set **Enable Controlled FOlder Access** to **Enabled**. Then choose **Next**.
+
+   3. On the **Scope tags** step, choose **Next**.
+
+   4. On the **Assignments** step, choose the users or devices to receive the rules, and then choose **Next**. (We recommend selecting **Add all devices**.)
+
+   5. On the **Review + create** step, review the information, and then choose **Create**.
