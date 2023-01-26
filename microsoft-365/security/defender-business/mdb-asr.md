@@ -103,7 +103,7 @@ To learn more about ASR rules, see the following articles:
 
    1. Specify a name and description, and then choose **Next**.
    
-   2. Scroll down, and set **Enable Controlled FOlder Access** to **Enabled**. Then choose **Next**.
+   2. Scroll down, and set **Enable Controlled Folder Access** to **Enabled**. Then choose **Next**.
 
    3. On the **Scope tags** step, choose **Next**.
 
