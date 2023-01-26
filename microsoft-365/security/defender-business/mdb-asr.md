@@ -22,8 +22,6 @@ audience: Admin
 
 Attack surfaces are the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Microsoft Defender for Business includes several attack surface reduction capabilities to help protect your environment. This article provides an overview of these capabilities, and includes links to more detailed information.
 
-## Attack surface reduction capabilities in Defender for Business
-
 Defender for Business includes several attack surface reduction capabilities:
 
 - **Attack surface reduction rules** (also referred to as ASR rules) prevent specific actions that are commonly associated with malicious activity to run on Windows devices. 
@@ -42,7 +40,7 @@ We recommend enabling the following standard protection rules as soon as possibl
 - [Block abuse of exploited vulnerable signed drivers](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 - [Block persistence through WMI event subscription](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
-These rules help protect your network and devices without a lot of disruption to users. To enable these rules quickly and easily, try the [Simplified standard protection option](../defender-endpoint/attack-surface-reduction-rules-report.md#simplified-standard-protection-option). You can also set up your ASR rules by using Microsoft Intune.
+These rules help protect your network and devices without a lot of disruption to users. **To enable these rules quickly and easily, try the [Simplified standard protection option](../defender-endpoint/attack-surface-reduction-rules-report.md#simplified-standard-protection-option)**. You can also set up your ASR rules by using Microsoft Intune.
 
 ### To set up ASR rules using Intune
 
