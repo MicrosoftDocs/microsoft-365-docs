@@ -34,7 +34,7 @@ Adaptive Protection helps mitigate these potential risks by using the following 
 
 Adaptive Protection dynamically assigns appropriate DLP policies to users based on the risk levels defined and analyzed by the machine learning models in insider risk management. With this new capability, static DLP policies become adaptive based on user context, ensuring that the most effective policy, such as blocking data sharing, is applied only to high-risk users while low-risk users can maintain productivity. The policy controls constantly adjust, so when a user's risk level changes, an appropriate policy is dynamically applied to match the new risk level.
 
-Watch the following video to learn more about the Adaptive Protection workflow:
+Watch the following video for a summary of how Adaptive Protection can help identify and mitigate the most critical risks in your organization:
 
 PLACEHOLDER FOR AP VIDEO - RED TIGER VIDEO LINK NEEDED FROM TINA
 
@@ -89,7 +89,7 @@ Here's what is configured when you use the quick setup process for Adaptive Prot
 |:-------|:----------------|
 | Insider risk settings (if not already configured) | - Privacy: Show anonymized versions of user names <br> - Policy timeframes: Defaults <br> - Policy indicators: A subset of Office indicators (you can view in insider risk management settings) <br> - Risk score boosters: All <br> - Intelligent Detections: Alert Volume = Default volume <br> - Analytics: On <br> - Admin notifications: Send notification email when first alert is generated to all |
 | Insider risk settings (if already configured) | - Policy indicators: Office indicators not already configured (you can view in insider risk management settings) <br> - Analytics: On |
-| A new insider risk policy | - Policy template: [General data leaks](/microsoft-365/compliance/insider-risk-management-policy-templates#data-leaks) <br> - Policy name: Adaptive Protection policy for Insider Risk Management <br> - Policy scope for users and groups: All users and groups <br> - Priority content: None <br> - Triggering events: Selected exfiltration events (you can view in insider risk management settings) <br> - Policy indicators: A subset of Office indicators (you can view in insider risk management settings) <br> - Risk score boosters: Activity is above user's usual activity for that day |
+| A new insider risk policy | - Policy template: [Data leaks](/microsoft-365/compliance/insider-risk-management-policy-templates#data-leaks) <br> - Policy name: Adaptive Protection policy for Insider Risk Management <br> - Policy scope for users and groups: All users and groups <br> - Priority content: None <br> - Triggering events: Selected exfiltration events (you can view in insider risk management settings) <br> - Policy indicators: A subset of Office indicators (you can view in insider risk management settings) <br> - Risk score boosters: Activity is above user's usual activity for that day |
 | Adaptive Protection risk levels | - Elevated risk level: Users must have at least 3 high severity exfiltration sequences <br> - Moderate risk level: Users must have at least 2 high severity activities (excluding some types of downloads) <br> - Minor risk level: Users must have at least 1 high severity activity (excluding some types of downloads) |
 | Two new DLP policies | Adaptive Protection policy for Endpoint DLP <br><br> - Elevated risk level rule: Blocked <br> - Moderate/Mionr risk level rule: Audit <br> - Policy starts in test mode (audit only) <br><br> Adaptive Protection policy for Teams and Exchange DLP <br><br> - Elevated risk level rule: Blocked <br> - Moderate/Minor risk level rules: Audit <br> - Policy starts in test mode (audit only) |
 |||
@@ -102,16 +102,22 @@ The custom setup option allows you customize the insider risk management policy,
 
 Complete the following steps to configure Adaptive Protection using the custom setup:
 
-#### Step 1: Create insider risk management policy or choose an existing one
+#### Step 1: Create insider risk management policy
 
-Risk levels are assigned to users when a policy assigned in Adaptive Protection either detects user activity or generates alerts that match the risk level conditions you define in the next step. You can either use an existing insider risk management policy or create a new one. Your insider risk management policy for Adaptive Protection should include:
+Risk levels are assigned to users when a policy assigned in Adaptive Protection either detects user activity or generates alerts that match the risk level conditions you define in the next step. If you don't want to use an existing insider risk management policy (selected in Step 2), you must create a new policy. Your insider risk management policy for Adaptive Protection should include:
 
 - **Users whose activity you want to detect**. This can be all users and groups in your organization or just a subset for specific risk mitigation scenarios or testing purposes.
 - **Activities you consider risky and custom thresholds that influence an activity's risk score**. Risky activities might include emailing people outside your organization or copying files to USB devices.
 
+Select **Create insider risk policy** to launch the new policy wizard.
+
 #### Step 2: Configure risk level settings
 
-On the **Risk levels for Adaptive Protection** tab, select the IRM policy you want to use for Adaptive Protection. Then decide whether to use the built-in risk level conditions or create your own. Don’t forget to click 'Save' at the bottom of the page.
+Select the **Risk levels for Adaptive Protection** tab. You'll start by selecting the insider risk management policy you want to use for Adaptive Protection. This can either be the new policy you created in Step 1 or an existing policy you've already configured.
+
+
+
+Then decide whether to use the built-in risk level conditions or create your own. Don’t forget to click 'Save' at the bottom of the page.
 
 #### Step 3: Create or edit a DLP policy
 
