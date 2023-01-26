@@ -47,7 +47,7 @@ The following table lists the basic requirements you need to configure and use D
 
 (<a id="fn1">1</a>) Microsoft Intune is not included in the standalone version of Defender for Business. Intune can be added onto Defender for Business. Intune is included in Microsoft 365 Business Premium.
 
-(<a id="fn2">2</a>) To onboard servers, we recommend using [Microsoft Defender for Business servers](get-defender-business-servers.md). Alternately, you could use [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction); however, your Defender for Business experience could change when you add an enterprise plan, such as Defender for Servers Plan 1 or Plan 2. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) and [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+(<a id="fn2">2</a>) To onboard servers, we recommend using [Microsoft Defender for Business servers](get-defender-business-servers.md). Alternately, you could use [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers). To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions?](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) and [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 > [!NOTE]
 > [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) is used to manage user permissions and device groups. Azure AD is included in your Defender for Business subscription. 
@@ -56,5 +56,6 @@ The following table lists the basic requirements you need to configure and use D
 
 ## Next steps
 
-Go to [Step 2: Assign roles and permissions in Defender for Business](mdb-roles-permissions.md).
- 
+- If you don't already have Defender for Business, see [Get and provision Microsoft Defender for Business](get-defender-business.md).
+- If you're starting a trial subscription, see the [Trial user guide: Microsoft Defender for Business](trial-playbook-defender-business.md).
+- If you're ready to set up Defender for Business for your organization, see [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).

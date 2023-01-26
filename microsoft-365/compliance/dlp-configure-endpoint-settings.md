@@ -77,6 +77,9 @@ These Windows versions support advanced classification scanning and protection:
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
+> [!TIP]
+> Advanced classification must be enabled to see contextual text (in preview)  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+
 ### File path exclusions
 
 Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
@@ -234,7 +237,7 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 #### Service domains
 
 > [!NOTE]
-> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installed.
+> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md) installed.
 
 You can control whether sensitive files that are protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
@@ -318,7 +321,7 @@ For the print, copy data and save actions, each website must be listed in a webs
 
 ##### Supported syntax for designating websites in a website group
 
-You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+Please do not add protocol, e.g. https://, file:// into the URL. You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
 
 - use `*` as a wildcard to specify all domains or all subdomains
 - use `/` as a terminator at the end of a URL to scope to that specific site only.
@@ -378,20 +381,21 @@ Use this setting to define groups of printers that you want to assign policy act
 
 This feature is available for devices running any of the following Windows versions:  
 
-- Windows 10 and later (20H2, 21H1, 21H2) 
-- Win 11 21H2, 22H2
-- Windows Server 2022
+- Windows 10 and later (20H2, 21H1, 21H2, and later) - [KB5020030](https://support.microsoft.com/en-us/topic/november-15-2022-kb5020030-os-builds-19042-2311-19043-2311-19044-2311-and-19045-2311-preview-237a9048-f853-4e29-a3a2-62efdbea95e2)
+- Win 11 21H2, 22H2 - [KB5019157](https://support.microsoft.com/en-us/topic/november-15-2022-kb5019157-os-build-22000-1281-preview-d64fb317-3435-49ff-b2c4-d0356a51a6b0)
+- Windows Server 2022 - [KB5020032](https://support.microsoft.com/en-us/topic/november-22-2022-kb5020032-os-build-20348-1311-preview-7ca1be57-3555-4377-9eb1-0e4d714d9c68)
 
 You define a printer by these parameters:
 
 - Friendly printer name - Get the Friendly printer name value from the printer device property details in device manager.
-- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
-- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+- USB printer - A printer connected through USB port of a computer. You can select this if you want to enforce any USB printer and leave USB product ID and USB vendor ID unselected, you can also define specific USB printer through USB product ID and USB vendor ID.
+	- USB product ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
+	- USB vendor ID - Get the Device Instance path value from the printer device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - IP range
-- Print to file - For example Microsoft Print to PDF or Microsoft XPS Document Writer.
+- Print to file - Microsoft Print to PDF or Microsoft XPS Document Writer. If you only want to enforce Microsoft Print to PDF, you should use Friendly printer name with 'Microsoft Print to PDF'.
 - Universal print deployed on a printer - See, [Set up Universal Print](/universal-print/fundamentals/universal-print-getting-started.md) for more information on universal printers
 - Corporate printer - is a print queue shared through on-premises Windows print server in your domain. Its path might look like  \\print-server\contoso.com\legal_printer_001
-- Print to local
+- Print to local: Any printer connecting through Microsoft print port but not any of above type, for example print through remote desktop or redirect printer.
 
 You assign each printer in the group a **Display name**. The name only appears in the Purview console. So, continuing with the example, you would create a printer group named **Legal printers** and add individual printers (with an alias) by their friendly name, like `legal_printer_001`, `legal_printer_002` and `legal_color_printer`.
 

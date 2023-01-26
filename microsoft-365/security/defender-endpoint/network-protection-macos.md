@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 11/22/2022
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -18,7 +19,6 @@ ms.topic: overview
 ms.collection:
 - m365-security
 - tier2
-ms.date:
 search.appverid: met150
 ---
 
@@ -53,7 +53,7 @@ Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/wi
 
 - You can run your corporate VPN in tandem or "side by side" with network protection. Currently, no VPN conflicts are identified. If you do experience conflicts, you can provide feedback through the feedback channel listed at the bottom of this page.
   - Web content filtering is supported with network protection for macOS.
-  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 feature, such as Microsoft Defender for Cloud Applications or Custom Indicators currently also require network protection.
+  - If network protection is configured and active on the device, web content filtering (WCF) policies created in the MDEP Portal are respected in browsers, including Chromium Microsoft Edge for macOS. Web content filtering in Microsoft Edge on Mac currently requires network protection; other E5 feature, such as Microsoft Defender for Cloud Apps or Custom Indicators currently also require network protection.
 
 ### Known issues
 
@@ -84,7 +84,7 @@ mdatp health --field release_ring
 If your device isn't already in the External(Preview) update channel, execute the following command from the Terminal. The channel update takes effect next time the product starts (when the next product update is installed or when the device is rebooted).
 
 ```bash
-defaults write com.microsoft.autoupdate2 ChannelName -string External
+defaults write com.microsoft.autoupdate2 ChannelName -string Preview
 ```
 
 Alternatively, if you are in a managed environment (JAMF or Intune), you can configure the device group remotely. For more information, see [Set preferences for Microsoft 365 Defender for Endpoint on macOS](mac-preferences.md).
@@ -295,9 +295,9 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
 
-### Microsoft Defender for Cloud Applications
+### Microsoft Defender for Cloud Apps
 
-The Microsoft Defender for Cloud Applications / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
+The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
 
 :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection monitored apps.":::
 
@@ -319,10 +319,10 @@ If the end user encounters a _block_, the user will have two possible resolution
 
 #### User education
 
-- **For toast message experience**: Press the toast message itself. End user will be redirected to a custom redirect URL set globally in Microsoft Defender for Cloud Applications (More information at the bottom of this page)
+- **For toast message experience**: Press the toast message itself. End user will be redirected to a custom redirect URL set globally in Microsoft Defender for Cloud Apps (More information at the bottom of this page)
 
 > [!NOTE]
-> Tracking bypasses per app** – You can track how many users have bypassed the warning in the _Application_ page in Microsoft Defender for Cloud Applications.
+> Tracking bypasses per app** – You can track how many users have bypassed the warning in the _Application_ page in Microsoft Defender for Cloud Apps.
 
   :::image type="content" source="images/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection cloud app security overview.":::
 
@@ -330,7 +330,7 @@ If the end user encounters a _block_, the user will have two possible resolution
 
 ### End user education center SharePoint site template
 
-For many organizations, it's important to take the cloud controls provided by Microsoft Defender for Cloud Applications, and to not only set limitations on end users when needed, but to also educate and coach them about:
+For many organizations, it's important to take the cloud controls provided by Microsoft Defender for Cloud Apps, and to not only set limitations on end users when needed, but to also educate and coach them about:
 
 - the specific incident
 - why it has happened
@@ -348,15 +348,15 @@ For this page, we recommend that your organization uses a basic SharePoint site.
 ### Important things to know
 
 1. It can take up to two hours (typically less) for app domains to propagate and to be update in the endpoint devices, after it's marked as _Monitored_.
-2. By default, action will be taken for all apps and domains that were marked as Monitored in Microsoft Defender for Cloud Applications portal for all the onboarded endpoints in the organization.
-3. Full URLs are currently not supported and won't be sent from Microsoft Defender for Cloud Applications to Microsoft 365 Defender for Endpoint, if any full URLs are listed under Microsoft Defender for Cloud Applications monitored apps, hence, user won't get warned on access attempt (for example, google.com/drive isn't supported, while drive.google.com is supported).
+2. By default, action will be taken for all apps and domains that were marked as Monitored in Microsoft Defender for Cloud Apps portal for all the onboarded endpoints in the organization.
+3. Full URLs are currently not supported and won't be sent from Microsoft Defender for Cloud Apps to Microsoft 365 Defender for Endpoint, if any full URLs are listed under Microsoft Defender for Cloud Apps monitored apps, hence, user won't get warned on access attempt (for example, google.com/drive isn't supported, while drive.google.com is supported).
 
 No End-user notification on third party browsers? Check your toast message settings
 
 ## See also
 
 - [Microsoft 365 Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-- [Microsoft 365 Defender for Endpoint integration with Microsoft Microsoft 365 Defender for Cloud Applications](/defender-cloud-apps/mde-integration)
+- [Microsoft 365 Defender for Endpoint integration with Microsoft Microsoft 365 Defender for Cloud Apps](/defender-cloud-apps/mde-integration)
 - [Get to know the innovative features in Microsoft Edge](https://www.microsoft.com/edge/features)
 - [Protect your network](network-protection.md)
 - [Turn on network protection](enable-network-protection.md)

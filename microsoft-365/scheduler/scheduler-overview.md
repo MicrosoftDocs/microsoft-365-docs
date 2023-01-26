@@ -12,6 +12,9 @@ description: "Overview of Scheduler for Microsoft 365."
 
 # Welcome to Scheduler for Microsoft 365
 
+> [!IMPORTANT]
+> Scheduler for Microsoft 365 will stop working in August 2023. After that date, Scheduler won't be able to create or modify any meeting requests.
+
 Scheduler for Microsoft 365 is a service that lets you delegate meeting and appointment scheduling to Cortana, your digital personal assistant. 
 
 Scheduler uses natural language processing to interpret emails sent to Cortana (cortana@yourdomain.com) to find a time to meet and send calendar invitations for the meeting organizer.   
