@@ -20,17 +20,17 @@ audience: Admin
 
 # Attack surface reduction capabilities in Microsoft Defender for Business
 
-Attack surfaces are the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Microsoft Defender for Business includes attack surface reduction capabilities to help protect your environment. This article provides an overview of attack surface reduction capabilities in Defender for Business, and includes links to more detailed information.
+Attack surfaces are the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Microsoft Defender for Business includes several attack surface reduction capabilities to help protect your environment. This article provides an overview of these capabilities, and includes links to more detailed information.
 
 ## Attack surface reduction capabilities in Defender for Business
 
 Defender for Business includes several attack surface reduction capabilities:
 
-- **Attack surface reduction rules** (also referred to as ASR rules), which prevent specific actions that are commonly associated with malicious activity to run on Windows devices. 
-- **Controlled folder access**, which allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation.
-- **Network protection**, which prevents people from accessing dangerous domains through applications on their Windows and Mac devices. Network protection is also a key component of web content filtering.
-- **Web protection**, which integrates with web browsers and works with network protection to protect against web threats and unwanted content. Web protection includes web content filtering and web threat reports.
-- **Firewall protection**, which determines what network traffic is permitted to flow to or from your organization's devices.
+- **Attack surface reduction rules** (also referred to as ASR rules) prevent specific actions that are commonly associated with malicious activity to run on Windows devices. 
+- **Controlled folder access** allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation.
+- **Network protection** prevents people from accessing dangerous domains through applications on their Windows and Mac devices. Network protection is also a key component of [web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering).
+- **Web protection** integrates with web browsers and works with network protection to protect against web threats and unwanted content. Web protection includes web content filtering and web threat reports.
+- **Firewall protection** determines what network traffic is permitted to flow to or from your organization's devices.
 
 The sections that follow describe how to set up your attack surface reduction capabilities, beginning with your ASR rules.
 
@@ -54,9 +54,9 @@ To enable these rules, see [Simplified standard protection option](../defender-e
 
 The report opens and includes three tabs:
 
-- Detections, where you can view detections that occurred as a result of attack surface reduction rules
-- Configuration, where you can apply attack surface reduction rules to devices
-- Add exclusions, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
+- **Detections**, where you can view detections that occurred as a result of attack surface reduction rules
+- **Configuration**, where you can apply attack surface reduction rules to devices
+- **Add exclusions**, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
 
 ### Learn more about attack surface reduction rules
 
