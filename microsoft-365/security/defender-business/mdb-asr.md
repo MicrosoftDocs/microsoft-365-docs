@@ -20,15 +20,15 @@ audience: Admin
 
 # Attack surface reduction capabilities in Microsoft Defender for Business
 
-Think of your attack surfaces as all the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Unsecure devices, unrestricted access to any URL on a company device, and allowing any type of app or script to run on company devices are all examples of attack surfaces. They leave your company vulnerable to cyberattacks. 
+Your attack surfaces as all the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Unsecured devices, unrestricted access to any URL on a company device, and allowing any type of app or script to run on company devices are all examples of attack surfaces. They leave your company vulnerable to cyberattacks. 
 
-To help protect your network and devices, Microsoft Defender for Business includes attack surface reduction capabilities. This article provides an overview of those capabilities, and includes links to more detailed information.
+To help protect your network and devices, Microsoft Defender for Business includes several attack surface reduction capabilities. This article provides an overview of those capabilities, and includes links to more detailed information.
 
 ## Attack surface reduction in Defender for Business
 
 The following table summarizes attack surface reduction capabilities in Defender for Business, and how to set them up:
 
-| Capability | What to do |
+| Capability | Setup |
 |:---|:---|
 | **Attack surface reduction rules**. <br/> Also referred to as ASR rules, attack surface reduction rules prevent specific actions that are commonly associated with malicious activity to run on Windows devices. | See [Enable your standard protection ASR rules](#enable-your-standard-protection-asr-rules) (in this article). |
 | **Controlled folder access** <br/>Controlled folder access allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. | See [Set up controlled folder access](#set-up-controlled-folder-access) (in this article). |
