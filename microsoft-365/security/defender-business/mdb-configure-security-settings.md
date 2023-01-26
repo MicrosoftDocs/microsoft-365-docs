@@ -56,21 +56,21 @@ Use this article as a guide to managing your security policies and settings.
 
 ## Choose where to manage security policies and devices
 
-Defender for Business features a [simplified configuration process](mdb-simplified-configuration.md) that helps streamline the setup and configuration process. If you select the simplified configuration process, you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)). However, you're not limited to this option. If you've been using Microsoft Intune, you can keep using the Microsoft Endpoint Manager admin center.
+Defender for Business features a [simplified configuration process](mdb-simplified-configuration.md) that helps streamline the setup and configuration process. If you select the simplified configuration process, you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)). However, you're not limited to this option. If you've been using Microsoft Intune, you can keep using Intune.
 
 The following table can help you choose where to manage your security policies and devices.
 
 | Option | Description |
 |:---|:---|
 | **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) is a one-stop shop for managing your company's devices, security policies, and security settings. You can access your security policies and settings, use the [Microsoft Defender Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) all in one place. <p>If you're using Intune, devices that you onboard to Defender for Business and your security policies are visible in the Endpoint Manager admin center. To learn more, see the following articles:<ul><li>[How default settings in Defender for Business correspond to settings in Microsoft Intune](mdb-next-gen-configuration-settings.md#how-default-settings-in-defender-for-business-correspond-to-settings-in-microsoft-intune)</li><li>[Firewall in Defender for Business](mdb-firewall.md)</li></ul>   |
-| **Use the Microsoft Endpoint Manager admin center** | If your company is already using Intune to manage security policies, you can continue using the Endpoint Manager admin center to manage your devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <p>If you decide to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you'll be prompted to delete any existing security policies in Intune to avoid [policy conflicts](mdb-troubleshooting.yml) later. |
+| **Use Intune** | If your company is already using Intune to manage security policies, you can continue using the Endpoint Manager admin center to manage your devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <p>If you decide to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you'll be prompted to delete any existing security policies in Intune to avoid [policy conflicts](mdb-troubleshooting.yml) later. |
 
 > [!IMPORTANT]
 > If you're managing security policies in the Microsoft 365 Defender portal, you can *view* those policies in the Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), where they're listed as **Antivirus** or **Firewall** policies. When you view your firewall policies in the admin center, you'll see two policies listed: one policy for firewall protection and another for custom rules.
 
 ## View or edit your next-generation protection policies
 
-Depending on whether you're using the Microsoft 365 Defender portal or the Microsoft Endpoint Manager admin center to manage your next-generation protection policies, use one of the following procedures:
+Depending on whether you're using the Microsoft 365 Defender portal or Intune to manage your next-generation protection policies, use one of the following procedures:
 
 | Portal | Procedure |
 |:---|:---|
@@ -79,7 +79,7 @@ Depending on whether you're using the Microsoft 365 Defender portal or the Micro
 
 ## View or edit your firewall policies and custom rules
 
-Depending on whether you're using the Microsoft 365 Defender portal or the Microsoft Endpoint Manager admin center to manage your firewall protection, use one of the following procedures.
+Depending on whether you're using the Microsoft 365 Defender portal or Intune to manage your firewall protection, use one of the following procedures.
 
 | Portal | Procedure |
 |:---|:---|
