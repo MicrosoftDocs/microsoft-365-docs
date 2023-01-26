@@ -49,7 +49,7 @@ sections:
 
           Fortunately, policy conflicts can be resolved by taking one or more of the following actions:
 
-          - Delete your existing policies in the Endpoint Manager admin center
+          - Delete your existing policies in the Intune admin center
           - See [Troubleshoot policies in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)
 
           See the following articles to learn more about your security policies in Defender for Business:
