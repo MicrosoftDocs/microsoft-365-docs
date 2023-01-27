@@ -7,11 +7,11 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 01/27/2022
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.reviewer: inbadian
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
 - m365-security
