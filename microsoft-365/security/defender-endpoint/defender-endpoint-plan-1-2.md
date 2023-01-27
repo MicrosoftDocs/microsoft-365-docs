@@ -12,7 +12,7 @@ ms.date: 01/25/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.reviewer: shlomi, efratka
+ms.reviewer: shlomiakirav, efratka
 f1.keywords: NOCSH  
 ms.collection: 
 - m365-security
