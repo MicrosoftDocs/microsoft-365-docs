@@ -62,7 +62,7 @@ search.appverid: met150
 |id|String|[machine](machine.md) identity.|
 |computerDnsName|String|[machine](machine.md) fully qualified name.|
 |firstSeen|DateTimeOffset|First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.|
-|lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours.|
+|lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours. <br> NOTE: This property does not correspond to the lastseen value in the UI. It is pertains to the last device update.|
 |osPlatform|String|Operating system platform.|
 |onboardingstatus|String|Status of machine onboarding. Possible values are: "onboarded", "CanBeOnboarded", "Unsupported", and "InsufficientInfo".|
 |osProcessor|String|Operating system processor. Use osArchitecture property instead.|

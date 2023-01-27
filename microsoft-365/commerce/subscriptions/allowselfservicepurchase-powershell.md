@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, pablom
+ms.reviewer: prlachhw, pablom
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -102,6 +102,7 @@ The following table lists the available products and their **ProductId**. It als
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
 | Visio Plan 1* | CFQ7TTC0HD33 | No |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |
+| Viva Goals | CFQ7TTC0PW0V | Yes |
 | Windows 365 Enterprise | CFQ7TTC0HHS9 | No |
 | Windows 365 Business | CFQ7TTC0J203 | No |
 | Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 | No |

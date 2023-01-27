@@ -42,6 +42,9 @@ This topic describes how to deploy Microsoft Defender for Endpoint on macOS thro
 
 Before you get started, see [the main Microsoft Defender for Endpoint on macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.
 
+> [!NOTE]
+> Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
+
 ## Overview
 
 The following table summarizes the steps you would need to take to deploy and manage Microsoft Defender for Endpoint on Macs, via Intune. More detailed steps are available below.
@@ -202,7 +205,7 @@ Follow the instructions for [Onboarding blob](#onboarding-blob) from above, usin
 
 Download [**background_services.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/background_services.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "Defender for Endpoint Notifications" as profile name, and downloaded **notif.mobileconfig** as Configuration profile name.
+Follow the instructions for [Onboarding blob](#onboarding-blob) from above, using "Defender for Background Services" as profile name, and downloaded **background_services.mobileconfig** as Configuration profile name.
 
 ### View Status
 

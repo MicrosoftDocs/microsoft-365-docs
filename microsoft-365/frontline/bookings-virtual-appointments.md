@@ -1,7 +1,7 @@
 ---
 title: Virtual Appointments with Microsoft Teams and the Bookings app
-author: lanachin
-ms.author: v-lanachin
+author: samanro
+ms.author: samanro
 manager: samanro
 audience: ITPro
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.collection:
   - highpri
   - EngageScoreSep2022
   - m365initiative-meetings
-ms.reviewer: 
+ms.reviewer: megano
 description: Learn how to schedule, manage, and conduct virtual appointments using the Bookings app in Teams.
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/05/2022
+ms.date: 01/05/2023
 ---
 
 # Virtual Appointments with Microsoft Teams and the Bookings app
@@ -42,8 +42,6 @@ The [Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e85
 The Bookings app makes it easy to manage complex scheduling demands of any organization. Schedulers can manage multiple department and staff calendars, as well as communications with internal and external attendees, from a single experience.
 
 The virtual appointments are held through Microsoft Teams meetings, which offer robust video conferencing capabilities. For example, a doctor can share their screen and review test results with a patient. Or, a banking advisor can request electronic signatures on documents, allowing them to close transactions remotely.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
 With Bookings, you get an experience that's tailored to your industry. Here's a few examples of how you can use it in your organization:
 
@@ -101,6 +99,9 @@ You can configure options such as whether attendees can [join from a a desktop o
 ##### Set up SMS text notifications
 
 ![Information icon](media/info.png) **This feature is moving to [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview). Users can continue using this feature during the preview period. After the preview, users need a Teams Premium license.**
+
+> [!NOTE]
+> We'll be providing unlimited SMS notifications through March 1, 2023 (previously January 31, 2023) for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide additional details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 

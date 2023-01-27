@@ -6,7 +6,6 @@ f1.keywords:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 04/27/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -36,7 +35,7 @@ In some cases, you may have a set of custodians that you've identified and have 
 
 To view the custodian hold policy:
 
-1. In the Microsoft Purview compliance portal, select **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the Microsoft Purview compliance portal, select **eDiscovery > Premium** to display the list of cases in your organization.
 
 2. Go to the **Sources** tab to add custodians within your case. To learn how you can add and place custodians on hold within an eDiscovery (Premium) case, see [Add Custodians to a case](ediscovery-add-custodians-to-case.md). If you have already added custodians and placed them on hold, go to step 3.
 
@@ -49,12 +48,11 @@ To view the custodian hold policy:
 When you create a hold, you have the following options to scope the content that is held in the specified content locations:
 
 - You create an infinite hold where all content is placed on hold. Alternatively, you can create a query-based hold where only content that matches a search query is placed on hold.
-  
 - You can specify a date range to hold only the content that was sent, received, or created within that date range. Alternatively, you can hold all content regardless of when it was sent, received, or created.
 
 To create a non-custodial hold for an eDiscovery (Premium) case:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>, select **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">compliance portal</a>, select **eDiscovery > Premium** to display the list of cases in your organization.
   
 2. Select **Open** next to the case that you want to create the holds in.
   
@@ -73,7 +71,7 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
    1. **Exchange email** - select **Choose users, groups, or teams** and then select **Choose users, groups, or teams** again to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft 365 Group or a Microsoft Team. Select the user, group, team check box, select **Choose**, and then select **Done**.
 
       > [!NOTE]
-      > When you click **Choose users, groups, or teams** to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box.
+      > When you select **Choose users, groups, or teams** to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box.
 
    1. **SharePoint Sites** - select **Choose sites** and then select **Choose sites** again to specify SharePoint and OneDrive for Business sites to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft 365 Group or a Microsoft Team. Select **Choose**, and then select **Done**.
 
@@ -90,7 +88,7 @@ To create a non-custodial hold for an eDiscovery (Premium) case:
 
     - Select  **Add** conditions to add one or more conditions to narrow the search query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example, you can specify a date range so that email or site documents that were created within the date ranged are placed on hold. A condition is logically connected to the keyword query (specified in the keyword box) by the AND operator. That means that items have to satisfy both the keyword query and the condition to be placed on hold.
 
-     For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search](/office365/SecurityCompliance/keyword-queries-and-search-conditions).
+     For more information about creating a search query and using conditions, see [Keyword queries and search conditions for Content Search](/microsoft-365/compliance/ediscovery-keyword-queries-and-search-conditions).
 
 11. After configuring a query-based hold, select **Next**.
 
