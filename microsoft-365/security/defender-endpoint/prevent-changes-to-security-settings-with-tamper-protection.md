@@ -9,7 +9,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 01/11/2023
+ms.date: 01/27/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -65,10 +65,9 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 > 
 > Tamper protection is part of anti-tampering capabilities that include [standard protection attack surface reduction rules](attack-surface-reduction-rules-reference.md).
 > 
-> If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
+> If you're using Microsoft Intune to manage Defender for Endpoint settings, we recommend setting [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices, and deploy using Intune.
 >
 > When tamper protection is turned on, tamper protected settings cannot be changed from their default value. Changes might appear to be successful in Intune, but will not actually be allowed by tamper protection. For the most current list of tamper protected settings, contact support.
-
 
 ## How tamper protection works
 
@@ -125,7 +124,7 @@ You can use a registry key to determine whether the functionality to protect Mic
 
 2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**. 
 
-   - If **TPExclusions** has a value of `1`, then the new functionality to protect exclusions is enabled on the device.
+   - If **TPExclusions** has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected.
    - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device.
 
 > [!CAUTION]

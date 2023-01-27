@@ -77,6 +77,10 @@ If you're using Intune to configure and manage tamper protection, you can target
 
 When tamper protection is turned on, tamper-protected settings cannot be changed from their default value, even if you're using Intune to manage your security settings. Changes might appear to be successful in Intune, but will not actually be allowed by tamper protection. For the most current list of tamper protected settings, contact support.
 
+## If tamper protection is turned on in Microsoft 365 Defender, can Intune override it?
+
+A tamper protection policy defined in Intune can override tamper protection that is turned on in the Microsoft 365 Defender portal. Policies defined in Intune take priority.
+
 ## Can I configure tamper protection with Microsoft Endpoint Configuration Manager?
 
 If you're using tenant attach, you can use Microsoft Endpoint Configuration Manager. See the following resources:
