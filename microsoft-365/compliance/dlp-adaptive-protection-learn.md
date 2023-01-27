@@ -20,7 +20,9 @@ description: "Learn how insider risk management and data loss prevention work to
 
 # Learn about Adaptive Protection in Data Loss Prevention (preview)
 
-Adaptive Protection in Microsoft Purview integrates Microsoft Purview Insider Risk Management (IRM) with Microsoft Purview Data Loss Prevention (DLP). When IRM identifies a user who is engaging in risky behavior, it can automatically create a DLP policy to help protect the organization against that risky behavior. You can manually create DLP policies that help protect against risky behaviors that IRM identifies too.
+Adaptive Protection in Microsoft Purview integrates Microsoft Purview Insider Risk Management with Microsoft Purview Data Loss Prevention (DLP). When insider risk identifies a user who is engaging in risky behavior, they are dynamically assigned to a risk level. Then adaptive protection can automatically create a DLP policy to help protect the organization against the risky behavior that's associated with that risk level. As users risk levels change in insider risk management, the DLP policies applied to users can adjust. 
+
+You can manually create DLP policies that help protect against risky behaviors that insider risk identifies too.
 
 Refer to [Help dynamically mitigate risks with Adaptive Protection (preview)](insider-risk-management-adaptive-protection.md) to learn about Adaptive Protection and how to configure it.
 
@@ -33,7 +35,7 @@ If you're unfamiliar with DLP policies, you should review these articles before 
 - [Data Loss Prevention policy reference](dlp-policy-reference.md)
 - [Design a data loss prevention policy](dlp-policy-design.md)
 
-Once adaptive protection is configured in IRM, a condition called **User's risk level for adaptive protection is** will be available to use in rules that are configured for policies scoped to Exchange Online, Devices, and Teams locations.
+Once adaptive protection is configured in insider risk, a condition called **User's risk level for adaptive protection is** will be available to use in rules that are configured for policies scoped to Exchange Online, Devices, and Teams locations.
 
 The condition **User's risk level for adaptive protection is** has three values: 
 
@@ -41,9 +43,9 @@ The condition **User's risk level for adaptive protection is** has three values:
 - **Moderate risk level**
 - **Minor risk level**
 
-These risk level profiles are defined in IRM. You can select one, two or all three in a policy rule. Learn more about [risk levels](insider-risk-management-adaptive-protection.md#risk-levels).
+These risk level profiles are defined in insider risk. You can select one, two or all three in a policy rule. Learn more about [risk levels](insider-risk-management-adaptive-protection.md#risk-levels).
 
-You can manually configure DLP policies that are part of adaptive protection and also use the [quick setup configuration in IRM](insider-risk-management-adaptive-protection.md#quick-setup) to create DLP policies automatically from a template. 
+You can manually configure DLP policies that are part of adaptive protection and also use the [quick setup configuration in insider risk](insider-risk-management-adaptive-protection.md#quick-setup) to create DLP policies automatically from a template. 
 
 ### Manual configuration
 
@@ -51,7 +53,11 @@ You manually configure an adaptive protection DLP policy just like you would [co
 
 ### Quick setup configuration
 
-If quick setup is used to configure Adaptive Protection in IRM, DLP policies are created automatically, so you should be on the lookout for them. Quick setup will create one policy for Teams and Exchange Online with two rules, one for the elevated risk profile and one for the moderate and minor risk levels. It will also create one policy for Devices with two rules, one for the elevated risk profile and one for the moderate and minor risk levels.
+If quick setup is used to configure Adaptive Protection in insider risk, DLP policies are created automatically, so you should be on the lookout for them. Quick setup will create one policy for Teams and Exchange Online with two rules, one for the elevated risk profile and one for the moderate and minor risk levels. It will also create one policy for Devices with two rules, one for the elevated risk profile and one for the moderate and minor risk levels.
+
+> [!TIP]
+> Insider risk presents a view of just the DLP policies that use the **User's risk level for adaptive protection is** condition. Open **Microsoft Purview compliance portal** > **Insider risk management** > **Adaptive protection (preview)** to see the list. <!--You'll need ASDAFGJLK permissions to access the insider risk node.-->
+
 
 #### Policy values for Teams and Exchange online DLP policy
 
