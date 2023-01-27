@@ -20,6 +20,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Quickly hunt for entity or event information with go hunt

@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/05/2023
+ms.date: 01/26/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -19,9 +19,9 @@ ms.collection:
 - tier1
 ---
 
-# Understand next-generation configuration settings in Microsoft Defender for Business
+# Understand next-generation protection settings in Microsoft Defender for Business
 
-Next-generation protection in Defender for Business includes robust antivirus and antimalware protection. The default policies are designed to protect your devices and users without hindering productivity. You can also customize the policies to suit your business needs. And, if you're using Microsoft Intune, you can use the Microsoft Endpoint Manager admin center to manage your security policies.
+Next-generation protection in Defender for Business includes robust antivirus and antimalware protection. The default policies are designed to protect your devices and users without hindering productivity. You can also customize the policies to suit your business needs. And, if you're using Microsoft Intune, you can use it to manage your security policies.
 
 **This article describes**:
 
@@ -65,7 +65,7 @@ The following security settings are preconfigured in Defender for Business:
 
 ## How default settings in Defender for Business correspond to settings in Microsoft Intune
 
-The following table describes settings that are preconfigured for Defender for Business and how those settings correspond to what you might see in Intune (managed in the Microsoft Endpoint Manager admin center). If you're using the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you don't need to edit these settings.
+The following table describes settings that are preconfigured for Defender for Business and how those settings correspond to what you might see in Intune. If you're using the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you don't need to edit these settings.
 
 | Setting  | Description  |
 |---------|---------|

@@ -54,6 +54,8 @@ Priva trials include the **Privacy Risk Management** trial and the **Subject Rig
 | :------------- | :-------------: | :------------: |
 | Privacy Management Admin | Privacy Management Administrators   | Purview compliance portal > Permissions > Purview solutions > Roles |
 | Subject Rights Request Admin | Subject Rights Request Administrators | Purview compliance portal > Permissions > Purview solutions > Roles |
+| Compliance Administrator | Compliance Administrator   | Purview compliance portal > Permissions > Purview solutions > Roles |
+| Information Protection Admin | Compliance Data Administrator | Purview compliance portal > Permissions > Purview solutions > Roles |
 
 #### Security trials
 
