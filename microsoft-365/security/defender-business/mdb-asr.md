@@ -50,9 +50,9 @@ These rules help protect your network and devices but shouldn't cause disruption
 
 2. Select the **Configuration** tab. 
 
-3. If it's not already selected, select the **Standard protection** option to enable the three recommended standard protection rules to devices. 
+3. Select the **Standard protection** option, and then select devices. 
 
-If you prefer, you can set up your ASR rules by using Microsoft Intune instead.
+If you prefer, you can set up your ASR rules by using Microsoft Intune.
 
 ### To set up ASR rules using Intune
 
