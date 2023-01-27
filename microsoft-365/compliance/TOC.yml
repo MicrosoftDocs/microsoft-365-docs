@@ -642,7 +642,7 @@
                 href: sit-defn-eu-tax-identification-number.md
               - name: Finland drivers license number
                 href: sit-defn-finland-drivers-license-number.md
-              - name: Finland european health insurance number
+              - name: Finland European health insurance number
                 href: sit-defn-finland-european-health-insurance-number.md
               - name: Finland national ID
                 href: sit-defn-finland-national-id.md
@@ -1070,6 +1070,8 @@
           href: sensitivity-labels-default-sharing-link.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
+        - name: Minimum versions for sensitivity labels in Office apps
+          href: sensitivity-labels-versions.md
     - name: Encryption
       items: 
         - name: Understand encryption
@@ -1249,6 +1251,8 @@
               href: dlp-policy-tips-reference.md
             - name: Share DLP Alerts (preview)
               href: dlp-share-alerts.md
+            - name: Test your DLP policies (preview)
+              href: dlp-test-dlp-policies.md
             - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
               href: dlp-migration-assistant-for-symantec-use.md       
 - name: Manage data lifecycle & records
@@ -1737,12 +1741,12 @@
           href: compliance-manager-assessments.md
         - name: Learn about assessment templates
           href: compliance-manager-templates.md
-        - name: Create assessment templates
+        - name: Create a custom template
           href: compliance-manager-templates-create.md
-        - name: Extend assessment templates
-          href: compliance-manager-templates-extend.md
-        - name: Modify assessment templates
+        - name: Modify a custom template
           href: compliance-manager-templates-modify.md
+        - name: Extend a Microsoft template
+          href: compliance-manager-templates-extend.md
         - name: Format template data in Excel
           href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
