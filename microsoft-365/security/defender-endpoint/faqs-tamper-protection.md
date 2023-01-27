@@ -75,7 +75,7 @@ If you're using Intune to configure and manage tamper protection, you can target
 
 ## What settings can't be changed when tamper protection is turned on?
 
-When tamper protection is turned on, tamper-protected settings cannot be changed from their default value, even if you're using Intune to manage your security settings. Changes might appear to be successful in Intune, but will not actually be allowed by tamper protection. For the most current list of tamper protected settings, contact support.
+When tamper protection is turned on, tamper-protected settings can't be changed from their default value, even if you're using Intune to manage your security settings. Changes might appear to be successful in Intune, but won't actually be allowed by tamper protection. For the most current list of tamper protected settings, contact support.
 
 ## If tamper protection is turned on in Microsoft 365 Defender, can Intune override it?
 
@@ -143,7 +143,7 @@ You can use any of the following methods to configure tamper protection:
 - The [Microsoft 365 Defender portal](manage-tamper-protection-microsoft-365-defender.md) (turn tamper protection on or off, tenant wide)
 - [Intune](manage-tamper-protection-microsoft-endpoint-manager.md) (turn tamper protection on or off, and/or configure tamper protection for some or all users)
 - [Configuration Manager](manage-tamper-protection-configuration-manager.md) (with tenant attach, you can configure tamper protection for some or all devices by using the Windows Security experience profile)
-- [Windows Security app](manage-tamper-protection-individual-device.md) (for an individual device used at home or that is not centrally managed by a security team)
+- [Windows Security app](manage-tamper-protection-individual-device.md) (for an individual device used at home or that isn't centrally managed by a security team)
 
 > [!NOTE]
 > We recommend keeping tamper protection turned on for your whole organization. If tamper protection prevents your IT or security team from performing a necessary task on a device, 
