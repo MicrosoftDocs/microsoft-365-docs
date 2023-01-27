@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 12/16/2022
+ms.date: 01/26/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -88,13 +88,13 @@ Microsoft has a list of solution providers who are authorized to sell offerings,
 
 ## Portals you'll use for setup and management
 
-When you use Defender for Business, you'll work with two main portals: the Microsoft 365 admin center, and the Microsoft 365 Defender portal. If your subscription also includes Microsoft Intune, you might use the Intune admin center as well. The following table summarizes these portals and how you'll use them.
+When you use Defender for Business, you'll work with two main portals: the Microsoft 365 admin center, and the Microsoft 365 Defender portal. If your subscription also includes Microsoft Intune, you might use the Intune admin center instead. The following table summarizes these portals and how you'll use them.
 
 |Portal  |Description  |
 |---------|---------|
 | The Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Use the Microsoft 365 admin center to activate your trial and sign in for the first time.<p> You'll also use the Microsoft 365 admin center to: <ul><li>Add or remove users.</li><li>Assign user licenses.</li><li>View your products and services.</li><li>Complete setup tasks for your Microsoft 365 subscription.</li></ul>To learn more, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).      |
 | The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))     | Use the Microsoft 365 Defender portal to set up and configure Defender for Business.<p>You'll use the Microsoft 365 Defender portal to: <ul><li>View your devices and device protection policies.</li><li>View detected threats and take action.</li><li>View security recommendations and manage your security settings.</li></ul>To learn more, see [Get started using the Microsoft 365 Defender portal](mdb-get-started.md).        |
-| The Intune admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) | We recommend using the Microsoft 365 Defender portal to manage your security settings and devices. However, you can use the Intune admin center instead if you prefer. To learn more about Intune, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune). |
+| The Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)) | We recommend using the Microsoft 365 Defender portal to manage your security settings and devices. However, you can use the Intune admin center instead if you prefer. To learn more about Intune, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune). |
 
 ## Next steps
 

@@ -103,7 +103,7 @@ sections:
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
-          Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. You can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. See [Attack surface reduction policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-asr-policy).
+          Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. You can use Intune to configure your attack surface reduction policies. See [Attack surface reduction policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-asr-policy).
 
       - question: How does Microsoft Intune work with Defender for Business? 
         answer: |
