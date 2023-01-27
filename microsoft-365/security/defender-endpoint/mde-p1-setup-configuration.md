@@ -10,7 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.reviewer: inbadian
+ms.date: 01/27/2023
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
 - m365-security
@@ -124,7 +125,7 @@ Then, proceed to configure your next-generation protection and attack surface re
 
 We recommend using [Intune](/mem) to manage your organization's devices and security settings, as shown in the following image:
  
-:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in the Micorosft Endpoint Manager portal" lightbox="../../media/mde-p1/endpoint-policies.png":::
+:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="Endpoint security policies in the Intune portal" lightbox="../../media/mde-p1/endpoint-policies.png":::
 
 To configure your next-generation protection in Intune, follow these steps:
 
