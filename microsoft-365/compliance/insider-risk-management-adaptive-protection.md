@@ -104,48 +104,60 @@ Complete the following steps to configure Adaptive Protection using the custom s
 
 #### Step 1: Create insider risk management policy
 
-Risk levels are assigned to users when a policy assigned in Adaptive Protection either detects user activity or generates alerts that match the risk level conditions you define in the next step. If you don't want to use an existing insider risk management policy (selected in Step 2), you must create a new policy. Your insider risk management policy for Adaptive Protection should include:
+Risk levels are assigned to users when a policy assigned in Adaptive Protection either detects user activity or generates alerts that match the risk level conditions you define in the next step. If you don't want to use an existing insider risk management policy (selected in Step 2), you must create a new insider risk management policy. Your insider risk management policy for Adaptive Protection should include:
 
 - **Users whose activity you want to detect**. This can be all users and groups in your organization or just a subset for specific risk mitigation scenarios or testing purposes.
 - **Activities you consider risky and custom thresholds that influence an activity's risk score**. Risky activities might include emailing people outside your organization or copying files to USB devices.
 
-Select **Create insider risk policy** to launch the new policy wizard.
+Select **Create insider risk policy** to launch the new policy wizard. The [Data leaks](/microsoft-365/compliance/insider-risk-management-policy-templates#data-leaks) policy template is automatically selected in the wizard, but you can select any policy template if needed.
+
+>[!IMPORTANT]
+>Depending on the policy template selected, you may need to configure [additional settings](/microsoft-365/compliance/insider-risk-management-configure#step-4-recommended-configure-prerequisites-for-policies) for the policy to properly detect potentially risky activities and to create applicable alerts
 
 #### Step 2: Configure risk level settings
 
 Select the **Risk levels for Adaptive Protection** tab. You'll start by selecting the insider risk management policy you want to use for Adaptive Protection. This can either be the new policy you created in Step 1 or an existing policy you've already configured.
 
+Next, you'll accept the applicable built-in risk level conditions or create your own. Depending on the type of policy you've selected, the risk level conditions will reflect the applicable conditions associated with indicators and activities you've configured in the policy.
 
+For example, if you've chosen a policy based on the [Data leaks](/microsoft-365/compliance/insider-risk-management-policy-templates#data-leaks) policy template, the built-in risk level condition choices will apply to indicators and activities available in that policy. If you've selected a policy based on the [Security policy violations](/microsoft-365/compliance/insider-risk-management-policy-templates#security-policy-violations-preview) policy template, the built-in risk level conditions are automatically scoped to indicators and activities available in that policy.
 
-Then decide whether to use the built-in risk level conditions or create your own. Don’t forget to click 'Save' at the bottom of the page.
+To customize a risk level for your policy, complete the following steps:
+
+1. On the **Risk levels for Adaptive Protection** tab, select **Edit** for the risk level you'd like to customize (*Elevated*, *Moderate*, or *Minor*).
+2. On the **Custom risk level** pane, select an option in the **Risk level based on** section:
+
+    - **Alert generated or confirmed for a user**
+    - **Specific user activity**
+
+3. If you've selected the **Alert generated or confirmed for a user** option, you'll choose the severity levels for alerts that are generated or confirmed for a user that should use this risk level. You can keep the *Severity for generated alerts* and the *Severity for confirmed alerts* conditions or remove one of these conditions if you only want to use one. If you need to add one of these conditions back, select **Add condition** and select the condition. For each condition, choose the severity level that should be applied for the condition (*High*, *Medium*, or *Low*). If the **any** of the conditions are met, the risk level is assigned to a user.
+4. If you've selected the **Specific user activity** option, you'll choose the activity to detect, its severity, and number of daily occurrences during the past activity detection window. You must configure the *Activities*, *Activity severity*, and *Activity occurrences during detection window* conditions for this risk level. For the *Activities* condition, the options you can choose from are automatically updated for the types of activities you've defined with the indicators configured in the associated policy. If needed, select the **Assign this risk level to any user who has a future alert confirmed, even if conditions above aren't met** checkbox. If the **all** of the conditions are met, the risk level is assigned to a user.
+5. Select **Confirm** to apply the custom risk level conditions or **Cancel** to discard your changes.
 
 #### Step 3: Create or edit a DLP policy
 
-Create or edit an existing DLP policy to restrict actions for users who match your risk level conditions. Use the following guidelines for your DLP policy configuration:
+Next you'll create (or edit) an existing DLP policy to restrict actions for users who match your risk level conditions in Adaptive Protection. Use the following guidelines for your DLP policy configuration:
 
-- You must include the *User's risk level for Adaptive Protection is* condition in your DLP policy. This DLP policy can include other conditions as needed.​
-- Although you can include other locations in the DLP policy, AP currently supports only Exchange, Microsoft Teams, and devices.
+- You must include the *User's risk level for Adaptive Protection is* condition in your DLP policy. This DLP policy can include other conditions as needed.
+- Although you can include other locations in the DLP policy, Adaptive Protection currently supports only Exchange, Microsoft Teams, and devices.
+
+Select **Create DLP policy** to launch the new DLP policy wizard. For step-by-step guidance to configure a DLP policy, see LINK TO CHRIS'S TOPIC.
+
+If you have an existing DLP policy that you'd like to configure for Adaptive Protection, go to **Data loss prevention** > **Policies** in the compliance portal and select the DLP policy you'd like to update for Adpative Protection. See LINK TO CHRIS'S TOPIC FOR DETAILS.
 
 >[!TIP]
 >We recommend testing the DLP policy (with policy tips) so you can review DLP alerts to verify that the policy is working as expected before enabling AP.
 
 #### Step 4: Turn on adaptive protection
 
-To turn on AP, go to IRM > AP > Adaptive Protection settings
+After you've completed all three of the previous steps, you're ready to enable Adaptive Protection. When you turn Adaptive Protection on:
 
-When you turn it on:
+- THe insider risk management policy starts looking for user activity matching your risk level conditions. If detected, the risk levels are assigned to users.
+- Users who are assigned risk levels will appear on the **Users in scope** tab in Adaptive Protection.
+- The DLP policy applies protection actions for any user assigned to risk levels included in the DLP policy.
+- The DLP policy is added to the **DLP policies** tab in **Adaptive Protection (preview)**. You can view details about the DLP policy and edit policy conditions from the dashboard.
 
-- IRM policy starts looking for user activity matching your risk level conditions. If detected, the risk levels will be assigned to users.
-- Users who are assigned risk levels will appear on the **Users assigned risk levels** tab.
-- DLP policy applies protection actions for any user assigned to risk levels included in the DLP policy.
-
-### Risk levels, activity detection, and risk level timeframe
-
-Risk levels in AP define how risky a user's activity is and can be based on criteria such as how many exfiltration activities they performed or whether their activity generated a high severity insider risk alert.
-
-- Elevated risk level
-- Moderate risk level
-- Minor risk level
+To enable Adaptive Protection, select the **Adaptive Protection settings** tab and toggle the **Enable Adaptive Protection** to *On*. It may take up to 72 hours before you can expect to see Adaptive Protection risk levels and DLP actions applied to applicable user activities.
 
 ## Manage Adaptive Protection
 
