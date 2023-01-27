@@ -20,13 +20,11 @@ description: Use term store taxonomy when creating an extractor in your model in
 
 <sup>**Applies to:**  &ensp; &#10003; Unstructured document processing </sup>
 
-<!---
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJJ]  
 
 </br>
---->
 
 When you create an extractor in your unstructured document processing model using Microsoft Syntex, you can take advantage of global term sets in the [term store](/sharepoint/managed-metadata) to display preferred terms for data that you extract.  
 

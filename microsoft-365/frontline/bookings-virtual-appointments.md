@@ -1,7 +1,7 @@
 ---
 title: Virtual Appointments with Microsoft Teams and the Bookings app
-author: lanachin
-ms.author: v-lanachin
+author: samanro
+ms.author: samanro
 manager: samanro
 audience: ITPro
 ms.topic: conceptual
@@ -23,7 +23,7 @@ ms.collection:
   - highpri
   - EngageScoreSep2022
   - m365initiative-meetings
-ms.reviewer: 
+ms.reviewer: megano
 description: Learn how to schedule, manage, and conduct virtual appointments using the Bookings app in Teams.
 appliesto: 
   - Microsoft Teams
@@ -42,8 +42,6 @@ The [Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e85
 The Bookings app makes it easy to manage complex scheduling demands of any organization. Schedulers can manage multiple department and staff calendars, as well as communications with internal and external attendees, from a single experience.
 
 The virtual appointments are held through Microsoft Teams meetings, which offer robust video conferencing capabilities. For example, a doctor can share their screen and review test results with a patient. Or, a banking advisor can request electronic signatures on documents, allowing them to close transactions remotely.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
 With Bookings, you get an experience that's tailored to your industry. Here's a few examples of how you can use it in your organization:
 

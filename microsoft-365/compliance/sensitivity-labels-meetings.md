@@ -122,7 +122,7 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
     - Require users to label their meetings and calendar event (also known as mandatory labeling)
     - Help link to a custom help page
 
-- While a meeting is in session, a sensitivity label can't prevent participates from inviting people to join  by copying the meeting link, or by sharing via default email or the Outlook calendar. These choices are from the Teams meeting  **Share invite** option.
+- While a meeting is in session, a sensitivity label can't prevent participants from inviting people to join  by copying the meeting link, or by sharing via default email or the Outlook calendar. These choices are from the Teams meeting  **Share invite** option.
 
 - If there's a label change made in Outlook clients while the meeting is progress, any changes to the meeting options won't take effect for the current meeting. If the meeting is in a series, the changes will apply to the next instance.
 

@@ -77,6 +77,9 @@ These Windows versions support advanced classification scanning and protection:
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
+> [!TIP]
+> Advanced classification must be enabled to see contextual text (in preview)  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+
 ### File path exclusions
 
 Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
@@ -315,7 +318,7 @@ For the print, copy data and save actions, each website must be listed in a webs
 
 ##### Supported syntax for designating websites in a website group
 
-You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+Please do not add protocol, e.g. https://, file:// into the URL. You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
 
 - use `*` as a wildcard to specify all domains or all subdomains
 - use `/` as a terminator at the end of a URL to scope to that specific site only.

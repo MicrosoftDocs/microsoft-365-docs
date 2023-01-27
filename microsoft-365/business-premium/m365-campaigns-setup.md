@@ -9,12 +9,11 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/18/2022
+ms.date: 01/23/2023
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
-- highpri
 - tier1
 ms.custom:
 - MiniMaven
@@ -39,7 +38,7 @@ Make sure that you meet the following requirements before you begin your setup p
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | Operating systems (client) | **Windows**:  Windows 11, Windows 10, Windows 8.1<br/>**macOS**: One of the three most recent versions of macOS 
-| Operating systems (servers) | Windows Server or Linux Server <br/>- Requires Microsoft Defender for Business servers (currently in preview)<br/>- See [How to get Microsoft Defender for Business servers (preview)](../security/defender-business/get-defender-business-servers.md).  |
+| Operating systems (servers) | Windows Server or Linux Server <br/>(Requires an additional license, such as [Microsoft Defender for Business servers](../security/defender-business/get-defender-business-servers.md).)  |
 
 > [!TIP]
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
@@ -56,7 +55,7 @@ Here's how to sign in:
 
 3. Type your username and password. Select **Sign in**.
 
-4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Bump up protection for your campaign](m365bp-security-overview.md).
+4. In the top right of the page, find the **Preview on** control. Select **Preview on** so you can use all the controls described in [Boost your security protection for your campaign](m365bp-security-overview.md).
 
 ## How your staff will sign in
 
@@ -98,4 +97,4 @@ To help your staff learn about steps to protect your campaign from cyber threats
 
 ## Next objective
 
-Proceed to [bump up security](m365bp-security-overview.md).
+Proceed to [boost your security protection](m365bp-security-overview.md).
