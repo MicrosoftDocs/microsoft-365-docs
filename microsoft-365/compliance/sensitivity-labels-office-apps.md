@@ -438,7 +438,7 @@ For more information to help you specify PowerShell advanced settings for sensit
 
 This configuration is not available in the Microsoft Purview compliance portal. You must use the PowerShell advanced setting *DefaultSubLabelId* with the [Set-Label](/powershell/module/exchange/set-label) or [New-Label](/powershell/module/exchange/new-label) cmd after you've [connected to Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-When you add a sublabel to a label, users can no longer apply the parent label to a document or email. By default, users select the parent label to see the sublabels that they can apply, and then select one of those sublabels. If you specify a default sublabel for a parent label, when users select the parent label, a sublabel is automatically selected and applied for them.
+When you add a sublabel to a label, users can no longer apply the parent label to an item. By default, users select the parent label to see the sublabels that they can apply, and then select one of those sublabels. If you specify a default sublabel for a parent label, when users select the parent label, a sublabel is automatically selected and applied for them.
 
 In the following example, the parent label **Confidential** has been configured with a default sublabel, **All Employees**. The next parent label, **Highly Confidential**, doesn't have a default sublabel configured. You can tell the difference with the end of button bar for **Confidential** that doesn't appear for **Highly Confidential**:
 
