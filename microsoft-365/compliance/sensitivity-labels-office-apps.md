@@ -440,6 +440,12 @@ This configuration is not available in the Microsoft Purview compliance portal. 
 
 When you add a sublabel to a label, users can no longer apply the parent label to a document or email. By default, users select the parent label to see the sublabels that they can apply, and then select one of those sublabels. If you specify a default sublabel for a parent label, when users select the parent label, a sublabel is automatically selected and applied for them.
 
+In the following example, the parent label **Confidential**, has been configured with a default sublabel, of **All Employees**. The next parent label, **Highly Confidential**, doesn't have a default sublabel configured. You can tell the difference with the end of button bar for **Confidential** that doesn't appear for **Highly Confidential**:
+
+![Example that shows the parent label Confidential is configured for a default sublabel.](../media/default-sublabel-example.png)
+
+When users select to the left of that bar, they are selecting **Confidential** and the default sublabel of **All Employees** is autoamtically applied with a single selection. If they need a different sublabel, they must select to the right of the bar to select the button expansion that then displays all the sublabels for selection.
+
 Example PowerShell command, where the parent sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e** and its sublabel that you want to specify as the default is **1ace2cc3-14bc-4142-9125-bf946a70542c**:
 
 ```PowerShell
