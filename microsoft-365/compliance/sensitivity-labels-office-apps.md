@@ -444,7 +444,7 @@ In the following example, the parent label **Confidential**, has been configured
 
 ![Example that shows the parent label Confidential is configured for a default sublabel.](../media/default-sublabel-example.png)
 
-When users select to the left of that bar, they are selecting **Confidential** and the default sublabel of **All Employees** is autoamtically applied with a single selection. If they need a different sublabel, they must select to the right of the bar to select the button expansion that then displays all the sublabels for selection.
+When users select to the left of that bar, they are selecting **Confidential**\**All Employees** automatically with a single selection. If they need a different sublabel, they must select to the right of the bar to select the button expansion that then displays all the sublabels for selection.
 
 Example PowerShell command, where the parent sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e** and its sublabel that you want to specify as the default is **1ace2cc3-14bc-4142-9125-bf946a70542c**:
 
