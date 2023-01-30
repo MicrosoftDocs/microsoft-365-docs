@@ -271,7 +271,7 @@ State is the primary control you'll use to roll out a policy. When you finished 
 - **Test it out first**: No policy actions are enforced, events are audited. While in this state, you can monitor the impact of the policy in the DLP **Alert** console and the DLP **Activity explorer** console.
 - **Test it out first and show policy tips while in test mode**: No actions are enforced, but users will receive policy tips and notification emails to raise their awareness and educate them.
 - **Turn it on right away**: This is full enforcement mode. 
-- **Keep it off**: The policy is completely inactive. Use this state while developing and reviewing your policy before deployment.
+- **Keep it off**: The policy is inactive. Use this state while developing and reviewing your policy before deployment.
 
 You can change the state of a policy at any time. 
 
