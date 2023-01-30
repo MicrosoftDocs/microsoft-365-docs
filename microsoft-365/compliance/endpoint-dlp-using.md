@@ -303,9 +303,6 @@ The user must be accessing the website through Microsoft Edge.
 
 ## Scenario 7 Authorization groups (preview)
 
-> [!IMPORTANT]
-> Before you can use **Printer groups**, **Removable storage device groups**, **Network share groups**, and **Network exceptions/VPN** you must register [here](https://forms.office.com/r/GNVTFvxuZv).
-
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
 Authorization groups are mostly used as allow lists. You assigned policy actions to the group that are different than the global policy actions. In this scenario, we'll go through defining a printer group and then configuring a policy with block actions for all print activities except for the printers in the group. These procedures are essentially the same for **Removeable storage device groups**, and **Network share groups**.
@@ -353,9 +350,6 @@ In this scenario, we'll define a group of printers that the legal department use
 13. The new DLP policy will appear in the policy list.
 
 ## Scenario 8 Network exceptions (preview)
-
-> [!IMPORTANT]
-> Before you can use **Printer groups**, **Removable storage device groups**, **Network share groups**, and **Network exceptions/VPN** you must register [here](https://forms.office.com/r/GNVTFvxuZv).
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
