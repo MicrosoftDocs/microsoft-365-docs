@@ -63,7 +63,7 @@ For example, Adaptive Protection settings and DLP policies can allow users in th
 
 Risk level criteria and conditions customization can be based on the following areas:
 
-- **Alerts generated or confirmed for a user**: This option allows you to choose conditions based on the severity level for alerts that are generated or confirmed for a user. Conditions for alerts aren't additive and the risk level is assigned to a user if one of the conditions is met.
+- **Alerts generated or confirmed for a user**: This option allows you to choose conditions based on the [severity level for alerts](/microsoft-365/compliance/insider-risk-management-activities#alert-status-and-severity) that are generated or confirmed for a user for the selected insider risk management policy. Conditions for alerts aren't additive and the risk level is assigned to a user if one of the conditions is met.
 - **Specific user activity**: This option allows you to choose conditions for activity to detect, its severity, and the number of daily occurrences during the [past activity detection](#past-activity-detection) window (optional). Conditions for user activity are additive and the risk level is assigned to a user only if all the conditions are met.
 
 #### Past activity detection
@@ -76,7 +76,11 @@ This risk level setting determines how long a risk level remains assigned to a u
 
 ## Permissions for Adaptive Protection
 
-Depending on how you're using insider risk management built-in role groups and role groups for DLP, you may need to update [permissions](/microsoft-365/compliance/insider-risk-management-configure#step-1-required-enable-permissions-for-insider-risk-management) for administrators, analysts, and investigators in your organization. To create and management DLP policies with the Adaptive Protection condition, users will need the [*DLP Compliance Management*](/microsoft-365/security/office-365-security/scc-permissions) role assigned.
+Depending on how you're using insider risk management built-in role groups and role groups for DLP, you may need to update [permissions](/microsoft-365/compliance/insider-risk-management-configure#step-1-required-enable-permissions-for-insider-risk-management) for administrators, analysts, and investigators in your organization.
+
+To configure Adaptive PRotection and update settings, users will need to be assigned to the the *Insider Risk Management* or *Insider Risk Management Admins* role group. Members of the *Insider Risk Management*, *Insider Risk Management Analysts*, and *Insider Risk Management Investigators* role groups can view user details in Adaptive Protection. 
+
+To create and management DLP policies with the Adaptive Protection condition, users will need the [*DLP Compliance Management*](/microsoft-365/security/office-365-security/scc-permissions) role assigned.
 
 ## Configure Adaptive Protection
 
@@ -84,7 +88,7 @@ Depending on the needs of your organization or where you're currently configured
 
 ### Quick setup
 
-The quick setup option is fastest way to get started with Adaptive Protection. With this option, you don't need any pre-existing insider risk management or DLP policies, settings, features configured. If your organization doesn't have a current subscription or license that supports insider risk management or DLP, a [Microsoft Purview risk and compliance solutions trial](/microsoft-365/compliance/compliance-easy-trials) is automatically configured as part of the quick setup process. 
+The quick setup option is fastest way to get started with Adaptive Protection. With this option, you don't need any pre-existing insider risk management or DLP policies, settings, features configured. If your organization doesn't have a current subscription or license that supports insider risk management or DLP, you'll need to sign up for a [Microsoft Purview risk and compliance solutions trial](/microsoft-365/compliance/compliance-easy-trials) before starting the quick setup process.
 
 Available on Adaptive Protection cards on the compliance portal home page and DLP overview pages, you can get started by selecting **Turn on Adaptive Protection**. You can also get started with the quick setup process by navigating to **Insider risk management** > **Adaptive Protection** > **Dashboard** and selecting **Quick setup**.
 
