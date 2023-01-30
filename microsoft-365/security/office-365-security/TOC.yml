@@ -398,6 +398,8 @@
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
         - name: Set up steps for the Standard or Strict preset security policies in Microsoft Defender for Office 365
           href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+        - name: Reduce the attack surface for Microsoft Teams
+          href: step-by-step-guides/reducing-attack-surface-in-microsoft-teams.md
         - name: Connect Microsoft Defender for Office 365 to Microsoft Sentinel
           href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
         - name: How to enable DMARC Reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains
@@ -434,6 +436,9 @@
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
         - name: Assess the impact of security configuration changes with Explorer
           href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
+        - name: Review and remove unnecessary allow list entries with Advanced Hunting in Microsoft Defender for Office 365
+          href: step-by-step-guides/review-allow-entries.md
+
    - name: Reference
      items:
      - name: Roles and role groups in the Defender for Office 365 and Purview compliance
