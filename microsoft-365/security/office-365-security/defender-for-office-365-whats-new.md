@@ -45,7 +45,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## January 2023
 
 - [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft will now automatically remove entries from the allow list once the system has learned from it. Alternatively, Microsoft will extend the expiration time of the allows if the system has not learned yet. This will prevent your legitimate emails from going to junk or quarantine.
-- **Configuring third-party phishing simulations in Advanced Delivery:** We have expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, please see: [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes?view=o365-worldwide) 
+- **Configuring third-party phishing simulations in Advanced Delivery:** We have expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md) 
 
 ## December 2022
 
