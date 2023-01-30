@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/26/2022
+ms.date: 01/18/2023
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
@@ -25,17 +25,19 @@ search.appverid:
 description: "Learn how security defaults can help protect your organization from identity-related attacks by providing preconfigured security settings for Microsoft 365 Business Premium."
 ---
 
-# Security defaults and multi-factor authentication
+# Multi-factor authentication
 
-Microsoft 365 Business Premium was designed to help protect your company's user accounts with preconfigured security settings. These settings include enabling multi-factor authentication (MFA) for all your admins and user accounts. For most organizations, security defaults offer a good level of sign-in security. For organizations who must meet more stringent requirements, Conditional Access can be used.
+Multi-factor authentication (MFA) is a very important first step in securing your organization. Microsoft 365 Business Premium includes the option to use security defaults or Conditional Access policies to turn on MFA for your admins and user accounts. For most organizations, security defaults offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use Conditional Access policies instead.
 
 This article provides information about:
 
-- **[Security defaults](#security-defaults)** (suitable for most businesses)
-- **[Conditional Access](#conditional-access)** (for businesses with more stringent security requirements)
+- **Security defaults** (suitable for most businesses)
+- **Conditional Access** (for businesses with more stringent security requirements)
 
 > [!NOTE]
 > You can use *either* security defaults *or* Conditional Access policies, but you can't use both at the same time.
+
+# [Security defaults](#tab/secdefaults)
 
 ## Security defaults
 
@@ -67,10 +69,9 @@ MFA is an important first step in securing your company, and security defaults m
 
 6. In the right pane, you'll see the **Enable Security defaults** setting. If **Yes** is selected, then security defaults are already enabled and no further action is required. If security defaults are not currently enabled, then select **Yes** to enable them, and then select **Save**.
 
-## Conditional Access
+# [Conditional Access](#tab/condit)
 
-> [!NOTE]
-> If you've been using security defaults, you'll need to turn them off before using Conditional Access. You can use either security defaults or Conditional Access policies, but you can't use both at the same time.
+## Conditional Access
 
 If your company or business has complex security requirements or you need more granular control over your security policies, then you should consider using Conditional Access instead of security defaults to achieve a similar or higher security posture.
 
@@ -95,6 +96,8 @@ To learn more about Conditional Access, see [What is Conditional Access?](/azure
 
 > [!NOTE]
 > If you have a plan or license that provides Conditional Access but haven't yet created any Conditional Access policies, you're welcome to use security defaults. However, you'll need to turn off security defaults before you can use Conditional Access policies.
+
+---
 
 ## Next objective
 
