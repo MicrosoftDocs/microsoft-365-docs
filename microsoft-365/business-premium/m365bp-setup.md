@@ -23,7 +23,7 @@ ms.custom: intro-get-started
 
 After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
-- Start with the [guided setup experience](m365bp-setup.md#guided-setup-process) for basic setup and configuration, and then proceed to [Bump up security](m365bp-security-overview.md); or
+- Start with the [guided setup experience](m365bp-setup.md#guided-setup-process) for basic setup and configuration, and then proceed to [Boost your security protection](m365bp-security-overview.md); or
 - [Work with a Microsoft partner](m365bp-setup.md#work-with-a-microsoft-partner) who can help you get everything set up and configured.
 
 ## Before you begin
@@ -47,10 +47,10 @@ Microsoft 365 Business Premium includes a guided process. The following video sh
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
-**As soon as you've completed the guided setup process, proceed to [bump up security](m365bp-security-overview.md)**.
+**As soon as you've completed the guided setup process, proceed to [boost your security protection](m365bp-security-overview.md)**.
 
 > [!TIP]
-> After you have added users, give them a link to the [Employee quick setup guide](../admin/setup/employee-quick-setup.md). The guide walks them through signing in, getting Microsoft 365 apps, and saving, copying, and sharing files.
+> After you have added users, give them a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). The guide walks them through signing in, getting Microsoft 365 apps, and saving, copying, and sharing files.
 
 ### The guided setup process, step by step
 
@@ -111,4 +111,4 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 ## Next objective
 
-Proceed to [Bump up security](m365bp-security-overview.md).
+Proceed to [Boost your security protection](m365bp-security-overview.md).
