@@ -54,7 +54,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 |---|---|---|
 |[Download the onboarding package](#download-the-onboarding-package)|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
 |[Approve System Extension for Microsoft Defender for Endpoint](#approve-system-extensions)|MDATP_SysExt.xml|N/A|
-|[Approve Kernel Extension for Microsoft Defender for Endpoint](#download-the-onboarding-package)|MDATP_KExt.xml|N/A|
+|[Approve Kernel Extension for Microsoft Defender for Endpoint   ####JOEY, This part could be removed## ](#download-the-onboarding-package)|MDATP_KExt.xml|N/A|
 |[Network Extension policy](#network-filter)|MDATP_NetExt.xml|N/A|
 |[Configure Microsoft AutoUpdate (MAU)](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|
 |[Microsoft Defender for Endpoint configuration settings](mac-preferences.md#intune-full-profile) <p> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`.|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
@@ -148,12 +148,13 @@ MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "THIS PROFILE IS NEEDED
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 1. Review and create this configuration profile.
 
-### Kernel Extensions
+### Kernel Extensions ## Let's remove it please####
 
 This profile is needed for macOS 10.15 (Catalina) or older. It will be ignored on newer macOS.
+   
 
 MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "THIS PROFILE IS NEEDED FOR "macOS 11 (Big Sur) OR LATER"
-
+JOEY- Yes Please 
 > [!CAUTION]
 > Apple Silicon (M1) devices do not support KEXT. Installation of a configuration profile consisting KEXT policies will fail on these devices.
 
@@ -169,12 +170,11 @@ MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "THIS PROFILE IS NEEDED
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 1. Review and create this configuration profile.
 
-### Full Disk Access - MO - DO WE DELETE THIS ENTIRE SECTION?
-
-   > [!CAUTION]
-   > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
-   >
-   > This configuration profile grants Full Disk Access to Microsoft Defender for Endpoint. If you previously configured Microsoft Defender for Endpoint through Intune, we recommend you update the deployment with this configuration profile.
+### Full Disk Access  ###Only the first part###
+ > [!NOTE]
+> 
+> Enabling **TCC** (Transparency, Consent & Control) through an Mobile Device Management solution such as [Intune](mac-install-with-intune.md), will eliminate the risk of Defender for Endpoint losing **Full Disk Access** Authorization to function properly.
+>This configuration profile grants Full Disk Access to Microsoft Defender for Endpoint. If you previously configured Microsoft Defender for Endpoint through Intune, we recommend you update the deployment with this configuration profile.
 
 Download [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) from [our GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
@@ -289,6 +289,11 @@ You don't need any special provisioning for a Mac device beyond a standard [Comp
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The icon for Microsoft Defender for Endpoint in the status bar" lightbox="images/mdatp-icon-bar.png":::
+
+<br>
+</br>
+
+>Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
 
 ## Troubleshooting
 
