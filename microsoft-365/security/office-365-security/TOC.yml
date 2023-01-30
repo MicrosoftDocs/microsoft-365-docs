@@ -235,7 +235,7 @@
        - name: Advanced delivery policies
          items:
          - name: Configure advanced delivery policies
-           href: skip-filtering-phising-simulations-sec-ops-mailboxes.md
+           href: skip-filtering-phishing-simulations-sec-ops-mailboxes.md
        - name: User tags and priority accounts
          items:
          - name: User tags in Defender for Office 365
@@ -270,11 +270,11 @@
            href: investigate-malicious-email-that-was-delivered.md
          - name: Report suspicious messages and files
            items:
-           - name: How do I report a suspicious email or file to Microsoft
+           - name: Report suspicious email or files to Microsoft
              href: submissions-report-messages-files-to-microsoft.md
            - name: Admin submissions
              href: submissions-admin.md
-           - name: Enable the Report Message and the Report Phishing add-ins
+           - name: Enable the Report Message and Report Phishing add-ins
              href: submissions-users-report-message-add-in-configure.md
            - name: Report false positives and false negatives in Outlook
              href: submissions-outlook-report-messages.md
@@ -284,6 +284,8 @@
              href: submissions-submit-files-to-microsoft.md
            - name: Admin review for reported messages
              href: admin-review-reported-message.md
+           - name: Errors during submissions
+             href: submissions-error-messages.md
          - name: Campaign Views
            href: campaigns.md
          - name: Threat Explorer
@@ -392,6 +394,8 @@
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
         - name: Set up steps for the Standard or Strict preset security policies in Microsoft Defender for Office 365
           href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+        - name: Reduce the attack surface for Microsoft Teams
+          href: step-by-step-guides/reducing-attack-surface-in-microsoft-teams.md
         - name: Connect Microsoft Defender for Office 365 to Microsoft Sentinel
           href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
         - name: How to enable DMARC Reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains
@@ -428,9 +432,12 @@
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
         - name: Assess the impact of security configuration changes with Explorer
           href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
+        - name: Review and remove unnecessary allow list entries with Advanced Hunting in Microsoft Defender for Office 365
+          href: step-by-step-guides/review-allow-entries.md
+
    - name: Reference
      items:
-     - name: Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals
+     - name: Roles and role groups in the Defender for Office 365 and Purview compliance
        href: scc-permissions.md
      - name: Defender for Office 365 data retention
        href: mdo-data-retention.md

@@ -1,8 +1,8 @@
 ---
 title: Virtual Appointments with Microsoft Teams
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer: 
+author: samanro
+ms.author: samanro
+ms.reviewer: megano
 manager: samanro
 ms.topic: conceptual
 audience: admin
@@ -22,7 +22,7 @@ f1.keywords:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/05/2022
+ms.date: 12/21/2022
 ---
 
 # Virtual Appointments with Microsoft Teams
@@ -34,11 +34,14 @@ With Virtual Appointments in Microsoft Teams, you have a complete meeting platfo
 - Clinicians can meet with patients or other healthcare providers to discuss medical care.
 - Human resources departments can conduct virtual interviews with job candidates.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
+
 This article gives you an overview of the capabilities available in Teams for scheduling and managing virtual appointments.
 
 - [The Virtual Appointments app](#the-virtual-appointments-app), for every organization
 - [The Bookings app](#the-bookings-app), for every organization
 - [The Teams Electronic Health Record (EHR) connector](#teams-electronic-health-record-ehr-connector), for healthcare organizations who use an EHR system
+- [Virtual appointment meeting template](#virtual-appointment-meeting-template), for every organization
 - [Virtual Appointment Graph API](#virtual-appointment-graph-api), for developers in your organization
 
 ## The Virtual Appointments app
@@ -49,7 +52,7 @@ The Virtual Appointments app provides a central hub for all your virtual appoint
 
 You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports to gain insight into virtual appointments activity, and configure calendar, staff, and booking page settings.
 
-With any Microsoft 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the Bookings calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview) unlocks advanced Virtual Appointments capabilities that your organization can use to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, custom waiting rooms, and analytics.
+With Microsoft 365 A3, A5, E3, E5, F1, F3, Business Basic, Business Standard, and Business Premium licenses, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the Bookings calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) (Preview) unlocks advanced Virtual Appointments capabilities that your organization can use to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, custom waiting rooms, and analytics.
 
 To learn more, see:
 
@@ -82,6 +85,14 @@ Currently, the Teams EHR connector supports integration with the Cerner EHR syst
 
 - [Virtual appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
 - [Virtual appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
+
+## Virtual appointment meeting template
+
+The Virtual appointment template is a default meeting template in Teams that your users can use to schedule virtual appointments with customers, clients and other people outside your organization. The template allows you to specify values for meeting settings that meeting organizers typically control. Use it to apply default settings and enforce settings.
+
+With this template, you can enable a consistent experience across your organization for virtual appointments scheduled directly within Teams and help enforce compliance requirements. 
+
+To learn more, see [Virtual appointment meeting template in Teams](/microsoftteams/virtual-appointment-meeting-template).
 
 ## Virtual Appointment Graph API
 

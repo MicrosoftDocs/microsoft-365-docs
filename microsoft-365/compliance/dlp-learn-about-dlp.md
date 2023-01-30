@@ -114,7 +114,7 @@ Start by defining your control objectives, and how they apply across each respec
 
 #### Implement policy in test mode
 
-Evaluate the impact of the controls by implementing them with a DLP policy in test mode. It's ok to apply the policy to all workloads in test mode, so that you can get the full breadth of results, but you can start with one workload if you need to.
+Evaluate the impact of the controls by implementing them with a DLP policy in test mode. Actions defined in a policy are not applied while the policy is in test mode. It's ok to apply the policy to all workloads in test mode, so that you can get the full breadth of results, but you can start with one workload if you need to.
 
 #### Monitor outcomes and fine-tune the policy
 
@@ -123,8 +123,6 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 - adjusting the locations and people/places that are in or out of scope
 - tune the conditions that are used to determine if an item and what is being done with it matches the policy
 - the sensitive information definition/s
-- the actions
-- the level of restrictions
 - add new controls
 - add new people
 - add new restricted apps
@@ -220,6 +218,15 @@ The [DLP reports](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevent
 The Activity explorer tab on the DLP page has the *Activity* filter preset to *DLPRuleMatch*. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
 ![screenshot of the DLPRuleMatch scoped activity explorer.](../media/dlp-activity-explorer.png)
+
+#### Contextual summary
+
+You can see the text that surrounds the matched content, like a credit card number in a **DLPRuleMatch** event in Activity explorer. To do this you must first enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
+
+**DLPRuleMatch** events are paired with the user activity event. The should be right next to (or at least very close to) each other in Activity explorer.  You'll want to look at both because the **user activity event** contains details about the matched policy and the **DLPRuleMatch** event contains the details about the text that surrounds the matched content. 
+
+This is in preview for endpoint DLP. For endpoints, be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+
 
 For more information, see [Get started with activity explorer](data-classification-activity-explorer.md)
 

@@ -4,6 +4,7 @@ ms.reviewer:
 description: Learn about how to spot phishing techniques
 keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack, spear phishing, whaling
 ms.service: microsoft-365-security
+ms.subservice: intelligence
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
