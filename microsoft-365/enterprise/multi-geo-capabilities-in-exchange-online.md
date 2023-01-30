@@ -26,9 +26,8 @@ You can place mailboxes in satellite geo locations by:
 
 - Onboarding a mailbox from an on-premises Exchange organization directly into a satellite geo location.
 
->[!NOTE]
->This feature does not guarantee email routing through a dedicated geo-specific region (data in transit). 
->
+> [!NOTE]
+> This feature does not guarantee email routing through a dedicated geo-specific region (data in transit).
 
 ## Mailbox placement and moves
 
