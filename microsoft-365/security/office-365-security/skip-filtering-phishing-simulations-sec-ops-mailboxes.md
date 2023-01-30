@@ -144,8 +144,8 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
    > You can specify up to 10 entries for each field.
    >
    > There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
-   > 
-   > It is important to note that if your MX record does not point to Office 365, the IP address that is present in the Authentication-results header must match the IP added to the rule. This may require you to configure Enhanced Filtering for Connectors in order for the correct IP to be detected.
+   >
+   > If your MX record does not point to Microsoft 365, the IP address in the `Authentication-results` header must match the IP address in the advanced delivery policy. If the IP addresses don't match, you might need to configure [Enhanced Filtering for Connectors]/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) in order for the correct IP address to be detected.
 
 4. When you're finished, click **Add**, and then click **Close**.
 
