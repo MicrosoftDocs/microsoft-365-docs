@@ -1,6 +1,6 @@
 ---
 title: Help dynamically mitigate risks with Adaptive Protection (preview)
-description: Learn how to help mitigate risks with Adaptive Protection and Data Loss Prevention (DLP) policies.
+description: Learn how to mitigate risks with Adaptive Protection and Data Loss Prevention (DLP) policies.
 keywords: Microsoft 365, Microsoft Purview, insider risk, risk management, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -50,7 +50,7 @@ With Adaptive Protection, your administrators can configure the risk factors or 
 Risk levels in Adaptive Protection define how risky a user's activity is and can be based on criteria such as how many exfiltration activities they performed or whether their activity generated a high severity insider risk alert. These risk levels have default conditional settings, but can be customized as needed:
 
 - **Elevated risk level**: The highest risk level, includes built-conditions for users with high severity alerts, users with at least three sequence insights, each with a high severity alert for specific risk activities, or one or more confirmed high severity alerts.
-- **Moderate risk level**: The medium risk level, includes built-n conditions for users with medium severity alerts or users with at least two high severity alerts for specific risk activities.
+- **Moderate risk level**: The medium risk level, includes built-in conditions for users with medium severity alerts or users with at least two high severity alerts for specific risk activities.
 - **Minor risk level**: The lowest risk level, includes built-in conditions for users with low severity alerts or users with at least one high severity alert for specific risk activities.
 
 ### Customizing risk levels
@@ -221,4 +221,4 @@ The **DLP policies** page displays all DLP policies that are using the **User's 
 
 There may be certain scenarios when you might need to disable Adaptive Protection temporarily. To disable Adaptive Protection, select the **Adaptive Protection settings** tab and toggle **Enable Adaptive Protection** to *Off*.
 
-If Adaptive Protection is turned off after having been on and active, risk levels will stop being assigned to users and shared with DLP. After turning off, might take up to 6 hours to stop assigning risk levels to user activity and reset them all. The insider risk management and DLP policies are not automatically deleted.
+If Adaptive Protection is turned off after having been on and active, risk levels will stop being assigned to users and shared with DLP and all existing risk levels for users will be reset. After turning off, might take up to 6 hours to stop assigning risk levels to user activity and reset them all. The insider risk management and DLP policies are not automatically deleted.
