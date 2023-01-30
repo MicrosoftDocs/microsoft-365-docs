@@ -184,6 +184,6 @@ Microsoft 365 support integration is enabled for the user with one of these role
 
 Continue with these instructions if you are looking to escalate your ServiceNow incidents to Microsoft support from your ServiceNow instance via the app.
 
-If any users are provisioned with the role **x_mioms_m365_assis.administrator** and is using different Microsoft 365 accounts to manage a Microsoft 365 support case, they must set up their Microsoft 365 admin email account by navigating to **Microsoft 365 support** \> **Link Account**.
+If any users are provisioned with the role **x_mioms_m365_assis.administrator** and are using different Microsoft 365 accounts to manage a Microsoft 365 support case, they must set up their Microsoft 365 admin email account by navigating to **Microsoft 365 support** > **Link Account**.
 
 :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image21.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image21.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
