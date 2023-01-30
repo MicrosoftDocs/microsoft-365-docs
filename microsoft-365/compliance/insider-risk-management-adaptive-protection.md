@@ -22,8 +22,6 @@ ms.custom: admindeeplinkCOMPLIANCE
 >[!IMPORTANT]
 >Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage and security violations. Insider risk management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
 
-Insider risk management policies and alerts are effective in helping you detect and identify potential risks associated with specific user actions in your organization. However, organizations need a more effective and efficient data protection solution that can automatically protect their data against the most critical risks.
-
 Adaptive Protection in Microsoft Purview uses machine learning to identify and mitigate the most critical risks with the most effective [data loss prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) protection controls dynamically, saving security teams valuable time while ensuring better data security. Adaptive Protection helps increase risk mitigation by extending and managing preventative options associated with detected risky action to the capabilities provided by DLP policies.
 
 Adaptive Protection helps mitigate these potential risks by using:
@@ -33,6 +31,9 @@ Adaptive Protection helps mitigate these potential risks by using:
 - **Automated mitigation**. Helps to minimize the impact of potential data security incidents and reduce admin overhead.
 
 Adaptive Protection dynamically assigns appropriate DLP policies to users based on the risk levels defined and analyzed by the machine learning models in insider risk management. With this new capability, static DLP policies become adaptive based on user context, ensuring that the most effective policy, such as blocking data sharing, is applied only to high-risk users while low-risk users can maintain productivity. The policy controls constantly adjust, so when a user's risk level changes, an appropriate policy is dynamically applied to match the new risk level.
+
+> [!IMPORTANT]
+> Insider risk management is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that insider risk management is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
 
 Watch the following video for a summary of how Adaptive Protection can help identify and mitigate the most critical risks in your organization:
 
@@ -85,20 +86,20 @@ Depending on the needs of your organization or where you're currently configured
 
 The quick setup option is fastest way to get started with Adaptive Protection. With this option, you don't need any pre-existing insider risk management or DLP policies, settings, features configured. If your organization doesn't have a current subscription or license that supports insider risk management or DLP, a [Microsoft Purview risk and compliance solutions trial](/microsoft-365/compliance/compliance-easy-trials) is automatically configured as part of the quick setup process. 
 
-Available on Adaptive Protection cards on the insider risk management and DLP overview pages, you can get started by selecting **Turn on Adaptive Protection**. You can also get started with the quick setup process by navigating to **Insider risk management** > **Adaptive Protection** > **Dashboard** and selecting **Quick setup**.
+Available on Adaptive Protection cards on the compliance portal home page and DLP overview pages, you can get started by selecting **Turn on Adaptive Protection**. You can also get started with the quick setup process by navigating to **Insider risk management** > **Adaptive Protection** > **Dashboard** and selecting **Quick setup**.
 
 Here's what is configured when you use the quick setup process for Adaptive Protection:
 
 |**Area**|**Configuration**|
 |:-------|:----------------|
 | Insider risk settings (if not already configured) | - Privacy: Show anonymized versions of user names <br> - Policy timeframes: Defaults <br> - Policy indicators: A subset of Office indicators (you can view in insider risk management settings) <br> - Risk score boosters: All <br> - Intelligent Detections: Alert Volume = Default volume <br> - Analytics: On <br> - Admin notifications: Send notification email when first alert is generated to all |
-| Insider risk settings (if already configured) | - Policy indicators: Office indicators not already configured (you can view in insider risk management settings) <br> - Analytics: On |
+| Insider risk settings (if already configured) | - Policy indicators: Office indicators not already configured (you can view in insider risk management settings). <br> - All other settings previously configured aren't updated or changed. <br> - Analytics: On (thresholds for triggering events in policies are the default settings determined by [Analytics recommendations](/microsoft-365/compliance/insider-risk-management-settings#analytics).) |
 | A new insider risk policy | - Policy template: [Data leaks](/microsoft-365/compliance/insider-risk-management-policy-templates#data-leaks) <br> - Policy name: Adaptive Protection policy for Insider Risk Management <br> - Policy scope for users and groups: All users and groups <br> - Priority content: None <br> - Triggering events: Selected exfiltration events (you can view in insider risk management settings) <br> - Policy indicators: A subset of Office indicators (you can view in insider risk management settings) <br> - Risk score boosters: Activity is above user's usual activity for that day |
 | Adaptive Protection risk levels | - Elevated risk level: Users must have at least three high severity exfiltration sequences <br> - Moderate risk level: Users must have at least two high severity activities (excluding some types of downloads) <br> - Minor risk level: Users must have at least one high severity activity (excluding some types of downloads) |
 | Two new DLP policies | [Adaptive Protection policy for Endpoint DLP](/microsoft-365/compliance/dlp-adaptive-protection#policy-values-for-devices-dlp-policy) <br><br> - Elevated risk level rule: Blocked <br> - Moderate/Minor risk level rule: Audit <br> - Policy starts in test mode (audit only) <br><br> [Adaptive Protection policy for Teams and Exchange DLP](/microsoft-365/compliance/dlp-adaptive-protection#policy-values-for-teams-and-exchange-online-dlp-policy) <br><br> - Elevated risk level rule: Blocked <br> - Moderate/Minor risk level rules: Audit <br> - Policy starts in test mode (audit only) |
 |||
 
-Once the quick setup process is started, it may take up to 72 hours before the associated insider risk management and DLP policies are created and you can expect to see Adaptive Protection risk levels and DLP actions applied to applicable user activities.
+Once the quick setup process is started, it may take up to 72 hours before the associated insider risk management and DLP policies are created and you can expect to see Adaptive Protection risk levels and DLP actions applied to applicable user activities. Administrators will receive a notification email once the quick setup process is completed.
 
 ### Custom setup
 
@@ -199,7 +200,7 @@ To view detailed insider risk and Adaptive Protection information for a specific
 The **Adaptive Protection summary** tab aggregates information in three sections:
 
 - **Adaptive Protection**: This section displays information about the current *Risk level*, *Risk level assigned on*, and *Risk level reset on* for the user.
-- **DLP policies in scope (dynamic)**: This section displays all the DLP policies currently in scope for the user and the start and end date for the policy.
+- **DLP policies in scope (dynamic)**: This section displays all the DLP policies currently in scope for the user and the start and end date for the policy. This is based on the risk level for the user and DLP policy configuration for risk levels. For example, if a user has activities that have been defined as *Elevated* risk levels for insider risk management policies, and two DLP policies are configured with the *Elevated* risk level condition, these two DLP policies will be displayed here for the user.
 - **Insider risk policy for Adaptive Protection**: This section displays the insider risk management policy assigned in Adaptive Protection that applies to the user.
 
 SCREENSHOT?
@@ -211,7 +212,7 @@ The **DLP policies** page displays all DLP policies that are using the **User's 
 - **Policy name**: The name of the DLP policy.
 - **Policy state**: The current state of the policy. Values are *Active* or *Inactive*.
 - **Policy location**: The [locations](/microsoft-365/compliance/dlp-policy-reference#locations) included in the DLP policy. Currently, Adaptive Protection only supports Exchange, Teams, and Devices.
-- **Risk levels included**: The risk levels included in the DLP policy. The options are *Elevated*, *Moderate*, or *Minor* risk levels.
+- **Risk levels included**: The risk levels included in the DLP policy using the **User's risk level for adaptive protection is** condition. The options are *Elevated*, *Moderate*, or *Minor* risk levels.
 - **Policy status**: The current [status](/microsoft-365/compliance/create-test-tune-dlp-policy#where-to-start-with-data-loss-prevention) of the DLP policy. The options are *On* or *Test with notifications*.
 - **Created**: The date the DLP policy was created.
 - **Last modified**: The date the DLP policy was last edited.
