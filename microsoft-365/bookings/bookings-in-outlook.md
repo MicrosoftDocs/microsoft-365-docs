@@ -72,7 +72,7 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
    ```PowerShell
      Set-SharingPolicy "Default Sharing Policy" -Domains @{Add="Anonymous:CalendarSharingFreeBusySimple"}
    ```
-3.    For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyAction as one of the domains.
+3. For mailboxes that get assigned a customized SharingPolicy, the policy must have Anonymous:SharingPolicyAction as one of the domains.
 
    ```Powershell:
       get-mailbox adam@contoso.com | Format-List SharingPolicy
