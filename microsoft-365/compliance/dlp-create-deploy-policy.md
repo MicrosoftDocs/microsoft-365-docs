@@ -28,7 +28,7 @@ description: "Scenarios for creating and deploying DLP policies"
 
 <!--If anyone asks why create and deploy are lumped into one article and not separated, it is because the deployment controls that this article covers are ONLY available in the policy creation or editing flow. The deployment controls are set in the creation or editing tool-->
 
-There are many configuration options in a Microsoft Purview Data Loss Prevention (DLP) policy and, each option changes the policy's behavior. This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options. Once you familiarize yourself with these scenarios, you'll be comfortable using the DLP policy creation UX to create your own policies. 
+There are many configuration options in a Microsoft Purview Data Loss Prevention (DLP) policy. Each option changes the policy's behavior. This article presents some common intent scenarios for policies that you'll map to configuration options. Then it walks you through configuring those options. Once you familiarize yourself with these scenarios, you'll be comfortable using the DLP policy creation UX to create your own policies. 
 
 How you deploy a policy is as important policy design. You have [multiple options to control policy deployment](#deployment). This article shows you how to use these options so that the policy achieves your intent while avoiding costly business disruptions.  
 
@@ -83,7 +83,7 @@ Here's a list of applicable role groups. To learn more, see To learn more about 
 
 ## Policy creation scenarios
 
-The previous article [Design a DLP policy](dlp-policy-design.md) introduced you to the methodology of creating a policy intent statement and then mapping that to policy configuration options. This section takes those examples, plus a few more and walks you through the actual policy creation process. You should work through these scenarios in your test environment to familiarize yourself with the policy creation UI.
+The previous article [Design a DLP policy](dlp-policy-design.md) introduced you to the methodology of creating a policy intent statement and then mapping that intent statement to policy configuration options. This section takes those examples, plus a few more and walks you through the actual policy creation process. You should work through these scenarios in your test environment to familiarize yourself with the policy creation UI.
 
 There are so many configuration options in the policy creation flow that it's not possible to cover every, or even most configurations. So this article covers several of the most common DLP policy scenarios. Going through these will give you hands on experience across a broad range of configurations.
 
@@ -185,7 +185,7 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
  
 1. Choose **Next** > **Keep it off** > **Next** > **Submit**.
 
-### Scenario 2 Monitor or restrict user activities on sensitive service domains
+<!--### Scenario 2 Monitor or restrict user activities on sensitive service domains
 
 Use this scenario when you want to audit or block these user activities on a website.
 
@@ -219,7 +219,7 @@ This scenario requires that you already have devices onboarded and reporting int
 1. Select **Add**.
 1. Select the user activities you want to monitor or restrict and the actions you DLP to take in response to those activities.
 1. Finish configuring the rule and policy and apply it.
-
+-->
 <!--
 ### Scenario 2
 
@@ -263,8 +263,6 @@ There are three axes you can use to control the policy deployment process, the s
 |Test with policy tips   |  Policy should be scoped to target a pilot group and then expand the scope as you tune the policy       |- You can configure any action </br>- No user impact from configured actions </br> - Users can receive policy tips and alerts </br>- Admin sees alerts and can track activities        | 
 |Turn it on| All targeted location instances |- All configured actions are enforced on user activities </br>- Admin sees alerts and can track activities  |
 |Keep it off| n/a  | n/a  |
-
-
 
 #### State
 
