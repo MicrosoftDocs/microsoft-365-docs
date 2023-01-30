@@ -61,7 +61,6 @@ Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalo
 - **Microsoft Defender for Business servers** (*recommended for small and medium-sized businesses who have [Microsoft Defender for Business](../defender-business/mdb-overview.md)*). To learn more, see [How to get Microsoft Defender for Business servers](../defender-business/get-defender-business-servers.md).
 - **Microsoft Defender for Endpoint for Servers**. See [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
-
 ## Start a trial
 
 - To try Defender for Endpoint, go to the [Defender for Endpoint trial sign-up page](https://go.microsoft.com/fwlink/p/?LinkID=2168109).
@@ -69,7 +68,7 @@ Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalo
 
 ## Mixed licensing scenarios
 
-A mixed licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions. Some examples are described in the following table: 
+A mixed licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions. The following table describes examples of mixed-licensing scenarios: 
 
 | Scenario | Description |
 |:---|:---|
@@ -81,6 +80,8 @@ A mixed licensing scenario is a situation in which an organization is using a mi
 
 - Apply *either* Defender for Endpoint Plan 1 *or* Plan 2 settings to all your devices; or
 - Use mixed mode, and apply Defender for Endpoint Plan 1 settings to some devices, and Defender for Endpoint Plan 2 to other devices.
+
+You can also use a newly added license usage report to track status. 
 
 See [Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md).
 
