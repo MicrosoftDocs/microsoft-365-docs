@@ -95,8 +95,8 @@ The following list describes what happens in the Tenant Allow/Block List when yo
 
   - If the message was not blocked, and an allow entry for the sender is not created, it won't show on the **Spoofed senders** tab or the **Domains & addresses** tab.
 
-By default, allow entries for **domains and email addresses**, **files** and **URLs** are created for 30 days while Allow entries for **spoofed senders** never expire.
-Microsoft will either learn from the allow entries for **domains and email addresses**, **files** and **URLs** within those 30 days or automatically extend it for you.
+By default, allow entries for **domains and email addresses**, **files** and **URLs** are created for 30 days, while allow entries for **spoofed senders** never expire.
+Microsoft will either learn from the allow entries for **domains and email addresses**, **files** and **URLs** within those 30 days, or automatically extend it for you.
 
 > [!NOTE]
 > Microsoft does not allow you to create allow entries directly as it leads to creation of allows that are not needed, thus exposing the customer's tenant to malicious emails which might otherwise have been filtered by the system.
