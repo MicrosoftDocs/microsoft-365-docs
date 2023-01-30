@@ -19,7 +19,7 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-description: "Learn the basic steps to creating a keyword dictionary in the Microsoft Purview comliance portal."
+description: "Learn the basic steps to creating a keyword dictionary in the Microsoft Purview compliance portal."
 ---
 
 # Create a keyword dictionary
@@ -84,7 +84,7 @@ Use the following steps to create and import keywords for a custom dictionary:
 
 1. Connect to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>.
 
-2. Navigate to **Classifications > Sensitive info types**.
+2. Navigate to **Data Classification > Sensitive info types**.
 
 3. Select **Create** and enter a **Name** and **Description** for your sensitive info type, then select **Next**
 
