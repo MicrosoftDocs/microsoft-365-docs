@@ -45,6 +45,10 @@ Use these steps to perform a DLP policy migration:
 - [Step 7: View the migration report](#step-7-view-the-migration-report)
 - [Next Steps: After policy import](#next-steps-after-policy-import)
 
+## Interactive guide
+
+Check out this [interactive guide](https://mslearn.cloudguides.com/guides/Use%20the%20Microsoft%20Purview%20DLP%20migration%20assistant) for a visual walk through of the migration process.
+
 ### Step 1: Log in to your account
 
 After you've installed and launched the migration assistant, you need to log in.
