@@ -23,7 +23,7 @@ ms.collection:
 
 Up until recently, if you're using multiple Microsoft endpoint security solutions, the highest functional subscription would set the experience for your tenant. For example, if some users were assigned licenses for Defender for Endpoint Plan 1, and other users were assigned Defender for Endpoint Plan 2, all licensed users would receive Defender for Endpoint Plan 2 capabilities. And, starting a trial or purchasing licenses for a higher subscription would change the tenant experience to the higher level experience. 
 
-**You can now manage your subscription settings to accommodate [mixed licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios)**! You can:
+**The ability to manage your subscription settings to accommodate [mixed licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is now in preview**! With these capabilities, you can:
 
 - **Set your tenant to mixed mode and use device tags** (*recommended*) to specify which devices will receive features and capabilities from each plan; OR
 - **Use the features and capabilities from one plan across all devices**.
@@ -32,7 +32,7 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 > - Mixed-licensing scenarios only to client endpoints. All server devices running Windows Server or Linux should have relevant Defender for Server P2 licenses and capabilities. Tagging server devices won’t change their subscription state.
 > - It might take up to one day for your usage report to reflect the active usage of your devices. 
 > - Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) is not supported for the Defender for Endpoint mixed-licensing scenarios described in this article. Make sure to follow the procedures in this article to try mixed-license scenarios in your environment.
-> - You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2.
+> - You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2. Make sure that you have opted in to receive [preview features](preview.md).
 > - To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
 >    - Security Admin
 >    - Global Admin
@@ -77,7 +77,7 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 4. A **Subscription settings** flyout opens. Choose one plan for all users and devices, and then select **Done**. It can take up to three hours for your changes to be applied.
 
    If you chose to apply Defender for Endpoint Plan 1 to all devices, proceed to [Validate that devices are receiving only Defender for Endpoint Plan 1 capabilities](#validate-that-a-device-is-receiving-only-defender-for-endpoint-plan-1-capabilities).
-   
+
 ---
 
 ## Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities
