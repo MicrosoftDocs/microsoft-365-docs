@@ -20,6 +20,7 @@ ms.collection:
   - m365-security
   - tier2
 ms.topic: conceptual
+ms.date: 08/11/2022
 ---
 
 # Work with query results in guided mode
