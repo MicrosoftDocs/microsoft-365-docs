@@ -461,8 +461,6 @@
        href: services-for-non-customers.md
      - name: Configure EOP to deliver spam to Junk Email folders in hybrid (Exchange)
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
-     - name: Monitor for leaks of personal data
-       href: monitor-for-leaks-of-personal-data.md
      - name: SIEM server integration
        href: siem-server-integration.md
      - name: SIEM threat intelligence integration

@@ -215,5 +215,5 @@ can't use the below image it contains a non-approved name.
 
 ## Related articles
 
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md)
