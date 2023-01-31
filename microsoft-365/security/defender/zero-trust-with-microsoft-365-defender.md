@@ -1,0 +1,59 @@
+---
+title: Zero Trust with Microsoft 365 Defender
+description: Microsoft 365 Defender contributes to a strong Zero Trust strategy and architecture
+keywords: Zero Trust, Microsoft 365 Defender, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.service: microsoft-365-security
+ms.subservice: m365d
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+  - NOCSH
+ms.author: macapara
+author: mjcaparas
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection:
+  - m365-security
+  - tier1
+ms.custom: 
+
+ms.topic: conceptual
+adobe-target: true
+---
+
+# Zero Trust with Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+**Applies to:**
+
+- Microsoft 365 Defender
+
+Microsoft 365 Defender contributes to a strong Zero Trust strategy and architecture by providing extended detection and response. Microsoft 365 Defender works together with other Microsoft extended detection and response (XDR) tools and can also be integrated with Microsoft Sentinel.
+
+:::image type="content" source="../../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="The process of adding Microsoft 365 Defender to the Zero Trust architecture" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
+
+In the illustration: Microsoft 365 Defender provides XDR capabilities for protecting:
+- Endpoints, including laptops and mobile devices
+- Data in Office 365, including email
+- Cloud apps, including other SaaS apps that your organization uses
+- On-premises AD DS and AD FS servers
+
+To add Microsoft 365 Defender to your Zero Trust strategy and architecture, go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components.
+
+|Includes|Prerequisites|Doesn't include|
+|---------|---------|---------|
+|Set up the evaluation and pilot environment for all components: <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender for Endpoint</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats|See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.| Azure AD Identity Protection is not included in this solution guide. It is included in [Step 1. Configure Zero Trust identity and device access protection](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
+
+To learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture, see [Zero Trust deployment plan with Microsoft 365](../Microsoft-365-zero-trust.md).
+
+To learn more about Zero Trust and how to build an enterprise-scale strategy and architecture, see the [Zero Trust Guidance Center](/security/zero-trust/?view=o365-worldwide). 
+
+
+
+
+
