@@ -376,22 +376,31 @@ To delete an existing Training campaign, do the following steps:
 
 3. Click **Confirm** in the warning dialog that opens.
 
+## Set the training threshold time period
 
-## Set up Training Threshold Time Period ##
-The training threshold time period is the number of days for which a training module will not be re-assigned to a user who has already completed or is actively assigned the same training module during the threshold time period. Training threshold is starts from time of user training module assignment.
+The training threshold time period is the number of days for which a training module will not be re-assigned to a user who meets either of the following criteria:
 
-It is recommended that the number of days for Training threshold assignment exceeds the number of days that a user would have to complete a training module assignment. 
+- They've already completed the same training module during the threshold time period.
+- They're actively assigned the same training module during the threshold time period.
 
-In the training campaign user report - a user may have the following status:
-- **Completed** - user have already completed their training module
-- **In Progress** - user has started their training module
-- **Not Started** - user has not started their training module
-- **Training Already Completed** - user was previously assigned and completed the training module within the training threshold time period
-- **Training Previously Assigned** - user currently has been assigned the training module within the training threshold time period but has not completed the training but can still complete the training module to move it to a "Completed" state
-- **Overdue** - user has not completed training before the assigned module due date
-- **Not Completed** - user has not completed the training module within the assigned module due date and is eligible for the same training module reassignment
+The training threshold starts from the time of user training module assignment.
 
-To set the training threshold, go to **Settings** \> **Training threshold** and update the number of days as needed.
-Select **Save** to update changes.
+We recommend that the number of days for the training threshold assignment is greater than the number of days that a user would have to complete a training module assignment. 
 
-The default number of days for the training threshold is 90 days. To remove training threshold and always assign training, set Threshold time to 0.
+In the training campaign user report, a user may have the following **Status** values:
+
+- **Completed**: The user has already completed their training module.
+- **In Progress**: The user has started their training module.
+- **Not Started**: The user has not started their training module.
+- **Training Already Completed**: The user was previously assigned and completed the training module within the training threshold time period.
+- **Training Previously Assigned**: The user currently has been assigned the training module within the training threshold time period, but has not completed the training. The user can still complete the training module to move it to a **Completed** state.
+- **Overdue**: Thw user has not completed the training before the assigned module due date.
+- **Not Completed**: The user has not completed the training module within the assigned module due date and is eligible for the same training module reassignment.
+
+To set the training threshold, do the following steps:
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Settings** tab. Or, to go directly to the **Settings** tab, use <https://security.microsoft.com/attacksimulator?viewid=setting>.
+
+2. Set the value in days for the training threshold time period. The default value is 90 days. To remove training threshold and always assign training, set value to 0.
+
+3. When you're finished, click **Save**.
