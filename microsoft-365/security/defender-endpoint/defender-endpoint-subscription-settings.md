@@ -50,8 +50,8 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 5. Tag the devices that will receive Defender for Endpoint Plan 1 capabilities (all other devices will receive Defender for Endpoint Plan 2). You can choose to tag your devices manually or by using a dynamic rule.
 
-   - To tag devices manually, create a tag called `License MDE P1` and apply it to devices. To get help with this step, see [Create and manage device tags](machine-tags.md).
-   - To use a dynamic rule, specify a set of criteria based on device name, domain, operating system platform, and/or device tags. Devices that meet the specified criteria will receive the `License MDE P1` tag. <br/>
+   - **To tag devices manually**, create a tag called `License MDE P1` and apply it to devices. To get help with this step, see [Create and manage device tags](machine-tags.md).
+   - **To use a dynamic rule**, specify a set of criteria based on device name, domain, operating system platform, and/or device tags. Devices that meet the specified criteria will receive the `License MDE P1` tag. <br/>
       - You can use the following condition operators: `Equals` / `Not equals`; `Starts with`; or `Contains` / `Does not contain`.
       - For **Device name**, you can use freeform text.
       - For **Domain**, select from a list of domains.
