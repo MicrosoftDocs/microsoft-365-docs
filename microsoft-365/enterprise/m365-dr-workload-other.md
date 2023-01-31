@@ -68,7 +68,7 @@ Starting December 5, 2022, Viva Goals [Customer Data](/privacy/eudb/eu-data-boun
 
 To be considered a tenant in the EUDB:
  
-1. The tenant must have a billing address in a EUDB country or select a country in EUDB country as their residence during free trial sign-up; and 
+1. The tenant must have a *default geography* in a EUDB country or select a country in EUDB country as their residence during free trial sign-up; and 
 1. The tenant must not purchase a Multi-Geo offering
 
 ### Migration
