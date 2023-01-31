@@ -121,6 +121,9 @@
 ###### [Ansible based deployment](linux-install-with-ansible.md)
 ###### [Chef based deployment](linux-deploy-defender-for-endpoint-with-chef.md)
 ###### [Manual deployment](linux-install-manually.md)
+###### [Saltstack based deployment](linux-install-with-saltack.md)
+
+
 ##### [Update](linux-updates.md)
 
 #### [Mobile Threat Defense]()

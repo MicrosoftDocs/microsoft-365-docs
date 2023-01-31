@@ -28,6 +28,19 @@ Microsoft Purview Data Loss Prevention (DLP) policies have many components to co
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## Before you begin
+
+If you are new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
+
+1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
+1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
+    1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+    1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+    1. [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+1. [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article that you're reading now introduces all the components of a DLP policy and how each one influences the behavior of a policy
+1. [Design a DLP policy](dlp-policy-design.md) - this article walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
+1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
+
 ## Policy templates
 
 DLP policy templates are pre-sorted into four categories:
@@ -108,7 +121,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 |On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |Power BI| workspaces | data-in-use | No|
 
-If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
+If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the emails sent by members of that group. Similarly excluding a distribution group will exclude all the emails sent by the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
 If you choose to include or exclude specific SharePoint sites or OneDrive accounts, a DLP policy can contain no more than 100 such inclusions and exclusions. Although this limit exists, you can exceed this limit by applying either an org-wide policy or a policy that applies to entire locations.
 
