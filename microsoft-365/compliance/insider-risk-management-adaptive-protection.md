@@ -33,11 +33,13 @@ Adaptive Protection helps mitigate these potential risks by using:
 Adaptive Protection dynamically assigns appropriate DLP policies to users based on the risk levels defined and analyzed by the machine learning models in insider risk management. With this new capability, static DLP policies become adaptive based on user context, ensuring that the most effective policy, such as blocking data sharing, is applied only to high-risk users while low-risk users can maintain productivity. The policy controls constantly adjust, so when a user's risk level changes, an appropriate policy is dynamically applied to match the new risk level.
 
 > [!IMPORTANT]
-> Insider risk management is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that insider risk management is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
+> The insider risk management solution is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that the insider risk management solution is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country). However, Adaptive Protection (the feature) in insider risk management isn't currently available in the United Arab Emirates, even though other features in insider risk management are supported in the United Arab Emirates.
 
 Watch the following video for a summary of how Adaptive Protection can help identify and mitigate the most critical risks in your organization:
+<br>
+<br>
 
-PLACEHOLDER FOR AP VIDEO - RED TIGER VIDEO LINK NEEDED FROM TINA
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE5fZuO]
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -73,6 +75,12 @@ This risk level setting determines how many days back Adaptive Protection examin
 #### Risk level timeframe
 
 This risk level setting determines how long a risk level remains assigned to a user before it's automatically reset. The default setting is 7 days, but you can choose between 5 and 30 days before resetting the risk level for a user.
+
+Risk levels are also reset for a user when:
+
+- The associated alert for the user is dismissed
+- The associated case for the user is resolved
+- The risk level end date is manually expired
 
 ## Permissions for Adaptive Protection
 
@@ -184,13 +192,15 @@ SCREENSHOT?
 Users that have been assigned a risk level in Adaptive Protection will appear on the **Users assigned risk levels** tab. You can review the following information for each user:
 
 - **Users**: Lists the user name, unless the [Show anonymized versions of usernames](/microsoft-365/compliance/insider-risk-management-settings#privacy) option is selected in insider risk management settings for your organization. if this option is selected, you'll see anonymized user names.
- 
+
     >[!IMPORTANT]
     >To maintain referential integrity, anonymization of usernames (if turned on) isn't preserved for users from Adaptive Protection who have alerts or activity appear outside insider risk management. Actual usernames will appear in related DLP alerts and the activity explorer.
 
 - **Risk level**: The current risk level assigned to the user.
 - **Assigned to user**: The number of days or months that have passed since the user was assigned a risk level.
-- **Risk level resets**: The number of days until the risk level is automatically reset for the user.
+- **Risk level resets**: The number of days until the risk level is automatically reset for the user. 
+
+    To manually reset the risk level for a user, select the user and then select **Expire**. This user's activities will no longer be assigned a risk level. Existing alerts or cases for this user won't be removed. If this user is included in the selected insider risk management policy, a risk level will be assigned again if a triggering event is detected.
 - **Active alerts**: The number of current insider risk management alerts for the user.
 - **Cases confirmed as violation**: The number of confirmed cases for the user.
 - **Case**: The name of the case.
@@ -205,7 +215,7 @@ The **Adaptive Protection summary** tab aggregates information in three sections
 
 - **Adaptive Protection**: This section displays information about the current *Risk level*, *Risk level assigned on*, and *Risk level reset on* for the user.
 - **DLP policies in scope (dynamic)**: This section displays all the DLP policies currently in scope for the user and the start and end date for the policy. This is based on the risk level for the user and DLP policy configuration for risk levels. For example, if a user has activities that have been defined as *Elevated* risk levels for insider risk management policies, and two DLP policies are configured with the *Elevated* risk level condition, these two DLP policies will be displayed here for the user.
-- **Insider risk policy for Adaptive Protection**: This section displays the insider risk management policy assigned in Adaptive Protection that applies to the user.
+- **Insider risk policy for Adaptive Protection**: This section displays any insider risk management policy where the user is currently in-scope.
 
 SCREENSHOT?
 
