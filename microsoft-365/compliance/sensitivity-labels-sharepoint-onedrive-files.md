@@ -101,7 +101,9 @@ Uploading a labeled document, and then extracting and displaying that sensitivit
   - **User access to content expires** is set to a value other than **Never**.
   - **Double Key Encryption** is selected.
 
-    For labels with any of these encryption configurations, the labels aren't displayed to users in Office for the web. Additionally, the new capabilities can't be used with labeled documents that already have these encryption settings. For example, these documents won't be returned in search results, even if they are updated.
+    For labels with any of these encryption configurations, the labels aren't displayed to users in Office for the web. If they are parent labels, this means that users won’t see that label's sublabels, even if the sublabels aren't configured to apply encryption.
+    
+    Additionally, the new capabilities can't be used with labeled documents that already have these encryption settings. For example, these documents won't be returned in search results, even if they are updated.
 
 - For performance reasons, when you upload or save a document to SharePoint and the file's label doesn't apply encryption, the **Sensitivity** column in the document library can take a while to display the label name. Factor in this delay if you use scripts or automation that depend on the label name in this column.
 
