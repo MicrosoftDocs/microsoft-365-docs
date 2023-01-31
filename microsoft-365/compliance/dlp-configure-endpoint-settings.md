@@ -77,6 +77,9 @@ These Windows versions support advanced classification scanning and protection:
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
+> [!TIP]
+> Advanced classification must be enabled to see contextual text (in preview)  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+
 ### File path exclusions
 
 Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
@@ -202,10 +205,7 @@ To find the full path of Mac apps:
 
 To prevent sensitive items from being synced to the cloud by cloud sync apps, like *onedrive.exe*, add the cloud sync app to the **Unallowed apps** list. When an unallowed cloud-sync app tries to access an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Unallowed apps**.  
 
-##### Auto-quarantine (preview)
-
-> [!NOTE]
-> Auto-quarantine is supported in Windows 10 only
+##### Auto-quarantine 
 
 When enabled, Auto-quarantine kicks in when an unallowed app attempts to access a DLP protected sensitive item. Auto-quarantine moves the sensitive item to an admin configured folder and can leave a placeholder **.txt** file in the place of the original. You can configure the text in the placeholder file to tell users where the item was moved to and other pertinent information.  
 
@@ -234,7 +234,7 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 #### Service domains
 
 > [!NOTE]
-> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-purview-extension) installed.
+> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [Microsoft Purview Chrome Extension](dlp-chrome-learn-about.md) installed.
 
 You can control whether sensitive files that are protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
@@ -318,7 +318,7 @@ For the print, copy data and save actions, each website must be listed in a webs
 
 ##### Supported syntax for designating websites in a website group
 
-You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
+Please do not add protocol, e.g. https://, file:// into the URL. You can use a flexible syntax to include and exclude domains, subdomains, websites, and subsites in your website groups.
 
 - use `*` as a wildcard to specify all domains or all subdomains
 - use `/` as a terminator at the end of a URL to scope to that specific site only.

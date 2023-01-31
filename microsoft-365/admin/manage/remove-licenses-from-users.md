@@ -24,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "The method you use to unassign product licenses depends on whether you unassign licenses from specific users or from a specific product."
-ms.date: 01/05/2023
+ms.date: 01/10/2023
 ---
 
 # Unassign Microsoft 365 licenses from users
@@ -42,6 +42,7 @@ You can unassign licenses from users on either the **Active users** page, or on 
 - You must be a Global, License, User admin to unassign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
 - You can [remove licenses from user accounts with Office 365 PowerShell](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
 - You can also [delete user accounts](../add-users/delete-a-user.md) that were assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to assign to someone else.
+- If you're a Cloud Solution Provider (CSP) and you bought products on behalf of a customer, you can't use the **Your products** page to assign or unassign licenses for certain products, like perpetual software. To assign or unassign licenses for those products, [use the Licenses page](#use-the-licenses-page-to-unassign-licenses).
 
 ## Use the Licenses page to unassign licenses
 

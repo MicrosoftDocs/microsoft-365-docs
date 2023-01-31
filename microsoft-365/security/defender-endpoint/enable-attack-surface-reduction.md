@@ -18,8 +18,8 @@ ms.collection:
 - m365-security
 - tier2
 ms.custom: admindeeplinkDEFENDER
-ms.date: 1/18/2022
 search.appverid: met150
+ms.date: 1/11/2023
 ---
 
 # Enable attack surface reduction rules
@@ -60,7 +60,7 @@ To use the entire feature-set of attack surface reduction rules, you need:
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (some rules require that)
 - Windows 10 Enterprise E5 or E3 License
 
-Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), with a Windows E5 license, you get advanced management capabilities including monitoring, analytics, and workflows available in Defender for Endpoint, as well as reporting and configuration capabilities in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
+Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), with a Windows E5 license, you get advanced management capabilities including monitoring, analytics, and workflows available in Defender for Endpoint, as well as reporting and configuration capabilities in the [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) portal. These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
 
 Each ASR rule contains one of four settings:
 
@@ -96,7 +96,7 @@ You can also exclude ASR rules from triggering based on certificate and file has
 
 You can specify individual files or folders (using folder paths or fully qualified resource names). An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
 
-For information about per-rule exclusions, see [Configure ASR rules per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-rules-per-rule-exclusions).
+For information about per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
 
 ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 

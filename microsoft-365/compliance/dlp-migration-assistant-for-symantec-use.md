@@ -45,6 +45,10 @@ Use these steps to perform a DLP policy migration:
 - [Step 7: View the migration report](#step-7-view-the-migration-report)
 - [Next Steps: After policy import](#next-steps-after-policy-import)
 
+## Interactive guide
+
+Check out this [interactive guide](https://mslearn.cloudguides.com/guides/Use%20the%20Microsoft%20Purview%20DLP%20migration%20assistant) for a visual walk through of the migration process.
+
 ### Step 1: Log in to your account
 
 After you've installed and launched the migration assistant, you need to log in.
@@ -61,6 +65,9 @@ After you've installed and launched the migration assistant, you need to log in.
       2. Select **Next**.
 2. Enter your username and select **Login**.
       1. Enter your password in the browser window that opens and select **Sign in**.
+      
+         > [!NOTE]
+         > This application uses Exchange Online PowerShell module. Basic authentication must be enabled in WinRM on the local computer. For more information, see [Prerequisites for the Exchange Online PowerShell module](/powershell/exchange/exchange-online-powershell-v2#prerequisites-for-the-exchange-online-powershell-module).
 3. You need to wait until your login is validated. Simultaneously, the migration assistant fetches information that will be required in later stages of the migration process.
    :::image type="content" source="../media/login-fetching-details.png" alt-text="Screenshot of the screen fetching details.":::
 4. Once you're logged in, choose **Next**.

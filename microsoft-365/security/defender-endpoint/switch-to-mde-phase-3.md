@@ -1,6 +1,6 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint - Onboard
-description: Make the switch to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
+description: Move to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
 keywords: migration, Microsoft Defender for Endpoint, edr
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -21,12 +21,12 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 01/10/2023
+ms.date: 01/12/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
 
-# Switch to Microsoft Defender for Endpoint - Phase 3: Onboard
+# Migrate to Microsoft Defender for Endpoint - Phase 3: Onboard
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -76,7 +76,7 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 (<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 > [!IMPORTANT]
-> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as [Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). 
+> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as either Defender for Endpoint for Servers, or [Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 ## Step 2: Run a detection test
 
@@ -145,7 +145,7 @@ If at this point you have:
 
 - Microsoft Defender Antivirus is installed and enabled,
 
-Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, Microsoft Defender Antivirus switches from passive mode to active mode. In most cases, this happens automatically. 
+Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, Microsoft Defender Antivirus changes from passive mode to active mode. In most cases, this happens automatically. 
 
 > [!IMPORTANT]
 > If, for some reason, Microsoft Defender Antivirus does not go into active mode after you have uninstalled your non-Microsoft antivirus/antimalware solution, see [Microsoft Defender Antivirus seems to be stuck in passive mode](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode).
@@ -162,9 +162,8 @@ Now that you have onboarded to Defender for Endpoint, and you have uninstalled y
 
 To learn more, see [Device inventory](machines-view-overview.md).
 
-## Next steps
+## Next step
 
 **Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
-
 
 - [Manage Defender for Endpoint, post migration](manage-mde-post-migration.md).

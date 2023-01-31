@@ -4496,6 +4496,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/admin/setup/employee-quick-setup.md",
+      "redirect_url": "https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/apply-labels-to-personal-data-in-office-365.md",
       "redirect_url": "/compliance/regulatory/gdpr",
       "redirect_document_id": false
@@ -7967,7 +7972,7 @@
     },
     {
       "source_path": "microsoft-365/business-video/employee-quick-setup.md",
-      "redirect_url": "/microsoft-365/admin/setup/employee-quick-setup",
+      "redirect_url": "https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1",
       "redirect_document_id": false
     },
     {
@@ -10653,6 +10658,11 @@
   {
       "source_path": "microsoft-365/compliance/ediscovery-create-report-on-and-delete-multiple-content-searches.md",
       "redirect_url": "/microsoft-365/compliance/ediscovery-create-reports-and-delete-multiple-content-searches",
+      "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/compliance/microsoft-365-compliance-center-redirection.md",
+      "redirect_url": "/microsoft-365/compliance/microsoft-365-compliance-center",
       "redirect_document_id": false
   }
  ]
