@@ -69,12 +69,12 @@ The following table lists the available tools based on the endpoint that you nee
 
 | Endpoint     | Tool options                       |
 |--------------|------------------------------------------|
-| **Windows Client**  |     [Mobile Device Management / Microsoft Intune](configure-endpoints-mdm.md) <br> [Group Policy](configure-endpoints-gp.md) <br> [Local script (up to 10 devices)](configure-endpoints-script.md) <br>[VDI scripts](configure-endpoints-vdi.md)  |
-| **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [VDI scripts](configure-endpoints-vdi.md) <br> [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md)  |
-| **macOS**    | [Local scripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
-| **Linux Server** | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)  |
-| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)           |
-| **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
+|**Windows**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
+|**Windows servers<br><br>Linux servers** | [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
+|**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
+|**Linux servers**|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br> [Saltstack](linux-install-with-saltack.md)|
+|**Android**|[Microsoft Endpoint Manager](android-intune.md)|
+|**iOS**|[Microsoft Endpoint Manager](ios-install.md) <br> [Mobile Application Manager](ios-install-unmanaged.md) |
 
 
 > [!NOTE]
