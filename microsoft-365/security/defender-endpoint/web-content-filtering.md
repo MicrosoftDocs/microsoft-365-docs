@@ -264,7 +264,7 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** \> **Systeminfo** \> **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
 
-Only Microsoft Edge is supported and network protection is not supported on Windows 10 Azure Virtual Desktop multi-session hosts.
+Only Microsoft Edge is supported and network protection is not supported on Windows Azure Virtual Desktop multi-session hosts.
 
 Network protection does not currently support SSL inspection, which might result in some sites being allowed by web content filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this might block their access to other services associated with the same website. 
 
