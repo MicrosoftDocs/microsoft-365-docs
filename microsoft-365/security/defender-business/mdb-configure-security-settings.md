@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/26/2023
+ms.date: 01/31/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -88,7 +88,15 @@ Depending on whether you're using the Microsoft 365 Defender portal or Intune to
 
 ## Enable standard attack surface reduction rules
 
-[Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md)
+[Attack surface reduction capabilities](mdb-asr.md) in Defender for Business include:
+
+- Attack surface reduction rules (see [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules)). 
+- Controlled folder access (see [Set up controlled folder access](mdb-asr.md#set-up-controlled-folder-access)).
+- Network protection (on by default with [next-generation protection](mdb-next-gen-configuration-settings.md)).
+- Web protection (on by default with [web content filtering](#set-up-web-content-filtering)).
+- Firewall protection (on by default with [firewall policies](mdb-firewall.md)).
+
+There are three standard attack surface reduction rules you should turn on as soon as possible. See [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules).
 
 ## Set up web content filtering
 
