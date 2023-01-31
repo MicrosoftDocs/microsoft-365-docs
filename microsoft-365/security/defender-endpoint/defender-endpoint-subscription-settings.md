@@ -62,7 +62,7 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
  
    Device tags are visible in the **Device inventory** view and in the [Defender for Endpoint APIs](apis-intro.md).
 
-6. Save your rule and wait for up to three (3) hours for tags to be applied. 
+6. Save your rule and wait for up to three (3) hours for tags to be applied. Then, proceed to [Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities](#validate-that-a-device-is-receiving-only-defender-for-endpoint-plan-1-capabilities).
 
 ## [**Choose one plan**](#tab/oneplan)
 
@@ -83,7 +83,15 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 
 ## Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities
 
-1. In the 
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Assets** > **Devices**, and select a device. A flyout opens.
+
+2. In the flyout, select the link to view the device details page.
+
+3. Confirm the following conditions:
+
+   - You do not see vulnerabilities or security recommendations for the device.
+   - A new field called **Device subscription state** has been added to the device properties. 
+   - Running a [simulated attack](attack-simulations.md) doesn't result in [EDR detections](overview-endpoint-detection-response.md).
 
 ## Review license usage
 
