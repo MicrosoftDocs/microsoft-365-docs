@@ -28,15 +28,6 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 - **Set your tenant to mixed mode and use device tags** (*recommended*) to specify which devices will receive features and capabilities from each plan; OR
 - **Use the features and capabilities from one plan across all devices**.
 
-> [!IMPORTANT]
-> - Mixed-licensing scenarios only to client endpoints. All server devices running Windows Server or Linux should have relevant Defender for Server P2 licenses and capabilities. Tagging server devices won’t change their subscription state.
-> - Make sure to follow the procedures in this article to try mixed-license scenarios in your environment. Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) doesn't set your tenant to mixed mode. 
-> - You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2. Make sure that you have opted in to receive [preview features](preview.md).
-> - To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
->    - Security Admin
->    - Global Admin
->    - License Admin + MDE Admin
-
 ## [**Use mixed mode**](#tab/mixed)
 
 ## Set your tenant to mixed mode and use device tags
@@ -46,7 +37,7 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 > - Make sure to follow the procedures in this article to try mixed-license scenarios in your environment. Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) doesn't set your tenant to mixed mode. 
 > - You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2. Make sure that you have opted in to receive [preview features](preview.md).
 
-1. As an admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. As a Security Admin or Global Admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report 
 
