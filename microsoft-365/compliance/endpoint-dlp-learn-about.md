@@ -28,7 +28,7 @@ description: "Endpoint data loss prevention extends monitoring of file activitie
 
 You can use Microsoft Purview Data Loss Prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
-**Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS (three latest released versions) devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
+**Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS (three latest released versions) devices. Once devices are onboarded into the Microsoft Purview solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](dlp-create-deploy-policy.md).
 
 > [!TIP]
 > If you are looking for device control for removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
@@ -96,7 +96,7 @@ If you only want monitoring data from policy matches, you can turn off the **Alw
 > If the **Always audit file activity for devices** setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited even if the device is not targeted by any policy.
 
 > [!TIP]
-> To ensure activities are audited for all supported file types, create a [custom DLP policy](create-test-tune-dlp-policy.md).
+> To ensure activities are audited for all supported file types, create a [custom DLP policy](dlp-create-deploy-policy.md).
 
 Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed for these files types:
 
@@ -240,7 +240,7 @@ Now that you've learned about Endpoint DLP, your next steps are:
 - [Getting started with Microsoft Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](../security/defender-endpoint/configure-machines-onboarding.md)
 - [Insider risk management](insider-risk-management.md)

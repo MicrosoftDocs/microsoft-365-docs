@@ -567,7 +567,6 @@ See, [Scenario 8 Network exceptions](endpoint-dlp-using.md#scenario-8-network-ex
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [Onboard Windows 10 and Windows 11 devices into Microsoft Purview overview](/microsoft-365/compliance/device-onboarding-overview)
@@ -575,4 +574,4 @@ See, [Scenario 8 Network exceptions](endpoint-dlp-using.md#scenario-8-network-ex
 - [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
 - [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
