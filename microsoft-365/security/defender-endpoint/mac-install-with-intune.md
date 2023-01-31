@@ -57,7 +57,6 @@ The following table summarizes the steps you would need to take to deploy and ma
 |---|---|---|
 |[Download the onboarding package](#download-the-onboarding-package)|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
 |[Approve System Extension for Microsoft Defender for Endpoint](#approve-system-extensions)|MDATP_SysExt.xml|N/A|
-|[Approve Kernel Extension for Microsoft Defender for Endpoint   ####JOEY, This part could be removed## ](#download-the-onboarding-package)|MDATP_KExt.xml|N/A|
 |[Network Extension policy](#network-filter)|MDATP_NetExt.xml|N/A|
 |[Configure Microsoft AutoUpdate (MAU)](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|
 |[Microsoft Defender for Endpoint configuration settings](mac-preferences.md#intune-full-profile) <p> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`.|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
@@ -151,31 +150,10 @@ MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "THIS PROFILE IS NEEDED
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 1. Review and create this configuration profile.
 
-### Kernel Extensions ## Let's remove it please####
 
-This profile is needed for macOS 10.15 (Catalina) or older. It will be ignored on newer macOS.
-   
+### Full Disk Access  
 
-MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "THIS PROFILE IS NEEDED FOR "macOS 11 (Big Sur) OR LATER"
-JOEY- Yes Please 
-> [!CAUTION]
-> Apple Silicon (M1) devices do not support KEXT. Installation of a configuration profile consisting KEXT policies will fail on these devices.
-
-1. Select **Create Profile** under **Configuration Profiles**.
-1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Extensions**. Click **Create**.
-1. In the **Basics** tab, give a name to this new profile.
-1. In the **Configuration settings** tab, expand **Kernel Extensions**.
-1. Set **Team identifier** to **UBF8T346G9** and click **Next**.
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mac-kernel-extension-intune2.png" alt-text="Allowed team identifiers for Kernel extensions." lightbox="images/mac-kernel-extension-intune2.png":::
-
-1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
-1. Review and create this configuration profile.
-
-### Full Disk Access  ###Only the first part###
- > [!NOTE]
-> 
+> [!NOTE]
 > Enabling **TCC** (Transparency, Consent & Control) through an Mobile Device Management solution such as [Intune](mac-install-with-intune.md), will eliminate the risk of Defender for Endpoint losing **Full Disk Access** Authorization to function properly.
 >This configuration profile grants Full Disk Access to Microsoft Defender for Endpoint. If you previously configured Microsoft Defender for Endpoint through Intune, we recommend you update the deployment with this configuration profile.
 
