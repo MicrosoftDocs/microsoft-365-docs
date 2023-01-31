@@ -21,7 +21,7 @@ ms.collection:
 
 # Manage Microsoft Defender for Endpoint subscription settings across devices
 
-A mixed-licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions, such as Defender for Endpoint Plan 1 and Plan 2. **The ability to manage your subscription settings to accommodate [mixed licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is currently in preview**! With these capabilities, you can:
+A [mixed licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions, such as Defender for Endpoint Plan 1 and Plan 2. **The ability to manage your subscription settings to accommodate mixed licensing scenarios is currently in preview**! With these capabilities, you can:
 
 - **Set your tenant to mixed mode and tag devices** to determine which devices will receive features and capabilities from each plan (we call this option *mixed mode*); **OR**
 - **Use the features and capabilities from one plan across all your devices**.
