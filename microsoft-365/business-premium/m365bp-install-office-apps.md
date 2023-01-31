@@ -14,7 +14,6 @@ ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
-- highpri
 - tier1
 ms.custom:
 - MiniMaven

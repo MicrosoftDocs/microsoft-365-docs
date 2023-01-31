@@ -1193,6 +1193,8 @@
             href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
+          - name: Create and deploy data loss prevention policies
+            href: dlp-create-deploy-policy.md
           - name: Configure endpoint data loss prevention settings
             href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
@@ -1741,12 +1743,12 @@
           href: compliance-manager-assessments.md
         - name: Learn about assessment templates
           href: compliance-manager-templates.md
-        - name: Create assessment templates
+        - name: Create a custom template
           href: compliance-manager-templates-create.md
-        - name: Extend assessment templates
-          href: compliance-manager-templates-extend.md
-        - name: Modify assessment templates
+        - name: Modify a custom template
           href: compliance-manager-templates-modify.md
+        - name: Extend a Microsoft template
+          href: compliance-manager-templates-extend.md
         - name: Format template data in Excel
           href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
