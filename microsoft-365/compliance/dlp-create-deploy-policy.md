@@ -66,14 +66,14 @@ The account you use to create and deploy policies must be a member of one of the
 
 There are roles and role groups that you can use to fine tune your access controls.
 
-Here's a list of applicable roles. To learn more, see [Permissions in the Microsoft Purview compliance portal](/compliance/microsoft-365-compliance-center-permissions).
+Here's a list of applicable roles. To learn more, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups. To learn more, see To learn more about them, see [Permissions in the Microsoft Purview compliance portal](/compliance/microsoft-365-compliance-center-permissions).
+Here's a list of applicable role groups. To learn more, see To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
