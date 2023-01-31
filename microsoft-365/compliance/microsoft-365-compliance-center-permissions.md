@@ -71,9 +71,8 @@ The following Microsoft Purview compliance solutions support administrative unit
 
 |**Solution**|**Description of support**|
 |:-----------|:-------------------------|
-| Microsoft Purview Audit (Premium) |  |
 | Microsoft Purview Data Loss Protection | Includes support for associated alerts and Activity Explorer |
-| Microsoft Purview Information Protection | Includes support for associated alerts and Activity Explorer |
+| [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) | Includes support for [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) |
 |||
 
 ### Prerequisites for administrative units
@@ -94,7 +93,10 @@ Complete the following steps to configure administrative units for Microsoft Pur
     >[!NOTE]
     >You can't add groups to an administrative unit that uses dynamic membership rules. If needed, create two administrative units, one for users and one for groups.
 
-4. Complete the steps in each supported compliance solution
+4. Complete the steps for configuring administrative units in each supported compliance solution:
+
+    - [Sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-admin-units) in Information Protection
+    - DLP policies
 
 ## Add users to a compliance role group
 
