@@ -110,8 +110,8 @@ The templates listed below may be purchased by your organization. Certain licens
 - AICPA/CICA Generally Accepted Privacy Principles (GAPP)  
 - ARMA - Implementing the Generally Accepted Record Keeping Principles (GARP)  
 - [CDSA Content Protection & Security Standard](/compliance/regulatory/offering-cdsa)  
-- [CIS Implementation Group 1, Group 2, Group 3](/compliance/regulatory/offering-cis-benchmark)
-- CIS Microsoft 365 Foundation Level 1 and 2
+- CIS Critical Security Controls Implementation Group (IG) 1, IG 2, IG 3
+- [CIS Microsoft 365 Foundations Benchmark Level 1 and 2](/compliance/regulatory/offering-cis-benchmark)
 - [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM)](/compliance/regulatory/offering-csa-star-attestation)
 - COBIT 5  
 - FINRA Cybersecurity Checklist  
