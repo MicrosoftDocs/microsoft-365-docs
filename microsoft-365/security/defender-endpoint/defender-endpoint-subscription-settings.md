@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 01/03/2023
+ms.date: 01/30/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -28,38 +28,62 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 - **Set your tenant to mixed mode and use device tags** (*recommended*) to specify which devices will receive features and capabilities from each plan; OR
 - **Use the features and capabilities from one plan across all devices**.
 
+> [!IMPORTANT]
+> - Mixed-licensing scenarios only to client endpoints. All server devices running Windows Server or Linux should have relevant Defender for Server P2 licenses and capabilities. Tagging server devices won’t change their subscription state.
+> - It might take up to one day for your usage report to reflect the active usage of your devices. 
+> - Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) is not supported for the Defender for Endpoint mixed-licensing scenarios described in this article. Make sure to follow the procedures in this article to try mixed-license scenarios in your environment.
+> - You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2.
+> - To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
+>    - Security Admin
+>    - Global Admin
+>    - License Admin + MDE Admin
+
 ## [**Use mixed mode**](#tab/mixed)
 
 ## Set your tenant to mixed mode and use device tags
 
-1. Go to **Settings** > **Endpoints** > **Licenses**.
+1. As an admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Under **Subscription state**, select **Manage subscription settings**. (If you don't see **Manage subscription settings**, it's because you have only one subscription applied to your tenant, and no further action is needed.)
+2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report 
 
-3. A **Subscription settings** flyout opens. Choose the option to use multiple plans and use device tagging for mixed licenses.
+3. Under **Subscription state**, select **Manage subscription settings**. (If you don't see **Manage subscription settings**, it's because you have only one subscription applied to your tenant, and no further action is needed.)
 
-4. Tag the devices that will receive Defender for Endpoint Plan 1 capabilities (all other devices will receive Defender for Endpoint Plan 2). You can choose to tag your devices manually or by using a dynamic rule.
+4. A **Subscription settings** flyout opens. Choose the option to use Defender for Endpoint Plan 1 and Plan 2. (No changes will occur until devices are tagged as per the next step.)
 
-   - To tag devices manually, create a tag called `License MDE P1`. To get help with this step, see [Create and manage device tags](machine-tags.md).
-   - To use a dynamic rule, specify a set of criteria based on device name, domain, operating system platform, and/or device tags. Devices that meet the specified criteria will receive the `License MDE P1` tag.
-   - Device tags are visible in the **Device inventory** view and in the [Defender for Endpoint APIs](apis-intro.md).
+5. Tag the devices that will receive Defender for Endpoint Plan 1 capabilities (all other devices will receive Defender for Endpoint Plan 2). You can choose to tag your devices manually or by using a dynamic rule.
 
-5. Save your rule and wait for up to three (3) hours for tags to be applied. 
+   - To tag devices manually, create a tag called `License MDE P1` and apply it to devices. To get help with this step, see [Create and manage device tags](machine-tags.md).
+   - To use a dynamic rule, specify a set of criteria based on device name, domain, operating system platform, and/or device tags. Devices that meet the specified criteria will receive the `License MDE P1` tag. <br/>
+      - You can use the following condition operators: `Equals` / `Not equals`; `Starts with`; or `Contains` / `Does not contain`.
+      - For **Device name**, you can use freeform text.
+      - For **Domain**, select from a list of domains.
+      - For **OS platform**, select from a list of operating systems.
+      - For **Tag**, use freeform text (Note that the `License MDE P1` tag must be used to tag the devices that should receive Defender for Endpoint Plan 1 capabilities).
+ 
+   Device tags are visible in the **Device inventory** view and in the [Defender for Endpoint APIs](apis-intro.md).
+
+6. Save your rule and wait for up to three (3) hours for tags to be applied. 
 
 ## [**Choose one plan**](#tab/oneplan)
 
 ## Choose to use one plan for all devices
 
-1. Go to **Settings** > **Endpoints** > **Licenses**.
+1. As an admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Under **Subscription state**, select **Manage subscription settings**. (If you don't see **Manage subscription settings**, it's because you have only one subscription applied to your tenant, and no further action is needed.)
+2. Go to **Settings** > **Endpoints** > **Licenses**.
 
-3. A **Subscription settings** flyout opens. Choose one plan for all users and devices, and then select **Done**. 
+3. Under **Subscription state**, select **Manage subscription settings**. (If you don't see **Manage subscription settings**, it's because you have only one subscription applied to your tenant, and no further action is needed.)
+
+4. A **Subscription settings** flyout opens. Choose one plan for all users and devices, and then select **Done**. 
 
 > [!NOTE]
 > It can take up to three hours for your changes to take effect.
 
 ---
+
+## Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities
+
+1. In the 
 
 ## Review license usage
 
