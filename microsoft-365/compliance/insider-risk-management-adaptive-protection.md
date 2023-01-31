@@ -152,7 +152,14 @@ To customize a risk level for your policy, complete the following steps:
     - **Specific user activity**
 
 3. If you've selected the **Alert generated or confirmed for a user** option, you'll choose the severity levels for alerts that are generated or confirmed for a user that should use this risk level. You can keep the *Severity for generated alerts* and the *Severity for confirmed alerts* conditions or remove one of these conditions if you only want to use one. If you need to add one of these conditions back, select **Add condition** and select the condition. For each condition, choose the severity level that should be applied for the condition (*High*, *Medium*, or *Low*). If the **any** of the conditions are met, the risk level is assigned to a user.
-4. If you've selected the **Specific user activity** option, you'll choose the activity to detect, its severity, and number of daily occurrences during the past activity detection window. You must configure the *Activities*, *Activity severity*, and *Activity occurrences during detection window* conditions for this risk level. For the *Activities* condition, the options you can choose from are automatically updated for the types of activities you've defined with the indicators configured in the associated policy. If needed, select the **Assign this risk level to any user who has a future alert confirmed, even if conditions above aren't met** checkbox. If the **all** of the conditions are met, the risk level is assigned to a user.
+4. If you've selected the **Specific user activity** option, you'll choose the activity to detect, its severity, and number of daily occurrences during the past activity detection window. You must configure the *Activities*, *Activity severity*, and *Activity occurrences during detection window* conditions for this risk level.
+
+    For the *Activities* condition, the options you can choose from are automatically updated for the types of activities you've defined with the indicators configured in the associated policy. If needed, select the **Assign this risk level to any user who has a future alert confirmed, even if conditions above aren't met** checkbox. If the **all** of the conditions are met, the risk level is assigned to a user.
+
+    For the *Activity severity* condition, you'll specify the severity level for the activities included in the daily activity insight. The options are *High*, *Medium*, and *Low*, and are based on risk score ranges.
+
+    For the *Activity occurrences during detection window* condition, you'll specify number of times selected activities must be detected within the specified *Past activity detection* period. This number isn't related to the number of events that might occur for an activity. For example, if the policy detects that a user downloaded 20 files from SharePoint in one day, that counts as one daily activity insight consisting of 20 events.
+
 5. Select **Confirm** to apply the custom risk level conditions or **Cancel** to discard your changes.
 
 #### Step 3: Create or edit a DLP policy
@@ -187,7 +194,7 @@ Once you've enabled Adaptive Protection and your insider risk management and DLP
 After you've completed either the [Quick](#quick-setup) or [Custom](#custom-setup) setup process, the **Dashboard** tab in **Adaptive Protection (preview)** displays widgets for summary information about DLP policies and user risk levels:
 
 - **DLP policies**: Displays the number of DLP policies configured for Adaptive Protection and the number of users currently in-scope for the DLP policies.
-- **Users with risk levels**: Displays the number of user for each risk level (*Elevated*, *Moderate*, and *Minor*).
+- **Users assigned risk levels**: Displays the number of user for each risk level (*Elevated risk*, *Moderate risk*, and *Minor risk*).
 
 SCREENSHOT?
 
