@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 11/22/2022
+ms.date: 01/31/2023
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -34,7 +34,12 @@ search.appverid: met150
 
 ## Overview
 
-Network protection functionality for macOS (min. macOS 11) is now in generally available in production.
+Network Protection for macOS will soon be available for all Microsoft Defender for Endpoint onboarded macOS devices which meet the minimum requirements. Microsoft will begin incrementally rolling out the functionality for all macOS devices to enable Network Protection on 1/31/2023 and expects to complete by 2/17/2023. When this feature rolls to production, all of your currently configured Network Protection and Web Threat Protection policies will be enforced on macOS devices where Network Protection is configured for block mode. 
+
+To prepare for the macOS network protection rollout, we recommend the following: 
+- For Network Protection for macOS to be active on your devices, Network Protection must be enabled by your organization. We suggest deploying the audit or block mode policy to a small set of devices and verify there are no issues or broken workstreams before gradually deploying to a larger set of devices. 
+- Verify the Network Protection configuration on your macOS devices is set to the desired state. 
+- Understand the impact of your Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and MDA Endpoint Enforcement polices which target those macOS devices where Network Protection is in Block mode.
 
 Microsoft Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host:
 
