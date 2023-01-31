@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 01/26/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -67,7 +67,7 @@ The setup wizard is designed to help you set up and configure Defender for Busin
 4. **Configure your security policies**. Defender for Business includes default security policies for next-generation protection and firewall protection that can be applied to your company's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. You can also create your own security policies. See [View and edit your security policies and settings](mdb-configure-security-settings.md).
 
    > [!NOTE]
-   > If you're already using Intune to manage your devices and security policies, you can continue using the Microsoft Endpoint Manager admin center. See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
+   > If you're already using Intune to manage your devices and security policies, you can continue using it. See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
 
 
 ## What is automatic onboarding?
@@ -80,7 +80,7 @@ To onboard other devices, see [Onboard devices to Defender for Business](mdb-onb
 
 > [!TIP]
 > - We recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Intune later on, they'll be onboarded to Defender for Business automatically. 
-> - If you've been managing security policies and settings in the Endpoint Manager admin center, we recommend switching to the Microsoft 365 Defender portal to manage your devices, policies, and settings. To learn more, see [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
+> - If you've been managing security policies and settings in the Intune admin center, we recommend switching to the Microsoft 365 Defender portal to manage your devices, policies, and settings. To learn more, see [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
 
 ## What happens if I don't use the wizard?
 

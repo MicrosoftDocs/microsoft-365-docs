@@ -35,6 +35,19 @@ DLP detects sensitive items by using deep content analysis, not by just a simple
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## Before you begin
+
+If you are new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
+
+1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article you are reading now introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
+1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
+    1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+    1. [Describe the categories of sensitive information to protect](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+    1. [Set goals and strategy](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+1. [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference) - this article introduces all the components of a DLP policy and how each one influences the behavior of a policy
+1. [Design a DLP policy](dlp-policy-design.md) - this article walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
+1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
+
 ## DLP is part of the larger Microsoft Purview offering
 
 DLP is just one of the Microsoft Purview tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft Purview tools set, how they interrelate, and work better together.  See, [Microsoft Purview tools](protect-information.md) to learn more about the information protection process.
@@ -143,6 +156,7 @@ location | include/exclude by|
 |Windows 10, Windows 11, and macOS (three latest released versions)  devices |user or group |
 |Microsoft Cloud App Security |instance |
 |On-premises repositories| repository file path|
+|PowerBI (preview)| workspaces|
 
 3. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept pre-configured conditions or define custom conditions. Some examples are:
 
@@ -204,6 +218,15 @@ The [DLP reports](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevent
 The Activity explorer tab on the DLP page has the *Activity* filter preset to *DLPRuleMatch*. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
 ![screenshot of the DLPRuleMatch scoped activity explorer.](../media/dlp-activity-explorer.png)
+
+#### Contextual summary
+
+You can see the text that surrounds the matched content, like a credit card number in a **DLPRuleMatch** event in Activity explorer. To do this you must first enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection).
+
+**DLPRuleMatch** events are paired with the user activity event. The should be right next to (or at least very close to) each other in Activity explorer.  You'll want to look at both because the **user activity event** contains details about the matched policy and the **DLPRuleMatch** event contains the details about the text that surrounds the matched content. 
+
+This is in preview for endpoint DLP. For endpoints, be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+
 
 For more information, see [Get started with activity explorer](data-classification-activity-explorer.md)
 
