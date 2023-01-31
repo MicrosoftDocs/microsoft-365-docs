@@ -1193,6 +1193,8 @@
             href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
+          - name: Create and deploy data loss prevention policies
+            href: dlp-create-deploy-policy.md
           - name: Configure endpoint data loss prevention settings
             href: dlp-configure-endpoint-settings.md
           - name: Get started with the default DLP policy
