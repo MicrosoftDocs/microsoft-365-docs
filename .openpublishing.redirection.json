@@ -9761,6 +9761,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/monitor-for-leaks-of-personal-data.md",
+      "redirect_url": "/microsoft-365/compliance/dlp-learn-about-dlp",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/contentunderstanding/accessibility-mode.md",
       "redirect_url": "/microsoft-365/syntex/accessibility-mode",
       "redirect_document_id": false
