@@ -237,16 +237,7 @@ Configure filesystems to be unmonitored/excluded from Real Time Protection. The 
 |---|---|
 |**Key**|unmonitoredFilesystems|
 |**Data type**|Array of strings|
-#### Configure file hash computation feature
 
-Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint will compute hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
-
-|Description|Value|
-|---|---|
-|**Key**|enableFileHashComputation|
-|**Data type**|Boolean|
-|**Possible values**|false (default) <p> true|
-|**Comments**|Available in Defender for Endpoint version 101.73.77 or higher.|
 #### Allowed threats
 
 List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.
