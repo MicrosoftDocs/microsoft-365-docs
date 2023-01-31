@@ -41,6 +41,11 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 
 ## Set your tenant to mixed mode and use device tags
 
+> [!IMPORTANT]
+> - Mixed-licensing scenarios only to client endpoints. Tagging server devices won’t change their subscription state. All server devices running Windows Server or Linux should have relevant [Defender for Servers Plan 2 licenses and capabilities](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). 
+> - Make sure to follow the procedures in this article to try mixed-license scenarios in your environment. Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) doesn't set your tenant to mixed mode. 
+> - You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2. Make sure that you have opted in to receive [preview features](preview.md).
+
 1. As an admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report 
@@ -93,6 +98,12 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
    Additionally, you can run a [simulated attack](attack-simulations.md) and confirm that it doesn't result in [EDR detections](overview-endpoint-detection-response.md).
 
 ## Review license usage
+
+> [!IMPORTANT]
+> To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
+> - Security Admin
+> - Global Admin
+> - License Admin + MDE Admin
 
 The license usage report is estimated based on sign-in activities on the device. To reduce management overhead, there will not be a requirement for device-to-user mapping and assignment. Instead, the license report will provide a utilization estimation that is calculated based on the utilization seen across your organization. It might take up to one day for your usage report to reflect the active usage of your devices.
 
