@@ -45,7 +45,11 @@ Watch the following video for a summary of how Adaptive Protection can help iden
 
 ## Risk levels and preventive controls
 
-With Adaptive Protection, your administrators can configure the risk factors or activities for customizable risk levels based on your organization's needs. The risk levels for Adaptive Protection update continuously and automatically based on the users' risk factors, so when users' data security risks increase or decrease, their risk levels will be adjusted accordingly. Based on the risk levels, DLP automatically applies the right level of preventative controls as configured by admins; such as *block*, *block with override*, or *warning*.
+With Adaptive Protection, your administrators can configure the risk factors or activities for customizable risk levels based on your organization's needs. The risk levels for Adaptive Protection update continuously and automatically based on the users' risk factors and insights, so when users' data security risks increase or decrease, their risk levels are adjusted accordingly. Based on the risk levels, DLP policies automatically applies the right level of preventative controls as configured by admins (such as *block*, *block with override*, or *warning*).
+
+Depending on the insider risk management policy assigned in Adaptive Protection, different criteria (users,groups, indicators, thresholds, etc) are used to determine applicable risk levels. Risk levels are based on user insights, not on solely on the number instances of specific user activities. Insights are a calculation of the aggregate number of activities and the severity level of these activities. 
+
+For example, risk levels for User A wouldn't be determined by User A performing a potentially risky activity more than three times, the risk levels for User A would be determined by an insight of the aggregate number of activities for User A in a day with a certain risk score.
 
 ### Risk levels
 
@@ -76,7 +80,7 @@ This risk level setting determines how many days back Adaptive Protection examin
 
 This risk level setting determines how long a risk level remains assigned to a user before it's automatically reset. The default setting is 7 days, but you can choose between 5 and 30 days before resetting the risk level for a user.
 
-Risk levels are also reset for a user when:
+Risk levels also reset for a user when:
 
 - The associated alert for the user is dismissed
 - The associated case for the user is resolved
