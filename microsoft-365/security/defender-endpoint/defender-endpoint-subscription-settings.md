@@ -62,9 +62,9 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 6. Save your rule and wait for up to three (3) hours for tags to be applied. Then, proceed to [Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities](#validate-that-a-device-is-receiving-only-defender-for-endpoint-plan-1-capabilities).
 
-## [**Choose one plan**](#tab/oneplan)
+## [**Use one plan**](#tab/oneplan)
 
-## Choose to use one plan for all devices
+## Use the features and capabilities from one plan across all your devices
 
 > [!IMPORTANT]
 > - Make sure that you have opted in to receive [preview features](preview.md).
@@ -96,17 +96,20 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
    - You do not see vulnerabilities or security recommendations for the device; and 
    - A new field called **Device subscription state** has been added to the device properties. 
    
-   Additionally, you can run a [simulated attack](attack-simulations.md) and confirm that it doesn't result in [EDR detections](overview-endpoint-detection-response.md).
+Additionally, you can run a [simulated attack](attack-simulations.md) and confirm that it doesn't result in [EDR detections](overview-endpoint-detection-response.md).
+
+> [!NOTE]
+> Devices that are receiving Defender for Endpoint Plan 2 capabilities will have vulnerabilities and security recommendations listed. And running a simulated attack will result in alerts and EDR detections.
 
 ## Review license usage
+
+The license usage report is estimated based on sign-in activities on the device. To reduce management overhead, there will not be a requirement for device-to-user mapping and assignment. Instead, the license report will provide a utilization estimation that is calculated based on the utilization seen across your organization. It might take up to one day for your usage report to reflect the active usage of your devices.
 
 > [!IMPORTANT]
 > To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
 > - Security Admin
 > - Global Admin
 > - License Admin + MDE Admin
-
-The license usage report is estimated based on sign-in activities on the device. To reduce management overhead, there will not be a requirement for device-to-user mapping and assignment. Instead, the license report will provide a utilization estimation that is calculated based on the utilization seen across your organization. It might take up to one day for your usage report to reflect the active usage of your devices.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
