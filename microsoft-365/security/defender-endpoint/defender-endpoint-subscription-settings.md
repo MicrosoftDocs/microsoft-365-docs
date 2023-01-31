@@ -25,7 +25,7 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 
 **The ability to manage your subscription settings to accommodate [mixed licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is now in preview**! With these capabilities, you can:
 
-- **Set your tenant to mixed mode and use device tags** (*recommended*) to specify which devices will receive features and capabilities from each plan; OR
+- **Set your tenant to mixed mode and use device tags** to specify which devices will receive features and capabilities from each plan; **OR**
 - **Use the features and capabilities from one plan across all devices**.
 
 ## [**Use mixed mode**](#tab/mixed)
