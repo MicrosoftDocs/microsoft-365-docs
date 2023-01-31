@@ -65,7 +65,7 @@ Audit (Premium) in Microsoft Purview provides a default audit log retention poli
       - If you select a single record type, the **Activities** field is dynamically displayed. You can use the drop-down list to select activities from the selected record type to apply the policy to. If you don't choose specific activities, the policy will apply to all activities of the selected record type.
       - If you select multiple record types, you don't have the ability to select activities. The policy will apply to all activities of the selected record types.
 
-   5. **Duration:** The amount of time to retain the audit logs that meet the criteria of the policy. The available options are *7 Days*, *30 Days*, *1 Year*, *3 Years*, *5 Years*, and *7 Years*.
+   5. **Duration:** The amount of time to retain the audit logs that meet the criteria of the policy. The available options are *7 Days*, *30 Days*, *6 Months*, *9 Months*, *1 Year*, *3 Years*, *5 Years*, and *7 Years*. Users with the 10-year Audit Log Retention add-on license can select a *10 Years* option.
    
         >[!IMPORTANT]
         > To retain audit logs for the 7 and 30 days duration options, you must have a Microsoft 365 Enterprise E5 subscription. To retain audit logs for the 3, 5, and 7 years duration options, you must be assigned to a 10-Year Audit Log Retention add-on license in addition to your Microsoft 365 Enterprise E5 subscription. For more information about Audit subscriptions and add-ons, see [Auditing solutions in Microsoft Purview](/microsoft-365/compliance/audit-solutions-overview#licensing-requirements)
