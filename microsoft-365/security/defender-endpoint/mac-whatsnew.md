@@ -42,13 +42,15 @@ Tamper protection will extend to macOS devices and will be turned on in block mo
 
 **Known issues**
 
-Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
-
-
+Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.<br>
+<br>
+**Catalina Deprecation**<br>
+Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
+</br>
 <details>
-  <summary>Jan-2023 (Build: 101.94.13  | Release version: 20.122112.19413.0)</summary>
+  <summary>Jan-2023 (Build: 101.96.85  | Release version: 20.122112.19413.0)</summary>
 
-&ensp;Build: **101.94.13**<br/>
+&ensp;Build: **101.96.85**<br/>
 &ensp;Release version: **20.122112.19413.0**<br/>
 &ensp;Engine version: **1.1.19900.2**<br/>
 &ensp;Signature version: **1.381.2029.0**<br/>

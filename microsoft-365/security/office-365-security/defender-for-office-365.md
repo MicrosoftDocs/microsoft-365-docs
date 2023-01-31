@@ -24,16 +24,14 @@ ms.service: microsoft-365-security
 ---
 # Microsoft Defender for Office 365
 
+> [!IMPORTANT]
+>If your browser is being blocked by Safe Links and Safe Attachment pages, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
+
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!IMPORTANT]
-> This article is for **business customers**.
->
-> But if you're using Outlook.com, ***Microsoft 365 Family, or Microsoft 365 Personal***, and you need info about ***Safe Links or Safe Attachments in Outlook*** blocking emails, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
 
 Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
 

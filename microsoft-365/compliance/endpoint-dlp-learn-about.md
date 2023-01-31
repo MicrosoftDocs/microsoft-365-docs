@@ -34,7 +34,7 @@ You can use Microsoft Purview Data Loss Prevention (DLP) to monitor the actions 
 > If you are looking for device control for removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 > [!NOTE]
-> In Microsoft Purview, DLP policy evaluation of sensitive items occurs centrally, so there is no time lag for policies and policy updates to be distributed to individual devices. When a policy is updated in compliance center, it generally takes about an hour for those updates to be synchronized across the service. Once policy updates are synchronized, items on targeted devices are automatically re-evaluated the next time they are accessed or modified.
+> In Microsoft Purview, DLP policy evaluation of sensitive items occurs centrally, so there is no time lag for policies and policy updates to be distributed to individual devices. When a policy is updated in compliance center, it generally takes about an hour for those updates to be synchronized across the service. Once policy updates are synchronized, items on targeted devices are automatically re-evaluated the next time they are accessed or modified. (Preview) For Authorized Groups changes, the policy will need 24 hours to sync
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -62,7 +62,7 @@ Say you want to block all items that contain credit card numbers from leaving en
 - Create a rule in the policy that detects the type of information that you want to protect. In this case, **content contains** set to *Sensitive information type**, and select **Credit Card**.
 - Set the actions for each activity to **Block**.
 
-See, [Design a data loss prevention policy](dlp-policy-design.md) for more guidance on designing your DLP policies.
+See [Design a data loss prevention policy](dlp-policy-design.md) for more guidance on designing your DLP policies.
 
 ## Monitored files
 
@@ -98,7 +98,28 @@ If you only want monitoring data from policy matches, you can turn off the **Alw
 > [!TIP]
 > To ensure activities are audited for all supported file types, create a [custom DLP policy](create-test-tune-dlp-policy.md).
 
-Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed.
+Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed for these files types:
+
+After the extension is changed to any other file extension
+- doc
+- docx
+- xls
+- xlsx
+- ppt
+- pptx
+- pdf
+
+If the extension is changed only to supported file extensions:
+- txt
+- pst
+- msg
+- rtf
+- c
+- cpp
+- h
+- cs
+- java
+- tsv
 
 ### File types
 
