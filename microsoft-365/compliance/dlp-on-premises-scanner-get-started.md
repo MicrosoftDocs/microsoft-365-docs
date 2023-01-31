@@ -149,6 +149,6 @@ Now that you have deployed a test policy for DLP on-premises locations and can v
 - [Learn about DLP on-premises scanner](dlp-on-premises-scanner-learn.md)
 - [Use DLP on-premises scanner](dlp-on-premises-scanner-use.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

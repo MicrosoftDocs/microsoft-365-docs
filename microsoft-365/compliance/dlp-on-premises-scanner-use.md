@@ -81,5 +81,5 @@ If you want to enforce DLP rules on the scanned files, enforcement must be enabl
 - [Learn about DLP on-premises scanner](dlp-on-premises-scanner-learn.md)
 - [Get started with  DLP on-premises scanner](dlp-on-premises-scanner-get-started.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
