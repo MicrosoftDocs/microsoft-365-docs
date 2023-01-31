@@ -375,3 +375,23 @@ To delete an existing Training campaign, do the following steps:
 2. On the **Training** tab, select the Training campaign by selecting the check box next to it, and then click **⋮ (Actions)** \> ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**. You might need to scroll to the right to see **⋮ (Actions)**.
 
 3. Click **Confirm** in the warning dialog that opens.
+
+
+## Set up Training Threshold Time Period ##
+The training threshold time period is the number of days for which a training module will not be re-assigned to a user who has already completed or is actively assigned the same training module during the threshold time period. Training threshold is starts from time of user training module assignment.
+
+It is recommended that the number of days for Training threshold assignment exceeds the number of days that a user would have to complete a training module assignment. 
+
+In the training campaign user report - a user may have the following status:
+- **Completed** - user have already completed their training module
+- **In Progress** - user has started their training module
+- **Not Started** - user has not started their training module
+- **Training Already Completed** - user was previously assigned and completed the training module within the training threshold time period
+- **Training Previously Assigned** - user currently has been assigned the training module within the training threshold time period but has not completed the training but can still complete the training module to move it to a "Completed" state
+- **Overdue** - user has not completed training before the assigned module due date
+- **Not Completed** - user has not completed the training module within the assigned module due date and is eligible for the same training module reassignment
+
+To set the training threshold, go to **Settings** \> **Training threshold** and update the number of days as needed.
+Select **Save** to update changes.
+
+The default number of days for the training threshold is 90 days. To remove training threshold and always assign training, set Threshold time to 0.
