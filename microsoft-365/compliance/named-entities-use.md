@@ -54,7 +54,7 @@ Named entity SITs and enhanced policies are not supported for:
 
 ## Create and edit enhanced policies
 
-To create or edit a DLP policy, use the procedures in [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md).
+To create or edit a DLP policy, use the procedures in [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)).
 
 ## Workloads and services that support named entities
 
