@@ -9266,6 +9266,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/troubleshoot-auditd-performance-issues.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/linux-support-perf",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
       "redirect_url": "/microsoft-365/security/defender-vulnerability-management/trial-user-guide-defender-vulnerability-management",
       "redirect_document_id": true
@@ -10669,6 +10674,17 @@
       "source_path": "microsoft-365/compliance/microsoft-365-compliance-center-redirection.md",
       "redirect_url": "/microsoft-365/compliance/microsoft-365-compliance-center",
       "redirect_document_id": false
+  },
+  {
+      "source_path": "microsoft-365/compliance/create-a-dlp-policy-from-a-template.md",
+      "redirect_url": "microsoft-365/compliance/dlp-create-deploy-policy",
+      "redirect_document_id": false 
+  },
+  {
+      "source_path": "microsoft-365/compliance/create-test-tune-dlp-policy.md",
+      "redirect_url": "microsoft-365/compliance/create-deploy-policy",
+      "redirect_document_id": false 
   }
+
  ]
 }
