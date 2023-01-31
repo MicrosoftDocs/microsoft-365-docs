@@ -127,7 +127,7 @@ If you are planning to launch a portal with over 100,000 users, submit a support
 
 **Follow these steps:**
 
-1. As an administrator , click the following link which will populate a help query in the admin center.
+1. As an administrator, select the following link to populate a help query in the admin center.
 
 [Launch SharePoint Portal with 100k users](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
