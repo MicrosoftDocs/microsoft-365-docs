@@ -98,8 +98,6 @@
 #### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 #### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 
-### [Manage Defender for Endpoint subscriptions across devices](defender-endpoint-subscription-settings.md)
-
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 
 #### [Microsoft Defender for Endpoint on macOS]()
@@ -130,6 +128,8 @@
 ###### [Deployment on Android with Microsoft Endpoint Manager](android-intune.md)
 ###### [Deployment on iOS via Microsoft Endpoint Manager](ios-install.md)
 ###### [Deployment on iOS with Mobile Application Manager](ios-install-unmanaged.md)
+
+### [Manage Defender for Endpoint subscriptions across devices](defender-endpoint-subscription-settings.md)
 
 ### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 ### [Run a detection test on a newly onboarded Microsoft Defender for Endpoint](run-detection-test.md)
