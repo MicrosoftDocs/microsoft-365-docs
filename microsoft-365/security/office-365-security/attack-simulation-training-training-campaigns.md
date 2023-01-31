@@ -332,7 +332,7 @@ The **Users** tab shows the following information about the users who were assig
   - **Not started**: The user hasn't started any Training modules in the campaign.
   - **In progress**: The user has completed some Training modules in the campaign.
   - **Completed**: The user has completed all Training modules in the campaign.
-  - **Overdue**: The user has not completed all Training modules by the campaign end date/time.
+  - **Overdue**: The user hasn't completed all Training modules by the campaign end date/time.
 - **Training completion date**
 - **Mail**
 
@@ -351,7 +351,7 @@ If you select a user from the list, the following information appears in a detai
   - **Manager**
 - Status information for Training modules in the Training campaign for the user:
   - **Training name**: The training module name.
-  - **Training status**: **Not started**, **In progress**, **Completed**, or **Overdue**.
+  - **Training status**: **Not started**, **In progress**, **Completed**, **Training Already Completed**, **Training Previously Assigned**, **Overdue**, or **Not Completed**.
   - **Training start date**
   - **Training completed date**
 
@@ -391,11 +391,11 @@ In the training campaign user report, a user may have the following **Status** v
 
 - **Completed**: The user has already completed their training module.
 - **In Progress**: The user has started their training module.
-- **Not Started**: The user has not started their training module.
+- **Not Started**: The user hasn't started their training module.
 - **Training Already Completed**: The user was previously assigned and completed the training module within the training threshold time period.
-- **Training Previously Assigned**: The user currently has been assigned the training module within the training threshold time period, but has not completed the training. The user can still complete the training module to move it to a **Completed** state.
-- **Overdue**: Thw user has not completed the training before the assigned module due date.
-- **Not Completed**: The user has not completed the training module within the assigned module due date and is eligible for the same training module reassignment.
+- **Training Previously Assigned**: The user currently has been assigned the training module within the training threshold time period, but hasn't completed the training. The user can still complete the training module to move it to a **Completed** state.
+- **Overdue**: The user hasn't completed the training before the assigned module due date and has not been reassigned the same training module within the training threshold period.
+- **Not Completed**: The user hasn't completed the training module within the assigned module due date and/ or is outside the training threshold period and is eligible for the same training module reassignment.
 
 To set the training threshold, do the following steps:
 
