@@ -32,7 +32,8 @@ To see the available Training modules, open the Microsoft 365 Defender portal at
 **Training modules** shows the following information for each module:
 
 - **Training name**
-- **Languages**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**,  **Chinese (Traditional, Taiwan)**,**Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
+- **Languages**: The available values are: **Arabic**, **Chinese(Simplified)**, **Chinese(Traditional, Hong Kong), **Chinese(Traditional, Taiwan), **Czech**, **Danish**, **Dutch**, **English**, **English**, **Finnish**, **French**, **French**, **German**, **Hebrew**, **Hindi**, **Hungarian**, **Indonesian**, **Italian**, **Japanese**, **Korean**, **Malay**, **NorwegianBokmål**, **Persian**, **Polish**, **Portuguese**, **Portuguese**, **Russian**, **Slovakian**, **Spanish**, **Swedish**, **Thai**, **Turkish**, **Ukrainian**, **Vietnamese**
+
 - **Tags**: Training modules are organized into one or more of the following categories:
   - **AttachmentMalware**
   - **Basic**
