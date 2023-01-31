@@ -35,8 +35,7 @@ To use Microsoft Purview Extension, the device must be onboarded into endpoint D
 
 - [Learn about Microsoft Purview Firefox Extension](dlp-firefox-extension-learn.md)
 - [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Onboarding tools and methods for Windows 10 devices](device-onboarding-overview.md)

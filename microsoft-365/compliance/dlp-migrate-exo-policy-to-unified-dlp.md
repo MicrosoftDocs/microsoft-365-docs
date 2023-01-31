@@ -162,6 +162,5 @@ Once you're satisfied with how your migrated policies are functioning, you can s
 - [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
-- [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)

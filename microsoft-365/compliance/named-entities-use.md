@@ -127,7 +127,7 @@ Here are some practices you can use when you create or edit a policy that uses a
 
 
 ## For further information
+
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Learn about named entities](named-entities-learn.md).
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)

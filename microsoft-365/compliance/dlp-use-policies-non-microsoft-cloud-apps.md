@@ -79,4 +79,4 @@ Refer to [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) f
 
 - [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md)
 - [Get started with the default DLP policy](./get-started-with-the-default-dlp-policy.md)
-- [Create a DLP policy from a template](./create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
