@@ -189,7 +189,6 @@ Most organizations use various devices and operating systems. Defender for Endpo
 - Windows 7 ([ESU required](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)) Pro or Enterprise 
 - Windows 8.1 Pro, Enterprise, and Pro Education 
 - macOS (the three most recent releases are supported)
-- Linux
 - iOS
 - Android OS
 
