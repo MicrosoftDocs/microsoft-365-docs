@@ -108,7 +108,7 @@ Different from AD group, the Sid or ComputerSid is using Object Id for Azure AD 
 
 ## Why is my printer blocked in my organization?
 
-The **Default Enforcement** setting is for all Device control components, which means if you set Deny, it will block all printers as well. You can either create custom policy to explictly allow printers or you can replace the Default Enforcement with a custom policy.
+The **Default Enforcement** setting is for all device control components, which means if you set it to `Deny`, it will block all printers as well. You can either create custom policy to explictly allow printers or you can replace the Default Enforcement policy with a custom policy.
 
 ## Can I use both Group Policy and Intune deploy policies?
 
