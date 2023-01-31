@@ -172,9 +172,12 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 Make sure the [label is published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to meeting organizers and participants.
 
-Other label policy settings that are specific just to calendar items, Teams meetings, and chat:
+Other label policy settings that are specific just to calendar items, Teams meetings, and chat
+
 - **Apply a default label to meetings and calendar events**
-    - The default label is applied to new calendar events and to existing unlabeled calendar events when they are updated. For Teams meetings, the default label is applied to new meetings but won't be automatically applied when an existing unlabeled meeting is updated.
+    - For Outlook: The default label is applied to new calendar events and to existing unlabeled calendar events when they are updated.
+    - For Teams: The default label is applied to new calendar events but won't be automatically applied when an existing unlabeled meeting is updated.
+
 - **Require users to apply a label to their meetings and calendar events**
 
 > [!NOTE]
