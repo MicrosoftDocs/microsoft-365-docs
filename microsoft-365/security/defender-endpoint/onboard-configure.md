@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 01/31/2023
 ---
 
 # Onboard devices and configure Microsoft Defender for Endpoint capabilities
