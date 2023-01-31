@@ -87,11 +87,12 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 
 2. In the flyout, select the link to view the device details page.
 
-3. Confirm the following conditions:
+3. On the device details page, confirm the following conditions:
 
-   - You do not see vulnerabilities or security recommendations for the device.
+   - You do not see vulnerabilities or security recommendations for the device; and 
    - A new field called **Device subscription state** has been added to the device properties. 
-   - Running a [simulated attack](attack-simulations.md) doesn't result in [EDR detections](overview-endpoint-detection-response.md).
+   
+   Additionally, you can run a [simulated attack](attack-simulations.md) and confirm that it doesn't result in [EDR detections](overview-endpoint-detection-response.md).
 
 ## Review license usage
 
