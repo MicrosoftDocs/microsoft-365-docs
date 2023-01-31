@@ -385,7 +385,7 @@ The training threshold time period is the number of days for which a training mo
 
 The training threshold starts from the time of user training module assignment.
 
-We recommend that the number of days for the training threshold assignment is greater than the number of days that a user would have to complete a training module assignment. 
+We recommend the number of days for the training threshold assignment to be greater than the number of days that a user would have to complete a training module assignment.
 
 In the training campaign user report, a user may have the following **Status** values:
 
