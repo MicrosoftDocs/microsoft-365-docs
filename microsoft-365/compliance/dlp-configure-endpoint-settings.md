@@ -369,18 +369,16 @@ By default, when devices are onboarded, activity for Office, PDF, and CSV files 
 
 File activity will always be audited for onboarded devices, regardless of whether they're included in an active policy.
 
-> [!IMPORTANT]
-> Before you can use [Printer groups (preview)](#printer-groups-preview), [Removable storage device groups](#removable-storage-device-groups-preview), [Network share groups](#network-share-groups-preview), and [VPN settings](#vpn-settings-preview) you must register [here](https://forms.office.com/r/GNVTFvxuZv).
-
 ### Printer groups (preview)
 
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
 
 This feature is available for devices running any of the following Windows versions:  
 
-- Windows 10 and later (20H2, 21H1, 21H2, and later) - [KB5020030](https://support.microsoft.com/en-us/topic/november-15-2022-kb5020030-os-builds-19042-2311-19043-2311-19044-2311-and-19045-2311-preview-237a9048-f853-4e29-a3a2-62efdbea95e2)
-- Win 11 21H2, 22H2 - [KB5019157](https://support.microsoft.com/en-us/topic/november-15-2022-kb5019157-os-build-22000-1281-preview-d64fb317-3435-49ff-b2c4-d0356a51a6b0)
-- Windows Server 2022 - [KB5020032](https://support.microsoft.com/en-us/topic/november-22-2022-kb5020032-os-build-20348-1311-preview-7ca1be57-3555-4377-9eb1-0e4d714d9c68)
+- Windows 10 and later (20H2, 21H1, 21H2) with KB 5020030
+- Win 11 21H2, 22H2 with KB KB5019157
+- Windows Server 2022 with KB KB5020032
+
 
 You define a printer by these parameters:
 
@@ -425,8 +423,8 @@ Use this setting to define groups of removable storage devices, like USB thumb d
 
 This feature is available for devices running any of the following Windows versions:  
 
-- Windows 10 and later (20H2, 21H1, 21H2) 
-- Win 11 21H2, 22H2
+- Windows 10 and later (20H2, 21H1, 21H2) with KB 5018482
+- Win 11 21H2, 22H2 with KB 5018483
 - Windows 10 RS5 (KB 5006744) and Windows Server 2022 
 
 You can define removeable storage devices by these parameters:
@@ -471,8 +469,8 @@ Use this setting to define groups of network share paths that you want to assign
 
 This feature is available for devices running any of the following Windows versions:  
 
-- Windows 10 and later (20H2, 21H1, 21H2) 
-- Win 11 21H2, 22H2
+- Windows 10 and later (20H2, 21H1, 21H2) with KB 5018482 
+- Win 11 21H2, 22H2 with KB 5018483
 - Windows 10 RS5 (KB 5006744)  and Windows Server 2022 
 
 
@@ -515,8 +513,8 @@ Use the VPN list to control only those actions that are being carried out over t
 
 This feature is available for devices running any of these versions of Windows:  
 	
-- Windows 10 and later (20H2, 21H1, 21H2) 
-- Windows 11 21H2, 22H2
+- Windows 10 and later (20H2, 21H1, 21H2) with KB 5018482
+- Windows 11 21H2, 22H2 with KB 5018483
 - Windows 10 RS5 (KB 5006744)
 
 When you list a VPN in **VPN Settings** you can assign these policy actions to them:
