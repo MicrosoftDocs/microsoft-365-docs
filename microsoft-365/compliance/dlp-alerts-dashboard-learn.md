@@ -102,4 +102,4 @@ Here are some of the events associated with an alert. In the UI, you can choose 
 ## See Also
 
 - [Get started with the data loss prevention alert dashboard](dlp-alerts-dashboard-get-started.md)
-- [Where to start with data loss prevention](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
