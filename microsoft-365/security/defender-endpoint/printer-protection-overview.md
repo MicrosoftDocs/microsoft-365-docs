@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 01/09/2023
+ms.date: 01/17/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -48,9 +48,10 @@ Microsoft Defender for Endpoint Device Control Printer Protection feature enable
 Ensure that the Windows devices that you need to onboard should meet the following requirements:
 
 1. Install the right OS KB:
-
-   - [KB5020030 (OS Builds 19042.2311, 19043.2311, 19044.2311, and 19045.2311) Preview Microsoft Support](https://support.microsoft.com/topic/november-15-2022-kb5020030-os-builds-19042-2311-19043-2311-19044-2311-and-19045-2311-preview-237a9048-f853-4e29-a3a2-62efdbea95e2)
-   - [KB5019157 (OS Build 22000.1281) Preview - Microsoft Support](https://support.microsoft.com/topic/november-15-2022-kb5019157-os-build-22000-1281-preview-d64fb317-3435-49ff-b2c4-d0356a51a6b0)
+   - Windows 10 and later (20H2, 21H1, 21H2, and later) - [KB5020030](https://support.microsoft.com/en-us/topic/november-15-2022-kb5020030-os-builds-19042-2311-19043-2311-19044-2311-and-19045-2311-preview-237a9048-f853-4e29-a3a2-62efdbea95e2)
+   - Win 11 21H2 - [KB5019157](https://support.microsoft.com/en-us/topic/november-15-2022-kb5019157-os-build-22000-1281-preview-d64fb317-3435-49ff-b2c4-d0356a51a6b0)
+   - Win 11 22H2 - [KB5020044](https://support.microsoft.com/en-us/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3)
+- Windows Server 2022 - [KB5020032](https://support.microsoft.com/en-us/topic/november-22-2022-kb5020032-os-build-20348-1311-preview-7ca1be57-3555-4377-9eb1-0e4d714d9c68)
 
 2. MOCAMP:4.18.2205 or later, you can run the command `Get-MpComputerStatus` in PowerShell to check the version.
 
