@@ -717,5 +717,4 @@ If you have multiple rules in a policy, you can use the **Additional options** t
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md#create-a-dlp-policy-from-a-template)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md
