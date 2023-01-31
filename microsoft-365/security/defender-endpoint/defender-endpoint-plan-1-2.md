@@ -66,9 +66,9 @@ Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalo
 - To try Defender for Endpoint, go to the [Defender for Endpoint trial sign-up page](https://go.microsoft.com/fwlink/p/?LinkID=2168109).
 - To try the Microsoft Defender Vulnerability Management add-on for Defender for Endpoint Plan 2, visit [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
 
-## Mixed licensing scenarios
+## Mixed-licensing scenarios
 
-A mixed licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions. The following table describes examples of mixed-licensing scenarios: 
+A mixed-licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions. The following table describes examples of mixed-licensing scenarios: 
 
 | Scenario | Description |
 |:---|:---|

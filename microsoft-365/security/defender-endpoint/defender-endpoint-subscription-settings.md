@@ -21,16 +21,14 @@ ms.collection:
 
 # Manage Microsoft Defender for Endpoint subscription settings across devices
 
-Up until now, if you're using multiple Microsoft endpoint security solutions, the highest functional subscription would set the experience for your tenant. For example, if some users were assigned licenses for Defender for Endpoint Plan 1, and other users were assigned Defender for Endpoint Plan 2, all licensed users and devices would receive Defender for Endpoint Plan 2 capabilities. The tenant experience would change as well; starting a trial or purchasing licenses for a higher subscription would set the tenant experience to the higher level experience. 
-
-Now, **the ability to manage your subscription settings to accommodate [mixed licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is currently in preview**! With these capabilities, you can:
+A mixed-licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions, such as Defender for Endpoint Plan 1 and Plan 2. **The ability to manage your subscription settings to accommodate [mixed licensing scenarios](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is currently in preview**! With these capabilities, you can:
 
 - **Set your tenant to mixed mode and tag devices** to determine which devices will receive features and capabilities from each plan (we call this option *mixed mode*); **OR**
-- **Choose to use the features and capabilities from one plan across all your devices**.
+- **Use the features and capabilities from one plan across all your devices**.
 
 ## [**Use mixed mode**](#tab/mixed)
 
-## Set your tenant to mixed mode and use device tags
+## Set your tenant to mixed mode and tag devices
 
 > [!IMPORTANT]
 > - Mixed-mode settings apply to client endpoints only. Tagging server devices won’t change their subscription state. All server devices running Windows Server or Linux should have relevant [Defender for Servers Plan 2 licenses and capabilities](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). 
@@ -67,6 +65,13 @@ Now, **the ability to manage your subscription settings to accommodate [mixed li
 ## [**Choose one plan**](#tab/oneplan)
 
 ## Choose to use one plan for all devices
+
+> [!IMPORTANT]
+> - Make sure that you have opted in to receive [preview features](preview.md).
+> - To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
+>    - Global Admin
+>    - Security Admin
+>    - License Admin + MDE Admin  
 
 1. As a Security Admin or Global Admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
