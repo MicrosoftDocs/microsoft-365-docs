@@ -174,6 +174,8 @@ Make sure the [label is published](create-sensitivity-labels.md#publish-sensitiv
 
 Other label policy settings that are specific just to calendar items, Teams meetings, and chat:
 - **Apply a default label to meetings and calendar events**
+    - For Outlook: The default label is applied to all new scheduled meetings and new calendar events. It is also applied to existing unlabeled scheduled meetings and unlabeled calendar events if these items are updated.
+    - For Teams: The default label is applied to all new scheduled meetings but won't be automatically applied when an existing unlabeled meeting is updated.
 - **Require users to apply a label to their meetings and calendar events**
 
 > [!NOTE]
