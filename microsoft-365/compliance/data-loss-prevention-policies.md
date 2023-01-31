@@ -583,7 +583,7 @@ However, DLP reports need pull data from across Microsoft 365, including Exchang
 
 ## More information
 
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies))
 
 - [Send notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md)
 
