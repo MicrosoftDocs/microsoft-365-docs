@@ -63,7 +63,7 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 
 ## Choose to use one plan for all devices
 
-1. As an admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. As a Security Admin or Global Admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Settings** > **Endpoints** > **Licenses**.
 
