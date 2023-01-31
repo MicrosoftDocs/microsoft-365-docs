@@ -237,9 +237,9 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
 
-### Microsoft Defender for Cloud Applications
+### Microsoft Defender for Cloud Apps
 
-The Microsoft Defender for Cloud Applications / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
+The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
 
 > :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection mcas monitored apps." lightbox="images/network-protection-macos-mcas-monitored-apps.png":::
 

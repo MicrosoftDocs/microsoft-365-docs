@@ -77,6 +77,9 @@ These Windows versions support advanced classification scanning and protection:
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
+> [!TIP]
+> Advanced classification must be enabled to see contextual text (in preview)  for DLP rule matched events in Activity explorer. Learn more about contextual text at [Contextual summary](dlp-learn-about-dlp.md#contextual-summary).  Be sure that you have applied KB5016688 for Windows 10 devices and KB5016691 for Windows 11 devices. 
+
 ### File path exclusions
 
 Open [Microsoft Purview compliance portal](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
@@ -202,10 +205,7 @@ To find the full path of Mac apps:
 
 To prevent sensitive items from being synced to the cloud by cloud sync apps, like *onedrive.exe*, add the cloud sync app to the **Unallowed apps** list. When an unallowed cloud-sync app tries to access an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Unallowed apps**.  
 
-##### Auto-quarantine (preview)
-
-> [!NOTE]
-> Auto-quarantine is supported in Windows 10 only
+##### Auto-quarantine 
 
 When enabled, Auto-quarantine kicks in when an unallowed app attempts to access a DLP protected sensitive item. Auto-quarantine moves the sensitive item to an admin configured folder and can leave a placeholder **.txt** file in the place of the original. You can configure the text in the placeholder file to tell users where the item was moved to and other pertinent information.  
 

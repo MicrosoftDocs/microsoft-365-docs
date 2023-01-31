@@ -38,8 +38,8 @@ All updates contain:
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
 
-<details>
-  <summary>Jan/Feb-2023 (Release version: 10.8295.22621.1019)</summary>
+
+## Jan/Feb-2023 (Release version: 10.8295.22621.1019)
 
 |OS  |KB  |Release version  |
 |---------|---------|---------|
@@ -48,10 +48,8 @@ All updates contain:
 **What's new**
 
 - Improved command and control security, quality fixes
-</details>
 
-<details>
-  <summary>Dec-2022 (Release version: 10.8210.22621.1016)</summary>
+## Dec-2022 (Release version: 10.8210.22621.1016)
 
 |OS  |KB  |Release version  |
 |---------|---------|---------|
@@ -60,10 +58,8 @@ All updates contain:
 **What's new**
 
 - Bug fixes and stability improvements
-</details>
 
-<details>  
-  <summary>Aug-2022 (Release version: 10.8210.*)</summary>
+## Aug-2022 (Release version: 10.8210.*)
 
 |OS  |KB  |Release version  |
 |---------|---------|---------|
@@ -88,8 +84,6 @@ All updates contain:
  > [!NOTE] 
  > Update package KB5005292 is on a gradual rollout schedule through Windows Update. Towards the end of this schedule, the package will be published completely, including to the update catalog for manual download. For the current release, this will be in the second half of October. If you want to test the package sooner, you can use [gradual rollout controls for platform updates](configure-updates.md) to select the Preview channel.
   
-<br/>
-</details>
 
 See also: 
 - [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)
