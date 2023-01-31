@@ -74,11 +74,10 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
 
 3. Under **Subscription state**, select **Manage subscription settings**. (If you don't see **Manage subscription settings**, it's because you have only one subscription applied to your tenant, and no further action is needed.)
 
-4. A **Subscription settings** flyout opens. Choose one plan for all users and devices, and then select **Done**. 
+4. A **Subscription settings** flyout opens. Choose one plan for all users and devices, and then select **Done**. It can take up to three hours for your changes to be applied.
 
-> [!NOTE]
-> It can take up to three hours for your changes to take effect.
-
+   If you chose to apply Defender for Endpoint Plan 1 to all devices, proceed to [Validate that devices are receiving only Defender for Endpoint Plan 1 capabilities](#validate-that-a-device-is-receiving-only-defender-for-endpoint-plan-1-capabilities).
+   
 ---
 
 ## Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities
@@ -95,6 +94,8 @@ Up until recently, if you're using multiple Microsoft endpoint security solution
    Additionally, you can run a [simulated attack](attack-simulations.md) and confirm that it doesn't result in [EDR detections](overview-endpoint-detection-response.md).
 
 ## Review license usage
+
+The license usage report is estimated based on sign-in activities on the device. To reduce management overhead, there will not be a requirement for device-to-user mapping and assignment. Instead, the license report will provide a utilization estimation that is calculated based on the utilization seen across your organization. 
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
