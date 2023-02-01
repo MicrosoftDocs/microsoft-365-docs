@@ -2,8 +2,8 @@
 title: "Connect your DNS records at IONOS by 1&1 to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
 audience: Admin
 ms.topic: article

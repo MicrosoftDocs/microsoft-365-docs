@@ -74,7 +74,7 @@ After you've connected to Exchange Online PowerShell, the next step is to create
    
    #Start script
    [DateTime]$currentStart = $start
-   [DateTime]$currentEnd = $start
+   [DateTime]$currentEnd = $end
    
    Function Write-LogFile ([String]$Message)
    {

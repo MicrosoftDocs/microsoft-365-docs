@@ -94,7 +94,7 @@ When a dataset matches a DLP policy:
 
 ## Configure a DLP policy for Power BI
 
-Follow the procedures in [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) and use the custom template.
+Follow the procedures in [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) and use the custom template.
 
 > [!IMPORTANT]
 > When you select the locations for your DLP policy for Power BI, select only the Power BI location. Do not select any other locations, this configuration is not supported. 

@@ -34,14 +34,24 @@ All of your improvement actions are listed on the improvement actions page. Lear
 
 ## Improvement actions details page
 
-Each improvement action has a details page showing its current status, the related standards and regulatory requirements, and recommended implementation guidance. [Technical actions](compliance-score-calculation.md#technical-and-non-technical-actions) include a **Launch now** link that takes you to the appropriate solution for implementation. You can attach implementation and testing documentation directly into an improvement action’s details page.
+Each improvement action has a details page showing its implementation and testing status; related assessments, controls, and certifications; and recommended implementation guidance. [Technical actions](compliance-score-calculation.md#technical-and-non-technical-actions) include a **Launch now** link that takes you to the appropriate solution for implementation. You can attach implementation and testing evidence directly into an improvement action’s details page.
 
 To view an improvement action’s details page:
 
-1. Go to your improvement actions page.
-2. Select the row of your intended improvement action, which opens its details page.
+1. In Compliance Manager, go to the **Improvement actions** page.
+1. From the list of improvement actions, select the name of the improvement action you want to view. The details page for the action will open.
 
-You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the improvement actions page, moving up or down takes you to the next item within that filtered list.
+Each improvement action details page has the following sections:
+
+- The **Overview** section on the left side of the page: Contains a **Summary** of basic information such as the implementation and test status, points achieved, and associated assessments; and a **Testing source** section for viewing and changing [how the action is tested](#update-testing-source).
+
+- **Implementation** tab: Contains implementation status, date, notes, detailed instructions, and for [technical actions](compliance-score-calculation.md#technical-and-non-technical-actions), a **Launch now** link taking you to the appropriate solution for implementation.
+
+- **Testing** tab: Contains testing status, date, notes, and a link to download a testing history report.
+
+- **Related controls** tab: Lists the controls associated with the improvement action. Select a control name to view its description.
+
+- **Evidence** tab: Location where you can upload and view files and links related to implementation and testing work.
 
 > [!TIP]
 > Learn more about the different [types of improvement actions and how points are awarded](compliance-score-calculation.md#action-types-and-points) and factored into your compliance score.
@@ -146,7 +156,7 @@ On an improvement action's details page, select the **Testing** tab. Under **Tes
 
 ## Update testing source
 
-Compliance Manager provides you options for how to test improvement actions. In the **Overview** section of each improvement action, the **Testing Source** area has a drop-down menu from which you can choose how you want the action to be tested: **Manual**, **Automatic**, and **Parent**. Learn details about each testing method below.
+Compliance Manager provides options for how to test improvement actions. In the **Overview** section of each improvement action, the **Testing Source** area has a drop-down menu from which you can choose how you want the action to be tested: **Manual**, **Automatic**, and **Parent**. Learn details about each testing method below.
 
 #### Manual testing source
 Improvement actions set for manual testing are actions which you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab. For some actions, this is the only available method for testing improvement actions.
@@ -164,7 +174,7 @@ When automated testing is turned on, the action’s test date won’t be updated
 
 #### Parent testing source
 
-When you select **Parent** as the testing source for an improvement action, you'll choose another action to which your action will be linked. Your action in effect becomes the "child" to the action that you designate as the "parent." When you designate a parent for an improvement action, that action will inherent the implementation and testing details of the parent action. Any time the parent action's status changes, the child's status will inherit those changes. The child action will also accept all evidence in its **Documents** tab that belong to the parent action, which could override any data that previously existed in the child action's **Documents**.
+When you select **Parent** as the testing source for an improvement action, you'll choose another action to which your action will be linked. Your action in effect becomes the "child" to the action that you designate as the "parent." When you designate a parent for an improvement action, that action inherits the implementation and testing details of the parent action. Anytime the parent action's status changes, the child's status will inherit those changes. The child action will also accept all evidence in its **Documents** tab belonging to the parent action, which could override any data that previously existed in the child action's **Documents**.
 
 > [!NOTE]
 > Having a testing source of **Parent** doesn't necessarily mean that the action is automatically tested by Compliance Manager. For example, if the parent action's testing source is **manual**, then the child action will take on the status of parent action, which is a manual test and implementation by your organization.
@@ -178,25 +188,29 @@ To set up a parent testing source, follow the steps below:
 
 You'll come back to your action's details page. Under **Testing Source** on the **Overview** section, the new action you designated as the parent is listed under **Parent action**.
 
-## Review standards and regulations
+## Related controls
 
-The **standards and regulations** section provides a searchable and filterable list of standards and regulations associated with your improvement action. These can be viewed by the relevant **control**, the **control ID**, the **control family**, and the **regulation** involved.
+The **Related controls** tab displays the controls associated with the improvement action. The table on this page lists each associated control, the control ID, and the regulation related to the control. To view a description of the control, select the control's name and a flyout pane appears with the description.
 
-## Perform work and store documentation
+## Perform work and store evidence
 
-You can upload evidence in the form of files and links related to implementation and testing work directly to the **Documents** section. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files.
+You can upload evidence related to implementation and testing work, in the form of files or links, directly to the **Evidence** tab. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload, download, and delete evidence.
 
 #### Upload evidence
 
-- From the improvement action's details page, go to the **Documents** tab and select **Add evidence**.
+- From the improvement action's details page, go to the **Evidence** tab and select **Add evidence**.
 - On the **Add evidence** flyout pane, choose whether to add a **Document** or **Link**. The accepted file types for **Document** are:
   - Documents (.doc, .xls, .ppt, .txt, .pdf)
   - Images (.jpg, .png)
   - Video (.mkv)
   - Compressed files (.zip, .rar)
-- Browse to select the file you want to upload. If uploading a link, enter a name for the link and its URL. When done, select **Add**. Your item will now display in the **Documents** tab.
+- Browse to select the file you want to upload. If uploading a link, enter a name for the link and its URL. When done, select **Add**. Your item will now display in the **Evidence** tab.
 
-To delete evidence files or links, select the action menu (the three dots) to the right of the item's name and select **Delete**. Confirm the deletion when prompted.
+#### Evidence deletion
+
+You can delete evidence when the improvement action hasn't yet reached a pass or fail status. To delete evidence files or links, select the action menu (the three dots) to the right of the item's name and select **Delete**. Confirm the deletion when prompted.
+
+When an improvement action has a test status of **Passed,** **Failed (low, medium, or high risk)**, or **Out of scope**, evidence files and links can no longer be deleted.
 
 ## Assign improvement action to assessor for completion
 

@@ -61,6 +61,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 | SharePoint Online|SharePoint, SharePointFileOperation,SharePointSharingOperation, SharePointListOperation, SharePointCommentOperation |
 | Stream|MicrosoftStream|
 | Threat Intelligence|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
+| Viva Goals|Viva Goals|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
 | SystemSync| DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData |
@@ -252,7 +253,7 @@ See the [Audit log activities](audit-log-activities.md) article for a list and d
 
 **How long does it take for an auditing record to be available after an event has occurred?**
 
-Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Before you search the audit log](#before-you-search-the-audit-log) section of this article that shows the time it takes for events in the different services to be available.
+Most auditing data is available within 60-90 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the [Before you search the audit log](#before-you-search-the-audit-log) section of this article that shows the time it takes for events in the different services to be available.
 
 **How long are the audit records retained for?**
 

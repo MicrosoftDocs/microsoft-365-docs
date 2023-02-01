@@ -57,7 +57,7 @@ If your organization has a security response team, now is the time to begin inte
 
 If your organization has purchased Microsoft Defender for Office 365 Plan 2, they should begin familiarizing themselves with and using features such as Threat Explorer, Advanced Hunting, and Incidents. For relevant trainings, see <https://aka.ms/mdoninja>.
 
-If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phising-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phishing-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
 ### SIEM/SOAR
 
@@ -216,6 +216,6 @@ Congratulations! You have completed your [migration to Microsoft Defender for Of
 
 Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) and the [impersonation insight](anti-phishing-mdo-impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
 
-- Review user reported messages, especially [user-reported phishing messages](automated-investigation-response-office.md)
+- Review user reported messages, especially [user-reported phishing messages](air-about-office.md)
 - Review overrides in the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 - Use [Advanced Hunting](/microsoft-365/security/defender/advanced-hunting-example) queries to look for tuning opportunities and risky messages.
