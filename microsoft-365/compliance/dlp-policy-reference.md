@@ -106,7 +106,40 @@ This table lists all policy templates and the sensitive information types (SIT) 
 |Privacy| U.S. State Breach Notification Laws|- [Credit card number](sit-defn-credit-card-number.md) </br> - [U.S. bank account number](sit-defn-us-bank-account-number.md)</br> -[U.S. driver's license number](sit-defn-us-drivers-license-number.md) </br> - [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)|
 |Privacy| U.S. State Social Security Number Confidentiality Laws|- [U.S. social security number (SSN)](sit-defn-us-social-security-number.md)|
 
-## Locations
+## Policy Scoping
+
+DLP policies are scoped at two different levels. The first level lets you scope policies to all:
+
+- users
+- distribution groups
+- accounts
+- devices 
+
+in your organization or to subgroups of your organization called [Administrative Units](#administrative-units). 
+
+The second level of DLP policy scoping is by the [Locations](#locations) that DLP supports. At this level, you see only the users, distribution groups, accounts and devices that were included in the first level of policy scoping. 
+
+### Unrestricted or global policies
+
+
+
+
+### Administrative Units
+Adminstrative units can only contain users, groups, and devices. They are subsets of your Azure Active Directory and are created for the purposes of grouping users, groups, and devices along business group lines or geopolitical areas. 
+DLP supports associating policies with administrative units. Administrative units are typically created to allow delegation of administrative responsibilities of users, groups and devices for business groups or geopolitical areas to individuals. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) for implementation details in the Microsoft Purview compliance portal.
+
+If you make use of administrative units, DLP policies are either applied globally to your all organizations users, groups, and devices or they are restricted to the users, groups, and devices in the associated administrative unit. Management of non-a
+
+
+|  |Column2  |Column3  |Column4  |
+|---------|---------|---------|---------|
+|Row1     |         |         |         |
+|Row2     |         |         |         |
+
+
+
+
+### Locations
 
 A DLP policy can find and protect items that contain sensitive information across multiple locations.
 

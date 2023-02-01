@@ -56,18 +56,21 @@ For full licensing details, see: [Microsoft 365 licensing guidance for security 
 
 ### Permissions 
 
-The account you use to create and deploy policies must be a member of one of these roles/role groups
+The account you use to create and deploy policies must be a member of one of these role groups
 
 - Compliance administrator
 - Compliance data administrator
+- Information Protection
+- Information Protection Admin
 - Security administrator
 
-#### Roles and Role Groups
+#### Granular Roles and Role Groups
 
 There are roles and role groups that you can use to fine tune your access controls.
 
 Here's a list of applicable roles. To learn more, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
+- DLP Compliance Management
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
