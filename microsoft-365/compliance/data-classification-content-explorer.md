@@ -50,7 +50,7 @@ In order to get access to the content explorer tab, an account must be assigned 
 > [!IMPORTANT]
 > Only Global admins can manage or assign permissions to other users in the compliance portal. For more information, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 > 
-### Required permissions to access items in content explorer
+**Required permissions to access items in content explorer**
 
 Access to content explorer is highly restricted because it lets you read the contents of scanned files.
 
