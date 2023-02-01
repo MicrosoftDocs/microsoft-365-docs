@@ -11,7 +11,7 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.localizationpriority: medium
-  ms.date: 01/23/2023
+  ms.date: 01/31/2023
   ms.reviewer: efratka
   f1.keywords: NOCSH 
   ms.collection: 
@@ -103,7 +103,7 @@ sections:
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
-          Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) isn't supported yet. You can use the Microsoft Endpoint Manager admin center to configure your attack surface reduction policies. See [Attack surface reduction policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-asr-policy).
+          You can configure standard protection rules in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can also use Intune to configure your attack surface reduction policies. See [Attack surface reduction capabilities in Defender for Business](mdb-asr.md).
 
       - question: How does Microsoft Intune work with Defender for Business? 
         answer: |
@@ -128,7 +128,7 @@ sections:
 
           Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats.  
           
-          To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+          To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](compare-mdb-m365-plans.md#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
 
       - question: What happens if I have a mix of Microsoft endpoint security subscriptions? 
         answer: |

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint for non-Windows platforms
-description: Learn about Microsoft Defender for Endpoint capabilities  for non-Windows platforms
+title: Microsoft Defender for Endpoint on other platforms
+description: Learn about Microsoft Defender for Endpoint capabilities on other platforms
 keywords: non windows, mac, macos, linux, android
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
@@ -22,7 +22,7 @@ ms.subservice: mde
 search.appverid: met150
 ---
 
-# Microsoft Defender for Endpoint for non-Windows platforms
+# Microsoft Defender for Endpoint on other platforms
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

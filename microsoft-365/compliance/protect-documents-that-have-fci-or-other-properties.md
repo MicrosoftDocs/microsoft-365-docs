@@ -151,11 +151,7 @@ For more information, see [Manually request crawling and re-indexing of a site, 
 ## More information
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
-
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Send notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md)
-
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
-
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
