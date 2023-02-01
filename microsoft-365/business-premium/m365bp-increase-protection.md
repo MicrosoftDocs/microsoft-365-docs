@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 10/05/2022
+ms.date: 01/23/2023
 ms.localizationpriority: high
 ms.collection:
 - M365-Campaigns
@@ -25,7 +25,7 @@ search.appverid:
 description: "Get help with increasing the level of protection in Microsoft 365 Business Premium"
 ---
 
-# Protect against malware and other cyberthreats with Microsoft 365 Business Premium
+# Protect against malware and other cyberthreats
 
 In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect your business against phishing, malware, and other threats. This article includes information about:
 

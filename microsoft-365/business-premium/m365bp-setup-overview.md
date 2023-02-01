@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 01/18/2023
+ms.date: 01/23/2023
 ms.localizationpriority: high
 ms.collection: 
 - M365-Campaigns
@@ -35,4 +35,4 @@ Your objective is to:
 - [Set up your Microsoft 365 Business Premium environment](m365bp-setup.md); or
 - [Set up Microsoft 365 Business for Campaigns](m365-campaigns-setup.md) if this is your subscription.
 
-Once you've achieved this objective, proceed to [bump up security protection](m365bp-security-overview.md).
+Once you've achieved this objective, proceed to [boost your security protection](m365bp-security-overview.md).

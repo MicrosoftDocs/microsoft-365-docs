@@ -1,5 +1,5 @@
 ---
-title: "Overview of external collaboration options in Microsoft 365"
+title: "Overview of external collaboration options in Microsoft 365 (IT admins)"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 description: "Learn about how people outside your organization can access your Microsoft 365 subscription for meetings, guest sharing, chat, and collaboration."
 ---
 
-# Overview of external collaboration options in Microsoft 365
+# Overview of external collaboration options in Microsoft 365 (IT admins)
 
 With Microsoft 365, your users can collaborate with people outside your organization in a variety of ways. Users can share files, invite guests to teams, have meetings with external participants, and chat with people from other organizations. This article covers the external collaboration options available and links to the content you need to configure each.
 

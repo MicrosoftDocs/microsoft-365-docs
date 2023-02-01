@@ -1,8 +1,8 @@
 ---
 title: Virtual Appointments with Microsoft Teams
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer: 
+author: samanro
+ms.author: samanro
+ms.reviewer: megano
 manager: samanro
 ms.topic: conceptual
 audience: admin
@@ -33,6 +33,8 @@ With Virtual Appointments in Microsoft Teams, you have a complete meeting platfo
 - Sales associates, product experts, and design consultants can conduct virtual fittings and consultations.
 - Clinicians can meet with patients or other healthcare providers to discuss medical care.
 - Human resources departments can conduct virtual interviews with job candidates.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 
 This article gives you an overview of the capabilities available in Teams for scheduling and managing virtual appointments.
 
