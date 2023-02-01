@@ -61,7 +61,7 @@ You can use sensitivity labels to:
 
 - **Protect containers** that include Teams, Microsoft 365 Groups, and SharePoint sites. For example, set privacy settings, external user access and external sharing, and access from unmanaged devices.
 
-- **Protect meetings and chat** (in preview) by labeling (and optionally, encrypting) meeting invites and any responses, and enforce Teams-specific options for the meeting and chat. 
+- **Protect meetings and chat** by labeling (and optionally, encrypting) meeting invites and any responses, and enforce Teams-specific options for the meeting and chat. 
 
 - **Extend sensitivity labels to Power BI**: When you turn on this capability, you can apply and view labels in Power BI, and protect data when it's saved outside the service.
 
