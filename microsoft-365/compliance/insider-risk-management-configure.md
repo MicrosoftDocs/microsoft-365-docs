@@ -203,7 +203,7 @@ A DLP policy is optional when using the following policy templates:
 - Data leaks
 - Data leaks by priority users
 
-See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
+See the [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
 ### Configure priority user groups
 
