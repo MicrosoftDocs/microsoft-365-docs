@@ -56,14 +56,20 @@ You manually configure an adaptive protection DLP policy just like you would [co
 If quick setup is used to configure Adaptive Protection in insider risk, DLP policies are created automatically, so you should be on the lookout for them. Quick setup will create one policy for Teams and Exchange Online with two rules, one for the elevated risk profile and one for the moderate and minor risk levels. It will also create one policy for Devices with two rules, one for the elevated risk profile and one for the moderate and minor risk levels.
 
 > [!TIP]
-> Insider risk presents a view of just the DLP policies that use the **User's risk level for adaptive protection is** condition. Open **Microsoft Purview compliance portal** > **Insider risk management** > **Adaptive protection (preview)** to see the list. <!--You'll need ASDAFGJLK permissions to access the insider risk node.-->
+> Insider risk presents a view of just the DLP policies that use the **User's risk level for adaptive protection is** condition. Open **Microsoft Purview compliance portal** > **Insider risk management** > **Adaptive protection (preview)** to see the list. You'll need DLP to be in one of these roles to access the insider risk node:
+>- Compliance administrator
+>- Compliance Data administrator
+>- Organization Management (Users who are not global administrators must be Exchange administrators to see and take action on devices that are managed by Basic Mobility and Security for Microsoft 365)
+>- Global administrator
+>- DLP compliance management
+>- View-only DLP compliance management
 
 
 #### Policy values for Teams and Exchange online DLP policy
 
 This is the configuration for the quick setup created Teams and Exchange DLP policy. The policy name is **Adaptive Protection policy for Teams and Exchange DLP**. 
 
-##### Rule: Default AP rule for Elevated Risk in Teams and Exchange
+##### Rule: Adaptive Protection block rule for Teams and Exchange DLP
 
 |DLP policy element  |Configured value  |
 |---------|---------|
@@ -71,11 +77,11 @@ This is the configuration for the quick setup created Teams and Exchange DLP pol
 |Actions     |**Restrict access or encrypt the content in Microsoft 365 locations** </br>- **Block only people outside your organization** |
 |User Notification     |**On** </br>- **Notify user with a policy tip** </br>– **Notify the user who sent, shared, or last modified the content** |
 |User Override     |**Off**   |
-|Incident reports     |**On** </br>- **Severity Level – Medium** </br>- **Send alert every time an activity matches the rule**|
+|Incident reports     |**On** </br>- **Severity Level – Low** </br>- **Send alert every time an activity matches the rule**|
 |Additional Options    |**Off**         |
-|Status     |**Test it out first**        |
+|Status     |**Test it out first** </br>- **Policy Tips - not selected**        |
 
-##### Rule: Default AP rule for Moderate/Minor Risk in Teams and Exchange
+##### Rule: Adaptive Protection audit rule for Teams and Exchange DLP
 
 |DLP policy element  |Configured value  |
 |---------|---------|
@@ -91,26 +97,32 @@ This is the configuration for the quick setup created Teams and Exchange DLP pol
 
 This is the configuration for the quick setup created Devices DLP policy. The policy name is **Adaptive Protection policy for Endpoint DLP**. 
 
-##### Rule: Default AP rule for Elevated Risk in Endpoint
+> [!IMPORTANT]
+> For Adaptive Protection to work on Devices, you must either enable [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection) or if you are manually creating the adaptive protection policy, select the **File Type is** condition.
+
+> [!IMPORTANT]
+> If a user is targeted by a default Adaptive Protection DEvice DLP policy and is targeted by an independent Device DLP policy, only the actions of the *most restrictive* policy will be applied.
+
+
+##### Rule: Adaptive Protection block rule for Endpoint DLP
 
 |DLP policy element  |Configured value  |
 |---------|---------|
 |Conditions     |**User’s risk level for Adaptive Protection is** </br>- **Elevated Risk Level** </br> AND </br>- **File Type is** </br>- **Word processing** </br>- **Spreadsheet** </br>- **Presentation** </br>- **Archive** </br>- **Mail** |
-|Actions     |**Audit or Restrict activities on Devices** </br>- **Upload to a restricted cloud service domain or access from unallowed browsers - Block** </br></br> **File activities for all apps** </br>- **Apply restrictions to specific activity** </br>- **Copy to clipboard – Block** </br>- **Copy to removable USB device – Block** </br>- **Copy to network share – Block** </br>- **Print – Block**|
-|Restricted App activities|**Access by restricted apps - Block**|
-|User Notification     |**On** </br>- **Notify user with a policy tip** </br>- **Show users a policy tip notification when an activity is restricted**        |
+|Actions     |**Audit or Restrict activities on Devices** </br>- **Upload to a restricted cloud service domain or access from unallowed browsers - Block** </br></br> **File activities for all apps** </br>- **Apply restrictions to specific activity** </br>- **Copy to clipboard – Block** </br>- **Copy to removable USB device – Block** </br>- **Copy to network share – Block** </br>- **Print – Block** </br> **Restricted App activities - Access by restricted apps - Block** | 
+|User Notification     |**Off**  |
 |User Override     |**Off** |
-|Incident reports     |**On** </br>- **Severity Level – Medium** </br>- **Send alert every time an activity matches the rule**|
+|Incident reports     |**On** </br>- **Severity Level – Low** </br>- **Send alert every time an activity matches the rule**|
 |Additional Options    |**Off**         |
-|Status     |**Test it out first**        |
+|Status     |**Test it out first - Policy Tips - not selected**        |
 
-##### Rule: Default AP rule for Moderate/Minor Risk in Endpoint
+##### Rule: Adaptive Protection rule for Endpoint DLP
 
 |DLP policy element  |Configured value  |
 |---------|---------|
 |Conditions     |**User’s risk level for Adaptive Protection is** </br>- **Moderate Risk Level, Minor Risk Level** </br> AND </br>- **File Type is** </br>- **Word processing** </br>- **Spreadsheet** </br>- **Presentation** </br>- **Archive** </br>- **Mail** |
 |Actions     |**Audit or Restrict activities on Devices** </br>- **Upload to a restricted cloud service domain or access from unallowed browsers – Audit** </br></br>**File activities for all apps** </br>- **Apply restrictions to specific activity** </br>- **Copy to clipboard – Audit** </br>- **Copy to removable USB device – Audit** </br>- **Copy to network share – Audit** </br>-**Print – Audit**</br></br>**Restricted App activities** </br>- **Access by restricted apps - Audit**|
-|User Notification     |**On** </br>- **Notify user with a policy tip** </br>- **Show users a policy tip notification when an activity is restricted** |
+|User Notification     |**Off**|
 |User Override     |**Off**|
 |Incident reports     |**On**</br>- **Severity Level – Low** </br>- **Send alert every time an activity matches the rule** |
 |Additional Options    |**Off**  |
