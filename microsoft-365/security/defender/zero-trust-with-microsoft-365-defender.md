@@ -43,11 +43,21 @@ In the illustration: Microsoft 365 Defender provides XDR capabilities for protec
 - Cloud apps, including other SaaS apps that your organization uses
 - On-premises Active Directory Domain Services (AD DS) and Active Directory Federated Services (AD FS) servers
 
+Microsoft 365 Defender helps you apply the principles of Zero Trust in the following ways:
+
+| Zero Trust principle | Met by |
+| --- | --- |
+| Verify explicitly |  |
+| Use least privileged access |  |
+| Assume breach |  |
+
+
 To add Microsoft 365 Defender to your Zero Trust strategy and architecture, go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components.
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
 |Set up the evaluation and pilot environment for all components: <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender for Endpoint</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats|See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.| Azure AD Identity Protection is not included in this solution guide. It is included in [Step 1. Configure Zero Trust identity and device access protection](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
+
 
 To learn more about other Microsoft 365 capabilities that contribute to a strong Zero Trust strategy and architecture, see [Zero Trust deployment plan with Microsoft 365](../Microsoft-365-zero-trust.md).
 
