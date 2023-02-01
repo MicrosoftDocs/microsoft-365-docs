@@ -50,7 +50,7 @@ To prepare for the macOS network protection rollout, we recommend the following:
 
 - For Network Protection for macOS to be active on your devices, Network Protection must be enabled by your organization. We suggest deploying the audit or block mode policy to a small set of devices and verify there are no issues or broken workstreams before gradually deploying to a larger set of devices.
 - Verify the Network Protection configuration on your macOS devices is set to the desired state.
-- Understand the impact of your Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and MDA Endpoint Enforcement polices which target those macOS devices where Network Protection is in Block mode.
+- Understand the impact of your Web Threat Protection, Custom Indicators of Compromise, Web Content Filtering, and MDA Endpoint Enforcement policies which target those macOS devices where Network Protection is in Block mode.
 
 ## New and updated capabilities
 
