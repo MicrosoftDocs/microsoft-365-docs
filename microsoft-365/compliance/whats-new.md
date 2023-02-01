@@ -41,7 +41,7 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 ## February 2023
 
 ### Sensitivity labels
-- **General availability (GA)**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md). At this time, Outlook remains in preview for this scenario.
+- **General availability (GA)**: Protected meetings by [labeling calendar invites and responses, Teams meetings, and chat](sensitivity-labels-meetings.md). Outlook remains in preview for this scenario.
 
 ## January 2023
 
