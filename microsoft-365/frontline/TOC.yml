@@ -133,6 +133,8 @@
         href: advanced-virtual-appointments-activity-report.md
       - name: EHR connector Virtual Appointments report
         href: ehr-connector-report.md  
+      - name: Virtual appointments Call Quality Dashboard
+        href: virtual-appointments-call-quality.md
     - name: Help your clients and customers use virtual appointments
       href: virtual-appointments-toolkit.md
   - name: Industry-specific solutions
