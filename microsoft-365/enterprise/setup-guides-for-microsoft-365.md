@@ -45,7 +45,7 @@ In this article:
 
 ## How to access advanced deployment guides in the Microsoft 365 admin center
 
-Advanced deployment guides are accessible from the [Advanced deployment guides & assistance page](https://aka.ms/setupguidance) in the Microsoft 365 admin center. When you access advanced deployment guides from the admin center, you can keep track of the status of your progress and return at any time to complete a guide. This functionality is not available when you access guides from the [Microsoft 365 Setup portal](https://setup.microsoft.com/).
+Advanced deployment guides are accessible from the [Advanced deployment guides & assistance](https://aka.ms/setupguidance) page in the Microsoft 365 admin center. When you access advanced deployment guides from the admin center, you can keep track of the status of your progress and return at any time to complete a guide. This functionality is not available when you access guides from the [Microsoft 365 Setup portal](https://setup.microsoft.com/).
 
 > [!NOTE]
 > You must be assigned an admin role such as _Global Reader_ to access advanced deployment guides in the Microsoft 365 admin center. Only admins with the _Global Administrator_ role can use the guides to change settings in the tenant.
@@ -53,7 +53,7 @@ Advanced deployment guides are accessible from the [Advanced deployment guides &
 > [!IMPORTANT]
 > Any selections, task assignments, and progress status saved **before January 10, 2023** within each advanced deployment guide in the admin center has been reset due to EU data regulations.
 
-To reach the **Setup guidance** page:
+To reach the **Advanced deployment guides & assistance** page:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Home** page.
 
