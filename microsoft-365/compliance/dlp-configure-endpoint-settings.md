@@ -428,13 +428,13 @@ This feature is available for devices running any of the following Windows versi
 
 You can define removeable storage devices by these parameters:
 
-- Storage device friendly name - Get the Friendly name value from the storage device property details in device manager.
+- Storage device friendly name - Get the Friendly name value from the storage device property details in device manager. Wildcard values are supported.
 - USB product ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - USB vendor ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
-- Serial number ID - Get the serial number ID value from the storage device property details in device manager.
-- Device ID - Get the device ID value from the storage device property details in device manager.
-- Instance path ID - Get the device ID value from the storage device property details in device manager.
-- Hardware ID - Get the hardware ID value from the storage device property details in device manager.
+- Serial number ID - Get the serial number ID value from the storage device property details in device manager. Wildcard values are supported.
+- Device ID - Get the device ID value from the storage device property details in device manager. Wildcard values are supported.
+- Instance path ID - Get the device ID value from the storage device property details in device manager. Wildcard values are supported.
+- Hardware ID - Get the hardware ID value from the storage device property details in device manager. Wildcard values are supported.
 
 You assign each removable storage device in the group an **Alias**. The alias is a name that only appears in the Purview console. So, continuing with the example, you would create a removable storage device group named **Backup** and add individual devices  (with an alias) by their friendly name, like `backup_drive_001`, and `backup_drive_002`.
 
