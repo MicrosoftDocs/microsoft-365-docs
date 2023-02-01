@@ -16,7 +16,7 @@ ms.collection:
 - tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 11/21/2022
+ms.date: 01/31/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -98,6 +98,7 @@ DeviceFileEvents
 
    :::image type="content" alt-text="Screenshot of right-click menu for disk drives in Device Manager." source="https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png":::
  
+Another way is to deploy an Audit policy to the organization, and see the events in advanced hunting or the device control report.
  
 ## How do I find Sid or ComputerSid for Azure AD group?
 
@@ -105,3 +106,10 @@ Different from AD group, the Sid or ComputerSid is using Object Id for Azure AD 
 
 ![image](https://user-images.githubusercontent.com/81826151/200895994-cc395452-472f-472e-8d56-351165d341a7.png)
 
+## Why is my printer blocked in my organization?
+
+The **Default Enforcement** setting is for all device control components, which means if you set it to `Deny`, it will block all printers as well. You can either create custom policy to explictly allow printers or you can replace the Default Enforcement policy with a custom policy.
+
+## Can I use both Group Policy and Intune deploy policies?
+
+You can use Group Policy and Intune to manage device control, but for one machine, use *either* Group Policy *or* Intune. If a machine is covered by both, device control will only apply the Group Policy setting.

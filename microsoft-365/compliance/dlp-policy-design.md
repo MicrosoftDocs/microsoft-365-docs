@@ -131,7 +131,7 @@ Here's a video that shows how you'd map two complex policy intent statements to 
 
 9. Document the configuration of all the policy settings and review them with your stakeholders. You can re-use your policy intent statement mapping to configuration points, which is now fully fleshed out.
 
-10. [Create a](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) draft policy and refer back to your [policy deployment](dlp-overview-plan-for-dlp.md#policy-deployment) plan.
+10. [Create a](dlp-create-deploy-policy.md) draft policy and refer back to your [policy deployment](dlp-overview-plan-for-dlp.md#policy-deployment) plan.
 
 <!--## Policy design examples
 
@@ -193,4 +193,4 @@ Here are some examples of more detailed policy intent statement to configuration
 - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
 - [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 - [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
