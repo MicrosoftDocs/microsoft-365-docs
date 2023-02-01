@@ -36,7 +36,13 @@ To become a Defender for Endpoint solution partner, you'll need to follow and co
 
 Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink). Subscribing allows you to use a Microsoft Defender for Endpoint tenant with up to three devices to developing solutions that integrate with Microsoft Defender for Endpoint.
 
-## Step 2: Get listed in the Microsoft Defender for Endpoint partner application portal
+## Step 2: Fulfill the solution validation and certification requirements
+
+The best way for technology partners to certify that their integration works is to have a joint customer approve the suggested integration design (the customer can use the **Recommend a partner** option \(Partners and API > Partner applications\) in the [Partner Application page](https://security.microsoft.com/interoperability/partnersapps) in the Microsoft 365 Defender and have it tested and demoed to the Microsoft Defender for Endpoint team.
+
+Once the Microsoft Defender for Endpoint team has reviewed and approves the integration, we will direct you to be included as a partner at the Microsoft Intelligent Security Association.
+
+## Step 3: Get listed in the Microsoft Defender for Endpoint partner application portal
 
 Microsoft Defender for Endpoint supports third-party applications discovery and integration using the in-product [partner page](partner-applications.md) that is embedded within the Microsoft Defender for Endpoint management portal.
 
