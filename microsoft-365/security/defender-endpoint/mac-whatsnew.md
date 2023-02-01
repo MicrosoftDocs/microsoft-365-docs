@@ -424,7 +424,7 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 **What's new**
 
-- Fix for a system freeze occurring on shutdown on macOS Mojave and macOS Catalina. -- MO? I THINK OK TO KEEP AS IT'S MORE LIKE A LOG. THOUGHTS?
+- Fix for a system freeze occurring on shutdown on macOS Mojave and macOS Catalina. 
 
 <br/>
 </details>
@@ -556,7 +556,7 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 **What's new**
 
-- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Microsoft Defender Vulnerability Management (MDVM) functionality. -- MO? I THINK OK TO KEEP AS IT'S MORE LIKE A LOG. THOUGHTS?
+- Fix to accommodate for Apple certificate expiration for macOS Catalina and earlier. This fix restores Microsoft Defender Vulnerability Management (MDVM) functionality. 
 
 <br/>
 </details>

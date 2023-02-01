@@ -389,9 +389,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 ## Step 4: Configure notifications settings
 
-These steps are applicable of macOS 10.15 (Catalina) or newer.
-
-MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "These steps are applicable to "macOS 11 (Big Sur) or later"
+These steps are applicable on macOS 11 (Big Sur) or later.
 
 1. In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.
 
@@ -399,7 +397,7 @@ MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "These steps are applic
 
     - Tab **General**:
         - **Name**: MDATP MDAV Notification settings
-        - **Description**: macOS 10.15 (Catalina) or newer  >>>MO - CHANGE TO BIG SUR OR LATER?
+        - **Description**: macOS 11 (Big Sur) or later
         - **Category**: None *(default)*
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*
@@ -536,7 +534,7 @@ MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "These steps are applic
 
     **General**
     - Name: MDATP MDAV - grant Full Disk Access to EDR and AV
-    - Description: On macOS Catalina or newer, the new Privacy Preferences Policy Control >>>MO - CHANGE TO BIG SUR OR LATER?
+    - Description: On macOS 11 (Big Sur) or later, the new Privacy Preferences Policy Control 
     - Category: None
     - Distribution method: Install Automatically
     - Level: Computer level
@@ -725,9 +723,8 @@ Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft
 
 As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
-These steps are applicable of macOS 10.15 (Catalina) or newer.
+These steps are applicable on macOS 11 (Big Sur) or later.
 
->>>MO - CHANGE TO BIG SUR OR LATER?
 
 1. In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.
 
@@ -735,7 +732,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     - Tab **General**:
         - **Name**: Microsoft Defender Network Extension
-        - **Description**: macOS 10.15 (Catalina) or newer >>>MO - CHANGE TO BIG SUR OR LATER?
+        - **Description**: macOS 11 (Big Sur) or later
         - **Category**: None *(default)*
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*

@@ -130,9 +130,7 @@ This profile contains a license information for Microsoft Defender for Endpoint.
 
 ### Approve System Extensions
 
-This profile is needed for macOS 10.15 (Catalina) or newer. It will be ignored on older macOS.
-
-MO - IS THIS SECTION STILL VALID? DO I JUST CHANGE IT TO "THIS PROFILE IS NEEDED FOR "macOS 11 (Big Sur) OR LATER"
+This profile is needed for macOS 11 (Big Sur) or later. It will be ignored on older macOS.
 
 1. Select **Create Profile** under **Configuration Profiles**.
 1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Extensions**. Click **Create**.
