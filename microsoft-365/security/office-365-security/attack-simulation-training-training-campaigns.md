@@ -25,7 +25,7 @@ search.appverid: met150
 > [!NOTE]
 > This article describes features that are in Public Preview, aren't available in all organizations, and are subject to change.
 
-In Attack simulation training in Microsoft Defender for Office 365 Plan 2, Training campaigns are a faster, more direct way to provide security training to users. Instead of creating and launching [simulated phishing attacks](attack-simulation-training-simulations.md) that eventually lead to training, you can also create and assign Training campaigns directly to users.
+In Attack simulation training in Microsoft Defender for Office 365 Plan 2, Training campaigns are a faster, more direct way to provide security training to users. Instead of creating and launching [simulated phishing attacks](attack-simulation-training-simulations.md) that eventually lead to training, you can create and assign Training campaigns directly to users.
 
 A Training campaign contains one or more built-in Training modules that you select. Currently, there are over 70 Training modules to select from. For more information about Training modules, see [Training modules for Training campaigns in Attack simulation training](attack-simulation-training-training-modules.md).
 
@@ -69,7 +69,7 @@ To create a Training campaign, do the following steps:
 
 2. On the **Training** tab,select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Create new**.
 
-3. The new Training campaign wizard opens. The rest of this sections describes the pages and the settings they contain.
+3. The new Training campaign wizard opens. The rest of this section describes the pages and the settings they contain.
 
 ### Name Training campaign
 
