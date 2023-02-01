@@ -59,7 +59,9 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **Known issues**
 
-- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines needs to be fixed. Following steps can help you to identify such auditd rules (These commands needs to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+
+- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines needs to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules
