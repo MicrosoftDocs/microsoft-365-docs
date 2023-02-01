@@ -150,7 +150,7 @@ You have flexibility in how you create and configure your DLP policies. You can 
     - A predefined policy template: Financial data, Medical and health data, Privacy data all for various countries and regions.
     - A custom policy that uses the available sensitive information types, retention labels, and sensitivity labels.
 
-<!--1. **Choose who will administer the policy and the groups and people it will be applied to** - If your organization has [Administrative Units](https://learn.microsoft.com/en-us/azure/active-directory/roles/administrative-units) configured, you can assign them to policies. The policy and the resultant data can be administered by the people with administrator rights to the administrative unit and only the users and groups that are members of that administrative unit will appear in the scoping by location options. 
+<!--1. **Choose who will administer the policy and the groups and people it will be applied to** - If your organization has [Administrative Units](/azure/active-directory/roles/administrative-units) configured, you can assign them to policies. The policy and the resultant data can be administered by the people with administrator rights to the administrative unit and only the users and groups that are members of that administrative unit will appear in the scoping by location options. 
 Policies can be applied to all users and groups and administered by people in the Compliance administrator or Global administrator role or they can be scoped to Administrative Units. If they are scoped to Administrative Units, they can be managed by peopl-->    
 
 2<!--3-->. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. You can monitor:
