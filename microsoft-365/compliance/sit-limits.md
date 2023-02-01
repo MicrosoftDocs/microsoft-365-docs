@@ -38,7 +38,20 @@ To ensure high performance and lower latency, there are limitations in custom SI
 |maximum number of terms in keyword list| 2048|
 |maximum number of distinct regexes per sensitive information type| 20|
 |maximum size of a keyword dictionary (post compression)| 1MB (~1,000,000 characters)|
-|maximum number of keyword dictionary based SITs in a tenant|50 |
+|maximum number of keyword dictionary based SITs in a tenant| 50 |
+|maximum number of MIP+MIG ppolicies in a tenant| 10,000 |
+|maximum number of DLP rules in a policy | Limited by the size of policy (100KB) |
+|maximum number of DLP rules in a tenant | 600 |
+|maximum size of an individual DLP rule | 80KB |
+|maximum size of a DLP policy | 100KB |
+|Policy name character limit | 64 |
+|Policy rule character limit | 64 |
+|Comments character limit | 1024 |
+|Description character limit | 1024 |
+|GIR evidence limit | 100 with each SIT evidence in proportion of occurence |
+|Text extraction limit | 1MB |
+|Regex size limit (for all matches predicates) | 20KB |
+
 
 > [!NOTE]
 > If you have a business need to create more than 500 custom SITs, please raise a support ticket.
