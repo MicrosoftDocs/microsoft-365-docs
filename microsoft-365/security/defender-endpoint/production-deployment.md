@@ -53,7 +53,7 @@ In this deployment scenario, you'll be guided through the steps on:
 
 ## Check license state
 
-Checking for the license state and whether it was properly provisioned, can be done through the admin center or through the **Microsoft Azure portal**.
+Checking for the license state and whether it was properly provisioned can be done through the admin center or through the **Microsoft Azure portal**.
 
 1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
