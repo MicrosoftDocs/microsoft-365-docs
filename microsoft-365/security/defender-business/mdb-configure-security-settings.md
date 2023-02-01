@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/26/2023
+ms.date: 01/31/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -75,7 +75,7 @@ Depending on whether you're using the Microsoft 365 Defender portal or Intune to
 | Portal | Procedure |
 |:---|:---|
 | Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |<ol><li>Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.</li><li>In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.</li><li>Select an operating system tab (such as **Windows clients**).</li><li>Expand **Next-generation protection** to view your list of policies.</li><li>Select a policy to view more details about the policy.</li><li>To make changes or to learn more about policy settings, see the following articles: <ul><li>[View or edit device policies](mdb-view-edit-policies.md)</li><li>[Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md)</li></ul></li><ol>  |
-| Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) |For help managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). <ol><li>Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.</li><li>Select **Endpoint security**.</li><li>Select **Antivirus** to view your policies in that category.</li></ol>|
+| Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) |For help with managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). <ol><li>Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.</li><li>Select **Endpoint security**.</li><li>Select **Antivirus** to view your policies in that category.</li></ol>|
 
 ## View or edit your firewall policies and custom rules
 
@@ -84,11 +84,19 @@ Depending on whether you're using the Microsoft 365 Defender portal or Intune to
 | Portal | Procedure |
 |:---|:---|
 | Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |<ol><li>Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.</li><li>In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.</li><li>Select an operating system tab (such as **Windows clients**).</li><li>Expand **Firewall** to view your list of policies.</li><li>Select a policy to view the details. </li><li>To make changes or to learn more about policy settings, see the following articles:<ul><li>[View or edit device policies](mdb-view-edit-policies.md)</li><li>[Firewall settings](mdb-firewall.md)</li><li>[Manage your custom rules for firewall policies](mdb-custom-rules-firewall.md)</li><ul></li><ol>  |
-| Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) |For help managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). <ol><li>Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.</li><li>Select **Endpoint security**.</li><li>Select **Firewall** to view your policies in that category. Custom rules that are defined for firewall protection are listed as separate policies.</li></ol>|
+| Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) |For help with managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). <ol><li>Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.</li><li>Select **Endpoint security**.</li><li>Select **Firewall** to view your policies in that category. Custom rules that are defined for firewall protection are listed as separate policies.</li></ol>|
 
 ## Enable standard attack surface reduction rules
 
-[Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md)
+[Attack surface reduction capabilities](mdb-asr.md) in Defender for Business include:
+
+- Attack surface reduction rules (see [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules)). 
+- Controlled folder access (see [Set up controlled folder access](mdb-asr.md#set-up-controlled-folder-access)).
+- Network protection (on by default with [next-generation protection](mdb-next-gen-configuration-settings.md)).
+- Web protection (on by default with [web content filtering](#set-up-web-content-filtering)).
+- Firewall protection (on by default with [firewall policies](mdb-firewall.md)).
+
+There are three standard attack surface reduction rules you should turn on as soon as possible. See [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules).
 
 ## Set up web content filtering
 
