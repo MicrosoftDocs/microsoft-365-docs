@@ -71,7 +71,7 @@ You can see where your EDM SIT is being used and how accurate it is in productio
 
 Once you're satisfied with the results of your testing and tuning, your EDM based custom SIT is ready for use in information protection policies, like:
 
-- [DLP policies](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [DLP policies](dlp-create-deploy-policy.md)
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/data-protection-policies)
 
