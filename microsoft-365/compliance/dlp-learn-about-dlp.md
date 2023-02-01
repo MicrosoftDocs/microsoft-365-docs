@@ -48,6 +48,10 @@ If you are new to Microsoft Purview DLP, here's a list of the core articles you'
 1. [Design a DLP policy](dlp-policy-design.md) - this article walks you through creating a policy intent statement and mapping it to a specific policy configuration. 
 1. [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) - This article presents some common policy intent scenarios that you'll map to configuration options, then it walks you through configuring those options.
 
+## Licensing and Subscriptions
+
+See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.
+
 ## DLP is part of the larger Microsoft Purview offering
 
 DLP is just one of the Microsoft Purview tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft Purview tools set, how they interrelate, and work better together.  See, [Microsoft Purview tools](protect-information.md) to learn more about the information protection process.
@@ -145,7 +149,11 @@ You have flexibility in how you create and configure your DLP policies. You can 
 1. **Choose what you want to monitor** - DLP comes with many predefined policy templates to help you get started or you can create a custom policy.
     - A predefined policy template: Financial data, Medical and health data, Privacy data all for various countries and regions.
     - A custom policy that uses the available sensitive information types, retention labels, and sensitivity labels.
-2. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. You can monitor:
+
+<!--1. **Choose who will administer the policy and the groups and people it will be applied to** - If your organization has [Administrative Units](https://learn.microsoft.com/en-us/azure/active-directory/roles/administrative-units) configured, you can assign them to policies. The policy and the resultant data can be administered by the people with administrator rights to the administrative unit and only the users and groups that are members of that administrative unit will appear in the scoping by location options. 
+Policies can be applied to all users and groups and administered by people in the Compliance administrator or Global administrator role or they can be scoped to Administrative Units. If they are scoped to Administrative Units, they can be managed by peopl-->    
+
+2<!--3-->. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. You can monitor:
 
 location | include/exclude by|
 |---------|---------|
@@ -158,13 +166,13 @@ location | include/exclude by|
 |On-premises repositories| repository file path|
 |PowerBI (preview)| workspaces|
 
-3. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept pre-configured conditions or define custom conditions. Some examples are:
+3<!--4-->. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept pre-configured conditions or define custom conditions. Some examples are:
 
 - item contains a specified kind of sensitive information that is being used in a certain context. For example, 95 social security numbers being emailed to recipient outside your org.
 - item has a specified sensitivity label
 - item with sensitive information is shared either internally or externally
 
-4. **Choose the action to take when the policy conditions are met** - The actions depend on the location where the activity is happening.  Some examples are:
+4<!--5-->. **Choose the action to take when the policy conditions are met** - The actions depend on the location where the activity is happening.  Some examples are:
 
 - SharePoint/Exchange/OneDrive: Block people who are outside your organization form accessing the content. Show the user a tip and send them an email notification that they are taking an action that is prohibited by the DLP policy.
 - Teams Chat and Channel: Block sensitive information from being shared in the chat or channel
@@ -240,6 +248,4 @@ To learn more about Microsoft Purview DLP, see:
 
 To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 
-## Licensing and Subscriptions
 
-See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.
