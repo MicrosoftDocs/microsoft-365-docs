@@ -71,7 +71,7 @@ A Global admin, can assign the necessary Content Explorer List Viewer, and Conte
 
 #### Roles and Role Groups
 
-There are roles and role groups that you useto fine tune your access controls.
+There are roles and role groups that you use to fine tune your access controls.
 
 Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
