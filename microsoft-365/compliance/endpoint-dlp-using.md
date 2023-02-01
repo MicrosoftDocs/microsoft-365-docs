@@ -31,8 +31,7 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 >
 >- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 >- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
->- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
->- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+>- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
@@ -263,7 +262,7 @@ You can also audit, block with override, or block these user upload sensitive it
 1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website or \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
 1. Select **Save**.
 1. Select **Policies**.
-1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.
+1. Create and scope a policy that is applied only to **Devices**. See, [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) for more information on how to create a policy.
 1. Create a rule that uses the **The user accessed a sensitive site from Edge**, and the action **Audit or restrict activities on devices**.
 1. In **Service domain and browser activities** select **Upload to a restricted cloud service domain or access from an unallowed browser** and set the action to **Audit only**. This sets the overall action for all the site groups.
 1. Select the **Sensitive site groups** you want.
@@ -293,7 +292,7 @@ The user must be accessing the website through Microsoft Edge.
 1. Type in the appropriate value in the **Add new service domains to this group**. You can add multiple websites to a group and use wildcards to cover subdomains.  For example, `www.contoso.com` for just the top level website or \*.contoso.com for corp.contoso.com, hr.contoso.com, fin.contoso.com
 1. Select **Save**.
 1. Select **Policies**.
-1. Create and scope a policy that is applied only to **Devices**. See, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) for more information on how to create a policy.
+1. Create and scope a policy that is applied only to **Devices**. See, [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) for more information on how to create a policy.
 1. Create a rule that uses the **the user accessed a sensitive site from Edge**, and the action **Audit or restrict activities when users access sensitive sites in Microsoft Edge browser on Windows devices**.
 1. In the action select **Add or remove Sensitive site groups**.
 1. Select the **Sensitive site groups** you want. Any website under the group(s) you select here will be redirected to Edge when opened in Chrome browser (with Purview extension installed).
@@ -302,9 +301,6 @@ The user must be accessing the website through Microsoft Edge.
 1. Finish configuring the rule and policy and apply it.
 
 ## Scenario 7 Authorization groups (preview)
-
-> [!IMPORTANT]
-> Before you can use **Printer groups**, **Removable storage device groups**, **Network share groups**, and **Network exceptions/VPN** you must register [here](https://forms.office.com/r/GNVTFvxuZv).
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
@@ -353,9 +349,6 @@ In this scenario, we'll define a group of printers that the legal department use
 13. The new DLP policy will appear in the policy list.
 
 ## Scenario 8 Network exceptions (preview)
-
-> [!IMPORTANT]
-> Before you can use **Printer groups**, **Removable storage device groups**, **Network share groups**, and **Network exceptions/VPN** you must register [here](https://forms.office.com/r/GNVTFvxuZv).
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
@@ -429,7 +422,6 @@ Get-VpnConnection
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [Onboard Windows 10 and Windows 11 devices into Microsoft Purview overview](/microsoft-365/compliance/device-onboarding-overview)
@@ -437,4 +429,5 @@ Get-VpnConnection
 - [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
 - [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
-- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
+

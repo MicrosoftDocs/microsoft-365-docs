@@ -33,7 +33,7 @@ When creating the policy, you can specify:
 - If you want to limit who can be invited to be an owner by specifying a security group
 - The sender address of the notifications
 - The number of weeks that the notifications will be sent
-- Which groups or teams are part of the policy
+- Which groups or teams are part of the policy. A maximum of 50 groups can be selected.
 
 > [!Note]
 > Using a security group to limit who can be invited to be an owner requires that you possess but not necessarily assign an Azure AD Premium license for each Microsoft 365 group member in your organization.

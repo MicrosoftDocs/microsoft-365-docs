@@ -21,6 +21,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
+ms.date: 08/04/2022
 ---
 
 # Choose between guided and advanced modes to hunt in Microsoft 365 Defender
