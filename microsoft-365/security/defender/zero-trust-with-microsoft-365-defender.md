@@ -41,7 +41,7 @@ In the illustration: Microsoft 365 Defender provides XDR capabilities for protec
 - Endpoints, including laptops and mobile devices
 - Data in Office 365, including email
 - Cloud apps, including other SaaS apps that your organization uses
-- On-premises AD DS and AD FS servers
+- On-premises Active Directory Domain Services (AD DS) and Active Directory Federated Services (AD FS) servers
 
 To add Microsoft 365 Defender to your Zero Trust strategy and architecture, go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components.
 
