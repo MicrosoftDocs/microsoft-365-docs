@@ -114,6 +114,10 @@ DLP policies are scoped at two different levels. The first level lets you scope 
 - distribution groups
 - accounts
 - devices 
+- sites
+- cloud app instances
+- on-premises repositories
+- PowerBI workspaces
 
 in your organization or to subgroups of your organization called [Administrative Units](#administrative-units). 
 
@@ -121,7 +125,15 @@ The second level of DLP policy scoping is by the [Locations](#locations) that DL
 
 ### Unrestricted or global policies
 
+Unrestricted policies are created and managed by users in these role groups:
 
+- Compliance administrator
+- Compliance data administrator
+- Information Protection
+- Information Protection Admin
+- Security administrator
+
+See, [Permissions](dlp-create-deploy-policy.md#permissions) for more details. They can manage all policies and see all 
 
 
 ### Administrative Units
