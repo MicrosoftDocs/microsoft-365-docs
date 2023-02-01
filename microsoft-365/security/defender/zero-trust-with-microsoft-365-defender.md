@@ -25,7 +25,7 @@ ms.topic: conceptual
 adobe-target: true
 ---
 
-# Zero Trust with Microsoft 365
+# Zero Trust with Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
