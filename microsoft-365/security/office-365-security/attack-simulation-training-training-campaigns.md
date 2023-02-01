@@ -178,7 +178,7 @@ On the **Select end user notification** page, select from the following notifica
   - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
   - **Type**: **Training assignment notification** or **Training reminder notification**.
   - **Delivery preferences**: For **Training reminder notification** types, the values **Twice a week** and **Weekly** are available.
-  - **⋮ Actions**: If you click the :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" **View** icon, the **Review notification** page appears with the following information:
+  - **⋮ Actions**: If you click the :::image type="icon" source="../../media/m365-cc-sc-view-icon.png"::: **View** icon, the **Review notification** page appears with the following information:
     - **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select notification language** box.
     - **Details** tab: View details about the notification:
       - **Notification description**
