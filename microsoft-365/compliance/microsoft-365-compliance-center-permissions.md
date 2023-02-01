@@ -71,7 +71,7 @@ The following Microsoft Purview compliance solutions support administrative unit
 
 |**Solution**|**Description of support**|
 |:-----------|:-------------------------|
-| Microsoft Purview Data Loss Protection | Includes support for associated alerts and Activity Explorer |
+| [Microsoft Purview Data Loss Protection](/microsoft-365/compliance/dlp-learn-about-dlp) | Includes support for associated alerts and [Activity Explorer](/microsoft-365/compliance/dlp-learn-about-dlp#dlp-activity-explorer) |
 | [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) | Includes support for [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) |
 |||
 
@@ -80,7 +80,10 @@ The following Microsoft Purview compliance solutions support administrative unit
 Before configuring administrative units for Microsoft Purview compliance solutions, make sure your organization and users meet the following subscription and licensing requirements:
 
 - [Azure Active Directory Premium licensing](/azure/active-directory/roles/admin-units-manage#prerequisites)
-- Microsoft Purview licensing (**NEED SERVICE DESCRIPTION LICENSING SECTION LINK**)
+- Microsoft Purview licensing:
+    - Microsoft 365 E5/A5/G5
+    - Microsoft 365 E5/A5/F5/G5 Compliance and F5 Security & Compliance
+    - Microsoft 365 E5/A5/F5/G5 Information Protection & Governance
 
 ### Configure administrative units
 
@@ -96,7 +99,7 @@ Complete the following steps to configure administrative units for Microsoft Pur
 4. Complete the steps for configuring administrative units in each supported compliance solution:
 
     - [Sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-admin-units) in Information Protection
-    - DLP policies
+    - [DLP policies](/microsoft-365/compliance/dlp-learn-about-dlp#dlp-is-part-of-the-larger-microsoft-purview-offering)
 
 ## Add users to a compliance role group
 
