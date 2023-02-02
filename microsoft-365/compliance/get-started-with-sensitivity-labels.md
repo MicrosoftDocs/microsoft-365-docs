@@ -95,7 +95,9 @@ For example, your organization has configured administrative units for specific 
 
 1. You sign in to the Microsoft Purview compliance portal. Your account is a member of the **Information Protection Admins** role group, and your account in that role group has been assigned administrative units for France, Germany, and Spain.
 
-2. When you create the sensitivity label policy, you see just three administrative units and select the one for France. This configuration  automatically scopes the policy to users in France. You don't need to worry about which groups to select or manually select users. You also don't need to worry about changing the policy when there are new users in France, because this change is handled by the administrative unit in Azure Active Directory.
+2. When you create the sensitivity label policy, you see just three administrative units and select the one for France.
+    
+    This configuration automatically scopes the policy to all users in France. You don't need to worry about which groups to select or manually select users. You also don't need to worry about changing the policy when there are new users in France, because this change is handled by the administrative unit in Azure Active Directory.
 
 For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
