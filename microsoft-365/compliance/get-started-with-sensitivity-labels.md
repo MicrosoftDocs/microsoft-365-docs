@@ -99,9 +99,10 @@ For example, your organization has configured administrative units for specific 
     
     This configuration automatically scopes the policy to all users in France. You don't need to worry about which groups to select or manually select users. You also don't need to worry about changing the policy when there are new users in France, because this change is handled by the administrative unit in Azure Active Directory.
 
-For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
+For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview).
 
 ## Deployment strategy for sensitivity labels
+
 A successful strategy to deploy sensitivity labels for an organization is to create a working virtual team that identifies and manages the business and technical requirements, proof of concept testing, internal checkpoints and approvals, and final deployment for the production environment.
 
 Using the table in the next section, we recommend identifying your top one or two scenarios that map to your most impactful business requirements. After these scenarios are deployed, return to the list to identify the next one or two priorities for deployment.

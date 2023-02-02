@@ -141,7 +141,7 @@ They can manage all policies and see all the alerts and events that flow from po
 
 Administrative units are subsets of your Azure Active Directory and are created for the purposes of managing collections of users, groups, and devices. These collections are typically created along business group lines or geopolitical areas.
   
-DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) for implementation details in the Microsoft Purview compliance portal. Administrative unit admins need to be assigned to one of the same roles or role groups as administrators of unrestricted DLP policies in order to create and manage DLP policies for their administrative un
+DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for implementation details in the Microsoft Purview compliance portal. Administrative unit admins need to be assigned to one of the same roles or role groups as administrators of unrestricted DLP policies in order to create and manage DLP policies for their administrative un
 
 |DLP Administrative Role Group  |Can |
 |---------|---------|
