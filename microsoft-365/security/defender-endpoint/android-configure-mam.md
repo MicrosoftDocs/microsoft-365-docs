@@ -1,5 +1,5 @@
 ---
-title: Configure Microsoft Defender for Endpoint risk signals using App Protection Policies (MAM)
+title: Configure Microsoft Defender for Endpoint on Android risk signals using App Protection Policies (MAM)
 description: Describes how to configure Microsoft Defender for Endpoint risk signals using App Protection policies
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, configuration, MAM, App Protectection Policies, Managed app
 search.product: eADQiWindows 10XVcnh
@@ -20,7 +20,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ---
 
-# Configure Microsoft Defender for Endpoint risk signals using App Protection Policies (MAM)
+# Configure Microsoft Defender for Endpoint on Android risk signals using App Protection Policies (MAM)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

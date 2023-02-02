@@ -1,9 +1,14 @@
 {
   "redirections": [
     {
-      "source_path": "microsoft-365/frontline/bookings-virtual-visits.md",
-      "redirect_url": "/microsoft-365/frontline/bookings-virtual-appointments",
+      "source_path": "microsoft-365/frontline/bookings-virtual-appointments.md",
+      "redirect_url": "/microsoft-365/frontline/virtual-appointments-app",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/frontline/bookings-virtual-visits.md",
+      "redirect_url": "/microsoft-365/frontline/virtual-appointments-app",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/frontline/virtual-visits-usage-report.md",
@@ -9264,6 +9269,11 @@
       "source_path": "microsoft-365/security/defender-endpoint/defender-endpoint-trial-playbook.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/defender-endpoint-trial-user-guide",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/troubleshoot-auditd-performance-issues.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/linux-support-perf",
+      "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/defender-vulnerability-management/trial-playbook-defender-vulnerability-management.md",
