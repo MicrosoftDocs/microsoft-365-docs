@@ -152,7 +152,7 @@ DLP supports associating policies with administrative units. See [Administrative
 
 A DLP policy can find and protect items that contain sensitive information across multiple locations.
 
-|Location |Supports Administrative Unites |Include/Exclude scope  |Data state  |Additional pre-requisites |
+|Location |Supports Administrative Units |Include/Exclude scope  |Data state  |Additional pre-requisites |
 |---------|---------|---------|---------|---------|
 |Exchange email online|Yes |distribution group | data-in-motion| No |
 |SharePoint online sites|No   |sites       | data-at-rest </br> data-in-use | No|
