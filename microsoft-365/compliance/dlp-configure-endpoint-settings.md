@@ -374,7 +374,6 @@ File activity will always be audited for onboarded devices, regardless of whethe
 Use this setting to define groups of printers that you want to assign policy actions to that are different from the global printing actions. For example, say you want your DLP policy to block printing of contracts to all printers, except for printers that are in the legal department.
 
 This feature is available for devices running any of the following Windows versions:  
-
 - Windows 10 and later (20H2, 21H1, 21H2, and later) - [KB5020030](https://support.microsoft.com/en-us/topic/november-15-2022-kb5020030-os-builds-19042-2311-19043-2311-19044-2311-and-19045-2311-preview-237a9048-f853-4e29-a3a2-62efdbea95e2)
 - Win 11 21H2 - [KB5019157](https://support.microsoft.com/en-us/topic/november-15-2022-kb5019157-os-build-22000-1281-preview-d64fb317-3435-49ff-b2c4-d0356a51a6b0)
 - Win 11 22H2 - [KB5020044](https://support.microsoft.com/en-us/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3)
@@ -429,13 +428,13 @@ This feature is available for devices running any of the following Windows versi
 
 You can define removeable storage devices by these parameters:
 
-- Storage device friendly name - Get the Friendly name value from the storage device property details in device manager.
+- Storage device friendly name - Get the Friendly name value from the storage device property details in device manager. Wildcard values are supported.
 - USB product ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 - USB vendor ID - Get the Device Instance path value from the USB device property details in device manager. Convert it to Product ID and Vendor ID format, see [Standard USB identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
-- Serial number ID - Get the serial number ID value from the storage device property details in device manager.
-- Device ID - Get the device ID value from the storage device property details in device manager.
-- Instance path ID - Get the device ID value from the storage device property details in device manager.
-- Hardware ID - Get the hardware ID value from the storage device property details in device manager.
+- Serial number ID - Get the serial number ID value from the storage device property details in device manager. Wildcard values are supported.
+- Device ID - Get the device ID value from the storage device property details in device manager. Wildcard values are supported.
+- Instance path ID - Get the device ID value from the storage device property details in device manager. Wildcard values are supported.
+- Hardware ID - Get the hardware ID value from the storage device property details in device manager. Wildcard values are supported.
 
 You assign each removable storage device in the group an **Alias**. The alias is a name that only appears in the Purview console. So, continuing with the example, you would create a removable storage device group named **Backup** and add individual devices  (with an alias) by their friendly name, like `backup_drive_001`, and `backup_drive_002`.
 
