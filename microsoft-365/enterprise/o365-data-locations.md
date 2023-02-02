@@ -3,7 +3,7 @@ title: "Microsoft 365 data locations"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.reviewer: dmwmsft
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
