@@ -71,11 +71,13 @@ For example, you could use administrative units to delegate permissions to admin
 
 The following Microsoft Purview compliance solutions support administrative units:
 
-|**Solution**|**Description of support**|
-|:-----------|:-------------------------|
-| [Microsoft Purview Data Loss Protection](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
-| [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
+|**Solution**|**Description of support**|**Channels supported**|
+|:-----------|:-------------------------|:---------------------|
+| [Microsoft Purview Data Loss Protection](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) | Devices, Exchange Online, OneDrive for Business, Microsoft Teams (chats and channel messages) |
+| [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) | Exchange Online |
 |||
+
+
 
 For these solutions, the following features also support administrative units:
 
