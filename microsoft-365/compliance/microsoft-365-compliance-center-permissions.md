@@ -93,7 +93,7 @@ These administrators, referred to as restricted administrators, can now select o
 > [!IMPORTANT]
 > After you've assigned administrative units to members of the role groups, these restricted administrators will no longer be able to see and edit existing policies that support administrative units. However, there's no operational change to these policies and they remain visible and can be edited by unrestricted administrators.
 > 
-> Restricted administrators will also no longer be able to see historical data using features that support administrative units, such as activity explorer and alerts. Going forward, restricted administrators will be able to see this related data for their assigned administrative units only.
+> Restricted administrators will also no longer be able to see historical data using features that support administrative units, such as activity explorer and alerts. They remain visible to unrestricted administrators. Going forward, restricted administrators will be able to see this related data for their assigned administrative units only.
 
 ### Prerequisites for administrative units
 
