@@ -37,7 +37,7 @@ If you're using [Defender for Business](../defender-business/mdb-overview.md), y
 > - Only users with 'Manage security settings' permissions can configure email notifications. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications.
 > - Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
-You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts triggered after they're added. For more information about alerts, see [View and organize the Alerts queue](alerts-queue.md).
+You can set the alert severity levels that trigger notifications. You can also add or remove recipients of the email notification. New recipients get notified about alerts triggered after they're added. For more information about alerts, see [View and organize the Alerts queue](../defender-endpoint/alerts-queue.md).
 
 If you're using role-based access control (RBAC), recipients will only receive notifications based on the device groups that were configured in the notification rule. Users with the proper permission can only create, edit, or delete notifications that are limited to their device group management scope. Only users assigned to the Global administrator role can manage notification rules that are configured for all device groups.
 
@@ -61,7 +61,7 @@ You can create rules that determine the devices and alert severities to send ema
         > [!NOTE]
         > This information might be processed by recipient mail servers that are not in the geographic location you have selected for your Defender data.
 
-    - **Devices** - Choose whether to notify recipients for alerts on all devices (Global administrator role only) or on selected device groups. For more information, see [Create and manage device groups](machine-groups.md). (If you're using [Defender for Business](../defender-business/mdb-overview.md), device groups do not apply.)
+    - **Devices** - Choose whether to notify recipients for alerts on all devices (Global administrator role only) or on selected device groups. For more information, see [Create and manage device groups](../defender-endpoint/machine-groups.md). (If you're using [Defender for Business](../defender-business/mdb-overview.md), device groups do not apply.)
     - **Alert severity** - Choose the alert severity level.
 
 4. Click **Next**.
@@ -100,6 +100,6 @@ This section lists various issues that you may encounter when using email notifi
 
 ## Related topics
 
-- [Update data retention settings](data-retention-settings.md)
-- [Configure advanced features](advanced-features.md)
-- [Configure vulnerability email notifications](/microsoft-365/security/defender-endpoint/configure-vulnerability-email-notifications)
+- [Update data retention settings](../defender-endpoint/data-retention-settings.md)
+- [Configure advanced features](../defender-endpoint/advanced-features.md)
+- [Configure vulnerability email notifications](../defender-endpoint/configure-vulnerability-email-notifications.md)
