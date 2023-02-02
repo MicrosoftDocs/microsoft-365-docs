@@ -143,7 +143,7 @@ Identifying and resolving compliance issues with communication compliance uses t
 
 In this workflow step, you identify your compliance requirements and configure applicable communication compliance policies. Policy templates are a great way to not only quickly configure a new compliance policy, but to also quickly modify and update policies as your requirements change. For example, you may want to quickly test a policy for potentially inappropriate content on communications for a small group of users before configuring a policy for all users in your organization.
 
->[!IMPORTANT]
+>[!IMPORTANT] 
 >By default Global Administrators do not have access to communication compliance features. To enable permissions for communication compliance features, see [Make communication compliance available in your organization](/microsoft-365/compliance/communication-compliance-configure#step-1-required-enable-permissions-for-communication-compliance).
 
 You can choose from the following policy templates in the Microsoft Purview compliance portal:
