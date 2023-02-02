@@ -73,13 +73,12 @@ The following Microsoft Purview compliance solutions support administrative unit
 
 |**Solution**|**Description of support**|
 |:-----------|:-------------------------|
-| [Data Loss Prevention (DLP](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
+| [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
 | [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
-|||
 
 For these solutions, the following features also support administrative units:
 
-- Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) and sensitivity labeling alerts are visible only from users in assigned administrative units
+- Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
 
 When you edit the role groups for these solutions, you can select individual members and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory:
@@ -124,10 +123,10 @@ Now, when these restricted administrators create or edit policies that support a
 
 Further into the policy configuration, unrestricted and restricted administrators can then refine their choice as before, by including or excluding (if supported) individual users and groups. However, if administrative units have been selected, **All** now represents all users in the selected administrative units rather than all users in the tenant. Similarly, the users that can be included or excluded will be from the selected administrative units only.
 
-For information about administrative units that are specific to each supported solution, see the following sections:
+For information about administrative units that is specific to each supported solution, see the following sections:
 
 - For DLP: [Administrative Unit restricted policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
-- For sensitivity labels: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units)
+- For sensitivity labeling: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units)
 
 ## Add users to a compliance role group
 
