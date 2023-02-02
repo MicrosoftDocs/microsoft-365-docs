@@ -123,7 +123,7 @@ Now, when these restricted administrators create or edit policies that support a
 
 Further into the policy configuration, unrestricted and restricted administrators can then refine their choice as before, by including or excluding (if supported) individual users and groups. However, if administrative units have been selected, **All** now represents all users in the selected administrative units rather than all users in the tenant. Similarly, the users that can be included or excluded will be from the selected administrative units only.
 
-For information about administrative units that are specific to each supported solution, see the following sections:
+For information about administrative units that is specific to each supported solution, see the following sections:
 
 - For DLP: [Administrative Unit restricted policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
 - For sensitivity labeling: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units)
