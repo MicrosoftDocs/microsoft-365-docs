@@ -73,13 +73,13 @@ The following Microsoft Purview compliance solutions support administrative unit
 
 |**Solution**|**Description of support**|
 |:-----------|:-------------------------|
-| [Microsoft Purview Data Loss Protection](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
-| [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
+| [Data Loss Prevention (DLP](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
+| [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
 |||
 
 For these solutions, the following features also support administrative units:
 
-- Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) and Information Protection alerts are visible only from users in assigned administrative units
+- Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) and sensitivity labeling alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
 
 When you edit the role groups for these solutions, you can select individual members and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory:
@@ -122,9 +122,9 @@ Now, when these restricted administrators create or edit policies that support a
 - *Unrestricted administrators* don't have to select administrative units as part of the policy configuration. They can keep the default of the entire directory, or select one or more administrative units.
 - *Restricted administrators* must now select one or more administrative units as part of the policy configuration.
 
-Further into the policy configuration, unrestricted and restricted administrators can then refine their choice as before, by including or excluding (if supported) individual users and groups. However, if administrative units have been selected, **All** now represents all users in the selected administrative units rather than all users in the tenant. Similarly, the users that can included or excluded will be from the selected administrative units only.
+Further into the policy configuration, unrestricted and restricted administrators can then refine their choice as before, by including or excluding (if supported) individual users and groups. However, if administrative units have been selected, **All** now represents all users in the selected administrative units rather than all users in the tenant. Similarly, the users that can be included or excluded will be from the selected administrative units only.
 
-For information about administrative units that are specific to each supported solution, see the following articles:
+For information about administrative units that are specific to each supported solution, see the following sections:
 
 - [DLP policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
 - [Sensitivity labels](get-started-with-sensitivity-labels.md#support-for-administrative-units)
