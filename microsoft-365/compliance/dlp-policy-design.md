@@ -51,6 +51,7 @@ You should be able to summarize the business intent for every policy you have in
 Remember from [DLP policy configuration overview](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) that all DLP policies require that you:
 
 - Choose what you want to monitor
+- Choose the [Policy Scoping](dlp-policy-reference.md#policy-scoping)(preview)
 - Choose where you want to monitor
 - Choose the conditions that must be matched for a policy to be applied to an item
 - Choose the action to take when the policy conditions are met
@@ -68,7 +69,7 @@ Let's break the example draft statement down and map it to DLP policy configurat
 |Statement|Configuration question answered and configuration mapping|
 |---|---|
 |"We are a U.S. based organization, and we need  to detect Office documents that contain sensitive health care information covered by HIPAA...|- **What to monitor**: Office docs, use the [U.S. Health Insurance Act (HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) template </br>- **Conditions for a match**: (preconfigured but editable) - item contains U.S. SSN and Drug Enforcement Agency (DEA) number, International Classification of Diseases (ICD-9-CM), International Classification of Diseases (ICD-10-CM), content is shared with people outside my organization  </br> - drives conversations to clarify the triggering threshold for detection like [confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels), and [instance count](dlp-policy-reference.md#content-contains) (called leakage tolerance).|
-|...that are stored in OneDrive/SharePoint and protect against that information being shared in Teams chat and channel messages...|- **Where to monitor**:  [Location scoping](dlp-policy-reference.md#locations) by including or excluding OneDrive and SharePoint sites and Teams chat/channel accounts or distribution groups.|
+|...that are stored in OneDrive/SharePoint and protect against that information being shared in Teams chat and channel messages...|- **Where to monitor**:  [Location scoping](dlp-policy-reference.md#locations) by including or excluding OneDrive and SharePoint sites and Teams chat/channel accounts or distribution groups. **Policy scoping** (preview): [Full directory](dlp-policy-reference.md#policy-scoping) |
 |...and restrict everyone from sharing those items with unauthorized third parties."|- **Actions to take**: [You add](dlp-policy-reference.md#actions) *Restrict access or encrypt the content in Microsoft 365 locations* </br> - drives conversation on what actions to take when a policy is triggered including protective actions like sharing restrictions, awareness actions like notifications and alerts, and user empowerment actions like allow user overrides of a blocking action|
 
 This example doesn't cover all the configuration points of a DLP policy, it would need to be expanded. But it should get you thinking in the right direction as you develop your own DLP policy intent statements.

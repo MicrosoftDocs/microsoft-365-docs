@@ -112,7 +112,7 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
 
 |Statement|Configuration question answered and configuration mapping|
 |---|---|
-|"We need to block emails to all recipients..."|- **Where to monitor**: Exchange </br> - **Action**: Restrict access or encrypt the content in Microsoft 365 locations > Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files > Block everyone |
+|"We need to block emails to all recipients..."|- **Where to monitor**: Exchange </br>- **Administrative scope**: Full directory </br>- **Action**: Restrict access or encrypt the content in Microsoft 365 locations > Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files > Block everyone |
 |"...that contain credit card numbers or have the 'highly confidential' sensitivity label applied..."| - **What to monitor** use the Custom template </br> - **Conditions for a match** edit it to add the *highly confidential* sensitivity label|
 |"...except if..."| **Condition group configuration** - Create a nested boolean NOT condition group joined to the first conditions using a boolean AND|
 |"...the email is sent from someone on the finance team..."| **Condition for match**: Sender is a member of|
@@ -145,6 +145,8 @@ This procedure uses a hypothetical distribution group *Finance team* at Contoso.
 5. Fill in a description. You can use the policy intent statement here.
 
 1. Select **Next**.
+
+1. Select **Full directory** under **Admin units**.
 
 1. Set the **Exchange email** location status to **On**. Set all the other location status to **Off**.
 
