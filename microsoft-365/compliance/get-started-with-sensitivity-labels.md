@@ -89,7 +89,7 @@ Now in preview, sensitivity labels support [administrative units that have been 
 > [!IMPORTANT]
 > Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the options for SharePoint and OneDrive.
 
-Although the configuration of administrative units and the accuracy of their membership is a dependency outside Microsoft Purview, using administrative units for your labeling policies can simplify their configuration and maintenance.
+Although the configuration of administrative units and the accuracy of their membership is an Azure Active Directory dependency, using administrative units for your labeling policies can simplify policy configuration and maintenance.
 
 For example, your organization has configured administrative units for specific countries, and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
 
