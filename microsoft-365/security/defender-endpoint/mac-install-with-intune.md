@@ -272,8 +272,6 @@ You don't need any special provisioning for a Mac device beyond a standard [Comp
 <br>
 </br>
 
->Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
-
 ## Troubleshooting
 
 Issue: No license found.
