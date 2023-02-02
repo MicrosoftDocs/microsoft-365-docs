@@ -82,7 +82,7 @@ These permissions are required only to create and configure sensitivity labels a
 
 Now in preview, sensitivity labels support [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
 
-- You can assign administrative units to administrators when you edit the [role groups that are used with Microsoft Purview Information Protection]( ). Select individual members and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
+- You can assign administrative units to administrators when you edit the role groups that are used with Microsoft Purview Information Protection. Select individual members and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
 
 - You can define the initial scope of sensitivity label policies and auto-labeling policies for Exchange when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
 
