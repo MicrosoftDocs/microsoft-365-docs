@@ -77,8 +77,6 @@ The following Microsoft Purview compliance solutions support administrative unit
 | [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
 |||
 
-
-
 For these solutions, the following features also support administrative units:
 
 - Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) and sensitivity labeling alerts are visible only from users in assigned administrative units
