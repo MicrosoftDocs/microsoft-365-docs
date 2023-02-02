@@ -28,7 +28,7 @@ description: "Get step-by-step tools to plan, migrate, and implement the feature
 
 Microsoft 365 and Office 365 advanced deployment guides give you tailored guidance and resources for planning and deploying your tenant, apps, and services. These guides are created using the same best practices that [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) onboarding specialists share in individual interactions. They provide information on product setup, enabling security features, deploying collaboration tools, and provide scripts to speed up advanced deployments.
 
-All advanced deployment guides are available in the Microsoft 365 admin center as described in the section below, and most guides can also be found in the [Microsoft 365 Setup portal](https://setup.microsoft.com/).
+All advanced deployment guides are available in the Microsoft 365 admin center as described in the section below, and most guides can also be found in the [Microsoft 365 Setup portal](https://aka.ms/setupguides).
 
 Access to advanced deployment guides in the admin center requires authentication to a Microsoft 365 tenant as an administrator or other role with access to the admin center. Advanced deployment guides in the Microsoft 365 Setup portal can be accessed by anyone. We have provided links to both locations for each guide, where available, in the tables below.
 
@@ -45,7 +45,7 @@ In this article:
 
 ## How to access advanced deployment guides in the Microsoft 365 admin center
 
-Advanced deployment guides are accessible from the [Advanced deployment guides & assistance](https://aka.ms/setupguidance) page in the Microsoft 365 admin center. When you access advanced deployment guides from the admin center, you can keep track of the status of your progress and return at any time to complete a guide. This functionality is not available when you access guides from the [Microsoft 365 Setup portal](https://setup.microsoft.com/).
+Advanced deployment guides are accessible from the [Advanced deployment guides & assistance](https://aka.ms/advanceddeploymentguides) page in the Microsoft 365 admin center. When you access advanced deployment guides from the admin center, you can keep track of the status of your progress and return at any time to complete a guide. This functionality is not available when you access guides from the [Microsoft 365 Setup portal](https://aka.ms/setupguides).
 
 > [!NOTE]
 > You must be assigned an admin role such as _Global Reader_ to access advanced deployment guides in the Microsoft 365 admin center. Only admins with the _Global Administrator_ role can use the guides to change settings in the tenant.
@@ -55,7 +55,7 @@ Advanced deployment guides are accessible from the [Advanced deployment guides &
 
 To reach the **Advanced deployment guides & assistance** page:
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to the **Home** page.
+1. In the [Microsoft 365 admin center](https://aka.ms/advanceddeploymentguides), go to the **Home** page.
 
 2. Find the _Training, guides & assistance_ card and click **Advanced deployment guides & assistance**.
 
@@ -65,7 +65,7 @@ To reach the **Advanced deployment guides & assistance** page:
 
 Advanced deployment guides in the admin center require authentication to a Microsoft 365 tenant as an administrator or other role with access to the admin center, but guides in the Microsoft 365 Setup portal can be accessed by anyone.
 
-|**Guide - [Setup Portal](https://setup.microsoft.com/)** |**Guide - [Admin Center](https://aka.ms/setupguidance)** |**Description** |
+|**Guide - [Setup Portal](https://aka.ms/setupguides)** |**Guide - [Admin Center](https://aka.ms/advanceddeploymentguides)** |**Description** |
 |---------|---------|---------|
 |[Prepare your environment guide](https://go.microsoft.com/fwlink/?linkid=2223234)|[Prepare your environment guide](https://aka.ms/prepareyourenvironment)|The **Prepare your environment guide** helps you prepare your organization's environment for Microsoft 365 and Office 365 services. Whatever your goals are, there are tasks you'll need to complete to ensure a successful deployment. To avoid any errors while preparing your environment, you're provided with step-by-step instructions to connect your domain, add users, assign licenses, set up email with Exchange Online, and install or deploy Office apps.|
 |[Email setup guide](https://go.microsoft.com/fwlink/?linkid=2223145)|[Email setup guide](https://aka.ms/office365setup)|The **Email setup guide** provides you with the step-by-step guidance needed for configuring Exchange Online for your organization. This guidance includes setting up new email accounts, migrating email, and configuring email protection. For a successful email setup, use this advisor and you'll receive the recommended migration method based on your organization's current mail system, the number of mailboxes being migrated, and how you want to manage users and their access.|
@@ -80,7 +80,7 @@ Advanced deployment guides in the admin center require authentication to a Micro
 
 ## Guides for authentication and access
 
-|**Guide - [Setup Portal](https://setup.microsoft.com/)** |**Guide - [Admin Center](https://aka.ms/setupguidance)** |**Description** |
+|**Guide - [Setup Portal](https://aka.ms/setupguides)** |**Guide - [Admin Center](https://aka.ms/advanceddeploymentguides)** |**Description** |
 |---------|---------|---------|
 ||[Configure multi-factor authentication (MFA) guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess)|The **Configure multi-factor authentication (MFA) guide** provides information to secure your organization against breaches due to lost or stolen credentials. MFA immediately increases account security by prompting for multiple forms of verification to prove a user's identity when they sign in to an app or other company resource. This prompt could be to enter a code on the user's mobile device or to provide a fingerprint scan. MFA is enabled through Conditional Access, security defaults, or per-user MFA. This guide will provide the recommended MFA option for your org, based on your licenses and existing configuration.|
 ||[Identity security for Teams guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/teamsidentity)|The **Identity security for Teams guide** helps you with some basic security steps you can take to ensure your users are safe and have the most productive time using Teams.|
@@ -93,7 +93,7 @@ Advanced deployment guides in the admin center require authentication to a Micro
 
 ## Guides for security and compliance
 
-|**Guide - [Setup Portal](https://setup.microsoft.com/)** |**Guide - [Admin Center](https://aka.ms/setupguidance)** |**Description** |
+|**Guide - [Setup Portal](https://aka.ms/setupguides)** |**Guide - [Admin Center](https://aka.ms/advanceddeploymentguides)** |**Description** |
 |---------|---------|---------|
 |[Security analyzer](https://go.microsoft.com/fwlink/?linkid=2223325)|[Security analyzer](https://aka.ms/securityanalyzer)|The **Security analyzer** will analyze your security approach and introduce you to Microsoft integrated security and compliance solutions that can improve your security posture. You'll learn about advanced features, such as managing identities and helping to protect against modern attacks. You can then sign up for a trial subscription and be pointed to the corresponding setup guidance for each solution.|
 |[Set up your Microsoft Zero Trust security model](https://go.microsoft.com/fwlink/?linkid=2222968)||Use the **Set up your Zero Trust security model guide** to configure security that effectively adapts to the complexity of the modern environment, embraces the hybrid workplace, and helps protect people, devices, apps, and data wherever they're located. Key recommendations include: always authenticate, limit user access, minimize the blast radius, segment access, verify end-to-end encryption, and use analytics to get visibility, drive threat detection, and improve defenses.|
@@ -111,7 +111,7 @@ Advanced deployment guides in the admin center require authentication to a Micro
 
 ## Guides for collaboration
 
-|**Guide - [Setup Portal](https://setup.microsoft.com/)** |**Guide - [Admin Center](https://aka.ms/setupguidance)** |**Description** |
+|**Guide - [Setup Portal](https://aka.ms/setupguides)** |**Guide - [Admin Center](https://aka.ms/advanceddeploymentguides)** |**Description** |
 |---------|---------|---------|
 ||[Build your employee experience](https://aka.ms/EmployeeExperienceDashboard)|Transform how your employees work together with the **Employee experience dashboard**. For seamless teamwork, use Microsoft 365 to create productive, aligned teams, and keep employees engaged with leadership and the rest of the organization. Help your employees be effective in all work activities. These guides will provide instructions on how to use SharePoint, Teams, and Yammer to build collaboration across your org to help drive productivity.|
 |[Microsoft 365 Apps setup guide](https://go.microsoft.com/fwlink/?linkid=2223409)|[Microsoft 365 Apps setup guide](https://aka.ms/OPPquickstartguide)|The **Microsoft 365 Apps setup guide** helps you get your users' devices running the latest version of Office products like Word, Excel, PowerPoint, and OneNote. You'll get guidance on the various deployment methods that include easy self-install options to enterprise deployments with management tools. The instructions will help you assess your environment, figure out your specific deployment requirements, and implement the necessary support tools to ensure a successful installation.|
@@ -125,11 +125,11 @@ Advanced deployment guides in the admin center require authentication to a Micro
 
 ## Advanced guides
 
-|**Guide - [Setup Portal](https://setup.microsoft.com/)** |**Guide - [Admin Center](https://aka.ms/setupguidance)** |**Description** |
+|**Guide - [Setup Portal](https://aka.ms/setupguides)** |**Guide - [Admin Center](https://aka.ms/advanceddeploymentguides)** |**Description** |
 |---------|---------|---------|
 ||[In-place upgrade with Configuration Manager guide](https://aka.ms/win10upgradedemo)|Use the **In-place upgrade with Configuration Manager guide** when upgrading Windows 7 and Windows 8.1 devices to the latest version of Windows 10. You'll use the script provided to check the prerequisites and automatically configure an in-place upgrade.|
 ||[Deploy Office to your users guide](https://aka.ms/proplusodt)|Deploy Office apps from the cloud with the ability to customize your installation by using the Office Deployment Tool. The **Deploy Office to your users guide** helps you create a customized Office configuration with advanced settings, or you can use a pre-built recommended configuration. Whether your users are conducting a self-install or you're deploying to your users individually or in bulk, this advanced guide provides you with step-by-step instructions to give users an Office installation tailored to your organization.|
 ||[Deploy Office to remote users guide](https://aka.ms/officeremoteinstall)|Now that working remotely is the norm, users need to receive your organization's Office settings when they're not connected to your internal network or when using their own devices.<br>Use the **Deploy Office to remote users guide** to create a customized Office installation and then send users a generated PowerShell script that will seamlessly install Office with your configuration.|
-|[Deploy and update Microsoft 365 Apps with Configuration Manager advisor](https://setup.microsoft.com/microsoft-365-apps/microsoft-365-apps-setup-guide)|[Deploy and update Microsoft 365 Apps with Configuration Manager advisor](https://aka.ms/oppinstall)|For organizations using Configuration Manager, you can use the **Deploy and update Microsoft 365 Apps with Configuration Manager advisor** to generate a script that will automatically configure your Microsoft 365 Apps deployment using best practices recommended by FastTrack engineers. Use this guide to build your deployment groups, customize your Office apps and features, configure dynamic or lean installations, and then run the script to create the applications, automatic deployment rules, and device collections you need to target your deployment.|
+|[Deploy and update Microsoft 365 Apps with Configuration Manager advisor](https://aka.ms/setupguidesmicrosoft-365-apps/microsoft-365-apps-setup-guide)|[Deploy and update Microsoft 365 Apps with Configuration Manager advisor](https://aka.ms/oppinstall)|For organizations using Configuration Manager, you can use the **Deploy and update Microsoft 365 Apps with Configuration Manager advisor** to generate a script that will automatically configure your Microsoft 365 Apps deployment using best practices recommended by FastTrack engineers. Use this guide to build your deployment groups, customize your Office apps and features, configure dynamic or lean installations, and then run the script to create the applications, automatic deployment rules, and device collections you need to target your deployment.|
 ||[Intune Configuration Manager co-management setup guide](https://aka.ms/comanagementsetup)|Use the **Intune Configuration Manager co-management setup guide** to set up existing Configuration Manager client devices and new internet-based devices that your org wants to co-manage with both Microsoft Intune and Configuration Manager. Co-management allows you to manage Windows 10 devices and adds new functionality to your org's devices, while receiving the benefits of both solutions.|
 ||[SDS Rollover setup guide](https://aka.ms/sdsrolloversetupguide)|The **SDS Rollover setup guide** provides the steps to help your organization sync student information data to Azure Active Directory and Office 365. This guide streamlines the term lifecycle management process by creating Office 365 Groups for Exchange Online and SharePoint Online, class teams for Microsoft Teams and OneNote, as well as Intune for Education, and rostering and single sign-on integration for third-party apps. You'll perform end-of-year closeout, tenant cleanup and archive, new school year preparation, and new school year launch. Then you can create new profiles using the sync deployment method that suits your organization.|
