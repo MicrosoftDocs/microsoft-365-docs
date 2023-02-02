@@ -80,34 +80,19 @@ These permissions are required only to create and configure sensitivity labels a
 
 ## Support for administrative units
 
-Now in preview, role groups that are used with Microsoft Purview Information Protection support [administrative units that are configured in Azure Active Directory](/azure/active-directory/roles/administrative-units). When you edit these role groups, you can select individual users and then the **Assign admin units** option to select admin units from Azure Active Directory:
+Now in preview, role groups that are used with Microsoft Purview Information Protection support assigning [administrative units that are configured in Azure Active Directory](/azure/active-directory/roles/administrative-units). When you edit these role groups, you can select individual members and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory.
 
-![Assign admin units option when you edit role groups.](../media/assign-admin-units.png)
-
-These users can now select one or more of their assigned admin units to automatically define the scope of labeling policies that they create or edit. Only if they are unrestricted admins (no admin units assigned), will they be able to assign labeling policies to the entire directory without selecting individual administrative units.
+Sensitivity label policies and auto-labeling policies for Exchange support administrative units. As a new step when you create or edit these policies, you can select administrative units so that only the users in those administrative units will be eligible for the policy.
 
 > [!IMPORTANT]
-> After you've assigned administrative units to users, they will no longer be able to see and edit existing policies that support administrative units. However, there's no change to policies that these users previously created or edited, and these remain visible and can be edited by users who don't have administrative units assigned, or are unrestricted admins.
-> 
-> Users who are assigned administrative units will also no longer be able to see historical data from features that also support administrative units, such as activity explorer and alerts. They will be able to see this related data going forward for the users in the administrative units that they're assigned to.
-
-Sensitivity label policies and auto-labeling policies for Exchange support administrative units. As a new step when you create or edit these policies, you can select administrative units so that only the users in those administrative units will be eligible for the policy:
-
-- Users who don't have administrative units assigned to them (unrestricted admins) don't have to select administrative units as part of the policy configuration. These users can keep the default of the entire directory, or they can select one or more administrative units.
-
-- Users who have administrative units assigned to them must select one or more administrative units as part of the policy configuration.
-
-In the next step of the policy configuration, users can then refine their choice as before, by including or excluding (if supported) individual users and groups. However, if administrative units have been selected, **All** now represents all users in the selected administrative units rather than all users in the tenant. Similarly, the users that can included or excluded will be from the selected administrative units only.
-
-> [!NOTE]
 > Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the options for SharePoint and OneDrive.
 
-Administrative units can simplify the configuration and maintenance of your policies. For example, your organization has configured administrative units for specific countries by using a dynamic group, and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
+Administrative units can simplify the configuration and maintenance of your labeling policies, although the configuration of them in Azure Active Directory is a dependency. For example, your organization has configured administrative units for specific countries, and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
 
-1. You sign in to the Microsoft Purview compliance center. Your account is a member of the **Information Protection Admins** role group, and your account in that role group has been assigned administrative units for France, Germany, and Spain. 
-2. When you create the sensitivity label policy, you select the France administrative unit that automatically selects the users in France. You don't need to worry about group membership or manually selecting users. You also don't need to worry about changing the policy when there are new users in France, because they are automatically added to the admin unit.
+1. You sign in to the Microsoft Purview compliance portal. Your account is a member of the **Information Protection Admins** role group, and your account in that role group has been assigned administrative units for France, Germany, and Spain. 
+2. When you create the sensitivity label policy, you select the France administrative unit that will automatically scope the policy to users in France. For your policy configuration, you don't need to worry about which groups to select or manually selecting users. You also don't need to worry about changing the policy when there are new users in France, because this change is handled by the administrative unit in Azure Active Directory.
 
-For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
+For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
 
 ## Deployment strategy for sensitivity labels
