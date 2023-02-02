@@ -75,6 +75,26 @@ The following Microsoft Purview compliance solutions support administrative unit
 | [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) | Includes support for [sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels) |
 |||
 
+The following Microsoft Purview compliance solutions support administrative units:
+
+- [Data Loss Prevention (DLP)](dlp-learn-about-dlp.md): Role groups and DLP policies
+- [Sensitivity labels](sensitivity-labels.md): Role groups and labeling policies
+
+For these solutions, the following features also support administrative units:
+- Alerts: Alerts are visible only from users in assigned administrative units 
+- Activity explorer: Activity events are visible only from users in assigned administrative units
+
+When you edit the role groups for these solutions, you can select individual members and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory:
+
+![Assign admin units option when you edit role groups.](../media/assign-admin-units.png)
+
+These administrators, referred to as restricted administrators, can now select one or more of their assigned administrative units to automatically define the initial scope of policies that they create or edit. Only if administrators don't have administrative units assigned (unrestricted administrators), will they be able to assign policies to the entire directory without selecting individual administrative units.
+
+> [!IMPORTANT]
+> After you've assigned administrative units to members of the role groups, these restricted administrators will no longer be able to see and edit existing policies that support administrative units. However, there's no operational change to these policies and they remain visible and can be edited by unrestricted administrators.
+> 
+> Restricted administrators will also no longer be able to see historical data using features that support administrative units, such as activity explorer and alerts. They remain visible to unrestricted administrators. Going forward, restricted administrators will be able to see this related data for their assigned administrative units only.
+
 ### Prerequisites for administrative units
 
 Before configuring administrative units for Microsoft Purview compliance solutions, make sure your organization and users meet the following subscription and licensing requirements:
@@ -85,9 +105,9 @@ Before configuring administrative units for Microsoft Purview compliance solutio
     - Microsoft 365 E5/A5/F5/G5 Compliance and F5 Security & Compliance
     - Microsoft 365 E5/A5/F5/G5 Information Protection & Governance
 
-### Configure administrative units
+### Configure and use administrative units
 
-Complete the following steps to configure administrative units for Microsoft Purview compliance solutions:
+Complete the following steps to configure and use administrative units with Microsoft Purview compliance solutions:
 
 1. [Create administrative units](/azure/active-directory/roles/admin-units-manage#create-an-administrative-unit) to restrict the scope of role permissions in Azure Active Directory (Azure AD).
 2. [Add users and distribution groups](/azure/active-directory/roles/admin-units-members-add) to administrative units.
@@ -96,10 +116,20 @@ Complete the following steps to configure administrative units for Microsoft Pur
     >[!NOTE]
     >You can't add groups to an administrative unit that uses dynamic membership rules. If needed, create two administrative units, one for users and one for groups.
 
-4. Complete the steps for configuring administrative units in each supported compliance solution:
+4. Use any of the role groups from the Microsoft Purview compliance solutions that support administrative units to assign administrative units to members.
 
-    - [Sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-admin-units) in Information Protection
-    - [DLP policies](/microsoft-365/compliance/dlp-learn-about-dlp#dlp-is-part-of-the-larger-microsoft-purview-offering)
+Now, when these restricted administrators create or edit policies that support administrative units, they can select administrative units so that only the users in those administrative units will be eligible for the policy:
+
+- Unrestricted administrators don't have to select administrative units as part of the policy configuration. They can keep the default of the entire directory, or select one or more administrative units.
+
+- Restricted administrators must now select one or more administrative units as part of the policy configuration.
+
+Further into the policy configuration, unrestricted and restricted administrators can then refine their choice as before, by including or excluding (if supported) individual users and groups. However, if administrative units have been selected, **All** now represents all users in the selected administrative units rather than all users in the tenant. Similarly, the users that can included or excluded will be from the selected administrative units only.
+
+For information about administrative units that are specific to each supported solution, see the following resources:
+
+- [DLP policies](/microsoft-365/compliance/dlp-learn-about-dlp#dlp-is-part-of-the-larger-microsoft-purview-offering)
+- [Sensitivity labels](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-admininstrative-units)
 
 ## Add users to a compliance role group
 
