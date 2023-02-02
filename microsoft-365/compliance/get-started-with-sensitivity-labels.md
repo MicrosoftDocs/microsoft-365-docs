@@ -80,9 +80,11 @@ These permissions are required only to create and configure sensitivity labels a
 
 ## Support for administrative units
 
-Now in preview, role groups that are used with Microsoft Purview Information Protection support assigning [administrative units that are configured in Azure Active Directory](/azure/active-directory/roles/administrative-units). When you edit these role groups, you can select individual members and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory.
+Now in preview, sensitivity labels support [administrative units that have been configured in Azure Active Directory](/azure/active-directory/roles/administrative-units):
 
-Sensitivity label policies and auto-labeling policies for Exchange support administrative units. As a new step when you create or edit these policies, you can select administrative units so that only the users in those administrative units will be eligible for the policy.
+- You can assign administrative units to administrators when you edit the [role groups that are used with Microsoft Purview Information Protection]( ). Select individual members and then the **Assign admin units** option to select administrative units from Azure Active Directory. These administrators are now restricted to managing just the users in those administrative units.
+
+- You can define the initial scope of sensitivity label policies and auto-labeling policies for Exchange when you create or edit these policies. When you select administrative units, only the users in those administrative units will be eligible for the policy.
 
 > [!IMPORTANT]
 > Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the options for SharePoint and OneDrive.
