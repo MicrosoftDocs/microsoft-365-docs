@@ -161,7 +161,7 @@ To check your label's configuration, including advanced settings, use the follow
     > [!IMPORTANT]
     > If you select a sublabel, make sure you also select its parent label.
 
-4. For the **Assign admin units**: This configuration is currently in preview. If your account has been [assigned administrative units](get-started-with-sensitivity-labels.md#support-for-admin-units), the policy can be automatically restricted to specific users by selecting one or more of the administrative units that have been assigned to you. For more information about how Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
+4. For the **Assign admin units**: This configuration is currently in preview. If your account has been [assigned administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units), the policy can be automatically restricted to specific users by selecting one or more of the administrative units that have been assigned to you. For more information about how Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
     
     If your account isn't assigned administrative units or you don't want to restrict the policy by using administrative units, keep the default of **Full directory** and select **Next**.
 
