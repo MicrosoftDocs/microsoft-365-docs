@@ -1,7 +1,7 @@
 ---
 title: Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
 description: Learn how to set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro
-keywords: policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, big sur, monterey, ventura, mde for mac
+keywords: policies, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -389,7 +389,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 ## Step 4: Configure notifications settings
 
-These steps are applicable of macOS 10.15 (Catalina) or newer.
+These steps are applicable on macOS 11 (Big Sur) or later.
 
 1. In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.
 
@@ -397,7 +397,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     - Tab **General**:
         - **Name**: MDATP MDAV Notification settings
-        - **Description**: macOS 10.15 (Catalina) or newer
+        - **Description**: macOS 11 (Big Sur) or later
         - **Category**: None *(default)*
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*
@@ -534,7 +534,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     **General**
     - Name: MDATP MDAV - grant Full Disk Access to EDR and AV
-    - Description: On macOS Catalina or newer, the new Privacy Preferences Policy Control
+    - Description: On macOS 11 (Big Sur) or later, the new Privacy Preferences Policy Control 
     - Category: None
     - Distribution method: Install Automatically
     - Level: Computer level
@@ -723,7 +723,8 @@ Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft
 
 As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
-These steps are applicable of macOS 10.15 (Catalina) or newer.
+These steps are applicable on macOS 11 (Big Sur) or later.
+
 
 1. In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.
 
@@ -731,7 +732,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
     - Tab **General**:
         - **Name**: Microsoft Defender Network Extension
-        - **Description**: macOS 10.15 (Catalina) or newer
+        - **Description**: macOS 11 (Big Sur) or later
         - **Category**: None *(default)*
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*
