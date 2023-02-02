@@ -63,7 +63,7 @@ The roles that appear in the **Azure AD** > **Roles** section of the compliance 
 
 ## Administrative units
 
-Administrative units let you subdivide your organization into any unit that you want, and then assign specific administrators that can manage only the members of that unit. They also allow you to configure specific members to manage certain features for supported Microsoft Purview compliance solutions. For example, you could use administrative units to delegate permissions to administrators for each geographic region in a large multi-national organization or for grouping administrator access by department within your organization.
+Admin units let you subdivide your organization into any unit that you want, and then assign specific administrators that can manage only the members of that unit. They also allow you to configure specific members to manage certain features for supported Microsoft Purview compliance solutions. For example, you could use administrative units to delegate permissions to administrators for each geographic region in a large multi-national organization or for grouping administrator access by department within your organization.
 
 ### Administrative units support in Microsoft Purview
 
