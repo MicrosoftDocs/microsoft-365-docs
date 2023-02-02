@@ -102,7 +102,7 @@ In the next step of the policy configuration, users can then refine their choice
 > [!NOTE]
 > Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the options for SharePoint and OneDrive.
 
-Administrative units can simplify the configuration and maintenance of your policies. For example, your organization has configured administrative units for specific countries and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
+Administrative units can simplify the configuration and maintenance of your policies. For example, your organization has configured administrative units for specific countries by using a dynamic group, and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
 
 1. You sign in to the Microsoft Purview compliance center. Your account is a member of the **Information Protection Admins** role group, and your account in that role group has been assigned administrative units for France, Germany, and Spain. 
 2. When you create the sensitivity label policy, you select the France administrative unit that automatically selects the users in France. You don't need to worry about group membership or manually selecting users. You also don't need to worry about changing the policy when there are new users in France, because they are automatically added to the admin unit.
