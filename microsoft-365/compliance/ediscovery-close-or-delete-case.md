@@ -72,11 +72,11 @@ Before you can delete a case (whether it's active or closed), you must first del
 
 To delete holds associated with a case:
 
-1. Go the **Data Source** tab in the eDiscovery (Premium) case and release Holds from all custodians
-2. Close the case from **Settings** tab
-3. Under **Holds** tab the Delete button gets enabled after the case is closed
-4. Delete the holds and wait for the job to be completely deleted 
-5. Finally, go to the settings and delete the case.
+1. Go to the **Data Source** tab in the eDiscovery (Premium) case and release holds from all custodians.
+2. Close the case from the **Settings** tab.
+3. The **Delete** button under the **Holds** tab is enabled after the case is closed.
+4. Delete the holds and wait for the job to be completely deleted.
+5. Finally, go to **Settings** and delete the case.
 
 To delete a case:
 
