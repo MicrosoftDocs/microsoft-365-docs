@@ -89,12 +89,13 @@ Now in preview, sensitivity labels support [administrative units that have been 
 > [!IMPORTANT]
 > Don't select administrative units for an auto-labeling policy that you want to apply to documents in SharePoint or OneDrive. Because administrative units support only users and groups, if you configure an auto-labeling policy to use administrative units, you won't be able to select the options for SharePoint and OneDrive.
 
-Although the configuration of administrative units in Azure Active Directory and the accuracy of their membership is a dependency, using administrative units for your labeling policies can simplify their configuration and maintenance. 
+Although the configuration of administrative units and the accuracy of their membership is a dependency outside Microsoft Purview, using administrative units for your labeling policies can simplify their configuration and maintenance.
 
 For example, your organization has configured administrative units for specific countries, and you need to publish a new sensitivity label just to users in France and assign specific policy settings to these users:
 
-1. You sign in to the Microsoft Purview compliance portal. Your account is a member of the **Information Protection Admins** role group, and your account in that role group has been assigned administrative units for France, Germany, and Spain. 
-2. When you create the sensitivity label policy, you select the France administrative unit that will automatically scope the policy to users in France. For your policy configuration, you don't need to worry about which groups to select or manually selecting users. You also don't need to worry about changing the policy when there are new users in France, because this change is handled by the administrative unit in Azure Active Directory.
+1. You sign in to the Microsoft Purview compliance portal. Your account is a member of the **Information Protection Admins** role group, and your account in that role group has been assigned administrative units for France, Germany, and Spain.
+
+2. When you create the sensitivity label policy, you see just three administrative units and select the one for France. This configuration  automatically scopes the policy to users in France. You don't need to worry about which groups to select or manually select users. You also don't need to worry about changing the policy when there are new users in France, because this change is handled by the administrative unit in Azure Active Directory.
 
 For more information about how Microsoft Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
 
