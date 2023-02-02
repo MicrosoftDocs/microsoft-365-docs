@@ -28,7 +28,7 @@ summary: |
   
 
 sections:
-  - name: Ignored
+  - name: Getting started
     questions:
       - question: What is Microsoft 365 Lighthouse?
         answer: |
@@ -55,7 +55,13 @@ sections:
       - question: How do I sign up for Microsoft 365 Lighthouse?
         answer: |
           To sign up for Lighthouse, you'll need to be registered with the CSP program. We're currently unable to support indirect providers. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
+
+      - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business?
+        answer: |
+          Lighthouse helps you manage customer tenants that have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license. Lighthouse capabilities will vary based on the licenses assigned to the user. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).        
           
+  - name: Managing customer tenants
+    questions:          
       - question: I finished signing up, so why don't I see any customer tenant data?
         answer: |
           It can take up to 48 hours for customer tenant data to load within Lighthouse. If it's been more than 48 hours since you completed onboarding, reach out to our Support team for help. You'll need to let them know when you completed onboarding and provide any relevant screenshots and logs. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
@@ -78,10 +84,27 @@ sections:
           
           To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
 
-      - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business?
+  - name: Deploying baselines
+    questions:          
+      - question: What if I have a customer tenant that uses a third-party antivirus solution and I don't want to set up Microsoft Defender for Business?
         answer: |
-          Lighthouse helps you manage customer tenants that have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license. Lighthouse capabilities will vary based on the licenses assigned to the user. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          In the customer tenant's deployment plan, under the **Set up Microsoft Defender for Business** deployment task, dismiss the **Provisioning** sub-task and select **Resolved through a third party** as the reason for dismissal.
 
+      - question: What if I don't want to require MFA for an emergency access admin account?
+        answer: |
+          Do one of the following:
+          
+          - Exclude the emergency access admin account from the **Require MFA for admins** deployment task.
+            1. In the deployment plan for the customer tenant associated with the emergency access admin account, under the **Require MFA for admins** deployment task, select the **Create conditional access policy to require MFA for admins** sub-task to open the task details pane, and then select **Deploy**.
+            2. On the **Review and edit deployment configuration** page, click in the **Exclude users** field to open the list of suggested users, and then select the emergency access admin account you want to exclude.
+            3. Select **Next** to review the detected configurations, and then proceed to confirm and deploy.
+
+          - In the deployment plan for the customer tenant associated with the user, under the **Require MFA for admins** deployment task, dismiss the **Create conditional access policy to require MFA for admins** sub-task and select **Risk accepted** as the reason for dismissal.
+              > [!NOTE]
+              > Dismissal of a deployment task impacts all users in the tenant.
+
+  - name: Managing Windows 365 Cloud PCs
+    questions:
       - question: How do I qualify to manage customer Cloud PCs in Microsoft 365 Lighthouse?
         answer: |
           If you meet the requirements to use Lighthouse, then you're qualified to manage customer Cloud PCs in Lighthouse. For a list of current requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
@@ -89,11 +112,13 @@ sections:
       - question: Where can I purchase Windows 365 (Cloud PC) licenses for my customers?
         answer: |
           You can purchase Windows 365 licenses through all available Microsoft commercial sales channels. One license purchased is equivalent to the purchase of one Cloud PC. Currently, each user can be assigned only one Cloud PC of the same SKU type, but they can be assigned multiple Cloud PCs if they are of different SKU types. To compare Windows 365 plans and pricing, see [Get the Windows 365 Cloud PC that’s right for you](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
-          
+
+  - name: Getting help and providing feedback
+    questions:          
       - question: How do I get help and support?
         answer: |
           In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane. From here, select **Help + support** to access self-help articles or contact support. For more information about help and support options, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
-          
+
       - question: Where can I submit feedback and ideas?
         answer: |
           Your feedback matters and is important to us! There are a few different ways for you to submit feedback:
