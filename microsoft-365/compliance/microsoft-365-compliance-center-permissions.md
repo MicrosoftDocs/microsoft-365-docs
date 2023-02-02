@@ -128,8 +128,8 @@ Further into the policy configuration, unrestricted and restricted administrator
 
 For information about administrative units that are specific to each supported solution, see the following sections:
 
-- [DLP policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
-- [Sensitivity labels](get-started-with-sensitivity-labels.md#support-for-administrative-units)
+- For DLP: [Administrative Unit restricted policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
+- For sensitivity labels: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units)
 
 ## Add users to a compliance role group
 
