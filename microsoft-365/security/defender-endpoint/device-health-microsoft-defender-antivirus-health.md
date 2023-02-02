@@ -40,6 +40,7 @@ The Device Health report provides information about the devices in your organiza
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**. The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on the following aspects of Microsoft Defender Antivirus:
+
 - [Antivirus mode card](#antivirus-mode-card)
 - [Antivirus engine version card](#antivirus-engine-version-card)
 - [Antivirus security intelligence version card](#antivirus-security-intelligence-version-card)
@@ -69,7 +70,8 @@ To Assign these permissions:
 
 For more information about user role management, see [Create and manage roles for role-based access control](user-roles.md).
 
-## Microsoft Defender Antivirus health tab 
+## Microsoft Defender Antivirus health tab
+
 The Microsoft Defender Antivirus health tab contains eight cards that report on several aspects of Microsoft Defender Antivirus in your organization:
 
 Two cards, [Antivirus mode card](#antivirus-mode-card) and [Recent antivirus scan results card](#recent-antivirus-scan-results-card), report about Microsoft Defender Antivirus functions.
@@ -142,7 +144,7 @@ There are two different export csv functionalities through the portal:
 
 - **Top level export**. You can use the top-level **Export** button to gather an all-up Microsoft Defender Antivirus health report (500-K limit).
 
-   ::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Shows the top-level export report button" lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
+:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Shows the top-level export report button." lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
 
 - **Flyout level export**. You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100-K limit).
 
@@ -155,9 +157,9 @@ For information on exporting using API, see the following articles:
 
 > [!IMPORTANT]
 >
-> Currently, only the **Antivirus Health JSON Response** is generally available. **Antivirus Health API via files** is only available in public preview.
+> Currently, only the [Antivirus Health JSON Response](device-health-api-methods-properties.md#13-export-device-antivirus-health-details-api-properties-json-response) is generally available. [Antivirus Health API via files](device-health-api-methods-properties.md#14-export-device-antivirus-health-details-api-properties-via-files) is only available in public preview.
 >
-> **Advanced Hunting custom query** is currently only available in public preview, even if the queries are still visible.
+> [Advanced Hunting custom query](run-advanced-query-api.md) is currently only available in public preview, even if the queries are visible.
 
 ### Microsoft Defender Antivirus version and update cards functionality
 
