@@ -28,6 +28,18 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
+## January 2023
+
+### Automation of Intune device enrollment through the default baseline
+
+The default baseline now provides a mobile device management (MDM) and mobile application management (MAM) deployment sub-task to automate the enrollment of Windows devices in Intune. Previously, this was a manual task that provided instructions only.  
+
+For any tenant, go to the **Deployment plan** page, expand the **Set up device enrollment** task, select the **Configure device enrollment** sub-task to open the task details pane, and then select **Deploy**. 
+
+### User search improvements
+
+The **Account management** > **Search users** page now shows search results as soon as a matching user is found within any tenant. The prior version of the page showed search results only after searching across all tenants. 
+
 ## November 2022
 
 ### Changes to Microsoft Defender Firewall and Microsoft Defender Antivirus deployment tasks
