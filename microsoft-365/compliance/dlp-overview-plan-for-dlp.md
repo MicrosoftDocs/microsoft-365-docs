@@ -148,6 +148,10 @@ Once your organization knows where it stands in terms of regulatory compliance n
 
 **Example** To get started quickly, you pick the `U.K. Financial Data` policy template, which includes the `Credit Card Number`, `EU Debit Card Number`, and `SWIFT Code` sensitive information types. 
 
+##### How you want your policies scoped
+
+If your organization has implemented [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) (preview) you can scope your DLP policies by administrative unit or leave the default full directory scoping. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping)(preview) for more details.   
+
 ##### Where are the sensitive items and what business processes are they involved in?
 
 The items that contain your organizations sensitive information are used every day in the course of doing business. You need to know where instances of that sensitive information may occur and what business processes they are used in. This will help you choose the right locations to apply your DLP policies to. DLP policies are applied to locations:
