@@ -96,9 +96,9 @@ Before configuring administrative units for Microsoft Purview compliance solutio
     - Microsoft 365 E5/A5/F5/G5 Compliance and F5 Security & Compliance
     - Microsoft 365 E5/A5/F5/G5 Information Protection & Governance
 
-### Configure administrative units
+### Configure and use administrative units
 
-Complete the following steps to configure administrative units for Microsoft Purview compliance solutions:
+Complete the following steps to configure and use administrative units with Microsoft Purview compliance solutions:
 
 1. [Create administrative units](/azure/active-directory/roles/admin-units-manage#create-an-administrative-unit) to restrict the scope of role permissions in Azure Active Directory (Azure AD).
 2. [Add users and distribution groups](/azure/active-directory/roles/admin-units-members-add) to administrative units.
