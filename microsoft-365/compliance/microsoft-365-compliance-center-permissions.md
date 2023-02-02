@@ -99,9 +99,9 @@ Before configuring administrative units for Microsoft Purview compliance solutio
 - [Azure Active Directory Premium licensing](/azure/active-directory/roles/admin-units-manage#prerequisites)
 - Microsoft Purview licensing:
 
-    - Microsoft 365 E5/A5/G5
-    - Microsoft 365 E5/A5/F5/G5 Compliance and F5 Security & Compliance
-    - Microsoft 365 E5/A5/F5/G5 Information Protection & Governance
+    - Microsoft 365 E5/A5
+    - Microsoft 365 E5/A5/F5 Compliance and F5 Security & Compliance
+    - Microsoft 365 E5/A5/F5 Information Protection & Governance
 
 ### Configure and use administrative units
 
