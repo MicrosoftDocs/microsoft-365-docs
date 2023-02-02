@@ -77,7 +77,7 @@ If the tool indicates a mismatch in number of columns it might be due to the pre
 ### Prerequisites
 
 - a work or school account for Microsoft 365  that will be added to the **EDM\_DataUploaders** security group
-- a Windows 10 or Windows Server 2016 machine with .NET version 4.6.2 <!--4.7.2 un comment this around 9/29-->for running the EDMUploadAgent
+- a Windows 10, Windows Server 2016 with .NET version 4.6.2, or a Windows Server 2019 machine<!--4.7.2 un comment this around 9/29-->for running the EDMUploadAgent
 - a directory on your upload machine for the:
   - [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type)
   - your sensitive item file in .csv, .tsv or pipe (|) format, **PatientRecords.csv** in our examples
