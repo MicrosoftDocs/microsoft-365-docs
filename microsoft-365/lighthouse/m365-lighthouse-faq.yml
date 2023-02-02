@@ -99,7 +99,76 @@ sections:
             2. On the **Review and edit deployment configuration** page, click in the **Exclude users** field to open the list of suggested users, and then select the emergency access admin account you want to exclude.
             3. Select **Next** to review the detected configurations, and then proceed to confirm and deploy.
 
-          - In the deployment plan for the customer tenant associated with the user, under the **Require MFA for admins** deployment task, dismiss the **Create conditional access policy to require MFA for admins** sub-task and select **Risk accepted** as the reason for dismissal.
+          - In the deployment plan for the customer tenant associated with the emergency access admin account, under the **Require MFA for admins** deployment task, dismiss the **Create conditional access policy to require MFA for admins** sub-task and select **Risk accepted** as the reason for dismissal.
+              > [!NOTE]
+              > Dismissal of a deployment task impacts all users in the tenant.
+
+      - question: How do I change the Report Only state of a task implemented by a conditional access policy deployment?
+        answer: |
+          Do one of the following:
+          
+          - Change the deployment state of the existing configuration to **Enabled**.
+            1. In the customer tenant's deployment plan, select the applicable conditional access policy sub-task to open the task details pane, and then select **Deploy**.
+            2. On the **Review and edit deployment configuration** page, select the **Enable policy** state.
+            3. Select **Next** to review the detected configurations, and then proceed to confirm and deploy.
+
+          - Delete the existing configuration and then deploy a new configuration.
+            1. In the customer tenant's deployment plan, select the applicable conditional access policy sub-task to open the task details pane, and then select **Deploy**.
+            2. Select **Next** to proceed to the **Review detected configurations** page.
+            3. From the list of detected configurations, select the applicable configuration to open it in Azure Active Directory (Azure AD).
+            4. Delete the configuration in Azure AD.
+            5. On the **Review detected configurations** page in Lighthouse, select **Refresh** to refresh the detected configurations.
+            6. Select **Next** to confirm and deploy.
+
+      - question: How do I fix an existing configuration that has a setting that's not compliant with the deployment plan?
+        answer: |
+          Do one of the following:
+
+          - Edit the setting within the existing configuration to make it compliant.
+            1. In the customer tenant's deployment plan, select the applicable sub-task to open the task details pane, and then select **Deploy**.
+            2. Select **Next** to proceed to the **Review detected configurations** page.
+            3. Select the existing configuration to open it in the applicable management portal.
+            4. Edit the configuration setting, as required by the task, and then save the updated configuration.
+            5. On the **Review detected configurations** page in Lighthouse, select **Refresh** to refresh the detected configurations. The applicable task should now show a status of **Compliant**.
+            6. Select **Next** to confirm and deploy.
+
+          - Edit the assignment of the existing configuration to exclude the users to whom the task is assigned.
+            1. In the customer tenant's deployment plan, select the applicable sub-task to open the task details pane, and then select **Deploy**.
+            2. On the **Review and edit deployment configuration** page, click in the **Exclude users** field to open the list of suggested users, and then select the user or users you want to exclude.
+            3. Select **Next** to review the detected configurations, and then proceed to confirm and **Deploy**.
+
+          - Delete the existing configuration.
+            1. In the customer tenant's deployment plan, select the applicable sub-task to open the task details pane, and then select **Deploy**.
+            2. Select **Next** to proceed to the **Review detected configurations** page.
+            3. From the list of detected configurations, select the applicable configuration to open it in Azure Active Directory (Azure AD).
+            4. Delete the configuration in Azure AD.
+            5. On the **Review detected configurations** page in Lighthouse, select **Refresh** to refresh the detected configurations.
+            6. Select **Next** to confirm and deploy.
+
+          - Dismiss the task associated with the configuration that has a non-compliant setting.
+            1. In the customer tenant's deployment plan, select the deployment task you want to dismiss to open the task details pane, and then select **Dismiss**.
+            2. Under **Reason**, select the appropriate option, and then select **Save**.
+              > [!NOTE]
+              > Dismissal of a deployment task impacts all users in the tenant.
+
+      - question: What do I do if there are users who aren't licensed for the services required by the deployment task?
+        answer: |
+          Do one of the following:
+
+          - Exclude the applicable user accounts from the deployment task.
+            1. In the customer tenant's deployment plan, select the applicable sub-task to open the task details pane, and then select **Deploy**.
+            2. On the **Review and edit deployment configuration** page, click in the **Exclude users** field to open the list of suggested users, and then select the user or users you want to exclude.
+            3. Select **Next** to review the detected configurations, and then proceed to confirm and deploy.
+
+          - Enable deployment by assigning licenses for the required services to the applicable users.
+            1. In the left navigation pane in Lighthouse, select **Users** > **Account management**, and then search for the unlicensed user.
+            2. Select the appropriate user to open the user details pane, and then select **Licenses and apps**.
+            3. Select the licenses that are required by the deployment task, and then select **Save changes**.
+            4. Repeat these steps for each applicable user.
+
+          - Dismiss the task for the customer tenant.
+            1. In the customer tenant's deployment plan, select the deployment task you want to dismiss to open the task details pane, and then select **Dismiss**.
+            2. Under **Reason**, select **Risk accepted**, and then select **Save**.
               > [!NOTE]
               > Dismissal of a deployment task impacts all users in the tenant.
 
