@@ -78,7 +78,7 @@ The following Microsoft Purview compliance solutions support administrative unit
 
 For these solutions, the following features also support administrative units:
 
-- Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) and sensitivity labeling alerts are visible only from users in assigned administrative units
+- Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
 
 When you edit the role groups for these solutions, you can select individual members and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory:
