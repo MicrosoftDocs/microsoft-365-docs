@@ -121,9 +121,9 @@ DLP policies are scoped at two different levels. The first level lets you scope 
 
 in your organization or to subgroups of your organization called [Administrative Units](#administrative-units). 
 
-The second level of DLP policy scoping is by the [Locations](#locations) that DLP supports. At this level, you see only the users, distribution groups, accounts and devices that were included in the first level of policy scoping. 
+The second level of DLP policy scoping is by the [locations](#locations) that DLP supports. At this level, you see only the users, distribution groups, accounts and devices that were included in the first level of policy scoping. 
 
-### Unrestricted or global policies
+### Unrestricted policies
 
 Unrestricted policies are created and managed by users in these role groups:
 
@@ -133,38 +133,35 @@ Unrestricted policies are created and managed by users in these role groups:
 - Information Protection Admin
 - Security administrator
 
-See, [Permissions](dlp-create-deploy-policy.md#permissions) for more details. They can manage all policies and see all 
+See, [Permissions](dlp-create-deploy-policy.md#permissions) for more details. 
 
+They can manage all policies and see all the alerts and events that flow from policy matches into the [Alerts dashboard](dlp-alerts-dashboard-learn.md#learn-about-the-data-loss-prevention-alerts-dashboard) and [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
 
-### Administrative Units
-Adminstrative units can only contain users, groups, and devices. They are subsets of your Azure Active Directory and are created for the purposes of grouping users, groups, and devices along business group lines or geopolitical areas. 
-DLP supports associating policies with administrative units. Administrative units are typically created to allow delegation of administrative responsibilities of users, groups and devices for business groups or geopolitical areas to individuals. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) for implementation details in the Microsoft Purview compliance portal.
+### Administrative Unit restricted policies (preview)
 
-If you make use of administrative units, DLP policies are either applied globally to your all organizations users, groups, and devices or they are restricted to the users, groups, and devices in the associated administrative unit. Management of non-a
+Administrative units are subsets of your Azure Active Directory and are created for the purposes of managing collections of users, groups, and devices. These collections are typically created along business group lines or geopolitical areas.
+  
+DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) for implementation details in the Microsoft Purview compliance portal.
 
-
-|  |Column2  |Column3  |Column4  |
-|---------|---------|---------|---------|
-|Row1     |         |         |         |
-|Row2     |         |         |         |
-
-
-
+|DLP Administrative Role Group  |Can |
+|---------|---------|
+|Compliance administrator </br> Compliance data administrator </br> Information Protection </br> Information Protection Admin </br> Security administrator     |- create and scope DLP polices to entire organization</br>- edit all DLP policies </br>- create and scope DLP policies to administrative units </br>- view all alerts and events from all DLP policies          |
+|Administrative Unit Restricted Users     |- create and scope DLP policies only to the administrative unit that they are assigned to </br>- edit DLP policies that are associated to their administrative unit </br>- view alerts and events only from the DLP policies that are scoped to their administrative unit         |
 
 ### Locations
 
 A DLP policy can find and protect items that contain sensitive information across multiple locations.
 
-|Location  |Include/Exclude scope  |Data state  |Additional pre-requisites |
-|---------|---------|---------|---------|
-|Exchange email online |distribution group | data-in-motion| No |
-|SharePoint online sites   |sites       | data-at-rest </br> data-in-use | No|
-|OneDrive for Business accounts| account or distribution group |data-at-rest </br> data-in-use|No|
-|Teams chat and channel messages     | account or distribution group |data-in-motion </br> data-in-use |  No       |
-|Microsoft Defender for Cloud Apps   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
-|Power BI| workspaces | data-in-use | No|
+|Location |Supports Administrative Unites |Include/Exclude scope  |Data state  |Additional pre-requisites |
+|---------|---------|---------|---------|---------|
+|Exchange email online|Yes |distribution group | data-in-motion| No |
+|SharePoint online sites|No   |sites       | data-at-rest </br> data-in-use | No|
+|OneDrive for Business accounts|Yes| account or distribution group |data-at-rest </br> data-in-use|No|
+|Teams chat and channel messages|Yes     | account or distribution group |data-in-motion </br> data-in-use |  No       |
+|Microsoft Defender for Cloud Apps|No   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Devices|Yes  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|On-premises repositories (file shares and SharePoint)|No    |repository         | data-at-rest         | - [Learn about the data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|Power BI |No| workspaces | data-in-use | No|
 
 If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the emails sent by members of that group. Similarly excluding a distribution group will exclude all the emails sent by the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
