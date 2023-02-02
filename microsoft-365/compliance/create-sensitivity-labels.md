@@ -61,8 +61,6 @@ The global admin for your organization has full permissions to create and manage
     
       If the **Items** option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select in these apps.
 
-    - If **Groups & sites** is selected, you can configure settings that apply to Microsoft 365 groups, and sites for Teams and SharePoint. If this option isn't selected, you see the first page of these settings but you can't configure them and the labels won't be available for users to select for groups and site.
-
     For information about the **Schematized data assets** scope, see [Automatically label your content in Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 4. Follow the configuration prompts for the label settings.
@@ -163,9 +161,9 @@ To check your label's configuration, including advanced settings, use the follow
     > [!IMPORTANT]
     > If you select a sublabel, make sure you also select its parent label.
 
-4. For the **Assign admin units**: This configuration is currently in preview. If your account has been [assigned admin units for information protection](get-started-with-sensitivity-labels.md#support-for-admin-units), the policy can be automatically restricted to specific users by selecting one or more of the admin units that have been assigned to you. For more information about how Purview supports admin units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
+4. For the **Assign admin units**: This configuration is currently in preview. If your account has been [assigned administrative units](get-started-with-sensitivity-labels.md#support-for-admin-units), the policy can be automatically restricted to specific users by selecting one or more of the administrative units that have been assigned to you. For more information about how Purview supports administrative units, see [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units).
     
-    If your account isn't assigned admin units for information protection or you're signed in as a global admin and don't want to restrict the policy by using admin units, keep the default of **Full directory** and select **Next**.
+    If your account isn't assigned administrative units or you don't want to restrict the policy by using administrative units, keep the default of **Full directory** and select **Next**.
 
 5. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
 
