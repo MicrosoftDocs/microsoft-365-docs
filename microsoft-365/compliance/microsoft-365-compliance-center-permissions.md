@@ -73,11 +73,8 @@ The following Microsoft Purview compliance solutions support administrative unit
 
 |**Solution**|**Description of support**|
 |:-----------|:-------------------------|
-| [Data Loss Prevention (DLP](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
+| [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) | Role groups and [DLP policies](/microsoft-365/compliance/dlp-create-deploy-policy) |
 | [Sensitivity labeling](/microsoft-365/compliance/sensitivity-labels) | Role groups and [labeling policies](/microsoft-365/compliance/get-started-with-sensitivity-labels#support-for-administrative-units) |
-|||
-
-
 
 For these solutions, the following features also support administrative units:
 
