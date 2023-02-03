@@ -81,7 +81,7 @@ For these solutions, the following features also support administrative units:
 - Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
 
-When you edit the role groups for these solutions, you can select individual members and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory:
+When you assign role groups, you can select individual members or groups, and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory:
 
 ![Assign admin units option when you edit role groups.](../media/assign-admin-units.png)
 
