@@ -183,7 +183,7 @@ After you've completed all three of the previous steps, you're ready to enable A
 - The DLP policy applies protection actions for any user assigned to risk levels included in the DLP policy.
 - The DLP policy is added to the **DLP policies** tab in **Adaptive Protection (preview)**. You can view details about the DLP policy and edit policy conditions from the dashboard.
 
-To enable Adaptive Protection, select the **Adaptive Protection settings** tab and toggle **Enable Adaptive Protection** to *On*. It may take up to 72 hours before you can expect to see Adaptive Protection risk levels and DLP actions applied to applicable user activities.
+To enable Adaptive Protection, select the **Adaptive Protection settings** tab and toggle **Enable Adaptive Protection** to *On*. It may take up to 36 hours before you can expect to see Adaptive Protection risk levels and DLP actions applied to applicable user activities.
 
 ## Manage Adaptive Protection
 
