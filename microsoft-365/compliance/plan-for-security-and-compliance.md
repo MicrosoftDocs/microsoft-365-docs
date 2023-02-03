@@ -63,7 +63,7 @@ The Compliance portal gives you a single view into the controls you'll use to ma
 
 - [Permissions in the Compliance portal](~/security/office-365-security/protect-against-threats.md)
 
-- [Add users to a compliance role group](microsoft-365-compliance-center-permissions.md#add-users-or-groups-to-a-microsoft-purview-built-in-role-group)
+- [Add users or groups to a Microsoft Purview built-in role group](microsoft-365-compliance-center-permissions.md#add-users-or-groups-to-a-microsoft-purview-built-in-role-group)
 
 ## Step 6: Use end-to-end security scenarios as starting points
 
