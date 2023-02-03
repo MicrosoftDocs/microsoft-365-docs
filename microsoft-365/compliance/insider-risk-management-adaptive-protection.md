@@ -33,7 +33,7 @@ Adaptive Protection helps mitigate these potential risks by using:
 Adaptive Protection dynamically assigns appropriate DLP policies to users based on the risk levels defined and analyzed by the machine learning models in insider risk management. With this new capability, static DLP policies become adaptive based on user context, ensuring that the most effective policy, such as blocking data sharing, is applied only to high-risk users while low-risk users can maintain productivity. The policy controls constantly adjust, so when a user's risk level changes, an appropriate policy is dynamically applied to match the new risk level.
 
 > [!IMPORTANT]
-> The insider risk management solution is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that the insider risk management solution is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country). However, Adaptive Protection (the feature) in insider risk management isn't currently available in the United Arab Emirates, even though other features in insider risk management are supported in the United Arab Emirates.
+> Insider risk management is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that the insider risk management solution is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
 
 Watch the following video for a summary of how Adaptive Protection can help identify and mitigate the most critical risks in your organization:
 <br>
