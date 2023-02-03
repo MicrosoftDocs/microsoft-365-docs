@@ -56,8 +56,8 @@ For example, risk levels for User A wouldn't be determined by User A performing 
 Risk levels in Adaptive Protection define how risky a user's activity is and can be based on criteria such as how many exfiltration activities they performed or whether their activity generated a high severity insider risk alert. These risk levels have built-in risk level definitions, but these definitions can be customized as needed:
 
 - **Elevated risk level**: The highest risk level, includes built-in definitions for users with high severity alerts, users with at least three sequence insights, each with a high severity alert for specific risk activities, or one or more confirmed high severity alerts.
-- **Moderate risk level**: The medium risk level, includes built-in definitions for users with medium severity alerts or users with at least two high severity alerts for specific risk activities.
-- **Minor risk level**: The lowest risk level, includes built-in definitions for users with low severity alerts or users with at least one high severity alert for specific risk activities.
+- **Moderate risk level**: The medium risk level, includes built-in definitions for users with medium severity alerts or users with at least two data exfiltration activities with high severity scores.
+- **Minor risk level**: The lowest risk level, includes built-in definitions for users with low severity alerts or users with at least one data exfiltration activity with a high severity score.
 
 For a risk level to be assigned to a user, the number of insights and the severity assigned to the activity need to match the definition for the risk level. The number of activities for an insight may be a single activity or multiple activities accruing to the single insight. The number of insights are evaluated for the risk level definition, not the number of activities contained in an insight.
 
@@ -89,7 +89,7 @@ For following example illustrates how past activity detection settings and risk 
 
 |**User activity**|**Activity in-scope for risk level**|
 |:----------------|:-----------------------------------|
-| User has 1 high severity sequence on Day T-3, T-2, T-1 | Yes |
+| User has 1 high severity sequence each day on Day T-3, T-2, T-1 | Yes |
 | User has 3 high severity sequences on Day T-3 | Yes |
 | User has 1 high severity sequence on Day T-4 and 2 high severity sequences on Day T-3 | No |
 
@@ -236,7 +236,7 @@ Users that have been assigned a risk level in Adaptive Protection will appear on
 - **Assigned to user**: The number of days or months that have passed since the user was assigned a risk level.
 - **Risk level resets**: The number of days until the risk level is automatically reset for the user. 
 
-    To manually reset the risk level for a user, select the user, and then select **Expire**. This user's activities will no longer be assigned a risk level. Existing alerts or cases for this user won't be removed. If this user is included in the selected insider risk management policy, a risk level will be assigned again if a triggering event is detected.
+    To manually reset the risk level for a user, select the user, and then select **Expire**. This user will no longer be assigned a risk level. Existing alerts or cases for this user won't be removed. If this user is included in the selected insider risk management policy, a risk level will be assigned again if a triggering event is detected.
 - **Active alerts**: The number of current insider risk management alerts for the user.
 - **Cases confirmed as violation**: The number of confirmed cases for the user.
 - **Case**: The name of the case.
