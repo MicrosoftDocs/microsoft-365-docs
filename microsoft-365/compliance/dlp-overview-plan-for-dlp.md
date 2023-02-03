@@ -150,7 +150,7 @@ Once your organization knows where it stands in terms of regulatory compliance n
 
 ##### How you want your policies scoped
 
-If your organization has implemented [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units) (preview) you can scope your DLP policies by administrative unit or leave the default full directory scoping. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping)(preview) for more details.   
+If your organization has implemented [administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) (preview) you can scope your DLP policies by administrative unit or leave the default full directory scoping. See, [Policy Scoping](dlp-policy-reference.md#policy-scoping)(preview) for more details.
 
 ##### Where are the sensitive items and what business processes are they involved in?
 
