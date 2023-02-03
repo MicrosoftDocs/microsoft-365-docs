@@ -876,7 +876,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 17. Create a smart group for machines with Microsoft Defender profiles.
 
     For better user experience, configuration profiles to enrolled machines must be installed before Microsoft Defender's package.
-    In most cases JAMF Prof pushes configuration profiles immediately, which policies are executed after some time (i.e. during check in).
+    In most cases JAMF Prof pushes configuration profiles immediately, which policies are executed after some time (i.e. during check-in).
 
     However, in some cases, configuration profiles deployment can be deployed with a significant delay (i.e. if a user's machine is locked).
 
@@ -902,7 +902,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     **Scope**
 
-    Select **Add**. Switch to the **Compuetr Groups** tab.
+    Select **Add**. Switch to the **Computer Groups** tab.
 
     :::image type="content" source="images/1c08d097829863778d562c10c5f92b67.png" alt-text="The configuration settings - ad1" lightbox="images/1c08d097829863778d562c10c5f92b67.png":::
 
