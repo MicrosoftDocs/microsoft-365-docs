@@ -163,7 +163,7 @@ To check your label's configuration, including advanced settings, use the follow
 
 4. For the **Assign admin units**: This configuration is currently in preview. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), the policy can be automatically restricted to specific users by selecting one or more of the administrative units that have been assigned to you.
     
-    If your account isn't assigned administrative units or you don't want to restrict the policy by using administrative units, keep the default of **Full directory** and select **Next**.
+    If your account isn't assigned administrative units and you don't want to restrict the policy by using administrative units, keep the default of **Full directory** and select **Next**.
 
 5. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
 
