@@ -53,7 +53,7 @@ For example, risk levels for User A wouldn't be determined by User A performing 
 
 ### Risk levels
 
-Risk levels in Adaptive Protection define how risky a user's activity is and can be based on criteria such as how many exfiltration activities they performed or whether their activity generated a high severity insider risk alert. These risk levels have default conditional settings, but can be customized as needed:
+Risk levels in Adaptive Protection define how risky a user's activity is and can be based on criteria such as how many exfiltration activities they performed or whether their activity generated a high severity insider risk alert. These risk levels have built-in risk level definitions, but these definitions can be customized as needed:
 
 - **Elevated risk level**: The highest risk level, includes built-conditions for users with high severity alerts, users with at least three sequence insights, each with a high severity alert for specific risk activities, or one or more confirmed high severity alerts.
 - **Moderate risk level**: The medium risk level, includes built-in conditions for users with medium severity alerts or users with at least two high severity alerts for specific risk activities.
