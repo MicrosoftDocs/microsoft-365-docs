@@ -49,5 +49,8 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
 
    :::image type="content" source="images/contoso-machine-group.png" alt-text="The Jamf Pro3 page" lightbox="images/contoso-machine-group.png":::
 
+> [!NOTE]
+> You are not required to use static groups. It is often more convenient and flexible to use e.g. [JAMF Pro's smart groups](https://docs.jamf.com/10.40.0/jamf-pro/documentation/Smart_Groups.html) instead.
+
 ## Next step
 - [Set up Microsoft Defender for Endpoint on macOS policies in Jamf Pro](mac-jamfpro-policies.md)
