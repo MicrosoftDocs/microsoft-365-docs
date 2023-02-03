@@ -11,7 +11,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: high
+ms.localizationpriority: medium
 description: Learn about licensing for Microsoft Syntex.
 ---
 

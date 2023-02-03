@@ -9,8 +9,10 @@
               href: syntex-licensing.md
             - name: Set up pay-as-you-go billing
               href: syntex-azure-billing.md
-            - name: Set up Syntex
+            - name: Set up per-user billing
               href: set-up-content-understanding.md
+            - name: Set up Microsoft Syntex
+              href: set-up-microsoft-syntex.md
             - name: Create a content center 
               href: create-a-content-center.md
 
