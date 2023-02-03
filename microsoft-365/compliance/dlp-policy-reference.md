@@ -108,7 +108,7 @@ This table lists all policy templates and the sensitive information types (SIT) 
 
 ## Policy Scoping
 
-DLP policies are scoped at two different levels. The first level lets you scope policies to all:
+DLP policies are scoped at two different levels. The first level lets an unrestricted admin you scope policies to all:
 
 - users
 - distribution groups
@@ -135,18 +135,18 @@ Unrestricted policies are created and managed by users in these role groups:
 
 See, [Permissions](dlp-create-deploy-policy.md#permissions) for more details. 
 
-They can manage all policies and see all the alerts and events that flow from policy matches into the [Alerts dashboard](dlp-alerts-dashboard-learn.md#learn-about-the-data-loss-prevention-alerts-dashboard) and [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
+Unrestricted administrators can manage all policies and see all the alerts and events that flow from policy matches into the [Alerts dashboard](dlp-alerts-dashboard-learn.md#learn-about-the-data-loss-prevention-alerts-dashboard) and [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
 
 ### Administrative Unit restricted policies (preview)
 
-Administrative units are subsets of your Azure Active Directory and are created for the purposes of managing collections of users, groups, and devices. These collections are typically created along business group lines or geopolitical areas.
+Administrative units are subsets of your Azure Active Directory and are created for the purposes of managing collections of users, groups, and devices. These collections are typically created along business group lines or geopolitical areas. Administrative units have a delegated administrator who is associated with an administrative unit in the role group. These are called administrative unit restricted admins.
   
-DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for implementation details in the Microsoft Purview compliance portal. Administrative unit admins need to be assigned to one of the same roles or role groups as administrators of unrestricted DLP policies in order to create and manage DLP policies for their administrative un
+DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for implementation details in the Microsoft Purview compliance portal. Administrative unit admins need to be assigned to one of the same roles or role groups as administrators of unrestricted DLP policies in order to create and manage DLP policies for their administrative unit
 
 |DLP Administrative Role Group  |Can |
 |---------|---------|
-|Compliance administrator </br> Compliance data administrator </br> Information Protection </br> Information Protection Admin </br> Security administrator     |- create and scope DLP polices to entire organization</br>- edit all DLP policies </br>- create and scope DLP policies to administrative units </br>- view all alerts and events from all DLP policies          |
-|Administrative Unit Restricted Users </br>- must be a member of/assigned to a role group/role that can administrer DLP    |- create and scope DLP policies only to the administrative unit that they're assigned to </br>- edit DLP policies that are associated to their administrative unit </br>- view alerts and events only from the DLP policies that are scoped to their administrative unit         |
+|Unrestricted administrator |- create and scope DLP polices to entire organization</br>- edit all DLP policies </br>- create and scope DLP policies to administrative units </br>- view all alerts and events from all DLP policies          |
+|Administrative Unit Restricted administrator </br>- must be a member of/assigned to a role group/role that can administrer DLP    |- create and scope DLP policies only to the administrative unit that they're assigned to </br>- edit DLP policies that are associated to their administrative unit </br>- view alerts and events only from the DLP policies that are scoped to their administrative unit         |
 
 ### Locations
 
