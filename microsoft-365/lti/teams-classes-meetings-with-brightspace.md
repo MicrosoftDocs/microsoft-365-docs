@@ -10,6 +10,7 @@ ms.service: microsoft-365-business
 ms.collection: 
 - M365-modern-desktop
 - m365initiative-edu
+- tier2
 ms.localizationpriority: medium
 description: Create and manage Teams classes and meetings with Microsoft Learning Tools Interoperability (LTI) for the Desire2Learn (D2L) Brightspace LMS.
 ---
