@@ -179,12 +179,12 @@ Similarly to when you configure DLP policies, you can then refine your condition
 
 ![Options for match accuracy and instance count.](../media/sit-confidence-level.png)
 
-You can learn more about these configuration options from the DLP documentation: [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+You can learn more about these configuration options from the DLP documentation: [Test your Data Loss Prevention policies (preview)](dlp-test-dlp-policies.md#test-your-data-loss-prevention-policies-preview).
 
 > [!IMPORTANT]
 > Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
-Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups](data-loss-prevention-policies.md).
+Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups](dlp-policy-design.md#complex-rule-design.md).
 
 > [!NOTE]
 > Auto-labeling based on custom sensitive information types applies only to newly created or modified content in OneDrive and SharePoint; not to existing content. This limitation also applies to auto-labeling polices.
