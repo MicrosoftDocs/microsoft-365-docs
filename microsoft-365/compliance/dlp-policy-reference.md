@@ -244,7 +244,7 @@ SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videopl
 
 #### Adaptive Protection in Microsoft Purview (preview)
 
-Adaptive protection integrates Microsoft Purview Insider Risk Management (IRM) risk profiles into DLP policies so that DLP can help protect against dynamically identified risky behaviors. When configured in IRM, the **User's risk level for adaptive protection is** will show up as condition for Exchange Online, Devices, and Teams locations. Refer to [Learn about Adaptive Protection in Data Loss Prevention (preview)](dlp-adaptive-protection-learn.md) for more details.
+Adaptive protection integrates Microsoft Purview Insider Risk Management risk profiles into DLP policies so that DLP can help protect against dynamically identified risky behaviors. When configured in insider risk management, the **User's risk level for adaptive protection is** will show up as condition for Exchange Online, Devices, and Teams locations. Refer to [Learn about Adaptive Protection in Data Loss Prevention (preview)](dlp-adaptive-protection-learn.md) for more details.
 
 ##### Conditions that adaptive protection supports
 
