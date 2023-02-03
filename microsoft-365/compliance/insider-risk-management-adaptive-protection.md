@@ -103,6 +103,9 @@ Risk levels also reset for a user when:
 - The associated case for the user is resolved
 - The risk level end date is manually expired
 
+> [!NOTE]
+> If a user is currently assigned a risk level and that user meets the criteria again for that risk level, then the risk level timeframe is extended for the defined number of days for the user.
+
 ## Permissions for Adaptive Protection
 
 Depending on how you're using insider risk management built-in role groups and role groups for DLP, you may need to update [permissions](/microsoft-365/compliance/insider-risk-management-configure#step-1-required-enable-permissions-for-insider-risk-management) for administrators, analysts, and investigators in your organization.
