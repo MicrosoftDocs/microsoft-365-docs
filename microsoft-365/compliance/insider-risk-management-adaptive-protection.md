@@ -49,7 +49,7 @@ With Adaptive Protection, your administrators can configure the risk factors or 
 
 Depending on the insider risk management policy assigned in Adaptive Protection, different criteria (users,groups, indicators, thresholds, etc) are used to determine applicable risk levels. Risk levels are based on user insights, not on solely on the number instances of specific user activities. Insights are a calculation of the aggregate number of activities and the severity level of these activities. 
 
-For example, risk levels for User A wouldn't be determined by User A performing a potentially risky activity more than three times, the risk levels for User A would be determined by an insight of the aggregate number of activities for User A in a day with a certain risk score.
+For example, risk levels for User A wouldn't be determined by User A performing a potentially risky activity more than three times, the risk levels for User A would be determined by an insight of the aggregate number of activities and risk scores would be assigned to the activity based on the thresholds configured in the selected policy.
 
 ### Risk levels
 
