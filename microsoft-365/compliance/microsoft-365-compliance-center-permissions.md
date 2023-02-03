@@ -121,7 +121,7 @@ Now, when these restricted administrators create or edit policies that support a
 - *Unrestricted administrators* don't have to select administrative units as part of the policy configuration. They can keep the default of the entire directory, or select one or more administrative units.
 - *Restricted administrators* must now select one or more administrative units as part of the policy configuration.
 
-In the next step of the policy configuration, administrators who selected administrative units must then include or exclude (if supported) individual users and groups from the administrative units that they previously selected for the policy.
+Further into the policy configuration, administrators who selected administrative units must then include or exclude (if supported) individual users and groups from the administrative units that they previously selected for the policy.
 
 For information about administrative units that is specific to each supported solution, see the following sections:
 
