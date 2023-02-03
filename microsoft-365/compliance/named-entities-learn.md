@@ -84,7 +84,6 @@ Here are some examples of enhanced DLP policies that use named entity SITs. You 
 - [Learn about Sensitive information types](sensitive-information-type-learn-about.md)
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
 - [Create a custom sensitive information type in PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Data loss prevention policies (DLP)](data-loss-prevention-policies.md) 
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Communication compliance](communication-compliance.md)
