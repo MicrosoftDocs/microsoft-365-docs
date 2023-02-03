@@ -88,7 +88,7 @@ When you assign role groups, you can select individual members or groups, and th
 These administrators, referred to as restricted administrators, can now select one or more of their assigned administrative units to automatically define the initial scope of policies that they create or edit. Only if administrators don't have administrative units assigned (unrestricted administrators), will they be able to assign policies to the entire directory without selecting individual administrative units.
 
 > [!IMPORTANT]
-> After you've assigned administrative units to members of the role groups, these restricted administrators will no longer be able to see and edit existing policies that support administrative units. However, there's no operational change to these policies and they remain visible and can be edited by unrestricted administrators.
+> After you've assigned administrative units to members of the role groups, these restricted administrators will no longer be able to see and edit existing policies. However, there's no operational change to these policies and they remain visible and can be edited by unrestricted administrators.
 > 
 > Restricted administrators will also no longer be able to see historical data using features that support administrative units, such as activity explorer and alerts. They remain visible to unrestricted administrators. Going forward, restricted administrators will be able to see this related data for their assigned administrative units only.
 
