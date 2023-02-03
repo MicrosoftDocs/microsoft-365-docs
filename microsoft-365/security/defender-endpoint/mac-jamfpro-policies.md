@@ -887,17 +887,15 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     :::image type="content" source="images/6eda18a64a660fa149575454e54e7156.png" alt-text="The option to add computer groups." lightbox="images/6eda18a64a660fa149575454e54e7156.png":::
 
-    **Scope**
-
-    Select **Add**. Switch to the **Computer Groups** tab.
+    Under **Scope**, select **Add**. 
 
     :::image type="content" source="images/1c08d097829863778d562c10c5f92b67.png" alt-text="The configuration settings - ad1." lightbox="images/1c08d097829863778d562c10c5f92b67.png":::
 
-    Find the smart group you created, and **Add** it:
+    Switch to the **Computer Groups** tab. Find the smart group you created, and **Add** it.
 
     :::image type="content" source="images/216253cbfb6ae738b9f13496b9c799fd.png" alt-text="The configuration settings - ad2." lightbox="images/216253cbfb6ae738b9f13496b9c799fd.png":::
 
-    Select **Self-Service**, if you want users install Microsoft Defender voluntarily, on demand.
+    Select **Self-Service**, if you want users to install Microsoft Defender voluntarily, on demand.
 
     :::image type="content" source="images/c9f85bba3e96d627fe00fc5a8363b83a.png" alt-text="The Self Service tab for configuration settings." lightbox="images/c9f85bba3e96d627fe00fc5a8363b83a.png":::
 
