@@ -326,7 +326,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 5. In **Application & Custom Settings**, select **Configure**.
 
-       :::image type="content" source="images/3160906404bc5a2edf84d1d015894e3b.png" alt-text="The MDATP MDAV configuration settings." lightbox="images/3160906404bc5a2edf84d1d015894e3b.png":::
+   :::image type="content" source="images/3160906404bc5a2edf84d1d015894e3b.png" alt-text="The MDATP MDAV configuration settings." lightbox="images/3160906404bc5a2edf84d1d015894e3b.png":::
    
    :::image type="content" source="images/e1cc1e48ec9d5d688087b4d771e668d2.png" alt-text="The application and custom settings." lightbox="images/e1cc1e48ec9d5d688087b4d771e668d2.png":::
 
@@ -392,13 +392,13 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 2. Click **New**, and enter the following details in the **General** tab for **Options**:
 
-        - **Name**: MDATP MDAV Notification settings
-        - **Description**: macOS 11 (Big Sur) or later
-        - **Category**: None *(default)*
-        - **Distribution Method**: Install Automatically *(default)*
-        - **Level**: Computer Level *(default)*
+   - **Name**: MDATP MDAV Notification settings
+   - **Description**: macOS 11 (Big Sur) or later
+   - **Category**: None *(default)*
+   - **Distribution Method**: Install Automatically *(default)*
+   - **Level**: Computer Level *(default)*
 
-        :::image type="content" source="images/c9820a5ff84aaf21635c04a23a97ca93.png" alt-text="The new macOS configuration profile page." lightbox="images/c9820a5ff84aaf21635c04a23a97ca93.png":::
+   :::image type="content" source="images/c9820a5ff84aaf21635c04a23a97ca93.png" alt-text="The new macOS configuration profile page." lightbox="images/c9820a5ff84aaf21635c04a23a97ca93.png":::
 
     - Tab **Notifications**, click **Add**, and enter the following values:
         - **Bundle ID**: `com.microsoft.wdav.tray`
