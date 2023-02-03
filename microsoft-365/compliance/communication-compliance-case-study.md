@@ -176,7 +176,7 @@ They need to create a new group to include all Contoso users, so they take the f
 
 With all the prerequisites completed, the IT administrators and the compliance specialists for Contoso are ready to configure the communication compliance policy to detect potentially inappropriate text. Using the text policy template, configuring this new policy is simple and quick.
 
-1. The Bontoso IT administrators and compliance specialists sign into the **Microsoft Purview compliance portal** and select **Communication compliance** from the left navigation pane. This action opens the dashboard that has quick links for communication compliance policy templates. They choose **Policies**, scroll to the **Detect inappropriate text** template, and then select the **Create policy** template.
+1. The Contoso IT administrators and compliance specialists sign into the **Microsoft Purview compliance portal** and select **Communication compliance** from the left navigation pane. This action opens the dashboard that has quick links for communication compliance policy templates. They choose **Policies**, scroll to the **Detect inappropriate text** template, and then select the **Create policy** template.
 
     ![Communication compliance detect inappropriate text template](../media/communication-compliance-case-template.png)
 
