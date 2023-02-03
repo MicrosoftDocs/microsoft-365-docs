@@ -63,6 +63,8 @@ For a risk level to be assigned to a user, the number of insights and the severi
 
 For example, suppose the conditions in the insider risk management policy assigned to Adaptive Protection is scoped for identifying downloads from SharePoint sites in your organization. If the policy detects that a user downloaded 10 files from a SharePoint site in a single day that are determined to be high severity, this would count as a single insight that consists of 10 activity events. In order for this activity to qualify for assigning an *Elevated risk level* to the user, two additional insights (with high severity) would be required for the user. The additional insights may or may not contain 1 or more activities.
 
+![Insider risk management Adaptive Protection risk levels.](../media/insider-risk-management-ap-risk-levels.png)
+
 ### Customizing risk levels
 
 Custom risk levels allow you to create risk levels based on your organization's needs. You can customize criteria that the risk level will be based on and then define conditions to control when the risk level is assigned to users.
@@ -216,7 +218,7 @@ After you've completed either the [Quick](#quick-setup) or [Custom](#custom-setu
 - **DLP policies**: Displays the number of DLP policies configured for Adaptive Protection and the number of users currently in-scope for the DLP policies.
 - **Users assigned risk levels**: Displays the number of users for each risk level (*Elevated risk*, *Moderate risk*, and *Minor risk*).
 
-SCREENSHOT?
+![Insider risk management Adaptive Protection dashboard.](../media/insider-risk-management-ap-dashboard.png)
 
 ### Users assigned risk levels
 
@@ -238,7 +240,7 @@ Users that have been assigned a risk level in Adaptive Protection will appear on
 
 If needed, you can filter users by *Risk level*.
 
-SCREENSHOT?
+![Insider risk management Adaptive Protection users.](../media/insider-risk-management-ap-users.png)
 
 To view detailed insider risk and Adaptive Protection information for a specific user, select the user to open the user details pane. The details pane contains three tabs, **User profile**, **User activity**, and **Adaptive Protection summary**. For information about the **User profile** and **User activity** tabs, see [View user details](/microsoft-365/compliance/insider-risk-management-users#view-user-details).
 
@@ -248,7 +250,7 @@ The **Adaptive Protection summary** tab aggregates information in three sections
 - **DLP policies in scope (dynamic)**: This section displays all the DLP policies currently in scope for the user and the start and end date for the policy. This is based on the risk level for the user and DLP policy configuration for risk levels. For example, if a user has activities that have been defined as *Elevated* risk levels for insider risk management policies, and two DLP policies are configured with the *Elevated* risk level condition, these two DLP policies will be displayed here for the user.
 - **Insider risk policy for Adaptive Protection**: This section displays any insider risk management policy where the user is currently in-scope.
 
-SCREENSHOT?
+![Insider risk management Adaptive Protection user details.](../media/insider-risk-management-ap-user-details.png)
 
 ### DLP policies
 
@@ -262,8 +264,12 @@ The **DLP policies** page displays all DLP policies that are using the **User's 
 - **Created**: The date the DLP policy was created.
 - **Last modified**: The date the DLP policy was last edited.
 
+![Insider risk management Adaptive Protection DLP policies.](../media/insider-risk-management-ap-dlp-policies.png)
+
 ## Disable Adaptive Protection
 
 There may be certain scenarios when you might need to disable Adaptive Protection temporarily. To disable Adaptive Protection, select the **Adaptive Protection settings** tab and toggle **Enable Adaptive Protection** to *Off*.
 
 If Adaptive Protection is turned off after having been on and active, risk levels will stop being assigned to users and shared with DLP and all existing risk levels for users will be reset. After turning off, might take up to 6 hours to stop assigning risk levels to user activity and reset them all. The insider risk management and DLP policies aren't automatically deleted.
+
+![Insider risk management Adaptive Protection enable.](../media/insider-risk-management-ap-enable.png)
