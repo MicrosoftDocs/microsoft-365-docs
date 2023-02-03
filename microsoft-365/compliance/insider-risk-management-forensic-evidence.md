@@ -26,7 +26,7 @@ Having visual context is crucial for security teams during forensic investigatio
 ## Feature capabilities
 
 - **Visual capturing** allows organizations to capture clips of key security-related user activities, allowing for more secure or compliant visibility and meeting organizational needs.
-- **Include or exclude desktop applications and/or websites** to configure a recording policy to focus on the  applications and websites that present the most risk. This preserves storage space and user privacy. For example, exclude personal email and social media accounts. 
+- **Include or exclude desktop applications and/or websites** to configure a recording policy that focuses on the  applications and websites that present the most risk. This preserves storage space and user privacy. For example, exclude personal email and social media accounts. 
 - **Protected user privacy** through multiple levels of approval for the activation of the capturing feature.
 - **Customizable triggers and capturing options** mean that security teams can set up forensic evidence to meet their needs, whether it be based on incidents (for example, *Capture 5 min before and 10 min after a user has downloaded 'SecretResearchPlans.docx'*), or based on continuous capturing needs.
 - **User-centric policy targeting** means that security and compliance teams can focus on activity by user, not device, for better contextual insights.
