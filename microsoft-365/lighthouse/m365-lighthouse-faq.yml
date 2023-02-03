@@ -127,7 +127,7 @@ sections:
           - Edit the setting within the existing configuration to make it compliant.
             1. In the customer tenant's deployment plan, select the applicable sub-task to open the task details pane, and then select **Deploy**.
             2. Select **Next** to proceed to the **Review detected configurations** page.
-            3. Select the configuration containing the setting that you want to edit to open it in the applicable management portal.
+            3. Select the configuration containing the setting you want to edit to open it in the applicable management portal.
             4. Edit the configuration setting, as required by the task, and then save the updated configuration.
             5. On the **Review detected configurations** page in Lighthouse, select **Refresh** to refresh the detected configurations. The applicable task should now show a status of **Compliant**.
             6. Select **Next** to confirm and deploy.
@@ -146,10 +146,10 @@ sections:
             6. Select **Next** to confirm and deploy.
 
           - Dismiss the task associated with the configuration that has a non-compliant setting.
-              > [!NOTE]
-              > Dismissal of a deployment task impacts all users in the tenant.
             1. In the customer tenant's deployment plan, select the deployment task you want to dismiss to open the task details pane, and then select **Dismiss**.
             2. Under **Reason**, select the appropriate option, and then select **Save**.
+                > [!NOTE]
+                > Dismissal of a deployment task impacts all users in the tenant.
 
       - question: What do I do if there are users who aren't licensed for the services required by the deployment task?
         answer: |
@@ -167,11 +167,10 @@ sections:
             4. Repeat these steps for each applicable user.
 
           - Dismiss the task for the customer tenant.
-              > [!NOTE]
-              > Dismissal of a deployment task impacts all users in the tenant.
             1. In the customer tenant's deployment plan, select the deployment task you want to dismiss to open the task details pane, and then select **Dismiss**.
             2. Under **Reason**, select **Risk accepted**, and then select **Save**.
-
+                > [!NOTE]
+                > Dismissal of a deployment task impacts all users in the tenant.
 
   - name: Managing Windows 365 Cloud PCs
     questions:
