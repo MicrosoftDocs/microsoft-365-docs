@@ -148,8 +148,8 @@ sections:
           - Dismiss the task associated with the configuration that has a non-compliant setting.
             1. In the customer tenant's deployment plan, select the deployment task you want to dismiss to open the task details pane, and then select **Dismiss**.
             2. Under **Reason**, select the appropriate option, and then select **Save**.
-                > [!NOTE]
-                > Dismissal of a deployment task impacts all users in the tenant.
+              > [!NOTE]
+              > Dismissal of a deployment task impacts all users in the tenant.
 
       - question: What do I do if there are users who aren't licensed for the services required by the deployment task?
         answer: |
@@ -169,8 +169,8 @@ sections:
           - Dismiss the task for the customer tenant.
             1. In the customer tenant's deployment plan, select the deployment task you want to dismiss to open the task details pane, and then select **Dismiss**.
             2. Under **Reason**, select **Risk accepted**, and then select **Save**.
-                > [!NOTE]
-                > Dismissal of a deployment task impacts all users in the tenant.
+              > [!NOTE]
+              > Dismissal of a deployment task impacts all users in the tenant.
 
   - name: Managing Windows 365 Cloud PCs
     questions:
