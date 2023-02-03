@@ -161,13 +161,11 @@ To check your label's configuration, including advanced settings, use the follow
     > [!IMPORTANT]
     > If you select a sublabel, make sure you also select its parent label.
 
-4. For the **Assign admin units**: This configuration is currently in preview. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), the policy can be automatically restricted to specific users by selecting one or more of the administrative units that have been assigned to you.
+4. For the **Assign admin units**: This configuration is currently in preview. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more of the administrative units that have been assigned to you.
     
-    If your account isn't assigned administrative units and you don't want to restrict the policy by using administrative units, keep the default of **Full directory** and select **Next**.
+    If your account isn't assigned administrative units or you don't want to restrict the policy by using administrative units, keep the default of **Full directory**.
 
-5. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
-
-6. Follow the prompts to configure the policy settings.
+5. Follow the prompts to complete the configuration.
 
     The policy settings that you see match the scope of the labels that you selected. For example, if you selected labels that have just the **Items** scope, you don't see the policy settings **Apply this label by default to groups and sites** and **Require users to apply a label to their groups and sites**.
 
