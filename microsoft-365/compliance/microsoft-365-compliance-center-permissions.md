@@ -63,7 +63,7 @@ The roles that appear in the **Azure AD** > **Roles** section of the compliance 
 
 ## Administrative units (preview)
 
-Administrative units let you subdivide your organization into any unit that you want, and then assign specific administrators that can manage only the members of that unit. They also allow you to assign administrative units to members of role groups for Microsoft Purview solutions, so that these administrators can manage only the members (and associated features) of those assigned administrative units.
+Administrative units let you subdivide your organization into smaller units, and then assign specific administrators that can manage only the members of those units. They also allow you to assign administrative units to members of role groups in Microsoft Purview solutions, so that these administrators can manage only the members (and associated features) of those assigned administrative units.
 
 For example, you could use administrative units to delegate permissions to administrators for each geographic region in a large multi-national organization or for grouping administrator access by department within your organization. You can create region or department-specific policies or view user activity as a result of those policies and administrative unit assignment. You can also use administrative units as an initial scope for a policy, where the selection of users eligible for the policy depends on membership in administrative units.
 
@@ -81,14 +81,14 @@ For these solutions, the following features also support administrative units:
 - Alerts: [DLP](/microsoft-365/compliance/dlp-alerts-dashboard-get-started) alerts are visible only from users in assigned administrative units
 - [Activity explorer](data-classification-activity-explorer.md): Activity events are visible only from users in assigned administrative units
 
-When you edit the role groups for these solutions, you can select individual members and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory:
+When you assign role groups, you can select individual members or groups, and then the **Assign admin units** option to select administrative units that have been defined in Azure Active Directory:
 
 ![Assign admin units option when you edit role groups.](../media/assign-admin-units.png)
 
 These administrators, referred to as restricted administrators, can now select one or more of their assigned administrative units to automatically define the initial scope of policies that they create or edit. Only if administrators don't have administrative units assigned (unrestricted administrators), will they be able to assign policies to the entire directory without selecting individual administrative units.
 
 > [!IMPORTANT]
-> After you've assigned administrative units to members of the role groups, these restricted administrators will no longer be able to see and edit existing policies that support administrative units. However, there's no operational change to these policies and they remain visible and can be edited by unrestricted administrators.
+> After you've assigned administrative units to members of the role groups, these restricted administrators will no longer be able to see and edit existing policies. However, there's no operational change to these policies and they remain visible and can be edited by unrestricted administrators.
 > 
 > Restricted administrators will also no longer be able to see historical data using features that support administrative units, such as activity explorer and alerts. They remain visible to unrestricted administrators. Going forward, restricted administrators will be able to see this related data for their assigned administrative units only.
 
