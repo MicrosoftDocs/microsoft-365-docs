@@ -42,8 +42,9 @@ You'll need to take the following steps:
 7. [Approve Kernel extension for Microsoft Defender for Endpoint](#step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint)
 8. [Approve System extensions for Microsoft Defender for Endpoint](#step-8-approve-system-extensions-for-microsoft-defender-for-endpoint)
 9. [Configure Network Extension](#step-9-configure-network-extension)
-10. [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
-11. [Deploy Microsoft Defender for Endpoint on macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
+10. [Configure Background Services](#step-10-configure-background-services)
+11. [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+12. [Deploy Microsoft Defender for Endpoint on macOS](#step-12-deploy-microsoft-defender-for-endpoint-on-macos)
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
