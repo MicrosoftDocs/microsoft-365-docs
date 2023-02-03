@@ -938,4 +938,4 @@ You need to make sure that all machines receiving Defender's package, also recei
 > Defender relies on all these profiles at the moment of its installation.
 > Making configuration profiles depending on Defender's presence effectively delays deployment of configuration profiles, and results in an initially unhealthy product and/or prompts for manual approval of certian application permissions, that are otherwise auto approved by profiles.
 
-Deploying a policy with Microsoft Defender's package *after* deploying configuration profiles ensures the best end user's experience, as all required configuration will be already applied by the package's installation time.
+Deploying a policy with Microsoft Defender's package *after* deploying configuration profiles ensures the end user's best experience, because all required configurations will be applied before the package installs.
