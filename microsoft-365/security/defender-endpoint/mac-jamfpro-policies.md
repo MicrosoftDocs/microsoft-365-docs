@@ -69,10 +69,7 @@ You'll need to take the following steps:
 
    :::image type="content" source="images/jamf-pro-configure-profile.png" alt-text="The page on which you create a new Jamf Pro dashboard" lightbox="images/jamf-pro-configure-profile.png":::
 
-3. Enter the following details:
-
-   **General**:
-
+3. Enter the following details in the **General** tab:
    - Name: MDE onboarding for macOS
    - Description: MDE EDR onboarding for macOS
    - Category: None
@@ -81,7 +78,7 @@ You'll need to take the following steps:
 
 4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
-   :::image type="content" source="images/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings" lightbox="images/jamfpro-mac-profile.png":::
+    :::image type="content" source="images/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings" lightbox="images/jamfpro-mac-profile.png":::
 
 5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`.
 
