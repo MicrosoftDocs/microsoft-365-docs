@@ -45,9 +45,9 @@ Watch the following video for a summary of how Adaptive Protection can help iden
 
 ## Risk levels and preventive controls
 
-With Adaptive Protection, your administrators can configure the risk factors or activities for customizable risk levels based on your organization's needs. The risk levels for Adaptive Protection update continuously and automatically based on the users' risk factors and insights, so when users' data security risks increase or decrease, their risk levels are adjusted accordingly. Based on the risk levels, DLP policies automatically applies the right level of preventative controls as configured by admins (such as *block*, *block with override*, or *warning*).
+With Adaptive Protection, your administrators can configure the risk factors or activities for customizable risk levels based on your organization's needs. The risk levels for Adaptive Protection update continuously and automatically based on the users' risk factors and insights, so when users' data security risks increase or decrease, their risk levels are adjusted accordingly. Based on the risk levels, DLP policies automatically apply the right level of preventative controls as configured by admins (such as *block*, *block with override*, or *warning*).
 
-Depending on the insider risk management policy assigned in Adaptive Protection, different criteria (users,groups, indicators, thresholds, etc) are used to determine applicable risk levels. Risk levels are based on user insights, not on solely on the number instances of specific user activities. Insights are a calculation of the aggregate number of activities and the severity level of these activities. 
+Depending on the insider risk management policy assigned in Adaptive Protection, different criteria (users, groups, indicators, thresholds, etc.) are used to determine applicable risk levels. Risk levels are based on user insights, not on solely on the number instances of specific user activities. Insights are a calculation of the aggregate number of activities and the severity level of these activities. 
 
 For example, risk levels for User A wouldn't be determined by User A performing a potentially risky activity more than three times, the risk levels for User A would be determined by an insight of the aggregate number of activities and risk scores would be assigned to the activity based on the thresholds configured in the selected policy.
 
@@ -55,9 +55,11 @@ For example, risk levels for User A wouldn't be determined by User A performing 
 
 Risk levels in Adaptive Protection define how risky a user's activity is and can be based on criteria such as how many exfiltration activities they performed or whether their activity generated a high severity insider risk alert. These risk levels have built-in risk level definitions, but these definitions can be customized as needed:
 
-- **Elevated risk level**: The highest risk level, includes built-conditions for users with high severity alerts, users with at least three sequence insights, each with a high severity alert for specific risk activities, or one or more confirmed high severity alerts.
-- **Moderate risk level**: The medium risk level, includes built-in conditions for users with medium severity alerts or users with at least two high severity alerts for specific risk activities.
-- **Minor risk level**: The lowest risk level, includes built-in conditions for users with low severity alerts or users with at least one high severity alert for specific risk activities.
+- **Elevated risk level**: The highest risk level, includes built-in definitions for users with high severity alerts, users with at least three sequence insights, each with a high severity alert for specific risk activities, or one or more confirmed high severity alerts.
+- **Moderate risk level**: The medium risk level, includes built-in definitions for users with medium severity alerts or users with at least two high severity alerts for specific risk activities.
+- **Minor risk level**: The lowest risk level, includes built-in definitions for users with low severity alerts or users with at least one high severity alert for specific risk activities.
+
+For a risk level to be assigned to a user, the 
 
 ### Customizing risk levels
 
@@ -101,9 +103,14 @@ Risk levels also reset for a user when:
 
 Depending on how you're using insider risk management built-in role groups and role groups for DLP, you may need to update [permissions](/microsoft-365/compliance/insider-risk-management-configure#step-1-required-enable-permissions-for-insider-risk-management) for administrators, analysts, and investigators in your organization.
 
-To configure Adaptive PRotection and update settings, users will need to be assigned to the the *Insider Risk Management* or *Insider Risk Management Admins* role group. Members of the *Insider Risk Management*, *Insider Risk Management Analysts*, and *Insider Risk Management Investigators* role groups can view user details in Adaptive Protection. 
+To configure Adaptive Protection and update settings, users will need to be assigned to the *Insider Risk Management* or *Insider Risk Management Admins* role group. Members of the *Insider Risk Management*, *Insider Risk Management Analysts*, and *Insider Risk Management Investigators* role groups can view user details in Adaptive Protection.
 
-To create and management DLP policies with the Adaptive Protection condition, users will need the [*DLP Compliance Management*](/microsoft-365/security/office-365-security/scc-permissions) role assigned.
+To create and manage DLP policies with the Adaptive Protection condition, users will need one of the following [roles](/microsoft-365/security/office-365-security/scc-permissions) assigned:
+
+- Compliance Administrator
+- Compliance Data Administrator
+- DLP Compliance Management
+- Global Administrator
 
 ## Configure Adaptive Protection
 
@@ -169,7 +176,7 @@ To customize a risk level for your policy, complete the following steps:
 
     For the *Activity severity* condition, you'll specify the severity level for the activities included in the daily activity insight. The options are *High*, *Medium*, and *Low*, and are based on risk score ranges.
 
-    For the *Activity occurrences during detection window* condition, you'll specify number of times selected activities must be detected within the specified *Past activity detection* period. This number isn't related to the number of events that might occur for an activity. For example, if the policy detects that a user downloaded 20 files from SharePoint in one day, that counts as one daily activity insight consisting of 20 events.
+    For the *Activity occurrences during detection window* condition, you'll specify number of times selected activities must be detected within the specified *Past activity detection* period. This number isn't related to the number of events that might occur for an activity. For example, if the policy detects that a user downloaded 20 files from SharePoint in one day that counts as one daily activity insight consisting of 20 events.
 
 5. Select **Confirm** to apply the custom risk level conditions or **Cancel** to discard your changes.
 
@@ -205,7 +212,7 @@ Once you've enabled Adaptive Protection and your insider risk management and DLP
 After you've completed either the [Quick](#quick-setup) or [Custom](#custom-setup) setup process, the **Dashboard** tab in **Adaptive Protection (preview)** displays widgets for summary information about DLP policies and user risk levels:
 
 - **DLP policies**: Displays the number of DLP policies configured for Adaptive Protection and the number of users currently in-scope for the DLP policies.
-- **Users assigned risk levels**: Displays the number of user for each risk level (*Elevated risk*, *Moderate risk*, and *Minor risk*).
+- **Users assigned risk levels**: Displays the number of users for each risk level (*Elevated risk*, *Moderate risk*, and *Minor risk*).
 
 SCREENSHOT?
 
@@ -222,7 +229,7 @@ Users that have been assigned a risk level in Adaptive Protection will appear on
 - **Assigned to user**: The number of days or months that have passed since the user was assigned a risk level.
 - **Risk level resets**: The number of days until the risk level is automatically reset for the user. 
 
-    To manually reset the risk level for a user, select the user and then select **Expire**. This user's activities will no longer be assigned a risk level. Existing alerts or cases for this user won't be removed. If this user is included in the selected insider risk management policy, a risk level will be assigned again if a triggering event is detected.
+    To manually reset the risk level for a user, select the user, and then select **Expire**. This user's activities will no longer be assigned a risk level. Existing alerts or cases for this user won't be removed. If this user is included in the selected insider risk management policy, a risk level will be assigned again if a triggering event is detected.
 - **Active alerts**: The number of current insider risk management alerts for the user.
 - **Cases confirmed as violation**: The number of confirmed cases for the user.
 - **Case**: The name of the case.
@@ -257,4 +264,4 @@ The **DLP policies** page displays all DLP policies that are using the **User's 
 
 There may be certain scenarios when you might need to disable Adaptive Protection temporarily. To disable Adaptive Protection, select the **Adaptive Protection settings** tab and toggle **Enable Adaptive Protection** to *Off*.
 
-If Adaptive Protection is turned off after having been on and active, risk levels will stop being assigned to users and shared with DLP and all existing risk levels for users will be reset. After turning off, might take up to 6 hours to stop assigning risk levels to user activity and reset them all. The insider risk management and DLP policies are not automatically deleted.
+If Adaptive Protection is turned off after having been on and active, risk levels will stop being assigned to users and shared with DLP and all existing risk levels for users will be reset. After turning off, might take up to 6 hours to stop assigning risk levels to user activity and reset them all. The insider risk management and DLP policies aren't automatically deleted.
