@@ -173,7 +173,7 @@
 ### [Configure portal settings]()
 #### [Configure general Defender for Endpoint settings](preferences-setup.md)
 #### [General]()
-##### [Configure alert notifications](configure-email-notifications.md)
+##### [Configure alert notifications](../defender/configure-email-notifications.md)
 ##### [Configure vulnerability email notifications](configure-vulnerability-email-notifications.md)
 ##### [Configure advanced features](advanced-features.md)
 
@@ -707,7 +707,7 @@
 ### [Privacy for Microsoft Defender for Endpoint on macOS](mac-privacy.md)
 ### [Privacy for Microsoft Defender for Endpoint on Linux](linux-privacy.md)
 ### [Privacy for Microsoft Defender for Endpoint on Android](android-privacy.md)
-### [Privacy for Microsoft Defender for Endpoint on ios](ios-privacy.md)
+### [Privacy for Microsoft Defender for Endpoint on iOS](ios-privacy.md)
 ### [Helpful resources](helpful-resources.md)
 ### [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md)
 ### [Resources for Microsoft Defender for Endpoint on Linux](linux-resources.md)
