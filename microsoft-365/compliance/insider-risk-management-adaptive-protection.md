@@ -76,6 +76,17 @@ Risk level criteria and conditions customization can be based on the following a
 
 This risk level setting determines how many days back Adaptive Protection examines to detect whether a user meets the conditions defined by any of the risk levels. The default setting is 7 days, but you can choose between 5 and 30 days of previous activity to apply risk level conditions. This setting only applies to risk levels that are based on a user's daily activity and excludes risks levels based on alerts.
 
+For following example illustrates how past activity detection settings and risk levels interact to determine if a user's past activity is in-scope:
+
+- **Elevated risk level** setting: User performs at least 3 sequences, each with a high severity risk score (67 to 100)
+- **Past activity detection** setting: 3 days
+
+|**User activity**|**Activity in-scope for risk level**|
+|:----------------|:-----------------------------------|
+| User has 1 high severity sequence on Day T-3, T-2, T-1 | Yes |
+| User has 3 high severity sequences on Day T-3 | Yes |
+| User has 1 high severity sequence on Day T-4 and 2 high severity sequences on Day T-3 | No |
+
 #### Risk level timeframe
 
 This risk level setting determines how long a risk level remains assigned to a user before it's automatically reset. The default setting is 7 days, but you can choose between 5 and 30 days before resetting the risk level for a user.
@@ -115,7 +126,7 @@ Here's what is configured when you use the quick setup process for Adaptive Prot
 | Two new DLP policies | [Adaptive Protection policy for Endpoint DLP](/microsoft-365/compliance/dlp-adaptive-protection#policy-values-for-devices-dlp-policy) <br><br> - Elevated risk level rule: Blocked <br> - Moderate/Minor risk level rule: Audit <br> - Policy starts in test mode (audit only) <br><br> [Adaptive Protection policy for Teams and Exchange DLP](/microsoft-365/compliance/dlp-adaptive-protection#policy-values-for-teams-and-exchange-online-dlp-policy) <br><br> - Elevated risk level rule: Blocked <br> - Moderate/Minor risk level rules: Audit <br> - Policy starts in test mode (audit only) |
 |||
 
-Once the quick setup process is started, it may take up to 72 hours before the associated insider risk management and DLP policies are created and you can expect to see Adaptive Protection risk levels and DLP actions applied to applicable user activities. Administrators will receive a notification email once the quick setup process is completed.
+Once the quick setup process is started, it may take up to 72 hours before analytics are completed, the associated insider risk management and DLP policies are created, and you can expect to see Adaptive Protection risk levels and DLP actions applied to applicable user activities. Administrators will receive a notification email once the quick setup process is completed.
 
 ### Custom setup
 
