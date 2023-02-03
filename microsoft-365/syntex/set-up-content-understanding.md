@@ -14,12 +14,24 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Set up Microsoft Syntex.
+description: Set up Microsoft Syntex per-user licensing.
 ---
 
 # Set up Microsoft Syntex per-user licensing
 
-Admins can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to set up Microsoft Syntex. 
+If you plan to use Microsoft Syntex with per-user licensing, follow the steps in this article to set up your licenses, and then read [Set up Microsoft Syntex](set-up-microsoft-syntex.md) to set up Microsoft Syntex features.
+
+For an overview of licensing options for Microsft Syntex, see [Licensing for Microsoft Syntex](syntex-licensing.md).
+
+## Plan for per-user licenses
+
+To use Microsoft Syntex per-user licensing, your organization must have a subscription to Syntex, and each user must have a license assigned. Licenses include the following apps, which must all be assigned:
+
+- Syntex
+- Syntex - SPO type
+- Common Data Service for Syntex
+
+To use structured document processing or freeform document processing models, you also need AI Builder credits. For each licensed user of Syntex, an allocation of AI Builder credits is provided each month.
 
 Consider the following before you start:
 
@@ -50,22 +62,9 @@ When using a custom environment, model creators must be assigned the Environment
 
 Users creating models in a [content center site](/microsoft-365/contentunderstanding/create-a-content-center) must be site members. Users creating models locally outside the content center must be site owners of those sites.
 
-### Licensing
-
-To use Syntex, your organization must have a subscription to Syntex, and each user must have a license assigned. Syntex licenses include the following apps, which must all be assigned:
-
-- Syntex
-- Syntex - SPO type
-- Common Data Service for Syntex
-
-To use structured document processing or freeform document processing models, you also need AI Builder credits. For each licensed user of Syntex, an allocation of AI Builder credits is provided each month.
-
-For details about Syntex licensing, see [Microsoft Syntex licensing](syntex-licensing.md)
-
-
 ## Assign licenses
 
-Once you have configured Syntex, you must assign licenses for the users who will be using any Syntex features.
+You must assign licenses for the users who will be using per-user Microsoft Syntex features.
 
 To assign licenses:
 

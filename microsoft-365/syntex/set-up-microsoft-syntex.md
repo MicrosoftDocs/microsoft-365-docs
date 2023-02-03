@@ -19,28 +19,18 @@ description: Set up Microsoft Syntex.
 
 # Set up Microsoft Syntex
 
-Admins can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to set up Microsoft Syntex. 
+This article covers the initial setup experience for Microsoft Syntex. Before following the steps in this article, configure your [billing and licensing options](syntex-licensing.md) as follows:
 
-Consider the following before you start:
-
-- In which SharePoint sites will you enable document processing? All of them, some, or select sites?
-- What will you name your default content center?
-
-You can change your settings after initial setup in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-
-Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
-
-- The SharePoint sites in which you want to enable document processing - all of them, some, or selected sites
-- The name and admins for your content center
+- If you are using pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing in Azure](syntex-azure-billing.md).
+- If you are using per-user licensing, follow the steps in [Set up Microsoft Syntex per-user licensing](set-up-content-understanding.md).
 
 ## Requirements 
 
-> [!NOTE]
-> You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Syntex.
+You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Microsoft Syntex.
 
 As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-## To set up Syntex
+## To set up Microsoft Syntex
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
 
@@ -81,6 +71,4 @@ As an admin, you can also make changes to your selected settings anytime after s
 1. On the confirmation page, select **Done**.
 
 1. You'll be returned to your **Use content AI with Microsoft Syntex** page. From this page, you can select **Manage Microsoft Syntex** to make any changes to your configuration settings. 
-
-If you plan to use the pay-as-you-go preview, see [Configure Microsoft Syntex for Azure pay-as-you-go billing](syntex-azure-billing.md).
 
