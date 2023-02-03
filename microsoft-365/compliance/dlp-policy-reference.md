@@ -32,6 +32,7 @@ Microsoft Purview Data Loss Prevention (DLP) policies have many components to co
 
 If you're new to Microsoft Purview DLP, here's a list of the core articles you'll need as you implement DLP:
 
+1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - the article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - by working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
@@ -108,20 +109,24 @@ This table lists all policy templates and the sensitive information types (SIT) 
 
 ## Policy Scoping
 
-DLP policies are scoped at two different levels. The first level lets an unrestricted admin you scope policies to all:
+See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between a unrestricted admin and an administrative unit restricted admin.
+
+DLP policies are scoped at two different levels. The first level lets an unrestricted admin scope policies to all:
 
 - users
+- groups
 - distribution groups
 - accounts
-- devices 
 - sites
 - cloud app instances
 - on-premises repositories
 - Power BI workspaces
 
-in your organization (depending on the locations that are selected) or to subgroups of your organization called [Administrative Units](#administrative-units). 
+in your organization (depending on the locations that are selected) or to subgroups of your organization called [Administrative Unit restricted policies (preview)](#administrative-unit-restricted-policies-preview). 
 
-The second level of DLP policy scoping is by the [locations](#locations) that DLP supports. At this level, you see only the users, distribution groups, accounts and devices that were included in the first level of policy scoping. 
+At this level an administrative unit restricted admin will only be able to pick from the administrative units that they're assigned to.
+
+The second level of DLP policy scoping is by the [locations](#locations) that DLP supports. At this level, both unrestricted and administrative unit restricted administrators will see only the users, distribution groups, groups, and accounts that were included in the first level of policy scoping and are available in for that location. 
 
 ### Unrestricted policies
 
@@ -139,7 +144,7 @@ Unrestricted administrators can manage all policies and see all the alerts and e
 
 ### Administrative Unit restricted policies (preview)
 
-Administrative units are subsets of your Azure Active Directory and are created for the purposes of managing collections of users, groups, and devices. These collections are typically created along business group lines or geopolitical areas. Administrative units have a delegated administrator who is associated with an administrative unit in the role group. These are called administrative unit restricted admins.
+Administrative units are subsets of your Azure Active Directory and are created for the purposes of managing collections of users, groups, distribution groups, and accounts. These collections are typically created along business group lines or geopolitical areas. Administrative units have a delegated administrator who is associated with an administrative unit in the role group. These are called administrative unit restricted admins.
   
 DLP supports associating policies with administrative units. See [Administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview) for implementation details in the Microsoft Purview compliance portal. Administrative unit admins need to be assigned to one of the same roles or role groups as administrators of unrestricted DLP policies in order to create and manage DLP policies for their administrative unit
 

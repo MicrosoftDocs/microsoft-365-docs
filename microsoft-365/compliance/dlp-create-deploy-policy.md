@@ -38,6 +38,7 @@ How you deploy a policy is as important policy design. You have [multiple option
 
 If you're new to Microsoft Purview DLP, here's a list of the core articles you should be familiar with as you implement DLP:
 
+1. [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview)
 1. [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) - The article introduces you to the data loss prevention discipline and Microsoft's implementation of DLP.
 1. [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - By working through this article you will:
     1. [Identify stakeholders](dlp-overview-plan-for-dlp.md#identify-stakeholders)
@@ -63,6 +64,9 @@ The account you use to create and deploy policies must be a member of one of the
 - Information Protection
 - Information Protection Admin
 - Security administrator
+
+> [!IMPORTANT]
+> Be sure you understand the difference between an unrestricted administrator and an administrative unit restricted administrator [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) before you start.
 
 #### Granular Roles and Role Groups
 

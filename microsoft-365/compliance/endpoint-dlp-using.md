@@ -44,7 +44,12 @@ For full licensing details, see [Microsoft 365 licensing guidance for informatio
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
+> [!IMPORTANT]
+> Be sure you understand the difference between an unrestricted administrator and an administrative unit restricted administrator [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) before you start.
+
 ## Scenario 1: Create a policy from a template, audit only
+
+This scenario is for an unrestricted admin creating and full directory policy.
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -76,6 +81,8 @@ These scenarios require that you already have devices onboarded and reporting in
 
 ## Scenario 2: Modify the existing policy, set an alert
 
+This scenario is for an unrestricted admin modifying a full directory scoped policy.
+
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
 1. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
@@ -99,6 +106,8 @@ These scenarios require that you already have devices onboarded and reporting in
 10. Check Activity explorer for the event.
 
 ## Scenario 3: Modify the existing policy, block the action with allow override
+
+This scenario is for an unrestricted admin modifying a full directory policy.
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 
@@ -129,6 +138,8 @@ These scenarios require that you already have devices onboarded and reporting in
 1. Check Activity explorer for the event.
 
 ## Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)
+
+This scenario is for an unrestricted admin creating a full directory policy.
 
 ## Before you begin scenario 4
 
@@ -242,6 +253,8 @@ There are three procedures.
 
 ## Scenario 5: Restrict unintentional sharing to unallowed cloud apps and services
 
+This scenario is for an unrestricted admin creating a full directory policy.
+
 With Endpoint DLP and Microsoft Edge Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
 
 When you select **Devices** as a location in a properly configured DLP policy and use the Microsoft Edge browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Microsoft Edge which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
@@ -290,8 +303,9 @@ You can also audit, block with override, or block these user upload sensitive it
 
 1. Finish configuring the rule and policy and apply it.
 
-
 ## Scenario 6 Monitor or restrict user activities on sensitive service domains
+
+This scenario is for an unrestricted admin creating and full directory policy.
 
 Use this scenario when you want to audit or block these user activities on a website.
 
@@ -332,6 +346,8 @@ The user must be accessing the website through Microsoft Edge.
 1. Finish configuring the rule and policy and apply it.
 
 ## Scenario 7 Authorization groups (preview)
+
+This scenario is for an unrestricted admin creating a full directory policy.
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
@@ -391,6 +407,8 @@ In this scenario, we'll define a group of printers that the legal department use
 1. The new DLP policy will appear in the policy list.
 
 ## Scenario 8 Network exceptions (preview)
+
+This scenario is for an unrestricted admin creating a full directory policy.
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md).
 
