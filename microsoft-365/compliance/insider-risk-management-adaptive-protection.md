@@ -59,7 +59,9 @@ Risk levels in Adaptive Protection define how risky a user's activity is and can
 - **Moderate risk level**: The medium risk level, includes built-in definitions for users with medium severity alerts or users with at least two high severity alerts for specific risk activities.
 - **Minor risk level**: The lowest risk level, includes built-in definitions for users with low severity alerts or users with at least one high severity alert for specific risk activities.
 
-For a risk level to be assigned to a user, the 
+For a risk level to be assigned to a user, the number of insights and the severity assigned to the activity need to match the definition for the risk level. The number of activities for an insight may be a single activity or multiple activities accruing to the single insight. The number of insights are evaluated for the risk level definition, not the number of activities contained in an insight.
+
+For example, suppose the conditions in the insider risk management policy assigned to Adaptive Protection is scoped for identifying downloads from SharePoint sites in your organization. If the policy detects that a user downloaded 10 files from a SharePoint site in a single day that are determined to be high severity, this would count as a single insight that consists of 10 activity events. In order for this activity to qualify for assigning an *Elevated risk level* to the user, two additional insights (with high severity) would be required for the user. The additional insights may or may not contain 1 or more activities.
 
 ### Customizing risk levels
 
