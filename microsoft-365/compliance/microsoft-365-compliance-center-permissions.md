@@ -128,31 +128,31 @@ For information about administrative units that is specific to each supported so
 - For DLP: [Administrative Unit restricted policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
 - For sensitivity labeling: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units)
 
-## Add users to a Microsoft Purview built-in role group
+## Add users or groups to a Microsoft Purview built-in role group
 
-Complete the following steps to add users to a Microsoft Purview role group:
+Complete the following steps to add users or groups to a Microsoft Purview role group:
 
 1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage compliance roles in Microsoft 365.
 2. Expand the **Microsoft Purview solutions** section and select **Roles**.
 3. On the **Role groups for Microsoft Purview solutions** page, select a Microsoft Purview role group you want to add users to, then select **Edit** on the control bar.
-4. On the **Edit members of the role group** page, select **Choose users**.
-5. Select the checkbox for all users you want to add to the role group.
+4. On the **Edit members of the role group** page, select **Choose users** or **Choose groups**.
+5. Select the checkbox for all users or groups you want to add to the role group.
 6. Select **Select**.
-7. If the selected users need organization-wide access as part of this role group assignment, go to Step 10.
-8. If the selected users need to be assigned to administrative units, select the users and select **Assign admin units**.
-9. On the **Assign admin units** pane, select the checkbox for all the administrative units you want to assign to the user. Select **Select**.
-10. Select **Next** and **Save** to add the users to the role group. Select **Close** to complete the steps.
+7. If the selected users or groups need organization-wide access as part of this role group assignment, go to Step 10.
+8. If the selected users or groups need to be assigned to administrative units, select the users or groups and select **Assign admin units**.
+9. On the **Assign admin units** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
+10. Select **Next** and **Save** to add the users or groups to the role group. Select **Close** to complete the steps.
 
-## Remove users from a Microsoft Purview built-in role group
+## Remove users or groups from a Microsoft Purview built-in role group
 
-Complete the following steps to remove users from a Microsoft Purview role group:
+Complete the following steps to remove users or groups rom a Microsoft Purview role group:
 
 1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage the Microsoft Purview compliance roles.
 2. Expand the **Microsoft Purview solutions** section and select **Roles**.
-3. On the **Role groups for Microsoft Purview solutions** page, select a Microsoft Purview role group you want to remove users from, then select **Edit** on the control bar.
-4. On the **Edit members of the role group** page, select the checkbox for all users you want to remove to the role group.
+3. On the **Role groups for Microsoft Purview solutions** page, select a Microsoft Purview role group you want to remove users or groups from, then select **Edit** on the control bar.
+4. On the **Edit members of the role group** page, select the checkbox for all users or groups you want to remove to the role group.
 5. Select **Remove members**, then select **Next**.
-6. Select **Save** to remove the users from the role group. Select **Close** to complete the steps.
+6. Select **Save** to remove the users or groups from the role group. Select **Close** to complete the steps.
 
 ## Create a custom Microsoft Purview role group
 
