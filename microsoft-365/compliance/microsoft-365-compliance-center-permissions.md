@@ -128,68 +128,69 @@ For information about administrative units that is specific to each supported so
 - For DLP: [Administrative Unit restricted policies](dlp-policy-reference.md#administrative-unit-restricted-policies-preview)
 - For sensitivity labeling: [Support for administrative units](get-started-with-sensitivity-labels.md#support-for-administrative-units)
 
-## Add users to a compliance role group
+## Add users to a Microsoft Purview built-in role group
 
-Complete the following steps to add users to a compliance role group:
-
-1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage compliance roles in Microsoft 365.
-1. Expand the **Compliance center** section and select **Roles**.
-1. On the **Compliance center roles** page, select a compliance role group you want to add users to, then select **Edit role group** on the details pane.
-1. Select **Choose members** from the left navigation pane, then select **Edit**.
-1. Select **Add** and then select the checkbox for all users you want to add to the role group.
-1. Select **Add**, then select **Done**.
-1. Select **Save** to add the users to the role group. Select **Close** to complete the steps.
-
-## Remove users from a compliance role group
-
-Complete the following steps to remove users from a compliance role group:
+Complete the following steps to add users to a Microsoft Purview role group:
 
 1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage compliance roles in Microsoft 365.
-1. Expand the Compliance center section and select **Roles**.
-1. On the **Compliance center roles** page, select a compliance role group you want to remove users from, then select **Edit role group** on the details pane.
-1. Select **Choose members** from the left navigation pane, then select **Edit**.
-1. Select **Remove** and then select the checkbox for all users you want to remove from the role group.
-1. Select **Remove**, then select **Done**.
-1. Select **Save** to remove the users from the role group. Select **Close** to complete the steps.
+2. Expand the **Microsoft Purview solutions** section and select **Roles**.
+3. On the **Role groups for Microsoft Purview solutions** page, select a Microsoft Purview role group you want to add users to, then select **Edit** on the control bar.
+4. On the **Edit members of the role group** page, select **Choose users**.
+5. Select the checkbox for all users you want to add to the role group.
+6. Select **Select**.
+7. If the selected users need organization-wide access as part of this role group assignment, go to Step 10.
+8. If the selected users need to be assigned to administrative units, select the users and select **Assign admin units**.
+9. On the **Assign admin units** pane, select the checkbox for all the administrative units you want to assign to the user. Select **Select**.
+10. Select **Next** and **Save** to add the users to the role group. Select **Close** to complete the steps.
 
-## Create a custom role group
+## Remove users from a Microsoft Purview built-in role group
 
-Complete the following steps to create a custom role group:
+Complete the following steps to remove users from a Microsoft Purview role group:
 
-1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
-1. On the **Permissions & roles** page, select **Compliance center > Roles**.
-1. On the **Compliance center roles** page, select **Create**.
-1. On the **Name your role group** page, enter a name for the custom role group in the **Name** field. The name of the role group cannot be changed after creation of the role group. If needed, enter a description for the custom role group in the **Description** field. Select **Next** to continue.
-1. On the **Choose roles** page, select **Choose roles**.
-1. Select **Add**, then choose the roles to add to the custom role group. Select **Add** to add the role group, then select **Done**.
-1. Select **Next** to continue.
-1. On the **Choose members** page, select **Choose members**.
-1. Select **Add**, then choose the members to add to the custom role group. Select **Add** to add the members, then select **Done**.
-1. Select **Next** to continue.
-1. On the **Review your settings** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Create role group** to create the custom role group or select **Cancel** to discard the changes and not create the custom role group.
+1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage the Microsoft Purview compliance roles.
+2. Expand the **Microsoft Purview solutions** section and select **Roles**.
+3. On the **Role groups for Microsoft Purview solutions** page, select a Microsoft Purview role group you want to remove users from, then select **Edit** on the control bar.
+4. On the **Edit members of the role group** page, select the checkbox for all users you want to remove to the role group.
+5. Select **Remove members**, then select **Next**.
+6. Select **Save** to remove the users from the role group. Select **Close** to complete the steps.
 
-## Update a custom role group
+## Create a custom Microsoft Purview role group
 
-Complete the following steps to update a custom role group:
+Complete the following steps to create a custom Microsoft Purview role group:
 
 1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
-1. On the **Permissions & roles** page, select **Compliance center > Roles**.
-1. On the **Compliance center roles** page and select the role group to update.
-1. On the details pane for the selected role group, select **Edit role group**.
-1. On the **Editing role group name** page, update the description for the custom role group in the **Description** field. The name of the custom role group cannot be changed.
-1. On the **Choose roles** page, select **Edit** to update the roles assigned to the role groups.
-1. Select **Add**, then choose the roles to add to the custom role group. Select **Add** to add the role group, then select **Done**.
-1. On the **Choose members** page, select **Edit**.
-1. Select **Add**, then choose the members to add to the custom role group. Select **Add** to add the members, then select **Done**.
-1. Select **Save** to save updated *Description*, *Role groups*, and *Members* values.
-1. On the details pane for the selected role group, select **Close**.
+2. Expand the **Microsoft Purview solutions** section and select **Roles**.
+3. On the **Role groups for Microsoft Purview solutions** page, select **Create role group**.
+4. On the **Name the role group** page, enter a name for the custom role group in the **Name** field. The name of the role group cannot be changed after creation of the role group. If needed, enter a description for the custom role group in the **Description** field. Select **Next** to continue.
+5. On the **Add roles to the role group** page, select **Choose roles**.
+6. Select the checkboxes for the roles to add to the custom role group. Select **Select**.
+7. Select **Next** to continue.
+8. On the **Add members to the role group** page, select **Choose users** (or **Choose groups** if applicable).
+9. Select the checkboxes for the users (or groups) to add to the custom role group. Select **Select**.
+10. Select **Next** to continue.
+11. If the selected users or groups need organization-wide access as part of this role group assignment, go to Step 14.
+12. If the selected users or groups need to be assigned to administrative units, select the users or groups and select **Assign admin units**.
+13. On the **Assign admin units** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
+14. Select **Next**.
+15. On the **Review the role group and finish** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Create** to create the custom role group or select **Cancel** to discard the changes and not create the custom role group.
 
-## Delete a custom role group
+## Update a custom Microsoft Purview role group
 
-Complete the following steps to update a custom role group:
+Complete the following steps to update a custom Microsoft Purview role group:
 
 1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
-1. On the **Permissions & roles** page, select **Compliance center > Roles**.
-1. On the **Compliance center roles** page and select the role group to update.
-1. On the details pane for the selected role group, select **Delete role group**.
-1. On the **Warning** dialog, select **Yes** to delete the role group or select **No** to cancel the deletion process.
+2. Expand the **Microsoft Purview solutions** section and select **Roles**.
+3. On the **Role groups for Microsoft Purview solutions** page, select a Microsoft Purview role group you want to update, then select **Edit** on the control bar.
+4. On the **Name the role group** page, update the description for the custom role group in the **Description** field. The name of the custom role group cannot be changed. Select **Next**.
+5. On the **Edit roles of the role group** page, you can select **Choose roles** to add roles to update the roles assigned to the role group. You can also select any of the currently assigned roles and select **Remove roles** to remove the roles from the role group. After you've updated the roles, select **Next**.
+6. On the **Edit members of the role group** page, you can select **Choose users** or **Choose groups** to add users or groups assigned to the role group. To update the administrative units for users or groups, select any of the currently assigned user or groups and select **Assign admin units**. You can also select any of the currently assigned users and groups and select **Remove members** to remove the users or groups from the role group. After you've updated the members, select **Next**.
+7. On the **Review the role group and finish** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Create** to create the custom role group or select **Cancel** to discard the changes and not create the custom role group.
+
+## Delete a custom Microsoft Purview role group
+
+Complete the following steps to delete a custom Microsoft Purview role group:
+
+1. Sign into the permissions area of the compliance portal using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
+2. Expand the **Microsoft Purview solutions** section and select **Roles**.
+3. On the **Role groups for Microsoft Purview solutions** page, select a Microsoft Purview role group you want to delete, then select **Delete** on the control bar.
+4. On the **Delete role group** dialog, select **Delete** to delete the role group or select **Cancel** to cancel the deletion process.
