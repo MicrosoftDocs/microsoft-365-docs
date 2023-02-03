@@ -106,8 +106,8 @@ You can change how your organization receives Microsoft 365 updates by following
 
 9. When you're done adding users, select **Save changes**.
 
-![Image to set up release option in the Microsoft 365 admin center.](../../media/release_option_admincenter.png)
-  
+:::image type="content" source="../../media/release_option_admincenter.png" alt-text="Screenshot: Showing the set up release option in the Microsoft 365 admin":::
+
 ## Next steps
 
 Discover how to [manage messages](/office365/admin/manage/message-center) in your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) to get notifications about upcoming Microsoft 365 updates and releases.
