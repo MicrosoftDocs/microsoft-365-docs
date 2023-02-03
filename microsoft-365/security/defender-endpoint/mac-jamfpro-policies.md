@@ -320,13 +320,13 @@ All you need to do to have updates is to download an updated schema, edit existi
     - Name: MDATP MDAV configuration settings
     - Description:\<blank\>
     - Category: None (default)
-    - Distribution Method: Install Automatically(default)
-    - Level: Computer Level(default)
+    - Distribution Method: Install Automatically (default)
+    - Level: Computer Level (default)
 
-    :::image type="content" source="images/3160906404bc5a2edf84d1d015894e3b.png" alt-text="The MDATP MDAV configuration settings." lightbox="images/3160906404bc5a2edf84d1d015894e3b.png":::
+5. In **Application & Custom Settings**, select **Configure**.
 
-5. In **Application & Custom Settings** select **Configure**.
-
+       :::image type="content" source="images/3160906404bc5a2edf84d1d015894e3b.png" alt-text="The MDATP MDAV configuration settings." lightbox="images/3160906404bc5a2edf84d1d015894e3b.png":::
+   
    :::image type="content" source="images/e1cc1e48ec9d5d688087b4d771e668d2.png" alt-text="The application and custom settings." lightbox="images/e1cc1e48ec9d5d688087b4d771e668d2.png":::
 
 6. Select **Upload File (PLIST file)**.
