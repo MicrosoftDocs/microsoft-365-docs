@@ -852,7 +852,6 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     :::image type="content" source="images/847b70e54ed04787e415f5180414b310.png" alt-text="The configuration settings new policy" lightbox="images/847b70e54ed04787e415f5180414b310.png":::
 
-
 11. In **General** Enter the following details:
 
     - Display name: MDATP Onboarding Contoso 200329 v100.86.92 or later
@@ -877,27 +876,48 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     :::image type="content" source="images/9d6e5386e652e00715ff348af72671c6.png" alt-text="The save option for the configuration settings" lightbox="images/9d6e5386e652e00715ff348af72671c6.png":::
 
-17. Select the **Scope** tab.
+17. Create a smart group for machines with Microsoft Defender profiles.
+
+    For better user experience, configuration profiles to enrolled machines must be installed before Microsoft Defender's package.
+    In most cases JAMF Prof pushes configuration profiles immediately, which policies are executed after some time (i.e. during check in).
+
+    However, in some cases, configuration profiles deployment can be deployed with a significant delay (i.e. if a user's machine is locked).
+
+    JAMF Pro provides a way to ensure the correct order.
+    You can create a smart group for machines that already received Microsoft Defender's configuration profile, and install Microsoft Defender's package only to those machines (and as soon as they receive this profile!)
+
+    To do it, create a smart group first. In the new browser window open **Smart Computers Groups** from the left menu, click **New**.
+    Assign some name, switch to the **Criteria** tab, click **Add** and **Show Advanced Criteria**.
+
+    Select **Profile Name** as a criterion, and use the name of a previously created configuration profile as Value:
+
+    :::image type="content" source="images/ffae2332be230870f865585c84733225.png" alt-text="Creating a smart group" lightbox="images/ffae2332be230870f865585c84733225.png":::
+
+    Click **Save**. Return back to the window where you configure a package policy.
+
+18. Select the **Scope** tab.
 
     :::image type="content" source="images/8d80fe378a31143db9be0bacf7ddc5a3.png" alt-text="The Scope tab related to the configuration settings" lightbox="images/8d80fe378a31143db9be0bacf7ddc5a3.png":::
 
-18. Select the target computers.
+19. Select the target computers.
 
     :::image type="content" source="images/6eda18a64a660fa149575454e54e7156.png" alt-text="The option to add computer groups" lightbox="images/6eda18a64a660fa149575454e54e7156.png":::
 
     **Scope**
 
-    Select **Add**.
+    Select **Add**. Switch to the **Compuetr Groups** tab.
 
     :::image type="content" source="images/1c08d097829863778d562c10c5f92b67.png" alt-text="The configuration settings - ad1" lightbox="images/1c08d097829863778d562c10c5f92b67.png":::
 
+    Find the smart group you created, and **Add** it:
+
     :::image type="content" source="images/216253cbfb6ae738b9f13496b9c799fd.png" alt-text="The configuration settings - ad2" lightbox="images/216253cbfb6ae738b9f13496b9c799fd.png":::
 
-    **Self-Service**
+    Select **Self-Service**, if you want users install Microsoft Defender voluntarily, on demand.
 
     :::image type="content" source="images/c9f85bba3e96d627fe00fc5a8363b83a.png" alt-text="The Self Service tab for configuration settings" lightbox="images/c9f85bba3e96d627fe00fc5a8363b83a.png":::
 
-19. Select **Done**.
+20. Select **Done**.
 
     :::image type="content" source="images/99679a7835b0d27d0a222bc3fdaf7f3b.png" alt-text="The Contoso onboarding status with an option to complete it" lightbox="images/99679a7835b0d27d0a222bc3fdaf7f3b.png":::
 
@@ -909,7 +929,7 @@ JAMF requires you to define a set of machines for a configuration profile.
 You need to make sure that all machines receiving Defender's package, also receive *all* configuration profiles listed above.
 
 > [!WARNING]
-> JAMF supports so called Smart Computer Groups, that allow deployoing e.g. configuration profiles to all machines matching certain criteria evaluated dynamically.
+> JAMF supports Smart Computer Groups, that allow deployoing e.g. configuration profiles or policies to all machines matching certain criteria evaluated dynamically.
 > It is a powerful concept that is widely used for configuration profiles distribution.
 >
 > However, keep in mind that these criteria should not include presence of Defender on a machine.
@@ -917,3 +937,5 @@ You need to make sure that all machines receiving Defender's package, also recei
 >
 > Defender relies on all these profiles at the moment of its installation.
 > Making configuration profiles depending on Defender's presence effectively delays deployment of configuration profiles, and results in an initially unhealthy product and/or prompts for manual approval of certian application permissions, that are otherwise auto approved by profiles.
+
+Deploying a policy with Microsoft Defender's package *after* deploying configuration profiles ensures the best end user's experience, as all required configuration will be already applied by the package's installation time.
