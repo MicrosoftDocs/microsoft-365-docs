@@ -59,6 +59,8 @@ After you enable and configure sensitivity labels for containers, users can addi
 
 ![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
+After a sensitivity label has been applied to a site, you must be a [site admin](/sharepoint/site-permissions#site-admins) to change the label in SharePoint.
+
 > [!NOTE]
 > Sensitivity labels for containers support [Teams shared channels](/MicrosoftTeams/shared-channels). If a team has any shared channels, they automatically inherit sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
 
@@ -307,7 +309,7 @@ When the label is applied, and users browse to the site, they see the name of th
 
 ### Use PowerShell to apply a sensitivity label to multiple sites
 
-You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *SensitivityLabel* parameter from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to apply a sensitivity label to many sites. The sites can be any SharePoint site collection, or a OneDrive site.
+You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *SensitivityLabel* parameter from the current [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to apply a sensitivity label to many sites. You can use the same procedure to replace an existing label. The sites can be any SharePoint site collection, or a OneDrive site.
 
 Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Management Shell.
 
