@@ -41,7 +41,7 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 |**Area**|**Policy Template**|**Details**|
 |:-----|:-----|:-----|
-| **Inappropriate text** | Detect inappropriate text | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Targeted threat, Discrimination, and Targeted harassment classifiers |
+| **Inappropriate text** | Detect inappropriate text | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Threat, Discrimination, and Targeted harassment classifiers |
 | **Inappropriate images** | Detect inappropriate images | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Adult and Racy image classifiers |
 | **Sensitive information** | Detect sensitive info types | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
 | **Regulatory compliance** | Detect financial regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
