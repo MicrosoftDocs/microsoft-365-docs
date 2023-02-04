@@ -35,31 +35,39 @@ There are two ways to run the client analyzer tool:
 1. Using a binary version (no python dependency)
 2. Using a python based solution
 
-<details>
-   <summary><H2>Running the binary version of the client analyzer </H2></summary>
+## Running the binary version of the client analyzer
 
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
 If using a terminal download using the command:
-```sh
+
+```
 wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
 ```
+
 2. Verify the download
-   > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '01B6165F54C00083F40D8BC9481911897591B9497D04395F3440382DFD03B481'
-   >
-```sh
+
+>[!NOTE]
+>The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '01B6165F54C00083F40D8BC9481911897591B9497D04395F3440382DFD03B481'
+
+
+```
 echo '01B6165F54C00083F40D8BC9481911897591B9497D04395F3440382DFD03B481  XMDEClientAnalyzerBinary.zip' | sha256sum -c
 ```
-3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.\
+
+3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
+
 If using a terminal download using the command:
-```SH
+
+```
 unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary 
 ```
-4. Change to the tool's directory
 
-```sh
+4. Change to the tool's directory:
+
+```
 cd XMDEClientAnalyzerBinary
 ```
+
 5. Three new zip files will be produced:
       1. **SupportToolLinuxBinary.zip** : For all Linux devices
       2. **SupportToolmacOSBinary.zip** : For Intel based Mac devices
@@ -67,21 +75,28 @@ cd XMDEClientAnalyzerBinary
 
 6. Unzip one of the above 3 zips based on the machine you need to investigate.\
 When using a terminal unzip using one of the following command based on machine type:
+
    - Linux
-   ```sh
+   
+   ```
    unzip -q SupportToolLinuxBinary.zip
    ```
+
    - Intel based Mac
-   ```sh
+   
+   ```
    unzip -q SupportToolmacOSBinary.zip
    ```
+
    - For Arm based Mac devices
-   ```sh
+   
+   ```
    unzip -q SupportToolmacOS-armBinary.zip
    ```
+
    4. Run the tool as <i>root</i> to generate diagnostic package:
 
-   ```sh
+   ```
    sudo ./MDESupportTool -d
    ```
 
@@ -91,14 +106,13 @@ When using a terminal unzip using one of the following command based on machine 
    > `spctl --add /Path/To/MDESupportTool`
    > 
 
-</details>
 
 
-<details>
-   <summary><H2>Running the python based client analyzer </H2></summary>
+
+## Running the python based client analyzer
 
 > [!NOTE]
-> - The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://pypi.org/search/?q=lxml>
+>- The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for python packages](https://pypi.org/search/?q=lxml). 
 > 
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
@@ -107,112 +121,121 @@ When using a terminal unzip using one of the following command based on machine 
 > 
 
 
-1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.\
-If using a terminal, download by running the command:
-```sh
-wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
-```
+1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
+
+    If using a terminal, download by running the command:
+
+    ```
+    wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
+    ```
   
 2. Verify the download
-```sh
-echo '815F3E83EB1E6C33D712F101618018E1E38211D4E2807C3A9EF3CC0B0F95225C  XMDEClientAnalyzer.zip' | sha256sum -c
-```
+
+    ```
+    echo '815F3E83EB1E6C33D712F101618018E1E38211D4E2807C3A9EF3CC0B0F95225C  XMDEClientAnalyzer.zip' | sha256sum -c
+    ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
-If using a terminal unzip using the command:
-```sh
-unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
-```
+    If using a terminal unzip using the command:
+
+    ```
+    unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
+    ```
 4. Change directory to the extracted location.
-```sh
-cd XMDEClientAnalyzer
-```
+
+    ```
+    cd XMDEClientAnalyzer
+    ```
+
 5. Give the tool executable permission:
-```sh
-chmod a+x mde_support_tool.sh
-```
+
+    ```
+    chmod a+x mde_support_tool.sh
+    ```
 6. Run as a non-root user to install required dependencies:
-```sh
-./mde_support_tool.sh
-```
+
+    ```
+    ./mde_support_tool.sh
+    ```
 
 5. To collect actual diagnostic package and generate the result archive file run again as root:
-```sh
-sudo ./mde_support_tool.sh -d
-```
 
-</details>
+    ```
+    sudo ./mde_support_tool.sh -d
+    ```
 
-<details>
-   <summary><H2>Command line options</H3></summary>
+## Command line options
    
-   1. <H3> Primary command lines <H3>
-   Use this for getting machine diagnostic
-   ```
-   -h, --help            show this help message and exit
+### Primary command lines
+
+  Use this for getting machine diagnostic
+
+  ```
+  -h, --help            show this help message and exit
   --output OUTPUT, -o OUTPUT
-                        Output path to export report
+                      Output path to export report
   --no-zip, -nz         If set a directory will be created instead of an archive file
   --force, -f           Will overwrite if output directory exists
   --diagnostic, -d      Collect extensive machine diagnostic information
   --bypass-disclaimer   Do not display disclaimer banner
   --mdatp-log {info,trace,error,warning,debug,verbose}
-                        Set MDATP log level
+                      Set MDATP log level
   --max-log-size MAX_LOG_SIZE
-                        Maximum log file size in MB before rotating(Will restart mdatp)
-   ```
-   Usage example: `sudo ./MDESupportTool -d`
-   
-   2. <H3> Positional arguments </H3>
-   - <H4> Collect performance info </H4>
-   Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand
-   ```
-  -h, --help            show this help message and exit
-  --frequency FREQUENCY
-                        profile at this frequency
-  --length LENGTH       length of time to collect (in seconds)
-   ```
-   Usage example: `sudo ./MDESupportTool performance --frequency 2`
-   - <H4> Use OS trace (Only Mac) </H4>
-   Use OS tracing facilities to record Defender performance traces.
-   
-   > [!NOTE]
-   > This functionality exists in the python solution only
-   > 
-   ```
-  -h, --help       show this help message and exit
-  --length LENGTH  Length of time to record the trace (in seconds).
-  --mask MASK      Mask to select with event to trace. Defaults to all
-   ```
-   On running this command for the first time, it will install a Profile configuration.\
-   Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/en-in/guide/mac-help/mh35561/mac#:~:text=Choose%20Apple%20menu%20%3E%20System%20Settings,%2C%20double%2Dclick%20the%20profile.)\
-   Usage example `./mde_support_tool.sh trace --length 5`
-   - <H4> Exclude mode </H4>
-   Add exclusions for audit-d monitoring.\
-   
-   > [!NOTE]
-   > This functionality exists for Linux only 
-   > 
-   
+                      Maximum log file size in MB before rotating(Will restart mdatp)
   ```
-  -h, --help            show this help message and exit
-  -e <executable>, --exe <executable>
-                        exclude by executable name, i.e: bash
-  -p <process id>, --pid <process id>
-                        exclude by process id, i.e: 911
-  -d <directory>, --dir <directory>
-                        exclude by target path, i.e: /var/foo/bar
-  -x <executable> <directory>, --exe_dir \<executable\> <directory>
-                        exclude by executable path and target path, i.e:
-                        /bin/bash /var/foo/bar
-  -q <q_size>, --queue <q_size>
-                        set dispatcher q_depth size
-  -r, --remove          remove exclusion file
-  -s, --stat            get statistics about common executables
-  -l, --list            list auditd rules
+  
+  Usage example: `sudo ./MDESupportTool -d`
+  
+### Positional arguments
+  #### - Collect performance info 
+  Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand
   ```
-   
-   Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
+-h, --help            show this help message and exit
+--frequency FREQUENCY
+                      profile at this frequency
+--length LENGTH       length of time to collect (in seconds)
+  ```
+  Usage example: `sudo ./MDESupportTool performance --frequency 2`
+  - <H4> Use OS trace (Only Mac) </H4>
+  Use OS tracing facilities to record Defender performance traces.
+  
+  > [!NOTE]
+  > This functionality exists in the python solution only
+  > 
+  ```
+-h, --help       show this help message and exit
+--length LENGTH  Length of time to record the trace (in seconds).
+--mask MASK      Mask to select with event to trace. Defaults to all
+  ```
+  On running this command for the first time, it will install a Profile configuration.\
+  Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/en-in/guide/mac-help/mh35561/mac#:~:text=Choose%20Apple%20menu%20%3E%20System%20Settings,%2C%20double%2Dclick%20the%20profile.)\
+  Usage example `./mde_support_tool.sh trace --length 5`
+  - <H4> Exclude mode </H4>
+  Add exclusions for audit-d monitoring.\
+  
+  > [!NOTE]
+  > This functionality exists for Linux only 
+  > 
+  
+```
+-h, --help            show this help message and exit
+-e <executable>, --exe <executable>
+                      exclude by executable name, i.e: bash
+-p <process id>, --pid <process id>
+                      exclude by process id, i.e: 911
+-d <directory>, --dir <directory>
+                      exclude by target path, i.e: /var/foo/bar
+-x <executable> <directory>, --exe_dir \<executable\> <directory>
+                      exclude by executable path and target path, i.e:
+                      /bin/bash /var/foo/bar
+-q <q_size>, --queue <q_size>
+                      set dispatcher q_depth size
+-r, --remove          remove exclusion file
+-s, --stat            get statistics about common executables
+-l, --list            list auditd rules
+```
+  
+  Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
       
 </details>
 
