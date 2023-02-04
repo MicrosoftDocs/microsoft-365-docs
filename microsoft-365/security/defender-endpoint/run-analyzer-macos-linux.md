@@ -29,82 +29,195 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-## Running the analyzer using a terminal or SSH scenario
+The XMDEClientAnalyzer is used for diagnosing Microsoft Defender for Endpoint health or reliability issues on onboarded devices running either Linux, or macOS.
 
-Open a terminal or SSH into the relevant machine and run the following commands:
+There are two ways to run the client analyzer tool:
+1. Using a binary version (no python dependency)
+2. Using a python based solution
 
-### Download
+<details>
+   <summary><H2>Running the binary version of the client analyzer </H2></summary>
 
+1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
+If using a terminal download using the command:
+```sh
+wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+```
+2. Verify the download
+   > [!NOTE]
+   > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '01B6165F54C00083F40D8BC9481911897591B9497D04395F3440382DFD03B481'
+   >
+```sh
+echo '01B6165F54C00083F40D8BC9481911897591B9497D04395F3440382DFD03B481  XMDEClientAnalyzerBinary.zip' | sha256sum -c
+```
+3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.\
+If using a terminal download using the command:
+```SH
+unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary 
+```
+4. Change to the tool's directory
+
+```sh
+cd XMDEClientAnalyzerBinary
+```
+5. Three new zip files will be produced:
+      1. **SupportToolLinuxBinary.zip** : For all Linux devices
+      2. **SupportToolmacOSBinary.zip** : For Intel based Mac devices
+      3. **SupportToolmacOS-armBinary.zip** : For Arm based Mac devices
+
+6. Unzip one of the above 3 zips based on the machine you need to investigate.\
+When using a terminal unzip using one of the following command based on machine type:
+   - Linux
+   ```sh
+   unzip -q SupportToolLinuxBinary.zip
+   ```
+   - Intel based Mac
+   ```sh
+   unzip -q SupportToolmacOSBinary.zip
+   ```
+   - For Arm based Mac devices
+   ```sh
+   unzip -q SupportToolmacOS-armBinary.zip
+   ```
+   4. Run the tool as <i>root</i> to generate diagnostic package:
+
+   ```sh
+   sudo ./MDESupportTool -d
+   ```
+
+   > [!NOTE]
+   > The binary is currently unsigned. To allow the package run on MacOS, you will need to use the command 
+   >
+   > `spctl --add /Path/To/MDESupportTool`
+   > 
+
+</details>
+
+
+<details>
+   <summary><H2>Running the python based client analyzer </H2></summary>
+
+> [!NOTE]
+> - The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://pypi.org/search/?q=lxml>
+> 
+> - In addition, the tool currently requires Python version 3 or later to be installed.
+>
+> - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
+> `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+> 
+
+
+1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.\
+If using a terminal, download by running the command:
 ```sh
 wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer
 ```
-
-### Verify
-
+  
+2. Verify the download
 ```sh
 echo '815F3E83EB1E6C33D712F101618018E1E38211D4E2807C3A9EF3CC0B0F95225C  XMDEClientAnalyzer.zip' | sha256sum -c
 ```
 
-### Extract
-
+3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
+If using a terminal unzip using the command:
 ```sh
 unzip -q XMDEClientAnalyzer.zip -d XMDEClientAnalyzer
 ```
-
-### Change to the tool's directory
-
+4. Change directory to the extracted location.
 ```sh
 cd XMDEClientAnalyzer
 ```
-
-### Install the components
-
-Run as a non-root user to install required pip and lxml components.
-
+5. Give the tool executable permission:
+```sh
+chmod a+x mde_support_tool.sh
+```
+6. Run as a non-root user to install required dependencies:
 ```sh
 ./mde_support_tool.sh
 ```
 
-### Collect the diagnosics
-
-To collect the actual diagnostic package and generate the result archive file, run again as root.
-
+5. To collect actual diagnostic package and generate the result archive file run again as root:
 ```sh
 sudo ./mde_support_tool.sh -d
 ```
 
-> [!NOTE]
-> - For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://pypi.org/search/?q=lxml>
-> 
-> - In addition, the tool currently requires Python version 3 or later to be installed.
->
-> - If you are running on a machine that cannot use Python 3 or fetch the lxml component, then you can download a binary based version of the analyzer that does not have any of the requirements: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary). <br> Note that the binary is currently unsigned. To allow the package run on MacOS, you will need to use the syntax: "spctl --add /Path/To/Application.app".
->
-> - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
-> `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
+</details>
 
-Example:
+<details>
+   <summary><H2>Command line options</H3></summary>
+   
+   1. <H3> Primary command lines <H3>
+   Use this for getting machine diagnostic
+   ```
+   -h, --help            show this help message and exit
+  --output OUTPUT, -o OUTPUT
+                        Output path to export report
+  --no-zip, -nz         If set a directory will be created instead of an archive file
+  --force, -f           Will overwrite if output directory exists
+  --diagnostic, -d      Collect extensive machine diagnostic information
+  --bypass-disclaimer   Do not display disclaimer banner
+  --mdatp-log {info,trace,error,warning,debug,verbose}
+                        Set MDATP log level
+  --max-log-size MAX_LOG_SIZE
+                        Maximum log file size in MB before rotating(Will restart mdatp)
+   ```
+   Usage example: `sudo ./MDESupportTool -d`
+   
+   2. <H3> Positional arguments </H3>
+   - <H4> Collect performance info </H4>
+   Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand
+   ```
+  -h, --help            show this help message and exit
+  --frequency FREQUENCY
+                        profile at this frequency
+  --length LENGTH       length of time to collect (in seconds)
+   ```
+   Usage example: `sudo ./MDESupportTool performance --frequency 2`
+   - <H4> Use OS trace (Only Mac) </H4>
+   Use OS tracing facilities to record Defender performance traces.
+   
+   > [!NOTE]
+   > This functionality exists in the python solution only
+   > 
+   ```
+  -h, --help       show this help message and exit
+  --length LENGTH  Length of time to record the trace (in seconds).
+  --mask MASK      Mask to select with event to trace. Defaults to all
+   ```
+   On running this command for the first time, it will install a Profile configuration.\
+   Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/en-in/guide/mac-help/mh35561/mac#:~:text=Choose%20Apple%20menu%20%3E%20System%20Settings,%2C%20double%2Dclick%20the%20profile.)\
+   Usage example `./mde_support_tool.sh trace --length 5`
+   - <H4> Exclude mode </H4>
+   Add exclusions for audit-d monitoring.\
+   
+   > [!NOTE]
+   > This functionality exists for Linux only 
+   > 
+   
+  ```
+  -h, --help            show this help message and exit
+  -e <executable>, --exe <executable>
+                        exclude by executable name, i.e: bash
+  -p <process id>, --pid <process id>
+                        exclude by process id, i.e: 911
+  -d <directory>, --dir <directory>
+                        exclude by target path, i.e: /var/foo/bar
+  -x <executable> <directory>, --exe_dir \<executable\> <directory>
+                        exclude by executable path and target path, i.e:
+                        /bin/bash /var/foo/bar
+  -q <q_size>, --queue <q_size>
+                        set dispatcher q_depth size
+  -r, --remove          remove exclusion file
+  -s, --stat            get statistics about common executables
+  -l, --list            list auditd rules
+  ```
+   
+   Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
+      
+</details>
 
-:::image type="content" source="images/4ca188f6c457e335abe3c9ad3eddda26.png" alt-text="The  command line example" lightbox="images/4ca188f6c457e335abe3c9ad3eddda26.png":::
-
-Additional syntax help:
-
-**-h** \# Help<br>
-\# Show help message
-
-**performance** \# Performance<br>
-\# Collects extensive tracing for analysis of a performance issue that can be reproduced on demand. Using `--length=<seconds>` to specify the duration of the benchmark.
-
-**-o** \# Output<br>
-\# Specify the destination path for the result file
-
-**-nz** \# No-Zip<br>
-\# If set, a directory will be created instead of a resulting archive file
-
-**-f** \# Force<br>
-\# Overwrite if output already exists in destination path
-
-## Result package contents on macOS and Linux
+<details>
+   <summary><H2>Result package contents on macOS and Linux</H3></summary>
 
 - report.html
 
@@ -112,11 +225,7 @@ Additional syntax help:
 
 - mde_diagnostic.zip
 
-  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
-
-  or
-
-  [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
+  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information) or [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 
 - mde.xml
 
@@ -140,8 +249,10 @@ Additional syntax help:
 
 - Audited_info.txt
 
-  Description: details on audited service and related components for [Linux](/microsoft-365/security/defender-endpoint/linux-resources) OS
+  Description: details on audited service and related components for [Linux](/microsoft-365/security/defender-endpoint/linux-resources) OS.
 
 - perf_benchmark.tar.gz
 
   Description: The performance test reports. You will see this only if you are using the performance parameter.
+  
+</details>
