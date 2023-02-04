@@ -21,7 +21,7 @@ ms.collection: m365-security-compliance
 
 ## Configure forensic evidence
 
-Configuring forensic evidence in your organization is similar to configuring other policies from insider risk management policy templates. In general, you'll follow the same basic configuration steps to set up forensic evidence, but there are a few areas that need feature-specific configuration actions before your get started with the basic configuration steps.
+Configuring forensic evidence in your organization is similar to configuring other policies from insider risk management policy templates. In general, you'll follow the same basic configuration steps to set up forensic evidence, but there are a few areas that need feature-specific configuration actions before you get started with the basic configuration steps.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
@@ -66,7 +66,7 @@ To configure forensic evidence settings, complete the following steps:
     >[!IMPORTANT]
     >The Microsoft Purview Client used to capture activity on users' devices is licensed under the Use of Software with the Online Services on the [Microsoft Product Terms](https://www.microsoft.com/licensing/product-licensing/products). Note that customers are solely responsible for using the insider risk management solution, including the Microsoft Purview Client, in compliance with all applicable laws.
  
-1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*. For capturing specific URLs of interest, options are based according to the tenant level specified, and for the time duration set for the active window. 
+1. In the **Capturing window** section, define when to start and stop activity capturing. Available values are *10 seconds*, *30 seconds*, *1 minute*, *3 minutes*, or *5 minutes*. For capturing specific URLs of interest, options are based at the tenant level (not the policy level), and for the time duration set for the active window. 
 1. In the **Upload bandwidth limit** section, define the amount of capture data to upload into your data storage account per user, per day. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
 1. In the **Offline capturing** section, enable offline capturing if needed. When enabled, users' offline activity is captured and uploaded to your data storage account the next time they're online.
 1. In the **Offline capturing cache limit** section, define the maximum cache size to store on users' devices when offline capturing is enabled. Available values are *100 MB*, *250 MB*, *500 MB*, *1 GB*, or *2 GB*.
@@ -80,7 +80,7 @@ Forensic evidence policies define the scope of security-related user activity to
 - **Capture all activities that approved users perform on their devices.** This option is typically used for a specific period of time, for example, when a particular user is potentially involved in risky activity that may lead to a security incident. To preserve storage space and user privacy, you can choose to exclude specific desktop apps and/or websites from the capture. 
 
 > [!IMPORTANT]
-> If you want to capture browsing activities (to include or exclude specific URLs in your forensic evidence policies), make sure to [install the necessary browser extensions](insider-risk-management-browser-support.md). You also need to turn on at least one browsing indicator. If you haven't already turned one or more browsing indicators, you'll be prompted to do so if you choose to include or exclude desktop apps or websites. 
+> If you want to capture browsing activities (to include or exclude specific URLs in your forensic evidence policies), make sure to [install the necessary browser extensions](insider-risk-management-browser-support.md). You also need to turn on at least one browsing indicator. If you haven't already turned on one or more browsing indicators, you'll be prompted to do so if you choose to include or exclude desktop apps or websites. 
 
 After you create a policy, you'll include it in forensic evidence requests to control what activity to capture for users whose requests are approved.
 
