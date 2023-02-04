@@ -59,7 +59,7 @@ After you enable and configure sensitivity labels for containers, users can addi
 
 ![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
-After a sensitivity label has been applied to a site, you must be a [site admin](/sharepoint/site-permissions#site-admins) to change the label in SharePoint.
+After a sensitivity label has been applied to a site, you must be a [site admin](/sharepoint/site-permissions#site-admins) to change the label in SharePoint or Teams.
 
 > [!NOTE]
 > Sensitivity labels for containers support [Teams shared channels](/MicrosoftTeams/shared-channels). If a team has any shared channels, they automatically inherit sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
