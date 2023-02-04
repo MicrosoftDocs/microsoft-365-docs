@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 10/28/2022
-ms.reviewer: shlomiakirav
+ms.date: 02/03/2023
+ms.reviewer: efratka, oogunrinde
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -35,7 +35,7 @@ Several reports are available in the Microsoft 365 Defender portal ([https://sec
 | **Web protection** | The web protection report shows attempts to access phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that are explicitly blocked. Categories of blocked sites include adult content, leisure sites, legal liability sites, and more. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Web protection**.<br/><br/>If you haven't yet configured web protection for your company, choose the **Settings** button in a report view. Then, under **Rules**, choose **Web content filtering**. To learn more about web content filtering, see [Web content filtering](../defender-endpoint/web-content-filtering.md). |
 | **Firewall** | The firewall report shows blocked inbound, outbound, and app connections. This report also shows remote IPs connected by multiple devices, and remote IPs with the most connection attempts. <br/><br/>If you haven't yet configured your firewall protection, in the navigation pane, choose **Endpoints** > **Configuration management** > **Device configuration**. To learn more, see [Firewall in Defender for Business](mdb-firewall.md). |
 | **Device control** | The device control report shows information about media usage, such as the use of removable storage devices in your organization. |
-| **Attack surface reduction rules** <br/>*(NEW!)* | The attack surface reduction rules report has three tabs: **Detections** (to show blocked or audited detections); **Configuration** (enabling you to implement standard protection rules quickly, by using a single toggle); and **Add exclusions** (enabling you to define exclusions, if needed). To access this report, in the navigation pane, choose **Reports** > **Endpoints** > Attack surface reduction rules**. <br/><br/>To learn more, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md). |
+| **Attack surface reduction rules** <br/>*(NEW!)* | The attack surface reduction rules report has three tabs: **Detections** (to show blocked or audited detections); **Configuration** (enabling you to filter on standard protection rules or additional ASR rules); and **Add exclusions** (enabling you to define exclusions, if needed). To access this report, in the navigation pane, choose **Reports** > **Endpoints** > Attack surface reduction rules**. <br/><br/>To learn more, see [Attack surface reduction capabilities in Microsoft Defender for Business](mdb-asr.md). |
 
 ## See also
 
