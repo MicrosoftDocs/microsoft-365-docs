@@ -6,7 +6,6 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date:
 ms.topic: conceptual
 
 ms.localizationpriority: medium
@@ -19,6 +18,7 @@ ms.custom:
 description: SecOps personnel can learn how to use the Incidents queue in Microsoft 365 Defender to manage incidents in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 04/07/2022
 ms.date: 04/07/2022
 ms.date: 04/07/2022
 ---
