@@ -130,4 +130,4 @@ This is the configuration for the quick setup created Devices DLP policy. The po
 
 ## See Also
 
-- [Adaptive Protection in Microsoft Purview](dlp-policy-reference.md#adaptive-protection-in-microsoft-purview)
+- [Adaptive Protection in Microsoft Purview (preview)](dlp-policy-reference.md#adaptive-protection-in-microsoft-purview-preview)
