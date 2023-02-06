@@ -17,6 +17,10 @@ description: Learn how to use AI Builder to create structured document processin
 
 # Overview of structured document processing in Microsoft Syntex
 
+
+> [!NOTE]
+> For structured document processing models, there's a known issue where tables aren't being processed. A fix for this issue will be released soon. In the meantime, you'll need to reapply the model.
+
 > [!NOTE]
 > *Structured document processing* was known as *form processing* in previous releases.
 
