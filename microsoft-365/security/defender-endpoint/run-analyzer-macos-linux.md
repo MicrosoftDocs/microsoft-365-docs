@@ -32,8 +32,8 @@ search.appverid: met150
 The XMDEClientAnalyzer is used for diagnosing Microsoft Defender for Endpoint health or reliability issues on onboarded devices running either Linux, or macOS.
 
 There are two ways to run the client analyzer tool:
-1. Using a binary version (no python dependency)
-2. Using a python based solution
+1. Using a binary version (no Python dependency)
+2. Using a Python-based solution
 
 ## Running the binary version of the client analyzer
 
@@ -109,10 +109,10 @@ When using a terminal, unzip the file using one of the following commands based 
 
 
 
-## Running the python-based client analyzer
+## Running the Python-based client analyzer
 
 > [!NOTE]
->- The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for python packages](https://pypi.org/search/?q=lxml). 
+>- The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for Python packages](https://pypi.org/search/?q=lxml). 
 > 
 > - In addition, the tool currently requires Python version 3 or later to be installed.
 >
@@ -254,7 +254,7 @@ Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
 
 - mde_diagnostic.zip
 
-  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information) or [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
+  Description: Same diagnostic output that gets generated when running *mdatp diagnostic create* on either [macOS](mac-resources.md#collecting-diagnostic-information) or [Linux](linux-resources.md#collect-diagnostic-information)
 
 - mde.xml
 
