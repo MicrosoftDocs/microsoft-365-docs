@@ -6,7 +6,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-jweston
+ms.author: dansimp
 author: jweston-1
 ms.localizationpriority: medium
 manager: dansimp
