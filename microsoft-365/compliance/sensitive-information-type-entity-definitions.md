@@ -28,7 +28,6 @@ This article is a list of all sensitive information type (SIT) entity definition
 
 > [!NOTE]
 > Mapping of confidence level (high/medium/low) with accuracy number (numeric value of 1 to 100)
-__test change__
 >
 > - Low confidence: 65 or below
 > - Medium confidence: 75
