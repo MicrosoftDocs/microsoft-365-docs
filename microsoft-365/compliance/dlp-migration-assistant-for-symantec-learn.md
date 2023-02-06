@@ -20,7 +20,7 @@ search.appverid:
 description: "The migration assistant is a Windows based desktop application that will migrate your DLP policies from other DLP platforms to Microsoft DLP platform."
 ---
 
-# Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+# Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec
 
 This article helps you to learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec.
 

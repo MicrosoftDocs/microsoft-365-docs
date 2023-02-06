@@ -129,7 +129,7 @@ _Allow_ overrides _warn_ which overrides _block_: Allow > Warn > Block. Therefor
 
 ### Policy conflict handling follows the order below
 
-- MDCA creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
+- Defender for Cloud Apps creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
 1. If the IP, URL/Domain is allowed
 - If the IP, URL/Domain is not allowed
 - If the IP, URL/Domain is allowed
