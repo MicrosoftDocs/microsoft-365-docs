@@ -109,7 +109,7 @@ This table lists all policy templates and the sensitive information types (SIT) 
 
 ## Policy Scoping
 
-See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between a unrestricted admin and an administrative unit restricted admin.
+See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
 
 DLP policies are scoped at two different levels. The first level lets an unrestricted admin scope policies to all:
 
@@ -150,8 +150,8 @@ DLP supports associating policies with administrative units. See [Administrative
 
 |DLP Administrative Role Group  |Can |
 |---------|---------|
-|Unrestricted administrator |- create and scope DLP polices to entire organization</br>- edit all DLP policies </br>- create and scope DLP policies to administrative units </br>- view all alerts and events from all DLP policies          |
-|Administrative Unit Restricted administrator </br>- must be a member of/assigned to a role group/role that can administrer DLP    |- create and scope DLP policies only to the administrative unit that they're assigned to </br>- edit DLP policies that are associated to their administrative unit </br>- view alerts and events only from the DLP policies that are scoped to their administrative unit         |
+|Unrestricted administrator |- create and scope DLP policies to entire organization</br>- edit all DLP policies </br>- create and scope DLP policies to administrative units </br>- view all alerts and events from all DLP policies          |
+|Administrative Unit Restricted administrator </br>- must be a member of/assigned to a role group/role that can administer DLP    |- create and scope DLP policies only to the administrative unit that they're assigned to </br>- edit DLP policies that are associated to their administrative unit </br>- view alerts and events only from the DLP policies that are scoped to their administrative unit         |
 
 ### Locations
 
@@ -385,9 +385,9 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Devices supports
 
 - Content contains
-- (preview) Document or attachment is password protected (.pdf, Office files and Symantec PGP encrypted files are fully supported). This predicate doesn’t detect digital rights managed (DRM) encrypted or permission protected files.
-- (preview) Content isn't labeled (.pdf, Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
-- (preview) The user accessed a sensitive website from Microsoft Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
+- Document or attachment is password protected (.pdf, Office files, .zip, and Symantec PGP encrypted files are fully supported). This predicate detects only open protected files.
+- Content is not labeled (.pdf and Office files are fully supported). This predicate detects content that doesn't have a sensitivity label applied. To help ensure only supported file types are detected, you should use this condition with the **File extension is** or **File type is** conditions.
+- (preview) The user accessed a sensitive website from Edge. See, [Scenario 6 Monitor or restrict user activities on sensitive service domains (preview)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) for more information.
 - File extension is
 - File type is
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
