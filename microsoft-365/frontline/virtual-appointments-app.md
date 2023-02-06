@@ -23,6 +23,7 @@ ms.collection:
   - highpri
   - EngageScoreSep2022
   - m365initiative-meetings
+  - tier1
 ms.reviewer: megano
 description: Get an overview of how to use the Virtual Appointments app in Teams to schedule, manage, conduct and view analytics on virtual appointments in your organization. 
 appliesto: 
