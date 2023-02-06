@@ -141,7 +141,6 @@ Select one of the following links to go to a specific table.
         [Microsoft Forms activities](#microsoft-forms-activities)
     :::column-end:::
         [Sensitivity label activities](#sensitivity-label-activities)
-    :::column-end:::
     :::column:::
         [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
     :::column-end:::
