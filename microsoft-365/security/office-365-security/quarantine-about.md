@@ -22,8 +22,6 @@ description: Admins can learn about quarantine in Exchange Online Protection (EO
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 12/02/2022
-ms.date: 12/02/2022
-ms.date: 12/02/2022
 ---
 
 # Quarantined email messages in EOP and Defender for Office 365
