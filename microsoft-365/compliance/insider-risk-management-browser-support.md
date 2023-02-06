@@ -26,8 +26,8 @@ ms.collection:
 
 In Microsoft Purview Insider Risk Management, browser signal detection is used for:
 
-- The [Risky browser usage template](insider-risk-management-policy-templates.md#policy-templates)
-- Session captures
+- The [Risky browser usage template](/microsoft-365/compliance/insider-risk-management-policy-templates#risky-browser-usage-preview)
+- [Session captures](/microsoft-365/compliance/insider-risk-management-forensic-evidence#capturing-options)
 
 ## Risky browsing usage template
 
@@ -56,7 +56,7 @@ The following table summarizes identified risk activities and extension support 
 
 ## Session captures
 
-For session captures, you can capture everything, not just the items available through the [Risky browser usage template](insider-risk-management-policy-templates.md#policy-templates). You can also specify the desktop apps and websites that you want to include or exclude. For session captures you must install the extensions as described in this topic, and you must also turn on at least one browsing indicator. 
+For session captures, you can capture everything, not just the items available through the [Risky browser usage template](/microsoft-365/compliance/insider-risk-management-policy-templates#risky-browser-usage-preview). You can also specify the desktop apps and websites that you want to include or exclude. For session captures you must install the extensions as described in this topic, and you must also turn on at least one browsing indicator. 
 
 ## Common requirements
 
