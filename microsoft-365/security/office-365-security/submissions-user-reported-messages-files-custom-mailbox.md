@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -18,7 +17,6 @@ ms.custom:
 description: "Admins can configure where user reported messages go for analysis: to an internal reporting mailbox, to Microsoft, or to both. Other settings complete the reporting experience for users when they report good or bad messages."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/05/2022
 ms.date: 12/05/2022
 ---
 
