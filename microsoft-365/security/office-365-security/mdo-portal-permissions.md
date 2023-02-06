@@ -20,7 +20,6 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 12/02/2022
-ms.date: 12/02/2022
 ---
 
 # Microsoft Defender for Office 365 permissions in the Microsoft 365 Defender portal
