@@ -21,6 +21,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
+ms.date: 06/08/2021
 ---
 
 # Configure your Event Hubs
