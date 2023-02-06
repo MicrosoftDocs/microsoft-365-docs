@@ -20,6 +20,8 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete Safe Links policies and global Safe Links settings in Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
+ms.date: 12/05/2022
 ---
 
 # Set up Safe Links policies in Microsoft Defender for Office 365

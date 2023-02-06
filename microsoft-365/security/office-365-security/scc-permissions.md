@@ -20,6 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance

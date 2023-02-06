@@ -21,6 +21,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams

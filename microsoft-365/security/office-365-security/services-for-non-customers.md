@@ -18,6 +18,8 @@ ms.collection:
 description: To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 09/13/2019
+ms.date: 09/13/2019
 ---
 
 # Services for non-customers sending mail to Microsoft 365

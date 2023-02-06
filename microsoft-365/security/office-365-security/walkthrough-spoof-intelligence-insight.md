@@ -22,6 +22,8 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 09/13/2019
+ms.date: 09/13/2019
 ---
 
 # Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP
