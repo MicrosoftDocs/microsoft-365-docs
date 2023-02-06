@@ -22,6 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 10/13/2021
 ---
 
 # Investigate and respond with Microsoft 365 Defender
