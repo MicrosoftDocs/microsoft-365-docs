@@ -442,6 +442,8 @@
               href: device-profile.md
             - name: Troubleshoot Microsoft 365 Defender service issues
               href: troubleshoot.md
+            - name: Configure alert notifications
+              href: configure-email-notifications.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access
