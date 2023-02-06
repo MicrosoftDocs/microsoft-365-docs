@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: overview
-
 search.appverid: 
   - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
