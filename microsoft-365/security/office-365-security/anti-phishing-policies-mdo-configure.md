@@ -18,6 +18,8 @@ description: Admins can learn how to create, modify, and delete the advanced ant
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 11/30/2022
+ms.date: 11/30/2022
 ---
 
 # Configure anti-phishing policies in Microsoft Defender for Office 365

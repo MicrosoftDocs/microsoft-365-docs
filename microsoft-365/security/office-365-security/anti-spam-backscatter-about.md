@@ -20,6 +20,7 @@ ms.custom:
 description: In this article, you'll learn about Backscatter and Microsoft Exchange Online Protection (EOP)
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/01/2022
 ---
 
 # Backscatter in EOP

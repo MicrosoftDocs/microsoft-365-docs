@@ -16,6 +16,7 @@ description: Admins can learn about the error codes that are associated with mes
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: m365-security
+ms.date: 12/01/2022
 ---
 
 # Mail flow intelligence in EOP

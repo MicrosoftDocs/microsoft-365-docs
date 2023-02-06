@@ -18,6 +18,7 @@ ms.collection:
 description: Microsoft 365 admins can learn how to recover from a ransomware attack.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 01/21/2020
 ---
 
 # Recover from a ransomware attack in Microsoft 365

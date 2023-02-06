@@ -19,6 +19,8 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/01/2022
+ms.date: 12/01/2022
 ---
 
 # Configure anti-spam policies in EOP

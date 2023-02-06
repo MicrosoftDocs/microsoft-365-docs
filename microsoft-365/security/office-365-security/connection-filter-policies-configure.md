@@ -20,6 +20,8 @@ ms.custom:
 description: Admins can learn how to configure connection filtering in Exchange Online Protection (EOP) to allow or block emails from email servers.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/01/2022
+ms.date: 12/01/2022
 ---
 
 # Configure connection filtering
