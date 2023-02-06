@@ -1181,7 +1181,7 @@
             href: dlp-firefox-extension-learn.md
           - name: Learn about the data loss prevention Alerts dashboard
             href: dlp-alerts-dashboard-learn.md
-          - name: Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+          - name: Learn about the Microsoft Purview Data Loss Prevention migration assistant for Symantec
             href: dlp-migration-assistant-for-symantec-learn.md
         - name: Plan for DLP
           items:
@@ -1213,7 +1213,7 @@
             href: dlp-alerts-dashboard-get-started.md
           - name: Get started with Data loss prevention policies for Power BI (preview)
             href: dlp-powerbi-get-started.md
-          - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+          - name: Get started with Microsoft Purview Data Loss Prevention migration assistant for Symantec
             href: dlp-migration-assistant-for-symantec-get-started.md  
         - name: Use DLP
           items:
@@ -1251,7 +1251,7 @@
               href: dlp-share-alerts.md
             - name: Test your DLP policies (preview)
               href: dlp-test-dlp-policies.md
-            - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec (preview)
+            - name: Use the Microsoft Purview Data Loss Prevention migration assistant for Symantec
               href: dlp-migration-assistant-for-symantec-use.md       
 - name: Manage data lifecycle & records
   items: 
