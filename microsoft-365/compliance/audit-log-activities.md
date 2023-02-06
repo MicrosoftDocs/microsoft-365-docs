@@ -43,148 +43,149 @@ Select one of the following links to go to a specific table.
     :::column:::
         [Sensitive information types  ](#sensitive-information-types)
     :::column-end:::
-    
-:::row-end:::
-
-:::row:::
     :::column:::
         [Sharing and access request activities](#sharing-and-access-request-activities)
     :::column-end:::
     :::column:::
         [Synchronization activities](#synchronization-activities)
     :::column-end:::
-    :::column:::
-        [Site permissions activities](#site-permissions-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+      :::column-end:::
+    :::column:::
+        [Site permissions activities](#site-permissions-activities)
+    :::column-end:::
     :::column:::
         [Site administration activities](#site-administration-activities)
     :::column-end:::
     :::column:::
         [Exchange mailbox activities](#exchange-mailbox-activities)
     :::column-end:::
-    :::column:::
-        [User administration activities](#user-administration-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [User administration activities](#user-administration-activities)
+    :::column-end:::
     :::column:::
         [Azure AD group administration activities](#azure-ad-group-administration-activities)
     :::column-end:::
     :::column:::
         [Application administration activities](#application-administration-activities)
     :::column-end:::
-    :::column:::
-        [Role administration activities](#role-administration-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Role administration activities](#role-administration-activities)
+    :::column-end:::
     :::column:::
         [Directory administration activities](#directory-administration-activities)
     :::column-end:::
     :::column:::
         [eDiscovery activities](#ediscovery-activities)
     :::column-end:::
-    :::column:::
-        [eDiscovery (Premium) activities](#ediscovery-premium-activities)
-    :::column-end:::
+
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [eDiscovery (Premium) activities](#ediscovery-premium-activities)
+    :::column-end:::
     :::column:::
         [Power BI activities](#power-bi-activities)
     :::column-end:::
     :::column:::
         [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
-    :::column:::
-        [Microsoft Teams activities](#microsoft-teams-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Microsoft Teams activities](#microsoft-teams-activities)
+    :::column-end:::
     :::column:::
         [Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)
     :::column-end:::
     :::column:::
         [Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)
     :::column-end:::
-    :::column:::
-        [Yammer activities](#yammer-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Yammer activities](#yammer-activities)
+    :::column-end:::
     :::column:::
         [Microsoft Power Automate activities](#microsoft-power-automate-activities)
     :::column-end:::
     :::column:::
         [Microsoft Power Apps activities](#microsoft-power-apps-activities)
     :::column-end:::
-    :::column:::
-        [Microsoft Stream activities](#microsoft-stream-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Microsoft Stream activities](#microsoft-stream-activities)
+    :::column-end:::
     :::column:::
         [Content explorer activities](#content-explorer-activities)
     :::column-end:::
     :::column:::
         [Quarantine activities](#quarantine-activities)
     :::column-end:::
-    :::column:::
-        [Microsoft Forms activities](#microsoft-forms-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
+        [Microsoft Forms activities](#microsoft-forms-activities)
+    :::column-end:::
         [Sensitivity label activities](#sensitivity-label-activities)
     :::column-end:::
     :::column:::
         [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
     :::column-end:::
-    :::column:::
-        [Briefing email activities](#briefing-email-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
+    :::column:::
+        [Briefing email activities](#briefing-email-activities)
+    :::column-end:::
+       :::column:::
         [MyAnalytics activities](#myanalytics-activities)
     :::column-end:::
     :::column:::
         [Information barriers activities](#information-barriers-activities)
-    :::column-end:::
-    :::column:::
-        [Disposition review activities](#disposition-review-activities)
-    :::column-end:::
+    :::column-end::: 
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Disposition review activities](#disposition-review-activities)
+    :::column-end:::
     :::column:::
         [Communication compliance activities](#communication-compliance-activities)
     :::column-end:::
     :::column:::
         [Report activities](#report-activities)
     :::column-end:::
-    :::column:::
-        [Exchange admin activities](#exchange-admin-audit-log)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Exchange admin activities](#exchange-admin-audit-log)
+    :::column-end:::
     :::column:::
         [Encrypted message portal activities](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
         [SystemSync activities](#systemsync-activities)
     :::column-end:::
+:::row-end:::
+
+:::row:::
     :::column:::
         [Viva Goals activities](#viva-goals-activities)
     :::column-end:::
