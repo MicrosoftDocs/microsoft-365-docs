@@ -23,15 +23,11 @@ description: "A feature that creates new ServiceNow incidents when a Microsoft S
 
 # Automatic ServiceNow Incident Creation
 
-Starting with version 2.1.0, the Microsoft 365 support integration app introduces a new feature that allows creating new ServiceNow incidents when a new Microsoft Service Health Incident is published for your Microsoft 365 tenant.
-
-This new feature seeks to further empower IT teams to be more productive as it will take care of creating incidents in ServiceNow when Microsoft publishes new service health incidents.
+Starting with version 2.1.0, the Microsoft 365 support integration app introduces a new feature that allows creating ServiceNow incidents when a Microsoft Service Health Incident is published for your tenant. This feature seeks to empower IT teams, taking care of creating incidents in ServiceNow when Microsoft publishes new service health incidents.
 
 :::image type="content" source="../../media/servicenowincident1.png" alt-text="image of m365 servicehealth dashboard":::
 
-Whenever there is an update to the Microsoft Service Health Incident, the app will post those same updates to the ServiceNow incident created for it.
-
-Along with this update, you can choose to have the app automatically close out the created ServiceNow incident when the Microsoft service health incident is resolved, or you can choose to manually close them out.
+Whenever there is an update to the Microsoft Service Health Incident, the app will post the same updates to the ServiceNow incident created for it. Additionally, you can choose to have the app automatically close out the created ServiceNow incident when the Microsoft service health incident is resolved, or you can opt to manually close them out.
 
 Here are how the properties on the Microsoft service health incident will map to the properties on the ServiceNow incident.
 
