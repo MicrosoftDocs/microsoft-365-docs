@@ -67,7 +67,7 @@ For details on configuring Microsoft Endpoint Manager (current branch), see [How
 |Scan [reparse points](/windows/win32/fileio/reparse-points) <p> **Scan** \> **Turn on reparse point scanning**|Disabled|Not available <p>See [Reparse points](/windows/win32/fileio/reparse-points)|
 |Scan mapped network drives <p> **Scan** \> **Run full scan on mapped network drives**|Disabled|`-DisableScanningMappedNetworkDrivesForFullScan`|
 |Scan archive files (such as .zip or .rar files). <p> **Scan** \> **Scan archive files**|Enabled|`-DisableArchiveScanning` <p>The [extensions exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md) will take precedence over this setting.|
-|Scan files on the network <p> **Scan** \> **Scan network files**|Disabled|`-DisableScanningNetworkFiles`|
+|Scan files on the network <p> **Scan** \> **Scan network files**|Enabled|`-DisableScanningNetworkFiles`|
 |Scan packed executables <p> **Scan** \> **Scan packed executables**|Enabled|Not available|
 |Scan removable drives during full scans only <p> **Scan** \> **Scan removable drives**|Disabled|`-DisableRemovableDriveScanning`|
 |Specify the level of subfolders within an archive folder to scan <p>**Scan** \> **Specify the maximum depth to scan archive files**|0|Not available|
