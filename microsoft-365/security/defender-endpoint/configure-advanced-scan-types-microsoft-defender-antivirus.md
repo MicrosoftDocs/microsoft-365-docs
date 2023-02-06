@@ -10,10 +10,10 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer:
+ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
-ms.date: 12/03/2021
+ms.date: 02/06/2023
 ms.collection: 
 - m365-security
 - tier2
