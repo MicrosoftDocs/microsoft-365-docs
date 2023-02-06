@@ -20,6 +20,7 @@ description: Admins can learn about the types of email addresses that are accept
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 11/30/2022
 ---
 
 # How EOP validates the From address to prevent phishing
