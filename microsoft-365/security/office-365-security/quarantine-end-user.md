@@ -22,6 +22,8 @@ description: Users can learn how to view and manage quarantined messages in Exch
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
+ms.date: 12/02/2022
+ms.date: 12/02/2022
 ---
 
 # Find and release quarantined messages as a user in EOP

@@ -19,6 +19,8 @@ ms.custom:
 description: A prescriptive playbook for SecOps personnel to manage Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 03/11/2022
+ms.date: 03/11/2022
 ---
 
 # Microsoft Defender for Office 365 Security Operations Guide

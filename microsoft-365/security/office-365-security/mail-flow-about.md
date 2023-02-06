@@ -18,6 +18,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: m365-security
 search.appverid: met150
+ms.date: 12/02/2022
 ---
 
 # Mail flow in EOP
