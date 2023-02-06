@@ -109,7 +109,7 @@ This table lists all policy templates and the sensitive information types (SIT) 
 
 ## Policy Scoping
 
-See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between a unrestricted admin and an administrative unit restricted admin.
+See, [Administrative units (preview)](microsoft-365-compliance-center-permissions.md#administrative-units-preview) to make sure you understand the difference between an unrestricted admin and an administrative unit restricted admin.
 
 DLP policies are scoped at two different levels. The first level lets an unrestricted admin scope policies to all:
 
@@ -150,8 +150,8 @@ DLP supports associating policies with administrative units. See [Administrative
 
 |DLP Administrative Role Group  |Can |
 |---------|---------|
-|Unrestricted administrator |- create and scope DLP polices to entire organization</br>- edit all DLP policies </br>- create and scope DLP policies to administrative units </br>- view all alerts and events from all DLP policies          |
-|Administrative Unit Restricted administrator </br>- must be a member of/assigned to a role group/role that can administrer DLP    |- create and scope DLP policies only to the administrative unit that they're assigned to </br>- edit DLP policies that are associated to their administrative unit </br>- view alerts and events only from the DLP policies that are scoped to their administrative unit         |
+|Unrestricted administrator |- create and scope DLP policies to entire organization</br>- edit all DLP policies </br>- create and scope DLP policies to administrative units </br>- view all alerts and events from all DLP policies          |
+|Administrative Unit Restricted administrator </br>- must be a member of/assigned to a role group/role that can administer DLP    |- create and scope DLP policies only to the administrative unit that they're assigned to </br>- edit DLP policies that are associated to their administrative unit </br>- view alerts and events only from the DLP policies that are scoped to their administrative unit         |
 
 ### Locations
 
