@@ -918,8 +918,8 @@ The following table lists the user and admin activities in Viva Goals that are l
 |Team deleted |Team deleted |A team within an organization on Viva Goals has been deleted by the user.|
 |Data exported |Data exported |A user has exported list of OKRs or list of users in an organization on Viva Goals.|
 |Goals policy updated |Goals policy updated |The global admin has modified the policy or settings at the tenant level on Viva Goals. For example, the global admin has configured who can create organizations on Viva Goals.  |
-|Organisation settings updated |Organisation settings updated |The user (typically Organization owners or admins) has updated organization specific settings on Viva Goals.  |
-|Organisation  integrations updated |Organisation  integrations updated |The user (typically Organization owners or admins) has configured a third party integration or updated an existing third party integration for an organization on Viva Goals.  |
+|Organization settings updated |Organization settings updated |The user (typically Organization owners or admins) has updated organization specific settings on Viva Goals.  |
+|Organization  integrations updated |Organization  integrations updated |The user (typically Organization owners or admins) has configured a third party integration or updated an existing third party integration for an organization on Viva Goals.  |
 |OKR or Project created |OKR or Project created |User has created an OKR or Project on Viva Goals.  |
 |OKR or Project updated |OKR or Project updated |An OKR/Project has been modified or a check-in has been made by the user or an integration on Viva Goals.  |
 |OKR or Project deleted |OKR or Project deleted |User has deleted an OKR or Project.  |
