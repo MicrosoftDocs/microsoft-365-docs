@@ -281,7 +281,7 @@ The following table describes the folder activities in SharePoint Online and One
 |Restored folder|FolderRestored|User restores a deleted folder from the recycle bin on a site.|
 
 ## Sensitive information types
-The following list describes the different types of sensitive information types for which policies and rules can be created.
+The following table describes the audit events for activities involving creation and updating of [sensitive information types](https://learn.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type?view=o365-worldwide).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
