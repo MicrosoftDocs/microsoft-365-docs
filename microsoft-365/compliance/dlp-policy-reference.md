@@ -210,9 +210,6 @@ DLP supports using trainable classifiers as a condition to detect sensitive docu
 Rules are the business logic of DLP policies. They consist of:
 
 - [**Conditions**](#conditions) that when matched, trigger the policy
-<!--- [**Exceptions**](#exceptions) to the conditions
-> [!IMPORTANT]
-> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->  
 - [**Actions**](#actions) to take when the policy is triggered
 - [**User notifications**](#user-notifications-and-policy-tips) to inform your users when they're doing something that triggers a policy and help educate them on how your organization wants sensitive information treated
 - [**User Overrides**](#user-overrides) when configured by an admin, allow users to selectively override a blocking action
@@ -220,6 +217,10 @@ Rules are the business logic of DLP policies. They consist of:
 - [**Additional Options**](#additional-options) which define the priority for rule evaluation and can stop further rule and policy processing.
 
  A policy contains one or more rules. Rules are executed sequentially, starting with the highest-priority rule in each policy.
+
+<!--- [**Exceptions**](#exceptions) to the conditions
+> [!IMPORTANT]
+> The **Exceptions** UI is only available in **Classic rule builder** mode. If you have switched to the **New DLP rule builder** [mode](dlp-policy-design.md#complex-rule-design), exceptions are displayed as nested groups and joined to the other conditions by a boolean NOT function.-->
 
 ### The priority by which rules are processed
 
@@ -287,6 +288,20 @@ SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videopl
 
 > [!IMPORTANT]
 > SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
+
+#### Adaptive Protection in Microsoft Purview (preview)
+
+Adaptive protection integrates Microsoft Purview Insider Risk Management risk profiles into DLP policies so that DLP can help protect against dynamically identified risky behaviors. When configured in insider risk management, the **User's risk level for adaptive protection is** will show up as condition for Exchange Online, Devices, and Teams locations. Refer to [Learn about Adaptive Protection in Data Loss Prevention (preview)](dlp-adaptive-protection-learn.md) for more details.
+
+##### Conditions that adaptive protection supports
+
+- User's risk level for adaptive protection is
+
+with these values:
+
+- Elevated risk level
+- Moderate risk level
+- Minor risk level
 
 #### Condition context
 
