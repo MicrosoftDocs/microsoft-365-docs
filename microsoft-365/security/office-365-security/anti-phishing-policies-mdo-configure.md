@@ -7,8 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
-
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
