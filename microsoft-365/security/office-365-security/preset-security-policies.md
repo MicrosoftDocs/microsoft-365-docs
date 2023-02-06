@@ -17,8 +17,6 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
 ms.date: 07/21/2020
-ms.date: 07/21/2020
-ms.date: 07/21/2020
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
