@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: Admin
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
