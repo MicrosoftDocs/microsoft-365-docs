@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 03/22/2021
 ---
 
 # Microsoft Defender for Endpoint on Android
