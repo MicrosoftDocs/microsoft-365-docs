@@ -4,7 +4,7 @@ description: Get an overview of attack surface reduction capabilities in Microso
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 01/26/2023 
+ms.date: 02/03/2023 
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - m365-security
 - tier1
-ms.reviewer: efratka
+ms.reviewer: efratka, oogunrinde
 search.appverid: MET150
 f1.keywords: NOCSH 
 audience: Admin
@@ -82,7 +82,7 @@ If you prefer, you can set up your ASR rules by using Microsoft Intune.
 2. Under **Endpoints**, choose **Attack surface reduction rules**. The report opens and includes three tabs:
 
    - **Detections**, where you can view detections that occurred as a result of attack surface reduction rules
-   - **Configuration**, where you can apply attack surface reduction rules to devices
+   - **Configuration**, where you can view data for standard protection rules or additional ASR rules
    - **Add exclusions**, where you can add items to be excluded from attack surface reduction rules (use these sparingly; every exclusion reduces your level of security protection)
 
 To learn more about ASR rules, see the following articles:

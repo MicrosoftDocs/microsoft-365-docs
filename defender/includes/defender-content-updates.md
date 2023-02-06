@@ -2,8 +2,9 @@
 
 
 
-## Week of December 12, 2022
+## Week of January 30, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
+| 2/2/2023 | [What is Microsoft Defender Threat Intelligence (Defender TI)?](/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti) | added |
