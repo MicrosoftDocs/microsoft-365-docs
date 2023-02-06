@@ -140,8 +140,8 @@ Complete the following steps to add users or groups to a Microsoft Purview role 
 6. Select **Select**.
 7. If the selected users or groups need organization-wide access as part of this role group assignment, go to Step 10.
 8. If the selected users or groups need to be assigned to administrative units, select the users or groups and select **Assign admin units**.
-9. On the **Assign admin units** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
-10. Select **Next** and **Save** to add the users or groups to the role group. Select **Close** to complete the steps.
+9. On the **Assign admin units (preview)** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
+10. Select **Next** and **Save** to add the users or groups to the role group. Select **Done** to complete the steps.
 
 ## Remove users or groups from a Microsoft Purview built-in role group
 
@@ -152,7 +152,7 @@ Complete the following steps to remove users or groups rom a Microsoft Purview r
 3. On the **Role groups for Microsoft Purview solutions** page, select a Microsoft Purview role group you want to remove users or groups from, then select **Edit** on the control bar.
 4. On the **Edit members of the role group** page, select the checkbox for all users or groups you want to remove to the role group.
 5. Select **Remove members**, then select **Next**.
-6. Select **Save** to remove the users or groups from the role group. Select **Close** to complete the steps.
+6. Select **Save** to remove the users or groups from the role group. Select **Done** to complete the steps.
 
 ## Create a custom Microsoft Purview role group
 
@@ -170,7 +170,7 @@ Complete the following steps to create a custom Microsoft Purview role group:
 10. Select **Next** to continue.
 11. If the selected users or groups need organization-wide access as part of this role group assignment, go to Step 14.
 12. If the selected users or groups need to be assigned to administrative units, select the users or groups and select **Assign admin units**.
-13. On the **Assign admin units** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
+13. On the **Assign admin units (preview)** pane, select the checkbox for all the administrative units you want to assign to the users or groups. Select **Select**.
 14. Select **Next**.
 15. On the **Review the role group and finish** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Create** to create the custom role group or select **Cancel** to discard the changes and not create the custom role group.
 
@@ -184,7 +184,7 @@ Complete the following steps to update a custom Microsoft Purview role group:
 4. On the **Name the role group** page, update the description for the custom role group in the **Description** field. The name of the custom role group cannot be changed. Select **Next**.
 5. On the **Edit roles of the role group** page, you can select **Choose roles** to add roles to update the roles assigned to the role group. You can also select any of the currently assigned roles and select **Remove roles** to remove the roles from the role group. After you've updated the roles, select **Next**.
 6. On the **Edit members of the role group** page, you can select **Choose users** or **Choose groups** to add users or groups assigned to the role group. To update the administrative units for users or groups, select any of the currently assigned user or groups and select **Assign admin units**. You can also select any of the currently assigned users and groups and select **Remove members** to remove the users or groups from the role group. After you've updated the members, select **Next**.
-7. On the **Review the role group and finish** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Create** to create the custom role group or select **Cancel** to discard the changes and not create the custom role group.
+7. On the **Review the role group and finish** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Save** to update the custom role group or select **Cancel** to discard the changes and not update the custom role group.
 
 ## Delete a custom Microsoft Purview role group
 
