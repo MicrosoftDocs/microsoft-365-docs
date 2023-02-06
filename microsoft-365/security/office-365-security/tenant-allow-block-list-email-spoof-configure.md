@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -16,7 +15,6 @@ ms.collection:
 description: Admins can learn how to allow or block email and spoofed sender entries in the Tenant Allow/Block List in the Security portal.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/05/2022
 ms.date: 12/05/2022
 ---
 
