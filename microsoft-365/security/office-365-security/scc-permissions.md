@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: Admin
 ms.topic: conceptual
 f1_keywords: 
