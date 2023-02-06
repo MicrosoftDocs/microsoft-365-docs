@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -18,7 +16,6 @@ ms.collection:
 description: To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 09/13/2019
 ms.date: 09/13/2019
 ---
 
