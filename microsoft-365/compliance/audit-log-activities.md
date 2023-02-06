@@ -52,7 +52,6 @@ Select one of the following links to go to a specific table.
 :::row-end:::
 
 :::row:::
-      :::column-end:::
     :::column:::
         [Site permissions activities](#site-permissions-activities)
     :::column-end:::
@@ -149,7 +148,6 @@ Select one of the following links to go to a specific table.
 :::row-end:::
 
 :::row:::
-    :::column:::
     :::column:::
         [Briefing email activities](#briefing-email-activities)
     :::column-end:::
