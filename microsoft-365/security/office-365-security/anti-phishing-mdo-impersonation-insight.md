@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -21,7 +19,6 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 11/30/2022
 ms.date: 11/30/2022
 ---
 
