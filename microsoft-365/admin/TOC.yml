@@ -361,7 +361,7 @@
            - name: Testing the configuration
              href: manage/servicenow-testing-the-configuration.md
            - name: Automatic ServiceNow incident creation
-             href: manage/servicenow-automatic-incident-creation.md
+             href: manage/servicenow-incidents.md
            - name: Troubleshooting
              href: manage/servicenow-troubleshooting.md
            - name: Integrate Microsoft 365 with ServiceNow Virtual Agent
