@@ -6,7 +6,6 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: mcostea
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
