@@ -21,7 +21,6 @@ description: "Prerequisite steps for migrating from a third-party protection ser
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 10/28/2021
-ms.date: 10/28/2021
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 1: Prepare
