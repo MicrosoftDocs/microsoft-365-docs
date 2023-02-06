@@ -40,41 +40,41 @@ There are two ways to run the client analyzer tool:
 1. Download the [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary) tool to the macOS or Linux machine you need to investigate.\
 If using a terminal download using the command:
 
-```
-wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
-```
+    ```
+    wget --quiet -O XMDEClientAnalyzerBinary.zip https://aka.ms/XMDEClientAnalyzerBinary
+    ```
 
 2. Verify the download
 
->[!NOTE]
->The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '01B6165F54C00083F40D8BC9481911897591B9497D04395F3440382DFD03B481'
+    >[!NOTE]
+    >The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '01B6165F54C00083F40D8BC9481911897591B9497D04395F3440382DFD03B481'
 
 
-```
-echo '01B6165F54C00083F40D8BC9481911897591B9497D04395F3440382DFD03B481  XMDEClientAnalyzerBinary.zip' | sha256sum -c
-```
+    ```
+    echo '01B6165F54C00083F40D8BC9481911897591B9497D04395F3440382DFD03B481  XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
 
-If using a terminal download using the command:
+    If using a terminal download using the command:
 
-```
-unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary 
-```
+    ```
+    unzip -q XMDEClientAnalyzerBinary.zip -d XMDEClientAnalyzerBinary 
+    ```
 
-4. Change to the tool's directory:
+4. Change to the tool's directory using the following command:
 
-```
-cd XMDEClientAnalyzerBinary
-```
+    ```
+    cd XMDEClientAnalyzerBinary
+    ```
 
 5. Three new zip files will be produced:
       1. **SupportToolLinuxBinary.zip** : For all Linux devices
       2. **SupportToolmacOSBinary.zip** : For Intel based Mac devices
       3. **SupportToolmacOS-armBinary.zip** : For Arm based Mac devices
 
-6. Unzip one of the above 3 zips based on the machine you need to investigate.\
-When using a terminal unzip using one of the following command based on machine type:
+6. Unzip one of the above 3 zip files based on the machine you need to investigate.\
+When using a terminal, unzip the file using one of the following commands based on machine type:
 
    - Linux
    
@@ -109,7 +109,7 @@ When using a terminal unzip using one of the following command based on machine 
 
 
 
-## Running the python based client analyzer
+## Running the python-based client analyzer
 
 > [!NOTE]
 >- The analyzer depends on few extra pip packages(sh, distro, lxml, pandas) to produce the result output. If not installed, the analyzer will try to fetch it from the [official repository for python packages](https://pypi.org/search/?q=lxml). 
@@ -187,7 +187,8 @@ When using a terminal unzip using one of the following command based on machine 
   Usage example: `sudo ./MDESupportTool -d`
   
 ### Positional arguments
-  #### - Collect performance info 
+
+#### Collect performance info 
   Collect extensive machine performance tracing for analysis of a performance scenario that can be reproduced on demand
   ```
 -h, --help            show this help message and exit
@@ -196,26 +197,34 @@ When using a terminal unzip using one of the following command based on machine 
 --length LENGTH       length of time to collect (in seconds)
   ```
   Usage example: `sudo ./MDESupportTool performance --frequency 2`
-  - <H4> Use OS trace (Only Mac) </H4>
-  Use OS tracing facilities to record Defender performance traces.
+
+
+#### Use OS trace (for macOS only)
+Use OS tracing facilities to record Defender for Endpoint performance traces.
   
-  > [!NOTE]
-  > This functionality exists in the python solution only
-  > 
-  ```
+> [!NOTE]
+> This functionality exists in the Python solution only.
+
+
+```
 -h, --help       show this help message and exit
 --length LENGTH  Length of time to record the trace (in seconds).
 --mask MASK      Mask to select with event to trace. Defaults to all
-  ```
-  On running this command for the first time, it will install a Profile configuration.\
-  Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/en-in/guide/mac-help/mh35561/mac#:~:text=Choose%20Apple%20menu%20%3E%20System%20Settings,%2C%20double%2Dclick%20the%20profile.)\
-  Usage example `./mde_support_tool.sh trace --length 5`
-  - <H4> Exclude mode </H4>
-  Add exclusions for audit-d monitoring.\
+```
+
+On running this command for the first time, it will install a Profile configuration.
+
+Follow this to approve profile installation: [Apple Support Guide](https://support.apple.com/en-in/guide/mac-help/mh35561/mac#:~:text=Choose%20Apple%20menu%20%3E%20System%20Settings,%2C%20double%2Dclick%20the%20profile.)
+
+Usage example `./mde_support_tool.sh trace --length 5`
+
+
+#### Exclude mode
+Add exclusions for audit-d monitoring.
   
-  > [!NOTE]
-  > This functionality exists for Linux only 
-  > 
+> [!NOTE]
+> This functionality exists for Linux only 
+ 
   
 ```
 -h, --help            show this help message and exit
@@ -235,12 +244,9 @@ When using a terminal unzip using one of the following command based on machine 
 -l, --list            list auditd rules
 ```
   
-  Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
+Usage example `sudo ./MDESupportTool exclude -d /var/foo/bar`
       
-</details>
-
-<details>
-   <summary><H2>Result package contents on macOS and Linux</H3></summary>
+## Result package contents on macOS and Linux
 
 - report.html
 
@@ -278,4 +284,3 @@ When using a terminal unzip using one of the following command based on machine 
 
   Description: The performance test reports. You will see this only if you are using the performance parameter.
   
-</details>
