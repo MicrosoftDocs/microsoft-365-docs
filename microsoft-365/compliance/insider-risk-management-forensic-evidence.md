@@ -64,7 +64,7 @@ The following tables include the supported minimum requirements for utilizing in
 | Display | Minimum screen resolution of 1920 x 1080 | 
 
 > [!IMPORTANT]
-> If the minimum requirements aren't met, users are likely to run into Microsoft Purview client issues and the quality of forensic recordings may not be reliable.
+> If the minimum requirements aren't met, users are likely to run into Microsoft Purview client issues and the quality of forensic captures may not be reliable.
 
 ## Capturing options
 
