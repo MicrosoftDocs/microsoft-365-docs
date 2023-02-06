@@ -3,10 +3,8 @@ title: Manage quarantined messages and files as an admin
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Admin
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MOE150

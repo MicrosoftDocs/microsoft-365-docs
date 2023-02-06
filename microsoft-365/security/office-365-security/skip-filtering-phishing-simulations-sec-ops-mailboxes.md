@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
 
@@ -18,6 +17,7 @@ ms.custom:
 description: Admins can learn how to use the advanced delivery policy in Exchange Online Protection (EOP) to identify messages that should not be filtered in specific supported scenarios (third-party phishing simulations and messages delivered to security operations (SecOps) mailboxes.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/20/2022
 ---
 
 # Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes

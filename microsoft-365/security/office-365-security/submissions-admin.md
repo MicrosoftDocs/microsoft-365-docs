@@ -17,6 +17,7 @@ ms.custom: seo-marvel-apr2020
 description: Admins can learn how to use the Submissions portal in the Microsoft 365 Defender portal to submit legitimate email getting blocked, suspicious email, suspected phishing email, spam, other potentially harmful messages, URLs, and email attachments to Microsoft for rescanning.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Use the Submissions portal to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft

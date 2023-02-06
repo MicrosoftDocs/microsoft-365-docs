@@ -9,7 +9,6 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security

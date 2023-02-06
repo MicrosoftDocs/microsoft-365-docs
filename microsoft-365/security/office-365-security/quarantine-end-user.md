@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: Consumer/IW
 ms.topic: how-to
-
 ms.localizationpriority: high
 search.appverid:
   - MET150
