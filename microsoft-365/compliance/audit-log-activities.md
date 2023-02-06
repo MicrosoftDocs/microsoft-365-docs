@@ -43,12 +43,7 @@ Select one of the following links to go to a specific table.
     :::column:::
         [Sensitive information types  ](#Sensitive-information-types)
     :::column-end:::
-    :::column:::
-        [Created new sensitive information type](#Created-new-sensitive-information-type)
-    :::column-end:::
-    :::column:::
-        [Deleted a sensitve information type](#Deleted-a-sensitve-information-type)
-    :::column-end:::
+    
 :::row-end:::
 
 :::row:::
@@ -290,8 +285,7 @@ The following list describes the different types of sensitive information types 
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
-|Created new sensitive information type| CreateRulePackage /  EditRulePackage* | A new sensitive information type was [created](https://learn.microsoft.com/en-us/microsoft-365/compliance/create-a-custom-sensitive-information-type?view=o365-worldwide#create-a-custom-sensitive-information-type). This includes SIT created by copying an [out of the box SIT](https://learn.microsoft.com/en-us/microsoft-365/compliance/create-a-custom-sensitive-information-type?view=o365-worldwide#copy-and-modify-a-sensitive-information-type).  **Note:**
-This activity will surface under the audit activities “Created rule package” or “Edited rule package”. |
+|Created new sensitive information type| CreateRulePackage /  EditRulePackage* | A new sensitive information type was [created](https://learn.microsoft.com/en-us/microsoft-365/compliance/create-a-custom-sensitive-information-type?view=o365-worldwide#create-a-custom-sensitive-information-type). This includes SIT created by copying an [out of the box SIT](https://learn.microsoft.com/en-us/microsoft-365/compliance/create-a-custom-sensitive-information-type?view=o365-worldwide#copy-and-modify-a-sensitive-information-type).  **Note:** This activity will surface under the audit activities “Created rule package” or “Edited rule package”. |
 |Edited a sensitive information type|EditRulePackage| An existing sensitive infomration type was edited. This can include operations like adding/removing a pattern and editing the regex/keyword associated with the sensitive infomration type. **Note:** This activitiy will surface under the audit activity "Edited rule package".
 |Deleted a sensitve information type|EditRulePackage / RemoveRulePackage | An existing sensitive information type was deleted. **Note:** This activity will surface under the audit activity “Edited rule package” or “Removed rule package”.
 
