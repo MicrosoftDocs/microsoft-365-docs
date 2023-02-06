@@ -19,7 +19,9 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
+ms.date: 02/16/2021
 ---
+
 # Investigate users in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]

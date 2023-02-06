@@ -19,6 +19,7 @@ ms.collection:
 - tier3
 ms.date:
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Enable controlled folder access
