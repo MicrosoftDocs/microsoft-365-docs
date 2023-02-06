@@ -6,9 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date: 
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
