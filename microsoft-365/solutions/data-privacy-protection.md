@@ -54,5 +54,5 @@ The steps in this solution are:
 - [Microsoft Privacy](/privacy)
 - [Microsoft Purview risk and compliance solutions](../compliance/purview-compliance.md)
 - [Microsoft compliance offerings](/compliance/regulatory/offering-home)
-- [Data privacy thought paper: From privacy vulnerability to privacy resilience, August 2022](https://aka.ms/dataprivacyresearch)
+- [Data privacy thought paper: From privacy vulnerability to privacy resilience](https://aka.ms/dataprivacyresearch)
 - [Priva Privacy Risk Management eBook](https://aka.ms/privaPRMeBook)
