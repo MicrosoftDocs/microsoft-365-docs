@@ -57,7 +57,7 @@ When you sign up for either a free trial, or a subscription, you must enable Azu
 
 The Service Trust Portal features and content are accessible from the main menu. The following sections describe each item in the main menu.
 
-![Service Trust Portal - main menu](../media/stp-menu.png)
+:::image type="content" alt-text="Screenshot of the Service Trust Portal - main menu." source="../media/stp-menu.png":::
 
 ### Service Trust Portal
 
@@ -117,11 +117,15 @@ Document download view - When viewing the available documents, you can filter th
 > [!NOTE]
 > Many of the files on the STP require acceptance of a license agreement. Some browser-based PDF viewers do not allow Javascript to run, which prevents the license agreement from being displayed and the file from opening.
 
-##### All Documents
+#### All Documents
 
 This section displays all available documents. Select the documents to save into your My Library section. Documents are sorted under the same categories shown under Certifications, Standards, Regulations, and Industry Resources. To view all resources for a particular cloud service use the **Cloud Service** filter.
 
-##### Search
+#### Restricted Documents
+
+The Service Trust Portal has documents that, given the nature of their content, are available for users with specific permissions. Users with Tenant Admin, Compliance Viewer role or the user set in database are able to see the restricted documents. 
+
+#### Search
 
 Click the magnifying glass in the upper right-hand corner of the Service Trust Portal page to expand the box, enter your search terms, and press **Enter**. The **Search** page is displayed, with the search term displayed in the search box and the search results listed below.
 

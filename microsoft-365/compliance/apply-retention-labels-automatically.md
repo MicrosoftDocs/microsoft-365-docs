@@ -155,7 +155,7 @@ After you select a policy template, you can add or remove any types of sensitive
 
 - The content contains between 1 and 9 instances of any of these three sensitive info types. The default for the **to** value is **Any**.
 
-For more information about these options, see the following guidance from the DLP documentation [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+For more information about these options, see the following guidance from the DLP documentation [Test your Data Loss Prevention policies (preview)](dlp-test-dlp-policies.md#test-your-data-loss-prevention-policies-preview).
 
 > [!IMPORTANT]
 > Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
