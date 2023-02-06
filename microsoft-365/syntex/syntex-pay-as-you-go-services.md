@@ -21,10 +21,6 @@ When you choose to use pay-as-you-go, usage of Microsoft Syntex services is bill
 
 |Meter|What's counted?|What's billed?|
 |:----|:--------------|:-------------|
-|Unstructured|Page|The total number of pages processed.  You will not be charged for model training. You will be charged for processing whether or not there is a positive classification, or any entities extracted.<br><br>$0.10/page|
-|Prebuilt|Page|The total number of pages processed.  You will not be charged for model training. You will be charged for processing whether or not there is a positive classification, or any entities extracted.<br><br>$0.01/page|
-
-
-
-## Related topics
+|Unstructured|Page|The total number of pages processed. You will not be charged for model training. You will be charged for processing whether or not there is a positive classification, or any entities extracted.<br><br>$0.10/page|
+|Prebuilt|Page|The total number of pages processed. You will not be charged for model training. You will be charged for processing whether or not there is a positive classification, or any entities extracted.<br><br>$0.01/page|
 
