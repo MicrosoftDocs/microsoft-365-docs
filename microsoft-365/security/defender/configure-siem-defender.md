@@ -30,7 +30,7 @@ ms.date: 10/25/2021
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
-> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 ## Pull Microsoft 365 Defender incidents and streaming event data using security information and events management (SIEM) tools
 
@@ -39,7 +39,7 @@ ms.date: 10/25/2021
 > - [Microsoft 365 Defender Incidents](incident-queue.md) consists of collections of correlated alerts and their evidence.
 > - [Microsoft 365 Defender Streaming API](streaming-api.md) streams event data from Microsoft 365 Defender to event hubs or Azure storage accounts.
 
-Microsoft 365 Defender supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment. 
+Microsoft 365 Defender supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment.
 
 For more information, see:
 
@@ -113,4 +113,4 @@ For more information on the Splunk Add-on for Microsoft Cloud Services, see the 
 
 ## Related topics
 
-[Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
+[Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)

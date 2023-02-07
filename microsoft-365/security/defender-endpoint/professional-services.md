@@ -32,7 +32,7 @@ ms.date: 09/28/2022
 - Microsoft Defender for Cloud Apps
 
 > [!NOTE]
-> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 The following professional services can be integrated with Microsoft Defenders' products:
 
@@ -192,6 +192,6 @@ Mature and maintain your internal team's security capabilities to prevent, detec
 
 ## Related topics
 
-- [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
+- [Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Configure managed service security provider integration](configure-mssp-support.md)
