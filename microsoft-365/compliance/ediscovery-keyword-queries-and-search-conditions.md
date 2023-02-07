@@ -33,7 +33,7 @@ This article also describes:
 
 - Using Boolean search operators, search conditions, and other search query techniques to refine your search results.
 - Searching for communications of various types related to specific employees and projects during a specific time frame.
-- Searching for site content that is related to a specific project, employees and/or topics during a specific time period.
+- Searching for site content that is related to a specific project, employees and/or subjects during a specific time period.
 
 For step-by-step instructions on how to create different eDiscovery searches, see:
 
@@ -48,7 +48,7 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 
 ## Search tips and tricks
 
-- The timezone for all searches is Coordinated Universal Time (UTC). Changing timezones for your organziation isn't currently supported.
+- The timezone for all searches is Coordinated Universal Time (UTC). Changing timezones for your organization isn't currently supported.
 - Keyword searches aren't case-sensitive. For example, **cat** and **CAT** return the same results.
 - The Boolean operators **AND**, **OR**, **NOT**, and **NEAR** must be uppercase.
 - A space between two keywords or two  `property:value` expressions is the same as using **AND**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis that contain the word reorganization in the subject line.
@@ -58,21 +58,21 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 - When searching a property, use double quotation marks ("  ") if the search value consists of multiple words. For example `subject:budget Q1` returns messages that contain **budget** in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using `subject:"budget Q1"` returns all messages that contain **budget Q1** anywhere in the subject line.
 - To exclude content marked with a certain property value from your search results, place a minus sign (-) before the name of the property. For example, `-from:"Sara Davis"` excludes any messages sent by Sara Davis.
 - You can export items based on message type. For example, to export Skype conversations and chats in Microsoft Teams, use the syntax `kind:im`. To return only email messages, you would use `kind:email`. To return chats, meetings, and calls in Microsoft Teams, use `kind:microsoftteams`.
-- When searching sites you have to add the trailing `/` to the end of the URL when using the `path` property to return only items in a specified site. If you don't include the trailing `/`, items from a site with a similar path name will also be returned. For example, if you use `path:sites/HelloWorld` then items from sites named `sites/HelloWorld_East` or `sites/HelloWorld_West` would also be returned. To return items only from the HelloWorld site, you have to use `path:sites/HelloWorld/`.
+- When searching sites, you have to add the trailing `/` to the end of the URL when using the `path` property to return only items in a specified site. If you don't include the trailing `/`, items from a site with a similar path name will also be returned. For example, if you use `path:sites/HelloWorld` then items from sites named `sites/HelloWorld_East` or `sites/HelloWorld_West` would also be returned. To return items only from the HelloWorld site, you have to use `path:sites/HelloWorld/`.
 - The **Query language-country/region** must be defined in your search query prior to collecting content.
 
 ## Finding content in Exchange Online
 
 Admins are often charged with finding out who knew what when in the most efficient and effective way possible to respond to requests concerning ongoing or potential litigation, internal investigations and other scenarios. These requests are often urgent, involve multiple stakeholder teams, and have significant impact if not completed in a timely manner. Knowing how to find the right information is critical for admins to complete searches successfully and help their organizations to manage the risk and cost associated with eDiscovery requirements.  
 
-When an eDiscovery request is submitted, often there is only partial information available for the admin to start to collect content that may be related to a particular investigation. The request may include employee names, project titles, rough date ranges when the project was active, and not much more. From this information, the admin needs to create queries to find relevant content across Microsoft 365 services to determine the information needed for a particular project or topic. Understanding how information is stored and managed for these services will help admins more efficiently find what they need quickly and in an effective manner.
+When an eDiscovery request is submitted, often there's only partial information available for the admin to start to collect content that may be related to a particular investigation. The request may include employee names, project titles, rough date ranges when the project was active, and not much more. From this information, the admin needs to create queries to find relevant content across Microsoft 365 services to determine the information needed for a particular project or subject. Understanding how information is stored and managed for these services will help admins more efficiently find what they need quickly and in an effective manner.
 
 Email, chat, and meeting information are all stored in Exchange Online. Many communication properties are available for searching items included in Exchange Online. Some properties such as *From*,*Sent*, *Subject*, and *To* are unique to certain items and aren't relevant when searching for files or documents in SharePoint and OneDrive for Business. Including these types of properties when searching across workloads can sometimes lead to unexpected results.
 
 For example, to find content related to specific employees User 1 and User 2, associated with a project called 'Tradewinds', and during January 2020 through January 2022, you might use a query with the following properties:
 
 - Add User 1 and User 2's Exchange Online locations as data sources to the case
-- Select User 1 and User 2's Exchange Onlnine locations as collection locations
+- Select User 1 and User 2's Exchange Online locations as collection locations
 - For **Keyword**, use *Tradewinds*
 - For **Date Range**, use the *January 1, 2020* to *January 31, 2022* range.
 
@@ -142,7 +142,7 @@ The following table lists the SharePoint and OneDrive for Business properties th
 |Created|The date that an item is created.|`created>=2021-06-01`|All items created on or after June 1, 2021.|
 |CreatedBy|The person that created or uploaded an item. Be sure to use the user's display name for this property.|`createdby:"Garth Fort"`|All items created or uploaded by Garth Fort.|
 |DetectedLanguage|The language of an item.|`detectedlanguage:english`|All items in English.|
-|DocumentLink|The path (URL) of a specific folder on a SharePoint or OneDrive for Business site. If you use this property, be sure to search the site that the specified folder is located in. We recommend using this property instead of *Site* and *Path*. <p> To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /\* to the URL of the specified folder; for example, `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"` <p> <br/>For more information about searching for the documentlink property and using a script to obtain the documentlink URLs for folders on a specific site, see [Use Content search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"` <p> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|The first example returns all items in the specified OneDrive for Business folder. The second example returns documents in the specified site folder (and all subfolders) that contain the word "confidential" in the file name.|
+|DocumentLink|The path (URL) of a specific folder on a SharePoint or OneDrive for Business site. If you use this property, be sure to search the site that the specified folder is located in. We recommend using this property instead of the *Site* and *Path* properties. <p> To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /\* to the URL of the specified folder; for example, `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"` <p> <br/>For more information about searching for the documentlink property and using a script to obtain the documentlink URLs for folders on a specific site, see [Use Content search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"` <p> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|The first example returns all items in the specified OneDrive for Business folder. The second example returns documents in the specified site folder (and all subfolders) that contain the word "confidential" in the file name.|
 |FileExtension|The extension of a file; for example, docx, one, pptx, or xlsx.|`fileextension:xlsx`|All Excel files (Excel 2007 and later)|
 |FileName|The name of a file.|`filename:"marketing plan"` <p> `filename:estimate`|The first example returns files with the exact phrase "marketing plan" in the title. The second example returns files with the word "estimate" in the file name.|
 |LastModifiedTime|The date that an item was last changed.|`lastmodifiedtime>=2021-05-01` <p> `lastmodifiedtime>=2021-05-01 AND lastmodifiedtime<=2021-06-01`|The first example returns items that were changed on or after May 1, 2021. The second example returns items changed between May 1, 2021 and June 1, 2021.|
