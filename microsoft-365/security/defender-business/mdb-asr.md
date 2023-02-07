@@ -73,6 +73,8 @@ These rules help protect your network and devices but shouldn't cause disruption
 
    5. On the **Review + create** step, review the information, and then choose **Create**.
 
+If you prefer, you can set up your ASR rules in audit mode at first to see detections before files or processes are actually blocked. For more detailed information about ASR rules, see [ASR rules deployment overview](../defender-endpoint/attack-surface-reduction-rules-deployment.md).
+
 ### View your attack surface reduction report
 
 1. As a global administrator, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports**.

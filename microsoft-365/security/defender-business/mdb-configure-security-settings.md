@@ -53,7 +53,6 @@ Use this article as a guide to managing your security policies and settings.
 7. [View other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 8. [Proceed to your next steps](#next-steps).
 
-
 ## Choose where to manage security policies and devices
 
 Defender for Business features a [simplified configuration process](mdb-simplified-configuration.md) that helps streamline the setup and configuration process. If you select the simplified configuration process, you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)). However, you're not limited to this option. If you've been using Microsoft Intune, you can keep using Intune.
@@ -92,9 +91,9 @@ Depending on whether you're using the Microsoft 365 Defender portal or Intune to
 
 - Attack surface reduction rules (see [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules)). 
 - Controlled folder access (see [Set up controlled folder access](mdb-asr.md#set-up-controlled-folder-access)).
-- Network protection (on by default with [next-generation protection](mdb-next-gen-configuration-settings.md)).
-- Web protection (on by default with [web content filtering](#set-up-web-content-filtering)).
-- Firewall protection (on by default with [firewall policies](mdb-firewall.md)).
+- Network protection (turned on by default with [next-generation protection](mdb-next-gen-configuration-settings.md)).
+- Web protection (turned on by default with [web content filtering](#set-up-web-content-filtering)).
+- Firewall protection (turned on by default with [firewall policies](mdb-firewall.md)).
 
 There are three standard attack surface reduction rules you should turn on as soon as possible. See [Enable your standard protection ASR rules](mdb-asr.md#enable-your-standard-protection-asr-rules).
 
