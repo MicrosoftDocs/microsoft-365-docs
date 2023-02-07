@@ -9,7 +9,7 @@ audience: admin
 f1.keywords: 
   - NOCSH
 ms.localizationpriority: medium
-MS.collection: 
+ms.collection: 
 search.appverid: MET150
 description: Threat remediation
 ms.subservice: mdo
