@@ -44,17 +44,15 @@ We recommend enabling the following standard protection rules as soon as possibl
 - [Block abuse of exploited vulnerable signed drivers](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 - [Block persistence through WMI event subscription](../defender-endpoint/attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
-These rules help protect your network and devices but shouldn't cause disruption for users. **To enable these rules quickly and easily, try the [Simplified standard protection option](../defender-endpoint/attack-surface-reduction-rules-report.md#simplified-standard-protection-option)**. 
-
-If you prefer, you can set up your ASR rules by using Microsoft Intune.
+These rules help protect your network and devices but shouldn't cause disruption for users. Use Intune to set up your ASR rules.
 
 ### To set up ASR rules using Intune
 
 1. As a global administrator, in the Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
 
-2. Select an existing policy, or choose **Create policy** to create a new policy.
+2. Choose **Create policy** to create a new policy.
 
-   - For **Platform**, choose **Windows 10 and later**.
+   - For **Platform**, choose **Windows 10, Windows 11, and Windows Server**.
    - For Profile, select **Attack Surface Reduction Rules**, and then choose **Create**.
 
 3. Set up your policy as follows:
