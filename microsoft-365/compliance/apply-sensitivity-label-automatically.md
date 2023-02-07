@@ -179,12 +179,12 @@ Similarly to when you configure DLP policies, you can then refine your condition
 
 ![Options for match accuracy and instance count.](../media/sit-confidence-level.png)
 
-You can learn more about these configuration options from the DLP documentation: [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+You can learn more about these configuration options from the DLP documentation: [Test your Data Loss Prevention policies (preview)](dlp-test-dlp-policies.md#test-your-data-loss-prevention-policies-preview).
 
 > [!IMPORTANT]
 > Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
 
-Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups](data-loss-prevention-policies.md).
+Also similarly to DLP policy configuration, you can choose whether a condition must detect all sensitive information types, or just one of them. And to make your conditions more flexible or complex, you can add [groups and use logical operators between the groups](dlp-policy-design.md#complex-rule-design).
 
 > [!NOTE]
 > Auto-labeling based on custom sensitive information types applies only to newly created or modified content in OneDrive and SharePoint; not to existing content. This limitation also applies to auto-labeling polices.
@@ -327,11 +327,21 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 5. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
-6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** included for your chosen locations, select the link to choose specific instances to include, or select the link to choose specific instances to exclude. Then select **Next**.
+6. For the page **Assign admin units**: This configuration is currently in preview. If your organization is using [administrative units in Azure Active Directory](/azure/active-directory/roles/administrative-units), an auto-labeling policy for just Exchange can be automatically restricted to specific users by selecting administrative units. If your account has been [assigned administrative units](microsoft-365-compliance-center-permissions.md#administrative-units-preview), you must select one or more administrative units.
+    
+    If you don't want to restrict the policy by using administrative units, or your organization hasn't configured administrative units, keep the default of **Full directory**.
+    
+7. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** included for your chosen locations, select the link to choose specific instances to include, or select the link to choose specific instances to exclude. Then select **Next**.
 
     ![Choose locations page for auto-labeling configuration.](../media/locations-auto-labeling-wizard.png)
     
-    If you change the default settings by using **Included** or **Excluded**:
+    > [!NOTE]
+    > For organizations that are using administrative units:
+    >
+    > - If you selected the option to use administrative units in the previous step, the locations for SharePoint sites and OneDrive accounts become unavailable. Only auto-labeling policies exclusingly for Exchange support administrative units.
+    > - When you use the **Included** or **Excluded** options, you will  see and can select only users from the administrative units selected in the previous step.
+    
+    If you use the **Included** or **Excluded** options:
     
     - For the **Exchange** location, the policy is applied according to the sender address of the recipients specified. Most of the time, you'll want to keep the default of **All** included with **None** excluded. This configuration is suitable even if you're testing for a subset of users. Instead of specifying your subset of users here, use the advanced rules in the next step to configure conditions to include or exclude recipients in your organization. Otherwise, when you change the default settings here:
         -  If you change the default of **All** included and instead, choose specific users or groups, email sent from outside your organization will be exempt from the policy. 
@@ -339,7 +349,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     - For OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls) to help you specify individual OneDrive accounts to include or exclude.
 
-7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
+8. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
 
     The rules use conditions that include [sensitive information types](sensitive-information-type-learn-about.md), [trainable classifiers](classifier-learn-about.md), and sharing options:
     - To select a sensitive information type or trainable classifier as a condition, under **Content contains**, select **Add**, and then choose **Sensitive info types** or **Trainable classifiers**.
@@ -364,15 +374,15 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
     For each of these conditions, you can then specify exceptions.
 
-8. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
+9. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
 
     The configuration options for sensitive information types are the same as those you select for auto-labeling for Office apps. If you need more information, see [Configuring sensitive info types for a label](#configuring-sensitive-info-types-for-a-label).
 
     When you've defined all the rules you need, and confirmed their status is on, select **Next** to move on to choosing a label to auto-apply.
 
-9. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
+10. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
 
-10. If your policy includes the Exchange location: Specify optional configurations on the **Additional settings for email** page:
+11. If your policy includes the Exchange location: Specify optional configurations on the **Additional settings for email** page:
     
     - **Automatically replace existing labels that have the same or lower priority**: Applicable for both incoming and outgoing emails, when you select this setting, it ensures a matching sensitivity label will always be applied. If you don't select this setting, a matching sensitivity label won't be applied to emails that have an existing sensitivity label with a [higher priority](sensitivity-labels.md#label-priority-order-matters) or that were manually labeled.
     
@@ -380,13 +390,13 @@ Finally, you can use simulation mode to provide an approximation of the time nee
         
         For **Assign a Rights Management owner**, specify a single user by an email address that's owned by your organization. Don't specify a mail contact, a shared mailbox, or any group type, because these aren't supported for this role.
 
-10. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Then decide whether to automatically turn on the policy if it's not edited for 7 days:
+12. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Then decide whether to automatically turn on the policy if it's not edited for 7 days:
     
     ![Test out the configured auto-labeling policy.](../media/simulation-mode-auto-labeling-wizard.png)
     
     If you're not ready to run simulation, select **Leave policy turned off**. 
 
-11. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
+13. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
 
 Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
