@@ -4,10 +4,8 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: 
-ms.date: 
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150

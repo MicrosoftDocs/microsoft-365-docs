@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -21,7 +20,6 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/02/2022
 ms.date: 12/02/2022
 ---
 

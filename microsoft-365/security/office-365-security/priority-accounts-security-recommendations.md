@@ -7,8 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.date: 
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
