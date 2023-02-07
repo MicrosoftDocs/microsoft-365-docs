@@ -25,16 +25,16 @@ The prebuilt *contracts model* analyzes and extracts key information from contra
 
 To use a contracts model, follow these steps:
 
-- Step 1: [Create a contracts model](#create-a-contracts-model)
-- Step 2: [Upload an example file to analyze](#upload-an-example-file-to-analyze)
-- Step 3: [Select extractors for your model](#select-extractors-for-your-model)
-- Step 4: [Apply the model](#apply-the-model)
+- Step 1: [Create a contracts model](#step-1-create-a-contracts-model)
+- Step 2: [Upload an example file to analyze](#step-2-upload-an-example-file-to-analyze)
+- Step 3: [Select extractors for your model](#step-3-select-extractors-for-your-model)
+- Step 4: [Apply the model](#step-4-apply-the-model)
 
-## Create a contracts model
+## Step 1: Create a contracts model
 
 Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a prebuilt contracts model. Then continue with the following steps to complete your model.
 
-## Upload an example file to analyze
+## Step 2: Upload an example file to analyze
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
 
@@ -50,7 +50,7 @@ Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to
 
 4. On the **Files to analyze the model** page, select **Next**.
 
-## Select extractors for your model
+## Step 3: Select extractors for your model
 
 On the extractor details page, you'll see the document area on the right and the **Extractors** panel on the left. The **Extractors** panel shows the list of extractors that have been identified in the document.
 
@@ -103,7 +103,7 @@ To rename an extractor from the **Extractors** panel:
 
 2. In the **Rename extractor** box, enter the new name of the extractor, and then select **Rename**.
 
-## Apply the model
+## Step 4: Apply the model
 
 - To save changes and return to the model home page, on the **Extractors** panel, select **Save and exit**.
 
@@ -113,6 +113,3 @@ To rename an extractor from the **Extractors** panel:
 
 For information about how to set the default view and how to change the view of a document library, see [Choose the view in a document library](choose-library-view.md).
 
-<!---
-[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
---->
