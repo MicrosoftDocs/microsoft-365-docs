@@ -16,6 +16,7 @@ ms.collection: m365-security
 description: Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 08/07/2020
 ---
 
 # Application Guard for Office for admins
