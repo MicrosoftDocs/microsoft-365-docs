@@ -1,5 +1,5 @@
 ---
-title: "Automatic ServiceNow Incident Creation"
+title: "Automatic Service Health Incident Creation"
 f1.keywords:
 - NOCSH
 ms.author: efrene
