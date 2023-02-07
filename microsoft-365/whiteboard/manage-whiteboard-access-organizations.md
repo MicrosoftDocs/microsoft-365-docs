@@ -63,7 +63,7 @@ To enable or disable Whiteboard for your tenant, do the following steps:
  
 ## Show or hide Whiteboard
 
-To show or hide Whiteboard in meetings, see [Meeting policy settings](/microsoftteams/meeting-policies-content-sharing). 
+To show or hide Whiteboard in meetings, see [Meeting policy settings](/microsoftteams/meeting-policies-content-sharing). To control the availability of the Whiteboard app for each user within the organization, see [App Policies settings](/microsoftteams/app-policies).
 
 ## Prevent access to Whiteboard
 
