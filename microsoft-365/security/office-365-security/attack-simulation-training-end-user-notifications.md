@@ -13,6 +13,7 @@ ms.collection:
 description: Admins can learn how to create end-user notification email messages for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 04/21/2022
 ---
 
 # End-user notifications for Attack simulation training

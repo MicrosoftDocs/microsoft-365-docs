@@ -16,6 +16,7 @@ description: Admins can use the message trace link in the Microsoft 365 Defender
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 09/13/2019
 ---
 
 # Message trace in the Microsoft 365 Defender portal

@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security
@@ -15,6 +14,7 @@ search.appverid:
 description: Admins can learn about the available and preferred options to block inbound messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 09/13/2019
 ---
 
 # Create blocked sender lists in EOP
