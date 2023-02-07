@@ -211,6 +211,9 @@ Use the *Activity scope* and *Risk insight* filters to display and sort activiti
   - All scored activity for this user
   - Only scored activity in this alert
 
+   > [!TIP]
+   > When using this filter, to further filter out any activity that was already reviewed in a past alert for a policy, select **Not yet reviewed**. 
+
 - **Risk factor filters**: Filters for risk factor activity applicable for all policies assigning risk scores This includes all activity for all policies for in-scope users.
   - Unusual activity
   - Includes events with priority content
