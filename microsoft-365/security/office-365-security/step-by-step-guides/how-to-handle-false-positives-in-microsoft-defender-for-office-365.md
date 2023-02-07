@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 06/01/2022
 ---
 
 # How to handle Legitimate emails getting blocked (False Positive), using Microsoft Defender for Office 365

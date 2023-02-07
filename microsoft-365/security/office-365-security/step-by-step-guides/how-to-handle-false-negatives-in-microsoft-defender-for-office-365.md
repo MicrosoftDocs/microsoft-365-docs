@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 06/01/2022
 ---
 
 # How to handle malicious emails that are delivered to recipients (False Negatives), using Microsoft Defender for Office 365

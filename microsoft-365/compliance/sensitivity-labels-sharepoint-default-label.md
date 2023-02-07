@@ -24,7 +24,7 @@ description: "Configure a default sensitivity label for a SharePoint document li
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is in preview and subject to change.
+> This feature is in preview and subject to change. It will require a [Microsoft Syntex Advanced Management license](/sharepoint/advanced-management) when the feature becomes generally available (GA).
 
 When SharePoint is [enabled for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md), you can configure a default label for document libraries. Then, any new files uploaded to that library, or existing files edited in the library will have that label applied if they don't already have a sensitivity label, or they have a sensitivity label but with [lower priority](sensitivity-labels.md#label-priority-order-matters).
 
@@ -64,6 +64,8 @@ Summary of outcomes:
 
 - [SharePoint Information Rights Management (IRM) is not enabled for the library](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists). This older technology isn't compatible with using a default sensitivity label for a SharePoint document library. If a library is enabled for IRM, you won't be able to select a default sensitivity label.
 
+- [Site admin permissions](/sharepoint/site-permissions#site-admins) are needed to apply and change the sensitivity label in SharePoint.
+
 If you need to review a list of file types that are supported by sensitivity labels in SharePoint, see [Supported file types](sensitivity-labels-sharepoint-onedrive-files.md#supported-file-types).
 
 ## Limitations
@@ -90,8 +92,6 @@ For an existing document library:
     Although you see the setting mentions support for PDF files, this file type isn't currently supported for this scenario.
 
 If you're creating a new document library, you can configure the same **Default sensitivity labels** setting from the **Create document library** flyout pane.
-
-The permissions required to set and change a default sensitivity label for a SharePoint library are inherited. As with the ability to change the library name and description, any SharePoint site member has this permission.
 
 ## Monitoring application of library default sensitivity labels
 

@@ -23,6 +23,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
+ms.date: 02/16/2021
 ---
 
 # Investigate alerts in Microsoft 365 Defender
