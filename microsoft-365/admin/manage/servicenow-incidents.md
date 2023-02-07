@@ -47,8 +47,9 @@ Here are how the properties on the Microsoft service health incident will map to
     - If the ServiceNow incident is resolved automatically, then the app will discontinue to post updates to that incident.
         - The ServiceNow incident will be resolved with the following settings:
 
-| Resolution code | Closed/Resolved by Caller |
+| Field | Value |
 | --- | --- |
+| Resolution code | Closed/Resolved by Caller |
 | Resolution note | The Microsoft service health incident was resolved on <date_time>. Please refer to the incident details in the Microsoft 365 Support tab for more information. |
 
 - To have the app automatically create ServiceNow incidents, you will need to configure the **Assignment group** and **Category** The **Assigned to** and **Subcategory** are not required but can be configured for improved routing and reporting.
