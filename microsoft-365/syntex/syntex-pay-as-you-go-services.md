@@ -21,6 +21,6 @@ When you use Microsoft Syntex, services are billed to your Azure subscription us
 
 |Feature|What's counted?|What's billed?|
 |:----|:--------------|:-------------|
-|Unstructured document processing|Page|The total number of pages processed.(Processing occurs on document upload and on subsequent updates.) You will not be charged for model training. You will be charged for processing whether or not there is a positive classification, or any entities extracted.<br><br>$0.10/page|
-|Prebuilt document processing|Page|The total number of pages processed. (Processing occurs on document upload and on subsequent updates.) You will not be charged for model training. You will be charged for processing whether or not there is a positive classification, or any entities extracted.<br><br>$0.01/page|
+|Unstructured document processing|The total number of pages processed.(Processing occurs on document upload and on subsequent updates.) You will not be charged for model training. You will be charged for processing whether or not there is a positive classification, or any entities extracted.|$0.10/page|
+|Prebuilt document processing|The total number of pages processed. (Processing occurs on document upload and on subsequent updates.) You will not be charged for model training. You will be charged for processing whether or not there is a positive classification, or any entities extracted.|$0.01/page|
 
