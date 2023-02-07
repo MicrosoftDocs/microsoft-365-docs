@@ -19,7 +19,6 @@ description: Admins can learn how to view and manage quarantined messages for al
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 12/02/2022
-ms.date: 12/02/2022
 ---
 
 # Manage quarantined messages and files as an admin in EOP
