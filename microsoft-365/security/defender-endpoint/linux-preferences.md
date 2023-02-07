@@ -572,8 +572,8 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> No restart of mdatp deamon is required for changes to most configs in mdatp_managed.json to take effect.
-  **Exception:** Following configs will require deamon restart to take effect:
+> No restart of mdatp daemon is required for changes to _most_ configurations in mdatp_managed.json to take effect.
+  **Exception:** The following configurations require a daemon restart to take effect:
 > - cloud-diagnostic
 > - log-rotation-parameters
 
