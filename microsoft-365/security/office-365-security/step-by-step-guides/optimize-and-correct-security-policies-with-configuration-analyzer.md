@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 05/10/2022
 ---
 
 # Optimize and correct security policies with configuration analyzer

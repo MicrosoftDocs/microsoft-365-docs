@@ -13,6 +13,7 @@ ms.collection:
 description: Admins can learn how to use payload automations (payload harvesting) to collect and launch automated simulations for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 10/05/2021
 ---
 
 # Payload automations for Attack simulation training

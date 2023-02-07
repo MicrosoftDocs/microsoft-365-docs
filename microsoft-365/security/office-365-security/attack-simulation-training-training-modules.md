@@ -13,6 +13,7 @@ ms.collection:
 description: Admins can learn about the Training modules that are available to use in Training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 01/13/2023
 ---
 
 # Training modules for Training campaigns in Attack simulation training
