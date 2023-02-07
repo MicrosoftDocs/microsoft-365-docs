@@ -47,7 +47,12 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 ## License requirement
 
-To be eligible to acquire Microsoft Defender for Endpoint Server licenses (one per covered server instance), you must have already purchased a combined minimum of 50 licenses for one or more of the following: Microsoft Defender for Endpoint (per user), Windows E5/A5, Microsoft 365 E5/A5 and Microsoft 365 E5 Security User subscription licenses.
+To be eligible to acquire Microsoft Defender for Endpoint Server licenses (one per covered server instance), you must have already purchased a combined minimum of 50 licenses for one or more of the following:
+
+- Microsoft Defender for Endpoint (per user)
+- Windows E5/A5
+- Microsoft 365 E5/A5
+- Microsoft 365 E5 Security User subscription licenses
 
 ## Windows Server onboarding overview
 
