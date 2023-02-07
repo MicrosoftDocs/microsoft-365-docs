@@ -19,8 +19,6 @@ description: What are best practices for Exchange Online Protection (EOP) and De
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 01/15/2021
-ms.date: 01/15/2021
-ms.date: 01/15/2021
 ---
 
 # Recommended settings for EOP and Microsoft Defender for Office 365 security
