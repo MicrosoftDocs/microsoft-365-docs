@@ -21,7 +21,6 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 09/13/2019
-ms.date: 09/13/2019
 ---
 
 # Remove blocked users from the Restricted users portal in Microsoft 365
