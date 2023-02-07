@@ -26,7 +26,7 @@ description: "Azure Databricks personal access token sensitive information type 
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
-This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT. T$SEt
+This SIT is also included in the [All credentials](sit-defn-all-creds.md) bundled SIT.
 
  ## Format
 
