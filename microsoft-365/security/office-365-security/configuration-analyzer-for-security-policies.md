@@ -6,10 +6,8 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer:
-ms.date:
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -20,6 +18,7 @@ ms.custom:
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 07/23/2020
 ---
 
 # Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365

@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 05/27/2022
 ---
 
 # Export non product code software inventory assessment per device

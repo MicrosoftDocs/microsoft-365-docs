@@ -18,7 +18,9 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
+
 # Turn on the preview experience in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

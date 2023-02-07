@@ -21,7 +21,9 @@ search.appverid:
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 09/16/2019
 ---
+
 # Responding to a Compromised Email Account
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
