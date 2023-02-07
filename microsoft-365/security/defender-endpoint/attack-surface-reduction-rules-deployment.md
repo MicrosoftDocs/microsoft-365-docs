@@ -64,7 +64,7 @@ While you're going through the process of planning, auditing, and enable ASR rul
 Typically, you can enable the standard protection rules with minimal-to-no noticeable impact to the end user. For an easy method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option)
 
 > [!NOTE]
-> For Customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules: Microsoft advises customers to run their HIPS solution side-by-side with their ASR rules deployment until the moment you shift from Audit to Block mode. Keep in mind that you must reach out to your 3rd-party antivirus vendor for exclusion recommendations.  
+> For Customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules: Microsoft advises customers to run their HIPS solution side-by-side with their ASR rules deployment until the moment you shift from Audit to Block mode. Keep in mind that you must reach out to your 3rd-party antivirus vendor for exclusion recommendations.
 
 ## Before you begin testing or enabling ASR rules
 
@@ -73,9 +73,9 @@ During your initial preparation, it's vital that you understand the capabilities
 > [!IMPORTANT]
 > This guide provides images and examples to help you decide how to configure ASR rules; these images and examples might not reflect the best configuration options for your environment.
 
-Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).  While you are familiarizing yourself with the ASR rules set, take note of the per-rule GUID mappings; see: [ASR rule to GUID matrix](attack-surface-reduction-rules-reference.md#asr-rule-to-guid-matrix).
+Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md). While you are familiarizing yourself with the ASR rules set, take note of the per-rule GUID mappings; see: [ASR rule to GUID matrix](attack-surface-reduction-rules-reference.md#asr-rule-to-guid-matrix).
 
-ASR rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document will go into more detail on deploying ASR rules effectively to stop advanced threats like human-operated ransomware and other threats.  
+ASR rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document will go into more detail on deploying ASR rules effectively to stop advanced threats like human-operated ransomware and other threats.
 
 ### ASR rules list by category
 
@@ -105,15 +105,15 @@ Although multiple methods of implementing ASR rules are possible, this guide is 
 
 To take full advantage of ASR rules and reporting, we recommend using a Microsoft 365 Defender E5 or Windows E5 license, and A5. Learn more: [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
 
->[!Note]
->There are multiple methods to configure ASR rules. ASR rules can be configured using: Microsoft Endpoint Manager (MEM), PowerShell, Group Policy, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
->If you are using a different infrastructure configuration than what is listed for _Infrastructure requirements_ (above), you can learn more about deploying attack surface reduction rules using other configurations here: [Enable attack surface reduction rules](enable-attack-surface-reduction.md).  
+> [!NOTE]
+> There are multiple methods to configure ASR rules. ASR rules can be configured using: Microsoft Endpoint Manager (MEM), PowerShell, Group Policy, Microsoft Endpoint Configuration Manager (ConfigMgr), MEM OMA-URI.
+> If you are using a different infrastructure configuration than what is listed for _Infrastructure requirements_ (above), you can learn more about deploying attack surface reduction rules using other configurations here: [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
 ### ASR rules dependencies
 
 Microsoft Defender Antivirus must be enabled and configured as primary anti-virus solution, and must be in the following mode:
 
-- Primary antivirus/antimalware solution  
+- Primary antivirus/antimalware solution
 - State: Active mode
 
 Microsoft Defender Antivirus must not be in any of the following modes:
@@ -134,7 +134,7 @@ Microsoft Defender Antivirus works seamlessly with Microsoft cloud services. The
 
 The following Microsoft Defender Antivirus component versions must be no more than two versions older than the most-currently-available version:
 
-- **Microsoft Defender Antivirus Platform update version**  - Microsoft Defender Antivirus platform is updated monthly.
+- **Microsoft Defender Antivirus Platform update version** - Microsoft Defender Antivirus platform is updated monthly.
 - **Microsoft Defender Antivirus engine version** - Microsoft Defender Antivirus engine is updated monthly.
 - **Microsoft Defender Antivirus security intelligence** - Microsoft continually updates Microsoft Defender security intelligence (also known as, definition and signature) to address the latest threats, and to refine detection logic.
 

@@ -19,6 +19,7 @@ ms.topic: how-to
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # How to use Power Automate Connector to set up a Flow for events

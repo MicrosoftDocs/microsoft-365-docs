@@ -14,6 +14,7 @@ description: Learn how to report false positives and false negatives in Outlook 
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 12/05/2022
 ---
 
 # Report false positives and false negatives in Outlook

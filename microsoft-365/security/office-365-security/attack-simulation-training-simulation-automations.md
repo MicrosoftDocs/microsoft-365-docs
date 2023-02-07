@@ -13,6 +13,7 @@ ms.collection:
 description: Admins can learn how to create automated simulations that contain specific techniques and payloads that launch when the specified conditions are met in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 10/11/2021
 ---
 
 # Simulation automations for Attack simulation training

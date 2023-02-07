@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: overview
-
 ms.localizationpriority: medium
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom: 
@@ -18,6 +16,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.collection: m365-security
 search.appverid: met150
+ms.date: 12/02/2022
 ---
 
 # Mail flow in EOP

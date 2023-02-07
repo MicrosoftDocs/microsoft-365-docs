@@ -22,6 +22,7 @@ ms.collection:
   - highpri
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 10/08/2020
 ---
 
 # Policies for allowing guest access and B2B external user access
