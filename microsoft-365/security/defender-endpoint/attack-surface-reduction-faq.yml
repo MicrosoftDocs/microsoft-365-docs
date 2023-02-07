@@ -17,7 +17,7 @@ metadata:
   ms.custom: asr
   ms.topic: faq
   ms.collection: m365-security
-  ms.date: 09/13/2022
+  ms.date: 1/11/2023
 
 title: Attack surface reduction frequently asked questions (FAQ)
 summary: |
@@ -79,7 +79,7 @@ sections:
           - Wildcards cannot be used to define a drive letter.
           - If you want to exclude more than one folder, in a path, use multiple instances of ```\*\``` to indicate multiple nested folders (for example, ```c:\Folder\*\*\Test```)
           - Microsoft Endpoint Configuration Manager supports wildcards (* or ?).
-          - If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, ```C:\Folder\fileversion?.docx```)
+          - If you want to exclude a file that contains random characters (automated file generation), you can use the '?' symbol (for example, ```C:\Folder\fileversion?.docx```)
           - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes).
           - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
 
@@ -99,6 +99,11 @@ sections:
           Looking at the above example, if you really had to create an exception for the process that the access right was blocked, adding the filename along with full path would exclude it from being blocked and after allowed to access LSASS process memory. The value of 0 means that ASR rules will ignore this file/process and not block/audit it.
 
           :::image type="content" source="images/asrfaq2.png" alt-text="exclude files asr":::
+
+      - question: |
+          How do I configure per-rule exclusions?
+        answer: |
+          For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md).
 
       - question: |
           What are the rules Microsoft recommends enabling?

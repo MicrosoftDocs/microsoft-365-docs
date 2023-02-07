@@ -8,11 +8,11 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 10/18/2022
+ms.date: 01/31/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.reviewer: shlomi, efratka
+ms.reviewer: shlomiakirav, efratka
 f1.keywords: NOCSH  
 ms.collection: 
 - m365-security
@@ -57,30 +57,36 @@ The following table summarizes what's included in Microsoft endpoint security pl
 
 Defender for Endpoint Plan 1 and 2 (standalone), Defender for Business (standalone), and Microsoft 365 Business Premium don't include server licenses. To onboard servers, choose from the following options:
 
-- **Microsoft Defender for Servers Plan 1 or Plan 2** as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
-- **Microsoft Defender for Business servers (preview)** for small and medium-sized businesses. See [How to get Microsoft Defender for Business servers (preview)](../defender-business/get-defender-business-servers.md).
+- **Microsoft Defender for Servers Plan 1 or Plan 2** (*recommended for enterprise customers*) as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering. To learn more. see [Overview of Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+- **Microsoft Defender for Business servers** (*recommended for small and medium-sized businesses who have [Microsoft Defender for Business](../defender-business/mdb-overview.md)*). To learn more, see [How to get Microsoft Defender for Business servers](../defender-business/get-defender-business-servers.md).
+- **Microsoft Defender for Endpoint for Servers** (*if you already have these licenses*). See [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 ## Start a trial
 
 - To try Defender for Endpoint, go to the [Defender for Endpoint trial sign-up page](https://go.microsoft.com/fwlink/p/?LinkID=2168109).
 - To try the Microsoft Defender Vulnerability Management add-on for Defender for Endpoint Plan 2, visit [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
 
-## Mixed licensing scenarios
+## Mixed-licensing scenarios
 
-A mixed licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions. Some examples are described in the following table: 
+A mixed-licensing scenario is a situation in which an organization is using a mix of enterprise Microsoft endpoint security subscriptions. The following table describes examples of mixed-licensing scenarios: 
 
 | Scenario | Description |
 |:---|:---|
 | *Mixed tenant* | Use different sets of capabilities for groups of users and their devices. Examples include:<ul><li>Defender for Endpoint Plan 1 and Defender for Endpoint Plan 2</li><li>Microsoft 365 E3 and Microsoft 365 E5</li></ul>  |
-| *Mixed trial* | Try a premium level subscription for some users. Examples include: <ul><li>Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (start a trial subscription for some users)</li><li>Microsoft 365 E3 (purchased for all users), and Microsoft 365 E5 (start a trial for some users)</li></ul> |
+| *Mixed trial* | Try a premium level subscription for some users. Examples include: <ul><li>Defender for Endpoint Plan 1 (purchased for all users), and Defender for Endpoint Plan 2 (a trial subscription has been started for some users)</li><li>Microsoft 365 E3 (purchased for all users), and Microsoft 365 E5 (a trial subscription has been started for some users)</li></ul> |
 | *Phased upgrades* | Upgrade user licenses in phases. Examples include:<ul><li>Moving groups of users from Defender for Endpoint Plan 1 to Plan 2</li><li>Moving groups of users from Microsoft 365 E3 to E5 </li></ul>  |
 
-**If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, you can now manage your subscription settings across devices**. This new capability enables you to:
+**If you have Defender for Endpoint Plan 1 and Plan 2 in your tenant, the ability to manage your subscription settings across devices is now in preview**! This new capability enables you to:
 
 - Apply *either* Defender for Endpoint Plan 1 *or* Plan 2 settings to all your devices; or
 - Use mixed mode, and apply Defender for Endpoint Plan 1 settings to some devices, and Defender for Endpoint Plan 2 to other devices.
 
-See [Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md).
+You can also use a newly added license usage report to track status. 
+
+**For more information, see [Manage your Defender for Endpoint subscription settings across devices](defender-endpoint-subscription-settings.md)**.
+
+> [!TIP]
+> If your organization is a small or medium-sized business, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
 
 ## More resources
 

@@ -34,7 +34,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to protect docu
 - Authentication contexts
 - Default sharing link for a SharePoint site (PowerShell-only configuration)
 - Site sharing settings (PowerShell-only configuration)
-- Default label for channel meetings - in preview
+- Default label for channel meetings
 
 > [!IMPORTANT]
 > The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.

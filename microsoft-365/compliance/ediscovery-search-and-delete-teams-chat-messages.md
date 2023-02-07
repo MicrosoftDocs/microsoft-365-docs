@@ -105,7 +105,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Graph Explorer with an account that's assigned the *Search And Purge* role in the Microsoft Purview compliance portal.
 
-2. Run the following GET request to retrieve the ID for the eDiscovery (Premium) case. Use the value `https://graph.microsoft.com/v1.0/security/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
+2. Run the following GET request to retrieve the ID for the eDiscovery (Premium) case. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
 
    ![GET request for case Id.](..\media\ediscovery-GraphGetRequestForCaseId.png)
 
@@ -122,7 +122,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Get the collection ID
 
-1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/ediscovery/cases('caseId')/sourceCollections` in the address bar of the request query, where *CaseId* is the ID that you obtained in the previous procedure. Be sure to surround the case ID with parentheses and single quotation marks.
+1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections` in the address bar of the request query, where *CaseId* is the ID that you obtained in the previous procedure. Be sure to surround the case ID with parentheses and single quotation marks.
 
    ![GET request for collection Id.](..\media\ediscovery-GraphGetRequestForCollectionId.png)
 
@@ -141,7 +141,7 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 ### Purge the chat messages
 
-1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/v1.0/security/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` in the address bar of the request query, where *caseId* and *collectionId* are the IDs that you obtained in the previous procedures. Be sure to surround the ID values with parentheses and single quotation marks.
+1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` in the address bar of the request query, where *caseId* and *collectionId* are the IDs that you obtained in the previous procedures. Be sure to surround the ID values with parentheses and single quotation marks.
 
       ![POST request to delete items returned by the collection.](..\media\ediscovery-GraphPOSTRequestToPurgeItems.png)
 
@@ -166,7 +166,9 @@ For more information on using PowerShell to purge chat messages, see [ediscovery
 
 After you run the POST request to purge chat messages, these messages are removed from the Teams client and replaced with an automatically generated stating that an admin has removed the message. For an example of this message, see the [End-user experience](#end-user-experience) section in this article.
 
-Purged chat messages are moved to the SubstrateHolds folder, which is a hidden mailbox folder. Purged chat messages are stored there for at least 1 day, and then are permanently deleted the next time the timer job runs (typically between 1-7 days). For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
+If you need to confirm a chat message has been removed and don't have access to the end-user message in Teams, re-run the search and verify if any matching messages are found. If there aren't any results for the message, the message has been removed.
+
+Purged chat messages are moved to the *SubstrateHolds* folder, which is a hidden mailbox folder. Purged chat messages are stored there for at least 1 day, and then are permanently deleted the next time the timer job runs (typically between 1-7 days). For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
 
 > [!NOTE]
 > Because Microsoft Graph Explorer is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.
