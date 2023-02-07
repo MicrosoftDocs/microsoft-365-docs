@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 01/31/2023
+ms.date: 02/07/2023
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -32,7 +32,7 @@ Security policies to review and configure include:
 
 - **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
 - **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to and from your company's devices
-- **[Attack surface reduction rules](#enable-standard-attack-surface-reduction-rules)**, which help protect your network and devices from cyberthreats and attacks
+- **[Attack surface reduction rules](#enable-standard-attack-surface-reduction-rules)** (rolling out now), which help protect your network and devices from cyberthreats and attacks
 - **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability
 - **[Advanced features](#review-settings-for-advanced-features)**, such as automated investigation and response and endpoint detection and response (EDR) in block mode
 
