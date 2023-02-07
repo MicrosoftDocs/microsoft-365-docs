@@ -286,8 +286,8 @@ The following table describes the audit events for activities involving creation
 |Created new sensitive information type| CreateRulePackage /  EditRulePackage* | A new sensitive information type was [created](/microsoft-365/compliance/create-a-custom-sensitive-information-type). This includes SIT created by copying an [out of the box SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type). 
 
 [!NOTE]This activity will surface under the audit activities “Created rule package” or “Edited rule package”. |
-|Edited a sensitive information type|EditRulePackage| An existing sensitive infomration type was edited. This can include operations like adding/removing a pattern and editing the regex/keyword associated with the sensitive infomration type. **Note:** This activitiy will surface under the audit activity "Edited rule package".
-|Deleted a sensitve information type|EditRulePackage / RemoveRulePackage | An existing sensitive information type was deleted. **Note:** This activity will surface under the audit activity “Edited rule package” or “Removed rule package”.
+|Edited a sensitive information type|EditRulePackage| An existing sensitive information type was edited. This can include operations like adding/removing a pattern and editing the regex/keyword associated with the sensitive information type. **Note:** This activity will surface under the audit activity "Edited rule package".
+|Deleted a sensitive information type|EditRulePackage / RemoveRulePackage | An existing sensitive information type was deleted. **Note:** This activity will surface under the audit activity “Edited rule package” or “Removed rule package”.
 
 
 ## SharePoint list activities
