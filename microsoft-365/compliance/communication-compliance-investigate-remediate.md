@@ -45,7 +45,7 @@ The first step to investigate issues detected by your policies is to review aler
 - **Reports**: Navigate to **Communication compliance** > **Reports** to display communication compliance report widgets. Each widget provides an overview of communication compliance activities and statuses, including access to deeper insights about policy matches and remediation actions.
 
 > [!NOTE]
-> If you select the **Pending** tab, you may notice that the count of policy matches in the **Pending** tab heading doesn't match the number of messages in the table (with attachments filtered out) in the lower part of the screen. This is due to new entries in the table that are not reflected on the **Pending** tab. Refresh the page to update both.
+> If you select the **Pending** tab, you may notice that the count of policy matches in the **Pending** tab heading doesn't match the number of messages in the table (with attachments filtered out) in the lower part of the screen. This is due to new entries in the table that are not reflected in the **Pending** tab. Refresh the page to update both.
 
 ### Using filters
 
