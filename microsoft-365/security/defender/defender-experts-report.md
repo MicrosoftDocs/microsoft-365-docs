@@ -22,6 +22,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
+ms.date: 06/14/2022
 ---
 
 # Understand the Defender Experts for Hunting report in Microsoft 365 Defender

@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
+ms.date: 06/10/2021
 ---
 
 # Get incident information API

@@ -17,6 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API

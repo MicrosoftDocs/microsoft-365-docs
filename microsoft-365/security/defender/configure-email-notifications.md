@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 10/11/2022
 ---
 
 # Configure alert notifications in Microsoft 365 Defender

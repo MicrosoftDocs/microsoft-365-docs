@@ -21,7 +21,9 @@ ms.collection:
   - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
+ms.date: 04/28/2022
 ---
+
 # Redirecting accounts from Microsoft Defender for Identity to Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
