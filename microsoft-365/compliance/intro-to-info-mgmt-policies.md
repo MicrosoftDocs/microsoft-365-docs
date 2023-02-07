@@ -63,7 +63,7 @@ When you add a site collection policy to a site content type, and an instance of
   
 ![Information management policy link on settings page for a site content type.](../media/15d83a34-6c8f-4b6e-b6ee-e9b0a70cbb4b.png)
  
- [!NOTE]
+ ![NOTE]
 To control which policies are used in a site collection, site collection administrators can disable the ability to set policy features directly on a content type. When this restriction is in effect, users who create content types are limited to selecting 
 policies from the site collection Policies list.
 
@@ -71,7 +71,7 @@ policies from the site collection Policies list.
   
 ![Information management policies link on settings page for document library.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
-[!NOTE] 
+![NOTE] 
 You can create an information management policy for a list or library only if that list or library does not support multiple content types. If a list or library supports multiple content types, you need to define an information management policy for each individual list content type that is associated with that list or library. (Instances of a site content type that are associated with a specific list or library are known as list content types.)
 
 To control which policies are used in a site collection, site collection administrators can disable the ability to set policy features directly on a list or library. When this restriction is in effect, users who manage lists or libraries are limited to selecting policies from the site collection Policies list.
