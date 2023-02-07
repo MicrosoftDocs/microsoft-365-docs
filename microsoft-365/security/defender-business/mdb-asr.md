@@ -4,7 +4,7 @@ description: Get an overview of attack surface reduction capabilities in Microso
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 02/03/2023 
+ms.date: 02/07/2023
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -22,7 +22,7 @@ audience: Admin
 
 Your attack surfaces as all the places and ways that your organization's network and devices are vulnerable to cyberthreats and attacks. Unsecured devices, unrestricted access to any URL on a company device, and allowing any type of app or script to run on company devices are all examples of attack surfaces. They leave your company vulnerable to cyberattacks. 
 
-To help protect your network and devices, Microsoft Defender for Business includes several attack surface reduction capabilities. This article provides an overview of those capabilities, and includes links to more detailed information.
+To help protect your network and devices, Microsoft Defender for Business includes several attack surface reduction capabilities that are rolling out now. This article provides an overview of those capabilities, and includes links to more detailed information.
 
 ## Attack surface reduction in Defender for Business
 
