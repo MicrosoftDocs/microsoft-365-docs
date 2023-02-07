@@ -18,7 +18,10 @@ description: Learn how to use a prebuilt contracts model in Microsoft Syntex.
 
 # Use a prebuilt model to extract information from contracts in Microsoft Syntex
 
-The prebuilt *contracts model* analyzes and extracts key information from contract documents. The API recognizes contracts in various formats and extracts key contract information, such as customer name, billing address, due date, and amount due.
+The prebuilt *contracts model* analyzes and extracts key information from contract documents. The API recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
+
+> [!NOTE]
+> Currently, this model is available only for .pdf and image file types. More file types will be added in future releases.
 
 To use a contracts model, follow these steps:
 
@@ -54,6 +57,8 @@ On the extractor details page, you'll see the document area on the right and the
    ![Screenshot of the extractor details page and Extractors panel.](../media/content-understanding/prebuilt-extractor-details-page.png) 
 
 The entity fields that are highlighted in green in the document area are the items that were detected by the model when it analyzed the file. When you select an entity to extract, the highlighted field will change to blue. If you later decide not to include the entity, the highlighted field will change to gray. The highlights make it easier to see the current state of the extractors you've selected.
+
+The prebuilt contracts model lets you have multiple values for a given field. For example, if a contract involves two or more parties, it could apply to multiple jurisdictions. In addition, the parties and jurisdictions are themselves objects with multiple properties. 
 
 > [!TIP]
 > You can use the scroll wheel on your mouse or the controls at the bottom of the document area to zoom in or out as needed to read the entity fields.
