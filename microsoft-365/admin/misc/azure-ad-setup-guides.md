@@ -135,7 +135,7 @@ Upgrade to an alternative sign-in approach that allows users to access their dev
 
 - Windows Hello for Business
 
--The Microsoft Authenticator app
+- The Microsoft Authenticator app
 
 - Security keys
 
