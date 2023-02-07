@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -17,7 +16,6 @@ ms.collection:
 description: Microsoft has developed various policies, procedures, and adopted several industry best practices to help protect our users from abusive, unwanted, or malicious email.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 09/13/2019
 ms.date: 09/13/2019
 ---
 
