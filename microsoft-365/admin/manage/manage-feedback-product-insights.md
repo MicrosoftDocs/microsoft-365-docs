@@ -37,11 +37,9 @@ We use NPS surveys and feedback from your end-users to provide you with insights
 - See end-user comments on the top products and issues.
 - Export feedback and survey information to a CSV file.
 
-<!-- ## Watch: NPS feedback and insights
+## Watch: NPS feedback and insights
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d6gj]
-
--->
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWWSNo]
 
 ## Before you begin
 

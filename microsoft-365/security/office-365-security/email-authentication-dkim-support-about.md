@@ -17,6 +17,7 @@ ms.collection:
 description: Learn about the validation of DKIM signed messages in Exchange Online Protection and Exchange Online
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/02/2022
 ---
 
 # Support for validation of DKIM signed messages

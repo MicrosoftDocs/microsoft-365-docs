@@ -14,6 +14,7 @@ description: Learn about the errors that admins might encounter when they try to
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 01/12/2023
 ---
 
 # Errors during admin submissions

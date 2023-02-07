@@ -11,7 +11,7 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: MET150
-mscollection:
+ms.collection:
 - tier3
 - purview-compliance
 ms.custom:

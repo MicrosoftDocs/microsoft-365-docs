@@ -19,6 +19,7 @@ ms.collection:
 - tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
+ms.date: 06/02/2021
 ---
 
 # Configure Microsoft 365 Defender to stream Advanced Hunting events to your Storage account

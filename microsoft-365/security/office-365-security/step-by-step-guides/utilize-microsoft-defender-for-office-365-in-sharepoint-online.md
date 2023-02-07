@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 08/03/2022
 ---
 
 # Use Microsoft Defender for Office 365 with SharePoint Online
