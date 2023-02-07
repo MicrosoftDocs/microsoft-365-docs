@@ -110,6 +110,8 @@
               href: prebuilt-model-invoice.md
             - name: Use a receipts model 
               href: prebuilt-model-receipt.md
+            - name: Use a contracts model 
+              href: prebuilt-model-contract.md
 
     - name: Content assembly
       items: 
