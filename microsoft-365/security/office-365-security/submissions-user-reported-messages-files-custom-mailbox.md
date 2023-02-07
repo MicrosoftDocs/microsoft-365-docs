@@ -122,7 +122,7 @@ When the toggle is **On** ![Toggle on.](../../media/scc-toggle-on.png) and you'v
 
   - **My reporting mailbox only**: User reported messages go only to the specified reporting mailbox for an admin or the security operations team to analyze.
 
-    In the **Add a mailbox to send reported messages to** box that appears, enter the email address of an existing Exchange Online mailbox to use as the reporting mailbox that holds user reported messages from Microsoft reporting tools. Distribution groups are not allowed.
+    In the **Add a mailbox to send reported messages to** box that appears, enter the email address of an existing Exchange Online mailbox to use as the reporting mailbox that holds user reported messages from Microsoft reporting tools. Distribution groups and routing to an external/on-prem mailbox are not allowed.
 
     Messages don't go to Microsoft for analysis unless an admin manually submits the message from the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>.
 
