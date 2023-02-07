@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 07/14/2022
 ---
 
 # How to enable DMARC Reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains

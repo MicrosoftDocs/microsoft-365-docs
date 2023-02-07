@@ -23,6 +23,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
+ms.date: 02/16/2021
 ---
 
 # Overview of Microsoft 365 Defender APIs

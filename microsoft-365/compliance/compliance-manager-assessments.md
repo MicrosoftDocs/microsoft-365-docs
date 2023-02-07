@@ -217,8 +217,9 @@ Learn how to get a broad [view of all users with access to assessments](complian
 ##### Note about multiple roles
 
 - A user can have one role that applies to an assessment, while also holding another role that applies broadly to overall Compliance Manager access.
+
     - For example, if you've assigned a user a **Compliance Manager Reader** role in Microsoft Purview compliance portal **Permissions,** you can also assign that user a **Compliance Manager Assessor** role for a specific assessment. In effect, the user will hold the two roles at the same time, but their ability to edit data will be limited to the assessment to which they've been assigned the **Assessor** role.
-    - Removing an assessment-based role won't remove the user's overall Compliance Manager role if they have one.
+    - Removing an assessment-based role won't remove the user's overall Compliance Manager role if they have one. If you want to change a user's overall role, you'll have to change it from the **Permissions** page in the Microsoft Purview compliance portal.
 
 - For an individual assessment, one user can only hold one assessment-based role at a time.
     - For example, if a user holds a reader role for a GDPR assessment and you want to change them to a contributor role, you'll first need to remove their reader role, and then re-assign them the reader role.

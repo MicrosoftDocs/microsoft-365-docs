@@ -23,6 +23,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
+ms.date: 05/13/2021
 ---
 
 # Step 7. Promote your Microsoft 365 Defender evaluation environment to production
