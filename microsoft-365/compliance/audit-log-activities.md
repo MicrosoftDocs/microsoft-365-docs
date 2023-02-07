@@ -310,11 +310,11 @@ The following table describes the audit events for activities involving creation
 | Deleted a sensitive information type|EditRulePackage / RemoveRulePackage | An existing sensitive information type was deleted. |
 
 > [!NOTE] 
-> Sensitive information types you add or edit will surface under the audit activities “Created rule package” or “Edited rule package.”
+> Sensitive information types you **create** or **edit** will surface under the audit activities “Created rule package” or “Edited rule package.”
 >
-> Sensitive information types you edit will surface under the audit activity "Edited rule package."
+> Sensitive information types you **edit** will surface under the audit activity "Edited rule package."
 >
-> Sensitive information types that you delete will surface under the audit activity “Edited rule package” or “Removed rule package.”
+> Sensitive information types that you **delete** will surface under the audit activity “Edited rule package” or “Removed rule package.”
 
 <!--END Note option suggestions. DELETE ME and ANY OPTIONS YOU REJECT-->
 
