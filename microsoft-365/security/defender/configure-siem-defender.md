@@ -66,7 +66,7 @@ For more information on Microsoft 365 Defender incident properties including con
 
 ### Splunk
 
-Using the new, fully-supported Splunk Add-on for Microsoft Security that supports:
+Using the new, fully supported Splunk Add-on for Microsoft Security that supports:
 
 - Ingesting incidents that contain alerts from the following products, which are mapped onto Splunk's Common Information Model (CIM):
 
