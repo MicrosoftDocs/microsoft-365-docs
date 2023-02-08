@@ -36,11 +36,12 @@ search.appverid: met150
 
 You can turn Microsoft Defender Antivirus cloud protection on or off by using one of several methods, such as:
 
-- Microsoft Intune  
-- Group Policy
-- PowerShell cmdlets
+- [Microsoft Intune](#use-microsoft-intune-to-turn-on-cloud-protection)  
+- [Group Policy](#use-group-policy-to-turn-on-cloud-protection)
+- [PowerShell cmdlets](#use-powershell-cmdlets-to-turn-on-cloud-protection)
+- [Windows Management Instruction](#use-windows-management-instruction-wmi-to-turn-on-cloud-protection) (WMI)
 
-You can also turn cloud protection on or off on individual endpoints by using the Windows Security app. 
+You can also use [Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection). And, you can turn cloud protection on or off on individual endpoints by using the [Windows Security app](#turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app). 
 
 For more information about the specific network-connectivity requirements to ensure your endpoints can connect to the cloud protection service, see [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
 
