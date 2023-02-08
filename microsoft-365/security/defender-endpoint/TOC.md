@@ -576,7 +576,6 @@
 ####### [Get machine by ID](get-machine-by-id.md)
 ####### [Get machine log on users](get-machine-log-on-users.md)
 ####### [Get machine related alerts](get-machine-related-alerts.md)
-####### [Get machines security states collection API](get-machinesecuritystates-collection.md)
 ####### [Get installed software](get-installed-software.md)
 ####### [Get discovered vulnerabilities](get-discovered-vulnerabilities.md)
 ####### [Get security recommendations](get-security-recommendations.md)
@@ -650,8 +649,6 @@
 ####### [List vulnerabilities](get-all-vulnerabilities.md)
 ####### [List vulnerabilities by machine and software](get-all-vulnerabilities-by-machines.md)
 ####### [Get vulnerability by ID](get-vulnerability-by-id.md)
-####### [Get CVE-KB map API](get-cvekbmap-collection.md)
-####### [Get KB collection API](get-kbinfo-collection.md)
 ####### [List machines by vulnerability](get-machines-by-vulnerability.md)
 
 ##### [How to use APIs - Samples]()
@@ -698,9 +695,6 @@
 #### [Microsoft Defender for Endpoint integrations](threat-protection-integration.md)
 #### [Protect users, data, and devices with conditional access](conditional-access.md)
 #### [Microsoft Defender for Cloud Apps integration overview](microsoft-cloud-app-security-integration.md)
-
-### [Information protection in Windows overview]()
-#### [Windows integration](information-protection-in-windows-overview.md)
 
 ### [Access the Microsoft Defender for Endpoint Community Center](community.md)
 
