@@ -117,7 +117,7 @@ For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs
 
 ## Related topics
 
-- [Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview)
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Overview of Advanced Hunting](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defender Streaming API](streaming-api.md)
