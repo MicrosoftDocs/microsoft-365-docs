@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: how-to 
 ms.service: microsoft-365-business
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Tier2
 - M365-subscription-management
