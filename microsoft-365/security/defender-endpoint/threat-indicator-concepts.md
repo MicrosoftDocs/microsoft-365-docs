@@ -60,6 +60,6 @@ IOCs have a many-to-one relationship with alert definitions such that an alert d
 
 ## Related topics
 
-- [Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview)
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Manage indicators](manage-indicators.md)
