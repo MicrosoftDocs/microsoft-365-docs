@@ -61,7 +61,7 @@ All APIs along the `/api` path use the [OData](/odata/overview) Protocol; for ex
 
 ## Related articles
 
-- [Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview)
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Microsoft 365 Defender APIs overview](api-overview.md)
 - [Access the Microsoft 365 Defender APIs](api-access.md)
