@@ -37,6 +37,11 @@ Watch this video that shows more information about the unified submissions exper
 
 ## Report suspicious email messages to Microsoft
 
+> [!NOTE]
+> When you report an email entity to Microsoft, everything associated with the email is copied to include it in the continual algorithm reviews. This copy includes the email content, email headers, and related data about email routing. Any message attachments are also included.
+>
+> Microsoft treats your feedback as your organization's permission to analyze all the information to fine tune the message hygiene algorithms. Your message is held in secured and audited data centers in the USA. The submission is deleted as soon as it's no longer required. Microsoft personnel might read your submitted messages and attachments, which is normally not permitted for email in Microsoft 365. However, your email is still treated as confidential between you and Microsoft, and your email or attachments isn't shared with any other party as part of the review process.
+
 |Method|Submission type|Comments|
 |---|---|---|
 |[The built-in Report button](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web)|User|Currently, this method is available only in Outlook on the web (formerly known as Outlook Web App or OWA).|
@@ -58,9 +63,3 @@ Admins can also submit email attachments and other suspected files to Microsoft 
 > Information is blocked from going outside the organization when data isn't supposed to leave the tenant boundary for compliance purposes (for example, in U.S. Government organizations: Microsoft 365 GCC, GCC High, and DoD). Reporting a message or file to Microsoft from one of these organizations will have the following message in the result details:
 >
 > **Further investigation needed**. Your tenant doesn't allow data to leave the environment, so nothing was found during the initial scan. You'll need to contact Microsoft support to have this item reviewed.
-
-> [!NOTE]
-> When you report an email entity to Microsoft, everything associated with the email is copied to include it in the continual algorithm reviews. This copy includes the email content, email headers, and related data about email routing. Any message attachments are also included.
->
-> Microsoft treats your feedback as your organization's permission to analyze all the information to fine tune the message hygiene algorithms. Your message is held in secured and audited data centers in the USA. The submission is deleted as soon as it's no longer required. Microsoft personnel might read your submitted messages and attachments, which is normally not permitted for email in Microsoft 365. However, your email is still treated as confidential between you and Microsoft, and your email or attachments isn't shared with any other party as part of the review process.
-

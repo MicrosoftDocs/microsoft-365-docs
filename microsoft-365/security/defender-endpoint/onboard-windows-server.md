@@ -25,6 +25,7 @@ ms.date: 05/19/2022
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - Windows Server 2008 R2
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -46,7 +47,12 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 ## License requirement
 
-In order to be eligible to purchase Microsoft Defender for Endpoint Server SKU, you must have already purchased a combined minimum of any of the following: Windows E5/A5, Microsoft 365 E5/A5, or Microsoft 365 E5 Security subscription licenses.
+To be eligible to acquire Microsoft Defender for Endpoint Server licenses (one per covered server instance), you must have already purchased a combined minimum of 50 licenses for one or more of the following:
+
+- Microsoft Defender for Endpoint (per user)
+- Windows E5/A5
+- Microsoft 365 E5/A5
+- Microsoft 365 E5 Security User subscription licenses
 
 ## Windows Server onboarding overview
 
