@@ -138,7 +138,7 @@ When **Access by restricted apps** is selected in a policy and a user uses an ap
 > [!IMPORTANT]
 > The action (`audit`, `block with override`, or `block`) defined for apps that are on the restricted apps list only applies when a user attempts to ***access*** a protected item. 
 
-#### File activities for apps in restricted app groups
+#### File activities for apps in restricted app groups (preview)
 
 Restricted app groups are collections of apps that you create in DLP settings and then add to a rule in a policy. When you add a restricted app group to a policy, you can take the actions defined in this table.
 
