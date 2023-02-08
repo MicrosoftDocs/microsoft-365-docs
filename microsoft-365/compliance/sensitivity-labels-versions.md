@@ -63,7 +63,6 @@ The numbers listed are the minimum Office application versions required for each
 |[PDF support](sensitivity-labels-office-apps.md#pdf-support)| Current Channel: 2208+ <br /><br> Monthly Enterprise Channel: 2209+ <br /><br> Semi-Annual Enterprise Channel: 2302+ |  Under review | Under review | Under review | Under review |
 |[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [display label color](sensitivity-labels-office-apps.md#label-colors) | Preview: [Current Channel (Preview)](https://office.com/insider) | Under review | Under review | Under review | Under review |
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Preview: Rolling out to [Beta Channel](https://office.com/insider) |  Under review | Under review | Under review | Under review |
-|[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
 
 ## Sensitivity label capabilities in Outlook
 
@@ -95,7 +94,6 @@ The numbers listed are the minimum Office application versions required for each
 |[Apply S/MIME protection](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) | Current Channel: 2211+ <br /><br> Monthly Enterprise Channel: 2211+ <br /><br> Semi-Annual Enterprise Channel:Under review  | 16.61+ <sup>\*</sup>                   | 4.2226+ | 4.2203+ | Under review |
 |[Sensitivity bar](sensitivity-labels-office-apps.md#sensitivity-bar) and [display label color](sensitivity-labels-office-apps.md#label-colors) | Under review |  Under review | Under review | Under review | Under review |
 |[Default sublabel for parent label](sensitivity-labels-office-apps.md#specify-a-default-sublabel-for-a-parent-label)| Preview: Rolling out to [Beta Channel](https://office.com/insider) |  Under review | Under review | Under review | Under review |
-|[Scope labels to files or emails](sensitivity-labels-office-apps.md#scope-labels-to-just-word-excel-and-powerpoint-or-to-just-outlook) | Preview: Rolling out to [Beta Channel](https://office.com/insider) | Under review | Under review | Under review | Under review |
 
 **Footnotes:**
 
