@@ -618,7 +618,7 @@ If you currently use these older features, they will continue to work side by si
 
 - [Information management policies](intro-to-info-mgmt-policies.md) (deletion only)
 
-If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy is in effect.
+If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy or retention label policy is in effect.
 
 ## Related information
 
