@@ -25,7 +25,9 @@ description: "Learn how to turn the pronouns feature on or off in the Microsoft 
 
 > [!IMPORTANT]
 >
-> This is prerelease documentation. The capabilities for this article are associated with [roadmap IDs 83382/115511](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=pronouns) and are not currently available in production environments. For availability information, refer to the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=pronouns).
+> This is prerelease documentation. The capabilities for this article are associated with [roadmap IDs 83382 and 115511](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=pronouns) and are not currently available in production environments. For availability information, refer to the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=pronouns).
+
+As a Microsoft 365 administrator, you can turn on a feature that lets all users in your organization add their pronouns on their profile cards in Microsoft 365. The pronouns feature is off by default and requires configuration to turn on. To learn more about the pronouns feature, see [Pronouns on your profile in Microsoft 365](https://support.microsoft.com/topic/232c3bfb-a947-4310-86db-b22d63663d85), [Frequently asked questions about pronouns in Microsoft 365](https://support.microsoft.com/topic/48135f04-e822-49b5-ba6b-e9bae2ce503a), and [Pronouns best practices](https://support.microsoft.com/topic/ef1701ad-711d-4c6e-b664-64c3ee188d68).
 
 Pronouns are stored with other data in the user's Exchange mailbox. For more information, see [Data Residency for Exchange Online](../../enterprise/m365-dr-workload-exo.md#how-can-i-determine-customer-data-location).
 
