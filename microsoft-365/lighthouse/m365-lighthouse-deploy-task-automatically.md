@@ -22,7 +22,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Deploy a task automatically in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse enables you to deploy configurations associated with eligible deployment tasks automatically. This capability enables you to ensure that the tenants you manage are healthy and secure.
+Microsoft 365 Lighthouse lets you deploy configurations associated with eligible deployment tasks automatically. This capability helps ensure that the tenants you manage are healthy and secure.
 
 ## Before you begin
 
@@ -69,11 +69,11 @@ Additionally, each partner tenant user must meet the following requirements:
 
    The **Review detected configurations** page is provided for eligible tasks and lists any existing configurations detected within the tenant. From this page, you may either edit the existing configurations or deploy a new configuration through Lighthouse to fulfill the task's requirements.
 
-   If existing configurations are detected, they’ll be displayed in the detected configuration in the deployment plan comparison table. For each detected configuration, Lighthouse will determine whether the setting is **Compliant**, **Not compliant**, **Missing**, or **Extra**.
+   If existing configurations are detected, they'll be displayed in the detected configuration in the deployment plan comparison table. For each detected configuration, Lighthouse will determine whether the setting is **Compliant**, **Not compliant**, **Missing**, or **Extra**.
 
    The detected configurations table at the bottom of the page allows you to compare the detected configurations from the tenant to your deployment plan, inclusive of any selections made on the **Review and edit deployment configuration** page. This table can be filtered by configuration or setting status and searched by user.
 
-   If there are no detected configurations, you’ll be directed to the confirm and deploy page.
+   If there are no detected configurations, you'll be directed to the confirm and deploy page.
 
 9. If applicable, edit existing configurations as needed.
 

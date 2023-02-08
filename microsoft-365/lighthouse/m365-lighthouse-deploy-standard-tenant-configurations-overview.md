@@ -27,7 +27,7 @@ Microsoft 365 Lighthouse baselines provide a repeatable and scalable way for you
 
 To view the Microsoft 365 Lighthouse default baseline that applies to all tenants, select **Deployment > Baselines** from the left navigation pane.
 
-## Watch: Deploy baselines demonstration
+## Watch: Deploy baselines
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dQib]
 
