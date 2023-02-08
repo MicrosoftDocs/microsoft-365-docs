@@ -49,7 +49,7 @@ Use the following steps to turn the pronouns feature on or off in the Microsoft 
 
 1. In the admin center, go to the **Settings** > **Org settings** page, and select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Security & privacy</a> tab.
 2. Select **Pronouns**.
-3. In the **Pronouns** pane, to turn on the pronouns feature, select the **Turn on and allow pronouns** checkbox. To turn off the pronouns feature, clear the checkbox.
+3. To turn on the pronouns feature, in the **Pronouns** pane, select the **Turn on and allow pronouns** checkbox. To turn off the pronouns feature, clear the checkbox.
 4. Select **Save**.
 
 > [!NOTE]
