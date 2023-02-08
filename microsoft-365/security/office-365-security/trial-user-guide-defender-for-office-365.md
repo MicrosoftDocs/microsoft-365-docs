@@ -16,6 +16,7 @@ search.appverid:
 description: "Microsoft Defender for Office 365 solutions trial user guide."
 ms.subservice: mdo
 ms.custom: trial-user guide
+ms.date: 11/03/2022
 ---
 
 # Trial user guide: Microsoft Defender for Office 365

@@ -17,7 +17,10 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 02/06/2023
+
 ---
+
 # Microsoft Safety Scanner Download
 
 Microsoft Safety Scanner is a scan tool designed to find and remove malware from Windows computers. Simply download it and run a scan to find malware and try to reverse changes made by identified threats.
@@ -27,7 +30,7 @@ Microsoft Safety Scanner is a scan tool designed to find and remove malware from
 - **[Download Microsoft Safety Scanner (64-bit)](https://go.microsoft.com/fwlink/?LinkId=212732)**
 
 > [!NOTE]
-> Starting November 2019, Safety Scanner will be SHA-2 signed exclusively. Your devices must be updated to support SHA-2 in order to run Safety Scanner. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
+> Safety Scanner is exclusively SHA-2 signed. Your devices must be updated to support SHA-2 in order to run Safety Scanner. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 ## Important information
 

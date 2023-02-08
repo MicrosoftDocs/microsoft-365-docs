@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -18,6 +17,7 @@ ms.custom:
 description: "Admins can configure where user reported messages go for analysis: to an internal reporting mailbox, to Microsoft, or to both. Other settings complete the reporting experience for users when they report good or bad messages."
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # User reported message settings
@@ -122,7 +122,7 @@ When the toggle is **On** ![Toggle on.](../../media/scc-toggle-on.png) and you'v
 
   - **My reporting mailbox only**: User reported messages go only to the specified reporting mailbox for an admin or the security operations team to analyze.
 
-    In the **Add a mailbox to send reported messages to** box that appears, enter the email address of an existing Exchange Online mailbox to use as the reporting mailbox that holds user reported messages from Microsoft reporting tools. Distribution groups are not allowed.
+    In the **Add a mailbox to send reported messages to** box that appears, enter the email address of an existing Exchange Online mailbox to use as the reporting mailbox that holds user reported messages from Microsoft reporting tools. Distribution groups and routing to an external or on-premises mailbox are not allowed.
 
     Messages don't go to Microsoft for analysis unless an admin manually submits the message from the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>.
 
