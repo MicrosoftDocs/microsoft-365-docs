@@ -650,8 +650,6 @@
 ####### [List vulnerabilities](get-all-vulnerabilities.md)
 ####### [List vulnerabilities by machine and software](get-all-vulnerabilities-by-machines.md)
 ####### [Get vulnerability by ID](get-vulnerability-by-id.md)
-####### [Get CVE-KB map API](get-cvekbmap-collection.md)
-####### [Get KB collection API](get-kbinfo-collection.md)
 ####### [List machines by vulnerability](get-machines-by-vulnerability.md)
 
 ##### [How to use APIs - Samples]()
