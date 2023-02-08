@@ -66,7 +66,7 @@ Then your sample file must have the same column headers, but use synthetic value
 
 If you're in any of these industry verticals:
 
-- [U.S. Healthcare data](https://go.microsoft.com/fwlink/?linkid=2224450)- [U.S. Financial data]() <!-- Need updated link -->
+- [U.S. Healthcare data](https://go.microsoft.com/fwlink/?linkid=2224450)- [U.S. Financial data](https://go.microsoft.com/fwlink/?linkid=2224770)
 - [U.S. Insurance data](https://go.microsoft.com/fwlink/?linkid=2224769)
 
 You can start with these sample file templates to speed up the sample file creation process. These files contain the most commonly used column headers across the respective industries as a well as synthetic values in the fields.
