@@ -209,7 +209,7 @@ Now that Microsoft 365 Lighthouse is in General Availability, we require our cur
 
 ### Granular Delegated Access Permissions (GDAP) roles
 
-Microsoft 365 Lighthouse now includes the capability for MSPs to use Granular Delegated Admin Privileges (GDAP) roles. With the latest update, MSPs can leverage GDAP roles for their technicians to enforce the principle of least privilege access in Microsoft 365 Lighthouse. This capability reduces the risks inherent in the broad permissions of the Delegated Access Permissions (DAP) role of the Admin Agent by enabling granular controls on the customers' data and settings that each technician will be able to work with.
+Microsoft 365 Lighthouse now includes the capability for MSPs to use Granular Delegated Admin Privileges (GDAP) roles. With the latest update, MSPs can leverage GDAP by assigning roles to their technicians to enforce the principle of least privilege access in Microsoft 365 Lighthouse. This capability reduces the risks inherent in the broad permissions of the Delegated Access Permissions (DAP) role of the Admin Agent by enabling granular controls on the customers' data and settings that each technician will be able to work with.
 
 To learn more about GDAP in Microsoft 365 Lighthouse, see [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md).
 

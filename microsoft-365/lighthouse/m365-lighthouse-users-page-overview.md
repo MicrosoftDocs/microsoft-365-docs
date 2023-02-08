@@ -53,7 +53,7 @@ The Multifactor Authentication page provides detailed information on the status 
 
 ## Password reset page
 
-The Password reset page shows detailed information on the status of SSPR enablement across your tenants. It also provides insights into users who have SSPR enabled, but still need to register before they can reset their password on their own.
+The Password reset page shows detailed information on the status of SSPR enablement across your tenants. It also provides insights into users who have SSPR enabled but still need to register before they can reset their password on their own.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Screenshot of the Password reset page.":::
 

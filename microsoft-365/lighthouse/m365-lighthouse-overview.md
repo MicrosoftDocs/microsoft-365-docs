@@ -55,7 +55,7 @@ Lighthouse helps MSPs secure and manage Microsoft 365 services and connected end
 - Managing threats on Windows 10 devices by providing details on threats detected by Microsoft 365 Defender and actions to take to resolve issues and keep devices up to date.
 - Providing insights into Microsoft 365 service incidents and advisories that impact the customer tenants they manage.
 
-## Watch: Microsoft 365 Lighthouse walkthrough
+## Watch: Demonstration of Microsoft 365 Lighthouse
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5e61O]
 
