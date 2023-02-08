@@ -28,13 +28,14 @@ To export documents from a review set:
 
 1. In the Microsoft Purview compliance portal, open the eDiscovery (Premium) case, select the **Review sets** tab, and then select the review set that you want to export.
 
-2. In the review set, select **Action** > **Export**.
+2. In the review set, select the items to export.
+3. Select **Action** > **Export**.
 
    The Export tool displays the flyout page with the settings to configure the export. Some options are selected by default, but you can change these. See the following section for descriptions of the export options that you can configure.
 
    ![Configuration options for exporting items from a review set.](../media/ediscovery-review-set-export-options.png)
 
-3. After you configure the export, select **Export** to start the export process. Depending on the option that you selected in **Output options** section, you can access the export files by direct download or in your organization's Azure Storage account.
+4. After you configure the export options, select **Export** to start the export process. Depending on the option that you selected in **Output options** section, you can access the export files by direct download or in your organization's Azure Storage account.
 
 > [!NOTE]
 > Export jobs are retained for the life of the case. However, you must download the content from an export job within 30 days after the export job is complete.
@@ -52,6 +53,14 @@ Use the following options to configure the export. Not all options are allowed f
   - Selected documents only: This option exports only the documents that are currently selected. This option is only available when items are selected in a review set.
   - All filtered documents: This option exports the documents in an active filter. This option is only available when a filter is applied to the review set.
   - All documents in the review set: This option exports all documents in the review set.
+
+- **Expand selection**: Use the following options to export additional items that are related to filtered items in the review set:
+
+    - *None*: This option doesn't export the family items or conversation items. It only exports the items that are selected or to all items in the review set list.
+    - *Include associated family items*: This option includes associated family items. Family items are items that share the same [*FamilyId* metadata property](/microsoft-365/compliance/ediscovery-document-metadata-fields) value. For example, a document that's attached to an email message shares the same *FamilyId* as the email message. If this option is selected, the email message and the document are exported in this example, even though the document might not be included in the list of review set items.
+    - *Include associated conversation items*: This option includes associated items that are in the same Teams or Yammer conversation. Conversation items are items that share the same [*ConversationId* metadata property](/microsoft-365/compliance/ediscovery-document-metadata-fields) value. All messages, posts, and corresponding transcript file of a conversation share the same *ConversationId*.
+    
+    If any option other than *None* is selected, all items that share the same association ID are exported, even though some of those items might not be in the results of the current review set query. For more information about conversation items, see [eDiscovery (Premium) workflow for content in Microsoft Teams](/microsoft-365/compliance/ediscovery-teams-workflow#grouping).
 
 - **Output options**: Exported content is either available for download directly through a web browser or can be sent to an Azure Storage account. The first two options enable direct download.
   
