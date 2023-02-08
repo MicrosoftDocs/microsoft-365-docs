@@ -95,7 +95,7 @@ After you've verified that the reporting mailbox meets all of these requirements
 
 2. On the **User reported** page, what you see and can configure is determined entirely by the toggle at the top of the page:
 
-   - **On** :::image type="icon" source="../../media/scc-toggle-on.png:::: The following configurations are supported:
+   - **On** :::image type="icon" source="../../media/scc-toggle-on.png":::: The following configurations are supported:
      - Users in your organization can see and use the built-in **Report** button in Outlook on the web or the Microsoft Report Message or Report Phishing add-ins in virtually all Outlook platforms to report messages.
        - You can configure user reported messages to go to the reporting mailbox, to Microsoft, or both.
        - You decide whether users receive **Before a message is reported** and **After a message is reported** pop-ups in Outlook.
