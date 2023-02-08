@@ -100,7 +100,7 @@ You can select from the following policy templates to quickly get started with i
 - [Security policy violations by risky users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-risky-users-preview)
 - [Security policy violations by priority users (preview)](insider-risk-management-policy-templates.md#security-policy-violations-by-priority-users-preview)
 - [Patient data misuse (preview)](insider-risk-management-policy-templates.md#patient-data-misuse-preview)
-- [Risky browser usage (preview)](insider-risk-management-policy-templates#risky-browser-usage-preview)
+- [Risky browser usage (preview)](insider-risk-management-policy-templates.md#risky-browser-usage-preview)
 
 ![Insider risk management policy dashboard.](../media/insider-risk-policy-dashboard.png)
 
