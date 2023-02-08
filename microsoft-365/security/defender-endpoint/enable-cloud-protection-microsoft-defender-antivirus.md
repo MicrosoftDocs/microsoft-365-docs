@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/20/2022
+ms.date: 02/08/2023
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -36,20 +36,21 @@ search.appverid: met150
 
 You can turn Microsoft Defender Antivirus cloud protection on or off by using one of several methods:
 
-- Microsoft Endpoint Manager, which includes Microsoft Intune and Configuration Manager
+- Microsoft Intune  
+- Microsoft Endpoint Configuration Manager
 - Group Policy
 - PowerShell cmdlets
 
-You can also turn cloud protection on or off on individual endpoints using the Windows Security app. 
+You can also turn cloud protection on or off on individual endpoints by using the Windows Security app. 
 
 For more information about the specific network-connectivity requirements to ensure your endpoints can connect to the cloud protection service, see [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
 
 > [!NOTE]
 > In Windows 10 and Windows 11, there is no difference between the **Basic** and **Advanced** reporting options described in this article. This is a legacy distinction and choosing either setting will result in the same level of cloud protection. There is no difference in the type or amount of information that is shared. For more information on what we collect, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839).
 
-## Use Microsoft Endpoint Manager to turn on cloud protection
+## Use Microsoft Intune to turn on cloud protection
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
+1. Go to the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) and sign in.
 
 2. Choose **Endpoint security** \> **Antivirus**.
 
