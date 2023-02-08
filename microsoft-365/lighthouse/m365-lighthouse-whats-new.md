@@ -28,6 +28,18 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 > [!NOTE]
 > Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
 
+## January 2023
+
+### Automation of Intune device enrollment through the default baseline
+
+The default baseline now provides a mobile device management (MDM) and mobile application management (MAM) deployment sub-task to automate the enrollment of Windows devices in Intune. Previously, this was a manual task that provided instructions only.  
+
+For any tenant, go to the **Deployment plan** page, expand the **Set up device enrollment** task, select the **Configure device enrollment** sub-task to open the task details pane, and then select **Deploy**. 
+
+### User search improvements
+
+The **Account management** > **Search users** page now shows search results as soon as a matching user is found within any tenant. The prior version of the page showed search results only after searching across all tenants. 
+
 ## November 2022
 
 ### Changes to Microsoft Defender Firewall and Microsoft Defender Antivirus deployment tasks
@@ -53,12 +65,6 @@ You can now manage all shared mailboxes and meeting rooms across your managed te
 ### File exclusion support in the antivirus policy
 
 You can now exclude certain non-malicious threats from showing up for tenants on the Threat management page in Microsoft 365 Lighthouse. Go to the tenant's deployment plan, select **Configure a Microsoft Defender Antivirus baseline policy**, and then specify the file, folder, or file-type exclusions.
-
-### Insights from Endpoint analytics
-
-We've added insights from Endpoint analytics in Microsoft Endpoint Manager to Microsoft 365 Lighthouse to help you proactively take measures to improve the health of user devices and apps within managed tenants. The insights from Endpoint analytics inform a deployment sub-task called **Enable Device Health Monitoring** within the default baseline under the **Set up device enrollment** task. Once the new sub-task is enabled and the deployment task is deployed, select **Devices** > **Device health** in the left navigation pane in Microsoft 365 Lighthouse to see the Endpoint analytics insights.
-
-For more information, see [What is Endpoint analytics?](/mem/analytics/overview)
 
 ### Deployment status
 

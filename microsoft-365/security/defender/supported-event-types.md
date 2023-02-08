@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 09/09/2021
 ---
 
 # Supported Microsoft 365 Defender streaming event types in event streaming API

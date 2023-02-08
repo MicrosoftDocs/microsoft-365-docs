@@ -249,9 +249,9 @@ Complete the following steps to copy an existing policy:
 3. On the policy details page, select Copy.
 4. In the policy wizard, name the new policy and update the policy configuration as needed.
 
-## Immediately start scoring security-related user activity
+## Immediately start scoring user activity
 
-There may be scenarios where you need to immediately start assigning risk scores to users with insider risk policies outside of the insider risk management triggering event workflow. Use **Start scoring activity for users** on the **Policies** tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to immediately start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match). You can also add a reason for adding the user to the policy, which will appear on the users' activity timeline. Users manually added to policies are displayed in the **Users** dashboard and alerts are created if activity meets the policy alert thresholds. You can add up to 4,000 users per policy when adding users for immediate scoring.
+There may be scenarios where you need to start assigning risk scores to users with insider risk policies outside of the insider risk management triggering event workflow. Use **Start scoring activity for users** on the **Policies** tab to manually add a user (or users) to one or more insider risk policies for a specific amount of time, to  start assigning risk scores to their activity, and to bypass the requirement for a user to have a triggering indicator (like a DLP policy match or an Employment End Date from the HR Connector). You can also add a reason for adding the user to the policy, which will appear on the users' activity timeline. Users manually added to policies are displayed in the **Users** dashboard and alerts are created if the activity meets the policy alert thresholds. At any given time, you can have up to 4,000 users in scope that have been manually added using the **Start scoring activity for users** feature.
 
 Some scenarios where you may want to immediately start scoring user activities:
 

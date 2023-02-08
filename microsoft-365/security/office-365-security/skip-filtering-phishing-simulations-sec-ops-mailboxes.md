@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: how-to
 
@@ -18,6 +17,7 @@ ms.custom:
 description: Admins can learn how to use the advanced delivery policy in Exchange Online Protection (EOP) to identify messages that should not be filtered in specific supported scenarios (third-party phishing simulations and messages delivered to security operations (SecOps) mailboxes.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/20/2022
 ---
 
 # Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes
@@ -144,6 +144,8 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
    > You can specify up to 10 entries for each field.
    >
    > There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
+   >
+   > If your MX record does not point to Microsoft 365, the IP address in the `Authentication-results` header must match the IP address in the advanced delivery policy. If the IP addresses don't match, you might need to configure [Enhanced Filtering for Connectors]/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) in order for the correct IP address to be detected.
 
 4. When you're finished, click **Add**, and then click **Close**.
 

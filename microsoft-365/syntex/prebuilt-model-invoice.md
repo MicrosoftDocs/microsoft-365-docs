@@ -22,41 +22,20 @@ The prebuilt *invoices model* analyzes and extracts key information from sales i
 
 To use an invoices model, follow these steps:
 
-- Step 1: [Create an invoices model](#create-an-invoices-model)
-- Step 2: [Upload an example file to analyze](#upload-an-example-file-to-analyze)
-- Step 3: [Select extractors for your model](#select-extractors-for-your-model)
-- Step 4: [Apply the model](#apply-the-model)
+- Step 1: [Create an invoices model](#step-1-create-an-invoices-model)
+- Step 2: [Upload an example file to analyze](#step-2-upload-an-example-file-to-analyze)
+- Step 3: [Select extractors for your model](#step-3-select-extractors-for-your-model)
+- Step 4: [Apply the model](#step-4-apply-the-model)
 
-## Create an invoices model
+## Step 1: Create an invoices model
 
 Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to create a prebuilt invoices model. Then continue with the following steps to complete your model.
 
-
-<!---
-## Create an invoices model
-
-Follow these steps to create a trained invoices model.
-
-1. From the **Models** page, select **Create a model**.
-
-    ![Screenshot of the Models page showing the Create a model button.](../media/content-understanding/create-a-model-from-the-models-page.png) 
-
-
-2. On the **View options for classification and extraction** page, in the **Use a trained model** section, select **Invoices**.
-
-    ![Screenshot of the View options for classification and extraction page showing the custom models and trained models.](../media/content-understanding/view-options-for-classification-and-extraction-page.png) 
-
-3. To continue, follow these [instructions to continue to create an invoices model](create-syntex-model.md#invoices).
-
-    > [!NOTE]
-    > Sensitivity labels are not available for trained models at this time.
---->
-
-## Upload an example file to analyze
+## Step 2: Upload an example file to analyze
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
 
-    ![Screenshot of the new models page showing the Add a file to analyze section.](../media/content-understanding/prebuilt-add-file-to-analyze.png) 
+    ![Screenshot of the new models page showing the Add a file to analyze section.](../media/content-understanding/prebuilt-add-file-to-analyze-invoice.png) 
 
 2. On the **Files to analyze the model** page, select **Add** to find the file you want to use.
 
@@ -68,7 +47,7 @@ Follow these steps to create a trained invoices model.
 
 4. On the **Files to analyze the model** page, select **Next**.
 
-## Select extractors for your model
+## Step 3: Select extractors for your model
 
 On the extractor details page, you'll see the document area on the right and the **Extractors** panel on the left. The **Extractors** panel shows the list of extractors that have been identified in the document.
 
@@ -119,7 +98,7 @@ To rename an extractor from the **Extractors** panel:
 
 2. In the **Rename extractor** box, enter the new name of the extractor, and then select **Rename**.
 
-## Apply the model
+## Step 4: Apply the model
 
 - To save changes and return to the model home page, on the **Extractors** panel, select **Save and exit**.
 

@@ -19,6 +19,7 @@ description: Admins can learn about the header fields that are added to messages
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/02/2022
 ---
 
 # Anti-spam message headers in Microsoft 365
