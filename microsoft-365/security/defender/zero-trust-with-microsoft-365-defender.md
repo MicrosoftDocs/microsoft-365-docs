@@ -47,9 +47,9 @@ Microsoft 365 Defender helps you apply the principles of Zero Trust in the follo
 
 | Zero Trust principle | Met by |
 | --- | --- |
-| Verify explicitly |  |
+| Verify explicitly | Asset-centric detection and response reduces the attack surface and exposure to risk. |
 | Use least privileged access |  |
-| Assume breach |  |
+| Assume breach | Automated threat detection and response. |
 
 
 To add Microsoft 365 Defender to your Zero Trust strategy and architecture, go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components.
