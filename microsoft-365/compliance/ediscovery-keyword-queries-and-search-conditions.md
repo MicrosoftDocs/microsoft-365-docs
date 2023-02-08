@@ -253,7 +253,7 @@ Create a condition using common properties when searching mailboxes and sites in
 
 ### Conditions for mail properties
 
-Create a condition using mail properties when searching mailboxes or public folders. The following table lists the email properties that you can use for a condition. These properties are a subset of the email properties that were previously described. These descriptions are repeated for your convenience.
+Create a condition using mail properties when searching mailboxes or public folders in Exchange Online. The following table lists the email properties that you can use for a condition. These properties are a subset of the email properties that were previously described. These descriptions are repeated for your convenience.
 
 |Condition|Description|
 |---|---|
