@@ -60,6 +60,7 @@ For step-by-step instructions on how to create different eDiscovery searches, se
 - You can export items based on message type. For example, to export Skype conversations and chats in Microsoft Teams, use the syntax `kind:im`. To return only email messages, you would use `kind:email`. To return chats, meetings, and calls in Microsoft Teams, use `kind:microsoftteams`.
 - When searching sites, you have to add the trailing `/` to the end of the URL when using the `path` property to return only items in a specified site. If you don't include the trailing `/`, items from a site with a similar path name will also be returned. For example, if you use `path:sites/HelloWorld` then items from sites named `sites/HelloWorld_East` or `sites/HelloWorld_West` would also be returned. To return items only from the HelloWorld site, you have to use `path:sites/HelloWorld/`.
 - The **Query language-country/region** must be defined in your search query prior to collecting content.
+- When searching the **Sent** folders for emails, using the SMTP address for the sender isn't supported. Items in the **Sent** folder contain only display names.
 
 ## Finding content in Exchange Online
 

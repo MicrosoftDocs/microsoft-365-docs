@@ -21,7 +21,9 @@ search.appverid:
 
 # Document metadata fields in eDiscovery (Premium)
 
-The following table lists the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium). The table provides the following information:
+The following table lists the metadata fields for documents in a review set in a case in Microsoft Purview eDiscovery (Premium). 
+
+The table provides the following information:
 
 - **Field name** and **Display field name:** The name of the metadata field and the name of the field that's displayed when viewing the file metadata of a selected document in a review set. Some metadata fields aren't included when viewing the file metadata of a document. These fields are highlighted with an asterisk (*).
 - **Searchable field name:** The name of the property that you can search for when running a [review set query](ediscovery-review-set-search.md). A blank cell means that you can't search for the field in a review set query.
@@ -179,4 +181,4 @@ The following table lists the metadata fields for documents in a review set in a
 |||||
 
 > [!NOTE]
-> For more information about searchable properties when searching Office 365 content locations when you're collecting data for an eDiscovery (Premium) case, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
+> For more information about searchable properties when searching Microsoft 365 content locations when you're collecting data for an eDiscovery (Premium) case, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
