@@ -55,7 +55,7 @@ For more information about the specific network-connectivity requirements to ens
 
 3. In the **AV policies** section, either select an existing policy, or choose **+ Create Policy**. 
 
-   | To do this...  | Follow these steps  |
+   | Task  | Steps  |
    |---------|---------|
    | Create a new policy     | 1. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/>2. For **Profile**, select **Microsoft Defender Antivirus**.<br/>3. On the **Basics** page, specify a name and description for the policy, and then choose **Next**.<br/>4. In the **Defender** section, find **Allow Cloud Protection**, and set it to **Allowed**. Then choose **Next**. <br/>5. On the **Scope tags** step, if your organization is using [scope tags](/mem/intune/fundamentals/scope-tags), select the tags you want to use, and then choose **Next**.<br/>6. On the **Assignments** step, select the groups, users, or devices that you want to apply this policy to, and then choose **Next**.<br/>7. On the **Review + create** step, review the settings for your policy, and then choose **Create**.          |
    | Edit an existing policy     | 1. Select the policy that you want to edit.<br/>2. Under **Configuration settings**, choose **Edit**.<br/>3. In the **Defender** section, find **Allow Cloud Protection**, and set it to **Allowed**.<br/>4. Select **Review + save**.        |
