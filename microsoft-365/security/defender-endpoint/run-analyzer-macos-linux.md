@@ -94,7 +94,7 @@ When using a terminal, unzip the file using one of the following commands based 
    unzip -q SupportToolmacOS-armBinary.zip
    ```
 
-   4. Run the tool as <i>root</i> to generate diagnostic package:
+7. Run the tool as <i>root</i> to generate diagnostic package:
 
    ```
    sudo ./MDESupportTool -d
