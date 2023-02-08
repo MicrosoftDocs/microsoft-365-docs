@@ -52,7 +52,7 @@ Watch this short video to learn how to set up the streaming API to ship event in
 
 ## Related topics
 
-- [Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview)
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Overview of Advanced Hunting](../defender/advanced-hunting-overview.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
