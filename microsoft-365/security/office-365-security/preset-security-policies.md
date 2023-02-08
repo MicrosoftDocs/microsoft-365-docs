@@ -114,6 +114,10 @@ You can't modify the policy settings in the protection profiles. The **Standard*
 >
 > All recipients automatically receive impersonation protection from [mailbox intelligence](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in preset security policies.
 
+### Quarantine policies in preset security policies
+
+zzz Quarantine policies control what users are able to do to quarantined messages based on why the message was quarantined. Quarantine policies also control whether recipients are notified about their quarantine messages (quarantine notifications). For more information, see [Quarantine policies](quarantine-policies.md) and [Use quarantine notifications to release and report quarantined messages](quarantine-quarantine-notifications.md).
+
 ### Order of precedence for preset security policies and other policies
 
 When multiple policies are applied to a user, the following order is applied from highest priority to lowest priority:

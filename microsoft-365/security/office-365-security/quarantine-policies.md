@@ -27,13 +27,13 @@ ms.date: 08/03/2021
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Quarantine policies (formerly known as _quarantine tags_) in Exchange Online Protection (EOP) and Microsoft Defender for Office 365 allow admins to control what users are able to do to quarantined messages based on why the message was quarantined. This feature is available in all Microsoft 365 organizations with Exchange Online mailboxes.
+Quarantine policies (formerly known as _quarantine tags_) in Exchange Online Protection (EOP) and Microsoft Defender for Office 365 allow admins to control what users are able to do to quarantined messages based on why the message was quarantined. Quarantine policies are available in all Microsoft 365 organizations with Exchange Online mailboxes.
 
 Traditionally, users have been allowed or denied levels of interactivity for quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined by anti-spam filtering as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
 
-For [supported protection features](#step-2-assign-a-quarantine-policy-to-supported-features), quarantine policies specify what users are allowed to do to their own messages (messages where they're a recipient) in quarantine and in _quarantine notifications_. [Quarantine notifications](quarantine-quarantine-notifications.md) are the replacement for end-user spam notifications. These notifications are now controlled by quarantine policies, and contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts).
+For [supported protection features](#step-2-assign-a-quarantine-policy-to-supported-features), quarantine policies specify what users are allowed to do to their own messages in quarantine (messages where they're a recipient) and in _quarantine notifications_. [Quarantine notifications](quarantine-quarantine-notifications.md) are the replacement for end-user spam notifications. These notifications are now controlled by quarantine policies, and contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts).
 
-Default quarantine policies that enforce the historical user capabilities are automatically assigned to actions in the supported protection features that quarantine messages. Or, you can create custom quarantine policies and assign them to the supported protection features to allow or prevent users from performing specific actions on those types of quarantined messages.
+Default quarantine policies that enforce historical user capabilities are automatically assigned to actions in the supported protection features that quarantine messages. Or, you can create custom quarantine policies and assign them to the supported protection features to allow or prevent users from performing specific actions on those types of quarantined messages.
 
 The individual quarantine policy permissions are combined into the following preset permission groups:
 
@@ -60,6 +60,11 @@ The default quarantine policies, their associated permission groups, and whether
 |AdminOnlyAccessPolicy|No access|No|
 |DefaultFullAccessPolicy|Full access|No|
 |NotificationEnabledPolicy<sup>\*</sup>|Full access|Yes|
+|DefaultFullAccessWithNotificationPolicy<sup>\*\*</sup>|Full access|Yes|
+
+<sup>\*</sup>See [the next section](#full-access-permissions-and-quarantine-notifications) for more information about this policy.
+
+<sup>\*\*</sup>This policy is used in [preset security policies](preset-security-policies.md).
 
 If you don't like the default permissions in the preset permission groups, or if you want to enable quarantine notifications, create and use custom quarantine policies. For more information about what each permission does, see the [Quarantine policy permission details](#quarantine-policy-permission-details) section later in this article.
 
@@ -72,16 +77,19 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 ## Full access permissions and quarantine notifications
 
-<sup>\*</sup> The quarantine policy named NotificationEnabledPolicy is not present in all environments. You'll have the NotificationEnabledPolicy quarantine policy if your organization meets both of the following requirements:
+The built-in quarantine policy named NotificationEnabledPolicy is not available in all environments. You'll have the NotificationEnabledPolicy quarantine policy if your organization meets both of the following requirements:
 
 - Your organization existed before the quarantine policy feature was turned on (late July/early August 2021).
-- You had one or more [anti-spam policies](anti-spam-policies-configure.md) (the default anti-spam policy or custom anti-spam policies) where the **Enable end-user spam notifications** setting was turned on.
+- The **Enable end-user spam notifications** setting was turned on in one or more [anti-spam policies](anti-spam-policies-configure.md) (in the default anti-spam policy or in custom anti-spam policies).
 
-As described earlier, quarantine notifications in quarantine policies replace end-user spam notifications that you used to turn on or turn off in anti-spam policies. The built-in quarantine policy named DefaultFullAccessPolicy duplicates the historical _permissions_ for quarantined messages, but _quarantine notifications_ are not turned on in the quarantine policy. And, because you can't modify the built-in policy, you can't turn on quarantine notifications in DefaultFullAccessPolicy.
+As described earlier, quarantine notifications in quarantine policies replace end-user spam notifications that you previously turned on or turned off in anti-spam policies. The built-in quarantine policy named DefaultFullAccessPolicy duplicates the historical _permissions_ for quarantined messages, but _quarantine notifications_ are not turned on in the quarantine policy. And, because you can't modify the built-in policy, you can't turn on quarantine notifications in DefaultFullAccessPolicy.
 
 To provide the permissions of DefaultFullAccessPolicy but with quarantine notifications turned on, we created the policy named NotificationEnabledPolicy to use in place of DefaultFullAccessPolicy for those organizations that needed it (organizations where end-user spam notifications were turned on).
 
-For new organizations or older organizations that never had end-user spam notifications enabled in anti-spam policies, you won't have the quarantine policy named NotificationEnabledPolicy. The way for you to turn on quarantine notifications is to create and use custom quarantine policies where quarantine notifications are turned on.
+New organizations or older organization where enb-user spam notifications where never turned on in anti-spam polices don't have the quarantine policy named NotificationEnabledPolicy. To turn on quarantine notifications for quarantine polices that use **Full access** permissions in organizations that don't have the NotificationEnabledPolicy, you can use either of the following methods:
+
+- Create and use custom quarantine policies with **Full access** permissions where quarantine notifications are turned on.
+- Use the DefaultFullAccessWithNotificationPolicy.
 
 ## What do you need to know before you begin?
 
@@ -574,7 +582,7 @@ For detailed syntax and parameter information, see [Get-HostedContentFilterPolic
 
 ## Modify quarantine policies in the Microsoft 365 Defender portal
 
-You can't modify the built-in quarantine policies named AdminOnlyAccessPolicy or DefaultFullAccessPolicy. You can modify the built-in policy named NotificationEnabledPolicy ([if you have it](#full-access-permissions-and-quarantine-notifications)) and custom quarantine policies.
+You can't modify the built-in quarantine policies named AdminOnlyAccessPolicy, DefaultFullAccessPolicy, or DefaultFullAccessWithNotificationPolicy. You can modify the built-in policy named NotificationEnabledPolicy ([if you have it](#full-access-permissions-and-quarantine-notifications)) and custom quarantine policies.
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
@@ -604,11 +612,11 @@ For detailed syntax and parameter information, see [Set-QuarantinePolicy](/power
 
 **Notes**:
 
-- You can't remove the built-in quarantine policies named AdminOnlyAccessPolicy or DefaultFullAccessPolicy. You can remove the built-in policy named NotificationEnabledPolicy ([if you have it](#full-access-permissions-and-quarantine-notifications)) and custom quarantine policies.
+- You can't remove the built-in quarantine policies named AdminOnlyAccessPolicy, DefaultFullAccessPolicy, or DefaultFullAccessWithNotificationPolicy. You can remove the built-in policy named NotificationEnabledPolicy ([if you have it](#full-access-permissions-and-quarantine-notifications)) and custom quarantine policies.
 - Before you remove a quarantine policy, verify that it's not being used. For example, run the following command in PowerShell:
 
   ```powershell
-  Write-Output -InputObject "Anti-spam policies","----------------------";Get-HostedContentFilterPolicy | Format-List Name,*QuarantineTag; Write-Output -InputObject "Anti-phishing policies","----------------------";Get-AntiPhishPolicy | Format-List Name,*QuarantineTag; Write-Output -InputObject "Anti-malware policies","----------------------";Get-MalwareFilterPolicy | Format-List Name,QuarantineTag; Write-Output -InputObject "Safe Attachments policies","---------------------------";Get-SafeAttachmentPolicy | Format-List Name,QuarantineTag
+  Write-Output -InputObject "Anti-spam policies",("-"*25);Get-HostedContentFilterPolicy | Format-List Name,*QuarantineTag; Write-Output -InputObject "Anti-phishing policies",("-"*25);Get-AntiPhishPolicy | Format-List Name,*QuarantineTag; Write-Output -InputObject "Anti-malware policies",("-"*25);Get-MalwareFilterPolicy | Format-List Name,QuarantineTag; Write-Output -InputObject "Safe Attachments policies",("-"*25);Get-SafeAttachmentPolicy | Format-List Name,QuarantineTag
   ```
 
   If the quarantine policy is being used, [replace the assigned quarantine policy](#step-2-assign-a-quarantine-policy-to-supported-features) before you remove it.
