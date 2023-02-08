@@ -226,4 +226,4 @@ GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_136
 
 ## Related articles
 
-[Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview)
+[Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
