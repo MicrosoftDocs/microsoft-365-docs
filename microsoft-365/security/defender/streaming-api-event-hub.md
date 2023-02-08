@@ -133,7 +133,7 @@ For more information, see [Log Analytics workspace data export in Azure Monitor]
 
 ## Related topics
 
-- [Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview)
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft 365 Defender streaming API](streaming-api.md)
