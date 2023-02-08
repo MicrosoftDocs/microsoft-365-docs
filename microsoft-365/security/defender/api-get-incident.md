@@ -36,7 +36,11 @@ ms.date: 02/08/2023
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 > [!NOTE]
+<<<<<<< HEAD
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview). 
+=======
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview). For information about the new _get incident_ API using MS Graph security API, see [Get incident](/graph/api/security-incident-get).
+>>>>>>> 32b9465eb38b98dcc0eba431c6239d93787f3a27
 
 ## API description
 
@@ -96,4 +100,4 @@ GET https://api.security.microsoft.com/api/incidents/{id}
 ```
 ## Related topics
 
-[Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview)
+[Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)

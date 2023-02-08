@@ -184,4 +184,4 @@ For information on how to fetch alerts using REST API, see [Pull alerts using RE
 
 ## Related topics
 
-[Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview)
+[Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
