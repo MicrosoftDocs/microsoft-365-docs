@@ -56,7 +56,7 @@ When you view details about specific threats or devices, you'll see recommendati
 
 1. In the table, you can filter the alerts according to a number of criteria.
 
-## Manage threat detections in Microsoft InTune
+## Manage threat detections in Microsoft Intune
 
 You can use Microsoft Endpoint Manager to manage threat detections as well. First, all devices whether Windows, iOS or Android, must be [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods) (part of Microsoft Endpoint Manager).
 
