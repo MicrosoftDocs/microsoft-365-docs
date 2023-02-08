@@ -54,18 +54,14 @@ For more information about the specific network-connectivity requirements to ens
 
 2. Choose **Endpoint security** \> **Antivirus**.
 
-3. Select an antivirus profile. (If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
+3. In the **AV policies** section, either select an existing policy, or choose **+ Create Policy**. 
 
-4. Select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
+   | To do this...  | Follow these steps  |
+   |---------|---------|
+   | Create a new policy     | 1. For **Platform**, select **Windows 10, Windows 11, and Windows Server**. <br/>2. For **Profile**, select **Microsoft Defender Antivirus**.<br/>3. In the **Name** box, specify a name, such as *Cloud protection*. And in the **Description** box, specify a description, such as *Cloud protection policy*. Then choose **Next**.<br/>4. In the **Defender** section, find **Allow Cloud Protection**, and set it to **Allowed**. Then choose **Next**. <br/>5. On the **Scope tags** step, if your organization is using [scope tags](/mem/intune/fundamentals/scope-tags), select the tags you want to use, and then choose **Next**.<br/>6. On the **Assignments** step, select the groups, users, or devices that you want to apply this policy to, and then choose **Next**.<br/>7. On the **Review + create** step, review the settings for your policy, and then choose **Create**.          |
+   | Edit an existing policy     | 1. Select the policy that you want to edit.<br/>2. Under **Configuration settings**, choose **Edit**.<br/>3. In the **Defender** section, find **Allow Cloud Protection**, and set it to **Allowed**.<br/>4. Select **Review + save**.        |
+   | Learn more about Microsoft Defender Antivirus settings in Intune | See [Antivirus policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-antivirus-policy).|
 
-5. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
-   - **High**: Applies a strong level of detection.
-   - **High plus**: Uses the **High** level and applies more protection measures (may affect client performance).
-   - **Zero tolerance**: Blocks all unknown executables.
-
-6. Select **Review + save**, then choose **Save**.
-
-For more information about configuring Microsoft Endpoint Configuration Manager, see [How to create and deploy antimalware policies: Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service).
 
 ## Use Group Policy to turn on cloud protection
 
