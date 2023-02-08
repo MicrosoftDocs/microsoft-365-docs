@@ -44,7 +44,7 @@ To export documents from a review set:
 
 ## Export options
 
-Use the following options to configure the export. Not all options are allowed for some output options, most notably, export of text files and redacted PDFs aren't allowed when exporting to the PST format.
+Use the following options to configure the export. Not all options are allowed for some output options, most notably, the export of text files and redacted PDFs aren't allowed when exporting to the PST format.
 
 - **Export name**: Name of the export job. This will be used to name the ZIP files that will be downloaded.
 - **Description**: Free-text field for you to add a description.
@@ -117,4 +117,4 @@ If you select this export option, the exported content is organized in the follo
 
 ### Condensed directory structure exported to your Azure Storage Account
 
-This option uses the same general structure as the *Condensed directory structure*, however the contents aren't zipped and the data is saved to your Azure Storage account. This option is generally used when working with a third-party eDiscovery provider. For details about how to use this option, see [Export documents in a review set to an Azure Storage account](download-export-jobs.md).
+This option uses the same general structure as the *Condensed directory structure*, however the contents aren't zipped and the data is saved to your Azure Storage account. This option is used when working with a third-party eDiscovery provider. For details about how to use this option, see [Export documents in a review set to an Azure Storage account](download-export-jobs.md).
