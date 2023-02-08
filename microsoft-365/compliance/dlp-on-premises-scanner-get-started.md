@@ -101,7 +101,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 6.  Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft Purview compliance portal.
 
-7. Choose **Create policy** and create a test DLP policy. See [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md) if you need help creating a policy. Be sure to run it in test until you are comfortable with this feature. Use these parameters for your policy:
+7. Choose **Create policy** and create a test DLP policy. See [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) if you need help creating a policy. Be sure to run it in test until you are comfortable with this feature. Use these parameters for your policy:
     1. Scope the DLP on-premises scanner rule to specific locations if needed. If you scope **locations** to **All**, all files scanned by the scanner will be subject to the DLP rule matching and enforcement.
     1. When specifying the locations, you can use either exclusion or inclusion list. You can either define that the rule is relevant only to paths matching one of the patterns listed in inclusion list or, all files, except the files matching the pattern listed in inclusion list. No local paths are supported. Here are some examples of valid paths:
       - \\\server\share
@@ -149,6 +149,6 @@ Now that you have deployed a test policy for DLP on-premises locations and can v
 - [Learn about DLP on-premises scanner](dlp-on-premises-scanner-learn.md)
 - [Use DLP on-premises scanner](dlp-on-premises-scanner-use.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+- [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

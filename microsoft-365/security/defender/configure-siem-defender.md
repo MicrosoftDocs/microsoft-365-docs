@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
+ms.date: 10/25/2021
 ---
 
 # Integrate your SIEM tools with Microsoft 365 Defender

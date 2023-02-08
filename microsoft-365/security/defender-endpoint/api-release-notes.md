@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: api
 search.appverid: met150
+ms.date: 02/02/2021
 ---
 
 # Microsoft Defender for Endpoint API release notes

@@ -64,6 +64,8 @@
         href: mdb-view-edit-create-policies.md
       - name: Policy order
         href: mdb-policy-order.md
+      - name: Attack surface reduction capabilities
+        href: mdb-asr.md
       - name: Next-generation protection settings
         href: mdb-next-gen-configuration-settings.md
       - name: Firewall settings

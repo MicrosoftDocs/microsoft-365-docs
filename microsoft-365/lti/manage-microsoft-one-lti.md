@@ -9,7 +9,9 @@ ms.topic: article
 ms.service: microsoft-365-business
 f1.keywords:
 - CSH
-ms.collection: M365-modern-desktop
+ms.collection: 
+- M365-modern-desktop
+- tier2
 ms.localizationpriority: medium
 description: Learn how to conduct key Microsoft LMS Gateway management tasks including viewing, deleting, editing, and troubleshooting.
 ---

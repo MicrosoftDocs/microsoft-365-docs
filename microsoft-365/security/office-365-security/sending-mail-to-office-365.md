@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -20,6 +18,7 @@ ms.custom:
 description: Learn as a guest sender, how can you increase the ability to deliver email to users in Microsoft 365. Also learn how to report junk email & phishing attempts as a guest.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 09/13/2019
 ---
 
 # Sending mail to Microsoft 365
