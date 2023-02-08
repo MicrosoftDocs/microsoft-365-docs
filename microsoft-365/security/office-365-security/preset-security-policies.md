@@ -16,7 +16,7 @@ description: Admins can learn how to apply Standard and Strict policy settings a
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 07/21/2020
+ms.date: 02/10/2023
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365
@@ -105,7 +105,7 @@ You can apply EOP protections to different users than Defender for Office 365 pr
 
 ### Policy settings in preset security policies
 
-You can't modify the policy settings in the protection profiles. The **Standard**, **Strict**, and **Built-in protection** policy setting values are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+You can't modify the policy settings in the protection profiles. The **Standard**, **Strict**, and **Built-in protection** policy setting values, including the default [quarantine policies](quarantine-policies.md) that are used, are listed in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 > [!NOTE]
 > In Defender for Office 365 protections, you need to identify the senders for [user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) and the internal or external domains for [domain impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
@@ -113,10 +113,6 @@ You can't modify the policy settings in the protection profiles. The **Standard*
 > All domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) automatically receive domain impersonation protection in preset security policies.
 >
 > All recipients automatically receive impersonation protection from [mailbox intelligence](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in preset security policies.
-
-### Quarantine policies in preset security policies
-
-zzz Quarantine policies control what users are able to do to quarantined messages based on why the message was quarantined. Quarantine policies also control whether recipients are notified about their quarantine messages (quarantine notifications). For more information, see [Quarantine policies](quarantine-policies.md) and [Use quarantine notifications to release and report quarantined messages](quarantine-quarantine-notifications.md).
 
 ### Order of precedence for preset security policies and other policies
 
