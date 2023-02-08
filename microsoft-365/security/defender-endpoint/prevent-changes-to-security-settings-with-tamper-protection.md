@@ -9,11 +9,12 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 01/26/2023
+ms.date: 02/07/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
+ms.reviwer: joshbregman
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
@@ -95,7 +96,7 @@ The following table lists the various methods you can use to configure tamper pr
 |To perform this task...|See this content...|
 |---|---|
 |Manage tamper protection across your tenant <br/><br/> Use the Microsoft 365 Defender portal to turn tamper protection on or off|[Manage tamper protection for your organization using Microsoft 365 Defender](manage-tamper-protection-microsoft-365-defender.md)|
-|Fine-tune tamper protection settings in your organization <br/><br/> Use Microsoft Intune to turn tamper protection on or off. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Intune](manage-tamper-protection-microsoft-endpoint-manager.md)|
+|Fine-tune tamper protection settings in your organization <br/><br/> Use Microsoft Intune to turn tamper protection on or off on devices managed by Intune. You can configure tamper protection for some or all users with this method.|[Manage tamper protection for your organization using Intune](manage-tamper-protection-microsoft-endpoint-manager.md)|
 | Protect Microsoft Defender Antivirus exclusions | [What about exclusions?](#what-about-exclusions) <br/><br/>[How to determine whether the functionality to protect exclusions is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device) |
 |Turn tamper protection on (or off) for your organization by using Configuration Manager|[Manage tamper protection for your organization using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)|
 |Turn tamper protection on (or off) for an individual device (for home users or devices that aren't managed by a security team)|[Manage tamper protection on an individual device](manage-tamper-protection-individual-device.md)|
@@ -109,7 +110,7 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 
 - `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).)
 - Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. (See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
-- Tamper protection is deployed and managed by using Intune. (See [Manage tamper protection for your organization using Microsoft Intune](manage-tamper-protection-microsoft-endpoint-manager.md).)
+- Tamper protection is deployed and managed by using Intune. Devices are also managed by Intune. (See [Manage tamper protection for your organization using Microsoft Intune](manage-tamper-protection-microsoft-endpoint-manager.md).)
 - Devices are running Windows Defender platform `4.18.2111.*` or later. (See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).)
 - Functionality to protect exclusions is enabled on devices. (See [How to determine whether the functionality is enabled on a Windows device](#how-to-determine-whether-the-functionality-to-protect-exclusions-is-enabled-on-a-windows-device).)
 
