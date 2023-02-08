@@ -178,7 +178,7 @@ The following are the solution's categories:
 
 ## Recommended content
 
-- [Use the Microsoft Graph security API - Microsoft Graph  | Microsoft Learn](/graph/api/resources/security-api-overview)
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Connect apps to get visibility and control|Microsoft Docs](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
 - [Partner applications in Microsoft Defender for Endpoint|Microsoft Docs](partner-applications.md)
