@@ -18,9 +18,10 @@ ms.topic: overview
 ms.collection: 
 - m365-security
 - tier2
-ms.date:
 search.appverid: met150
+ms.date: 08/09/2022
 ---
+
 <!--v-jweston/jweston-1 is to resume authorship appx. April/May 2023.-->
 
 # Network protection for Linux
