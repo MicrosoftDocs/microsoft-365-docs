@@ -25,7 +25,7 @@ description: "Learn how to turn the pronouns feature on or off in the Microsoft 
 
 As a Microsoft 365 administrator, you can turn on a feature that lets all users in your organization add their pronouns on their profile cards in Microsoft 365. The pronouns feature is off by default and requires configuration to turn on. To learn more about the pronouns feature, see [Pronouns on your profile in Microsoft 365](https://support.microsoft.com/topic/232c3bfb-a947-4310-86db-b22d63663d85), [Frequently asked questions about pronouns in Microsoft 365](https://support.microsoft.com/office/frequently-asked-questions-about-pronouns-in-microsoft-365-48135f04-e822-49b5-ba6b-e9bae2ce503a), and [Pronouns best practices](https://support.microsoft.com/topic/ef1701ad-711d-4c6e-b664-64c3ee188d68).
 
-Pronouns are stored with other data in the user's Exchange mailbox. For more information, see [Content stored in Exchange Online mailboxes for eDiscovery - Microsoft Purview (compliance) | Microsoft Learn.](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-exo#how-can-i-determine-customer-data-location).
+Pronouns are stored with other data in the user's Exchange mailbox. For more information, see [Data Residency for Exchange Online](../../enterprise/m365-dr-workload-exo.md#how-can-i-determine-customer-data-location).
 
 We encourage admins to understand any applicable local laws, regulations, and cultural norms that might pose extra risk to employees should their pronouns be publicly displayed and take this into consideration when you decide whether to turn on this feature.
 
@@ -53,7 +53,7 @@ Use the following steps to turn the pronouns feature on or off in the Microsoft 
 4. Select **Save**.
 
 > [!NOTE]
-> You can also use MS Graph to turn the pronouns feature on or off for your organization. For detailed steps, see [Manage pronouns settings for an organization using the Microsoft Graph API](https://review.learn.microsoft.com/en-us/graph/pronouns-configure-pronouns-availability?branch=pr-en-us-19632)
+> You can also use MS Graph to turn the pronouns feature on or off for your organization. For detailed steps, see [Manage pronouns settings for an organization using the Microsoft Graph API](https://review.learn.microsoft.com/graph/pronouns-configure-pronouns-availability?branch=pr-en-us-19632)
 
 ## Next steps
 
