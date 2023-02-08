@@ -40,6 +40,10 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## February 2023
 
+### Data lifecycle management and records management
+
+- **Rolling out in preview**: Auto-labeling retention policies now support [simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode), so you can test out your policy configuration and view results before deploying in production.
+
 ### Data Loss Prevention
 
 - **Support for administrative units in DLP (preview)** - [Policy Scoping](dlp-policy-reference.md#policy-scoping)
