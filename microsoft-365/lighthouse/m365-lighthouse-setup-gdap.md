@@ -50,9 +50,9 @@ When you set up GDAP for the first time, you must complete the following section
 
 To get started:
 
-1. In the left navigation pane in Lighthouse, select **Home.**
+1. In the left navigation pane in Lighthouse, select **Home**.
 
-2. On the **Set up GDAP for your organization** card, select **Begin setup.**
+2. On the **Set up GDAP for your organization** card, select **Begin setup**.
 
 3. Complete the following sections in order.
 

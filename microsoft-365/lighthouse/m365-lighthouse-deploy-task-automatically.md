@@ -40,7 +40,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## Deploy a task automatically
 
-1. From the left navigation pane in Lighthouse, select **Tenants.**
+1. From the left navigation pane in Lighthouse, select **Tenants**.
 
 2. From the list of tenants, select a tenant you want to view.
 
@@ -48,7 +48,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 4. Select a task from the list.
 
-5. In the task details pane, select **Deploy.**
+5. In the task details pane, select **Deploy**.
 
 6. In the **Review and edit deployment configuration** page, edit the default configuration as needed.
 
@@ -93,7 +93,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 10. Select **Next**.
 
-11. From the **Confirm and deploy** page, confirm the configuration and select **Confirm.**
+11. From the **Confirm and deploy** page, confirm the configuration and select **Confirm**.
 
 12. From the **Complete** confirmation page, select **Close**.
 

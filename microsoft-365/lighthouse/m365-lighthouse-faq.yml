@@ -76,7 +76,7 @@ sections:
         answer: |
           If you don't want to see certain tenants and their data in Lighthouse, you can inactivate those tenants. To inactivate a tenant, follow these steps:
           
-          1. Select **Tenants** in the left navigation pane to open the **Tenants** page.
+          1. In the left navigation pane in Lighthouse, select **Tenants** to open the **Tenants** page.
           1. Find the tenant that you want to inactivate, select the three dots (more actions) next to the tenant name, and then select **Inactivate tenant**.
           1. In the confirmation dialog, select **Confirm** to inactivate the tenant.
               > [!NOTE]
