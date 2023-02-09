@@ -76,19 +76,6 @@ Once you have added the organization, you need to update the organization's inbo
 1. Under **Target**, choose to allow all users.
 1. Select **Save** and close the **Outbound access settings** blade.
 
-## Turn off one-time passcode authentication
-
-Even after you've limited B2B collaboration to certain organizations, people can still share files and folders with people in other organizations - they just won't be given a guest account in your directory.
-
-If you wish to prevent sharing entirely with other organizations, you have to disable the one-time passcode feature in Azure AD. This will prevent people outside your organization from being sent a one-time passcode for authentication to shared files or folders.
-
-To disable the email one-time passcode feature
-1. Sign in to the [Azure portal](https://portal.azure.com/) as an Azure AD global administrator.
-1. In the navigation pane, select **Azure Active Directory**.
-1. Select **External Identities** > **All identity providers**.
-1. Select **Email one-time passcode**, and then under **Email one-time passcode for guests**, select **Disable email one-time passcode for guests** (or **No** if the feature was previously enabled, disabled, or opted into during preview).
-1. Select **Save**.
-
 ## Related topics
 
 [B2B direct connect overview](/azure/active-directory/external-identities/b2b-direct-connect-overview)
