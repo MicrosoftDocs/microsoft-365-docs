@@ -78,15 +78,15 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
-1. Under **Domains**, select the three dots next to the domain you want to verify, and then select **Manage DNS**.
+1. Under **Domains**, select **DNS** next to the domain you want to verify.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
 
-1. Under **Records**, select **ADD** (You might have to scroll down).
+1. Under **DNS Records**, select **ADD** on the top right corner.
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Select ADD.":::
 
-1. Choose **TXT** from the drop-down list.
+1. Select **TXT** option from the filter box.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Select TXT from the Type drop-down list.":::
 
