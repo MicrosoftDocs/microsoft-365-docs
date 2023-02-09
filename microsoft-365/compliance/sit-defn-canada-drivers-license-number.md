@@ -70,7 +70,7 @@ Newfoundland/Labrador
 Nova Scotia
 - five letters
 - optional hyphen
-- one digit any of 0, 1, 2 or 3 
+- one digit; any of 0, 1, 2 or 3 
 - one digit
 - one digit zero or one
 - six digits
@@ -81,9 +81,9 @@ Ontario
 - optional hyphen
 - five digits
 - one digit
-- one digit any of 0, 1, 5, or 6  
+- one digit; any of 0, 1, 5, or 6  
 - one digit
-- one digit any of 0, 1, 2 or 3 
+- one digit; any of 0, 1, 2 or 3 
 - one digit
 
 
