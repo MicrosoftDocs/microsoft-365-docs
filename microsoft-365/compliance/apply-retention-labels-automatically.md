@@ -106,7 +106,7 @@ To view the simulation results, select the policy from the **Label policies** pa
 
 Watch the following example (no audio) where an auto-labeling policy named **Personal Information** has been selected, and from the flyout pane, **View simulation** is selected. You see the simulation results loading, and then the flyout pane is collapsed to better see the simulation results of the policy with the available actions to turn on or restart the policy, or edit or delete it. The simulation results from the initial overview page are displayed in three sections, **Simulation status**, **Total matches**, and **Locations**. As the **Samples for review** tab is selected, you see a list of documents that haven't yet been filtered by location. The demonstration ends but at this stage, you could select one of the listed samples to view it in the preview pane, or first filter the results.
 
-![An example of simulation mode for an auto-apply retention label policy.](../media/simulation-mode-animated.gif)
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE58yhH]
 
 ## Before you begin
 
