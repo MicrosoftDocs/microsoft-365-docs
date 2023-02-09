@@ -16,6 +16,7 @@ description: Admins can learn how to use the Mail flow map in the Mail flow dash
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 09/13/2019
 ---
 
 # Mail flow map in the Security & Compliance Center
@@ -51,7 +52,7 @@ If you click **Filters** in a report view, you can specify a date range with **S
 
 To email the report for a specific date range to one or more recipients, click **Request download**.
 
-Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md).
+Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](/exchange/monitoring/mail-flow-insights/mfi-fix-possible-mail-loop-insight).
 
 ## Details table view for the Mail flow map
 
@@ -75,4 +76,4 @@ To go back to the reports view, click **View report**.
 
 ## See also
 
-For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other mail flow insights, see [Mail flow insights in Exchange Online](/exchange/monitoring/mail-flow-insights/mail-flow-insights).

@@ -55,7 +55,7 @@ To manage external storage, use removable storage access control instead of [dev
 - Applied at the device level: the same policy applies for any logged on user.
 - For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).
 
-**Supported platform** - macOS Catalina 10.15.4+ (with system extensions enabled)
+**Supported platform** - macOS 11 (Big Sur) or later
 
 
 ### Device installation
@@ -75,7 +75,7 @@ To manage external storage, use removable storage access control instead of [dev
 - Applied at the device level: the same policy applies for any logged on user
 - For macOS specific information, see [Device control for macOS](mac-device-control-overview.md).
 
-**Supported platform** - macOS Catalina 10.15.4+ (with system extensions enabled) or later
+**Supported platform** - macOS 11 (Big Sur) or later
 
 ### Endpoint DLP Removable storage
 

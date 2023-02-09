@@ -21,6 +21,7 @@ ms.custom:
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 01/11/2021
 ---
 
 # Get started using Attack simulation training in Defender for Office 365

@@ -37,9 +37,10 @@ If your organization has Defender for Office 365 Plan 2 (included in your subscr
 > [!NOTE]
 > Currently, you can only apply user tags to mailbox users.
 
-After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:
+After you apply system tags or custom tags to users, you can use those tags as filters in alerts, incidents, reports, and investigations:
 
 - [Alerts](alerts.md)
+- [Incidents](mdo-sec-ops-manage-incidents-and-alerts.md)
 - [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
 - [Threat Explorer and real-time detections](threat-explorer-about.md)
 - [Compromised user report](reports-email-security.md#compromised-users-report)
@@ -49,12 +50,12 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Attack simulation](attack-simulation-training-simulations.md#target-users)
 - [Campaign Views](campaigns.md)
 - [Admin submissions and user reported messages](submissions-admin.md)
-- [Quarantine](quarantine.md)
+- [Quarantine](quarantine-about.md)
 - For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
 
-This article explains how to configure user tags in the Microsoft 365 Defender portal. There are no cmdlets in Microsoft 365 Defender portal to manage user tags.
+This article explains how to configure user tags in the Microsoft 365 Defender portal. You can also manage the Priority Account tag can using the _VIP_ parameter on the [Set-User](/powershell/module/exchange/set-user) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). There are no cmdlets in Microsoft 365 Defender portal to manage custom user tags.
 
-To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](priority accounts-security-recommendations.md).
+To see how user tags are part of the strategy to help protect high-impact user accounts, see [Security recommendations for priority accounts in Microsoft 365](priority-accounts-security-recommendations.md).
 
 ## What do you need to know before you begin?
 

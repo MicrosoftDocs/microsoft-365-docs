@@ -7,7 +7,6 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
@@ -17,6 +16,7 @@ description: Learn how to remove blocked connectors in Microsoft 365 Defender.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 12/01/2022
 ---
 
 # Remove blocked connectors from the Restricted entities portal

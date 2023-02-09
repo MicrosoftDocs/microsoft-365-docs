@@ -6,10 +6,8 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer:
-ms.date:
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -20,6 +18,7 @@ ms.custom:
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 07/23/2020
 ---
 
 # Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365
@@ -37,7 +36,7 @@ The following types of policies are analyzed by the configuration analyzer:
 
 - **Exchange Online Protection (EOP) policies**: This includes Microsoft 365 organizations with Exchange Online mailboxes and standalone EOP organizations without Exchange Online mailboxes:
   - [Anti-spam policies](anti-spam-policies-configure.md).
-  - [Anti-malware policies](configure-anti-malware-policies.md).
+  - [Anti-malware policies](anti-malware-policies-configure.md).
   - [EOP anti-phishing policies](anti-phishing-policies-about.md#spoof-settings).
 
 - **Microsoft Defender for Office 365 policies**: This includes organizations with Microsoft 365 E5 or Defender for Office 365 add-on subscriptions:
@@ -46,7 +45,7 @@ The following types of policies are analyzed by the configuration analyzer:
     - [Impersonation settings](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Advanced phishing thresholds](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [Safe Links policies](safe-links-policies-configure.md).
-  - [Safe Attachments policies](set-up-safe-attachments-policies.md).
+  - [Safe Attachments policies](safe-attachments-policies-configure.md).
 
 The Standard and Strict policy setting values that are used as baselines are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 

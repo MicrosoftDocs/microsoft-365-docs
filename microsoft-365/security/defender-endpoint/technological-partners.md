@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 09/28/2022
 ---
 
 # Technological partners of Microsoft 365 Defender

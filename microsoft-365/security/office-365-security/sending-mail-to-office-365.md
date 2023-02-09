@@ -5,10 +5,8 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -20,13 +18,14 @@ ms.custom:
 description: Learn as a guest sender, how can you increase the ability to deliver email to users in Microsoft 365. Also learn how to report junk email & phishing attempts as a guest.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 09/13/2019
 ---
 
 # Sending mail to Microsoft 365
 
 These articles help external senders improve their reputation and increase their ability to deliver email to users at Microsoft 365. They also provide some information about how you can report junk email and phishing attempts even if you aren't a Microsoft 365 user yourself.
 
-If you're not a customer, but are trying to send mail to someone in who is, you're in the right place. If you're an admin and you need help with fighting spam, this isn't the right section for you. Instead, go to [anti-spam](anti-spam-protection-about.md) and [anti-malware](anti-malware-protection.md).
+If you're not a customer, but are trying to send mail to someone in who is, you're in the right place. If you're an admin and you need help with fighting spam, this isn't the right section for you. Instead, go to [anti-spam](anti-spam-protection-about.md) and [anti-malware](anti-malware-protection-about.md).
 
 |For information about...|See...|
 |---|---|

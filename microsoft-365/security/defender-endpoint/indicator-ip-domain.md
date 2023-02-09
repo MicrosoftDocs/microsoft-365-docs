@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Create indicators for IPs and URLs/domains
@@ -129,7 +130,7 @@ _Allow_ overrides _warn_ which overrides _block_: Allow > Warn > Block. Therefor
 
 ### Policy conflict handling follows the order below
 
-- MDCA creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
+- Defender for Cloud Apps creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
 1. If the IP, URL/Domain is allowed
 - If the IP, URL/Domain is not allowed
 - If the IP, URL/Domain is allowed

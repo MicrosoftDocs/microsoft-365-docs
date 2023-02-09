@@ -19,6 +19,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 ms.custom: api
+ms.date: 10/25/2021
 ---
 
 # Fetch Microsoft 365 Defender incidents 
