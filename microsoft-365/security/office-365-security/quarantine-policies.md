@@ -209,7 +209,7 @@ In _supported_ protection features that quarantine email messages, you can assig
 |&nbsp;&nbsp;&nbsp;Spam (_SpamAction_)|Yes (_SpamQuarantineTag_)|
 |&nbsp;&nbsp;&nbsp;High confidence spam (_HighConfidenceSpamAction_)|Yes (_HighConfidenceSpamQuarantineTag_)|
 |&nbsp;&nbsp;&nbsp;Phishing (_PhishSpamAction_)|Yes (_PhishQuarantineTag_)|
-|&nbsp;&nbsp;&nbsp;High confidence phishing (_HighConfidencePhishAction_)||Yes (_HighConfidencePhishQuarantineTag_) <br><br>|
+|&nbsp;&nbsp;&nbsp;High confidence phishing (_HighConfidencePhishAction_)|Yes (_HighConfidencePhishQuarantineTag_) <br><br>|
 |&nbsp;&nbsp;&nbsp;Bulk (_BulkSpamAction_)|Yes (_BulkQuarantineTag_)|
 |**Verdicts in [anti-phishing policies](anti-phishing-policies-about.md)**||
 |&nbsp;&nbsp;&nbsp;Spoof (_AuthenticationFailAction_)|Yes (_SpoofQuarantineTag_)|
