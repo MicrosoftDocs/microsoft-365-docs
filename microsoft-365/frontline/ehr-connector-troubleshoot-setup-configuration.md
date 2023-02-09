@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot Microsoft Teams EHR connector setup and configuration
-author: LanaChin
-ms.author: v-lanachin
-manager: samanro
+author: samanro
+ms.author: samanro
+manager: pamgreen
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
