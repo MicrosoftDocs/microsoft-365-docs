@@ -1,5 +1,4 @@
 # [Microsoft Defender for Endpoint](index.yml)
-
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Trial user guide: Microsoft Defender for Endpoint](defender-endpoint-trial-user-guide.md)

@@ -298,7 +298,7 @@
         - name: Configure Microsoft Defender for Endpoint on Android risk signals using app protection policy
           href: android-configure-mam.md
         - name: Configure Microsoft Defender for Endpoint on iOS features
-          href: (ios-configure-features.md)
+          href: ios-configure-features.md
 
       - name: Create an onboarding or offboarding notification rule
         href: onboarding-notification.md
