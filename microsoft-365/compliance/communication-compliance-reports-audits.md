@@ -110,7 +110,7 @@ To create a new message details report, complete the following steps:
 3. On the **Create message details report** pane, enter a name for the report in the **Report name** field.
 4. Under **Users in report**, select one of the following:
    1. **All users**. Select this option if you want to create a report with message information for all users in the policy. 
-   2. **Select users**. Select this option, and then start typing in the box below to create a report with messages sent by specific users. Separate user names with a comma and no space. 
+   2. **Select users**. Select this option, and then select specific users from the list to create a report with messages sent by those specific users. Only the users who have sent a message that has been flagged will be available in the list.
 5. In **Choose a date range**, select a *Start date* and *End date* for the report.
 6. Select **Create**.
 7. The report creation confirmation is displayed.
