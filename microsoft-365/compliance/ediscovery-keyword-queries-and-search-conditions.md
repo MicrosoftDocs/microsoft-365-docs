@@ -70,16 +70,21 @@ When an eDiscovery request is submitted, often there's only partial information 
 
 Email, chat, and meeting information are all stored in Exchange Online. Many communication properties are available for searching items included in Exchange Online. Some properties such as *From*,*Sent*, *Subject*, and *To* are unique to certain items and aren't relevant when searching for files or documents in SharePoint and OneDrive for Business. Including these types of properties when searching across workloads can sometimes lead to unexpected results.
 
-For example, to find content related to specific employees User 1 and User 2, associated with a project called 'Tradewinds', and during January 2020 through January 2022, you might use a query with the following properties:
+For example, to find content related to specific employees (*User 1* and *User 2*), associated with a project called *Tradewinds*, and during January 2020 through January 2022, you might use a query with the following properties:
 
 - Add User 1 and User 2's Exchange Online locations as data sources to the case
 - Select User 1 and User 2's Exchange Online locations as collection locations
 - For **Keyword**, use *Tradewinds*
-- For **Date Range**, use the *January 1, 2020* to *January 31, 2022* range.
+- For **Date Range**, use the *January 1, 2020* to *January 31, 2022* range
 
 ## Searchable email properties
 
-The following table lists email message properties that can be searched by using the eDiscovery search tools in the compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples. You can enter these  `property:value` pairs in the keywords box for an eDiscovery search.
+The following table lists the email message properties that can be searched by using the eDiscovery search tools in the compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet.
+
+> [!IMPORTANT]
+> While email messages may have other properties supported in other Microsoft 365 services, only the email properties listed in this table are supported in eDiscovery search tools. Attempting to include other email messages properties in searches isn't supported.
+
+The table includes an example of the _property:value_ syntax for each property and a description of the search results returned by the examples. You can enter these  `property:value` pairs in the keywords box for an eDiscovery search.
 
 > [!NOTE]
 > When searching email properties, it's not possible to search for message headers. Header information is not indexed for collections. Additionally, items in which the specified property is empty or blank are not searchable. For example, using the *property:value* pair of **subject:""** to search for email messages with an empty subject line will return zero results. This also applies when searching site and contact properties.
@@ -130,11 +135,16 @@ For example, to find content related to documents created by User 1, for a proje
 - Add additional SharePoint site locations related to the project as collection locations
 - For **FileName**, use *Financials*
 - For **Keyword**, use *Tradewinds*
-- For **Date Range**, use the *January 1, 2020* to *January 31, 2022* range.
+- For **Date Range**, use the *January 1, 2020* to *January 31, 2022* range
 
 ## Searchable site properties
 
-The following table lists the SharePoint and OneDrive for Business properties that can be searched by using the eDiscovery search tools in the Microsoft Purview compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet. The table includes an example of the  _property:value_ syntax for each property and a description of the search results returned by the examples.
+The following table lists the SharePoint and OneDrive for Business properties that can be searched by using the eDiscovery search tools in the Microsoft Purview compliance portal or by using the **New-ComplianceSearch** or the **Set-ComplianceSearch** cmdlet.
+
+> [!IMPORTANT]
+> While documents and files hosted on SharePoint and OneDrive for Business may have other properties supported in other Microsoft 365 services, only the document and file properties listed in this table are supported in eDiscovery search tools. Attempting to include other document or file properties in searches isn't supported.
+
+The table includes an example of the _property:value_ syntax for each property and a description of the search results returned by the examples.
 
 |Property|Property description|Example|Search results returned by the examples|
 |---|---|---|---|
@@ -212,7 +222,6 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 |+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`. <p> The query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the **AND** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
 |OR|keyword1 OR keyword2|Returns items that include one or more of the specified keywords or  `property:value` expressions. <sup>2</sup>|
 |NOT|keyword1 NOT keyword2 <p> NOT from:"Ann Beebe" <p> NOT kind:im|Excludes items specified by a keyword or a  `property:value` expression. In the second example excludes messages sent by Ann Beebe. The third example excludes any instant messaging conversations, such as Skype for Business conversations that are saved to the Conversation History mailbox folder. <sup>2</sup>|
-|-|keyword1 -keyword2|The same as the **NOT** operator. So this query returns items that contain  `keyword1` and would exclude items that contain  `keyword2`.|
 |NEAR|keyword1 NEAR(n) keyword2|Returns items with words that are near each other, where n equals the number of words apart. For example, `best NEAR(5) worst` returns any item where the word "worst" is within five words of "best". If no number is specified, the default distance is eight words. <sup>2</sup>|
 |:|property:value|The colon (:) in the  `property:value` syntax specifies that the value of the property being searched for contains the specified value. For example,  `recipients:garthf@contoso.com` returns any message sent to garthf@contoso.com.|
 |=|property=value|The same as the **:** operator.|
@@ -327,24 +336,6 @@ The following examples show the GUI-based version of a search query with conditi
 
 #### Example 1
 
-This example returns documents on SharePoint and OneDrive for Business sites that contain a credit card number and were last modified before January 1, 2021.
-
-**GUI**:
-
-![First example of search conditions.](../media/SearchConditions2.png)
-
-**Search query syntax**:
-
-`SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2021-01-01)`
-
-**Search query logic**:
-
-`SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2021-01-01)`
-
-Notice in the previous screenshot that the search UI reinforces that the keyword query and condition are connected by the **AND** operator.
-
-#### Example 2
-
 This example returns email items or documents that contain the keyword "report", that were sent or created before April 1, 2021, and that contain the word "northwind" in the subject field of email messages or in the title property of documents. The query excludes Web pages that meet the other search criteria.
 
 **GUI**:
@@ -359,7 +350,7 @@ This example returns email items or documents that contain the keyword "report",
 
 `report AND (date<2021-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
 
-#### Example 3
+#### Example 2
 
 This example returns email messages or calendar meetings that were sent between December 1, 2019 and November 30, 2020 and that contain words that start with "phone" or "smartphone".
 
