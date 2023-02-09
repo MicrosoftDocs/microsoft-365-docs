@@ -23,7 +23,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Users page in Microsoft 365 Lighthouse 
 
-Microsoft 365 Lighthouse lets you manage users across customer tenant accounts by selecting any of the links under **Users** in the left navigation pane. From the Users page, you can search for users and assess and act on the security state of your user accounts. You can also view insights into risky users and the status of multifactor authentication and self-service password reset.  
+Microsoft 365 Lighthouse lets you manage users across customer tenant accounts by selecting any of the links under **Users** in the left navigation pane. From the Users page, you can search for users and assess and act on the security state of your user accounts. You can also view insights into risky users and the status of multifactor authentication and self-service password reset (SSPR).  
   
 ## Account management page  
   
@@ -53,7 +53,7 @@ The Multifactor Authentication page provides detailed information on the status 
 
 ## Password reset page
 
-The Password reset page shows detailed information on the status of self-service password reset enablement across your tenants. It also provides insights into users who are enabled but still need to register before they can reset their password on their own.
+The Password reset page shows detailed information on the status of SSPR enablement across your tenants. It also provides insights into users who have SSPR enabled but still need to register before they can reset their password on their own.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-password-reset-tab.png" alt-text="Screenshot of the Password reset page.":::
 

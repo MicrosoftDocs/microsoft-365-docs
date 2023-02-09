@@ -27,7 +27,7 @@ Several options are available if you need help. First, check to see if there are
 
 - Review the current health of customer tenant services:
 
-    1. In the left navigation pane of Lighthouse, select **Service health**. 
+    1. In the left navigation pane in Lighthouse, select **Service health**. 
     2. View detailed information about current and past issues.
 
 - Review the current health of the Lighthouse tenant services:
