@@ -24,6 +24,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 02/17/2021
 ---
 
 # Turn on Microsoft 365 Defender

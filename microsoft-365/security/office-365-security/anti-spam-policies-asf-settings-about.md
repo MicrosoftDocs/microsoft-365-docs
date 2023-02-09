@@ -18,6 +18,7 @@ ms.custom:
 description: Admins can learn about the Advanced Spam Filter (ASF) settings that are available in anti-spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/01/2022
 ---
 
 # Advanced Spam Filter (ASF) settings in EOP

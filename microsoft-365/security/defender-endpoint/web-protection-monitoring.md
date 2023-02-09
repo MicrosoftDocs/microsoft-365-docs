@@ -17,6 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Monitor web browsing security

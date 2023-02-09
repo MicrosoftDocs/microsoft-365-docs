@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 10/11/2022
 ---
 
 # Advanced deployment guidance for Microsoft Defender for Endpoint on Linux

@@ -175,7 +175,7 @@ For example, you can create and apply a retention label named "Review later" wit
 
 You can specify a retention label as a condition in a Microsoft Purview Data Loss Prevention (DLP) policy for documents in SharePoint. For example, configure a DLP policy to prevent documents from being shared outside the organization if they have a specified retention label applied to it.
 
-For more information, see [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+For more information, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md#create-and-deploy-data-loss-prevention-policies).
 
 #### Retention labels and policies that apply them
 
@@ -618,7 +618,7 @@ If you currently use these older features, they will continue to work side by si
 
 - [Information management policies](intro-to-info-mgmt-policies.md) (deletion only)
 
-If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy is in effect.
+If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy or retention label policy is in effect.
 
 ## Related information
 

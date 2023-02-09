@@ -19,6 +19,7 @@ ms.custom:
 description: Admin can learn how to configure support for anonymous inbound email from IPv6 sources in Exchange Online and Exchange Online Protection.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/02/2022
 ---
 
 # Add support for anonymous inbound email over IPv6 in Microsoft 365
