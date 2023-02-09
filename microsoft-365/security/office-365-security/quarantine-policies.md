@@ -217,7 +217,7 @@ In _supported_ protection features that quarantine email messages, you can assig
 |&nbsp;&nbsp;&nbsp;Domain impersonation (_TargetedDomainProtectionAction_)|Yes (_TargetedDomainQuarantineTag_)|
 |&nbsp;&nbsp;&nbsp;Mailbox intelligence impersonation (_MailboxIntelligenceProtectionAction_)|Yes (_MailboxIntelligenceQuarantineTag_)|
 |**[Anti-malware policies](anti-malware-policies-configure.md)**|Yes ( _QuarantineTag_)|
-|**[Safe Attachments protection](safe-attachments-about.md)**|
+|**[Safe Attachments protection](safe-attachments-about.md)**||
 |&nbsp;&nbsp;&nbsp;Email messages with attachments that are quarantined as malware by Safe Attachments policies (_Enable_ and _Action_)|Yes (_QuarantineTag_)|
 |&nbsp;&nbsp;&nbsp;Files that are quarantined as malware by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)|No|
 |**[Exchange mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: 'Deliver the message to the hosted quarantine' (_Quarantine_)**|No|
