@@ -11,7 +11,7 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: MET150
-mscollection:
+ms.collection:
 - tier3
 - purview-compliance
 ms.custom:
@@ -57,7 +57,7 @@ When you sign up for either a free trial, or a subscription, you must enable Azu
 
 The Service Trust Portal features and content are accessible from the main menu. The following sections describe each item in the main menu.
 
-![Service Trust Portal - main menu](../media/stp-menu.png)
+:::image type="content" alt-text="Screenshot of the Service Trust Portal - main menu." source="../media/stp-menu.png":::
 
 ### Service Trust Portal
 

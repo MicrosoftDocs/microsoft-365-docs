@@ -43,7 +43,7 @@ The account you use must be one of the following:
 - Compliance administrator
 - Exchange Online administrator
 
-To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
+To learn more about DLP permissions, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 EDM-based classification is included in these subscriptions:
 

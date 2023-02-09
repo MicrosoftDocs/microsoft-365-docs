@@ -20,6 +20,7 @@ ms.collection:
 - tier3
 ms.topic: how-to
 search.appverid: met150
+ms.date: 07/14/2022
 ---
 
 # Deploy and configure the report message add-in to users
