@@ -19,6 +19,7 @@ ms.collection:
   - tier1 
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 07/26/2022
 ---
 
 # Start using Microsoft Defender Experts for Hunting

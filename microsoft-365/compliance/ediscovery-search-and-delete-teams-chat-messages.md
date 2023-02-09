@@ -124,10 +124,6 @@ For information about using Graph Explorer, see [Use Graph Explorer to try Micro
 
 1. In Graph Explorer, run the following GET request to retrieve the ID for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases('ediscoverySearchID')/searches` in the address bar of the request query, where *ediscoverySearchID* is the ID that you obtained in the previous procedure. Be sure to surround the ediscoverySearchID with parentheses and single quotation marks.
 
-   ![GET request for collection Id.](..\media\ediscovery-GraphGetRequestForCollectionId.png)
-
-   This request returns information about all collections in the case on the **Response preview** tab.
-
 2. Scroll through the response to locate the collection that contains the items that you want to purge. Use the *displayName* property to identify the collection that you created in Step 3.
 
    ![Response with collection Id.](..\media\GraphResponseForCollectionId.png)
@@ -166,7 +162,9 @@ For more information on using PowerShell to purge chat messages, see [ediscovery
 
 After you run the POST request to purge chat messages, these messages are removed from the Teams client and replaced with an automatically generated stating that an admin has removed the message. For an example of this message, see the [End-user experience](#end-user-experience) section in this article.
 
-Purged chat messages are moved to the SubstrateHolds folder, which is a hidden mailbox folder. Purged chat messages are stored there for at least 1 day, and then are permanently deleted the next time the timer job runs (typically between 1-7 days). For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
+If you need to confirm a chat message has been removed and don't have access to the end-user message in Teams, re-run the search and verify if any matching messages are found. If there aren't any results for the message, the message has been removed.
+
+Purged chat messages are moved to the *SubstrateHolds* folder, which is a hidden mailbox folder. Purged chat messages are stored there for at least 1 day, and then are permanently deleted the next time the timer job runs (typically between 1-7 days). For more information, see [Learn about retention for Microsoft Teams](retention-policies-teams.md).
 
 > [!NOTE]
 > Because Microsoft Graph Explorer is not available in the US Government cloud (GCC, GCC High, and DOD), you must use PowerShell to accomplish these tasks.

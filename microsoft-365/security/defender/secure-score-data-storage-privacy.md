@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 11/17/2022
 ---
 
 # Microsoft Secure Score data storage and privacy

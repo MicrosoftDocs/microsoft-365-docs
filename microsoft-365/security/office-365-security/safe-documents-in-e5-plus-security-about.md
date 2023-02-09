@@ -4,7 +4,6 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: kshi
-ms.date:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -16,6 +15,7 @@ ms.collection:
 description: Learn about Safe Documents in Microsoft 365 A5 or E5 Security.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 12/05/2022
 ---
 
 # Safe Documents in Microsoft 365 A5 or E5 Security

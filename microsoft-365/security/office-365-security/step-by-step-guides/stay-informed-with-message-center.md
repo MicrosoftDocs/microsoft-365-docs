@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 06/06/2022
 ---
 
 # Set up a digest notification of changes to Microsoft Defender for Office 365 using the message center
