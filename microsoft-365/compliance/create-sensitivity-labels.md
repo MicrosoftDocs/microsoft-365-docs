@@ -231,6 +231,8 @@ In comparison, when you delete a label:
 
 - For containers, such as sites in SharePoint and Teams: The label is removed and any settings that were configured with that label are no longer enforced. This action typically takes between 48-72 hours for SharePoint sites, and can be quicker for Teams and Microsoft 365 Groups.
 
+- Be aware that without a GUID-to-name mapping available after you delete a label, deleted labels can display as GUIDs rather than label names in applications such as [activity explorer](data-classification-activity-explorer.md).
+
 As with all label changes, removing a sensitivity label from a label policy or deleting a sensitivity label takes time to replicate to all users and services.
 
 ## Next steps
