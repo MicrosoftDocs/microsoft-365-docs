@@ -86,7 +86,7 @@ As described earlier, quarantine notifications in quarantine policies replace en
 
 To provide the permissions of DefaultFullAccessPolicy but with quarantine notifications turned on, we created the policy named NotificationEnabledPolicy to use in place of DefaultFullAccessPolicy for those organizations that needed it (organizations where end-user spam notifications were turned on).
 
-New organizations or older organization where enb-user spam notifications where never turned on in anti-spam polices don't have the quarantine policy named NotificationEnabledPolicy. To turn on quarantine notifications for quarantine polices that use **Full access** permissions in organizations that don't have the NotificationEnabledPolicy, you can use either of the following methods:
+New organizations or older organization where end-user spam notifications where never turned on in anti-spam polices don't have the quarantine policy named NotificationEnabledPolicy. To turn on quarantine notifications for quarantine polices that use **Full access** permissions in organizations that don't have the NotificationEnabledPolicy, you can use either of the following methods:
 
 - Create and use custom quarantine policies with **Full access** permissions where quarantine notifications are turned on.
 - Use the DefaultFullAccessWithNotificationPolicy.
