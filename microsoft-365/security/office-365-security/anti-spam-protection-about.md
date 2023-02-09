@@ -20,7 +20,7 @@ ms.custom:
 description: Admins can learn about the anti-spam settings and filters that will help prevent spam in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/01/2022
+ms.date: 02/09/2023
 ---
 
 # Anti-spam protection in EOP
@@ -87,9 +87,9 @@ Here are some best practices that apply to either scenario:
 
 ### Prevent the delivery of spam to the Inbox
 
-Here are some Recommended steps that you can take to handle false Negatives: [How to handle malicious emails that are delivered to recipients (False Negatives), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md).
+For steps to help prevent false negatives, see [How to handle malicious emails that are delivered to recipients (False Negatives), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md).
 
-You can also take a look at below additional steps.
+You can also use the following suggestions to help prevent false negatives:
 
 - **Verify your organization settings**: Watch out for settings that allow messages to skip spam filtering (for example, if you add your own domain to the allowed domains list in anti-spam policies). For our recommended settings, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md) and [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
@@ -101,15 +101,13 @@ You can also take a look at below additional steps.
 
 ### Prevent good email from being identified as spam
 
-Here are some Recommended steps that you can take to handle false positives: [How to handle Legitimate emails getting blocked (False Positive), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md).
+For steps to help prevent false positives, see [How to handle Legitimate emails getting blocked (False Positive), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md).
 
-You can also take a look at below additional steps.
+You can also use the following suggestions to help prevent false positives:
 
 - **Verify the user's Outlook Junk Email Filter settings**:
-
-- **Verify the Outlook Junk Email Filter is disabled**: When the Outlook Junk Email Filter is set to the default value **No automatic filtering**, Outlook doesn't attempt to classify messages as spam.  When it's set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder, so you could get false positives. Note that Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook in November, 2016. The existing SmartScreen spam definitions were left in place, but their effectiveness will likely degrade over time.
-
- - **Verify the Outlook 'Safe Lists Only' setting is disabled**: When this setting is enabled, only messages from senders in the user's Safe Senders list or Safe Recipients list are delivered to the Inbox; email from everyone else is automatically moved to the Junk Email folder.
+  - **Verify the Outlook Junk Email Filter is disabled**: When the Outlook Junk Email Filter is set to the default value **No automatic filtering**, Outlook doesn't attempt to classify messages as spam.  When it's set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder, so you could get false positives. Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook in November 2016. The existing SmartScreen spam definitions were left in place, but their effectiveness is likely degraded.
+  - **Verify the Outlook 'Safe Lists Only' setting is disabled**: When this setting is enabled, only messages from senders in the user's Safe Senders list or Safe Recipients list are delivered to the Inbox; email from everyone else is automatically moved to the Junk Email folder.
 
   For more information about these settings, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
