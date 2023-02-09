@@ -50,12 +50,12 @@ Lighthouse helps MSPs secure and manage Microsoft 365 services and connected end
 - Using a default SMB security baseline that prescribes best practices targeted to small- and medium-sized business tenants.
 - Providing multi-tenant insights on device compliance for a clear view of how devices are being evaluated across all organizations, tools to compare policies, and the top settings that aren't being met. 
 - Simplifying common tasks like resetting a password.
-- Configuring multifactor authentication and self-service password reset, including tools to help drive adoption by users.
+- Configuring multifactor authentication and self-service password reset (SSPR), including tools to help drive adoption by users.
 - Understanding and protecting against risky sign-ins.
 - Managing threats on Windows 10 devices by providing details on threats detected by Microsoft 365 Defender and actions to take to resolve issues and keep devices up to date.
 - Providing insights into Microsoft 365 service incidents and advisories that impact the customer tenants they manage.
 
-## Watch: Microsoft 365 Lighthouse demonstration
+## Watch: Demonstration of Microsoft 365 Lighthouse
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5e61O]
 
