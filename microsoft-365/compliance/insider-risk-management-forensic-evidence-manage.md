@@ -188,3 +188,22 @@ The device health status gives you insights into potential issues with your devi
 | Encoder initialization failed.  | Error | Reinstall the client on this device. |
 
 Contact Microsoft Support if the recommended actions don't resolve issues with the client.
+
+## Storage and billing
+
+When forensic evidence is configured, you'll be prompted to sign up for 20 GB of free storage. This free storage can be applied to any users or type of policy that you want.
+
+To sign up for free storage:
+
+1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), go to **Insider risk management** > **Forensic evidence (preview)** > **Storage and billing**.
+2. Under **Storage and billing**, select **Claim 20 GB storage space**, and then follow the prompts.
+
+After you've signed up for free storage, you can analyze your storage needs to see how much storage you're using each month and to see how much free space you have left.
+
+SCREENSHOT WILL GO HERE
+
+When you have used up your free 20 GB of storage, you'll be prompted to purchase a data subscription. 
+
+After purchasing storage, when your tenant has used 80% or more of alloted storage, you'll be prompted to purchase more. 
+
+
