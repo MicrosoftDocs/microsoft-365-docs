@@ -40,7 +40,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## Deploy a task automatically
 
-1. From the left navigation pane in Lighthouse, select **Tenants**.
+1. In the left navigation pane in Lighthouse, select **Tenants**.
 
 2. From the list of tenants, select a tenant you want to view.
 
