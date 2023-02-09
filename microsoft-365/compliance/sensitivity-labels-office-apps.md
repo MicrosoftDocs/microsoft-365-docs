@@ -332,13 +332,23 @@ When the Outlook app doesn't support turning off mandatory labeling: If you sele
 
 This configuration is an extension to the **Items** scope, when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) in the Microsoft Purview compliance center. When you define the scope for the label, next to the **Items** check box, select **More options**.
 
-On the flyout pane for **Use the label for email or files only**, select or remove the options for **Emails** or **Files**.
+On the flyout pane for **Use the label for email or files only**, remove the options for **Emails** or **Files**, or reselect them to return to the default values.
 
 - To scope labels to just Word, Excel, and PowerPoint: Make sure the option for **Emails** is selected, and not the option for **Files**.  
 - To scope labels to just Outlook, make sure the option for **Emails** is selected, and not the option for **Files**.
 
-Make sure both options are selected if you don't want to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook. Both options might also be needed for the label to support other features:
-- [Teams meetings and chat](sensitivity-labels-meetings.md)
+Make sure both options are selected if you don't want to scope the labels to just Word, Excel, and PowerPoint, or to just Outlook. 
+
+Be aware that this configuration affects both client apps and services, manual labeling and automatic labeling. For example, both options are required for [Teams meetings and chat](sensitivity-labels-meetings.md).  Other examples:
+
+- Default labels:
+    - If the scope doesn't include email, a configured default label for email won't be applied.
+    - If the scope doesn't include files, a configured default label for email won't be applied and can't be selected as a default sensitivity label for a SharePoint document library.
+
+- Auto-labeling policies:
+    - If the scope doesn't include email, you can't select the label for an auto-labeling policy that includes the Exchange location.
+    - If the scope doesn't include files, you can't select the label for an auto-labeling policy that includes the SharePoint and OneDrive locations.
+
 - [Encryption that lets users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions): 
     - If the scope doesn't include email, you won't be able to select the encryption options of **Do Not Forward** or **Encrypt-Only**.
     - If the scope doesn't include files, you won't be able to select the encryption option **In Word, PowerPoint, and Excel, prompt users to specify permissions**.
