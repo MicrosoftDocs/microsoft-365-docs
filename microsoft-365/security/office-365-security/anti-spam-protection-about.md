@@ -87,7 +87,7 @@ Here are some best practices that apply to either scenario:
 
 ### Prevent the delivery of spam to the Inbox
 
-Here are some Recommended steps that you can take to handle false Negatives: [How to handle malicious emails that are delivered to recipients (False Negatives), using Microsoft Defender for Office 365](how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md).
+Here are some Recommended steps that you can take to handle false Negatives: [How to handle malicious emails that are delivered to recipients (False Negatives), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md).
 
 You can also take a look at below additional steps.
 
@@ -101,15 +101,15 @@ You can also take a look at below additional steps.
 
 ### Prevent good email from being identified as spam
 
-Here are some Recommended steps that you can take to handle false positives: [How to handle Legitimate emails getting blocked (False Positive), using Microsoft Defender for Office 365](how-to-handle-false-positives-in-microsoft-defender-for-office-365.md).
+Here are some Recommended steps that you can take to handle false positives: [How to handle Legitimate emails getting blocked (False Positive), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md).
 
 You can also take a look at below additional steps.
 
 - **Verify the user's Outlook Junk Email Filter settings**:
 
-  - **Verify the Outlook Junk Email Filter is disabled**: When the Outlook Junk Email Filter is set to the default value **No automatic filtering**, Outlook doesn't attempt to classify messages as spam.  When it's set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder, so you could get false positives. Note that Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook in November, 2016. The existing SmartScreen spam definitions were left in place, but their effectiveness will likely degrade over time.
+- **Verify the Outlook Junk Email Filter is disabled**: When the Outlook Junk Email Filter is set to the default value **No automatic filtering**, Outlook doesn't attempt to classify messages as spam.  When it's set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder, so you could get false positives. Note that Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook in November, 2016. The existing SmartScreen spam definitions were left in place, but their effectiveness will likely degrade over time.
 
-  - **Verify the Outlook 'Safe Lists Only' setting is disabled**: When this setting is enabled, only messages from senders in the user's Safe Senders list or Safe Recipients list are delivered to the Inbox; email from everyone else is automatically moved to the Junk Email folder.
+ - **Verify the Outlook 'Safe Lists Only' setting is disabled**: When this setting is enabled, only messages from senders in the user's Safe Senders list or Safe Recipients list are delivered to the Inbox; email from everyone else is automatically moved to the Junk Email folder.
 
   For more information about these settings, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
