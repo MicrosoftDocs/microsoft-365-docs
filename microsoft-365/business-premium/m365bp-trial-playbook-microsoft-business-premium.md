@@ -38,7 +38,7 @@ When you [start a trial or purchase Microsoft 365 Business Premium](get-microsof
 
 2. [Turn on Multi-Factor Authentication](m365bp-conditional-access.md) (MFA). You can use security defaults to get set up right away, or use Conditional Access policies to meet more stringent requirements.
 
-3. Use your [preset security policies](/microsoft-365/security/office-365-security/preset-security-policies.md). These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
+3. Use your [preset security policies](microsoft-365/security/office-365-security/preset-security-policies.md). These policies represent a baseline protection profile that's suitable for most users. Standard protection includes:
 
    - [Safe Links](../security/office-365-security/safe-links-about.md), [Safe Attachments](../security/office-365-security/safe-attachments-about.md) and [Anti-Phishing](../security/office-365-security/anti-phishing-protection-about.md) policies that are scoped to the entire tenant or the subset of users you may have chosen during the trial setup process. (Your trial subscription is for up to 25 users.)
 
