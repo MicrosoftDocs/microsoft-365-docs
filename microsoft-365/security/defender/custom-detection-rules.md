@@ -37,7 +37,7 @@ Custom detection rules are rules you can design and tweak using [advanced huntin
 ## Required permissions for managing custom detections
 
 To manage custom detections, you need to be assigned one of these roles:
-
+- **Security settings (manage)**—Users with this [Microsoft 365 Defender role](/microsoft-365/security/defender/manage-rbac) can manage security settings in the Microsoft 365 Defender portal.
 - **Security administrator**—Users with this [Azure Active Directory role](/azure/active-directory/roles/permissions-reference#security-administrator) can manage security settings in the Microsoft 365 Defender portal and other portals and services.
 
 - **Security operator**—Users with this [Azure Active Directory role](/azure/active-directory/roles/permissions-reference#security-operator) can manage alerts and have global read-only access to security-related features, including all information in the Microsoft 365 Defender portal. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender for Endpoint. If you have RBAC configured, you also need the **manage security settings** permission for Defender for Endpoint.
