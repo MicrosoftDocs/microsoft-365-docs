@@ -61,7 +61,7 @@ The following table lists activities captured within Lighthouse audit logs. The 
 | **assignTag** | Tenants | Apply a tag from a customer | Lighthouse |
 | **changeDeploymentStatus** or **assign** | Tenants | Update action plan status for deployment plan | Lighthouse |
 | **offboardTenant** | Tenants | Inactivate a customer | Lighthouse |
-| **resetTenantOnboardingStatus** | Tenants | Reactive a customer | Lighthouse |
+| **resetTenantOnboardingStatus** | Tenants | Reactivate a customer | Lighthouse |
 | **tenantTags** | Tenants | Create or delete a tag | Lighthouse |
 | **tenantCustomizedInformation** | Tenants | Create, update, or delete a customer website or contact information | Lighthouse |
 | **unassignTag** | Tenants | Remove a tag from a customer | Lighthouse |
@@ -82,6 +82,7 @@ The following table lists activities captured within Lighthouse audit logs. The 
 ## Next steps
 
 Use Microsoft Graph API to access more audit events, if needed. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
+
 
 ## Related content
 

@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Manage Microsoft Defender for Endpoint alerts
@@ -129,8 +130,9 @@ Whenever a change or comment is made to an alert, it is recorded in the **Commen
 
 Added comments instantly appear on the pane.
 
-## Related topics
+## Related articles
 
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Manage suppression rules](manage-suppression-rules.md)
 - [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
 - [Investigate Microsoft Defender for Endpoint alerts](investigate-alerts.md)

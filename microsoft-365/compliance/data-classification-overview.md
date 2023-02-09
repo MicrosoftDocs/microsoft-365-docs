@@ -70,16 +70,16 @@ Data classification will scan your sensitive content and labeled content before 
 
 #### Roles and Role Groups
 
-There are roles and role groups in preview that you can test out to fine tune your access controls.
+There are roles and role groups that you can use to fine tune your access controls.
 
-Here's a list of applicable roles that are in preview. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable roles. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of applicable role groups that are in preview. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
+Here's a list of applicable role groups. To learn more about them, see [Permissions in the Microsoft Purview compliance portal](microsoft-365-compliance-center-permissions.md).
 
 - Information Protection
 - Information Protection Admins
@@ -142,7 +142,7 @@ This card provides a quick summary of the most common actions that users are tak
 
 > [!NOTE]
 > If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on. To turn the audit logs on , see:
->- [Search the audit log in the compliance portal](search-the-audit-log-in-security-and-compliance.md)
+>- [Search the audit log in the compliance portal](audit-log-search.md)
 
 ## Sensitivity and retention labeled data by location
 

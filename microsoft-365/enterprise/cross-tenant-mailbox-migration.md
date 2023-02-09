@@ -71,49 +71,49 @@ Make sure that all the users in the source and target organization must be licen
 
    ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
-2. Click view under Manage Azure Active Directory.
+2. Click View under "Manage Azure Active Directory".
 
    ![Azure Active Directory Button](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
 
-3. On the left navigation bar, select App registrations.
+3. On the left navigation bar, select "App registrations".
 
-4. Select New registration
+4. Select "New registration"
 
    ![New Application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. On the Register an application page, under Supported account types, select Accounts in any organizational directory (Any Azure AD directory - Multitenant). Then, under Redirect URI (optional), select Web and enter <https://office.com>. Lastly, select Register.
+5. On the "Register an application page", under "Supported account types", select" Accounts in any organizational directory (Any Azure AD directory - Multitenant)". Then, under "Redirect URI (optional)", select Web and enter <https://office.com>. Lastly, select Register.
 
    ![Application Registration](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
 6. On the top-right corner of the page, you'll see a notification pop-up that states the app was successfully created.
 
-7. Go back to Home, Azure Active Directory and click on App registrations.
+7. Go back to Home, Azure Active Directory and click on "App registrations".
 
-8. Under Owned applications, find the app you created and click on it.
+8. Under "Owned applications", find the app you created and click on it.
 
-9. Under Essentials, you'll need to copy down the Application (client) ID as you'll need it later to create a URL for the target tenant.
+9. Under "Essentials", you'll need to copy down the "Application (client) ID" as you'll need it later to create a URL for the target tenant.
 
-10. Now, on the left navigation bar, click on API permissions to view permissions assigned to your app.
+10. Now, on the left navigation bar, click on "API permissions" to view permissions assigned to your app.
 
 11. By default, User. Read permissions are assigned to the app you created, but we don't require them for mailbox migrations, you can remove that permission.
 
     ![Application Permissions](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
 
-12. Now we need to add permission for mailbox migration, select Add a permission
+12. Now we need to add permission for mailbox migration, select "Add a permission"
 
-13. In the Request API permissions windows, select APIs my organization uses, search for Office 365 Exchange Online, and select it.
+13. In the "Request API permissions" window, select "APIs my organization uses", search for "Office 365 Exchange Online", and select it.
 
     ![Select API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
-14. Next, select Application permissions
+14. Next, select "Application permissions"
 
-15. Then, under Select permissions, expand Mailbox, check Mailbox.Migration, and, at the bottom on the screen, select Add permissions.
+15. Then, under "Select permissions", expand Mailbox, and check "Mailbox.Migration", and "Add permissions" at the bottom on the screen.
 
     ![Set API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
 
 16. Now select Certificates & secrets on the left navigation bar for your application.
 
-17. Under Client secrets, select new client secret.
+17. Under "Client secrets", select "New client secret".
 
     ![Client Secrets](../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png)
 
@@ -124,9 +124,9 @@ Make sure that all the users in the source and target organization must be licen
 
 19. Now that you've successfully created the migration application and secret, you'll need to consent to the application. To consent to the application, go back to the Azure Active Directory landing page, click on Enterprise applications in the left navigation, find your migration app you created, select it, and select Permissions on the left navigation.
 
-20. Click on the Grant admin consent for [your tenant] button.
+20. Click on the "Grant admin consent for [your tenant]" button.
 
-21. A new browser window will open and select Accept.
+21. A new browser window will open and select "Accept".
 
 22. You can go back to your portal window and select Refresh to confirm your acceptance.
 
@@ -200,7 +200,8 @@ Make sure that all the users in the source and target organization must be licen
    $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
    $appId="[application id of the mailbox migration app you consented to]"
    $scope="[name of the mail enabled security group that contains the list of users who are allowed to migrate]"
-   $orgrels=Get-OrganizationRelationship
+   New-DistributionGroup -Type Security -Name $scope
+      $orgrels=Get-OrganizationRelationship
    $existingOrgRel = $orgrels | ?{$_.DomainNames -like $targetTenantId}
    If ($null -ne $existingOrgRel)
    {
@@ -218,9 +219,10 @@ Make sure that all the users in the source and target organization must be licen
 ### How do I know this worked?
 
 You can verify cross-tenant mailbox migration configuration by running the [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
+Run the following cmdlet from target tenant:
 
 ```powershell
-Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" -TestMailbox "Primary SMTP of MailUser object in target tenant"
+Test-MigrationServerAvailability -EndPoint "[the name of your migration endpoint]" -TestMailbox "[Primary SMTP of MailUser object in target tenant]"
 ```
 
 ### Move mailboxes back to the original source
@@ -295,7 +297,7 @@ Ensure the following objects and attributes are set in the target organization.
 
    Note this will not work for tenants in hybrid.
 
-4. Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization. You must also apply a Cross Tenant User Data Migration licenses or you may see a transient error saying needs approval which will report a warning in the move report that a license is not applied to the target user.
+4. Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization. You must also apply a Cross Tenant User Data Migration license or you may see a transient error saying needs approval which will report a warning in the move report that a license is not applied to the target user.
 
    > [!NOTE]
    > When you apply a license on a Mailbox or MailUser object, all SMTP type proxyAddresses are scrubbed to ensure only verified domains are included in the Exchange EmailAddresses array.

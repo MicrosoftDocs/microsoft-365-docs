@@ -13,9 +13,11 @@ ms.localizationpriority: high
 ms.collection:
   - M365-collaboration
   - m365-frontline
+  - tier2
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Known issues: Team Shifts connector for UKG Dimensions

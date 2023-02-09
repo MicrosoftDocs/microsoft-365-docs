@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Microsoft Defender for Endpoint data storage and privacy
@@ -24,6 +25,7 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -61,11 +63,20 @@ In all scenarios, data is encrypted using 256-bit [AES encryption](https://en.wi
 
 ## Data storage location
 
-Defender for Endpoint operates in the Microsoft Azure datacenters in the European Union, the United Kingdom, or in the United States. Customer data collected by the service may be stored in: (a) the geo-location of the tenant as identified during provisioning or, (b) if Defender for Endpoint uses another Microsoft online service to process such data, the geolocation as defined by the data storage rules of that other online service.
+Defender for Endpoint operates in the Microsoft Azure datacenters in the European Union, the United Kingdom, or in the United States. Customer data collected by the service may be stored in: (a) the geo-location of the tenant as identified during provisioning or, (b) if Defender for Endpoint uses another Microsoft online service to process such data, the geolocation as defined by the data storage rules of that other online service. For more information, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations).
 
 Customer data in pseudonymized form may also be stored in the central storage and processing systems in the United States.
 
 Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside.
+
+
+
+## Data sharing for Microsoft Defender for Endpoint
+
+Microsoft Defender for Endpoint shares data, including customer data, among the following Microsoft products also licensed by the customer.
+
+- Microsoft Sentinel
+- Microsoft Tunnel for Mobile Application Management - Android 
 
 ## Is my data isolated from other customer data?
 
@@ -91,7 +102,7 @@ No. Customer data is isolated from other customers and is not shared. However, i
 
 ### At service onboarding
 
-By default, data is retained for 180 days; however, you can specify the data retention policy for your data. This determines how long Microsoft Defender for Endpoint will store your data. There's a flexibility of choosing in the range of one month to six months to meet your company's regulatory compliance needs.
+Data from Microsoft Defender for Endpoint is retained for 180 days, visible across the portal. However, in the advanced hunting investigation experience, it is accessible via a query for a period of 30 days. 
 
 ### At contract termination or expiration
 

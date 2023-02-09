@@ -18,6 +18,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
+ms.date: 10/25/2021
 ---
 
 # Integrate your SIEM tools with Microsoft 365 Defender
@@ -27,6 +28,9 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> [!NOTE]
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 ## Pull Microsoft 365 Defender incidents and streaming event data using security information and events management (SIEM) tools
 
@@ -106,3 +110,7 @@ For more information on the Splunk Add-on for Microsoft Cloud Services, see the 
 
 ### IBM QRadar
 >Use the new IBM QRadar Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products via Event Hubs or Azure Storage Account. For more information on supported event types, see [Supported event types](supported-event-types.md).
+
+## Related topics
+
+[Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)

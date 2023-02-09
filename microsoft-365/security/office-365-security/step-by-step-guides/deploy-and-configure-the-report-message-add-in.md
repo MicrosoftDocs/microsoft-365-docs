@@ -20,6 +20,7 @@ ms.collection:
 - tier3
 ms.topic: how-to
 search.appverid: met150
+ms.date: 07/14/2022
 ---
 
 # Deploy and configure the report message add-in to users
@@ -70,6 +71,6 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 
 ### Further reading
 
-Learn more about user reported message settings [User reported message settings - Office 365 | Microsoft Docs](../user-submission.md)
+Learn more about user reported message settings [User reported message settings - Office 365 | Microsoft Docs](../submissions-user-reported-messages-files-custom-mailbox.md)
 
-Enable the report message or report phishing add-in [Enable the Report Message or the Report Phishing add-ins - Office 365 | Microsoft Docs](../enable-the-report-message-add-in.md)
+Enable the report message or report phishing add-in [Enable the Microsoft Report Message or Report Phishing add-ins - Office 365 | Microsoft Docs](../submissions-users-report-message-add-in-configure.md)

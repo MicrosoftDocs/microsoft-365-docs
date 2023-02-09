@@ -14,9 +14,11 @@ ms.collection:
   - Teams_ITAdmin_FLW
   - m365-frontline
   - highpri
+  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Managers - Get your team started with Microsoft 365 for frontline workers

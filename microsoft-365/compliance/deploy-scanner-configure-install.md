@@ -63,10 +63,13 @@ Before you install the scanner, or upgrade it from an older general availability
 
 1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) with one of the following roles:
 
+    - **Global administrator**
     - **Compliance administrator**
     - **Compliance data administrator**
     - **Security administrator**
-    - **Global administrator**
+    - **Security operator**
+    - **Security reader**
+    - **Global reader**
 
     Then, navigate to the **Settings** pane.
 
@@ -283,7 +286,7 @@ Using a data loss prevention policy enables the scanner to detect potential data
 
 - **Enable DLP rules in your content scan job** to reduce the exposure of any files that match your DLP policies. When your DLP rules are enabled, the scanner may reduce file access to data owners only, or reduce exposure to network-wide groups, such as **Everyone**, **Authenticated Users**, or **Domain Users**.
 
-- **In the Microsoft Purview compliance portal**, determine whether you are just testing your DLP policy or whether you want your rules enforced and your file permissions changed according to those rules. For more information, see [Turn on a DLP policy](create-test-tune-dlp-policy.md#turn-on-a-dlp-policy).
+- **In the Microsoft Purview compliance portal**, determine whether you are just testing your DLP policy or whether you want your rules enforced and your file permissions changed according to those rules. For more information, see [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md)
 
 DLP policies are configured in the Microsoft Purview compliance portal. For more information about DLP licensing, see [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md).
 

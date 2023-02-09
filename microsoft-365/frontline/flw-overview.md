@@ -14,12 +14,12 @@ ms.collection:
   - highpri
   - m365solution-overview
   - m365solution-frontline
-  - highpri
+  - tier1
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-
+ms.date: 10/28/2022
 ---
 
 # Get started with Microsoft 365 for frontline workers

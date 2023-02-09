@@ -68,5 +68,5 @@ You can also set up automated testing of all or a subset of improvement actions.
 - [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates-extend.md)
 - [Create your own custom template](compliance-manager-templates-create.md)
 - [Modify an existing template to add or remove controls and actions](compliance-manager-templates-modify.md)
-- [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)
+- [Set up automated testing of improvement actions](compliance-manager-setup.md#testing-source-for-automated-testing)
 - [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

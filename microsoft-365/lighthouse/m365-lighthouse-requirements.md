@@ -27,13 +27,16 @@ Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers
 
 MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner to use Lighthouse.
 
-In addition, each MSP customer tenant must qualify for Lighthouse by meeting the following requirements:
+In addition, each MSP customer tenant must meet the following requirements to be actively monitored and managed in Lighthouse:
 
-- Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
-- Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license
+- Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant
+    > [!NOTE]
+    > Either Granular Delegated Admin Privileges (GDAP) or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. An indirect reseller relationship is no longer required to onboard to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups.
+- Must have at least one license of Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business
 - Must have no more than 2500 licensed users
+- Must reside in the same geographic region (Americas, European Union, or Asia plus Australia) as the partner organization that manages them
 
-\* Either Granular Delegated Admin Privileges (GDAP or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. An indirect reseller relationship is no longer required to onboard to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups.
+Customer tenants that don't meet these requirements will have access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health.
 
 ## Requirements for enabling device management
 

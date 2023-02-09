@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Create indicators based on certificates
@@ -72,9 +73,10 @@ It's important to understand the following requirements prior to creating indica
 
 4. Review the details in the Summary tab, then click **Save**.
 
-## Related topics
+## Related articles
 
 - [Create indicators](manage-indicators.md)
 - [Create indicators for files](indicator-file.md)
 - [Create indicators for IPs and URLs/domains](indicator-ip-domain.md)
 - [Manage indicators](indicator-manage.md)
+- [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)

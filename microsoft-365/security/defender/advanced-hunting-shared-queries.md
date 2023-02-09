@@ -20,6 +20,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Use shared queries in advanced hunting
@@ -29,7 +30,6 @@ ms.topic: conceptual
 
 **Applies to:**
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 [Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization. You can also save queries that are only accessible to you. You can also find community queries that are shared publicly on GitHub. These saved queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.
 

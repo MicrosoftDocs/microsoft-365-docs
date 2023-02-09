@@ -40,11 +40,15 @@ The detailed report shows you when and how much content containing credit card n
   
 To help protect the sensitive information, the default DLP policy:
   
-- Detects when content in Exchange, SharePoint, and OneDrive that contains at least one credit card number is shared with people outside your organization.
+- Detects when content in Exchange, SharePoint, and OneDrive that contains at least one of the following sensitive information is shared with people outside your organization.
+  - Credit Card Number
+  - Content containing source code (as matched by our Source Code trainable classifier)
+  - Content matching our U.S HIPAA Enhanced template
+  - Content containing Intellectual Property (as matched by our IP, Project Documents, M&A Files, Software Product developement files, IT Infra and Network Security Documents, and Strategic planning documents trainable classifiers)
     
 - Shows a policy tip and sends an email notification to users when they attempt to share this sensitive information with people outside your organization. For more information on these options, see [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md).
     
-- Generates detailed activity reports so that you can track things like who shared the content with people outside your organization and when they did it. You can use the [DLP reports](view-the-dlp-reports.md) and [audit log data](search-the-audit-log-in-security-and-compliance.md) (where **Activity** = **DLP**) to see this information.
+- Generates detailed activity reports so that you can track things like who shared the content with people outside your organization and when they did it. You can use the [DLP reports](view-the-dlp-reports.md) and [audit log data](audit-log-search.md) (where **Activity** = **DLP**) to see this information.
     
 To quickly refine the default DLP policy, you can choose to have it:
   
@@ -54,7 +58,7 @@ To quickly refine the default DLP policy, you can choose to have it:
     
 - Block access to the content containing the sensitive information, but allow the user to override and share or send if they need to.
     
-For more information on incident reports or restricting access, see [Data loss prevention reference](data-loss-prevention-policies.md).
+For more information on incident reports or restricting access, see [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference).
   
 If you want to change these options later, you can edit the default DLP policy at any time - see the next section.
   

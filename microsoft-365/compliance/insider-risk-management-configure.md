@@ -84,16 +84,16 @@ There are six role groups used to configure insider risk management features. To
 
 - Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
 - Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
-- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
-- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) role group
+- Microsoft Purview compliance portal [*Organization Management*](/microsoft-365/security/office-365-security/scc-permissions) role group
+- Microsoft Purview compliance portal [*Compliance Administrator*](/microsoft-365/security/office-365-security/scc-permissions) role group
 - *Insider Risk Management* role group
-- *Insider Risk Management Admin* role group
+- *Insider Risk Management Admins* role group
 
-Depending on how you wish to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the Insider Risk Management role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
+Depending on how you wish to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the *Insider Risk Management* role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
 
 You'll choose from these role group options and solution actions when working with insider risk management:
 
-|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admins**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|**Insider Risk Management Approvers**|
 |---|---|---|---|---|---|---|
 |Configure policies and settings|Yes|Yes|No|No|No|No|
 |Access analytics insights|Yes|Yes|Yes|No|No|No|
@@ -105,12 +105,13 @@ You'll choose from these role group options and solution actions when working wi
 |Access & view forensic evidence captures|Yes|No|No|Yes|No|No|
 |Create forensic evidence capturing request|Yes|Yes|No|No|No|No|
 |Approve forensic evidence capturing requests|Yes|No|No|No|No|Yes|
-|View device health report|Yes|Yes|No|No|No|No|
+|Configure Adaptive Protection|Yes|Yes|No|No|No|No|
+|View Adaptive Protection users tab|Yes|No|Yes|Yes|No|No|
 
 > [!IMPORTANT]
-> Make sure you always have at least one user in the built-in *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get into a 'zero administrator' scenario if specific users leave your organization.
+> Make sure you always have at least one user in the built-in *Insider Risk Management* or *Insider Risk Management Admins* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get into a 'zero administrator' scenario if specific users leave your organization.
 
-Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admin* role group:
+Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admins* role group:
 
 - Azure Active Directory *Global Administrator*
 - Azure Active Directory *Compliance Administrator*
@@ -125,16 +126,11 @@ Members of the following roles can assign users to insider risk management role 
 Complete the following steps to add users to this role group:
 
 1. Sign into [Microsoft Purview compliance portal](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
-
 2. Select **Permissions** in the left nav, and select **Roles** under the **Microsoft Purview solutions** list.
-
 3. Select the *Insider Risk Management* role group, then select **Edit**.
-
 4. Select the **Choose users** tab, then select the checkbox for all users you want to add to the role group.
-
-6. Choose **Select**, then **Next**.
-
-7. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
+5. Choose **Select**, then **Next**.
+6. Select **Save** to add the users to the role group. Select **Done** to complete the steps.
 
 ## Step 2 (required): Enable the Microsoft 365 audit log
 
@@ -142,13 +138,13 @@ Insider risk management uses Microsoft 365 audit logs for user insights and risk
 
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step.
 
-For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](audit-log-enable-disable.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](audit-log-search.md).
 
 ## Step 3 (optional): Enable and view insider risk analytics insights
 
 Insider risk management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help understand how analytics can help accelerate the identification of potential insider risks and help you to quickly take action.
 
-To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admin*, or Microsoft 365 *Global admin* role group.
+To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admins*, or Microsoft 365 *Global admin* role group.
 
 Complete the following steps to enable insider risk analytics:
 
@@ -190,7 +186,7 @@ See the [Set up a connector to import healthcare data](import-healthcare-data.md
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties for High severity level DLP alerts. When configuring an insider risk management policy with any of the **Data leaks** templates, you have the option to assign a specific DLP policy to the policy for these types of alerts.
 
-Data loss policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#data-leaks).
+Data loss policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policy-templates.md#data-leaks).
 
 > [!IMPORTANT]
 > Make sure you've completed the following:
@@ -203,18 +199,20 @@ A DLP policy is optional when using the following policy templates:
 - Data leaks
 - Data leaks by priority users
 
-See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
+See the [Create and Deploy data loss prevention policies](dlp-create-deploy-policy.md) article  for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
 ### Configure priority user groups
 
 Insider risk management includes support for assigning priority user groups to policies to help identity unique risk activities for user with critical positions, high levels of data and network access, or a past history of risk behavior. Creating a priority user group and assigning users to the group help scope policies to the unique circumstances presented by these users.
+
+You can create a priority user group and assign users to the group to help you scope policies specific to the unique circumstances presented by these identified users. To enable the *priority user groups* risk score booster, go to the *Insider risk management settings* page, then select **Policy indicators** and **Risk score boosters**. These identified users are more likely to receive [alerts](insider-risk-management-activities.md#alert-dashboard), so analysts and investigators can review and prioritize these users' risk severity to help triage alerts in accordance with your organization's risk policies and standards.
 
 A priority user group is required when using the following policy templates:
 
 - Security policy violations by priority users
 - Data leaks by priority users
 
-See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups) article for step-by-step guidance to create a priority user group. After you've configured a priority user group, return to these configuration steps.
+See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups) article for step-by-step configuration guidance. 
 
 ### Configure Physical badging connector (optional)
 

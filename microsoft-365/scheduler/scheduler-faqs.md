@@ -12,6 +12,9 @@ description: "Scheduler for Microsoft 365 FAQ"
 
 # Scheduler for Microsoft 365 FAQ
 
+> [!IMPORTANT]
+> Scheduler for Microsoft 365 will stop working in August 2023. After that date, Scheduler won't be able to create or modify any meeting requests.
+
 **Question:** How does Scheduler integrate with other Cortana features, such as *Cortana for Windows*, *Daily Briefing Email*, and *Play My Emails*?</br>
 Scheduler is an independent service from other Cortana features. Other Cortana features can be disabled at the tenant level, and Scheduler can still be enabled by using the cortana@yourdomain.com email address. Currently, users can only interact with Scheduler via email.
 

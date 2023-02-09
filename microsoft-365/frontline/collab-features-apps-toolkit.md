@@ -19,11 +19,13 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
+  - tier1
 ms.reviewer: 
 description: Resources to help you train your frontline workers on communication and collaboration features in Teams and Teams apps.
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
+ms.date: 10/28/2022
 ---
 
 # Help your frontline workers use collaboration apps and features

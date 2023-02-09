@@ -1,6 +1,6 @@
 ---
 
-title: "Microsoft Adoption Score - Meetings (New)"
+title: "Microsoft Adoption Score - Meetings"
 f1.keywords: NOCSH
 ms.author: camillepack
 author: camillepack
@@ -16,13 +16,15 @@ ms.collection:
 - highpri
 ms.custom:
 search.appverid: MET150
-description: "Details of new Meetings insights score - people experiences Adoption Score."
-ROBOTS: NOINDEX, NOFOLLOW 
+description: "Learn more about Meetings insights score - people experiences Adoption Score." 
 ---
 
-# Meetings insights score – People experiences (New)
+# Meetings insights score – People experiences
 
 Adoption Score provides insights into your organization's digital transformation journey through its use of Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar to yours. The meetings category is part of the people experiences measures. To learn more, check out the [Adoption Score overview](adoption-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).
+
+> [!NOTE]
+> This documentation is for the newest version of Meetings insights. If you're still using the previous version of Meetings insights, see the article for [Meetings insights (Previous Version)](meetings.md).
 
 ## Prerequisites
 
@@ -32,7 +34,7 @@ To get started with Meetings insights, people in your organization need to be li
 
 For more information, see [assign licenses to users](../manage/assign-licenses-to-users.md).
 
-After people have been active in Teams at least once in the last 28 days, you will start to see the insights.
+After people have been active in Teams at least once in the last 28 days, you'll start to see the insights.
 
 ## Why your organization's meetings score matters
 
@@ -44,7 +46,7 @@ Microsoft Teams integrates with Outlook calendar and provides a host of capabili
 
 ## Overall score
 
-The overall meeting score is calculated by averaging out the scores across the three phases i.e., Set up, Meet up and Follow up. We take into account the number of attendees and the duration of the meeting when tallying the final averaged scores.
+The overall meeting score is calculated by averaging out the scores across the three phases: Set up, Meet up, and Follow up. We take into account the number of attendees and the duration of the meeting when tallying the final averaged scores.
 
 For each meeting:
 
@@ -108,9 +110,9 @@ This section helps understand two insights for the organization:
 
 This section consists of three sub-sections:
 
-1. **Additional insights**: Here we provide additional insights which help organizations identify trends and user behaviors across meetings.
+1. **Additional insights**: Here we provide more insights that help organizations identify trends and user behaviors across meetings.
 1. **Interesting findings**: Here we provide some interesting facts about meetings being conducted in the organization.
-1. **Microsoft Research**: Here we reference Microsoft blogs and public research which provide recommended practices and their impacts to have effective meetings.
+1. **Microsoft Research**: Here we reference Microsoft blogs and public research that provide recommended practices and their impacts to have effective meetings.
 
 > [!NOTE]
 > The 'Dig deeper into meetings' section does not contribute to the overall score of the Meetings Page in Adoption Score People Experiences, however some insights in this section may expand on a primary insight used to calculate a score.

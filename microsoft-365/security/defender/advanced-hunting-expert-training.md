@@ -20,6 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Get expert training on advanced hunting
@@ -29,7 +30,6 @@ ms.topic: conceptual
 **Applies to:**
 
 - Microsoft 365 Defender
-- Microsoft Defender for Endpoint
 
 Boost your knowledge of advanced hunting quickly with _Tracking the adversary_, a webcast series for new security analysts and seasoned threat hunters. The series guides you through the basics all the way to creating your own sophisticated queries. Start with the first video on fundamentals or jump to more advanced videos that suit your level of experience.
 

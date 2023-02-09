@@ -21,6 +21,7 @@ ms.custom:
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 01/11/2021
 ---
 
 # Get started using Attack simulation training in Defender for Office 365
@@ -40,6 +41,8 @@ Watch this short video to learn more about Attack simulation training.
 
 ## What do you need to know before you begin?
 
+- Attack simulation training requres a Microsoft 365 E5 or [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md) license.
+
 - To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. Attack simulation training is available at **Email and collaboration** \> **Attack simulation training**. To go directly to Attack simulation training, use <https://security.microsoft.com/attacksimulator>.
 
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
@@ -52,7 +55,7 @@ Watch this short video to learn more about Attack simulation training.
 
   <sup>\*</sup> Adding users to this role in the Microsoft 365 Defender portal is currently unsupported.
 
-  For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) or [About admin roles](../../admin/add-users/about-admin-roles.md).
+  For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md) or [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 
@@ -116,7 +119,7 @@ The URLs that are used by Attack simulation training are described in the follow
 
 ### Create a simulation
 
-For step by step instructions on how to create and send a new simulation, see [Simulate a phishing attack](attack-simulation-training.md).
+For step by step instructions on how to create and send a new simulation, see [Simulate a phishing attack](attack-simulation-training-simulations.md).
 
 ### Create a payload
 

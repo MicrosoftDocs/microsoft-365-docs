@@ -49,7 +49,7 @@ Use the following instructions for the two admin steps.
 > [!NOTE]
 > Auto-policies use service-side labeling with conditions to automatically apply retention labels to items. You can also automatically apply a retention label with a label policy when you do the following:
 >
-> - Apply a retention label to a document understanding model in SharePoint Syntex
+> - Apply a retention label to a document understanding model in Microsoft Syntex
 > - Apply a default retention label for SharePoint and Outlook
 > - Apply a retention label to email by using Outlook rules
 >
@@ -57,9 +57,62 @@ Use the following instructions for the two admin steps.
 
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
+## Learn about simulation mode
+
+> [!NOTE]
+> This option is in preview and subject to change.
+
+Now gradually rolling out in preview, you can run an auto-labeling policy in simulation mode when it's configured for either of the following conditions:
+- [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+- [Specific keywords or searchable properties that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+Very similar to [simulation mode for auto-labeling policies for sensitivity labels](apply-sensitivity-label-automatically.md#learn-about-simulation-mode), this addition lets you run the auto-labeling deployment like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the conditions that you defined. You can then refine your conditions for accuracy if needed, and rerun the simulation.
+
+Simulation mode also lets you gradually increase the scope of your auto-labeling policy before deployment. For example, you might start with a single location, such as a SharePoint site, with a single document library. Then, with iterative changes, increase the scope to multiple sites, and then to another location, such as OneDrive.
+
+Typical workflow for an auto-labeling policy:
+
+1. Create and configure an auto-labeling retention policy.
+
+2. Run the policy in simulation mode, which typically completes within a day. The completed simulation triggers an email notification that's sent to the user configured to receive activity alerts.
+
+3. Review the results, and if necessary, refine your policy and rerun simulation. Wait for it to complete again.
+
+4. Repeat step 3 as needed.
+
+5. Deploy in production by turning on the policy.
+
+Unlike simulation mode for automatically applying sensitivity labels:
+- Simulation mode is optional, and not required to complete before you turn on the policy. You can even turn on the policy while simulation is still running.
+- When simulation completes, the results automatically expire within 7 days. Then, to view samples for your policy, you must restart the simulation.
+
+Other considerations for simulation mode for auto-apply retention policies:
+
+- A maximum of 30 simulation jobs can be active in a 12-hour time period.
+- A maximum of 100 item samples can be collected per mailbox.
+- If you use [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) for your policy, a maximum of 20,000 locations (any combination of sites and mailboxes)
+- You might need to be assigned additional permissions to see the simulation results. For information about the required roles, see the next section, [Before you begin](#before-you-begin).
+- Simulation counts all items matching the policy criteria at time of simulation. However, when the policy is turned on, only content that is not already labeled will be eligible for auto-applying retention labels.
+- Because simulation for Exchange locations always runs against emails stored in mailboxes, rather than emails sent and received, you won't see simulation results for emails when the policy condition is for sensitive information types.
+- Because simulation results are based on items available in the specified locations at the time the simulation job runs, remember to take the following considerations into account when you turn on the policy:
+    - Items that are no longer within the specified location won't be labeled.
+    - Items that no longer match the policy criteria won't be labeled.
+
+On the **Label policies** page, the **Status** column displays **In simulation** for auto-labeling policies that are running in simulation, or configured for simulation and complete. 
+
+Simulation typically completes in a day. The completed simulation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
+
+To view the simulation results, select the policy from the **Label policies** page, and from the flyout pane, select **View simulation**. You can then view any samples, review the number of matching items and the locations, edit the policy, turn on the policy, or restart the simulation.
+
+![An example of simulation mode for an auto-apply retention label policy.](../media/simulation-mode-animated.gif)
+
 ## Before you begin
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [data lifecycle management](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
+
+To run the policy in simulation mode:
+- Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](audit-log-enable-disable.md).
+- To view the list of samples, you must have the **Data Classification List Viewer** role, and to view file or email contents in the source view, you must have the **Data Classification Content Viewer** role. Global admins don't have these roles by default.
 
 Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
 
@@ -93,7 +146,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 
     For information about the location choices, see [Locations](retention-settings.md#locations).
 
-6. Follow the prompts in the wizard to select a retention label, and then review and submit your configuration choices.
+6. Follow the prompts in the wizard to select a retention label, whether to run the policy in [simulation mode](#learn-about-simulation-mode) or turn it on (if applicable for your chosen condition), and then review and submit your configuration choices.
 
 To edit an existing retention label policy (the policy type is **Auto-apply**), select it, and then select the **Edit** option to start the **Edit retention policy** configuration.
 
@@ -155,7 +208,7 @@ After you select a policy template, you can add or remove any types of sensitive
 
 - The content contains between 1 and 9 instances of any of these three sensitive info types. The default for the **to** value is **Any**.
 
-For more information about these options, see the following guidance from the DLP documentation [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+For more information about these options, see the following guidance from the DLP documentation [Test your Data Loss Prevention policies (preview)](dlp-test-dlp-policies.md#test-your-data-loss-prevention-policies-preview).
 
 > [!IMPORTANT]
 > Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](sit-limits.md#instance-count-supported-values-for-sit).
@@ -174,7 +227,7 @@ You can auto-apply labels to content by using a query that contains specific wor
 
 For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Query-based auto-apply policies use the same search index as eDiscovery content search to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+Query-based auto-apply policies use the same search index as eDiscovery content search to identify content. For more information about the searchable properties that you can use, see [Keyword queries and search conditions for Content Search](ediscovery-keyword-queries-and-search-conditions.md).
 
 Some things to consider when using keywords or searchable properties to auto-apply retention labels:
 
@@ -190,7 +243,7 @@ Some things to consider when using keywords or searchable properties to auto-app
 
 - Suffix wildcard searches (such as `*cat`) or substring wildcard searches (such as `*cat*`) aren't supported. However, prefix wildcard searches (such as `cat*`) are supported.
 
-- Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](partially-indexed-items-in-content-search.md).
+- Be aware that partially indexed items can be responsible for not labeling items that you're expecting, or labeling items that you're expecting to be excluded from labeling when you use the NOT operator. For more information, see [Partially indexed items in Content Search](ediscovery-partially-indexed-items-in-content-search.md).
 
 - We recommend that you don't use spaces between words in RefinableStrings values on documents. RefinableString is not a word-break property.
 
@@ -299,7 +352,7 @@ You might need to use this option if you're required to capture and retain all c
 
 Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) and [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
 
-When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](advanced-ediscovery-cloud-attachments.md). Users are not aware of the copy that is stored in the Preservation Hold library. The retention label is not applied to the message itself, or to the original file.
+When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be [identified using eDiscovery](ediscovery-cloud-attachments.md). Users are not aware of the copy that is stored in the Preservation Hold library. The retention label is not applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, including why you should use the **When items were labeled** label setting, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
@@ -325,6 +378,8 @@ To consider when auto-applying retention labels to cloud attachments:
 - Only newly shared cloud attachments will be auto-labeled for retention.
 
 - When a user is added to a Teams conversation and given access to the full history of the conversation, that history can include cloud attachments. If they were shared within 48 hours of the user added to the conversation, current copies of the cloud attachments are auto-labeled for retention. Cloud attachments shared before this time period aren't supported for newly added users.
+
+- Cloud attachments in encrypted emails aren't supported.
 
 - Cloud attachments shared outside Teams and Outlook aren't supported.
 

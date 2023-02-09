@@ -3,10 +3,8 @@ title: Recover from a ransomware attack
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -18,12 +16,13 @@ ms.collection:
 description: Microsoft 365 admins can learn how to recover from a ransomware attack.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 01/21/2020
 ---
 
 # Recover from a ransomware attack in Microsoft 365
 
 **Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection](eop-about.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -135,7 +134,7 @@ If your country isn't listed, ask your local or federal law enforcement agencies
 
 ### Submit email messages to Microsoft
 
-You can report phishing messages that contain ransomware by using one of several methods. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+You can report phishing messages that contain ransomware by using one of several methods. For more information, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## Additional ransomware resources
 
