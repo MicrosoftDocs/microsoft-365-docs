@@ -66,7 +66,7 @@ The `Current` channel contains the most stable version of the product.
 > Prior to Microsoft AutoUpdate version 4.29, channels had different names:
 >
 > - `Beta Channel` was named `InsiderFast` (Insider Fast)
-> - `Current channel` (Preview) was named `External` (Insider Slow)
+> - `Current Channel` (Preview) was named `External` (Insider Slow)
 > - `Current Channel` was named `Production`
 
 > [!TIP]
