@@ -126,6 +126,8 @@ After a sensitivity label is applied to an email, meeting invite (in preview), o
 
 - **Set the default sharing link type** for SharePoint sites and individual documents. To help prevent users oversharing, set the [default scope and permissions](sensitivity-labels-default-sharing-link.md) for when users share documents from SharePoint and OneDrive.
 
+For more label configurations, see [[Manage sensitivity labels for Office apps](sensitivity-labels-office-apps.md).
+
 ### Label scopes
 
 When you create a sensitivity label, you're asked to configure the label's scope which determines two things:
@@ -217,6 +219,8 @@ When you configure a label policy, you can:
 - **Provide help link to a custom help page.** If your users aren't sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the **Sensitivity label** menu in the Office apps:
 
     ![Learn more link on Sensitivity button on Ribbon.](../media/Sensitivity-label-learn-more.png)
+
+For more label policy configurations, see [[Manage sensitivity labels for Office apps](sensitivity-labels-office-apps.md).
 
 After you create a label policy that assigns new sensitivity labels to users and groups, users start to see those labels in their Office apps. Allow up to 24 hours for the latest changes to replicate throughout your organization.
 
