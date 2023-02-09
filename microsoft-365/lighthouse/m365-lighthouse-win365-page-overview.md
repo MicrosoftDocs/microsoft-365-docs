@@ -23,14 +23,14 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse  
   
-Windows 365 is a cloud-based service that lets Microsoft Endpoint Manager (MEM) admins provision and manage Cloud PCs for their users who have a Windows 365 license. Windows 365 is fully integrated with MEM for device management, and with Microsoft 365 Lighthouse for partner management of Cloud PCs across all their customer tenants.
+Windows 365 is a cloud-based service that lets Microsoft Endpoint Manager (MEM) admins provision and manage Cloud PCs for their users who have a Windows 365 license. Windows 365 is fully integrated with MEM for device management, and with Microsoft 365 Lighthouse for Managed Service Provider (MSP) management of Cloud PCs across all their customer tenants.
 
 For more information about Windows 365, see [What is Windows 365?](/windows-365/overview) For a list of Windows 365 requirements, see [Requirements for Windows 365](/windows-365/enterprise/requirements).
 
 > [!IMPORTANT]
 > You must go to [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) to provision Cloud PCs for each customer tenant before you can manage them in Lighthouse. You can't provision from within Lighthouse.
 
-Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Devices** > **Windows 365** in the left navigation pane) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
+Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Lighthouse Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Devices** > **Windows 365** in the left navigation pane in Lighthouse) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
 
 ## Overview tab
 
