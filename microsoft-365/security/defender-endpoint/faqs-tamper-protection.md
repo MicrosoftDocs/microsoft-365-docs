@@ -1,6 +1,6 @@
 ---
 title: Frequently asked questions on tamper protection
-ms.reviewer: mattcall, pahuijbr, hayhov, oogunrinde
+ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Frequently asked questions on configuring tamper protection.
 keywords: malware, defender, antivirus, tamper protection
@@ -14,7 +14,6 @@ audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: joshbregman
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
