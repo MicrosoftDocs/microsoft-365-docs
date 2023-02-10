@@ -54,27 +54,25 @@ When you reopen an eDiscovery (Premium) case, any holds that were in place when 
 To reopen a closed case:
 
 1. On the **eDiscovery (Premium)** page, select the case that you want to reopen.
-
 2. On the **Settings** tab, under **Case Information**, select **Select**.
-
 3. At the bottom of the **Case Information** flyout page, select **Actions**, and then select **Reopen case**.
 
-   It might take up to 60 minutes for the reopening process to complete.
+It might take up to 60 minutes for the reopening process to complete.
 
 ## Delete a case
 
-You can delete both active and closed eDiscovery (Premium) cases. When you delete a case, all components associated with the case, such as the list of custodians, communications, searches, review sets, and export job are deleted. The case is removed from the list of cases on the **eDiscovery (Premium)** page in the Microsoft Purview compliance portal. You can't recover or reopen a deleted case.
+You can delete closed eDiscovery (Premium) cases. If holds aren't deleted from a closed case, you must delete all holds before closing the case. When you delete a case, all components associated with the case, such as the list of custodians, communications, searches, review sets, and export job are deleted. The case is removed from the list of cases on the **eDiscovery (Premium)** page in the Microsoft Purview compliance portal. You can't recover or reopen a deleted case.
 
 > [!NOTE]
 > In data spillage scenarios, the only way to remove items in a review set is to delete the eDiscovery (Premium) case. Other "search and purge" methods don't remove items from a review set.
 
-Before you can delete a case (whether it's active or closed), you must first delete *all* holds associated with the case. That includes deleting holds with a status of **Off**.
+Before you can delete a closed case, you must first delete *all* holds associated with the case. That includes deleting holds with a status of **Off**.
 
 To delete holds associated with a case:
 
 1. Go the **Holds** tab in the eDiscovery (Premium) case that you want to delete.
 2. Select the hold that you want to delete.
-3. On the flyout page, select **Delete hold**.
+3. On the flyout page, select **Delete**.
 
 To delete a case:
 
