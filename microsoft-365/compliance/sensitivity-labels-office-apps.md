@@ -390,7 +390,7 @@ For end user documentation, see [Create protected PDFs from Office files](https:
 
 If you need to disable the PDF support in Office apps for Word, Excel, and PowerPoint, you can do so by using an Office setting under **User Configuration/Administrative Templates/Microsoft Office 2016/Security Settings**:
 
-- **Use the Sensitivity feature in Office to apply sensitivity labels to PDFs **
+- **Use the Sensitivity feature in Office to apply sensitivity labels to PDFs**
 
 Set the value to **0**.
 
