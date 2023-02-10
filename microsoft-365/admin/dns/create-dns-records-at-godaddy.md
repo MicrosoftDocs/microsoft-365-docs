@@ -78,17 +78,17 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
-1. Under **Domains**, select **DNS** next to the domain you want to verify.
+2. Under **Domains**, select **DNS** next to the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select DNS.":::
 
 1. Under **DNS Records**, select **ADD** on the top right corner.
 
-   :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Select ADD.":::
 
 1. Select **TXT** option from the filter box.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Select TXT from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-add-txt-records.png" alt-text="Select TXT from the Type drop-down list.":::
 
 1. In the boxes for the new record, type or copy and paste the values from the table.
 
@@ -96,11 +96,11 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
    |---|---|---|---|
    |TXT|@|MS=ms *XXXXXXXX*<br>**Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>|
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-values.png" alt-text="Fill in the values from the table for the TXT record.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXTvalue.png" alt-text="Fill in the values from the table for the TXT record.":::
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXTSave.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-save.png" alt-text="Select Save.":::
 
    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
@@ -127,17 +127,17 @@ To verify the record in Microsoft 365:
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
-2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **Manage DNS**.
+2. Under **Domains**, select the **DNS** option.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select DNS.":::
 
 3. Under **Records**, select **ADD**.
 
-   :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Select ADD.":::
 
-4. Choose **MX** from the drop-down list.
+4. Choose **MX** option from the filter box.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Select MX from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-MX-values.png" alt-text="Select MX from the Type drop-down list.":::
 
 5. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -147,7 +147,7 @@ To verify the record in Microsoft 365:
    |---|---|---|---|---|
    |MX|@| *\<domain-key\>*.mail.protection.outlook.com  <br/> **Note:** Get your *\<domain-key\>* from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|10  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml)|1 hour|
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Fill in the values from the table for the MX record.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-MXvalues.png" alt-text="Fill in the values from the table for the MX record.":::
 
 6. Select **Save**.
 
@@ -159,15 +159,16 @@ To verify the record in Microsoft 365:
 
 2. Under **Domains**, select the three dots next to the domain you want to verify, and then select **Manage DNS**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-manage-dns.png" alt-text="Select DNS.":::
 
 3. Under **Records**, select **ADD**.
 
-   :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Select ADD.":::
 
 4. Choose **CNAME** from the drop-down list.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Select CNAME from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-type.png" alt-text="Select CNAME from the Type drop-down list.":::
+
 
 5. Create the CNAME record.
 
