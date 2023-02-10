@@ -38,7 +38,7 @@ If you want to create an EDM SIT using the classic experience see, [Create EDM S
 
 ## Formatting the sample file
 
-The system will extract the column names from the sample file to create the schema, and will recommend base SITs to map the sample field data to. It must be formatted identically to your source sensitive information table file and should contain synthetic values that are representative of your actual data. The file can be saved in .csv (comma-separated values), .tsv (tab-separated values), or pipe-separated (|) format, but should be the same as your actual source sensitive information table file. The .tsv format is recommended in cases where your data values may included commas, such as street addresses.
+The system will extract the column names from the sample file to create the schema, and will recommend base SITs to map the sample field data to. It must be formatted identically to your source sensitive information table file and should contain synthetic values that are representative of your actual data. The file can be saved in .csv (comma-separated values), .tsv (tab-separated values), or pipe-separated (|) format, but should be the same as your actual source sensitive information table file. The .tsv format is recommended in cases where your data values may include commas, such as street addresses.
 
 - Use about 10-20 rows of data to ensure that the system has enough samples to work with.
 - Field values that contain commas must be enclosed in quotes *"*.
