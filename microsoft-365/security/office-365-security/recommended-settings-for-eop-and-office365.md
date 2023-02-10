@@ -294,17 +294,17 @@ In PowerShell, you use the [New-SafeLinksPolicy](/powershell/module/exchange/new
 |Security feature name|Default in custom|Built-in protection|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|:---:|---|
 |**URL & click protection settings**||||||
-|**Action on potentially malicious URLs within Emails**||||||
-|**On: Safe Links checks a list of known, malicious links when users click links in email** <br><br> _EnableSafeLinksForEmail_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Email**|||||The settings in this section affect URL rewriting and time of click protection in email messages.|
+|**On: Safe Links checks a list of known, malicious links when users click links in email. URLs are rewritten by default.** <br><br> _EnableSafeLinksForEmail_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Apply Safe Links to email messages sent within the organization** <br><br> _EnableForInternalSenders_|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Apply real-time URL scanning for suspicious links and links that point to files** <br><br> _ScanUrls_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Wait for URL scanning to complete before delivering the message** <br><br> _DeliverMessageAfterScan_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Do not rewrite URLs, do checks via Safe Links API only** <br><br> _DisableURLRewrite_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Not selected <br><br> `$false`|Not selected <br><br> `$false`||
 |**Do not rewrite the following URLs in email** <br><br> _DoNotRewriteUrls_|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`|Blank <br><br> `$null`|We have no specific recommendation for this setting. <br><br> **Note**: Entries in the "Do not rewrite the following URLs" list are not scanned or wrapped by Safe Links during mail flow. Use [allow URL entries in the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) so URLs are not scanned or wrapped by Safe Links during mail flow _and_ at time of click.|
-|**Action for potentially malicious URLs in Microsoft Teams**||||||
-|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams** <br><br> _EnableSafeLinksForTeams_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
-|**Action for potentially malicious URLs in Microsoft Office apps**||||||
-|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps** <br><br> _EnableSafeLinksForOffice_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office apps](safe-links-about.md#safe-links-settings-for-office-apps).|
+|**Teams**|||||The setting in this section affects time of click protection in Microsoft Teams.|
+|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Teams. URLs are not rewritten.** <br><br> _EnableSafeLinksForTeams_|Not selected <br><br> `$false`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
+|**Office 365 apps**|||||The setting in this section affects time of click protection in Office apps.|
+|**On: Safe Links checks a list of known, malicious links when users click links in Microsoft Office apps. URLs are not rewritten.** <br><br> _EnableSafeLinksForOffice_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Use Safe Links in supported Office 365 desktop and mobile (iOS and Android) apps. For more information, see [Safe Links settings for Office apps](safe-links-about.md#safe-links-settings-for-office-apps).|
 |**Click protection settings**||||||
 |**Track user clicks** <br><br> _TrackClicks_|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`|Selected <br><br> `$true`||
 |**Let users click through to the original URL** <br><br> _AllowClickThrough_|Selected <br><br> `$true`|Selected <br><br> `$true`|Not selected <br><br> `$false`|Not selected <br><br> `$false`|Turning off this setting (setting _AllowClickThrough_ to `$false`) prevents click through to the original URL.|
