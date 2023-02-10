@@ -21,7 +21,9 @@ ms.collection:
   - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
+ms.date: 04/28/2022
 ---
+
 # Redirecting accounts from Microsoft Defender for Identity to Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
@@ -80,5 +82,6 @@ Once disabled, accounts will no longer be routed to security.microsoft.com.
 ## Related information
 
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
+- [Deploy Microsoft Defender for Identity with Microsoft 365 Defender](/defender-for-identity/deploy-defender-identity)
 - [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)

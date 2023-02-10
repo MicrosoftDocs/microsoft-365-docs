@@ -4,10 +4,8 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer:
-ms.date:
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -18,6 +16,7 @@ ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 08/03/2021
 ---
 
 # Quarantine policies

@@ -21,7 +21,7 @@ description: "Configure sensitivity labels to protect calendar items, and Teams 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> This feature is currently rolling out in preview and subject to change.
+> For this scenario, Outlook calendar events remain in preview and subject to change.
 > 
 > You won't be able to configure all the options referenced on this page if a [Teams Premium license](/MicrosoftTeams/enhanced-teams-experience) isn't found for your tenant. For those settings, you'll see an information bar in the Microsoft Purview compliance portal that your organization doesn't have this license.
 
@@ -64,8 +64,8 @@ Example showing a Teams meeting invite that has the label **Highly confidential*
 
 To apply a sensitivity label to meeting invites and appointments using Outlook, users must use Outlook on the web from a desktop computer, or use built-in labeling from Microsoft 365 Apps for enterprise:
 
-- **Outlook for Windows**: Rolling out to Beta Channel
-- **Outlook for Mac**: Not yet supported
+- **Outlook for Windows**: Rolling out to Current Channel (Preview)
+- **Outlook for Mac**: Rolling out to Current Channel (Preview)
 
 The AIP add-in for Outlook doesn't support applying labels to meeting invites.
 
@@ -122,7 +122,7 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
     - Require users to label their meetings and calendar event (also known as mandatory labeling)
     - Help link to a custom help page
 
-- While a meeting is in session, a sensitivity label can't prevent participates from inviting people to join  by copying the meeting link, or by sharing via default email or the Outlook calendar. These choices are from the Teams meeting  **Share invite** option.
+- While a meeting is in session, a sensitivity label can't prevent participants from inviting people to join  by copying the meeting link, or by sharing via default email or the Outlook calendar. These choices are from the Teams meeting  **Share invite** option.
 
 - If there's a label change made in Outlook clients while the meeting is progress, any changes to the meeting options won't take effect for the current meeting. If the meeting is in a series, the changes will apply to the next instance.
 
@@ -172,8 +172,12 @@ To apply a sensitivity label to meeting invites using Teams, enforce meeting opt
 
 Make sure the [label is published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to meeting organizers and participants.
 
-Other label policy settings that are specific just to calendar items, Teams meetings, and chat:
+Other label policy settings that are specific just to calendar items, Teams meetings, and chat
+
 - **Apply a default label to meetings and calendar events**
+    - For Outlook: The default label is applied to new calendar events and to existing unlabeled calendar events when they are updated.
+    - For Teams: The default label is applied to new calendar events but won't be automatically applied when an existing unlabeled meeting is updated.
+
 - **Require users to apply a label to their meetings and calendar events**
 
 > [!NOTE]
@@ -184,6 +188,8 @@ Other label policy settings that are specific just to calendar items, Teams meet
 The label setting to prevent copying chat to the clipboard is enforced for all channel chats, even outside channel meetings. For non-channel meetings, it's enforced only for meetings.
 
 Currently, this setting isn't supported for users outside your organization, which includes anonymous users and external users. It is supported for guest user accounts in your tenant. For meetings, it's also not supported for users who join the chat but weren't invited to the meeting.
+
+This setting is currently unsupported for virtual desktop infrastructure (VDI).
 
 The methods supported to prevent copying chat: Select the text and then right-click \> **Copy** or Ctrl+C. Copying using developer tools or third-party apps won't be prevented.
 

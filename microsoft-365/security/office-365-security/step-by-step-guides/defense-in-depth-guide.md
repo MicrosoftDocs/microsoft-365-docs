@@ -20,6 +20,7 @@ ms.collection:
 - tier3
 ms.topic: how-to
 search.appverid: met150
+ms.date: 08/31/2022
 ---
 
 # Getting the best security value from Microsoft Defender for Office 365 when you have third party email filtering

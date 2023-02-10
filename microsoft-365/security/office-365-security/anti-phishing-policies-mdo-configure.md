@@ -7,8 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
-
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
@@ -18,6 +16,7 @@ description: Admins can learn how to create, modify, and delete the advanced ant
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 11/30/2022
 ---
 
 # Configure anti-phishing policies in Microsoft Defender for Office 365
@@ -167,7 +166,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
          When you're finished, click **Add domains**
 
          > [!NOTE]
-         > You can have a maximum of 50 domains in all anti-phishing policies.
+         > You can specify a maximum of 50 custom domains in each anti-phishing policy.
 
        Back on the **Manage custom domains for impersonation** flyout, you can remove entries by selecting one or more entries from the list. You can search for entries using the ![Search icon.](../../media/m365-cc-sc-create-icon.png) **Search** box.
 

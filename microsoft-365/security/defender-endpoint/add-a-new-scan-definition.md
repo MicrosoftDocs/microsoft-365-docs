@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/14/2022
 ---
 
 # Add, update or delete a scan definition
@@ -100,43 +101,43 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 
 ```json
  {
-"scanType": "Windows", 
-"scanName": "Test Windows scan", 
-"isActive": true, 
-"target": "127.0.0.1", 
+"scanType": "Windows", 
+"scanName": "Test Windows scan", 
+"isActive": true, 
+"target": "127.0.0.1", 
 "intervalInHours": 1, 
 "targetType": "Ip",
 "scannerAgent": {
     "machineId": "eb663a27ae9d032f61bc268a79eedf14c4b90f77",
     "machineName": "DESKTOP-TEST",
 "scanAuthenticationParams": { 
-    "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
-    "type": "Kerberos", 
-    "username": "username", 
-    "domain": "password",
+    "@odata.type": "#microsoft.windowsDefenderATP.api.WindowsAuthParams", 
+    "type": "Kerberos", 
+    "username": "username", 
+    "domain": "password",
     "isGmsaUser": true
         },
     },
  },
  {
-"scanType": "Network", 
-"scanName": "Test Network scan", 
-"isActive": true, 
-"target": "127.0.0.1", 
+"scanType": "Network", 
+"scanName": "Test Network scan", 
+"isActive": true, 
+"target": "127.0.0.1", 
 "intervalInHours": 1, 
 "targetType": "Ip",
 "scannerAgent": {
     "machineId": "eb663a27678ik2f61bc268a79eeasdf450f77",
     "machineName": "DESKTOP-TEST",
 "scanAuthenticationParams": {
-    "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
-        "type": "AuthPriv", 
-        "username": "username", 
-        "authProtocol": "authProtocol", 
-        "authPassword": "authPassword", 
-        "privProtocol": "privProtocol", 
-        "privPassword": "privPassword", 
-        "communityString": "community-string" 
+    "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
+        "type": "AuthPriv", 
+        "username": "username", 
+        "authProtocol": "authProtocol", 
+        "authPassword": "authPassword", 
+        "privProtocol": "privProtocol", 
+        "privPassword": "privPassword", 
+        "communityString": "community-string" 
         },
     },
  }
@@ -167,16 +168,16 @@ PATCH https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefini
 
 ```json
 {
-"scanName": "Test Network scan", 
+"scanName": "Test Network scan", 
 "intervalInHours": 8,
 "isActive": "True",
 "targetType": "Ip",
 "target": "10.5.0.8",
 "scanAuthenticationParams": { 
  "@odata.type": "#microsoft.windowsDefenderATP.api.SnmpAuthParams", 
-    "type": "Kerberos", 
-    "username": "username", 
-    "domain": "password",
+    "type": "Kerberos", 
+    "username": "username", 
+    "domain": "password",
     "isGmsaUser": true
     }
 }

@@ -23,7 +23,9 @@ ms.collection:
   - highpri
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 10/08/2020
 ---
+
 # Common security policies for Microsoft 365 organizations
 
 Organizations have lots to worry about when deploying Microsoft 365 for their organization. The Conditional Access, app protection, and device compliance policies referenced in this article are based on Microsoft's recommendations and the three guiding principles of [Zero Trust](/security/zero-trust/zero-trust-overview):

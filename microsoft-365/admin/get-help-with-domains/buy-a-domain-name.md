@@ -78,7 +78,15 @@ We offer a free Domain Privacy Subscription with the purchase of a domain. This 
 If you want to buy a domain from a domain registrar other than [GoDaddy](https://www.godaddy.com), we recommend you use one below that supports automatic setup (Domain Connect). 
   
 - [1&amp;1 IONOS](https://www.1and1.com/)
-- [WordPress](https://www.wordpress.com) 
+- [EuroDNS](https://www.eurodns.com/)
+- [Cloudflare](https://www.cloudflare.com/)
+- [WordPress.com](https://wordpress.com/)
+- [Plesk](https://www.plesk.com/)
+- [MediaTemple](https://mediatemple.net/)
+- SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)
+    - Examples:
+        - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
+        - [DomainRightNow](https://www.domainrightnow.com/)
 
    
 ## Transfer your domain to a different domain registrar
