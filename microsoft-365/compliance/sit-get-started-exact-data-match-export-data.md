@@ -49,9 +49,9 @@ For example, if you have the columns `full name`, `date of birth`, `account numb
 
 To make selecting your primary fields easier, we've put together some sample file templates for:
 
-- U.S. Healthcare data <!--make this a live link-->
-- U.S. Financial data <!--make this a live link-->
-- U.S. Insurance data <!--make this a live link-->
+- [U.S. Healthcare data](https://go.microsoft.com/fwlink/?linkid=2224450)
+- [U.S. Financial data](https://go.microsoft.com/fwlink/?linkid=2224770)
+- [U.S. Insurance data](https://go.microsoft.com/fwlink/?linkid=2224769)
 
 These are comma separated value (.csv) files that have the most commonly used values across those industry verticals as column headers. You should use the column headers to help you decide on your primary fields. It's a best practice to export only the source data that is required. The column headers suggest the most relevant fields.
 
