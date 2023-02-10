@@ -94,6 +94,7 @@ Here's a list of applicable role groups that you can use. To learn more about th
 - Security administrator
 - Security Reader
 
+Note that security reader role can only view activities and is not allowed to view the sensitive content.
 ## Activity types
 
 Activity explorer gathers activity information from the audit logs on multiple sources of activities. For more detailed information on what labeling activity makes it to Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
