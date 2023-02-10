@@ -353,6 +353,8 @@ Be aware that this configuration affects both client apps and services, manual l
     - If the scope doesn't include email, you won't be able to select the encryption options of **Do Not Forward** or **Encrypt-Only**.
     - If the scope doesn't include files, you won't be able to select the encryption option **In Word, PowerPoint, and Excel, prompt users to specify permissions**.
 
+In addition, if a label has been previously applied but then removed from one of the scopes, users will no longer see that label applied for the scope. It's as if the label is no longer published to them, although the label remains on the item itself.
+
 **Limitation for this preview:**
 
 - To change the scope for a label that's published, you must first remove the label from all policies. You can then make the label change, and publish the label again. Be aware that for the scope or scopes you want to keep, these labels will temporarily disappear for users until they see the republished labels.
