@@ -34,8 +34,8 @@ ms.date: 02/16/2021
 
 - Microsoft 365 Defender
 
-> [!NOTE]
-> This article describes security alerts in Microsoft 365 Defender. However, you can use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365. For more information, see [Create activity alerts - Microsoft Purview | Microsoft Docs](../../compliance/create-activity-alerts.md).
+>[!Note]
+>This article describes security alerts in Microsoft 365 Defender. However, you can use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365. For more information, see [Create activity alerts - Microsoft Purview | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 Alerts are the basis of all incidents and indicate the occurrence of malicious or suspicious events in your environment. Alerts are typically part of a broader attack and provide clues about an incident.
 
@@ -115,7 +115,7 @@ Microsoft 365 Defender alerts may come from solutions like Microsoft Defender fo
 
 ### Configure AAD IP alert service
 
-1. Go to the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)), select **Settings** > **Microsoft 365 Defender**. 
+1.	Go to the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)), select **Settings** > **Microsoft 365 Defender**. 
 
 2. From the list, select **Alert service settings**, and then configure your **Azure AD identity protection** alert service.
 
