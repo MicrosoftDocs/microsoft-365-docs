@@ -366,6 +366,376 @@
           - name: Monitor and increase device onboarding
             href: configure-machines-onboarding.md
 
+        - name: Configure Microsoft Defender Security Center time zone settings
+          href: time-settings.md
+
+    - name: Detect threats and protect endpoints
+      items:
+      - name: Microsoft Defender Vulnerability Management
+        href: index.yml
+      - name: Device discovery
+        items:
+        - name: Device discovery overview
+          href: device-discovery.md
+        - name: Configure device discovery
+          href: configure-device-discovery.md
+        - name: Enable Corelight as a data source
+          href: corelight-integration.md
+        - name: Enterprise IoT security
+          items:
+          - name: Securing IoT devices in the enterprise
+            href: /azure/defender-for-iot/organizations/concept-enterprise/
+          - name: Enable Enterprise IoT security with Defender for Endpoint
+            href: /azure/defender-for-iot/organizations/eiot-defender-for-endpoint/
+          - name: Manage Defender for IoT plans
+            href: /azure/defender-for-iot/organizations/manage-subscriptions-enterprise/
+          - name: Enhance Enterprise IoT discovery
+            href: /azure/defender-for-iot/organizations/eiot-sensor/
+        - name: Device discovery FAQ
+          href: device-discovery-faq.md  
+
+      - name: Authenticated scans
+        items:
+        - name: Network devices
+          href: network-devices.md
+        - name: Windows authenticated scan
+          href: windows-authenticated-scan.md
+
+      - name: Devices
+        items:
+        - name: Device inventory
+          href: machines-view-overview.md
+        - name: Exclude devices
+          href: exclude-devices.md
+        - name: Device timeline
+          href: device-timeline-event-flag.md
+        - name: Manage device group and tags
+          href: machine-tags.md
+
+      - name: Host firewall reporting in Microsoft Defender for Endpoint
+        href: host-firewall-reporting.md
+
+      - name: Built-in protection
+        href: built-in-protection.md
+
+      - name: Attack surface reduction
+        items:
+        - name: Attack surface reduction overview
+          href: overview-attack-surface-reduction.md
+        - name: Attack surface reduction (ASR) rules
+          items:
+          - name: Learn about ASR rules
+            href: attack-surface-reduction.md
+          - name: Attack surface reduction (ASR) rules deployment guide
+            items:
+            - name: Attack surface reduction (ASR) rules deployment overview
+              href: attack-surface-reduction-rules-deployment.md
+            - name: Plan attack surface reduction (ASR) rules deployment
+              href: attack-surface-reduction-rules-deployment-plan.md
+            - name: Test attack surface reduction (ASR) rules
+              href: attack-surface-reduction-rules-deployment-test.md
+            - name: Enable attack surface reduction (ASR) rules
+              href: attack-surface-reduction-rules-deployment-implement.md
+            - name: Operationalize attack surface reduction (ASR) rules
+              href: attack-surface-reduction-rules-deployment-operationalize.md
+            - name: Operationalize attack surface reduction (ASR) rules
+              href: attack-surface-reduction-rules-deployment-operationalize.md
+          - name: Attack surface reduction (ASR) rules reference
+            href: attack-surface-reduction-rules-reference.md
+          - name: Attack surface reduction rules report
+            href: attack-surface-reduction-rules-report.md
+          - name: Troubleshoot attack surface reduction (ASR) rules
+            href: troubleshoot-asr-rules.md
+          - name: Enable ASR rules alternate configuration methods
+            href: enable-attack-surface-reduction.md
+        - name: Attack surface reduction FAQ
+          href: attack-surface-reduction-faq.yml
+        - name: Controlled folder access
+          items:
+          - name: Protect folders
+            href: controlled-folders.md
+          - name: Evaluate controlled folder access
+            href: evaluate-controlled-folder-access.md
+          - name: Enable controlled folder access
+            href: enable-controlled-folders.md
+          - name: Customize controlled folder access
+            href: customize-controlled-folders.md
+        - name: Device Control
+          items:
+          - name: Removable Storage Protection
+            href: device-control-removable-storage-protection.md
+          - name: Removable Storage Access Control
+            items:
+            - name: Overview
+              href: device-control-removable-storage-access-control.md
+            - name: Deploy and manage using Intune
+              href: deploy-manage-removable-storage-intune.md
+            - name: Deploy and manage using group policy
+              href: deploy-manage-removable-storage-group-policy.md
+            - name: Frequently asked questions
+              href: device-control-removable-storage-access-control-faq.md
+          - name: Device Installation
+            href: mde-device-control-device-installation.md
+          - name: Device Control Printer Protection
+            href: printer-protection.md
+            items:
+            - name: Printer Protection Overview
+              href: printer-protection-overview.md
+            - name: Deploy and manage using group policy
+              href: deploy-and-manage-using-group-policy.md
+            - name: Deploy and manage using Intune
+              href: deploy-and-manage-using-intune.md
+            - name: Printer Protection frequently asked questions
+              href: printer-protection-frequently-asked-questions.md
+          - name: Device Control Reports
+            href: device-control-report.md
+        - name: Exploit protection
+          items:
+          - name: Protect devices from exploits
+            href: exploit-protection.md
+          - name: Exploit protection evaluation
+            href: evaluate-exploit-protection.md
+          - name: Enable exploit protection
+            href: enable-exploit-protection.md
+          - name: Customize exploit protection
+            href: customize-exploit-protection.md
+          - name: Import, export, and deploy exploit protection configurations
+            href: import-export-exploit-protection-emet-xml.md
+          - name: Troubleshoot exploit protection mitigations
+            href: troubleshoot-exploit-protection-mitigations.md
+          - name: Exploit protection reference
+            href: exploit-protection-reference.md
+        - name: Network protection
+          items:
+          - name: Protect your network
+            href: network-protection.md
+          - name: Evaluate network protection
+            href: evaluate-network-protection.md
+          - name: Turn on network protection
+            href: enable-network-protection.md
+          - name: Network protection for Linux
+            href: network-protection-linux.md
+          - name: Network protection for MacOS
+            href: network-protection-macos.md
+        - name: Web protection
+          items:
+          - name: Web protection overview
+            href: web-protection-overview.md
+          - name: Web threat protection
+            items:
+            - name: Web threat protection overview
+              href: web-threat-protection.md
+            - name: Monitor web security
+              href: web-protection-monitoring.md
+            - name: Respond to web threats
+              href: web-protection-response.md
+          - name: Web content filtering
+            href: web-content-filtering.md
+
+      - name: Next-generation protection
+        items:
+        - name: Next-generation protection overview
+          href: next-generation-protection.md
+          items:
+          - name: Overview of Microsoft Defender Antivirus
+            href: microsoft-defender-antivirus-windows.md
+          - name: Microsoft Defender Antivirus on Windows Server
+            href: microsoft-defender-antivirus-on-windows-server.md
+          - name: Enable and update Microsoft Defender Antivirus on Windows Server
+            href: enable-update-mdav-to-latest-ws.md
+          - name: Better together - Microsoft Defender Antivirus and Microsoft Defender for Endpoint
+            href: why-use-microsoft-defender-antivirus.md
+          - name: Better together - Microsoft Defender Antivirus and Office 365
+            href: office-365-microsoft-defender-antivirus.md
+        - name: Evaluate Microsoft Defender Antivirus
+          href: evaluate-microsoft-defender-antivirus.md
+        - name: Configure Microsoft Defender Antivirus features
+          href: configure-microsoft-defender-antivirus-features.md
+        - name: Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
+          href: defender-endpoint-antivirus-exclusions.md
+        - name: Cloud protection and Microsoft Defender Antivirus
+          href: cloud-protection-microsoft-defender-antivirus.md
+          items:
+          - name: Why cloud protection should be on
+            href: why-cloud-protection-should-be-on-mdav.md
+          - name: Turn on cloud protection
+            href: enable-cloud-protection-microsoft-defender-antivirus.md
+          - name: Specify the cloud protection level
+            href: specify-cloud-protection-level-microsoft-defender-antivirus.md
+          - name: Cloud protection and sample submission
+            href: cloud-protection-microsoft-antivirus-sample-submission.md
+        - name: Configure and validate Microsoft Defender Antivirus network connections
+          href: configure-network-connections-microsoft-defender-antivirus.md
+        - name: Specify additional definition sets for network traffic inspection
+          href: specify-additional-definitions-network-traffic-inspection-mdav.md
+        - name: Tamper protection
+          items:
+          - name: Protect security settings with tamper protection
+            href: prevent-changes-to-security-settings-with-tamper-protection.md
+          - name: Manage tamper protection using Microsoft 365 Defender
+            href: manage-tamper-protection-microsoft-365-defender.md
+          - name: Manage tamper protection using Microsoft Intune
+            href: manage-tamper-protection-microsoft-endpoint-manager.md
+          - name: Manage tamper protection with Configuration Manager
+            href: manage-tamper-protection-configuration-manager.md
+          - name: Manage tamper protection on an individual device
+            href: manage-tamper-protection-individual-device.md
+          - name: FAQs on tamper protection
+            href: faqs-tamper-protection.md
+        - name: Turn on block at first sight
+          href: configure-block-at-first-sight-microsoft-defender-antivirus.md
+        - name: Configure the cloud block timeout period
+          href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
+        - name: Configure behavioral, heuristic, and real-time protection
+          href: configure-protection-features-microsoft-defender-antivirus.md
+        - name: Detect and block potentially unwanted applications
+          href: detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md
+        - name: Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
+          href: configure-real-time-protection-microsoft-defender-antivirus.md
+        - name: Configure remediation for Microsoft Defender Antivirus detections
+          href: configure-remediation-microsoft-defender-antivirus.md
+        - name: Configure Microsoft Defender Antivirus scans
+          href: schedule-antivirus-scans.md
+          items:
+          - name: Schedule scans using Group Policy
+            href: schedule-antivirus-scans-group-policy.md
+          - name: Schedule scans using PowerShell
+            href: schedule-antivirus-scans-powershell.md
+          - name: Schedule scans using WMI
+            href: schedule-antivirus-scans-wmi.md
+        - name: Use limited periodic scanning in Microsoft Defender Antivirus
+          href: limited-periodic-scanning-microsoft-defender-antivirus.md
+        - name: Compatibility with other security products
+          href: microsoft-defender-antivirus-compatibility.md
+        - name: Find malware detection names for Microsoft Defender for Endpoint
+          href: find-defender-malware-name.md
+
+        - name: Get your antivirus and antimalware updates
+          href: manage-updates-baselines-microsoft-defender-antivirus.md
+          items:
+          - name: Manage the sources for Microsoft Defender Antivirus protection updates
+            href: manage-protection-updates-microsoft-defender-antivirus.md
+          - name: Manage the schedule for when protection updates should be downloaded and applied
+            href: manage-protection-update-schedule-microsoft-defender-antivirus.md
+          - name: Manage gradual rollout process for Microsoft Defender updates
+            href: manage-gradual-rollout.md
+          - name: Configure gradual rollout process for Microsoft Defender updates
+            href: configure-updates.md
+          - name: Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date
+            href: manage-outdated-endpoints-microsoft-defender-antivirus.md
+          - name: Manage event-based forced updates
+            href: manage-event-based-updates-microsoft-defender-antivirus.md
+          - name: Manage updates for mobile devices and virtual machines (VMs)
+            href: manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md
+
+        - name: Manage Microsoft Defender Antivirus for your organization
+          href: configuration-management-reference-microsoft-defender-antivirus.md
+          items:
+          - name: Use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus
+            href: use-intune-config-manager-microsoft-defender-antivirus.md
+          - name: Use Group Policy settings to manage Microsoft Defender Antivirus
+            href: use-group-policy-microsoft-defender-antivirus.md
+          - name: Use PowerShell cmdlets to manage Microsoft Defender Antivirus
+            href: use-powershell-cmdlets-microsoft-defender-antivirus.md
+          - name: Use Windows Management Instrumentation (WMI) to manage Microsoft Defender Antivirus
+            href: use-wmi-microsoft-defender-antivirus.md
+          - name: Use the mpcmdrun.exe tool to manage Microsoft Defender Antivirus
+            href: command-line-arguments-microsoft-defender-antivirus.md
+          - name: Configure the notifications that appear on endpoints
+            href: configure-notifications-microsoft-defender-antivirus.md
+          - name: Specify whether users can locally modify Microsoft Defender Antivirus policy settings
+            href: configure-local-policy-overrides-microsoft-defender-antivirus.md
+          - name: Specify whether users can see or interact with Microsoft Defender Antivirus user interface
+            href: prevent-end-user-interaction-microsoft-defender-antivirus.md
+          - name: Turn on definition retirement
+            href: turn-on-definition-retirement.md
+
+        - name: Deploy and report on Microsoft Defender Antivirus
+          href: deploy-manage-report-microsoft-defender-antivirus.md
+          items:
+          - name: Deploy and enable Microsoft Defender Antivirus
+            href: deploy-microsoft-defender-antivirus.md
+          - name: Configure Microsoft Defender Antivirus in a remote desktop or virtual desktop infrastructure environment
+            href: deployment-vdi-microsoft-defender-antivirus.md
+          - name: Report on Microsoft Defender Antivirus
+            href: report-monitor-microsoft-defender-antivirus.md
+
+        - name: Scans and remediation
+          href: review-scan-results-microsoft-defender-antivirus.md
+          items:
+          - name: Configure and run on-demand Microsoft Defender Antivirus scans
+            href: run-scan-microsoft-defender-antivirus.md
+          - name: Run and review the results of a Microsoft Defender Offline scan
+            href: microsoft-defender-offline.md
+          - name: Configure Microsoft Defender Antivirus scanning options
+            href: configure-advanced-scan-types-microsoft-defender-antivirus.md
+          - name: Restore quarantined files in Microsoft Defender Antivirus
+            href: restore-quarantined-files-microsoft-defender-antivirus.md
+
+        - name: Microsoft Defender Antivirus exclusions
+          href: configure-exclusions-microsoft-defender-antivirus.md
+          items:
+          - name: Exclusions based on file extension and folder location
+            href: configure-extension-file-exclusions-microsoft-defender-antivirus.md
+          - name: Exclusions for files opened by processes
+            href: configure-process-opened-file-exclusions-microsoft-defender-antivirus.md
+          - name: Contextual file and folder exclusions
+            href: configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md
+          - name: Exclusions for Windows Server
+            href: configure-server-exclusions-microsoft-defender-antivirus.md
+          - name: Common mistakes to avoid
+            href: common-exclusion-mistakes-microsoft-defender-antivirus.md
+
+        -  name: Troubleshooting mode for Defender for Endpoint
+           items:
+           - name: Get started with troubleshooting mode
+             href: enable-troubleshooting-mode.md
+           - name: Troubleshooting mode scenarios
+             href: troubleshooting-mode-scenarios.md
+
+        - name: Diagnostics and performance for Microsoft Defender Antivirus
+          items:
+          - name: Device health reports
+            href: device-health-reports.md
+            items:
+            - name: Microsoft Defender Antivirus health report
+              href: device-health-microsoft-defender-antivirus-health.md
+            - name: Sensor health and OS report
+              href: device-health-sensor-health-os.md
+          - name: Troubleshoot performance issues related to real-time protection
+            href: troubleshoot-performance-issues.md
+          - name: Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
+            href: troubleshoot-reporting.md
+          - name: Collect diagnostic data of Microsoft Defender Antivirus
+            href: collect-diagnostic-data.md
+          - name: Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus
+            href: collect-diagnostic-data-update-compliance.md
+          - name: Improve performance of Microsoft Defender Antivirus
+            href: tune-performance-defender-antivirus.md
+
+
+
+
+
+
+
+
+            
+          
+
+
+
+            
+
+              
+
+            
+
+
+
+      
+
+
 
 
 
