@@ -45,7 +45,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 ## Deploy using group policy
 
-1. Enable or Disable Removable Storage Access Control:
+1. Enable or Disable Removable Storage Access Control (Optional):
 
    You can enable or disable Device control as follows:
 
