@@ -23,40 +23,43 @@ description: Learn how to limit guest sharing to specific Azure AD or Microsoft 
 
 By default, users can invite people outside the organization as guests. This includes adding them to teams in Microsoft Team, SharePoint sites, and sharing individual files and folders with them.
 
-If you only want to allow guests from specific organizations, you can specify these organizations in the Azure Active Directory cross-tenant access settings for [B2B collaboration](/azure/active-directory/external-identities/what-is-b2b). Note that guest invitations can still be sent to all organizations, but only guests from organizations that you allow will have access to shared resources.
+If you only want to allow guests from specific organizations, you can specify these organizations in the Azure Active Directory external collaboration settings and cross-tenant access settings for [B2B collaboration](/azure/active-directory/external-identities/what-is-b2b).
 
 > [!NOTE]
 > This article assumes that you have [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration) turned on.
 
+## Configure external collaboration settings
+
+With Azure AD external collaboration settings, you can specify the domains that you want to allow for external collaboration. Guest invitations to all other domains - including non-Azure AD domains - will be blocked. (Guests from blocked domains that are already in your directory will remain.)
+
+To allow guest invitations to a specific organization
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **External collaboration settings**.
+1. Under **Collaboration restrictions**, choose **Allow invitations only to the specified domains**.
+1. Type the domains that you want to allow, and then select **Save**.
+
 ## Configure cross-tenant access settings
 
-The first step in limiting guest sharing is to change the default settings in the Azure AD cross-tenant access settings to block inviting guests by default. Then you can allow guests from specific organizations. Note that this will block access for existing guests whose domains are not specifically allowed.
+If your allowed domains are other Azure AD organizations, cross-tenant access settings also affect how guests access your organization.
+
+If the defaults have changed, add an organization
+
+If you want to limit who in the organization can be added as a guest, see
+
+
+If your allowed domains are other Azure AD organizations, you can use cross-tenant access settings to further restrict access by specifying which users in your organization can be invited as guests to the other organization.
+
+Additionally, cross-tenant access settings work at the time of authentication, whereas the external collaboration settings discussed above block invitations. By setting up 
 
 > [!NOTE]
 > Changes to cross-tenant access settings may take two hours to take effect.
 
-### Set the default B2B collaboration settings to block inviting guests
-
-Because guest access is enabled by default, limiting guests to certain organizations requires blocking inbound B2B collaboration by default.
-
-To block inbound B2B collaboration by default
-1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
-1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
-1. Select the **Default settings** tab.
-1. Under **Inbound access settings**, select **Edit inbound defaults**.
-1. Select the **B2B collaboration** tab and the **Users and groups** tab.
-1. Under **Access status**, choose **Block access**.
-1. Select the **External access** tab.
-1. Under **Access status**, choose **Block access**.
-1. Select **Save**.
-1. Close the **Default settings** blade.
 
 ### Add the organization from which you want to allow guests
 
 Next, add the organizations from which you want to allow guests to the Azure AD cross-tenant access list.
 
 To add an organization
-1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.
 1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
