@@ -85,7 +85,7 @@ On the incident page:
 
 For more information see ‘view attack disruption details and results’.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Selecting an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
+:::image type="content" source="media/auto-attack-disruption/fig1-auto-attack-disruption.png" alt-text="Selecting an incident in the Microsoft 365 Defender portal" lightbox="media/auto-attack-disruption/Fig1-auto-attack-disruption.png":::
 
 ## See also
 
