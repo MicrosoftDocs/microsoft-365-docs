@@ -1564,7 +1564,7 @@
               href: ediscovery-building-search-queries.md
             - name: Use the KQL editor to build search queries
               href: ediscovery-kql-editor.md
-            - name: Use the query builder to build search queries
+            - name: Use the query builder to create search queries
               href: ediscovery-query-builder.md
             - name: Keyword queries and search conditions
               href: ediscovery-keyword-queries-and-search-conditions.md 

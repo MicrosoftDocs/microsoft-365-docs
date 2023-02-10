@@ -1,5 +1,5 @@
 ---
-title: Use the query builder to build search queries (preview)
+title: Use the query builder to create search queries (preview)
 description: "Use the query builder to narrow the scope of the search when searching for data using eDiscovery (Premium) in Microsoft Purview."
 f1.keywords:
 - NOCSH
@@ -20,7 +20,7 @@ search.appverid:
 ms.custom: seo-marvel-mar2020
 ---
 
-# Use the query builder to build search queries (preview)
+# Use the query builder to create search queries (preview)
 
 The query builder option in Microsoft Purview eDiscovery tools search provides a visual filtering experience when you build search queries in eDiscovery (Premium). MORE INFO....
   
