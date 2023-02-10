@@ -78,7 +78,6 @@ You can start with these sample file templates to speed up the sample file creat
 1. Save your customized sample file to use when you [create EDM SIT schema and rule package](sit-create-edm-sit-unified-ux-schema-rule-package.md).
 
 
-
 <!--
 ![image showing a tab separated table with four columns and three rows of synthetic representative data](../media/sit-edm-tsv-sample-file.png)-->
 
