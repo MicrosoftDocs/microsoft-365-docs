@@ -42,7 +42,7 @@ You can also get product updates and important notifications through the [messag
 
 ## February 2023
 
-- (GA) The [query resources report in advanced hunting](advanced-hunting-limits#view-query-resources-report-to-find-inefficient-queries) is now generally available.
+- (GA) The [query resources report in advanced hunting](advanced-hunting-limits.md#view-query-resources-report-to-find-inefficient-queries) is now generally available.
 
 ## January 2023
 
