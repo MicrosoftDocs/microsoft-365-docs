@@ -46,6 +46,12 @@ If the defaults have changed, add an organization
 If you want to limit who in the organization can be added as a guest, see
 
 
+[Limit organizations where users can have guest accounts](limit-organizations-where-users-have-guest-accounts.md)
+
+[Limit who can be invited by an organization](limit-invitations-from-specific-organization.md)
+
+
+
 If your allowed domains are other Azure AD organizations, you can use cross-tenant access settings to further restrict access by specifying which users in your organization can be invited as guests to the other organization.
 
 Additionally, cross-tenant access settings work at the time of authentication, whereas the external collaboration settings discussed above block invitations. By setting up 
