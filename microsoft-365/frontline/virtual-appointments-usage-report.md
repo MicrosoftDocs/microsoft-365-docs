@@ -15,6 +15,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - m365initiative-meetings
+  - tier1
 description: Learn how to use the Virtual Appointments usage report in the Microsoft Teams admin center to get an overview of virtual appointment activity in your organization.
 appliesto: 
   - Microsoft Teams
@@ -77,7 +78,7 @@ Here's what you'll see on each tab of the report.
 
 The graphs you'll see here depend on the license you have.
 
-:::image type="content" source="media/va-usage-report-virtual-appointments.png" alt-text="Screenshot of the Virtual Appointments tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/va-usage-report-virtual-appointments.png":::
+:::image type="content" source="media/virtual-appts-report.png" alt-text="Screenshot of the Virtual Appointments tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/virtual-appts-report.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -90,7 +91,7 @@ The graphs you'll see here depend on the license you have.
 
 ### Duration
 
-:::image type="content" source="media/va-usage-report-duration.png" alt-text="Screenshot of the Duration tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/va-usage-report-duration.png":::
+:::image type="content" source="media/duration-report.png" alt-text="Screenshot of the Duration tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/duration-report.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -105,7 +106,7 @@ The graphs you'll see here depend on the license you have.
 
 This tab shows appointments scheduled through Bookings.
 
-:::image type="content" source="media/va-usage-report-bookings.png" alt-text="Screenshot of the Bookings tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/va-usage-report-bookings.png":::
+:::image type="content" source="media/bookings-report.png" alt-text="Screenshot of the Bookings tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/bookings-report.png":::
 
 |Callout |Description  |
 |--------|-------------|

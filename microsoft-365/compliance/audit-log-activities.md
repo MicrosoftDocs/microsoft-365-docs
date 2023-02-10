@@ -41,148 +41,154 @@ Select one of the following links to go to a specific table.
 
 :::row:::
     :::column:::
+        [Sensitive information types  ](#sensitive-information-types)
+    :::column-end:::
+    :::column:::
         [Sharing and access request activities](#sharing-and-access-request-activities)
     :::column-end:::
     :::column:::
         [Synchronization activities](#synchronization-activities)
     :::column-end:::
-    :::column:::
-        [Site permissions activities](#site-permissions-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Site permissions activities](#site-permissions-activities)
+    :::column-end:::
     :::column:::
         [Site administration activities](#site-administration-activities)
     :::column-end:::
     :::column:::
         [Exchange mailbox activities](#exchange-mailbox-activities)
     :::column-end:::
-    :::column:::
-        [User administration activities](#user-administration-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [User administration activities](#user-administration-activities)
+    :::column-end:::
     :::column:::
         [Azure AD group administration activities](#azure-ad-group-administration-activities)
     :::column-end:::
     :::column:::
         [Application administration activities](#application-administration-activities)
     :::column-end:::
-    :::column:::
-        [Role administration activities](#role-administration-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Role administration activities](#role-administration-activities)
+    :::column-end:::
     :::column:::
         [Directory administration activities](#directory-administration-activities)
     :::column-end:::
     :::column:::
         [eDiscovery activities](#ediscovery-activities)
     :::column-end:::
-    :::column:::
-        [eDiscovery (Premium) activities](#ediscovery-premium-activities)
-    :::column-end:::
+
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [eDiscovery (Premium) activities](#ediscovery-premium-activities)
+    :::column-end:::
     :::column:::
         [Power BI activities](#power-bi-activities)
     :::column-end:::
     :::column:::
         [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
-    :::column:::
-        [Microsoft Teams activities](#microsoft-teams-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Microsoft Teams activities](#microsoft-teams-activities)
+    :::column-end:::
     :::column:::
         [Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)
     :::column-end:::
     :::column:::
         [Microsoft Teams Shifts activities](#microsoft-teams-shifts-activities)
     :::column-end:::
-    :::column:::
-        [Yammer activities](#yammer-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Yammer activities](#yammer-activities)
+    :::column-end:::
     :::column:::
         [Microsoft Power Automate activities](#microsoft-power-automate-activities)
     :::column-end:::
     :::column:::
         [Microsoft Power Apps activities](#microsoft-power-apps-activities)
     :::column-end:::
-    :::column:::
-        [Microsoft Stream activities](#microsoft-stream-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Microsoft Stream activities](#microsoft-stream-activities)
+    :::column-end:::
     :::column:::
         [Content explorer activities](#content-explorer-activities)
     :::column-end:::
     :::column:::
         [Quarantine activities](#quarantine-activities)
     :::column-end:::
-    :::column:::
-        [Microsoft Forms activities](#microsoft-forms-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Microsoft Forms activities](#microsoft-forms-activities)
+    :::column-end:::
     :::column:::
         [Sensitivity label activities](#sensitivity-label-activities)
     :::column-end:::
     :::column:::
         [Retention policy and retention label activities](#retention-policy-and-retention-label-activities)
     :::column-end:::
-    :::column:::
-        [Briefing email activities](#briefing-email-activities)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
+        [Briefing email activities](#briefing-email-activities)
+    :::column-end:::
+       :::column:::
         [MyAnalytics activities](#myanalytics-activities)
     :::column-end:::
     :::column:::
         [Information barriers activities](#information-barriers-activities)
-    :::column-end:::
-    :::column:::
-        [Disposition review activities](#disposition-review-activities)
-    :::column-end:::
+    :::column-end::: 
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Disposition review activities](#disposition-review-activities)
+    :::column-end:::
     :::column:::
         [Communication compliance activities](#communication-compliance-activities)
     :::column-end:::
     :::column:::
         [Report activities](#report-activities)
     :::column-end:::
-    :::column:::
-        [Exchange admin activities](#exchange-admin-audit-log)
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+        [Exchange admin activities](#exchange-admin-audit-log)
+    :::column-end:::
     :::column:::
         [Encrypted message portal activities](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
         [SystemSync activities](#systemsync-activities)
     :::column-end:::
+:::row-end:::
+
+:::row:::
     :::column:::
         [Viva Goals activities](#viva-goals-activities)
     :::column-end:::
 :::row-end:::
-
 
 
 ## File and page activities
@@ -272,6 +278,15 @@ The following table describes the folder activities in SharePoint Online and One
 |Moved folder|FolderMoved|User moves a folder to a different location on a site.|
 |Renamed folder|FolderRenamed|User renames a folder on a site.|
 |Restored folder|FolderRestored|User restores a deleted folder from the recycle bin on a site.|
+
+## Sensitive information types
+The following table describes the audit events for activities involving creation and updating of [sensitive information types](/microsoft-365/compliance/create-a-custom-sensitive-information-type).
+
+|Friendly name|Operation|Description|
+|:-----|:-----|:-----|
+|Created new sensitive information type| CreateRulePackage /  EditRulePackage* | A new sensitive information type was [created](/microsoft-365/compliance/create-a-custom-sensitive-information-type). This includes SIT created by copying an [out of the box SIT](/microsoft-365/compliance/create-a-custom-sensitive-information-type). </br><p>**Note**: This activity will surface under the audit activities “Created rule package” or “Edited rule package.” </p>|
+|Edited a sensitive information type|EditRulePackage| An existing sensitive information type was edited. This can include operations like adding/removing a pattern and editing the regex/keyword associated with the sensitive information type. </br><p>**Note:** This activity will surface under the audit activity "Edited rule package."</p> |
+| Deleted a sensitive information type|EditRulePackage / RemoveRulePackage | An existing sensitive information type was deleted. </br><p>**Note:** This activity will surface under the audit activity “Edited rule package” or “Removed rule package.”</p> |
 
 ## SharePoint list activities
 
@@ -753,6 +768,7 @@ Additional auditing information for sensitivity labels:
 - When you use sensitivity labels for Microsoft 365 Groups, and therefore Teams sites that are group-connected, the labels are audited with group management in Azure Active Directory. For more information, see [Audit logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 - When you use sensitivity labels for Teams meeting invites, and Teams meeting options and chat, see [Search the audit log for events in Microsoft Teams](/microsoftteams/audit-log-events).
 - When you use sensitivity labels with Power BI, see [Audit schema for sensitivity labels in Power BI](/power-bi/enterprise/service-security-sensitivity-label-audit-schema).
+- When you use sensitivity labels with Microsoft Defender for cloud apps, see [Governing connected apps](/defender-cloud-apps/governance-actions) and the labeling information for file governance actions.
 - When you apply sensitivity labels by using the Azure Information Protection client or scanner, or the Microsoft Information Protection (MIP) SDK, see [Azure Information Protection audit log reference](/azure/information-protection/audit-logs).
 
 ## Retention policy and retention label activities
@@ -900,8 +916,8 @@ The following table lists the user and admin activities in Viva Goals that are l
 |Team deleted |Team deleted |A team within an organization on Viva Goals has been deleted by the user.|
 |Data exported |Data exported |A user has exported list of OKRs or list of users in an organization on Viva Goals.|
 |Goals policy updated |Goals policy updated |The global admin has modified the policy or settings at the tenant level on Viva Goals. For example, the global admin has configured who can create organizations on Viva Goals.  |
-|Organisation settings updated |Organisation settings updated |The user (typically Organization owners or admins) has updated organization specific settings on Viva Goals.  |
-|Organisation  integrations updated |Organisation  integrations updated |The user (typically Organization owners or admins) has configured a third party integration or updated an existing third party integration for an organization on Viva Goals.  |
+|Organization settings updated |Organization settings updated |The user (typically Organization owners or admins) has updated organization specific settings on Viva Goals.  |
+|Organization  integrations updated |Organization  integrations updated |The user (typically Organization owners or admins) has configured a third party integration or updated an existing third party integration for an organization on Viva Goals.  |
 |OKR or Project created |OKR or Project created |User has created an OKR or Project on Viva Goals.  |
 |OKR or Project updated |OKR or Project updated |An OKR/Project has been modified or a check-in has been made by the user or an integration on Viva Goals.  |
 |OKR or Project deleted |OKR or Project deleted |User has deleted an OKR or Project.  |

@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.date:
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
@@ -17,6 +16,7 @@ description: Admins can learn how to apply Standard and Strict policy settings a
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
+ms.date: 07/21/2020
 ---
 
 # Preset security policies in EOP and Microsoft Defender for Office 365

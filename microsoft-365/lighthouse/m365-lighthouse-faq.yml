@@ -1,5 +1,6 @@
 ### YamlMime:FAQ
 metadata:
+  ms.date: 07/12/2021
   title: "Microsoft 365 Lighthouse frequently asked questions (FAQs)"
   f1.keywords: NOCSH
   ms.author: sharik
@@ -68,7 +69,7 @@ sections:
           
       - question: Why do I see data for some customer tenants but not others?
         answer: |
-          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller relationship or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to enable more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
+          For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller relationship or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. We recommend establishing GDAP with your customers to allow more secure delegated access. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license and no more than 2500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
 
           If GDAP is established with the customer, an MSP technician must be in a GDAP-enabled security group that is assigned the appropriate roles to be able to manage that customer's data in Lighthouse. GDAP roles assigned to that security group impact which customer data can be managed within Lighthouse. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for details on which delegated and partner tenant roles are recommended to use Lighthouse. For instructions on how to view which GDAP roles have been assigned to you for different customer tenants in Lighthouse, see [View your Azure Active Directory roles in Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   
          
@@ -76,7 +77,7 @@ sections:
         answer: |
           If you don't want to see certain tenants and their data in Lighthouse, you can inactivate those tenants. To inactivate a tenant, follow these steps:
           
-          1. Select **Tenants** in the left navigation pane to open the **Tenants** page.
+          1. In the left navigation pane in Lighthouse, select **Tenants** to open the **Tenants** page.
           1. Find the tenant that you want to inactivate, select the three dots (more actions) next to the tenant name, and then select **Inactivate tenant**.
           1. In the confirmation dialog, select **Confirm** to inactivate the tenant.
               > [!NOTE]
@@ -192,7 +193,7 @@ sections:
         answer: |
           Your feedback matters and is important to us! There are a few different ways for you to submit feedback:
 
-          - Go to the [Microsoft 365 Lighthouse Feedback page](https://aka.ms/m365lighthouseuservoice). You can start conversations about Lighthouse and Windows 365 features, post questions for other partners or Microsoft employees, provide feedback and feature ideas, and more.
+          - Go to the [Microsoft 365 Lighthouse Feedback page](https://aka.ms/m365lighthouseuservoice). You can start conversations about Lighthouse and Windows 365 features, post questions for other MSPs or Microsoft employees, provide feedback and feature ideas, and more.
           - Select the Feedback icon in the upper-right corner of Lighthouse.
           - Respond to the occasional (not more than once a month) pop-up window in Lighthouse that asks you to provide feedback.
           

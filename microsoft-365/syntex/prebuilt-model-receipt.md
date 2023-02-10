@@ -35,7 +35,7 @@ Follow the instructions in [Create a model in Syntex](create-syntex-model.md) to
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
 
-    ![Screenshot of the new models page showing the Add a file to analyze section.](../media/content-understanding/prebuilt-add-file-to-analyze.png) 
+    ![Screenshot of the new models page showing the Add a file to analyze section.](../media/content-understanding/prebuilt-add-file-to-analyze-receipt.png) 
 
 2. On the **Files to analyze the model** page, select **Add** to find the file you want to use.
 
