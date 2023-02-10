@@ -151,7 +151,7 @@ If you need to specify a name for your EDM SIT schemas, you have to use the clas
 
 ### You need to edit EDM schemas that were created in the classic experience
 
-All schemas that are created using the classic experience or uploaded as a XML file using PowerShell are not viewable or manageable in the new experience.
+All schemas that are created using the classic experience or uploaded as an XML file using PowerShell are not viewable or manageable in the new experience.
 
 ## Next steps
 
