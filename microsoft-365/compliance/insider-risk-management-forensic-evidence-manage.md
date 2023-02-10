@@ -103,10 +103,16 @@ To delete an existing notification template, select a template and select **Dele
 
 You can view captured clips by selecting the **Investigate forensic recordings** button when you're using the **Forensic evidence (preview)** tab.  
 
-> [!IMPORTANT]
-> You must be a member of the Insider Risk Management Investigator's role or the Insider Risk Management role. The **Investigate forensic recordings** button won't appear if you're not a member of one of these groups. [Learn more about role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
+SCREENSHOT OF BUTTON GOES HERE
 
-Selecting the **Investigate forensic recordings** button provides access to all available captures. Each capture contains events within the capture to help focus your review on specific activities for the capturing session, which includes the following information:
+> [!IMPORTANT]
+> This button only appears if you're a member of the Insider Risk Management Investigator's role or the Insider Risk Management role. [Learn more about role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
+
+Selecting the **Investigate forensic recordings** button provides immediate access to all available captures. 
+
+SCREENSHOT GOES HERE SHOWING DEFAULT VIEW
+
+Each capture contains events within the capture to help focus your review on specific activities for the capturing session, which includes the following information:
 
 - **Date**: The date, time (UTC), and duration of the capture.
 - **User**: The name of the user.
@@ -114,23 +120,26 @@ Selecting the **Investigate forensic recordings** button provides access to all 
 - **Activity**: The insider risk management activity type included in the capture. These activities are based on global and policy indicators assigned to the associated policy.
 - **Application accessed**: The application that the user was accessing when the event took place.
 - **URL accessed**: The URL that the user was accessing when the event took place.
-- **Active window title**: The name of the window that the user was accessing when the event took place.
-
-SCREENSHOT GOES HERE SHOWING DEFAULT VIEW
+- **Active window title**: The title of the window that the user was accessing when the event took place.
 
 You can use the filters at the top of the screen to filter for the user or users that you want to focus on. 
 When you apply filters, you see:
 
 - A list of capture events on the left
 - A clip player in the middle of the screen
-- A transcript to the right of the clip player (appears when you select a capture event). A set of filters appears above the transcript so you can filter it further. 
+- A transcript to the right of the clip player that appears when you select a capture event. A set of filters appears above the transcript so you can filter the transcript. 
 
 SCREENSHOT GOES HERE SHOWING FILTER APPLIED
 
 >[!IMPORTANT]
 >Forensic evidence clips are deleted 120 days after they're captured or at the end of the preview period, whichever is sooner. You can download or transfer forensic evidence clips before they're deleted.
 
-How to delete a capture. 
+### Delete a clip
+
+1. Select the clip on the left side of the screen.
+2. Select the Trash can button. 
+
+### Export clips
 
 
 
