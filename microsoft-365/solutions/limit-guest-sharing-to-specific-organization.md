@@ -37,53 +37,16 @@ To allow guest invitations to a specific organization
 1. Under **Collaboration restrictions**, choose **Allow invitations only to the specified domains**.
 1. Type the domains that you want to allow, and then select **Save**.
 
-## Configure cross-tenant access settings
+## Cross-tenant access settings
 
-If your allowed domains are other Azure AD organizations, cross-tenant access settings also affect how guests access your organization.
+If your allowed domains are other Azure AD organizations, cross-tenant access settings also affect how guests access your organization. By default, all domains are allowed for B2B collaboration with guest accounts. If you've changed your default settings, check to make sure the domains that you want to collaborate with are allowed. For more information, see [Overview: Cross-tenant access with Azure AD External Identities](/azure/active-directory/external-identities/cross-tenant-access-overview).
 
-If the defaults have changed, add an organization
+You can use cross-tenant access settings to limit which of your users can be invited to another Azure AD organization. See [Limit who can be invited by an organization](limit-invitations-from-specific-organization.md) for more information.
 
-If you want to limit who in the organization can be added as a guest, see
-
-
-[Limit organizations where users can have guest accounts](limit-organizations-where-users-have-guest-accounts.md)
-
-[Limit who can be invited by an organization](limit-invitations-from-specific-organization.md)
-
-
-
-If your allowed domains are other Azure AD organizations, you can use cross-tenant access settings to further restrict access by specifying which users in your organization can be invited as guests to the other organization.
-
-Additionally, cross-tenant access settings work at the time of authentication, whereas the external collaboration settings discussed above block invitations. By setting up 
+You can also limit which organizations where your users can have a guest account. See [Limit organizations where users can have guest accounts](limit-organizations-where-users-have-guest-accounts.md) for more information.
 
 > [!NOTE]
 > Changes to cross-tenant access settings may take two hours to take effect.
-
-
-### Add the organization from which you want to allow guests
-
-Next, add the organizations from which you want to allow guests to the Azure AD cross-tenant access list.
-
-To add an organization
-1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings**.
-1. Select **Organizational settings**.
-1. Select **Add organization**.
-1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
-1. Select the organization in the search results, and then select **Add**.
-1. The organization appears in the **Organizational settings** list.
-
-At this point, all access settings for this organization are inherited from your default settings.
-
-### Configure inbound settings for the organization to allow all users
-
-Once you have added the organization, you need to update the organization's inbound settings to allow B2B collaboration users access as guests. Do this for each organization where you want to allow guests.
-
-1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
-1. Select the inbound access link for the organization that you want to modify.
-1. On the **B2B collaboration** tab, choose **Customize settings**.
-1. Under **Access status**, choose **Allow access**.
-1. Under **Target**, choose to allow all users.
-1. Select **Save** and close the **Outbound access settings** blade.
 
 ## Related topics
 
