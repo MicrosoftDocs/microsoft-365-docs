@@ -40,6 +40,12 @@ Whether it be adding new solutions to the [Microsoft Purview compliance portal](
 
 ## February 2023
 
+### Communication compliance
+
+- **Mark a policy as a favorite**: [Mark a policy as a favorite and then filter and sort your policy lists](communication-compliance-policies.md#mark-a-policy-as-a-favorite).
+- **Filter email blasts**: [Avoid generating alerts when messages are sent from email blast services](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy).
+- **Filter Message details report by a specific user**: [Filter the Message details report by a specific user or users to save time and resources](communication-compliance-reports-audits.md#message-details-report).
+
 ### Data lifecycle management and records management
 
 - **Rolling out in preview**: Auto-labeling retention policies now support [simulation mode](apply-retention-labels-automatically.md#learn-about-simulation-mode), so you can test out your policy configuration and view results before deploying in production.
