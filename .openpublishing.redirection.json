@@ -10701,6 +10701,11 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "microsoft-365/frontline/ehr-admin-cerner.md",
+    "redirect_url": "/microsoft-365/frontline/ehr-admin-oracle-health",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "microsoft-365/compliance/archive-slack-data-microsoft.md",
     "redirect_url": "/microsoft-365/compliance/archiving-third-party-data",
     "redirect_document_id": false
