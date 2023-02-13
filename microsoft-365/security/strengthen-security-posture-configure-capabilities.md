@@ -24,9 +24,9 @@ ms.collection:
 - tier1
 ---
 
-# Strengthen your security posture - Phase 1: Configure capabilities
+# Strengthen your security posture - Configure capabilities
 
-Welcome to **Phase 1: Configure capabilities** in our **[Strengthen your security posture](../security/security-posture-solution-overview.md)** solution.
+Welcome to **Phase 1: Configure capabilities** to **[Strengthen your security posture](../security/security-posture-solution-overview.md)**
 
 This table includes information on the capabilities you can configure within the Microsoft 365 Defender portal to discover and protect the devices in your organization against threats.
 
