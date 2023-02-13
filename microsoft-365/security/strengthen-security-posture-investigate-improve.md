@@ -28,7 +28,7 @@ ms.collection:
 
 Welcome to Phase 3 of [Strengthen your security posture](../security/security-posture-solution-overview.md): **Investigate and improve**.
 
-This article describes the following capabilities that you can use to measure your current security posture and actions you can take to start improving it:
+This article describes capabilities you can use to measure your current security posture and actions you can take to start improving it:
 
 1. [Review Microsoft Secure Score](#1-review-microsoft-secure-score)
 2. [Take Secure Score recommended actions](#2-take-secure-score-recommended-actions)
@@ -50,4 +50,4 @@ To get started see [Security recommendations](../security/defender/microsoft-sec
 
 ## Next step
 
-- Proceed to [Phase 4: Track and maintain](../security/strengthen-security-posture-track-maintain.md)
+- [Phase 4: Track and maintain](../security/strengthen-security-posture-track-maintain.md)
