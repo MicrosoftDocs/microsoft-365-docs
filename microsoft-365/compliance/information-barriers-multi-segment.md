@@ -1,5 +1,5 @@
 ---
-title: "Information barriers with multi-segment support"
+title: "Use multi-segment support in information barriers"
 description: Learn how to use multi-segment support with information barriers in Microsoft Purview.
 keywords: Microsoft 365, Microsoft Purview, compliance, information barriers
 ms.author: robmazz
@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ---
 
-# Information barriers with multi-segment support
+# Use multi-segment support in information barriers
 
 > [!IMPORTANT]
 > Support for assigning users to multiple segments is only available when enabling information barriers in your organization after February 15, 2023. <br><br> Organizations that have enabled IB prior to February 15, 2023 are on the older version of information barriers and users are restricted to being assigned to only one segment. Organizations with information barriers configured prior to February 15, 2023 will be eligible to upgrade to the newest version of information barriers in the future. For more information, see the [information barriers roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=information%2Cbarriers).
