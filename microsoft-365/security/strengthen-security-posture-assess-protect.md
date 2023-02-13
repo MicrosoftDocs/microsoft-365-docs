@@ -62,4 +62,4 @@ To learn more and get started with assigning values to your devices, see [Assign
 
 ## Next step
 
-- Proceed to [Phase 3: Investigate and improve](strengthen-security-posture-investigate-improve.md)
+- [Phase 3: Investigate and improve](strengthen-security-posture-investigate-improve.md)
