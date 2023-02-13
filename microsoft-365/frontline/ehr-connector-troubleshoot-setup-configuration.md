@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot Microsoft Teams EHR connector setup and configuration
-author: LanaChin
-ms.author: v-lanachin
-manager: samanro
+author: samanro
+ms.author: samanro
+manager: pamgreen
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -88,7 +88,7 @@ Currently, group visits are only supported in Epic.
 
 Here are some common reasons why you may be experiencing this issue when integrating with Epic, and how to resolve it.
 
-- You're using an incorrect version of Teams. Group visits require a minimum of Teams version 1.2 and an upgrade must be requested in Epic App Market.
+- You're using an incorrect version of Teams. Group visits require a minimum of Teams version 1.2 and an upgrade must be requested in Epic Connection Hub.
 - New FDI records need to be added. Your Epic analyst will need to create new FDI records for group visits to support the provider and patient join experience. Additionally, you must change the context token in the group visit FDI records from ```sessionId=%CSN%``` to ```sessionId=%CONFERENCEID%```. Contact your Epic technical specialist for help.
 - If you're still experiencing this issue after trying the previous steps in this list, your tenant settings may need to be changed. Contact Microsoft Support to open a support ticket for the Teams EHR connector. Indicate in the ticket that group settings need to be enabled.
 
