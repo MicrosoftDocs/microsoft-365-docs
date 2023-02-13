@@ -59,7 +59,7 @@ Add priority accounts from the **Microsoft 365 Defender page**.
 
 1. Go to  Microsoft 365 Defender at <a href="https://security.microsoft.com/" target="_blank">https://security.microsoft.com/</a>.
 
-2. Go to **Settings** > **Email and Collaboration** > **User Tags** > **Create**. T
+2. Go to **Settings** > **Email and Collaboration** > **User Tags** > **Create**.
 
 3. The priority account tag is already created for you by default. By selecting **Edit** you can add users to the priority tag. Then, **Add members** > **Add** to add members to the priority account.
 
