@@ -10699,6 +10699,11 @@
     "source_path": "microsoft-365/compliance/data-loss-prevention-policies.md",
     "redirect_url": "microsoft-365/compliance/dlp-learn-about-dlp",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "/microsoft-365/compliance/archive-slack-data-microsoft.md",
+    "redirect_url": "/microsoft-365/compliance/archiving-third-party-data",
+    "redirect_document_id": false
   }
  ]
 }
