@@ -50,13 +50,13 @@ The four phases are described here and each section corresponds to a separate ar
 
 It's critical to have full visibility into your assets and to the attack surface of your organization. You can't protect what you can't see. The Microsoft 365 Defender portal provides many capabilities to discover and protect the devices in your organization against threats. This can include, configuring device discovery to help you find unmanaged devices, taking advantage of available integrations to increase visibility into a complete OT/IOT asset inventory, and testing available attack surface reduction rules to see how they might impact your environment.
 
-For more information, see [Strengthen your security posture - Phase 1: Configure capabilities](strengthen-security-posture-configure-capabilities.md).
+For more information, see [Strengthen your security posture - Configure capabilities](strengthen-security-posture-configure-capabilities.md).
 
 ## 2. Assess and protect
 
 Central to understanding your security posture is having a comprehensive inventory of all your assets. The Microsoft Defender for Endpoint device inventory provides you with an accurate view into the assets in your network along with detailed information about those assets. The more information you have about your assets the better you can manage and assess the risks associated with them.
 
-For more information, see [Strengthen your security posture - Phase 2: Assess and protect](strengthen-security-posture-assess-protect.md).
+For more information, see [Strengthen your security posture - Assess and protect](strengthen-security-posture-assess-protect.md).
 
 ## 3. Investigate and improve
 
@@ -64,14 +64,14 @@ Now that you've started to get to know your assets and taken some initial steps 
 
 Defender Vulnerability Management also provides security recommendations for cybersecurity weaknesses identified in your organization and maps them to actionable security recommendations that can be prioritized.
 
-For more information on how to start taking action to investigate and protect against weaknesses in your organization, see [Strengthen your security posture - Phase 3: Investigate and improve](strengthen-security-posture-investigate-improve.md).
+For more information on how to start taking action to investigate and protect against weaknesses in your organization, see [Strengthen your security posture - Investigate and improve](strengthen-security-posture-investigate-improve.md).
 
 ## 4. Track and maintain
 
 While using the capabilities we already discussed to maintain and keep improving your security posture, such as onboarding newly discovered devices and reviewing and prioritizing security recommendations, the Microsoft 365 Defender portal also provides capabilities that you can use to keep up to date with new vulnerabilities, and to proactively explore your network for threats.
 
-For more information, see [Strengthen your security posture - Phase 4: Track and maintain](strengthen-security-posture-track-maintain.md).
+For more information, see [Strengthen your security posture - Track and maintain](strengthen-security-posture-track-maintain.md).
 
 ## Next step
 
-- Proceed to [Strengthen your security posture - Phase 1: Configure capabilities](strengthen-security-posture-configure-capabilities.md)
+- [Strengthen your security posture - Configure capabilities](strengthen-security-posture-configure-capabilities.md)
