@@ -1,9 +1,9 @@
 ---
 title: Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer:
-manager: samanro
+author: samanro
+ms.author: samanro
+ms.reviewer: imarquesgil
+manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -48,7 +48,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the
 ### Manage your connection instances
 
   - To create a new connection instance, select **Create instance**.
-  - To view more details about an existing connection instance, click the instance name. On the details page, you'll see health information, including mapping and account authorization errors (if any), the list of mappings (if any), and more. You can also choose **Edit** to update settings in the wizard.
+  - To view more details about an existing connection instance, select the instance name. On the details page, you'll see health information, including mapping and account authorization errors (if any), the list of mappings (if any), and more. You can also choose **Edit** to update settings in the wizard.
 
     :::image type="content" source="media/shifts-connector-ukg-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-ukg-manage-details.png":::
 
