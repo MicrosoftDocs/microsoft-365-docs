@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 11/14/2022
+ms.date: 02/13/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
