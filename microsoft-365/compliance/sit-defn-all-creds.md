@@ -26,6 +26,11 @@ description: "All credentials sensitive information type entity definition."
 
 All credentials is a bundled entity sensitive information type (SIT). It detects credentials from all supported services and environments, which include Amazon, Azure, GitHub, Google, Microsoft general, Slack and more.
 
+> [!Note]
+> To use bundled SITs, you must activate [Advanced scanning and protection](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-endpoint-settings?view=o365-worldwide#advanced-classification-scanning-and-protection) for the relevant [data loss prevention endpoints](https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-endpoint-settings?view=o365-worldwide#advanced-classification-scanning-and-protection) before they will be discoverable. 
+> 
+> Aditionally, advanced classifiers <!--- bundled SITs?? ---> are only available when scanning PDF files and Microsoft Office files. <!--- Need a list of additional items that also must have advanced scanning and protection configured --->
+
 [!INCLUDE [purview-preview](../includes/purview-preview.md)]
 
 ## Format
@@ -43,6 +48,8 @@ No
 ## Description
 
 The All credentials SIT is a bundled SIT that scans for individual credential types. This includes checksum evaluated values and keyword/pattern combinations. The All credential entity scans for any of the underlying credential information type checksums and/or patterns are detected in a document.
+
+
 
 ## Contains
 
