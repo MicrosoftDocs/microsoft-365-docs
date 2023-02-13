@@ -48,7 +48,7 @@ At the top of each device inventory tab, you can see the total number of devices
 
 Once you're ready, you can start onboarding these devices by choosing the **Onboard them now** card. This card brings you directly to the **Onboard devices to Microsoft Defender for Endpoint** security recommendation.
 
-:::image type="content" source="../media/content-understanding/onboard-device-security-recommendation.png" alt-text="number of discovered devices on the device inventory page" lightbox="../media/content-understanding/onboard-device-security-recommendation.png":::
+:::image type="content" source="../media/content-understanding/onboard-device-security-recommendation.png" alt-text="onboard devices security recommendation" lightbox="../media/content-understanding/onboard-device-security-recommendation.png":::
 
 To learn more about how to request remediation to onboard your devices using this security recommendation, see [request remediation](..security/defender-vulnerability-management/tvm-security-recommendation?view=o365-worldwide&branch=siosulli-security-posture-solution#how-to-request-remediation).
 
