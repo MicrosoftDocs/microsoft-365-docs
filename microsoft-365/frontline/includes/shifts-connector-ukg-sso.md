@@ -18,9 +18,9 @@ Each user that will be using the connector will need a Federated account.
 1. Change the **Authentication Type** to **Federated**.
 1. Save your changes and repeat the process for all users that will use the connector.
 
-#### Whitelist Shifts SSO redirection URLs
+#### Allow Shifts SSO redirection URLs
 
-After UKG enables SSO for your organization, you'll need to whitelist the connector's redirection URL. This will allow UKG Dimensions to redirect the user to the Shifts app in Microsoft Teams as part of the SSO flow.
+After UKG enables SSO for your organization, you'll need to configure the connector's redirection URL. This will allow UKG Dimensions to redirect the user to the Shifts app in Microsoft Teams as part of the SSO flow.
 
 1. Sign into UKG with an account that has access to Application Setup.
 1. From the left menu, go to **Administration**, then **Application Setup**.
